@@ -2,22 +2,62 @@
 layout: default
 ---
 
-<div class="home">
+  <div class="row hero">
+    <div class="container">
+      <div class="tweleve columns">
+        <a class="electron-word" href="/"></a>
+        <h3>Cross Platform Desktop Application Shell</h3>
+        <h5>Used in Atom. Made with <span class="mega-octicon octicon-heart"></span> by GitHub</h5>
+      </div>
+    </div>
+  </div>
 
-  <h1 class="page-heading">Posts</h1>
+  <section class="electron-does">
+    <div class="container">
+      <div class="row">
+        <div class="four columns">
+          <img src="../images/diagram.png">
+          <h4>Something Cool</h4>
+          <p>Electron does this.</p>
+        </div>
+        <div class="four columns">
+          <img src="../images/diagram.png">
+          <h4>Something Cool</h4>
+          <p>Electron does this.</p>
+        </div>
+        <div class="four columns">
+          <img src="../images/diagram.png">
+          <h4>Something Cool</h4>
+          <p>Electron does this.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <section class="built-with">
+    <div class="container">
+      <div class="row">
+        <div class="tweleve columns">
+          <h3>Built with Electron</h3>
+          <p>Organizations and teams and building things cool...</p>
+          <h5>Logo // Logo // Logo</h5>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+  <section class="get-started">
+    <div class="container">
+      <div class="row">
+        <div class="tweleve columns">
+          <h3 >Get Started with Electron</h3>
+        </div>
+        <div class="row">
+          <div class="one-half column offset-by-three">
+            <p>Getting started with Electron is so easy, peasy. Type this code and you're done.</p>
+            <pre><code>Hello this is cool text.</code></pre>
+          </div>
+        </div>
+        </div>
+    </div>
+  </section>
