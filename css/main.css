@@ -1,0 +1,90 @@
+body {
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+  color: #66595c;
+  background-color: #efeae1;
+}
+
+/* Atom.io Styles
+   ------------------------------------------ */
+
+a {
+ color: #40a977;
+ text-decoration: none;
+}
+
+a:hover {
+  color: #40a977;
+  text-decoration: underline;
+}
+
+
+/* General Styles
+   ------------------------------------------ */
+
+.hero, .built-with, .get-started,
+.electron-does {
+  text-align: center;
+}
+
+section {
+  padding: 60px 0;
+}
+
+.inline-list {
+  list-style: none;
+  padding: 0; margin: 0;
+}
+
+.inline-list li {
+  display: inline-block;
+  padding: 0 10px 0 0; 
+  margin: 0;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/* Sections
+   ------------------------------------------ */
+
+/* Hero */
+
+.hero {
+  padding: 100px 0;
+}
+
+.electron-word {
+  background-image: url('../images/electron-word.png');
+  background-position: 0px 0px, center;
+  background-size: 356px 53px;
+  background-repeat: no-repeat;
+  padding-bottom: 20px;
+  width: 356px;
+  height: 53px;
+  display: inline-block;
+}
+
+/* Built With */
+
+.built-with {
+  background-color: #FAF7F3;
+}
+
+/* Electron Does */
+
+.electron-does img {
+  padding-bottom: 20px;
+}
+
+/* Footer
+   ------------------------------------------ */
+
+footer {
+  padding: 15px 0;
+  background-color: #FAF7F3;
+}
+
+footer a {
+  color: #66595c;
+}
