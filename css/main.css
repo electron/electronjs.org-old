@@ -1,25 +1,33 @@
 body {
   font-family: "Helvetica Neue", "Arial", sans-serif;
   color: #66595c;
-  background-color: #efeae1;
+  color: #45828E;
+  background-color: #A5ECFA;
 }
 
 /* Atom.io Styles
    ------------------------------------------ */
 
 a {
- color: #40a977;
+ color: #76C7D7;
  text-decoration: none;
 }
 
 a:hover {
-  color: #40a977;
+  color: #76C7D7;
   text-decoration: underline;
 }
 
 
 /* General Styles
    ------------------------------------------ */
+
+/*.hero h3, .hero h5,
+.built-with h3, .built-with h5, .built-with h4,
+.get-started h3, .get-started h5,
+.electron-does h3, .get-started h5 {
+  text-align: center;
+}*/
 
 .hero, .built-with, .get-started,
 .electron-does {
@@ -37,7 +45,7 @@ section {
 
 .inline-list li {
   display: inline-block;
-  padding: 0 10px 0 0; 
+  padding: 0 10px 0 0;
   margin: 0;
 }
 
@@ -45,8 +53,27 @@ section {
   text-align: right;
 }
 
+pre, code {
+  text-align: left;
+}
+
 /* Sections
    ------------------------------------------ */
+
+/* Header Nav */
+
+header {
+  padding: 12px 0;
+  background-color: #76C7D7;
+}
+
+header a {
+  color: #FAF7F3;
+}
+
+header a:hover {
+  color: #66595c;
+}
 
 /* Hero */
 
@@ -54,14 +81,18 @@ section {
   padding: 100px 0;
 }
 
+.hero .mega-octicon {
+  font-size: 24px;
+}
+
 .electron-word {
   background-image: url('../images/electron-word.png');
   background-position: 0px 0px, center;
-  background-size: 356px 53px;
+  background-size: 571px 86px;
   background-repeat: no-repeat;
   padding-bottom: 20px;
-  width: 356px;
-  height: 53px;
+  width: 571px;
+  height: 86px;
   display: inline-block;
 }
 
@@ -71,11 +102,21 @@ section {
   background-color: #FAF7F3;
 }
 
+/*dumb*/
+.build-with ui, .built-with li {
+  text-align: left;
+}
+
 /* Electron Does */
 
 .electron-does img {
   padding-bottom: 20px;
 }
+
+.other-logo {
+  padding-right: 40px;
+}
+
 
 /* Footer
    ------------------------------------------ */
