@@ -57,6 +57,12 @@ pre, code {
   text-align: left;
 }
 
+code {
+  color: #C5F3FC;
+  border: none;
+  background-color: #076274;
+}
+
 /* Sections
    ------------------------------------------ */
 
