@@ -111,6 +111,7 @@ header a:hover {
 
 .electron-does img {
   padding-bottom: 20px;
+  max-width: 100%;
 }
 
 .other-logo {
