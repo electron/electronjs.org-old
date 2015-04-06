@@ -1,12 +1,11 @@
+/* General Styles
+   ------------------------------------------ */
+
 body {
   font-family: "Helvetica Neue", "Arial", sans-serif;
-  color: #66595c;
   color: #45828E;
   background-color: #A5ECFA;
 }
-
-/* Atom.io Styles
-   ------------------------------------------ */
 
 a {
  color: #39AEC6;
@@ -18,24 +17,8 @@ a:hover {
   text-decoration: underline;
 }
 
-
-/* General Styles
-   ------------------------------------------ */
-
-/*.hero h3, .hero h5,
-.built-on h3, .built-on h5, .built-on h4,
-.get-started h3, .get-started h5,
-.electron-does h3, .get-started h5 {
-  text-align: center;
-}*/
-
-.hero, .built-on, .get-started,
-.electron-does {
-  text-align: center;
-}
-
-section {
-  padding: 60px 0;
+a.no-hover-dec:hover {
+  text-decoration: none;
 }
 
 .inline-list {
@@ -66,6 +49,15 @@ code {
 /* Sections
    ------------------------------------------ */
 
+section {
+ padding: 60px 0;
+}
+
+.hero, .built-on, .get-started,
+.electron-does {
+ text-align: center;
+}
+
 /* Header Nav */
 
 header {
@@ -78,7 +70,7 @@ header a {
 }
 
 header a:hover {
-  color: #66595c;
+  color: #45828E;
 }
 
 /* Hero */
@@ -92,14 +84,15 @@ header a:hover {
 }
 
 .electron-word {
-  background-image: url('../images/electron-word.png');
-  background-position: 0px 0px, center;
+  background: url('../images/electron-word.png') no-repeat 0 0, center;
   background-size: 571px 86px;
-  background-repeat: no-repeat;
   padding-bottom: 20px;
   width: 571px;
   height: 86px;
   display: inline-block;
+  text-indent: 600px;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 /* Built With */
@@ -108,7 +101,6 @@ header a:hover {
   background-color: #FAF7F3;
 }
 
-/*dumb*/
 .build-with ui, .built-on li {
   text-align: left;
 }
