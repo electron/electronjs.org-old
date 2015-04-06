@@ -23,13 +23,13 @@ a:hover {
    ------------------------------------------ */
 
 /*.hero h3, .hero h5,
-.built-with h3, .built-with h5, .built-with h4,
+.built-on h3, .built-on h5, .built-on h4,
 .get-started h3, .get-started h5,
 .electron-does h3, .get-started h5 {
   text-align: center;
 }*/
 
-.hero, .built-with, .get-started,
+.hero, .built-on, .get-started,
 .electron-does {
   text-align: center;
 }
@@ -104,12 +104,12 @@ header a:hover {
 
 /* Built With */
 
-.built-with {
+.built-on {
   background-color: #FAF7F3;
 }
 
 /*dumb*/
-.build-with ui, .built-with li {
+.build-with ui, .built-on li {
   text-align: left;
 }
 
