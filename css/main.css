@@ -84,16 +84,16 @@ header a:hover {
 }
 
 .electron-word {
-  background: url('../images/electron-word.png') no-repeat 0 0, center;
-  background-size: 571px 86px;
+  background: url('../images/electron-logo-word-lg.png') no-repeat 0 0, center;
+  background-size: 800px 106px;
   padding-bottom: 20px;
-  width: 571px;
-  height: 86px;
+  width: 800px;
+  height: 106px;
   display: inline-block;
-  text-indent: 600px;
+  text-indent: 900px;
   white-space: nowrap;
   overflow: hidden;
-}
+}*/
 
 /* Built With */
 
