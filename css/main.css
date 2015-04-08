@@ -93,7 +93,7 @@ header a:hover {
   text-indent: 900px;
   white-space: nowrap;
   overflow: hidden;
-}*/
+}
 
 /* Built With */
 
@@ -101,7 +101,7 @@ header a:hover {
   background-color: #FAF7F3;
 }
 
-.build-with ui, .built-on li {
+.built-on li {
   text-align: left;
 }
 
