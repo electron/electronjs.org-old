@@ -70,7 +70,7 @@ header a {
 }
 
 header a:hover {
-  color: #45828E;
+  color: #FAF7F3;
 }
 
 /* Hero */
@@ -123,8 +123,4 @@ header a:hover {
 footer {
   padding: 15px 0;
   background-color: #FAF7F3;
-}
-
-footer a {
-  color: #66595c;
 }
