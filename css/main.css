@@ -85,12 +85,14 @@ header a:hover {
 
 .electron-word {
   background: url('../images/electron-logo-word-lg.png') no-repeat 0 0, center;
-  background-size: 800px 106px;
-  padding-bottom: 20px;
-  width: 800px;
-  height: 106px;
+  background-size: 100% auto;
+  padding-bottom: 13.3%; /* Keeps aspect ratio. Original img ratio: 977x130. 130/977*100=13.3% */
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 800px;
   display: inline-block;
-  text-indent: 900px;
+  font: 0/0 a;
+  color: transparent;
   white-space: nowrap;
   overflow: hidden;
 }
