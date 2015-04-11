@@ -7,6 +7,10 @@ body {
   background-color: #A5ECFA;
 }
 
+h1, h2, h3, h4 {
+  font-weight: 400;
+}
+
 a {
  color: #39AEC6;
  text-decoration: none;
