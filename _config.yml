@@ -2,7 +2,7 @@
 title: Electron
 email: electron@atom.io
 description: Cross Platform Application Shell
-url: http://electron.atom.io
+baseurl: http://electron.atom.io
 twitter_username: AtomEditor
 github_username:  atom
 
