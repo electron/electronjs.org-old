@@ -1,12 +1,15 @@
+/* General Styles
+   ------------------------------------------ */
+
 body {
   font-family: "Helvetica Neue", "Arial", sans-serif;
-  color: #66595c;
   color: #45828E;
   background-color: #A5ECFA;
 }
 
-/* Atom.io Styles
-   ------------------------------------------ */
+h1, h2, h3, h4 {
+  font-weight: 400;
+}
 
 a {
  color: #39AEC6;
@@ -18,24 +21,8 @@ a:hover {
   text-decoration: underline;
 }
 
-
-/* General Styles
-   ------------------------------------------ */
-
-/*.hero h3, .hero h5,
-.built-with h3, .built-with h5, .built-with h4,
-.get-started h3, .get-started h5,
-.electron-does h3, .get-started h5 {
-  text-align: center;
-}*/
-
-.hero, .built-with, .get-started,
-.electron-does {
-  text-align: center;
-}
-
-section {
-  padding: 60px 0;
+a.no-hover-dec:hover {
+  text-decoration: none;
 }
 
 .inline-list {
@@ -66,6 +53,15 @@ code {
 /* Sections
    ------------------------------------------ */
 
+section {
+ padding: 60px 0;
+}
+
+.hero, .built-on, .get-started,
+.electron-does {
+ text-align: center;
+}
+
 /* Header Nav */
 
 header {
@@ -78,7 +74,7 @@ header a {
 }
 
 header a:hover {
-  color: #66595c;
+  color: #FAF7F3;
 }
 
 /* Hero */
@@ -92,24 +88,26 @@ header a:hover {
 }
 
 .electron-word {
-  background-image: url('../images/electron-word.png');
-  background-position: 0px 0px, center;
-  background-size: 571px 86px;
-  background-repeat: no-repeat;
-  padding-bottom: 20px;
-  width: 571px;
-  height: 86px;
+  background: url('../images/electron-logo-word-lg.png') no-repeat 0 0, center;
+  background-size: 100% auto;
+  padding-bottom: 15.3%; /* Keeps aspect ratio. Original img ratio: 980x150. 150/980*100=15.3% */
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 800px;
   display: inline-block;
+  font: 0/0 a;
+  color: transparent;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 /* Built With */
 
-.built-with {
+.built-on {
   background-color: #FAF7F3;
 }
 
-/*dumb*/
-.build-with ui, .built-with li {
+.built-on li {
   text-align: left;
 }
 
@@ -121,7 +119,8 @@ header a:hover {
 }
 
 .other-logo {
-  padding-right: 40px;
+  width: 72px;
+  padding: 10px;
 }
 
 
@@ -131,8 +130,4 @@ header a:hover {
 footer {
   padding: 15px 0;
   background-color: #FAF7F3;
-}
-
-footer a {
-  color: #66595c;
 }
