@@ -1,7 +1,7 @@
 # Site settings
 title: Electron
-email: electron@atom.io
-description: Cross Platform Application Shell
+email: atom@github.com
+description: Cross Platform Desktop Application Shell
 baseurl: http://electron.atom.io
 twitter_username: AtomEditor
 github_username:  atom
