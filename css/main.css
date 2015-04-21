@@ -54,12 +54,12 @@ code {
    ------------------------------------------ */
 
 section {
- padding: 60px 0;
+  padding: 60px 0;
 }
 
 .hero, .built-on, .get-started,
 .electron-does {
- text-align: center;
+  text-align: center;
 }
 
 /* Header Nav */
