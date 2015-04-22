@@ -57,6 +57,16 @@ section {
   padding: 60px 0;
 }
 
+.features {
+  text-align: center;
+  padding: 40px 0;
+  font-size: 16px;
+}
+
+.features .mega-octicon {
+  margin-bottom: 10px;
+}
+
 .hero, .built-on, .get-started,
 .electron-does {
   text-align: center;
