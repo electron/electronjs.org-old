@@ -68,7 +68,7 @@ section {
 }
 
 .hero, .built-on, .get-started,
-.electron-does {
+.electron-does, .more-features {
   text-align: center;
 }
 
@@ -109,6 +109,32 @@ header a:hover {
   color: transparent;
   white-space: nowrap;
   overflow: hidden;
+}
+
+/* More Features */
+
+.more-features {
+  background-color: #76C7D7;
+}
+
+.more-features span {
+  padding: 20px;
+  width: 30px;
+  height: 30px;
+  border-radius: 990px;
+  margin-bottom: 20px;
+  background-color: #A5ECFA;
+}
+
+.octicon-gift::before {
+  position: relative;
+  top: -1px;
+}
+
+.octicon-tools::before, .octicon-bug::before,
+.octicon-evice-desktop::before {
+  position: relative;
+  left: -1px;
 }
 
 /* Built With */
