@@ -19,7 +19,7 @@ Then open [localhost:4000](http://localhost:4000) in your browser.
 
 ### Contributing
 
-Thanks for contributing to the site! Checkout the [contributing documentation](contributing.md) for guidelines on pull requests.
+Thanks for contributing to the site! Checkout the [contributing documentation](CONTRIBUTING.md) for guidelines on pull requests.
 
 ### License
 
