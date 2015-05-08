@@ -14,10 +14,10 @@
   <link rel='canonical' href='{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}'>
   <link rel='alternate' type='application/rss+xml' title='{{ site.title }}' href='{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}' />
   <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    !function(g,i,t,h,u,b){g.GoogleAnalyticsObject=t;g[t]||(g[t]=function(){
+    (g[t].q=g[t].q||[]).push(arguments)});g[t].l=+new Date;u=i.createElement(h);
+    b=i.getElementsByTagName(h)[0];u.src='//www.google-analytics.com/analytics.js';
+    b.parentNode.insertBefore(u,b)}(window,document,'ga','script');
 
     ga('create', 'UA-3769691-57', 'auto');
     ga('send', 'pageview');
