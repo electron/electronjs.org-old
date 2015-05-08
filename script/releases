@@ -11,7 +11,7 @@ var options = {
 
 request(options, function (error, response, body) {
   if (error) return console.log(error)
-  if (!error && response.statusCode == 200) {
-    fs.writeFileSync('_data/releases.json', JSON.stringify(body, null, ' '))
+  if (response.statusCode == 200) {
+    fs.writeFileSync('_data/releases.json', JSON.stringify(body, null, 2))
   }
 })
