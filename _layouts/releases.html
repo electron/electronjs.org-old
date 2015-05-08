@@ -10,7 +10,7 @@ layout: page
       <h1>Electron Releases</h1>
 
       {% for release in site.data.releases %}
-      <a href='{{ release.html_url }}' class='jump-to-item'>{{ release.tag_name }}</a>
+      <span class='jump-to-item'><a href='{{ release.html_url }}'>{{ release.tag_name }}</span></a>
       {% endfor releases %}
 
       </div>
