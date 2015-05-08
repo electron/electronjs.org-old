@@ -1,0 +1,18 @@
+{
+  "name": "electron.atom.io",
+  "version": "1.0.0",
+  "description": "The [website](http://electron.atom.io) for [Electron](https://github.com/atom/electron) (formerly known as Atom-Shell).",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atom/electron.atom.io.git"
+  },
+  "author": "GitHub",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/atom/electron.atom.io/issues"
+  },
+  "homepage": "electron.atom.io",
+  "dependencies": {
+    "request": "^2.55.0"
+  }
+}

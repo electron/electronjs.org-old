@@ -1,0 +1,31 @@
+---
+layout: page
+---
+
+<section class='jump-to-release'>
+  <div class='container '>
+    <div class='row'>
+      <div class='twelve columns'>
+
+      <h1>Electron Releases</h1>
+
+      {% for release in site.data.releases %}
+      <span class='jump-to-item'><a href='{{ release.html_url }}'>{{ release.tag_name }}</span></a>
+      {% endfor releases %}
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class='releases'>
+  <div class='container '>
+    <div class='row'>
+      <div class='ten columns release offset-by-one'>
+
+        {{ content }}
+
+      </div>
+    </div>
+  </div>
+</section>

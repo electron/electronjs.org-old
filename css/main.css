@@ -44,10 +44,15 @@ pre, code {
   text-align: left;
 }
 
-code {
+pre code {
   color: #C5F3FC;
   border: none;
   background-color: #076274;
+}
+
+code {
+  background-color: #EAE5DE;
+  border: none;
 }
 
 /* Sections
@@ -175,4 +180,32 @@ header a:hover {
 footer {
   padding: 15px 0;
   background-color: #FAF7F3;
+}
+
+/* Releases
+   ------------------------------------------ */
+
+.page-template h1 {
+  font-weight: 300;
+  font-size: 4em;
+}
+
+.jump-to-release {
+  text-align: center;
+  background: #A5ECFA;
+}
+
+.releases {
+  background-color: #FAF7F3;
+}
+
+.releases h3 em {
+  font-style: normal;
+  font-size: .5em;
+  font-weight: 300;
+  color: #76C7D7;
+}
+
+.jump-to-item + .jump-to-item::before {
+  content: '○ ';
 }
