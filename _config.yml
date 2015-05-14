@@ -8,3 +8,19 @@ github_username:  atom
 
 # Build settings
 markdown: kramdown
+
+# Documentation
+variables:
+  latest_version: "2.2"
+
+collections:
+  docs:
+    output: true
+    permalink: /docs/:path/
+
+defaults:
+  -
+    scope:
+      type: "docs"
+    values:
+      layout: "docs"
