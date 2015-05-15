@@ -1,0 +1,46 @@
+#!/usr/bin/env node
+
+var fs = require('fs')
+var os = require('os')
+var path = require('path')
+var tar = require('tar-fs')
+var gunzip = require('gunzip-maybe')
+var mkdir = require('mkdirp')
+var nugget = require('nugget')
+
+var args = process.argv
+var version = 'master'
+
+if (args[2]) version = args[2]
+
+var url = 'https://api.github.com/repos/atom/electron/tarball/' + version
+var tmpdir = path.join(os.tmpdir(), 'electron-tmp-download')
+
+mkdir(tmpdir, function (error) {
+  if (error) return console.log(error)
+  var filename = 'electron.tar.gz'
+  var opts = {
+    headers: {"user-agent": "Electron"},
+    target: filename,
+    dir: tmpdir,
+    resume: true,
+    verbose: true
+    }
+
+  nugget(url, opts, function (error) {
+    if (error) return console.log(error)
+    extractDocs(path.join(tmpdir, filename))
+  })
+})
+
+function extractDocs (tarball) {
+  var outputDir = path.join(process.cwd(), '_docs/')
+  var extract = tar.extract(outputDir, {
+    ignore: function(name) {
+      return name.indexOf('/docs/') === -1
+    }
+  })
+  fs.createReadStream(tarball).pipe(gunzip()).pipe(extract)
+ // TODO some post processing
+ // extract into tmpdir, rename and then move
+}
