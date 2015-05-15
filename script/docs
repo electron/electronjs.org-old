@@ -7,40 +7,84 @@ var tar = require('tar-fs')
 var gunzip = require('gunzip-maybe')
 var mkdir = require('mkdirp')
 var nugget = require('nugget')
+var cpr = require('cpr')
+var through = require('through2')
 
 var args = process.argv
 var version = 'master'
+var frontmatter = new Buffer('---\n---\n\n')
 
 if (args[2]) version = args[2]
 
 var url = 'https://api.github.com/repos/atom/electron/tarball/' + version
-var tmpdir = path.join(os.tmpdir(), 'electron-tmp-download')
+var tmpDir = path.join(os.tmpDir(), 'electron-tmp-download')
 
-mkdir(tmpdir, function (error) {
+mkdir(tmpDir, function (error) {
   if (error) return console.log(error)
   var filename = 'electron.tar.gz'
   var opts = {
     headers: {"user-agent": "Electron"},
     target: filename,
-    dir: tmpdir,
+    dir: tmpDir,
     resume: true,
     verbose: true
     }
 
   nugget(url, opts, function (error) {
     if (error) return console.log(error)
-    extractDocs(path.join(tmpdir, filename))
+    extractDocs(tmpDir, filename)
   })
 })
 
-function extractDocs (tarball) {
-  var outputDir = path.join(process.cwd(), '_docs/')
-  var extract = tar.extract(outputDir, {
-    ignore: function(name) {
+function extractDocs (tmpDir, filename) {
+  var tarball = path.join(tmpDir, filename)
+  var newDir = ''
+
+  var extract = tar.extract(tmpDir, {
+    ignore: function (name) {
       return name.indexOf('/docs/') === -1
+    },
+    mapStream: function (fileStream, header) {
+      console.log("Mapping stream")
+      if (path.extname(header.name) === '.md') {
+        return fileStream.pipe(frontMatterify())
+      }
+      return filestream
     }
   })
+
+  extract.on('entry', function extracting (header, stream, next) {
+    var extractedElectronDir = header.name.split('/')[0]
+    newDir = path.join(tmpDir, extractedElectronDir)
+  })
+
+  extract.on('finish', function extracted () {
+    var versionDir = path.join(newDir, version)
+    var extractedDocsDir = path.join(newDir, 'docs')
+    var finalDir = path.join(process.cwd(), '_docs', version)
+    moveDirectories(versionDir, extractedDocsDir, finalDir)
+  })
+
   fs.createReadStream(tarball).pipe(gunzip()).pipe(extract)
- // TODO some post processing
- // extract into tmpdir, rename and then move
+}
+
+function frontMatterify() {
+  var appended = false
+  return through(function (obj, enc, next) {
+    if (!appended) this.push(frontmatter)
+    appended = true
+    this.push(obj)
+    next()
+  })
+}
+
+function moveDirectories (versionDir, extractedDocsDir, finalDir) {
+  fs.rename(extractedDocsDir, versionDir, function renamedAndMoved (error) {
+    if (error) return console.log("Renaming error:", error)
+    // move to cwd
+    cpr(versionDir, finalDir, function moved (error) {
+      if (error) console.log("Moving error", error)
+      console.log("Moved dir to", finalDir)
+    })
+  })
 }

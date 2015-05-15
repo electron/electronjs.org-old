@@ -13,10 +13,12 @@
   },
   "homepage": "electron.atom.io",
   "dependencies": {
+    "cpr": "^0.4.0",
     "gunzip-maybe": "^1.1.0",
     "mkdirp": "^0.5.1",
     "nugget": "^1.5.1",
     "request": "^2.55.0",
-    "tar-fs": "^1.5.0"
+    "tar-fs": "^1.5.0",
+    "through2": "^0.6.5"
   }
 }
