@@ -10,15 +10,17 @@ var nugget = require('nugget')
 var cpr = require('cpr')
 var through = require('through2')
 
-var args = process.argv
+var args = process.argv.slice(2)
 var version = 'master'
+var latest = false
 var frontmatter = new Buffer('---\n---\n\n')
-
-if (args[2]) version = args[2]
-
 var url = 'https://api.github.com/repos/atom/electron/tarball/' + version
 var tmpDir = path.join(os.tmpDir(), 'electron-tmp-download')
 
+if (args[0] && args[0] !== '--latest' ) version = args[0]
+if (args[1] && args[1] === '--latest') latest = true
+
+// Create temp directory to fetch tarball into
 mkdir(tmpDir, function (error) {
   if (error) return console.log(error)
   var filename = 'electron.tar.gz'
@@ -36,6 +38,9 @@ mkdir(tmpDir, function (error) {
   })
 })
 
+// Extract just the 'docs' directory from within
+// tarball, then prepend each markdown file with
+// Jekyll front matter
 function extractDocs (tmpDir, filename) {
   var tarball = path.join(tmpDir, filename)
   var newDir = ''
@@ -45,8 +50,12 @@ function extractDocs (tmpDir, filename) {
       return name.indexOf('/docs/') === -1
     },
     mapStream: function (fileStream, header) {
-      console.log("Mapping stream")
       if (path.extname(header.name) === '.md') {
+        if (latest) {
+          var redirectPath = constructRedirectUrl(header.name)
+          frontmatter = new Buffer('---\nredirect_from:\n  - ' + redirectPath + '\n---\n\n')
+          return fileStream.pipe(frontMatterify())
+        }
         return fileStream.pipe(frontMatterify())
       }
       return filestream
@@ -62,13 +71,13 @@ function extractDocs (tmpDir, filename) {
     var versionDir = path.join(newDir, version)
     var extractedDocsDir = path.join(newDir, 'docs')
     var finalDir = path.join(process.cwd(), '_docs', version)
-    moveDirectories(versionDir, extractedDocsDir, finalDir)
+    moveDirectories(versionDir, extractedDocsDir, finalDir, newDir)
   })
 
   fs.createReadStream(tarball).pipe(gunzip()).pipe(extract)
 }
 
-function frontMatterify() {
+function frontMatterify () {
   var appended = false
   return through(function (obj, enc, next) {
     if (!appended) this.push(frontmatter)
@@ -78,13 +87,25 @@ function frontMatterify() {
   })
 }
 
-function moveDirectories (versionDir, extractedDocsDir, finalDir) {
+function constructRedirectUrl (path) {
+  var pathArray = path.split('/')
+  pathArray.splice(2, 0, 'latest').splice(0, 1)
+  var rejoinPath = a.join('/')
+  var splitExtension = rejoinPath.split('.')
+  return splitExtension.shift()
+}
+
+// Take newly extracted 'docs' directory, name it according
+// to appropriate Electron version, copy it to electron.atom.io
+// '_docs' directory and delete temp directory
+function moveDirectories (versionDir, extractedDocsDir, finalDir, newDir) {
   fs.rename(extractedDocsDir, versionDir, function renamedAndMoved (error) {
     if (error) return console.log("Renaming error:", error)
-    // move to cwd
     cpr(versionDir, finalDir, function moved (error) {
       if (error) console.log("Moving error", error)
-      console.log("Moved dir to", finalDir)
+      // TODO unlink temp directory
+      // fs.unlinkSync(tmpDir)
+      console.log("Done! Docs", version, "are in", finalDir)
     })
   })
 }
