@@ -6,6 +6,9 @@ baseurl: http://electron.atom.io
 twitter_username: AtomEditor
 github_username:  atom
 
+gems:
+  - jekyll-redirect-from
+
 # Build settings
 markdown: kramdown
 
