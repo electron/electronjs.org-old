@@ -9,6 +9,7 @@ var mkdir = require('mkdirp')
 var nugget = require('nugget')
 var cpr = require('cpr')
 var through = require('through2')
+var rimraf = require('rimraf')
 
 var args = process.argv.slice(2)
 var version = 'master'
@@ -17,7 +18,7 @@ var frontmatter = new Buffer('---\n---\n\n')
 var url = 'https://api.github.com/repos/atom/electron/tarball/' + version
 var tmpDir = path.join(os.tmpDir(), 'electron-tmp-download')
 
-if (args[0] && args[0] !== '--latest' ) version = args[0]
+if (args[0] && args[0] !== '--latest') version = args[0]
 if (args[1] && args[1] === '--latest') latest = true
 
 // Create temp directory to fetch tarball into
@@ -89,8 +90,9 @@ function frontMatterify () {
 
 function constructRedirectUrl (path) {
   var pathArray = path.split('/')
-  pathArray.splice(2, 0, 'latest').splice(0, 1)
-  var rejoinPath = a.join('/')
+  pathArray.splice(2, 0, 'latest')
+  pathArray.splice(0, 1)
+  var rejoinPath = pathArray.join('/')
   var splitExtension = rejoinPath.split('.')
   return splitExtension.shift()
 }
@@ -103,8 +105,7 @@ function moveDirectories (versionDir, extractedDocsDir, finalDir, newDir) {
     if (error) return console.log("Renaming error:", error)
     cpr(versionDir, finalDir, function moved (error) {
       if (error) console.log("Moving error", error)
-      // TODO unlink temp directory
-      // fs.unlinkSync(tmpDir)
+      rimraf(tmpDir, function (error) { if (error) console.log(error) })
       console.log("Done! Docs", version, "are in", finalDir)
     })
   })
