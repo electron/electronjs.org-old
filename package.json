@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/atom/electron.atom.io/issues"
   },
-  "homepage": "electron.atom.io",
+  "homepage": "http://electron.atom.io",
   "dependencies": {
     "request": "^2.55.0"
   }
