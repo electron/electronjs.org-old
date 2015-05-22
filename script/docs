@@ -1,112 +1,17 @@
 #!/usr/bin/env node
 
-var fs = require('fs')
-var os = require('os')
-var path = require('path')
-var tar = require('tar-fs')
-var gunzip = require('gunzip-maybe')
-var mkdir = require('mkdirp')
-var nugget = require('nugget')
-var cpr = require('cpr')
-var through = require('through2')
-var rimraf = require('rimraf')
+var fetchDocs = require('./fetch-docs.js')
 
 var args = process.argv.slice(2)
-var version = 'master'
-var latest = false
-var frontmatter = new Buffer('---\n---\n\n')
-var url = 'https://api.github.com/repos/atom/electron/tarball/' + version
-var tmpDir = path.join(os.tmpDir(), 'electron-tmp-download')
 
-if (args[0] && args[0] !== '--latest') version = args[0]
-if (args[1] && args[1] === '--latest') latest = true
-
-// Create temp directory to fetch tarball into
-mkdir(tmpDir, function (error) {
-  if (error) return console.log(error)
-  var filename = 'electron.tar.gz'
-  var opts = {
-    headers: {"user-agent": "Electron"},
-    target: filename,
-    dir: tmpDir,
-    resume: true,
-    verbose: true
-    }
-
-  nugget(url, opts, function (error) {
-    if (error) return console.log(error)
-    extractDocs(tmpDir, filename)
-  })
-})
-
-// Extract just the 'docs' directory from within
-// tarball, then prepend each markdown file with
-// Jekyll front matter
-function extractDocs (tmpDir, filename) {
-  var tarball = path.join(tmpDir, filename)
-  var newDir = ''
-
-  var extract = tar.extract(tmpDir, {
-    ignore: function (name) {
-      return name.indexOf('/docs/') === -1
-    },
-    mapStream: function (fileStream, header) {
-      if (path.extname(header.name) === '.md') {
-        if (latest) {
-          var redirectPath = constructRedirectUrl(header.name)
-          frontmatter = new Buffer('---\nredirect_from:\n  - ' + redirectPath + '\n---\n\n')
-          return fileStream.pipe(frontMatterify())
-        }
-        return fileStream.pipe(frontMatterify())
-      }
-      return filestream
-    }
-  })
-
-  extract.on('entry', function extracting (header, stream, next) {
-    var extractedElectronDir = header.name.split('/')[0]
-    newDir = path.join(tmpDir, extractedElectronDir)
-  })
-
-  extract.on('finish', function extracted () {
-    var versionDir = path.join(newDir, version)
-    var extractedDocsDir = path.join(newDir, 'docs')
-    var finalDir = path.join(process.cwd(), '_docs', version)
-    moveDirectories(versionDir, extractedDocsDir, finalDir, newDir)
-  })
-
-  fs.createReadStream(tarball).pipe(gunzip()).pipe(extract)
+var setup = {
+  latest: false,
+  version: 'master',
+  finalDir: '_docs'
 }
 
-function frontMatterify () {
-  var appended = false
-  return through(function (obj, enc, next) {
-    if (!appended) this.push(frontmatter)
-    appended = true
-    this.push(obj)
-    next()
-  })
-}
+if (args[0] && args[0] !== '--latest') setup.version = args[0]
+if (args[1] && args[1] === '--latest') setup.latest = true
 
-function constructRedirectUrl (path) {
-  var pathArray = path.split('/')
-  pathArray.splice(2, 0, 'latest')
-  pathArray.splice(0, 1)
-  var rejoinPath = pathArray.join('/')
-  var splitExtension = rejoinPath.split('.')
-  return splitExtension.shift()
-}
 
-// Take newly extracted 'docs' directory, name it according
-// to appropriate Electron version, copy it to electron.atom.io
-// '_docs' directory and delete temp directory
-function moveDirectories (versionDir, extractedDocsDir, finalDir, newDir) {
-  fs.rename(extractedDocsDir, versionDir, function renamedAndMoved (error) {
-    if (error) return console.log("Renaming error:", error)
-    cpr(versionDir, finalDir, function moved (error) {
-      if (error) console.log("Moving error", error)
-      rimraf(tmpDir, function (error) { if (error) console.log(error) })
-      console.log("Done! Docs", version, "are in", finalDir)
-    })
-  })
-}
+fetchDocs(setup)
