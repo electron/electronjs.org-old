@@ -54,9 +54,9 @@ function extractDocs (tmpDir, filename, setup, callback) {
     mapStream: function (fileStream, header) {
       if (path.extname(header.name) === '.md') {
         if (setup.latest) {
-          var redirectPath = constructRedirectUrl(header.name)
-          frontmatter = new Buffer('---\nredirect_from:\n  - ' + redirectPath + '\n---\n\n')
-          return fileStream.pipe(frontMatterify())
+          // var redirectPath = constructRedirectUrl(header.name)
+          // frontmatter = new Buffer('---\nredirect_from:\n  - ' + redirectPath + '\n---\n\n')
+          // return fileStream.pipe(frontMatterify())
         }
         return fileStream.pipe(frontMatterify())
       }
@@ -73,7 +73,7 @@ function extractDocs (tmpDir, filename, setup, callback) {
     var versionDir = path.join(newDir, setup.version)
     var extractedDocsDir = path.join(newDir, 'docs')
     var finalDir = path.join(process.cwd(), setup.finalDir, setup.version)
-    moveDirectories(versionDir, extractedDocsDir, finalDir, newDir, callback)
+    moveDirectories(setup, versionDir, extractedDocsDir, finalDir, newDir, callback)
   })
 
   fs.createReadStream(tarball).pipe(gunzip()).pipe(extract)
@@ -89,6 +89,18 @@ function frontMatterify () {
   })
 }
 
+function updateSymlink (finalDir) {
+  var latestDir = path.join(process.cwd(),'_docs', 'latest')
+  // remove old symlink?
+  if (fs.existsSync(latestDir)) {
+    rimraf(latestDir, function (error) {
+      return fs.symlinkSync(finalDir, latestDir, 'dir')
+    })
+  } else {
+    fs.symlinkSync(finalDir, latestDir, 'dir')
+  }
+}
+
 function constructRedirectUrl (path) {
   var pathArray = path.split('/')
   pathArray.splice(2, 0, 'latest')
@@ -101,7 +113,7 @@ function constructRedirectUrl (path) {
 // Take newly extracted 'docs' directory, name it according
 // to appropriate Electron version, copy it to electron.atom.io
 // '_docs' directory and delete temp directory
-function moveDirectories (versionDir, extractedDocsDir, finalDir, newDir, callback) {
+function moveDirectories (setup, versionDir, extractedDocsDir, finalDir, newDir, callback) {
   fs.rename(extractedDocsDir, versionDir, function renamedAndMoved (error) {
     if (error) return console.log("Renaming error:", error)
     cpr(versionDir, finalDir, function moved (error) {
@@ -109,6 +121,10 @@ function moveDirectories (versionDir, extractedDocsDir, finalDir, newDir, callba
       rimraf(tmpDir, function (error) {
         if (error) console.log(error)
         console.log("Done! Docs are in", finalDir)
+        if (setup.latest) {
+          updateSymlink(finalDir)
+          console.log("Symlink added to 'lastest'")
+        }
         if (callback) callback()
       })
     })
