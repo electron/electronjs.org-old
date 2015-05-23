@@ -8,8 +8,8 @@ var nugget = require('nugget')
 var cpr = require('cpr')
 var through = require('through2')
 var rimraf = require('rimraf')
+var yaml = require('yamljs')
 
-var frontmatter = new Buffer('---\n---\n\n')
 var tmpDir = path.join(os.tmpDir(), 'electron-tmp-download')
 
 // var setup = {
@@ -52,13 +52,17 @@ function extractDocs (tmpDir, filename, setup, callback) {
       return name.indexOf('/docs/') === -1
     },
     mapStream: function (fileStream, header) {
+      var frontmatter
       if (path.extname(header.name) === '.md') {
-        if (setup.latest) {
-          // var redirectPath = constructRedirectUrl(header.name)
-          // frontmatter = new Buffer('---\nredirect_from:\n  - ' + redirectPath + '\n---\n\n')
-          // return fileStream.pipe(frontMatterify())
+        if (path.basename(header.name, '.md') === 'README') {
+          console.log("readme", header.name, path.basename(header.name, '.md'))
+          var redirectUrl = '/docs/' + setup.version + '/'
+          frontmatter = new Buffer('---\nredirect_from: ' + redirectUrl + '\n---\n\n')
+        } else {
+          var redirectUrl = constructRedirectUrl(header.name, setup.version)
+          frontmatter = new Buffer('---\nredirect_from: ' + redirectUrl + '\n---\n\n')
         }
-        return fileStream.pipe(frontMatterify())
+        return fileStream.pipe(frontMatterify(frontmatter))
       }
       return filestream
     }
@@ -79,7 +83,7 @@ function extractDocs (tmpDir, filename, setup, callback) {
   fs.createReadStream(tarball).pipe(gunzip()).pipe(extract)
 }
 
-function frontMatterify () {
+function frontMatterify (frontmatter) {
   var appended = false
   return through(function (obj, enc, next) {
     if (!appended) this.push(frontmatter)
@@ -89,25 +93,19 @@ function frontMatterify () {
   })
 }
 
-function updateSymlink (finalDir) {
-  var latestDir = path.join(process.cwd(),'_docs', 'latest')
-  // remove old symlink?
-  if (fs.existsSync(latestDir)) {
-    rimraf(latestDir, function (error) {
-      return fs.symlinkSync(finalDir, latestDir, 'dir')
-    })
-  } else {
-    fs.symlinkSync(finalDir, latestDir, 'dir')
-  }
+function updateLatestVersion (version) {
+  var config = yaml.load('_config.yml')
+  config.latest_version = version
+  fs.writeFileSync('_config.yml', yaml.stringify(config))
 }
 
-function constructRedirectUrl (path) {
+function constructRedirectUrl (path, version) {
   var pathArray = path.split('/')
-  pathArray.splice(2, 0, 'latest')
+  pathArray.splice(2, 0, version)
   pathArray.splice(0, 1)
   var rejoinPath = pathArray.join('/')
-  var splitExtension = rejoinPath.split('.')
-  return splitExtension.shift()
+  // var splitExtension = rejoinPath.split('.md')
+  return '/' + rejoinPath
 }
 
 // Take newly extracted 'docs' directory, name it according
@@ -122,8 +120,9 @@ function moveDirectories (setup, versionDir, extractedDocsDir, finalDir, newDir,
         if (error) console.log(error)
         console.log("Done! Docs are in", finalDir)
         if (setup.latest) {
-          updateSymlink(finalDir)
-          console.log("Symlink added to 'lastest'")
+          // updateSymlink(finalDir)
+          // console.log("Symlink added to 'lastest'")
+          updateLatestVersion(setup.version)
         }
         if (callback) callback()
       })
