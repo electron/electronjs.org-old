@@ -7,25 +7,36 @@ layout: page
     <div class='row'>
       <div class='twelve columns'>
       <h1>Electron Documentation</h1>
-      <h4>{{ page.version }}
-        {% if site.latest_version == page.version %} (Latest) {% endif %}</h4>
-      <a href='/docs/{{ page.version }}/'>Table of Contents</a> |
-      <a href='{{ page.source_url }}'>Documentation Source</a>
+      {{% if page.category != 'ignore' %}}
+      <a href='/docs/{{ page.version }}/'>{{ page.version }} {% if site.latest_version == page.version %} (Latest) {% endif %} </a> |
+      <a href='{{ page.source_url }}'>Document Source</a>
+      {{% endif %}}
       </div>
     </div>
   </div>
 </section>
 
-<section class='releases'>
-  <div class='container docs'>
+<section class='docs'>
+  <div class='container'>
     <div class='row'>
       <div class='ten columns release offset-by-one'>
-        {{% unless page.category == 'readme' %}}
-          <h6 class='docs-breadcrumb'>{{ page.version }} / {{ page.category }}</h6>
-        {{% endunless %}}
+        {{% if page.category != 'ignore' %}}
+        <h6 class='docs-breadcrumb'>{{ page.version }} / {{ page.category }}
+          {{% if page.title != 'README' %}} / {{ page.title }} {{% endif %}}</h6>
+        {{% endif %}}
 
         {{ content }}
 
+      </div>
+    </div>
+
+    <div class='row'>
+      <div class='ten columns release offset-by-one docs-footer'>
+        <span class="octicon octicon-pencil"></span>
+        See something that needs fixing? Propose a change on the <a href='{{ page.source_url }}'>source</a>.
+        <br>
+        <span class="octicon octicon-zap"></span>
+        Need a different version of docs? See the <a href='/docs'>available versions</a>.
       </div>
     </div>
   </div>
