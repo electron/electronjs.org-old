@@ -1,6 +1,8 @@
 ---
-redirect_from:
-  - docs/latest/api/chrome-command-line-switches
+version: v0.26.0
+category: API
+title: 'Chrome Command Line Switches'
+source_url: 'https://github.com/atom/electron/blob/master/docs/api/chrome-command-line-switches.md'
 ---
 
 # Supported Chrome command line switches

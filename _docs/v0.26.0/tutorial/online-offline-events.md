@@ -1,6 +1,8 @@
 ---
-redirect_from:
-  - docs/latest/tutorial/online-offline-events
+version: v0.26.0
+category: Tutorial
+title: 'Online Offline Events'
+source_url: 'https://github.com/atom/electron/blob/master/docs/tutorial/online-offline-events.md'
 ---
 
 # Online/Offline Event Detection

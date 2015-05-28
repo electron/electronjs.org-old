@@ -1,6 +1,8 @@
 ---
-redirect_from:
-  - docs/latest/api/ipc-renderer
+version: v0.26.0
+category: API
+title: 'Ipc Renderer'
+source_url: 'https://github.com/atom/electron/blob/master/docs/api/ipc-renderer.md'
 ---
 
 # ipc (renderer)

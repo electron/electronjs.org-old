@@ -1,6 +1,8 @@
 ---
-redirect_from:
-  - docs/latest/api/menu-item
+version: v0.26.0
+category: API
+title: 'Menu Item'
+source_url: 'https://github.com/atom/electron/blob/master/docs/api/menu-item.md'
 ---
 
 # menu-item

@@ -1,6 +1,8 @@
 ---
-redirect_from:
-  - docs/latest/api/synopsis
+version: v0.26.0
+category: API
+title: Synopsis
+source_url: 'https://github.com/atom/electron/blob/master/docs/api/synopsis.md'
 ---
 
 # Synopsis

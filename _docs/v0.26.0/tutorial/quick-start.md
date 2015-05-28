@@ -1,6 +1,8 @@
 ---
-redirect_from:
-  - docs/latest/tutorial/quick-start
+version: v0.26.0
+category: Tutorial
+title: 'Quick Start'
+source_url: 'https://github.com/atom/electron/blob/master/docs/tutorial/quick-start.md'
 ---
 
 # Quick start

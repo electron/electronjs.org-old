@@ -1,6 +1,8 @@
 ---
-redirect_from:
-  - docs/latest/development/coding-style
+version: v0.26.0
+category: Development
+title: 'Coding Style'
+source_url: 'https://github.com/atom/electron/blob/master/docs/development/coding-style.md'
 ---
 
 # Coding style

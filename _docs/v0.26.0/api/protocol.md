@@ -1,6 +1,8 @@
 ---
-redirect_from:
-  - docs/latest/api/protocol
+version: v0.26.0
+category: API
+title: Protocol
+source_url: 'https://github.com/atom/electron/blob/master/docs/api/protocol.md'
 ---
 
 # protocol

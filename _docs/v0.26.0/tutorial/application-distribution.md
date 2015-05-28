@@ -1,6 +1,8 @@
 ---
-redirect_from:
-  - docs/latest/tutorial/application-distribution
+version: v0.26.0
+category: Tutorial
+title: 'Application Distribution'
+source_url: 'https://github.com/atom/electron/blob/master/docs/tutorial/application-distribution.md'
 ---
 
 # Application distribution

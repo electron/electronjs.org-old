@@ -1,6 +1,8 @@
 ---
-redirect_from:
-  - docs/latest/development/build-instructions-windows
+version: v0.26.0
+category: Development
+title: 'Build Instructions Windows'
+source_url: 'https://github.com/atom/electron/blob/master/docs/development/build-instructions-windows.md'
 ---
 
 # Build instructions (Windows)

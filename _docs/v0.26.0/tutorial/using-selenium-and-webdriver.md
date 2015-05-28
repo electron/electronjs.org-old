@@ -1,6 +1,8 @@
 ---
-redirect_from:
-  - docs/latest/tutorial/using-selenium-and-webdriver
+version: v0.26.0
+category: Tutorial
+title: 'Using Selenium and Webdriver'
+source_url: 'https://github.com/atom/electron/blob/master/docs/tutorial/using-selenium-and-webdriver.md'
 ---
 
 # Using Selenium and WebDriver

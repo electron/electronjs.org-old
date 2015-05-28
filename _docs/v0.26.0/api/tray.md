@@ -1,6 +1,8 @@
 ---
-redirect_from:
-  - docs/latest/api/tray
+version: v0.26.0
+category: API
+title: Tray
+source_url: 'https://github.com/atom/electron/blob/master/docs/api/tray.md'
 ---
 
 # tray
@@ -60,7 +62,7 @@ Creates a new tray icon associated with the `image`.
 
 Emitted when the tray icon is clicked.
 
-__Note:__ The `bounds` payload is only implemented on OS X.
+__NOte:__ The `bounds` payload is only implemented on OS X.
 
 ### Event: 'double-clicked'
 

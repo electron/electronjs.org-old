@@ -1,6 +1,8 @@
 ---
-redirect_from:
-  - docs/latest/tutorial/application-packaging
+version: v0.26.0
+category: Tutorial
+title: 'Application Packaging'
+source_url: 'https://github.com/atom/electron/blob/master/docs/tutorial/application-packaging.md'
 ---
 
 # Application packaging

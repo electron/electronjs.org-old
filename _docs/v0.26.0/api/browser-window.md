@@ -1,6 +1,8 @@
 ---
-redirect_from:
-  - docs/latest/api/browser-window
+version: v0.26.0
+category: API
+title: 'Browser Window'
+source_url: 'https://github.com/atom/electron/blob/master/docs/api/browser-window.md'
 ---
 
 # browser-window

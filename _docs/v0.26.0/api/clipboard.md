@@ -1,6 +1,8 @@
 ---
-redirect_from:
-  - docs/latest/api/clipboard
+version: v0.26.0
+category: API
+title: Clipboard
+source_url: 'https://github.com/atom/electron/blob/master/docs/api/clipboard.md'
 ---
 
 # clipboard

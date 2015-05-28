@@ -1,6 +1,8 @@
 ---
-redirect_from:
-  - docs/latest/api/power-monitor
+version: v0.26.0
+category: API
+title: 'Power Monitor'
+source_url: 'https://github.com/atom/electron/blob/master/docs/api/power-monitor.md'
 ---
 
 # power-monitor

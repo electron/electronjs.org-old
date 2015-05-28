@@ -1,6 +1,8 @@
 ---
-redirect_from:
-  - docs/latest/api/native-image
+version: v0.26.0
+category: API
+title: 'Native Image'
+source_url: 'https://github.com/atom/electron/blob/master/docs/api/native-image.md'
 ---
 
 # NativeImage

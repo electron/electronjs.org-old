@@ -1,6 +1,8 @@
 ---
-redirect_from:
-  - docs/latest/tutorial/debugging-main-process
+version: v0.26.0
+category: Tutorial
+title: 'Debugging Main Process'
+source_url: 'https://github.com/atom/electron/blob/master/docs/tutorial/debugging-main-process.md'
 ---
 
 # Debugging the main process

@@ -1,6 +1,8 @@
 ---
-redirect_from:
-  - docs/latest/development/build-instructions-mac
+version: v0.26.0
+category: Development
+title: 'Build Instructions Mac'
+source_url: 'https://github.com/atom/electron/blob/master/docs/development/build-instructions-mac.md'
 ---
 
 # Build instructions (Mac)

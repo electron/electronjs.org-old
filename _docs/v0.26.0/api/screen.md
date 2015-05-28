@@ -1,6 +1,8 @@
 ---
-redirect_from:
-  - docs/latest/api/screen
+version: v0.26.0
+category: API
+title: Screen
+source_url: 'https://github.com/atom/electron/blob/master/docs/api/screen.md'
 ---
 
 # screen
@@ -73,9 +75,9 @@ Emitted when `oldDisplay` has been removed.
 
 * `event` Event
 * `display` Object
-* `changedMetrics` Array
+* `changedMetricts` Array
 
-Emitted when a `display` has one or more metrics changed, `changedMetrics` is
+Emitted when a `display` has one or more metrics changed, `changedMetricts` is
 an array of strings that describe the changes. Possible changes are `bounds`,
 `workArea`, `scaleFactor` and `rotation`.
 

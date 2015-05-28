@@ -1,6 +1,8 @@
 ---
-redirect_from:
-  - docs/latest/development/atom-shell-vs-node-webkit
+version: v0.26.0
+category: Development
+title: 'Atom Shell vs Node Webkit'
+source_url: 'https://github.com/atom/electron/blob/master/docs/development/atom-shell-vs-node-webkit.md'
 ---
 
 # Technical differences to NW.js (formerly node-webkit)
