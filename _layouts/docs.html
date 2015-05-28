@@ -7,15 +7,22 @@ layout: page
     <div class='row'>
       <div class='twelve columns'>
       <h1>Electron Documentation</h1>
+      <h4>{{ page.version }}
+        {% if site.latest_version == page.version %} (Latest) {% endif %}</h4>
+      <a href='/docs/{{ page.version }}/'>Table of Contents</a> |
+      <a href='{{ page.source_url }}'>Documentation Source</a>
       </div>
     </div>
   </div>
 </section>
 
 <section class='releases'>
-  <div class='container '>
+  <div class='container docs'>
     <div class='row'>
       <div class='ten columns release offset-by-one'>
+        {{% unless page.category == 'readme' %}}
+          <h6 class='docs-breadcrumb'>{{ page.version }} / {{ page.category }}</h6>
+        {{% endunless %}}
 
         {{ content }}
 
