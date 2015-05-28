@@ -209,3 +209,18 @@ footer {
 .jump-to-item + .jump-to-item::before {
   content: '○ ';
 }
+
+/* Docs
+   ------------------------------------------ */
+
+   .docs h1 {
+     font-size: 3em;
+   }
+
+   .docs h2 {
+     font-size: 2em;
+   }
+
+   .docs-breadcumb {
+     font-weight: 300;
+   }
