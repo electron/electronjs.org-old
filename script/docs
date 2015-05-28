@@ -4,14 +4,16 @@ var fetchDocs = require('./fetch-docs.js')
 
 var args = process.argv.slice(2)
 
-var setup = {
+var settings = {
   latest: false,
   version: 'master',
   finalDir: '_docs'
 }
 
-if (args[0] && args[0] !== '--latest') setup.version = args[0]
-if (args[1] && args[1] === '--latest') setup.latest = true
+if (args[0] && args[0] !== '--latest') settings.version = args[0]
+if (args[1] && args[1] === '--latest') settings.latest = true
 
-
-fetchDocs(setup)
+fetchDocs(settings, function callback (error, message) {
+  if (error) console.log(error)
+  if (message) console.log(message)
+})
