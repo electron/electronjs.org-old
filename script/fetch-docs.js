@@ -20,7 +20,7 @@ var toTitleCase = require('titlecase')
 
 module.exports = function fetchDocs (settings, callback) {
 
-  if (settings.latest) updateLatestVersion(settings.version)
+  updateVersions(settings.version, settings.latest)
 
   var url = 'https://api.github.com/repos/atom/electron/tarball/' + settings.version
   settings.tmpDir = path.join(os.tmpDir(), 'electron-tmp-download')
@@ -44,9 +44,12 @@ module.exports = function fetchDocs (settings, callback) {
   })
 }
 
-function updateLatestVersion (version) {
+function updateVersions (version, latest) {
   var config = yaml.load('_config.yml')
-  config.latest_version = version
+  if (latest) config.latest_version = version
+  if (config.available_versions.indexOf(version) != 1) {
+    config.available_versions.push(version)
+  }
   fs.writeFileSync('_config.yml', yaml.stringify(config))
 }
 
@@ -124,7 +127,7 @@ function constructDocMetadata (path, version) {
   var pathArray = path.split('/')
   pathArray.splice(0, 2)
   if (pathArray.length === 1) {
-    metadata.category = "Contents"
+    metadata.category = "Table of Contents"
     metadata.title = formatDocTitle(pathArray[0])
   } else {
     if (pathArray[0] === 'api') metadata.category = 'API'
