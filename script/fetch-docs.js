@@ -93,19 +93,42 @@ function frontMatterify (frontmatter) {
   })
 }
 
-function updateLatestVersion (version) {
-  var config = yaml.load('_config.yml')
-  config.latest_version = version
-  fs.writeFileSync('_config.yml', yaml.stringify(config))
+function removeMdUrls () {
+  return through(function (obj, enc, next) {
+    var regex = /\.md\)/ig
+    var edits = obj.toString().replace(regex, ')')
+    this.push(edits)
+    next()
+  })
 }
 
-function constructRedirectUrl (path, version) {
+function constructSourceUrl (path) {
+  var baseUrl = 'https://github.com/atom/electron/blob/master/'
+  var source = path.split('/')
+  source.splice(0, 1)
+  return baseUrl + source.join('/')
+}
+
+function constructDocMetadata (path, version) {
+  var metadata = {}
+  metadata.version = version
   var pathArray = path.split('/')
-  pathArray.splice(2, 0, version)
-  pathArray.splice(0, 1)
-  var rejoinPath = pathArray.join('/')
-  // var splitExtension = rejoinPath.split('.md')
-  return '/' + rejoinPath
+  pathArray.splice(0, 2)
+  if (pathArray.length === 1) {
+    metadata.category = "Contents"
+    metadata.title = formatDocTitle(pathArray[0])
+  } else {
+    if (pathArray[0] === 'api') metadata.category = 'API'
+    else metadata.category = toTitleCase(pathArray[0])
+    metadata.title = formatDocTitle(pathArray[1])
+  }
+  return metadata
+}
+
+function formatDocTitle (filename) {
+  filename = filename.replace('.md', '')
+  filename = filename.split('-').join(' ')
+  return toTitleCase(filename)
 }
 
 // Take newly extracted 'docs' directory, name it according
