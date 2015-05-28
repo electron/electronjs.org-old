@@ -20,6 +20,11 @@
     "request": "^2.55.0",
     "rimraf": "^2.3.3",
     "tar-fs": "^1.5.0",
-    "through2": "^0.6.5"
+    "through2": "^0.6.5",
+    "titlecase": "^1.0.2",
+    "yamljs": "^0.2.3"
+  },
+  "devDependencies": {
+    "tape": "^4.0.0"
   }
 }
