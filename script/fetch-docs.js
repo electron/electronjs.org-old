@@ -9,45 +9,54 @@ var cpr = require('cpr')
 var through = require('through2')
 var rimraf = require('rimraf')
 var yaml = require('yamljs')
+var toTitleCase = require('titlecase')
 
-var tmpDir = path.join(os.tmpDir(), 'electron-tmp-download')
-
-// var setup = {
+// settings!
+// var settings = {
 //   latest: boolean,
 //   version: string,
 //   finalDir: string
 // }
 
-module.exports = function fetchDocs (setup, callback) {
-  var url = 'https://api.github.com/repos/atom/electron/tarball/' + setup.version
+module.exports = function fetchDocs (settings, callback) {
+
+  if (settings.latest) updateLatestVersion(settings.version)
+
+  var url = 'https://api.github.com/repos/atom/electron/tarball/' + settings.version
+  settings.tmpDir = path.join(os.tmpDir(), 'electron-tmp-download')
 
   // Create temp directory to fetch tarball into
-  mkdir(tmpDir, function (error) {
-    if (error) return console.log(error)
+  mkdir(settings.tmpDir, function (error) {
+    if (error) return callback(error)
     var filename = 'electron.tar.gz'
     var opts = {
       headers: {"user-agent": "Electron"},
       target: filename,
-      dir: tmpDir,
+      dir: settings.tmpDir,
       resume: true,
       verbose: true
       }
 
     nugget(url, opts, function (error) {
-      if (error) return console.log(error)
-      extractDocs(tmpDir, filename, setup, callback)
+      if (error) return callback(error)
+      extractDocs(filename, settings, callback)
     })
   })
+}
+
+function updateLatestVersion (version) {
+  var config = yaml.load('_config.yml')
+  config.latest_version = version
+  fs.writeFileSync('_config.yml', yaml.stringify(config))
 }
 
 // Extract just the 'docs' directory from within
 // tarball, then prepend each markdown file with
 // Jekyll front matter
-function extractDocs (tmpDir, filename, setup, callback) {
-  var tarball = path.join(tmpDir, filename)
-  var newDir = ''
+function extractDocs (filename, settings, callback) {
+  var tarball = path.join(settings.tmpDir, filename)
 
-  var extract = tar.extract(tmpDir, {
+  var extract = tar.extract(settings.tmpDir, {
     ignore: function (name) {
       return name.indexOf('/docs/') === -1
     },
@@ -70,14 +79,14 @@ function extractDocs (tmpDir, filename, setup, callback) {
 
   extract.on('entry', function extracting (header, stream, next) {
     var extractedElectronDir = header.name.split('/')[0]
-    newDir = path.join(tmpDir, extractedElectronDir)
+    settings.newDir = path.join(settings.tmpDir, extractedElectronDir)
   })
 
   extract.on('finish', function extracted () {
-    var versionDir = path.join(newDir, setup.version)
-    var extractedDocsDir = path.join(newDir, 'docs')
-    var finalDir = path.join(process.cwd(), setup.finalDir, setup.version)
-    moveDirectories(setup, versionDir, extractedDocsDir, finalDir, newDir, callback)
+    settings.versionDir = path.join(settings.newDir, settings.version)
+    settings.extractedDocsDir = path.join(settings.newDir, 'docs')
+    settings.finalDir = path.join(process.cwd(), settings.finalDir, settings.version)
+    moveDirectories(settings, callback)
   })
 
   fs.createReadStream(tarball).pipe(gunzip()).pipe(extract)
@@ -134,20 +143,14 @@ function formatDocTitle (filename) {
 // Take newly extracted 'docs' directory, name it according
 // to appropriate Electron version, copy it to electron.atom.io
 // '_docs' directory and delete temp directory
-function moveDirectories (setup, versionDir, extractedDocsDir, finalDir, newDir, callback) {
-  fs.rename(extractedDocsDir, versionDir, function renamedAndMoved (error) {
-    if (error) return console.log("Renaming error:", error)
-    cpr(versionDir, finalDir, function moved (error) {
-      if (error) console.log("Moving error", error)
-      rimraf(tmpDir, function (error) {
-        if (error) console.log(error)
-        console.log("Done! Docs are in", finalDir)
-        if (setup.latest) {
-          // updateSymlink(finalDir)
-          // console.log("Symlink added to 'lastest'")
-          updateLatestVersion(setup.version)
-        }
-        if (callback) callback()
+function moveDirectories (settings, callback) {
+  fs.rename(settings.extractedDocsDir, settings.versionDir, function renamed (error) {
+    if (error) return callback(error)
+    cpr(settings.versionDir, settings.finalDir, function moved (error) {
+      if (error) return callback(error)
+      rimraf(settings.tmpDir, function deleted (error) {
+        if (error) return callback(error)
+        if (callback) callback(null, "Done! Docs are in " + settings.finalDir)
       })
     })
   })
