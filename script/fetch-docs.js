@@ -54,14 +54,14 @@ function extractDocs (tmpDir, filename, setup, callback) {
     mapStream: function (fileStream, header) {
       var frontmatter
       if (path.extname(header.name) === '.md') {
+        var metadata = constructDocMetadata(header.name, settings.version)
+        metadata.source_url = constructSourceUrl(header.name)
         if (path.basename(header.name, '.md') === 'README') {
-          console.log("readme", header.name, path.basename(header.name, '.md'))
-          var redirectUrl = '/docs/' + setup.version + '/'
-          frontmatter = new Buffer('---\nredirect_from: ' + redirectUrl + '\n---\n\n')
-        } else {
-          var redirectUrl = constructRedirectUrl(header.name, setup.version)
-          frontmatter = new Buffer('---\nredirect_from: ' + redirectUrl + '\n---\n\n')
+          metadata.permalink = '/docs/' + settings.version + '/index.html'
+          frontmatter = new Buffer('---\n' + yaml.stringify(metadata) + '---\n\n')
+          return fileStream.pipe(frontMatterify(frontmatter)).pipe(removeMdUrls())
         }
+        frontmatter = new Buffer('---\n' + yaml.stringify(metadata) + '---\n\n')
         return fileStream.pipe(frontMatterify(frontmatter))
       }
       return filestream
