@@ -14,7 +14,7 @@
   "scripts": {
     "test": "node ./spec/documentation-spec.js | tap-spec"
   },
-  "homepage": "electron.atom.io",
+  "homepage": "http://electron.atom.io",
   "dependencies": {
     "cpr": "^0.4.0",
     "gunzip-maybe": "^1.1.0",
