@@ -29,7 +29,7 @@ layout: page
 
       </div>
     </div>
-
+    {% if page.category != 'ignore' %}
     <div class='row'>
       <div class='ten columns release offset-by-one docs-footer'>
         <span class="octicon octicon-pencil"></span>
@@ -39,5 +39,6 @@ layout: page
         Need a different version of docs? See the <a href='/docs'>available versions</a>.
       </div>
     </div>
+    {% endif %}
   </div>
 </section>
