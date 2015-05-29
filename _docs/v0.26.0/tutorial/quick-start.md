@@ -137,7 +137,7 @@ Electron binary to execute your app directly.
 
 On Windows:
 
-```cmd
+```bash
 $ .\electron\electron.exe your-app\
 ```
 
