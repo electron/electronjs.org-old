@@ -20,7 +20,7 @@ var toTitleCase = require('titlecase')
 
 module.exports = function fetchDocs (settings, callback) {
 
-  updateVersions(settings.version, settings.latest)
+  updateVersions(settings)
 
   var url = 'https://api.github.com/repos/atom/electron/tarball/' + settings.version
   settings.tmpDir = path.join(os.tmpDir(), 'electron-tmp-download')
@@ -44,13 +44,13 @@ module.exports = function fetchDocs (settings, callback) {
   })
 }
 
-function updateVersions (version, latest) {
-  var config = yaml.load('_config.yml')
-  if (latest) config.latest_version = version
-  if (config.available_versions.indexOf(version) != 1) {
-    config.available_versions.push(version)
+function updateVersions (settings) {
+  var config = yaml.load(settings.config)
+  if (settings.latest) config.latest_version = settings.version
+  if (config.available_versions.indexOf(settings.version) != 1) {
+    config.available_versions.push(settings.version)
   }
-  fs.writeFileSync('_config.yml', yaml.stringify(config))
+  fs.writeFileSync(settings.config, yaml.stringify(config))
 }
 
 // Extract just the 'docs' directory from within

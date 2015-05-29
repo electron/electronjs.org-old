@@ -7,7 +7,8 @@ var args = process.argv.slice(2)
 var settings = {
   latest: false,
   version: 'master',
-  finalDir: '_docs'
+  finalDir: '_docs',
+  config: '_config.yml'
 }
 
 if (args[0] && args[0] !== '--latest') settings.version = args[0]
