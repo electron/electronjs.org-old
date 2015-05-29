@@ -7,10 +7,10 @@ layout: page
     <div class='row'>
       <div class='twelve columns'>
       <h1>Electron Documentation</h1>
-      {{% if page.category != 'ignore' %}}
+      {% if page.category != 'ignore' %}
       <a href='/docs/{{ page.version }}/'>{{ page.version }} {% if site.latest_version == page.version %} (Latest) {% endif %} </a> |
       <a href='{{ page.source_url }}'>Document Source</a>
-      {{% endif %}}
+      {% endif %}
       </div>
     </div>
   </div>
@@ -20,10 +20,10 @@ layout: page
   <div class='container'>
     <div class='row'>
       <div class='ten columns release offset-by-one'>
-        {{% if page.category != 'ignore' %}}
+        {% if page.category != 'ignore' %}
         <h6 class='docs-breadcrumb'>{{ page.version }} / {{ page.category }}
-          {{% if page.title != 'README' %}} / {{ page.title }} {{% endif %}}</h6>
-        {{% endif %}}
+          {% if page.title != 'README' %} / {{ page.title }} {% endif %}</h6>
+        {% endif %}
 
         {{ content }}
 
