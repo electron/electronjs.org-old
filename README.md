@@ -15,7 +15,36 @@ $ script/bootstrap
 $ script/server
 ```
 
-Then open [localhost:4000](http://localhost:4000) in your browser.
+#### Documentation
+
+Documentation is added to the site directly from the `atom/electron` repository's `docs` directory. This is done with [Node.js](http://www.nodejs.org/download) so you'll need that on your system and to install the dependencies used here.
+
+```bash
+$ cd electron.atom.io
+$ npm install
+```
+
+
+**CLI**
+
+To fetch documentation at a specific version:
+
+```bash
+$ script/docs <version> [options]
+# Example:
+$ script/docs v0.26.0 --latest
+```
+Options:
+
+`--latest` Set this version as the latest version of documentation
+
+**Testing**
+
+To test the documentation script:
+
+```bash
+$ npm test
+```
 
 ### Contributing
 
