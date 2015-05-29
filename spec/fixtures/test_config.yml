@@ -1,0 +1,19 @@
+title: Electron
+email: atom@github.com
+description: 'Build cross platform desktop apps with web technologies'
+baseurl: 'http://electron.atom.io'
+twitter_username: ElectronJS
+github_username: atom
+highlighter: pygments
+markdown: redcarpet
+gems:
+    - jekyll-redirect-from
+latest_version: v0.0.0
+available_versions:
+    - v0.27.0
+    - v0.26.0
+    - v0.25.0
+collections:
+    docs: {output: true, permalink: '/docs/:path/'}
+defaults:
+    - {scope: {type: docs}, values: {layout: docs}}
