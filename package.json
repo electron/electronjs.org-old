@@ -25,6 +25,7 @@
     "tar-fs": "^1.5.0",
     "through2": "^0.6.5",
     "titlecase": "^1.0.2",
+    "yaml-front-matter": "^3.2.3",
     "yamljs": "^0.2.3"
   },
   "devDependencies": {
