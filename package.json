@@ -11,6 +11,9 @@
   "bugs": {
     "url": "https://github.com/atom/electron.atom.io/issues"
   },
+  "scripts": {
+    "test": "node ./spec/documentation-spec.js | tap-spec"
+  },
   "homepage": "electron.atom.io",
   "dependencies": {
     "cpr": "^0.4.0",
@@ -25,6 +28,7 @@
     "yamljs": "^0.2.3"
   },
   "devDependencies": {
+    "tap-spec": "^4.0.0",
     "tape": "^4.0.0"
   }
 }
