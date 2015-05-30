@@ -47,7 +47,7 @@ module.exports = function fetchDocs (settings, callback) {
 function updateVersions (settings) {
   var config = yaml.load(settings.config)
   if (settings.latest) config.latest_version = settings.version
-  if (config.available_versions.indexOf(settings.version) != 1) {
+  if (config.available_versions.indexOf(settings.version) === -1) {
     config.available_versions.push(settings.version)
   }
   fs.writeFileSync(settings.config, yaml.stringify(config))
