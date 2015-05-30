@@ -16,7 +16,7 @@ test('Fetch and write documentation with latest flag', function (t) {
     config: 'spec/fixtures/test_config.yml'
   }
 
-  t.plan(7)
+  t.plan(8)
 
   fetchDocs(settings, function callback (error, message) {
     if (error) return t.fail(error)
@@ -42,6 +42,10 @@ test('Fetch and write documentation with latest flag', function (t) {
     var filepath = expectedSourceUrl.split('.md')
     var expectedTitle =  filepath[0].substring(filepath[0].lastIndexOf("/") + 1, filepath[0].length)
     t.equal(readmeFM.title, expectedTitle, 'Frontmatter: Adds title.')
+
+    var quickstart = fs.readFileSync(path.join(settings.finalDir, '/tutorial/quick-start.md'))
+    var quickstartFM = frontmatter.loadFront(quickstart)
+    t.equal(quickstartFM.redirect_from, '/docs/latest/tutorial/quick-start/', "Frontmatter: Adds redirect_from to docs.")
 
     tearDown(settings, config)
   })

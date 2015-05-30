@@ -73,6 +73,9 @@ function extractDocs (filename, settings, callback) {
           frontmatter = new Buffer('---\n' + yaml.stringify(metadata) + '---\n\n')
           return fileStream.pipe(frontMatterify(frontmatter)).pipe(removeMdUrls())
         }
+        if (settings.latest) {
+          metadata.redirect_from = constructRedirectUrl(header.name)
+        }
         frontmatter = new Buffer('---\n' + yaml.stringify(metadata) + '---\n\n')
         return fileStream.pipe(frontMatterify(frontmatter))
       }
@@ -119,6 +122,13 @@ function constructSourceUrl (path) {
   var source = path.split('/')
   source.splice(0, 1)
   return baseUrl + source.join('/')
+}
+
+function constructRedirectUrl (path) {
+  var baseUrl = '/docs/latest/'
+  var source = path.split('/')
+  source.splice(0, 2)
+  return baseUrl + source.join('/').replace('.md', '/')
 }
 
 function constructDocMetadata (path, version) {
