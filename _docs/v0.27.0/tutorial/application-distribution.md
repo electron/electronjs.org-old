@@ -3,6 +3,7 @@ version: v0.27.0
 category: Tutorial
 title: 'Application Distribution'
 source_url: 'https://github.com/atom/electron/blob/master/docs/tutorial/application-distribution.md'
+redirect_from: /docs/latest/tutorial/application-distribution/
 ---
 
 # Application distribution
@@ -118,7 +119,7 @@ environment variable and have a clean rebuild:
 
 __Windows__
 
-```bash
+```cmd
 > set "GYP_DEFINES=project_name=myapp product_name=MyApp"
 > python script\clean.py
 > python script\bootstrap.py

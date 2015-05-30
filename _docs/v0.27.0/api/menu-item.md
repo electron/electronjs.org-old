@@ -3,6 +3,7 @@ version: v0.27.0
 category: API
 title: 'Menu Item'
 source_url: 'https://github.com/atom/electron/blob/master/docs/api/menu-item.md'
+redirect_from: /docs/latest/api/menu-item/
 ---
 
 # menu-item

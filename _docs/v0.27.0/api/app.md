@@ -3,6 +3,7 @@ version: v0.27.0
 category: API
 title: App
 source_url: 'https://github.com/atom/electron/blob/master/docs/api/app.md'
+redirect_from: /docs/latest/api/app/
 ---
 
 # app

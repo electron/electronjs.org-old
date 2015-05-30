@@ -3,6 +3,7 @@ version: v0.27.0
 category: API
 title: Accelerator
 source_url: 'https://github.com/atom/electron/blob/master/docs/api/accelerator.md'
+redirect_from: /docs/latest/api/accelerator/
 ---
 
 # Accelerator

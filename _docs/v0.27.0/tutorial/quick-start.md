@@ -3,6 +3,7 @@ version: v0.27.0
 category: Tutorial
 title: 'Quick Start'
 source_url: 'https://github.com/atom/electron/blob/master/docs/tutorial/quick-start.md'
+redirect_from: /docs/latest/tutorial/quick-start/
 ---
 
 # Quick start
@@ -140,7 +141,7 @@ Electron binary to execute your app directly.
 
 On Windows:
 
-```bash
+```cmd
 $ .\electron\electron.exe your-app\
 ```
 

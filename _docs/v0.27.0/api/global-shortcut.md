@@ -3,6 +3,7 @@ version: v0.27.0
 category: API
 title: 'Global Shortcut'
 source_url: 'https://github.com/atom/electron/blob/master/docs/api/global-shortcut.md'
+redirect_from: /docs/latest/api/global-shortcut/
 ---
 
 # global-shortcut

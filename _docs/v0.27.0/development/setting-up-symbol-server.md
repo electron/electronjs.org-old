@@ -3,6 +3,7 @@ version: v0.27.0
 category: Development
 title: 'Setting Up Symbol Server'
 source_url: 'https://github.com/atom/electron/blob/master/docs/development/setting-up-symbol-server.md'
+redirect_from: /docs/latest/development/setting-up-symbol-server/
 ---
 
 # Setting up symbol server in debugger

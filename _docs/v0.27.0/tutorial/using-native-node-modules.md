@@ -3,6 +3,7 @@ version: v0.27.0
 category: Tutorial
 title: 'Using Native Node Modules'
 source_url: 'https://github.com/atom/electron/blob/master/docs/tutorial/using-native-node-modules.md'
+redirect_from: /docs/latest/tutorial/using-native-node-modules/
 ---
 
 # Using native Node modules

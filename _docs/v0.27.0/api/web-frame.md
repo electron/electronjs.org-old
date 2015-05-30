@@ -3,6 +3,7 @@ version: v0.27.0
 category: API
 title: 'Web Frame'
 source_url: 'https://github.com/atom/electron/blob/master/docs/api/web-frame.md'
+redirect_from: /docs/latest/api/web-frame/
 ---
 
 # web-frame

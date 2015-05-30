@@ -3,6 +3,7 @@ version: v0.27.0
 category: Tutorial
 title: 'Devtools Extension'
 source_url: 'https://github.com/atom/electron/blob/master/docs/tutorial/devtools-extension.md'
+redirect_from: /docs/latest/tutorial/devtools-extension/
 ---
 
 # DevTools extension

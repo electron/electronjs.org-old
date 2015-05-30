@@ -3,6 +3,7 @@ version: v0.27.0
 category: API
 title: 'Web View Tag'
 source_url: 'https://github.com/atom/electron/blob/master/docs/api/web-view-tag.md'
+redirect_from: /docs/latest/api/web-view-tag/
 ---
 
 # `<webview>` tag

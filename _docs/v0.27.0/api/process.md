@@ -3,6 +3,7 @@ version: v0.27.0
 category: API
 title: Process
 source_url: 'https://github.com/atom/electron/blob/master/docs/api/process.md'
+redirect_from: /docs/latest/api/process/
 ---
 
 # Process object

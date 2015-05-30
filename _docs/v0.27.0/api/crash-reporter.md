@@ -3,6 +3,7 @@ version: v0.27.0
 category: API
 title: 'Crash Reporter'
 source_url: 'https://github.com/atom/electron/blob/master/docs/api/crash-reporter.md'
+redirect_from: /docs/latest/api/crash-reporter/
 ---
 
 # crash-reporter

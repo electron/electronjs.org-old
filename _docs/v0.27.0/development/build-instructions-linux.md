@@ -3,6 +3,7 @@ version: v0.27.0
 category: Development
 title: 'Build Instructions Linux'
 source_url: 'https://github.com/atom/electron/blob/master/docs/development/build-instructions-linux.md'
+redirect_from: /docs/latest/development/build-instructions-linux/
 ---
 
 # Build instructions (Linux)
