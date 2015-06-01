@@ -16,7 +16,7 @@ test('Fetch and write documentation with latest flag', function (t) {
     config: 'spec/fixtures/test_config.yml'
   }
 
-  t.plan(7)
+  t.plan(8)
 
   fetchDocs(settings, function callback (error, message) {
     if (error) return t.fail(error)
@@ -31,7 +31,7 @@ test('Fetch and write documentation with latest flag', function (t) {
     var readmeFM = frontmatter.loadFront(readme)
 
     var expectedPermalink = '/docs/' + settings.version + '/index.html'
-    t.equal(readmeFM.permalink, expectedPermalink , 'Frontmatter: Adds permalink to README.')
+    t.equal(readmeFM.permalink, expectedPermalink, 'Frontmatter: Adds permalink to README.')
 
     var expectedSourceUrl = 'https://github.com/atom/electron/blob/master/docs/README.md'
     t.equal(readmeFM.source_url, expectedSourceUrl, 'Frontmatter: Adds file source url')
@@ -40,15 +40,21 @@ test('Fetch and write documentation with latest flag', function (t) {
     t.equal(readmeFM.category, 'Table of Contents', 'Frontmatter: Adds category to README.')
 
     var filepath = expectedSourceUrl.split('.md')
-    var expectedTitle =  filepath[0].substring(filepath[0].lastIndexOf("/") + 1, filepath[0].length)
+    var expectedTitle = filepath[0].substring(filepath[0].lastIndexOf('/') + 1, filepath[0].length)
     t.equal(readmeFM.title, expectedTitle, 'Frontmatter: Adds title.')
+
+    var latestFilePath = settings.finalDir.replace(settings.version, '')
+    var latestFile = fs.readFileSync(path.join(latestFilePath, 'latest/README.md'))
+    var latestFileFM = frontmatter.loadFront(latestFile)
+    t.equal(latestFileFM.version, settings.version, 'Latest: Files in /latest match with latest version.')
 
     tearDown(settings, config)
   })
 })
 
 function tearDown (settings, config) {
-  rimraf(settings.finalDir, function (error) {
+  var docsPath = settings.finalDir.replace(settings.version, '')
+  rimraf(docsPath, function (error) {
     if (error) console.log(error)
   })
   config.latest_version = 'v0.0.0'
