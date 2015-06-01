@@ -73,13 +73,10 @@ function extractDocs (filename, settings, callback) {
           frontmatter = new Buffer('---\n' + yaml.stringify(metadata) + '---\n\n')
           return fileStream.pipe(frontMatterify(frontmatter)).pipe(removeMdUrls())
         }
-        if (settings.latest) {
-          metadata.redirect_from = constructRedirectUrl(header.name)
-        }
         frontmatter = new Buffer('---\n' + yaml.stringify(metadata) + '---\n\n')
         return fileStream.pipe(frontMatterify(frontmatter))
       }
-      return filestream
+      return fileStream
     }
   })
 
@@ -124,13 +121,6 @@ function constructSourceUrl (path) {
   return baseUrl + source.join('/')
 }
 
-function constructRedirectUrl (path) {
-  var baseUrl = '/docs/latest/'
-  var source = path.split('/')
-  source.splice(0, 2)
-  return baseUrl + source.join('/').replace('.md', '/')
-}
-
 function constructDocMetadata (path, version) {
   var metadata = {}
   metadata.version = version
@@ -163,8 +153,18 @@ function moveDirectories (settings, callback) {
       if (error) return callback(error)
       rimraf(settings.tmpDir, function deleted (error) {
         if (error) return callback(error)
+        if (settings.latest) createLatestDir(settings)
         if (callback) callback(null, "Done! Docs are in " + settings.finalDir)
       })
     })
+  })
+}
+
+function createLatestDir (settings, callback) {
+  console.log("Final Dir", settings.finalDir)
+  var latestDir = settings.finalDir.replace(settings.version, 'latest')
+  cpr(settings.finalDir, latestDir, function moved (error) {
+    if (error) return callback(error)
+    console.log("Updated /latest directory with this version of docs.")
   })
 }
