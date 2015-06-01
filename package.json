@@ -11,8 +11,25 @@
   "bugs": {
     "url": "https://github.com/atom/electron.atom.io/issues"
   },
+  "scripts": {
+    "test": "node ./spec/documentation-spec.js | tap-spec"
+  },
   "homepage": "http://electron.atom.io",
   "dependencies": {
-    "request": "^2.55.0"
+    "cpr": "^0.4.0",
+    "gunzip-maybe": "^1.1.0",
+    "mkdirp": "^0.5.1",
+    "nugget": "^1.5.1",
+    "request": "^2.55.0",
+    "rimraf": "^2.3.3",
+    "tar-fs": "^1.5.0",
+    "through2": "^0.6.5",
+    "titlecase": "^1.0.2",
+    "yaml-front-matter": "^3.2.3",
+    "yamljs": "^0.2.3"
+  },
+  "devDependencies": {
+    "tap-spec": "^4.0.0",
+    "tape": "^4.0.0"
   }
 }

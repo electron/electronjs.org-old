@@ -209,3 +209,51 @@ footer {
 .jump-to-item + .jump-to-item::before {
   content: '○ ';
 }
+
+/* Docs
+   ------------------------------------------ */
+
+.docs {
+     background-color: #FAF7F3;
+   }
+
+.docs h1 {
+ font-size: 3em;
+ font-weight: 500;
+ padding-bottom: 40px;
+}
+
+.docs h2 {
+ font-size: 2em;
+ padding-top: 30px;
+}
+
+.docs h3 {
+  font-size: 1.5em;
+  font-weight: 300;
+  letter-spacing: .001em
+}
+
+.docs-breadcumb {
+ font-weight: 300;
+}
+
+.docs-footer {
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.docs-footer .octicon {
+  padding-right: 8px;
+}
+
+.docs code, .docs pree {
+  color: #076274;
+  border: none;
+  background-color: #EAE5DE;
+}
+
+.docs blockquote {
+  border-left: 1px solid #76C7D7;
+  padding-left: 20px;
+}

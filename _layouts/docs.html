@@ -1,0 +1,44 @@
+---
+layout: page
+---
+
+<section class='jump-to-release'>
+  <div class='container '>
+    <div class='row'>
+      <div class='twelve columns'>
+      <h1>Electron Documentation</h1>
+      {% if page.category != 'ignore' %}
+      <a href='/docs/{{ page.version }}/'>{{ page.version }} {% if site.latest_version == page.version %} (Latest) {% endif %} </a> |
+      <a href='{{ page.source_url }}'>Document Source</a>
+      {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class='docs'>
+  <div class='container'>
+    <div class='row'>
+      <div class='ten columns release offset-by-one'>
+        {% if page.category != 'ignore' %}
+        <h6 class='docs-breadcrumb'>{{ page.version }} / {{ page.category }}
+          {% if page.title != 'README' %} / {{ page.title }} {% endif %}</h6>
+        {% endif %}
+
+        {{ content }}
+
+      </div>
+    </div>
+    {% if page.category != 'ignore' %}
+    <div class='row'>
+      <div class='ten columns release offset-by-one docs-footer'>
+        <span class="octicon octicon-pencil"></span>
+        See something that needs fixing? Propose a change on the <a href='{{ page.source_url }}'>source</a>.
+        <br>
+        <span class="octicon octicon-zap"></span>
+        Need a different version of the docs? See the <a href='/docs'>available versions</a>.
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</section>
