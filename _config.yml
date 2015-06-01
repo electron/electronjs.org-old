@@ -11,6 +11,7 @@ gems:
 latest_version: v0.27.0
 available_versions:
     - v0.27.0
+    - v0.26.0
 collections:
     docs: {output: true, permalink: '/docs/:path/'}
 defaults:
