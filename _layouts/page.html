@@ -2,6 +2,6 @@
 layout: default
 ---
 
-<div class='page-template {{ page.title }}'>
+<div class='page-template {{ page.title | downcase | replace:" ", "-" }}'>
   {{ content }}
 </div>
