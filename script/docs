@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-var fetchDocs = require('./fetch-docs.js')
+var fetchDocs = require('../lib/fetch-docs.js')
 
 var args = process.argv.slice(2)
 
