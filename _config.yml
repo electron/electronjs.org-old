@@ -6,6 +6,8 @@ twitter_username: ElectronJS
 github_username: atom
 highlighter: pygments
 markdown: redcarpet
+redcarpet:
+    extensions: [with_toc_data]
 gems:
     - jekyll-redirect-from
 latest_version: v0.27.0
