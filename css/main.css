@@ -257,3 +257,7 @@ footer {
   border-left: 1px solid #76C7D7;
   padding-left: 20px;
 }
+
+.all-of-the-latest-documentation h1:first-child {
+  padding: 0;
+}
