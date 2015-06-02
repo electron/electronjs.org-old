@@ -5,7 +5,7 @@ var rimraf = require('rimraf')
 var yaml = require('yamljs')
 var frontmatter = require('yaml-front-matter')
 
-var fetchDocs = require('../script/fetch-docs.js')
+var fetchDocs = require('../lib/fetch-docs.js')
 
 test('Fetch and write documentation with latest flag', function (t) {
 
