@@ -9,7 +9,7 @@ source_url: 'https://github.com/atom/electron/blob/master/docs/api/synopsis.md'
 
 All of [node.js's built-in modules](http://nodejs.org/api/) are available in
 Electron, and third-party node modules are fully supported too (including the
-[native modules](../tutorial/using-native-node-modules.md)).
+[native modules](../../tutorial/using-native-node-modules)).
 
 Electron also provides some extra built-in modules for developing native
 desktop applications. Some modules are only available on the main process, some
