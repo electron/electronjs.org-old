@@ -45,9 +45,9 @@ native GUI resources in web pages is very dangerous and easy to leak resources.
 If you want to do GUI operations in web pages, you have to communicate with
 the main process to do it there.
 
-In Electron, we have provided the [ipc](../api/ipc-renderer.md) module for
+In Electron, we have provided the [ipc](../../api/ipc-renderer) module for
 communication between main process and renderer process. And there is also a
-[remote](../api/remote.md) module for RPC style communication.
+[remote](../../api/remote) module for RPC style communication.
 
 ## Write your first Electron app
 
@@ -134,7 +134,7 @@ Finally the `index.html` is the web page you want to show:
 ## Run your app
 
 After you're done writing your app, you can create a distribution by
-following the [Application distribution](./application-distribution.md) guide
+following the [Application distribution](../application-distribution) guide
 and then execute the packaged app. You can also just use the downloaded
 Electron binary to execute your app directly.
 
