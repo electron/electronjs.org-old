@@ -29,6 +29,9 @@
     "yamljs": "^0.2.3"
   },
   "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-link-checker": "^0.1.0",
     "tap-spec": "^4.0.0",
     "tape": "^4.0.0"
   }
