@@ -17,6 +17,7 @@
   "homepage": "http://electron.atom.io",
   "dependencies": {
     "cpr": "^0.4.0",
+    "glob": "^5.0.10",
     "gunzip-maybe": "^1.1.0",
     "mkdirp": "^0.5.1",
     "nugget": "^1.5.1",
