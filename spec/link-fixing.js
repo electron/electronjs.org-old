@@ -14,8 +14,8 @@ var originalContent = fs.readFileSync(originalFile).toString()
 var finalFile = 'spec/fixtures/test-set-docs/tutorial/quick-start.md'
 
 var expectedLinks = [
-  '[ipc](http://electron.atom.io/docs/api/ipc-renderer)',
-  '[remote](http://electron.atom.io/docs/api/remote)',
+  '[ipc](http://electron.atom.io/docs/v0.27.0/api/ipc-renderer)',
+  '[remote](http://electron.atom.io/docs/v0.27.0/api/remote)',
   '[Application distribution](http://electron.atom.io/docs/v0.27.0/tutorial/application-distribution)',
   '[here](https://github.com/atom/electron/releases)'
   ]
