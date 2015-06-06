@@ -5,23 +5,25 @@ var test = require('tape')
 
 var fixInternalLinks = require('../lib/doc-links.js')
 
-var urlRegex = /\[.+\]\((?!http)(.+)\)/g
+var urlRegex = /\[.+\]\(.+\)/g
 
 var dir = 'spec/fixtures/test-set-docs/tutorial'
+var emptyDir = 'spec/fixtures/test-set-docs/empty-dir'
 var originalFile = 'spec/fixtures/doc-with-internal-links.md'
 var originalContent = fs.readFileSync(originalFile).toString()
 var finalFile = 'spec/fixtures/test-set-docs/tutorial/quick-start.md'
 
 var expectedLinks = [
-  '[ipc](../../api/ipc-renderer)',
-  '[remote](../../api/remote)',
-  '[Application distribution](../application-distribution)'
+  '[ipc](http://electron.atom.io/docs/api/ipc-renderer)',
+  '[remote](http://electron.atom.io/docs/api/remote)',
+  '[Application distribution](http://electron.atom.io/docs/v0.27.0/tutorial/application-distribution)',
+  '[here](https://github.com/atom/electron/releases)'
   ]
 
 test('Fetch and write documentation with latest flag', function (t) {
-  t.plan(3)
+  t.plan(4)
 
-  fixInternalLinks(dir, function callback (error, message) {
+  fixInternalLinks(dir, 'v0.27.0', function callback (error, message) {
     if (error) return t.fail(error)
     compareLinks()
   })
@@ -30,9 +32,11 @@ test('Fetch and write documentation with latest flag', function (t) {
     var finalContent = fs.readFileSync(finalFile).toString()
     var finalLinks = finalContent.match(urlRegex)
 
-    finalLinks.forEach(function (finalLink, i) {
-      t.equal(finalLink, expectedLinks[i], 'Link ' + i + ' matches.')
-    })
+    if (finalLinks) {
+      finalLinks.forEach(function (finalLink, i) {
+        t.equal(finalLink, expectedLinks[i], 'Link ' + finalLink + ' matches ' + expectedLinks[i])
+      })
+    }
     cleanup()
   }
 
@@ -41,4 +45,12 @@ test('Fetch and write documentation with latest flag', function (t) {
       if (error) return t.fail(error)
     })
   }
+})
+
+test('Parse empty directory', function (t) {
+  fixInternalLinks(emptyDir, 'v0.27.0', function callback (error, message) {
+    t.ok(error, 'got error')
+    t.equal(error.message, 'Found no relative links in files.', 'Got correct error message.')
+    t.end()
+  })
 })
