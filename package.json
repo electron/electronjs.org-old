@@ -12,7 +12,7 @@
     "url": "https://github.com/atom/electron.atom.io/issues"
   },
   "scripts": {
-    "test": "node ./spec/documentation-spec.js | tap-spec"
+    "test": "tape spec/*.js | tap-spec"
   },
   "homepage": "http://electron.atom.io",
   "dependencies": {
