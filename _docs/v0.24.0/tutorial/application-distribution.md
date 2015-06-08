@@ -58,7 +58,7 @@ electron/resources/
 └── app.asar
 ```
 
-More details can be found in [Application packaging](application-packaging.md).
+More details can be found in [Application packaging](http://electron.atom.io/docs/v0.24.0/tutorial/application-packaging).
 
 ## Rebranding with downloaded binaries
 
