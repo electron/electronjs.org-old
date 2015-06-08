@@ -13,7 +13,7 @@ Below is the latest version of documentation. See all [available versions](/docs
 
 {% for doc in site.docs %}
 {% assign subdir = doc.path | split:'latest' %}
-{% unless subdir[1] or doc.title == 'README' %}
+{% if subdir.size == 2 and doc.title != 'README' %}
 {{ doc.content }}
-{% endunless %}
+{% endif %}
 {% endfor %}
