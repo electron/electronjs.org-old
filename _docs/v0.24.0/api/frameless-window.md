@@ -12,7 +12,7 @@ A frameless window is a window that has no chrome.
 ## Create a frameless window
 
 To create a frameless window, you only need to specify `frame` to `false` in
-[BrowserWindow](browser-window.md)'s `options`:
+[BrowserWindow](http://electron.atom.io/docs/v0.24.0/api/browser-window)'s `options`:
 
 
 ```javascript
