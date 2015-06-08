@@ -19,8 +19,8 @@ source_url: 'https://github.com/atom/electron/blob/master/docs/api/menu-item.md'
      `radio`
   * `label` String
   * `sublabel` String
-  * `accelerator` [Accelerator](accelerator.md)
-  * `icon` [NativeImage](native-image.md)
+  * `accelerator` [Accelerator](http://electron.atom.io/docs/v0.27.0/api/accelerator)
+  * `icon` [NativeImage](http://electron.atom.io/docs/v0.27.0/api/native-image)
   * `enabled` Boolean
   * `visible` Boolean
   * `checked` Boolean

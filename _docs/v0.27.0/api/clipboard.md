@@ -41,11 +41,11 @@ Writes the `text` into clipboard as plain text.
 
 * `type` String
 
-Returns the content in clipboard as [NativeImage](native-image.md).
+Returns the content in clipboard as [NativeImage](http://electron.atom.io/docs/v0.27.0/api/native-image).
 
 ## clipboard.writeImage(image[, type])
 
-* `image` [NativeImage](native-image.md)
+* `image` [NativeImage](http://electron.atom.io/docs/v0.27.0/api/native-image)
 * `type` String
 
 Writes the `image` into clipboard.
