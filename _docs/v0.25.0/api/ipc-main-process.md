@@ -16,7 +16,7 @@ to set `event.returnValue`, to send an asynchronous back to the sender, you can
 use `event.sender.send(...)`.
 
 It's also possible to send messages from main process to the renderer process,
-see [WebContents.send](browser-window.md#webcontentssendchannel-args) for more.
+see [WebContents.send](http://electron.atom.io/docs/v0.25.0/api/browser-window#webcontentssendchannel-args) for more.
 
 An example of sending and handling messages:
 

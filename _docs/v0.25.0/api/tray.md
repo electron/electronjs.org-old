@@ -47,7 +47,7 @@ rely on `clicked` event and always attach a context menu to the tray icon.
 
 ### new Tray(image)
 
-* `image` [NativeImage](native-image.md)
+* `image` [NativeImage](http://electron.atom.io/docs/v0.25.0/api/native-image)
 
 Creates a new tray icon associated with the `image`.
 
@@ -86,13 +86,13 @@ Destroys the tray icon immediately.
 
 ### Tray.setImage(image)
 
-* `image` [NativeImage](native-image.md)
+* `image` [NativeImage](http://electron.atom.io/docs/v0.25.0/api/native-image)
 
 Sets the `image` associated with this tray icon.
 
 ### Tray.setPressedImage(image)
 
-* `image` [NativeImage](native-image.md)
+* `image` [NativeImage](http://electron.atom.io/docs/v0.25.0/api/native-image)
 
 Sets the `image` associated with this tray icon when pressed.
 
@@ -121,7 +121,7 @@ This is only implmented on OS X.
 ### Tray.displayBalloon(options)
 
 * `options` Object
-  * `icon` [NativeImage](native-image.md)
+  * `icon` [NativeImage](http://electron.atom.io/docs/v0.25.0/api/native-image)
   * `title` String
   * `content` String
 
