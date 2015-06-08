@@ -304,7 +304,7 @@ Executes editing command `replaceMisspelling` in page.
 Send `args..` to guest page via `channel` in asynchronous message, the guest
 page can handle it by listening to the `channel` event of `ipc` module.
 
-See [WebContents.send](browser-window.md#webcontentssendchannel-args) for
+See [WebContents.send](http://electron.atom.io/docs/v0.27.0/api/browser-window#webcontentssendchannel-args) for
 examples.
 
 ## DOM events

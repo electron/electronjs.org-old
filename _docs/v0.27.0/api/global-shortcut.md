@@ -31,7 +31,7 @@ globalShortcut.unregisterAll();
 
 ## globalShortcut.register(accelerator, callback)
 
-* `accelerator` [Accelerator](accelerator.md)
+* `accelerator` [Accelerator](http://electron.atom.io/docs/v0.27.0/api/accelerator)
 * `callback` Function
 
 Registers a global shortcut of `accelerator`, the `callback` would be called when
@@ -39,13 +39,13 @@ the registered shortcut is pressed by user.
 
 ## globalShortcut.isRegistered(accelerator)
 
-* `accelerator` [Accelerator](accelerator.md)
+* `accelerator` [Accelerator](http://electron.atom.io/docs/v0.27.0/api/accelerator)
 
 Returns whether shortcut of `accelerator` is registered.
 
 ## globalShortcut.unregister(accelerator)
 
-* `accelerator` [Accelerator](accelerator.md)
+* `accelerator` [Accelerator](http://electron.atom.io/docs/v0.27.0/api/accelerator)
 
 Unregisters the global shortcut of `keycode`.
 
