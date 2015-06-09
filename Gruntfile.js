@@ -1,4 +1,4 @@
-module.exports = function(grunt) {
+module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-link-checker');
 
   grunt.initConfig({
@@ -6,12 +6,18 @@ module.exports = function(grunt) {
 
     linkChecker: {
       options: {
-        maxConcurrency: 100
+        maxConcurrency: 100,
+        noFragment: true,
+        callback: function (crawler) {
+          crawler.addFetchCondition(function (url) {
+            return !url.path.match(/\.xml$/i)
+          })
+        }
       },
       dev: {
         site: 'localhost',
         options: {
-          initialPort: 4000
+          initialPort: 4000,
         }
       }
     }

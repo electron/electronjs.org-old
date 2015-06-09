@@ -58,6 +58,7 @@ app.on('ready', function() {
 
 ## Enable flash plugin in a `<webview>` tag
 Add `plugins` attribute to `<webview>` tag.
+
 ```html
 <webview src="http://www.adobe.com/software/flash/about/" plugins></webview>
 ```
