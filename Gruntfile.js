@@ -17,7 +17,7 @@ module.exports = function (grunt) {
       dev: {
         site: 'localhost',
         options: {
-          initialPort: 4000,
+          initialPort: 4000
         }
       }
     }
