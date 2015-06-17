@@ -10,12 +10,13 @@ redcarpet:
     extensions: [with_toc_data]
 gems:
     - jekyll-redirect-from
-latest_version: v0.27.0
+latest_version: v0.28.0
 available_versions:
     - v0.27.0
     - v0.26.0
     - v0.25.0
     - v0.24.0
+    - v0.28.0
 collections:
     docs: {output: true, permalink: '/docs/:path/'}
 defaults:
