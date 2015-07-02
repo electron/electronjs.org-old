@@ -12,6 +12,10 @@ var options = {
 request(options, function (error, response, body) {
   if (error) return console.log(error)
   if (response.statusCode == 200) {
+    body.forEach(function (release) {
+      delete release.assets
+      delete release.author
+    })
     fs.writeFileSync('_data/releases.json', JSON.stringify(body, null, 2))
   }
 })
