@@ -1,5 +1,5 @@
 ---
-version: v0.28.0
+version: v0.29.0
 category: API
 title: Tray
 source_url: 'https://github.com/atom/electron/blob/master/docs/api/tray.md'
@@ -47,7 +47,7 @@ rely on `clicked` event and always attach a context menu to the tray icon.
 
 ### new Tray(image)
 
-* `image` [NativeImage](http://electron.atom.io/docs/v0.28.0/api/native-image)
+* `image` [NativeImage](http://electron.atom.io/docs/v0.29.0/api/native-image)
 
 Creates a new tray icon associated with the `image`.
 
@@ -95,15 +95,15 @@ Destroys the tray icon immediately.
 
 ### Tray.setImage(image)
 
-* `image` [NativeImage](http://electron.atom.io/docs/v0.28.0/api/native-image)
+* `image` [NativeImage](http://electron.atom.io/docs/v0.29.0/api/native-image)
 
 Sets the `image` associated with this tray icon.
 
 ### Tray.setPressedImage(image)
 
-* `image` [NativeImage](http://electron.atom.io/docs/v0.28.0/api/native-image)
+* `image` [NativeImage](http://electron.atom.io/docs/v0.29.0/api/native-image)
 
-Sets the `image` associated with this tray icon when pressed.
+Sets the `image` associated with this tray icon when pressed on OS X.
 
 ### Tray.setToolTip(toolTip)
 
@@ -130,7 +130,7 @@ __Note:__ This is only implemented on OS X.
 ### Tray.displayBalloon(options)
 
 * `options` Object
-  * `icon` [NativeImage](http://electron.atom.io/docs/v0.28.0/api/native-image)
+  * `icon` [NativeImage](http://electron.atom.io/docs/v0.29.0/api/native-image)
   * `title` String
   * `content` String
 

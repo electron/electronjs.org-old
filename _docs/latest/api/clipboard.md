@@ -1,5 +1,5 @@
 ---
-version: v0.28.0
+version: v0.29.0
 category: API
 title: Clipboard
 source_url: 'https://github.com/atom/electron/blob/master/docs/api/clipboard.md'
@@ -54,11 +54,11 @@ Writes the `markup` into clipboard.
 
 * `type` String
 
-Returns the content in clipboard as [NativeImage](http://electron.atom.io/docs/v0.28.0/api/native-image).
+Returns the content in clipboard as [NativeImage](http://electron.atom.io/docs/v0.29.0/api/native-image).
 
 ## clipboard.writeImage(image[, type])
 
-* `image` [NativeImage](http://electron.atom.io/docs/v0.28.0/api/native-image)
+* `image` [NativeImage](http://electron.atom.io/docs/v0.29.0/api/native-image)
 * `type` String
 
 Writes the `image` into clipboard.

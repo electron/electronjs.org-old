@@ -1,5 +1,5 @@
 ---
-version: v0.28.0
+version: v0.29.0
 category: API
 title: 'Web View Tag'
 source_url: 'https://github.com/atom/electron/blob/master/docs/api/web-view-tag.md'
@@ -137,6 +137,14 @@ If "on", the guest page will have web security disabled.
 
 ## Methods
 
+The webview element must be loaded before using the methods.  
+**Example**
+```javascript
+webview.addEventListener("dom-ready", function(){
+  webview.openDevTools();
+});
+```
+
 ### `<webview>`.getUrl()
 
 Returns URL of guest page.
@@ -249,6 +257,16 @@ Starts inspecting element at position (`x`, `y`) of guest page.
 
 Opens the devtools for the service worker context present in the guest page.
 
+### `<webview>`.setAudioMuted(muted)
+
++ `muted` Boolean
+
+Set guest page muted.
+
+### `<webview>`.isAudioMuted()
+
+Returns whether guest page has been muted.
+
 ### `<webview>`.undo()
 
 Executes editing command `undo` in page.
@@ -297,6 +315,14 @@ Executes editing command `replace` in page.
 
 Executes editing command `replaceMisspelling` in page.
 
+### `<webview>.print([options])`
+
+Prints webview's web page. Same with `webContents.print([options])`.
+
+### `<webview>.printToPDF(options, callback)`
+
+Prints webview's web page as PDF, Same with `webContents.printToPDF(options, callback)`
+
 ### `<webview>`.send(channel[, args...])
 
 * `channel` String
@@ -304,7 +330,7 @@ Executes editing command `replaceMisspelling` in page.
 Send `args..` to guest page via `channel` in asynchronous message, the guest
 page can handle it by listening to the `channel` event of `ipc` module.
 
-See [WebContents.send](http://electron.atom.io/docs/v0.28.0/api/browser-window#webcontentssendchannel-args) for
+See [WebContents.send](http://electron.atom.io/docs/v0.29.0/api/browser-window#webcontentssendchannel-args) for
 examples.
 
 ## DOM events

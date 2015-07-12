@@ -1,5 +1,5 @@
 ---
-version: v0.28.0
+version: v0.29.0
 category: API
 title: Remote
 source_url: 'https://github.com/atom/electron/blob/master/docs/api/remote.md'
@@ -146,7 +146,7 @@ Returns the object returned by `require(module)` in the main process.
 
 ## remote.getCurrentWindow()
 
-Returns the [BrowserWindow](http://electron.atom.io/docs/v0.28.0/api/browser-window) object which this web page
+Returns the [BrowserWindow](http://electron.atom.io/docs/v0.29.0/api/browser-window) object which this web page
 belongs to.
 
 ## remote.getCurrentWebContent()

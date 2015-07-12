@@ -1,9 +1,9 @@
 ---
-version: v0.28.0
+version: v0.29.0
 category: 'Table of Contents'
 title: README
 source_url: 'https://github.com/atom/electron/blob/master/docs/README.md'
-permalink: /docs/v0.28.0/index.html
+permalink: /docs/v0.29.0/index.html
 ---
 
 ## Guides
