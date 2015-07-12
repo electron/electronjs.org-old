@@ -1,5 +1,5 @@
 ---
-version: v0.28.0
+version: v0.29.0
 category: API
 title: 'Menu Item'
 source_url: 'https://github.com/atom/electron/blob/master/docs/api/menu-item.md'
@@ -19,8 +19,8 @@ source_url: 'https://github.com/atom/electron/blob/master/docs/api/menu-item.md'
      `radio`
   * `label` String
   * `sublabel` String
-  * `accelerator` [Accelerator](http://electron.atom.io/docs/v0.28.0/api/accelerator)
-  * `icon` [NativeImage](http://electron.atom.io/docs/v0.28.0/api/native-image)
+  * `accelerator` [Accelerator](http://electron.atom.io/docs/v0.29.0/api/accelerator)
+  * `icon` [NativeImage](http://electron.atom.io/docs/v0.29.0/api/native-image)
   * `enabled` Boolean
   * `visible` Boolean
   * `checked` Boolean

@@ -1,5 +1,5 @@
 ---
-version: v0.28.0
+version: v0.29.0
 category: API
 title: Protocol
 source_url: 'https://github.com/atom/electron/blob/master/docs/api/protocol.md'
@@ -46,6 +46,12 @@ response you would like to send.
 
 Unregisters the custom protocol of `scheme`.
 
+## protocol.registerStandardSchemes(value)
+
+* `value` Array
+
+`value` is an array of custom schemes to be registered to the standard.
+
 ## protocol.isHandledProtocol(scheme)
 
 * `scheme` String
@@ -91,12 +97,21 @@ Create a request job which sends a string as response.
 
 Create a request job which sends a buffer as response.
 
+## Class: protocol.RequestHttpJob(options)
+
+* `options` Object
+  * `url` String
+  * `method` String - Default is `GET`
+  * `referrer` String
+
+Send a request to `url` and pipe the response back.
+
 ## Class: protocol.RequestErrorJob(code)
 
 * `code` Integer
 
 Create a request job which sets appropriate network error message to console.
-Default message is `net::ERR_NOT_IMPLEMENTED`. Code should be in the following 
+Default message is `net::ERR_NOT_IMPLEMENTED`. Code should be in the following
 range.
 
 * Ranges:

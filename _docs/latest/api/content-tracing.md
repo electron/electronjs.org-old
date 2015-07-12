@@ -1,5 +1,5 @@
 ---
-version: v0.28.0
+version: v0.29.0
 category: API
 title: 'Content Tracing'
 source_url: 'https://github.com/atom/electron/blob/master/docs/api/content-tracing.md'

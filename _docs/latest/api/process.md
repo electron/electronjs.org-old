@@ -1,5 +1,5 @@
 ---
-version: v0.28.0
+version: v0.29.0
 category: API
 title: Process
 source_url: 'https://github.com/atom/electron/blob/master/docs/api/process.md'
@@ -14,3 +14,7 @@ upstream node:
 * `process.versions['electron']` String - Version of Electron.
 * `process.versions['chrome']` String - Version of Chromium.
 * `process.resourcesPath` String - Path to JavaScript source code.
+
+## process.hang
+
+Causes the main thread of the current process hang.

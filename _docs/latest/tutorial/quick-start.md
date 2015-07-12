@@ -1,5 +1,5 @@
 ---
-version: v0.28.0
+version: v0.29.0
 category: Tutorial
 title: 'Quick Start'
 source_url: 'https://github.com/atom/electron/blob/master/docs/tutorial/quick-start.md'
@@ -45,9 +45,9 @@ native GUI resources in web pages is very dangerous and easy to leak resources.
 If you want to do GUI operations in web pages, you have to communicate with
 the main process to do it there.
 
-In Electron, we have provided the [ipc](http://electron.atom.io/docs/v0.28.0/api/ipc-renderer) module for
+In Electron, we have provided the [ipc](http://electron.atom.io/docs/v0.29.0/api/ipc-renderer) module for
 communication between main process and renderer process. And there is also a
-[remote](http://electron.atom.io/docs/v0.28.0/api/remote) module for RPC style communication.
+[remote](http://electron.atom.io/docs/v0.29.0/api/remote) module for RPC style communication.
 
 ## Write your first Electron app
 
@@ -135,7 +135,7 @@ Finally the `index.html` is the web page you want to show:
 ## Run your app
 
 After you're done writing your app, you can create a distribution by
-following the [Application distribution](http://electron.atom.io/docs/v0.28.0/tutorial/application-distribution) guide
+following the [Application distribution](http://electron.atom.io/docs/v0.29.0/tutorial/application-distribution) guide
 and then execute the packaged app. You can also just use the downloaded
 Electron binary to execute your app directly.
 

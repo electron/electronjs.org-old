@@ -1,5 +1,5 @@
 ---
-version: v0.28.0
+version: v0.29.0
 category: API
 title: 'Chrome Command Line Switches'
 source_url: 'https://github.com/atom/electron/blob/master/docs/api/chrome-command-line-switches.md'
@@ -25,6 +25,10 @@ app.on('ready', function() {
 ## --client-certificate=`path`
 
 Sets `path` of client certificate file.
+
+## --ignore-connections-limit=`domains`
+
+Ignore the connections limit for `domains` list seperated by `,`.
 
 ## --disable-http-cache
 

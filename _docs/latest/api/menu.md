@@ -1,5 +1,5 @@
 ---
-version: v0.28.0
+version: v0.29.0
 category: API
 title: Menu
 source_url: 'https://github.com/atom/electron/blob/master/docs/api/menu.md'
@@ -12,7 +12,7 @@ application menus and context menus. Each menu consists of multiple menu
 items, and each menu item can have a submenu.
 
 Below is an example of creating a menu dynamically in a web page by using
-the [remote](http://electron.atom.io/docs/v0.28.0/api/remote) module, and showing it when the user right clicks
+the [remote](http://electron.atom.io/docs/v0.29.0/api/remote) module, and showing it when the user right clicks
 the page:
 
 ```html
@@ -198,7 +198,7 @@ emulating default Cocoa menu behaviors, usually you would just use the
 * `template` Array
 
 Generally, the `template` is just an array of `options` for constructing
-[MenuItem](http://electron.atom.io/docs/v0.28.0/api/menu-item), the usage can be referenced above.
+[MenuItem](http://electron.atom.io/docs/v0.29.0/api/menu-item), the usage can be referenced above.
 
 You can also attach other fields to element of the `template`, and they will
 become properties of the constructed menu items.

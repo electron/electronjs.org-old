@@ -1,5 +1,5 @@
 ---
-version: v0.28.0
+version: v0.29.0
 category: API
 title: 'Ipc Main Process'
 source_url: 'https://github.com/atom/electron/blob/master/docs/api/ipc-main-process.md'
@@ -16,7 +16,7 @@ to set `event.returnValue`, to send an asynchronous back to the sender, you can
 use `event.sender.send(...)`.
 
 It's also possible to send messages from main process to the renderer process,
-see [WebContents.send](http://electron.atom.io/docs/v0.28.0/api/browser-window#webcontentssendchannel-args) for more.
+see [WebContents.send](http://electron.atom.io/docs/v0.29.0/api/browser-window#webcontentssendchannel-args) for more.
 
 An example of sending and handling messages:
 

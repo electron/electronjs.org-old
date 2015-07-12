@@ -1,5 +1,5 @@
 ---
-version: v0.28.0
+version: v0.29.0
 category: API
 title: Dialog
 source_url: 'https://github.com/atom/electron/blob/master/docs/api/dialog.md'
@@ -82,7 +82,7 @@ will be passed via `callback(filename)`
   * `title` String - Title of the message box, some platforms will not show it
   * `message` String - Content of the message box
   * `detail` String - Extra information of the message
-  * `icon` [NativeImage](http://electron.atom.io/docs/v0.28.0/api/native-image)
+  * `icon` [NativeImage](http://electron.atom.io/docs/v0.29.0/api/native-image)
 * `callback` Function
 
 Shows a message box, it will block until the message box is closed. It returns

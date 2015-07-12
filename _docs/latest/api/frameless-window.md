@@ -1,5 +1,5 @@
 ---
-version: v0.28.0
+version: v0.29.0
 category: API
 title: 'Frameless Window'
 source_url: 'https://github.com/atom/electron/blob/master/docs/api/frameless-window.md'
@@ -12,7 +12,7 @@ A frameless window is a window that has no chrome.
 ## Create a frameless window
 
 To create a frameless window, you only need to specify `frame` to `false` in
-[BrowserWindow](http://electron.atom.io/docs/v0.28.0/api/browser-window)'s `options`:
+[BrowserWindow](http://electron.atom.io/docs/v0.29.0/api/browser-window)'s `options`:
 
 
 ```javascript

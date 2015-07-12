@@ -1,5 +1,5 @@
 ---
-version: v0.28.0
+version: v0.29.0
 category: API
 title: 'Ipc Renderer'
 source_url: 'https://github.com/atom/electron/blob/master/docs/api/ipc-renderer.md'
@@ -10,9 +10,9 @@ source_url: 'https://github.com/atom/electron/blob/master/docs/api/ipc-renderer.
 The `ipc` module provides a few methods so you can send synchronous and
 asynchronous messages to the main process, and also receive messages sent from
 main process. If you want to make use of modules of main process from renderer
-process, you might consider using the [remote](http://electron.atom.io/docs/v0.28.0/api/remote) module.
+process, you might consider using the [remote](http://electron.atom.io/docs/v0.29.0/api/remote) module.
 
-See [ipc (main process)](http://electron.atom.io/docs/v0.28.0/api/ipc-main-process) for examples.
+See [ipc (main process)](http://electron.atom.io/docs/v0.29.0/api/ipc-main-process) for examples.
 
 ## ipc.send(channel[, args...])
 

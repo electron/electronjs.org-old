@@ -1,5 +1,5 @@
 ---
-version: v0.28.0
+version: v0.29.0
 category: API
 title: App
 source_url: 'https://github.com/atom/electron/blob/master/docs/api/app.md'
@@ -69,9 +69,12 @@ Emitted when application is quitting.
 * `event` Event
 * `path` String
 
-Emitted when user wants to open a file with the application, it usually
-happens when the application is already opened and then OS wants to reuse the
-application to open file.
+Emitted when user wants to open a file with the application, it usually happens
+when the application is already opened and then OS wants to reuse the
+application to open file. But it is also emitted when a file is dropped onto the
+dock and the application is not yet running. Make sure to listen to open-file
+very early in your application startup to handle this case (even before the
+`ready` event is emitted).
 
 You should call `event.preventDefault()` if you want to handle this event.
 
@@ -90,6 +93,48 @@ You should call `event.preventDefault()` if you want to handle this event.
 Emitted when the application is activated while there is no opened windows. It
 usually happens when user has closed all of application's windows and then
 click on the application's dock icon.
+
+## Event: browser-window-blur
+
+* `event` Event
+* `window` BrowserWindow
+
+Emitted when a [browserWindow](http://electron.atom.io/docs/v0.29.0/api/browser-window) gets blurred.
+
+## Event: browser-window-focus
+
+* `event` Event
+* `window` BrowserWindow
+
+Emitted when a [browserWindow](http://electron.atom.io/docs/v0.29.0/api/browser-window) gets focused.
+
+### Event: 'select-certificate'
+
+Emitted when client certificate is requested.
+
+* `event` Event
+* `webContents` [WebContents](http://electron.atom.io/docs/v0.29.0/api/browser-window#class-webcontents)
+* `url` String
+* `certificateList` [Objects]
+  * `data` PEM encoded data
+  * `issuerName` Issuer's Common Name
+* `callback` Function
+
+```
+app.on('select-certificate', function(event, host, url, list, callback) {
+  event.preventDefault();
+  callback(list[0]);
+})
+```
+
+`url` corresponds to the navigation entry requesting the client certificate,
+`callback` needs to be called with an entry filtered from the list.
+`event.preventDefault()` prevents from using the first certificate from
+the store.
+
+### Event: 'gpu-process-crashed'
+
+Emitted when the gpu process is crashed.
 
 ## app.quit()
 
