@@ -46,6 +46,14 @@ To test the documentation script:
 $ npm test
 ```
 
+#### Release Notes
+
+The most recent release notes from the `atom/electron` repository are made available on the site and can be updated by running:
+
+```bash
+$ script/releases
+```
+
 ### Contributing
 
 Thanks for contributing to the site! Checkout the [contributing documentation](CONTRIBUTING.md) for guidelines on pull requests.
