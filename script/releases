@@ -3,10 +3,14 @@
 var fs = require('fs')
 var request = require('request')
 
+var token = process.env.ATOM_ACCESS_TOKEN
 var options = {
   url: 'https://api.github.com/repos/atom/electron/releases',
   json: true,
-  headers: { 'User-Agent': 'Electron' }
+  headers: {
+    'user-agent': 'Electron',
+    'Authorization': 'token ' + token
+  }
 }
 
 request(options, function (error, response, body) {
