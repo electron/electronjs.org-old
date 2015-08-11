@@ -55,6 +55,11 @@ code {
   border: none;
 }
 
+.header-link .octicon {
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
 /* Sections
    ------------------------------------------ */
 
