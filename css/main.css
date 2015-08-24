@@ -48,11 +48,13 @@ pre code {
   color: #C5F3FC;
   border: none;
   background-color: #076274;
+  overflow-x: scroll;
 }
 
 code {
   background-color: #EAE5DE;
   border: none;
+  overflow-x: scroll; 
 }
 
 .header-link .octicon {
