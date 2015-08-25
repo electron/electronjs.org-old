@@ -289,3 +289,15 @@ footer {
   margin: 0;
   font-weight: 400;
 }
+
+.docs h3 code + em {
+  background: #76C7D7;
+  padding: 3px 6px;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-style: normal;
+  font-family: Source Code Pro;
+  border-radius: 2px;
+  color: #fff;
+  vertical-align: middle;
+}
