@@ -286,10 +286,9 @@ footer {
 }
 
 .docs h3 code {
-  background-color: transparent;
-  padding: 0;
   margin: 0;
   font-weight: 400;
+  background-color: rgba(57, 174, 198, 0.1);
 }
 
 .docs h3 code + em {
