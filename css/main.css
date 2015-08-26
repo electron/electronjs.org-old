@@ -226,20 +226,23 @@ footer {
 }
 
 .docs h1 {
- font-size: 3em;
- font-weight: 500;
- padding-bottom: 40px;
+  font-size: 3em;
+  font-weight: 500;
+  margin-bottom: 4rem;
 }
 
 .docs h2 {
- font-size: 2em;
- padding-top: 30px;
+  font-size: 2em;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
 }
 
 .docs h3 {
   font-size: 1.5em;
   font-weight: 300;
-  letter-spacing: .001em
+  letter-spacing: .001em;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
 }
 
 .docs-breadcumb {
@@ -280,7 +283,6 @@ footer {
 .docs h3,
 .docs h3 code {
   color: #39AEC6;
-  padding-top: 20px;
 }
 
 .docs h3 code {
