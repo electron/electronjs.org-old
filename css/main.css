@@ -90,6 +90,12 @@ header {
   padding: 12px 0;
   background-color: #76C7D7;
 }
+@media (max-width: 550px) {
+  header,
+  header .text-right  {
+    text-align: center;
+  }
+}
 
 header a {
   color: #FAF7F3;
@@ -187,6 +193,12 @@ header a:hover {
 footer {
   padding: 15px 0;
   background-color: #FAF7F3;
+}
+@media (max-width: 550px) {
+  footer,
+  footer .text-right {
+    text-align: center;
+  }
 }
 
 /* Releases
