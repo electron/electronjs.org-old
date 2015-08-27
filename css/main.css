@@ -41,6 +41,7 @@ a.no-hover-dec:hover {
 }
 
 pre, code {
+  font-family: "Source Code Pro", Consolas, "Liberation Mono", Menlo, Courier, monospace;
   text-align: left;
 }
 
@@ -58,6 +59,7 @@ code {
 }
 
 .header-link .octicon {
+  color: #dcd9d6;
   margin-left: 10px;
   vertical-align: middle;
 }
@@ -89,6 +91,12 @@ section {
 header {
   padding: 12px 0;
   background-color: #76C7D7;
+}
+@media (max-width: 550px) {
+  header,
+  header .text-right  {
+    text-align: center;
+  }
 }
 
 header a {
@@ -188,6 +196,12 @@ footer {
   padding: 15px 0;
   background-color: #FAF7F3;
 }
+@media (max-width: 550px) {
+  footer,
+  footer .text-right {
+    text-align: center;
+  }
+}
 
 /* Releases
    ------------------------------------------ */
@@ -200,6 +214,25 @@ footer {
 .jump-to-release {
   text-align: center;
   background: #A5ECFA;
+}
+.jump-to-release.is-compact {
+  padding: 2rem 0;
+}
+.jump-to-release.is-compact h1 {
+  font-size: 1.8em;
+  margin-bottom: 0.2em;
+}
+@media (min-width: 1000px) {
+  .jump-to-release.is-compact h1 {
+    display: inline-block;
+    margin: 0 2rem 0 0;
+  }
+}
+.jump-to-release .electron-icon {
+  height: 1.5em;
+  margin-right: 0.4em;
+  margin-top: -0.4em;
+  vertical-align: middle;
 }
 
 .releases {
@@ -221,24 +254,28 @@ footer {
    ------------------------------------------ */
 
 .docs {
-     background-color: #FAF7F3;
-   }
+  background-color: #fff;
+  color: #39555D;
+}
 
 .docs h1 {
- font-size: 3em;
- font-weight: 500;
- padding-bottom: 40px;
+  font-size: 3em;
+  font-weight: 500;
+  margin-bottom: 4rem;
 }
 
 .docs h2 {
- font-size: 2em;
- padding-top: 30px;
+  font-size: 2em;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
 }
 
 .docs h3 {
   font-size: 1.5em;
   font-weight: 300;
-  letter-spacing: .001em
+  letter-spacing: .001em;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
 }
 
 .docs-breadcumb {
@@ -254,17 +291,48 @@ footer {
   padding-right: 8px;
 }
 
-.docs code, .docs pree {
-  color: #076274;
+.docs pre code,
+.docs code {
+  color: #38535B;
   border: none;
-  background-color: #EAE5DE;
+  background-color: #FAF7F3;
 }
 
 .docs blockquote {
+  color: #557F8B;
   border-left: 1px solid #76C7D7;
   padding-left: 20px;
 }
 
 .all-of-the-latest-documentation h1:first-child {
   padding: 0;
+}
+
+.docs ul {
+  margin-left: 0;
+  text-indent: -1em;
+  padding-left: 1em;
+}
+
+.docs h3,
+.docs h3 code {
+  color: #39AEC6;
+}
+
+.docs h3 code {
+  margin: 0;
+  font-weight: 400;
+  background-color: rgba(57, 174, 198, 0.1);
+}
+
+.docs h3 code + em {
+  background: #76C7D7;
+  padding: 3px 6px;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-style: normal;
+  font-family: Source Code Pro;
+  border-radius: 2px;
+  color: #fff;
+  vertical-align: middle;
 }

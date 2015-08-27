@@ -2,11 +2,11 @@
 layout: page
 ---
 
-<section class='jump-to-release'>
-  <div class='container '>
+<section class='jump-to-release {% if page.category != "Table of Contents" %}is-compact{% endif %}'>
+  <div class='container'>
     <div class='row'>
       <div class='twelve columns'>
-      <h1>Electron Documentation</h1>
+      <h1><img class="electron-icon" src='/images/electron-icon.svg'>Electron Documentation</h1>
       {% if page.category != 'ignore' %}
       <a href='/docs/{{ page.version }}/'>{{ page.version }} {% if site.latest_version == page.version %} (Latest) {% endif %} </a> |
       <a href='{{ page.source_url }}'>Document Source</a>
