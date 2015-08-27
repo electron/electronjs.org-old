@@ -201,6 +201,19 @@ footer {
   text-align: center;
   background: #A5ECFA;
 }
+.jump-to-release.is-compact {
+  padding: 2rem 0;
+}
+.jump-to-release.is-compact h1 {
+  font-size: 1.8em;
+  margin-bottom: 0.2em;
+}
+@media (min-width: 1000px) {
+  .jump-to-release.is-compact h1 {
+    display: inline-block;
+    margin: 0 2rem 0 0;
+  }
+}
 
 .releases {
   background-color: #FAF7F3;
