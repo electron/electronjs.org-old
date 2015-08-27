@@ -222,7 +222,7 @@ footer {
 
 .docs {
   background-color: #fff;
-  color: rgba(12, 46, 58, 0.82);
+  color: #39555D;
 }
 
 .docs h1 {
@@ -260,7 +260,7 @@ footer {
 
 .docs pre code,
 .docs code {
-  color: rgba(12, 46, 58, 0.82);
+  color: #38535B;
   border: none;
   background-color: #FAF7F3;
 }
