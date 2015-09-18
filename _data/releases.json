@@ -1,8 +1,59 @@
 [
   {
+    "url": "https://api.github.com/repos/atom/electron/releases/1827213",
+    "assets_url": "https://api.github.com/repos/atom/electron/releases/1827213/assets",
+    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/1827213/assets{?name,label}",
+    "html_url": "https://github.com/atom/electron/releases/tag/v0.33.0",
+    "id": 1827213,
+    "tag_name": "v0.33.0",
+    "target_commitish": "master",
+    "name": "electron v0.33.0",
+    "draft": false,
+    "prerelease": false,
+    "created_at": "2015-09-17T10:31:12Z",
+    "published_at": "2015-09-17T11:39:20Z",
+    "tarball_url": "https://api.github.com/repos/atom/electron/tarball/v0.33.0",
+    "zipball_url": "https://api.github.com/repos/atom/electron/zipball/v0.33.0",
+    "body": "Changelog:\r\n\r\n* Update to Node.js v4.1.0.\r\n* Add `app.getLocale` API.\r\n* Fix `activate-with-no-open-windows` emitted at wrong time.\r\n* Fix `mimeType` not working in `registerStringProtocol` and its families.\r\n* Fix crash when calling `vm.createContext`.\r\n* Fix occasional crash when closing devtools.\r\n\r\n__OS X__\r\n\r\n* Fix crash when `title-bar-style` is set on OS X <= 10.9.\r\n* Fix crash when opening a new window after closing a window.\r\n"
+  },
+  {
+    "url": "https://api.github.com/repos/atom/electron/releases/1813797",
+    "assets_url": "https://api.github.com/repos/atom/electron/releases/1813797/assets",
+    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/1813797/assets{?name,label}",
+    "html_url": "https://github.com/atom/electron/releases/tag/v0.32.3",
+    "id": 1813797,
+    "tag_name": "v0.32.3",
+    "target_commitish": "master",
+    "name": "electron v0.32.3",
+    "draft": false,
+    "prerelease": false,
+    "created_at": "2015-09-15T07:30:22Z",
+    "published_at": "2015-09-15T08:27:32Z",
+    "tarball_url": "https://api.github.com/repos/atom/electron/tarball/v0.32.3",
+    "zipball_url": "https://api.github.com/repos/atom/electron/zipball/v0.32.3",
+    "body": "Changelog:\r\n\r\n* Add `browser-window-created` event for `app` module.\r\n* Add `BrowserWindow.isDevToolsFocused` API.\r\n* Fix `process` and `global` objects not available in `preload` script after the first tick of message loop when node integration is off.\r\n* Fix `devtools-opened` event emitted before `devToolsWebContents` gets created.\r\n* Fix `BrowserWindow.addDevToolsExtension` not working.\r\n* Fix memory leak when calling `node::Buffer::New`.\r\n\r\n__OS X__\r\n\r\n* Add `title-bar-style` option for `BrowserWindow`, which allows creating Yosemite style frameless window.\r\n* Add `activate` event for `app` module.\r\n* Fix `devtools-focused` event not working.\r\n"
+  },
+  {
+    "url": "https://api.github.com/repos/atom/electron/releases/1792623",
+    "assets_url": "https://api.github.com/repos/atom/electron/releases/1792623/assets",
+    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/1792623/assets{?name,label}",
+    "html_url": "https://github.com/atom/electron/releases/tag/v0.32.2",
+    "id": 1792623,
+    "tag_name": "v0.32.2",
+    "target_commitish": "master",
+    "name": "electron v0.32.2",
+    "draft": false,
+    "prerelease": false,
+    "created_at": "2015-09-10T08:27:15Z",
+    "published_at": "2015-09-10T13:22:18Z",
+    "tarball_url": "https://api.github.com/repos/atom/electron/tarball/v0.32.2",
+    "zipball_url": "https://api.github.com/repos/atom/electron/zipball/v0.32.2",
+    "body": "Changelog:\r\n\r\n* Fix a regression in v0.32.1 that made some options of `web-preferences` not working.\r\n* Add `validatedUrl` parameter for `did-fail-load` event of `WebContents`.\r\n"
+  },
+  {
     "url": "https://api.github.com/repos/atom/electron/releases/1786607",
     "assets_url": "https://api.github.com/repos/atom/electron/releases/1786607/assets",
-    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/1786607/assets{?name}",
+    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/1786607/assets{?name,label}",
     "html_url": "https://github.com/atom/electron/releases/tag/v0.32.1",
     "id": 1786607,
     "tag_name": "v0.32.1",
@@ -19,7 +70,7 @@
   {
     "url": "https://api.github.com/repos/atom/electron/releases/1780262",
     "assets_url": "https://api.github.com/repos/atom/electron/releases/1780262/assets",
-    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/1780262/assets{?name}",
+    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/1780262/assets{?name,label}",
     "html_url": "https://github.com/atom/electron/releases/tag/v0.32.0",
     "id": 1780262,
     "tag_name": "v0.32.0",
@@ -36,7 +87,7 @@
   {
     "url": "https://api.github.com/repos/atom/electron/releases/1754444",
     "assets_url": "https://api.github.com/repos/atom/electron/releases/1754444/assets",
-    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/1754444/assets{?name}",
+    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/1754444/assets{?name,label}",
     "html_url": "https://github.com/atom/electron/releases/tag/v0.31.2",
     "id": 1754444,
     "tag_name": "v0.31.2",
@@ -53,7 +104,7 @@
   {
     "url": "https://api.github.com/repos/atom/electron/releases/1734753",
     "assets_url": "https://api.github.com/repos/atom/electron/releases/1734753/assets",
-    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/1734753/assets{?name}",
+    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/1734753/assets{?name,label}",
     "html_url": "https://github.com/atom/electron/releases/tag/v0.31.1",
     "id": 1734753,
     "tag_name": "v0.31.1",
@@ -70,7 +121,7 @@
   {
     "url": "https://api.github.com/repos/atom/electron/releases/1723740",
     "assets_url": "https://api.github.com/repos/atom/electron/releases/1723740/assets",
-    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/1723740/assets{?name}",
+    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/1723740/assets{?name,label}",
     "html_url": "https://github.com/atom/electron/releases/tag/v0.30.6",
     "id": 1723740,
     "tag_name": "v0.30.6",
@@ -87,7 +138,7 @@
   {
     "url": "https://api.github.com/repos/atom/electron/releases/1704465",
     "assets_url": "https://api.github.com/repos/atom/electron/releases/1704465/assets",
-    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/1704465/assets{?name}",
+    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/1704465/assets{?name,label}",
     "html_url": "https://github.com/atom/electron/releases/tag/v0.31.0",
     "id": 1704465,
     "tag_name": "v0.31.0",
@@ -104,7 +155,7 @@
   {
     "url": "https://api.github.com/repos/atom/electron/releases/1702911",
     "assets_url": "https://api.github.com/repos/atom/electron/releases/1702911/assets",
-    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/1702911/assets{?name}",
+    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/1702911/assets{?name,label}",
     "html_url": "https://github.com/atom/electron/releases/tag/v0.30.5",
     "id": 1702911,
     "tag_name": "v0.30.5",
@@ -121,7 +172,7 @@
   {
     "url": "https://api.github.com/repos/atom/electron/releases/1650669",
     "assets_url": "https://api.github.com/repos/atom/electron/releases/1650669/assets",
-    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/1650669/assets{?name}",
+    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/1650669/assets{?name,label}",
     "html_url": "https://github.com/atom/electron/releases/tag/v0.30.4",
     "id": 1650669,
     "tag_name": "v0.30.4",
@@ -138,7 +189,7 @@
   {
     "url": "https://api.github.com/repos/atom/electron/releases/1642411",
     "assets_url": "https://api.github.com/repos/atom/electron/releases/1642411/assets",
-    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/1642411/assets{?name}",
+    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/1642411/assets{?name,label}",
     "html_url": "https://github.com/atom/electron/releases/tag/v0.30.3",
     "id": 1642411,
     "tag_name": "v0.30.3",
@@ -155,7 +206,7 @@
   {
     "url": "https://api.github.com/repos/atom/electron/releases/1605298",
     "assets_url": "https://api.github.com/repos/atom/electron/releases/1605298/assets",
-    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/1605298/assets{?name}",
+    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/1605298/assets{?name,label}",
     "html_url": "https://github.com/atom/electron/releases/tag/v0.30.2",
     "id": 1605298,
     "tag_name": "v0.30.2",
@@ -172,7 +223,7 @@
   {
     "url": "https://api.github.com/repos/atom/electron/releases/1581110",
     "assets_url": "https://api.github.com/repos/atom/electron/releases/1581110/assets",
-    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/1581110/assets{?name}",
+    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/1581110/assets{?name,label}",
     "html_url": "https://github.com/atom/electron/releases/tag/v0.30.1",
     "id": 1581110,
     "tag_name": "v0.30.1",
@@ -189,7 +240,7 @@
   {
     "url": "https://api.github.com/repos/atom/electron/releases/1546375",
     "assets_url": "https://api.github.com/repos/atom/electron/releases/1546375/assets",
-    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/1546375/assets{?name}",
+    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/1546375/assets{?name,label}",
     "html_url": "https://github.com/atom/electron/releases/tag/v0.30.0",
     "id": 1546375,
     "tag_name": "v0.30.0",
@@ -206,7 +257,7 @@
   {
     "url": "https://api.github.com/repos/atom/electron/releases/1503418",
     "assets_url": "https://api.github.com/repos/atom/electron/releases/1503418/assets",
-    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/1503418/assets{?name}",
+    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/1503418/assets{?name,label}",
     "html_url": "https://github.com/atom/electron/releases/tag/v0.29.2",
     "id": 1503418,
     "tag_name": "v0.29.2",
@@ -223,7 +274,7 @@
   {
     "url": "https://api.github.com/repos/atom/electron/releases/1493106",
     "assets_url": "https://api.github.com/repos/atom/electron/releases/1493106/assets",
-    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/1493106/assets{?name}",
+    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/1493106/assets{?name,label}",
     "html_url": "https://github.com/atom/electron/releases/tag/v0.29.1",
     "id": 1493106,
     "tag_name": "v0.29.1",
@@ -240,7 +291,7 @@
   {
     "url": "https://api.github.com/repos/atom/electron/releases/1492226",
     "assets_url": "https://api.github.com/repos/atom/electron/releases/1492226/assets",
-    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/1492226/assets{?name}",
+    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/1492226/assets{?name,label}",
     "html_url": "https://github.com/atom/electron/releases/tag/v0.29.0",
     "id": 1492226,
     "tag_name": "v0.29.0",
@@ -257,7 +308,7 @@
   {
     "url": "https://api.github.com/repos/atom/electron/releases/1448832",
     "assets_url": "https://api.github.com/repos/atom/electron/releases/1448832/assets",
-    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/1448832/assets{?name}",
+    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/1448832/assets{?name,label}",
     "html_url": "https://github.com/atom/electron/releases/tag/v0.28.3",
     "id": 1448832,
     "tag_name": "v0.28.3",
@@ -274,7 +325,7 @@
   {
     "url": "https://api.github.com/repos/atom/electron/releases/1430983",
     "assets_url": "https://api.github.com/repos/atom/electron/releases/1430983/assets",
-    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/1430983/assets{?name}",
+    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/1430983/assets{?name,label}",
     "html_url": "https://github.com/atom/electron/releases/tag/v0.28.2",
     "id": 1430983,
     "tag_name": "v0.28.2",
@@ -291,7 +342,7 @@
   {
     "url": "https://api.github.com/repos/atom/electron/releases/1407876",
     "assets_url": "https://api.github.com/repos/atom/electron/releases/1407876/assets",
-    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/1407876/assets{?name}",
+    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/1407876/assets{?name,label}",
     "html_url": "https://github.com/atom/electron/releases/tag/v0.28.1",
     "id": 1407876,
     "tag_name": "v0.28.1",
@@ -308,7 +359,7 @@
   {
     "url": "https://api.github.com/repos/atom/electron/releases/1402520",
     "assets_url": "https://api.github.com/repos/atom/electron/releases/1402520/assets",
-    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/1402520/assets{?name}",
+    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/1402520/assets{?name,label}",
     "html_url": "https://github.com/atom/electron/releases/tag/v0.28.0",
     "id": 1402520,
     "tag_name": "v0.28.0",
@@ -325,7 +376,7 @@
   {
     "url": "https://api.github.com/repos/atom/electron/releases/1387182",
     "assets_url": "https://api.github.com/repos/atom/electron/releases/1387182/assets",
-    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/1387182/assets{?name}",
+    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/1387182/assets{?name,label}",
     "html_url": "https://github.com/atom/electron/releases/tag/v0.27.3",
     "id": 1387182,
     "tag_name": "v0.27.3",
@@ -342,7 +393,7 @@
   {
     "url": "https://api.github.com/repos/atom/electron/releases/1359531",
     "assets_url": "https://api.github.com/repos/atom/electron/releases/1359531/assets",
-    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/1359531/assets{?name}",
+    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/1359531/assets{?name,label}",
     "html_url": "https://github.com/atom/electron/releases/tag/v0.27.2",
     "id": 1359531,
     "tag_name": "v0.27.2",
@@ -359,7 +410,7 @@
   {
     "url": "https://api.github.com/repos/atom/electron/releases/1346672",
     "assets_url": "https://api.github.com/repos/atom/electron/releases/1346672/assets",
-    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/1346672/assets{?name}",
+    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/1346672/assets{?name,label}",
     "html_url": "https://github.com/atom/electron/releases/tag/v0.27.1",
     "id": 1346672,
     "tag_name": "v0.27.1",
@@ -376,7 +427,7 @@
   {
     "url": "https://api.github.com/repos/atom/electron/releases/1341758",
     "assets_url": "https://api.github.com/repos/atom/electron/releases/1341758/assets",
-    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/1341758/assets{?name}",
+    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/1341758/assets{?name,label}",
     "html_url": "https://github.com/atom/electron/releases/tag/v0.27.0",
     "id": 1341758,
     "tag_name": "v0.27.0",
@@ -393,7 +444,7 @@
   {
     "url": "https://api.github.com/repos/atom/electron/releases/1321346",
     "assets_url": "https://api.github.com/repos/atom/electron/releases/1321346/assets",
-    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/1321346/assets{?name}",
+    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/1321346/assets{?name,label}",
     "html_url": "https://github.com/atom/electron/releases/tag/v0.26.1",
     "id": 1321346,
     "tag_name": "v0.26.1",
@@ -410,7 +461,7 @@
   {
     "url": "https://api.github.com/repos/atom/electron/releases/1286205",
     "assets_url": "https://api.github.com/repos/atom/electron/releases/1286205/assets",
-    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/1286205/assets{?name}",
+    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/1286205/assets{?name,label}",
     "html_url": "https://github.com/atom/electron/releases/tag/v0.26.0",
     "id": 1286205,
     "tag_name": "v0.26.0",
@@ -427,7 +478,7 @@
   {
     "url": "https://api.github.com/repos/atom/electron/releases/1273752",
     "assets_url": "https://api.github.com/repos/atom/electron/releases/1273752/assets",
-    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/1273752/assets{?name}",
+    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/1273752/assets{?name,label}",
     "html_url": "https://github.com/atom/electron/releases/tag/v0.25.3",
     "id": 1273752,
     "tag_name": "v0.25.3",
@@ -444,7 +495,7 @@
   {
     "url": "https://api.github.com/repos/atom/electron/releases/1243082",
     "assets_url": "https://api.github.com/repos/atom/electron/releases/1243082/assets",
-    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/1243082/assets{?name}",
+    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/1243082/assets{?name,label}",
     "html_url": "https://github.com/atom/electron/releases/tag/v0.25.2",
     "id": 1243082,
     "tag_name": "v0.25.2",
@@ -457,56 +508,5 @@
     "tarball_url": "https://api.github.com/repos/atom/electron/tarball/v0.25.2",
     "zipball_url": "https://api.github.com/repos/atom/electron/zipball/v0.25.2",
     "body": "Changelog:\r\n\r\n* __Implement HTML5 fullscreen API.__\r\n* Add `page-favicon-updated` event for `WebContents` and `<webview>` tag.\r\n* Add `dom-ready` event for `WebContents` and `<webview>` tag.\r\n* Add `getFavicon` method for `WebContents` and `<webview>` tag.\r\n* Add `inspectElement` method for `<webview>` tag.\r\n* Callbacks passed to asynchronous `asar` APIs will be called in the next tick of message loop when error happens.\r\n* Add APIs to check service workers.\r\n* Navigation happened in `<webview>` tag now restarts renderer process.\r\n* Allow opening links with external protocols in `<webview>` tag.\r\n* Reimplement navigation history control with JavaScript.\r\n* Fix un-handled Promise rejection not reported in devtools.\r\n\r\n__OS X__\r\n\r\n* __Fix the non-transparent corners for frameless windows.__\r\n"
-  },
-  {
-    "url": "https://api.github.com/repos/atom/electron/releases/1204787",
-    "assets_url": "https://api.github.com/repos/atom/electron/releases/1204787/assets",
-    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/1204787/assets{?name}",
-    "html_url": "https://github.com/atom/electron/releases/tag/v0.25.1",
-    "id": 1204787,
-    "tag_name": "v0.25.1",
-    "target_commitish": "master",
-    "name": "electron v0.25.1",
-    "draft": false,
-    "prerelease": false,
-    "created_at": "2015-04-23T05:29:34Z",
-    "published_at": "2015-04-23T06:16:57Z",
-    "tarball_url": "https://api.github.com/repos/atom/electron/tarball/v0.25.1",
-    "zipball_url": "https://api.github.com/repos/atom/electron/zipball/v0.25.1",
-    "body": "Changelog:\r\n\r\n* Don't look up modules in user-defined search paths.\r\n\r\n__Windows__\r\n\r\n* Don't require `BluetoothApis.dll` for starting.\r\n\r\n"
-  },
-  {
-    "url": "https://api.github.com/repos/atom/electron/releases/1199645",
-    "assets_url": "https://api.github.com/repos/atom/electron/releases/1199645/assets",
-    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/1199645/assets{?name}",
-    "html_url": "https://github.com/atom/electron/releases/tag/v0.25.0",
-    "id": 1199645,
-    "tag_name": "v0.25.0",
-    "target_commitish": "master",
-    "name": "electron v0.25.0",
-    "draft": false,
-    "prerelease": false,
-    "created_at": "2015-04-22T05:50:55Z",
-    "published_at": "2015-04-22T07:34:12Z",
-    "tarball_url": "https://api.github.com/repos/atom/electron/tarball/v0.25.0",
-    "zipball_url": "https://api.github.com/repos/atom/electron/zipball/v0.25.0",
-    "body": "Changelog:\r\n\r\n* __Upgrade to Chrome42.__\r\n* Fix using debugger for forked scripts by `child_process`.\r\n\r\n__Windows__\r\n\r\n* Don't require `MFReadWrite.dll` when starting.\r\n\r\n__Linux__\r\n\r\n* Show icons in notifications.\r\n* Fix notification showing as message box on Ubuntu sometimes.\r\n* Fix `shell.openExternal` not working with Chrome browser.\r\n\r\n"
-  },
-  {
-    "url": "https://api.github.com/repos/atom/electron/releases/1179737",
-    "assets_url": "https://api.github.com/repos/atom/electron/releases/1179737/assets",
-    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/1179737/assets{?name}",
-    "html_url": "https://github.com/atom/electron/releases/tag/v0.24.0",
-    "id": 1179737,
-    "tag_name": "v0.24.0",
-    "target_commitish": "master",
-    "name": "electron v0.24.0",
-    "draft": false,
-    "prerelease": false,
-    "created_at": "2015-04-17T07:53:46Z",
-    "published_at": "2015-04-17T08:30:34Z",
-    "tarball_url": "https://api.github.com/repos/atom/electron/tarball/v0.24.0",
-    "zipball_url": "https://api.github.com/repos/atom/electron/zipball/v0.24.0",
-    "body": "Changelog:\r\n\r\n* __Atom Shell is renamed to Electron.__\r\n* Add `position` and `id` attribute to `MenuItem`.\r\n* Add `did-get-response-details` event to `WebContents` and `<webview>` tag.\r\n* Fix `WebContents.reloadIgnoringCache` not ignoring cache.\r\n* Fix a crash when calling `WebContents.getUrl`.\r\n\r\n__Mac__\r\n\r\n* Fix using VoiceOver.\r\n* Fix `shell.moveItemToTrash` return wrong value.\r\n\r\n"
   }
 ]
