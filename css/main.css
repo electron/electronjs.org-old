@@ -325,7 +325,7 @@ footer {
   background-color: rgba(57, 174, 198, 0.1);
 }
 
-.docs h3 code + em {
+.docs h3 code ~ em {
   background: #76C7D7;
   padding: 3px 6px;
   font-size: 13px;
