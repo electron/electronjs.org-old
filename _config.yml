@@ -27,3 +27,16 @@ collections:
     docs: {output: true, permalink: '/docs/:path/'}
 defaults:
     - {scope: {type: docs}, values: {layout: docs}}
+
+# exclude:
+#   - node_modules
+#   - README.md
+#   - LICENSE.md
+#   - CNAME
+#   - Gemfile
+#   - Gemfile.lock
+#   - Grunfile.js
+#   - package.json
+#   - script
+#   - spec
+# 
