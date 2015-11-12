@@ -1,0 +1,31 @@
+#!/usr/bin/env node
+
+var fs = require('fs')
+var request = require('request')
+var yaml = require('yamljs')
+
+var url = 'https://atom.io/download/atom-shell/index.json'
+
+request(url, function (error, response, body) {
+  if (error) return console.log(error)
+  if (response.statusCode == 200) {
+    var data = JSON.parse(response.body)
+
+    var versions = {}
+    versions.node = data[0].node
+    versions.v8 = data[0].v8
+    versions.chrome = data[0].chrome
+
+    updateConfig(versions)
+  } else {
+    return console.log("Bad request: " + response.statusCode)
+  }
+})
+
+function updateConfig (versions) {
+  var config = yaml.load('_config.yml')
+  config.current_node = versions.node
+  config.current_v8 = versions.v8
+  config.current_chrome = versions.chrome
+  fs.writeFileSync('_config.yml', yaml.stringify(config))
+}

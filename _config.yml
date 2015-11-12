@@ -11,6 +11,9 @@ redcarpet:
 gems:
     - jekyll-redirect-from
 latest_version: v0.34.0
+current_node: 4.1.1
+current_chrome: 45.0.2454.85
+current_v8: 4.5.103.29
 available_versions:
     - v0.24.0
     - v0.25.0
@@ -27,15 +30,14 @@ collections:
     docs: {output: true, permalink: '/docs/:path/'}
 defaults:
     - {scope: {type: docs}, values: {layout: docs}}
-
 exclude:
-  - node_modules
-  - README.md
-  - LICENSE.md
-  - CNAME
-  - Gemfile
-  - Gemfile.lock
-  - Grunfile.js
-  - package.json
-  - script
-  - spec
+    - node_modules
+    - README.md
+    - LICENSE.md
+    - CNAME
+    - Gemfile
+    - Gemfile.lock
+    - Grunfile.js
+    - package.json
+    - script
+    - spec

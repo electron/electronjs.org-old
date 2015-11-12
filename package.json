@@ -12,7 +12,8 @@
     "url": "https://github.com/atom/electron.atom.io/issues"
   },
   "scripts": {
-    "test": "tape spec/*.js | tap-spec"
+    "test": "tape spec/*.js | tap-spec",
+    "rels-vers": "script/releases && script/versions"
   },
   "homepage": "http://electron.atom.io",
   "dependencies": {
