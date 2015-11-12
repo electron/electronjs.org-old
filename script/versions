@@ -17,6 +17,8 @@ request(url, function (error, response, body) {
     versions.chrome = data[0].chrome
 
     updateConfig(versions)
+  } else {
+    return console.log("Bad request: " + response.statusCode)
   }
 })
 
