@@ -195,19 +195,23 @@ header a:hover {
 .electron-vers {
   display: inline-block;
   border: 2px solid #448691;
-  padding: 4px 12px 4px 6px;
   margin-bottom: 16px;
   border-radius: 3px;
-  font-family: monospace;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 12px;
+  padding: 0 2px;
 }
 
-.electron-vers span + span {
+.electron-vers span {
+  float: left;
+  display: inline-block;
+  line-height: 1;
   padding: 6px 6px;
 }
 
 .main-ver {
   border-right: 2px solid #448691;
-  padding: 6px 13px 6px 8px;
+  font-weight: bold;
 }
 
 /* Footer
