@@ -11,9 +11,9 @@ redcarpet:
 gems:
     - jekyll-redirect-from
 latest_version: v0.36.0
-current_node: 4.1.1
-current_chrome: 45.0.2454.85
-current_v8: 4.5.103.29
+current_node: 5.1.1
+current_chrome: 47.0.2526.73
+current_v8: 4.7.80.23
 available_versions:
     - v0.24.0
     - v0.25.0
