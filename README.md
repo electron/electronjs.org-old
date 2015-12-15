@@ -19,19 +19,22 @@ $ script/bootstrap
 $ script/server
 ```
 
-#### Documentation
+### CLI for Docs, Releases & Version Information
 
-Documentation is added to the site directly from the `atom/electron` repository's `docs` directory. This is done with [Node.js](http://www.nodejs.org/download) so you'll need that on your system and to install the dependencies used here.
+This site has versioned documentation, recent release change logs and the current versions of Node.js, Chromium and V8 that are used in Electron.
+
+Each of these are updated upon a **minor** release of Electron. They're done so with the command line interface detailed below.
+
+ You'll need [Node.js](http://www.nodejs.org/download) installed on your system in order to use the CLI. Then you can install the dependencies:
 
 ```bash
 $ cd electron.atom.io
 $ npm install
 ```
 
+#### Versioned Documentation
 
-**CLI**
-
-To fetch documentation at a specific version:
+Versions of Electron documentation are fetched from the `atom/electron` repository's `docs` directory. To fetch documentation at a specific version:
 
 ```bash
 $ script/docs <version> [options]
@@ -42,20 +45,40 @@ Options:
 
 `--latest` Set this version as the latest version of documentation
 
-**Testing**
-
-To test the documentation script:
-
-```bash
-$ npm test
-```
-
 #### Release Notes
 
 The most recent release notes from the `atom/electron` repository are made available on the site and can be updated by running:
 
 ```bash
 $ script/releases
+```
+
+#### Updating Node.js, Chromium and V8 Versions in use in Electron
+
+To update the `_config.yml` in this site with the versions of Node.js, Chromium and V8 that the latest [minor release] of Electron is using run:
+
+```bash
+$ script/versions
+```
+
+#### Update all the Things at Once
+
+The scripts above do each task separately but to run all the things at once:
+
+```bash
+$ npm run latest -- <version>
+# Example:
+$ npm run latest -- v0.36.0
+```
+
+_Note_ This assumes version is the latest and sets it as such by default.
+
+**Testing**
+
+To test the documentation script:
+
+```bash
+$ npm test
 ```
 
 ### Contributing
