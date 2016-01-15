@@ -1,5 +1,22 @@
 [
   {
+    "url": "https://api.github.com/repos/atom/electron/releases/2432795",
+    "assets_url": "https://api.github.com/repos/atom/electron/releases/2432795/assets",
+    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/2432795/assets{?name,label}",
+    "html_url": "https://github.com/atom/electron/releases/tag/v0.36.4",
+    "id": 2432795,
+    "tag_name": "v0.36.4",
+    "target_commitish": "master",
+    "name": "electron v0.36.4",
+    "draft": false,
+    "prerelease": false,
+    "created_at": "2016-01-15T06:27:19Z",
+    "published_at": "2016-01-15T08:09:45Z",
+    "tarball_url": "https://api.github.com/repos/atom/electron/tarball/v0.36.4",
+    "zipball_url": "https://api.github.com/repos/atom/electron/zipball/v0.36.4",
+    "body": "Changelog:\r\n\r\n* `session.setProxy(config)` API now accepts an `Object` instead of `String`.\r\n* `BrowserWindow.getFocusedWindow()` API now returns `null` instead of `undefined` when there is no focused window.\r\n* Add `session.flushStorageData()` API.\r\n* Add `session.getCacheSize(callback)` API.\r\n* Add `BrowserWindow.getNativeWindowHandle()` API.\r\n* Add `defaultId` option for `dialog.showMessageBox(options)` API.\r\n* Add `insertText` and `executeJavaScript` methods to `webFrame` module.\r\n* Add `insertText` method to `webContents` and `<webview>`.\r\n* Fix wrong aspect ratio in Netflix videos.\r\n* Fix source code highlighting not working in devtools.\r\n* Fix `<webview>.src` not working before `onload` event.\r\n\r\n__Linux__\r\n\r\n* Fix `--touch-devices` command line switch not working.\r\n\r\n__Windows__\r\n\r\n* Fix DRM not working in Adobe Flash Player plugin.\r\n"
+  },
+  {
     "url": "https://api.github.com/repos/atom/electron/releases/2402717",
     "assets_url": "https://api.github.com/repos/atom/electron/releases/2402717/assets",
     "upload_url": "https://uploads.github.com/repos/atom/electron/releases/2402717/assets{?name,label}",
@@ -491,22 +508,5 @@
     "tarball_url": "https://api.github.com/repos/atom/electron/tarball/v0.33.0",
     "zipball_url": "https://api.github.com/repos/atom/electron/zipball/v0.33.0",
     "body": "Changelog:\r\n\r\n* Update to Node.js v4.1.0.\r\n* Add `app.getLocale` API.\r\n* Fix `activate-with-no-open-windows` emitted at wrong time.\r\n* Fix `mimeType` not working in `registerStringProtocol` and its families.\r\n* Fix crash when calling `vm.createContext`.\r\n* Fix occasional crash when closing devtools.\r\n\r\n__OS X__\r\n\r\n* Fix crash when `title-bar-style` is set on OS X <= 10.9.\r\n* Fix crash when opening a new window after closing a window.\r\n"
-  },
-  {
-    "url": "https://api.github.com/repos/atom/electron/releases/1813797",
-    "assets_url": "https://api.github.com/repos/atom/electron/releases/1813797/assets",
-    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/1813797/assets{?name,label}",
-    "html_url": "https://github.com/atom/electron/releases/tag/v0.32.3",
-    "id": 1813797,
-    "tag_name": "v0.32.3",
-    "target_commitish": "master",
-    "name": "electron v0.32.3",
-    "draft": false,
-    "prerelease": false,
-    "created_at": "2015-09-15T07:30:22Z",
-    "published_at": "2015-09-15T08:27:32Z",
-    "tarball_url": "https://api.github.com/repos/atom/electron/tarball/v0.32.3",
-    "zipball_url": "https://api.github.com/repos/atom/electron/zipball/v0.32.3",
-    "body": "Changelog:\r\n\r\n* Add `browser-window-created` event for `app` module.\r\n* Add `BrowserWindow.isDevToolsFocused` API.\r\n* Fix `process` and `global` objects not available in `preload` script after the first tick of message loop when node integration is off.\r\n* Fix `devtools-opened` event emitted before `devToolsWebContents` gets created.\r\n* Fix `BrowserWindow.addDevToolsExtension` not working.\r\n* Fix memory leak when calling `node::Buffer::New`.\r\n\r\n__OS X__\r\n\r\n* Add `title-bar-style` option for `BrowserWindow`, which allows creating Yosemite style frameless window.\r\n* Add `activate` event for `app` module.\r\n* Fix `devtools-focused` event not working.\r\n"
   }
 ]
