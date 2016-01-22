@@ -1,5 +1,22 @@
 [
   {
+    "url": "https://api.github.com/repos/atom/electron/releases/2471447",
+    "assets_url": "https://api.github.com/repos/atom/electron/releases/2471447/assets",
+    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/2471447/assets{?name,label}",
+    "html_url": "https://github.com/atom/electron/releases/tag/v0.36.5",
+    "id": 2471447,
+    "tag_name": "v0.36.5",
+    "target_commitish": "master",
+    "name": "electron v0.36.5",
+    "draft": false,
+    "prerelease": false,
+    "created_at": "2016-01-22T00:04:38Z",
+    "published_at": "2016-01-22T15:47:37Z",
+    "tarball_url": "https://api.github.com/repos/atom/electron/tarball/v0.36.5",
+    "zipball_url": "https://api.github.com/repos/atom/electron/zipball/v0.36.5",
+    "body": "Changelog:\r\n\r\n* Fix crash when switching between submenus of window menubar.\r\n* Add support for the `silent` property of `Notification`.\r\n* Add `defaultFontFamily`, `defaultFontSize`, `defaultMonospaceFontSize`, `minimumFontSize`, `defaultEncoding` options to `webPreferences` of `BrowserWindow`.\r\n* Add `<webview>.loadURL`.\r\n* Add `blinkfeatures` attribute for `<webview>`.\r\n\r\n__OS X__\r\n\r\n* Add `animate` parameter for `setBounds`, `setSize`, `setContentSize`, `setPosition` methods of `BrowserWindow`.\r\n* Add `movable` option for `BrowserWindow`.\r\n* Make the `backgroundColor` option of `BrowserWindow` work.\r\n\r\n__Windows__\r\n\r\n* Add `app.isAeroGlassEnabled()` API.\r\n"
+  },
+  {
     "url": "https://api.github.com/repos/atom/electron/releases/2432795",
     "assets_url": "https://api.github.com/repos/atom/electron/releases/2432795/assets",
     "upload_url": "https://uploads.github.com/repos/atom/electron/releases/2432795/assets{?name,label}",
@@ -491,22 +508,5 @@
     "tarball_url": "https://api.github.com/repos/atom/electron/tarball/v0.33.1",
     "zipball_url": "https://api.github.com/repos/atom/electron/zipball/v0.33.1",
     "body": "Changelog:\r\n\r\n* Add `webContents.enableDeviceEmulation` API.\r\n* Add `webcontents.beginFrameSubscription` and `webcontents.endFrameSubscription` APIs.\r\n* Add `sendInputEvent` method for `WebContents` and `<webview>` tag.\r\n* Add `webFrame.registerUrlSchemeAsPrivileged` API.\r\n* Add more information of the request in `did-get-redirect-request` event.\r\n* Fix exception when reading an invalid file inside `asar` archive.\r\n"
-  },
-  {
-    "url": "https://api.github.com/repos/atom/electron/releases/1827213",
-    "assets_url": "https://api.github.com/repos/atom/electron/releases/1827213/assets",
-    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/1827213/assets{?name,label}",
-    "html_url": "https://github.com/atom/electron/releases/tag/v0.33.0",
-    "id": 1827213,
-    "tag_name": "v0.33.0",
-    "target_commitish": "master",
-    "name": "electron v0.33.0",
-    "draft": false,
-    "prerelease": false,
-    "created_at": "2015-09-17T10:31:12Z",
-    "published_at": "2015-09-17T11:39:20Z",
-    "tarball_url": "https://api.github.com/repos/atom/electron/tarball/v0.33.0",
-    "zipball_url": "https://api.github.com/repos/atom/electron/zipball/v0.33.0",
-    "body": "Changelog:\r\n\r\n* Update to Node.js v4.1.0.\r\n* Add `app.getLocale` API.\r\n* Fix `activate-with-no-open-windows` emitted at wrong time.\r\n* Fix `mimeType` not working in `registerStringProtocol` and its families.\r\n* Fix crash when calling `vm.createContext`.\r\n* Fix occasional crash when closing devtools.\r\n\r\n__OS X__\r\n\r\n* Fix crash when `title-bar-style` is set on OS X <= 10.9.\r\n* Fix crash when opening a new window after closing a window.\r\n"
   }
 ]
