@@ -4,10 +4,11 @@ description: 'Build cross platform desktop apps with web technologies'
 baseurl: 'http://electron.atom.io'
 twitter_username: ElectronJS
 github_username: atom
-highlighter: pygments
-markdown: redcarpet
-redcarpet:
-    extensions: [with_toc_data]
+highlighter: rouge
+markdown: kramdown
+kramdown:
+    input: GFM
+    syntax_highlighter: rouge
 gems:
     - jekyll-redirect-from
 latest_version: v0.36.5
