@@ -1,5 +1,22 @@
 [
   {
+    "url": "https://api.github.com/repos/atom/electron/releases/2645576",
+    "assets_url": "https://api.github.com/repos/atom/electron/releases/2645576/assets",
+    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/2645576/assets{?name,label}",
+    "html_url": "https://github.com/atom/electron/releases/tag/v0.36.8",
+    "id": 2645576,
+    "tag_name": "v0.36.8",
+    "target_commitish": "master",
+    "name": "electron v0.36.8",
+    "draft": false,
+    "prerelease": false,
+    "created_at": "2016-02-19T06:38:36Z",
+    "published_at": "2016-02-19T10:11:19Z",
+    "tarball_url": "https://api.github.com/repos/atom/electron/tarball/v0.36.8",
+    "zipball_url": "https://api.github.com/repos/atom/electron/zipball/v0.36.8",
+    "body": "Changelog:\r\n\r\n* Link with ffmpeg dynamically.\r\n* Provide prebuilt binaries of ffmpeg which do not include proprietary codecs.\r\n* Improve error message when there is invalid parameter passed to Electron API.\r\n* Emit `did-fail-load` event when invalid URL is passed to `BrowserWindow.loadURL`.\r\n* Launch URL or HTML file directly in default app.\r\n* Add `cursor-changed` event to `WebContents`.\r\n* Add `Session.setPermissionRequestHandler(handler)` API.\r\n* Add `Session.clearHostResolverCache(callback)` API.\r\n* Add `readRtf` and `writeRtf` methods to `clipboard` module.\r\n* Fix crash when calling methods of `downloadItem` in `will-download` handler when `event.preventDefault` is called.\r\n* Fix crash when calling `WebContents.endFrameSubscription()` while there are pending frames.\r\n* Fix the `exit` event of `process` object not reliable in renderer process.\r\n* Fix `BrowserWindow.getNativeWindowHandle()` returning corrupted buffer.\r\n\r\n__Windows__\r\n\r\n* Fix methods of `autoUpdater` not accessible in `remote` module.\r\n\r\n__OS X__\r\n\r\n* Add `app.show` and `app.hide` APIs.\r\n* Fix `icon` not working in `dialog.showMessageBox(options)`.\r\n* Fix `Command + ~` not switching windows sometimes.\r\n\r\n__Linux__\r\n\r\n* Don't drop capabilities in renderer process."
+  },
+  {
     "url": "https://api.github.com/repos/atom/electron/releases/2521566",
     "assets_url": "https://api.github.com/repos/atom/electron/releases/2521566/assets",
     "upload_url": "https://uploads.github.com/repos/atom/electron/releases/2521566/assets{?name,label}",
@@ -491,22 +508,5 @@
     "tarball_url": "https://api.github.com/repos/atom/electron/tarball/v0.30.8",
     "zipball_url": "https://api.github.com/repos/atom/electron/zipball/v0.30.8",
     "body": "Changelog:\r\n\r\n__OS X__\r\n\r\n* Fix the auto updater not cleaning old downloaded files.\r\n"
-  },
-  {
-    "url": "https://api.github.com/repos/atom/electron/releases/1866768",
-    "assets_url": "https://api.github.com/repos/atom/electron/releases/1866768/assets",
-    "upload_url": "https://uploads.github.com/repos/atom/electron/releases/1866768/assets{?name,label}",
-    "html_url": "https://github.com/atom/electron/releases/tag/v0.33.2",
-    "id": 1866768,
-    "tag_name": "v0.33.2",
-    "target_commitish": "master",
-    "name": "electron v0.33.2",
-    "draft": false,
-    "prerelease": false,
-    "created_at": "2015-09-25T09:50:53Z",
-    "published_at": "2015-09-25T12:32:42Z",
-    "tarball_url": "https://api.github.com/repos/atom/electron/tarball/v0.33.2",
-    "zipball_url": "https://api.github.com/repos/atom/electron/zipball/v0.33.2",
-    "body": "Changelog:\r\n\r\n* Update to Node.js v4.1.1.\r\n* Add `allowpopups` attribute for `<webview>` tag.\r\n* Add `options` parameter for `new-window` event.\r\n* Inherit parent window's options in child windows opened by `window.open`.\r\n* Pass a `DownloadItem` object in the `will-download` event, allowing users to subscribe to download updates.\r\n* Fix length of `Buffer` becoming 0 when there are lots of `Buffer` created.\r\n* Fix crash when there is external ArrayBuffer created with pointers to addresses outside the heap.\r\n\r\n__Windows__\r\n\r\n* Fix leak of `fd`s when reading files in `asar` archives.\r\n* Fix tray icon not showing sometimes.\r\n\r\n__OS X__\r\n\r\n* Fix draggable regions not working for `BrowserWindow` with `title-bar-style` set to `hidden`.\r\n"
   }
 ]
