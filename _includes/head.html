@@ -6,18 +6,18 @@
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name='description' content='{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}'>
 
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="@electronjs" />
-  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
-  <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
-  <meta name="twitter:image" content="http://electron.atom.io/images/electron-icon-avatar.png" />
-  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
-  <meta property="og:description" content='{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}' />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
-  <meta property="og:image" content="http://electron.atom.io/images/electron-icon-avatar.png" />
-  <meta property="og:site_name" content="Electron" />
-  <meta content="#A5ECFD" name="theme-color" />
+  <meta name='twitter:card' content='summary' />
+  <meta name='twitter:site' content='@electronjs' />
+  <meta name='twitter:title' content='{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}' />
+  <meta name='twitter:description' content='{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}' />
+  <meta name='twitter:image' content='http://electron.atom.io/images/electron-icon-avatar.png' />
+  <meta property='og:title' content='{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}' />
+  <meta property='og:description' content='{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}' />
+  <meta property='og:type' content='website' />
+  <meta property='og:url' content='{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}' />
+  <meta property='og:image' content='http://electron.atom.io/images/electron-icon-avatar.png' />
+  <meta property='og:site_name' content='Electron' />
+  <meta content='#A5ECFD' name='theme-color' />
   <link rel='shortcut icon' href='{{ site.url }}/images/favicon.ico'/>
   <link rel='stylesheet' href='{{ site.url }}/css/normalize.css'>
   <link rel='stylesheet' href='{{ site.url }}/css/skeleton.css'>
