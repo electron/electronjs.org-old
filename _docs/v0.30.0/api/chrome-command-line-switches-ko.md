@@ -70,9 +70,9 @@ connection, and the endpoint host in a `SOCKS` proxy connection).
 
 Like `--host-rules` but these `rules` only apply to the host resolver.
 
-[app]: app-ko.md
-[append-switch]: app-ko.md#appcommandlineappendswitchswitch-value
-[ready]: app-ko.md#event-ready
+[app]: http://electron.atom.io/docs/v0.30.0/api/app-ko
+[append-switch]: http://electron.atom.io/docs/v0.30.0/api/app-ko#appcommandlineappendswitchswitch-value
+[ready]: http://electron.atom.io/docs/v0.30.0/api/app-ko#event-ready
 
 ## --ignore-certificate-errors
 
