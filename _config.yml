@@ -11,7 +11,7 @@ kramdown:
     syntax_highlighter: rouge
 gems:
     - jekyll-redirect-from
-latest_version: v0.36.10
+latest_version: v0.36.11
 current_node: 5.1.1
 current_chrome: 47.0.2526.110
 current_v8: 4.7.80.27
@@ -37,6 +37,7 @@ available_versions:
     - v0.36.8
     - v0.36.9
     - v0.36.10
+    - v0.36.11
 collections:
     docs: {output: true, permalink: '/docs/:path/'}
 defaults:
