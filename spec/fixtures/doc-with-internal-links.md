@@ -158,3 +158,19 @@ $ ./Electron.app/Contents/MacOS/Electron your-app/
 
 `Electron.app` here is part of the Electron's release package, you can download
 it from [here](https://github.com/atom/electron/releases).
+
+### Windows
+
+* On Windows 10, notifications "just work".
+* On Windows 8.1 and Windows 8, a shortcut to your app, with a [Application User
+Model ID][app-user-model-id], must be installed to the Start screen. Note,
+however, that it does not need to be pinned to the Start screen.
+* On Windows 7 and below, notifications are not supported. You can however send
+"balloon notifications" using the [Tray API][tray-balloon].
+
+Furthermore, the maximum length for the notification body is 250 characters,
+with the Windows team recommending that notifications should be kept to 200
+characters.
+
+[tray-balloon]: ../api/tray.md#traydisplayballoonoptions-windows
+[app-user-model-id]: https://msdn.microsoft.com/en-us/library/windows/desktop/dd378459(v=vs.85).aspx
