@@ -5,7 +5,8 @@ var test = require('tape')
 
 var fixInternalLinks = require('../lib/doc-links.js')
 
-var urlRegex = /\[.+\]\(.+\)/g
+var tradRegex = /\[.+\]\(.+\)/g
+var footRegex = /\[[^\]]+\]:\s(.+)/g
 
 var dir = 'spec/fixtures/test-set-docs/tutorial'
 var emptyDir = 'spec/fixtures/test-set-docs/empty-dir'
@@ -17,11 +18,13 @@ var expectedLinks = [
   '[ipc](http://electron.atom.io/docs/v0.27.0/api/ipc-renderer)',
   '[remote](http://electron.atom.io/docs/v0.27.0/api/remote)',
   '[Application distribution](http://electron.atom.io/docs/v0.27.0/tutorial/application-distribution)',
-  '[here](https://github.com/atom/electron/releases)'
+  '[here](https://github.com/atom/electron/releases)',
+  '[tray-balloon]: http://electron.atom.io/docs/v0.27.0/api/tray#traydisplayballoonoptions-windows',
+  '[app-user-model-id]: https://msdn.microsoft.com/en-us/library/windows/desktop/dd378459(v=vs.85).aspx'
   ]
 
 test('Fetch and write documentation with latest flag', function (t) {
-  t.plan(4)
+  t.plan(6)
 
   fixInternalLinks(dir, 'v0.27.0', function callback (error, message) {
     if (error) return t.fail(error)
@@ -30,11 +33,12 @@ test('Fetch and write documentation with latest flag', function (t) {
 
   function compareLinks () {
     var finalContent = fs.readFileSync(finalFile).toString()
-    var finalLinks = finalContent.match(urlRegex)
-
+    var tradLinks = finalContent.match(tradRegex) || []
+    var footLinks = finalContent.match(footRegex) || []
+    var finalLinks = tradLinks.concat(footLinks)
     if (finalLinks) {
-      finalLinks.forEach(function (finalLink, i) {
-        t.equal(finalLink, expectedLinks[i], 'Link ' + finalLink + ' matches ' + expectedLinks[i])
+      expectedLinks.forEach(function (expectedLink, i) {
+        t.equal(finalLinks[i], expectedLink, 'Link ' + expectedLink + ' matches ' + finalLinks[i])
       })
     }
     cleanup()
