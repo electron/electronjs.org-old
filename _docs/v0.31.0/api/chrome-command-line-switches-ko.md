@@ -69,9 +69,9 @@ Hostname 맵핑 규칙을 설정합니다. (`,`로 분리)
 
 `--host-rules` 플래그와 비슷하지만 이 플래그는 host resolver에만 적용됩니다.
 
-[app]: app-ko.md
-[append-switch]: app-ko.md#appcommandlineappendswitchswitch-value
-[ready]: app-ko.md#event-ready
+[app]: http://electron.atom.io/docs/v0.31.0/api/app-ko
+[append-switch]: http://electron.atom.io/docs/v0.31.0/api/app-ko#appcommandlineappendswitchswitch-value
+[ready]: http://electron.atom.io/docs/v0.31.0/api/app-ko#event-ready
 
 ## --ignore-certificate-errors
 
