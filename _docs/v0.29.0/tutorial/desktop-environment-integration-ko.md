@@ -198,11 +198,11 @@ window.setRepresentedFilename('/etc/passwd');
 window.setDocumentEdited(true);
 ```
 
-[addrecentdocument]: ../api/app-ko.md#appaddrecentdocumentpath
-[clearrecentdocuments]: ../api/app-ko.md#appclearrecentdocuments
-[setusertaskstasks]: ../api/app-ko.md#appsetusertaskstasks
-[setprogressbar]: ../api/browser-window-ko.md#browserwindowsetprogressbarprogress
-[setrepresentedfilename]: ../api/browser-window-ko.md#browserwindowsetrepresentedfilenamefilename
-[setdocumentedited]: ../api/browser-window-ko.md#browserwindowsetdocumenteditededited
+[addrecentdocument]: http://electron.atom.io/docs/v0.29.0/api/app-ko#appaddrecentdocumentpath
+[clearrecentdocuments]: http://electron.atom.io/docs/v0.29.0/api/app-ko#appclearrecentdocuments
+[setusertaskstasks]: http://electron.atom.io/docs/v0.29.0/api/app-ko#appsetusertaskstasks
+[setprogressbar]: http://electron.atom.io/docs/v0.29.0/api/browser-window-ko#browserwindowsetprogressbarprogress
+[setrepresentedfilename]: http://electron.atom.io/docs/v0.29.0/api/browser-window-ko#browserwindowsetrepresentedfilenamefilename
+[setdocumentedited]: http://electron.atom.io/docs/v0.29.0/api/browser-window-ko#browserwindowsetdocumenteditededited
 [app-registration]: http://msdn.microsoft.com/en-us/library/windows/desktop/ee872121(v=vs.85).aspx
 [unity-launcher]: https://help.ubuntu.com/community/UnityLaunchersAndDesktopFiles#Adding_shortcuts_to_a_launcher
