@@ -215,4 +215,4 @@ $ cd electron-quick-start
 $ npm install && npm start
 ```
 
-[share-data]: ../faq/electron-faq.md#how-to-share-data-between-web-pages
+[share-data]: http://electron.atom.io/docs/v0.36.8/faq/electron-faq#how-to-share-data-between-web-pages
