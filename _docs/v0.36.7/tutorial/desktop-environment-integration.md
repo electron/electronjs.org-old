@@ -301,15 +301,15 @@ window.setRepresentedFilename('/etc/passwd');
 window.setDocumentEdited(true);
 ```
 
-[addrecentdocument]: ../api/app.md#appaddrecentdocumentpath
-[clearrecentdocuments]: ../api/app.md#appclearrecentdocuments
-[setusertaskstasks]: ../api/app.md#appsetusertaskstasks
-[setprogressbar]: ../api/browser-window.md#browserwindowsetprogressbarprogress
-[setrepresentedfilename]: ../api/browser-window.md#browserwindowsetrepresentedfilenamefilename
-[setdocumentedited]: ../api/browser-window.md#browserwindowsetdocumenteditededited
+[addrecentdocument]: http://electron.atom.io/docs/v0.36.7/api/app#appaddrecentdocumentpath
+[clearrecentdocuments]: http://electron.atom.io/docs/v0.36.7/api/app#appclearrecentdocuments
+[setusertaskstasks]: http://electron.atom.io/docs/v0.36.7/api/app#appsetusertaskstasks
+[setprogressbar]: http://electron.atom.io/docs/v0.36.7/api/browser-window#browserwindowsetprogressbarprogress
+[setrepresentedfilename]: http://electron.atom.io/docs/v0.36.7/api/browser-window#browserwindowsetrepresentedfilenamefilename
+[setdocumentedited]: http://electron.atom.io/docs/v0.36.7/api/browser-window#browserwindowsetdocumenteditededited
 [app-registration]: http://msdn.microsoft.com/en-us/library/windows/desktop/ee872121(v=vs.85).aspx
 [unity-launcher]: https://help.ubuntu.com/community/UnityLaunchersAndDesktopFiles#Adding_shortcuts_to_a_launcher
-[setthumbarbuttons]: ../api/browser-window.md#browserwindowsetthumbarbuttonsbuttons
-[tray-balloon]: ../api/tray.md#traydisplayballoonoptions-windows
+[setthumbarbuttons]: http://electron.atom.io/docs/v0.36.7/api/browser-window#browserwindowsetthumbarbuttonsbuttons
+[tray-balloon]: http://electron.atom.io/docs/v0.36.7/api/tray#traydisplayballoonoptions-windows
 [app-user-model-id]: https://msdn.microsoft.com/en-us/library/windows/desktop/dd378459(v=vs.85).aspx
 [notification-spec]: https://developer.gnome.org/notification-spec/

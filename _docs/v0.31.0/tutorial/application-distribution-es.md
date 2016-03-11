@@ -66,7 +66,7 @@ antes de realizar la distribución.
 ### Windows
 
 Puedes renombrar `electron.exe` a cualquier nombre que desees, y editar su ícono y otras informaciones
-con herramientas como [rcedit](https://github.com/atom/rcedit) o .
+con herramientas como [rcedit](https://github.com/atom/rcedit) o [ResEdit](http://www.resedit.net).
 
 ### OS X
 
