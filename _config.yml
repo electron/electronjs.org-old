@@ -39,6 +39,7 @@ available_versions:
     - v0.36.10
     - v0.36.11
     - v0.37.0
+    - v0.37.1
 collections:
     docs: {output: true, permalink: '/docs/:path/'}
 defaults:
