@@ -13,8 +13,8 @@ gems:
     - jekyll-redirect-from
 latest_version: v0.37.2
 current_node: 5.1.1
-current_chrome: 47.0.2526.110
-current_v8: 4.7.80.27
+current_chrome: 49.0.2623.75
+current_v8: 4.9.385.28
 available_versions:
     - v0.24.0
     - v0.25.0
