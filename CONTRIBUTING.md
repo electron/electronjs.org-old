@@ -14,7 +14,15 @@ The following is a set of guidelines for contributing to electron.atom.io on Git
 
 ## Adding an app or project to the site
 
-If you have an Electron application or project you'd like to see added, please open an issue with details about your application. Please include name, website and a link to the project's icon/logo.
+If you have an Electron application or project you'd like to see added, please open a pull request!
+
+Add your app to the list by editing [index.html](/index.html). **Please add your app at the bottom of the list**. Here's a sample of the HTML markup to use:
+
+```html
+<a href='https://yourproject.com/' target='_blank' title='Your Project'>
+  <img class='other-logo' src='../images/yourproject.png' alt='Your Project'>
+</a>
+```
 
 ## Documentation
 
