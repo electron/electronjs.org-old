@@ -97,8 +97,8 @@ section {
 /* Header Nav */
 
 header {
-  padding: 12px 0;
-  background-color: #76C7D7;
+  padding: 6rem 0 0 0;
+  background-color: #A5ECFA;
 }
 @media (max-width: 550px) {
   header,
@@ -108,18 +108,18 @@ header {
 }
 
 header a {
-  color: #FAF7F3;
+  color: inherit;
 }
 
 header a:hover {
-  color: #FAF7F3;
+  color: #3A6167;
 }
 
 /* Hero */
 
 .hero {
   padding: 10rem 0;
-  color: #45828E;
+  border-bottom: 1px solid hsl(190, 89%, 73%);
   background-color: #A5ECFA;
 }
 
@@ -141,10 +141,25 @@ header a:hover {
   font-size: .86em;
 }
 
+
+/* Electron Does */
+
+.electron-does {}
+
+.electron-does img {
+  padding-bottom: 20px;
+}
+
+.other-logo {
+  width: 72px;
+  padding: 10px;
+}
+
 /* Features */
 
 .features {
   padding: 10rem 0;
+  border: 1px solid hsl(34, 41%, 88%);
   background-color: #FAF7F3;
 }
 
@@ -201,6 +216,7 @@ header a:hover {
    ------------------------------------------ */
 .get-started {
   background-color: #FAF7F3;
+  border: 1px solid hsl(34, 41%, 88%);
 }
 
 .electron-vers {
