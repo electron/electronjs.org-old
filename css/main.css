@@ -117,22 +117,22 @@ header a:hover {
   padding: 160px 0 100px 0;
 }
 
-.hero .mega-octicon {
-  font-size: 24px;
+.hero-img {
+  max-width: 100%;
 }
 
-.electron-word {
-  background: url('../images/electron-logo.svg') no-repeat 0 0, center;
-  background-size: 100% auto;
-  padding-bottom: 15.3%; /* Keeps aspect ratio. Original img ratio: 980x150. 150/980*100=15.3% */
-  margin-bottom: 20px;
-  width: 100%;
-  max-width: 800px;
-  display: inline-block;
-  font: 0/0 a;
-  color: transparent;
-  white-space: nowrap;
-  overflow: hidden;
+.hero-img-1-0 {
+  margin-top: 3rem;
+}
+
+.hero-title {
+  font-size: 2em;
+  margin-top: 3rem;
+  color: #3A6167;
+}
+.hero-sub-title {
+  color: #5796A0;
+  font-size: .86em;
 }
 
 /* More Features */
