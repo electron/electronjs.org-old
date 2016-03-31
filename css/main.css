@@ -4,7 +4,7 @@
 body {
   font-family: "Helvetica Neue", "Arial", sans-serif;
   color: #45828E;
-  background-color: #A5ECFA;
+  background-color: #fff;
 }
 
 h1, h2, h3, h4 {
@@ -23,6 +23,10 @@ a:hover {
 
 a.no-hover-dec:hover {
   text-decoration: none;
+}
+
+img {
+  max-width: 100%;
 }
 
 .inline-list {
@@ -82,7 +86,7 @@ section {
 }
 
 .hero, .built-on, .get-started,
-.electron-does, .more-features {
+.electron-does, .features {
   text-align: center;
 }
 
@@ -114,7 +118,9 @@ header a:hover {
 /* Hero */
 
 .hero {
-  padding: 160px 0 100px 0;
+  padding: 10rem 0;
+  color: #45828E;
+  background-color: #A5ECFA;
 }
 
 .hero-img {
@@ -135,46 +141,45 @@ header a:hover {
   font-size: .86em;
 }
 
-/* More Features */
+/* Features */
 
-.more-features {
-  background-color: #7BDCEF;
+.features {
+  padding: 10rem 0;
+  background-color: #FAF7F3;
 }
 
-.more-features .features {
-  padding: 20px 0 0 0;
+.features h3 {
+  font-size: 2em;
 }
 
-.more-features .features .columns {
-  margin-top: 10px;
-  margin-bottom: 10px;
+.features-list {
+  margin: 2rem 0 6rem 0;
 }
 
-.more-features span {
+.features-list .mega-octicon {
   padding: 20px;
-  width: 30px;
-  height: 30px;
-  border-radius: 990px;
-  margin-bottom: 20px;
-  background-color: #A5ECFA;
+  margin: 10px;
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  margin-bottom: 0.5em;
+  border: 2px solid hsla(0,0%,0%,.1);
+  box-sizing: border-box;
 }
 
-.octicon-gift::before {
+.features-list .octicon-gift::before {
   position: relative;
   top: -1px;
 }
 
-.octicon-tools::before, .octicon-bug::before,
-.octicon-evice-desktop::before {
+.features-list .octicon-tools::before,
+.features-list .octicon-bug::before,
+.features-list .octicon-evice-desktop::before {
   position: relative;
   left: -1px;
 }
 
 /* Built With */
-
-.built-on {
-  background-color: #FAF7F3;
-}
 
 .built-on li {
   text-align: left;
@@ -184,7 +189,6 @@ header a:hover {
 
 .electron-does img {
   padding-bottom: 20px;
-  max-width: 100%;
 }
 
 .other-logo {
@@ -195,6 +199,9 @@ header a:hover {
 
 /* Get Started
    ------------------------------------------ */
+.get-started {
+  background-color: #FAF7F3;
+}
 
 .electron-vers {
   display: inline-block;
