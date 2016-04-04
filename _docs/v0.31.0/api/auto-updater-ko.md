@@ -9,7 +9,7 @@ source_url: 'https://github.com/electron/electron/blob/master/docs/api/auto-upda
 
 **이 모듈은 현재 OS X에서만 사용할 수 있습니다.**
 
-Windows 어플리케이션 인스톨러를 생성하려면 [atom/grunt-electron-installer](https://github.com/atom/grunt-electron-installer)를 참고하세요.
+Windows 어플리케이션 인스톨러를 생성하려면 [atom/grunt-electron-installer](https://github.com/electron/grunt-electron-installer)를 참고하세요.
 
 `auto-updater` 모듈은 [Squirrel.Mac](https://github.com/Squirrel/Squirrel.Mac) 프레임워크의 간단한 Wrapper입니다.
 

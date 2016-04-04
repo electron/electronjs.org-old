@@ -157,4 +157,4 @@ $ asar pack app app.asar --unpack *.node
 �� �����ȿ� unpack �ɼǿ��� ������ ���ϵ��� ������ Ǯ�� ���·� ���ԵǾ� �ֽ��ϴ�.
 �������� ���ø����̼��� ������ �� �ݵ��� �ش� ������ ���� �����Ͽ����մϴ�.
 
-[asar]: https://github.com/atom/asar
+[asar]: https://github.com/electron/asar

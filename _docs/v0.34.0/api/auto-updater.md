@@ -9,7 +9,7 @@ source_url: 'https://github.com/electron/electron/blob/master/docs/api/auto-upda
 
 **This module has only been implemented for OS X.**
 
-Check out [atom/grunt-electron-installer](https://github.com/atom/grunt-electron-installer)
+Check out [atom/grunt-electron-installer](https://github.com/electron/grunt-electron-installer)
 to build a Windows installer for your app.
 
 The `auto-updater` module is a simple wrapper around the

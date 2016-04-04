@@ -161,4 +161,4 @@ Después de ejecutar este comando, además del archivo `app.asar`, también se c
 un directorio `app.asar.unpacked`, que contendrá los archivos desempaquetados.
 Este directorio deberá copiarse junto con el archivo `app.asar` a la hora de distribuir la aplicación.
 
-[asar]: https://github.com/atom/asar
+[asar]: https://github.com/electron/asar

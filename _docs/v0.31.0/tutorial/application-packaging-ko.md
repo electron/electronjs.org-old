@@ -154,4 +154,4 @@ $ asar pack app app.asar --unpack *.node
 이 폴더안에 unpack 옵션에서 설정한 파일들이 압축이 풀린 상태로 포함되어 있습니다.
 유저에게 어플리케이션을 배포할 때 반드시 해당 폴더도 같이 배포하여야합니다.
 
-[asar]: https://github.com/atom/asar
+[asar]: https://github.com/electron/asar
