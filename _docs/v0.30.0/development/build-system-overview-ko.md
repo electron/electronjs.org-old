@@ -2,7 +2,7 @@
 version: v0.30.0
 category: Development
 title: 'Build System Overview Ko'
-source_url: 'https://github.com/atom/electron/blob/master/docs/development/build-system-overview-ko.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/development/build-system-overview-ko.md'
 ---
 
 # 빌드 시스템 개요

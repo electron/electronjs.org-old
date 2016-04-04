@@ -2,7 +2,7 @@
 version: v0.30.0
 category: Tutorial
 title: 'Desktop Environment Integration Ko'
-source_url: 'https://github.com/atom/electron/blob/master/docs/tutorial/desktop-environment-integration-ko.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/desktop-environment-integration-ko.md'
 ---
 
 # 데스크톱 환경 통합

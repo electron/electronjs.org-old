@@ -2,7 +2,7 @@
 version: v0.36.6
 category: API
 title: 'Download Item'
-source_url: 'https://github.com/atom/electron/blob/master/docs/api/download-item.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/api/download-item.md'
 ---
 
 # DownloadItem

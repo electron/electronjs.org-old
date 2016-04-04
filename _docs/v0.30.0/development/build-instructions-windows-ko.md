@@ -2,7 +2,7 @@
 version: v0.30.0
 category: Development
 title: 'Build Instructions Windows Ko'
-source_url: 'https://github.com/atom/electron/blob/master/docs/development/build-instructions-windows-ko.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/development/build-instructions-windows-ko.md'
 ---
 
 # 빌드 설명서 (Windows)
@@ -26,7 +26,7 @@ Electron은 전적으로 command-line 스크립트를 사용하여 빌드합니�
 ## 코드 가져오기
 
 ```powershell
-git clone https://github.com/atom/electron.git
+git clone https://github.com/electron/electron.git
 ```
 
 ## 부트 스트랩

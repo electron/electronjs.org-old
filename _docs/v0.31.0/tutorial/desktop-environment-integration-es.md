@@ -2,7 +2,7 @@
 version: v0.31.0
 category: Tutorial
 title: 'Desktop Environment Integration Es'
-source_url: 'https://github.com/atom/electron/blob/master/docs/tutorial/desktop-environment-integration-es.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/desktop-environment-integration-es.md'
 ---
 
 # Integración con el entorno de escritorio

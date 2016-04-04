@@ -2,7 +2,7 @@
 version: v0.29.0
 category: API
 title: 'Web View Tag Ko'
-source_url: 'https://github.com/atom/electron/blob/master/docs/api/web-view-tag-ko.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/api/web-view-tag-ko.md'
 ---
 
 # `<webview>` �±�

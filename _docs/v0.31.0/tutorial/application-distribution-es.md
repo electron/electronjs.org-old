@@ -2,7 +2,7 @@
 version: v0.31.0
 category: Tutorial
 title: 'Application Distribution Es'
-source_url: 'https://github.com/atom/electron/blob/master/docs/tutorial/application-distribution-es.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/application-distribution-es.md'
 ---
 
 # Distribución de aplicaciones
@@ -35,7 +35,7 @@ y Electron iniciará la aplicación.  El directorio `electron` será la distribu
 ## Empaquetando tu aplicación como un archivo
 
 Además de copiar todos tus archivos fuente para la distribución, también puedes
-empaquetar tu aplicación como un archivo [asar](https://github.com/atom/asar)
+empaquetar tu aplicación como un archivo [asar](https://github.com/electron/asar)
 y de esta forma evitar la exposición del código fuente de tu aplicación a los usuarios.
 
 Para usar un archivo `asar` en reemplazo de la carpeta `app`, debes renombrar

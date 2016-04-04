@@ -2,7 +2,7 @@
 version: v0.31.0
 category: Tutorial
 title: 'Application Packaging Es'
-source_url: 'https://github.com/atom/electron/blob/master/docs/tutorial/application-packaging-es.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/application-packaging-es.md'
 ---
 
 # Empaquetamiento de aplicaciones
@@ -161,4 +161,4 @@ Después de ejecutar este comando, además del archivo `app.asar`, también se c
 un directorio `app.asar.unpacked`, que contendrá los archivos desempaquetados.
 Este directorio deberá copiarse junto con el archivo `app.asar` a la hora de distribuir la aplicación.
 
-[asar]: https://github.com/atom/asar
+[asar]: https://github.com/electron/asar

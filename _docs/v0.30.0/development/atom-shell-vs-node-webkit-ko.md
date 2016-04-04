@@ -2,7 +2,7 @@
 version: v0.30.0
 category: Development
 title: 'Atom Shell vs Node Webkit Ko'
-source_url: 'https://github.com/atom/electron/blob/master/docs/development/atom-shell-vs-node-webkit-ko.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/development/atom-shell-vs-node-webkit-ko.md'
 ---
 
 # NW.js와 기술적으로 다른점 (이전 node-webkit)

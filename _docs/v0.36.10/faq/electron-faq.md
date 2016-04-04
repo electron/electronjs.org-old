@@ -2,7 +2,7 @@
 version: v0.36.10
 category: Faq
 title: 'Electron Faq'
-source_url: 'https://github.com/atom/electron/blob/master/docs/faq/electron-faq.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/faq/electron-faq.md'
 ---
 
 # Electron FAQ

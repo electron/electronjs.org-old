@@ -2,7 +2,7 @@
 version: v0.36.8
 category: API
 title: 'Browser Window'
-source_url: 'https://github.com/atom/electron/blob/master/docs/api/browser-window.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/api/browser-window.md'
 ---
 
 # BrowserWindow

@@ -2,7 +2,7 @@
 version: v0.31.0
 category: Tutorial
 title: 'Debugging Main Process Es'
-source_url: 'https://github.com/atom/electron/blob/master/docs/tutorial/debugging-main-process-es.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/debugging-main-process-es.md'
 ---
 
 # Depurando el proceso principal

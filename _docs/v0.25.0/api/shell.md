@@ -2,7 +2,7 @@
 version: v0.25.0
 category: API
 title: Shell
-source_url: 'https://github.com/atom/electron/blob/master/docs/api/shell.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/api/shell.md'
 ---
 
 # shell

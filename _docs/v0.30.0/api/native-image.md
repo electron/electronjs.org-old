@@ -2,7 +2,7 @@
 version: v0.30.0
 category: API
 title: 'Native Image'
-source_url: 'https://github.com/atom/electron/blob/master/docs/api/native-image.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/api/native-image.md'
 ---
 
 # NativeImage

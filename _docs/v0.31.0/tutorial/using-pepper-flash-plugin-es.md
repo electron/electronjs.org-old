@@ -2,7 +2,7 @@
 version: v0.31.0
 category: Tutorial
 title: 'Using Pepper Flash Plugin Es'
-source_url: 'https://github.com/atom/electron/blob/master/docs/tutorial/using-pepper-flash-plugin-es.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/using-pepper-flash-plugin-es.md'
 ---
 
 # Utilizando el plugin Pepper Flash

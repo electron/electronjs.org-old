@@ -2,7 +2,7 @@
 version: v0.37.0
 category: Tutorial
 title: 'Quick Start'
-source_url: 'https://github.com/atom/electron/blob/master/docs/tutorial/quick-start.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/quick-start.md'
 ---
 
 # Quick Start
@@ -191,7 +191,7 @@ $ ./Electron.app/Contents/MacOS/Electron your-app/
 ```
 
 `Electron.app` here is part of the Electron's release package, you can download
-it from [here](https://github.com/atom/electron/releases).
+it from [here](https://github.com/electron/electron/releases).
 
 ### Run as a distribution
 
@@ -201,14 +201,14 @@ and then executing the packaged app.
 
 ### Try this Example
 
-Clone and run the code in this tutorial by using the [`atom/electron-quick-start`](https://github.com/atom/electron-quick-start)
+Clone and run the code in this tutorial by using the [`atom/electron-quick-start`](https://github.com/electron/electron-quick-start)
 repository.
 
 **Note**: Running this requires [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which includes [npm](https://npmjs.org)) on your system.
 
 ```bash
 # Clone the repository
-$ git clone https://github.com/atom/electron-quick-start
+$ git clone https://github.com/electron/electron-quick-start
 # Go into the repository
 $ cd electron-quick-start
 # Install dependencies and run the app

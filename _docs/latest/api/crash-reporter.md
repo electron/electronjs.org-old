@@ -2,7 +2,7 @@
 version: v0.37.4
 category: API
 title: 'Crash Reporter'
-source_url: 'https://github.com/atom/electron/blob/master/docs/api/crash-reporter.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/api/crash-reporter.md'
 ---
 
 # crashReporter
@@ -27,7 +27,7 @@ For setting up a server to accept and process crash reports, you can use
 following projects:
 
 * [socorro](https://github.com/mozilla/socorro)
-* [mini-breakpad-server](https://github.com/atom/mini-breakpad-server)
+* [mini-breakpad-server](https://github.com/electron/mini-breakpad-server)
 
 ## Methods
 

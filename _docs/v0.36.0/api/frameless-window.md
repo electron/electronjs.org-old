@@ -2,7 +2,7 @@
 version: v0.36.0
 category: API
 title: 'Frameless Window'
-source_url: 'https://github.com/atom/electron/blob/master/docs/api/frameless-window.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/api/frameless-window.md'
 ---
 
 # Frameless Window

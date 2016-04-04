@@ -2,7 +2,7 @@
 version: v0.29.0
 category: Tutorial
 title: 'Using Native Node Modules Ko'
-source_url: 'https://github.com/atom/electron/blob/master/docs/tutorial/using-native-node-modules-ko.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/using-native-node-modules-ko.md'
 ---
 
 ﻿# 네이티브 node 모듈 사용하기

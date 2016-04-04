@@ -2,7 +2,7 @@
 version: v0.29.0
 category: Tutorial
 title: 'Application Packaging Ko'
-source_url: 'https://github.com/atom/electron/blob/master/docs/tutorial/application-packaging-ko.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/application-packaging-ko.md'
 ---
 
 # ���ø����̼� ��Ű¡
@@ -157,4 +157,4 @@ $ asar pack app app.asar --unpack *.node
 �� �����ȿ� unpack �ɼǿ��� ������ ���ϵ��� ������ Ǯ�� ���·� ���ԵǾ� �ֽ��ϴ�.
 �������� ���ø����̼��� ������ �� �ݵ��� �ش� ������ ���� �����Ͽ����մϴ�.
 
-[asar]: https://github.com/atom/asar
+[asar]: https://github.com/electron/asar

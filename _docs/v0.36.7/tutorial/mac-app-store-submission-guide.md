@@ -2,7 +2,7 @@
 version: v0.36.7
 category: Tutorial
 title: 'Mac App Store Submission Guide'
-source_url: 'https://github.com/atom/electron/blob/master/docs/tutorial/mac-app-store-submission-guide.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/mac-app-store-submission-guide.md'
 ---
 
 # Mac App Store Submission Guide
@@ -170,5 +170,5 @@ ERN)][ern-tutorial].
 [create-record]: https://developer.apple.com/library/ios/documentation/LanguagesUtilities/Conceptual/iTunesConnect_Guide/Chapters/CreatingiTunesConnectRecord.html
 [submit-for-review]: https://developer.apple.com/library/ios/documentation/LanguagesUtilities/Conceptual/iTunesConnect_Guide/Chapters/SubmittingTheApp.html
 [app-sandboxing]: https://developer.apple.com/app-sandboxing/
-[issue-3871]: https://github.com/atom/electron/issues/3871
+[issue-3871]: https://github.com/electron/electron/issues/3871
 [ern-tutorial]: https://carouselapps.com/2015/12/15/legally-submit-app-apples-app-store-uses-encryption-obtain-ern/

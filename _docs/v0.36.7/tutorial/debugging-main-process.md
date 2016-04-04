@@ -2,7 +2,7 @@
 version: v0.36.7
 category: Tutorial
 title: 'Debugging Main Process'
-source_url: 'https://github.com/atom/electron/blob/master/docs/tutorial/debugging-main-process.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/debugging-main-process.md'
 ---
 
 # Debugging the Main Process

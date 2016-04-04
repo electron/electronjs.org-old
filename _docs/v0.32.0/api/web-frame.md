@@ -2,7 +2,7 @@
 version: v0.32.0
 category: API
 title: 'Web Frame'
-source_url: 'https://github.com/atom/electron/blob/master/docs/api/web-frame.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/api/web-frame.md'
 ---
 
 # webFrame

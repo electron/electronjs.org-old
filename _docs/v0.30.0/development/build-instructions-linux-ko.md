@@ -2,7 +2,7 @@
 version: v0.30.0
 category: Development
 title: 'Build Instructions Linux Ko'
-source_url: 'https://github.com/atom/electron/blob/master/docs/development/build-instructions-linux-ko.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/development/build-instructions-linux-ko.md'
 ---
 
 ﻿# 빌드 설명서 (Linux)
@@ -36,7 +36,7 @@ $ sudo apt-get install build-essential clang libdbus-1-dev libgtk2.0-dev \
 ## 코드 가져오기
 
 ```bash
-$ git clone https://github.com/atom/electron.git
+$ git clone https://github.com/electron/electron.git
 ```
 
 ## 부트 스트랩

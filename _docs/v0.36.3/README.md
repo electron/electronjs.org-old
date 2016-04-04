@@ -2,7 +2,7 @@
 version: v0.36.3
 category: 'Table of Contents'
 title: README
-source_url: 'https://github.com/atom/electron/blob/master/docs/README.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/README.md'
 permalink: /docs/v0.36.3/index.html
 ---
 

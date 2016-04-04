@@ -2,7 +2,7 @@
 version: v0.37.0
 category: API
 title: Clipboard
-source_url: 'https://github.com/atom/electron/blob/master/docs/api/clipboard.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/api/clipboard.md'
 ---
 
 # clipboard

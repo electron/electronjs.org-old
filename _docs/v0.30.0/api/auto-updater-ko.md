@@ -2,14 +2,14 @@
 version: v0.30.0
 category: API
 title: 'Auto Updater Ko'
-source_url: 'https://github.com/atom/electron/blob/master/docs/api/auto-updater-ko.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/api/auto-updater-ko.md'
 ---
 
 ﻿# auto-updater
 
 **This module has only been implemented for OS X.**
 
-Check out [atom/grunt-electron-installer](https://github.com/atom/grunt-electron-installer)
+Check out [atom/grunt-electron-installer](https://github.com/electron/grunt-electron-installer)
 for building a Windows installer for your app.
 
 The `auto-updater` module is a simple wrap around the

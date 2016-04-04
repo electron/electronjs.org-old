@@ -2,7 +2,7 @@
 version: v0.37.4
 category: Tutorial
 title: 'Online Offline Events'
-source_url: 'https://github.com/atom/electron/blob/master/docs/tutorial/online-offline-events.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/online-offline-events.md'
 ---
 
 # Online/Offline Event Detection

@@ -2,7 +2,7 @@
 version: v0.31.0
 category: API
 title: 'Window Open Ko'
-source_url: 'https://github.com/atom/electron/blob/master/docs/api/window-open-ko.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/api/window-open-ko.md'
 ---
 
 ﻿# `window.open` 함수

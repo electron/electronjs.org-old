@@ -2,7 +2,7 @@
 version: v0.36.4
 category: API
 title: Screen
-source_url: 'https://github.com/atom/electron/blob/master/docs/api/screen.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/api/screen.md'
 ---
 
 # screen

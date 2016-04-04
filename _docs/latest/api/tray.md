@@ -2,7 +2,7 @@
 version: v0.37.4
 category: API
 title: Tray
-source_url: 'https://github.com/atom/electron/blob/master/docs/api/tray.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/api/tray.md'
 ---
 
 # Tray

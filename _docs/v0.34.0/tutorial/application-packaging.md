@@ -2,7 +2,7 @@
 version: v0.34.0
 category: Tutorial
 title: 'Application Packaging'
-source_url: 'https://github.com/atom/electron/blob/master/docs/tutorial/application-packaging.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/application-packaging.md'
 ---
 
 # Application Packaging
@@ -168,4 +168,4 @@ After running the command, apart from the `app.asar`, there is also an
 `app.asar.unpacked` folder generated which contains the unpacked files, you
 should copy it together with `app.asar` when shipping it to users.
 
-[asar]: https://github.com/atom/asar
+[asar]: https://github.com/electron/asar

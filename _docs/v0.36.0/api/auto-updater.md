@@ -2,7 +2,7 @@
 version: v0.36.0
 category: API
 title: 'Auto Updater'
-source_url: 'https://github.com/atom/electron/blob/master/docs/api/auto-updater.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/api/auto-updater.md'
 ---
 
 # autoUpdater
@@ -104,5 +104,5 @@ should only be called after `update-downloaded` has been emitted.
 [squirrel-mac]: https://github.com/Squirrel/Squirrel.Mac
 [server-support]: https://github.com/Squirrel/Squirrel.Mac#server-support
 [squirrel-windows]: https://github.com/Squirrel/Squirrel.Windows
-[installer]: https://github.com/atom/grunt-electron-installer
+[installer]: https://github.com/electron/grunt-electron-installer
 [app-user-model-id]: https://msdn.microsoft.com/en-us/library/windows/desktop/dd378459(v=vs.85).aspx

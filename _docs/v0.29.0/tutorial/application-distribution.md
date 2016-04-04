@@ -2,7 +2,7 @@
 version: v0.29.0
 category: Tutorial
 title: 'Application Distribution'
-source_url: 'https://github.com/atom/electron/blob/master/docs/tutorial/application-distribution.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/application-distribution.md'
 ---
 
 # Application distribution
@@ -37,7 +37,7 @@ your distribution that should be delivered to final users.
 ## Packaging your app into a file
 
 Apart from shipping your app by copying all its sources files, you can also
-package your app into an [asar](https://github.com/atom/asar) archive to avoid
+package your app into an [asar](https://github.com/electron/asar) archive to avoid
 exposing your app's source code to users.
 
 To use an `asar` archive to replace the `app` folder, you need to rename the

@@ -2,7 +2,7 @@
 version: v0.36.0
 category: Development
 title: 'Atom Shell vs Node Webkit'
-source_url: 'https://github.com/atom/electron/blob/master/docs/development/atom-shell-vs-node-webkit.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/development/atom-shell-vs-node-webkit.md'
 ---
 
 # Technical Differences Between Electron and NW.js (formerly node-webkit)
@@ -54,4 +54,4 @@ By using the [multi-context](http://strongloop.com/strongblog/whats-new-node-js-
 feature of Node, Electron doesn't introduce a new JavaScript context in web
 pages.
 
-[node-bindings]: https://github.com/atom/electron/tree/master/atom/common
+[node-bindings]: https://github.com/electron/electron/tree/master/atom/common

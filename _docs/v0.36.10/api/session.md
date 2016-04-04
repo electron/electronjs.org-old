@@ -2,7 +2,7 @@
 version: v0.36.10
 category: API
 title: Session
-source_url: 'https://github.com/atom/electron/blob/master/docs/api/session.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/api/session.md'
 ---
 
 # session

@@ -2,7 +2,7 @@
 version: v0.28.0
 category: Development
 title: 'Build Instructions Windows'
-source_url: 'https://github.com/atom/electron/blob/master/docs/development/build-instructions-windows.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/development/build-instructions-windows.md'
 ---
 
 # Build instructions (Windows)
@@ -31,7 +31,7 @@ Studio will come in the future.
 ## Getting the code
 
 ```powershell
-git clone https://github.com/atom/electron.git
+git clone https://github.com/electron/electron.git
 ```
 
 ## Bootstrapping

@@ -2,7 +2,7 @@
 version: v0.31.0
 category: API
 title: 'Menu Ko'
-source_url: 'https://github.com/atom/electron/blob/master/docs/api/menu-ko.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/api/menu-ko.md'
 ---
 
 ﻿# menu
@@ -34,7 +34,7 @@ window.addEventListener('contextmenu', function (e) {
 
 다음 예제는 template API를 활용하여 어플리케이션 메뉴를 만드는 간단한 예제입니다:
 
-**Windows 와 Linux 주의:** 각 메뉴 아이템의 `selector` 멤버는 Mac 운영체제 전용입니다. [Accelerator 옵션](https://github.com/atom/electron/blob/master/docs/api/accelerator-ko.md)
+**Windows 와 Linux 주의:** 각 메뉴 아이템의 `selector` 멤버는 Mac 운영체제 전용입니다. [Accelerator 옵션](https://github.com/electron/electron/blob/master/docs/api/accelerator-ko.md)
 
 ```html
 <!-- index.html -->

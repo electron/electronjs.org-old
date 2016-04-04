@@ -2,7 +2,7 @@
 version: v0.33.0
 category: API
 title: 'Ipc Main Process'
-source_url: 'https://github.com/atom/electron/blob/master/docs/api/ipc-main-process.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/api/ipc-main-process.md'
 ---
 
 # ipc (main process)

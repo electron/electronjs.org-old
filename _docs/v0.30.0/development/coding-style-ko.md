@@ -2,7 +2,7 @@
 version: v0.30.0
 category: Development
 title: 'Coding Style Ko'
-source_url: 'https://github.com/atom/electron/blob/master/docs/development/coding-style-ko.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/development/coding-style-ko.md'
 ---
 
 ﻿# 코딩 스타일
@@ -26,4 +26,4 @@ CoffeeScript의 경우 GitHub의 [스타일 가이드](https://github.com/styleg
 
 새로운 API를 만들 땐 getter, setter스타일 대신 jQuery의 one-function스타일을 사용해야 합니다. 예를 들어
 `.getText()`와 `.setText(text)`대신에 `.text([text])`형식으로 설계하면 됩니다.
-포럼에 이 문제에 대한 [논의](https://github.com/atom/electron/issues/46)가 있습니다.
+포럼에 이 문제에 대한 [논의](https://github.com/electron/electron/issues/46)가 있습니다.

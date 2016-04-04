@@ -2,7 +2,7 @@
 version: v0.31.0
 category: Tutorial
 title: 'Quick Start Ko'
-source_url: 'https://github.com/atom/electron/blob/master/docs/tutorial/quick-start-ko.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/quick-start-ko.md'
 ---
 
 ﻿# 시작하기
@@ -177,7 +177,7 @@ $ ./Electron.app/Contents/MacOS/Electron your-app/
 ```
 
 앱 실행파일은 `Electron`의 release 패키지에 포함되어 있습니다.
-[여기](https://github.com/atom/electron/releases)에서 다운로드 받을 수 있습니다.
+[여기](https://github.com/electron/electron/releases)에서 다운로드 받을 수 있습니다.
 
 ### 배포용 파일 만들기
 

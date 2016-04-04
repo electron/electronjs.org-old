@@ -2,7 +2,7 @@
 version: v0.36.4
 category: Tutorial
 title: 'Mac App Store Submission Guide'
-source_url: 'https://github.com/atom/electron/blob/master/docs/tutorial/mac-app-store-submission-guide.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/mac-app-store-submission-guide.md'
 ---
 
 # Mac App Store Submission Guide

@@ -2,7 +2,7 @@
 version: v0.24.0
 category: Tutorial
 title: 'Using Selenium and Webdriver'
-source_url: 'https://github.com/atom/electron/blob/master/docs/tutorial/using-selenium-and-webdriver.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/using-selenium-and-webdriver.md'
 ---
 
 # Using Selenium and WebDriver
@@ -15,7 +15,7 @@ From [ChromeDriver - WebDriver for Chrome][chrome-driver]:
 > implements WebDriver's wire protocol for Chromium. It is being developed by
 > members of the Chromium and WebDriver teams.
 
-In Electron's [releases](https://github.com/atom/electron/releases) page you
+In Electron's [releases](https://github.com/electron/electron/releases) page you
 can find archives of `chromedriver`, there is no difference between Electron's
 distribution of `chromedriver` and upstream ones, so in order to use
 `chromedriver` together with Electron, you will need some special setup.
