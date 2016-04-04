@@ -2,7 +2,7 @@
 version: v0.36.10
 category: API
 title: 'Web Contents'
-source_url: 'https://github.com/atom/electron/blob/master/docs/api/web-contents.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/api/web-contents.md'
 ---
 
 # webContents

@@ -2,7 +2,7 @@
 version: v0.37.4
 category: Tutorial
 title: 'Testing on Headless Ci'
-source_url: 'https://github.com/atom/electron/blob/master/docs/tutorial/testing-on-headless-ci.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/testing-on-headless-ci.md'
 ---
 
 # Testing Electron with headless CI Systems (Travis CI, Jenkins)

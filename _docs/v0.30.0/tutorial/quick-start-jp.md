@@ -2,7 +2,7 @@
 version: v0.30.0
 category: Tutorial
 title: 'Quick Start Jp'
-source_url: 'https://github.com/atom/electron/blob/master/docs/tutorial/quick-start-jp.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/quick-start-jp.md'
 ---
 
 # クイックスタート
@@ -135,4 +135,4 @@ OS Xの場合：
 $ ./Electron.app/Contents/MacOS/Electron your-app/
 ```
 
-`Electron.app` はElectronのリリースパッケージに含まれており、[ここ](https://github.com/atom/electron/releases) からダウンロードできます。
+`Electron.app` はElectronのリリースパッケージに含まれており、[ここ](https://github.com/electron/electron/releases) からダウンロードできます。

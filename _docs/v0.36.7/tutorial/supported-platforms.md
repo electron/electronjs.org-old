@@ -2,7 +2,7 @@
 version: v0.36.7
 category: Tutorial
 title: 'Supported Platforms'
-source_url: 'https://github.com/atom/electron/blob/master/docs/tutorial/supported-platforms.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/supported-platforms.md'
 ---
 
 # Supported Platforms

@@ -2,7 +2,7 @@
 version: v0.29.0
 category: Tutorial
 title: 'Application Packaging Ko'
-source_url: 'https://github.com/atom/electron/blob/master/docs/tutorial/application-packaging-ko.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/application-packaging-ko.md'
 ---
 
 # ���ø����̼� ��Ű¡

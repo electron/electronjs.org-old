@@ -2,7 +2,7 @@
 version: v0.31.0
 category: API
 title: 'Frameless Window Ko'
-source_url: 'https://github.com/atom/electron/blob/master/docs/api/frameless-window-ko.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/api/frameless-window-ko.md'
 ---
 
 # Frameless 윈도우

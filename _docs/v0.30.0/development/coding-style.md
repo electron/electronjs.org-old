@@ -2,7 +2,7 @@
 version: v0.30.0
 category: Development
 title: 'Coding Style'
-source_url: 'https://github.com/atom/electron/blob/master/docs/development/coding-style.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/development/coding-style.md'
 ---
 
 # Coding style
@@ -32,4 +32,4 @@ Guide](https://github.com/styleguide/javascript), and also following rules:
 When creating a new API, we should prefer getters and setters instead of
 jQuery's one-function style, for example, `.getText()` and `.setText(text)`
 are preferred to `.text([text])`. There is a
-[discussion](https://github.com/atom/electron/issues/46) of this.
+[discussion](https://github.com/electron/electron/issues/46) of this.

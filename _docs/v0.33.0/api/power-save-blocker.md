@@ -2,7 +2,7 @@
 version: v0.33.0
 category: API
 title: 'Power Save Blocker'
-source_url: 'https://github.com/atom/electron/blob/master/docs/api/power-save-blocker.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/api/power-save-blocker.md'
 ---
 
 # powerSaveBlocker

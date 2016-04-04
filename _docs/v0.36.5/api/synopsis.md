@@ -2,7 +2,7 @@
 version: v0.36.5
 category: API
 title: Synopsis
-source_url: 'https://github.com/atom/electron/blob/master/docs/api/synopsis.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/api/synopsis.md'
 ---
 
 # Synopsis
@@ -87,4 +87,4 @@ require('electron').hideInternalModules()
 
 [gui]: https://en.wikipedia.org/wiki/Graphical_user_interface
 [desctructuring-assignment]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
-[issue-387]: https://github.com/atom/electron/issues/387
+[issue-387]: https://github.com/electron/electron/issues/387

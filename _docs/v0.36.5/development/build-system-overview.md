@@ -2,7 +2,7 @@
 version: v0.36.5
 category: Development
 title: 'Build System Overview'
-source_url: 'https://github.com/atom/electron/blob/master/docs/development/build-system-overview.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/development/build-system-overview.md'
 ---
 
 # Build System Overview

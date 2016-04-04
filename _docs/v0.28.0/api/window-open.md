@@ -2,7 +2,7 @@
 version: v0.28.0
 category: API
 title: 'Window Open'
-source_url: 'https://github.com/atom/electron/blob/master/docs/api/window-open.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/api/window-open.md'
 ---
 
 # `window.open` function

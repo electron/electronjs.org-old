@@ -2,7 +2,7 @@
 version: v0.36.6
 category: Tutorial
 title: 'Using Widevine Cdm Plugin'
-source_url: 'https://github.com/atom/electron/blob/master/docs/tutorial/using-widevine-cdm-plugin.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/using-widevine-cdm-plugin.md'
 ---
 
 # Using Widevine CDM Plugin

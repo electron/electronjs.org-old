@@ -2,7 +2,7 @@
 version: v0.31.0
 category: Tutorial
 title: 'Devtools Extension Es'
-source_url: 'https://github.com/atom/electron/blob/master/docs/tutorial/devtools-extension-es.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/devtools-extension-es.md'
 ---
 
 # Extensión DevTools

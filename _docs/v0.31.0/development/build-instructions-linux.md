@@ -2,7 +2,7 @@
 version: v0.31.0
 category: Development
 title: 'Build Instructions Linux'
-source_url: 'https://github.com/atom/electron/blob/master/docs/development/build-instructions-linux.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/development/build-instructions-linux.md'
 ---
 
 # Build instructions (Linux)
@@ -38,7 +38,7 @@ device container of at least 25 gigabytes in size.
 ## Getting the code
 
 ```bash
-$ git clone https://github.com/atom/electron.git
+$ git clone https://github.com/electron/electron.git
 ```
 
 ## Bootstrapping

@@ -2,7 +2,7 @@
 version: v0.36.7
 category: Development
 title: 'Source Code Directory Structure'
-source_url: 'https://github.com/atom/electron/blob/master/docs/development/source-code-directory-structure.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/development/source-code-directory-structure.md'
 ---
 
 # Source Code Directory Structure

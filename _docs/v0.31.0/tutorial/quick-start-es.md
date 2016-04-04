@@ -2,7 +2,7 @@
 version: v0.31.0
 category: Tutorial
 title: 'Quick Start Es'
-source_url: 'https://github.com/atom/electron/blob/master/docs/tutorial/quick-start-es.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/quick-start-es.md'
 ---
 
 # Intro
@@ -158,4 +158,4 @@ En OS X:
 $ ./Electron.app/Contents/MacOS/Electron your-app/
 ```
 
-`Electron.app` es parte del paquete de release de Electron, puedes descargarlo [aquí](https://github.com/atom/electron/releases).
+`Electron.app` es parte del paquete de release de Electron, puedes descargarlo [aquí](https://github.com/electron/electron/releases).

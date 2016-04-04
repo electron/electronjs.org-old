@@ -2,7 +2,7 @@
 version: v0.36.8
 category: API
 title: Remote
-source_url: 'https://github.com/atom/electron/blob/master/docs/api/remote.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/api/remote.md'
 ---
 
 # remote

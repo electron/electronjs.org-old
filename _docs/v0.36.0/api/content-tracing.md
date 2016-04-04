@@ -2,7 +2,7 @@
 version: v0.36.0
 category: API
 title: 'Content Tracing'
-source_url: 'https://github.com/atom/electron/blob/master/docs/api/content-tracing.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/api/content-tracing.md'
 ---
 
 # contentTracing

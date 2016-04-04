@@ -2,7 +2,7 @@
 version: v0.29.0
 category: API
 title: 'Power Monitor Ko'
-source_url: 'https://github.com/atom/electron/blob/master/docs/api/power-monitor-ko.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/api/power-monitor-ko.md'
 ---
 
 # power-monitor

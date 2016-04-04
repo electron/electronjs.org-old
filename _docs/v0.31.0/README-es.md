@@ -2,7 +2,7 @@
 version: v0.31.0
 category: 'Table of Contents'
 title: 'README Es'
-source_url: 'https://github.com/atom/electron/blob/master/docs/README-es.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/README-es.md'
 ---
 
 ## Guías

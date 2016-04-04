@@ -2,7 +2,7 @@
 version: v0.33.0
 category: Development
 title: 'Atom Shell vs Node Webkit'
-source_url: 'https://github.com/atom/electron/blob/master/docs/development/atom-shell-vs-node-webkit.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/development/atom-shell-vs-node-webkit.md'
 ---
 
 # Technical Differences Between Electron and NW.js (formerly node-webkit)

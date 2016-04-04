@@ -2,7 +2,7 @@
 version: v0.29.0
 category: Tutorial
 title: 'Using Pepper Flash Plugin Ko'
-source_url: 'https://github.com/atom/electron/blob/master/docs/tutorial/using-pepper-flash-plugin-ko.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/using-pepper-flash-plugin-ko.md'
 ---
 
 # Pepper �÷��� �÷����� �����ϱ�

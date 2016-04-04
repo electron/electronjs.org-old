@@ -2,7 +2,7 @@
 version: v0.30.0
 category: API
 title: 'Global Shortcut Ko'
-source_url: 'https://github.com/atom/electron/blob/master/docs/api/global-shortcut-ko.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/api/global-shortcut-ko.md'
 ---
 
 ﻿# global-shortcut

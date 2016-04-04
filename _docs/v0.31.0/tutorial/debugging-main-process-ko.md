@@ -2,7 +2,7 @@
 version: v0.31.0
 category: Tutorial
 title: 'Debugging Main Process Ko'
-source_url: 'https://github.com/atom/electron/blob/master/docs/tutorial/debugging-main-process-ko.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/debugging-main-process-ko.md'
 ---
 
 ﻿# 메인 프로세스 디버깅하기

@@ -2,7 +2,7 @@
 version: v0.31.0
 category: Development
 title: 'Setting Up Symbol Server Ko'
-source_url: 'https://github.com/atom/electron/blob/master/docs/development/setting-up-symbol-server-ko.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/development/setting-up-symbol-server-ko.md'
 ---
 
 # 디버거에서 디버그 심볼 서버 설정

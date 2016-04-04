@@ -2,7 +2,7 @@
 version: v0.30.0
 category: Tutorial
 title: 'Application Distribution Ko'
-source_url: 'https://github.com/atom/electron/blob/master/docs/tutorial/application-distribution-ko.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/application-distribution-ko.md'
 ---
 
 ﻿# 어플리케이션 배포

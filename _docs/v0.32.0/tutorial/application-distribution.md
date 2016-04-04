@@ -2,7 +2,7 @@
 version: v0.32.0
 category: Tutorial
 title: 'Application Distribution'
-source_url: 'https://github.com/atom/electron/blob/master/docs/tutorial/application-distribution.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/application-distribution.md'
 ---
 
 # Application Distribution

@@ -2,7 +2,7 @@
 version: v0.32.0
 category: Tutorial
 title: 'Using Selenium and Webdriver'
-source_url: 'https://github.com/atom/electron/blob/master/docs/tutorial/using-selenium-and-webdriver.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/using-selenium-and-webdriver.md'
 ---
 
 # Using Selenium and WebDriver
@@ -123,7 +123,7 @@ client
 ## Workflow
 
 To test your application without rebuilding Electron, simply
-[place](https://github.com/atom/electron/blob/master/docs/tutorial/application-distribution.md)
+[place](https://github.com/electron/electron/blob/master/docs/tutorial/application-distribution.md)
 your app source into Electron's resource directory.
 
 [chrome-driver]: https://sites.google.com/a/chromium.org/chromedriver/

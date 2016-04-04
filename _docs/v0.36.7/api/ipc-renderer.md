@@ -2,7 +2,7 @@
 version: v0.36.7
 category: API
 title: 'Ipc Renderer'
-source_url: 'https://github.com/atom/electron/blob/master/docs/api/ipc-renderer.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/api/ipc-renderer.md'
 ---
 
 # ipcRenderer

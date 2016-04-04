@@ -1,6 +1,6 @@
 # electron.atom.io
 
-The [website](http://electron.atom.io) for [Electron](https://github.com/atom/electron) (formerly known as Atom-Shell).
+The [website](http://electron.atom.io) for [Electron](https://github.com/electron/electron) (formerly known as Atom-Shell).
 
 ### Build
 
@@ -13,7 +13,7 @@ $ gem install bundler
 Follow these steps to copy this repository to your computer and build the site:
 
 ```bash
-$ git clone https://github.com/atom/electron.atom.io.git
+$ git clone https://github.com/electron/electron.atom.io.git
 $ cd electron.atom.io
 $ script/bootstrap
 $ script/server
@@ -34,7 +34,7 @@ $ npm install
 
 #### Versioned Documentation
 
-Versions of Electron documentation are fetched from the `atom/electron` repository's `docs` directory. To fetch documentation at a specific version:
+Versions of Electron documentation are fetched from the `electron/electron` repository's `docs` directory. To fetch documentation at a specific version:
 
 ```bash
 $ script/docs <version> [options]
@@ -47,7 +47,7 @@ Options:
 
 #### Release Notes
 
-The most recent release notes from the `atom/electron` repository are made available on the site and can be updated by running:
+The most recent release notes from the `electron/electron` repository are made available on the site and can be updated by running:
 
 ```bash
 $ script/releases

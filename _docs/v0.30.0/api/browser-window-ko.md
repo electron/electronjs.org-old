@@ -2,7 +2,7 @@
 version: v0.30.0
 category: API
 title: 'Browser Window Ko'
-source_url: 'https://github.com/atom/electron/blob/master/docs/api/browser-window-ko.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/api/browser-window-ko.md'
 ---
 
 ﻿# browser-window

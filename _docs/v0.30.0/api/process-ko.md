@@ -2,7 +2,7 @@
 version: v0.30.0
 category: API
 title: 'Process Ko'
-source_url: 'https://github.com/atom/electron/blob/master/docs/api/process-ko.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/api/process-ko.md'
 ---
 
 ﻿# 프로세스 객체

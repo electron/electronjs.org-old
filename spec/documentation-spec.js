@@ -33,7 +33,7 @@ test('Fetch and write documentation with latest flag', function (t) {
     var expectedPermalink = '/docs/' + settings.version + '/index.html'
     t.equal(readmeFM.permalink, expectedPermalink, 'Frontmatter: Adds permalink to README.')
 
-    var expectedSourceUrl = 'https://github.com/atom/electron/blob/master/docs/README.md'
+    var expectedSourceUrl = 'https://github.com/electron/electron/blob/master/docs/README.md'
     t.equal(readmeFM.source_url, expectedSourceUrl, 'Frontmatter: Adds file source url')
 
     t.equal(readmeFM.version, settings.version, 'Frontmatter: Adds version.')

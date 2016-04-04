@@ -2,7 +2,7 @@
 version: v0.36.0
 category: API
 title: 'Desktop Capturer'
-source_url: 'https://github.com/atom/electron/blob/master/docs/api/desktop-capturer.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/api/desktop-capturer.md'
 ---
 
 # desktopCapturer

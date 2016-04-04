@@ -2,7 +2,7 @@
 version: v0.36.10
 category: Development
 title: 'Build Instructions Osx'
-source_url: 'https://github.com/atom/electron/blob/master/docs/development/build-instructions-osx.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/development/build-instructions-osx.md'
 ---
 
 # Build Instructions (OS X)
@@ -23,7 +23,7 @@ following python modules:
 ## Getting the Code
 
 ```bash
-$ git clone https://github.com/atom/electron.git
+$ git clone https://github.com/electron/electron.git
 ```
 
 ## Bootstrapping

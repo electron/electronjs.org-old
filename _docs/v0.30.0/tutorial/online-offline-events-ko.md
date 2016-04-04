@@ -2,7 +2,7 @@
 version: v0.30.0
 category: Tutorial
 title: 'Online Offline Events Ko'
-source_url: 'https://github.com/atom/electron/blob/master/docs/tutorial/online-offline-events-ko.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/online-offline-events-ko.md'
 ---
 
 ﻿# 온라인/오프라인 이벤트

@@ -2,7 +2,7 @@
 version: v0.31.0
 category: Development
 title: 'Source Code Directory Structure Ko'
-source_url: 'https://github.com/atom/electron/blob/master/docs/development/source-code-directory-structure-ko.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/development/source-code-directory-structure-ko.md'
 ---
 
 ﻿# 소스 코드 디렉터리 구조

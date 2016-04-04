@@ -2,7 +2,7 @@
 version: v0.29.0
 category: Tutorial
 title: 'Using Selenium and Webdriver Ko'
-source_url: 'https://github.com/atom/electron/blob/master/docs/tutorial/using-selenium-and-webdriver-ko.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/using-selenium-and-webdriver-ko.md'
 ---
 
 ﻿# Selenium 과 WebDriver 사용하기
@@ -14,7 +14,7 @@ source_url: 'https://github.com/atom/electron/blob/master/docs/tutorial/using-se
 > ChromeDriver는 Chromium의 WebDriver wire 프로토콜 스텐드얼론 서버 구현입니다.
 > Chromium 과 WebDriver 팀 멤버에 의해 개발되었습니다.
 
-Electron의 [releases](https://github.com/atom/electron/releases) 페이지에서 `chromedriver` 릴리즈 압축파일을 찾을 수 있습니다.
+Electron의 [releases](https://github.com/electron/electron/releases) 페이지에서 `chromedriver` 릴리즈 압축파일을 찾을 수 있습니다.
 `chromedriver`의 Electron 배포판과 upstream과의 차이는 없습니다.
 `chromedriver`와 Electron을 함께 사용하려면, 몇가지 설정이 필요합니다.
 
@@ -76,6 +76,6 @@ driver.quit();
 ## 작업환경
 
 따로 Electron을 다시 빌드하지 않는다면, 간단히 어플리케이션을 Electron의 리소스 디렉터리에
-[배치](https://github.com/atom/electron/blob/master/docs/tutorial/application-distribution-ko.md)하여 바로 테스트 할 수 있습니다.
+[배치](https://github.com/electron/electron/blob/master/docs/tutorial/application-distribution-ko.md)하여 바로 테스트 할 수 있습니다.
 
 [chrome-driver]: https://sites.google.com/a/chromium.org/chromedriver/

@@ -2,7 +2,7 @@
 version: v0.32.0
 category: 'Table of Contents'
 title: Styleguide
-source_url: 'https://github.com/atom/electron/blob/master/docs/styleguide.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/styleguide.md'
 ---
 
 # Electron Documentation Styleguide

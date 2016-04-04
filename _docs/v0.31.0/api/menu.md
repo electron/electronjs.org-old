@@ -2,7 +2,7 @@
 version: v0.31.0
 category: API
 title: Menu
-source_url: 'https://github.com/atom/electron/blob/master/docs/api/menu.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/api/menu.md'
 ---
 
 # menu
@@ -36,7 +36,7 @@ window.addEventListener('contextmenu', function (e) {
 
 Another example of creating the application menu with the simple template API:
 
-**Note to Window and Linux users** the `selector` member of each menu item is a Mac-only [Accelerator option](https://github.com/atom/electron/blob/master/docs/api/accelerator.md).
+**Note to Window and Linux users** the `selector` member of each menu item is a Mac-only [Accelerator option](https://github.com/electron/electron/blob/master/docs/api/accelerator.md).
 
 ```html
 <!-- index.html -->

@@ -2,7 +2,7 @@
 version: v0.30.0
 category: API
 title: 'Remote Ko'
-source_url: 'https://github.com/atom/electron/blob/master/docs/api/remote-ko.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/api/remote-ko.md'
 ---
 
 ﻿# remote
@@ -27,7 +27,7 @@ var win = new BrowserWindow({ width: 800, height: 600 });
 win.loadUrl('https://github.com');
 ```
 
-Note: for the reverse (access renderer process from main process), you can use [webContents.executeJavascript](https://github.com/atom/electron/blob/master/docs/api/browser-window-ko.md#browserwindowwebcontents).
+Note: for the reverse (access renderer process from main process), you can use [webContents.executeJavascript](https://github.com/electron/electron/blob/master/docs/api/browser-window-ko.md#browserwindowwebcontents).
 
 ## Remote objects
 

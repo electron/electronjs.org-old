@@ -2,7 +2,7 @@
 version: v0.31.0
 category: Tutorial
 title: 'Devtools Extension Ko'
-source_url: 'https://github.com/atom/electron/blob/master/docs/tutorial/devtools-extension-ko.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/devtools-extension-ko.md'
 ---
 
 ﻿# 개발자 콘솔 확장

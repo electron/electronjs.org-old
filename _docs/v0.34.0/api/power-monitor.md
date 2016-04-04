@@ -2,7 +2,7 @@
 version: v0.34.0
 category: API
 title: 'Power Monitor'
-source_url: 'https://github.com/atom/electron/blob/master/docs/api/power-monitor.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/api/power-monitor.md'
 ---
 
 # power-monitor

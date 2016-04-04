@@ -2,7 +2,7 @@
 version: v0.36.4
 category: Tutorial
 title: 'Application Packaging'
-source_url: 'https://github.com/atom/electron/blob/master/docs/tutorial/application-packaging.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/application-packaging.md'
 ---
 
 # Application Packaging

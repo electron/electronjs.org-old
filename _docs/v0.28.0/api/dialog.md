@@ -2,7 +2,7 @@
 version: v0.28.0
 category: API
 title: Dialog
-source_url: 'https://github.com/atom/electron/blob/master/docs/api/dialog.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/api/dialog.md'
 ---
 
 # dialog

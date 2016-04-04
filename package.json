@@ -1,15 +1,15 @@
 {
   "name": "electron.atom.io",
   "version": "1.0.0",
-  "description": "The [website](http://electron.atom.io) for [Electron](https://github.com/atom/electron) (formerly known as Atom-Shell).",
+  "description": "The [website](http://electron.atom.io) for [Electron](https://github.com/electron/electron) (formerly known as Atom-Shell).",
   "repository": {
     "type": "git",
-    "url": "https://github.com/atom/electron.atom.io.git"
+    "url": "https://github.com/electron/electron.atom.io.git"
   },
   "author": "GitHub",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/atom/electron.atom.io/issues"
+    "url": "https://github.com/electron/electron.atom.io/issues"
   },
   "scripts": {
     "test": "tape spec/*.js | tap-spec",
