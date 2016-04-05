@@ -4,12 +4,8 @@ The [website](http://electron.atom.io) for [Electron](https://github.com/atom/el
 
 ### Build
 
-This is a [Jekyll](http://jekyllrb.com) site hosted on [GitHub Pages](http://pages.github.com). To build a Jekyll site you'll need a few things on your system so double check the [Jekyll requirements](http://jekyllrb.com/docs/installation/#requirements). In addition to those, you'll need these Ruby gems:
+This is a [Jekyll](http://jekyllrb.com) site hosted on [GitHub Pages](http://pages.github.com). To build a Jekyll site you'll need a few things on your system so double check the [Jekyll requirements](http://jekyllrb.com/docs/installation/#requirements).
 
-```bash
-$ gem install jekyll
-$ gem install bundler
-```
 Follow these steps to copy this repository to your computer and build the site:
 
 ```bash

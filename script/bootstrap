@@ -3,4 +3,5 @@
 #
 # Run the jekyll server
 
+gem install bundler
 bundle install
