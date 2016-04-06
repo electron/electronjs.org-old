@@ -544,153 +544,139 @@
     "description": "",
     "website": "http://moose-team.github.io/friends",
     "repository": "",
-    "keywords": [
-      "open-source"
-    ],
+    "keywords": [],
     "license": "",
-    "icon": ""
+    "icon": "",
+    "featuredOpenSource": true
   },
   {
     "name": "Hearthdash",
     "description": "",
     "website": "https://github.com/postcasio/hearthdash",
     "repository": "",
-    "keywords": [
-      "open-source"
-    ],
+    "keywords": [],
     "license": "",
-    "icon": ""
+    "icon": "",
+    "featuredOpenSource": true
   },
   {
     "name": "Kart",
     "description": "",
     "website": "https://github.com/maddox/kart",
     "repository": "",
-    "keywords": [
-      "open-source"
-    ],
+    "keywords": [],
     "license": "",
-    "icon": ""
+    "icon": "",
+    "featuredOpenSource": true
   },
   {
     "name": "Mancy",
     "description": "",
     "website": "https://github.com/princejwesley/Mancy",
     "repository": "",
-    "keywords": [
-      "open-source"
-    ],
+    "keywords": [],
     "license": "",
-    "icon": ""
+    "icon": "",
+    "featuredOpenSource": true
   },
   {
     "name": "Monu",
     "description": "",
     "website": "https://github.com/maxogden/monu",
     "repository": "",
-    "keywords": [
-      "open-source"
-    ],
+    "keywords": [],
     "license": "",
-    "icon": ""
+    "icon": "",
+    "featuredOpenSource": true
   },
   {
     "name": "Mojibar",
     "description": "",
     "website": "https://github.com/muan/mojibar",
     "repository": "",
-    "keywords": [
-      "open-source"
-    ],
+    "keywords": [],
     "license": "",
-    "icon": ""
+    "icon": "",
+    "featuredOpenSource": true
   },
   {
     "name": "Chronocube",
     "description": "",
     "website": "https://github.com/pablopunk/chronocube",
     "repository": "",
-    "keywords": [
-      "open-source"
-    ],
+    "keywords": [],
     "license": "",
-    "icon": ""
+    "icon": "",
+    "featuredOpenSource": true
   },
   {
     "name": "Light Table",
     "description": "",
     "website": "http://lighttable.com",
     "repository": "",
-    "keywords": [
-      "open-source"
-    ],
+    "keywords": [],
     "license": "",
-    "icon": ""
+    "icon": "",
+    "featuredOpenSource": true
   },
   {
     "name": "Playback",
     "description": "",
     "website": "https://github.com/mafintosh/playback",
     "repository": "",
-    "keywords": [
-      "open-source"
-    ],
+    "keywords": [],
     "license": "",
-    "icon": ""
+    "icon": "",
+    "featuredOpenSource": true
   },
   {
     "name": "ScreenCat",
     "description": "",
     "website": "https://github.com/maxogden/screencat",
     "repository": "",
-    "keywords": [
-      "open-source"
-    ],
+    "keywords": [],
     "license": "",
-    "icon": ""
+    "icon": "",
+    "featuredOpenSource": true
   },
   {
     "name": "Geojsonapp",
     "description": "",
     "website": "https://github.com/mick/geojsonapp",
     "repository": "",
-    "keywords": [
-      "open-source"
-    ],
+    "keywords": [],
     "license": "",
-    "icon": ""
+    "icon": "",
+    "featuredOpenSource": true
   },
   {
     "name": "Menubar",
     "description": "",
     "website": "https://github.com/maxogden/menubar",
     "repository": "",
-    "keywords": [
-      "open-source"
-    ],
+    "keywords": [],
     "license": "",
-    "icon": ""
+    "icon": "",
+    "featuredOpenSource": true
   },
   {
     "name": "Yeoman App",
     "description": "",
     "website": "https://github.com/yeoman/yeoman-app",
     "repository": "",
-    "keywords": [
-      "open-source"
-    ],
+    "keywords": [],
     "license": "",
-    "icon": ""
+    "icon": "",
+    "featuredOpenSource": true
   },
   {
     "name": "Laverna",
     "description": "",
     "website": "https://laverna.cc",
     "repository": "",
-    "keywords": [
-      "open-source"
-    ],
+    "keywords": [],
     "license": "",
-    "icon": ""
+    "icon": "",
+    "featuredOpenSource": true
   }
 ]
