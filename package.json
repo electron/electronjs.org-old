@@ -33,6 +33,7 @@
     "yamljs": "^0.2.3"
   },
   "devDependencies": {
+    "cheerio": "^0.20.0",
     "grunt": "^0.4.5",
     "grunt-cli": "^0.1.13",
     "grunt-link-checker": "^0.1.0",
