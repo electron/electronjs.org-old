@@ -16,18 +16,19 @@ The following is a set of guidelines for contributing to electron.atom.io on Git
 
 If you have an Electron application or project you'd like to see added, please open a pull request!
 
-Add your app to the list by editing [_data/apps.json](/_data/apps.json). **Please add your app at the bottom of the list**.  The only required fields are `name`, `website`, and `icon`. Everything else is optional, but recommended. If your app doesn't have a website, you can specify a `repository` URL instead.
+Add your app to the list by editing [_data/apps.yml](/_data/apps.yml). **Please add your app at the bottom of the list**.  The only required fields are `name`, `website`, and `icon`. Everything else is optional, but recommended. If your app doesn't have a website, you can specify a `repository` URL instead.
 
-```json
-{
-  "name": "Your App",
-  "description": "A few words about your app",
-  "website": "https://yourapp.com",
-  "repository": "https://github.com/your/app",
-  "keywords": ["friends", "music"],
-  "license": "MIT",
-  "icon": "lowercase-and-url-friendly.png"
-}
+```yml
+-
+  name: "Your App"
+  description: "A few words about your app"
+  website: "https://yourapp.com"
+  repository: "https://github.com/your/app"
+  keywords:
+    - "friends"
+    - "music"
+  license: "MIT"
+  icon: "lowercase-and-url-friendly.png"
 ```
 
 ## Documentation
