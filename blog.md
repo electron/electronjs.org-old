@@ -1,4 +1,6 @@
 ---
+layout: page
+title: Electron Blog
 permalink: blog/
 ---
 
