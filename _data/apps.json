@@ -1,16 +1,17 @@
 [
   {
     "name": "Atom",
-    "description": "",
+    "description": "A hackable text editor
+for the 21st Century",
     "website": "https://atom.io",
-    "repository": "",
-    "keywords": [],
-    "license": "",
+    "repository": "https://github.com/atom/atom",
+    "keywords": ["web development", "writing", "editor", "programming", "git", "github"],
+    "license": "MIT",
     "icon": "atom.png"
   },
   {
     "name": "Slack",
-    "description": "",
+    "description": "A messaging app for teams",
     "website": "https://slack.com",
     "repository": "",
     "keywords": [],
@@ -19,16 +20,16 @@
   },
   {
     "name": "Visual Studio Code",
-    "description": "",
+    "description": "Open source code editor developed by Microsoft",
     "website": "https://code.visualstudio.com",
     "repository": "",
     "keywords": [],
-    "license": "",
+    "license": "MIT",
     "icon": "vscode.png"
   },
   {
     "name": "Hive",
-    "description": "",
+    "description": "Home for busy teams",
     "website": "https://hiveteams.com",
     "repository": "",
     "keywords": [],
@@ -463,7 +464,7 @@
     "description": "",
     "website": "http://superpowers-html5.com/",
     "repository": "",
-    "keywords": [],
+    "keywords": ["games"],
     "license": "",
     "icon": "superpowers.png"
   },
@@ -541,7 +542,7 @@
   },
   {
     "name": "Friends",
-    "description": "",
+    "description": "Peer to peer chat",
     "website": "http://moose-team.github.io/friends",
     "repository": "",
     "keywords": [],
@@ -551,7 +552,7 @@
   },
   {
     "name": "Hearthdash",
-    "description": "",
+    "description": "Hearthstone tracker",
     "website": "https://github.com/postcasio/hearthdash",
     "repository": "",
     "keywords": [],
@@ -561,17 +562,17 @@
   },
   {
     "name": "Kart",
-    "description": "",
+    "description": "A frontend to the multi-emulating system RetroArch",
     "website": "https://github.com/maddox/kart",
     "repository": "",
-    "keywords": [],
+    "keywords": ["games", "emulator"],
     "license": "",
     "icon": "",
     "featuredOpenSource": true
   },
   {
     "name": "Mancy",
-    "description": "",
+    "description": "Node.js interactive REPL",
     "website": "https://github.com/princejwesley/Mancy",
     "repository": "",
     "keywords": [],
@@ -581,7 +582,7 @@
   },
   {
     "name": "Monu",
-    "description": "",
+    "description": "Process monitoring menubar app",
     "website": "https://github.com/maxogden/monu",
     "repository": "",
     "keywords": [],
@@ -591,7 +592,7 @@
   },
   {
     "name": "Mojibar",
-    "description": "",
+    "description": "Emoji searcher",
     "website": "https://github.com/muan/mojibar",
     "repository": "",
     "keywords": [],
@@ -601,80 +602,80 @@
   },
   {
     "name": "Chronocube",
-    "description": "",
+    "description": "Rubik's cube timer",
     "website": "https://github.com/pablopunk/chronocube",
     "repository": "",
-    "keywords": [],
+    "keywords": ["games"],
     "license": "",
     "icon": "",
     "featuredOpenSource": true
   },
   {
     "name": "Light Table",
-    "description": "",
+    "description": "Customizable IDE",
     "website": "http://lighttable.com",
     "repository": "",
-    "keywords": [],
+    "keywords": ["writing", "web development", "editor"],
     "license": "",
     "icon": "",
     "featuredOpenSource": true
   },
   {
     "name": "Playback",
-    "description": "",
+    "description": "Experimental video player",
     "website": "https://github.com/mafintosh/playback",
     "repository": "",
-    "keywords": [],
+    "keywords": ["video", "player", "audio"],
     "license": "",
     "icon": "",
     "featuredOpenSource": true
   },
   {
     "name": "ScreenCat",
-    "description": "",
+    "description": "WebRTC screensharing",
     "website": "https://github.com/maxogden/screencat",
     "repository": "",
-    "keywords": [],
+    "keywords": ["screensharing", "collaboration", "WebRTC"],
     "license": "",
     "icon": "",
     "featuredOpenSource": true
   },
   {
     "name": "Geojsonapp",
-    "description": "",
+    "description": "Preview geojson files",
     "website": "https://github.com/mick/geojsonapp",
     "repository": "",
-    "keywords": [],
+    "keywords": ["maps", "cartography", "geolocation"],
     "license": "",
     "icon": "",
     "featuredOpenSource": true
   },
   {
     "name": "Menubar",
-    "description": "",
+    "description": "Create menubar apps",
     "website": "https://github.com/maxogden/menubar",
     "repository": "",
-    "keywords": [],
+    "keywords": ["menubar"],
     "license": "",
     "icon": "",
     "featuredOpenSource": true
   },
   {
     "name": "Yeoman App",
-    "description": "",
+    "description": "Scaffolding tool for modern webapps",
     "website": "https://github.com/yeoman/yeoman-app",
     "repository": "",
-    "keywords": [],
+    "keywords": ["web development", "scaffolding", "productivity"],
     "license": "",
     "icon": "",
     "featuredOpenSource": true
   },
   {
     "name": "Laverna",
-    "description": "",
+    "description": "Write &amp; organize Markdown",
     "website": "https://laverna.cc",
     "repository": "",
-    "keywords": [],
+    "keywords": ["writing", "markdown", "editor"],
     "license": "",
     "icon": "",
     "featuredOpenSource": true
