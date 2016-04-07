@@ -4,6 +4,7 @@ description: 'Build cross platform desktop apps with web technologies'
 baseurl: 'http://electron.atom.io'
 twitter_username: ElectronJS
 github_username: atom
+excerpt_separator: "---"
 highlighter: rouge
 markdown: kramdown
 kramdown:
