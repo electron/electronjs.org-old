@@ -6,6 +6,8 @@ author: jlord
 
 There have been some interesting updates and talks given on Electron recently, here's a roundup.
 
+---
+
 ## Source
 
 Electron is now up to date with Chrome 45 as of `v0.32.0`. Other updates include...

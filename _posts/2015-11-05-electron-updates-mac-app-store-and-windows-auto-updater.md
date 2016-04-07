@@ -4,7 +4,9 @@ title: Mac App Store and Windows Auto Updater on Electron
 author: jlord
 ---
 
-Recently Electron added two exciting features: a Mac App Store compatible build and a   built-in Windows auto updater.
+Recently Electron added two exciting features: a Mac App Store compatible build and a built-in Windows auto updater.
+
+---
 
 ## Mac App Store Support
 

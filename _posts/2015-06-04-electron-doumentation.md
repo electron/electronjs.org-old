@@ -6,6 +6,8 @@ author: jlord
 
 This week we've given Electron's documentation a home on [electron.atom.io](http://electron.atom.io). You can visit [/docs/latest](http://electron.atom.io/docs/latest) for the latest set of docs. We'll keep versions of older docs, too, so you're able to visit [/docs/vX.XX.X](http://electron.atom.io/docs/v0.26.0) for the docs that correlate to the version you're using.
 
+---
+
 You can visit [/docs](http://electron.atom.io/docs) to see what versions are available or [/docs/all](http://electron.atom.io/docs/all) to see the latest version of docs all on one page (nice for `cmd` + `f` searches).
 
 If you'd like to contribute to the docs content, you can do so in the [Electron repository](https://github.com/atom/electron/tree/master/docs), where the docs are fetched from. We fetch them for each minor release and add them to the [Electron site repository](http://github.com/atom/electron.atom.io), which is made with [Jekyll](http://jekyllrb.com).

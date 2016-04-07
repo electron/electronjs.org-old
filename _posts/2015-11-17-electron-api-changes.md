@@ -6,6 +6,8 @@ author: zcbenz
 
 Since the beginning of Electron, starting way back when it used to be called Atom-Shell, we have been experimenting with providing a nice cross-platform JavaScript API for Chromium's content module and native GUI components. The APIs started very organically, and over time we have made several changes to improve the initial designs.
 
+---
+
 Now with Electron gearing up for a 1.0 release, we'd like to take the opportunity for change by addressing the last niggling API details. The changes described below are included in **0.35.x**, with the old APIs reporting deprecation warnings so you can get up to date for the future 1.0 release. An Electron 1.0 won't be out for a few months so you have some time before these changes become breaking.
 
 ## Deprecation warnings
