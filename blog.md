@@ -9,6 +9,7 @@ permalink: blog/
     <li>
       <h2>
         <a href="{{ post.url }}">{{ post.title }}</a>
+        <time>{{ post.date | date: '%B %d, %Y' }}</time>
       </h2>
       <p>{{ post.excerpt}}</p>
     </li>
