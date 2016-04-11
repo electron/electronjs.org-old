@@ -1,0 +1,21 @@
+// Styles for page sections
+// --------------------------------------------------
+
+.page-section {
+  padding: $spacer 0;
+  margin-top: 0;
+
+  @include breakpoint(md) {
+    padding: $spacer3 0;
+  }
+
+}
+
+.section-header {
+  margin-bottom: $spacer4;
+}
+
+.bg-shade {
+  min-height: 325px;
+  background-image: linear-gradient(#f6f6f6 0, #fff 325px);
+}

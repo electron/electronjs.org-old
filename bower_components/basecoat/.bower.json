@@ -1,0 +1,31 @@
+{
+  "name": "basecoat",
+  "ignore": [
+    "docs/",
+    ".gitignore",
+    ".scss-lint.yml",
+    "_config.yml",
+    "Gemfile",
+    "Gemfile.lock",
+    "Gruntfile.js"
+  ],
+  "main": [
+    "scss/basecoat.scss"
+  ],
+  "dependencies": {
+    "octicons": "*",
+    "primer-css": "*"
+  },
+  "homepage": "https://github.com/github/basecoat",
+  "version": "0.2.1-alpha",
+  "_release": "0.2.1-alpha",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.2.1-alpha",
+    "commit": "47f17fbed85e493de6a61ae440002e8eca4828d0"
+  },
+  "_source": "git@github.com:github/basecoat.git",
+  "_target": "^0.2.1-alpha",
+  "_originalSource": "git@github.com:github/basecoat.git",
+  "_direct": true
+}
