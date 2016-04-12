@@ -7,7 +7,7 @@ var tar = require('tar-fs')
 var gunzip = require('gunzip-maybe')
 var mkdir = require('mkdirp')
 var nugget = require('nugget')
-var got = require('got')
+var request = require('request')
 var tmp = require('tmp')
 var cpr = require('cpr')
 var through = require('through2')
@@ -27,15 +27,12 @@ var version
 
 var fetchDocs = module.exports = function fetchDocs (callback) {
   var latest = 'https://api.github.com/repos/electron/electron/releases/latest'
-  got(latest, {json: true})
-    .then(response => {
-      tarballUrl = response.body.tarball_url
-      version = tarballUrl.split('/').pop()//.replace(/v/, '')
-      return updateVersions(callback)
-    })
-    .catch(error => {
-      console.log(error.response.body)
-    })
+  request.get({url: latest, json: true, headers: {'user-agent': 'electron website build'}}, function (err, resp, body) {
+    if (err) throw err
+    tarballUrl = body.tarball_url
+    version = tarballUrl.split('/').pop()
+    return updateVersions(callback)
+  })
 }
 
 function updateVersions (callback) {
