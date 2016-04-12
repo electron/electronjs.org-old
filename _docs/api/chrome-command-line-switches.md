@@ -29,6 +29,7 @@ redirect-from:
     - /docs/v0.37.1/api/chrome-command-line-switches/
     - /docs/v0.37.2/api/chrome-command-line-switches/
     - /docs/v0.37.5/api/chrome-command-line-switches/
+    - /docs/latest/api/chrome-command-line-switches/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/chrome-command-line-switches.md'
 ---
 

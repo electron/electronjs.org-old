@@ -29,6 +29,7 @@ redirect-from:
     - /docs/v0.37.1/api/shell/
     - /docs/v0.37.2/api/shell/
     - /docs/v0.37.5/api/shell/
+    - /docs/latest/api/shell/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/shell.md'
 ---
 

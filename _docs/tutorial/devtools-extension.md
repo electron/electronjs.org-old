@@ -29,6 +29,7 @@ redirect-from:
     - /docs/v0.37.1/tutorial/devtools-extension/
     - /docs/v0.37.2/tutorial/devtools-extension/
     - /docs/v0.37.5/tutorial/devtools-extension/
+    - /docs/latest/tutorial/devtools-extension/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/devtools-extension.md'
 ---
 

@@ -29,6 +29,7 @@ redirect-from:
     - /docs/v0.37.1/api/file-object/
     - /docs/v0.37.2/api/file-object/
     - /docs/v0.37.5/api/file-object/
+    - /docs/latest/api/file-object/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/file-object.md'
 ---
 

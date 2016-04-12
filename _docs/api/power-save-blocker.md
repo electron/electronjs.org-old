@@ -29,6 +29,7 @@ redirect-from:
     - /docs/v0.37.1/api/power-save-blocker/
     - /docs/v0.37.2/api/power-save-blocker/
     - /docs/v0.37.5/api/power-save-blocker/
+    - /docs/latest/api/power-save-blocker/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/power-save-blocker.md'
 ---
 

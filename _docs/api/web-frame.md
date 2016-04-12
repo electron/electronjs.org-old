@@ -29,6 +29,7 @@ redirect-from:
     - /docs/v0.37.1/api/web-frame/
     - /docs/v0.37.2/api/web-frame/
     - /docs/v0.37.5/api/web-frame/
+    - /docs/latest/api/web-frame/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/web-frame.md'
 ---
 

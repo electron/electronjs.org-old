@@ -29,6 +29,7 @@ redirect-from:
     - /docs/v0.37.1/api/web-view-tag/
     - /docs/v0.37.2/api/web-view-tag/
     - /docs/v0.37.5/api/web-view-tag/
+    - /docs/latest/api/web-view-tag/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/web-view-tag.md'
 ---
 

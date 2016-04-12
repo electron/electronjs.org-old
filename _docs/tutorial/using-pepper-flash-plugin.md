@@ -29,6 +29,7 @@ redirect-from:
     - /docs/v0.37.1/tutorial/using-pepper-flash-plugin/
     - /docs/v0.37.2/tutorial/using-pepper-flash-plugin/
     - /docs/v0.37.5/tutorial/using-pepper-flash-plugin/
+    - /docs/latest/tutorial/using-pepper-flash-plugin/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/using-pepper-flash-plugin.md'
 ---
 

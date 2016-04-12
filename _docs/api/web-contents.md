@@ -29,6 +29,7 @@ redirect-from:
     - /docs/v0.37.1/api/web-contents/
     - /docs/v0.37.2/api/web-contents/
     - /docs/v0.37.5/api/web-contents/
+    - /docs/latest/api/web-contents/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/web-contents.md'
 ---
 

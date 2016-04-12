@@ -29,6 +29,7 @@ redirect-from:
     - /docs/v0.37.1/tutorial/supported-platforms/
     - /docs/v0.37.2/tutorial/supported-platforms/
     - /docs/v0.37.5/tutorial/supported-platforms/
+    - /docs/latest/tutorial/supported-platforms/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/supported-platforms.md'
 ---
 

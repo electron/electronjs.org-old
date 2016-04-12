@@ -29,6 +29,7 @@ redirect-from:
     - /docs/v0.37.1/api/tray/
     - /docs/v0.37.2/api/tray/
     - /docs/v0.37.5/api/tray/
+    - /docs/latest/api/tray/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/tray.md'
 ---
 

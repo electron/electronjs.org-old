@@ -29,6 +29,7 @@ redirect-from:
     - /docs/v0.37.1/api/protocol/
     - /docs/v0.37.2/api/protocol/
     - /docs/v0.37.5/api/protocol/
+    - /docs/latest/api/protocol/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/protocol.md'
 ---
 

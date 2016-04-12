@@ -29,6 +29,7 @@ redirect-from:
     - /docs/v0.37.1/api/global-shortcut/
     - /docs/v0.37.2/api/global-shortcut/
     - /docs/v0.37.5/api/global-shortcut/
+    - /docs/latest/api/global-shortcut/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/global-shortcut.md'
 ---
 

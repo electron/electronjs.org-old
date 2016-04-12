@@ -29,6 +29,7 @@ redirect-from:
     - /docs/v0.37.1/development/build-instructions-linux/
     - /docs/v0.37.2/development/build-instructions-linux/
     - /docs/v0.37.5/development/build-instructions-linux/
+    - /docs/latest/development/build-instructions-linux/
 source_url: 'https://github.com/electron/electron/blob/master/docs/development/build-instructions-linux.md'
 ---
 

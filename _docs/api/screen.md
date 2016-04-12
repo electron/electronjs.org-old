@@ -29,6 +29,7 @@ redirect-from:
     - /docs/v0.37.1/api/screen/
     - /docs/v0.37.2/api/screen/
     - /docs/v0.37.5/api/screen/
+    - /docs/latest/api/screen/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/screen.md'
 ---
 

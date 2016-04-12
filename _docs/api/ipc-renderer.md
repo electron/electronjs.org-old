@@ -29,6 +29,7 @@ redirect-from:
     - /docs/v0.37.1/api/ipc-renderer/
     - /docs/v0.37.2/api/ipc-renderer/
     - /docs/v0.37.5/api/ipc-renderer/
+    - /docs/latest/api/ipc-renderer/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/ipc-renderer.md'
 ---
 

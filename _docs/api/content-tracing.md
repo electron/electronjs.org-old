@@ -29,6 +29,7 @@ redirect-from:
     - /docs/v0.37.1/api/content-tracing/
     - /docs/v0.37.2/api/content-tracing/
     - /docs/v0.37.5/api/content-tracing/
+    - /docs/latest/api/content-tracing/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/content-tracing.md'
 ---
 

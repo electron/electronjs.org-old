@@ -29,6 +29,7 @@ redirect-from:
     - /docs/v0.37.1/development/atom-shell-vs-node-webkit/
     - /docs/v0.37.2/development/atom-shell-vs-node-webkit/
     - /docs/v0.37.5/development/atom-shell-vs-node-webkit/
+    - /docs/latest/development/atom-shell-vs-node-webkit/
 source_url: 'https://github.com/electron/electron/blob/master/docs/development/atom-shell-vs-node-webkit.md'
 ---
 

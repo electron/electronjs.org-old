@@ -29,6 +29,7 @@ redirect-from:
     - /docs/v0.37.1/development/build-instructions-windows/
     - /docs/v0.37.2/development/build-instructions-windows/
     - /docs/v0.37.5/development/build-instructions-windows/
+    - /docs/latest/development/build-instructions-windows/
 source_url: 'https://github.com/electron/electron/blob/master/docs/development/build-instructions-windows.md'
 ---
 

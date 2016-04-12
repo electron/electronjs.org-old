@@ -29,6 +29,7 @@ redirect-from:
     - /docs/v0.37.1/api/ipc-main/
     - /docs/v0.37.2/api/ipc-main/
     - /docs/v0.37.5/api/ipc-main/
+    - /docs/latest/api/ipc-main/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/ipc-main.md'
 ---
 

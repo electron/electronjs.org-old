@@ -29,6 +29,7 @@ redirect-from:
     - /docs/v0.37.1/api/clipboard/
     - /docs/v0.37.2/api/clipboard/
     - /docs/v0.37.5/api/clipboard/
+    - /docs/latest/api/clipboard/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/clipboard.md'
 ---
 

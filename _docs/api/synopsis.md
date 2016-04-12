@@ -29,6 +29,7 @@ redirect-from:
     - /docs/v0.37.1/api/synopsis/
     - /docs/v0.37.2/api/synopsis/
     - /docs/v0.37.5/api/synopsis/
+    - /docs/latest/api/synopsis/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/synopsis.md'
 ---
 

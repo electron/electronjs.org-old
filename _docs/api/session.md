@@ -29,6 +29,7 @@ redirect-from:
     - /docs/v0.37.1/api/session/
     - /docs/v0.37.2/api/session/
     - /docs/v0.37.5/api/session/
+    - /docs/latest/api/session/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/session.md'
 ---
 

@@ -29,6 +29,7 @@ redirect-from:
     - /docs/v0.37.1/tutorial/mac-app-store-submission-guide/
     - /docs/v0.37.2/tutorial/mac-app-store-submission-guide/
     - /docs/v0.37.5/tutorial/mac-app-store-submission-guide/
+    - /docs/latest/tutorial/mac-app-store-submission-guide/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/mac-app-store-submission-guide.md'
 ---
 

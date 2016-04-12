@@ -29,6 +29,7 @@ redirect-from:
     - /docs/v0.37.1/tutorial/quick-start/
     - /docs/v0.37.2/tutorial/quick-start/
     - /docs/v0.37.5/tutorial/quick-start/
+    - /docs/latest/tutorial/quick-start/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/quick-start.md'
 ---
 
