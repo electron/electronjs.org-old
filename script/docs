@@ -16,7 +16,8 @@ var yaml = require('yamljs')
 var toTitleCase = require('titlecase')
 
 var formatInternalLinks = require('../lib/doc-links.js')
-
+var jekyllConfigFile = path.join(process.cwd(), '_config.yml')
+var jekyllConfig = yaml.load(jekyllConfigFile)
 var token = process.env.ATOM_ACCESS_TOKEN
 var tarballFilename = 'electron.tar.gz'
 var tmpDir = tmp.dirSync().name
@@ -39,13 +40,11 @@ var fetchDocs = module.exports = function fetchDocs (callback) {
 
 function updateVersions (callback) {
   console.log(`Latest release is ${version}. Updating _config.yml`)
-  var configFile = path.join(process.cwd(), '_config.yml')
-  var config = yaml.load(configFile)
-  config.latest_version = version
-  if (config.available_versions.indexOf(version) === -1) {
-    config.available_versions.push(version)
+  jekyllConfig.latest_version = version
+  if (jekyllConfig.available_versions.indexOf(version) === -1) {
+    jekyllConfig.available_versions.push(version)
   }
-  fs.writeFileSync(configFile, yaml.stringify(config))
+  fs.writeFileSync(jekyllConfigFile, yaml.stringify(jekyllConfig))
   return downloadTarball(callback)
 }
 
@@ -140,10 +139,17 @@ function constructSourceUrl (path) {
 
 function constructDocMetadata (path) {
   var pathArray = path.split('/').splice(0, 2)
+
+  var redirects = jekyllConfig.available_versions.map (v => {
+    return `http://electron.atom.io/`
+      + path.split('/').splice(1).join('/').replace('docs/', `docs/${v}/`).replace('.md', '/')
+  })
+
   return {
     version: version,
     category: (pathArray[0] === 'api') ? 'API' : toTitleCase(pathArray[0]),
-    title: formatDocTitle(pathArray[1])
+    title: formatDocTitle(pathArray[1]),
+    'redirect-from': redirects
   }
 }
 
