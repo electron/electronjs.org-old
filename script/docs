@@ -1,25 +1,173 @@
 #!/usr/bin/env node
 
-var fetchDocs = require('../lib/fetch-docs.js')
+var fs = require('fs')
+var os = require('os')
+var path = require('path')
+var tar = require('tar-fs')
+var gunzip = require('gunzip-maybe')
+var mkdir = require('mkdirp')
+var nugget = require('nugget')
+var got = require('got')
+var tmp = require('tmp')
+var cpr = require('cpr')
+var through = require('through2')
+var rimraf = require('rimraf')
+var yaml = require('yamljs')
+var toTitleCase = require('titlecase')
 
-var args = process.argv.slice(2)
+var formatInternalLinks = require('../lib/doc-links.js')
 
-var settings = {
-  latest: false,
-  version: 'master',
-  finalDir: '_docs',
-  config: '_config.yml'
+var token = process.env.ATOM_ACCESS_TOKEN
+var tarballFilename = 'electron.tar.gz'
+var tmpDir = tmp.dirSync().name
+var newDir
+var tarballUrl
+var version
+
+var fetchDocs = module.exports = function fetchDocs (callback) {
+  var latest = 'https://api.github.com/repos/electron/electron/releases/latest'
+  got(latest, {json: true})
+    .then(response => {
+      tarballUrl = response.body.tarball_url
+      version = tarballUrl.split('/').pop()//.replace(/v/, '')
+      return updateVersions(callback)
+    })
+    .catch(error => {
+      console.log(error.response.body)
+    })
 }
 
-if (args[0] && args[0] !== '--latest') settings.version = args[0]
-if (args[1] && args[1] === '--latest') settings.latest = true
-
-if (args[0] === '--latest') {
-  settings.latest = true
-  settings.version = args[1]
+function updateVersions (callback) {
+  console.log(`Latest release is ${version}. Updating _config.yml`)
+  var configFile = path.join(process.cwd(), '_config.yml')
+  var config = yaml.load(configFile)
+  config.latest_version = version
+  if (config.available_versions.indexOf(version) === -1) {
+    config.available_versions.push(version)
+  }
+  fs.writeFileSync(configFile, yaml.stringify(config))
+  return downloadTarball(callback)
 }
 
-fetchDocs(settings, function callback (error, message) {
-  if (error) console.log(error)
-  if (message) console.log(message)
-})
+function downloadTarball (callback) {
+  console.log(`Tarball URL: ${tarballUrl}`)
+  var opts = {
+    headers: {
+      'user-agent': 'Electron',
+      'Authorization': 'token ' + token
+    },
+    target: tarballFilename,
+    dir: tmpDir,
+    verbose: true
+  }
+
+  nugget(tarballUrl, opts, function (error) {
+    if (error) return callback(error)
+    extractDocs(callback)
+  })
+}
+
+// Extract specific 'docs' directories from within
+// tarball, then prepend each markdown file with
+// Jekyll front matter
+function extractDocs (callback) {
+  var tarball = path.join(tmpDir, tarballFilename)
+
+  var extract = tar.extract(tmpDir, {
+    ignore: function (name) {
+      if (name.match('docs/api')) return false
+      if (name.match('docs/development')) return false
+      if (name.match('docs/tutorial')) return false
+      return true
+    },
+    mapStream: function (fileStream, header) {
+      var frontmatter
+      if (path.extname(header.name) === '.md') {
+        var metadata = constructDocMetadata(header.name)
+        metadata.source_url = constructSourceUrl(header.name)
+        frontmatter = new Buffer('---\n' + yaml.stringify(metadata) + '---\n\n')
+        return fileStream.pipe(frontMatterify(frontmatter)).pipe(removeCmdSyntax())
+      }
+      return fileStream
+    }
+  })
+
+  extract.on('entry', function extracting (header, stream, next) {
+    var extractedElectronDir = header.name.split('/')[0]
+    newDir = path.join(tmpDir, extractedElectronDir)
+  })
+
+  extract.on('finish', function extracted () {
+    moveDirectories(callback)
+  })
+
+  fs.createReadStream(tarball).pipe(gunzip()).pipe(extract)
+}
+
+function frontMatterify (frontmatter) {
+  var appended = false
+  return through(function (obj, enc, next) {
+    if (!appended) this.push(frontmatter)
+    appended = true
+    this.push(obj)
+    next()
+  })
+}
+
+function removeCmdSyntax (content) {
+  return through(function (obj, enc, next) {
+    var edits = obj.toString().replace('```cmd', '```bash')
+    this.push(edits)
+    next()
+  })
+}
+
+function removeMdUrls () {
+  return through(function (obj, enc, next) {
+    var regex = /\.md\)/ig
+    var edits = obj.toString().replace(regex, ')')
+    this.push(edits)
+    next()
+  })
+}
+
+function constructSourceUrl (path) {
+  var baseUrl = 'https://github.com/electron/electron/blob/master/'
+  var source = path.split('/')
+  source.splice(0, 1)
+  return baseUrl + source.join('/')
+}
+
+function constructDocMetadata (path) {
+  var pathArray = path.split('/').splice(0, 2)
+  return {
+    version: version,
+    category: (pathArray[0] === 'api') ? 'API' : toTitleCase(pathArray[0]),
+    title: formatDocTitle(pathArray[1])
+  }
+}
+
+function formatDocTitle (filename) {
+  return toTitleCase(filename.replace('.md', '').replace('-', ' '))
+}
+
+function moveDirectories (callback) {
+  var sourceDir = path.join(newDir, 'docs')
+  var targetDir = path.join(__dirname, '..', '_docs')
+
+  cpr(sourceDir, targetDir, {
+    overwrite: true
+  }, function moved (error) {
+    if (error) return callback(error)
+    formatInternalLinks(targetDir, version, function fixedLinks (error, msg) {
+      if (error) return callback(error)
+    })
+  })
+}
+
+if (!process.parent) {
+  fetchDocs(function callback (error, message) {
+    if (error) console.log(error)
+    if (message) console.log(message)
+  })
+}
