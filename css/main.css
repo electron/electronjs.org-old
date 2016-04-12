@@ -97,8 +97,8 @@ section {
 /* Header Nav */
 
 header {
-  padding: 6rem 0 0 0;
-  background-color: #A5ECFA;
+  padding: 12px 0;
+  background-color: #76C7D7;
 }
 @media (max-width: 550px) {
   header,
@@ -108,11 +108,11 @@ header {
 }
 
 header a {
-  color: inherit;
+  color: #FAF7F3;
 }
 
 header a:hover {
-  color: #3A6167;
+  color: #FAF7F3;
 }
 
 /* Hero */
@@ -394,11 +394,14 @@ footer {
 /* Blog
    ------------------------------------------ */
 
+.blog-header {
+  background-color: #A5ECFA;
+}
 .blog-header .electron-icon {
-    height: 1.5em;
-    margin-right: 0.4em;
-    margin-top: -0.4em;
-    vertical-align: middle;
+  height: 1.5em;
+  margin-right: 0.4em;
+  margin-top: -0.4em;
+  vertical-align: middle;
 }
 
 .blog img {
