@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Layer_1" data-name="Layer 1" viewBox="0 0 64 64">
+	<title>Derivatives_icon</title>
+	<circle cx="32" cy="32" r="23" />
+	<rect x="12" y="12" width="40" height="40" />
+	<g>
+		<rect x="15.8" y="44.5" width="15" height="2.5" fill="#fff" />
+		<text font-size="17.6" font-weight="700" font-family="Gotham SSm A,Gotham SSm B,Helvetica,Arial,sans-serif" fill="#fff" y="30" x="12.7">DRV</text>
+	</g>
+</svg>
