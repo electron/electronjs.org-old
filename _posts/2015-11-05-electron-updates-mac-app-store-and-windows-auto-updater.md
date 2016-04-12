@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Mac App Store and Windows Auto Updater on Electron
 author: jlord
 ---

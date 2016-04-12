@@ -1,5 +1,4 @@
 ---
-layout: post
 title: API Changes Coming in Electron 1.0
 author: zcbenz
 ---

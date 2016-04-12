@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Use V8 and Chromium Features in Electron
 author: jlord
 ---
