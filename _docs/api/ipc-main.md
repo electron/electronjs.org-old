@@ -3,32 +3,32 @@ version: v0.37.5
 category: API
 title: 'Ipc Main'
 redirect-from:
-    - 'http://electron.atom.io/docs/v0.24.0/api/ipc-main/'
-    - 'http://electron.atom.io/docs/v0.25.0/api/ipc-main/'
-    - 'http://electron.atom.io/docs/v0.26.0/api/ipc-main/'
-    - 'http://electron.atom.io/docs/v0.27.0/api/ipc-main/'
-    - 'http://electron.atom.io/docs/v0.28.0/api/ipc-main/'
-    - 'http://electron.atom.io/docs/v0.29.0/api/ipc-main/'
-    - 'http://electron.atom.io/docs/v0.30.0/api/ipc-main/'
-    - 'http://electron.atom.io/docs/v0.31.0/api/ipc-main/'
-    - 'http://electron.atom.io/docs/v0.32.0/api/ipc-main/'
-    - 'http://electron.atom.io/docs/v0.33.0/api/ipc-main/'
-    - 'http://electron.atom.io/docs/v0.34.0/api/ipc-main/'
-    - 'http://electron.atom.io/docs/v0.35.0/api/ipc-main/'
-    - 'http://electron.atom.io/docs/v0.36.0/api/ipc-main/'
-    - 'http://electron.atom.io/docs/v0.36.3/api/ipc-main/'
-    - 'http://electron.atom.io/docs/v0.36.4/api/ipc-main/'
-    - 'http://electron.atom.io/docs/v0.36.5/api/ipc-main/'
-    - 'http://electron.atom.io/docs/v0.36.6/api/ipc-main/'
-    - 'http://electron.atom.io/docs/v0.36.7/api/ipc-main/'
-    - 'http://electron.atom.io/docs/v0.36.8/api/ipc-main/'
-    - 'http://electron.atom.io/docs/v0.36.9/api/ipc-main/'
-    - 'http://electron.atom.io/docs/v0.36.10/api/ipc-main/'
-    - 'http://electron.atom.io/docs/v0.36.11/api/ipc-main/'
-    - 'http://electron.atom.io/docs/v0.37.0/api/ipc-main/'
-    - 'http://electron.atom.io/docs/v0.37.1/api/ipc-main/'
-    - 'http://electron.atom.io/docs/v0.37.2/api/ipc-main/'
-    - 'http://electron.atom.io/docs/v0.37.5/api/ipc-main/'
+    - /docs/v0.24.0/api/ipc-main/
+    - /docs/v0.25.0/api/ipc-main/
+    - /docs/v0.26.0/api/ipc-main/
+    - /docs/v0.27.0/api/ipc-main/
+    - /docs/v0.28.0/api/ipc-main/
+    - /docs/v0.29.0/api/ipc-main/
+    - /docs/v0.30.0/api/ipc-main/
+    - /docs/v0.31.0/api/ipc-main/
+    - /docs/v0.32.0/api/ipc-main/
+    - /docs/v0.33.0/api/ipc-main/
+    - /docs/v0.34.0/api/ipc-main/
+    - /docs/v0.35.0/api/ipc-main/
+    - /docs/v0.36.0/api/ipc-main/
+    - /docs/v0.36.3/api/ipc-main/
+    - /docs/v0.36.4/api/ipc-main/
+    - /docs/v0.36.5/api/ipc-main/
+    - /docs/v0.36.6/api/ipc-main/
+    - /docs/v0.36.7/api/ipc-main/
+    - /docs/v0.36.8/api/ipc-main/
+    - /docs/v0.36.9/api/ipc-main/
+    - /docs/v0.36.10/api/ipc-main/
+    - /docs/v0.36.11/api/ipc-main/
+    - /docs/v0.37.0/api/ipc-main/
+    - /docs/v0.37.1/api/ipc-main/
+    - /docs/v0.37.2/api/ipc-main/
+    - /docs/v0.37.5/api/ipc-main/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/ipc-main.md'
 ---
 

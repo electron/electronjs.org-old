@@ -136,11 +136,10 @@ function constructSourceUrl (path) {
 
 function constructDocMetadata (filepath) {
   var pathArray = filepath.split('/').splice(2, 2)
-  var redirects = jekyllConfig.available_versions.map (v => {
-    return `http://electron.atom.io/`
-      + filepath.split('/').splice(1).join('/').replace('docs/', `docs/${v}/`).replace('.md', '/')
+  var redirects = jekyllConfig.available_versions.map(v => {
+    return `/`
+    + filepath.split('/').splice(1).join('/').replace('docs/', `docs/${v}/`).replace('.md', '/')
   })
-
   return {
     version: version,
     category: (pathArray[0] === 'api') ? 'API' : toTitleCase(pathArray[0]),
@@ -163,6 +162,7 @@ function moveDirectories (callback) {
     if (error) return callback(error)
     formatInternalLinks(targetDir, version, function fixedLinks (error, msg) {
       if (error) return callback(error)
+      return callback(null, 'Done!')
     })
   })
 }

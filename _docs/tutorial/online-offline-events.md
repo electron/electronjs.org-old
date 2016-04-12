@@ -3,32 +3,32 @@ version: v0.37.5
 category: Tutorial
 title: 'Online Offline-Events'
 redirect-from:
-    - 'http://electron.atom.io/docs/v0.24.0/tutorial/online-offline-events/'
-    - 'http://electron.atom.io/docs/v0.25.0/tutorial/online-offline-events/'
-    - 'http://electron.atom.io/docs/v0.26.0/tutorial/online-offline-events/'
-    - 'http://electron.atom.io/docs/v0.27.0/tutorial/online-offline-events/'
-    - 'http://electron.atom.io/docs/v0.28.0/tutorial/online-offline-events/'
-    - 'http://electron.atom.io/docs/v0.29.0/tutorial/online-offline-events/'
-    - 'http://electron.atom.io/docs/v0.30.0/tutorial/online-offline-events/'
-    - 'http://electron.atom.io/docs/v0.31.0/tutorial/online-offline-events/'
-    - 'http://electron.atom.io/docs/v0.32.0/tutorial/online-offline-events/'
-    - 'http://electron.atom.io/docs/v0.33.0/tutorial/online-offline-events/'
-    - 'http://electron.atom.io/docs/v0.34.0/tutorial/online-offline-events/'
-    - 'http://electron.atom.io/docs/v0.35.0/tutorial/online-offline-events/'
-    - 'http://electron.atom.io/docs/v0.36.0/tutorial/online-offline-events/'
-    - 'http://electron.atom.io/docs/v0.36.3/tutorial/online-offline-events/'
-    - 'http://electron.atom.io/docs/v0.36.4/tutorial/online-offline-events/'
-    - 'http://electron.atom.io/docs/v0.36.5/tutorial/online-offline-events/'
-    - 'http://electron.atom.io/docs/v0.36.6/tutorial/online-offline-events/'
-    - 'http://electron.atom.io/docs/v0.36.7/tutorial/online-offline-events/'
-    - 'http://electron.atom.io/docs/v0.36.8/tutorial/online-offline-events/'
-    - 'http://electron.atom.io/docs/v0.36.9/tutorial/online-offline-events/'
-    - 'http://electron.atom.io/docs/v0.36.10/tutorial/online-offline-events/'
-    - 'http://electron.atom.io/docs/v0.36.11/tutorial/online-offline-events/'
-    - 'http://electron.atom.io/docs/v0.37.0/tutorial/online-offline-events/'
-    - 'http://electron.atom.io/docs/v0.37.1/tutorial/online-offline-events/'
-    - 'http://electron.atom.io/docs/v0.37.2/tutorial/online-offline-events/'
-    - 'http://electron.atom.io/docs/v0.37.5/tutorial/online-offline-events/'
+    - /docs/v0.24.0/tutorial/online-offline-events/
+    - /docs/v0.25.0/tutorial/online-offline-events/
+    - /docs/v0.26.0/tutorial/online-offline-events/
+    - /docs/v0.27.0/tutorial/online-offline-events/
+    - /docs/v0.28.0/tutorial/online-offline-events/
+    - /docs/v0.29.0/tutorial/online-offline-events/
+    - /docs/v0.30.0/tutorial/online-offline-events/
+    - /docs/v0.31.0/tutorial/online-offline-events/
+    - /docs/v0.32.0/tutorial/online-offline-events/
+    - /docs/v0.33.0/tutorial/online-offline-events/
+    - /docs/v0.34.0/tutorial/online-offline-events/
+    - /docs/v0.35.0/tutorial/online-offline-events/
+    - /docs/v0.36.0/tutorial/online-offline-events/
+    - /docs/v0.36.3/tutorial/online-offline-events/
+    - /docs/v0.36.4/tutorial/online-offline-events/
+    - /docs/v0.36.5/tutorial/online-offline-events/
+    - /docs/v0.36.6/tutorial/online-offline-events/
+    - /docs/v0.36.7/tutorial/online-offline-events/
+    - /docs/v0.36.8/tutorial/online-offline-events/
+    - /docs/v0.36.9/tutorial/online-offline-events/
+    - /docs/v0.36.10/tutorial/online-offline-events/
+    - /docs/v0.36.11/tutorial/online-offline-events/
+    - /docs/v0.37.0/tutorial/online-offline-events/
+    - /docs/v0.37.1/tutorial/online-offline-events/
+    - /docs/v0.37.2/tutorial/online-offline-events/
+    - /docs/v0.37.5/tutorial/online-offline-events/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/online-offline-events.md'
 ---
 

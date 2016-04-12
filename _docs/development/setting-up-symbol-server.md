@@ -3,32 +3,32 @@ version: v0.37.5
 category: Development
 title: 'Setting Up-Symbol-Server'
 redirect-from:
-    - 'http://electron.atom.io/docs/v0.24.0/development/setting-up-symbol-server/'
-    - 'http://electron.atom.io/docs/v0.25.0/development/setting-up-symbol-server/'
-    - 'http://electron.atom.io/docs/v0.26.0/development/setting-up-symbol-server/'
-    - 'http://electron.atom.io/docs/v0.27.0/development/setting-up-symbol-server/'
-    - 'http://electron.atom.io/docs/v0.28.0/development/setting-up-symbol-server/'
-    - 'http://electron.atom.io/docs/v0.29.0/development/setting-up-symbol-server/'
-    - 'http://electron.atom.io/docs/v0.30.0/development/setting-up-symbol-server/'
-    - 'http://electron.atom.io/docs/v0.31.0/development/setting-up-symbol-server/'
-    - 'http://electron.atom.io/docs/v0.32.0/development/setting-up-symbol-server/'
-    - 'http://electron.atom.io/docs/v0.33.0/development/setting-up-symbol-server/'
-    - 'http://electron.atom.io/docs/v0.34.0/development/setting-up-symbol-server/'
-    - 'http://electron.atom.io/docs/v0.35.0/development/setting-up-symbol-server/'
-    - 'http://electron.atom.io/docs/v0.36.0/development/setting-up-symbol-server/'
-    - 'http://electron.atom.io/docs/v0.36.3/development/setting-up-symbol-server/'
-    - 'http://electron.atom.io/docs/v0.36.4/development/setting-up-symbol-server/'
-    - 'http://electron.atom.io/docs/v0.36.5/development/setting-up-symbol-server/'
-    - 'http://electron.atom.io/docs/v0.36.6/development/setting-up-symbol-server/'
-    - 'http://electron.atom.io/docs/v0.36.7/development/setting-up-symbol-server/'
-    - 'http://electron.atom.io/docs/v0.36.8/development/setting-up-symbol-server/'
-    - 'http://electron.atom.io/docs/v0.36.9/development/setting-up-symbol-server/'
-    - 'http://electron.atom.io/docs/v0.36.10/development/setting-up-symbol-server/'
-    - 'http://electron.atom.io/docs/v0.36.11/development/setting-up-symbol-server/'
-    - 'http://electron.atom.io/docs/v0.37.0/development/setting-up-symbol-server/'
-    - 'http://electron.atom.io/docs/v0.37.1/development/setting-up-symbol-server/'
-    - 'http://electron.atom.io/docs/v0.37.2/development/setting-up-symbol-server/'
-    - 'http://electron.atom.io/docs/v0.37.5/development/setting-up-symbol-server/'
+    - /docs/v0.24.0/development/setting-up-symbol-server/
+    - /docs/v0.25.0/development/setting-up-symbol-server/
+    - /docs/v0.26.0/development/setting-up-symbol-server/
+    - /docs/v0.27.0/development/setting-up-symbol-server/
+    - /docs/v0.28.0/development/setting-up-symbol-server/
+    - /docs/v0.29.0/development/setting-up-symbol-server/
+    - /docs/v0.30.0/development/setting-up-symbol-server/
+    - /docs/v0.31.0/development/setting-up-symbol-server/
+    - /docs/v0.32.0/development/setting-up-symbol-server/
+    - /docs/v0.33.0/development/setting-up-symbol-server/
+    - /docs/v0.34.0/development/setting-up-symbol-server/
+    - /docs/v0.35.0/development/setting-up-symbol-server/
+    - /docs/v0.36.0/development/setting-up-symbol-server/
+    - /docs/v0.36.3/development/setting-up-symbol-server/
+    - /docs/v0.36.4/development/setting-up-symbol-server/
+    - /docs/v0.36.5/development/setting-up-symbol-server/
+    - /docs/v0.36.6/development/setting-up-symbol-server/
+    - /docs/v0.36.7/development/setting-up-symbol-server/
+    - /docs/v0.36.8/development/setting-up-symbol-server/
+    - /docs/v0.36.9/development/setting-up-symbol-server/
+    - /docs/v0.36.10/development/setting-up-symbol-server/
+    - /docs/v0.36.11/development/setting-up-symbol-server/
+    - /docs/v0.37.0/development/setting-up-symbol-server/
+    - /docs/v0.37.1/development/setting-up-symbol-server/
+    - /docs/v0.37.2/development/setting-up-symbol-server/
+    - /docs/v0.37.5/development/setting-up-symbol-server/
 source_url: 'https://github.com/electron/electron/blob/master/docs/development/setting-up-symbol-server.md'
 ---
 

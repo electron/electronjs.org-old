@@ -3,32 +3,32 @@ version: v0.37.5
 category: API
 title: 'Web Frame'
 redirect-from:
-    - 'http://electron.atom.io/docs/v0.24.0/api/web-frame/'
-    - 'http://electron.atom.io/docs/v0.25.0/api/web-frame/'
-    - 'http://electron.atom.io/docs/v0.26.0/api/web-frame/'
-    - 'http://electron.atom.io/docs/v0.27.0/api/web-frame/'
-    - 'http://electron.atom.io/docs/v0.28.0/api/web-frame/'
-    - 'http://electron.atom.io/docs/v0.29.0/api/web-frame/'
-    - 'http://electron.atom.io/docs/v0.30.0/api/web-frame/'
-    - 'http://electron.atom.io/docs/v0.31.0/api/web-frame/'
-    - 'http://electron.atom.io/docs/v0.32.0/api/web-frame/'
-    - 'http://electron.atom.io/docs/v0.33.0/api/web-frame/'
-    - 'http://electron.atom.io/docs/v0.34.0/api/web-frame/'
-    - 'http://electron.atom.io/docs/v0.35.0/api/web-frame/'
-    - 'http://electron.atom.io/docs/v0.36.0/api/web-frame/'
-    - 'http://electron.atom.io/docs/v0.36.3/api/web-frame/'
-    - 'http://electron.atom.io/docs/v0.36.4/api/web-frame/'
-    - 'http://electron.atom.io/docs/v0.36.5/api/web-frame/'
-    - 'http://electron.atom.io/docs/v0.36.6/api/web-frame/'
-    - 'http://electron.atom.io/docs/v0.36.7/api/web-frame/'
-    - 'http://electron.atom.io/docs/v0.36.8/api/web-frame/'
-    - 'http://electron.atom.io/docs/v0.36.9/api/web-frame/'
-    - 'http://electron.atom.io/docs/v0.36.10/api/web-frame/'
-    - 'http://electron.atom.io/docs/v0.36.11/api/web-frame/'
-    - 'http://electron.atom.io/docs/v0.37.0/api/web-frame/'
-    - 'http://electron.atom.io/docs/v0.37.1/api/web-frame/'
-    - 'http://electron.atom.io/docs/v0.37.2/api/web-frame/'
-    - 'http://electron.atom.io/docs/v0.37.5/api/web-frame/'
+    - /docs/v0.24.0/api/web-frame/
+    - /docs/v0.25.0/api/web-frame/
+    - /docs/v0.26.0/api/web-frame/
+    - /docs/v0.27.0/api/web-frame/
+    - /docs/v0.28.0/api/web-frame/
+    - /docs/v0.29.0/api/web-frame/
+    - /docs/v0.30.0/api/web-frame/
+    - /docs/v0.31.0/api/web-frame/
+    - /docs/v0.32.0/api/web-frame/
+    - /docs/v0.33.0/api/web-frame/
+    - /docs/v0.34.0/api/web-frame/
+    - /docs/v0.35.0/api/web-frame/
+    - /docs/v0.36.0/api/web-frame/
+    - /docs/v0.36.3/api/web-frame/
+    - /docs/v0.36.4/api/web-frame/
+    - /docs/v0.36.5/api/web-frame/
+    - /docs/v0.36.6/api/web-frame/
+    - /docs/v0.36.7/api/web-frame/
+    - /docs/v0.36.8/api/web-frame/
+    - /docs/v0.36.9/api/web-frame/
+    - /docs/v0.36.10/api/web-frame/
+    - /docs/v0.36.11/api/web-frame/
+    - /docs/v0.37.0/api/web-frame/
+    - /docs/v0.37.1/api/web-frame/
+    - /docs/v0.37.2/api/web-frame/
+    - /docs/v0.37.5/api/web-frame/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/web-frame.md'
 ---
 
