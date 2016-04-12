@@ -16,7 +16,7 @@
     "bootstrap": "script/bootstrap",
     "test": "tape spec/*.js | tap-spec",
     "rels-vers": "script/releases && script/versions",
-    "docs": "script/docs --latest",
+    "docs": "script/docs",
     "lastest": "npm run rels-vers && npm run docs"
   },
   "homepage": "http://electron.atom.io",
