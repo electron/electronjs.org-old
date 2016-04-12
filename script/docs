@@ -134,12 +134,11 @@ function constructSourceUrl (path) {
   return baseUrl + source.join('/')
 }
 
-function constructDocMetadata (path) {
-  var pathArray = path.split('/').splice(0, 2)
-
+function constructDocMetadata (filepath) {
+  var pathArray = filepath.split('/').splice(2, 2)
   var redirects = jekyllConfig.available_versions.map (v => {
     return `http://electron.atom.io/`
-      + path.split('/').splice(1).join('/').replace('docs/', `docs/${v}/`).replace('.md', '/')
+      + filepath.split('/').splice(1).join('/').replace('docs/', `docs/${v}/`).replace('.md', '/')
   })
 
   return {
