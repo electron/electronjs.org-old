@@ -1,7 +1,7 @@
 ---
 version: v0.37.5
-category: Electron-Electron-55b8e9a
-title: Docs
+category: Development
+title: 'Build System-Overview'
 redirect-from:
     - 'http://electron.atom.io/docs/v0.24.0/development/build-system-overview/'
     - 'http://electron.atom.io/docs/v0.25.0/development/build-system-overview/'

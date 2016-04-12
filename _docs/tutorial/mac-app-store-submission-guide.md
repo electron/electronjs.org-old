@@ -1,7 +1,7 @@
 ---
 version: v0.37.5
-category: Electron-Electron-55b8e9a
-title: Docs
+category: Tutorial
+title: 'Mac App-Store-Submission-Guide'
 redirect-from:
     - 'http://electron.atom.io/docs/v0.24.0/tutorial/mac-app-store-submission-guide/'
     - 'http://electron.atom.io/docs/v0.25.0/tutorial/mac-app-store-submission-guide/'

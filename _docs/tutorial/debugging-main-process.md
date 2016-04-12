@@ -1,7 +1,7 @@
 ---
 version: v0.37.5
-category: Electron-Electron-55b8e9a
-title: Docs
+category: Tutorial
+title: 'Debugging Main-Process'
 redirect-from:
     - 'http://electron.atom.io/docs/v0.24.0/tutorial/debugging-main-process/'
     - 'http://electron.atom.io/docs/v0.25.0/tutorial/debugging-main-process/'

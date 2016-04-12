@@ -1,7 +1,7 @@
 ---
 version: v0.37.5
-category: Electron-Electron-55b8e9a
-title: Docs
+category: Development
+title: 'Atom Shell-vs-Node-Webkit'
 redirect-from:
     - 'http://electron.atom.io/docs/v0.24.0/development/atom-shell-vs-node-webkit/'
     - 'http://electron.atom.io/docs/v0.25.0/development/atom-shell-vs-node-webkit/'
