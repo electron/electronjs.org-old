@@ -10,7 +10,7 @@ permalink: blog/
   </div>
 </section>
 
-<section class='blog-index'>
+<section class='blog blog-index'>
   <div class='container'>
     <ul class="blog-index-list">
       {% for post in site.posts %}

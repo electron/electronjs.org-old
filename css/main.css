@@ -378,6 +378,10 @@ footer {
     vertical-align: middle;
 }
 
+.blog img {
+  max-width: 100%;
+}
+
 .blog-index {
   background-color: #fff;
   color: #39555D;
@@ -399,4 +403,23 @@ footer {
 .blog-index-list time {
   display: block;
   font-size: .5em;
+}
+
+.blog-post {
+  background-color: #fff;
+  color: #39555D;
+}
+
+.blog-post time {
+  display: block;
+  font-size: 1.25em;
+  margin-bottom: 1em;
+  color: #8D9496;
+}
+
+.blog-post pre code,
+.blog-post code {
+  color: #38535B;
+  border: none;
+  background-color: #FAF7F3;
 }
