@@ -389,3 +389,60 @@ footer {
   color: #fff;
   vertical-align: middle;
 }
+
+
+/* Blog
+   ------------------------------------------ */
+
+.blog-header .electron-icon {
+    height: 1.5em;
+    margin-right: 0.4em;
+    margin-top: -0.4em;
+    vertical-align: middle;
+}
+
+.blog img {
+  max-width: 100%;
+}
+
+.blog-index {
+  background-color: #fff;
+  color: #39555D;
+}
+
+.blog-index-list {
+  list-style: none;
+}
+
+.blog-index-list li {
+  margin-bottom: 5rem;
+}
+
+.blog-index-list h2 {
+  font-size: 2em;
+  margin-bottom: 0;
+}
+
+.blog-index-list time {
+  display: block;
+  font-size: .5em;
+}
+
+.blog-post {
+  background-color: #fff;
+  color: #39555D;
+}
+
+.blog-post time {
+  display: block;
+  font-size: 1.25em;
+  margin-bottom: 1em;
+  color: #8D9496;
+}
+
+.blog-post pre code,
+.blog-post code {
+  color: #38535B;
+  border: none;
+  background-color: #FAF7F3;
+}
