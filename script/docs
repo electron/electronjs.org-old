@@ -74,6 +74,7 @@ function extractDocs (callback) {
       if (name.match('docs/api')) return false
       if (name.match('docs/development')) return false
       if (name.match('docs/tutorial')) return false
+      if (name.match('faq')) return false
       return true
     },
     mapStream: function (fileStream, header) {
@@ -136,17 +137,21 @@ function constructSourceUrl (path) {
 
 function constructDocMetadata (filepath) {
   var pathArray = filepath.split('/').splice(2, 2)
-  var redirects = jekyllConfig.available_versions.concat('latest')
+  var metadata = {
+    version: version,
+    category: toTitleCase(pathArray[0]).replace(/Api/, 'API').replace(/Faq/, 'FAQ'),
+    title: formatDocTitle(pathArray[1]).replace(/Faq/, 'FAQ'),
+  }
+
+  if (metadata.category === 'FAQ') metadata.permalink = '/faq/'
+
+  metadata.redirect_from = jekyllConfig.available_versions.concat('latest')
     .map(function (v) {
       return `/` + filepath.split('/').splice(1).join('/')
         .replace('docs/', `docs/${v}/`).replace('.md', '/')
     })
-  return {
-    version: version,
-    category: (pathArray[0] === 'api') ? 'API' : toTitleCase(pathArray[0]),
-    title: formatDocTitle(pathArray[1]),
-    redirect_from: redirects
-  }
+
+  return metadata
 }
 
 function formatDocTitle (filename) {
