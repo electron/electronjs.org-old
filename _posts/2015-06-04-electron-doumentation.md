@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Electron Documentation
 author: jlord
 ---
