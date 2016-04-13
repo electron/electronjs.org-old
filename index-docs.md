@@ -30,3 +30,12 @@ title: Electron Documentation
   {% endif %}
 {% endfor %}
 </ul>
+
+
+## Older Versions
+
+{% for version in site.available_versions reversed %}
+- [{{ version }}](https://github.com/electron/electron/tree/{{ version }}/docs)
+{% endfor %}
+
+See all of the [latest docs on one page](/docs/all).
