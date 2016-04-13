@@ -28,6 +28,8 @@ redirect_from:
     - /docs/v0.37.0/tutorial/debugging-main-process/
     - /docs/v0.37.1/tutorial/debugging-main-process/
     - /docs/v0.37.2/tutorial/debugging-main-process/
+    - /docs/v0.37.3/tutorial/debugging-main-process/
+    - /docs/v0.37.4/tutorial/debugging-main-process/
     - /docs/v0.37.5/tutorial/debugging-main-process/
     - /docs/latest/tutorial/debugging-main-process/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/debugging-main-process.md'

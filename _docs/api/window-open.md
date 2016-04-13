@@ -28,6 +28,8 @@ redirect_from:
     - /docs/v0.37.0/api/window-open/
     - /docs/v0.37.1/api/window-open/
     - /docs/v0.37.2/api/window-open/
+    - /docs/v0.37.3/api/window-open/
+    - /docs/v0.37.4/api/window-open/
     - /docs/v0.37.5/api/window-open/
     - /docs/latest/api/window-open/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/window-open.md'

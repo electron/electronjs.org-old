@@ -28,6 +28,8 @@ redirect_from:
     - /docs/v0.37.0/api/accelerator/
     - /docs/v0.37.1/api/accelerator/
     - /docs/v0.37.2/api/accelerator/
+    - /docs/v0.37.3/api/accelerator/
+    - /docs/v0.37.4/api/accelerator/
     - /docs/v0.37.5/api/accelerator/
     - /docs/latest/api/accelerator/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/accelerator.md'

@@ -28,6 +28,8 @@ redirect_from:
     - /docs/v0.37.0/tutorial/online-offline-events/
     - /docs/v0.37.1/tutorial/online-offline-events/
     - /docs/v0.37.2/tutorial/online-offline-events/
+    - /docs/v0.37.3/tutorial/online-offline-events/
+    - /docs/v0.37.4/tutorial/online-offline-events/
     - /docs/v0.37.5/tutorial/online-offline-events/
     - /docs/latest/tutorial/online-offline-events/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/online-offline-events.md'

@@ -28,6 +28,8 @@ redirect_from:
     - /docs/v0.37.0/api/app/
     - /docs/v0.37.1/api/app/
     - /docs/v0.37.2/api/app/
+    - /docs/v0.37.3/api/app/
+    - /docs/v0.37.4/api/app/
     - /docs/v0.37.5/api/app/
     - /docs/latest/api/app/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/app.md'

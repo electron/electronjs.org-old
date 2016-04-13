@@ -28,6 +28,8 @@ redirect_from:
     - /docs/v0.37.0/api/auto-updater/
     - /docs/v0.37.1/api/auto-updater/
     - /docs/v0.37.2/api/auto-updater/
+    - /docs/v0.37.3/api/auto-updater/
+    - /docs/v0.37.4/api/auto-updater/
     - /docs/v0.37.5/api/auto-updater/
     - /docs/latest/api/auto-updater/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/auto-updater.md'

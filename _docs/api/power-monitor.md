@@ -28,6 +28,8 @@ redirect_from:
     - /docs/v0.37.0/api/power-monitor/
     - /docs/v0.37.1/api/power-monitor/
     - /docs/v0.37.2/api/power-monitor/
+    - /docs/v0.37.3/api/power-monitor/
+    - /docs/v0.37.4/api/power-monitor/
     - /docs/v0.37.5/api/power-monitor/
     - /docs/latest/api/power-monitor/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/power-monitor.md'

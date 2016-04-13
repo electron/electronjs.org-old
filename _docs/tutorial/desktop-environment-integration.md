@@ -28,6 +28,8 @@ redirect_from:
     - /docs/v0.37.0/tutorial/desktop-environment-integration/
     - /docs/v0.37.1/tutorial/desktop-environment-integration/
     - /docs/v0.37.2/tutorial/desktop-environment-integration/
+    - /docs/v0.37.3/tutorial/desktop-environment-integration/
+    - /docs/v0.37.4/tutorial/desktop-environment-integration/
     - /docs/v0.37.5/tutorial/desktop-environment-integration/
     - /docs/latest/tutorial/desktop-environment-integration/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/desktop-environment-integration.md'

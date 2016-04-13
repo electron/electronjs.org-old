@@ -28,6 +28,8 @@ redirect_from:
     - /docs/v0.37.0/api/remote/
     - /docs/v0.37.1/api/remote/
     - /docs/v0.37.2/api/remote/
+    - /docs/v0.37.3/api/remote/
+    - /docs/v0.37.4/api/remote/
     - /docs/v0.37.5/api/remote/
     - /docs/latest/api/remote/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/remote.md'

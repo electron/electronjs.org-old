@@ -28,6 +28,8 @@ redirect_from:
     - /docs/v0.37.0/api/environment-variables/
     - /docs/v0.37.1/api/environment-variables/
     - /docs/v0.37.2/api/environment-variables/
+    - /docs/v0.37.3/api/environment-variables/
+    - /docs/v0.37.4/api/environment-variables/
     - /docs/v0.37.5/api/environment-variables/
     - /docs/latest/api/environment-variables/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/environment-variables.md'

@@ -28,6 +28,8 @@ redirect_from:
     - /docs/v0.37.0/api/crash-reporter/
     - /docs/v0.37.1/api/crash-reporter/
     - /docs/v0.37.2/api/crash-reporter/
+    - /docs/v0.37.3/api/crash-reporter/
+    - /docs/v0.37.4/api/crash-reporter/
     - /docs/v0.37.5/api/crash-reporter/
     - /docs/latest/api/crash-reporter/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/crash-reporter.md'

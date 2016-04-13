@@ -28,6 +28,8 @@ redirect_from:
     - /docs/v0.37.0/tutorial/application-distribution/
     - /docs/v0.37.1/tutorial/application-distribution/
     - /docs/v0.37.2/tutorial/application-distribution/
+    - /docs/v0.37.3/tutorial/application-distribution/
+    - /docs/v0.37.4/tutorial/application-distribution/
     - /docs/v0.37.5/tutorial/application-distribution/
     - /docs/latest/tutorial/application-distribution/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/application-distribution.md'

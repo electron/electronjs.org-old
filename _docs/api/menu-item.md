@@ -28,6 +28,8 @@ redirect_from:
     - /docs/v0.37.0/api/menu-item/
     - /docs/v0.37.1/api/menu-item/
     - /docs/v0.37.2/api/menu-item/
+    - /docs/v0.37.3/api/menu-item/
+    - /docs/v0.37.4/api/menu-item/
     - /docs/v0.37.5/api/menu-item/
     - /docs/latest/api/menu-item/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/menu-item.md'

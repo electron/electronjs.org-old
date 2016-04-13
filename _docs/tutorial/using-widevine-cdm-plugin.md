@@ -28,6 +28,8 @@ redirect_from:
     - /docs/v0.37.0/tutorial/using-widevine-cdm-plugin/
     - /docs/v0.37.1/tutorial/using-widevine-cdm-plugin/
     - /docs/v0.37.2/tutorial/using-widevine-cdm-plugin/
+    - /docs/v0.37.3/tutorial/using-widevine-cdm-plugin/
+    - /docs/v0.37.4/tutorial/using-widevine-cdm-plugin/
     - /docs/v0.37.5/tutorial/using-widevine-cdm-plugin/
     - /docs/latest/tutorial/using-widevine-cdm-plugin/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/using-widevine-cdm-plugin.md'

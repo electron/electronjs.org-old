@@ -28,6 +28,8 @@ redirect_from:
     - /docs/v0.37.0/api/download-item/
     - /docs/v0.37.1/api/download-item/
     - /docs/v0.37.2/api/download-item/
+    - /docs/v0.37.3/api/download-item/
+    - /docs/v0.37.4/api/download-item/
     - /docs/v0.37.5/api/download-item/
     - /docs/latest/api/download-item/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/download-item.md'

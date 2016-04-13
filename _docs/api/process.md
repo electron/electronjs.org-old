@@ -28,6 +28,8 @@ redirect_from:
     - /docs/v0.37.0/api/process/
     - /docs/v0.37.1/api/process/
     - /docs/v0.37.2/api/process/
+    - /docs/v0.37.3/api/process/
+    - /docs/v0.37.4/api/process/
     - /docs/v0.37.5/api/process/
     - /docs/latest/api/process/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/process.md'

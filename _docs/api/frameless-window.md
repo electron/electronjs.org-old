@@ -28,6 +28,8 @@ redirect_from:
     - /docs/v0.37.0/api/frameless-window/
     - /docs/v0.37.1/api/frameless-window/
     - /docs/v0.37.2/api/frameless-window/
+    - /docs/v0.37.3/api/frameless-window/
+    - /docs/v0.37.4/api/frameless-window/
     - /docs/v0.37.5/api/frameless-window/
     - /docs/latest/api/frameless-window/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/frameless-window.md'

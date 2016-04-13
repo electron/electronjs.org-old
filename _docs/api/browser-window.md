@@ -28,6 +28,8 @@ redirect_from:
     - /docs/v0.37.0/api/browser-window/
     - /docs/v0.37.1/api/browser-window/
     - /docs/v0.37.2/api/browser-window/
+    - /docs/v0.37.3/api/browser-window/
+    - /docs/v0.37.4/api/browser-window/
     - /docs/v0.37.5/api/browser-window/
     - /docs/latest/api/browser-window/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/browser-window.md'

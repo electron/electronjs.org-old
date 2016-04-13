@@ -28,6 +28,8 @@ redirect_from:
     - /docs/v0.37.0/development/build-system-overview/
     - /docs/v0.37.1/development/build-system-overview/
     - /docs/v0.37.2/development/build-system-overview/
+    - /docs/v0.37.3/development/build-system-overview/
+    - /docs/v0.37.4/development/build-system-overview/
     - /docs/v0.37.5/development/build-system-overview/
     - /docs/latest/development/build-system-overview/
 source_url: 'https://github.com/electron/electron/blob/master/docs/development/build-system-overview.md'

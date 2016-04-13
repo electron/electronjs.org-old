@@ -28,6 +28,8 @@ redirect_from:
     - /docs/v0.37.0/tutorial/using-native-node-modules/
     - /docs/v0.37.1/tutorial/using-native-node-modules/
     - /docs/v0.37.2/tutorial/using-native-node-modules/
+    - /docs/v0.37.3/tutorial/using-native-node-modules/
+    - /docs/v0.37.4/tutorial/using-native-node-modules/
     - /docs/v0.37.5/tutorial/using-native-node-modules/
     - /docs/latest/tutorial/using-native-node-modules/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/using-native-node-modules.md'

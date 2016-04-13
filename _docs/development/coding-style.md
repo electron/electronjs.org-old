@@ -28,6 +28,8 @@ redirect_from:
     - /docs/v0.37.0/development/coding-style/
     - /docs/v0.37.1/development/coding-style/
     - /docs/v0.37.2/development/coding-style/
+    - /docs/v0.37.3/development/coding-style/
+    - /docs/v0.37.4/development/coding-style/
     - /docs/v0.37.5/development/coding-style/
     - /docs/latest/development/coding-style/
 source_url: 'https://github.com/electron/electron/blob/master/docs/development/coding-style.md'
