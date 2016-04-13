@@ -2,7 +2,7 @@
 version: v0.37.5
 category: Tutorial
 title: 'Devtools Extension'
-redirect-from:
+redirect_from:
     - /docs/v0.24.0/tutorial/devtools-extension/
     - /docs/v0.25.0/tutorial/devtools-extension/
     - /docs/v0.26.0/tutorial/devtools-extension/

@@ -2,7 +2,7 @@
 version: v0.37.5
 category: API
 title: Protocol
-redirect-from:
+redirect_from:
     - /docs/v0.24.0/api/protocol/
     - /docs/v0.25.0/api/protocol/
     - /docs/v0.26.0/api/protocol/

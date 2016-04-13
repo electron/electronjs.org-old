@@ -2,7 +2,7 @@
 version: v0.37.5
 category: Development
 title: 'Build System-Overview'
-redirect-from:
+redirect_from:
     - /docs/v0.24.0/development/build-system-overview/
     - /docs/v0.25.0/development/build-system-overview/
     - /docs/v0.26.0/development/build-system-overview/

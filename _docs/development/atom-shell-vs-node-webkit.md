@@ -2,7 +2,7 @@
 version: v0.37.5
 category: Development
 title: 'Atom Shell-vs-Node-Webkit'
-redirect-from:
+redirect_from:
     - /docs/v0.24.0/development/atom-shell-vs-node-webkit/
     - /docs/v0.25.0/development/atom-shell-vs-node-webkit/
     - /docs/v0.26.0/development/atom-shell-vs-node-webkit/

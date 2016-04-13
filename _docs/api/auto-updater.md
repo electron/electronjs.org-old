@@ -2,7 +2,7 @@
 version: v0.37.5
 category: API
 title: 'Auto Updater'
-redirect-from:
+redirect_from:
     - /docs/v0.24.0/api/auto-updater/
     - /docs/v0.25.0/api/auto-updater/
     - /docs/v0.26.0/api/auto-updater/

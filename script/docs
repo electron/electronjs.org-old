@@ -136,15 +136,16 @@ function constructSourceUrl (path) {
 
 function constructDocMetadata (filepath) {
   var pathArray = filepath.split('/').splice(2, 2)
-  var redirects = jekyllConfig.available_versions.concat('latest').map(v => {
-    return `/`
-    + filepath.split('/').splice(1).join('/').replace('docs/', `docs/${v}/`).replace('.md', '/')
-  })
+  var redirects = jekyllConfig.available_versions.concat('latest')
+    .map(function (v) {
+      return `/` + filepath.split('/').splice(1).join('/')
+        .replace('docs/', `docs/${v}/`).replace('.md', '/')
+    })
   return {
     version: version,
     category: (pathArray[0] === 'api') ? 'API' : toTitleCase(pathArray[0]),
     title: formatDocTitle(pathArray[1]),
-    'redirect-from': redirects
+    redirect_from: redirects
   }
 }
 

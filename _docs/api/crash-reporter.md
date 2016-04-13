@@ -2,7 +2,7 @@
 version: v0.37.5
 category: API
 title: 'Crash Reporter'
-redirect-from:
+redirect_from:
     - /docs/v0.24.0/api/crash-reporter/
     - /docs/v0.25.0/api/crash-reporter/
     - /docs/v0.26.0/api/crash-reporter/

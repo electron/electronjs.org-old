@@ -2,7 +2,7 @@
 version: v0.37.5
 category: Tutorial
 title: 'Mac App-Store-Submission-Guide'
-redirect-from:
+redirect_from:
     - /docs/v0.24.0/tutorial/mac-app-store-submission-guide/
     - /docs/v0.25.0/tutorial/mac-app-store-submission-guide/
     - /docs/v0.26.0/tutorial/mac-app-store-submission-guide/
