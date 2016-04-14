@@ -1,7 +1,8 @@
 title: Electron
 email: atom@github.com
 description: 'Build cross platform desktop apps with web technologies'
-baseurl: 'http://electron.atom.io'
+url: http://electron.atom.io
+baseurl:
 twitter_username: ElectronJS
 github_username: atom
 excerpt_separator: "---"
