@@ -4,7 +4,7 @@
 body {
   font-family: "Helvetica Neue", "Arial", sans-serif;
   color: #45828E;
-  background-color: #A5ECFA;
+  background-color: #fff;
 }
 
 h1, h2, h3, h4 {
@@ -23,6 +23,10 @@ a:hover {
 
 a.no-hover-dec:hover {
   text-decoration: none;
+}
+
+img {
+  max-width: 100%;
 }
 
 .inline-list {
@@ -82,7 +86,7 @@ section {
 }
 
 .hero, .built-on, .get-started,
-.electron-does, .more-features {
+.electron-does, .features {
   text-align: center;
 }
 
@@ -114,67 +118,83 @@ header a:hover {
 /* Hero */
 
 .hero {
-  padding: 160px 0 100px 0;
-}
-
-.hero .mega-octicon {
-  font-size: 24px;
-}
-
-.electron-word {
-  background: url('../images/electron-logo.svg') no-repeat 0 0, center;
-  background-size: 100% auto;
-  padding-bottom: 15.3%; /* Keeps aspect ratio. Original img ratio: 980x150. 150/980*100=15.3% */
-  margin-bottom: 20px;
-  width: 100%;
-  max-width: 800px;
-  display: inline-block;
-  font: 0/0 a;
-  color: transparent;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-/* More Features */
-
-.more-features {
-  background-color: #7BDCEF;
-}
-
-.more-features .features {
-  padding: 20px 0 0 0;
-}
-
-.more-features .features .columns {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.more-features span {
-  padding: 20px;
-  width: 30px;
-  height: 30px;
-  border-radius: 990px;
-  margin-bottom: 20px;
+  padding: 10rem 0;
+  border-bottom: 1px solid hsl(190, 89%, 73%);
   background-color: #A5ECFA;
 }
 
-.octicon-gift::before {
+.hero-img {
+  max-width: 100%;
+}
+
+.hero-img-1-0 {
+  margin-top: 3rem;
+}
+
+.hero-title {
+  font-size: 2em;
+  margin-top: 3rem;
+  color: #3A6167;
+}
+.hero-sub-title {
+  color: #5796A0;
+  font-size: .86em;
+}
+
+
+/* Electron Does */
+
+.electron-does {}
+
+.electron-does img {
+  padding-bottom: 20px;
+}
+
+.other-logo {
+  width: 72px;
+  padding: 10px;
+}
+
+/* Features */
+
+.features {
+  padding: 10rem 0;
+  border: 1px solid hsl(34, 41%, 88%);
+  background-color: #FAF7F3;
+}
+
+.features h3 {
+  font-size: 2em;
+}
+
+.features-list {
+  margin: 2rem 0 6rem 0;
+}
+
+.features-list .mega-octicon {
+  padding: 20px;
+  margin: 10px;
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  margin-bottom: 0.5em;
+  border: 2px solid #73C7D8;
+  box-sizing: border-box;
+}
+
+.features-list .octicon-gift::before {
   position: relative;
   top: -1px;
 }
 
-.octicon-tools::before, .octicon-bug::before,
-.octicon-evice-desktop::before {
+.features-list .octicon-tools::before,
+.features-list .octicon-bug::before,
+.features-list .octicon-evice-desktop::before {
   position: relative;
   left: -1px;
 }
 
 /* Built With */
-
-.built-on {
-  background-color: #FAF7F3;
-}
 
 .built-on li {
   text-align: left;
@@ -184,7 +204,6 @@ header a:hover {
 
 .electron-does img {
   padding-bottom: 20px;
-  max-width: 100%;
 }
 
 .other-logo {
@@ -195,6 +214,10 @@ header a:hover {
 
 /* Get Started
    ------------------------------------------ */
+.get-started {
+  background-color: #FAF7F3;
+  border: 1px solid hsl(34, 41%, 88%);
+}
 
 .electron-vers {
   display: inline-block;
@@ -365,4 +388,64 @@ footer {
   border-radius: 2px;
   color: #fff;
   vertical-align: middle;
+}
+
+
+/* Blog
+   ------------------------------------------ */
+
+.blog-header {
+  background-color: #A5ECFA;
+}
+.blog-header .electron-icon {
+  height: 1.5em;
+  margin-right: 0.4em;
+  margin-top: -0.4em;
+  vertical-align: middle;
+}
+
+.blog img {
+  max-width: 100%;
+}
+
+.blog-index {
+  background-color: #fff;
+  color: #39555D;
+}
+
+.blog-index-list {
+  list-style: none;
+}
+
+.blog-index-list li {
+  margin-bottom: 5rem;
+}
+
+.blog-index-list h2 {
+  font-size: 2em;
+  margin-bottom: 0;
+}
+
+.blog-index-list time {
+  display: block;
+  font-size: .5em;
+}
+
+.blog-post {
+  background-color: #fff;
+  color: #39555D;
+}
+
+.blog-post time {
+  display: block;
+  font-size: 1.25em;
+  margin-bottom: 1em;
+  color: #8D9496;
+}
+
+.blog-post pre code,
+.blog-post code {
+  color: #38535B;
+  border: none;
+  background-color: #FAF7F3;
 }

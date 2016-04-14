@@ -2,20 +2,11 @@
 layout: page
 ---
 
-<section >
+<section class='blog blog-post'>
   <div class='container'>
     <div class='row'>
-      <div class='twelve columns'>
-        <h1><img class="electron-icon" src='/images/electron-icon.svg'>Electron Blog</h1>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class='blog'>
-  <div class='container'>
-    <div class='row'>
-      <div class='ten columns'>
+      <div class='ten columns offset-by-one'>
+        <h1>{{ page.title }}</h1>
         <time>{{ page.date | date: '%B %d, %Y' }}</time>
         {{ content }}
       </div>

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: What's New in Electron
 author: jlord
 ---

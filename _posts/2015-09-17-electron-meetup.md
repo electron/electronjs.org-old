@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Electron Meetup at GitHub HQ
 author: jlord
 ---
