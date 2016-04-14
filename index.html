@@ -6,13 +6,13 @@ layout: default
     <div class='container'>
       <div class='twelve columns'>
         <div class='one-half column'>
-          <img class='hero-img' src='../images/hero-electron.svg' alt="Electron">
+          <img class='hero-img' src='{{ site.baseurl }}/images/hero-electron.svg' alt="Electron">
           <h1 class='hero-title'>Build cross platform desktop apps
             <span class='hero-sub-title'>with web technologies</span>
           </h1>
         </div>
         <div class='one-half column'>
-          <img class='hero-img hero-img-1-0' src='../images/hero-1-0.svg' alt="1.0">
+          <img class='hero-img hero-img-1-0' src='{{ site.baseurl }}/images/hero-1-0.svg' alt="1.0">
         </div>
       </div>
     </div>
@@ -22,17 +22,17 @@ layout: default
     <div class='container'>
       <div class='row'>
         <div class='four columns'>
-          <img src='../images/browser.png' width='150px'>
+          <img src='{{ site.baseurl }}/images/browser.png' width='150px'>
           <h4>Web Tech</h4>
           <p>Use HTML, CSS, and JavaScript with Chromium and Node.js to build your app.</p>
         </div>
         <div class='four columns'>
-          <img src='../images/fork.png' width='99px'>
+          <img src='{{ site.baseurl }}/images/fork.png' width='99px'>
           <h4>Open Source</h4>
           <p>Electron is open source; maintained by GitHub and an active community.</p>
         </div>
         <div class='four columns'>
-          <img src='../images/os-box.png' width='150px'>
+          <img src='{{ site.baseurl }}/images/os-box.png' width='150px'>
           <h4>Cross Platform</h4>
           <p>Electron apps build and run on Mac, Windows, and Linux.</p>
         </div>
@@ -70,7 +70,7 @@ layout: default
         </div>
       </div>
       <div class='row'>
-        <img src='../images/flow.svg' alt="Electron flow">
+        <img src='{{ site.baseurl }}/images/flow.svg' alt="Electron flow">
       </div>
     </div>
 
@@ -92,7 +92,7 @@ layout: default
             {% for app in site.data.apps %}
               {% unless app.featuredOpenSource %}
                 <a href='{{ app.website }}' target='_blank' title='{{ app.name }}'>
-                  <img class='other-logo' src='../images/{{ app.icon }}' alt='{{ app.name }}'>
+                  <img class='other-logo' src='{{ site.baseurl }}/images/{{ app.icon }}' alt='{{ app.name }}'>
                 </a>
               {% endunless %}
             {% endfor %}
@@ -207,7 +207,7 @@ $ npm install && npm start
     <div class='container'>
       <div class='row'>
         <div class='six columns'>
-          <img src='../images/electron-api-demos.png'>
+          <img src='{{ site.baseurl }}/images/electron-api-demos.png'>
         </div>
         <div class='six columns'>
           <h3>Electron API Demos</h3>
