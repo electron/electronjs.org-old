@@ -3,7 +3,7 @@ email: electron@github.com
 description: 'Build cross platform desktop apps with web technologies'
 baseurl: 'http://electron.atom.io'
 twitter_username: ElectronJS
-github_username: atom
+github_username: electron
 highlighter: pygments
 markdown: redcarpet
 gems:
