@@ -55,8 +55,10 @@
 // Utilities
 // @import "primer-css/scss/flex-table";
 // @import "primer-css/scss/truncate";
-// @import "primer-css/scss/utilities/utilities";
-// @import "basecoat/scss/utility"; // Basecoat override
+@import "primer-css/scss/utilities/utilities";
+@import "basecoat/scss/utility"; // Basecoat override
 
 
 // Electron -----------------------------------
+
+@import "electron";

@@ -1,0 +1,17 @@
+
+.site-header-icon {
+  width: 48px;
+  height: 48px;
+  vertical-align: middle;
+  margin-top: -4px; // visually align
+  margin-right: 0.4em;
+
+  .svg-fill {
+    fill: currentColor;
+  }
+  .svg-stroke {
+    stroke: currentColor;
+    stroke-width: 1.2;
+    stroke-linecap: round;
+  }
+}
