@@ -2,7 +2,8 @@
 # Front matter comment to ensure Jekyll properly reads file.
 ---
 
-@import "octicons/octicons/octicons.css";
+$octicons-font-path: "../bower_components/octicons/octicons/";
+@import "octicons/octicons/octicons.scss";
 
 
 // Global requirements
