@@ -12,6 +12,7 @@
     - "github"
   license: "MIT"
   icon: "atom.png"
+  featuredOnHomepage: true
 -
   name: "Slack"
   description: "A messaging app for teams"
@@ -20,6 +21,7 @@
   keywords: []
   license: ""
   icon: "slack.png"
+  featuredOnHomepage: true
 -
   name: "Visual Studio Code"
   description: "Open source code editor developed by Microsoft"
@@ -28,6 +30,7 @@
   keywords: []
   license: "MIT"
   icon: "vscode.png"
+  featuredOnHomepage: true
 -
   name: "Hive"
   description: "Home for busy teams"
@@ -52,6 +55,7 @@
   keywords: []
   license: ""
   icon: "mapbox.png"
+  featuredOnHomepage: true
 -
   name: "Nuclide"
   description: ""
@@ -68,6 +72,7 @@
   keywords: []
   license: ""
   icon: "kitematic.png"
+  featuredOnHomepage: true
 -
   name: "Pixate"
   description: ""
@@ -84,6 +89,7 @@
   keywords: []
   license: ""
   icon: "wagon.png"
+  featuredOnHomepage: true
 -
   name: "Particle Dev"
   description: ""
@@ -116,6 +122,7 @@
   keywords: []
   license: ""
   icon: "jibo.png"
+  featuredOnHomepage: true
 -
   name: "Ionic Lab"
   description: ""
@@ -151,11 +158,12 @@
 -
   name: "Nylas N1"
   description: ""
-  website: "https://www.nylas.com/n1"
+  website: "https://www.nylas.com"
   repository: ""
   keywords: []
   license: ""
   icon: "nylas.png"
+  featuredOnHomepage: true
 -
   name: "GitKraken"
   description: ""
@@ -164,6 +172,7 @@
   keywords: []
   license: ""
   icon: "gitkraken.png"
+  featuredOnHomepage: true
 -
   name: "AIRTAME"
   description: ""
@@ -292,6 +301,7 @@
   keywords: []
   license: ""
   icon: "wordpress.png"
+  featuredOnHomepage: true
 -
   name: "Hozz"
   description: ""
@@ -478,13 +488,14 @@
   license: ""
   icon: "catlight.png"
 -
-  name: "Brave Software"
+  name: "Brave Browser"
   description: ""
   website: "https://brave.com/"
   repository: ""
   keywords: []
   license: ""
   icon: "brave.png"
+  featuredOnHomepage: true
 -
   name: "Friends"
   description: "Peer to peer chat"
