@@ -14,7 +14,7 @@ var settings = {
   targetDir: tmp.dirSync().name
 }
 
-test('Fetch and write documentation with latest flag', function (t) {
+test('Fetch and write documentation', function (t) {
 
   t.plan(7)
 
@@ -30,7 +30,6 @@ test('Fetch and write documentation with latest flag', function (t) {
 
     var sampleDoc = fs.readFileSync(path.join(settings.targetDir, 'api', 'accelerator.md'))
     var sampleFM = frontmatter.loadFront(sampleDoc)
-    console.log(sampleFM)
 
     t.equal(sampleFM.title, 'Accelerator', 'Frontmatter: Adds permalink to README.')
 
