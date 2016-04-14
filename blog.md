@@ -22,7 +22,7 @@ permalink: blog/
           {% for post in site.posts %}
             <li>
               <h2>
-                <a href="{{ post.url }}">{{ post.title }}</a>
+                <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a>
                 <time>{{ post.date | date: '%B %d, %Y' }}</time>
               </h2>
               <p>{{ post.excerpt}}</p>
