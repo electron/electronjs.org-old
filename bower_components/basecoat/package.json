@@ -1,0 +1,25 @@
+{
+  "name": "basecoat",
+  "version": "0.1.2-alpha",
+  "homepage": "",
+  "author": "GitHub, Inc.",
+  "scss": "./scss/basecoat.scss",
+  "license": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/github/basecoat.git"
+  },
+  "description": "",
+  "bugs": {
+    "url": "https://github.com/github/basecoat/issues"
+  },
+  "main": "",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-build-control": "^0.2.2",
+    "grunt-jekyll": "^0.4.2"
+  }
+}

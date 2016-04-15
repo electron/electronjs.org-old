@@ -1,0 +1,65 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+$octicons-font-path: "../bower_components/octicons/octicons/";
+@import "octicons/octicons/octicons.scss";
+
+
+// Global requirements
+@import "primer-css/scss/variables";
+@import "primer-css/scss/mixins";
+
+@import "basecoat/scss/variables"; // Basecoat override
+@import "basecoat/scss/mixins/breakpoints";
+@import "basecoat/scss/mixins/grid";
+@import "basecoat/scss/mixins/clearfix";
+// @import "basecoat/scss/mixins/grid-framework";
+
+
+// Basecoat
+@import "primer-css/scss/normalize";
+@import "primer-css/scss/base";
+@import "primer-css/scss/type";
+@import "primer-css/scss/layout";
+// @import "primer-css/scss/forms";
+
+
+@import "basecoat/scss/layout"; // Basecoat override
+@import "basecoat/scss/type"; // Basecoat override
+
+
+// Components
+// @import "primer-css/scss/alerts";
+// @import "primer-css/scss/avatars";
+// @import "primer-css/scss/blankslate";
+// @import "primer-css/scss/counter";
+// @import "primer-css/scss/buttons";
+// @import "primer-css/scss/menu";
+// @import "primer-css/scss/tabnav";
+// @import "primer-css/scss/filter-list";
+// @import "primer-css/scss/states";
+// @import "primer-css/scss/tooltips";
+
+// @import "basecoat/scss/buttons";
+// @import "basecoat/scss/animation";
+// @import "basecoat/scss/cards";
+// @import "basecoat/scss/code";
+// @import "basecoat/scss/footer";
+// @import "basecoat/scss/icons";
+// @import "basecoat/scss/page-headers";
+@import "basecoat/scss/navigation";
+// @import "basecoat/scss/section";
+// @import "basecoat/scss/tables";
+
+
+// Utilities
+// @import "primer-css/scss/flex-table";
+// @import "primer-css/scss/truncate";
+@import "primer-css/scss/utilities/utilities";
+@import "basecoat/scss/utility"; // Basecoat override
+
+
+// Electron -----------------------------------
+
+@import "electron";

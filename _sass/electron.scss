@@ -1,0 +1,46 @@
+
+// Colors
+
+$site-header-fg:        hsl(200, 33%, 66%);
+$site-header-fg-active: hsl(190, 88%, 80%);
+$site-header-bg:        hsl(230, 16%, 24%);
+
+
+.site-header {
+  color: $site-header-fg;
+  background-color: $site-header-bg;
+  border-bottom-color: darken($site-header-bg, 20%);
+}
+
+.site-header a {
+  color: inherit;
+  &.active,
+  &:hover {
+    color: $site-header-fg-active;
+  }
+  &:active {
+    color: darken($site-header-fg, 20%);
+  }
+}
+
+// Electron icon
+.site-header-icon {
+  width: 48px;
+  height: 48px;
+  vertical-align: middle;
+  margin-top: -4px; // visually align
+  margin-right: 0.4em;
+
+  .svg-fill {
+    fill: currentColor;
+  }
+  .svg-stroke {
+    stroke: currentColor;
+    stroke-width: 1.2;
+    stroke-linecap: round;
+  }
+}
+
+.site-header-nav .mega-octicon {
+  min-width: 32px; // stops jumping of the nav when loading the page
+}

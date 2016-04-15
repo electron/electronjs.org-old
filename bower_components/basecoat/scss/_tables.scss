@@ -1,0 +1,41 @@
+.data-table {
+  width: 100%;
+  margin-top: $spacer3;
+  border-collapse: initial;
+  border: 1px solid $gray-2;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+
+  td,
+  th {
+    padding: 0.5em;
+    border-right: 1px solid $gray-2;
+    border-bottom: 1px solid $gray-2;
+
+    &:last-child {
+      border-right: 0;
+    }
+  }
+
+
+  th {
+    font-size: 14px;
+    font-weight: 400;
+    color: gray-7;
+    text-align: left;
+  }
+
+  tbody {
+    th {
+      width: 20%;
+    }
+  }
+
+  tr {
+    &:last-child {
+      td {
+        border-bottom: 0;
+      }
+    }
+  }
+}

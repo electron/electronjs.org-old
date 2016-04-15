@@ -1,0 +1,47 @@
+// Flexible images
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// Pre-built Layouts
+
+// If you are against using grid classes, you can create a layout in CSS.
+// The below class would be marked up like this:
+// <div class="container">
+//   <div class="layout-aside">
+//     <div class="main-col">
+//       This is the content in the main column.
+//     </div>
+//     <aside class="aside">
+//       This is the content in the aside
+//     </aside>
+//   </div>
+// </div>
+
+.layout-aside {
+  @include make-row();
+  
+  .main-col {
+    @include make-col(12);
+
+    @include breakpoint(md) {
+      @include make-col(8);
+    }
+
+    @include breakpoint(lg) {
+      @include make-col(9);
+    }
+  }
+  .aside {
+    @include make-col(12);
+
+    @include breakpoint(md) {
+      @include make-col(4);
+    }
+
+    @include breakpoint(lg) {
+      @include make-col(3);
+    }
+  }
+}

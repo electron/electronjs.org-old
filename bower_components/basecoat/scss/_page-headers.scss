@@ -1,0 +1,80 @@
+.minitron {
+  position: relative;
+  padding-bottom: $spacer4;
+  text-align: center;
+  background-color: $theme-color;
+
+  @include breakpoint(sm) {
+    padding-top: $spacer6;
+    text-align: left;
+  }
+
+  h1 {
+    margin: $spacer 0;
+
+    @include breakpoint(sm) {
+      font-size: 42px;
+    }
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 300;
+
+    @include breakpoint(sm) {
+      font-size: 20px;
+    }
+  }
+
+}
+
+.jumbotron {
+  position: relative;
+  padding-top: $spacer5;
+  padding-bottom: $spacer5;
+  background-color: $theme-color;
+
+  @include breakpoint(md) {
+    padding-top: $spacer8;
+    padding-bottom: $spacer8;
+  }
+
+  // Shadow
+  &:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    content: " ";
+    background-color: transparent;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15));
+    background-repeat: repeat-x;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  h1 {
+    font-size: 45px;
+    font-family: $display-font;
+    font-weight: 300;
+
+    @include breakpoint(md) {
+      font-size: 60px;
+    }
+
+    @include breakpoint(lg) {
+      font-size: 6vw;
+    }
+
+    @include breakpoint(xl) {
+      font-size: 5vw;
+    }
+  }
+
+  .hero-octicon {
+    font-size: 60px;
+    background-color: transparent;
+    border: 0;
+    display: inline-block;
+  }
+}
