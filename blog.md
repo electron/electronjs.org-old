@@ -8,7 +8,7 @@ permalink: blog/
   <div class='container'>
     <div class='row'>
       <div class='ten columns offset-by-one'>
-        <h1><img class="electron-icon" src='/images/electron-icon.svg'>Electron Blog</h1>
+        <h1><img class="electron-icon" src='{{ site.baseurl }}/images/electron-icon.svg'>Electron Blog</h1>
       </div>
     </div>
   </div>
@@ -22,7 +22,7 @@ permalink: blog/
           {% for post in site.posts %}
             <li>
               <h2>
-                <a href="{{ post.url }}">{{ post.title }}</a>
+                <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a>
                 <time>{{ post.date | date: '%B %d, %Y' }}</time>
               </h2>
               <p>{{ post.excerpt}}</p>
