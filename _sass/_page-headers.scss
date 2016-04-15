@@ -1,0 +1,45 @@
+
+.minitron,
+.jumbotron {
+  color: $header-fg;
+}
+
+.jumbotron {
+  // Shadow
+  &:after {
+    content: none;
+  }
+}
+
+
+.jumbotron-lead {
+  font-size: 2rem;
+  font-weight: 300;
+
+  @include breakpoint(md) { font-size: 2.5rem; }
+  @include breakpoint(lg) { font-size: 3rem; }
+}
+
+.jumbotron-lead-muted {
+  opacity: .6;
+  @include breakpoint(lg) {
+    display: block;
+  }
+}
+
+
+.jumbotron-img {
+  width: 100%;
+  max-width: 900px;
+}
+.jumbotron-img-hover {
+  display: none;
+}
+.jumbotron:hover {
+  .jumbotron-img {
+    display: none;
+  }
+  .jumbotron-img-hover {
+    display: initial;
+  }
+}

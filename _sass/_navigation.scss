@@ -1,25 +1,20 @@
 
-// Colors
-
-$site-header-fg:        hsl(200, 33%, 66%);
-$site-header-fg-active: hsl(190, 88%, 80%);
-$site-header-bg:        hsl(230, 16%, 24%);
-
+// Site Header
 
 .site-header {
-  color: $site-header-fg;
-  background-color: $site-header-bg;
-  border-bottom-color: darken($site-header-bg, 20%);
+  color: $header-fg;
+  background-color: $header-bg;
+  border-bottom-color: darken($header-bg, 10%);
 }
 
 .site-header a {
   color: inherit;
   &.active,
   &:hover {
-    color: $site-header-fg-active;
+    color: $header-fg-active;
   }
   &:active {
-    color: darken($site-header-fg, 20%);
+    color: darken($header-fg, 20%);
   }
 }
 
