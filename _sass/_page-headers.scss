@@ -32,11 +32,12 @@
 .jumbotron-img {
   width: 100%;
   max-width: 900px;
+  cursor: pointer;
 }
 .jumbotron-img-hover {
   display: none;
 }
-.jumbotron:hover {
+.jumbotron:active {
   .jumbotron-img {
     display: none;
   }
