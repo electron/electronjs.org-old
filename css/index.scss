@@ -6,11 +6,15 @@ $octicons-font-path: "../bower_components/octicons/octicons/";
 @import "octicons/octicons/octicons.scss";
 
 
-// Global requirements
+// Variables
 @import "primer-css/scss/variables";
+@import "basecoat/scss/variables"; // Basecoat override
+@import "variables"; // Electron override
+
+
+// Global requirements
 @import "primer-css/scss/mixins";
 
-@import "basecoat/scss/variables"; // Basecoat override
 @import "basecoat/scss/mixins/breakpoints";
 @import "basecoat/scss/mixins/grid";
 @import "basecoat/scss/mixins/clearfix";
@@ -23,7 +27,6 @@ $octicons-font-path: "../bower_components/octicons/octicons/";
 @import "primer-css/scss/type";
 @import "primer-css/scss/layout";
 // @import "primer-css/scss/forms";
-
 
 @import "basecoat/scss/layout"; // Basecoat override
 @import "basecoat/scss/type"; // Basecoat override
@@ -47,8 +50,8 @@ $octicons-font-path: "../bower_components/octicons/octicons/";
 // @import "basecoat/scss/code";
 // @import "basecoat/scss/footer";
 // @import "basecoat/scss/icons";
-// @import "basecoat/scss/page-headers";
 @import "basecoat/scss/navigation";
+@import "basecoat/scss/page-headers";
 // @import "basecoat/scss/section";
 // @import "basecoat/scss/tables";
 
@@ -62,4 +65,6 @@ $octicons-font-path: "../bower_components/octicons/octicons/";
 
 // Electron -----------------------------------
 
-@import "electron";
+
+@import "navigation";
+@import "page-headers";

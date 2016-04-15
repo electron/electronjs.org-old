@@ -2,7 +2,7 @@
    ------------------------------------------ */
 
 body {
-  font-family: "Helvetica Neue", "Arial", sans-serif;
+  /*font-family: "Helvetica Neue", "Arial", sans-serif;*/
   color: #45828E;
   background-color: #fff;
 }
@@ -121,7 +121,7 @@ header a:hover {
 
 /* Hero */
 
-.hero {
+/*.hero {
   padding: 10rem 0;
   border-bottom: 1px solid hsl(190, 89%, 73%);
   background-color: #A5ECFA;
@@ -143,7 +143,7 @@ header a:hover {
 .hero-sub-title {
   color: #5796A0;
   font-size: .86em;
-}
+}*/
 
 
 /* Electron Does */
