@@ -1,4 +1,29 @@
 
+// Colors
+
+$navy: #313443;
+$teal-dark: #47848F;
+$teal-light: #A2ECFB;
+
+
+.site-header {
+  color: $teal-light;
+  background-color: $navy;
+  border-bottom-color: $teal-dark;
+}
+
+.site-header a {
+  color: inherit;
+  &:hover {
+    color: lighten($teal-light, 10%);
+  }
+  &:active,
+  &.active {
+    color: darken($teal-light, 10%);
+  }
+}
+
+// Electron icon
 .site-header-icon {
   width: 48px;
   height: 48px;
