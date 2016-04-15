@@ -277,6 +277,7 @@
   keywords: []
   license: ""
   icon: "caret.png"
+  featuredOnHomepage: true
 -
   name: "Tweetman"
   description: ""

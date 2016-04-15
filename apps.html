@@ -13,18 +13,16 @@ permalink: /apps/
     </div>
 
     <div class='row'>
-      <div class='eight columns offset-by-two'>
+      <div class='ten columns offset-by-one'>
         <hr>
         <div class="app-icons">
           {% for app in site.data.apps %}
             {% unless app.featuredOpenSource %}
-              <a href='{{ app.website }}' target='_blank' title='{{ app.name }}'>
-                <img class='other-logo' src='{{ site.baseurl }}/images/{{ app.icon }}' alt='{{ app.name }}'>
-              </a>
+              {% include featured_app.html %}
             {% endunless %}
           {% endfor %}
         </div>
-        <p><a href="https://github.com/atom/electron.atom.io" target="_blank">Make a Pull Request</a> to add your application.</p>
+        <p><a href="https://github.com/electron/electron.atom.io/blob/gh-pages/CONTRIBUTING.md#adding-an-app-or-project-to-the-site" target="_blank">Make a Pull Request</a> to add your application.</p>
         <hr>
       </div>
     </div>
