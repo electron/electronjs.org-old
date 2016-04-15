@@ -22,8 +22,9 @@
 
 .jumbotron-lead-muted {
   opacity: .6;
-  @include breakpoint(lg) {
+  @include breakpoint(md) {
     display: block;
+    font-size: .8em;
   }
 }
 
