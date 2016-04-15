@@ -546,13 +546,14 @@
   featuredOpenSource: true
 -
   name: "Mojibar"
-  description: "Emoji searcher"
+  description: "Emoji searcher menubar app"
   website: "https://github.com/muan/mojibar"
-  repository: ""
-  keywords: []
-  license: ""
-  icon: ""
+  repository: "https://github.com/muan/mojibar"
+  keywords: ["emoji", "menubar", "open source"]
+  license: "MIT"
+  icon: "mojibar.png"
   featuredOpenSource: true
+  featuredOnHomepage: true
 -
   name: "Chronocube"
   description: "Rubik's cube timer"
