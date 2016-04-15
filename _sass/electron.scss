@@ -19,7 +19,7 @@ $teal-light: #A2ECFB;
   }
   &:active,
   &.active {
-    color: darken($teal-light, 10%);
+    color: desaturate(darken($teal-light, 20%), 50%);
   }
 }
 
