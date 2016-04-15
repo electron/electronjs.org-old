@@ -1,25 +1,25 @@
 
 // Colors
 
-$navy: #313443;
-$teal-dark: #47848F;
-$teal-light: #A2ECFB;
+$site-header-fg:        hsl(200, 33%, 66%);
+$site-header-fg-active: hsl(190, 88%, 80%);
+$site-header-bg:        hsl(230, 16%, 24%);
 
 
 .site-header {
-  color: $teal-light;
-  background-color: $navy;
-  border-bottom-color: $teal-dark;
+  color: $site-header-fg;
+  background-color: $site-header-bg;
+  border-bottom-color: darken($site-header-bg, 20%);
 }
 
 .site-header a {
   color: inherit;
+  &.active,
   &:hover {
-    color: lighten($teal-light, 10%);
+    color: $site-header-fg-active;
   }
-  &:active,
-  &.active {
-    color: desaturate(darken($teal-light, 20%), 50%);
+  &:active {
+    color: darken($site-header-fg, 20%);
   }
 }
 
