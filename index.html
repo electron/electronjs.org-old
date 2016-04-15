@@ -80,24 +80,26 @@ layout: default
     <div class='container'>
       <div class='row'>
         <div class='ten columns offset-by-one'>
-          <h3>Built on Electron</h3>
+          <h3>Apps built on Electron</h3>
           <h5>With Electron, creating a desktop application for your company or idea is easy. Initially developed for GitHub's <a href='https://atom.io' target='_blank'>Atom editor</a>, Electron has since been used to create applications by companies like Microsoft, Facebook, Slack, and Docker.</h5>
         </div>
       </div>
 
       <div class='row'>
-        <div class='eight columns offset-by-two'>
+        <div class='ten columns offset-by-one'>
           <hr>
           <div class="app-icons">
             {% for app in site.data.apps %}
-              {% unless app.featuredOpenSource %}
-                <a href='{{ app.website }}' target='_blank' title='{{ app.name }}'>
-                  <img class='other-logo' src='{{ site.baseurl }}/images/{{ app.icon }}' alt='{{ app.name }}'>
-                </a>
-              {% endunless %}
+              {% if app.featuredOnHomepage %}
+                {% include featured_app.html %}
+              {% endif %}
             {% endfor %}
           </div>
-          <p><a href="https://github.com/atom/electron.atom.io" target="_blank">Make a Pull Request</a> to add your application.</p>
+          <p>
+            <a href='{{ site.baseurl }}/apps'>View more apps</a>
+              or
+             <a href="https://github.com/electron/electron.atom.io/blob/gh-pages/CONTRIBUTING.md#adding-an-app-or-project-to-the-site">submit your own</a>.
+           </p>
           <hr>
         </div>
       </div>
