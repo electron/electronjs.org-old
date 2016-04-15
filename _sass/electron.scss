@@ -40,3 +40,7 @@ $site-header-bg:        hsl(230, 16%, 24%);
     stroke-linecap: round;
   }
 }
+
+.site-header-nav .mega-octicon {
+  min-width: 32px; // stops jumping of the nav when loading the page
+}
