@@ -55,7 +55,7 @@
   keywords: []
   license: ""
   icon: "mapbox.png"
-  featuredOnHomepage: true
+  disabled: true # https://twitter.com/zeke/status/720789437945221120
 -
   name: "Nuclide"
   description: ""
