@@ -148,15 +148,15 @@ header a:hover {
 
 /* Electron Does */
 
-.electron-does {}
+/*.electron-does {}
 
 .electron-does img {
   padding-bottom: 20px;
-}
+}*/
 
 /* Featured Apps with Icons */
 
-.featured-app {
+/*.featured-app {
   display: inline-block;
   vertical-align: top;
   width: 140px;
@@ -189,11 +189,11 @@ header a:hover {
 .featured-app:hover .featured-app-name {
   color: #45828E;
   opacity: 1;
-}
+}*/
 
 /* Featured Apps without Icons */
 
-.featured-app-textual {
+/*.featured-app-textual {
   display: inline-block;
   vertical-align: top;
   width: calc(50% - 60px);
@@ -209,11 +209,11 @@ header a:hover {
     width: 100%;
     padding: 5px 10px;
   }
-}
+}*/
 
 /* Features */
 
-.features {
+/*.features {
   padding: 10rem 0;
   border: 1px solid hsl(34, 41%, 88%);
   background-color: #FAF7F3;
@@ -248,24 +248,24 @@ header a:hover {
 .features-list .octicon-evice-desktop::before {
   position: relative;
   left: -1px;
-}
+}*/
 
 /* Built With */
 
-.built-on li {
+/*.built-on li {
   text-align: left;
-}
+}*/
 
 /* Electron Does */
 
-.electron-does img {
+/*.electron-does img {
   padding-bottom: 20px;
 }
 
 .other-logo {
   width: 72px;
   padding: 10px;
-}
+}*/
 
 
 /* Get Started
@@ -275,7 +275,7 @@ header a:hover {
   border: 1px solid hsl(34, 41%, 88%);
 }*/
 
-.electron-vers {
+/*.electron-vers {
   display: inline-block;
   border: 2px solid #448691;
   margin-bottom: 16px;
@@ -295,7 +295,7 @@ header a:hover {
 .main-ver {
   border-right: 2px solid #448691;
   font-weight: bold;
-}
+}*/
 
 /* Footer
    ------------------------------------------ */

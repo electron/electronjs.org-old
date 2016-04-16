@@ -13,11 +13,11 @@
 
 
 .jumbotron-lead {
-  font-size: 2rem;
+  font-size: 1.4rem;
   font-weight: 300;
 
-  @include breakpoint(md) { font-size: 2.5rem; }
-  @include breakpoint(lg) { font-size: 3rem; }
+  @include breakpoint(md) { font-size: 1.8rem; }
+  @include breakpoint(lg) { font-size: 2.4rem; }
 }
 
 .jumbotron-lead-muted {

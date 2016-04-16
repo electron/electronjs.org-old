@@ -2,3 +2,85 @@
 .featurette-illo {
   height: 120px; // TODO: Update Illus
 }
+
+
+/* Featured Apps with Icons */
+
+.featured-app {
+  display: inline-block;
+  vertical-align: top;
+  width: 140px;
+  padding: 0;
+  margin: 10px 20px;
+}
+
+.featured-app-logo-wrapper {
+  width: 120px;
+  height: 120px;
+  margin: 10px;
+}
+
+.featured-app-logo {
+  width: 100%;
+}
+
+.featured-app-name {
+  text-align: center;
+  text-decoration: none;
+  color: #45828E;
+  opacity: 0.6;
+  line-height: 1.3;
+  font-weight: 300;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.featured-app:hover .featured-app-name {
+  color: #45828E;
+  opacity: 1;
+}
+
+
+/* Featured Apps without Icons */
+
+.featured-app-textual {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(50% - 60px);
+  padding: 5px 30px;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 700px) {
+  .featured-app-textual {
+    width: 100%;
+    padding: 5px 10px;
+  }
+}
+
+
+/* Electron version */
+
+.electron-vers {
+  display: inline-block;
+  border: 1px solid $border-color;
+  border-radius: 3px;
+  font-family: 'Source Code Pro', monospace;
+  font-size: .85em;
+}
+
+.electron-vers span {
+  float: left;
+  display: inline-block;
+  line-height: 1;
+  padding: 6px 6px;
+}
+
+.main-ver {
+  border-right: inherit;
+  font-weight: bold;
+}
