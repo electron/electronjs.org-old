@@ -154,6 +154,8 @@ header a:hover {
   padding-bottom: 20px;
 }
 
+/* Featured Apps with Icons */
+
 .featured-app {
   display: inline-block;
   vertical-align: top;
@@ -187,6 +189,26 @@ header a:hover {
 .featured-app:hover .featured-app-name {
   color: #45828E;
   opacity: 1;
+}
+
+/* Featured Apps without Icons */
+
+.featured-app-textual {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(50% - 60px);
+  padding: 5px 30px;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 700px) {
+  .featured-app-textual {
+    width: 100%;
+    padding: 5px 10px;
+  }
 }
 
 /* Features */
