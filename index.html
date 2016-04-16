@@ -78,7 +78,7 @@ layout: default
 
       <hr>
 
-      <div class='row'>
+      <div>
         <div class="mb-4">
           {% for app in site.data.apps %}
             {% if app.featuredOnHomepage %}
@@ -95,7 +95,7 @@ layout: default
 
       <hr>
 
-      <div class='row'>
+      <div>
         <h2>Developers bring ideas to life</h2>
         <h3 class="mb-4">Interesting open source apps are built on Electron.</h3>
         {% include featured_open_source_apps.html %}
@@ -106,7 +106,7 @@ layout: default
 
   <section class='page-section' id='get-started'>
     <div class='container-narrow'>
-      <div class='row'>
+      <div>
         <h2>Get started with Electron</h2>
         <div id="electron-versions" class="electron-vers">
           <span class="main-ver">Electron: {{ site.latest_version }}</span>
@@ -133,10 +133,10 @@ $ npm install && npm start
       <hr>
 
       <div class='row'>
-        <div class='col-md-6'>
+        <div class='col-xs-12 col-md-6'>
           <img src='{{ site.baseurl }}/images/electron-api-demos.png'>
         </div>
-        <div class='col-md-6 text-left'>
+        <div class='col-xs-12 col-md-6 text-left'>
           <h3>Electron API Demos</h3>
           <p>This is a desktop app that interactively and with sample code demonstrates core features of the Electron API. Use this app to see what you can do with Electron.js and use the <a href="https://github.com/electron/electron-api-demos">source code</a> to learn how to create a basic Electron app.</p>
           <p>
