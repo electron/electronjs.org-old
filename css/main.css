@@ -248,10 +248,10 @@ header a:hover {
 
 /* Get Started
    ------------------------------------------ */
-.get-started {
+/*.get-started {
   background-color: #FAF7F3;
   border: 1px solid hsl(34, 41%, 88%);
-}
+}*/
 
 .electron-vers {
   display: inline-block;

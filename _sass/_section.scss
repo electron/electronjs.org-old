@@ -1,0 +1,14 @@
+
+.page-section {
+  @include breakpoint(md) {
+    padding: $spacer4 0;
+  }
+  @include breakpoint(lg) {
+    padding: $spacer8 0;
+  }
+}
+
+.bg-shade {
+  border: 1px solid hsl(34, 41%, 88%);
+  background: #FAF7F3;
+}

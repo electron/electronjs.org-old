@@ -18,7 +18,7 @@ $octicons-font-path: "../bower_components/octicons/octicons/";
 @import "../bower_components/basecoat/scss/mixins/breakpoints";
 @import "../bower_components/basecoat/scss/mixins/grid";
 @import "../bower_components/basecoat/scss/mixins/clearfix";
-// @import "../bower_components/basecoat/scss/mixins/grid-framework";
+@import "../bower_components/basecoat/scss/mixins/grid-framework";
 
 
 // Basecoat
@@ -49,10 +49,11 @@ $octicons-font-path: "../bower_components/octicons/octicons/";
 // @import "../bower_components/basecoat/scss/cards";
 // @import "../bower_components/basecoat/scss/code";
 // @import "../bower_components/basecoat/scss/footer";
-// @import "../bower_components/basecoat/scss/icons";
+@import "../bower_components/basecoat/scss/grid";
+@import "../bower_components/basecoat/scss/icons";
 @import "../bower_components/basecoat/scss/navigation";
 @import "../bower_components/basecoat/scss/page-headers";
-// @import "../bower_components/basecoat/scss/section";
+@import "../bower_components/basecoat/scss/section";
 // @import "../bower_components/basecoat/scss/tables";
 
 
@@ -65,6 +66,8 @@ $octicons-font-path: "../bower_components/octicons/octicons/";
 
 // Electron -----------------------------------
 
-
 @import "navigation";
 @import "page-headers";
+@import "section";
+
+@import "home";
