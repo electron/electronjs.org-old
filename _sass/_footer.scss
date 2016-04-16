@@ -1,0 +1,15 @@
+.footer-nav {
+  @include breakpoint(md) {
+    float: left;
+  }
+}
+
+.footer-love {
+  @include breakpoint(md) {
+    float: right;
+  }
+  .octicon-logo-github {
+    position: relative;
+    bottom: -2px; // visually center
+  }
+}
