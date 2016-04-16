@@ -1,0 +1,11 @@
+<div class='row'>
+  <div class='ten columns offset-by-one'>
+    {% for app in site.data.apps %}
+      {% if app.featuredOpenSource %}
+      <div class="featured-app-textual">
+        <a href='{{ app.website }}' target='_blank'>{{ app.name }}</a> &mdash; {{ app.description }}
+      </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>

@@ -517,7 +517,7 @@
   featuredOpenSource: true
 -
   name: "Kart"
-  description: "A frontend to the multi-emulating system RetroArch"
+  description: "RetroArch emulator frontend"
   website: "https://github.com/maddox/kart"
   repository: ""
   keywords:
