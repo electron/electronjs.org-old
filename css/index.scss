@@ -3,64 +3,64 @@
 ---
 
 $octicons-font-path: "../bower_components/octicons/octicons/";
-@import "octicons/octicons/octicons.scss";
+@import "../bower_components/octicons/octicons/octicons.scss";
 
 
 // Variables
-@import "primer-css/scss/variables";
-@import "basecoat/scss/variables"; // Basecoat override
+@import "../bower_components/primer-css/scss/variables";
+@import "../bower_components/basecoat/scss/variables"; // Basecoat override
 @import "variables"; // Electron override
 
 
 // Global requirements
-@import "primer-css/scss/mixins";
+@import "../bower_components/primer-css/scss/mixins";
 
-@import "basecoat/scss/mixins/breakpoints";
-@import "basecoat/scss/mixins/grid";
-@import "basecoat/scss/mixins/clearfix";
-// @import "basecoat/scss/mixins/grid-framework";
+@import "../bower_components/basecoat/scss/mixins/breakpoints";
+@import "../bower_components/basecoat/scss/mixins/grid";
+@import "../bower_components/basecoat/scss/mixins/clearfix";
+// @import "../bower_components/basecoat/scss/mixins/grid-framework";
 
 
 // Basecoat
-@import "primer-css/scss/normalize";
-@import "primer-css/scss/base";
-@import "primer-css/scss/type";
-@import "primer-css/scss/layout";
-// @import "primer-css/scss/forms";
+@import "../bower_components/primer-css/scss/normalize";
+@import "../bower_components/primer-css/scss/base";
+@import "../bower_components/primer-css/scss/type";
+@import "../bower_components/primer-css/scss/layout";
+// @import "../bower_components/primer-css/scss/forms";
 
-@import "basecoat/scss/layout"; // Basecoat override
-@import "basecoat/scss/type"; // Basecoat override
+@import "../bower_components/basecoat/scss/layout"; // Basecoat override
+@import "../bower_components/basecoat/scss/type"; // Basecoat override
 
 
 // Components
-// @import "primer-css/scss/alerts";
-// @import "primer-css/scss/avatars";
-// @import "primer-css/scss/blankslate";
-// @import "primer-css/scss/counter";
-// @import "primer-css/scss/buttons";
-// @import "primer-css/scss/menu";
-// @import "primer-css/scss/tabnav";
-// @import "primer-css/scss/filter-list";
-// @import "primer-css/scss/states";
-// @import "primer-css/scss/tooltips";
+// @import "../bower_components/primer-css/scss/alerts";
+// @import "../bower_components/primer-css/scss/avatars";
+// @import "../bower_components/primer-css/scss/blankslate";
+// @import "../bower_components/primer-css/scss/counter";
+// @import "../bower_components/primer-css/scss/buttons";
+// @import "../bower_components/primer-css/scss/menu";
+// @import "../bower_components/primer-css/scss/tabnav";
+// @import "../bower_components/primer-css/scss/filter-list";
+// @import "../bower_components/primer-css/scss/states";
+// @import "../bower_components/primer-css/scss/tooltips";
 
-// @import "basecoat/scss/buttons";
-// @import "basecoat/scss/animation";
-// @import "basecoat/scss/cards";
-// @import "basecoat/scss/code";
-// @import "basecoat/scss/footer";
-// @import "basecoat/scss/icons";
-@import "basecoat/scss/navigation";
-@import "basecoat/scss/page-headers";
-// @import "basecoat/scss/section";
-// @import "basecoat/scss/tables";
+// @import "../bower_components/basecoat/scss/buttons";
+// @import "../bower_components/basecoat/scss/animation";
+// @import "../bower_components/basecoat/scss/cards";
+// @import "../bower_components/basecoat/scss/code";
+// @import "../bower_components/basecoat/scss/footer";
+// @import "../bower_components/basecoat/scss/icons";
+@import "../bower_components/basecoat/scss/navigation";
+@import "../bower_components/basecoat/scss/page-headers";
+// @import "../bower_components/basecoat/scss/section";
+// @import "../bower_components/basecoat/scss/tables";
 
 
 // Utilities
-// @import "primer-css/scss/flex-table";
-// @import "primer-css/scss/truncate";
-@import "primer-css/scss/utilities/utilities";
-@import "basecoat/scss/utility"; // Basecoat override
+// @import "../bower_components/primer-css/scss/flex-table";
+// @import "../bower_components/primer-css/scss/truncate";
+@import "../bower_components/primer-css/scss/utilities/utilities";
+@import "../bower_components/basecoat/scss/utility"; // Basecoat override
 
 
 // Electron -----------------------------------
