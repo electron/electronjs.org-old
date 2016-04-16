@@ -13,8 +13,8 @@ layout: default
   </div>
 
   <section class="page-section">
-    <div class="container-narrow mb-sm-3">
-      <h2 class="text-center mb-2 mt-sm-3">Electron what + why</h2>
+    <div class="container-narrow">
+      <h2 class="text-center">Electron what + why</h2>
       <p class="lead text-center">
         If you can build a website, you can build a desktop app. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et lobortis enim, at aliquet risus. Aliquam eu laoreet arcu. Phasellus faucibus dolor ac dictum efficitur. Ut hendrerit mauris ac tincidunt.
       </p>
@@ -72,38 +72,34 @@ layout: default
   </section>
 
   <section id='built-on-electron' class='page-section bg-shade built-on'>
-    <div class='container'>
-      <div class='row'>
-        <div class='ten columns offset-by-one'>
-          <h3>Apps built on Electron</h3>
-          <h5>With Electron, creating a desktop application for your company or idea is easy. Initially developed for GitHub's <a href='https://atom.io' target='_blank'>Atom editor</a>, Electron has since been used to create applications by companies like Microsoft, Facebook, Slack, and Docker.</h5>
-        </div>
-      </div>
+    <div class="container-narrow">
+      <h2 class="text-center">Apps built on Electron</h2>
+      <p class="lead text-center">
+        With Electron, creating a desktop application for your company or idea is easy. Initially developed for GitHub's <a href='https://atom.io' target='_blank'>Atom editor</a>, Electron has since been used to create applications by companies like Microsoft, Facebook, Slack, and Docker.
+      </p>
+
+      <hr>
 
       <div class='row'>
-        <div class='ten columns offset-by-one'>
-          <hr>
-          <div class="app-icons">
-            {% for app in site.data.apps %}
-              {% if app.featuredOnHomepage %}
-                {% include featured_app.html %}
-              {% endif %}
-            {% endfor %}
-          </div>
-          <p>
-            <a href='{{ site.baseurl }}/apps'>View more apps</a>
-              or
-             <a href="https://github.com/electron/electron.atom.io/blob/gh-pages/CONTRIBUTING.md#adding-an-app-or-project-to-the-site">submit your own</a>.
-           </p>
-          <hr>
+        <div class="mb-4">
+          {% for app in site.data.apps %}
+            {% if app.featuredOnHomepage %}
+              {% include featured_app.html %}
+            {% endif %}
+          {% endfor %}
         </div>
+        <p>
+          <a href='{{ site.baseurl }}/apps'>View more apps</a>
+            or
+           <a href="https://github.com/electron/electron.atom.io/blob/gh-pages/CONTRIBUTING.md#adding-an-app-or-project-to-the-site">submit your own</a>.
+        </p>
       </div>
 
-      <div class='row open-source-apps'>
-        <div class='ten columns offset-by-one'>
-          <h4>Developers bring ideas to life</h4>
-          <h5>Interesting open source apps are built on Electron.</h5>
-        </div>
+      <hr>
+
+      <div class='row'>
+        <h4>Developers bring ideas to life</h4>
+        <h5>Interesting open source apps are built on Electron.</h5>
         {% include featured_open_source_apps.html %}
       </div>
 
