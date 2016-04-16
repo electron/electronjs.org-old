@@ -39,8 +39,6 @@ layout: default
         </div>
       </div>
 
-      <hr>
-
       <div class="row text-center mt-6">
         <h4>The hard parts made easy</h4>
       </div>
@@ -106,26 +104,19 @@ layout: default
     </div>
   </section>
 
-  <section id='get-started' class='get-started'>
-    <div class='container'>
+  <section id='get-started' class='page-section get-started'>
+    <div class='container-narrow'>
       <div class='row'>
-        <div class='twelve columns'>
-          <h3>Get started with Electron</h3>
-          <div id="electron-versions" class="electron-vers">
-            <span class="main-ver">Electron: {{ site.latest_version }}</span>
-            <span class="dep-ver">Node: {{ site.current_node }}</span>
-            <span class="dep-ver">Chromium: {{ site.current_chrome }}</span>
-            <span class="dep-ver">V8: {{ site.current_v8 }}</span>
-          </div>
+        <h2>Get started with Electron</h2>
+        <div id="electron-versions" class="electron-vers">
+          <span class="main-ver">Electron: {{ site.latest_version }}</span>
+          <span class="dep-ver">Node: {{ site.current_node }}</span>
+          <span class="dep-ver">Chromium: {{ site.current_chrome }}</span>
+          <span class="dep-ver">V8: {{ site.current_v8 }}</span>
         </div>
-        <div class='row'>
-          <div class='ten columns offset-by-one'>
-            <h5>Spin up the <a href='https://github.com/atom/electron-quick-start' target='_blank'>Quick Start</a> app to see Electron in action:</h5>
-          </div>
-        </div>
-        <div class='row'>
-          <div class='eight columns offset-by-two'>
-            <pre><code>
+        <h5>Spin up the <a href='https://github.com/atom/electron-quick-start' target='_blank'>Quick Start</a> app to see Electron in action:</h5>
+
+        <pre><code>
 # Clone the Quick Start repository
 $ git clone https://github.com/atom/electron-quick-start
 
@@ -134,31 +125,25 @@ $ cd electron-quick-start
 
 # Install the dependencies and run
 $ npm install && npm start
-            </code></pre>
-          </div>
-        </div>
-        <div class='row'>
-          <div class='ten columns offset-by-one'>
-            <p>You can also checkout the full <a href='http://electron.atom.io/docs/latest/tutorial/quick-start/'>Quick Start Tutorial</a> or download a <a href='https://github.com/atom/electron/releases' target='_blank'>prebuilt binary</a> and read the <a href='/docs/latest'>documentation</a>.</p>
-          </div>
-        </div>
-        </div>
-    </div>
-  </section>
+        </code></pre>
 
-  <section id='extras' class='extras'>
-    <div class='container'>
+        <p>You can also checkout the full <a href='http://electron.atom.io/docs/latest/tutorial/quick-start/'>Quick Start Tutorial</a> or download a <a href='https://github.com/atom/electron/releases' target='_blank'>prebuilt binary</a> and read the <a href='/docs/latest'>documentation</a>.</p>
+      </div>
+
+      <hr>
+
       <div class='row'>
-        <div class='six columns'>
+        <div class='col-md-6'>
           <img src='{{ site.baseurl }}/images/electron-api-demos.png'>
         </div>
-        <div class='six columns'>
-          <h3>Electron API Demos</h3>
+        <div class='col-md-6 text-left'>
+          <h4>Electron API Demos</h4>
           <p>This is a desktop app that interactively and with sample code demonstrates core features of the Electron API. Use this app to see what you can do with Electron.js and use the <a href="https://github.com/electron/electron-api-demos">source code</a> to learn how to create a basic Electron app.</p>
           <p>
             <a href="https://github.com/electron/electron-api-demos/releases">Download</a>
           </p>
         </div>
       </div>
+
     </div>
   </section>
