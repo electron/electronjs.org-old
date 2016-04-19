@@ -13,3 +13,13 @@ hr {
 .text-small {
   font-size: 14px !important;
 }
+
+strong {
+  color: $main-color-strong;
+}
+
+h3,
+.text-gamma,
+.text-gamma-bold {
+  font-weight: 400;
+}
