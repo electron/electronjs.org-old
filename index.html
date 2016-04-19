@@ -12,7 +12,18 @@ layout: default
     </div>
   </div>
 
-  <section class="page-section" id='electron'>
+  <div class="minitron py-4 text-center">
+    <div class="container">
+      <div id="electron-versions" class="electron-vers">
+        <span class="main-ver">Electron: <strong>{{ site.latest_version }}</strong></span>
+        <span class="dep-ver">Node: <strong>{{ site.current_node }}</strong></span>
+        <span class="dep-ver">Chromium: <strong>{{ site.current_chrome }}</strong></span>
+        <span class="dep-ver">V8: <strong>{{ site.current_v8 }}</strong></span>
+      </div>
+    </div>
+  </div>
+
+  <section class="page-section text-small" id='electron'>
     <div class="container-narrow">
       <h2 class="text-center">Electron what + why</h2>
       <p class="lead text-center">
@@ -39,7 +50,7 @@ layout: default
         </div>
       </div>
 
-      <div class="row text-center mt-6">
+      <div class="row text-center mt-6 mb-4">
         <h3>The hard parts made easy</h3>
       </div>
 
@@ -86,7 +97,7 @@ layout: default
             {% endif %}
           {% endfor %}
         </div>
-        <p>
+        <p class="mt-6">
           <a href='{{ site.baseurl }}/apps'>View more apps</a>
             or
            <a href="https://github.com/electron/electron.atom.io/blob/gh-pages/CONTRIBUTING.md#adding-an-app-or-project-to-the-site">submit your own</a>.
@@ -108,36 +119,36 @@ layout: default
     <div class='container-narrow'>
       <div class="text-center">
         <h2>Get started with Electron</h2>
-        <div id="electron-versions" class="electron-vers">
-          <span class="main-ver">Electron: {{ site.latest_version }}</span>
-          <span class="dep-ver">Node: {{ site.current_node }}</span>
-          <span class="dep-ver">Chromium: {{ site.current_chrome }}</span>
-          <span class="dep-ver">V8: {{ site.current_v8 }}</span>
-        </div>
+        <p class="lead">
+          To get started with Electron, check out the resources below. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et lobortis enim, at aliquet risus. Aliquam eu laoreet arcu. Phasellus faucibus dolor ac dictum efficitur. Ut hendrerit mauris ac tincidunt.
+        </p>
+
+        <hr>
+
         <h3>Spin up the <a href='https://github.com/atom/electron-quick-start' target='_blank'>Quick Start</a> app to see Electron in action:</h3>
 
-        <figure class="highlight text-left"><pre><code>
-# Clone the Quick Start repository
+        <figure class="highlight highlight-dark text-left my-4">
+<pre><code><span class="c1"># Clone the Quick Start repository</span>
 $ git clone https://github.com/atom/electron-quick-start
 
-# Go into the repository
+<span class="c1"># Go into the repository</span>
 $ cd electron-quick-start
 
-# Install the dependencies and run
-$ npm install && npm start
-        </code></pre></figure>
+<span class="c1"># Install the dependencies and run</span>
+$ npm install && npm start</code></pre>
+        </figure>
 
         <p>You can also checkout the full <a href='http://electron.atom.io/docs/latest/tutorial/quick-start/'>Quick Start Tutorial</a> or download a <a href='https://github.com/atom/electron/releases' target='_blank'>prebuilt binary</a> and read the <a href='/docs/latest'>documentation</a>.</p>
       </div>
 
       <hr>
 
+      <h3 class="text-center mb-4">Learn from the <a href="https://github.com/electron/electron-api-demos/">Electron API Demos</a> app</h3>
       <div class='row'>
         <div class='col-xs-12 col-md-6'>
           <img src='{{ site.baseurl }}/images/electron-api-demos.png'>
         </div>
         <div class='col-xs-12 col-md-6'>
-          <h3>Electron API Demos</h3>
           <p>This is a desktop app that interactively and with sample code demonstrates core features of the Electron API. Use this app to see what you can do with Electron.js and use the <a href="https://github.com/electron/electron-api-demos">source code</a> to learn how to create a basic Electron app.</p>
           <p>
             <a href="https://github.com/electron/electron-api-demos/releases">Download</a>

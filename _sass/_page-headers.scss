@@ -1,7 +1,9 @@
 
-.minitron,
+// Jumbotron -----------------------------
+
 .jumbotron {
-  color: $header-fg;
+  color: $jumbo-color;
+  background-color: $jumbo-bg-color;
 }
 
 .jumbotron {
@@ -13,6 +15,7 @@
 
 
 .jumbotron-lead {
+  color: $jumbo-color-strong;
   font-size: 1.4rem;
   font-weight: 300;
 
@@ -21,7 +24,7 @@
 }
 
 .jumbotron-lead-muted {
-  opacity: .6;
+  color: $jumbo-color-subtle;
   @include breakpoint(md) {
     display: block;
     font-size: .8em;
@@ -44,4 +47,12 @@
   .jumbotron-img-hover {
     display: initial;
   }
+}
+
+
+// Minitron -----------------------------
+
+.minitron {
+  color: $mini-color;
+  background-color: $mini-bg-color;
 }

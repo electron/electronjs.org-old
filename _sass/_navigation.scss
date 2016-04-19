@@ -2,19 +2,19 @@
 // Site Header
 
 .site-header {
-  color: $header-fg;
-  background-color: $header-bg;
-  border-bottom-color: darken($header-bg, 10%);
+  color: $jumbo-color;
+  background-color: lighten($jumbo-bg-color, 2%);
+  border-bottom-color: darken($jumbo-bg-color, 8%);
 }
 
 .site-header a {
   color: inherit;
   &.active,
   &:hover {
-    color: $header-fg-active;
+    color: $jumbo-color-strong;
   }
   &:active {
-    color: darken($header-fg, 20%);
+    color: $jumbo-color-subtle;
   }
 }
 
