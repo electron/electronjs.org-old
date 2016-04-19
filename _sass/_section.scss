@@ -24,4 +24,8 @@
 .bg-shade {
   border: 1px solid darken($main-bg-color-shade, 8%);
   background: $main-bg-color-shade;
+
+  hr {
+    border-color: darken($main-bg-color-shade, 12%);
+  }
 }

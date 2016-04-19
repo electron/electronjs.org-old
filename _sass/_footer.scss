@@ -1,3 +1,9 @@
+
+.footer {
+  border-color: darken($main-bg-color-shade, 8%);
+  background: $main-bg-color-shade;
+}
+
 .footer-nav {
   @include breakpoint(md) {
     float: left;
