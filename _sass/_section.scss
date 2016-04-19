@@ -3,10 +3,10 @@
   padding: $spacer4 0;
 
   @include breakpoint(md) {
-    padding: $spacer6 0;
+    padding: $spacer8 0;
   }
   @include breakpoint(lg) {
-    padding: $spacer8 0;
+    padding: $spacer6 * 2 0;
   }
 }
 
