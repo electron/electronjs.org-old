@@ -8,6 +8,13 @@
   @include breakpoint(lg) {
     padding: $spacer6 * 2 0;
   }
+
+  .container,
+  .container-narrow {
+    & > *:first-child {
+      margin-top: 0;
+    }
+  }
 }
 
 .page-section hr {

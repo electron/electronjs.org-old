@@ -5,6 +5,13 @@
   background: $main-bg-color-shade;
 }
 
+.footer a {
+  color: $main-color-subtle;
+  &:hover {
+    color: $main-color;
+  }
+}
+
 .footer-nav {
   @include breakpoint(md) {
     float: left;

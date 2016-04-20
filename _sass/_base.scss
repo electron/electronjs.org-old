@@ -1,17 +1,17 @@
 
 
-.lead {
-  color: $body-color; // override Primer
+body {
+  background-color: $main-bg-color;
+}
+
+a {
+  color: $main-link-color;  // override Primer
 }
 
 hr {
   margin-left: $spacer8 !important;
   margin-right: $spacer8 !important;
   border-color: $border-color; // override Primer
-}
-
-.text-small {
-  font-size: 14px !important;
 }
 
 strong {
@@ -24,6 +24,10 @@ h3,
   font-weight: 400;
 }
 
-h1:first-child {
-  margin-top: 0;
+.lead {
+  color: $body-color; // override Primer
+}
+
+.text-small {
+  font-size: 14px !important;
 }
