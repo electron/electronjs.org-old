@@ -18,14 +18,14 @@ $octicons-font-path: "../bower_components/octicons/octicons/";
 @import "../bower_components/basecoat/scss/mixins/breakpoints";
 @import "../bower_components/basecoat/scss/mixins/grid";
 @import "../bower_components/basecoat/scss/mixins/clearfix";
-// @import "../bower_components/basecoat/scss/mixins/grid-framework";
+@import "../bower_components/basecoat/scss/mixins/grid-framework";
 
 
 // Basecoat
 @import "../bower_components/primer-css/scss/normalize";
 @import "../bower_components/primer-css/scss/base";
 @import "../bower_components/primer-css/scss/type";
-@import "../bower_components/primer-css/scss/layout";
+// @import "../bower_components/primer-css/scss/layout"; // not responsive
 // @import "../bower_components/primer-css/scss/forms";
 
 @import "../bower_components/basecoat/scss/layout"; // Basecoat override
@@ -47,12 +47,13 @@ $octicons-font-path: "../bower_components/octicons/octicons/";
 // @import "../bower_components/basecoat/scss/buttons";
 // @import "../bower_components/basecoat/scss/animation";
 // @import "../bower_components/basecoat/scss/cards";
-// @import "../bower_components/basecoat/scss/code";
-// @import "../bower_components/basecoat/scss/footer";
-// @import "../bower_components/basecoat/scss/icons";
+@import "../bower_components/basecoat/scss/code";
+@import "../bower_components/basecoat/scss/footer";
+@import "../bower_components/basecoat/scss/grid";
+@import "../bower_components/basecoat/scss/icons";
 @import "../bower_components/basecoat/scss/navigation";
 @import "../bower_components/basecoat/scss/page-headers";
-// @import "../bower_components/basecoat/scss/section";
+@import "../bower_components/basecoat/scss/section";
 // @import "../bower_components/basecoat/scss/tables";
 
 
@@ -65,6 +66,13 @@ $octicons-font-path: "../bower_components/octicons/octicons/";
 
 // Electron -----------------------------------
 
+@import "base";
 
+@import "icons";
 @import "navigation";
 @import "page-headers";
+@import "section";
+@import "footer";
+
+// Pages
+@import "home";

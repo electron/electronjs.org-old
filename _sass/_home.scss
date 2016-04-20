@@ -1,0 +1,133 @@
+
+// Headers ------------------------------
+
+// Electron version
+.electron-vers {
+  display: inline-block;
+  margin: 0 auto;
+  color: $mini-color-subtle;
+  font-family: 'Source Code Pro', monospace;
+  font-size: .88em;
+
+  @include breakpoint(md) {
+    display: table;
+  }
+}
+
+.electron-vers span {
+  display: inline-block;
+  line-height: 1;
+  padding: 0.6em 0.8em;
+
+  @include breakpoint(md) {
+    display: table-cell;
+    & + span:not(:last-child) {
+      border-right: 1px solid darken($mini-bg-color, 12%);
+    }
+  }
+}
+
+.electron-vers strong {
+  color: $mini-color;
+}
+
+.main-ver {
+  border-radius: 3px;
+  border: 1px solid darken($mini-bg-color, 16%);
+  background-color: lighten($mini-bg-color, 6%);
+}
+
+
+// Features ------------------------------
+
+.home-illu {
+  max-height: 200px;
+}
+
+
+// Apps section ------------------------------
+
+/* Featured Apps with Icons */
+
+.featured-app {
+  display: inline-block;
+  vertical-align: top;
+  width: 140px;
+  padding: 0;
+  color: $main-color-subtle;
+  margin: 10px 20px;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.featured-app-logo-wrapper {
+  width: 120px;
+  height: 120px;
+  margin: 10px;
+  transition: transform .32s;
+}
+
+.featured-app:hover .featured-app-logo-wrapper {
+  transform: scale(1.1);
+  transition-duration: .08s;
+}
+
+.featured-app:active .featured-app-logo-wrapper {
+  transform: scale(.92);
+  transition-duration: 0;
+}
+
+.featured-app-logo {
+  width: 100%;
+}
+
+.featured-app-name {
+  text-align: center;
+  text-decoration: none;
+  line-height: 1.3;
+  font-weight: 300;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+/* Featured Apps without Icons */
+
+.featured-app-textual {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(50% - 60px);
+  padding: 5px 30px;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 700px) {
+  .featured-app-textual {
+    width: 100%;
+    padding: 5px 10px;
+  }
+}
+
+
+// Getting Started section ------------------------------
+
+.highlight-dark {
+  color: $jumbo-color-strong;
+  background-color: $jumbo-bg-color;
+  border-color: darken($jumbo-bg-color, 12%);
+  .c1.c1 {
+    color: mix($jumbo-color-strong, $jumbo-bg-color, 50%);
+  }
+}
+
+.app-frame {
+  border: 2px solid $main-border-color;
+  border-top-width: 20px;
+  border-radius: 4px;
+  box-shadow: 0 25px 30px -18px rgba(0, 0, 0, 0.28);
+}

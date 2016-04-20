@@ -1,0 +1,38 @@
+
+.page-section {
+  padding: $spacer4 0;
+
+  @include breakpoint(md) {
+    padding: $spacer8 0;
+  }
+  @include breakpoint(lg) {
+    padding: $spacer6 * 2 0;
+  }
+
+  .container,
+  .container-narrow {
+    & > *:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+.page-section hr {
+  margin: $spacer4 0;
+
+  @include breakpoint(md) {
+    margin: $spacer6 0;
+  }
+  @include breakpoint(lg) {
+    margin: $spacer8 0;
+  }
+}
+
+.bg-shade {
+  border: 1px solid darken($main-bg-color-shade, 8%);
+  background: $main-bg-color-shade;
+
+  hr {
+    border-color: darken($main-bg-color-shade, 12%);
+  }
+}

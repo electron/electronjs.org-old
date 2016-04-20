@@ -1,0 +1,33 @@
+
+
+body {
+  background-color: $main-bg-color;
+}
+
+a {
+  color: $main-link-color;  // override Primer
+}
+
+hr {
+  margin-left: $spacer8 !important;
+  margin-right: $spacer8 !important;
+  border-color: $border-color; // override Primer
+}
+
+strong {
+  color: $main-color-strong;
+}
+
+h3,
+.text-gamma,
+.text-gamma-bold {
+  font-weight: 400;
+}
+
+.lead {
+  color: $body-color; // override Primer
+}
+
+.text-small {
+  font-size: 14px !important;
+}

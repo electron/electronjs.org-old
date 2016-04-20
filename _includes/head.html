@@ -22,8 +22,10 @@
 
   <link rel='stylesheet' href='{{ site.baseurl }}/css/index.css'>
 
+  {% if page.url != '/' %}
   <link rel='stylesheet' href='{{ site.baseurl }}/css/skeleton.css'>
   <link rel='stylesheet' href='{{ site.baseurl }}/css/main.css'>
+  {% endif %}
   <link rel='stylesheet' href='{{ site.baseurl }}/css/pygments.css'>
 
   <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:400,700' rel='stylesheet' type='text/css'>
