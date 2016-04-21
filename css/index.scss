@@ -68,12 +68,14 @@ $octicons-font-path: "../bower_components/octicons/octicons/";
 
 @import "base";
 
+@import "code";
+@import "footer";
 @import "icons";
 @import "navigation";
 @import "page-headers";
 @import "section";
-@import "footer";
 
 // Pages
 @import "home";
+@import "blog";
 @import "releases";
