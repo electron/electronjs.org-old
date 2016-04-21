@@ -22,7 +22,9 @@
 
   <link rel='stylesheet' href='{{ site.baseurl }}/css/index.css'>
 
-  {% if page.url != '/' %}
+  {% if page.url != '/'
+    and page.url != '/apps/'
+  %}
   <link rel='stylesheet' href='{{ site.baseurl }}/css/skeleton.css'>
   <link rel='stylesheet' href='{{ site.baseurl }}/css/main.css'>
   {% endif %}
