@@ -54,5 +54,11 @@
 
 .minitron {
   color: $mini-color;
+  border: 1px solid darken($mini-bg-color, 8%);
   background-color: $mini-bg-color;
+
+  @include breakpoint(sm) {
+    padding-top: $spacer6;
+    padding-bottom: $spacer6;
+  }
 }

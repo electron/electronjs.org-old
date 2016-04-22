@@ -5,18 +5,19 @@ title: Electron Documentation
 ---
 
 
-<section class='page-section bg-shade'>
+<div class='minitron'>
   <div class='container text-center'>
-    <h1>Electron Documentation</h1>
+    <h1>Electron Documentation <span class="docs-version">{{ site.latest_version }}</span></h1>
+    <p class="mt-4">See all of the <a href="/docs/all/">latest docs on one page</a> or check out the <a href="/faq/">FAQ</a></p>
   </div>
-</section>
+</div>
 
 <section class='page-section'>
   <div class='container'>
     <div class="row">
 
       <div class="col-ms-12 col-lg-4">
-        <h2>Guides</h2>
+        <h2><a class="docs-title" href="/guides/">Guides</a></h2>
         <ul>
         {% for doc in site.docs %}
           {% if doc.category == 'Tutorial' %}
@@ -30,7 +31,7 @@ title: Electron Documentation
       </div>
 
       <div class="col-ms-12 col-lg-4">
-        <h2>API Reference</h2>
+        <h2><a class="docs-title" href="/api/">API Reference</a></h2>
         <ul>
         {% for doc in site.docs %}
           {% if doc.category == 'API' %}
@@ -44,7 +45,7 @@ title: Electron Documentation
       </div>
 
       <div class="col-ms-12 col-lg-4">
-        <h2>Developing Electron</h2>
+        <h2><a class="docs-title" href="/development/">Developing Electron</a></h2>
         <ul>
         {% for doc in site.docs %}
           {% if doc.category == 'Development' %}
@@ -57,11 +58,6 @@ title: Electron Documentation
         </ul>
       </div>
 
-    </div>
-
-    <div>
-      <hr>
-      <p class="mt-6 text-center">See all of the <a href="/docs/all/">latest docs on one page</a>.</p>
     </div>
 
   </div>

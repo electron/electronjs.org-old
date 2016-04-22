@@ -2,23 +2,25 @@
 layout: page
 ---
 
-<section class='page-section bg-shade'>
+<div class='minitron'>
   <div class='container-narrow'>
-    <h1>Electron Documentation <span class="docs-version">{{ page.version }}</span></h1>
-    {% if page.category != 'ignore' %}
+    <h1>Electron Documentation <span class="docs-version">{{ site.latest_version }}</span></h1>
+
     <h4 class="docs-breadcrumbs">
       <a href='/docs/'>Docs</a>
+      {% if page.category != 'ignore' %}
       <span class="docs-breadcrumbs-divider">/</span>
-      <a href='/{{ page.category }}/'>{{ page.category }}</a>
+      <a href='/{{ page.category | downcase }}/'>{{ page.category }}</a>
+      {% endif %}
+
       {% if page.title != 'README' %}
-        <span class="docs-breadcrumbs-divider">/</span>
-        {{ page.title }}
-        <!-- <a class="ml-4" href='{{ page.source_url }}'><span class="octicon octicon-pencil"></span> Edit source</a> -->
+      <span class="docs-breadcrumbs-divider">/</span>
+      {{ page.title }}
+      <!-- <a class="ml-4" href='{{ page.source_url }}'><span class="octicon octicon-pencil"></span> Edit source</a> -->
       {% endif %}
     </h4>
-    {% endif %}
   </div>
-</section>
+</div>
 
 <section class='page-section docs'>
   <div class='container-narrow'>
@@ -34,7 +36,7 @@ layout: page
         See something that needs fixing? Propose a change on the <a href='{{ page.source_url }}'>source</a>.
         <br>
         <span class="octicon octicon-zap mr-2"></span>
-        Need a different version of the docs? See the <a href='/docs'>available versions</a>.
+        Need a different version of the docs? See the <a href='/docs/versions/'>available versions</a>.
       </span>
     </div>
     {% endif %}

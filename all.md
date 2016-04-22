@@ -5,11 +5,7 @@ title: All of the Latest Documentation
 category: ignore
 ---
 
-# All of the Electron Documentation
-
-Below is the latest version of documentation. See all [available versions](/docs/versions/).
-
----
+## All of the Electron Documentation
 
 {% for doc in site.docs %}
 {% assign subdir = doc.path | split:'latest' %}

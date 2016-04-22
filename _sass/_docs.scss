@@ -36,6 +36,10 @@
   h6 { margin-top: 1.125em; font-weight: 600; }
 }
 
+// Used on the docs index page
+.docs-title {
+  color: inherit;
+}
 
 .header-link .octicon {
   color: $main-color-subtle;
