@@ -29,6 +29,7 @@
 }
 
 .bg-shade {
+  min-height: 0;
   border: 1px solid darken($main-bg-color-shade, 8%);
   background: $main-bg-color-shade;
 

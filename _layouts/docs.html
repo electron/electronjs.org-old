@@ -2,43 +2,42 @@
 layout: page
 ---
 
-<section class='jump-to-release {% if page.category != "Table of Contents" %}is-compact{% endif %}'>
-  <div class='container'>
-    <div class='row'>
-      <div class='twelve columns'>
-      <h1><img class="electron-icon" src='{{ site.baseurl}}/images/electron-icon.svg'>Electron Documentation</h1>
-      {% if page.category != 'ignore' %}
-      <a href='/docs/{{ page.version }}/'>{{ page.version }} {% if site.latest_version == page.version %} (Latest) {% endif %} </a> |
-      <a href='{{ page.source_url }}'>Document Source</a>
+<section class='page-section bg-shade'>
+  <div class='container-narrow'>
+    <h1>Electron Documentation <span class="docs-version">{{ page.version }}</span></h1>
+    {% if page.category != 'ignore' %}
+    <h4 class="docs-breadcrumbs">
+      <a href='/docs/'>Docs</a>
+      <span class="docs-breadcrumbs-divider">/</span>
+      <a href='/{{ page.category }}/'>{{ page.category }}</a>
+      {% if page.title != 'README' %}
+        <span class="docs-breadcrumbs-divider">/</span>
+        {{ page.title }}
+        <!-- <a class="ml-4" href='{{ page.source_url }}'><span class="octicon octicon-pencil"></span> Edit source</a> -->
       {% endif %}
-      </div>
-    </div>
+    </h4>
+    {% endif %}
   </div>
 </section>
 
-<section class='docs'>
-  <div class='container'>
-    <div class='row'>
-      <div class='ten columns release offset-by-one'>
-        {% if page.category != 'ignore' %}
-        <h6 class='docs-breadcrumb'>{{ page.version }} / {{ page.category }}
-          {% if page.title != 'README' %} / {{ page.title }} {% endif %}</h6>
-        {% endif %}
+<section class='page-section docs'>
+  <div class='container-narrow'>
 
-        {{ content }}
+    {{ content }}
 
-      </div>
-    </div>
+
     {% if page.category != 'ignore' %}
-    <div class='row'>
-      <div class='ten columns release offset-by-one docs-footer'>
-        <span class="octicon octicon-pencil"></span>
+    <hr>
+    <div class='text-center'>
+      <span class="d-inline-block text-left">
+        <span class="octicon octicon-pencil mr-2"></span>
         See something that needs fixing? Propose a change on the <a href='{{ page.source_url }}'>source</a>.
         <br>
-        <span class="octicon octicon-zap"></span>
+        <span class="octicon octicon-zap mr-2"></span>
         Need a different version of the docs? See the <a href='/docs'>available versions</a>.
-      </div>
+      </span>
     </div>
     {% endif %}
+
   </div>
 </section>

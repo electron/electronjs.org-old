@@ -1,0 +1,68 @@
+---
+permalink: /docs/
+layout: page
+title: Electron Documentation
+---
+
+
+<section class='page-section bg-shade'>
+  <div class='container text-center'>
+    <h1>Electron Documentation</h1>
+  </div>
+</section>
+
+<section class='page-section'>
+  <div class='container'>
+    <div class="row">
+
+      <div class="col-ms-12 col-lg-4">
+        <h2>Guides</h2>
+        <ul>
+        {% for doc in site.docs %}
+          {% if doc.category == 'Tutorial' %}
+            <li>
+              <a href="{{ doc.url}}">{{ doc.title }}</a>
+              <!-- <span class="excerpt">{{ doc.content | strip_html | truncatewords: 50 }}</span> -->
+            </li>
+          {% endif %}
+        {% endfor %}
+        </ul>
+      </div>
+
+      <div class="col-ms-12 col-lg-4">
+        <h2>API Reference</h2>
+        <ul>
+        {% for doc in site.docs %}
+          {% if doc.category == 'API' %}
+            <li>
+              <a href="{{ doc.url}}">{{ doc.title }}</a>
+              <!-- <span class="excerpt">{{ doc.content | strip_html | truncatewords: 50 }}</span> -->
+            </li>
+          {% endif %}
+        {% endfor %}
+        </ul>
+      </div>
+
+      <div class="col-ms-12 col-lg-4">
+        <h2>Developing Electron</h2>
+        <ul>
+        {% for doc in site.docs %}
+          {% if doc.category == 'Development' %}
+            <li>
+              <a href="{{ doc.url}}">{{ doc.title }}</a>
+              <!-- <span class="excerpt">{{ doc.content | strip_html | truncatewords: 50 }}</span> -->
+            </li>
+          {% endif %}
+        {% endfor %}
+        </ul>
+      </div>
+
+    </div>
+
+    <div>
+      <hr>
+      <p class="mt-6 text-center">See all of the <a href="/docs/all/">latest docs on one page</a>.</p>
+    </div>
+
+  </div>
+</section>

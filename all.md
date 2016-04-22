@@ -7,7 +7,7 @@ category: ignore
 
 # All of the Electron Documentation
 
-Below is the latest version of documentation. See all [available versions](/docs/).
+Below is the latest version of documentation. See all [available versions](/docs/versions/).
 
 ---
 
