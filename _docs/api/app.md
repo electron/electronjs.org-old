@@ -1,5 +1,5 @@
 ---
-version: v0.37.5
+version: v0.37.7
 category: API
 title: App
 redirect_from:
@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/api/app/
     - /docs/v0.37.4/api/app/
     - /docs/v0.37.5/api/app/
+    - /docs/v0.37.7/api/app/
     - /docs/latest/api/app/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/app.md'
 ---
@@ -155,7 +156,7 @@ Returns:
 * `event` Event
 * `window` BrowserWindow
 
-Emitted when a [browserWindow](http://electron.atom.io/docs/v0.37.5/api/browser-window) gets blurred.
+Emitted when a [browserWindow](http://electron.atom.io/docs/v0.37.7/api/browser-window) gets blurred.
 
 ### Event: 'browser-window-focus'
 
@@ -164,7 +165,7 @@ Returns:
 * `event` Event
 * `window` BrowserWindow
 
-Emitted when a [browserWindow](http://electron.atom.io/docs/v0.37.5/api/browser-window) gets focused.
+Emitted when a [browserWindow](http://electron.atom.io/docs/v0.37.7/api/browser-window) gets focused.
 
 ### Event: 'browser-window-created'
 
@@ -173,14 +174,14 @@ Returns:
 * `event` Event
 * `window` BrowserWindow
 
-Emitted when a new [browserWindow](http://electron.atom.io/docs/v0.37.5/api/browser-window) is created.
+Emitted when a new [browserWindow](http://electron.atom.io/docs/v0.37.7/api/browser-window) is created.
 
 ### Event: 'certificate-error'
 
 Returns:
 
 * `event` Event
-* `webContents` [WebContents](http://electron.atom.io/docs/v0.37.5/api/web-contents)
+* `webContents` [WebContents](http://electron.atom.io/docs/v0.37.7/api/web-contents)
 * `url` URL
 * `error` String - The error code
 * `certificate` Object
@@ -209,7 +210,7 @@ app.on('certificate-error', function(event, webContents, url, error, certificate
 Returns:
 
 * `event` Event
-* `webContents` [WebContents](http://electron.atom.io/docs/v0.37.5/api/web-contents)
+* `webContents` [WebContents](http://electron.atom.io/docs/v0.37.7/api/web-contents)
 * `url` URL
 * `certificateList` [Objects]
   * `data` Buffer - PEM encoded data
@@ -235,7 +236,7 @@ app.on('select-client-certificate', function(event, webContents, url, list, call
 Returns:
 
 * `event` Event
-* `webContents` [WebContents](http://electron.atom.io/docs/v0.37.5/api/web-contents)
+* `webContents` [WebContents](http://electron.atom.io/docs/v0.37.7/api/web-contents)
 * `request` Object
   * `method` String
   * `url` URL
@@ -551,6 +552,18 @@ if (browserOptions.transparent) {
 
 This method returns `true` if the system is in Dark Mode, and `false` otherwise.
 
+### `app.importCertificate(options, callback)` _LINUX_
+
+* `options` Object
+  * `certificate` String - Path for the pkcs12 file.
+  * `password` String - Passphrase for the certificate.
+* `callback` Function
+  * `result` Integer - Result of import.
+
+Imports the certificate in pkcs12 format into the platform certificate store.
+`callback` is called with the `result` of import operation, a value of `0` indicates
+success while any other value indicates failure according to chromium [net_error_list](https://code.google.com/p/chromium/codesearch#chromium/src/net/base/net_error_list.h).
+
 ### `app.commandLine.appendSwitch(switch[, value])`
 
 Append a switch (with optional `value`) to Chromium's command line.
@@ -605,13 +618,13 @@ Shows the dock icon.
 
 ### `app.dock.setMenu(menu)` _OS X_
 
-* `menu` [Menu](http://electron.atom.io/docs/v0.37.5/api/menu)
+* `menu` [Menu](http://electron.atom.io/docs/v0.37.7/api/menu)
 
 Sets the application's [dock menu][dock-menu].
 
 ### `app.dock.setIcon(image)` _OS X_
 
-* `image` [NativeImage](http://electron.atom.io/docs/v0.37.5/api/native-image)
+* `image` [NativeImage](http://electron.atom.io/docs/v0.37.7/api/native-image)
 
 Sets the `image` associated with this dock icon.
 

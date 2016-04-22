@@ -1,5 +1,5 @@
 ---
-version: v0.37.5
+version: v0.37.7
 category: API
 title: 'Native Image'
 redirect_from:
@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/api/native-image/
     - /docs/v0.37.4/api/native-image/
     - /docs/v0.37.5/api/native-image/
+    - /docs/v0.37.7/api/native-image/
     - /docs/latest/api/native-image/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/native-image.md'
 ---

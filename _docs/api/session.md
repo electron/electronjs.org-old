@@ -1,5 +1,5 @@
 ---
-version: v0.37.5
+version: v0.37.7
 category: API
 title: Session
 redirect_from:
@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/api/session/
     - /docs/v0.37.4/api/session/
     - /docs/v0.37.5/api/session/
+    - /docs/v0.37.7/api/session/
     - /docs/latest/api/session/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/session.md'
 ---
@@ -40,8 +41,8 @@ source_url: 'https://github.com/electron/electron/blob/master/docs/api/session.m
 The `session` module can be used to create new `Session` objects.
 
 You can also access the `session` of existing pages by using the `session`
-property of [`webContents`](http://electron.atom.io/docs/v0.37.5/api/web-contents) which is a property of
-[`BrowserWindow`](http://electron.atom.io/docs/v0.37.5/api/browser-window).
+property of [`webContents`](http://electron.atom.io/docs/v0.37.7/api/web-contents) which is a property of
+[`BrowserWindow`](http://electron.atom.io/docs/v0.37.7/api/browser-window).
 
 ```javascript
 const BrowserWindow = require('electron').BrowserWindow;
@@ -92,8 +93,8 @@ The following events are available on instances of `Session`:
 #### Event: 'will-download'
 
 * `event` Event
-* `item` [DownloadItem](http://electron.atom.io/docs/v0.37.5/api/download-item)
-* `webContents` [WebContents](http://electron.atom.io/docs/v0.37.5/api/web-contents)
+* `item` [DownloadItem](http://electron.atom.io/docs/v0.37.7/api/download-item)
+* `webContents` [WebContents](http://electron.atom.io/docs/v0.37.7/api/web-contents)
 
 Emitted when Electron is about to download `item` in `webContents`.
 
@@ -331,8 +332,9 @@ myWindow.webContents.session.setCertificateVerifyProc(function(hostname, cert, c
 #### `ses.setPermissionRequestHandler(handler)`
 
 * `handler` Function
-  * `webContents` Object - [WebContents](http://electron.atom.io/docs/v0.37.5/api/web-contents) requesting the permission.
-  * `permission`  String - Enum of 'media', 'geolocation', 'notifications', 'midiSysex', 'pointerLock', 'fullscreen'.
+  * `webContents` Object - [WebContents](http://electron.atom.io/docs/v0.37.7/api/web-contents) requesting the permission.
+  * `permission`  String - Enum of 'media', 'geolocation', 'notifications', 'midiSysex',
+    'pointerLock', 'fullscreen', 'openExternal'.
   * `callback`  Function - Allow or deny the permission.
 
 Sets the handler which can be used to respond to permission requests for the `session`.
@@ -483,6 +485,8 @@ The `callback` has to be called with an `response` object:
   * `cancel` Boolean
   * `responseHeaders` Object (optional) - When provided, the server is assumed
     to have responded with these headers.
+  * `statusLine` String (optional) - Should be provided when overriding `responseHeaders`
+    to change header status otherwise original response header's status will be used.
 
 #### `ses.webRequest.onResponseStarted([filter, ]listener)`
 

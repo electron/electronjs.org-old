@@ -1,5 +1,5 @@
 ---
-version: v0.37.5
+version: v0.37.7
 category: API
 title: Process
 redirect_from:
@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/api/process/
     - /docs/v0.37.4/api/process/
     - /docs/v0.37.5/api/process/
+    - /docs/v0.37.7/api/process/
     - /docs/latest/api/process/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/process.md'
 ---
@@ -46,6 +47,8 @@ upstream node:
 * `process.versions['chrome']` String - Version of Chromium.
 * `process.resourcesPath` String - Path to JavaScript source code.
 * `process.mas` Boolean - For Mac App Store build, this value is `true`, for
+  other builds it is `undefined`.
+* `process.windowsStore` Boolean - If the app is running as a Windows Store app (appx), this value is `true`, for
   other builds it is `undefined`.
 
 ## Events

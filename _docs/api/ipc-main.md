@@ -1,5 +1,5 @@
 ---
-version: v0.37.5
+version: v0.37.7
 category: API
 title: 'Ipc Main'
 redirect_from:
@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/api/ipc-main/
     - /docs/v0.37.4/api/ipc-main/
     - /docs/v0.37.5/api/ipc-main/
+    - /docs/v0.37.7/api/ipc-main/
     - /docs/latest/api/ipc-main/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/ipc-main.md'
 ---
@@ -129,4 +130,4 @@ Returns the `webContents` that sent the message, you can call
 `event.sender.send` to reply to the asynchronous message, see
 [webContents.send][web-contents-send] for more information.
 
-[web-contents-send]: http://electron.atom.io/docs/v0.37.5/api/web-contents#webcontentssendchannel-arg1-arg2-
+[web-contents-send]: http://electron.atom.io/docs/v0.37.7/api/web-contents#webcontentssendchannel-arg1-arg2-

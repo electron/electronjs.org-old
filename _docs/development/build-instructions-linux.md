@@ -1,5 +1,5 @@
 ---
-version: v0.37.5
+version: v0.37.7
 category: Development
 title: 'Build Instructions-Linux'
 redirect_from:
@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/development/build-instructions-linux/
     - /docs/v0.37.4/development/build-instructions-linux/
     - /docs/v0.37.5/development/build-instructions-linux/
+    - /docs/v0.37.7/development/build-instructions-linux/
     - /docs/latest/development/build-instructions-linux/
 source_url: 'https://github.com/electron/electron/blob/master/docs/development/build-instructions-linux.md'
 ---

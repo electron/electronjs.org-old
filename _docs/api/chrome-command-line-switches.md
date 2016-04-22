@@ -1,5 +1,5 @@
 ---
-version: v0.37.5
+version: v0.37.7
 category: API
 title: 'Chrome Command-Line-Switches'
 redirect_from:
@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/api/chrome-command-line-switches/
     - /docs/v0.37.4/api/chrome-command-line-switches/
     - /docs/v0.37.5/api/chrome-command-line-switches/
+    - /docs/v0.37.7/api/chrome-command-line-switches/
     - /docs/latest/api/chrome-command-line-switches/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/chrome-command-line-switches.md'
 ---
@@ -51,10 +52,6 @@ app.on('ready', function() {
   // Your code here
 });
 ```
-
-## --client-certificate=`path`
-
-Sets the `path` of client certificate file.
 
 ## --ignore-connections-limit=`domains`
 
@@ -192,7 +189,7 @@ logging level for all code in the source files under a `foo/bar` directory.
 
 This switch only works when `--enable-logging` is also passed.
 
-[app]: http://electron.atom.io/docs/v0.37.5/api/app
-[append-switch]: http://electron.atom.io/docs/v0.37.5/api/app#appcommandlineappendswitchswitch-value
-[ready]: http://electron.atom.io/docs/v0.37.5/api/app#event-ready
+[app]: http://electron.atom.io/docs/v0.37.7/api/app
+[append-switch]: http://electron.atom.io/docs/v0.37.7/api/app#appcommandlineappendswitchswitch-value
+[ready]: http://electron.atom.io/docs/v0.37.7/api/app#event-ready
 [play-silent-audio]: https://github.com/atom/atom/pull/9485/files

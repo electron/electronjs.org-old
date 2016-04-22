@@ -1,5 +1,5 @@
 ---
-version: v0.37.5
+version: v0.37.7
 category: API
 title: Remote
 redirect_from:
@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/api/remote/
     - /docs/v0.37.4/api/remote/
     - /docs/v0.37.5/api/remote/
+    - /docs/v0.37.7/api/remote/
     - /docs/latest/api/remote/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/remote.md'
 ---
@@ -57,7 +58,7 @@ win.loadURL('https://github.com');
 ```
 
 **Note:** for the reverse (access the renderer process from the main process),
-you can use [webContents.executeJavascript](http://electron.atom.io/docs/v0.37.5/api/web-contents#webcontentsexecutejavascriptcode-usergesture).
+you can use [webContents.executeJavascript](http://electron.atom.io/docs/v0.37.7/api/web-contents#webcontentsexecutejavascriptcode-usergesture).
 
 ## Remote Objects
 
@@ -178,12 +179,12 @@ Returns the object returned by `require(module)` in the main process.
 
 ### `remote.getCurrentWindow()`
 
-Returns the [`BrowserWindow`](http://electron.atom.io/docs/v0.37.5/api/browser-window) object to which this web page
+Returns the [`BrowserWindow`](http://electron.atom.io/docs/v0.37.7/api/browser-window) object to which this web page
 belongs.
 
 ### `remote.getCurrentWebContents()`
 
-Returns the [`WebContents`](http://electron.atom.io/docs/v0.37.5/api/web-contents) object of this web page.
+Returns the [`WebContents`](http://electron.atom.io/docs/v0.37.7/api/web-contents) object of this web page.
 
 ### `remote.getGlobal(name)`
 

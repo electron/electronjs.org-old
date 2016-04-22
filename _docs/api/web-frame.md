@@ -1,5 +1,5 @@
 ---
-version: v0.37.5
+version: v0.37.7
 category: API
 title: 'Web Frame'
 redirect_from:
@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/api/web-frame/
     - /docs/v0.37.4/api/web-frame/
     - /docs/v0.37.5/api/web-frame/
+    - /docs/v0.37.7/api/web-frame/
     - /docs/latest/api/web-frame/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/web-frame.md'
 ---

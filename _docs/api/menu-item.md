@@ -1,5 +1,5 @@
 ---
-version: v0.37.5
+version: v0.37.7
 category: API
 title: 'Menu Item'
 redirect_from:
@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/api/menu-item/
     - /docs/v0.37.4/api/menu-item/
     - /docs/v0.37.5/api/menu-item/
+    - /docs/v0.37.7/api/menu-item/
     - /docs/latest/api/menu-item/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/menu-item.md'
 ---
@@ -38,9 +39,9 @@ source_url: 'https://github.com/electron/electron/blob/master/docs/api/menu-item
 # MenuItem
 
 The `menu-item` module allows you to add items to an application or context
-[`menu`](http://electron.atom.io/docs/v0.37.5/api/menu).
+[`menu`](http://electron.atom.io/docs/v0.37.7/api/menu).
 
-See [`menu`](http://electron.atom.io/docs/v0.37.5/api/menu) for examples.
+See [`menu`](http://electron.atom.io/docs/v0.37.7/api/menu) for examples.
 
 ## Class: MenuItem
 
@@ -57,8 +58,8 @@ Create a new `MenuItem` with the following method:
      `radio`
   * `label` String
   * `sublabel` String
-  * `accelerator` [Accelerator](http://electron.atom.io/docs/v0.37.5/api/accelerator)
-  * `icon` [NativeImage](http://electron.atom.io/docs/v0.37.5/api/native-image)
+  * `accelerator` [Accelerator](http://electron.atom.io/docs/v0.37.7/api/accelerator)
+  * `icon` [NativeImage](http://electron.atom.io/docs/v0.37.7/api/native-image)
   * `enabled` Boolean - If false, the menu item will be greyed out and unclickable.
   * `visible` Boolean - If false, the menu item will be entirely hidden.
   * `checked` Boolean - Should only be specified for `checkbox` or `radio` type 
@@ -97,6 +98,8 @@ On OS X `role` can also have following additional values:
 * `window` - The submenu is a "Window" menu
 * `help` - The submenu is a "Help" menu
 * `services` - The submenu is a "Services" menu
+
+When specifying `role` on OS X, `label` and `accelerator` are the only options that will affect the MenuItem. All other options will be ignored.
 
 ## Instance Properties
 

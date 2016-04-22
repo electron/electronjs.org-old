@@ -1,5 +1,5 @@
 ---
-version: v0.37.5
+version: v0.37.7
 category: API
 title: Dialog
 redirect_from:
@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/api/dialog/
     - /docs/v0.37.4/api/dialog/
     - /docs/v0.37.5/api/dialog/
+    - /docs/v0.37.7/api/dialog/
     - /docs/latest/api/dialog/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/dialog.md'
 ---
@@ -54,10 +55,6 @@ The Dialog is opened from Electron's main thread. If you want to use the dialog 
 ```javascript
 const dialog = require('electron').remote.dialog;
 ```
-
-**Note for OS X**: If you want to present dialogs as sheets, the only thing you
-have to do is provide a `BrowserWindow` reference in the `browserWindow`
-parameter.
 
 ## Methods
 
@@ -135,7 +132,7 @@ will be passed via `callback(filename)`
   * `title` String - Title of the message box, some platforms will not show it.
   * `message` String - Content of the message box.
   * `detail` String - Extra information of the message.
-  * `icon` [NativeImage](http://electron.atom.io/docs/v0.37.5/api/native-image)
+  * `icon` [NativeImage](http://electron.atom.io/docs/v0.37.7/api/native-image)
   * `cancelId` Integer - The value will be returned when user cancels the dialog
     instead of clicking the buttons of the dialog. By default it is the index
     of the buttons that have "cancel" or "no" as label, or 0 if there is no such
@@ -162,3 +159,12 @@ This API can be called safely before the `ready` event the `app` module emits,
 it is usually used to report errors in early stage of startup.  If called
 before the app `ready`event on Linux, the message will be emitted to stderr,
 and no GUI dialog will appear.
+
+## Sheets
+
+On Mac OS X, dialogs are presented as sheets attached to a window if you provide
+a `BrowserWindow` reference in the `browserWindow` parameter, or modals if no
+window is provided.
+
+You can call `BrowserWindow.getCurrentWindow().setSheetOffset(offset)` to change
+the offset from the window frame where sheets are attached.

@@ -1,5 +1,5 @@
 ---
-version: v0.37.5
+version: v0.37.7
 category: Tutorial
 title: 'Using Selenium-and-Webdriver'
 redirect_from:
@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/tutorial/using-selenium-and-webdriver/
     - /docs/v0.37.4/tutorial/using-selenium-and-webdriver/
     - /docs/v0.37.5/tutorial/using-selenium-and-webdriver/
+    - /docs/v0.37.7/tutorial/using-selenium-and-webdriver/
     - /docs/latest/tutorial/using-selenium-and-webdriver/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/using-selenium-and-webdriver.md'
 ---

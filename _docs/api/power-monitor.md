@@ -1,5 +1,5 @@
 ---
-version: v0.37.5
+version: v0.37.7
 category: API
 title: 'Power Monitor'
 redirect_from:
@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/api/power-monitor/
     - /docs/v0.37.4/api/power-monitor/
     - /docs/v0.37.5/api/power-monitor/
+    - /docs/v0.37.7/api/power-monitor/
     - /docs/latest/api/power-monitor/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/power-monitor.md'
 ---
