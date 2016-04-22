@@ -54,11 +54,11 @@ $octicons-font-path: "../bower_components/octicons/octicons/";
 @import "../bower_components/basecoat/scss/navigation";
 @import "../bower_components/basecoat/scss/page-headers";
 @import "../bower_components/basecoat/scss/section";
-// @import "../bower_components/basecoat/scss/tables";
+@import "../bower_components/basecoat/scss/tables";
 
 
 // Utilities
-// @import "../bower_components/primer-css/scss/flex-table";
+@import "../bower_components/primer-css/scss/flex-table";
 // @import "../bower_components/primer-css/scss/truncate";
 @import "../bower_components/primer-css/scss/utilities/utilities";
 @import "../bower_components/basecoat/scss/utility"; // Basecoat override
@@ -76,6 +76,7 @@ $octicons-font-path: "../bower_components/octicons/octicons/";
 @import "navigation";
 @import "page-headers";
 @import "section";
+@import "tables";
 
 // Pages
 @import "home";

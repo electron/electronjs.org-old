@@ -1,0 +1,22 @@
+.table-ruled tr {
+  border-bottom: 1px solid $border-color;
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.table-full-width {
+  width: 100%;
+}
+
+.table-ruled td {
+  padding: 10px 10px;
+  line-height: 1.4;
+  text-align: left;
+  font-size: 14px;
+}
+
+.table-with-spacious-first-column td:first-child {
+  padding-right: 40px;
+  white-space: nowrap;
+}
