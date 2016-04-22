@@ -7,10 +7,10 @@ layout: page
     <h1>Electron Documentation <span class="docs-version">{{ site.latest_version }}</span></h1>
 
     <h4 class="docs-breadcrumbs">
-      <a href='/docs/'>Docs</a>
+      <a href='{{ site.baseurl }}/docs/'>Docs</a>
       {% if page.category != 'ignore' %}
       <span class="docs-breadcrumbs-divider">/</span>
-      <a href='/{{ page.category | downcase }}/'>{{ page.category }}</a>
+      <a href='{{ site.baseurl }}/{{ page.category | downcase }}/'>{{ page.category }}</a>
       {% endif %}
 
       {% if page.title != 'README' %}
@@ -36,7 +36,7 @@ layout: page
         See something that needs fixing? Propose a change on the <a href='{{ page.source_url }}'>source</a>.
         <br>
         <span class="octicon octicon-zap mr-2"></span>
-        Need a different version of the docs? See the <a href='/docs/versions/'>available versions</a>.
+        Need a different version of the docs? See the <a href='{{ site.baseurl }}/docs/versions/'>available versions</a>.
       </span>
     </div>
     {% endif %}
