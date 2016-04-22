@@ -1,13 +1,9 @@
 
 .page-section {
-  padding: $spacer4 0;
-
-  @include breakpoint(md) {
-    padding: $spacer8 0;
-  }
-  @include breakpoint(lg) {
-    padding: $spacer6 * 2 0;
-  }
+  padding: $spacer3;
+  @include breakpoint(md) { padding: $spacer4; }
+  @include breakpoint(lg) { padding: $spacer6; }
+  @include breakpoint(xl) { padding: $spacer8; }
 
   .container,
   .container-narrow {
@@ -17,15 +13,19 @@
   }
 }
 
-.page-section hr {
-  margin: $spacer4 0;
+// more padding
+.page-section-spacious {
+  padding: $spacer4 $spacer2;
+  @include breakpoint(md) { padding: $spacer6 $spacer3; }
+  @include breakpoint(lg) { padding: $spacer8 $spacer4; }
+  @include breakpoint(xl) { padding: $spacer6 * 2 $spacer6; }
+}
 
-  @include breakpoint(md) {
-    margin: $spacer6 0;
-  }
-  @include breakpoint(lg) {
-    margin: $spacer8 0;
-  }
+.page-section hr {
+  margin: $spacer3 0;
+  @include breakpoint(md) { margin: $spacer4 0; }
+  @include breakpoint(lg) { margin: $spacer6 0; }
+  @include breakpoint(xl) { margin: $spacer8 0; }
 }
 
 .bg-shade {

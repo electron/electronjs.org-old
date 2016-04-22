@@ -4,13 +4,18 @@ title: Electron Blog
 permalink: /blog/
 ---
 
+
+<div class='subtron'>
+  <div class='container-narrow'>
+    <h1>Electron Blog</h1>
+  </div>
+</div>
+
 <section class='page-section'>
   <div class='container-narrow'>
-    <h1 class="text-center">Electron Blog</h1>
-    <hr>
     <ul class="blog-index">
       {% for post in site.posts %}
-        <li class="mb-8">
+        <li class="mb-4 mb-md-6 mb-lg-8">
           <h2>
             <a class="blog-index-link mr-2" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a>
             <time class="blog-index-time">{{ post.date | date: '%B %d, %Y' }}</time>

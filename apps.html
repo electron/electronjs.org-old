@@ -3,16 +3,17 @@ layout: default
 permalink: /apps/
 ---
 
-<section class='page-section'>
 
-  <div class='container-narrow text-center'>
+<div class='subtron'>
+  <div class='container-narrow'>
     <h1>Built on Electron</h1>
-    <p class="lead">
+    <p class="lead mb-3">
       With Electron, creating a desktop application for your company or idea is easy. Initially developed for GitHub's <a href='https://atom.io' target='_blank'>Atom editor</a>, Electron has since been used to create applications by companies like Microsoft, Facebook, Slack, and Docker.
     </p>
-    <hr>
   </div>
+</div>
 
+<section class='page-section'>
   <div class='container text-center' id="apps">
     <div class="mb-4">
       {% for app in site.data.apps %}
