@@ -1,0 +1,30 @@
+
+// Code blocks
+// From Basecoat's _code.scss but with .highlighter-rouge
+
+.highlighter-rouge {
+
+  pre {
+    padding: $spacer3;
+    overflow: auto;
+    font-size: 16px;
+    line-height: 1.45;
+
+    code {
+      display: inline;
+      max-width: initial;
+      padding: 0;
+      margin: 0;
+      overflow: initial;
+      line-height: inherit;
+      word-wrap: normal;
+      background-color: transparent;
+      border: 0;
+
+      &:before,
+      &:after {
+        content: none;
+      }
+    }
+  }
+}

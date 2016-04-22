@@ -1,0 +1,67 @@
+
+// Docs ------------------------------
+
+.docs-version {
+  display: inline-block;
+  margin-left: .5em;
+  padding: .1em .4em;
+  vertical-align: middle;
+  font-size: $body-font-size * 1.25;
+  color: $main-color-subtle;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+}
+
+.docs-breadcrumbs {
+  margin: 0;
+  color: $main-color-subtle;
+  font-weight: 300;
+  a {
+    color: $main-color;
+  }
+}
+.docs-breadcrumbs-divider {
+  color: $main-color-subtle;
+}
+
+
+.docs {
+  // bolder and more top margin
+  // to make it easier to see headers
+  // TODO: merge with _blog styles
+  h1 {                      font-weight: 500; font-size: $body-font-size * 3; }
+  h2 { margin-top: 2em;     font-weight: 500; border-bottom: $border; }
+  h3 { margin-top: 1.75em;  font-weight: 500; }
+  h4 { margin-top: 1.5em;   font-weight: 500; }
+  h5 { margin-top: 1.25em;  font-weight: 600; }
+  h6 { margin-top: 1.125em; font-weight: 600; }
+}
+
+// Used on the docs index page
+.docs-title {
+  color: inherit;
+}
+
+.header-link .octicon {
+  color: $main-color-subtle;
+  margin-left: .5em;
+  vertical-align: middle;
+  visibility: hidden;
+  :hover > & {
+    visibility: visible;
+  }
+}
+
+// platform label, e.g. [OS X]
+.docs h3 code > em,
+.docs h3 > em {
+    padding: .1em .4em;
+    vertical-align: middle;
+    font-size: .66em;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-style: normal;
+    color: $main-bg-color;
+    border-radius: $border-radius;
+    background-color: $main-color-subtle;
+}

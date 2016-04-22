@@ -3,37 +3,35 @@ layout: default
 permalink: /apps/
 ---
 
-<section id='built-on-electron' class='built-on'>
-  <div class='container'>
-    <div class='row'>
-      <div class='ten columns offset-by-one'>
-        <h3>Built on Electron</h3>
-        <h5>With Electron, creating a desktop application for your company or idea is easy. Initially developed for GitHub's <a href='https://atom.io' target='_blank'>Atom editor</a>, Electron has since been used to create applications by companies like Microsoft, Facebook, Slack, and Docker.</h5>
-      </div>
-    </div>
 
-    <div class='row'>
-      <div class='ten columns offset-by-one'>
-        <hr>
-        <div class="app-icons">
-          {% for app in site.data.apps %}
-            {% unless app.featuredOpenSource %}
-              {% include featured_app.html %}
-            {% endunless %}
-          {% endfor %}
-        </div>
-        <p><a href="https://github.com/electron/electron.atom.io/blob/gh-pages/CONTRIBUTING.md#adding-an-app-or-project-to-the-site" target="_blank">Make a Pull Request</a> to add your application.</p>
-        <hr>
-      </div>
-    </div>
-
-    <div class='row open-source-apps'>
-      <div class='ten columns offset-by-one'>
-        <h4>Developers bring ideas to life</h4>
-        <h5>Interesting open source apps are built on Electron.</h5>
-      </div>
-      {% include featured_open_source_apps.html %}
-    </div>
-
+<div class='subtron'>
+  <div class='container-narrow'>
+    <h1>Built on Electron</h1>
+    <p class="lead mb-3">
+      With Electron, creating a desktop application for your company or idea is easy. Initially developed for GitHub's <a href='https://atom.io' target='_blank'>Atom editor</a>, Electron has since been used to create applications by companies like Microsoft, Facebook, Slack, and Docker.
+    </p>
   </div>
+</div>
+
+<section class='page-section'>
+  <div class='container text-center' id="apps">
+    <div class="mb-4">
+      {% for app in site.data.apps %}
+        {% unless app.featuredOpenSource %}
+          {% include featured_app.html %}
+        {% endunless %}
+      {% endfor %}
+    </div>
+    <p class="mt-6">
+      <a href="https://github.com/electron/electron.atom.io/blob/gh-pages/CONTRIBUTING.md#adding-an-app-or-project-to-the-site" target="_blank">Make a Pull Request</a> to add your application.
+    </p>
+    <hr>
+  </div>
+
+  <div class='container-narrow text-center' id="open-source">
+    <h2>Developers bring ideas to life</h2>
+    <h3 class="mb-4">Interesting open source apps are built on Electron.</h3>
+    {% include featured_open_source_apps.html %}
+  </div>
+
 </section>

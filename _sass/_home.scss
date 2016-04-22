@@ -6,7 +6,6 @@
   display: inline-block;
   margin: 0 auto;
   color: $mini-color-subtle;
-  font-family: 'Source Code Pro', monospace;
   font-size: .88em;
 
   @include breakpoint(md) {
