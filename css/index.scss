@@ -67,7 +67,9 @@ $octicons-font-path: "../bower_components/octicons/octicons/";
 // Electron -----------------------------------
 
 @import "base";
+@import "highlight"; // Syntax highlighting
 
+// Basecoat overrides
 @import "code";
 @import "footer";
 @import "icons";
