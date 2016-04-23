@@ -1,7 +1,7 @@
 title: Electron
 email: electron@github.com
 description: 'Build cross platform desktop apps with web technologies'
-url: http://electron.github.io
+url: 'http://electron.github.io'
 baseurl: /private-electron.atom.io
 twitter_username: ElectronJS
 github_username: electron
@@ -13,12 +13,12 @@ kramdown:
     syntax_highlighter: rouge
 gems:
     - jekyll-redirect-from
-latest_version: v0.37.5
+latest_version: v0.37.7
 current_node: 5.1.1
 current_chrome: 49.0.2623.75
 current_v8: 4.9.385.28
 sass:
-  style: compressed
+    style: compressed
 available_versions:
     - v0.24.0
     - v0.25.0
@@ -48,6 +48,7 @@ available_versions:
     - v0.37.3
     - v0.37.4
     - v0.37.5
+    - v0.37.7
 collections:
     docs: {output: true, permalink: '/:path/'}
 defaults:

@@ -1,5 +1,5 @@
 ---
-version: v0.37.5
+version: v0.37.7
 category: Tutorial
 title: 'Testing On-Headless-Ci'
 redirect_from:
@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/tutorial/testing-on-headless-ci/
     - /docs/v0.37.4/tutorial/testing-on-headless-ci/
     - /docs/v0.37.5/tutorial/testing-on-headless-ci/
+    - /docs/v0.37.7/tutorial/testing-on-headless-ci/
     - /docs/latest/tutorial/testing-on-headless-ci/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/testing-on-headless-ci.md'
 ---
@@ -55,9 +56,9 @@ Then, create a virtual xvfb screen and export an environment variable
 called DISPLAY that points to it. Chromium in Electron will automatically look
 for `$DISPLAY`, so no further configuration of your app is required.
 This step can be automated with Paul Betts's
-[xfvb-maybe](https://github.com/paulcbetts/xvfb-maybe): Prepend your test
-commands with `xfvb-maybe` and the little tool will automatically configure
-xfvb, if required by the current system. On Windows or Mac OS X, it will simply
+[xvfb-maybe](https://github.com/paulcbetts/xvfb-maybe): Prepend your test
+commands with `xvfb-maybe` and the little tool will automatically configure
+xvfb, if required by the current system. On Windows or Mac OS X, it will simply
 do nothing.
 
 ```
@@ -84,7 +85,7 @@ install:
 
 ### Jenkins
 
-For Jenkins, a [Xfvb plugin is available](https://wiki.jenkins-ci.org/display/JENKINS/Xvfb+Plugin).
+For Jenkins, a [Xvfb plugin is available](https://wiki.jenkins-ci.org/display/JENKINS/Xvfb+Plugin).
 
 ### Circle CI
 

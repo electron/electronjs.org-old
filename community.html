@@ -1,0 +1,90 @@
+---
+layout: page
+title: Electron Community
+permalink: /community/
+---
+
+<div class='subtron'>
+  <div class='container-narrow'>
+    <h1>Electron Community</h1>
+    <p>Tools, boilerplates, videos, and more from Electron's <a href="https://github.com/sindresorhus/awesome-electron">awesome</a> open-source contributors.</p>
+  </div>
+</div>
+
+<section class='page-section'>
+
+  <div class="container-narrow text-center">
+
+    <h2>Tools</h2>
+    <table class="table table-ruled table-full-width table-with-spacious-first-column">
+      {% for item in site.data.awesome_electron %}
+        {% if item.category == 'tools' and item.subcategory == 'for_electron' %}
+          <tr>
+            <td>
+              <a href="{{ item.href }}">{{ item.name }}</a>
+            </td>
+            <td>
+              {{ item.description }}
+            </td>
+          </tr>
+        {% endif %}
+      {% endfor %}
+    </table>
+
+    <h2>Boilerplates</h2>
+    <table class="table table-ruled table-full-width table-with-spacious-first-column">
+      {% for item in site.data.awesome_electron %}
+        {% if item.category == 'boilerplates' %}
+          <tr>
+            <td>
+              <a href="{{ item.href }}">{{ item.name }}</a>
+            </td>
+            <td>
+              {{ item.description }}
+            </td>
+          </tr>
+        {% endif %}
+      {% endfor %}
+    </table>
+
+    <h2>Components</h2>
+    <table class="table table-ruled table-full-width table-with-spacious-first-column">
+      {% for item in site.data.awesome_electron %}
+        {% if item.category == 'components' %}
+          <tr>
+            <td>
+              <a href="{{ item.href }}">{{ item.name }}</a>
+            </td>
+            <td>
+              {{ item.description }}
+            </td>
+          </tr>
+        {% endif %}
+      {% endfor %}
+    </table>
+
+    <h2>Videos</h2>
+    <table class="table table-ruled table-full-width table-with-spacious-first-column">
+      {% for item in site.data.awesome_electron %}
+        {% if item.category == 'videos' %}
+          <tr>
+            <td>
+              <a href="{{ item.href }}">{{ item.name }}</a>
+            </td>
+            <td>
+              {{ item.description }}
+            </td>
+          </tr>
+        {% endif %}
+      {% endfor %}
+    </table>
+
+    <p class="mt-3 mt-md-6">
+      This list is generated from
+      <a href="https://github.com/sindresorhus/awesome-electron">@sindresorhus's Awesome Electron</a>
+      repository.<br>
+      Something missing?
+      <a href="https://github.com/sindresorhus/awesome-electron/blob/master/contributing.md">Open a pull request!</a>.
+    </p>
+  </div>
+</section>

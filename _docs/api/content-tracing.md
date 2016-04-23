@@ -1,5 +1,5 @@
 ---
-version: v0.37.5
+version: v0.37.7
 category: API
 title: 'Content Tracing'
 redirect_from:
@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/api/content-tracing/
     - /docs/v0.37.4/api/content-tracing/
     - /docs/v0.37.5/api/content-tracing/
+    - /docs/v0.37.7/api/content-tracing/
     - /docs/latest/api/content-tracing/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/content-tracing.md'
 ---

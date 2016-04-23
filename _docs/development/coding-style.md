@@ -1,5 +1,5 @@
 ---
-version: v0.37.5
+version: v0.37.7
 category: Development
 title: 'Coding Style'
 redirect_from:
@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/development/coding-style/
     - /docs/v0.37.4/development/coding-style/
     - /docs/v0.37.5/development/coding-style/
+    - /docs/v0.37.7/development/coding-style/
     - /docs/latest/development/coding-style/
 source_url: 'https://github.com/electron/electron/blob/master/docs/development/coding-style.md'
 ---
@@ -76,9 +77,16 @@ etc.
   * [Template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
     instead of string concatenation using `+`
 
-## API Names
+## Naming Things
 
-When creating a new API, we should prefer getters and setters instead of
+Electron APIs uses the same capitalization scheme as Node.js:
+
+- When the module itself is a class like `BrowserWindow`, use `CamelCase`.
+- When the module is a set of APIs, like `globalShortcut`, use `mixedCase`.
+- When the API is a property of object, and it is complex enough to be in a separate chapter like `win.webContents`, use `mixedCase`.
+- For other non-module APIs, use natural titles, like `<webview> Tag` or `Process Object`.
+
+When creating a new API, it is preferred to use getters and setters instead of
 jQuery's one-function style. For example, `.getText()` and `.setText(text)`
 are preferred to `.text([text])`. There is a
 [discussion](https://github.com/electron/electron/issues/46) on this.

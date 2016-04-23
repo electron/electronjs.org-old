@@ -1,5 +1,5 @@
 ---
-version: v0.37.5
+version: v0.37.7
 category: API
 title: 'Frameless Window'
 redirect_from:
@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/api/frameless-window/
     - /docs/v0.37.4/api/frameless-window/
     - /docs/v0.37.5/api/frameless-window/
+    - /docs/v0.37.7/api/frameless-window/
     - /docs/latest/api/frameless-window/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/frameless-window.md'
 ---
@@ -42,7 +43,7 @@ A frameless window is a window that has no [chrome](https://developer.mozilla.or
 ## Create a frameless window
 
 To create a frameless window, you need to set `frame` to `false` in
-[BrowserWindow](http://electron.atom.io/docs/v0.37.5/api/browser-window)'s `options`:
+[BrowserWindow](http://electron.atom.io/docs/v0.37.7/api/browser-window)'s `options`:
 
 
 ```javascript

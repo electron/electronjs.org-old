@@ -1,5 +1,5 @@
 ---
-version: v0.37.5
+version: v0.37.7
 category: API
 title: 'Desktop Capturer'
 redirect_from:
@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/api/desktop-capturer/
     - /docs/v0.37.4/api/desktop-capturer/
     - /docs/v0.37.5/api/desktop-capturer/
+    - /docs/v0.37.7/api/desktop-capturer/
     - /docs/latest/api/desktop-capturer/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/desktop-capturer.md'
 ---
@@ -102,13 +103,14 @@ Starts a request to get all desktop sources, `callback` will be called with
 
 The `sources` is an array of `Source` objects, each `Source` represents a
 captured screen or individual window, and has following properties:
+
 * `id` String - The id of the captured window or screen used in
   `navigator.webkitGetUserMedia`. The format looks like `window:XX` or
   `screen:XX` where `XX` is a random generated number.
 * `name` String - The described name of the capturing screen or window. If the
   source is a screen, the name will be `Entire Screen` or `Screen <index>`; if
   it is a window, the name will be the window's title.
-* `thumbnail` [NativeImage](http://electron.atom.io/docs/v0.37.5/api/NativeImage) - A thumbnail image.
+* `thumbnail` A thumbnail [native image](http://electron.atom.io/docs/v0.37.7/api/native-image).
 
 **Note:** There is no guarantee that the size of `source.thumbnail` is always
 the same as the `thumnbailSize` in `options`. It also depends on the scale of

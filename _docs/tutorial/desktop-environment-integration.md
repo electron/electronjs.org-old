@@ -1,5 +1,5 @@
 ---
-version: v0.37.5
+version: v0.37.7
 category: Tutorial
 title: 'Desktop Environment-Integration'
 redirect_from:
@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/tutorial/desktop-environment-integration/
     - /docs/v0.37.4/tutorial/desktop-environment-integration/
     - /docs/v0.37.5/tutorial/desktop-environment-integration/
+    - /docs/v0.37.7/tutorial/desktop-environment-integration/
     - /docs/latest/tutorial/desktop-environment-integration/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/desktop-environment-integration.md'
 ---
@@ -358,16 +359,16 @@ window.setRepresentedFilename('/etc/passwd');
 window.setDocumentEdited(true);
 ```
 
-[addrecentdocument]: http://electron.atom.io/docs/v0.37.5/api/app#appaddrecentdocumentpath-os-x-windows
-[clearrecentdocuments]: http://electron.atom.io/docs/v0.37.5/api/app#appclearrecentdocuments-os-x-windows
-[setusertaskstasks]: http://electron.atom.io/docs/v0.37.5/api/app#appsetusertaskstasks-windows
-[setprogressbar]: http://electron.atom.io/docs/v0.37.5/api/browser-window#winsetprogressbarprogress
-[setoverlayicon]: http://electron.atom.io/docs/v0.37.5/api/browser-window#winsetoverlayiconoverlay-description-windows-7
-[setrepresentedfilename]: http://electron.atom.io/docs/v0.37.5/api/browser-window#winsetrepresentedfilenamefilename-os-x
-[setdocumentedited]: http://electron.atom.io/docs/v0.37.5/api/browser-window#winsetdocumenteditededited-os-x
+[addrecentdocument]: http://electron.atom.io/docs/v0.37.7/api/app#appaddrecentdocumentpath-os-x-windows
+[clearrecentdocuments]: http://electron.atom.io/docs/v0.37.7/api/app#appclearrecentdocuments-os-x-windows
+[setusertaskstasks]: http://electron.atom.io/docs/v0.37.7/api/app#appsetusertaskstasks-windows
+[setprogressbar]: http://electron.atom.io/docs/v0.37.7/api/browser-window#winsetprogressbarprogress
+[setoverlayicon]: http://electron.atom.io/docs/v0.37.7/api/browser-window#winsetoverlayiconoverlay-description-windows-7
+[setrepresentedfilename]: http://electron.atom.io/docs/v0.37.7/api/browser-window#winsetrepresentedfilenamefilename-os-x
+[setdocumentedited]: http://electron.atom.io/docs/v0.37.7/api/browser-window#winsetdocumenteditededited-os-x
 [app-registration]: http://msdn.microsoft.com/en-us/library/windows/desktop/ee872121(v=vs.85).aspx
 [unity-launcher]: https://help.ubuntu.com/community/UnityLaunchersAndDesktopFiles#Adding_shortcuts_to_a_launcher
-[setthumbarbuttons]: http://electron.atom.io/docs/v0.37.5/api/browser-window#winsetthumbarbuttonsbuttons-windows-7
-[tray-balloon]: http://electron.atom.io/docs/v0.37.5/api/tray#traydisplayballoonoptions-windows
+[setthumbarbuttons]: http://electron.atom.io/docs/v0.37.7/api/browser-window#winsetthumbarbuttonsbuttons-windows-7
+[tray-balloon]: http://electron.atom.io/docs/v0.37.7/api/tray#traydisplayballoonoptions-windows
 [app-user-model-id]: https://msdn.microsoft.com/en-us/library/windows/desktop/dd378459(v=vs.85).aspx
 [notification-spec]: https://developer.gnome.org/notification-spec/

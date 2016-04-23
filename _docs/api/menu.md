@@ -1,5 +1,5 @@
 ---
-version: v0.37.5
+version: v0.37.7
 category: API
 title: Menu
 redirect_from:
@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/api/menu/
     - /docs/v0.37.4/api/menu/
     - /docs/v0.37.5/api/menu/
+    - /docs/v0.37.7/api/menu/
     - /docs/latest/api/menu/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/menu.md'
 ---
@@ -43,11 +44,11 @@ application menus and
 This module is a main process module which can be used in a render process via
 the `remote` module.
 
-Each menu consists of multiple [menu items](http://electron.atom.io/docs/v0.37.5/api/menu-item) and each menu item can
+Each menu consists of multiple [menu items](http://electron.atom.io/docs/v0.37.7/api/menu-item) and each menu item can
 have a submenu.
 
 Below is an example of creating a menu dynamically in a web page
-(render process) by using the [remote](http://electron.atom.io/docs/v0.37.5/api/remote) module, and showing it when
+(render process) by using the [remote](http://electron.atom.io/docs/v0.37.7/api/remote) module, and showing it when
 the user right clicks the page:
 
 ```html
@@ -146,7 +147,7 @@ var template = [
         })(),
         click: function(item, focusedWindow) {
           if (focusedWindow)
-            focusedWindow.toggleDevTools();
+            focusedWindow.webContents.toggleDevTools();
         }
       },
     ]
@@ -272,7 +273,7 @@ for more information on OS X's native actions.
 * `template` Array
 
 Generally, the `template` is just an array of `options` for constructing a
-[MenuItem](http://electron.atom.io/docs/v0.37.5/api/menu-item). The usage can be referenced above.
+[MenuItem](http://electron.atom.io/docs/v0.37.7/api/menu-item). The usage can be referenced above.
 
 You can also attach other fields to the element of the `template` and they
 will become properties of the constructed menu items.

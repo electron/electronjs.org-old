@@ -1,5 +1,5 @@
 ---
-version: v0.37.5
+version: v0.37.7
 category: API
 title: 'Ipc Renderer'
 redirect_from:
@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/api/ipc-renderer/
     - /docs/v0.37.4/api/ipc-renderer/
     - /docs/v0.37.5/api/ipc-renderer/
+    - /docs/v0.37.7/api/ipc-renderer/
     - /docs/latest/api/ipc-renderer/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/ipc-renderer.md'
 ---
@@ -43,7 +44,7 @@ methods so you can send synchronous and asynchronous messages from the render
 process (web page) to the main process.  You can also receive replies from the
 main process.
 
-See [ipcMain](http://electron.atom.io/docs/v0.37.5/api/ipc-main) for code examples.
+See [ipcMain](http://electron.atom.io/docs/v0.37.7/api/ipc-main) for code examples.
 
 ## Listening for Messages
 

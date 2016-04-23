@@ -1,5 +1,5 @@
 ---
-version: v0.37.5
+version: v0.37.7
 category: Development
 title: 'Source Code-Directory-Structure'
 redirect_from:
@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/development/source-code-directory-structure/
     - /docs/v0.37.4/development/source-code-directory-structure/
     - /docs/v0.37.5/development/source-code-directory-structure/
+    - /docs/v0.37.7/development/source-code-directory-structure/
     - /docs/latest/development/source-code-directory-structure/
 source_url: 'https://github.com/electron/electron/blob/master/docs/development/source-code-directory-structure.md'
 ---
@@ -99,3 +100,30 @@ Electron
   when creating a distribution.
 * **external_binaries** - Downloaded binaries of third-party frameworks which
   do not support building with `gyp`.
+
+## Keeping Git Submodules Up to Date
+
+The Electron repository has a few vendored dependencies, found in the
+[/vendor](/vendor) directory. Occasionally you might see a message like this
+when running `git status`:
+
+```sh
+$ git status
+
+	modified:   vendor/brightray (new commits)
+	modified:   vendor/node (new commits)
+```
+
+To update these vendored dependencies, run the following command:
+
+```sh
+git submodule update --init --recursive
+```
+
+If you find yourself running this command often, you can create an alias for it
+in your `~/.gitconfig` file:
+
+```
+[alias]
+	su = submodule update --init --recursive
+```

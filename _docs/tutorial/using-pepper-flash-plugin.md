@@ -1,5 +1,5 @@
 ---
-version: v0.37.5
+version: v0.37.7
 category: Tutorial
 title: 'Using Pepper-Flash-Plugin'
 redirect_from:
@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/tutorial/using-pepper-flash-plugin/
     - /docs/v0.37.4/tutorial/using-pepper-flash-plugin/
     - /docs/v0.37.5/tutorial/using-pepper-flash-plugin/
+    - /docs/v0.37.7/tutorial/using-pepper-flash-plugin/
     - /docs/latest/tutorial/using-pepper-flash-plugin/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/using-pepper-flash-plugin.md'
 ---
