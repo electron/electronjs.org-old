@@ -1,3 +1,13 @@
+
+.hero-link {
+  &:hover {
+    text-decoration: none;
+    .hero-octicon {
+      border-color: $main-link-color;
+    }
+  }
+}
+
 .hero-octicon {
   color: $heading-color;
   background-color: transparent;
