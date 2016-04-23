@@ -10,6 +10,10 @@
 
 .blog-index-link {
   color: $main-color-strong;
+  &:hover {
+    text-decoration: none;
+    color: $main-link-color;
+  }
 }
 
 .blog-index-time {
