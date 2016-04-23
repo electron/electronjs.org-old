@@ -10,13 +10,15 @@
 }
 
 .table-ruled td {
-  padding: 10px 10px;
+  padding: $spacer2;
   line-height: 1.4;
   text-align: left;
   font-size: 14px;
 }
 
 .table-with-spacious-first-column td:first-child {
-  padding-right: 40px;
-  white-space: nowrap;
+  @include breakpoint(md) {
+    padding-right: $spacer5;
+    white-space: nowrap;
+  }
 }
