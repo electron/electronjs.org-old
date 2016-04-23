@@ -20,7 +20,7 @@ permalink: /blog/
             <a class="blog-index-link mr-2" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
             <time class="blog-index-time">{{ post.date | date: '%B %d, %Y' }}</time>
           </h2>
-          <p>{{ post.excerpt}}</p>
+          {{ post.excerpt }}
           <p><a href="{{ post.url | prepend: site.baseurl }}">Read more <span class="octicon octicon-arrow-small-right"></span></a></p>
         </li>
       {% endfor %}
