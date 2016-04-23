@@ -21,6 +21,7 @@ permalink: /blog/
             <time class="blog-index-time">{{ post.date | date: '%B %d, %Y' }}</time>
           </h2>
           <p>{{ post.excerpt}}</p>
+          <p><a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">Read more →</a></p>
         </li>
       {% endfor %}
     </ul>
