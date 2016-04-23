@@ -8,7 +8,7 @@ title: Electron Documentation
 <div class='subtron'>
   <div class='container-narrow'>
     <h1>Electron Documentation <span class="docs-version">{{ site.latest_version }}</span></h1>
-    <p>See all of the <a href="/docs/all/">latest docs on one page</a> or check out the <a href="/faq/">FAQ</a></p>
+    <p>See all of the <a href="{{ site.baseurl }}/docs/all/">latest docs on one page</a> or check out the <a href="{{ site.baseurl }}/faq/">FAQ</a></p>
   </div>
 </div>
 
@@ -17,12 +17,12 @@ title: Electron Documentation
     <div class="row">
 
       <div class="col-ms-12 col-lg-4">
-        <h2><a class="docs-title" href="/guides/">Guides</a></h2>
+        <h2><a class="docs-title" href="{{ site.baseurl }}/guides/">Guides</a></h2>
         <ul>
         {% for doc in site.docs %}
           {% if doc.category == 'Tutorial' %}
             <li>
-              <a href="{{ doc.url }}">{{ doc.title }}</a>
+              <a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a>
               <!-- <span class="excerpt">{{ doc.content | strip_html | truncatewords: 50 }}</span> -->
             </li>
           {% endif %}
@@ -31,12 +31,12 @@ title: Electron Documentation
       </div>
 
       <div class="col-ms-12 col-lg-4">
-        <h2><a class="docs-title" href="/api/">API Reference</a></h2>
+        <h2><a class="docs-title" href="{{ site.baseurl }}/api/">API Reference</a></h2>
         <ul>
         {% for doc in site.docs %}
           {% if doc.category == 'API' %}
             <li>
-              <a href="{{ doc.url }}">{{ doc.title }}</a>
+              <a href="{{ site.baseurl }}{{ doc.url}}">{{ doc.title }}</a>
               <!-- <span class="excerpt">{{ doc.content | strip_html | truncatewords: 50 }}</span> -->
             </li>
           {% endif %}
@@ -45,12 +45,12 @@ title: Electron Documentation
       </div>
 
       <div class="col-ms-12 col-lg-4">
-        <h2><a class="docs-title" href="/development/">Developing Electron</a></h2>
+        <h2><a class="docs-title" href="{{ site.baseurl }}/development/">Developing Electron</a></h2>
         <ul>
         {% for doc in site.docs %}
           {% if doc.category == 'Development' %}
             <li>
-              <a href="{{ doc.url }}">{{ doc.title }}</a>
+              <a href="{{ site.baseurl }}{{ doc.url}}">{{ doc.title }}</a>
               <!-- <span class="excerpt">{{ doc.content | strip_html | truncatewords: 50 }}</span> -->
             </li>
           {% endif %}

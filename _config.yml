@@ -50,7 +50,7 @@ available_versions:
     - v0.37.5
     - v0.37.7
 collections:
-    docs: {output: true, permalink: '/docs/:path/'}
+    docs: {output: true, permalink: '/:path/'}
 defaults:
     - {scope: {type: docs}, values: {layout: docs}}
     - {scope: {type: posts}, values: {layout: post}}

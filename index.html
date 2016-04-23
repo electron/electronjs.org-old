@@ -27,7 +27,7 @@ layout: default
     <div class="container-narrow">
       <h1 class="text-center">Electron is your friend</h1>
       <p class="lead text-center">
-        If you can build a website, you can build a desktop app. Electron is a framework that let's you easily create native applications with web technologies. It lets you focus on the core of your application by taking care of all the hard parts.
+        If you can build a website, you can build a desktop app. Electron is a framework for creating native applications with web technologies like JavasScript, HTML, and CSS. It lets you focus on the core of your application by taking care of all the hard parts.
       </p>
 
       <hr>
@@ -56,24 +56,34 @@ layout: default
 
       <div class="row text-center text-small mt-3">
         <div class='col-xs-12 col-sm-2 offset-sm-1'>
-          <span class="octicon hero-octicon octicon-squirrel" aria-hidden></span>
-          Automatic updates
+          <a class="hero-link" href="{{ site.baseurl }}/api/auto-updater/">
+            <span class="octicon hero-octicon octicon-squirrel" aria-hidden></span>
+            Automatic updates
+          </a>
         </div>
         <div class='col-xs-12 col-sm-2'>
-          <span class="octicon hero-octicon octicon-bug" aria-hidden></span>
-          Crash reporting
+          <a class="hero-link" href="{{ site.baseurl }}/api/crash-reporter/">
+            <span class="octicon hero-octicon octicon-bug" aria-hidden></span>
+            Crash reporting
+          </a>
         </div>
         <div class='col-xs-12 col-sm-2'>
-          <span class="octicon hero-octicon octicon-gift" aria-hidden></span></span>
-          Windows installers
+          <a class="hero-link" href="{{ site.baseurl }}/development/build-instructions-windows/">
+            <span class="octicon hero-octicon octicon-gift" aria-hidden></span>
+            Windows installers
+          </a>
         </div>
         <div class='col-xs-12 col-sm-2'>
-          <span class="octicon hero-octicon octicon-tools" aria-hidden></span>
-          Debugging &amp; profiling
+          <a class="hero-link" href="{{ site.baseurl }}/api/content-tracing/">
+            <span class="octicon hero-octicon octicon-tools" aria-hidden></span>
+            Debugging &amp; profiling
+          </a>
         </div>
         <div class='col-xs-12 col-sm-2'>
-          <span class="octicon hero-octicon octicon-device-desktop" aria-hidden></span>
-          Native menus &amp; notifications
+          <a class="hero-link" href="{{ site.baseurl }}/api/menu/">
+            <span class="octicon hero-octicon octicon-device-desktop" aria-hidden></span>
+            Native menus &amp; notifications
+          </a>
         </div>
       </div>
 
@@ -140,7 +150,9 @@ $ npm install && npm start</code></pre>
 
       <div class='row mt-8'>
         <div class='col-xs-12 col-md-5'>
-          <img class="app-frame" src='{{ site.baseurl }}/images/electron-api-demos.png'>
+          <a href="https://github.com/electron/electron-api-demos/releases">
+            <img class="app-frame" src='{{ site.baseurl }}/images/electron-api-demos.png'>
+          </a>
         </div>
         <div class='col-xs-12 col-md-7 text-left'>
           <h3 class="mt-1 mb-3">Learn from the <a href="https://github.com/electron/electron-api-demos">Electron API Demos</a> with ease</h3>
@@ -151,8 +163,7 @@ $ npm install && npm start</code></pre>
         </div>
       </div>
 
-
-      <h3 class="mt-8">Or dive deeper and read the <a href='/docs/latest'>documentation</a></h3>
+      <h3 class="mt-8">Or dive deeper and read the <a href='{{ site.baseurl }}/docs/'>documentation</a></h3>
       <p>If you need any help, ask in the <a href='https://discuss.atom.io/c/electron'>Discuss</a> forum or our <a href='http://atom-slack.herokuapp.com/'>Slack</a> channel.</p>
 
     </div>
