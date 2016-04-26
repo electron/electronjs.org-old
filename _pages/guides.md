@@ -1,16 +1,19 @@
 ---
-permalink: /api/
-redirect_from: /docs/api/
+title: Electron Guides
+permalink: /guides/
+redirect_from:
+  - /docs/guides/
+  - /tutorial/
+  - /docs/tutorial/
 layout: docs
-title: Electron API Reference
 category: ignore
 ---
 
-## API Reference
+## Guides
 
 <ul>
 {% for doc in site.docs %}
-  {% if doc.category == 'API' %}
+  {% if doc.category == 'Development' or doc.category == 'Tutorial' %}
     <li>
       <a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a>
       <!-- <span class="excerpt">{{ doc.content | strip_html | truncatewords: 50 }}</span> -->
