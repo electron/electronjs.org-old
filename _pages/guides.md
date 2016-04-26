@@ -1,11 +1,11 @@
 ---
+title: Electron Guides
 permalink: /guides/
 redirect_from:
   - /docs/guides/
   - /tutorial/
   - /docs/tutorial/
 layout: docs
-title: Electron Guides
 category: ignore
 ---
 

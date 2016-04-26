@@ -1,7 +1,7 @@
 ---
+title: All of the Latest Documentation
 permalink: /docs/all/
 layout: docs
-title: All of the Latest Documentation
 category: ignore
 ---
 

@@ -1,8 +1,8 @@
 ---
-layout: releases
 title: Electron Releases
 permalink: /releases/
 redirect_from: /releases.html
+layout: releases
 ---
 
 {% for release in site.data.releases %}

@@ -1,7 +1,7 @@
 ---
+title: Versions
 permalink: /docs/versions/
 layout: docs
-title: Versions
 category: ignore
 ---
 

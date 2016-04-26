@@ -1,8 +1,8 @@
 ---
+title: Electron API Reference
 permalink: /api/
 redirect_from: /docs/api/
 layout: docs
-title: Electron API Reference
 category: ignore
 ---
 
