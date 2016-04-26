@@ -28,3 +28,14 @@
     }
   }
 }
+
+// make code in headers a bit stronger
+h1,
+h2,
+h3,
+h4 {
+  code {
+    color: darken(saturate($main-color-strong, 25%), 5%);
+    background-color: lighten($main-color-subtle, 30%);
+  }
+}
