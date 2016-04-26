@@ -1,8 +1,8 @@
 ---
+title: Electron Development
 permalink: /development/
 redirect_from: /docs/development/
 layout: docs
-title: Electron Development
 category: ignore
 ---
 
