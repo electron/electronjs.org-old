@@ -8,6 +8,7 @@ category: ignore
 {% for doc in site.docs %}
 
 {{ doc.content }}
----
+
+<hr>
 
 {% endfor %}
