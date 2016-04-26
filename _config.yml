@@ -11,6 +11,7 @@ markdown: kramdown
 kramdown:
     input: GFM
     syntax_highlighter: rouge
+    hard_wrap: false
 gems:
     - jekyll-redirect-from
 latest_version: v0.37.7
