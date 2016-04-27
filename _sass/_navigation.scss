@@ -5,6 +5,7 @@
   color: $jumbo-color;
   background-color: lighten($jumbo-bg-color, 2%);
   border-bottom-color: darken($jumbo-bg-color, 8%);
+  -webkit-font-smoothing: antialiased;
 }
 
 .site-header a {

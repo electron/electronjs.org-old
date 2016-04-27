@@ -18,16 +18,28 @@ strong {
   color: $main-color-strong;
 }
 
-h3,
-.text-gamma,
-.text-gamma-bold {
-  font-weight: 400;
-}
-
 .lead {
   color: $body-color; // override Primer
 }
 
 .text-small {
   font-size: 14px !important;
+}
+
+h1 {                   -webkit-font-smoothing: antialiased; }
+h2 { font-weight: 300; -webkit-font-smoothing: antialiased; }
+h3 { font-weight: 400; -webkit-font-smoothing: antialiased; }
+h4 { font-weight: 500; }
+h5 { font-weight: 700; }
+h6 { font-weight: 700; }
+
+// bolder and more top margin
+// to make it easier to see headers within a long wall of text
+.strong-headers {
+  h1 {                      font-weight: 500; -webkit-font-smoothing: initial; font-size: $body-font-size * 2.75; }
+  h2 { margin-top: 2em;     font-weight: 500; -webkit-font-smoothing: initial; border-bottom: $border; }
+  h3 { margin-top: 1.75em;  font-weight: 500; -webkit-font-smoothing: initial; }
+  h4 { margin-top: 1.5em;   font-weight: 500; }
+  h5 { margin-top: 1.25em;  }
+  h6 { margin-top: 1.125em; }
 }
