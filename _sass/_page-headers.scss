@@ -4,7 +4,7 @@
 .jumbotron {
   color: $jumbo-color;
   background-color: $jumbo-bg-color;
-
+  -webkit-font-smoothing: antialiased;
 }
 
 .jumbotron .container {
