@@ -37,14 +37,14 @@ $octicons-font-path: "../bower_components/octicons/octicons/";
 // @import "../bower_components/primer-css/scss/avatars";
 // @import "../bower_components/primer-css/scss/blankslate";
 // @import "../bower_components/primer-css/scss/counter";
-// @import "../bower_components/primer-css/scss/buttons";
+@import "../bower_components/primer-css/scss/buttons";
 // @import "../bower_components/primer-css/scss/menu";
 // @import "../bower_components/primer-css/scss/tabnav";
 // @import "../bower_components/primer-css/scss/filter-list";
 // @import "../bower_components/primer-css/scss/states";
 // @import "../bower_components/primer-css/scss/tooltips";
 
-// @import "../bower_components/basecoat/scss/buttons";
+@import "../bower_components/basecoat/scss/buttons";
 // @import "../bower_components/basecoat/scss/animation";
 // @import "../bower_components/basecoat/scss/cards";
 @import "../bower_components/basecoat/scss/code";
@@ -70,6 +70,7 @@ $octicons-font-path: "../bower_components/octicons/octicons/";
 @import "highlight"; // Syntax highlighting
 
 // Basecoat overrides
+@import "buttons";
 @import "code";
 @import "footer";
 @import "icons";
