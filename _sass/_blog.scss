@@ -32,14 +32,6 @@
     color: $main-color-subtle;
   }
 
-  // bolder and more top margin
-  // to make it easier to see headers
-  h2 { margin-top: 2em;     font-weight: 300; }
-  h3 { margin-top: 1.75em;  font-weight: 400; }
-  h4 { margin-top: 1.5em;   font-weight: 500; }
-  h5 { margin-top: 1.25em;  font-weight: 600; }
-  h6 { margin-top: 1.125em; font-weight: 600; }
-
   // framed image
   // to better distinguish white backgrounds
   // add in MD with ![alt](path){: .screenshot }
