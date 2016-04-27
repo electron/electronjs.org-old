@@ -4,6 +4,19 @@
 .jumbotron {
   color: $jumbo-color;
   background-color: $jumbo-bg-color;
+
+}
+
+.jumbotron .container {
+  background-image: url('../images/hero-hover.png');
+  background-size: 130%;
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+
+  @include breakpoint(md) {
+    background-position: 20% 0%;
+    background-size: 100%;
+  }
 }
 
 .jumbotron {
@@ -85,3 +98,85 @@
   border: 1px solid darken($mini-bg-color, 8%);
   background-color: $mini-bg-color;
 }
+
+// Homepage Jumbotron -----------------------------
+
+.electron-logo {
+  fill: $jumbo-color;
+  width: 40%;
+  max-width: 350px;
+  margin: 0 auto;
+  @include breakpoint(md) {
+    width: 30%;
+  }
+}
+
+@keyframes short-1 {
+  0% { transform: rotate(0) translate(0); }
+  100% { transform: rotate(-130deg) translate(-104px, -14px) }
+}
+
+.short-1 { animation: short-1 1s ease forwards; animation-delay: .5s; }
+
+@keyframes short-2 {
+  0% { transform: rotate(0) translate(0); transform-origin: 0; }
+  100% { transform: rotate(105deg) translate(24px, 18px); transform-origin: 50% 50%; }
+}
+
+.short-2 { animation: short-2 1s ease forwards; animation-delay: 1s; }
+
+@keyframes short-3 {
+  0% { transform: rotate(0) translate(0); transform-origin: 0; }
+  100% { transform: rotate(-14deg) translate(23px, -18px); transform-origin: 50% 50%; }
+}
+
+.short-3 { animation: short-3 1s ease forwards; animation-delay: 1.5s; }
+
+@keyframes long-1 {
+  0% { transform: rotate(0) translate(0); transform-origin: 0; }
+  100% { transform: rotate(-110deg) translate(49px, -35px); transform-origin: 50% 50%; }
+}
+
+.long-1 { animation: long-1 1s ease forwards; animation-delay: 2s; }
+
+@keyframes long-2 {
+  0% { transform: rotate(0) translate(0); transform-origin: 0; }
+  100% { transform: rotate(130deg) translate(6px, 20px); transform-origin: 50% 50%; }
+}
+
+.long-2 { animation: long-2 1s ease forwards; animation-delay: 2.5s; }
+
+@keyframes long-3 {
+  0% { transform: rotate(0) translate(0); transform-origin: 0; }
+  100% { transform: rotate(11deg) translate(-36px, 5px); transform-origin: 50% 50%; }
+}
+
+.long-3 { animation: long-3 1s ease forwards; animation-delay: 3s; }
+
+@keyframes loop-1 {
+  0% { transform: translate(0); }
+  100% { transform: translate(65px, -70px); }
+}
+
+.loop-1 { animation: loop-1 1s ease forwards; animation-delay: 3.5s; }
+
+@keyframes loop-2 {
+  0% { transform: translate(0); }
+  100% { transform: translate(4px, 6px); }
+}
+
+.loop-2 { animation: loop-2 1s ease forwards; animation-delay: 4s; }
+
+@keyframes loop-3 {
+  0% { transform: translate(0); }
+  100% { transform: translate(-21px, -52px); }
+}
+
+.loop-3 { animation: loop-3 1s ease forwards; animation-delay: 4.5s; }
+
+@keyframes dot {
+  0% { transform: translate(0); }
+  100% { transform: translate(4px, -26px); }
+}
+
+.dot { animation: dot 5s forwards; }
