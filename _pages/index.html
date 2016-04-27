@@ -3,27 +3,9 @@ permalink: /
 layout: default
 ---
 
+  <script src="https://wzrd.in/standalone/jquery@latest"></script>
   <script src="https://wzrd.in/standalone/ua-parser-js@latest"></script>
-  <script type="text/javascript">
-    document.addEventListener('DOMContentLoaded', function(){
-      var platform = window.uaParserJs().os.name
-      var version = '0.4.0'
-      var filename
-
-      if (platform.match(/mac/i)) {
-        filename = 'electron-api-demos-mac.zip'
-      } else if (platform.match(/windows/i)) {
-        filename = 'electron-api-demos-windows.zip'
-      } else {
-        return
-      }
-
-      var downloadUrl = 'https://github.com/electron/electron-api-demos/releases/download/v' + version + '/' + filename
-      var link = document.querySelector('#download-latest-release')
-      link.setAttribute('href', downloadUrl)
-      link.textContent = 'Download for ' + platform
-    })
-  </script>
+  <script src="{{ site.baseurl }}/js/index.js"></script>
 
   <div class="jumbotron text-center">
     <div class="container">
@@ -164,7 +146,13 @@ layout: default
           <p>
             <a id="download-latest-release" class="btn btn-lg btn-outline-themed" href="https://github.com/electron/electron-api-demos/releases">
               <span class="octicon octicon-desktop-download mr-1"></span>
-              Download from GitHub</a>
+              <span class="label">Download from GitHub</span>
+            </a>
+            <span id="download-alternatives" class="text-sm" style="display:none;">
+              or
+              <a href="https://github.com/electron/electron-api-demos/releases">view all releases</a>
+             on GitHub
+            </span>
           </p>
         </div>
       </div>
