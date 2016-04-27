@@ -3,6 +3,28 @@ permalink: /
 layout: default
 ---
 
+  <script src="https://wzrd.in/standalone/ua-parser-js@latest"></script>
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function(){
+      var platform = window.uaParserJs().os.name
+      var version = '0.4.0'
+      var filename
+
+      if (platform.match(/mac/i)) {
+        filename = 'electron-api-demos-mac.zip'
+      } else if (platform.match(/windows/i)) {
+        filename = 'electron-api-demos-windows.zip'
+      } else {
+        return
+      }
+
+      var downloadUrl = 'https://github.com/electron/electron-api-demos/releases/download/v' + version + '/' + filename
+      var link = document.querySelector('#download-latest-release')
+      link.setAttribute('href', downloadUrl)
+      link.textContent = 'Download for ' + platform
+    })
+  </script>
+
   <div class="jumbotron text-center">
     <div class="container">
       <!--<img class='jumbotron-img mb-lg-6 mb-4 mb-sm-2' src='{{ site.baseurl }}/images/hero.png' alt="Electron">
@@ -140,7 +162,7 @@ layout: default
           <h3 class="mt-1 mb-3">Interact with the Electron APIs</h3>
           <p>The <a href="https://github.com/electron/electron-api-demos">Electron API Demos app</a> interactively demonstrates core features of the API. You can use the app to see what's possible with Electron and learn how to create a basic app with sample code.</p>
           <p>
-            <a class="btn btn-lg btn-outline-themed" href="https://github.com/electron/electron-api-demos/releases">
+            <a id="download-latest-release" class="btn btn-lg btn-outline-themed" href="https://github.com/electron/electron-api-demos/releases">
               <span class="octicon octicon-desktop-download mr-1"></span>
               Download from GitHub</a>
           </p>
