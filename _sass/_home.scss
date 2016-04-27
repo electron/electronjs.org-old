@@ -116,8 +116,11 @@
   color: $jumbo-color-strong;
   background-color: $jumbo-bg-color;
   border-color: darken($jumbo-bg-color, 12%);
+  code {
+    color: inherit;
+  }
   .c1.c1 {
-    color: mix($jumbo-color-strong, $jumbo-bg-color, 50%);
+    color: mix($jumbo-color-strong, $jumbo-bg-color, 60%);
   }
 }
 
