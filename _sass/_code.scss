@@ -28,3 +28,18 @@
     }
   }
 }
+
+code {
+  color: darken(saturate($main-color, 50%), 10%);
+  background-color: darken($main-bg-color, 5%);
+}
+
+// make code in headers a bit stronger
+h1,
+h2,
+h3,
+h4 {
+  code {
+    background-color: darken($main-bg-color, 10%);
+  }
+}

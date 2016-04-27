@@ -11,6 +11,7 @@ markdown: kramdown
 kramdown:
     input: GFM
     syntax_highlighter: rouge
+    hard_wrap: false
 gems:
     - jekyll-redirect-from
 latest_version: v0.37.7
@@ -50,6 +51,7 @@ available_versions:
     - v0.37.5
     - v0.37.7
 collections:
+    pages: {output: true, permalink: '/:path/'}
     docs: {output: true, permalink: '/:path/'}
 defaults:
     - {scope: {type: docs}, values: {layout: docs}}

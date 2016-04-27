@@ -1,4 +1,7 @@
 ---
+title: Electron Releases
+permalink: /releases/
+redirect_from: /releases.html
 layout: releases
 ---
 
@@ -8,6 +11,6 @@ layout: releases
 
 {{ release.body }}
 
----
+<hr>
 
 {% endfor releases %}
