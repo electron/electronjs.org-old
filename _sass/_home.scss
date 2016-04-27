@@ -95,20 +95,17 @@
 /* Featured Apps without Icons */
 
 .featured-app-textual {
-  display: inline-block;
-  vertical-align: top;
-  width: calc(50% - 60px);
-  padding: 5px 30px;
-  text-align: left;
+  padding: 5px 10px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
 
-@media (max-width: 700px) {
-  .featured-app-textual {
-    width: 100%;
-    padding: 5px 10px;
+  @include breakpoint(md) {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(50% - 20px);
+    padding: 5px 20px;
+    text-align: left;
   }
 }
 
