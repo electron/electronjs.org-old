@@ -6,7 +6,7 @@
   padding-right: $spacer3;
   color: $jumbo-color;
   background-color: $jumbo-bg-color;
-  -webkit-font-smoothing: antialiased;  
+  -webkit-font-smoothing: antialiased;
 }
 
 .jumbotron {
@@ -85,7 +85,18 @@
 // Minitron -----------------------------
 
 .minitron {
+  padding: $spacer3;
   color: $mini-color;
-  border: 1px solid darken($mini-bg-color, 8%);
+  border-bottom: 1px solid darken($mini-bg-color, 8%);
   background-color: $mini-bg-color;
+
+  a {
+    color: $mini-color-link;
+  }
+}
+
+.minitron-title {
+  margin: 0;
+  color: inherit;
+  // font-weight: 500;
 }

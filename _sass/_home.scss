@@ -5,7 +5,7 @@
 .electron-vers {
   display: inline-block;
   margin: 0 auto;
-  color: $mini-color-subtle;
+  // color: $mini-color-subtle;
   font-size: .88em;
 
   @include breakpoint(md) {
