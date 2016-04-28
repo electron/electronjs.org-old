@@ -2,6 +2,10 @@
 
 body {
   background-color: $main-bg-color;
+  font-size: 14px;
+  @include breakpoint(sm) {
+    font-size: $body-font-size;
+  }
 }
 
 a {
