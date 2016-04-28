@@ -47,3 +47,14 @@
 .site-header-nav .mega-octicon {
   min-width: 32px; // stops jumping of the nav when loading the page
 }
+
+// keep it centered a bit longer
+@media (min-width: 700px) {
+  .site-header { text-align: center; }
+  .site-header-logo,
+  .site-header-nav {
+    float: none;
+  }
+}
+.site-header-logo { @include breakpoint(lg) { float: left; } }
+.site-header-nav  { @include breakpoint(lg) { float: right; } }
