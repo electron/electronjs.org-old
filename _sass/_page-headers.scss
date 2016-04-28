@@ -2,9 +2,11 @@
 // Jumbotron -----------------------------
 
 .jumbotron {
+  padding-left: $spacer3;
+  padding-right: $spacer3;
   color: $jumbo-color;
   background-color: $jumbo-bg-color;
-  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;  
 }
 
 .jumbotron {
@@ -61,7 +63,8 @@
   background-color: $sub-bg-color;
 
   padding: $spacer3;
-  @include breakpoint(md) { padding: $spacer4; }
+  @include breakpoint(sm) { padding: $spacer4; }
+  @include breakpoint(md) { padding: $spacer5; }
   @include breakpoint(lg) { padding: $spacer6; }
   @include breakpoint(xl) { padding: $spacer8; }
 

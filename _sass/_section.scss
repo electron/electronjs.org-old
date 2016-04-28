@@ -1,7 +1,8 @@
 
 .page-section {
   padding: $spacer3;
-  @include breakpoint(md) { padding: $spacer4; }
+  @include breakpoint(sm) { padding: $spacer4; }
+  @include breakpoint(md) { padding: $spacer5; }
   @include breakpoint(lg) { padding: $spacer6; }
   @include breakpoint(xl) { padding: $spacer8; }
 
@@ -15,18 +16,31 @@
 
 // more padding
 .page-section-spacious {
-  padding: $spacer4 $spacer2;
-  @include breakpoint(md) { padding: $spacer6 $spacer3; }
-  @include breakpoint(lg) { padding: $spacer8 $spacer4; }
-  @include breakpoint(xl) { padding: $spacer6 * 2 $spacer6; }
+  padding: $spacer4;
+  @include breakpoint(md) { padding: $spacer6; }
+  @include breakpoint(lg) { padding: $spacer8; }
+  @include breakpoint(xl) { padding: $spacer6 * 2; }
 }
 
 .page-section hr {
-  margin: $spacer3 0;
-  @include breakpoint(md) { margin: $spacer4 0; }
+  margin: $spacer4 0;
+  @include breakpoint(md) { margin: $spacer5 0; }
   @include breakpoint(lg) { margin: $spacer6 0; }
   @include breakpoint(xl) { margin: $spacer8 0; }
 }
+
+// remove padding so these classes can be used as grid-less container
+.container,
+.container-narrow {
+  padding-left: 0;
+  padding-right: 0;
+}
+.grid {
+  padding-left:  ($grid-gutter / 2);
+  padding-right: ($grid-gutter / 2);
+}
+
+// Shady section
 
 .bg-shade {
   min-height: 0;

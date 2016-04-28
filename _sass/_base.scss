@@ -2,6 +2,10 @@
 
 body {
   background-color: $main-bg-color;
+  font-size: 14px;
+  @include breakpoint(sm) {
+    font-size: $body-font-size;
+  }
 }
 
 a {
@@ -9,22 +13,35 @@ a {
 }
 
 hr {
-  margin-left: $spacer8 !important;
-  margin-right: $spacer8 !important;
   border-color: $border-color; // override Primer
+  margin-left: $spacer6 !important;
+  margin-right: $spacer6 !important;
+  @include breakpoint(md) {
+    margin-left: $spacer8 !important;
+    margin-right: $spacer8 !important;
+  }
 }
 
 strong {
   color: $main-color-strong;
 }
 
+p:last-child {
+  margin-bottom: 0;
+}
+
 .lead {
+  margin-bottom: 0; // override Primer
   color: $body-color; // override Primer
 }
 
 .text-small {
   font-size: 14px !important;
 }
+
+.text-center-sm { @include breakpoint(sm) { text-align: center !important; } }
+.text-center-md { @include breakpoint(md) { text-align: center !important; } }
+.text-center-lg { @include breakpoint(lg) { text-align: center !important; } }
 
 h1 {                   -webkit-font-smoothing: antialiased; }
 h2 { font-weight: 300; -webkit-font-smoothing: antialiased; }
@@ -33,13 +50,20 @@ h4 { font-weight: 500; }
 h5 { font-weight: 700; }
 h6 { font-weight: 700; }
 
+h2 {
+  margin-top: 0;
+}
+
 // bolder and more top margin
 // to make it easier to see headers within a long wall of text
 .strong-headers {
-  h1 {                      font-weight: 500; -webkit-font-smoothing: initial; font-size: $body-font-size * 2.75; }
+  h1 {                      font-weight: 500; -webkit-font-smoothing: initial; }
   h2 { margin-top: 2em;     font-weight: 500; -webkit-font-smoothing: initial; border-bottom: $border; }
   h3 { margin-top: 1.75em;  font-weight: 500; -webkit-font-smoothing: initial; }
   h4 { margin-top: 1.5em;   font-weight: 500; }
   h5 { margin-top: 1.25em;  }
   h6 { margin-top: 1.125em; }
+
+  &.strong-headers hr { margin: $spacer6 0; }
+  h1 { @include breakpoint(lg) { font-size: $body-font-size * 2.75; } }
 }
