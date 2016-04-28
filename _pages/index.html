@@ -26,8 +26,8 @@ layout: default
 
   <section class="page-section page-section-spacious" id='electron'>
     <div class="container-narrow">
-      <h1 class="text-center">It's easier than you think</h1>
-      <p class="lead text-center">
+      <h1 class="text-center-sm">It's easier than you think</h1>
+      <p class="lead text-center-sm">
         If you can build a website, you can build a desktop app. Electron is a
         framework for creating native applications with web technologies like
         JavaScript, HTML, and CSS. It takes care of the hard parts so you can
@@ -95,15 +95,15 @@ layout: default
   </section>
 
   <section class='page-section page-section-spacious bg-shade' id='apps'>
-    <div class="container-narrow text-center">
-      <h1>Apps built on Electron</h1>
-      <p class="lead">
+    <div class="container-narrow">
+      <h1 class="text-center-sm">Apps built on Electron</h1>
+      <p class="lead text-center-sm">
         With Electron, creating a desktop application for your company or idea is easy. Initially developed for GitHub's <a href='https://atom.io' target='_blank'>Atom editor</a>, Electron has since been used to create applications by companies like Microsoft, Facebook, Slack, and Docker.
       </p>
 
       <hr>
 
-      <div>
+      <div class="text-center">
         <div class="mb-4">
           {% for app in site.data.apps %}
             {% if app.featuredOnHomepage %}
@@ -120,7 +120,7 @@ layout: default
 
       <hr>
 
-      <div>
+      <div class="text-center-sm">
         <h2>Great ideas brought to life</h2>
         <h3 class="mb-4">Interesting open source apps built on Electron.</h3>
         {% include featured_open_source_apps.html %}
@@ -130,7 +130,7 @@ layout: default
   </section>
 
   <section class='page-section page-section-spacious' id='get-started'>
-    <div class='container-narrow text-center'>
+    <div class='container-narrow text-center-sm'>
       <h1>Get started</h1>
       <p class="lead">
         To get started with Electron, check out the resources below. Learn how to wrap your web app with Electron, access all the APIs, and generate installers.
@@ -152,7 +152,7 @@ $ npm install && npm start</code></pre>
       <p>You can also checkout the full <a href='http://electron.atom.io/docs/latest/tutorial/quick-start/'>Quick Start Tutorial</a> or download a <a href='https://github.com/atom/electron/releases' target='_blank'>prebuilt binary</a>.</p>
 
 
-      <div class='row mt-8'>
+      <div class='row mt-6 mt-md-8'>
         <div class='col-xs-12 col-md-5'>
           <a href="https://github.com/electron/electron-api-demos/releases">
             <img class="app-frame" src='{{ site.baseurl }}/images/electron-api-demos.png'>
@@ -167,7 +167,7 @@ $ npm install && npm start</code></pre>
         </div>
       </div>
 
-      <h3 class="mt-8">Or dive deeper and read the <a href='{{ site.baseurl }}/docs/'>documentation</a></h3>
+      <h3 class="mt-6 mt-md-8">Or dive deeper and read the <a href='{{ site.baseurl }}/docs/'>documentation</a></h3>
       <p>If you need any help, ask in the <a href='https://discuss.atom.io/c/electron'>Discuss</a> forum or our <a href='http://atom-slack.herokuapp.com/'>Slack</a> channel.</p>
 
     </div>
