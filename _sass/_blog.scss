@@ -19,6 +19,11 @@
 .blog-index-time {
   color: $main-color-subtle;
   font-size: $body-font-size;
+
+  display: block;
+  @include breakpoint(md) {
+    display: inline;
+  }
 }
 
 

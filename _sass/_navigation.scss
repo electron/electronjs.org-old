@@ -6,6 +6,13 @@
   background-color: lighten($jumbo-bg-color, 2%);
   border-bottom-color: darken($jumbo-bg-color, 8%);
   -webkit-font-smoothing: antialiased;
+
+  padding-left: $spacer3;
+  padding-right: $spacer3;
+  @include breakpoint(lg) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .site-header a {
