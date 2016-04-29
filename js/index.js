@@ -10,7 +10,7 @@ var updateDownloadLink = function () {
   } else if (platform.match(/windows/i)) {
     assetName = 'ElectronAPIDemosSetup.exe'
     osLabel = 'Windows'
-  } else if (platform.match(/ubuntu/i)) {
+  } else if (platform.match(/ubuntu|linux/i)) {
     assetName = 'electron-api-demos-linux.zip'
     osLabel = 'Linux'
   } else {
