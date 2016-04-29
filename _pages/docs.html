@@ -48,8 +48,8 @@ layout: default
       <div class="row">
 
         <div class="col-ms-12 col-lg-4">
-          <h3><a class="docs-title" href="{{ site.baseurl }}/guides/"><span class="octicon octicon-book pr-2"></span>Guides</a></h3>
-          <ul>
+          <h3 class="docs-heading pb-1 mb-3"><a class="docs-title" href="{{ site.baseurl }}/guides/"><span class="octicon octicon-book pr-2"></span>Guides</a></h3>
+          <ul class="docs-list">
           {% for doc in site.docs %}
             {% if doc.category == 'Tutorial' %}
               <li>
@@ -62,8 +62,8 @@ layout: default
         </div>
 
         <div class="col-ms-12 col-lg-4">
-          <h3><a class="docs-title" href="{{ site.baseurl }}/api/"><span class="octicon octicon-gear pr-2"></span>API Reference</a></h3>
-          <ul>
+          <h3 class="docs-heading pb-1 mb-3"><a class="docs-title" href="{{ site.baseurl }}/api/"><span class="octicon octicon-gear pr-2"></span>API Reference</a></h3>
+          <ul class="docs-list">
           {% for doc in site.docs %}
             {% if doc.category == 'API' %}
               <li>
@@ -76,8 +76,8 @@ layout: default
         </div>
 
         <div class="col-ms-12 col-lg-4">
-          <h3><a class="docs-title" href="{{ site.baseurl }}/development/"><span class="octicon octicon-tools pr-2"></span>Developing Electron</a></h3>
-          <ul>
+          <h3 class="docs-heading pb-1 mb-3"><a class="docs-title" href="{{ site.baseurl }}/development/"><span class="octicon octicon-tools pr-2"></span>Developing Electron</a></h3>
+          <ul class="docs-list">
           {% for doc in site.docs %}
             {% if doc.category == 'Development' %}
               <li>

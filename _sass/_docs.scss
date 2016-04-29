@@ -29,6 +29,15 @@
   color: inherit;
 }
 
+.docs-heading {
+  border-bottom: 1px solid #eee;
+}
+
+.docs-list {
+  margin-left: 0;
+  list-style-type: none;
+}
+
 .header-link .octicon {
   color: $main-color-subtle;
   margin-left: .5em;
