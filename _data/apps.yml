@@ -643,14 +643,6 @@
   icon: ""
   featuredOpenSource: true
 -
-  name: "Mancy"
-  description: "Node.js interactive REPL"
-  website: "https://github.com/princejwesley/Mancy"
-  repository: ""
-  keywords: []
-  license: ""
-  icon: ""
--
   name: "Monu"
   description: "Process monitoring menubar app"
   website: "https://github.com/maxogden/monu"
@@ -679,17 +671,6 @@
   license: ""
   icon: ""
   featuredOpenSource: true
--
-  name: "Light Table"
-  description: "Customizable IDE"
-  website: "http://lighttable.com"
-  repository: ""
-  keywords:
-    - "writing"
-    - "web development"
-    - "editor"
-  license: ""
-  icon: ""
 -
   name: "Playback"
   description: "Experimental video player"
