@@ -660,16 +660,6 @@
   icon: "mojibar.png"
   featuredOnHomepage: true
 -
-  name: "Chronocube"
-  description: "Rubik's cube timer"
-  website: "https://github.com/pablopunk/chronocube"
-  repository: ""
-  keywords:
-    - "games"
-  license: ""
-  icon: ""
-  featuredOpenSource: true
--
   name: "Playback"
   description: "Experimental video player"
   website: "https://github.com/mafintosh/playback"
