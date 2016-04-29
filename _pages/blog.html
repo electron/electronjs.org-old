@@ -18,8 +18,13 @@ layout: default
         <li class="mb-4 mb-md-6 mb-lg-8">
           <h2>
             <a class="blog-index-link mr-2" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-            <time class="blog-index-time">{{ post.date | date: '%B %d, %Y' }}</time>
+
+            <div class="who-when mt-1">
+              <span class="octicon octicon-calendar pr-2"></span><time class="blog-index-time">{{ post.date | date: '%B %d, %Y' }}</time>
+              <a href="https://github.com/{{ post.author }}" class="author-link ml-3"><img src="https://github.com/{{ post.author }}.png" alt="{{ post.author }}" class="avatar mr-2">{{ post.author }}</a>
+            </div>
           </h2>
+
           {{ post.excerpt }}
           <p><a href="{{ post.url | prepend: site.baseurl }}">Read more <span class="octicon octicon-arrow-small-right"></span></a></p>
         </li>
