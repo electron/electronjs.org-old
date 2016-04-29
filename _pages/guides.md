@@ -9,9 +9,9 @@ layout: docs
 category: ignore
 ---
 
-## Guides
+<h2 class="docs-heading pb-3 mb-3"><span class="mega-octicon octicon-book pr-3"></span>Guides</a></h2>
 
-<ul>
+<ul class="docs-list">
 {% for doc in site.docs %}
   {% if doc.category == 'Development' or doc.category == 'Tutorial' %}
     <li>

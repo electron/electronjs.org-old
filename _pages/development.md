@@ -6,9 +6,9 @@ layout: docs
 category: ignore
 ---
 
-## Developing Electron
+<h2 class="docs-heading pb-3 mb-3"><span class="mega-octicon octicon-tools pr-3"></span>Developing Electron</a></h2>
 
-<ul>
+<ul class="docs-list">
 {% for doc in site.docs %}
   {% if doc.category == 'Development' %}
     <li>
