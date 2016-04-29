@@ -4,13 +4,13 @@ var updateDownloadLink = function () {
   var assetName
   var osLabel
 
-  if (platform.match(/mac/i)) {
+  if (/mac/i.test(platform)) {
     assetName = 'electron-api-demos-mac.zip'
     osLabel = 'Mac'
-  } else if (platform.match(/windows/i)) {
+  } else if (/windows/i.test(platform)) {
     assetName = 'ElectronAPIDemosSetup.exe'
     osLabel = 'Windows'
-  } else if (platform.match(/ubuntu|linux/i)) {
+  } else if (/ubuntu|linux/i.test(platform)) {
     assetName = 'electron-api-demos-linux.zip'
     osLabel = 'Linux'
   } else {
