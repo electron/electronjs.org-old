@@ -696,8 +696,13 @@
   icon: "laverna.png"
 -
   name: "Electron Packager"
-  description: "Package your Electron apps into executables"
+  description: "Package your apps"
   website: "https://github.com/electron-userland/electron-packager"
+  featuredOpenSource: true
+-
+  name: "Electron Builder"
+  description: "Deploy your apps"
+  website: "https://github.com/electron-userland/electron-builder"
   featuredOpenSource: true
 -
   name: "Menubar"
