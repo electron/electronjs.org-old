@@ -643,17 +643,6 @@
   icon: ""
   featuredOpenSource: true
 -
-  name: "Kart"
-  description: "RetroArch emulator frontend"
-  website: "https://github.com/maddox/kart"
-  repository: ""
-  keywords:
-    - "games"
-    - "emulator"
-  license: ""
-  icon: ""
-  featuredOpenSource: true
--
   name: "Mancy"
   description: "Node.js interactive REPL"
   website: "https://github.com/princejwesley/Mancy"
