@@ -705,6 +705,21 @@
   website: "https://github.com/electron-userland/electron-builder"
   featuredOpenSource: true
 -
+  name: "Spectron"
+  description: "Test your apps"
+  website: "https://github.com/electron/spectron"
+  featuredOpenSource: true
+-
+  name: "Devtron"
+  description: "Debug your apps"
+  website: "https://github.com/electron/devtron"
+  featuredOpenSource: true
+-
+  name: "Electron Prebuilt"
+  description: "Install Electron"
+  website: "https://github.com/electron-userland/electron-prebuilt"
+  featuredOpenSource: true
+-
   name: "Menubar"
   description: "Create menubar apps"
   website: "https://github.com/maxogden/menubar"
