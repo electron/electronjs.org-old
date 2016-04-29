@@ -48,8 +48,8 @@ layout: default
       <div class="row">
 
         <div class="col-ms-12 col-lg-4">
-          <h2><a class="docs-title" href="{{ site.baseurl }}/guides/">Guides</a></h2>
-          <ul>
+          <h2 class="docs-heading pb-3 mb-3"><a class="docs-title" href="{{ site.baseurl }}/guides/"><span class="mega-octicon octicon-book pr-3"></span>Guides</a></h2>
+          <ul class="docs-list">
           {% for doc in site.docs %}
             {% if doc.category == 'Tutorial' %}
               <li>
@@ -62,12 +62,12 @@ layout: default
         </div>
 
         <div class="col-ms-12 col-lg-4">
-          <h2><a class="docs-title" href="{{ site.baseurl }}/api/">API Reference</a></h2>
-          <ul>
+          <h2 class="docs-heading pb-3 mb-3"><a class="docs-title" href="{{ site.baseurl }}/api/"><span class="mega-octicon octicon-gear pr-3"></span>API Reference</a></h2>
+          <ul class="docs-list">
           {% for doc in site.docs %}
             {% if doc.category == 'API' %}
               <li>
-                <a href="{{ site.baseurl }}{{ doc.url}}">{{ doc.title }}</a>
+                <a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a>
                 <!-- <span class="excerpt">{{ doc.content | strip_html | truncatewords: 50 }}</span> -->
               </li>
             {% endif %}
@@ -76,12 +76,12 @@ layout: default
         </div>
 
         <div class="col-ms-12 col-lg-4">
-          <h2><a class="docs-title" href="{{ site.baseurl }}/development/">Developing Electron</a></h2>
-          <ul>
+          <h2 class="docs-heading pb-3 mb-3"><a class="docs-title" href="{{ site.baseurl }}/development/"><span class="mega-octicon octicon-tools pr-3"></span>Developing Electron</a></h2>
+          <ul class="docs-list">
           {% for doc in site.docs %}
             {% if doc.category == 'Development' %}
               <li>
-                <a href="{{ site.baseurl }}{{ doc.url}}">{{ doc.title }}</a>
+                <a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a>
                 <!-- <span class="excerpt">{{ doc.content | strip_html | truncatewords: 50 }}</span> -->
               </li>
             {% endif %}
