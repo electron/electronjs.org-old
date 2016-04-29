@@ -642,15 +642,6 @@
   license: ""
   icon: "friends.png"
 -
-  name: "Monu"
-  description: "Process monitoring menubar app"
-  website: "https://github.com/maxogden/monu"
-  repository: ""
-  keywords: []
-  license: ""
-  icon: ""
-  featuredOpenSource: true
--
   name: "Mojibar"
   description: "Emoji searcher menubar app"
   website: "https://github.com/muan/mojibar"
@@ -681,18 +672,6 @@
     - "WebRTC"
   license: ""
   icon: "screencat.png"
--
-  name: "Geojsonapp"
-  description: "Preview geojson files"
-  website: "https://github.com/mick/geojsonapp"
-  repository: ""
-  keywords:
-    - "maps"
-    - "cartography"
-    - "geolocation"
-  license: ""
-  icon: ""
-  featuredOpenSource: true
 -
   name: "Menubar"
   description: "Create menubar apps"
