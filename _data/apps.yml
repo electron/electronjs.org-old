@@ -570,7 +570,7 @@
   icon: "TweakStyle.png"
   featuredOnHomepage: false
 -
-  name: "WebTorrent Desktop"
+  name: "WebTorrent"
   description: "The streaming torrent client"
   website: "https://webtorrent.io/desktop"
   repository: ""
