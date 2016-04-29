@@ -673,16 +673,6 @@
   license: ""
   icon: "screencat.png"
 -
-  name: "Menubar"
-  description: "Create menubar apps"
-  website: "https://github.com/maxogden/menubar"
-  repository: ""
-  keywords:
-    - "menubar"
-  license: ""
-  icon: ""
-  featuredOpenSource: true
--
   name: "Yeoman"
   description: "Scaffolding tool for webapps"
   website: "https://github.com/yeoman/yeoman-app"
@@ -704,3 +694,18 @@
     - "editor"
   license: ""
   icon: "laverna.png"
+-
+  name: "Electron Packager"
+  description: "Package your Electron apps into executables"
+  website: "https://github.com/electron-userland/electron-packager"
+  featuredOpenSource: true
+-
+  name: "Menubar"
+  description: "Create menubar apps"
+  website: "https://github.com/maxogden/menubar"
+  repository: ""
+  keywords:
+    - "menubar"
+  license: ""
+  icon: ""
+  featuredOpenSource: true
