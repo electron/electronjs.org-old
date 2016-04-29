@@ -22,10 +22,7 @@
 }
 
 .blog-index-time {
-  display: block;
-  @include breakpoint(md) {
-    display: inline;
-  }
+  display: inline;
 }
 
 .author-link {
@@ -46,7 +43,7 @@
 .blog-post {
 
   time {
-    display: block;
+    display: inline;
     margin-bottom: $spacer4;
     color: $main-color-subtle;
   }
