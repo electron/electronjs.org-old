@@ -57,4 +57,8 @@
     padding: $spacer2;
     background-color: $main-bg-color-shade;
   }
+
+  hr:first-of-type {
+    display: none;
+  }
 }
