@@ -1,5 +1,5 @@
 ---
-version: v0.37.7
+version: v0.37.8
 category: API
 title: 'Power Save-Blocker'
 redirect_from:
@@ -32,15 +32,15 @@ redirect_from:
     - /docs/v0.37.4/api/power-save-blocker/
     - /docs/v0.37.5/api/power-save-blocker/
     - /docs/v0.37.7/api/power-save-blocker/
+    - /docs/v0.37.8/api/power-save-blocker/
     - /docs/latest/api/power-save-blocker/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/power-save-blocker.md'
+excerpt: "Block the system from entering low-power (sleep) mode."
 ---
 
 # powerSaveBlocker
 
-The `powerSaveBlocker` module is used to block the system from entering
-low-power (sleep) mode and thus allowing the app to keep the system and screen
-active.
+> Block the system from entering low-power (sleep) mode.
 
 For example:
 

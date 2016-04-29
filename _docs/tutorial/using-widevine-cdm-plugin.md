@@ -1,5 +1,5 @@
 ---
-version: v0.37.7
+version: v0.37.8
 category: Tutorial
 title: 'Using Widevine-Cdm-Plugin'
 redirect_from:
@@ -32,6 +32,7 @@ redirect_from:
     - /docs/v0.37.4/tutorial/using-widevine-cdm-plugin/
     - /docs/v0.37.5/tutorial/using-widevine-cdm-plugin/
     - /docs/v0.37.7/tutorial/using-widevine-cdm-plugin/
+    - /docs/v0.37.8/tutorial/using-widevine-cdm-plugin/
     - /docs/latest/tutorial/using-widevine-cdm-plugin/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/using-widevine-cdm-plugin.md'
 ---

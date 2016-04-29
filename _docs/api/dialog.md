@@ -1,5 +1,5 @@
 ---
-version: v0.37.7
+version: v0.37.8
 category: API
 title: Dialog
 redirect_from:
@@ -32,15 +32,15 @@ redirect_from:
     - /docs/v0.37.4/api/dialog/
     - /docs/v0.37.5/api/dialog/
     - /docs/v0.37.7/api/dialog/
+    - /docs/v0.37.8/api/dialog/
     - /docs/latest/api/dialog/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/dialog.md'
+excerpt: "Display native system dialogs for opening and saving files, alerting, etc."
 ---
 
 # dialog
 
-The `dialog` module provides APIs to show native system dialogs, such as opening
-files or alerting, so web applications can deliver the same user experience as
-native applications.
+> Display native system dialogs for opening and saving files, alerting, etc.
 
 An example of showing a dialog to select multiple files and directories:
 
@@ -50,7 +50,8 @@ const dialog = require('electron').dialog;
 console.log(dialog.showOpenDialog({ properties: [ 'openFile', 'openDirectory', 'multiSelections' ]}));
 ```
 
-The Dialog is opened from Electron's main thread. If you want to use the dialog object from a renderer process, remember to access it using the remote:
+The Dialog is opened from Electron's main thread. If you want to use the dialog
+object from a renderer process, remember to access it using the remote:
 
 ```javascript
 const dialog = require('electron').remote.dialog;
@@ -132,7 +133,7 @@ will be passed via `callback(filename)`
   * `title` String - Title of the message box, some platforms will not show it.
   * `message` String - Content of the message box.
   * `detail` String - Extra information of the message.
-  * `icon` [NativeImage](http://electron.atom.io/docs/v0.37.7/api/native-image)
+  * `icon` [NativeImage](http://electron.atom.io/docs/v0.37.8/api/native-image)
   * `cancelId` Integer - The value will be returned when user cancels the dialog
     instead of clicking the buttons of the dialog. By default it is the index
     of the buttons that have "cancel" or "no" as label, or 0 if there is no such

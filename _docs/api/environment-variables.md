@@ -1,5 +1,5 @@
 ---
-version: v0.37.7
+version: v0.37.8
 category: API
 title: 'Environment Variables'
 redirect_from:
@@ -32,11 +32,15 @@ redirect_from:
     - /docs/v0.37.4/api/environment-variables/
     - /docs/v0.37.5/api/environment-variables/
     - /docs/v0.37.7/api/environment-variables/
+    - /docs/v0.37.8/api/environment-variables/
     - /docs/latest/api/environment-variables/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/environment-variables.md'
+excerpt: "Control application configuration and behavior without changing code."
 ---
 
 # Environment variables
+
+> Control application configuration and behavior without changing code.
 
 Some behaviors of Electron are controlled by environment variables, because they
 are initialized earlier than command line and the app's code.

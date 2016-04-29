@@ -1,5 +1,5 @@
 ---
-version: v0.37.7
+version: v0.37.8
 category: API
 title: Process
 redirect_from:
@@ -32,11 +32,15 @@ redirect_from:
     - /docs/v0.37.4/api/process/
     - /docs/v0.37.5/api/process/
     - /docs/v0.37.7/api/process/
+    - /docs/v0.37.8/api/process/
     - /docs/latest/api/process/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/process.md'
+excerpt: "Get information about the running application process."
 ---
 
 # process
+
+> Get information about the running application process.
 
 The `process` object in Electron has the following differences from the one in
 upstream node:
@@ -48,8 +52,8 @@ upstream node:
 * `process.resourcesPath` String - Path to JavaScript source code.
 * `process.mas` Boolean - For Mac App Store build, this value is `true`, for
   other builds it is `undefined`.
-* `process.windowsStore` Boolean - If the app is running as a Windows Store app (appx), this value is `true`, for
-  other builds it is `undefined`.
+* `process.windowsStore` Boolean - If the app is running as a Windows Store app
+  (appx), this value is `true`, for other builds it is `undefined`.
 
 ## Events
 
@@ -61,7 +65,7 @@ beginning to load the web page or the main script.
 It can be used by the preload script to add removed Node global symbols back to
 the global scope when node integration is turned off:
 
-```js
+```javascript
 // preload.js
 var _setImmediate = setImmediate;
 var _clearImmediate = clearImmediate;
@@ -81,6 +85,10 @@ built-in modules.
 ## Methods
 
 The `process` object has the following method:
+
+### `process.crash()`
+
+Causes the main thread of the current process crash.
 
 ### `process.hang()`
 

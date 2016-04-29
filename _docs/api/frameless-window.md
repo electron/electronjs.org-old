@@ -1,5 +1,5 @@
 ---
-version: v0.37.7
+version: v0.37.8
 category: API
 title: 'Frameless Window'
 redirect_from:
@@ -32,18 +32,25 @@ redirect_from:
     - /docs/v0.37.4/api/frameless-window/
     - /docs/v0.37.5/api/frameless-window/
     - /docs/v0.37.7/api/frameless-window/
+    - /docs/v0.37.8/api/frameless-window/
     - /docs/latest/api/frameless-window/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/frameless-window.md'
+excerpt: "Open a window without toolbars, borders, or other graphical &quot;chrome&quot;."
 ---
 
 # Frameless Window
 
-A frameless window is a window that has no [chrome](https://developer.mozilla.org/en-US/docs/Glossary/Chrome), the parts of the window, like toolbars, that are not a part of the web page. These are options on the [`BrowserWindow`](browser-window.md) class.
+> Open a window without toolbars, borders, or other graphical "chrome".
+
+A frameless window is a window that has no
+[chrome](https://developer.mozilla.org/en-US/docs/Glossary/Chrome), the parts of
+the window, like toolbars, that are not a part of the web page. These are
+options on the [`BrowserWindow`](http://electron.atom.io/docs/v0.37.8/api/browser-window) class.
 
 ## Create a frameless window
 
 To create a frameless window, you need to set `frame` to `false` in
-[BrowserWindow](http://electron.atom.io/docs/v0.37.7/api/browser-window)'s `options`:
+[BrowserWindow](http://electron.atom.io/docs/v0.37.8/api/browser-window)'s `options`:
 
 
 ```javascript
@@ -76,7 +83,8 @@ var win = new BrowserWindow({ transparent: true, frame: false });
 ### Limitations
 
 * You can not click through the transparent area. We are going to introduce an
-  API to set window shape to solve this, see [our issue](https://github.com/electron/electron/issues/1335) for details.
+  API to set window shape to solve this, see
+  [our issue](https://github.com/electron/electron/issues/1335) for details.
 * Transparent windows are not resizable. Setting `resizable` to `true` may make
   a transparent window stop working on some platforms.
 * The `blur` filter only applies to the web page, so there is no way to apply

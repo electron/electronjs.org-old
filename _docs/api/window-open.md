@@ -1,5 +1,5 @@
 ---
-version: v0.37.7
+version: v0.37.8
 category: API
 title: 'Window Open'
 redirect_from:
@@ -32,11 +32,15 @@ redirect_from:
     - /docs/v0.37.4/api/window-open/
     - /docs/v0.37.5/api/window-open/
     - /docs/v0.37.7/api/window-open/
+    - /docs/v0.37.8/api/window-open/
     - /docs/latest/api/window-open/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/window-open.md'
+excerpt: "Open a new window and load a URL."
 ---
 
 # The `window.open` function
+
+> Open a new window and load a URL.
 
 When `window.open` is called to create a new window in a web page, a new instance
 of `BrowserWindow` will be created for the `url` and a proxy will be returned

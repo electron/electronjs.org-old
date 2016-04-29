@@ -1,5 +1,5 @@
 ---
-version: v0.37.7
+version: v0.37.8
 category: API
 title: Clipboard
 redirect_from:
@@ -32,13 +32,16 @@ redirect_from:
     - /docs/v0.37.4/api/clipboard/
     - /docs/v0.37.5/api/clipboard/
     - /docs/v0.37.7/api/clipboard/
+    - /docs/v0.37.8/api/clipboard/
     - /docs/latest/api/clipboard/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/clipboard.md'
+excerpt: "Perform copy and paste operations on the system clipboard."
 ---
 
 # clipboard
 
-The `clipboard` module provides methods to perform copy and paste operations.
+> Perform copy and paste operations on the system clipboard.
+
 The following example shows how to write a string to the clipboard:
 
 ```javascript
@@ -90,11 +93,11 @@ Writes `markup` to the clipboard.
 
 * `type` String (optional)
 
-Returns the content in the clipboard as a [NativeImage](http://electron.atom.io/docs/v0.37.7/api/native-image).
+Returns the content in the clipboard as a [NativeImage](http://electron.atom.io/docs/v0.37.8/api/native-image).
 
 ### `clipboard.writeImage(image[, type])`
 
-* `image` [NativeImage](http://electron.atom.io/docs/v0.37.7/api/native-image)
+* `image` [NativeImage](http://electron.atom.io/docs/v0.37.8/api/native-image)
 * `type` String (optional)
 
 Writes `image` to the clipboard.
@@ -147,7 +150,7 @@ Reads `data` from the clipboard.
 * `data` Object
   * `text` String
   * `html` String
-  * `image` [NativeImage](http://electron.atom.io/docs/v0.37.7/api/native-image)
+  * `image` [NativeImage](http://electron.atom.io/docs/v0.37.8/api/native-image)
 * `type` String (optional)
 
 ```javascript

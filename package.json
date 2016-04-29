@@ -25,6 +25,7 @@
     "cpr": "^0.4.0",
     "glob": "^5.0.10",
     "gunzip-maybe": "^1.1.0",
+    "marky-markdown-lite": "^1.0.1",
     "mkdirp": "^0.5.1",
     "nugget": "^1.5.1",
     "request": "^2.55.0",

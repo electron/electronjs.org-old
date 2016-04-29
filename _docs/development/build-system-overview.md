@@ -1,5 +1,5 @@
 ---
-version: v0.37.7
+version: v0.37.8
 category: Development
 title: 'Build System-Overview'
 redirect_from:
@@ -32,14 +32,16 @@ redirect_from:
     - /docs/v0.37.4/development/build-system-overview/
     - /docs/v0.37.5/development/build-system-overview/
     - /docs/v0.37.7/development/build-system-overview/
+    - /docs/v0.37.8/development/build-system-overview/
     - /docs/latest/development/build-system-overview/
 source_url: 'https://github.com/electron/electron/blob/master/docs/development/build-system-overview.md'
 ---
 
 # Build System Overview
 
-Electron uses [gyp](https://gyp.gsrc.io/) for project generation and [ninja](https://ninja-build.org/) for building. Project
-configurations can be found in the `.gyp` and `.gypi` files.
+Electron uses [gyp](https://gyp.gsrc.io/) for project generation and
+[ninja](https://ninja-build.org/) for building. Project configurations can
+be found in the `.gyp` and `.gypi` files.
 
 ## Gyp Files
 

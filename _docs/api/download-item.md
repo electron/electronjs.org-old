@@ -1,5 +1,5 @@
 ---
-version: v0.37.7
+version: v0.37.8
 category: API
 title: 'Download Item'
 redirect_from:
@@ -32,14 +32,18 @@ redirect_from:
     - /docs/v0.37.4/api/download-item/
     - /docs/v0.37.5/api/download-item/
     - /docs/v0.37.7/api/download-item/
+    - /docs/v0.37.8/api/download-item/
     - /docs/latest/api/download-item/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/download-item.md'
+excerpt: "Control file downloads from remote sources."
 ---
 
 # DownloadItem
 
-`DownloadItem` is an EventEmitter represents a download item in Electron. It
-is used in `will-download` event of `Session` module, and allows users to
+> Control file downloads from remote sources.
+
+`DownloadItem` is an EventEmitter that represents a download item in Electron.
+It is used in `will-download` event of `Session` module, and allows users to
 control the download item.
 
 ```javascript

@@ -14,7 +14,7 @@ kramdown:
     hard_wrap: false
 gems:
     - jekyll-redirect-from
-latest_version: v0.37.7
+latest_version: v0.37.8
 current_node: 5.1.1
 current_chrome: 49.0.2623.75
 current_v8: 4.9.385.28
@@ -50,6 +50,7 @@ available_versions:
     - v0.37.4
     - v0.37.5
     - v0.37.7
+    - v0.37.8
 collections:
     pages: {output: true, permalink: '/:path/'}
     docs: {output: true, permalink: '/:path/'}

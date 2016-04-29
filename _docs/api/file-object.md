@@ -1,5 +1,5 @@
 ---
-version: v0.37.7
+version: v0.37.8
 category: API
 title: 'File Object'
 redirect_from:
@@ -32,11 +32,15 @@ redirect_from:
     - /docs/v0.37.4/api/file-object/
     - /docs/v0.37.5/api/file-object/
     - /docs/v0.37.7/api/file-object/
+    - /docs/v0.37.8/api/file-object/
     - /docs/latest/api/file-object/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/file-object.md'
+excerpt: "Use the HTML5 <code>File</code> API to work natively with files on the filesystem."
 ---
 
 # `File` object
+
+> Use the HTML5 `File` API to work natively with files on the filesystem.
 
 The DOM's File interface provides abstraction around native files in order to
 let users work on native files directly with the HTML5 file API. Electron has
