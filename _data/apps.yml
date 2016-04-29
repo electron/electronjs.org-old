@@ -736,5 +736,4 @@
     - "markdown"
     - "editor"
   license: ""
-  icon: ""
-  featuredOpenSource: true
+  icon: "laverna.png"
