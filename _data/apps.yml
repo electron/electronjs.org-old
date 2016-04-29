@@ -643,15 +643,6 @@
   icon: ""
   featuredOpenSource: true
 -
-  name: "Hearthdash"
-  description: "Hearthstone tracker"
-  website: "https://github.com/postcasio/hearthdash"
-  repository: ""
-  keywords: []
-  license: ""
-  icon: ""
-  featuredOpenSource: true
--
   name: "Kart"
   description: "RetroArch emulator frontend"
   website: "https://github.com/maddox/kart"
@@ -670,7 +661,6 @@
   keywords: []
   license: ""
   icon: ""
-  featuredOpenSource: true
 -
   name: "Monu"
   description: "Process monitoring menubar app"
@@ -711,7 +701,6 @@
     - "editor"
   license: ""
   icon: ""
-  featuredOpenSource: true
 -
   name: "Playback"
   description: "Experimental video player"
