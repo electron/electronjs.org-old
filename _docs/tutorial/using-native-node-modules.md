@@ -1,7 +1,7 @@
 ---
 version: v0.37.8
 category: Tutorial
-title: 'Using Native-Node-Modules'
+title: 'Using Native Node Modules'
 redirect_from:
     - /docs/v0.24.0/tutorial/using-native-node-modules/
     - /docs/v0.25.0/tutorial/using-native-node-modules/

@@ -1,7 +1,7 @@
 ---
 version: v0.37.8
 category: Tutorial
-title: 'Testing On-Headless-Ci'
+title: 'Testing on Headless Ci'
 redirect_from:
     - /docs/v0.24.0/tutorial/testing-on-headless-ci/
     - /docs/v0.25.0/tutorial/testing-on-headless-ci/

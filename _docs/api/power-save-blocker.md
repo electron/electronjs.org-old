@@ -1,7 +1,7 @@
 ---
 version: v0.37.8
 category: API
-title: 'Power Save-Blocker'
+title: 'Power Save Blocker'
 redirect_from:
     - /docs/v0.24.0/api/power-save-blocker/
     - /docs/v0.25.0/api/power-save-blocker/

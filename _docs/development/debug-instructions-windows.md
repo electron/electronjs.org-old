@@ -1,7 +1,7 @@
 ---
 version: v0.37.8
 category: Development
-title: 'Debug Instructions-Windows'
+title: 'Debug Instructions Windows'
 redirect_from:
     - /docs/v0.24.0/development/debug-instructions-windows/
     - /docs/v0.25.0/development/debug-instructions-windows/

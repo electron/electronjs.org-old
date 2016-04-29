@@ -1,7 +1,7 @@
 ---
 version: v0.37.8
 category: API
-title: 'Chrome Command-Line-Switches'
+title: 'Chrome Command Line Switches'
 redirect_from:
     - /docs/v0.24.0/api/chrome-command-line-switches/
     - /docs/v0.25.0/api/chrome-command-line-switches/

@@ -1,7 +1,7 @@
 ---
 version: v0.37.8
 category: Development
-title: 'Setting Up-Symbol-Server'
+title: 'Setting Up Symbol Server'
 redirect_from:
     - /docs/v0.24.0/development/setting-up-symbol-server/
     - /docs/v0.25.0/development/setting-up-symbol-server/

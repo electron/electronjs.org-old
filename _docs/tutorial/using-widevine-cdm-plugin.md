@@ -1,7 +1,7 @@
 ---
 version: v0.37.8
 category: Tutorial
-title: 'Using Widevine-Cdm-Plugin'
+title: 'Using Widevine Cdm Plugin'
 redirect_from:
     - /docs/v0.24.0/tutorial/using-widevine-cdm-plugin/
     - /docs/v0.25.0/tutorial/using-widevine-cdm-plugin/
