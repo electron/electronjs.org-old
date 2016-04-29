@@ -1,5 +1,5 @@
 ---
-version: v0.37.7
+version: v0.37.8
 category: API
 title: App
 redirect_from:
@@ -32,13 +32,15 @@ redirect_from:
     - /docs/v0.37.4/api/app/
     - /docs/v0.37.5/api/app/
     - /docs/v0.37.7/api/app/
+    - /docs/v0.37.8/api/app/
     - /docs/latest/api/app/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/app.md'
+excerpt: "Control your application&apos;s event lifecycle."
 ---
 
 # app
 
-The `app` module is responsible for controlling the application's lifecycle.
+> Control your application's event lifecycle.
 
 The following example shows how to quit the application when the last window is
 closed:
@@ -156,7 +158,7 @@ Returns:
 * `event` Event
 * `window` BrowserWindow
 
-Emitted when a [browserWindow](http://electron.atom.io/docs/v0.37.7/api/browser-window) gets blurred.
+Emitted when a [browserWindow](http://electron.atom.io/docs/v0.37.8/api/browser-window) gets blurred.
 
 ### Event: 'browser-window-focus'
 
@@ -165,7 +167,7 @@ Returns:
 * `event` Event
 * `window` BrowserWindow
 
-Emitted when a [browserWindow](http://electron.atom.io/docs/v0.37.7/api/browser-window) gets focused.
+Emitted when a [browserWindow](http://electron.atom.io/docs/v0.37.8/api/browser-window) gets focused.
 
 ### Event: 'browser-window-created'
 
@@ -174,14 +176,14 @@ Returns:
 * `event` Event
 * `window` BrowserWindow
 
-Emitted when a new [browserWindow](http://electron.atom.io/docs/v0.37.7/api/browser-window) is created.
+Emitted when a new [browserWindow](http://electron.atom.io/docs/v0.37.8/api/browser-window) is created.
 
 ### Event: 'certificate-error'
 
 Returns:
 
 * `event` Event
-* `webContents` [WebContents](http://electron.atom.io/docs/v0.37.7/api/web-contents)
+* `webContents` [WebContents](http://electron.atom.io/docs/v0.37.8/api/web-contents)
 * `url` URL
 * `error` String - The error code
 * `certificate` Object
@@ -210,7 +212,7 @@ app.on('certificate-error', function(event, webContents, url, error, certificate
 Returns:
 
 * `event` Event
-* `webContents` [WebContents](http://electron.atom.io/docs/v0.37.7/api/web-contents)
+* `webContents` [WebContents](http://electron.atom.io/docs/v0.37.8/api/web-contents)
 * `url` URL
 * `certificateList` [Objects]
   * `data` Buffer - PEM encoded data
@@ -236,7 +238,7 @@ app.on('select-client-certificate', function(event, webContents, url, list, call
 Returns:
 
 * `event` Event
-* `webContents` [WebContents](http://electron.atom.io/docs/v0.37.7/api/web-contents)
+* `webContents` [WebContents](http://electron.atom.io/docs/v0.37.8/api/web-contents)
 * `request` Object
   * `method` String
   * `url` URL
@@ -265,10 +267,6 @@ app.on('login', function(event, webContents, request, authInfo, callback) {
 ### Event: 'gpu-process-crashed'
 
 Emitted when the gpu process crashes.
-
-### Event: 'platform-theme-changed' _OS X_
-
-Emitted when the system's Dark Mode theme is toggled.
 
 ## Methods
 
@@ -426,6 +424,18 @@ This method checks if the current executable as the default handler for a protoc
 **Note:** On OS X, removing the app will automatically remove the app as the
 default protocol handler.
 
+### `app.isDefaultProtocolClient(protocol)` _OS X_ _Windows_
+
+* `protocol` String - The name of your protocol, without `://`. 
+
+This method checks if the current executable is the default handler for a protocol
+(aka URI scheme). If so, it will return true. Otherwise, it will return false. 
+
+**Note:** On OS X, you can use this method to check if the app has been registered as the default protocol handler for a protocol. You can also verify this by checking `~/Library/Preferences/com.apple.LaunchServices.plist` on the OS X machine. 
+Please refer to [Apple's documentation][LSCopyDefaultHandlerForURLScheme] for details.
+
+The API uses the Windows Registry and LSCopyDefaultHandlerForURLScheme internally.
+
 ### `app.setUserTasks(tasks)` _Windows_
 
 * `tasks` Array - Array of `Task` objects
@@ -491,7 +501,7 @@ use this method to ensure single instance.
 An example of activating the window of primary instance when a second instance
 starts:
 
-```js
+```javascript
 var myWindow = null;
 
 var shouldQuit = app.makeSingleInstance(function(commandLine, workingDirectory) {
@@ -518,40 +528,6 @@ app.on('ready', function() {
 
 Changes the [Application User Model ID][app-user-model-id] to `id`.
 
-### `app.isAeroGlassEnabled()` _Windows_
-
-This method returns `true` if [DWM composition](https://msdn.microsoft.com/en-us/library/windows/desktop/aa969540.aspx)
-(Aero Glass) is enabled, and `false` otherwise. You can use it to determine if
-you should create a transparent window or not (transparent windows won't work
-correctly when DWM composition is disabled).
-
-Usage example:
-
-```js
-let browserOptions = {width: 1000, height: 800};
-
-// Make the window transparent only if the platform supports it.
-if (process.platform !== 'win32' || app.isAeroGlassEnabled()) {
-  browserOptions.transparent = true;
-  browserOptions.frame = false;
-}
-
-// Create the window.
-win = new BrowserWindow(browserOptions);
-
-// Navigate.
-if (browserOptions.transparent) {
-  win.loadURL('file://' + __dirname + '/index.html');
-} else {
-  // No transparency, so we load a fallback that uses basic styles.
-  win.loadURL('file://' + __dirname + '/fallback.html');
-}
-```
-
-### `app.isDarkMode()` _OS X_
-
-This method returns `true` if the system is in Dark Mode, and `false` otherwise.
-
 ### `app.importCertificate(options, callback)` _LINUX_
 
 * `options` Object
@@ -561,8 +537,8 @@ This method returns `true` if the system is in Dark Mode, and `false` otherwise.
   * `result` Integer - Result of import.
 
 Imports the certificate in pkcs12 format into the platform certificate store.
-`callback` is called with the `result` of import operation, a value of `0` indicates
-success while any other value indicates failure according to chromium [net_error_list](https://code.google.com/p/chromium/codesearch#chromium/src/net/base/net_error_list.h).
+`callback` is called with the `result` of import operation, a value of `0`
+indicates success while any other value indicates failure according to chromium [net_error_list](https://code.google.com/p/chromium/codesearch#chromium/src/net/base/net_error_list.h).
 
 ### `app.commandLine.appendSwitch(switch[, value])`
 
@@ -618,13 +594,13 @@ Shows the dock icon.
 
 ### `app.dock.setMenu(menu)` _OS X_
 
-* `menu` [Menu](http://electron.atom.io/docs/v0.37.7/api/menu)
+* `menu` [Menu](http://electron.atom.io/docs/v0.37.8/api/menu)
 
 Sets the application's [dock menu][dock-menu].
 
 ### `app.dock.setIcon(image)` _OS X_
 
-* `image` [NativeImage](http://electron.atom.io/docs/v0.37.7/api/native-image)
+* `image` [NativeImage](http://electron.atom.io/docs/v0.37.8/api/native-image)
 
 Sets the `image` associated with this dock icon.
 
@@ -632,3 +608,5 @@ Sets the `image` associated with this dock icon.
 [tasks]:http://msdn.microsoft.com/en-us/library/windows/desktop/dd378460(v=vs.85).aspx#tasks
 [app-user-model-id]: https://msdn.microsoft.com/en-us/library/windows/desktop/dd378459(v=vs.85).aspx
 [CFBundleURLTypes]: https://developer.apple.com/library/ios/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html#//apple_ref/doc/uid/TP40009249-102207-TPXREF115
+[LSCopyDefaultHandlerForURLScheme]: 
+https://developer.apple.com/library/mac/documentation/Carbon/Reference/LaunchServicesReference/#//apple_ref/c/func/LSCopyDefaultHandlerForURLScheme

@@ -1,5 +1,5 @@
 ---
-version: v0.37.7
+version: v0.37.8
 category: Tutorial
 title: 'Using Selenium-and-Webdriver'
 redirect_from:
@@ -32,8 +32,14 @@ redirect_from:
     - /docs/v0.37.4/tutorial/using-selenium-and-webdriver/
     - /docs/v0.37.5/tutorial/using-selenium-and-webdriver/
     - /docs/v0.37.7/tutorial/using-selenium-and-webdriver/
+    - /docs/v0.37.8/tutorial/using-selenium-and-webdriver/
     - /docs/latest/tutorial/using-selenium-and-webdriver/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/using-selenium-and-webdriver.md'
+excerpt: "WebDriver is an open source tool for automated testing of web apps across many
+browsers. It provides capabilities for navigating to web pages, user input,
+JavaScript execution, and more. ChromeDriver is a standalone server which
+implements WebDriver&apos;s wire protocol for Chromium. It is being developed by
+members of the Chromium and WebDriver teams."
 ---
 
 # Using Selenium and WebDriver

@@ -1,5 +1,5 @@
 ---
-version: v0.37.7
+version: v0.37.8
 category: API
 title: 'Desktop Capturer'
 redirect_from:
@@ -32,14 +32,17 @@ redirect_from:
     - /docs/v0.37.4/api/desktop-capturer/
     - /docs/v0.37.5/api/desktop-capturer/
     - /docs/v0.37.7/api/desktop-capturer/
+    - /docs/v0.37.8/api/desktop-capturer/
     - /docs/latest/api/desktop-capturer/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/desktop-capturer.md'
+excerpt: "List <code>getUserMedia</code> sources for capturing audio, video, and images from a
+microphone, camera, or screen."
 ---
 
 # desktopCapturer
 
-The `desktopCapturer` module can be used to get available sources that can be
-used to be captured with `getUserMedia`.
+> List `getUserMedia` sources for capturing audio, video, and images from a
+microphone, camera, or screen.
 
 ```javascript
 // In the renderer process.
@@ -78,7 +81,7 @@ function getUserMediaError(e) {
 
 When creating a constraints object for the `navigator.webkitGetUserMedia` call,
 if you are using a source from `desktopCapturer` your `chromeMediaSource` must
-be set to `"desktop"` and your `audio` must be set to `false`. 
+be set to `"desktop"` and your `audio` must be set to `false`.
 
 If you wish to
 capture the audio and video from the entire desktop you can set
@@ -110,7 +113,7 @@ captured screen or individual window, and has following properties:
 * `name` String - The described name of the capturing screen or window. If the
   source is a screen, the name will be `Entire Screen` or `Screen <index>`; if
   it is a window, the name will be the window's title.
-* `thumbnail` A thumbnail [native image](http://electron.atom.io/docs/v0.37.7/api/native-image).
+* `thumbnail` [NativeImage](http://electron.atom.io/docs/v0.37.8/api/native-image) - A thumbnail native image.
 
 **Note:** There is no guarantee that the size of `source.thumbnail` is always
 the same as the `thumnbailSize` in `options`. It also depends on the scale of

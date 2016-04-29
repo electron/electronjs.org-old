@@ -1,5 +1,5 @@
 ---
-version: v0.37.7
+version: v0.37.8
 category: Development
 title: 'Source Code-Directory-Structure'
 redirect_from:
@@ -32,6 +32,7 @@ redirect_from:
     - /docs/v0.37.4/development/source-code-directory-structure/
     - /docs/v0.37.5/development/source-code-directory-structure/
     - /docs/v0.37.7/development/source-code-directory-structure/
+    - /docs/v0.37.8/development/source-code-directory-structure/
     - /docs/latest/development/source-code-directory-structure/
 source_url: 'https://github.com/electron/electron/blob/master/docs/development/source-code-directory-structure.md'
 ---
@@ -72,7 +73,7 @@ Electron
 ├── default_app - The default page to show when Electron is started without
 |   providing an app.
 ├── docs - Documentations.
-├── lib  - JavaScript source code.
+├── lib - JavaScript source code.
 |   ├── browser - Javascript main process initialization code.
 |   |   └── api - Javascript API implementation.
 |   ├── common - JavaScript used by both the main and renderer processes

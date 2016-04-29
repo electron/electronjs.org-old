@@ -1,5 +1,5 @@
 ---
-version: v0.37.7
+version: v0.37.8
 category: API
 title: 'Global Shortcut'
 redirect_from:
@@ -32,11 +32,15 @@ redirect_from:
     - /docs/v0.37.4/api/global-shortcut/
     - /docs/v0.37.5/api/global-shortcut/
     - /docs/v0.37.7/api/global-shortcut/
+    - /docs/v0.37.8/api/global-shortcut/
     - /docs/latest/api/global-shortcut/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/global-shortcut.md'
+excerpt: "Detect keyboard events when the application does not have keyboard focus."
 ---
 
 # globalShortcut
+
+> Detect keyboard events when the application does not have keyboard focus.
 
 The `globalShortcut` module can register/unregister a global keyboard shortcut
 with the operating system so that you can customize the operations for various
@@ -80,7 +84,7 @@ The `globalShortcut` module has the following methods:
 
 ### `globalShortcut.register(accelerator, callback)`
 
-* `accelerator` [Accelerator](http://electron.atom.io/docs/v0.37.7/api/accelerator)
+* `accelerator` [Accelerator](http://electron.atom.io/docs/v0.37.8/api/accelerator)
 * `callback` Function
 
 Registers a global shortcut of `accelerator`. The `callback` is called when
@@ -92,7 +96,7 @@ want applications to fight for global shortcuts.
 
 ### `globalShortcut.isRegistered(accelerator)`
 
-* `accelerator` [Accelerator](http://electron.atom.io/docs/v0.37.7/api/accelerator)
+* `accelerator` [Accelerator](http://electron.atom.io/docs/v0.37.8/api/accelerator)
 
 Returns whether this application has registered `accelerator`.
 
@@ -102,7 +106,7 @@ don't want applications to fight for global shortcuts.
 
 ### `globalShortcut.unregister(accelerator)`
 
-* `accelerator` [Accelerator](http://electron.atom.io/docs/v0.37.7/api/accelerator)
+* `accelerator` [Accelerator](http://electron.atom.io/docs/v0.37.8/api/accelerator)
 
 Unregisters the global shortcut of `accelerator`.
 

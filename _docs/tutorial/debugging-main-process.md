@@ -1,5 +1,5 @@
 ---
-version: v0.37.7
+version: v0.37.8
 category: Tutorial
 title: 'Debugging Main-Process'
 redirect_from:
@@ -32,6 +32,7 @@ redirect_from:
     - /docs/v0.37.4/tutorial/debugging-main-process/
     - /docs/v0.37.5/tutorial/debugging-main-process/
     - /docs/v0.37.7/tutorial/debugging-main-process/
+    - /docs/v0.37.8/tutorial/debugging-main-process/
     - /docs/latest/tutorial/debugging-main-process/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/debugging-main-process.md'
 ---
@@ -106,9 +107,10 @@ $ ELECTRON_RUN_AS_NODE=true path/to/electron.exe node_modules/node-inspector/bin
 
 ### 7. Load the debugger UI
 
-Open http://127.0.0.1:8080/debug?ws=127.0.0.1:8080&port=5858 in the Chrome browser. You may have to click pause if starting with debug-brk to see the entry line.
+Open http://127.0.0.1:8080/debug?ws=127.0.0.1:8080&port=5858 in the Chrome
+browser. You may have to click pause if starting with debug-brk to see the
+entry line.
 
 [node-inspector]: https://github.com/node-inspector/node-inspector
 [node-gyp-required-tools]: https://github.com/nodejs/node-gyp#installation
-[how-to-install-native-modules]: http://electron.atom.io/docs/v0.37.7/tutorial/using-native-node-modules#how-to-install-native-modules
-
+[how-to-install-native-modules]: http://electron.atom.io/docs/v0.37.8/tutorial/using-native-node-modules#how-to-install-native-modules

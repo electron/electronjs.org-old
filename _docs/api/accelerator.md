@@ -1,5 +1,5 @@
 ---
-version: v0.37.7
+version: v0.37.8
 category: API
 title: Accelerator
 redirect_from:
@@ -32,14 +32,18 @@ redirect_from:
     - /docs/v0.37.4/api/accelerator/
     - /docs/v0.37.5/api/accelerator/
     - /docs/v0.37.7/api/accelerator/
+    - /docs/v0.37.8/api/accelerator/
     - /docs/latest/api/accelerator/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/accelerator.md'
+excerpt: "Define keyboard shortcuts."
 ---
 
 # Accelerator
 
-An accelerator is a string that represents a keyboard shortcut. It can contain
-multiple modifiers and key codes, combined by the `+` character.
+> Define keyboard shortcuts.
+
+Accelerators can contain multiple modifiers and key codes, combined by
+the `+` character.
 
 Examples:
 

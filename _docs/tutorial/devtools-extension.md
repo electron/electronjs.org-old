@@ -1,5 +1,5 @@
 ---
-version: v0.37.7
+version: v0.37.8
 category: Tutorial
 title: 'Devtools Extension'
 redirect_from:
@@ -32,6 +32,7 @@ redirect_from:
     - /docs/v0.37.4/tutorial/devtools-extension/
     - /docs/v0.37.5/tutorial/devtools-extension/
     - /docs/v0.37.7/tutorial/devtools-extension/
+    - /docs/v0.37.8/tutorial/devtools-extension/
     - /docs/latest/tutorial/devtools-extension/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/devtools-extension.md'
 ---

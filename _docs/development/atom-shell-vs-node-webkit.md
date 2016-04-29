@@ -1,5 +1,5 @@
 ---
-version: v0.37.7
+version: v0.37.8
 category: Development
 title: 'Atom Shell-vs-Node-Webkit'
 redirect_from:
@@ -32,6 +32,7 @@ redirect_from:
     - /docs/v0.37.4/development/atom-shell-vs-node-webkit/
     - /docs/v0.37.5/development/atom-shell-vs-node-webkit/
     - /docs/v0.37.7/development/atom-shell-vs-node-webkit/
+    - /docs/v0.37.8/development/atom-shell-vs-node-webkit/
     - /docs/latest/development/atom-shell-vs-node-webkit/
 source_url: 'https://github.com/electron/electron/blob/master/docs/development/atom-shell-vs-node-webkit.md'
 ---

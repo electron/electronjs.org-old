@@ -1,5 +1,5 @@
 ---
-version: v0.37.7
+version: v0.37.8
 category: API
 title: 'Web Frame'
 redirect_from:
@@ -32,14 +32,15 @@ redirect_from:
     - /docs/v0.37.4/api/web-frame/
     - /docs/v0.37.5/api/web-frame/
     - /docs/v0.37.7/api/web-frame/
+    - /docs/v0.37.8/api/web-frame/
     - /docs/latest/api/web-frame/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/web-frame.md'
+excerpt: "Customize the rendering of the current web page."
 ---
 
 # webFrame
 
-The `web-frame` module allows you to customize the rendering of the current
-web page.
+> Customize the rendering of the current web page.
 
 An example of zooming current page to 200%.
 
@@ -51,7 +52,7 @@ webFrame.setZoomFactor(2);
 
 ## Methods
 
-The `web-frame` module has the following methods:
+The `webFrame` module has the following methods:
 
 ### `webFrame.setZoomFactor(factor)`
 

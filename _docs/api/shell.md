@@ -1,5 +1,5 @@
 ---
-version: v0.37.7
+version: v0.37.8
 category: API
 title: Shell
 redirect_from:
@@ -32,11 +32,15 @@ redirect_from:
     - /docs/v0.37.4/api/shell/
     - /docs/v0.37.5/api/shell/
     - /docs/v0.37.7/api/shell/
+    - /docs/v0.37.8/api/shell/
     - /docs/latest/api/shell/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/shell.md'
+excerpt: "Manage files and URLs using their default applications."
 ---
 
 # shell
+
+> Manage files and URLs using their default applications.
 
 The `shell` module provides functions related to desktop integration.
 

@@ -1,5 +1,5 @@
 ---
-version: v0.37.7
+version: v0.37.8
 category: Development
 title: 'Build Instructions-Windows'
 redirect_from:
@@ -32,6 +32,7 @@ redirect_from:
     - /docs/v0.37.4/development/build-instructions-windows/
     - /docs/v0.37.5/development/build-instructions-windows/
     - /docs/v0.37.7/development/build-instructions-windows/
+    - /docs/v0.37.8/development/build-instructions-windows/
     - /docs/latest/development/build-instructions-windows/
 source_url: 'https://github.com/electron/electron/blob/master/docs/development/build-instructions-windows.md'
 ---
@@ -49,7 +50,8 @@ Follow the guidelines below for building Electron on Windows.
 * [Node.js](http://nodejs.org/download/)
 * [Git](http://git-scm.com)
 
-If you don't currently have a Windows installation, [modern.ie](https://www.modern.ie/en-us/virtualization-tools#downloads)
+If you don't currently have a Windows installation,
+[modern.ie](https://www.modern.ie/en-us/virtualization-tools#downloads)
 has timebombed versions of Windows that you can use to build Electron.
 
 Building Electron is done entirely with command-line scripts and cannot be done
