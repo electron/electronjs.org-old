@@ -1,7 +1,7 @@
 ---
 version: v0.37.8
 category: Tutorial
-title: 'Using Pepper-Flash-Plugin'
+title: 'Using Pepper Flash Plugin'
 redirect_from:
     - /docs/v0.24.0/tutorial/using-pepper-flash-plugin/
     - /docs/v0.25.0/tutorial/using-pepper-flash-plugin/

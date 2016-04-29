@@ -1,7 +1,7 @@
 ---
 version: v0.37.8
 category: Tutorial
-title: 'Online Offline-Events'
+title: 'Online Offline Events'
 redirect_from:
     - /docs/v0.24.0/tutorial/online-offline-events/
     - /docs/v0.25.0/tutorial/online-offline-events/
