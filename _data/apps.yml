@@ -214,14 +214,6 @@
   license: ""
   icon: "gitify.png"
 -
-  name: "Stremio"
-  description: ""
-  website: "http://www.strem.io"
-  repository: ""
-  keywords: []
-  license: ""
-  icon: "stremio.png"
--
   name: "Light Table"
   description: ""
   website: "http://www.lighttable.com"
@@ -768,7 +760,7 @@
   featuredOpenSource: true
 -
   name: "Yeoman App"
-  description: "Scaffolding tool for modern webapps"
+  description: "Scaffolding tool for webapps"
   website: "https://github.com/yeoman/yeoman-app"
   repository: ""
   keywords:
