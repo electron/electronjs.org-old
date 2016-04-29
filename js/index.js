@@ -1,22 +1,27 @@
 var updateDownloadLink = function () {
-  var platform = uaParserJs().os
+  var platform = uaParserJs().os.name
   var releaseServer = 'https://electron-api-demos.githubapp.com/updates/'
-  var filenames = {
-    mac: 'electron-api-demos-mac.zip',
-    windows: 'ElectronAPIDemosSetup.exe' // exe auto-updates! zip does not.
+  var assetName
+  var osLabel
+
+  if (platform.match(/mac/i)) {
+    assetName = 'electron-api-demos-mac.zip'
+    osLabel = 'Mac'
+  } else if (platform.match(/windows/i)) {
+    assetName = 'ElectronAPIDemosSetup.exe'
+    osLabel = 'Windows'
+  } else if (platform.match(/ubuntu/i)) {
+    assetName = 'electron-api-demos-linux.zip'
+    osLabel = 'Linux'
+  } else {
+    return
   }
 
-  if (platform.name.match(/mac/i)) platform.id = 'mac'
-  if (platform.name.match(/windows/i)) platform.id = 'windows'
-
-  // Don't be clever if platform is something other than windows or mac
-  if (!platform.id) return
-
   document.querySelector('#download-latest-release')
-    .setAttribute('href', releaseServer + filenames[platform.id])
+    .setAttribute('href', releaseServer + assetName)
 
   document.querySelector('#download-latest-release .label')
-    .textContent = 'Download for ' + platform.name
+    .textContent = 'Download for ' + osLabel
 
   document.querySelector('#download-alternatives')
     .style.display = 'inline-block'
