@@ -681,8 +681,7 @@
     - "collaboration"
     - "WebRTC"
   license: ""
-  icon: ""
-  featuredOpenSource: true
+  icon: "screencat.png"
 -
   name: "Geojsonapp"
   description: "Preview geojson files"
