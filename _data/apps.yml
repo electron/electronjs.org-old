@@ -716,7 +716,7 @@
   icon: ""
   featuredOpenSource: true
 -
-  name: "Yeoman App"
+  name: "Yeoman"
   description: "Scaffolding tool for webapps"
   website: "https://github.com/yeoman/yeoman-app"
   repository: ""
@@ -725,8 +725,7 @@
     - "scaffolding"
     - "productivity"
   license: ""
-  icon: ""
-  featuredOpenSource: true
+  icon: "yeoman.png"
 -
   name: "Laverna"
   description: "Write &amp; organize Markdown"
