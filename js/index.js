@@ -3,13 +3,14 @@ var updateDownloadLink = function () {
   var releaseServer = 'https://electron-api-demos.githubapp.com/updates/'
   var filenames = {
     mac: 'electron-api-demos-mac.zip',
-    windows: 'ElectronAPIDemosSetup.exe' // exe auto-updates! zip does not.
+    windows: 'ElectronAPIDemosSetup.exe', // exe auto-updates! zip does not.
+    linux: 'electron-api-demos-linux.zip'
   }
 
   if (platform.name.match(/mac/i)) platform.id = 'mac'
   if (platform.name.match(/windows/i)) platform.id = 'windows'
+  if (platform.name.match(/ubuntu/i)) platform.id = 'linux'
 
-  // Don't be clever if platform is something other than windows or mac
   if (!platform.id) return
 
   document.querySelector('#download-latest-release')
