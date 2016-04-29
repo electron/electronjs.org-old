@@ -669,8 +669,7 @@
     - "player"
     - "audio"
   license: ""
-  icon: ""
-  featuredOpenSource: true
+  icon: "playback.png"
 -
   name: "ScreenCat"
   description: "WebRTC screensharing"
