@@ -6,15 +6,14 @@ layout: docs
 category: ignore
 ---
 
-## API Reference
+<table class="table table-ruled table-full-width table-with-spacious-first-column">
 
-<ul>
 {% for doc in site.docs %}
   {% if doc.category == 'API' %}
-    <li>
-      <a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a>
-      <!-- <span class="excerpt">{{ doc.content | strip_html | truncatewords: 50 }}</span> -->
-    </li>
+    <tr>
+      <td><a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a></td>
+      <td>{{ doc.excerpt }}</td>
+    </tr>
   {% endif %}
 {% endfor %}
-</ul>
+</table>
