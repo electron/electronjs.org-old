@@ -1,5 +1,22 @@
 [
   {
+    "url": "https://api.github.com/repos/electron/electron/releases/3126483",
+    "assets_url": "https://api.github.com/repos/electron/electron/releases/3126483/assets",
+    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/3126483/assets{?name,label}",
+    "html_url": "https://github.com/electron/electron/releases/tag/v0.37.8",
+    "id": 3126483,
+    "tag_name": "v0.37.8",
+    "target_commitish": "master",
+    "name": "electron v0.37.8",
+    "draft": false,
+    "prerelease": false,
+    "created_at": "2016-04-29T11:48:19Z",
+    "published_at": "2016-04-29T13:30:31Z",
+    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.37.8",
+    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.37.8",
+    "body": "Changelog:\r\n\r\n* Disable node integration in webview when it is disabled in host page. [#5311](https://github.com/electron/electron/pull/5311)\r\n* Make sure the `userData` directory is created during the `ready` event of `app` module. [#5340](https://github.com/electron/electron/pull/5340)\r\n* Throw error when `autoUpdater.quitAndInstall()` is called while there is no update. [#5287](https://github.com/electron/electron/pull/5287)\r\n* Add `systemPreferences` module. [#5282](https://github.com/electron/electron/pull/5282)\r\n* Add `app.isDefaultProtocolClient(protocol)` API.  [#5302](https://github.com/electron/electron/pull/5302)\r\n* Fix occasional crash when doing GC. [#5293](https://github.com/electron/electron/pull/5293)\r\n* Fix `app.makeSingleInstance(callback)` wrongly returning `true` on first launch. [#5311](https://github.com/electron/electron/pull/5311)\r\n* Fix `will-download` event not emitted for HTML pages. [#5315](https://github.com/electron/electron/pull/5315)\r\n* Fix crash when navigating to a new location after downloading failed. [#5315](https://github.com/electron/electron/pull/5315)\r\n* Fix `webContents.executeJavaScript` not working after being called immediately after `loadURL`. [#5319](https://github.com/electron/electron/pull/5319)\r\n* Fix `desktopCapturer.getSources` not responding when there is subsequent calls with different arguments. [#5320](https://github.com/electron/electron/pull/5320)\r\n\r\n__OS X__\r\n\r\n* Fix the `Command Plus` accelerator appearing as `Shift Command =` in menu. [#5298](https://github.com/electron/electron/pull/5298)\r\n\r\n__Windows__\r\n\r\n* Fix `display-removed` event not working. [#5334](https://github.com/electron/electron/pull/5334)"
+  },
+  {
     "url": "https://api.github.com/repos/electron/electron/releases/3075679",
     "assets_url": "https://api.github.com/repos/electron/electron/releases/3075679/assets",
     "upload_url": "https://uploads.github.com/repos/electron/electron/releases/3075679/assets{?name,label}",
@@ -491,22 +508,5 @@
     "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.35.1",
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.35.1",
     "body": "Changelog:\r\n\r\n* Add `session` module for full multi-session support.\r\n* Add support for some special keys in `webContents.sendInputEvent`.\r\n* Add `certificate-error` event to `webContents` and `app`.\r\n* Add `session.setCertificateVerifyProc` API.\r\n* Fix `webContents.reloadIgnoringCache` not working.\r\n\r\n__Windows__\r\n\r\n* Fix crash when sending notifications with images.\r\n* Fix showing notifications on Windows 8 when app name is not the same with app user model ID.\r\n\r\n__OS X__\r\n\r\n* Add downloads for dSYM symbols.\r\n* Support showing the window as desktop.\r\n* Fix the size of `Tray` icon not updated when the image is changed.\r\n\r\n__Linux__\r\n\r\n* Fix blurry rendering on some High-DPI machines.\r\n"
-  },
-  {
-    "url": "https://api.github.com/repos/electron/electron/releases/2130775",
-    "assets_url": "https://api.github.com/repos/electron/electron/releases/2130775/assets",
-    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/2130775/assets{?name,label}",
-    "html_url": "https://github.com/electron/electron/releases/tag/v0.35.0",
-    "id": 2130775,
-    "tag_name": "v0.35.0",
-    "target_commitish": "master",
-    "name": "electron v0.35.0",
-    "draft": false,
-    "prerelease": false,
-    "created_at": "2015-11-16T08:48:51Z",
-    "published_at": "2015-11-16T11:08:22Z",
-    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.35.0",
-    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.35.0",
-    "body": "Changelog:\r\n\r\n* Show warnings for deprecated APIs, can be turned off with `process.noDeprecation`.\r\n* Add `electron` module which includes all public APIs.\r\n* The `ipc` module is deprecated, should use `ipcRenderer` in renderer process, and `ipcMain` in main process.\r\n* The `ipcRenderer` module adds an `event` object when emitting events, to match the style of `ipcMain` module.\r\n* Remove the `-` in `BrowserWindow`'s option names.\r\n* `clicked` events in `Tray` are renamed to `click`.\r\n* The `Url` in API names is replaced with `URL`.\r\n* Add `documents`, `downloads`, `music`, `pictures`, `videos` keys to `app.getPath`.\r\n* Fix memory leak of `webContents.beginFrameSubscription`.\r\n\r\n__Windows__\r\n\r\n* Add support for toast notifications on Windows >= 8.\r\n\r\n__OS X__\r\n\r\n* Add `drag-enter`, `drag-leave`, `drag-end` and `drop` events to `Tray` module.\r\n* Fix images not showing in notifications on OS X 10.9.\r\n"
   }
 ]
