@@ -6,17 +6,20 @@ var updateDownloadLink = function () {
     windows: 'ElectronAPIDemosSetup.exe' // exe auto-updates! zip does not.
   }
 
- if (platform.name.match(/mac/i)) platform.id = 'mac'
- if (platform.name.match(/windows/i)) platform.id = 'windows'
+  if (platform.name.match(/mac/i)) platform.id = 'mac'
+  if (platform.name.match(/windows/i)) platform.id = 'windows'
 
   // Don't be clever if platform is something other than windows or mac
   if (!platform.id) return
 
-  var button = document.getElementById('download-latest-release')
-  button.setAttribute('href', releaseServer + filenames[platform.id])
-  button.textContent = 'Download for ' + platform.name
+  document.querySelector('#download-latest-release')
+    .setAttribute('href', releaseServer + filenames[platform.id])
 
-  document.getElementById('download-alternatives').style.display = 'inline-block'
+  document.querySelector('#download-latest-release .label')
+    .textContent = 'Download for ' + platform.name
+
+  document.querySelector('#download-alternatives')
+    .style.display = 'inline-block'
 }
 
 document.addEventListener('DOMContentLoaded', updateDownloadLink)
