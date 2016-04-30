@@ -2,32 +2,19 @@
 // Jumbotron -----------------------------
 
 .jumbotron {
-  padding-left: $spacer3;
-  padding-right: $spacer3;
   color: $jumbo-color;
   background-color: $jumbo-bg-color;
-  -webkit-font-smoothing: antialiased;  
-}
-
-.jumbotron .container {
-  background-image: url('../images/hero-hover.png');
-  background-size: 130%;
-  background-repeat: no-repeat;
-  background-position: 50% 0%;
-
+  -webkit-font-smoothing: antialiased;
+  padding: $spacer2 $spacer3 $spacer6 $spacer3;
   @include breakpoint(md) {
-    background-position: 20% 0%;
-    background-size: 100%;
+    padding: $spacer4 $spacer3 $spacer8 $spacer3;
   }
 }
 
-.jumbotron {
-  // Shadow
-  &:after {
-    content: none;
-  }
+// remove shadow
+.jumbotron:after {
+  content: none;
 }
-
 
 .jumbotron-lead {
   color: $jumbo-color-strong;
@@ -46,23 +33,6 @@
   }
 }
 
-
-.jumbotron-img {
-  width: 100%;
-  max-width: 900px;
-  cursor: pointer;
-}
-.jumbotron-img-hover {
-  display: none;
-}
-.jumbotron:active {
-  .jumbotron-img {
-    display: none;
-  }
-  .jumbotron-img-hover {
-    display: initial;
-  }
-}
 
 
 // Subtron -----------------------------
@@ -102,17 +72,22 @@
   background-color: $mini-bg-color;
 }
 
-// Homepage Jumbotron -----------------------------
 
-.electron-logo {
-  fill: $jumbo-color;
-  width: 40%;
-  max-width: 300px;
-  margin: 0 auto $spacer2 auto;
-  @include breakpoint(md) {
-    width: 30%;
-    margin-bottom: $spacer6;
-  }
+// Homepage hero -----------------------------
+
+.hero {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hero-app {
+  fill: hsl(160, 72%, 60%);
+  opacity: .1;
+}
+
+
+.hero-icon {
+  fill: $jumbo-color-strong;
 }
 
 .short-1 { animation: short-1 1s ease backwards; animation-delay: .5s; }
