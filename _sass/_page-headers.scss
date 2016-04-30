@@ -79,7 +79,50 @@
   max-width: 900px;
   margin: 0 auto;
   backface-visibility: hidden;
+  // background: url('../images/hero-guide.png');
 }
+
+
+// Electron Icon
+
+$hero-icon-delay: 1s;
+$hero-icon-delay-diff: .1s;
+$hero-icon-duration: .4s;
+$hero-icon-all-delay: 15 * $hero-icon-delay-diff + $hero-icon-delay;
+
+
+.hero-icon {
+  fill: $jumbo-color-strong;
+  opacity: .2;
+  transform-origin: 50% 50%;
+}
+
+// Initial position
+.dot     { transform: translate(35px, -37px); }
+.short-1 { transform: translate(119px, 37px) rotate(-134deg); }
+.short-2 { transform: translate(-20px, 61px) rotate(106deg); }
+.short-3 { transform: translate(65px, -18px) rotate(-17deg); }
+.long-1  { transform: translate(-101px, -45px) rotate(-107deg); }
+.long-2  { transform: translate(-35px, 8px) rotate(133deg); }
+.long-3  { transform: translate(-64px, 20px) rotate(13deg); }
+.loop-1  { transform: translate(-51px, -128px); }
+.loop-2  { transform: translate(166px, -88px); }
+.loop-3  { transform: translate(79px, 21px); }
+
+@for $i from 1 through 10 {
+  .hero-icon-#{$i} {
+    $_duration: $hero-icon-duration;
+    $_delay:   $hero-icon-delay + ($hero-icon-delay-diff * $i);
+    $_delay-2: $hero-icon-all-delay - ($hero-icon-delay-diff / $i);
+    animation: hero-icon-animation-t $_duration $_delay cubic-bezier(.50, 0, .20, 1) both,
+               hero-icon-animation-o .4s $_delay-2 cubic-bezier(.50, 0, .20, 1) both;
+  }
+}
+
+@keyframes hero-icon-animation-t { 100% { transform: translate(0, 0) rotate(0deg); } }
+@keyframes hero-icon-animation-o { 100% { opacity: 1; } }
+
+
 
 // Apps ----------------
 
@@ -90,7 +133,7 @@
 }
 
 // Ripple effect
-$hero-app-delay: 3s;
+$hero-app-delay: $hero-icon-all-delay;
 $hero-app-delay-diff: 0.04s;
 $hero-app-duration: .8s;
 
@@ -114,77 +157,4 @@ $hero-app-duration: .8s;
       animation: hero-app-animate-right $hero-app-duration $_delay cubic-bezier(.3,.15,0,1) both;
     }
   }
-}
-
-
-// Electron Icon
-
-.hero-icon {
-  fill: $jumbo-color-strong;
-  opacity: .2;
-}
-
-// .short-1 { animation: short-1 1s ease backwards; animation-delay: .5s; }
-// .short-2 { animation: short-2 1s ease backwards; animation-delay: 1s; }
-// .short-3 { animation: short-3 1s ease backwards; animation-delay: 1.5s; }
-//
-// .long-1 { animation: long-1 1s ease backwards; animation-delay: 2s; }
-// .long-2 { animation: long-2 1s ease backwards; animation-delay: 2.5s; }
-// .long-3 { animation: long-3 1s ease backwards; animation-delay: 3s; }
-//
-// .loop-1 { animation: loop-1 1s ease backwards; animation-delay: 3.5s; }
-// .loop-2 { animation: loop-2 1s ease backwards; animation-delay: 4s; }
-// .loop-3 { animation: loop-3 1s ease backwards; animation-delay: 4.5s; }
-//
-// .dot { animation: dot 1s backwards; animation-delay: 5s; }
-
-
-@keyframes short-1 {
-  0% { transform: rotate(-130deg) translate(-104px, -14px) }
-  100% { transform: rotate(0) translate(0); }
-}
-
-@keyframes short-2 {
-  0% { transform: rotate(105deg) translate(24px, 18px); transform-origin: 50% 50%; }
-  100% { transform: rotate(0) translate(0); transform-origin: 0% 0%; }
-}
-
-@keyframes short-3 {
-  0% { transform: rotate(-14deg) translate(23px, -18px); transform-origin: 50% 50%; }
-  100% { transform: rotate(0) translate(0); transform-origin: 0% 0%; }
-}
-
-@keyframes long-1 {
-  0% { transform: rotate(-110deg) translate(49px, -35px); transform-origin: 50% 50%; }
-  100% { transform: rotate(0) translate(0); transform-origin: 0% 0%; }
-}
-
-@keyframes long-2 {
-  0% { transform: rotate(130deg) translate(6px, 20px); transform-origin: 50% 50%; }
-  100% { transform: rotate(0) translate(0); transform-origin: 0% 0%; }
-}
-
-@keyframes long-3 {
-  0% { transform: rotate(11deg) translate(-36px, 5px); transform-origin: 50% 50%; }
-  100% { transform: rotate(0) translate(0); transform-origin: 0% 0%; }
-}
-
-@keyframes loop-1 {
-  0% { transform: translate(65px, -70px); }
-  100% { transform: translate(0); }
-}
-
-@keyframes loop-2 {
-  0% { transform: translate(4px, 6px); }
-  100% { transform: translate(0); }
-}
-
-@keyframes loop-3 {
-  0% { transform: translate(-21px, -52px); }
-  100% { transform: translate(0); }
-}
-
-@keyframes dot {
-  0% { transform: translate(4px, -26px); }
-  100% { transform: translate(0); }
 }
