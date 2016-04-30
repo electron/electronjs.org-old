@@ -1,5 +1,5 @@
 ---
-version: v0.37.7
+version: v0.37.8
 category: API
 title: Synopsis
 redirect_from:
@@ -32,15 +32,19 @@ redirect_from:
     - /docs/v0.37.4/api/synopsis/
     - /docs/v0.37.5/api/synopsis/
     - /docs/v0.37.7/api/synopsis/
+    - /docs/v0.37.8/api/synopsis/
     - /docs/latest/api/synopsis/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/synopsis.md'
+excerpt: "How to use Node.js and Electron APIs."
 ---
 
 # Synopsis
 
+> How to use Node.js and Electron APIs.
+
 All of [Node.js's built-in modules](http://nodejs.org/api/) are available in
 Electron and third-party node modules also fully supported as well (including
-the [native modules](http://electron.atom.io/docs/v0.37.7/tutorial/using-native-node-modules)).
+the [native modules](http://electron.atom.io/docs/v0.37.8/tutorial/using-native-node-modules)).
 
 Electron also provides some extra built-in modules for developing native
 desktop applications. Some modules are only available in the main process, some
@@ -49,8 +53,8 @@ both processes.
 
 The basic rule is: if a module is [GUI][gui] or low-level system related, then
 it should be only available in the main process. You need to be familiar with
-the concept of [main process vs. renderer process](http://electron.atom.io/docs/v0.37.7/tutorial/quick-start#the-main-process) scripts to be
-able to use those modules.
+the concept of [main process vs. renderer process](http://electron.atom.io/docs/v0.37.8/tutorial/quick-start#the-main-process)
+scripts to be able to use those modules.
 
 The main process script is just like a normal Node.js script:
 
@@ -82,7 +86,7 @@ extra ability to use node modules:
 </html>
 ```
 
-To run your app, read [Run your app](http://electron.atom.io/docs/v0.37.7/tutorial/quick-start#run-your-app).
+To run your app, read [Run your app](http://electron.atom.io/docs/v0.37.8/tutorial/quick-start#run-your-app).
 
 ## Destructuring assignment
 

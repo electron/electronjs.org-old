@@ -1,9 +1,39 @@
 ---
 title: Electron Documentation
 permalink: /docs/
+redirect_from:
+  - /docs/v0.24.0/
+  - /docs/v0.25.0/
+  - /docs/v0.26.0/
+  - /docs/v0.27.0/
+  - /docs/v0.28.0/
+  - /docs/v0.29.0/
+  - /docs/v0.30.0/
+  - /docs/v0.31.0/
+  - /docs/v0.32.0/
+  - /docs/v0.33.0/
+  - /docs/v0.34.0/
+  - /docs/v0.35.0/
+  - /docs/v0.36.0/
+  - /docs/v0.36.3/
+  - /docs/v0.36.4/
+  - /docs/v0.36.5/
+  - /docs/v0.36.6/
+  - /docs/v0.36.7/
+  - /docs/v0.36.8/
+  - /docs/v0.36.9/
+  - /docs/v0.36.10/
+  - /docs/v0.36.11/
+  - /docs/v0.37.0/
+  - /docs/v0.37.1/
+  - /docs/v0.37.2/
+  - /docs/v0.37.3/
+  - /docs/v0.37.4/
+  - /docs/v0.37.5/
+  - /docs/v0.37.7/
+  - /docs/latest/
 layout: default
 ---
-
 
 <div class='subtron'>
   <div class='container-narrow'>
@@ -18,8 +48,8 @@ layout: default
       <div class="row">
 
         <div class="col-ms-12 col-lg-4">
-          <h2><a class="docs-title" href="{{ site.baseurl }}/guides/">Guides</a></h2>
-          <ul>
+          <h2 class="docs-heading pb-3 mb-3"><a class="docs-title" href="{{ site.baseurl }}/guides/"><span class="mega-octicon octicon-book pr-3"></span>Guides</a></h2>
+          <ul class="docs-list">
           {% for doc in site.docs %}
             {% if doc.category == 'Tutorial' %}
               <li>
@@ -32,12 +62,12 @@ layout: default
         </div>
 
         <div class="col-ms-12 col-lg-4">
-          <h2><a class="docs-title" href="{{ site.baseurl }}/api/">API Reference</a></h2>
-          <ul>
+          <h2 class="docs-heading pb-3 mb-3"><a class="docs-title" href="{{ site.baseurl }}/api/"><span class="mega-octicon octicon-gear pr-3"></span>API Reference</a></h2>
+          <ul class="docs-list">
           {% for doc in site.docs %}
             {% if doc.category == 'API' %}
               <li>
-                <a href="{{ site.baseurl }}{{ doc.url}}">{{ doc.title }}</a>
+                <a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a>
                 <!-- <span class="excerpt">{{ doc.content | strip_html | truncatewords: 50 }}</span> -->
               </li>
             {% endif %}
@@ -46,12 +76,12 @@ layout: default
         </div>
 
         <div class="col-ms-12 col-lg-4">
-          <h2><a class="docs-title" href="{{ site.baseurl }}/development/">Developing Electron</a></h2>
-          <ul>
+          <h2 class="docs-heading pb-3 mb-3"><a class="docs-title" href="{{ site.baseurl }}/development/"><span class="mega-octicon octicon-tools pr-3"></span>Developing Electron</a></h2>
+          <ul class="docs-list">
           {% for doc in site.docs %}
             {% if doc.category == 'Development' %}
               <li>
-                <a href="{{ site.baseurl }}{{ doc.url}}">{{ doc.title }}</a>
+                <a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a>
                 <!-- <span class="excerpt">{{ doc.content | strip_html | truncatewords: 50 }}</span> -->
               </li>
             {% endif %}

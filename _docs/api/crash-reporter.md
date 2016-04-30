@@ -1,5 +1,5 @@
 ---
-version: v0.37.7
+version: v0.37.8
 category: API
 title: 'Crash Reporter'
 redirect_from:
@@ -32,13 +32,15 @@ redirect_from:
     - /docs/v0.37.4/api/crash-reporter/
     - /docs/v0.37.5/api/crash-reporter/
     - /docs/v0.37.7/api/crash-reporter/
+    - /docs/v0.37.8/api/crash-reporter/
     - /docs/latest/api/crash-reporter/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/crash-reporter.md'
+excerpt: "Submit crash reports to a remote server."
 ---
 
 # crashReporter
 
-The `crash-reporter` module enables sending your app's crash reports.
+> Submit crash reports to a remote server.
 
 The following is an example of automatically submitting a crash report to a
 remote server:
@@ -98,7 +100,8 @@ ID.
 
 ## crash-reporter Payload
 
-The crash reporter will send the following data to the `submitURL` as a `multipart/form-data` `POST`:
+The crash reporter will send the following data to the `submitURL` as
+a `multipart/form-data` `POST`:
 
 * `ver` String - The version of Electron.
 * `platform` String - e.g. 'win32'.

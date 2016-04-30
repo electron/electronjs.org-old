@@ -214,14 +214,6 @@
   license: ""
   icon: "gitify.png"
 -
-  name: "Stremio"
-  description: ""
-  website: "http://www.strem.io"
-  repository: ""
-  keywords: []
-  license: ""
-  icon: "stremio.png"
--
   name: "Light Table"
   description: ""
   website: "http://www.lighttable.com"
@@ -570,7 +562,7 @@
   icon: "TweakStyle.png"
   featuredOnHomepage: false
 -
-  name: "WebTorrent Desktop"
+  name: "WebTorrent"
   description: "The streaming torrent client"
   website: "https://webtorrent.io/desktop"
   repository: ""
@@ -648,46 +640,7 @@
   repository: ""
   keywords: []
   license: ""
-  icon: ""
-  featuredOpenSource: true
--
-  name: "Hearthdash"
-  description: "Hearthstone tracker"
-  website: "https://github.com/postcasio/hearthdash"
-  repository: ""
-  keywords: []
-  license: ""
-  icon: ""
-  featuredOpenSource: true
--
-  name: "Kart"
-  description: "RetroArch emulator frontend"
-  website: "https://github.com/maddox/kart"
-  repository: ""
-  keywords:
-    - "games"
-    - "emulator"
-  license: ""
-  icon: ""
-  featuredOpenSource: true
--
-  name: "Mancy"
-  description: "Node.js interactive REPL"
-  website: "https://github.com/princejwesley/Mancy"
-  repository: ""
-  keywords: []
-  license: ""
-  icon: ""
-  featuredOpenSource: true
--
-  name: "Monu"
-  description: "Process monitoring menubar app"
-  website: "https://github.com/maxogden/monu"
-  repository: ""
-  keywords: []
-  license: ""
-  icon: ""
-  featuredOpenSource: true
+  icon: "friends.png"
 -
   name: "Mojibar"
   description: "Emoji searcher menubar app"
@@ -696,30 +649,7 @@
   keywords: ["emoji", "menubar", "open source"]
   license: "MIT"
   icon: "mojibar.png"
-  featuredOpenSource: true
   featuredOnHomepage: true
--
-  name: "Chronocube"
-  description: "Rubik's cube timer"
-  website: "https://github.com/pablopunk/chronocube"
-  repository: ""
-  keywords:
-    - "games"
-  license: ""
-  icon: ""
-  featuredOpenSource: true
--
-  name: "Light Table"
-  description: "Customizable IDE"
-  website: "http://lighttable.com"
-  repository: ""
-  keywords:
-    - "writing"
-    - "web development"
-    - "editor"
-  license: ""
-  icon: ""
-  featuredOpenSource: true
 -
   name: "Playback"
   description: "Experimental video player"
@@ -730,8 +660,7 @@
     - "player"
     - "audio"
   license: ""
-  icon: ""
-  featuredOpenSource: true
+  icon: "playback.png"
 -
   name: "ScreenCat"
   description: "WebRTC screensharing"
@@ -742,33 +671,10 @@
     - "collaboration"
     - "WebRTC"
   license: ""
-  icon: ""
-  featuredOpenSource: true
+  icon: "screencat.png"
 -
-  name: "Geojsonapp"
-  description: "Preview geojson files"
-  website: "https://github.com/mick/geojsonapp"
-  repository: ""
-  keywords:
-    - "maps"
-    - "cartography"
-    - "geolocation"
-  license: ""
-  icon: ""
-  featuredOpenSource: true
--
-  name: "Menubar"
-  description: "Create menubar apps"
-  website: "https://github.com/maxogden/menubar"
-  repository: ""
-  keywords:
-    - "menubar"
-  license: ""
-  icon: ""
-  featuredOpenSource: true
--
-  name: "Yeoman App"
-  description: "Scaffolding tool for modern webapps"
+  name: "Yeoman"
+  description: "Scaffolding tool for webapps"
   website: "https://github.com/yeoman/yeoman-app"
   repository: ""
   keywords:
@@ -776,8 +682,7 @@
     - "scaffolding"
     - "productivity"
   license: ""
-  icon: ""
-  featuredOpenSource: true
+  icon: "yeoman.png"
 -
   name: "Laverna"
   description: "Write &amp; organize Markdown"
@@ -787,6 +692,40 @@
     - "writing"
     - "markdown"
     - "editor"
+  license: ""
+  icon: "laverna.png"
+-
+  name: "Electron Packager"
+  description: "Package your apps"
+  website: "https://github.com/electron-userland/electron-packager"
+  featuredOpenSource: true
+-
+  name: "Electron Builder"
+  description: "Deploy your apps"
+  website: "https://github.com/electron-userland/electron-builder"
+  featuredOpenSource: true
+-
+  name: "Spectron"
+  description: "Test your apps"
+  website: "https://github.com/electron/spectron"
+  featuredOpenSource: true
+-
+  name: "Devtron"
+  description: "Debug your apps"
+  website: "https://github.com/electron/devtron"
+  featuredOpenSource: true
+-
+  name: "Electron Prebuilt"
+  description: "Install Electron"
+  website: "https://github.com/electron-userland/electron-prebuilt"
+  featuredOpenSource: true
+-
+  name: "Menubar"
+  description: "Create menubar apps"
+  website: "https://github.com/maxogden/menubar"
+  repository: ""
+  keywords:
+    - "menubar"
   license: ""
   icon: ""
   featuredOpenSource: true

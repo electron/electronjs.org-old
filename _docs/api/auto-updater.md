@@ -1,5 +1,5 @@
 ---
-version: v0.37.7
+version: v0.37.8
 category: API
 title: 'Auto Updater'
 redirect_from:
@@ -32,19 +32,26 @@ redirect_from:
     - /docs/v0.37.4/api/auto-updater/
     - /docs/v0.37.5/api/auto-updater/
     - /docs/v0.37.7/api/auto-updater/
+    - /docs/v0.37.8/api/auto-updater/
     - /docs/latest/api/auto-updater/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/auto-updater.md'
+excerpt: "Enable apps to automatically update themselves."
 ---
 
 # autoUpdater
 
-This module provides an interface for the `Squirrel` auto-updater framework.
+> Enable apps to automatically update themselves.
+
+The `autoUpdater` module provides an interface for the [Squirrel](https://github.com/Squirrel) framework.
 
 You can quickly launch a multi-platform release server for distributing your
 application by using one of these projects:
 
-- [electron-release-server][electron-release-server]: *A fully featured, self-hosted release server for electron applications, compatible with auto-updater*
-- [squirrel-updates-server][squirrel-updates-server]: *A simple node.js server for Squirrel.Mac and Squirrel.Windows which uses GitHub releases*
+- [electron-release-server][electron-release-server]: *A fully featured,
+  self-hosted release server for electron applications, compatible with
+  auto-updater*
+- [squirrel-updates-server][squirrel-updates-server]: *A simple node.js server
+  for Squirrel.Mac and Squirrel.Windows which uses GitHub releases*
 
 ## Platform notices
 

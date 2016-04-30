@@ -1,7 +1,7 @@
 ---
-version: v0.37.7
+version: v0.37.8
 category: Tutorial
-title: 'Desktop Environment-Integration'
+title: 'Desktop Environment Integration'
 redirect_from:
     - /docs/v0.24.0/tutorial/desktop-environment-integration/
     - /docs/v0.25.0/tutorial/desktop-environment-integration/
@@ -32,8 +32,19 @@ redirect_from:
     - /docs/v0.37.4/tutorial/desktop-environment-integration/
     - /docs/v0.37.5/tutorial/desktop-environment-integration/
     - /docs/v0.37.7/tutorial/desktop-environment-integration/
+    - /docs/v0.37.8/tutorial/desktop-environment-integration/
     - /docs/latest/tutorial/desktop-environment-integration/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/desktop-environment-integration.md'
+excerpt: "Applications define tasks based on both the program&apos;s features and the key
+things a user is expected to do with them. Tasks should be context-free, in
+that the application does not need to be running for them to work. They
+should also be the statistically most common actions that a normal user would
+perform in an application, such as compose an email message or open the
+calendar in a mail program, create a new document in a word processor, launch
+an application in a certain mode, or launch one of its subcommands. An
+application should not clutter the menu with advanced features that standard
+users won&apos;t need or one-time actions such as registration. Do not use tasks
+for promotional items such as upgrades or special offers."
 ---
 
 # Desktop Environment Integration
@@ -91,8 +102,7 @@ GNOME, KDE.
 ### OS X
 
 Notifications are straight-forward on OS X, you should however be aware of
-[Apple's Human Interface guidelines regarding
-notifications](https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/NotificationCenter.html).
+[Apple's Human Interface guidelines regarding notifications](https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/NotificationCenter.html).
 
 Note that notifications are limited to 256 bytes in size - and will be truncated
 if you exceed that limit.
@@ -359,16 +369,16 @@ window.setRepresentedFilename('/etc/passwd');
 window.setDocumentEdited(true);
 ```
 
-[addrecentdocument]: http://electron.atom.io/docs/v0.37.7/api/app#appaddrecentdocumentpath-os-x-windows
-[clearrecentdocuments]: http://electron.atom.io/docs/v0.37.7/api/app#appclearrecentdocuments-os-x-windows
-[setusertaskstasks]: http://electron.atom.io/docs/v0.37.7/api/app#appsetusertaskstasks-windows
-[setprogressbar]: http://electron.atom.io/docs/v0.37.7/api/browser-window#winsetprogressbarprogress
-[setoverlayicon]: http://electron.atom.io/docs/v0.37.7/api/browser-window#winsetoverlayiconoverlay-description-windows-7
-[setrepresentedfilename]: http://electron.atom.io/docs/v0.37.7/api/browser-window#winsetrepresentedfilenamefilename-os-x
-[setdocumentedited]: http://electron.atom.io/docs/v0.37.7/api/browser-window#winsetdocumenteditededited-os-x
+[addrecentdocument]: http://electron.atom.io/docs/v0.37.8/api/app#appaddrecentdocumentpath-os-x-windows
+[clearrecentdocuments]: http://electron.atom.io/docs/v0.37.8/api/app#appclearrecentdocuments-os-x-windows
+[setusertaskstasks]: http://electron.atom.io/docs/v0.37.8/api/app#appsetusertaskstasks-windows
+[setprogressbar]: http://electron.atom.io/docs/v0.37.8/api/browser-window#winsetprogressbarprogress
+[setoverlayicon]: http://electron.atom.io/docs/v0.37.8/api/browser-window#winsetoverlayiconoverlay-description-windows-7
+[setrepresentedfilename]: http://electron.atom.io/docs/v0.37.8/api/browser-window#winsetrepresentedfilenamefilename-os-x
+[setdocumentedited]: http://electron.atom.io/docs/v0.37.8/api/browser-window#winsetdocumenteditededited-os-x
 [app-registration]: http://msdn.microsoft.com/en-us/library/windows/desktop/ee872121(v=vs.85).aspx
 [unity-launcher]: https://help.ubuntu.com/community/UnityLaunchersAndDesktopFiles#Adding_shortcuts_to_a_launcher
-[setthumbarbuttons]: http://electron.atom.io/docs/v0.37.7/api/browser-window#winsetthumbarbuttonsbuttons-windows-7
-[tray-balloon]: http://electron.atom.io/docs/v0.37.7/api/tray#traydisplayballoonoptions-windows
+[setthumbarbuttons]: http://electron.atom.io/docs/v0.37.8/api/browser-window#winsetthumbarbuttonsbuttons-windows-7
+[tray-balloon]: http://electron.atom.io/docs/v0.37.8/api/tray#traydisplayballoonoptions-windows
 [app-user-model-id]: https://msdn.microsoft.com/en-us/library/windows/desktop/dd378459(v=vs.85).aspx
 [notification-spec]: https://developer.gnome.org/notification-spec/

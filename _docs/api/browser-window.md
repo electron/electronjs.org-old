@@ -1,5 +1,5 @@
 ---
-version: v0.37.7
+version: v0.37.8
 category: API
 title: 'Browser Window'
 redirect_from:
@@ -32,14 +32,15 @@ redirect_from:
     - /docs/v0.37.4/api/browser-window/
     - /docs/v0.37.5/api/browser-window/
     - /docs/v0.37.7/api/browser-window/
+    - /docs/v0.37.8/api/browser-window/
     - /docs/latest/api/browser-window/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/browser-window.md'
+excerpt: "Create and control browser windows."
 ---
 
 # BrowserWindow
 
-The `BrowserWindow` class gives you the ability to create a browser window. For
-example:
+> Create and control browser windows.
 
 ```javascript
 // In the main process.
@@ -58,7 +59,7 @@ win.show();
 ```
 
 You can also create a window without chrome by using
-[Frameless Window](http://electron.atom.io/docs/v0.37.7/api/frameless-window) API.
+[Frameless Window](http://electron.atom.io/docs/v0.37.8/api/frameless-window) API.
 
 ## Class: BrowserWindow
 
@@ -104,12 +105,12 @@ It creates a new `BrowserWindow` with native properties as set by the `options`.
     `false`.
   * `kiosk` Boolean - The kiosk mode. Default is `false`.
   * `title` String - Default window title. Default is `"Electron"`.
-  * `icon` [NativeImage](http://electron.atom.io/docs/v0.37.7/api/native-image) - The window icon, when omitted on
+  * `icon` [NativeImage](http://electron.atom.io/docs/v0.37.8/api/native-image) - The window icon, when omitted on
     Windows the executable's icon would be used as window icon.
   * `show` Boolean - Whether window should be shown when created. Default is
     `true`.
   * `frame` Boolean - Specify `false` to create a
-    [Frameless Window](http://electron.atom.io/docs/v0.37.7/api/frameless-window). Default is `true`.
+    [Frameless Window](http://electron.atom.io/docs/v0.37.8/api/frameless-window). Default is `true`.
   * `acceptFirstMouse` Boolean - Whether the web view accepts a single
     mouse-down event that simultaneously activates the window. Default is
     `false`.
@@ -126,7 +127,7 @@ It creates a new `BrowserWindow` with native properties as set by the `options`.
     implemented on OS X. Default is `true`.
   * `darkTheme` Boolean - Forces using dark theme for the window, only works on
     some GTK+3 desktop environments. Default is `false`.
-  * `transparent` Boolean - Makes the window [transparent](http://electron.atom.io/docs/v0.37.7/api/frameless-window).
+  * `transparent` Boolean - Makes the window [transparent](http://electron.atom.io/docs/v0.37.8/api/frameless-window).
     Default is `false`.
   * `type` String - The type of window, default is normal window. See more about
     this below.
@@ -169,8 +170,8 @@ The `webPreferences` option is an object that can have following properties:
   be the absolute file path to the script.
   When node integration is turned off, the preload script can reintroduce
   Node global symbols back to the global scope. See example
-  [here](http://electron.atom.io/docs/v0.37.7/api/process#event-loaded).
-* `session` [Session](http://electron.atom.io/docs/v0.37.7/api/session#class-session) - Sets the session used by the
+  [here](http://electron.atom.io/docs/v0.37.8/api/process#event-loaded).
+* `session` [Session](http://electron.atom.io/docs/v0.37.8/api/session#class-session) - Sets the session used by the
   page. Instead of passing the Session object directly, you can also choose to
   use the `partition` option instead, which accepts a partition string. When
   both `session` and `partition` are provided, `session` would be preferred.
@@ -349,10 +350,11 @@ Emitted when an [App Command](https://msdn.microsoft.com/en-us/library/windows/d
 is invoked. These are typically related to keyboard media keys or browser
 commands, as well as the "Back" button built into some mice on Windows.
 
-Commands are lowercased with underscores replaced with hyphens and the `APPCOMMAND_` prefix stripped off.
+Commands are lowercased with underscores replaced with hyphens and the
+`APPCOMMAND_` prefix stripped off.
 e.g. `APPCOMMAND_BROWSER_BACKWARD` is emitted as `browser-backward`.
 
-```js
+```javascript
 someWindow.on('app-command', function(e, cmd) {
   // Navigate the window back when the user hits their mouse back button
   if (cmd === 'browser-backward' && someWindow.webContents.canGoBack()) {
@@ -392,7 +394,7 @@ Returns the window that is focused in this application, otherwise returns `null`
 
 ### `BrowserWindow.fromWebContents(webContents)`
 
-* `webContents` [WebContents](http://electron.atom.io/docs/v0.37.7/api/web-contents)
+* `webContents` [WebContents](http://electron.atom.io/docs/v0.37.8/api/web-contents)
 
 Find a window according to the `webContents` it owns.
 
@@ -431,7 +433,7 @@ var win = new BrowserWindow({ width: 800, height: 600 });
 The `WebContents` object this window owns, all web page related events and
 operations will be done via it.
 
-See the [`webContents` documentation](http://electron.atom.io/docs/v0.37.7/api/web-contents) for its methods and
+See the [`webContents` documentation](http://electron.atom.io/docs/v0.37.8/api/web-contents) for its methods and
 events.
 
 ### `win.id`
@@ -713,13 +715,13 @@ Returns the title of the native window.
 **Note:** The title of web page can be different from the title of the native
 window.
 
-### `win.setSheetOffset(offset)`
+### `win.setSheetOffset(offset)` _OS X_
 
-Changes the attachment point for sheets on Mac OS X. By default, sheets are attached
-just below the window frame, but you may want to display them beneath a HTML-rendered
-toolbar. For example:
+Changes the attachment point for sheets on Mac OS X. By default, sheets are
+attached just below the window frame, but you may want to display them beneath
+a HTML-rendered toolbar. For example:
 
-```
+```javascript
 var toolbarRect = document.getElementById('toolbar').getBoundingClientRect();
 win.setSheetOffset(toolbarRect.height);
 ```
@@ -814,7 +816,7 @@ Whether the window's document has been edited.
 
 Captures a snapshot of the page within `rect`. Upon completion `callback` will
 be called with `callback(image)`. The `image` is an instance of
-[NativeImage](http://electron.atom.io/docs/v0.37.7/api/native-image) that stores data of the snapshot. Omitting
+[NativeImage](http://electron.atom.io/docs/v0.37.8/api/native-image) that stores data of the snapshot. Omitting
 `rect` will capture the whole visible page.
 
 ### `win.print([options])`
@@ -855,14 +857,14 @@ it will assume `app.getName().desktop`.
 
 ### `win.setOverlayIcon(overlay, description)` _Windows 7+_
 
-* `overlay` [NativeImage](http://electron.atom.io/docs/v0.37.7/api/native-image) - the icon to display on the bottom
+* `overlay` [NativeImage](http://electron.atom.io/docs/v0.37.8/api/native-image) - the icon to display on the bottom
 right corner of the taskbar icon. If this parameter is `null`, the overlay is
 cleared
 * `description` String - a description that will be provided to Accessibility
 screen readers
 
-Sets a 16 x 16 pixel overlay onto the current taskbar icon, usually used to convey some
-sort of application status or to passively notify the user.
+Sets a 16 x 16 pixel overlay onto the current taskbar icon, usually used to
+convey some sort of application status or to passively notify the user.
 
 ### `win.setHasShadow(hasShadow)` _OS X_
 
@@ -892,7 +894,7 @@ array to clean the buttons.
 The `buttons` is an array of `Button` objects:
 
 * `Button` Object
-  * `icon` [NativeImage](http://electron.atom.io/docs/v0.37.7/api/native-image) - The icon showing in thumbnail
+  * `icon` [NativeImage](http://electron.atom.io/docs/v0.37.8/api/native-image) - The icon showing in thumbnail
     toolbar.
   * `click` Function
   * `tooltip` String (optional) - The text of the button's tooltip.

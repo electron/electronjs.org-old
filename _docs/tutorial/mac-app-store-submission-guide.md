@@ -1,7 +1,7 @@
 ---
-version: v0.37.7
+version: v0.37.8
 category: Tutorial
-title: 'Mac App-Store-Submission-Guide'
+title: 'Mac App Store Submission Guide'
 redirect_from:
     - /docs/v0.24.0/tutorial/mac-app-store-submission-guide/
     - /docs/v0.25.0/tutorial/mac-app-store-submission-guide/
@@ -32,8 +32,14 @@ redirect_from:
     - /docs/v0.37.4/tutorial/mac-app-store-submission-guide/
     - /docs/v0.37.5/tutorial/mac-app-store-submission-guide/
     - /docs/v0.37.7/tutorial/mac-app-store-submission-guide/
+    - /docs/v0.37.8/tutorial/mac-app-store-submission-guide/
     - /docs/latest/tutorial/mac-app-store-submission-guide/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/mac-app-store-submission-guide.md'
+excerpt: "Note: If you request a temporary-exception entitlement, be sure to follow the
+guidance regarding entitlements provided on the iTunes Connect website. In
+particular, identify the entitlement and corresponding issue number in the App
+Sandbox Entitlement Usage Information section in iTunes Connect and explain why
+your app needs the exception."
 ---
 
 # Mac App Store Submission Guide
@@ -60,7 +66,7 @@ Apple. You can follow these [existing guides][nwjs-guide] on web.
 ### Sign Your App
 
 After getting the certificate from Apple, you can package your app by following
-[Application Distribution](http://electron.atom.io/docs/v0.37.7/tutorial/application-distribution), and then proceed to
+[Application Distribution](http://electron.atom.io/docs/v0.37.8/tutorial/application-distribution), and then proceed to
 signing your app. This step is basically the same with other programs, but the
 key is to sign every dependency of Electron one by one.
 
@@ -221,6 +227,5 @@ ERN)][ern-tutorial].
 [create-record]: https://developer.apple.com/library/ios/documentation/LanguagesUtilities/Conceptual/iTunesConnect_Guide/Chapters/CreatingiTunesConnectRecord.html
 [submit-for-review]: https://developer.apple.com/library/ios/documentation/LanguagesUtilities/Conceptual/iTunesConnect_Guide/Chapters/SubmittingTheApp.html
 [app-sandboxing]: https://developer.apple.com/app-sandboxing/
-[issue-3871]: https://github.com/electron/electron/issues/3871
 [ern-tutorial]: https://carouselapps.com/2015/12/15/legally-submit-app-apples-app-store-uses-encryption-obtain-ern/
 [temporary-exception]: https://developer.apple.com/library/mac/documentation/Miscellaneous/Reference/EntitlementKeyReference/Chapters/AppSandboxTemporaryExceptionEntitlements.html

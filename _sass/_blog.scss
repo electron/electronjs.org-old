@@ -16,13 +16,24 @@
   }
 }
 
-.blog-index-time {
+.who-when {
   color: $main-color-subtle;
   font-size: $body-font-size;
+}
 
-  display: block;
-  @include breakpoint(md) {
-    display: inline;
+.blog-index-time {
+  display: inline;
+}
+
+.author-link {
+  color: $main-color-subtle;
+
+  .avatar {
+    position: relative;
+    top: 4px;
+    border-radius: 2px;
+    height: 18px;
+    width: 18px;
   }
 }
 
@@ -32,7 +43,7 @@
 .blog-post {
 
   time {
-    display: block;
+    display: inline;
     margin-bottom: $spacer4;
     color: $main-color-subtle;
   }
@@ -45,5 +56,9 @@
     border-radius: $border-radius;
     padding: $spacer2;
     background-color: $main-bg-color-shade;
+  }
+
+  hr:first-of-type {
+    display: none;
   }
 }

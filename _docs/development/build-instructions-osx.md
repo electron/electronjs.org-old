@@ -1,7 +1,7 @@
 ---
-version: v0.37.7
+version: v0.37.8
 category: Development
-title: 'Build Instructions-Osx'
+title: 'Build Instructions Osx'
 redirect_from:
     - /docs/v0.24.0/development/build-instructions-osx/
     - /docs/v0.25.0/development/build-instructions-osx/
@@ -32,6 +32,7 @@ redirect_from:
     - /docs/v0.37.4/development/build-instructions-osx/
     - /docs/v0.37.5/development/build-instructions-osx/
     - /docs/v0.37.7/development/build-instructions-osx/
+    - /docs/v0.37.8/development/build-instructions-osx/
     - /docs/latest/development/build-instructions-osx/
 source_url: 'https://github.com/electron/electron/blob/master/docs/development/build-instructions-osx.md'
 ---
@@ -60,8 +61,8 @@ $ git clone https://github.com/electron/electron.git
 ## Bootstrapping
 
 The bootstrap script will download all necessary build dependencies and create
-the build project files. Notice that we're using [ninja](https://ninja-build.org/) to build Electron so
-there is no Xcode project generated.
+the build project files. Notice that we're using [ninja](https://ninja-build.org/)
+to build Electron so there is no Xcode project generated.
 
 ```bash
 $ cd electron

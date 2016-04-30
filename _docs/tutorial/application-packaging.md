@@ -1,5 +1,5 @@
 ---
-version: v0.37.7
+version: v0.37.8
 category: Tutorial
 title: 'Application Packaging'
 redirect_from:
@@ -32,6 +32,7 @@ redirect_from:
     - /docs/v0.37.4/tutorial/application-packaging/
     - /docs/v0.37.5/tutorial/application-packaging/
     - /docs/v0.37.7/tutorial/application-packaging/
+    - /docs/v0.37.8/tutorial/application-packaging/
     - /docs/latest/tutorial/application-packaging/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/application-packaging.md'
 ---

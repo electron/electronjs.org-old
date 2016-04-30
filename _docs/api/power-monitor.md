@@ -1,5 +1,5 @@
 ---
-version: v0.37.7
+version: v0.37.8
 category: API
 title: 'Power Monitor'
 redirect_from:
@@ -32,14 +32,17 @@ redirect_from:
     - /docs/v0.37.4/api/power-monitor/
     - /docs/v0.37.5/api/power-monitor/
     - /docs/v0.37.7/api/power-monitor/
+    - /docs/v0.37.8/api/power-monitor/
     - /docs/latest/api/power-monitor/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/power-monitor.md'
+excerpt: "Monitor power state changes."
 ---
 
 # powerMonitor
 
-The `power-monitor` module is used to monitor power state changes. You can
-only use it in the main process. You should not use this module until the `ready`
+> Monitor power state changes.
+
+You can only use it in the main process. You should not use this module until the `ready`
 event of the `app` module is emitted.
 
 For example:

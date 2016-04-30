@@ -1,5 +1,5 @@
 ---
-version: v0.37.7
+version: v0.37.8
 category: API
 title: Screen
 redirect_from:
@@ -32,15 +32,18 @@ redirect_from:
     - /docs/v0.37.4/api/screen/
     - /docs/v0.37.5/api/screen/
     - /docs/v0.37.7/api/screen/
+    - /docs/v0.37.8/api/screen/
     - /docs/latest/api/screen/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/screen.md'
+excerpt: "Retrieve information about screen size, displays, cursor position, etc."
 ---
 
 # screen
 
-The `screen` module retrieves information about screen size, displays, cursor
-position, etc. You cannot not use this module until the `ready` event of the
-`app` module is emitted (by invoking or requiring it).
+> Retrieve information about screen size, displays, cursor position, etc.
+
+You cannot not use this module until the `ready` event of the `app` module is
+emitted (by invoking or requiring it).
 
 `screen` is an [EventEmitter](http://nodejs.org/api/events.html#events_class_events_eventemitter).
 
@@ -100,8 +103,8 @@ a remote, virtual display.
 
 * `display` object
   * `id` Integer - Unique identifier associated with the display.
-  * `rotation` Integer - Can be 0, 1, 2, 3, each represents screen rotation in
-    clock-wise degrees of 0, 90, 180, 270.
+  * `rotation` Integer - Can be 0, 90, 180, 270, represents screen rotation in
+    clock-wise degrees.
   * `scaleFactor` Number - Output device's pixel scale factor.
   * `touchSupport` String - Can be `available`, `unavailable`, `unknown`.
   * `bounds` Object

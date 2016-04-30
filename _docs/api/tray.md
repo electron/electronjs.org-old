@@ -1,5 +1,5 @@
 ---
-version: v0.37.7
+version: v0.37.8
 category: API
 title: Tray
 redirect_from:
@@ -32,14 +32,15 @@ redirect_from:
     - /docs/v0.37.4/api/tray/
     - /docs/v0.37.5/api/tray/
     - /docs/v0.37.7/api/tray/
+    - /docs/v0.37.8/api/tray/
     - /docs/latest/api/tray/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/tray.md'
+excerpt: "Add icons and context menus to the system&apos;s notification area."
 ---
 
 # Tray
 
-A `Tray` represents an icon in an operating system's notification area, it is
-usually attached with a context menu.
+> Add icons and context menus to the system's notification area.
 
 ```javascript
 const electron = require('electron');
@@ -87,7 +88,7 @@ rely on the `click` event and always attach a context menu to the tray icon.
 
 ### `new Tray(image)`
 
-* `image` [NativeImage](http://electron.atom.io/docs/v0.37.7/api/native-image)
+* `image` [NativeImage](http://electron.atom.io/docs/v0.37.8/api/native-image)
 
 Creates a new tray icon associated with the `image`.
 
@@ -194,13 +195,13 @@ Destroys the tray icon immediately.
 
 ### `Tray.setImage(image)`
 
-* `image` [NativeImage](http://electron.atom.io/docs/v0.37.7/api/native-image)
+* `image` [NativeImage](http://electron.atom.io/docs/v0.37.8/api/native-image)
 
 Sets the `image` associated with this tray icon.
 
 ### `Tray.setPressedImage(image)` _OS X_
 
-* `image` [NativeImage](http://electron.atom.io/docs/v0.37.7/api/native-image)
+* `image` [NativeImage](http://electron.atom.io/docs/v0.37.8/api/native-image)
 
 Sets the `image` associated with this tray icon when pressed on OS X.
 
@@ -226,7 +227,7 @@ when the tray icon is clicked. Defaults to true.
 ### `Tray.displayBalloon(options)` _Windows_
 
 * `options` Object
-  * `icon` [NativeImage](http://electron.atom.io/docs/v0.37.7/api/native-image)
+  * `icon` [NativeImage](http://electron.atom.io/docs/v0.37.8/api/native-image)
   * `title` String
   * `content` String
 

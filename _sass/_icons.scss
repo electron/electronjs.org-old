@@ -13,3 +13,9 @@
   background-color: transparent;
   border: 1px solid mix($heading-color, #fff, 30%);
 }
+
+.btn {
+  .octicon {
+    vertical-align: middle;
+  }
+}

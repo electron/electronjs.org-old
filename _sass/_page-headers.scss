@@ -9,6 +9,18 @@
   -webkit-font-smoothing: antialiased;
 }
 
+.jumbotron .container {
+  background-image: url('../images/hero-hover.png');
+  background-size: 130%;
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+
+  @include breakpoint(md) {
+    background-position: 20% 0%;
+    background-size: 100%;
+  }
+}
+
 .jumbotron {
   // Shadow
   &:after {
@@ -102,4 +114,82 @@
   font-weight: 300;
   letter-spacing: 1px;
   -webkit-font-smoothing: subpixel-antialiased;
+}
+
+// Homepage Jumbotron -----------------------------
+
+.electron-logo {
+  fill: $jumbo-color;
+  width: 40%;
+  max-width: 300px;
+  margin: 0 auto $spacer2 auto;
+  @include breakpoint(md) {
+    width: 30%;
+    margin-bottom: $spacer6;
+  }
+}
+
+.short-1 { animation: short-1 1s ease backwards; animation-delay: .5s; }
+.short-2 { animation: short-2 1s ease backwards; animation-delay: 1s; }
+.short-3 { animation: short-3 1s ease backwards; animation-delay: 1.5s; }
+
+.long-1 { animation: long-1 1s ease backwards; animation-delay: 2s; }
+.long-2 { animation: long-2 1s ease backwards; animation-delay: 2.5s; }
+.long-3 { animation: long-3 1s ease backwards; animation-delay: 3s; }
+
+.loop-1 { animation: loop-1 1s ease backwards; animation-delay: 3.5s; }
+.loop-2 { animation: loop-2 1s ease backwards; animation-delay: 4s; }
+.loop-3 { animation: loop-3 1s ease backwards; animation-delay: 4.5s; }
+
+.dot { animation: dot 1s backwards; animation-delay: 5s; }
+
+
+@keyframes short-1 {
+  0% { transform: rotate(-130deg) translate(-104px, -14px) }
+  100% { transform: rotate(0) translate(0); }
+}
+
+@keyframes short-2 {
+  0% { transform: rotate(105deg) translate(24px, 18px); transform-origin: 50% 50%; }
+  100% { transform: rotate(0) translate(0); transform-origin: 0% 0%; }
+}
+
+@keyframes short-3 {
+  0% { transform: rotate(-14deg) translate(23px, -18px); transform-origin: 50% 50%; }
+  100% { transform: rotate(0) translate(0); transform-origin: 0% 0%; }
+}
+
+@keyframes long-1 {
+  0% { transform: rotate(-110deg) translate(49px, -35px); transform-origin: 50% 50%; }
+  100% { transform: rotate(0) translate(0); transform-origin: 0% 0%; }
+}
+
+@keyframes long-2 {
+  0% { transform: rotate(130deg) translate(6px, 20px); transform-origin: 50% 50%; }
+  100% { transform: rotate(0) translate(0); transform-origin: 0% 0%; }
+}
+
+@keyframes long-3 {
+  0% { transform: rotate(11deg) translate(-36px, 5px); transform-origin: 50% 50%; }
+  100% { transform: rotate(0) translate(0); transform-origin: 0% 0%; }
+}
+
+@keyframes loop-1 {
+  0% { transform: translate(65px, -70px); }
+  100% { transform: translate(0); }
+}
+
+@keyframes loop-2 {
+  0% { transform: translate(4px, 6px); }
+  100% { transform: translate(0); }
+}
+
+@keyframes loop-3 {
+  0% { transform: translate(-21px, -52px); }
+  100% { transform: translate(0); }
+}
+
+@keyframes dot {
+  0% { transform: translate(4px, -26px); }
+  100% { transform: translate(0); }
 }

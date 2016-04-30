@@ -1,5 +1,5 @@
 ---
-version: v0.37.7
+version: v0.37.8
 category: API
 title: Protocol
 redirect_from:
@@ -32,14 +32,15 @@ redirect_from:
     - /docs/v0.37.4/api/protocol/
     - /docs/v0.37.5/api/protocol/
     - /docs/v0.37.7/api/protocol/
+    - /docs/v0.37.8/api/protocol/
     - /docs/latest/api/protocol/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/protocol.md'
+excerpt: "Register a custom protocol and intercept existing protocol requests."
 ---
 
 # protocol
 
-The `protocol` module can register a custom protocol or intercept an existing
-protocol.
+> Register a custom protocol and intercept existing protocol requests.
 
 An example of implementing a protocol that has the same effect as the
 `file://` protocol:
