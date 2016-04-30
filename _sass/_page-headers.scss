@@ -82,12 +82,22 @@
   // background: url('../images/hero-guide.png');
 }
 
+// Hero icons
+.hero-icons {
+  transform-origin: 50% 50%;
+  animation: hero-icons-animation 4s 2.5s cubic-bezier(.3,.1,.9,.5) both;
+}
+
+@keyframes hero-icons-animation {
+    30% { transform: scale(1.1); animation-timing-function: cubic-bezier(.1,.4,.2,1); }
+}
+
 
 // Electron Icon
 
 $hero-icon-delay: 1s;
-$hero-icon-delay-diff: .1s;
-$hero-icon-duration: .4s;
+$hero-icon-delay-diff: .2s;
+$hero-icon-duration: 1.2s;
 $hero-icon-all-delay: 15 * $hero-icon-delay-diff + $hero-icon-delay;
 
 
@@ -98,29 +108,33 @@ $hero-icon-all-delay: 15 * $hero-icon-delay-diff + $hero-icon-delay;
 }
 
 // Initial position
-.dot     { transform: translate(35px, -37px); }
+.dot     { transform: translate(35px, -37px); opacity: 1; }
 .short-1 { transform: translate(119px, 37px) rotate(-134deg); }
 .short-2 { transform: translate(-20px, 61px) rotate(106deg); }
 .short-3 { transform: translate(65px, -18px) rotate(-17deg); }
 .long-1  { transform: translate(-101px, -45px) rotate(-107deg); }
-.long-2  { transform: translate(-35px, 8px) rotate(133deg); }
+.long-2  { transform: translate(-35px, 8px) rotate(133deg); opacity: 1; }
 .long-3  { transform: translate(-64px, 20px) rotate(13deg); }
 .loop-1  { transform: translate(-51px, -128px); }
 .loop-2  { transform: translate(166px, -88px); }
-.loop-3  { transform: translate(79px, 21px); }
+.loop-3  { transform: translate(79px, 21px); opacity: 1; }
 
 @for $i from 1 through 10 {
   .hero-icon-#{$i} {
     $_duration: $hero-icon-duration;
     $_delay:   $hero-icon-delay + ($hero-icon-delay-diff * $i);
-    $_delay-2: $hero-icon-all-delay - ($hero-icon-delay-diff / $i);
+    $_delay-o: $hero-icon-all-delay - ($hero-icon-delay-diff / $i);
     animation: hero-icon-animation-t $_duration $_delay cubic-bezier(.50, 0, .20, 1) both,
-               hero-icon-animation-o .4s $_delay-2 cubic-bezier(.50, 0, .20, 1) both;
+               hero-icon-animation-o .4s $_delay-o both;
   }
 }
 
-@keyframes hero-icon-animation-t { 100% { transform: translate(0, 0) rotate(0deg); } }
-@keyframes hero-icon-animation-o { 100% { opacity: 1; } }
+@keyframes hero-icon-animation-t {
+  100% { transform: translate(0, 0) rotate(0deg) scale(1); }
+}
+@keyframes hero-icon-animation-o {
+  100% { opacity: 1; }
+}
 
 
 
@@ -152,9 +166,9 @@ $hero-app-duration: .8s;
   .hero-app-#{$i} {
     $_delay: $hero-app-delay + ($hero-app-delay-diff * $i);
     @if $i % 2 == 0 {
-      animation: hero-app-animate-left $hero-app-duration $_delay cubic-bezier(.3,.15,0,1) both;
+      animation: hero-app-animate-left $hero-app-duration $_delay both;
     } @else {
-      animation: hero-app-animate-right $hero-app-duration $_delay cubic-bezier(.3,.15,0,1) both;
+      animation: hero-app-animate-right $hero-app-duration $_delay both;
     }
   }
 }
