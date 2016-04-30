@@ -98,5 +98,8 @@
 .minitron-title {
   margin: 0;
   color: inherit;
-  // font-weight: 500;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
