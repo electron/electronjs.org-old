@@ -2,10 +2,10 @@
 // Headers ------------------------------
 
 // Electron version
-.electron-vers {
+.electron-versions {
   display: inline-block;
   margin: 0 auto;
-  color: $mini-color-subtle;
+  color: $main-color-subtle;
   font-size: .88em;
 
   @include breakpoint(md) {
@@ -13,7 +13,7 @@
   }
 }
 
-.electron-vers span {
+.electron-versions span {
   display: inline-block;
   line-height: 1;
   padding: 0.6em 0.8em;
@@ -21,19 +21,20 @@
   @include breakpoint(md) {
     display: table-cell;
     & + span:not(:last-child) {
-      border-right: 1px solid darken($mini-bg-color, 12%);
+      border-right: 1px solid $border-color;
     }
   }
 }
 
-.electron-vers strong {
-  color: $mini-color;
+.electron-versions strong {
+  color: $main-color-strong;
 }
 
-.main-ver {
+.electron-versions-main {
   border-radius: 3px;
-  border: 1px solid darken($mini-bg-color, 16%);
-  background-color: lighten($mini-bg-color, 6%);
+  color: $main-color;
+  border: 1px solid $border-color;
+  background-color: lighten($sub-bg-color, 6%);
 }
 
 
