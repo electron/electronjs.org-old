@@ -78,31 +78,65 @@
 .hero {
   max-width: 900px;
   margin: 0 auto;
+  backface-visibility: hidden;
 }
+
+// Apps ----------------
 
 .hero-app {
   fill: hsl(160, 72%, 60%);
   opacity: .1;
+  transform-origin: 50% 50%;
 }
 
+// Ripple effect
+$hero-app-delay: 3s;
+$hero-app-delay-diff: 0.04s;
+$hero-app-duration: .8s;
+
+@keyframes hero-app-animate-left {
+    0% { transform: translateX(40px) scale(1);    opacity: .1; animation-timing-function: cubic-bezier(.3,.1,.9,.5);  }
+   10% { transform: translateX(30px) scale(1.5);               animation-timing-function: cubic-bezier(.1,.4,.2,1);             }
+  100% { transform: translateX( 0px) scale(1);    opacity: 1;  }
+}
+@keyframes hero-app-animate-right {
+    0% { transform: translateX(-40px) scale(1);   opacity: .1; animation-timing-function: cubic-bezier(.3,.1,.9,.5);  }
+   10% { transform: translateX(-30px) scale(1.5);              animation-timing-function: cubic-bezier(.1,.4,.2,1);             }
+  100% { transform: translateX(  0px) scale(1);   opacity: 1;  }
+}
+
+@for $i from 1 through 15 {
+  .hero-app-#{$i} {
+    $_delay: $hero-app-delay + ($hero-app-delay-diff * $i);
+    @if $i % 2 == 0 {
+      animation: hero-app-animate-left $hero-app-duration $_delay cubic-bezier(.3,.15,0,1) both;
+    } @else {
+      animation: hero-app-animate-right $hero-app-duration $_delay cubic-bezier(.3,.15,0,1) both;
+    }
+  }
+}
+
+
+// Electron Icon
 
 .hero-icon {
   fill: $jumbo-color-strong;
+  opacity: .2;
 }
 
-.short-1 { animation: short-1 1s ease backwards; animation-delay: .5s; }
-.short-2 { animation: short-2 1s ease backwards; animation-delay: 1s; }
-.short-3 { animation: short-3 1s ease backwards; animation-delay: 1.5s; }
-
-.long-1 { animation: long-1 1s ease backwards; animation-delay: 2s; }
-.long-2 { animation: long-2 1s ease backwards; animation-delay: 2.5s; }
-.long-3 { animation: long-3 1s ease backwards; animation-delay: 3s; }
-
-.loop-1 { animation: loop-1 1s ease backwards; animation-delay: 3.5s; }
-.loop-2 { animation: loop-2 1s ease backwards; animation-delay: 4s; }
-.loop-3 { animation: loop-3 1s ease backwards; animation-delay: 4.5s; }
-
-.dot { animation: dot 1s backwards; animation-delay: 5s; }
+// .short-1 { animation: short-1 1s ease backwards; animation-delay: .5s; }
+// .short-2 { animation: short-2 1s ease backwards; animation-delay: 1s; }
+// .short-3 { animation: short-3 1s ease backwards; animation-delay: 1.5s; }
+//
+// .long-1 { animation: long-1 1s ease backwards; animation-delay: 2s; }
+// .long-2 { animation: long-2 1s ease backwards; animation-delay: 2.5s; }
+// .long-3 { animation: long-3 1s ease backwards; animation-delay: 3s; }
+//
+// .loop-1 { animation: loop-1 1s ease backwards; animation-delay: 3.5s; }
+// .loop-2 { animation: loop-2 1s ease backwards; animation-delay: 4s; }
+// .loop-3 { animation: loop-3 1s ease backwards; animation-delay: 4.5s; }
+//
+// .dot { animation: dot 1s backwards; animation-delay: 5s; }
 
 
 @keyframes short-1 {
