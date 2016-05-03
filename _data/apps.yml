@@ -689,6 +689,7 @@
   keywords: []
   license: ""
   icon: "ghost.png"
+  featuredOnHomepage: true
 -
   name: "Aipo.com"
   description: ""
