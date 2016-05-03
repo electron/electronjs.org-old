@@ -15,42 +15,59 @@ layout: default
 
   <section class="page-section page-section-spacious">
     <div class="container-narrow">
+
       <h1 class="text-center-sm">Debug your app</h1>
       <p class="lead text-center-sm">
         Devtron is an open source DevTools extension to help you inspect, monitor,
         and debug your Electron app.
       </p>
-    </div>
 
-    <div class='row mt-8'>
-      <div class='col-xs-12 col-md-5'>
-        <div class="app-frame">
-          <img alt="Screenshot of Devtron Require Graph" src='{{ site.baseurl }}/images/devtron-require-graph.png'>
+      <div class='row mt-8'>
+        <div class='col-xs-12 col-md-6'>
+          <div class="app-frame">
+            <img alt="Screenshot of Devtron Require Graph" src='{{ site.baseurl }}/images/devtron-require-graph.png'>
+          </div>
         </div>
-      </div>
-      <div class='col-xs-12 col-md-7 text-left'>
-        <h3 class="mt-1 mb-3">Require Graph</h3>
-        <p>Visualize your app's internal and external library dependencies in both the main and renderer processes.
-          The require graph shows the JavaScript files in your app that have been loaded and allows you
-          to trace through the loading order and dependency graph.
-        </p>
-      </div>
-    </div>
-
-    <div class='row mt-4'>
-      <div class='col-xs-12 col-md-5'>
-        <div class="app-frame">
-          <img alt="Screenshot of Devtron Require Graph" src='{{ site.baseurl }}/images/devtron-event-listeners.png'>
+        <div class='col-xs-12 col-md-6 text-left'>
+          <h3 class="mt-1 mb-3">Require Graph</h3>
+          <p>Visualize your app's internal and external library dependencies in both the main and renderer processes.
+            The require graph shows the JavaScript files in your app that have been loaded and allows you
+            to trace through the loading order and dependency graph.
+          </p>
         </div>
       </div>
 
-      <div class='col-xs-12 col-md-7 text-left'>
-        <h3 class="mt-1 mb-3">Event Listeners</h3>
-        <p>Explore the events and listeners currently registered in your app
-          on the core Electron APIs such as the window, the app, and the
-          main and renderer processes. Supports searching for a specific listener
-          to see if it will be notified when the event is fired.
-        </p>
+      <div class='row mt-8'>
+        <div class='col-xs-12 col-md-6 text-left'>
+          <h3 class="mt-1 mb-3">Event Listeners</h3>
+          <p>Explore the events and listeners currently registered in your app
+            on the core Electron APIs such as the window, the app, and the
+            main and renderer processes. Supports searching for a specific listener
+            to see if it will be notified when the event is fired.
+          </p>
+        </div>
+
+        <div class='col-xs-12 col-md-6'>
+          <div class="app-frame">
+            <img alt="Screenshot of Devtron Event Listeners" src='{{ site.baseurl }}/images/devtron-event-listeners.png'>
+          </div>
+        </div>
+      </div>
+
+      <div class='row mt-8'>
+        <div class='col-xs-12 col-md-6'>
+          <div class="app-frame">
+            <img alt="Screenshot of IPC Monitor" src='{{ site.baseurl }}/images/devtron-ipc.png'>
+          </div>
+        </div>
+
+        <div class='col-xs-12 col-md-6 text-left'>
+          <h3 class="mt-1 mb-3">IPC Monitor</h3>
+          <p>Track and inspect the messages sent and received between the processes in your app.
+            The IPC monitor shows the message traffic between the main and renderer processes
+            with details about what what was sent and received.
+          </p>
+        </div>
       </div>
     </div>
   </section>
