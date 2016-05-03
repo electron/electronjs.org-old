@@ -1,9 +1,6 @@
 
 // Homepage hero -----------------------------
 
-$hero-hue: 190;
-// $hero-hue: random(360)-1; // TODO: Enable after 1.0 so the color switches randomly
-
 .hero {
   margin: 0 auto;
   backface-visibility: hidden;
@@ -35,7 +32,7 @@ $hero-icon-all-delay: 15 * $hero-icon-delay-diff + $hero-icon-delay;
 
 
 .hero-icon {
-  fill: hsl( $hero-hue, 100%, 80%);
+  fill: $jumbo-color-strong;
   opacity: .1;
   transform-origin: 50% 50%;
 }
@@ -74,7 +71,7 @@ $hero-icon-all-delay: 15 * $hero-icon-delay-diff + $hero-icon-delay;
 // Apps ----------------
 
 .hero-app {
-  fill: currentColor;
+  fill: $jumbo-color-subtle;
   transform-origin: 50% 50%;
 }
 
@@ -98,7 +95,7 @@ $hero-app-opacity: 0.1;
 // Colorize and animate
 @for $i from 1 through 15 {
   .hero-app-#{$i} {
-    fill: mix( hsl( $hero-hue, 44%, 66%), $jumbo-bg-color, 66% - $i * 4% );
+    fill: mix( $jumbo-color-subtle, $jumbo-bg-color, 80% - $i * 4% );
 
     $_delay: $hero-app-delay + ($hero-app-delay-diff * $i);
     @if $i % 2 == 0 {
