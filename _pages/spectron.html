@@ -24,12 +24,15 @@ layout: default
       <div class='row mt-8'>
         <div class='col-xs-12 col-md-4 text-left'>
           <h2 class="mt-1 mb-3"><span class="mega-octicon octicon-server pr-3"></span>CI Ready</h2>
-          <p>Tests run on continuous integration services such as Travis and AppVeyor.</p>
+          <p>Tests run on continuous integration services such as
+            <a href="https://github.com/electron/spectron#on-travis-ci">Travis</a> and
+            <a href="https://github.com/electron/spectron#on-appveyor">AppVeyor</a>.
+          </p>
         </div>
 
         <div class='col-xs-12 col-md-4 text-left'>
           <h2 class="mt-1 mb-3"><span class="mega-octicon octicon-light-bulb pr-3"></span>Full API</h2>
-          <p>Spectron makes the entire Electron API available in your tests.</p>
+          <p>Spectron makes the entire <a href="/docs">Electron API</a> available in your tests.</p>
         </div>
 
         <div class='col-xs-12 col-md-4 text-left'>
@@ -41,17 +44,18 @@ layout: default
       <div class='row mt-8'>
         <div class='col-xs-12 col-md-4 text-left'>
           <h2 class="mt-1 mb-3"><span class="mega-octicon octicon-link pr-3"></span>Promises</h2>
-          <p>Easily chain together asynchronous operations and assertions.</p>
+          <p>Easily chain together async operations and assertions using standard <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promises</a>.</p>
         </div>
 
         <div class='col-xs-12 col-md-4 text-left'>
           <h2 class="mt-1 mb-3"><span class="mega-octicon octicon-tools pr-3"></span>Extensible</h2>
-          <p>Add additional commands and helpers specific to your app.</p>
+          <p>Add additional helpers specific to your app using the <a href="http://webdriver.io/api/utility/addCommand.html">command API</a>.</p>
         </div>
 
         <div class='col-xs-12 col-md-4 text-left'>
           <h2 class="mt-1 mb-3"><span class="mega-octicon octicon-code pr-3"></span>Compatible</h2>
-          <p>Can be used with any testing library like Mocha, Jasmine, and AVA.</p>
+          <p>Can be used with any testing library like <a href="https://mochajs.org">Mocha</a>,
+            <a href="http://jasmine.github.io">Jasmine</a>, and <a href="https://github.com/sindresorhus/ava">AVA</a>.</p>
         </div>
       </div>
     </div>
@@ -76,7 +80,7 @@ app.start().then(<span class="keyword">function</span> () {
   <span class="c1">// Check if the window is visible</span>
   <span class="keyword">return</span> app.browserWindow.isVisible()
 }).then(<span class="keyword">function</span> (isVisible) {
-  assert.equal(isVisible, true)
+  assert.equal(isVisible, <span class="keyword">true</span>)
 }).then(<span class="keyword">function</span> () {
   <span class="c1">// Get the window's title</span>
   <span class="keyword">return</span> app.client.getTitle()
