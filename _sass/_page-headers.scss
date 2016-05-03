@@ -93,10 +93,10 @@ $hero-hue: 190;
 // Hero icons
 .hero-icons {
   transform-origin: 50% 50%;
-  animation: hero-icons-animation 4s 2.5s cubic-bezier(.3,.1,.9,.5) both;
+  animation: hero-icons-animation 2s 2.5s cubic-bezier(.50, .10, .50, .90) both;
 }
 @keyframes hero-icons-animation {
-  30% { transform: scale(1.1); animation-timing-function: cubic-bezier(.1,.4,.2,1); }
+  50% { transform: scale(1.1); }
 }
 
 
