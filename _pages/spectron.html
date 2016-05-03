@@ -17,7 +17,8 @@ layout: default
     <div class="container-narrow">
       <h1 class="text-center-sm">Test your app</h1>
       <p class="lead text-center-sm">
-        Spectron is an <a href="https://github.com/electron/spectron">open source</a> framework for writing integrations tests for your Electron app.
+        An open source framework for easily writing integrations tests for your Electron app.
+        <a href="https://github.com/electron/spectron">Spectron</a> sets up and tears down your app and allows it to be test-driven remotely with full support for the Electron APIs.
         Built on top of  <a href="https://sites.google.com/a/chromium.org/chromedriver">ChromeDriver</a> and <a href="http://webdriver.io">WebDriverIO</a>.
       </p>
 
@@ -32,7 +33,7 @@ layout: default
 
         <div class='col-xs-12 col-md-4 text-left'>
           <h2 class="mt-1 mb-3"><span class="mega-octicon octicon-light-bulb pr-3"></span>Full API</h2>
-          <p>Spectron makes the entire <a href="/docs">Electron API</a> available in your tests.</p>
+          <p>Spectron makes the entire Chromium and <a href="/docs">Electron APIs</a> available to your tests.</p>
         </div>
 
         <div class='col-xs-12 col-md-4 text-left'>
@@ -55,7 +56,8 @@ layout: default
         <div class='col-xs-12 col-md-4 text-left'>
           <h2 class="mt-1 mb-3"><span class="mega-octicon octicon-code pr-3"></span>Compatible</h2>
           <p>Can be used with any testing library like <a href="https://mochajs.org">Mocha</a>,
-            <a href="http://jasmine.github.io">Jasmine</a>, and <a href="https://github.com/sindresorhus/ava">AVA</a>.</p>
+            <a href="http://jasmine.github.io">Jasmine</a>, <a href="https://github.com/sindresorhus/ava">AVA</a>,
+            and <a href="http://chaijs.com">Chai</a>.</p>
         </div>
       </div>
     </div>
@@ -80,16 +82,19 @@ app.start().then(<span class="keyword">function</span> () {
   <span class="c1">// Check if the window is visible</span>
   <span class="keyword">return</span> app.browserWindow.isVisible()
 }).then(<span class="keyword">function</span> (isVisible) {
+  <span class="c1">// Verify the window is visible</span>
   assert.equal(isVisible, <span class="keyword">true</span>)
 }).then(<span class="keyword">function</span> () {
   <span class="c1">// Get the window's title</span>
   <span class="keyword">return</span> app.client.getTitle()
 }).then(<span class="keyword">function</span> (title) {
+  <span class="c1">// Verify the window's title</span>
   assert.equal(title, <span class="string">'My App'</span>)
 }).then(<span class="keyword">function</span> () {
   <span class="c1">// Stop the application</span>
   <span class="keyword">return</span> app.stop()
 }).catch(<span class="keyword">function</span> (error) {
+  <span class="c1">// Log any failures</span>
   console.error(<span class="string">'Test failed'</span>, error.message)
 })</code></pre>
       </figure>
