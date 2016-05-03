@@ -6,9 +6,8 @@
   background-color: $jumbo-bg-color;
   -webkit-font-smoothing: antialiased;
   padding: $spacer2 $spacer3 $spacer6 $spacer3;
-  @include breakpoint(md) {
-    padding: $spacer4 $spacer3 $spacer8 $spacer3;
-  }
+  @include breakpoint(md) { padding: $spacer4 $spacer3 $spacer8 $spacer3; }
+  @include breakpoint(xl) { padding: $spacer6 0 $spacer6 * 2 0; }
 }
 
 // remove shadow
@@ -23,6 +22,7 @@
 
   @include breakpoint(md) { font-size: 1.8rem; }
   @include breakpoint(lg) { font-size: 2.4rem; }
+  @include breakpoint(xl) { font-size: 3rem; }
 }
 
 .jumbotron-lead-muted {
@@ -76,10 +76,10 @@
 // Homepage hero -----------------------------
 
 .hero {
-  max-width: 900px;
   margin: 0 auto;
   backface-visibility: hidden;
-  // background: url('../images/hero-guide.png');
+  max-width: 900px;
+  @include breakpoint(xl) { max-width: 100%; }
 }
 
 // Hero icons
