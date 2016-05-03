@@ -24,17 +24,32 @@ layout: default
 
     <div class='row mt-8'>
       <div class='col-xs-12 col-md-5'>
-        <a href="https://github.com/electron/electron-api-demos/releases">
-          <div class="app-frame">
-            <img alt="Screenshot of Devtron Require Graph" src='{{ site.baseurl }}/images/devtron-require-graph.png'>
-          </div>
-        </a>
+        <div class="app-frame">
+          <img alt="Screenshot of Devtron Require Graph" src='{{ site.baseurl }}/images/devtron-require-graph.png'>
+        </div>
       </div>
       <div class='col-xs-12 col-md-7 text-left'>
         <h3 class="mt-1 mb-3">Require Graph</h3>
         <p>Visualize your app's internal and external library dependencies in both the main and renderer processes.
           The require graph shows the JavaScript files in your app that have been loaded and allows you
           to trace through the loading order and dependency graph.
+        </p>
+      </div>
+    </div>
+
+    <div class='row mt-4'>
+      <div class='col-xs-12 col-md-5'>
+        <div class="app-frame">
+          <img alt="Screenshot of Devtron Require Graph" src='{{ site.baseurl }}/images/devtron-event-listeners.png'>
+        </div>
+      </div>
+
+      <div class='col-xs-12 col-md-7 text-left'>
+        <h3 class="mt-1 mb-3">Event Listeners</h3>
+        <p>Explore the events and listeners currently registered in your app
+          on the core Electron APIs such as the window, the app, and the
+          main and renderer processes. Supports searching for a specific listener
+          to see if it will be notified when the event is fired.
         </p>
       </div>
     </div>
