@@ -75,6 +75,9 @@
 
 // Homepage hero -----------------------------
 
+$hero-hue: 190;
+// $hero-hue: random(360)-1; // TODO: Enable after 1.0 so the color switches randomly
+
 .hero {
   margin: 0 auto;
   backface-visibility: hidden;
@@ -106,8 +109,8 @@ $hero-icon-all-delay: 15 * $hero-icon-delay-diff + $hero-icon-delay;
 
 
 .hero-icon {
-  fill: $jumbo-color-strong;
-  opacity: .2;
+  fill: hsl( $hero-hue, 100%, 80%);
+  opacity: .1;
   transform-origin: 50% 50%;
 }
 
@@ -145,8 +148,7 @@ $hero-icon-all-delay: 15 * $hero-icon-delay-diff + $hero-icon-delay;
 // Apps ----------------
 
 .hero-app {
-  fill: hsl(160, 72%, 60%);
-  opacity: .1;
+  fill: currentColor;
   transform-origin: 50% 50%;
 }
 
@@ -154,20 +156,27 @@ $hero-icon-all-delay: 15 * $hero-icon-delay-diff + $hero-icon-delay;
 $hero-app-delay: $hero-icon-all-delay;
 $hero-app-delay-diff: 0.04s;
 $hero-app-duration: .8s;
+$hero-app-opacity: 0.1;
 
 @keyframes hero-app-animate-left {
-    0% { transform: translateX(40px) scale(1);    opacity: .1; animation-timing-function: cubic-bezier(.3,.1,.9,.5);  }
-   10% { transform: translateX(30px) scale(1.5);               animation-timing-function: cubic-bezier(.1,.4,.2,1);             }
-  100% { transform: translateX( 0px) scale(1);    opacity: 1;  }
+    0% { transform: translateX(30px) scale(1);    opacity: $hero-app-opacity; animation-timing-function: cubic-bezier(.3,.1,.9,.5);  }
+   10% { transform: translateX(20px) scale(1.5);                              animation-timing-function: cubic-bezier(.1,.4,.2,1);             }
+  100% { transform: translateX( 0px) scale(1);    opacity: 1; }
 }
 @keyframes hero-app-animate-right {
-    0% { transform: translateX(-40px) scale(1);   opacity: .1; animation-timing-function: cubic-bezier(.3,.1,.9,.5);  }
-   10% { transform: translateX(-30px) scale(1.5);              animation-timing-function: cubic-bezier(.1,.4,.2,1);             }
-  100% { transform: translateX(  0px) scale(1);   opacity: 1;  }
+    0% { transform: translateX(-30px) scale(1);   opacity: $hero-app-opacity; animation-timing-function: cubic-bezier(.3,.1,.9,.5);  }
+   10% { transform: translateX(-20px) scale(1.5);                             animation-timing-function: cubic-bezier(.1,.4,.2,1);             }
+  100% { transform: translateX(  0px) scale(1);   opacity: 1; }
 }
 
+// Random color
+// $hero-color: hsl( random(360)-1, 100%, 72%);
+
+// Colorize and animate
 @for $i from 1 through 15 {
   .hero-app-#{$i} {
+    fill: mix( hsl( $hero-hue, 44%, 66%), $jumbo-bg-color, 66% - $i * 4% );
+
     $_delay: $hero-app-delay + ($hero-app-delay-diff * $i);
     @if $i % 2 == 0 {
       animation: hero-app-animate-left $hero-app-duration $_delay both;
