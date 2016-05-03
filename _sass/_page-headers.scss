@@ -169,9 +169,6 @@ $hero-app-opacity: 0.1;
   100% { transform: translateX(  0px) scale(1);   opacity: 1; }
 }
 
-// Random color
-// $hero-color: hsl( random(360)-1, 100%, 72%);
-
 // Colorize and animate
 @for $i from 1 through 15 {
   .hero-app-#{$i} {
