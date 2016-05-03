@@ -80,6 +80,11 @@
   backface-visibility: hidden;
   max-width: 900px;
   @include breakpoint(xl) { max-width: 100%; }
+  animation: hero-animation 1s forwards;
+}
+@keyframes hero-animation {
+    0% { opacity: 0; transform: scale(.96); }
+  100% { opacity: 1; transform: scale(1); }
 }
 
 // Hero icons
@@ -87,9 +92,8 @@
   transform-origin: 50% 50%;
   animation: hero-icons-animation 4s 2.5s cubic-bezier(.3,.1,.9,.5) both;
 }
-
 @keyframes hero-icons-animation {
-    30% { transform: scale(1.1); animation-timing-function: cubic-bezier(.1,.4,.2,1); }
+  30% { transform: scale(1.1); animation-timing-function: cubic-bezier(.1,.4,.2,1); }
 }
 
 
@@ -108,16 +112,16 @@ $hero-icon-all-delay: 15 * $hero-icon-delay-diff + $hero-icon-delay;
 }
 
 // Initial position
-.dot     { transform: translate(35px, -37px); opacity: 1; }
-.short-1 { transform: translate(119px, 37px) rotate(-134deg); }
-.short-2 { transform: translate(-20px, 61px) rotate(106deg); }
-.short-3 { transform: translate(65px, -18px) rotate(-17deg); }
-.long-1  { transform: translate(-101px, -45px) rotate(-107deg); }
-.long-2  { transform: translate(-35px, 8px) rotate(133deg); opacity: 1; }
-.long-3  { transform: translate(-64px, 20px) rotate(13deg); }
-.loop-1  { transform: translate(-51px, -128px); }
-.loop-2  { transform: translate(166px, -88px); }
-.loop-3  { transform: translate(79px, 21px); opacity: 1; }
+.hero-icon.dot     { transform: translate(35px, -37px); opacity: 1; }
+.hero-icon.short-1 { transform: translate(119px, 37px) rotate(-134deg); }
+.hero-icon.short-2 { transform: translate(-20px, 61px) rotate(106deg); }
+.hero-icon.short-3 { transform: translate(65px, -18px) rotate(-17deg); }
+.hero-icon.long-1  { transform: translate(-101px, -45px) rotate(-107deg); }
+.hero-icon.long-2  { transform: translate(-35px, 8px) rotate(133deg); opacity: 1; }
+.hero-icon.long-3  { transform: translate(-64px, 20px) rotate(13deg); }
+.hero-icon.loop-1  { transform: translate(-51px, -128px); }
+.hero-icon.loop-2  { transform: translate(166px, -88px); }
+.hero-icon.loop-3  { transform: translate(79px, 21px); opacity: 1; }
 
 @for $i from 1 through 10 {
   .hero-icon-#{$i} {
