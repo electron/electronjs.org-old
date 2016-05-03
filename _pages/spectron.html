@@ -84,7 +84,7 @@ app.start().then(<span class="keyword">function</span> () {
   assert.equal(title, <span class="string">'My App'</span>)
 }).then(<span class="keyword">function</span> () {
   <span class="c1">// Stop the application</span>
-  return app.stop()
+  <span class="keyword">return</span> app.stop()
 }).catch(<span class="keyword">function</span> (error) {
   console.error(<span class="string">'Test failed'</span>, error.message)
 })</code></pre>
