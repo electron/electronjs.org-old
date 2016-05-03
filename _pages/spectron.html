@@ -62,7 +62,32 @@ layout: default
       <h1>Get started</h1>
       <figure class="highlight highlight-dark text-left my-4">
       <pre><code><span class="c1"># Install Spectron</span>
-$ npm install --save-dev spectron</code></pre>
+$ npm install --save-dev spectron
+
+<span class="c1">// A simple test to verify a visible window is opened with a title</span>
+<span class="keyword">var</span> Application = require(<span class="string">'spectron'</span>).Application
+<span class="keyword">var</span> assert = require(<span class="string">'assert'</span>)
+
+<span class="keyword">var</span> app = <span class="keyword">new</span> Application({
+  path: <span class="string">'/Applications/MyApp.app/Contents/MacOS/MyApp'</span>
+})
+
+app.start().then(<span class="keyword">function</span> () {
+  <span class="c1">// Check if the window is visible</span>
+  <span class="keyword">return</span> app.browserWindow.isVisible()
+}).then(<span class="keyword">function</span> (isVisible) {
+  assert.equal(isVisible, true)
+}).then(<span class="keyword">function</span> () {
+  <span class="c1">// Get the window's title</span>
+  <span class="keyword">return</span> app.client.getTitle()
+}).then(<span class="keyword">function</span> (title) {
+  assert.equal(title, <span class="string">'My App'</span>)
+}).then(<span class="keyword">function</span> () {
+  <span class="c1">// Stop the application</span>
+  return app.stop()
+}).catch(<span class="keyword">function</span> (error) {
+  console.error(<span class="string">'Test failed'</span>, error.message)
+})</code></pre>
       </figure>
 
       <h3>Or dive deeper and read the <a href='https://github.com/electron/spectron#application-api'>documentation</a>.</h3>
