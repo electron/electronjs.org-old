@@ -4,10 +4,49 @@ permalink: /devtron/
 layout: default
 ---
 
-<div class="jumbotron text-center devtron">
-  <div class="container">
-    <p class='jumbotron-lead'>Devtron
-      <span class='jumbotron-lead-muted'>An Electron DevTools Extension</span>
-    </p>
+<div class="devtron">
+  <div class="jumbotron text-center">
+    <div class="container">
+      <p class='jumbotron-lead'>Devtron
+        <span class='jumbotron-lead-muted'>An Electron DevTools Extension</span>
+      </p>
+    </div>
   </div>
+
+  <section class="page-section page-section-spacious">
+    <div class="container-narrow">
+      <h1 class="text-center-sm">Debug your app</h1>
+      <p class="lead text-center-sm">
+        Devtron is an open source DevTools extension to help you inspect, monitor,
+        and debug your Electron app.
+      </p>
+    </div>
+
+    <div class='row mt-8'>
+      <div class='col-xs-12 col-md-5'>
+        <a href="https://github.com/electron/electron-api-demos/releases">
+          <div class="app-frame">
+            <img alt="Screenshot of Devtron Require Graph" src='{{ site.baseurl }}/images/devtron-require-graph.png'>
+          </div>
+        </a>
+      </div>
+      <div class='col-xs-12 col-md-7 text-left'>
+        <h3 class="mt-1 mb-3">Require Graph</h3>
+        <p>Visualize your app's internal and external library dependencies in both the main and renderer processes.
+          The require graph shows the JavaScript files in your app that have been loaded and allows you
+          to trace through the loading order and dependency graph.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class='page-section page-section-spacious bg-shade'>
+    <div class='container-narrow text-center'>
+      <h1>Get started</h1>
+      <figure class="highlight highlight-dark text-left my-4">
+      <pre><code><span class="c1"># Install Devtron</span>
+$ npm install devtron</code></pre>
+      </figure>
+    </div>
+  </section>
 </div>

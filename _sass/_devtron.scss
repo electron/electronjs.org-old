@@ -1,3 +1,9 @@
-.jumbotron.devtron .container {
-  background-image: none;
+.devtron {
+  .app-frame {
+    background-color: $main-border-color;
+  }
+
+  .jumbotron .container {
+    background-image: none;
+  }
 }
