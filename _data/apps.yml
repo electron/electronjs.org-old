@@ -367,6 +367,7 @@
   keywords: []
   license: ""
   icon: "flow.png"
+  featuredOnHomepage: true
 -
   name: "Gif Maker"
   description: ""
