@@ -1,0 +1,19 @@
+.spectron {
+  .app-frame {
+    background-color: $main-border-color;
+  }
+
+  .jumbotron .container {
+    background-image: none;
+  }
+
+  pre code {
+    .string {
+      color: #98c379;
+    }
+
+    .keyword {
+      color: #c678dd;
+    }
+  }
+}

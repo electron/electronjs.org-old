@@ -1,10 +1,24 @@
+.hero-feature {
+  .hero-octicon {
+    transition: transform .32s;
+  }
+
+  &:hover .hero-octicon {
+    transform: scale(1.1);
+    transition-duration: .08s;
+  }
+
+  &:active .hero-octicon {
+    transform: scale(.92);
+    transition-duration: 0;
+  }
+}
 
 .hero-link {
+  color: $heading-color;
+
   &:hover {
     text-decoration: none;
-    .hero-octicon {
-      border-color: $main-link-color;
-    }
   }
 }
 

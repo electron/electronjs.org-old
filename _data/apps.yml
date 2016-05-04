@@ -367,6 +367,7 @@
   keywords: []
   license: ""
   icon: "flow.png"
+  featuredOnHomepage: true
 -
   name: "Gif Maker"
   description: ""
@@ -633,6 +634,71 @@
   license: ""
   icon: "datazenit.png"
   featuredOnHomepage: false
+-
+  name: "Cryptocat"
+  description: "Free secure chat software"
+  website: "https://crypto.cat"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "cryptocat.png"
+-
+  name: "Tofino"
+  description: "Experimental web browser from Mozilla"
+  website: "https://github.com/mozilla/tofino"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "tofino.png"
+-
+  name: "Crypter"
+  description: "Simple, convenient and secure encryption client"
+  website: "https://github.com/HR/Crypter"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "crypter.png"
+-
+  name: "DeckHub"
+  description: "TweetDeck style desktop client for GitHub"
+  website: "https://getdeckhub.com"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "deckhub.png"
+-
+  name: "AntSword"
+  description: "Cross platform website management tools"
+  website: "http://uyu.us"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "antsword.png"
+-
+  name: "Spectrum"
+  description: "Useful logging for developers"
+  website: "https://www.devspectrum.com"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "spectrum.png"
+-
+  name: "Ghost"
+  description: "A professional publishing platform"
+  website: "https://ghost.org"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "ghost.png"
+  featuredOnHomepage: true
+-
+  name: "Aipo.com"
+  description: ""
+  website: "http://www.aipo.com"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "aipo.png"
 -
   name: "Friends"
   description: "Peer to peer chat"
