@@ -56,7 +56,7 @@ collections:
     docs: {output: true, permalink: '/:path/'}
 defaults:
     - {scope: {type: docs}, values: {layout: docs}}
-    - {scope: {type: posts}, values: {layout: post, permalink: '/:year/:month/:title'}}
+    - {scope: {type: posts}, values: {layout: post, permalink: '/blog/:year/:month/:day/:title'}}
 exclude:
     - node_modules
     - README.md
