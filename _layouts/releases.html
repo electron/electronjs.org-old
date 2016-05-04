@@ -18,9 +18,16 @@ layout: default
 
 <section class='page-section'>
   <div class='container-narrow'>
-    <h3>Use Electron from the command line</h3>
-    <p>Installing the <code>electron-prebuilt</code> globally with npm allows you to use versions of Electron from your command line. To install: <code>npm install -g electron-prebuilt</code>.</p>
+    <h3>Tip: Use Electron from the command line</h3>
+    <p>Installing the <code>electron-prebuilt</code> module as a development dependency in your project will let you use Electron from the command line at specific versions. More information available on the <a href="https://github.com/electron-userland/electron-prebuilt" target="_blank">module's repository</a>.</p>
 
+    <figure class="highlight highlight-dark text-left my-4">
+      <pre><code>$ npm install --save-dev electron-prebuilt
+<span class="c1"># Launch from inside your project's directory:</span>
+$ electron .</code></pre>
+    </figure>
+
+    <hr>
 
     <div class="releases pt-5">
       {{ content }}
