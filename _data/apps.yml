@@ -367,6 +367,7 @@
   keywords: []
   license: ""
   icon: "flow.png"
+  featuredOnHomepage: true
 -
   name: "Gif Maker"
   description: ""
@@ -689,6 +690,7 @@
   keywords: []
   license: ""
   icon: "ghost.png"
+  featuredOnHomepage: true
 -
   name: "Aipo.com"
   description: ""
