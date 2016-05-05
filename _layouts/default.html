@@ -4,8 +4,8 @@
   {% include head.html %}
 
   <body>
-
     {% include header.html %}
+    {% if page.url == '/' %}{% include banner-1-0.html %}{% endif %}
 
     {{ content }}
 

@@ -22,10 +22,9 @@ $jumbo-color-strong: hsl(190, 88%, 80%);
 $sub-bg-color:     $main-bg-color-shade;
 
 // Mini
-$mini-bg-color:     $jumbo-bg-color;
-$mini-color-subtle: $jumbo-color-subtle;
-$mini-color:        $jumbo-color;
-$mini-color-strong: $jumbo-color-strong;
+$mini-bg-color:     hsl(230, 24%, 36%);
+$mini-color:        hsl(230, 24%, 80%);
+$mini-color-link:   hsl(230, 24%, 100%);
 
 // Accent
 $accent-color: hsl(335, 87%, 47%);

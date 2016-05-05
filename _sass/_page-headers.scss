@@ -67,7 +67,20 @@
 // Minitron -----------------------------
 
 .minitron {
+  padding: $spacer3;
   color: $mini-color;
-  border: 1px solid darken($mini-bg-color, 8%);
   background-color: $mini-bg-color;
+
+  a {
+    color: $mini-color-link;
+  }
+}
+
+.minitron-title {
+  margin: 0;
+  color: inherit;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
