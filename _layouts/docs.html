@@ -10,7 +10,7 @@ layout: default
       <a href='{{ site.baseurl }}/docs/'>Docs</a>
       {% if page.category != 'ignore' %}
       <span class="docs-breadcrumbs-divider">/</span>
-      <a href='{{ site.baseurl }}/{{ page.category | downcase }}/'>{{ page.category }}</a>
+      <a href='{{ site.baseurl }}/docs/{{ page.category | downcase }}/'>{{ page.category }}</a>
       {% endif %}
 
       {% if page.title != 'README' %}
