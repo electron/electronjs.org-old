@@ -1,8 +1,7 @@
 ---
 title: Electron Guides
-permalink: /guides/
+permalink: /docs/guides/
 redirect_from:
-  - /docs/guides/
   - /tutorial/
   - /docs/tutorial/
 layout: docs

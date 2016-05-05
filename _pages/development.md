@@ -1,7 +1,6 @@
 ---
 title: Electron Development
-permalink: /development/
-redirect_from: /docs/development/
+permalink: /docs/development/
 layout: docs
 category: ignore
 ---

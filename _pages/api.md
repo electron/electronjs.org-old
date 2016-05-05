@@ -1,7 +1,6 @@
 ---
 title: Electron API Reference
-permalink: /api/
-redirect_from: /docs/api/
+permalink: /docs/api/
 layout: docs
 category: ignore
 ---
