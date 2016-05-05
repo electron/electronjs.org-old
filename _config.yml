@@ -5,6 +5,7 @@ url: 'http://electron.github.io'
 baseurl: /private-electron.atom.io
 twitter_username: ElectronJS
 github_username: electron
+future: true
 excerpt_separator: '---'
 highlighter: rouge
 markdown: kramdown
