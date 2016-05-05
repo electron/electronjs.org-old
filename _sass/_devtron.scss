@@ -6,4 +6,10 @@
   .jumbotron .container {
     background-image: none;
   }
+
+  pre code {
+    .string {
+      color: #98c379;
+    }
+  }
 }
