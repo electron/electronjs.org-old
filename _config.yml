@@ -55,7 +55,7 @@ available_versions:
     - v0.37.8
 collections:
     pages: {output: true, permalink: '/:path/'}
-    docs: {output: true, permalink: '/:path/'}
+    docs: {output: true, permalink: '/docs/:path/'}
 defaults:
     - {scope: {type: docs}, values: {layout: docs}}
     - {scope: {type: posts}, values: {layout: post, permalink: '/blog/:year/:month/:day/:title'}}
