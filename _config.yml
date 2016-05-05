@@ -1,6 +1,6 @@
 title: Electron
 email: electron@github.com
-description: 'Build cross platform desktop apps with web technologies'
+description: 'Build cross platform desktop apps with JavaScript, HTML, and CSS.'
 url: 'http://electron.github.io'
 baseurl: /private-electron.atom.io
 twitter_username: ElectronJS
