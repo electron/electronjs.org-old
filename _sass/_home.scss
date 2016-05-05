@@ -1,4 +1,13 @@
 
+// Jumbotron ------------------------------
+
+.jumbotron.jumbotron-home {
+  // Reduce padding because the hero has some extra padding for the animation.
+  padding: $spacer2 $spacer3 $spacer6 $spacer3;
+  @include breakpoint(md) { padding: $spacer4 $spacer3 $spacer8 $spacer3; }
+  @include breakpoint(xl) { padding: $spacer6 0 $spacer6 * 2 0; }
+}
+
 // Headers ------------------------------
 
 // Electron version

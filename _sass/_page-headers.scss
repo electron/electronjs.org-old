@@ -5,9 +5,6 @@
   color: $jumbo-color;
   background-color: $jumbo-bg-color;
   -webkit-font-smoothing: antialiased;
-  padding: $spacer2 $spacer3 $spacer6 $spacer3;
-  @include breakpoint(md) { padding: $spacer4 $spacer3 $spacer8 $spacer3; }
-  @include breakpoint(xl) { padding: $spacer6 0 $spacer6 * 2 0; }
 }
 
 // remove shadow
