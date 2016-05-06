@@ -255,7 +255,7 @@ Returns:
 Emitted when failed to verify the `certificate` for `url`.
 
 The usage is the same with [the `certificate-error` event of
-`app`](app.md#event-certificate-error).
+`app`](http://electron.atom.io/docs/api/app#event-certificate-error).
 
 ### Event: 'select-client-certificate'
 
@@ -271,7 +271,7 @@ Returns:
 Emitted when a client certificate is requested.
 
 The usage is the same with [the `select-client-certificate` event of
-`app`](app.md#event-select-client-certificate).
+`app`](http://electron.atom.io/docs/api/app#event-select-client-certificate).
 
 ### Event: 'login'
 
