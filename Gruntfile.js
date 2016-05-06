@@ -22,10 +22,10 @@ module.exports = function (grunt) {
           initialPort: 4000,
           parseHTMLComments: false,
           parseScriptTags: false,
-          discoverResources: function (buffer, queueItem) {
-            var $ = cheerio.load(buffer.toString("utf8"))
-            return $("a[href]").map(function () {
-                return $(this).attr("href")
+          discoverResources: function (buffer) {
+            var $ = cheerio.load(buffer.toString('utf8'))
+            return $('a[href]').map(function () {
+              return $(this).attr('href')
             }).get()
           }
         }
