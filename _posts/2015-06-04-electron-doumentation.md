@@ -74,7 +74,7 @@ collections:
     docs: {output: true, permalink: '/docs/:path/'}
 ```
 
-The file `latest.md` in our site root is empty except for this front matter which allows users to see the index (aka `README`) of the latest version of docs by visiting this URL, [electron.atom.io/docs/latest](electron.atom.io/docs/latest), rather than using the latest version number specifically (though you can do that, too).
+The file `latest.md` in our site root is empty except for this front matter which allows users to see the index (aka `README`) of the latest version of docs by visiting this URL, [electron.atom.io/docs/latest](http://electron.atom.io/docs/latest), rather than using the latest version number specifically (though you can do that, too).
 
 ```yaml
 ---
