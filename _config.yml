@@ -17,7 +17,7 @@ gems:
     - jekyll-sitemap
     - jemoji
 latest_version: v0.37.8
-current_node: 5.1.1
+current_node: 5.10.0
 current_chrome: 49.0.2623.75
 current_v8: 4.9.385.28
 sass:
