@@ -6,6 +6,7 @@ redirect_from:
   - /docs/tutorial/
 layout: docs
 category: ignore
+breadcrumb: Guides
 ---
 
 <h2 class="docs-heading pb-3 mb-3"><span class="mega-octicon octicon-book pr-3"></span>Guides</a></h2>

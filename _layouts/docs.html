@@ -15,7 +15,11 @@ layout: default
 
       {% if page.title != 'README' %}
       <span class="docs-breadcrumbs-divider">/</span>
+      {% if page.breadcrumb %}
+      {{ page.breadcrumb }}
+      {% else %}
       {{ page.title }}
+      {% endif %}
       <!-- <a class="ml-4" href='{{ page.source_url }}'><span class="octicon octicon-pencil"></span> Edit source</a> -->
       {% endif %}
     </h4>
