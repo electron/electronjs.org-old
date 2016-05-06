@@ -1,8 +1,9 @@
 ---
-title: All of the Latest Documentation
+title: All of the Documentation
 permalink: /docs/all/
 layout: docs
 category: ignore
+breadcrumb: All
 ---
 
 {% for doc in site.docs %}

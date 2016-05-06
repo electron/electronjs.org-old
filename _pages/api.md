@@ -3,6 +3,7 @@ title: Electron API Reference
 permalink: /docs/api/
 layout: docs
 category: ignore
+breadcrumb: API
 ---
 
 <table class="table table-ruled table-full-width table-with-spacious-first-column">

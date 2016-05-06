@@ -3,6 +3,7 @@ title: Electron Development
 permalink: /docs/development/
 layout: docs
 category: ignore
+breadcrumb: Development
 ---
 
 <h2 class="docs-heading pb-3 mb-3"><span class="mega-octicon octicon-tools pr-3"></span>Developing Electron</a></h2>
