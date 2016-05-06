@@ -84,7 +84,7 @@ The `globalShortcut` module has the following methods:
 
 ### `globalShortcut.register(accelerator, callback)`
 
-* `accelerator` [Accelerator](http://electron.atom.io/docs/v0.37.8/api/accelerator)
+* `accelerator` [Accelerator](http://electron.atom.io/docs/api/accelerator)
 * `callback` Function
 
 Registers a global shortcut of `accelerator`. The `callback` is called when
@@ -96,7 +96,7 @@ want applications to fight for global shortcuts.
 
 ### `globalShortcut.isRegistered(accelerator)`
 
-* `accelerator` [Accelerator](http://electron.atom.io/docs/v0.37.8/api/accelerator)
+* `accelerator` [Accelerator](http://electron.atom.io/docs/api/accelerator)
 
 Returns whether this application has registered `accelerator`.
 
@@ -106,7 +106,7 @@ don't want applications to fight for global shortcuts.
 
 ### `globalShortcut.unregister(accelerator)`
 
-* `accelerator` [Accelerator](http://electron.atom.io/docs/v0.37.8/api/accelerator)
+* `accelerator` [Accelerator](http://electron.atom.io/docs/api/accelerator)
 
 Unregisters the global shortcut of `accelerator`.
 

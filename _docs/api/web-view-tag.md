@@ -474,12 +474,12 @@ Inserts `text` to the focused element.
 
 Starts a request to find all matches for the `text` in the web page and returns an `Integer`
 representing the request id used for the request. The result of the request can be
-obtained by subscribing to [`found-in-page`](http://electron.atom.io/docs/v0.37.8/api/web-view-tag#event-found-in-page) event.
+obtained by subscribing to [`found-in-page`](http://electron.atom.io/docs/api/web-view-tag#event-found-in-page) event.
 
 ### `<webview>.stopFindInPage(action)`
 
 * `action` String - Specifies the action to take place when ending
-  [`<webview>.findInPage`](http://electron.atom.io/docs/v0.37.8/api/web-view-tag#webviewtagfindinpage) request.
+  [`<webview>.findInPage`](http://electron.atom.io/docs/api/web-view-tag#webviewtagfindinpage) request.
   * `clearSelection` - Translate the selection into a normal selection.
   * `keepSelection` - Clear the selection.
   * `activateSelection` - Focus and click the selection node.
@@ -503,7 +503,7 @@ Send an asynchronous message to renderer process via `channel`, you can also
 send arbitrary arguments. The renderer process can handle the message by
 listening to the `channel` event with the `ipcRenderer` module.
 
-See [webContents.send](http://electron.atom.io/docs/v0.37.8/api/web-contents#webcontentssendchannel-args) for
+See [webContents.send](http://electron.atom.io/docs/api/web-contents#webcontentssendchannel-args) for
 examples.
 
 ### `<webview>.sendInputEvent(event)`
@@ -512,12 +512,12 @@ examples.
 
 Sends an input `event` to the page.
 
-See [webContents.sendInputEvent](http://electron.atom.io/docs/v0.37.8/api/web-contents##webcontentssendinputeventevent)
+See [webContents.sendInputEvent](http://electron.atom.io/docs/api/web-contents##webcontentssendinputeventevent)
 for detailed description of `event` object.
 
 ### `<webview>.getWebContents()`
 
-Returns the [WebContents](http://electron.atom.io/docs/v0.37.8/api/web-contents) associated with this `webview`.
+Returns the [WebContents](http://electron.atom.io/docs/api/web-contents) associated with this `webview`.
 
 ## DOM events
 
@@ -655,7 +655,7 @@ Returns:
   * `selectionArea` Object (optional) - Coordinates of first match region.
 
 Fired when a result is available for
-[`webview.findInPage`](http://electron.atom.io/docs/v0.37.8/api/web-view-tag#webviewtagfindinpage) request.
+[`webview.findInPage`](http://electron.atom.io/docs/api/web-view-tag#webviewtagfindinpage) request.
 
 ```javascript
 webview.addEventListener('found-in-page', function(e) {

@@ -45,8 +45,8 @@ excerpt: "Manage browser sessions, cookies, cache, proxy settings, etc."
 The `session` module can be used to create new `Session` objects.
 
 You can also access the `session` of existing pages by using the `session`
-property of [`webContents`](http://electron.atom.io/docs/v0.37.8/api/web-contents) which is a property of
-[`BrowserWindow`](http://electron.atom.io/docs/v0.37.8/api/browser-window).
+property of [`webContents`](http://electron.atom.io/docs/api/web-contents) which is a property of
+[`BrowserWindow`](http://electron.atom.io/docs/api/browser-window).
 
 ```javascript
 const BrowserWindow = require('electron').BrowserWindow;
@@ -97,8 +97,8 @@ The following events are available on instances of `Session`:
 #### Event: 'will-download'
 
 * `event` Event
-* `item` [DownloadItem](http://electron.atom.io/docs/v0.37.8/api/download-item)
-* `webContents` [WebContents](http://electron.atom.io/docs/v0.37.8/api/web-contents)
+* `item` [DownloadItem](http://electron.atom.io/docs/api/download-item)
+* `webContents` [WebContents](http://electron.atom.io/docs/api/web-contents)
 
 Emitted when Electron is about to download `item` in `webContents`.
 
@@ -336,7 +336,7 @@ myWindow.webContents.session.setCertificateVerifyProc(function(hostname, cert, c
 #### `ses.setPermissionRequestHandler(handler)`
 
 * `handler` Function
-  * `webContents` Object - [WebContents](http://electron.atom.io/docs/v0.37.8/api/web-contents) requesting the permission.
+  * `webContents` Object - [WebContents](http://electron.atom.io/docs/api/web-contents) requesting the permission.
   * `permission` String - Enum of 'media', 'geolocation', 'notifications', 'midiSysex',
     'pointerLock', 'fullscreen', 'openExternal'.
   * `callback` Function - Allow or deny the permission.

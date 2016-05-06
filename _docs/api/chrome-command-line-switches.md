@@ -192,7 +192,7 @@ logging level for all code in the source files under a `foo/bar` directory.
 
 This switch only works when `--enable-logging` is also passed.
 
-[app]: http://electron.atom.io/docs/v0.37.8/api/app
-[append-switch]: http://electron.atom.io/docs/v0.37.8/api/app#appcommandlineappendswitchswitch-value
-[ready]: http://electron.atom.io/docs/v0.37.8/api/app#event-ready
+[app]: http://electron.atom.io/docs/api/app
+[append-switch]: http://electron.atom.io/docs/api/app#appcommandlineappendswitchswitch-value
+[ready]: http://electron.atom.io/docs/api/app#event-ready
 [play-silent-audio]: https://github.com/atom/atom/pull/9485/files

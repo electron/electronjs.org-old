@@ -93,11 +93,11 @@ Writes `markup` to the clipboard.
 
 * `type` String (optional)
 
-Returns the content in the clipboard as a [NativeImage](http://electron.atom.io/docs/v0.37.8/api/native-image).
+Returns the content in the clipboard as a [NativeImage](http://electron.atom.io/docs/api/native-image).
 
 ### `clipboard.writeImage(image[, type])`
 
-* `image` [NativeImage](http://electron.atom.io/docs/v0.37.8/api/native-image)
+* `image` [NativeImage](http://electron.atom.io/docs/api/native-image)
 * `type` String (optional)
 
 Writes `image` to the clipboard.
@@ -150,7 +150,7 @@ Reads `data` from the clipboard.
 * `data` Object
   * `text` String
   * `html` String
-  * `image` [NativeImage](http://electron.atom.io/docs/v0.37.8/api/native-image)
+  * `image` [NativeImage](http://electron.atom.io/docs/api/native-image)
 * `type` String (optional)
 
 ```javascript

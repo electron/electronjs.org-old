@@ -45,12 +45,12 @@ excerpt: "Open a window without toolbars, borders, or other graphical &quot;chro
 A frameless window is a window that has no
 [chrome](https://developer.mozilla.org/en-US/docs/Glossary/Chrome), the parts of
 the window, like toolbars, that are not a part of the web page. These are
-options on the [`BrowserWindow`](http://electron.atom.io/docs/v0.37.8/api/browser-window) class.
+options on the [`BrowserWindow`](http://electron.atom.io/docs/api/browser-window) class.
 
 ## Create a frameless window
 
 To create a frameless window, you need to set `frame` to `false` in
-[BrowserWindow](http://electron.atom.io/docs/v0.37.8/api/browser-window)'s `options`:
+[BrowserWindow](http://electron.atom.io/docs/api/browser-window)'s `options`:
 
 
 ```javascript

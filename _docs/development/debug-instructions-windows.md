@@ -50,7 +50,7 @@ with breakpoints inside Electron's source code.
 
 * **A debug build of Electron**: The easiest way is usually building it
   yourself, using the tools and prerequisites listed in the
-  [build instructions for Windows](http://electron.atom.io/docs/v0.37.8/development/build-instructions-osx). While you can
+  [build instructions for Windows](http://electron.atom.io/docs/development/build-instructions-osx). While you can
   easily attach to and debug Electron as you can download it directly, you will
   find that it is heavily optimized, making debugging substantially more
   difficult: The debugger will not be able to show you the content of all
@@ -59,7 +59,7 @@ with breakpoints inside Electron's source code.
 
 * **Visual Studio with C++ Tools**: The free community editions of Visual
   Studio 2013 and Visual Studio 2015 both work. Once installed,
-  [configure Visual Studio to use GitHub's Electron Symbol server](http://electron.atom.io/docs/v0.37.8/development/setting-up-symbol-server).
+  [configure Visual Studio to use GitHub's Electron Symbol server](http://electron.atom.io/docs/development/setting-up-symbol-server).
   It will enable Visual Studio to gain a better understanding of what happens
   inside Electron, making it easier to present variables in a human-readable
   format.

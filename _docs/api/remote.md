@@ -62,7 +62,7 @@ win.loadURL('https://github.com');
 ```
 
 **Note:** for the reverse (access the renderer process from the main process),
-you can use [webContents.executeJavascript](http://electron.atom.io/docs/v0.37.8/api/web-contents#webcontentsexecutejavascriptcode-usergesture).
+you can use [webContents.executeJavascript](http://electron.atom.io/docs/api/web-contents#webcontentsexecutejavascriptcode-usergesture).
 
 ## Remote Objects
 
@@ -183,12 +183,12 @@ Returns the object returned by `require(module)` in the main process.
 
 ### `remote.getCurrentWindow()`
 
-Returns the [`BrowserWindow`](http://electron.atom.io/docs/v0.37.8/api/browser-window) object to which this web page
+Returns the [`BrowserWindow`](http://electron.atom.io/docs/api/browser-window) object to which this web page
 belongs.
 
 ### `remote.getCurrentWebContents()`
 
-Returns the [`WebContents`](http://electron.atom.io/docs/v0.37.8/api/web-contents) object of this web page.
+Returns the [`WebContents`](http://electron.atom.io/docs/api/web-contents) object of this web page.
 
 ### `remote.getGlobal(name)`
 

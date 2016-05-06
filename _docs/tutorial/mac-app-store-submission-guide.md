@@ -66,7 +66,7 @@ Apple. You can follow these [existing guides][nwjs-guide] on web.
 ### Sign Your App
 
 After getting the certificate from Apple, you can package your app by following
-[Application Distribution](http://electron.atom.io/docs/v0.37.8/tutorial/application-distribution), and then proceed to
+[Application Distribution](http://electron.atom.io/docs/tutorial/application-distribution), and then proceed to
 signing your app. This step is basically the same with other programs, but the
 key is to sign every dependency of Electron one by one.
 
