@@ -1,8 +1,8 @@
 ---
 version: v0.37.8
-category: FAQ
-title: 'Electron FAQ'
-permalink: /faq/
+category: ignore
+title: FAQ
+permalink: /docs/faq/
 redirect_from:
     - /docs/v0.24.0/faq/electron-faq/
     - /docs/v0.25.0/faq/electron-faq/
