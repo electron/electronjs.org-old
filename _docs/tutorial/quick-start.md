@@ -83,9 +83,9 @@ process of the web page must communicate with the main process to request that
 the main process perform those operations.
 
 In Electron, we have several ways to communicate between the main process and
-renderer processes. Like [`ipcRenderer`](http://electron.atom.io/docs/v0.37.8/api/ipc-renderer) and
-[`ipcMain`](http://electron.atom.io/docs/v0.37.8/api/ipc-main) modules for sending messages, and the
-[remote](http://electron.atom.io/docs/v0.37.8/api/remote) module for RPC style communication. There is also
+renderer processes. Like [`ipcRenderer`](http://electron.atom.io/docs/api/ipc-renderer) and
+[`ipcMain`](http://electron.atom.io/docs/api/ipc-main) modules for sending messages, and the
+[remote](http://electron.atom.io/docs/api/remote) module for RPC style communication. There is also
 an FAQ entry on [how to share data between web pages][share-data].
 
 ## Write your First Electron App
@@ -228,7 +228,7 @@ it from [here](https://github.com/electron/electron/releases).
 ### Run as a distribution
 
 After you're done writing your app, you can create a distribution by
-following the [Application Distribution](http://electron.atom.io/docs/v0.37.8/tutorial/application-distribution) guide
+following the [Application Distribution](http://electron.atom.io/docs/tutorial/application-distribution) guide
 and then executing the packaged app.
 
 ### Try this Example
@@ -247,4 +247,4 @@ $ cd electron-quick-start
 $ npm install && npm start
 ```
 
-[share-data]: http://electron.atom.io/docs/v0.37.8/faq/electron-faq#how-to-share-data-between-web-pages
+[share-data]: http://electron.atom.io/docs/faq/electron-faq#how-to-share-data-between-web-pages

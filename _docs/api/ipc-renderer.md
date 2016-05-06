@@ -48,7 +48,7 @@ methods so you can send synchronous and asynchronous messages from the render
 process (web page) to the main process.  You can also receive replies from the
 main process.
 
-See [ipcMain](http://electron.atom.io/docs/v0.37.8/api/ipc-main) for code examples.
+See [ipcMain](http://electron.atom.io/docs/api/ipc-main) for code examples.
 
 ## Listening for Messages
 

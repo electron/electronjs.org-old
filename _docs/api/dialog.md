@@ -133,7 +133,7 @@ will be passed via `callback(filename)`
   * `title` String - Title of the message box, some platforms will not show it.
   * `message` String - Content of the message box.
   * `detail` String - Extra information of the message.
-  * `icon` [NativeImage](http://electron.atom.io/docs/v0.37.8/api/native-image)
+  * `icon` [NativeImage](http://electron.atom.io/docs/api/native-image)
   * `cancelId` Integer - The value will be returned when user cancels the dialog
     instead of clicking the buttons of the dialog. By default it is the index
     of the buttons that have "cancel" or "no" as label, or 0 if there is no such

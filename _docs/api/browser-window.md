@@ -59,7 +59,7 @@ win.show();
 ```
 
 You can also create a window without chrome by using
-[Frameless Window](http://electron.atom.io/docs/v0.37.8/api/frameless-window) API.
+[Frameless Window](http://electron.atom.io/docs/api/frameless-window) API.
 
 ## Class: BrowserWindow
 
@@ -105,12 +105,12 @@ It creates a new `BrowserWindow` with native properties as set by the `options`.
     `false`.
   * `kiosk` Boolean - The kiosk mode. Default is `false`.
   * `title` String - Default window title. Default is `"Electron"`.
-  * `icon` [NativeImage](http://electron.atom.io/docs/v0.37.8/api/native-image) - The window icon, when omitted on
+  * `icon` [NativeImage](http://electron.atom.io/docs/api/native-image) - The window icon, when omitted on
     Windows the executable's icon would be used as window icon.
   * `show` Boolean - Whether window should be shown when created. Default is
     `true`.
   * `frame` Boolean - Specify `false` to create a
-    [Frameless Window](http://electron.atom.io/docs/v0.37.8/api/frameless-window). Default is `true`.
+    [Frameless Window](http://electron.atom.io/docs/api/frameless-window). Default is `true`.
   * `acceptFirstMouse` Boolean - Whether the web view accepts a single
     mouse-down event that simultaneously activates the window. Default is
     `false`.
@@ -127,7 +127,7 @@ It creates a new `BrowserWindow` with native properties as set by the `options`.
     implemented on OS X. Default is `true`.
   * `darkTheme` Boolean - Forces using dark theme for the window, only works on
     some GTK+3 desktop environments. Default is `false`.
-  * `transparent` Boolean - Makes the window [transparent](http://electron.atom.io/docs/v0.37.8/api/frameless-window).
+  * `transparent` Boolean - Makes the window [transparent](http://electron.atom.io/docs/api/frameless-window).
     Default is `false`.
   * `type` String - The type of window, default is normal window. See more about
     this below.
@@ -170,8 +170,8 @@ The `webPreferences` option is an object that can have following properties:
   be the absolute file path to the script.
   When node integration is turned off, the preload script can reintroduce
   Node global symbols back to the global scope. See example
-  [here](http://electron.atom.io/docs/v0.37.8/api/process#event-loaded).
-* `session` [Session](http://electron.atom.io/docs/v0.37.8/api/session#class-session) - Sets the session used by the
+  [here](http://electron.atom.io/docs/api/process#event-loaded).
+* `session` [Session](http://electron.atom.io/docs/api/session#class-session) - Sets the session used by the
   page. Instead of passing the Session object directly, you can also choose to
   use the `partition` option instead, which accepts a partition string. When
   both `session` and `partition` are provided, `session` would be preferred.
@@ -394,7 +394,7 @@ Returns the window that is focused in this application, otherwise returns `null`
 
 ### `BrowserWindow.fromWebContents(webContents)`
 
-* `webContents` [WebContents](http://electron.atom.io/docs/v0.37.8/api/web-contents)
+* `webContents` [WebContents](http://electron.atom.io/docs/api/web-contents)
 
 Find a window according to the `webContents` it owns.
 
@@ -433,7 +433,7 @@ var win = new BrowserWindow({ width: 800, height: 600 });
 The `WebContents` object this window owns, all web page related events and
 operations will be done via it.
 
-See the [`webContents` documentation](http://electron.atom.io/docs/v0.37.8/api/web-contents) for its methods and
+See the [`webContents` documentation](http://electron.atom.io/docs/api/web-contents) for its methods and
 events.
 
 ### `win.id`
@@ -816,7 +816,7 @@ Whether the window's document has been edited.
 
 Captures a snapshot of the page within `rect`. Upon completion `callback` will
 be called with `callback(image)`. The `image` is an instance of
-[NativeImage](http://electron.atom.io/docs/v0.37.8/api/native-image) that stores data of the snapshot. Omitting
+[NativeImage](http://electron.atom.io/docs/api/native-image) that stores data of the snapshot. Omitting
 `rect` will capture the whole visible page.
 
 ### `win.print([options])`
@@ -857,7 +857,7 @@ it will assume `app.getName().desktop`.
 
 ### `win.setOverlayIcon(overlay, description)` _Windows 7+_
 
-* `overlay` [NativeImage](http://electron.atom.io/docs/v0.37.8/api/native-image) - the icon to display on the bottom
+* `overlay` [NativeImage](http://electron.atom.io/docs/api/native-image) - the icon to display on the bottom
 right corner of the taskbar icon. If this parameter is `null`, the overlay is
 cleared
 * `description` String - a description that will be provided to Accessibility
@@ -894,7 +894,7 @@ array to clean the buttons.
 The `buttons` is an array of `Button` objects:
 
 * `Button` Object
-  * `icon` [NativeImage](http://electron.atom.io/docs/v0.37.8/api/native-image) - The icon showing in thumbnail
+  * `icon` [NativeImage](http://electron.atom.io/docs/api/native-image) - The icon showing in thumbnail
     toolbar.
   * `click` Function
   * `tooltip` String (optional) - The text of the button's tooltip.

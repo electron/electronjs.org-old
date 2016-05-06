@@ -134,4 +134,4 @@ Returns the `webContents` that sent the message, you can call
 `event.sender.send` to reply to the asynchronous message, see
 [webContents.send][web-contents-send] for more information.
 
-[web-contents-send]: http://electron.atom.io/docs/v0.37.8/api/web-contents#webcontentssendchannel-arg1-arg2-
+[web-contents-send]: http://electron.atom.io/docs/api/web-contents#webcontentssendchannel-arg1-arg2-

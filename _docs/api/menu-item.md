@@ -42,7 +42,7 @@ excerpt: "Add items to native application menus and context menus."
 
 > Add items to native application menus and context menus.
 
-See [`menu`](http://electron.atom.io/docs/v0.37.8/api/menu) for examples.
+See [`menu`](http://electron.atom.io/docs/api/menu) for examples.
 
 ## Class: MenuItem
 
@@ -59,8 +59,8 @@ Create a new `MenuItem` with the following method:
      `radio`
   * `label` String
   * `sublabel` String
-  * `accelerator` [Accelerator](http://electron.atom.io/docs/v0.37.8/api/accelerator)
-  * `icon` [NativeImage](http://electron.atom.io/docs/v0.37.8/api/native-image)
+  * `accelerator` [Accelerator](http://electron.atom.io/docs/api/accelerator)
+  * `icon` [NativeImage](http://electron.atom.io/docs/api/native-image)
   * `enabled` Boolean - If false, the menu item will be greyed out and
     unclickable.
   * `visible` Boolean - If false, the menu item will be entirely hidden.

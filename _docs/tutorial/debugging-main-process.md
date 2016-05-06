@@ -113,4 +113,4 @@ entry line.
 
 [node-inspector]: https://github.com/node-inspector/node-inspector
 [node-gyp-required-tools]: https://github.com/nodejs/node-gyp#installation
-[how-to-install-native-modules]: http://electron.atom.io/docs/v0.37.8/tutorial/using-native-node-modules#how-to-install-native-modules
+[how-to-install-native-modules]: http://electron.atom.io/docs/tutorial/using-native-node-modules#how-to-install-native-modules
