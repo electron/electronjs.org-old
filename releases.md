@@ -10,8 +10,4 @@ layout: releases
 
 ---
 
-{{ release }}
-
----
-
 {% endfor releases %}
