@@ -1,8 +1,9 @@
 ---
 version: v0.37.8
 category: ignore
-title: FAQ
+title: 'Electron FAQ'
 permalink: /docs/faq/
+breadcrumb: FAQ
 redirect_from:
     - /docs/v0.24.0/faq/electron-faq/
     - /docs/v0.25.0/faq/electron-faq/
