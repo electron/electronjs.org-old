@@ -1,6 +1,7 @@
-
-
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   background-color: $main-bg-color;
   font-size: 14px;
   @include breakpoint(sm) {

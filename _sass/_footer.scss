@@ -1,6 +1,6 @@
 
 .footer {
-  margin-top: 0;
+  margin-top: auto; // makes footer sticky (with flexbox)
   border-color: darken($main-bg-color-shade, 8%);
   background: $main-bg-color-shade;
 }
