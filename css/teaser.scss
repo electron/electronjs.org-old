@@ -20,6 +20,7 @@ body {
 
 .teaser {
   flex: 1;
+  max-width: 900px;
   backface-visibility: hidden;
   animation: teaser-animation-intro 1s forwards;
 }
