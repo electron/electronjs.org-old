@@ -94,3 +94,17 @@ $teaser-delay-diff: .1s;
    8% { opacity: 1; }
    50% { opacity: .1; }
 }
+
+
+// Hack for Firefox --------------------------
+// Adjust initial position
+// It might be related to: https://bugzilla.mozilla.org/show_bug.cgi?id=923193
+
+@-moz-document url-prefix() {
+  .teaser-path.short-1 { transform: translate(26px, -78px) rotate(-134deg); }
+  .teaser-path.short-2 { transform: translate(40px, -42px) rotate(106deg); }
+  .teaser-path.short-3 { transform: translate(40px, -32px) rotate(-17deg); }
+  .teaser-path.long-1  { transform: translate(-124px, 4px) rotate(-107deg); }
+  .teaser-path.long-2  { transform: translate(-92px, 22px) rotate(133deg); }
+  .teaser-path.long-3  { transform: translate(-56px, 8px) rotate(13deg); }
+}
