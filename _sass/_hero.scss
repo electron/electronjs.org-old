@@ -60,7 +60,7 @@ $hero-icon-all-delay: 15 * $hero-icon-delay-diff + $hero-icon-delay;
 }
 
 @keyframes hero-icon-animation-t {
-  100% { transform: translate(0, 0) rotate(0deg) scale(1); }
+  100% { transform: translate(0, 0) rotate(0deg); }
 }
 @keyframes hero-icon-animation-o {
   100% { opacity: 1; }
@@ -104,4 +104,18 @@ $hero-app-opacity: 0.1;
       animation: hero-app-animate-right $hero-app-duration $_delay both;
     }
   }
+}
+
+
+// Hack for Firefox --------------------------
+// Adjust initial position
+// It might be related to: https://bugzilla.mozilla.org/show_bug.cgi?id=923193
+
+@-moz-document url-prefix() {
+  .hero-icon.short-1 { transform: translate(26px, -78px) rotate(-134deg); }
+  .hero-icon.short-2 { transform: translate(40px, -42px) rotate(106deg); }
+  .hero-icon.short-3 { transform: translate(40px, -32px) rotate(-17deg); }
+  .hero-icon.long-1  { transform: translate(-124px, 4px) rotate(-107deg); }
+  .hero-icon.long-2  { transform: translate(-92px, 22px) rotate(133deg); }
+  .hero-icon.long-3  { transform: translate(-56px, 8px) rotate(13deg); }
 }
