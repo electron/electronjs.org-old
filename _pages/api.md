@@ -6,6 +6,8 @@ category: ignore
 breadcrumb: API
 ---
 
+<h2 class="docs-heading pb-3 mb-3"><span class="mega-octicon octicon-gear pr-3"></span>API Reference</h2>
+
 <table class="table table-ruled table-full-width table-with-spacious-first-column">
 
 {% for doc in site.docs %}

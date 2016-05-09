@@ -31,6 +31,12 @@
 
 .docs-heading {
   border-bottom: 1px solid #eee;
+
+  // thin titles to match the main /docs index
+  .strong-headers & {
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+  }
 }
 
 .docs-list {
