@@ -72,7 +72,6 @@ layout: default
               {% if doc.category == 'API' and site.data.processes[doc.title] == 'Main Process' %}
               <li>
                 <a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a>
-                <!-- <span class="excerpt">{{ doc.content | strip_html | truncatewords: 50 }}</span> -->
               </li>
               {% endif %}
             {% endfor %}
@@ -83,19 +82,16 @@ layout: default
               {% if doc.category == 'API' and site.data.processes[doc.title] == 'Renderer Process' %}
               <li>
                 <a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a>
-                <!-- <span class="excerpt">{{ doc.content | strip_html | truncatewords: 50 }}</span> -->
               </li>
               {% endif %}
             {% endfor %}
             </ul>
-            <h3>Both Process</h3>
             <h3>Both Processes</h3>
             {% for doc in site.docs %}
             <ul class="docs-list">
               {% if doc.category == 'API' and site.data.processes[doc.title] == 'Both Processes' %}
               <li>
                 <a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a>
-                <!-- <span class="excerpt">{{ doc.content | strip_html | truncatewords: 50 }}</span> -->
               </li>
               {% endif %}
             {% endfor %}
