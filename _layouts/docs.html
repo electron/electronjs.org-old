@@ -26,6 +26,14 @@ layout: default
   </div>
 </div>
 
+{% if page.category == 'API' %}
+<div class="docstron py-2">
+  <div class="container-narrow">
+    <p><b>{{ site.data.processes[page.title] }}</b></p>
+  </div>
+</div>
+{% endif %}
+
 <section class='page-section docs strong-headers'>
   <div class='container-narrow'>
 
