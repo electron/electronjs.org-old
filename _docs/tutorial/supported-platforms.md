@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/tutorial/supported-platforms/
     - /docs/v0.37.4/tutorial/supported-platforms/
     - /docs/v0.37.5/tutorial/supported-platforms/
+    - /docs/v0.37.6/tutorial/supported-platforms/
     - /docs/v0.37.7/tutorial/supported-platforms/
     - /docs/v0.37.8/tutorial/supported-platforms/
     - /docs/latest/tutorial/supported-platforms/

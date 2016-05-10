@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/tutorial/application-distribution/
     - /docs/v0.37.4/tutorial/application-distribution/
     - /docs/v0.37.5/tutorial/application-distribution/
+    - /docs/v0.37.6/tutorial/application-distribution/
     - /docs/v0.37.7/tutorial/application-distribution/
     - /docs/v0.37.8/tutorial/application-distribution/
     - /docs/latest/tutorial/application-distribution/
@@ -69,7 +70,7 @@ your distribution to deliver to final users.
 ## Packaging Your App into a File
 
 Apart from shipping your app by copying all of its source files, you can also
-package your app into an [asar](https://github.com/electron/asar) archive to avoid
+package your app into an [asar](https://github.com/atom/asar) archive to avoid
 exposing your app's source code to users.
 
 To use an `asar` archive to replace the `app` folder, you need to rename the

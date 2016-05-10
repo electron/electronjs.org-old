@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/api/content-tracing/
     - /docs/v0.37.4/api/content-tracing/
     - /docs/v0.37.5/api/content-tracing/
+    - /docs/v0.37.6/api/content-tracing/
     - /docs/v0.37.7/api/content-tracing/
     - /docs/v0.37.8/api/content-tracing/
     - /docs/latest/api/content-tracing/

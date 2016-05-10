@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/tutorial/application-packaging/
     - /docs/v0.37.4/tutorial/application-packaging/
     - /docs/v0.37.5/tutorial/application-packaging/
+    - /docs/v0.37.6/tutorial/application-packaging/
     - /docs/v0.37.7/tutorial/application-packaging/
     - /docs/v0.37.8/tutorial/application-packaging/
     - /docs/latest/tutorial/application-packaging/
@@ -220,4 +221,4 @@ After running the command, apart from the `app.asar`, there is also an
 `app.asar.unpacked` folder generated which contains the unpacked files, you
 should copy it together with `app.asar` when shipping it to users.
 
-[asar]: https://github.com/electron/asar
+[asar]: https://github.com/atom/asar

@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/api/accelerator/
     - /docs/v0.37.4/api/accelerator/
     - /docs/v0.37.5/api/accelerator/
+    - /docs/v0.37.6/api/accelerator/
     - /docs/v0.37.7/api/accelerator/
     - /docs/v0.37.8/api/accelerator/
     - /docs/latest/api/accelerator/

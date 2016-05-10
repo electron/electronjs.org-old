@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/development/source-code-directory-structure/
     - /docs/v0.37.4/development/source-code-directory-structure/
     - /docs/v0.37.5/development/source-code-directory-structure/
+    - /docs/v0.37.6/development/source-code-directory-structure/
     - /docs/v0.37.7/development/source-code-directory-structure/
     - /docs/v0.37.8/development/source-code-directory-structure/
     - /docs/latest/development/source-code-directory-structure/

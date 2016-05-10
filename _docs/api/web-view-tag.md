@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/api/web-view-tag/
     - /docs/v0.37.4/api/web-view-tag/
     - /docs/v0.37.5/api/web-view-tag/
+    - /docs/v0.37.6/api/web-view-tag/
     - /docs/v0.37.7/api/web-view-tag/
     - /docs/v0.37.8/api/web-view-tag/
     - /docs/latest/api/web-view-tag/

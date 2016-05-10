@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/development/debug-instructions-windows/
     - /docs/v0.37.4/development/debug-instructions-windows/
     - /docs/v0.37.5/development/debug-instructions-windows/
+    - /docs/v0.37.6/development/debug-instructions-windows/
     - /docs/v0.37.7/development/debug-instructions-windows/
     - /docs/v0.37.8/development/debug-instructions-windows/
     - /docs/latest/development/debug-instructions-windows/

@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/tutorial/desktop-environment-integration/
     - /docs/v0.37.4/tutorial/desktop-environment-integration/
     - /docs/v0.37.5/tutorial/desktop-environment-integration/
+    - /docs/v0.37.6/tutorial/desktop-environment-integration/
     - /docs/v0.37.7/tutorial/desktop-environment-integration/
     - /docs/v0.37.8/tutorial/desktop-environment-integration/
     - /docs/latest/tutorial/desktop-environment-integration/

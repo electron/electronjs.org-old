@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/api/clipboard/
     - /docs/v0.37.4/api/clipboard/
     - /docs/v0.37.5/api/clipboard/
+    - /docs/v0.37.6/api/clipboard/
     - /docs/v0.37.7/api/clipboard/
     - /docs/v0.37.8/api/clipboard/
     - /docs/latest/api/clipboard/

@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/api/chrome-command-line-switches/
     - /docs/v0.37.4/api/chrome-command-line-switches/
     - /docs/v0.37.5/api/chrome-command-line-switches/
+    - /docs/v0.37.6/api/chrome-command-line-switches/
     - /docs/v0.37.7/api/chrome-command-line-switches/
     - /docs/v0.37.8/api/chrome-command-line-switches/
     - /docs/latest/api/chrome-command-line-switches/

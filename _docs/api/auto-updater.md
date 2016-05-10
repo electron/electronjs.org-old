@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/api/auto-updater/
     - /docs/v0.37.4/api/auto-updater/
     - /docs/v0.37.5/api/auto-updater/
+    - /docs/v0.37.6/api/auto-updater/
     - /docs/v0.37.7/api/auto-updater/
     - /docs/v0.37.8/api/auto-updater/
     - /docs/latest/api/auto-updater/
@@ -151,7 +152,7 @@ should only be called after `update-downloaded` has been emitted.
 [squirrel-mac]: https://github.com/Squirrel/Squirrel.Mac
 [server-support]: https://github.com/Squirrel/Squirrel.Mac#server-support
 [squirrel-windows]: https://github.com/Squirrel/Squirrel.Windows
-[installer]: https://github.com/electron/grunt-electron-installer
+[installer]: https://github.com/atom/grunt-electron-installer
 [app-user-model-id]: https://msdn.microsoft.com/en-us/library/windows/desktop/dd378459(v=vs.85).aspx
 [electron-release-server]: https://github.com/ArekSredzki/electron-release-server
 [squirrel-updates-server]: https://github.com/Aluxian/squirrel-updates-server

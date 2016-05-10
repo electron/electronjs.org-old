@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/api/shell/
     - /docs/v0.37.4/api/shell/
     - /docs/v0.37.5/api/shell/
+    - /docs/v0.37.6/api/shell/
     - /docs/v0.37.7/api/shell/
     - /docs/v0.37.8/api/shell/
     - /docs/latest/api/shell/
