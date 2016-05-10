@@ -119,3 +119,16 @@ $hero-app-opacity: 0.1;
   .hero-icon.long-2  { transform: translate(-92px, 22px) rotate(133deg); }
   .hero-icon.long-3  { transform: translate(-56px, 8px) rotate(13deg); }
 }
+
+
+// Hack for Edge --------------------------
+// FIXME: The transforms doesn't seem to work in Edge
+// So currently the animation is disabled to not make it look broken
+
+@supports (-ms-accelerator:true) {
+  .hero-icon {
+    opacity: 1 !important;
+    animation: none !important;
+    transform: none !important;
+  }
+}
