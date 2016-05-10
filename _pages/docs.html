@@ -66,15 +66,39 @@ layout: default
 
         <div class="col-ms-12 col-lg-4">
           <h2 class="docs-heading pb-3 mb-3"><a class="docs-title" href="{{ site.baseurl }}/docs/api/"><span class="mega-octicon octicon-gear pr-3"></span>API Reference</a></h2>
-          <ul class="docs-list">
-          {% for doc in site.docs %}
-            {% if doc.category == 'API' %}
+            <h3>Main Process</h3>
+            <ul class="docs-list">
+            {% for doc in site.docs %}
+              {% if doc.category == 'API' and site.data.processes[doc.title] == 'Main Process' %}
               <li>
                 <a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a>
                 <!-- <span class="excerpt">{{ doc.content | strip_html | truncatewords: 50 }}</span> -->
               </li>
-            {% endif %}
-          {% endfor %}
+              {% endif %}
+            {% endfor %}
+            </ul>
+            <h3>Renderer Process</h3>
+            <ul class="docs-list">
+            {% for doc in site.docs %}
+              {% if doc.category == 'API' and site.data.processes[doc.title] == 'Renderer Process' %}
+              <li>
+                <a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a>
+                <!-- <span class="excerpt">{{ doc.content | strip_html | truncatewords: 50 }}</span> -->
+              </li>
+              {% endif %}
+            {% endfor %}
+            </ul>
+            <h3>Both Process</h3>
+            {% for doc in site.docs %}
+            <ul class="docs-list">
+              {% if doc.category == 'API' and site.data.processes[doc.title] == 'Both Processes' %}
+              <li>
+                <a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a>
+                <!-- <span class="excerpt">{{ doc.content | strip_html | truncatewords: 50 }}</span> -->
+              </li>
+              {% endif %}
+            {% endfor %}
+          </ul>
           </ul>
         </div>
 
