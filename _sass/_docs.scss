@@ -7,6 +7,8 @@
   padding: .1em .4em;
   vertical-align: middle;
   font-size: $body-font-size * 1.25;
+  font-weight: 200;
+  -webkit-font-smoothing: initial;
   color: $main-color-subtle;
   border: 1px solid $border-color;
   border-radius: $border-radius;
