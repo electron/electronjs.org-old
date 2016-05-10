@@ -9,8 +9,8 @@ This is a [Jekyll](http://jekyllrb.com) site hosted on [GitHub Pages](http://pag
 Follow these steps to copy this repository to your computer and build the site:
 
 ```bash
-$ git clone https://github.com/electron/electron.atom.io.git
-$ cd electron.atom.io
+git clone https://github.com/electron/electron.atom.io.git
+cd electron.atom.io
 npm run bootstrap
 npm run server
 ```
