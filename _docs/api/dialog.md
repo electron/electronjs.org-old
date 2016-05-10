@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/api/dialog/
     - /docs/v0.37.4/api/dialog/
     - /docs/v0.37.5/api/dialog/
+    - /docs/v0.37.6/api/dialog/
     - /docs/v0.37.7/api/dialog/
     - /docs/v0.37.8/api/dialog/
     - /docs/latest/api/dialog/

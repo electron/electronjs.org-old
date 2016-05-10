@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/api/remote/
     - /docs/v0.37.4/api/remote/
     - /docs/v0.37.5/api/remote/
+    - /docs/v0.37.6/api/remote/
     - /docs/v0.37.7/api/remote/
     - /docs/v0.37.8/api/remote/
     - /docs/latest/api/remote/

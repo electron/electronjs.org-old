@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/api/tray/
     - /docs/v0.37.4/api/tray/
     - /docs/v0.37.5/api/tray/
+    - /docs/v0.37.6/api/tray/
     - /docs/v0.37.7/api/tray/
     - /docs/v0.37.8/api/tray/
     - /docs/latest/api/tray/

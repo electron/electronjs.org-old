@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/api/protocol/
     - /docs/v0.37.4/api/protocol/
     - /docs/v0.37.5/api/protocol/
+    - /docs/v0.37.6/api/protocol/
     - /docs/v0.37.7/api/protocol/
     - /docs/v0.37.8/api/protocol/
     - /docs/latest/api/protocol/

@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/api/file-object/
     - /docs/v0.37.4/api/file-object/
     - /docs/v0.37.5/api/file-object/
+    - /docs/v0.37.6/api/file-object/
     - /docs/v0.37.7/api/file-object/
     - /docs/v0.37.8/api/file-object/
     - /docs/latest/api/file-object/

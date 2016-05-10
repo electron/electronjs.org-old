@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/api/browser-window/
     - /docs/v0.37.4/api/browser-window/
     - /docs/v0.37.5/api/browser-window/
+    - /docs/v0.37.6/api/browser-window/
     - /docs/v0.37.7/api/browser-window/
     - /docs/v0.37.8/api/browser-window/
     - /docs/latest/api/browser-window/

@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/api/crash-reporter/
     - /docs/v0.37.4/api/crash-reporter/
     - /docs/v0.37.5/api/crash-reporter/
+    - /docs/v0.37.6/api/crash-reporter/
     - /docs/v0.37.7/api/crash-reporter/
     - /docs/v0.37.8/api/crash-reporter/
     - /docs/latest/api/crash-reporter/

@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/tutorial/using-selenium-and-webdriver/
     - /docs/v0.37.4/tutorial/using-selenium-and-webdriver/
     - /docs/v0.37.5/tutorial/using-selenium-and-webdriver/
+    - /docs/v0.37.6/tutorial/using-selenium-and-webdriver/
     - /docs/v0.37.7/tutorial/using-selenium-and-webdriver/
     - /docs/v0.37.8/tutorial/using-selenium-and-webdriver/
     - /docs/latest/tutorial/using-selenium-and-webdriver/

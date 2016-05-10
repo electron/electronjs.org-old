@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/tutorial/using-native-node-modules/
     - /docs/v0.37.4/tutorial/using-native-node-modules/
     - /docs/v0.37.5/tutorial/using-native-node-modules/
+    - /docs/v0.37.6/tutorial/using-native-node-modules/
     - /docs/v0.37.7/tutorial/using-native-node-modules/
     - /docs/v0.37.8/tutorial/using-native-node-modules/
     - /docs/latest/tutorial/using-native-node-modules/

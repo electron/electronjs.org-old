@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/api/desktop-capturer/
     - /docs/v0.37.4/api/desktop-capturer/
     - /docs/v0.37.5/api/desktop-capturer/
+    - /docs/v0.37.6/api/desktop-capturer/
     - /docs/v0.37.7/api/desktop-capturer/
     - /docs/v0.37.8/api/desktop-capturer/
     - /docs/latest/api/desktop-capturer/

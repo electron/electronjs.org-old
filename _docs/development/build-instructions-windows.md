@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/development/build-instructions-windows/
     - /docs/v0.37.4/development/build-instructions-windows/
     - /docs/v0.37.5/development/build-instructions-windows/
+    - /docs/v0.37.6/development/build-instructions-windows/
     - /docs/v0.37.7/development/build-instructions-windows/
     - /docs/v0.37.8/development/build-instructions-windows/
     - /docs/latest/development/build-instructions-windows/

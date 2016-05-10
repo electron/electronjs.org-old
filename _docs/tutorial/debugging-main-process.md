@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/tutorial/debugging-main-process/
     - /docs/v0.37.4/tutorial/debugging-main-process/
     - /docs/v0.37.5/tutorial/debugging-main-process/
+    - /docs/v0.37.6/tutorial/debugging-main-process/
     - /docs/v0.37.7/tutorial/debugging-main-process/
     - /docs/v0.37.8/tutorial/debugging-main-process/
     - /docs/latest/tutorial/debugging-main-process/

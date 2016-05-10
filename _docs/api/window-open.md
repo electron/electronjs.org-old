@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/api/window-open/
     - /docs/v0.37.4/api/window-open/
     - /docs/v0.37.5/api/window-open/
+    - /docs/v0.37.6/api/window-open/
     - /docs/v0.37.7/api/window-open/
     - /docs/v0.37.8/api/window-open/
     - /docs/latest/api/window-open/

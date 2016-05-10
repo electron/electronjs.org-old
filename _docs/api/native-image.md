@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/api/native-image/
     - /docs/v0.37.4/api/native-image/
     - /docs/v0.37.5/api/native-image/
+    - /docs/v0.37.6/api/native-image/
     - /docs/v0.37.7/api/native-image/
     - /docs/v0.37.8/api/native-image/
     - /docs/latest/api/native-image/

@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/development/build-system-overview/
     - /docs/v0.37.4/development/build-system-overview/
     - /docs/v0.37.5/development/build-system-overview/
+    - /docs/v0.37.6/development/build-system-overview/
     - /docs/v0.37.7/development/build-system-overview/
     - /docs/v0.37.8/development/build-system-overview/
     - /docs/latest/development/build-system-overview/
