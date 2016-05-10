@@ -33,4 +33,4 @@ Add your app to the list by editing [_data/apps.yml](/_data/apps.yml). **Please 
 
 ## Documentation
 
-The documentation on this site is pulled directly from the `atom/electron` repository's `docs` directory. Contributions to the documentation should be made there: [atom/electron](https://github.com/atom/electron/tree/master/docs).
+The documentation on this site is pulled directly from the `atom/electron` repository's `docs` directory. Contributions to the documentation should be made there: [atom/electron](https://github.com/electron/electron/tree/master/docs).
