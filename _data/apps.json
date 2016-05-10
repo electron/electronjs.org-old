@@ -1,0 +1,506 @@
+[
+  {
+    "url": "https://atom.io",
+    "name": "Atom",
+    "image": "atom.png",
+    "description": "A hackable text editor for the 21st Century"
+  },
+  {
+    "url": "https://slack.com",
+    "name": "Slack",
+    "image": "slack.png",
+    "description": "A messaging app for teams"
+  },
+  {
+    "url": "https://code.visualstudio.com",
+    "name": "Visual Studio Code",
+    "image": "vscode.png",
+    "description": "Code editing. Redefined"
+  },
+  {
+    "url": "https://hiveteams.com",
+    "name": "Hive",
+    "image": "hive.png",
+    "description": "All your actions, messages and files on one page"
+  },
+  {
+    "url": "http://avocode.com",
+    "name": "Avocode",
+    "image": "avocode.png",
+    "description": "One workspace open to all designers and developers"
+  },
+  {
+    "url": "https://www.mapbox.com",
+    "name": "Mapbox",
+    "image": "mapbox.png",
+    "description": "Design and publish beautiful maps"
+  },
+  {
+    "url": "http://nuclide.io",
+    "name": "Nuclide",
+    "image": "nuclide.png",
+    "description": "A unified developer experience for web and mobile development"
+  },
+  {
+    "url": "https://kitematic.com",
+    "name": "Kitematic",
+    "image": "kitematic.png",
+    "description": "Run containers through a simple, yet powerful graphical user interface"
+  },
+  {
+    "url": "http://www.pixate.com",
+    "name": "Pixate",
+    "image": "pixate.png",
+    "description": "Change the way you design with the most powerful prototyping platform on the planet"
+  },
+  {
+    "url": "http://www.wagonhq.com",
+    "name": "Wagon",
+    "image": "wagon.png",
+    "description": "SQL analytis together: Write queries, visualize data, and share charts with your team"
+  },
+  {
+    "url": "https://www.particle.io/dev",
+    "name": "Particle Dev",
+    "image": "particle.png",
+    "description": "A professional IDE for Particle"
+  },
+  {
+    "url": "http://fireball-x.com/en",
+    "name": "Fireball",
+    "image": "fireball.png",
+    "description": "Game development tools"
+  },
+  {
+    "url": "http://popkey.co/send-gifs",
+    "name": "PopKey",
+    "image": "pop-key.png",
+    "description": "The perfect GIF right at your fingertips"
+  },
+  {
+    "url": "https://www.jibo.com",
+    "name": "JIBO",
+    "image": "jibo.png",
+    "description": "The world's first social robot"
+  },
+  {
+    "url": "http://lab.ionic.io",
+    "name": "Ionic Lab",
+    "image": "ionic-lab.png",
+    "description": "Create, build, test and deploy Ionic apps"
+  },
+  {
+    "url": "https://rocket.chat",
+    "name": "Rocket.Chat",
+    "image": "rocket-chat.png",
+    "description": "The ultimate open source web chat platform"
+  },
+  {
+    "url": "http://microstockr.com",
+    "name": "Microstockr",
+    "image": "microstockr.png",
+    "description": "Microstock photography made easy"
+  },
+  {
+    "url": "https://www.gitbook.com",
+    "name": "GitBook",
+    "image": "gitbook.png",
+    "description": "Editor for a modern publishing toolchain based on Git"
+  },
+  {
+    "url": "https://www.nylas.com/n1",
+    "name": "Nylas N1",
+    "image": "nylas.png",
+    "description": "The extensible, open source mail app"
+  },
+  {
+    "url": "http://www.gitkraken.com",
+    "name": "GitKraken",
+    "image": "gitkraken.png",
+    "description": "The downright luxurious Git client for Windows, Mac and Linux"
+  },
+  {
+    "url": "http://www.airtame.com",
+    "name": "AIRTAME",
+    "image": "airtame.png",
+    "description": "Wireless HDMI streaming"
+  },
+  {
+    "url": "https://www.spreaker.com/download",
+    "name": "Spreaker Studio",
+    "image": "spreaker-studio.png",
+    "description": "Create and discover podcasts"
+  },
+  {
+    "url": "http://www.kakapo.co/app.html#desktop",
+    "name": "Kakapo",
+    "image": "kakapo.png",
+    "description": "Ambient sound mixer to set a nice mood"
+  },
+  {
+    "url": "http://zoommyapp.com",
+    "name": "Zoommy",
+    "image": "zoommy.png",
+    "description": "Helps you find awesome free stock photos for your creative product or inspiration"
+  },
+  {
+    "url": "http://www.gitify.io",
+    "name": "Gitify",
+    "image": "gitify.png",
+    "description": "Github notifications on your menu bar"
+  },
+  {
+    "url": "http://www.strem.io",
+    "name": "Stremio",
+    "image": "stremio.png",
+    "description": "Organize and instantly watch your favorite videos, movies, TV series and TV channels"
+  },
+  {
+    "url": "http://lighttable.com",
+    "name": "Light Table",
+    "image": "lighttable.png",
+    "description": "The next generation code editor"
+  },
+  {
+    "url": "https://steelseries.com/engine",
+    "name": "SteelSeries Engine 3",
+    "image": "steelseries-engine-3.png",
+    "description": "A unified platform that supports nearly all your SteelSeries gear."
+  },
+  {
+    "url": "http://www.yhat.com/products/rodeo",
+    "name": "Yhat Rodeo",
+    "image": "yhat-rodeo.png",
+    "description": "An IDE for data science"
+  },
+  {
+    "url": "https://wire.com",
+    "name": "Wire",
+    "image": "wire.png",
+    "description": "Modern, private communications"
+  },
+  {
+    "url": "http://www.mancy-re.pl",
+    "name": "Mancy",
+    "image": "mancy.png",
+    "description": "NodeJS REPL"
+  },
+  {
+    "url": "https://b00st.io",
+    "name": "Boost",
+    "image": "boost.png",
+    "description": "Open-sourced note app for programmers"
+  },
+  {
+    "url": "http://caret.io",
+    "name": "Caret",
+    "image": "caret.png",
+    "description": "Markdown editor for Mac / Windows / Linux"
+  },
+  {
+    "url": "https://tweetman.kksg.net/en",
+    "name": "Tweetman",
+    "image": "tweetman.png",
+    "description": "Powerful Twitter Client for Desktop"
+  },
+  {
+    "url": "http://md-note.com",
+    "name": "MdNote",
+    "image": "mdnote.png",
+    "description": "Markdown notebook"
+  },
+  {
+    "url": "https://desktop.wordpress.com",
+    "name": "WordPress.com",
+    "image": "wordpress.png",
+    "description": "A desktop app for Wordpress"
+  },
+  {
+    "url": "http://ppoffice.github.io/Hozz",
+    "name": "Hozz",
+    "image": "hozz.png",
+    "description": "A better way to manage your hosts"
+  },
+  {
+    "url": "http://www.getgala.me",
+    "name": "Gala",
+    "image": "gala.png",
+    "description": "A new and easier way of searching images"
+  },
+  {
+    "url": "http://www.mongotron.io",
+    "name": "Mongotron",
+    "image": "mongotron.png",
+    "description": "Cross platform MongoDB management"
+  },
+  {
+    "url": "https://www.wantedly.com/sync",
+    "name": "Sync",
+    "image": "sync.png",
+    "description": "A business chat tool"
+  },
+  {
+    "url": "http://abricotine.brrd.fr",
+    "name": "Abricotine",
+    "image": "abricotine.png",
+    "description": "Open-source Markdown editor built for desktop"
+  },
+  {
+    "url": "http://discordapp.com",
+    "name": "Discord",
+    "image": "discord.png",
+    "description": "All-in-one voice and text chat for gamers"
+  },
+  {
+    "url": "http://add0n.com/turbo-download-manager.html",
+    "name": "Turbo Download Manager",
+    "image": "tdm.png",
+    "description": "An open-source multi-threading download manager"
+  },
+  {
+    "url": "https://keeweb.info",
+    "name": "KeeWeb",
+    "image": "keeweb.png",
+    "description": "Free cross-platform password manager compatible with KeePass"
+  },
+  {
+    "url": "https://www.getflow.com",
+    "name": "Flow",
+    "image": "flow.png",
+    "description": "Task Management Software That Doesn't Feel Like Work"
+  },
+  {
+    "url": "http://gifmaker.io",
+    "name": "Gif Maker",
+    "image": "gif-maker.png",
+    "description": "Animated GIF maker"
+  },
+  {
+    "url": "http://madebybright.com",
+    "name": "Nimble",
+    "image": "nimble.png",
+    "description": "A simple Wolfram|Alpha&#174; menubar client for Mac OS X"
+  },
+  {
+    "url": "https://rememberapp.co.kr",
+    "name": "Remember",
+    "image": "remember.png",
+    "description": "Business card management"
+  },
+  {
+    "url": "https://presets.io",
+    "name": "Presets.io",
+    "image": "presets.png",
+    "description": "Easy preset management for Adobe Lightroom"
+  },
+  {
+    "url": "http://argo.js.org",
+    "name": "Argo",
+    "image": "argo.png",
+    "description": "An open source trading platform"
+  },
+  {
+    "url": "https://www.getpostman.com/",
+    "name": "Postman",
+    "image": "postman.png",
+    "description": "Build, test and document your APIs"
+  },
+  {
+    "url": "http://superpowers-html5.com/",
+    "name": "Superpowers",
+    "image": "superpowers.png",
+    "description": "2D+3D game making for indies. Free and open source, finally"
+  },
+  {
+    "url": "http://tagspaces.org/",
+    "name": "TagSpaces",
+    "image": "tagspaces.png",
+    "description": "Your Hackable File Organizer"
+  },
+  {
+    "url": "http://pracontrol.pravdomil.cz",
+    "name": "PraControl",
+    "image": "pracontrol.png",
+    "description": "Send awesome gCodes to your machine"
+  },
+  {
+    "url": "https://stoplight.io",
+    "name": "StopLight",
+    "image": "stoplight.png",
+    "description": "Mock, document, and test your way to API nirvana"
+  },
+  {
+    "url": "https://pablopunk.github.io/chronocube",
+    "name": "Chronocube",
+    "image": "chronocube.png",
+    "description": "Your rubik's cube solves"
+  },
+  {
+    "url": "https://netbeast.co",
+    "name": "Netbeast",
+    "image": "netbeast.png",
+    "description": "An Internet of Things javascript development platform that empowers developers to easily create and deploy IoT apps"
+  },
+  {
+    "url": "http://www.egret.com/products-wing",
+    "name": "Egret Wing",
+    "image": "wing.png",
+    "description": "Egret Wing"
+  },
+  {
+    "url": "https://catlight.io",
+    "name": "CatLight",
+    "image": "catlight.png",
+    "description": "Desktop build status notificatioans"
+  },
+  {
+    "url": "https://brave.com/",
+    "name": "Brave Software",
+    "image": "brave.png",
+    "description": "Web browser that automatically blocks ads and trackers"
+  },
+  {
+    "url": "http://www.googleplaymusicdesktopplayer.com/",
+    "name": "Google Play Music Desktop Player",
+    "image": "googleplaymusicdesktopplayer.png",
+    "description": "A beautiful cross platform Desktop Player for Google Play Music"
+  },
+  {
+    "url": "http://whap.tk",
+    "name": "World History AP",
+    "image": "whap.png",
+    "description": "Help students study for the rigorous AP exam"
+  },
+  {
+    "url": "https://github.com/appetizermonster/hain",
+    "name": "Hain",
+    "image": "hain.png",
+    "description": "An 'alt+space' launcher for Windows"
+  },
+  {
+    "url": "http://1clipboard.io",
+    "name": "1Clipboard",
+    "image": "1clipboard.png",
+    "description": "A universal clipboard managing app that makes it easy to access your clipboard from anywhere on any device"
+  },
+  {
+    "url": "https://jean-emmanuel.github.io/open-stage-control",
+    "name": "Open Stage Control",
+    "image": "open-stage-control.png",
+    "description": "A libre desktop OSC bi-directionnal control surface application"
+  },
+  {
+    "url": "https://www.curse.com",
+    "name": "Curse",
+    "image": "curse.png",
+    "description": "Fast and free communication for gamers"
+  },
+  {
+    "url": "https://www.makeappicon.com/desktop",
+    "name": "MakeAppIcon Desktop",
+    "image": "makeappicon.png",
+    "description": "Resizer for mobile app icons"
+  },
+  {
+    "url": "https://tweakstyle.com",
+    "name": "TweakStyle",
+    "image": "TweakStyle.png",
+    "description": "The next code editor"
+  },
+  {
+    "url": "https://webtorrent.io/desktop",
+    "name": "WebTorrent Desktop",
+    "image": "WebTorrent.png",
+    "description": "The streaming torrent client"
+  },
+  {
+    "url": "https://www.ecommerce.co.uk/httpschecker",
+    "name": "HTTPS Checker",
+    "image": "httpschecker.png",
+    "description": "The Most Advanced HTTPS Mixed Content Checker Available"
+  },
+  {
+    "url": "https://www.mattermost.org/",
+    "name": "Mattermost",
+    "image": "mattermost.png",
+    "description": "Open source, self-hosted Slack-alternative"
+  },
+  {
+    "url": "https://bearychat.com",
+    "name": "BearyChat",
+    "image": "bearychat.png",
+    "description": "Focused team communications"
+  },
+  {
+    "url": "https://github.com/jfbouzereau/explorer",
+    "name": "Explorer",
+    "image": "explorer.png",
+    "description": "Statistics the easy way"
+  },
+  {
+    "url": "https://mockingbot.com",
+    "name": "MockingBot",
+    "image": "mockingbot.png",
+    "description": "The Missing Wireframing Tool For Mobile"
+  },
+  {
+    "url": "https://fastlaneapp.co",
+    "name": "Fastlane",
+    "image": "fastlane.png",
+    "description": "Book Uber from your Mac"
+  },
+  {
+    "url": "https://datazenit.com",
+    "name": "Datazenit",
+    "image": "datazenit.png",
+    "description": "Modern database administration tool"
+  },
+  {
+    "url": "https://crypto.cat",
+    "name": "Cryptocat",
+    "image": "cryptocat.png",
+    "description": "Free secure chat software"
+  },
+  {
+    "url": "https://github.com/mozilla/tofino",
+    "name": "Tofino",
+    "image": "mozilla-tofino.png",
+    "description": "An experimental Web Browser from Mozilla"
+  },
+  {
+    "url": "https://github.com/HR/Crypter",
+    "name": "Crypter",
+    "image": "crypter.png",
+    "description": "A simple, convenient and secure encryption client"
+  },
+  {
+    "url": "https://getdeckhub.com",
+    "name": "DeckHub",
+    "image": "deckhub.png",
+    "description": "A TweetDeck style desktop client for GitHub"
+  },
+  {
+    "url": "http://uyu.us",
+    "name": "AntSword",
+    "image": "antSword.png",
+    "description": "A cross platform website management tools"
+  },
+  {
+    "url": "https://www.devspectrum.com",
+    "name": "Spectrum",
+    "image": "spectrum.png",
+    "description": "Useful logging for developers"
+  },
+  {
+    "url": "https://ghost.org",
+    "name": "Ghost",
+    "image": "ghost.png",
+    "description": "A professional publishing platform"
+  },
+  {
+    "url": "http://www.aipo.com/",
+    "name": "Aipo",
+    "image": "aipocom.png",
+    "description": "Communication tool to optimize the connection between people"
+  }
+]

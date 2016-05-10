@@ -16,7 +16,7 @@ The following is a set of guidelines for contributing to electron.atom.io on Git
 
 If you have an Electron application or project you'd like to see added, please open a pull request!
 
-Add your app to the list by editing [_data/apps.csv](/_data/apps.csv). **Please add your app at the bottom of the list**.
+Add your app to the list by editing [_data/apps.json](/_data/apps.json). **Please add your app at the bottom of the list**.
 
 ## Documentation
 
