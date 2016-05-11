@@ -1,5 +1,5 @@
 ---
-version: v1.0.0
+version: v1.0.1
 category: Development
 title: 'Build System Overview'
 redirect_from:
@@ -35,6 +35,7 @@ redirect_from:
     - /docs/v0.37.7/development/build-system-overview/
     - /docs/v0.37.8/development/build-system-overview/
     - /docs/v1.0.0/development/build-system-overview/
+    - /docs/v1.0.1/development/build-system-overview/
     - /docs/latest/development/build-system-overview/
 source_url: 'https://github.com/electron/electron/blob/master/docs/development/build-system-overview.md'
 ---

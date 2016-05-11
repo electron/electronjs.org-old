@@ -1,5 +1,5 @@
 ---
-version: v1.0.0
+version: v1.0.1
 category: API
 title: Protocol
 redirect_from:
@@ -35,6 +35,7 @@ redirect_from:
     - /docs/v0.37.7/api/protocol/
     - /docs/v0.37.8/api/protocol/
     - /docs/v1.0.0/api/protocol/
+    - /docs/v1.0.1/api/protocol/
     - /docs/latest/api/protocol/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/protocol.md'
 excerpt: "Register a custom protocol and intercept existing protocol requests."
@@ -48,21 +49,24 @@ An example of implementing a protocol that has the same effect as the
 `file://` protocol:
 
 ```javascript
-const {app, protocol} = require('electron');
+const electron = require('electron');
+const app = electron.app;
 const path = require('path');
 
-app.on('ready', () => {
-  protocol.registerFileProtocol('atom', (request, callback) => {
-    const url = request.url.substr(7);
-    callback({path: path.normalize(__dirname + '/' + url)});
-  }, (error) => {
-    if (error)
-      console.error('Failed to register protocol');
-  });
+app.on('ready', function() {
+    var protocol = electron.protocol;
+    protocol.registerFileProtocol('atom', function(request, callback) {
+      var url = request.url.substr(7);
+      callback({path: path.normalize(__dirname + '/' + url)});
+    }, function (error) {
+      if (error)
+        console.error('Failed to register protocol')
+    });
 });
 ```
-**Note:** All methods unless specified can only be used after the `ready` event
-of the `app` module gets emitted.
+
+**Note:** This module can only be used after the `ready` event in the `app`
+module is emitted.
 
 ## Methods
 
@@ -72,36 +76,9 @@ The `protocol` module has the following methods:
 
 * `schemes` Array - Custom schemes to be registered as standard schemes.
 
-A standard scheme adheres to what RFC 3986 calls [generic URI
-syntax](https://tools.ietf.org/html/rfc3986#section-3). For example `http` and
-`https` are standard schemes, while `file` is not.
-
-Registering a scheme as standard, will allow relative and absolute resources to
-be resolved correctly when served. Otherwise the scheme will behave like the
-`file` protocol, but without the ability to resolve relative URLs.
-
-For example when you load following page with custom protocol without
-registering it as standard scheme, the image will not be loaded because
-non-standard schemes can not recognize relative URLs:
-
-```html
-<body>
-  <img src='test.png'>
-</body>
-```
-
-So if you want to register a custom protocol to replace the `http` protocol, you
-have to register it as standard scheme:
-
-```javascript
-protocol.registerStandardSchemes(['atom']);
-app.on('ready', () => {
-  protocol.registerHttpProtocol('atom', ...);
-});
-```
-
-**Note:** This method can only be used before the `ready` event of the `app`
-module gets emitted.
+A standard `scheme` adheres to what RFC 3986 calls
+[generic URI syntax](https://tools.ietf.org/html/rfc3986#section-3). This
+includes `file:` and `filesystem:`.
 
 ### `protocol.registerServiceWorkerSchemes(schemes)`
 
@@ -161,11 +138,11 @@ should be called with either a `Buffer` object or an object that has the `data`,
 Example:
 
 ```javascript
-protocol.registerBufferProtocol('atom', (request, callback) => {
+protocol.registerBufferProtocol('atom', function(request, callback) {
   callback({mimeType: 'text/html', data: new Buffer('<h5>Response</h5>')});
-}, (error) => {
+}, function (error) {
   if (error)
-    console.error('Failed to register protocol');
+    console.error('Failed to register protocol')
 });
 ```
 

@@ -1,5 +1,5 @@
 ---
-version: v1.0.0
+version: v1.0.1
 category: Tutorial
 title: 'Using Widevine Cdm Plugin'
 redirect_from:
@@ -35,6 +35,7 @@ redirect_from:
     - /docs/v0.37.7/tutorial/using-widevine-cdm-plugin/
     - /docs/v0.37.8/tutorial/using-widevine-cdm-plugin/
     - /docs/v1.0.0/tutorial/using-widevine-cdm-plugin/
+    - /docs/v1.0.1/tutorial/using-widevine-cdm-plugin/
     - /docs/latest/tutorial/using-widevine-cdm-plugin/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/using-widevine-cdm-plugin.md'
 ---
@@ -100,14 +101,14 @@ app.commandLine.appendSwitch('widevine-cdm-path', '/path/to/widevinecdmadapter.p
 // The version of plugin can be got from `chrome://plugins` page in Chrome.
 app.commandLine.appendSwitch('widevine-cdm-version', '1.4.8.866');
 
-let win = null;
-app.on('ready', () => {
-  win = new BrowserWindow({
+var mainWindow = null;
+app.on('ready', function() {
+  mainWindow = new BrowserWindow({
     webPreferences: {
       // The `plugins` have to be enabled.
       plugins: true
     }
-  });
+  })
 });
 ```
 

@@ -1,5 +1,22 @@
 [
   {
+    "url": "https://api.github.com/repos/electron/electron/releases/3201461",
+    "assets_url": "https://api.github.com/repos/electron/electron/releases/3201461/assets",
+    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/3201461/assets{?name,label}",
+    "html_url": "https://github.com/electron/electron/releases/tag/v1.0.1",
+    "id": 3201461,
+    "tag_name": "v1.0.1",
+    "target_commitish": "master",
+    "name": "electron v1.0.1",
+    "draft": false,
+    "prerelease": false,
+    "created_at": "2016-05-11T11:10:38Z",
+    "published_at": "2016-05-11T12:54:14Z",
+    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v1.0.1",
+    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v1.0.1",
+    "body": "Changelog:\r\n\r\n* Fix devtools extension not loading."
+  },
+  {
     "url": "https://api.github.com/repos/electron/electron/releases/3183907",
     "assets_url": "https://api.github.com/repos/electron/electron/releases/3183907/assets",
     "upload_url": "https://uploads.github.com/repos/electron/electron/releases/3183907/assets{?name,label}",
@@ -10,8 +27,8 @@
     "name": "electron v1.0.0",
     "draft": false,
     "prerelease": false,
-    "created_at": "2016-05-11T05:48:43Z",
-    "published_at": "2016-05-11T06:04:41Z",
+    "created_at": "2016-05-09T12:17:35Z",
+    "published_at": "2016-05-11T11:08:00Z",
     "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v1.0.0",
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v1.0.0",
     "body": "Changelog:\r\n\r\n* Bump version number to 1.0.0.\r\n* Remove deprecated APIs. [#5373](https://github.com/electron/electron/pull/5373)\r\n\r\nMigration notice:\r\n\r\n* Please update your app to v0.37.8 first to check whether there are deprecated\r\n  APIs usages.\r\n* Following deprecated events of `BrowserWindow` have been removed but there\r\n  were no deprecation warnings in previous versions, you should use the\r\n  corresponding events in `webContents` instead:\r\n  * `crash`\r\n  * `devtools-focused`\r\n  * `devtools-opened`\r\n  * `devtools-closed`\r\n* `NativeImage.toDataUrl` has been removed but there were no deprecation\r\n  warnings in previous versions, you should use `toDataURL` instead.\r\n"
@@ -491,22 +508,5 @@
     "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.34.5",
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.34.5",
     "body": "Changelog:\r\n\r\n__OS X__\r\n\r\n* Fix crash when closing a window in fullscreen state.\r\n"
-  },
-  {
-    "url": "https://api.github.com/repos/electron/electron/releases/2176433",
-    "assets_url": "https://api.github.com/repos/electron/electron/releases/2176433/assets",
-    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/2176433/assets{?name,label}",
-    "html_url": "https://github.com/electron/electron/releases/tag/v0.34.4",
-    "id": 2176433,
-    "tag_name": "v0.34.4",
-    "target_commitish": "master",
-    "name": "electron v0.34.4",
-    "draft": false,
-    "prerelease": false,
-    "created_at": "2015-11-20T02:00:00Z",
-    "published_at": "2015-11-24T14:24:13Z",
-    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.34.4",
-    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.34.4",
-    "body": "Changelog:\r\n\r\n__Linux__\r\n\r\n* Fix blurry rendering on some High-DPI machines.\r\n"
   }
 ]

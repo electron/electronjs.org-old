@@ -1,5 +1,5 @@
 ---
-version: v1.0.0
+version: v1.0.1
 category: Development
 title: 'Source Code Directory Structure'
 redirect_from:
@@ -35,6 +35,7 @@ redirect_from:
     - /docs/v0.37.7/development/source-code-directory-structure/
     - /docs/v0.37.8/development/source-code-directory-structure/
     - /docs/v1.0.0/development/source-code-directory-structure/
+    - /docs/v1.0.1/development/source-code-directory-structure/
     - /docs/latest/development/source-code-directory-structure/
 source_url: 'https://github.com/electron/electron/blob/master/docs/development/source-code-directory-structure.md'
 ---
@@ -107,7 +108,7 @@ Electron
 ## Keeping Git Submodules Up to Date
 
 The Electron repository has a few vendored dependencies, found in the
-[/vendor](/vendor) directory. Occasionally you might see a message like this
+[/vendor][vendor] directory. Occasionally you might see a message like this
 when running `git status`:
 
 ```sh
@@ -130,3 +131,5 @@ in your `~/.gitconfig` file:
 [alias]
 	su = submodule update --init --recursive
 ```
+
+[vendor]: https://github.com/electron/electron/tree/master/vendor

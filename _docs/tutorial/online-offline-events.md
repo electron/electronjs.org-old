@@ -1,5 +1,5 @@
 ---
-version: v1.0.0
+version: v1.0.1
 category: Tutorial
 title: 'Online Offline Events'
 redirect_from:
@@ -35,6 +35,7 @@ redirect_from:
     - /docs/v0.37.7/tutorial/online-offline-events/
     - /docs/v0.37.8/tutorial/online-offline-events/
     - /docs/v1.0.0/tutorial/online-offline-events/
+    - /docs/v1.0.1/tutorial/online-offline-events/
     - /docs/latest/tutorial/online-offline-events/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/online-offline-events.md'
 ---
@@ -51,11 +52,10 @@ const electron = require('electron');
 const app = electron.app;
 const BrowserWindow = electron.BrowserWindow;
 
-let onlineStatusWindow;
-
-app.on('ready', () => {
+var onlineStatusWindow;
+app.on('ready', function() {
   onlineStatusWindow = new BrowserWindow({ width: 0, height: 0, show: false });
-  onlineStatusWindow.loadURL(`file://${__dirname}/online-status.html`);
+  onlineStatusWindow.loadURL('file://' + __dirname + '/online-status.html');
 });
 ```
 
@@ -66,7 +66,7 @@ _online-status.html_
 <html>
 <body>
 <script>
-  const alertOnlineStatus = () => {
+  var alertOnlineStatus = function() {
     window.alert(navigator.onLine ? 'online' : 'offline');
   };
 
@@ -93,14 +93,13 @@ const app = electron.app;
 const ipcMain = electron.ipcMain;
 const BrowserWindow = electron.BrowserWindow;
 
-let onlineStatusWindow;
-
-app.on('ready', () => {
+var onlineStatusWindow;
+app.on('ready', function() {
   onlineStatusWindow = new BrowserWindow({ width: 0, height: 0, show: false });
-  onlineStatusWindow.loadURL(`file://${__dirname}/online-status.html`);
+  onlineStatusWindow.loadURL('file://' + __dirname + '/online-status.html');
 });
 
-ipcMain.on('online-status-changed', (event, status) => {
+ipcMain.on('online-status-changed', function(event, status) {
   console.log(status);
 });
 ```
@@ -112,8 +111,8 @@ _online-status.html_
 <html>
 <body>
 <script>
-  const {ipcRenderer} = require('electron');
-  const updateOnlineStatus = () => {
+  const ipcRenderer = require('electron').ipcRenderer;
+  var updateOnlineStatus = function() {
     ipcRenderer.send('online-status-changed', navigator.onLine ? 'online' : 'offline');
   };
 
