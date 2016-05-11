@@ -6,15 +6,12 @@ twitter_username: ElectronJS
 github_username: electron
 future: true
 excerpt_separator: '---'
-highlighter: rouge
-markdown: kramdown
-kramdown:
-    input: GFM
-    syntax_highlighter: rouge
-    hard_wrap: false
 gems:
     - jekyll-redirect-from
     - jekyll-sitemap
+    - jekyll-seo-tag
+    - jekyll-feed
+    - jekyll-avatar
     - jemoji
 latest_version: v1.0.1
 current_node: 5.10.0
@@ -62,6 +59,7 @@ collections:
 defaults:
     - {scope: {type: docs}, values: {layout: docs}}
     - {scope: {type: posts}, values: {layout: post, permalink: '/blog/:year/:month/:day/:title'}}
+    - {scope: {path: ""}, values: {image: {path: '/images/opengraph.png', width: 1200, height: 630}}}
 exclude:
     - node_modules
     - README.md
@@ -73,3 +71,7 @@ exclude:
     - package.json
     - script
     - spec
+google_site_verification: eOAFtDphTbbm4OPKva2d3Z0Z_2bBxWMGdkD0IRQ6VeA
+twitter:
+  username: ElectronJS
+logo: /images/opengraph.png
