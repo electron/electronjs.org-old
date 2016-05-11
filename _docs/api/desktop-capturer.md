@@ -1,5 +1,5 @@
 ---
-version: v1.0.0
+version: v1.0.1
 category: API
 title: 'Desktop Capturer'
 redirect_from:
@@ -35,6 +35,7 @@ redirect_from:
     - /docs/v0.37.7/api/desktop-capturer/
     - /docs/v0.37.8/api/desktop-capturer/
     - /docs/v1.0.0/api/desktop-capturer/
+    - /docs/v1.0.1/api/desktop-capturer/
     - /docs/latest/api/desktop-capturer/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/desktop-capturer.md'
 excerpt: "List <code>getUserMedia</code> sources for capturing audio, video, and images from a
@@ -48,12 +49,12 @@ microphone, camera, or screen.
 
 ```javascript
 // In the renderer process.
-const {desktopCapturer} = require('electron');
+var desktopCapturer = require('electron').desktopCapturer;
 
-desktopCapturer.getSources({types: ['window', 'screen']}, (error, sources) => {
+desktopCapturer.getSources({types: ['window', 'screen']}, function(error, sources) {
   if (error) throw error;
-  for (let i = 0; i < sources.length; ++i) {
-    if (sources[i].name === 'Electron') {
+  for (var i = 0; i < sources.length; ++i) {
+    if (sources[i].name == "Electron") {
       navigator.webkitGetUserMedia({
         audio: false,
         video: {

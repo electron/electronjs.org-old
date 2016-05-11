@@ -1,5 +1,5 @@
 ---
-version: v1.0.0
+version: v1.0.1
 category: API
 title: 'Environment Variables'
 redirect_from:
@@ -35,6 +35,7 @@ redirect_from:
     - /docs/v0.37.7/api/environment-variables/
     - /docs/v0.37.8/api/environment-variables/
     - /docs/v1.0.0/api/environment-variables/
+    - /docs/v1.0.1/api/environment-variables/
     - /docs/latest/api/environment-variables/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/environment-variables.md'
 excerpt: "Control application configuration and behavior without changing code."
@@ -94,7 +95,3 @@ Don't attach to current console session.
 ## `ELECTRON_FORCE_WINDOW_MENU_BAR` _Linux_
 
 Don't use global menu bar on Linux.
-
-## `ELECTRON_HIDE_INTERNAL_MODULES`
-
-Turns off compatibility mode for old built-in modules like `require('ipc')`.

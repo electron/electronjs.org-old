@@ -1,5 +1,5 @@
 ---
-version: v1.0.0
+version: v1.0.1
 category: API
 title: Process
 redirect_from:
@@ -35,6 +35,7 @@ redirect_from:
     - /docs/v0.37.7/api/process/
     - /docs/v0.37.8/api/process/
     - /docs/v1.0.0/api/process/
+    - /docs/v1.0.1/api/process/
     - /docs/latest/api/process/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/process.md'
 excerpt: "Get information about the running application process."
@@ -56,9 +57,6 @@ upstream node:
   other builds it is `undefined`.
 * `process.windowsStore` Boolean - If the app is running as a Windows Store app
   (appx), this value is `true`, for other builds it is `undefined`.
-* `process.defaultApp` Boolean - When app is started by being passed as parameter
-  to the default app, this value is `true` in the main process, otherwise it is
-  `undefined`.
 
 ## Events
 
@@ -72,9 +70,9 @@ the global scope when node integration is turned off:
 
 ```javascript
 // preload.js
-const _setImmediate = setImmediate;
-const _clearImmediate = clearImmediate;
-process.once('loaded', () => {
+var _setImmediate = setImmediate;
+var _clearImmediate = clearImmediate;
+process.once('loaded', function() {
   global.setImmediate = _setImmediate;
   global.clearImmediate = _clearImmediate;
 });

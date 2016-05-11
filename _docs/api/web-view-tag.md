@@ -1,5 +1,5 @@
 ---
-version: v1.0.0
+version: v1.0.1
 category: API
 title: 'Web View Tag'
 redirect_from:
@@ -35,6 +35,7 @@ redirect_from:
     - /docs/v0.37.7/api/web-view-tag/
     - /docs/v0.37.8/api/web-view-tag/
     - /docs/v1.0.0/api/web-view-tag/
+    - /docs/v1.0.1/api/web-view-tag/
     - /docs/latest/api/web-view-tag/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/web-view-tag.md'
 excerpt: "Display external web content in an isolated frame and process."
@@ -73,21 +74,19 @@ and displays a "loading..." message during the load time:
 
 ```html
 <script>
-  onload = () => {
-    const webview = document.getElementById('foo');
-    const indicator = document.querySelector('.indicator');
+  onload = function() {
+    var webview = document.getElementById("foo");
+    var indicator = document.querySelector(".indicator");
 
-    const loadstart = () => {
-      indicator.innerText = 'loading...';
-    };
-
-    const loadstop = () => {
-      indicator.innerText = '';
-    };
-
-    webview.addEventListener('did-start-loading', loadstart);
-    webview.addEventListener('did-stop-loading', loadstop);
-  };
+    var loadstart = function() {
+      indicator.innerText = "loading...";
+    }
+    var loadstop = function() {
+      indicator.innerText = "";
+    }
+    webview.addEventListener("did-start-loading", loadstart);
+    webview.addEventListener("did-stop-loading", loadstop);
+  }
 </script>
 ```
 
@@ -255,7 +254,7 @@ The `webview` tag has the following methods:
 **Example**
 
 ```javascript
-webview.addEventListener('dom-ready', () => {
+webview.addEventListener("dom-ready", function() {
   webview.openDevTools();
 });
 ```
@@ -642,7 +641,7 @@ The following example code forwards all log messages to the embedder's console
 without regard for log level or other properties.
 
 ```javascript
-webview.addEventListener('console-message', (e) => {
+webview.addEventListener('console-message', function(e) {
   console.log('Guest page logged a message:', e.message);
 });
 ```
@@ -662,12 +661,12 @@ Fired when a result is available for
 [`webview.findInPage`](http://electron.atom.io/docs/api/web-view-tag#webviewtagfindinpage) request.
 
 ```javascript
-webview.addEventListener('found-in-page', (e) => {
+webview.addEventListener('found-in-page', function(e) {
   if (e.result.finalUpdate)
-    webview.stopFindInPage('keepSelection');
+    webview.stopFindInPage("keepSelection");
 });
 
-const rquestId = webview.findInPage('test');
+const rquestId = webview.findInPage("test");
 ```
 
 ### Event: 'new-window'
@@ -686,12 +685,10 @@ Fired when the guest page attempts to open a new browser window.
 The following example code opens the new url in system's default browser.
 
 ```javascript
-const {shell} = require('electron');
-
-webview.addEventListener('new-window', (e) => {
-  const protocol = require('url').parse(e.url).protocol;
+webview.addEventListener('new-window', function(e) {
+  var protocol = require('url').parse(e.url).protocol;
   if (protocol === 'http:' || protocol === 'https:') {
-    shell.openExternal(e.url);
+    require('electron').shell.openExternal(e.url);
   }
 });
 ```
@@ -746,7 +743,7 @@ The following example code navigates the `webview` to `about:blank` when the
 guest attempts to close itself.
 
 ```javascript
-webview.addEventListener('close', () => {
+webview.addEventListener('close', function() {
   webview.src = 'about:blank';
 });
 ```
@@ -765,7 +762,7 @@ between guest page and embedder page:
 
 ```javascript
 // In embedder page.
-webview.addEventListener('ipc-message', (event) => {
+webview.addEventListener('ipc-message', function(event) {
   console.log(event.channel);
   // Prints "pong"
 });
@@ -774,8 +771,8 @@ webview.send('ping');
 
 ```javascript
 // In guest page.
-const {ipcRenderer} = require('electron');
-ipcRenderer.on('ping', () => {
+var ipcRenderer = require('electron').ipcRenderer;
+ipcRenderer.on('ping', function() {
   ipcRenderer.sendToHost('pong');
 });
 ```

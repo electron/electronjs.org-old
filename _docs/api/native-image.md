@@ -1,5 +1,5 @@
 ---
-version: v1.0.0
+version: v1.0.1
 category: API
 title: 'Native Image'
 redirect_from:
@@ -35,6 +35,7 @@ redirect_from:
     - /docs/v0.37.7/api/native-image/
     - /docs/v0.37.8/api/native-image/
     - /docs/v1.0.0/api/native-image/
+    - /docs/v1.0.1/api/native-image/
     - /docs/latest/api/native-image/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/native-image.md'
 excerpt: "Create tray, dock, and application icons using PNG or JPG files."
@@ -51,15 +52,15 @@ For example, when creating a tray or setting a window's icon, you can pass an
 image file path as a `String`:
 
 ```javascript
-const appIcon = new Tray('/Users/somebody/images/icon.png');
-let win = new BrowserWindow({icon: '/Users/somebody/images/window.png'});
+var appIcon = new Tray('/Users/somebody/images/icon.png');
+var window = new BrowserWindow({icon: '/Users/somebody/images/window.png'});
 ```
 
 Or read the image from the clipboard which returns a `nativeImage`:
 
 ```javascript
-const image = clipboard.readImage();
-const appIcon = new Tray(image);
+var image = clipboard.readImage();
+var appIcon = new Tray(image);
 ```
 
 ## Supported Formats
@@ -91,7 +92,7 @@ images/
 
 
 ```javascript
-let appIcon = new Tray('/Users/somebody/images/icon.png');
+var appIcon = new Tray('/Users/somebody/images/icon.png');
 ```
 
 Following suffixes for DPI are also supported:
@@ -160,7 +161,7 @@ The following methods are available on instances of `nativeImage`:
 ```javascript
 const nativeImage = require('electron').nativeImage;
 
-let image = nativeImage.createFromPath('/Users/somebody/images/icon.png');
+var image = nativeImage.createFromPath('/Users/somebody/images/icon.png');
 ```
 
 ### `image.toPng()`
