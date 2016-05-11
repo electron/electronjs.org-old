@@ -1,22 +1,5 @@
 [
   {
-    "url": "https://api.github.com/repos/electron/electron/releases/3133310",
-    "assets_url": "https://api.github.com/repos/electron/electron/releases/3133310/assets",
-    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/3133310/assets{?name,label}",
-    "html_url": "https://github.com/electron/electron/releases/tag/untagged-73bb9a97f1f42705da63",
-    "id": 3133310,
-    "tag_name": "v0.37.9",
-    "target_commitish": "master",
-    "name": "electron v0.37.9",
-    "draft": true,
-    "prerelease": false,
-    "created_at": "2016-04-30T12:48:03Z",
-    "published_at": null,
-    "tarball_url": null,
-    "zipball_url": null,
-    "body": "(placeholder)"
-  },
-  {
     "url": "https://api.github.com/repos/electron/electron/releases/3126483",
     "assets_url": "https://api.github.com/repos/electron/electron/releases/3126483/assets",
     "upload_url": "https://uploads.github.com/repos/electron/electron/releases/3126483/assets{?name,label}",
@@ -508,5 +491,22 @@
     "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.34.4",
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.34.4",
     "body": "Changelog:\r\n\r\n__Linux__\r\n\r\n* Fix blurry rendering on some High-DPI machines.\r\n"
+  },
+  {
+    "url": "https://api.github.com/repos/electron/electron/releases/2158031",
+    "assets_url": "https://api.github.com/repos/electron/electron/releases/2158031/assets",
+    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/2158031/assets{?name,label}",
+    "html_url": "https://github.com/electron/electron/releases/tag/v0.35.1",
+    "id": 2158031,
+    "tag_name": "v0.35.1",
+    "target_commitish": "master",
+    "name": "electron v0.35.1",
+    "draft": false,
+    "prerelease": false,
+    "created_at": "2015-11-20T05:36:59Z",
+    "published_at": "2015-11-20T07:01:41Z",
+    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.35.1",
+    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.35.1",
+    "body": "Changelog:\r\n\r\n* Add `session` module for full multi-session support.\r\n* Add support for some special keys in `webContents.sendInputEvent`.\r\n* Add `certificate-error` event to `webContents` and `app`.\r\n* Add `session.setCertificateVerifyProc` API.\r\n* Fix `webContents.reloadIgnoringCache` not working.\r\n\r\n__Windows__\r\n\r\n* Fix crash when sending notifications with images.\r\n* Fix showing notifications on Windows 8 when app name is not the same with app user model ID.\r\n\r\n__OS X__\r\n\r\n* Add downloads for dSYM symbols.\r\n* Support showing the window as desktop.\r\n* Fix the size of `Tray` icon not updated when the image is changed.\r\n\r\n__Linux__\r\n\r\n* Fix blurry rendering on some High-DPI machines.\r\n"
   }
 ]
