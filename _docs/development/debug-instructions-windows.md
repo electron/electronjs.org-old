@@ -1,5 +1,5 @@
 ---
-version: v0.37.8
+version: v1.0.0
 category: Development
 title: 'Debug Instructions Windows'
 redirect_from:
@@ -34,6 +34,7 @@ redirect_from:
     - /docs/v0.37.6/development/debug-instructions-windows/
     - /docs/v0.37.7/development/debug-instructions-windows/
     - /docs/v0.37.8/development/debug-instructions-windows/
+    - /docs/v1.0.0/development/debug-instructions-windows/
     - /docs/latest/development/debug-instructions-windows/
 source_url: 'https://github.com/electron/electron/blob/master/docs/development/debug-instructions-windows.md'
 ---
@@ -51,7 +52,7 @@ with breakpoints inside Electron's source code.
 
 * **A debug build of Electron**: The easiest way is usually building it
   yourself, using the tools and prerequisites listed in the
-  [build instructions for Windows](http://electron.atom.io/docs/development/build-instructions-osx). While you can
+  [build instructions for Windows](http://electron.atom.io/docs/development/build-instructions-windows). While you can
   easily attach to and debug Electron as you can download it directly, you will
   find that it is heavily optimized, making debugging substantially more
   difficult: The debugger will not be able to show you the content of all

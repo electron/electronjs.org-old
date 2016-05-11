@@ -1,5 +1,5 @@
 ---
-version: v0.37.8
+version: v1.0.0
 category: ignore
 title: 'Electron FAQ'
 permalink: /docs/faq/
@@ -36,6 +36,7 @@ redirect_from:
     - /docs/v0.37.6/faq/electron-faq/
     - /docs/v0.37.7/faq/electron-faq/
     - /docs/v0.37.8/faq/electron-faq/
+    - /docs/v1.0.0/faq/electron-faq/
     - /docs/latest/faq/electron-faq/
 source_url: 'https://github.com/electron/electron/blob/master/docs/faq/electron-faq.md'
 ---
@@ -45,10 +46,13 @@ source_url: 'https://github.com/electron/electron/blob/master/docs/faq/electron-
 ## When will Electron upgrade to latest Chrome?
 
 The Chrome version of Electron is usually bumped within one or two weeks after
-a new stable Chrome version gets released.
+a new stable Chrome version gets released. This estimate is not guaranteed and
+depends on the amount of work involved with upgrading.
 
-Also we only use stable channel of Chrome. If an important fix is in beta or dev
+Only the stable channel of Chrome is used. If an important fix is in beta or dev
 channel, we will back-port it.
+
+For more information, please see the [security introduction](http://electron.atom.io/docs/tutorial/electron-security).
 
 ## When will Electron upgrade to latest Node.js?
 
@@ -102,18 +106,18 @@ If you want a quick fix, you can make the variables global by changing your
 code from this:
 
 ```javascript
-app.on('ready', function() {
-  var tray = new Tray('/path/to/icon.png');
-})
+app.on('ready', () => {
+  const tray = new Tray('/path/to/icon.png');
+});
 ```
 
 to this:
 
 ```javascript
-var tray = null;
-app.on('ready', function() {
+let tray = null;
+app.on('ready', () => {
   tray = new Tray('/path/to/icon.png');
-})
+});
 ```
 
 ## I can not use jQuery/RequireJS/Meteor/AngularJS in Electron.
@@ -126,7 +130,7 @@ To solve this, you can turn off node integration in Electron:
 
 ```javascript
 // In the main process.
-var mainWindow = new BrowserWindow({
+let win = new BrowserWindow({
   webPreferences: {
     nodeIntegration: false
   }

@@ -1,5 +1,5 @@
 ---
-version: v0.37.8
+version: v1.0.0
 category: API
 title: 'Auto Updater'
 redirect_from:
@@ -34,6 +34,7 @@ redirect_from:
     - /docs/v0.37.6/api/auto-updater/
     - /docs/v0.37.7/api/auto-updater/
     - /docs/v0.37.8/api/auto-updater/
+    - /docs/v1.0.0/api/auto-updater/
     - /docs/latest/api/auto-updater/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/auto-updater.md'
 excerpt: "Enable apps to automatically update themselves."

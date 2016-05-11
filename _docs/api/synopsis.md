@@ -1,5 +1,5 @@
 ---
-version: v0.37.8
+version: v1.0.0
 category: API
 title: Synopsis
 redirect_from:
@@ -34,6 +34,7 @@ redirect_from:
     - /docs/v0.37.6/api/synopsis/
     - /docs/v0.37.7/api/synopsis/
     - /docs/v0.37.8/api/synopsis/
+    - /docs/v1.0.0/api/synopsis/
     - /docs/latest/api/synopsis/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/synopsis.md'
 excerpt: "How to use Node.js and Electron APIs."
@@ -60,15 +61,13 @@ scripts to be able to use those modules.
 The main process script is just like a normal Node.js script:
 
 ```javascript
-const electron = require('electron');
-const app = electron.app;
-const BrowserWindow = electron.BrowserWindow;
+const {app, BrowserWindow} = require('electron');
 
-var window = null;
+let win = null;
 
-app.on('ready', function() {
-  window = new BrowserWindow({width: 800, height: 600});
-  window.loadURL('https://github.com');
+app.on('ready', () => {
+  win = new BrowserWindow({width: 800, height: 600});
+  win.loadURL('https://github.com');
 });
 ```
 
@@ -80,8 +79,8 @@ extra ability to use node modules:
 <html>
 <body>
 <script>
-  const remote = require('electron').remote;
-  console.log(remote.app.getVersion());
+  const {app} = require('electron').remote;
+  console.log(app.getVersion());
 </script>
 </body>
 </html>
@@ -91,16 +90,29 @@ To run your app, read [Run your app](http://electron.atom.io/docs/tutorial/quick
 
 ## Destructuring assignment
 
-If you are using CoffeeScript or Babel, you can also use
+As of 0.37, you can use
 [destructuring assignment][destructuring-assignment] to make it easier to use
-built-in modules:
+built-in modules.
 
 ```javascript
-const {app, BrowserWindow} = require('electron')
+const {app, BrowserWindow} = require('electron');
 ```
 
-However if you are using plain JavaScript, you have to wait until Chrome fully
-supports ES6.
+If you need the entire `electron` module, you can require it and then using
+destructuring to access the individual modules from `electron`.
+
+```javascript
+const electron = require('electron');
+const {app, BrowserWindow} = electron;
+```
+
+This is equivalent to the following code:
+
+```javascript
+const electron = require('electron');
+const app = electron.app;
+const BrowserWindow = electron.BrowserWindow;
+```
 
 ## Disable old styles of using built-in modules
 
@@ -118,7 +130,7 @@ process.env.ELECTRON_HIDE_INTERNAL_MODULES = 'true'
 Or call the `hideInternalModules` API:
 
 ```javascript
-require('electron').hideInternalModules()
+require('electron').hideInternalModules();
 ```
 
 [gui]: https://en.wikipedia.org/wiki/Graphical_user_interface

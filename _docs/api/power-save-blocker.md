@@ -1,5 +1,5 @@
 ---
-version: v0.37.8
+version: v1.0.0
 category: API
 title: 'Power Save Blocker'
 redirect_from:
@@ -34,6 +34,7 @@ redirect_from:
     - /docs/v0.37.6/api/power-save-blocker/
     - /docs/v0.37.7/api/power-save-blocker/
     - /docs/v0.37.8/api/power-save-blocker/
+    - /docs/v1.0.0/api/power-save-blocker/
     - /docs/latest/api/power-save-blocker/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/power-save-blocker.md'
 excerpt: "Block the system from entering low-power (sleep) mode."
@@ -46,9 +47,9 @@ excerpt: "Block the system from entering low-power (sleep) mode."
 For example:
 
 ```javascript
-const powerSaveBlocker = require('electron').powerSaveBlocker;
+const {powerSaveBlocker} = require('electron');
 
-var id = powerSaveBlocker.start('prevent-display-sleep');
+const id = powerSaveBlocker.start('prevent-display-sleep');
 console.log(powerSaveBlocker.isStarted(id));
 
 powerSaveBlocker.stop(id);

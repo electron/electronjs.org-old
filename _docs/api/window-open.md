@@ -1,5 +1,5 @@
 ---
-version: v0.37.8
+version: v1.0.0
 category: API
 title: 'Window Open'
 redirect_from:
@@ -34,6 +34,7 @@ redirect_from:
     - /docs/v0.37.6/api/window-open/
     - /docs/v0.37.7/api/window-open/
     - /docs/v0.37.8/api/window-open/
+    - /docs/v1.0.0/api/window-open/
     - /docs/latest/api/window-open/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/window-open.md'
 excerpt: "Open a new window and load a URL."

@@ -1,5 +1,5 @@
 ---
-version: v0.37.8
+version: v1.0.0
 category: Tutorial
 title: 'Testing on Headless Ci'
 redirect_from:
@@ -34,6 +34,7 @@ redirect_from:
     - /docs/v0.37.6/tutorial/testing-on-headless-ci/
     - /docs/v0.37.7/tutorial/testing-on-headless-ci/
     - /docs/v0.37.8/tutorial/testing-on-headless-ci/
+    - /docs/v1.0.0/tutorial/testing-on-headless-ci/
     - /docs/latest/tutorial/testing-on-headless-ci/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/testing-on-headless-ci.md'
 ---

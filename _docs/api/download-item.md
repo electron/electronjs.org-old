@@ -1,5 +1,5 @@
 ---
-version: v0.37.8
+version: v1.0.0
 category: API
 title: 'Download Item'
 redirect_from:
@@ -34,6 +34,7 @@ redirect_from:
     - /docs/v0.37.6/api/download-item/
     - /docs/v0.37.7/api/download-item/
     - /docs/v0.37.8/api/download-item/
+    - /docs/v1.0.0/api/download-item/
     - /docs/latest/api/download-item/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/download-item.md'
 excerpt: "Control file downloads from remote sources."
@@ -49,20 +50,20 @@ control the download item.
 
 ```javascript
 // In the main process.
-win.webContents.session.on('will-download', function(event, item, webContents) {
+win.webContents.session.on('will-download', (event, item, webContents) => {
   // Set the save path, making Electron not to prompt a save dialog.
   item.setSavePath('/tmp/save.pdf');
   console.log(item.getMimeType());
   console.log(item.getFilename());
   console.log(item.getTotalBytes());
-  item.on('updated', function() {
+  item.on('updated', () => {
     console.log('Received bytes: ' + item.getReceivedBytes());
   });
-  item.on('done', function(e, state) {
-    if (state == "completed") {
-      console.log("Download successfully");
+  item.on('done', (e, state) => {
+    if (state === 'completed') {
+      console.log('Download successfully');
     } else {
-      console.log("Download is cancelled or interrupted that can't be resumed");
+      console.log('Download is cancelled or interrupted that can\'t be resumed');
     }
   });
 });

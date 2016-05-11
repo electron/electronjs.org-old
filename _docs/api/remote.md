@@ -1,5 +1,5 @@
 ---
-version: v0.37.8
+version: v1.0.0
 category: API
 title: Remote
 redirect_from:
@@ -34,6 +34,7 @@ redirect_from:
     - /docs/v0.37.6/api/remote/
     - /docs/v0.37.7/api/remote/
     - /docs/v0.37.8/api/remote/
+    - /docs/v1.0.0/api/remote/
     - /docs/latest/api/remote/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/remote.md'
 excerpt: "Use main process modules from the renderer process."
@@ -55,10 +56,9 @@ similar to Java's [RMI][rmi]. An example of creating a browser window from a
 renderer process:
 
 ```javascript
-const remote = require('electron').remote;
-const BrowserWindow = remote.BrowserWindow;
+const {BrowserWindow} = require('electron').remote;
 
-var win = new BrowserWindow({ width: 800, height: 600 });
+let win = new BrowserWindow({width: 800, height: 600});
 win.loadURL('https://github.com');
 ```
 
@@ -110,28 +110,24 @@ For instance you can't use a function from the renderer process in an
 
 ```javascript
 // main process mapNumbers.js
-exports.withRendererCallback = function(mapper) {
+exports.withRendererCallback = (mapper) => {
   return [1,2,3].map(mapper);
-}
+};
 
-exports.withLocalCallback = function() {
-  return exports.mapNumbers(function(x) {
-    return x + 1;
-  });
-}
+exports.withLocalCallback = () => {
+  return exports.mapNumbers(x => x + 1);
+};
 ```
 
 ```javascript
 // renderer process
-var mapNumbers = require("remote").require("./mapNumbers");
+const mapNumbers = require('remote').require('./mapNumbers');
 
-var withRendererCb = mapNumbers.withRendererCallback(function(x) {
-  return x + 1;
-})
+const withRendererCb = mapNumbers.withRendererCallback(x => x + 1);
 
-var withLocalCb = mapNumbers.withLocalCallback()
+const withLocalCb = mapNumbers.withLocalCallback();
 
-console.log(withRendererCb, withLocalCb) // [true, true, true], [2, 3, 4]
+console.log(withRendererCb, withLocalCb); // [true, true, true], [2, 3, 4]
 ```
 
 As you can see, the renderer callback's synchronous return value was not as
@@ -145,7 +141,7 @@ For example, the following code seems innocent at first glance. It installs a
 callback for the `close` event on a remote object:
 
 ```javascript
-remote.getCurrentWindow().on('close', function() {
+remote.getCurrentWindow().on('close', () => {
   // blabla...
 });
 ```

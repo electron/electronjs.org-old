@@ -1,5 +1,5 @@
 ---
-version: v0.37.8
+version: v1.0.0
 category: API
 title: 'Web Frame'
 redirect_from:
@@ -34,6 +34,7 @@ redirect_from:
     - /docs/v0.37.6/api/web-frame/
     - /docs/v0.37.7/api/web-frame/
     - /docs/v0.37.8/api/web-frame/
+    - /docs/v1.0.0/api/web-frame/
     - /docs/latest/api/web-frame/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/web-frame.md'
 excerpt: "Customize the rendering of the current web page."
@@ -46,7 +47,7 @@ excerpt: "Customize the rendering of the current web page."
 An example of zooming current page to 200%.
 
 ```javascript
-var webFrame = require('electron').webFrame;
+const {webFrame} = require('electron');
 
 webFrame.setZoomFactor(2);
 ```
@@ -99,8 +100,8 @@ whether the word passed is correctly spelled.
 An example of using [node-spellchecker][spellchecker] as provider:
 
 ```javascript
-webFrame.setSpellCheckProvider("en-US", true, {
-  spellCheck: function(text) {
+webFrame.setSpellCheckProvider('en-US', true, {
+  spellCheck(text) {
     return !(require('spellchecker').isMisspelled(text));
   }
 });

@@ -1,5 +1,5 @@
 ---
-version: v0.37.8
+version: v1.0.0
 category: Development
 title: 'Setting Up Symbol Server'
 redirect_from:
@@ -34,6 +34,7 @@ redirect_from:
     - /docs/v0.37.6/development/setting-up-symbol-server/
     - /docs/v0.37.7/development/setting-up-symbol-server/
     - /docs/v0.37.8/development/setting-up-symbol-server/
+    - /docs/v1.0.0/development/setting-up-symbol-server/
     - /docs/latest/development/setting-up-symbol-server/
 source_url: 'https://github.com/electron/electron/blob/master/docs/development/setting-up-symbol-server.md'
 ---

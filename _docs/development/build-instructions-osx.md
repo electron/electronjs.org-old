@@ -1,5 +1,5 @@
 ---
-version: v0.37.8
+version: v1.0.0
 category: Development
 title: 'Build Instructions Osx'
 redirect_from:
@@ -34,6 +34,7 @@ redirect_from:
     - /docs/v0.37.6/development/build-instructions-osx/
     - /docs/v0.37.7/development/build-instructions-osx/
     - /docs/v0.37.8/development/build-instructions-osx/
+    - /docs/v1.0.0/development/build-instructions-osx/
     - /docs/latest/development/build-instructions-osx/
 source_url: 'https://github.com/electron/electron/blob/master/docs/development/build-instructions-osx.md'
 ---

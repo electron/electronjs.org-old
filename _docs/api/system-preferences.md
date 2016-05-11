@@ -1,5 +1,5 @@
 ---
-version: v0.37.8
+version: v1.0.0
 category: API
 title: 'System Preferences'
 redirect_from:
@@ -34,6 +34,7 @@ redirect_from:
     - /docs/v0.37.6/api/system-preferences/
     - /docs/v0.37.7/api/system-preferences/
     - /docs/v0.37.8/api/system-preferences/
+    - /docs/v1.0.0/api/system-preferences/
     - /docs/latest/api/system-preferences/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/system-preferences.md'
 excerpt: "Get system preferences."
@@ -100,7 +101,7 @@ not (transparent windows won't work correctly when DWM composition is disabled):
 let browserOptions = {width: 1000, height: 800};
 
 // Make the window transparent only if the platform supports it.
-if (process.platform !== 'win32' || app.isAeroGlassEnabled()) {
+if (process.platform !== 'win32' || systemPreferences.isAeroGlassEnabled()) {
   browserOptions.transparent = true;
   browserOptions.frame = false;
 }

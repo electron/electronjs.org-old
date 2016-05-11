@@ -1,5 +1,5 @@
 ---
-version: v0.37.8
+version: v1.0.0
 category: Tutorial
 title: 'Mac App Store Submission Guide'
 redirect_from:
@@ -34,6 +34,7 @@ redirect_from:
     - /docs/v0.37.6/tutorial/mac-app-store-submission-guide/
     - /docs/v0.37.7/tutorial/mac-app-store-submission-guide/
     - /docs/v0.37.8/tutorial/mac-app-store-submission-guide/
+    - /docs/v1.0.0/tutorial/mac-app-store-submission-guide/
     - /docs/latest/tutorial/mac-app-store-submission-guide/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/mac-app-store-submission-guide.md'
 excerpt: "Note: If you request a temporary-exception entitlement, be sure to follow the
@@ -110,8 +111,8 @@ And then sign your app with the following script:
 
 # Name of your app.
 APP="YourApp"
-# The path of you app to sign.
-APP_PATH="/path/to/YouApp.app"
+# The path of your app to sign.
+APP_PATH="/path/to/YourApp.app"
 # The path to the location you want to put the signed package.
 RESULT_PATH="~/Desktop/$APP.pkg"
 # The name of certificates you requested.

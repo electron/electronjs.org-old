@@ -1,5 +1,5 @@
 ---
-version: v0.37.8
+version: v1.0.0
 category: API
 title: Shell
 redirect_from:
@@ -34,6 +34,7 @@ redirect_from:
     - /docs/v0.37.6/api/shell/
     - /docs/v0.37.7/api/shell/
     - /docs/v0.37.8/api/shell/
+    - /docs/v1.0.0/api/shell/
     - /docs/latest/api/shell/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/shell.md'
 excerpt: "Manage files and URLs using their default applications."
@@ -48,7 +49,7 @@ The `shell` module provides functions related to desktop integration.
 An example of opening a URL in the user's default browser:
 
 ```javascript
-const shell = require('electron').shell;
+const {shell} = require('electron');
 
 shell.openExternal('https://github.com');
 ```

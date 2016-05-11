@@ -17,7 +17,7 @@ gems:
     - jekyll-redirect-from
     - jekyll-sitemap
     - jemoji
-latest_version: v0.37.8
+latest_version: v1.0.0
 current_node: 5.10.0
 current_chrome: 49.0.2623.75
 current_v8: 4.9.385.28
@@ -55,6 +55,7 @@ available_versions:
     - v0.37.6
     - v0.37.7
     - v0.37.8
+    - v1.0.0
 collections:
     pages: {output: true, permalink: '/:path/'}
     docs: {output: true, permalink: '/docs/:path/'}

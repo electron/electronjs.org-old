@@ -1,5 +1,5 @@
 ---
-version: v0.37.8
+version: v1.0.0
 category: API
 title: Clipboard
 redirect_from:
@@ -34,6 +34,7 @@ redirect_from:
     - /docs/v0.37.6/api/clipboard/
     - /docs/v0.37.7/api/clipboard/
     - /docs/v0.37.8/api/clipboard/
+    - /docs/v1.0.0/api/clipboard/
     - /docs/latest/api/clipboard/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/clipboard.md'
 excerpt: "Perform copy and paste operations on the system clipboard."
@@ -46,7 +47,7 @@ excerpt: "Perform copy and paste operations on the system clipboard."
 The following example shows how to write a string to the clipboard:
 
 ```javascript
-const clipboard = require('electron').clipboard;
+const {clipboard} = require('electron');
 clipboard.writeText('Example String');
 ```
 
