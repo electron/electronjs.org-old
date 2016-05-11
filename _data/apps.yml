@@ -820,3 +820,13 @@
     - "email"
     - "productivity"
   icon: "tiliq.png"
+-
+  name: "PhotoScreenSaver"
+  description: "Windows screen saver that displays a photo slideshow"
+  website: "https://github.com/RandScullard/photo-screen-saver"
+  repository: ""
+  keywords:
+    - "screensaver"
+    - "photography"
+  license: "MIT"
+  icon: "photo-screen-saver.png"
