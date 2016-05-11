@@ -1,15 +1,25 @@
 ---
 layout: default
 ---
-<div class="post">
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
+<section class='page-section blog-post strong-headers'>
+  <div class='container-narrow'>
+    <h1>{{ page.title }}</h1>
 
-  <article class="post-content">
+    <div class="who-when mt-1 mb-4">
+      <span class="octicon octicon-calendar pr-2"></span><time>{{ page.date | date: '%B %d, %Y' }}</time>
+      <a href="https://github.com/{{ page.author }}" class="author-link ml-3"><img src="https://github.com/{{ page.author }}.png?size=36" alt="{{ page.author }}" class="avatar mr-2">{{ page.author }}</a>
+      <a href="{{ site.baseurl }}/feed.xml" class="author-link ml-3">
+        <span class="octicon octicon-rss mr-1"></span>
+        <span class="label">RSS Feed</span>
+      </a>
+    </div>
+
     {{ content }}
-  </article>
 
-</div>
+    <div class="bg-shade p-4 rounded-1 mt-6 mt-lg-8">
+      <p>Have feedback on this post? Let <a target="_blank" href="https://twitter.com/{{ site.twitter_username }}">@{{ site.twitter_username }}</a> know on Twitter.</p>
+      <p>Need help or found a bug? <a target="_blank" href="{{ site.baseurl }}/contact">Contact us</a>.</p>
+    </div>
+  </div>
+</section>

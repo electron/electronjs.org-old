@@ -1,3 +1,5 @@
+var cheerio = require('cheerio')
+
 module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-link-checker');
 
@@ -17,7 +19,15 @@ module.exports = function (grunt) {
       dev: {
         site: 'localhost',
         options: {
-          initialPort: 4000
+          initialPort: 4000,
+          parseHTMLComments: false,
+          parseScriptTags: false,
+          discoverResources: function (buffer) {
+            var $ = cheerio.load(buffer.toString('utf8'))
+            return $('a[href]').map(function () {
+              return $(this).attr('href')
+            }).get()
+          }
         }
       }
     }

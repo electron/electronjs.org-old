@@ -1,20 +1,27 @@
 title: Electron
-email: atom@github.com
-description: 'Build cross platform desktop apps with web technologies'
-baseurl: 'http://electron.atom.io'
+email: electron@github.com
+description: 'Build cross platform desktop apps with JavaScript, HTML, and CSS.'
+url: 'http://electron.atom.io'
 twitter_username: ElectronJS
-github_username: atom
+github_username: electron
+future: true
+excerpt_separator: '---'
 highlighter: rouge
 markdown: kramdown
 kramdown:
     input: GFM
     syntax_highlighter: rouge
+    hard_wrap: false
 gems:
     - jekyll-redirect-from
-latest_version: v0.37.8
+    - jekyll-sitemap
+    - jemoji
+latest_version: v1.0.0
 current_node: 5.10.0
 current_chrome: 49.0.2623.75
 current_v8: 4.9.385.28
+sass:
+    style: compressed
 available_versions:
     - v0.24.0
     - v0.25.0
@@ -47,10 +54,13 @@ available_versions:
     - v0.37.6
     - v0.37.7
     - v0.37.8
+    - v1.0.0
 collections:
+    pages: {output: true, permalink: '/:path/'}
     docs: {output: true, permalink: '/docs/:path/'}
 defaults:
     - {scope: {type: docs}, values: {layout: docs}}
+    - {scope: {type: posts}, values: {layout: post, permalink: '/blog/:year/:month/:day/:title'}}
 exclude:
     - node_modules
     - README.md
@@ -58,7 +68,7 @@ exclude:
     - CNAME
     - Gemfile
     - Gemfile.lock
-    - Grunfile.js
+    - Gruntfile.js
     - package.json
     - script
     - spec

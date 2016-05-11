@@ -1,0 +1,49 @@
+
+// Releases ------------------------------
+
+.releases-tag {
+  display: inline-block;
+  margin: .3em .1em;
+  padding: .1em .4em;
+  font-size: .86em;
+  color: $main-color-subtle;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+
+  &:hover {
+    text-decoration: none;
+    color: $main-color-strong;
+    background-color: $main-bg-color-shade;
+  }
+}
+
+.releases {
+
+  // TODO: Use classes instead of styling elements
+
+  h3 {
+    margin-bottom: $spacer3;
+  }
+
+  // Tag
+  h3 a {
+    display: inline-block;
+    padding: .1em .4em;
+    color: $main-color;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    &:hover {
+      text-decoration: none;
+      color: $main-color-strong;
+      background-color: $main-bg-color-shade;
+    }
+  }
+
+  // Date
+  em {
+    margin-left: .5em;
+    font-size: $body-font-size;
+    color: $main-color-subtle;
+    font-style: normal;
+  }
+}

@@ -1,32 +1,41 @@
 ---
-layout: page
+layout: default
 ---
 
-<section class='jump-to-release'>
-  <div class='container '>
-    <div class='row'>
-      <div class='twelve columns'>
-
-      <h1>{{ site.title }} Releases</h1>
-
+<div class='subtron'>
+  <div class='container-narrow'>
+    <h1>Electron Releases</h1>
+    <p>
       {% for release in site.data.releases %}
-      <span class='jump-to-item'><a href='{{ release.html_url }}'>{{ release.tag_name }}</span></a>
+      <a class='releases-tag' href='{{ release.html_url }}'>{{ release.tag_name }}</a>
       {% endfor releases %}
-      <span class="jump-to-item"><a href="https://github.com/electron/electron/releases" target="_blank">All Releases</a></span>
-
-      </div>
-    </div>
+    </p>
+    <p>
+      <a href="https://github.com/electron/electron/releases" target="_blank"><span class="octicon octicon-tag mr-1"></span>All Releases</a>
+    </p>
   </div>
-</section>
+</div>
 
-<section class='releases'>
-  <div class='container '>
-    <div class='row'>
-      <div class='ten columns release offset-by-one'>
+<section class='page-section'>
+  <div class='container-narrow'>
+    <h3>Tip: Use Electron from the command line</h3>
+    <p>Installing the <code>electron-prebuilt</code> module as a development dependency in your project will let you use Electron from the command line at specific versions. More information on the <a href="https://github.com/electron-userland/electron-prebuilt" target="_blank">module's repository</a>.</p>
 
-        {{ content }}
+    <figure class="highlight highlight-dark text-left my-4">
+      <pre><code>$ npm install --save-dev electron-prebuilt
+<span class="c1"># Launch from inside your project's directory:</span>
+$ ./node_modules/.bin/electron .</code></pre>
+    </figure>
 
-      </div>
+    <hr>
+
+    <div class="releases">
+      {{ content }}
+    </div>
+
+    <div class="text-center">
+      <a href="https://github.com/electron/electron/releases" target="_blank"><span class="octicon octicon-tag mr-1"></span>All Releases</a>
+      <a class="ml-4" href="#"><span class="octicon octicon-arrow-up mr-1"></span>Back to index</a>
     </div>
   </div>
 </section>

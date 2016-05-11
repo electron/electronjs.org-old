@@ -1,0 +1,24 @@
+.table-ruled tr {
+  border-bottom: 1px solid $border-color;
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.table-full-width {
+  width: 100%;
+}
+
+.table-ruled td {
+  padding: $spacer2;
+  line-height: 1.4;
+  text-align: left;
+  font-size: 14px;
+}
+
+.table-with-spacious-first-column td:first-child {
+  @include breakpoint(md) {
+    padding-right: $spacer5;
+    white-space: nowrap;
+  }
+}

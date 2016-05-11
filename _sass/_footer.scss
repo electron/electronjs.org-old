@@ -1,0 +1,29 @@
+
+.footer {
+  margin-top: auto; // makes footer sticky (with flexbox)
+  border-color: darken($main-bg-color-shade, 8%);
+  background: $main-bg-color-shade;
+}
+
+.footer a {
+  color: $main-color-subtle;
+  &:hover {
+    color: $main-color;
+  }
+}
+
+.footer-nav {
+  @include breakpoint(md) {
+    float: left;
+  }
+}
+
+.footer-love {
+  @include breakpoint(md) {
+    float: right;
+  }
+  .octicon-logo-github {
+    position: relative;
+    bottom: -2px; // visually center
+  }
+}

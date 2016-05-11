@@ -16,6 +16,10 @@ var options = {
 request(options, function (error, response, body) {
   if (error) return console.log(error)
   if (response.statusCode == 200) {
+    body = body.filter(function (release) {
+      return !release.draft && !release.prerelease
+    })
+
     body.forEach(function (release) {
       delete release.assets
       delete release.author

@@ -1,17 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
   {% include head.html %}
 
   <body>
-
     {% include header.html %}
+    {% if page.url == '/' %}{% include banner-1-0.html %}{% endif %}
 
-    <div class='page-content'>
-      <div class='wrapper'>
-        {{ content }}
-      </div>
-    </div>
+    {{ content }}
 
     {% include footer.html %}
     {% include anchor_links.html %}

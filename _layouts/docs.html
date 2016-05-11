@@ -1,47 +1,62 @@
 ---
-layout: page
+layout: default
 ---
 
-<section class='jump-to-release {% if page.category != "Table of Contents" %}is-compact{% endif %}'>
-  <div class='container'>
-    <div class='row'>
-      <div class='twelve columns'>
-      <h1><img class="electron-icon" src='/images/electron-icon.svg'>Electron Documentation</h1>
+<div class='subtron text-left'>
+  <div class='container-narrow'>
+    <h1><span class="mr-3 mr-lg-4">Electron Documentation</span><span class="docs-version">{{ site.latest_version }}</span></h1>
+
+    <h4 class="docs-breadcrumbs">
+      <a href='{{ site.baseurl }}/docs/'>Docs</a>
       {% if page.category != 'ignore' %}
-      <a href='/docs/{{ page.version }}/'>{{ page.version }} {% if site.latest_version == page.version %} (Latest) {% endif %} </a> |
-      <a href='{{ page.source_url }}'>Document Source</a>
+      <span class="docs-breadcrumbs-divider">/</span>
+      <a href='{{ site.baseurl }}/docs/{{ page.category | downcase }}/'>{{ page.category }}</a>
       {% endif %}
-      </div>
-    </div>
+
+      {% if page.title != 'README' %}
+      <span class="docs-breadcrumbs-divider">/</span>
+      {% if page.breadcrumb %}
+      {{ page.breadcrumb }}
+      {% else %}
+      {{ page.title }}
+      {% endif %}
+      <!-- <a class="ml-4" href='{{ page.source_url }}'><span class="octicon octicon-pencil"></span> Edit source</a> -->
+      {% endif %}
+    </h4>
   </div>
-</section>
+</div>
 
-<section class='docs'>
-  <div class='container'>
-    <div class='row'>
-      <div class='ten columns release offset-by-one'>
-        {% if page.category != 'ignore' %}
-        <h6 class='docs-breadcrumb'>{{ page.version }} / {{ page.category }}
-          {% if page.title != 'README' %} / {{ page.title }} {% endif %}</h6>
-        {% endif %}
+{% if page.category == 'API' %}
+<div>
+  <div class="container-narrow position-relative">
+    <ul class="docs-tags">
+      <li class="docs-tag">{{ site.data.processes[page.title] }}</li>
+    </ul>
+  </div>
+</div>
+{% endif %}
 
-        {{ content }}
+<section class='page-section docs strong-headers'>
+  <div class='container-narrow'>
 
-      </div>
-    </div>
+    {{ content }}
+
+
     {% if page.category != 'ignore' %}
-    <div class='row'>
-      <div class='ten columns release offset-by-one docs-footer'>
-        <span class="octicon octicon-pencil"></span>
+    <hr>
+    <div class='text-center'>
+      <span class="d-inline-block text-left">
+        <span class="octicon octicon-pencil mr-2"></span>
         See something that needs fixing? Propose a change on the <a href='{{ page.source_url }}'>source</a>.
         <br>
-        <span class="octicon octicon-zap"></span>
-        Need a different version of the docs? See the <a href='/docs'>available versions</a>.
+        <span class="octicon octicon-zap mr-2"></span>
+        Need a different version of the docs? See the <a href='{{ site.baseurl }}/docs/versions/'>available versions</a>.
         <br>
-        <span class="octicon octicon-book"></span>
-        Want to search all the documentation at once? See the <a href='/docs/all'>single-page docs</a>.
-      </div>
+        <span class="octicon octicon-book mr-2"></span>
+        Want to search all the documentation at once? See all of the <a href='{{ site.baseurl }}/docs/all'>docs on one page</a>.
+      </span>
     </div>
     {% endif %}
+
   </div>
 </section>

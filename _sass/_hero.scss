@@ -1,0 +1,134 @@
+
+// Homepage hero -----------------------------
+
+.hero {
+  margin: 0 auto;
+  backface-visibility: hidden;
+  max-width: 900px;
+  @include breakpoint(xl) { max-width: 100%; }
+  animation: hero-animation 1s forwards;
+}
+@keyframes hero-animation {
+    0% { opacity: 0; transform: scale(.96); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+// Hero icons
+.hero-icons {
+  transform-origin: 50% 50%;
+  animation: hero-icons-animation 2s 2.5s cubic-bezier(.50, .10, .50, .90) both;
+}
+@keyframes hero-icons-animation {
+  50% { transform: scale(1.1); }
+}
+
+
+// Electron Icon
+
+$hero-icon-delay: 1s;
+$hero-icon-delay-diff: .2s;
+$hero-icon-duration: 1.2s;
+$hero-icon-all-delay: 15 * $hero-icon-delay-diff + $hero-icon-delay;
+
+
+.hero-icon {
+  fill: $jumbo-color-strong;
+  opacity: .1;
+  transform-origin: 50% 50%;
+}
+
+// Initial position
+.hero-icon.dot     { transform: translate(35px, -37px); opacity: 1; }
+.hero-icon.short-1 { transform: translate(119px, 37px) rotate(-134deg); }
+.hero-icon.short-2 { transform: translate(-20px, 61px) rotate(106deg); }
+.hero-icon.short-3 { transform: translate(65px, -18px) rotate(-17deg); }
+.hero-icon.long-1  { transform: translate(-101px, -45px) rotate(-107deg); }
+.hero-icon.long-2  { transform: translate(-35px, 8px) rotate(133deg); opacity: 1; }
+.hero-icon.long-3  { transform: translate(-64px, 20px) rotate(13deg); }
+.hero-icon.loop-1  { transform: translate(-51px, -128px); }
+.hero-icon.loop-2  { transform: translate(166px, -88px); }
+.hero-icon.loop-3  { transform: translate(79px, 21px); opacity: 1; }
+
+@for $i from 1 through 10 {
+  .hero-icon-#{$i} {
+    $_duration: $hero-icon-duration;
+    $_delay:   $hero-icon-delay + ($hero-icon-delay-diff * $i);
+    $_delay-o: $hero-icon-all-delay - ($hero-icon-delay-diff / $i);
+    animation: hero-icon-animation-t $_duration $_delay cubic-bezier(.50, 0, .20, 1) both,
+               hero-icon-animation-o .4s $_delay-o both;
+  }
+}
+
+@keyframes hero-icon-animation-t {
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+@keyframes hero-icon-animation-o {
+  100% { opacity: 1; }
+}
+
+
+
+// Apps ----------------
+
+.hero-app {
+  fill: $jumbo-color-subtle;
+  transform-origin: 50% 50%;
+}
+
+// Ripple effect
+$hero-app-delay: $hero-icon-all-delay;
+$hero-app-delay-diff: 0.04s;
+$hero-app-duration: .8s;
+$hero-app-opacity: 0.1;
+
+@keyframes hero-app-animate-left {
+    0% { transform: translateX(30px) scale(1);    opacity: $hero-app-opacity; animation-timing-function: cubic-bezier(.3,.1,.9,.5);  }
+   10% { transform: translateX(20px) scale(1.5);                              animation-timing-function: cubic-bezier(.1,.4,.2,1);             }
+  100% { transform: translateX( 0px) scale(1);    opacity: 1; }
+}
+@keyframes hero-app-animate-right {
+    0% { transform: translateX(-30px) scale(1);   opacity: $hero-app-opacity; animation-timing-function: cubic-bezier(.3,.1,.9,.5);  }
+   10% { transform: translateX(-20px) scale(1.5);                             animation-timing-function: cubic-bezier(.1,.4,.2,1);             }
+  100% { transform: translateX(  0px) scale(1);   opacity: 1; }
+}
+
+// Colorize and animate
+@for $i from 1 through 15 {
+  .hero-app-#{$i} {
+    fill: mix( $jumbo-color-subtle, $jumbo-bg-color, 80% - $i * 4% );
+
+    $_delay: $hero-app-delay + ($hero-app-delay-diff * $i);
+    @if $i % 2 == 0 {
+      animation: hero-app-animate-left $hero-app-duration $_delay both;
+    } @else {
+      animation: hero-app-animate-right $hero-app-duration $_delay both;
+    }
+  }
+}
+
+
+// Hack for Firefox --------------------------
+// Adjust initial position
+// It might be related to: https://bugzilla.mozilla.org/show_bug.cgi?id=923193
+
+@-moz-document url-prefix() {
+  .hero-icon.short-1 { transform: translate(26px, -78px) rotate(-134deg); }
+  .hero-icon.short-2 { transform: translate(40px, -42px) rotate(106deg); }
+  .hero-icon.short-3 { transform: translate(40px, -32px) rotate(-17deg); }
+  .hero-icon.long-1  { transform: translate(-124px, 4px) rotate(-107deg); }
+  .hero-icon.long-2  { transform: translate(-92px, 22px) rotate(133deg); }
+  .hero-icon.long-3  { transform: translate(-56px, 8px) rotate(13deg); }
+}
+
+
+// Hack for Edge --------------------------
+// FIXME: The transforms doesn't seem to work in Edge
+// So currently the animation is disabled to not make it look broken
+
+@supports (-ms-accelerator:true) {
+  .hero-icon {
+    opacity: 1 !important;
+    animation: none !important;
+    transform: none !important;
+  }
+}

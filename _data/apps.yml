@@ -1,0 +1,797 @@
+-
+  name: "Atom"
+  description: "A hackable text editor for the 21 st Century"
+  website: "https://atom.io"
+  repository: "https://github.com/atom/atom"
+  keywords:
+    - "web development"
+    - "writing"
+    - "editor"
+    - "programming"
+    - "git"
+    - "github"
+  license: "MIT"
+  icon: "atom.png"
+  featuredOnHomepage: true
+-
+  name: "Slack"
+  description: "A messaging app for teams"
+  website: "https://slack.com"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "slack.png"
+  featuredOnHomepage: true
+-
+  name: "Visual Studio Code"
+  description: "Open source code editor developed by Microsoft"
+  website: "https://code.visualstudio.com"
+  repository: ""
+  keywords: []
+  license: "MIT"
+  icon: "vscode.png"
+  featuredOnHomepage: true
+-
+  name: "Hive"
+  description: "Home for busy teams"
+  website: "https://hiveteams.com"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "hive.png"
+-
+  name: "Avocode"
+  description: ""
+  website: "http://avocode.com"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "avocode.png"
+-
+  name: "Mapbox"
+  description: ""
+  website: "https://www.mapbox.com"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "mapbox.png"
+  disabled: true # https://twitter.com/zeke/status/720789437945221120
+-
+  name: "Nuclide"
+  description: ""
+  website: "http://nuclide.io"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "nuclide.png"
+-
+  name: "Kitematic"
+  description: ""
+  website: "https://kitematic.com"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "kitematic.png"
+  featuredOnHomepage: true
+-
+  name: "Pixate"
+  description: ""
+  website: "http://www.pixate.com"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "pixate.png"
+-
+  name: "Wagon"
+  description: ""
+  website: "http://www.wagonhq.com"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "wagon.png"
+  featuredOnHomepage: true
+-
+  name: "Particle Dev"
+  description: ""
+  website: "https://www.particle.io/dev"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "particle.png"
+-
+  name: "Fireball"
+  description: ""
+  website: "http://fireball-x.com/en"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "fireball.png"
+-
+  name: "PopKey"
+  description: ""
+  website: "http://popkey.co/send-gifs"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "pop-key.png"
+-
+  name: "JIBO"
+  description: ""
+  website: "https://www.jibo.com"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "jibo.png"
+  featuredOnHomepage: true
+-
+  name: "Ionic Lab"
+  description: ""
+  website: "http://lab.ionic.io"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "ionic-lab.png"
+-
+  name: "Rocket.Chat"
+  description: ""
+  website: "https://rocket.chat"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "rocket-chat.png"
+-
+  name: "Microstockr"
+  description: ""
+  website: "http://microstockr.com"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "microstockr.png"
+-
+  name: "GitBook"
+  description: ""
+  website: "https://www.gitbook.com"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "gitbook.png"
+-
+  name: "Nylas N1"
+  description: ""
+  website: "https://www.nylas.com"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "nylas.png"
+  featuredOnHomepage: true
+-
+  name: "GitKraken"
+  description: ""
+  website: "http://www.gitkraken.com"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "gitkraken.png"
+  featuredOnHomepage: true
+-
+  name: "AIRTAME"
+  description: ""
+  website: "http://www.airtame.com"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "airtame.png"
+-
+  name: "Spreaker Studio"
+  description: ""
+  website: "https://www.spreaker.com/download"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "spreaker-studio.png"
+-
+  name: "Kakapo"
+  description: ""
+  website: "http://www.kakapo.co/app.html#desktop"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "kakapo.png"
+-
+  name: "Zoommy"
+  description: ""
+  website: "http://zoommyapp.com"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "zoommy.png"
+-
+  name: "Gitify"
+  description: ""
+  website: "http://www.gitify.io"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "gitify.png"
+-
+  name: "Light Table"
+  description: ""
+  website: "http://www.lighttable.com"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "lighttable.png"
+-
+  name: "SteelSeries Engine 3"
+  description: ""
+  website: "https://steelseries.com/engine"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "steelseries-engine-3.png"
+-
+  name: "Yhat Rodeo"
+  description: ""
+  website: "http://www.yhat.com/products/rodeo"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "yhat-rodeo.png"
+-
+  name: "Wire"
+  description: ""
+  website: "https://wire.com"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "wire.png"
+-
+  name: "Mancy"
+  description: ""
+  website: "http://www.mancy-re.pl"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "mancy.png"
+-
+  name: "Boost"
+  description: ""
+  website: "https://b00st.io"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "boost.png"
+-
+  name: "Caret"
+  description: ""
+  website: "http://caret.io"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "caret.png"
+  featuredOnHomepage: true
+-
+  name: "Tweetman"
+  description: ""
+  website: "https://tweetman.kksg.net/en"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "tweetman.png"
+-
+  name: "MdNote"
+  description: ""
+  website: "http://md-note.com"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "mdnote.png"
+-
+  name: "WordPress.com"
+  description: ""
+  website: "https://desktop.wordpress.com"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "wordpress.png"
+  featuredOnHomepage: true
+-
+  name: "Hozz"
+  description: ""
+  website: "http://ppoffice.github.io/Hozz"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "hozz.png"
+-
+  name: "Gala"
+  description: ""
+  website: "http://www.getgala.me"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "gala.png"
+-
+  name: "Mongotron"
+  description: ""
+  website: "http://www.mongotron.io"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "mongotron.png"
+-
+  name: "Sync"
+  description: ""
+  website: "https://www.wantedly.com/sync"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "sync.png"
+-
+  name: "Abricotine"
+  description: ""
+  website: "http://abricotine.brrd.fr"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "abricotine.png"
+-
+  name: "Discord"
+  description: ""
+  website: "http://discordapp.com"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "discord.png"
+-
+  name: "Turbo Download Manager"
+  description: ""
+  website: "http://add0n.com/turbo-download-manager.html"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "tdm.png"
+-
+  name: "KeeWeb"
+  description: ""
+  website: "https://keeweb.info"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "keeweb.png"
+-
+  name: "Flow"
+  description: ""
+  website: "https://www.getflow.com"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "flow.png"
+  featuredOnHomepage: true
+-
+  name: "Gif Maker"
+  description: ""
+  website: "http://gifmaker.io"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "gif-maker.png"
+-
+  name: "Nimble"
+  description: ""
+  website: "http://madebybright.com"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "nimble.png"
+-
+  name: "Remember"
+  description: ""
+  website: "https://rememberapp.co.kr"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "remember.png"
+-
+  name: "Presets.io"
+  description: ""
+  website: "https://presets.io"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "presets.png"
+-
+  name: "Argo"
+  description: ""
+  website: "http://argo.js.org"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "argo.png"
+-
+  name: "Postman"
+  description: ""
+  website: "https://www.getpostman.com/"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "postman.png"
+-
+  name: "Superpowers — HTML5 2D+3D game maker"
+  description: ""
+  website: "http://superpowers-html5.com/"
+  repository: ""
+  keywords:
+    - "games"
+  license: ""
+  icon: "superpowers.png"
+-
+  name: "TagSpaces"
+  description: ""
+  website: "http://tagspaces.org/"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "tagspaces.png"
+-
+  name: "PraControl"
+  description: ""
+  website: "http://pracontrol.pravdomil.cz"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "pracontrol.png"
+-
+  name: "StopLight"
+  description: ""
+  website: "https://stoplight.io"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "stoplight.png"
+-
+  name: "Chronocube"
+  description: ""
+  website: "https://pablopunk.github.io/chronocube"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "chronocube.png"
+-
+  name: "Netbeast"
+  description: ""
+  website: "https://netbeast.co"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "netbeast.png"
+-
+  name: "Egret Wing"
+  description: ""
+  website: "http://www.egret.com/products-wing"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "wing.png"
+-
+  name: "CatLight"
+  description: ""
+  website: "https://catlight.io"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "catlight.png"
+-
+  name: "Brave Browser"
+  description: ""
+  website: "https://brave.com/"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "brave.png"
+  featuredOnHomepage: true
+-
+  name: "Google Play Music Desktop Player"
+  description: ""
+  website: "http://www.googleplaymusicdesktopplayer.com/"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "googleplaymusicdesktopplayer.png"
+  featuredOnHomepage: false
+-
+  name: "World History AP"
+  description: ""
+  website: "http://whap.tk"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "whap.png"
+  featuredOnHomepage: false
+-
+  name: "Hain"
+  description: ""
+  website: "https://github.com/appetizermonster/hain"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "hain.png"
+  featuredOnHomepage: false
+-
+  name: "1Clipboard"
+  description: ""
+  website: "http://1clipboard.io"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "1clipboard.png"
+  featuredOnHomepage: true
+-
+  name: "Open Stage Control"
+  description: ""
+  website: "https://jean-emmanuel.github.io/open-stage-control"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "open-stage-control.png"
+  featuredOnHomepage: false
+-
+  name: "Curse"
+  description: ""
+  website: "https://www.curse.com"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "curse.png"
+  featuredOnHomepage: false
+-
+  name: "MakeAppIcon Desktop"
+  description: ""
+  website: "https://www.makeappicon.com/desktop"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "makeappicon.png"
+  featuredOnHomepage: false
+-
+  name: "TweakStyle"
+  description: "The next code editor"
+  website: "https://tweakstyle.com"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "TweakStyle.png"
+  featuredOnHomepage: false
+-
+  name: "WebTorrent"
+  description: "The streaming torrent client"
+  website: "https://webtorrent.io/desktop"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "WebTorrent.png"
+  featuredOnHomepage: true
+-
+  name: "HTTPS Checker"
+  description: ""
+  website: "https://www.ecommerce.co.uk/httpschecker"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "httpschecker.png"
+  featuredOnHomepage: false
+-
+  name: "Mattermost"
+  description: ""
+  website: "https://www.mattermost.org/"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "mattermost.png"
+  featuredOnHomepage: false
+-
+  name: "BearyChat"
+  description: ""
+  website: "https://bearychat.com"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "bearychat.png"
+  featuredOnHomepage: false
+-
+  name: "Explorer"
+  description: ""
+  website: "https://github.com/jfbouzereau/explorer"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "explorer.png"
+  featuredOnHomepage: false
+-
+  name: "MockingBot"
+  description: "The Missing Wireframing Tool For Mobile"
+  website: "https://mockingbot.com"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "mockingbot.png"
+  featuredOnHomepage: false
+-
+  name: "Fastlane"
+  description: "Reserve an Uber from your Mac"
+  website: "https://fastlaneapp.co"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "fastlane.png"
+  featuredOnHomepage: false
+-
+  name: "Datazenit"
+  description: "Modern database administration tool"
+  website: "https://datazenit.com"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "datazenit.png"
+  featuredOnHomepage: false
+-
+  name: "Cryptocat"
+  description: "Free secure chat software"
+  website: "https://crypto.cat"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "cryptocat.png"
+-
+  name: "Tofino"
+  description: "Experimental web browser from Mozilla"
+  website: "https://github.com/mozilla/tofino"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "tofino.png"
+-
+  name: "Crypter"
+  description: "Simple, convenient and secure encryption client"
+  website: "https://github.com/HR/Crypter"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "crypter.png"
+-
+  name: "DeckHub"
+  description: "TweetDeck style desktop client for GitHub"
+  website: "https://getdeckhub.com"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "deckhub.png"
+-
+  name: "AntSword"
+  description: "Cross platform website management tools"
+  website: "http://uyu.us"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "antsword.png"
+-
+  name: "Spectrum"
+  description: "Useful logging for developers"
+  website: "https://www.devspectrum.com"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "spectrum.png"
+-
+  name: "Ghost"
+  description: "A professional publishing platform"
+  website: "https://ghost.org"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "ghost.png"
+  featuredOnHomepage: true
+-
+  name: "Aipo.com"
+  description: ""
+  website: "http://www.aipo.com"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "aipo.png"
+-
+  name: "Friends"
+  description: "Peer to peer chat"
+  website: "http://moose-team.github.io/friends"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "friends.png"
+-
+  name: "Mojibar"
+  description: "Emoji searcher menubar app"
+  website: "https://github.com/muan/mojibar"
+  repository: "https://github.com/muan/mojibar"
+  keywords: ["emoji", "menubar", "open source"]
+  license: "MIT"
+  icon: "mojibar.png"
+  featuredOnHomepage: true
+-
+  name: "Playback"
+  description: "Experimental video player"
+  website: "https://github.com/mafintosh/playback"
+  repository: ""
+  keywords:
+    - "video"
+    - "player"
+    - "audio"
+  license: ""
+  icon: "playback.png"
+-
+  name: "ScreenCat"
+  description: "WebRTC screensharing"
+  website: "https://github.com/maxogden/screencat"
+  repository: ""
+  keywords:
+    - "screensharing"
+    - "collaboration"
+    - "WebRTC"
+  license: ""
+  icon: "screencat.png"
+-
+  name: "Yeoman"
+  description: "Scaffolding tool for webapps"
+  website: "https://github.com/yeoman/yeoman-app"
+  repository: ""
+  keywords:
+    - "web development"
+    - "scaffolding"
+    - "productivity"
+  license: ""
+  icon: "yeoman.png"
+-
+  name: "Laverna"
+  description: "Write &amp; organize Markdown"
+  website: "https://laverna.cc"
+  repository: ""
+  keywords:
+    - "writing"
+    - "markdown"
+    - "editor"
+  license: ""
+  icon: "laverna.png"
+-
+  name: "Electron Packager"
+  description: "Package your apps"
+  website: "https://github.com/electron-userland/electron-packager"
+  featuredOpenSource: true
+-
+  name: "Electron Builder"
+  description: "Deploy your apps"
+  website: "https://github.com/electron-userland/electron-builder"
+  featuredOpenSource: true
+-
+  name: "Spectron"
+  description: "Test your apps"
+  website: "http://electron.atom.io/spectron"
+  featuredOpenSource: true
+-
+  name: "Devtron"
+  description: "Debug your apps"
+  website: "http://electron.atom.io/devtron"
+  featuredOpenSource: true
+-
+  name: "Electron Prebuilt"
+  description: "Install Electron"
+  website: "https://github.com/electron-userland/electron-prebuilt"
+  featuredOpenSource: true
+-
+  name: "Menubar"
+  description: "Create menubar apps"
+  website: "https://github.com/maxogden/menubar"
+  repository: ""
+  keywords:
+    - "menubar"
+  license: ""
+  icon: ""
+  featuredOpenSource: true

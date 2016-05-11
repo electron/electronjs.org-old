@@ -1,0 +1,60 @@
+
+// Site Header
+
+.site-header {
+  color: $jumbo-color;
+  background-color: lighten($jumbo-bg-color, 2%);
+  border-bottom-color: darken($jumbo-bg-color, 8%);
+  -webkit-font-smoothing: antialiased;
+
+  padding-left: $spacer3;
+  padding-right: $spacer3;
+  @include breakpoint(lg) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.site-header a {
+  color: inherit;
+  &.active,
+  &:hover {
+    color: $jumbo-color-strong;
+  }
+  &:active {
+    color: $jumbo-color-subtle;
+  }
+}
+
+// Electron icon
+.site-header-icon {
+  width: 48px;
+  height: 48px;
+  vertical-align: middle;
+  margin-top: -4px; // visually align
+  margin-right: 0.4em;
+
+  .svg-fill {
+    fill: currentColor;
+  }
+  .svg-stroke {
+    stroke: currentColor;
+    stroke-width: 1.2;
+    stroke-linecap: round;
+  }
+}
+
+.site-header-nav .mega-octicon {
+  min-width: 32px; // stops jumping of the nav when loading the page
+}
+
+// keep it centered a bit longer
+@media (min-width: 700px) {
+  .site-header { text-align: center; }
+  .site-header-logo,
+  .site-header-nav {
+    float: none;
+  }
+}
+.site-header-logo { @include breakpoint(lg) { float: left; } }
+.site-header-nav  { @include breakpoint(lg) { float: right; } }

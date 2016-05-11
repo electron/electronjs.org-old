@@ -1,0 +1,83 @@
+
+// Jumbotron -----------------------------
+
+.jumbotron {
+  color: $jumbo-color;
+  background-color: $jumbo-bg-color;
+  -webkit-font-smoothing: antialiased;
+}
+
+// remove shadow
+.jumbotron:after {
+  content: none;
+}
+
+.jumbotron-lead {
+  color: $jumbo-color-strong;
+  font-size: 1.4rem;
+  font-weight: 300;
+
+  @include breakpoint(md) { font-size: 1.8rem; }
+  @include breakpoint(lg) { font-size: 2.4rem; }
+  @include breakpoint(xl) { font-size: 3rem; }
+}
+
+.jumbotron-lead-muted {
+  color: $jumbo-color-subtle;
+  @include breakpoint(md) {
+    display: block;
+    font-size: .8em;
+  }
+}
+
+
+
+// Subtron -----------------------------
+// Used for sub headers on most pages
+
+.subtron {
+  position: relative;
+  text-align: center;
+  border: 1px solid darken($sub-bg-color, 8%);
+  background-color: $sub-bg-color;
+
+  padding: $spacer3;
+  @include breakpoint(sm) { padding: $spacer4; }
+  @include breakpoint(md) { padding: $spacer5; }
+  @include breakpoint(lg) { padding: $spacer6; }
+  @include breakpoint(xl) { padding: $spacer8; }
+
+  h1 {
+    margin: 0 0 .3em 0;
+    font-size: $body-font-size * 1.75;
+    @include breakpoint(md) { font-size: $body-font-size * 2; }
+    @include breakpoint(lg) { font-size: $body-font-size * 2.5; }
+    @include breakpoint(xl) { font-size: $body-font-size * 3; }
+
+    &:only-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+// Minitron -----------------------------
+
+.minitron {
+  padding: $spacer3;
+  color: $mini-color;
+  background-color: $mini-bg-color;
+
+  a {
+    color: $mini-color-link;
+  }
+}
+
+.minitron-title {
+  margin: 0;
+  color: inherit;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  -webkit-font-smoothing: subpixel-antialiased;
+}

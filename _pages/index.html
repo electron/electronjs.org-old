@@ -1,0 +1,193 @@
+---
+permalink: /
+layout: default
+excerpt: Build cross platform desktop apps with JavaScript, HTML, and CSS.
+---
+
+  <script src="{{ site.baseurl }}/js/vendor/ua-parser-js-0.7.10.js"></script>
+  <script src="{{ site.baseurl }}/js/index.js"></script>
+
+  <div class="jumbotron jumbotron-home text-center">
+    <div class="container">
+      {% include hero.html %}
+      <p class='jumbotron-lead'>Build cross platform desktop apps
+        <span class='jumbotron-lead-muted'>with JavaScript, HTML, and CSS</span>
+      </p>
+    </div>
+  </div>
+
+  <div class="subtron py-4 text-center">
+    <div class="container">
+      <div id="electron-versions" class="electron-versions">
+        <span class="electron-versions-main">Electron: <strong>{{ site.latest_version }}</strong></span>
+        <span>Node: <strong>{{ site.current_node }}</strong></span>
+        <span>Chromium: <strong>{{ site.current_chrome }}</strong></span>
+        <span>V8: <strong>{{ site.current_v8 }}</strong></span>
+      </div>
+    </div>
+  </div>
+
+  <section class="page-section page-section-spacious" id='electron'>
+    <div class="container-narrow">
+      <h1 class="text-center-sm">It's easier than you think</h1>
+      <p class="lead text-center-sm">
+        If you can build a website, you can build a desktop app. Electron is a
+        framework for creating native applications with web technologies like
+        JavaScript, HTML, and CSS. It takes care of the hard parts so you can
+        focus on the core of your application.
+      </p>
+
+      <p class="text-center-sm mt-4">
+        <a class="btn btn-lg btn-outline-themed" href="https://youtu.be/8YP_nOCO-4Q" target="_blank">
+          <span class="octicon octicon-eye mr-1"></span>
+          <span class="label">Watch the video</span>
+        </a>
+      </p>
+
+      <hr>
+
+      <div class="row text-center text-small mt-6">
+        <div class="col-xs-12 col-sm-4">
+          <img class="home-illu" role="presentation" src="{{ site.baseurl }}/images/web-tech.svg" aria-hidden="true">
+          <h3 class="mb-2 mt-0">Web Technologies</h3>
+          <p>Electron uses <strong>Chromium</strong> and <strong>Node.js</strong> so you can build your app with <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript.</strong></p>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <img class="home-illu" role="presentation" src="{{ site.baseurl }}/images/open-source.svg" aria-hidden="true">
+          <h3 class="mb-2 mt-0">Open Source</h3>
+          <p>Electron is an open source project maintained by <strong>GitHub</strong> and an active <strong>community</strong> of contributors.</p>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <img class="home-illu" role="presentation" src="{{ site.baseurl }}/images/cross-platform.svg" aria-hidden="true">
+          <h3 class="mb-2 mt-0">Cross Platform</h3>
+          <p>Compatible with <strong>Mac</strong>, <strong>Windows</strong>, and <strong>Linux</strong>, Electron apps build and run on three platforms.</p>
+        </div>
+      </div>
+
+      <div class="row text-center mt-6 mb-4">
+        <h2>The hard parts made easy</h2>
+      </div>
+
+      <div class="row text-center text-small mt-3">
+        <div class='col-xs-12 col-sm-4 col-md-2 offset-md-1 mb-xs-4 mb-md-0 hero-feature'>
+          <a class="hero-link" href="{{ site.baseurl }}/docs/api/auto-updater/">
+            <span class="octicon hero-octicon octicon-squirrel" aria-hidden="true"></span>
+            Automatic updates
+          </a>
+        </div>
+        <div class='col-xs-12 col-sm-4 col-md-2 mb-xs-4 mb-md-0 hero-feature'>
+          <a class="hero-link" href="{{ site.baseurl }}/docs/api/menu/">
+            <span class="octicon hero-octicon octicon-device-desktop" aria-hidden="true"></span>
+            Native menus<br>&amp; notifications
+          </a>
+        </div>
+        <div class='col-xs-12 col-sm-4 col-md-2 mb-xs-4 mb-md-0 hero-feature'>
+          <a class="hero-link" href="{{ site.baseurl }}/docs/api/crash-reporter/">
+            <span class="octicon hero-octicon octicon-bug" style="padding-left:2px" aria-hidden="true"></span>
+            App crash<br>reporting
+          </a>
+        </div>
+        <div class='col-xs-12 col-sm-4 offset-sm-2 col-md-2 offset-md-0 mb-xs-4 mb-md-0 hero-feature'>
+          <a class="hero-link" href="{{ site.baseurl }}/docs/api/content-tracing/">
+            <span class="octicon hero-octicon octicon-tools" aria-hidden="true"></span>
+            Debugging<br>&amp; profiling
+          </a>
+        </div>
+        <div class='col-xs-12 col-sm-4 col-md-2 mb-xs-4 mb-md-0 hero-feature'>
+          <a class="hero-link" href="{{ site.baseurl }}/docs/api/auto-updater/#windows">
+            <span class="octicon hero-octicon octicon-gift" style="padding-right:2px" aria-hidden="true"></span>
+            Windows installers
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class='page-section page-section-spacious bg-shade' id='get-started'>
+    <div class='container-narrow text-center'>
+      <h1>Get started</h1>
+      <p class="lead">
+        To get started with Electron, check out the resources below. Learn how to wrap your web app with Electron, access all the APIs, and generate installers.
+      </p>
+
+
+      <div class='row mt-8'>
+        <div class='col-xs-12 col-md-5'>
+          <a href="https://github.com/electron/electron-api-demos/releases">
+            <div class="app-frame py-4 px-6">
+              <img alt="Screenshot of Electron API Demos app" src='{{ site.baseurl }}/images/electron-api-demos.png'>
+            </div>
+          </a>
+        </div>
+        <div class='col-xs-12 col-md-7 text-left'>
+          <h3 class="mt-1 mb-3">Explore the Electron APIs</h3>
+          <p>The <a href="https://github.com/electron/electron-api-demos">Electron API Demos app</a> interactively demonstrates the most important features of the Electron API. See what's possible with Electron with sample code and helpful tips for building your app.</p>
+          <p>
+            <a id="download-latest-release" class="btn btn-lg btn-outline-themed" href="https://github.com/electron/electron-api-demos/releases">
+              <span class="octicon octicon-desktop-download mr-1"></span>
+              <span class="label">Download from GitHub</span>
+            </a>
+            <p id="download-alternatives" class="text-sm" style="display:none;">
+              <a href="https://github.com/electron/electron-api-demos/releases">View all releases</a>
+              on GitHub
+           </p>
+          </p>
+        </div>
+      </div>
+
+      <hr>
+
+      <h3 class="mb-3">Spin up the <a href='https://github.com/electron/electron-quick-start' target='_blank'>Quick Start</a> app to see Electron in action:</h3>
+      <p>A minimal Electron app with helpful notations.</p>
+      <figure class="highlight highlight-dark text-left my-4">
+<pre><code><span class="c1"># Clone the Quick Start repository</span>
+$ git clone https://github.com/electron/electron-quick-start
+
+<span class="c1"># Go into the repository</span>
+$ cd electron-quick-start
+
+<span class="c1"># Install the dependencies and run</span>
+$ npm install &amp;&amp; npm start</code></pre>
+      </figure>
+      <h3>Or dive deeper and read the <a href='{{ site.baseurl }}/docs/'>documentation</a>.</h3>
+
+      <h3 class="pt-4">Need Help?</h3>
+      <p>Ask questions in the <a href='https://discuss.atom.io/c/electron'>Discuss</a> forum or our <a href='http://atom-slack.herokuapp.com/'>Slack</a> channel. Follow <a href="https://twitter.com/{{ site.twitter_username }}">@{{ site.twitter_username }}</a> on Twitter for important announcements. Need to privately reach out? Email <a href="mailto:electron@github.com">electron@github.com</a>.</p>
+
+    </div>
+  </section>
+
+  <section class='page-section page-section-spacious' id='apps'>
+    <div class="container-narrow text-center">
+      <h1>Apps built on Electron</h1>
+      <p class="lead">
+        With Electron, creating a desktop application for your company or idea is easy. Initially developed for GitHub's <a href='https://atom.io' target='_blank'>Atom editor</a>, Electron has since been used to create applications by companies like Microsoft, Facebook, Slack, and Docker.
+      </p>
+
+      <hr>
+
+      <div>
+        <div class="mb-4">
+          {% for app in site.data.apps %}
+            {% if app.featuredOnHomepage %}
+              {% include featured_app.html %}
+            {% endif %}
+          {% endfor %}
+        </div>
+        <p class="mt-6">
+          <a href='{{ site.baseurl }}/apps'>View more apps</a>
+            or
+           <a href="https://github.com/electron/electron.atom.io/blob/gh-pages/CONTRIBUTING.md#adding-an-app-or-project-to-the-site">submit your own</a>.
+        </p>
+      </div>
+
+      <hr>
+
+      <div>
+        {% include featured_open_source_apps.html %}
+      </div>
+
+    </div>
+  </section>

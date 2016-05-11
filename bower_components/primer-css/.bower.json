@@ -1,0 +1,30 @@
+{
+  "name": "primer-css",
+  "ignore": [
+    "docs/",
+    ".gitignore",
+    ".hound.yml",
+    ".scss-lint.yml",
+    "_config.yml",
+    "Gemfile",
+    "Gemfile.lock",
+    "Gruntfile.js"
+  ],
+  "main": [
+    "scss/primer.scss"
+  ],
+  "dependencies": {
+    "octicons": "*"
+  },
+  "homepage": "https://github.com/primer/primer",
+  "version": "3.0.1",
+  "_release": "3.0.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v3.0.1",
+    "commit": "b3f3c02ad33df4945a2419f523b53e04324ea334"
+  },
+  "_source": "https://github.com/primer/primer.git",
+  "_target": "*",
+  "_originalSource": "primer-css"
+}
