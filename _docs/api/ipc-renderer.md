@@ -1,5 +1,5 @@
 ---
-version: v1.0.0
+version: v1.0.1
 category: API
 title: 'Ipc Renderer'
 redirect_from:
@@ -35,6 +35,7 @@ redirect_from:
     - /docs/v0.37.7/api/ipc-renderer/
     - /docs/v0.37.8/api/ipc-renderer/
     - /docs/v1.0.0/api/ipc-renderer/
+    - /docs/v1.0.1/api/ipc-renderer/
     - /docs/latest/api/ipc-renderer/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/ipc-renderer.md'
 excerpt: "Communicate asynchronously from a renderer process to the main process."

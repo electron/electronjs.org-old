@@ -1,5 +1,5 @@
 ---
-version: v1.0.0
+version: v1.0.1
 category: API
 title: Tray
 redirect_from:
@@ -35,6 +35,7 @@ redirect_from:
     - /docs/v0.37.7/api/tray/
     - /docs/v0.37.8/api/tray/
     - /docs/v1.0.0/api/tray/
+    - /docs/v1.0.1/api/tray/
     - /docs/latest/api/tray/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/tray.md'
 excerpt: "Add icons and context menus to the system&apos;s notification area."
@@ -45,20 +46,24 @@ excerpt: "Add icons and context menus to the system&apos;s notification area."
 > Add icons and context menus to the system's notification area.
 
 ```javascript
-const {app, Menu, Tray} = require('electron');
+const electron = require('electron');
+const app = electron.app;
+const Menu = electron.Menu;
+const Tray = electron.Tray;
 
-let appIcon = null;
-app.on('ready', () => {
+var appIcon = null;
+app.on('ready', function(){
   appIcon = new Tray('/path/to/my/icon');
-  const contextMenu = Menu.buildFromTemplate([
-    {label: 'Item1', type: 'radio'},
-    {label: 'Item2', type: 'radio'},
-    {label: 'Item3', type: 'radio', checked: true},
-    {label: 'Item4', type: 'radio'}
+  var contextMenu = Menu.buildFromTemplate([
+    { label: 'Item1', type: 'radio' },
+    { label: 'Item2', type: 'radio' },
+    { label: 'Item3', type: 'radio', checked: true },
+    { label: 'Item4', type: 'radio' }
   ]);
   appIcon.setToolTip('This is my application.');
   appIcon.setContextMenu(contextMenu);
 });
+
 ```
 
 __Platform limitations:__

@@ -1,5 +1,5 @@
 ---
-version: v1.0.0
+version: v1.0.1
 category: API
 title: 'Ipc Main'
 redirect_from:
@@ -35,6 +35,7 @@ redirect_from:
     - /docs/v0.37.7/api/ipc-main/
     - /docs/v0.37.8/api/ipc-main/
     - /docs/v1.0.0/api/ipc-main/
+    - /docs/v1.0.1/api/ipc-main/
     - /docs/latest/api/ipc-main/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/ipc-main.md'
 excerpt: "Communicate asynchronously from the main process to renderer processes."
@@ -65,13 +66,13 @@ processes:
 
 ```javascript
 // In main process.
-const {ipcMain} = require('electron');
-ipcMain.on('asynchronous-message', (event, arg) => {
+const ipcMain = require('electron').ipcMain;
+ipcMain.on('asynchronous-message', function(event, arg) {
   console.log(arg);  // prints "ping"
   event.sender.send('asynchronous-reply', 'pong');
 });
 
-ipcMain.on('synchronous-message', (event, arg) => {
+ipcMain.on('synchronous-message', function(event, arg) {
   console.log(arg);  // prints "ping"
   event.returnValue = 'pong';
 });
@@ -79,10 +80,10 @@ ipcMain.on('synchronous-message', (event, arg) => {
 
 ```javascript
 // In renderer process (web page).
-const {ipcRenderer} = require('electron');
+const ipcRenderer = require('electron').ipcRenderer;
 console.log(ipcRenderer.sendSync('synchronous-message', 'ping')); // prints "pong"
 
-ipcRenderer.on('asynchronous-reply', (event, arg) => {
+ipcRenderer.on('asynchronous-reply', function(event, arg) {
   console.log(arg); // prints "pong"
 });
 ipcRenderer.send('asynchronous-message', 'ping');

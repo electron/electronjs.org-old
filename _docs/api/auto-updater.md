@@ -1,5 +1,5 @@
 ---
-version: v1.0.0
+version: v1.0.1
 category: API
 title: 'Auto Updater'
 redirect_from:
@@ -35,6 +35,7 @@ redirect_from:
     - /docs/v0.37.7/api/auto-updater/
     - /docs/v0.37.8/api/auto-updater/
     - /docs/v1.0.0/api/auto-updater/
+    - /docs/v1.0.1/api/auto-updater/
     - /docs/latest/api/auto-updater/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/auto-updater.md'
 excerpt: "Enable apps to automatically update themselves."
@@ -72,8 +73,9 @@ This is a requirement of `Squirrel.Mac`.
 ### Windows
 
 On Windows, you have to install your app into a user's machine before you can
-use the auto-updater, so it is recommended to use
-[grunt-electron-installer][installer] module to generate a Windows installer.
+use the `autoUpdater`, so it is recommended that you use the
+[electron-winstaller][installer-lib] module or the [grunt-electron-installer][installer]
+package to generate a Windows installer.
 
 The installer generated with Squirrel will create a shortcut icon with an
 [Application User Model ID][app-user-model-id] in the format of
@@ -153,7 +155,8 @@ should only be called after `update-downloaded` has been emitted.
 [squirrel-mac]: https://github.com/Squirrel/Squirrel.Mac
 [server-support]: https://github.com/Squirrel/Squirrel.Mac#server-support
 [squirrel-windows]: https://github.com/Squirrel/Squirrel.Windows
-[installer]: https://github.com/atom/grunt-electron-installer
+[installer]: https://github.com/electron/grunt-electron-installer
+[installer-lib]: https://github.com/electron/windows-installer
 [app-user-model-id]: https://msdn.microsoft.com/en-us/library/windows/desktop/dd378459(v=vs.85).aspx
 [electron-release-server]: https://github.com/ArekSredzki/electron-release-server
 [squirrel-updates-server]: https://github.com/Aluxian/squirrel-updates-server

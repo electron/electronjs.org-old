@@ -1,5 +1,5 @@
 ---
-version: v1.0.0
+version: v1.0.1
 category: API
 title: Screen
 redirect_from:
@@ -35,6 +35,7 @@ redirect_from:
     - /docs/v0.37.7/api/screen/
     - /docs/v0.37.8/api/screen/
     - /docs/v1.0.0/api/screen/
+    - /docs/v1.0.1/api/screen/
     - /docs/latest/api/screen/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/screen.md'
 excerpt: "Retrieve information about screen size, displays, cursor position, etc."
@@ -50,40 +51,46 @@ emitted (by invoking or requiring it).
 `screen` is an [EventEmitter](http://nodejs.org/api/events.html#events_class_events_eventemitter).
 
 **Note:** In the renderer / DevTools, `window.screen` is a reserved DOM
-property, so writing `let {screen} = require('electron')` will not work.
+property, so writing `var screen = require('electron').screen` will not work.
 In our examples below, we use `electronScreen` as the variable name instead.
 An example of creating a window that fills the whole screen:
 
 ```javascript
-const {app, BrowserWindow, screen: electronScreen} = require('electron');
+const electron = require('electron');
+const app = electron.app;
+const BrowserWindow = electron.BrowserWindow;
 
-let win;
+var mainWindow;
 
-app.on('ready', () => {
-  const {width, height} = electronScreen.getPrimaryDisplay().workAreaSize;
-  win = new BrowserWindow({width, height});
+app.on('ready', function() {
+  var electronScreen = electron.screen;
+  var size = electronScreen.getPrimaryDisplay().workAreaSize;
+  mainWindow = new BrowserWindow({ width: size.width, height: size.height });
 });
 ```
 
 Another example of creating a window in the external display:
 
 ```javascript
-const {app, BrowserWindow, screen: electronScreen} = require('electron');
+const electron = require('electron');
+const app = electron.app;
+const BrowserWindow = electron.BrowserWindow;
 
-let win;
+var mainWindow;
 
-app.on('ready', () => {
-  let displays = electronScreen.getAllDisplays();
-  let externalDisplay = null;
-  for (let i in displays) {
-    if (displays[i].bounds.x !== 0 || displays[i].bounds.y !== 0) {
+app.on('ready', function() {
+  var electronScreen = electron.screen;
+  var displays = electronScreen.getAllDisplays();
+  var externalDisplay = null;
+  for (var i in displays) {
+    if (displays[i].bounds.x != 0 || displays[i].bounds.y != 0) {
       externalDisplay = displays[i];
       break;
     }
   }
 
   if (externalDisplay) {
-    win = new BrowserWindow({
+    mainWindow = new BrowserWindow({
       x: externalDisplay.bounds.x + 50,
       y: externalDisplay.bounds.y + 50
     });

@@ -1,5 +1,5 @@
 ---
-version: v1.0.0
+version: v1.0.1
 category: Development
 title: 'Coding Style'
 redirect_from:
@@ -35,6 +35,7 @@ redirect_from:
     - /docs/v0.37.7/development/coding-style/
     - /docs/v0.37.8/development/coding-style/
     - /docs/v1.0.0/development/coding-style/
+    - /docs/v1.0.1/development/coding-style/
     - /docs/latest/development/coding-style/
 source_url: 'https://github.com/electron/electron/blob/master/docs/development/coding-style.md'
 ---

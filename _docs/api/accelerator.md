@@ -1,5 +1,5 @@
 ---
-version: v1.0.0
+version: v1.0.1
 category: API
 title: Accelerator
 redirect_from:
@@ -35,6 +35,7 @@ redirect_from:
     - /docs/v0.37.7/api/accelerator/
     - /docs/v0.37.8/api/accelerator/
     - /docs/v1.0.0/api/accelerator/
+    - /docs/v1.0.1/api/accelerator/
     - /docs/latest/api/accelerator/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/accelerator.md'
 excerpt: "Define keyboard shortcuts."

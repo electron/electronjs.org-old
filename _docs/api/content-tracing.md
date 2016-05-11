@@ -1,5 +1,5 @@
 ---
-version: v1.0.0
+version: v1.0.1
 category: API
 title: 'Content Tracing'
 redirect_from:
@@ -35,6 +35,7 @@ redirect_from:
     - /docs/v0.37.7/api/content-tracing/
     - /docs/v0.37.8/api/content-tracing/
     - /docs/v1.0.0/api/content-tracing/
+    - /docs/v1.0.1/api/content-tracing/
     - /docs/latest/api/content-tracing/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/content-tracing.md'
 excerpt: "Collect tracing data from Chromium&apos;s content module for finding performance
@@ -51,18 +52,18 @@ This module does not include a web interface so you need to open
 result.
 
 ```javascript
-const {contentTracing} = require('electron');
+const contentTracing = require('electron').contentTracing;
 
 const options = {
   categoryFilter: '*',
   traceOptions: 'record-until-full,enable-sampling'
-};
+}
 
-contentTracing.startRecording(options, () => {
+contentTracing.startRecording(options, function() {
   console.log('Tracing started');
 
-  setTimeout(() => {
-    contentTracing.stopRecording('', (path) => {
+  setTimeout(function() {
+    contentTracing.stopRecording('', function(path) {
       console.log('Tracing data recorded to ' + path);
     });
   }, 5000);

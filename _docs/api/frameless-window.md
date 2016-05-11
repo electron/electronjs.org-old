@@ -1,5 +1,5 @@
 ---
-version: v1.0.0
+version: v1.0.1
 category: API
 title: 'Frameless Window'
 redirect_from:
@@ -35,6 +35,7 @@ redirect_from:
     - /docs/v0.37.7/api/frameless-window/
     - /docs/v0.37.8/api/frameless-window/
     - /docs/v1.0.0/api/frameless-window/
+    - /docs/v1.0.1/api/frameless-window/
     - /docs/latest/api/frameless-window/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/frameless-window.md'
 excerpt: "Open a window without toolbars, borders, or other graphical &quot;chrome&quot;."
@@ -56,8 +57,8 @@ To create a frameless window, you need to set `frame` to `false` in
 
 
 ```javascript
-const {BrowserWindow} = require('electron');
-let win = new BrowserWindow({width: 800, height: 600, frame: false});
+const BrowserWindow = require('electron').BrowserWindow;
+var win = new BrowserWindow({ width: 800, height: 600, frame: false });
 ```
 
 ### Alternatives on OS X
@@ -70,7 +71,7 @@ the window controls ("traffic lights") for standard window actions.
 You can do so by specifying the new `titleBarStyle` option:
 
 ```javascript
-let win = new BrowserWindow({titleBarStyle: 'hidden'});
+var win = new BrowserWindow({ 'titleBarStyle': 'hidden' });
 ```
 
 ## Transparent window
@@ -79,7 +80,7 @@ By setting the `transparent` option to `true`, you can also make the frameless
 window transparent:
 
 ```javascript
-let win = new BrowserWindow({transparent: true, frame: false});
+var win = new BrowserWindow({ transparent: true, frame: false });
 ```
 
 ### Limitations
