@@ -55,9 +55,29 @@
   }
 }
 
-.docstron {
-  padding: $spacer3;
-  background: darken($sub-bg-color, 8%);
+.docs-tags {
+  margin: 0;
+  list-style: none;
+  position: relative;
+  text-align: center;
+  color: $main-color-strong;
+  background-color: darken($main-bg-color-shade, 8%);
+  @include breakpoint(md) {
+    position: absolute;
+    right: 0;
+    text-align: right;
+    background-color: transparent;
+  }
+}
+.docs-tag {
+  display: inline-block;
+  padding: .4em .8em;
+  margin-bottom: 0;
+  font-size: .86em;
+  font-weight: 500;
+  @include breakpoint(md) {
+    background-color: darken($main-bg-color-shade, 8%);
+  }
 }
 
 // platform label, e.g. [OS X]

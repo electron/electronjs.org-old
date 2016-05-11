@@ -27,9 +27,11 @@ layout: default
 </div>
 
 {% if page.category == 'API' %}
-<div class="docstron py-2">
-  <div class="container-narrow">
-    <p><b>{{ site.data.processes[page.title] }}</b></p>
+<div>
+  <div class="container-narrow position-relative">
+    <ul class="docs-tags">
+      <li class="docs-tag">{{ site.data.processes[page.title] }}</li>
+    </ul>
   </div>
 </div>
 {% endif %}
