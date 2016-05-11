@@ -89,7 +89,7 @@ layout: default
             <h3>Both Processes</h3>
             {% for doc in site.docs %}
             <ul class="docs-list">
-              {% if doc.category == 'API' and site.data.processes[doc.title] == 'Both Processes' %}
+              {% if doc.category == 'API' and site.data.processes[doc.title] == 'Main and Renderer Process' %}
               <li>
                 <a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a>
               </li>
