@@ -813,3 +813,10 @@
     - "security"
     - "productivity"
   icon: "criptio.png"
+-
+  name: "Basecamp 3"
+  description: "A place to work + a way to work"
+  website: "https://basecamp.com"
+  keywords:
+    - "productivity"
+  icon: "basecamp3.png"
