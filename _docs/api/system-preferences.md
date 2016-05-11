@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/api/system-preferences/
     - /docs/v0.37.4/api/system-preferences/
     - /docs/v0.37.5/api/system-preferences/
+    - /docs/v0.37.6/api/system-preferences/
     - /docs/v0.37.7/api/system-preferences/
     - /docs/v0.37.8/api/system-preferences/
     - /docs/latest/api/system-preferences/

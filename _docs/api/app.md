@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/api/app/
     - /docs/v0.37.4/api/app/
     - /docs/v0.37.5/api/app/
+    - /docs/v0.37.6/api/app/
     - /docs/v0.37.7/api/app/
     - /docs/v0.37.8/api/app/
     - /docs/latest/api/app/

@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/development/coding-style/
     - /docs/v0.37.4/development/coding-style/
     - /docs/v0.37.5/development/coding-style/
+    - /docs/v0.37.6/development/coding-style/
     - /docs/v0.37.7/development/coding-style/
     - /docs/v0.37.8/development/coding-style/
     - /docs/latest/development/coding-style/

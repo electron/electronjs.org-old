@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/api/process/
     - /docs/v0.37.4/api/process/
     - /docs/v0.37.5/api/process/
+    - /docs/v0.37.6/api/process/
     - /docs/v0.37.7/api/process/
     - /docs/v0.37.8/api/process/
     - /docs/latest/api/process/

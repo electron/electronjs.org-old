@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/tutorial/online-offline-events/
     - /docs/v0.37.4/tutorial/online-offline-events/
     - /docs/v0.37.5/tutorial/online-offline-events/
+    - /docs/v0.37.6/tutorial/online-offline-events/
     - /docs/v0.37.7/tutorial/online-offline-events/
     - /docs/v0.37.8/tutorial/online-offline-events/
     - /docs/latest/tutorial/online-offline-events/

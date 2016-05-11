@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/tutorial/testing-on-headless-ci/
     - /docs/v0.37.4/tutorial/testing-on-headless-ci/
     - /docs/v0.37.5/tutorial/testing-on-headless-ci/
+    - /docs/v0.37.6/tutorial/testing-on-headless-ci/
     - /docs/v0.37.7/tutorial/testing-on-headless-ci/
     - /docs/v0.37.8/tutorial/testing-on-headless-ci/
     - /docs/latest/tutorial/testing-on-headless-ci/

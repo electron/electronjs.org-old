@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/api/frameless-window/
     - /docs/v0.37.4/api/frameless-window/
     - /docs/v0.37.5/api/frameless-window/
+    - /docs/v0.37.6/api/frameless-window/
     - /docs/v0.37.7/api/frameless-window/
     - /docs/v0.37.8/api/frameless-window/
     - /docs/latest/api/frameless-window/

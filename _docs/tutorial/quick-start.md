@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/tutorial/quick-start/
     - /docs/v0.37.4/tutorial/quick-start/
     - /docs/v0.37.5/tutorial/quick-start/
+    - /docs/v0.37.6/tutorial/quick-start/
     - /docs/v0.37.7/tutorial/quick-start/
     - /docs/v0.37.8/tutorial/quick-start/
     - /docs/latest/tutorial/quick-start/

@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/api/auto-updater/
     - /docs/v0.37.4/api/auto-updater/
     - /docs/v0.37.5/api/auto-updater/
+    - /docs/v0.37.6/api/auto-updater/
     - /docs/v0.37.7/api/auto-updater/
     - /docs/v0.37.8/api/auto-updater/
     - /docs/latest/api/auto-updater/

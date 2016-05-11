@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/tutorial/application-distribution/
     - /docs/v0.37.4/tutorial/application-distribution/
     - /docs/v0.37.5/tutorial/application-distribution/
+    - /docs/v0.37.6/tutorial/application-distribution/
     - /docs/v0.37.7/tutorial/application-distribution/
     - /docs/v0.37.8/tutorial/application-distribution/
     - /docs/latest/tutorial/application-distribution/

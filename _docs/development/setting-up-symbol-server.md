@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/development/setting-up-symbol-server/
     - /docs/v0.37.4/development/setting-up-symbol-server/
     - /docs/v0.37.5/development/setting-up-symbol-server/
+    - /docs/v0.37.6/development/setting-up-symbol-server/
     - /docs/v0.37.7/development/setting-up-symbol-server/
     - /docs/v0.37.8/development/setting-up-symbol-server/
     - /docs/latest/development/setting-up-symbol-server/

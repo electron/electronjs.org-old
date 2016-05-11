@@ -7,6 +7,8 @@
   padding: .1em .4em;
   vertical-align: middle;
   font-size: $body-font-size * 1.25;
+  font-weight: 200;
+  -webkit-font-smoothing: initial;
   color: $main-color-subtle;
   border: 1px solid $border-color;
   border-radius: $border-radius;
@@ -66,4 +68,17 @@
     color: $main-bg-color;
     border-radius: $border-radius;
     background-color: $main-color-subtle;
+}
+
+// process label, e.g. Main process
+.docs h1 em {
+  padding: .1em .4em;
+  vertical-align: middle;
+  font-size: .4em;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-style: normal;
+  color: $main-bg-color;
+  border-radius: $border-radius;
+  background-color: $main-color-subtle;
 }

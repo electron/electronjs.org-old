@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/api/menu/
     - /docs/v0.37.4/api/menu/
     - /docs/v0.37.5/api/menu/
+    - /docs/v0.37.6/api/menu/
     - /docs/v0.37.7/api/menu/
     - /docs/v0.37.8/api/menu/
     - /docs/latest/api/menu/

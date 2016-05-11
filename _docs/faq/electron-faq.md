@@ -33,6 +33,7 @@ redirect_from:
     - /docs/v0.37.3/faq/electron-faq/
     - /docs/v0.37.4/faq/electron-faq/
     - /docs/v0.37.5/faq/electron-faq/
+    - /docs/v0.37.6/faq/electron-faq/
     - /docs/v0.37.7/faq/electron-faq/
     - /docs/v0.37.8/faq/electron-faq/
     - /docs/latest/faq/electron-faq/

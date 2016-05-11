@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/tutorial/using-pepper-flash-plugin/
     - /docs/v0.37.4/tutorial/using-pepper-flash-plugin/
     - /docs/v0.37.5/tutorial/using-pepper-flash-plugin/
+    - /docs/v0.37.6/tutorial/using-pepper-flash-plugin/
     - /docs/v0.37.7/tutorial/using-pepper-flash-plugin/
     - /docs/v0.37.8/tutorial/using-pepper-flash-plugin/
     - /docs/latest/tutorial/using-pepper-flash-plugin/

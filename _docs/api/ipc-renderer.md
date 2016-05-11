@@ -31,6 +31,7 @@ redirect_from:
     - /docs/v0.37.3/api/ipc-renderer/
     - /docs/v0.37.4/api/ipc-renderer/
     - /docs/v0.37.5/api/ipc-renderer/
+    - /docs/v0.37.6/api/ipc-renderer/
     - /docs/v0.37.7/api/ipc-renderer/
     - /docs/v0.37.8/api/ipc-renderer/
     - /docs/latest/api/ipc-renderer/
