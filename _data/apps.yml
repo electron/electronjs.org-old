@@ -812,3 +812,11 @@
   keywords:
     - "productivity"
   icon: "basecamp3.png"
+-
+  name: "Tiliq"
+  description: "The next generation of professional business email"
+  website: "https://tiliq.com"
+  keywords:
+    - "email"
+    - "productivity"
+  icon: "tiliq.png"
