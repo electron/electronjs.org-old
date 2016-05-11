@@ -787,3 +787,13 @@
   license: ""
   icon: ""
   featuredOpenSource: true
+-
+  name: "Kaku"
+  description: "A highly integrated music player"
+  website: "http://kaku.rocks"
+  repository: "https://github.com/EragonJ/Kaku"
+  keywords:
+    - "music"
+    - "player"
+  license: "MIT"
+  icon: "kaku.png"
