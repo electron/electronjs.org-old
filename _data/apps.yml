@@ -773,12 +773,12 @@
 -
   name: "Spectron"
   description: "Test your apps"
-  website: "https://github.com/electron/spectron"
+  website: "http://electron.atom.io/spectron"
   featuredOpenSource: true
 -
   name: "Devtron"
   description: "Debug your apps"
-  website: "https://github.com/electron/devtron"
+  website: "http://electron.atom.io/devtron"
   featuredOpenSource: true
 -
   name: "Electron Prebuilt"
