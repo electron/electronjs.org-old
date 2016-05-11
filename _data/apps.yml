@@ -667,14 +667,6 @@
   license: ""
   icon: "deckhub.png"
 -
-  name: "AntSword"
-  description: "Cross platform website management tools"
-  website: "http://uyu.us"
-  repository: ""
-  keywords: []
-  license: ""
-  icon: "antsword.png"
--
   name: "Spectrum"
   description: "Useful logging for developers"
   website: "https://www.devspectrum.com"
