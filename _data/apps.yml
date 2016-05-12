@@ -820,3 +820,16 @@
     - "email"
     - "productivity"
   icon: "tiliq.png"
+-
+  name: "Bitbloq"
+  description: "Bitbloq is a tool to help children to learn and create programs for a microcontroller or robot, and to load them easily."
+  website: "http://bitbloq.bq.com"
+  repository: "https://github.com/bq/bitbloq-offline"
+  keywords:
+    - "bq"
+    - "bitbloq"
+    - "robotics"
+    - "arduino"
+    - "electronics"
+    - "children"
+  icon: "bitbloq.png"
