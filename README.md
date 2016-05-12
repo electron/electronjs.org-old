@@ -12,7 +12,7 @@ Follow these steps to copy this repository to your computer and build the site:
 git clone https://github.com/electron/electron.atom.io.git
 cd electron.atom.io
 npm run bootstrap
-npm run server
+npm start
 ```
 
 ### CLI for Docs, Releases & Version Information
