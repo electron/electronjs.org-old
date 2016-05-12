@@ -820,3 +820,14 @@
     - "email"
     - "productivity"
   icon: "tiliq.png"
+-
+  name: "ironNode"
+  description: "A Node.js JavaScript Debugger"
+  website: "http://s-a.github.io/iron-node/"
+  repository: "https://github.com/s-a/iron-node"
+  keywords:
+    - "debug"
+    - "debugger"
+    - "nodejs"
+  license: "MIT"
+  icon: "iron-node.png"
