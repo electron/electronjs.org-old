@@ -252,7 +252,7 @@ Creates a new menu.
 
 ## Methods
 
-The `menu` class has the following methods:
+The `Menu` class has the following methods:
 
 ### `Menu.setApplicationMenu(menu)`
 
