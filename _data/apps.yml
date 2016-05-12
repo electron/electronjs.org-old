@@ -820,3 +820,11 @@
     - "email"
     - "productivity"
   icon: "tiliq.png"
+-
+  name: "WP Express"
+  description: "Rapid WordPress installer for local development"
+  website: "http://wpexpress.io"
+  keywords:
+    - "wordpress"
+    - "productivity"
+  icon: "wpexpress.png"
