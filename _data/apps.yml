@@ -820,3 +820,11 @@
     - "email"
     - "productivity"
   icon: "tiliq.png"
+-
+  name: "AntSword"
+  description: "AntSword is a cross platform website management tools"
+  website: "https://github.com/antoor/antSword"
+  keywords:
+    - "webmanager"
+    - "webshell"
+  icon: "antsword.png"
