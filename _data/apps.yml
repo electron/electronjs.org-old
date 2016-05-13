@@ -591,7 +591,7 @@
   featuredOnHomepage: false
 -
   name: "BearyChat"
-  description: ""
+  description: "A cloud-based team collaboration platform based on IM."
   website: "https://bearychat.com"
   repository: ""
   keywords: []
