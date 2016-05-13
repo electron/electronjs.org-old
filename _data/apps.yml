@@ -820,3 +820,15 @@
     - "email"
     - "productivity"
   icon: "tiliq.png"
+-
+  name: "FromScratch"
+  description: "Autosaving scratchpad."
+  website: "https://fromscratch.rocks"
+  repository: "https://github.com/kilian/fromscratch"
+  keywords:
+    - "notes"
+    - "scratchpad"
+    - "texteditor"
+  license: "MIT"
+  icon: "fromscratch.png"
+  
