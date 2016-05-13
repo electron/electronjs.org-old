@@ -820,3 +820,11 @@
     - "email"
     - "productivity"
   icon: "tiliq.png"
+-
+  name: "GF-Trader"
+  description: "Next generation securities trade application from GF Securities"
+  website: "http://it.gf.com.cn/cps"
+  keywords:
+    - "finace"
+    - "securities"
+  icon: "gf-trader.png"
