@@ -70,14 +70,14 @@ $octicons-font-path: "../bower_components/octicons/octicons/";
 @import "highlight"; // Syntax highlighting
 
 // Basecoat overrides
-@import "buttons";
-@import "code";
-@import "footer";
-@import "icons";
-@import "navigation";
-@import "page-headers";
-@import "section";
-@import "tables";
+@import "basecoat-buttons";
+@import "basecoat-code";
+@import "basecoat-footer";
+@import "basecoat-icons";
+@import "basecoat-navigation";
+@import "basecoat-page-headers";
+@import "basecoat-section";
+@import "basecoat-tables";
 
 // Pages
 @import "home";
