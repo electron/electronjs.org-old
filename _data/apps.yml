@@ -823,3 +823,14 @@
     - "email"
     - "productivity"
   icon: "tiliq.png"
+-
+  name: "Etcher"
+  description: "Burn images to SD cards & USB drives, safe & easy"
+  website: "http://www.etcher.io/"
+  repository: "https://github.com/resin-io/etcher"
+  keywords:
+    - "hardware"
+    - "developer tool"
+    - "IoT"
+  license: "Apache 2.0"
+  icon: "etcher.png"
