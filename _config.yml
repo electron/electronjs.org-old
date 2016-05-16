@@ -16,9 +16,9 @@ gems:
     - jekyll-redirect-from
     - jekyll-sitemap
     - jemoji
-latest_version: v1.0.1
-current_node: 5.10.0
-current_chrome: 49.0.2623.75
+latest_version: v1.1.0
+current_node: 6.1.0
+current_chrome: 50.0.2661.102
 current_v8: 4.9.385.28
 sass:
     style: compressed
