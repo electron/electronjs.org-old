@@ -934,3 +934,13 @@
     - "texteditor"
   license: "MIT"
   icon: "fromscratch.png"
+-
+  name: "Sencha Test"
+  description: "Testing Ext JS and Sencha Touch apps with Jasmine"
+  website: "https://www.sencha.com/products/test/"
+  keywords:
+    - "web development"
+    - "programming"
+    - "productivity"
+    - "editor"
+  icon: "sencha_test.png"
