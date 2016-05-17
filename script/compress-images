@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+set -ex
+
+rm -fr images/crushed
+pngcrush -rem allb -brute -reduce -d images/crushed images/apps/*.png
+cp images/crushed/* images/apps/
+rm -fr images/crushed

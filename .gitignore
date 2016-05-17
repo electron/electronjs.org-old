@@ -3,3 +3,4 @@ _site
 node_modules/
 npm-debug.log
 .jekyll-metadata
+images/crushed
