@@ -809,6 +809,14 @@
     - "productivity"
   icon: "plain-email.png"
 -
+  name: "Criptio"
+  description: "Criptio is a tool for encrypt and decrypt files."
+  website: "https://itunes.apple.com/us/app/criptio/id1102582966?mt=12"
+  keywords:
+    - "security"
+    - "productivity"
+  icon: "criptio.png"
+-
   name: "Basecamp 3"
   description: "A place to work + a way to work"
   website: "https://basecamp.com"
