@@ -1,5 +1,5 @@
 ---
-version: v1.0.1
+version: v1.1.0
 category: API
 title: Dialog
 redirect_from:
@@ -36,6 +36,7 @@ redirect_from:
     - /docs/v0.37.8/api/dialog/
     - /docs/v1.0.0/api/dialog/
     - /docs/v1.0.1/api/dialog/
+    - /docs/v1.1.0/api/dialog/
     - /docs/latest/api/dialog/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/dialog.md'
 excerpt: "Display native system dialogs for opening and saving files, alerting, etc."
@@ -48,16 +49,17 @@ excerpt: "Display native system dialogs for opening and saving files, alerting, 
 An example of showing a dialog to select multiple files and directories:
 
 ```javascript
-var win = ...;  // BrowserWindow in which to show the dialog
-const dialog = require('electron').dialog;
-console.log(dialog.showOpenDialog({ properties: [ 'openFile', 'openDirectory', 'multiSelections' ]}));
+let win = ...;  // BrowserWindow in which to show the dialog
+const {dialog} = require('electron');
+
+console.log(dialog.showOpenDialog({properties: ['openFile', 'openDirectory', 'multiSelections']}));
 ```
 
 The Dialog is opened from Electron's main thread. If you want to use the dialog
 object from a renderer process, remember to access it using the remote:
 
 ```javascript
-const dialog = require('electron').remote.dialog;
+const {dialog} = require('electron').remote;
 ```
 
 ## Methods
@@ -85,10 +87,10 @@ selected when you want to limit the user to a specific type. For example:
 ```javascript
 {
   filters: [
-    { name: 'Images', extensions: ['jpg', 'png', 'gif'] },
-    { name: 'Movies', extensions: ['mkv', 'avi', 'mp4'] },
-    { name: 'Custom File Type', extensions: ['as'] },
-    { name: 'All Files', extensions: ['*'] }
+    {name: 'Images', extensions: ['jpg', 'png', 'gif']},
+    {name: 'Movies', extensions: ['mkv', 'avi', 'mp4']},
+    {name: 'Custom File Type', extensions: ['as']},
+    {name: 'All Files', extensions: ['*']}
   ]
 }
 ```
@@ -130,7 +132,7 @@ will be passed via `callback(filename)`
   * `type` String - Can be `"none"`, `"info"`, `"error"`, `"question"` or
   `"warning"`. On Windows, "question" displays the same icon as "info", unless
   you set an icon using the "icon" option.
-  * `buttons` Array - Array of texts for buttons.
+  * `buttons` Array - Array of texts for buttons. On Windows, an empty array will result in one button labeled "OK".
   * `defaultId` Integer - Index of the button in the buttons array which will
     be selected by default when the message box opens.
   * `title` String - Title of the message box, some platforms will not show it.

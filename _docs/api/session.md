@@ -1,5 +1,5 @@
 ---
-version: v1.0.1
+version: v1.1.0
 category: API
 title: Session
 redirect_from:
@@ -36,6 +36,7 @@ redirect_from:
     - /docs/v0.37.8/api/session/
     - /docs/v1.0.0/api/session/
     - /docs/v1.0.1/api/session/
+    - /docs/v1.1.0/api/session/
     - /docs/latest/api/session/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/session.md'
 excerpt: "Manage browser sessions, cookies, cache, proxy settings, etc."
@@ -52,12 +53,12 @@ property of [`webContents`](http://electron.atom.io/docs/api/web-contents) which
 [`BrowserWindow`](http://electron.atom.io/docs/api/browser-window).
 
 ```javascript
-const BrowserWindow = require('electron').BrowserWindow;
+const {BrowserWindow} = require('electron');
 
-var win = new BrowserWindow({ width: 800, height: 600 });
-win.loadURL("http://github.com");
+let win = new BrowserWindow({width: 800, height: 600});
+win.loadURL('http://github.com');
 
-var ses = win.webContents.session;
+const ses = win.webContents.session;
 ```
 
 ## Methods
@@ -90,7 +91,7 @@ You can create a `Session` object in the `session` module:
 ```javascript
 const session = require('electron').session;
 
-var ses = session.fromPartition('persist:name');
+const ses = session.fromPartition('persist:name');
 ```
 
 ### Instance Events
@@ -109,9 +110,9 @@ Calling `event.preventDefault()` will cancel the download and `item` will not be
 available from next tick of the process.
 
 ```javascript
-session.defaultSession.on('will-download', function(event, item, webContents) {
+session.defaultSession.on('will-download', (event, item, webContents) => {
   event.preventDefault();
-  require('request')(item.getURL(), function(data) {
+  require('request')(item.getURL(), (data) => {
     require('fs').writeFileSync('/somewhere', data);
   });
 });
@@ -127,19 +128,19 @@ The `cookies` gives you ability to query and modify cookies. For example:
 
 ```javascript
 // Query all cookies.
-session.defaultSession.cookies.get({}, function(error, cookies) {
+session.defaultSession.cookies.get({}, (error, cookies) => {
   console.log(cookies);
 });
 
 // Query all cookies associated with a specific url.
-session.defaultSession.cookies.get({ url : "http://www.github.com" }, function(error, cookies) {
+session.defaultSession.cookies.get({url: 'http://www.github.com'}, (error, cookies) => {
   console.log(cookies);
 });
 
 // Set a cookie with the given cookie data;
 // may overwrite equivalent cookies if they exist.
-var cookie = { url : "http://www.github.com", name : "dummy_name", value : "dummy" };
-session.defaultSession.cookies.set(cookie, function(error) {
+const cookie = {url: 'http://www.github.com', name: 'dummy_name', value: 'dummy'};
+session.defaultSession.cookies.set(cookie, (error) => {
   if (error)
     console.error(error);
 });
@@ -328,8 +329,8 @@ Calling `setCertificateVerifyProc(null)` will revert back to default certificate
 verify proc.
 
 ```javascript
-myWindow.webContents.session.setCertificateVerifyProc(function(hostname, cert, callback) {
-  if (hostname == 'github.com')
+myWindow.webContents.session.setCertificateVerifyProc((hostname, cert, callback) => {
+  if (hostname === 'github.com')
     callback(true);
   else
     callback(false);
@@ -348,9 +349,9 @@ Sets the handler which can be used to respond to permission requests for the `se
 Calling `callback(true)` will allow the permission and `callback(false)` will reject it.
 
 ```javascript
-session.fromPartition(partition).setPermissionRequestHandler(function(webContents, permission, callback) {
+session.fromPartition(partition).setPermissionRequestHandler((webContents, permission, callback) => {
   if (webContents.getURL() === host) {
-    if (permission == "notifications") {
+    if (permission === 'notifications') {
       callback(false); // denied.
       return;
     }
@@ -385,11 +386,11 @@ called with an `response` object when `listener` has done its work.
 
 ```javascript
 // Modify the user agent for all requests to the following urls.
-var filter = {
-  urls: ["https://*.github.com/*", "*://electron.github.io"]
+const filter = {
+  urls: ['https://*.github.com/*', '*://electron.github.io']
 };
 
-session.defaultSession.webRequest.onBeforeSendHeaders(filter, function(details, callback) {
+session.defaultSession.webRequest.onBeforeSendHeaders(filter, (details, callback) => {
   details.requestHeaders['User-Agent'] = "MyAgent";
   callback({cancel: false, requestHeaders: details.requestHeaders});
 });

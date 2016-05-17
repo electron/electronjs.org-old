@@ -1,5 +1,5 @@
 ---
-version: v1.0.1
+version: v1.1.0
 category: Tutorial
 title: 'Using Pepper Flash Plugin'
 redirect_from:
@@ -36,6 +36,7 @@ redirect_from:
     - /docs/v0.37.8/tutorial/using-pepper-flash-plugin/
     - /docs/v1.0.0/tutorial/using-pepper-flash-plugin/
     - /docs/v1.0.1/tutorial/using-pepper-flash-plugin/
+    - /docs/v1.1.0/tutorial/using-pepper-flash-plugin/
     - /docs/latest/tutorial/using-pepper-flash-plugin/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/using-pepper-flash-plugin.md'
 ---
@@ -70,15 +71,15 @@ app.commandLine.appendSwitch('ppapi-flash-path', '/path/to/libpepflashplayer.so'
 // Optional: Specify flash version, for example, v17.0.0.169
 app.commandLine.appendSwitch('ppapi-flash-version', '17.0.0.169');
 
-app.on('ready', function() {
-  mainWindow = new BrowserWindow({
+app.on('ready', () => {
+  win = new BrowserWindow({
     width: 800,
     height: 600,
     webPreferences: {
       plugins: true
     }
   });
-  mainWindow.loadURL('file://' + __dirname + '/index.html');
+  win.loadURL(`file://${__dirname}/index.html`);
   // Something else
 });
 ```

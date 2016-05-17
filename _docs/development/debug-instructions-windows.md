@@ -1,5 +1,5 @@
 ---
-version: v1.0.1
+version: v1.1.0
 category: Development
 title: 'Debug Instructions Windows'
 redirect_from:
@@ -36,6 +36,7 @@ redirect_from:
     - /docs/v0.37.8/development/debug-instructions-windows/
     - /docs/v1.0.0/development/debug-instructions-windows/
     - /docs/v1.0.1/development/debug-instructions-windows/
+    - /docs/v1.1.0/development/debug-instructions-windows/
     - /docs/latest/development/debug-instructions-windows/
 source_url: 'https://github.com/electron/electron/blob/master/docs/development/debug-instructions-windows.md'
 ---

@@ -1,5 +1,5 @@
 ---
-version: v1.0.1
+version: v1.1.0
 category: API
 title: Menu
 redirect_from:
@@ -36,6 +36,7 @@ redirect_from:
     - /docs/v0.37.8/api/menu/
     - /docs/v1.0.0/api/menu/
     - /docs/v1.0.1/api/menu/
+    - /docs/v1.1.0/api/menu/
     - /docs/latest/api/menu/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/menu.md'
 excerpt: "Create native application menus and context menus."
@@ -58,16 +59,15 @@ the user right clicks the page:
 ```html
 <!-- index.html -->
 <script>
-const remote = require('electron').remote;
-const Menu = remote.Menu;
-const MenuItem = remote.MenuItem;
+const {remote} = require('electron');
+const {Menu, MenuItem} = remote;
 
-var menu = new Menu();
-menu.append(new MenuItem({ label: 'MenuItem1', click: function() { console.log('item 1 clicked'); } }));
-menu.append(new MenuItem({ type: 'separator' }));
-menu.append(new MenuItem({ label: 'MenuItem2', type: 'checkbox', checked: true }));
+const menu = new Menu();
+menu.append(new MenuItem({label: 'MenuItem1', click() { console.log('item 1 clicked'); }}));
+menu.append(new MenuItem({type: 'separator'}));
+menu.append(new MenuItem({label: 'MenuItem2', type: 'checkbox', checked: true}));
 
-window.addEventListener('contextmenu', function (e) {
+window.addEventListener('contextmenu', (e) => {
   e.preventDefault();
   menu.popup(remote.getCurrentWindow());
 }, false);
@@ -78,7 +78,7 @@ An example of creating the application menu in the render process with the
 simple template API:
 
 ```javascript
-var template = [
+const template = [
   {
     label: 'Edit',
     submenu: [
@@ -123,33 +123,22 @@ var template = [
       {
         label: 'Reload',
         accelerator: 'CmdOrCtrl+R',
-        click: function(item, focusedWindow) {
-          if (focusedWindow)
-            focusedWindow.reload();
+        click(item, focusedWindow) {
+          if (focusedWindow) focusedWindow.reload();
         }
       },
       {
         label: 'Toggle Full Screen',
-        accelerator: (function() {
-          if (process.platform == 'darwin')
-            return 'Ctrl+Command+F';
-          else
-            return 'F11';
-        })(),
-        click: function(item, focusedWindow) {
+        accelerator: process.platform === 'darwin' ? 'Ctrl+Command+F' : 'F11',
+        click(item, focusedWindow) {
           if (focusedWindow)
             focusedWindow.setFullScreen(!focusedWindow.isFullScreen());
         }
       },
       {
         label: 'Toggle Developer Tools',
-        accelerator: (function() {
-          if (process.platform == 'darwin')
-            return 'Alt+Command+I';
-          else
-            return 'Ctrl+Shift+I';
-        })(),
-        click: function(item, focusedWindow) {
+        accelerator: process.platform === 'darwin' ? 'Alt+Command+I' : 'Ctrl+Shift+I',
+        click(item, focusedWindow) {
           if (focusedWindow)
             focusedWindow.webContents.toggleDevTools();
         }
@@ -178,14 +167,14 @@ var template = [
     submenu: [
       {
         label: 'Learn More',
-        click: function() { require('electron').shell.openExternal('http://electron.atom.io') }
+        click() { require('electron').shell.openExternal('http://electron.atom.io'); }
       },
     ]
   },
 ];
 
-if (process.platform == 'darwin') {
-  var name = require('electron').remote.app.getName();
+if (process.platform === 'darwin') {
+  const name = require('electron').remote.app.getName();
   template.unshift({
     label: name,
     submenu: [
@@ -224,7 +213,7 @@ if (process.platform == 'darwin') {
       {
         label: 'Quit',
         accelerator: 'Command+Q',
-        click: function() { app.quit(); }
+        click() { app.quit(); }
       },
     ]
   });
@@ -240,7 +229,7 @@ if (process.platform == 'darwin') {
   );
 }
 
-var menu = Menu.buildFromTemplate(template);
+const menu = Menu.buildFromTemplate(template);
 Menu.setApplicationMenu(menu);
 ```
 
@@ -252,7 +241,7 @@ Creates a new menu.
 
 ## Methods
 
-The `Menu` class has the following methods:
+The `menu` class has the following methods:
 
 ### `Menu.setApplicationMenu(menu)`
 
