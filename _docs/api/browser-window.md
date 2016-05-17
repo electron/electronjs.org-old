@@ -1,5 +1,5 @@
 ---
-version: v1.0.1
+version: v1.1.0
 category: API
 title: 'Browser Window'
 redirect_from:
@@ -36,6 +36,7 @@ redirect_from:
     - /docs/v0.37.8/api/browser-window/
     - /docs/v1.0.0/api/browser-window/
     - /docs/v1.0.1/api/browser-window/
+    - /docs/v1.1.0/api/browser-window/
     - /docs/latest/api/browser-window/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/browser-window.md'
 excerpt: "Create and control browser windows."
@@ -47,13 +48,13 @@ excerpt: "Create and control browser windows."
 
 ```javascript
 // In the main process.
-const BrowserWindow = require('electron').BrowserWindow;
+const {BrowserWindow} = require('electron');
 
 // Or in the renderer process.
-const BrowserWindow = require('electron').remote.BrowserWindow;
+const {BrowserWindow} = require('electron').remote;
 
-var win = new BrowserWindow({ width: 800, height: 600, show: false });
-win.on('closed', function() {
+let win = new BrowserWindow({width: 800, height: 600, show: false});
+win.on('closed', () => {
   win = null;
 });
 
@@ -100,7 +101,7 @@ It creates a new `BrowserWindow` with native properties as set by the `options`.
   * `alwaysOnTop` Boolean - Whether the window should always stay on top of
     other windows. Default is `false`.
   * `fullscreen` Boolean - Whether the window should show in fullscreen. When
-    explicity set to `false` the fullscreen button will be hidden or disabled
+    explicitly set to `false` the fullscreen button will be hidden or disabled
     on OS X. Default is `false`.
   * `fullscreenable` Boolean - Whether the maximize/zoom button on OS X should
     toggle full screen mode or maximize window. Default is `true`.
@@ -138,6 +139,11 @@ It creates a new `BrowserWindow` with native properties as set by the `options`.
     below.
   * `webPreferences` Object - Settings of web page's features. See more about
     this below.
+
+When setting minimum or maximum window size with `minWidth`/`maxWidth`/
+`minHeight`/`maxHeight`, it only constrains the users, it won't prevent you from
+passing a size that does not follow size constraints to `setBounds`/`setSize` or
+to the constructor of `BrowserWindow`.
 
 The possible values and behaviors of `type` option are platform dependent,
 supported values are:
@@ -208,6 +214,8 @@ The `webPreferences` option is an object that can have following properties:
   canvas features. Default is `false`.
 * `directWrite` Boolean - Enables DirectWrite font rendering system on
   Windows. Default is `true`.
+* `scrollBounce` Boolean - Enables scroll bounce (rubber banding) effect on
+  OS X. Default is `false`.
 * `blinkFeatures` String - A list of feature strings separated by `,`, like
   `CSSVariables,KeyboardEventKey`. The full list of supported feature strings
   can be found in the [setFeatureEnabledFromString][blink-feature-string]
@@ -256,7 +264,7 @@ reloaded. In Electron, returning an empty string or `false` would cancel the
 close. For example:
 
 ```javascript
-window.onbeforeunload = function(e) {
+window.onbeforeunload = (e) => {
   console.log('I do not want to be closed');
 
   // Unlike usual browsers, in which a string should be returned and the user is
@@ -358,7 +366,7 @@ Commands are lowercased with underscores replaced with hyphens and the
 e.g. `APPCOMMAND_BROWSER_BACKWARD` is emitted as `browser-backward`.
 
 ```javascript
-someWindow.on('app-command', function(e, cmd) {
+someWindow.on('app-command', (e, cmd) => {
   // Navigate the window back when the user hits their mouse back button
   if (cmd === 'browser-backward' && someWindow.webContents.canGoBack()) {
     someWindow.webContents.goBack();
@@ -428,7 +436,7 @@ Objects created with `new BrowserWindow` have the following properties:
 
 ```javascript
 // In this example `win` is our instance
-var win = new BrowserWindow({ width: 800, height: 600 });
+let win = new BrowserWindow({width: 800, height: 600});
 ```
 
 ### `win.webContents`
@@ -725,7 +733,7 @@ attached just below the window frame, but you may want to display them beneath
 a HTML-rendered toolbar. For example:
 
 ```javascript
-var toolbarRect = document.getElementById('toolbar').getBoundingClientRect();
+let toolbarRect = document.getElementById('toolbar').getBoundingClientRect();
 win.setSheetOffset(toolbarRect.height);
 ```
 

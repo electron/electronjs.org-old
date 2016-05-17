@@ -1,5 +1,5 @@
 ---
-version: v1.0.1
+version: v1.1.0
 category: API
 title: 'Chrome Command Line Switches'
 redirect_from:
@@ -36,6 +36,7 @@ redirect_from:
     - /docs/v0.37.8/api/chrome-command-line-switches/
     - /docs/v1.0.0/api/chrome-command-line-switches/
     - /docs/v1.0.1/api/chrome-command-line-switches/
+    - /docs/v1.1.0/api/chrome-command-line-switches/
     - /docs/latest/api/chrome-command-line-switches/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/chrome-command-line-switches.md'
 excerpt: "Command line switches supported by Electron."
@@ -50,11 +51,11 @@ your app's main script before the [ready][ready] event of the [app][app] module
 is emitted:
 
 ```javascript
-const app = require('electron').app;
+const {app} = require('electron');
 app.commandLine.appendSwitch('remote-debugging-port', '8315');
 app.commandLine.appendSwitch('host-rules', 'MAP * 127.0.0.1');
 
-app.on('ready', function() {
+app.on('ready', () => {
   // Your code here
 });
 ```
@@ -152,7 +153,7 @@ Enables net log events to be saved and writes them to `path`.
 
 ## --ssl-version-fallback-min=`version`
 
-Sets the minimum SSL/TLS version ("tls1", "tls1.1" or "tls1.2") that TLS
+Sets the minimum SSL/TLS version (`tls1`, `tls1.1` or `tls1.2`) that TLS
 fallback will accept.
 
 ## --cipher-suite-blacklist=`cipher_suites`

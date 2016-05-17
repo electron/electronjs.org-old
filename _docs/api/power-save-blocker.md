@@ -1,5 +1,5 @@
 ---
-version: v1.0.1
+version: v1.1.0
 category: API
 title: 'Power Save Blocker'
 redirect_from:
@@ -36,6 +36,7 @@ redirect_from:
     - /docs/v0.37.8/api/power-save-blocker/
     - /docs/v1.0.0/api/power-save-blocker/
     - /docs/v1.0.1/api/power-save-blocker/
+    - /docs/v1.1.0/api/power-save-blocker/
     - /docs/latest/api/power-save-blocker/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/power-save-blocker.md'
 excerpt: "Block the system from entering low-power (sleep) mode."
@@ -48,9 +49,9 @@ excerpt: "Block the system from entering low-power (sleep) mode."
 For example:
 
 ```javascript
-const powerSaveBlocker = require('electron').powerSaveBlocker;
+const {powerSaveBlocker} = require('electron');
 
-var id = powerSaveBlocker.start('prevent-display-sleep');
+const id = powerSaveBlocker.start('prevent-display-sleep');
 console.log(powerSaveBlocker.isStarted(id));
 
 powerSaveBlocker.stop(id);
@@ -72,7 +73,7 @@ The `powerSaveBlocker` module has the following methods:
 Starts preventing the system from entering lower-power mode. Returns an integer
 identifying the power save blocker.
 
-**Note:** `prevent-display-sleep` has higher has precedence over
+**Note:** `prevent-display-sleep` has higher precedence over
 `prevent-app-suspension`. Only the highest precedence type takes effect. In
 other words, `prevent-display-sleep` always takes precedence over
 `prevent-app-suspension`.
