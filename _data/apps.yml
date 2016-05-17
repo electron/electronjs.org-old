@@ -823,3 +823,141 @@
     - "email"
     - "productivity"
   icon: "tiliq.png"
+-
+  name: "Criptio"
+  description: "Criptio is a tool for encrypt and decrypt files."
+  website: "https://itunes.apple.com/us/app/criptio/id1102582966?mt=12"
+  keywords:
+    - "security"
+    - "productivity"
+  icon: "criptio.png"
+-
+  name: "PhotoScreenSaver"
+  description: "Windows screen saver that displays a photo slideshow"
+  website: "https://github.com/RandScullard/photo-screen-saver"
+  repository: ""
+  keywords:
+    - "screensaver"
+    - "photography"
+  license: "MIT"
+  icon: "photo-screen-saver.png"
+-
+  name: "The Poker Timer"
+  description: "Best tournament clock"
+  website: "http://www.thepokertimer.com"
+  keywords:
+    - "tournament"
+    - "timer"
+  icon: "thepokertimer.png"
+-
+  name: "PileMd"
+  description: "Markdown Note App with Beautiful Markdown Editor and Local Syncing"
+  website: "https://pilemd.com/"
+  repository: "https://github.com/hirokiky/pilemd"
+  keywords:
+    - "markdown"
+    - "note"
+    - "productivity"
+  license: "GPLv3"
+  icon: "pilemd.png"
+-
+  name: "Sqlectron"
+  description: "A simple and lightweight SQL client desktop with cross database and platform support"
+  website: "https://sqlectron.github.io"
+  repository: "https://github.com/sqlectron/sqlectron-gui"
+  keywords:
+    - "sql"
+    - "mysql"
+    - "postgres"
+    - "mssql"
+  license: "MIT"
+  icon: "sqlectron.png"
+-
+  name: "ironNode"
+  description: "A Node.js JavaScript Debugger"
+  website: "http://s-a.github.io/iron-node/"
+  repository: "https://github.com/s-a/iron-node"
+  keywords:
+    - "debug"
+    - "debugger"
+    - "nodejs"
+  license: "MIT"
+  icon: "iron-node.png"
+-
+  name: "Bitbloq"
+  description: "Bitbloq is a tool to help children to learn and create programs for a microcontroller or robot, and to load them easily."
+  website: "http://bitbloq.bq.com"
+  repository: "https://github.com/bq/bitbloq-offline"
+  keywords:
+    - "bq"
+    - "bitbloq"
+    - "robotics"
+    - "arduino"
+    - "electronics"
+    - "children"
+  icon: "bitbloq.png"
+-
+  name: "Franz"
+  description: "Franz is a messaging app / former emperor of Austria, combining chat &amp; messaging services into one application"
+  website: "http://meetfranz.com"
+  repository: ""
+  keywords:
+    - "messaging"
+    - "chat"
+    - "productivity"
+  license: ""
+  icon: "franz.png"
+-
+  name: "WP Express"
+  description: "Rapid WordPress installer for local development"
+  website: "http://wpexpress.io"
+  keywords:
+    - "wordpress"
+    - "productivity"
+  icon: "wpexpress.png"
+-
+  name: "GF-Trader"
+  description: "Next generation securities trade application from GF Securities"
+  website: "http://it.gf.com.cn/cps"
+  keywords:
+    - "finace"
+    - "securities"
+  icon: "gf-trader.png"
+-
+  name: "FromScratch"
+  description: "Autosaving scratchpad."
+  website: "https://fromscratch.rocks"
+  repository: "https://github.com/kilian/fromscratch"
+  keywords:
+    - "notes"
+    - "scratchpad"
+    - "texteditor"
+  license: "MIT"
+  icon: "fromscratch.png"
+-
+  name: "Sencha Test"
+  description: "Testing Ext JS and Sencha Touch apps with Jasmine"
+  website: "https://www.sencha.com/products/test/"
+  keywords:
+    - "web development"
+    - "programming"
+    - "productivity"
+    - "editor"
+  icon: "sencha_test.png"
+-
+  name: "AntSword"
+  description: "AntSword is a cross platform website management tools"
+  website: "https://github.com/antoor/antSword"
+  keywords:
+    - "webmanager"
+    - "webshell"
+  icon: "antsword.png"
+-
+  name: "MJML App"
+  description: "Desktop wrapper around mjml language"
+  website: "http://mjmlio.github.io/mjml-app/"
+  repository: "https://github.com/mjmlio/mjml-app"
+  keywords:
+    - "mjml"
+    - "email"
+  icon: "mjml-app.png"
