@@ -1,7 +1,6 @@
 ---
 version: v1.1.0
 category: API
-title: 'Crash Reporter'
 redirect_from:
     - /docs/v0.24.0/api/crash-reporter/
     - /docs/v0.25.0/api/crash-reporter/
@@ -40,6 +39,7 @@ redirect_from:
     - /docs/latest/api/crash-reporter/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/crash-reporter.md'
 excerpt: "Submit crash reports to a remote server."
+title: "crashReporter"
 ---
 
 # crashReporter

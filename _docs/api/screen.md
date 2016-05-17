@@ -1,7 +1,6 @@
 ---
 version: v1.1.0
 category: API
-title: Screen
 redirect_from:
     - /docs/v0.24.0/api/screen/
     - /docs/v0.25.0/api/screen/
@@ -40,6 +39,7 @@ redirect_from:
     - /docs/latest/api/screen/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/screen.md'
 excerpt: "Retrieve information about screen size, displays, cursor position, etc."
+title: "screen"
 ---
 
 # screen

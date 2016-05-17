@@ -1,7 +1,6 @@
 ---
 version: v1.1.0
 category: API
-title: Process
 redirect_from:
     - /docs/v0.24.0/api/process/
     - /docs/v0.25.0/api/process/
@@ -40,6 +39,7 @@ redirect_from:
     - /docs/latest/api/process/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/process.md'
 excerpt: "Get information about the running application process."
+title: "process"
 ---
 
 # process

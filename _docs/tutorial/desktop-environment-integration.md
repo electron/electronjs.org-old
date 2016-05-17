@@ -1,7 +1,6 @@
 ---
 version: v1.1.0
 category: Tutorial
-title: 'Desktop Environment Integration'
 redirect_from:
     - /docs/v0.24.0/tutorial/desktop-environment-integration/
     - /docs/v0.25.0/tutorial/desktop-environment-integration/
@@ -49,6 +48,7 @@ an application in a certain mode, or launch one of its subcommands. An
 application should not clutter the menu with advanced features that standard
 users won&apos;t need or one-time actions such as registration. Do not use tasks
 for promotional items such as upgrades or special offers."
+title: "Desktop Environment Integration"
 ---
 
 # Desktop Environment Integration

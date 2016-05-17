@@ -1,7 +1,6 @@
 ---
 version: v1.1.0
 category: API
-title: App
 redirect_from:
     - /docs/v0.24.0/api/app/
     - /docs/v0.25.0/api/app/
@@ -40,6 +39,7 @@ redirect_from:
     - /docs/latest/api/app/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/app.md'
 excerpt: "Control your application&apos;s event lifecycle."
+title: "app"
 ---
 
 # app

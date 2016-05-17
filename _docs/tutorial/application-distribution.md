@@ -1,7 +1,6 @@
 ---
 version: v1.1.0
 category: Tutorial
-title: 'Application Distribution'
 redirect_from:
     - /docs/v0.24.0/tutorial/application-distribution/
     - /docs/v0.25.0/tutorial/application-distribution/
@@ -39,6 +38,7 @@ redirect_from:
     - /docs/v1.1.0/tutorial/application-distribution/
     - /docs/latest/tutorial/application-distribution/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/application-distribution.md'
+title: "Application Distribution"
 ---
 
 # Application Distribution

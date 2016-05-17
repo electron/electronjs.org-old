@@ -1,7 +1,6 @@
 ---
 version: v1.1.0
 category: API
-title: 'Window Open'
 redirect_from:
     - /docs/v0.24.0/api/window-open/
     - /docs/v0.25.0/api/window-open/
@@ -40,6 +39,7 @@ redirect_from:
     - /docs/latest/api/window-open/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/window-open.md'
 excerpt: "Open a new window and load a URL."
+title: "The window.open function"
 ---
 
 # The `window.open` function

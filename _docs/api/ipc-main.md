@@ -1,7 +1,6 @@
 ---
 version: v1.1.0
 category: API
-title: 'Ipc Main'
 redirect_from:
     - /docs/v0.24.0/api/ipc-main/
     - /docs/v0.25.0/api/ipc-main/
@@ -40,6 +39,7 @@ redirect_from:
     - /docs/latest/api/ipc-main/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/ipc-main.md'
 excerpt: "Communicate asynchronously from the main process to renderer processes."
+title: "ipcMain"
 ---
 
 # ipcMain
