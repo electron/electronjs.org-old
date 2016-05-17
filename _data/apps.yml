@@ -896,3 +896,14 @@
     - "electronics"
     - "children"
   icon: "bitbloq.png"
+-
+  name: "Franz"
+  description: "Franz is a messaging app / former emperor of Austria, combining chat &amp; messaging services into one application"
+  website: "http://meetfranz.com"
+  repository: ""
+  keywords:
+    - "messaging"
+    - "chat"
+    - "productivity"
+  license: ""
+  icon: "franz.png"
