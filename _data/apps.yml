@@ -952,3 +952,12 @@
     - "webmanager"
     - "webshell"
   icon: "antsword.png"
+-
+  name: "MJML App"
+  description: "Desktop wrapper around mjml language"
+  website: "http://mjmlio.github.io/mjml-app/"
+  repository: "https://github.com/mjmlio/mjml-app"
+  keywords:
+    - "mjml"
+    - "email"
+  icon: "mjml-app.png"
