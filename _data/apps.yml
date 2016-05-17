@@ -841,3 +841,11 @@
     - "photography"
   license: "MIT"
   icon: "photo-screen-saver.png"
+-
+  name: "The Poker Timer"
+  description: "Best tournament clock"
+  website: "http://www.thepokertimer.com"
+  keywords:
+    - "tournament"
+    - "timer"
+  icon: "thepokertimer.png"
