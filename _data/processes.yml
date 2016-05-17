@@ -25,3 +25,4 @@
 "Tray": "Main Process"
 "Web Contents": "Main Process"
 "Web Frame": "Renderer Process"
+"Web View Tag": "Renderer Process"
