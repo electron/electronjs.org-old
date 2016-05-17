@@ -860,3 +860,15 @@
     - "productivity"
   license: "GPLv3"
   icon: "pilemd.png"
+-
+  name: "Sqlectron"
+  description: "A simple and lightweight SQL client desktop with cross database and platform support"
+  website: "https://sqlectron.github.io"
+  repository: "https://github.com/sqlectron/sqlectron-gui"
+  keywords:
+    - "sql"
+    - "mysql"
+    - "postgres"
+    - "mssql"
+  license: "MIT"
+  icon: "sqlectron.png"
