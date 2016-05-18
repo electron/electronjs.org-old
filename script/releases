@@ -21,6 +21,7 @@ request(options, function (error, response, body) {
     })
 
     body.forEach(function (release) {
+      release.version = release.tag_name.substring(1)
       delete release.assets
       delete release.author
     })
