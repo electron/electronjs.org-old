@@ -1,7 +1,7 @@
 ---
 version: v1.1.0
 category: Development
-title: 'Build Instructions Osx'
+title: 'Build Instructions OS X'
 redirect_from:
     - /docs/v0.24.0/development/build-instructions-osx/
     - /docs/v0.25.0/development/build-instructions-osx/
