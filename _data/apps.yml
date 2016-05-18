@@ -1010,15 +1010,15 @@
      - "apple music"
      - "google play music"
    icon: "stamp.png"
-
-   name: "FlexPaper"
-   description: "Enhance, reflow and flip pdf documents into web publications"
-   webstite: "https://flexpaper.devaldi.com/"
-   keywords:
-     - "pdf"
-     - "flip book"
-     - "pdf to html5"
-     - "pdf to ebook"
-       "interactive pdf publications"
-       "pdf to online publication"
-   icon: "flexpaper-creative-publisher.png"
+-
+  name: "FlexPaper"
+  description: "Enhance, reflow and flip pdf documents into web publications"
+  webstite: "https://flexpaper.devaldi.com/"
+  keywords:
+    - "pdf"
+    - "flip book"
+    - "pdf to html5"
+    - "pdf to ebook"
+    - "interactive pdf publications"
+    - "pdf to online publication"
+  icon: "flexpaper-creative-publisher.png"
