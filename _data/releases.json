@@ -14,7 +14,8 @@
     "published_at": "2016-05-14T01:46:43Z",
     "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v1.1.0",
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v1.1.0",
-    "body": "Changelog:\r\n\r\n* Upgrade to Chrome 50.0.2661.102.\r\n* Upgrade to Node.js 6.1.0.\r\n\r\n__Windows__\r\n\r\n* Use Visual Studio 2015 for building."
+    "body": "Changelog:\r\n\r\n* Upgrade to Chrome 50.0.2661.102.\r\n* Upgrade to Node.js 6.1.0.\r\n\r\n__Windows__\r\n\r\n* Use Visual Studio 2015 for building.",
+    "version": "1.1.0"
   },
   {
     "url": "https://api.github.com/repos/electron/electron/releases/3216266",
@@ -31,7 +32,8 @@
     "published_at": "2016-05-13T02:32:12Z",
     "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v1.0.2",
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v1.0.2",
-    "body": "Changelog:\r\n\r\n* Allow `protocol` module to be imported before the `ready` event of `app` module. [#5406](https://github.com/electron/electron/pull/5406)\r\n* Add `context-menu` event to `WebContents`. [#5379](https://github.com/electron/electron/pull/5379)\r\n* Add `process.defaultApp` property. [#5421](https://github.com/electron/electron/pull/5421)\r\n* Fix `protocol.registerStandardSchemes(schemes)` not working. [#5406](https://github.com/electron/electron/pull/5406)\r\n* Fix file system indexing not working in devtools. [#5431](https://github.com/electron/electron/pull/5431)\r\n* Fix crash when replying to the same synchronous message more than once. [#5430](https://github.com/electron/electron/pull/5430)\r\n* Fix `expirationDate` not showing for persistent cookies in `session.cookies.get` API. [#5444](https://github.com/electron/electron/pull/5444)\r\n* Fix `protocol.registerStandardSchemes(schemes)` not working. [#5406](https://github.com/electron/electron/pull/5406)\r\n* Fix exception after creating large numbers of renderer processes. [#5491](https://github.com/electron/electron/pull/5491)\r\n* Fix devtools extension repeatedly loaded when changing dock state. [electron/brightray#219](https://github.com/electron/brightray/pull/219)\r\n\r\n__OS X__\r\n\r\n* Disable the scroll bounce (rubber banding) effect by default. [#5412](https://github.com/electron/electron/pull/5412)\r\n* Add `scrollBounce` option to `webPreferences`. [#5412](https://github.com/electron/electron/pull/5412)\r\n* Add `app.setUserActivity(type, userInfo)`, `app.getCurrentActivityType()` APIs and `continue-activity` event for Handoff feature of OS X. [#5352](https://github.com/electron/electron/pull/5352)\r\n* Add `app.dock.downloadFinished(filePath)` API. [#5477](https://github.com/electron/electron/pull/5477)\r\n* Fix high CPU usage when using pty.js Node module. [#5378](https://github.com/electron/electron/pull/5378)\r\n* Fix `app.removeAsDefaultProtocolClient(protocol)` API not working. [#5440](https://github.com/electron/electron/pull/5440)\r\n\r\n__Linux__\r\n\r\n* Resize the icon of `dialog.showMessageBox()` to a suitable size. [#5496](https://github.com/electron/electron/pull/5496)\r\n"
+    "body": "Changelog:\r\n\r\n* Allow `protocol` module to be imported before the `ready` event of `app` module. [#5406](https://github.com/electron/electron/pull/5406)\r\n* Add `context-menu` event to `WebContents`. [#5379](https://github.com/electron/electron/pull/5379)\r\n* Add `process.defaultApp` property. [#5421](https://github.com/electron/electron/pull/5421)\r\n* Fix `protocol.registerStandardSchemes(schemes)` not working. [#5406](https://github.com/electron/electron/pull/5406)\r\n* Fix file system indexing not working in devtools. [#5431](https://github.com/electron/electron/pull/5431)\r\n* Fix crash when replying to the same synchronous message more than once. [#5430](https://github.com/electron/electron/pull/5430)\r\n* Fix `expirationDate` not showing for persistent cookies in `session.cookies.get` API. [#5444](https://github.com/electron/electron/pull/5444)\r\n* Fix `protocol.registerStandardSchemes(schemes)` not working. [#5406](https://github.com/electron/electron/pull/5406)\r\n* Fix exception after creating large numbers of renderer processes. [#5491](https://github.com/electron/electron/pull/5491)\r\n* Fix devtools extension repeatedly loaded when changing dock state. [electron/brightray#219](https://github.com/electron/brightray/pull/219)\r\n\r\n__OS X__\r\n\r\n* Disable the scroll bounce (rubber banding) effect by default. [#5412](https://github.com/electron/electron/pull/5412)\r\n* Add `scrollBounce` option to `webPreferences`. [#5412](https://github.com/electron/electron/pull/5412)\r\n* Add `app.setUserActivity(type, userInfo)`, `app.getCurrentActivityType()` APIs and `continue-activity` event for Handoff feature of OS X. [#5352](https://github.com/electron/electron/pull/5352)\r\n* Add `app.dock.downloadFinished(filePath)` API. [#5477](https://github.com/electron/electron/pull/5477)\r\n* Fix high CPU usage when using pty.js Node module. [#5378](https://github.com/electron/electron/pull/5378)\r\n* Fix `app.removeAsDefaultProtocolClient(protocol)` API not working. [#5440](https://github.com/electron/electron/pull/5440)\r\n\r\n__Linux__\r\n\r\n* Resize the icon of `dialog.showMessageBox()` to a suitable size. [#5496](https://github.com/electron/electron/pull/5496)\r\n",
+    "version": "1.0.2"
   },
   {
     "url": "https://api.github.com/repos/electron/electron/releases/3201461",
@@ -48,7 +50,8 @@
     "published_at": "2016-05-11T12:54:14Z",
     "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v1.0.1",
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v1.0.1",
-    "body": "Changelog:\r\n\r\n* Fix devtools extension not loading."
+    "body": "Changelog:\r\n\r\n* Fix devtools extension not loading.",
+    "version": "1.0.1"
   },
   {
     "url": "https://api.github.com/repos/electron/electron/releases/3183907",
@@ -65,7 +68,8 @@
     "published_at": "2016-05-11T11:08:00Z",
     "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v1.0.0",
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v1.0.0",
-    "body": "Changelog:\r\n\r\n* Bump version number to 1.0.0.\r\n* Remove deprecated APIs. [#5373](https://github.com/electron/electron/pull/5373)\r\n\r\nMigration notice:\r\n\r\n* Please update your app to v0.37.8 first to check whether there are deprecated\r\n  APIs usages.\r\n* Following deprecated events of `BrowserWindow` have been removed but there\r\n  were no deprecation warnings in previous versions, you should use the\r\n  corresponding events in `webContents` instead:\r\n  * `crash`\r\n  * `devtools-focused`\r\n  * `devtools-opened`\r\n  * `devtools-closed`\r\n* `NativeImage.toDataUrl` has been removed but there were no deprecation\r\n  warnings in previous versions, you should use `toDataURL` instead.\r\n"
+    "body": "Changelog:\r\n\r\n* Bump version number to 1.0.0.\r\n* Remove deprecated APIs. [#5373](https://github.com/electron/electron/pull/5373)\r\n\r\nMigration notice:\r\n\r\n* Please update your app to v0.37.8 first to check whether there are deprecated\r\n  APIs usages.\r\n* Following deprecated events of `BrowserWindow` have been removed but there\r\n  were no deprecation warnings in previous versions, you should use the\r\n  corresponding events in `webContents` instead:\r\n  * `crash`\r\n  * `devtools-focused`\r\n  * `devtools-opened`\r\n  * `devtools-closed`\r\n* `NativeImage.toDataUrl` has been removed but there were no deprecation\r\n  warnings in previous versions, you should use `toDataURL` instead.\r\n",
+    "version": "1.0.0"
   },
   {
     "url": "https://api.github.com/repos/electron/electron/releases/3126483",
@@ -82,7 +86,8 @@
     "published_at": "2016-04-29T13:30:31Z",
     "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.37.8",
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.37.8",
-    "body": "Changelog:\r\n\r\n* Disable node integration in webview when it is disabled in host page. [#5244](https://github.com/electron/electron/pull/5244)\r\n* Make sure the `userData` directory is created during the `ready` event of `app` module. [#5340](https://github.com/electron/electron/pull/5340)\r\n* Throw error when `autoUpdater.quitAndInstall()` is called while there is no update. [#5287](https://github.com/electron/electron/pull/5287)\r\n* Add `systemPreferences` module. [#5282](https://github.com/electron/electron/pull/5282)\r\n* Add `app.isDefaultProtocolClient(protocol)` API.  [#5302](https://github.com/electron/electron/pull/5302)\r\n* Fix occasional crash when doing GC. [#5293](https://github.com/electron/electron/pull/5293)\r\n* Fix `app.makeSingleInstance(callback)` wrongly returning `true` on first launch. [#5311](https://github.com/electron/electron/pull/5311)\r\n* Fix `will-download` event not emitted for HTML pages. [#5315](https://github.com/electron/electron/pull/5315)\r\n* Fix crash when navigating to a new location after downloading failed. [#5315](https://github.com/electron/electron/pull/5315)\r\n* Fix `webContents.executeJavaScript` not working after being called immediately after `loadURL`. [#5319](https://github.com/electron/electron/pull/5319)\r\n* Fix `desktopCapturer.getSources` not responding when there is subsequent calls with different arguments. [#5320](https://github.com/electron/electron/pull/5320)\r\n\r\n__OS X__\r\n\r\n* Fix the `Command Plus` accelerator appearing as `Shift Command =` in menu. [#5298](https://github.com/electron/electron/pull/5298)\r\n\r\n__Windows__\r\n\r\n* Fix `display-removed` event not working. [#5334](https://github.com/electron/electron/pull/5334)"
+    "body": "Changelog:\r\n\r\n* Disable node integration in webview when it is disabled in host page. [#5244](https://github.com/electron/electron/pull/5244)\r\n* Make sure the `userData` directory is created during the `ready` event of `app` module. [#5340](https://github.com/electron/electron/pull/5340)\r\n* Throw error when `autoUpdater.quitAndInstall()` is called while there is no update. [#5287](https://github.com/electron/electron/pull/5287)\r\n* Add `systemPreferences` module. [#5282](https://github.com/electron/electron/pull/5282)\r\n* Add `app.isDefaultProtocolClient(protocol)` API.  [#5302](https://github.com/electron/electron/pull/5302)\r\n* Fix occasional crash when doing GC. [#5293](https://github.com/electron/electron/pull/5293)\r\n* Fix `app.makeSingleInstance(callback)` wrongly returning `true` on first launch. [#5311](https://github.com/electron/electron/pull/5311)\r\n* Fix `will-download` event not emitted for HTML pages. [#5315](https://github.com/electron/electron/pull/5315)\r\n* Fix crash when navigating to a new location after downloading failed. [#5315](https://github.com/electron/electron/pull/5315)\r\n* Fix `webContents.executeJavaScript` not working after being called immediately after `loadURL`. [#5319](https://github.com/electron/electron/pull/5319)\r\n* Fix `desktopCapturer.getSources` not responding when there is subsequent calls with different arguments. [#5320](https://github.com/electron/electron/pull/5320)\r\n\r\n__OS X__\r\n\r\n* Fix the `Command Plus` accelerator appearing as `Shift Command =` in menu. [#5298](https://github.com/electron/electron/pull/5298)\r\n\r\n__Windows__\r\n\r\n* Fix `display-removed` event not working. [#5334](https://github.com/electron/electron/pull/5334)",
+    "version": "0.37.8"
   },
   {
     "url": "https://api.github.com/repos/electron/electron/releases/3075679",
@@ -99,7 +104,8 @@
     "published_at": "2016-04-22T11:10:54Z",
     "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.37.7",
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.37.7",
-    "body": "Changelog:\r\n\r\n* Add `mode` option to `webContents.openDevTools(options)` API.\r\n* Add `openExternal` type of `permission` parameter to `Session.setPermissionRequestHandler(handler)` API.\r\n* Add `process.windowsStore` property to determine whether the app is an Windows Store app.\r\n* Fix random crash when accessing `devToolsWebContents.hostWebContents`.\r\n* Fix `session.enableNetworkEmulation(options)` API not working.\r\n* Fix `WebContents.executeJavaScript(code)` not working when called during a resource load after page is loaded.\r\n* Fix after using `app.setPath` to change the location of `userData` directory, a folder is still created at the default location. \r\n* Fix occasional exception when removing a reference to a remote object.\r\n\r\n__Windows__\r\n\r\n* Avoid spawning new Squirrel processes when there is already one running.\r\n\r\n__Linux__\r\n\r\n* Use the `append` hint when showing notifications.\r\n* Add `app.importCertificate(options, callback)` API.\r\n\r\n__OS X__\r\n\r\n* Update the docs on how to submit latest versions of Electron to Mac App Store.\r\n* Add `BrowserWindow.setSheetOffset(offset)` for changing the offset when showing sheet.\r\n* Fix crash when app's name is long while using `app.makeSingleInstance` with Mac App Store build."
+    "body": "Changelog:\r\n\r\n* Add `mode` option to `webContents.openDevTools(options)` API.\r\n* Add `openExternal` type of `permission` parameter to `Session.setPermissionRequestHandler(handler)` API.\r\n* Add `process.windowsStore` property to determine whether the app is an Windows Store app.\r\n* Fix random crash when accessing `devToolsWebContents.hostWebContents`.\r\n* Fix `session.enableNetworkEmulation(options)` API not working.\r\n* Fix `WebContents.executeJavaScript(code)` not working when called during a resource load after page is loaded.\r\n* Fix after using `app.setPath` to change the location of `userData` directory, a folder is still created at the default location. \r\n* Fix occasional exception when removing a reference to a remote object.\r\n\r\n__Windows__\r\n\r\n* Avoid spawning new Squirrel processes when there is already one running.\r\n\r\n__Linux__\r\n\r\n* Use the `append` hint when showing notifications.\r\n* Add `app.importCertificate(options, callback)` API.\r\n\r\n__OS X__\r\n\r\n* Update the docs on how to submit latest versions of Electron to Mac App Store.\r\n* Add `BrowserWindow.setSheetOffset(offset)` for changing the offset when showing sheet.\r\n* Fix crash when app's name is long while using `app.makeSingleInstance` with Mac App Store build.",
+    "version": "0.37.7"
   },
   {
     "url": "https://api.github.com/repos/electron/electron/releases/3025930",
@@ -116,7 +122,8 @@
     "published_at": "2016-04-15T10:31:15Z",
     "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.37.6",
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.37.6",
-    "body": "Changelog:\r\n\r\n* Don't emit `will-quit` when `app.exit()` is called.\r\n* Add `isMainFrame` parameter to `did-fail-load` event of `WebContents`.\r\n* Add `statusLine` property to `webRequest.OnHeadersReceived` API's `responseHeaders` object.\r\n* Add `backgroundThrottling` option to `webPreferences` of `BrowserWindow`.\r\n* Add `resourceType` parameter to `did-get-response-details` event of `WebContents`.\r\n* Fix `<webview>` and `preload` script not working when there is no script tag in page.\r\n* Fix `webRequest.onHeadersReceived` API modifying original headers' status line.\r\n* Fix breakpoints not working after reloading in the devtools view.\r\n* Fix idle GC not working in the main process.\r\n* Fix the race condition between `did-fail-load` and `did-finish-load` events.\r\n* Fix wrong default transparent background for frameless window.\r\n* Fix SSL certificate information not showing in the Security tab of devtools.\r\n\r\n__Windows__\r\n\r\n* Fix printing not working.\r\n* Fix support with NVDA/JAWS screen readers.\r\n* Fix crash when closing a window in its `blur` event handler.\r\n* Fix notification not showing when Application User Model ID is set.\r\n\r\n__OS X__\r\n\r\n* Fix template image not working as tray icon on some machines.\r\n* Fix `backgroundColor` of `BrowserWindow` not displaying correctly.\r\n\r\n__Linux__\r\n\r\n* Do not wait for `xdg-open` to exit when calling `shell.openExternal`.\r\n* Add support for the `tag` property of HTML5 `Notification` API.\r\n* Fix notifications not showing on Ubuntu 16.04.\r\n"
+    "body": "Changelog:\r\n\r\n* Don't emit `will-quit` when `app.exit()` is called.\r\n* Add `isMainFrame` parameter to `did-fail-load` event of `WebContents`.\r\n* Add `statusLine` property to `webRequest.OnHeadersReceived` API's `responseHeaders` object.\r\n* Add `backgroundThrottling` option to `webPreferences` of `BrowserWindow`.\r\n* Add `resourceType` parameter to `did-get-response-details` event of `WebContents`.\r\n* Fix `<webview>` and `preload` script not working when there is no script tag in page.\r\n* Fix `webRequest.onHeadersReceived` API modifying original headers' status line.\r\n* Fix breakpoints not working after reloading in the devtools view.\r\n* Fix idle GC not working in the main process.\r\n* Fix the race condition between `did-fail-load` and `did-finish-load` events.\r\n* Fix wrong default transparent background for frameless window.\r\n* Fix SSL certificate information not showing in the Security tab of devtools.\r\n\r\n__Windows__\r\n\r\n* Fix printing not working.\r\n* Fix support with NVDA/JAWS screen readers.\r\n* Fix crash when closing a window in its `blur` event handler.\r\n* Fix notification not showing when Application User Model ID is set.\r\n\r\n__OS X__\r\n\r\n* Fix template image not working as tray icon on some machines.\r\n* Fix `backgroundColor` of `BrowserWindow` not displaying correctly.\r\n\r\n__Linux__\r\n\r\n* Do not wait for `xdg-open` to exit when calling `shell.openExternal`.\r\n* Add support for the `tag` property of HTML5 `Notification` API.\r\n* Fix notifications not showing on Ubuntu 16.04.\r\n",
+    "version": "0.37.6"
   },
   {
     "url": "https://api.github.com/repos/electron/electron/releases/2961745",
@@ -133,7 +140,8 @@
     "published_at": "2016-04-07T04:44:13Z",
     "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.37.5",
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.37.5",
-    "body": "Changelog:\r\n\r\n* Fix wrongly using Node v6.0.0-pre, use Node v5.10.0 instead.\r\n* Fix crash when creating `Buffer` with large size.\r\n"
+    "body": "Changelog:\r\n\r\n* Fix wrongly using Node v6.0.0-pre, use Node v5.10.0 instead.\r\n* Fix crash when creating `Buffer` with large size.\r\n",
+    "version": "0.37.5"
   },
   {
     "url": "https://api.github.com/repos/electron/electron/releases/2941492",
@@ -150,7 +158,8 @@
     "published_at": "2016-04-03T11:04:38Z",
     "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.37.4",
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.37.4",
-    "body": "Changelog:\r\n\r\n* Upgrade to Node v5.10.0.\r\n* Remove the white flash when loading pages.\r\n* The default app is now packaged as `asar` archive.\r\n* The `atom.asar` in the resources directory is renamed to `electron.asar`.\r\n* Disable node integration in child windows opened with `window.open` when node integration is disabled in parent window.\r\n* Add `app.setAsDefaultProtocolClient(protocol)` and `app.removeAsDefaultProtocolClient(protocol)` APIs.\r\n* Fix crash when sending IPC messages.\r\n* Fix wrong `disposition` parameter of `new-window` event for certain types of background types.\r\n* Fix exception when calling remote method while not storing its remote object.\r\n\r\n__OS X__\r\n\r\n* Add `swipe` event to `BrowserWindow`.\r\n* Fix `backgroundColor` option of `BrowserWindow` not working.\r\n"
+    "body": "Changelog:\r\n\r\n* Upgrade to Node v5.10.0.\r\n* Remove the white flash when loading pages.\r\n* The default app is now packaged as `asar` archive.\r\n* The `atom.asar` in the resources directory is renamed to `electron.asar`.\r\n* Disable node integration in child windows opened with `window.open` when node integration is disabled in parent window.\r\n* Add `app.setAsDefaultProtocolClient(protocol)` and `app.removeAsDefaultProtocolClient(protocol)` APIs.\r\n* Fix crash when sending IPC messages.\r\n* Fix wrong `disposition` parameter of `new-window` event for certain types of background types.\r\n* Fix exception when calling remote method while not storing its remote object.\r\n\r\n__OS X__\r\n\r\n* Add `swipe` event to `BrowserWindow`.\r\n* Fix `backgroundColor` option of `BrowserWindow` not working.\r\n",
+    "version": "0.37.4"
   },
   {
     "url": "https://api.github.com/repos/electron/electron/releases/2894277",
@@ -167,7 +176,8 @@
     "published_at": "2016-03-27T04:51:16Z",
     "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.37.3",
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.37.3",
-    "body": "Changelog:\r\n\r\n* `<webview>`'s background is now transparent by default.\r\n* Add `NativeImage.getNativeHandle()` API.\r\n* Add `-i/--interactive` flag to default app that starts a repl for the main process. \r\n* Fix occasional exception when using `remote` module.\r\n* Fix devtools workspace not working.\r\n* Fix exception when `accelerator` is undefined when calling `Menu.buildFromTemplate`.\r\n\r\n__Windows__\r\n\r\n* Automatically set Application User Model ID when Squirrel.Windows is used.\r\n* Fix crash when showing notifications while notifications are disabled.\r\n"
+    "body": "Changelog:\r\n\r\n* `<webview>`'s background is now transparent by default.\r\n* Add `NativeImage.getNativeHandle()` API.\r\n* Add `-i/--interactive` flag to default app that starts a repl for the main process. \r\n* Fix occasional exception when using `remote` module.\r\n* Fix devtools workspace not working.\r\n* Fix exception when `accelerator` is undefined when calling `Menu.buildFromTemplate`.\r\n\r\n__Windows__\r\n\r\n* Automatically set Application User Model ID when Squirrel.Windows is used.\r\n* Fix crash when showing notifications while notifications are disabled.\r\n",
+    "version": "0.37.3"
   },
   {
     "url": "https://api.github.com/repos/electron/electron/releases/2894067",
@@ -184,7 +194,8 @@
     "published_at": "2016-03-27T03:15:38Z",
     "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.36.12",
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.36.12",
-    "body": "Changelog:\r\n\r\n* Fix occasional exception when using `remote` module.\r\n\r\n__Windows__\r\n\r\n* Fix crash when showing notifications while notifications are disabled.\r\n"
+    "body": "Changelog:\r\n\r\n* Fix occasional exception when using `remote` module.\r\n\r\n__Windows__\r\n\r\n* Fix crash when showing notifications while notifications are disabled.\r\n",
+    "version": "0.36.12"
   },
   {
     "url": "https://api.github.com/repos/electron/electron/releases/2804269",
@@ -201,7 +212,8 @@
     "published_at": "2016-03-14T11:21:55Z",
     "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.37.2",
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.37.2",
-    "body": "Changelog:\r\n\r\n* Add `activeMatchOrdinal` property in the `result` object of `found-in-page` event.\r\n* Fix notifications not showing.\r\n* Fix the main process hanging on exit.\r\n"
+    "body": "Changelog:\r\n\r\n* Add `activeMatchOrdinal` property in the `result` object of `found-in-page` event.\r\n* Fix notifications not showing.\r\n* Fix the main process hanging on exit.\r\n",
+    "version": "0.37.2"
   },
   {
     "url": "https://api.github.com/repos/electron/electron/releases/2800343",
@@ -218,7 +230,8 @@
     "published_at": "2016-03-13T04:14:34Z",
     "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.37.1",
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.37.1",
-    "body": "Changelog:\r\n\r\n__OS X__\r\n\r\n* Fix `libffmpeg.dylib image not found` error on startup.\r\n\r\n__Windows__\r\n\r\n* Fix unable to start on Windows 7."
+    "body": "Changelog:\r\n\r\n__OS X__\r\n\r\n* Fix `libffmpeg.dylib image not found` error on startup.\r\n\r\n__Windows__\r\n\r\n* Fix unable to start on Windows 7.",
+    "version": "0.37.1"
   },
   {
     "url": "https://api.github.com/repos/electron/electron/releases/2792484",
@@ -235,7 +248,8 @@
     "published_at": "2016-03-12T05:35:40Z",
     "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.37.0",
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.37.0",
-    "body": "Changelog:\r\n\r\n* Upgrade to Chrome 49."
+    "body": "Changelog:\r\n\r\n* Upgrade to Chrome 49.",
+    "version": "0.37.0"
   },
   {
     "url": "https://api.github.com/repos/electron/electron/releases/2791911",
@@ -252,7 +266,8 @@
     "published_at": "2016-03-11T12:39:31Z",
     "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.36.11",
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.36.11",
-    "body": "Changelog:\r\n\r\n* Add `show` and `hide` events to `BrowserWindow`.\r\n* Do not block when calling `document.hidden`.\r\n* Fix `visibilitychange` event not working.\r\n* Fix passing certificate to `select-client-certificate` event's callback.\r\n* Fix `PrintScreen` not working as accelerator.\r\n* Fix style issues with `<webview>` inside flexbox.\r\n* Fix unable to read image when there is `..` in file path.\r\n\r\n__Linux__\r\n\r\n* Fix `resizable` option not working.\r\n\r\n__Windows__\r\n\r\n* Make `fullscreenable` option work.\r\n\r\n__OS X__\r\n\r\n* Add `platform-theme-changed` event to `app` module.\r\n* Add `app.isDarkMode()` API.\r\n* Fix `Cmd+~` cycling windows in wrong direction.\r\n* Fix `BrowserWindow.isMaximized()` returning wrong result when window is not resizable.\r\n"
+    "body": "Changelog:\r\n\r\n* Add `show` and `hide` events to `BrowserWindow`.\r\n* Do not block when calling `document.hidden`.\r\n* Fix `visibilitychange` event not working.\r\n* Fix passing certificate to `select-client-certificate` event's callback.\r\n* Fix `PrintScreen` not working as accelerator.\r\n* Fix style issues with `<webview>` inside flexbox.\r\n* Fix unable to read image when there is `..` in file path.\r\n\r\n__Linux__\r\n\r\n* Fix `resizable` option not working.\r\n\r\n__Windows__\r\n\r\n* Make `fullscreenable` option work.\r\n\r\n__OS X__\r\n\r\n* Add `platform-theme-changed` event to `app` module.\r\n* Add `app.isDarkMode()` API.\r\n* Fix `Cmd+~` cycling windows in wrong direction.\r\n* Fix `BrowserWindow.isMaximized()` returning wrong result when window is not resizable.\r\n",
+    "version": "0.36.11"
   },
   {
     "url": "https://api.github.com/repos/electron/electron/releases/2749683",
@@ -269,7 +284,8 @@
     "published_at": "2016-03-05T05:02:05Z",
     "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.36.10",
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.36.10",
-    "body": "Changelog:\r\n\r\n* `WebContents.beginFrameSubscription` becomes faster and gets better image quality.\r\n* Add `callback` parameter for `webContents.executeJavaScript` and `<webview>.executeJavaScript`.\r\n* Fix media devices having empty labels.\r\n* Fix the methods of remote objects being unwritable and unconfigurable.\r\n"
+    "body": "Changelog:\r\n\r\n* `WebContents.beginFrameSubscription` becomes faster and gets better image quality.\r\n* Add `callback` parameter for `webContents.executeJavaScript` and `<webview>.executeJavaScript`.\r\n* Fix media devices having empty labels.\r\n* Fix the methods of remote objects being unwritable and unconfigurable.\r\n",
+    "version": "0.36.10"
   },
   {
     "url": "https://api.github.com/repos/electron/electron/releases/2693483",
@@ -286,7 +302,8 @@
     "published_at": "2016-02-26T07:33:00Z",
     "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.36.9",
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.36.9",
-    "body": "Changelog:\r\n\r\n* Cache the remote objects returned by `remote` module.\r\n* Add `webContents.hostWebContents` property.\r\n* Add `<webview>.getWebContents()` API.\r\n* Fix ES6 classes not working with `remote` module.\r\n* Fix remote objects of renderer processes being wrongly freed when page is reloaded.\r\n* Fix crash in `protocol` module for certain kind of URLs.\r\n\r\n__Linux__\r\n\r\n* Fix crash when freetype 2.6.3 is used in system.\r\n* Fix the application menu bar disappearing after hiding and showing the window.\r\n"
+    "body": "Changelog:\r\n\r\n* Cache the remote objects returned by `remote` module.\r\n* Add `webContents.hostWebContents` property.\r\n* Add `<webview>.getWebContents()` API.\r\n* Fix ES6 classes not working with `remote` module.\r\n* Fix remote objects of renderer processes being wrongly freed when page is reloaded.\r\n* Fix crash in `protocol` module for certain kind of URLs.\r\n\r\n__Linux__\r\n\r\n* Fix crash when freetype 2.6.3 is used in system.\r\n* Fix the application menu bar disappearing after hiding and showing the window.\r\n",
+    "version": "0.36.9"
   },
   {
     "url": "https://api.github.com/repos/electron/electron/releases/2645576",
@@ -303,7 +320,8 @@
     "published_at": "2016-02-19T10:11:19Z",
     "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.36.8",
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.36.8",
-    "body": "Changelog:\r\n\r\n* Link with ffmpeg dynamically.\r\n* Provide prebuilt binaries of ffmpeg which do not include proprietary codecs.\r\n* Improve error message when there is invalid parameter passed to Electron API.\r\n* Emit `did-fail-load` event when invalid URL is passed to `BrowserWindow.loadURL`.\r\n* Launch URL or HTML file directly in default app.\r\n* Add `cursor-changed` event to `WebContents`.\r\n* Add `Session.setPermissionRequestHandler(handler)` API.\r\n* Add `Session.clearHostResolverCache(callback)` API.\r\n* Add `readRtf` and `writeRtf` methods to `clipboard` module.\r\n* Fix crash when calling methods of `downloadItem` in `will-download` handler when `event.preventDefault` is called.\r\n* Fix crash when calling `WebContents.endFrameSubscription()` while there are pending frames.\r\n* Fix the `exit` event of `process` object not reliable in renderer process.\r\n* Fix `BrowserWindow.getNativeWindowHandle()` returning corrupted buffer.\r\n\r\n__Windows__\r\n\r\n* Fix methods of `autoUpdater` not accessible in `remote` module.\r\n\r\n__OS X__\r\n\r\n* Add `app.show` and `app.hide` APIs.\r\n* Fix `icon` not working in `dialog.showMessageBox(options)`.\r\n* Fix `Command + ~` not switching windows sometimes.\r\n\r\n__Linux__\r\n\r\n* Don't drop capabilities in renderer process."
+    "body": "Changelog:\r\n\r\n* Link with ffmpeg dynamically.\r\n* Provide prebuilt binaries of ffmpeg which do not include proprietary codecs.\r\n* Improve error message when there is invalid parameter passed to Electron API.\r\n* Emit `did-fail-load` event when invalid URL is passed to `BrowserWindow.loadURL`.\r\n* Launch URL or HTML file directly in default app.\r\n* Add `cursor-changed` event to `WebContents`.\r\n* Add `Session.setPermissionRequestHandler(handler)` API.\r\n* Add `Session.clearHostResolverCache(callback)` API.\r\n* Add `readRtf` and `writeRtf` methods to `clipboard` module.\r\n* Fix crash when calling methods of `downloadItem` in `will-download` handler when `event.preventDefault` is called.\r\n* Fix crash when calling `WebContents.endFrameSubscription()` while there are pending frames.\r\n* Fix the `exit` event of `process` object not reliable in renderer process.\r\n* Fix `BrowserWindow.getNativeWindowHandle()` returning corrupted buffer.\r\n\r\n__Windows__\r\n\r\n* Fix methods of `autoUpdater` not accessible in `remote` module.\r\n\r\n__OS X__\r\n\r\n* Add `app.show` and `app.hide` APIs.\r\n* Fix `icon` not working in `dialog.showMessageBox(options)`.\r\n* Fix `Command + ~` not switching windows sometimes.\r\n\r\n__Linux__\r\n\r\n* Don't drop capabilities in renderer process.",
+    "version": "0.36.8"
   },
   {
     "url": "https://api.github.com/repos/electron/electron/releases/2521566",
@@ -320,7 +338,8 @@
     "published_at": "2016-01-30T07:08:30Z",
     "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.36.7",
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.36.7",
-    "body": "Changelog:\r\n\r\n* Fix the occasional `Object has been destroyed` exception in the main process.\r\n\r\n__Windows__\r\n\r\n* Fix crash on exit.\r\n"
+    "body": "Changelog:\r\n\r\n* Fix the occasional `Object has been destroyed` exception in the main process.\r\n\r\n__Windows__\r\n\r\n* Fix crash on exit.\r\n",
+    "version": "0.36.7"
   },
   {
     "url": "https://api.github.com/repos/electron/electron/releases/2513890",
@@ -337,7 +356,8 @@
     "published_at": "2016-01-29T06:32:29Z",
     "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.36.6",
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.36.6",
-    "body": "Changelog:\r\n\r\n* Restarts renderer process for server redirect.\r\n* Add `setMovable`, `isMovable`, `setMinimizable`, `isMinimizable`, `setMaximizable`, `isMaximizable`, `setFullScreenable`, `isFullScreenable`, `setClosable`, `isClosable`, `setHasShadow`, `hasShadow` methods to `BrowserWindow`.\r\n* Add `scroll-touch-begin` and `scroll-touch-end` events to `BrowserWindow`.\r\n* Add `webContents.debugger` API.\r\n* Add `app.dock.setIcon` API.\r\n* Add `uploadData` to `details` of `session.webRequest.onBeforeRequest`.\r\n* Support alpha channel in `backgroundColor` option of `BrowserWindow`.\r\n* Fix exception when writing to stdout/stderr in renderer process under certain circumstances.\r\n\r\n__OS X__\r\n\r\n* Add `positioningItem` parameter for `Menu.popup`.\r\n\r\n__Windows__\r\n\r\n* Fix using `autoUpdater` throws exception.\r\n* Fix possible crash when closing `asar` archive.\r\n"
+    "body": "Changelog:\r\n\r\n* Restarts renderer process for server redirect.\r\n* Add `setMovable`, `isMovable`, `setMinimizable`, `isMinimizable`, `setMaximizable`, `isMaximizable`, `setFullScreenable`, `isFullScreenable`, `setClosable`, `isClosable`, `setHasShadow`, `hasShadow` methods to `BrowserWindow`.\r\n* Add `scroll-touch-begin` and `scroll-touch-end` events to `BrowserWindow`.\r\n* Add `webContents.debugger` API.\r\n* Add `app.dock.setIcon` API.\r\n* Add `uploadData` to `details` of `session.webRequest.onBeforeRequest`.\r\n* Support alpha channel in `backgroundColor` option of `BrowserWindow`.\r\n* Fix exception when writing to stdout/stderr in renderer process under certain circumstances.\r\n\r\n__OS X__\r\n\r\n* Add `positioningItem` parameter for `Menu.popup`.\r\n\r\n__Windows__\r\n\r\n* Fix using `autoUpdater` throws exception.\r\n* Fix possible crash when closing `asar` archive.\r\n",
+    "version": "0.36.6"
   },
   {
     "url": "https://api.github.com/repos/electron/electron/releases/2471447",
@@ -354,7 +374,8 @@
     "published_at": "2016-01-22T15:47:37Z",
     "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.36.5",
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.36.5",
-    "body": "Changelog:\r\n\r\n* Fix crash when switching between submenus of window menubar.\r\n* Add support for the `silent` property of `Notification`.\r\n* Add `defaultFontFamily`, `defaultFontSize`, `defaultMonospaceFontSize`, `minimumFontSize`, `defaultEncoding` options to `webPreferences` of `BrowserWindow`.\r\n* Add `<webview>.loadURL`.\r\n* Add `blinkfeatures` attribute for `<webview>`.\r\n\r\n__OS X__\r\n\r\n* Add `animate` parameter for `setBounds`, `setSize`, `setContentSize`, `setPosition` methods of `BrowserWindow`.\r\n* Add `movable` option for `BrowserWindow`.\r\n* Make the `backgroundColor` option of `BrowserWindow` work.\r\n\r\n__Windows__\r\n\r\n* Add `app.isAeroGlassEnabled()` API.\r\n"
+    "body": "Changelog:\r\n\r\n* Fix crash when switching between submenus of window menubar.\r\n* Add support for the `silent` property of `Notification`.\r\n* Add `defaultFontFamily`, `defaultFontSize`, `defaultMonospaceFontSize`, `minimumFontSize`, `defaultEncoding` options to `webPreferences` of `BrowserWindow`.\r\n* Add `<webview>.loadURL`.\r\n* Add `blinkfeatures` attribute for `<webview>`.\r\n\r\n__OS X__\r\n\r\n* Add `animate` parameter for `setBounds`, `setSize`, `setContentSize`, `setPosition` methods of `BrowserWindow`.\r\n* Add `movable` option for `BrowserWindow`.\r\n* Make the `backgroundColor` option of `BrowserWindow` work.\r\n\r\n__Windows__\r\n\r\n* Add `app.isAeroGlassEnabled()` API.\r\n",
+    "version": "0.36.5"
   },
   {
     "url": "https://api.github.com/repos/electron/electron/releases/2432795",
@@ -371,7 +392,8 @@
     "published_at": "2016-01-15T08:09:45Z",
     "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.36.4",
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.36.4",
-    "body": "Changelog:\r\n\r\n* `session.setProxy(config)` API now accepts an `Object` instead of `String`.\r\n* `BrowserWindow.getFocusedWindow()` API now returns `null` instead of `undefined` when there is no focused window.\r\n* Add `session.flushStorageData()` API.\r\n* Add `session.getCacheSize(callback)` API.\r\n* Add `BrowserWindow.getNativeWindowHandle()` API.\r\n* Add `defaultId` option for `dialog.showMessageBox(options)` API.\r\n* Add `insertText` and `executeJavaScript` methods to `webFrame` module.\r\n* Add `insertText` method to `webContents` and `<webview>`.\r\n* Fix wrong aspect ratio in Netflix videos.\r\n* Fix source code highlighting not working in devtools.\r\n* Fix `<webview>.src` not working before `onload` event.\r\n\r\n__Linux__\r\n\r\n* Fix `--touch-devices` command line switch not working.\r\n\r\n__Windows__\r\n\r\n* Fix DRM not working in Adobe Flash Player plugin.\r\n"
+    "body": "Changelog:\r\n\r\n* `session.setProxy(config)` API now accepts an `Object` instead of `String`.\r\n* `BrowserWindow.getFocusedWindow()` API now returns `null` instead of `undefined` when there is no focused window.\r\n* Add `session.flushStorageData()` API.\r\n* Add `session.getCacheSize(callback)` API.\r\n* Add `BrowserWindow.getNativeWindowHandle()` API.\r\n* Add `defaultId` option for `dialog.showMessageBox(options)` API.\r\n* Add `insertText` and `executeJavaScript` methods to `webFrame` module.\r\n* Add `insertText` method to `webContents` and `<webview>`.\r\n* Fix wrong aspect ratio in Netflix videos.\r\n* Fix source code highlighting not working in devtools.\r\n* Fix `<webview>.src` not working before `onload` event.\r\n\r\n__Linux__\r\n\r\n* Fix `--touch-devices` command line switch not working.\r\n\r\n__Windows__\r\n\r\n* Fix DRM not working in Adobe Flash Player plugin.\r\n",
+    "version": "0.36.4"
   },
   {
     "url": "https://api.github.com/repos/electron/electron/releases/2402717",
@@ -388,7 +410,8 @@
     "published_at": "2016-01-11T06:38:06Z",
     "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.35.6",
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.35.6",
-    "body": "Changeling:\r\n\r\n* Fix wrong `appData` and `userData` dir values."
+    "body": "Changeling:\r\n\r\n* Fix wrong `appData` and `userData` dir values.",
+    "version": "0.35.6"
   },
   {
     "url": "https://api.github.com/repos/electron/electron/releases/2391784",
@@ -405,7 +428,8 @@
     "published_at": "2016-01-11T02:23:14Z",
     "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.36.3",
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.36.3",
-    "body": "Changelog:\r\n\r\n* Add support for Widevine CDM plugin.\r\n* Add `isDevToolsFocused` method to `WebContents` and `<webview>`.\r\n* Add `did-navigate` and `did-navigate-in-page` events to `WebContents` and `<webview>`.\r\n* Add `will-navigate`, `devtools-opened`, `devtools-closed`, `devtools-focused` events to `<webview>`.\r\n* Add `blinkFeatures` option to `webPreferences`.\r\n* Remove `overlayScrollbars`, `sharedWorker`, `pageVisibility` options from `webPreferences`.\r\n* Localize the default string resources in HTML elements.\r\n* Allow using `fetch` for URLs registered as privilege.\r\n* Fix memory leak in `remote` module.\r\n* Fix distorted image when calling `capturePage` with no rect.\r\n* Fix crash when using `protocol.registerHttpProtocol` without internet connection.\r\n\r\n__OS X__\r\n\r\n* Fix `drop-files` not firing when dragging from the dock.\r\n* Fix `app.clearRecentDocuments` not working.\r\n* Fix crash when calling `dialog.showSaveDialog` with filters with no extensions.\r\n* Fix crash when creating `Window` menu with no submenu items.\r\n* Fix `Tray.setPressedImage` not working after turning off highlight mode.\r\n* Fix unable to hide fullscreen button on EL Capitan.\r\n\r\n__Windows__\r\n\r\n* Fix recursive loop when calling `mkdirp` inside an `asar` archive.\r\n* Fix the window menu bar not behaving correctly.\r\n* Fix `dialog.openSaveDialog` adding extension to filename when it shouldn't.\r\n* Fix bad typing performance.\r\n"
+    "body": "Changelog:\r\n\r\n* Add support for Widevine CDM plugin.\r\n* Add `isDevToolsFocused` method to `WebContents` and `<webview>`.\r\n* Add `did-navigate` and `did-navigate-in-page` events to `WebContents` and `<webview>`.\r\n* Add `will-navigate`, `devtools-opened`, `devtools-closed`, `devtools-focused` events to `<webview>`.\r\n* Add `blinkFeatures` option to `webPreferences`.\r\n* Remove `overlayScrollbars`, `sharedWorker`, `pageVisibility` options from `webPreferences`.\r\n* Localize the default string resources in HTML elements.\r\n* Allow using `fetch` for URLs registered as privilege.\r\n* Fix memory leak in `remote` module.\r\n* Fix distorted image when calling `capturePage` with no rect.\r\n* Fix crash when using `protocol.registerHttpProtocol` without internet connection.\r\n\r\n__OS X__\r\n\r\n* Fix `drop-files` not firing when dragging from the dock.\r\n* Fix `app.clearRecentDocuments` not working.\r\n* Fix crash when calling `dialog.showSaveDialog` with filters with no extensions.\r\n* Fix crash when creating `Window` menu with no submenu items.\r\n* Fix `Tray.setPressedImage` not working after turning off highlight mode.\r\n* Fix unable to hide fullscreen button on EL Capitan.\r\n\r\n__Windows__\r\n\r\n* Fix recursive loop when calling `mkdirp` inside an `asar` archive.\r\n* Fix the window menu bar not behaving correctly.\r\n* Fix `dialog.openSaveDialog` adding extension to filename when it shouldn't.\r\n* Fix bad typing performance.\r\n",
+    "version": "0.36.3"
   },
   {
     "url": "https://api.github.com/repos/electron/electron/releases/2357454",
@@ -422,7 +446,8 @@
     "published_at": "2015-12-31T05:02:14Z",
     "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.35.5",
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.35.5",
-    "body": "Changelog:\r\n\r\n__Windows__\r\n\r\n* Fix `shell.moveItemToTrash` not working on Windows 7.\r\n"
+    "body": "Changelog:\r\n\r\n__Windows__\r\n\r\n* Fix `shell.moveItemToTrash` not working on Windows 7.\r\n",
+    "version": "0.35.5"
   },
   {
     "url": "https://api.github.com/repos/electron/electron/releases/2339356",
@@ -439,7 +464,8 @@
     "published_at": "2015-12-25T07:19:36Z",
     "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.36.2",
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.36.2",
-    "body": "Changelog:\r\n\r\n* Add `did-change-theme-color` event to `WebContents` and `<webview>`.\r\n* Add `media-started-playing` and `media-paused` events to `WebContents` and `<webview>`.\r\n* Add `findInPage` method to `WebContents` and `<webview>`.\r\n* Fix form redirect not working.\r\n* Fix `credentials: 'include'` being added to service worker's headers.\r\n* Fix in page navigations in sub-frames causing full page refresh.\r\n* Fix wrong `document.hidden` and `document.visibilityState` values when window is minimized.\r\n* Fix crash when using `webRequest` API.\r\n* Fix `webRequest.onBeforeSendHeaders` not removing existing headers.\r\n\r\n__OS X__\r\n\r\n* Remove the notification from notification center when is clicked or cancelled.\r\n* Fix app menu not showing after calling `app.dock.show()`.\r\n* Fix fullscreen mode for `BrowserWindow` with `hidden-inset` of `titleBarStyle`.\r\n* Fix `shell.openExternal` not working with URLs containing valid URL special characters.\r\n\r\n__Linux__\r\n\r\n* Load `libnotify` dynamically instead of linking with the library.\r\n* Fix pressing `Alt` not toggling window menu bar.\r\n\r\n__Windows__\r\n\r\n* Fix `shell.moveItemToTrash` not working on Windows 7.\r\n* Fix showing notification when icon is inside `asar` archive or the icon's URL is not `file://` scheme.\r\n"
+    "body": "Changelog:\r\n\r\n* Add `did-change-theme-color` event to `WebContents` and `<webview>`.\r\n* Add `media-started-playing` and `media-paused` events to `WebContents` and `<webview>`.\r\n* Add `findInPage` method to `WebContents` and `<webview>`.\r\n* Fix form redirect not working.\r\n* Fix `credentials: 'include'` being added to service worker's headers.\r\n* Fix in page navigations in sub-frames causing full page refresh.\r\n* Fix wrong `document.hidden` and `document.visibilityState` values when window is minimized.\r\n* Fix crash when using `webRequest` API.\r\n* Fix `webRequest.onBeforeSendHeaders` not removing existing headers.\r\n\r\n__OS X__\r\n\r\n* Remove the notification from notification center when is clicked or cancelled.\r\n* Fix app menu not showing after calling `app.dock.show()`.\r\n* Fix fullscreen mode for `BrowserWindow` with `hidden-inset` of `titleBarStyle`.\r\n* Fix `shell.openExternal` not working with URLs containing valid URL special characters.\r\n\r\n__Linux__\r\n\r\n* Load `libnotify` dynamically instead of linking with the library.\r\n* Fix pressing `Alt` not toggling window menu bar.\r\n\r\n__Windows__\r\n\r\n* Fix `shell.moveItemToTrash` not working on Windows 7.\r\n* Fix showing notification when icon is inside `asar` archive or the icon's URL is not `file://` scheme.\r\n",
+    "version": "0.36.2"
   },
   {
     "url": "https://api.github.com/repos/electron/electron/releases/2309473",
@@ -456,7 +482,8 @@
     "published_at": "2015-12-18T07:17:31Z",
     "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.36.1",
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.36.1",
-    "body": "Changelog:\r\n\r\n* Add `session.webRequest` API.\r\n* Add `A5` to `webContents.printToPDF`'s `pageSize`.\r\n* `crashReporter.start` now requires passing `submitURL` and `companyName`.\r\n* Make `window.opener` a `BrowserWindowProxy`.\r\n* Don't pump message loop when sending synchronous message in renderer process.\r\n* Fix crash in V8 when doing garbage collection.\r\n* Fix crash when garbage collecting `Buffer`s.\r\n* Fix crash when passing empty path to `app.addRecentDocument`.\r\n* Fix crash when changing page's location while using service worker.\r\n* Fix `x` and `y` options not working in `BrowserWindow.capturePage`.\r\n\r\n__OS X__\r\n\r\n* Remove usages of private `xpc_` APIs in MAS build.\r\n* Fix `shell.openExternal` not able to open URLs with unescaped characters.\r\n"
+    "body": "Changelog:\r\n\r\n* Add `session.webRequest` API.\r\n* Add `A5` to `webContents.printToPDF`'s `pageSize`.\r\n* `crashReporter.start` now requires passing `submitURL` and `companyName`.\r\n* Make `window.opener` a `BrowserWindowProxy`.\r\n* Don't pump message loop when sending synchronous message in renderer process.\r\n* Fix crash in V8 when doing garbage collection.\r\n* Fix crash when garbage collecting `Buffer`s.\r\n* Fix crash when passing empty path to `app.addRecentDocument`.\r\n* Fix crash when changing page's location while using service worker.\r\n* Fix `x` and `y` options not working in `BrowserWindow.capturePage`.\r\n\r\n__OS X__\r\n\r\n* Remove usages of private `xpc_` APIs in MAS build.\r\n* Fix `shell.openExternal` not able to open URLs with unescaped characters.\r\n",
+    "version": "0.36.1"
   },
   {
     "url": "https://api.github.com/repos/electron/electron/releases/2249099",
@@ -473,7 +500,8 @@
     "published_at": "2015-12-11T07:49:48Z",
     "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.36.0",
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.36.0",
-    "body": "Changelog:\r\n\r\n* Upgrade to Chrome 47.\r\n* Upgrade to Node 5.1.1.\r\n* Add `desktopCapturer` module.\r\n* Add `protocol.registerServiceWorkerSchemes` API.\r\n* Add `uploadDate` property for `request` object in `protocol` module.\r\n* Don't touch the argument when calling `Menu.buildFromTemplate`.\r\n* Don't emit `will-quit` event when calling `process.exit` or `app.exit`.\r\n* Fix wrong `appData` and `userData` dir values.\r\n* Fix HTTP/2 not working.\r\n* Fix the `exit` event of `process` object not including exit code.\r\n* Fix `event.source` not matching the object returned by `window.open` in `message` event handler.\r\n* Fix wrong `origin` string in `window.postMessage`.\r\n\r\n__OS X__\r\n\r\n* Add `BrowserWindow.setIgnoreMouseEvents` API.\r\n* Remove the automatically appended `Enter Full Screen` menu item.\r\n"
+    "body": "Changelog:\r\n\r\n* Upgrade to Chrome 47.\r\n* Upgrade to Node 5.1.1.\r\n* Add `desktopCapturer` module.\r\n* Add `protocol.registerServiceWorkerSchemes` API.\r\n* Add `uploadDate` property for `request` object in `protocol` module.\r\n* Don't touch the argument when calling `Menu.buildFromTemplate`.\r\n* Don't emit `will-quit` event when calling `process.exit` or `app.exit`.\r\n* Fix wrong `appData` and `userData` dir values.\r\n* Fix HTTP/2 not working.\r\n* Fix the `exit` event of `process` object not including exit code.\r\n* Fix `event.source` not matching the object returned by `window.open` in `message` event handler.\r\n* Fix wrong `origin` string in `window.postMessage`.\r\n\r\n__OS X__\r\n\r\n* Add `BrowserWindow.setIgnoreMouseEvents` API.\r\n* Remove the automatically appended `Enter Full Screen` menu item.\r\n",
+    "version": "0.36.0"
   },
   {
     "url": "https://api.github.com/repos/electron/electron/releases/2233191",
@@ -490,7 +518,8 @@
     "published_at": "2015-12-04T12:39:09Z",
     "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.35.4",
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.35.4",
-    "body": "Changelog:\r\n\r\n* Fix typo: `isDestroy` => `isDestroyed`.\r\n"
+    "body": "Changelog:\r\n\r\n* Fix typo: `isDestroy` => `isDestroyed`.\r\n",
+    "version": "0.35.4"
   },
   {
     "url": "https://api.github.com/repos/electron/electron/releases/2232408",
@@ -507,6 +536,7 @@
     "published_at": "2015-12-04T09:50:11Z",
     "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.35.3",
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.35.3",
-    "body": "Changelog:\r\n\r\n* Add `menu` parameter for `Tray.popUpContextMenu` API.\r\n* Add `downloadURL` method for `WebContents` and `<webview>`.\r\n* Allow toggling `asar` support in Node's built-in modules with `process.noAsar`.\r\n* Disable CORS for custom protocols.\r\n* Fix crash when calling `loadURL` in the `did-fail-load` event.\r\n* Fix crash when closing window in the `page-title-updated` event.\r\n* Fix recursive call when using `downloadItem.hasUserGesture`.\r\n* Fix crash caused by race condition on exit when using `protocol` module.\r\n* Fix `window.open` not respecting the features string.\r\n\r\n__Windows__\r\n\r\n* Fix crash on exit when there are heavy Node tasks.\r\n* Fix `child_process.execFile` not working for files in `asar` archive.\r\n\r\n__OS X__\r\n\r\n* Build with OS X 10.10 SDK.\r\n"
+    "body": "Changelog:\r\n\r\n* Add `menu` parameter for `Tray.popUpContextMenu` API.\r\n* Add `downloadURL` method for `WebContents` and `<webview>`.\r\n* Allow toggling `asar` support in Node's built-in modules with `process.noAsar`.\r\n* Disable CORS for custom protocols.\r\n* Fix crash when calling `loadURL` in the `did-fail-load` event.\r\n* Fix crash when closing window in the `page-title-updated` event.\r\n* Fix recursive call when using `downloadItem.hasUserGesture`.\r\n* Fix crash caused by race condition on exit when using `protocol` module.\r\n* Fix `window.open` not respecting the features string.\r\n\r\n__Windows__\r\n\r\n* Fix crash on exit when there are heavy Node tasks.\r\n* Fix `child_process.execFile` not working for files in `asar` archive.\r\n\r\n__OS X__\r\n\r\n* Build with OS X 10.10 SDK.\r\n",
+    "version": "0.35.3"
   }
 ]
