@@ -988,3 +988,15 @@
     - "IoT"
   license: "Apache 2.0"
   icon: "etcher.png"
+-
+  name: "Whatsie"
+  description: "Simple & beautiful desktop client for WhatsApp Web"
+  website: "https://whatsie.chat/"
+  repository: "https://github.com/Aluxian/Whatsie"
+  keywords:
+    - "whatsapp"
+    - "desktop"
+    - "messenger"
+    - "chat"
+  license: "MIT"
+  icon: "whatsie.png"
