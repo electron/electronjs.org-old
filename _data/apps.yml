@@ -1000,3 +1000,13 @@
     - "chat"
   license: "MIT"
   icon: "whatsie.png"
+-
+   name: "STAMP"
+   description: "Move tracks and playlists across various streaming services"
+   webstite: "https://freeyourmusic.com/"
+   keywords:
+     - "music"
+     - "spotify"
+     - "apple music"
+     - "google play music"
+   icon: "stamp.png"
