@@ -74,3 +74,4 @@ exclude:
     - package.json
     - script
     - spec
+current_electron: 1.1.0
