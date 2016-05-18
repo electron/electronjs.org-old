@@ -99,13 +99,13 @@
   license: ""
   icon: "particle.png"
 -
-  name: "Fireball"
+  name: "Cocos Creator"
   description: "Game development tools"
-  website: "http://fireball-x.com/en"
-  repository: ""
+  website: "http://www.cocos2d-x.org"
+  repository: "https://github.com/cocos-creator/engine"
   keywords: []
   license: ""
-  icon: "fireball.png"
+  icon: "cocoscreator.png"
 -
   name: "PopKey"
   description: "The perfect GIF right at your fingertips"
