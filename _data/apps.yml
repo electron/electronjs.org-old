@@ -1013,7 +1013,7 @@
 -
   name: "FlexPaper"
   description: "Enhance, reflow and flip pdf documents into web publications"
-  webstite: "https://flexpaper.devaldi.com/"
+  website: "https://flexpaper.devaldi.com/"
   keywords:
     - "pdf"
     - "flip book"
