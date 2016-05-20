@@ -1022,3 +1022,16 @@
     - "interactive pdf publications"
     - "pdf to online publication"
   icon: "flexpaper-creative-publisher.png"
+-
+  name: "DataProofer"
+  description: "A proofreader for your data"
+  website: "http://dataproofer.org/"
+  keywords:
+    - "csv"
+    - "excel"
+    - "data"
+    - "analysis"
+    - "journalism"
+    - "research"
+    - "spreadsheet"
+  icon: "dataproofer.png"
