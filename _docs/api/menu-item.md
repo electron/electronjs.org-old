@@ -41,6 +41,7 @@ redirect_from:
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/menu-item.md'
 excerpt: "Add items to native application menus and context menus."
 title: "MenuItem"
+sort_title: "menuitem"
 ---
 
 # MenuItem

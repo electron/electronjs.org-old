@@ -45,6 +45,7 @@ JavaScript execution, and more. ChromeDriver is a standalone server which
 implements WebDriver&apos;s wire protocol for Chromium. It is being developed by
 members of the Chromium and WebDriver teams."
 title: "Using Selenium and WebDriver"
+sort_title: "using selenium and webdriver"
 ---
 
 # Using Selenium and WebDriver

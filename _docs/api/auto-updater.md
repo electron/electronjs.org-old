@@ -41,6 +41,7 @@ redirect_from:
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/auto-updater.md'
 excerpt: "Enable apps to automatically update themselves."
 title: "autoUpdater"
+sort_title: "autoupdater"
 ---
 
 # autoUpdater

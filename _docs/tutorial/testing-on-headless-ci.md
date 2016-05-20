@@ -40,6 +40,7 @@ redirect_from:
     - /docs/latest/tutorial/testing-on-headless-ci/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/testing-on-headless-ci.md'
 title: "Testing on Headless CI Systems (Travis CI, Jenkins)"
+sort_title: "testing on headless ci systems (travis ci, jenkins)"
 ---
 
 # Testing on Headless CI Systems (Travis CI, Jenkins)

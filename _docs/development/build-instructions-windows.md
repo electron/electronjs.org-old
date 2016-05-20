@@ -40,6 +40,7 @@ redirect_from:
     - /docs/latest/development/build-instructions-windows/
 source_url: 'https://github.com/electron/electron/blob/master/docs/development/build-instructions-windows.md'
 title: "Build Instructions (Windows)"
+sort_title: "build instructions (windows)"
 ---
 
 # Build Instructions (Windows)

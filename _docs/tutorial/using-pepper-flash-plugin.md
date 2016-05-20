@@ -40,6 +40,7 @@ redirect_from:
     - /docs/latest/tutorial/using-pepper-flash-plugin/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/using-pepper-flash-plugin.md'
 title: "Using Pepper Flash Plugin"
+sort_title: "using pepper flash plugin"
 ---
 
 # Using Pepper Flash Plugin

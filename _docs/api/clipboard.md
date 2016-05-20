@@ -41,6 +41,7 @@ redirect_from:
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/clipboard.md'
 excerpt: "Perform copy and paste operations on the system clipboard."
 title: "clipboard"
+sort_title: "clipboard"
 ---
 
 # clipboard

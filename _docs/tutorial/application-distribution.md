@@ -40,6 +40,7 @@ redirect_from:
     - /docs/latest/tutorial/application-distribution/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/application-distribution.md'
 title: "Application Distribution"
+sort_title: "application distribution"
 ---
 
 # Application Distribution

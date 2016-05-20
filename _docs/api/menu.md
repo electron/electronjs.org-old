@@ -41,6 +41,7 @@ redirect_from:
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/menu.md'
 excerpt: "Create native application menus and context menus."
 title: "Menu"
+sort_title: "menu"
 ---
 
 # Menu

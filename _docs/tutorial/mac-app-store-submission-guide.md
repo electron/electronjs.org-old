@@ -40,6 +40,7 @@ redirect_from:
     - /docs/latest/tutorial/mac-app-store-submission-guide/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/mac-app-store-submission-guide.md'
 title: "Mac App Store Submission Guide"
+sort_title: "mac app store submission guide"
 ---
 
 # Mac App Store Submission Guide

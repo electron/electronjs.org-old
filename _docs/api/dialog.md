@@ -41,6 +41,7 @@ redirect_from:
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/dialog.md'
 excerpt: "Display native system dialogs for opening and saving files, alerting, etc."
 title: "dialog"
+sort_title: "dialog"
 ---
 
 # dialog

@@ -40,6 +40,7 @@ redirect_from:
     - /docs/latest/tutorial/devtools-extension/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/devtools-extension.md'
 title: "DevTools Extension"
+sort_title: "devtools extension"
 ---
 
 # DevTools Extension

@@ -41,6 +41,7 @@ redirect_from:
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/window-open.md'
 excerpt: "Open a new window and load a URL."
 title: "window.open Function"
+sort_title: "window.open function"
 ---
 
 # `window.open` Function

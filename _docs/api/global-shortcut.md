@@ -41,6 +41,7 @@ redirect_from:
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/global-shortcut.md'
 excerpt: "Detect keyboard events when the application does not have keyboard focus."
 title: "globalShortcut"
+sort_title: "globalshortcut"
 ---
 
 # globalShortcut

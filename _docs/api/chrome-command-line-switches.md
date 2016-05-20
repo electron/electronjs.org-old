@@ -41,6 +41,7 @@ redirect_from:
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/chrome-command-line-switches.md'
 excerpt: "Command line switches supported by Electron."
 title: "Supported Chrome Command Line Switches"
+sort_title: "supported chrome command line switches"
 ---
 
 # Supported Chrome Command Line Switches

@@ -41,6 +41,7 @@ redirect_from:
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/power-save-blocker.md'
 excerpt: "Block the system from entering low-power (sleep) mode."
 title: "powerSaveBlocker"
+sort_title: "powersaveblocker"
 ---
 
 # powerSaveBlocker

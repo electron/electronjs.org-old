@@ -40,6 +40,7 @@ redirect_from:
     - /docs/latest/tutorial/using-native-node-modules/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/using-native-node-modules.md'
 title: "Using Native Node Modules"
+sort_title: "using native node modules"
 ---
 
 # Using Native Node Modules

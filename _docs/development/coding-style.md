@@ -40,6 +40,7 @@ redirect_from:
     - /docs/latest/development/coding-style/
 source_url: 'https://github.com/electron/electron/blob/master/docs/development/coding-style.md'
 title: "Coding Style"
+sort_title: "coding style"
 ---
 
 # Coding Style

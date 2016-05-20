@@ -40,6 +40,7 @@ redirect_from:
     - /docs/latest/development/atom-shell-vs-node-webkit/
 source_url: 'https://github.com/electron/electron/blob/master/docs/development/atom-shell-vs-node-webkit.md'
 title: "Technical Differences Between Electron and NW.js (formerly node-webkit)"
+sort_title: "technical differences between electron and nw.js (formerly node-webkit)"
 ---
 
 # Technical Differences Between Electron and NW.js (formerly node-webkit)

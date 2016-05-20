@@ -41,6 +41,7 @@ redirect_from:
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/system-preferences.md'
 excerpt: "Get system preferences."
 title: "systemPreferences"
+sort_title: "systempreferences"
 ---
 
 # systemPreferences

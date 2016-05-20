@@ -50,6 +50,7 @@ application should not clutter the menu with advanced features that standard
 users won&apos;t need or one-time actions such as registration. Do not use tasks
 for promotional items such as upgrades or special offers."
 title: "Desktop Environment Integration"
+sort_title: "desktop environment integration"
 ---
 
 # Desktop Environment Integration

@@ -40,6 +40,7 @@ redirect_from:
     - /docs/latest/tutorial/electron-versioning/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/electron-versioning.md'
 title: "Electron Versioning"
+sort_title: "electron versioning"
 ---
 
 # Electron Versioning

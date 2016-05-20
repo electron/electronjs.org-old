@@ -41,6 +41,7 @@ redirect_from:
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/screen.md'
 excerpt: "Retrieve information about screen size, displays, cursor position, etc."
 title: "screen"
+sort_title: "screen"
 ---
 
 # screen

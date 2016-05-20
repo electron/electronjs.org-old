@@ -41,6 +41,7 @@ redirect_from:
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/frameless-window.md'
 excerpt: "Open a window without toolbars, borders, or other graphical &quot;chrome&quot;."
 title: "Frameless Window"
+sort_title: "frameless window"
 ---
 
 # Frameless Window

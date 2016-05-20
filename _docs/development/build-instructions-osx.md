@@ -40,6 +40,7 @@ redirect_from:
     - /docs/latest/development/build-instructions-osx/
 source_url: 'https://github.com/electron/electron/blob/master/docs/development/build-instructions-osx.md'
 title: "Build Instructions (OS X)"
+sort_title: "build instructions (os x)"
 ---
 
 # Build Instructions (OS X)

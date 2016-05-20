@@ -42,6 +42,7 @@ source_url: 'https://github.com/electron/electron/blob/master/docs/api/desktop-c
 excerpt: "List <code>getUserMedia</code> sources for capturing audio, video, and images from a
 microphone, camera, or screen."
 title: "desktopCapturer"
+sort_title: "desktopcapturer"
 ---
 
 # desktopCapturer

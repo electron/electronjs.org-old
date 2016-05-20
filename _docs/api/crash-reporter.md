@@ -41,6 +41,7 @@ redirect_from:
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/crash-reporter.md'
 excerpt: "Submit crash reports to a remote server."
 title: "crashReporter"
+sort_title: "crashreporter"
 ---
 
 # crashReporter

@@ -40,6 +40,7 @@ redirect_from:
     - /docs/latest/tutorial/quick-start/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/quick-start.md'
 title: "Quick Start"
+sort_title: "quick start"
 ---
 
 # Quick Start

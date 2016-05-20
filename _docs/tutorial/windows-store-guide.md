@@ -40,6 +40,7 @@ redirect_from:
     - /docs/latest/tutorial/windows-store-guide/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/windows-store-guide.md'
 title: "Windows Store Guide"
+sort_title: "windows store guide"
 ---
 
 # Windows Store Guide

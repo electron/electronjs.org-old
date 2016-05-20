@@ -40,6 +40,7 @@ redirect_from:
     - /docs/latest/development/source-code-directory-structure/
 source_url: 'https://github.com/electron/electron/blob/master/docs/development/source-code-directory-structure.md'
 title: "Source Code Directory Structure"
+sort_title: "source code directory structure"
 ---
 
 # Source Code Directory Structure
