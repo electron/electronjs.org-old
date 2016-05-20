@@ -41,6 +41,7 @@ redirect_from:
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/environment-variables.md'
 excerpt: "Control application configuration and behavior without changing code."
 title: "Environment Variables"
+sort_title: "environment variables"
 ---
 
 # Environment Variables

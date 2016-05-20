@@ -41,6 +41,7 @@ redirect_from:
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/remote.md'
 excerpt: "Use main process modules from the renderer process."
 title: "remote"
+sort_title: "remote"
 ---
 
 # remote

@@ -36,6 +36,8 @@ redirect_from:
 layout: default
 ---
 
+{% assign docs = site.docs | sort: 'sort_title' %}
+
 <div class='subtron'>
   <div class='container-narrow'>
     <h1><span class="mr-3 mr-lg-4">Electron Documentation</span><span class="docs-version">{{ site.latest_version }}</span></h1>
@@ -53,7 +55,7 @@ layout: default
         <div class="col-ms-12 col-lg-4">
           <h2 class="docs-heading pb-3 mb-3"><a class="docs-title" href="{{ site.baseurl }}/docs/guides/"><span class="mega-octicon octicon-book pr-3"></span>Guides</a></h2>
           <ul class="docs-list">
-          {% for doc in site.docs %}
+          {% for doc in docs %}
             {% if doc.category == 'Tutorial' %}
               <li>
                 <a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a>
@@ -68,7 +70,7 @@ layout: default
           <h2 class="docs-heading pb-3 mb-3"><a class="docs-title" href="{{ site.baseurl }}/docs/api/"><span class="mega-octicon octicon-gear pr-3"></span>API Reference</a></h2>
             <h3>Main Process</h3>
             <ul class="docs-list">
-            {% for doc in site.docs %}
+            {% for doc in docs %}
               {% if doc.category == 'API' and site.data.processes[doc.title] == 'Main Process' %}
               <li>
                 <a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a>
@@ -78,7 +80,7 @@ layout: default
             </ul>
             <h3>Renderer Process</h3>
             <ul class="docs-list">
-            {% for doc in site.docs %}
+            {% for doc in docs %}
               {% if doc.category == 'API' and site.data.processes[doc.title] == 'Renderer Process' %}
               <li>
                 <a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a>
@@ -87,7 +89,7 @@ layout: default
             {% endfor %}
             </ul>
             <h3>Both Processes</h3>
-            {% for doc in site.docs %}
+            {% for doc in docs %}
             <ul class="docs-list">
               {% if doc.category == 'API' and site.data.processes[doc.title] == 'Main and Renderer Process' %}
               <li>
@@ -102,7 +104,7 @@ layout: default
         <div class="col-ms-12 col-lg-4">
           <h2 class="docs-heading pb-3 mb-3"><a class="docs-title" href="{{ site.baseurl }}/docs/development/"><span class="mega-octicon octicon-tools pr-3"></span>Advanced</a></h2>
           <ul class="docs-list">
-          {% for doc in site.docs %}
+          {% for doc in docs %}
             {% if doc.category == 'Development' %}
               <li>
                 <a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a>

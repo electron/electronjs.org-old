@@ -41,6 +41,7 @@ redirect_from:
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/download-item.md'
 excerpt: "Control file downloads from remote sources."
 title: "DownloadItem"
+sort_title: "downloaditem"
 ---
 
 # DownloadItem

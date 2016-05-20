@@ -41,6 +41,7 @@ redirect_from:
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/shell.md'
 excerpt: "Manage files and URLs using their default applications."
 title: "shell"
+sort_title: "shell"
 ---
 
 # shell

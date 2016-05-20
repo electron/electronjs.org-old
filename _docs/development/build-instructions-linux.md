@@ -40,6 +40,7 @@ redirect_from:
     - /docs/latest/development/build-instructions-linux/
 source_url: 'https://github.com/electron/electron/blob/master/docs/development/build-instructions-linux.md'
 title: "Build Instructions (Linux)"
+sort_title: "build instructions (linux)"
 ---
 
 # Build Instructions (Linux)

@@ -40,6 +40,7 @@ redirect_from:
     - /docs/latest/tutorial/application-packaging/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/application-packaging.md'
 title: "Application Packaging"
+sort_title: "application packaging"
 ---
 
 # Application Packaging

@@ -41,6 +41,7 @@ redirect_from:
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/synopsis.md'
 excerpt: "How to use Node.js and Electron APIs."
 title: "Synopsis"
+sort_title: "synopsis"
 ---
 
 # Synopsis

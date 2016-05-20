@@ -41,6 +41,7 @@ redirect_from:
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/browser-window.md'
 excerpt: "Create and control browser windows."
 title: "BrowserWindow"
+sort_title: "browserwindow"
 ---
 
 # BrowserWindow

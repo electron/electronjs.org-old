@@ -44,6 +44,7 @@ Node integration enabled. Instead, use only local files (packaged together with
 your application) to execute Node code. To display remote content, use the
 <code>webview</code> tag and make sure to disable the <code>nodeIntegration</code>."
 title: "Security, Native Capabilities, and Your Responsibility"
+sort_title: "security, native capabilities, and your responsibility"
 ---
 
 # Security, Native Capabilities, and Your Responsibility

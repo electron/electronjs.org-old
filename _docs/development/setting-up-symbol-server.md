@@ -40,6 +40,7 @@ redirect_from:
     - /docs/latest/development/setting-up-symbol-server/
 source_url: 'https://github.com/electron/electron/blob/master/docs/development/setting-up-symbol-server.md'
 title: "Setting Up Symbol Server in Debugger"
+sort_title: "setting up symbol server in debugger"
 ---
 
 # Setting Up Symbol Server in Debugger

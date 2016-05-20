@@ -41,6 +41,7 @@ redirect_from:
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/web-contents.md'
 excerpt: "Render and control web pages."
 title: "webContents"
+sort_title: "webcontents"
 ---
 
 # webContents

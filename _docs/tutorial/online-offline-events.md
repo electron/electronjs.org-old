@@ -40,6 +40,7 @@ redirect_from:
     - /docs/latest/tutorial/online-offline-events/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/online-offline-events.md'
 title: "Online/Offline Event Detection"
+sort_title: "online/offline event detection"
 ---
 
 # Online/Offline Event Detection

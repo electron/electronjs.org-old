@@ -40,6 +40,7 @@ redirect_from:
     - /docs/latest/tutorial/supported-platforms/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/supported-platforms.md'
 title: "Supported Platforms"
+sort_title: "supported platforms"
 ---
 
 # Supported Platforms

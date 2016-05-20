@@ -40,6 +40,7 @@ redirect_from:
     - /docs/latest/development/debug-instructions-windows/
 source_url: 'https://github.com/electron/electron/blob/master/docs/development/debug-instructions-windows.md'
 title: "Debugging on Windows"
+sort_title: "debugging on windows"
 ---
 
 # Debugging on Windows

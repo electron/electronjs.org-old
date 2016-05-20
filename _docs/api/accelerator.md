@@ -41,6 +41,7 @@ redirect_from:
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/accelerator.md'
 excerpt: "Define keyboard shortcuts."
 title: "Accelerator"
+sort_title: "accelerator"
 ---
 
 # Accelerator

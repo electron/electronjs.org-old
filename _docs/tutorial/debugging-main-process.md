@@ -40,6 +40,7 @@ redirect_from:
     - /docs/latest/tutorial/debugging-main-process/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/debugging-main-process.md'
 title: "Debugging the Main Process"
+sort_title: "debugging the main process"
 ---
 
 # Debugging the Main Process

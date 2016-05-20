@@ -41,6 +41,7 @@ redirect_from:
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/ipc-renderer.md'
 excerpt: "Communicate asynchronously from a renderer process to the main process."
 title: "ipcRenderer"
+sort_title: "ipcrenderer"
 ---
 
 # ipcRenderer

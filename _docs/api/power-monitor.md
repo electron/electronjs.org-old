@@ -41,6 +41,7 @@ redirect_from:
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/power-monitor.md'
 excerpt: "Monitor power state changes."
 title: "powerMonitor"
+sort_title: "powermonitor"
 ---
 
 # powerMonitor

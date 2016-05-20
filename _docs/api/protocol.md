@@ -41,6 +41,7 @@ redirect_from:
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/protocol.md'
 excerpt: "Register a custom protocol and intercept existing protocol requests."
 title: "protocol"
+sort_title: "protocol"
 ---
 
 # protocol

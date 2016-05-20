@@ -41,6 +41,7 @@ redirect_from:
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/process.md'
 excerpt: "Extensions to process object."
 title: "process"
+sort_title: "process"
 ---
 
 # process

@@ -41,6 +41,7 @@ redirect_from:
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/web-frame.md'
 excerpt: "Customize the rendering of the current web page."
 title: "webFrame"
+sort_title: "webframe"
 ---
 
 # webFrame

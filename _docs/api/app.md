@@ -41,6 +41,7 @@ redirect_from:
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/app.md'
 excerpt: "Control your application&apos;s event lifecycle."
 title: "app"
+sort_title: "app"
 ---
 
 # app

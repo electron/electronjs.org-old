@@ -41,6 +41,7 @@ redirect_from:
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/file-object.md'
 excerpt: "Use the HTML5 <code>File</code> API to work natively with files on the filesystem."
 title: "File object"
+sort_title: "file object"
 ---
 
 # `File` object

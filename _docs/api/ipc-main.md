@@ -41,6 +41,7 @@ redirect_from:
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/ipc-main.md'
 excerpt: "Communicate asynchronously from the main process to renderer processes."
 title: "ipcMain"
+sort_title: "ipcmain"
 ---
 
 # ipcMain

@@ -42,6 +42,7 @@ redirect_from:
     - /docs/latest/faq/electron-faq/
 source_url: 'https://github.com/electron/electron/blob/master/docs/faq/electron-faq.md'
 title: "Electron FAQ"
+sort_title: "electron faq"
 ---
 
 # Electron FAQ

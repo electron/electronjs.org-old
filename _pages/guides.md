@@ -12,7 +12,8 @@ breadcrumb: Guides
 <h2 class="docs-heading pb-3 mb-3"><span class="mega-octicon octicon-book pr-3"></span>Guides</h2>
 
 <ul class="docs-list">
-{% for doc in site.docs %}
+{% assign docs = site.docs | sort: 'sort_title' %}
+{% for doc in docs %}
   {% if doc.category == 'Tutorial' %}
     <li>
       <a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a>

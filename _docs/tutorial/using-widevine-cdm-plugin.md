@@ -40,6 +40,7 @@ redirect_from:
     - /docs/latest/tutorial/using-widevine-cdm-plugin/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/using-widevine-cdm-plugin.md'
 title: "Using Widevine CDM Plugin"
+sort_title: "using widevine cdm plugin"
 ---
 
 # Using Widevine CDM Plugin

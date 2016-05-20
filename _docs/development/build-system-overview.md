@@ -40,6 +40,7 @@ redirect_from:
     - /docs/latest/development/build-system-overview/
 source_url: 'https://github.com/electron/electron/blob/master/docs/development/build-system-overview.md'
 title: "Build System Overview"
+sort_title: "build system overview"
 ---
 
 # Build System Overview

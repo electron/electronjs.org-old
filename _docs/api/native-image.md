@@ -41,6 +41,7 @@ redirect_from:
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/native-image.md'
 excerpt: "Create tray, dock, and application icons using PNG or JPG files."
 title: "nativeImage"
+sort_title: "nativeimage"
 ---
 
 # nativeImage
