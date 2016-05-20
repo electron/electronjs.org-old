@@ -41,7 +41,7 @@ redirect_from:
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/web-view-tag.md'
 excerpt: "Display external web content in an isolated frame and process."
 title: "&lt;webview&gt; Tag"
-sort_title: "&lt;webview&gt; tag"
+sort_title: "webview> tag"
 ---
 
 # `<webview>` Tag
