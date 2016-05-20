@@ -1,7 +1,7 @@
 "Accelerator" : "Main Process"
 "app": "Main Process"
 "autoUpdater": "Main Process"
-"BrowserWWindow": "Main Process"
+"BrowserWindow": "Main Process"
 "clipboard": "Main and Renderer Process"
 "contentTracing": "Main Process"
 "crashReporter": "Main and Renderer Process"
