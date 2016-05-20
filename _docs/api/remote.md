@@ -1,7 +1,6 @@
 ---
 version: v1.1.0
 category: API
-title: Remote
 redirect_from:
     - /docs/v0.24.0/api/remote/
     - /docs/v0.25.0/api/remote/
@@ -40,6 +39,7 @@ redirect_from:
     - /docs/latest/api/remote/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/remote.md'
 excerpt: "Use main process modules from the renderer process."
+title: "remote"
 ---
 
 # remote

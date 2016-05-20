@@ -1,7 +1,6 @@
 ---
 version: v1.1.0
 category: API
-title: Dialog
 redirect_from:
     - /docs/v0.24.0/api/dialog/
     - /docs/v0.25.0/api/dialog/
@@ -40,6 +39,7 @@ redirect_from:
     - /docs/latest/api/dialog/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/dialog.md'
 excerpt: "Display native system dialogs for opening and saving files, alerting, etc."
+title: "dialog"
 ---
 
 # dialog

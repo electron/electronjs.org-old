@@ -1,7 +1,6 @@
 ---
 version: v1.1.0
 category: Tutorial
-title: 'Using Selenium and Webdriver'
 redirect_from:
     - /docs/v0.24.0/tutorial/using-selenium-and-webdriver/
     - /docs/v0.25.0/tutorial/using-selenium-and-webdriver/
@@ -44,6 +43,7 @@ browsers. It provides capabilities for navigating to web pages, user input,
 JavaScript execution, and more. ChromeDriver is a standalone server which
 implements WebDriver&apos;s wire protocol for Chromium. It is being developed by
 members of the Chromium and WebDriver teams."
+title: "Using Selenium and WebDriver"
 ---
 
 # Using Selenium and WebDriver

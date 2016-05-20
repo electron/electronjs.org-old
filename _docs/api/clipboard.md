@@ -1,7 +1,6 @@
 ---
 version: v1.1.0
 category: API
-title: Clipboard
 redirect_from:
     - /docs/v0.24.0/api/clipboard/
     - /docs/v0.25.0/api/clipboard/
@@ -40,6 +39,7 @@ redirect_from:
     - /docs/latest/api/clipboard/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/clipboard.md'
 excerpt: "Perform copy and paste operations on the system clipboard."
+title: "clipboard"
 ---
 
 # clipboard

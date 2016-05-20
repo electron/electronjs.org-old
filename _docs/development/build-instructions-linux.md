@@ -1,7 +1,6 @@
 ---
 version: v1.1.0
 category: Development
-title: 'Build Instructions Linux'
 redirect_from:
     - /docs/v0.24.0/development/build-instructions-linux/
     - /docs/v0.25.0/development/build-instructions-linux/
@@ -39,6 +38,7 @@ redirect_from:
     - /docs/v1.1.0/development/build-instructions-linux/
     - /docs/latest/development/build-instructions-linux/
 source_url: 'https://github.com/electron/electron/blob/master/docs/development/build-instructions-linux.md'
+title: "Build Instructions (Linux)"
 ---
 
 # Build Instructions (Linux)

@@ -1,7 +1,6 @@
 ---
 version: v1.1.0
 category: ignore
-title: 'Electron FAQ'
 permalink: /docs/faq/
 breadcrumb: FAQ
 redirect_from:
@@ -41,6 +40,7 @@ redirect_from:
     - /docs/v1.1.0/faq/electron-faq/
     - /docs/latest/faq/electron-faq/
 source_url: 'https://github.com/electron/electron/blob/master/docs/faq/electron-faq.md'
+title: "Electron FAQ"
 ---
 
 # Electron FAQ

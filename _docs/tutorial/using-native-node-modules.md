@@ -1,7 +1,6 @@
 ---
 version: v1.1.0
 category: Tutorial
-title: 'Using Native Node Modules'
 redirect_from:
     - /docs/v0.24.0/tutorial/using-native-node-modules/
     - /docs/v0.25.0/tutorial/using-native-node-modules/
@@ -39,6 +38,7 @@ redirect_from:
     - /docs/v1.1.0/tutorial/using-native-node-modules/
     - /docs/latest/tutorial/using-native-node-modules/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/using-native-node-modules.md'
+title: "Using Native Node Modules"
 ---
 
 # Using Native Node Modules

@@ -1,7 +1,6 @@
 ---
 version: v1.1.0
 category: API
-title: 'Web Frame'
 redirect_from:
     - /docs/v0.24.0/api/web-frame/
     - /docs/v0.25.0/api/web-frame/
@@ -40,6 +39,7 @@ redirect_from:
     - /docs/latest/api/web-frame/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/web-frame.md'
 excerpt: "Customize the rendering of the current web page."
+title: "webFrame"
 ---
 
 # webFrame

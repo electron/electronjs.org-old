@@ -1,7 +1,6 @@
 ---
 version: v1.1.0
 category: Tutorial
-title: 'Using Widevine Cdm Plugin'
 redirect_from:
     - /docs/v0.24.0/tutorial/using-widevine-cdm-plugin/
     - /docs/v0.25.0/tutorial/using-widevine-cdm-plugin/
@@ -39,6 +38,7 @@ redirect_from:
     - /docs/v1.1.0/tutorial/using-widevine-cdm-plugin/
     - /docs/latest/tutorial/using-widevine-cdm-plugin/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/using-widevine-cdm-plugin.md'
+title: "Using Widevine CDM Plugin"
 ---
 
 # Using Widevine CDM Plugin

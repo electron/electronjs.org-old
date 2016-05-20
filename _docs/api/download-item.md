@@ -1,7 +1,6 @@
 ---
 version: v1.1.0
 category: API
-title: 'Download Item'
 redirect_from:
     - /docs/v0.24.0/api/download-item/
     - /docs/v0.25.0/api/download-item/
@@ -40,6 +39,7 @@ redirect_from:
     - /docs/latest/api/download-item/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/download-item.md'
 excerpt: "Control file downloads from remote sources."
+title: "DownloadItem"
 ---
 
 # DownloadItem

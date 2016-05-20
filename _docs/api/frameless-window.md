@@ -1,7 +1,6 @@
 ---
 version: v1.1.0
 category: API
-title: 'Frameless Window'
 redirect_from:
     - /docs/v0.24.0/api/frameless-window/
     - /docs/v0.25.0/api/frameless-window/
@@ -40,6 +39,7 @@ redirect_from:
     - /docs/latest/api/frameless-window/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/frameless-window.md'
 excerpt: "Open a window without toolbars, borders, or other graphical &quot;chrome&quot;."
+title: "Frameless Window"
 ---
 
 # Frameless Window

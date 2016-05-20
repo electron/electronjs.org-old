@@ -1,7 +1,6 @@
 ---
 version: v1.1.0
 category: API
-title: 'System Preferences'
 redirect_from:
     - /docs/v0.24.0/api/system-preferences/
     - /docs/v0.25.0/api/system-preferences/
@@ -40,6 +39,7 @@ redirect_from:
     - /docs/latest/api/system-preferences/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/system-preferences.md'
 excerpt: "Get system preferences."
+title: "systemPreferences"
 ---
 
 # systemPreferences

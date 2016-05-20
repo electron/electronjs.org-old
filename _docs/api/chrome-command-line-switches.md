@@ -1,7 +1,6 @@
 ---
 version: v1.1.0
 category: API
-title: 'Chrome Command Line Switches'
 redirect_from:
     - /docs/v0.24.0/api/chrome-command-line-switches/
     - /docs/v0.25.0/api/chrome-command-line-switches/
@@ -40,6 +39,7 @@ redirect_from:
     - /docs/latest/api/chrome-command-line-switches/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/chrome-command-line-switches.md'
 excerpt: "Command line switches supported by Electron."
+title: "Supported Chrome command line switches"
 ---
 
 # Supported Chrome command line switches

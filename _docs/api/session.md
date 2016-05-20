@@ -1,7 +1,6 @@
 ---
 version: v1.1.0
 category: API
-title: Session
 redirect_from:
     - /docs/v0.24.0/api/session/
     - /docs/v0.25.0/api/session/
@@ -40,6 +39,7 @@ redirect_from:
     - /docs/latest/api/session/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/session.md'
 excerpt: "Manage browser sessions, cookies, cache, proxy settings, etc."
+title: "session"
 ---
 
 # session

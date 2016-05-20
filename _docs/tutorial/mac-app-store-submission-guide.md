@@ -1,7 +1,6 @@
 ---
 version: v1.1.0
 category: Tutorial
-title: 'Mac App Store Submission Guide'
 redirect_from:
     - /docs/v0.24.0/tutorial/mac-app-store-submission-guide/
     - /docs/v0.25.0/tutorial/mac-app-store-submission-guide/
@@ -44,6 +43,7 @@ guidance regarding entitlements provided on the iTunes Connect website. In
 particular, identify the entitlement and corresponding issue number in the App
 Sandbox Entitlement Usage Information section in iTunes Connect and explain why
 your app needs the exception."
+title: "Mac App Store Submission Guide"
 ---
 
 # Mac App Store Submission Guide

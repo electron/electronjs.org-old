@@ -1,7 +1,6 @@
 ---
 version: v1.1.0
 category: API
-title: Menu
 redirect_from:
     - /docs/v0.24.0/api/menu/
     - /docs/v0.25.0/api/menu/
@@ -40,6 +39,7 @@ redirect_from:
     - /docs/latest/api/menu/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/menu.md'
 excerpt: "Create native application menus and context menus."
+title: "Menu"
 ---
 
 # Menu

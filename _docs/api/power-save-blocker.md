@@ -1,7 +1,6 @@
 ---
 version: v1.1.0
 category: API
-title: 'Power Save Blocker'
 redirect_from:
     - /docs/v0.24.0/api/power-save-blocker/
     - /docs/v0.25.0/api/power-save-blocker/
@@ -40,6 +39,7 @@ redirect_from:
     - /docs/latest/api/power-save-blocker/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/power-save-blocker.md'
 excerpt: "Block the system from entering low-power (sleep) mode."
+title: "powerSaveBlocker"
 ---
 
 # powerSaveBlocker

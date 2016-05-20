@@ -1,7 +1,6 @@
 ---
 version: v1.1.0
 category: API
-title: 'Power Monitor'
 redirect_from:
     - /docs/v0.24.0/api/power-monitor/
     - /docs/v0.25.0/api/power-monitor/
@@ -40,6 +39,7 @@ redirect_from:
     - /docs/latest/api/power-monitor/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/power-monitor.md'
 excerpt: "Monitor power state changes."
+title: "powerMonitor"
 ---
 
 # powerMonitor

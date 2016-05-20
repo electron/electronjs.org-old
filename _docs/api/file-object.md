@@ -1,7 +1,6 @@
 ---
 version: v1.1.0
 category: API
-title: 'File Object'
 redirect_from:
     - /docs/v0.24.0/api/file-object/
     - /docs/v0.25.0/api/file-object/
@@ -40,6 +39,7 @@ redirect_from:
     - /docs/latest/api/file-object/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/file-object.md'
 excerpt: "Use the HTML5 <code>File</code> API to work natively with files on the filesystem."
+title: "File object"
 ---
 
 # `File` object
