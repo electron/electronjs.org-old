@@ -1,5 +1,5 @@
 ---
-version: v1.1.0
+version: v1.1.1
 category: API
 redirect_from:
     - /docs/v0.24.0/api/environment-variables/
@@ -36,13 +36,14 @@ redirect_from:
     - /docs/v1.0.0/api/environment-variables/
     - /docs/v1.0.1/api/environment-variables/
     - /docs/v1.1.0/api/environment-variables/
+    - /docs/v1.1.1/api/environment-variables/
     - /docs/latest/api/environment-variables/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/environment-variables.md'
 excerpt: "Control application configuration and behavior without changing code."
-title: "Environment variables"
+title: "Environment Variables"
 ---
 
-# Environment variables
+# Environment Variables
 
 > Control application configuration and behavior without changing code.
 

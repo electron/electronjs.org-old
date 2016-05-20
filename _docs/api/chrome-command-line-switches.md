@@ -1,5 +1,5 @@
 ---
-version: v1.1.0
+version: v1.1.1
 category: API
 redirect_from:
     - /docs/v0.24.0/api/chrome-command-line-switches/
@@ -36,13 +36,14 @@ redirect_from:
     - /docs/v1.0.0/api/chrome-command-line-switches/
     - /docs/v1.0.1/api/chrome-command-line-switches/
     - /docs/v1.1.0/api/chrome-command-line-switches/
+    - /docs/v1.1.1/api/chrome-command-line-switches/
     - /docs/latest/api/chrome-command-line-switches/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/chrome-command-line-switches.md'
 excerpt: "Command line switches supported by Electron."
-title: "Supported Chrome command line switches"
+title: "Supported Chrome Command Line Switches"
 ---
 
-# Supported Chrome command line switches
+# Supported Chrome Command Line Switches
 
 > Command line switches supported by Electron.
 
@@ -67,6 +68,10 @@ Ignore the connections limit for `domains` list separated by `,`.
 ## --disable-http-cache
 
 Disables the disk cache for HTTP requests.
+
+## --disable-http2
+
+Disable HTTP/2 and SPDY/3.1 protocols.
 
 ## --remote-debugging-port=`port`
 

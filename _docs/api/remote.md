@@ -1,5 +1,5 @@
 ---
-version: v1.1.0
+version: v1.1.1
 category: API
 redirect_from:
     - /docs/v0.24.0/api/remote/
@@ -36,6 +36,7 @@ redirect_from:
     - /docs/v1.0.0/api/remote/
     - /docs/v1.0.1/api/remote/
     - /docs/v1.1.0/api/remote/
+    - /docs/v1.1.1/api/remote/
     - /docs/latest/api/remote/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/remote.md'
 excerpt: "Use main process modules from the renderer process."
@@ -81,7 +82,8 @@ process. Instead, it created a `BrowserWindow` object in the main process and
 returned the corresponding remote object in the renderer process, namely the
 `win` object.
 
-Please note that only [enumerable properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties) are accessible via remote.
+Please note that only [enumerable properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties) which are present when the remote object is first referenced are
+accessible via remote.
 
 ## Lifetime of Remote Objects
 

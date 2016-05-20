@@ -1,5 +1,5 @@
 ---
-version: v1.1.0
+version: v1.1.1
 category: ignore
 permalink: /docs/faq/
 breadcrumb: FAQ
@@ -38,6 +38,7 @@ redirect_from:
     - /docs/v1.0.0/faq/electron-faq/
     - /docs/v1.0.1/faq/electron-faq/
     - /docs/v1.1.0/faq/electron-faq/
+    - /docs/v1.1.1/faq/electron-faq/
     - /docs/latest/faq/electron-faq/
 source_url: 'https://github.com/electron/electron/blob/master/docs/faq/electron-faq.md'
 title: "Electron FAQ"
@@ -54,7 +55,7 @@ depends on the amount of work involved with upgrading.
 Only the stable channel of Chrome is used. If an important fix is in beta or dev
 channel, we will back-port it.
 
-For more information, please see the [security introduction](http://electron.atom.io/docs/tutorial/electron-security).
+For more information, please see the [security introduction](http://electron.atom.io/docs/tutorial/security).
 
 ## When will Electron upgrade to latest Node.js?
 

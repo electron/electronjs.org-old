@@ -1,5 +1,5 @@
 ---
-version: v1.1.0
+version: v1.1.1
 category: API
 redirect_from:
     - /docs/v0.24.0/api/app/
@@ -36,6 +36,7 @@ redirect_from:
     - /docs/v1.0.0/api/app/
     - /docs/v1.0.1/api/app/
     - /docs/v1.1.0/api/app/
+    - /docs/v1.1.1/api/app/
     - /docs/latest/api/app/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/app.md'
 excerpt: "Control your application&apos;s event lifecycle."
@@ -78,10 +79,12 @@ Emitted when Electron has finished initialization.
 
 Emitted when all windows have been closed.
 
-This event is only emitted when the application is not going to quit. If the
-user pressed `Cmd + Q`, or the developer called `app.quit()`, Electron will
-first try to close all the windows and then emit the `will-quit` event, and in
-this case the `window-all-closed` event would not be emitted.
+If you do not subscribe to this event and all windows are closed, the default
+behavior is to quit the app; however, if you subscribe, you control whether the
+app quits or not. If the user pressed `Cmd + Q`, or the developer called
+`app.quit()`, Electron will first try to close all the windows and then emit the
+`will-quit` event, and in this case the `window-all-closed` event would not be
+emitted.
 
 ### Event: 'before-quit'
 
@@ -131,7 +134,8 @@ handle this case (even before the `ready` event is emitted).
 
 You should call `event.preventDefault()` if you want to handle this event.
 
-On Windows, you have to parse `process.argv` (in the main process) to get the filepath.
+On Windows, you have to parse `process.argv` (in the main process) to get the
+filepath.
 
 ### Event: 'open-url' _OS X_
 
@@ -152,8 +156,8 @@ Returns:
 * `event` Event
 * `hasVisibleWindows` Boolean
 
-Emitted when the application is activated, which usually happens when the user clicks on
-the application's dock icon.
+Emitted when the application is activated, which usually happens when the user
+clicks on the application's dock icon.
 
 ### Event: 'continue-activity' _OS X_
 
@@ -295,7 +299,8 @@ Emitted when the gpu process crashes.
 
 The `app` object has the following methods:
 
-**Note:** Some methods are only available on specific operating systems and are labeled as such.
+**Note:** Some methods are only available on specific operating systems and are
+labeled as such.
 
 ### `app.quit()`
 
@@ -327,7 +332,8 @@ Hides all application windows without minimizing them.
 
 ### `app.show()` _OS X_
 
-Shows application windows after they were hidden. Does not automatically focus them.
+Shows application windows after they were hidden. Does not automatically focus
+them.
 
 ### `app.getAppPath()`
 
@@ -441,8 +447,8 @@ The API uses the Windows Registry and LSSetDefaultHandlerForURLScheme internally
 
 * `protocol` String - The name of your protocol, without `://`.
 
-This method checks if the current executable as the default handler for a protocol
-(aka URI scheme). If so, it will remove the app as the default handler.
+This method checks if the current executable as the default handler for a
+protocol (aka URI scheme). If so, it will remove the app as the default handler.
 
 ### `app.isDefaultProtocolClient(protocol)` _OS X_ _Windows_
 
@@ -451,8 +457,11 @@ This method checks if the current executable as the default handler for a protoc
 This method checks if the current executable is the default handler for a protocol
 (aka URI scheme). If so, it will return true. Otherwise, it will return false.
 
-**Note:** On OS X, you can use this method to check if the app has been registered as the default protocol handler for a protocol. You can also verify this by checking `~/Library/Preferences/com.apple.LaunchServices.plist` on the OS X machine.
-Please refer to [Apple's documentation][LSCopyDefaultHandlerForURLScheme] for details.
+**Note:** On OS X, you can use this method to check if the app has been
+registered as the default protocol handler for a protocol. You can also verify
+this by checking `~/Library/Preferences/com.apple.LaunchServices.plist` on the
+OS X machine. Please refer to
+[Apple's documentation][LSCopyDefaultHandlerForURLScheme] for details.
 
 The API uses the Windows Registry and LSCopyDefaultHandlerForURLScheme internally.
 

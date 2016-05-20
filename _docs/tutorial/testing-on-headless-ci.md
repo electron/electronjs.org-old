@@ -1,5 +1,5 @@
 ---
-version: v1.1.0
+version: v1.1.1
 category: Tutorial
 redirect_from:
     - /docs/v0.24.0/tutorial/testing-on-headless-ci/
@@ -36,12 +36,13 @@ redirect_from:
     - /docs/v1.0.0/tutorial/testing-on-headless-ci/
     - /docs/v1.0.1/tutorial/testing-on-headless-ci/
     - /docs/v1.1.0/tutorial/testing-on-headless-ci/
+    - /docs/v1.1.1/tutorial/testing-on-headless-ci/
     - /docs/latest/tutorial/testing-on-headless-ci/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/testing-on-headless-ci.md'
-title: "Testing Electron with headless CI Systems (Travis CI, Jenkins)"
+title: "Testing on Headless CI Systems (Travis CI, Jenkins)"
 ---
 
-# Testing Electron with headless CI Systems (Travis CI, Jenkins)
+# Testing on Headless CI Systems (Travis CI, Jenkins)
 
 Being based on Chromium, Electron requires a display driver to function.
 If Chromium can't find a display driver, Electron will simply fail to launch -

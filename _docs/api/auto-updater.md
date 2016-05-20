@@ -1,5 +1,5 @@
 ---
-version: v1.1.0
+version: v1.1.1
 category: API
 redirect_from:
     - /docs/v0.24.0/api/auto-updater/
@@ -36,6 +36,7 @@ redirect_from:
     - /docs/v1.0.0/api/auto-updater/
     - /docs/v1.0.1/api/auto-updater/
     - /docs/v1.1.0/api/auto-updater/
+    - /docs/v1.1.1/api/auto-updater/
     - /docs/latest/api/auto-updater/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/auto-updater.md'
 excerpt: "Enable apps to automatically update themselves."
@@ -46,7 +47,8 @@ title: "autoUpdater"
 
 > Enable apps to automatically update themselves.
 
-The `autoUpdater` module provides an interface for the [Squirrel](https://github.com/Squirrel) framework.
+The `autoUpdater` module provides an interface for the
+[Squirrel](https://github.com/Squirrel) framework.
 
 You can quickly launch a multi-platform release server for distributing your
 application by using one of these projects:
