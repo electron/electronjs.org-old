@@ -1,5 +1,23 @@
 [
   {
+    "url": "https://api.github.com/repos/electron/electron/releases/3266561",
+    "assets_url": "https://api.github.com/repos/electron/electron/releases/3266561/assets",
+    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/3266561/assets{?name,label}",
+    "html_url": "https://github.com/electron/electron/releases/tag/v1.1.1",
+    "id": 3266561,
+    "tag_name": "v1.1.1",
+    "target_commitish": "master",
+    "name": "electron v1.1.1",
+    "draft": false,
+    "prerelease": false,
+    "created_at": "2016-05-20T00:30:24Z",
+    "published_at": "2016-05-20T01:42:23Z",
+    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v1.1.1",
+    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v1.1.1",
+    "body": "Changelog:\r\n\r\n* Disable `<webview>` tag when `nodeIntegration` is off in host window. [#5559](https://github.com/electron/electron/pull/5559)\r\n* Add `--disable-http2` command line switch. [electron/brightray#222](https://github.com/electron/brightray/pull/222)\r\n* Add `webFrame.getResourceUsage()` and `webFrame.clearCache()` APIs. [#5413](https://github.com/electron/electron/pull/5413)\r\n* Add `buttonLabel` option to `dialog.showOpenDialog(options)` and `dialog.showSaveDialog(options)`. [#5509](https://github.com/electron/electron/pull/5509)\r\n* Fix `Invalid package error` when there is asar path in the command passed to `child_process.exec`. [#5571](https://github.com/electron/electron/pull/5571)\r\n* Fix `<webview>` tag not inheriting host window's zoom level. [#5616](https://github.com/electron/electron/pull/5616)\r\n\r\n__OS X__\r\n\r\n* Enable Mac App Store sandboxing without using `temporary-exception`.\r\n[#5584](https://github.com/electron/electron/pull/5584), [#5601](https://github.com/electron/electron/pull/5601)\r\n* The callback of `systemPreferences.subscribeNotification(event, callback)` now accepts `event` and `userInfo` parameters. [#5582](https://github.com/electron/electron/pull/5582)\r\n* Fix context menu not showing all items when opened near the lower bound of display. [#5518](https://github.com/electron/electron/pull/5518)\r\n* Fix using `titleBarStyle` option makes the top of window draggable. [#5557](https://github.com/electron/electron/pull/5557)\r\n\r\n__Windows__\r\n\r\n* Link statically with Visual C++ libraries. [#5538](https://github.com/electron/electron/pull/5538), [#5602](https://github.com/electron/electron/pull/5602)\r\n\r\n__Linux__\r\n\r\n* Fix dynamic library loading error with `libnotify.so.4` on some distributions. [electron/brightray#221](https://github.com/electron/brightray/pull/221)",
+    "version": "1.1.1"
+  },
+  {
     "url": "https://api.github.com/repos/electron/electron/releases/3217931",
     "assets_url": "https://api.github.com/repos/electron/electron/releases/3217931/assets",
     "upload_url": "https://uploads.github.com/repos/electron/electron/releases/3217931/assets{?name,label}",
@@ -520,23 +538,5 @@
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.35.4",
     "body": "Changelog:\r\n\r\n* Fix typo: `isDestroy` => `isDestroyed`.\r\n",
     "version": "0.35.4"
-  },
-  {
-    "url": "https://api.github.com/repos/electron/electron/releases/2232408",
-    "assets_url": "https://api.github.com/repos/electron/electron/releases/2232408/assets",
-    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/2232408/assets{?name,label}",
-    "html_url": "https://github.com/electron/electron/releases/tag/v0.35.3",
-    "id": 2232408,
-    "tag_name": "v0.35.3",
-    "target_commitish": "master",
-    "name": "electron v0.35.3",
-    "draft": false,
-    "prerelease": false,
-    "created_at": "2015-12-04T08:43:23Z",
-    "published_at": "2015-12-04T09:50:11Z",
-    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.35.3",
-    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.35.3",
-    "body": "Changelog:\r\n\r\n* Add `menu` parameter for `Tray.popUpContextMenu` API.\r\n* Add `downloadURL` method for `WebContents` and `<webview>`.\r\n* Allow toggling `asar` support in Node's built-in modules with `process.noAsar`.\r\n* Disable CORS for custom protocols.\r\n* Fix crash when calling `loadURL` in the `did-fail-load` event.\r\n* Fix crash when closing window in the `page-title-updated` event.\r\n* Fix recursive call when using `downloadItem.hasUserGesture`.\r\n* Fix crash caused by race condition on exit when using `protocol` module.\r\n* Fix `window.open` not respecting the features string.\r\n\r\n__Windows__\r\n\r\n* Fix crash on exit when there are heavy Node tasks.\r\n* Fix `child_process.execFile` not working for files in `asar` archive.\r\n\r\n__OS X__\r\n\r\n* Build with OS X 10.10 SDK.\r\n",
-    "version": "0.35.3"
   }
 ]

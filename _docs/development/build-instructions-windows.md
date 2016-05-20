@@ -1,5 +1,5 @@
 ---
-version: v1.1.0
+version: v1.1.1
 category: Development
 redirect_from:
     - /docs/v0.24.0/development/build-instructions-windows/
@@ -36,6 +36,7 @@ redirect_from:
     - /docs/v1.0.0/development/build-instructions-windows/
     - /docs/v1.0.1/development/build-instructions-windows/
     - /docs/v1.1.0/development/build-instructions-windows/
+    - /docs/v1.1.1/development/build-instructions-windows/
     - /docs/latest/development/build-instructions-windows/
 source_url: 'https://github.com/electron/electron/blob/master/docs/development/build-instructions-windows.md'
 title: "Build Instructions (Windows)"

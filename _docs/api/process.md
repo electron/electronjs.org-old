@@ -1,5 +1,5 @@
 ---
-version: v1.1.0
+version: v1.1.1
 category: API
 redirect_from:
     - /docs/v0.24.0/api/process/
@@ -36,31 +36,18 @@ redirect_from:
     - /docs/v1.0.0/api/process/
     - /docs/v1.0.1/api/process/
     - /docs/v1.1.0/api/process/
+    - /docs/v1.1.1/api/process/
     - /docs/latest/api/process/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/process.md'
-excerpt: "Get information about the running application process."
+excerpt: "Extensions to process object."
 title: "process"
 ---
 
 # process
 
-> Get information about the running application process.
+> Extensions to process object.
 
-The `process` object in Electron has the following differences from the one in
-upstream node:
-
-* `process.type` String - Process's type, can be `browser` (i.e. main process)
-  or `renderer`.
-* `process.versions.electron` String - Version of Electron.
-* `process.versions.chrome` String - Version of Chromium.
-* `process.resourcesPath` String - Path to JavaScript source code.
-* `process.mas` Boolean - For Mac App Store build, this value is `true`, for
-  other builds it is `undefined`.
-* `process.windowsStore` Boolean - If the app is running as a Windows Store app
-  (appx), this value is `true`, for other builds it is `undefined`.
-* `process.defaultApp` Boolean - When app is started by being passed as parameter
-  to the default app, this value is `true` in the main process, otherwise it is
-  `undefined`.
+The `process` object is extended in Electron with following APIs:
 
 ## Events
 
@@ -89,6 +76,37 @@ process.once('loaded', () => {
 Setting this to `true` can disable the support for `asar` archives in Node's
 built-in modules.
 
+### `process.type`
+
+Current process's type, can be `"browser"` (i.e. main process) or `"renderer"`.
+
+### `process.versions.electron`
+
+Electron's version string.
+
+### `process.versions.chrome`
+
+Chrome's version string.
+
+### `process.resourcesPath`
+
+Path to the resources directory.
+
+### `process.mas`
+
+For Mac App Store build, this property is `true`, for other builds it is
+`undefined`.
+
+### `process.windowsStore`
+
+If the app is running as a Windows Store app (appx), this property is `true`,
+for otherwise it is `undefined`.
+
+### `process.defaultApp`
+
+When app is started by being passed as parameter to the default app, this
+property is `true` in the main process, otherwise it is `undefined`.
+
 ## Methods
 
 The `process` object has the following method:
@@ -107,3 +125,34 @@ Causes the main thread of the current process hang.
 
 Sets the file descriptor soft limit to `maxDescriptors` or the OS hard
 limit, whichever is lower for the current process.
+
+### `process.getProcessMemoryInfo()`
+
+Returns an object giving memory usage statistics about the current process. Note
+that all statistics are reported in Kilobytes.
+
+* `workingSetSize` - The amount of memory currently pinned to actual physical
+  RAM.
+* `peakWorkingSetSize` - The maximum amount of memory that has ever been pinned
+  to actual physical RAM.
+* `privateBytes` - The amount of memory not shared by other processes, such as
+  JS heap or HTML content.
+* `sharedBytes` - The amount of memory shared between processes, typically
+  memory consumed by the Electron code itself
+
+### `process.getSystemMemoryInfo()`
+
+Returns an object giving memory usage statistics about the entire system. Note
+that all statistics are reported in Kilobytes.
+
+* `total` - The total amount of physical memory in Kilobytes available to the
+  system.
+* `free` - The total amount of memory not being used by applications or disk
+  cache.
+
+On Windows / Linux:
+
+* `swapTotal` - The total amount of swap memory in Kilobytes available to the
+  system.
+* `swapFree` - The free amount of swap memory in Kilobytes available to the
+  system.

@@ -1,5 +1,5 @@
 ---
-version: v1.1.0
+version: v1.1.1
 category: API
 redirect_from:
     - /docs/v0.24.0/api/dialog/
@@ -36,6 +36,7 @@ redirect_from:
     - /docs/v1.0.0/api/dialog/
     - /docs/v1.0.1/api/dialog/
     - /docs/v1.1.0/api/dialog/
+    - /docs/v1.1.1/api/dialog/
     - /docs/latest/api/dialog/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/dialog.md'
 excerpt: "Display native system dialogs for opening and saving files, alerting, etc."
@@ -72,6 +73,8 @@ The `dialog` module has the following methods:
 * `options` Object
   * `title` String
   * `defaultPath` String
+  * `buttonLabel` String - Custom label for the confirmation button, when
+    left empty the default label will be used.
   * `filters` Array
   * `properties` Array - Contains which features the dialog should use, can
     contain `openFile`, `openDirectory`, `multiSelections` and
@@ -113,6 +116,8 @@ shown.
 * `options` Object
   * `title` String
   * `defaultPath` String
+  * `buttonLabel` String - Custom label for the confirmation button, when
+    left empty the default label will be used.
   * `filters` Array
 * `callback` Function (optional)
 
@@ -132,7 +137,8 @@ will be passed via `callback(filename)`
   * `type` String - Can be `"none"`, `"info"`, `"error"`, `"question"` or
   `"warning"`. On Windows, "question" displays the same icon as "info", unless
   you set an icon using the "icon" option.
-  * `buttons` Array - Array of texts for buttons. On Windows, an empty array will result in one button labeled "OK".
+  * `buttons` Array - Array of texts for buttons. On Windows, an empty array
+    will result in one button labeled "OK".
   * `defaultId` Integer - Index of the button in the buttons array which will
     be selected by default when the message box opens.
   * `title` String - Title of the message box, some platforms will not show it.

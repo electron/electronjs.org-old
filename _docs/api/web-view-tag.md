@@ -1,5 +1,5 @@
 ---
-version: v1.1.0
+version: v1.1.1
 category: API
 redirect_from:
     - /docs/v0.24.0/api/web-view-tag/
@@ -36,13 +36,14 @@ redirect_from:
     - /docs/v1.0.0/api/web-view-tag/
     - /docs/v1.0.1/api/web-view-tag/
     - /docs/v1.1.0/api/web-view-tag/
+    - /docs/v1.1.1/api/web-view-tag/
     - /docs/latest/api/web-view-tag/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/web-view-tag.md'
 excerpt: "Display external web content in an isolated frame and process."
-title: "The &lt;webview&gt; tag"
+title: "&lt;webview&gt; Tag"
 ---
 
-# The `<webview>` tag
+# `<webview>` Tag
 
 > Display external web content in an isolated frame and process.
 
@@ -55,6 +56,9 @@ Unlike an `iframe`, the `webview` runs in a separate process than your
 app. It doesn't have the same permissions as your web page and all interactions
 between your app and embedded content will be asynchronous. This keeps your app
 safe from the embedded content.
+
+For security purpose, `webview` can only be used in `BrowserWindow`s that have
+`nodeIntegration` enabled.
 
 ## Example
 
