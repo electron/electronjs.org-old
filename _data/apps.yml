@@ -1036,16 +1036,17 @@
     - "spreadsheet"
   icon: "dataproofer.png"
 -
-  name: "douban.fm"
+  name: "PupaFM"
   description: "douban.fm Music Desktop Player"
-  website: "https://github.com/xwartz/douban.fm"
+  website: "https://github.com/xwartz/PupaFM"
   keywords:
     - "douban.fm"
     - "fm"
     - "douban"
+    - "PupaFM"
     - "music player"
     - "react"
     - "redux"
   license: "MIT"
-  icon: "doubanfm.png"
+  icon: "pupafm.png"
   featuredOnHomepage: true
