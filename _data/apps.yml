@@ -1035,3 +1035,17 @@
     - "research"
     - "spreadsheet"
   icon: "dataproofer.png"
+-
+  name: "douban.fm"
+  description: "douban.fm Music Desktop Player"
+  website: "https://github.com/xwartz/douban.fm"
+  keywords:
+    - "douban.fm"
+    - "fm"
+    - "douban"
+    - "music player"
+    - "react"
+    - "redux"
+  license: "MIT"
+  icon: "doubanfm.png"
+  featuredOnHomepage: true
