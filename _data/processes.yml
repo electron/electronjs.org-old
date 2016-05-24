@@ -9,7 +9,7 @@
 "dialog": "Main Process"
 "DownloadItem": "Main Process"
 "Environment Variables": "Main and Renderer Process"
-"File object": "Renderer Process"
+"File Object": "Renderer Process"
 "Frameless Window": "Main Process"
 "globalShortcut": "Main Process"
 "ipcMain": "Main Process"
