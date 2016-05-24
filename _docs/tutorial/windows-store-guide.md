@@ -1,5 +1,5 @@
 ---
-version: v1.1.1
+version: v1.1.2
 category: Tutorial
 redirect_from:
     - /docs/v0.24.0/tutorial/windows-store-guide/
@@ -37,6 +37,7 @@ redirect_from:
     - /docs/v1.0.1/tutorial/windows-store-guide/
     - /docs/v1.1.0/tutorial/windows-store-guide/
     - /docs/v1.1.1/tutorial/windows-store-guide/
+    - /docs/v1.1.2/tutorial/windows-store-guide/
     - /docs/latest/tutorial/windows-store-guide/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/windows-store-guide.md'
 title: "Windows Store Guide"

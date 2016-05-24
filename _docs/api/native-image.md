@@ -1,5 +1,5 @@
 ---
-version: v1.1.1
+version: v1.1.2
 category: API
 redirect_from:
     - /docs/v0.24.0/api/native-image/
@@ -37,6 +37,7 @@ redirect_from:
     - /docs/v1.0.1/api/native-image/
     - /docs/v1.1.0/api/native-image/
     - /docs/v1.1.1/api/native-image/
+    - /docs/v1.1.2/api/native-image/
     - /docs/latest/api/native-image/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/native-image.md'
 excerpt: "Create tray, dock, and application icons using PNG or JPG files."
@@ -71,7 +72,12 @@ const appIcon = new Tray(image);
 Currently `PNG` and `JPEG` image formats are supported. `PNG` is recommended
 because of its support for transparency and lossless compression.
 
-On Windows, you can also load an `ICO` icon from a file path.
+On Windows, you can also load `ICO` icons from file paths, to get best visual
+effects it is recommended to include at least followings sizes in the icon:
+
+* 16x16
+* 32x32
+* 256x256
 
 ## High Resolution Image
 

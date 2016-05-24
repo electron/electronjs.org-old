@@ -1,5 +1,5 @@
 ---
-version: v1.1.1
+version: v1.1.2
 category: Tutorial
 redirect_from:
     - /docs/v0.24.0/tutorial/mac-app-store-submission-guide/
@@ -37,6 +37,7 @@ redirect_from:
     - /docs/v1.0.1/tutorial/mac-app-store-submission-guide/
     - /docs/v1.1.0/tutorial/mac-app-store-submission-guide/
     - /docs/v1.1.1/tutorial/mac-app-store-submission-guide/
+    - /docs/v1.1.2/tutorial/mac-app-store-submission-guide/
     - /docs/latest/tutorial/mac-app-store-submission-guide/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/mac-app-store-submission-guide.md'
 title: "Mac App Store Submission Guide"
