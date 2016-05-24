@@ -1036,6 +1036,20 @@
     - "spreadsheet"
   icon: "dataproofer.png"
 -
+  name: "PupaFM"
+  description: "douban.fm Music Desktop Player"
+  website: "https://github.com/xwartz/PupaFM"
+  keywords:
+    - "douban.fm"
+    - "fm"
+    - "douban"
+    - "PupaFM"
+    - "music player"
+    - "react"
+    - "redux"
+  license: "MIT"
+  icon: "pupafm.png"
+-
   name: "Electron TimeTable"
   description: "TimeTable in your menubar!"
   website: "https://github.com/willyb321/electron-menubar-timetable"
