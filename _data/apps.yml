@@ -1035,20 +1035,6 @@
     - "research"
     - "spreadsheet"
   icon: "dataproofer.png"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 -
   name: "Electron TimeTable"
   description: "TimeTable in your menubar!"
