@@ -1,5 +1,5 @@
 ---
-version: v1.1.2
+version: v1.1.3
 category: Development
 redirect_from:
     - /docs/v0.24.0/development/build-instructions-linux/
@@ -33,11 +33,6 @@ redirect_from:
     - /docs/v0.37.6/development/build-instructions-linux/
     - /docs/v0.37.7/development/build-instructions-linux/
     - /docs/v0.37.8/development/build-instructions-linux/
-    - /docs/v1.0.0/development/build-instructions-linux/
-    - /docs/v1.0.1/development/build-instructions-linux/
-    - /docs/v1.1.0/development/build-instructions-linux/
-    - /docs/v1.1.1/development/build-instructions-linux/
-    - /docs/v1.1.2/development/build-instructions-linux/
     - /docs/latest/development/build-instructions-linux/
 source_url: 'https://github.com/electron/electron/blob/master/docs/development/build-instructions-linux.md'
 title: "Build Instructions (Linux)"

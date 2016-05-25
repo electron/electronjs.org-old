@@ -1,5 +1,5 @@
 ---
-version: v1.1.2
+version: v1.1.3
 category: API
 redirect_from:
     - /docs/v0.24.0/api/browser-window/
@@ -33,11 +33,6 @@ redirect_from:
     - /docs/v0.37.6/api/browser-window/
     - /docs/v0.37.7/api/browser-window/
     - /docs/v0.37.8/api/browser-window/
-    - /docs/v1.0.0/api/browser-window/
-    - /docs/v1.0.1/api/browser-window/
-    - /docs/v1.1.0/api/browser-window/
-    - /docs/v1.1.1/api/browser-window/
-    - /docs/v1.1.2/api/browser-window/
     - /docs/latest/api/browser-window/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/browser-window.md'
 excerpt: "Create and control browser windows."

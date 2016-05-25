@@ -1,5 +1,5 @@
 ---
-version: v1.1.2
+version: v1.1.3
 category: Tutorial
 redirect_from:
     - /docs/v0.24.0/tutorial/testing-on-headless-ci/
@@ -33,11 +33,6 @@ redirect_from:
     - /docs/v0.37.6/tutorial/testing-on-headless-ci/
     - /docs/v0.37.7/tutorial/testing-on-headless-ci/
     - /docs/v0.37.8/tutorial/testing-on-headless-ci/
-    - /docs/v1.0.0/tutorial/testing-on-headless-ci/
-    - /docs/v1.0.1/tutorial/testing-on-headless-ci/
-    - /docs/v1.1.0/tutorial/testing-on-headless-ci/
-    - /docs/v1.1.1/tutorial/testing-on-headless-ci/
-    - /docs/v1.1.2/tutorial/testing-on-headless-ci/
     - /docs/latest/tutorial/testing-on-headless-ci/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/testing-on-headless-ci.md'
 title: "Testing on Headless CI Systems (Travis CI, Jenkins)"

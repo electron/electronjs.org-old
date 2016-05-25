@@ -1,5 +1,5 @@
 ---
-version: v1.1.2
+version: v1.1.3
 category: Tutorial
 redirect_from:
     - /docs/v0.24.0/tutorial/using-pepper-flash-plugin/
@@ -33,11 +33,6 @@ redirect_from:
     - /docs/v0.37.6/tutorial/using-pepper-flash-plugin/
     - /docs/v0.37.7/tutorial/using-pepper-flash-plugin/
     - /docs/v0.37.8/tutorial/using-pepper-flash-plugin/
-    - /docs/v1.0.0/tutorial/using-pepper-flash-plugin/
-    - /docs/v1.0.1/tutorial/using-pepper-flash-plugin/
-    - /docs/v1.1.0/tutorial/using-pepper-flash-plugin/
-    - /docs/v1.1.1/tutorial/using-pepper-flash-plugin/
-    - /docs/v1.1.2/tutorial/using-pepper-flash-plugin/
     - /docs/latest/tutorial/using-pepper-flash-plugin/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/using-pepper-flash-plugin.md'
 title: "Using Pepper Flash Plugin"

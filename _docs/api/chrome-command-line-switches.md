@@ -1,5 +1,5 @@
 ---
-version: v1.1.2
+version: v1.1.3
 category: API
 redirect_from:
     - /docs/v0.24.0/api/chrome-command-line-switches/
@@ -33,11 +33,6 @@ redirect_from:
     - /docs/v0.37.6/api/chrome-command-line-switches/
     - /docs/v0.37.7/api/chrome-command-line-switches/
     - /docs/v0.37.8/api/chrome-command-line-switches/
-    - /docs/v1.0.0/api/chrome-command-line-switches/
-    - /docs/v1.0.1/api/chrome-command-line-switches/
-    - /docs/v1.1.0/api/chrome-command-line-switches/
-    - /docs/v1.1.1/api/chrome-command-line-switches/
-    - /docs/v1.1.2/api/chrome-command-line-switches/
     - /docs/latest/api/chrome-command-line-switches/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/chrome-command-line-switches.md'
 excerpt: "Command line switches supported by Electron."
