@@ -1036,11 +1036,11 @@
     - "spreadsheet"
   icon: "dataproofer.png"
 -
-  name: "Electron TimeTable"
+  name: "TimeTable"
   description: "TimeTable in your menubar!"
   website: "https://github.com/willyb321/electron-menubar-timetable"
   repository: "https://github.com/willyb321/electron-menubar-timetable"
   keywords:
     - "Timetable"
     - "menubar"
-  icon: "icon.png"
+  icon: "TTIcon.png"
