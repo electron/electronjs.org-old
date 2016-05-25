@@ -1,5 +1,5 @@
 ---
-version: v1.1.2
+version: v1.1.3
 category: API
 redirect_from:
     - /docs/v0.24.0/api/frameless-window/
@@ -33,11 +33,6 @@ redirect_from:
     - /docs/v0.37.6/api/frameless-window/
     - /docs/v0.37.7/api/frameless-window/
     - /docs/v0.37.8/api/frameless-window/
-    - /docs/v1.0.0/api/frameless-window/
-    - /docs/v1.0.1/api/frameless-window/
-    - /docs/v1.1.0/api/frameless-window/
-    - /docs/v1.1.1/api/frameless-window/
-    - /docs/v1.1.2/api/frameless-window/
     - /docs/latest/api/frameless-window/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/frameless-window.md'
 excerpt: "Open a window without toolbars, borders, or other graphical &quot;chrome&quot;."

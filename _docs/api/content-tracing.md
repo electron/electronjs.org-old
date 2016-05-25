@@ -1,5 +1,5 @@
 ---
-version: v1.1.2
+version: v1.1.3
 category: API
 redirect_from:
     - /docs/v0.24.0/api/content-tracing/
@@ -33,11 +33,6 @@ redirect_from:
     - /docs/v0.37.6/api/content-tracing/
     - /docs/v0.37.7/api/content-tracing/
     - /docs/v0.37.8/api/content-tracing/
-    - /docs/v1.0.0/api/content-tracing/
-    - /docs/v1.0.1/api/content-tracing/
-    - /docs/v1.1.0/api/content-tracing/
-    - /docs/v1.1.1/api/content-tracing/
-    - /docs/v1.1.2/api/content-tracing/
     - /docs/latest/api/content-tracing/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/content-tracing.md'
 excerpt: "Collect tracing data from Chromium&apos;s content module for finding performance

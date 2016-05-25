@@ -1,5 +1,5 @@
 ---
-version: v1.1.2
+version: v1.1.3
 category: Tutorial
 redirect_from:
     - /docs/v0.24.0/tutorial/online-offline-events/
@@ -33,11 +33,6 @@ redirect_from:
     - /docs/v0.37.6/tutorial/online-offline-events/
     - /docs/v0.37.7/tutorial/online-offline-events/
     - /docs/v0.37.8/tutorial/online-offline-events/
-    - /docs/v1.0.0/tutorial/online-offline-events/
-    - /docs/v1.0.1/tutorial/online-offline-events/
-    - /docs/v1.1.0/tutorial/online-offline-events/
-    - /docs/v1.1.1/tutorial/online-offline-events/
-    - /docs/v1.1.2/tutorial/online-offline-events/
     - /docs/latest/tutorial/online-offline-events/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/online-offline-events.md'
 title: "Online/Offline Event Detection"

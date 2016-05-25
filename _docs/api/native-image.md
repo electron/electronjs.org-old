@@ -1,5 +1,5 @@
 ---
-version: v1.1.2
+version: v1.1.3
 category: API
 redirect_from:
     - /docs/v0.24.0/api/native-image/
@@ -33,11 +33,6 @@ redirect_from:
     - /docs/v0.37.6/api/native-image/
     - /docs/v0.37.7/api/native-image/
     - /docs/v0.37.8/api/native-image/
-    - /docs/v1.0.0/api/native-image/
-    - /docs/v1.0.1/api/native-image/
-    - /docs/v1.1.0/api/native-image/
-    - /docs/v1.1.1/api/native-image/
-    - /docs/v1.1.2/api/native-image/
     - /docs/latest/api/native-image/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/native-image.md'
 excerpt: "Create tray, dock, and application icons using PNG or JPG files."

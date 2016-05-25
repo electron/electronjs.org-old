@@ -1,5 +1,5 @@
 ---
-version: v1.1.2
+version: v1.1.3
 category: API
 redirect_from:
     - /docs/v0.24.0/api/tray/
@@ -33,11 +33,6 @@ redirect_from:
     - /docs/v0.37.6/api/tray/
     - /docs/v0.37.7/api/tray/
     - /docs/v0.37.8/api/tray/
-    - /docs/v1.0.0/api/tray/
-    - /docs/v1.0.1/api/tray/
-    - /docs/v1.1.0/api/tray/
-    - /docs/v1.1.1/api/tray/
-    - /docs/v1.1.2/api/tray/
     - /docs/latest/api/tray/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/tray.md'
 excerpt: "Add icons and context menus to the system&apos;s notification area."
