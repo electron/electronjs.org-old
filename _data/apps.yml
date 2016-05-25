@@ -1061,3 +1061,12 @@
     - "developer tool"
   license: "MIT"
   icon: "negative.png"
+-
+  name: "TimeTable"
+  description: "TimeTable in your menubar!"
+  website: "https://github.com/willyb321/electron-menubar-timetable"
+  repository: "https://github.com/willyb321/electron-menubar-timetable"
+  keywords:
+    - "Timetable"
+    - "menubar"
+  icon: "TTIcon.png"
