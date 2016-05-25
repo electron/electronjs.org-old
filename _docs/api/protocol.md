@@ -1,5 +1,5 @@
 ---
-version: v1.1.1
+version: v1.1.2
 category: API
 redirect_from:
     - /docs/v0.24.0/api/protocol/
@@ -37,6 +37,7 @@ redirect_from:
     - /docs/v1.0.1/api/protocol/
     - /docs/v1.1.0/api/protocol/
     - /docs/v1.1.1/api/protocol/
+    - /docs/v1.1.2/api/protocol/
     - /docs/latest/api/protocol/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/protocol.md'
 excerpt: "Register a custom protocol and intercept existing protocol requests."

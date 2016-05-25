@@ -1,5 +1,5 @@
 ---
-version: v1.1.1
+version: v1.1.2
 category: API
 redirect_from:
     - /docs/v0.24.0/api/browser-window/
@@ -37,6 +37,7 @@ redirect_from:
     - /docs/v1.0.1/api/browser-window/
     - /docs/v1.1.0/api/browser-window/
     - /docs/v1.1.1/api/browser-window/
+    - /docs/v1.1.2/api/browser-window/
     - /docs/latest/api/browser-window/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/browser-window.md'
 excerpt: "Create and control browser windows."
@@ -79,10 +80,10 @@ It creates a new `BrowserWindow` with native properties as set by the `options`.
 * `options` Object
   * `width` Integer - Window's width in pixels. Default is `800`.
   * `height` Integer - Window's height in pixels. Default is `600`.
-  * `x` Integer - Window's left offset from screen. Default is to center the
-    window.
-  * `y` Integer - Window's top offset from screen. Default is to center the
-    window.
+  * `x` Integer (**required** if y is used) - Window's left offset from screen.
+    Default is to center the window.
+  * `y` Integer (**required** if x is used) - Window's top offset from screen.
+    Default is to center the window.
   * `useContentSize` Boolean - The `width` and `height` would be used as web
     page's size, which means the actual window's size will include window
     frame's size and be slightly larger. Default is `false`.
@@ -111,8 +112,9 @@ It creates a new `BrowserWindow` with native properties as set by the `options`.
     `false`.
   * `kiosk` Boolean - The kiosk mode. Default is `false`.
   * `title` String - Default window title. Default is `"Electron"`.
-  * `icon` [NativeImage](http://electron.atom.io/docs/api/native-image) - The window icon, when omitted on
-    Windows the executable's icon would be used as window icon.
+  * `icon` [NativeImage](http://electron.atom.io/docs/api/native-image) - The window icon. On Windows it is
+    recommended to use `ICO` icons to get best visual effects, you can also
+    leave it undefined so the executable's icon will be used.
   * `show` Boolean - Whether window should be shown when created. Default is
     `true`.
   * `frame` Boolean - Specify `false` to create a
@@ -728,7 +730,7 @@ Returns the title of the native window.
 **Note:** The title of web page can be different from the title of the native
 window.
 
-### `win.setSheetOffset(offset)` _OS X_
+### `win.setSheetOffset(offsetY[, offsetX])` _OS X_
 
 Changes the attachment point for sheets on Mac OS X. By default, sheets are
 attached just below the window frame, but you may want to display them beneath
@@ -930,6 +932,12 @@ The `flags` is an array that can include following `String`s:
 ### `win.showDefinitionForSelection()` _OS X_
 
 Shows pop-up dictionary that searches the selected word on the page.
+
+### `win.setIcon(icon)` _Windows_ _Linux_
+
+* `icon` [NativeImage](http://electron.atom.io/docs/api/native-image)
+
+Changes window icon.
 
 ### `win.setAutoHideMenuBar(hide)`
 

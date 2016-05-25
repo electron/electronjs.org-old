@@ -1,5 +1,5 @@
 ---
-version: v1.1.1
+version: v1.1.2
 category: API
 redirect_from:
     - /docs/v0.24.0/api/session/
@@ -37,6 +37,7 @@ redirect_from:
     - /docs/v1.0.1/api/session/
     - /docs/v1.1.0/api/session/
     - /docs/v1.1.1/api/session/
+    - /docs/v1.1.2/api/session/
     - /docs/latest/api/session/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/session.md'
 excerpt: "Manage browser sessions, cookies, cache, proxy settings, etc."
@@ -368,6 +369,23 @@ session.fromPartition(partition).setPermissionRequestHandler((webContents, permi
 * `callback` Function (optional) - Called when operation is done.
 
 Clears the host resolver cache.
+
+#### `ses.allowNTLMCredentialsForDomains(domains)`
+
+* `domains` String - A comma-seperated list of servers for which
+  integrated authentication is enabled.
+
+Dynamically sets whether to always send credentials for HTTP NTLM or Negotiate
+authentication.
+
+```javascript
+// consider any url ending with `example.com`, `foobar.com`, `baz`
+// for integrated authentication.
+session.defaultSession.allowNTLMCredentialsForDomains('*example.com, *foobar.com, *baz')
+
+// consider all urls for integrated authentication.
+session.defaultSession.allowNTLMCredentialsForDomains('*')
+```
 
 #### `ses.webRequest`
 

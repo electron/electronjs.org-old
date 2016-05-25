@@ -1,5 +1,5 @@
 ---
-version: v1.1.1
+version: v1.1.2
 category: API
 redirect_from:
     - /docs/v0.24.0/api/tray/
@@ -37,6 +37,7 @@ redirect_from:
     - /docs/v1.0.1/api/tray/
     - /docs/v1.1.0/api/tray/
     - /docs/v1.1.1/api/tray/
+    - /docs/v1.1.2/api/tray/
     - /docs/latest/api/tray/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/tray.md'
 excerpt: "Add icons and context menus to the system&apos;s notification area."
@@ -75,6 +76,7 @@ __Platform limitations:__
 * When app indicator is used on Linux, the `click` event is ignored.
 * On Linux in order for changes made to individual `MenuItem`s to take effect,
   you have to call `setContextMenu` again. For example:
+* On Windows it is recommended to use `ICO` icons to get best visual effects.
 
 ```javascript
 contextMenu.items[2].checked = false;

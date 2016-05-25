@@ -1,5 +1,23 @@
 [
   {
+    "url": "https://api.github.com/repos/electron/electron/releases/3290165",
+    "assets_url": "https://api.github.com/repos/electron/electron/releases/3290165/assets",
+    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/3290165/assets{?name,label}",
+    "html_url": "https://github.com/electron/electron/releases/tag/v1.1.2",
+    "id": 3290165,
+    "tag_name": "v1.1.2",
+    "target_commitish": "master",
+    "name": "electron v1.1.2",
+    "draft": false,
+    "prerelease": false,
+    "created_at": "2016-05-24T06:59:21Z",
+    "published_at": "2016-05-24T10:26:09Z",
+    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v1.1.2",
+    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v1.1.2",
+    "body": "Changelog:\r\n\r\n* Add `BrowserWindow.setIcon(icon)` API. [#5624](https://github.com/electron/electron/pull/5624)\r\n* Add `Session.allowNTLMCredentialsForDomains(domains)` API, and mark `app.allowNTLMCredentialsForDomains(domains)` as deprecated. [#5638](https://github.com/electron/electron/pull/5638)\r\n* Fix error description of `did-fail-load` event being empty. [#5634](https://github.com/electron/electron/pull/5634)\r\n* Fix `require('electron')` being able to be overridden by npm modules.\r\n[#5662](https://github.com/electron/electron/pull/5662)\r\n* Fix `remote` module not handling rejection of `Promise` in the main process. [#5666](https://github.com/electron/electron/pull/5666)\r\n\r\n__Windows__\r\n\r\n* Improve icon resolution when using `ICO` icons. [#5624](https://github.com/electron/electron/pull/5624)\r\n* Fix `crashReporter` not working. [#5646](https://github.com/electron/electron/pull/5646)\r\n\r\n__OS X__\r\n\r\n* Add `offsetX` parameter to `BrowserWindow.setSheetOffset(offsetY[, offsetX])` API. [#5603](https://github.com/electron/electron/pull/5603)\r\n* Fix the usages of private APIs in MAS build. [electron/libchromiumcontent#212](https://github.com/electron/libchromiumcontent/pull/212)\r\n* Fix `BrowserWindow.setAspectRatio(ratio)` not correctly implemented. [#5644](https://github.com/electron/electron/pull/5644)\r\n\r\n__Linux__\r\n\r\n* Fix the binary of `ffmpeg` not stripped. [#5668](https://github.com/electron/electron/pull/5668)\r\n",
+    "version": "1.1.2"
+  },
+  {
     "url": "https://api.github.com/repos/electron/electron/releases/3266561",
     "assets_url": "https://api.github.com/repos/electron/electron/releases/3266561/assets",
     "upload_url": "https://uploads.github.com/repos/electron/electron/releases/3266561/assets{?name,label}",
@@ -520,23 +538,5 @@
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.36.0",
     "body": "Changelog:\r\n\r\n* Upgrade to Chrome 47.\r\n* Upgrade to Node 5.1.1.\r\n* Add `desktopCapturer` module.\r\n* Add `protocol.registerServiceWorkerSchemes` API.\r\n* Add `uploadDate` property for `request` object in `protocol` module.\r\n* Don't touch the argument when calling `Menu.buildFromTemplate`.\r\n* Don't emit `will-quit` event when calling `process.exit` or `app.exit`.\r\n* Fix wrong `appData` and `userData` dir values.\r\n* Fix HTTP/2 not working.\r\n* Fix the `exit` event of `process` object not including exit code.\r\n* Fix `event.source` not matching the object returned by `window.open` in `message` event handler.\r\n* Fix wrong `origin` string in `window.postMessage`.\r\n\r\n__OS X__\r\n\r\n* Add `BrowserWindow.setIgnoreMouseEvents` API.\r\n* Remove the automatically appended `Enter Full Screen` menu item.\r\n",
     "version": "0.36.0"
-  },
-  {
-    "url": "https://api.github.com/repos/electron/electron/releases/2233191",
-    "assets_url": "https://api.github.com/repos/electron/electron/releases/2233191/assets",
-    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/2233191/assets{?name,label}",
-    "html_url": "https://github.com/electron/electron/releases/tag/v0.35.4",
-    "id": 2233191,
-    "tag_name": "v0.35.4",
-    "target_commitish": "master",
-    "name": "electron v0.35.4",
-    "draft": false,
-    "prerelease": false,
-    "created_at": "2015-12-04T11:23:48Z",
-    "published_at": "2015-12-04T12:39:09Z",
-    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.35.4",
-    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.35.4",
-    "body": "Changelog:\r\n\r\n* Fix typo: `isDestroy` => `isDestroyed`.\r\n",
-    "version": "0.35.4"
   }
 ]

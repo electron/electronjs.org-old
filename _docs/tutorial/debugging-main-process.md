@@ -1,5 +1,5 @@
 ---
-version: v1.1.1
+version: v1.1.2
 category: Tutorial
 redirect_from:
     - /docs/v0.24.0/tutorial/debugging-main-process/
@@ -37,6 +37,7 @@ redirect_from:
     - /docs/v1.0.1/tutorial/debugging-main-process/
     - /docs/v1.1.0/tutorial/debugging-main-process/
     - /docs/v1.1.1/tutorial/debugging-main-process/
+    - /docs/v1.1.2/tutorial/debugging-main-process/
     - /docs/latest/tutorial/debugging-main-process/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/debugging-main-process.md'
 title: "Debugging the Main Process"

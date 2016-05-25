@@ -1,5 +1,5 @@
 ---
-version: v1.1.1
+version: v1.1.2
 category: API
 redirect_from:
     - /docs/v0.24.0/api/power-monitor/
@@ -37,6 +37,7 @@ redirect_from:
     - /docs/v1.0.1/api/power-monitor/
     - /docs/v1.1.0/api/power-monitor/
     - /docs/v1.1.1/api/power-monitor/
+    - /docs/v1.1.2/api/power-monitor/
     - /docs/latest/api/power-monitor/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/power-monitor.md'
 excerpt: "Monitor power state changes."

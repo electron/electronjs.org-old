@@ -1,5 +1,5 @@
 ---
-version: v1.1.1
+version: v1.1.2
 category: API
 redirect_from:
     - /docs/v0.24.0/api/synopsis/
@@ -37,6 +37,7 @@ redirect_from:
     - /docs/v1.0.1/api/synopsis/
     - /docs/v1.1.0/api/synopsis/
     - /docs/v1.1.1/api/synopsis/
+    - /docs/v1.1.2/api/synopsis/
     - /docs/latest/api/synopsis/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/synopsis.md'
 excerpt: "How to use Node.js and Electron APIs."
