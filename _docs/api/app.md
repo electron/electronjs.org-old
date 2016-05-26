@@ -1,5 +1,5 @@
 ---
-version: v1.1.3
+version: v1.2.0
 category: API
 redirect_from:
     - /docs/v0.24.0/api/app/
@@ -538,11 +538,13 @@ app.on('ready', () => {
 });
 ```
 
-### `app.setUserActivity(type, userInfo)` _OS X_
+### `app.setUserActivity(type, userInfo[, webpageURL])` _OS X_
 
 * `type` String - Uniquely identifies the activity. Maps to
   [`NSUserActivity.activityType`][activity-type].
 * `userInfo` Object - App-specific state to store for use by another device.
+* `webpageURL` String - The webpage to load in a browser if no suitable app is
+  installed on the resuming device. The scheme must be `http` or `https`.
 
 Creates an `NSUserActivity` and sets it as the current activity. The activity
 is eligible for [Handoff][handoff] to another device afterward.

@@ -1,5 +1,23 @@
 [
   {
+    "url": "https://api.github.com/repos/electron/electron/releases/3310519",
+    "assets_url": "https://api.github.com/repos/electron/electron/releases/3310519/assets",
+    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/3310519/assets{?name,label}",
+    "html_url": "https://github.com/electron/electron/releases/tag/v1.2.0",
+    "id": 3310519,
+    "tag_name": "v1.2.0",
+    "target_commitish": "master",
+    "name": "electron v1.2.0",
+    "draft": false,
+    "prerelease": false,
+    "created_at": "2016-05-26T09:07:52Z",
+    "published_at": "2016-05-26T11:00:39Z",
+    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v1.2.0",
+    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v1.2.0",
+    "body": "Changelog:\r\n\r\n* Update to Chrome 51. [#5648](https://github.com/electron/electron/issues/5648)\r\n* Returning a non-void value in `beforeunload` handler nows prevents the page to unload.  [#5648](https://github.com/electron/electron/issues/5648)\r\n* Improve the \"Error opening app\" dialog. [#5610](https://github.com/electron/electron/issues/5610)\r\n* Improve how `Promise` is detected in `remote` module. [#5689](https://github.com/electron/electron/issues/5689)\r\n* Add `webpageURL` parameter to `app.setUserActivity(type, userInfo[, webpageURL])` API. [#5658](https://github.com/electron/electron/issues/5658)\r\n* Fix `document.visibilityState` and `visibilitychange` event not working in `<webview>` tag. [#5684](https://github.com/electron/electron/issues/5684)\r\n* Fix unexpected behavior when calling `app.quit()` while there are `BrowserWindow`s with `closable` set to `false`. [#5701](https://github.com/electron/electron/issues/5701)\r\n\r\nMigration Notice:\r\n\r\n* Due to [a change of Chrome 51](https://bugs.chromium.org/p/chromium/issues/detail?id=587940), returning non-empty strings or `true` in `beforeunload` handler now _prevents_ the page to unload. [#5648](https://github.com/electron/electron/issues/5648)\r\n* The private `ATOM_SHELL_INTERNAL_RUN_AS_NODE` environment variable has been removed, the code relies on it should use the public `ELECTRON_RUN_AS_NODE` environment variable instead. [#5682](https://github.com/electron/electron/issues/5682)\r\n* The internal `ATOM_SHELL_` environment variables have been renamed, if you are maintaining your own Electron fork, you might be affected. [#5683](https://github.com/electron/electron/issues/5683)\r\n",
+    "version": "1.2.0"
+  },
+  {
     "url": "https://api.github.com/repos/electron/electron/releases/3299583",
     "assets_url": "https://api.github.com/repos/electron/electron/releases/3299583/assets",
     "upload_url": "https://uploads.github.com/repos/electron/electron/releases/3299583/assets{?name,label}",
@@ -520,23 +538,5 @@
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.36.2",
     "body": "Changelog:\r\n\r\n* Add `did-change-theme-color` event to `WebContents` and `<webview>`.\r\n* Add `media-started-playing` and `media-paused` events to `WebContents` and `<webview>`.\r\n* Add `findInPage` method to `WebContents` and `<webview>`.\r\n* Fix form redirect not working.\r\n* Fix `credentials: 'include'` being added to service worker's headers.\r\n* Fix in page navigations in sub-frames causing full page refresh.\r\n* Fix wrong `document.hidden` and `document.visibilityState` values when window is minimized.\r\n* Fix crash when using `webRequest` API.\r\n* Fix `webRequest.onBeforeSendHeaders` not removing existing headers.\r\n\r\n__OS X__\r\n\r\n* Remove the notification from notification center when is clicked or cancelled.\r\n* Fix app menu not showing after calling `app.dock.show()`.\r\n* Fix fullscreen mode for `BrowserWindow` with `hidden-inset` of `titleBarStyle`.\r\n* Fix `shell.openExternal` not working with URLs containing valid URL special characters.\r\n\r\n__Linux__\r\n\r\n* Load `libnotify` dynamically instead of linking with the library.\r\n* Fix pressing `Alt` not toggling window menu bar.\r\n\r\n__Windows__\r\n\r\n* Fix `shell.moveItemToTrash` not working on Windows 7.\r\n* Fix showing notification when icon is inside `asar` archive or the icon's URL is not `file://` scheme.\r\n",
     "version": "0.36.2"
-  },
-  {
-    "url": "https://api.github.com/repos/electron/electron/releases/2309473",
-    "assets_url": "https://api.github.com/repos/electron/electron/releases/2309473/assets",
-    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/2309473/assets{?name,label}",
-    "html_url": "https://github.com/electron/electron/releases/tag/v0.36.1",
-    "id": 2309473,
-    "tag_name": "v0.36.1",
-    "target_commitish": "master",
-    "name": "electron v0.36.1",
-    "draft": false,
-    "prerelease": false,
-    "created_at": "2015-12-18T05:16:30Z",
-    "published_at": "2015-12-18T07:17:31Z",
-    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.36.1",
-    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.36.1",
-    "body": "Changelog:\r\n\r\n* Add `session.webRequest` API.\r\n* Add `A5` to `webContents.printToPDF`'s `pageSize`.\r\n* `crashReporter.start` now requires passing `submitURL` and `companyName`.\r\n* Make `window.opener` a `BrowserWindowProxy`.\r\n* Don't pump message loop when sending synchronous message in renderer process.\r\n* Fix crash in V8 when doing garbage collection.\r\n* Fix crash when garbage collecting `Buffer`s.\r\n* Fix crash when passing empty path to `app.addRecentDocument`.\r\n* Fix crash when changing page's location while using service worker.\r\n* Fix `x` and `y` options not working in `BrowserWindow.capturePage`.\r\n\r\n__OS X__\r\n\r\n* Remove usages of private `xpc_` APIs in MAS build.\r\n* Fix `shell.openExternal` not able to open URLs with unescaped characters.\r\n",
-    "version": "0.36.1"
   }
 ]
