@@ -1070,3 +1070,14 @@
     - "Timetable"
     - "menubar"
   icon: "TTIcon.png"
+-
+  name: "lightgallery"
+  description: "A modern, electron and nodejs based image viewer for Mac, Windows and Linux."
+  website: "http://sachinchoolur.github.io/lightgallery-desktop/"
+  repository: "https://github.com/sachinchoolur/lightgallery-desktop"
+  keywords:
+    - "image"
+    - "photo"
+    - "gallery"
+  license: "MIT"
+  icon: "lightgallery.png"
