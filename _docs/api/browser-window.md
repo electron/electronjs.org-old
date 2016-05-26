@@ -1,5 +1,5 @@
 ---
-version: v1.1.3
+version: v1.2.0
 category: API
 redirect_from:
     - /docs/v0.24.0/api/browser-window/
@@ -259,17 +259,17 @@ will cancel the close.
 
 Usually you would want to use the `beforeunload` handler to decide whether the
 window should be closed, which will also be called when the window is
-reloaded. In Electron, returning an empty string or `false` would cancel the
+reloaded. In Electron, returning any value other than `undefined` would cancel the
 close. For example:
 
 ```javascript
 window.onbeforeunload = (e) => {
   console.log('I do not want to be closed');
 
-  // Unlike usual browsers, in which a string should be returned and the user is
-  // prompted to confirm the page unload, Electron gives developers more options.
-  // Returning empty string or false would prevent the unloading now.
-  // You can also use the dialog API to let the user confirm closing the application.
+  // Unlike usual browsers that a message box will be prompted to users, returning
+  // a non-void value will silently cancel the close.
+  // It is recommended to use the dialog API to let the user confirm closing the
+  // application.
   e.returnValue = false;
 };
 ```
