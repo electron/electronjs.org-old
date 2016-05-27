@@ -23,9 +23,10 @@ Add your app to the list by editing [_data/apps.yml](/_data/apps.yml).
 
 * The required fields are `name`, `website`, and `icon`. Everything else is
   optional, but recommended.
+* If your app doesn't have a website, you can specify a `repository` URL instead.
 * Your `icon` must be `256x256` pixels in size.
 * Your `icon` must be a [PNG](https://en.wikipedia.org/wiki/Portable_Network_Graphics).
-* If your app doesn't have a website, you can specify a `repository` URL instead.
+* Put your `icon` in the `images/apps` folder.
 
 ```yml
 -
