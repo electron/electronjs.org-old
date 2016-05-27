@@ -1091,3 +1091,13 @@
     - "privacy"
   license: "Apache 2.0"
   icon: "minbrowser.png"
+-
+  name: "Collectie"
+  description: "Your personal galaxy of inspiration"
+  website: "https://getcollectie.com/"
+  keywords:
+    - "collection"
+    - "inspiration"
+    - "database"
+    - "design"
+  icon: "collectie.png"
