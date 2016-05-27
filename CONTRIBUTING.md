@@ -41,6 +41,22 @@ Add your app to the list by editing [_data/apps.yml](/_data/apps.yml).
   icon: "lowercase-and-url-friendly.png"
 ```
 
+## Adding a meetup to the site
+
+If you want to add a meetup to the community site please open a pull request.
+
+Add the meetup to the list by editing [_data/meetups.yml](/_data/meetups.yml).
+
+```yml
+-
+  name: Name of Group
+  location: City, State (if applicable)
+  country: Country
+  href: Link to meetup's site
+```
+
+**Please add the meetup at the bottom of the list**.
+
 ## Documentation
 
 The documentation on this site is pulled directly from the `electron/electron` repository's `docs` directory. Contributions to the documentation should be made there: [electron/electron](https://github.com/electron/electron/tree/master/docs).
