@@ -2,8 +2,8 @@
 
 The [website](http://electron.atom.io) for [Electron](https://github.com/electron/electron): [electron.atom.io](http://electron.atom.io).
 
-**[Add a project to electron.atom.io/apps](CONTRIBUTING.md#adding-an-app-or-project-to-the-site)**
-**[Add a meetup to electron.atom.io/community](CONTRIBUTING.md#adding-a-meetup-to-the-site)**
+- **[Add a project to electron.atom.io/apps](CONTRIBUTING.md#adding-an-app-or-project-to-the-site)**
+- **[Add a meetup to electron.atom.io/community](CONTRIBUTING.md#adding-a-meetup-to-the-site)**
 
 ### Build
 
