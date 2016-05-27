@@ -35,7 +35,7 @@ $ npm install
 
 Versions of Electron documentation are fetched from the `electron/electron` repository's `docs` directory. The site contains the latest version of docs and links to older versions of the docs in the repository.
 
-To fetch documentation at a specific version:
+To fetch documentation for a specific version:
 
 ```bash
 $ script/docs <version> [options]
@@ -44,7 +44,7 @@ $ script/docs v0.26.0 --latest
 ```
 Options:
 
-`--latest` Set this version as the latest version of Electron in `_config.yml` and this documentation replaces the existing documentation.
+`--latest` Set this version as the latest version of Electron in `_config.yml` and replace the existing documentation.
 
 #### Release Notes
 
