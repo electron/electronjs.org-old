@@ -8,7 +8,7 @@ layout: default
   <div class='container-narrow'>
     <h1>Electron Community</h1>
     <p class="lead mb-3">
-      Tools, boilerplates, videos, and more from Electron's <a href="https://github.com/sindresorhus/awesome-electron">awesome</a> open-source contributors. Find or add <a href="#meetups">meetups</a> near you.
+      Tools, boilerplates, videos, and more from Electron's <a href="https://github.com/sindresorhus/awesome-electron" target="_blank">awesome</a> open-source contributors. Find or add <a href="#meetups">meetups</a> near you.
     </p>
   </div>
 </div>
@@ -23,7 +23,7 @@ layout: default
         {% if item.category == 'tools' and item.subcategory == 'for_electron' %}
           <tr>
             <td>
-              <a href="{{ item.href }}">{{ item.name }}</a>
+              <a href="{{ item.href }}" target="_blank">{{ item.name }}</a>
             </td>
             <td>
               {{ item.description }}
@@ -39,7 +39,7 @@ layout: default
         {% if item.category == 'boilerplates' %}
           <tr>
             <td>
-              <a href="{{ item.href }}">{{ item.name }}</a>
+              <a href="{{ item.href }}" target="_blank">{{ item.name }}</a>
             </td>
             <td>
               {{ item.description }}
@@ -55,7 +55,7 @@ layout: default
         {% if item.category == 'components' %}
           <tr>
             <td>
-              <a href="{{ item.href }}">{{ item.name }}</a>
+              <a href="{{ item.href }}" target="_blank">{{ item.name }}</a>
             </td>
             <td>
               {{ item.description }}
@@ -71,7 +71,7 @@ layout: default
         {% if item.category == 'videos' %}
           <tr>
             <td>
-              <a href="{{ item.href }}">{{ item.name }}</a>
+              <a href="{{ item.href }}" target="_blank">{{ item.name }}</a>
             </td>
             <td>
               {{ item.description }}
@@ -94,7 +94,7 @@ layout: default
       {% for item in site.data.meetups %}
           <tr>
             <td>
-              <a href="{{ item.href }}">{{ item.name }}</a>
+              <a href="{{ item.href }}" target="_blank">{{ item.name }}</a>
             </td>
             <td>
               {{ item.location }}, {{ item.country }}
