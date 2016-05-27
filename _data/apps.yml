@@ -1081,3 +1081,13 @@
     - "gallery"
   license: "MIT"
   icon: "lightgallery.png"
+-
+  name: "Min"
+  description: "A smarter web browser"
+  website: "https://minbrowser.github.io/min/"
+  repository: "https://github.com/minbrowser/min"
+  keywords:
+    - "browser"
+    - "privacy"
+  license: "Apache 2.0"
+  icon: "minbrowser.png"
