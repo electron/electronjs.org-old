@@ -58,7 +58,6 @@ available_versions:
     - v1.1.3
     - v1.2.0
 collections:
-    pages: {output: true, permalink: '/:path/'}
     docs: {output: true, permalink: '/docs/:path/'}
 defaults:
     - {scope: {type: docs}, values: {layout: docs}}
@@ -75,6 +74,8 @@ exclude:
     - package.json
     - script
     - spec
+include:
+    - _pages
 google_site_verification: eOAFtDphTbbm4OPKva2d3Z0Z_2bBxWMGdkD0IRQ6VeA
 twitter:
   username: ElectronJS
