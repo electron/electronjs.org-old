@@ -1101,3 +1101,14 @@
     - "database"
     - "design"
   icon: "collectie.png"
+-
+  name: "Calculator"
+  description: "A Simple Calculator with Google UI"
+  website: "https://softvilla.com.pk"
+  repository: "https://github.com/sabeehmurtaza9/Calculator/"
+  keywords:
+    - "calculator"
+    - "calculation"
+    - "mathematical"
+    - "operations"
+  icon: "calculator_256.png"
