@@ -1,7 +1,6 @@
 ---
-version: v1.0.1
+version: v1.2.0
 category: API
-title: App
 redirect_from:
     - /docs/v0.24.0/api/app/
     - /docs/v0.25.0/api/app/
@@ -34,11 +33,11 @@ redirect_from:
     - /docs/v0.37.6/api/app/
     - /docs/v0.37.7/api/app/
     - /docs/v0.37.8/api/app/
-    - /docs/v1.0.0/api/app/
-    - /docs/v1.0.1/api/app/
     - /docs/latest/api/app/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/app.md'
 excerpt: "Control your application&apos;s event lifecycle."
+title: "app"
+sort_title: "app"
 ---
 
 # app
@@ -49,8 +48,8 @@ The following example shows how to quit the application when the last window is
 closed:
 
 ```javascript
-const app = require('electron').app;
-app.on('window-all-closed', function() {
+const {app} = require('electron');
+app.on('window-all-closed', () => {
   app.quit();
 });
 ```
@@ -77,10 +76,12 @@ Emitted when Electron has finished initialization.
 
 Emitted when all windows have been closed.
 
-This event is only emitted when the application is not going to quit. If the
-user pressed `Cmd + Q`, or the developer called `app.quit()`, Electron will
-first try to close all the windows and then emit the `will-quit` event, and in
-this case the `window-all-closed` event would not be emitted.
+If you do not subscribe to this event and all windows are closed, the default
+behavior is to quit the app; however, if you subscribe, you control whether the
+app quits or not. If the user pressed `Cmd + Q`, or the developer called
+`app.quit()`, Electron will first try to close all the windows and then emit the
+`will-quit` event, and in this case the `window-all-closed` event would not be
+emitted.
 
 ### Event: 'before-quit'
 
@@ -130,7 +131,8 @@ handle this case (even before the `ready` event is emitted).
 
 You should call `event.preventDefault()` if you want to handle this event.
 
-On Windows, you have to parse `process.argv` (in the main process) to get the filepath.
+On Windows, you have to parse `process.argv` (in the main process) to get the
+filepath.
 
 ### Event: 'open-url' _OS X_
 
@@ -151,8 +153,27 @@ Returns:
 * `event` Event
 * `hasVisibleWindows` Boolean
 
-Emitted when the application is activated, which usually happens when clicks on
-the applications's dock icon.
+Emitted when the application is activated, which usually happens when the user
+clicks on the application's dock icon.
+
+### Event: 'continue-activity' _OS X_
+
+Returns:
+
+* `event` Event
+* `type` String - A string identifying the activity. Maps to
+  [`NSUserActivity.activityType`][activity-type].
+* `userInfo` Object - Contains app-specific state stored by the activity on
+  another device.
+
+Emitted during [Handoff][handoff] when an activity from a different device wants
+to be resumed. You should call `event.preventDefault()` if you want to handle
+this event.
+
+A user activity can be continued only in an app that has the same developer Team
+ID as the activity's source app and that supports the activity's type.
+Supported activity types are specified in the app's `Info.plist` under the
+`NSUserActivityTypes` key.
 
 ### Event: 'browser-window-blur'
 
@@ -199,8 +220,8 @@ certificate you should prevent the default behavior with
 `event.preventDefault()` and call `callback(true)`.
 
 ```javascript
-app.on('certificate-error', function(event, webContents, url, error, certificate, callback) {
-  if (url == "https://github.com") {
+app.on('certificate-error', (event, webContents, url, error, certificate, callback) => {
+  if (url === 'https://github.com') {
     // Verification logic.
     event.preventDefault();
     callback(true);
@@ -230,10 +251,10 @@ and `callback` needs to be called with an entry filtered from the list. Using
 certificate from the store.
 
 ```javascript
-app.on('select-client-certificate', function(event, webContents, url, list, callback) {
+app.on('select-client-certificate', (event, webContents, url, list, callback) => {
   event.preventDefault();
   callback(list[0]);
-})
+});
 ```
 
 ### Event: 'login'
@@ -261,10 +282,10 @@ should prevent the default behavior with `event.preventDefault()` and call
 `callback(username, password)` with the credentials.
 
 ```javascript
-app.on('login', function(event, webContents, request, authInfo, callback) {
+app.on('login', (event, webContents, request, authInfo, callback) => {
   event.preventDefault();
   callback('username', 'secret');
-})
+});
 ```
 
 ### Event: 'gpu-process-crashed'
@@ -275,7 +296,8 @@ Emitted when the gpu process crashes.
 
 The `app` object has the following methods:
 
-**Note:** Some methods are only available on specific operating systems and are labeled as such.
+**Note:** Some methods are only available on specific operating systems and are
+labeled as such.
 
 ### `app.quit()`
 
@@ -307,7 +329,8 @@ Hides all application windows without minimizing them.
 
 ### `app.show()` _OS X_
 
-Shows application windows after they were hidden. Does not automatically focus them.
+Shows application windows after they were hidden. Does not automatically focus
+them.
 
 ### `app.getAppPath()`
 
@@ -417,15 +440,12 @@ Please refer to [Apple's documentation][CFBundleURLTypes] for details.
 
 The API uses the Windows Registry and LSSetDefaultHandlerForURLScheme internally.
 
-### `app.removeAsDefaultProtocolClient(protocol)` _Windows_
+### `app.removeAsDefaultProtocolClient(protocol)` _OS X_ _Windows_
 
 * `protocol` String - The name of your protocol, without `://`.
 
-This method checks if the current executable as the default handler for a protocol
-(aka URI scheme). If so, it will remove the app as the default handler.
-
-**Note:** On OS X, removing the app will automatically remove the app as the
-default protocol handler.
+This method checks if the current executable as the default handler for a
+protocol (aka URI scheme). If so, it will remove the app as the default handler.
 
 ### `app.isDefaultProtocolClient(protocol)` _OS X_ _Windows_
 
@@ -434,8 +454,11 @@ default protocol handler.
 This method checks if the current executable is the default handler for a protocol
 (aka URI scheme). If so, it will return true. Otherwise, it will return false.
 
-**Note:** On OS X, you can use this method to check if the app has been registered as the default protocol handler for a protocol. You can also verify this by checking `~/Library/Preferences/com.apple.LaunchServices.plist` on the OS X machine.
-Please refer to [Apple's documentation][LSCopyDefaultHandlerForURLScheme] for details.
+**Note:** On OS X, you can use this method to check if the app has been
+registered as the default protocol handler for a protocol. You can also verify
+this by checking `~/Library/Preferences/com.apple.LaunchServices.plist` on the
+OS X machine. Please refer to
+[Apple's documentation][LSCopyDefaultHandlerForURLScheme] for details.
 
 The API uses the Windows Registry and LSCopyDefaultHandlerForURLScheme internally.
 
@@ -461,16 +484,6 @@ Adds `tasks` to the [Tasks][tasks] category of the JumpList on Windows.
 * `iconIndex` Integer - The icon index in the icon file. If an icon file
   consists of two or more icons, set this value to identify the icon. If an
   icon file consists of one icon, this value is 0.
-
-### `app.allowNTLMCredentialsForAllDomains(allow)`
-
-* `allow` Boolean
-
-Dynamically sets whether to always send credentials for HTTP NTLM or Negotiate
-authentication - normally, Electron will only send NTLM/Kerberos credentials for
-URLs that fall under "Local Intranet" sites (i.e. are in the same domain as you).
-However, this detection often fails when corporate networks are badly configured,
-so this lets you co-opt this behavior and enable it for all URLs.
 
 ### `app.makeSingleInstance(callback)`
 
@@ -505,9 +518,9 @@ An example of activating the window of primary instance when a second instance
 starts:
 
 ```javascript
-var myWindow = null;
+let myWindow = null;
 
-var shouldQuit = app.makeSingleInstance(function(commandLine, workingDirectory) {
+const shouldQuit = app.makeSingleInstance((commandLine, workingDirectory) => {
   // Someone tried to run a second instance, we should focus our window.
   if (myWindow) {
     if (myWindow.isMinimized()) myWindow.restore();
@@ -521,9 +534,24 @@ if (shouldQuit) {
 }
 
 // Create myWindow, load the rest of the app, etc...
-app.on('ready', function() {
+app.on('ready', () => {
 });
 ```
+
+### `app.setUserActivity(type, userInfo[, webpageURL])` _OS X_
+
+* `type` String - Uniquely identifies the activity. Maps to
+  [`NSUserActivity.activityType`][activity-type].
+* `userInfo` Object - App-specific state to store for use by another device.
+* `webpageURL` String - The webpage to load in a browser if no suitable app is
+  installed on the resuming device. The scheme must be `http` or `https`.
+
+Creates an `NSUserActivity` and sets it as the current activity. The activity
+is eligible for [Handoff][handoff] to another device afterward.
+
+### `app.getCurrentActivityType()` _OS X_
+
+Returns the type of the currently running activity.
 
 ### `app.setAppUserModelId(id)` _Windows_
 
@@ -577,6 +605,12 @@ Returns an ID representing the request.
 
 Cancel the bounce of `id`.
 
+### `app.dock.downloadFinished(filePath)` _OS X_
+
+* `filePath` String
+
+Bounces the Downloads stack if the filePath is inside the Downloads folder.
+
 ### `app.dock.setBadge(text)` _OS X_
 
 * `text` String
@@ -612,3 +646,5 @@ Sets the `image` associated with this dock icon.
 [app-user-model-id]: https://msdn.microsoft.com/en-us/library/windows/desktop/dd378459(v=vs.85).aspx
 [CFBundleURLTypes]: https://developer.apple.com/library/ios/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html#//apple_ref/doc/uid/TP40009249-102207-TPXREF115
 [LSCopyDefaultHandlerForURLScheme]: https://developer.apple.com/library/mac/documentation/Carbon/Reference/LaunchServicesReference/#//apple_ref/c/func/LSCopyDefaultHandlerForURLScheme
+[handoff]: https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/Handoff/HandoffFundamentals/HandoffFundamentals.html
+[activity-type]: https://developer.apple.com/library/ios/documentation/Foundation/Reference/NSUserActivity_Class/index.html#//apple_ref/occ/instp/NSUserActivity/activityType

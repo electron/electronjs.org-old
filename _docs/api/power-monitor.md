@@ -1,7 +1,6 @@
 ---
-version: v1.0.1
+version: v1.2.0
 category: API
-title: 'Power Monitor'
 redirect_from:
     - /docs/v0.24.0/api/power-monitor/
     - /docs/v0.25.0/api/power-monitor/
@@ -34,11 +33,11 @@ redirect_from:
     - /docs/v0.37.6/api/power-monitor/
     - /docs/v0.37.7/api/power-monitor/
     - /docs/v0.37.8/api/power-monitor/
-    - /docs/v1.0.0/api/power-monitor/
-    - /docs/v1.0.1/api/power-monitor/
     - /docs/latest/api/power-monitor/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/power-monitor.md'
 excerpt: "Monitor power state changes."
+title: "powerMonitor"
+sort_title: "powermonitor"
 ---
 
 # powerMonitor
@@ -51,8 +50,8 @@ event of the `app` module is emitted.
 For example:
 
 ```javascript
-app.on('ready', function() {
-  require('electron').powerMonitor.on('suspend', function() {
+app.on('ready', () => {
+  require('electron').powerMonitor.on('suspend', () => {
     console.log('The system is going to sleep');
   });
 });

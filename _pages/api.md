@@ -10,7 +10,8 @@ breadcrumb: API
 
 <table class="table table-ruled table-full-width table-with-spacious-first-column">
 
-{% for doc in site.docs %}
+{% assign docs = site.docs | sort: 'sort_title' %}
+{% for doc in docs %}
   {% if doc.category == 'API' %}
     <tr>
       <td><a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a></td>

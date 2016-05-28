@@ -1,7 +1,6 @@
 ---
-version: v1.0.1
+version: v1.2.0
 category: Development
-title: 'Atom Shell vs Node Webkit'
 redirect_from:
     - /docs/v0.24.0/development/atom-shell-vs-node-webkit/
     - /docs/v0.25.0/development/atom-shell-vs-node-webkit/
@@ -34,10 +33,10 @@ redirect_from:
     - /docs/v0.37.6/development/atom-shell-vs-node-webkit/
     - /docs/v0.37.7/development/atom-shell-vs-node-webkit/
     - /docs/v0.37.8/development/atom-shell-vs-node-webkit/
-    - /docs/v1.0.0/development/atom-shell-vs-node-webkit/
-    - /docs/v1.0.1/development/atom-shell-vs-node-webkit/
     - /docs/latest/development/atom-shell-vs-node-webkit/
 source_url: 'https://github.com/electron/electron/blob/master/docs/development/atom-shell-vs-node-webkit.md'
+title: "Technical Differences Between Electron and NW.js (formerly node-webkit)"
+sort_title: "technical differences between electron and nw.js (formerly node-webkit)"
 ---
 
 # Technical Differences Between Electron and NW.js (formerly node-webkit)

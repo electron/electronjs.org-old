@@ -7,7 +7,7 @@ layout: default
     <h1>Electron Releases</h1>
     <p>
       {% for release in site.data.releases %}
-      <a class='releases-tag' href='{{ release.html_url }}'>{{ release.tag_name }}</a>
+      <a class='releases-tag' href='{{ release.html_url }}'>{{ release.version }}</a>
       {% endfor releases %}
     </p>
     <p>

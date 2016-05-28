@@ -1,7 +1,6 @@
 ---
-version: v1.0.1
+version: v1.2.0
 category: Development
-title: 'Build Instructions Linux'
 redirect_from:
     - /docs/v0.24.0/development/build-instructions-linux/
     - /docs/v0.25.0/development/build-instructions-linux/
@@ -34,10 +33,10 @@ redirect_from:
     - /docs/v0.37.6/development/build-instructions-linux/
     - /docs/v0.37.7/development/build-instructions-linux/
     - /docs/v0.37.8/development/build-instructions-linux/
-    - /docs/v1.0.0/development/build-instructions-linux/
-    - /docs/v1.0.1/development/build-instructions-linux/
     - /docs/latest/development/build-instructions-linux/
 source_url: 'https://github.com/electron/electron/blob/master/docs/development/build-instructions-linux.md'
+title: "Build Instructions (Linux)"
+sort_title: "build instructions (linux)"
 ---
 
 # Build Instructions (Linux)
@@ -200,7 +199,7 @@ $ ./script/build.py -c R
 By default Electron is built with prebuilt `clang` binaries provided by Chromium
 project. If for some reason you want to build with the `clang` installed in your
 system, you can call `bootstrap.py` with `--clang_dir=<path>` switch. By passing
-it the build script will assume the clang binaries reside in `<path>/bin/`.
+it the build script will assume the `clang` binaries reside in `<path>/bin/`.
 
 For example if you installed `clang` under `/user/local/bin/clang`:
 

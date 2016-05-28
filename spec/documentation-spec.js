@@ -26,7 +26,7 @@ test('Fetch and write documentation', function (t) {
 
     var config = yaml.load(settings.configFile)
 
-    t.equal(config.latest_version, settings.version, 'Config: Latest version set.')
+    t.equal(config.latest_version, settings.version.substring(1), 'Config: Latest version set.')
 
     var sampleDoc = fs.readFileSync(path.join(settings.targetDir, 'api', 'accelerator.md'))
     var sampleFM = frontmatter.loadFront(sampleDoc)
@@ -46,7 +46,7 @@ test('Fetch and write documentation', function (t) {
 })
 
 function tearDown (settings, config) {
-  config.latest_version = 'v0.0.0'
+  config.latest_version = '0.0.0'
   config.available_versions = ['v0.27.0', 'v0.26.0', 'v0.25.0']
   fs.writeFileSync(settings.configFile, yaml.stringify(config))
 }

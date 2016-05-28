@@ -6,7 +6,7 @@ notifications:
     on_failure: change
 
 node_js:
-  - 0.10
+  - 4
 
 env:
   global:

@@ -1,7 +1,6 @@
 ---
-version: v1.0.1
+version: v1.2.0
 category: API
-title: 'Web Contents'
 redirect_from:
     - /docs/v0.24.0/api/web-contents/
     - /docs/v0.25.0/api/web-contents/
@@ -34,11 +33,11 @@ redirect_from:
     - /docs/v0.37.6/api/web-contents/
     - /docs/v0.37.7/api/web-contents/
     - /docs/v0.37.8/api/web-contents/
-    - /docs/v1.0.0/api/web-contents/
-    - /docs/v1.0.1/api/web-contents/
     - /docs/latest/api/web-contents/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/web-contents.md'
 excerpt: "Render and control web pages."
+title: "webContents"
+sort_title: "webcontents"
 ---
 
 # webContents
@@ -52,12 +51,12 @@ the [`BrowserWindow`](http://electron.atom.io/docs/api/browser-window) object. A
 `webContents` object:
 
 ```javascript
-const BrowserWindow = require('electron').BrowserWindow;
+const {BrowserWindow} = require('electron');
 
-var win = new BrowserWindow({width: 800, height: 1500});
-win.loadURL("http://github.com");
+let win = new BrowserWindow({width: 800, height: 1500});
+win.loadURL('http://github.com');
 
-var webContents = win.webContents;
+let webContents = win.webContents;
 ```
 
 ## Events
@@ -82,6 +81,8 @@ Returns:
 This event is like `did-finish-load` but emitted when the load failed or was
 cancelled, e.g. `window.stop()` is invoked.
 The full list of error codes and their meaning is available [here](https://code.google.com/p/chromium/codesearch#chromium/src/net/base/net_error_list.h).
+Note that redirect responses will emit `errorCode` -3; you may want to ignore
+that error explicitly.
 
 ### Event: 'did-frame-finish-load'
 
@@ -351,6 +352,69 @@ If the `type` parameter is `custom`, the `image` parameter will hold the custom
 cursor image in a `NativeImage`, and the `scale` will hold scaling information
 for the image.
 
+### Event: 'context-menu'
+
+Returns:
+
+* `event` Event
+* `params` Object
+  * `x` Integer - x coodinate
+  * `y` Integer - y coodinate
+  * `linkURL` String - URL of the link that encloses the node the context menu
+    was invoked on.
+  * `linkText` String - Text associated with the link. May be an empty
+    string if the contents of the link are an image.
+  * `pageURL` String - URL of the top level page that the context menu was
+    invoked on.
+  * `frameURL` String - URL of the subframe that the context menu was invoked
+    on.
+  * `srcURL` String - Source URL for the element that the context menu
+    was invoked on. Elements with source URLs are images, audio and video.
+  * `mediaType` String - Type of the node the context menu was invoked on. Can
+    be `none`, `image`, `audio`, `video`, `canvas`, `file` or `plugin`.
+  * `hasImageContent` Boolean - Wether the context menu was invoked on an image
+    which has non-empty contents.
+  * `isEditable` Boolean - Wether the context is editable.
+  * `selectionText` String - Text of the selection that the context menu was
+    invoked on.
+  * `titleText` String - Title or alt text of the selection that the context
+    was invoked on.
+  * `misspelledWord` String - The misspelled word under the cursor, if any.
+  * `frameCharset` String - The character encoding of the frame on which the
+    menu was invoked.
+  * `inputFieldType` String - If the context menu was invoked on an input
+    field, the type of that field. Possible values are `none`, `plainText`,
+    `password`, `other`.
+  * `menuSourceType` String - Input source that invoked the context menu.
+    Can be `none`, `mouse`, `keyboard`, `touch`, `touchMenu`.
+  * `mediaFlags` Object - The flags for the media element the context menu was
+    invoked on. See more about this below.
+  * `editFlags` Object - These flags indicate wether the renderer believes it is
+    able to perform the corresponding action. See more about this below.
+
+The `mediaFlags` is an object with the following properties:
+  * `inError` Boolean - Wether the media element has crashed.
+  * `isPaused` Boolean - Wether the media element is paused.
+  * `isMuted` Boolean - Wether the media element is muted.
+  * `hasAudio` Boolean - Wether the media element has audio.
+  * `isLooping` Boolean - Wether the media element is looping.
+  * `isControlsVisible` Boolean - Wether the media element's controls are
+    visible.
+  * `canToggleControls` Boolean - Wether the media element's controls are
+    toggleable.
+  * `canRotate` Boolean - Wether the media element can be rotated.
+
+The `editFlags` is an object with the following properties:
+  * `canUndo` Boolean - Wether the renderer believes it can undo.
+  * `canRedo` Boolean - Wether the renderer believes it can redo.
+  * `canCut` Boolean - Wether the renderer believes it can cut.
+  * `canCopy` Boolean - Wether the renderer believes it can copy
+  * `canPaste` Boolean - Wether the renderer believes it can paste.
+  * `canDelete` Boolean - Wether the renderer believes it can delete.
+  * `canSelectAll` Boolean - Wether the renderer believes it can select all.
+
+Emitted when there is a new context menu that needs to be handled.
+
 ## Instance Methods
 
 The `webContents` object has the following instance methods:
@@ -368,8 +432,8 @@ e.g. the `http://` or `file://`. If the load should bypass http cache then
 use the `pragma` header to achieve it.
 
 ```javascript
-const options = {"extraHeaders" : "pragma: no-cache\n"}
-webContents.loadURL(url, options)
+const options = {extraHeaders: 'pragma: no-cache\n'};
+webContents.loadURL(url, options);
 ```
 
 ### `webContents.downloadURL(url)`
@@ -384,10 +448,10 @@ Initiates a download of the resource at `url` without navigating. The
 Returns URL of the current web page.
 
 ```javascript
-var win = new BrowserWindow({width: 800, height: 600});
-win.loadURL("http://github.com");
+let win = new BrowserWindow({width: 800, height: 600});
+win.loadURL('http://github.com');
 
-var currentURL = win.webContents.getURL();
+let currentURL = win.webContents.getURL();
 ```
 
 ### `webContents.getTitle()`
@@ -587,12 +651,12 @@ the request can be obtained by subscribing to
 Stops any `findInPage` request for the `webContents` with the provided `action`.
 
 ```javascript
-webContents.on('found-in-page', function(event, result) {
+webContents.on('found-in-page', (event, result) => {
   if (result.finalUpdate)
-    webContents.stopFindInPage("clearSelection");
+    webContents.stopFindInPage('clearSelection');
 });
 
-const requestId = webContents.findInPage("api");
+const requestId = webContents.findInPage('api');
 ```
 
 ### `webContents.hasServiceWorker(callback)`
@@ -657,22 +721,22 @@ By default, an empty `options` will be regarded as:
 ```
 
 ```javascript
-const BrowserWindow = require('electron').BrowserWindow;
+const {BrowserWindow} = require('electron');
 const fs = require('fs');
 
-var win = new BrowserWindow({width: 800, height: 600});
-win.loadURL("http://github.com");
+let win = new BrowserWindow({width: 800, height: 600});
+win.loadURL('http://github.com');
 
-win.webContents.on("did-finish-load", function() {
+win.webContents.on('did-finish-load', () => {
   // Use default printing options
-  win.webContents.printToPDF({}, function(error, data) {
+  win.webContents.printToPDF({}, (error, data) => {
     if (error) throw error;
-    fs.writeFile("/tmp/print.pdf", data, function(error) {
+    fs.writeFile('/tmp/print.pdf', data, (error) => {
       if (error)
         throw error;
-      console.log("Write PDF successfully.");
-    })
-  })
+      console.log('Write PDF successfully.');
+    });
+  });
 });
 ```
 
@@ -684,8 +748,8 @@ Adds the specified path to DevTools workspace. Must be used after DevTools
 creation:
 
 ```javascript
-mainWindow.webContents.on('devtools-opened', function() {
-  mainWindow.webContents.addWorkSpace(__dirname);
+win.webContents.on('devtools-opened', () => {
+  win.webContents.addWorkSpace(__dirname);
 });
 ```
 
@@ -747,12 +811,13 @@ An example of sending messages from the main process to the renderer process:
 
 ```javascript
 // In the main process.
-var window = null;
-app.on('ready', function() {
-  window = new BrowserWindow({width: 800, height: 600});
-  window.loadURL('file://' + __dirname + '/index.html');
-  window.webContents.on('did-finish-load', function() {
-    window.webContents.send('ping', 'whoooooooh!');
+let win = null;
+
+app.on('ready', () => {
+  win = new BrowserWindow({width: 800, height: 600});
+  win.loadURL(`file://${__dirname}/index.html`);
+  win.webContents.on('did-finish-load', () => {
+    win.webContents.send('ping', 'whoooooooh!');
   });
 });
 ```
@@ -762,7 +827,7 @@ app.on('ready', function() {
 <html>
 <body>
   <script>
-    require('electron').ipcRenderer.on('ping', function(event, message) {
+    require('electron').ipcRenderer.on('ping', (event, message) => {
       console.log(message);  // Prints "whoooooooh!"
     });
   </script>
@@ -870,7 +935,7 @@ End subscribing for frame presentation events.
   * `HTMLOnly` - Save only the HTML of the page.
   * `HTMLComplete` - Save complete-html page.
   * `MHTML` - Save complete-html page as MHTML.
-* `callback` Function - `function(error) {}`.
+* `callback` Function - `(error) => {}`.
   * `error` Error
 
 Returns true if the process of saving page has been initiated successfully.
@@ -878,10 +943,10 @@ Returns true if the process of saving page has been initiated successfully.
 ```javascript
 win.loadURL('https://github.com');
 
-win.webContents.on('did-finish-load', function() {
-  win.webContents.savePage('/tmp/test.html', 'HTMLComplete', function(error) {
+win.webContents.on('did-finish-load', () => {
+  win.webContents.savePage('/tmp/test.html', 'HTMLComplete', (error) => {
     if (!error)
-      console.log("Save page successfully");
+      console.log('Save page successfully');
   });
 });
 ```
@@ -889,6 +954,10 @@ win.webContents.on('did-finish-load', function() {
 ## Instance Properties
 
 `WebContents` objects also have the following properties:
+
+### `webContents.id`
+
+The unique ID of this WebContents.
 
 ### `webContents.session`
 
@@ -911,23 +980,23 @@ Debugger API serves as an alternate transport for [remote debugging protocol][rd
 
 ```javascript
 try {
-  win.webContents.debugger.attach("1.1");
+  win.webContents.debugger.attach('1.1');
 } catch(err) {
-  console.log("Debugger attach failed : ", err);
+  console.log('Debugger attach failed : ', err);
 };
 
-win.webContents.debugger.on('detach', function(event, reason) {
-  console.log("Debugger detached due to : ", reason);
+win.webContents.debugger.on('detach', (event, reason) => {
+  console.log('Debugger detached due to : ', reason);
 });
 
-win.webContents.debugger.on('message', function(event, method, params) {
-  if (method == "Network.requestWillBeSent") {
-    if (params.request.url == "https://www.github.com")
+win.webContents.debugger.on('message', (event, method, params) => {
+  if (method === 'Network.requestWillBeSent') {
+    if (params.request.url === 'https://www.github.com')
       win.webContents.debugger.detach();
   }
-})
+});
 
-win.webContents.debugger.sendCommand("Network.enable");
+win.webContents.debugger.sendCommand('Network.enable');
 ```
 
 #### `webContents.debugger.attach([protocolVersion])`

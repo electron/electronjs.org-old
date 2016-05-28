@@ -1,6 +1,9 @@
 # electron.atom.io
 
-The [website](http://electron.atom.io) for [Electron](https://github.com/electron/electron) (formerly known as Atom-Shell).
+The [website](http://electron.atom.io) for [Electron](https://github.com/electron/electron): [electron.atom.io](http://electron.atom.io).
+
+- **[Add a project to electron.atom.io/apps](CONTRIBUTING.md#adding-an-app-or-project-to-the-site)**
+- **[Add a meetup to electron.atom.io/community](CONTRIBUTING.md#adding-a-meetup-to-the-site)**
 
 ### Build
 
@@ -12,14 +15,14 @@ Follow these steps to copy this repository to your computer and build the site:
 git clone https://github.com/electron/electron.atom.io.git
 cd electron.atom.io
 npm run bootstrap
-npm run server
+npm start
 ```
 
 ### CLI for Docs, Releases & Version Information
 
-This site has versioned documentation, recent release change logs and the current versions of Node.js, Chromium and V8 that are used in Electron.
+This site contains the latest version of Electron docs, recent release change logs and the current versions of Node.js, Chromium and V8 that are used in Electron.
 
-Each of these are updated upon a **minor** release of Electron. They're done so with the command line interface detailed below.
+Each of these are updated here when a new Electron is released. They're done so with the command line interface detailed below.
 
  You'll need [Node.js](http://www.nodejs.org/download) installed on your system in order to use the CLI. Then you can install the dependencies:
 
@@ -28,9 +31,11 @@ $ cd electron.atom.io
 $ npm install
 ```
 
-#### Versioned Documentation
+#### Documentation
 
-Versions of Electron documentation are fetched from the `electron/electron` repository's `docs` directory. To fetch documentation at a specific version:
+Versions of Electron documentation are fetched from the `electron/electron` repository's `docs` directory. The site contains the latest version of docs and links to older versions of the docs in the repository.
+
+To fetch documentation for a specific version:
 
 ```bash
 $ script/docs <version> [options]
@@ -39,7 +44,7 @@ $ script/docs v0.26.0 --latest
 ```
 Options:
 
-`--latest` Set this version as the latest version of documentation
+`--latest` Set this version as the latest version of Electron in `_config.yml` and replace the existing documentation.
 
 #### Release Notes
 
@@ -51,7 +56,7 @@ $ script/releases
 
 #### Updating Node.js, Chromium and V8 Versions in use in Electron
 
-To update the `_config.yml` in this site with the versions of Node.js, Chromium and V8 that the latest [minor release] of Electron is using run:
+To update the `_config.yml` in this site with the versions of Node.js, Chromium and V8 that the latest release of Electron is using run:
 
 ```bash
 $ script/versions

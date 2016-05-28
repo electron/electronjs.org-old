@@ -1,7 +1,6 @@
 ---
-version: v1.0.1
+version: v1.2.0
 category: API
-title: 'System Preferences'
 redirect_from:
     - /docs/v0.24.0/api/system-preferences/
     - /docs/v0.25.0/api/system-preferences/
@@ -34,11 +33,11 @@ redirect_from:
     - /docs/v0.37.6/api/system-preferences/
     - /docs/v0.37.7/api/system-preferences/
     - /docs/v0.37.8/api/system-preferences/
-    - /docs/v1.0.0/api/system-preferences/
-    - /docs/v1.0.1/api/system-preferences/
     - /docs/latest/api/system-preferences/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/system-preferences.md'
 excerpt: "Get system preferences."
+title: "systemPreferences"
+sort_title: "systempreferences"
 ---
 
 # systemPreferences
@@ -56,12 +55,16 @@ This method returns `true` if the system is in Dark Mode, and `false` otherwise.
 * `event` String
 * `callback` Function
 
-Subscribes to native notifications of OS X, `callback` will be called when the
-corresponding `event` happens. The `id` of the subscriber is returned, which can
-be used to unsubscribe the `event`.
+Subscribes to native notifications of OS X, `callback` will be called with
+`callback(event, userInfo)` when the corresponding `event` happens. The
+`userInfo` is an Object that contains the user information dictionary sent
+along with the notification.
+
+The `id` of the subscriber is returned, which can be used to unsubscribe the
+`event`.
 
 Under the hood this API subscribes to `NSDistributedNotificationCenter`,
-possible values of `event` are:
+example values of `event` are:
 
 * `AppleInterfaceThemeChangedNotification`
 * `AppleAquaColorVariantChanged`

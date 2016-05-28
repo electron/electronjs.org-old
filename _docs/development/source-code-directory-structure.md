@@ -1,7 +1,6 @@
 ---
-version: v1.0.1
+version: v1.2.0
 category: Development
-title: 'Source Code Directory Structure'
 redirect_from:
     - /docs/v0.24.0/development/source-code-directory-structure/
     - /docs/v0.25.0/development/source-code-directory-structure/
@@ -34,10 +33,10 @@ redirect_from:
     - /docs/v0.37.6/development/source-code-directory-structure/
     - /docs/v0.37.7/development/source-code-directory-structure/
     - /docs/v0.37.8/development/source-code-directory-structure/
-    - /docs/v1.0.0/development/source-code-directory-structure/
-    - /docs/v1.0.1/development/source-code-directory-structure/
     - /docs/latest/development/source-code-directory-structure/
 source_url: 'https://github.com/electron/electron/blob/master/docs/development/source-code-directory-structure.md'
+title: "Source Code Directory Structure"
+sort_title: "source code directory structure"
 ---
 
 # Source Code Directory Structure

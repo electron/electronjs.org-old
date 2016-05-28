@@ -14,9 +14,19 @@ The following is a set of guidelines for contributing to electron.atom.io on Git
 
 ## Adding an app or project to the site
 
-If you have an Electron application or project you'd like to see added, please open a pull request!
+If you have an Electron application or project you'd like to see added, please
+open a pull request.
 
-Add your app to the list by editing [_data/apps.yml](/_data/apps.yml). **Please add your app at the bottom of the list**.  The only required fields are `name`, `website`, and `icon`. Everything else is optional, but recommended. If your app doesn't have a website, you can specify a `repository` URL instead.
+Add your app to the list by editing [_data/apps.yml](/_data/apps.yml).
+
+**Please add your app at the bottom of the list**.
+
+* The required fields are `name`, `website`, and `icon`. Everything else is
+  optional, but recommended.
+* If your app doesn't have a website, you can specify a `repository` URL instead.
+* Your `icon` must be `256x256` pixels in size.
+* Your `icon` must be a [PNG](https://en.wikipedia.org/wiki/Portable_Network_Graphics).
+* Put your `icon` in the `images/apps` folder.
 
 ```yml
 -
@@ -30,6 +40,22 @@ Add your app to the list by editing [_data/apps.yml](/_data/apps.yml). **Please 
   license: "MIT"
   icon: "lowercase-and-url-friendly.png"
 ```
+
+## Adding a meetup to the site
+
+If you want to add a meetup to the community site please open a pull request.
+
+Add the meetup to the list by editing [_data/meetups.yml](/_data/meetups.yml).
+
+```yml
+-
+  name: Name of Group
+  location: City, State (if applicable)
+  country: Country
+  href: Link to meetup's site
+```
+
+**Please add the meetup at the bottom of the list**.
 
 ## Documentation
 

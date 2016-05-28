@@ -1,7 +1,6 @@
 ---
-version: v1.0.1
+version: v1.2.0
 category: API
-title: Accelerator
 redirect_from:
     - /docs/v0.24.0/api/accelerator/
     - /docs/v0.25.0/api/accelerator/
@@ -34,11 +33,11 @@ redirect_from:
     - /docs/v0.37.6/api/accelerator/
     - /docs/v0.37.7/api/accelerator/
     - /docs/v0.37.8/api/accelerator/
-    - /docs/v1.0.0/api/accelerator/
-    - /docs/v1.0.1/api/accelerator/
     - /docs/latest/api/accelerator/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/accelerator.md'
 excerpt: "Define keyboard shortcuts."
+title: "Accelerator"
+sort_title: "accelerator"
 ---
 
 # Accelerator
@@ -84,6 +83,7 @@ The `Super` key is mapped to the `Windows` key on Windows and Linux and
 * Punctuations like `~`, `!`, `@`, `#`, `$`, etc.
 * `Plus`
 * `Space`
+* `Tab`
 * `Backspace`
 * `Delete`
 * `Insert`

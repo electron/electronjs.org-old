@@ -1,7 +1,6 @@
 ---
-version: v1.0.1
+version: v1.2.0
 category: API
-title: Session
 redirect_from:
     - /docs/v0.24.0/api/session/
     - /docs/v0.25.0/api/session/
@@ -34,11 +33,11 @@ redirect_from:
     - /docs/v0.37.6/api/session/
     - /docs/v0.37.7/api/session/
     - /docs/v0.37.8/api/session/
-    - /docs/v1.0.0/api/session/
-    - /docs/v1.0.1/api/session/
     - /docs/latest/api/session/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/session.md'
 excerpt: "Manage browser sessions, cookies, cache, proxy settings, etc."
+title: "session"
+sort_title: "session"
 ---
 
 # session
@@ -52,12 +51,12 @@ property of [`webContents`](http://electron.atom.io/docs/api/web-contents) which
 [`BrowserWindow`](http://electron.atom.io/docs/api/browser-window).
 
 ```javascript
-const BrowserWindow = require('electron').BrowserWindow;
+const {BrowserWindow} = require('electron');
 
-var win = new BrowserWindow({ width: 800, height: 600 });
-win.loadURL("http://github.com");
+let win = new BrowserWindow({width: 800, height: 600});
+win.loadURL('http://github.com');
 
-var ses = win.webContents.session;
+const ses = win.webContents.session;
 ```
 
 ## Methods
@@ -90,7 +89,7 @@ You can create a `Session` object in the `session` module:
 ```javascript
 const session = require('electron').session;
 
-var ses = session.fromPartition('persist:name');
+const ses = session.fromPartition('persist:name');
 ```
 
 ### Instance Events
@@ -109,9 +108,9 @@ Calling `event.preventDefault()` will cancel the download and `item` will not be
 available from next tick of the process.
 
 ```javascript
-session.defaultSession.on('will-download', function(event, item, webContents) {
+session.defaultSession.on('will-download', (event, item, webContents) => {
   event.preventDefault();
-  require('request')(item.getURL(), function(data) {
+  require('request')(item.getURL(), (data) => {
     require('fs').writeFileSync('/somewhere', data);
   });
 });
@@ -127,19 +126,19 @@ The `cookies` gives you ability to query and modify cookies. For example:
 
 ```javascript
 // Query all cookies.
-session.defaultSession.cookies.get({}, function(error, cookies) {
+session.defaultSession.cookies.get({}, (error, cookies) => {
   console.log(cookies);
 });
 
 // Query all cookies associated with a specific url.
-session.defaultSession.cookies.get({ url : "http://www.github.com" }, function(error, cookies) {
+session.defaultSession.cookies.get({url: 'http://www.github.com'}, (error, cookies) => {
   console.log(cookies);
 });
 
 // Set a cookie with the given cookie data;
 // may overwrite equivalent cookies if they exist.
-var cookie = { url : "http://www.github.com", name : "dummy_name", value : "dummy" };
-session.defaultSession.cookies.set(cookie, function(error) {
+const cookie = {url: 'http://www.github.com', name: 'dummy_name', value: 'dummy'};
+session.defaultSession.cookies.set(cookie, (error) => {
   if (error)
     console.error(error);
 });
@@ -180,20 +179,21 @@ with `callback(error, cookies)` on complete.
 #### `ses.cookies.set(details, callback)`
 
 * `details` Object
-  * `url` String - Retrieves cookies which are associated with `url`
+  * `url` String - The url to associate the cookie with.
   * `name` String - The name of the cookie. Empty by default if omitted.
   * `value` String - The value of the cookie. Empty by default if omitted.
   * `domain` String - The domain of the cookie. Empty by default if omitted.
   * `path` String - The path of the cookie. Empty by default if omitted.
   * `secure` Boolean - Whether the cookie should be marked as Secure. Defaults to
     false.
-  * `session` Boolean - Whether the cookie should be marked as HttpOnly. Defaults
+  * `session` Boolean - Whether the cookie should be marked as HTTP only. Defaults
     to false.
   * `expirationDate` Double -	The expiration date of the cookie as the number of
-    seconds since the UNIX epoch. If omitted, the cookie becomes a session cookie.
+    seconds since the UNIX epoch. If omitted then the cookie becomes a session
+    cookie and will not be retained between sessions.
 * `callback` Function
 
-Sets the cookie with `details`, `callback` will be called with `callback(error)`
+Sets a cookie with `details`, `callback` will be called with `callback(error)`
 on complete.
 
 #### `ses.cookies.remove(url, name, callback)`
@@ -328,8 +328,8 @@ Calling `setCertificateVerifyProc(null)` will revert back to default certificate
 verify proc.
 
 ```javascript
-myWindow.webContents.session.setCertificateVerifyProc(function(hostname, cert, callback) {
-  if (hostname == 'github.com')
+myWindow.webContents.session.setCertificateVerifyProc((hostname, cert, callback) => {
+  if (hostname === 'github.com')
     callback(true);
   else
     callback(false);
@@ -348,9 +348,9 @@ Sets the handler which can be used to respond to permission requests for the `se
 Calling `callback(true)` will allow the permission and `callback(false)` will reject it.
 
 ```javascript
-session.fromPartition(partition).setPermissionRequestHandler(function(webContents, permission, callback) {
+session.fromPartition(partition).setPermissionRequestHandler((webContents, permission, callback) => {
   if (webContents.getURL() === host) {
-    if (permission == "notifications") {
+    if (permission === 'notifications') {
       callback(false); // denied.
       return;
     }
@@ -365,6 +365,23 @@ session.fromPartition(partition).setPermissionRequestHandler(function(webContent
 * `callback` Function (optional) - Called when operation is done.
 
 Clears the host resolver cache.
+
+#### `ses.allowNTLMCredentialsForDomains(domains)`
+
+* `domains` String - A comma-seperated list of servers for which
+  integrated authentication is enabled.
+
+Dynamically sets whether to always send credentials for HTTP NTLM or Negotiate
+authentication.
+
+```javascript
+// consider any url ending with `example.com`, `foobar.com`, `baz`
+// for integrated authentication.
+session.defaultSession.allowNTLMCredentialsForDomains('*example.com, *foobar.com, *baz')
+
+// consider all urls for integrated authentication.
+session.defaultSession.allowNTLMCredentialsForDomains('*')
+```
 
 #### `ses.webRequest`
 
@@ -385,11 +402,11 @@ called with an `response` object when `listener` has done its work.
 
 ```javascript
 // Modify the user agent for all requests to the following urls.
-var filter = {
-  urls: ["https://*.github.com/*", "*://electron.github.io"]
+const filter = {
+  urls: ['https://*.github.com/*', '*://electron.github.io']
 };
 
-session.defaultSession.webRequest.onBeforeSendHeaders(filter, function(details, callback) {
+session.defaultSession.webRequest.onBeforeSendHeaders(filter, (details, callback) => {
   details.requestHeaders['User-Agent'] = "MyAgent";
   callback({cancel: false, requestHeaders: details.requestHeaders});
 });

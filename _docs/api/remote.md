@@ -1,7 +1,6 @@
 ---
-version: v1.0.1
+version: v1.2.0
 category: API
-title: Remote
 redirect_from:
     - /docs/v0.24.0/api/remote/
     - /docs/v0.25.0/api/remote/
@@ -34,11 +33,11 @@ redirect_from:
     - /docs/v0.37.6/api/remote/
     - /docs/v0.37.7/api/remote/
     - /docs/v0.37.8/api/remote/
-    - /docs/v1.0.0/api/remote/
-    - /docs/v1.0.1/api/remote/
     - /docs/latest/api/remote/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/remote.md'
 excerpt: "Use main process modules from the renderer process."
+title: "remote"
+sort_title: "remote"
 ---
 
 # remote
@@ -57,10 +56,9 @@ similar to Java's [RMI][rmi]. An example of creating a browser window from a
 renderer process:
 
 ```javascript
-const remote = require('electron').remote;
-const BrowserWindow = remote.BrowserWindow;
+const {BrowserWindow} = require('electron').remote;
 
-var win = new BrowserWindow({ width: 800, height: 600 });
+let win = new BrowserWindow({width: 800, height: 600});
 win.loadURL('https://github.com');
 ```
 
@@ -81,7 +79,8 @@ process. Instead, it created a `BrowserWindow` object in the main process and
 returned the corresponding remote object in the renderer process, namely the
 `win` object.
 
-Please note that only [enumerable properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties) are accessible via remote.
+Please note that only [enumerable properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties) which are present when the remote object is first referenced are
+accessible via remote.
 
 ## Lifetime of Remote Objects
 
@@ -112,28 +111,24 @@ For instance you can't use a function from the renderer process in an
 
 ```javascript
 // main process mapNumbers.js
-exports.withRendererCallback = function(mapper) {
+exports.withRendererCallback = (mapper) => {
   return [1,2,3].map(mapper);
-}
+};
 
-exports.withLocalCallback = function() {
-  return exports.mapNumbers(function(x) {
-    return x + 1;
-  });
-}
+exports.withLocalCallback = () => {
+  return exports.mapNumbers(x => x + 1);
+};
 ```
 
 ```javascript
 // renderer process
-var mapNumbers = require("remote").require("./mapNumbers");
+const mapNumbers = require('remote').require('./mapNumbers');
 
-var withRendererCb = mapNumbers.withRendererCallback(function(x) {
-  return x + 1;
-})
+const withRendererCb = mapNumbers.withRendererCallback(x => x + 1);
 
-var withLocalCb = mapNumbers.withLocalCallback()
+const withLocalCb = mapNumbers.withLocalCallback();
 
-console.log(withRendererCb, withLocalCb) // [true, true, true], [2, 3, 4]
+console.log(withRendererCb, withLocalCb); // [true, true, true], [2, 3, 4]
 ```
 
 As you can see, the renderer callback's synchronous return value was not as
@@ -147,7 +142,7 @@ For example, the following code seems innocent at first glance. It installs a
 callback for the `close` event on a remote object:
 
 ```javascript
-remote.getCurrentWindow().on('close', function() {
+remote.getCurrentWindow().on('close', () => {
   // blabla...
 });
 ```

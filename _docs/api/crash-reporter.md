@@ -1,7 +1,6 @@
 ---
-version: v1.0.1
+version: v1.2.0
 category: API
-title: 'Crash Reporter'
 redirect_from:
     - /docs/v0.24.0/api/crash-reporter/
     - /docs/v0.25.0/api/crash-reporter/
@@ -34,11 +33,11 @@ redirect_from:
     - /docs/v0.37.6/api/crash-reporter/
     - /docs/v0.37.7/api/crash-reporter/
     - /docs/v0.37.8/api/crash-reporter/
-    - /docs/v1.0.0/api/crash-reporter/
-    - /docs/v1.0.1/api/crash-reporter/
     - /docs/latest/api/crash-reporter/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/crash-reporter.md'
 excerpt: "Submit crash reports to a remote server."
+title: "crashReporter"
+sort_title: "crashreporter"
 ---
 
 # crashReporter
@@ -49,7 +48,7 @@ The following is an example of automatically submitting a crash report to a
 remote server:
 
 ```javascript
-const crashReporter = require('electron').crashReporter;
+const {crashReporter} = require('electron');
 
 crashReporter.start({
   productName: 'YourName',

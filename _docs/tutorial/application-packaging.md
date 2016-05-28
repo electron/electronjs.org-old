@@ -1,7 +1,6 @@
 ---
-version: v1.0.1
+version: v1.2.0
 category: Tutorial
-title: 'Application Packaging'
 redirect_from:
     - /docs/v0.24.0/tutorial/application-packaging/
     - /docs/v0.25.0/tutorial/application-packaging/
@@ -34,10 +33,10 @@ redirect_from:
     - /docs/v0.37.6/tutorial/application-packaging/
     - /docs/v0.37.7/tutorial/application-packaging/
     - /docs/v0.37.8/tutorial/application-packaging/
-    - /docs/v1.0.0/tutorial/application-packaging/
-    - /docs/v1.0.1/tutorial/application-packaging/
     - /docs/latest/tutorial/application-packaging/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/application-packaging.md'
+title: "Application Packaging"
+sort_title: "application packaging"
 ---
 
 # Application Packaging
@@ -113,8 +112,8 @@ require('/path/to/example.asar/dir/module.js');
 You can also display a web page in an `asar` archive with `BrowserWindow`:
 
 ```javascript
-const BrowserWindow = require('electron').BrowserWindow;
-var win = new BrowserWindow({width: 800, height: 600});
+const {BrowserWindow} = require('electron');
+let win = new BrowserWindow({width: 800, height: 600});
 win.loadURL('file:///path/to/example.asar/static/index.html');
 ```
 
@@ -127,8 +126,8 @@ For example, to get a file with `$.get`:
 
 ```html
 <script>
-var $ = require('./jquery.min.js');
-$.get('file:///path/to/example.asar/file.txt', function(data) {
+let $ = require('./jquery.min.js');
+$.get('file:///path/to/example.asar/file.txt', (data) => {
   console.log(data);
 });
 </script>
@@ -141,7 +140,7 @@ content of `asar` archive as file. For this purpose you can use the built-in
 `original-fs` module which provides original `fs` APIs without `asar` support:
 
 ```javascript
-var originalFs = require('original-fs');
+const originalFs = require('original-fs');
 originalFs.readFileSync('/path/to/example.asar');
 ```
 

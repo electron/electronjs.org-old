@@ -1,7 +1,6 @@
 ---
-version: v1.0.1
+version: v1.2.0
 category: API
-title: Tray
 redirect_from:
     - /docs/v0.24.0/api/tray/
     - /docs/v0.25.0/api/tray/
@@ -34,11 +33,11 @@ redirect_from:
     - /docs/v0.37.6/api/tray/
     - /docs/v0.37.7/api/tray/
     - /docs/v0.37.8/api/tray/
-    - /docs/v1.0.0/api/tray/
-    - /docs/v1.0.1/api/tray/
     - /docs/latest/api/tray/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/tray.md'
 excerpt: "Add icons and context menus to the system&apos;s notification area."
+title: "Tray"
+sort_title: "tray"
 ---
 
 # Tray
@@ -46,24 +45,20 @@ excerpt: "Add icons and context menus to the system&apos;s notification area."
 > Add icons and context menus to the system's notification area.
 
 ```javascript
-const electron = require('electron');
-const app = electron.app;
-const Menu = electron.Menu;
-const Tray = electron.Tray;
+const {app, Menu, Tray} = require('electron');
 
-var appIcon = null;
-app.on('ready', function(){
+let appIcon = null;
+app.on('ready', () => {
   appIcon = new Tray('/path/to/my/icon');
-  var contextMenu = Menu.buildFromTemplate([
-    { label: 'Item1', type: 'radio' },
-    { label: 'Item2', type: 'radio' },
-    { label: 'Item3', type: 'radio', checked: true },
-    { label: 'Item4', type: 'radio' }
+  const contextMenu = Menu.buildFromTemplate([
+    {label: 'Item1', type: 'radio'},
+    {label: 'Item2', type: 'radio'},
+    {label: 'Item3', type: 'radio', checked: true},
+    {label: 'Item4', type: 'radio'}
   ]);
   appIcon.setToolTip('This is my application.');
   appIcon.setContextMenu(contextMenu);
 });
-
 ```
 
 __Platform limitations:__
@@ -76,6 +71,7 @@ __Platform limitations:__
 * When app indicator is used on Linux, the `click` event is ignored.
 * On Linux in order for changes made to individual `MenuItem`s to take effect,
   you have to call `setContextMenu` again. For example:
+* On Windows it is recommended to use `ICO` icons to get best visual effects.
 
 ```javascript
 contextMenu.items[2].checked = false;

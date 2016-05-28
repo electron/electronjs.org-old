@@ -1,7 +1,6 @@
 ---
-version: v1.0.1
+version: v1.2.0
 category: Development
-title: 'Coding Style'
 redirect_from:
     - /docs/v0.24.0/development/coding-style/
     - /docs/v0.25.0/development/coding-style/
@@ -34,10 +33,10 @@ redirect_from:
     - /docs/v0.37.6/development/coding-style/
     - /docs/v0.37.7/development/coding-style/
     - /docs/v0.37.8/development/coding-style/
-    - /docs/v1.0.0/development/coding-style/
-    - /docs/v1.0.1/development/coding-style/
     - /docs/latest/development/coding-style/
 source_url: 'https://github.com/electron/electron/blob/master/docs/development/coding-style.md'
+title: "Coding Style"
+sort_title: "coding style"
 ---
 
 # Coding Style

@@ -1,7 +1,6 @@
 ---
-version: v1.0.1
+version: v1.2.0
 category: Tutorial
-title: 'Supported Platforms'
 redirect_from:
     - /docs/v0.24.0/tutorial/supported-platforms/
     - /docs/v0.25.0/tutorial/supported-platforms/
@@ -34,10 +33,10 @@ redirect_from:
     - /docs/v0.37.6/tutorial/supported-platforms/
     - /docs/v0.37.7/tutorial/supported-platforms/
     - /docs/v0.37.8/tutorial/supported-platforms/
-    - /docs/v1.0.0/tutorial/supported-platforms/
-    - /docs/v1.0.1/tutorial/supported-platforms/
     - /docs/latest/tutorial/supported-platforms/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/supported-platforms.md'
+title: "Supported Platforms"
+sort_title: "supported platforms"
 ---
 
 # Supported Platforms

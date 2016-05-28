@@ -15,11 +15,11 @@ var originalContent = fs.readFileSync(originalFile).toString()
 var finalFile = 'spec/fixtures/test-set-docs/tutorial/quick-start.md'
 
 var expectedLinks = [
-  '[ipc](http://electron.atom.io/docs/v0.27.0/api/ipc-renderer)',
-  '[remote](http://electron.atom.io/docs/v0.27.0/api/remote)',
-  '[Application distribution](http://electron.atom.io/docs/v0.27.0/tutorial/application-distribution)',
+  '[ipc](http://electron.atom.io/docs/api/ipc-renderer)',
+  '[remote](http://electron.atom.io/docs/api/remote)',
+  '[Application distribution](http://electron.atom.io/docs/tutorial/application-distribution)',
   '[here](https://github.com/electron/electron/releases)',
-  '[tray-balloon]: http://electron.atom.io/docs/v0.27.0/api/tray#traydisplayballoonoptions-windows',
+  '[tray-balloon]: http://electron.atom.io/docs/api/tray#traydisplayballoonoptions-windows',
   '[app-user-model-id]: https://msdn.microsoft.com/en-us/library/windows/desktop/dd378459(v=vs.85).aspx'
   ]
 

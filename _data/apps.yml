@@ -41,7 +41,7 @@
   icon: "hive.png"
 -
   name: "Avocode"
-  description: ""
+  description: "One workspace open to all designers and developers"
   website: "http://avocode.com"
   repository: ""
   keywords: []
@@ -49,7 +49,7 @@
   icon: "avocode.png"
 -
   name: "Mapbox"
-  description: ""
+  description: "Design and publish beautiful maps"
   website: "https://www.mapbox.com"
   repository: ""
   keywords: []
@@ -58,7 +58,7 @@
   disabled: true # https://twitter.com/zeke/status/720789437945221120
 -
   name: "Nuclide"
-  description: ""
+  description: "A unified developer experience for web and mobile development"
   website: "http://nuclide.io"
   repository: ""
   keywords: []
@@ -66,7 +66,7 @@
   icon: "nuclide.png"
 -
   name: "Kitematic"
-  description: ""
+  description: "Run containers through a simple, yet powerful graphical user interface"
   website: "https://kitematic.com"
   repository: ""
   keywords: []
@@ -75,7 +75,7 @@
   featuredOnHomepage: true
 -
   name: "Pixate"
-  description: ""
+  description: "Change the way you design with the most powerful prototyping platform on the planet"
   website: "http://www.pixate.com"
   repository: ""
   keywords: []
@@ -83,7 +83,7 @@
   icon: "pixate.png"
 -
   name: "Wagon"
-  description: ""
+  description: "SQL analytis together: Write queries, visualize data, and share charts with your team"
   website: "http://www.wagonhq.com"
   repository: ""
   keywords: []
@@ -92,23 +92,23 @@
   featuredOnHomepage: true
 -
   name: "Particle Dev"
-  description: ""
+  description: "A professional IDE for Particle"
   website: "https://www.particle.io/dev"
   repository: ""
   keywords: []
   license: ""
   icon: "particle.png"
 -
-  name: "Fireball"
-  description: ""
-  website: "http://fireball-x.com/en"
-  repository: ""
+  name: "Cocos Creator"
+  description: "Game development tools"
+  website: "http://www.cocos2d-x.org"
+  repository: "https://github.com/cocos-creator/engine"
   keywords: []
   license: ""
-  icon: "fireball.png"
+  icon: "cocoscreator.png"
 -
   name: "PopKey"
-  description: ""
+  description: "The perfect GIF right at your fingertips"
   website: "http://popkey.co/send-gifs"
   repository: ""
   keywords: []
@@ -116,7 +116,7 @@
   icon: "pop-key.png"
 -
   name: "JIBO"
-  description: ""
+  description: "The world's first social robot"
   website: "https://www.jibo.com"
   repository: ""
   keywords: []
@@ -125,7 +125,7 @@
   featuredOnHomepage: true
 -
   name: "Ionic Lab"
-  description: ""
+  description: "Create, build, test and deploy Ionic apps"
   website: "http://lab.ionic.io"
   repository: ""
   keywords: []
@@ -133,7 +133,7 @@
   icon: "ionic-lab.png"
 -
   name: "Rocket.Chat"
-  description: ""
+  description: "The ultimate open source web chat platform"
   website: "https://rocket.chat"
   repository: ""
   keywords: []
@@ -141,7 +141,7 @@
   icon: "rocket-chat.png"
 -
   name: "Microstockr"
-  description: ""
+  description: "Microstock photography made easy"
   website: "http://microstockr.com"
   repository: ""
   keywords: []
@@ -149,7 +149,7 @@
   icon: "microstockr.png"
 -
   name: "GitBook"
-  description: ""
+  description: "Editor for a modern publishing toolchain based on Git"
   website: "https://www.gitbook.com"
   repository: ""
   keywords: []
@@ -157,7 +157,7 @@
   icon: "gitbook.png"
 -
   name: "Nylas N1"
-  description: ""
+  description: "The extensible, open source mail app"
   website: "https://www.nylas.com"
   repository: ""
   keywords: []
@@ -166,16 +166,19 @@
   featuredOnHomepage: true
 -
   name: "GitKraken"
-  description: ""
-  website: "http://www.gitkraken.com"
+  description: "The downright luxurious Git client for Windows, Mac and Linux"
+  website: "https://www.gitkraken.com/"
   repository: ""
-  keywords: []
+  keywords:
+    - "git"
+    - "programming"
+    - "productivity"
   license: ""
   icon: "gitkraken.png"
   featuredOnHomepage: true
 -
   name: "AIRTAME"
-  description: ""
+  description: "Wireless HDMI streaming"
   website: "http://www.airtame.com"
   repository: ""
   keywords: []
@@ -183,7 +186,7 @@
   icon: "airtame.png"
 -
   name: "Spreaker Studio"
-  description: ""
+  description: "Create and discover podcasts"
   website: "https://www.spreaker.com/download"
   repository: ""
   keywords: []
@@ -191,7 +194,7 @@
   icon: "spreaker-studio.png"
 -
   name: "Kakapo"
-  description: ""
+  description: "Ambient sound mixer to set a nice mood"
   website: "http://www.kakapo.co/app.html#desktop"
   repository: ""
   keywords: []
@@ -199,7 +202,7 @@
   icon: "kakapo.png"
 -
   name: "Zoommy"
-  description: ""
+  description: "Helps you find awesome free stock photos for your creative product or inspiration"
   website: "http://zoommyapp.com"
   repository: ""
   keywords: []
@@ -207,7 +210,7 @@
   icon: "zoommy.png"
 -
   name: "Gitify"
-  description: ""
+  description: "Github notifications on your menu bar"
   website: "http://www.gitify.io"
   repository: ""
   keywords: []
@@ -215,7 +218,7 @@
   icon: "gitify.png"
 -
   name: "Light Table"
-  description: ""
+  description: "The next generation code editor"
   website: "http://www.lighttable.com"
   repository: ""
   keywords: []
@@ -223,7 +226,7 @@
   icon: "lighttable.png"
 -
   name: "SteelSeries Engine 3"
-  description: ""
+  description: "A unified platform that supports nearly all your SteelSeries gear"
   website: "https://steelseries.com/engine"
   repository: ""
   keywords: []
@@ -231,7 +234,7 @@
   icon: "steelseries-engine-3.png"
 -
   name: "Yhat Rodeo"
-  description: ""
+  description: "An IDE for data science"
   website: "http://www.yhat.com/products/rodeo"
   repository: ""
   keywords: []
@@ -239,7 +242,7 @@
   icon: "yhat-rodeo.png"
 -
   name: "Wire"
-  description: ""
+  description: "Modern, private communications"
   website: "https://wire.com"
   repository: ""
   keywords: []
@@ -247,7 +250,7 @@
   icon: "wire.png"
 -
   name: "Mancy"
-  description: ""
+  description: "NodeJS REPLNodeJS REPL"
   website: "http://www.mancy-re.pl"
   repository: ""
   keywords: []
@@ -255,7 +258,7 @@
   icon: "mancy.png"
 -
   name: "Boost"
-  description: ""
+  description: "Open-sourced note app for programmers"
   website: "https://b00st.io"
   repository: ""
   keywords: []
@@ -263,7 +266,7 @@
   icon: "boost.png"
 -
   name: "Caret"
-  description: ""
+  description: "Markdown editor for Mac / Windows / Linux"
   website: "http://caret.io"
   repository: ""
   keywords: []
@@ -272,7 +275,7 @@
   featuredOnHomepage: true
 -
   name: "Tweetman"
-  description: ""
+  description: "Powerful Twitter Client for Desktop"
   website: "https://tweetman.kksg.net/en"
   repository: ""
   keywords: []
@@ -280,7 +283,7 @@
   icon: "tweetman.png"
 -
   name: "MdNote"
-  description: ""
+  description: "Markdown notebook"
   website: "http://md-note.com"
   repository: ""
   keywords: []
@@ -288,7 +291,7 @@
   icon: "mdnote.png"
 -
   name: "WordPress.com"
-  description: ""
+  description: "A desktop app for Wordpress"
   website: "https://desktop.wordpress.com"
   repository: ""
   keywords: []
@@ -297,7 +300,7 @@
   featuredOnHomepage: true
 -
   name: "Hozz"
-  description: ""
+  description: "A better way to manage your hosts"
   website: "http://ppoffice.github.io/Hozz"
   repository: ""
   keywords: []
@@ -305,7 +308,7 @@
   icon: "hozz.png"
 -
   name: "Gala"
-  description: ""
+  description: "A new and easier way of searching images"
   website: "http://www.getgala.me"
   repository: ""
   keywords: []
@@ -313,7 +316,7 @@
   icon: "gala.png"
 -
   name: "Mongotron"
-  description: ""
+  description: "Cross platform MongoDB management"
   website: "http://www.mongotron.io"
   repository: ""
   keywords: []
@@ -321,7 +324,7 @@
   icon: "mongotron.png"
 -
   name: "Sync"
-  description: ""
+  description: "A business chat tool"
   website: "https://www.wantedly.com/sync"
   repository: ""
   keywords: []
@@ -329,7 +332,7 @@
   icon: "sync.png"
 -
   name: "Abricotine"
-  description: ""
+  description: "Open-source Markdown editor built for desktop"
   website: "http://abricotine.brrd.fr"
   repository: ""
   keywords: []
@@ -337,7 +340,7 @@
   icon: "abricotine.png"
 -
   name: "Discord"
-  description: ""
+  description: "All-in-one voice and text chat for gamers"
   website: "http://discordapp.com"
   repository: ""
   keywords: []
@@ -345,7 +348,7 @@
   icon: "discord.png"
 -
   name: "Turbo Download Manager"
-  description: ""
+  description: "An open-source multi-threading download manager"
   website: "http://add0n.com/turbo-download-manager.html"
   repository: ""
   keywords: []
@@ -353,7 +356,7 @@
   icon: "tdm.png"
 -
   name: "KeeWeb"
-  description: ""
+  description: "Free cross-platform password manager compatible with KeePass"
   website: "https://keeweb.info"
   repository: ""
   keywords: []
@@ -361,7 +364,7 @@
   icon: "keeweb.png"
 -
   name: "Flow"
-  description: ""
+  description: "Task Management Software That Doesn't Feel Like Work"
   website: "https://www.getflow.com"
   repository: ""
   keywords: []
@@ -370,7 +373,7 @@
   featuredOnHomepage: true
 -
   name: "Gif Maker"
-  description: ""
+  description: "Animated GIF maker"
   website: "http://gifmaker.io"
   repository: ""
   keywords: []
@@ -378,7 +381,7 @@
   icon: "gif-maker.png"
 -
   name: "Nimble"
-  description: ""
+  description: "A simple Wolfram|Alpha&#174; menubar client for Mac OS X"
   website: "http://madebybright.com"
   repository: ""
   keywords: []
@@ -386,7 +389,7 @@
   icon: "nimble.png"
 -
   name: "Remember"
-  description: ""
+  description: "Business card management"
   website: "https://rememberapp.co.kr"
   repository: ""
   keywords: []
@@ -394,7 +397,7 @@
   icon: "remember.png"
 -
   name: "Presets.io"
-  description: ""
+  description: "Easy preset management for Adobe Lightroom"
   website: "https://presets.io"
   repository: ""
   keywords: []
@@ -402,7 +405,7 @@
   icon: "presets.png"
 -
   name: "Argo"
-  description: ""
+  description: "An open source trading platform"
   website: "http://argo.js.org"
   repository: ""
   keywords: []
@@ -410,7 +413,7 @@
   icon: "argo.png"
 -
   name: "Postman"
-  description: ""
+  description: "Build, test and document your APIs"
   website: "https://www.getpostman.com/"
   repository: ""
   keywords: []
@@ -418,7 +421,7 @@
   icon: "postman.png"
 -
   name: "Superpowers — HTML5 2D+3D game maker"
-  description: ""
+  description: "2D+3D game making for indies. Free and open source, finally"
   website: "http://superpowers-html5.com/"
   repository: ""
   keywords:
@@ -427,7 +430,7 @@
   icon: "superpowers.png"
 -
   name: "TagSpaces"
-  description: ""
+  description: "Your Hackable File Organizer"
   website: "http://tagspaces.org/"
   repository: ""
   keywords: []
@@ -435,7 +438,7 @@
   icon: "tagspaces.png"
 -
   name: "PraControl"
-  description: ""
+  description: "Send awesome gCodes to your machine"
   website: "http://pracontrol.pravdomil.cz"
   repository: ""
   keywords: []
@@ -443,7 +446,7 @@
   icon: "pracontrol.png"
 -
   name: "StopLight"
-  description: ""
+  description: "Mock, document, and test your way to API nirvana"
   website: "https://stoplight.io"
   repository: ""
   keywords: []
@@ -451,7 +454,7 @@
   icon: "stoplight.png"
 -
   name: "Chronocube"
-  description: ""
+  description: "Your rubik's cube solves"
   website: "https://pablopunk.github.io/chronocube"
   repository: ""
   keywords: []
@@ -459,7 +462,7 @@
   icon: "chronocube.png"
 -
   name: "Netbeast"
-  description: ""
+  description: "An Internet of Things javascript development platform that empowers developers to easily create and deploy IoT apps"
   website: "https://netbeast.co"
   repository: ""
   keywords: []
@@ -467,7 +470,7 @@
   icon: "netbeast.png"
 -
   name: "Egret Wing"
-  description: ""
+  description: "Egret Wing"
   website: "http://www.egret.com/products-wing"
   repository: ""
   keywords: []
@@ -475,7 +478,7 @@
   icon: "wing.png"
 -
   name: "CatLight"
-  description: ""
+  description: "Desktop build status notificatioans"
   website: "https://catlight.io"
   repository: ""
   keywords: []
@@ -483,7 +486,7 @@
   icon: "catlight.png"
 -
   name: "Brave Browser"
-  description: ""
+  description: "Web browser that automatically blocks ads and trackers"
   website: "https://brave.com/"
   repository: ""
   keywords: []
@@ -492,7 +495,7 @@
   featuredOnHomepage: true
 -
   name: "Google Play Music Desktop Player"
-  description: ""
+  description: "A beautiful cross platform Desktop Player for Google Play Music"
   website: "http://www.googleplaymusicdesktopplayer.com/"
   repository: ""
   keywords: []
@@ -501,7 +504,7 @@
   featuredOnHomepage: false
 -
   name: "World History AP"
-  description: ""
+  description: "Help students study for the rigorous AP exam"
   website: "http://whap.tk"
   repository: ""
   keywords: []
@@ -510,7 +513,7 @@
   featuredOnHomepage: false
 -
   name: "Hain"
-  description: ""
+  description: "An 'alt+space' launcher for Windows"
   website: "https://github.com/appetizermonster/hain"
   repository: ""
   keywords: []
@@ -519,7 +522,7 @@
   featuredOnHomepage: false
 -
   name: "1Clipboard"
-  description: ""
+  description: "A universal clipboard managing app that makes it easy to access your clipboard from anywhere on any device"
   website: "http://1clipboard.io"
   repository: ""
   keywords: []
@@ -528,7 +531,7 @@
   featuredOnHomepage: true
 -
   name: "Open Stage Control"
-  description: ""
+  description: "A libre desktop OSC bi-directionnal control surface application"
   website: "https://jean-emmanuel.github.io/open-stage-control"
   repository: ""
   keywords: []
@@ -537,7 +540,7 @@
   featuredOnHomepage: false
 -
   name: "Curse"
-  description: ""
+  description: "Fast and free communication for gamers"
   website: "https://www.curse.com"
   repository: ""
   keywords: []
@@ -546,7 +549,7 @@
   featuredOnHomepage: false
 -
   name: "MakeAppIcon Desktop"
-  description: ""
+  description: "Resizer for mobile app icons"
   website: "https://www.makeappicon.com/desktop"
   repository: ""
   keywords: []
@@ -573,7 +576,7 @@
   featuredOnHomepage: true
 -
   name: "HTTPS Checker"
-  description: ""
+  description: "The Most Advanced HTTPS Mixed Content Checker Available"
   website: "https://www.ecommerce.co.uk/httpschecker"
   repository: ""
   keywords: []
@@ -582,7 +585,7 @@
   featuredOnHomepage: false
 -
   name: "Mattermost"
-  description: ""
+  description: "Open source, self-hosted Slack-alternative"
   website: "https://www.mattermost.org/"
   repository: ""
   keywords: []
@@ -591,7 +594,7 @@
   featuredOnHomepage: false
 -
   name: "BearyChat"
-  description: ""
+  description: "Focused team communications"
   website: "https://bearychat.com"
   repository: ""
   keywords: []
@@ -600,7 +603,7 @@
   featuredOnHomepage: false
 -
   name: "Explorer"
-  description: ""
+  description: "Statistics the easy way"
   website: "https://github.com/jfbouzereau/explorer"
   repository: ""
   keywords: []
@@ -685,7 +688,7 @@
   featuredOnHomepage: true
 -
   name: "Aipo.com"
-  description: ""
+  description: "Communication tool to optimize the connection between people"
   website: "http://www.aipo.com"
   repository: ""
   keywords: []
@@ -812,3 +815,297 @@
   keywords:
     - "productivity"
   icon: "basecamp3.png"
+-
+  name: "Tiliq"
+  description: "The next generation of professional business email"
+  website: "https://tiliq.com"
+  keywords:
+    - "email"
+    - "productivity"
+  icon: "tiliq.png"
+-
+  name: "Criptio"
+  description: "Criptio is a tool for encrypt and decrypt files."
+  website: "https://itunes.apple.com/us/app/criptio/id1102582966?mt=12"
+  keywords:
+    - "security"
+    - "productivity"
+  icon: "criptio.png"
+-
+  name: "PhotoScreenSaver"
+  description: "Windows screen saver that displays a photo slideshow"
+  website: "https://github.com/RandScullard/photo-screen-saver"
+  repository: ""
+  keywords:
+    - "screensaver"
+    - "photography"
+  license: "MIT"
+  icon: "photo-screen-saver.png"
+-
+  name: "The Poker Timer"
+  description: "Best tournament clock"
+  website: "http://www.thepokertimer.com"
+  keywords:
+    - "tournament"
+    - "timer"
+  icon: "thepokertimer.png"
+-
+  name: "PileMd"
+  description: "Markdown Note App with Beautiful Markdown Editor and Local Syncing"
+  website: "https://pilemd.com/"
+  repository: "https://github.com/hirokiky/pilemd"
+  keywords:
+    - "markdown"
+    - "note"
+    - "productivity"
+  license: "GPLv3"
+  icon: "pilemd.png"
+-
+  name: "Sqlectron"
+  description: "A simple and lightweight SQL client desktop with cross database and platform support"
+  website: "https://sqlectron.github.io"
+  repository: "https://github.com/sqlectron/sqlectron-gui"
+  keywords:
+    - "sql"
+    - "mysql"
+    - "postgres"
+    - "mssql"
+  license: "MIT"
+  icon: "sqlectron.png"
+-
+  name: "ironNode"
+  description: "A Node.js JavaScript Debugger"
+  website: "http://s-a.github.io/iron-node/"
+  repository: "https://github.com/s-a/iron-node"
+  keywords:
+    - "debug"
+    - "debugger"
+    - "nodejs"
+  license: "MIT"
+  icon: "iron-node.png"
+-
+  name: "Bitbloq"
+  description: "Bitbloq is a tool to help children to learn and create programs for a microcontroller or robot, and to load them easily."
+  website: "http://bitbloq.bq.com"
+  repository: "https://github.com/bq/bitbloq-offline"
+  keywords:
+    - "bq"
+    - "bitbloq"
+    - "robotics"
+    - "arduino"
+    - "electronics"
+    - "children"
+  icon: "bitbloq.png"
+-
+  name: "Franz"
+  description: "Franz is a messaging app / former emperor of Austria, combining chat &amp; messaging services into one application"
+  website: "http://meetfranz.com"
+  repository: ""
+  keywords:
+    - "messaging"
+    - "chat"
+    - "productivity"
+  license: ""
+  icon: "franz.png"
+-
+  name: "WP Express"
+  description: "Rapid WordPress installer for local development"
+  website: "http://wpexpress.io"
+  keywords:
+    - "wordpress"
+    - "productivity"
+  icon: "wpexpress.png"
+-
+  name: "GF-Trader"
+  description: "Next generation securities trade application from GF Securities"
+  website: "http://it.gf.com.cn/cps"
+  keywords:
+    - "finace"
+    - "securities"
+  icon: "gf-trader.png"
+-
+  name: "FromScratch"
+  description: "Autosaving scratchpad."
+  website: "https://fromscratch.rocks"
+  repository: "https://github.com/kilian/fromscratch"
+  keywords:
+    - "notes"
+    - "scratchpad"
+    - "texteditor"
+  license: "MIT"
+  icon: "fromscratch.png"
+-
+  name: "Sencha Test"
+  description: "Testing Ext JS and Sencha Touch apps with Jasmine"
+  website: "https://www.sencha.com/products/test/"
+  keywords:
+    - "web development"
+    - "programming"
+    - "productivity"
+    - "editor"
+  icon: "sencha_test.png"
+-
+  name: "AntSword"
+  description: "AntSword is a cross platform website management tools"
+  website: "https://github.com/antoor/antSword"
+  keywords:
+    - "webmanager"
+    - "webshell"
+  icon: "antsword.png"
+-
+  name: "MJML App"
+  description: "Desktop wrapper around mjml language"
+  website: "http://mjmlio.github.io/mjml-app/"
+  repository: "https://github.com/mjmlio/mjml-app"
+  keywords:
+    - "mjml"
+    - "email"
+  icon: "mjml-app.png"
+-
+  name: "Markdownify"
+  description: "This is a minimal Markdown Editor desktop app based on Electron."
+  website: "http://www.amitmerchant.com/electron-markdownify"
+  repository: "https://github.com/amitmerchant1990/electron-markdownify"
+  keywords:
+    - "electron"
+    - "markdown"
+    - "plain"
+    - "node"
+    - "minimal"
+    - "editor"
+    - "preview"
+    - "html"
+    - "desktop"
+  icon: "markdownify.png"
+-
+  name: "Etcher"
+  description: "Burn images to SD cards & USB drives, safe & easy"
+  website: "http://www.etcher.io/"
+  repository: "https://github.com/resin-io/etcher"
+  keywords:
+    - "hardware"
+    - "developer tool"
+    - "IoT"
+  license: "Apache 2.0"
+  icon: "etcher.png"
+-
+  name: "Whatsie"
+  description: "Simple & beautiful desktop client for WhatsApp Web"
+  website: "https://whatsie.chat/"
+  repository: "https://github.com/Aluxian/Whatsie"
+  keywords:
+    - "whatsapp"
+    - "desktop"
+    - "messenger"
+    - "chat"
+  license: "MIT"
+  icon: "whatsie.png"
+-
+  name: "STAMP"
+  description: "Move tracks and playlists across various streaming services"
+  website: "https://freeyourmusic.com/"
+  keywords:
+    - "music"
+    - "spotify"
+    - "apple music"
+    - "google play music"
+  icon: "stamp.png"
+-
+  name: "FlexPaper"
+  description: "Enhance, reflow and flip pdf documents into web publications"
+  website: "https://flexpaper.devaldi.com/"
+  keywords:
+    - "pdf"
+    - "flip book"
+    - "pdf to html5"
+    - "pdf to ebook"
+    - "interactive pdf publications"
+    - "pdf to online publication"
+  icon: "flexpaper-creative-publisher.png"
+-
+  name: "DataProofer"
+  description: "A proofreader for your data"
+  website: "http://dataproofer.org/"
+  keywords:
+    - "csv"
+    - "excel"
+    - "data"
+    - "analysis"
+    - "journalism"
+    - "research"
+    - "spreadsheet"
+  icon: "dataproofer.png"
+-
+  name: "PupaFM"
+  description: "douban.fm Music Desktop Player"
+  website: "https://github.com/xwartz/PupaFM"
+  keywords:
+    - "douban.fm"
+    - "fm"
+    - "douban"
+    - "PupaFM"
+    - "music player"
+    - "react"
+    - "redux"
+  license: "MIT"
+  icon: "pupafm.png"
+-
+  name: "Negative"
+  description: "An app for making visual comparisons"
+  website: "https://github.com/atdrago/negative"
+  keywords:
+    - "diff"
+    - "visual diff"
+    - "web development"
+    - "web design"
+    - "developer tool"
+  license: "MIT"
+  icon: "negative.png"
+-
+  name: "TimeTable"
+  description: "TimeTable in your menubar!"
+  website: "https://github.com/willyb321/electron-menubar-timetable"
+  repository: "https://github.com/willyb321/electron-menubar-timetable"
+  keywords:
+    - "Timetable"
+    - "menubar"
+  icon: "TTIcon.png"
+-
+  name: "lightgallery"
+  description: "A modern, electron and nodejs based image viewer for Mac, Windows and Linux."
+  website: "http://sachinchoolur.github.io/lightgallery-desktop/"
+  repository: "https://github.com/sachinchoolur/lightgallery-desktop"
+  keywords:
+    - "image"
+    - "photo"
+    - "gallery"
+  license: "MIT"
+  icon: "lightgallery.png"
+-
+  name: "Min"
+  description: "A smarter web browser"
+  website: "https://minbrowser.github.io/min/"
+  repository: "https://github.com/minbrowser/min"
+  keywords:
+    - "browser"
+    - "privacy"
+  license: "Apache 2.0"
+  icon: "minbrowser.png"
+-
+  name: "Collectie"
+  description: "Your personal galaxy of inspiration"
+  website: "https://getcollectie.com/"
+  keywords:
+    - "collection"
+    - "inspiration"
+    - "database"
+    - "design"
+  icon: "collectie.png"
+-
+  name: "Istrolid"
+  description: "Fleet Design Strategy Game"
+  website: "http://www.istrolid.com/"
+  keywords:
+    - "game"
+    - "strategy"
+  icon: "istrolid.png"

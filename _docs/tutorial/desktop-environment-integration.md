@@ -1,7 +1,6 @@
 ---
-version: v1.0.1
+version: v1.2.0
 category: Tutorial
-title: 'Desktop Environment Integration'
 redirect_from:
     - /docs/v0.24.0/tutorial/desktop-environment-integration/
     - /docs/v0.25.0/tutorial/desktop-environment-integration/
@@ -34,8 +33,6 @@ redirect_from:
     - /docs/v0.37.6/tutorial/desktop-environment-integration/
     - /docs/v0.37.7/tutorial/desktop-environment-integration/
     - /docs/v0.37.8/tutorial/desktop-environment-integration/
-    - /docs/v1.0.0/tutorial/desktop-environment-integration/
-    - /docs/v1.0.1/tutorial/desktop-environment-integration/
     - /docs/latest/tutorial/desktop-environment-integration/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/desktop-environment-integration.md'
 excerpt: "Applications define tasks based on both the program&apos;s features and the key
@@ -48,6 +45,8 @@ an application in a certain mode, or launch one of its subcommands. An
 application should not clutter the menu with advanced features that standard
 users won&apos;t need or one-time actions such as registration. Do not use tasks
 for promotional items such as upgrades or special offers."
+title: "Desktop Environment Integration"
+sort_title: "desktop environment integration"
 ---
 
 # Desktop Environment Integration
@@ -70,13 +69,13 @@ the currently running operating system's native notification APIs to display it.
 **Note:** Since this is an HTML5 API it is only available in the renderer process.
 
 ```javascript
-var myNotification = new Notification('Title', {
+let myNotification = new Notification('Title', {
   body: 'Lorem Ipsum Dolor Sit Amet'
 });
 
-myNotification.onclick = function () {
-  console.log('Notification clicked')
-}
+myNotification.onclick = () => {
+  console.log('Notification clicked');
+};
 ```
 
 While code and user experience across operating systems are similar, there
@@ -169,8 +168,8 @@ const electron = require('electron');
 const app = electron.app;
 const Menu = electron.Menu;
 
-var dockMenu = Menu.buildFromTemplate([
-  { label: 'New Window', click: function() { console.log('New Window'); } },
+const dockMenu = Menu.buildFromTemplate([
+  { label: 'New Window', click() { console.log('New Window'); } },
   { label: 'New Window with Settings', submenu: [
     { label: 'Basic' },
     { label: 'Pro'}
@@ -261,24 +260,25 @@ You can use [BrowserWindow.setThumbarButtons][setthumbarbuttons] to set
 thumbnail toolbar in your application:
 
 ```javascript
-const BrowserWindow = require('electron').BrowserWindow;
+const {BrowserWindow} = require('electron');
 const path = require('path');
 
-var win = new BrowserWindow({
+let win = new BrowserWindow({
   width: 800,
   height: 600
 });
+
 win.setThumbarButtons([
   {
-    tooltip: "button1",
+    tooltip: 'button1',
     icon: path.join(__dirname, 'button1.png'),
-    click: function() { console.log("button2 clicked"); }
+    click() { console.log('button2 clicked'); }
   },
   {
-    tooltip: "button2",
+    tooltip: 'button2',
     icon: path.join(__dirname, 'button2.png'),
-    flags:['enabled', 'dismissonclick'],
-    click: function() { console.log("button2 clicked."); }
+    flags: ['enabled', 'dismissonclick'],
+    click() { console.log('button2 clicked.'); }
   }
 ]);
 ```
@@ -318,8 +318,8 @@ To set the progress bar for a Window, you can use the
 [BrowserWindow.setProgressBar][setprogressbar] API:
 
 ```javascript
-var window = new BrowserWindow({...});
-window.setProgressBar(0.5);
+let win = new BrowserWindow({...});
+win.setProgressBar(0.5);
 ```
 
 ## Icon Overlays in Taskbar (Windows)
@@ -345,8 +345,8 @@ To set the overlay icon for a window, you can use the
 [BrowserWindow.setOverlayIcon][setoverlayicon] API:
 
 ```javascript
-var window = new BrowserWindow({...});
-window.setOverlayIcon('path/to/overlay.png', 'Description for overlay');
+let win = new BrowserWindow({...});
+win.setOverlayIcon('path/to/overlay.png', 'Description for overlay');
 ```
 
 ## Represented File of Window (OS X)
@@ -367,9 +367,9 @@ To set the represented file of window, you can use the
 [BrowserWindow.setDocumentEdited][setdocumentedited] APIs:
 
 ```javascript
-var window = new BrowserWindow({...});
-window.setRepresentedFilename('/etc/passwd');
-window.setDocumentEdited(true);
+let win = new BrowserWindow({...});
+win.setRepresentedFilename('/etc/passwd');
+win.setDocumentEdited(true);
 ```
 
 [addrecentdocument]: http://electron.atom.io/docs/api/app#appaddrecentdocumentpath-os-x-windows

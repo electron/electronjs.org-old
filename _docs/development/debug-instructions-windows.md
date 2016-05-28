@@ -1,7 +1,6 @@
 ---
-version: v1.0.1
+version: v1.2.0
 category: Development
-title: 'Debug Instructions Windows'
 redirect_from:
     - /docs/v0.24.0/development/debug-instructions-windows/
     - /docs/v0.25.0/development/debug-instructions-windows/
@@ -34,13 +33,13 @@ redirect_from:
     - /docs/v0.37.6/development/debug-instructions-windows/
     - /docs/v0.37.7/development/debug-instructions-windows/
     - /docs/v0.37.8/development/debug-instructions-windows/
-    - /docs/v1.0.0/development/debug-instructions-windows/
-    - /docs/v1.0.1/development/debug-instructions-windows/
     - /docs/latest/development/debug-instructions-windows/
 source_url: 'https://github.com/electron/electron/blob/master/docs/development/debug-instructions-windows.md'
+title: "Debugging on Windows"
+sort_title: "debugging on windows"
 ---
 
-# Debugging Electron in Windows
+# Debugging on Windows
 
 If you experience crashes or issues in Electron that you believe are not caused
 by your JavaScript application, but instead by Electron itself, debugging can
