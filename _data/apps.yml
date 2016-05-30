@@ -1109,3 +1109,12 @@
     - "game"
     - "strategy"
   icon: "istrolid.png"
+-
+  name: "JANDI"
+  description: "Team Communication for Businesses"
+  website: "https://www.jandi.com"
+  keywords:
+    - "messanger"
+    - "collaboration"
+  icon: "jandi.png"
+  featuredOnHomepage: true
