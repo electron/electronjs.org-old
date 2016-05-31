@@ -1110,7 +1110,6 @@
     - "strategy"
   icon: "istrolid.png"
 -
-<<<<<<< HEAD
   name: "Tweeten"
   description: "A better TweetDeck experience"
   website: "http://tweeten.xyz"
