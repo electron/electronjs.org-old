@@ -1,5 +1,5 @@
 ---
-title: Electron Releases
+title: Releases
 permalink: /releases/
 redirect_from: /releases.html
 layout: releases

@@ -1,5 +1,5 @@
 ---
-title: Electron Guides
+title: Guides
 permalink: /docs/guides/
 redirect_from:
   - /tutorial/
