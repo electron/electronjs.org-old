@@ -1,5 +1,5 @@
 ---
-title: Electron API Reference
+title: API Reference
 permalink: /docs/api/
 layout: docs
 category: ignore

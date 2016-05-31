@@ -1,5 +1,5 @@
 ---
-title: Electron Development
+title: Development
 permalink: /docs/development/
 layout: docs
 category: ignore
