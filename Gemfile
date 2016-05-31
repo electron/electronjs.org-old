@@ -1,5 +1,3 @@
 source 'https://rubygems.org'
 
-gem 'jekyll'
-gem 'github-pages'
-gem 'rouge'
+gem 'github-pages', :group => :jekyll_plugins
