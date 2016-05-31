@@ -1101,3 +1101,13 @@
     - "database"
     - "design"
   icon: "collectie.png"
+-
+  name: "Calculator"
+  description: "A Basic Calculator"
+  website: "https://drive.google.com/open?id=0B4vBBfXB3KipdHBTU0IwdDllaGc"
+  keywords:
+    - "calculator"
+    - "calculations"
+    - "maths"
+    - "operations"
+  icon: "calculator_256.png"
