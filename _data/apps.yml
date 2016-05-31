@@ -1110,6 +1110,7 @@
     - "strategy"
   icon: "istrolid.png"
 -
+<<<<<<< HEAD
   name: "Tweeten"
   description: "A better TweetDeck experience"
   website: "http://tweeten.xyz"
@@ -1127,3 +1128,11 @@
     - "collaboration"
   icon: "jandi.png"
   featuredOnHomepage: true
+-
+  name: "Vectr"
+  description: "Free Design App For Web + Desktop"
+  website: "https://vectr.com/"
+  keywords:
+    - "design"
+    - "editor"
+  icon: "vectr.png"
