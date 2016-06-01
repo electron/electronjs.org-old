@@ -1134,3 +1134,24 @@
     - "design"
     - "editor"
   icon: "vectr.png"
+-
+  name: "Caprine"
+  description: "Facebook Messenger app"
+  repository: "https://github.com/sindresorhus/caprine"
+  keywords:
+    - "chat"
+    - "messaging"
+    - "social"
+    - "facebook"
+  license: "MIT"
+  icon: "caprine.png"
+-
+  name: "Anatine"
+  description: "Pristine Twitter app"
+  repository: "https://github.com/sindresorhus/anatine"
+  keywords:
+    - "social"
+    - "news"
+    - "twitter"
+  license: "MIT"
+  icon: "anatine.png"
