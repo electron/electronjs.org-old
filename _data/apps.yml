@@ -1126,7 +1126,6 @@
     - "messanger"
     - "collaboration"
   icon: "jandi.png"
-  featuredOnHomepage: true
 -
   name: "Vectr"
   description: "Free Design App For Web + Desktop"
