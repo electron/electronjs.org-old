@@ -1,5 +1,5 @@
 ---
-version: v1.2.0
+version: v1.2.1
 category: API
 redirect_from:
     - /docs/v0.24.0/api/browser-window/
@@ -101,8 +101,9 @@ It creates a new `BrowserWindow` with native properties as set by the `options`.
   * `fullscreen` Boolean - Whether the window should show in fullscreen. When
     explicitly set to `false` the fullscreen button will be hidden or disabled
     on OS X. Default is `false`.
-  * `fullscreenable` Boolean - Whether the maximize/zoom button on OS X should
-    toggle full screen mode or maximize window. Default is `true`.
+  * `fullscreenable` Boolean - Whether the window can be put into fullscreen
+    mode. On OS X, also whether the maximize/zoom button should toggle full
+    screen mode or maximize window. Default is `true`.
   * `skipTaskbar` Boolean - Whether to show the window in taskbar. Default is
     `false`.
   * `kiosk` Boolean - The kiosk mode. Default is `false`.
@@ -828,14 +829,6 @@ Captures a snapshot of the page within `rect`. Upon completion `callback` will
 be called with `callback(image)`. The `image` is an instance of
 [NativeImage](http://electron.atom.io/docs/api/native-image) that stores data of the snapshot. Omitting
 `rect` will capture the whole visible page.
-
-### `win.print([options])`
-
-Same as `webContents.print([options])`
-
-### `win.printToPDF(options, callback)`
-
-Same as `webContents.printToPDF(options, callback)`
 
 ### `win.loadURL(url[, options])`
 

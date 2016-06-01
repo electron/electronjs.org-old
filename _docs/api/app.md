@@ -1,5 +1,5 @@
 ---
-version: v1.2.0
+version: v1.2.1
 category: API
 redirect_from:
     - /docs/v0.24.0/api/app/
@@ -537,6 +537,11 @@ if (shouldQuit) {
 app.on('ready', () => {
 });
 ```
+
+### `app.releaseSingleInstance()`
+
+Releases all locks that were created by `makeSingleInstance`. This will allow
+multiple instances of the application to once again run side by side.
 
 ### `app.setUserActivity(type, userInfo[, webpageURL])` _OS X_
 

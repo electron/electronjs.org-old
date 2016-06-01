@@ -1,5 +1,5 @@
 ---
-version: v1.2.0
+version: v1.2.1
 category: Tutorial
 redirect_from:
     - /docs/v0.24.0/tutorial/security/
@@ -54,7 +54,7 @@ discovered security threats.
 When working with Electron, it is important to understand that Electron is not
 a web browser. It allows you to build feature-rich desktop applications with
 familiar web technologies, but your code wields much greater power. JavaScript
-can access to the filesystem, the user shell, and more. This allows you to build
+can access the filesystem, user shell, and more. This allows you to build
 high quality native applications, but the inherent security risks scale with the
 additional powers granted to your code.
 

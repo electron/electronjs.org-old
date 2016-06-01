@@ -1,5 +1,5 @@
 ---
-version: v1.2.0
+version: v1.2.1
 category: API
 redirect_from:
     - /docs/v0.24.0/api/window-open/
@@ -104,6 +104,10 @@ Evaluates the code in the child window.
 ### `BrowserWindowProxy.focus()`
 
 Focuses the child window (brings the window to front).
+
+### `BrowserWindowProxy.print()`
+
+Invokes the print dialog on the child window.
 
 ### `BrowserWindowProxy.postMessage(message, targetOrigin)`
 
