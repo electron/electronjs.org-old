@@ -1,5 +1,5 @@
 ---
-version: v1.2.0
+version: v1.2.1
 category: API
 redirect_from:
     - /docs/v0.24.0/api/web-contents/
@@ -415,6 +415,42 @@ The `editFlags` is an object with the following properties:
 
 Emitted when there is a new context menu that needs to be handled.
 
+### Event: 'select-bluetooth-device'
+
+Returns:
+
+* `event` Event
+* `devices` [Objects]
+  * `deviceName` String
+  * `deviceId` String
+* `callback` Function
+  * `deviceId` String
+
+Emitted when bluetooth device needs to be selected on call to
+`navigator.bluetooth.requestDevice`. To use `navigator.bluetooth` api
+`webBluetooth` should be enabled.  If `event.preventDefault` is not called,
+first available device will be selected. `callback` should be called with
+`deviceId` to be selected, passing empty string to `callback` will
+cancel the request.
+
+```javacript
+app.commandLine.appendSwitch('enable-web-bluetooth')
+
+app.on('ready', () => {
+  webContents.on('select-bluetooth-device', (event, deviceList, callback) => {
+    event.preventDefault()
+    let result = deviceList.find((device) => {
+      return device.deviceName === 'test'
+    })
+    if (!result) {
+      callback('')
+    } else {
+      callback(result.deviceId)
+    }
+  })
+})
+```
+
 ## Instance Methods
 
 The `webContents` object has the following instance methods:
@@ -697,7 +733,8 @@ size.
   * `marginsType` Integer - Specifies the type of margins to use. Uses 0 for
     default margin, 1 for no margin, and 2 for minimum margin.
   * `pageSize` String - Specify page size of the generated PDF. Can be `A3`,
-    `A4`, `A5`, `Legal`, `Letter` and `Tabloid`.
+    `A4`, `A5`, `Legal`, `Letter`, `Tabloid` or an Object containing `height`
+    and `width` in microns.
   * `printBackground` Boolean - Whether to print CSS backgrounds.
   * `printSelectionOnly` Boolean - Whether to print selection only.
   * `landscape` Boolean - `true` for landscape, `false` for portrait.
@@ -719,6 +756,8 @@ By default, an empty `options` will be regarded as:
   landscape: false
 }
 ```
+
+An example of `webContents.printToPDF`:
 
 ```javascript
 const {BrowserWindow} = require('electron');

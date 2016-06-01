@@ -1,5 +1,5 @@
 ---
-version: v1.2.0
+version: v1.2.1
 category: API
 redirect_from:
     - /docs/v0.24.0/api/native-image/
@@ -72,6 +72,7 @@ effects it is recommended to include at least followings sizes in the icon:
 
 * 16x16
 * 32x32
+* 64x64
 * 256x256
 
 ## High Resolution Image
