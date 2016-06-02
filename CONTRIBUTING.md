@@ -24,7 +24,7 @@ Add your app to the list by editing [_data/apps.yml](/_data/apps.yml).
 * The required fields are `name`, `website`, and `icon`. Everything else is
   optional, but recommended.
 * Your `website` can be a repository with a `README`, but please provide a destination with information about your app.
-  * You can make a free website with [GitHub Pages](pages.github.com)
+  * You can make a free website with [GitHub Pages](https://pages.github.com)
 * Your `icon` must be `256x256` pixels in size.
 * Your `icon` must be a [PNG](https://en.wikipedia.org/wiki/Portable_Network_Graphics).
 * Put your `icon` in the `images/apps` folder.
