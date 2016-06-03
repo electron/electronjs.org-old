@@ -1137,6 +1137,7 @@
 -
   name: "Caprine"
   description: "Facebook Messenger app"
+  website: "https://github.com/sindresorhus/caprine"
   repository: "https://github.com/sindresorhus/caprine"
   keywords:
     - "chat"
@@ -1148,6 +1149,7 @@
 -
   name: "Anatine"
   description: "Pristine Twitter app"
+  website: "https://github.com/sindresorhus/anatine"
   repository: "https://github.com/sindresorhus/anatine"
   keywords:
     - "social"
@@ -1158,6 +1160,7 @@
 -
   name: "Shiba"
   description: "Rich markdown live preview app with linter"
+  website: "https://github.com/rhysd/Shiba"
   repository: "https://github.com/rhysd/Shiba"
   keywords:
     - "markdown"
