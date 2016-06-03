@@ -1168,3 +1168,13 @@
     - "linter"
   license: "MIT"
   icon: "shiba_256.png"
+-
+  name: "Cypress"
+  description: "Automated test runner for web applications"
+  website: "https://www.cypress.io/"
+  repository: "https://github.com/cypress-io/cypress"
+  keywords:
+    - "testing"
+    - "developer tool"
+    - "web development"
+  icon: "cypress.png"
