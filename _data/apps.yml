@@ -1155,3 +1155,13 @@
     - "twitter"
   license: "MIT"
   icon: "anatine.png"
+-
+  name: "Shiba"
+  description: "Rich markdown live preview app with linter"
+  repository: "https://github.com/rhysd/Shiba"
+  keywords:
+    - "markdown"
+    - "preview"
+    - "linter"
+  license: "MIT"
+  icon: "shiba_256.png"
