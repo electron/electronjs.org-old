@@ -1178,3 +1178,17 @@
     - "developer tool"
     - "web development"
   icon: "cypress.png"
+-
+  name: "Pencil"
+  description: "The Pencil Project's unique mission is to build a free and opensource tool for making diagrams and GUI prototyping that everyone can use"
+  website: "http://pencil.evolus.vn"
+  repository: "https://github.com/evolus/pencil"
+  keywords:
+    - "prototyping"
+    - "ui"
+    - "mockup"
+    - "design"
+    - "drawing"
+    - "sketch"
+  license: "GPL 2"
+  icon: "pencil.png"
