@@ -1204,3 +1204,13 @@
     - "sketch"
   license: "GPL 2"
   icon: "pencil.png"
+-
+  name: "Subordination"
+  description: "A desktop app for translating and editing subtitles"
+  website: "http://subordination.cu.cc/"
+  repository: "https://github.com/sunabozu/subordination"
+  keywords:
+    - "subtitles"
+    - "translation"
+    - "editor"
+  icon: "subordination.png"
