@@ -1178,3 +1178,13 @@
     - "developer tool"
     - "web development"
   icon: "cypress.png"
+-
+  name: "Typetalk"
+  description: "A simply fun chat app for teams."
+  website: "https://www.typetalk.in"
+  keywords:
+    - "chat"
+    - "business"
+    - "orgainzation"
+    - "team"
+  icon: "typetalk.png"
