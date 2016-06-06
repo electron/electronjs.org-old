@@ -1178,3 +1178,15 @@
     - "developer tool"
     - "web development"
   icon: "cypress.png"
+-
+  name: "Deco IDE"
+  description: "React Native IDE with component management"
+  website: "https://www.decosoftware.com"
+  repository: "https://github.com/decosoftware/deco-ide"
+  keywords:
+    - "react"
+    - "react native"
+    - "developer tool"
+    - "ide"
+  license: "AGPLv3"
+  icon: "deco.png"
