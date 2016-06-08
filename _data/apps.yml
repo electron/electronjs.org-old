@@ -1247,3 +1247,14 @@
     - "hosts"
   license: "MIT"
   icon: "hostsdock.png"
+-
+  name: "Cozy Desktop"
+  description: "File Synchronisation for Cozy Cloud on Desktop and Laptop"
+  website: "https://cozy.io/"
+  repository: "https://github.com/cozy-labs/cozy-desktop"
+  keywords:
+    - "productivity"
+    - "synchronization"
+    - "files"
+  icon: "cozy-desktop.png"
+  license: "AGPLv3"
