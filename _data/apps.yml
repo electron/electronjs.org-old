@@ -32,19 +32,6 @@
   icon: "vscode.png"
   featuredOnHomepage: true
 -
-  name: "HostsDock"
-  description: "Store, manage and switch your hosts easily"
-  website: "https://github.com/eshengsky/HostsDock"
-  repository: "https://github.com/eshengsky/HostsDock"
-  keywords:
-    - "HostsDock"
-    - "storage"
-    - "manage"
-    - "switch"
-    - "hosts"
-  license: "MIT"
-  icon: "hostsdock.png"
--
   name: "Hive"
   description: "Home for busy teams"
   website: "https://hiveteams.com"
@@ -1237,3 +1224,16 @@
     - "orgainzation"
     - "team"
   icon: "typetalk.png"
+-
+  name: "HostsDock"
+  description: "Store, manage and switch your hosts easily"
+  website: "https://github.com/eshengsky/HostsDock"
+  repository: "https://github.com/eshengsky/HostsDock"
+  keywords:
+    - "HostsDock"
+    - "storage"
+    - "manage"
+    - "switch"
+    - "hosts"
+  license: "MIT"
+  icon: "hostsdock.png"
