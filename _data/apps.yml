@@ -1224,3 +1224,13 @@
     - "orgainzation"
     - "team"
   icon: "typetalk.png"
+-
+  name: "Preserver"
+  description: "Preserver is an notes organizer desktop app"
+  website: "https://github.com/hsbalar/Preserver"
+  keywords:
+    - "notes"
+    - "keep"
+    - "record"
+    - "data"
+  icon: "preserver.png"
