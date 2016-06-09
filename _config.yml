@@ -14,8 +14,8 @@ gems:
     - jemoji
 latest_version: 1.2.2
 current_node: 6.1.0
-current_chrome: 51.0.2704.63
-current_v8: 5.1.281.47
+current_chrome: 51.0.2704.84
+current_v8: 5.1.281.59
 sass:
     style: compressed
 available_versions:
