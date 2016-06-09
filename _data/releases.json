@@ -1,5 +1,23 @@
 [
   {
+    "url": "https://api.github.com/repos/electron/electron/releases/3397058",
+    "assets_url": "https://api.github.com/repos/electron/electron/releases/3397058/assets",
+    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/3397058/assets{?name,label}",
+    "html_url": "https://github.com/electron/electron/releases/tag/v1.2.2",
+    "id": 3397058,
+    "tag_name": "v1.2.2",
+    "target_commitish": "master",
+    "name": "electron v1.2.2",
+    "draft": false,
+    "prerelease": false,
+    "created_at": "2016-06-08T07:47:41Z",
+    "published_at": "2016-06-08T10:21:54Z",
+    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v1.2.2",
+    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v1.2.2",
+    "body": "Changelog:\r\n\r\n* Update to Chrome 51.0.2704.84. [#5929](https://github.com/electron/electron/pull/5929)\r\n* Implement click-through window for Windows and Linux.\r\n[#5910](https://github.com/electron/electron/pull/5910)\r\n* Add `app.relaunch([options])` API. [#5837](https://github.com/electron/electron/pull/5837)\r\n* Add support for `array` and `dictionary` types in `systemPreferences.getUserDefault(key, type)` API. [#5833](https://github.com/electron/electron/pull/5833)\r\n* Add `pasteandmatchstyle` and `delete` roles to `MenuItem`.  [#5870](https://github.com/electron/electron/pull/5870)\r\n* Add `app.disableHardwareAcceleration()` API. [#5889](https://github.com/electron/electron/pull/5889)\r\n* Add `update-target-url` event to `WebContents` and `<webview>` tag. [#5903](https://github.com/electron/electron/pull/5903)\r\n* Add `disableBlinkFeatures` option to `webPreferences` of `BrowserWindow`. [#5923](https://github.com/electron/electron/pull/5923)\r\n* Add `disableBlinkFeatures` attribute to `<webview>` tag. [#5923](https://github.com/electron/electron/pull/5923)\r\n* Fix crash when using `fetch` in custom protocols. [#5932](https://github.com/electron/electron/pull/5932)\r\n\r\n__OS X__\r\n\r\n* Fix title of frameless window showing as empty under fullscreen. [#5905](https://github.com/electron/electron/pull/5905)\r\n\r\n__Linux__\r\n\r\n* Fix `BrowserWindow.focus()` not moving focus to the window. [#5888](https://github.com/electron/electron/pull/5888)",
+    "version": "1.2.2"
+  },
+  {
     "url": "https://api.github.com/repos/electron/electron/releases/3346755",
     "assets_url": "https://api.github.com/repos/electron/electron/releases/3346755/assets",
     "upload_url": "https://uploads.github.com/repos/electron/electron/releases/3346755/assets{?name,label}",
@@ -520,23 +538,5 @@
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.36.3",
     "body": "Changelog:\r\n\r\n* Add support for Widevine CDM plugin.\r\n* Add `isDevToolsFocused` method to `WebContents` and `<webview>`.\r\n* Add `did-navigate` and `did-navigate-in-page` events to `WebContents` and `<webview>`.\r\n* Add `will-navigate`, `devtools-opened`, `devtools-closed`, `devtools-focused` events to `<webview>`.\r\n* Add `blinkFeatures` option to `webPreferences`.\r\n* Remove `overlayScrollbars`, `sharedWorker`, `pageVisibility` options from `webPreferences`.\r\n* Localize the default string resources in HTML elements.\r\n* Allow using `fetch` for URLs registered as privilege.\r\n* Fix memory leak in `remote` module.\r\n* Fix distorted image when calling `capturePage` with no rect.\r\n* Fix crash when using `protocol.registerHttpProtocol` without internet connection.\r\n\r\n__OS X__\r\n\r\n* Fix `drop-files` not firing when dragging from the dock.\r\n* Fix `app.clearRecentDocuments` not working.\r\n* Fix crash when calling `dialog.showSaveDialog` with filters with no extensions.\r\n* Fix crash when creating `Window` menu with no submenu items.\r\n* Fix `Tray.setPressedImage` not working after turning off highlight mode.\r\n* Fix unable to hide fullscreen button on EL Capitan.\r\n\r\n__Windows__\r\n\r\n* Fix recursive loop when calling `mkdirp` inside an `asar` archive.\r\n* Fix the window menu bar not behaving correctly.\r\n* Fix `dialog.openSaveDialog` adding extension to filename when it shouldn't.\r\n* Fix bad typing performance.\r\n",
     "version": "0.36.3"
-  },
-  {
-    "url": "https://api.github.com/repos/electron/electron/releases/2357454",
-    "assets_url": "https://api.github.com/repos/electron/electron/releases/2357454/assets",
-    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/2357454/assets{?name,label}",
-    "html_url": "https://github.com/electron/electron/releases/tag/v0.35.5",
-    "id": 2357454,
-    "tag_name": "v0.35.5",
-    "target_commitish": "master",
-    "name": "electron v0.35.5",
-    "draft": false,
-    "prerelease": false,
-    "created_at": "2015-12-25T05:44:07Z",
-    "published_at": "2015-12-31T05:02:14Z",
-    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.35.5",
-    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.35.5",
-    "body": "Changelog:\r\n\r\n__Windows__\r\n\r\n* Fix `shell.moveItemToTrash` not working on Windows 7.\r\n",
-    "version": "0.35.5"
   }
 ]
