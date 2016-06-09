@@ -1,5 +1,5 @@
 ---
-version: v1.2.1
+version: v1.2.2
 category: API
 redirect_from:
     - /docs/v0.24.0/api/web-contents/
@@ -330,6 +330,15 @@ a meta tag:
 <meta name='theme-color' content='#ff0000'>
 ```
 
+### Event: 'update-target-url'
+
+Returns:
+
+* `event` Event
+* `url` String
+
+Emitted when mouse moves over a link or the keyboard moves the focus to a link.
+
 ### Event: 'cursor-changed'
 
 Returns:
@@ -433,7 +442,7 @@ first available device will be selected. `callback` should be called with
 `deviceId` to be selected, passing empty string to `callback` will
 cancel the request.
 
-```javacript
+```javascript
 app.commandLine.appendSwitch('enable-web-bluetooth')
 
 app.on('ready', () => {

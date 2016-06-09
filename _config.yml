@@ -12,10 +12,10 @@ gems:
     - jekyll-seo-tag
     - jekyll-feed
     - jemoji
-latest_version: 1.2.1
+latest_version: 1.2.2
 current_node: 6.1.0
-current_chrome: 51.0.2704.63
-current_v8: 5.1.281.47
+current_chrome: 51.0.2704.84
+current_v8: 5.1.281.59
 sass:
     style: compressed
 available_versions:
@@ -58,6 +58,7 @@ available_versions:
     - v1.1.3
     - v1.2.0
     - v1.2.1
+    - v1.2.2
 collections:
     docs: {output: true, permalink: '/docs/:path/'}
 defaults:

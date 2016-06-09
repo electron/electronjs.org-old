@@ -1,5 +1,5 @@
 ---
-version: v1.2.1
+version: v1.2.2
 category: ignore
 redirect_from:
     - /docs/faq/electron-faq/
@@ -74,7 +74,7 @@ use HTML5 APIs which are already available in browsers. Good candidates are
 
 Or you can use the IPC system, which is specific to Electron, to store objects
 in the main process as a global variable, and then to access them from the
-renderers through the `remote` module:
+renderers through the `remote` property of `electron` module:
 
 ```javascript
 // In the main process.
@@ -85,12 +85,12 @@ global.sharedObject = {
 
 ```javascript
 // In page 1.
-require('remote').getGlobal('sharedObject').someProperty = 'new value';
+require('electron').remote.getGlobal('sharedObject').someProperty = 'new value';
 ```
 
 ```javascript
 // In page 2.
-console.log(require('remote').getGlobal('sharedObject').someProperty);
+console.log(require('electron').remote.getGlobal('sharedObject').someProperty);
 ```
 
 ## My app's window/tray disappeared after a few minutes.
