@@ -1,5 +1,5 @@
 ---
-version: v1.2.1
+version: v1.2.2
 category: API
 redirect_from:
     - /docs/v0.24.0/api/menu-item/
@@ -88,7 +88,9 @@ The `role` property can have following values:
 * `cut`
 * `copy`
 * `paste`
+* `pasteandmatchstyle`
 * `selectall`
+* `delete`
 * `minimize` - Minimize current window
 * `close` - Close current window
 

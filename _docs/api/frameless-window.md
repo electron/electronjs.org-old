@@ -1,5 +1,5 @@
 ---
-version: v1.2.1
+version: v1.2.2
 category: API
 redirect_from:
     - /docs/v0.24.0/api/frameless-window/
@@ -56,8 +56,8 @@ To create a frameless window, you need to set `frame` to `false` in
 
 
 ```javascript
-const {BrowserWindow} = require('electron');
-let win = new BrowserWindow({width: 800, height: 600, frame: false});
+const {BrowserWindow} = require('electron')
+let win = new BrowserWindow({width: 800, height: 600, frame: false})
 ```
 
 ### Alternatives on OS X
@@ -70,7 +70,7 @@ the window controls ("traffic lights") for standard window actions.
 You can do so by specifying the new `titleBarStyle` option:
 
 ```javascript
-let win = new BrowserWindow({titleBarStyle: 'hidden'});
+let win = new BrowserWindow({titleBarStyle: 'hidden'})
 ```
 
 ## Transparent window
@@ -79,7 +79,7 @@ By setting the `transparent` option to `true`, you can also make the frameless
 window transparent:
 
 ```javascript
-let win = new BrowserWindow({transparent: true, frame: false});
+let win = new BrowserWindow({transparent: true, frame: false})
 ```
 
 ### Limitations
@@ -100,6 +100,16 @@ let win = new BrowserWindow({transparent: true, frame: false});
   NVidia drivers](https://code.google.com/p/chromium/issues/detail?id=369209) on
   Linux.
 * On Mac the native window shadow will not be shown on a transparent window.
+
+## Click-through window
+
+To create a click-through window, i.e. making the window ignore all mouse
+events, you can call the [win.setIgnoreMouseEvents(ignore)][ignore-mouse-events]
+API:
+
+```javascript
+win.setIgnoreMouseEvents(true)
+```
 
 ## Draggable region
 
@@ -150,3 +160,5 @@ On some platforms, the draggable area will be treated as a non-client frame, so
 when you right click on it a system menu will pop up. To make the context menu
 behave correctly on all platforms you should never use a custom context menu on
 draggable areas.
+
+[ignore-mouse-events]: http://electron.atom.io/docs/api/browser-window#winsetignoremouseeventsignore

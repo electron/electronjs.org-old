@@ -1,5 +1,5 @@
 ---
-version: v1.2.1
+version: v1.2.2
 category: API
 redirect_from:
     - /docs/v0.24.0/api/system-preferences/
@@ -81,7 +81,7 @@ Removes the subscriber with `id`.
 
 * `key` String
 * `type` String - Can be `string`, `boolean`, `integer`, `float`, `double`,
-  `url`.
+  `url`, `array`, `dictionary`
 
 Get the value of `key` in system preferences.
 
@@ -92,6 +92,9 @@ are:
 * `AppleAquaColorVariant: integer`
 * `AppleHighlightColor: string`
 * `AppleShowScrollBars: string`
+* `NSNavRecentPlaces: array`
+* `NSPreferredWebServices: dictionary`
+* `NSUserDictionaryReplacementItems: array`
 
 ### `systemPreferences.isAeroGlassEnabled()` _Windows_
 

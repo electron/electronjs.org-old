@@ -1,5 +1,5 @@
 ---
-version: v1.2.1
+version: v1.2.2
 category: API
 redirect_from:
     - /docs/v0.24.0/api/session/
@@ -248,7 +248,7 @@ Sets the proxy settings.
 When `pacScript` and `proxyRules` are provided together, the `proxyRules`
 option is ignored and `pacScript` configuration is applied.
 
-The `proxyRules` has to follow the rules bellow:
+The `proxyRules` has to follow the rules below:
 
 ```
 proxyRules = schemeProxies[";"<schemeProxies>]

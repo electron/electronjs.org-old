@@ -1,5 +1,5 @@
 ---
-version: v1.2.1
+version: v1.2.2
 category: API
 redirect_from:
     - /docs/v0.24.0/api/browser-window/
@@ -217,9 +217,13 @@ The `webPreferences` option is an object that can have following properties:
 * `scrollBounce` Boolean - Enables scroll bounce (rubber banding) effect on
   OS X. Default is `false`.
 * `blinkFeatures` String - A list of feature strings separated by `,`, like
-  `CSSVariables,KeyboardEventKey`. The full list of supported feature strings
-  can be found in the [setFeatureEnabledFromString][blink-feature-string]
-  function.
+  `CSSVariables,KeyboardEventKey` to enable. The full list of supported feature
+  strings can be found in the [RuntimeEnabledFeatures.in][blink-feature-string]
+  file.
+* `disableBlinkFeatures` String - A list of feature strings separated by `,`,
+  like `CSSVariables,KeyboardEventKey` to disable. The full list of supported
+  feature strings can be found in the
+  [RuntimeEnabledFeatures.in][blink-feature-string] file.
 * `defaultFontFamily` Object - Sets the default font for the font-family.
   * `standard` String - Defaults to `Times New Roman`.
   * `serif` String - Defaults to `Times New Roman`.
@@ -422,7 +426,11 @@ Find a window according to its ID.
 Adds DevTools extension located at `path`, and returns extension's name.
 
 The extension will be remembered so you only need to call this API once, this
-API is not for programming use.
+API is not for programming use. If you try to add an extension that has already
+been loaded, this method will not return and instead log a warning to the
+console.
+
+Method will also not return if the extension's manifest is missing or incomplete.
 
 ### `BrowserWindow.removeDevToolsExtension(name)`
 
@@ -966,10 +974,14 @@ Returns whether the window is visible on all workspaces.
 
 **Note:** This API always returns false on Windows.
 
-### `win.setIgnoreMouseEvents(ignore)` _OS X_
+### `win.setIgnoreMouseEvents(ignore)`
 
 * `ignore` Boolean
 
-Ignore all moused events that happened in the window.
+Makes the window ignore all mouse events.
 
-[blink-feature-string]: https://code.google.com/p/chromium/codesearch#chromium/src/out/Debug/gen/blink/platform/RuntimeEnabledFeatures.cpp&sq=package:chromium&type=cs&l=576
+All mouse events happened in this window will be passed to the window below
+this window, but if this window has focus, it will still receive keyboard
+events.
+
+[blink-feature-string]: https://cs.chromium.org/chromium/src/third_party/WebKit/Source/platform/RuntimeEnabledFeatures.in
