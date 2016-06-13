@@ -1258,3 +1258,16 @@
     - "files"
   icon: "cozy-desktop.png"
   license: "AGPLv3"
+-
+  name: "WeFlow"
+  description: "A Web development workflow tool based on tmt-workflow"
+  website: "http://weflow.io/"
+  repository: "https://github.com/weixin/WeFlow"
+  keywords:
+    - "Web Development"
+    - "Workflow"
+    - "Gulp"
+    - "Grunt"
+    - "Developer Tool"
+  license: "MIT"
+  icon: "weflow.png"
