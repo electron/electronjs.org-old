@@ -1,5 +1,5 @@
 {% unless app.disabled %}
-<a href='{{ app.website }}' target='_blank' title='{{ app.name }} &mdash; {{ app.description | escape }}' class='featured-app'>
+<a href='{{ app.website }}' target='_blank' title='{{ app.name }} - {{ app.description | escape }}' class='featured-app'>
   <div class='featured-app-logo-wrapper'>
     <img class='featured-app-logo' src='{{ site.baseurl }}/images/apps/{{ app.icon }}' alt='{{ app.name }}'>
   </div>
