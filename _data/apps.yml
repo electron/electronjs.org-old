@@ -1282,3 +1282,17 @@
     - "sync"
   license: "GPLv2"
   icon: "simplenote.png"
+-
+  name: "Socialcast"
+    description: "Socialcast is an enterprise social network platform"
+    website: "http://socialcast.com/"
+    respository: ""
+    keywords:
+      - "enterprise"
+      - "social network"
+      - "collaboration"
+      - "communication"
+      - "conversation"
+      - "productivity"
+    license: ""
+    icon: "socialcast.png"
