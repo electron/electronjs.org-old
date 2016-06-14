@@ -1271,3 +1271,14 @@
     - "Developer Tool"
   license: "MIT"
   icon: "weflow.png"
+-
+  name: "Simplenote"
+  description: "Simplenote is an easy way to keep notes, lists, ideas and more."
+  website: "https://simplenote.com"
+  repository: "https://github.com/Automattic/simplenote-electron"
+  keywords:
+    - "notes"
+    - "utility"
+    - "sync"
+  license: "GPLv2"
+  icon: "simplenote.png"
