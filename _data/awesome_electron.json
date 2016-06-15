@@ -1,45 +1,5 @@
 [
   {
-    "name": "Apps",
-    "href": "#apps"
-  },
-  {
-    "name": "Boilerplates",
-    "href": "#boilerplates"
-  },
-  {
-    "name": "Tools",
-    "href": "#tools"
-  },
-  {
-    "name": "Components",
-    "href": "#components"
-  },
-  {
-    "name": "Documentation",
-    "href": "#documentation"
-  },
-  {
-    "name": "Articles",
-    "href": "#articles"
-  },
-  {
-    "name": "Videos",
-    "href": "#videos"
-  },
-  {
-    "name": "Podcasts",
-    "href": "#podcasts"
-  },
-  {
-    "name": "Community",
-    "href": "#community"
-  },
-  {
-    "name": "Tips",
-    "href": "#tips"
-  },
-  {
     "name": "WebTorrent",
     "href": "https://github.com/feross/webtorrent-app",
     "description": "Streaming torrent client.",
@@ -48,7 +8,7 @@
   },
   {
     "name": "Min",
-    "href": "https://github.com/PalmerAL/Min",
+    "href": "https://github.com/minbrowser/min",
     "description": "Minimal web browser.",
     "category": "apps",
     "subcategory": "open_source"
@@ -712,6 +672,62 @@
     "subcategory": "open_source"
   },
   {
+    "name": "Ghost",
+    "href": "https://github.com/tryghost/ghost-desktop",
+    "description": "A professional publishing platform.",
+    "category": "apps",
+    "subcategory": "open_source"
+  },
+  {
+    "name": "Anatine",
+    "href": "https://github.com/sindresorhus/anatine",
+    "description": "Pristine Twitter app.",
+    "category": "apps",
+    "subcategory": "open_source"
+  },
+  {
+    "name": "Mattermost",
+    "href": "https://github.com/mattermost/desktop",
+    "description": "Mattermost client.",
+    "category": "apps",
+    "subcategory": "open_source"
+  },
+  {
+    "name": "Whatsie",
+    "href": "https://github.com/Aluxian/Whatsie",
+    "description": "Unofficial WhatsApp app.",
+    "category": "apps",
+    "subcategory": "open_source"
+  },
+  {
+    "name": "PupaFM",
+    "href": "https://github.com/xwartz/PupaFM",
+    "description": "DoubanFM music player.",
+    "category": "apps",
+    "subcategory": "open_source"
+  },
+  {
+    "name": "MediumDesk",
+    "href": "https://github.com/sivragav/mediumdesk",
+    "description": "Unofficial Medium app.",
+    "category": "apps",
+    "subcategory": "open_source"
+  },
+  {
+    "name": "Lightgallery",
+    "href": "https://github.com/sachinchoolur/lightgallery-desktop",
+    "description": "Image viewer.",
+    "category": "apps",
+    "subcategory": "open_source"
+  },
+  {
+    "name": "Crypter",
+    "href": "https://github.com/HR/Crypter",
+    "description": "Secure encryption client.",
+    "category": "apps",
+    "subcategory": "open_source"
+  },
+  {
     "name": "GitKraken",
     "href": "http://www.gitkraken.com",
     "description": "Git client.",
@@ -859,6 +875,27 @@
     "subcategory": "closed_source"
   },
   {
+    "name": "MongoDB Compass",
+    "href": "https://www.mongodb.com/products/compass",
+    "description": "Official MongoDB app.",
+    "category": "apps",
+    "subcategory": "closed_source"
+  },
+  {
+    "name": "Freeter",
+    "href": "https://freeter.io",
+    "description": "Organizer for freelancers & creatives.",
+    "category": "apps",
+    "subcategory": "closed_source"
+  },
+  {
+    "name": "WhatsApp",
+    "href": "https://www.whatsapp.com/download/",
+    "description": "Official WhatsApp app.",
+    "category": "apps",
+    "subcategory": "closed_source"
+  },
+  {
     "name": "electron-boilerplate",
     "href": "https://github.com/sindresorhus/electron-boilerplate",
     "description": "Boilerplate to kickstart creating an app.",
@@ -889,8 +926,27 @@
     "category": "boilerplates"
   },
   {
+    "name": "electron-quick-start",
+    "href": "https://github.com/electron/electron-quick-start",
+    "description": "Clone the repo to try a simple app.",
+    "category": "boilerplates"
+  },
+  {
+    "name": "bozon",
+    "href": "https://github.com/railsware/bozon",
+    "description": "Scaffold, run, test, and package your app.",
+    "category": "boilerplates"
+  },
+  {
+    "name": "devtron",
+    "href": "https://github.com/electron/devtron",
+    "description": "Official DevTools extension.",
+    "category": "tools",
+    "subcategory": "for_electron"
+  },
+  {
     "name": "electron-prebuilt",
-    "href": "https://github.com/mafintosh/electron-prebuilt",
+    "href": "https://github.com/electron-userland/electron-prebuilt",
     "description": "Install prebuilt Electron binaries for command-line use using npm.",
     "category": "tools",
     "subcategory": "for_electron"
@@ -904,7 +960,7 @@
   },
   {
     "name": "electron-builder",
-    "href": "https://github.com/loopline-systems/electron-builder",
+    "href": "https://github.com/electron-userland/electron-builder",
     "description": "Create installers.",
     "category": "tools",
     "subcategory": "for_electron"
@@ -988,14 +1044,14 @@
   },
   {
     "name": "electron-rebuild",
-    "href": "https://github.com/paulcbetts/electron-rebuild",
+    "href": "https://github.com/electron/electron-rebuild",
     "description": "Rebuild native Node.js modules against the currently installed Electron version.",
     "category": "tools",
     "subcategory": "for_electron"
   },
   {
     "name": "electron-compile",
-    "href": "https://github.com/paulcbetts/electron-compile",
+    "href": "https://github.com/electron/electron-compile",
     "description": "Use ES2015, CoffeeScript, LESS, SCSS in your app without a precompilation step.",
     "category": "tools",
     "subcategory": "for_electron"
@@ -1120,6 +1176,41 @@
     "subcategory": "for_electron"
   },
   {
+    "name": "spectron",
+    "href": "https://github.com/electron/spectron",
+    "description": "Test Electron apps using ChromeDriver.",
+    "category": "tools",
+    "subcategory": "for_electron"
+  },
+  {
+    "name": "babel-preset-electron",
+    "href": "https://github.com/emorikawa/babel-preset-electron",
+    "description": "Babel preset that only compiles what's necessary for a particular Electron version.",
+    "category": "tools",
+    "subcategory": "for_electron"
+  },
+  {
+    "name": "electron-is",
+    "href": "https://github.com/delvedor/electron-is",
+    "description": "Useful 'is' utility functions.",
+    "category": "tools",
+    "subcategory": "for_electron"
+  },
+  {
+    "name": "electron-osx-appearance",
+    "href": "https://github.com/danhp/electron-osx-appearance",
+    "description": "Simplified API for accessing OS X's appearance settings.",
+    "category": "tools",
+    "subcategory": "for_electron"
+  },
+  {
+    "name": "electron-config",
+    "href": "https://github.com/sindresorhus/electron-config",
+    "description": "Persist user settings and other data.",
+    "category": "tools",
+    "subcategory": "for_electron"
+  },
+  {
     "name": "devtool",
     "href": "https://github.com/Jam3/devtool",
     "description": "Debug Node.js with Chrome DevTools.",
@@ -1172,6 +1263,13 @@
     "name": "electron-har",
     "href": "https://github.com/shyiko/electron-har",
     "description": "Command-line tool for generating HTTP Archive (HAR).",
+    "category": "tools",
+    "subcategory": "using_electron"
+  },
+  {
+    "name": "electron-windows-store",
+    "href": "https://github.com/catalystcode/electron-windows-store",
+    "description": "Turn Electron apps into Windows Store AppX packages.",
     "category": "tools",
     "subcategory": "using_electron"
   },
@@ -1295,6 +1393,11 @@
     "category": "videos"
   },
   {
+    "name": "The New Desktop: Electron, React, & Pixel-Perfect Native-Feeling Experiences",
+    "href": "https://www.youtube.com/watch?v=jRPUB-D1Wx0",
+    "category": "videos"
+  },
+  {
     "name": "JavaScript Jabber: Electron with Jessica Lord and Amy Palamountain",
     "href": "https://devchat.tv/js-jabber/193-jsj-electron-with-jessica-lord-and-amy-palamountain",
     "category": "podcasts"
@@ -1305,7 +1408,7 @@
     "category": "community"
   },
   {
-    "name": "StackOverflow",
+    "name": "Stack Overflow",
     "href": "http://stackoverflow.com/questions/tagged/electron",
     "category": "community"
   },
