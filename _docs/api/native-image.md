@@ -1,5 +1,5 @@
 ---
-version: v1.2.2
+version: v1.2.3
 category: API
 redirect_from:
     - /docs/v0.24.0/api/native-image/
@@ -145,6 +145,12 @@ Creates an empty `nativeImage` instance.
 
 Creates a new `nativeImage` instance from a file located at `path`.
 
+```javascript
+const nativeImage = require('electron').nativeImage;
+
+let image = nativeImage.createFromPath('/Users/somebody/images/icon.png');
+```
+
 ### `nativeImage.createFromBuffer(buffer[, scaleFactor])`
 
 * `buffer` [Buffer][buffer]
@@ -162,12 +168,6 @@ Creates a new `nativeImage` instance from `dataURL`.
 ## Instance Methods
 
 The following methods are available on instances of `nativeImage`:
-
-```javascript
-const nativeImage = require('electron').nativeImage;
-
-let image = nativeImage.createFromPath('/Users/somebody/images/icon.png');
-```
 
 ### `image.toPng()`
 

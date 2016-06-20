@@ -1,5 +1,5 @@
 ---
-version: v1.2.2
+version: v1.2.3
 category: API
 redirect_from:
     - /docs/v0.24.0/api/auto-updater/
@@ -75,8 +75,7 @@ This is a requirement of `Squirrel.Mac`.
 
 On Windows, you have to install your app into a user's machine before you can
 use the `autoUpdater`, so it is recommended that you use the
-[electron-winstaller][installer-lib] module or the [grunt-electron-installer][installer]
-package to generate a Windows installer.
+[electron-winstaller][installer-lib], [electron-builder][electron-builder-lib] or the [grunt-electron-installer][installer] package to generate a Windows installer.
 
 The installer generated with Squirrel will create a shortcut icon with an
 [Application User Model ID][app-user-model-id] in the format of
@@ -136,12 +135,12 @@ On Windows only `releaseName` is available.
 
 The `autoUpdater` object has the following methods:
 
-### `autoUpdater.setFeedURL(url)`
+### `autoUpdater.setFeedURL(url[, requestHeaders])`
 
 * `url` String
+* `requestHeaders` Object _OS X_ - HTTP request headers.
 
-Sets the `url` and initialize the auto updater. The `url` cannot be changed
-once it is set.
+Sets the `url` and initialize the auto updater.
 
 ### `autoUpdater.checkForUpdates()`
 
@@ -158,6 +157,7 @@ should only be called after `update-downloaded` has been emitted.
 [squirrel-windows]: https://github.com/Squirrel/Squirrel.Windows
 [installer]: https://github.com/electron/grunt-electron-installer
 [installer-lib]: https://github.com/electron/windows-installer
+[electron-builder-lib]: https://github.com/electron-userland/electron-builder
 [app-user-model-id]: https://msdn.microsoft.com/en-us/library/windows/desktop/dd378459(v=vs.85).aspx
 [electron-release-server]: https://github.com/ArekSredzki/electron-release-server
 [squirrel-updates-server]: https://github.com/Aluxian/squirrel-updates-server

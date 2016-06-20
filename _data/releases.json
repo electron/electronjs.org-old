@@ -1,5 +1,23 @@
 [
   {
+    "url": "https://api.github.com/repos/electron/electron/releases/3455550",
+    "assets_url": "https://api.github.com/repos/electron/electron/releases/3455550/assets",
+    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/3455550/assets{?name,label}",
+    "html_url": "https://github.com/electron/electron/releases/tag/v1.2.3",
+    "id": 3455550,
+    "tag_name": "v1.2.3",
+    "target_commitish": "master",
+    "name": "electron v1.2.3",
+    "draft": false,
+    "prerelease": false,
+    "created_at": "2016-06-16T03:38:00Z",
+    "published_at": "2016-06-16T06:02:41Z",
+    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v1.2.3",
+    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v1.2.3",
+    "body": "Changelog:\r\n\r\n* Use app's name as default window title. [#5945](https://github.com/electron/electron/pull/5945)\r\n* Add `ready-to-show` event to `BrowserWindow`. [#6026](https://github.com/electron/electron/pull/6026)\r\n* Add `--abi` command line switch to default app. [#5911](https://github.com/electron/electron/pull/5911)\r\n* Add `showDefinitionForSelection()` method to `WebContents` and `<webview>` tag. [#5921](https://github.com/electron/electron/pull/5921)\r\n* Add `pepperFlashSystemPlugin` to the paths of `app.getPath(name)` API. [#5943](https://github.com/electron/electron/pull/5943)\r\n* Add `protocol` property to `Session` to allow custom protocol for `partition`. [#5904](https://github.com/electron/electron/pull/5904)\r\n* Add `isPaused`, `canResume`, `getState` APIs to `DownloadItem`. [#5959](https://github.com/electron/electron/pull/5959)\r\n* Add support for a few more `chrome.*` APIs for devtools extensions. [#5924](https://github.com/electron/electron/pull/5924)\r\n* Add `BrowserWindow.getDevToolsExtensions()` API. [#5965](https://github.com/electron/electron/pull/5965)\r\n* Add `focusable` option to `BrowserWindow`. [#6023](https://github.com/electron/electron/pull/6023)\r\n* Add `web-contents-created` event to `app`. [#6029](https://github.com/electron/electron/pull/6029)\r\n* Fix devtools extension not working for `<webview>` tag. [#5913](https://github.com/electron/electron/pull/5913)\r\n* Fix devtools extension not working for sessions with `partition`. [#5904](https://github.com/electron/electron/pull/5904)\r\n* Fix random crash when using custom protocol. [#5904](https://github.com/electron/electron/pull/5904)\r\n* Fix `window.opener` being `null` in window opened by `<webview>` tag. [#5953](https://github.com/electron/electron/pull/5953)\r\n* Fix crash when closing window with devtools opened. [brightray#226](https://github.com/electron/brightray/pull/226)\r\n\r\n__OS X__\r\n\r\n* Add `requestHeaders` parameter for `autoUpdater.setFeedURL(url[, requestHeaders])` API. [#5879](https://github.com/electron/electron/pull/5879)\r\n* Fix `maximizable: false` not working for frameless window. [#5944](https://github.com/electron/electron/pull/5944)\r\n\r\n__Windows__\r\n\r\n* Add `win.setFocusable(focusable)` API. [#6013](https://github.com/electron/electron/pull/6013) [#6023](https://github.com/electron/electron/pull/6023)\r\n* Fix `autoUpdater` not waiting for current app to quit before launching newly installed app. [#6037](https://github.com/electron/electron/pull/6037)\r\n",
+    "version": "1.2.3"
+  },
+  {
     "url": "https://api.github.com/repos/electron/electron/releases/3397058",
     "assets_url": "https://api.github.com/repos/electron/electron/releases/3397058/assets",
     "upload_url": "https://uploads.github.com/repos/electron/electron/releases/3397058/assets{?name,label}",
@@ -520,23 +538,5 @@
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.35.6",
     "body": "Changeling:\r\n\r\n* Fix wrong `appData` and `userData` dir values.",
     "version": "0.35.6"
-  },
-  {
-    "url": "https://api.github.com/repos/electron/electron/releases/2391784",
-    "assets_url": "https://api.github.com/repos/electron/electron/releases/2391784/assets",
-    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/2391784/assets{?name,label}",
-    "html_url": "https://github.com/electron/electron/releases/tag/v0.36.3",
-    "id": 2391784,
-    "tag_name": "v0.36.3",
-    "target_commitish": "master",
-    "name": "electron v0.36.3",
-    "draft": false,
-    "prerelease": false,
-    "created_at": "2016-01-08T05:40:47Z",
-    "published_at": "2016-01-11T02:23:14Z",
-    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.36.3",
-    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.36.3",
-    "body": "Changelog:\r\n\r\n* Add support for Widevine CDM plugin.\r\n* Add `isDevToolsFocused` method to `WebContents` and `<webview>`.\r\n* Add `did-navigate` and `did-navigate-in-page` events to `WebContents` and `<webview>`.\r\n* Add `will-navigate`, `devtools-opened`, `devtools-closed`, `devtools-focused` events to `<webview>`.\r\n* Add `blinkFeatures` option to `webPreferences`.\r\n* Remove `overlayScrollbars`, `sharedWorker`, `pageVisibility` options from `webPreferences`.\r\n* Localize the default string resources in HTML elements.\r\n* Allow using `fetch` for URLs registered as privilege.\r\n* Fix memory leak in `remote` module.\r\n* Fix distorted image when calling `capturePage` with no rect.\r\n* Fix crash when using `protocol.registerHttpProtocol` without internet connection.\r\n\r\n__OS X__\r\n\r\n* Fix `drop-files` not firing when dragging from the dock.\r\n* Fix `app.clearRecentDocuments` not working.\r\n* Fix crash when calling `dialog.showSaveDialog` with filters with no extensions.\r\n* Fix crash when creating `Window` menu with no submenu items.\r\n* Fix `Tray.setPressedImage` not working after turning off highlight mode.\r\n* Fix unable to hide fullscreen button on EL Capitan.\r\n\r\n__Windows__\r\n\r\n* Fix recursive loop when calling `mkdirp` inside an `asar` archive.\r\n* Fix the window menu bar not behaving correctly.\r\n* Fix `dialog.openSaveDialog` adding extension to filename when it shouldn't.\r\n* Fix bad typing performance.\r\n",
-    "version": "0.36.3"
   }
 ]

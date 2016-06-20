@@ -1299,6 +1299,28 @@
     - "Scratch"
   icon: "gausssense.png"
 -
+  name: "GRAP"
+  description: "Business communication service"
+  website: "https://www.grap.io"
+  keywords:
+    - "GRAP"
+    - "business"
+    - "communication"
+    - "sns"
+    - "social"
+    - "messanger"
+  icon: "grap.png"
+-
+  name: "devRant.io (Unofficial)"
+  description: "Unofficial devRant app that lets you connect with fellow developers over fun rants about tech"
+  website: "https://github.com/Meadowcottage/devRant.io"
+  repository: "https://github.com/Meadowcottage/devRant.io"
+  keywords:
+    - "Social Network"
+    - "Developers"
+  license: "GPLv2"
+  icon: "devrant.png"
+-
   name: "Jasper"
   description: "The Issue Reader for GitHub"
   website: "https://jasperapp.io"
