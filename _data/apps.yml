@@ -1298,3 +1298,15 @@
     - "Unity"
     - "Scratch"
   icon: "gausssense.png"
+-
+  name: "GRAP"
+  description: "Business communication service"
+  website: "https://www.grap.io"
+  keywords:
+    - "GRAP"
+    - "business"
+    - "communication"
+    - "sns"
+    - "social"
+    - "messanger"
+  icon: "grap.png"
