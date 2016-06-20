@@ -1300,10 +1300,9 @@
   icon: "gausssense.png"
 -
   name: "Jasper"
-  description: "The GitHub Issue Reader"
+  description: "The Issue Reader for GitHub"
   website: "https://jasperapp.io"
   repository: "https://github.com/jasperapp/jasper"
-  license: ""
   keywords:
     - "github"
     - "issue"
