@@ -1,5 +1,5 @@
 ---
-version: v1.2.2
+version: v1.2.3
 category: API
 redirect_from:
     - /docs/v0.24.0/api/remote/
@@ -122,7 +122,7 @@ exports.withLocalCallback = () => {
 
 ```javascript
 // renderer process
-const mapNumbers = require('remote').require('./mapNumbers');
+const mapNumbers = require('electron').remote.require('./mapNumbers');
 
 const withRendererCb = mapNumbers.withRendererCallback(x => x + 1);
 

@@ -1,5 +1,5 @@
 ---
-version: v1.2.2
+version: v1.2.3
 category: API
 redirect_from:
     - /docs/v0.24.0/api/menu-item/
@@ -101,6 +101,7 @@ On OS X `role` can also have following additional values:
 * `hideothers` - Map to the `hideOtherApplications` action
 * `unhide` - Map to the `unhideAllApplications` action
 * `front` - Map to the `arrangeInFront` action
+* `zoom` - Map to the `performZoom` action
 * `window` - The submenu is a "Window" menu
 * `help` - The submenu is a "Help" menu
 * `services` - The submenu is a "Services" menu

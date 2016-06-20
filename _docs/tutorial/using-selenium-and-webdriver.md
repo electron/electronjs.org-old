@@ -1,5 +1,5 @@
 ---
-version: v1.2.2
+version: v1.2.3
 category: Tutorial
 redirect_from:
     - /docs/v0.24.0/tutorial/using-selenium-and-webdriver/
@@ -85,12 +85,12 @@ app.start().then(function () {
 }).then(function (title) {
   // Verify the window's title
   assert.equal(title, 'My App')
-}).then(function () {
-  // Stop the application
-  return app.stop()
 }).catch(function (error) {
   // Log any failures
   console.error('Test failed', error.message)
+}).then(function () {
+  // Stop the application
+  return app.stop()
 })
 ```
 
