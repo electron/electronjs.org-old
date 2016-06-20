@@ -1300,7 +1300,7 @@
   icon: "gausssense.png"
 -
   name: "devRant.io"
-  description: "Connect with fellow developers over fun rants about tech"
+  description: "Unofficial devRant app that let's you connect with fellow developers over fun rants about tech"
   website: "https://github.com/Meadowcottage/devRant.io"
   repository: "https://github.com/Meadowcottage/devRant.io"
   keywords:
