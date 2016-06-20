@@ -1,5 +1,5 @@
 ---
-version: v1.2.2
+version: v1.2.3
 category: API
 redirect_from:
     - /docs/v0.24.0/api/web-view-tag/
@@ -531,6 +531,10 @@ Sends an input `event` to the page.
 
 See [webContents.sendInputEvent](http://electron.atom.io/docs/api/web-contents##webcontentssendinputeventevent)
 for detailed description of `event` object.
+
+### `<webview>.showDefinitionForSelection()` _OS X_
+
+Shows pop-up dictionary that searches the selected word on the page.
 
 ### `<webview>.getWebContents()`
 

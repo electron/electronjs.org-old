@@ -1,5 +1,5 @@
 ---
-version: v1.2.2
+version: v1.2.3
 category: API
 redirect_from:
     - /docs/v0.24.0/api/web-contents/
@@ -998,6 +998,10 @@ win.webContents.on('did-finish-load', () => {
   });
 });
 ```
+
+### `webContents.showDefinitionForSelection()` _OS X_
+
+Shows pop-up dictionary that searches the selected word on the page.
 
 ## Instance Properties
 

@@ -1,5 +1,5 @@
 ---
-version: v1.2.2
+version: v1.2.3
 category: API
 redirect_from:
     - /docs/v0.24.0/api/app/
@@ -202,6 +202,15 @@ Returns:
 
 Emitted when a new [browserWindow](http://electron.atom.io/docs/api/browser-window) is created.
 
+### Event: 'web-contents-created'
+
+Returns:
+
+* `event` Event
+* `webContents` WebContents
+
+Emitted when a new [webContents](http://electron.atom.io/docs/api/web-contents) is created.
+
 ### Event: 'certificate-error'
 
 Returns:
@@ -388,6 +397,7 @@ You can request the following paths by the name:
 * `music` Directory for a user's music.
 * `pictures` Directory for a user's pictures.
 * `videos` Directory for a user's videos.
+* `pepperFlashSystemPlugin`  Full path to the system version of the Pepper Flash plugin.
 
 ### `app.setPath(name, path)`
 

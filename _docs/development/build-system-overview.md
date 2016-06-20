@@ -1,5 +1,5 @@
 ---
-version: v1.2.2
+version: v1.2.3
 category: Development
 redirect_from:
     - /docs/v0.24.0/development/build-system-overview/
@@ -49,7 +49,7 @@ be found in the `.gyp` and `.gypi` files.
 
 Following `gyp` files contain the main rules for building Electron:
 
-* `atom.gyp` defines how Electron itself is built.
+* `electron.gyp` defines how Electron itself is built.
 * `common.gypi` adjusts the build configurations of Node to make it build
   together with Chromium.
 * `vendor/brightray/brightray.gyp` defines how `brightray` is built and
