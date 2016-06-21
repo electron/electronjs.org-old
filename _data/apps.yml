@@ -1320,3 +1320,14 @@
     - "Developers"
   license: "GPLv2"
   icon: "devrant.png"
+-
+  name: "Jasper"
+  description: "The Issue Reader for GitHub"
+  website: "https://jasperapp.io"
+  repository: "https://github.com/jasperapp/jasper"
+  keywords:
+    - "github"
+    - "issue"
+    - "reader"
+    - "developer tool"
+  icon: "jasper.png"
