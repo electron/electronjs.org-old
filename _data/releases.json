@@ -1,5 +1,23 @@
 [
   {
+    "url": "https://api.github.com/repos/electron/electron/releases/3494891",
+    "assets_url": "https://api.github.com/repos/electron/electron/releases/3494891/assets",
+    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/3494891/assets{?name,label}",
+    "html_url": "https://github.com/electron/electron/releases/tag/v1.2.4",
+    "id": 3494891,
+    "tag_name": "v1.2.4",
+    "target_commitish": "master",
+    "name": "electron v1.2.4",
+    "draft": false,
+    "prerelease": false,
+    "created_at": "2016-06-22T01:26:54Z",
+    "published_at": "2016-06-22T04:21:29Z",
+    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v1.2.4",
+    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v1.2.4",
+    "body": "Changelog:\r\n\r\n* Update to Chrome 51.0.2704.103. [#6134](https://github.com/electron/electron/pull/6134)\r\n* Add support for child windows. [#6140](https://github.com/electron/electron/pull/6140)\r\n* Add `tray.getBounds()` API. [#6159](https://github.com/electron/electron/pull/6159)\r\n* Add `quit`, `togglefullscreen` roles to `MenuItem`. [#6154](https://github.com/electron/electron/pull/6154) [#6166](https://github.com/electron/electron/pull/6166)\r\n* Fix members of `protocol` module not being set. [#6095](https://github.com/electron/electron/pull/6095)\r\n* Fix devtools extensions not showing up on first load. [#6115](https://github.com/electron/electron/pull/6095)\r\n* Fix output in renderer process not being redirected to the main process. [#6130](https://github.com/electron/electron/pull/6130)\r\n* Fix `<webview>` tag having wrong size when `transform` style is applied. [#6128](https://github.com/electron/electron/pull/6128)\r\n* Fix crash when releasing contexts in renderer process. [#6144](https://github.com/electron/electron/pull/6144)\r\n* Fix rejection of remote `Promise` being treated as unhandled rejection in the main process. [#6151](https://github.com/electron/electron/pull/6151)\r\n* Fix color of menu bar not being updated when system theme changes. [#6161](https://github.com/electron/electron/pull/6161)\r\n* Fix wrong `role` when `menu.insert(item)` is used. [#6169](https://github.com/electron/electron/pull/6169)\r\n\r\n__macOS__\r\n\r\n* Add `systemPreferences.subscribeLocalNotification(event, callback)` and\r\n`systemPreferences.unsubscribeLocalNotification(id)` APIs. [#6150](https://github.com/electron/electron/pull/6150)\r\n* Fix frameless window not showing in `Window` menu. [#6089](https://github.com/electron/electron/pull/6089), [#6097](https://github.com/electron/electron/pull/6097)\r\n* Fix crash when calling `win.setProgressBar` after `app.dock.setIcon`. [#6091](https://github.com/electron/electron/pull/6091)\r\n* Fix context menu always choosing first item by default. [#6110](https://github.com/electron/electron/pull/6110)\r\n* Fix `Delete` not working as accelerator. [#6168](https://github.com/electron/electron/pull/6168)\r\n\r\n__Linux__\r\n\r\n* Fix app indicators using random IDs. [#6145](https://github.com/electron/electron/pull/6145)\r\n* Fix message boxes and file dialogs not being modal. [#6160](https://github.com/electron/electron/pull/6160)\r\n\r\n__Windows__\r\n\r\n* Fix bounds of `Tray` not respecting scale factor.",
+    "version": "1.2.4"
+  },
+  {
     "url": "https://api.github.com/repos/electron/electron/releases/3455550",
     "assets_url": "https://api.github.com/repos/electron/electron/releases/3455550/assets",
     "upload_url": "https://uploads.github.com/repos/electron/electron/releases/3455550/assets{?name,label}",
@@ -520,23 +538,5 @@
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.36.4",
     "body": "Changelog:\r\n\r\n* `session.setProxy(config)` API now accepts an `Object` instead of `String`.\r\n* `BrowserWindow.getFocusedWindow()` API now returns `null` instead of `undefined` when there is no focused window.\r\n* Add `session.flushStorageData()` API.\r\n* Add `session.getCacheSize(callback)` API.\r\n* Add `BrowserWindow.getNativeWindowHandle()` API.\r\n* Add `defaultId` option for `dialog.showMessageBox(options)` API.\r\n* Add `insertText` and `executeJavaScript` methods to `webFrame` module.\r\n* Add `insertText` method to `webContents` and `<webview>`.\r\n* Fix wrong aspect ratio in Netflix videos.\r\n* Fix source code highlighting not working in devtools.\r\n* Fix `<webview>.src` not working before `onload` event.\r\n\r\n__Linux__\r\n\r\n* Fix `--touch-devices` command line switch not working.\r\n\r\n__Windows__\r\n\r\n* Fix DRM not working in Adobe Flash Player plugin.\r\n",
     "version": "0.36.4"
-  },
-  {
-    "url": "https://api.github.com/repos/electron/electron/releases/2402717",
-    "assets_url": "https://api.github.com/repos/electron/electron/releases/2402717/assets",
-    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/2402717/assets{?name,label}",
-    "html_url": "https://github.com/electron/electron/releases/tag/v0.35.6",
-    "id": 2402717,
-    "tag_name": "v0.35.6",
-    "target_commitish": "master",
-    "name": "electron v0.35.6",
-    "draft": false,
-    "prerelease": false,
-    "created_at": "2015-12-25T05:45:08Z",
-    "published_at": "2016-01-11T06:38:06Z",
-    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.35.6",
-    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.35.6",
-    "body": "Changeling:\r\n\r\n* Fix wrong `appData` and `userData` dir values.",
-    "version": "0.35.6"
   }
 ]

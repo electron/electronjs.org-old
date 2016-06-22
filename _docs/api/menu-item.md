@@ -1,5 +1,5 @@
 ---
-version: v1.2.3
+version: v1.2.4
 category: API
 redirect_from:
     - /docs/v0.24.0/api/menu-item/
@@ -93,8 +93,10 @@ The `role` property can have following values:
 * `delete`
 * `minimize` - Minimize current window
 * `close` - Close current window
+* `quit`- Quit the application
+* `togglefullscreen`- Toggle full screen mode on the current window
 
-On OS X `role` can also have following additional values:
+On macOS `role` can also have following additional values:
 
 * `about` - Map to the `orderFrontStandardAboutPanel` action
 * `hide` - Map to the `hide` action
@@ -106,7 +108,7 @@ On OS X `role` can also have following additional values:
 * `help` - The submenu is a "Help" menu
 * `services` - The submenu is a "Services" menu
 
-When specifying `role` on OS X, `label` and `accelerator` are the only options
+When specifying `role` on macOS, `label` and `accelerator` are the only options
 that will affect the MenuItem. All other options will be ignored.
 
 ## Instance Properties

@@ -1,5 +1,5 @@
 ---
-version: v1.2.3
+version: v1.2.4
 category: API
 redirect_from:
     - /docs/v0.24.0/api/chrome-command-line-switches/

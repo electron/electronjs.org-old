@@ -1,5 +1,5 @@
 ---
-version: v1.2.3
+version: v1.2.4
 category: Development
 redirect_from:
     - /docs/v0.24.0/development/build-instructions-osx/
@@ -35,17 +35,17 @@ redirect_from:
     - /docs/v0.37.8/development/build-instructions-osx/
     - /docs/latest/development/build-instructions-osx/
 source_url: 'https://github.com/electron/electron/blob/master/docs/development/build-instructions-osx.md'
-title: "Build Instructions (OS X)"
-sort_title: "build instructions (os x)"
+title: "Build Instructions (macOS)"
+sort_title: "build instructions (macos)"
 ---
 
-# Build Instructions (OS X)
+# Build Instructions (macOS)
 
-Follow the guidelines below for building Electron on OS X.
+Follow the guidelines below for building Electron on macOS.
 
 ## Prerequisites
 
-* OS X >= 10.8
+* macOS >= 10.8
 * [Xcode](https://developer.apple.com/technologies/tools/) >= 5.1
 * [node.js](http://nodejs.org) (external)
 
@@ -89,8 +89,8 @@ After building is done, you can find `Electron.app` under `out/D`.
 
 ## 32bit Support
 
-Electron can only be built for a 64bit target on OS X and there is no plan to
-support 32bit OS X in future.
+Electron can only be built for a 64bit target on macOS and there is no plan to
+support 32bit macOS in future.
 
 ## Tests
 
