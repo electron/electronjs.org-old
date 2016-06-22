@@ -1331,3 +1331,17 @@
     - "reader"
     - "developer tool"
   icon: "jasper.png"
+-
+  name: "Vrap"
+  description: "360 media player"
+  website: "http://www.airpano.com/vrap.php?set_language=2"
+  repository: ""
+  keywords:
+    - "360 video"
+    - "360 player"
+    - "VR Player"
+    - "360 panorama player"
+    - "make 360 video"
+    - "krpano"
+    - "developer tool"
+  icon: "jasper.png"
