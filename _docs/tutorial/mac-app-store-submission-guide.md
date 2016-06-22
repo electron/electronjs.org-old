@@ -1,5 +1,5 @@
 ---
-version: v1.2.3
+version: v1.2.4
 category: Tutorial
 redirect_from:
     - /docs/v0.24.0/tutorial/mac-app-store-submission-guide/
@@ -157,7 +157,7 @@ codesign -s "$APP_KEY" -f --entitlements "$PARENT_PLIST" "$APP_PATH"
 productbuild --component "$APP_PATH" /Applications --sign "$INSTALLER_KEY" "$RESULT_PATH"
 ```
 
-If you are new to app sandboxing under OS X, you should also read through
+If you are new to app sandboxing under macOS, you should also read through
 Apple's [Enabling App Sandbox][enable-app-sandbox] to have a basic idea, then
 add keys for the permissions needed by your app to the entitlements files.
 
