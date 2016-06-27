@@ -1345,3 +1345,15 @@
     - "krpano"
     - "developer tool"
   icon: "vrap_logo_256.png"
+-
+  name: "ProtoPie"
+  description: "Code-free prototyping tool for smart devices"
+  website: "https://protopie.io/"
+  repository: ""
+  keywords:
+    - "Prototyping"
+    - "Microinteraction"
+    - "Code-free"
+    - "Prototyping Tool"
+    - "Designers tool"
+  icon: "protopie.png"
