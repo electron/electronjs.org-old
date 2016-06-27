@@ -1,5 +1,5 @@
 ---
-version: v1.2.4
+version: v1.2.5
 category: Development
 redirect_from:
     - /docs/v0.24.0/development/source-code-directory-structure/

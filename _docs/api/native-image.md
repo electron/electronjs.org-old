@@ -1,5 +1,5 @@
 ---
-version: v1.2.4
+version: v1.2.5
 category: API
 redirect_from:
     - /docs/v0.24.0/api/native-image/
@@ -169,11 +169,11 @@ Creates a new `nativeImage` instance from `dataURL`.
 
 The following methods are available on instances of `nativeImage`:
 
-### `image.toPng()`
+### `image.toPNG()`
 
 Returns a [Buffer][buffer] that contains the image's `PNG` encoded data.
 
-### `image.toJpeg(quality)`
+### `image.toJPEG(quality)`
 
 * `quality` Integer (**required**) - Between 0 - 100.
 
