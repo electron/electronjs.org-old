@@ -1349,7 +1349,6 @@
   name: "ProtoPie"
   description: "Code-free prototyping tool for smart devices"
   website: "https://protopie.io/"
-  repository: ""
   keywords:
     - "Prototyping"
     - "Microinteraction"
