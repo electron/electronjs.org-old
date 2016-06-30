@@ -91,14 +91,6 @@
   icon: "wagon.png"
   featuredOnHomepage: true
 -
-  name: "Paws for Trello"
-  description: "Paws is a beautiful Trello client for Mac and Windows. It brings Trello to your desktop with native notifications, powerful shortcuts and more - away from the distractions of your browser."
-  website: "http://friendlyfox.es/paws/"
-  repository: ""
-  keywords: []
-  license: ""
-  icon: "paws-for-trello.png"
--
   name: "Particle Dev"
   description: "A professional IDE for Particle"
   website: "https://www.particle.io/dev"
@@ -1364,3 +1356,14 @@
     - "Prototyping Tool"
     - "Designers tool"
   icon: "protopie.png"
+-
+  name: "Paws for Trello"
+  description: "Paws is a beautiful Trello client for Mac and Windows. It brings Trello to your desktop with native notifications, powerful shortcuts and more - away from the distractions of your browser."
+  website: "http://friendlyfox.es/paws/"
+  keywords:
+    - "trello"
+    - "todo"
+    - "to do"
+    - "productivity"
+  icon: "paws-for-trello.png"
+-
