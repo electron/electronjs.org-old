@@ -1366,3 +1366,14 @@
     - "to do"
     - "productivity"
   icon: "paws-for-trello.png"
+-
+  name: "Yout"
+  description: "Yout Player is the new way to watch your playlists from youtube on desktop."
+  website: "https://youtplayer.github.io/"
+  keywords:
+    - "yout"
+    - "player"
+    - "youtube"
+    - "desktop"
+    - "playlist"
+  icon: "yout-player.png"
