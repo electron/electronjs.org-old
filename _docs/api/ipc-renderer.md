@@ -1,5 +1,5 @@
 ---
-version: v1.2.5
+version: v1.2.6
 category: API
 redirect_from:
     - /docs/v0.24.0/api/ipc-renderer/
