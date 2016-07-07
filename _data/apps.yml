@@ -1390,3 +1390,14 @@
     - "presentation"
     - "PowerPoint"
   icon: "phonepresenter.png"
+-
+  name: "Booker"
+  description: "Text editor with the power or Markdown"
+  website: "http://apps.meamka.me/booker/"
+  keywords:
+    - "writing"
+    - "productivity"
+    - "markdown"
+    - "html"
+    - "pdf"
+  icon: "booker.png"
