@@ -4,7 +4,7 @@ var path = require('path')
 var test = require('tape')
 var yaml = require('yamljs')
 
-test('Include process types for each API documentation page', function (t) {
+test('Include process categories for each API documentation page', function (t) {
   var docsPath = path.join(__dirname, '..', '_docs', 'api')
   var processes = yaml.load(path.join(__dirname, '..', '_data', 'processes.yml'))
 
@@ -19,7 +19,7 @@ test('Include process types for each API documentation page', function (t) {
     t.ok(apiProcess === 'Main Process'
       || apiProcess === 'Renderer Process'
       || apiProcess === 'Main and Renderer Process',
-      config.title + ' has process value of ' + apiProcess)
+      config.title + ' has process category of ' + apiProcess)
   })
   t.end()
 })
