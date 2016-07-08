@@ -106,3 +106,23 @@
   border-radius: $border-radius;
   background-color: $main-color-subtle;
 }
+
+.docs table {
+  th {
+    text-align: left;
+    padding: $spacer2;
+  }
+
+  tr {
+    border-bottom: 1px solid $border-color;
+    text-align: left;
+
+    td {
+      padding: $spacer2;
+      line-height: 1.4;
+      font-size: 14px;
+    }
+  }
+
+  width: 100%;
+}
