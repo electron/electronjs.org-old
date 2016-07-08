@@ -1358,12 +1358,13 @@
   icon: "protopie.png"
 -
   name: "Paws for Trello"
-  description: "Paws is a beautiful Trello client for Mac and Windows. It brings Trello to your desktop with native notifications, powerful shortcuts and more - away from the distractions of your browser."
-  website: "http://friendlyfox.es/paws/"
+  description: "Paws for Trello is a beautiful Trello client for Mac and Windows. It brings Trello to your desktop with native notifications, powerful shortcuts and more - away from the distractions of your browser."
+  website: "http://friendlyfox.es/pawsfortrello/"
   keywords:
     - "trello"
     - "todo"
     - "to do"
     - "productivity"
+    - "paws"
   icon: "paws-for-trello.png"
 -
