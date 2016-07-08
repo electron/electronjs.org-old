@@ -1,5 +1,5 @@
 ---
-version: v1.2.5
+version: v1.2.6
 category: API
 redirect_from:
     - /docs/v0.24.0/api/browser-window/
@@ -584,11 +584,11 @@ the [close event](#event-close).
 
 ### `win.focus()`
 
-Focus on the window.
+Focuses on the window.
 
 ### `win.blur()`
 
-Remove focus on the window.
+Removes focus from the window.
 
 ### `win.isFocused()`
 
@@ -987,7 +987,7 @@ convey some sort of application status or to passively notify the user.
 
 ### `win.setHasShadow(hasShadow)` _macOS_
 
-* `hasShadow` (Boolean)
+* `hasShadow` Boolean
 
 Sets whether the window should have a shadow. On Windows and Linux does
 nothing.

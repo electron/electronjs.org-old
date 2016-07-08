@@ -1,5 +1,5 @@
 ---
-version: v1.2.5
+version: v1.2.6
 category: Tutorial
 redirect_from:
     - /docs/v0.24.0/tutorial/desktop-environment-integration/
@@ -35,6 +35,16 @@ redirect_from:
     - /docs/v0.37.8/tutorial/desktop-environment-integration/
     - /docs/latest/tutorial/desktop-environment-integration/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/desktop-environment-integration.md'
+excerpt: "Applications define tasks based on both the program&apos;s features and the key
+things a user is expected to do with them. Tasks should be context-free, in
+that the application does not need to be running for them to work. They
+should also be the statistically most common actions that a normal user would
+perform in an application, such as compose an email message or open the
+calendar in a mail program, create a new document in a word processor, launch
+an application in a certain mode, or launch one of its subcommands. An
+application should not clutter the menu with advanced features that standard
+users won&apos;t need or one-time actions such as registration. Do not use tasks
+for promotional items such as upgrades or special offers."
 title: "Desktop Environment Integration"
 sort_title: "desktop environment integration"
 ---
@@ -360,6 +370,35 @@ To set the represented file of window, you can use the
 let win = new BrowserWindow({...});
 win.setRepresentedFilename('/etc/passwd');
 win.setDocumentEdited(true);
+```
+
+## Dragging files out of the window
+
+For certain kinds of apps that manipulate on files, it is important to be able
+to drag files from Electron to other apps. To implement this feature in your
+app, you need to call `webContents.startDrag(item)` API on `ondragstart` event.
+
+In web page:
+
+```html
+<a href="#" id="drag">item</a>
+<script type="text/javascript" charset="utf-8">
+  document.getElementById('drag').ondragstart = (event) => {
+    event.preventDefault()
+    ipcRenderer.send('ondragstart', '/path/to/item')
+  }
+</script>
+```
+
+In the main process:
+
+```javascript
+ipcMain.on('ondragstart', (event, filePath) => {
+  event.sender.startDrag({
+    file: filePath,
+    icon: '/path/to/icon.png'
+  })
+})
 ```
 
 [addrecentdocument]: http://electron.atom.io/docs/api/app#appaddrecentdocumentpath-os-x-windows

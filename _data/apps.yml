@@ -1367,3 +1367,44 @@
     - "productivity"
   icon: "paws-for-trello.png"
 -
+  name: "Yout"
+  description: "Yout Player is the new way to watch your playlists from youtube on desktop."
+  website: "https://youtplayer.github.io/"
+  keywords:
+    - "yout"
+    - "player"
+    - "youtube"
+    - "desktop"
+    - "playlist"
+  icon: "yout-player.png"
+-
+  name: "PhonePresenter"
+  description: "The Smartest Presentation Clicker"
+  website: "https://phonepresenter.com"
+  keywords:
+    - "utility"
+    - "productivity"
+    - "communication"
+    - "remote"
+    - "office"
+    - "presentation"
+    - "PowerPoint"
+  icon: "phonepresenter.png"
+-
+  name: "Booker"
+  description: "Text editor with the power or Markdown"
+  website: "http://apps.meamka.me/booker/"
+  keywords:
+    - "writing"
+    - "productivity"
+    - "markdown"
+    - "html"
+    - "pdf"
+  icon: "booker.png"
+-
+  name: "Trym"
+  description: "Beautiful small app for macOS to help you view, optimize and convert SVG icons"
+  website: "http://kontentapps.com/trym"
+  keywords:
+    - "svg"
+  icon: "trym.png"

@@ -1,5 +1,23 @@
 [
   {
+    "url": "https://api.github.com/repos/electron/electron/releases/3594665",
+    "assets_url": "https://api.github.com/repos/electron/electron/releases/3594665/assets",
+    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/3594665/assets{?name,label}",
+    "html_url": "https://github.com/electron/electron/releases/tag/v1.2.6",
+    "id": 3594665,
+    "tag_name": "v1.2.6",
+    "target_commitish": "master",
+    "name": "electron v1.2.6",
+    "draft": false,
+    "prerelease": false,
+    "created_at": "2016-07-06T04:20:36Z",
+    "published_at": "2016-07-06T06:43:56Z",
+    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v1.2.6",
+    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v1.2.6",
+    "body": "Changelog:\r\n\r\n* Update to Chrome 51.0.2704.106. [#6322](https://github.com/electron/electron/pull/6322)\r\n* Improve performance for looking up paths in `require`. [#6213](https://github.com/electron/electron/pull/6213)\r\n* Add `webContents.startDrag(item)` API. [#6333](https://github.com/electron/electron/pull/6333)\r\n* Add `clipboard.readBookmark()` and `clipboard.writeBookmark(title, url)` APIs. [#6233](https://github.com/electron/electron/pull/6233)\r\n* Add `onlyDirty` pararmeter to `webContents.beginFrameSubscription([onlyDirty ,]callback)` API. [#6164](https://github.com/electron/electron/pull/6164)\r\n* Add `app.setBadgeCount(count)` and `app.getBadgeCount()` APIs. [#6243](https://github.com/electron/electron/pull/6243) [#6309](https://github.com/electron/electron/pull/6309)\r\n* Fix `did-fail-load` event emitting for canceled requests. [#6201](https://github.com/electron/electron/pull/6201)\r\n* Fix passing the same callback to main process for multiple times will make the callback stop working after the remote callback gets GCed in main process. [#6218](https://github.com/electron/electron/pull/6218)\r\n* Fix `Promise` not resolved in native handlers of the main process. [#6220](https://github.com/electron/electron/pull/6220)\r\n* Fix exception when `package.json` includes BOM. [#6354](https://github.com/electron/electron/pull/6354)\r\n\r\n__Windows__\r\n\r\n* Include `PDB` files in releases. [#6225](https://github.com/electron/electron/pull/6225)\r\n* Fix crash when loading non-exist `ICO` files. [#6220](https://github.com/electron/electron/pull/6278)\r\n* Fix `tray.popUpContextMenu(menu)` not popUpping menu when `menu` is not passed. [#6280](https://github.com/electron/electron/pull/6280)\r\n\r\n__Linux__\r\n\r\n* Add `app.isUnityRunning()` API. [#6243](https://github.com/electron/electron/pull/6243)\r\n* Fix `dialog.showOpenDialog()` replacing extensions of filenames ending with `.*.gz`. [#6305](https://github.com/electron/electron/pull/6305)\r\n* Fix `icon` property of `BrowserWindow` not working. [#6323](https://github.com/electron/electron/pull/6323)\r\n",
+    "version": "1.2.6"
+  },
+  {
     "url": "https://api.github.com/repos/electron/electron/releases/3504096",
     "assets_url": "https://api.github.com/repos/electron/electron/releases/3504096/assets",
     "upload_url": "https://uploads.github.com/repos/electron/electron/releases/3504096/assets{?name,label}",
@@ -520,23 +538,5 @@
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.36.6",
     "body": "Changelog:\r\n\r\n* Restarts renderer process for server redirect.\r\n* Add `setMovable`, `isMovable`, `setMinimizable`, `isMinimizable`, `setMaximizable`, `isMaximizable`, `setFullScreenable`, `isFullScreenable`, `setClosable`, `isClosable`, `setHasShadow`, `hasShadow` methods to `BrowserWindow`.\r\n* Add `scroll-touch-begin` and `scroll-touch-end` events to `BrowserWindow`.\r\n* Add `webContents.debugger` API.\r\n* Add `app.dock.setIcon` API.\r\n* Add `uploadData` to `details` of `session.webRequest.onBeforeRequest`.\r\n* Support alpha channel in `backgroundColor` option of `BrowserWindow`.\r\n* Fix exception when writing to stdout/stderr in renderer process under certain circumstances.\r\n\r\n__OS X__\r\n\r\n* Add `positioningItem` parameter for `Menu.popup`.\r\n\r\n__Windows__\r\n\r\n* Fix using `autoUpdater` throws exception.\r\n* Fix possible crash when closing `asar` archive.\r\n",
     "version": "0.36.6"
-  },
-  {
-    "url": "https://api.github.com/repos/electron/electron/releases/2471447",
-    "assets_url": "https://api.github.com/repos/electron/electron/releases/2471447/assets",
-    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/2471447/assets{?name,label}",
-    "html_url": "https://github.com/electron/electron/releases/tag/v0.36.5",
-    "id": 2471447,
-    "tag_name": "v0.36.5",
-    "target_commitish": "master",
-    "name": "electron v0.36.5",
-    "draft": false,
-    "prerelease": false,
-    "created_at": "2016-01-22T00:04:38Z",
-    "published_at": "2016-01-22T15:47:37Z",
-    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.36.5",
-    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.36.5",
-    "body": "Changelog:\r\n\r\n* Fix crash when switching between submenus of window menubar.\r\n* Add support for the `silent` property of `Notification`.\r\n* Add `defaultFontFamily`, `defaultFontSize`, `defaultMonospaceFontSize`, `minimumFontSize`, `defaultEncoding` options to `webPreferences` of `BrowserWindow`.\r\n* Add `<webview>.loadURL`.\r\n* Add `blinkfeatures` attribute for `<webview>`.\r\n\r\n__OS X__\r\n\r\n* Add `animate` parameter for `setBounds`, `setSize`, `setContentSize`, `setPosition` methods of `BrowserWindow`.\r\n* Add `movable` option for `BrowserWindow`.\r\n* Make the `backgroundColor` option of `BrowserWindow` work.\r\n\r\n__Windows__\r\n\r\n* Add `app.isAeroGlassEnabled()` API.\r\n",
-    "version": "0.36.5"
   }
 ]
