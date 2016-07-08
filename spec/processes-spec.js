@@ -14,12 +14,12 @@ test('Include process categories for each API documentation page', function (t) 
     return path.join(docsPath, file)
   }).forEach(function (markdownFile) {
     var apiDoc = fs.readFileSync(markdownFile)
-    var config = frontmatter.loadFront(apiDoc)
-    var apiProcess = processes[config.title]
+    var title = frontmatter.loadFront(apiDoc).title
+    var apiProcess = processes[title]
     t.ok(apiProcess === 'Main Process'
       || apiProcess === 'Renderer Process'
       || apiProcess === 'Main and Renderer Process',
-      config.title + ' has process category of ' + apiProcess)
+      title + ' has process category of ' + apiProcess)
   })
   t.end()
 })
