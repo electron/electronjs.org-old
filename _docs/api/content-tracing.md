@@ -36,7 +36,7 @@ redirect_from:
     - /docs/latest/api/content-tracing/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/content-tracing.md'
 excerpt: "Collect tracing data from Chromium&apos;s content module for finding performance
-bottlenecks and slow operations."
+    bottlenecks and slow operations."
 title: "contentTracing"
 sort_title: "contenttracing"
 ---
