@@ -1409,7 +1409,7 @@
   keywords:
     - "svg"
   icon: "trym.png"
- -
+-
   name: "BitCrypt"
   description: "A simple File Encryption application for Windows. Encrypt your bits."
   website: "https://github.com/Nazgul07/BitCrypt"
