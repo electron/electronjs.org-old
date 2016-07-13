@@ -17,7 +17,7 @@ layout: default
 
   <div class="container-narrow text-center">
 
-    <h2>Tools</h2>
+    <h2 id="tools">Tools</h2>
     <table class="table table-ruled table-full-width table-with-spacious-first-column mb-7">
       {% for item in site.data.awesome_electron %}
         {% if item.category == 'tools' and item.subcategory == 'for_electron' %}
@@ -33,7 +33,7 @@ layout: default
       {% endfor %}
     </table>
 
-    <h2>Boilerplates</h2>
+    <h2 id="boilerplates">Boilerplates</h2>
     <table class="table table-ruled table-full-width table-with-spacious-first-column mb-7">
       {% for item in site.data.awesome_electron %}
         {% if item.category == 'boilerplates' %}
@@ -49,7 +49,7 @@ layout: default
       {% endfor %}
     </table>
 
-    <h2>Components</h2>
+    <h2 id="components">Components</h2>
     <table class="table table-ruled table-full-width table-with-spacious-first-column mb-7">
       {% for item in site.data.awesome_electron %}
         {% if item.category == 'components' %}
@@ -65,7 +65,7 @@ layout: default
       {% endfor %}
     </table>
 
-    <h2>Videos</h2>
+    <h2 id="videos">Videos</h2>
     <table class="table table-ruled table-full-width table-with-spacious-first-column mb-7">
       {% for item in site.data.awesome_electron %}
         {% if item.category == 'videos' %}
