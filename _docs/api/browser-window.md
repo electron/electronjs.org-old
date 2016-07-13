@@ -1,5 +1,5 @@
 ---
-version: v1.2.6
+version: v1.2.7
 category: API
 redirect_from:
     - /docs/v0.24.0/api/browser-window/
@@ -216,6 +216,9 @@ It creates a new `BrowserWindow` with native properties as set by the `options`.
     this below.
   * `titleBarStyle` String - The style of window title bar. See more about this
     below.
+  * `thickFrame` Boolean - Use `WS_THICKFRAME` style for frameless windows on
+    Windows, which adds standard window frame. Setting it to `false` will remove
+    window shadow and window animations. Default is `true`.
   * `webPreferences` Object - Settings of web page's features. See more about
     this below.
 
@@ -236,6 +239,7 @@ supported values are:
     (`kCGDesktopWindowLevel - 1`). Note that desktop window will not receive
     focus, keyboard or mouse events, but you can use `globalShortcut` to receive
     input sparingly.
+* On Windows, possible type is `toolbar`.
 
 The `titleBarStyle` option is only supported on macOS 10.10 Yosemite and newer.
 Possible values are:
@@ -934,17 +938,7 @@ Whether the window's document has been edited.
 
 ### `win.capturePage([rect, ]callback)`
 
-* `rect` Object (optional) - The area of page to be captured
-  * `x` Integer
-  * `y` Integer
-  * `width` Integer
-  * `height` Integer
-* `callback` Function
-
-Captures a snapshot of the page within `rect`. Upon completion `callback` will
-be called with `callback(image)`. The `image` is an instance of
-[NativeImage](http://electron.atom.io/docs/api/native-image) that stores data of the snapshot. Omitting
-`rect` will capture the whole visible page.
+Same as `webContents.capturePage([rect, ]callback)`.
 
 ### `win.loadURL(url[, options])`
 

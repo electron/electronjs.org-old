@@ -1,5 +1,5 @@
 ---
-version: v1.2.6
+version: v1.2.7
 category: Development
 redirect_from:
     - /docs/v0.24.0/development/setting-up-symbol-server/
@@ -93,5 +93,5 @@ Type the following commands in Windbg to print why symbols are not loading:
 
 ```
 > !sym noisy
-> .reload /f chromiumcontent.dll
+> .reload /f electron.exe
 ```

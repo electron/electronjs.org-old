@@ -1,43 +1,42 @@
 ---
-version: v1.2.6
+version: v1.2.7
 category: ignore
 redirect_from:
     - /docs/faq/electron-faq/
-    - /docs/v0.24.0/faq/electron-faq/
-    - /docs/v0.25.0/faq/electron-faq/
-    - /docs/v0.26.0/faq/electron-faq/
-    - /docs/v0.27.0/faq/electron-faq/
-    - /docs/v0.28.0/faq/electron-faq/
-    - /docs/v0.29.0/faq/electron-faq/
-    - /docs/v0.30.0/faq/electron-faq/
-    - /docs/v0.31.0/faq/electron-faq/
-    - /docs/v0.32.0/faq/electron-faq/
-    - /docs/v0.33.0/faq/electron-faq/
-    - /docs/v0.34.0/faq/electron-faq/
-    - /docs/v0.35.0/faq/electron-faq/
-    - /docs/v0.36.0/faq/electron-faq/
-    - /docs/v0.36.3/faq/electron-faq/
-    - /docs/v0.36.4/faq/electron-faq/
-    - /docs/v0.36.5/faq/electron-faq/
-    - /docs/v0.36.6/faq/electron-faq/
-    - /docs/v0.36.7/faq/electron-faq/
-    - /docs/v0.36.8/faq/electron-faq/
-    - /docs/v0.36.9/faq/electron-faq/
-    - /docs/v0.36.10/faq/electron-faq/
-    - /docs/v0.36.11/faq/electron-faq/
-    - /docs/v0.37.0/faq/electron-faq/
-    - /docs/v0.37.1/faq/electron-faq/
-    - /docs/v0.37.2/faq/electron-faq/
-    - /docs/v0.37.3/faq/electron-faq/
-    - /docs/v0.37.4/faq/electron-faq/
-    - /docs/v0.37.5/faq/electron-faq/
-    - /docs/v0.37.6/faq/electron-faq/
-    - /docs/v0.37.7/faq/electron-faq/
-    - /docs/v0.37.8/faq/electron-faq/
-    - /docs/latest/faq/electron-faq/
-permalink: /docs/faq/
+    - /docs/v0.24.0/faq/
+    - /docs/v0.25.0/faq/
+    - /docs/v0.26.0/faq/
+    - /docs/v0.27.0/faq/
+    - /docs/v0.28.0/faq/
+    - /docs/v0.29.0/faq/
+    - /docs/v0.30.0/faq/
+    - /docs/v0.31.0/faq/
+    - /docs/v0.32.0/faq/
+    - /docs/v0.33.0/faq/
+    - /docs/v0.34.0/faq/
+    - /docs/v0.35.0/faq/
+    - /docs/v0.36.0/faq/
+    - /docs/v0.36.3/faq/
+    - /docs/v0.36.4/faq/
+    - /docs/v0.36.5/faq/
+    - /docs/v0.36.6/faq/
+    - /docs/v0.36.7/faq/
+    - /docs/v0.36.8/faq/
+    - /docs/v0.36.9/faq/
+    - /docs/v0.36.10/faq/
+    - /docs/v0.36.11/faq/
+    - /docs/v0.37.0/faq/
+    - /docs/v0.37.1/faq/
+    - /docs/v0.37.2/faq/
+    - /docs/v0.37.3/faq/
+    - /docs/v0.37.4/faq/
+    - /docs/v0.37.5/faq/
+    - /docs/v0.37.6/faq/
+    - /docs/v0.37.7/faq/
+    - /docs/v0.37.8/faq/
+    - /docs/latest/faq/
 breadcrumb: FAQ
-source_url: 'https://github.com/electron/electron/blob/master/docs/faq/electron-faq.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/faq.md'
 title: "Electron FAQ"
 sort_title: "electron faq"
 ---
