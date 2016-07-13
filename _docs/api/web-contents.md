@@ -1,5 +1,5 @@
 ---
-version: v1.2.6
+version: v1.2.7
 category: API
 redirect_from:
     - /docs/v0.24.0/api/web-contents/
@@ -691,8 +691,8 @@ the request can be obtained by subscribing to
 
 * `action` String - Specifies the action to take place when ending
   [`webContents.findInPage`](http://electron.atom.io/docs/api/web-contents#webcontentfindinpage) request.
-  * `clearSelection` - Translate the selection into a normal selection.
-  * `keepSelection` - Clear the selection.
+  * `clearSelection` - Clear the selection.
+  * `keepSelection` - Translate the selection into a normal selection.
   * `activateSelection` - Focus and click the selection node.
 
 Stops any `findInPage` request for the `webContents` with the provided `action`.
@@ -705,6 +705,20 @@ webContents.on('found-in-page', (event, result) => {
 
 const requestId = webContents.findInPage('api');
 ```
+
+### `webContents.capturePage([rect, ]callback)`
+
+* `rect` Object (optional) - The area of the page to be captured
+  * `x` Integer
+  * `y` Integer
+  * `width` Integer
+  * `height` Integer
+* `callback` Function
+
+Captures a snapshot of the page within `rect`. Upon completion `callback` will
+be called with `callback(image)`. The `image` is an instance of
+[NativeImage](http://electron.atom.io/docs/api/native-image) that stores data of the snapshot. Omitting
+`rect` will capture the whole visible page.
 
 ### `webContents.hasServiceWorker(callback)`
 
@@ -728,15 +742,11 @@ when the JS promise is rejected.
   * `printBackground` Boolean - Also prints the background color and image of
     the web page. Default is `false`.
 
-Prints window's web page. When `silent` is set to `false`, Electron will pick
+Prints window's web page. When `silent` is set to `true`, Electron will pick
 up system's default printer and default settings for printing.
 
 Calling `window.print()` in web page is equivalent to calling
 `webContents.print({silent: false, printBackground: false})`.
-
-**Note:** On Windows, the print API relies on `pdf.dll`. If your application
-doesn't need the print feature, you can safely remove `pdf.dll` to reduce binary
-size.
 
 ### `webContents.printToPDF(options, callback)`
 
