@@ -14,6 +14,7 @@
 "globalShortcut": "Main Process"
 "ipcMain": "Main Process"
 "ipcRenderer": "Renderer Process"
+"Locales": "Main Process"
 "MenuItem": "Main Process"
 "Menu": "Main Process"
 "nativeImage": "Main and Renderer Process"
