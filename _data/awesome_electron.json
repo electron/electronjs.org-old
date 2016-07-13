@@ -156,7 +156,7 @@
   {
     "name": "Soundcast",
     "href": "https://github.com/andresgottlieb/soundcast",
-    "description": "Cast OS X audio to Chromecast from your menubar.",
+    "description": "Cast macOS audio to Chromecast from your menubar.",
     "category": "apps",
     "subcategory": "open_source"
   },
@@ -728,6 +728,41 @@
     "subcategory": "open_source"
   },
   {
+    "name": "YakYak",
+    "href": "https://github.com/yakyak/yakyak",
+    "description": "Unofficial Google Hangouts app.",
+    "category": "apps",
+    "subcategory": "open_source"
+  },
+  {
+    "name": "Museeks",
+    "href": "https://github.com/KeitIG/museeks",
+    "description": "Music player.",
+    "category": "apps",
+    "subcategory": "open_source"
+  },
+  {
+    "name": "VOX",
+    "href": "https://github.com/fresk-nc/VOX",
+    "description": "Unofficial VOX music player.",
+    "category": "apps",
+    "subcategory": "open_source"
+  },
+  {
+    "name": "Sabaki",
+    "href": "http://sabaki.yichuanshen.de",
+    "description": "Go/Baduk/Weiqi board.",
+    "category": "apps",
+    "subcategory": "open_source"
+  },
+  {
+    "name": "Marky",
+    "href": "https://github.com/vesparny/marky",
+    "description": "Markdown editor.",
+    "category": "apps",
+    "subcategory": "open_source"
+  },
+  {
     "name": "GitKraken",
     "href": "http://www.gitkraken.com",
     "description": "Git client.",
@@ -896,6 +931,20 @@
     "subcategory": "closed_source"
   },
   {
+    "name": "CatLight",
+    "href": "https://catlight.io",
+    "description": "Build status notifier.",
+    "category": "apps",
+    "subcategory": "closed_source"
+  },
+  {
+    "name": "Paws",
+    "href": "http://friendlyfox.es/paws/",
+    "description": "Trello client.",
+    "category": "apps",
+    "subcategory": "closed_source"
+  },
+  {
     "name": "electron-boilerplate",
     "href": "https://github.com/sindresorhus/electron-boilerplate",
     "description": "Boilerplate to kickstart creating an app.",
@@ -935,6 +984,18 @@
     "name": "bozon",
     "href": "https://github.com/railsware/bozon",
     "description": "Scaffold, run, test, and package your app.",
+    "category": "boilerplates"
+  },
+  {
+    "name": "electron-vue",
+    "href": "https://github.com/SimulatedGREG/electron-vue",
+    "description": "Easily build your app with Vue and common plugins.",
+    "category": "boilerplates"
+  },
+  {
+    "name": "SkelEktron",
+    "href": "https://github.com/BZCoding/SkelEktron",
+    "description": "A ready to go app template with some useful features built-in.",
     "category": "boilerplates"
   },
   {
@@ -1010,7 +1071,7 @@
   {
     "name": "fix-path",
     "href": "https://github.com/sindresorhus/fix-path",
-    "description": "Fix the $PATH on OS X when run from a GUI app. Useful when spawning a child process.",
+    "description": "Fix the $PATH on macOS when run from a GUI app. Useful when spawning a child process.",
     "category": "tools",
     "subcategory": "for_electron"
   },
@@ -1143,7 +1204,7 @@
   {
     "name": "electron-osx-sign",
     "href": "https://github.com/electron-userland/electron-osx-sign",
-    "description": "Code-signing for OS X apps.",
+    "description": "Code-signing for macOS apps.",
     "category": "tools",
     "subcategory": "for_electron"
   },
@@ -1199,7 +1260,7 @@
   {
     "name": "electron-osx-appearance",
     "href": "https://github.com/danhp/electron-osx-appearance",
-    "description": "Simplified API for accessing OS X's appearance settings.",
+    "description": "Simplified API for accessing macOS's appearance settings.",
     "category": "tools",
     "subcategory": "for_electron"
   },
@@ -1207,6 +1268,27 @@
     "name": "electron-config",
     "href": "https://github.com/sindresorhus/electron-config",
     "description": "Persist user settings and other data.",
+    "category": "tools",
+    "subcategory": "for_electron"
+  },
+  {
+    "name": "electron-context-menu",
+    "href": "https://github.com/sindresorhus/electron-context-menu",
+    "description": "Extensible context menu.",
+    "category": "tools",
+    "subcategory": "for_electron"
+  },
+  {
+    "name": "electron-require",
+    "href": "https://github.com/brrd/electron-require",
+    "description": "Simplified require.",
+    "category": "tools",
+    "subcategory": "for_electron"
+  },
+  {
+    "name": "NeDB",
+    "href": "https://github.com/louischatriot/nedb",
+    "description": "Embedded persistent or in memory database.",
     "category": "tools",
     "subcategory": "for_electron"
   },
@@ -1306,7 +1388,7 @@
   {
     "name": "React Desktop",
     "href": "https://github.com/gabrielbull/react-desktop",
-    "description": "UI toolkit for OS X and Windows built with React.",
+    "description": "UI toolkit for macOS and Windows built with React.",
     "category": "components"
   },
   {
@@ -1324,7 +1406,7 @@
   {
     "name": "titlebar",
     "href": "https://github.com/kapetan/titlebar",
-    "description": "Emulate the OS X window titlebar.",
+    "description": "Emulate the macOS window titlebar.",
     "category": "components"
   },
   {
@@ -1353,13 +1435,24 @@
     "category": "articles"
   },
   {
-    "name": "Codesigning your app for OS X",
+    "name": "Codesigning your app for macOS",
     "href": "http://jbavari.github.io/blog/2015/08/14/codesigning-electron-applications/",
     "category": "articles"
   },
   {
-    "name": "Auto-updating apps for Windows and OS X: The complete guide",
+    "name": "Auto-updating apps for macOS and Windows: The complete guide",
     "href": "https://medium.com/@svilen/auto-updating-apps-for-windows-and-osx-using-electron-the-complete-guide-4aa7a50b904c",
+    "category": "articles"
+  },
+  {
+    "name": "How To Make Your Electron App Sexy",
+    "href": "https://blog.dcpos.ch/how-to-make-your-electron-app-sexy",
+    "category": "articles"
+  },
+  {
+    "name": "Electron Rocks!",
+    "href": "http://electron.rocks",
+    "description": "Blog about working with Electron.",
     "category": "articles"
   },
   {
@@ -1398,8 +1491,23 @@
     "category": "videos"
   },
   {
+    "name": "Getting Started with Electron 1.x",
+    "href": "https://www.youtube.com/watch?v=jKzBJAowmGg",
+    "category": "videos"
+  },
+  {
+    "name": "Building Desktop Apps with Node.js and Electron",
+    "href": "https://www.youtube.com/watch?v=rbSvc8_BHaw",
+    "category": "videos"
+  },
+  {
     "name": "JavaScript Jabber: Electron with Jessica Lord and Amy Palamountain",
     "href": "https://devchat.tv/js-jabber/193-jsj-electron-with-jessica-lord-and-amy-palamountain",
+    "category": "podcasts"
+  },
+  {
+    "name": "Hanselminutes: Creating cross-platform Electron apps with Jessica Lord",
+    "href": "http://hanselminutes.com/534/creating-cross-platform-electron-apps-with-jessica-lord",
     "category": "podcasts"
   },
   {
