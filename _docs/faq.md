@@ -1,7 +1,8 @@
 ---
 version: v1.2.7
-category: faq.md
+category: ignore
 redirect_from:
+    - /docs/faq/electron-faq/
     - /docs/v0.24.0/faq/
     - /docs/v0.25.0/faq/
     - /docs/v0.26.0/faq/
@@ -34,6 +35,7 @@ redirect_from:
     - /docs/v0.37.7/faq/
     - /docs/v0.37.8/faq/
     - /docs/latest/faq/
+breadcrumb: FAQ
 source_url: 'https://github.com/electron/electron/blob/master/docs/faq.md'
 title: "Electron FAQ"
 sort_title: "electron faq"
