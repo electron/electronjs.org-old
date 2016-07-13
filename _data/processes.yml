@@ -20,7 +20,6 @@
 "nativeImage": "Main and Renderer Process"
 "powerMonitor": "Main Process"
 "powerSaveBlocker": "Main Process"
-"Possible Values of app.getLocale()": "Main Process"
 "process": "Main and Renderer Process"
 "protocol": "Main Process"
 "remote": "Renderer Process"
