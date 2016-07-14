@@ -1420,3 +1420,14 @@
     - "file"
     - "encryption"
   icon: "bitcrypt.png"
+-
+  name: "Glyphr Studio"
+  description: "Glyphr Studio is a free, web based font designer, focusing on font design for hobbyists."
+  website: "https://github.com/glyphr-studio/Glyphr-Studio-Desktop"
+  repository: "https://github.com/glyphr-studio/Glyphr-Studio-Desktop"
+  keywords:
+    - "font"
+    - "design"
+    - "utility"
+  icon: "glyphrstudio.png"
+  
