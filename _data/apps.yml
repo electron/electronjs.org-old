@@ -1430,4 +1430,15 @@
     - "design"
     - "utility"
   icon: "glyphrstudio.png"
-  
+-
+  name: "Marp"
+  description: "Markdown Presentation Writer"
+  website: "https://yhatt.github.io/marp/"
+  repository: "https://github.com/yhatt/marp"
+  keywords:
+    - "markdown"
+    - "presentation"
+    - "slide"
+    - "PowerPoint"
+  license: "MIT"
+  icon: "marp.png"
