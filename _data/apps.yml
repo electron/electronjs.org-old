@@ -1442,3 +1442,13 @@
     - "PowerPoint"
   license: "MIT"
   icon: "marp.png"
+-
+  name: "Ghetto Skype"
+  description: "A Web Skype wrapper designed to integrate with the Linux desktop"
+  website: "https://github.com/stanfieldr/ghetto-skype"
+  repository: "https://github.com/stanfieldr/ghetto-skype"
+  keywords:
+    - "skype"
+    - "linux"
+  license: "GPLv3"
+  icon: "ghetto-skype.png"
