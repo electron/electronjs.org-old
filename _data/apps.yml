@@ -1442,3 +1442,15 @@
     - "PowerPoint"
   license: "MIT"
   icon: "marp.png"
+-
+  name: "HyperTerm"
+  description: "HTML/JS/CSS Terminal"
+  website: "https://hyperterm.org/"
+  repository: "https://github.com/zeit/hyperterm"
+  keywords:
+    - "terminal"
+    - "html"
+    - "css"
+    - "js"
+  license: "MIT"
+  icon: "hyperterm.png"
