@@ -1,5 +1,5 @@
 ---
-version: v1.2.7
+version: v1.2.8
 category: API
 redirect_from:
     - /docs/v0.24.0/api/web-view-tag/
@@ -162,9 +162,6 @@ than the minimum values or greater than the maximum.
 
 If "on", the guest page in `webview` will have node integration and can use node
 APIs like `require` and `process` to access low level system resources.
-
-**Note:** Node integration will always be disabled in the `webview` if it is
-disabled on the parent window.
 
 ### `plugins`
 

@@ -1,5 +1,5 @@
 ---
-version: v1.2.7
+version: v1.2.8
 category: ignore
 redirect_from:
     - /docs/faq/electron-faq/
@@ -52,7 +52,7 @@ depends on the amount of work involved with upgrading.
 Only the stable channel of Chrome is used. If an important fix is in beta or dev
 channel, we will back-port it.
 
-For more information, please see the [security introduction](http://electron.atom.io/docs/tutorial/security).
+For more information, please see the tutorial/security.
 
 ## When will Electron upgrade to latest Node.js?
 

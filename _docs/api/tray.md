@@ -1,5 +1,5 @@
 ---
-version: v1.2.7
+version: v1.2.8
 category: API
 redirect_from:
     - /docs/v0.24.0/api/tray/
@@ -163,6 +163,13 @@ Emitted when any dragged items are dropped on the tray icon.
 * `files` Array - the file path of dropped files.
 
 Emitted when dragged files are dropped in the tray icon.
+
+#### Event: 'drop-text' _macOS_
+
+* `event` Event
+* `text` String - the dropped text string
+
+Emitted when dragged text is dropped in the tray icon.
 
 #### Event: 'drag-enter' _macOS_
 

@@ -1,5 +1,5 @@
 ---
-version: v1.2.7
+version: v1.2.8
 category: API
 redirect_from:
     - /docs/v0.24.0/api/frameless-window/
