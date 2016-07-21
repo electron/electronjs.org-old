@@ -1,5 +1,5 @@
 ---
-version: v1.2.6
+version: v1.2.8
 category: API
 redirect_from:
     - /docs/v0.24.0/api/dialog/
@@ -74,8 +74,8 @@ The `dialog` module has the following methods:
     left empty the default label will be used.
   * `filters` Array
   * `properties` Array - Contains which features the dialog should use, can
-    contain `openFile`, `openDirectory`, `multiSelections` and
-    `createDirectory`
+    contain `openFile`, `openDirectory`, `multiSelections`, `createDirectory`
+    and `showHiddenFiles`.
 * `callback` Function (optional)
 
 On success this method returns an array of file paths chosen by the user,

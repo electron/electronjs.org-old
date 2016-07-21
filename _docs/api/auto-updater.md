@@ -1,5 +1,5 @@
 ---
-version: v1.2.6
+version: v1.2.8
 category: API
 redirect_from:
     - /docs/v0.24.0/api/auto-updater/
@@ -141,6 +141,10 @@ The `autoUpdater` object has the following methods:
 * `requestHeaders` Object _macOS_ - HTTP request headers.
 
 Sets the `url` and initialize the auto updater.
+
+### `autoUpdater.getFeedURL()`
+
+Returns the current update feed URL.
 
 ### `autoUpdater.checkForUpdates()`
 

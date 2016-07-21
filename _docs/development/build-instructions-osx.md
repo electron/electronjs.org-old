@@ -1,5 +1,5 @@
 ---
-version: v1.2.6
+version: v1.2.8
 category: Development
 redirect_from:
     - /docs/v0.24.0/development/build-instructions-osx/

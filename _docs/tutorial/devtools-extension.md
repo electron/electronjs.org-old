@@ -1,5 +1,5 @@
 ---
-version: v1.2.6
+version: v1.2.8
 category: Tutorial
 redirect_from:
     - /docs/v0.24.0/tutorial/devtools-extension/
@@ -45,6 +45,11 @@ Electron supports the [Chrome DevTools Extension][devtools-extension], which can
 be used to extend the ability of devtools for debugging popular web frameworks.
 
 ## How to load a DevTools Extension
+
+This document outlines the process for manually loading an extension.
+You may also try
+[electron-devtools-installer](https://github.com/GPMDP/electron-devtools-installer),
+a third-party tool that downloads extensions directly from the Chrome WebStore.
 
 To load an extension in Electron, you need to download it in Chrome browser,
 locate its filesystem path, and then load it by calling the

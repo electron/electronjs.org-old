@@ -1,5 +1,5 @@
 ---
-version: v1.2.6
+version: v1.2.8
 category: Tutorial
 redirect_from:
     - /docs/v0.24.0/tutorial/quick-start/
@@ -266,4 +266,8 @@ $ cd electron-quick-start
 $ npm install && npm start
 ```
 
-[share-data]: http://electron.atom.io/docs/faq/electron-faq#how-to-share-data-between-web-pages
+For more example apps, see the
+[list of boilerplates](http://electron.atom.io/community/#boilerplates)
+created by the awesome electron community.
+
+[share-data]: http://electron.atom.io/docs/faq#how-to-share-data-between-web-pages

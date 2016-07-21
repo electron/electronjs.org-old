@@ -1,5 +1,5 @@
 ---
-version: v1.2.6
+version: v1.2.8
 category: Tutorial
 redirect_from:
     - /docs/v0.24.0/tutorial/windows-store-guide/
@@ -104,18 +104,14 @@ The output should look roughly like this:
 │   ├── am.pak
 │   ├── ar.pak
 │   ├── [...]
-├── msvcp120.dll
-├── msvcr120.dll
 ├── natives_blob.bin
 ├── node.dll
-├── pdf.dll
 ├── resources
 │   ├── app
 │   └── atom.asar
 ├── snapshot_blob.bin
 ├── squirrel.exe
 ├── ui_resources_200_percent.pak
-├── vccorlib120.dll
 └── xinput1_3.dll
 ```
 

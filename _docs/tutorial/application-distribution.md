@@ -1,5 +1,5 @@
 ---
-version: v1.2.6
+version: v1.2.8
 category: Tutorial
 redirect_from:
     - /docs/v0.24.0/tutorial/application-distribution/
@@ -148,8 +148,8 @@ You can rename the `electron` executable to any name you like.
 Apart from packaging your app manually, you can also choose to use third party
 packaging tools to do the work for you:
 
-* [electron-packager](https://github.com/maxogden/electron-packager)
-* [electron-builder](https://github.com/loopline-systems/electron-builder)
+* [electron-builder](https://github.com/electron-userland/electron-builder)
+* [electron-packager](https://github.com/electron-userland/electron-packager)
 
 ## Rebranding by Rebuilding Electron from Source
 
