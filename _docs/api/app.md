@@ -1,5 +1,5 @@
 ---
-version: v1.2.7
+version: v1.2.8
 category: API
 redirect_from:
     - /docs/v0.24.0/api/app/
@@ -221,7 +221,12 @@ Returns:
 * `error` String - The error code
 * `certificate` Object
   * `data` Buffer - PEM encoded data
-  * `issuerName` String
+  * `issuerName` String - Issuer's Common Name
+  * `subjectName` String - Subject's Common Name
+  * `serialNumber` String - Hex value represented string
+  * `validStart` Integer - Start date of the certificate being valid in seconds
+  * `validExpiry` Integer - End date of the certificate being valid in seconds
+  * `fingerprint` String - Fingerprint of the certificate
 * `callback` Function
 
 Emitted when failed to verify the `certificate` for `url`, to trust the
@@ -250,6 +255,11 @@ Returns:
 * `certificateList` [Objects]
   * `data` Buffer - PEM encoded data
   * `issuerName` String - Issuer's Common Name
+  * `subjectName` String - Subject's Common Name
+  * `serialNumber` String - Hex value represented string
+  * `validStart` Integer - Start date of the certificate being valid in seconds
+  * `validExpiry` Integer - End date of the certificate being valid in seconds
+  * `fingerprint` String - Fingerprint of the certificate
 * `callback` Function
 
 Emitted when a client certificate is requested.

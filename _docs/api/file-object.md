@@ -1,5 +1,5 @@
 ---
-version: v1.2.7
+version: v1.2.8
 category: API
 redirect_from:
     - /docs/v0.24.0/api/file-object/
@@ -66,8 +66,9 @@ Example on getting a real path from a dragged-onto-the-app file:
   };
   holder.ondrop = (e) => {
     e.preventDefault();
-    const file = e.dataTransfer.files[0];
-    console.log('File you dragged here is', file.path);
+    for (let f of e.dataTransfer.files) {
+      console.log('File(s) you dragged here: ', f.path);
+    }
     return false;
   };
 </script>
