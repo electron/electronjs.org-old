@@ -1443,8 +1443,8 @@
   license: "MIT"
   icon: "marp.png"
 -
-name: "Demio"
-  description: "Finally, a Reliable Webinar Platform"
+  name: "Demio"
+  description: "Finally, a Reliable Webinar Platform."
   website: "https://demio.com/"
   keywords:
     - "Webinar"
