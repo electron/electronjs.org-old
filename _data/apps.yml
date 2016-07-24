@@ -1474,3 +1474,16 @@
     - "conversation"
     - "productivity"
   icon: "socialcast.png"
+-
+  name: "UbAuth"
+  description: "App to help developers create access tokens for Uber applications with OAuth 2.0"
+  website: "https://ubauth.enytc.com.com"
+  repository: "https://github.com/chrisenytc/ubauth"
+  keywords:
+    - "uber"
+    - "api"
+    - "oauth"
+    - "developer"
+    - "tools"
+  license: "MIT"
+  icon: "ubauth.png"
