@@ -1,5 +1,5 @@
 ---
-version: v1.2.8
+version: v1.3.0
 category: API
 redirect_from:
     - /docs/v0.24.0/api/browser-window/
@@ -295,8 +295,6 @@ The `webPreferences` option is an object that can have the following properties:
   Default is `false`.
 * `experimentalCanvasFeatures` Boolean - Enables Chromium's experimental
   canvas features. Default is `false`.
-* `directWrite` Boolean - Enables DirectWrite font rendering system on
-  Windows. Default is `true`.
 * `scrollBounce` Boolean - Enables scroll bounce (rubber banding) effect on
   macOS. Default is `false`.
 * `blinkFeatures` String - A list of feature strings separated by `,`, like
