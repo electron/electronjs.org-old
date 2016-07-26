@@ -27,4 +27,4 @@ Looking for an introduction to Electron? Two new podcasts have just been release
 
 If you're looking for an introduction to Electron, give the first a listen. The second goes into more detail about building apps with great tips from Nylas's [Evan Morikawa](https://twitter.com/E0M).
 
-Keep an eye on the [@ElectronJS](https://twitter.com/ElectronJS) Twitter account, we'll let you know when the next two are out in August.
+We are currently working on two more podcasts that should come out next month, keep an eye on the [@ElectronJS](https://twitter.com/ElectronJS) Twitter account for updates.
