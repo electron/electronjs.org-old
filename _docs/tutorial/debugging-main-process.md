@@ -1,5 +1,5 @@
 ---
-version: v1.2.2
+version: v1.3.0
 category: Tutorial
 redirect_from:
     - /docs/v0.24.0/tutorial/debugging-main-process/
@@ -52,7 +52,7 @@ Use the following command line switches to debug Electron's main process:
 ### `--debug=[port]`
 
 When this switch is used Electron will listen for V8 debugger protocol
-messages on `port`. The default `port` is `5858`.
+messages on the `port`. The default `port` is `5858`.
 
 ### `--debug-brk=[port]`
 
@@ -60,11 +60,11 @@ Like `--debug` but pauses the script on the first line.
 
 ## Use node-inspector for Debugging
 
-**Note:** Electron doesn't currently work very well
-with node-inspector, and the main process will crash if you inspect the
-`process` object under node-inspector's console.
+**Note:** Electron doesn't currently work very well with node-inspector, and the
+main process will crash if you inspect the `process` object under
+node-inspector's console.
 
-### 1. Make sure you have [node-gyp required tools][node-gyp-required-tools] installed
+### 1. Install the [node-gyp required tools][node-gyp-required-tools]
 
 ### 2. Install [node-inspector][node-inspector]
 
@@ -72,17 +72,19 @@ with node-inspector, and the main process will crash if you inspect the
 $ npm install node-inspector
 ```
 
-### 3. Install a patched version of `node-pre-gyp`
+### 3. Install [node-pre-gyp][node-pre-gyp]
 
 ```bash
-$ npm install git+https://git@github.com/enlight/node-pre-gyp.git#detect-electron-runtime-in-find
+$ npm install node-pre-gyp
 ```
 
-### 4. Recompile the `node-inspector` `v8` modules for electron (change the target to your electron version number)
+### 4. Recompile the `node-inspector` `v8` modules for Electron
+
+**Note:** Update the target argument to be your Electron version number
 
 ```bash
-$ node_modules/.bin/node-pre-gyp --target=0.36.11 --runtime=electron --fallback-to-build --directory node_modules/v8-debug/ --dist-url=https://atom.io/download/atom-shell reinstall
-$ node_modules/.bin/node-pre-gyp --target=0.36.11 --runtime=electron --fallback-to-build --directory node_modules/v8-profiler/ --dist-url=https://atom.io/download/atom-shell reinstall
+$ node_modules/.bin/node-pre-gyp --target=1.2.5 --runtime=electron --fallback-to-build --directory node_modules/v8-debug/ --dist-url=https://atom.io/download/atom-shell reinstall
+$ node_modules/.bin/node-pre-gyp --target=1.2.5 --runtime=electron --fallback-to-build --directory node_modules/v8-profiler/ --dist-url=https://atom.io/download/atom-shell reinstall
 ```
 
 See also [How to install native modules][how-to-install-native-modules].
@@ -101,7 +103,7 @@ or, to pause your script on the first line:
 $ electron --debug-brk=5858 your/app
 ```
 
-### 6. Start the [node-inspector][node-inspector] server using electron
+### 6. Start the [node-inspector][node-inspector] server using Electron
 
 ```bash
 $ ELECTRON_RUN_AS_NODE=true path/to/electron.exe node_modules/node-inspector/bin/inspector.js
@@ -110,9 +112,10 @@ $ ELECTRON_RUN_AS_NODE=true path/to/electron.exe node_modules/node-inspector/bin
 ### 7. Load the debugger UI
 
 Open http://127.0.0.1:8080/debug?ws=127.0.0.1:8080&port=5858 in the Chrome
-browser. You may have to click pause if starting with debug-brk to see the
+browser. You may have to click pause if starting with `debug-brk` to see the
 entry line.
 
 [node-inspector]: https://github.com/node-inspector/node-inspector
+[node-pre-gyp]: https://github.com/mapbox/node-pre-gyp
 [node-gyp-required-tools]: https://github.com/nodejs/node-gyp#installation
 [how-to-install-native-modules]: http://electron.atom.io/docs/tutorial/using-native-node-modules#how-to-install-native-modules

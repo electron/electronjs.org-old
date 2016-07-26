@@ -1,5 +1,5 @@
 ---
-version: v1.2.2
+version: v1.3.0
 category: Tutorial
 redirect_from:
     - /docs/v0.24.0/tutorial/devtools-extension/
@@ -46,6 +46,11 @@ be used to extend the ability of devtools for debugging popular web frameworks.
 
 ## How to load a DevTools Extension
 
+This document outlines the process for manually loading an extension.
+You may also try
+[electron-devtools-installer](https://github.com/GPMDP/electron-devtools-installer),
+a third-party tool that downloads extensions directly from the Chrome WebStore.
+
 To load an extension in Electron, you need to download it in Chrome browser,
 locate its filesystem path, and then load it by calling the
 `BrowserWindow.addDevToolsExtension(extension)` API.
@@ -62,7 +67,7 @@ Using the [React Developer Tools][react-devtools] as example:
      * `~/.config/google-chrome-beta/Default/Extensions/`
      * `~/.config/google-chrome-canary/Default/Extensions/`
      * `~/.config/chromium/Default/Extensions/`
-   * on OS X it is `~/Library/Application Support/Google/Chrome/Default/Extensions`.
+   * on macOS it is `~/Library/Application Support/Google/Chrome/Default/Extensions`.
 1. Pass the location of the extension to `BrowserWindow.addDevToolsExtension`
    API, for the React Developer Tools, it is something like:
    `~/Library/Application Support/Google/Chrome/Default/Extensions/fmkadmapgofadopljbjfkapdkoienihi/0.14.10_0`
@@ -86,7 +91,7 @@ Following Devtools Extensions are tested and guaranteed to work in Electron:
 
 ### What should I do if a DevTools Extension is not working?
 
-Fist please make sure the extension is still being maintained, some extensions
+First please make sure the extension is still being maintained, some extensions
 can not even work for recent versions of Chrome browser, and we are not able to
 do anything for them.
 

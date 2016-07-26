@@ -1,5 +1,5 @@
 ---
-version: v1.2.2
+version: v1.3.0
 category: Tutorial
 redirect_from:
     - /docs/v0.24.0/tutorial/supported-platforms/
@@ -43,10 +43,10 @@ sort_title: "supported platforms"
 
 Following platforms are supported by Electron:
 
-### OS X
+### macOS
 
-Only 64bit binaries are provided for OS X, and the minimum OS X version
-supported is OS X 10.9.
+Only 64bit binaries are provided for macOS, and the minimum macOS version
+supported is macOS 10.9.
 
 ### Windows
 

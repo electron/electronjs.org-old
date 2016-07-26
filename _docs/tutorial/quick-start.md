@@ -1,5 +1,5 @@
 ---
-version: v1.2.2
+version: v1.3.0
 category: Tutorial
 redirect_from:
     - /docs/v0.24.0/tutorial/quick-start/
@@ -157,7 +157,7 @@ app.on('ready', createWindow);
 
 // Quit when all windows are closed.
 app.on('window-all-closed', () => {
-  // On OS X it is common for applications and their menu bar
+  // On macOS it is common for applications and their menu bar
   // to stay active until the user quits explicitly with Cmd + Q
   if (process.platform !== 'darwin') {
     app.quit();
@@ -165,7 +165,7 @@ app.on('window-all-closed', () => {
 });
 
 app.on('activate', () => {
-  // On OS X it's common to re-create a window in the app when the
+  // On macOS it's common to re-create a window in the app when the
   // dock icon is clicked and there are no other windows open.
   if (win === null) {
     createWindow();
@@ -235,7 +235,7 @@ $ .\electron\electron.exe your-app\
 $ ./electron/electron your-app/
 ```
 
-#### OS X
+#### macOS
 
 ```bash
 $ ./Electron.app/Contents/MacOS/Electron your-app/
@@ -252,7 +252,7 @@ and then executing the packaged app.
 
 ### Try this Example
 
-Clone and run the code in this tutorial by using the [`atom/electron-quick-start`](https://github.com/electron/electron-quick-start)
+Clone and run the code in this tutorial by using the [`electron/electron-quick-start`](https://github.com/electron/electron-quick-start)
 repository.
 
 **Note**: Running this requires [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which includes [npm](https://npmjs.org)) on your system.
@@ -266,4 +266,8 @@ $ cd electron-quick-start
 $ npm install && npm start
 ```
 
-[share-data]: http://electron.atom.io/docs/faq/electron-faq#how-to-share-data-between-web-pages
+For more example apps, see the
+[list of boilerplates](http://electron.atom.io/community/#boilerplates)
+created by the awesome electron community.
+
+[share-data]: http://electron.atom.io/docs/faq#how-to-share-data-between-web-pages

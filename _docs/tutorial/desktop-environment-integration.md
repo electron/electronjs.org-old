@@ -1,5 +1,5 @@
 ---
-version: v1.2.2
+version: v1.3.0
 category: Tutorial
 redirect_from:
     - /docs/v0.24.0/tutorial/desktop-environment-integration/
@@ -35,6 +35,16 @@ redirect_from:
     - /docs/v0.37.8/tutorial/desktop-environment-integration/
     - /docs/latest/tutorial/desktop-environment-integration/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/desktop-environment-integration.md'
+excerpt: "Applications define tasks based on both the program&apos;s features and the key
+    things a user is expected to do with them. Tasks should be context-free, in
+    that the application does not need to be running for them to work. They
+    should also be the statistically most common actions that a normal user would
+    perform in an application, such as compose an email message or open the
+    calendar in a mail program, create a new document in a word processor, launch
+    an application in a certain mode, or launch one of its subcommands. An
+    application should not clutter the menu with advanced features that standard
+    users won&apos;t need or one-time actions such as registration. Do not use tasks
+    for promotional items such as upgrades or special offers."
 title: "Desktop Environment Integration"
 sort_title: "desktop environment integration"
 ---
@@ -49,7 +59,7 @@ applications can put a custom menu in the dock menu.
 This guide explains how to integrate your application into those desktop
 environments with Electron APIs.
 
-## Notifications (Windows, Linux, OS X)
+## Notifications (Windows, Linux, macOS)
 
 All three operating systems provide means for applications to send notifications
 to the user. Electron conveniently allows developers to send notifications with
@@ -77,7 +87,7 @@ are fine differences.
 * On Windows 8.1 and Windows 8, a shortcut to your app, with a [Application User
 Model ID][app-user-model-id], must be installed to the Start screen. Note,
 however, that it does not need to be pinned to the Start screen.
-* On Windows 7 and below, notifications are not supported. You can however send
+* On Windows 7, notifications are not supported. You can however send
 "balloon notifications" using the [Tray API][tray-balloon].
 
 Furthermore, the maximum length for the notification body is 250 characters,
@@ -91,17 +101,17 @@ desktop environment that follows [Desktop Notifications
 Specification][notification-spec], including Cinnamon, Enlightenment, Unity,
 GNOME, KDE.
 
-### OS X
+### macOS
 
-Notifications are straight-forward on OS X, you should however be aware of
+Notifications are straight-forward on macOS, you should however be aware of
 [Apple's Human Interface guidelines regarding notifications](https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/NotificationCenter.html).
 
 Note that notifications are limited to 256 bytes in size - and will be truncated
 if you exceed that limit.
 
-## Recent documents (Windows & OS X)
+## Recent documents (Windows & macOS)
 
-Windows and OS X provide easy access to a list of recent documents opened by
+Windows and macOS provide easy access to a list of recent documents opened by
 the application via JumpList or dock menu, respectively.
 
 __JumpList:__
@@ -136,14 +146,14 @@ on registering your application in [Application Registration][app-registration].
 When a user clicks a file from the JumpList, a new instance of your application
 will be started with the path of the file added as a command line argument.
 
-### OS X Notes
+### macOS Notes
 
 When a file is requested from the recent documents menu, the `open-file` event
 of `app` module will be emitted for it.
 
-## Custom Dock Menu (OS X)
+## Custom Dock Menu (macOS)
 
-OS X enables developers to specify a custom menu for the dock, which usually
+macOS enables developers to specify a custom menu for the dock, which usually
 contains some shortcuts for commonly used features of your application:
 
 __Dock menu of Terminal.app:__
@@ -151,7 +161,7 @@ __Dock menu of Terminal.app:__
 <img src="https://cloud.githubusercontent.com/assets/639601/5069962/6032658a-6e9c-11e4-9953-aa84006bdfff.png" height="354" width="341" >
 
 To set your custom dock menu, you can use the `app.dock.setMenu` API, which is
-only available on OS X:
+only available on macOS:
 
 ```javascript
 const electron = require('electron');
@@ -195,7 +205,7 @@ __Tasks of Internet Explorer:__
 
 ![IE](http://i.msdn.microsoft.com/dynimg/IC420539.png)
 
-Unlike the dock menu in OS X which is a real menu, user tasks in Windows work
+Unlike the dock menu in macOS which is a real menu, user tasks in Windows work
 like application shortcuts such that when user clicks a task, a program will be
 executed with specified arguments.
 
@@ -262,7 +272,7 @@ win.setThumbarButtons([
   {
     tooltip: 'button1',
     icon: path.join(__dirname, 'button1.png'),
-    click() { console.log('button2 clicked'); }
+    click() { console.log('button1 clicked'); }
   },
   {
     tooltip: 'button2',
@@ -289,13 +299,13 @@ __Launcher shortcuts of Audacious:__
 
 ![audacious](https://help.ubuntu.com/community/UnityLaunchersAndDesktopFiles?action=AttachFile&do=get&target=shortcuts.png)
 
-## Progress Bar in Taskbar (Windows, OS X, Unity)
+## Progress Bar in Taskbar (Windows, macOS, Unity)
 
 On Windows a taskbar button can be used to display a progress bar. This enables
 a window to provide progress information to the user without the user having to
 switch to the window itself.
 
-On OS X the progress bar will be displayed as a part of the dock icon.
+On macOS the progress bar will be displayed as a part of the dock icon.
 
 The Unity DE also has a similar feature that allows you to specify the progress
 bar in the launcher.
@@ -339,9 +349,9 @@ let win = new BrowserWindow({...});
 win.setOverlayIcon('path/to/overlay.png', 'Description for overlay');
 ```
 
-## Represented File of Window (OS X)
+## Represented File of Window (macOS)
 
-On OS X a window can set its represented file, so the file's icon can show in
+On macOS a window can set its represented file, so the file's icon can show in
 the title bar and when users Command-Click or Control-Click on the title a path
 popup will show.
 
@@ -360,6 +370,35 @@ To set the represented file of window, you can use the
 let win = new BrowserWindow({...});
 win.setRepresentedFilename('/etc/passwd');
 win.setDocumentEdited(true);
+```
+
+## Dragging files out of the window
+
+For certain kinds of apps that manipulate on files, it is important to be able
+to drag files from Electron to other apps. To implement this feature in your
+app, you need to call `webContents.startDrag(item)` API on `ondragstart` event.
+
+In web page:
+
+```html
+<a href="#" id="drag">item</a>
+<script type="text/javascript" charset="utf-8">
+  document.getElementById('drag').ondragstart = (event) => {
+    event.preventDefault()
+    ipcRenderer.send('ondragstart', '/path/to/item')
+  }
+</script>
+```
+
+In the main process:
+
+```javascript
+ipcMain.on('ondragstart', (event, filePath) => {
+  event.sender.startDrag({
+    file: filePath,
+    icon: '/path/to/icon.png'
+  })
+})
 ```
 
 [addrecentdocument]: http://electron.atom.io/docs/api/app#appaddrecentdocumentpath-os-x-windows

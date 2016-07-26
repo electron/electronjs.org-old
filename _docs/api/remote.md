@@ -1,5 +1,5 @@
 ---
-version: v1.2.2
+version: v1.3.0
 category: API
 redirect_from:
     - /docs/v0.24.0/api/remote/
@@ -63,7 +63,7 @@ win.loadURL('https://github.com');
 ```
 
 **Note:** for the reverse (access the renderer process from the main process),
-you can use [webContents.executeJavascript](http://electron.atom.io/docs/api/web-contents#webcontentsexecutejavascriptcode-usergesture).
+you can use [webContents.executeJavascript](http://electron.atom.io/docs/api/web-contents#webcontentsexecutejavascriptcode-usergesture-callback).
 
 ## Remote Objects
 
@@ -116,19 +116,19 @@ exports.withRendererCallback = (mapper) => {
 };
 
 exports.withLocalCallback = () => {
-  return exports.mapNumbers(x => x + 1);
+  return [1,2,3].map(x => x + 1);
 };
 ```
 
 ```javascript
 // renderer process
-const mapNumbers = require('remote').require('./mapNumbers');
+const mapNumbers = require('electron').remote.require('./mapNumbers');
 
 const withRendererCb = mapNumbers.withRendererCallback(x => x + 1);
 
 const withLocalCb = mapNumbers.withLocalCallback();
 
-console.log(withRendererCb, withLocalCb); // [true, true, true], [2, 3, 4]
+console.log(withRendererCb, withLocalCb); // [undefined, undefined, undefined], [2, 3, 4]
 ```
 
 As you can see, the renderer callback's synchronous return value was not as

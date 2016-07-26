@@ -1,5 +1,5 @@
 ---
-version: v1.2.2
+version: v1.3.0
 category: Development
 redirect_from:
     - /docs/v0.24.0/development/atom-shell-vs-node-webkit/
@@ -87,5 +87,7 @@ of how NW.js was implemented.
 By using the [multi-context](http://strongloop.com/strongblog/whats-new-node-js-v0-12-multiple-context-execution/)
 feature of Node, Electron doesn't introduce a new JavaScript context in web
 pages.
+
+Note: NW.js has optionally supported multi-context since 0.13.
 
 [node-bindings]: https://github.com/electron/electron/tree/master/atom/common

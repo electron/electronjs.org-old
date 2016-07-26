@@ -1,5 +1,5 @@
 ---
-version: v1.2.2
+version: v1.3.0
 category: API
 redirect_from:
     - /docs/v0.24.0/api/shell/
@@ -73,7 +73,7 @@ Open the given file in the desktop's default manner.
 ### `shell.openExternal(url[, options])`
 
 * `url` String
-* `options` Object (optional) _OS X_
+* `options` Object (optional) _macOS_
   * `activate` Boolean - `true` to bring the opened application to the
     foreground. The default is `true`.
 

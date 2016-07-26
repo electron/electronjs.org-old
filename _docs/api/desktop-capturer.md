@@ -1,5 +1,5 @@
 ---
-version: v1.2.2
+version: v1.3.0
 category: API
 redirect_from:
     - /docs/v0.24.0/api/desktop-capturer/
@@ -36,7 +36,7 @@ redirect_from:
     - /docs/latest/api/desktop-capturer/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/desktop-capturer.md'
 excerpt: "List <code>getUserMedia</code> sources for capturing audio, video, and images from a
-microphone, camera, or screen."
+    microphone, camera, or screen."
 title: "desktopCapturer"
 sort_title: "desktopcapturer"
 ---

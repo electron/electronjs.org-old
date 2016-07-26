@@ -1,5 +1,5 @@
 ---
-version: v1.2.2
+version: v1.3.0
 category: API
 redirect_from:
     - /docs/v0.24.0/api/accelerator/
@@ -55,14 +55,14 @@ Examples:
 ## Platform notice
 
 On Linux and Windows, the `Command` key does not have any effect so
-use `CommandOrControl` which represents `Command` on OS X and `Control` on
+use `CommandOrControl` which represents `Command` on macOS and `Control` on
 Linux and Windows to define some accelerators.
 
-Use `Alt` instead of `Option`. The `Option` key only exists on OS X, whereas
+Use `Alt` instead of `Option`. The `Option` key only exists on macOS, whereas
 the `Alt` key is available on all platforms.
 
 The `Super` key is mapped to the `Windows` key on Windows and Linux and
-`Cmd` on OS X.
+`Cmd` on macOS.
 
 ## Available modifiers
 

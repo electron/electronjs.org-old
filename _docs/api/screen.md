@@ -1,5 +1,5 @@
 ---
-version: v1.2.2
+version: v1.3.0
 category: API
 redirect_from:
     - /docs/v0.24.0/api/screen/
@@ -44,7 +44,7 @@ sort_title: "screen"
 
 > Retrieve information about screen size, displays, cursor position, etc.
 
-You cannot not use this module until the `ready` event of the `app` module is
+You cannot use this module until the `ready` event of the `app` module is
 emitted (by invoking or requiring it).
 
 `screen` is an [EventEmitter](http://nodejs.org/api/events.html#events_class_events_eventemitter).

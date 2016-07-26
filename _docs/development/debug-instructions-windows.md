@@ -1,5 +1,5 @@
 ---
-version: v1.2.2
+version: v1.3.0
 category: Development
 redirect_from:
     - /docs/v0.24.0/development/debug-instructions-windows/

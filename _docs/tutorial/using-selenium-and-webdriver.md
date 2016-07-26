@@ -1,5 +1,5 @@
 ---
-version: v1.2.2
+version: v1.3.0
 category: Tutorial
 redirect_from:
     - /docs/v0.24.0/tutorial/using-selenium-and-webdriver/
@@ -36,10 +36,10 @@ redirect_from:
     - /docs/latest/tutorial/using-selenium-and-webdriver/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/using-selenium-and-webdriver.md'
 excerpt: "WebDriver is an open source tool for automated testing of web apps across many
-browsers. It provides capabilities for navigating to web pages, user input,
-JavaScript execution, and more. ChromeDriver is a standalone server which
-implements WebDriver&apos;s wire protocol for Chromium. It is being developed by
-members of the Chromium and WebDriver teams."
+    browsers. It provides capabilities for navigating to web pages, user input,
+    JavaScript execution, and more. ChromeDriver is a standalone server which
+    implements WebDriver&apos;s wire protocol for Chromium. It is being developed by
+    members of the Chromium and WebDriver teams."
 title: "Using Selenium and WebDriver"
 sort_title: "using selenium and webdriver"
 ---
@@ -85,12 +85,12 @@ app.start().then(function () {
 }).then(function (title) {
   // Verify the window's title
   assert.equal(title, 'My App')
-}).then(function () {
-  // Stop the application
-  return app.stop()
 }).catch(function (error) {
   // Log any failures
   console.error('Test failed', error.message)
+}).then(function () {
+  // Stop the application
+  return app.stop()
 })
 ```
 

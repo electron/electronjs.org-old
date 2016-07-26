@@ -1,5 +1,5 @@
 ---
-version: v1.2.2
+version: v1.3.0
 category: Tutorial
 redirect_from:
     - /docs/v0.24.0/tutorial/security/
@@ -36,9 +36,9 @@ redirect_from:
     - /docs/latest/tutorial/security/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/security.md'
 excerpt: ":warning: Under no circumstances should you load and execute remote code with
-Node integration enabled. Instead, use only local files (packaged together with
-your application) to execute Node code. To display remote content, use the
-<code>webview</code> tag and make sure to disable the <code>nodeIntegration</code>."
+    Node integration enabled. Instead, use only local files (packaged together with
+    your application) to execute Node code. To display remote content, use the
+    <code>webview</code> tag and make sure to disable the <code>nodeIntegration</code>."
 title: "Security, Native Capabilities, and Your Responsibility"
 sort_title: "security, native capabilities, and your responsibility"
 ---
@@ -101,8 +101,8 @@ This is not bulletproof, but at the least, you should attempt the following:
   (using `webPreferences`)
 * Do not disable `webSecurity`. Disabling it will disable the same-origin policy.
 * Define a [`Content-Security-Policy`](http://www.html5rocks.com/en/tutorials/security/content-security-policy/)
-, and use restrictive rules (ie: `script-src 'self'`)
-* [Override and disable `eval`](https://github.com/nylas/N1/blob/0abc5d5defcdb057120d726b271933425b75b415/static/index.js#L6)
+, and use restrictive rules (i.e. `script-src 'self'`)
+* [Override and disable `eval`](https://github.com/nylas/N1/blob/0abc5d5defcdb057120d726b271933425b75b415/static/index.js#L6-L8)
 , which allows strings to be executed as code.
 * Do not set `allowDisplayingInsecureContent` to true.
 * Do not set `allowRunningInsecureContent` to true.

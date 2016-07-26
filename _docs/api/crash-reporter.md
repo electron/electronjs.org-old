@@ -1,5 +1,5 @@
 ---
-version: v1.2.2
+version: v1.3.0
 category: API
 redirect_from:
     - /docs/v0.24.0/api/crash-reporter/
@@ -84,7 +84,7 @@ The `crash-reporter` module has the following methods:
 You are required to call this method before using other `crashReporter`
 APIs.
 
-**Note:** On OS X, Electron uses a new `crashpad` client, which is different
+**Note:** On macOS, Electron uses a new `crashpad` client, which is different
 from `breakpad` on Windows and Linux. To enable the crash collection feature,
 you are required to call the `crashReporter.start` API to initialize `crashpad`
 in the main process and in each renderer process from which you wish to collect
