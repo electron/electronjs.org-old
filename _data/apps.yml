@@ -1454,3 +1454,11 @@
     - "js"
   license: "MIT"
   icon: "hyperterm.png"
+-
+  name: "WordMark"
+  description: "A lightweight blog publishing editor for Markdown writers"
+  website: "http://wordmarkapp.com/"
+  keywords:
+    - "markdown"
+    - "editor"
+  icon: "wordmark.png"
