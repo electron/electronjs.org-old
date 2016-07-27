@@ -1,5 +1,5 @@
 ---
-version: v1.3.0
+version: v1.3.1
 category: API
 redirect_from:
     - /docs/v0.24.0/api/menu/
@@ -57,18 +57,18 @@ the user right clicks the page:
 ```html
 <!-- index.html -->
 <script>
-const {remote} = require('electron');
+const {remote} = require('electron')
 const {Menu, MenuItem} = remote;
 
-const menu = new Menu();
-menu.append(new MenuItem({label: 'MenuItem1', click() { console.log('item 1 clicked'); }}));
-menu.append(new MenuItem({type: 'separator'}));
-menu.append(new MenuItem({label: 'MenuItem2', type: 'checkbox', checked: true}));
+const menu = new Menu()
+menu.append(new MenuItem({label: 'MenuItem1', click() { console.log('item 1 clicked') }}))
+menu.append(new MenuItem({type: 'separator'}))
+menu.append(new MenuItem({label: 'MenuItem2', type: 'checkbox', checked: true}))
 
 window.addEventListener('contextmenu', (e) => {
-  e.preventDefault();
-  menu.popup(remote.getCurrentWindow());
-}, false);
+  e.preventDefault()
+  menu.popup(remote.getCurrentWindow())
+}, false)
 </script>
 ```
 
@@ -76,6 +76,8 @@ An example of creating the application menu in the render process with the
 simple template API:
 
 ```javascript
+const {Menu} = require('electron')
+
 const template = [
   {
     label: 'Edit',
@@ -106,7 +108,7 @@ const template = [
       },
       {
         role: 'selectall'
-      },
+      }
     ]
   },
   {
@@ -115,8 +117,8 @@ const template = [
       {
         label: 'Reload',
         accelerator: 'CmdOrCtrl+R',
-        click(item, focusedWindow) {
-          if (focusedWindow) focusedWindow.reload();
+        click (item, focusedWindow) {
+          if (focusedWindow) focusedWindow.reload()
         }
       },
       {
@@ -125,11 +127,10 @@ const template = [
       {
         label: 'Toggle Developer Tools',
         accelerator: process.platform === 'darwin' ? 'Alt+Command+I' : 'Ctrl+Shift+I',
-        click(item, focusedWindow) {
-          if (focusedWindow)
-            focusedWindow.webContents.toggleDevTools();
+        click (item, focusedWindow) {
+          if (focusedWindow) focusedWindow.webContents.toggleDevTools()
         }
-      },
+      }
     ]
   },
   {
@@ -140,7 +141,7 @@ const template = [
       },
       {
         role: 'close'
-      },
+      }
     ]
   },
   {
@@ -148,14 +149,14 @@ const template = [
     submenu: [
       {
         label: 'Learn More',
-        click() { require('electron').shell.openExternal('http://electron.atom.io'); }
-      },
+        click () { require('electron').shell.openExternal('http://electron.atom.io') }
+      }
     ]
-  },
-];
+  }
+]
 
 if (process.platform === 'darwin') {
-  const name = require('electron').remote.app.getName();
+  const name = require('electron').remote.app.getName()
   template.unshift({
     label: name,
     submenu: [
@@ -186,9 +187,9 @@ if (process.platform === 'darwin') {
       },
       {
         role: 'quit'
-      },
+      }
     ]
-  });
+  })
   // Window menu.
   template[3].submenu = [
     {
@@ -212,11 +213,11 @@ if (process.platform === 'darwin') {
       label: 'Bring All to Front',
       role: 'front'
     }
-  ];
+  ]
 }
 
-const menu = Menu.buildFromTemplate(template);
-Menu.setApplicationMenu(menu);
+const menu = Menu.buildFromTemplate(template)
+Menu.setApplicationMenu(menu)
 ```
 
 ## Class: Menu
@@ -269,16 +270,14 @@ The `menu` object has the following instance methods:
 
 #### `menu.popup([browserWindow, x, y, positioningItem])`
 
-* `browserWindow` BrowserWindow (optional) - Default is `null`.
-* `x` Number (optional) - Default is -1.
-* `y` Number (**required** if `x` is used) - Default is -1.
+* `browserWindow` BrowserWindow (optional) - Default is `BrowserWindow.getFocusedWindow()`.
+* `x` Number (optional) - Default is the current mouse cursor position.
+* `y` Number (**required** if `x` is used) - Default is the current mouse cursor position.
 * `positioningItem` Number (optional) _macOS_ - The index of the menu item to
   be positioned under the mouse cursor at the specified coordinates. Default is
   -1.
 
-Pops up this menu as a context menu in the `browserWindow`. You can optionally
-provide a `x, y` coordinate to place the menu at, otherwise it will be placed
-at the current mouse cursor position.
+Pops up this menu as a context menu in the `browserWindow`.
 
 #### `menu.append(menuItem)`
 
@@ -364,7 +363,7 @@ the first item.
 
 Template:
 
-```javascript
+```
 [
   {label: '4', id: '4'},
   {label: '5', id: '5'},
@@ -386,7 +385,7 @@ Menu:
 
 Template:
 
-```javascript
+```
 [
   {label: 'a', position: 'endof=letters'},
   {label: '1', position: 'endof=numbers'},

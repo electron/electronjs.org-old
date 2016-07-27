@@ -1,5 +1,5 @@
 ---
-version: v1.3.0
+version: v1.3.1
 category: Tutorial
 redirect_from:
     - /docs/v0.24.0/tutorial/using-widevine-cdm-plugin/
@@ -92,23 +92,26 @@ enabled.
 Example code:
 
 ```javascript
+const {app, BrowserWindow} = require('electron')
+
 // You have to pass the filename of `widevinecdmadapter` here, it is
 // * `widevinecdmadapter.plugin` on macOS,
 // * `libwidevinecdmadapter.so` on Linux,
 // * `widevinecdmadapter.dll` on Windows.
-app.commandLine.appendSwitch('widevine-cdm-path', '/path/to/widevinecdmadapter.plugin');
+app.commandLine.appendSwitch('widevine-cdm-path', '/path/to/widevinecdmadapter.plugin')
 // The version of plugin can be got from `chrome://plugins` page in Chrome.
-app.commandLine.appendSwitch('widevine-cdm-version', '1.4.8.866');
+app.commandLine.appendSwitch('widevine-cdm-version', '1.4.8.866')
 
-let win = null;
+let win = null
 app.on('ready', () => {
   win = new BrowserWindow({
     webPreferences: {
       // The `plugins` have to be enabled.
       plugins: true
     }
-  });
-});
+  })
+  win.show()
+})
 ```
 
 ## Verifying the plugin

@@ -1,5 +1,5 @@
 ---
-version: v1.3.0
+version: v1.3.1
 category: API
 redirect_from:
     - /docs/v0.24.0/api/shell/
@@ -49,9 +49,9 @@ The `shell` module provides functions related to desktop integration.
 An example of opening a URL in the user's default browser:
 
 ```javascript
-const {shell} = require('electron');
+const {shell} = require('electron')
 
-shell.openExternal('https://github.com');
+shell.openExternal('https://github.com')
 ```
 
 ## Methods

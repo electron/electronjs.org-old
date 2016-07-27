@@ -1,5 +1,5 @@
 ---
-version: v1.3.0
+version: v1.3.1
 category: API
 redirect_from:
     - /docs/v0.24.0/api/power-monitor/
@@ -50,11 +50,13 @@ event of the `app` module is emitted.
 For example:
 
 ```javascript
+const {app} = require('electron')
+
 app.on('ready', () => {
   require('electron').powerMonitor.on('suspend', () => {
-    console.log('The system is going to sleep');
-  });
-});
+    console.log('The system is going to sleep')
+  })
+})
 ```
 
 ## Events
