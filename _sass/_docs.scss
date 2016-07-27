@@ -82,7 +82,9 @@
 
 // platform label, e.g. [OS X]
 .docs h3 code > em,
-.docs h3 > em {
+.docs h3 > em,
+.docs h4 code > em,
+.docs h4 > em {
     padding: .1em .4em;
     vertical-align: middle;
     font-size: .66em;
