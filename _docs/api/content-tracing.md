@@ -1,5 +1,5 @@
 ---
-version: v1.3.0
+version: v1.3.1
 category: API
 redirect_from:
     - /docs/v0.24.0/api/content-tracing/
@@ -51,22 +51,22 @@ This module does not include a web interface so you need to open
 result.
 
 ```javascript
-const {contentTracing} = require('electron');
+const {contentTracing} = require('electron')
 
 const options = {
   categoryFilter: '*',
   traceOptions: 'record-until-full,enable-sampling'
-};
+}
 
 contentTracing.startRecording(options, () => {
-  console.log('Tracing started');
+  console.log('Tracing started')
 
   setTimeout(() => {
     contentTracing.stopRecording('', (path) => {
-      console.log('Tracing data recorded to ' + path);
-    });
-  }, 5000);
-});
+      console.log('Tracing data recorded to ' + path)
+    })
+  }, 5000)
+})
 ```
 
 ## Methods

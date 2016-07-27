@@ -1,5 +1,5 @@
 ---
-version: v1.3.0
+version: v1.3.1
 category: API
 redirect_from:
     - /docs/v0.24.0/api/frameless-window/
@@ -58,6 +58,7 @@ To create a frameless window, you need to set `frame` to `false` in
 ```javascript
 const {BrowserWindow} = require('electron')
 let win = new BrowserWindow({width: 800, height: 600, frame: false})
+win.show()
 ```
 
 ### Alternatives on macOS
@@ -70,7 +71,9 @@ the window controls ("traffic lights") for standard window actions.
 You can do so by specifying the new `titleBarStyle` option:
 
 ```javascript
+const {BrowserWindow} = require('electron')
 let win = new BrowserWindow({titleBarStyle: 'hidden'})
+win.show()
 ```
 
 ## Transparent window
@@ -79,7 +82,9 @@ By setting the `transparent` option to `true`, you can also make the frameless
 window transparent:
 
 ```javascript
+const {BrowserWindow} = require('electron')
 let win = new BrowserWindow({transparent: true, frame: false})
+win.show()
 ```
 
 ### Limitations
@@ -108,6 +113,8 @@ events, you can call the [win.setIgnoreMouseEvents(ignore)][ignore-mouse-events]
 API:
 
 ```javascript
+const {BrowserWindow} = require('electron')
+let win = new BrowserWindow()
 win.setIgnoreMouseEvents(true)
 ```
 

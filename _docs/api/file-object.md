@@ -1,5 +1,5 @@
 ---
-version: v1.3.0
+version: v1.3.1
 category: API
 redirect_from:
     - /docs/v0.24.0/api/file-object/
@@ -57,19 +57,19 @@ Example on getting a real path from a dragged-onto-the-app file:
 </div>
 
 <script>
-  const holder = document.getElementById('holder');
+  const holder = document.getElementById('holder')
   holder.ondragover = () => {
     return false;
-  };
+  }
   holder.ondragleave = holder.ondragend = () => {
     return false;
-  };
+  }
   holder.ondrop = (e) => {
-    e.preventDefault();
+    e.preventDefault()
     for (let f of e.dataTransfer.files) {
-      console.log('File(s) you dragged here: ', f.path);
+      console.log('File(s) you dragged here: ', f.path)
     }
     return false;
-  };
+  }
 </script>
 ```

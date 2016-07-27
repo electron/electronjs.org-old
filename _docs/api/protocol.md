@@ -1,5 +1,5 @@
 ---
-version: v1.3.0
+version: v1.3.1
 category: API
 redirect_from:
     - /docs/v0.24.0/api/protocol/
@@ -48,19 +48,19 @@ An example of implementing a protocol that has the same effect as the
 `file://` protocol:
 
 ```javascript
-const {app, protocol} = require('electron');
-const path = require('path');
+const {app, protocol} = require('electron')
+const path = require('path')
 
 app.on('ready', () => {
   protocol.registerFileProtocol('atom', (request, callback) => {
-    const url = request.url.substr(7);
-    callback({path: path.normalize(__dirname + '/' + url)});
+    const url = request.url.substr(7)
+    callback({path: path.normalize(`${__dirname}/${url}`)})
   }, (error) => {
-    if (error)
-      console.error('Failed to register protocol');
-  });
-});
+    if (error) console.error('Failed to register protocol')
+  })
+})
 ```
+
 **Note:** All methods unless specified can only be used after the `ready` event
 of the `app` module gets emitted.
 
@@ -94,10 +94,12 @@ So if you want to register a custom protocol to replace the `http` protocol, you
 have to register it as standard scheme:
 
 ```javascript
-protocol.registerStandardSchemes(['atom']);
+const {app, protocol} = require('electron')
+
+protocol.registerStandardSchemes(['atom'])
 app.on('ready', () => {
-  protocol.registerHttpProtocol('atom', ...);
-});
+  protocol.registerHttpProtocol('atom', '...')
+})
 ```
 
 **Note:** This method can only be used before the `ready` event of the `app`
@@ -161,12 +163,13 @@ should be called with either a `Buffer` object or an object that has the `data`,
 Example:
 
 ```javascript
+const {protocol} = require('electron')
+
 protocol.registerBufferProtocol('atom', (request, callback) => {
-  callback({mimeType: 'text/html', data: new Buffer('<h5>Response</h5>')});
+  callback({mimeType: 'text/html', data: new Buffer('<h5>Response</h5>')})
 }, (error) => {
-  if (error)
-    console.error('Failed to register protocol');
-});
+  if (error) console.error('Failed to register protocol')
+})
 ```
 
 ### `protocol.registerStringProtocol(scheme, handler[, completion])`

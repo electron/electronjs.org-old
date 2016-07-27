@@ -1,5 +1,5 @@
 ---
-version: v1.3.0
+version: v1.3.1
 category: Tutorial
 redirect_from:
     - /docs/v0.24.0/tutorial/online-offline-events/
@@ -47,16 +47,14 @@ using standard HTML5 APIs, as shown in the following example.
 _main.js_
 
 ```javascript
-const electron = require('electron');
-const app = electron.app;
-const BrowserWindow = electron.BrowserWindow;
+const {app, BrowserWindow} = require('electron')
 
-let onlineStatusWindow;
+let onlineStatusWindow
 
 app.on('ready', () => {
-  onlineStatusWindow = new BrowserWindow({ width: 0, height: 0, show: false });
-  onlineStatusWindow.loadURL(`file://${__dirname}/online-status.html`);
-});
+  onlineStatusWindow = new BrowserWindow({ width: 0, height: 0, show: false })
+  onlineStatusWindow.loadURL(`file://${__dirname}/online-status.html`)
+})
 ```
 
 _online-status.html_
@@ -67,13 +65,13 @@ _online-status.html_
 <body>
 <script>
   const alertOnlineStatus = () => {
-    window.alert(navigator.onLine ? 'online' : 'offline');
-  };
+    window.alert(navigator.onLine ? 'online' : 'offline')
+  }
 
-  window.addEventListener('online',  alertOnlineStatus);
-  window.addEventListener('offline',  alertOnlineStatus);
+  window.addEventListener('online',  alertOnlineStatus)
+  window.addEventListener('offline',  alertOnlineStatus)
 
-  alertOnlineStatus();
+  alertOnlineStatus()
 </script>
 </body>
 </html>
@@ -88,21 +86,17 @@ to the main process and handled as needed, as shown in the following example.
 _main.js_
 
 ```javascript
-const electron = require('electron');
-const app = electron.app;
-const ipcMain = electron.ipcMain;
-const BrowserWindow = electron.BrowserWindow;
-
-let onlineStatusWindow;
+const {app, BrowserWindow, ipcMain} = require('electron')
+let onlineStatusWindow
 
 app.on('ready', () => {
-  onlineStatusWindow = new BrowserWindow({ width: 0, height: 0, show: false });
-  onlineStatusWindow.loadURL(`file://${__dirname}/online-status.html`);
-});
+  onlineStatusWindow = new BrowserWindow({ width: 0, height: 0, show: false })
+  onlineStatusWindow.loadURL(`file://${__dirname}/online-status.html`)
+})
 
 ipcMain.on('online-status-changed', (event, status) => {
-  console.log(status);
-});
+  console.log(status)
+})
 ```
 
 _online-status.html_
@@ -112,15 +106,15 @@ _online-status.html_
 <html>
 <body>
 <script>
-  const {ipcRenderer} = require('electron');
+  const {ipcRenderer} = require('electron')
   const updateOnlineStatus = () => {
-    ipcRenderer.send('online-status-changed', navigator.onLine ? 'online' : 'offline');
-  };
+    ipcRenderer.send('online-status-changed', navigator.onLine ? 'online' : 'offline')
+  }
 
-  window.addEventListener('online',  updateOnlineStatus);
-  window.addEventListener('offline',  updateOnlineStatus);
+  window.addEventListener('online',  updateOnlineStatus)
+  window.addEventListener('offline',  updateOnlineStatus)
 
-  updateOnlineStatus();
+  updateOnlineStatus()
 </script>
 </body>
 </html>
