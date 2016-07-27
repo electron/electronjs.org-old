@@ -1,5 +1,5 @@
 ---
-version: v1.3.0
+version: v1.3.1
 category: API
 redirect_from:
     - /docs/v0.24.0/api/browser-window/
@@ -48,8 +48,8 @@ sort_title: "browserwindow"
 // In the main process.
 const {BrowserWindow} = require('electron')
 
-// Or in the renderer process.
-const {BrowserWindow} = require('electron').remote
+// Or use `remote` from the renderer process.
+// const {BrowserWindow} = require('electron').remote
 
 let win = new BrowserWindow({width: 800, height: 600})
 win.on('closed', () => {
@@ -77,6 +77,7 @@ process has done drawing for the first time, showing window after this event
 will have no visual flash:
 
 ```javascript
+const {BrowserWindow} = require('electron')
 let win = new BrowserWindow({show: false})
 win.once('ready-to-show', () => {
   win.show()
@@ -94,6 +95,8 @@ the app feel slow. In this case, it is recommended to show the window
 immediately, and use a `backgroundColor` close to your app's background:
 
 ```javascript
+const {BrowserWindow} = require('electron')
+
 let win = new BrowserWindow({backgroundColor: '#2e2c29'})
 win.loadURL('https://github.com')
 ```
@@ -106,8 +109,12 @@ to set `backgroundColor` to make app feel more native.
 By using `parent` option, you can create child windows:
 
 ```javascript
+const {BrowserWindow} = require('electron')
+
 let top = new BrowserWindow()
 let child = new BrowserWindow({parent: top})
+child.show()
+top.show()
 ```
 
 The `child` window will always show on top of the `top` window.
@@ -118,6 +125,8 @@ A modal window is a child window that disables parent window, to create a modal
 window, you have to set both `parent` and `modal` options:
 
 ```javascript
+const {BrowserWindow} = require('electron')
+
 let child = new BrowserWindow({parent: top, modal: true, show: false})
 child.loadURL('https://github.com')
 child.once('ready-to-show', () => {
@@ -350,14 +359,14 @@ close. For example:
 
 ```javascript
 window.onbeforeunload = (e) => {
-  console.log('I do not want to be closed');
+  console.log('I do not want to be closed')
 
   // Unlike usual browsers that a message box will be prompted to users, returning
   // a non-void value will silently cancel the close.
   // It is recommended to use the dialog API to let the user confirm closing the
   // application.
-  e.returnValue = false;
-};
+  e.returnValue = false
+}
 ```
 
 #### Event: 'closed'
@@ -456,12 +465,14 @@ Commands are lowercased, underscores are replaced with hyphens, and the
 e.g. `APPCOMMAND_BROWSER_BACKWARD` is emitted as `browser-backward`.
 
 ```javascript
-someWindow.on('app-command', (e, cmd) => {
+const {BrowserWindow} = require('electron')
+let win = new BrowserWindow()
+win.on('app-command', (e, cmd) => {
   // Navigate the window back when the user hits their mouse back button
-  if (cmd === 'browser-backward' && someWindow.webContents.canGoBack()) {
-    someWindow.webContents.goBack();
+  if (cmd === 'browser-backward' && win.webContents.canGoBack()) {
+    win.webContents.goBack()
   }
-});
+})
 ```
 
 #### Event: 'scroll-touch-begin' _macOS_
@@ -538,7 +549,10 @@ an Object containing `name` and `version` properties.
 To check if a DevTools extension is installed you can run the following:
 
 ```javascript
+const {BrowserWindow} = require('electron')
+
 let installed = BrowserWindow.getDevToolsExtensions().hasOwnProperty('devtron')
+console.log(installed)
 ```
 
 **Note:** This API cannot be called before the `ready` event of the `app` module
@@ -549,8 +563,10 @@ is emitted.
 Objects created with `new BrowserWindow` have the following properties:
 
 ```javascript
+const {BrowserWindow} = require('electron')
 // In this example `win` is our instance
-let win = new BrowserWindow({width: 800, height: 600});
+let win = new BrowserWindow({width: 800, height: 600})
+win.loadURL('https://github.com')
 ```
 
 #### `win.webContents`
@@ -851,8 +867,11 @@ attached just below the window frame, but you may want to display them beneath
 a HTML-rendered toolbar. For example:
 
 ```javascript
-let toolbarRect = document.getElementById('toolbar').getBoundingClientRect();
-win.setSheetOffset(toolbarRect.height);
+const {BrowserWindow} = require('electron')
+let win = new BrowserWindow()
+
+let toolbarRect = document.getElementById('toolbar').getBoundingClientRect()
+win.setSheetOffset(toolbarRect.height)
 ```
 
 #### `win.flashFrame(flag)`

@@ -1,5 +1,5 @@
 ---
-version: v1.3.0
+version: v1.3.1
 category: API
 redirect_from:
     - /docs/v0.24.0/api/window-open/
@@ -52,8 +52,8 @@ The proxy has limited standard functionality implemented to be
 compatible with traditional web pages. For full control of the new window
 you should create a `BrowserWindow` directly.
 
-The newly created `BrowserWindow` will inherit parent window's options by
-default, to override inherited options you can set them in the `features`
+The newly created `BrowserWindow` will inherit the parent window's options by
+default. To override inherited options you can set them in the `features`
 string.
 
 ### `window.open(url[, frameName][, features])`
@@ -87,33 +87,33 @@ limited functionality with the child window.
 
 The `BrowserWindowProxy` object has the following instance methods:
 
-#### `BrowserWindowProxy.blur()`
+#### `win.blur()`
 
 Removes focus from the child window.
 
-#### `BrowserWindowProxy.close()`
+#### `win.close()`
 
 Forcefully closes the child window without calling its unload event.
 
-#### `BrowserWindowProxy.closed`
+#### `win.closed`
 
 Set to true after the child window gets closed.
 
-#### `BrowserWindowProxy.eval(code)`
+#### `win.eval(code)`
 
 * `code` String
 
 Evaluates the code in the child window.
 
-#### `BrowserWindowProxy.focus()`
+#### `win.focus()`
 
 Focuses the child window (brings the window to front).
 
-#### `BrowserWindowProxy.print()`
+#### `win.print()`
 
 Invokes the print dialog on the child window.
 
-#### `BrowserWindowProxy.postMessage(message, targetOrigin)`
+#### `win.postMessage(message, targetOrigin)`
 
 * `message` String
 * `targetOrigin` String

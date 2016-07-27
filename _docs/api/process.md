@@ -1,5 +1,5 @@
 ---
-version: v1.3.0
+version: v1.3.1
 category: API
 redirect_from:
     - /docs/v0.24.0/api/process/
@@ -58,12 +58,12 @@ the global scope when node integration is turned off:
 
 ```javascript
 // preload.js
-const _setImmediate = setImmediate;
-const _clearImmediate = clearImmediate;
+const _setImmediate = setImmediate
+const _clearImmediate = clearImmediate
 process.once('loaded', () => {
-  global.setImmediate = _setImmediate;
-  global.clearImmediate = _clearImmediate;
-});
+  global.setImmediate = _setImmediate
+  global.clearImmediate = _clearImmediate
+})
 ```
 
 ## Properties

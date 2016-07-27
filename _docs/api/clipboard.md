@@ -1,5 +1,5 @@
 ---
-version: v1.3.0
+version: v1.3.1
 category: API
 redirect_from:
     - /docs/v0.24.0/api/clipboard/
@@ -47,16 +47,17 @@ sort_title: "clipboard"
 The following example shows how to write a string to the clipboard:
 
 ```javascript
-const {clipboard} = require('electron');
-clipboard.writeText('Example String');
+const {clipboard} = require('electron')
+clipboard.writeText('Example String')
 ```
 
 On X Window systems, there is also a selection clipboard. To manipulate it
 you need to pass `selection` to each method:
 
 ```javascript
-clipboard.writeText('Example String', 'selection');
-console.log(clipboard.readText('selection'));
+const {clipboard} = require('electron')
+clipboard.writeText('Example String', 'selection')
+console.log(clipboard.readText('selection'))
 ```
 
 ## Methods
@@ -151,7 +152,8 @@ Returns an array of supported formats for the clipboard `type`.
 Returns whether the clipboard supports the format of specified `data`.
 
 ```javascript
-console.log(clipboard.has('<p>selection</p>'));
+const {clipboard} = require('electron')
+console.log(clipboard.has('<p>selection</p>'))
 ```
 
 ### `clipboard.read(data[, type])` _Experimental_
@@ -172,6 +174,7 @@ Reads `data` from the clipboard.
 * `type` String (optional)
 
 ```javascript
-clipboard.write({text: 'test', html: "<b>test</b>"});
+const {clipboard} = require('electron')
+clipboard.write({text: 'test', html: '<b>test</b>'})
 ```
 Writes `data` to the clipboard.

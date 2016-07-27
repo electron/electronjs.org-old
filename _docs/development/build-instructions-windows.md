@@ -1,5 +1,5 @@
 ---
-version: v1.3.0
+version: v1.3.1
 category: Development
 redirect_from:
     - /docs/v0.24.0/development/build-instructions-windows/
@@ -99,16 +99,24 @@ $ python script\build.py -c D
 After building is done, you can find `electron.exe` under `out\D` (debug
 target) or under `out\R` (release target).
 
-## 64bit Build
+## 32bit Build
 
-To build for the 64bit target, you need to pass `--target_arch=x64` when running
-the bootstrap script:
+To build for the 32bit target, you need to pass `--target_arch=ia32` when
+running the bootstrap script:
 
 ```powershell
-$ python script\bootstrap.py -v --target_arch=x64
+$ python script\bootstrap.py -v --target_arch=ia32
 ```
 
 The other building steps are exactly the same.
+
+## Visual Studio project
+
+To generate a Visual Studio project, you can pass the `--msvs` parameter:
+
+```powershell
+$ python script\bootstrap.py --msvs
+```
 
 ## Tests
 

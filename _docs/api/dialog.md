@@ -1,5 +1,5 @@
 ---
-version: v1.3.0
+version: v1.3.1
 category: API
 redirect_from:
     - /docs/v0.24.0/api/dialog/
@@ -47,17 +47,16 @@ sort_title: "dialog"
 An example of showing a dialog to select multiple files and directories:
 
 ```javascript
-let win = ...;  // BrowserWindow in which to show the dialog
-const {dialog} = require('electron');
-
-console.log(dialog.showOpenDialog({properties: ['openFile', 'openDirectory', 'multiSelections']}));
+const {dialog} = require('electron')
+console.log(dialog.showOpenDialog({properties: ['openFile', 'openDirectory', 'multiSelections']}))
 ```
 
 The Dialog is opened from Electron's main thread. If you want to use the dialog
 object from a renderer process, remember to access it using the remote:
 
 ```javascript
-const {dialog} = require('electron').remote;
+const {dialog} = require('electron').remote
+console.log(dialog)
 ```
 
 ## Methods
@@ -84,7 +83,7 @@ otherwise it returns `undefined`.
 The `filters` specifies an array of file types that can be displayed or
 selected when you want to limit the user to a specific type. For example:
 
-```javascript
+```
 {
   filters: [
     {name: 'Images', extensions: ['jpg', 'png', 'gif']},
