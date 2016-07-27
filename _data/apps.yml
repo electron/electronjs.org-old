@@ -1487,3 +1487,13 @@
     - "tools"
   license: "MIT"
   icon: "ubauth.png"
+-
+  name: "Demio"
+  description: "A Webinar Platform Built for Inbound Sales and Marketing"
+  website: "https://demio.com/"
+  keywords:
+    - "webinar"
+    - "marketing"
+    - "b2b"
+    - "live streaming"
+  icon: "demio.png"
