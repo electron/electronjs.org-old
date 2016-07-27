@@ -1487,3 +1487,15 @@
     - "tools"
   license: "MIT"
   icon: "ubauth.png"
+-
+  name: "Electorrent"
+  description: "An Electron remote client app for uTorrent server"
+  website: "https://github.com/Tympanix/Electorrent"
+  repository: "https://github.com/Tympanix/Electorrent"
+  keywords:
+      - "utorrent"
+      - "remote"
+      - "client"
+      - "magnet"
+  license: "GPLv3"
+  icon: "electorrent.png"
