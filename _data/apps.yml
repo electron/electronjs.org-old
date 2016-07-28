@@ -1498,6 +1498,19 @@
     - "live streaming"
   icon: "demio.png"
 -
+  name: "PhoneGap"
+  description: "The open source framework that gets you building amazing mobile apps using web technology"
+  website: "http://phonegap.com/products/#desktop-app-section"
+  repository: "https://github.com/phonegap/phonegap-app-desktop"
+  keywords:
+    - "mobile"
+    - "iOS"
+    - "Android"
+    - "developer"
+    - "tools"
+  license: "ALv2"
+  icon: "phonegap.png"
+-
   name: "Electorrent"
   description: "An Electron remote client app for uTorrent server"
   website: "https://github.com/Tympanix/Electorrent"
