@@ -1,5 +1,5 @@
 ---
-title: Electron Internals: Message Loop Integration
+title: Electron Internals&#58; Message Loop Integration
 author: zcbenz
 ---
 
