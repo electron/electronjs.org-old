@@ -45,7 +45,7 @@ but we will continue releasing new versions of `electron-prebuilt` until the
 end of 2016.
 
 The [electron-userland/electron-prebuilt](https://github.com/electron-userland/electron-prebuilt)
-repository will remain the canonical home of `electron-prebuilt`.
+repository will remain the canonical home of the `electron` npm package.
 
 ## Many thanks
 
