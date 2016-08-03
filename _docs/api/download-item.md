@@ -1,5 +1,5 @@
 ---
-version: v1.3.1
+version: v1.3.2
 category: API
 redirect_from:
     - /docs/v0.24.0/api/download-item/
@@ -121,6 +121,12 @@ The `downloadItem` object has the following methods:
 The API is only available in session's `will-download` callback function.
 If user doesn't set the save path via the API, Electron will use the original
 routine to determine the save path(Usually prompts a save dialog).
+
+### `downloadItem.getSavePath()`
+
+Returns the save path of the download item. This will be either the path
+set via `downloadItem.setSavePath(path)` or the path selected from the shown
+save dialog.
 
 ### `downloadItem.pause()`
 

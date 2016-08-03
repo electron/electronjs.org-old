@@ -1,5 +1,5 @@
 ---
-version: v1.3.1
+version: v1.3.2
 category: API
 redirect_from:
     - /docs/v0.24.0/api/menu/
@@ -122,14 +122,17 @@ const template = [
         }
       },
       {
-        role: 'togglefullscreen'
-      },
-      {
         label: 'Toggle Developer Tools',
         accelerator: process.platform === 'darwin' ? 'Alt+Command+I' : 'Ctrl+Shift+I',
         click (item, focusedWindow) {
           if (focusedWindow) focusedWindow.webContents.toggleDevTools()
         }
+      },
+      {
+        type: 'separator'
+      },
+      {
+        role: 'togglefullscreen'
       }
     ]
   },

@@ -1,5 +1,5 @@
 ---
-version: v1.3.1
+version: v1.3.2
 category: API
 redirect_from:
     - /docs/v0.24.0/api/tray/
@@ -234,6 +234,27 @@ Sets the title displayed aside of the tray icon in the status bar.
   * `'never'` - Never highlight the tray icon.
 
 Sets when the tray's icon background becomes highlighted (in blue).
+
+**Note:** You can use `highlightMode` with a [`BrowserWindow`](http://electron.atom.io/docs/api/browser-window)
+by toggling between `'never'` and `'always'` modes when the window visibility
+changes.
+
+```js
+const {BrowserWindow, Tray} = require('electron')
+
+const win = new BrowserWindow({width: 800, height: 600})
+const tray = new Tray('/path/to/my/icon')
+
+tray.on('click', () => {
+  win.isVisible() ? win.hide() : win.show()
+})
+win.on('show', () => {
+  tray.setHighlightMode('always')
+})
+win.on('hide', () => {
+  tray.setHighlightMode('never')
+})
+```
 
 #### `tray.displayBalloon(options)` _Windows_
 

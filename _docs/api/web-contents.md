@@ -1,5 +1,5 @@
 ---
-version: v1.3.1
+version: v1.3.2
 category: API
 redirect_from:
     - /docs/v0.24.0/api/web-contents/
@@ -376,7 +376,13 @@ Returns:
 * `event` Event
 * `type` String
 * `image` NativeImage (optional)
-* `scale` Float (optional)
+* `scale` Float (optional) - scaling factor for the custom cursor
+* `size` Object (optional) - the size of the `image`
+  * `width` Integer
+  * `height` Integer
+* `hotspot` Object (optional) - coordinates of the custom cursor's hotspot
+  * `x` Integer - x coordinate
+  * `y` Integer - y coordinate
 
 Emitted when the cursor's type changes. The `type` parameter can be `default`,
 `crosshair`, `pointer`, `text`, `wait`, `help`, `e-resize`, `n-resize`,
@@ -388,8 +394,8 @@ Emitted when the cursor's type changes. The `type` parameter can be `default`,
 `not-allowed`, `zoom-in`, `zoom-out`, `grab`, `grabbing`, `custom`.
 
 If the `type` parameter is `custom`, the `image` parameter will hold the custom
-cursor image in a `NativeImage`, and the `scale` will hold scaling information
-for the image.
+cursor image in a `NativeImage`, and `scale`, `size` and `hotspot` will hold 
+additional information about the custom cursor.
 
 #### Event: 'context-menu'
 
@@ -651,6 +657,42 @@ Mute the audio on the current web page.
 #### `contents.isAudioMuted()`
 
 Returns whether this page has been muted.
+
+#### `contents.setZoomFactor(factor)`
+
+* `factor` Number - Zoom factor.
+
+Changes the zoom factor to the specified factor. Zoom factor is
+zoom percent divided by 100, so 300% = 3.0.
+
+#### `contents.getZoomFactor(callback)`
+
+* `callback` Function
+
+Sends a request to get current zoom factor, the `callback` will be called with
+`callback(zoomFactor)`.
+
+#### `contents.setZoomLevel(level)`
+
+* `level` Number - Zoom level
+
+Changes the zoom level to the specified level. The original size is 0 and each
+increment above or below represents zooming 20% larger or smaller to default
+limits of 300% and 50% of original size, respectively.
+
+#### `contents.getZoomLevel(callback)`
+
+* `callback` Function
+
+Sends a request to get current zoom level, the `callback` will be called with
+`callback(zoomLevel)`.
+
+#### `contents.setZoomLevelLimits(minimumLevel, maximumLevel)`
+
+* `minimumLevel` Number
+* `maximumLevel` Number
+
+Sets the maximum and minimum zoom level.`
 
 #### `contents.undo()`
 
@@ -960,7 +1002,7 @@ app.on('ready', () => {
     (screenPosition == mobile) (default: `{x: 0, y: 0}`)
   * `x` Integer - Set the x axis offset from top left corner
   * `y` Integer - Set the y axis offset from top left corner
-* `deviceScaleFactor` Integer - Set the device scale factor (if zero defaults to
+* `deviceScaleFactor` Float - Set the device scale factor (if zero defaults to
     original device scale factor) (default: `0`)
 * `viewSize` Object - Set the emulated view size (empty means no override)
   * `width` Integer - Set the emulated view width
