@@ -1522,3 +1522,13 @@
       - "magnet"
   license: "GPLv3"
   icon: "electorrent.png"
+-
+  name: "Code RPGify"
+  description: "RPG style coding application"
+  website: "http://code.rpgify.com"
+  keywords:
+      - "code"
+      - "rpgify"
+      - "coding"
+      - "game"
+  icon: "coderpgify.png"
