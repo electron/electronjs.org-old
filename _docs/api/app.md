@@ -1,5 +1,5 @@
 ---
-version: v1.3.1
+version: v1.3.2
 category: API
 redirect_from:
     - /docs/v0.24.0/api/app/
@@ -766,6 +766,12 @@ Hides the dock icon.
 ### `app.dock.show()` _macOS_
 
 Shows the dock icon.
+
+### `app.dock.isVisible()` _macOS_
+
+Returns whether the dock icon is visible.
+The `app.dock.show()` call is asynchronous so this method might not
+return true immediately after that call.
 
 ### `app.dock.setMenu(menu)` _macOS_
 

@@ -1,5 +1,23 @@
 [
   {
+    "url": "https://api.github.com/repos/electron/electron/releases/3783661",
+    "assets_url": "https://api.github.com/repos/electron/electron/releases/3783661/assets",
+    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/3783661/assets{?name,label}",
+    "html_url": "https://github.com/electron/electron/releases/tag/v1.3.2",
+    "id": 3783661,
+    "tag_name": "v1.3.2",
+    "target_commitish": "master",
+    "name": "electron v1.3.2",
+    "draft": false,
+    "prerelease": false,
+    "created_at": "2016-08-02T17:27:56Z",
+    "published_at": "2016-08-02T23:27:35Z",
+    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v1.3.2",
+    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v1.3.2",
+    "body": "Changelog:\r\n\r\n* Upload the checksums of releases. [#6629](https://github.com/electron/electron/pull/6588)\r\n* Improve performance when creating native classes. [#6688](https://github.com/electron/electron/pull/6688)\r\n* Add `downloadItem.getSavePath()` API. [#6629](https://github.com/electron/electron/pull/6629)\r\n* Add `image.toBitmap()` API. [#6661](https://github.com/electron/electron/pull/6661)\r\n* Add `size`, `hotspot` parameters to the `cursor-changed` event of `WebContents`. [#6661](https://github.com/electron/electron/pull/6661)\r\n* Fix `LICENSES.chromium.html` being empty. [libchromiumcontent#225](https://github.com/electron/libchromiumcontent/pull/225)\r\n* Fix failing to register custom protocol due to `Session` being garbage collected. [#6674](https://github.com/electron/electron/pull/6674)\r\n* Fix unicode characters not working with `contents.sendInputEvent(event)` API. [#6661](https://github.com/electron/electron/pull/6661)\r\n\r\n__Windows__\r\n\r\n* Add `shell.writeShortcutLink(shortcutPath[, operation], options)` and `shell.readShortcutLink(shortcutPath)` APIs. [#6623](https://github.com/electron/electron/pull/6623)\r\n* Fix window size being changed after restoring from minimized state. [#6667](https://github.com/electron/electron/pull/6667)\r\n\r\n__macOS__\r\n\r\n* Add `app.dock.isVisible()` API. [#6683](https://github.com/electron/electron/pull/6683)\r\n* Fix crash with keyboard events under fullscreen. [#6637](https://github.com/electron/electron/pull/6637)\r\n* Fix crash when using webview. [#6644](https://github.com/electron/electron/pull/6644)\r\n\r\n__Linux__\r\n\r\n* Fix components not showing correctly on displays with 2.0 DPI. [#6646](https://github.com/electron/electron/pull/6646)\r\n",
+    "version": "1.3.2"
+  },
+  {
     "url": "https://api.github.com/repos/electron/electron/releases/3747121",
     "assets_url": "https://api.github.com/repos/electron/electron/releases/3747121/assets",
     "upload_url": "https://uploads.github.com/repos/electron/electron/releases/3747121/assets{?name,label}",
@@ -520,23 +538,5 @@
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.36.11",
     "body": "Changelog:\r\n\r\n* Add `show` and `hide` events to `BrowserWindow`.\r\n* Do not block when calling `document.hidden`.\r\n* Fix `visibilitychange` event not working.\r\n* Fix passing certificate to `select-client-certificate` event's callback.\r\n* Fix `PrintScreen` not working as accelerator.\r\n* Fix style issues with `<webview>` inside flexbox.\r\n* Fix unable to read image when there is `..` in file path.\r\n\r\n__Linux__\r\n\r\n* Fix `resizable` option not working.\r\n\r\n__Windows__\r\n\r\n* Make `fullscreenable` option work.\r\n\r\n__OS X__\r\n\r\n* Add `platform-theme-changed` event to `app` module.\r\n* Add `app.isDarkMode()` API.\r\n* Fix `Cmd+~` cycling windows in wrong direction.\r\n* Fix `BrowserWindow.isMaximized()` returning wrong result when window is not resizable.\r\n",
     "version": "0.36.11"
-  },
-  {
-    "url": "https://api.github.com/repos/electron/electron/releases/2749683",
-    "assets_url": "https://api.github.com/repos/electron/electron/releases/2749683/assets",
-    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/2749683/assets{?name,label}",
-    "html_url": "https://github.com/electron/electron/releases/tag/v0.36.10",
-    "id": 2749683,
-    "tag_name": "v0.36.10",
-    "target_commitish": "master",
-    "name": "electron v0.36.10",
-    "draft": false,
-    "prerelease": false,
-    "created_at": "2016-03-05T03:00:06Z",
-    "published_at": "2016-03-05T05:02:05Z",
-    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.36.10",
-    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.36.10",
-    "body": "Changelog:\r\n\r\n* `WebContents.beginFrameSubscription` becomes faster and gets better image quality.\r\n* Add `callback` parameter for `webContents.executeJavaScript` and `<webview>.executeJavaScript`.\r\n* Fix media devices having empty labels.\r\n* Fix the methods of remote objects being unwritable and unconfigurable.\r\n",
-    "version": "0.36.10"
   }
 ]
