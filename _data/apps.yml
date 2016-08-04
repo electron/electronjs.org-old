@@ -478,7 +478,7 @@
   icon: "wing.png"
 -
   name: "CatLight"
-  description: "Desktop build status notificatioans"
+  description: "Desktop build status notifications"
   website: "https://catlight.io"
   repository: ""
   keywords: []
