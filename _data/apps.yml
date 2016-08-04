@@ -1532,3 +1532,13 @@
       - "coding"
       - "game"
   icon: "coderpgify.png"
+-
+  name: "BlankUp"
+  description: "Markdown editor witch clarity +1"
+  website: "https://hoverbaum.github.io/BlankUp-Electron/"
+  repository: "https://github.com/HoverBaum/BlankUp-Electron"
+  keywords:
+      - "markdown"
+      - "editor"
+      - "productivity"
+  icon: "blankup.png"
