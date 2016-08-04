@@ -1532,3 +1532,13 @@
       - "coding"
       - "game"
   icon: "coderpgify.png"
+-
+  name: "PamFax"
+  description: "A cross-platform app for sending and receiving faxes"
+  website: "https://www.pamfax.biz"
+  keywords:
+      - "fax"
+      - "productivity"
+      - "communication"
+      - "utility"
+  icon: "pamfax.png"
