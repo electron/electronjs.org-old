@@ -1367,6 +1367,7 @@
     - "productivity"
     - "paws"
   icon: "paws-for-trello.png"
+# July 2016
 -
   name: "Yout"
   description: "Yout Player is the new way to watch your playlists from youtube on desktop."
@@ -1522,6 +1523,7 @@
       - "magnet"
   license: "GPLv3"
   icon: "electorrent.png"
+# August 2016
 -
   name: "Code RPGify"
   description: "RPG style coding application"
