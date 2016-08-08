@@ -52,11 +52,11 @@ When linking with Node, there are two options: you can either build Node as a
 static library and include it in the final executable, or you can build it as a
 shared library and ship it alongside the final executable.
 
-In Electron, Node was built as static library for a long time. This made the
+In Electron, Node was built as a static library for a long time. This made the
 build simple, enabled the best compiler optimizations, and allowed Electron to
 be distributed without an extra `node.dll` file.
 
-However this changed after Chrome switched to use [BoringSSL][boringssl]. BoringSSL is a
+However, this changed after Chrome switched to use [BoringSSL][boringssl]. BoringSSL is a
 fork of [OpenSSL][openssl] that removes several unused APIs and changes many existing
 interfaces. Because Node still uses OpenSSL, the compiler would generate numerous
 linking errors due to conflicting symbols if they were linked together.
@@ -66,7 +66,7 @@ option was to switch to building Node as a shared library, and
 [hide the BoringSSL and OpenSSL symbols][openssl-hide] in the components of each.
 
 This change brought Electron some positive side effects. Before this
-change you could not rename the executable file of Electron on Windows if you
+change, you could not rename the executable file of Electron on Windows if you
 used native modules because the name of the executable was hard coded in the
 import library. After Node was built as a shared library, this limitation was gone
 because all native modules were linked to `node.dll`, whose name didn't need to
@@ -82,7 +82,7 @@ because they cannot find the symbols.
 
 So in order to make native modules work, the V8 and libuv symbols
 were exposed in Electron. For V8 this is done by [forcing all
-symbols in Chromium's configuration file to be exposed][v8-expose]. For libuv
+symbols in Chromium's configuration file to be exposed][v8-expose]. For libuv,
 it is achieved by [setting the `BUILDING_UV_SHARED=1` definition][libuv-expose].
 
 ## Starting Node in your app
@@ -91,8 +91,8 @@ After all the work of building and linking with Node, the final step is to run
 Node in your app.
 
 Node doesn't provide many public APIs for embedding itself into other apps.
-Usually you can just call [`node::Start` and `node::Init`][node-start] to start
-a new instance of Node. However if you are building a complex app based on Node,
+Usually, you can just call [`node::Start` and `node::Init`][node-start] to start
+a new instance of Node. However, if you are building a complex app based on Node,
 you have to use APIs like `node::CreateEnvironment` to precisely control every
 step.
 
