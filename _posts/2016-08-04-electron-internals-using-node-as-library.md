@@ -49,7 +49,7 @@ included in Node's source code is not used. This is done by setting both
 ## Shared library or static library
 
 When linking with Node, there are two options: you can either build Node as a
-static library and include it in the final executable; or you can build it as a
+static library and include it in the final executable, or you can build it as a
 shared library and ship it alongside the final executable.
 
 In Electron, Node was built as static library for a long time. This made the
@@ -97,7 +97,7 @@ you have to use APIs like `node::CreateEnvironment` to precisely control every
 step.
 
 In Electron, Node is started in two modes: the standalone mode that runs in the
-main process, which is similar to official Node binaries; and the embedded mode
+main process, which is similar to official Node binaries, and the embedded mode
 which inserts Node APIs into web pages. The details of this will be explained
 in a future post.
 
