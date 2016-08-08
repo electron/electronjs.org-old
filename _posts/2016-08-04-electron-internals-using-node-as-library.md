@@ -67,7 +67,7 @@ option was to switch to building Node as a shared library, and
 
 This change brought Electron some positive side effects. Before this
 change you could not rename the executable file of Electron on Windows if you
-used native modules because the name of the executable was hardcoded in the
+used native modules because the name of the executable was hard coded in the
 import library. After Node was built as a shared library, this limitation was gone
 because all native modules were linked to `node.dll`, whose name didn't need to
 be changed.
