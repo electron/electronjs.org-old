@@ -30,7 +30,7 @@ a `config.gypi` with variables instructing Node to be built as a shared library.
 
 In Electron, however, we are not using the `configure` script since we have our
 own scripts, and the configurations for Node are written in the
-[`common.gypi`][commongypi] file under Electron's source code directory.
+[`common.gypi`][commongypi] file in Electron's source code directory.
 
 ## Link Node with Electron
 
@@ -66,7 +66,7 @@ and OpenSSL][openssl-hide] in the components of each.
 This change brought Electron some positive side effects. Before this
 change, you could not rename the executable file of Electron on Windows if you
 used native modules because the name of the executable was hard coded in the
-import library. After Node got built as shared library, this limitation was gone
+import library. After Node was built as shared library, this limitation was gone
 because all native modules are linked to `node.dll`, whose name doesn't need to
 be changed.
 
@@ -79,7 +79,7 @@ hidden when building Node as a library, and native modules will fail to load
 because they cannot find symbols.
 
 So in order to make native modules work for Electron, we have to expose symbols
-of V8 and libuv in Electron. For V8 this is done by [forcing exposing all
+of V8 and libuv in Electron. For V8 this is done by [force-exposing all
 symbols in Chromium's configuration file][v8-expose]. For libuv, it is achieved
 by [setting the `BUILDING_UV_SHARED=1` definition][libuv-expose].
 
@@ -96,7 +96,7 @@ step.
 
 In Electron, Node is started in two modes: the standalone mode that runs in the
 main process, which is similar to official Node binaries; and the embedded mode
-which inserts Node APIs into web pages. I'll explain the details in future
+which inserts Node APIs into web pages. I'll explain these details in future
 posts.
 
 [gyp]: https://gyp.gsrc.io
