@@ -3,7 +3,7 @@ title: Electron Internals&#58; Using Node as a Library
 author: zcbenz
 ---
 
-Most people use Node for server scripting, but because of Node's rich API set
+Most people use [Node](https://nodejs.org) for server scripting, but because of Node's rich API set
 and popular community, it is also a good fit for an embedded library. This post
 explains how Node is used as a library in Electron.
 
@@ -11,8 +11,9 @@ explains how Node is used as a library in Electron.
 
 ## Building system
 
-Both Node and Electron use [`GYP`][gyp] as a building system. If you want to embed
-Node inside your app, you have to it as your building system too. It is also
+Both Node and Electron use Chromium's [`GYP`][gyp] library as a building system.
+[`GYP`][gyp] is a build system that generates other build systems and if you
+want to embed Node inside your app, you'll need to use it too. It is also
 recommended to get a good knowledge of how [`GYP`][gyp] works before you
 continue reading.
 
