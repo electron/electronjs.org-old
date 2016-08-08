@@ -23,11 +23,11 @@ is built, along with lots of [`GYP`][gyp] variables controlling which parts of
 Node are enabled and whether to open certain configurations.
 
 To change the build flags, you need to set the variables in the `gypi` file of
-your project. The `configure` script of Node can generate some common
+your project. The `configure` script in Node can generate some common
 configurations for you, for example running `./configure --shared` will generate
 a `config.gypi` with variables instructing Node to be built as a shared library.
 
-In Electron however we are not using the `configure` script since we have our
+In Electron, however, we are not using the `configure` script since we have our
 own scripts, and the configurations for Node are written in the
 [`common.gypi`][commongypi] file under Electron's source code directory.
 
@@ -45,14 +45,14 @@ included in Node's source code is not used. This is done by setting both
 ## Shared library or static library
 
 When linking with Node, there are two options: we can either build Node as a
-static library and include it in the final executable; or we can build it as a
+static library and include it in the final executable, or we can build it as a
 shared library and ship it alongside the final executable.
 
-In Electron we used to build Node as static library for a long time, so the
-building model was simple, we got the best optimization from compiler, and we didn't
+In Electron we used to build Node as a static library for a long time, so the
+building model was simple, we got the best optimization from the compiler, and we didn't
 need to ship an extra `node.dll`.
 
-However this changed after Chrome switched to use BoringSSL. The BoringSSL is a
+However, this changed after Chrome switched to use BoringSSL. The BoringSSL is a
 fork of OpenSSL that strips lots of unused APIs and changes many existing
 interfaces. Node still uses the OpenSSL, so when we linked them together
 the compiler would explode, generating numerous linking errors due to
@@ -63,8 +63,8 @@ option was to build Node as a shared library, and [hide symbols of BoringSSL
 and OpenSSL][openssl-hide] in the components of each.
 
 This change brought Electron some positive side effects. Before this
-change you could not rename the executable file of Electron on Windows if you
-used native modules, because the name of the executable was hardcoded in the
+change, you could not rename the executable file of Electron on Windows if you
+used native modules because the name of the executable was hard coded in the
 import library. After Node got built as shared library, this limitation was gone
 because all native modules are linked to `node.dll`, whose name doesn't need to
 be changed.
@@ -79,7 +79,7 @@ because they cannot find symbols.
 
 So in order to make native modules work for Electron, we have to expose symbols
 of V8 and libuv in Electron. For V8 this is done by [forcing exposing all
-symbols in Chromium's configuration file][v8-expose]. For libuv it is achieved
+symbols in Chromium's configuration file][v8-expose]. For libuv, it is achieved
 by [setting the `BUILDING_UV_SHARED=1` definition][libuv-expose].
 
 ## Starting Node in your app
@@ -88,13 +88,13 @@ After all the work of building and linking with Node, the final step is to run
 Node in your app.
 
 Node doesn't provide many public APIs for embedding itself into other apps.
-Usually you can just call [`node::Start` and `node::Init`][node-start] to start
+Usually, you can just call [`node::Start` and `node::Init`][node-start] to start
 a new instance of Node. However if you are building a complex app based on Node,
 you have to use APIs like `node::CreateEnvironment` to precisely control every
 step.
 
 In Electron, Node is started in two modes: the standalone mode that runs in the
-main process, which is similar to official Node binaries; and the embeded mode
+main process, which is similar to official Node binaries; and the embedded mode
 which inserts Node APIs into web pages. I'll explain the details in future
 posts.
 
