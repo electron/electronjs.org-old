@@ -1576,3 +1576,11 @@
     - "tweetdeck"
   license: "MIT"
   icon: "rambox.png"
+-
+  name: "Gordie"
+  description: "The best app for your card collections!"
+  website: "http://gordie-app.bitbucket.org/"
+  keywords:
+    - "cards"
+    - "collections"
+  icon: "gordie.png"
