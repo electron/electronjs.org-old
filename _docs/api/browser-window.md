@@ -1,5 +1,5 @@
 ---
-version: v1.3.2
+version: v1.3.3
 category: API
 redirect_from:
     - /docs/v0.24.0/api/browser-window/
@@ -325,6 +325,8 @@ The `webPreferences` option is an object that can have the following properties:
 * `defaultEncoding` String - Defaults to `ISO-8859-1`.
 * `backgroundThrottling` Boolean - Whether to throttle animations and timers
   when the page becomes background. Defaults to `true`.
+* `offscreen` Boolean - Whether to enable offscreen rendering for the browser
+  window. Defaults to `false`.
 
 ### Instance Events
 
@@ -612,6 +614,10 @@ Removes focus from the window.
 
 Returns a boolean, whether the window is focused.
 
+#### `win.isDestroyed()`
+
+Returns a boolean, whether the window is destroyed.
+
 #### `win.show()`
 
 Shows and gives focus to the window.
@@ -704,6 +710,23 @@ Resizes and moves the window to `width`, `height`, `x`, `y`.
 #### `win.getBounds()`
 
 Returns an object that contains window's width, height, x and y values.
+
+#### `win.setContentBounds(options[, animate])`
+
+* `options` Object
+  * `x` Integer
+  * `y` Integer
+  * `width` Integer
+  * `height` Integer
+* `animate` Boolean (optional) _macOS_
+
+Resizes and moves the window's client area (e.g. the web page) to
+`width`, `height`, `x`, `y`.
+
+#### `win.getContentBounds()`
+
+Returns an object that contains the window's client area (e.g. the web page)
+width, height, x and y values.
 
 #### `win.setSize(width, height[, animate])`
 
@@ -975,9 +998,11 @@ Same as `webContents.reload`.
 Sets the `menu` as the window's menu bar, setting it to `null` will remove the
 menu bar.
 
-#### `win.setProgressBar(progress)`
+#### `win.setProgressBar(progress[, options])`
 
 * `progress` Double
+* `options` Object (optional)
+  * `mode` String _Windows_ - Mode for the progres bar (`none`, `normal`, `indeterminate`, `error`, or `paused`)
 
 Sets progress value in progress bar. Valid range is [0, 1.0].
 
@@ -987,6 +1012,10 @@ Change to indeterminate mode when progress > 1.
 On Linux platform, only supports Unity desktop environment, you need to specify
 the `*.desktop` file name to `desktopName` field in `package.json`. By default,
 it will assume `app.getName().desktop`.
+
+On Windows, a mode can be passed. Accepted values are `none`, `normal`, 
+`indeterminate`, `error`, and `paused`. If you call `setProgressBar` without a
+mode set (but with a value within the valid range), `normal` will be assumed.
 
 #### `win.setOverlayIcon(overlay, description)` _Windows_
 
@@ -1059,6 +1088,13 @@ Sets the region of the window to show as the thumbnail image displayed when
 hovering over the window in the taskbar. You can reset the thumbnail to be
 the entire window by specifying an empty region:
 `{x: 0, y: 0, width: 0, height: 0}`.
+
+#### `win.setThumbnailToolTip(toolTip)` _Windows_
+
+* `toolTip` String
+
+Sets the toolTip that is displayed when hovering over the window thumbnail
+in the taskbar.
 
 #### `win.showDefinitionForSelection()` _macOS_
 

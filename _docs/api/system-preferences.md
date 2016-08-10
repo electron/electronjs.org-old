@@ -1,5 +1,5 @@
 ---
-version: v1.3.2
+version: v1.3.3
 category: API
 redirect_from:
     - /docs/v0.24.0/api/system-preferences/
@@ -54,6 +54,26 @@ console.log(systemPreferences.isDarkMode())
 ### `systemPreferences.isDarkMode()` _macOS_
 
 This method returns `true` if the system is in Dark Mode, and `false` otherwise.
+
+### `systemPreferences.isSwipeTrackingFromScrollEventsEnabled()` _macOS_
+
+This method returns `true` if the Swipe between pages setting is on, and `false` otherwise.
+
+### `systemPreferences.postNotification(event, userInfo)` _macOS_
+
+* `event` String
+* `userInfo` Dictionary
+
+Posts `event` as native notifications of macOS. The `userInfo` is an Object
+that contains the user information dictionary sent along with the notification.
+
+### `systemPreferences.postLocalNotification(event, userInfo)` _macOS_
+
+* `event` String
+* `userInfo` Dictionary
+
+Posts `event` as native notifications of macOS. The `userInfo` is an Object
+that contains the user information dictionary sent along with the notification.
 
 ### `systemPreferences.subscribeNotification(event, callback)` _macOS_
 

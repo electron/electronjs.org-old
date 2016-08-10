@@ -1,12 +1,5 @@
 [
   {
-    "name": "HyperTerm",
-    "href": "https://hyperterm.org",
-    "description": "Terminal.",
-    "category": "apps",
-    "subcategory": "open_source"
-  },
-  {
     "name": "WebTorrent",
     "href": "https://github.com/feross/webtorrent-app",
     "description": "Streaming torrent client.",
@@ -770,20 +763,6 @@
     "subcategory": "open_source"
   },
   {
-    "name": "Deco",
-    "href": "https://github.com/decosoftware/deco-ide",
-    "description": "React Native IDE.",
-    "category": "apps",
-    "subcategory": "open_source"
-  },
-  {
-    "name": "Toshocat",
-    "href": "https://github.com/tofuness/Toshocat",
-    "description": "Anime/Manga Progress Tracker.",
-    "category": "apps",
-    "subcategory": "open_source"
-  },
-  {
     "name": "GitKraken",
     "href": "http://www.gitkraken.com",
     "description": "Git client.",
@@ -962,20 +941,6 @@
     "name": "Paws",
     "href": "http://friendlyfox.es/paws/",
     "description": "Trello client.",
-    "category": "apps",
-    "subcategory": "closed_source"
-  },
-  {
-    "name": "Automint",
-    "href": "http://automint.in",
-    "description": "CRM for automobile businesses.",
-    "category": "apps",
-    "subcategory": "closed_source"
-  },
-  {
-    "name": "CrossCloud",
-    "href": "https://medium.com/@crosscloud/what-is-new-in-crosscloud-1-0-c00404e7bf9f",
-    "description": "Secure sync for multiple cloud storages.",
     "category": "apps",
     "subcategory": "closed_source"
   },
@@ -1324,13 +1289,6 @@
     "name": "NeDB",
     "href": "https://github.com/louischatriot/nedb",
     "description": "Embedded persistent or in memory database.",
-    "category": "tools",
-    "subcategory": "for_electron"
-  },
-  {
-    "name": "electron-devtools-installer",
-    "href": "https://github.com/GPMDP/electron-devtools-installer",
-    "description": "Install DevTools extensions from the Chrome Web Store.",
     "category": "tools",
     "subcategory": "for_electron"
   },
