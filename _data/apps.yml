@@ -1101,6 +1101,7 @@
     - "database"
     - "design"
   icon: "collectie.png"
+  featuredOnHomepage: true
 -
   name: "Istrolid"
   description: "Fleet Design Strategy Game"
@@ -1282,6 +1283,7 @@
     - "sync"
   license: "GPLv2"
   icon: "simplenote.png"
+  featuredOnHomepage: true
 -
   name: "GaussSense Desktop"
   description: "Experience the powerful prototyping toolkit instantly."
@@ -1443,6 +1445,7 @@
     - "PowerPoint"
   license: "MIT"
   icon: "marp.png"
+  featuredOnHomepage: true
 -
   name: "HyperTerm"
   description: "HTML/JS/CSS Terminal"
@@ -1455,6 +1458,7 @@
     - "js"
   license: "MIT"
   icon: "hyperterm.png"
+  featuredOnHomepage: true
 -
   name: "WordMark"
   description: "A lightweight blog publishing editor for Markdown writers"
