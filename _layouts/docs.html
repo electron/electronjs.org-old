@@ -60,3 +60,14 @@ layout: default
 
   </div>
 </section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var ems = document.querySelectorAll('em')
+    Array.prototype.forEach.call(ems, function (em) {
+      if (em.textContent === 'macOS' || em.textContent === 'Linux' || em.textContent === 'Windows') {
+        em.classList.add('platform-label')
+      }
+    })
+  })
+</script>
