@@ -1,5 +1,5 @@
 ---
-version: v1.3.2
+version: v1.3.3
 category: API
 redirect_from:
     - /docs/v0.24.0/api/web-contents/
@@ -394,7 +394,7 @@ Emitted when the cursor's type changes. The `type` parameter can be `default`,
 `not-allowed`, `zoom-in`, `zoom-out`, `grab`, `grabbing`, `custom`.
 
 If the `type` parameter is `custom`, the `image` parameter will hold the custom
-cursor image in a `NativeImage`, and `scale`, `size` and `hotspot` will hold 
+cursor image in a `NativeImage`, and `scale`, `size` and `hotspot` will hold
 additional information about the custom cursor.
 
 #### Event: 'context-menu'
@@ -499,9 +499,30 @@ app.on('ready', () => {
 })
 ```
 
-#### Event: 'view-painted'
+#### Event: 'paint'
 
-Emitted when a page's view is repainted.
+Returns:
+
+* `event` Event
+* `dirtyRect` Object
+  * `x` Integer - The x coordinate on the image.
+  * `y` Integer - The y coordinate on the image.
+  * `width` Integer - The width of the dirty area.
+  * `height` Integer - The height of the dirty area.
+* `image` [NativeImage](http://electron.atom.io/docs/api/native-image) - The image data of the whole frame.
+
+Emitted when a new frame is generated. Only the dirty area is passed in the
+buffer.
+
+```javascript
+const {BrowserWindow} = require('electron')
+
+let win = new BrowserWindow({webPreferences: {offscreen: true}})
+win.webContents.on('paint', (event, dirty, image) => {
+  // updateBitmap(dirty, image.getBitmap())
+})
+win.loadURL('http://github.com')
+```
 
 ### Instance Methods
 
@@ -546,6 +567,10 @@ console.log(currentURL)
 #### `contents.getTitle()`
 
 Returns the title of the current web page.
+
+#### `contents.isDestroyed()`
+
+Returns a Boolean, whether the web page is destroyed.
 
 #### `contents.isFocused()`
 
@@ -692,7 +717,7 @@ Sends a request to get current zoom level, the `callback` will be called with
 * `minimumLevel` Number
 * `maximumLevel` Number
 
-Sets the maximum and minimum zoom level.`
+Sets the maximum and minimum zoom level.
 
 #### `contents.undo()`
 
@@ -1125,6 +1150,31 @@ win.webContents.on('did-finish-load', () => {
 #### `contents.showDefinitionForSelection()` _macOS_
 
 Shows pop-up dictionary that searches the selected word on the page.
+
+#### `contents.isOffscreen()`
+
+Indicates whether *offscreen rendering* is enabled.
+
+#### `contents.startPainting()`
+
+If *offscreen rendering* is enabled and not painting, start painting.
+
+#### `contents.stopPainting()`
+
+If *offscreen rendering* is enabled and painting, stop painting.
+
+#### `contents.isPainting()`
+
+If *offscreen rendering* is enabled returns whether it is currently painting.
+
+#### `contents.setFrameRate(fps)`
+
+If *offscreen rendering* is enabled sets the frame rate to the specified number.
+Only values between 1 and 60 are accepted.
+
+#### `contents.getFrameRate()`
+
+If *offscreen rendering* is enabled returns the current frame rate.
 
 ### Instance Properties
 

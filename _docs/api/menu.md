@@ -1,5 +1,5 @@
 ---
-version: v1.3.2
+version: v1.3.3
 category: API
 redirect_from:
     - /docs/v0.24.0/api/menu/
@@ -44,35 +44,17 @@ sort_title: "menu"
 
 > Create native application menus and context menus.
 
-This module is a main process module which can be used in a render process via
-the `remote` module.
+Each `Menu` consists of multiple [`MenuItem`](http://electron.atom.io/docs/api/menu-item)s and each `MenuItem`
+can have a submenu.
 
-Each menu consists of multiple [menu items](http://electron.atom.io/docs/api/menu-item) and each menu item can
-have a submenu.
+## Examples
 
-Below is an example of creating a menu dynamically in a web page
-(render process) by using the [remote](http://electron.atom.io/docs/api/remote) module, and showing it when
-the user right clicks the page:
+The `Menu` class is only available in the main process, but you can also use it
+in the render process via the [`remote`](http://electron.atom.io/docs/api/remote) module.
 
-```html
-<!-- index.html -->
-<script>
-const {remote} = require('electron')
-const {Menu, MenuItem} = remote;
+### Main process
 
-const menu = new Menu()
-menu.append(new MenuItem({label: 'MenuItem1', click() { console.log('item 1 clicked') }}))
-menu.append(new MenuItem({type: 'separator'}))
-menu.append(new MenuItem({label: 'MenuItem2', type: 'checkbox', checked: true}))
-
-window.addEventListener('contextmenu', (e) => {
-  e.preventDefault()
-  menu.popup(remote.getCurrentWindow())
-}, false)
-</script>
-```
-
-An example of creating the application menu in the render process with the
+An example of creating the application menu in the main process with the
 simple template API:
 
 ```javascript
@@ -127,6 +109,18 @@ const template = [
         click (item, focusedWindow) {
           if (focusedWindow) focusedWindow.webContents.toggleDevTools()
         }
+      },
+      {
+        type: 'separator'
+      },
+      {
+        role: 'resetzoom'
+      },
+      {
+        role: 'zoomin'
+      },
+      {
+        role: 'zoomout'
       },
       {
         type: 'separator'
@@ -193,6 +187,23 @@ if (process.platform === 'darwin') {
       }
     ]
   })
+  // Edit menu.
+  template[1].submenu.push(
+    {
+      type: 'separator'
+    },
+    {
+      label: 'Speech',
+      submenu: [
+        {
+          role: 'startspeaking'
+        },
+        {
+          role: 'stopspeaking'
+        }
+      ]
+    }
+  )
   // Window menu.
   template[3].submenu = [
     {
@@ -221,6 +232,30 @@ if (process.platform === 'darwin') {
 
 const menu = Menu.buildFromTemplate(template)
 Menu.setApplicationMenu(menu)
+```
+
+### Render process
+
+Below is an example of creating a menu dynamically in a web page
+(render process) by using the [`remote`](http://electron.atom.io/docs/api/remote) module, and showing it when
+the user right clicks the page:
+
+```html
+<!-- index.html -->
+<script>
+const {remote} = require('electron')
+const {Menu, MenuItem} = remote
+
+const menu = new Menu()
+menu.append(new MenuItem({label: 'MenuItem1', click() { console.log('item 1 clicked') }}))
+menu.append(new MenuItem({type: 'separator'}))
+menu.append(new MenuItem({label: 'MenuItem2', type: 'checkbox', checked: true}))
+
+window.addEventListener('contextmenu', (e) => {
+  e.preventDefault()
+  menu.popup(remote.getCurrentWindow())
+}, false)
+</script>
 ```
 
 ## Class: Menu
