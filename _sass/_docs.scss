@@ -84,12 +84,12 @@
 .docs h3 code > em,
 .docs h3 > em,
 .docs h4 code > em,
-.docs h4 > em {
+.docs h4 > em,
+.docs .platform-label {
     padding: .1em .4em;
     vertical-align: middle;
     font-size: .66em;
     font-weight: 300;
-    text-transform: uppercase;
     font-style: normal;
     color: $main-bg-color;
     border-radius: $border-radius;
