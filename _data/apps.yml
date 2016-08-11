@@ -1588,3 +1588,25 @@
     - "cards"
     - "collections"
   icon: "gordie.png"
+-
+  name: "Ionic Creator"
+  description: "Build amazing mobile apps, faster."
+  repository: "https://github.com/Meadowcottage/Ionic-Creator"
+  keywords:
+    - "Electron"
+    - "Ionic"
+    - "Creator"
+    - "Prototyping"
+  license: "GNU"
+  icon: "ionic-creator.png"
+-
+  name: "TwitchAlerts"
+  description: "Keep your viewers happy with beautiful alerts and notifications!"
+  repository: "https://github.com/Meadowcottage/TwitchAlerts"
+  keywords:
+    - "Electron"
+    - "Twitch"
+    - "Notifications"
+    - "Streaming"
+  license: "GNU"
+  icon: "twitchalerts.png"
