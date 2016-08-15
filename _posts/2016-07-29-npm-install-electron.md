@@ -59,6 +59,14 @@ us to take over the `electron` package on npm.
 
 ## Questions
 
+We've worked with the community to update popular packages that are affected
+by this change. Packages like
+[electron-packager](https://github.com/electron-userland/electron-packager),
+[electron-rebuild](https://github.com/electron/electron-rebuild), and
+[electron-builder](https://github.com/electron-userland/electron-builder)
+have already been updated to work with the new name while continuing to support
+the old name.
+
 If you encounter any problems installing this new package, please let us know by
 opening an issue on the
 [electron-userland/electron-prebuilt](https://github.com/electron-userland/electron-prebuilt/issues)
