@@ -1634,3 +1634,16 @@
     - "html"
   license: "MIT"
   icon: "seapig.png"
+-
+  name: "GroupMe"
+  description: "Unofficial GroupMe App"
+  website: "https://github.com/dcrousso/GroupMe#readme"
+  repository: "https://github.com/dcrousso/GroupMe"
+  keywords:
+    - "Electron"
+    - "GroupMe"
+    - "chat"
+    - "messaging"
+    - "social"
+  license: "MIT"
+  icon: "groupme.png"
