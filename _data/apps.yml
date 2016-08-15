@@ -1622,3 +1622,15 @@
     - "music player"
   license: "MIT"
   icon: "museeks.png"
+-
+  name: "SeaPig"
+  description: "A converter from markdown to html"
+  website: "https://github.com/yasumichi/seapig/blob/master/README.md"
+  repository: "https://github.com/yasumichi/seapig"
+  keywords:
+    - "Electron"
+    - "markdown"
+    - "editor"
+    - "html"
+  license: "MIT"
+  icon: "seapig.png"
