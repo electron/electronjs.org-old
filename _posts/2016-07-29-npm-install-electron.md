@@ -57,7 +57,7 @@ to the JavaScript, Node.js, and Electron communities.
 And thanks to [@logicalparadox](https://github.com/logicalparadox) for allowing
 us to take over the `electron` package on npm.
 
-## Questions
+## Updating your projects
 
 We've worked with the community to update popular packages that are affected
 by this change. Packages like
