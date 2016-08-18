@@ -22,3 +22,10 @@
     white-space: nowrap;
   }
 }
+
+.table-with-spacious-second-column td:nth-child(2) {
+  @include breakpoint(md) {
+    padding-right: $spacer5;
+    white-space: nowrap;
+  }
+}
