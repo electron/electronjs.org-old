@@ -1,5 +1,5 @@
 ---
-version: v1.1.1
+version: v1.3.3
 category: API
 redirect_from:
     - /docs/v0.24.0/api/screen/
@@ -33,10 +33,6 @@ redirect_from:
     - /docs/v0.37.6/api/screen/
     - /docs/v0.37.7/api/screen/
     - /docs/v0.37.8/api/screen/
-    - /docs/v1.0.0/api/screen/
-    - /docs/v1.0.1/api/screen/
-    - /docs/v1.1.0/api/screen/
-    - /docs/v1.1.1/api/screen/
     - /docs/latest/api/screen/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/screen.md'
 excerpt: "Retrieve information about screen size, displays, cursor position, etc."
@@ -48,51 +44,51 @@ sort_title: "screen"
 
 > Retrieve information about screen size, displays, cursor position, etc.
 
-You cannot not use this module until the `ready` event of the `app` module is
+You cannot use this module until the `ready` event of the `app` module is
 emitted (by invoking or requiring it).
 
 `screen` is an [EventEmitter](http://nodejs.org/api/events.html#events_class_events_eventemitter).
 
 **Note:** In the renderer / DevTools, `window.screen` is a reserved DOM
 property, so writing `let {screen} = require('electron')` will not work.
-In our examples below, we use `electronScreen` as the variable name instead.
+
 An example of creating a window that fills the whole screen:
 
 ```javascript
-const {app, BrowserWindow, screen: electronScreen} = require('electron');
+const electron = require('electron')
+const {app, BrowserWindow} = electron
 
-let win;
+let win
 
 app.on('ready', () => {
-  const {width, height} = electronScreen.getPrimaryDisplay().workAreaSize;
-  win = new BrowserWindow({width, height});
-});
+  const {width, height} = electron.screen.getPrimaryDisplay().workAreaSize
+  win = new BrowserWindow({width, height})
+  win.loadURL('https://github.com')
+})
 ```
 
 Another example of creating a window in the external display:
 
 ```javascript
-const {app, BrowserWindow, screen: electronScreen} = require('electron');
+const electron = require('electron')
+const {app, BrowserWindow} = require('electron')
 
-let win;
+let win
 
 app.on('ready', () => {
-  let displays = electronScreen.getAllDisplays();
-  let externalDisplay = null;
-  for (let i in displays) {
-    if (displays[i].bounds.x !== 0 || displays[i].bounds.y !== 0) {
-      externalDisplay = displays[i];
-      break;
-    }
-  }
+  let displays = electron.screen.getAllDisplays()
+  let externalDisplay = displays.find((display) => {
+    return display.bounds.x !== 0 || display.bounds.y !== 0
+  })
 
   if (externalDisplay) {
     win = new BrowserWindow({
       x: externalDisplay.bounds.x + 50,
       y: externalDisplay.bounds.y + 50
-    });
+    })
+    win.loadURL('https://github.com')
   }
-});
+})
 ```
 
 ## The `Display` object

@@ -61,4 +61,8 @@
   hr:first-of-type {
     display: none;
   }
+
+  a code {
+    color: $main-link-color;
+  }
 }

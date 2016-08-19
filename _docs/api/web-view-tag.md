@@ -1,5 +1,5 @@
 ---
-version: v1.1.1
+version: v1.3.3
 category: API
 redirect_from:
     - /docs/v0.24.0/api/web-view-tag/
@@ -33,10 +33,6 @@ redirect_from:
     - /docs/v0.37.6/api/web-view-tag/
     - /docs/v0.37.7/api/web-view-tag/
     - /docs/v0.37.8/api/web-view-tag/
-    - /docs/v1.0.0/api/web-view-tag/
-    - /docs/v1.0.1/api/web-view-tag/
-    - /docs/v1.1.0/api/web-view-tag/
-    - /docs/v1.1.1/api/web-view-tag/
     - /docs/latest/api/web-view-tag/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/web-view-tag.md'
 excerpt: "Display external web content in an isolated frame and process."
@@ -58,7 +54,7 @@ app. It doesn't have the same permissions as your web page and all interactions
 between your app and embedded content will be asynchronous. This keeps your app
 safe from the embedded content.
 
-For security purpose, `webview` can only be used in `BrowserWindow`s that have
+For security purposes, `webview` can only be used in `BrowserWindow`s that have
 `nodeIntegration` enabled.
 
 ## Example
@@ -81,20 +77,20 @@ and displays a "loading..." message during the load time:
 ```html
 <script>
   onload = () => {
-    const webview = document.getElementById('foo');
-    const indicator = document.querySelector('.indicator');
+    const webview = document.getElementById('foo')
+    const indicator = document.querySelector('.indicator')
 
     const loadstart = () => {
-      indicator.innerText = 'loading...';
-    };
+      indicator.innerText = 'loading...'
+    }
 
     const loadstop = () => {
-      indicator.innerText = '';
-    };
+      indicator.innerText = ''
+    }
 
-    webview.addEventListener('did-start-loading', loadstart);
-    webview.addEventListener('did-stop-loading', loadstop);
-  };
+    webview.addEventListener('did-start-loading', loadstart)
+    webview.addEventListener('did-stop-loading', loadstop)
+  }
 </script>
 ```
 
@@ -167,9 +163,6 @@ than the minimum values or greater than the maximum.
 If "on", the guest page in `webview` will have node integration and can use node
 APIs like `require` and `process` to access low level system resources.
 
-**Note:** Node integration will always be disabled in the `webview` if it is
-disabled on the parent window.
-
 ### `plugins`
 
 ```html
@@ -217,7 +210,7 @@ page is loaded, use the `setUserAgent` method to change the user agent.
 
 If "on", the guest page will have web security disabled.
 
-### partition
+### `partition`
 
 ```html
 <webview src="https://github.com" partition="persist:github"></webview>
@@ -251,7 +244,17 @@ If "on", the guest page will be allowed to open new windows.
 
 A list of strings which specifies the blink features to be enabled separated by `,`.
 The full list of supported feature strings can be found in the
-[setFeatureEnabledFromString][blink-feature-string] function.
+[RuntimeEnabledFeatures.in][blink-feature-string] file.
+
+### `disableblinkfeatures`
+
+```html
+<webview src="https://www.github.com/" disableblinkfeatures="PreciseMemoryInfo, CSSVariables"></webview>
+```
+
+A list of strings which specifies the blink features to be disabled separated by `,`.
+The full list of supported feature strings can be found in the
+[RuntimeEnabledFeatures.in][blink-feature-string] file.
 
 ## Methods
 
@@ -262,9 +265,10 @@ The `webview` tag has the following methods:
 **Example**
 
 ```javascript
+const webview = document.getElementById('foo')
 webview.addEventListener('dom-ready', () => {
-  webview.openDevTools();
-});
+  webview.openDevTools()
+})
 ```
 
 ### `<webview>.loadURL(url[, options])`
@@ -491,19 +495,23 @@ obtained by subscribing to [`found-in-page`](http://electron.atom.io/docs/api/we
 
 * `action` String - Specifies the action to take place when ending
   [`<webview>.findInPage`](http://electron.atom.io/docs/api/web-view-tag#webviewtagfindinpage) request.
-  * `clearSelection` - Translate the selection into a normal selection.
-  * `keepSelection` - Clear the selection.
+  * `clearSelection` - Clear the selection.
+  * `keepSelection` - Translate the selection into a normal selection.
   * `activateSelection` - Focus and click the selection node.
 
 Stops any `findInPage` request for the `webview` with the provided `action`.
 
 ### `<webview>.print([options])`
 
-Prints `webview`'s web page. Same with `webContents.print([options])`.
+Prints `webview`'s web page. Same as `webContents.print([options])`.
 
 ### `<webview>.printToPDF(options, callback)`
 
-Prints webview's web page as PDF, Same with `webContents.printToPDF(options, callback)`
+Prints `webview`'s web page as PDF, Same as `webContents.printToPDF(options, callback)`.
+
+### `<webview>.capturePage([rect, ]callback)`
+
+Captures a snapshot of the `webview`'s page. Same as `webContents.capturePage([rect, ]callback)`.
 
 ### `<webview>.send(channel[, arg1][, arg2][, ...])`
 
@@ -523,8 +531,12 @@ examples.
 
 Sends an input `event` to the page.
 
-See [webContents.sendInputEvent](http://electron.atom.io/docs/api/web-contents##webcontentssendinputeventevent)
+See [webContents.sendInputEvent](http://electron.atom.io/docs/api/web-contents#webcontentssendinputeventevent)
 for detailed description of `event` object.
+
+### `<webview>.showDefinitionForSelection()` _macOS_
+
+Shows pop-up dictionary that searches the selected word on the page.
 
 ### `<webview>.getWebContents()`
 
@@ -649,9 +661,10 @@ The following example code forwards all log messages to the embedder's console
 without regard for log level or other properties.
 
 ```javascript
+const webview = document.getElementById('foo')
 webview.addEventListener('console-message', (e) => {
-  console.log('Guest page logged a message:', e.message);
-});
+  console.log('Guest page logged a message:', e.message)
+})
 ```
 
 ### Event: 'found-in-page'
@@ -669,12 +682,13 @@ Fired when a result is available for
 [`webview.findInPage`](http://electron.atom.io/docs/api/web-view-tag#webviewtagfindinpage) request.
 
 ```javascript
+const webview = document.getElementById('foo')
 webview.addEventListener('found-in-page', (e) => {
-  if (e.result.finalUpdate)
-    webview.stopFindInPage('keepSelection');
-});
+  if (e.result.finalUpdate) webview.stopFindInPage('keepSelection')
+})
 
-const rquestId = webview.findInPage('test');
+const requestId = webview.findInPage('test')
+console.log(requestId)
 ```
 
 ### Event: 'new-window'
@@ -693,14 +707,15 @@ Fired when the guest page attempts to open a new browser window.
 The following example code opens the new url in system's default browser.
 
 ```javascript
-const {shell} = require('electron');
+const {shell} = require('electron')
+const webview = document.getElementById('foo')
 
 webview.addEventListener('new-window', (e) => {
-  const protocol = require('url').parse(e.url).protocol;
+  const protocol = require('url').parse(e.url).protocol
   if (protocol === 'http:' || protocol === 'https:') {
-    shell.openExternal(e.url);
+    shell.openExternal(e.url)
   }
-});
+})
 ```
 
 ### Event: 'will-navigate'
@@ -753,9 +768,10 @@ The following example code navigates the `webview` to `about:blank` when the
 guest attempts to close itself.
 
 ```javascript
+const webview = document.getElementById('foo')
 webview.addEventListener('close', () => {
-  webview.src = 'about:blank';
-});
+  webview.src = 'about:blank'
+})
 ```
 
 ### Event: 'ipc-message'
@@ -772,19 +788,20 @@ between guest page and embedder page:
 
 ```javascript
 // In embedder page.
+const webview = document.getElementById('foo')
 webview.addEventListener('ipc-message', (event) => {
-  console.log(event.channel);
+  console.log(event.channel)
   // Prints "pong"
-});
-webview.send('ping');
+})
+webview.send('ping')
 ```
 
 ```javascript
 // In guest page.
-const {ipcRenderer} = require('electron');
+const {ipcRenderer} = require('electron')
 ipcRenderer.on('ping', () => {
-  ipcRenderer.sendToHost('pong');
-});
+  ipcRenderer.sendToHost('pong')
+})
 ```
 
 ### Event: 'crashed'
@@ -828,6 +845,14 @@ Emitted when a page's theme color changes. This is usually due to encountering a
 <meta name='theme-color' content='#ff0000'>
 ```
 
+### Event: 'update-target-url'
+
+Returns:
+
+* `url` String
+
+Emitted when mouse moves over a link or the keyboard moves the focus to a link.
+
 ### Event: 'devtools-opened'
 
 Emitted when DevTools is opened.
@@ -840,4 +865,4 @@ Emitted when DevTools is closed.
 
 Emitted when DevTools is focused / opened.
 
-[blink-feature-string]: https://code.google.com/p/chromium/codesearch#chromium/src/out/Debug/gen/blink/platform/RuntimeEnabledFeatures.cpp&sq=package:chromium&type=cs&l=527
+[blink-feature-string]: https://cs.chromium.org/chromium/src/third_party/WebKit/Source/platform/RuntimeEnabledFeatures.in

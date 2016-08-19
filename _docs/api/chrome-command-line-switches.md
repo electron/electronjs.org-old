@@ -1,5 +1,5 @@
 ---
-version: v1.1.1
+version: v1.3.3
 category: API
 redirect_from:
     - /docs/v0.24.0/api/chrome-command-line-switches/
@@ -33,10 +33,6 @@ redirect_from:
     - /docs/v0.37.6/api/chrome-command-line-switches/
     - /docs/v0.37.7/api/chrome-command-line-switches/
     - /docs/v0.37.8/api/chrome-command-line-switches/
-    - /docs/v1.0.0/api/chrome-command-line-switches/
-    - /docs/v1.0.1/api/chrome-command-line-switches/
-    - /docs/v1.1.0/api/chrome-command-line-switches/
-    - /docs/v1.1.1/api/chrome-command-line-switches/
     - /docs/latest/api/chrome-command-line-switches/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/chrome-command-line-switches.md'
 excerpt: "Command line switches supported by Electron."
@@ -53,13 +49,13 @@ your app's main script before the [ready][ready] event of the [app][app] module
 is emitted:
 
 ```javascript
-const {app} = require('electron');
-app.commandLine.appendSwitch('remote-debugging-port', '8315');
-app.commandLine.appendSwitch('host-rules', 'MAP * 127.0.0.1');
+const {app} = require('electron')
+app.commandLine.appendSwitch('remote-debugging-port', '8315')
+app.commandLine.appendSwitch('host-rules', 'MAP * 127.0.0.1')
 
 app.on('ready', () => {
   // Your code here
-});
+})
 ```
 
 ## --ignore-connections-limit=`domains`
@@ -103,6 +99,7 @@ list of hosts. This flag has an effect only if used in tandem with
 For example:
 
 ```javascript
+const {app} = require('electron')
 app.commandLine.appendSwitch('proxy-bypass-list', '<local>;*.google.com;*foo.com;1.2.3.4:5678')
 ```
 
@@ -140,6 +137,24 @@ connection, and the endpoint host in a `SOCKS` proxy connection).
 ## --host-resolver-rules=`rules`
 
 Like `--host-rules` but these `rules` only apply to the host resolver.
+
+## --auth-server-whitelist=`url`
+
+A comma-separated list of servers for which integrated authentication is enabled.
+
+For example:
+
+```
+--auth-server-whitelist='*example.com, *foobar.com, *baz'
+```
+
+then any `url` ending with `example.com`, `foobar.com`, `baz` will be considered
+for integrated authentication. Without `*` prefix the url has to match exactly.
+
+## --auth-negotiate-delegate-whitelist=`url`
+
+A comma-separated list of servers for which delegation of user credentials is required.
+Without `*` prefix the url has to match exactly.
 
 ## --ignore-certificate-errors
 

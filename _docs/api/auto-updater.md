@@ -1,5 +1,5 @@
 ---
-version: v1.1.1
+version: v1.3.3
 category: API
 redirect_from:
     - /docs/v0.24.0/api/auto-updater/
@@ -33,10 +33,6 @@ redirect_from:
     - /docs/v0.37.6/api/auto-updater/
     - /docs/v0.37.7/api/auto-updater/
     - /docs/v0.37.8/api/auto-updater/
-    - /docs/v1.0.0/api/auto-updater/
-    - /docs/v1.0.1/api/auto-updater/
-    - /docs/v1.1.0/api/auto-updater/
-    - /docs/v1.1.1/api/auto-updater/
     - /docs/latest/api/auto-updater/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/auto-updater.md'
 excerpt: "Enable apps to automatically update themselves."
@@ -54,6 +50,7 @@ The `autoUpdater` module provides an interface for the
 You can quickly launch a multi-platform release server for distributing your
 application by using one of these projects:
 
+- [nuts][nuts]: *A smart release server for your applications, using GitHub as a backend. Auto-updates with Squirrel (Mac & Windows)*
 - [electron-release-server][electron-release-server]: *A fully featured,
   self-hosted release server for electron applications, compatible with
   auto-updater*
@@ -65,21 +62,20 @@ application by using one of these projects:
 Though `autoUpdater` provides a uniform API for different platforms, there are
 still some subtle differences on each platform.
 
-### OS X
+### macOS
 
-On OS X, the `autoUpdater` module is built upon [Squirrel.Mac][squirrel-mac],
+On macOS, the `autoUpdater` module is built upon [Squirrel.Mac][squirrel-mac],
 meaning you don't need any special setup to make it work. For server-side
 requirements, you can read [Server Support][server-support].
 
-**Note:** Your application must be signed for automatic updates on Mac OS X.
+**Note:** Your application must be signed for automatic updates on macOS.
 This is a requirement of `Squirrel.Mac`.
 
 ### Windows
 
 On Windows, you have to install your app into a user's machine before you can
 use the `autoUpdater`, so it is recommended that you use the
-[electron-winstaller][installer-lib] module or the [grunt-electron-installer][installer]
-package to generate a Windows installer.
+[electron-winstaller][installer-lib], [electron-builder][electron-builder-lib] or the [grunt-electron-installer][installer] package to generate a Windows installer.
 
 The installer generated with Squirrel will create a shortcut icon with an
 [Application User Model ID][app-user-model-id] in the format of
@@ -88,7 +84,7 @@ The installer generated with Squirrel will create a shortcut icon with an
 same ID for your app with `app.setAppUserModelId` API, otherwise Windows will
 not be able to pin your app properly in task bar.
 
-The server-side setup is also different from OS X. You can read the documents of
+The server-side setup is also different from macOS. You can read the documents of
 [Squirrel.Windows][squirrel-windows] to get more details.
 
 ### Linux
@@ -139,12 +135,16 @@ On Windows only `releaseName` is available.
 
 The `autoUpdater` object has the following methods:
 
-### `autoUpdater.setFeedURL(url)`
+### `autoUpdater.setFeedURL(url[, requestHeaders])`
 
 * `url` String
+* `requestHeaders` Object _macOS_ - HTTP request headers.
 
-Sets the `url` and initialize the auto updater. The `url` cannot be changed
-once it is set.
+Sets the `url` and initialize the auto updater.
+
+### `autoUpdater.getFeedURL()`
+
+Returns the current update feed URL.
 
 ### `autoUpdater.checkForUpdates()`
 
@@ -161,6 +161,8 @@ should only be called after `update-downloaded` has been emitted.
 [squirrel-windows]: https://github.com/Squirrel/Squirrel.Windows
 [installer]: https://github.com/electron/grunt-electron-installer
 [installer-lib]: https://github.com/electron/windows-installer
+[electron-builder-lib]: https://github.com/electron-userland/electron-builder
 [app-user-model-id]: https://msdn.microsoft.com/en-us/library/windows/desktop/dd378459(v=vs.85).aspx
 [electron-release-server]: https://github.com/ArekSredzki/electron-release-server
 [squirrel-updates-server]: https://github.com/Aluxian/squirrel-updates-server
+[nuts]: https://github.com/GitbookIO/nuts

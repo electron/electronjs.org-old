@@ -5,7 +5,7 @@
   {% for app in site.data.apps %}
     {% if app.featuredOpenSource %}
     <div class="featured-app-textual">
-      <a href='{{ app.website }}' target='_blank'>{{ app.name }}</a> &mdash; {{ app.description }}
+      <a href='{{ app.website | default: app.repository }}' target='_blank'>{{ app.name }}</a> &mdash; {{ app.description | escape }}
     </div>
     {% endif %}
   {% endfor %}

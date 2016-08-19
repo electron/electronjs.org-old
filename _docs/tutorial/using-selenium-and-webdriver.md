@@ -1,5 +1,5 @@
 ---
-version: v1.1.1
+version: v1.3.3
 category: Tutorial
 redirect_from:
     - /docs/v0.24.0/tutorial/using-selenium-and-webdriver/
@@ -33,17 +33,13 @@ redirect_from:
     - /docs/v0.37.6/tutorial/using-selenium-and-webdriver/
     - /docs/v0.37.7/tutorial/using-selenium-and-webdriver/
     - /docs/v0.37.8/tutorial/using-selenium-and-webdriver/
-    - /docs/v1.0.0/tutorial/using-selenium-and-webdriver/
-    - /docs/v1.0.1/tutorial/using-selenium-and-webdriver/
-    - /docs/v1.1.0/tutorial/using-selenium-and-webdriver/
-    - /docs/v1.1.1/tutorial/using-selenium-and-webdriver/
     - /docs/latest/tutorial/using-selenium-and-webdriver/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/using-selenium-and-webdriver.md'
 excerpt: "WebDriver is an open source tool for automated testing of web apps across many
-browsers. It provides capabilities for navigating to web pages, user input,
-JavaScript execution, and more. ChromeDriver is a standalone server which
-implements WebDriver&apos;s wire protocol for Chromium. It is being developed by
-members of the Chromium and WebDriver teams."
+    browsers. It provides capabilities for navigating to web pages, user input,
+    JavaScript execution, and more. ChromeDriver is a standalone server which
+    implements WebDriver&apos;s wire protocol for Chromium. It is being developed by
+    members of the Chromium and WebDriver teams."
 title: "Using Selenium and WebDriver"
 sort_title: "using selenium and webdriver"
 ---
@@ -89,12 +85,12 @@ app.start().then(function () {
 }).then(function (title) {
   // Verify the window's title
   assert.equal(title, 'My App')
-}).then(function () {
-  // Stop the application
-  return app.stop()
 }).catch(function (error) {
   // Log any failures
   console.error('Test failed', error.message)
+}).then(function () {
+  // Stop the application
+  return app.stop()
 })
 ```
 
@@ -129,7 +125,7 @@ upstream, except that you have to manually specify how to connect chrome driver
 and where to find Electron's binary:
 
 ```javascript
-const webdriver = require('selenium-webdriver');
+const webdriver = require('selenium-webdriver')
 
 const driver = new webdriver.Builder()
   // The "9515" is the port opened by chrome driver.
@@ -137,22 +133,22 @@ const driver = new webdriver.Builder()
   .withCapabilities({
     chromeOptions: {
       // Here is the path to your Electron binary.
-      binary: '/Path-to-Your-App.app/Contents/MacOS/Electron',
+      binary: '/Path-to-Your-App.app/Contents/MacOS/Electron'
     }
   })
   .forBrowser('electron')
-  .build();
+  .build()
 
-driver.get('http://www.google.com');
-driver.findElement(webdriver.By.name('q')).sendKeys('webdriver');
-driver.findElement(webdriver.By.name('btnG')).click();
+driver.get('http://www.google.com')
+driver.findElement(webdriver.By.name('q')).sendKeys('webdriver')
+driver.findElement(webdriver.By.name('btnG')).click()
 driver.wait(() => {
- return driver.getTitle().then((title) => {
-   return title === 'webdriver - Google Search';
- });
-}, 1000);
+  return driver.getTitle().then((title) => {
+    return title === 'webdriver - Google Search'
+  })
+}, 1000)
 
-driver.quit();
+driver.quit()
 ```
 
 ## Setting up with WebdriverIO
@@ -182,7 +178,7 @@ $ npm install webdriverio
 ### 3. Connect to chrome driver
 
 ```javascript
-const webdriverio = require('webdriverio');
+const webdriverio = require('webdriverio')
 const options = {
   host: 'localhost', // Use localhost as chrome driver server
   port: 9515,        // "9515" is the port opened by chrome driver.
@@ -193,9 +189,9 @@ const options = {
       args: [/* cli arguments */]           // Optional, perhaps 'app=' + /path/to/your/app/
     }
   }
-};
+}
 
-let client = webdriverio.remote(options);
+let client = webdriverio.remote(options)
 
 client
   .init()
@@ -203,9 +199,9 @@ client
   .setValue('#q', 'webdriverio')
   .click('#btnG')
   .getTitle().then((title) => {
-    console.log('Title was: ' + title);
+    console.log('Title was: ' + title)
   })
-  .end();
+  .end()
 ```
 
 ## Workflow

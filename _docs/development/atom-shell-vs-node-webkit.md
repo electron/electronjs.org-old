@@ -1,5 +1,5 @@
 ---
-version: v1.1.1
+version: v1.3.3
 category: Development
 redirect_from:
     - /docs/v0.24.0/development/atom-shell-vs-node-webkit/
@@ -33,10 +33,6 @@ redirect_from:
     - /docs/v0.37.6/development/atom-shell-vs-node-webkit/
     - /docs/v0.37.7/development/atom-shell-vs-node-webkit/
     - /docs/v0.37.8/development/atom-shell-vs-node-webkit/
-    - /docs/v1.0.0/development/atom-shell-vs-node-webkit/
-    - /docs/v1.0.1/development/atom-shell-vs-node-webkit/
-    - /docs/v1.1.0/development/atom-shell-vs-node-webkit/
-    - /docs/v1.1.1/development/atom-shell-vs-node-webkit/
     - /docs/latest/development/atom-shell-vs-node-webkit/
 source_url: 'https://github.com/electron/electron/blob/master/docs/development/atom-shell-vs-node-webkit.md'
 title: "Technical Differences Between Electron and NW.js (formerly node-webkit)"
@@ -91,5 +87,7 @@ of how NW.js was implemented.
 By using the [multi-context](http://strongloop.com/strongblog/whats-new-node-js-v0-12-multiple-context-execution/)
 feature of Node, Electron doesn't introduce a new JavaScript context in web
 pages.
+
+Note: NW.js has optionally supported multi-context since 0.13.
 
 [node-bindings]: https://github.com/electron/electron/tree/master/atom/common

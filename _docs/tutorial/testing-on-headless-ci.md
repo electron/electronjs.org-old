@@ -1,5 +1,5 @@
 ---
-version: v1.1.1
+version: v1.3.3
 category: Tutorial
 redirect_from:
     - /docs/v0.24.0/tutorial/testing-on-headless-ci/
@@ -33,10 +33,6 @@ redirect_from:
     - /docs/v0.37.6/tutorial/testing-on-headless-ci/
     - /docs/v0.37.7/tutorial/testing-on-headless-ci/
     - /docs/v0.37.8/tutorial/testing-on-headless-ci/
-    - /docs/v1.0.0/tutorial/testing-on-headless-ci/
-    - /docs/v1.0.1/tutorial/testing-on-headless-ci/
-    - /docs/v1.1.0/tutorial/testing-on-headless-ci/
-    - /docs/v1.1.1/tutorial/testing-on-headless-ci/
     - /docs/latest/tutorial/testing-on-headless-ci/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/testing-on-headless-ci.md'
 title: "Testing on Headless CI Systems (Travis CI, Jenkins)"
@@ -65,11 +61,11 @@ for `$DISPLAY`, so no further configuration of your app is required.
 This step can be automated with Paul Betts's
 [xvfb-maybe](https://github.com/paulcbetts/xvfb-maybe): Prepend your test
 commands with `xvfb-maybe` and the little tool will automatically configure
-xvfb, if required by the current system. On Windows or Mac OS X, it will simply
+xvfb, if required by the current system. On Windows or macOS, it will simply
 do nothing.
 
 ```
-## On Windows or OS X, this just invokes electron-mocha
+## On Windows or macOS, this just invokes electron-mocha
 ## On Linux, if we are in a headless environment, this will be equivalent
 ## to xvfb-run electron-mocha ./test/*.js
 xvfb-maybe electron-mocha ./test/*.js
@@ -79,7 +75,7 @@ xvfb-maybe electron-mocha ./test/*.js
 
 On Travis, your `.travis.yml` should look roughly like this:
 
-```
+```yml
 addons:
   apt:
     packages:

@@ -1,5 +1,5 @@
 ---
-version: v1.1.1
+version: v1.3.3
 category: Tutorial
 redirect_from:
     - /docs/v0.24.0/tutorial/supported-platforms/
@@ -33,10 +33,6 @@ redirect_from:
     - /docs/v0.37.6/tutorial/supported-platforms/
     - /docs/v0.37.7/tutorial/supported-platforms/
     - /docs/v0.37.8/tutorial/supported-platforms/
-    - /docs/v1.0.0/tutorial/supported-platforms/
-    - /docs/v1.0.1/tutorial/supported-platforms/
-    - /docs/v1.1.0/tutorial/supported-platforms/
-    - /docs/v1.1.1/tutorial/supported-platforms/
     - /docs/latest/tutorial/supported-platforms/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/supported-platforms.md'
 title: "Supported Platforms"
@@ -47,10 +43,10 @@ sort_title: "supported platforms"
 
 Following platforms are supported by Electron:
 
-### OS X
+### macOS
 
-Only 64bit binaries are provided for OS X, and the minimum OS X version
-supported is OS X 10.9.
+Only 64bit binaries are provided for macOS, and the minimum macOS version
+supported is macOS 10.9.
 
 ### Windows
 

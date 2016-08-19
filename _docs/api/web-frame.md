@@ -1,5 +1,5 @@
 ---
-version: v1.1.1
+version: v1.3.3
 category: API
 redirect_from:
     - /docs/v0.24.0/api/web-frame/
@@ -33,10 +33,6 @@ redirect_from:
     - /docs/v0.37.6/api/web-frame/
     - /docs/v0.37.7/api/web-frame/
     - /docs/v0.37.8/api/web-frame/
-    - /docs/v1.0.0/api/web-frame/
-    - /docs/v1.0.1/api/web-frame/
-    - /docs/v1.1.0/api/web-frame/
-    - /docs/v1.1.1/api/web-frame/
     - /docs/latest/api/web-frame/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/web-frame.md'
 excerpt: "Customize the rendering of the current web page."
@@ -51,9 +47,9 @@ sort_title: "webframe"
 An example of zooming current page to 200%.
 
 ```javascript
-const {webFrame} = require('electron');
+const {webFrame} = require('electron')
 
-webFrame.setZoomFactor(2);
+webFrame.setZoomFactor(2)
 ```
 
 ## Methods
@@ -104,11 +100,12 @@ whether the word passed is correctly spelled.
 An example of using [node-spellchecker][spellchecker] as provider:
 
 ```javascript
+const {webFrame} = require('electron')
 webFrame.setSpellCheckProvider('en-US', true, {
-  spellCheck(text) {
-    return !(require('spellchecker').isMisspelled(text));
+  spellCheck (text) {
+    return !(require('spellchecker').isMisspelled(text))
   }
-});
+})
 ```
 
 ### `webFrame.registerURLSchemeAsSecure(scheme)`
@@ -158,12 +155,13 @@ Returns an object describing usage information of Blink's internal memory
 caches.
 
 ```javascript
+const {webFrame} = require('electron')
 console.log(webFrame.getResourceUsage())
 ```
 
 This will generate:
 
-```javascript
+```
 {
   images: {
     count: 22,
@@ -176,8 +174,8 @@ This will generate:
   cssStyleSheets: { /* same with "images" */ },
   xslStyleSheets: { /* same with "images" */ },
   fonts: { /* same with "images" */ },
-  other: { /* same with "images" */ },
-}
+  other: { /* same with "images" */ }
+})
 ```
 
 ### `webFrame.clearCache()`
@@ -187,7 +185,7 @@ previous navigation).
 
 Note that blindly calling this method probably makes Electron slower since it
 will have to refill these emptied caches, you should only call it if an event
-in your app has occured that makes you think your page is actually using less
+in your app has occurred that makes you think your page is actually using less
 memory (i.e. you have navigated from a super heavy page to a mostly empty one,
 and intend to stay there).
 

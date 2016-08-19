@@ -1,5 +1,5 @@
 ---
-version: v1.1.1
+version: v1.3.3
 category: API
 redirect_from:
     - /docs/v0.24.0/api/window-open/
@@ -33,10 +33,6 @@ redirect_from:
     - /docs/v0.37.6/api/window-open/
     - /docs/v0.37.7/api/window-open/
     - /docs/v0.37.8/api/window-open/
-    - /docs/v1.0.0/api/window-open/
-    - /docs/v1.0.1/api/window-open/
-    - /docs/v1.1.0/api/window-open/
-    - /docs/v1.1.1/api/window-open/
     - /docs/latest/api/window-open/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/window-open.md'
 excerpt: "Open a new window and load a URL."
@@ -56,8 +52,8 @@ The proxy has limited standard functionality implemented to be
 compatible with traditional web pages. For full control of the new window
 you should create a `BrowserWindow` directly.
 
-The newly created `BrowserWindow` will inherit parent window's options by
-default, to override inherited options you can set them in the `features`
+The newly created `BrowserWindow` will inherit the parent window's options by
+default. To override inherited options you can set them in the `features`
 string.
 
 ### `window.open(url[, frameName][, features])`
@@ -87,29 +83,37 @@ origin preference.
 The `BrowserWindowProxy` object is returned from `window.open` and provides
 limited functionality with the child window.
 
-### `BrowserWindowProxy.blur()`
+### Instance Methods
+
+The `BrowserWindowProxy` object has the following instance methods:
+
+#### `win.blur()`
 
 Removes focus from the child window.
 
-### `BrowserWindowProxy.close()`
+#### `win.close()`
 
 Forcefully closes the child window without calling its unload event.
 
-### `BrowserWindowProxy.closed`
+#### `win.closed`
 
 Set to true after the child window gets closed.
 
-### `BrowserWindowProxy.eval(code)`
+#### `win.eval(code)`
 
 * `code` String
 
 Evaluates the code in the child window.
 
-### `BrowserWindowProxy.focus()`
+#### `win.focus()`
 
 Focuses the child window (brings the window to front).
 
-### `BrowserWindowProxy.postMessage(message, targetOrigin)`
+#### `win.print()`
+
+Invokes the print dialog on the child window.
+
+#### `win.postMessage(message, targetOrigin)`
 
 * `message` String
 * `targetOrigin` String

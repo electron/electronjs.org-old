@@ -1,46 +1,42 @@
 ---
-version: v1.1.1
+version: v1.3.3
 category: ignore
-permalink: /docs/faq/
-breadcrumb: FAQ
 redirect_from:
-    - /docs/v0.24.0/faq/electron-faq/
-    - /docs/v0.25.0/faq/electron-faq/
-    - /docs/v0.26.0/faq/electron-faq/
-    - /docs/v0.27.0/faq/electron-faq/
-    - /docs/v0.28.0/faq/electron-faq/
-    - /docs/v0.29.0/faq/electron-faq/
-    - /docs/v0.30.0/faq/electron-faq/
-    - /docs/v0.31.0/faq/electron-faq/
-    - /docs/v0.32.0/faq/electron-faq/
-    - /docs/v0.33.0/faq/electron-faq/
-    - /docs/v0.34.0/faq/electron-faq/
-    - /docs/v0.35.0/faq/electron-faq/
-    - /docs/v0.36.0/faq/electron-faq/
-    - /docs/v0.36.3/faq/electron-faq/
-    - /docs/v0.36.4/faq/electron-faq/
-    - /docs/v0.36.5/faq/electron-faq/
-    - /docs/v0.36.6/faq/electron-faq/
-    - /docs/v0.36.7/faq/electron-faq/
-    - /docs/v0.36.8/faq/electron-faq/
-    - /docs/v0.36.9/faq/electron-faq/
-    - /docs/v0.36.10/faq/electron-faq/
-    - /docs/v0.36.11/faq/electron-faq/
-    - /docs/v0.37.0/faq/electron-faq/
-    - /docs/v0.37.1/faq/electron-faq/
-    - /docs/v0.37.2/faq/electron-faq/
-    - /docs/v0.37.3/faq/electron-faq/
-    - /docs/v0.37.4/faq/electron-faq/
-    - /docs/v0.37.5/faq/electron-faq/
-    - /docs/v0.37.6/faq/electron-faq/
-    - /docs/v0.37.7/faq/electron-faq/
-    - /docs/v0.37.8/faq/electron-faq/
-    - /docs/v1.0.0/faq/electron-faq/
-    - /docs/v1.0.1/faq/electron-faq/
-    - /docs/v1.1.0/faq/electron-faq/
-    - /docs/v1.1.1/faq/electron-faq/
-    - /docs/latest/faq/electron-faq/
-source_url: 'https://github.com/electron/electron/blob/master/docs/faq/electron-faq.md'
+    - /docs/faq/electron-faq/
+    - /docs/v0.24.0/faq/
+    - /docs/v0.25.0/faq/
+    - /docs/v0.26.0/faq/
+    - /docs/v0.27.0/faq/
+    - /docs/v0.28.0/faq/
+    - /docs/v0.29.0/faq/
+    - /docs/v0.30.0/faq/
+    - /docs/v0.31.0/faq/
+    - /docs/v0.32.0/faq/
+    - /docs/v0.33.0/faq/
+    - /docs/v0.34.0/faq/
+    - /docs/v0.35.0/faq/
+    - /docs/v0.36.0/faq/
+    - /docs/v0.36.3/faq/
+    - /docs/v0.36.4/faq/
+    - /docs/v0.36.5/faq/
+    - /docs/v0.36.6/faq/
+    - /docs/v0.36.7/faq/
+    - /docs/v0.36.8/faq/
+    - /docs/v0.36.9/faq/
+    - /docs/v0.36.10/faq/
+    - /docs/v0.36.11/faq/
+    - /docs/v0.37.0/faq/
+    - /docs/v0.37.1/faq/
+    - /docs/v0.37.2/faq/
+    - /docs/v0.37.3/faq/
+    - /docs/v0.37.4/faq/
+    - /docs/v0.37.5/faq/
+    - /docs/v0.37.6/faq/
+    - /docs/v0.37.7/faq/
+    - /docs/v0.37.8/faq/
+    - /docs/latest/faq/
+breadcrumb: FAQ
+source_url: 'https://github.com/electron/electron/blob/master/docs/faq.md'
 title: "Electron FAQ"
 sort_title: "electron faq"
 ---
@@ -56,7 +52,7 @@ depends on the amount of work involved with upgrading.
 Only the stable channel of Chrome is used. If an important fix is in beta or dev
 channel, we will back-port it.
 
-For more information, please see the [security introduction](http://electron.atom.io/docs/tutorial/security).
+For more information, please see the tutorial/security.
 
 ## When will Electron upgrade to latest Node.js?
 
@@ -77,23 +73,23 @@ use HTML5 APIs which are already available in browsers. Good candidates are
 
 Or you can use the IPC system, which is specific to Electron, to store objects
 in the main process as a global variable, and then to access them from the
-renderers through the `remote` module:
+renderers through the `remote` property of `electron` module:
 
 ```javascript
 // In the main process.
 global.sharedObject = {
   someProperty: 'default value'
-};
+}
 ```
 
 ```javascript
 // In page 1.
-require('remote').getGlobal('sharedObject').someProperty = 'new value';
+require('electron').remote.getGlobal('sharedObject').someProperty = 'new value'
 ```
 
 ```javascript
 // In page 2.
-console.log(require('remote').getGlobal('sharedObject').someProperty);
+console.log(require('electron').remote.getGlobal('sharedObject').someProperty)
 ```
 
 ## My app's window/tray disappeared after a few minutes.
@@ -110,18 +106,22 @@ If you want a quick fix, you can make the variables global by changing your
 code from this:
 
 ```javascript
+const {app, Tray} = require('electron')
 app.on('ready', () => {
-  const tray = new Tray('/path/to/icon.png');
-});
+  const tray = new Tray('/path/to/icon.png')
+  tray.setTitle('hello world')
+})
 ```
 
 to this:
 
 ```javascript
-let tray = null;
+const {app, Tray} = require('electron')
+let tray = null
 app.on('ready', () => {
-  tray = new Tray('/path/to/icon.png');
-});
+  tray = new Tray('/path/to/icon.png')
+  tray.setTitle('hello world')
+})
 ```
 
 ## I can not use jQuery/RequireJS/Meteor/AngularJS in Electron.
@@ -134,11 +134,13 @@ To solve this, you can turn off node integration in Electron:
 
 ```javascript
 // In the main process.
+const {BrowserWindow} = require('electron')
 let win = new BrowserWindow({
   webPreferences: {
     nodeIntegration: false
   }
-});
+})
+win.show()
 ```
 
 But if you want to keep the abilities of using Node.js and Electron APIs, you
@@ -161,7 +163,7 @@ delete window.module;
 When using Electron's built-in module you might encounter an error like this:
 
 ```
-> require('electron').webFrame.setZoomFactor(1.0);
+> require('electron').webFrame.setZoomFactor(1.0)
 Uncaught TypeError: Cannot read property 'setZoomLevel' of undefined
 ```
 
@@ -172,7 +174,7 @@ To verify whether you are using the correct built-in module, you can print the
 path of the `electron` module:
 
 ```javascript
-console.log(require.resolve('electron'));
+console.log(require.resolve('electron'))
 ```
 
 and then check if it is in the following form:

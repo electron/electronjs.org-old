@@ -1,5 +1,5 @@
 ---
-version: v1.1.1
+version: v1.3.3
 category: API
 redirect_from:
     - /docs/v0.24.0/api/process/
@@ -33,10 +33,6 @@ redirect_from:
     - /docs/v0.37.6/api/process/
     - /docs/v0.37.7/api/process/
     - /docs/v0.37.8/api/process/
-    - /docs/v1.0.0/api/process/
-    - /docs/v1.0.1/api/process/
-    - /docs/v1.1.0/api/process/
-    - /docs/v1.1.1/api/process/
     - /docs/latest/api/process/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/process.md'
 excerpt: "Extensions to process object."
@@ -62,12 +58,12 @@ the global scope when node integration is turned off:
 
 ```javascript
 // preload.js
-const _setImmediate = setImmediate;
-const _clearImmediate = clearImmediate;
+const _setImmediate = setImmediate
+const _clearImmediate = clearImmediate
 process.once('loaded', () => {
-  global.setImmediate = _setImmediate;
-  global.clearImmediate = _clearImmediate;
-});
+  global.setImmediate = _setImmediate
+  global.clearImmediate = _clearImmediate
+})
 ```
 
 ## Properties
@@ -120,7 +116,7 @@ Causes the main thread of the current process crash.
 
 Causes the main thread of the current process hang.
 
-### `process.setFdLimit(maxDescriptors)` _OS X_ _Linux_
+### `process.setFdLimit(maxDescriptors)` _macOS_ _Linux_
 
 * `maxDescriptors` Integer
 
@@ -132,13 +128,13 @@ limit, whichever is lower for the current process.
 Returns an object giving memory usage statistics about the current process. Note
 that all statistics are reported in Kilobytes.
 
-* `workingSetSize` - The amount of memory currently pinned to actual physical
+* `workingSetSize` Integer - The amount of memory currently pinned to actual physical
   RAM.
-* `peakWorkingSetSize` - The maximum amount of memory that has ever been pinned
+* `peakWorkingSetSize` Integer - The maximum amount of memory that has ever been pinned
   to actual physical RAM.
-* `privateBytes` - The amount of memory not shared by other processes, such as
+* `privateBytes` Integer - The amount of memory not shared by other processes, such as
   JS heap or HTML content.
-* `sharedBytes` - The amount of memory shared between processes, typically
+* `sharedBytes` Integer - The amount of memory shared between processes, typically
   memory consumed by the Electron code itself
 
 ### `process.getSystemMemoryInfo()`
@@ -146,14 +142,11 @@ that all statistics are reported in Kilobytes.
 Returns an object giving memory usage statistics about the entire system. Note
 that all statistics are reported in Kilobytes.
 
-* `total` - The total amount of physical memory in Kilobytes available to the
+* `total` Integer - The total amount of physical memory in Kilobytes available to the
   system.
-* `free` - The total amount of memory not being used by applications or disk
+* `free` Integer - The total amount of memory not being used by applications or disk
   cache.
-
-On Windows / Linux:
-
-* `swapTotal` - The total amount of swap memory in Kilobytes available to the
-  system.
-* `swapFree` - The free amount of swap memory in Kilobytes available to the
-  system.
+* `swapTotal` Integer - The total amount of swap memory in Kilobytes available to the
+  system.  _Windows_ _Linux_
+* `swapFree` Integer - The free amount of swap memory in Kilobytes available to the
+  system.  _Windows_ _Linux_

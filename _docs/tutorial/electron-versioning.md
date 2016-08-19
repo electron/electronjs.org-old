@@ -1,5 +1,5 @@
 ---
-version: v1.1.1
+version: v1.3.3
 category: Tutorial
 redirect_from:
     - /docs/v0.24.0/tutorial/electron-versioning/
@@ -33,10 +33,6 @@ redirect_from:
     - /docs/v0.37.6/tutorial/electron-versioning/
     - /docs/v0.37.7/tutorial/electron-versioning/
     - /docs/v0.37.8/tutorial/electron-versioning/
-    - /docs/v1.0.0/tutorial/electron-versioning/
-    - /docs/v1.0.1/tutorial/electron-versioning/
-    - /docs/v1.1.0/tutorial/electron-versioning/
-    - /docs/v1.1.1/tutorial/electron-versioning/
     - /docs/latest/tutorial/electron-versioning/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/electron-versioning.md'
 title: "Electron Versioning"
@@ -49,7 +45,7 @@ If you are a seasoned Node developer, you are surely aware of `semver` - and
 might be used to giving your dependency management systems only rough guidelines
 rather than fixed version numbers. Due to the hard dependency on Node and
 Chromium, Electron is in a slightly more difficult position and does not follow
-semver. You should therefor always reference a specific version of Electron.
+semver. You should therefore always reference a specific version of Electron.
 
 Version numbers are bumped using the following rules:
 

@@ -1,5 +1,5 @@
 ---
-version: v1.1.1
+version: v1.3.3
 category: API
 redirect_from:
     - /docs/v0.24.0/api/global-shortcut/
@@ -33,10 +33,6 @@ redirect_from:
     - /docs/v0.37.6/api/global-shortcut/
     - /docs/v0.37.7/api/global-shortcut/
     - /docs/v0.37.8/api/global-shortcut/
-    - /docs/v1.0.0/api/global-shortcut/
-    - /docs/v1.0.1/api/global-shortcut/
-    - /docs/v1.1.0/api/global-shortcut/
-    - /docs/v1.1.1/api/global-shortcut/
     - /docs/latest/api/global-shortcut/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/global-shortcut.md'
 excerpt: "Detect keyboard events when the application does not have keyboard focus."
@@ -57,29 +53,29 @@ not have the keyboard focus. You should not use this module until the `ready`
 event of the app module is emitted.
 
 ```javascript
-const {app, globalShortcut} = require('electron');
+const {app, globalShortcut} = require('electron')
 
 app.on('ready', () => {
   // Register a 'CommandOrControl+X' shortcut listener.
   const ret = globalShortcut.register('CommandOrControl+X', () => {
-    console.log('CommandOrControl+X is pressed');
-  });
+    console.log('CommandOrControl+X is pressed')
+  })
 
   if (!ret) {
-    console.log('registration failed');
+    console.log('registration failed')
   }
 
   // Check whether a shortcut is registered.
-  console.log(globalShortcut.isRegistered('CommandOrControl+X'));
-});
+  console.log(globalShortcut.isRegistered('CommandOrControl+X'))
+})
 
 app.on('will-quit', () => {
   // Unregister a shortcut.
-  globalShortcut.unregister('CommandOrControl+X');
+  globalShortcut.unregister('CommandOrControl+X')
 
   // Unregister all shortcuts.
-  globalShortcut.unregisterAll();
-});
+  globalShortcut.unregisterAll()
+})
 ```
 
 ## Methods

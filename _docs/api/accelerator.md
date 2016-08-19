@@ -1,5 +1,5 @@
 ---
-version: v1.1.1
+version: v1.3.3
 category: API
 redirect_from:
     - /docs/v0.24.0/api/accelerator/
@@ -33,10 +33,6 @@ redirect_from:
     - /docs/v0.37.6/api/accelerator/
     - /docs/v0.37.7/api/accelerator/
     - /docs/v0.37.8/api/accelerator/
-    - /docs/v1.0.0/api/accelerator/
-    - /docs/v1.0.1/api/accelerator/
-    - /docs/v1.1.0/api/accelerator/
-    - /docs/v1.1.1/api/accelerator/
     - /docs/latest/api/accelerator/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/accelerator.md'
 excerpt: "Define keyboard shortcuts."
@@ -59,14 +55,14 @@ Examples:
 ## Platform notice
 
 On Linux and Windows, the `Command` key does not have any effect so
-use `CommandOrControl` which represents `Command` on OS X and `Control` on
+use `CommandOrControl` which represents `Command` on macOS and `Control` on
 Linux and Windows to define some accelerators.
 
-Use `Alt` instead of `Option`. The `Option` key only exists on OS X, whereas
+Use `Alt` instead of `Option`. The `Option` key only exists on macOS, whereas
 the `Alt` key is available on all platforms.
 
 The `Super` key is mapped to the `Windows` key on Windows and Linux and
-`Cmd` on OS X.
+`Cmd` on macOS.
 
 ## Available modifiers
 
