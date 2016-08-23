@@ -1,5 +1,5 @@
 ---
-version: v1.3.3
+version: v1.3.4
 category: Tutorial
 redirect_from:
     - /docs/v0.24.0/tutorial/using-selenium-and-webdriver/
@@ -64,7 +64,7 @@ has helpers to access Electron APIs in your tests and bundles ChromeDriver.
 $ npm install --save-dev spectron
 ```
 
-```js
+```javascript
 // A simple test to verify a visible window is opened with a title
 var Application = require('spectron').Application
 var assert = require('assert')

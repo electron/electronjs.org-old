@@ -1,5 +1,5 @@
 ---
-version: v1.3.3
+version: v1.3.4
 category: API
 redirect_from:
     - /docs/v0.24.0/api/web-frame/
@@ -161,7 +161,7 @@ console.log(webFrame.getResourceUsage())
 
 This will generate:
 
-```
+```javascript
 {
   images: {
     count: 22,
@@ -175,7 +175,7 @@ This will generate:
   xslStyleSheets: { /* same with "images" */ },
   fonts: { /* same with "images" */ },
   other: { /* same with "images" */ }
-})
+}
 ```
 
 ### `webFrame.clearCache()`

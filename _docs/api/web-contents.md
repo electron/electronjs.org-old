@@ -1,5 +1,5 @@
 ---
-version: v1.3.3
+version: v1.3.4
 category: API
 redirect_from:
     - /docs/v0.24.0/api/web-contents/
@@ -64,7 +64,7 @@ console.log(contents)
 
 These methods can be accessed from the `webContents` module:
 
-```js
+```javascript
 const {webContents} = require('electron')
 console.log(webContents)
 ```
@@ -227,6 +227,7 @@ Returns:
 
 * `event` Event
 * `url` String
+* `isMainFrame` Boolean
 
 Emitted when an in-page navigation happened.
 
@@ -272,7 +273,7 @@ Returns:
 * `url` URL
 * `error` String - The error code
 * `certificate` Object
-  * `data` Buffer - PEM encoded data
+  * `data` String - PEM encoded data
   * `issuerName` String - Issuer's Common Name
   * `subjectName` String - Subject's Common Name
   * `serialNumber` String - Hex value represented string
@@ -293,7 +294,7 @@ Returns:
 * `event` Event
 * `url` URL
 * `certificateList` [Objects]
-  * `data` Buffer - PEM encoded data
+  * `data` String - PEM encoded data
   * `issuerName` String - Issuer's Common Name
   * `subjectName` String - Subject's Common Name
   * `serialNumber` String - Hex value represented string
@@ -534,7 +535,7 @@ win.loadURL('http://github.com')
   * `userAgent` String - A user agent originating the request.
   * `extraHeaders` String - Extra headers separated by "\n"
 
-Loads the `url` in the window, the `url` must contain the protocol prefix,
+Loads the `url` in the window. The `url` must contain the protocol prefix,
 e.g. the `http://` or `file://`. If the load should bypass http cache then
 use the `pragma` header to achieve it.
 
@@ -884,7 +885,7 @@ The `callback` will be called with `callback(error, data)` on completion. The
 
 By default, an empty `options` will be regarded as:
 
-```
+```javascript
 {
   marginsType: 0,
   printBackground: false,
@@ -974,7 +975,6 @@ Opens the developer tools for the service worker context.
 #### `contents.send(channel[, arg1][, arg2][, ...])`
 
 * `channel` String
-* `arg` (optional)
 
 Send an asynchronous message to renderer process via `channel`, you can also
 send arbitrary arguments. Arguments will be serialized in JSON internally and
@@ -1018,8 +1018,8 @@ app.on('ready', () => {
 
 * `screenPosition` String - Specify the screen type to emulate
     (default: `desktop`)
-  * `desktop`
-  * `mobile`
+  * `desktop` - Desktop screen type
+  * `mobile` - Mobile screen type
 * `screenSize` Object - Set the emulated screen size (screenPosition == mobile)
   * `width` Integer - Set the emulated screen width
   * `height` Integer - Set the emulated screen height

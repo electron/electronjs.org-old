@@ -1,5 +1,5 @@
 ---
-version: v1.3.3
+version: v1.3.4
 category: API
 redirect_from:
     - /docs/v0.24.0/api/tray/
@@ -239,7 +239,7 @@ Sets when the tray's icon background becomes highlighted (in blue).
 by toggling between `'never'` and `'always'` modes when the window visibility
 changes.
 
-```js
+```javascript
 const {BrowserWindow, Tray} = require('electron')
 
 const win = new BrowserWindow({width: 800, height: 600})

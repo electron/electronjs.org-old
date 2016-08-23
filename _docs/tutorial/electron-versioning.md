@@ -1,5 +1,5 @@
 ---
-version: v1.3.3
+version: v1.3.4
 category: Tutorial
 redirect_from:
     - /docs/v0.24.0/tutorial/electron-versioning/
@@ -57,6 +57,6 @@ Version numbers are bumped using the following rules:
 * Patch: For new features and bug fixes - if you upgrade from `1.0.0` to
   `1.0.1`, your app will continue to work as-is.
 
-If you are using `electron-prebuilt`, we recommend that you set a fixed version
+If you are using `electron` or `electron-prebuilt`, we recommend that you set a fixed version
 number (`1.1.0` instead of `^1.1.0`) to ensure that all upgrades of Electron are
 a manual operation made by you, the developer.

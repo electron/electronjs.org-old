@@ -1,5 +1,5 @@
 ---
-version: v1.3.3
+version: v1.3.4
 category: API
 redirect_from:
     - /docs/v0.24.0/api/menu/
@@ -401,7 +401,7 @@ the first item.
 
 Template:
 
-```
+```javascript
 [
   {label: '4', id: '4'},
   {label: '5', id: '5'},
@@ -423,7 +423,7 @@ Menu:
 
 Template:
 
-```
+```javascript
 [
   {label: 'a', position: 'endof=letters'},
   {label: '1', position: 'endof=numbers'},
