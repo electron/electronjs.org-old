@@ -1674,3 +1674,14 @@
     - "soundcloud"
   license: "GNU GENERAL PUBLIC LICENSE Version 3"
   icon: "soundnode.png"
+-
+  name: "Svgsus"
+  description: "Organize, clean and transform your SVGs"
+  website: "http://www.svgs.us"
+  keywords:
+    - "icon"
+    - "svg"
+    - "tool"
+    - "productivity"
+  license: ""
+  icon: "svgsus.png"
