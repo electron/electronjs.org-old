@@ -1688,3 +1688,13 @@
     - "Developer Tool"
   license: "MIT"
   icon: "qmui.png"
+-
+  name: "Svgsus"
+  description: "Organize, clean and transform your SVGs"
+  website: "http://www.svgs.us"
+  keywords:
+    - "icon"
+    - "svg"
+    - "tool"
+    - "productivity"
+  icon: "svgsus.png"
