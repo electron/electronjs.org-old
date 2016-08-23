@@ -1698,3 +1698,15 @@
     - "tool"
     - "productivity"
   icon: "svgsus.png"
+-
+  name: "Ramme"
+  description: "Unofficial Instagram Desktop App."
+  website: "https://github.com/terkelg/ramme"
+  repository: "https://github.com/terkelg/ramme"
+  keywords:
+    - "Electron"
+    - "photos"
+    - "social"
+    - "instagram"
+  license: "MIT"
+  icon: "ramme.png"
