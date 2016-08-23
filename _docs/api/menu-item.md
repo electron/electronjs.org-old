@@ -1,5 +1,5 @@
 ---
-version: v1.3.3
+version: v1.3.4
 category: API
 redirect_from:
     - /docs/v0.24.0/api/menu-item/
@@ -50,7 +50,7 @@ See [`Menu`](http://electron.atom.io/docs/api/menu) for examples.
 
 Create a new `MenuItem` with the following method:
 
-### new MenuItem(options)
+### `new MenuItem(options)`
 
 * `options` Object
   * `click` Function - Will be called with

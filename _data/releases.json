@@ -1,5 +1,23 @@
 [
   {
+    "url": "https://api.github.com/repos/electron/electron/releases/3948082",
+    "assets_url": "https://api.github.com/repos/electron/electron/releases/3948082/assets",
+    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/3948082/assets{?name,label}",
+    "html_url": "https://github.com/electron/electron/releases/tag/v1.3.4",
+    "id": 3948082,
+    "tag_name": "v1.3.4",
+    "target_commitish": "master",
+    "name": "electron v1.3.4",
+    "draft": false,
+    "prerelease": false,
+    "created_at": "2016-08-23T08:03:07Z",
+    "published_at": "2016-08-23T10:50:37Z",
+    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v1.3.4",
+    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v1.3.4",
+    "body": "Changelog:\r\n\r\n* Use `String` instead of `Buffer` to represent certificate data. [#6814](https://github.com/electron/electron/pull/6814), [#6881](https://github.com/electron/electron/pull/6881)\r\n* Add `isMainFrame` parameter to the `did-navigate-in-page` event. [#6810](https://github.com/electron/electron/pull/6810)\r\n* Fix privileged schemes not able to send CORS requests. [#6816](https://github.com/electron/electron/pull/6816)\r\n* Fix `hasImageContents` parameter of `context-menu` event being wrong. [#6817](https://github.com/electron/electron/pull/6817)\r\n* Fix crash on garbage collection in renderer process. [#6832](https://github.com/electron/electron/pull/6832)\r\n* Fix memory leak when render view is deleted. [#6857](https://github.com/electron/electron/pull/6857)\r\n* Fix relative URLs not working when changing `win.location` for objects returned by `window.open`. [#6861](https://github.com/electron/electron/pull/6861)\r\n* Fix `webRequest.onBeforeSendHeaders` API drops headers with \".\" in the name. [#6856](https://github.com/electron/electron/pull/6856)\r\n* Fix crash when using `fetch` in renderer process. [#6926](https://github.com/electron/electron/pull/6926)\r\n* Fix `ses.enableNetworkEmulation` not working with default options. [#6935](https://github.com/electron/electron/pull/6935)\r\n\r\n__macOS__\r\n\r\n* Add support for `titleBarStyle: 'hidden'` on OS X 10.9. [#6848](https://github.com/electron/electron/pull/6848)\r\n* Fix window size being changed when calling `setClosable`, `setMaximizable` and `setMinimizable` APIs. [#6850](https://github.com/electron/electron/pull/6850)\r\n* Fix \"Hide extension\" checkbox showing for open dialog. [#6872](https://github.com/electron/electron/pull/6872)\r\n\r\n__Windows__\r\n\r\n* Add `path` and `args` parameters to `app.setAsDefaultProtocolClient` API. [#6858](https://github.com/electron/electron/pull/6858)\r\n* Fix menu item roles not working correctly when having hidden windows. [#6851](https://github.com/electron/electron/pull/6851)\r\n* Fix thumbar buttons disappeared after calling `win.setSkipTaskbar(skip)`. [#6829](https://github.com/electron/electron/pull/6829)\r\n",
+    "version": "1.3.4"
+  },
+  {
     "url": "https://api.github.com/repos/electron/electron/releases/3853253",
     "assets_url": "https://api.github.com/repos/electron/electron/releases/3853253/assets",
     "upload_url": "https://uploads.github.com/repos/electron/electron/releases/3853253/assets{?name,label}",
@@ -520,23 +538,5 @@
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.37.1",
     "body": "Changelog:\r\n\r\n__OS X__\r\n\r\n* Fix `libffmpeg.dylib image not found` error on startup.\r\n\r\n__Windows__\r\n\r\n* Fix unable to start on Windows 7.",
     "version": "0.37.1"
-  },
-  {
-    "url": "https://api.github.com/repos/electron/electron/releases/2792484",
-    "assets_url": "https://api.github.com/repos/electron/electron/releases/2792484/assets",
-    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/2792484/assets{?name,label}",
-    "html_url": "https://github.com/electron/electron/releases/tag/v0.37.0",
-    "id": 2792484,
-    "tag_name": "v0.37.0",
-    "target_commitish": "master",
-    "name": "electron v0.37.0",
-    "draft": false,
-    "prerelease": false,
-    "created_at": "2016-03-12T00:54:10Z",
-    "published_at": "2016-03-12T05:35:40Z",
-    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.37.0",
-    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.37.0",
-    "body": "Changelog:\r\n\r\n* Upgrade to Chrome 49.",
-    "version": "0.37.0"
   }
 ]

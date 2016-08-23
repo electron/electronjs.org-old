@@ -1,5 +1,5 @@
 ---
-version: v1.3.3
+version: v1.3.4
 category: Tutorial
 redirect_from:
     - /docs/v0.24.0/tutorial/quick-start/
@@ -196,9 +196,9 @@ Once you've created your initial `main.js`, `index.html`, and `package.json` fil
 you'll probably want to try running your app locally to test it and make sure it's
 working as expected.
 
-### electron-prebuilt
+### `electron`
 
-[`electron-prebuilt`](https://github.com/electron-userland/electron-prebuilt) is
+[`electron`](https://github.com/electron-userland/electron-prebuilt) is
 an `npm` module that contains pre-compiled versions of Electron.
 
 If you've installed it globally with `npm`, then you will only need to run the

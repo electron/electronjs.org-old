@@ -1,5 +1,5 @@
 ---
-version: v1.3.3
+version: v1.3.4
 category: Tutorial
 redirect_from:
     - /docs/v0.24.0/tutorial/application-packaging/

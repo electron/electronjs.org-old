@@ -1,5 +1,5 @@
 ---
-version: v1.3.3
+version: v1.3.4
 category: API
 redirect_from:
     - /docs/v0.24.0/api/browser-window/
@@ -56,7 +56,11 @@ win.on('closed', () => {
   win = null
 })
 
+// Load a remote URL
 win.loadURL('https://github.com')
+
+// Or load a local HTML file
+win.loadURL(`file://${__dirname}/app/index.html`)
 ```
 
 ## Frameless window
@@ -250,8 +254,7 @@ Possible values are:
     input sparingly.
 * On Windows, possible type is `toolbar`.
 
-The `titleBarStyle` option is only supported on macOS 10.10 Yosemite and newer.
-Possible values are:
+Possible values of the `titleBarStyle` option are:
 
 * `default` or not specified, results in the standard gray opaque Mac title
   bar.
@@ -260,6 +263,7 @@ Possible values are:
   the top left.
 * `hidden-inset` results in a hidden title bar with an alternative look
   where the traffic light buttons are slightly more inset from the window edge.
+  It is not supported on macOS 10.9 Mavericks, where it falls back to `hidden`.
 
 The `webPreferences` option is an object that can have the following properties:
 
@@ -340,6 +344,7 @@ labeled as such.
 Returns:
 
 * `event` Event
+* `title` String
 
 Emitted when the document changed its title, calling `event.preventDefault()`
 will prevent the native window's title from changing.
@@ -987,6 +992,23 @@ Same as `webContents.capturePage([rect, ]callback)`.
 
 Same as `webContents.loadURL(url[, options])`.
 
+The `url` can be a remote address (e.g. `http://`) or a path to a local
+HTML file using the `file://` protocol.
+
+To ensure that file URLs are properly formatted, it is recommended to use
+Node's [`url.format`](https://nodejs.org/api/url.html#url_url_format_urlobject)
+method:
+
+```javascript
+let url = require('url').format({
+  protocol: 'file',
+  slashes: true,
+  pathname: require('path').join(__dirname, 'index.html')
+})
+
+win.loadURL(url)
+```
+
 #### `win.reload()`
 
 Same as `webContents.reload`.
@@ -1013,7 +1035,7 @@ On Linux platform, only supports Unity desktop environment, you need to specify
 the `*.desktop` file name to `desktopName` field in `package.json`. By default,
 it will assume `app.getName().desktop`.
 
-On Windows, a mode can be passed. Accepted values are `none`, `normal`, 
+On Windows, a mode can be passed. Accepted values are `none`, `normal`,
 `indeterminate`, `error`, and `paused`. If you call `setProgressBar` without a
 mode set (but with a value within the valid range), `normal` will be assumed.
 
@@ -1078,7 +1100,7 @@ The `flags` is an array that can include following `String`s:
 
 #### `win.setThumbnailClip(region)` _Windows_
 
-* `region` - Object
+* `region` Object - Region of the window
   * `x` Integer - x-position of region
   * `y` Integer - y-position of region
   * `width` Integer - width of region
@@ -1160,7 +1182,7 @@ events.
 Prevents the window contents from being captured by other apps.
 
 On macOS it sets the NSWindow's sharingType to NSWindowSharingNone.
-On Windows it calls SetWindowDisplayAffinity with WDA_MONITOR.
+On Windows it calls SetWindowDisplayAffinity with `WDA_MONITOR`.
 
 #### `win.setFocusable(focusable)` _Windows_
 

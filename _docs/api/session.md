@@ -1,5 +1,5 @@
 ---
-version: v1.3.3
+version: v1.3.4
 category: API
 redirect_from:
     - /docs/v0.24.0/api/session/
@@ -40,7 +40,7 @@ title: "session"
 sort_title: "session"
 ---
 
- # session
+# session
 
 > Manage browser sessions, cookies, cache, proxy settings, etc.
 
@@ -63,7 +63,7 @@ console.log(ses.getUserAgent())
 
 The `session` module has the following methods:
 
-### session.fromPartition(partition[, options])
+### `session.fromPartition(partition[, options])`
 
 * `partition` String
 * `options` Object
@@ -86,7 +86,7 @@ of an existing `Session` object.
 
 The `session` module has the following properties:
 
-### session.defaultSession
+### `session.defaultSession`
 
 Returns the default session object of the app.
 
@@ -254,10 +254,14 @@ Sets download saving directory. By default, the download directory will be the
 #### `ses.enableNetworkEmulation(options)`
 
 * `options` Object
-  * `offline` Boolean - Whether to emulate network outage.
-  * `latency` Double - RTT in ms
-  * `downloadThroughput` Double - Download rate in Bps
-  * `uploadThroughput` Double - Upload rate in Bps
+  * `offline` Boolean (optional) - Whether to emulate network outage. Defaults
+    to false.
+  * `latency` Double (optional) - RTT in ms. Defaults to 0 which will disable
+    latency throttling.
+  * `downloadThroughput` Double (optional) - Download rate in Bps. Defaults to 0
+    which will disable download throttling.
+  * `uploadThroughput` Double (optional) - Upload rate in Bps. Defaults to 0
+    which will disable upload throttling.
 
 Emulates network with the given configuration for the `session`.
 

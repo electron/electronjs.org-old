@@ -1,5 +1,5 @@
 ---
-version: v1.3.3
+version: v1.3.4
 category: API
 redirect_from:
     - /docs/v0.24.0/api/app/
@@ -220,7 +220,7 @@ Returns:
 * `url` URL
 * `error` String - The error code
 * `certificate` Object
-  * `data` Buffer - PEM encoded data
+  * `data` String - PEM encoded data
   * `issuerName` String - Issuer's Common Name
   * `subjectName` String - Subject's Common Name
   * `serialNumber` String - Hex value represented string
@@ -255,7 +255,7 @@ Returns:
 * `webContents` [WebContents](http://electron.atom.io/docs/api/web-contents)
 * `url` URL
 * `certificateList` [Objects]
-  * `data` Buffer - PEM encoded data
+  * `data` String - PEM encoded data
   * `issuerName` String - Issuer's Common Name
   * `subjectName` String - Subject's Common Name
   * `serialNumber` String - Hex value represented string
@@ -490,17 +490,22 @@ bar, and on macOS you can visit it from dock menu.
 
 Clears the recent documents list.
 
-### `app.setAsDefaultProtocolClient(protocol)` _macOS_ _Windows_
+### `app.setAsDefaultProtocolClient(protocol[, path, args])` _macOS_ _Windows_
 
 * `protocol` String - The name of your protocol, without `://`. If you want your
   app to handle `electron://` links, call this method with `electron` as the
   parameter.
+* `path` String (optional) _Windows_ - Defaults to `process.execPath`
+* `args` Array (optional) _Windows_ - Defaults to an empty array
 
 This method sets the current executable as the default handler for a protocol
 (aka URI scheme). It allows you to integrate your app deeper into the operating
 system. Once registered, all links with `your-protocol://` will be opened with
 the current executable. The whole link, including protocol, will be passed to
 your application as a parameter.
+
+On Windows you can provide optional parameters path, the path to your executable,
+and args, an array of arguments to be passed to your executable when it launches.
 
 Returns `true` when the call succeeded, otherwise returns `false`.
 
@@ -511,18 +516,22 @@ Please refer to [Apple's documentation][CFBundleURLTypes] for details.
 
 The API uses the Windows Registry and LSSetDefaultHandlerForURLScheme internally.
 
-### `app.removeAsDefaultProtocolClient(protocol)` _macOS_ _Windows_
+### `app.removeAsDefaultProtocolClient(protocol[, path, args])` _macOS_ _Windows_
 
 * `protocol` String - The name of your protocol, without `://`.
+* `path` String (optional) _Windows_ - Defaults to `process.execPath`
+* `args` Array (optional) _Windows_ - Defaults to an empty array
 
 This method checks if the current executable as the default handler for a
 protocol (aka URI scheme). If so, it will remove the app as the default handler.
 
 Returns `true` when the call succeeded, otherwise returns `false`.
 
-### `app.isDefaultProtocolClient(protocol)` _macOS_ _Windows_
+### `app.isDefaultProtocolClient(protocol[, path, args])` _macOS_ _Windows_
 
 * `protocol` String - The name of your protocol, without `://`.
+* `path` String (optional) _Windows_ - Defaults to `process.execPath`
+* `args` Array (optional) _Windows_ - Defaults to an empty array
 
 This method checks if the current executable is the default handler for a protocol
 (aka URI scheme). If so, it will return true. Otherwise, it will return false.

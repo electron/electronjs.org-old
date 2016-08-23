@@ -1,5 +1,5 @@
 ---
-version: v1.3.3
+version: v1.3.4
 category: API
 redirect_from:
     - /docs/v0.24.0/api/file-object/

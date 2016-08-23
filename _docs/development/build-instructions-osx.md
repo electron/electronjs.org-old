@@ -1,5 +1,5 @@
 ---
-version: v1.3.3
+version: v1.3.4
 category: Development
 redirect_from:
     - /docs/v0.24.0/development/build-instructions-osx/
@@ -90,7 +90,7 @@ After building is done, you can find `Electron.app` under `out/D`.
 ## 32bit Support
 
 Electron can only be built for a 64bit target on macOS and there is no plan to
-support 32bit macOS in future.
+support 32bit macOS in the future.
 
 ## Tests
 

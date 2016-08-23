@@ -1,5 +1,5 @@
 ---
-version: v1.3.3
+version: v1.3.4
 category: Tutorial
 redirect_from:
     - /docs/v0.24.0/tutorial/devtools-extension/
@@ -91,6 +91,7 @@ Following Devtools Extensions are tested and guaranteed to work in Electron:
 * [jQuery Debugger](https://chrome.google.com/webstore/detail/jquery-debugger/dbhhnnnpaeobfddmlalhnehgclcmjimi)
 * [AngularJS Batarang](https://chrome.google.com/webstore/detail/angularjs-batarang/ighdmehidhipcmcojjgiloacoafjmpfk)
 * [Vue.js devtools](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
+* [Cerebral Debugger](http://www.cerebraljs.com/documentation/the_debugger)
 
 ### What should I do if a DevTools Extension is not working?
 
