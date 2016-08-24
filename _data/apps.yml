@@ -1710,3 +1710,13 @@
     - "instagram"
   license: "MIT"
   icon: "ramme.png"
+-
+  name: "Insomnia"
+  description: "REST API Client"
+  website: "https://insomnia.rest/"
+  keywords:
+    - "REST Client"
+    - "HTTP"
+    - "API"
+    - "Developer Tool"
+  icon: "insomnia.png"
