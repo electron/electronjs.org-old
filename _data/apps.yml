@@ -839,3 +839,18 @@
     - "html"
     - "desktop"
   icon: "markdownify.png"
+-
+  name: "Correo"
+  description: "A menubar/taskbar Gmail App for Windows, macOS and Linux."
+  website: "https://github.com/amitmerchant1990/correo"
+  repository: "https://github.com/amitmerchant1990/correo"
+  keywords:
+    - "electron"
+    - "gmail"
+    - "mail"
+    - "menubar"
+    - "taskbar"
+    - "tray"
+    - "html"
+    - "desktop"
+  icon: "correo.png"
