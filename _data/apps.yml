@@ -1720,3 +1720,15 @@
     - "API"
     - "Developer Tool"
   icon: "insomnia.png"
+-
+  name: "KongDash"
+  description: "Desktop client for Kong Admin API"
+  website: "https://ajaysreedhar.github.io/kongdash/"
+  repository: "https://github.com/ajaysreedhar/kongdash"
+  keywords:
+    - "Kong"
+    - "Dashboard"
+    - "KongDash"
+    - "API"
+  license: "MIT"
+  icon: "kongdash.png"
