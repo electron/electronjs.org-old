@@ -1722,7 +1722,6 @@
     - "Developer Tool"
   icon: "insomnia.png"
 -
-<<<<<<< HEAD
   name: "Correo"
   description: "A menubar/taskbar Gmail App for Windows, macOS and Linux."
   website: "https://github.com/amitmerchant1990/correo"
