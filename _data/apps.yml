@@ -978,6 +978,7 @@
     - "desktop"
   icon: "markdownify.png"
 -
+<<<<<<< HEAD
   name: "Etcher"
   description: "Burn images to SD cards & USB drives, safe & easy"
   website: "http://www.etcher.io/"
@@ -1720,3 +1721,19 @@
     - "API"
     - "Developer Tool"
   icon: "insomnia.png"
+=======
+  name: "Correo"
+  description: "A menubar/taskbar Gmail App for Windows, macOS and Linux."
+  website: "https://github.com/amitmerchant1990/correo"
+  repository: "https://github.com/amitmerchant1990/correo"
+  keywords:
+    - "electron"
+    - "gmail"
+    - "mail"
+    - "menubar"
+    - "taskbar"
+    - "tray"
+    - "html"
+    - "desktop"
+  icon: "correo.png"
+>>>>>>> 10001749743bc2aedd279cfa19a3a4adfd85899f
