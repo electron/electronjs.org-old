@@ -1720,3 +1720,14 @@
     - "API"
     - "Developer Tool"
   icon: "insomnia.png"
+-
+  name: "Translation Editor"
+  description: "Translation files editor for INTL ICU messages (see formatjs.io)"
+  website: "https://bitbucket.org/bflower/react-intl-editor/wiki/Home"
+  repository: "https://bitbucket.org/bflower/react-intl-editor"
+  keywords:
+    - "Translation"
+    - "React"
+    - "Intl"
+  license: "MIT"
+  icon: "react-intl-translation-editor.png"
