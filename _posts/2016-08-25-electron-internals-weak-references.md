@@ -1,5 +1,5 @@
 ---
-title: Electron Internals&#58: Weak References
+title: Electron Internals&#58; Weak References
 author: zcbenz
 ---
 
