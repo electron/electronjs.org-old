@@ -978,7 +978,6 @@
     - "desktop"
   icon: "markdownify.png"
 -
-<<<<<<< HEAD
   name: "Etcher"
   description: "Burn images to SD cards & USB drives, safe & easy"
   website: "http://www.etcher.io/"
