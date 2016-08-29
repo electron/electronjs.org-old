@@ -1721,7 +1721,7 @@
     - "API"
     - "Developer Tool"
   icon: "insomnia.png"
-=======
+-
   name: "Correo"
   description: "A menubar/taskbar Gmail App for Windows, macOS and Linux."
   website: "https://github.com/amitmerchant1990/correo"
@@ -1736,4 +1736,15 @@
     - "html"
     - "desktop"
   icon: "correo.png"
->>>>>>> 10001749743bc2aedd279cfa19a3a4adfd85899f
+-
+  name: "KongDash"
+  description: "Desktop client for Kong Admin API"
+  website: "https://ajaysreedhar.github.io/kongdash"
+  repository: "https://github.com/ajaysreedhar/kongdash"
+  keywords:
+    - "Kong"
+    - "Dashboard"
+    - "KongDash"
+    - "API"
+  license: "MIT"
+  icon: "kongdash.png"
