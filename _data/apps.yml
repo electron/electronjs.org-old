@@ -1758,3 +1758,11 @@
     - "Intl"
   license: "MIT"
   icon: "react-intl-translation-editor.png"
+-
+  name: "5EClient"
+  description: "5EPlay CSGO Client"
+  website: "https://www.5eplay.com/"
+  keywords:
+    - "CSGO"
+    - "PUG"
+  icon: "5eplay.png"
