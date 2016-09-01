@@ -1780,3 +1780,11 @@
     - "Virtual Machine"
     - "Workflow"
   icon: "theme-juice.png"
+-
+  name: "Pexels"
+  description: "Search for completely free photos and copy them into your clipboard"
+  website: "https://www.pexels.com/pro/mac-and-windows-app/"
+  keywords:
+    - "photos"
+    - "web design"
+  icon: "pexels.png"
