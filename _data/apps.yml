@@ -82,15 +82,6 @@
   license: ""
   icon: "pixate.png"
 -
-  name: "Wagon"
-  description: "SQL analytis together: Write queries, visualize data, and share charts with your team"
-  website: "http://www.wagonhq.com"
-  repository: ""
-  keywords: []
-  license: ""
-  icon: "wagon.png"
-  featuredOnHomepage: true
--
   name: "Particle Dev"
   description: "A professional IDE for Particle"
   website: "https://www.particle.io/dev"
