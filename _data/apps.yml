@@ -1701,6 +1701,7 @@
     - "instagram"
   license: "MIT"
   icon: "ramme.png"
+  featuredOnHomepage: true
 -
   name: "Insomnia"
   description: "REST API Client"
