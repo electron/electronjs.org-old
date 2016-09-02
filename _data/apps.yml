@@ -1780,3 +1780,13 @@
     - "photos"
     - "web design"
   icon: "pexels.png"
+-
+  name: "uPhone"
+  description: "uContact WebRTC Desktop Phone"
+  website: "https://www.integraccs.com"
+  repository: "http://builds.ucontactcloud.com"
+  keywords:
+    - "Contact Center"
+    - "SoftPhone"
+    - "WebRTC"
+  icon: "uPhone.png"
