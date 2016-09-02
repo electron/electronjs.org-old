@@ -1,5 +1,5 @@
 ---
-version: v1.3.4
+version: v1.3.5
 category: Tutorial
 redirect_from:
     - /docs/v0.24.0/tutorial/using-native-node-modules/
@@ -77,7 +77,7 @@ HOME=~/.electron-gyp npm install
 You can also choose to install modules like other Node projects, and then
 rebuild the modules for Electron with the [`electron-rebuild`][electron-rebuild]
 package. This module can get the version of Electron and handle the manual steps
-of downloading headers and building native modules for your.
+of downloading headers and building native modules for your app.
 
 An example of installing `electron-rebuild` and then rebuild modules with it:
 

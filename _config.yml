@@ -12,7 +12,7 @@ gems:
     - jekyll-seo-tag
     - jekyll-feed
     - jemoji
-latest_version: 1.3.4
+latest_version: 1.3.5
 current_node: 6.3.0
 current_chrome: 52.0.2743.82
 current_v8: 5.2.361.43
@@ -70,6 +70,7 @@ available_versions:
     - v1.3.2
     - v1.3.3
     - v1.3.4
+    - v1.3.5
 collections:
     docs: {output: true, permalink: '/docs/:path/'}
 defaults:

@@ -1,5 +1,5 @@
 ---
-version: v1.3.4
+version: v1.3.5
 category: API
 redirect_from:
     - /docs/v0.24.0/api/protocol/
@@ -90,8 +90,10 @@ non-standard schemes can not recognize relative URLs:
 </body>
 ```
 
-So if you want to register a custom protocol to replace the `http` protocol, you
-have to register it as standard scheme:
+Registering a scheme as standard will allow access to files through the
+[FileSystem API][file-system-api]. Otherwise the renderer will throw a security
+error for the scheme. So in general if you want to register a custom protocol to
+replace the `http` protocol, you have to register it as a standard scheme:
 
 ```javascript
 const {app, protocol} = require('electron')
@@ -270,3 +272,4 @@ which sends a new HTTP request as a response.
 Remove the interceptor installed for `scheme` and restore its original handler.
 
 [net-error]: https://code.google.com/p/chromium/codesearch#chromium/src/net/base/net_error_list.h
+[file-system-api]: https://developer.mozilla.org/en-US/docs/Web/API/LocalFileSystem
