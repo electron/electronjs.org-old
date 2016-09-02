@@ -1,5 +1,5 @@
 ---
-version: v1.3.4
+version: v1.3.5
 category: API
 redirect_from:
     - /docs/v0.24.0/api/native-image/
@@ -187,7 +187,7 @@ Creates a new `NativeImage` instance from `dataURL`.
 
 ## Class: NativeImage
 
-A native wrapper for images such as tray, dock, and application icons.
+> Natively wrap images such as tray, dock, and application icons.
 
 ### Instance Methods
 

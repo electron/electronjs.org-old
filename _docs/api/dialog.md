@@ -1,5 +1,5 @@
 ---
-version: v1.3.4
+version: v1.3.5
 category: API
 redirect_from:
     - /docs/v0.24.0/api/dialog/
@@ -160,6 +160,9 @@ If a `callback` is passed, the API call will be asynchronous and the result
 will be passed via `callback(response)`.
 
 ### `dialog.showErrorBox(title, content)`
+
+* `title` String - The title to display in the error box
+* `content` String - The text content to display in the error box
 
 Displays a modal dialog that shows an error message.
 

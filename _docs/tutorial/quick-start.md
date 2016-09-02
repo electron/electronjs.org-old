@@ -1,5 +1,5 @@
 ---
-version: v1.3.4
+version: v1.3.5
 category: Tutorial
 redirect_from:
     - /docs/v0.24.0/tutorial/quick-start/
@@ -210,8 +210,16 @@ electron .
 
 If you've installed it locally, then run:
 
+#### macOS / Linux
+
 ```bash
-./node_modules/.bin/electron .
+$ ./node_modules/.bin/electron .
+```
+
+#### Windows
+
+```bash
+$ .\node_modules\.bin\electron .
 ```
 
 ### Manually Downloaded Electron Binary

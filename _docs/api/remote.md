@@ -1,5 +1,5 @@
 ---
-version: v1.3.4
+version: v1.3.5
 category: API
 redirect_from:
     - /docs/v0.24.0/api/remote/
@@ -194,9 +194,11 @@ Returns the [`WebContents`](http://electron.atom.io/docs/api/web-contents) objec
 Returns the global variable of `name` (e.g. `global[name]`) in the main
 process.
 
+## Properties
+
 ### `remote.process`
 
-Returns the `process` object in the main process. This is the same as
+The `process` object in the main process. This is the same as
 `remote.getGlobal('process')` but is cached.
 
 [rmi]: http://en.wikipedia.org/wiki/Java_remote_method_invocation

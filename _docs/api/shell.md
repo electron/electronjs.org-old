@@ -1,5 +1,5 @@
 ---
-version: v1.3.4
+version: v1.3.5
 category: API
 redirect_from:
     - /docs/v0.24.0/api/shell/
@@ -120,7 +120,9 @@ returned, otherwise `false` is returned.
 
 ### `shell.readShortcutLink(shortcutPath)` _Windows_
 
-Resolves the shortcut link at `shortcutPath`, an object is returned with the
+* `shortcutPath` String
+
+Resolves the shortcut link at `shortcutPath`. An object is returned with the
 fields described in the `options` of `shell.writeShortcutLink`.
 
 An exception will be thrown when any error happens.

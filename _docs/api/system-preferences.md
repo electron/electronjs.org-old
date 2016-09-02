@@ -1,5 +1,5 @@
 ---
-version: v1.3.4
+version: v1.3.5
 category: API
 redirect_from:
     - /docs/v0.24.0/api/system-preferences/
@@ -104,10 +104,15 @@ Removes the subscriber with `id`.
 
 ### `systemPreferences.subscribeLocalNotification(event, callback)` _macOS_
 
+* `event` String
+* `callback` Function
+
 Same as `subscribeNotification`, but uses `NSNotificationCenter` for local defaults.
 This is necessary for events such as `NSUserDefaultsDidChangeNotification`
 
 ### `systemPreferences.unsubscribeLocalNotification(id)` _macOS_
+
+* `id` Integer
 
 Same as `unsubscribeNotification`, but removes the subscriber from `NSNotificationCenter`.
 

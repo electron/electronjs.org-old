@@ -1,5 +1,5 @@
 ---
-version: v1.3.4
+version: v1.3.5
 category: API
 redirect_from:
     - /docs/v0.24.0/api/web-view-tag/
@@ -533,6 +533,21 @@ Sends an input `event` to the page.
 
 See [webContents.sendInputEvent](http://electron.atom.io/docs/api/web-contents#webcontentssendinputeventevent)
 for detailed description of `event` object.
+
+### `<webview>.setZoomFactor(factor)`
+
+* `factor` Number - Zoom factor.
+
+Changes the zoom factor to the specified factor. Zoom factor is
+zoom percent divided by 100, so 300% = 3.0.
+
+### `<webview>.setZoomLevel(level)`
+
+* `level` Number - Zoom level
+
+Changes the zoom level to the specified level. The original size is 0 and each
+increment above or below represents zooming 20% larger or smaller to default
+limits of 300% and 50% of original size, respectively.
 
 ### `<webview>.showDefinitionForSelection()` _macOS_
 
