@@ -1783,8 +1783,7 @@
 -
   name: "uPhone"
   description: "uContact WebRTC Desktop Phone"
-  website: "https://www.integraccs.com"
-  repository: "http://builds.ucontactcloud.com"
+  website: "http://www.integraccs.com"
   keywords:
     - "Contact Center"
     - "SoftPhone"
