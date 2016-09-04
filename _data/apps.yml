@@ -1780,3 +1780,17 @@
     - "photos"
     - "web design"
   icon: "pexels.png"
+-
+  name: "Timestamp"
+  description: "A better macOS menu bar clock with a customizable date/time display and a calendar."
+  website: "https://mzdr.github.io/timestamp/"
+  repository: "https://github.com/mzdr/timestamp/"
+  keywords:
+    - "macos"
+    - "osx"
+    - "clock"
+    - "calendar"
+    - "systray"
+    - "menubar"
+  license: "MIT"
+  icon: "timestamp.png"
