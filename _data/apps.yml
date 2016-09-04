@@ -1780,3 +1780,13 @@
     - "photos"
     - "web design"
   icon: "pexels.png"
+-
+  name: "Medis"
+  description: "Medis is a beautiful, easy-to-use Mac database management application for Redis."
+  website: "http://getmedis.com"
+  repository: "https://github.com/luin/medis"
+  keywords:
+    - "tedis"
+    - "tool"
+  icon: "medis.png"
+  license: "MIT"
