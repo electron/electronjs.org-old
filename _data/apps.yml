@@ -1780,3 +1780,16 @@
     - "photos"
     - "web design"
   icon: "pexels.png"
+-
+  name: "Harmony"
+  description: "Music player compatible with Spotify, Soundcloud, Play Music and your local files"
+  website: "http://getharmony.xyz/"
+  repository: "https://github.com/vincelwt/harmony"
+  keywords:
+    - "music"
+    - "player"
+    - "Spotify"
+    - "SoundCloud"
+    - "Play Music"
+    - "mp3"
+  icon: "pexels.png"
