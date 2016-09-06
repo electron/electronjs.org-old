@@ -15,7 +15,10 @@ The following is a set of guidelines for contributing to electron.atom.io on Git
 ## Adding an app or project to the site
 
 If you have an Electron application or project you'd like to see added, please
-open a pull request.
+open a pull request. **In your pull request, please make it clear if you are
+involved with the project or have an OK from the project team to add the app
+to the site**. We want to make sure each team is aware and OK with their project
+being added.
 
 Add your app to the list by editing [_data/apps.yml](/_data/apps.yml).
 
@@ -25,6 +28,7 @@ Add your app to the list by editing [_data/apps.yml](/_data/apps.yml).
   optional, but recommended.
 * Your `website` can be a repository with a `README`, but please provide a destination with information about your app.
   * You can make a free website with [GitHub Pages](https://pages.github.com)
+* Remove empty optional fields rather than leaving an empty string.
 * Your `icon` must be `256x256` pixels in size.
 * Your `icon` must be a [PNG](https://en.wikipedia.org/wiki/Portable_Network_Graphics).
 * Put your `icon` in the `images/apps` folder.
