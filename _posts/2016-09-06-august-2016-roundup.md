@@ -1,5 +1,5 @@
 ---
-title: August 2016&#58; New Apps and Meetups
+title: August 2016&#58; New Apps
 author: jlord
 ---
 
