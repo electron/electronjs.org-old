@@ -14,6 +14,7 @@ If you've made an Electron app or host a meetup, make a [pull request](https://g
 ### New Apps
 
 {: .table .table-ruled .table-full-width .table-with-spacious-first-column .mb-7}
+
 | |  |  |
 | --- | --- | -- |
 | <img src='/images/apps/coderpgify.png' width='50'> | [Code RPGify](http://code.rpgify.com) | RPG style coding application |
