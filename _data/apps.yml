@@ -82,6 +82,15 @@
   license: ""
   icon: "pixate.png"
 -
+  name: "Wagon"
+  description: "SQL analytis together: Write queries, visualize data, and share charts with your team"
+  website: "http://www.wagonhq.com"
+  repository: ""
+  keywords: []
+  license: ""
+  icon: "wagon.png"
+  featuredOnHomepage: true
+-
   name: "Particle Dev"
   description: "A professional IDE for Particle"
   website: "https://www.particle.io/dev"
@@ -1701,7 +1710,6 @@
     - "instagram"
   license: "MIT"
   icon: "ramme.png"
-  featuredOnHomepage: true
 -
   name: "Insomnia"
   description: "REST API Client"
@@ -1772,45 +1780,12 @@
     - "Virtual Machine"
     - "Workflow"
   icon: "theme-juice.png"
-# September 2016
 -
-<<<<<<< HEAD
   name: "uPhone"
-  description: "uContact WebRTC Desktop Phone"
+  description: "WebRTC Desktop Phone"
   website: "http://www.integraccs.com"
-=======
-  name: "Pexels"
-  description: "Search for completely free photos and copy them into your clipboard"
-  website: "https://www.pexels.com/pro/mac-and-windows-app/"
->>>>>>> electron/gh-pages
   keywords:
-    - "photos"
-    - "web design"
-  icon: "pexels.png"
--
-  name: "Timestamp"
-  description: "A better macOS menu bar clock with a customizable date/time display and a calendar."
-  website: "https://mzdr.github.io/timestamp/"
-  repository: "https://github.com/mzdr/timestamp/"
-  keywords:
-    - "macos"
-    - "osx"
-    - "clock"
-    - "calendar"
-    - "systray"
-    - "menubar"
-  license: "MIT"
-  icon: "timestamp.png"
--
-  name: "Harmony"
-  description: "Music player compatible with Spotify, Soundcloud, Play Music and your local files"
-  website: "http://getharmony.xyz/"
-  repository: "https://github.com/vincelwt/harmony"
-  keywords:
-    - "music"
-    - "player"
-    - "Spotify"
-    - "SoundCloud"
-    - "Play Music"
-    - "mp3"
-  icon: "harmony.png"
+    - "WebRTC"
+    - "Contact Center"
+    - "Call Center"
+  icon: "uphone.png"
