@@ -1,5 +1,5 @@
 ---
-version: v1.3.4
+version: v1.3.5
 category: Tutorial
 redirect_from:
     - /docs/v0.24.0/tutorial/application-distribution/
@@ -107,7 +107,7 @@ information with tools like [rcedit](https://github.com/atom/rcedit).
 ### macOS
 
 You can rename `Electron.app` to any name you want, and you also have to rename
-the `CFBundleDisplayName`, `CFBundleIdentifier` and `CFBundleName` fields in
+the `CFBundleDisplayName`, `CFBundleIdentifier` and `CFBundleName` fields in the
 following files:
 
 * `Electron.app/Contents/Info.plist`

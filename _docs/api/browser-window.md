@@ -1,5 +1,5 @@
 ---
-version: v1.3.4
+version: v1.3.5
 category: API
 redirect_from:
     - /docs/v0.24.0/api/browser-window/
@@ -986,9 +986,22 @@ Whether the window's document has been edited.
 
 #### `win.capturePage([rect, ]callback)`
 
+* `rect` Object (optional) - The area of the page to be captured
+  * `x` Integer
+  * `y` Integer
+  * `width` Integer
+  * `height` Integer
+* `callback` Function
+
 Same as `webContents.capturePage([rect, ]callback)`.
 
 #### `win.loadURL(url[, options])`
+
+* `url` URL
+* `options` Object (optional)
+  * `httpReferrer` String - A HTTP Referrer url.
+  * `userAgent` String - A user agent originating the request.
+  * `extraHeaders` String - Extra headers separated by "\n"
 
 Same as `webContents.loadURL(url[, options])`.
 
@@ -1178,6 +1191,8 @@ this window, but if this window has focus, it will still receive keyboard
 events.
 
 #### `win.setContentProtection(enable)` _macOS_ _Windows_
+
+* `enable` Boolean
 
 Prevents the window contents from being captured by other apps.
 
