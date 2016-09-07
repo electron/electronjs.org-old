@@ -1808,3 +1808,12 @@
     - "Play Music"
     - "mp3"
   icon: "harmony.png"
+-
+  name: "uPhone"
+  description: "WebRTC Desktop Phone"
+  website: "http://www.integraccs.com"
+  keywords:
+    - "WebRTC"
+    - "Contact Center"
+    - "Call Center"
+  icon: "uphone.png"
