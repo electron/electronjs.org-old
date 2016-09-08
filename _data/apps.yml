@@ -1817,3 +1817,15 @@
     - "Contact Center"
     - "Call Center"
   icon: "uphone.png"
+-
+  name: "SealTalk"
+  description: "Instant-messaging App powered by RongCloud IM Cloud Service and IM SDK."
+  website: "http://sealtalk.im"
+  repository: "https://github.com/sealtalk/sealtalk-desktop"
+  keywords:
+    - "IM"
+    - "RongCloud"
+    - "SDK"
+    - "IM Cloud Service"
+    - "IM SDK"
+  icon: "sealtalk.png"
