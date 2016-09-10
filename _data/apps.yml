@@ -1829,3 +1829,13 @@
     - "IM Cloud Service"
     - "IM SDK"
   icon: "sealtalk.png"
+-
+  name: "Infinity"
+  description: "An easy way to make presentation."
+  website: "https://ycosxapp.github.io"
+  repository: ""
+  keywords:
+    - "presentation"
+    - "design"
+    - "react"
+  icon: "infinity.png"
