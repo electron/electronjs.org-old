@@ -1,5 +1,5 @@
 ---
-version: v1.3.5
+version: v1.3.6
 category: Tutorial
 redirect_from:
     - /docs/v0.24.0/tutorial/accessibility/
@@ -41,7 +41,7 @@ sort_title: "accessibility"
 
 # Accessibility
 
-Making accessible applications is important and we're happy to introduce new functionality to [Devtron](https://electron.atom.io/devtron) and [Spectron](https://electron.atom.io/spectron) that gives developers the opportunity to make their apps better for everyone.
+Making accessible applications is important and we're happy to introduce new functionality to [Devtron](http://electron.atom.io/devtron) and [Spectron](http://electron.atom.io/spectron) that gives developers the opportunity to make their apps better for everyone.
 
 ---
 

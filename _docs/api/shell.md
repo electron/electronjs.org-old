@@ -1,5 +1,5 @@
 ---
-version: v1.3.5
+version: v1.3.6
 category: API
 redirect_from:
     - /docs/v0.24.0/api/shell/
@@ -62,13 +62,15 @@ The `shell` module has the following methods:
 
 * `fullPath` String
 
-Show the given file in a file manager. If possible, select the file.
+Show the given file in a file manager. If possible, select the file. Returns
+true if the item was successfully shown, false otherwise.
 
 ### `shell.openItem(fullPath)`
 
 * `fullPath` String
 
-Open the given file in the desktop's default manner.
+Open the given file in the desktop's default manner. Returns true if the item
+was successfully opened, false otherwise.
 
 ### `shell.openExternal(url[, options])`
 
@@ -86,6 +88,7 @@ application was available to open the URL, false otherwise.
 * `fullPath` String
 
 Move the given file to trash and returns a boolean status for the operation.
+Returns true if the item was successfully moved to the trash, false otherwise.
 
 ### `shell.beep()`
 
