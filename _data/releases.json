@@ -1,5 +1,23 @@
 [
   {
+    "url": "https://api.github.com/repos/electron/electron/releases/4077337",
+    "assets_url": "https://api.github.com/repos/electron/electron/releases/4077337/assets",
+    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/4077337/assets{?name,label}",
+    "html_url": "https://github.com/electron/electron/releases/tag/v1.3.6",
+    "id": 4077337,
+    "tag_name": "v1.3.6",
+    "target_commitish": "master",
+    "name": "electron v1.3.6",
+    "draft": false,
+    "prerelease": false,
+    "created_at": "2016-09-14T05:36:11Z",
+    "published_at": "2016-09-14T07:18:41Z",
+    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v1.3.6",
+    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v1.3.6",
+    "body": "Changelog:\r\n\r\n* Add `devtools` option to `webPreferences`. [#7096](https://github.com/electron/electron/issues/7096)\r\n* Add return values for `shell.showItemInFolder` and `shell.openItem`. [#7182](https://github.com/electron/electron/issues/7182)\r\n* Fix context menu not working for pepper flash. [#7110](https://github.com/electron/electron/issues/7110)\r\n* Fix asar archives not working after `execSync` throws. [#7116](https://github.com/electron/electron/issues/7116)\r\n* Fix exception when accessing `process.stdin` in renderer process. [#7130](https://github.com/electron/electron/issues/7130)\r\n* Fix `<webview>` loading host URL when `src` is empty. [#7146](https://github.com/electron/electron/issues/7146)\r\n* Fix videos unable to be loaded in asar archives. [#7123](https://github.com/electron/electron/issues/7123)\r\n* Fix wrong judge on in-page navigation when `history.replaceState` is used. [#7175](https://github.com/electron/electron/issues/7175)\r\n\r\n__macOS__\r\n\r\n* Add `userInfo` parameter to `ready` event of `app`. [#7053](https://github.com/electron/electron/issues/7053)\r\n* Add support for `titleBarStyle: 'hidden-inset'` on OS X 10.9. [#7077](https://github.com/electron/electron/issues/7077)\r\n* Fix hanging when showing a dialog when a modal window is being closed. [#7130](https://github.com/electron/electron/issues/7131)\r\n",
+    "version": "1.3.6"
+  },
+  {
     "url": "https://api.github.com/repos/electron/electron/releases/4026164",
     "assets_url": "https://api.github.com/repos/electron/electron/releases/4026164/assets",
     "upload_url": "https://uploads.github.com/repos/electron/electron/releases/4026164/assets{?name,label}",
@@ -520,23 +538,5 @@
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.36.12",
     "body": "Changelog:\r\n\r\n* Fix occasional exception when using `remote` module.\r\n\r\n__Windows__\r\n\r\n* Fix crash when showing notifications while notifications are disabled.\r\n",
     "version": "0.36.12"
-  },
-  {
-    "url": "https://api.github.com/repos/electron/electron/releases/2804269",
-    "assets_url": "https://api.github.com/repos/electron/electron/releases/2804269/assets",
-    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/2804269/assets{?name,label}",
-    "html_url": "https://github.com/electron/electron/releases/tag/v0.37.2",
-    "id": 2804269,
-    "tag_name": "v0.37.2",
-    "target_commitish": "master",
-    "name": "electron v0.37.2",
-    "draft": false,
-    "prerelease": false,
-    "created_at": "2016-03-14T08:22:09Z",
-    "published_at": "2016-03-14T11:21:55Z",
-    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.37.2",
-    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.37.2",
-    "body": "Changelog:\r\n\r\n* Add `activeMatchOrdinal` property in the `result` object of `found-in-page` event.\r\n* Fix notifications not showing.\r\n* Fix the main process hanging on exit.\r\n",
-    "version": "0.37.2"
   }
 ]
