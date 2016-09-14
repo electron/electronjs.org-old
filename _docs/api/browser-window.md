@@ -1,5 +1,5 @@
 ---
-version: v1.3.5
+version: v1.3.6
 category: API
 redirect_from:
     - /docs/v0.24.0/api/browser-window/
@@ -263,10 +263,10 @@ Possible values of the `titleBarStyle` option are:
   the top left.
 * `hidden-inset` results in a hidden title bar with an alternative look
   where the traffic light buttons are slightly more inset from the window edge.
-  It is not supported on macOS 10.9 Mavericks, where it falls back to `hidden`.
 
 The `webPreferences` option is an object that can have the following properties:
 
+* `devTools` Boolean - Whether to enable DevTools. If it is set to `false`, can not use `BrowserWindow.webContents.openDevTools()` to open DevTools. Default is `true`.
 * `nodeIntegration` Boolean - Whether node integration is enabled. Default
   is `true`.
 * `preload` String - Specifies a script that will be loaded before other

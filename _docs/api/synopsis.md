@@ -1,5 +1,5 @@
 ---
-version: v1.3.5
+version: v1.3.6
 category: API
 redirect_from:
     - /docs/v0.24.0/api/synopsis/

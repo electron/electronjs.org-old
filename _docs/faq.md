@@ -1,5 +1,5 @@
 ---
-version: v1.3.5
+version: v1.3.6
 category: ignore
 redirect_from:
     - /docs/faq/electron-faq/
