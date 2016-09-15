@@ -13,9 +13,9 @@ gems:
     - jekyll-feed
     - jemoji
 latest_version: 1.4.0
-current_node: 6.3.0
-current_chrome: 52.0.2743.82
-current_v8: 5.2.361.43
+current_node: 6.5.0
+current_chrome: 53.0.2785.113
+current_v8: 5.3.332.37
 sass:
     style: compressed
 available_versions:
