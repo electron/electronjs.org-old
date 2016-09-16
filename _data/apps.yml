@@ -1848,3 +1848,18 @@
     - "programming"
     - "productivity"
   icon: "cycligent.png"
+-
+  name: "Foco"
+  description: "Stay focused and boost productivity with Foco."
+  website: "https://github.com/akashnimare/foco"
+  repository: "https://github.com/akashnimare/foco"
+  keywords:
+    - "Electron"
+    - "menubar"
+    - "productivity"
+    - "focus"
+    - "desktop app"
+    - "tray"
+    - "music"
+  license: "MIT"
+  icon: "foco.png"
