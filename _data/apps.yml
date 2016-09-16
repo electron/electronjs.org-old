@@ -1868,3 +1868,11 @@
   description: "Win Diners for Life. Know and serve them better with the all-in-one restaurant software suite."
   website: "https://strawberrypos.com"
   icon: "strawberry-pos.png"
+-
+  name: "Mixmax"
+  description: "See every action on your emails in real-time. Compose anywhere."
+  website: "https://mixmax.com/download"
+  keywords:
+    - "email"
+    - "analytics"
+  icon: "mixmax.png"
