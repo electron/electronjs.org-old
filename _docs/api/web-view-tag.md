@@ -1,5 +1,5 @@
 ---
-version: v1.3.6
+version: v1.4.0
 category: API
 redirect_from:
     - /docs/v0.24.0/api/web-view-tag/
@@ -688,10 +688,9 @@ Returns:
 
 * `result` Object
   * `requestId` Integer
-  * `finalUpdate` Boolean - Indicates if more responses are to follow.
-  * `activeMatchOrdinal` Integer (optional) - Position of the active match.
-  * `matches` Integer (optional) - Number of Matches.
-  * `selectionArea` Object (optional) - Coordinates of first match region.
+  * `activeMatchOrdinal` Integer - Position of the active match.
+  * `matches` Integer - Number of Matches.
+  * `selectionArea` Object - Coordinates of first match region.
 
 Fired when a result is available for
 [`webview.findInPage`](http://electron.atom.io/docs/api/web-view-tag#webviewtagfindinpage) request.
@@ -699,7 +698,7 @@ Fired when a result is available for
 ```javascript
 const webview = document.getElementById('foo')
 webview.addEventListener('found-in-page', (e) => {
-  if (e.result.finalUpdate) webview.stopFindInPage('keepSelection')
+  webview.stopFindInPage('keepSelection')
 })
 
 const requestId = webview.findInPage('test')
