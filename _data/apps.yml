@@ -1876,3 +1876,17 @@
     - "email"
     - "analytics"
   icon: "mixmax.png"
+-
+  name: "Firebase Admin"
+  description: "A Firebase data management tool."
+  website: "https://firebaseadmin.com"
+  repository: "https://github.com/codefoxes/firebase-admin"
+  keywords:
+    - "Firebase"
+    - "Electron"
+    - "database"
+    - "management"
+    - "user interface"
+    - "admin ui"
+  license: "GPLv3"
+  icon: "firebase-admin.png"
