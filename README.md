@@ -7,7 +7,7 @@ The [website](http://electron.atom.io) for [Electron](https://github.com/electro
 
 ### Build
 
-This is a [Jekyll](http://jekyllrb.com) site hosted on [GitHub Pages](http://pages.github.com). To build a Jekyll site you'll need a few things on your system so double check the [Jekyll requirements](http://jekyllrb.com/docs/installation/#requirements).
+This is a [Jekyll](https://jekyllrb.com) site hosted on [GitHub Pages](https://pages.github.com). To build a Jekyll site you'll need a few things on your system so double check the [Jekyll requirements](https://jekyllrb.com/docs/installation/#requirements).
 
 Follow these steps to copy this repository to your computer and build the site:
 
@@ -24,7 +24,7 @@ This site contains the latest version of Electron docs, recent release change lo
 
 Each of these are updated here when a new Electron is released. They're done so with the command line interface detailed below.
 
- You'll need [Node.js](http://www.nodejs.org/download) installed on your system in order to use the CLI. Then you can install the dependencies:
+ You'll need [Node.js](https://www.nodejs.org) installed on your system in order to use the CLI. Then you can install the dependencies:
 
 ```bash
 $ cd electron.atom.io
@@ -88,4 +88,4 @@ Thanks for contributing to the site! Checkout the [contributing documentation](C
 
 ### License
 
-[MIT](license.md)
+[MIT](LICENSE.md)
