@@ -7,14 +7,14 @@ As a language with garbage collection, JavaScript frees users from managing
 resources manually. But because Electron hosts this environment, it has to be
 very careful avoiding both memory and resources leaks.
 
-This post introduces what weak references are and how they are used to manage
-resources in Electron.
+This post introduces the concept of weak references and how they are used to 
+manage resources in Electron.
 
 ---
 
 ## Weak references
 
-In JavaScript, whenever you assign an object to a variable, you are adding an
+In JavaScript, whenever you assign an object to a variable, you are adding a
 reference to the object. As long as there is a reference to the object, it will
 always be kept in memory. Once all references to the object are gone, i.e. there
 are no longer variables storing the object, the JavaScript engine will recoup
@@ -25,7 +25,7 @@ without effecting whether it will be garbage collected or not. You will also get
 notified when the object is garbage collected. It then becomes possible to
 manage resources with JavaScript.
 
-Using the `NativeImage` class in Electron as example, every time you call the
+Using the `NativeImage` class in Electron as an example, every time you call the
 `nativeImage.create()` API, a `NativeImage` instance is returned and it is
 storing the image data in C++. Once you are done with the instance and the
 JavaScript engine (V8) has garbage collected the object, code in C++ will be
@@ -96,19 +96,19 @@ for (let i = 0; i < 10000; ++i) {
 }
 ```
 
-The resource management in the `remote` module is simple, whenever an object is
+The resource management in the `remote` module is simple. Whenever an object is
 requested, a message is sent to the main process and Electron will store
-the object in a map and assign an ID for it and then send the ID back to the
-renderer process. In the renderer process the `remote` module will receive
+the object in a map and assign an ID for it, then send the ID back to the
+renderer process. In the renderer process, the `remote` module will receive
 the ID and wrap it with a proxy object and when the proxy object is garbage
 collected, a message will be sent to the main process to free the object.
 
-Using `remote.require` API as example, a simplified implementation looks like
-this:
+Using `remote.require` API as an example, a simplified implementation looks 
+like this:
 
 ```javascript
 remote.require = function (name) {
-  // Tell the main process to return the meta data of the module.
+  // Tell the main process to return the metadata of the module.
   const meta = ipcRenderer.sendSync('REQUIRE', name)
   // Create a proxy object.
   const object = metaToValue(meta)
@@ -131,7 +131,7 @@ ipcMain.on('REQUIRE', function (event, name) {
   const object = require(name)
   // Add a reference to the object.
   map[++id] = object
-  // Convert the object to meta data.
+  // Convert the object to metadata.
   event.returnValue = valueToMeta(id, object)
 })
 
@@ -170,11 +170,11 @@ a remote object with the same ID, the previous remote object will be returned
 instead of creating a new one.
 
 This is not possible with the API in JavaScript core. Using the normal map
-to cache objects will prevent V8 to garbage collect the objects, while the
+to cache objects will prevent V8 from garbage collecting the objects, while the
 [WeakMap][WeakMap] class can only use objects as weak keys.
 
 To solve this, a map type with values as weak references is added, which is
-perfect for caching objects with IDs. And now the `remote.require` looks like
+perfect for caching objects with IDs. Now the `remote.require` looks like
 this:
 
 ```javascript
