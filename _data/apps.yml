@@ -1890,3 +1890,16 @@
     - "admin ui"
   license: "GPLv3"
   icon: "firebase-admin.png"
+-
+  name: "ANote"
+  description: "A Simple Friendly Markdown Note."
+  website: "https://github.com/AnotherNote/anote"
+  repository: "https://github.com/AnotherNote/anote"
+  keywords:
+    - "Electron"
+    - "React"
+    - "Markdown"
+    - "Note"
+    - "Redux"
+    - "Codemirror"
+  icon: "anote.png"
