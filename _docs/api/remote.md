@@ -1,5 +1,5 @@
 ---
-version: v1.4.0
+version: v1.4.1
 category: API
 redirect_from:
     - /docs/v0.24.0/api/remote/
@@ -61,7 +61,7 @@ let win = new BrowserWindow({width: 800, height: 600})
 win.loadURL('https://github.com')
 ```
 
-**Note:** for the reverse (access the renderer process from the main process),
+**Note:** For the reverse (access the renderer process from the main process),
 you can use [webContents.executeJavascript](http://electron.atom.io/docs/api/web-contents#webcontentsexecutejavascriptcode-usergesture-callback).
 
 ## Remote Objects
@@ -78,8 +78,12 @@ process. Instead, it created a `BrowserWindow` object in the main process and
 returned the corresponding remote object in the renderer process, namely the
 `win` object.
 
-Please note that only [enumerable properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties) which are present when the remote object is first referenced are
-accessible via remote.
+**Note:** Only [enumerable properties][enumerable-properties] which are present
+when the remote object is first referenced are accessible via remote.
+
+**Note:** Arrays and Buffers are copied over IPC when accessed via the `remote`
+module. Modifying them in the renderer process does not modify them in the main
+process and vice versa.
 
 ## Lifetime of Remote Objects
 
@@ -202,3 +206,4 @@ The `process` object in the main process. This is the same as
 `remote.getGlobal('process')` but is cached.
 
 [rmi]: http://en.wikipedia.org/wiki/Java_remote_method_invocation
+[enumerable-properties]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties
