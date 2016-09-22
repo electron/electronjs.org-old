@@ -1,5 +1,5 @@
 ---
-version: v1.4.0
+version: v1.4.1
 category: API
 redirect_from:
     - /docs/v0.24.0/api/web-contents/
@@ -186,7 +186,7 @@ Returns:
 * `url` String
 * `frameName` String
 * `disposition` String - Can be `default`, `foreground-tab`, `background-tab`,
-  `new-window` and `other`.
+  `new-window`, `save-to-disk` and `other`.
 * `options` Object - The options which will be used for creating the new
   `BrowserWindow`.
 
@@ -245,7 +245,12 @@ are clicked or when the DOM `hashchange` event is triggered.
 
 #### Event: 'crashed'
 
-Emitted when the renderer process has crashed.
+Returns:
+
+* `event` Event
+* `killed` Boolean
+
+Emitted when the renderer process crashes or is killed.
 
 #### Event: 'plugin-crashed'
 
@@ -1187,6 +1192,11 @@ Only values between 1 and 60 are accepted.
 #### `contents.getFrameRate()`
 
 If *offscreen rendering* is enabled returns the current frame rate.
+
+#### `contents.invalidate()`
+
+If *offscreen rendering* is enabled invalidates the frame and generates a new
+one through the `'paint'` event.
 
 ### Instance Properties
 

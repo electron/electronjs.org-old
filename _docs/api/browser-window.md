@@ -1,5 +1,5 @@
 ---
-version: v1.4.0
+version: v1.4.1
 category: API
 redirect_from:
     - /docs/v0.24.0/api/browser-window/
@@ -489,6 +489,10 @@ Emitted when scroll wheel event phase has begun.
 #### Event: 'scroll-touch-end' _macOS_
 
 Emitted when scroll wheel event phase has ended.
+
+#### Event: 'scroll-touch-edge' _macOS_
+
+Emitted when scroll wheel event phase filed upon reaching the edge of element.
 
 #### Event: 'swipe' _macOS_
 
@@ -1037,7 +1041,7 @@ menu bar.
 
 * `progress` Double
 * `options` Object (optional)
-  * `mode` String _Windows_ - Mode for the progres bar (`none`, `normal`, `indeterminate`, `error`, or `paused`)
+  * `mode` String _Windows_ - Mode for the progress bar (`none`, `normal`, `indeterminate`, `error`, or `paused`)
 
 Sets progress value in progress bar. Valid range is [0, 1.0].
 
