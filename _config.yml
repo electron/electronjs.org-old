@@ -15,7 +15,7 @@ gems:
 latest_version: 1.4.1
 current_node: 6.5.0
 current_chrome: 53.0.2785.113
-current_v8: 5.3.332.37
+current_v8: 5.3.332.45
 sass:
     style: compressed
 available_versions:
