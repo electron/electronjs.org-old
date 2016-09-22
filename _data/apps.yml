@@ -1917,3 +1917,12 @@
     - "Forecast"
   license: "MIT"
   icon: "temps.png"
+-
+  name: "Amium"
+  description: "A work collaboration product that brings conversation to your files."
+  website: "https://www.amium.com"
+  keywords:
+    - "productivity"
+    - "chat"
+    - "file sync"
+  icon: "amium-icon.png"
