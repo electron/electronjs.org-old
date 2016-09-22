@@ -1,5 +1,23 @@
 [
   {
+    "url": "https://api.github.com/repos/electron/electron/releases/4199812",
+    "assets_url": "https://api.github.com/repos/electron/electron/releases/4199812/assets",
+    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/4199812/assets{?name,label}",
+    "html_url": "https://github.com/electron/electron/releases/tag/v1.4.1",
+    "id": 4199812,
+    "tag_name": "v1.4.1",
+    "target_commitish": "master",
+    "name": "electron v1.4.1",
+    "draft": false,
+    "prerelease": false,
+    "created_at": "2016-09-22T10:05:58Z",
+    "published_at": "2016-09-22T11:25:45Z",
+    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v1.4.1",
+    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v1.4.1",
+    "body": "Changelog:\r\n\r\n* Add `guestinstance` attribute to `<webview>` tag which allows moving `WebContents` betweens `<webview>`s. [#7157](https://github.com/electron/electron/pull/7157)\r\n* Add `ses.getBlobData(identifier, callback)` API to read uploaded data in protocol. [#6941](https://github.com/electron/electron/pull/6941)\r\n* Add `contents.invalidate()` API. [#7062](https://github.com/electron/electron/pull/7062)\r\n* Add `killed` parameter for `crashed` and `gpu-process-crashed` events. [#7241](https://github.com/electron/electron/pull/7241)\r\n* Add `GOOGLE_API_KEY` environment variable to specify custom Google API key. [#7276](https://github.com/electron/electron/pull/7276)\r\n* Fix exception when accessing remote functions. [#7209](https://github.com/electron/electron/pull/7209)\r\n* Fix wrong filename when downloading from URL with trailing slash. [#7169](https://github.com/electron/electron/pull/7169)\r\n* Fix `beginFrameSubscription` not working correctly for HiDPI screens. [#7163](https://github.com/electron/electron/pull/7163)\r\n* Fix offscreen renderer not resizing. [#7062](https://github.com/electron/electron/pull/7062)\r\n* Fix `net::ERR_INSECURE_RESPONSE` error when visiting some websites. [#7221](https://github.com/electron/electron/pull/7221)\r\n\r\n__Linux__\r\n\r\n* Add support for `kioclient`, `kioclient5` and `trash-cli` in `shell.moveItemToTrash(path)` API. [#7178](https://github.com/electron/electron/pull/7178)\r\n\r\n__macOS__\r\n\r\n* Add `scroll-touch-edge` event for `BrowserWindow` and fix regressions of `scroll-touch-begin/end` events. [#7239](https://github.com/electron/electron/pull/7239)\r\n\r\n__Windows__\r\n\r\n* Use `Ctrl+Y` as the default accelerator of `redo` menu role. [#7236](https://github.com/electron/electron/pull/7236)\r\n* Add `getAccentColor` method and `accent-color-changed` event to `systemPreferences` module. [#7173](https://github.com/electron/electron/pull/7173)\r\n",
+    "version": "1.4.1"
+  },
+  {
     "url": "https://api.github.com/repos/electron/electron/releases/4138666",
     "assets_url": "https://api.github.com/repos/electron/electron/releases/4138666/assets",
     "upload_url": "https://uploads.github.com/repos/electron/electron/releases/4138666/assets{?name,label}",
@@ -520,23 +538,5 @@
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.37.4",
     "body": "Changelog:\r\n\r\n* Upgrade to Node v5.10.0.\r\n* Remove the white flash when loading pages.\r\n* The default app is now packaged as `asar` archive.\r\n* The `atom.asar` in the resources directory is renamed to `electron.asar`.\r\n* Disable node integration in child windows opened with `window.open` when node integration is disabled in parent window.\r\n* Add `app.setAsDefaultProtocolClient(protocol)` and `app.removeAsDefaultProtocolClient(protocol)` APIs.\r\n* Fix crash when sending IPC messages.\r\n* Fix wrong `disposition` parameter of `new-window` event for certain types of background types.\r\n* Fix exception when calling remote method while not storing its remote object.\r\n\r\n__OS X__\r\n\r\n* Add `swipe` event to `BrowserWindow`.\r\n* Fix `backgroundColor` option of `BrowserWindow` not working.\r\n",
     "version": "0.37.4"
-  },
-  {
-    "url": "https://api.github.com/repos/electron/electron/releases/2894277",
-    "assets_url": "https://api.github.com/repos/electron/electron/releases/2894277/assets",
-    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/2894277/assets{?name,label}",
-    "html_url": "https://github.com/electron/electron/releases/tag/v0.37.3",
-    "id": 2894277,
-    "tag_name": "v0.37.3",
-    "target_commitish": "master",
-    "name": "electron v0.37.3",
-    "draft": false,
-    "prerelease": false,
-    "created_at": "2016-03-27T03:16:12Z",
-    "published_at": "2016-03-27T04:51:16Z",
-    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.37.3",
-    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.37.3",
-    "body": "Changelog:\r\n\r\n* `<webview>`'s background is now transparent by default.\r\n* Add `NativeImage.getNativeHandle()` API.\r\n* Add `-i/--interactive` flag to default app that starts a repl for the main process. \r\n* Fix occasional exception when using `remote` module.\r\n* Fix devtools workspace not working.\r\n* Fix exception when `accelerator` is undefined when calling `Menu.buildFromTemplate`.\r\n\r\n__Windows__\r\n\r\n* Automatically set Application User Model ID when Squirrel.Windows is used.\r\n* Fix crash when showing notifications while notifications are disabled.\r\n",
-    "version": "0.37.3"
   }
 ]
