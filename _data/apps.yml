@@ -1926,3 +1926,20 @@
     - "chat"
     - "file sync"
   icon: "amium-icon.png"
+-
+  name: "(Un)colored"
+  description: "Next generation desktop rich content editor that saves documents with themes. HTML & Markdown compatible. For Windows, OS X & Linux."
+  website: "https://n457.github.io/Uncolored/"
+  repository: "https://github.com/n457/Uncolored"
+  keywords:
+    - "rich"
+    - "text"
+    - "content"
+    - "editor"
+    - "themes"
+    - "html"
+    - "markdown"
+    - "electron"
+  license: "Apache License 2.0"
+  icon: "uncolored.png"
+  featuredOnHomepage: true
