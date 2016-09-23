@@ -1952,3 +1952,13 @@
     - "electron"
   license: "Apache License 2.0"
   icon: "uncolored.png"
+-
+  name: "quickcalc"
+  description: "Menubar Calculator"
+  website: "https://github.com/Cwoodall6/quickcalc"
+  repository: "https://github.com/Cwoodall6/quickcalc"
+  keywords:
+    - "calculator"
+    - "menubar"
+  license: "MIT"
+  icon: "qickcalcicon.png"
