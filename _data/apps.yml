@@ -1890,3 +1890,14 @@
     - "admin ui"
   license: "GPLv3"
   icon: "firebase-admin.png"
+  -
+  name: "Soube"
+  description: "Simple music player."
+  website: "https://soube.diegomolina.cl"
+  repository: "https://github.com/DracotMolver/Soube"
+  keywords:
+    - "Music"
+    - "Music player"
+    - "Electron"
+  license: "MIT"
+  icon: "soube.png"
