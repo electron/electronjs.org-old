@@ -1890,7 +1890,7 @@
     - "admin ui"
   license: "GPLv3"
   icon: "firebase-admin.png"
-  -
+-
   name: "Soube"
   description: "Simple music player."
   website: "http://soube.diegomolina.cl"
