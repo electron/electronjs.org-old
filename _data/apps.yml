@@ -1926,3 +1926,13 @@
     - "chat"
     - "file sync"
   icon: "amium-icon.png"
+-
+  name: "Soube"
+  description: "Simple music player."
+  website: "http://soube.diegomolina.cl"
+  repository: "https://github.com/DracotMolver/Soube"
+  keywords:
+    - "Music"
+    - "Music player"
+  license: "MIT"
+  icon: "soube.png"
