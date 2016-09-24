@@ -65,3 +65,11 @@ Add the meetup to the list by editing [_data/meetups.yml](/_data/meetups.yml).
 ## Documentation
 
 The documentation on this site is pulled directly from the `electron/electron` repository's `docs` directory. Contributions to the documentation should be made there: [electron/electron](https://github.com/electron/electron/tree/master/docs).
+
+## Blog Posts
+
+A few guidelines to keep in mind when publishing a blog post:
+
+* Posts should normally be published on Tuesday mornings (Pacific time) for maximum social reach.
+* Make sure the date in the filename is today's date
+* Tweet about it once the post is live!
