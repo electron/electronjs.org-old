@@ -1962,3 +1962,12 @@
     - "menubar"
   license: "MIT"
   icon: "qickcalcicon.png"
+-
+  name: "Ling"
+  description: "REST Client"
+  website: "https://github.com/talhasch/ling"
+  keywords:
+    - "REST Client"
+    - "HTTP"
+    - "Developer Tool"
+  icon: "ling.png"
