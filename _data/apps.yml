@@ -1966,8 +1966,10 @@
   name: "Ling"
   description: "REST Client"
   website: "https://github.com/talhasch/ling"
+  repository: "https://github.com/talhasch/ling"
   keywords:
     - "REST Client"
     - "HTTP"
     - "Developer Tool"
+  license: "MIT"
   icon: "ling.png"
