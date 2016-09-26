@@ -32,10 +32,10 @@ Here's an excerpt from the schema that describes the `BrowserWindow` class:
   slug: 'browser-window',
   websiteUrl: 'http://electron.atom.io/docs/api/browser-window',
   repoUrl: 'https://github.com/electron/electron/blob/v1.4.0/docs/api/browser-window.md',
-  staticMethods: [],
-  instanceMethods: [],
-  instanceProperties: [],
-  instanceEvents: []
+  staticMethods: [...],
+  instanceMethods: [...],
+  instanceProperties: [...],
+  instanceEvents: [...]
 }
 ```
 
