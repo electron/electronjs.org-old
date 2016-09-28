@@ -86,7 +86,7 @@ The [electron-docs-linter](https://github.com/electron/electron-docs-linter)
 is a new development dependency of the `electron/electron` repository.
 It is a command-line tool that lints all the markdown files and enforces the
 rules of the styleguide. If errors are found, they are listed and the release
-process is halted. If the API docs are valid, the `elecron-json.api` file
+process is halted. If the API docs are valid, the `electron-json.api` file
 is created and
 [uploaded to GitHub](https://github.com/electron/electron/releases/tag/v1.4.1)
 as part of the Electron release.
