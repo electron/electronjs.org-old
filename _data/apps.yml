@@ -1982,3 +1982,12 @@
     - "Developer Tool"
   license: "MIT"
   icon: "ling.png"
+-
+  name: "Shortexts"
+  description: "Shortcuts for texts you copy frequently, folders and emojis"
+  website: "http://shortexts.com/"
+  keywords:
+    - "Productivity tool"
+    - "OSX "
+  license: "MIT"
+  icon: "shortexts.png"
