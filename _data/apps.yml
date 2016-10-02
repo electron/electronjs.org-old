@@ -2002,3 +2002,14 @@
     - "Images Optimizer"
     - "Developer Tool"
   icon: "front-end-box.png"
+-
+  name: "Flex Browser"
+  description: "Hackable and modular web browser!"
+  website: "http://www.cognizantsoftwaresolutions.ca/flex"
+  keywords:
+    - "Web Browser"
+    - "Hackable"
+    - "Modular"
+    - "Internet"
+    - "System"
+  icon: "flex.png"
