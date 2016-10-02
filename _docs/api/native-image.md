@@ -1,5 +1,5 @@
 ---
-version: v1.4.0
+version: v1.4.1
 category: API
 redirect_from:
     - /docs/v0.24.0/api/native-image/
@@ -162,7 +162,9 @@ Creates an empty `NativeImage` instance.
 
 * `path` String
 
-Creates a new `NativeImage` instance from a file located at `path`.
+Creates a new `NativeImage` instance from a file located at `path`. This method
+returns an empty image if the `path` does not exist, cannot be read, or is not
+a valid image.
 
 ```javascript
 const nativeImage = require('electron').nativeImage

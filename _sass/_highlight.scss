@@ -2,7 +2,7 @@
 .highlight .c { color: #999988; font-style: italic } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
 .highlight .k { color: #000000; font-weight: bold } /* Keyword */
-.highlight .o { color: #000000; font-weight: bold } /* Operator */
+// .highlight .o { color: #000000; font-weight: bold } /* Operator */
 .highlight .cm { color: #999988; font-style: italic } /* Comment.Multiline */
 .highlight .cp { color: #999999; font-weight: bold; font-style: italic } /* Comment.Preproc */
 .highlight .c1 { color: #999988; font-style: italic } /* Comment.Single */
@@ -17,7 +17,7 @@
 .highlight .gs { font-weight: bold } /* Generic.Strong */
 .highlight .gu { color: #aaaaaa } /* Generic.Subheading */
 .highlight .gt { color: #aa0000 } /* Generic.Traceback */
-.highlight .kc { color: #000000; font-weight: bold } /* Keyword.Constant */
+.highlight .kc { color: #000000; } /* Keyword.Constant */
 .highlight .kd { color: #000000; font-weight: bold } /* Keyword.Declaration */
 .highlight .kn { color: #000000; font-weight: bold } /* Keyword.Namespace */
 .highlight .kp { color: #000000; font-weight: bold } /* Keyword.Pseudo */
@@ -33,7 +33,7 @@
 .highlight .ni { color: #800080 } /* Name.Entity */
 .highlight .ne { color: #990000; font-weight: bold } /* Name.Exception */
 .highlight .nf { color: #990000; font-weight: bold } /* Name.Function */
-.highlight .nl { color: #990000; font-weight: bold } /* Name.Label */
+// .highlight .nl { color: #990000; font-weight: bold } /* Name.Label */
 .highlight .nn { color: #555555 } /* Name.Namespace */
 .highlight .nt { color: #000080 } /* Name.Tag */
 .highlight .nv { color: #008080 } /* Name.Variable */

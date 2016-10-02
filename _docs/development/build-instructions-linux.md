@@ -1,5 +1,5 @@
 ---
-version: v1.4.0
+version: v1.4.1
 category: Development
 redirect_from:
     - /docs/v0.24.0/development/build-instructions-linux/
@@ -146,7 +146,7 @@ After building is done, you can find the `electron` debug binary under `out/D`.
 To clean the build files:
 
 ```bash
-$ ./script/clean.py
+$ npm run clean
 ```
 
 ## Troubleshooting

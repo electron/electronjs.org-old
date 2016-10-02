@@ -1,5 +1,5 @@
 ---
-version: v1.4.0
+version: v1.4.1
 category: Development
 redirect_from:
     - /docs/v0.24.0/development/build-instructions-windows/
@@ -116,6 +116,14 @@ To generate a Visual Studio project, you can pass the `--msvs` parameter:
 
 ```powershell
 $ python script\bootstrap.py --msvs
+```
+
+## Cleaning
+
+To clean the build files:
+
+```powershell
+$ npm run clean
 ```
 
 ## Tests

@@ -1,5 +1,5 @@
 ---
-version: v1.4.0
+version: v1.4.1
 category: API
 redirect_from:
     - /docs/v0.24.0/api/web-view-tag/
@@ -255,6 +255,21 @@ The full list of supported feature strings can be found in the
 A list of strings which specifies the blink features to be disabled separated by `,`.
 The full list of supported feature strings can be found in the
 [RuntimeEnabledFeatures.in][blink-feature-string] file.
+
+### `guestinstance`
+
+```html
+<webview src="https://www.github.com/" guestinstance="3"></webview>
+```
+
+A value that links the webview to a specific webContents. When a webview
+first loads a new webContents is created and this attribute is set to its
+instance identifier. Setting this attribute on a new or existing webview
+connects it to the existing webContents that currently renders in a different
+webview.
+
+The existing webview will see the `destroy` event and will then create a new
+webContents when a new url is loaded.
 
 ## Methods
 
@@ -712,7 +727,7 @@ Returns:
 * `url` String
 * `frameName` String
 * `disposition` String - Can be `default`, `foreground-tab`, `background-tab`,
-  `new-window` and `other`.
+  `new-window`, `save-to-disk` and `other`.
 * `options` Object - The options which should be used for creating the new
   `BrowserWindow`.
 

@@ -1,5 +1,5 @@
 ---
-version: v1.4.0
+version: v1.4.1
 category: API
 redirect_from:
     - /docs/v0.24.0/api/protocol/
@@ -135,6 +135,8 @@ The `uploadData` is an array of `data` objects:
 * `data` Object
   * `bytes` Buffer - Content being sent.
   * `file` String - Path of file being uploaded.
+  * `blobUUID` String - UUID of blob data. Use [ses.getBlobData](http://electron.atom.io/docs/api/session#sesgetblobdataidentifier-callback) method
+    to retrieve the data.
 
 To handle the `request`, the `callback` should be called with either the file's
 path or an object that has a `path` property, e.g. `callback(filePath)` or

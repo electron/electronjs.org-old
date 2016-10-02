@@ -1,30 +1,25 @@
-var updateDownloadLink = function () {
-  var platform = uaParserJs().os.name
-  var releaseServer = 'https://electron-api-demos.githubapp.com/updates/'
-  var assetName
-  var osLabel
-
-  if (/mac/i.test(platform)) {
-    assetName = 'electron-api-demos-mac.zip'
-    osLabel = 'Mac'
-  } else if (/windows/i.test(platform)) {
-    assetName = 'ElectronAPIDemosSetup.exe'
-    osLabel = 'Windows'
-  } else if (/ubuntu|linux/i.test(platform)) {
-    assetName = 'electron-api-demos-linux.zip'
-    osLabel = 'Linux'
-  } else {
-    return
-  }
-
-  document.querySelector('#download-latest-release')
-    .setAttribute('href', releaseServer + assetName)
-
-  document.querySelector('#download-latest-release .label')
-    .textContent = 'Download for ' + osLabel
-
-  document.querySelector('#download-alternatives')
-    .style.display = 'inline-block'
+// All ems with platform content should be styled as platform label
+function fixPlatformLabels () {
+  var ems = document.querySelectorAll('em')
+  Array.prototype.forEach.call(ems, function (em) {
+    if (em.textContent === 'macOS' || em.textContent === 'Linux' || em.textContent === 'Windows') {
+      em.classList.add('platform-label')
+    }
+  })
 }
 
-document.addEventListener('DOMContentLoaded', updateDownloadLink)
+// Override incorrect styling of string templates and colons in objects
+function fixSyntaxHighlighting () {
+  var sts = document.querySelectorAll('.err')
+  Array.prototype.forEach.call(sts, function (st) {
+    console.log('wtf')
+    if (st.textContent === '`' || st.textContent === ':') {
+      st.classList.remove('err')
+    }
+  })
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  fixPlatformLabels()
+  fixSyntaxHighlighting()
+})
