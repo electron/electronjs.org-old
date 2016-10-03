@@ -60,7 +60,7 @@ And here's an example of a method description, in this case the
 ## Using the new data
 
 To make it easy for developers to use this structured data in their projects,
-we've created [electron-docs-api](https://npmjs.com/electron-docs-api), a small
+we've created [electron-docs-api](https://www.npmjs.com/package/electron-api-docs), a small
 npm package that is published automatically whenever there's a new Electron
 release.
 
