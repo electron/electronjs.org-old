@@ -2013,3 +2013,13 @@
     - "Internet"
     - "System"
   icon: "flex.png"
+-
+  name: "Wallapatta"
+  description: "Markdown like editor with a layout inspired by Edward Tufte"
+  website: "http://wallapatta.github.io/"
+  repository: "https://github.com/wallapatta/wallapatta"
+  keywords:
+    - "editor"
+    - "markdown"
+  license: "MIT"
+  icon: "wallapatta.png"
