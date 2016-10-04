@@ -1,5 +1,5 @@
 ---
-version: v1.4.1
+version: v1.4.2
 category: API
 redirect_from:
     - /docs/v0.24.0/api/desktop-capturer/
@@ -36,7 +36,7 @@ redirect_from:
     - /docs/latest/api/desktop-capturer/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/desktop-capturer.md'
 excerpt: "Access information about media sources that can be used to capture audio and
-    video from the desktop using the <a href=\"https://developer.mozilla.org/en/docs/Web/API/Navigator/getUserMedia\"><code>navigator.webkitGetUserMedia</code></a> API."
+    video from the desktop using the [<code>navigator.webkitGetUserMedia</code>] API."
 title: "desktopCapturer"
 sort_title: "desktopcapturer"
 ---
@@ -99,7 +99,7 @@ The `desktopCapturer` module has the following methods:
 ### `desktopCapturer.getSources(options, callback)`
 
 * `options` Object
-  * `types` Array - An array of String that lists the types of desktop sources
+  * `types` String[] - An array of Strings that lists the types of desktop sources
     to be captured, available types are `screen` and `window`.
   * `thumbnailSize` Object (optional) - The suggested size that the media source
     thumbnail should be scaled to, defaults to `{width: 150, height: 150}`.

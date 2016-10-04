@@ -1,5 +1,5 @@
 ---
-version: v1.4.1
+version: v1.4.2
 category: API
 redirect_from:
     - /docs/v0.24.0/api/dialog/
@@ -71,8 +71,8 @@ The `dialog` module has the following methods:
   * `defaultPath` String
   * `buttonLabel` String - Custom label for the confirmation button, when
     left empty the default label will be used.
-  * `filters` Array
-  * `properties` Array - Contains which features the dialog should use, can
+  * `filters` String[]
+  * `properties` String[] - Contains which features the dialog should use, can
     contain `openFile`, `openDirectory`, `multiSelections`, `createDirectory`
     and `showHiddenFiles`.
 * `callback` Function (optional)
@@ -114,7 +114,7 @@ shown.
   * `defaultPath` String
   * `buttonLabel` String - Custom label for the confirmation button, when
     left empty the default label will be used.
-  * `filters` Array
+  * `filters` String[]
 * `callback` Function (optional)
 
 On success this method returns the path of the file chosen by the user,
@@ -133,7 +133,7 @@ will be passed via `callback(filename)`
   * `type` String - Can be `"none"`, `"info"`, `"error"`, `"question"` or
   `"warning"`. On Windows, "question" displays the same icon as "info", unless
   you set an icon using the "icon" option.
-  * `buttons` Array - Array of texts for buttons. On Windows, an empty array
+  * `buttons` String[] - Array of texts for buttons. On Windows, an empty array
     will result in one button labeled "OK".
   * `defaultId` Integer - Index of the button in the buttons array which will
     be selected by default when the message box opens.

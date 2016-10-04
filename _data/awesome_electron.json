@@ -308,13 +308,6 @@
     "subcategory": "open_source"
   },
   {
-    "name": "Fireball",
-    "href": "https://github.com/fireball-x/editor-framework",
-    "description": "Hackable game editor for creating mobile and HTML5 games.",
-    "category": "apps",
-    "subcategory": "open_source"
-  },
-  {
     "name": "Toby",
     "href": "https://github.com/frankhale/toby",
     "description": "YouTube player.",
@@ -784,6 +777,27 @@
     "subcategory": "open_source"
   },
   {
+    "name": "iStats",
+    "href": "https://github.com/ningt/iStats",
+    "description": "CPU and memory stats on your menubar.",
+    "category": "apps",
+    "subcategory": "open_source"
+  },
+  {
+    "name": "Wire",
+    "href": "https://github.com/wireapp/wire-desktop",
+    "description": "Messenger and calling app.",
+    "category": "apps",
+    "subcategory": "open_source"
+  },
+  {
+    "name": "Ramme",
+    "href": "https://github.com/terkelg/ramme",
+    "description": "Unofficial Instagram app.",
+    "category": "apps",
+    "subcategory": "open_source"
+  },
+  {
     "name": "GitKraken",
     "href": "http://www.gitkraken.com",
     "description": "Git client.",
@@ -871,13 +885,6 @@
     "name": "MockingBot",
     "href": "https://mockingbot.com",
     "description": "Prototyping tool for designing apps.",
-    "category": "apps",
-    "subcategory": "closed_source"
-  },
-  {
-    "name": "Wire",
-    "href": "https://wire.com",
-    "description": "Messenger and calling app.",
     "category": "apps",
     "subcategory": "closed_source"
   },
@@ -976,6 +983,20 @@
     "name": "CrossCloud",
     "href": "https://medium.com/@crosscloud/what-is-new-in-crosscloud-1-0-c00404e7bf9f",
     "description": "Secure sync for multiple cloud storages.",
+    "category": "apps",
+    "subcategory": "closed_source"
+  },
+  {
+    "name": "Discord",
+    "href": "https://discordapp.com",
+    "description": "All-in-one voice and text chat for gamers.",
+    "category": "apps",
+    "subcategory": "closed_source"
+  },
+  {
+    "name": "Cocos Creator",
+    "href": "http://cocos2d-x.org/products#creator",
+    "description": "Game editor for creating web and native games for Cocos2D-x.",
     "category": "apps",
     "subcategory": "closed_source"
   },
@@ -1251,13 +1272,6 @@
     "subcategory": "for_electron"
   },
   {
-    "name": "editor-framework",
-    "href": "https://github.com/fireball-x/editor-framework",
-    "description": "Easily create dockable IDE apps.",
-    "category": "tools",
-    "subcategory": "for_electron"
-  },
-  {
     "name": "ember-electron",
     "href": "https://github.com/felixrieseberg/ember-electron",
     "description": "Build, test, and package Ember apps.",
@@ -1335,6 +1349,13 @@
     "subcategory": "for_electron"
   },
   {
+    "name": "electron-log",
+    "href": "https://github.com/megahertz/electron-log",
+    "description": "Simple logging.",
+    "category": "tools",
+    "subcategory": "for_electron"
+  },
+  {
     "name": "devtool",
     "href": "https://github.com/Jam3/devtool",
     "description": "Debug Node.js with Chrome DevTools.",
@@ -1398,6 +1419,13 @@
     "subcategory": "using_electron"
   },
   {
+    "name": "Reactotron",
+    "href": "https://github.com/reactotron/reactotron",
+    "description": "Inspect your React and React Native apps.",
+    "category": "tools",
+    "subcategory": "using_electron"
+  },
+  {
     "name": "Photon",
     "href": "http://photonkit.com",
     "description": "UI toolkit for building beautiful apps.",
@@ -1453,17 +1481,18 @@
   },
   {
     "name": "Quick Start",
-    "href": "http://electron.atom.io/docs/latest/tutorial/quick-start/",
+    "href": "http://electron.atom.io/docs/tutorial/quick-start/",
     "category": "documentation"
   },
   {
     "name": "Official docs",
-    "href": "http://electron.atom.io/docs/latest/",
+    "href": "http://electron.atom.io/docs/",
     "category": "documentation"
   },
   {
-    "name": "Architecture overview",
-    "href": "https://github.com/ilyavorobiev/atom-docs/blob/master/atom-shell/Architecture.md",
+    "name": "Essential Electron",
+    "href": "http://jlord.us/essential-electron/",
+    "description": "Concise overview.",
     "category": "documentation"
   },
   {
@@ -1498,6 +1527,12 @@
     "category": "articles"
   },
   {
+    "name": "Developing an Electron Edge](https://bleedingedgepress.com/developing-an-electron-edge/) - [Preview",
+    "href": "https://read.amazon.com/kp/embed?asin=B01G7TTKSK&asin=B01G7TTKSK&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_DLhOxb0XZ3MEC",
+    "description": " 💲",
+    "category": "books"
+  },
+  {
     "name": "Creating Desktop Apps with Electron",
     "href": "https://www.youtube.com/watch?v=ojX5yz35v4M",
     "category": "videos"
@@ -1519,7 +1554,7 @@
   },
   {
     "name": "Cross-Platform Desktop Apps with Electron",
-    "href": "https://www.youtube.com/watch?v=Xs3Oc4weZbw",
+    "href": "https://www.youtube.com/watch?v=9xX_G0l5jLU",
     "category": "videos"
   },
   {
@@ -1543,6 +1578,12 @@
     "category": "videos"
   },
   {
+    "name": "Electron Fundamentals course - Pluralsight",
+    "href": "https://www.pluralsight.com/courses/electron-fundamentals",
+    "description": " 💲",
+    "category": "videos"
+  },
+  {
     "name": "JavaScript Jabber: Electron with Jessica Lord and Amy Palamountain",
     "href": "https://devchat.tv/js-jabber/193-jsj-electron-with-jessica-lord-and-amy-palamountain",
     "category": "podcasts"
@@ -1553,8 +1594,28 @@
     "category": "podcasts"
   },
   {
+    "name": "JavaScript Air: Electron Apps with @jlord and @emorikawa",
+    "href": "https://javascriptair.com/episodes/2016-07-06",
+    "category": "podcasts"
+  },
+  {
+    "name": "The Changelog #216: GitHub's Electron with Zeke Sikelianos",
+    "href": "https://changelog.com/216/",
+    "category": "podcasts"
+  },
+  {
+    "name": "Full Stack Radio #48: Jessica Lord - Building Desktop Apps with Electron",
+    "href": "http://www.fullstackradio.com/48",
+    "category": "podcasts"
+  },
+  {
     "name": "Discuss",
     "href": "https://discuss.atom.io/c/electron",
+    "category": "community"
+  },
+  {
+    "name": "Reddit",
+    "href": "https://www.reddit.com/r/electronjs",
     "category": "community"
   },
   {

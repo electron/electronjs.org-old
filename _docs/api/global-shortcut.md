@@ -1,5 +1,5 @@
 ---
-version: v1.4.1
+version: v1.4.2
 category: API
 redirect_from:
     - /docs/v0.24.0/api/global-shortcut/
@@ -98,7 +98,7 @@ want applications to fight for global shortcuts.
 
 * `accelerator` [Accelerator](http://electron.atom.io/docs/api/accelerator)
 
-Returns whether this application has registered `accelerator`.
+Returns `Boolean` - Whether this application has registered `accelerator`.
 
 When the accelerator is already taken by other applications, this call will
 still return `false`. This behavior is intended by operating systems, since they

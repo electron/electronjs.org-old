@@ -1,5 +1,5 @@
 ---
-version: v1.4.1
+version: v1.4.2
 category: API
 redirect_from:
     - /docs/v0.24.0/api/web-view-tag/
@@ -299,19 +299,19 @@ e.g. the `http://` or `file://`.
 
 ### `<webview>.getURL()`
 
-Returns URL of guest page.
+Returns `String` - The URL of guest page.
 
 ### `<webview>.getTitle()`
 
-Returns the title of guest page.
+Returns `String` - The title of guest page.
 
 ### `<webview>.isLoading()`
 
-Returns a boolean whether guest page is still loading resources.
+Returns `Boolean` - Whether guest page is still loading resources.
 
 ### `<webview>.isWaitingForResponse()`
 
-Returns a boolean whether the guest page is waiting for a first-response for the
+Returns `Boolean` - Whether the guest page is waiting for a first-response for the
 main resource of the page.
 
 ### `<webview>.stop()`
@@ -328,17 +328,17 @@ Reloads the guest page and ignores cache.
 
 ### `<webview>.canGoBack()`
 
-Returns a boolean whether the guest page can go back.
+Returns `Boolean` - Whether the guest page can go back.
 
 ### `<webview>.canGoForward()`
 
-Returns a boolean whether the guest page can go forward.
+Returns `Boolean` - Whether the guest page can go forward.
 
 ### `<webview>.canGoToOffset(offset)`
 
 * `offset` Integer
 
-Returns a boolean whether the guest page can go to `offset`.
+Returns `Boolean` - Whether the guest page can go to `offset`.
 
 ### `<webview>.clearHistory()`
 
@@ -366,7 +366,7 @@ Navigates to the specified offset from the "current entry".
 
 ### `<webview>.isCrashed()`
 
-Whether the renderer process has crashed.
+Returns `Boolean` - Whether the renderer process has crashed.
 
 ### `<webview>.setUserAgent(userAgent)`
 
@@ -376,7 +376,7 @@ Overrides the user agent for the guest page.
 
 ### `<webview>.getUserAgent()`
 
-Returns a `String` representing the user agent for guest page.
+Returns `String` - The user agent for guest page.
 
 ### `<webview>.insertCSS(css)`
 
@@ -405,11 +405,11 @@ Closes the DevTools window of guest page.
 
 ### `<webview>.isDevToolsOpened()`
 
-Returns a boolean whether guest page has a DevTools window attached.
+Returns `Boolean` - Whether guest page has a DevTools window attached.
 
 ### `<webview>.isDevToolsFocused()`
 
-Returns a boolean whether DevTools window of guest page is focused.
+Returns `Boolean` - Whether DevTools window of guest page is focused.
 
 ### `<webview>.inspectElement(x, y)`
 
@@ -430,7 +430,7 @@ Set guest page muted.
 
 ### `<webview>.isAudioMuted()`
 
-Returns whether guest page has been muted.
+Returns `Boolean` - Whether guest page has been muted.
 
 ### `<webview>.undo()`
 
@@ -570,7 +570,7 @@ Shows pop-up dictionary that searches the selected word on the page.
 
 ### `<webview>.getWebContents()`
 
-Returns the [WebContents](http://electron.atom.io/docs/api/web-contents) associated with this `webview`.
+Returns `WebContents` - The [WebContents](http://electron.atom.io/docs/api/web-contents) associated with this `webview`.
 
 ## DOM events
 
@@ -664,7 +664,7 @@ title is synthesized from file url.
 
 Returns:
 
-* `favicons` Array - Array of URLs.
+* `favicons` String[] - Array of URLs.
 
 Fired when page receives favicon urls.
 

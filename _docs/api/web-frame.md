@@ -1,5 +1,5 @@
 ---
-version: v1.4.1
+version: v1.4.2
 category: API
 redirect_from:
     - /docs/v0.24.0/api/web-frame/
@@ -65,7 +65,7 @@ zoom percent divided by 100, so 300% = 3.0.
 
 ### `webFrame.getZoomFactor()`
 
-Returns the current zoom factor.
+Returns `Number` - The current zoom factor.
 
 ### `webFrame.setZoomLevel(level)`
 
@@ -77,7 +77,7 @@ limits of 300% and 50% of original size, respectively.
 
 ### `webFrame.getZoomLevel()`
 
-Returns the current zoom level.
+Returns `Number` - The current zoom level.
 
 ### `webFrame.setZoomLevelLimits(minimumLevel, maximumLevel)`
 
@@ -150,6 +150,43 @@ invoked by a gesture from the user. Setting `userGesture` to `true` will remove
 this limitation.
 
 ### `webFrame.getResourceUsage()`
+
+Returns `Object`:
+* `images` Object
+  * `count` Integer
+  * `size` Integer
+  * `liveSize` Integer
+  * `decodedSize` Integer
+  * `purgedSize` Integer
+  * `purgeableSize` Integer
+* `cssStyleSheets` Object
+  * `count` Integer
+  * `size` Integer
+  * `liveSize` Integer
+  * `decodedSize` Integer
+  * `purgedSize` Integer
+  * `purgeableSize` Integer
+* `xslStyleSheets` Object
+  * `count` Integer
+  * `size` Integer
+  * `liveSize` Integer
+  * `decodedSize` Integer
+  * `purgedSize` Integer
+  * `purgeableSize` Integer
+* `fonts` Object
+  * `count` Integer
+  * `size` Integer
+  * `liveSize` Integer
+  * `decodedSize` Integer
+  * `purgedSize` Integer
+  * `purgeableSize` Integer
+* `other` Object
+  * `count` Integer
+  * `size` Integer
+  * `liveSize` Integer
+  * `decodedSize` Integer
+  * `purgedSize` Integer
+  * `purgeableSize` Integer
 
 Returns an object describing usage information of Blink's internal memory
 caches.

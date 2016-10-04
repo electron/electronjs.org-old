@@ -1,5 +1,5 @@
 ---
-version: v1.4.1
+version: v1.4.2
 category: API
 redirect_from:
     - /docs/v0.24.0/api/remote/
@@ -180,22 +180,22 @@ The `remote` module has the following methods:
 
 * `module` String
 
-Returns the object returned by `require(module)` in the main process.
+Returns `Object` - The object returned by `require(module)` in the main process.
 
 ### `remote.getCurrentWindow()`
 
-Returns the [`BrowserWindow`](http://electron.atom.io/docs/api/browser-window) object to which this web page
+Returns `BrowserWindow` - The [`BrowserWindow`](http://electron.atom.io/docs/api/browser-window) object to which this web page
 belongs.
 
 ### `remote.getCurrentWebContents()`
 
-Returns the [`WebContents`](http://electron.atom.io/docs/api/web-contents) object of this web page.
+Returns `WebContents` - The [`WebContents`](http://electron.atom.io/docs/api/web-contents) object of this web page.
 
 ### `remote.getGlobal(name)`
 
 * `name` String
 
-Returns the global variable of `name` (e.g. `global[name]`) in the main
+Returns `any` - The global variable of `name` (e.g. `global[name]`) in the main
 process.
 
 ## Properties
