@@ -16,11 +16,13 @@ breadcrumb: API
 {% assign docs = site.docs | sort: 'sort_title' %}
 {% for doc in docs %}
   {% if doc.category == 'API' %}
-    <tr>
-      <td><a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a></td>
-      <td>{{ site.data.processes[doc.title] | replace: 'Process', '' | replace: 'Processes', '' }}</td>
-      <td>{{ doc.excerpt }}</td>
-    </tr>
+    {% unless doc.source_url contains '/structures/' %}
+      <tr>
+        <td><a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a></td>
+        <td>{{ site.data.processes[doc.title] | replace: 'Process', '' | replace: 'Processes', '' }}</td>
+        <td>{{ doc.excerpt }}</td>
+      </tr>
+    {% endunless %}
   {% endif %}
 {% endfor %}
 </table>
