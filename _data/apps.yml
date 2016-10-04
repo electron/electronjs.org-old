@@ -2023,3 +2023,14 @@
     - "markdown"
   license: "MIT"
   icon: "wallapatta.png"
+-
+  name: "Inkdrop"
+  description: "Notebook app for Markdown lovers"
+  website: "https://www.inkdrop.info/"
+  keywords:
+    - "text"
+    - "programming"
+    - "notebook"
+    - "extensible"
+    - "markdown"
+  icon: "inkdrop.png"
