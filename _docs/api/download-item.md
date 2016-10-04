@@ -1,5 +1,5 @@
 ---
-version: v1.4.1
+version: v1.4.2
 category: API
 redirect_from:
     - /docs/v0.24.0/api/download-item/
@@ -124,7 +124,7 @@ routine to determine the save path(Usually prompts a save dialog).
 
 ### `downloadItem.getSavePath()`
 
-Returns the save path of the download item. This will be either the path
+Returns `String` - The save path of the download item. This will be either the path
 set via `downloadItem.setSavePath(path)` or the path selected from the shown
 save dialog.
 
@@ -134,7 +134,7 @@ Pauses the download.
 
 ### `downloadItem.isPaused()`
 
-Returns whether the download is paused.
+Returns `Boolean` - Whether the download is paused.
 
 ### `downloadItem.resume()`
 
@@ -142,7 +142,7 @@ Resumes the download that has been paused.
 
 ### `downloadItem.canResume()`
 
-Resumes whether the download can resume.
+Resumes `Boolean` - Whether the download can resume.
 
 ### `downloadItem.cancel()`
 
@@ -150,19 +150,19 @@ Cancels the download operation.
 
 ### `downloadItem.getURL()`
 
-Returns a `String` represents the origin url where the item is downloaded from.
+Returns `String` - The origin url where the item is downloaded from.
 
 ### `downloadItem.getMimeType()`
 
-Returns a `String` represents the mime type.
+Returns `String` - The files mime type.
 
 ### `downloadItem.hasUserGesture()`
 
-Returns a `Boolean` indicates whether the download has user gesture.
+Returns `Boolean` - Whether the download has user gesture.
 
 ### `downloadItem.getFilename()`
 
-Returns a `String` represents the file name of the download item.
+Returns `String` - The file name of the download item.
 
 **Note:** The file name is not always the same as the actual one saved in local
 disk. If user changes the file name in a prompted download saving dialog, the
@@ -170,21 +170,22 @@ actual name of saved file will be different.
 
 ### `downloadItem.getTotalBytes()`
 
-Returns a `Integer` represents the total size in bytes of the download item.
+Returns `Integer` - The total size in bytes of the download item.
+
 If the size is unknown, it returns 0.
 
 ### `downloadItem.getReceivedBytes()`
 
-Returns a `Integer` represents the received bytes of the download item.
+Returns `Integer` - The received bytes of the download item.
 
 ### `downloadItem.getContentDisposition()`
 
-Returns a `String` represents the Content-Disposition field from the response
+Returns `String` - The Content-Disposition field from the response
 header.
 
 ### `downloadItem.getState()`
 
-Returns current state as `String`.
+Returns `String` - The current state.
 
 Possible values are:
 

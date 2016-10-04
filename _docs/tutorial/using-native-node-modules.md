@@ -1,5 +1,5 @@
 ---
-version: v1.4.1
+version: v1.4.2
 category: Tutorial
 redirect_from:
     - /docs/v0.24.0/tutorial/using-native-node-modules/
@@ -62,6 +62,7 @@ An example of installing all dependencies for Electron:
 export npm_config_target=1.2.3
 # The architecture of Electron, can be ia32 or x64.
 export npm_config_arch=x64
+export npm_config_target_arch=x64
 # Download headers for Electron.
 export npm_config_disturl=https://atom.io/download/atom-shell
 # Tell node-pre-gyp that we are building for Electron.

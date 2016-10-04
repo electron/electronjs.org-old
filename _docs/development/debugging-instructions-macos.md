@@ -1,5 +1,5 @@
 ---
-version: v1.4.1
+version: v1.4.2
 category: Development
 redirect_from:
     - /docs/v0.24.0/development/debugging-instructions-macos/

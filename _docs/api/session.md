@@ -1,5 +1,5 @@
 ---
-version: v1.4.1
+version: v1.4.2
 category: API
 redirect_from:
     - /docs/v0.24.0/api/session/
@@ -69,7 +69,7 @@ The `session` module has the following methods:
 * `options` Object
   * `cache` Boolean - Whether to enable cache.
 
-Returns a `Session` instance from `partition` string. When there is an existing
+Returns `Session` - A session instance from `partition` string. When there is an existing
 `Session` with the same `partition`, it will be returned; othewise a new
 `Session` instance will be created with `options`.
 
@@ -88,7 +88,7 @@ The `session` module has the following properties:
 
 ### `session.defaultSession`
 
-Returns the default session object of the app.
+A `Session` object, the default session object of the app.
 
 ## Class: Session
 
@@ -149,10 +149,10 @@ Clears the session’s HTTP cache.
 * `options` Object (optional)
   * `origin` String - Should follow `window.location.origin`’s representation
     `scheme://host:port`.
-  * `storages` Array - The types of storages to clear, can contain:
+  * `storages` String[] - The types of storages to clear, can contain:
     `appcache`, `cookies`, `filesystem`, `indexdb`, `local storage`,
     `shadercache`, `websql`, `serviceworkers`
-  * `quotas` Array - The types of quotas to clear, can contain:
+  * `quotas` String[] - The types of quotas to clear, can contain:
     `temporary`, `persistent`, `syncable`.
 * `callback` Function (optional) - Called when operation is done.
 
@@ -366,7 +366,7 @@ This doesn't affect existing `WebContents`, and each `WebContents` can use
 
 #### `ses.getUserAgent()`
 
-Returns a `String` representing the user agent for this session.
+Returns `String` - The user agent for this session.
 
 #### `ses.getBlobData(identifier, callback)`
 
@@ -374,7 +374,7 @@ Returns a `String` representing the user agent for this session.
 * `callback` Function
   * `result` Buffer - Blob data.
 
-Returns the blob data associated with the `identifier`.
+Returns `Blob` - The blob data associated with the `identifier`.
 
 ### Instance Properties
 
@@ -382,15 +382,15 @@ The following properties are available on instances of `Session`:
 
 #### `ses.cookies`
 
-Returns an instance of `Cookies` class for this session.
+A Cookies object for this session.
 
 #### `ses.webRequest`
 
-Returns an instance of `WebRequest` class for this session.
+A WebRequest object for this session.
 
 #### `ses.protocol`
 
-Returns an instance of [protocol](http://electron.atom.io/docs/api/protocol) module for this session.
+A Protocol object (an instance of [protocol](http://electron.atom.io/docs/api/protocol) module) for this session.
 
 ```javascript
 const {app, session} = require('electron')
@@ -436,6 +436,27 @@ session.defaultSession.cookies.set(cookie, (error) => {
   if (error) console.error(error)
 })
 ```
+
+### Instance Events
+
+The following events are available on instances of `Cookies`:
+
+#### Event: 'changed'
+
+* `event` Event
+* `cookie` Object - The cookie that was changed
+* `cause` String - The cause of the change with one of the following values:
+  * `explicit` - The cookie was changed directly by a consumer's action.
+  * `overwrite` - The cookie was automatically removed due to an insert
+    operation that overwrote it.
+  * `expired` - The cookie was automatically removed as it expired.
+  * `evicted` - The cookie was automatically evicted during garbage collection.
+  * `expired-overwrite` - The cookie was overwritten with an already-expired
+    expiration date.
+* `removed` Boolean - `true` if the cookie was removed, `false` otherwise.
+
+Emitted when a cookie is changed because it was added, edited, removed, or
+expired.
 
 ### Instance Methods
 

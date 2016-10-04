@@ -1,5 +1,5 @@
 ---
-version: v1.4.1
+version: v1.4.2
 category: API
 redirect_from:
     - /docs/v0.24.0/api/crash-reporter/
@@ -92,10 +92,18 @@ crash reports.
 
 ### `crashReporter.getLastCrashReport()`
 
+Returns `Object`:
+* `date` String
+* `ID` Integer
+
 Returns the date and ID of the last crash report. If no crash reports have been
 sent or the crash reporter has not been started, `null` is returned.
 
 ### `crashReporter.getUploadedReports()`
+
+Returns `Object[]`:
+* `date` String
+* `ID` Integer
 
 Returns all uploaded crash reports. Each report contains the date and uploaded
 ID.

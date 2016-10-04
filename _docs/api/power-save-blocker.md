@@ -1,5 +1,5 @@
 ---
-version: v1.4.1
+version: v1.4.2
 category: API
 redirect_from:
     - /docs/v0.24.0/api/power-save-blocker/
@@ -68,6 +68,8 @@ The `powerSaveBlocker` module has the following methods:
   * `prevent-display-sleep` - Prevent the display from going to sleep. Keeps
     system and screen active.  Example use case: playing video.
 
+Returns `Integer` - The blocker ID that is assigned to this power blocker
+
 Starts preventing the system from entering lower-power mode. Returns an integer
 identifying the power save blocker.
 
@@ -91,4 +93,4 @@ Stops the specified power save blocker.
 
 * `id` Integer - The power save blocker id returned by `powerSaveBlocker.start`.
 
-Returns a boolean whether the corresponding `powerSaveBlocker` has started.
+Returns `Boolean` - Whether the corresponding `powerSaveBlocker` has started.
