@@ -38,13 +38,3 @@ If you've made an Electron app or host a meetup, make a [pull request](https://g
 | <img src='/images/apps/ling.png' width='50'> | [Ling](https://github.com/talhasch/ling) | REST Client |
 | <img src='/images/apps/shortexts.png' width='50'> | [Shortexts](http://shortexts.com/) | Shortcuts for texts you copy frequently, folders and emojis |
 | <img src='/images/apps/front-end-box.png' width='50'> | [Front-End Box](http://frontendbox.io) | Set of front-end-code generators |
-
-
-
-
-### New Meetups
-
-{: .table .table-ruled .table-full-width .table-with-spacious-first-column .mb-7}
-|     |    |
-| --- | -- |
-| []() | Description |
