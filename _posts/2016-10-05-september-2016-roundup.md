@@ -3,7 +3,7 @@ title: September 2016&#58; New Apps
 author: haacked
 ---
 
-Here are the new Electron apps that were added to the site in September.
+Here are the new Electron apps and talks that were added to the site in September.
 
 ---
 
@@ -11,12 +11,21 @@ This site is updated with new [apps](http://electron.atom.io/apps) and [meetups]
 
 If you've made an Electron app or host a meetup, make a [pull request](https://github.com/electron/electron.atom.io) to add it to the site and it will make the next roundup.
 
+### New Talks
+
+In September, GitHub held its GitHub Universe conference billed as the event for people building the future of software. There were a couple of interesting Electron talks at the event.
+
+* [Making Electron Development Simpler, More Pleasant, and More Productive](https://www.youtube.com/watch?v=Eqg_IqVeI5s) by Machisté Quintana, a Software Engineer at Slack.
+* [Electron: Desktop Apps with Web Languages](https://www.youtube.com/watch?v=FNHBfN8c32U) by Zeke Sikelianos, an Electron Developer at GitHub.
+
+Also, if you happen to be in Paris on December 5, Zeke will be [giving an Electron talk at dotJS 2016](https://twitter.com/dotJS/status/783615732307333120).
+
 ### New Apps
 
 {: .table .table-ruled .table-full-width .table-with-spacious-first-column .mb-7}
 
-|     |     |    |
-| --- | --- | -- |
+|     |     |    
+--- | --- | --
 | <img src='/images/apps/pexels.png' width='50'> | [Pexels](https://www.pexels.com/pro/mac-and-windows-app/) | Search for completely free photos and copy them into your clipboard |
 | <img src='/images/apps/timestamp.png' width='50'> | [Timestamp](https://mzdr.github.io/timestamp/) | A better macOS menu bar clock with a customizable date/time display and a calendar |
 | <img src='/images/apps/harmony.png' width='50'> | [Harmony](http://getharmony.xyz/) | Music player compatible with Spotify, Soundcloud, Play Music and your local files |
