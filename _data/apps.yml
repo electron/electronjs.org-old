@@ -1438,17 +1438,17 @@
   icon: "marp.png"
   featuredOnHomepage: true
 -
-  name: "HyperTerm"
+  name: "Hyper"
   description: "HTML/JS/CSS Terminal"
-  website: "https://hyperterm.org/"
-  repository: "https://github.com/zeit/hyperterm"
+  website: "https://hyper.is"
+  repository: "https://github.com/zeit/hyper"
   keywords:
     - "terminal"
     - "html"
     - "css"
     - "js"
   license: "MIT"
-  icon: "hyperterm.png"
+  icon: "hyper.png"
   featuredOnHomepage: true
 -
   name: "WordMark"
