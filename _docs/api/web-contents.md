@@ -1,5 +1,5 @@
 ---
-version: v1.4.2
+version: v1.4.3
 category: API
 redirect_from:
     - /docs/v0.24.0/api/web-contents/
@@ -189,13 +189,17 @@ Returns:
   `new-window`, `save-to-disk` and `other`.
 * `options` Object - The options which will be used for creating the new
   `BrowserWindow`.
+* `additionalFeatures` Array - The non-standard features (features not handled
+  by Chromium or Electron) given to `window.open()`.
 
 Emitted when the page requests to open a new window for a `url`. It could be
 requested by `window.open` or an external link like `<a target='_blank'>`.
 
 By default a new `BrowserWindow` will be created for the `url`.
 
-Calling `event.preventDefault()` will prevent creating new windows.
+Calling `event.preventDefault()` will prevent creating new windows. In such case, the
+`event.newGuest` may be set with a reference to a `BrowserWindow` instance to make it
+used by the Electron's runtime.
 
 #### Event: 'will-navigate'
 
@@ -354,7 +358,7 @@ Returns:
   * `selectionArea` Object - Coordinates of first match region.
 
 Emitted when a result is available for
-[`webContents.findInPage`](http://electron.atom.io/docs/api/web-contents#webcontentsfindinpage) request.
+[`webContents.findInPage`] request.
 
 #### Event: 'media-started-playing'
 
@@ -817,7 +821,7 @@ the request can be obtained by subscribing to
 #### `contents.stopFindInPage(action)`
 
 * `action` String - Specifies the action to take place when ending
-  [`webContents.findInPage`](http://electron.atom.io/docs/api/web-contents#webcontentfindinpage) request.
+  [`webContents.findInPage`] request.
   * `clearSelection` - Clear the selection.
   * `keepSelection` - Translate the selection into a normal selection.
   * `activateSelection` - Focus and click the selection node.
@@ -1303,3 +1307,4 @@ Emitted when debugging session is terminated. This happens either when
 Emitted whenever debugging target issues instrumentation event.
 
 [rdp]: https://developer.chrome.com/devtools/docs/debugger-protocol
+[`webContents.findInPage`]: http://electron.atom.io/docs/api/web-contents#contentsfindinpagetext-options
