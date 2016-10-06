@@ -2002,6 +2002,7 @@
     - "Images Optimizer"
     - "Developer Tool"
   icon: "front-end-box.png"
+# October 2016
 -
   name: "Flex Browser"
   description: "Hackable and modular web browser!"
