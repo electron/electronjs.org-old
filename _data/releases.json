@@ -1,5 +1,23 @@
 [
   {
+    "url": "https://api.github.com/repos/electron/electron/releases/4319599",
+    "assets_url": "https://api.github.com/repos/electron/electron/releases/4319599/assets",
+    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/4319599/assets{?name,label}",
+    "html_url": "https://github.com/electron/electron/releases/tag/v1.4.3",
+    "id": 4319599,
+    "tag_name": "v1.4.3",
+    "target_commitish": "master",
+    "name": "electron v1.4.3",
+    "draft": false,
+    "prerelease": false,
+    "created_at": "2016-10-06T08:12:07Z",
+    "published_at": "2016-10-06T10:07:56Z",
+    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v1.4.3",
+    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v1.4.3",
+    "body": "\r\nChangelog:\r\n\r\n* Add `additionalFeatures` parameter for `new-window` event. [#7291](https://github.com/electron/electron/pull/7291)\r\n* Add `event.newGuest` property for the `event` object of `new-window` event. [#7407](https://github.com/electron/electron/pull/7407)\r\n* Add `crop`, `resize`, `getAspectRatio` methods to `NativeImage`. [#7488](https://github.com/electron/electron/pull/7488)\r\n* Fix crash when closing windows that use `window.open`. [#7432](https://github.com/electron/electron/pull/7432)\r\n* Fix memory bug when passing `Buffer` from native land to JavaScript. [#7452](https://github.com/electron/electron/pull/7452)\r\n\r\n__Windows__\r\n\r\n* Enable `LargeAddressAware` for 32bit build. [brightray#253](https://github.com/electron/brightray/pull/253)\r\n* Use default error mode by default in the main process. [#7335](https://github.com/electron/electron/pull/7335)\r\n* Fix clicking menu not moving focus to the window. [#7282](https://github.com/electron/electron/pull/7282)\r\n* Fix certain emoji not showing with default font. [#7334](https://github.com/electron/electron/pull/7334)\r\n",
+    "version": "1.4.3"
+  },
+  {
     "url": "https://api.github.com/repos/electron/electron/releases/4271918",
     "assets_url": "https://api.github.com/repos/electron/electron/releases/4271918/assets",
     "upload_url": "https://uploads.github.com/repos/electron/electron/releases/4271918/assets{?name,label}",
@@ -520,23 +538,5 @@
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.37.7",
     "body": "Changelog:\r\n\r\n* Add `mode` option to `webContents.openDevTools(options)` API.\r\n* Add `openExternal` type of `permission` parameter to `Session.setPermissionRequestHandler(handler)` API.\r\n* Add `process.windowsStore` property to determine whether the app is an Windows Store app.\r\n* Fix random crash when accessing `devToolsWebContents.hostWebContents`.\r\n* Fix `session.enableNetworkEmulation(options)` API not working.\r\n* Fix `WebContents.executeJavaScript(code)` not working when called during a resource load after page is loaded.\r\n* Fix after using `app.setPath` to change the location of `userData` directory, a folder is still created at the default location. \r\n* Fix occasional exception when removing a reference to a remote object.\r\n\r\n__Windows__\r\n\r\n* Avoid spawning new Squirrel processes when there is already one running.\r\n\r\n__Linux__\r\n\r\n* Use the `append` hint when showing notifications.\r\n* Add `app.importCertificate(options, callback)` API.\r\n\r\n__OS X__\r\n\r\n* Update the docs on how to submit latest versions of Electron to Mac App Store.\r\n* Add `BrowserWindow.setSheetOffset(offset)` for changing the offset when showing sheet.\r\n* Fix crash when app's name is long while using `app.makeSingleInstance` with Mac App Store build.",
     "version": "0.37.7"
-  },
-  {
-    "url": "https://api.github.com/repos/electron/electron/releases/3025930",
-    "assets_url": "https://api.github.com/repos/electron/electron/releases/3025930/assets",
-    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/3025930/assets{?name,label}",
-    "html_url": "https://github.com/electron/electron/releases/tag/v0.37.6",
-    "id": 3025930,
-    "tag_name": "v0.37.6",
-    "target_commitish": "master",
-    "name": "electron v0.37.6",
-    "draft": false,
-    "prerelease": false,
-    "created_at": "2016-04-15T07:48:09Z",
-    "published_at": "2016-04-15T10:31:15Z",
-    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.37.6",
-    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.37.6",
-    "body": "Changelog:\r\n\r\n* Don't emit `will-quit` when `app.exit()` is called.\r\n* Add `isMainFrame` parameter to `did-fail-load` event of `WebContents`.\r\n* Add `statusLine` property to `webRequest.OnHeadersReceived` API's `responseHeaders` object.\r\n* Add `backgroundThrottling` option to `webPreferences` of `BrowserWindow`.\r\n* Add `resourceType` parameter to `did-get-response-details` event of `WebContents`.\r\n* Fix `<webview>` and `preload` script not working when there is no script tag in page.\r\n* Fix `webRequest.onHeadersReceived` API modifying original headers' status line.\r\n* Fix breakpoints not working after reloading in the devtools view.\r\n* Fix idle GC not working in the main process.\r\n* Fix the race condition between `did-fail-load` and `did-finish-load` events.\r\n* Fix wrong default transparent background for frameless window.\r\n* Fix SSL certificate information not showing in the Security tab of devtools.\r\n\r\n__Windows__\r\n\r\n* Fix printing not working.\r\n* Fix support with NVDA/JAWS screen readers.\r\n* Fix crash when closing a window in its `blur` event handler.\r\n* Fix notification not showing when Application User Model ID is set.\r\n\r\n__OS X__\r\n\r\n* Fix template image not working as tray icon on some machines.\r\n* Fix `backgroundColor` of `BrowserWindow` not displaying correctly.\r\n\r\n__Linux__\r\n\r\n* Do not wait for `xdg-open` to exit when calling `shell.openExternal`.\r\n* Add support for the `tag` property of HTML5 `Notification` API.\r\n* Fix notifications not showing on Ubuntu 16.04.\r\n",
-    "version": "0.37.6"
   }
 ]

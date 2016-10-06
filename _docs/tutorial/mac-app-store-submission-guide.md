@@ -1,5 +1,5 @@
 ---
-version: v1.4.2
+version: v1.4.3
 category: Tutorial
 redirect_from:
     - /docs/v0.24.0/tutorial/mac-app-store-submission-guide/

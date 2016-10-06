@@ -1,5 +1,5 @@
 ---
-version: v1.4.2
+version: v1.4.3
 category: API
 redirect_from:
     - /docs/v0.24.0/api/desktop-capturer/
@@ -36,7 +36,7 @@ redirect_from:
     - /docs/latest/api/desktop-capturer/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/desktop-capturer.md'
 excerpt: "Access information about media sources that can be used to capture audio and
-    video from the desktop using the [<code>navigator.webkitGetUserMedia</code>] API."
+    video from the desktop using the <a href=\"https://developer.mozilla.org/en/docs/Web/API/Navigator/getUserMedia\"><code>navigator.webkitGetUserMedia</code></a> API."
 title: "desktopCapturer"
 sort_title: "desktopcapturer"
 ---
