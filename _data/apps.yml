@@ -2061,3 +2061,14 @@
     - "video"
   license: "MIT"
   icon: "kap.png"
+-
+  name: "DBGlass"
+  description: "Simple cross-platform PostgreSQL client"
+  website: "http://dbglass.web-pal.com"
+  repository: "https://github.com/web-pal/DBGlass"
+  keywords:
+    - "postgresql"
+    - "sql"
+    - "database"
+  license: "MIT"
+  icon: "dbglass.png"
