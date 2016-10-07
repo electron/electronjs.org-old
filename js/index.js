@@ -12,7 +12,6 @@ function fixPlatformLabels () {
 function fixSyntaxHighlighting () {
   var sts = document.querySelectorAll('.err')
   Array.prototype.forEach.call(sts, function (st) {
-    console.log('wtf')
     if (st.textContent === '`' || st.textContent === ':') {
       st.classList.remove('err')
     }
