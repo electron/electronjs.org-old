@@ -1592,18 +1592,6 @@
   license: "GNU"
   icon: "ionic-creator.png"
 -
-  name: "TwitchAlerts"
-  description: "Keep your viewers happy with beautiful alerts and notifications!"
-  website: "https://github.com/Meadowcottage/TwitchAlerts"
-  repository: "https://github.com/Meadowcottage/TwitchAlerts"
-  keywords:
-    - "Electron"
-    - "Twitch"
-    - "Notifications"
-    - "Streaming"
-  license: "GNU"
-  icon: "twitchalerts.png"
--
   name: "Museeks"
   description: "A simple, clean and cross-platform music player"
   website: "http://museeks.io/"
