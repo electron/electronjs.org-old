@@ -74,14 +74,6 @@
   icon: "kitematic.png"
   featuredOnHomepage: true
 -
-  name: "Pixate"
-  description: "Change the way you design with the most powerful prototyping platform on the planet"
-  website: "http://www.pixate.com"
-  repository: ""
-  keywords: []
-  license: ""
-  icon: "pixate.png"
--
   name: "Particle Dev"
   description: "A professional IDE for Particle"
   website: "https://www.particle.io/dev"
@@ -935,14 +927,6 @@
     - "productivity"
     - "editor"
   icon: "sencha_test.png"
--
-  name: "AntSword"
-  description: "AntSword is a cross platform website management tools"
-  website: "https://github.com/antoor/antSword"
-  keywords:
-    - "webmanager"
-    - "webshell"
-  icon: "antsword.png"
 -
   name: "MJML App"
   description: "Desktop wrapper around mjml language"
