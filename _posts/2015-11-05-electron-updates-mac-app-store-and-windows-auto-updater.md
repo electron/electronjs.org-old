@@ -16,12 +16,12 @@ As of `v0.34.0` each Electron release includes a build compatible with the Mac A
 - `crash-reporter`
 - `auto-updater`
 
-Additionally some behaviors have changed with respect to detecting DNS changes, video capture and accessibility features. You can read more about the changes and [submitting your app to the Mac App store](http://electron.atom.io/docs/latest/tutorial/mac-app-store-submission-guide) in the documentation. The distributions can be found on the [Electron releases page](https://github.com/atom/electron/releases), prefixed with `mas-`.
+Additionally some behaviors have changed with respect to detecting DNS changes, video capture and accessibility features. You can read more about the changes and [submitting your app to the Mac App store](http://electron.atom.io/docs/latest/tutorial/mac-app-store-submission-guide) in the documentation. The distributions can be found on the [Electron releases page](https://github.com/electron/electron/releases), prefixed with `mas-`.
 
-Related Pull Requests: [atom/electron#3108](https://github.com/atom/electron/pull/3108), [atom/electron#2920](https://github.com/atom/electron/pull/2920)
+Related Pull Requests: [electron/electron#3108](https://github.com/electron/electron/pull/3108), [electron/electron#2920](https://github.com/electron/electron/pull/2920)
 
 ## Windows Auto Updater
 
-In Electron `v0.34.1` the `auto-updater` module was improved in order to work with [`Squirrel.Windows`](https://github.com/Squirrel/Squirrel.Windows). This means that Electron ships with easy ways for auto updating your app on both OS X and Windows. You can read more on [setting up your app for auto updating on Windows](https://github.com/atom/electron/blob/master/docs/api/auto-updater.md#windows) in the documentation.
+In Electron `v0.34.1` the `auto-updater` module was improved in order to work with [`Squirrel.Windows`](https://github.com/Squirrel/Squirrel.Windows). This means that Electron ships with easy ways for auto updating your app on both OS X and Windows. You can read more on [setting up your app for auto updating on Windows](https://github.com/electron/electron/blob/master/docs/api/auto-updater.md#windows) in the documentation.
 
-Related Pull Request: [atom/electron#1984](https://github.com/atom/electron/pull/1984)
+Related Pull Request: [electron/electron#1984](https://github.com/electron/electron/pull/1984)

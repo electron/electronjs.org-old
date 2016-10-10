@@ -94,4 +94,4 @@ The style of `Tray` event names was a bit different from other modules so a rena
 * `double-clicked` is renamed to `double-click`
 * `right-clicked` is renamed to `right-click`
 
-[issue-387]: https://github.com/atom/electron/issues/387
+[issue-387]: https://github.com/electron/electron/issues/387
