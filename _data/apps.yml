@@ -2065,3 +2065,34 @@
     - "parser"
   license: "MIT"
   icon: "EliteJournal.png"
+-
+  name: "Sencha Inspector"
+  description: "Debugging tool for troubleshooting and improving performance of Ext JS and Sencha Touch applications."
+  website: "https://www.sencha.com/products/inspector/"
+  keywords:
+    - "web development"
+    - "programming"
+    - "productivity"
+    - "debugging"
+  icon: "sencha_inspector.png"
+-
+  name: "Sencha Themer"
+  description: "Theming tool to rapidly style Ext JS applications by creating custom themes using graphical tools – without writing code."
+  website: "https://www.sencha.com/products/themer/"
+  keywords:
+    - "web development"
+    - "programming"
+    - "productivity"
+    - "theming"
+  icon: "sencha_themer.png"
+-
+  name: "Sencha Architect"
+  description: "The Ext JS visual app builder for developing cross-platform HTML5 applications on desktop and mobile devices."
+  website: "https://www.sencha.com/products/architect/"
+  keywords:
+    - "web development"
+    - "programming"
+    - "productivity"
+    - "app builder"
+  icon: "sencha_architect.png"
+  
