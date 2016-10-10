@@ -2066,7 +2066,7 @@
     - "debugger"
   icon: "sencha_inspector.png"
 -
-    name: "Sencha Themer"
+  name: "Sencha Themer"
   description: "Theming tool to rapidly style Ext JS applications by creating custom themes using graphical tools – without writing code."
   website: "https://www.sencha.com/products/themer/"
   keywords:
