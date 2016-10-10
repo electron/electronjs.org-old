@@ -9,23 +9,23 @@ This week we've given Electron's documentation a home on [electron.atom.io](http
 
 You can visit [/docs](http://electron.atom.io/docs) to see what versions are available or [/docs/all](http://electron.atom.io/docs/all) to see the latest version of docs all on one page (nice for `cmd` + `f` searches).
 
-If you'd like to contribute to the docs content, you can do so in the [Electron repository](https://github.com/atom/electron/tree/master/docs), where the docs are fetched from. We fetch them for each minor release and add them to the [Electron site repository](http://github.com/atom/electron.atom.io), which is made with [Jekyll](http://jekyllrb.com).
+If you'd like to contribute to the docs content, you can do so in the [Electron repository](https://github.com/electron/electron/tree/master/docs), where the docs are fetched from. We fetch them for each minor release and add them to the [Electron site repository](http://github.com/electron/electron.atom.io), which is made with [Jekyll](http://jekyllrb.com).
 
 If you're interested in learning more about how we pull the docs from one repository to another continue reading below. Otherwise, enjoy the [docs](http://electron.atom.io/latest)!
 
 ## The Technical Bits
 
-We're preserving the documentation within the Electron core repository as is. This means that [atom/electron](http://github.com/atom/electron) will always have the latest version of the docs. When new versions of Electron are released, we duplicate them over on the Electron website repository, [atom/electron.atom.io](http://github.com/atom/electron.atom.io).
+We're preserving the documentation within the Electron core repository as is. This means that [electron/electron](http://github.com/electron/electron) will always have the latest version of the docs. When new versions of Electron are released, we duplicate them over on the Electron website repository, [electron/electron.atom.io](http://github.com/electron/electron.atom.io).
 
 ### script/docs
 
-To fetch the docs we run a [script](https://github.com/atom/electron.atom.io/blob/0205b5ab26c96a95121bc564c5824f92108677e0/script/docs) with a command line interface of `script/docs vX.XX.X` with or without the `--latest` option (depending on if the version you're importing is the latest version). Our [script for fetching docs](https://github.com/atom/electron.atom.io/blob/0205b5ab26c96a95121bc564c5824f92108677e0/lib/fetch-docs.js) uses a few interesting Node modules:
+To fetch the docs we run a [script](https://github.com/electron/electron.atom.io/blob/0205b5ab26c96a95121bc564c5824f92108677e0/script/docs) with a command line interface of `script/docs vX.XX.X` with or without the `--latest` option (depending on if the version you're importing is the latest version). Our [script for fetching docs](https://github.com/electron/electron.atom.io/blob/0205b5ab26c96a95121bc564c5824f92108677e0/lib/fetch-docs.js) uses a few interesting Node modules:
 
-- [`nugget`](http://npmjs.com/nugget) for [getting the release tarball](https://github.com/atom/electron.atom.io/blob/0205b5ab26c96a95121bc564c5824f92108677e0/lib/fetch-docs.js#L40-L43) and saving it to a temporay directory.
-- [`gunzip-maybe`](http://npmsjs.com/gunzip-maybe) to [unzip the tarball](https://github.com/atom/electron.atom.io/blob/0205b5ab26c96a95121bc564c5824f92108677e0/lib/fetch-docs.js#L95).
-- [`tar-fs`](http://npmjs.com/tar-fs) for [streaming just the `/docs` directory](https://github.com/atom/electron.atom.io/blob/0205b5ab26c96a95121bc564c5824f92108677e0/lib/fetch-docs.js#L63-L65) from the tarball and [filtering and processing the files](https://github.com/atom/electron.atom.io/blob/0205b5ab26c96a95121bc564c5824f92108677e0/lib/fetch-docs.js#L68-L78) (with the help of [`through2`](http://npmjs.com/through2)) so that they work nicely with our Jekyll site (more on that below).
+- [`nugget`](http://npmjs.com/nugget) for [getting the release tarball](https://github.com/electron/electron.atom.io/blob/0205b5ab26c96a95121bc564c5824f92108677e0/lib/fetch-docs.js#L40-L43) and saving it to a temporay directory.
+- [`gunzip-maybe`](http://npmsjs.com/gunzip-maybe) to [unzip the tarball](https://github.com/electron/electron.atom.io/blob/0205b5ab26c96a95121bc564c5824f92108677e0/lib/fetch-docs.js#L95).
+- [`tar-fs`](http://npmjs.com/tar-fs) for [streaming just the `/docs` directory](https://github.com/electron/electron.atom.io/blob/0205b5ab26c96a95121bc564c5824f92108677e0/lib/fetch-docs.js#L63-L65) from the tarball and [filtering and processing the files](https://github.com/electron/electron.atom.io/blob/0205b5ab26c96a95121bc564c5824f92108677e0/lib/fetch-docs.js#L68-L78) (with the help of [`through2`](http://npmjs.com/through2)) so that they work nicely with our Jekyll site (more on that below).
 
-[Tests](https://github.com/atom/electron.atom.io/tree/gh-pages/spec) help us know that all the bits and pieces landed as expected.
+[Tests](https://github.com/electron/electron.atom.io/tree/gh-pages/spec) help us know that all the bits and pieces landed as expected.
 
 ### Jekyll
 
@@ -52,7 +52,7 @@ Each page receives this set of front matter variables:
 version: v0.27.0
 category: Tutorial
 title: 'Quick Start'
-source_url: 'https://github.com/atom/electron/blob/master/docs/tutorial/quick-start.md'
+source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/quick-start.md'
 ---
 ```
 

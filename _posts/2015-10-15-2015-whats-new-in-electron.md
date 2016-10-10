@@ -18,20 +18,20 @@ Electron is now up to date with Chrome 45 as of `v0.32.0`. Other updates include
 We have restructured and standardized the documentation to look better and read better. There are also community-contributed translations of the documentation, like Japanese and Korean.
 
 Related pull requests:
-[atom/electron#2028](https://github.com/atom/electron/pull/2028),
-[atom/electron#2533](https://github.com/atom/electron/pull/2533),
-[atom/electron#2557](https://github.com/atom/electron/pull/2557),
-[atom/electron#2709](https://github.com/atom/electron/pull/2709),
-[atom/electron#2725](https://github.com/atom/electron/pull/2725),
-[atom/electron#2698](https://github.com/atom/electron/pull/2698),
-[atom/electron#2649](https://github.com/atom/electron/pull/2649).
+[electron/electron#2028](https://github.com/electron/electron/pull/2028),
+[electron/electron#2533](https://github.com/electron/electron/pull/2533),
+[electron/electron#2557](https://github.com/electron/electron/pull/2557),
+[electron/electron#2709](https://github.com/electron/electron/pull/2709),
+[electron/electron#2725](https://github.com/electron/electron/pull/2725),
+[electron/electron#2698](https://github.com/electron/electron/pull/2698),
+[electron/electron#2649](https://github.com/electron/electron/pull/2649).
 
 ### Node.js 4.1.0
 
 Since `v0.33.0` Electron ships with Node.js 4.1.0.
 
 Related pull request:
-[atom/electron#2817](https://github.com/atom/electron/pull/2817).
+[electron/electron#2817](https://github.com/electron/electron/pull/2817).
 
 ### node-pre-gyp
 
@@ -46,8 +46,8 @@ Electron now provides builds for Linux on ARMv7. It runs on popular platforms li
 
 Related issues:
 [atom/libchromiumcontent#138](https://github.com/atom/libchromiumcontent/pull/138),
-[atom/electron#2094](https://github.com/atom/electron/pull/2094),
-[atom/electron#366](https://github.com/atom/electron/issues/366).
+[electron/electron#2094](https://github.com/electron/electron/pull/2094),
+[electron/electron#366](https://github.com/electron/electron/issues/366).
 
 ### Yosemite-style Frameless Window
 
@@ -56,19 +56,19 @@ Related issues:
 A patch by [@jaanus](https://github.com/jaanus) has been merged that, like the other built-in OS X apps, allows creating frameless windows with system traffic lights integrated on OS X Yosemite and later.
 
 Related pull request:
-[atom/electron#2776](https://github.com/atom/electron/pull/2776).
+[electron/electron#2776](https://github.com/electron/electron/pull/2776).
 
 ### Google Summer of Code Printing Support
 
 After the Google Summer of Code we have merged patches by [@hokein](https://github.com/hokein) to improve printing support, and add the ability to print the page into PDF files.
 
 Related issues:
-[atom/electron#2677](https://github.com/atom/electron/pull/2677),
-[atom/electron#1935](https://github.com/atom/electron/pull/1935),
-[atom/electron#1532](https://github.com/atom/electron/pull/1532),
-[atom/electron#805](https://github.com/atom/electron/issues/805),
-[atom/electron#1669](https://github.com/atom/electron/pull/1669),
-[atom/electron#1835](https://github.com/atom/electron/pull/1835).
+[electron/electron#2677](https://github.com/electron/electron/pull/2677),
+[electron/electron#1935](https://github.com/electron/electron/pull/1935),
+[electron/electron#1532](https://github.com/electron/electron/pull/1532),
+[electron/electron#805](https://github.com/electron/electron/issues/805),
+[electron/electron#1669](https://github.com/electron/electron/pull/1669),
+[electron/electron#1835](https://github.com/electron/electron/pull/1835).
 
 ## Atom
 
