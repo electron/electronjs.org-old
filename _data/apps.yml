@@ -2044,3 +2044,14 @@
     - "database"
   license: "MIT"
   icon: "dbglass.png"
+-
+  name: "Elite Journal"
+  description: "Browse the Elite: Dangerous journal easily."
+  website: "https://github.com/willyb321/elite-journal"
+  repository: "https://github.com/willyb321/elite-journal"
+  keywords:
+    - "elite"
+    - "journal"
+    - "parser"
+  license: "MIT"
+  icon: "EliteJournal.png"
