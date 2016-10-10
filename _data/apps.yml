@@ -2045,6 +2045,16 @@
   license: "MIT"
   icon: "dbglass.png"
 -
+  name: "Vagrant Manager"
+  description: "Vagrant Manager is an status bar menu app that lets you manage all of your vagrant machines from one central location."
+  website: "https://github.com/vaibhav-sidapara/vagrant-manager"
+  repository: "https://github.com/vaibhav-sidapara/vagrant-manager"
+  keywords:
+    - "vagrant"
+    - "manager"
+  license: "MIT"
+  icon: "vagrant-manager.png"
+-
   name: "Elite Journal"
   description: "Browse the Elite: Dangerous journal easily."
   website: "https://github.com/willyb321/elite-journal"
