@@ -74,14 +74,6 @@
   icon: "kitematic.png"
   featuredOnHomepage: true
 -
-  name: "Pixate"
-  description: "Change the way you design with the most powerful prototyping platform on the planet"
-  website: "http://www.pixate.com"
-  repository: ""
-  keywords: []
-  license: ""
-  icon: "pixate.png"
--
   name: "Particle Dev"
   description: "A professional IDE for Particle"
   website: "https://www.particle.io/dev"
@@ -936,14 +928,6 @@
     - "editor"
   icon: "sencha_test.png"
 -
-  name: "AntSword"
-  description: "AntSword is a cross platform website management tools"
-  website: "https://github.com/antoor/antSword"
-  keywords:
-    - "webmanager"
-    - "webshell"
-  icon: "antsword.png"
--
   name: "MJML App"
   description: "Desktop wrapper around mjml language"
   website: "http://mjmlio.github.io/mjml-app/"
@@ -1592,18 +1576,6 @@
   license: "GNU"
   icon: "ionic-creator.png"
 -
-  name: "TwitchAlerts"
-  description: "Keep your viewers happy with beautiful alerts and notifications!"
-  website: "https://github.com/Meadowcottage/TwitchAlerts"
-  repository: "https://github.com/Meadowcottage/TwitchAlerts"
-  keywords:
-    - "Electron"
-    - "Twitch"
-    - "Notifications"
-    - "Streaming"
-  license: "GNU"
-  icon: "twitchalerts.png"
--
   name: "Museeks"
   description: "A simple, clean and cross-platform music player"
   website: "http://museeks.io/"
@@ -2072,3 +2044,24 @@
     - "database"
   license: "MIT"
   icon: "dbglass.png"
+-
+  name: "Vagrant Manager"
+  description: "Vagrant Manager is an status bar menu app that lets you manage all of your vagrant machines from one central location."
+  website: "https://github.com/vaibhav-sidapara/vagrant-manager"
+  repository: "https://github.com/vaibhav-sidapara/vagrant-manager"
+  keywords:
+    - "vagrant"
+    - "manager"
+  license: "MIT"
+  icon: "vagrant-manager.png"
+-
+  name: "Elite Journal"
+  description: "Browse the Elite: Dangerous journal easily."
+  website: "https://github.com/willyb321/elite-journal"
+  repository: "https://github.com/willyb321/elite-journal"
+  keywords:
+    - "elite"
+    - "journal"
+    - "parser"
+  license: "MIT"
+  icon: "EliteJournal.png"
