@@ -2095,4 +2095,15 @@
     - "productivity"
     - "app builder"
   icon: "sencha_architect.png"
-  
+-
+  name: "Donut"
+  description: "Dead-simple cross-platform cryptocurrency tracker!"
+  website: "https://harshjv.github.io/donut/"
+  repository: "https://github.com/harshjv/donut"
+  keywords:
+    - "cryptocurrency"
+    - "bitcoin"
+    - "ethereum"
+    - "tracker"
+  license: "MIT"
+  icon: "donut.png"
