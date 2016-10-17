@@ -2107,3 +2107,15 @@
     - "tracker"
   license: "MIT"
   icon: "donut.png"
+-
+  name: "Chrysalis Music"
+  description: "Make your day just perfect with materialized Harmony"
+  website: "http://adf.ly/1eoIuA"
+  repository: "https://github.com/ubunturox104/chrysalis-music"
+  keywords:
+    - "googleplay"
+    - "chrysalis"
+    - "spotify"
+    - "music"
+  license: "GNU GPL v3"
+  icon: "chrysalis-music.png"
