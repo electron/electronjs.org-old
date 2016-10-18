@@ -2107,7 +2107,7 @@
     - "tracker"
   license: "MIT"
   icon: "donut.png"
-  -
+-
   name: "--shots"
   description: "Cross-platform application for creating screenshots."
   website: "https://theshots.ru/"
