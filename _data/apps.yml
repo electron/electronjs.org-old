@@ -2107,3 +2107,14 @@
     - "tracker"
   license: "MIT"
   icon: "donut.png"
+-
+  name: "--shots"
+  description: "Cross-platform application for creating screenshots."
+  website: "https://theshots.ru/"
+  repository: "https://github.com/binjospookie/--shots"
+  keywords:
+    - "screenshots"
+    - "sharing"
+    - "productivity"
+  icon: "shots.png"
+
