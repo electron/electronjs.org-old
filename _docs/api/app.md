@@ -261,7 +261,7 @@ Returns:
 * `event` Event
 * `webContents` [WebContents](http://electron.atom.io/docs/api/web-contents)
 * `url` URL
-* `certificateList` [Certificate[]](structures/certificate.md)
+* `certificateList` [Certificate[]](http://electron.atom.io/docs/api/structures/certificate)
 * `callback` Function
 
 Emitted when a client certificate is requested.
@@ -558,7 +558,7 @@ The API uses the Windows Registry and LSCopyDefaultHandlerForURLScheme internall
 
 ### `app.setUserTasks(tasks)` _Windows_
 
-* `tasks` [Task[]](structures/task.md) - Array of `Task` objects
+* `tasks` [Task[]](http://electron.atom.io/docs/api/structures/task) - Array of `Task` objects
 
 Adds `tasks` to the [Tasks][tasks] category of the JumpList on Windows.
 
@@ -590,7 +590,7 @@ Returns `Object`:
 * `minItems` Integer - The minimum number of items that will be shown in the
   Jump List (for a more detailed description of this value see the
   [MSDN docs][JumpListBeginListMSDN]).
-* `removedItems` [JumpListItem[]](structures/jump-list-item.md) - Array of `JumpListItem` objects that correspond to
+* `removedItems` [JumpListItem[]](http://electron.atom.io/docs/api/structures/jump-list-item) - Array of `JumpListItem` objects that correspond to
   items that the user has explicitly removed from custom categories in the
   Jump List. These items must not be re-added to the Jump List in the **next**
   call to `app.setJumpList()`, Windows will not display any custom category
@@ -598,7 +598,7 @@ Returns `Object`:
 
 ### `app.setJumpList(categories)` _Windows_
 
-* `categories` [JumpListCategory[]](structures/jump-list-category.md) or `null` - Array of `JumpListCategory` objects.
+* `categories` [JumpListCategory[]](http://electron.atom.io/docs/api/structures/jump-list-category) or `null` - Array of `JumpListCategory` objects.
 
 Sets or removes a custom Jump List for the application, and returns one of the
 following strings:

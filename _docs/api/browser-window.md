@@ -1079,7 +1079,7 @@ On Windows and Linux always returns
 
 #### `win.setThumbarButtons(buttons)` _Windows_
 
-* `buttons` [ThumbarButton[]](structures/thumbar-button.md)
+* `buttons` [ThumbarButton[]](http://electron.atom.io/docs/api/structures/thumbar-button)
 
 Returns `Boolean` - Whether the buttons were added successfully
 

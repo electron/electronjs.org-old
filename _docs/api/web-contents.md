@@ -303,7 +303,7 @@ Returns:
 
 * `event` Event
 * `url` URL
-* `certificateList` [Certificate[]](structures/certificate.md)
+* `certificateList` [Certificate[]](http://electron.atom.io/docs/api/structures/certificate)
 * `callback` Function
 
 Emitted when a client certificate is requested.
