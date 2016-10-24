@@ -2107,3 +2107,14 @@
     - "tracker"
   license: "MIT"
   icon: "donut.png"
+-
+  name: "Zeplin"
+  description: "Collaboration app for designers and developers"
+  website: "https://zeplin.io"
+  keywords:
+    - "design"
+    - "development"
+    - "collaboration"
+    - "sketch"
+    - "photoshop"
+  icon: "zeplin.png"
