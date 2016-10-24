@@ -2129,3 +2129,16 @@
     - "productivity"
     - "cross-platform"
   icon: "tagflow.png"
+-
+  name: "ChatWork"
+  description: "Group chat for global teams"
+  website: "http://www.chatwork.com/download/"
+  keywords:
+    - "chatwork"
+    - "chat"
+    - "business"
+    - "collaboration"
+    - "teamwork"
+    - "messaging"
+    - "productivity"
+  icon: "chatwork.png"
