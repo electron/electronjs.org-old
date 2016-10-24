@@ -1,5 +1,5 @@
 ---
-version: v1.4.3
+version: v1.4.4
 category: API
 redirect_from:
     - /docs/v0.24.0/api/browser-window/
@@ -331,6 +331,7 @@ The `webPreferences` option is an object that can have the following properties:
   when the page becomes background. Defaults to `true`.
 * `offscreen` Boolean - Whether to enable offscreen rendering for the browser
   window. Defaults to `false`.
+* `sandbox` Boolean - Whether to enable Chromium OS-level sandbox.
 
 ### Instance Events
 
@@ -705,47 +706,28 @@ the player itself we would call this function with arguments of 16/9 and
 are within the content view--only that they exist. Just sum any extra width and
 height areas you have within the overall content view.
 
-#### `win.setBounds(options[, animate])`
+#### `win.setBounds(bounds[, animate])`
 
-* `options` Object
-  * `x` Integer
-  * `y` Integer
-  * `width` Integer
-  * `height` Integer
+* `bounds` [Rectangle](http://electron.atom.io/docs/api/structures/rectangle)
 * `animate` Boolean (optional) _macOS_
 
-Resizes and moves the window to `width`, `height`, `x`, `y`.
+Resizes and moves the window to the supplied bounds
 
 #### `win.getBounds()`
 
-Returns `Object`:
-* `width` Integer
-* `height` Integer
-* `x` Integer
-* `y` Integer
+Returns [`Rectangle`](http://electron.atom.io/docs/api/structures/rectangle)
 
-#### `win.setContentBounds(options[, animate])`
+#### `win.setContentBounds(bounds[, animate])`
 
-* `options` Object
-  * `x` Integer
-  * `y` Integer
-  * `width` Integer
-  * `height` Integer
+* `bounds` [Rectangle](http://electron.atom.io/docs/api/structures/rectangle)
 * `animate` Boolean (optional) _macOS_
 
 Resizes and moves the window's client area (e.g. the web page) to
-`width`, `height`, `x`, `y`.
+the supplied bounds.
 
 #### `win.getContentBounds()`
 
-Returns `Object`:
-* `width` Integer
-* `height` Integer
-* `x` Integer
-* `y` Integer
-
-Returns an object that contains the window's client area (e.g. the web page)
-width, height, x and y values.
+Returns [`Rectangle`](http://electron.atom.io/docs/api/structures/rectangle)
 
 #### `win.setSize(width, height[, animate])`
 
@@ -1008,11 +990,7 @@ Whether `Boolean` - Whether the window's document has been edited.
 
 #### `win.capturePage([rect, ]callback)`
 
-* `rect` Object (optional) - The area of the page to be captured
-  * `x` Integer
-  * `y` Integer
-  * `width` Integer
-  * `height` Integer
+* `rect` [Rectangle](http://electron.atom.io/docs/api/structures/rectangle) (optional) - The bounds to capture
 * `callback` Function
 
 Same as `webContents.capturePage([rect, ]callback)`.
@@ -1101,7 +1079,9 @@ On Windows and Linux always returns
 
 #### `win.setThumbarButtons(buttons)` _Windows_
 
-* `buttons` Array
+* `buttons` [ThumbarButton[]](structures/thumbar-button.md)
+
+Returns `Boolean` - Whether the buttons were added successfully
 
 Add a thumbnail toolbar with a specified set of buttons to the thumbnail image
 of a window in a taskbar button layout. Returns a `Boolean` object indicates
@@ -1137,11 +1117,7 @@ The `flags` is an array that can include following `String`s:
 
 #### `win.setThumbnailClip(region)` _Windows_
 
-* `region` Object - Region of the window
-  * `x` Integer - x-position of region
-  * `y` Integer - y-position of region
-  * `width` Integer - width of region
-  * `height` Integer - height of region
+* `region` [Rectangle](http://electron.atom.io/docs/api/structures/rectangle) - Region of the window
 
 Sets the region of the window to show as the thumbnail image displayed when
 hovering over the window in the taskbar. You can reset the thumbnail to be

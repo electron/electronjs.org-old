@@ -1,5 +1,5 @@
 ---
-version: v1.4.3
+version: v1.4.4
 category: API
 redirect_from:
     - /docs/v0.24.0/api/synopsis/
@@ -44,7 +44,7 @@ sort_title: "synopsis"
 
 > How to use Node.js and Electron APIs.
 
-All of [Node.js's built-in modules](http://nodejs.org/api/) are available in
+All of [Node.js's built-in modules](https://nodejs.org/api/) are available in
 Electron and third-party node modules also fully supported as well (including
 the [native modules](http://electron.atom.io/docs/tutorial/using-native-node-modules)).
 
@@ -55,7 +55,7 @@ both processes.
 
 The basic rule is: if a module is [GUI][gui] or low-level system related, then
 it should be only available in the main process. You need to be familiar with
-the concept of [main process vs. renderer process](http://electron.atom.io/docs/tutorial/quick-start#the-main-process)
+the concept of [main process vs. renderer process](http://electron.atom.io/docs/tutorial/quick-start#main-process)
 scripts to be able to use those modules.
 
 The main process script is just like a normal Node.js script:

@@ -1,5 +1,5 @@
 ---
-version: v1.4.3
+version: v1.4.4
 category: Development
 redirect_from:
     - /docs/v0.24.0/development/build-instructions-linux/
@@ -162,17 +162,7 @@ $ sudo ln -s /usr/lib/libncurses.so.5 /usr/lib/libtinfo.so.5
 
 ## Tests
 
-Test your changes conform to the project coding style using:
-
-```bash
-$ npm run lint
-```
-
-Test functionality using:
-
-```bash
-$ ./script/test.py
-```
+See [Build System Overview: Tests](http://electron.atom.io/docs/development/build-system-overview#tests)
 
 ## Advanced topics
 

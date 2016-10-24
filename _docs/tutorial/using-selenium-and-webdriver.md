@@ -1,5 +1,5 @@
 ---
-version: v1.4.3
+version: v1.4.4
 category: Tutorial
 redirect_from:
     - /docs/v0.24.0/tutorial/using-selenium-and-webdriver/

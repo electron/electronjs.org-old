@@ -1,5 +1,5 @@
 ---
-version: v1.4.3
+version: v1.4.4
 category: API
 redirect_from:
     - /docs/v0.24.0/api/chrome-command-line-switches/
@@ -70,18 +70,24 @@ Disables the disk cache for HTTP requests.
 
 Disable HTTP/2 and SPDY/3.1 protocols.
 
+## --debug=`port` and --debug-brk=`port`
+
+Debug-related flags, see the [Debugging the Main Process][debugging-main-process] guide for details.
+
 ## --remote-debugging-port=`port`
 
 Enables remote debugging over HTTP on the specified `port`.
 
 ## --js-flags=`flags`
 
-Specifies the flags passed to JS engine. It has to be passed when starting
+Specifies the flags passed to the Node JS engine. It has to be passed when starting
 Electron if you want to enable the `flags` in the main process.
 
 ```bash
 $ electron --js-flags="--harmony_proxies --harmony_collections" your-app
 ```
+
+See the [Node documentation][node-cli] or run `node --help` in your terminal for a list of available flags. Additionally, run `node --v8-options` to see a list of flags that specifically refer to Node's V8 JavaScript engine.
 
 ## --proxy-server=`address:port`
 
@@ -221,3 +227,5 @@ This switch only works when `--enable-logging` is also passed.
 [append-switch]: http://electron.atom.io/docs/api/app#appcommandlineappendswitchswitch-value
 [ready]: http://electron.atom.io/docs/api/app#event-ready
 [play-silent-audio]: https://github.com/atom/atom/pull/9485/files
+[debugging-main-process]: http://electron.atom.io/docs/tutorial/debugging-main-process
+[node-cli]: https://nodejs.org/api/cli.html
