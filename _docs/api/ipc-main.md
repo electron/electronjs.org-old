@@ -1,5 +1,5 @@
 ---
-version: v1.4.3
+version: v1.4.4
 category: API
 redirect_from:
     - /docs/v0.24.0/api/ipc-main/
@@ -45,7 +45,7 @@ sort_title: "ipcmain"
 > Communicate asynchronously from the main process to renderer processes.
 
 The `ipcMain` module is an instance of the
-[EventEmitter](https://nodejs.org/api/events.html) class. When used in the main
+[EventEmitter](https://nodejs.org/api/events.html#events_class_eventemitter) class. When used in the main
 process, it handles asynchronous and synchronous messages sent from a renderer
 process (web page). Messages sent from a renderer will be emitted to this
 module.

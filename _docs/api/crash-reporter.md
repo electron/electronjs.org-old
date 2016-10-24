@@ -1,5 +1,5 @@
 ---
-version: v1.4.3
+version: v1.4.4
 category: API
 redirect_from:
     - /docs/v0.24.0/api/crash-reporter/
@@ -64,6 +64,12 @@ following projects:
 * [socorro](https://github.com/mozilla/socorro)
 * [mini-breakpad-server](https://github.com/electron/mini-breakpad-server)
 
+Crash reports are saved locally in an application-specific temp directory folder.
+For a `productName` of `YourName`, crash reports will be stored in a folder
+named `YourName Crashes` inside the temp directory. You can customize this temp
+directory location for your app by calling the `app.setPath('temp', '/my/custom/temp')`
+API before starting the crash reporter.
+
 ## Methods
 
 The `crash-reporter` module has the following methods:
@@ -124,5 +130,5 @@ a `multipart/form-data` `POST`:
 * `_companyName` String - The company name in the `crashReporter` `options`
   object.
 * `upload_file_minidump` File - The crash report in the format of `minidump`.
-* All level one properties of the `extra` object in the `crashReporter`.
-  `options` object
+* All level one properties of the `extra` object in the `crashReporter`
+  `options` object.

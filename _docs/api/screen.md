@@ -1,5 +1,5 @@
 ---
-version: v1.4.3
+version: v1.4.4
 category: API
 redirect_from:
     - /docs/v0.24.0/api/screen/
@@ -47,7 +47,7 @@ sort_title: "screen"
 You cannot require or use this module until the `ready` event of the `app`
 module is emitted.
 
-`screen` is an [EventEmitter](http://nodejs.org/api/events.html#events_class_events_eventemitter).
+`screen` is an [EventEmitter](https://nodejs.org/api/events.html#events_class_eventemitter).
 
 **Note:** In the renderer / DevTools, `window.screen` is a reserved DOM
 property, so writing `let {screen} = require('electron')` will not work.
@@ -91,23 +91,6 @@ app.on('ready', () => {
 })
 ```
 
-## The `Display` object
-
-The `Display` object represents a physical display connected to the system. A
-fake `Display` may exist on a headless system, or a `Display` may correspond to
-a remote, virtual display.
-
-* `display` object
-  * `id` Integer - Unique identifier associated with the display.
-  * `rotation` Integer - Can be 0, 90, 180, 270, represents screen rotation in
-    clock-wise degrees.
-  * `scaleFactor` Number - Output device's pixel scale factor.
-  * `touchSupport` String - Can be `available`, `unavailable`, `unknown`.
-  * `bounds` Object
-  * `size` Object
-  * `workArea` Object
-  * `workAreaSize` Object
-
 ## Events
 
 The `screen` module emits the following events:
@@ -117,7 +100,7 @@ The `screen` module emits the following events:
 Returns:
 
 * `event` Event
-* `newDisplay` Object
+* `newDisplay` [Display](http://electron.atom.io/docs/api/structures/display)
 
 Emitted when `newDisplay` has been added.
 
@@ -126,7 +109,7 @@ Emitted when `newDisplay` has been added.
 Returns:
 
 * `event` Event
-* `oldDisplay` Object
+* `oldDisplay` [Display](http://electron.atom.io/docs/api/structures/display)
 
 Emitted when `oldDisplay` has been removed.
 
@@ -135,7 +118,7 @@ Emitted when `oldDisplay` has been removed.
 Returns:
 
 * `event` Event
-* `display` Object
+* `display` [Display](http://electron.atom.io/docs/api/structures/display)
 * `changedMetrics` String[]
 
 Emitted when one or more metrics change in a `display`. The `changedMetrics` is
@@ -172,10 +155,6 @@ Returns `Display` - The display nearest the specified point.
 
 ### `screen.getDisplayMatching(rect)`
 
-* `rect` Object
-  * `x` Integer
-  * `y` Integer
-  * `width` Integer
-  * `height` Integer
+* `rect` [Rectangle](http://electron.atom.io/docs/api/structures/rectangle)
 
 Returns `Display` - The display that most closely intersects the provided bounds.

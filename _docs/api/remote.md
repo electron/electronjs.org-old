@@ -1,5 +1,5 @@
 ---
-version: v1.4.3
+version: v1.4.4
 category: API
 redirect_from:
     - /docs/v0.24.0/api/remote/
@@ -62,7 +62,7 @@ win.loadURL('https://github.com')
 ```
 
 **Note:** For the reverse (access the renderer process from the main process),
-you can use [webContents.executeJavascript](http://electron.atom.io/docs/api/web-contents#webcontentsexecutejavascriptcode-usergesture-callback).
+you can use [webContents.executeJavascript](http://electron.atom.io/docs/api/web-contents#contentsexecutejavascriptcode-usergesture-callback).
 
 ## Remote Objects
 

@@ -1,5 +1,5 @@
 ---
-version: v1.4.3
+version: v1.4.4
 category: Development
 redirect_from:
     - /docs/v0.24.0/development/build-instructions-osx/
@@ -50,14 +50,14 @@ Follow the guidelines below for building Electron on macOS.
 * [node.js](http://nodejs.org) (external)
 
 If you are using the Python downloaded by Homebrew, you also need to install
-following python modules:
+the following Python modules:
 
-* pyobjc
+* [pyobjc](https://pythonhosted.org/pyobjc/install.html)
 
 ## Getting the Code
 
 ```bash
-$ git clone https://github.com/electron/electron.git
+$ git clone https://github.com/electron/electron
 ```
 
 ## Bootstrapping
@@ -102,14 +102,4 @@ $ npm run clean
 
 ## Tests
 
-Test your changes conform to the project coding style using:
-
-```bash
-$ ./script/cpplint.py
-```
-
-Test functionality using:
-
-```bash
-$ ./script/test.py
-```
+See [Build System Overview: Tests](http://electron.atom.io/docs/development/build-system-overview#tests)

@@ -1,5 +1,5 @@
 ---
-version: v1.4.3
+version: v1.4.4
 category: Development
 redirect_from:
     - /docs/v0.24.0/development/build-instructions-windows/
@@ -128,27 +128,7 @@ $ npm run clean
 
 ## Tests
 
-Test your changes conform to the project coding style using:
-
-```powershell
-$ python script\cpplint.py
-```
-
-Test functionality using:
-
-```powershell
-$ python script\test.py
-```
-
-Tests that include native modules (e.g. `runas`) can't be executed with the
-debug build (see [#2558](https://github.com/electron/electron/issues/2558) for
-details), but they will work with the release build.
-
-To run the tests with the release build use:
-
-```powershell
-$ python script\test.py -R
-```
+See [Build System Overview: Tests](http://electron.atom.io/docs/development/build-system-overview#tests)
 
 ## Troubleshooting
 

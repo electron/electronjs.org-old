@@ -1,5 +1,5 @@
 ---
-version: v1.4.3
+version: v1.4.4
 category: API
 redirect_from:
     - /docs/v0.24.0/api/app/
@@ -261,14 +261,7 @@ Returns:
 * `event` Event
 * `webContents` [WebContents](http://electron.atom.io/docs/api/web-contents)
 * `url` URL
-* `certificateList` [Objects]
-  * `data` String - PEM encoded data
-  * `issuerName` String - Issuer's Common Name
-  * `subjectName` String - Subject's Common Name
-  * `serialNumber` String - Hex value represented string
-  * `validStart` Integer - Start date of the certificate being valid in seconds
-  * `validExpiry` Integer - End date of the certificate being valid in seconds
-  * `fingerprint` String - Fingerprint of the certificate
+* `certificateList` [Certificate[]](http://electron.atom.io/docs/api/structures/certificate)
 * `callback` Function
 
 Emitted when a client certificate is requested.
@@ -565,7 +558,7 @@ The API uses the Windows Registry and LSCopyDefaultHandlerForURLScheme internall
 
 ### `app.setUserTasks(tasks)` _Windows_
 
-* `tasks` Array - Array of `Task` objects
+* `tasks` [Task[]](http://electron.atom.io/docs/api/structures/task) - Array of `Task` objects
 
 Adds `tasks` to the [Tasks][tasks] category of the JumpList on Windows.
 
@@ -597,7 +590,7 @@ Returns `Object`:
 * `minItems` Integer - The minimum number of items that will be shown in the
   Jump List (for a more detailed description of this value see the
   [MSDN docs][JumpListBeginListMSDN]).
-* `removedItems` Array - Array of `JumpListItem` objects that correspond to
+* `removedItems` [JumpListItem[]](http://electron.atom.io/docs/api/structures/jump-list-item) - Array of `JumpListItem` objects that correspond to
   items that the user has explicitly removed from custom categories in the
   Jump List. These items must not be re-added to the Jump List in the **next**
   call to `app.setJumpList()`, Windows will not display any custom category
@@ -605,13 +598,13 @@ Returns `Object`:
 
 ### `app.setJumpList(categories)` _Windows_
 
-* `categories` Array or `null` - Array of `JumpListCategory` objects.
+* `categories` [JumpListCategory[]](http://electron.atom.io/docs/api/structures/jump-list-category) or `null` - Array of `JumpListCategory` objects.
 
 Sets or removes a custom Jump List for the application, and returns one of the
 following strings:
 
 * `ok` - Nothing went wrong.
-* `error` - One or more errors occured, enable runtime logging to figure out
+* `error` - One or more errors occurred, enable runtime logging to figure out
   the likely cause.
 * `invalidSeparatorError` - An attempt was made to add a separator to a
   custom category in the Jump List. Separators are only allowed in the
@@ -700,15 +693,21 @@ app.setJumpList([
     name: 'Tools',
     items: [
       {
-        type: 'task', title: 'Tool A',
-        program: process.execPath, args: '--run-tool-a',
-        icon: process.execPath, iconIndex: 0,
+        type: 'task',
+        title: 'Tool A',
+        program: process.execPath,
+        args: '--run-tool-a',
+        icon: process.execPath,
+        iconIndex: 0,
         description: 'Runs Tool A'
       },
       {
-        type: 'task', title: 'Tool B',
-        program: process.execPath, args: '--run-tool-b',
-        icon: process.execPath, iconIndex: 0,
+        type: 'task',
+        title: 'Tool B',
+        program: process.execPath,
+        args: '--run-tool-b',
+        icon: process.execPath,
+        iconIndex: 0,
         description: 'Runs Tool B'
       }
     ]
@@ -717,14 +716,18 @@ app.setJumpList([
   { // has no name and no type so `type` is assumed to be "tasks"
     items: [
       {
-        type: 'task', title: 'New Project',
-        program: process.execPath, args: '--new-project',
+        type: 'task',
+        title: 'New Project',
+        program: process.execPath,
+        args: '--new-project',
         description: 'Create a new project.'
       },
       { type: 'separator' },
       {
-        type: 'task', title: 'Recover Project',
-        program: process.execPath, args: '--recover-project',
+        type: 'task',
+        title: 'Recover Project',
+        program: process.execPath,
+        args: '--recover-project',
         description: 'Recover Project'
       }
     ]
@@ -895,6 +898,18 @@ technologies, such as screen readers, has been detected. See
 https://www.chromium.org/developers/design-documents/accessibility for more
 details.
 
+### `app.setAboutPanelOptions(options)` _macOS_
+
+* `options` Object
+  * `applicationName` String (optional) - The app's name.
+  * `applicationVersion` String (optional) - The app's version.
+  * `copyright` String (optional) - Copyright information.
+  * `credits` String (optional) - Credit information.
+  * `version` String (optional) - The app's build version number.
+
+Set the about panel options. This will override the values defined in the app's
+`.plist` file. See the [Apple docs][about-panel-options] for more details.
+
 ### `app.commandLine.appendSwitch(switch[, value])`
 
 * `switch` String - A command-line switch
@@ -985,3 +1000,4 @@ Sets the `image` associated with this dock icon.
 [activity-type]: https://developer.apple.com/library/ios/documentation/Foundation/Reference/NSUserActivity_Class/index.html#//apple_ref/occ/instp/NSUserActivity/activityType
 [unity-requiremnt]: http://electron.atom.io/docs/tutorial/desktop-environment-integration#unity-launcher-shortcuts-linux
 [JumpListBeginListMSDN]: https://msdn.microsoft.com/en-us/library/windows/desktop/dd378398(v=vs.85).aspx
+[about-panel-options]: https://developer.apple.com/reference/appkit/nsapplication/1428479-orderfrontstandardaboutpanelwith?language=objc

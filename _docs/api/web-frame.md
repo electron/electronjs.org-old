@@ -1,5 +1,5 @@
 ---
-version: v1.4.3
+version: v1.4.4
 category: API
 redirect_from:
     - /docs/v0.24.0/api/web-frame/
@@ -152,41 +152,11 @@ this limitation.
 ### `webFrame.getResourceUsage()`
 
 Returns `Object`:
-* `images` Object
-  * `count` Integer
-  * `size` Integer
-  * `liveSize` Integer
-  * `decodedSize` Integer
-  * `purgedSize` Integer
-  * `purgeableSize` Integer
-* `cssStyleSheets` Object
-  * `count` Integer
-  * `size` Integer
-  * `liveSize` Integer
-  * `decodedSize` Integer
-  * `purgedSize` Integer
-  * `purgeableSize` Integer
-* `xslStyleSheets` Object
-  * `count` Integer
-  * `size` Integer
-  * `liveSize` Integer
-  * `decodedSize` Integer
-  * `purgedSize` Integer
-  * `purgeableSize` Integer
-* `fonts` Object
-  * `count` Integer
-  * `size` Integer
-  * `liveSize` Integer
-  * `decodedSize` Integer
-  * `purgedSize` Integer
-  * `purgeableSize` Integer
-* `other` Object
-  * `count` Integer
-  * `size` Integer
-  * `liveSize` Integer
-  * `decodedSize` Integer
-  * `purgedSize` Integer
-  * `purgeableSize` Integer
+* `images` [MemoryUsageDetails](http://electron.atom.io/docs/api/structures/memory-usage-details)
+* `cssStyleSheets` [MemoryUsageDetails](http://electron.atom.io/docs/api/structures/memory-usage-details)
+* `xslStyleSheets` [MemoryUsageDetails](http://electron.atom.io/docs/api/structures/memory-usage-details)
+* `fonts` [MemoryUsageDetails](http://electron.atom.io/docs/api/structures/memory-usage-details)
+* `other` [MemoryUsageDetails](http://electron.atom.io/docs/api/structures/memory-usage-details)
 
 Returns an object describing usage information of Blink's internal memory
 caches.
