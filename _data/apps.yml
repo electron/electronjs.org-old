@@ -2165,3 +2165,9 @@
     - "mongodb tool"
   license: "MIT"
   icon: "mongoclient.png"
+-
+  name: "Beaker Browser"
+  description: "An experimental P2P browser"
+  website: "https://beakerbrowser.com"
+  repository: "https://github.com/beakerbrowser/beaker"
+  icon: "beaker.png"
