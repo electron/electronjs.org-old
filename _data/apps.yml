@@ -32,19 +32,6 @@
   icon: "vscode.png"
   featuredOnHomepage: true
 -
-  name: "Mongoclient"
-  description: "Featured mongodb management tool"
-  website: "http://www.mongoclient.com"
-  repository: "https://github.com/rsercano/mongoclient"
-  keywords:
-    - "mongodb"
-    - "mongo"
-    - "mongodb management tool"
-    - "mongodb admin ui"
-    - "mongodb tool"
-  license: "MIT"
-  icon: "mongoclient.png"
--
   name: "Hive"
   description: "Home for busy teams"
   website: "https://hive.com"
@@ -2165,3 +2152,16 @@
     - "messaging"
     - "productivity"
   icon: "chatwork.png"
+-
+  name: "Mongoclient"
+  description: "Featured mongodb management tool"
+  website: "http://www.mongoclient.com"
+  repository: "https://github.com/rsercano/mongoclient"
+  keywords:
+    - "mongodb"
+    - "mongo"
+    - "mongodb management tool"
+    - "mongodb admin ui"
+    - "mongodb tool"
+  license: "MIT"
+  icon: "mongoclient.png"
