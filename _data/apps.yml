@@ -2177,3 +2177,10 @@
   website: "https://beakerbrowser.com"
   repository: "https://github.com/beakerbrowser/beaker"
   icon: "beaker.png"
+-
+  name: "englishextra-app"
+  description: "English Grammar for Russian Speakers"
+  website: "https://englishextraapp.codeplex.com"
+  repository: "https://github.com/englishextra/englishextra-app"
+  icon: "englishextra-app.png"
+  
