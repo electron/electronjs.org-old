@@ -160,11 +160,17 @@
   icon: "gitkraken.png"
   featuredOnHomepage: true
 -
-  name: "AIRTAME"
-  description: "Wireless HDMI streaming"
-  website: "http://www.airtame.com"
+  name: "Airtame"
+  description: "Wireless HDMI"
+  website: "https://www.airtame.com"
   repository: ""
-  keywords: []
+  keywords:
+    - "productivity"
+    - "enterprise"
+    - "wireless hdmi"
+    - "collaboration"
+    - "cross-platform"
+    - "teamwork"
   license: ""
   icon: "airtame.png"
 -
