@@ -2187,8 +2187,6 @@
   name: "sheepChat"
   description: "Multi-chat for streamers"
   website: "https://sheep.chat"
-  repository: ""
-  keywords: []
   license: "Freeware"
   icon: "sheepchat.png"
   
