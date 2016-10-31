@@ -2195,3 +2195,12 @@
     - "data"
   license: "BSD-3-Clause"
   icon: "nteract.png"
+-
+  name: "TIDAL"
+  description: "Music Streaming service"
+  website: "https://www.tidal.com"
+  keywords:
+    - "music"
+    - "streaming"
+    - "videos"
+  icon: "tidal.png"
