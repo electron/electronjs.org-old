@@ -2195,3 +2195,15 @@
     - "data"
   license: "BSD-3-Clause"
   icon: "nteract.png"
+-
+  name: "Wonder Reader"
+  description: "A digital comic book reader"
+  website: "http://alice-em.github.io/Wonder-Reader/"
+  repository: "https://github.com/alice-em/Wonder-Reader"
+  keywords:
+    - "comics"
+    - "cbr"
+    - "cbz"
+    - "comic book"
+  license: "ISC"
+  icon: "shieldIcon.png"
