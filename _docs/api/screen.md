@@ -1,5 +1,5 @@
 ---
-version: v1.4.4
+version: v1.4.5
 category: API
 redirect_from:
     - /docs/v0.24.0/api/screen/
@@ -132,6 +132,7 @@ The `screen` module has the following methods:
 ### `screen.getCursorScreenPoint()`
 
 Returns `Object`:
+
 * `x` Integer
 * `y` Integer
 

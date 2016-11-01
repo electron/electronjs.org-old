@@ -1,5 +1,5 @@
 ---
-version: v1.4.4
+version: v1.4.5
 category: API
 redirect_from:
     - /docs/v0.24.0/api/web-frame/
@@ -125,12 +125,26 @@ attackers.
 Resources will be loaded from this `scheme` regardless of the current page's
 Content Security Policy.
 
-### `webFrame.registerURLSchemeAsPrivileged(scheme)`
+### `webFrame.registerURLSchemeAsPrivileged(scheme[, options])`
 
 * `scheme` String
+* `options` Object (optional)
+  * `secure` Boolean - (optional) Default true.
+  * `bypassCSP` Boolean - (optional) Default true.
+  * `allowServiceWorkers` Boolean - (optional) Default true.
+  * `supportFetchAPI` Boolean - (optional) Default true.
+  * `corsEnabled` Boolean - (optional) Default true.
 
 Registers the `scheme` as secure, bypasses content security policy for resources,
 allows registering ServiceWorker and supports fetch API.
+
+Specify an option with the value of `false` to omit it from the registration.
+An example of registering a privileged scheme, without bypassing Content Security Policy:
+
+```javascript
+const {webFrame} = require('electron')
+webFrame.registerURLSchemeAsPrivileged('foo', { bypassCSP: false })
+```
 
 ### `webFrame.insertText(text)`
 
@@ -152,6 +166,7 @@ this limitation.
 ### `webFrame.getResourceUsage()`
 
 Returns `Object`:
+
 * `images` [MemoryUsageDetails](http://electron.atom.io/docs/api/structures/memory-usage-details)
 * `cssStyleSheets` [MemoryUsageDetails](http://electron.atom.io/docs/api/structures/memory-usage-details)
 * `xslStyleSheets` [MemoryUsageDetails](http://electron.atom.io/docs/api/structures/memory-usage-details)

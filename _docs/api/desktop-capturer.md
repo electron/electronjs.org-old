@@ -1,5 +1,5 @@
 ---
-version: v1.4.4
+version: v1.4.5
 category: API
 redirect_from:
     - /docs/v0.24.0/api/desktop-capturer/
@@ -36,7 +36,7 @@ redirect_from:
     - /docs/latest/api/desktop-capturer/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/desktop-capturer.md'
 excerpt: "Access information about media sources that can be used to capture audio and
-    video from the desktop using the [<code>navigator.webkitGetUserMedia</code>] API."
+    video from the desktop using the <a href=\"https://developer.mozilla.org/en/docs/Web/API/Navigator/getUserMedia\"><code>navigator.webkitGetUserMedia</code></a> API."
 title: "desktopCapturer"
 sort_title: "desktopcapturer"
 ---
@@ -104,25 +104,14 @@ The `desktopCapturer` module has the following methods:
   * `thumbnailSize` Object (optional) - The suggested size that the media source
     thumbnail should be scaled to, defaults to `{width: 150, height: 150}`.
 * `callback` Function
+  * `error` Error
+  * `sources` [DesktopCapturerSource[]](http://electron.atom.io/docs/api/structures/desktop-capturer-source)
 
 Starts gathering information about all available desktop media sources,
 and calls `callback(error, sources)` when finished.
 
-`sources` is an array of `Source` objects, each `Source` represents a
-screen or an individual window that can be captured, and has the following
-properties:
-
-* `id` String - The identifier of a window or screen that can be used as a
-  `chromeMediaSourceId` constraint when calling
-  [`navigator.webkitGetUserMedia`]. The format of the identifier will be
-  `window:XX` or `screen:XX`, where `XX` is a random generated number.
-* `name` String - A screen source will be named either `Entire Screen` or
-  `Screen <index>`, while the name of a window source will match the window
-  title.
-* `thumbnail` [NativeImage](http://electron.atom.io/docs/api/native-image) - A thumbnail image. **Note:**
-  There is no guarantee that the size of the thumbnail is the same as the
-  `thumnbailSize` specified in the `options` passed to
-  `desktopCapturer.getSources`. The actual size depends on the scale of the
-  screen or window.
+`sources` is an array of [`DesktopCapturerSource`](http://electron.atom.io/docs/api/structures/desktop-capturer-source)
+objects, each `DesktopCapturerSource` represents a screen or an individual window that can be
+captured.
 
 [`navigator.webkitGetUserMedia`]: https://developer.mozilla.org/en/docs/Web/API/Navigator/getUserMedia

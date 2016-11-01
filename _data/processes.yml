@@ -23,6 +23,7 @@
 "MenuItem": "Main Process"
 "Menu": "Main Process"
 "nativeImage": "Main and Renderer Process"
+"net": "Main Process"
 "powerMonitor": "Main Process"
 "powerSaveBlocker": "Main Process"
 "process": "Main and Renderer Process"

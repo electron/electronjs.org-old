@@ -1,5 +1,5 @@
 ---
-version: v1.4.4
+version: v1.4.5
 category: Tutorial
 redirect_from:
     - /docs/v0.24.0/tutorial/using-pepper-flash-plugin/
@@ -119,3 +119,5 @@ Electron.
 
 On Windows the path passed to `--ppapi-flash-path` has to use `\` as path
 delimiter, using POSIX-style paths will not work.
+
+For some operations, such as streaming media using RTMP, it is necessary to grant wider permissions to players’ `.swf` files. One way of accomplishing this, is to use [nw-flash-trust](https://github.com/szwacz/nw-flash-trust).

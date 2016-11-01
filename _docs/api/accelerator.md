@@ -1,5 +1,5 @@
 ---
-version: v1.4.4
+version: v1.4.5
 category: API
 redirect_from:
     - /docs/v0.24.0/api/accelerator/
@@ -44,13 +44,29 @@ sort_title: "accelerator"
 
 > Define keyboard shortcuts.
 
-Accelerators can contain multiple modifiers and key codes, combined by
-the `+` character.
+Accelerators are Strings that can contain multiple modifiers and key codes,
+combined by the `+` character, and are used to define keyboard shortcuts
+throughout your application.
 
 Examples:
 
 * `CommandOrControl+A`
 * `CommandOrControl+Shift+Z`
+
+Shortcuts are registered with the [`globalShortcut`](http://electron.atom.io/docs/api/global-shortcut) module
+using the [`register`](http://electron.atom.io/docs/api/global-shortcut#globalshortcutregisteraccelerator-callback)
+method, i.e.
+
+```javascript
+const {app, globalShortcut} = require('electron')
+
+app.on('ready', () => {
+  // Register a 'CommandOrControl+Y' shortcut listener.
+  globalShortcut.register('CommandOrControl+Y', () => {
+    // Do stuff when Y and either Command/Control is pressed.
+  })
+})
+```
 
 ## Platform notice
 

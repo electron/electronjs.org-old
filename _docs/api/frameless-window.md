@@ -1,5 +1,5 @@
 ---
-version: v1.4.4
+version: v1.4.5
 category: API
 redirect_from:
     - /docs/v0.24.0/api/frameless-window/
@@ -70,9 +70,23 @@ hidden and your content extend to the full window size, yet still preserve
 the window controls ("traffic lights") for standard window actions.
 You can do so by specifying the new `titleBarStyle` option:
 
+#### `hidden`
+
+Results in a hidden title bar and a full size content window, yet the title bar still has the standard window controls (“traffic lights”) in the top left.
+
 ```javascript
 const {BrowserWindow} = require('electron')
 let win = new BrowserWindow({titleBarStyle: 'hidden'})
+win.show()
+```
+
+#### `hidden-inset`
+
+Results in a hidden title bar with an alternative look where the traffic light buttons are slightly more inset from the window edge.
+
+```javascript
+const {BrowserWindow} = require('electron')
+let win = new BrowserWindow({titleBarStyle: 'hidden-inset'})
 win.show()
 ```
 
