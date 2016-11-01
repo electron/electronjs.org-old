@@ -490,7 +490,6 @@
   keywords: []
   license: ""
   icon: "googleplaymusicdesktopplayer.png"
-  featuredOnHomepage: false
 -
   name: "World History AP"
   description: "Help students study for the rigorous AP exam"
@@ -499,7 +498,6 @@
   keywords: []
   license: ""
   icon: "whap.png"
-  featuredOnHomepage: false
 -
   name: "Hain"
   description: "An 'alt+space' launcher for Windows"
@@ -508,7 +506,6 @@
   keywords: []
   license: ""
   icon: "hain.png"
-  featuredOnHomepage: false
 -
   name: "1Clipboard"
   description: "A universal clipboard managing app that makes it easy to access your clipboard from anywhere on any device"
@@ -526,7 +523,6 @@
   keywords: []
   license: ""
   icon: "open-stage-control.png"
-  featuredOnHomepage: false
 -
   name: "Curse"
   description: "Fast and free communication for gamers"
@@ -535,7 +531,6 @@
   keywords: []
   license: ""
   icon: "curse.png"
-  featuredOnHomepage: false
 -
   name: "MakeAppIcon Desktop"
   description: "Resizer for mobile app icons"
@@ -544,7 +539,6 @@
   keywords: []
   license: ""
   icon: "makeappicon.png"
-  featuredOnHomepage: false
 -
   name: "TweakStyle"
   description: "The next code editor"
@@ -553,7 +547,6 @@
   keywords: []
   license: ""
   icon: "TweakStyle.png"
-  featuredOnHomepage: false
 -
   name: "WebTorrent"
   description: "The streaming torrent client"
@@ -571,7 +564,6 @@
   keywords: []
   license: ""
   icon: "httpschecker.png"
-  featuredOnHomepage: false
 -
   name: "Mattermost"
   description: "Open source, self-hosted Slack-alternative"
@@ -580,7 +572,6 @@
   keywords: []
   license: ""
   icon: "mattermost.png"
-  featuredOnHomepage: false
 -
   name: "BearyChat"
   description: "Focused team communications"
@@ -589,7 +580,6 @@
   keywords: []
   license: ""
   icon: "bearychat.png"
-  featuredOnHomepage: false
 -
   name: "Explorer"
   description: "Statistics the easy way"
@@ -598,7 +588,6 @@
   keywords: []
   license: ""
   icon: "explorer.png"
-  featuredOnHomepage: false
 -
   name: "MockingBot"
   description: "The Missing Wireframing Tool For Mobile"
@@ -607,7 +596,6 @@
   keywords: []
   license: ""
   icon: "mockingbot.png"
-  featuredOnHomepage: false
 -
   name: "Fastlane"
   description: "Reserve an Uber from your Mac"
@@ -616,7 +604,6 @@
   keywords: []
   license: ""
   icon: "fastlane.png"
-  featuredOnHomepage: false
 -
   name: "Datazenit"
   description: "Modern database administration tool"
@@ -625,7 +612,6 @@
   keywords: []
   license: ""
   icon: "datazenit.png"
-  featuredOnHomepage: false
 -
   name: "Cryptocat"
   description: "Free secure chat software"
@@ -1667,6 +1653,7 @@
     - "tool"
     - "productivity"
   icon: "svgsus.png"
+  featuredOnHomepage: true
 -
   name: "Ramme"
   description: "Unofficial Instagram Desktop App."
@@ -2026,6 +2013,7 @@
     - "development"
   license: "MIT"
   icon: "now.png"
+  featuredOnHomepage: true
 -
   name: "Kap"
   description: "An open-source screen recorder built with web technology"
@@ -2039,6 +2027,7 @@
     - "video"
   license: "MIT"
   icon: "kap.png"
+  featuredOnHomepage: true
 -
   name: "DBGlass"
   description: "Simple cross-platform PostgreSQL client"
@@ -2177,6 +2166,7 @@
   website: "https://beakerbrowser.com"
   repository: "https://github.com/beakerbrowser/beaker"
   icon: "beaker.png"
+  featuredOnHomepage: true
 -
   name: "englishextra-app"
   description: "English Grammar for Russian Speakers"
