@@ -1,5 +1,5 @@
 ---
-version: v1.4.4
+version: v1.4.5
 category: API
 redirect_from:
     - /docs/v0.24.0/api/content-tracing/
@@ -76,6 +76,7 @@ The `contentTracing` module has the following methods:
 ### `contentTracing.getCategories(callback)`
 
 * `callback` Function
+  * `categories` String[]
 
 Get a set of category groups. The category groups can change as new code paths
 are reached.
@@ -129,6 +130,7 @@ before options parsed from `traceOptions` are applied on it.
 
 * `resultFilePath` String
 * `callback` Function
+  * `resultFilePath` String
 
 Stop recording on all processes.
 
@@ -173,6 +175,7 @@ Once all child processes have acknowledged the `stopMonitoring` request the
 
 * `resultFilePath` String
 * `callback` Function
+  * `resultFilePath` String
 
 Get the current monitoring traced data.
 
@@ -189,6 +192,8 @@ request the `callback` will be called with a file that contains the traced data.
 ### `contentTracing.getTraceBufferUsage(callback)`
 
 * `callback` Function
+  * `value` Number
+  * `percentage` Number
 
 Get the maximum usage across processes of trace buffer as a percentage of the
 full state. When the TraceBufferUsage value is determined the `callback` is

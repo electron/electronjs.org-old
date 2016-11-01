@@ -1,5 +1,5 @@
 ---
-version: v1.4.4
+version: v1.4.5
 category: API
 redirect_from:
     - /docs/v0.24.0/api/system-preferences/
@@ -105,6 +105,8 @@ that contains the user information dictionary sent along with the notification.
 
 * `event` String
 * `callback` Function
+  * `event` String
+  * `userInfo` Object
 
 Subscribes to native notifications of macOS, `callback` will be called with
 `callback(event, userInfo)` when the corresponding `event` happens. The
@@ -132,6 +134,8 @@ Removes the subscriber with `id`.
 
 * `event` String
 * `callback` Function
+  * `event` String
+  * `userInfo` Object
 
 Same as `subscribeNotification`, but uses `NSNotificationCenter` for local defaults.
 This is necessary for events such as `NSUserDefaultsDidChangeNotification`

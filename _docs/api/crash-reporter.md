@@ -1,5 +1,5 @@
 ---
-version: v1.4.4
+version: v1.4.5
 category: API
 redirect_from:
     - /docs/v0.24.0/api/crash-reporter/
@@ -99,6 +99,7 @@ crash reports.
 ### `crashReporter.getLastCrashReport()`
 
 Returns `Object`:
+
 * `date` String
 * `ID` Integer
 
@@ -108,6 +109,7 @@ sent or the crash reporter has not been started, `null` is returned.
 ### `crashReporter.getUploadedReports()`
 
 Returns `Object[]`:
+
 * `date` String
 * `ID` Integer
 

@@ -1,5 +1,23 @@
 [
   {
+    "url": "https://api.github.com/repos/electron/electron/releases/4538258",
+    "assets_url": "https://api.github.com/repos/electron/electron/releases/4538258/assets",
+    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/4538258/assets{?name,label}",
+    "html_url": "https://github.com/electron/electron/releases/tag/v1.4.5",
+    "id": 4538258,
+    "tag_name": "v1.4.5",
+    "target_commitish": "master",
+    "name": "electron v1.4.5",
+    "draft": false,
+    "prerelease": false,
+    "created_at": "2016-11-01T15:51:10Z",
+    "published_at": "2016-11-01T17:34:37Z",
+    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v1.4.5",
+    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v1.4.5",
+    "body": "## Bug Fixes\r\n\r\n* Fixed a crash when loading a URL using a persistent session. #7628\r\n* Fixed a crash when using `setCertificateVerifyProc` on a session. #7651\r\n* Fixed a crash when creating notifications on a session that is using a permission request handler. #7788\r\n\r\n### Windows\r\n\r\n* Fixed an issue where the web contents would lose focus when clicking the\r\n  menu bar causing certain role-based menu items to not work. #7707\r\n* Fixed an issue where maximized windows would be restored/un-maximized to the\r\n  wrong location. #7766\r\n\r\n## New APIs\r\n\r\n* Added a new `net` module that exposes Chrome's native network APIs, available\r\n  via `require('electron').net` in the main process. #7577\r\n* Added support for setting additional options to\r\n  `webFrame.registerURLSchemeAsPrivileged`. #7665\r\n* Added support for a `webpreferences` attribute to `<webview>` tags that can\r\n  be used to set additional options similar to the `webPreferences` option on\r\n  the `BrowserWindow`constructor. #7631\r\n\r\n### macOS\r\n\r\n* Added support to the `clipboard` module for reading from and writing to the\r\n  find pasteboard, available as `clipboard.readFindText`/`writeFindText`. #7719\r\n* Added `BrowserWindow.previewFile` that opens a file in the native Quick Look\r\n  view. #7592\r\n",
+    "version": "1.4.5"
+  },
+  {
     "url": "https://api.github.com/repos/electron/electron/releases/4436472",
     "assets_url": "https://api.github.com/repos/electron/electron/releases/4436472/assets",
     "upload_url": "https://uploads.github.com/repos/electron/electron/releases/4436472/assets{?name,label}",
@@ -520,23 +538,5 @@
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v1.0.1",
     "body": "Changelog:\r\n\r\n* Fix devtools extension not loading.",
     "version": "1.0.1"
-  },
-  {
-    "url": "https://api.github.com/repos/electron/electron/releases/3183907",
-    "assets_url": "https://api.github.com/repos/electron/electron/releases/3183907/assets",
-    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/3183907/assets{?name,label}",
-    "html_url": "https://github.com/electron/electron/releases/tag/v1.0.0",
-    "id": 3183907,
-    "tag_name": "v1.0.0",
-    "target_commitish": "master",
-    "name": "electron v1.0.0",
-    "draft": false,
-    "prerelease": false,
-    "created_at": "2016-05-09T12:17:35Z",
-    "published_at": "2016-05-11T11:08:00Z",
-    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v1.0.0",
-    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v1.0.0",
-    "body": "Changelog:\r\n\r\n* Bump version number to 1.0.0.\r\n* Remove deprecated APIs. [#5373](https://github.com/electron/electron/pull/5373)\r\n\r\nMigration notice:\r\n\r\n* Please update your app to v0.37.8 first to check whether there are deprecated\r\n  APIs usages.\r\n* Following deprecated events of `BrowserWindow` have been removed but there\r\n  were no deprecation warnings in previous versions, you should use the\r\n  corresponding events in `webContents` instead:\r\n  * `crash`\r\n  * `devtools-focused`\r\n  * `devtools-opened`\r\n  * `devtools-closed`\r\n* `NativeImage.toDataUrl` has been removed but there were no deprecation\r\n  warnings in previous versions, you should use `toDataURL` instead.\r\n",
-    "version": "1.0.0"
   }
 ]

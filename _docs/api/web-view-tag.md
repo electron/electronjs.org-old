@@ -1,5 +1,5 @@
 ---
-version: v1.4.4
+version: v1.4.5
 category: API
 redirect_from:
     - /docs/v0.24.0/api/web-view-tag/
@@ -236,6 +236,20 @@ value will fail with a DOM exception.
 
 If "on", the guest page will be allowed to open new windows.
 
+### `webpreferences`
+
+```html
+<webview src="https://github.com" webpreferences="allowDisplayingInsecureContent, javascript=no"></webview>
+```
+
+A list of strings which specifies the web preferences to be set on the webview, separated by `,`.
+The full list of supported preference strings can be found in [BrowserWindow](http://electron.atom.io/docs/api/browser-window#new-browserwindowoptions).
+
+The string follows the same format as the features string in `window.open`.
+A name by itself is given a `true` boolean value.
+A preference can be set to another value by including an `=`, followed by the value.
+Special values `yes` and `1` are interpreted as `true`, while `no` and `0` are interpreted as `false`.  
+
 ### `blinkfeatures`
 
 ```html
@@ -389,7 +403,7 @@ Injects CSS into the guest page.
 * `code` String
 * `userGesture` Boolean - Default `false`.
 * `callback` Function (optional) - Called after script has been executed.
-  * `result`
+  * `result` Any
 
 Evaluates `code` in page. If `userGesture` is set, it will create the user
 gesture context in the page. HTML APIs like `requestFullScreen`, which require

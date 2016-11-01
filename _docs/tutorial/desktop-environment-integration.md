@@ -1,5 +1,5 @@
 ---
-version: v1.4.4
+version: v1.4.5
 category: Tutorial
 redirect_from:
     - /docs/v0.24.0/tutorial/desktop-environment-integration/
@@ -357,6 +357,29 @@ let win = new BrowserWindow()
 win.setOverlayIcon('path/to/overlay.png', 'Description for overlay')
 ```
 
+## Flash Frame (Windows)
+
+On Windows you can highlight the taskbar button to get the user's attention.
+This is similar to bouncing the dock icon on macOS.
+From the MSDN reference documentation:
+
+> Typically, a window is flashed to inform the user that the window requires
+> attention but that it does not currently have the keyboard focus.
+
+To flash the BrowserWindow taskbar button, you can use the
+[BrowserWindow.flashFrame][flashframe] API:
+
+```javascript
+const {BrowserWindow} = require('electron')
+let win = new BrowserWindow()
+win.once('focus', () => win.flashFrame(false))
+win.flashFrame(true)
+```
+
+Don't forget to call the `flashFrame` method with `false` to turn off the flash. In
+the above example, it is called when the window comes into focus, but you might
+use a timeout or some other event to disable it.
+
 ## Represented File of Window (macOS)
 
 On macOS a window can set its represented file, so the file's icon can show in
@@ -424,3 +447,4 @@ ipcMain.on('ondragstart', (event, filePath) => {
 [tray-balloon]: http://electron.atom.io/docs/api/tray#traydisplayballoonoptions-windows
 [app-user-model-id]: https://msdn.microsoft.com/en-us/library/windows/desktop/dd378459(v=vs.85).aspx
 [notification-spec]: https://developer.gnome.org/notification-spec/
+[flashframe]: http://electron.atom.io/docs/api/browser-window#winflashframeflag

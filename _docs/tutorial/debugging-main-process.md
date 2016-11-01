@@ -1,5 +1,5 @@
 ---
-version: v1.4.4
+version: v1.4.5
 category: Tutorial
 redirect_from:
     - /docs/v0.24.0/tutorial/debugging-main-process/
@@ -56,6 +56,10 @@ process:
 Electron will listen for V8 debugger protocol messages on the specified `port`,
 an external debugger will need to connect on this port. The default `port` is
 `5858`.
+
+```shell
+electron --debug=5858 your/app
+```
 
 ### `--debug-brk=[port]`
 

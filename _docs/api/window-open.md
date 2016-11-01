@@ -1,5 +1,5 @@
 ---
-version: v1.4.4
+version: v1.4.5
 category: API
 redirect_from:
     - /docs/v0.24.0/api/window-open/
@@ -68,6 +68,7 @@ The `features` string follows the format of standard browser, but each feature
 has to be a field of `BrowserWindow`'s options.
 
 **Notes:**
+
 * Node integration will always be disabled in the opened `window` if it is
   disabled on the parent window.
 * Non-standard features (that are not handled by Chromium or Electron) given in
