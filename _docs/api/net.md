@@ -101,7 +101,7 @@ The `net` module has the following methods:
 
 ### `net.request(options)`
 
-* `options` (Object | String) - The `ClientRequest` constructor options.
+* `options` (Object &#124; String) - The `ClientRequest` constructor options.
 
 Returns `ClientRequest`
 
@@ -119,7 +119,7 @@ interface and is therefore an [EventEmitter](https://nodejs.org/api/events.html#
 
 ### `new ClientRequest(options)`
 
-* `options` (Object | String) - If `options` is a String, it is interpreted as
+* `options` (Object &#124; String) - If `options` is a String, it is interpreted as
   the request URL. If it is an object, it is expected to fully specify an HTTP
   request via the following properties:
   * `method` String (optional) - The HTTP request method. Defaults to the GET
@@ -270,7 +270,7 @@ before first write. Trying to call it after the first write will throw an error.
 
 #### `request.write(chunk[, encoding][, callback])`
 
-* `chunk` (String | Buffer) - A chunk of the request body's data. If it is a
+* `chunk` (String &#124; Buffer) - A chunk of the request body's data. If it is a
   string, it is converted into a Buffer using the specified encoding.
 * `encoding` String (optional) - Used to convert string chunks into Buffer
   objects. Defaults to 'utf-8'.
@@ -288,7 +288,7 @@ it is not allowed to add or remove a custom header.
 
 #### `request.end([chunk][, encoding][, callback])`
 
-* `chunk` (String | Buffer) (optional)
+* `chunk` (String &#124; Buffer) (optional)
 * `encoding` String (optional)
 * `callback` Function (optional)
 
