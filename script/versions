@@ -4,7 +4,7 @@ var fs = require('fs')
 var request = require('request')
 var yaml = require('yamljs')
 
-var url = 'https://atom.io/download/atom-shell/index.json'
+var url = 'https://atom.io/download/electron/index.json'
 
 request(url, function (error, response, body) {
   if (error) return console.log(error)
