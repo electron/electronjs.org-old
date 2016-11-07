@@ -1,7 +1,7 @@
 [
   {
-    "name": "HyperTerm",
-    "href": "https://hyperterm.org",
+    "name": "Hyper",
+    "href": "https://github.com/zeit/hyper",
     "description": "Terminal.",
     "category": "apps",
     "subcategory": "open_source"
@@ -10,6 +10,13 @@
     "name": "WebTorrent",
     "href": "https://github.com/feross/webtorrent-app",
     "description": "Streaming torrent client.",
+    "category": "apps",
+    "subcategory": "open_source"
+  },
+  {
+    "name": "Kap",
+    "href": "https://github.com/wulkano/kap",
+    "description": "Screen recorder with GIF support.",
     "category": "apps",
     "subcategory": "open_source"
   },
@@ -155,7 +162,7 @@
   },
   {
     "name": "KeeWeb",
-    "href": "https://github.com/antelle/keeweb",
+    "href": "https://github.com/keeweb/keeweb",
     "description": "Unofficial KeePass app.",
     "category": "apps",
     "subcategory": "open_source"
@@ -597,7 +604,7 @@
   {
     "name": "Boostnote",
     "href": "https://github.com/BoostIO/Boostnote",
-    "description": "Markdown note app for developers.",
+    "description": "Markdown note & code snippet app for developers.",
     "category": "apps",
     "subcategory": "open_source"
   },
@@ -794,6 +801,41 @@
     "name": "Ramme",
     "href": "https://github.com/terkelg/ramme",
     "description": "Unofficial Instagram app.",
+    "category": "apps",
+    "subcategory": "open_source"
+  },
+  {
+    "name": "Moonview",
+    "href": "https://github.com/teesloane/moonview",
+    "description": "Ambient notepad.",
+    "category": "apps",
+    "subcategory": "open_source"
+  },
+  {
+    "name": "Temps",
+    "href": "https://jackd248.github.io/temps/",
+    "description": "Weather forecast in your menubar.",
+    "category": "apps",
+    "subcategory": "open_source"
+  },
+  {
+    "name": "DBGlass",
+    "href": "https://github.com/web-pal/DBGlass",
+    "description": "PostgreSQL client.",
+    "category": "apps",
+    "subcategory": "open_source"
+  },
+  {
+    "name": "Slide Beacon",
+    "href": "https://github.com/dermike/slide-beacon-app",
+    "description": "Physical web beacon broadcast.",
+    "category": "apps",
+    "subcategory": "open_source"
+  },
+  {
+    "name": "Rambox",
+    "href": "https://github.com/saenzramiro/rambox",
+    "description": "Chat and email app that combines multiple services like Discord, Hangouts, Gmail and Outlook.",
     "category": "apps",
     "subcategory": "open_source"
   },
@@ -1001,6 +1043,20 @@
     "subcategory": "closed_source"
   },
   {
+    "name": "Inkdrop",
+    "href": "https://www.inkdrop.info",
+    "description": "Markdown notebook for hackers.",
+    "category": "apps",
+    "subcategory": "closed_source"
+  },
+  {
+    "name": "Exodus",
+    "href": "https://www.exodus.io",
+    "description": "Secure, manage, and exchange blockchain assets like Bitcoin and Ethereum.",
+    "category": "apps",
+    "subcategory": "closed_source"
+  },
+  {
     "name": "electron-boilerplate",
     "href": "https://github.com/sindresorhus/electron-boilerplate",
     "description": "Boilerplate to kickstart creating an app.",
@@ -1169,7 +1225,7 @@
   {
     "name": "electron-compile",
     "href": "https://github.com/electron/electron-compile",
-    "description": "Use ES2015, CoffeeScript, LESS, SCSS in your app without a precompilation step.",
+    "description": "Use ES2015, CoffeeScript, Less, Stylus in your app without a precompilation step.",
     "category": "tools",
     "subcategory": "for_electron"
   },
@@ -1356,6 +1412,13 @@
     "subcategory": "for_electron"
   },
   {
+    "name": "electron-redux",
+    "href": "https://github.com/hardchor/electron-redux",
+    "description": "Synchronize Redux state across windows.",
+    "category": "tools",
+    "subcategory": "for_electron"
+  },
+  {
     "name": "devtool",
     "href": "https://github.com/Jam3/devtool",
     "description": "Debug Node.js with Chrome DevTools.",
@@ -1533,8 +1596,8 @@
     "category": "books"
   },
   {
-    "name": "Creating Desktop Apps with Electron",
-    "href": "https://www.youtube.com/watch?v=ojX5yz35v4M",
+    "name": "Getting Started with Electron 1.x",
+    "href": "https://www.youtube.com/watch?v=jKzBJAowmGg",
     "category": "videos"
   },
   {
@@ -1565,11 +1628,6 @@
   {
     "name": "The New Desktop: Electron, React, & Pixel-Perfect Native-Feeling Experiences",
     "href": "https://www.youtube.com/watch?v=jRPUB-D1Wx0",
-    "category": "videos"
-  },
-  {
-    "name": "Getting Started with Electron 1.x",
-    "href": "https://www.youtube.com/watch?v=jKzBJAowmGg",
     "category": "videos"
   },
   {
