@@ -2203,3 +2203,9 @@
     - "comic book"
   license: "ISC"
   icon: "shieldIcon.png"
+-
+  name: "LosslessCut"
+  description: "GUI tool for lossless trimming / cutting of videos using ffmpeg"
+  website: "https://github.com/mifi/lossless-cut"
+  license: "MIT"
+  icon: "lossless-cut.png"
