@@ -2223,3 +2223,13 @@
     - "reuse"
   license: ""
   icon: "treevea.PNG"
+-
+  name: "Dext"
+  description: "JavaScript launcher"
+  website: "https://github.com/vutran/dext"
+  keywords:
+    - "dext"
+    - "launcher"
+    - "search"
+  license: "MIT"
+  icon: "dext.png"
