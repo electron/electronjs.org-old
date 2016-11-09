@@ -1,5 +1,5 @@
 ---
-version: v1.4.5
+version: v1.4.6
 category: API
 redirect_from:
     - /docs/v0.24.0/api/auto-updater/
@@ -43,6 +43,8 @@ sort_title: "autoupdater"
 # autoUpdater
 
 > Enable apps to automatically update themselves.
+
+Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process)
 
 The `autoUpdater` module provides an interface for the
 [Squirrel](https://github.com/Squirrel) framework.

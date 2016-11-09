@@ -1,5 +1,5 @@
 ---
-version: v1.4.5
+version: v1.4.6
 category: API
 redirect_from:
     - /docs/v0.24.0/api/system-preferences/
@@ -43,6 +43,8 @@ sort_title: "systempreferences"
 # systemPreferences
 
 > Get system preferences.
+
+Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process)
 
 ```javascript
 const {systemPreferences} = require('electron')

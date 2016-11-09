@@ -1,5 +1,5 @@
 ---
-version: v1.4.5
+version: v1.4.6
 category: API
 redirect_from:
     - /docs/v0.24.0/api/net/
@@ -43,6 +43,8 @@ sort_title: "net"
 # net
 
 > Issue HTTP/HTTPS requests using Chromium's native networking library
+
+Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process)
 
 The `net` module is a client-side API for issuing HTTP(S) requests. It is
 similar to the [HTTP](https://nodejs.org/api/http.html) and
@@ -114,6 +116,8 @@ specified protocol scheme in the `options` object.
 
 > Make HTTP/HTTPS requests.
 
+Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process)
+
 `ClientRequest` implements the [Writable Stream](https://nodejs.org/api/stream.html#stream_writable_streams)
 interface and is therefore an [EventEmitter](https://nodejs.org/api/events.html#events_class_eventemitter).
 
@@ -146,7 +150,7 @@ strictly follow the Node.js model as described in the
 
 For instance, we could have created the same request to 'github.com' as follows:
 
-```JavaScript
+```javascript
 const request = net.request({
   method: 'GET',
   protocol: 'https:',
@@ -183,7 +187,7 @@ The `callback` function is expected to be called back with user credentials:
 * `username` String
 * `password` String
 
-```JavaScript
+```javascript
 request.on('login', (authInfo, callback) => {
   callback('username', 'password')
 })
@@ -192,9 +196,9 @@ request.on('login', (authInfo, callback) => {
 Providing empty credentials will cancel the request and report an authentication
 error on the response object:
 
-```JavaScript
+```javascript
 request.on('response', (response) => {
-  console.log(`STATUS: ${response.statusCode}`);
+  console.log(`STATUS: ${response.statusCode}`)
   response.on('error', (error) => {
     console.log(`ERROR: ${JSON.stringify(error)}`)
   })
@@ -305,6 +309,8 @@ response object,it will emit the `aborted` event.
 ## Class: IncomingMessage
 
 > Handle responses to HTTP/HTTPS requests.
+
+Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process)
 
 `IncomingMessage` implements the [Readable Stream](https://nodejs.org/api/stream.html#stream_readable_streams)
 interface and is therefore an [EventEmitter](https://nodejs.org/api/events.html#events_class_eventemitter).

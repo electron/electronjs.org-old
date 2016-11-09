@@ -1,5 +1,5 @@
 ---
-version: v1.4.5
+version: v1.4.6
 category: API
 redirect_from:
     - /docs/v0.24.0/api/global-shortcut/
@@ -43,6 +43,8 @@ sort_title: "globalshortcut"
 # globalShortcut
 
 > Detect keyboard events when the application does not have keyboard focus.
+
+Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process)
 
 The `globalShortcut` module can register/unregister a global keyboard shortcut
 with the operating system so that you can customize the operations for various

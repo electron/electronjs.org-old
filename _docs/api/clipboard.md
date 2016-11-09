@@ -1,5 +1,5 @@
 ---
-version: v1.4.5
+version: v1.4.6
 category: API
 redirect_from:
     - /docs/v0.24.0/api/clipboard/
@@ -43,6 +43,8 @@ sort_title: "clipboard"
 # clipboard
 
 > Perform copy and paste operations on the system clipboard.
+
+Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process), [Rendere)
 
 The following example shows how to write a string to the clipboard:
 

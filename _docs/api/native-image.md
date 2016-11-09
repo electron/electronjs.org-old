@@ -1,5 +1,5 @@
 ---
-version: v1.4.5
+version: v1.4.6
 category: API
 redirect_from:
     - /docs/v0.24.0/api/native-image/
@@ -43,6 +43,8 @@ sort_title: "nativeimage"
 # nativeImage
 
 > Create tray, dock, and application icons using PNG or JPG files.
+
+Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process), [Rendere)
 
 In Electron, for the APIs that take images, you can pass either file paths or
 `NativeImage` instances. An empty image will be used when `null` is passed.
@@ -196,6 +198,8 @@ Creates a new `NativeImage` instance from `dataURL`.
 ## Class: NativeImage
 
 > Natively wrap images such as tray, dock, and application icons.
+
+Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process), [Rendere)
 
 ### Instance Methods
 

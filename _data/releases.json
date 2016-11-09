@@ -1,5 +1,23 @@
 [
   {
+    "url": "https://api.github.com/repos/electron/electron/releases/4617538",
+    "assets_url": "https://api.github.com/repos/electron/electron/releases/4617538/assets",
+    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/4617538/assets{?name,label}",
+    "html_url": "https://github.com/electron/electron/releases/tag/v1.4.6",
+    "id": 4617538,
+    "tag_name": "v1.4.6",
+    "target_commitish": "master",
+    "name": "electron v1.4.6",
+    "draft": false,
+    "prerelease": false,
+    "created_at": "2016-11-09T19:59:25Z",
+    "published_at": "2016-11-09T21:26:29Z",
+    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v1.4.6",
+    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v1.4.6",
+    "body": "## Dependency Upgrades\r\n\r\n* Upgraded to Chrome `53.0.2785.143` from `53.0.2785.113`. #7906\r\n\r\n## API Changes\r\n\r\n* `webContents.executeJavaScript` now returns a `Promise` that resolves to the\r\n  value returned by the specified code block. Previously this method did not\r\n  return a value. The `callback` option is still supported. #7533\r\n\r\n## Bug Fixes\r\n\r\n* Fixed an issue where `<webview>` tags would be cleared or refreshed\r\n  incorrectly when toggling the visibility or attaching/detaching. #7852\r\n\r\n## Infrastructure Changes\r\n\r\n* Electron's V8 headers can now be downloaded from https://atom.io/download/electron\r\n  instead of https://atom.io/download/atom-shell. This URL is used as the\r\n  `disturl` option to NPM when compiling native modules to be used in Electron.\r\n  #7881\r\n* The Windows symbol server for Electron is now available at https://electron-symbols.githubapp.com\r\n  instead of http://54.249.141.255:8086/atom-shell/symbols. #7895\r\n",
+    "version": "1.4.6"
+  },
+  {
     "url": "https://api.github.com/repos/electron/electron/releases/4538258",
     "assets_url": "https://api.github.com/repos/electron/electron/releases/4538258/assets",
     "upload_url": "https://uploads.github.com/repos/electron/electron/releases/4538258/assets{?name,label}",
@@ -520,23 +538,5 @@
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v1.0.2",
     "body": "Changelog:\r\n\r\n* Allow `protocol` module to be imported before the `ready` event of `app` module. [#5406](https://github.com/electron/electron/pull/5406)\r\n* Add `context-menu` event to `WebContents`. [#5379](https://github.com/electron/electron/pull/5379)\r\n* Add `process.defaultApp` property. [#5421](https://github.com/electron/electron/pull/5421)\r\n* Fix `protocol.registerStandardSchemes(schemes)` not working. [#5406](https://github.com/electron/electron/pull/5406)\r\n* Fix file system indexing not working in devtools. [#5431](https://github.com/electron/electron/pull/5431)\r\n* Fix crash when replying to the same synchronous message more than once. [#5430](https://github.com/electron/electron/pull/5430)\r\n* Fix `expirationDate` not showing for persistent cookies in `session.cookies.get` API. [#5444](https://github.com/electron/electron/pull/5444)\r\n* Fix `protocol.registerStandardSchemes(schemes)` not working. [#5406](https://github.com/electron/electron/pull/5406)\r\n* Fix exception after creating large numbers of renderer processes. [#5491](https://github.com/electron/electron/pull/5491)\r\n* Fix devtools extension repeatedly loaded when changing dock state. [electron/brightray#219](https://github.com/electron/brightray/pull/219)\r\n\r\n__OS X__\r\n\r\n* Disable the scroll bounce (rubber banding) effect by default. [#5412](https://github.com/electron/electron/pull/5412)\r\n* Add `scrollBounce` option to `webPreferences`. [#5412](https://github.com/electron/electron/pull/5412)\r\n* Add `app.setUserActivity(type, userInfo)`, `app.getCurrentActivityType()` APIs and `continue-activity` event for Handoff feature of OS X. [#5352](https://github.com/electron/electron/pull/5352)\r\n* Add `app.dock.downloadFinished(filePath)` API. [#5477](https://github.com/electron/electron/pull/5477)\r\n* Fix high CPU usage when using pty.js Node module. [#5378](https://github.com/electron/electron/pull/5378)\r\n* Fix `app.removeAsDefaultProtocolClient(protocol)` API not working. [#5440](https://github.com/electron/electron/pull/5440)\r\n\r\n__Linux__\r\n\r\n* Resize the icon of `dialog.showMessageBox()` to a suitable size. [#5496](https://github.com/electron/electron/pull/5496)\r\n",
     "version": "1.0.2"
-  },
-  {
-    "url": "https://api.github.com/repos/electron/electron/releases/3201461",
-    "assets_url": "https://api.github.com/repos/electron/electron/releases/3201461/assets",
-    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/3201461/assets{?name,label}",
-    "html_url": "https://github.com/electron/electron/releases/tag/v1.0.1",
-    "id": 3201461,
-    "tag_name": "v1.0.1",
-    "target_commitish": "master",
-    "name": "electron v1.0.1",
-    "draft": false,
-    "prerelease": false,
-    "created_at": "2016-05-11T11:10:38Z",
-    "published_at": "2016-05-11T12:54:14Z",
-    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v1.0.1",
-    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v1.0.1",
-    "body": "Changelog:\r\n\r\n* Fix devtools extension not loading.",
-    "version": "1.0.1"
   }
 ]

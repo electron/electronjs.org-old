@@ -1,5 +1,5 @@
 ---
-version: v1.4.5
+version: v1.4.6
 category: API
 redirect_from:
     - /docs/v0.24.0/api/ipc-renderer/
@@ -44,6 +44,8 @@ sort_title: "ipcrenderer"
 
 > Communicate asynchronously from a renderer process to the main process.
 
+Process: [Renderer](http://electron.atom.io/docs/tutorial/quick-start#renderer-process)
+
 The `ipcRenderer` module is an instance of the
 [EventEmitter](https://nodejs.org/api/events.html#events_class_eventemitter) class. It provides a few
 methods so you can send synchronous and asynchronous messages from the render
@@ -52,7 +54,7 @@ main process.
 
 See [ipcMain](http://electron.atom.io/docs/api/ipc-main) for code examples.
 
-## Listening for Messages
+## Methods
 
 The `ipcRenderer` module has the following method to listen for events:
 

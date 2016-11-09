@@ -1,5 +1,5 @@
 ---
-version: v1.4.5
+version: v1.4.6
 category: API
 redirect_from:
     - /docs/v0.24.0/api/ipc-main/
@@ -43,6 +43,8 @@ sort_title: "ipcmain"
 # ipcMain
 
 > Communicate asynchronously from the main process to renderer processes.
+
+Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process)
 
 The `ipcMain` module is an instance of the
 [EventEmitter](https://nodejs.org/api/events.html#events_class_eventemitter) class. When used in the main
@@ -88,7 +90,7 @@ ipcRenderer.on('asynchronous-reply', (event, arg) => {
 ipcRenderer.send('asynchronous-message', 'ping')
 ```
 
-## Listening for Messages
+## Methods
 
 The `ipcMain` module has the following method to listen for events:
 

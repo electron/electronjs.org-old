@@ -1,5 +1,5 @@
 ---
-version: v1.4.5
+version: v1.4.6
 category: API
 redirect_from:
     - /docs/v0.24.0/api/session/
@@ -43,6 +43,8 @@ sort_title: "session"
 # session
 
 > Manage browser sessions, cookies, cache, proxy settings, etc.
+
+Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process)
 
 The `session` module can be used to create new `Session` objects.
 
@@ -93,6 +95,8 @@ A `Session` object, the default session object of the app.
 ## Class: Session
 
 > Get and set properties of a session.
+
+Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process)
 
 You can create a `Session` object in the `session` module:
 
@@ -417,6 +421,8 @@ app.on('ready', function () {
 
 > Query and modify a session's cookies.
 
+Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process)
+
 Instances of the `Cookies` class are accessed by using `cookies` property of
 a `Session`.
 
@@ -521,6 +527,8 @@ Removes the cookies matching `url` and `name`, `callback` will called with
 ## Class: WebRequest
 
 > Intercept and modify the contents of a request at various stages of its lifetime.
+
+Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process)
 
 Instances of the `WebRequest` class are accessed by using the `webRequest`
 property of a `Session`.

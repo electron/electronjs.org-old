@@ -1,5 +1,5 @@
 ---
-version: v1.4.5
+version: v1.4.6
 category: API
 redirect_from:
     - /docs/v0.24.0/api/shell/
@@ -43,6 +43,8 @@ sort_title: "shell"
 # shell
 
 > Manage files and URLs using their default applications.
+
+Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process), [Rendere)
 
 The `shell` module provides functions related to desktop integration.
 

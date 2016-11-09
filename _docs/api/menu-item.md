@@ -1,5 +1,5 @@
 ---
-version: v1.4.5
+version: v1.4.6
 category: API
 redirect_from:
     - /docs/v0.24.0/api/menu-item/
@@ -43,6 +43,8 @@ sort_title: "menuitem"
 # MenuItem
 
 > Add items to native application menus and context menus.
+
+Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process)
 
 See [`Menu`](http://electron.atom.io/docs/api/menu) for examples.
 

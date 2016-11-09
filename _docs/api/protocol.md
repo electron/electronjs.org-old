@@ -1,5 +1,5 @@
 ---
-version: v1.4.5
+version: v1.4.6
 category: API
 redirect_from:
     - /docs/v0.24.0/api/protocol/
@@ -43,6 +43,8 @@ sort_title: "protocol"
 # protocol
 
 > Register a custom protocol and intercept existing protocol requests.
+
+Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process)
 
 An example of implementing a protocol that has the same effect as the
 `file://` protocol:

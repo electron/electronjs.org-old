@@ -1,5 +1,5 @@
 ---
-version: v1.4.5
+version: v1.4.6
 category: API
 redirect_from:
     - /docs/v0.24.0/api/remote/
@@ -43,6 +43,8 @@ sort_title: "remote"
 # remote
 
 > Use main process modules from the renderer process.
+
+Process: [Renderer](http://electron.atom.io/docs/tutorial/quick-start#renderer-process)
 
 The `remote` module provides a simple way to do inter-process communication
 (IPC) between the renderer process (web page) and the main process.

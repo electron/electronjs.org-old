@@ -1,5 +1,5 @@
 ---
-version: v1.4.5
+version: v1.4.6
 category: API
 redirect_from:
     - /docs/v0.24.0/api/menu/
@@ -43,6 +43,8 @@ sort_title: "menu"
 # Menu
 
 > Create native application menus and context menus.
+
+Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process)
 
 Each `Menu` consists of multiple [`MenuItem`](http://electron.atom.io/docs/api/menu-item)s and each `MenuItem`
 can have a submenu.

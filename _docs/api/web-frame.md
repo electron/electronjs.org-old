@@ -1,5 +1,5 @@
 ---
-version: v1.4.5
+version: v1.4.6
 category: API
 redirect_from:
     - /docs/v0.24.0/api/web-frame/
@@ -43,6 +43,8 @@ sort_title: "webframe"
 # webFrame
 
 > Customize the rendering of the current web page.
+
+Process: [Renderer](http://electron.atom.io/docs/tutorial/quick-start#renderer-process)
 
 An example of zooming current page to 200%.
 

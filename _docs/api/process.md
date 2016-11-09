@@ -1,5 +1,5 @@
 ---
-version: v1.4.5
+version: v1.4.6
 category: API
 redirect_from:
     - /docs/v0.24.0/api/process/
@@ -43,6 +43,8 @@ sort_title: "process"
 # process
 
 > Extensions to process object.
+
+Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process)
 
 The `process` object is extended in Electron with following APIs:
 
