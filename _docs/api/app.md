@@ -1,5 +1,5 @@
 ---
-version: v1.4.5
+version: v1.4.6
 category: API
 redirect_from:
     - /docs/v0.24.0/api/app/
@@ -43,6 +43,8 @@ sort_title: "app"
 # app
 
 > Control your application's event lifecycle.
+
+Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process)
 
 The following example shows how to quit the application when the last window is
 closed:

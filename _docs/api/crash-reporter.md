@@ -1,5 +1,5 @@
 ---
-version: v1.4.5
+version: v1.4.6
 category: API
 redirect_from:
     - /docs/v0.24.0/api/crash-reporter/
@@ -43,6 +43,8 @@ sort_title: "crashreporter"
 # crashReporter
 
 > Submit crash reports to a remote server.
+
+Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process), [Renderer](http://electron.atom.io/docs/tutorial/quick-start#renderer-process)
 
 The following is an example of automatically submitting a crash report to a
 remote server:

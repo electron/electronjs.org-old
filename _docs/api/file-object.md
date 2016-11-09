@@ -1,5 +1,5 @@
 ---
-version: v1.4.5
+version: v1.4.6
 category: API
 redirect_from:
     - /docs/v0.24.0/api/file-object/
@@ -49,7 +49,7 @@ let users work on native files directly with the HTML5 file API. Electron has
 added a `path` attribute to the `File` interface which exposes the file's real
 path on filesystem.
 
-Example on getting a real path from a dragged-onto-the-app file:
+Example of getting a real path from a dragged-onto-the-app file:
 
 ```html
 <div id="holder">

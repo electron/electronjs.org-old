@@ -1,5 +1,5 @@
 ---
-version: v1.4.5
+version: v1.4.6
 category: Tutorial
 redirect_from:
     - /docs/v0.24.0/tutorial/planned-breaking-changes/
@@ -126,3 +126,12 @@ webContents.openDevTools({detach: true})
 // Replace with
 webContents.openDevTools({mode: 'detach'})
 ```
+
+## Node Headers URL
+
+This is the URL specified as `disturl` in a `.npmrc` file or as the `--dist-url`
+command line flag when building native Node modules.
+
+Deprecated: https://atom.io/download/atom-shell
+
+Replace with: https://atom.io/download/electron

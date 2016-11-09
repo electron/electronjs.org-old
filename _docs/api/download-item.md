@@ -1,5 +1,5 @@
 ---
-version: v1.4.5
+version: v1.4.6
 category: API
 redirect_from:
     - /docs/v0.24.0/api/download-item/
@@ -43,6 +43,8 @@ sort_title: "downloaditem"
 # DownloadItem
 
 > Control file downloads from remote sources.
+
+Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process)
 
 `DownloadItem` is an `EventEmitter` that represents a download item in Electron.
 It is used in `will-download` event of `Session` class, and allows users to
@@ -101,7 +103,7 @@ Returns:
 * `state` String
 
 Emitted when the download is in a terminal state. This includes a completed
-download, a cancelled download(via `downloadItem.cancel()`), and interrupted
+download, a cancelled download (via `downloadItem.cancel()`), and interrupted
 download that can't be resumed.
 
 The `state` can be one of following:

@@ -1,5 +1,5 @@
 ---
-version: v1.4.5
+version: v1.4.6
 category: API
 redirect_from:
     - /docs/v0.24.0/api/dialog/
@@ -43,6 +43,8 @@ sort_title: "dialog"
 # dialog
 
 > Display native system dialogs for opening and saving files, alerting, etc.
+
+Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process)
 
 An example of showing a dialog to select multiple files and directories:
 

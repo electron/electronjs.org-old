@@ -1,5 +1,5 @@
 ---
-version: v1.4.5
+version: v1.4.6
 category: API
 redirect_from:
     - /docs/v0.24.0/api/power-save-blocker/
@@ -43,6 +43,8 @@ sort_title: "powersaveblocker"
 # powerSaveBlocker
 
 > Block the system from entering low-power (sleep) mode.
+
+Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process)
 
 For example:
 

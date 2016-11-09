@@ -1,5 +1,5 @@
 ---
-version: v1.4.5
+version: v1.4.6
 category: API
 redirect_from:
     - /docs/v0.24.0/api/power-monitor/
@@ -43,6 +43,8 @@ sort_title: "powermonitor"
 # powerMonitor
 
 > Monitor power state changes.
+
+Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process)
 
 You cannot require or use this module until the `ready` event of the `app`
 module is emitted.
