@@ -2209,3 +2209,17 @@
   website: "https://github.com/mifi/lossless-cut"
   license: "MIT"
   icon: "lossless-cut.png"
+  -
+  name: "Treevea"
+  description: "Your PowerPoint® assistant - easily search and reuse all your contents"
+  website: "https://www.treevea.com/"
+  repository: ""
+  keywords:
+    - "powerpoint"
+    - "presentations"
+    - "slides"
+    - "assistant"
+    - "search"
+    - "reuse"
+  license: ""
+  icon: "treevea.png"
