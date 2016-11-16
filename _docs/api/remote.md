@@ -1,5 +1,5 @@
 ---
-version: v1.4.6
+version: v1.4.7
 category: API
 redirect_from:
     - /docs/v0.24.0/api/remote/
@@ -182,7 +182,7 @@ The `remote` module has the following methods:
 
 * `module` String
 
-Returns `Object` - The object returned by `require(module)` in the main process.
+Returns `any` - The object returned by `require(module)` in the main process.
 
 ### `remote.getCurrentWindow()`
 

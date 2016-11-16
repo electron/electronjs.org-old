@@ -1,5 +1,5 @@
 ---
-version: v1.4.6
+version: v1.4.7
 category: API
 redirect_from:
     - /docs/v0.24.0/api/structures/certificate/
@@ -42,7 +42,10 @@ sort_title: "certificate object"
 # Certificate Object
 
 * `data` String - PEM encoded data
+* `issuer` [CertificatePrincipal](http://electron.atom.io/docs/api/structures/certificate-principal) - Issuer principal
 * `issuerName` String - Issuer's Common Name
+* `issuerCert` Certificate - Issuer certificate (if not self-signed)
+* `subject` [CertificatePrincipal](http://electron.atom.io/docs/api/structures/certificate-principal) - Subject principal
 * `subjectName` String - Subject's Common Name
 * `serialNumber` String - Hex value represented string
 * `validStart` Number - Start date of the certificate being valid in seconds

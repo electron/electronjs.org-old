@@ -1,5 +1,5 @@
 ---
-version: v1.4.6
+version: v1.4.7
 category: API
 redirect_from:
     - /docs/v0.24.0/api/web-contents/
@@ -529,9 +529,10 @@ win.loadURL('http://github.com')
 
 * `url` URL
 * `options` Object (optional)
-  * `httpReferrer` String - A HTTP Referrer url.
-  * `userAgent` String - A user agent originating the request.
-  * `extraHeaders` String - Extra headers separated by "\n"
+  * `httpReferrer` String (optional) - A HTTP Referrer url.
+  * `userAgent` String (optional) - A user agent originating the request.
+  * `extraHeaders` String (optional) - Extra headers separated by "\n"
+  * `postData` ([UploadRawData](http://electron.atom.io/docs/api/structures/upload-raw-data) &#124; [UploadFileSystem](http://electron.atom.io/docs/api/structures/upload-file-system) &#124; [UploadBlob](http://electron.atom.io/docs/api/structures/upload-blob))[] (optional)
 
 Loads the `url` in the window. The `url` must contain the protocol prefix,
 e.g. the `http://` or `file://`. If the load should bypass http cache then
@@ -994,6 +995,7 @@ Opens the developer tools for the service worker context.
 #### `contents.send(channel[, arg1][, arg2][, ...])`
 
 * `channel` String
+* `...args` any[]
 
 Send an asynchronous message to renderer process via `channel`, you can also
 send arbitrary arguments. Arguments will be serialized in JSON internally and
@@ -1170,6 +1172,17 @@ win.webContents.on('did-finish-load', () => {
 #### `contents.showDefinitionForSelection()` _macOS_
 
 Shows pop-up dictionary that searches the selected word on the page.
+
+#### `contents.setSize(options)`
+
+Set the size of the page. This is only supported for `<webview>` guest contents.
+
+* `options` Object
+  * `normal` Object (optional) - Normal size of the page. This can be used in
+    combination with the [`disableguestresize`](http://electron.atom.io/docs/api/web-view-tag#disableguestresize)
+    attribute to manually resize the webview guest contents.
+    * `width` Integer
+    * `height` Integer
 
 #### `contents.isOffscreen()`
 
