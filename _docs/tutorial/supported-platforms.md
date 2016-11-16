@@ -1,5 +1,5 @@
 ---
-version: v1.4.6
+version: v1.4.7
 category: Tutorial
 redirect_from:
     - /docs/v0.24.0/tutorial/supported-platforms/

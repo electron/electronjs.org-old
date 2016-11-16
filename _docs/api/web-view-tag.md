@@ -1,5 +1,5 @@
 ---
-version: v1.4.6
+version: v1.4.7
 category: API
 redirect_from:
     - /docs/v0.24.0/api/web-view-tag/
@@ -285,6 +285,44 @@ webview.
 The existing webview will see the `destroy` event and will then create a new
 webContents when a new url is loaded.
 
+### `disableguestresize`
+
+```html
+<webview src="https://www.github.com/" disableguestresize></webview>
+```
+
+Prevents the webview contents from resizing when the webview element itself is
+resized.
+
+This can be used in combination with
+[`webContents.setSize`](http://electron.atom.io/docs/api/web-contents#contentssetsizeoptions) to manually
+resize the webview contents in reaction to a window size change. This can
+make resizing faster compared to relying on the webview element bounds to
+automatically resize the contents.
+
+```javascript
+const {webContents} = require('electron')
+
+// We assume that `win` points to a `BrowserWindow` instance containing a
+// `<webview>` with `disableguestresize`.
+
+win.on('resize', () => {
+  const [width, height] = win.getContentSize()
+  for (let wc of webContents.getAllWebContents()) {
+    // Check if `wc` belongs to a webview in the `win` window.
+    if (wc.hostWebContents &&
+        wc.hostWebContents.id === win.webContents.id) {
+      wc.setSize({
+        normal: {
+          width: width,
+          height: height
+        }
+      })
+    }
+  }
+})
+```
+
 ## Methods
 
 The `webview` tag has the following methods:
@@ -304,9 +342,10 @@ webview.addEventListener('dom-ready', () => {
 
 * `url` URL
 * `options` Object (optional)
-  * `httpReferrer` String - A HTTP Referrer url.
-  * `userAgent` String - A user agent originating the request.
-  * `extraHeaders` String - Extra headers separated by "\n"
+  * `httpReferrer` String (optional) - A HTTP Referrer url.
+  * `userAgent` String (optional) - A user agent originating the request.
+  * `extraHeaders` String (optional) - Extra headers separated by "\n"
+  * `postData` ([UploadRawData](http://electron.atom.io/docs/api/structures/upload-raw-data) &#124; [UploadFileSystem](http://electron.atom.io/docs/api/structures/upload-file-system) &#124; [UploadBlob](http://electron.atom.io/docs/api/structures/upload-blob))[] (optional)
 
 Loads the `url` in the webview, the `url` must contain the protocol prefix,
 e.g. the `http://` or `file://`.

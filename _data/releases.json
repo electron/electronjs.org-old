@@ -1,5 +1,23 @@
 [
   {
+    "url": "https://api.github.com/repos/electron/electron/releases/4677159",
+    "assets_url": "https://api.github.com/repos/electron/electron/releases/4677159/assets",
+    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/4677159/assets{?name,label}",
+    "html_url": "https://github.com/electron/electron/releases/tag/v1.4.7",
+    "id": 4677159,
+    "tag_name": "v1.4.7",
+    "target_commitish": "master",
+    "name": "electron v1.4.7",
+    "draft": false,
+    "prerelease": false,
+    "created_at": "2016-11-16T16:11:28Z",
+    "published_at": "2016-11-16T18:46:50Z",
+    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v1.4.7",
+    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v1.4.7",
+    "body": "## Dependency Upgrades\r\n\r\n- [Squirrel.Mac](https://github.com/Squirrel/Squirrel.Mac), Electron's bundled\r\n  macOS auto updater library, was upgraded to 0.3.0 which includes several bug\r\n  fixes. The new version enables [App Transport Security (ATS)](https://developer.apple.com/library/content/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW35)\r\n  on all requests it makes to the update server. This can be disabled,\r\n  if needed, by adding `NSAllowsArbitraryLoads` to the app's plist file. #7933\r\n\r\n## New APIs\r\n\r\n- You can now enable the macOS vibrancy effect on a `BrowserWindow` by calling\r\n  `setVibrancy(vibrancyType)` or by including a `vibrancy` value in the\r\n  constructor options. #7898\r\n- You can now specify `POST` data when calling `BrowserWindow.loadURL` via the\r\n  `postData` option. Also `<form>` tags configured with `method=post` will now\r\n  make `POST` requests with their data when submitted. #7540\r\n- The certificate specified to the `session.setCertificateVerifyProc` callback\r\n  now includes the entire certificate chain. #7917\r\n- The `<webview>` tag now supports a `disableguestresize` attribute that will\r\n  disable automatic resizing of the guest `webContents` when the `<webview>`\r\n  element resizes. You can now call `setSize` directly on the guest\r\n  `webContents` to manually control the size. #7658\r\n- The `chrome.storage.remove` and `chrome.storage.clear` APIs are now available\r\n  to DevTools extensions. #7923\r\n\r\n## Bug Fixes\r\n\r\n- The `about:` protocol is now correctly supported by default. #7908\r\n- Menu item keyboard accelerators are now properly disabled when the menu item\r\n  is disabled. #7962\r\n- The check for disabling ASAR support via the `ELECTRON_NO_ASAR` environment\r\n  variable is now cached for better performance. #7978\r\n- Fixed a crash when calling `app.setAboutPanelOptions(options)` with a\r\n  `credits` value. #7979\r\n- Fixed an issue where an error would be thrown in certain cases when accessing\r\n  remote objects or functions. #7980\r\n- Fixed an issue where the `window.opener` API did not behave as expected.\r\n",
+    "version": "1.4.7"
+  },
+  {
     "url": "https://api.github.com/repos/electron/electron/releases/4617538",
     "assets_url": "https://api.github.com/repos/electron/electron/releases/4617538/assets",
     "upload_url": "https://uploads.github.com/repos/electron/electron/releases/4617538/assets{?name,label}",
@@ -520,23 +538,5 @@
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v1.1.0",
     "body": "Changelog:\r\n\r\n* Upgrade to Chrome 50.0.2661.102.\r\n* Upgrade to Node.js 6.1.0.\r\n\r\n__Windows__\r\n\r\n* Use Visual Studio 2015 for building.",
     "version": "1.1.0"
-  },
-  {
-    "url": "https://api.github.com/repos/electron/electron/releases/3216266",
-    "assets_url": "https://api.github.com/repos/electron/electron/releases/3216266/assets",
-    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/3216266/assets{?name,label}",
-    "html_url": "https://github.com/electron/electron/releases/tag/v1.0.2",
-    "id": 3216266,
-    "tag_name": "v1.0.2",
-    "target_commitish": "master",
-    "name": "electron v1.0.2",
-    "draft": false,
-    "prerelease": false,
-    "created_at": "2016-05-13T00:21:33Z",
-    "published_at": "2016-05-13T02:32:12Z",
-    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v1.0.2",
-    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v1.0.2",
-    "body": "Changelog:\r\n\r\n* Allow `protocol` module to be imported before the `ready` event of `app` module. [#5406](https://github.com/electron/electron/pull/5406)\r\n* Add `context-menu` event to `WebContents`. [#5379](https://github.com/electron/electron/pull/5379)\r\n* Add `process.defaultApp` property. [#5421](https://github.com/electron/electron/pull/5421)\r\n* Fix `protocol.registerStandardSchemes(schemes)` not working. [#5406](https://github.com/electron/electron/pull/5406)\r\n* Fix file system indexing not working in devtools. [#5431](https://github.com/electron/electron/pull/5431)\r\n* Fix crash when replying to the same synchronous message more than once. [#5430](https://github.com/electron/electron/pull/5430)\r\n* Fix `expirationDate` not showing for persistent cookies in `session.cookies.get` API. [#5444](https://github.com/electron/electron/pull/5444)\r\n* Fix `protocol.registerStandardSchemes(schemes)` not working. [#5406](https://github.com/electron/electron/pull/5406)\r\n* Fix exception after creating large numbers of renderer processes. [#5491](https://github.com/electron/electron/pull/5491)\r\n* Fix devtools extension repeatedly loaded when changing dock state. [electron/brightray#219](https://github.com/electron/brightray/pull/219)\r\n\r\n__OS X__\r\n\r\n* Disable the scroll bounce (rubber banding) effect by default. [#5412](https://github.com/electron/electron/pull/5412)\r\n* Add `scrollBounce` option to `webPreferences`. [#5412](https://github.com/electron/electron/pull/5412)\r\n* Add `app.setUserActivity(type, userInfo)`, `app.getCurrentActivityType()` APIs and `continue-activity` event for Handoff feature of OS X. [#5352](https://github.com/electron/electron/pull/5352)\r\n* Add `app.dock.downloadFinished(filePath)` API. [#5477](https://github.com/electron/electron/pull/5477)\r\n* Fix high CPU usage when using pty.js Node module. [#5378](https://github.com/electron/electron/pull/5378)\r\n* Fix `app.removeAsDefaultProtocolClient(protocol)` API not working. [#5440](https://github.com/electron/electron/pull/5440)\r\n\r\n__Linux__\r\n\r\n* Resize the icon of `dialog.showMessageBox()` to a suitable size. [#5496](https://github.com/electron/electron/pull/5496)\r\n",
-    "version": "1.0.2"
   }
 ]

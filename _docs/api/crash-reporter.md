@@ -1,5 +1,5 @@
 ---
-version: v1.4.6
+version: v1.4.7
 category: API
 redirect_from:
     - /docs/v0.24.0/api/crash-reporter/
@@ -79,13 +79,13 @@ The `crash-reporter` module has the following methods:
 ### `crashReporter.start(options)`
 
 * `options` Object
-  * `companyName` String
+  * `companyName` String (optional)
   * `submitURL` String - URL that crash reports will be sent to as POST.
   * `productName` String (optional) - Defaults to `app.getName()`.
-  * `autoSubmit` Boolean - Send the crash report without user interaction.
+  * `autoSubmit` Boolean (optional) - Send the crash report without user interaction.
     Default is `true`.
-  * `ignoreSystemCrashHandler` Boolean - Default is `false`.
-  * `extra` Object - An object you can define that will be sent along with the
+  * `ignoreSystemCrashHandler` Boolean (optional) - Default is `false`.
+  * `extra` Object (optional) - An object you can define that will be sent along with the
     report. Only string properties are sent correctly, Nested objects are not
     supported.
 
@@ -100,20 +100,14 @@ crash reports.
 
 ### `crashReporter.getLastCrashReport()`
 
-Returns `Object`:
-
-* `date` String
-* `ID` Integer
+Returns [`CrashReport`](http://electron.atom.io/docs/api/structures/crash-report):
 
 Returns the date and ID of the last crash report. If no crash reports have been
 sent or the crash reporter has not been started, `null` is returned.
 
 ### `crashReporter.getUploadedReports()`
 
-Returns `Object[]`:
-
-* `date` String
-* `ID` Integer
+Returns [`CrashReport[]`](http://electron.atom.io/docs/api/structures/crash-report):
 
 Returns all uploaded crash reports. Each report contains the date and uploaded
 ID.

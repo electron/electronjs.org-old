@@ -1,5 +1,5 @@
 ---
-version: v1.4.6
+version: v1.4.7
 category: API
 redirect_from:
     - /docs/v0.24.0/api/clipboard/
@@ -197,11 +197,11 @@ Returns `String` - Reads `data` from the clipboard.
 ### `clipboard.write(data[, type])`
 
 * `data` Object
-  * `text` String
-  * `html` String
-  * `image` [NativeImage](http://electron.atom.io/docs/api/native-image)
-  * `rtf` String
-  * `bookmark` String - The title of the url at `text`.
+  * `text` String (optional)
+  * `html` String (optional)
+  * `image` [NativeImage](http://electron.atom.io/docs/api/native-image) (optional)
+  * `rtf` String (optional)
+  * `bookmark` String (optional) - The title of the url at `text`.
 * `type` String (optional)
 
 ```javascript
