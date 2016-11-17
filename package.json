@@ -41,6 +41,7 @@
     "grunt": "^0.4.5",
     "grunt-cli": "^0.1.13",
     "grunt-link-checker": "^0.1.0",
+    "repos-using-electron": "^1.6.0",
     "tap-spec": "^4.1.1",
     "tape": "^4.0.0",
     "tmp": "0.0.28"

@@ -1,0 +1,22 @@
+---
+title: Userland Dependencies
+permalink: /userland/dependencies/
+layout: default
+---
+
+{% include userland_header.html %}
+
+<section class='page-section'>
+  <div class='container-narrow'>
+    <h2 id="dependencies">Top dependencies in Electron apps</h2>
+
+    <p>
+      This list is constructed by analyzing the <code>dependencies</code>
+      of every public GitHub repository that also depends on Electron.
+    </p>
+
+    {% for package in site.data.userland.dependencies.packages limit %}
+      {% include package_list.html %}
+    {% endfor %}
+  </div>
+</section>

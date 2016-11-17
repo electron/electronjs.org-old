@@ -1,0 +1,43 @@
+---
+title: Userland
+permalink: /userland/
+layout: default
+---
+
+{% include userland_header.html %}
+
+<section class='page-section'>
+  <div class='container-narrow'>
+    <p>
+      "Userland" is a term borrowed from the Unix community, and recently
+      repopularized by users of Node and npm. The term refers to the vast
+      ecosystem of tools that exist outside of a product's "core". In essence,
+      Node is the core and npm is userland.
+    </p>
+
+    <p>
+      Like Node, Electron is focused on having a small set of APIs that provide
+      all the necessary primitives for developing multi-platform Desktop applications.
+      This design philosophy allows Electron to remain a flexible tool without being
+      overly prescriptive about how it should be used. Userland enables users to
+      create and share tools that provide additional functionality on top of what is
+      available in Electron "core".
+    </p>
+
+    <h2 id="dependencies">Top dependencies in Electron apps</h2>
+
+    <p>
+      This list is constructed by analyzing the <code>dependencies</code>
+      of every public GitHub repository that also depends on Electron.
+    </p>
+
+    {% for package in site.data.userland.dependencies.packages limit:30 %}
+      {% include package_list.html %}
+    {% endfor %}
+
+    <p>
+      <a href="{{site.baseurl}}/userland/dependencies">View the top {{site.data.userland.dependencies.packages.length}} npm packages</a>
+    </p>
+
+  </div>
+</section>
