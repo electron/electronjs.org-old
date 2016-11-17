@@ -2233,7 +2233,7 @@
     - "search"
   license: "MIT"
   icon: "dext.png"
-  -
+-
   name: "Tagifier"
   description: "Metadata editor for Mp3 files"
   website: "https://tagifier.,et"
