@@ -1,0 +1,3909 @@
+{
+  "title": "Common Dependencies in Electron Apps",
+  "description": "The most-used npm package dependencies in all the public GitHub repos that\ndepend on `electron` or `electron-prebuilt`.\nForks are excluded from this analysis.",
+  "packages": [
+    {
+      "name": "react",
+      "description": "React is a JavaScript library for building user interfaces.",
+      "keywords": [
+        "react"
+      ],
+      "repository": "https://github.com/facebook/react",
+      "dependentPublicRepoCount": 2159,
+      "dependentPackageCount": 10273
+    },
+    {
+      "name": "react-dom",
+      "description": "React package for working with the DOM.",
+      "keywords": [
+        "react"
+      ],
+      "repository": "https://github.com/facebook/react",
+      "dependentPublicRepoCount": 1910,
+      "dependentPackageCount": 6759
+    },
+    {
+      "name": "jquery",
+      "description": "JavaScript library for DOM operations",
+      "keywords": [
+        "jquery",
+        "javascript",
+        "browser",
+        "library"
+      ],
+      "repository": "https://github.com/jquery/jquery",
+      "dependentPublicRepoCount": 1383,
+      "dependentPackageCount": 5462
+    },
+    {
+      "name": "redux",
+      "description": "Predictable state container for JavaScript apps",
+      "keywords": [
+        "redux",
+        "reducer",
+        "state",
+        "predictable",
+        "functional",
+        "immutable",
+        "hot",
+        "live",
+        "replay",
+        "flux",
+        "elm"
+      ],
+      "repository": "https://github.com/reactjs/redux",
+      "dependentPublicRepoCount": 1032,
+      "dependentPackageCount": 1641
+    },
+    {
+      "name": "lodash",
+      "description": "Lodash modular utilities.",
+      "keywords": [
+        "modules",
+        "stdlib",
+        "util"
+      ],
+      "repository": "https://github.com/lodash/lodash",
+      "dependentPublicRepoCount": 991,
+      "dependentPackageCount": 28510
+    },
+    {
+      "name": "electron-debug",
+      "description": "Adds useful debug features to your Electron app",
+      "keywords": [
+        "electron",
+        "debug",
+        "debugging",
+        "devtools",
+        "app",
+        "dev",
+        "development"
+      ],
+      "repository": "https://github.com/sindresorhus/electron-debug",
+      "dependentPublicRepoCount": 985,
+      "dependentPackageCount": 42
+    },
+    {
+      "name": "react-redux",
+      "description": "Official React bindings for Redux",
+      "keywords": [
+        "react",
+        "reactjs",
+        "hot",
+        "reload",
+        "hmr",
+        "live",
+        "edit",
+        "flux",
+        "redux"
+      ],
+      "repository": "https://github.com/reactjs/react-redux",
+      "dependentPublicRepoCount": 968,
+      "dependentPackageCount": 1055
+    },
+    {
+      "name": "react-router",
+      "description": "A complete routing library for React",
+      "keywords": [
+        "react",
+        "react-component",
+        "routing",
+        "route",
+        "routes",
+        "router"
+      ],
+      "repository": "https://github.com/reacttraining/react-router",
+      "dependentPublicRepoCount": 850,
+      "dependentPackageCount": 1308
+    },
+    {
+      "name": "font-awesome",
+      "description": "The iconic font and CSS framework",
+      "keywords": [
+        "font",
+        "awesome",
+        "fontawesome",
+        "icon",
+        "font",
+        "bootstrap"
+      ],
+      "repository": "https://github.com/FortAwesome/Font-Awesome",
+      "dependentPublicRepoCount": 711,
+      "dependentPackageCount": 489
+    },
+    {
+      "name": "redux-thunk",
+      "description": "Thunk middleware for Redux.",
+      "keywords": [
+        "redux",
+        "thunk",
+        "middleware",
+        "redux-middleware",
+        "flux"
+      ],
+      "repository": "https://github.com/gaearon/redux-thunk",
+      "dependentPublicRepoCount": 689,
+      "dependentPackageCount": 567
+    },
+    {
+      "name": "bootstrap",
+      "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
+      "keywords": [
+        "css",
+        "less",
+        "mobile-first",
+        "responsive",
+        "front-end",
+        "framework",
+        "web"
+      ],
+      "repository": "https://github.com/twbs/bootstrap",
+      "dependentPublicRepoCount": 676,
+      "dependentPackageCount": 1218
+    },
+    {
+      "name": "request",
+      "description": "Simplified HTTP request client.",
+      "repository": "https://github.com/request/request",
+      "dependentPublicRepoCount": 633,
+      "dependentPackageCount": 18154
+    },
+    {
+      "name": "express",
+      "description": "Fast, unopinionated, minimalist web framework",
+      "keywords": [
+        "express",
+        "framework",
+        "sinatra",
+        "web",
+        "rest",
+        "restful",
+        "router",
+        "app",
+        "api"
+      ],
+      "repository": "https://github.com/expressjs/express",
+      "dependentPublicRepoCount": 610,
+      "dependentPackageCount": 16257
+    },
+    {
+      "name": "rxjs",
+      "description": "Reactive Extensions for modern JavaScript",
+      "keywords": [
+        "Rx",
+        "RxJS",
+        "ReactiveX",
+        "ReactiveExtensions",
+        "Streams",
+        "Observables",
+        "Observable",
+        "Stream",
+        "ES6",
+        "ES2015"
+      ],
+      "repository": "https://github.com/ReactiveX/RxJS",
+      "dependentPublicRepoCount": 538,
+      "dependentPackageCount": 463
+    },
+    {
+      "name": "zone.js",
+      "description": "Zones for JavaScript",
+      "repository": "https://github.com/angular/zone.js",
+      "dependentPublicRepoCount": 524,
+      "dependentPackageCount": 156
+    },
+    {
+      "name": "moment",
+      "description": "Parse, validate, manipulate, and display dates",
+      "keywords": [
+        "moment",
+        "date",
+        "time",
+        "parse",
+        "format",
+        "validate",
+        "i18n",
+        "l10n",
+        "ender"
+      ],
+      "repository": "https://github.com/moment/moment",
+      "dependentPublicRepoCount": 518,
+      "dependentPackageCount": 6518
+    },
+    {
+      "name": "react-router-redux",
+      "description": "Ruthlessly simple bindings to keep react-router and redux in sync",
+      "keywords": [
+        "react",
+        "redux",
+        "router"
+      ],
+      "repository": "https://github.com/reactjs/react-router-redux",
+      "dependentPublicRepoCount": 451,
+      "dependentPackageCount": 239
+    },
+    {
+      "name": "babel-preset-es2015",
+      "description": "Babel preset for all es2015 plugins.",
+      "repository": "https://github.com/babel/babel/tree/master/packages/babel-preset-es2015",
+      "dependentPublicRepoCount": 421,
+      "dependentPackageCount": 22396
+    },
+    {
+      "name": "reflect-metadata",
+      "description": "Polyfill for Metadata Reflection API",
+      "keywords": [
+        "decorator",
+        "metadata",
+        "javascript",
+        "reflect"
+      ],
+      "repository": "https://github.com/rbuckton/ReflectDecorators",
+      "dependentPublicRepoCount": 413,
+      "dependentPackageCount": 299
+    },
+    {
+      "name": "babel-preset-react",
+      "description": "Babel preset for all React plugins.",
+      "repository": "https://github.com/babel/babel/tree/master/packages/babel-preset-react",
+      "dependentPublicRepoCount": 405,
+      "dependentPackageCount": 6856
+    },
+    {
+      "name": "classnames",
+      "description": "A simple utility for conditionally joining classNames together",
+      "keywords": [
+        "react",
+        "css",
+        "classes",
+        "classname",
+        "classnames",
+        "util",
+        "utility"
+      ],
+      "repository": "https://github.com/JedWatson/classnames",
+      "dependentPublicRepoCount": 359,
+      "dependentPackageCount": 2171
+    },
+    {
+      "name": "source-map-support",
+      "description": "Fixes stack traces for files with source maps",
+      "repository": "https://github.com/evanw/node-source-map-support",
+      "dependentPublicRepoCount": 338,
+      "dependentPackageCount": 1249
+    },
+    {
+      "name": "core-js",
+      "description": "Standard library",
+      "keywords": [
+        "ES3",
+        "ECMAScript 3",
+        "ES5",
+        "ECMAScript 5",
+        "ES6",
+        "ES2015",
+        "ECMAScript 6",
+        "ECMAScript 2015",
+        "ES7",
+        "ES2016",
+        "ECMAScript 7",
+        "ECMAScript 2016",
+        "Harmony",
+        "Strawman",
+        "Map",
+        "Set",
+        "WeakMap",
+        "WeakSet",
+        "Promise",
+        "Symbol",
+        "TypedArray",
+        "setImmediate",
+        "Dict",
+        "polyfill",
+        "shim"
+      ],
+      "repository": "https://github.com/zloirock/core-js",
+      "dependentPublicRepoCount": 333,
+      "dependentPackageCount": 597
+    },
+    {
+      "name": "css-modules-require-hook",
+      "description": "A require hook to compile CSS Modules on the fly",
+      "keywords": [
+        "css-modules",
+        "require",
+        "hook"
+      ],
+      "repository": "https://github.com/css-modules/css-modules-require-hook",
+      "dependentPublicRepoCount": 323,
+      "dependentPackageCount": 59
+    },
+    {
+      "name": "postcss",
+      "description": "Tool for transforming styles with JS plugins",
+      "keywords": [
+        "css",
+        "postcss",
+        "rework",
+        "preprocessor",
+        "parser",
+        "source map",
+        "transform",
+        "manipulation",
+        "transpiler"
+      ],
+      "repository": "https://github.com/postcss/postcss",
+      "dependentPublicRepoCount": 321,
+      "dependentPackageCount": 1628
+    },
+    {
+      "name": "menubar",
+      "description": "high level way to create menubar desktop applications with electron",
+      "keywords": [
+        "electron",
+        "atom",
+        "shell",
+        "menubar",
+        "menu",
+        "mac",
+        "app"
+      ],
+      "repository": "https://github.com/maxogden/menubar",
+      "dependentPublicRepoCount": 298,
+      "dependentPackageCount": 13
+    },
+    {
+      "name": "angular",
+      "description": "HTML enhanced for web apps",
+      "keywords": [
+        "angular",
+        "framework",
+        "browser",
+        "client-side"
+      ],
+      "repository": "https://github.com/angular/angular.js",
+      "dependentPublicRepoCount": 294,
+      "dependentPackageCount": 1776
+    },
+    {
+      "name": "systemjs",
+      "description": "Universal dynamic module loader",
+      "repository": "https://github.com/systemjs/systemjs",
+      "dependentPublicRepoCount": 292,
+      "dependentPackageCount": 239
+    },
+    {
+      "name": "bluebird",
+      "description": "Full featured Promises/A+ implementation with exceptionally good performance",
+      "keywords": [
+        "promise",
+        "performance",
+        "promises",
+        "promises-a",
+        "promises-aplus",
+        "async",
+        "await",
+        "deferred",
+        "deferreds",
+        "future",
+        "flow control",
+        "dsl",
+        "fluent interface"
+      ],
+      "repository": "https://github.com/petkaantonov/bluebird",
+      "dependentPublicRepoCount": 278,
+      "dependentPackageCount": 9636
+    },
+    {
+      "name": "async",
+      "description": "Higher-order functions and common patterns for asynchronous code",
+      "keywords": [
+        "async",
+        "callback",
+        "module",
+        "utility"
+      ],
+      "repository": "https://github.com/caolan/async",
+      "dependentPublicRepoCount": 276,
+      "dependentPackageCount": 16871
+    },
+    {
+      "name": "socket.io",
+      "description": "node.js realtime framework server",
+      "keywords": [
+        "realtime",
+        "framework",
+        "websocket",
+        "tcp",
+        "events",
+        "socket",
+        "io"
+      ],
+      "repository": "https://github.com/socketio/socket.io",
+      "dependentPublicRepoCount": 262,
+      "dependentPackageCount": 2868
+    },
+    {
+      "name": "body-parser",
+      "description": "Node.js body parsing middleware",
+      "repository": "https://github.com/expressjs/body-parser",
+      "dependentPublicRepoCount": 262,
+      "dependentPackageCount": 4928
+    },
+    {
+      "name": "mkdirp",
+      "description": "Recursively mkdir, like `mkdir -p`",
+      "keywords": [
+        "mkdir",
+        "directory"
+      ],
+      "repository": "https://github.com/substack/node-mkdirp",
+      "dependentPublicRepoCount": 247,
+      "dependentPackageCount": 8770
+    },
+    {
+      "name": "gulp",
+      "description": "The streaming build system",
+      "repository": "https://github.com/gulpjs/gulp",
+      "dependentPublicRepoCount": 243,
+      "dependentPackageCount": 23339
+    },
+    {
+      "name": "material-ui",
+      "description": "React Components that Implement Google's Material Design.",
+      "keywords": [
+        "react",
+        "react-component",
+        "material design",
+        "material-ui"
+      ],
+      "repository": "https://github.com/callemall/material-ui",
+      "dependentPublicRepoCount": 243,
+      "dependentPackageCount": 248
+    },
+    {
+      "name": "underscore",
+      "description": "JavaScript's functional programming helper library.",
+      "keywords": [
+        "util",
+        "functional",
+        "server",
+        "client",
+        "browser"
+      ],
+      "repository": "https://github.com/jashkenas/underscore",
+      "dependentPublicRepoCount": 241,
+      "dependentPackageCount": 13531
+    },
+    {
+      "name": "react-tap-event-plugin",
+      "description": "Facebook's TapEventPlugin, temporarily available on npm until its made public in their repo",
+      "keywords": [
+        "TapEventPlugin",
+        "react",
+        "touch",
+        "delay",
+        "300ms",
+        "react-tap-event-plugin"
+      ],
+      "repository": "https://github.com/zilverline/react-tap-event-plugin",
+      "dependentPublicRepoCount": 239,
+      "dependentPackageCount": 304
+    },
+    {
+      "name": "vue",
+      "description": "Reactive, component-oriented view layer for modern web interfaces.",
+      "keywords": [
+        "vue"
+      ],
+      "repository": "https://github.com/vuejs/vue",
+      "dependentPublicRepoCount": 231,
+      "dependentPackageCount": 845
+    },
+    {
+      "name": "electron-packager",
+      "description": "Package and distribute your Electron app with OS-specific bundles (.app, .exe etc) via JS or CLI",
+      "repository": "https://github.com/electron-userland/electron-packager",
+      "dependentPublicRepoCount": 230,
+      "dependentPackageCount": 138
+    },
+    {
+      "name": "electron-json-storage",
+      "description": "Easily write and read user settings in Electron apps",
+      "keywords": [
+        "electron",
+        "json",
+        "storage",
+        "user",
+        "app",
+        "data"
+      ],
+      "repository": "https://github.com/jviotti/electron-json-storage",
+      "dependentPublicRepoCount": 227,
+      "dependentPackageCount": 8
+    },
+    {
+      "name": "immutable",
+      "description": "Immutable Data Collections",
+      "keywords": [
+        "immutable",
+        "persistent",
+        "lazy",
+        "data",
+        "datastructure",
+        "functional",
+        "collection",
+        "stateless",
+        "sequence",
+        "iteration"
+      ],
+      "repository": "https://github.com/facebook/immutable-js",
+      "dependentPublicRepoCount": 221,
+      "dependentPackageCount": 1302
+    },
+    {
+      "name": "es6-shim",
+      "description": "ECMAScript 6 (Harmony) compatibility shims for legacy JavaScript engines",
+      "keywords": [
+        "ecmascript",
+        "harmony",
+        "es6",
+        "shim",
+        "promise",
+        "promises",
+        "setPrototypeOf",
+        "map",
+        "set",
+        "__proto__"
+      ],
+      "repository": "https://github.com/paulmillr/es6-shim",
+      "dependentPublicRepoCount": 216,
+      "dependentPackageCount": 444
+    },
+    {
+      "name": "debug",
+      "description": "small debugging utility",
+      "keywords": [
+        "debug",
+        "log",
+        "debugger"
+      ],
+      "repository": "https://github.com/visionmedia/debug",
+      "dependentPublicRepoCount": 210,
+      "dependentPackageCount": 9653
+    },
+    {
+      "name": "babel-core",
+      "description": "Babel compiler core.",
+      "keywords": [
+        "6to5",
+        "babel",
+        "classes",
+        "const",
+        "es6",
+        "harmony",
+        "let",
+        "modules",
+        "transpile",
+        "transpiler",
+        "var"
+      ],
+      "repository": "https://github.com/babel/babel/tree/master/packages/babel-core",
+      "dependentPublicRepoCount": 208,
+      "dependentPackageCount": 16111
+    },
+    {
+      "name": "fs-extra",
+      "description": "fs-extra contains methods that aren't included in the vanilla Node.js fs package. Such as mkdir -p, cp -r, and rm -rf.",
+      "keywords": [
+        "fs",
+        "file",
+        "file system",
+        "copy",
+        "directory",
+        "extra",
+        "mkdirp",
+        "mkdir",
+        "mkdirs",
+        "recursive",
+        "json",
+        "read",
+        "write",
+        "extra",
+        "delete",
+        "remove",
+        "touch",
+        "create",
+        "text",
+        "output",
+        "move"
+      ],
+      "repository": "https://github.com/jprichardson/node-fs-extra",
+      "dependentPublicRepoCount": 200,
+      "dependentPackageCount": 5052
+    },
+    {
+      "name": "babel-register",
+      "description": "babel require hook",
+      "repository": "https://github.com/babel/babel/tree/master/packages/babel-register",
+      "dependentPublicRepoCount": 189,
+      "dependentPackageCount": 5346
+    },
+    {
+      "name": "webpack",
+      "description": "Packs CommonJs/AMD modules for the browser. Allows to split your codebase into multiple bundles, which can be loaded on demand. Support loaders to preprocess files, i.e. json, jade, coffee, css, less, ... and your custom stuff.",
+      "repository": "https://github.com/webpack/webpack",
+      "dependentPublicRepoCount": 189,
+      "dependentPackageCount": 12181
+    },
+    {
+      "name": "nedb",
+      "description": "File-based embedded data store for node.js",
+      "keywords": [
+        "database",
+        "datastore",
+        "embedded"
+      ],
+      "repository": "https://github.com/louischatriot/nedb",
+      "dependentPublicRepoCount": 188,
+      "dependentPackageCount": 312
+    },
+    {
+      "name": "axios",
+      "description": "Promise based HTTP client for the browser and node.js",
+      "keywords": [
+        "xhr",
+        "http",
+        "ajax",
+        "promise",
+        "node"
+      ],
+      "repository": "https://github.com/mzabriskie/axios",
+      "dependentPublicRepoCount": 184,
+      "dependentPackageCount": 552
+    },
+    {
+      "name": "history",
+      "description": "Manage session history with JavaScript",
+      "keywords": [
+        "history",
+        "location"
+      ],
+      "repository": "https://github.com/mjackson/history",
+      "dependentPublicRepoCount": 181,
+      "dependentPackageCount": 560
+    },
+    {
+      "name": "babel-loader",
+      "description": "babel module loader for webpack",
+      "keywords": [
+        "webpack",
+        "loader",
+        "6to5",
+        "babel",
+        "es6",
+        "transpiler",
+        "module"
+      ],
+      "repository": "https://github.com/babel/babel-loader",
+      "dependentPublicRepoCount": 169,
+      "dependentPackageCount": 10039
+    },
+    {
+      "name": "electron-reload",
+      "description": "Simplest way to reload an electron app on file changes!",
+      "keywords": [
+        "electron",
+        "reload",
+        "auto-reload",
+        "node"
+      ],
+      "repository": "https://github.com/yan-foto/electron-reload",
+      "dependentPublicRepoCount": 160,
+      "dependentPackageCount": 5
+    },
+    {
+      "name": "react-bootstrap",
+      "description": "Bootstrap 3 components built with React",
+      "keywords": [
+        "react",
+        "ecosystem-react",
+        "react-component",
+        "bootstrap"
+      ],
+      "repository": "https://github.com/react-bootstrap/react-bootstrap",
+      "dependentPublicRepoCount": 158,
+      "dependentPackageCount": 410
+    },
+    {
+      "name": "normalize.css",
+      "description": "A modern alternative to CSS resets",
+      "repository": "https://github.com/necolas/normalize.css",
+      "dependentPublicRepoCount": 157,
+      "dependentPackageCount": 553
+    },
+    {
+      "name": "sqlite3",
+      "description": "Asynchronous, non-blocking SQLite3 bindings",
+      "keywords": [
+        "sql",
+        "sqlite",
+        "sqlite3",
+        "database"
+      ],
+      "repository": "https://github.com/mapbox/node-sqlite3",
+      "dependentPublicRepoCount": 153,
+      "dependentPackageCount": 870
+    },
+    {
+      "name": "node-notifier",
+      "description": "A Node.js module for sending notifications on native Mac, Windows (post and pre 8) and Linux (or Growl as fallback)",
+      "keywords": [
+        "notification center",
+        "mac os x 10.8",
+        "notify",
+        "terminal-notifier",
+        "notify-send",
+        "growl",
+        "windows 8 notification",
+        "toaster",
+        "notification"
+      ],
+      "repository": "https://github.com/mikaelbr/node-notifier",
+      "dependentPublicRepoCount": 153,
+      "dependentPackageCount": 425
+    },
+    {
+      "name": "babel-polyfill",
+      "description": "Provides polyfills necessary for a full ES2015+ environment",
+      "repository": "https://github.com/babel/babel/tree/master/packages/babel-polyfill",
+      "dependentPublicRepoCount": 151,
+      "dependentPackageCount": 3844
+    },
+    {
+      "name": "marked",
+      "description": "A markdown parser built for speed",
+      "keywords": [
+        "markdown",
+        "markup",
+        "html"
+      ],
+      "repository": "https://github.com/chjj/marked",
+      "dependentPublicRepoCount": 148,
+      "dependentPackageCount": 2293
+    },
+    {
+      "name": "babel",
+      "description": "Turn ES6 code into readable vanilla ES5 with source maps",
+      "repository": "https://github.com/babel/babel/tree/master/packages/babel",
+      "dependentPublicRepoCount": 141,
+      "dependentPackageCount": 8085
+    },
+    {
+      "name": "node-uuid",
+      "description": "Rigorous implementation of RFC4122 (v1 and v4) UUIDs.",
+      "keywords": [
+        "guid",
+        "rfc4122",
+        "uuid"
+      ],
+      "repository": "https://github.com/broofa/node-uuid",
+      "dependentPublicRepoCount": 141,
+      "dependentPackageCount": 3047
+    },
+    {
+      "name": "object-assign",
+      "description": "ES2015 Object.assign() ponyfill",
+      "keywords": [
+        "object",
+        "assign",
+        "extend",
+        "properties",
+        "es2015",
+        "ecmascript",
+        "harmony",
+        "ponyfill",
+        "prollyfill",
+        "polyfill",
+        "shim",
+        "browser"
+      ],
+      "repository": "https://github.com/sindresorhus/object-assign",
+      "dependentPublicRepoCount": 139,
+      "dependentPackageCount": 2744
+    },
+    {
+      "name": "glob",
+      "description": "a little globber",
+      "repository": "https://github.com/isaacs/node-glob",
+      "dependentPublicRepoCount": 135,
+      "dependentPackageCount": 7220
+    },
+    {
+      "name": "cheerio",
+      "description": "Tiny, fast, and elegant implementation of core jQuery designed specifically for the server",
+      "keywords": [
+        "htmlparser",
+        "jquery",
+        "selector",
+        "scraper",
+        "parser",
+        "html"
+      ],
+      "repository": "https://github.com/cheeriojs/cheerio",
+      "dependentPublicRepoCount": 132,
+      "dependentPackageCount": 4196
+    },
+    {
+      "name": "redux-logger",
+      "description": "Logger for Redux",
+      "keywords": [
+        "redux",
+        "logger",
+        "redux-logger",
+        "redux",
+        "middleware"
+      ],
+      "repository": "https://github.com/theaqua/redux-logger",
+      "dependentPublicRepoCount": 131,
+      "dependentPackageCount": 281
+    },
+    {
+      "name": "redux-promise",
+      "description": "FSA-compliant promise middleware for Redux.",
+      "keywords": [
+        "redux",
+        "promise",
+        "middleware",
+        "redux-middleware",
+        "fsa",
+        "flux"
+      ],
+      "repository": "https://github.com/acdlite/redux-promise",
+      "dependentPublicRepoCount": 130,
+      "dependentPackageCount": 44
+    },
+    {
+      "name": "babelify",
+      "description": "Babel browserify transform",
+      "repository": "https://github.com/babel/babelify",
+      "dependentPublicRepoCount": 127,
+      "dependentPackageCount": 3423
+    },
+    {
+      "name": "rimraf",
+      "description": "A deep deletion module for node (like `rm -rf`)",
+      "repository": "https://github.com/isaacs/rimraf",
+      "dependentPublicRepoCount": 120,
+      "dependentPackageCount": 9884
+    },
+    {
+      "name": "angular2",
+      "description": "Angular 2 - a web framework for modern web apps",
+      "repository": "https://github.com/angular/angular",
+      "dependentPublicRepoCount": 120,
+      "dependentPackageCount": 160
+    },
+    {
+      "name": "file-loader",
+      "description": "file loader module for webpack",
+      "repository": "https://github.com/webpack/file-loader",
+      "dependentPublicRepoCount": 115,
+      "dependentPackageCount": 2511
+    },
+    {
+      "name": "q",
+      "description": "A library for promises (CommonJS/Promises/A,B,D)",
+      "keywords": [
+        "q",
+        "promise",
+        "promises",
+        "promises-a",
+        "promises-aplus",
+        "deferred",
+        "future",
+        "async",
+        "flow control",
+        "fluent",
+        "browser",
+        "node"
+      ],
+      "repository": "https://github.com/kriskowal/q",
+      "dependentPublicRepoCount": 114,
+      "dependentPackageCount": 6448
+    },
+    {
+      "name": "babel-preset-stage-0",
+      "description": "Babel preset for stage 0 plugins",
+      "repository": "https://github.com/babel/babel/tree/master/packages/babel-preset-stage-0",
+      "dependentPublicRepoCount": 110,
+      "dependentPackageCount": 6172
+    },
+    {
+      "name": "flux",
+      "description": "An application architecture based on a unidirectional data flow",
+      "keywords": [
+        "flux",
+        "react",
+        "facebook",
+        "dispatcher"
+      ],
+      "repository": "https://github.com/facebook/flux",
+      "dependentPublicRepoCount": 110,
+      "dependentPackageCount": 297
+    },
+    {
+      "name": "cookie-parser",
+      "description": "cookie parsing with signatures",
+      "keywords": [
+        "cookie",
+        "middleware"
+      ],
+      "repository": "https://github.com/expressjs/cookie-parser",
+      "dependentPublicRepoCount": 109,
+      "dependentPackageCount": 1586
+    },
+    {
+      "name": "css-loader",
+      "description": "css loader module for webpack",
+      "repository": "https://github.com/webpack/css-loader",
+      "dependentPublicRepoCount": 108,
+      "dependentPackageCount": 4473
+    },
+    {
+      "name": "nconf",
+      "description": "Hierarchical node.js configuration with files, environment variables, command-line arguments, and atomic object merging.",
+      "keywords": [
+        "configuration",
+        "key value store",
+        "plugabble"
+      ],
+      "repository": "https://github.com/flatiron/nconf",
+      "dependentPublicRepoCount": 107,
+      "dependentPackageCount": 788
+    },
+    {
+      "name": "socket.io-client",
+      "description": "[![Build Status](https://secure.travis-ci.org/socketio/socket.io-client.svg?branch=master)](http://travis-ci.org/socketio/socket.io-client) [![Dependency Status](https://david-dm.org/socketio/socket.io-client.svg)](https://david-dm.org/socketio/socket.io-",
+      "keywords": [
+        "realtime",
+        "framework",
+        "websocket",
+        "tcp",
+        "events",
+        "client"
+      ],
+      "repository": "https://github.com/Automattic/socket.io-client",
+      "dependentPublicRepoCount": 107,
+      "dependentPackageCount": 1335
+    },
+    {
+      "name": "superagent",
+      "description": "elegant & feature rich browser / node HTTP with a fluent API",
+      "keywords": [
+        "http",
+        "ajax",
+        "request",
+        "agent"
+      ],
+      "repository": "https://github.com/visionmedia/superagent",
+      "dependentPublicRepoCount": 106,
+      "dependentPackageCount": 2566
+    },
+    {
+      "name": "style-loader",
+      "description": "style loader module for webpack",
+      "repository": "https://github.com/webpack/style-loader",
+      "dependentPublicRepoCount": 105,
+      "dependentPackageCount": 4043
+    },
+    {
+      "name": "angular-animate",
+      "description": "AngularJS module for animations",
+      "keywords": [
+        "angular",
+        "framework",
+        "browser",
+        "animation",
+        "client-side"
+      ],
+      "repository": "https://github.com/angular/angular.js",
+      "dependentPublicRepoCount": 105,
+      "dependentPackageCount": 159
+    },
+    {
+      "name": "uuid",
+      "description": "Rigorous implementation of RFC4122 (v1 and v4) UUIDs.",
+      "keywords": [
+        "uuid",
+        "guid",
+        "rfc4122"
+      ],
+      "repository": "https://github.com/defunctzombie/node-uuid",
+      "dependentPublicRepoCount": 105,
+      "dependentPackageCount": 1741
+    },
+    {
+      "name": "minimist",
+      "description": "parse argument options",
+      "keywords": [
+        "argv",
+        "getopt",
+        "parser",
+        "optimist"
+      ],
+      "repository": "https://github.com/substack/minimist",
+      "dependentPublicRepoCount": 103,
+      "dependentPackageCount": 5341
+    },
+    {
+      "name": "es6-promise",
+      "description": "A lightweight library that provides tools for organizing asynchronous code",
+      "keywords": [
+        "promises",
+        "futures"
+      ],
+      "repository": "https://github.com/stefanpenner/es6-promise",
+      "dependentPublicRepoCount": 102,
+      "dependentPackageCount": 2033
+    },
+    {
+      "name": "morgan",
+      "description": "HTTP request logger middleware for node.js",
+      "repository": "https://github.com/expressjs/morgan",
+      "dependentPublicRepoCount": 101,
+      "dependentPackageCount": 1687
+    },
+    {
+      "name": "open",
+      "description": "open a file or url in the user's preferred application",
+      "keywords": [
+        "start",
+        "open",
+        "browser",
+        "editor",
+        "default"
+      ],
+      "repository": "https://github.com/pwnall/node-open",
+      "dependentPublicRepoCount": 98,
+      "dependentPackageCount": 1296
+    },
+    {
+      "name": "path",
+      "description": "Node.JS path module",
+      "keywords": [
+        "ender",
+        "path"
+      ],
+      "repository": "https://github.com/jinder/path",
+      "dependentPublicRepoCount": 98,
+      "dependentPackageCount": 1638
+    },
+    {
+      "name": "yargs",
+      "description": "yargs the modern, pirate-themed, successor to optimist.",
+      "keywords": [
+        "argument",
+        "args",
+        "option",
+        "parser",
+        "parsing",
+        "cli",
+        "command"
+      ],
+      "repository": "https://github.com/yargs/yargs",
+      "dependentPublicRepoCount": 97,
+      "dependentPackageCount": 4313
+    },
+    {
+      "name": "extract-text-webpack-plugin",
+      "description": "Extract text from bundle into a file.",
+      "repository": "https://github.com/webpack/extract-text-webpack-plugin",
+      "dependentPublicRepoCount": 96,
+      "dependentPackageCount": 2128
+    },
+    {
+      "name": "highlight.js",
+      "description": "Syntax highlighting with language autodetection.",
+      "keywords": [
+        "highlight",
+        "syntax"
+      ],
+      "repository": "https://github.com/isagalaev/highlight.js",
+      "dependentPublicRepoCount": 96,
+      "dependentPackageCount": 1013
+    },
+    {
+      "name": "node-sass",
+      "description": "Wrapper around libsass",
+      "keywords": [
+        "css",
+        "libsass",
+        "preprocessor",
+        "sass",
+        "scss",
+        "style"
+      ],
+      "repository": "https://github.com/sass/node-sass",
+      "dependentPublicRepoCount": 94,
+      "dependentPackageCount": 2713
+    },
+    {
+      "name": "babel-runtime",
+      "description": "babel selfContained runtime",
+      "repository": "https://github.com/babel/babel/tree/master/packages/babel-runtime",
+      "dependentPublicRepoCount": 94,
+      "dependentPackageCount": 4199
+    },
+    {
+      "name": "jsonfile",
+      "description": "Easily read/write JSON files.",
+      "keywords": [
+        "read",
+        "write",
+        "file",
+        "json",
+        "fs",
+        "fs-extra"
+      ],
+      "repository": "https://github.com/jprichardson/node-jsonfile",
+      "dependentPublicRepoCount": 94,
+      "dependentPackageCount": 664
+    },
+    {
+      "name": "request-promise",
+      "description": "The simplified HTTP request client 'request' with Promise support. Powered by Bluebird.",
+      "keywords": [
+        "xhr",
+        "http",
+        "https",
+        "promise",
+        "request",
+        "then",
+        "thenable",
+        "bluebird"
+      ],
+      "repository": "https://github.com/request/request-promise",
+      "dependentPublicRepoCount": 91,
+      "dependentPackageCount": 1131
+    },
+    {
+      "name": "d3",
+      "description": "Data-Driven Documents",
+      "keywords": [
+        "dom",
+        "visualization",
+        "svg",
+        "animation",
+        "canvas"
+      ],
+      "repository": "https://github.com/d3/d3",
+      "dependentPublicRepoCount": 91,
+      "dependentPackageCount": 810
+    },
+    {
+      "name": "chart.js",
+      "description": "Simple HTML5 charts using the canvas element.",
+      "repository": "https://github.com/chartjs/Chart.js",
+      "dependentPublicRepoCount": 90,
+      "dependentPackageCount": 81
+    },
+    {
+      "name": "pouchdb",
+      "description": "PouchDB is a pocket-sized database",
+      "keywords": [
+        "db",
+        "couchdb",
+        "pouchdb"
+      ],
+      "repository": "https://github.com/pouchdb/pouchdb",
+      "dependentPublicRepoCount": 88,
+      "dependentPackageCount": 239
+    },
+    {
+      "name": "firebase",
+      "description": "Firebase JavaScript library for web and Node.js",
+      "keywords": [
+        "Firebase",
+        "realtime",
+        "database",
+        "storage",
+        "authentication"
+      ],
+      "dependentPublicRepoCount": 88,
+      "dependentPackageCount": 314
+    },
+    {
+      "name": "angular-ui-router",
+      "description": "State-based routing for AngularJS",
+      "repository": "https://github.com/angular-ui/ui-router",
+      "dependentPublicRepoCount": 87,
+      "dependentPackageCount": 210
+    },
+    {
+      "name": "angular-route",
+      "description": "AngularJS router module",
+      "keywords": [
+        "angular",
+        "framework",
+        "browser",
+        "router",
+        "client-side"
+      ],
+      "repository": "https://github.com/angular/angular.js",
+      "dependentPublicRepoCount": 85,
+      "dependentPackageCount": 109
+    },
+    {
+      "name": "coffee-script",
+      "description": "Unfancy JavaScript",
+      "keywords": [
+        "javascript",
+        "language",
+        "coffeescript",
+        "compiler"
+      ],
+      "repository": "https://github.com/jashkenas/coffeescript",
+      "dependentPublicRepoCount": 84,
+      "dependentPackageCount": 12234
+    },
+    {
+      "name": "angular2-in-memory-web-api",
+      "description": "An in-memory web api for Angular 2 demos and tests",
+      "repository": "https://github.com/angular/in-memory-web-api",
+      "dependentPublicRepoCount": 84,
+      "dependentPackageCount": 1
+    },
+    {
+      "name": "jade",
+      "description": "A clean, whitespace-sensitive template language for writing HTML",
+      "repository": "https://github.com/jadejs/jade",
+      "dependentPublicRepoCount": 84,
+      "dependentPackageCount": 2991
+    },
+    {
+      "name": "json-loader",
+      "description": "json loader module for webpack",
+      "repository": "https://github.com/webpack/json-loader",
+      "dependentPublicRepoCount": 83,
+      "dependentPackageCount": 2229
+    },
+    {
+      "name": "url-loader",
+      "description": "url loader module for webpack",
+      "repository": "https://github.com/webpack/url-loader",
+      "dependentPublicRepoCount": 83,
+      "dependentPackageCount": 2042
+    },
+    {
+      "name": "react-addons-css-transition-group",
+      "description": "This package provides the React CSSTransitionGroup add-on.",
+      "keywords": [
+        "react",
+        "react-addon"
+      ],
+      "repository": "https://github.com/facebook/react",
+      "dependentPublicRepoCount": 83,
+      "dependentPackageCount": 296
+    },
+    {
+      "name": "serve-favicon",
+      "description": "favicon serving middleware with caching",
+      "keywords": [
+        "express",
+        "favicon",
+        "middleware"
+      ],
+      "repository": "https://github.com/expressjs/serve-favicon",
+      "dependentPublicRepoCount": 83,
+      "dependentPackageCount": 757
+    },
+    {
+      "name": "codemirror",
+      "description": "Full-featured in-browser code editor",
+      "keywords": [
+        "JavaScript",
+        "CodeMirror",
+        "Editor"
+      ],
+      "repository": "https://github.com/codemirror/CodeMirror",
+      "dependentPublicRepoCount": 82,
+      "dependentPackageCount": 306
+    },
+    {
+      "name": "electron-window-state",
+      "description": "Simple module that helps to save and restore size and position of Electron windows.",
+      "keywords": [
+        "electron"
+      ],
+      "repository": "https://github.com/mawie81/electron-window-state",
+      "dependentPublicRepoCount": 82,
+      "dependentPackageCount": 9
+    },
+    {
+      "name": "winston",
+      "description": "A multi-transport async logging library for Node.js",
+      "keywords": [
+        "winston",
+        "logging",
+        "sysadmin",
+        "tools"
+      ],
+      "repository": "https://github.com/winstonjs/winston",
+      "dependentPublicRepoCount": 82,
+      "dependentPackageCount": 2738
+    },
+    {
+      "name": "fs",
+      "description": "This package name is not currently in use, but was formerly occupied by another package. To avoid malicious use, npm is hanging on to the package name, but loosely, and we'll probably give it to you if you want it.",
+      "repository": "https://github.com/npm/security-holder",
+      "dependentPublicRepoCount": 81,
+      "dependentPackageCount": 1040
+    },
+    {
+      "name": "handlebars",
+      "description": "Handlebars provides the power necessary to let you build semantic templates effectively with no frustration",
+      "keywords": [
+        "handlebars",
+        "mustache",
+        "template",
+        "html"
+      ],
+      "repository": "https://github.com/wycats/handlebars.js",
+      "dependentPublicRepoCount": 81,
+      "dependentPackageCount": 2703
+    },
+    {
+      "name": "semver",
+      "description": "The semantic version parser used by npm.",
+      "repository": "https://github.com/npm/node-semver",
+      "dependentPublicRepoCount": 80,
+      "dependentPackageCount": 3404
+    },
+    {
+      "name": "angular-material",
+      "description": "This repository is used only for Angular Material v1.x library deployments and localized installs using `npm` and `bower`. The actual component source-code for this library is in the [main Angular Material repository](https://github.com/angular/material).",
+      "keywords": [
+        "angular",
+        "material",
+        "browser",
+        "client-side"
+      ],
+      "repository": "https://github.com/angular/material",
+      "dependentPublicRepoCount": 79,
+      "dependentPackageCount": 86
+    },
+    {
+      "name": "angular-aria",
+      "description": "AngularJS module for making accessibility easy",
+      "keywords": [
+        "angular",
+        "framework",
+        "browser",
+        "accessibility",
+        "a11y",
+        "client-side"
+      ],
+      "repository": "https://github.com/angular/angular.js",
+      "dependentPublicRepoCount": 79,
+      "dependentPackageCount": 84
+    },
+    {
+      "name": "electron-config",
+      "description": "Simple config handling for your Electron app or module",
+      "keywords": [
+        "electron",
+        "app",
+        "config",
+        "store",
+        "storage",
+        "conf",
+        "configuration",
+        "settings",
+        "preferences",
+        "json",
+        "data",
+        "persist",
+        "persistent",
+        "save"
+      ],
+      "repository": "https://github.com/sindresorhus/electron-config",
+      "dependentPublicRepoCount": 79,
+      "dependentPackageCount": 1
+    },
+    {
+      "name": "gulp-uglify",
+      "description": "Minify files with UglifyJS.",
+      "keywords": [
+        "gulpplugin"
+      ],
+      "repository": "https://github.com/terinjokes/gulp-uglify",
+      "dependentPublicRepoCount": 78,
+      "dependentPackageCount": 6763
+    },
+    {
+      "name": "vue-router",
+      "description": "Official router for Vue.js 2.0",
+      "keywords": [
+        "vue",
+        "router",
+        "routing"
+      ],
+      "dependentPublicRepoCount": 78,
+      "dependentPackageCount": 135
+    },
+    {
+      "name": "chokidar",
+      "description": "A neat wrapper around node.js fs.watch / fs.watchFile / fsevents.",
+      "keywords": [
+        "fs",
+        "watch",
+        "watchFile",
+        "watcher",
+        "watching",
+        "file",
+        "fsevents"
+      ],
+      "repository": "https://github.com/paulmillr/chokidar",
+      "dependentPublicRepoCount": 77,
+      "dependentPackageCount": 1301
+    },
+    {
+      "name": "tether",
+      "description": "A client-side library to make absolutely positioned elements attach to elements in the page efficiently.",
+      "repository": "https://github.com/HubSpot/tether",
+      "dependentPublicRepoCount": 77,
+      "dependentPackageCount": 69
+    },
+    {
+      "name": "materialize-css",
+      "description": "Builds Materialize distribution packages",
+      "repository": "https://github.com/Dogfalo/materialize",
+      "dependentPublicRepoCount": 76,
+      "dependentPackageCount": 27
+    },
+    {
+      "name": "browserify",
+      "description": "browser-side require() the node way",
+      "keywords": [
+        "browser",
+        "require",
+        "commonjs",
+        "commonj-esque",
+        "bundle",
+        "npm",
+        "javascript"
+      ],
+      "repository": "https://github.com/substack/node-browserify",
+      "dependentPublicRepoCount": 76,
+      "dependentPackageCount": 11596
+    },
+    {
+      "name": "animate.css",
+      "description": "*Just-add-water CSS animation*",
+      "repository": "https://github.com/daneden/animate.css",
+      "dependentPublicRepoCount": 74,
+      "dependentPackageCount": 54
+    },
+    {
+      "name": "dotenv",
+      "description": "Loads environment variables from .env file",
+      "keywords": [
+        "dotenv",
+        "env",
+        ".env",
+        "environment",
+        "variables",
+        "config",
+        "settings"
+      ],
+      "repository": "https://github.com/motdotla/dotenv",
+      "dependentPublicRepoCount": 74,
+      "dependentPackageCount": 839
+    },
+    {
+      "name": "react-autocomplete",
+      "description": "Accessible, extensible, Autocomplete for React.js",
+      "repository": "https://github.com/reactjs/react-autocomplete",
+      "dependentPublicRepoCount": 73,
+      "dependentPackageCount": 1
+    },
+    {
+      "name": "iconv-lite",
+      "description": "Convert character encodings in pure javascript.",
+      "keywords": [
+        "iconv",
+        "convert",
+        "charset",
+        "icu"
+      ],
+      "repository": "https://github.com/ashtuchkin/iconv-lite",
+      "dependentPublicRepoCount": 71,
+      "dependentPackageCount": 823
+    },
+    {
+      "name": "http-server",
+      "description": "A simple zero-configuration command-line http server",
+      "keywords": [
+        "cli",
+        "command"
+      ],
+      "repository": "https://github.com/indexzero/http-server",
+      "dependentPublicRepoCount": 71,
+      "dependentPackageCount": 893
+    },
+    {
+      "name": "gulp-concat",
+      "description": "Concatenates files",
+      "keywords": [
+        "gulpplugin"
+      ],
+      "repository": "https://github.com/contra/gulp-concat",
+      "dependentPublicRepoCount": 71,
+      "dependentPackageCount": 4033
+    },
+    {
+      "name": "shelljs",
+      "description": "Portable Unix shell commands for Node.js",
+      "keywords": [
+        "shelljs",
+        "bash",
+        "unix",
+        "shell",
+        "makefile",
+        "make",
+        "jake",
+        "synchronous"
+      ],
+      "repository": "https://github.com/shelljs/shelljs",
+      "dependentPublicRepoCount": 71,
+      "dependentPackageCount": 3127
+    },
+    {
+      "name": "ng2-bootstrap",
+      "description": "angular2 bootstrap components",
+      "keywords": [
+        "angular2",
+        "bootstrap",
+        "angularjs",
+        "twitter-bootstrap"
+      ],
+      "repository": "https://github.com/valor-software/ng2-bootstrap",
+      "dependentPublicRepoCount": 70,
+      "dependentPackageCount": 10
+    },
+    {
+      "name": "pretty-bytes",
+      "description": "Convert bytes to a human readable string: 1337 → 1.34 kB",
+      "keywords": [
+        "pretty",
+        "bytes",
+        "byte",
+        "filesize",
+        "size",
+        "file",
+        "human",
+        "humanized",
+        "readable",
+        "si",
+        "data"
+      ],
+      "repository": "https://github.com/sindresorhus/pretty-bytes",
+      "dependentPublicRepoCount": 70,
+      "dependentPackageCount": 247
+    },
+    {
+      "name": "redux-actions",
+      "description": "Flux Standard Action utlities for Redux",
+      "keywords": [
+        "flux",
+        "redux",
+        "fsa",
+        "actions"
+      ],
+      "repository": "https://github.com/acdlite/redux-actions",
+      "dependentPublicRepoCount": 69,
+      "dependentPackageCount": 146
+    },
+    {
+      "name": "react-sound",
+      "description": "React Sound component using soundmanager2",
+      "keywords": [
+        "react",
+        "react-component",
+        "sound",
+        "soundmanager2"
+      ],
+      "dependentPublicRepoCount": 68,
+      "dependentPackageCount": 0
+    },
+    {
+      "name": "electron-rebuild",
+      "description": "Electron supporting package to rebuild native node modules against the currently installed electron",
+      "keywords": [
+        "electron"
+      ],
+      "repository": "https://github.com/electron/electron-rebuild",
+      "dependentPublicRepoCount": 67,
+      "dependentPackageCount": 42
+    },
+    {
+      "name": "bower",
+      "description": "The browser package manager",
+      "keywords": [
+        "bower"
+      ],
+      "repository": "https://github.com/bower/bower",
+      "dependentPublicRepoCount": 67,
+      "dependentPackageCount": 1934
+    },
+    {
+      "name": "electron-squirrel-startup",
+      "description": "Default Squirrel.Windows event handler for your Electron apps.",
+      "keywords": [
+        "mongodb.js",
+        "electron",
+        "electron-installer",
+        "squirrel.windows"
+      ],
+      "repository": "https://github.com/mongodb-js/electron-squirrel-startup",
+      "dependentPublicRepoCount": 66,
+      "dependentPackageCount": 4
+    },
+    {
+      "name": "ionicons",
+      "description": "Premium icons for Ionic.",
+      "keywords": [
+        "ionicons",
+        "ionic",
+        "icon",
+        "svg",
+        "font",
+        "mobile"
+      ],
+      "repository": "https://github.com/driftyco/ionicons",
+      "dependentPublicRepoCount": 66,
+      "dependentPackageCount": 13
+    },
+    {
+      "name": "ws",
+      "description": "simple to use, blazing fast and thoroughly tested websocket client, server and console for node.js, up-to-date against RFC-6455",
+      "keywords": [
+        "Hixie",
+        "HyBi",
+        "Push",
+        "RFC-6455",
+        "WebSocket",
+        "WebSockets",
+        "real-time"
+      ],
+      "repository": "https://github.com/websockets/ws",
+      "dependentPublicRepoCount": 66,
+      "dependentPackageCount": 1632
+    },
+    {
+      "name": "ng2-translate",
+      "description": "An implementation of angular translate for Angular 2",
+      "keywords": [
+        "angular",
+        "angular2",
+        "translate",
+        "i18n"
+      ],
+      "repository": "https://github.com/ocombe/ng2-translate",
+      "dependentPublicRepoCount": 65,
+      "dependentPackageCount": 1
+    },
+    {
+      "name": "mongoose",
+      "description": "Mongoose MongoDB ODM",
+      "keywords": [
+        "mongodb",
+        "document",
+        "model",
+        "schema",
+        "database",
+        "odm",
+        "data",
+        "datastore",
+        "query",
+        "nosql",
+        "orm",
+        "db"
+      ],
+      "repository": "https://github.com/Automattic/mongoose",
+      "dependentPublicRepoCount": 65,
+      "dependentPackageCount": 2502
+    },
+    {
+      "name": "mongodb",
+      "description": "The official MongoDB driver for Node.js",
+      "keywords": [
+        "mongodb",
+        "driver",
+        "official"
+      ],
+      "repository": "https://github.com/mongodb/node-mongodb-native",
+      "dependentPublicRepoCount": 65,
+      "dependentPackageCount": 2315
+    },
+    {
+      "name": "walk",
+      "description": "A node port of python's os.walk",
+      "keywords": [
+        "util",
+        "os",
+        "sys",
+        "fs",
+        "walk",
+        "walkSync"
+      ],
+      "repository": "https://github.com/coolaj86/node-walk",
+      "dependentPublicRepoCount": 64,
+      "dependentPackageCount": 469
+    },
+    {
+      "name": "mysql",
+      "description": "A node.js driver for mysql. It is written in JavaScript, does not require compiling, and is 100% MIT licensed.",
+      "repository": "https://github.com/mysqljs/mysql",
+      "dependentPublicRepoCount": 64,
+      "dependentPackageCount": 1539
+    },
+    {
+      "name": "xml2js",
+      "description": "Simple XML to JavaScript object converter.",
+      "keywords": [
+        "xml",
+        "json"
+      ],
+      "repository": "https://github.com/Leonidas-from-XIV/node-xml2js",
+      "dependentPublicRepoCount": 64,
+      "dependentPackageCount": 2134
+    },
+    {
+      "name": "auto-launch",
+      "description": "Launch node applications or executables at login (Mac, Windows, and Linux)",
+      "keywords": [
+        "login",
+        "launch",
+        "node-webkit",
+        "electron",
+        "boot",
+        "login-items"
+      ],
+      "repository": "https://github.com/4ver/node-auto-launch",
+      "dependentPublicRepoCount": 64,
+      "dependentPackageCount": 5
+    },
+    {
+      "name": "leaflet",
+      "description": "JavaScript library for mobile-friendly interactive maps",
+      "keywords": [
+        "gis",
+        "map"
+      ],
+      "repository": "https://github.com/Leaflet/Leaflet",
+      "dependentPublicRepoCount": 63,
+      "dependentPackageCount": 257
+    },
+    {
+      "name": "keymirror",
+      "description": "A simple utility for creating an object with values equal to its keys. Identical to react/lib/keyMirror",
+      "repository": "https://github.com/STRML/keyMirror",
+      "dependentPublicRepoCount": 63,
+      "dependentPackageCount": 164
+    },
+    {
+      "name": "electron-compile",
+      "description": "Electron supporting package to compile JS and CSS in Electron applications",
+      "keywords": [
+        "electron"
+      ],
+      "repository": "https://github.com/paulcbetts/electron-compile",
+      "dependentPublicRepoCount": 63,
+      "dependentPackageCount": 7
+    },
+    {
+      "name": "commander",
+      "description": "the complete solution for node.js command-line programs",
+      "keywords": [
+        "command",
+        "option",
+        "parser"
+      ],
+      "repository": "https://github.com/tj/commander.js",
+      "dependentPublicRepoCount": 62,
+      "dependentPackageCount": 10784
+    },
+    {
+      "name": "typescript",
+      "description": "TypeScript is a language for application scale JavaScript development",
+      "keywords": [
+        "TypeScript",
+        "Microsoft",
+        "compiler",
+        "language",
+        "javascript"
+      ],
+      "repository": "https://github.com/Microsoft/TypeScript",
+      "dependentPublicRepoCount": 62,
+      "dependentPackageCount": 3343
+    },
+    {
+      "name": "reselect",
+      "description": "Selectors for Redux.",
+      "keywords": [
+        "react",
+        "redux"
+      ],
+      "repository": "https://github.com/reactjs/reselect",
+      "dependentPublicRepoCount": 61,
+      "dependentPackageCount": 121
+    },
+    {
+      "name": "electron-builder",
+      "description": "A complete solution to package and build a ready for distribution Electron app for MacOS, Windows and Linux with “auto update” support out of the box",
+      "keywords": [
+        "electron",
+        "builder",
+        "build",
+        "installer",
+        "install",
+        "packager",
+        "pack",
+        "nsis",
+        "app",
+        "dmg",
+        "msi",
+        "exe",
+        "setup",
+        "Windows",
+        "OS X",
+        "MacOS",
+        "Mac"
+      ],
+      "repository": "https://github.com/electron-userland/electron-builder",
+      "dependentPublicRepoCount": 61,
+      "dependentPackageCount": 20
+    },
+    {
+      "name": "angulartics2",
+      "description": "Vendor-agnostic web analytics for Angular2 applications",
+      "keywords": [
+        "angular2",
+        "ng2",
+        "angular",
+        "analytics",
+        "tracking",
+        "google analytics",
+        "google tag manager",
+        "woopra",
+        "splunk",
+        "piwik",
+        "page tracking",
+        "event tracking",
+        "scroll tracking",
+        "inspectlet"
+      ],
+      "repository": "https://github.com/angulartics/angulartics2",
+      "dependentPublicRepoCount": 61,
+      "dependentPackageCount": 0
+    },
+    {
+      "name": "del",
+      "description": "Delete files and folders",
+      "keywords": [
+        "delete",
+        "del",
+        "remove",
+        "destroy",
+        "trash",
+        "unlink",
+        "clean",
+        "cleaning",
+        "cleanup",
+        "rm",
+        "rmrf",
+        "rimraf",
+        "rmdir",
+        "glob",
+        "gulpfriendly",
+        "file",
+        "files",
+        "folder",
+        "dir",
+        "directory",
+        "fs",
+        "filesystem"
+      ],
+      "repository": "https://github.com/sindresorhus/del",
+      "dependentPublicRepoCount": 61,
+      "dependentPackageCount": 5333
+    },
+    {
+      "name": "xtend",
+      "description": "extend like a boss",
+      "keywords": [
+        "extend",
+        "merge",
+        "options",
+        "opts",
+        "object",
+        "array"
+      ],
+      "repository": "https://github.com/Raynos/xtend",
+      "dependentPublicRepoCount": 60,
+      "dependentPackageCount": 1688
+    },
+    {
+      "name": "gulp-sass",
+      "description": "Gulp plugin for sass",
+      "keywords": [
+        "gulpplugin",
+        "sass",
+        "gulp"
+      ],
+      "repository": "https://github.com/dlmanning/gulp-sass",
+      "dependentPublicRepoCount": 59,
+      "dependentPackageCount": 1958
+    },
+    {
+      "name": "ie-shim",
+      "description": "ie-shim for Angular 2",
+      "repository": "https://github.com/gdi2290/ie-shim",
+      "dependentPublicRepoCount": 59,
+      "dependentPackageCount": 1
+    },
+    {
+      "name": "mime",
+      "description": "A comprehensive library for mime-type mapping",
+      "keywords": [
+        "util",
+        "mime"
+      ],
+      "repository": "https://github.com/broofa/node-mime",
+      "dependentPublicRepoCount": 58,
+      "dependentPackageCount": 1979
+    },
+    {
+      "name": "material-design-lite",
+      "description": "Material Design Components in CSS, JS and HTML",
+      "repository": "https://github.com/google/material-design-lite",
+      "dependentPublicRepoCount": 57,
+      "dependentPackageCount": 46
+    },
+    {
+      "name": "sass-loader",
+      "description": "Sass loader for webpack",
+      "keywords": [
+        "sass",
+        "libsass",
+        "webpack",
+        "loader"
+      ],
+      "repository": "https://github.com/jtangelder/sass-loader",
+      "dependentPublicRepoCount": 57,
+      "dependentPackageCount": 1525
+    },
+    {
+      "name": "fs-jetpack",
+      "description": "Better file system API",
+      "keywords": [
+        "fs",
+        "file system"
+      ],
+      "repository": "https://github.com/szwacz/fs-jetpack",
+      "dependentPublicRepoCount": 57,
+      "dependentPackageCount": 50
+    },
+    {
+      "name": "eslint",
+      "description": "An AST-based pattern checker for JavaScript.",
+      "keywords": [
+        "ast",
+        "lint",
+        "javascript",
+        "ecmascript",
+        "espree"
+      ],
+      "repository": "https://github.com/eslint/eslint",
+      "dependentPublicRepoCount": 57,
+      "dependentPackageCount": 23583
+    },
+    {
+      "name": "soundmanager2",
+      "description": "A JavaScript Sound API supporting MP3, MPEG4 and HTML5 audio + RTMP, providing reliable cross-browser/platform audio control in as little as 12 KB.",
+      "keywords": [
+        "browser",
+        "audio",
+        "sound",
+        "mp3",
+        "mpeg4",
+        "html5"
+      ],
+      "repository": "https://github.com/scottschiller/SoundManager2",
+      "dependentPublicRepoCount": 57,
+      "dependentPackageCount": 4
+    },
+    {
+      "name": "ejs",
+      "description": "Embedded JavaScript templates",
+      "keywords": [
+        "template",
+        "engine",
+        "ejs"
+      ],
+      "repository": "https://github.com/mde/ejs",
+      "dependentPublicRepoCount": 57,
+      "dependentPackageCount": 2468
+    },
+    {
+      "name": "redux-form",
+      "description": "A higher order component decorator for forms using Redux and React",
+      "keywords": [
+        "react",
+        "reactjs",
+        "flux",
+        "redux",
+        "react-redux",
+        "redux-form",
+        "form",
+        "decorator"
+      ],
+      "repository": "https://github.com/erikras/redux-form",
+      "dependentPublicRepoCount": 56,
+      "dependentPackageCount": 74
+    },
+    {
+      "name": "mousetrap",
+      "description": "Simple library for handling keyboard shortcuts",
+      "keywords": [
+        "keyboard",
+        "shortcuts",
+        "events"
+      ],
+      "repository": "https://github.com/ccampbell/mousetrap",
+      "dependentPublicRepoCount": 56,
+      "dependentPackageCount": 90
+    },
+    {
+      "name": "chalk",
+      "description": "Terminal string styling done right. Much color.",
+      "keywords": [
+        "color",
+        "colour",
+        "colors",
+        "terminal",
+        "console",
+        "cli",
+        "string",
+        "str",
+        "ansi",
+        "style",
+        "styles",
+        "tty",
+        "formatting",
+        "rgb",
+        "256",
+        "shell",
+        "xterm",
+        "log",
+        "logging",
+        "command-line",
+        "text"
+      ],
+      "repository": "https://github.com/chalk/chalk",
+      "dependentPublicRepoCount": 56,
+      "dependentPackageCount": 10914
+    },
+    {
+      "name": "co",
+      "description": "generator async control flow goodness",
+      "keywords": [
+        "async",
+        "flow",
+        "generator",
+        "coro",
+        "coroutine"
+      ],
+      "repository": "https://github.com/tj/co",
+      "dependentPublicRepoCount": 55,
+      "dependentPackageCount": 2657
+    },
+    {
+      "name": "serialport",
+      "description": "Node.js package to access serial ports. Welcome your robotic javascript overlords. Better yet, program them!",
+      "keywords": [
+        "serialport",
+        "johnny-five",
+        "serial port",
+        "hardware",
+        "iot",
+        "nodebots"
+      ],
+      "repository": "https://github.com/EmergingTechnologyAdvisors/node-serialport",
+      "dependentPublicRepoCount": 55,
+      "dependentPackageCount": 471
+    },
+    {
+      "name": "lowdb",
+      "description": "JSON database for Node and the browser powered by lodash API",
+      "keywords": [
+        "flat",
+        "file",
+        "local",
+        "database",
+        "storage",
+        "JSON",
+        "lo-dash",
+        "lodash",
+        "underscore",
+        "localStorage",
+        "embed",
+        "embeddable"
+      ],
+      "repository": "https://github.com/typicode/lowdb",
+      "dependentPublicRepoCount": 53,
+      "dependentPackageCount": 63
+    },
+    {
+      "name": "express-session",
+      "description": "Simple session middleware for Express",
+      "repository": "https://github.com/expressjs/session",
+      "dependentPublicRepoCount": 53,
+      "dependentPackageCount": 1094
+    },
+    {
+      "name": "node-fetch",
+      "description": "A light-weight module that brings window.fetch to node.js and io.js",
+      "keywords": [
+        "fetch",
+        "http",
+        "promise"
+      ],
+      "repository": "https://github.com/bitinn/node-fetch",
+      "dependentPublicRepoCount": 53,
+      "dependentPackageCount": 649
+    },
+    {
+      "name": "assets-webpack-plugin",
+      "description": "Emits a json file with assets paths",
+      "keywords": [
+        "webpack",
+        "plugin",
+        "generate",
+        "assets",
+        "hashes"
+      ],
+      "repository": "https://github.com/sporto/assets-webpack-plugin",
+      "dependentPublicRepoCount": 53,
+      "dependentPackageCount": 55
+    },
+    {
+      "name": "mocha",
+      "description": "simple, flexible, fun test framework",
+      "keywords": [
+        "mocha",
+        "test",
+        "bdd",
+        "tdd",
+        "tap"
+      ],
+      "repository": "https://github.com/mochajs/mocha",
+      "dependentPublicRepoCount": 53,
+      "dependentPackageCount": 79871
+    },
+    {
+      "name": "gulp-minify-css",
+      "description": "Minify css with clean-css.",
+      "dependentPublicRepoCount": 53,
+      "dependentPackageCount": 1249
+    },
+    {
+      "name": "babel-cli",
+      "description": "Babel command line.",
+      "repository": "https://github.com/babel/babel/tree/master/packages/babel-cli",
+      "dependentPublicRepoCount": 53,
+      "dependentPackageCount": 15227
+    },
+    {
+      "name": "sequelize",
+      "description": "Multi dialect ORM for Node.JS/io.js",
+      "keywords": [
+        "mysql",
+        "sqlite",
+        "postgresql",
+        "postgres",
+        "mssql",
+        "orm",
+        "nodejs",
+        "object relational mapper"
+      ],
+      "repository": "https://github.com/sequelize/sequelize",
+      "dependentPublicRepoCount": 53,
+      "dependentPackageCount": 532
+    },
+    {
+      "name": "configstore",
+      "description": "Easily load and save config without having to think about where and how",
+      "keywords": [
+        "config",
+        "store",
+        "storage",
+        "conf",
+        "configuration",
+        "settings",
+        "preferences",
+        "json",
+        "data",
+        "persist",
+        "persistent",
+        "save"
+      ],
+      "repository": "https://github.com/yeoman/configstore",
+      "dependentPublicRepoCount": 52,
+      "dependentPackageCount": 140
+    },
+    {
+      "name": "redux-saga",
+      "description": "Saga middleware for Redux to handle Side Effects",
+      "keywords": [
+        "javascript",
+        "redux",
+        "middleware",
+        "saga",
+        "effects",
+        "side effects"
+      ],
+      "repository": "https://github.com/yelouafi/redux-saga",
+      "dependentPublicRepoCount": 52,
+      "dependentPackageCount": 116
+    },
+    {
+      "name": "isomorphic-fetch",
+      "description": "Isomorphic WHATWG Fetch API, for Node & Browserify",
+      "repository": "https://github.com/matthew-andrews/isomorphic-fetch",
+      "dependentPublicRepoCount": 52,
+      "dependentPackageCount": 640
+    },
+    {
+      "name": "bootstrap-loader",
+      "description": "Boostrap for Webpack",
+      "keywords": [
+        "bootstrap",
+        "twitter"
+      ],
+      "repository": "https://github.com/shakacode/bootstrap-loader",
+      "dependentPublicRepoCount": 51,
+      "dependentPackageCount": 24
+    },
+    {
+      "name": "fullcalendar",
+      "description": "Full-sized drag & drop event calendar",
+      "keywords": [
+        "calendar",
+        "event",
+        "full-sized",
+        "jquery-plugin"
+      ],
+      "repository": "https://github.com/fullcalendar/fullcalendar",
+      "dependentPublicRepoCount": 51,
+      "dependentPackageCount": 8
+    },
+    {
+      "name": "less",
+      "description": "Leaner CSS",
+      "keywords": [
+        "compile less",
+        "css nesting",
+        "css variable",
+        "css",
+        "gradients css",
+        "gradients css3",
+        "less compiler",
+        "less css",
+        "less mixins",
+        "less",
+        "less.js",
+        "lesscss",
+        "mixins",
+        "nested css",
+        "parser",
+        "preprocessor",
+        "bootstrap css",
+        "bootstrap less",
+        "style",
+        "styles",
+        "stylesheet",
+        "variables in css",
+        "css less"
+      ],
+      "repository": "https://github.com/less/less.js",
+      "dependentPublicRepoCount": 51,
+      "dependentPackageCount": 2586
+    },
+    {
+      "name": "js-yaml",
+      "description": "YAML 1.2 parser and serializer",
+      "keywords": [
+        "yaml",
+        "parser",
+        "serializer",
+        "pyyaml"
+      ],
+      "repository": "https://github.com/nodeca/js-yaml",
+      "dependentPublicRepoCount": 50,
+      "dependentPackageCount": 2301
+    },
+    {
+      "name": "webpack-dev-server",
+      "description": "Serves a webpack app. Updates the browser on changes.",
+      "repository": "https://github.com/webpack/webpack-dev-server",
+      "dependentPublicRepoCount": 50,
+      "dependentPackageCount": 4522
+    },
+    {
+      "name": "vuex",
+      "description": "state management for Vue.js",
+      "repository": "https://github.com/vuejs/vuex",
+      "dependentPublicRepoCount": 50,
+      "dependentPackageCount": 65
+    },
+    {
+      "name": "ng2-uploader",
+      "description": "Angular2 File Uploader",
+      "keywords": [
+        "ng2",
+        "angular",
+        "angular2",
+        "file",
+        "upload",
+        "uploader"
+      ],
+      "repository": "https://github.com/jkuri/ng2-uploader",
+      "dependentPublicRepoCount": 49,
+      "dependentPackageCount": 0
+    },
+    {
+      "name": "colors",
+      "description": "get colors in your node.js console",
+      "keywords": [
+        "ansi",
+        "terminal",
+        "colors"
+      ],
+      "repository": "https://github.com/Marak/colors.js",
+      "dependentPublicRepoCount": 49,
+      "dependentPackageCount": 7133
+    },
+    {
+      "name": "chartist",
+      "description": "Simple, responsive charts",
+      "keywords": [
+        "chartist",
+        "responsive charts",
+        "charts",
+        "charting"
+      ],
+      "repository": "https://github.com/gionkunz/chartist-js",
+      "dependentPublicRepoCount": 49,
+      "dependentPackageCount": 29
+    },
+    {
+      "name": "ng2-ckeditor",
+      "description": "Angular2 CKEditor component",
+      "keywords": [
+        "angular",
+        "angular2",
+        "component",
+        "ckeditor",
+        "wysiwyg"
+      ],
+      "repository": "https://github.com/chymz/ng2-ckeditor",
+      "dependentPublicRepoCount": 48,
+      "dependentPackageCount": 0
+    },
+    {
+      "name": "jquery-slimscroll",
+      "description": "slimScroll is a small jQuery plugin that transforms any div into a scrollable area. slimScroll doesn't occupy any visual space as it only appears on a user initiated mouse-over.",
+      "keywords": [
+        "scrollbar",
+        "scroll",
+        "slimscroll",
+        "scrollable",
+        "scrolling",
+        "scroller",
+        "ui",
+        "jquery-plugin",
+        "ecosystem:jquery"
+      ],
+      "repository": "https://github.com/rochal/jQuery-slimScroll",
+      "dependentPublicRepoCount": 48,
+      "dependentPackageCount": 3
+    },
+    {
+      "name": "gulp-rename",
+      "description": "Rename files",
+      "keywords": [
+        "gulpplugin"
+      ],
+      "repository": "https://github.com/hparra/gulp-rename",
+      "dependentPublicRepoCount": 48,
+      "dependentPackageCount": 6866
+    },
+    {
+      "name": "google-maps",
+      "description": "Wrapper for asynchronously used Google Maps API",
+      "keywords": [
+        "google",
+        "maps",
+        "asynchronous",
+        "browser",
+        "wrapper"
+      ],
+      "repository": "https://github.com/Carrooi/Js-GoogleMapsLoader",
+      "dependentPublicRepoCount": 48,
+      "dependentPackageCount": 10
+    },
+    {
+      "name": "jsdom",
+      "description": "A JavaScript implementation of the DOM and HTML standards",
+      "keywords": [
+        "dom",
+        "html",
+        "whatwg",
+        "w3c"
+      ],
+      "repository": "https://github.com/tmpvar/jsdom",
+      "dependentPublicRepoCount": 48,
+      "dependentPackageCount": 3637
+    },
+    {
+      "name": "font-awesome-sass-loader",
+      "description": "font-awesome (sass) package for webpack",
+      "keywords": [
+        "font-awesome",
+        "sass",
+        "webpack"
+      ],
+      "repository": "https://github.com/francisbesset/font-awesome-sass-loader",
+      "dependentPublicRepoCount": 48,
+      "dependentPackageCount": 0
+    },
+    {
+      "name": "ckeditor",
+      "description": "JavaScript WYSIWYG web text editor.",
+      "keywords": [
+        "ckeditor",
+        "fckeditor",
+        "editor",
+        "wysiwyg",
+        "html",
+        "richtext",
+        "text",
+        "javascript"
+      ],
+      "repository": "https://github.com/ckeditor/ckeditor-releases",
+      "dependentPublicRepoCount": 48,
+      "dependentPackageCount": 2
+    },
+    {
+      "name": "ng2-smart-table",
+      "description": "Angular 2 Smart Table",
+      "repository": "https://github.com/akveo/ng2-smart-table",
+      "dependentPublicRepoCount": 47,
+      "dependentPackageCount": 0
+    },
+    {
+      "name": "electron-settings",
+      "description": "A simple persistent user settings manager for Electron.",
+      "keywords": [
+        "electron",
+        "app",
+        "user",
+        "data",
+        "settings",
+        "manager",
+        "config",
+        "json",
+        "storage",
+        "promise",
+        "has",
+        "get",
+        "set",
+        "delete",
+        "reset",
+        "clear"
+      ],
+      "repository": "https://github.com/nathanbuchar/electron-settings",
+      "dependentPublicRepoCount": 47,
+      "dependentPackageCount": 4
+    },
+    {
+      "name": "leaflet-map",
+      "description": "simple way to make a leaflet map application",
+      "keywords": [
+        "leaflet",
+        "browserify"
+      ],
+      "repository": "https://github.com/jden/node-leaflet-map",
+      "dependentPublicRepoCount": 47,
+      "dependentPackageCount": 1
+    },
+    {
+      "name": "easy-pie-chart",
+      "description": "Lightweight plugin to render simple, animated and retina optimized pie charts",
+      "keywords": [
+        "pie chart",
+        "chart",
+        "circular progress",
+        "precent",
+        "progress bar"
+      ],
+      "repository": "https://github.com/rendro/easy-pie-chart",
+      "dependentPublicRepoCount": 47,
+      "dependentPackageCount": 0
+    },
+    {
+      "name": "ramda",
+      "description": "A practical functional library for JavaScript programmers.",
+      "repository": "https://github.com/ramda/ramda",
+      "dependentPublicRepoCount": 47,
+      "dependentPackageCount": 1154
+    },
+    {
+      "name": "ng2-tree",
+      "description": "angular2 component for visualizing data that can be naturally represented as a tree",
+      "keywords": [
+        "tree",
+        "ng2",
+        "angular2",
+        "ng2-tree",
+        "branch",
+        "tree-view",
+        "branchy",
+        "angular2-tree-view",
+        "expand",
+        "collapse",
+        "recursive"
+      ],
+      "repository": "https://github.com/valor-software/ng2-tree",
+      "dependentPublicRepoCount": 47,
+      "dependentPackageCount": 0
+    },
+    {
+      "name": "material-design-icons",
+      "description": "Material Design icons by Google",
+      "keywords": [
+        "icons",
+        "material",
+        "material-design",
+        "google"
+      ],
+      "repository": "https://github.com/google/material-design-icons",
+      "dependentPublicRepoCount": 46,
+      "dependentPackageCount": 45
+    },
+    {
+      "name": "rx",
+      "description": "Library for composing asynchronous and event-based operations in JavaScript",
+      "keywords": [
+        "LINQ",
+        "FRP",
+        "Reactive",
+        "Events",
+        "Rx",
+        "RxJS"
+      ],
+      "repository": "https://github.com/Reactive-Extensions/RxJS",
+      "dependentPublicRepoCount": 46,
+      "dependentPackageCount": 565
+    },
+    {
+      "name": "electron-localshortcut",
+      "description": "register/unregister a keyboard shortcut locally to a BrowserWindow instance, without using a Menu",
+      "keywords": [
+        "electron",
+        "shortcuts",
+        "browser-window"
+      ],
+      "repository": "https://github.com/parro-it/electron-localshortcut",
+      "dependentPublicRepoCount": 45,
+      "dependentPackageCount": 4
+    },
+    {
+      "name": "valid-url",
+      "description": "URI validation functions",
+      "keywords": [
+        "url",
+        "validation",
+        "check",
+        "checker",
+        "pattern"
+      ],
+      "repository": "https://github.com/ogt/valid-url",
+      "dependentPublicRepoCount": 44,
+      "dependentPackageCount": 173
+    },
+    {
+      "name": "postcss-loader",
+      "description": "PostCSS loader for webpack",
+      "keywords": [
+        "webpack",
+        "loader",
+        "css",
+        "postcss",
+        "postcss-runner"
+      ],
+      "repository": "https://github.com/postcss/postcss-loader",
+      "dependentPublicRepoCount": 44,
+      "dependentPackageCount": 1167
+    },
+    {
+      "name": "gulp-util",
+      "description": "Utility functions for gulp plugins",
+      "repository": "https://github.com/gulpjs/gulp-util",
+      "dependentPublicRepoCount": 44,
+      "dependentPackageCount": 9331
+    },
+    {
+      "name": "es6-module-loader",
+      "description": "An ES6 Module Loader shim",
+      "keywords": [
+        "script",
+        "loader",
+        "es6",
+        "harmony"
+      ],
+      "repository": "https://github.com/ModuleLoader/es6-module-loader",
+      "dependentPublicRepoCount": 44,
+      "dependentPackageCount": 69
+    },
+    {
+      "name": "musicmetadata",
+      "description": "Streaming music metadata parser for node and the browser.",
+      "keywords": [
+        "id3",
+        "id3v1",
+        "id3v2",
+        "m4a",
+        "mp4",
+        "vorbis",
+        "ogg",
+        "flac",
+        "asf",
+        "wma",
+        "wmv",
+        "tags",
+        "tag"
+      ],
+      "repository": "https://github.com/leetreveil/musicmetadata",
+      "dependentPublicRepoCount": 43,
+      "dependentPackageCount": 39
+    },
+    {
+      "name": "googleapis",
+      "description": "Google APIs Client Library for Node.js",
+      "keywords": [
+        "google",
+        "api",
+        "google apis",
+        "client",
+        "client library"
+      ],
+      "repository": "https://github.com/google/google-api-nodejs-client",
+      "dependentPublicRepoCount": 43,
+      "dependentPackageCount": 246
+    },
+    {
+      "name": "jquery-ui",
+      "description": "A curated set of user interface interactions, effects, widgets, and themes built on top of the jQuery JavaScript Library.",
+      "repository": "https://github.com/jquery/jquery-ui",
+      "dependentPublicRepoCount": 43,
+      "dependentPackageCount": 134
+    },
+    {
+      "name": "electron-gh-releases",
+      "description": "Electron auto-update by releasing on Github.",
+      "repository": "https://github.com/jenslind/electron-gh-releases",
+      "dependentPublicRepoCount": 43,
+      "dependentPackageCount": 0
+    },
+    {
+      "name": "md5",
+      "description": "js function for hashing messages with MD5",
+      "repository": "https://github.com/pvorb/node-md5",
+      "dependentPublicRepoCount": 43,
+      "dependentPackageCount": 423
+    },
+    {
+      "name": "photon",
+      "description": "JavaScript library for the WordPress.com Photon image manipulation service",
+      "keywords": [
+        "wordpress",
+        "photon",
+        "image",
+        "resize",
+        "thumbnail",
+        "filter",
+        "service",
+        "api",
+        "library"
+      ],
+      "repository": "https://github.com/Automattic/photon.js",
+      "dependentPublicRepoCount": 42,
+      "dependentPackageCount": 6
+    },
+    {
+      "name": "semantic-ui",
+      "description": "Semantic empowers designers and developers by creating a shared vocabulary for UI.",
+      "repository": "https://github.com/Semantic-Org/Semantic-UI",
+      "dependentPublicRepoCount": 42,
+      "dependentPackageCount": 29
+    },
+    {
+      "name": "compression",
+      "description": "Node.js compression middleware",
+      "repository": "https://github.com/expressjs/compression",
+      "dependentPublicRepoCount": 42,
+      "dependentPackageCount": 914
+    },
+    {
+      "name": "cross-spawn",
+      "description": "Cross platform child_process#spawn and child_process#spawnSync",
+      "keywords": [
+        "spawn",
+        "spawnSync",
+        "windows",
+        "cross",
+        "platform",
+        "path",
+        "ext",
+        "path-ext",
+        "path_ext",
+        "shebang",
+        "hashbang",
+        "cmd",
+        "execute"
+      ],
+      "repository": "https://github.com/IndigoUnited/node-cross-spawn",
+      "dependentPublicRepoCount": 41,
+      "dependentPackageCount": 606
+    },
+    {
+      "name": "vue-resource",
+      "description": "The HTTP client for Vue.js",
+      "keywords": [
+        "vue",
+        "xhr",
+        "http",
+        "ajax"
+      ],
+      "repository": "https://github.com/vuejs/vue-resource",
+      "dependentPublicRepoCount": 41,
+      "dependentPackageCount": 74
+    },
+    {
+      "name": "promise",
+      "description": "Bare bones Promises/A+ implementation",
+      "repository": "https://github.com/then/promise",
+      "dependentPublicRepoCount": 41,
+      "dependentPackageCount": 1599
+    },
+    {
+      "name": "electron-connect",
+      "description": "Livereload tools for Electron development",
+      "keywords": [
+        "electron",
+        "livereload",
+        "gulp"
+      ],
+      "repository": "https://github.com/Quramy/electron-connect",
+      "dependentPublicRepoCount": 41,
+      "dependentPackageCount": 10
+    },
+    {
+      "name": "hammerjs",
+      "description": "A javascript library for multi-touch gestures",
+      "keywords": [
+        "touch",
+        "gestures"
+      ],
+      "repository": "https://github.com/hammerjs/hammer.js",
+      "dependentPublicRepoCount": 41,
+      "dependentPackageCount": 143
+    },
+    {
+      "name": "bootstrap-sass",
+      "description": "bootstrap-sass is a Sass-powered version of Bootstrap 3, ready to drop right into your Sass powered applications.",
+      "keywords": [
+        "bootstrap",
+        "sass",
+        "css",
+        "eyeglass-module"
+      ],
+      "repository": "https://github.com/twbs/bootstrap-sass",
+      "dependentPublicRepoCount": 41,
+      "dependentPackageCount": 169
+    },
+    {
+      "name": "gulp-plumber",
+      "description": "Prevent pipe breaking caused by errors from gulp plugins",
+      "keywords": [
+        "gulpplugin"
+      ],
+      "repository": "https://github.com/floatdrop/gulp-plumber",
+      "dependentPublicRepoCount": 41,
+      "dependentPackageCount": 3604
+    },
+    {
+      "name": "angular-messages",
+      "description": "AngularJS module that provides enhanced support for displaying messages within templates",
+      "keywords": [
+        "angular",
+        "framework",
+        "browser",
+        "client-side"
+      ],
+      "repository": "https://github.com/angular/angular.js",
+      "dependentPublicRepoCount": 41,
+      "dependentPackageCount": 62
+    },
+    {
+      "name": "is-electron-renderer",
+      "description": "Check if code is running in Electron renderer process.",
+      "keywords": [
+        "electron",
+        "electron-component",
+        "atom",
+        "renderer",
+        "process"
+      ],
+      "repository": "https://github.com/jprichardson/is-electron-renderer",
+      "dependentPublicRepoCount": 40,
+      "dependentPackageCount": 7
+    },
+    {
+      "name": "through2",
+      "description": "A tiny wrapper around Node streams2 Transform to avoid explicit subclassing noise",
+      "keywords": [
+        "stream",
+        "streams2",
+        "through",
+        "transform"
+      ],
+      "repository": "https://github.com/rvagg/through2",
+      "dependentPublicRepoCount": 40,
+      "dependentPackageCount": 6927
+    },
+    {
+      "name": "asar",
+      "description": "Creating Electron app packages",
+      "repository": "https://github.com/electron/asar",
+      "dependentPublicRepoCount": 39,
+      "dependentPackageCount": 44
+    },
+    {
+      "name": "npm",
+      "description": "a package manager for JavaScript",
+      "keywords": [
+        "install",
+        "modules",
+        "package manager",
+        "package.json"
+      ],
+      "repository": "https://github.com/npm/npm",
+      "dependentPublicRepoCount": 39,
+      "dependentPackageCount": 1130
+    },
+    {
+      "name": "react-dropzone",
+      "description": "Simple HTML5 drag-drop zone with React.js",
+      "keywords": [
+        "react-component",
+        "react",
+        "drag",
+        "drop",
+        "upload"
+      ],
+      "repository": "https://github.com/okonet/react-dropzone",
+      "dependentPublicRepoCount": 39,
+      "dependentPackageCount": 46
+    },
+    {
+      "name": "backbone",
+      "description": "Give your JS App some Backbone with Models, Views, Collections, and Events.",
+      "keywords": [
+        "model",
+        "view",
+        "controller",
+        "router",
+        "server",
+        "client",
+        "browser"
+      ],
+      "repository": "https://github.com/jashkenas/backbone",
+      "dependentPublicRepoCount": 39,
+      "dependentPackageCount": 1070
+    },
+    {
+      "name": "react-addons-update",
+      "description": "This package provides the React updates add-on.",
+      "keywords": [
+        "react",
+        "react-addon"
+      ],
+      "repository": "https://github.com/facebook/react",
+      "dependentPublicRepoCount": 38,
+      "dependentPackageCount": 90
+    },
+    {
+      "name": "grunt",
+      "description": "The JavaScript Task Runner",
+      "keywords": [
+        "task",
+        "async",
+        "cli",
+        "minify",
+        "uglify",
+        "build",
+        "lodash",
+        "unit",
+        "test",
+        "qunit",
+        "nodeunit",
+        "server",
+        "init",
+        "scaffold",
+        "make",
+        "jake",
+        "tool"
+      ],
+      "repository": "https://github.com/gruntjs/grunt",
+      "dependentPublicRepoCount": 38,
+      "dependentPackageCount": 24300
+    },
+    {
+      "name": "electron-positioner",
+      "description": "> Helps positioning your electron windows.",
+      "repository": "https://github.com/jenslind/electron-positioner",
+      "dependentPublicRepoCount": 38,
+      "dependentPackageCount": 2
+    },
+    {
+      "name": "remote",
+      "description": "Work on client-side files with a remote API server transparently",
+      "keywords": [
+        "http",
+        "parse",
+        "host",
+        "route",
+        "router",
+        "transparent",
+        "remote",
+        "api",
+        "proxy",
+        "reverse"
+      ],
+      "repository": "https://github.com/gadr90/remote",
+      "dependentPublicRepoCount": 38,
+      "dependentPackageCount": 2
+    },
+    {
+      "name": "whatwg-fetch",
+      "description": "A window.fetch polyfill.",
+      "repository": "https://github.com/github/fetch",
+      "dependentPublicRepoCount": 37,
+      "dependentPackageCount": 469
+    },
+    {
+      "name": "brace",
+      "description": "browserify compatible version of the ace editor.",
+      "keywords": [
+        "ace",
+        "editor",
+        "browser",
+        "package",
+        "bundle",
+        "inline",
+        "browserify"
+      ],
+      "repository": "https://github.com/thlorenz/brace",
+      "dependentPublicRepoCount": 37,
+      "dependentPackageCount": 102
+    },
+    {
+      "name": "requirejs",
+      "description": "Node adapter for RequireJS, for loading AMD modules. Includes RequireJS optimizer",
+      "repository": "https://github.com/jrburke/r.js",
+      "dependentPublicRepoCount": 37,
+      "dependentPackageCount": 1383
+    },
+    {
+      "name": "passport",
+      "description": "Simple, unobtrusive authentication for Node.js.",
+      "keywords": [
+        "express",
+        "connect",
+        "auth",
+        "authn",
+        "authentication"
+      ],
+      "repository": "https://github.com/jaredhanson/passport",
+      "dependentPublicRepoCount": 37,
+      "dependentPackageCount": 1001
+    },
+    {
+      "name": "extend",
+      "description": "Port of jQuery.extend for node.js and the browser",
+      "keywords": [
+        "extend",
+        "clone",
+        "merge"
+      ],
+      "repository": "https://github.com/justmoon/node-extend",
+      "dependentPublicRepoCount": 37,
+      "dependentPackageCount": 2255
+    },
+    {
+      "name": "angular-sanitize",
+      "description": "AngularJS module for sanitizing HTML",
+      "keywords": [
+        "angular",
+        "framework",
+        "browser",
+        "html",
+        "client-side"
+      ],
+      "repository": "https://github.com/angular/angular.js",
+      "dependentPublicRepoCount": 37,
+      "dependentPackageCount": 136
+    },
+    {
+      "name": "log4js",
+      "description": "Port of Log4js to work with node.",
+      "keywords": [
+        "logging",
+        "log",
+        "log4j",
+        "node"
+      ],
+      "repository": "https://github.com/nomiddlename/log4js-node",
+      "dependentPublicRepoCount": 37,
+      "dependentPackageCount": 763
+    },
+    {
+      "name": "gulp-less",
+      "description": "Less for Gulp",
+      "keywords": [
+        "gulpplugin",
+        "gulp",
+        "less"
+      ],
+      "repository": "https://github.com/plus3network/gulp-less",
+      "dependentPublicRepoCount": 37,
+      "dependentPackageCount": 1161
+    },
+    {
+      "name": "chai",
+      "description": "BDD/TDD assertion library for node.js and the browser. Test framework agnostic.",
+      "keywords": [
+        "test",
+        "assertion",
+        "assert",
+        "testing",
+        "chai"
+      ],
+      "repository": "https://github.com/chaijs/chai",
+      "dependentPublicRepoCount": 37,
+      "dependentPackageCount": 39900
+    },
+    {
+      "name": "babel-plugin-transform-decorators-legacy",
+      "description": "A plugin for Babel 6 that (mostly) replicates the old decorator behavior from Babel 5.",
+      "keywords": [
+        "babel",
+        "babel-plugin",
+        "es7",
+        "decorators"
+      ],
+      "repository": "https://github.com/loganfsmyth/babel-plugin-transform-decorators-legacy",
+      "dependentPublicRepoCount": 36,
+      "dependentPackageCount": 1189
+    },
+    {
+      "name": "electron-is-dev",
+      "description": "Check if Electron is running in development",
+      "keywords": [
+        "electron",
+        "dev",
+        "development",
+        "mode",
+        "prod",
+        "production",
+        "detect",
+        "check",
+        "debug",
+        "app"
+      ],
+      "repository": "https://github.com/sindresorhus/electron-is-dev",
+      "dependentPublicRepoCount": 36,
+      "dependentPackageCount": 5
+    },
+    {
+      "name": "snyk",
+      "description": "snyk library and cli utility",
+      "keywords": [
+        "security",
+        "snyk"
+      ],
+      "repository": "https://github.com/Snyk/snyk",
+      "dependentPublicRepoCount": 36,
+      "dependentPackageCount": 141
+    },
+    {
+      "name": "electron-dl",
+      "description": "Simplified file downloads for your Electron app",
+      "keywords": [
+        "electron",
+        "app",
+        "file",
+        "download",
+        "downloader",
+        "progress"
+      ],
+      "repository": "https://github.com/sindresorhus/electron-dl",
+      "dependentPublicRepoCount": 36,
+      "dependentPackageCount": 2
+    },
+    {
+      "name": "mobx-react",
+      "description": "React bindings for MobX. Create fully reactive components.",
+      "keywords": [
+        "mobx",
+        "mobservable",
+        "react-component",
+        "react",
+        "reactjs",
+        "reactive"
+      ],
+      "repository": "https://github.com/mobxjs/mobx-react",
+      "dependentPublicRepoCount": 36,
+      "dependentPackageCount": 37
+    },
+    {
+      "name": "babel-eslint",
+      "description": "Custom parser for ESLint",
+      "repository": "https://github.com/babel/babel-eslint",
+      "dependentPublicRepoCount": 36,
+      "dependentPackageCount": 11705
+    },
+    {
+      "name": "mobx",
+      "description": "Simple, scalable state management.",
+      "keywords": [
+        "mobx",
+        "mobservable",
+        "observable",
+        "react-component",
+        "react",
+        "reactjs",
+        "reactive",
+        "model",
+        "frp",
+        "functional-reactive-programming",
+        "state management",
+        "data flow"
+      ],
+      "repository": "https://github.com/mobxjs/mobx",
+      "dependentPublicRepoCount": 36,
+      "dependentPackageCount": 79
+    },
+    {
+      "name": "feedme",
+      "description": "RSS/Atom/JSON feed parser",
+      "keywords": [
+        "feed",
+        "rss",
+        "atom",
+        "json",
+        "parser"
+      ],
+      "repository": "https://github.com/fent/feedme.js",
+      "dependentPublicRepoCount": 35,
+      "dependentPackageCount": 6
+    },
+    {
+      "name": "eslint-plugin-react",
+      "description": "React specific linting rules for ESLint",
+      "keywords": [
+        "eslint",
+        "eslint-plugin",
+        "eslintplugin",
+        "react"
+      ],
+      "repository": "https://github.com/yannickcr/eslint-plugin-react",
+      "dependentPublicRepoCount": 35,
+      "dependentPackageCount": 6967
+    },
+    {
+      "name": "rrule",
+      "description": "JavaScript library for working with recurrence rules for calendar dates.",
+      "keywords": [
+        "dates",
+        "recurrences",
+        "calendar",
+        "icalendar",
+        "rfc"
+      ],
+      "repository": "https://github.com/jakubroztocil/rrule",
+      "dependentPublicRepoCount": 35,
+      "dependentPackageCount": 14
+    },
+    {
+      "name": "react-select",
+      "description": "A Select control built with and for ReactJS",
+      "keywords": [
+        "combobox",
+        "form",
+        "input",
+        "multiselect",
+        "react",
+        "react-component",
+        "select",
+        "ui"
+      ],
+      "repository": "https://github.com/JedWatson/react-select",
+      "dependentPublicRepoCount": 35,
+      "dependentPackageCount": 150
+    },
+    {
+      "name": "pg",
+      "description": "PostgreSQL client - pure javascript & libpq with the same API",
+      "keywords": [
+        "postgres",
+        "pg",
+        "libpq",
+        "postgre",
+        "database",
+        "rdbms"
+      ],
+      "repository": "https://github.com/brianc/node-postgres",
+      "dependentPublicRepoCount": 35,
+      "dependentPackageCount": 983
+    },
+    {
+      "name": "react-addons-shallow-compare",
+      "description": "This package provides the React shallowCompare add-on.",
+      "keywords": [
+        "react",
+        "react-addon"
+      ],
+      "repository": "https://github.com/facebook/react",
+      "dependentPublicRepoCount": 35,
+      "dependentPackageCount": 165
+    },
+    {
+      "name": "twitter",
+      "description": "Twitter API client library for node.js",
+      "keywords": [
+        "twitter",
+        "streaming",
+        "oauth"
+      ],
+      "repository": "https://github.com/desmondmorris/node-twitter",
+      "dependentPublicRepoCount": 35,
+      "dependentPackageCount": 115
+    },
+    {
+      "name": "cors",
+      "description": "middleware for dynamically or statically enabling CORS in express/connect applications",
+      "keywords": [
+        "cors",
+        "express",
+        "connect",
+        "middleware"
+      ],
+      "repository": "https://github.com/expressjs/cors",
+      "dependentPublicRepoCount": 35,
+      "dependentPackageCount": 719
+    },
+    {
+      "name": "markdown-it",
+      "description": "Markdown-it - modern pluggable markdown parser.",
+      "keywords": [
+        "markdown",
+        "parser",
+        "commonmark",
+        "markdown-it",
+        "markdown-it-plugin"
+      ],
+      "repository": "https://github.com/markdown-it/markdown-it",
+      "dependentPublicRepoCount": 35,
+      "dependentPackageCount": 394
+    },
+    {
+      "name": "temp",
+      "description": "Temporary files and directories",
+      "keywords": [
+        "temporary",
+        "tmp",
+        "temp",
+        "tempdir",
+        "tempfile",
+        "tmpdir",
+        "tmpfile"
+      ],
+      "repository": "https://github.com/bruce/node-temp",
+      "dependentPublicRepoCount": 34,
+      "dependentPackageCount": 1001
+    },
+    {
+      "name": "validator",
+      "description": "String validation and sanitization",
+      "keywords": [
+        "validator",
+        "validation",
+        "validate",
+        "sanitization",
+        "sanitize",
+        "sanitisation",
+        "sanitise",
+        "assert"
+      ],
+      "repository": "https://github.com/chriso/validator.js",
+      "dependentPublicRepoCount": 34,
+      "dependentPackageCount": 992
+    },
+    {
+      "name": "nodegit",
+      "description": "Node.js libgit2 asynchronous native bindings",
+      "keywords": [
+        "libgit2",
+        "git2",
+        "git",
+        "native"
+      ],
+      "repository": "https://github.com/nodegit/nodegit",
+      "dependentPublicRepoCount": 33,
+      "dependentPackageCount": 182
+    },
+    {
+      "name": "watchify",
+      "description": "watch mode for browserify builds",
+      "keywords": [
+        "browserify",
+        "browserify-tool",
+        "watch",
+        "bundle",
+        "build",
+        "browser"
+      ],
+      "repository": "https://github.com/substack/watchify",
+      "dependentPublicRepoCount": 33,
+      "dependentPackageCount": 2607
+    },
+    {
+      "name": "react-ace",
+      "description": "A react component for Ace Editor",
+      "keywords": [
+        "ace",
+        "ace editor",
+        "react-component",
+        "react",
+        "brace"
+      ],
+      "repository": "https://github.com/securingsincity/react-ace",
+      "dependentPublicRepoCount": 33,
+      "dependentPackageCount": 37
+    },
+    {
+      "name": "react-modal",
+      "description": "Accessible modal dialog component for React.JS",
+      "keywords": [
+        "react",
+        "react-component",
+        "modal",
+        "dialog"
+      ],
+      "repository": "https://github.com/rackt/react-modal",
+      "dependentPublicRepoCount": 32,
+      "dependentPackageCount": 69
+    },
+    {
+      "name": "react-addons-test-utils",
+      "description": "This package provides the React TestUtils add-on.",
+      "keywords": [
+        "react",
+        "react-addon"
+      ],
+      "repository": "https://github.com/facebook/react",
+      "dependentPublicRepoCount": 32,
+      "dependentPackageCount": 2754
+    },
+    {
+      "name": "gulp-usemin",
+      "description": "Replaces references to non-optimized scripts or stylesheets into a set of HTML files (or any templates/views).",
+      "keywords": [
+        "gulpplugin",
+        "usemin",
+        "gulp-usemin"
+      ],
+      "repository": "https://github.com/zont/gulp-usemin",
+      "dependentPublicRepoCount": 32,
+      "dependentPackageCount": 57
+    },
+    {
+      "name": "radium",
+      "description": "A set of tools to manage inline styles on React elements",
+      "repository": "https://github.com/formidablelabs/radium",
+      "dependentPublicRepoCount": 32,
+      "dependentPackageCount": 174
+    },
+    {
+      "name": "redux-devtools",
+      "description": "Redux DevTools with hot reloading and time travel",
+      "keywords": [
+        "redux",
+        "devtools",
+        "flux",
+        "hot reloading",
+        "time travel",
+        "live edit"
+      ],
+      "repository": "https://github.com/gaearon/redux-devtools",
+      "dependentPublicRepoCount": 32,
+      "dependentPackageCount": 223
+    },
+    {
+      "name": "electron-context-menu",
+      "description": "Context menu for your Electron app",
+      "keywords": [
+        "electron",
+        "app",
+        "context",
+        "right-click",
+        "menu",
+        "extensible",
+        "save",
+        "image"
+      ],
+      "repository": "https://github.com/sindresorhus/electron-context-menu",
+      "dependentPublicRepoCount": 31,
+      "dependentPackageCount": 0
+    },
+    {
+      "name": "portfinder",
+      "description": "A simple tool to find an open port on the current machine",
+      "keywords": [
+        "http",
+        "ports",
+        "utilities"
+      ],
+      "repository": "https://github.com/indexzero/node-portfinder",
+      "dependentPublicRepoCount": 31,
+      "dependentPackageCount": 297
+    },
+    {
+      "name": "electron-window",
+      "description": "Convenience methods for Electron windows.",
+      "keywords": [
+        "window",
+        "atom",
+        "atom-shell",
+        "electron",
+        "gui",
+        "electron-component"
+      ],
+      "repository": "https://github.com/jprichardson/electron-window",
+      "dependentPublicRepoCount": 31,
+      "dependentPackageCount": 6
+    },
+    {
+      "name": "node-soundcloud",
+      "description": "A node.js wrapper for the Soundcloud SDK.",
+      "keywords": [
+        "node",
+        "music",
+        "soundcloud"
+      ],
+      "repository": "https://github.com/jakemmarsh/node-soundcloud",
+      "dependentPublicRepoCount": 30,
+      "dependentPackageCount": 4
+    },
+    {
+      "name": "irc",
+      "description": "An IRC client library for node",
+      "repository": "https://github.com/martynsmith/node-irc",
+      "dependentPublicRepoCount": 30,
+      "dependentPackageCount": 143
+    },
+    {
+      "name": "robotjs",
+      "description": "Node.js Desktop Automation.",
+      "keywords": [
+        "Automation",
+        "GUI",
+        "mouse",
+        "keyboard",
+        "screenshot",
+        "image",
+        "pixel",
+        "desktop",
+        "robotjs",
+        "screen",
+        "recognition",
+        "autohotkey",
+        "machine",
+        "learning",
+        "color"
+      ],
+      "repository": "https://github.com/octalmage/robotjs",
+      "dependentPublicRepoCount": 30,
+      "dependentPackageCount": 23
+    },
+    {
+      "name": "three",
+      "description": "JavaScript 3D library",
+      "keywords": [
+        "three",
+        "three.js",
+        "3d",
+        "webgl"
+      ],
+      "repository": "https://github.com/mrdoob/three.js",
+      "dependentPublicRepoCount": 30,
+      "dependentPackageCount": 203
+    },
+    {
+      "name": "shortid",
+      "description": "Amazingly short non-sequential url-friendly unique id generator.",
+      "keywords": [
+        "short",
+        "tiny",
+        "id",
+        "uuid",
+        "bitly",
+        "shorten",
+        "mongoid",
+        "shortid",
+        "tinyid"
+      ],
+      "repository": "https://github.com/dylang/shortid",
+      "dependentPublicRepoCount": 30,
+      "dependentPackageCount": 437
+    },
+    {
+      "name": "alt",
+      "description": "A flux implementation",
+      "keywords": [
+        "alt",
+        "es6",
+        "flow",
+        "flux",
+        "react",
+        "unidirectional"
+      ],
+      "repository": "https://github.com/goatslacker/alt",
+      "dependentPublicRepoCount": 30,
+      "dependentPackageCount": 49
+    },
+    {
+      "name": "react-motion",
+      "description": "A spring that solves your animation problems.",
+      "keywords": [
+        "react",
+        "component",
+        "react-component",
+        "transitiongroup",
+        "spring",
+        "tween",
+        "motion",
+        "animation",
+        "transition",
+        "ui"
+      ],
+      "repository": "https://github.com/chenglou/react-motion",
+      "dependentPublicRepoCount": 30,
+      "dependentPackageCount": 131
+    },
+    {
+      "name": "run-sequence",
+      "description": "Run a series of dependent gulp tasks in order",
+      "keywords": [
+        "gulpfriendly",
+        "pipe",
+        "sequence",
+        "gulp",
+        "orchestrator"
+      ],
+      "repository": "https://github.com/OverZealous/run-sequence",
+      "dependentPublicRepoCount": 30,
+      "dependentPackageCount": 3132
+    },
+    {
+      "name": "babel-plugin-transform-class-properties",
+      "description": "This plugin transforms static class properties as well as properties declared with the property initializer syntax",
+      "keywords": [
+        "babel-plugin"
+      ],
+      "repository": "https://github.com/babel/babel/tree/master/packages/babel-plugin-transform-class-properties",
+      "dependentPublicRepoCount": 30,
+      "dependentPackageCount": 1402
+    },
+    {
+      "name": "graceful-fs",
+      "description": "A drop-in replacement for fs, making various improvements.",
+      "keywords": [
+        "fs",
+        "module",
+        "reading",
+        "retry",
+        "retries",
+        "queue",
+        "error",
+        "errors",
+        "handling",
+        "EMFILE",
+        "EAGAIN",
+        "EINVAL",
+        "EPERM",
+        "EACCESS"
+      ],
+      "repository": "https://github.com/isaacs/node-graceful-fs",
+      "dependentPublicRepoCount": 29,
+      "dependentPackageCount": 856
+    },
+    {
+      "name": "angular-ui-bootstrap",
+      "description": "[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/angular-ui/bootstrap?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![Build Status](https://secure.travis-ci.org/angular-ui/bootstrap.svg)](http://travis-",
+      "repository": "https://github.com/angular-ui/bootstrap",
+      "dependentPublicRepoCount": 29,
+      "dependentPackageCount": 79
+    },
+    {
+      "name": "install",
+      "description": "Minimal JavaScript module loader",
+      "keywords": [
+        "modules",
+        "require",
+        "commonjs",
+        "exports",
+        "browser",
+        "packaging",
+        "packager",
+        "install"
+      ],
+      "repository": "https://github.com/benjamn/install",
+      "dependentPublicRepoCount": 29,
+      "dependentPackageCount": 287
+    },
+    {
+      "name": "react-dnd",
+      "description": "Drag and Drop for React",
+      "keywords": [
+        "react",
+        "reactjs",
+        "file",
+        "drag",
+        "drop",
+        "html5",
+        "draggable",
+        "droppable",
+        "drag-and-drop",
+        "dnd",
+        "javascript",
+        "react-component",
+        "hoc"
+      ],
+      "repository": "https://github.com/gaearon/react-dnd",
+      "dependentPublicRepoCount": 29,
+      "dependentPackageCount": 75
+    },
+    {
+      "name": "ncp",
+      "description": "Asynchronous recursive file copy utility.",
+      "keywords": [
+        "cli",
+        "copy"
+      ],
+      "repository": "https://github.com/AvianFlu/ncp",
+      "dependentPublicRepoCount": 29,
+      "dependentPackageCount": 1022
+    },
+    {
+      "name": "react-loading",
+      "description": "React loading component",
+      "keywords": [
+        "loading",
+        "react",
+        "react-component"
+      ],
+      "repository": "https://github.com/cezary/react-loading",
+      "dependentPublicRepoCount": 29,
+      "dependentPackageCount": 4
+    },
+    {
+      "name": "draft-js",
+      "description": "A React framework for building text editors.",
+      "keywords": [
+        "draftjs",
+        "editor",
+        "react",
+        "richtext"
+      ],
+      "repository": "https://github.com/facebook/draft-js",
+      "dependentPublicRepoCount": 29,
+      "dependentPackageCount": 99
+    },
+    {
+      "name": "gulp-sourcemaps",
+      "description": "Source map support for Gulp.js",
+      "keywords": [
+        "gulpplugin",
+        "gulp",
+        "source maps",
+        "sourcemaps"
+      ],
+      "repository": "https://github.com/floridoo/gulp-sourcemaps",
+      "dependentPublicRepoCount": 29,
+      "dependentPackageCount": 3837
+    },
+    {
+      "name": "node-twitter-api",
+      "description": "Simple module for using Twitter's API in node.js",
+      "keywords": [
+        "twitter",
+        "oauth",
+        "rest",
+        "streaming"
+      ],
+      "repository": "https://github.com/reneraab/node-twitter-api",
+      "dependentPublicRepoCount": 29,
+      "dependentPackageCount": 15
+    },
+    {
+      "name": "bulma",
+      "description": "Modern CSS framework based on Flexbox",
+      "keywords": [
+        "css",
+        "sass",
+        "flexbox",
+        "responsive",
+        "framework"
+      ],
+      "repository": "https://github.com/jgthms/bulma",
+      "dependentPublicRepoCount": 29,
+      "dependentPackageCount": 26
+    },
+    {
+      "name": "react-split-pane",
+      "description": "React split-pane component",
+      "keywords": [
+        "react",
+        "react-component",
+        "split-pane",
+        "react-split-pane",
+        "es6"
+      ],
+      "repository": "https://github.com/tomkp/react-split-pane",
+      "dependentPublicRepoCount": 28,
+      "dependentPackageCount": 9
+    },
+    {
+      "name": "reflux",
+      "description": "A simple library for uni-directional dataflow application architecture inspired by ReactJS Flux",
+      "keywords": [
+        "reflux",
+        "react",
+        "flux",
+        "architecture",
+        "dataflow",
+        "action",
+        "event",
+        "data"
+      ],
+      "repository": "https://github.com/reflux/refluxjs",
+      "dependentPublicRepoCount": 28,
+      "dependentPackageCount": 113
+    },
+    {
+      "name": "react-soundplayer",
+      "description": "Create custom SoundCloud players with React",
+      "keywords": [
+        "react",
+        "component",
+        "react-component",
+        "soundcloud",
+        "html5",
+        "audio"
+      ],
+      "dependentPublicRepoCount": 28,
+      "dependentPackageCount": 0
+    },
+    {
+      "name": "react-desktop",
+      "description": "React UI Components for macOS Sierra and Windows 10",
+      "keywords": [
+        "react",
+        "react-component",
+        "electron",
+        "node-webkit",
+        "native",
+        "desktop",
+        "ui",
+        "user",
+        "interface",
+        "component",
+        "os x",
+        "macOS",
+        "mac",
+        "windows"
+      ],
+      "repository": "https://github.com/gabrielbull/react-desktop",
+      "dependentPublicRepoCount": 28,
+      "dependentPackageCount": 1
+    },
+    {
+      "name": "yamljs",
+      "description": "Standalone JavaScript YAML 1.2 Parser & Encoder. Works under node.js and all major browsers. Also brings command line YAML/JSON conversion tools.",
+      "keywords": [
+        "yaml",
+        "json",
+        "yaml2json",
+        "json2yaml"
+      ],
+      "repository": "https://github.com/jeremyfa/yaml.js",
+      "dependentPublicRepoCount": 28,
+      "dependentPackageCount": 403
+    },
+    {
+      "name": "react-addons-pure-render-mixin",
+      "description": "This package provides the React PureRenderMixin add-on.",
+      "keywords": [
+        "react",
+        "react-addon"
+      ],
+      "repository": "https://github.com/facebook/react",
+      "dependentPublicRepoCount": 28,
+      "dependentPackageCount": 142
+    },
+    {
+      "name": "pug",
+      "description": "A clean, whitespace-sensitive template language for writing HTML",
+      "repository": "https://github.com/pugjs/pug",
+      "dependentPublicRepoCount": 28,
+      "dependentPackageCount": 354
+    },
+    {
+      "name": "babel-plugin-transform-runtime",
+      "description": "Externalise references to helpers and builtins, automatically polyfilling your code without polluting globals",
+      "keywords": [
+        "babel-plugin"
+      ],
+      "repository": "https://github.com/babel/babel/tree/master/packages/babel-plugin-transform-runtime",
+      "dependentPublicRepoCount": 28,
+      "dependentPackageCount": 3411
+    }
+  ]
+}
