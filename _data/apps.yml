@@ -2238,3 +2238,16 @@
   description: "Catch up all the unread across your Slack teams in a single place"
   website: "https://slackcatchup.com"
   icon: "slackcatchup.png"
+-
+  name: "Alduin"
+  description: "An RSS and Atom feed agregator"
+  website: "https://github.com/Xstoudi/alduin"
+  repository: "https://github.com/Xstoudi/alduin"
+  keywords:
+    - "rss"
+    - "atom"
+    - "agregator"
+    - "electron"
+    - "react"
+  license: "MIT"
+  icon: "alduin.png"
