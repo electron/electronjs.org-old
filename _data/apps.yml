@@ -2233,3 +2233,16 @@
     - "search"
   license: "MIT"
   icon: "dext.png"
+-
+  name: "healthi"
+  description: "Your mac's battery doctor"
+  website: "http://pablopunk.com/healthi"
+  repository: "http://github.com/pablopunk/healthi"
+  keywords:
+    - "battery"
+    - "mac"
+    - "doctor"
+    - "health"
+    - "util"
+  license: "MIT"
+  icon: "healthi.png"
