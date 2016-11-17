@@ -2233,3 +2233,14 @@
     - "search"
   license: "MIT"
   icon: "dext.png"
+-
+  name: "Tagifier"
+  description: "Metadata editor for Mp3 files"
+  website: "http://tagifier.net"
+  repository: "https://github.com/Cyriaqu3/tagifier"
+  keywords:
+    - "mp3"
+    - "tags"
+    - "metadata"
+  license: "MIT"
+  icon: "tagifier.png"
