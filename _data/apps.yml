@@ -2235,9 +2235,6 @@
   icon: "dext.png"
 -
   name: "Slack Catchup"
-  description: "Catch up all the unread across your Slack  teams in a single place"
+  description: "Catch up all the unread across your Slack teams in a single place"
   website: "https://slackcatchup.com"
-  repository: ""
-  keywords: []
-  license: ""
   icon: "slackcatchup.png"
