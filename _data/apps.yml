@@ -2236,7 +2236,7 @@
 -
   name: "Tagifier"
   description: "Metadata editor for Mp3 files"
-  website: "https://tagifier.,et"
+  website: "https://tagifier.net"
   repository: "https://github.com/Cyriaqu3/tagifier"
   keywords:
     - "mp3"
