@@ -2240,13 +2240,13 @@
   icon: "slackcatchup.png"
 -
   name: "Alduin"
-  description: "An RSS and Atom feed agregator"
+  description: "An RSS and Atom feed aggregator"
   website: "https://github.com/Xstoudi/alduin"
   repository: "https://github.com/Xstoudi/alduin"
   keywords:
     - "rss"
     - "atom"
-    - "agregator"
+    - "aggregator"
     - "electron"
     - "react"
   license: "MIT"
