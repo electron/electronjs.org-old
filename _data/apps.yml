@@ -2234,6 +2234,11 @@
   license: "MIT"
   icon: "dext.png"
 -
+  name: "Slack Catchup"
+  description: "Catch up all the unread across your Slack teams in a single place"
+  website: "https://slackcatchup.com"
+  icon: "slackcatchup.png"
+-
   name: "healthi"
   description: "Your mac's battery doctor"
   website: "http://pablopunk.com/healthi"
