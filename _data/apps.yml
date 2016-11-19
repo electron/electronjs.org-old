@@ -2264,3 +2264,15 @@
     - "util"
   license: "MIT" 
   icon: "healthi.png"
+-
+  name: "fangyuanjian" 
+  description: "即时通讯,创业服务,自由办公,组织架构" 
+  website: "http://bzsns.cn" 
+  keywords: 
+    - "即时通讯" 
+    - "组织架构" 
+    - "场地服务" 
+    - "自由办公" 
+    - "组织架构"
+  license: ""
+  icon: "fangyuanjian.png"
