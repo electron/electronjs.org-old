@@ -15,8 +15,13 @@ layout: default
       of every public GitHub repository that also depends on Electron.
     </p>
 
-    {% for package in site.data.userland.dependencies.packages limit %}
-      {% include package_list.html %}
-    {% endfor %}
+    <div id="package-list">
+      <input class="search" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Filter...">
+      <div class="list">
+        {% for package in site.data.userland.dependencies.packages limit %}
+          {% include package_list.html %}
+        {% endfor %}
+      </div>
+    </div>
   </div>
 </section>

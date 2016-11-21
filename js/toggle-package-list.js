@@ -8,4 +8,10 @@ document.addEventListener('DOMContentLoaded', function () {
         .classList.toggle('expanded')
     })
   })
+
+  var options = {
+    valueNames: [ 'packageName', 'packageDescription', 'packageKeywords', 'packageRepository' ]
+  }
+
+  var packageList = new List('package-list', options)
 })

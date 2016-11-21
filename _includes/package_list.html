@@ -1,41 +1,19 @@
-<style media="screen">
-  .top-dependency {
-    padding: 8px;
-  }
-
-  .top-dependency p {
-    margin: 0;
-  }
-
-  .top-dependency.expanded {
-    background: #f6f8f8;
-  }
-
-  .top-dependency .details {
-    display: none;
-  }
-
-  .top-dependency.expanded .details {
-    display: block;
-  }
-</style>
-
-
 {% assign safePackageName = package.name | replace:'.','-' %}
+
 <div class="top-dependency" id="dependencies-{{safePackageName}}">
   <p>
     <!-- {{ forloop.index }}. -->
     <strong>
-      <a class="packageToggler" data-package="{{safePackageName}}" href="http://npm.im/{{package.name}}">{{package.name}}</a>
+      <a class="packageToggler packageName" data-package="{{safePackageName}}" href="http://npm.im/{{package.name}}">{{package.name}}</a>
     </strong>
-     - {{package.description}}
+     - <span class="packageDescription">{{package.description}}</span>
   </p>
 
   <table class="details table table-ruled table-full-width table-roomy-vertical">
     {{unless package.keywords == empty}}
       <tr>
         <td>Keywords</td>
-        <td>{{package.keywords | join: ", " }}</td>
+        <td class="packageKeywords">{{package.keywords | join: ", " }}</td>
       </tr>
     {{endunless}}
     <tr>
@@ -48,7 +26,7 @@
     </tr>
     <tr>
       <td>Repository</td>
-      <td><a href="{{package.repository}}">{{package.repository | replace_first:'https://','' }}</a></td>
+      <td class="packageRepository"><a href="{{package.repository}}">{{package.repository | replace_first:'https://','' }}</a></td>
     </tr>
     <tr>
       <td>Package Page</td>

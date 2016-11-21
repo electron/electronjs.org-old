@@ -15,5 +15,27 @@
   </div>
 </div>
 
-
+<script src="{{site.baseurl}}/js/vendor/list.min.js"></script>
 <script src="{{site.baseurl}}/js/toggle-package-list.js"></script>
+
+<style media="screen">
+  .top-dependency {
+    padding: 8px;
+  }
+
+  .top-dependency p {
+    margin: 0;
+  }
+
+  .top-dependency.expanded {
+    background: #f6f8f8;
+  }
+
+  .top-dependency .details {
+    display: none;
+  }
+
+  .top-dependency.expanded .details {
+    display: block;
+  }
+</style>
