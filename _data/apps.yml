@@ -2268,3 +2268,11 @@
     - "games"
   license: "MIT"
   icon: "itch.png"
+-
+  name: "Freeter"
+  description: "The smartest way to work on your projects"
+  website: "https://freeter.io"
+  keywords:
+    - "productivity"
+    - "organizer"
+  icon: "freeter.png"
