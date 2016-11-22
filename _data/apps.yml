@@ -2252,3 +2252,10 @@
     - "util"
   license: "MIT"
   icon: "healthi.png"
+-
+  name: "Colibri"
+  description: "Modern browser without tabs"
+  website: "https://colibri.opqr.co"
+  keywords:
+    - "browser"
+  icon: "colibri.png"
