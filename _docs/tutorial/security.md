@@ -1,5 +1,5 @@
 ---
-version: v1.4.7
+version: v1.4.8
 category: Tutorial
 redirect_from:
     - /docs/v0.24.0/tutorial/security/
@@ -35,6 +35,10 @@ redirect_from:
     - /docs/v0.37.8/tutorial/security/
     - /docs/latest/tutorial/security/
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/security.md'
+excerpt: ":warning: Under no circumstances should you load and execute remote code with
+    Node integration enabled. Instead, use only local files (packaged together with
+    your application) to execute Node code. To display remote content, use the
+    <code>webview</code> tag and make sure to disable the <code>nodeIntegration</code>."
 title: "Security, Native Capabilities, and Your Responsibility"
 sort_title: "security, native capabilities, and your responsibility"
 ---

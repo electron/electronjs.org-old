@@ -1,5 +1,5 @@
 ---
-version: v1.4.7
+version: v1.4.8
 category: API
 redirect_from:
     - /docs/v0.24.0/api/structures/thumbar-button/
@@ -45,7 +45,7 @@ sort_title: "thumbarbutton object"
   toolbar.
 * `click` Function
 * `tooltip` String (optional) - The text of the button's tooltip.
-* `flags` String[] (optional) - Control specific states and behaviors of the
+* `flags` String[] - (optional) - Control specific states and behaviors of the
   button. By default, it is `['enabled']`.
 
 The `flags` is an array that can include following `String`s:

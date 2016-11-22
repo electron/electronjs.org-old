@@ -1,5 +1,5 @@
 ---
-version: v1.4.7
+version: v1.4.8
 category: API
 redirect_from:
     - /docs/v0.24.0/api/structures/upload-blob/
@@ -35,11 +35,11 @@ redirect_from:
     - /docs/v0.37.8/api/structures/upload-blob/
     - /docs/latest/api/structures/upload-blob/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/structures/upload-blob.md'
-title: "Upload Blob Object"
-sort_title: "upload blob object"
+title: "UploadBlob Object"
+sort_title: "uploadblob object"
 ---
 
-# Upload Blob Object
+# UploadBlob Object
 
 * `type` String - `blob`.
 * `blobUUID` String - UUID of blob data to upload.

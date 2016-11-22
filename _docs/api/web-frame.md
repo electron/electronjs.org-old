@@ -1,5 +1,5 @@
 ---
-version: v1.4.7
+version: v1.4.8
 category: API
 redirect_from:
     - /docs/v0.24.0/api/web-frame/
@@ -86,7 +86,22 @@ Returns `Number` - The current zoom level.
 * `minimumLevel` Number
 * `maximumLevel` Number
 
-Sets the maximum and minimum zoom level.
+**Deprecated:** Call `setVisualZoomLevelLimits` instead to set the visual zoom
+level limits. This method will be removed in Electron 2.0.
+
+### `webFrame.setVisualZoomLevelLimits(minimumLevel, maximumLevel)`
+
+* `minimumLevel` Number
+* `maximumLevel` Number
+
+Sets the maximum and minimum pinch-to-zoom level.
+
+### `webFrame.setLayoutZoomLevelLimits(minimumLevel, maximumLevel)`
+
+* `minimumLevel` Number
+* `maximumLevel` Number
+
+Sets the maximum and minimum layout-based (i.e. non-visual) zoom level.
 
 ### `webFrame.setSpellCheckProvider(language, autoCorrectWord, provider)`
 

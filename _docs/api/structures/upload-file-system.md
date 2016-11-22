@@ -1,5 +1,5 @@
 ---
-version: v1.4.7
+version: v1.4.8
 category: API
 redirect_from:
     - /docs/v0.24.0/api/structures/upload-file-system/
@@ -35,11 +35,11 @@ redirect_from:
     - /docs/v0.37.8/api/structures/upload-file-system/
     - /docs/latest/api/structures/upload-file-system/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/structures/upload-file-system.md'
-title: "Upload FileSystem Object"
-sort_title: "upload filesystem object"
+title: "UploadFileSystem Object"
+sort_title: "uploadfilesystem object"
 ---
 
-# Upload FileSystem Object
+# UploadFileSystem Object
 
 * `type` String - `fileSystem`.
 * `filsSystemURL` String - FileSystem url to read data for upload.
