@@ -1,5 +1,5 @@
 ---
-version: v1.4.7
+version: v1.4.8
 category: API
 redirect_from:
     - /docs/v0.24.0/api/menu-item/
@@ -36,21 +36,15 @@ redirect_from:
     - /docs/latest/api/menu-item/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/menu-item.md'
 excerpt: "Add items to native application menus and context menus."
-title: "MenuItem"
-sort_title: "menuitem"
 ---
 
-# MenuItem
+## Class: MenuItem
 
 > Add items to native application menus and context menus.
 
 Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process)
 
 See [`Menu`](http://electron.atom.io/docs/api/menu) for examples.
-
-## Class: MenuItem
-
-Create a new `MenuItem` with the following method:
 
 ### `new MenuItem(options)`
 
@@ -102,6 +96,8 @@ The `role` property can have following values:
 * `minimize` - Minimize current window
 * `close` - Close current window
 * `quit`- Quit the application
+* `reload` - Reload the current window
+* `toggledevtools` - Toggle developer tools in the current window
 * `togglefullscreen`- Toggle full screen mode on the current window
 * `resetzoom` - Reset the focused page's zoom level to the original size
 * `zoomin` - Zoom in the focused page by 10%

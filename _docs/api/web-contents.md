@@ -1,5 +1,5 @@
 ---
-version: v1.4.7
+version: v1.4.8
 category: API
 redirect_from:
     - /docs/v0.24.0/api/web-contents/
@@ -733,7 +733,22 @@ Sends a request to get current zoom level, the `callback` will be called with
 * `minimumLevel` Number
 * `maximumLevel` Number
 
-Sets the maximum and minimum zoom level.
+**Deprecated:** Call `setVisualZoomLevelLimits` instead to set the visual zoom
+level limits. This method will be removed in Electron 2.0.
+
+#### `contents.setVisualZoomLevelLimits(minimumLevel, maximumLevel)`
+
+* `minimumLevel` Number
+* `maximumLevel` Number
+
+Sets the maximum and minimum pinch-to-zoom level.
+
+#### `contents.setLayoutZoomLevelLimits(minimumLevel, maximumLevel)`
+
+* `minimumLevel` Number
+* `maximumLevel` Number
+
+Sets the maximum and minimum layout-based (i.e. non-visual) zoom level.
 
 #### `contents.undo()`
 
@@ -1228,7 +1243,7 @@ A Session object ([session](http://electron.atom.io/docs/api/session)) used by t
 
 #### `contents.hostWebContents`
 
-A `WebContents` that might own this `WebContents`.
+A [`WebContents`](http://electron.atom.io/docs/api/web-contents) instance that might own this `WebContents`.
 
 #### `contents.devToolsWebContents`
 
@@ -1239,88 +1254,4 @@ when the DevTools has been closed.
 
 #### `contents.debugger`
 
-A Debugger instance for this webContents.
-
-## Class: Debugger
-
-> An alternate transport for Chrome's remote debugging protocol.
-
-Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process)
-
-Chrome Developer Tools has a [special binding][rdp] available at JavaScript
-runtime that allows interacting with pages and instrumenting them.
-
-```javascript
-const {BrowserWindow} = require('electron')
-let win = new BrowserWindow()
-
-try {
-  win.webContents.debugger.attach('1.1')
-} catch (err) {
-  console.log('Debugger attach failed : ', err)
-}
-
-win.webContents.debugger.on('detach', (event, reason) => {
-  console.log('Debugger detached due to : ', reason)
-})
-
-win.webContents.debugger.on('message', (event, method, params) => {
-  if (method === 'Network.requestWillBeSent') {
-    if (params.request.url === 'https://www.github.com') {
-      win.webContents.debugger.detach()
-    }
-  }
-})
-
-win.webContents.debugger.sendCommand('Network.enable')
-```
-
-### Instance Methods
-
-#### `debugger.attach([protocolVersion])`
-
-* `protocolVersion` String (optional) - Requested debugging protocol version.
-
-Attaches the debugger to the `webContents`.
-
-#### `debugger.isAttached()`
-
-Returns `Boolean` - Whether a debugger is attached to the `webContents`.
-
-#### `debugger.detach()`
-
-Detaches the debugger from the `webContents`.
-
-#### `debugger.sendCommand(method[, commandParams, callback])`
-
-* `method` String - Method name, should be one of the methods defined by the
-   remote debugging protocol.
-* `commandParams` Object (optional) - JSON object with request parameters.
-* `callback` Function (optional) - Response
-  * `error` Object - Error message indicating the failure of the command.
-  * `result` Any - Response defined by the 'returns' attribute of
-     the command description in the remote debugging protocol.
-
-Send given command to the debugging target.
-
-### Instance Events
-
-#### Event: 'detach'
-
-* `event` Event
-* `reason` String - Reason for detaching debugger.
-
-Emitted when debugging session is terminated. This happens either when
-`webContents` is closed or devtools is invoked for the attached `webContents`.
-
-#### Event: 'message'
-
-* `event` Event
-* `method` String - Method name.
-* `params` Object - Event parameters defined by the 'parameters'
-   attribute in the remote debugging protocol.
-
-Emitted whenever debugging target issues instrumentation event.
-
-[rdp]: https://developer.chrome.com/devtools/docs/debugger-protocol
-[`webContents.findInPage`]: http://electron.atom.io/docs/api/web-contents#contentsfindinpagetext-options
+A [Debugger](http://electron.atom.io/docs/api/debugger) instance for this webContents.

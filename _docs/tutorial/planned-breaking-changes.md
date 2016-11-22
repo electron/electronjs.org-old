@@ -1,5 +1,5 @@
 ---
-version: v1.4.7
+version: v1.4.8
 category: Tutorial
 redirect_from:
     - /docs/v0.24.0/tutorial/planned-breaking-changes/
@@ -125,6 +125,31 @@ tray.setHighlightMode('off')
 webContents.openDevTools({detach: true})
 // Replace with
 webContents.openDevTools({mode: 'detach'})
+```
+
+```js
+// Deprecated
+webContents.setZoomLevelLimits(1, 2)
+// Replace with
+webContents.setVisualZoomLevelLimits(1, 2)
+```
+
+## `webFrame`
+
+```js
+// Deprecated
+webFrame.setZoomLevelLimits(1, 2)
+// Replace with
+webFrame.setVisualZoomLevelLimits(1, 2)
+```
+
+## `<webview>`
+
+```js
+// Deprecated
+webview.setZoomLevelLimits(1, 2)
+// Replace with
+webview.setVisualZoomLevelLimits(1, 2)
 ```
 
 ## Node Headers URL

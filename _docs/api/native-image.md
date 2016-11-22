@@ -1,5 +1,5 @@
 ---
-version: v1.4.7
+version: v1.4.8
 category: API
 redirect_from:
     - /docs/v0.24.0/api/native-image/
@@ -60,7 +60,7 @@ let win = new BrowserWindow({icon: '/Users/somebody/images/window.png'})
 console.log(appIcon, win)
 ```
 
-Or read the image from the clipboard which returns a `nativeImage`:
+Or read the image from the clipboard which returns a `NativeImage`:
 
 ```javascript
 const {clipboard, Tray} = require('electron')

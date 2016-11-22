@@ -1,5 +1,5 @@
 ---
-version: v1.4.7
+version: v1.4.8
 category: API
 redirect_from:
     - /docs/v0.24.0/api/dialog/
@@ -73,8 +73,8 @@ The `dialog` module has the following methods:
   * `defaultPath` String (optional)
   * `buttonLabel` String (optional) - Custom label for the confirmation button, when
     left empty the default label will be used.
-  * `filters` structrs/file-filter) (optional
-  * `properties` String[] (optional) - Contains which features the dialog should use, can
+  * `filters` [FileFilter[]](http://electron.atom.io/docs/api/structures/file-filter) (optional)
+  * `properties` String[] - (optional) - Contains which features the dialog should use, can
     contain `openFile`, `openDirectory`, `multiSelections`, `createDirectory`
     and `showHiddenFiles`.
 * `callback` Function (optional)
@@ -137,7 +137,7 @@ will be passed via `callback(filename)`
   * `type` String (optional) - Can be `"none"`, `"info"`, `"error"`, `"question"` or
   `"warning"`. On Windows, "question" displays the same icon as "info", unless
   you set an icon using the "icon" option.
-  * `buttons` String[] (optional) - Array of texts for buttons. On Windows, an empty array
+  * `buttons` String[] - (optional) - Array of texts for buttons. On Windows, an empty array
     will result in one button labeled "OK".
   * `defaultId` Integer (optional) - Index of the button in the buttons array which will
     be selected by default when the message box opens.

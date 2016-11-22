@@ -1,5 +1,5 @@
 ---
-version: v1.4.7
+version: v1.4.8
 category: API
 redirect_from:
     - /docs/v0.24.0/api/download-item/
@@ -36,11 +36,9 @@ redirect_from:
     - /docs/latest/api/download-item/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/download-item.md'
 excerpt: "Control file downloads from remote sources."
-title: "DownloadItem"
-sort_title: "downloaditem"
 ---
 
-# DownloadItem
+## Class: DownloadItem
 
 > Control file downloads from remote sources.
 
@@ -78,8 +76,6 @@ win.webContents.session.on('will-download', (event, item, webContents) => {
   })
 })
 ```
-
-## Class: DownloadItem
 
 ### Instance Events
 

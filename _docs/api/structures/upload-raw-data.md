@@ -1,5 +1,5 @@
 ---
-version: v1.4.7
+version: v1.4.8
 category: API
 redirect_from:
     - /docs/v0.24.0/api/structures/upload-raw-data/
@@ -35,11 +35,11 @@ redirect_from:
     - /docs/v0.37.8/api/structures/upload-raw-data/
     - /docs/latest/api/structures/upload-raw-data/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/structures/upload-raw-data.md'
-title: "Upload RawData Object"
-sort_title: "upload rawdata object"
+title: "UploadRawData Object"
+sort_title: "uploadrawdata object"
 ---
 
-# Upload RawData Object
+# UploadRawData Object
 
 * `type` String - `rawData`.
 * `bytes` Buffer - Data to be uploaded.

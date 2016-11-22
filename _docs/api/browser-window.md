@@ -1,5 +1,5 @@
 ---
-version: v1.4.7
+version: v1.4.8
 category: API
 redirect_from:
     - /docs/v0.24.0/api/browser-window/
@@ -151,6 +151,10 @@ child.once('ready-to-show', () => {
 
 ## Class: BrowserWindow
 
+> Create and control browser windows.
+
+Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process)
+
 `BrowserWindow` is an
 [EventEmitter](http://nodejs.org/api/events.html#events_class_events_eventemitter).
 
@@ -243,6 +247,12 @@ It creates a new `BrowserWindow` with native properties as set by the `options`.
   * `vibrancy` String - Add a type of vibrancy effect to the window, only on
     macOS. Can be `appearance-based`, `light`, `dark`, `titlebar`, `selection`,
     `menu`, `popover`, `sidebar`, `medium-light` or `ultra-dark`.
+  * `zoomToPageWidth` Boolean - Controls the behavior on macOS when
+    option-clicking the green stoplight button on the toolbar or by clicking the
+    Window > Zoom menu item. If `true`, the window will grow to the preferred
+    width of the web page when zoomed, `false` will cause it to zoom to the
+    width of the screen. This will also affect the behavior when calling
+    `maximize()` directly. Default is `false`.
   * `webPreferences` Object (optional) - Settings of web page's features.
     * `devTools` Boolean (optional) - Whether to enable DevTools. If it is set to `false`, can not use `BrowserWindow.webContents.openDevTools()` to open DevTools. Default is `true`.
     * `nodeIntegration` Boolean (optional) - Whether node integration is enabled. Default
@@ -1109,7 +1119,7 @@ The `buttons` is an array of `Button` objects:
     toolbar.
   * `click` Function
   * `tooltip` String (optional) - The text of the button's tooltip.
-  * `flags` String[] (optional) - Control specific states and behaviors of the
+  * `flags` String[] - (optional) - Control specific states and behaviors of the
     button. By default, it is `['enabled']`.
 
 The `flags` is an array that can include following `String`s:

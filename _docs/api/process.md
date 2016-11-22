@@ -1,5 +1,5 @@
 ---
-version: v1.4.7
+version: v1.4.8
 category: API
 redirect_from:
     - /docs/v0.24.0/api/process/
@@ -44,9 +44,11 @@ sort_title: "process"
 
 > Extensions to process object.
 
-Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process)
+Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process), [Renderer](http://electron.atom.io/docs/tutorial/quick-start#renderer-process)
 
-The `process` object is extended in Electron with following APIs:
+Electron's `process` object is extended from the
+[Node.js `process` object](https://nodejs.org/api/process.html).
+It adds the following events, properties, and methods:
 
 ## Events
 

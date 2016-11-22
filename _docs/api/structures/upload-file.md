@@ -1,5 +1,5 @@
 ---
-version: v1.4.7
+version: v1.4.8
 category: API
 redirect_from:
     - /docs/v0.24.0/api/structures/upload-file/
@@ -35,11 +35,11 @@ redirect_from:
     - /docs/v0.37.8/api/structures/upload-file/
     - /docs/latest/api/structures/upload-file/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/structures/upload-file.md'
-title: "Upload File Object"
-sort_title: "upload file object"
+title: "UploadFile Object"
+sort_title: "uploadfile object"
 ---
 
-# Upload File Object
+# UploadFile Object
 
 * `type` String - `file`.
 * `filePath` String - Path of file to be uploaded.

@@ -1,5 +1,5 @@
 ---
-version: v1.4.7
+version: v1.4.8
 category: API
 redirect_from:
     - /docs/v0.24.0/api/tray/
@@ -36,15 +36,15 @@ redirect_from:
     - /docs/latest/api/tray/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/tray.md'
 excerpt: "Add icons and context menus to the system&apos;s notification area."
-title: "Tray"
-sort_title: "tray"
 ---
 
-# Tray
+## Class: Tray
 
 > Add icons and context menus to the system's notification area.
 
 Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process)
+
+`Tray` is an [EventEmitter][event-emitter].
 
 ```javascript
 const {app, Menu, Tray} = require('electron')
@@ -97,9 +97,6 @@ app.on('ready', () => {
 If you want to keep exact same behaviors on all platforms, you should not
 rely on the `click` event and always attach a context menu to the tray icon.
 
-## Class: Tray
-
-`Tray` is an [EventEmitter][event-emitter].
 
 ### `new Tray(image)`
 
