@@ -36,6 +36,8 @@ redirect_from:
     - /docs/latest/api/web-request/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/web-request.md'
 excerpt: "Intercept and modify the contents of a request at various stages of its lifetime."
+title: "WebRequest"
+sort_title: "webrequest"
 ---
 
 ## Class: WebRequest

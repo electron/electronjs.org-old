@@ -36,6 +36,8 @@ redirect_from:
     - /docs/latest/api/incoming-message/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/incoming-message.md'
 excerpt: "Handle responses to HTTP/HTTPS requests."
+title: "IncomingMessage"
+sort_title: "incomingmessage"
 ---
 
 ## Class: IncomingMessage

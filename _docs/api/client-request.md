@@ -36,6 +36,8 @@ redirect_from:
     - /docs/latest/api/client-request/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/client-request.md'
 excerpt: "Make HTTP/HTTPS requests."
+title: "ClientRequest"
+sort_title: "clientrequest"
 ---
 
 ## Class: ClientRequest

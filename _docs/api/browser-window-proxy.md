@@ -36,6 +36,8 @@ redirect_from:
     - /docs/latest/api/browser-window-proxy/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/browser-window-proxy.md'
 excerpt: "Manipulate the child browser window"
+title: "BrowserWindowProxy"
+sort_title: "browserwindowproxy"
 ---
 
 ## Class: BrowserWindowProxy

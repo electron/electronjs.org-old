@@ -36,6 +36,8 @@ redirect_from:
     - /docs/latest/api/debugger/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/debugger.md'
 excerpt: "An alternate transport for Chrome&apos;s remote debugging protocol."
+title: "Debugger"
+sort_title: "debugger"
 ---
 
 ## Class: Debugger
