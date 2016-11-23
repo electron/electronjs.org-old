@@ -2270,7 +2270,7 @@
   icon: "itch.png"
  -
   name: "Hardinfo"
-  description: "App for collection info about your hardware and paste to online"
+  description: "Collect and share information about your computer's hardware"
   website: "https://foozzi.github.io/Hardinfo/"
   repository: "https://github.com/foozzi/Hardinfo"
   keywords:
