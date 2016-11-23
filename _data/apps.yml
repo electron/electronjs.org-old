@@ -2268,7 +2268,7 @@
     - "games"
   license: "MIT"
   icon: "itch.png"
-  -
+ -
   name: "Hardinfo"
   description: "App for collection info about your hardware and paste to online"
   website: "https://foozzi.github.io/Hardinfo/"
