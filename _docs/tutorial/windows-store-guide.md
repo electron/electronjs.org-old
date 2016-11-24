@@ -1,5 +1,5 @@
 ---
-version: v1.4.9
+version: v1.4.8
 category: Tutorial
 redirect_from:
     - /docs/v0.24.0/tutorial/windows-store-guide/
