@@ -2284,3 +2284,11 @@
     - "productivity"
     - "3D"
   icon: "grabcad-print.png"
+-
+  name: "Electro"
+  description: "Open source DJ App"
+  website: "https://jspear29.github.io/electro/"
+  keywords:
+    - "music"
+    - "DJ"
+  icon: "electro.png"
