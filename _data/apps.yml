@@ -2286,7 +2286,7 @@
   icon: "grabcad-print.png"
 -
   name: "Electro"
-  description: "Open source DJ App"
+  description: "Open Source DJ App"
   website: "https://jspear29.github.io/electro/"
   keywords:
     - "music"
