@@ -1,5 +1,5 @@
 ---
-version: v1.4.8
+version: v1.4.10
 category: API
 redirect_from:
     - /docs/v0.24.0/api/web-contents/
@@ -522,6 +522,10 @@ win.webContents.on('paint', (event, dirty, image) => {
 })
 win.loadURL('http://github.com')
 ```
+
+#### Event: 'devtools-reload-page'
+
+Emitted when the devtools window instructs the webContents to reload
 
 ### Instance Methods
 
