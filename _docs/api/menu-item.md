@@ -1,5 +1,5 @@
 ---
-version: v1.4.8
+version: v1.4.10
 category: API
 redirect_from:
     - /docs/v0.24.0/api/menu-item/
@@ -69,7 +69,7 @@ See [`Menu`](http://electron.atom.io/docs/api/menu) for examples.
   * `visible` Boolean - (optional) If false, the menu item will be entirely hidden.
   * `checked` Boolean - (optional) Should only be specified for `checkbox` or `radio` type
     menu items.
-  * `submenu` MenuItemConstructorOptions[] - (optional) Should be specified for `submenu` type menu items. If
+  * `submenu` (MenuItemConstructorOptions[] &#124; Menu) - (optional) Should be specified for `submenu` type menu items. If
     `submenu` is specified, the `type: 'submenu'` can be omitted. If the value
     is not a `Menu` then it will be automatically converted to one using
     `Menu.buildFromTemplate`.

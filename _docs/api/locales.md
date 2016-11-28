@@ -1,5 +1,5 @@
 ---
-version: v1.4.8
+version: v1.4.10
 category: API
 redirect_from:
     - /docs/v0.24.0/api/locales/
@@ -50,13 +50,13 @@ values are listed below:
 | Language Code | Language Name |
 |---------------|---------------|
 | af | Afrikaans |
+| an | Aragonese |
 | ar-AE | Arabic (U.A.E.) |
 | ar-IQ | Arabic (Iraq) |
 | ar | Arabic (Standard) |
 | ar-BH | Arabic (Bahrain) |
 | ar-DZ | Arabic (Algeria) |
 | ar-EG | Arabic (Egypt) |
-| ar | Aragonese |
 | ar-JO | Arabic (Jordan) |
 | ar-KW | Arabic (Kuwait) |
 | ar-LB | Arabic (Lebanon) |

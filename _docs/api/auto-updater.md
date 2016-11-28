@@ -1,5 +1,5 @@
 ---
-version: v1.4.8
+version: v1.4.10
 category: API
 redirect_from:
     - /docs/v0.24.0/api/auto-updater/
@@ -162,6 +162,10 @@ using this API.
 
 Restarts the app and installs the update after it has been downloaded. It
 should only be called after `update-downloaded` has been emitted.
+
+**Note:** `autoUpdater.quitAndInstall()` will close all application windows
+first and only emit `before-quit` event on `app` after that. This is different
+from the normal quit event sequence.
 
 [squirrel-mac]: https://github.com/Squirrel/Squirrel.Mac
 [server-support]: https://github.com/Squirrel/Squirrel.Mac#server-support

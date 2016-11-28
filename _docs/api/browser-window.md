@@ -1,5 +1,5 @@
 ---
-version: v1.4.8
+version: v1.4.10
 category: API
 redirect_from:
     - /docs/v0.24.0/api/browser-window/
