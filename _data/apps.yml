@@ -2284,3 +2284,7 @@
     - "productivity"
     - "3D"
   icon: "grabcad-print.png"
+  
+  name: "Dressiom"
+  website: "https://www.dressiom.com"
+  icon: "dressiom.png"
