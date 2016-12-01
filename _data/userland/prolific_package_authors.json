@@ -1,0 +1,1448 @@
+{
+  "title": "Prolific Package Authors",
+  "description": "npm users who maintain numerous Electron-related packages.",
+  "collectionType": "npmUser",
+  "collection": [
+    {
+      "handle": "uupaa",
+      "packages": 46,
+      "name": null,
+      "email": "uupaa.js@gmail.com",
+      "homepage": null,
+      "github": null,
+      "twitter": null,
+      "freenode": null
+    },
+    {
+      "handle": "parroit",
+      "packages": 26,
+      "name": "Andrea Parodi",
+      "email": "andrea@parro.it",
+      "homepage": "http://www.parro.it",
+      "github": "parro-it",
+      "twitter": "parroit",
+      "freenode": null
+    },
+    {
+      "handle": "zeke",
+      "packages": 26,
+      "name": "Zeke Sikelianos",
+      "email": "zeke@sikelianos.com",
+      "homepage": "http://zeke.sikelianos.com",
+      "github": "zeke",
+      "twitter": "zeke",
+      "freenode": null
+    },
+    {
+      "handle": "kevinsawicki",
+      "packages": 24,
+      "name": "Kevin Sawicki",
+      "email": "kevinsawicki@gmail.com",
+      "homepage": "http://git.io/ks",
+      "github": "kevinsawicki",
+      "twitter": "kevinsawicki",
+      "freenode": null
+    },
+    {
+      "handle": "zcbenz",
+      "packages": 19,
+      "name": null,
+      "email": "zcbenz@gmail.com",
+      "homepage": null,
+      "github": null,
+      "twitter": null,
+      "freenode": null
+    },
+    {
+      "handle": "rhysd",
+      "packages": 18,
+      "name": null,
+      "email": "lin90162@yahoo.co.jp",
+      "homepage": null,
+      "github": null,
+      "twitter": null,
+      "freenode": null
+    },
+    {
+      "handle": "jlord",
+      "packages": 17,
+      "name": "Jessica Lord",
+      "email": "to.jlord@gmail.com",
+      "homepage": "http://www.jlord.us",
+      "github": "jlord",
+      "twitter": "jllord",
+      "freenode": "jlord"
+    },
+    {
+      "handle": "imlucas",
+      "packages": 17,
+      "name": "Lucas Hrabovsky",
+      "email": "hrabovsky.lucas@gmail.com",
+      "homepage": "http://www.imlucas.com",
+      "github": "imlucas",
+      "twitter": "__lucas",
+      "freenode": "__lucas"
+    },
+    {
+      "handle": "andrewpmckenzie",
+      "packages": 17,
+      "name": "Andrew McKenzie",
+      "email": "andrewpmckenzie@gmail.com",
+      "homepage": "http://andrewpmckenzie.info",
+      "github": "andrewpmckenzie",
+      "twitter": "andrewpmckenzie",
+      "freenode": null
+    },
+    {
+      "handle": "mattdesl",
+      "packages": 15,
+      "name": "Matt DesLauriers",
+      "email": "dave.des@gmail.com",
+      "homepage": null,
+      "github": "mattdesl",
+      "twitter": "mattdesl",
+      "freenode": null
+    },
+    {
+      "handle": "justinmchase",
+      "packages": 14,
+      "name": "Justin Chase",
+      "email": "justin.m.chase@outlook.com",
+      "homepage": "http://justinmchase.com",
+      "github": "justinmchase",
+      "twitter": "justinmchase",
+      "freenode": null
+    },
+    {
+      "handle": "kaizhu",
+      "packages": 14,
+      "name": null,
+      "email": "kaizhu256@gmail.com",
+      "homepage": null,
+      "github": "kaizhu256",
+      "twitter": null,
+      "freenode": null
+    },
+    {
+      "handle": "sindresorhus",
+      "packages": 13,
+      "name": "Sindre Sorhus",
+      "email": "sindresorhus@gmail.com",
+      "homepage": "https://sindresorhus.com",
+      "github": "sindresorhus",
+      "twitter": "sindresorhus",
+      "freenode": "sindresorhus"
+    },
+    {
+      "handle": "electron",
+      "packages": 13,
+      "name": "Electron Team",
+      "email": "electron@github.com",
+      "homepage": "https://electron.atom.io",
+      "github": "electron",
+      "twitter": "electronjs",
+      "freenode": null
+    },
+    {
+      "handle": "nathansobo",
+      "packages": 13,
+      "name": null,
+      "email": "nathan@github.com",
+      "homepage": null,
+      "github": null,
+      "twitter": null,
+      "freenode": null
+    },
+    {
+      "handle": "sethvincent",
+      "packages": 13,
+      "name": "seth vincent",
+      "email": "sethvincent@gmail.com",
+      "homepage": "http://sethvincent.com",
+      "github": "sethvincent",
+      "twitter": "sethdvincent",
+      "freenode": "sethvincent"
+    },
+    {
+      "handle": "ionicabizau",
+      "packages": 12,
+      "name": "Ionică Bizău",
+      "email": "bizauionica@gmail.com",
+      "homepage": "http://ionicabizau.net",
+      "github": "IonicaBizau",
+      "twitter": "IonicaBizau",
+      "freenode": null
+    },
+    {
+      "handle": "develar",
+      "packages": 12,
+      "name": null,
+      "email": "develar@gmail.com",
+      "homepage": null,
+      "github": null,
+      "twitter": null,
+      "freenode": null
+    },
+    {
+      "handle": "maxogden",
+      "packages": 11,
+      "name": "Max Ogden",
+      "email": "max@maxogden.com",
+      "homepage": "https://github.com/maxogden/messages",
+      "github": "maxogden",
+      "twitter": "maxogden",
+      "freenode": "https://github.com/maxogden/messages"
+    },
+    {
+      "handle": "paulcbetts",
+      "packages": 11,
+      "name": "Paul Betts",
+      "email": "paul@paulbetts.org",
+      "homepage": "http://paulbetts.org",
+      "github": "paulcbetts",
+      "twitter": "paulcbetts",
+      "freenode": null
+    },
+    {
+      "handle": "atom",
+      "packages": 10,
+      "name": null,
+      "email": "nathan@github.com",
+      "homepage": null,
+      "github": null,
+      "twitter": null,
+      "freenode": null
+    },
+    {
+      "handle": "maxbrunsfeld",
+      "packages": 10,
+      "name": null,
+      "email": "maxbrunsfeld@gmail.com",
+      "homepage": null,
+      "github": null,
+      "twitter": null,
+      "freenode": null
+    },
+    {
+      "handle": "durran",
+      "packages": 10,
+      "name": null,
+      "email": "durran@gmail.com",
+      "homepage": null,
+      "github": null,
+      "twitter": null,
+      "freenode": null
+    },
+    {
+      "handle": "sofroniewn",
+      "packages": 10,
+      "name": null,
+      "email": "sofroniewn@gmail.com",
+      "homepage": null,
+      "github": null,
+      "twitter": null,
+      "freenode": null
+    },
+    {
+      "handle": "mongodb-js-user",
+      "packages": 10,
+      "name": null,
+      "email": "dana.groff+mongodb-js@mongodb.com",
+      "homepage": "http://mongodb-js.github.io",
+      "github": "mongodb-js",
+      "twitter": null,
+      "freenode": null
+    },
+    {
+      "handle": "rueckstiess",
+      "packages": 10,
+      "name": "Thomas Rueckstiess",
+      "email": "thomas@rueckstiess.net",
+      "homepage": null,
+      "github": "rueckstiess",
+      "twitter": "tomonezero",
+      "freenode": null
+    },
+    {
+      "handle": "ragingwind",
+      "packages": 9,
+      "name": "Jimmy Moon",
+      "email": "ragingwind@gmail.com",
+      "homepage": "http://ragingwind.me",
+      "github": "ragingwind",
+      "twitter": "ragingwind",
+      "freenode": null
+    },
+    {
+      "handle": "jprichardson",
+      "packages": 9,
+      "name": "JP Richardson",
+      "email": "jprichardson@gmail.com",
+      "homepage": "http://procbits.com/pages/about",
+      "github": "jprichardson",
+      "twitter": "jprichardson",
+      "freenode": null
+    },
+    {
+      "handle": "machyne",
+      "packages": 9,
+      "name": "Matt Cotter",
+      "email": "mcotter222@gmail.com",
+      "homepage": null,
+      "github": "machyne",
+      "twitter": null,
+      "freenode": null
+    },
+    {
+      "handle": "wangky",
+      "packages": 9,
+      "name": "wangkaiyuan",
+      "email": "116356754@qq.com",
+      "homepage": null,
+      "github": "116356754",
+      "twitter": null,
+      "freenode": null
+    },
+    {
+      "handle": "rgbkrk",
+      "packages": 9,
+      "name": "Kyle Kelley",
+      "email": "rgbkrk@gmail.com",
+      "homepage": "https://github.com/rgbkrk",
+      "github": "rgbkrk",
+      "twitter": "rgbkrk",
+      "freenode": "rgbkrk"
+    },
+    {
+      "handle": "unindented",
+      "packages": 9,
+      "name": "Daniel Perez Alvarez",
+      "email": "unindented@gmail.com",
+      "homepage": null,
+      "github": "unindented",
+      "twitter": "unindented",
+      "freenode": null
+    },
+    {
+      "handle": "mmckegg",
+      "packages": 8,
+      "name": "Matt McKegg",
+      "email": "matt@wetsand.co.nz",
+      "homepage": null,
+      "github": "mmckegg",
+      "twitter": "MattMcKegg",
+      "freenode": null
+    },
+    {
+      "handle": "mafintosh",
+      "packages": 8,
+      "name": "Mathias Buus",
+      "email": "mathiasbuus@gmail.com",
+      "homepage": null,
+      "github": "mafintosh",
+      "twitter": "mafintosh",
+      "freenode": "mafintosh"
+    },
+    {
+      "handle": "rynomad",
+      "packages": 8,
+      "name": null,
+      "email": "nomad.ry@gmail.com",
+      "homepage": null,
+      "github": null,
+      "twitter": null,
+      "freenode": null
+    },
+    {
+      "handle": "jameskyburz",
+      "packages": 8,
+      "name": null,
+      "email": "james.kyburz@gmail.com",
+      "homepage": null,
+      "github": null,
+      "twitter": null,
+      "freenode": null
+    },
+    {
+      "handle": "marshallofsound",
+      "packages": 8,
+      "name": "Samuel Attard",
+      "email": "samuel.r.attard@gmail.com",
+      "homepage": "http://samuelattard.com",
+      "github": "marshallofsound",
+      "twitter": "marshallofsound",
+      "freenode": null
+    },
+    {
+      "handle": "benogle",
+      "packages": 7,
+      "name": null,
+      "email": "ogle.ben@gmail.com",
+      "homepage": null,
+      "github": null,
+      "twitter": null,
+      "freenode": null
+    },
+    {
+      "handle": "as-cii",
+      "packages": 7,
+      "name": "Antonio Scandurra",
+      "email": "as-cii@github.com",
+      "homepage": "http://as-cii.com",
+      "github": "as-cii",
+      "twitter": "as__cii",
+      "freenode": null
+    },
+    {
+      "handle": "kangas",
+      "packages": 7,
+      "name": "Matt Kangas",
+      "email": "kangas@gmail.com",
+      "homepage": "http://mattkangas.com",
+      "github": "kangas",
+      "twitter": "mattkangas",
+      "freenode": null
+    },
+    {
+      "handle": "shama",
+      "packages": 6,
+      "name": "Kyle Robinson Young",
+      "email": "kyle@dontkry.com",
+      "homepage": "http://dontkry.com",
+      "github": "shama",
+      "twitter": "shamakry",
+      "freenode": "shama"
+    },
+    {
+      "handle": "fritx",
+      "packages": 6,
+      "name": "Fritz Lin",
+      "email": "uxfritz@163.com",
+      "homepage": "http://github.com/fritx",
+      "github": "fritx",
+      "twitter": null,
+      "freenode": null
+    },
+    {
+      "handle": "jdfreder",
+      "packages": 6,
+      "name": "Jonathan Frederic",
+      "email": "jon.freder@gmail.com",
+      "homepage": "http://bitplexity.com",
+      "github": "jdfreder",
+      "twitter": "GooseJon",
+      "freenode": null
+    },
+    {
+      "handle": "juliangruber",
+      "packages": 6,
+      "name": "Julian Gruber",
+      "email": "julian@juliangruber.com",
+      "homepage": null,
+      "github": "juliangruber",
+      "twitter": "juliangruber",
+      "freenode": null
+    },
+    {
+      "handle": "bugdanov",
+      "packages": 6,
+      "name": null,
+      "email": "rurik.bugdanov@alsenet.com",
+      "homepage": null,
+      "github": null,
+      "twitter": null,
+      "freenode": null
+    },
+    {
+      "handle": "fasterthanlime",
+      "packages": 6,
+      "name": "Amos Wenger",
+      "email": "amoswenger@gmail.com",
+      "homepage": "https://amos.me",
+      "github": "fasterthanlime",
+      "twitter": "fasterthanlime",
+      "freenode": "fasterthanlime"
+    },
+    {
+      "handle": "kanekotic",
+      "packages": 6,
+      "name": "Alvaro J Perez L",
+      "email": "alvarojosepl@gmail.com",
+      "homepage": null,
+      "github": "kanekotic",
+      "twitter": null,
+      "freenode": null
+    },
+    {
+      "handle": "lukekarrys",
+      "packages": 6,
+      "name": "Luke Karrys",
+      "email": "luke@lukekarrys.com",
+      "homepage": "http://lukekarrys.com",
+      "github": "lukekarrys",
+      "twitter": null,
+      "freenode": "lukekarrys"
+    },
+    {
+      "handle": "cilix",
+      "packages": 5,
+      "name": "matthew levenstein",
+      "email": "matthewlevenstein@gmail.com",
+      "homepage": null,
+      "github": "cilix",
+      "twitter": null,
+      "freenode": null
+    },
+    {
+      "handle": "micheal.parks",
+      "packages": 5,
+      "name": "Micheal",
+      "email": "michealparks1989@gmail.com",
+      "homepage": null,
+      "github": "michealparks",
+      "twitter": "_michealparks_",
+      "freenode": null
+    },
+    {
+      "handle": "kay-kim",
+      "packages": 5,
+      "name": null,
+      "email": "kay@mongodb.com",
+      "homepage": null,
+      "github": null,
+      "twitter": null,
+      "freenode": null
+    },
+    {
+      "handle": "schwartzrw",
+      "packages": 5,
+      "name": "Ryan Schwartz",
+      "email": "schwartzrw@gmail.com",
+      "homepage": null,
+      "github": "schwartzrw",
+      "twitter": "schwartzrw",
+      "freenode": null
+    },
+    {
+      "handle": "jenslind",
+      "packages": 5,
+      "name": null,
+      "email": "jens@jensl.se",
+      "homepage": null,
+      "github": "jenslind",
+      "twitter": null,
+      "freenode": null
+    },
+    {
+      "handle": "trivnowllc",
+      "packages": 5,
+      "name": "Sal Principato",
+      "email": "trivnow@gmail.com",
+      "homepage": null,
+      "github": null,
+      "twitter": null,
+      "freenode": null
+    },
+    {
+      "handle": "nathanial",
+      "packages": 5,
+      "name": "Nathanial Hartman",
+      "email": "nathanial.hartman@gmail.com",
+      "homepage": null,
+      "github": "nathanial",
+      "twitter": null,
+      "freenode": null
+    },
+    {
+      "handle": "sidneys",
+      "packages": 5,
+      "name": "Sidney Bofah",
+      "email": "sidneys.github.io@outlook.com",
+      "homepage": null,
+      "github": "sidneys",
+      "twitter": "quadrigamedia",
+      "freenode": null
+    },
+    {
+      "handle": "lgeiger",
+      "packages": 5,
+      "name": null,
+      "email": "lukas.geiger94@gmail.com",
+      "homepage": null,
+      "github": "lgeiger",
+      "twitter": null,
+      "freenode": null
+    },
+    {
+      "handle": "captainsafia",
+      "packages": 5,
+      "name": "Safia Abdalla",
+      "email": "safia@safia.rocks",
+      "homepage": "http://safia.rocks",
+      "github": "captainsafia",
+      "twitter": "captainsafia",
+      "freenode": null
+    },
+    {
+      "handle": "mappum",
+      "packages": 5,
+      "name": null,
+      "email": "mappum@gmail.com",
+      "homepage": null,
+      "github": null,
+      "twitter": null,
+      "freenode": null
+    },
+    {
+      "handle": "bma",
+      "packages": 5,
+      "name": null,
+      "email": "bjoern@electronauts.net",
+      "homepage": null,
+      "github": null,
+      "twitter": null,
+      "freenode": null
+    },
+    {
+      "handle": "i80and",
+      "packages": 5,
+      "name": "Andrew Aldridge",
+      "email": "i80and@foxquill.com",
+      "homepage": "https://foxquill.com",
+      "github": "i80and",
+      "twitter": "i80and",
+      "freenode": null
+    },
+    {
+      "handle": "arvitaly",
+      "packages": 5,
+      "name": null,
+      "email": "arvitaly@list.ru",
+      "homepage": null,
+      "github": null,
+      "twitter": null,
+      "freenode": null
+    },
+    {
+      "handle": "twolfson",
+      "packages": 5,
+      "name": null,
+      "email": "todd@twolfson.com",
+      "homepage": null,
+      "github": null,
+      "twitter": null,
+      "freenode": null
+    },
+    {
+      "handle": "jakeluer",
+      "packages": 5,
+      "name": "Jake Luer",
+      "email": "jake@alogicalparadox.com",
+      "homepage": "http://qualiancy.com",
+      "github": "logicalparadox",
+      "twitter": "jakeluer",
+      "freenode": "logicalparadox"
+    },
+    {
+      "handle": "glowe",
+      "packages": 5,
+      "name": null,
+      "email": "graham.lowe@gmail.com",
+      "homepage": null,
+      "github": null,
+      "twitter": null,
+      "freenode": null
+    },
+    {
+      "handle": "redondos",
+      "packages": 5,
+      "name": "Angelo Olivera",
+      "email": "aolivera@gmail.com",
+      "homepage": null,
+      "github": "redondos",
+      "twitter": "redondos",
+      "freenode": "redondos"
+    },
+    {
+      "handle": "dominictarr",
+      "packages": 5,
+      "name": "Dominic Tarr",
+      "email": "dominic.tarr@gmail.com",
+      "homepage": "http://dominictarr.com",
+      "github": "dominictarr",
+      "twitter": "dominictarr",
+      "freenode": "dominictarr"
+    },
+    {
+      "handle": "feross",
+      "packages": 5,
+      "name": "Feross Aboukhadijeh",
+      "email": "feross@feross.org",
+      "homepage": "http://feross.org",
+      "github": "feross",
+      "twitter": "feross",
+      "freenode": "feross"
+    },
+    {
+      "handle": "dpercy",
+      "packages": 5,
+      "name": "David Percy",
+      "email": "davetp425@gmail.com",
+      "homepage": null,
+      "github": "dpercy",
+      "twitter": null,
+      "freenode": null
+    },
+    {
+      "handle": "akameco",
+      "packages": 5,
+      "name": "akameco",
+      "email": "akameco.t@gmail.com",
+      "homepage": null,
+      "github": "akameco",
+      "twitter": "akameco",
+      "freenode": null
+    },
+    {
+      "handle": "dfrankland",
+      "packages": 4,
+      "name": "Dylan Frankland",
+      "email": "dylan@frankland.io",
+      "homepage": "http://dylan.frankland.io",
+      "github": "dfrankland",
+      "twitter": "dfrankland_",
+      "freenode": null
+    },
+    {
+      "handle": "wearhere",
+      "packages": 4,
+      "name": null,
+      "email": "jeffreywear@gmail.com",
+      "homepage": null,
+      "github": "wearhere",
+      "twitter": "wear_here",
+      "freenode": null
+    },
+    {
+      "handle": "yoshuawuyts",
+      "packages": 4,
+      "name": "Yoshua Wuyts ",
+      "email": "i@yoshuawuyts.com",
+      "homepage": "http://yoshuawuyts.com",
+      "github": "yoshuawuyts",
+      "twitter": "yoshuawuyts",
+      "freenode": "yoshuawuyts"
+    },
+    {
+      "handle": "yan-foto",
+      "packages": 4,
+      "name": null,
+      "email": "yan.foto@quaintous.com",
+      "homepage": null,
+      "github": null,
+      "twitter": null,
+      "freenode": null
+    },
+    {
+      "handle": "jgeurts",
+      "packages": 4,
+      "name": "Jim Geurts",
+      "email": "jim@biacreations.com",
+      "homepage": null,
+      "github": "jgeurts",
+      "twitter": "jgeurts",
+      "freenode": null
+    },
+    {
+      "handle": "mhkeller",
+      "packages": 4,
+      "name": "Michael Keller",
+      "email": "michael.keller@gmail.com",
+      "homepage": null,
+      "github": "mhkeller",
+      "twitter": "mhkeler",
+      "freenode": null
+    },
+    {
+      "handle": "joshwnj",
+      "packages": 4,
+      "name": null,
+      "email": "josh@x-team.com",
+      "homepage": null,
+      "github": null,
+      "twitter": null,
+      "freenode": null
+    },
+    {
+      "handle": "narazaka",
+      "packages": 4,
+      "name": "Narazaka",
+      "email": "info@narazaka.net",
+      "homepage": "http://narazaka.net/",
+      "github": "Narazaka",
+      "twitter": null,
+      "freenode": "Narazaka"
+    },
+    {
+      "handle": "jibo",
+      "packages": 4,
+      "name": "Jibo Inc.",
+      "email": "devsupport@jibo.com",
+      "homepage": "http://jibo.com/",
+      "github": "jiborobot",
+      "twitter": "jiborobot",
+      "freenode": null
+    },
+    {
+      "handle": "brahmgardner",
+      "packages": 4,
+      "name": "Brahm Gardner",
+      "email": "brahm.gardner@gmail.com",
+      "homepage": null,
+      "github": "brahmgardner",
+      "twitter": null,
+      "freenode": null
+    },
+    {
+      "handle": "shum",
+      "packages": 4,
+      "name": "Christopher Shum",
+      "email": "chris.shum@mongodb.com",
+      "homepage": null,
+      "github": "shum",
+      "twitter": null,
+      "freenode": null
+    },
+    {
+      "handle": "same",
+      "packages": 4,
+      "name": "Sam Eaton",
+      "email": "sameaton11@gmail.com",
+      "homepage": null,
+      "github": "samueleaton",
+      "twitter": "eatingRaisins",
+      "freenode": null
+    },
+    {
+      "handle": "amit_merchant",
+      "packages": 4,
+      "name": "Amit Merchant",
+      "email": "bullredeyes@gmail.com",
+      "homepage": null,
+      "github": "amitmerchant1990",
+      "twitter": "amit_merchant",
+      "freenode": null
+    },
+    {
+      "handle": "orbitbot",
+      "packages": 4,
+      "name": null,
+      "email": "patrik@zebros.fi",
+      "homepage": null,
+      "github": null,
+      "twitter": null,
+      "freenode": null
+    },
+    {
+      "handle": "maxkorp",
+      "packages": 4,
+      "name": "Maximiliano Korp",
+      "email": "maxkorp@8bytealchemy.com",
+      "homepage": null,
+      "github": "maxkorp",
+      "twitter": "maximilianokorp",
+      "freenode": null
+    },
+    {
+      "handle": "wojtkowiak",
+      "packages": 4,
+      "name": null,
+      "email": "bartosz@wojtkowiak.it",
+      "homepage": "http://wojtkowiak.it",
+      "github": "wojtkowiak",
+      "twitter": null,
+      "freenode": null
+    },
+    {
+      "handle": "soederpop",
+      "packages": 4,
+      "name": "Jonathan Soeder",
+      "email": "jon@chicago.com",
+      "homepage": "https://architects.io",
+      "github": "architects",
+      "twitter": "soederpop",
+      "freenode": null
+    },
+    {
+      "handle": "noteon",
+      "packages": 4,
+      "name": null,
+      "email": "noteon@gmail.com",
+      "homepage": null,
+      "github": null,
+      "twitter": null,
+      "freenode": null
+    },
+    {
+      "handle": "s-a",
+      "packages": 3,
+      "name": null,
+      "email": "stephan.ahlf@gmail.com",
+      "homepage": null,
+      "github": null,
+      "twitter": null,
+      "freenode": null
+    },
+    {
+      "handle": "freeman-lab",
+      "packages": 3,
+      "name": "Jeremy Freeman",
+      "email": "the.freeman.lab@gmail.com",
+      "homepage": "http://thefreemanlab.com",
+      "github": "freeman-lab",
+      "twitter": "thefreemanlab",
+      "freenode": null
+    },
+    {
+      "handle": "alchapone",
+      "packages": 3,
+      "name": "Alex Chaplinsky",
+      "email": "alchaplinsky@gmail.com",
+      "homepage": null,
+      "github": "alchapone",
+      "twitter": "alchaplinsky",
+      "freenode": null
+    },
+    {
+      "handle": "hugohil",
+      "packages": 3,
+      "name": null,
+      "email": "hugo@soixantecircuits.fr",
+      "homepage": null,
+      "github": null,
+      "twitter": null,
+      "freenode": null
+    },
+    {
+      "handle": "subuta",
+      "packages": 3,
+      "name": null,
+      "email": "shunta.3110@gmail.com",
+      "homepage": null,
+      "github": null,
+      "twitter": null,
+      "freenode": null
+    },
+    {
+      "handle": "cronvel",
+      "packages": 3,
+      "name": "Cédric Ronvel",
+      "email": "cedric.ronvel@gmail.com",
+      "homepage": "http://blog.soulserv.net",
+      "github": "cronvel",
+      "twitter": "cr0nv3l",
+      "freenode": null
+    },
+    {
+      "handle": "ewnd9",
+      "packages": 3,
+      "name": "ewnd9",
+      "email": "ewndnine@gmail.com",
+      "homepage": "http://ewnd9.com",
+      "github": "ewnd9",
+      "twitter": "ewnd9",
+      "freenode": "ewnd9"
+    },
+    {
+      "handle": "azu",
+      "packages": 3,
+      "name": "azu",
+      "email": "azuciao@gmail.com",
+      "homepage": "http://efcl.info/",
+      "github": "azu",
+      "twitter": "azu_re",
+      "freenode": null
+    },
+    {
+      "handle": "urucas",
+      "packages": 3,
+      "name": "Urucas",
+      "email": "hello@urucas.com",
+      "homepage": "http://urucas.com",
+      "github": "urucas",
+      "twitter": "urucas",
+      "freenode": null
+    },
+    {
+      "handle": "xudafeng",
+      "packages": 3,
+      "name": "xudafeng",
+      "email": "xudafeng@126.com",
+      "homepage": "http://xdf.me/",
+      "github": "xudafeng",
+      "twitter": null,
+      "freenode": null
+    },
+    {
+      "handle": "automation-stack",
+      "packages": 3,
+      "name": null,
+      "email": "aleksandr.komlev@gmail.com",
+      "homepage": null,
+      "github": null,
+      "twitter": null,
+      "freenode": null
+    },
+    {
+      "handle": "pfraze",
+      "packages": 3,
+      "name": null,
+      "email": "pfrazee@gmail.com",
+      "homepage": null,
+      "github": null,
+      "twitter": null,
+      "freenode": null
+    },
+    {
+      "handle": "tomaash",
+      "packages": 3,
+      "name": null,
+      "email": "tomas.holas@gmail.com",
+      "homepage": null,
+      "github": null,
+      "twitter": null,
+      "freenode": null
+    },
+    {
+      "handle": "cdaringe",
+      "packages": 3,
+      "name": "Christopher Dieringer",
+      "email": "cdaringe@gmail.com",
+      "homepage": "http://cdaringe.com",
+      "github": "cdaringe",
+      "twitter": "cdaringe",
+      "freenode": "cdaringe"
+    },
+    {
+      "handle": "gerhardberger",
+      "packages": 3,
+      "name": "gellert hegyi",
+      "email": "93.morph@gmail.com",
+      "homepage": null,
+      "github": "gerhardberger",
+      "twitter": "native_cat",
+      "freenode": null
+    },
+    {
+      "handle": "bigtimebuddy",
+      "packages": 3,
+      "name": "Matt Karl",
+      "email": "matt@mattkarl.com",
+      "homepage": null,
+      "github": "bigtimebuddy",
+      "twitter": "bigtimebuddy",
+      "freenode": null
+    },
+    {
+      "handle": "betatim",
+      "packages": 3,
+      "name": "Tim Head",
+      "email": "betatim@gmail.com",
+      "homepage": "http://betatim.github.io",
+      "github": "betatim",
+      "twitter": "betatim",
+      "freenode": null
+    },
+    {
+      "handle": "ellell",
+      "packages": 3,
+      "name": "Lisa Övermyr",
+      "email": "lisaovermyr@gmail.com",
+      "homepage": null,
+      "github": null,
+      "twitter": null,
+      "freenode": null
+    },
+    {
+      "handle": "ysp123",
+      "packages": 3,
+      "name": null,
+      "email": "2096697975@qq.com",
+      "homepage": null,
+      "github": null,
+      "twitter": null,
+      "freenode": null
+    },
+    {
+      "handle": "bjrmatos",
+      "packages": 3,
+      "name": "BJR Matos",
+      "email": "bjrmatos@gmail.com",
+      "homepage": null,
+      "github": "bjrmatos",
+      "twitter": "bjrmatos",
+      "freenode": null
+    },
+    {
+      "handle": "jhen0409",
+      "packages": 3,
+      "name": "Jhen",
+      "email": "iainst0409@gmail.com",
+      "homepage": null,
+      "github": "jhen0409",
+      "twitter": "jhen_jie",
+      "freenode": null
+    },
+    {
+      "handle": "phated",
+      "packages": 3,
+      "name": "Blaine Bublitz",
+      "email": "blaine.bublitz@gmail.com",
+      "homepage": "https://github.com/phated",
+      "github": "phated",
+      "twitter": "BlaineBublitz",
+      "freenode": "phated"
+    },
+    {
+      "handle": "fraserxu",
+      "packages": 3,
+      "name": "fraserxu",
+      "email": "xvfeng123@gmail.com",
+      "homepage": "http://fraserxu.me",
+      "github": "fraserxu",
+      "twitter": "fraserxu",
+      "freenode": null
+    },
+    {
+      "handle": "aessig",
+      "packages": 3,
+      "name": "Aurelien Essig",
+      "email": "auressig@gmail.com",
+      "homepage": null,
+      "github": "aessig",
+      "twitter": null,
+      "freenode": null
+    },
+    {
+      "handle": "chinedufn",
+      "packages": 3,
+      "name": null,
+      "email": "frankie.nwafili@gmail.com",
+      "homepage": null,
+      "github": null,
+      "twitter": null,
+      "freenode": null
+    },
+    {
+      "handle": "brrd",
+      "packages": 3,
+      "name": null,
+      "email": "contact@brrd.fr",
+      "homepage": "http://brrd.fr",
+      "github": "brrd",
+      "twitter": null,
+      "freenode": null
+    },
+    {
+      "handle": "felixrieseberg",
+      "packages": 3,
+      "name": "Felix Rieseberg",
+      "email": "felix@felixrieseberg.com",
+      "homepage": "http://www.felixrieseberg.com",
+      "github": "felixrieseberg",
+      "twitter": "felixrieseberg",
+      "freenode": null
+    },
+    {
+      "handle": "chentsulin",
+      "packages": 3,
+      "name": "LIN, CHEN-TSU",
+      "email": "chentsulin@gmail.com",
+      "homepage": null,
+      "github": "chentsulin",
+      "twitter": "ChentsuL",
+      "freenode": null
+    },
+    {
+      "handle": "francoislaberge",
+      "packages": 3,
+      "name": "Francois Laberge",
+      "email": "francoislaberge@gmail.com",
+      "homepage": "http://francoislaberge.com/",
+      "github": "francoislaberge",
+      "twitter": "francoislaberge",
+      "freenode": null
+    },
+    {
+      "handle": "silverwind",
+      "packages": 3,
+      "name": null,
+      "email": "npm@silverwind.io",
+      "homepage": "http://github.com/silverwind",
+      "github": "silverwind",
+      "twitter": "silv3rwind",
+      "freenode": "silv3rwind"
+    },
+    {
+      "handle": "mvila",
+      "packages": 3,
+      "name": "Manuel Vila",
+      "email": "mvila@3base.com",
+      "homepage": null,
+      "github": "mvila",
+      "twitter": "mvila",
+      "freenode": null
+    },
+    {
+      "handle": "megahertz",
+      "packages": 3,
+      "name": "Alexey Prokhorov",
+      "email": "alexey.p@l96.ru",
+      "homepage": "http://github.com/megahertz/",
+      "github": "megahertz",
+      "twitter": null,
+      "freenode": null
+    },
+    {
+      "handle": "pessimistress",
+      "packages": 3,
+      "name": "Xiaoji Chen",
+      "email": "cxiaoji@gmail.com",
+      "homepage": null,
+      "github": null,
+      "twitter": null,
+      "freenode": null
+    },
+    {
+      "handle": "ibgreen",
+      "packages": 3,
+      "name": "Ib",
+      "email": "ib.green.home@gmail.com",
+      "homepage": null,
+      "github": "ibgreen",
+      "twitter": null,
+      "freenode": null
+    },
+    {
+      "handle": "kesla",
+      "packages": 3,
+      "name": "David Björklund",
+      "email": "david.bjorklund@gmail.com",
+      "homepage": "http://davidbjorklund.com",
+      "github": "kesla",
+      "twitter": "david_bjorklund",
+      "freenode": null
+    },
+    {
+      "handle": "gnavvy",
+      "packages": 3,
+      "name": "Yang Wang",
+      "email": "gnavvy@gmail.com",
+      "homepage": null,
+      "github": "gnavvy",
+      "twitter": "gnavvy",
+      "freenode": null
+    },
+    {
+      "handle": "jviotti",
+      "packages": 3,
+      "name": "Juan Cruz Viotti",
+      "email": "jviotti@openmailbox.org",
+      "homepage": null,
+      "github": "jviotti",
+      "twitter": null,
+      "freenode": "jviotti"
+    },
+    {
+      "handle": "probablycorey",
+      "packages": 3,
+      "name": null,
+      "email": "probablycorey@gmail.com",
+      "homepage": null,
+      "github": null,
+      "twitter": null,
+      "freenode": null
+    },
+    {
+      "handle": "extr0py",
+      "packages": 3,
+      "name": null,
+      "email": "admin@extropygames.com",
+      "homepage": null,
+      "github": null,
+      "twitter": null,
+      "freenode": null
+    },
+    {
+      "handle": "ccnokes",
+      "packages": 3,
+      "name": null,
+      "email": "ccnokes@gmail.com",
+      "homepage": null,
+      "github": null,
+      "twitter": null,
+      "freenode": null
+    },
+    {
+      "handle": "tundrax",
+      "packages": 3,
+      "name": null,
+      "email": "sherzod@gmail.com",
+      "homepage": null,
+      "github": null,
+      "twitter": null,
+      "freenode": null
+    },
+    {
+      "handle": "substack",
+      "packages": 3,
+      "name": "James Halliday",
+      "email": "substack@gmail.com",
+      "homepage": "http://substack.net",
+      "github": "substack",
+      "twitter": "substack",
+      "freenode": "substack"
+    },
+    {
+      "handle": "alfredwesterveld",
+      "packages": 3,
+      "name": null,
+      "email": "alfredwesterveld@gmail.com",
+      "homepage": null,
+      "github": "alfredwesterveld",
+      "twitter": "awesterveld",
+      "freenode": null
+    },
+    {
+      "handle": "jkup",
+      "packages": 3,
+      "name": "Jon Kuperman",
+      "email": "jon.kuperman@gmail.com",
+      "homepage": "http://jonkuperman.com",
+      "github": "jkup",
+      "twitter": "jkup",
+      "freenode": "m1ck3y"
+    },
+    {
+      "handle": "todbot",
+      "packages": 3,
+      "name": "Tod E. Kurt",
+      "email": "todbotdotcom@gmail.com",
+      "homepage": "http://todbot.com/blog/",
+      "github": "todbot",
+      "twitter": "todbot",
+      "freenode": null
+    },
+    {
+      "handle": "mikolalysenko",
+      "packages": 3,
+      "name": "Mikola Lysenko",
+      "email": "mikolalysenko@gmail.com",
+      "homepage": "https://0fps.net",
+      "github": "mikolalysenko",
+      "twitter": "mikolalysenko",
+      "freenode": "mikolalysenko"
+    },
+    {
+      "handle": "rosshinkley",
+      "packages": 3,
+      "name": "Ross Hinkley",
+      "email": "rosshinkley@gmail.com",
+      "homepage": null,
+      "github": "rosshinkley",
+      "twitter": "rosshinkley",
+      "freenode": null
+    },
+    {
+      "handle": "dabbott",
+      "packages": 3,
+      "name": null,
+      "email": "dvnabbott@gmail.com",
+      "homepage": null,
+      "github": "dabbott",
+      "twitter": "devinaabbott",
+      "freenode": null
+    },
+    {
+      "handle": "danielnieto",
+      "packages": 3,
+      "name": "Daniel Nieto",
+      "email": "danielnieto89@gmail.com",
+      "homepage": null,
+      "github": "danielnieto",
+      "twitter": null,
+      "freenode": null
+    },
+    {
+      "handle": "michalbures",
+      "packages": 3,
+      "name": "Michal Bureš",
+      "email": "hello@bures.io",
+      "homepage": "http://bures.io",
+      "github": "MichalBures",
+      "twitter": "MichalBures",
+      "freenode": null
+    },
+    {
+      "handle": "jhand",
+      "packages": 3,
+      "name": "Joe Hand",
+      "email": "joe@hand.email",
+      "homepage": "http://joeahand.com",
+      "github": "joehand",
+      "twitter": "joeahand",
+      "freenode": null
+    },
+    {
+      "handle": "binarymuse",
+      "packages": 3,
+      "name": "Michelle Tilley",
+      "email": "michelle@michelletilley.net",
+      "homepage": "https://github.com/BinaryMuse",
+      "github": "BinaryMuse",
+      "twitter": "BinaryMuse",
+      "freenode": "BinaryMuse"
+    },
+    {
+      "handle": "bret",
+      "packages": 3,
+      "name": "Bret Comnes",
+      "email": "bcomnes@gmail.com",
+      "homepage": "http://bret.io",
+      "github": "bcomnes",
+      "twitter": "uhhyeahbret",
+      "freenode": "bret"
+    },
+    {
+      "handle": "ungoldman",
+      "packages": 3,
+      "name": "Nate Goldman",
+      "email": "ungoldman@gmail.com",
+      "homepage": "http://ungoldman.com",
+      "github": "ungoldman",
+      "twitter": "ungoldman",
+      "freenode": null
+    },
+    {
+      "handle": "retyped",
+      "packages": 3,
+      "name": null,
+      "email": "ohmyglobthisissilly@gmail.com",
+      "homepage": null,
+      "github": "retyped",
+      "twitter": null,
+      "freenode": null
+    },
+    {
+      "handle": "ehsalazar",
+      "packages": 3,
+      "name": "Ernie Salazar",
+      "email": "ernie@npmjs.com",
+      "homepage": null,
+      "github": "ehsalazar",
+      "twitter": "ehsalazar",
+      "freenode": null
+    }
+  ],
+  "basename": "prolific_package_authors"
+}
