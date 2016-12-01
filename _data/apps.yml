@@ -2286,7 +2286,7 @@
   icon: "grabcad-print.png"
 -
   name: "Medley"
-  description: "Be meta with your coding notes"
+  description: "Programming note taking redefined"
   website: "http://medleytext.net"
   keywords:
     - "productivity"
