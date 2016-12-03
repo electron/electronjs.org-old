@@ -1,5 +1,6 @@
 {
-  "title": "Popular Low-level Dependencies",
+  "slug": "package_dependencies",
+  "title": "Package Dependencies",
   "description": "Electron-related npm packages that are frequently depended on by other npm packages.",
   "collectionType": "Package",
   "collection": [
@@ -18540,6 +18541,5 @@
         }
       ]
     }
-  ],
-  "basename": "popular_low_level_dependencies"
+  ]
 }

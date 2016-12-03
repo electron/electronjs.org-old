@@ -1,5 +1,6 @@
 {
-  "title": "Prolific Package Authors",
+  "slug": "package_authors",
+  "title": "Package Authors",
   "description": "npm users who maintain numerous Electron-related packages.",
   "collectionType": "npmUser",
   "collection": [
@@ -11,7 +12,8 @@
       "homepage": null,
       "github": null,
       "twitter": null,
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/247a36b939111801f83b561060c63e7b?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "parroit",
@@ -21,7 +23,8 @@
       "homepage": "http://www.parro.it",
       "github": "parro-it",
       "twitter": "parroit",
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/9f0cc2e0e8d0968ba143150eb6a5a2e6?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "zeke",
@@ -31,7 +34,8 @@
       "homepage": "http://zeke.sikelianos.com",
       "github": "zeke",
       "twitter": "zeke",
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/8f344b1c4bdcfc28bd848e97e94c3523?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "kevinsawicki",
@@ -41,7 +45,8 @@
       "homepage": "http://git.io/ks",
       "github": "kevinsawicki",
       "twitter": "kevinsawicki",
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/830257379aa0b44a17acdab802c98df7?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "zcbenz",
@@ -51,7 +56,8 @@
       "homepage": null,
       "github": null,
       "twitter": null,
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/dc13d329db98a4ff44d52013b80e3bf4?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "rhysd",
@@ -61,7 +67,8 @@
       "homepage": null,
       "github": null,
       "twitter": null,
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/dea1add99f4cf942792c0f185aa2f2fd?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "jlord",
@@ -71,7 +78,8 @@
       "homepage": "http://www.jlord.us",
       "github": "jlord",
       "twitter": "jllord",
-      "freenode": "jlord"
+      "freenode": "jlord",
+      "gravatar": "https://gravatar.com/avatar/9cc850f35289f6fa1af74a3c70589b1a?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "imlucas",
@@ -81,7 +89,8 @@
       "homepage": "http://www.imlucas.com",
       "github": "imlucas",
       "twitter": "__lucas",
-      "freenode": "__lucas"
+      "freenode": "__lucas",
+      "gravatar": "https://gravatar.com/avatar/11f176d1a17a130be5ea692d6f1b9dbf?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "andrewpmckenzie",
@@ -91,7 +100,8 @@
       "homepage": "http://andrewpmckenzie.info",
       "github": "andrewpmckenzie",
       "twitter": "andrewpmckenzie",
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/e97b554c457e69c962f0168302cc7d65?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "mattdesl",
@@ -101,7 +111,8 @@
       "homepage": null,
       "github": "mattdesl",
       "twitter": "mattdesl",
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/a8b4f4ce68c0dee12a066c602a3e6191?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "justinmchase",
@@ -111,7 +122,8 @@
       "homepage": "http://justinmchase.com",
       "github": "justinmchase",
       "twitter": "justinmchase",
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/de9c8ce39702554211099e27c0194815?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "kaizhu",
@@ -121,7 +133,8 @@
       "homepage": null,
       "github": "kaizhu256",
       "twitter": null,
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/dd05938145f23c52f9f09e342710fe34?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "sindresorhus",
@@ -131,7 +144,8 @@
       "homepage": "https://sindresorhus.com",
       "github": "sindresorhus",
       "twitter": "sindresorhus",
-      "freenode": "sindresorhus"
+      "freenode": "sindresorhus",
+      "gravatar": "https://gravatar.com/avatar/d36a92237c75c5337c17b60d90686bf9?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "electron",
@@ -141,7 +155,8 @@
       "homepage": "https://electron.atom.io",
       "github": "electron",
       "twitter": "electronjs",
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/341d73a1c4caa8fec88ed24181562113?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "nathansobo",
@@ -151,7 +166,8 @@
       "homepage": null,
       "github": null,
       "twitter": null,
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/bd964c4c26b160867008b423ae92b3e7?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "sethvincent",
@@ -161,7 +177,8 @@
       "homepage": "http://sethvincent.com",
       "github": "sethvincent",
       "twitter": "sethdvincent",
-      "freenode": "sethvincent"
+      "freenode": "sethvincent",
+      "gravatar": "https://gravatar.com/avatar/652e02cbd134e0e92f3f81fe14bda3d1?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "ionicabizau",
@@ -171,7 +188,8 @@
       "homepage": "http://ionicabizau.net",
       "github": "IonicaBizau",
       "twitter": "IonicaBizau",
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/537f8604a91cd28e10dd7934baaf4437?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "develar",
@@ -181,7 +199,8 @@
       "homepage": null,
       "github": null,
       "twitter": null,
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/58ba133741edd5328430f198ea7f8981?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "maxogden",
@@ -191,7 +210,8 @@
       "homepage": "https://github.com/maxogden/messages",
       "github": "maxogden",
       "twitter": "maxogden",
-      "freenode": "https://github.com/maxogden/messages"
+      "freenode": "https://github.com/maxogden/messages",
+      "gravatar": "https://gravatar.com/avatar/fcc9bbfe2a31c5a6225cc287ed7ae2a6?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "paulcbetts",
@@ -201,7 +221,8 @@
       "homepage": "http://paulbetts.org",
       "github": "paulcbetts",
       "twitter": "paulcbetts",
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/8de583685d3e68f79917ec82253185d8?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "atom",
@@ -211,7 +232,8 @@
       "homepage": null,
       "github": null,
       "twitter": null,
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/bd964c4c26b160867008b423ae92b3e7?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "maxbrunsfeld",
@@ -221,7 +243,8 @@
       "homepage": null,
       "github": null,
       "twitter": null,
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/743fdc8d9719079f2af73c5889284fe2?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "durran",
@@ -231,7 +254,8 @@
       "homepage": null,
       "github": null,
       "twitter": null,
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/6f09262a13427532461b0b618d445b1e?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "sofroniewn",
@@ -241,7 +265,8 @@
       "homepage": null,
       "github": null,
       "twitter": null,
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/7d220df359d9ffc73db2c6ef6ffb1093?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "mongodb-js-user",
@@ -251,7 +276,8 @@
       "homepage": "http://mongodb-js.github.io",
       "github": "mongodb-js",
       "twitter": null,
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/0b3d33633be7d3fc3ef0d766a91004c5?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "rueckstiess",
@@ -261,7 +287,8 @@
       "homepage": null,
       "github": "rueckstiess",
       "twitter": "tomonezero",
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/664a2cdb7a0e706e4a062ce880989dbd?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "ragingwind",
@@ -271,7 +298,8 @@
       "homepage": "http://ragingwind.me",
       "github": "ragingwind",
       "twitter": "ragingwind",
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/687ac25540fe35fcb5e828f75c4a6079?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "jprichardson",
@@ -281,7 +309,8 @@
       "homepage": "http://procbits.com/pages/about",
       "github": "jprichardson",
       "twitter": "jprichardson",
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/0f56a5e429de009a27b0ae8f796ef2df?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "machyne",
@@ -291,7 +320,8 @@
       "homepage": null,
       "github": "machyne",
       "twitter": null,
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/eeaf9f4e09b5e93ef10c8c33be80586e?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "wangky",
@@ -301,7 +331,8 @@
       "homepage": null,
       "github": "116356754",
       "twitter": null,
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/7a09ea2ff2538a03a371f4985571ae2e?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "rgbkrk",
@@ -311,7 +342,8 @@
       "homepage": "https://github.com/rgbkrk",
       "github": "rgbkrk",
       "twitter": "rgbkrk",
-      "freenode": "rgbkrk"
+      "freenode": "rgbkrk",
+      "gravatar": "https://gravatar.com/avatar/e76c7ebc9d2e8a4b840f13cd01946437?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "unindented",
@@ -321,7 +353,8 @@
       "homepage": null,
       "github": "unindented",
       "twitter": "unindented",
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/ac7e1bdb81717198a0facace84947073?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "mmckegg",
@@ -331,7 +364,8 @@
       "homepage": null,
       "github": "mmckegg",
       "twitter": "MattMcKegg",
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/4841212596213e29fdf3f003a65f91e5?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "mafintosh",
@@ -341,7 +375,8 @@
       "homepage": null,
       "github": "mafintosh",
       "twitter": "mafintosh",
-      "freenode": "mafintosh"
+      "freenode": "mafintosh",
+      "gravatar": "https://gravatar.com/avatar/030556ade504409a2e995107e4acc189?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "rynomad",
@@ -351,7 +386,8 @@
       "homepage": null,
       "github": null,
       "twitter": null,
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/f64549649b0c4ea13e2cb67b7db02b19?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "jameskyburz",
@@ -361,7 +397,8 @@
       "homepage": null,
       "github": null,
       "twitter": null,
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/b611219c66d0577a7345d28a4cfcd69e?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "marshallofsound",
@@ -371,7 +408,8 @@
       "homepage": "http://samuelattard.com",
       "github": "marshallofsound",
       "twitter": "marshallofsound",
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/1576c987b53868acf73d6ccb08110a78?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "benogle",
@@ -381,7 +419,8 @@
       "homepage": null,
       "github": null,
       "twitter": null,
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/cab0a3e4258a50447357832c922c956b?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "as-cii",
@@ -391,7 +430,8 @@
       "homepage": "http://as-cii.com",
       "github": "as-cii",
       "twitter": "as__cii",
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/77967a1689f5ea82aeb1a3f9c7ff5a43?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "kangas",
@@ -401,7 +441,8 @@
       "homepage": "http://mattkangas.com",
       "github": "kangas",
       "twitter": "mattkangas",
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/072d72d5f9ca164e3ff232cb97358ec8?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "shama",
@@ -411,7 +452,8 @@
       "homepage": "http://dontkry.com",
       "github": "shama",
       "twitter": "shamakry",
-      "freenode": "shama"
+      "freenode": "shama",
+      "gravatar": "https://gravatar.com/avatar/5211ea711bb06482530172f77732f61a?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "fritx",
@@ -421,7 +463,8 @@
       "homepage": "http://github.com/fritx",
       "github": "fritx",
       "twitter": null,
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/8e50c9ece1c7fcb8cd148fbf01cae221?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "jdfreder",
@@ -431,7 +474,8 @@
       "homepage": "http://bitplexity.com",
       "github": "jdfreder",
       "twitter": "GooseJon",
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/b1f673c52652af7c78775ad4c8d2640c?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "juliangruber",
@@ -441,7 +485,8 @@
       "homepage": null,
       "github": "juliangruber",
       "twitter": "juliangruber",
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/a010d5218f2c3d194dbbac9c5d14d0ad?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "bugdanov",
@@ -451,7 +496,8 @@
       "homepage": null,
       "github": null,
       "twitter": null,
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/147200925deb6240af7728283420f6ec?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "fasterthanlime",
@@ -461,7 +507,8 @@
       "homepage": "https://amos.me",
       "github": "fasterthanlime",
       "twitter": "fasterthanlime",
-      "freenode": "fasterthanlime"
+      "freenode": "fasterthanlime",
+      "gravatar": "https://gravatar.com/avatar/8ee198a1d31608d510ba929fcf1c3c4b?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "kanekotic",
@@ -471,7 +518,8 @@
       "homepage": null,
       "github": "kanekotic",
       "twitter": null,
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/c58a6431c5138d4a634f2960e91c94ca?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "lukekarrys",
@@ -481,7 +529,8 @@
       "homepage": "http://lukekarrys.com",
       "github": "lukekarrys",
       "twitter": null,
-      "freenode": "lukekarrys"
+      "freenode": "lukekarrys",
+      "gravatar": "https://gravatar.com/avatar/8e36a299b7f70bc7bf28d12c1f866a8f?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "cilix",
@@ -491,7 +540,8 @@
       "homepage": null,
       "github": "cilix",
       "twitter": null,
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/c04fa8f440107c53336e7d545c76859a?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "micheal.parks",
@@ -501,7 +551,8 @@
       "homepage": null,
       "github": "michealparks",
       "twitter": "_michealparks_",
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/9e52a13889c6209cbdc910d93be6a3b8?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "kay-kim",
@@ -511,7 +562,8 @@
       "homepage": null,
       "github": null,
       "twitter": null,
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/5389acb23ee05a1713451dd6bb3e80ab?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "schwartzrw",
@@ -521,7 +573,8 @@
       "homepage": null,
       "github": "schwartzrw",
       "twitter": "schwartzrw",
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/99a46304474e76cca2a28492f6c9784f?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "jenslind",
@@ -531,7 +584,8 @@
       "homepage": null,
       "github": "jenslind",
       "twitter": null,
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/9d300e2a5a18a2cc61b2f418b7c9df3f?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "trivnowllc",
@@ -541,7 +595,8 @@
       "homepage": null,
       "github": null,
       "twitter": null,
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/682c270e9fbea6e9657379458eb04223?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "nathanial",
@@ -551,7 +606,8 @@
       "homepage": null,
       "github": "nathanial",
       "twitter": null,
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/e4a82c61ebb6cf6dafb7bc6b8468ccd8?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "sidneys",
@@ -561,7 +617,8 @@
       "homepage": null,
       "github": "sidneys",
       "twitter": "quadrigamedia",
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/fec55dfc702ff1f9aa09a32e78a511ff?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "lgeiger",
@@ -571,7 +628,8 @@
       "homepage": null,
       "github": "lgeiger",
       "twitter": null,
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/a18571d02474547c0016efdb285b02cd?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "captainsafia",
@@ -581,7 +639,8 @@
       "homepage": "http://safia.rocks",
       "github": "captainsafia",
       "twitter": "captainsafia",
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/a992289fd04a8c680ffa777f6bc4c9c0?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "mappum",
@@ -591,7 +650,8 @@
       "homepage": null,
       "github": null,
       "twitter": null,
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/4c45b726e3fa45b69ecea5adbe9bdabe?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "bma",
@@ -601,7 +661,8 @@
       "homepage": null,
       "github": null,
       "twitter": null,
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/785d816e9c47959574ad5e0332bcb6b2?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "i80and",
@@ -611,7 +672,8 @@
       "homepage": "https://foxquill.com",
       "github": "i80and",
       "twitter": "i80and",
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/ca276293d0e1de556783346d33b48cd7?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "arvitaly",
@@ -621,7 +683,8 @@
       "homepage": null,
       "github": null,
       "twitter": null,
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/2a53a6f32192da6a0a0e0dfce43edcb4?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "twolfson",
@@ -631,7 +694,8 @@
       "homepage": null,
       "github": null,
       "twitter": null,
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/15927fc52919e9223adc7ed99e125d4d?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "jakeluer",
@@ -641,7 +705,8 @@
       "homepage": "http://qualiancy.com",
       "github": "logicalparadox",
       "twitter": "jakeluer",
-      "freenode": "logicalparadox"
+      "freenode": "logicalparadox",
+      "gravatar": "https://gravatar.com/avatar/9c128c550d503b1fd4024c9fd68f0f50?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "glowe",
@@ -651,7 +716,8 @@
       "homepage": null,
       "github": null,
       "twitter": null,
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/e4b1ccf7709ffd63000d4343b47c52e9?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "redondos",
@@ -661,7 +727,8 @@
       "homepage": null,
       "github": "redondos",
       "twitter": "redondos",
-      "freenode": "redondos"
+      "freenode": "redondos",
+      "gravatar": "https://gravatar.com/avatar/ef0a67b41c712b1d004cc9ec1a54020c?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "dominictarr",
@@ -671,7 +738,8 @@
       "homepage": "http://dominictarr.com",
       "github": "dominictarr",
       "twitter": "dominictarr",
-      "freenode": "dominictarr"
+      "freenode": "dominictarr",
+      "gravatar": "https://gravatar.com/avatar/8225d7ca5e83a3f9f0bb89a61d5df72c?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "feross",
@@ -681,7 +749,8 @@
       "homepage": "http://feross.org",
       "github": "feross",
       "twitter": "feross",
-      "freenode": "feross"
+      "freenode": "feross",
+      "gravatar": "https://gravatar.com/avatar/b498d33041627b07726dc29c28f02df7?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "dpercy",
@@ -691,7 +760,8 @@
       "homepage": null,
       "github": "dpercy",
       "twitter": null,
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/d829c64aa80b3502b79b45ce22c9e4cd?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "akameco",
@@ -701,7 +771,8 @@
       "homepage": null,
       "github": "akameco",
       "twitter": "akameco",
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/1070f7a89c8c7ae6ded9306a5c2f1888?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "dfrankland",
@@ -711,7 +782,8 @@
       "homepage": "http://dylan.frankland.io",
       "github": "dfrankland",
       "twitter": "dfrankland_",
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/1c385b9f5cc9ebca53674a7386829ae2?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "wearhere",
@@ -721,7 +793,8 @@
       "homepage": null,
       "github": "wearhere",
       "twitter": "wear_here",
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/aaf143fc290a92af46e03ab7b62a8340?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "yoshuawuyts",
@@ -731,7 +804,8 @@
       "homepage": "http://yoshuawuyts.com",
       "github": "yoshuawuyts",
       "twitter": "yoshuawuyts",
-      "freenode": "yoshuawuyts"
+      "freenode": "yoshuawuyts",
+      "gravatar": "https://gravatar.com/avatar/ea1d6a645988b809535ded4df0b9e3bb?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "yan-foto",
@@ -741,7 +815,8 @@
       "homepage": null,
       "github": null,
       "twitter": null,
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/c00fadf5a477a8f770e91fdd7b356e76?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "jgeurts",
@@ -751,7 +826,8 @@
       "homepage": null,
       "github": "jgeurts",
       "twitter": "jgeurts",
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/1c7f9b46de2fa570802d7accd6d1a822?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "mhkeller",
@@ -761,7 +837,8 @@
       "homepage": null,
       "github": "mhkeller",
       "twitter": "mhkeler",
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/615d82e9c4fd1dcc4bd27683ee40c6bc?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "joshwnj",
@@ -771,7 +848,8 @@
       "homepage": null,
       "github": null,
       "twitter": null,
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/a5c3679ad75acdf9fd211819ae34fdfa?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "narazaka",
@@ -781,7 +859,8 @@
       "homepage": "http://narazaka.net/",
       "github": "Narazaka",
       "twitter": null,
-      "freenode": "Narazaka"
+      "freenode": "Narazaka",
+      "gravatar": "https://gravatar.com/avatar/87fcb2fcbc2656c1989adca2acc60822?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "jibo",
@@ -791,7 +870,8 @@
       "homepage": "http://jibo.com/",
       "github": "jiborobot",
       "twitter": "jiborobot",
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/67f2082f6385af0f2e7555248eab6986?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "brahmgardner",
@@ -801,7 +881,8 @@
       "homepage": null,
       "github": "brahmgardner",
       "twitter": null,
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/756fa6e803cb3109c846ed9cfe63d0cb?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "shum",
@@ -811,7 +892,8 @@
       "homepage": null,
       "github": "shum",
       "twitter": null,
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/937a7a158eaac675887ce29b1ae54ad9?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "same",
@@ -821,7 +903,8 @@
       "homepage": null,
       "github": "samueleaton",
       "twitter": "eatingRaisins",
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/f66ad955ba5bfeb21e8af6fec690bec9?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "amit_merchant",
@@ -831,7 +914,8 @@
       "homepage": null,
       "github": "amitmerchant1990",
       "twitter": "amit_merchant",
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/53c01be22c733229924a63b70878e54a?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "orbitbot",
@@ -841,7 +925,8 @@
       "homepage": null,
       "github": null,
       "twitter": null,
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/a33b419095e3a9167c36cf2d5039103c?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "maxkorp",
@@ -851,7 +936,8 @@
       "homepage": null,
       "github": "maxkorp",
       "twitter": "maximilianokorp",
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/745462e356c82cb76df467f93748bd6a?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "wojtkowiak",
@@ -861,7 +947,8 @@
       "homepage": "http://wojtkowiak.it",
       "github": "wojtkowiak",
       "twitter": null,
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/64d5fa8ae87c686b41fd54f824c25419?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "soederpop",
@@ -871,7 +958,8 @@
       "homepage": "https://architects.io",
       "github": "architects",
       "twitter": "soederpop",
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/dbd2de6804be1cdd3df3100dc29a73ca?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "noteon",
@@ -881,7 +969,8 @@
       "homepage": null,
       "github": null,
       "twitter": null,
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/c8939a499a92e707a726a18122148436?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "s-a",
@@ -891,7 +980,8 @@
       "homepage": null,
       "github": null,
       "twitter": null,
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/f10c59f5711f787f80a67405e0e815f1?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "freeman-lab",
@@ -901,7 +991,8 @@
       "homepage": "http://thefreemanlab.com",
       "github": "freeman-lab",
       "twitter": "thefreemanlab",
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/f19e21b5a19032902638f1fb2c4ee49f?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "alchapone",
@@ -911,7 +1002,8 @@
       "homepage": null,
       "github": "alchapone",
       "twitter": "alchaplinsky",
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/4fc62bd3e33e6b8213c65b44daffc7db?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "hugohil",
@@ -921,7 +1013,8 @@
       "homepage": null,
       "github": null,
       "twitter": null,
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/11fdfc510db92fd15632d1ccca028716?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "subuta",
@@ -931,7 +1024,8 @@
       "homepage": null,
       "github": null,
       "twitter": null,
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/5c10054ce23972b2e51aaa2943c39c8c?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "cronvel",
@@ -941,7 +1035,8 @@
       "homepage": "http://blog.soulserv.net",
       "github": "cronvel",
       "twitter": "cr0nv3l",
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/6352d30861694381311aa45c18c1f192?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "ewnd9",
@@ -951,7 +1046,8 @@
       "homepage": "http://ewnd9.com",
       "github": "ewnd9",
       "twitter": "ewnd9",
-      "freenode": "ewnd9"
+      "freenode": "ewnd9",
+      "gravatar": "https://gravatar.com/avatar/4e4c332481a1a697146ca7eca940c672?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "azu",
@@ -961,7 +1057,8 @@
       "homepage": "http://efcl.info/",
       "github": "azu",
       "twitter": "azu_re",
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/274ac35774956379f381cb41bb6e2524?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "urucas",
@@ -971,7 +1068,8 @@
       "homepage": "http://urucas.com",
       "github": "urucas",
       "twitter": "urucas",
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/313f6dbc8be1ca10e2d7077a3496e8de?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "xudafeng",
@@ -981,7 +1079,8 @@
       "homepage": "http://xdf.me/",
       "github": "xudafeng",
       "twitter": null,
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/d073bab2ffabc6aff53d6af77662a149?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "automation-stack",
@@ -991,7 +1090,8 @@
       "homepage": null,
       "github": null,
       "twitter": null,
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/bb67bdaf17a5beef8c9b8dcfb1f4ce02?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "pfraze",
@@ -1001,7 +1101,8 @@
       "homepage": null,
       "github": null,
       "twitter": null,
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/88e8e6d6c8b93c91e6dcce053dfbb915?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "tomaash",
@@ -1011,7 +1112,8 @@
       "homepage": null,
       "github": null,
       "twitter": null,
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/c67c2cab2e0e9e347e10bed6d1a2c8f6?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "cdaringe",
@@ -1021,7 +1123,8 @@
       "homepage": "http://cdaringe.com",
       "github": "cdaringe",
       "twitter": "cdaringe",
-      "freenode": "cdaringe"
+      "freenode": "cdaringe",
+      "gravatar": "https://gravatar.com/avatar/eeb83fbd06f567fd0561fa2839d3939b?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "gerhardberger",
@@ -1031,7 +1134,8 @@
       "homepage": null,
       "github": "gerhardberger",
       "twitter": "native_cat",
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/17a075c79d964823d315ad6af1460ec1?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "bigtimebuddy",
@@ -1041,7 +1145,8 @@
       "homepage": null,
       "github": "bigtimebuddy",
       "twitter": "bigtimebuddy",
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/22af273ac457d9bec52a30afbdbfe3e7?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "betatim",
@@ -1051,7 +1156,8 @@
       "homepage": "http://betatim.github.io",
       "github": "betatim",
       "twitter": "betatim",
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/9e5755d13920a75666697d385b9be6b7?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "ellell",
@@ -1061,7 +1167,8 @@
       "homepage": null,
       "github": null,
       "twitter": null,
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/b46e275467495f7d7d4b17b697a1307e?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "ysp123",
@@ -1071,7 +1178,8 @@
       "homepage": null,
       "github": null,
       "twitter": null,
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/319476c7910327648f3010c0bced2f83?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "bjrmatos",
@@ -1081,7 +1189,8 @@
       "homepage": null,
       "github": "bjrmatos",
       "twitter": "bjrmatos",
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/7b63a14ea57fbfeacce405f5051b6da6?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "jhen0409",
@@ -1091,7 +1200,8 @@
       "homepage": null,
       "github": "jhen0409",
       "twitter": "jhen_jie",
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/cdea435e1117a51f615b0edaf8b9f80c?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "phated",
@@ -1101,7 +1211,8 @@
       "homepage": "https://github.com/phated",
       "github": "phated",
       "twitter": "BlaineBublitz",
-      "freenode": "phated"
+      "freenode": "phated",
+      "gravatar": "https://gravatar.com/avatar/b6eacb578b910a8efe75e07a5741c018?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "fraserxu",
@@ -1111,7 +1222,8 @@
       "homepage": "http://fraserxu.me",
       "github": "fraserxu",
       "twitter": "fraserxu",
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/21403b8b5f544512598fe92a6f62eb5d?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "aessig",
@@ -1121,7 +1233,8 @@
       "homepage": null,
       "github": "aessig",
       "twitter": null,
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/8ed9341587640aaf28d160a19743e521?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "chinedufn",
@@ -1131,7 +1244,8 @@
       "homepage": null,
       "github": null,
       "twitter": null,
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/f4299dbaae9043c35a3374bdef870348?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "brrd",
@@ -1141,7 +1255,8 @@
       "homepage": "http://brrd.fr",
       "github": "brrd",
       "twitter": null,
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/8ceafbc3ea6ed4ed9d057cf12f23992e?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "felixrieseberg",
@@ -1151,7 +1266,8 @@
       "homepage": "http://www.felixrieseberg.com",
       "github": "felixrieseberg",
       "twitter": "felixrieseberg",
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/762d498d4070aa403b8a2de4ddd15c2d?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "chentsulin",
@@ -1161,7 +1277,8 @@
       "homepage": null,
       "github": "chentsulin",
       "twitter": "ChentsuL",
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/460bc2e40836e7014bc6cfdd1b37d0ea?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "francoislaberge",
@@ -1171,7 +1288,8 @@
       "homepage": "http://francoislaberge.com/",
       "github": "francoislaberge",
       "twitter": "francoislaberge",
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/41340a7f3930b7d87be5949c4e538410?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "silverwind",
@@ -1181,7 +1299,8 @@
       "homepage": "http://github.com/silverwind",
       "github": "silverwind",
       "twitter": "silv3rwind",
-      "freenode": "silv3rwind"
+      "freenode": "silv3rwind",
+      "gravatar": "https://gravatar.com/avatar/8e190f087ebc4fc1f9c4729b607a39b7?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "mvila",
@@ -1191,7 +1310,8 @@
       "homepage": null,
       "github": "mvila",
       "twitter": "mvila",
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/71dc08ae79c727ab5f249a148ae63c8c?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "megahertz",
@@ -1201,7 +1321,8 @@
       "homepage": "http://github.com/megahertz/",
       "github": "megahertz",
       "twitter": null,
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/3b0158266355fd1dc7b971ae2fc844e0?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "pessimistress",
@@ -1211,7 +1332,8 @@
       "homepage": null,
       "github": null,
       "twitter": null,
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/90f636e249d3c335841748538f9d5fa5?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "ibgreen",
@@ -1221,7 +1343,8 @@
       "homepage": null,
       "github": "ibgreen",
       "twitter": null,
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/5e003fe1bcc110905643b3d6e498aff8?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "kesla",
@@ -1231,7 +1354,8 @@
       "homepage": "http://davidbjorklund.com",
       "github": "kesla",
       "twitter": "david_bjorklund",
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/b8d8878c23c7a3985f127df621f58470?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "gnavvy",
@@ -1241,7 +1365,8 @@
       "homepage": null,
       "github": "gnavvy",
       "twitter": "gnavvy",
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/3d0d488d8f5e21a974c9671db6407d50?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "jviotti",
@@ -1251,7 +1376,8 @@
       "homepage": null,
       "github": "jviotti",
       "twitter": null,
-      "freenode": "jviotti"
+      "freenode": "jviotti",
+      "gravatar": "https://gravatar.com/avatar/2f44ffd18fac9d365cfda73039152d30?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "probablycorey",
@@ -1261,7 +1387,8 @@
       "homepage": null,
       "github": null,
       "twitter": null,
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/a3d8a48f95e020586ddb70eb121bfcca?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "extr0py",
@@ -1271,7 +1398,8 @@
       "homepage": null,
       "github": null,
       "twitter": null,
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/aed138e0951b3a5ade5fef398c52212c?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "ccnokes",
@@ -1281,7 +1409,8 @@
       "homepage": null,
       "github": null,
       "twitter": null,
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/4353d99ebb0143e831d2d6bbc3e0809a?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "tundrax",
@@ -1291,7 +1420,8 @@
       "homepage": null,
       "github": null,
       "twitter": null,
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/d9f996de3b96829036b90299d03fc8af?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "substack",
@@ -1301,7 +1431,8 @@
       "homepage": "http://substack.net",
       "github": "substack",
       "twitter": "substack",
-      "freenode": "substack"
+      "freenode": "substack",
+      "gravatar": "https://gravatar.com/avatar/d4a2f12ceae3b7f211b661576d22bfb9?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "alfredwesterveld",
@@ -1311,7 +1442,8 @@
       "homepage": null,
       "github": "alfredwesterveld",
       "twitter": "awesterveld",
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/e64f8a0dfd37fe636ce178d4d538e327?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "jkup",
@@ -1321,7 +1453,8 @@
       "homepage": "http://jonkuperman.com",
       "github": "jkup",
       "twitter": "jkup",
-      "freenode": "m1ck3y"
+      "freenode": "m1ck3y",
+      "gravatar": "https://gravatar.com/avatar/21b731c153b8444dc9d4d27948156a9a?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "todbot",
@@ -1331,7 +1464,8 @@
       "homepage": "http://todbot.com/blog/",
       "github": "todbot",
       "twitter": "todbot",
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/323dca55f2c1758b855554d2f927b85e?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "mikolalysenko",
@@ -1341,7 +1475,8 @@
       "homepage": "https://0fps.net",
       "github": "mikolalysenko",
       "twitter": "mikolalysenko",
-      "freenode": "mikolalysenko"
+      "freenode": "mikolalysenko",
+      "gravatar": "https://gravatar.com/avatar/3ca049389a932a8c3fa70db5fb86b878?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "rosshinkley",
@@ -1351,7 +1486,8 @@
       "homepage": null,
       "github": "rosshinkley",
       "twitter": "rosshinkley",
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/2d0e224620fb2ea5dba708981c6805bc?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "dabbott",
@@ -1361,7 +1497,8 @@
       "homepage": null,
       "github": "dabbott",
       "twitter": "devinaabbott",
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/b1b155f4a834012c84b4fa23308527cb?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "danielnieto",
@@ -1371,7 +1508,8 @@
       "homepage": null,
       "github": "danielnieto",
       "twitter": null,
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/b9aabe241a82734c25e15a0fe1bab037?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "michalbures",
@@ -1381,7 +1519,8 @@
       "homepage": "http://bures.io",
       "github": "MichalBures",
       "twitter": "MichalBures",
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/b30bd10039280d16829f2b6fbd1b26cc?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "jhand",
@@ -1391,7 +1530,8 @@
       "homepage": "http://joeahand.com",
       "github": "joehand",
       "twitter": "joeahand",
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/eea7782ff4d0f4acea277d10b11893db?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "binarymuse",
@@ -1401,7 +1541,8 @@
       "homepage": "https://github.com/BinaryMuse",
       "github": "BinaryMuse",
       "twitter": "BinaryMuse",
-      "freenode": "BinaryMuse"
+      "freenode": "BinaryMuse",
+      "gravatar": "https://gravatar.com/avatar/8283f4bb35589863b3b1e0f8ac0968a0?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "bret",
@@ -1411,7 +1552,8 @@
       "homepage": "http://bret.io",
       "github": "bcomnes",
       "twitter": "uhhyeahbret",
-      "freenode": "bret"
+      "freenode": "bret",
+      "gravatar": "https://gravatar.com/avatar/8d8b82740cb7ca994449cccd1dfdef5f?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "ungoldman",
@@ -1421,7 +1563,8 @@
       "homepage": "http://ungoldman.com",
       "github": "ungoldman",
       "twitter": "ungoldman",
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/97c8db2d2bd598103f47599f7af8c825?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "retyped",
@@ -1431,7 +1574,8 @@
       "homepage": null,
       "github": "retyped",
       "twitter": null,
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/5c994cc8017ec00753e9dc860931bb77?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     },
     {
       "handle": "ehsalazar",
@@ -1441,8 +1585,8 @@
       "homepage": null,
       "github": "ehsalazar",
       "twitter": "ehsalazar",
-      "freenode": null
+      "freenode": null,
+      "gravatar": "https://gravatar.com/avatar/98014649279dcef04f67ee307e3b9597?size=200&default=https%3A%2F%2Fcldup.com%2FFIjisumbxl.png"
     }
-  ],
-  "basename": "prolific_package_authors"
+  ]
 }

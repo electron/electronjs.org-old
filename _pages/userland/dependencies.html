@@ -4,16 +4,14 @@ permalink: /userland/dependencies/
 layout: default
 ---
 
+{% assign report = site.data.userland.dependencies %}
 {% include userland_header.html %}
+
 
 <section class='page-section'>
   <div class='container-narrow'>
-    <h2 id="dependencies">Top dependencies in Electron apps</h2>
-
-    <p>
-      This list is constructed by analyzing the <code>dependencies</code>
-      of every public GitHub repository that also depends on Electron.
-    </p>
+    <h2>{{report.title}}</h2>
+    <p>{{report.description}}</p>
 
     <div id="package-list">
       <input class="search" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Filter...">

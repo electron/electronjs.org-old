@@ -1,0 +1,35 @@
+---
+title: Userland Package Authors
+permalink: /userland/package_authors
+layout: default
+---
+
+{% assign report = site.data.userland.package_authors %}
+{% include userland_header.html %}
+
+<section class='page-section'>
+  <div class='container-narrow'>
+    <h2>{{report.title}}</h2>
+    <p>{{report.description}}</p>
+
+    <div id="package-author-list">
+      <!-- <div>
+        <input class="search" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Filter...">
+      </div> -->
+
+      <ul class="list author-list">
+        {% for author in report.collection %}
+          <li class="author-list-item">
+            <a class="author-list-item-avatar-wrapper" href="http://npm.im/~{{author.handle}}">
+              <img src="{{author.gravatar}}">
+            </a>
+            <div class="author-list-item-details">
+              <a href="http://npm.im/~{{author.handle}}">{{author.handle}}</a><br>
+              <span class="small">{{author.packages}} packages</span>
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>

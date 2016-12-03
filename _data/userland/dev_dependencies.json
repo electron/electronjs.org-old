@@ -1,6 +1,7 @@
 {
-  "title": "Popular App Development Dependencies",
-  "description": "A list of the top npm packages most often listed as `devDependencies` in Electron apps.",
+  "slug": "dev_dependencies",
+  "title": "App Development Dependencies",
+  "description": "This list highlights npm packages that are most often listed as `devDependencies` in apps that also depend on `electron` or `electron-prebuilt`.",
   "collectionType": "Package",
   "collection": [
     {
@@ -19679,6 +19680,5 @@
         }
       ]
     }
-  ],
-  "basename": "popular_app_development_dependencies"
+  ]
 }

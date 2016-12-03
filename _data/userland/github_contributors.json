@@ -1,6 +1,7 @@
 {
-  "title": "Prolific GitHub Contributors",
-  "description": "GitHub users that have contributed to the most Electron-related repositories.",
+  "slug": "github_contributors",
+  "title": "GitHub Contributors",
+  "description": "GitHub users who have contributed to numerous Electron-related repositories.",
   "collectionType": "GithubUser",
   "collection": [
     {
@@ -2003,6 +2004,5 @@
       "user": "ruiming",
       "repos": 3
     }
-  ],
-  "basename": "prolific_github_contributors"
+  ]
 }

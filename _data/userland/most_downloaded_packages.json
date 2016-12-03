@@ -1,5 +1,6 @@
 {
-  "title": "Most-downloaded npm Packages",
+  "slug": "most_downloaded_packages",
+  "title": "Most Downloaded Packages",
   "description": "Electron-related npm packages that are downloaded a lot.",
   "collectionType": "Package",
   "collection": [
@@ -19143,6 +19144,5 @@
         }
       ]
     }
-  ],
-  "basename": "most_downloaded_npm_packages"
+  ]
 }

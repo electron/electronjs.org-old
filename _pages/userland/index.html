@@ -9,44 +9,32 @@ layout: default
 <section class='page-section'>
   <div class='container-narrow'>
     <p>
-      Userland is where people in software communities come together
-      to share tools and ideas.
+      "Userland" is where people in software communities come together to share tools and ideas.
+      The term originated in the Unix community, where it referred to
+      any program that ran outside of the kernel, but today it means something more.
+      When people in today's Javascript community refer to userland, they're usually
+      talking about the <a href="http://npm.im">npm package registry</a>. This is where the majority of experimentation and
+      innovation happens, while Node and the JavaScript language (like the Unix kernel) retain
+      a relatively small and stable set of core features.
     </p>
 
     <p>
-      The term "userland" originated in the Unix community, where it referred to
-      any program that ran outside of the "kernel". The kernel is the core of
-      an operating system, and a bridge between applications and the actual
-      data processing done at the hardware level.
-
-      More recently, userland has become an important term in the JavaScript
-      community, where Node.js is the core, and the npm package registry 
-      is "userland".
-    </p>
-
-    <p>
-      Like Node, Electron is focused on having a small set of APIs that provide
-      all the core features needed for developing multi-platform Desktop applications.
+      Like Node, Electron has a small set of APIs that provide
+      the core features needed for developing multi-platform Desktop applications.
       This design philosophy allows Electron to remain a flexible tool without being
       overly prescriptive about how it should be used. Userland enables users to
       create and share tools that provide additional functionality on top of what is
       available in Electron "core".
     </p>
 
-    <h2 id="dependencies">Top dependencies in Electron apps</h2>
-
-    <p>
-      This list is constructed by analyzing the <code>dependencies</code>
-      of every public GitHub repository that also depends on Electron.
-    </p>
-
-    {% for package in site.data.userland.dependencies.packages limit:30 %}
-      {% include package_list.html %}
+    {% for thing in site.data.userland %}
+      {% for report in thing %}
+        <a href="{{site.baseurl}}/userland/{{report.slug}}">
+          <h3>{{report.title}}</h3>
+        </a>
+        <p>{{report.description}}</p>
+      {% endfor %}
     {% endfor %}
-
-    <p>
-      <a href="{{site.baseurl}}/userland/dependencies">View the top {{site.data.userland.dependencies.packages.length}} npm packages</a>
-    </p>
 
   </div>
 </section>

@@ -1,17 +1,27 @@
-<div class='subtron text-left'>
+{% capture userland_home %}{{ page.url | split: "/" | last == 'userland' }}{% endcapture %}
+
+<div class='subtron'>
   <div class='container-narrow'>
-    <h1>Electron Userland</h1>
-    <h4 class="docs-breadcrumbs">
-      <a href="/userland/">Home</a>
-      <span class="docs-breadcrumbs-divider">/</span>
-      <a href="/userland/dependencies/">Dependencies</a>
-      <span class="docs-breadcrumbs-divider">/</span>
-      <a href="#">Dev Dependencies</a>
-      <span class="docs-breadcrumbs-divider">/</span>
-      <a href="#">Apps</a>
-      <span class="docs-breadcrumbs-divider">/</span>
-      <a href="#">Contributors</a>
-    </h4>
+    <a href="{{site.baseurl}}/userland">
+      <h1>Electron Userland</h1>
+    </a>
+
+    {% if page.title == 'Userland' %}
+      <p class="lead mb-3">
+        The people, apps, and packages of Electron's open-source ecosystem.
+      </p>
+    {% else %}
+      <h4 class="docs-breadcrumbs">
+        <a href="/userland/">Home</a>
+        <span class="docs-breadcrumbs-divider">/</span>
+        <a href="#">Apps</a>
+        <span class="docs-breadcrumbs-divider">/</span>
+        <a href="/userland/packages/">Packages</a>
+        <span class="docs-breadcrumbs-divider">/</span>
+        <a href="#">People</a>
+      </h4>
+    {% endif %}
+
   </div>
 </div>
 
@@ -38,4 +48,42 @@
   .top-dependency.expanded .details {
     display: block;
   }
+</style>
+
+<style>
+
+  .author-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .author-list-item {
+    /*background: yellow;*/
+    width: 140px;
+    margin: 0;
+    padding: 15px;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .author-list-item-avatar-wrapper {
+    display: block;
+  }
+
+  .author-list-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+
+  .author-list-item-details {
+    line-height: 1;
+  }
+
+  .small {
+    font-size: 80%;
+    opacity: 0.7;
+  }
+
 </style>
