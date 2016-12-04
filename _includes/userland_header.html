@@ -1,0 +1,113 @@
+<div class='subtron text-left'>
+  <div class='container'>
+    <a href="{{site.baseurl}}/userland">
+      <h1>Electron Userland</h1>
+    </a>
+
+    {% if page.title == 'Userland' %}
+      <p class="lead mb-3">
+        The people, apps, and packages of Electron's open-source ecosystem.
+      </p>
+    {% elsif report %}
+      <h4 class="docs-breadcrumbs">
+        <a href="/userland/">Home</a>
+        <span class="docs-breadcrumbs-divider">/</span>
+        <a href="/userland/{{report.slug}}">{{report.title}}</a>
+      </h4>
+    {% endif %}
+
+  </div>
+</div>
+
+<script src="{{site.baseurl}}/js/vendor/list.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', createFilterList)
+
+  function createFilterList () {
+    var list = document.querySelector('.filterable-list')
+    if (!list || !list.parentElement) return
+    var opts = {
+      listClass: 'filterable-list',
+      searchClass: 'filterable-list-input',
+      valueNames: [
+        'package-name',
+        'package-description',
+        'package-keywords',
+        'package-repository',
+        'repo-name',
+        'repo-description',
+        'repo-keywords'
+      ]
+    }
+    new List(list.parentElement.getAttribute('id'), opts)
+  }
+</script>
+
+<style media="screen">
+
+  /* Filterable Lists (in /userland) */
+
+  .filterable-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .filterable-list-input {
+    width: 100%;
+    padding: 6px 4px;
+    border: 1px solid #CCC;
+    border-radius: 2px;
+    margin: 10px 0;
+  }
+
+  .filterable-list-keyword {
+    font-size: 80%;
+    opacity: 0.6;
+  }
+
+  /* Author List (for npm and GitHub users in /userland) */
+
+  .author-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .author-list-item {
+    width: 156px;
+    margin: 0;
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .author-list-item-avatar-wrapper {
+    display: block;
+  }
+
+  .author-list-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+
+  .author-list-item-details {
+    line-height: 1;
+  }
+
+  /* Utility classes */
+
+  .small {
+    font-size: 80%;
+    opacity: 0.7;
+  }
+
+  .truncate {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+</style>
