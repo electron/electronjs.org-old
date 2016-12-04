@@ -946,7 +946,7 @@
   icon: "markdownify.png"
 -
   name: "Etcher"
-  description: "Burn images to SD cards & USB drives, safe & easy"
+  description: "Flash OS images to SD cards & USB drives, safely and easily."
   website: "http://www.etcher.io/"
   repository: "https://github.com/resin-io/etcher"
   keywords:
