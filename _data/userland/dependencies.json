@@ -1,7 +1,7 @@
 {
   "slug": "dependencies",
   "title": "App Dependencies",
-  "description": "We searched every public repository on GitHub to compile this list of npm packages that are most often listed as `dependencies` in apps that also depend on `electron` or `electron-prebuilt`.",
+  "description": "Packages most often listed as `dependencies` in apps that also depend on `electron` or `electron-prebuilt`",
   "collectionType": "Package",
   "collection": [
     {

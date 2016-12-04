@@ -27,14 +27,18 @@ layout: default
       available in Electron "core".
     </p>
 
+    <ul>
     {% for thing in site.data.userland %}
       {% for report in thing %}
-        <a href="{{site.baseurl}}/userland/{{report.slug}}">
-          <h3>{{report.title}}</h3>
-        </a>
-        <p>{{report.description}}</p>
+        {% if report.title %}
+          <li>
+            <a href="{{site.baseurl}}/userland/{{report.slug}}">{{report.title}}</a>
+            - {{report.description}}
+          </li>
+        {% endif %}
       {% endfor %}
     {% endfor %}
+    </ul>
 
   </div>
 </section>

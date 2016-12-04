@@ -20,15 +20,8 @@
 </div>
 
 <script src="{{site.baseurl}}/js/vendor/list.min.js"></script>
-
 <script>
   document.addEventListener('DOMContentLoaded', createFilterList)
-
-  document.addEventListener('click', function (event) {
-    if (event.target.classList.contains('filterable-list-keyword')) {
-      event.preventDefault()
-    }
-  })
 
   function createFilterList () {
     var list = document.querySelector('.filterable-list')
@@ -49,6 +42,8 @@
 
 <style media="screen">
 
+  /* Filterable Lists (in /userland) */
+
   .filterable-list {
     list-style: none;
     margin: 0;
@@ -67,6 +62,8 @@
     font-size: 80%;
     opacity: 0.6;
   }
+
+  /* Author List (for npm and GitHub users in /userland) */
 
   .author-list {
     list-style: none;
@@ -96,9 +93,18 @@
     line-height: 1;
   }
 
+  /* Utility classes */
+
   .small {
     font-size: 80%;
     opacity: 0.7;
+  }
+
+  .truncate {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
 </style>
