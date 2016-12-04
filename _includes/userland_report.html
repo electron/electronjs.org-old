@@ -26,8 +26,31 @@
       </div>
     {% endif %}
 
+    {% if report.collectionType == 'Repository' %}
+      <div id="{{report.slug}}">
+        <input class="filterable-list-input" placeholder="Filter apps name, description, keyword, author, repository URL..." autofocus="on" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+
+        <ul class="filterable-list">
+          {% for repo in report.collection %}
+            <li>
+              <a class="repo-name" href="{{repo.htmlUrl}}">{{repo.fullName}}</a>
+              {% if repo.description %}
+                - <span class="repo-description">{{repo.description}}</span>
+              {% endif %}
+
+              {% if repo.packageJSON and repo.packageJSON.keywords %}
+                <span class="repo-keywords" style="display:none">
+                  {% for keyword in repo.packageJSON.keywords %}{{keyword}}&nbsp;{% endfor %}
+                </span>
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+
     {% if report.collectionType == 'GithubUser' %}
-      <ul class="list author-list">
+      <ul class="author-list">
         {% assign blacklist = 'greenkeeperio-bot|ember-tomster|gitter-badger|invalid-email-address|waffle-iron' | split: '|' %}
 
         {% for author in report.collection %}

@@ -1,7 +1,7 @@
 {
   "slug": "github_contributors",
   "title": "GitHub Contributors",
-  "description": "People who have contributed to numerous Electron-related GitHub repositories.",
+  "description": "GitHub users who have contributed to numerous Electron-related GitHub repositories.",
   "collectionType": "GithubUser",
   "collection": [
     {

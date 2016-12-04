@@ -1,7 +1,7 @@
 {
   "slug": "dev_dependencies",
   "title": "App Development Dependencies",
-  "description": "Packages most often listed as `devDependencies` in apps that also depend on `electron` or `electron-prebuilt`",
+  "description": "Packages most often listed as `devDependencies` in Electron apps.",
   "collectionType": "Package",
   "collection": [
     {
