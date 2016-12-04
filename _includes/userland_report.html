@@ -1,0 +1,43 @@
+<section class='page-section'>
+  <div class='container'>
+    <p>{{report.description}}</p>
+
+    {% if report.collectionType == 'Package' %}
+      <div id="{{report.slug}}">
+
+        <input class="filterable-list-input" placeholder="Filter packages by name, description, keyword, repo..." tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+
+        <ul class="filterable-list">
+          {% for package in report.collection %}
+            <li>
+              <a class="package-name" href="http://npm.im/{{package.name}}">{{package.name}}</a>
+              {% if package.description %}
+                - <span class="package-description">{{package.description}}</span>
+              {% endif %}
+              {% for keyword in package.keywords %}
+                <a href="#" class="filterable-list-keyword">{{keyword}}</a>{% unless forloop.last == true %}, {% endunless %}
+              {% endfor %}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+
+    {% if report.collectionType == 'npmUser' %}
+      <ul class="list author-list">
+        {% for author in report.collection %}
+          <li class="author-list-item">
+            <a class="author-list-item-avatar-wrapper" href="http://npm.im/~{{author.handle}}">
+              <img src="{{author.gravatar}}">
+            </a>
+            <div class="author-list-item-details">
+              <a href="http://npm.im/~{{author.handle}}">{{author.handle}}</a><br>
+              <span class="small">{{author.packages}} packages</span>
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+
+  </div>
+</section>

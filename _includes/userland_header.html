@@ -1,7 +1,5 @@
-{% capture userland_home %}{{ page.url | split: "/" | last == 'userland' }}{% endcapture %}
-
-<div class='subtron'>
-  <div class='container-narrow'>
+<div class='subtron text-left'>
+  <div class='container'>
     <a href="{{site.baseurl}}/userland">
       <h1>Electron Userland</h1>
     </a>
@@ -10,15 +8,11 @@
       <p class="lead mb-3">
         The people, apps, and packages of Electron's open-source ecosystem.
       </p>
-    {% else %}
+    {% elsif report %}
       <h4 class="docs-breadcrumbs">
         <a href="/userland/">Home</a>
         <span class="docs-breadcrumbs-divider">/</span>
-        <a href="#">Apps</a>
-        <span class="docs-breadcrumbs-divider">/</span>
-        <a href="/userland/packages/">Packages</a>
-        <span class="docs-breadcrumbs-divider">/</span>
-        <a href="#">People</a>
+        <a href="/userland/{{report.slug}}">{{report.title}}</a>
       </h4>
     {% endif %}
 
@@ -26,31 +20,53 @@
 </div>
 
 <script src="{{site.baseurl}}/js/vendor/list.min.js"></script>
-<script src="{{site.baseurl}}/js/toggle-package-list.js"></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', createFilterList)
+
+  document.addEventListener('click', function (event) {
+    if (event.target.classList.contains('filterable-list-keyword')) {
+      event.preventDefault()
+    }
+  })
+
+  function createFilterList () {
+    var list = document.querySelector('.filterable-list')
+    if (!list || !list.parentElement) return
+    var opts = {
+      listClass: 'filterable-list',
+      searchClass: 'filterable-list-input',
+      valueNames: [
+        'package-name',
+        'package-description',
+        'package-keywords',
+        'package-repository'
+      ]
+    }
+    new List(list.parentElement.getAttribute('id'), opts)
+  }
+</script>
 
 <style media="screen">
-  .top-dependency {
-    padding: 8px;
-  }
 
-  .top-dependency p {
+  .filterable-list {
+    list-style: none;
     margin: 0;
+    padding: 0;
   }
 
-  .top-dependency.expanded {
-    background: #f6f8f8;
+  .filterable-list-input {
+    width: 100%;
+    padding: 6px 4px;
+    border: 1px solid #CCC;
+    border-radius: 2px;
+    margin: 10px 0;
   }
 
-  .top-dependency .details {
-    display: none;
+  .filterable-list-keyword {
+    font-size: 80%;
+    opacity: 0.6;
   }
-
-  .top-dependency.expanded .details {
-    display: block;
-  }
-</style>
-
-<style>
 
   .author-list {
     list-style: none;
@@ -59,10 +75,9 @@
   }
 
   .author-list-item {
-    /*background: yellow;*/
-    width: 140px;
+    width: 156px;
     margin: 0;
-    padding: 15px;
+    padding: 10px;
     display: inline-block;
     text-align: center;
   }

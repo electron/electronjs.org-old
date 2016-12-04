@@ -42,10 +42,10 @@
   background-color: $sub-bg-color;
 
   padding: $spacer3;
-  @include breakpoint(sm) { padding: $spacer4; }
-  @include breakpoint(md) { padding: $spacer5; }
-  @include breakpoint(lg) { padding: $spacer6; }
-  @include breakpoint(xl) { padding: $spacer8; }
+  @include breakpoint(sm) { padding: $spacer3; }
+  @include breakpoint(md) { padding: $spacer4; }
+  @include breakpoint(lg) { padding: $spacer5; }
+  @include breakpoint(xl) { padding: $spacer6; }
 
   h1 {
     margin: 0 0 .3em 0;
