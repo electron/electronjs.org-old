@@ -2284,3 +2284,14 @@
     - "productivity"
     - "3D"
   icon: "grabcad-print.png"
+-
+  name: "GIFBar"
+  description: "A system tray icon that helps you find the perfect GIF"
+  website: "https://github.com/dcrousso/GIFBar#readme"
+  repository: "https://github.com/dcrousso/GIFBar"
+  keywords:
+    - "Electron"
+    - "GIFs"
+    - "search"
+  license: "MIT"
+  icon: "gifbar.png"
