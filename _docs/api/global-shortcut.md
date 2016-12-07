@@ -1,5 +1,5 @@
 ---
-version: v1.4.10
+version: v1.4.11
 category: API
 redirect_from:
     - /docs/v0.24.0/api/global-shortcut/
