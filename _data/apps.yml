@@ -2284,3 +2284,11 @@
     - "productivity"
     - "3D"
   icon: "grabcad-print.png"
+-
+  name: "ffftp"
+  description: "A minimal FTP client for casual users"
+  website: "http://ffftp.site"
+  keywords:
+    - "ftp"
+    - "development"
+  icon: "ffftp.png"
