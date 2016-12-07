@@ -1,5 +1,5 @@
 ---
-version: v1.4.10
+version: v1.4.11
 category: API
 redirect_from:
     - /docs/v0.24.0/api/crash-reporter/
@@ -82,21 +82,27 @@ The `crashReporter` module has the following methods:
   * `companyName` String (optional)
   * `submitURL` String - URL that crash reports will be sent to as POST.
   * `productName` String (optional) - Defaults to `app.getName()`.
-  * `autoSubmit` Boolean (optional) - Send the crash report without user interaction.
+  * `uploadToServer` Boolean (optional) _macOS_ - Whether crash reports should be sent to the server
     Default is `true`.
   * `ignoreSystemCrashHandler` Boolean (optional) - Default is `false`.
   * `extra` Object (optional) - An object you can define that will be sent along with the
     report. Only string properties are sent correctly, Nested objects are not
     supported.
 
-You are required to call this method before using other `crashReporter`
-APIs.
+You are required to call this method before using any other `crashReporter` APIs
+and in each process (main/renderer) from which you want to collect crash reports.
+You can pass different options to `crashReporter.start` when calling from different processes.
 
-**Note:** On macOS, Electron uses a new `crashpad` client, which is different
-from `breakpad` on Windows and Linux. To enable the crash collection feature,
-you are required to call the `crashReporter.start` API to initialize `crashpad`
-in the main process and in each renderer process from which you wish to collect
-crash reports.
+**Note:** On Windows and Linux, Electron uses `breakpad` for crash collection and reporting.
+Crashes can be collected from the main and renderer process, but not from the child processes 
+created via the `child_process` module.
+
+**Note:** On macOS, Electron uses a new `crashpad` client for crash collection and reporting.
+Crashes can be collected from the main, renderer and any of the child processes created via the `child_process` module.
+If you want to enable crash reporting, initializing `crashpad` from the main process using `crashReporter.start` is required 
+regardless of which process you want to collect crashes from. Once initialized this way, the crashpad handler collects
+crashes from all processes. You still have to call `crashReporter.start` from the renderer process, otherwise crashes from
+renderer processes will get reported without `companyName`, `productName` or any of the `extra` information.
 
 ### `crashReporter.getLastCrashReport()`
 
@@ -111,6 +117,22 @@ Returns [`CrashReport[]`](http://electron.atom.io/docs/api/structures/crash-repo
 
 Returns all uploaded crash reports. Each report contains the date and uploaded
 ID.
+
+### `crashReporter.getUploadToServer()` _macOS_
+
+Returns `Boolean` - Whether reports should be submitted to the server.  Set through
+the `start` method or `setUploadToServer`.
+
+**Note:** This API can only be called from the main process.
+
+### `crashReporter.setUploadToServer(uploadToServer)` _macOS_
+
+* `uploadToServer` Boolean _macOS_ - Whether reports should be submitted to the server
+
+This would normally be controlled by user preferences. This has no effect if
+called before `start` is called.
+
+**Note:** This API can only be called from the main process.
 
 ## Crash Report Payload
 

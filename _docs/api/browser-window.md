@@ -1,5 +1,5 @@
 ---
-version: v1.4.10
+version: v1.4.11
 category: API
 redirect_from:
     - /docs/v0.24.0/api/browser-window/
@@ -724,6 +724,10 @@ height areas you have within the overall content view.
 
 Uses [Quick Look][quick-look] to preview a file at a given path.
 
+#### `win.closeFilePreview()` _macOS_
+
+Closes the currently open [Quick Look][quick-look] panel.
+
 #### `win.setBounds(bounds[, animate])`
 
 * `bounds` [Rectangle](http://electron.atom.io/docs/api/structures/rectangle)
@@ -1151,6 +1155,22 @@ the entire window by specifying an empty region:
 Sets the toolTip that is displayed when hovering over the window thumbnail
 in the taskbar.
 
+#### `win.setAppDetails(options)` _Windows_
+
+* `options` Object
+  * `appId` String (optional) - Window's [App User Model ID](https://msdn.microsoft.com/en-us/library/windows/desktop/dd391569(v=vs.85).aspx).
+    It has to be set, otherwise the other options will have no effect.
+  * `appIconPath` String (optional) - Window's [Relaunch Icon](https://msdn.microsoft.com/en-us/library/windows/desktop/dd391573(v=vs.85).aspx).
+  * `appIconIndex` Integer (optional) - Index of the icon in `appIconPath`.
+    Ignored when `appIconPath` is not set. Default is `0`.
+  * `relaunchCommand` String (optional) - Window's [Relaunch Command](https://msdn.microsoft.com/en-us/library/windows/desktop/dd391571(v=vs.85).aspx).
+  * `relaunchDisplayName` String (optional) - Window's [Relaunch Display Name](https://msdn.microsoft.com/en-us/library/windows/desktop/dd391572(v=vs.85).aspx).
+
+Sets the properties for the window's taskbar button.
+
+**Note:** `relaunchCommand` and `relaunchDisplayName` must always be set
+together. If one of those properties is not set, then neither will be used.
+
 #### `win.showDefinitionForSelection()` _macOS_
 
 Same as `webContents.showDefinitionForSelection()`.
@@ -1239,6 +1259,12 @@ Returns `BrowserWindow` - The parent window.
 #### `win.getChildWindows()`
 
 Returns `BrowserWindow[]` - All child windows.
+
+#### `win.setAutoHideCursor(autoHide)` _macOS_
+
+* `autoHide` Boolean
+
+Controls whether to hide cursor when typing.
 
 #### `win.setVibrancy(type)` _macOS_
 

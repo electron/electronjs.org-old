@@ -1,5 +1,5 @@
 ---
-version: v1.4.10
+version: v1.4.11
 category: Tutorial
 redirect_from:
     - /docs/v0.24.0/tutorial/planned-breaking-changes/
@@ -79,6 +79,23 @@ clipboard.readHTML()
 clipboard.writeHtml()
 // Replace with
 clipboard.writeHTML()
+```
+
+## `crashReporter`
+
+```js
+// Deprecated
+crashReporter.start({
+  companyName: 'Crashly',
+  submitURL: 'https://crash.server.com',
+  autoSubmit: true
+})
+// Replace with
+crashReporter.start({
+  companyName: 'Crashly',
+  submitURL: 'https://crash.server.com',
+  uploadToServer: true
+})
 ```
 
 ## `nativeImage`
