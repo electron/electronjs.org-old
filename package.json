@@ -17,6 +17,7 @@
     "test": "tape spec/*.js | tap-spec",
     "rels-vers": "script/releases && script/versions",
     "docs": "script/docs",
+    "apps": "npm i -D electron/electron-apps && cp node_modules/electron-apps/index.json _data/apps.json && cp node_modules/electron-apps/apps/**/*.png images/apps",
     "userland": "rm -f _data/userland/* && cp -r node_modules/electron-userland-reports/reports/* _data/userland/",
     "latest": "npm run rels-vers && npm run docs"
   },
@@ -39,6 +40,7 @@
   },
   "devDependencies": {
     "cheerio": "^0.20.0",
+    "electron-apps": "github:electron/electron-apps",
     "electron-userland-reports": "^1.5.0",
     "grunt": "^0.4.5",
     "grunt-cli": "^0.1.13",
