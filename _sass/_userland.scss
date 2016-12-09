@@ -7,9 +7,12 @@ ul.report-list {
 }
 
 .report-list > li {
-  width: 33%;
   display: inline-block;
   vertical-align: top;
+  @include breakpoint(sm) { width: 100%; }
+  @include breakpoint(md) { width: 49%; }
+  @include breakpoint(lg) { width: 33%; }
+  @include breakpoint(xl) { width: 24%; }
 }
 
 .report-list > li .inner {
