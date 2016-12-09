@@ -2284,3 +2284,11 @@
     - "productivity"
     - "3D"
   icon: "grabcad-print.png"
+-
+  name: "OpenBazaar"
+  description: "Decentralized p2p marketplace for Bitcoin"
+  website: "https://openbazaar.org"
+  keywords:
+    - "ecommerce"
+    - "bitcoin"
+  icon: "openbazaar.png"
