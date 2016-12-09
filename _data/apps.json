@@ -4,7 +4,6 @@
     "name": "1Clipboard",
     "description": "A universal clipboard managing app that makes it easy to access your clipboard from anywhere on any device",
     "website": "http://1clipboard.io",
-    "featuredOnHomepage": true,
     "icon": "1clipboard-icon.png"
   },
   {
@@ -127,7 +126,6 @@
       "github"
     ],
     "license": "MIT",
-    "featuredOnHomepage": true,
     "icon": "atom-icon.png"
   },
   {
@@ -153,7 +151,6 @@
     "description": "An experimental P2P browser",
     "website": "https://beakerbrowser.com",
     "repository": "https://github.com/beakerbrowser/beaker",
-    "featuredOnHomepage": true,
     "icon": "beaker-browser-icon.png"
   },
   {
@@ -232,7 +229,6 @@
     "name": "Brave Browser",
     "description": "Web browser that automatically blocks ads and trackers",
     "website": "https://brave.com/",
-    "featuredOnHomepage": true,
     "icon": "brave-browser-icon.png"
   },
   {
@@ -255,7 +251,6 @@
     "name": "Caret",
     "description": "Markdown editor for Mac / Windows / Linux",
     "website": "http://caret.io",
-    "featuredOnHomepage": true,
     "icon": "caret-icon.png"
   },
   {
@@ -330,7 +325,6 @@
       "database",
       "design"
     ],
-    "featuredOnHomepage": true,
     "icon": "collectie-icon.png"
   },
   {
@@ -665,7 +659,6 @@
     "name": "Flow",
     "description": "Task Management Software That Doesn't Feel Like Work",
     "website": "https://www.getflow.com/solutions/startups",
-    "featuredOnHomepage": true,
     "icon": "flow-icon.png"
   },
   {
@@ -798,7 +791,6 @@
     "name": "Ghost",
     "description": "A professional publishing platform",
     "website": "https://ghost.org",
-    "featuredOnHomepage": true,
     "icon": "ghost-icon.png"
   },
   {
@@ -832,7 +824,6 @@
       "programming",
       "productivity"
     ],
-    "featuredOnHomepage": true,
     "icon": "gitkraken-icon.png"
   },
   {
@@ -997,7 +988,6 @@
       "js"
     ],
     "license": "MIT",
-    "featuredOnHomepage": true,
     "icon": "hyper-icon.png"
   },
   {
@@ -1128,7 +1118,6 @@
     "name": "JIBO",
     "description": "The world's first social robot",
     "website": "https://www.jibo.com",
-    "featuredOnHomepage": true,
     "icon": "jibo-icon.png"
   },
   {
@@ -1165,7 +1154,6 @@
       "video"
     ],
     "license": "MIT",
-    "featuredOnHomepage": true,
     "icon": "kap-icon.png"
   },
   {
@@ -1180,7 +1168,6 @@
     "name": "Kitematic",
     "description": "Run containers through a simple, yet powerful graphical user interface",
     "website": "https://kitematic.com",
-    "featuredOnHomepage": true,
     "icon": "kitematic-icon.png"
   },
   {
@@ -1307,7 +1294,6 @@
       "PowerPoint"
     ],
     "license": "MIT",
-    "featuredOnHomepage": true,
     "icon": "marp-icon.png"
   },
   {
@@ -1403,7 +1389,6 @@
       "open source"
     ],
     "license": "MIT",
-    "featuredOnHomepage": true,
     "icon": "mojibar-icon.png"
   },
   {
@@ -1487,7 +1472,6 @@
       "development"
     ],
     "license": "MIT",
-    "featuredOnHomepage": true,
     "icon": "now-icon.png"
   },
   {
@@ -1517,7 +1501,6 @@
     "name": "Nylas N1",
     "description": "The extensible, open source mail app",
     "website": "https://www.nylas.com",
-    "featuredOnHomepage": true,
     "icon": "nylas-n1-icon.png"
   },
   {
@@ -1810,7 +1793,6 @@
       "instagram"
     ],
     "license": "MIT",
-    "featuredOnHomepage": true,
     "icon": "ramme-icon.png"
   },
   {
@@ -1980,7 +1962,6 @@
       "sync"
     ],
     "license": "GPLv2",
-    "featuredOnHomepage": true,
     "icon": "simplenote-icon.png"
   },
   {
@@ -1988,7 +1969,6 @@
     "name": "Slack",
     "description": "A messaging app for teams",
     "website": "https://slack.com",
-    "featuredOnHomepage": true,
     "icon": "slack-icon.png"
   },
   {
@@ -2137,7 +2117,6 @@
       "tool",
       "productivity"
     ],
-    "featuredOnHomepage": true,
     "icon": "svgsus-icon.png"
   },
   {
@@ -2422,7 +2401,6 @@
     "description": "Open source code editor developed by Microsoft",
     "website": "https://code.visualstudio.com",
     "license": "MIT",
-    "featuredOnHomepage": true,
     "icon": "visual-studio-code-icon.png"
   },
   {
@@ -2459,7 +2437,6 @@
     "name": "WebTorrent",
     "description": "The streaming torrent client",
     "website": "https://webtorrent.io/desktop",
-    "featuredOnHomepage": true,
     "icon": "webtorrent-icon.png"
   },
   {
@@ -2516,7 +2493,6 @@
     "name": "WordPress.com",
     "description": "A desktop app for Wordpress",
     "website": "https://desktop.wordpress.com",
-    "featuredOnHomepage": true,
     "icon": "wordpress-com-icon.png"
   },
   {

@@ -170,7 +170,7 @@ $ npm install &amp;&amp; npm start</code></pre>
       <div>
         <div class="mb-4">
           {% for app in site.data.apps %}
-            {% if app.featuredOnHomepage %}
+            {% if site.data.featured_apps contains app.slug %}
               {% include featured_app.html %}
             {% endif %}
           {% endfor %}
