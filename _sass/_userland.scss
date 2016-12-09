@@ -1,3 +1,43 @@
+/* Userland List Cards */
+
+ul.report-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.report-list > li {
+  width: 33%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.report-list > li .inner {
+  display: block;
+  margin: 8px;
+  padding: 20px;
+  background-color: #f6f8f8;
+  border: 1px solid #F0F0F0;
+  border-radius: 5px;
+  min-height: 140px;
+}
+
+.report-list h3 {
+  text-align: center;
+  font-size: 18px;
+  color: #00739f;
+  margin: 0;
+}
+
+.report-list p {
+  opacity: 0.8;
+  line-height: 1.4;
+  font-size: 90%;
+  padding: 10px 10px 0 10px;
+  color: $main-link-color;
+  text-decoration: none !important;
+}
+
 /* Filterable Lists (in /userland) */
 
 .filterable-list {

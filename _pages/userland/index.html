@@ -29,13 +29,15 @@ layout: default
 
     <h2>Reports</h2>
 
-    <ul>
+    <ul class="report-list">
     {% for thing in site.data.userland %}
       {% for report in thing %}
         {% if report.title %}
           <li>
-            <a href="{{site.baseurl}}/userland/{{report.slug}}">{{report.title}}</a>
-            - {{report.description}}
+            <a href="{{site.baseurl}}/userland/{{report.slug}}" class="inner">
+              <h3>{{report.title}}</h3>
+              <p>{{report.description}}</p>
+            </a>
           </li>
         {% endif %}
       {% endfor %}
