@@ -1,0 +1,2594 @@
+[
+  {
+    "slug": "1clipboard",
+    "name": "1Clipboard",
+    "description": "A universal clipboard managing app that makes it easy to access your clipboard from anywhere on any device",
+    "website": "http://1clipboard.io",
+    "featuredOnHomepage": true,
+    "icon": "1clipboard-icon.png"
+  },
+  {
+    "slug": "5eclient",
+    "name": "5EClient",
+    "description": "5EPlay CSGO Client",
+    "website": "https://www.5eplay.com/",
+    "keywords": [
+      "CSGO",
+      "PUG"
+    ],
+    "icon": "5eclient-icon.png"
+  },
+  {
+    "slug": "abricotine",
+    "name": "Abricotine",
+    "description": "Open-source Markdown editor built for desktop",
+    "website": "http://abricotine.brrd.fr",
+    "icon": "abricotine-icon.png"
+  },
+  {
+    "slug": "aipo-com",
+    "name": "Aipo.com",
+    "description": "Communication tool to optimize the connection between people",
+    "website": "http://www.aipo.com",
+    "icon": "aipo-com-icon.png"
+  },
+  {
+    "slug": "airtame",
+    "name": "Airtame",
+    "description": "Wireless HDMI",
+    "website": "https://www.airtame.com",
+    "keywords": [
+      "productivity",
+      "enterprise",
+      "wireless hdmi",
+      "collaboration",
+      "cross-platform",
+      "teamwork"
+    ],
+    "icon": "airtame-icon.png"
+  },
+  {
+    "slug": "alduin",
+    "name": "Alduin",
+    "description": "An RSS and Atom feed aggregator",
+    "website": "https://github.com/Xstoudi/alduin",
+    "repository": "https://github.com/Xstoudi/alduin",
+    "keywords": [
+      "rss",
+      "atom",
+      "aggregator",
+      "electron",
+      "react"
+    ],
+    "license": "MIT",
+    "icon": "alduin-icon.png"
+  },
+  {
+    "slug": "amium",
+    "name": "Amium",
+    "description": "A work collaboration product that brings conversation to your files.",
+    "website": "https://www.amium.com",
+    "keywords": [
+      "productivity",
+      "chat",
+      "file sync"
+    ],
+    "icon": "amium-icon.png"
+  },
+  {
+    "slug": "anatine",
+    "name": "Anatine",
+    "description": "Pristine Twitter app",
+    "website": "https://github.com/sindresorhus/anatine",
+    "repository": "https://github.com/sindresorhus/anatine",
+    "keywords": [
+      "social",
+      "news",
+      "twitter"
+    ],
+    "license": "MIT",
+    "icon": "anatine-icon.png"
+  },
+  {
+    "slug": "anote",
+    "name": "ANote",
+    "description": "A Simple Friendly Markdown Note.",
+    "website": "https://github.com/AnotherNote/anote",
+    "repository": "https://github.com/AnotherNote/anote",
+    "keywords": [
+      "Electron",
+      "React",
+      "Markdown",
+      "Note",
+      "Redux",
+      "Codemirror"
+    ],
+    "icon": "anote-icon.png"
+  },
+  {
+    "slug": "argo",
+    "name": "Argo",
+    "description": "An open source trading platform",
+    "website": "http://argo.js.org",
+    "icon": "argo-icon.png"
+  },
+  {
+    "slug": "atom",
+    "name": "Atom",
+    "description": "A hackable text editor for the 21 st Century",
+    "website": "https://atom.io",
+    "repository": "https://github.com/atom/atom",
+    "keywords": [
+      "web development",
+      "writing",
+      "editor",
+      "programming",
+      "git",
+      "github"
+    ],
+    "license": "MIT",
+    "featuredOnHomepage": true,
+    "icon": "atom-icon.png"
+  },
+  {
+    "slug": "avocode",
+    "name": "Avocode",
+    "description": "One workspace open to all designers and developers",
+    "website": "http://avocode.com",
+    "icon": "avocode-icon.png"
+  },
+  {
+    "slug": "basecamp-3",
+    "name": "Basecamp 3",
+    "description": "A place to work + a way to work",
+    "website": "https://basecamp.com",
+    "keywords": [
+      "productivity"
+    ],
+    "icon": "basecamp-3-icon.png"
+  },
+  {
+    "slug": "beaker-browser",
+    "name": "Beaker Browser",
+    "description": "An experimental P2P browser",
+    "website": "https://beakerbrowser.com",
+    "repository": "https://github.com/beakerbrowser/beaker",
+    "featuredOnHomepage": true,
+    "icon": "beaker-browser-icon.png"
+  },
+  {
+    "slug": "bearychat",
+    "name": "BearyChat",
+    "description": "Focused team communications",
+    "website": "https://bearychat.com",
+    "icon": "bearychat-icon.png"
+  },
+  {
+    "slug": "bitbloq",
+    "name": "Bitbloq",
+    "description": "Bitbloq is a tool to help children to learn and create programs for a microcontroller or robot, and to load them easily.",
+    "website": "http://bitbloq.bq.com",
+    "repository": "https://github.com/bq/bitbloq-offline",
+    "keywords": [
+      "bq",
+      "bitbloq",
+      "robotics",
+      "arduino",
+      "electronics",
+      "children"
+    ],
+    "icon": "bitbloq-icon.png"
+  },
+  {
+    "slug": "bitcrypt",
+    "name": "BitCrypt",
+    "description": "A simple File Encryption application for Windows. Encrypt your bits.",
+    "website": "https://github.com/Nazgul07/BitCrypt",
+    "repository": "https://github.com/Nazgul07/BitCrypt",
+    "license": "MIT",
+    "keywords": [
+      "encrypt",
+      "file",
+      "encryption"
+    ],
+    "icon": "bitcrypt-icon.png"
+  },
+  {
+    "slug": "blankup",
+    "name": "BlankUp",
+    "description": "Markdown editor witch clarity +1",
+    "website": "https://hoverbaum.github.io/BlankUp-Electron/",
+    "repository": "https://github.com/HoverBaum/BlankUp-Electron",
+    "keywords": [
+      "markdown",
+      "editor",
+      "productivity"
+    ],
+    "icon": "blankup-icon.png"
+  },
+  {
+    "slug": "booker",
+    "name": "Booker",
+    "description": "Text editor with the power or Markdown",
+    "website": "http://apps.meamka.me/booker/",
+    "keywords": [
+      "writing",
+      "productivity",
+      "markdown",
+      "html",
+      "pdf"
+    ],
+    "icon": "booker-icon.png"
+  },
+  {
+    "slug": "boost",
+    "name": "Boost",
+    "description": "Open-sourced note app for programmers",
+    "website": "https://b00st.io",
+    "icon": "boost-icon.png"
+  },
+  {
+    "slug": "brave-browser",
+    "name": "Brave Browser",
+    "description": "Web browser that automatically blocks ads and trackers",
+    "website": "https://brave.com/",
+    "featuredOnHomepage": true,
+    "icon": "brave-browser-icon.png"
+  },
+  {
+    "slug": "caprine",
+    "name": "Caprine",
+    "description": "Facebook Messenger app",
+    "website": "https://github.com/sindresorhus/caprine",
+    "repository": "https://github.com/sindresorhus/caprine",
+    "keywords": [
+      "chat",
+      "messaging",
+      "social",
+      "facebook"
+    ],
+    "license": "MIT",
+    "icon": "caprine-icon.png"
+  },
+  {
+    "slug": "caret",
+    "name": "Caret",
+    "description": "Markdown editor for Mac / Windows / Linux",
+    "website": "http://caret.io",
+    "featuredOnHomepage": true,
+    "icon": "caret-icon.png"
+  },
+  {
+    "slug": "catlight",
+    "name": "CatLight",
+    "description": "Desktop build status notifications",
+    "website": "https://catlight.io",
+    "icon": "catlight-icon.png"
+  },
+  {
+    "slug": "chatwork",
+    "name": "ChatWork",
+    "description": "Group chat for global teams",
+    "website": "http://www.chatwork.com/download/",
+    "keywords": [
+      "chatwork",
+      "chat",
+      "business",
+      "collaboration",
+      "teamwork",
+      "messaging",
+      "productivity"
+    ],
+    "icon": "chatwork-icon.png"
+  },
+  {
+    "slug": "chronocube",
+    "name": "Chronocube",
+    "description": "Your rubik's cube solves",
+    "website": "https://pablopunk.github.io/chronocube",
+    "icon": "chronocube-icon.png"
+  },
+  {
+    "slug": "cocos-creator",
+    "name": "Cocos Creator",
+    "description": "Game development tools",
+    "website": "http://www.cocos2d-x.org",
+    "repository": "https://github.com/cocos-creator/engine",
+    "icon": "cocos-creator-icon.png"
+  },
+  {
+    "slug": "code-rpgify",
+    "name": "Code RPGify",
+    "description": "RPG style coding application",
+    "website": "http://code.rpgify.com",
+    "keywords": [
+      "code",
+      "rpgify",
+      "coding",
+      "game"
+    ],
+    "icon": "code-rpgify-icon.png"
+  },
+  {
+    "slug": "colibri",
+    "name": "Colibri",
+    "description": "Modern browser without tabs",
+    "website": "https://colibri.opqr.co",
+    "keywords": [
+      "browser"
+    ],
+    "icon": "colibri-icon.png"
+  },
+  {
+    "slug": "collectie",
+    "name": "Collectie",
+    "description": "Your personal galaxy of inspiration",
+    "website": "https://getcollectie.com/",
+    "keywords": [
+      "collection",
+      "inspiration",
+      "database",
+      "design"
+    ],
+    "featuredOnHomepage": true,
+    "icon": "collectie-icon.png"
+  },
+  {
+    "slug": "correo",
+    "name": "Correo",
+    "description": "A menubar/taskbar Gmail App for Windows, macOS and Linux.",
+    "website": "https://github.com/amitmerchant1990/correo",
+    "repository": "https://github.com/amitmerchant1990/correo",
+    "keywords": [
+      "electron",
+      "gmail",
+      "mail",
+      "menubar",
+      "taskbar",
+      "tray",
+      "html",
+      "desktop"
+    ],
+    "icon": "correo-icon.png"
+  },
+  {
+    "slug": "cozy-desktop",
+    "name": "Cozy Desktop",
+    "description": "File Synchronisation for Cozy Cloud on Desktop and Laptop",
+    "website": "https://cozy.io/",
+    "repository": "https://github.com/cozy-labs/cozy-desktop",
+    "keywords": [
+      "productivity",
+      "synchronization",
+      "files"
+    ],
+    "license": "AGPLv3",
+    "icon": "cozy-desktop-icon.png"
+  },
+  {
+    "slug": "criptio",
+    "name": "Criptio",
+    "description": "Criptio is a tool for encrypt and decrypt files.",
+    "website": "https://itunes.apple.com/us/app/criptio/id1102582966?mt=12",
+    "keywords": [
+      "security",
+      "productivity"
+    ],
+    "icon": "criptio-icon.png"
+  },
+  {
+    "slug": "crypter",
+    "name": "Crypter",
+    "description": "Simple, convenient and secure encryption client",
+    "website": "https://github.com/HR/Crypter",
+    "icon": "crypter-icon.png"
+  },
+  {
+    "slug": "cryptocat",
+    "name": "Cryptocat",
+    "description": "Free secure chat software",
+    "website": "https://crypto.cat",
+    "icon": "cryptocat-icon.png"
+  },
+  {
+    "slug": "curse",
+    "name": "Curse",
+    "description": "Fast and free communication for gamers",
+    "website": "https://www.curse.com",
+    "icon": "curse-icon.png"
+  },
+  {
+    "slug": "cycligent-git-tool",
+    "name": "Cycligent Git Tool",
+    "description": "Straightforward, graphic GUI for your Git projects.",
+    "website": "https://www.cycligent.com/git-tool",
+    "keywords": [
+      "git",
+      "programming",
+      "productivity"
+    ],
+    "icon": "cycligent-git-tool-icon.png"
+  },
+  {
+    "slug": "cypress",
+    "name": "Cypress",
+    "description": "Automated test runner for web applications",
+    "website": "https://www.cypress.io/",
+    "repository": "https://github.com/cypress-io/cypress",
+    "keywords": [
+      "testing",
+      "developer tool",
+      "web development"
+    ],
+    "icon": "cypress-icon.png"
+  },
+  {
+    "slug": "dataproofer",
+    "name": "DataProofer",
+    "description": "A proofreader for your data",
+    "website": "http://dataproofer.org/",
+    "keywords": [
+      "csv",
+      "excel",
+      "data",
+      "analysis",
+      "journalism",
+      "research",
+      "spreadsheet"
+    ],
+    "icon": "dataproofer-icon.png"
+  },
+  {
+    "slug": "datazenit",
+    "name": "Datazenit",
+    "description": "Modern database administration tool",
+    "website": "https://datazenit.com",
+    "icon": "datazenit-icon.png"
+  },
+  {
+    "slug": "dbglass",
+    "name": "DBGlass",
+    "description": "Simple cross-platform PostgreSQL client",
+    "website": "http://dbglass.web-pal.com",
+    "repository": "https://github.com/web-pal/DBGlass",
+    "keywords": [
+      "postgresql",
+      "sql",
+      "database"
+    ],
+    "license": "MIT",
+    "icon": "dbglass-icon.png"
+  },
+  {
+    "slug": "deckhub",
+    "name": "DeckHub",
+    "description": "TweetDeck style desktop client for GitHub",
+    "website": "https://getdeckhub.com",
+    "icon": "deckhub-icon.png"
+  },
+  {
+    "slug": "deco-ide",
+    "name": "Deco IDE",
+    "description": "React Native IDE with component management",
+    "website": "https://www.decosoftware.com",
+    "repository": "https://github.com/decosoftware/deco-ide",
+    "keywords": [
+      "react",
+      "react native",
+      "developer tool",
+      "ide"
+    ],
+    "license": "AGPLv3",
+    "icon": "deco-ide-icon.png"
+  },
+  {
+    "slug": "demio",
+    "name": "Demio",
+    "description": "A Webinar Platform Built for Inbound Marketing and Sales",
+    "website": "https://demio.com/",
+    "keywords": [
+      "webinar",
+      "marketing",
+      "b2b",
+      "live streaming"
+    ],
+    "icon": "demio-icon.png"
+  },
+  {
+    "slug": "devrant-io-unofficial",
+    "name": "devRant.io (Unofficial)",
+    "description": "Unofficial devRant app that lets you connect with fellow developers over fun rants about tech",
+    "website": "https://github.com/Meadowcottage/devRant.io",
+    "repository": "https://github.com/Meadowcottage/devRant.io",
+    "keywords": [
+      "Social Network",
+      "Developers"
+    ],
+    "license": "GPLv2",
+    "icon": "devrant-io-unofficial-icon.png"
+  },
+  {
+    "slug": "dext",
+    "name": "Dext",
+    "description": "JavaScript launcher",
+    "website": "https://github.com/vutran/dext",
+    "keywords": [
+      "dext",
+      "launcher",
+      "search"
+    ],
+    "license": "MIT",
+    "icon": "dext-icon.png"
+  },
+  {
+    "slug": "discord",
+    "name": "Discord",
+    "description": "All-in-one voice and text chat for gamers",
+    "website": "http://discordapp.com",
+    "icon": "discord-icon.png"
+  },
+  {
+    "slug": "donut",
+    "name": "Donut",
+    "description": "Dead-simple cross-platform cryptocurrency tracker!",
+    "website": "https://harshjv.github.io/donut/",
+    "repository": "https://github.com/harshjv/donut",
+    "keywords": [
+      "cryptocurrency",
+      "bitcoin",
+      "ethereum",
+      "tracker"
+    ],
+    "license": "MIT",
+    "icon": "donut-icon.png"
+  },
+  {
+    "slug": "egret-wing",
+    "name": "Egret Wing",
+    "description": "Egret Wing",
+    "website": "http://www.egret.com/products-wing",
+    "icon": "egret-wing-icon.png"
+  },
+  {
+    "slug": "electorrent",
+    "name": "Electorrent",
+    "description": "An Electron remote client app for uTorrent server",
+    "website": "https://github.com/Tympanix/Electorrent",
+    "repository": "https://github.com/Tympanix/Electorrent",
+    "keywords": [
+      "utorrent",
+      "remote",
+      "client",
+      "magnet"
+    ],
+    "license": "GPLv3",
+    "icon": "electorrent-icon.png"
+  },
+  {
+    "slug": "elite-journal",
+    "name": "Elite Journal",
+    "description": "Browse the Elite: Dangerous journal easily.",
+    "website": "https://github.com/willyb321/elite-journal",
+    "repository": "https://github.com/willyb321/elite-journal",
+    "keywords": [
+      "elite",
+      "journal",
+      "parser"
+    ],
+    "license": "MIT",
+    "icon": "elite-journal-icon.png"
+  },
+  {
+    "slug": "englishextra-app",
+    "name": "englishextra-app",
+    "description": "English Grammar for Russian Speakers",
+    "website": "https://englishextraapp.codeplex.com",
+    "repository": "https://github.com/englishextra/englishextra-app",
+    "icon": "englishextra-app-icon.png"
+  },
+  {
+    "slug": "etcher",
+    "name": "Etcher",
+    "description": "Burn images to SD cards & USB drives, safe & easy",
+    "website": "http://www.etcher.io/",
+    "repository": "https://github.com/resin-io/etcher",
+    "keywords": [
+      "hardware",
+      "developer tool",
+      "IoT"
+    ],
+    "license": "Apache 2.0",
+    "icon": "etcher-icon.png"
+  },
+  {
+    "slug": "explorer",
+    "name": "Explorer",
+    "description": "Statistics the easy way",
+    "website": "https://github.com/jfbouzereau/explorer",
+    "icon": "explorer-icon.png"
+  },
+  {
+    "slug": "fastlane",
+    "name": "Fastlane",
+    "description": "Reserve an Uber from your Mac",
+    "website": "https://fastlaneapp.co",
+    "icon": "fastlane-icon.png"
+  },
+  {
+    "slug": "firebase-admin",
+    "name": "Firebase Admin",
+    "description": "A Firebase data management tool.",
+    "website": "https://firebaseadmin.com",
+    "repository": "https://github.com/codefoxes/firebase-admin",
+    "keywords": [
+      "Firebase",
+      "Electron",
+      "database",
+      "management",
+      "user interface",
+      "admin ui"
+    ],
+    "license": "GPLv3",
+    "icon": "firebase-admin-icon.png"
+  },
+  {
+    "slug": "flex-browser",
+    "name": "Flex Browser",
+    "description": "Hackable and modular web browser!",
+    "website": "http://www.cognizantsoftwaresolutions.ca/flex",
+    "keywords": [
+      "Web Browser",
+      "Hackable",
+      "Modular",
+      "Internet",
+      "System"
+    ],
+    "icon": "flex-browser-icon.png"
+  },
+  {
+    "slug": "flexpaper",
+    "name": "FlexPaper",
+    "description": "Enhance, reflow and flip pdf documents into web publications",
+    "website": "https://flexpaper.devaldi.com/",
+    "keywords": [
+      "pdf",
+      "flip book",
+      "pdf to html5",
+      "pdf to ebook",
+      "interactive pdf publications",
+      "pdf to online publication"
+    ],
+    "icon": "flexpaper-icon.png"
+  },
+  {
+    "slug": "flow",
+    "name": "Flow",
+    "description": "Task Management Software That Doesn't Feel Like Work",
+    "website": "https://www.getflow.com/solutions/startups",
+    "featuredOnHomepage": true,
+    "icon": "flow-icon.png"
+  },
+  {
+    "slug": "foco",
+    "name": "Foco",
+    "description": "Stay focused and boost productivity with Foco.",
+    "website": "https://github.com/akashnimare/foco",
+    "repository": "https://github.com/akashnimare/foco",
+    "keywords": [
+      "Electron",
+      "menubar",
+      "productivity",
+      "focus",
+      "desktop app",
+      "tray",
+      "music"
+    ],
+    "license": "MIT",
+    "icon": "foco-icon.png"
+  },
+  {
+    "slug": "forestpin-analytics",
+    "name": "Forestpin Analytics",
+    "description": "Financial data analytics tool for businesses",
+    "website": "http://forestpin.com/analytics",
+    "keywords": [
+      "analytics",
+      "data",
+      "finance"
+    ],
+    "icon": "forestpin-analytics-icon.png"
+  },
+  {
+    "slug": "franz",
+    "name": "Franz",
+    "description": "Franz is a messaging app / former emperor of Austria, combining chat &amp; messaging services into one application",
+    "website": "http://meetfranz.com",
+    "keywords": [
+      "messaging",
+      "chat",
+      "productivity"
+    ],
+    "icon": "franz-icon.png"
+  },
+  {
+    "slug": "freeter",
+    "name": "Freeter",
+    "description": "The smartest way to work on your projects",
+    "website": "https://freeter.io",
+    "keywords": [
+      "productivity",
+      "organizer"
+    ],
+    "icon": "freeter-icon.png"
+  },
+  {
+    "slug": "friends",
+    "name": "Friends",
+    "description": "Peer to peer chat",
+    "website": "http://moose-team.github.io/friends",
+    "icon": "friends-icon.png"
+  },
+  {
+    "slug": "fromscratch",
+    "name": "FromScratch",
+    "description": "Autosaving scratchpad.",
+    "website": "https://fromscratch.rocks",
+    "repository": "https://github.com/kilian/fromscratch",
+    "keywords": [
+      "notes",
+      "scratchpad",
+      "texteditor"
+    ],
+    "license": "MIT",
+    "icon": "fromscratch-icon.png"
+  },
+  {
+    "slug": "front-end-box",
+    "name": "Front-End Box",
+    "description": "Set of front-end-code generators",
+    "website": "http://frontendbox.io",
+    "keywords": [
+      "CSS Triangle",
+      "Base64 Encoder",
+      "Web Fonts Converter",
+      "Images Optimizer",
+      "Developer Tool"
+    ],
+    "icon": "front-end-box-icon.png"
+  },
+  {
+    "slug": "gala",
+    "name": "Gala",
+    "description": "A new and easier way of searching images",
+    "website": "http://www.getgala.me",
+    "icon": "gala-icon.png"
+  },
+  {
+    "slug": "gausssense-desktop",
+    "name": "GaussSense Desktop",
+    "description": "Experience the powerful prototyping toolkit instantly.",
+    "website": "http://developers.gausstoys.com/apps/desktop",
+    "keywords": [
+      "Magnet",
+      "Input",
+      "Sensor",
+      "Hardware",
+      "Interaction",
+      "Education",
+      "Prototype",
+      "Web Development",
+      "Unity",
+      "Scratch"
+    ],
+    "icon": "gausssense-desktop-icon.png"
+  },
+  {
+    "slug": "gf-trader",
+    "name": "GF-Trader",
+    "description": "Next generation securities trade application from GF Securities",
+    "website": "http://it.gf.com.cn/cps",
+    "keywords": [
+      "finace",
+      "securities"
+    ],
+    "icon": "gf-trader-icon.png"
+  },
+  {
+    "slug": "ghost",
+    "name": "Ghost",
+    "description": "A professional publishing platform",
+    "website": "https://ghost.org",
+    "featuredOnHomepage": true,
+    "icon": "ghost-icon.png"
+  },
+  {
+    "slug": "gif-maker",
+    "name": "Gif Maker",
+    "description": "Animated GIF maker",
+    "website": "http://gifmaker.io",
+    "icon": "gif-maker-icon.png"
+  },
+  {
+    "slug": "gitbook",
+    "name": "GitBook",
+    "description": "Editor for a modern publishing toolchain based on Git",
+    "website": "https://www.gitbook.com",
+    "icon": "gitbook-icon.png"
+  },
+  {
+    "slug": "gitify",
+    "name": "Gitify",
+    "description": "Github notifications on your menu bar",
+    "website": "http://www.gitify.io",
+    "icon": "gitify-icon.png"
+  },
+  {
+    "slug": "gitkraken",
+    "name": "GitKraken",
+    "description": "The downright luxurious Git client for Windows, Mac and Linux",
+    "website": "https://www.gitkraken.com/",
+    "keywords": [
+      "git",
+      "programming",
+      "productivity"
+    ],
+    "featuredOnHomepage": true,
+    "icon": "gitkraken-icon.png"
+  },
+  {
+    "slug": "glyphr-studio",
+    "name": "Glyphr Studio",
+    "description": "Glyphr Studio is a free, web based font designer, focusing on font design for hobbyists.",
+    "website": "https://github.com/glyphr-studio/Glyphr-Studio-Desktop",
+    "repository": "https://github.com/glyphr-studio/Glyphr-Studio-Desktop",
+    "keywords": [
+      "font",
+      "design",
+      "utility"
+    ],
+    "icon": "glyphr-studio-icon.png"
+  },
+  {
+    "slug": "google-play-music-desktop-player",
+    "name": "Google Play Music Desktop Player",
+    "description": "A beautiful cross platform Desktop Player for Google Play Music",
+    "website": "http://www.googleplaymusicdesktopplayer.com/",
+    "icon": "google-play-music-desktop-player-icon.png"
+  },
+  {
+    "slug": "gordie",
+    "name": "Gordie",
+    "description": "The best app for your card collections!",
+    "website": "http://gordie-app.bitbucket.org/",
+    "keywords": [
+      "cards",
+      "collections"
+    ],
+    "icon": "gordie-icon.png"
+  },
+  {
+    "slug": "grabcad-print",
+    "name": "GrabCAD Print",
+    "description": "Professional 3D printing made easy and accessible",
+    "website": "https://grabcad.com/print",
+    "keywords": [
+      "productivity",
+      "3D"
+    ],
+    "icon": "grabcad-print-icon.png"
+  },
+  {
+    "slug": "grap",
+    "name": "GRAP",
+    "description": "Business communication service",
+    "website": "https://www.grap.io",
+    "keywords": [
+      "GRAP",
+      "business",
+      "communication",
+      "sns",
+      "social",
+      "messanger"
+    ],
+    "icon": "grap-icon.png"
+  },
+  {
+    "slug": "groupme",
+    "name": "GroupMe",
+    "description": "Unofficial GroupMe App",
+    "website": "https://github.com/dcrousso/GroupMe#readme",
+    "repository": "https://github.com/dcrousso/GroupMe",
+    "keywords": [
+      "Electron",
+      "GroupMe",
+      "chat",
+      "messaging",
+      "social"
+    ],
+    "license": "MIT",
+    "icon": "groupme-icon.png"
+  },
+  {
+    "slug": "hain",
+    "name": "Hain",
+    "description": "An 'alt+space' launcher for Windows",
+    "website": "https://github.com/appetizermonster/hain",
+    "icon": "hain-icon.png"
+  },
+  {
+    "slug": "harmony",
+    "name": "Harmony",
+    "description": "Music player compatible with Spotify, Soundcloud, Play Music and your local files",
+    "website": "http://getharmony.xyz/",
+    "repository": "https://github.com/vincelwt/harmony",
+    "keywords": [
+      "music",
+      "player",
+      "Spotify",
+      "SoundCloud",
+      "Play Music",
+      "mp3"
+    ],
+    "icon": "harmony-icon.png"
+  },
+  {
+    "slug": "healthi",
+    "name": "healthi",
+    "description": "Your mac's battery doctor",
+    "website": "http://pablopunk.com/healthi",
+    "repository": "http://github.com/pablopunk/healthi",
+    "keywords": [
+      "battery",
+      "mac",
+      "doctor",
+      "health",
+      "util"
+    ],
+    "license": "MIT",
+    "icon": "healthi-icon.png"
+  },
+  {
+    "slug": "hive",
+    "name": "Hive",
+    "description": "Home for busy teams",
+    "website": "https://hive.com",
+    "icon": "hive-icon.png"
+  },
+  {
+    "slug": "hostsdock",
+    "name": "HostsDock",
+    "description": "Store, manage and switch your hosts easily",
+    "website": "https://github.com/eshengsky/HostsDock",
+    "repository": "https://github.com/eshengsky/HostsDock",
+    "keywords": [
+      "HostsDock",
+      "storage",
+      "manage",
+      "switch",
+      "hosts"
+    ],
+    "license": "MIT",
+    "icon": "hostsdock-icon.png"
+  },
+  {
+    "slug": "hozz",
+    "name": "Hozz",
+    "description": "A better way to manage your hosts",
+    "website": "http://ppoffice.github.io/Hozz",
+    "icon": "hozz-icon.png"
+  },
+  {
+    "slug": "https-checker",
+    "name": "HTTPS Checker",
+    "description": "The Most Advanced HTTPS Mixed Content Checker Available",
+    "website": "https://www.ecommerce.co.uk/httpschecker",
+    "icon": "https-checker-icon.png"
+  },
+  {
+    "slug": "hyper",
+    "name": "Hyper",
+    "description": "HTML/JS/CSS Terminal",
+    "website": "https://hyper.is",
+    "repository": "https://github.com/zeit/hyper",
+    "keywords": [
+      "terminal",
+      "html",
+      "css",
+      "js"
+    ],
+    "license": "MIT",
+    "featuredOnHomepage": true,
+    "icon": "hyper-icon.png"
+  },
+  {
+    "slug": "infinity",
+    "name": "Infinity",
+    "description": "An easy way to make presentation.",
+    "website": "https://ycosxapp.github.io",
+    "keywords": [
+      "presentation",
+      "design",
+      "react"
+    ],
+    "icon": "infinity-icon.png"
+  },
+  {
+    "slug": "inkdrop",
+    "name": "Inkdrop",
+    "description": "Notebook app for Markdown lovers",
+    "website": "https://www.inkdrop.info/",
+    "keywords": [
+      "text",
+      "programming",
+      "notebook",
+      "extensible",
+      "markdown"
+    ],
+    "icon": "inkdrop-icon.png"
+  },
+  {
+    "slug": "insomnia",
+    "name": "Insomnia",
+    "description": "REST API Client",
+    "website": "https://insomnia.rest/",
+    "keywords": [
+      "REST Client",
+      "HTTP",
+      "API",
+      "Developer Tool"
+    ],
+    "icon": "insomnia-icon.png"
+  },
+  {
+    "slug": "ionic-creator",
+    "name": "Ionic Creator",
+    "description": "Build amazing mobile apps, faster.",
+    "website": "https://github.com/Meadowcottage/Ionic-Creator",
+    "repository": "https://github.com/Meadowcottage/Ionic-Creator",
+    "keywords": [
+      "Electron",
+      "Ionic",
+      "Creator",
+      "Prototyping"
+    ],
+    "license": "GNU",
+    "icon": "ionic-creator-icon.png"
+  },
+  {
+    "slug": "ionic-lab",
+    "name": "Ionic Lab",
+    "description": "Create, build, test and deploy Ionic apps",
+    "website": "http://lab.ionic.io",
+    "icon": "ionic-lab-icon.png"
+  },
+  {
+    "slug": "ironnode",
+    "name": "ironNode",
+    "description": "A Node.js JavaScript Debugger",
+    "website": "http://s-a.github.io/iron-node/",
+    "repository": "https://github.com/s-a/iron-node",
+    "keywords": [
+      "debug",
+      "debugger",
+      "nodejs"
+    ],
+    "license": "MIT",
+    "icon": "ironnode-icon.png"
+  },
+  {
+    "slug": "istrolid",
+    "name": "Istrolid",
+    "description": "Fleet Design Strategy Game",
+    "website": "http://www.istrolid.com/",
+    "keywords": [
+      "game",
+      "strategy"
+    ],
+    "icon": "istrolid-icon.png"
+  },
+  {
+    "slug": "itch",
+    "name": "itch",
+    "description": "The best way to play your itch.io games",
+    "website": "https://itch.io/app",
+    "repository": "https://github.com/itchio/itch",
+    "keywords": [
+      "games"
+    ],
+    "license": "MIT",
+    "icon": "itch-icon.png"
+  },
+  {
+    "slug": "jandi",
+    "name": "JANDI",
+    "description": "Team Communication for Businesses",
+    "website": "https://www.jandi.com",
+    "keywords": [
+      "messanger",
+      "collaboration"
+    ],
+    "icon": "jandi-icon.png"
+  },
+  {
+    "slug": "jasper",
+    "name": "Jasper",
+    "description": "The Issue Reader for GitHub",
+    "website": "https://jasperapp.io",
+    "repository": "https://github.com/jasperapp/jasper",
+    "keywords": [
+      "github",
+      "issue",
+      "reader",
+      "developer tool"
+    ],
+    "icon": "jasper-icon.png"
+  },
+  {
+    "slug": "jibo",
+    "name": "JIBO",
+    "description": "The world's first social robot",
+    "website": "https://www.jibo.com",
+    "featuredOnHomepage": true,
+    "icon": "jibo-icon.png"
+  },
+  {
+    "slug": "kakapo",
+    "name": "Kakapo",
+    "description": "Ambient sound mixer to set a nice mood",
+    "website": "http://www.kakapo.co/app.html#desktop",
+    "icon": "kakapo-icon.png"
+  },
+  {
+    "slug": "kaku",
+    "name": "Kaku",
+    "description": "A highly integrated music player",
+    "website": "http://kaku.rocks",
+    "repository": "https://github.com/EragonJ/Kaku",
+    "keywords": [
+      "music",
+      "player"
+    ],
+    "license": "MIT",
+    "icon": "kaku-icon.png"
+  },
+  {
+    "slug": "kap",
+    "name": "Kap",
+    "description": "An open-source screen recorder built with web technology",
+    "website": "https://getkap.co",
+    "repository": "https://github.com/wulkano/kap",
+    "keywords": [
+      "kap",
+      "screen",
+      "capture",
+      "record",
+      "video"
+    ],
+    "license": "MIT",
+    "featuredOnHomepage": true,
+    "icon": "kap-icon.png"
+  },
+  {
+    "slug": "keeweb",
+    "name": "KeeWeb",
+    "description": "Free cross-platform password manager compatible with KeePass",
+    "website": "https://keeweb.info",
+    "icon": "keeweb-icon.png"
+  },
+  {
+    "slug": "kitematic",
+    "name": "Kitematic",
+    "description": "Run containers through a simple, yet powerful graphical user interface",
+    "website": "https://kitematic.com",
+    "featuredOnHomepage": true,
+    "icon": "kitematic-icon.png"
+  },
+  {
+    "slug": "kongdash",
+    "name": "KongDash",
+    "description": "Desktop client for Kong Admin API",
+    "website": "https://ajaysreedhar.github.io/kongdash",
+    "repository": "https://github.com/ajaysreedhar/kongdash",
+    "keywords": [
+      "Kong",
+      "Dashboard",
+      "KongDash",
+      "API"
+    ],
+    "license": "MIT",
+    "icon": "kongdash-icon.png"
+  },
+  {
+    "slug": "laverna",
+    "name": "Laverna",
+    "description": "Write &amp; organize Markdown",
+    "website": "https://laverna.cc",
+    "keywords": [
+      "writing",
+      "markdown",
+      "editor"
+    ],
+    "icon": "laverna-icon.png"
+  },
+  {
+    "slug": "light-table",
+    "name": "Light Table",
+    "description": "The next generation code editor",
+    "website": "http://www.lighttable.com",
+    "icon": "light-table-icon.png"
+  },
+  {
+    "slug": "lightgallery",
+    "name": "lightgallery",
+    "description": "A modern, electron and nodejs based image viewer for Mac, Windows and Linux.",
+    "website": "http://sachinchoolur.github.io/lightgallery-desktop/",
+    "repository": "https://github.com/sachinchoolur/lightgallery-desktop",
+    "keywords": [
+      "image",
+      "photo",
+      "gallery"
+    ],
+    "license": "MIT",
+    "icon": "lightgallery-icon.png"
+  },
+  {
+    "slug": "ling",
+    "name": "Ling",
+    "description": "REST Client",
+    "website": "https://github.com/talhasch/ling",
+    "repository": "https://github.com/talhasch/ling",
+    "keywords": [
+      "REST Client",
+      "HTTP",
+      "Developer Tool"
+    ],
+    "license": "MIT",
+    "icon": "ling-icon.png"
+  },
+  {
+    "slug": "losslesscut",
+    "name": "LosslessCut",
+    "description": "GUI tool for lossless trimming / cutting of videos using ffmpeg",
+    "website": "https://github.com/mifi/lossless-cut",
+    "license": "MIT",
+    "icon": "losslesscut-icon.png"
+  },
+  {
+    "slug": "makeappicon-desktop",
+    "name": "MakeAppIcon Desktop",
+    "description": "Resizer for mobile app icons",
+    "website": "https://www.makeappicon.com/desktop",
+    "icon": "makeappicon-desktop-icon.png"
+  },
+  {
+    "slug": "mancy",
+    "name": "Mancy",
+    "description": "NodeJS REPLNodeJS REPL",
+    "website": "http://www.mancy-re.pl",
+    "icon": "mancy-icon.png"
+  },
+  {
+    "slug": "mapbox",
+    "name": "Mapbox",
+    "description": "Design and publish beautiful maps",
+    "website": "https://www.mapbox.com",
+    "disabled": true,
+    "icon": "mapbox-icon.png"
+  },
+  {
+    "slug": "markdownify",
+    "name": "Markdownify",
+    "description": "This is a minimal Markdown Editor desktop app based on Electron.",
+    "website": "http://www.amitmerchant.com/electron-markdownify",
+    "repository": "https://github.com/amitmerchant1990/electron-markdownify",
+    "keywords": [
+      "electron",
+      "markdown",
+      "plain",
+      "node",
+      "minimal",
+      "editor",
+      "preview",
+      "html",
+      "desktop"
+    ],
+    "icon": "markdownify-icon.png"
+  },
+  {
+    "slug": "marp",
+    "name": "Marp",
+    "description": "Markdown Presentation Writer",
+    "website": "https://yhatt.github.io/marp/",
+    "repository": "https://github.com/yhatt/marp",
+    "keywords": [
+      "markdown",
+      "presentation",
+      "slide",
+      "PowerPoint"
+    ],
+    "license": "MIT",
+    "featuredOnHomepage": true,
+    "icon": "marp-icon.png"
+  },
+  {
+    "slug": "mattermost",
+    "name": "Mattermost",
+    "description": "Open source, self-hosted Slack-alternative",
+    "website": "https://www.mattermost.org/",
+    "icon": "mattermost-icon.png"
+  },
+  {
+    "slug": "mdnote",
+    "name": "MdNote",
+    "description": "Markdown notebook",
+    "website": "http://md-note.com",
+    "icon": "mdnote-icon.png"
+  },
+  {
+    "slug": "microstockr",
+    "name": "Microstockr",
+    "description": "Microstock photography made easy",
+    "website": "http://microstockr.com",
+    "icon": "microstockr-icon.png"
+  },
+  {
+    "slug": "min",
+    "name": "Min",
+    "description": "A smarter web browser",
+    "website": "https://minbrowser.github.io/min/",
+    "repository": "https://github.com/minbrowser/min",
+    "keywords": [
+      "browser",
+      "privacy"
+    ],
+    "license": "Apache 2.0",
+    "icon": "min-icon.png"
+  },
+  {
+    "slug": "mixmax",
+    "name": "Mixmax",
+    "description": "See every action on your emails in real-time. Compose anywhere.",
+    "website": "https://mixmax.com/download",
+    "keywords": [
+      "email",
+      "analytics"
+    ],
+    "icon": "mixmax-icon.png"
+  },
+  {
+    "slug": "mjml-app",
+    "name": "MJML App",
+    "description": "Desktop wrapper around mjml language",
+    "website": "http://mjmlio.github.io/mjml-app/",
+    "repository": "https://github.com/mjmlio/mjml-app",
+    "keywords": [
+      "mjml",
+      "email"
+    ],
+    "icon": "mjml-app-icon.png"
+  },
+  {
+    "slug": "mockingbot",
+    "name": "MockingBot",
+    "description": "The Missing Wireframing Tool For Mobile",
+    "website": "https://mockingbot.com",
+    "icon": "mockingbot-icon.png"
+  },
+  {
+    "slug": "moeditor",
+    "name": "Moeditor",
+    "description": "Your all-purpose markdown editor",
+    "website": "https://moeditor.github.io/",
+    "repository": "https://github.com/Moeditor/Moeditor",
+    "keywords": [
+      "Electron",
+      "markdown",
+      "editor",
+      "html",
+      "pdf",
+      "math"
+    ],
+    "license": "GPLv3",
+    "icon": "moeditor-icon.png"
+  },
+  {
+    "slug": "mojibar",
+    "name": "Mojibar",
+    "description": "Emoji searcher menubar app",
+    "website": "https://github.com/muan/mojibar",
+    "repository": "https://github.com/muan/mojibar",
+    "keywords": [
+      "emoji",
+      "menubar",
+      "open source"
+    ],
+    "license": "MIT",
+    "featuredOnHomepage": true,
+    "icon": "mojibar-icon.png"
+  },
+  {
+    "slug": "mongoclient",
+    "name": "Mongoclient",
+    "description": "Featured mongodb management tool",
+    "website": "http://www.mongoclient.com",
+    "repository": "https://github.com/rsercano/mongoclient",
+    "keywords": [
+      "mongodb",
+      "mongo",
+      "mongodb management tool",
+      "mongodb admin ui",
+      "mongodb tool"
+    ],
+    "license": "MIT",
+    "icon": "mongoclient-icon.png"
+  },
+  {
+    "slug": "mongotron",
+    "name": "Mongotron",
+    "description": "Cross platform MongoDB management",
+    "website": "http://www.mongotron.io",
+    "icon": "mongotron-icon.png"
+  },
+  {
+    "slug": "museeks",
+    "name": "Museeks",
+    "description": "A simple, clean and cross-platform music player",
+    "website": "http://museeks.io/",
+    "repository": "https://github.com/KeitIG/museeks",
+    "keywords": [
+      "Electron",
+      "music",
+      "audio",
+      "music player"
+    ],
+    "license": "MIT",
+    "icon": "museeks-icon.png"
+  },
+  {
+    "slug": "negative",
+    "name": "Negative",
+    "description": "An app for making visual comparisons",
+    "website": "https://github.com/atdrago/negative",
+    "keywords": [
+      "diff",
+      "visual diff",
+      "web development",
+      "web design",
+      "developer tool"
+    ],
+    "license": "MIT",
+    "icon": "negative-icon.png"
+  },
+  {
+    "slug": "netbeast",
+    "name": "Netbeast",
+    "description": "An Internet of Things javascript development platform that empowers developers to easily create and deploy IoT apps",
+    "website": "https://netbeast.co/developer",
+    "icon": "netbeast-icon.png"
+  },
+  {
+    "slug": "nimble",
+    "name": "Nimble",
+    "description": "A simple Wolfram|Alpha&#174; menubar client for Mac OS X",
+    "website": "http://madebybright.com",
+    "icon": "nimble-icon.png"
+  },
+  {
+    "slug": "now",
+    "name": "Now",
+    "description": "The desktop client for ZEIT's now",
+    "website": "https://zeit.co/app",
+    "repository": "https://github.com/zeit/now-app",
+    "keywords": [
+      "now",
+      "zeit",
+      "deployment",
+      "sharing",
+      "development"
+    ],
+    "license": "MIT",
+    "featuredOnHomepage": true,
+    "icon": "now-icon.png"
+  },
+  {
+    "slug": "nteract",
+    "name": "nteract",
+    "description": "Interactive literate coding notebook",
+    "website": "https://nteract.io/",
+    "repository": "https://github.com/nteract/nteract",
+    "keywords": [
+      "jupyter",
+      "notebook",
+      "nteract",
+      "data"
+    ],
+    "license": "BSD-3-Clause",
+    "icon": "nteract-icon.png"
+  },
+  {
+    "slug": "nuclide",
+    "name": "Nuclide",
+    "description": "A unified developer experience for web and mobile development",
+    "website": "http://nuclide.io",
+    "icon": "nuclide-icon.png"
+  },
+  {
+    "slug": "nylas-n1",
+    "name": "Nylas N1",
+    "description": "The extensible, open source mail app",
+    "website": "https://www.nylas.com",
+    "featuredOnHomepage": true,
+    "icon": "nylas-n1-icon.png"
+  },
+  {
+    "slug": "open-stage-control",
+    "name": "Open Stage Control",
+    "description": "A libre desktop OSC bi-directionnal control surface application",
+    "website": "https://jean-emmanuel.github.io/open-stage-control",
+    "icon": "open-stage-control-icon.png"
+  },
+  {
+    "slug": "pamfax",
+    "name": "PamFax",
+    "description": "A cross-platform app for sending and receiving faxes",
+    "website": "https://www.pamfax.biz",
+    "keywords": [
+      "fax",
+      "productivity",
+      "communication",
+      "utility"
+    ],
+    "icon": "pamfax-icon.png"
+  },
+  {
+    "slug": "particle-dev",
+    "name": "Particle Dev",
+    "description": "A professional IDE for Particle",
+    "website": "https://www.particle.io/dev",
+    "icon": "particle-dev-icon.png"
+  },
+  {
+    "slug": "paws-for-trello",
+    "name": "Paws for Trello",
+    "description": "Paws for Trello is a beautiful Trello client for Mac and Windows. It brings Trello to your desktop with native notifications, powerful shortcuts and more - away from the distractions of your browser.",
+    "website": "http://friendlyfox.es/pawsfortrello/",
+    "keywords": [
+      "trello",
+      "todo",
+      "to do",
+      "productivity",
+      "paws"
+    ],
+    "icon": "paws-for-trello-icon.png"
+  },
+  {
+    "slug": "pencil",
+    "name": "Pencil",
+    "description": "The Pencil Project's unique mission is to build a free and opensource tool for making diagrams and GUI prototyping that everyone can use",
+    "website": "http://pencil.evolus.vn",
+    "repository": "https://github.com/evolus/pencil",
+    "keywords": [
+      "prototyping",
+      "ui",
+      "mockup",
+      "design",
+      "drawing",
+      "sketch"
+    ],
+    "license": "GPL 2",
+    "icon": "pencil-icon.png"
+  },
+  {
+    "slug": "pexels",
+    "name": "Pexels",
+    "description": "Search for completely free photos and copy them into your clipboard",
+    "website": "https://www.pexels.com/pro/mac-and-windows-app/",
+    "keywords": [
+      "photos",
+      "web design"
+    ],
+    "icon": "pexels-icon.png"
+  },
+  {
+    "slug": "phonegap",
+    "name": "PhoneGap",
+    "description": "The open source framework that gets you building amazing mobile apps using web technology",
+    "website": "http://phonegap.com/products/#desktop-app-section",
+    "repository": "https://github.com/phonegap/phonegap-app-desktop",
+    "keywords": [
+      "mobile",
+      "iOS",
+      "Android",
+      "developer",
+      "tools"
+    ],
+    "license": "ALv2",
+    "icon": "phonegap-icon.png"
+  },
+  {
+    "slug": "phonepresenter",
+    "name": "PhonePresenter",
+    "description": "The Smartest Presentation Clicker",
+    "website": "https://phonepresenter.com",
+    "keywords": [
+      "utility",
+      "productivity",
+      "communication",
+      "remote",
+      "office",
+      "presentation",
+      "PowerPoint"
+    ],
+    "icon": "phonepresenter-icon.png"
+  },
+  {
+    "slug": "photoscreensaver",
+    "name": "PhotoScreenSaver",
+    "description": "Windows screen saver that displays a photo slideshow",
+    "website": "https://github.com/RandScullard/photo-screen-saver",
+    "keywords": [
+      "screensaver",
+      "photography"
+    ],
+    "license": "MIT",
+    "icon": "photoscreensaver-icon.png"
+  },
+  {
+    "slug": "pilemd",
+    "name": "PileMd",
+    "description": "Markdown Note App with Beautiful Markdown Editor and Local Syncing",
+    "website": "https://pilemd.com/",
+    "repository": "https://github.com/hirokiky/pilemd",
+    "keywords": [
+      "markdown",
+      "note",
+      "productivity"
+    ],
+    "license": "GPLv3",
+    "icon": "pilemd-icon.png"
+  },
+  {
+    "slug": "plain-email",
+    "name": "Plain Email",
+    "description": "An app concept for efficient one-touch email processing",
+    "website": "http://www.plainemail.com",
+    "keywords": [
+      "email",
+      "productivity"
+    ],
+    "icon": "plain-email-icon.png"
+  },
+  {
+    "slug": "playback",
+    "name": "Playback",
+    "description": "Experimental video player",
+    "website": "https://github.com/mafintosh/playback",
+    "keywords": [
+      "video",
+      "player",
+      "audio"
+    ],
+    "icon": "playback-icon.png"
+  },
+  {
+    "slug": "popkey",
+    "name": "PopKey",
+    "description": "The perfect GIF right at your fingertips",
+    "website": "http://popkey.co/send-gifs",
+    "icon": "popkey-icon.png"
+  },
+  {
+    "slug": "postman",
+    "name": "Postman",
+    "description": "Build, test and document your APIs",
+    "website": "https://www.getpostman.com/",
+    "icon": "postman-icon.png"
+  },
+  {
+    "slug": "pracontrol",
+    "name": "PraControl",
+    "description": "Send awesome gCodes to your machine",
+    "website": "http://pracontrol.pravdomil.cz",
+    "icon": "pracontrol-icon.png"
+  },
+  {
+    "slug": "preserver",
+    "name": "Preserver",
+    "description": "Preserver is an notes organizer desktop app",
+    "website": "https://github.com/hsbalar/Preserver",
+    "keywords": [
+      "notes",
+      "keep",
+      "record",
+      "data"
+    ],
+    "icon": "preserver-icon.png"
+  },
+  {
+    "slug": "presets-io",
+    "name": "Presets.io",
+    "description": "Easy preset management for Adobe Lightroom",
+    "website": "https://presets.io",
+    "icon": "presets-io-icon.png"
+  },
+  {
+    "slug": "protopie",
+    "name": "ProtoPie",
+    "description": "Code-free prototyping tool for smart devices",
+    "website": "https://protopie.io/",
+    "keywords": [
+      "Prototyping",
+      "Microinteraction",
+      "Code-free",
+      "Prototyping Tool",
+      "Designers tool"
+    ],
+    "icon": "protopie-icon.png"
+  },
+  {
+    "slug": "pupafm",
+    "name": "PupaFM",
+    "description": "douban.fm Music Desktop Player",
+    "website": "https://github.com/xwartz/PupaFM",
+    "keywords": [
+      "douban.fm",
+      "fm",
+      "douban",
+      "PupaFM",
+      "music player",
+      "react",
+      "redux"
+    ],
+    "license": "MIT",
+    "icon": "pupafm-icon.png"
+  },
+  {
+    "slug": "qmui-web",
+    "name": "QMUI Web",
+    "description": "QMUI Web Desktop is an application for managing projects based on QMUI Web Framework.",
+    "website": "http://qmuiteam.com/web",
+    "repository": "https://github.com/QMUI/qmui_web_desktop",
+    "keywords": [
+      "Web Development",
+      "UI Framework",
+      "Sass Framework",
+      "Workflow",
+      "Gulp",
+      "Developer Tool"
+    ],
+    "license": "MIT",
+    "icon": "qmui-web-icon.png"
+  },
+  {
+    "slug": "quickcalc",
+    "name": "quickcalc",
+    "description": "Menubar Calculator",
+    "website": "https://github.com/Cwoodall6/quickcalc",
+    "repository": "https://github.com/Cwoodall6/quickcalc",
+    "keywords": [
+      "calculator",
+      "menubar"
+    ],
+    "license": "MIT",
+    "icon": "quickcalc-icon.png"
+  },
+  {
+    "slug": "rambox",
+    "name": "Rambox",
+    "description": "Free and Open Source messaging and emailing app that combines common web applications into one.",
+    "website": "http://rambox.pro",
+    "repository": "https://github.com/saenzramiro/rambox",
+    "keywords": [
+      "productivity",
+      "whatsapp",
+      "slack",
+      "messenger",
+      "skype",
+      "gitter",
+      "telegram",
+      "hangouts",
+      "hipchat",
+      "gmail",
+      "inbox",
+      "outlook",
+      "protonmail",
+      "tweetdeck"
+    ],
+    "license": "MIT",
+    "icon": "rambox-icon.png"
+  },
+  {
+    "slug": "ramme",
+    "name": "Ramme",
+    "description": "Unofficial Instagram Desktop App.",
+    "website": "https://github.com/terkelg/ramme",
+    "repository": "https://github.com/terkelg/ramme",
+    "keywords": [
+      "Electron",
+      "photos",
+      "social",
+      "instagram"
+    ],
+    "license": "MIT",
+    "featuredOnHomepage": true,
+    "icon": "ramme-icon.png"
+  },
+  {
+    "slug": "remember",
+    "name": "Remember",
+    "description": "Business card management",
+    "website": "https://rememberapp.co.kr",
+    "icon": "remember-icon.png"
+  },
+  {
+    "slug": "rocket-chat",
+    "name": "Rocket.Chat",
+    "description": "The ultimate open source web chat platform",
+    "website": "https://rocket.chat",
+    "icon": "rocket-chat-icon.png"
+  },
+  {
+    "slug": "screencat",
+    "name": "ScreenCat",
+    "description": "WebRTC screensharing",
+    "website": "https://github.com/maxogden/screencat",
+    "keywords": [
+      "screensharing",
+      "collaboration",
+      "WebRTC"
+    ],
+    "icon": "screencat-icon.png"
+  },
+  {
+    "slug": "sealtalk",
+    "name": "SealTalk",
+    "description": "Instant-messaging App powered by RongCloud IM Cloud Service and IM SDK.",
+    "website": "http://sealtalk.im",
+    "repository": "https://github.com/sealtalk/sealtalk-desktop",
+    "keywords": [
+      "IM",
+      "RongCloud",
+      "SDK",
+      "IM Cloud Service",
+      "IM SDK"
+    ],
+    "icon": "sealtalk-icon.png"
+  },
+  {
+    "slug": "seapig",
+    "name": "SeaPig",
+    "description": "A converter from markdown to html",
+    "website": "https://github.com/yasumichi/seapig/blob/master/README.md",
+    "repository": "https://github.com/yasumichi/seapig",
+    "keywords": [
+      "Electron",
+      "markdown",
+      "editor",
+      "html"
+    ],
+    "license": "MIT",
+    "icon": "seapig-icon.png"
+  },
+  {
+    "slug": "sencha-architect",
+    "name": "Sencha Architect",
+    "description": "The Ext JS visual app builder for developing cross-platform HTML5 applications on desktop and mobile devices.",
+    "website": "https://www.sencha.com/products/architect/",
+    "keywords": [
+      "web development",
+      "programming",
+      "productivity",
+      "app builder"
+    ],
+    "icon": "sencha-architect-icon.png"
+  },
+  {
+    "slug": "sencha-inspector",
+    "name": "Sencha Inspector",
+    "description": "Debugging tool for troubleshooting and improving performance of Ext JS and Sencha Touch applications.",
+    "website": "https://www.sencha.com/products/inspector/",
+    "keywords": [
+      "web development",
+      "programming",
+      "productivity",
+      "debugging"
+    ],
+    "icon": "sencha-inspector-icon.png"
+  },
+  {
+    "slug": "sencha-test",
+    "name": "Sencha Test",
+    "description": "Testing Ext JS and Sencha Touch apps with Jasmine",
+    "website": "https://www.sencha.com/products/test/",
+    "keywords": [
+      "web development",
+      "programming",
+      "productivity",
+      "editor"
+    ],
+    "icon": "sencha-test-icon.png"
+  },
+  {
+    "slug": "sencha-themer",
+    "name": "Sencha Themer",
+    "description": "Theming tool to rapidly style Ext JS applications by creating custom themes using graphical tools – without writing code.",
+    "website": "https://www.sencha.com/products/themer/",
+    "keywords": [
+      "web development",
+      "programming",
+      "productivity",
+      "theming"
+    ],
+    "icon": "sencha-themer-icon.png"
+  },
+  {
+    "slug": "sheepchat",
+    "name": "sheepChat",
+    "description": "Multi-chat for streamers",
+    "website": "https://sheep.chat",
+    "license": "Freeware",
+    "icon": "sheepchat-icon.png"
+  },
+  {
+    "slug": "shiba",
+    "name": "Shiba",
+    "description": "Rich markdown live preview app with linter",
+    "website": "https://github.com/rhysd/Shiba",
+    "repository": "https://github.com/rhysd/Shiba",
+    "keywords": [
+      "markdown",
+      "preview",
+      "linter"
+    ],
+    "license": "MIT",
+    "icon": "shiba-icon.png"
+  },
+  {
+    "slug": "shortexts",
+    "name": "Shortexts",
+    "description": "Shortcuts for texts you copy frequently, folders and emojis",
+    "website": "http://shortexts.com/",
+    "keywords": [
+      "Productivity tool",
+      "OSX "
+    ],
+    "license": "MIT",
+    "icon": "shortexts-icon.png"
+  },
+  {
+    "slug": "shots",
+    "name": "--shots",
+    "description": "Cross-platform application for creating screenshots.",
+    "website": "https://theshots.ru/",
+    "repository": "https://github.com/binjospookie/--shots",
+    "keywords": [
+      "screenshots",
+      "sharing",
+      "productivity"
+    ],
+    "icon": "shots-icon.png"
+  },
+  {
+    "slug": "simplenote",
+    "name": "Simplenote",
+    "description": "An easy way to keep notes, lists, ideas and more.",
+    "website": "https://simplenote.com",
+    "repository": "https://github.com/Automattic/simplenote-electron",
+    "keywords": [
+      "notes",
+      "utility",
+      "sync"
+    ],
+    "license": "GPLv2",
+    "featuredOnHomepage": true,
+    "icon": "simplenote-icon.png"
+  },
+  {
+    "slug": "slack",
+    "name": "Slack",
+    "description": "A messaging app for teams",
+    "website": "https://slack.com",
+    "featuredOnHomepage": true,
+    "icon": "slack-icon.png"
+  },
+  {
+    "slug": "slack-catchup",
+    "name": "Slack Catchup",
+    "description": "Catch up all the unread across your Slack teams in a single place",
+    "website": "https://slackcatchup.com",
+    "icon": "slack-catchup-icon.png"
+  },
+  {
+    "slug": "socialcast",
+    "name": "Socialcast",
+    "description": "Socialcast is an enterprise social network platform",
+    "website": "http://socialcast.com/",
+    "keywords": [
+      "enterprise",
+      "social network",
+      "collaboration",
+      "communication",
+      "conversation",
+      "productivity"
+    ],
+    "icon": "socialcast-icon.png"
+  },
+  {
+    "slug": "soube",
+    "name": "Soube",
+    "description": "Simple music player.",
+    "website": "http://soube.diegomolina.cl",
+    "repository": "https://github.com/DracotMolver/Soube",
+    "keywords": [
+      "Music",
+      "Music player"
+    ],
+    "license": "MIT",
+    "icon": "soube-icon.png"
+  },
+  {
+    "slug": "soundnode",
+    "name": "Soundnode",
+    "description": "Soundnode App is the Soundcloud for desktop.",
+    "website": "http://www.soundnodeapp.com",
+    "repository": "https://github.com/Soundnode/soundnode-app",
+    "keywords": [
+      "music",
+      "sound",
+      "soundcloud"
+    ],
+    "license": "GNU GENERAL PUBLIC LICENSE Version 3",
+    "icon": "soundnode-icon.png"
+  },
+  {
+    "slug": "spectrum",
+    "name": "Spectrum",
+    "description": "Useful logging for developers",
+    "website": "https://www.devspectrum.com",
+    "icon": "spectrum-icon.png"
+  },
+  {
+    "slug": "spreaker-studio",
+    "name": "Spreaker Studio",
+    "description": "Create and discover podcasts",
+    "website": "https://www.spreaker.com/download",
+    "icon": "spreaker-studio-icon.png"
+  },
+  {
+    "slug": "sqlectron",
+    "name": "Sqlectron",
+    "description": "A simple and lightweight SQL client desktop with cross database and platform support",
+    "website": "https://sqlectron.github.io",
+    "repository": "https://github.com/sqlectron/sqlectron-gui",
+    "keywords": [
+      "sql",
+      "mysql",
+      "postgres",
+      "mssql"
+    ],
+    "license": "MIT",
+    "icon": "sqlectron-icon.png"
+  },
+  {
+    "slug": "stamp",
+    "name": "STAMP",
+    "description": "Move tracks and playlists across various streaming services",
+    "website": "https://freeyourmusic.com/",
+    "keywords": [
+      "music",
+      "spotify",
+      "apple music",
+      "google play music"
+    ],
+    "icon": "stamp-icon.png"
+  },
+  {
+    "slug": "steelseries-engine-3",
+    "name": "SteelSeries Engine 3",
+    "description": "A unified platform that supports nearly all your SteelSeries gear",
+    "website": "https://steelseries.com/engine",
+    "icon": "steelseries-engine-3-icon.png"
+  },
+  {
+    "slug": "stoplight",
+    "name": "StopLight",
+    "description": "Mock, document, and test your way to API nirvana",
+    "website": "https://stoplight.io",
+    "icon": "stoplight-icon.png"
+  },
+  {
+    "slug": "strawberry",
+    "name": "Strawberry",
+    "description": "Win Diners for Life. Know and serve them better with the all-in-one restaurant software suite.",
+    "website": "https://strawberrypos.com",
+    "icon": "strawberry-icon.png"
+  },
+  {
+    "slug": "subordination",
+    "name": "Subordination",
+    "description": "A desktop app for translating and editing subtitles",
+    "website": "http://subordination.cu.cc/",
+    "repository": "https://github.com/sunabozu/subordination",
+    "keywords": [
+      "subtitles",
+      "translation",
+      "editor"
+    ],
+    "icon": "subordination-icon.png"
+  },
+  {
+    "slug": "superpowers-html5-2d-3d-game-maker",
+    "name": "Superpowers — HTML5 2D+3D game maker",
+    "description": "2D+3D game making for indies. Free and open source, finally",
+    "website": "http://superpowers-html5.com/",
+    "keywords": [
+      "games"
+    ],
+    "icon": "superpowers-html5-2d-3d-game-maker-icon.png"
+  },
+  {
+    "slug": "svgsus",
+    "name": "Svgsus",
+    "description": "Organize, clean and transform your SVGs",
+    "website": "http://www.svgs.us",
+    "keywords": [
+      "icon",
+      "svg",
+      "tool",
+      "productivity"
+    ],
+    "featuredOnHomepage": true,
+    "icon": "svgsus-icon.png"
+  },
+  {
+    "slug": "sync",
+    "name": "Sync",
+    "description": "A business chat tool",
+    "website": "https://www.wantedly.com/sync",
+    "icon": "sync-icon.png"
+  },
+  {
+    "slug": "tagflow",
+    "name": "TagFlow",
+    "description": "Cross-platform file manager with clever tags",
+    "website": "http://www.tagflow.ch",
+    "keywords": [
+      "tags",
+      "file manager",
+      "file sharing",
+      "productivity",
+      "cross-platform"
+    ],
+    "icon": "tagflow-icon.png"
+  },
+  {
+    "slug": "tagspaces",
+    "name": "TagSpaces",
+    "description": "Your Hackable File Organizer",
+    "website": "http://tagspaces.org/",
+    "icon": "tagspaces-icon.png"
+  },
+  {
+    "slug": "temps",
+    "name": "Temps",
+    "description": "A simple but smart menubar weather app.",
+    "website": "https://jackd248.github.io/temps/",
+    "repository": "https://github.com/jackd248/temps",
+    "keywords": [
+      "Temps",
+      "Electron",
+      "Menubar",
+      "Weather",
+      "Temperature",
+      "Forecast"
+    ],
+    "license": "MIT",
+    "icon": "temps-icon.png"
+  },
+  {
+    "slug": "the-poker-timer",
+    "name": "The Poker Timer",
+    "description": "Best tournament clock",
+    "website": "http://www.thepokertimer.com",
+    "keywords": [
+      "tournament",
+      "timer"
+    ],
+    "icon": "the-poker-timer-icon.png"
+  },
+  {
+    "slug": "theme-juice",
+    "name": "Theme Juice",
+    "description": "Local WordPress development made easy",
+    "website": "https://www.themejuice.it",
+    "keywords": [
+      "WordPress",
+      "Local Development",
+      "Vagrant",
+      "Developer Tool",
+      "Deployment",
+      "Web Development",
+      "Virtual Machine",
+      "Workflow"
+    ],
+    "icon": "theme-juice-icon.png"
+  },
+  {
+    "slug": "tiliq",
+    "name": "Tiliq",
+    "description": "The next generation of professional business email",
+    "website": "https://tiliq.com",
+    "keywords": [
+      "email",
+      "productivity"
+    ],
+    "icon": "tiliq-icon.png"
+  },
+  {
+    "slug": "timestamp",
+    "name": "Timestamp",
+    "description": "A better macOS menu bar clock with a customizable date/time display and a calendar.",
+    "website": "https://mzdr.github.io/timestamp/",
+    "repository": "https://github.com/mzdr/timestamp/",
+    "keywords": [
+      "macos",
+      "osx",
+      "clock",
+      "calendar",
+      "systray",
+      "menubar"
+    ],
+    "license": "MIT",
+    "icon": "timestamp-icon.png"
+  },
+  {
+    "slug": "timetable",
+    "name": "TimeTable",
+    "description": "TimeTable in your menubar!",
+    "website": "https://github.com/willyb321/electron-menubar-timetable",
+    "repository": "https://github.com/willyb321/electron-menubar-timetable",
+    "keywords": [
+      "Timetable",
+      "menubar"
+    ],
+    "icon": "timetable-icon.png"
+  },
+  {
+    "slug": "tofino",
+    "name": "Tofino",
+    "description": "Experimental web browser from Mozilla",
+    "website": "https://github.com/mozilla/tofino",
+    "icon": "tofino-icon.png"
+  },
+  {
+    "slug": "translation-editor",
+    "name": "Translation Editor",
+    "description": "Translation files editor for INTL ICU messages (see formatjs.io)",
+    "website": "https://bitbucket.org/bflower/react-intl-editor/wiki/Home",
+    "repository": "https://bitbucket.org/bflower/react-intl-editor",
+    "keywords": [
+      "Translation",
+      "React",
+      "Intl"
+    ],
+    "license": "MIT",
+    "icon": "translation-editor-icon.png"
+  },
+  {
+    "slug": "treevea",
+    "name": "Treevea",
+    "description": "Your PowerPoint® assistant - easily search and reuse all your contents",
+    "website": "https://www.treevea.com/",
+    "keywords": [
+      "powerpoint",
+      "presentations",
+      "slides",
+      "assistant",
+      "search",
+      "reuse"
+    ],
+    "icon": "treevea-icon.png"
+  },
+  {
+    "slug": "trym",
+    "name": "Trym",
+    "description": "Beautiful small app for macOS to help you view, optimize and convert SVG icons",
+    "website": "http://kontentapps.com/trym",
+    "keywords": [
+      "svg"
+    ],
+    "icon": "trym-icon.png"
+  },
+  {
+    "slug": "turbo-download-manager",
+    "name": "Turbo Download Manager",
+    "description": "An open-source multi-threading download manager",
+    "website": "http://add0n.com/turbo-download-manager.html",
+    "icon": "turbo-download-manager-icon.png"
+  },
+  {
+    "slug": "tweakstyle",
+    "name": "TweakStyle",
+    "description": "The next code editor",
+    "website": "https://tweakstyle.com",
+    "icon": "tweakstyle-icon.png"
+  },
+  {
+    "slug": "tweeten",
+    "name": "Tweeten",
+    "description": "A better TweetDeck experience",
+    "website": "http://tweeten.xyz",
+    "keywords": [
+      "twitter",
+      "tweetdeck",
+      "tweetdeck for windows"
+    ],
+    "icon": "tweeten-icon.png"
+  },
+  {
+    "slug": "tweetman",
+    "name": "Tweetman",
+    "description": "Powerful Twitter Client for Desktop",
+    "website": "https://tweetman.kksg.net/en",
+    "icon": "tweetman-icon.png"
+  },
+  {
+    "slug": "typetalk",
+    "name": "Typetalk",
+    "description": "A simply fun chat app for teams.",
+    "website": "https://www.typetalk.in",
+    "keywords": [
+      "chat",
+      "business",
+      "orgainzation",
+      "team"
+    ],
+    "icon": "typetalk-icon.png"
+  },
+  {
+    "slug": "ubauth",
+    "name": "UbAuth",
+    "description": "App to help developers create access tokens for Uber applications with OAuth 2.0",
+    "website": "http://ubauth.enytc.com",
+    "repository": "https://github.com/chrisenytc/ubauth",
+    "keywords": [
+      "uber",
+      "api",
+      "oauth",
+      "developer",
+      "tools"
+    ],
+    "license": "MIT",
+    "icon": "ubauth-icon.png"
+  },
+  {
+    "slug": "un-colored",
+    "name": "(Un)colored",
+    "description": "Next generation desktop rich content editor that saves documents with themes. HTML & Markdown compatible. For Windows, OS X & Linux.",
+    "website": "https://n457.github.io/Uncolored/",
+    "repository": "https://github.com/n457/Uncolored",
+    "keywords": [
+      "rich",
+      "text",
+      "content",
+      "editor",
+      "themes",
+      "html",
+      "markdown",
+      "electron"
+    ],
+    "license": "Apache License 2.0",
+    "icon": "un-colored-icon.png"
+  },
+  {
+    "slug": "uphone",
+    "name": "uPhone",
+    "description": "WebRTC Desktop Phone",
+    "website": "http://www.integraccs.com",
+    "keywords": [
+      "WebRTC",
+      "Contact Center",
+      "Call Center"
+    ],
+    "icon": "uphone-icon.png"
+  },
+  {
+    "slug": "vagrant-manager",
+    "name": "Vagrant Manager",
+    "description": "Vagrant Manager is an status bar menu app that lets you manage all of your vagrant machines from one central location.",
+    "website": "https://github.com/vaibhav-sidapara/vagrant-manager",
+    "repository": "https://github.com/vaibhav-sidapara/vagrant-manager",
+    "keywords": [
+      "vagrant",
+      "manager"
+    ],
+    "license": "MIT",
+    "icon": "vagrant-manager-icon.png"
+  },
+  {
+    "slug": "vectr",
+    "name": "Vectr",
+    "description": "Free Design App For Web + Desktop",
+    "website": "https://vectr.com/",
+    "keywords": [
+      "design",
+      "editor"
+    ],
+    "icon": "vectr-icon.png"
+  },
+  {
+    "slug": "visual-studio-code",
+    "name": "Visual Studio Code",
+    "description": "Open source code editor developed by Microsoft",
+    "website": "https://code.visualstudio.com",
+    "license": "MIT",
+    "featuredOnHomepage": true,
+    "icon": "visual-studio-code-icon.png"
+  },
+  {
+    "slug": "vrap",
+    "name": "Vrap",
+    "description": "360 media player",
+    "website": "http://www.airpano.com/vrap.php?set_language=2",
+    "keywords": [
+      "360 video",
+      "360 player",
+      "VR Player",
+      "360 panorama player",
+      "make 360 video",
+      "krpano",
+      "developer tool"
+    ],
+    "icon": "vrap-icon.png"
+  },
+  {
+    "slug": "wallapatta",
+    "name": "Wallapatta",
+    "description": "Markdown like editor with a layout inspired by Edward Tufte",
+    "website": "http://wallapatta.github.io/",
+    "repository": "https://github.com/wallapatta/wallapatta",
+    "keywords": [
+      "editor",
+      "markdown"
+    ],
+    "license": "MIT",
+    "icon": "wallapatta-icon.png"
+  },
+  {
+    "slug": "webtorrent",
+    "name": "WebTorrent",
+    "description": "The streaming torrent client",
+    "website": "https://webtorrent.io/desktop",
+    "featuredOnHomepage": true,
+    "icon": "webtorrent-icon.png"
+  },
+  {
+    "slug": "weflow",
+    "name": "WeFlow",
+    "description": "A Web development workflow tool based on tmt-workflow",
+    "website": "http://weflow.io/",
+    "repository": "https://github.com/weixin/WeFlow",
+    "keywords": [
+      "Web Development",
+      "Workflow",
+      "Gulp",
+      "Grunt",
+      "Developer Tool"
+    ],
+    "license": "MIT",
+    "icon": "weflow-icon.png"
+  },
+  {
+    "slug": "wire",
+    "name": "Wire",
+    "description": "Modern, private communications",
+    "website": "https://wire.com",
+    "icon": "wire-icon.png"
+  },
+  {
+    "slug": "wonder-reader",
+    "name": "Wonder Reader",
+    "description": "A digital comic book reader",
+    "website": "http://alice-em.github.io/Wonder-Reader/",
+    "repository": "https://github.com/alice-em/Wonder-Reader",
+    "keywords": [
+      "comics",
+      "cbr",
+      "cbz",
+      "comic book"
+    ],
+    "license": "ISC",
+    "icon": "wonder-reader-icon.png"
+  },
+  {
+    "slug": "wordmark",
+    "name": "WordMark",
+    "description": "A lightweight blog publishing editor for Markdown writers",
+    "website": "http://wordmarkapp.com/",
+    "keywords": [
+      "markdown",
+      "editor"
+    ],
+    "icon": "wordmark-icon.png"
+  },
+  {
+    "slug": "wordpress-com",
+    "name": "WordPress.com",
+    "description": "A desktop app for Wordpress",
+    "website": "https://desktop.wordpress.com",
+    "featuredOnHomepage": true,
+    "icon": "wordpress-com-icon.png"
+  },
+  {
+    "slug": "world-history-ap",
+    "name": "World History AP",
+    "description": "Help students study for the rigorous AP exam",
+    "website": "http://whap.tk",
+    "icon": "world-history-ap-icon.png"
+  },
+  {
+    "slug": "wp-express",
+    "name": "WP Express",
+    "description": "Rapid WordPress installer for local development",
+    "website": "http://wpexpress.io",
+    "keywords": [
+      "wordpress",
+      "productivity"
+    ],
+    "icon": "wp-express-icon.png"
+  },
+  {
+    "slug": "yeoman",
+    "name": "Yeoman",
+    "description": "Scaffolding tool for webapps",
+    "website": "https://github.com/yeoman/yeoman-app",
+    "keywords": [
+      "web development",
+      "scaffolding",
+      "productivity"
+    ],
+    "icon": "yeoman-icon.png"
+  },
+  {
+    "slug": "yhat-rodeo",
+    "name": "Yhat Rodeo",
+    "description": "An IDE for data science",
+    "website": "http://www.yhat.com/products/rodeo",
+    "icon": "yhat-rodeo-icon.png"
+  },
+  {
+    "slug": "yout",
+    "name": "Yout",
+    "description": "Yout Player is the new way to watch your playlists from youtube on desktop.",
+    "website": "https://youtplayer.github.io/",
+    "keywords": [
+      "yout",
+      "player",
+      "youtube",
+      "desktop",
+      "playlist"
+    ],
+    "icon": "yout-icon.png"
+  },
+  {
+    "slug": "zeplin",
+    "name": "Zeplin",
+    "description": "Collaboration app for designers and developers",
+    "website": "https://zeplin.io",
+    "keywords": [
+      "design",
+      "development",
+      "collaboration",
+      "sketch",
+      "photoshop"
+    ],
+    "icon": "zeplin-icon.png"
+  },
+  {
+    "slug": "zoommy",
+    "name": "Zoommy",
+    "description": "Helps you find awesome free stock photos for your creative product or inspiration",
+    "website": "http://zoommyapp.com",
+    "icon": "zoommy-icon.png"
+  }
+]
