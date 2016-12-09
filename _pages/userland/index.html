@@ -27,7 +27,15 @@ layout: default
       available in Electron "core".
     </p>
 
-    <h2>Reports</h2>
+    <p>
+      We analyzed metadata from 15,000 public GitHub repositories
+      that depend on <code>electron</code> or <code>electron-prebuilt</code>. To collect
+      this data, we used the GitHub API,
+      the <a href="https://libraries.io/api">Libraries.io API</a>,
+      and the npm registry.
+      All of the tools used to collect this data are open-source. To find out more
+      about how this data is collected, see <a href="https://github.com/electron/electron-userland-reports">electron/electron-userland-reports</a>
+    </p>
 
     <ul class="report-list">
     {% for thing in site.data.userland %}
@@ -43,21 +51,6 @@ layout: default
       {% endfor %}
     {% endfor %}
     </ul>
-
-    <h2>Gathering Data</h2>
-
-    <p>
-      We analyzed metadata from 15,000 public GitHub repositories
-      that depend on <code>electron</code> or <code>electron-prebuilt</code>. To collect
-      this data, we used the GitHub API,
-      the <a href="https://libraries.io/api">Libraries.io API</a>,
-      and the npm registry.
-    </p>
-
-    <p>
-      All of the tools used to collect this data are open-source. To find out more
-      about how this data is collected, see <a href="https://github.com/electron/electron-userland-reports">electron/electron-userland-reports</a>
-    </p>
 
   </div>
 </section>
