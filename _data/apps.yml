@@ -2284,3 +2284,11 @@
     - "productivity"
     - "3D"
   icon: "grabcad-print.png"
+-
+  name: "NOTR"
+  description: "Privacy Focused Notes App"
+  website: "https://notr.likesmuff.in/"
+  keywords:
+    - "productivity"
+    - "privacy"
+  icon: "notr.png"
