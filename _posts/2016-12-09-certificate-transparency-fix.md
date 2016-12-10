@@ -9,6 +9,8 @@ are incorrectly rejected 10 weeks from the build time of [libchromiumcontent],
 Electron's underlying Chrome library. There are no issues with the certificates
 used on the affected sites and replacing these certificates will not help.
 
+---
+
 In Electron 1.4.0 &mdash; 1.4.11 HTTPS requests to sites using these affected
 certificates will fail with network errors after a certain date.
 This affects HTTPS requests made using Chrome's underlying networking APIs
