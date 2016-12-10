@@ -2284,3 +2284,13 @@
     - "productivity"
     - "3D"
   icon: "grabcad-print.png"
+-
+  name: "Hardinfo"
+  description: "Collect and share information about your computer's hardware"
+  website: "https://foozzi.github.io/Hardinfo/"
+  repository: "https://github.com/foozzi/Hardinfo"
+  keywords:
+    - "hardware"
+    - "hardinfo"
+  license: "MIT"
+  icon: "main-icon.png"
