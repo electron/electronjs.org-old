@@ -1,5 +1,5 @@
 ---
-version: v1.4.11
+version: v1.4.12
 category: API
 redirect_from:
     - /docs/v0.24.0/api/dialog/
@@ -83,6 +83,8 @@ The `dialog` module has the following methods:
 Returns `String[]`, an array of file paths chosen by the user,
 if the callback is provided it returns `undefined`.
 
+The `browserWindow` argument allows the dialog to attach itself to a parent window, making it modal.
+
 The `filters` specifies an array of file types that can be displayed or
 selected when you want to limit the user to a specific type. For example:
 
@@ -124,6 +126,8 @@ shown.
 Returns `String`, the path of the file chosen by the user,
 if a callback is provided it returns `undefined`.
 
+The `browserWindow` argument allows the dialog to attach itself to a parent window, making it modal.
+
 The `filters` specifies an array of file types that can be displayed, see
 `dialog.showOpenDialog` for an example.
 
@@ -163,6 +167,8 @@ it returns undefined.
 
 Shows a message box, it will block the process until the message box is closed.
 It returns the index of the clicked button.
+
+The `browserWindow` argument allows the dialog to attach itself to a parent window, making it modal.
 
 If a `callback` is passed, the API call will be asynchronous and the result
 will be passed via `callback(response)`.

@@ -1,5 +1,5 @@
 ---
-version: v1.4.11
+version: v1.4.12
 category: Development
 redirect_from:
     - /docs/v0.24.0/development/setting-up-symbol-server/
