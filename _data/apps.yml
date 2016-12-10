@@ -2284,3 +2284,17 @@
     - "productivity"
     - "3D"
   icon: "grabcad-print.png"
+-
+  name: "Whale"
+  description: "Unofficial Trello app"
+  website: "https://github.com/1000ch/whale"
+  keywords:
+    - "productivity"
+  icon: "whale.png"
+-
+  name: "Quail"
+  description: "Unofficial esa app"
+  website: "https://github.com/1000ch/quail"
+  keywords:
+    - "productivity"
+  icon: "quail.png"
