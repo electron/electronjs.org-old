@@ -2284,3 +2284,11 @@
     - "productivity"
     - "3D"
   icon: "grabcad-print.png"
+-
+  name: "ndm"
+  description: "Npm Desktop Manager"
+  website: "https://720kb.github.io/ndm"
+  repository: "https://github.com/720kb/ndm"
+  keywords:
+    - "productivity"
+  icon: "ndm.png"
