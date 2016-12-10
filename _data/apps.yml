@@ -2284,3 +2284,12 @@
     - "productivity"
     - "3D"
   icon: "grabcad-print.png"
+-
+  name: "Medley"
+  description: "Programming note taking redefined"
+  website: "http://medleytext.net"
+  keywords:
+    - "productivity"
+    - "programming"
+    - "notes"
+  icon: "medleytext.png"
