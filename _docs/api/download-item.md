@@ -1,5 +1,5 @@
 ---
-version: v1.4.11
+version: v1.4.12
 category: API
 redirect_from:
     - /docs/v0.24.0/api/download-item/
@@ -188,3 +188,23 @@ header.
 #### `downloadItem.getState()`
 
 Returns `String` - The current state.  Can be `progressing`, `completed`, `cancelled` or `interrupted`.
+
+**Note:** The following methods are useful specifically to resume a
+`cancelled` item when session is restarted.
+
+#### `downloadItem.getURLChain()`
+
+Returns `String[]` - The complete url chain of the item including any redirects.
+
+#### `downloadItem.getLastModifiedTime()`
+
+Returns `String` - Last-Modified header value.
+
+#### `downloadItem.getETag()`
+
+Returns `String` - ETag header value.
+
+#### `downloadItem.getStartTime()`
+
+Returns `Double` - Number of seconds since the UNIX epoch when the download was
+started.

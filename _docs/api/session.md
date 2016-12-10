@@ -1,5 +1,5 @@
 ---
-version: v1.4.11
+version: v1.4.12
 category: API
 redirect_from:
     - /docs/v0.24.0/api/session/
@@ -385,6 +385,32 @@ Returns `String` - The user agent for this session.
   * `result` Buffer - Blob data.
 
 Returns `Blob` - The blob data associated with the `identifier`.
+
+#### `ses.createInterruptedDownload(options)`
+
+* `options` Object
+  * `path` String - Absolute path of the download.
+  * `urlChain` String[] - Complete URL chain for the download.
+  * `mimeType` String (optional)
+  * `offset` Integer - Start range for the download.
+  * `length` Integer - Total length of the download.
+  * `lastModified` String - Last-Modified header value.
+  * `eTag` String - ETag header value.
+  * `startTime` Double (optional) - Time when download was started in
+    number of seconds since UNIX epoch.
+
+Allows resuming `cancelled` or `interrupted` downloads from previous `Session`.
+The API will generate a [DownloadItem](http://electron.atom.io/docs/api/download-item) that can be accessed with the [will-downloa)
+event. The [DownloadItem](http://electron.atom.io/docs/api/download-item) will not have any `WebContents` associated with it and
+the initial state will be `interrupted`. The download will start only when the
+`resume` API is called on the [DownloadItem](http://electron.atom.io/docs/api/download-item).
+
+#### `ses.clearAuthCache(options[, callback])`
+
+* `options` ([RemovePassword](http://electron.atom.io/docs/api/structures/remove-password) &#124; [RemoveClientCertificat)
+* `callback` Function (optional) - Called when operation is done
+
+Clears the session’s HTTP authentication cache.
 
 ### Instance Properties
 
