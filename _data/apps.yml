@@ -2284,3 +2284,11 @@
     - "productivity"
     - "3D"
   icon: "grabcad-print.png"
+-
+  name: "WhereDat"
+  description: "Search your business apps simultaneously"
+  website: "http://wheredatapp.com"
+  keywords:
+    - "search"
+    - "enterprise"
+  icon: "wheredat.png"
