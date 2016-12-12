@@ -29,26 +29,78 @@ than 1.4.0 are not affected.
 Below is a table of each Electron 1.4 version and the date when
 requests to sites using these affected certificates will start to fail.
 
-| Electron Version | Impact Date                     |
-| :--------------: | :-----------------------------: |
-| 1.3.x            | Unaffected                      |
-| 1.4.0            | Already failing                 |
-| 1.4.1            | Already failing                 |
-| 1.4.2            | Already failing                 |
-| 1.4.3            | December 10th, 2016 9:00 PM PST |
-| 1.4.4            | December 10th, 2016 9:00 PM PST |
-| 1.4.5            | December 10th, 2016 9:00 PM PST |
-| 1.4.6            | January 14th, 2017  9:00 PM PST |
-| 1.4.7            | January 14th, 2017  9:00 PM PST |
-| 1.4.8            | January 14th, 2017  9:00 PM PST |
-| 1.4.9            | January 14th, 2017  9:00 PM PST |
-| 1.4.10           | January 14th, 2017  9:00 PM PST |
-| 1.4.11           | February 11th, 2017 9:00 PM PST |
-| 1.4.12           | Unaffected                      |
+<table class="table table-ruled table-full-width">
+    <thead>
+        <tr class="text-left">
+            <th>Electron Version</th>
+            <th>Impact Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1.3.x</td>
+            <td>Unaffected</td>
+        </tr>
+        <tr>
+            <td>1.4.0</td>
+            <td>Already failing</td>
+        </tr>
+        <tr>
+            <td>1.4.1</td>
+            <td>Already failing</td>
+        </tr>
+        <tr>
+            <td>1.4.2</td>
+            <td>Already failing</td>
+        </tr>
+        <tr>
+            <td>1.4.3</td>
+            <td>December 10th, 2016 9:00 PM PST</td>
+        </tr>
+        <tr>
+            <td>1.4.4</td>
+            <td>December 10th, 2016 9:00 PM PST</td>
+        </tr>
+        <tr>
+            <td>1.4.5</td>
+            <td>December 10th, 2016 9:00 PM PST</td>
+        </tr>
+        <tr>
+            <td>1.4.6</td>
+            <td>January 14th, 2017 9:00 PM PST</td>
+        </tr>
+        <tr>
+            <td>1.4.7</td>
+            <td>January 14th, 2017 9:00 PM PST</td>
+        </tr>
+        <tr>
+            <td>1.4.8</td>
+            <td>January 14th, 2017 9:00 PM PST</td>
+        </tr>
+        <tr>
+            <td>1.4.9</td>
+            <td>January 14th, 2017 9:00 PM PST</td>
+        </tr>
+        <tr>
+            <td>1.4.10</td>
+            <td>January 14th, 2017 9:00 PM PST</td>
+        </tr>
+        <tr>
+            <td>1.4.11</td>
+            <td>February 11th, 2017 9:00 PM PST</td>
+        </tr>
+        <tr>
+            <td>1.4.12</td>
+            <td>Unaffected</td>
+        </tr>
+    </tbody>
+</table>
+
+
 
 You can verify your app's impact date by setting your computer's clock ahead
-and then check to see if https://symbeta.symantec.com/welcome/ successfully
-loads from it.
+and then check to see if [https://symbeta.symantec.com/welcome/](https://symbeta.symantec.com/welcome/)
+successfully loads from it.
 
 ## More Information
 
