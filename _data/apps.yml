@@ -2284,3 +2284,12 @@
     - "productivity"
     - "3D"
   icon: "grabcad-print.png"
+-
+  name: "Gitscout"
+  description: "A beautiful and optimized GitHub Issues experience for macOS"
+  website: "https://gitscout.com"
+  keywords:
+    - "github"
+    - "mac"
+    - "developer tool"
+  icon: "gitscout.png"
