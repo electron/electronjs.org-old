@@ -99,8 +99,8 @@ requests to sites using these affected certificates will start to fail.
 
 
 You can verify your app's impact date by setting your computer's clock ahead
-and then check to see if https://symbeta.symantec.com/welcome/ successfully
-loads from it.
+and then check to see if [https://symbeta.symantec.com/welcome/](https://symbeta.symantec.com/welcome/)
+successfully loads from it.
 
 ## More Information
 
