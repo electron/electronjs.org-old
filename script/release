@@ -8,6 +8,7 @@ set -o nounset    # fail on unset variables
 # Clone the repo
 git clone https://github.com/electron/electron.atom.io
 cd electron.atom.io
+npm install
 npm run build
 npm test
 
