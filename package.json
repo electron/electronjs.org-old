@@ -15,11 +15,13 @@
     "start": "script/server",
     "bootstrap": "script/bootstrap",
     "test": "tape spec/*.js | tap-spec",
-    "rels-vers": "script/releases && script/versions",
-    "docs": "script/docs",
-    "apps": "npm i -D electron/electron-apps && cp node_modules/electron-apps/index.json _data/apps.json && cp node_modules/electron-apps/apps/**/*.png images/apps",
-    "userland": "rm -f _data/userland/* && cp -r node_modules/electron-userland-reports/reports/* _data/userland/",
-    "latest": "npm run rels-vers && npm run docs"
+    "build": "npm-run-all build-*",
+    "build-releases": "script/releases",
+    "build-versions": "script/versions",
+    "build-docs": "script/docs",
+    "build-apps": "npm i -D electron/electron-apps && cp node_modules/electron-apps/index.json _data/apps.json && cp node_modules/electron-apps/apps/**/*.png images/apps",
+    "build-userland": "rm -f _data/userland/* && cp -r node_modules/electron-userland-reports/reports/* _data/userland/",
+    "release": "script/release"
   },
   "homepage": "http://electron.atom.io",
   "dependencies": {
@@ -45,6 +47,7 @@
     "grunt": "^0.4.5",
     "grunt-cli": "^0.1.13",
     "grunt-link-checker": "^0.1.0",
+    "npm-run-all": "^3.1.2",
     "tap-spec": "^4.1.1",
     "tape": "^4.0.0",
     "tmp": "0.0.28"
