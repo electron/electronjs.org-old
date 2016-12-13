@@ -2293,3 +2293,13 @@
     - "mac"
     - "developer tool"
   icon: "gitscout.png"
+-
+  name: "Stacer"
+  description: "Ubuntu System Optimizer"
+  website: "https://github.com/oguzhaninan/Stacer"
+  keywords:
+    - "ubuntu"
+    - "system"
+    - "optimizer"
+  license: ""
+  icon: "stacer.png"
