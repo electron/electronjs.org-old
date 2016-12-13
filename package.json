@@ -19,8 +19,8 @@
     "build-releases": "script/releases",
     "build-versions": "script/versions",
     "build-docs": "script/docs",
-    "build-apps": "npm i -D electron/electron-apps && cp node_modules/electron-apps/index.json _data/apps.json && cp node_modules/electron-apps/apps/**/*.png images/apps",
     "build-userland": "rm -f _data/userland/* && cp -r node_modules/electron-userland-reports/reports/* _data/userland/",
+    "build-apps": "cp node_modules/electron-apps/index.json _data/apps.json && cp node_modules/electron-apps/apps/**/*.png images/apps",
     "release": "script/release"
   },
   "homepage": "http://electron.atom.io",
