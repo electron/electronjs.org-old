@@ -14,37 +14,7 @@ The following is a set of guidelines for contributing to electron.atom.io on Git
 
 ## Adding an app or project to the site
 
-If you have an Electron application or project you'd like to see added, please
-open a pull request. **In your pull request, please make it clear if you are
-involved with the project or have an OK from the project team to add the app
-to the site**. We want to make sure each team is aware and OK with their project
-being added.
-
-Add your app to the list by editing [_data/apps.yml](/_data/apps.yml).
-
-**Please add your app at the bottom of the list**.
-
-* The required fields are `name`, `website`, and `icon`. Everything else is
-  optional, but recommended.
-* Your `website` can be a repository with a `README`, but please provide a destination with information about your app.
-  * You can make a free website with [GitHub Pages](https://pages.github.com)
-* Remove empty optional fields rather than leaving an empty string.
-* Your `icon` must be `256x256` pixels in size.
-* Your `icon` must be a [PNG](https://en.wikipedia.org/wiki/Portable_Network_Graphics).
-* Put your `icon` in the `images/apps` folder.
-
-```yml
--
-  name: "Your App"
-  description: "A few words about your app"
-  website: "https://yourapp.com"
-  repository: "https://github.com/your/app"
-  keywords:
-    - "friends"
-    - "music"
-  license: "MIT"
-  icon: "lowercase-and-url-friendly.png"
-```
+See [github.com/electron/electron-apps#adding-your-app](https://github.com/electron/electron-apps#adding-your-app).
 
 ## Adding a meetup to the site
 
