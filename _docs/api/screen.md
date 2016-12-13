@@ -44,7 +44,7 @@ sort_title: "screen"
 
 > Retrieve information about screen size, displays, cursor position, etc.
 
-Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process), [Renderer](http://electron.atom.io/docs/tutorial/quick-start#renderer-process)
+Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process), [Rendere)
 
 You cannot require or use this module until the `ready` event of the `app`
 module is emitted.

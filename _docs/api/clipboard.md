@@ -44,7 +44,7 @@ sort_title: "clipboard"
 
 > Perform copy and paste operations on the system clipboard.
 
-Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process), [Renderer](http://electron.atom.io/docs/tutorial/quick-start#renderer-process)
+Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process), [Rendere)
 
 The following example shows how to write a string to the clipboard:
 

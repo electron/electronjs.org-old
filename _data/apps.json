@@ -284,6 +284,41 @@
     "icon": "chronocube-icon.png"
   },
   {
+    "slug": "cloudcmd",
+    "name": "Cloud Commander",
+    "description": "Orthodox web file manager with console and editor",
+    "website": "https://cloudcmd.io",
+    "repository": "https://github.com/coderaiser/cloudcmd",
+    "keywords": [
+      "console",
+      "edit",
+      "editor",
+      "file",
+      "file manager",
+      "folder",
+      "orthodox",
+      "view",
+      "viewer",
+      "copy",
+      "rename",
+      "move",
+      "rm",
+      "mv",
+      "cp",
+      "delete",
+      "delete file",
+      "delete directory",
+      "remove",
+      "remove file",
+      "remove directory",
+      "file operation",
+      "pack",
+      "server"
+    ],
+    "license": "MIT",
+    "icon": "cloudcmd-icon.png"
+  },
+  {
     "slug": "cocos-creator",
     "name": "Cocos Creator",
     "description": "Game development tools",
@@ -559,6 +594,17 @@
     "icon": "electorrent-icon.png"
   },
   {
+    "slug": "electro",
+    "name": "Electro",
+    "description": "Open Source DJ App",
+    "website": "https://jspear29.github.io/electro/",
+    "keywords": [
+      "music",
+      "DJ"
+    ],
+    "icon": "electro-icon.png"
+  },
+  {
     "slug": "elite-journal",
     "name": "Elite Journal",
     "description": "Browse the Elite: Dangerous journal easily.",
@@ -583,7 +629,7 @@
   {
     "slug": "etcher",
     "name": "Etcher",
-    "description": "Burn images to SD cards & USB drives, safe & easy",
+    "description": "Flash OS images to SD cards & USB drives, safely and easily.",
     "website": "http://www.etcher.io/",
     "repository": "https://github.com/resin-io/etcher",
     "keywords": [
@@ -607,6 +653,18 @@
     "description": "Reserve an Uber from your Mac",
     "website": "https://fastlaneapp.co",
     "icon": "fastlane-icon.png"
+  },
+  {
+    "slug": "ffftp",
+    "name": "ffftp",
+    "description": "A minimal FTP client for casual users",
+    "website": "http://ffftp.site",
+    "repository": "http://github.com/mitchas/ffftp",
+    "keywords": [
+      "ftp",
+      "development"
+    ],
+    "icon": "ffftp-icon.png"
   },
   {
     "slug": "firebase-admin",
@@ -757,6 +815,17 @@
     "icon": "gala-icon.png"
   },
   {
+    "slug": "galeri",
+    "name": "Galeri",
+    "description": "A perpetual artwork streaming app",
+    "website": "https://www.galeri.io",
+    "keywords": [
+      "art",
+      "painting"
+    ],
+    "icon": "galeri-icon.png"
+  },
+  {
     "slug": "gausssense-desktop",
     "name": "GaussSense Desktop",
     "description": "Experience the powerful prototyping toolkit instantly.",
@@ -799,6 +868,20 @@
     "description": "Animated GIF maker",
     "website": "http://gifmaker.io",
     "icon": "gif-maker-icon.png"
+  },
+  {
+    "slug": "gifbar",
+    "name": "GIFBar",
+    "description": "A system tray icon that helps you find the perfect GIF",
+    "website": "https://github.com/dcrousso/GIFBar#readme",
+    "repository": "https://github.com/dcrousso/GIFBar",
+    "keywords": [
+      "Electron",
+      "GIFs",
+      "search"
+    ],
+    "license": "MIT",
+    "icon": "gifbar-icon.png"
   },
   {
     "slug": "gitbook",
@@ -905,6 +988,19 @@
     "description": "An 'alt+space' launcher for Windows",
     "website": "https://github.com/appetizermonster/hain",
     "icon": "hain-icon.png"
+  },
+  {
+    "slug": "hardinfo",
+    "name": "Hardinfo",
+    "description": "Collect and share information about your computer's hardware",
+    "website": "https://foozzi.github.io/Hardinfo/",
+    "repository": "https://github.com/foozzi/Hardinfo",
+    "keywords": [
+      "hardware",
+      "hardinfo"
+    ],
+    "license": "MIT",
+    "icon": "hardinfo-icon.png"
   },
   {
     "slug": "harmony",
@@ -1248,6 +1344,13 @@
     "icon": "makeappicon-desktop-icon.png"
   },
   {
+    "slug": "manageyum",
+    "name": "Manageyum",
+    "description": "One desktop app to manage Trello, Slack, Whatsapp, Zendesk and more...",
+    "website": "https://manageyum.com",
+    "icon": "manageyum-icon.png"
+  },
+  {
     "slug": "mancy",
     "name": "Mancy",
     "description": "NodeJS REPLNodeJS REPL",
@@ -1309,6 +1412,18 @@
     "description": "Markdown notebook",
     "website": "http://md-note.com",
     "icon": "mdnote-icon.png"
+  },
+  {
+    "slug": "medley",
+    "name": "Medley",
+    "description": "Programming note taking redefined",
+    "website": "http://medleytext.net",
+    "keywords": [
+      "productivity",
+      "programming",
+      "notes"
+    ],
+    "icon": "medley-icon.png"
   },
   {
     "slug": "microstockr",
@@ -1430,6 +1545,23 @@
     "icon": "museeks-icon.png"
   },
   {
+    "slug": "ndm",
+    "name": "ndm",
+    "description": "npm desktop manager",
+    "website": "https://720kb.github.io/ndm",
+    "repository": "https://github.com/720kb/ndm",
+    "keywords": [
+      "npm",
+      "desktop",
+      "manager",
+      "gui",
+      "app",
+      "tool"
+    ],
+    "license": "GPL-3.0",
+    "icon": "ndm-icon.png"
+  },
+  {
     "slug": "negative",
     "name": "Negative",
     "description": "An app for making visual comparisons",
@@ -1457,6 +1589,17 @@
     "description": "A simple Wolfram|Alpha&#174; menubar client for Mac OS X",
     "website": "http://madebybright.com",
     "icon": "nimble-icon.png"
+  },
+  {
+    "slug": "notr",
+    "name": "NOTR",
+    "description": "Privacy Focused Notes App",
+    "website": "https://notr.likesmuff.in/",
+    "keywords": [
+      "productivity",
+      "privacy"
+    ],
+    "icon": "notr-icon.png"
   },
   {
     "slug": "now",
@@ -1509,6 +1652,18 @@
     "description": "A libre desktop OSC bi-directionnal control surface application",
     "website": "https://jean-emmanuel.github.io/open-stage-control",
     "icon": "open-stage-control-icon.png"
+  },
+  {
+    "slug": "openbazaar",
+    "name": "OpenBazaar",
+    "description": "Decentralized p2p marketplace for Bitcoin",
+    "website": "https://openbazaar.org",
+    "repository": "https://github.com/OpenBazaar/openbazaar-desktop",
+    "keywords": [
+      "ecommerce",
+      "bitcoin"
+    ],
+    "icon": "openbazaar-icon.png"
   },
   {
     "slug": "pamfax",
@@ -1741,6 +1896,16 @@
     ],
     "license": "MIT",
     "icon": "qmui-web-icon.png"
+  },
+  {
+    "slug": "quail",
+    "name": "Quail",
+    "description": "Unofficial esa.io app",
+    "website": "https://github.com/1000ch/quail",
+    "keywords": [
+      "productivity"
+    ],
+    "icon": "quail-icon.png"
   },
   {
     "slug": "quickcalc",
@@ -2193,6 +2358,18 @@
     "icon": "theme-juice-icon.png"
   },
   {
+    "slug": "tidal",
+    "name": "TIDAL",
+    "description": "Music streaming service",
+    "website": "https://www.tidal.com",
+    "keywords": [
+      "music",
+      "streaming",
+      "videos"
+    ],
+    "icon": "tidal-icon.png"
+  },
+  {
     "slug": "tiliq",
     "name": "Tiliq",
     "description": "The next generation of professional business email",
@@ -2404,6 +2581,18 @@
     "icon": "visual-studio-code-icon.png"
   },
   {
+    "slug": "vk-messenger",
+    "name": "VK Messenger",
+    "description": "Simple and Easy App for Messaging on VK",
+    "website": "https://vk.com/messenger",
+    "keywords": [
+      "messaging",
+      "chat",
+      "productivity"
+    ],
+    "icon": "vk-messenger-icon.png"
+  },
+  {
     "slug": "vrap",
     "name": "Vrap",
     "description": "360 media player",
@@ -2456,6 +2645,27 @@
     "icon": "weflow-icon.png"
   },
   {
+    "slug": "whale",
+    "name": "Whale",
+    "description": "Unofficial Trello app",
+    "website": "https://github.com/1000ch/whale",
+    "keywords": [
+      "productivity"
+    ],
+    "icon": "whale-icon.png"
+  },
+  {
+    "slug": "wheredat",
+    "name": "WhereDat",
+    "description": "Search your business apps simultaneously",
+    "website": "http://wheredatapp.com",
+    "keywords": [
+      "search",
+      "enterprise"
+    ],
+    "icon": "wheredat-icon.png"
+  },
+  {
     "slug": "wire",
     "name": "Wire",
     "description": "Modern, private communications",
@@ -2501,6 +2711,20 @@
     "description": "Help students study for the rigorous AP exam",
     "website": "http://whap.tk",
     "icon": "world-history-ap-icon.png"
+  },
+  {
+    "slug": "wow-stat",
+    "name": "WoW Stat",
+    "description": "World of Warcraft server uptime monitor",
+    "website": "http://wowst.at/",
+    "repository": "https://github.com/arzynik/wowstat",
+    "license": "MIT",
+    "keywords": [
+      "wow",
+      "game",
+      "warcraft"
+    ],
+    "icon": "wow-stat-icon.png"
   },
   {
     "slug": "wp-express",

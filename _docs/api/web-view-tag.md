@@ -345,7 +345,7 @@ webview.addEventListener('dom-ready', () => {
   * `httpReferrer` String (optional) - A HTTP Referrer url.
   * `userAgent` String (optional) - A user agent originating the request.
   * `extraHeaders` String (optional) - Extra headers separated by "\n"
-  * `postData` ([UploadRawData](http://electron.atom.io/docs/api/structures/upload-raw-data) &#124; [UploadFileSystem](http://electron.atom.io/docs/api/structures/upload-file-system) &#124; [UploadBlob](http://electron.atom.io/docs/api/structures/upload-blob))[] (optional)
+  * `postData` ([UploadRawData](http://electron.atom.io/docs/api/structures/upload-raw-data) &#124; [UploadFil)
 
 Loads the `url` in the webview, the `url` must contain the protocol prefix,
 e.g. the `http://` or `file://`.
