@@ -10,9 +10,9 @@ ul.report-list {
   display: inline-block;
   vertical-align: top;
   @include breakpoint(sm) { width: 100%; }
-  @include breakpoint(md) { width: 49%; }
-  @include breakpoint(lg) { width: 33%; }
-  @include breakpoint(xl) { width: 24%; }
+  @include breakpoint(md) { width: 49%; min-height: 210px; }
+  @include breakpoint(lg) { width: 33%; min-height: 210px; }
+  @include breakpoint(xl) { width: 24%; min-height: 230px; }
 }
 
 .report-list > li .inner {
@@ -24,7 +24,6 @@ ul.report-list {
   background-color: #f6f8f8;
   border: 1px solid #F0F0F0;
   border-radius: 5px;
-  min-height: 140px;
 }
 
 .report-list .inner:hover img {
@@ -60,7 +59,7 @@ ul.report-list {
   line-height: 1.4;
   font-size: 90%;
   text-align: left;
-  padding: 10px 10px 0 10px;
+  margin-top: 10px;
   color: $text-gray-dark;
 }
 
