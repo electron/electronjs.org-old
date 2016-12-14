@@ -1,23 +1,27 @@
 /* Userland List Cards */
 
 ul.report-list {
+  display: block;
   list-style: none;
   margin: 0;
   padding: 0;
+  @include breakpoint(md) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .report-list > li {
-  display: inline-block;
-  vertical-align: top;
-  @include breakpoint(sm) { width: 100%; }
-  @include breakpoint(md) { width: 49%; min-height: 210px; }
-  @include breakpoint(lg) { width: 33%; min-height: 210px; }
-  @include breakpoint(xl) { width: 24%; min-height: 230px; }
-}
-
-.report-list > li .inner {
   display: block;
   margin: 8px;
+  @include breakpoint(md) { flex-basis: 47%; }
+  @include breakpoint(lg) { flex-basis: 31%; }
+  @include breakpoint(xl) { flex-basis: 23%; }
+}
+
+.report-list .inner {
+  display: block;
+  height: 100%;
   padding: 20px;
   text-align: center;
   text-decoration: none;
@@ -26,7 +30,7 @@ ul.report-list {
   border-radius: 5px;
 }
 
-.report-list .inner:hover img {
+.report-list .inner:hover  {
   background-color: #fcfdfd;
 }
 
@@ -43,7 +47,7 @@ ul.report-list {
   transition-duration: .08s;
 }
 
-.report-list.inner:active img {
+.report-list .inner:active img {
   transform: scale(.92);
   transition-duration: 0;
 }
