@@ -18,31 +18,31 @@ git config user.name "Electron Bot"
 npm run build-releases
 if [[ ! `git status --porcelain` ]]; then
   git add .
-  git commit -m "update releases"
+  git commit -avm "update releases"
 fi
 
 npm run build-versions
 if [[ ! `git status --porcelain` ]]; then
   git add .
-  git commit -m "update versions"
+  git commit -avm "update versions"
 fi
 
 npm run build-docs
 if [[ ! `git status --porcelain` ]]; then
   git add .
-  git commit -m "update docs"
+  git commit -avm "update docs"
 fi
 
 npm run build-userland
 if [[ ! `git status --porcelain` ]]; then
   git add .
-  git commit -m "update userland"
+  git commit -avm "update userland"
 fi
 
 npm run build-apps
 if [[ ! `git status --porcelain` ]]; then
   git add .
-  git commit -m "update apps"
+  git commit -avm "update apps"
 fi
 
 # test it all before pushing
