@@ -20,10 +20,15 @@ ul.report-list {
   margin: 8px;
   padding: 20px;
   text-align: center;
+  text-decoration: none;
   background-color: #f6f8f8;
   border: 1px solid #F0F0F0;
   border-radius: 5px;
   min-height: 140px;
+}
+
+.report-list .inner:hover img {
+  background-color: #fcfdfd;
 }
 
 .report-list img {
@@ -31,6 +36,17 @@ ul.report-list {
   width: 120px;
   height: 60px;
   margin-bottom: 0.3em;
+  transition: transform .32s;
+}
+
+.report-list .inner:hover img {
+  transform: scale(1.1);
+  transition-duration: .08s;
+}
+
+.report-list.inner:active img {
+  transform: scale(.92);
+  transition-duration: 0;
 }
 
 .report-list h3 {
@@ -46,7 +62,6 @@ ul.report-list {
   text-align: left;
   padding: 10px 10px 0 10px;
   color: $text-gray-dark;
-  text-decoration: none !important;
 }
 
 /* Filterable Lists (in /userland) */
