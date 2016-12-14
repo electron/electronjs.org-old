@@ -910,6 +910,19 @@
     "icon": "gitkraken-icon.png"
   },
   {
+    "slug": "gitscout",
+    "name": "Gitscout",
+    "description": "A beautiful and optimized GitHub Issues experience for macOS",
+    "website": "https://gitscout.com",
+    "keywords": [
+      "github",
+      "mac",
+      "git",
+      "developer tool"
+    ],
+    "icon": "gitscout-icon.png"
+  },
+  {
     "slug": "glyphr-studio",
     "name": "Glyphr Studio",
     "description": "Glyphr Studio is a free, web based font designer, focusing on font design for hobbyists.",
@@ -2213,6 +2226,18 @@
     ],
     "license": "MIT",
     "icon": "sqlectron-icon.png"
+  },
+  {
+    "slug": "stacer",
+    "name": "Stacer",
+    "description": "Ubuntu System Optimizer",
+    "website": "https://github.com/oguzhaninan/Stacer",
+    "keywords": [
+      "ubuntu",
+      "system",
+      "optimizer"
+    ],
+    "icon": "stacer-icon.png"
   },
   {
     "slug": "stamp",
