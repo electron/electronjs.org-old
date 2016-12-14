@@ -5,14 +5,14 @@ set -o errexit    # always exit on error
 set -o pipefail   # honor exit codes when piping
 set -o nounset    # fail on unset variables
 
-# configure git
-git config user.email "kevin+electronbot@github.com"
-git config user.name "Electron Bot"
-
 # clone the repo
 git clone https://github.com/electron/electron.atom.io
 cd electron.atom.io
 npm install
+
+# configure git
+git config user.email "kevin+electronbot@github.com"
+git config user.name "Electron Bot"
 
 # run each build script independently and commit changes atomically
 npm run build-releases
