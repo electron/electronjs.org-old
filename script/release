@@ -5,21 +5,46 @@ set -o errexit    # always exit on error
 set -o pipefail   # honor exit codes when piping
 set -o nounset    # fail on unset variables
 
-# Clone the repo
-git clone https://github.com/electron/electron.atom.io
-cd electron.atom.io
-npm run build
-npm test
-
-# bail if no changes are present
-[[ `git status --porcelain` ]] || exit
-
-git add .
+# configure git
 git config user.email "kevin+electronbot@github.com"
 git config user.name "Electron Bot"
-git commit -m "new build"
-git push origin gh-pages
 
-# clean up
-cd ..
-rm -rf electron.atom.io
+# clone the repo
+git clone https://github.com/electron/electron.atom.io
+cd electron.atom.io
+npm install
+
+# run each build script independently and commit changes atomically
+npm run build-releases
+if [[ ! `git status --porcelain` ]]; then
+  git add .
+  git commit -m "update releases"
+fi
+
+npm run build-versions
+if [[ ! `git status --porcelain` ]]; then
+  git add .
+  git commit -m "update versions"
+fi
+
+npm run build-docs
+if [[ ! `git status --porcelain` ]]; then
+  git add .
+  git commit -m "update docs"
+fi
+
+npm run build-userland
+if [[ ! `git status --porcelain` ]]; then
+  git add .
+  git commit -m "update userland"
+fi
+
+npm run build-apps
+if [[ ! `git status --porcelain` ]]; then
+  git add .
+  git commit -m "update apps"
+fi
+
+# test it all before pushing
+npm test
+git push origin gh-pages
