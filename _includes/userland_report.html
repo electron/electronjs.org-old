@@ -2,7 +2,6 @@
 
 <section class='page-section'>
   <div class='container'>
-    <p>{{report.description}}</p>
 
     {% if report.collectionType == 'Package' %}
       <div id="{{report.slug}}">
@@ -11,15 +10,15 @@
 
         <ul class="filterable-list">
           {% for package in report.collection %}
-            <li>
-              <a class="package-name" href="http://npm.im/{{package.name}}">{{package.name}}</a>
+            <li data-rank="{{forloop.index}}">
+              <a class="item-name" href="http://npm.im/{{package.name}}">{{package.name}}</a>
               {% if package.description %}
-                - <span class="package-description">{{package.description}}</span>
+                <span class="item-description">{{package.description}}</span>
               {% endif %}
-              <span class="package-keywords" style="display:none">
+              <span class="item-keywords" style="display:none">
                 {% for keyword in package.keywords %}{{keyword}}&nbsp;{% endfor %}
               </span>
-              <span class="package-repository" style="display:none">
+              <span class="item-repository" style="display:none">
                 {{package.repository}}
               </span>
             </li>
@@ -34,14 +33,14 @@
 
         <ul class="filterable-list">
           {% for repo in report.collection %}
-            <li>
-              <a class="repo-name" href="{{repo.htmlUrl}}">{{repo.fullName}}</a>
+            <li data-rank="{{forloop.index}}">
+              <a class="item-name" href="{{repo.htmlUrl}}">{{repo.fullName}}</a>
               {% if repo.description %}
-                - <span class="repo-description">{{repo.description}}</span>
+                <span class="item-description">{{repo.description}}</span>
               {% endif %}
 
               {% if repo.packageJSON and repo.packageJSON.keywords %}
-                <span class="repo-keywords" style="display:none">
+                <span class="item-keywords" style="display:none">
                   {% for keyword in repo.packageJSON.keywords %}{{keyword}}&nbsp;{% endfor %}
                 </span>
               {% endif %}
@@ -92,3 +91,5 @@
 
   </div>
 </section>
+
+{% include userland_footer.html %}

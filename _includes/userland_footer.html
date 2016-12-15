@@ -1,0 +1,22 @@
+<section class="page-section page-section-spacious">
+
+  <ul class="footer-nav">
+    {% for thing in site.data.userland %}
+      {% for report in thing %}
+        {% if report.title %}
+          <li>
+            <a href="{{site.baseurl}}/userland/{{report.slug}}">{{report.title}}</a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+  </ul>
+
+  <p class="text-center">
+    Want to know more about this project? Read the <a href="{{site.baseurl}}/blog/2016/12/15/userland">userland blog post</a>.
+  </p>
+
+  <p class="text-center">
+    Found a bug? Please <a href="https://github.com/electron/electron.atom.io/issues/new?title=A question about userland">let us know</a>.
+  </p>
+</section>

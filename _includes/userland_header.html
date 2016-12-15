@@ -1,18 +1,24 @@
 <div class='subtron text-left'>
   <div class='container'>
-    <a href="{{site.baseurl}}/userland">
-      <h1>Electron Userland</h1>
-    </a>
 
-    {% if page.title == 'Userland' %}
+    {% if page.title == 'Electron Userland' %}
+
+      <a href="{{site.baseurl}}/userland">
+        <h1>Electron Userland</h1>
+      </a>
+
       <p class="lead mb-3">
         The people, apps, and packages of Electron's open-source ecosystem.
       </p>
     {% elsif report %}
+
+      <a href="{{site.baseurl}}/userland/{{report.slug}}">
+        <h1>{{report.title}}</h1>
+      </a>
+
+
       <h4 class="docs-breadcrumbs">
-        <a href="/userland/">Home</a>
-        <span class="docs-breadcrumbs-divider">/</span>
-        <a href="/userland/{{report.slug}}">{{report.title}}</a>
+        <a href="{{site.baseurl}}/userland/{{report.slug}}">{{report.description}}</a>
       </h4>
     {% endif %}
 
@@ -30,15 +36,16 @@
       listClass: 'filterable-list',
       searchClass: 'filterable-list-input',
       valueNames: [
-        'package-name',
-        'package-description',
-        'package-keywords',
-        'package-repository',
-        'repo-name',
-        'repo-description',
-        'repo-keywords'
+        'item-name',
+        'item-description',
+        'item-keywords',
+        'item-repository'
       ]
     }
-    new List(list.parentElement.getAttribute('id'), opts)
+    var list = new List(list.parentElement.getAttribute('id'), opts)
+
+    list.on('update', function() {
+      console.log('list update')
+    })
   }
 </script>
