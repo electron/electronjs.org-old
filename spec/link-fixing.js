@@ -3,7 +3,10 @@
 var fs = require('fs')
 var test = require('tape')
 
-var fixInternalLinks = require('../lib/doc-links.js')
+var docLinks = require('../lib/doc-links.js')
+var fixInternalLinks = docLinks.fixLinks
+var getLinks = docLinks.getLinks
+var fixLink = docLinks.fixLink
 
 var tradRegex = /\[.+\]\(.+\)/g
 var footRegex = /\[[^\]]+\]:\s(.+)/g
@@ -57,4 +60,13 @@ test('Parse empty directory', function (t) {
     t.equal(error.message, 'Found no relative links in files.', 'Got correct error message.')
     t.end()
   })
+})
+
+test('Fixes multiple links on one line', function(t) {
+  var content = 'Process: [Main](../tutorial/quick-start.md#main-process), [Renderer](../tutorial/quick-start.md#renderer-process)'
+  var links = getLinks(content)
+  t.equal(links.length, 2)
+  t.equal(fixLink('/file.md', links[0]), '[Main](http://electron.atom.io/docs/tutorial/quick-start#main-process)')
+  t.equal(fixLink('/file.md', links[1]), '[Renderer](http://electron.atom.io/docs/tutorial/quick-start#renderer-process)')
+  t.end()
 })

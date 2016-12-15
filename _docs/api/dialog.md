@@ -119,7 +119,7 @@ shown.
   * `defaultPath` String (optional)
   * `buttonLabel` String (optional) - Custom label for the confirmation button, when
     left empty the default label will be used.
-  * `filters` structrs/file-filter) (optional
+  * `filters` structrs/file-filter (optional)
 * `callback` Function (optional)
   * `filename` String
 

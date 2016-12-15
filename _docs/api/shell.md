@@ -44,7 +44,7 @@ sort_title: "shell"
 
 > Manage files and URLs using their default applications.
 
-Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process), [Rendere)
+Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process), [Renderer](http://electron.atom.io/docs/tutorial/quick-start#renderer-process)
 
 The `shell` module provides functions related to desktop integration.
 
