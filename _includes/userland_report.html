@@ -89,7 +89,19 @@
       </ul>
     {% endif %}
 
+    <p class="text-center text-muted mt-6">
+      This report was last updated <span data-date="{{report.createdAt}}">{{report.createdAt}}</span>
+    </p>
+
   </div>
+</section>
+
+
+<section class="page-section page-section-spacious bg-shade">
+  <div class='container-narrow text-center'>
+    <h2>Other reports from Electron Userland</h2>
+  </div>
+  {% include userland_report_cards.html %}
 </section>
 
 {% include userland_footer.html %}
