@@ -93,4 +93,4 @@ app.once('ready', () => {
 })
 ```
 
-[disablehardwareacceleration]: ../api/app.md#appdisablehardwareacceleration
+[disablehardwareacceleration]: http://electron.atom.io/docs/api/app#appdisablehardwareacceleration

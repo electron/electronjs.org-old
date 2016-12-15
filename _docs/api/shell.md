@@ -44,7 +44,7 @@ sort_title: "shell"
 
 > Manage files and URLs using their default applications.
 
-Process: [Main](../tutorial/quick-start.md#main-process), [Renderer](../tutorial/quick-start.md#renderer-process)
+Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process), [Rendere)
 
 The `shell` module provides functions related to desktop integration.
 
@@ -111,7 +111,7 @@ Play the beep sound.
   * `update` - Updates specified properties only on an existing shortcut.
   * `replace` - Overwrites an existing shortcut, fails if the shortcut doesn't
     exist.
-* `options` [ShortcutDetails](structures/shortcut-details.md)
+* `options` [ShortcutDetails](http://electron.atom.io/docs/api/structures/shortcut-details)
 
 Returns `Boolean` - Whether the shortcut was created successfully
 
@@ -121,7 +121,7 @@ Creates or updates a shortcut link at `shortcutPath`.
 
 * `shortcutPath` String
 
-Returns [`ShortcutDetails`](structures/shortcut-details.md)
+Returns [`ShortcutDetails`](http://electron.atom.io/docs/api/structures/shortcut-details)
 
 Resolves the shortcut link at `shortcutPath`.
 

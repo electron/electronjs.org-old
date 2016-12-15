@@ -41,7 +41,7 @@ sort_title: "thumbarbutton object"
 
 # ThumbarButton Object
 
-* `icon` [NativeImage](../native-image.md) - The icon showing in thumbnail
+* `icon` [NativeImage](http://electron.atom.io/docs/native-image) - The icon showing in thumbnail
   toolbar.
 * `click` Function
 * `tooltip` String (optional) - The text of the button's tooltip.

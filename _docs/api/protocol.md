@@ -44,7 +44,7 @@ sort_title: "protocol"
 
 > Register a custom protocol and intercept existing protocol requests.
 
-Process: [Main](../tutorial/quick-start.md#main-process)
+Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process)
 
 An example of implementing a protocol that has the same effect as the
 `file://` protocol:
@@ -124,7 +124,7 @@ module gets emitted.
     * `url` String
     * `referrer` String
     * `method` String
-    * `uploadData` [UploadData[]](structures/upload-data.md)
+    * `uploadData` [UploadData[]](http://electron.atom.io/docs/api/structures/upload-data)
   * `callback` Function
     * `filePath` String (optional)
 * `completion` Function (optional)
@@ -158,7 +158,7 @@ treated as a standard scheme.
     * `url` String
     * `referrer` String
     * `method` String
-    * `uploadData` [UploadData[]](structures/upload-data.md)
+    * `uploadData` [UploadData[]](http://electron.atom.io/docs/api/structures/upload-data)
   * `callback` Function
     * `buffer` Buffer (optional)
 * `completion` Function (optional)
@@ -190,7 +190,7 @@ protocol.registerBufferProtocol('atom', (request, callback) => {
     * `url` String
     * `referrer` String
     * `method` String
-    * `uploadData` [UploadData[]](structures/upload-data.md)
+    * `uploadData` [UploadData[]](http://electron.atom.io/docs/api/structures/upload-data)
   * `callback` Function
     * `data` String (optional)
 * `completion` Function (optional)
@@ -210,7 +210,7 @@ should be called with either a `String` or an object that has the `data`,
     * `url` String
     * `referrer` String
     * `method` String
-    * `uploadData` [UploadData[]](structures/upload-data.md)
+    * `uploadData` [UploadData[]](http://electron.atom.io/docs/api/structures/upload-data)
   * `callback` Function
     * `redirectRequest` Object
       * `url` String
@@ -258,7 +258,7 @@ already a handler for `scheme`.
     * `url` String
     * `referrer` String
     * `method` String
-    * `uploadData` [UploadData[]](structures/upload-data.md)
+    * `uploadData` [UploadData[]](http://electron.atom.io/docs/api/structures/upload-data)
   * `callback` Function
     * `filePath` String
 * `completion` Function (optional)
@@ -275,7 +275,7 @@ which sends a file as a response.
     * `url` String
     * `referrer` String
     * `method` String
-    * `uploadData` [UploadData[]](structures/upload-data.md)
+    * `uploadData` [UploadData[]](http://electron.atom.io/docs/api/structures/upload-data)
   * `callback` Function
     * `data` String (optional)
 * `completion` Function (optional)
@@ -292,7 +292,7 @@ which sends a `String` as a response.
     * `url` String
     * `referrer` String
     * `method` String
-    * `uploadData` [UploadData[]](structures/upload-data.md)
+    * `uploadData` [UploadData[]](http://electron.atom.io/docs/api/structures/upload-data)
   * `callback` Function
     * `buffer` Buffer (optional)
 * `completion` Function (optional)
@@ -309,7 +309,7 @@ which sends a `Buffer` as a response.
     * `url` String
     * `referrer` String
     * `method` String
-    * `uploadData` [UploadData[]](structures/upload-data.md)
+    * `uploadData` [UploadData[]](http://electron.atom.io/docs/api/structures/upload-data)
   * `callback` Function
     * `redirectRequest` Object
       * `url` String

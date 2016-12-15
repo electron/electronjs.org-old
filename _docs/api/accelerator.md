@@ -53,8 +53,8 @@ Examples:
 * `CommandOrControl+A`
 * `CommandOrControl+Shift+Z`
 
-Shortcuts are registered with the [`globalShortcut`](global-shortcut.md) module
-using the [`register`](global-shortcut.md#globalshortcutregisteraccelerator-callback)
+Shortcuts are registered with the [`globalShortcut`](http://electron.atom.io/docs/api/global-shortcut) module
+using the [`register`](http://electron.atom.io/docs/api/global-shortcut#globalshortcutregisteraccelerator-callback)
 method, i.e.
 
 ```javascript

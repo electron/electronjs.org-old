@@ -44,7 +44,7 @@ sort_title: "webframe"
 
 > Customize the rendering of the current web page.
 
-Process: [Renderer](../tutorial/quick-start.md#renderer-process)
+Process: [Renderer](http://electron.atom.io/docs/tutorial/quick-start#renderer-process)
 
 An example of zooming current page to 200%.
 
@@ -184,11 +184,11 @@ this limitation.
 
 Returns `Object`:
 
-* `images` [MemoryUsageDetails](structures/memory-usage-details.md)
-* `cssStyleSheets` [MemoryUsageDetails](structures/memory-usage-details.md)
-* `xslStyleSheets` [MemoryUsageDetails](structures/memory-usage-details.md)
-* `fonts` [MemoryUsageDetails](structures/memory-usage-details.md)
-* `other` [MemoryUsageDetails](structures/memory-usage-details.md)
+* `images` [MemoryUsageDetails](http://electron.atom.io/docs/api/structures/memory-usage-details)
+* `cssStyleSheets` [MemoryUsageDetails](http://electron.atom.io/docs/api/structures/memory-usage-details)
+* `xslStyleSheets` [MemoryUsageDetails](http://electron.atom.io/docs/api/structures/memory-usage-details)
+* `fonts` [MemoryUsageDetails](http://electron.atom.io/docs/api/structures/memory-usage-details)
+* `other` [MemoryUsageDetails](http://electron.atom.io/docs/api/structures/memory-usage-details)
 
 Returns an object describing usage information of Blink's internal memory
 caches.

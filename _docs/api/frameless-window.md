@@ -47,12 +47,12 @@ sort_title: "frameless window"
 A frameless window is a window that has no
 [chrome](https://developer.mozilla.org/en-US/docs/Glossary/Chrome), the parts of
 the window, like toolbars, that are not a part of the web page. These are
-options on the [`BrowserWindow`](browser-window.md) class.
+options on the [`BrowserWindow`](http://electron.atom.io/docs/api/browser-window) class.
 
 ## Create a frameless window
 
 To create a frameless window, you need to set `frame` to `false` in
-[BrowserWindow](browser-window.md)'s `options`:
+[BrowserWindow](http://electron.atom.io/docs/api/browser-window)'s `options`:
 
 
 ```javascript
@@ -182,4 +182,4 @@ when you right click on it a system menu will pop up. To make the context menu
 behave correctly on all platforms you should never use a custom context menu on
 draggable areas.
 
-[ignore-mouse-events]: browser-window.md#winsetignoremouseeventsignore
+[ignore-mouse-events]: http://electron.atom.io/docs/api/browser-window#winsetignoremouseeventsignore

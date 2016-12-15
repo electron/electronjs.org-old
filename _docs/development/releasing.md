@@ -139,4 +139,4 @@ git push origin :release # delete remote branch
 
 [the releases page]: https://github.com/electron/electron/releases
 [this bump commit]: https://github.com/electron/electron/commit/78ec1b8f89b3886b856377a1756a51617bc33f5a
-[electron-versioning]: /docs/tutorial/electron-versioning.md
+/docs/tutorial/electron-versioning

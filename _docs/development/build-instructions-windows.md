@@ -128,7 +128,7 @@ $ npm run clean
 
 ## Tests
 
-See [Build System Overview: Tests](build-system-overview.md#tests)
+See [Build System Overview: Tests](http://electron.atom.io/docs/development/build-system-overview#tests)
 
 ## Troubleshooting
 

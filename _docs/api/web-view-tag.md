@@ -243,7 +243,7 @@ If "on", the guest page will be allowed to open new windows.
 ```
 
 A list of strings which specifies the web preferences to be set on the webview, separated by `,`.
-The full list of supported preference strings can be found in [BrowserWindow](browser-window.md#new-browserwindowoptions).
+The full list of supported preference strings can be found in [BrowserWindow](http://electron.atom.io/docs/api/browser-window#new-browserwindowoptions).
 
 The string follows the same format as the features string in `window.open`.
 A name by itself is given a `true` boolean value.
@@ -295,7 +295,7 @@ Prevents the webview contents from resizing when the webview element itself is
 resized.
 
 This can be used in combination with
-[`webContents.setSize`](web-contents.md#contentssetsizeoptions) to manually
+[`webContents.setSize`](http://electron.atom.io/docs/api/web-contents#contentssetsizeoptions) to manually
 resize the webview contents in reaction to a window size change. This can
 make resizing faster compared to relying on the webview element bounds to
 automatically resize the contents.
@@ -345,7 +345,7 @@ webview.addEventListener('dom-ready', () => {
   * `httpReferrer` String (optional) - A HTTP Referrer url.
   * `userAgent` String (optional) - A user agent originating the request.
   * `extraHeaders` String (optional) - Extra headers separated by "\n"
-  * `postData` ([UploadRawData](structures/upload-raw-data.md) | [UploadFile](structures/upload-file.md) | [UploadFileSystem](structures/upload-file-system.md) | [UploadBlob](structures/upload-blob.md))[] - (optional)
+  * `postData` ([UploadRawData](http://electron.atom.io/docs/api/structures/upload-raw-data) &#124; [UploadFil)
 
 Loads the `url` in the webview, the `url` must contain the protocol prefix,
 e.g. the `http://` or `file://`.
@@ -557,12 +557,12 @@ Inserts `text` to the focused element.
 
 Starts a request to find all matches for the `text` in the web page and returns an `Integer`
 representing the request id used for the request. The result of the request can be
-obtained by subscribing to [`found-in-page`](web-view-tag.md#event-found-in-page) event.
+obtained by subscribing to [`found-in-page`](http://electron.atom.io/docs/api/web-view-tag#event-found-in-page) event.
 
 ### `<webview>.stopFindInPage(action)`
 
 * `action` String - Specifies the action to take place when ending
-  [`<webview>.findInPage`](web-view-tag.md#webviewtagfindinpage) request.
+  [`<webview>.findInPage`](http://electron.atom.io/docs/api/web-view-tag#webviewtagfindinpage) request.
   * `clearSelection` - Clear the selection.
   * `keepSelection` - Translate the selection into a normal selection.
   * `activateSelection` - Focus and click the selection node.
@@ -590,7 +590,7 @@ Send an asynchronous message to renderer process via `channel`, you can also
 send arbitrary arguments. The renderer process can handle the message by
 listening to the `channel` event with the `ipcRenderer` module.
 
-See [webContents.send](web-contents.md#webcontentssendchannel-args) for
+See [webContents.send](http://electron.atom.io/docs/api/web-contents#webcontentssendchannel-args) for
 examples.
 
 ### `<webview>.sendInputEvent(event)`
@@ -599,7 +599,7 @@ examples.
 
 Sends an input `event` to the page.
 
-See [webContents.sendInputEvent](web-contents.md#webcontentssendinputeventevent)
+See [webContents.sendInputEvent](http://electron.atom.io/docs/api/web-contents#webcontentssendinputeventevent)
 for detailed description of `event` object.
 
 ### `<webview>.setZoomFactor(factor)`
@@ -623,7 +623,7 @@ Shows pop-up dictionary that searches the selected word on the page.
 
 ### `<webview>.getWebContents()`
 
-Returns `WebContents` - The [WebContents](web-contents.md) associated with this `webview`.
+Returns `WebContents` - The [WebContents](http://electron.atom.io/docs/api/web-contents) associated with this `webview`.
 
 ## DOM events
 
@@ -761,7 +761,7 @@ Returns:
   * `selectionArea` Object - Coordinates of first match region.
 
 Fired when a result is available for
-[`webview.findInPage`](web-view-tag.md#webviewtagfindinpage) request.
+[`webview.findInPage`](http://electron.atom.io/docs/api/web-view-tag#webviewtagfindinpage) request.
 
 ```javascript
 const webview = document.getElementById('foo')

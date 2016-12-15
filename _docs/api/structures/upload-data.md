@@ -43,5 +43,5 @@ sort_title: "uploaddata object"
 
 * `bytes` Buffer - Content being sent.
 * `file` String - Path of file being uploaded.
-* `blobUUID` String - UUID of blob data. Use [ses.getBlobData](../session.md#sesgetblobdataidentifier-callback) method
+* `blobUUID` String - UUID of blob data. Use [ses.getBlobData](http://electron.atom.io/docs/session#sesgetblobdataidentifier-callback) method
   to retrieve the data.

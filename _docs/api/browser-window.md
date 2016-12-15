@@ -44,7 +44,7 @@ sort_title: "browserwindow"
 
 > Create and control browser windows.
 
-Process: [Main](../tutorial/quick-start.md#main-process)
+Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process)
 
 ```javascript
 // In the main process.
@@ -68,7 +68,7 @@ win.loadURL(`file://${__dirname}/app/index.html`)
 ## Frameless window
 
 To create a window without chrome, or a transparent window in arbitrary shape,
-you can use the [Frameless Window](frameless-window.md) API.
+you can use the [Frameless Window](http://electron.atom.io/docs/api/frameless-window) API.
 
 ## Showing window gracefully
 
@@ -154,7 +154,7 @@ child.once('ready-to-show', () => {
 
 > Create and control browser windows.
 
-Process: [Main](../tutorial/quick-start.md#main-process)
+Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process)
 
 `BrowserWindow` is an
 [EventEmitter](http://nodejs.org/api/events.html#events_class_events_eventemitter).
@@ -204,13 +204,13 @@ It creates a new `BrowserWindow` with native properties as set by the `options`.
     `false`.
   * `kiosk` Boolean (optional) - The kiosk mode. Default is `false`.
   * `title` String (optional) - Default window title. Default is `"Electron"`.
-  * `icon` ([NativeImage](native-image.md) | String) (optional) - The window icon. On Windows it is
+  * `icon` ([NativeImage](http://electron.atom.io/docs/api/native-image) &#124; String) (optional) - The window icon. On Windows it is
     recommended to use `ICO` icons to get best visual effects, you can also
     leave it undefined so the executable's icon will be used.
   * `show` Boolean (optional) - Whether window should be shown when created. Default is
     `true`.
   * `frame` Boolean (optional) - Specify `false` to create a
-    [Frameless Window](frameless-window.md). Default is `true`.
+    [Frameless Window](http://electron.atom.io/docs/api/frameless-window). Default is `true`.
   * `parent` BrowserWindow (optional) - Specify parent window. Default is `null`.
   * `modal` Boolean (optional) - Whether this is a modal window. This only works when the
     window is a child window. Default is `false`.
@@ -230,7 +230,7 @@ It creates a new `BrowserWindow` with native properties as set by the `options`.
     implemented on macOS. Default is `true`.
   * `darkTheme` Boolean (optional) - Forces using dark theme for the window, only works on
     some GTK+3 desktop environments. Default is `false`.
-  * `transparent` Boolean (optional) - Makes the window [transparent](frameless-window.md).
+  * `transparent` Boolean (optional) - Makes the window [transparent](http://electron.atom.io/docs/api/frameless-window).
     Default is `false`.
   * `type` String (optional) - The type of window, default is normal window. See more about
     this below.
@@ -264,8 +264,8 @@ It creates a new `BrowserWindow` with native properties as set by the `options`.
       be the absolute file path to the script.
       When node integration is turned off, the preload script can reintroduce
       Node global symbols back to the global scope. See example
-      [here](process.md#event-loaded).
-    * `session` [Session](session.md#class-session) (optional) - Sets the session used by the
+      [here](http://electron.atom.io/docs/api/process#event-loaded).
+    * `session` [Session](http://electron.atom.io/docs/api/session#class-session) (optional) - Sets the session used by the
       page. Instead of passing the Session object directly, you can also choose to
       use the `partition` option instead, which accepts a partition string. When
       both `session` and `partition` are provided, `session` will be preferred.
@@ -526,7 +526,7 @@ Returns `BrowserWindow` - The window that is focused in this application, otherw
 
 #### `BrowserWindow.fromWebContents(webContents)`
 
-* `webContents` [WebContents](web-contents.md)
+* `webContents` [WebContents](http://electron.atom.io/docs/api/web-contents)
 
 Returns `BrowserWindow` - The window that owns the given `webContents`.
 
@@ -594,7 +594,7 @@ win.loadURL('https://github.com')
 A `WebContents` object this window owns. All web page related events and
 operations will be done via it.
 
-See the [`webContents` documentation](web-contents.md) for its methods and
+See the [`webContents` documentation](http://electron.atom.io/docs/api/web-contents) for its methods and
 events.
 
 #### `win.id`
@@ -731,18 +731,18 @@ Closes the currently open [Quick Look][quick-look] panel.
 
 #### `win.setBounds(bounds[, animate])`
 
-* `bounds` [Rectangle](structures/rectangle.md)
+* `bounds` [Rectangle](http://electron.atom.io/docs/api/structures/rectangle)
 * `animate` Boolean (optional) _macOS_
 
 Resizes and moves the window to the supplied bounds
 
 #### `win.getBounds()`
 
-Returns [`Rectangle`](structures/rectangle.md)
+Returns [`Rectangle`](http://electron.atom.io/docs/api/structures/rectangle)
 
 #### `win.setContentBounds(bounds[, animate])`
 
-* `bounds` [Rectangle](structures/rectangle.md)
+* `bounds` [Rectangle](http://electron.atom.io/docs/api/structures/rectangle)
 * `animate` Boolean (optional) _macOS_
 
 Resizes and moves the window's client area (e.g. the web page) to
@@ -750,7 +750,7 @@ the supplied bounds.
 
 #### `win.getContentBounds()`
 
-Returns [`Rectangle`](structures/rectangle.md)
+Returns [`Rectangle`](http://electron.atom.io/docs/api/structures/rectangle)
 
 #### `win.setSize(width, height[, animate])`
 
@@ -1013,9 +1013,9 @@ Returns `Boolean` - Whether the window's document has been edited.
 
 #### `win.capturePage([rect, ]callback)`
 
-* `rect` [Rectangle](structures/rectangle.md) (optional) - The bounds to capture
+* `rect` [Rectangle](http://electron.atom.io/docs/api/structures/rectangle) (optional) - The bounds to capture
 * `callback` Function
-  * `image` [NativeImage](native-image.md)
+  * `image` [NativeImage](http://electron.atom.io/docs/api/native-image)
 
 Same as `webContents.capturePage([rect, ]callback)`.
 
@@ -1026,7 +1026,7 @@ Same as `webContents.capturePage([rect, ]callback)`.
   * `httpReferrer` String (optional) - A HTTP Referrer url.
   * `userAgent` String (optional) - A user agent originating the request.
   * `extraHeaders` String (optional) - Extra headers separated by "\n"
-  * `postData` ([UploadRawData](structures/upload-raw-data.md) | [UploadFile](structures/upload-file.md) | [UploadFileSystem](structures/upload-file-system.md) | [UploadBlob](structures/upload-blob.md))[] - (optional)
+  * `postData` ([UploadRawData](http://electron.atom.io/docs/api/structures/upload-raw-data) &#124; [UploadFil)
 
 Same as `webContents.loadURL(url[, options])`.
 
@@ -1092,7 +1092,7 @@ mode set (but with a value within the valid range), `normal` will be assumed.
 
 #### `win.setOverlayIcon(overlay, description)` _Windows_
 
-* `overlay` [NativeImage](native-image.md) - the icon to display on the bottom
+* `overlay` [NativeImage](http://electron.atom.io/docs/api/native-image) - the icon to display on the bottom
 right corner of the taskbar icon. If this parameter is `null`, the overlay is
 cleared
 * `description` String - a description that will be provided to Accessibility
@@ -1117,7 +1117,7 @@ On Windows and Linux always returns
 
 #### `win.setThumbarButtons(buttons)` _Windows_
 
-* `buttons` [ThumbarButton[]](structures/thumbar-button.md)
+* `buttons` [ThumbarButton[]](http://electron.atom.io/docs/api/structures/thumbar-button)
 
 Returns `Boolean` - Whether the buttons were added successfully
 
@@ -1133,7 +1133,7 @@ array to clean the buttons.
 The `buttons` is an array of `Button` objects:
 
 * `Button` Object
-  * `icon` [NativeImage](native-image.md) - The icon showing in thumbnail
+  * `icon` [NativeImage](http://electron.atom.io/docs/api/native-image) - The icon showing in thumbnail
     toolbar.
   * `click` Function
   * `tooltip` String (optional) - The text of the button's tooltip.
@@ -1155,7 +1155,7 @@ The `flags` is an array that can include following `String`s:
 
 #### `win.setThumbnailClip(region)` _Windows_
 
-* `region` [Rectangle](structures/rectangle.md) - Region of the window
+* `region` [Rectangle](http://electron.atom.io/docs/api/structures/rectangle) - Region of the window
 
 Sets the region of the window to show as the thumbnail image displayed when
 hovering over the window in the taskbar. You can reset the thumbnail to be
@@ -1191,7 +1191,7 @@ Same as `webContents.showDefinitionForSelection()`.
 
 #### `win.setIcon(icon)` _Windows_ _Linux_
 
-* `icon` [NativeImage](native-image.md)
+* `icon` [NativeImage](http://electron.atom.io/docs/api/native-image)
 
 Changes window icon.
 

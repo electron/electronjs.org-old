@@ -44,7 +44,7 @@ sort_title: "debugger"
 
 > An alternate transport for Chrome's remote debugging protocol.
 
-Process: [Main](../tutorial/quick-start.md#main-process)
+Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process)
 
 Chrome Developer Tools has a [special binding][rdp] available at JavaScript
 runtime that allows interacting with pages and instrumenting them.
@@ -122,4 +122,4 @@ Emitted when debugging session is terminated. This happens either when
 Emitted whenever debugging target issues instrumentation event.
 
 [rdp]: https://developer.chrome.com/devtools/docs/debugger-protocol
-[`webContents.findInPage`]: web-contents.md#contentsfindinpagetext-options
+[`webContents.findInPage`]: http://electron.atom.io/docs/api/web-contents#contentsfindinpagetext-options

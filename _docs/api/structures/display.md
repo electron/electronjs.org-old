@@ -46,11 +46,11 @@ sort_title: "display object"
   clock-wise degrees.
 * `scaleFactor` Number - Output device's pixel scale factor.
 * `touchSupport` String - Can be `available`, `unavailable`, `unknown`.
-* `bounds` [Rectangle](rectangle.md)
+* `bounds` [Rectangle](http://electron.atom.io/docs/structures/rectangle)
 * `size` Object
   * `height` Number
   * `width` Number
-* `workArea` [Rectangle](rectangle.md)
+* `workArea` [Rectangle](http://electron.atom.io/docs/structures/rectangle)
 * `workAreaSize` Object
   * `height` Number
   * `width` Number

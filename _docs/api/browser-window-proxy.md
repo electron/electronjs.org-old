@@ -44,7 +44,7 @@ sort_title: "browserwindowproxy"
 
 > Manipulate the child browser window
 
-Process: [Renderer](../tutorial/quick-start.md#renderer-process)
+Process: [Renderer](http://electron.atom.io/docs/tutorial/quick-start#renderer-process)
 
 The `BrowserWindowProxy` object is returned from `window.open` and provides
 limited functionality with the child window.

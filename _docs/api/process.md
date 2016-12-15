@@ -44,7 +44,7 @@ sort_title: "process"
 
 > Extensions to process object.
 
-Process: [Main](../tutorial/quick-start.md#main-process), [Renderer](../tutorial/quick-start.md#renderer-process)
+Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process), [Rendere)
 
 Electron's `process` object is extended from the
 [Node.js `process` object](https://nodejs.org/api/process.html).

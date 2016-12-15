@@ -44,12 +44,12 @@ sort_title: "webcontents"
 
 > Render and control web pages.
 
-Process: [Main](../tutorial/quick-start.md#main-process)
+Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process)
 
 `webContents` is an
 [EventEmitter](https://nodejs.org/api/events.html#events_class_eventemitter).
 It is responsible for rendering and controlling a web page and is a property of
-the [`BrowserWindow`](browser-window.md) object. An example of accessing the
+the [`BrowserWindow`](http://electron.atom.io/docs/api/browser-window) object. An example of accessing the
 `webContents` object:
 
 ```javascript
@@ -91,7 +91,7 @@ Returns `WebContents` - A WebContents instance with the given ID.
 
 > Render and control the contents of a BrowserWindow instance.
 
-Process: [Main](../tutorial/quick-start.md#main-process)
+Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process)
 
 ### Instance Events
 
@@ -293,14 +293,14 @@ Returns:
 * `event` Event
 * `url` URL
 * `error` String - The error code
-* `certificate` [Certificate](structures/certificate.md)
+* `certificate` [Certificate](http://electron.atom.io/docs/api/structures/certificate)
 * `callback` Function
   * `isTrusted` Boolean - Indicates whether the certificate can be considered trusted
 
 Emitted when failed to verify the `certificate` for `url`.
 
 The usage is the same with [the `certificate-error` event of
-`app`](app.md#event-certificate-error).
+`app`](http://electron.atom.io/docs/api/app#event-certificate-error).
 
 #### Event: 'select-client-certificate'
 
@@ -308,14 +308,14 @@ Returns:
 
 * `event` Event
 * `url` URL
-* `certificateList` [Certificate[]](structures/certificate.md)
+* `certificateList` [Certificate[]](http://electron.atom.io/docs/api/structures/certificate)
 * `callback` Function
-  * `certificate` [Certificate](structures/certificate.md) - Must be a certificate from the given list
+  * `certificate` [Certificate](http://electron.atom.io/docs/api/structures/certificate) - Must be a certificate from the given list
 
 Emitted when a client certificate is requested.
 
 The usage is the same with [the `select-client-certificate` event of
-`app`](app.md#event-select-client-certificate).
+`app`](http://electron.atom.io/docs/api/app#event-select-client-certificate).
 
 #### Event: 'login'
 
@@ -338,7 +338,7 @@ Returns:
 
 Emitted when `webContents` wants to do basic auth.
 
-The usage is the same with [the `login` event of `app`](app.md#event-login).
+The usage is the same with [the `login` event of `app`](http://electron.atom.io/docs/api/app#event-login).
 
 #### Event: 'found-in-page'
 
@@ -472,7 +472,7 @@ Emitted when there is a new context menu that needs to be handled.
 Returns:
 
 * `event` Event
-* `devices` [BluetoothDevice[]](structures/bluetooth-device.md)
+* `devices` [BluetoothDevice[]](http://electron.atom.io/docs/api/structures/bluetooth-device)
 * `callback` Function
   * `deviceId` String
 
@@ -507,8 +507,8 @@ app.on('ready', () => {
 Returns:
 
 * `event` Event
-* `dirtyRect` [Rectangle](structures/rectangle.md)
-* `image` [NativeImage](native-image.md) - The image data of the whole frame.
+* `dirtyRect` [Rectangle](http://electron.atom.io/docs/api/structures/rectangle)
+* `image` [NativeImage](http://electron.atom.io/docs/api/native-image) - The image data of the whole frame.
 
 Emitted when a new frame is generated. Only the dirty area is passed in the
 buffer.
@@ -536,7 +536,7 @@ Emitted when the devtools window instructs the webContents to reload
   * `httpReferrer` String (optional) - A HTTP Referrer url.
   * `userAgent` String (optional) - A user agent originating the request.
   * `extraHeaders` String (optional) - Extra headers separated by "\n"
-  * `postData` ([UploadRawData](structures/upload-raw-data.md) | [UploadFile](structures/upload-file.md) | [UploadFileSystem](structures/upload-file-system.md) | [UploadBlob](structures/upload-blob.md))[] - (optional)
+  * `postData` ([UploadRawData](http://electron.atom.io/docs/api/structures/upload-raw-data) &#124; [UploadFil)
 
 Loads the `url` in the window. The `url` must contain the protocol prefix,
 e.g. the `http://` or `file://`. If the load should bypass http cache then
@@ -834,7 +834,7 @@ Inserts `text` to the focused element.
 Starts a request to find all matches for the `text` in the web page and returns
 an `Integer` representing the request id used for the request. The result of
 the request can be obtained by subscribing to
-[`found-in-page`](web-contents.md#event-found-in-page) event.
+[`found-in-page`](http://electron.atom.io/docs/api/web-contents#event-found-in-page) event.
 
 #### `contents.stopFindInPage(action)`
 
@@ -858,13 +858,13 @@ console.log(requestId)
 
 #### `contents.capturePage([rect, ]callback)`
 
-* `rect` [Rectangle](structures/rectangle.md) (optional) - The area of the page to be captured
+* `rect` [Rectangle](http://electron.atom.io/docs/api/structures/rectangle) (optional) - The area of the page to be captured
 * `callback` Function
-  * `image` [NativeImage](native-image.md)
+  * `image` [NativeImage](http://electron.atom.io/docs/api/native-image)
 
 Captures a snapshot of the page within `rect`. Upon completion `callback` will
 be called with `callback(image)`. The `image` is an instance of
-[NativeImage](native-image.md) that stores data of the snapshot. Omitting
+[NativeImage](http://electron.atom.io/docs/api/native-image) that stores data of the snapshot. Omitting
 `rect` will capture the whole visible page.
 
 #### `contents.hasServiceWorker(callback)`
@@ -1103,7 +1103,7 @@ For keyboard events, the `event` object also have following properties:
 
 * `keyCode` String (**required**) - The character that will be sent
   as the keyboard event. Should only use the valid key codes in
-  [Accelerator](accelerator.md).
+  [Accelerator](http://electron.atom.io/docs/api/accelerator).
 
 For mouse events, the `event` object also have following properties:
 
@@ -1132,7 +1132,7 @@ For the `mouseWheel` event, the `event` object also have following properties:
 * `onlyDirty` Boolean (optional) - Defaults to `false`
 * `callback` Function
   * `frameBuffer` Buffer
-  * `dirtyRect` [Rectangle](structures/rectangle.md)
+  * `dirtyRect` [Rectangle](http://electron.atom.io/docs/api/structures/rectangle)
 
 Begin subscribing for presentation events and captured frames, the `callback`
 will be called with `callback(frameBuffer, dirtyRect)` when there is a
@@ -1157,7 +1157,7 @@ End subscribing for frame presentation events.
 
 * `item` Object
   * `file` String
-  * `icon` [NativeImage](native-image.md)
+  * `icon` [NativeImage](http://electron.atom.io/docs/api/native-image)
 
 Sets the `item` as dragging item for current drag-drop operation, `file` is the
 absolute path of the file to be dragged, and `icon` is the image showing under
@@ -1198,7 +1198,7 @@ Set the size of the page. This is only supported for `<webview>` guest contents.
 
 * `options` Object
   * `normal` Object (optional) - Normal size of the page. This can be used in
-    combination with the [`disableguestresize`](web-view-tag.md#disableguestresize)
+    combination with the [`disableguestresize`](http://electron.atom.io/docs/api/web-view-tag#disableguestresize)
     attribute to manually resize the webview guest contents.
     * `width` Integer
     * `height` Integer
@@ -1243,11 +1243,11 @@ A Integer representing the unique ID of this WebContents.
 
 #### `contents.session`
 
-A Session object ([session](session.md)) used by this webContents.
+A Session object ([session](http://electron.atom.io/docs/api/session)) used by this webContents.
 
 #### `contents.hostWebContents`
 
-A [`WebContents`](web-contents.md) instance that might own this `WebContents`.
+A [`WebContents`](http://electron.atom.io/docs/api/web-contents) instance that might own this `WebContents`.
 
 #### `contents.devToolsWebContents`
 
@@ -1258,4 +1258,4 @@ when the DevTools has been closed.
 
 #### `contents.debugger`
 
-A [Debugger](debugger.md) instance for this webContents.
+A [Debugger](http://electron.atom.io/docs/api/debugger) instance for this webContents.

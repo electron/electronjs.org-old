@@ -44,7 +44,7 @@ sort_title: "autoupdater"
 
 > Enable apps to automatically update themselves.
 
-Process: [Main](../tutorial/quick-start.md#main-process)
+Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process)
 
 The `autoUpdater` module provides an interface for the
 [Squirrel](https://github.com/Squirrel) framework.
