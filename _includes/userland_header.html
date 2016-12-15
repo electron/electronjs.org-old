@@ -26,10 +26,16 @@
 </div>
 
 <script src="{{site.baseurl}}/js/vendor/list.min.js"></script>
+<script src="{{site.baseurl}}/js/vendor/query-string.js"></script>
+<script src="{{site.baseurl}}/js/vendor/set-query-string.js"></script>
 <script>
   document.addEventListener('DOMContentLoaded', createFilterList)
 
   function createFilterList () {
+
+    window.filterInput = document.querySelector('.filterable-list-input')
+    filterInput.value = queryString.parse(location.search).q || ''
+
     var list = document.querySelector('.filterable-list')
     if (!list || !list.parentElement) return
     var opts = {
@@ -42,10 +48,12 @@
         'item-repository'
       ]
     }
-    var list = new List(list.parentElement.getAttribute('id'), opts)
+    window.filterList = new List(list.parentElement.getAttribute('id'), opts)
 
-    list.on('update', function() {
-      console.log('list update')
+    filterList.search(filterInput.value)
+
+    filterList.on('updated', function() {
+      setQueryString({q: filterInput.value})
     })
   }
 </script>
