@@ -3,7 +3,7 @@
 var fs = require('fs')
 var test = require('tape')
 
-var fixInternalLinks = require('../lib/doc-links.js')
+var fixInternalLinks = require('../lib/doc-links.js').fixLinks
 
 var tradRegex = /\[.+\]\(.+\)/g
 var footRegex = /\[[^\]]+\]:\s(.+)/g
