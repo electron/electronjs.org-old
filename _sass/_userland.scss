@@ -130,17 +130,3 @@ ul.report-list {
 .author-list-item-details {
   line-height: 1;
 }
-
-/* Utility classes */
-
-.small {
-  font-size: 80%;
-  opacity: 0.7;
-}
-
-.truncate {
-  width: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
