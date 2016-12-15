@@ -44,7 +44,7 @@ sort_title: "downloaditem"
 
 > Control file downloads from remote sources.
 
-Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process)
+Process: [Main](../tutorial/quick-start.md#main-process)
 
 `DownloadItem` is an `EventEmitter` that represents a download item in Electron.
 It is used in `will-download` event of `Session` class, and allows users to

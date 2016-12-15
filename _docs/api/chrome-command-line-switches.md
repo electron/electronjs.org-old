@@ -223,9 +223,9 @@ logging level for all code in the source files under a `foo/bar` directory.
 
 This switch only works when `--enable-logging` is also passed.
 
-[app]: http://electron.atom.io/docs/api/app
-[append-switch]: http://electron.atom.io/docs/api/app#appcommandlineappendswitchswitch-value
-[ready]: http://electron.atom.io/docs/api/app#event-ready
+[app]: app.md
+[append-switch]: app.md#appcommandlineappendswitchswitch-value
+[ready]: app.md#event-ready
 [play-silent-audio]: https://github.com/atom/atom/pull/9485/files
-[debugging-main-process]: http://electron.atom.io/docs/tutorial/debugging-main-process
+[debugging-main-process]: ../tutorial/debugging-main-process.md
 [node-cli]: https://nodejs.org/api/cli.html

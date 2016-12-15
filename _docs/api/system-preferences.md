@@ -44,7 +44,7 @@ sort_title: "systempreferences"
 
 > Get system preferences.
 
-Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process)
+Process: [Main](../tutorial/quick-start.md#main-process)
 
 ```javascript
 const {systemPreferences} = require('electron')

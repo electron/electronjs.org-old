@@ -44,7 +44,7 @@ sort_title: "screen"
 
 > Retrieve information about screen size, displays, cursor position, etc.
 
-Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process), [Rendere)
+Process: [Main](../tutorial/quick-start.md#main-process), [Renderer](../tutorial/quick-start.md#renderer-process)
 
 You cannot require or use this module until the `ready` event of the `app`
 module is emitted.
@@ -102,7 +102,7 @@ The `screen` module emits the following events:
 Returns:
 
 * `event` Event
-* `newDisplay` [Display](http://electron.atom.io/docs/api/structures/display)
+* `newDisplay` [Display](structures/display.md)
 
 Emitted when `newDisplay` has been added.
 
@@ -111,7 +111,7 @@ Emitted when `newDisplay` has been added.
 Returns:
 
 * `event` Event
-* `oldDisplay` [Display](http://electron.atom.io/docs/api/structures/display)
+* `oldDisplay` [Display](structures/display.md)
 
 Emitted when `oldDisplay` has been removed.
 
@@ -120,7 +120,7 @@ Emitted when `oldDisplay` has been removed.
 Returns:
 
 * `event` Event
-* `display` [Display](http://electron.atom.io/docs/api/structures/display)
+* `display` [Display](structures/display.md)
 * `changedMetrics` String[]
 
 Emitted when one or more metrics change in a `display`. The `changedMetrics` is
@@ -158,6 +158,6 @@ Returns `Display` - The display nearest the specified point.
 
 ### `screen.getDisplayMatching(rect)`
 
-* `rect` [Rectangle](http://electron.atom.io/docs/api/structures/rectangle)
+* `rect` [Rectangle](structures/rectangle.md)
 
 Returns `Display` - The display that most closely intersects the provided bounds.

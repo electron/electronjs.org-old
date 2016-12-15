@@ -44,7 +44,7 @@ sort_title: "menu"
 
 > Create native application menus and context menus.
 
-Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process)
+Process: [Main](../tutorial/quick-start.md#main-process)
 
 ### `new Menu()`
 
@@ -85,7 +85,7 @@ for more information on macOS' native actions.
 Returns `Menu`
 
 Generally, the `template` is just an array of `options` for constructing a
-[MenuItem](http://electron.atom.io/docs/api/menu-item). The usage can be referenced above.
+[MenuItem](menu-item.md). The usage can be referenced above.
 
 You can also attach other fields to the element of the `template` and they
 will become properties of the constructed menu items.
@@ -126,13 +126,13 @@ Inserts the `menuItem` to the `pos` position of the menu.
 
 A MenuItem[] array containing the menu's items.
 
-Each `Menu` consists of multiple [`MenuItem`](http://electron.atom.io/docs/api/menu-item)s and each `MenuItem`
+Each `Menu` consists of multiple [`MenuItem`](menu-item.md)s and each `MenuItem`
 can have a submenu.
 
 ## Examples
 
 The `Menu` class is only available in the main process, but you can also use it
-in the render process via the [`remote`](http://electron.atom.io/docs/api/remote) module.
+in the render process via the [`remote`](remote.md) module.
 
 ### Main process
 
@@ -310,7 +310,7 @@ Menu.setApplicationMenu(menu)
 ### Render process
 
 Below is an example of creating a menu dynamically in a web page
-(render process) by using the [`remote`](http://electron.atom.io/docs/api/remote) module, and showing it when
+(render process) by using the [`remote`](remote.md) module, and showing it when
 the user right clicks the page:
 
 ```html

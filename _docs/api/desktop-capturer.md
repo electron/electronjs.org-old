@@ -46,7 +46,7 @@ sort_title: "desktopcapturer"
 > Access information about media sources that can be used to capture audio and
 > video from the desktop using the [`navigator.webkitGetUserMedia`] API.
 
-Process: [Renderer](http://electron.atom.io/docs/tutorial/quick-start#renderer-process)
+Process: [Renderer](../tutorial/quick-start.md#renderer-process)
 
 The following example shows how to capture video from a desktop window whose
 title is `Electron`:
@@ -107,12 +107,12 @@ The `desktopCapturer` module has the following methods:
     thumbnail should be scaled to, defaults to `{width: 150, height: 150}`.
 * `callback` Function
   * `error` Error
-  * `sources` [DesktopCapturerSource[]](http://electron.atom.io/docs/api/structures/desktop-capturer-source)
+  * `sources` [DesktopCapturerSource[]](structures/desktop-capturer-source.md)
 
 Starts gathering information about all available desktop media sources,
 and calls `callback(error, sources)` when finished.
 
-`sources` is an array of [`DesktopCapturerSource`](http://electron.atom.io/docs/api/structures/desktop-capturer-source)
+`sources` is an array of [`DesktopCapturerSource`](structures/desktop-capturer-source.md)
 objects, each `DesktopCapturerSource` represents a screen or an individual window that can be
 captured.
 

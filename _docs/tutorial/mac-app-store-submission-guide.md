@@ -70,7 +70,7 @@ Information section under the team name.
 ### Sign Your App
 
 After finishing the preparation work, you can package your app by following
-[Application Distribution](http://electron.atom.io/docs/tutorial/application-distribution), and then proceed to
+[Application Distribution](application-distribution.md), and then proceed to
 signing your app.
 
 First, you have to add a `ElectronTeamID` key to your app's `Info.plist`, which

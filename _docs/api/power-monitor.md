@@ -44,7 +44,7 @@ sort_title: "powermonitor"
 
 > Monitor power state changes.
 
-Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process)
+Process: [Main](../tutorial/quick-start.md#main-process)
 
 You cannot require or use this module until the `ready` event of the `app`
 module is emitted.

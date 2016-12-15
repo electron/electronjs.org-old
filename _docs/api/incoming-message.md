@@ -44,7 +44,7 @@ sort_title: "incomingmessage"
 
 > Handle responses to HTTP/HTTPS requests.
 
-Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process)
+Process: [Main](../tutorial/quick-start.md#main-process)
 
 `IncomingMessage` implements the [Readable Stream](https://nodejs.org/api/stream.html#stream_readable_streams)
 interface and is therefore an [EventEmitter](https://nodejs.org/api/events.html#events_class_eventemitter).

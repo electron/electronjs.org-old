@@ -42,10 +42,10 @@ sort_title: "certificate object"
 # Certificate Object
 
 * `data` String - PEM encoded data
-* `issuer` [CertificatePrincipal](http://electron.atom.io/docs/api/structures/certificate-principal) - Issuer principal
+* `issuer` [CertificatePrincipal](structures/certificate-principal.md) - Issuer principal
 * `issuerName` String - Issuer's Common Name
 * `issuerCert` Certificate - Issuer certificate (if not self-signed)
-* `subject` [CertificatePrincipal](http://electron.atom.io/docs/api/structures/certificate-principal) - Subject principal
+* `subject` [CertificatePrincipal](structures/certificate-principal.md) - Subject principal
 * `subjectName` String - Subject's Common Name
 * `serialNumber` String - Hex value represented string
 * `validStart` Number - Start date of the certificate being valid in seconds

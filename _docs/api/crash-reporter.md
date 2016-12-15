@@ -44,7 +44,7 @@ sort_title: "crashreporter"
 
 > Submit crash reports to a remote server.
 
-Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process), [Rendere)
+Process: [Main](../tutorial/quick-start.md#main-process), [Renderer](../tutorial/quick-start.md#renderer-process)
 
 The following is an example of automatically submitting a crash report to a
 remote server:
@@ -106,14 +106,14 @@ renderer processes will get reported without `companyName`, `productName` or any
 
 ### `crashReporter.getLastCrashReport()`
 
-Returns [`CrashReport`](http://electron.atom.io/docs/api/structures/crash-report):
+Returns [`CrashReport`](structures/crash-report.md):
 
 Returns the date and ID of the last crash report. If no crash reports have been
 sent or the crash reporter has not been started, `null` is returned.
 
 ### `crashReporter.getUploadedReports()`
 
-Returns [`CrashReport[]`](http://electron.atom.io/docs/api/structures/crash-report):
+Returns [`CrashReport[]`](structures/crash-report.md):
 
 Returns all uploaded crash reports. Each report contains the date and uploaded
 ID.

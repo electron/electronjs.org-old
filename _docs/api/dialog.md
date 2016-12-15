@@ -44,7 +44,7 @@ sort_title: "dialog"
 
 > Display native system dialogs for opening and saving files, alerting, etc.
 
-Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process)
+Process: [Main](../tutorial/quick-start.md#main-process)
 
 An example of showing a dialog to select multiple files and directories:
 
@@ -73,7 +73,7 @@ The `dialog` module has the following methods:
   * `defaultPath` String (optional)
   * `buttonLabel` String (optional) - Custom label for the confirmation button, when
     left empty the default label will be used.
-  * `filters` [FileFilter[]](http://electron.atom.io/docs/api/structures/file-filter) (optional)
+  * `filters` [FileFilter[]](structures/file-filter.md) (optional)
   * `properties` String[] - (optional) - Contains which features the dialog should use, can
     contain `openFile`, `openDirectory`, `multiSelections`, `createDirectory`
     and `showHiddenFiles`.
@@ -119,7 +119,7 @@ shown.
   * `defaultPath` String (optional)
   * `buttonLabel` String (optional) - Custom label for the confirmation button, when
     left empty the default label will be used.
-  * `filters` structrs/file-filter) (optional
+  * `filters` [FileFilter[]](structrs/file-filter.md) (optional)
 * `callback` Function (optional)
   * `filename` String
 
@@ -148,7 +148,7 @@ will be passed via `callback(filename)`
   * `title` String (optional) - Title of the message box, some platforms will not show it.
   * `message` String - Content of the message box.
   * `detail` String (optional) - Extra information of the message.
-  * `icon` [NativeImage](http://electron.atom.io/docs/api/native-image) (optional)
+  * `icon` [NativeImage](native-image.md) (optional)
   * `cancelId` Integer (optional) - The value will be returned when user cancels the dialog
     instead of clicking the buttons of the dialog. By default it is the index
     of the buttons that have "cancel" or "no" as label, or 0 if there is no such

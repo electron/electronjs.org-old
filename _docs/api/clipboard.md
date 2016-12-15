@@ -44,7 +44,7 @@ sort_title: "clipboard"
 
 > Perform copy and paste operations on the system clipboard.
 
-Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process), [Rendere)
+Process: [Main](../tutorial/quick-start.md#main-process), [Renderer](../tutorial/quick-start.md#renderer-process)
 
 The following example shows how to write a string to the clipboard:
 
@@ -98,11 +98,11 @@ Writes `markup` to the clipboard.
 
 * `type` String (optional)
 
-Returns `NativeImage` - The content in the clipboard as a [NativeImage](http://electron.atom.io/docs/api/native-image).
+Returns `NativeImage` - The content in the clipboard as a [NativeImage](native-image.md).
 
 ### `clipboard.writeImage(image[, type])`
 
-* `image` [NativeImage](http://electron.atom.io/docs/api/native-image)
+* `image` [NativeImage](native-image.md)
 * `type` String (optional)
 
 Writes `image` to the clipboard.
@@ -199,7 +199,7 @@ Returns `String` - Reads `data` from the clipboard.
 * `data` Object
   * `text` String (optional)
   * `html` String (optional)
-  * `image` [NativeImage](http://electron.atom.io/docs/api/native-image) (optional)
+  * `image` [NativeImage](native-image.md) (optional)
   * `rtf` String (optional)
   * `bookmark` String (optional) - The title of the url at `text`.
 * `type` String (optional)

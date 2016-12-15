@@ -44,7 +44,7 @@ sort_title: "cookies"
 
 > Query and modify a session's cookies.
 
-Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process)
+Process: [Main](../tutorial/quick-start.md#main-process)
 
 Instances of the `Cookies` class are accessed by using `cookies` property of
 a `Session`.
@@ -79,7 +79,7 @@ The following events are available on instances of `Cookies`:
 #### Event: 'changed'
 
 * `event` Event
-* `cookie` [Cookie](http://electron.atom.io/docs/api/structures/cookie) - The cookie that was changed
+* `cookie` [Cookie](structures/cookie.md) - The cookie that was changed
 * `cause` String - The cause of the change with one of the following values:
   * `explicit` - The cookie was changed directly by a consumer's action.
   * `overwrite` - The cookie was automatically removed due to an insert
@@ -115,7 +115,7 @@ The following methods are available on instances of `Cookies`:
 Sends a request to get all cookies matching `details`, `callback` will be called
 with `callback(error, cookies)` on complete.
 
-`cookies` is an Array of [`cookie`](http://electron.atom.io/docs/api/structures/cookie) objects.
+`cookies` is an Array of [`cookie`](structures/cookie.md) objects.
 
 #### `cookies.set(details, callback)`
 

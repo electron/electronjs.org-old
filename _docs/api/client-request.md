@@ -44,23 +44,23 @@ sort_title: "clientrequest"
 
 > Make HTTP/HTTPS requests.
 
-Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process)
+Process: [Main](../tutorial/quick-start.md#main-process)
 
 `ClientRequest` implements the [Writable Stream](https://nodejs.org/api/stream.html#stream_writable_streams)
 interface and is therefore an [EventEmitter](https://nodejs.org/api/events.html#events_class_eventemitter).
 
 ### `new ClientRequest(options)`
 
-* `options` (Object &#124; String) - If `options` is a String, it is interpreted as
+* `options` (Object | String) - If `options` is a String, it is interpreted as
 the request URL. If it is an object, it is expected to fully specify an HTTP request via the
 following properties:
   * `method` String (optional) - The HTTP request method. Defaults to the GET
 method.
   * `url` String (optional) - The request URL. Must be provided in the absolute
 form with the protocol scheme specified as http or https.
-  * `session` Object (optional) - The [`Session`](http://electron.atom.io/docs/api/session) instance with
+  * `session` Object (optional) - The [`Session`](session.md) instance with
 which the request is associated.
-  * `partition` String (optional) - The name of the [`partition`](http://electron.atom.io/docs/api/session)
+  * `partition` String (optional) - The name of the [`partition`](session.md)
   with which the request is associated. Defaults to the empty string. The
 `session` option prevails on `partition`. Thus if a `session` is explicitly
 specified, `partition` is ignored.
@@ -201,7 +201,7 @@ before first write. Trying to call it after the first write will throw an error.
 
 #### `request.write(chunk[, encoding][, callback])`
 
-* `chunk` (String &#124; Buffer) - A chunk of the request body's data. If it is a
+* `chunk` (String | Buffer) - A chunk of the request body's data. If it is a
 string, it is converted into a Buffer using the specified encoding.
 * `encoding` String (optional) - Used to convert string chunks into Buffer
 objects. Defaults to 'utf-8'.
@@ -219,7 +219,7 @@ it is not allowed to add or remove a custom header.
 
 #### `request.end([chunk][, encoding][, callback])`
 
-* `chunk` (String &#124; Buffer) (optional)
+* `chunk` (String | Buffer) (optional)
 * `encoding` String (optional)
 * `callback` Function (optional)
 

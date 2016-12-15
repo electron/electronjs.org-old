@@ -162,7 +162,7 @@ $ sudo ln -s /usr/lib/libncurses.so.5 /usr/lib/libtinfo.so.5
 
 ## Tests
 
-See [Build System Overview: Tests](http://electron.atom.io/docs/development/build-system-overview#tests)
+See [Build System Overview: Tests](build-system-overview.md#tests)
 
 ## Advanced topics
 

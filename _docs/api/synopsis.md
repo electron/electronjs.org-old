@@ -46,7 +46,7 @@ sort_title: "synopsis"
 
 All of [Node.js's built-in modules](https://nodejs.org/api/) are available in
 Electron and third-party node modules also fully supported as well (including
-the [native modules](http://electron.atom.io/docs/tutorial/using-native-node-modules)).
+the [native modules](../tutorial/using-native-node-modules.md)).
 
 Electron also provides some extra built-in modules for developing native
 desktop applications. Some modules are only available in the main process, some
@@ -55,7 +55,7 @@ both processes.
 
 The basic rule is: if a module is [GUI][gui] or low-level system related, then
 it should be only available in the main process. You need to be familiar with
-the concept of [main process vs. renderer process](http://electron.atom.io/docs/tutorial/quick-start#main-process)
+the concept of [main process vs. renderer process](../tutorial/quick-start.md#main-process)
 scripts to be able to use those modules.
 
 The main process script is just like a normal Node.js script:
@@ -85,7 +85,7 @@ extra ability to use node modules:
 </html>
 ```
 
-To run your app, read [Run your app](http://electron.atom.io/docs/tutorial/quick-start#run-your-app).
+To run your app, read [Run your app](../tutorial/quick-start.md#run-your-app).
 
 ## Destructuring assignment
 

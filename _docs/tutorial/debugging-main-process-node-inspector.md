@@ -169,4 +169,4 @@ entry line.
 [node-inspector]: https://github.com/node-inspector/node-inspector
 [node-pre-gyp]: https://github.com/mapbox/node-pre-gyp
 [node-gyp-required-tools]: https://github.com/nodejs/node-gyp#installation
-[how-to-install-native-modules]: http://electron.atom.io/docs/tutorial/using-native-node-modules#how-to-install-native-modules
+[how-to-install-native-modules]: using-native-node-modules.md#how-to-install-native-modules

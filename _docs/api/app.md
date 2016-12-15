@@ -44,7 +44,7 @@ sort_title: "app"
 
 > Control your application's event lifecycle.
 
-Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process)
+Process: [Main](../tutorial/quick-start.md#main-process)
 
 The following example shows how to quit the application when the last window is
 closed:
@@ -196,7 +196,7 @@ Returns:
 * `event` Event
 * `window` BrowserWindow
 
-Emitted when a [browserWindow](http://electron.atom.io/docs/api/browser-window) gets blurred.
+Emitted when a [browserWindow](browser-window.md) gets blurred.
 
 ### Event: 'browser-window-focus'
 
@@ -205,7 +205,7 @@ Returns:
 * `event` Event
 * `window` BrowserWindow
 
-Emitted when a [browserWindow](http://electron.atom.io/docs/api/browser-window) gets focused.
+Emitted when a [browserWindow](browser-window.md) gets focused.
 
 ### Event: 'browser-window-created'
 
@@ -214,7 +214,7 @@ Returns:
 * `event` Event
 * `window` BrowserWindow
 
-Emitted when a new [browserWindow](http://electron.atom.io/docs/api/browser-window) is created.
+Emitted when a new [browserWindow](browser-window.md) is created.
 
 ### Event: 'web-contents-created'
 
@@ -223,17 +223,17 @@ Returns:
 * `event` Event
 * `webContents` WebContents
 
-Emitted when a new [webContents](http://electron.atom.io/docs/api/web-contents) is created.
+Emitted when a new [webContents](web-contents.md) is created.
 
 ### Event: 'certificate-error'
 
 Returns:
 
 * `event` Event
-* `webContents` [WebContents](http://electron.atom.io/docs/api/web-contents)
+* `webContents` [WebContents](web-contents.md)
 * `url` URL
 * `error` String - The error code
-* `certificate` [Certificate](http://electron.atom.io/docs/api/structures/certificate)
+* `certificate` [Certificate](structures/certificate.md)
 * `callback` Function
   * `isTrusted` Boolean - Whether to consider the certificate as trusted
 
@@ -260,11 +260,11 @@ app.on('certificate-error', (event, webContents, url, error, certificate, callba
 Returns:
 
 * `event` Event
-* `webContents` [WebContents](http://electron.atom.io/docs/api/web-contents)
+* `webContents` [WebContents](web-contents.md)
 * `url` URL
-* `certificateList` [Certificate[]](http://electron.atom.io/docs/api/structures/certificate)
+* `certificateList` [Certificate[]](structures/certificate.md)
 * `callback` Function
-  * `certificate` [Certificate](http://electron.atom.io/docs/api/structures/certificate)
+  * `certificate` [Certificate](structures/certificate.md)
 
 Emitted when a client certificate is requested.
 
@@ -287,7 +287,7 @@ app.on('select-client-certificate', (event, webContents, url, list, callback) =>
 Returns:
 
 * `event` Event
-* `webContents` [WebContents](http://electron.atom.io/docs/api/web-contents)
+* `webContents` [WebContents](web-contents.md)
 * `request` Object
   * `method` String
   * `url` URL
@@ -483,7 +483,7 @@ Overrides the current application's name.
 ### `app.getLocale()`
 
 Returns `String` - The current application locale. Possible return values are documented
-[here](http://electron.atom.io/docs/api/locales).
+[here](locales.md).
 
 **Note:** When distributing your packaged app, you have to also ship the
 `locales` folder.
@@ -562,11 +562,11 @@ The API uses the Windows Registry and LSCopyDefaultHandlerForURLScheme internall
 
 ### `app.setUserTasks(tasks)` _Windows_
 
-* `tasks` [Task[]](http://electron.atom.io/docs/api/structures/task) - Array of `Task` objects
+* `tasks` [Task[]](structures/task.md) - Array of `Task` objects
 
 Adds `tasks` to the [Tasks][tasks] category of the JumpList on Windows.
 
-`tasks` is an array of [`Task`](http://electron.atom.io/docs/api/structures/task) objects.
+`tasks` is an array of [`Task`](structures/task.md) objects.
 
 Returns `Boolean` - Whether the call succeeded.
 
@@ -580,7 +580,7 @@ Returns `Object`:
 * `minItems` Integer - The minimum number of items that will be shown in the
   Jump List (for a more detailed description of this value see the
   [MSDN docs][JumpListBeginListMSDN]).
-* `removedItems` [JumpListItem[]](http://electron.atom.io/docs/api/structures/jump-list-item) - Array of `JumpListItem` objects that correspond to
+* `removedItems` [JumpListItem[]](structures/jump-list-item.md) - Array of `JumpListItem` objects that correspond to
   items that the user has explicitly removed from custom categories in the
   Jump List. These items must not be re-added to the Jump List in the **next**
   call to `app.setJumpList()`, Windows will not display any custom category
@@ -588,7 +588,7 @@ Returns `Object`:
 
 ### `app.setJumpList(categories)` _Windows_
 
-* `categories` [JumpListCategory[]](http://electron.atom.io/docs/api/structures/jump-list-category) or `null` - Array of `JumpListCategory` objects.
+* `categories` [JumpListCategory[]](structures/jump-list-category.md) or `null` - Array of `JumpListCategory` objects.
 
 Sets or removes a custom Jump List for the application, and returns one of the
 following strings:
@@ -927,13 +927,13 @@ return true immediately after that call.
 
 ### `app.dock.setMenu(menu)` _macOS_
 
-* `menu` [Menu](http://electron.atom.io/docs/api/menu)
+* `menu` [Menu](menu.md)
 
 Sets the application's [dock menu][dock-menu].
 
 ### `app.dock.setIcon(image)` _macOS_
 
-* `image` [NativeImage](http://electron.atom.io/docs/api/native-image)
+* `image` [NativeImage](native-image.md)
 
 Sets the `image` associated with this dock icon.
 
@@ -944,7 +944,7 @@ Sets the `image` associated with this dock icon.
 [LSCopyDefaultHandlerForURLScheme]: https://developer.apple.com/library/mac/documentation/Carbon/Reference/LaunchServicesReference/#//apple_ref/c/func/LSCopyDefaultHandlerForURLScheme
 [handoff]: https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/Handoff/HandoffFundamentals/HandoffFundamentals.html
 [activity-type]: https://developer.apple.com/library/ios/documentation/Foundation/Reference/NSUserActivity_Class/index.html#//apple_ref/occ/instp/NSUserActivity/activityType
-[unity-requiremnt]: http://electron.atom.io/docs/tutorial/desktop-environment-integration#unity-launcher-shortcuts-linux
-[mas-builds]: http://electron.atom.io/docs/tutorial/mac-app-store-submission-guide
+[unity-requiremnt]: ../tutorial/desktop-environment-integration.md#unity-launcher-shortcuts-linux
+[mas-builds]: ../tutorial/mac-app-store-submission-guide.md
 [JumpListBeginListMSDN]: https://msdn.microsoft.com/en-us/library/windows/desktop/dd378398(v=vs.85).aspx
 [about-panel-options]: https://developer.apple.com/reference/appkit/nsapplication/1428479-orderfrontstandardaboutpanelwith?language=objc

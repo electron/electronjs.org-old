@@ -44,12 +44,12 @@ sort_title: "session"
 
 > Manage browser sessions, cookies, cache, proxy settings, etc.
 
-Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process)
+Process: [Main](../tutorial/quick-start.md#main-process)
 
 The `session` module can be used to create new `Session` objects.
 
 You can also access the `session` of existing pages by using the `session`
-property of [`WebContents`](http://electron.atom.io/docs/api/web-contents), or from the `session` module.
+property of [`WebContents`](web-contents.md), or from the `session` module.
 
 ```javascript
 const {BrowserWindow} = require('electron')
@@ -96,7 +96,7 @@ A `Session` object, the default session object of the app.
 
 > Get and set properties of a session.
 
-Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process)
+Process: [Main](../tutorial/quick-start.md#main-process)
 
 You can create a `Session` object in the `session` module:
 
@@ -113,8 +113,8 @@ The following events are available on instances of `Session`:
 #### Event: 'will-download'
 
 * `event` Event
-* `item` [DownloadItem](http://electron.atom.io/docs/api/download-item)
-* `webContents` [WebContents](http://electron.atom.io/docs/api/web-contents)
+* `item` [DownloadItem](download-item.md)
+* `webContents` [WebContents](web-contents.md)
 
 Emitted when Electron is about to download `item` in `webContents`.
 
@@ -293,7 +293,7 @@ the original network configuration.
 
 * `proc` Function
   * `hostname` String
-  * `certificate` [Certificate](http://electron.atom.io/docs/api/structures/certificate)
+  * `certificate` [Certificate](structures/certificate.md)
   * `callback` Function
     * `isTrusted` Boolean - Determines if the certificate should be trusted
 
@@ -317,7 +317,7 @@ win.webContents.session.setCertificateVerifyProc((hostname, cert, callback) => {
 #### `ses.setPermissionRequestHandler(handler)`
 
 * `handler` Function
-  * `webContents` Object - [WebContents](http://electron.atom.io/docs/api/web-contents) requesting the permission.
+  * `webContents` Object - [WebContents](web-contents.md) requesting the permission.
   * `permission` String - Enum of 'media', 'geolocation', 'notifications', 'midiSysex',
     'pointerLock', 'fullscreen', 'openExternal'.
   * `callback` Function
@@ -400,14 +400,14 @@ Returns `Blob` - The blob data associated with the `identifier`.
     number of seconds since UNIX epoch.
 
 Allows resuming `cancelled` or `interrupted` downloads from previous `Session`.
-The API will generate a [DownloadItem](http://electron.atom.io/docs/api/download-item) that can be accessed with the [will-downloa)
-event. The [DownloadItem](http://electron.atom.io/docs/api/download-item) will not have any `WebContents` associated with it and
+The API will generate a [DownloadItem](download-item.md) that can be accessed with the [will-download](#event-will-download)
+event. The [DownloadItem](download-item.md) will not have any `WebContents` associated with it and
 the initial state will be `interrupted`. The download will start only when the
-`resume` API is called on the [DownloadItem](http://electron.atom.io/docs/api/download-item).
+`resume` API is called on the [DownloadItem](download-item.md).
 
 #### `ses.clearAuthCache(options[, callback])`
 
-* `options` ([RemovePassword](http://electron.atom.io/docs/api/structures/remove-password) &#124; [RemoveClientCertificat)
+* `options` ([RemovePassword](structures/remove-password.md) | [RemoveClientCertificate](structures/remove-client-certificate.md))
 * `callback` Function (optional) - Called when operation is done
 
 Clears the session’s HTTP authentication cache.
@@ -426,7 +426,7 @@ A WebRequest object for this session.
 
 #### `ses.protocol`
 
-A Protocol object (an instance of [protocol](http://electron.atom.io/docs/api/protocol) module) for this session.
+A Protocol object (an instance of [protocol](protocol.md) module) for this session.
 
 ```javascript
 const {app, session} = require('electron')

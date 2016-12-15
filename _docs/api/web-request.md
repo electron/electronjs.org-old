@@ -44,7 +44,7 @@ sort_title: "webrequest"
 
 > Intercept and modify the contents of a request at various stages of its lifetime.
 
-Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process)
+Process: [Main](../tutorial/quick-start.md#main-process)
 
 Instances of the `WebRequest` class are accessed by using the `webRequest`
 property of a `Session`.
@@ -91,7 +91,7 @@ The following methods are available on instances of `WebRequest`:
     * `method` String
     * `resourceType` String
     * `timestamp` Double
-    * `uploadData` [UploadData[]](http://electron.atom.io/docs/api/structures/upload-data)
+    * `uploadData` [UploadData[]](structures/upload-data.md)
   * `callback` Function
     * `response` Object
       * `cancel` Boolean (optional)

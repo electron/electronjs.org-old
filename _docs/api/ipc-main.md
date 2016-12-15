@@ -44,7 +44,7 @@ sort_title: "ipcmain"
 
 > Communicate asynchronously from the main process to renderer processes.
 
-Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process)
+Process: [Main](../tutorial/quick-start.md#main-process)
 
 The `ipcMain` module is an instance of the
 [EventEmitter](https://nodejs.org/api/events.html#events_class_eventemitter) class. When used in the main
@@ -138,4 +138,4 @@ Returns the `webContents` that sent the message, you can call
 `event.sender.send` to reply to the asynchronous message, see
 [webContents.send][web-contents-send] for more information.
 
-[web-contents-send]: http://electron.atom.io/docs/api/web-contents#webcontentssendchannel-arg1-arg2-
+[web-contents-send]: web-contents.md#webcontentssendchannel-arg1-arg2-

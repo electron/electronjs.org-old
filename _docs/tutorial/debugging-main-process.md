@@ -70,5 +70,5 @@ Like `--debug` but pauses execution on the first line of JavaScript.
 You will need to use a debugger that supports the V8 debugger protocol,
 the following guides should help you to get started:
 
-- [Debugging the Main Process in VSCode](http://electron.atom.io/docs/tutorial/debugging-main-process-vscode)
-- [Debugging the Main Process in node-inspector](http://electron.atom.io/docs/tutorial/debugging-main-process-node-inspector)
+- [Debugging the Main Process in VSCode](debugging-main-process-vscode.md)
+- [Debugging the Main Process in node-inspector](debugging-main-process-node-inspector.md)

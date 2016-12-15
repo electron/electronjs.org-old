@@ -44,9 +44,9 @@ sort_title: "menuitem"
 
 > Add items to native application menus and context menus.
 
-Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process)
+Process: [Main](../tutorial/quick-start.md#main-process)
 
-See [`Menu`](http://electron.atom.io/docs/api/menu) for examples.
+See [`Menu`](menu.md) for examples.
 
 ### `new MenuItem(options)`
 
@@ -62,14 +62,14 @@ See [`Menu`](http://electron.atom.io/docs/api/menu) for examples.
     `radio`.
   * `label` String - (optional)
   * `sublabel` String - (optional)
-  * `accelerator` [Accelerator](http://electron.atom.io/docs/api/accelerator) - (optional)
-  * `icon` ([NativeImage](http://electron.atom.io/docs/api/native-image) &#124; String) - (optional)
+  * `accelerator` [Accelerator](accelerator.md) - (optional)
+  * `icon` ([NativeImage](native-image.md) | String) - (optional)
   * `enabled` Boolean - (optional) If false, the menu item will be greyed out and
     unclickable.
   * `visible` Boolean - (optional) If false, the menu item will be entirely hidden.
   * `checked` Boolean - (optional) Should only be specified for `checkbox` or `radio` type
     menu items.
-  * `submenu` (MenuItemConstructorOptions[] &#124; Menu) - (optional) Should be specified for `submenu` type menu items. If
+  * `submenu` (MenuItemConstructorOptions[] | Menu) - (optional) Should be specified for `submenu` type menu items. If
     `submenu` is specified, the `type: 'submenu'` can be omitted. If the value
     is not a `Menu` then it will be automatically converted to one using
     `Menu.buildFromTemplate`.

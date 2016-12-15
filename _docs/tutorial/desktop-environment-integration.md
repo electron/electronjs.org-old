@@ -434,17 +434,17 @@ ipcMain.on('ondragstart', (event, filePath) => {
 })
 ```
 
-[addrecentdocument]: http://electron.atom.io/docs/api/app#appaddrecentdocumentpath-os-x-windows
-[clearrecentdocuments]: http://electron.atom.io/docs/api/app#appclearrecentdocuments-os-x-windows
-[setusertaskstasks]: http://electron.atom.io/docs/api/app#appsetusertaskstasks-windows
-[setprogressbar]: http://electron.atom.io/docs/api/browser-window#winsetprogressbarprogress
-[setoverlayicon]: http://electron.atom.io/docs/api/browser-window#winsetoverlayiconoverlay-description-windows-7
-[setrepresentedfilename]: http://electron.atom.io/docs/api/browser-window#winsetrepresentedfilenamefilename-os-x
-[setdocumentedited]: http://electron.atom.io/docs/api/browser-window#winsetdocumenteditededited-os-x
+[addrecentdocument]: ../api/app.md#appaddrecentdocumentpath-os-x-windows
+[clearrecentdocuments]: ../api/app.md#appclearrecentdocuments-os-x-windows
+[setusertaskstasks]: ../api/app.md#appsetusertaskstasks-windows
+[setprogressbar]: ../api/browser-window.md#winsetprogressbarprogress
+[setoverlayicon]: ../api/browser-window.md#winsetoverlayiconoverlay-description-windows-7
+[setrepresentedfilename]: ../api/browser-window.md#winsetrepresentedfilenamefilename-os-x
+[setdocumentedited]: ../api/browser-window.md#winsetdocumenteditededited-os-x
 [app-registration]: http://msdn.microsoft.com/en-us/library/windows/desktop/ee872121(v=vs.85).aspx
 [unity-launcher]: https://help.ubuntu.com/community/UnityLaunchersAndDesktopFiles#Adding_shortcuts_to_a_launcher
-[setthumbarbuttons]: http://electron.atom.io/docs/api/browser-window#winsetthumbarbuttonsbuttons-windows-7
-[tray-balloon]: http://electron.atom.io/docs/api/tray#traydisplayballoonoptions-windows
+[setthumbarbuttons]: ../api/browser-window.md#winsetthumbarbuttonsbuttons-windows-7
+[tray-balloon]: ../api/tray.md#traydisplayballoonoptions-windows
 [app-user-model-id]: https://msdn.microsoft.com/en-us/library/windows/desktop/dd378459(v=vs.85).aspx
 [notification-spec]: https://developer.gnome.org/notification-spec/
-[flashframe]: http://electron.atom.io/docs/api/browser-window#winflashframeflag
+[flashframe]: ../api/browser-window.md#winflashframeflag

@@ -44,7 +44,7 @@ sort_title: "remote"
 
 > Use main process modules from the renderer process.
 
-Process: [Renderer](http://electron.atom.io/docs/tutorial/quick-start#renderer-process)
+Process: [Renderer](../tutorial/quick-start.md#renderer-process)
 
 The `remote` module provides a simple way to do inter-process communication
 (IPC) between the renderer process (web page) and the main process.
@@ -64,7 +64,7 @@ win.loadURL('https://github.com')
 ```
 
 **Note:** For the reverse (access the renderer process from the main process),
-you can use [webContents.executeJavascript](http://electron.atom.io/docs/api/web-contents#contentsexecutejavascriptcode-usergesture-callback).
+you can use [webContents.executeJavascript](web-contents.md#contentsexecutejavascriptcode-usergesture-callback).
 
 ## Remote Objects
 
@@ -186,12 +186,12 @@ Returns `any` - The object returned by `require(module)` in the main process.
 
 ### `remote.getCurrentWindow()`
 
-Returns `BrowserWindow` - The [`BrowserWindow`](http://electron.atom.io/docs/api/browser-window) object to which this web page
+Returns `BrowserWindow` - The [`BrowserWindow`](browser-window.md) object to which this web page
 belongs.
 
 ### `remote.getCurrentWebContents()`
 
-Returns `WebContents` - The [`WebContents`](http://electron.atom.io/docs/api/web-contents) object of this web page.
+Returns `WebContents` - The [`WebContents`](web-contents.md) object of this web page.
 
 ### `remote.getGlobal(name)`
 

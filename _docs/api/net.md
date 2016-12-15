@@ -44,7 +44,7 @@ sort_title: "net"
 
 > Issue HTTP/HTTPS requests using Chromium's native networking library
 
-Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process)
+Process: [Main](../tutorial/quick-start.md#main-process)
 
 The `net` module is a client-side API for issuing HTTP(S) requests. It is
 similar to the [HTTP](https://nodejs.org/api/http.html) and
@@ -103,11 +103,11 @@ The `net` module has the following methods:
 
 ### `net.request(options)`
 
-* `options` (Object &#124; String) - The `ClientRequest` constructor options.
+* `options` (Object | String) - The `ClientRequest` constructor options.
 
 Returns `ClientRequest`
 
-Creates a [`ClientRequest`](http://electron.atom.io/docs/api/client-request) instance using the provided
+Creates a [`ClientRequest`](./client-request.md) instance using the provided
 `options` which are directly forwarded to the `ClientRequest` constructor.
 The `net.request` method would be used to issue both secure and insecure HTTP
 requests according to the specified protocol scheme in the `options` object.
