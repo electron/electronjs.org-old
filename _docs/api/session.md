@@ -400,14 +400,14 @@ Returns `Blob` - The blob data associated with the `identifier`.
     number of seconds since UNIX epoch.
 
 Allows resuming `cancelled` or `interrupted` downloads from previous `Session`.
-The API will generate a [DownloadItem](http://electron.atom.io/docs/api/download-item) that can be accessed with the [will-downloa)
+The API will generate a [DownloadItem](http://electron.atom.io/docs/api/download-item) that can be accessed with the [will-download](#event-will-download)
 event. The [DownloadItem](http://electron.atom.io/docs/api/download-item) will not have any `WebContents` associated with it and
 the initial state will be `interrupted`. The download will start only when the
 `resume` API is called on the [DownloadItem](http://electron.atom.io/docs/api/download-item).
 
 #### `ses.clearAuthCache(options[, callback])`
 
-* `options` ([RemovePassword](http://electron.atom.io/docs/api/structures/remove-password) &#124; [RemoveClientCertificat)
+* `options` ([RemovePassword](http://electron.atom.io/docs/api/structures/remove-password) &#124; [RemoveClientCertificate](http://electron.atom.io/docs/api/structures/remove-client-certificate))
 * `callback` Function (optional) - Called when operation is done
 
 Clears the session’s HTTP authentication cache.

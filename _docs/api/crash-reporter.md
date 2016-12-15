@@ -44,7 +44,7 @@ sort_title: "crashreporter"
 
 > Submit crash reports to a remote server.
 
-Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process), [Rendere)
+Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process), [Renderer](http://electron.atom.io/docs/tutorial/quick-start#renderer-process)
 
 The following is an example of automatically submitting a crash report to a
 remote server:
