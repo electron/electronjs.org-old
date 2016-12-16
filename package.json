@@ -1,16 +1,12 @@
 {
   "name": "electron.atom.io",
   "version": "1.0.0",
-  "description": "The [website](http://electron.atom.io) for [Electron](https://github.com/electron/electron) (formerly known as Atom-Shell).",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/electron/electron.atom.io.git"
-  },
+  "private": true,
+  "description": "The [website](http://electron.atom.io) for [Electron](https://github.com/electron/electron).",
+  "repository": "https://github.com/electron/electron.atom.io",
+  "homepage": "http://electron.atom.io",
   "author": "GitHub",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/electron/electron.atom.io/issues"
-  },
   "scripts": {
     "start": "script/server",
     "bootstrap": "script/bootstrap",
@@ -24,7 +20,6 @@
     "build-apps": "script/apps",
     "release": "script/release"
   },
-  "homepage": "http://electron.atom.io",
   "dependencies": {
     "awesome-electron": "^2.5.0",
     "cpr": "^0.4.0",
