@@ -38,12 +38,17 @@
   },
   "devDependencies": {
     "cheerio": "^0.20.0",
+    "dedent": "^0.6.0",
     "electron-apps": "github:electron/electron-apps",
     "electron-userland-reports": "1.6.0",
+    "electron-docs": "^3.0.0",
+    "gray-matter": "^2.1.0",
     "grunt": "^0.4.5",
     "grunt-cli": "^0.1.13",
     "grunt-link-checker": "^0.1.0",
+    "href-type": "^1.0.0",
     "npm-run-all": "^3.1.2",
+    "semver": "^5.3.0",
     "tap-spec": "^4.1.1",
     "tape": "^4.0.0",
     "tmp": "0.0.28"
