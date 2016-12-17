@@ -2,65 +2,105 @@
 version: v1.4.12
 category: Tutorial
 redirect_from:
-    - /docs/v0.24.0/tutorial/repl/
-    - /docs/v0.25.0/tutorial/repl/
-    - /docs/v0.26.0/tutorial/repl/
-    - /docs/v0.27.0/tutorial/repl/
-    - /docs/v0.28.0/tutorial/repl/
-    - /docs/v0.29.0/tutorial/repl/
-    - /docs/v0.30.0/tutorial/repl/
-    - /docs/v0.31.0/tutorial/repl/
-    - /docs/v0.32.0/tutorial/repl/
-    - /docs/v0.33.0/tutorial/repl/
-    - /docs/v0.34.0/tutorial/repl/
-    - /docs/v0.35.0/tutorial/repl/
-    - /docs/v0.36.0/tutorial/repl/
-    - /docs/v0.36.3/tutorial/repl/
-    - /docs/v0.36.4/tutorial/repl/
-    - /docs/v0.36.5/tutorial/repl/
-    - /docs/v0.36.6/tutorial/repl/
-    - /docs/v0.36.7/tutorial/repl/
-    - /docs/v0.36.8/tutorial/repl/
-    - /docs/v0.36.9/tutorial/repl/
-    - /docs/v0.36.10/tutorial/repl/
-    - /docs/v0.36.11/tutorial/repl/
-    - /docs/v0.37.0/tutorial/repl/
-    - /docs/v0.37.1/tutorial/repl/
-    - /docs/v0.37.2/tutorial/repl/
-    - /docs/v0.37.3/tutorial/repl/
-    - /docs/v0.37.4/tutorial/repl/
-    - /docs/v0.37.5/tutorial/repl/
-    - /docs/v0.37.6/tutorial/repl/
-    - /docs/v0.37.7/tutorial/repl/
-    - /docs/v0.37.8/tutorial/repl/
-    - /docs/latest/tutorial/repl/
+  - /docs/v0.37.8/tutorial/repl
+  - /docs/v0.37.7/tutorial/repl
+  - /docs/v0.37.6/tutorial/repl
+  - /docs/v0.37.5/tutorial/repl
+  - /docs/v0.37.4/tutorial/repl
+  - /docs/v0.37.3/tutorial/repl
+  - /docs/v0.36.12/tutorial/repl
+  - /docs/v0.37.1/tutorial/repl
+  - /docs/v0.37.0/tutorial/repl
+  - /docs/v0.36.11/tutorial/repl
+  - /docs/v0.36.10/tutorial/repl
+  - /docs/v0.36.9/tutorial/repl
+  - /docs/v0.36.8/tutorial/repl
+  - /docs/v0.36.7/tutorial/repl
+  - /docs/v0.36.6/tutorial/repl
+  - /docs/v0.36.5/tutorial/repl
+  - /docs/v0.36.4/tutorial/repl
+  - /docs/v0.36.3/tutorial/repl
+  - /docs/v0.35.5/tutorial/repl
+  - /docs/v0.36.2/tutorial/repl
+  - /docs/v0.36.0/tutorial/repl
+  - /docs/v0.35.4/tutorial/repl
+  - /docs/v0.35.3/tutorial/repl
+  - /docs/v0.35.2/tutorial/repl
+  - /docs/v0.34.4/tutorial/repl
+  - /docs/v0.35.1/tutorial/repl
+  - /docs/v0.34.3/tutorial/repl
+  - /docs/v0.34.2/tutorial/repl
+  - /docs/v0.34.1/tutorial/repl
+  - /docs/v0.34.0/tutorial/repl
+  - /docs/v0.33.9/tutorial/repl
+  - /docs/v0.33.8/tutorial/repl
+  - /docs/v0.33.7/tutorial/repl
+  - /docs/v0.33.6/tutorial/repl
+  - /docs/v0.33.4/tutorial/repl
+  - /docs/v0.33.3/tutorial/repl
+  - /docs/v0.33.2/tutorial/repl
+  - /docs/v0.33.1/tutorial/repl
+  - /docs/v0.33.0/tutorial/repl
+  - /docs/v0.32.3/tutorial/repl
+  - /docs/v0.32.2/tutorial/repl
+  - /docs/v0.31.2/tutorial/repl
+  - /docs/v0.31.0/tutorial/repl
+  - /docs/v0.30.4/tutorial/repl
+  - /docs/v0.29.2/tutorial/repl
+  - /docs/v0.29.1/tutorial/repl
+  - /docs/v0.28.3/tutorial/repl
+  - /docs/v0.28.2/tutorial/repl
+  - /docs/v0.28.1/tutorial/repl
+  - /docs/v0.28.0/tutorial/repl
+  - /docs/v0.27.3/tutorial/repl
+  - /docs/v0.27.2/tutorial/repl
+  - /docs/v0.27.1/tutorial/repl
+  - /docs/v0.27.0/tutorial/repl
+  - /docs/v0.26.1/tutorial/repl
+  - /docs/v0.26.0/tutorial/repl
+  - /docs/v0.25.3/tutorial/repl
+  - /docs/v0.25.2/tutorial/repl
+  - /docs/v0.25.1/tutorial/repl
+  - /docs/v0.25.0/tutorial/repl
+  - /docs/v0.24.0/tutorial/repl
+  - /docs/v0.23.0/tutorial/repl
+  - /docs/v0.22.3/tutorial/repl
+  - /docs/v0.22.2/tutorial/repl
+  - /docs/v0.22.1/tutorial/repl
+  - /docs/v0.21.3/tutorial/repl
+  - /docs/v0.21.2/tutorial/repl
+  - /docs/v0.21.1/tutorial/repl
+  - /docs/v0.21.0/tutorial/repl
+  - /docs/v0.20.8/tutorial/repl
+  - /docs/v0.20.7/tutorial/repl
+  - /docs/v0.20.6/tutorial/repl
+  - /docs/v0.20.5/tutorial/repl
+  - /docs/v0.20.4/tutorial/repl
+  - /docs/v0.20.3/tutorial/repl
+  - /docs/v0.20.2/tutorial/repl
+  - /docs/v0.20.1/tutorial/repl
+  - /docs/v0.20.0/tutorial/repl
+  - /docs/vlatest/tutorial/repl
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/repl.md'
-title: "REPL"
-sort_title: "repl"
+title: REPL
+excerpt: ''
+sort_title: repl
 ---
-
 # REPL
 
-Read-Eval-Print-Loop (REPL) is a simple, interactive computer programming
-environment that takes single user inputs (i.e. single expressions), evaluates
-them, and returns the result to the user.
+Read-Eval-Print-Loop (REPL) is a simple, interactive computer programming environment that takes single user inputs (i.e. single expressions), evaluates them, and returns the result to the user.
 
 The `repl` module provides a REPL implementation that can be accessed using:
 
-* Assuming you have `electron` or `electron-prebuilt` installed as a local
-  project dependency:
+*   Assuming you have `electron` or `electron-prebuilt` installed as a local project dependency:
 
-  ```sh
-  ./node_modules/.bin/electron --interactive
-  ```
-* Assuming you have `electron` or `electron-prebuilt` installed globally:
+        ./node_modules/.bin/electron --interactive
 
-  ```sh
-  electron --interactive
-  ```
+*   Assuming you have `electron` or `electron-prebuilt` installed globally:
 
-This only creates a REPL for the main process. You can use the Console
-tab of the Dev Tools to get a REPL for the renderer processes.
+        electron --interactive
+
+This only creates a REPL for the main process. You can use the Console tab of the Dev Tools to get a REPL for the renderer processes.
 
 **Note:** `electron --interactive` is not available on Windows.
 
