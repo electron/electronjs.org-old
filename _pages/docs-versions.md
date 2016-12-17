@@ -8,6 +8,6 @@ category: ignore
 
 ## Older Versions
 
-{% for version in site.available_versions reversed %}
-- [{{ version }}](https://github.com/electron/electron/tree/{{ version }}/docs)
+{% for version in site.data.versions %}
+- [{{ version.version }}](https://github.com/electron/electron/tree/{{ version.version }}/docs)
 {% endfor %}
