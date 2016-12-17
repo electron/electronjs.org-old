@@ -90,7 +90,7 @@ sort_title: app
 
 > Control your application's event lifecycle.
 
-Process: [Main](/docs/tutorial/quick-start#main-process)
+Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process)
 
 The following example shows how to quit the application when the last window is closed:
 
@@ -204,7 +204,7 @@ Returns:
 *   `event` Event
 *   `window` BrowserWindow
 
-Emitted when a [browserWindow](/docs/api/browser-window) gets blurred.
+Emitted when a [browserWindow]({{site.baseurl}}/docs/api/browser-window) gets blurred.
 
 ### Event: 'browser-window-focus'
 
@@ -213,7 +213,7 @@ Returns:
 *   `event` Event
 *   `window` BrowserWindow
 
-Emitted when a [browserWindow](/docs/api/browser-window) gets focused.
+Emitted when a [browserWindow]({{site.baseurl}}/docs/api/browser-window) gets focused.
 
 ### Event: 'browser-window-created'
 
@@ -222,7 +222,7 @@ Returns:
 *   `event` Event
 *   `window` BrowserWindow
 
-Emitted when a new [browserWindow](/docs/api/browser-window) is created.
+Emitted when a new [browserWindow]({{site.baseurl}}/docs/api/browser-window) is created.
 
 ### Event: 'web-contents-created'
 
@@ -231,17 +231,17 @@ Returns:
 *   `event` Event
 *   `webContents` WebContents
 
-Emitted when a new [webContents](/docs/api/web-contents) is created.
+Emitted when a new [webContents]({{site.baseurl}}/docs/api/web-contents) is created.
 
 ### Event: 'certificate-error'
 
 Returns:
 
 *   `event` Event
-*   `webContents` [WebContents](/docs/api/web-contents)
+*   `webContents` [WebContents]({{site.baseurl}}/docs/api/web-contents)
 *   `url` URL
 *   `error` String - The error code
-*   `certificate` [Certificate](/docs/api/structures/certificate)
+*   `certificate` [Certificate]({{site.baseurl}}/docs/api/structures/certificate)
 *   `callback` Function
     *   `isTrusted` Boolean - Whether to consider the certificate as trusted
 
@@ -264,11 +264,11 @@ Emitted when failed to verify the `certificate` for `url`, to trust the certific
 Returns:
 
 *   `event` Event
-*   `webContents` [WebContents](/docs/api/web-contents)
+*   `webContents` [WebContents]({{site.baseurl}}/docs/api/web-contents)
 *   `url` URL
-*   `certificateList` [Certificate[]](/docs/api/structures/certificate)
+*   `certificateList` [Certificate[]]({{site.baseurl}}/docs/api/structures/certificate)
 *   `callback` Function
-    *   `certificate` [Certificate](/docs/api/structures/certificate)
+    *   `certificate` [Certificate]({{site.baseurl}}/docs/api/structures/certificate)
 
 Emitted when a client certificate is requested.
 
@@ -286,7 +286,7 @@ The `url` corresponds to the navigation entry requesting the client certificate 
 Returns:
 
 *   `event` Event
-*   `webContents` [WebContents](/docs/api/web-contents)
+*   `webContents` [WebContents]({{site.baseurl}}/docs/api/web-contents)
 *   `request` Object
     *   `method` String
     *   `url` URL
@@ -445,7 +445,7 @@ Overrides the current application's name.
 
 ### `app.getLocale()`
 
-Returns `String` - The current application locale. Possible return values are documented [here](/docs/api/locales).
+Returns `String` - The current application locale. Possible return values are documented [here]({{site.baseurl}}/docs/api/locales).
 
 **Note:** When distributing your packaged app, you have to also ship the `locales` folder.
 
@@ -505,11 +505,11 @@ The API uses the Windows Registry and LSCopyDefaultHandlerForURLScheme internall
 
 ### `app.setUserTasks(tasks)` _Windows_
 
-*   `tasks` [Task[]](/docs/api/structures/task) - Array of `Task` objects
+*   `tasks` [Task[]]({{site.baseurl}}/docs/api/structures/task) - Array of `Task` objects
 
 Adds `tasks` to the [Tasks](http://msdn.microsoft.com/en-us/library/windows/desktop/dd378460(v=vs.85).aspx#tasks) category of the JumpList on Windows.
 
-`tasks` is an array of [`Task`](/docs/api/structures/task) objects.
+`tasks` is an array of [`Task`]({{site.baseurl}}/docs/api/structures/task) objects.
 
 Returns `Boolean` - Whether the call succeeded.
 
@@ -520,11 +520,11 @@ Returns `Boolean` - Whether the call succeeded.
 Returns `Object`:
 
 *   `minItems` Integer - The minimum number of items that will be shown in the Jump List (for a more detailed description of this value see the [MSDN docs](https://msdn.microsoft.com/en-us/library/windows/desktop/dd378398(v=vs.85).aspx)).
-*   `removedItems` [JumpListItem[]](/docs/api/structures/jump-list-item) - Array of `JumpListItem` objects that correspond to items that the user has explicitly removed from custom categories in the Jump List. These items must not be re-added to the Jump List in the **next** call to `app.setJumpList()`, Windows will not display any custom category that contains any of the removed items.
+*   `removedItems` [JumpListItem[]]({{site.baseurl}}/docs/api/structures/jump-list-item) - Array of `JumpListItem` objects that correspond to items that the user has explicitly removed from custom categories in the Jump List. These items must not be re-added to the Jump List in the **next** call to `app.setJumpList()`, Windows will not display any custom category that contains any of the removed items.
 
 ### `app.setJumpList(categories)` _Windows_
 
-*   `categories` [JumpListCategory[]](/docs/api/structures/jump-list-category) or `null` - Array of `JumpListCategory` objects.
+*   `categories` [JumpListCategory[]]({{site.baseurl}}/docs/api/structures/jump-list-category) or `null` - Array of `JumpListCategory` objects.
 
 Sets or removes a custom Jump List for the application, and returns one of the following strings:
 
@@ -683,7 +683,7 @@ Sets the counter badge for current app. Setting the count to `0` will hide the b
 
 On macOS it shows on the dock icon. On Linux it only works for Unity launcher,
 
-**Note:** Unity launcher requires the exsistence of a `.desktop` file to work, for more information please read [Desktop Environment Integration](/docs/tutorial/desktop-environment-integration#unity-launcher-shortcuts-linux).
+**Note:** Unity launcher requires the exsistence of a `.desktop` file to work, for more information please read [Desktop Environment Integration]({{site.baseurl}}/docs/tutorial/desktop-environment-integration#unity-launcher-shortcuts-linux).
 
 ### `app.getBadgeCount()` _Linux_ _macOS_
 
@@ -703,7 +703,7 @@ Returns `Object`:
 *   `wasOpenedAsHidden` Boolean - `true` if the app was opened as a hidden login item. This indicates that the app should not open any windows at startup. This setting is only supported on macOS.
 *   `restoreState` Boolean - `true` if the app was opened as a login item that should restore the state from the previous session. This indicates that the app should restore the windows that were open the last time the app was closed. This setting is only supported on macOS.
 
-**Note:** This API has no effect on [MAS builds](/docs/tutorial/mac-app-store-submission-guide).
+**Note:** This API has no effect on [MAS builds]({{site.baseurl}}/docs/tutorial/mac-app-store-submission-guide).
 
 ### `app.setLoginItemSettings(settings)` _macOS_ _Windows_
 
@@ -713,7 +713,7 @@ Returns `Object`:
 
 Set the app's login item settings.
 
-**Note:** This API has no effect on [MAS builds](/docs/tutorial/mac-app-store-submission-guide).
+**Note:** This API has no effect on [MAS builds]({{site.baseurl}}/docs/tutorial/mac-app-store-submission-guide).
 
 ### `app.isAccessibilitySupportEnabled()` _macOS_ _Windows_
 
@@ -793,12 +793,12 @@ Returns `Boolean` - Whether the dock icon is visible. The `app.dock.show()` call
 
 ### `app.dock.setMenu(menu)` _macOS_
 
-*   `menu` [Menu](/docs/api/menu)
+*   `menu` [Menu]({{site.baseurl}}/docs/api/menu)
 
 Sets the application's [dock menu](https://developer.apple.com/library/mac/documentation/Carbon/Conceptual/customizing_docktile/concepts/dockconcepts.html#//apple_ref/doc/uid/TP30000986-CH2-TPXREF103).
 
 ### `app.dock.setIcon(image)` _macOS_
 
-*   `image` [NativeImage](/docs/api/native-image)
+*   `image` [NativeImage]({{site.baseurl}}/docs/api/native-image)
 
 Sets the `image` associated with this dock icon.

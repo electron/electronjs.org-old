@@ -90,7 +90,7 @@ sort_title: power-save-blocker
 
 > Block the system from entering low-power (sleep) mode.
 
-Process: [Main](/docs/tutorial/quick-start#main-process)
+Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process)
 
 For example:
 

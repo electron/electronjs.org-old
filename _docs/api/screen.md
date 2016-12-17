@@ -90,7 +90,7 @@ sort_title: screen
 
 > Retrieve information about screen size, displays, cursor position, etc.
 
-Process: [Main](/docs/tutorial/quick-start#main-process), [Renderer](/docs/tutorial/quick-start#renderer-process)
+Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process), [Renderer]({{site.baseurl}}/docs/tutorial/quick-start#renderer-process)
 
 You cannot require or use this module until the `ready` event of the `app` module is emitted.
 
@@ -142,7 +142,7 @@ The `screen` module emits the following events:
 Returns:
 
 *   `event` Event
-*   `newDisplay` [Display](/docs/api/structures/display)
+*   `newDisplay` [Display]({{site.baseurl}}/docs/api/structures/display)
 
 Emitted when `newDisplay` has been added.
 
@@ -151,7 +151,7 @@ Emitted when `newDisplay` has been added.
 Returns:
 
 *   `event` Event
-*   `oldDisplay` [Display](/docs/api/structures/display)
+*   `oldDisplay` [Display]({{site.baseurl}}/docs/api/structures/display)
 
 Emitted when `oldDisplay` has been removed.
 
@@ -160,7 +160,7 @@ Emitted when `oldDisplay` has been removed.
 Returns:
 
 *   `event` Event
-*   `display` [Display](/docs/api/structures/display)
+*   `display` [Display]({{site.baseurl}}/docs/api/structures/display)
 *   `changedMetrics` String[]
 
 Emitted when one or more metrics change in a `display`. The `changedMetrics` is an array of strings that describe the changes. Possible changes are `bounds`, `workArea`, `scaleFactor` and `rotation`.
@@ -196,6 +196,6 @@ Returns `Display` - The display nearest the specified point.
 
 ### `screen.getDisplayMatching(rect)`
 
-*   `rect` [Rectangle](/docs/api/structures/rectangle)
+*   `rect` [Rectangle]({{site.baseurl}}/docs/api/structures/rectangle)
 
 Returns `Display` - The display that most closely intersects the provided bounds.

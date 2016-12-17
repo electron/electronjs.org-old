@@ -90,9 +90,9 @@ sort_title: menu-item
 
 > Add items to native application menus and context menus.
 
-Process: [Main](/docs/tutorial/quick-start#main-process)
+Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process)
 
-See [`Menu`](/docs/api/menu) for examples.
+See [`Menu`]({{site.baseurl}}/docs/api/menu) for examples.
 
 ### `new MenuItem(options)`
 
@@ -105,8 +105,8 @@ See [`Menu`](/docs/api/menu) for examples.
     *   `type` String - (optional) Can be `normal`, `separator`, `submenu`, `checkbox` or `radio`.
     *   `label` String - (optional)
     *   `sublabel` String - (optional)
-    *   `accelerator` [Accelerator](/docs/api/accelerator) - (optional)
-    *   `icon` ([NativeImage](/docs/api/native-image) | String) - (optional)
+    *   `accelerator` [Accelerator]({{site.baseurl}}/docs/api/accelerator) - (optional)
+    *   `icon` ([NativeImage]({{site.baseurl}}/docs/api/native-image) | String) - (optional)
     *   `enabled` Boolean - (optional) If false, the menu item will be greyed out and unclickable.
     *   `visible` Boolean - (optional) If false, the menu item will be entirely hidden.
     *   `checked` Boolean - (optional) Should only be specified for `checkbox` or `radio` type menu items.

@@ -90,7 +90,7 @@ sort_title: menu
 
 > Create native application menus and context menus.
 
-Process: [Main](/docs/tutorial/quick-start#main-process)
+Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process)
 
 ### `new Menu()`
 
@@ -126,7 +126,7 @@ See the [macOS Cocoa Event Handling Guide](https://developer.apple.com/library/m
 
 Returns `Menu`
 
-Generally, the `template` is just an array of `options` for constructing a [MenuItem](/docs/api/menu-item). The usage can be referenced above.
+Generally, the `template` is just an array of `options` for constructing a [MenuItem]({{site.baseurl}}/docs/api/menu-item). The usage can be referenced above.
 
 You can also attach other fields to the element of the `template` and they will become properties of the constructed menu items.
 
@@ -164,11 +164,11 @@ Inserts the `menuItem` to the `pos` position of the menu.
 
 A MenuItem[] array containing the menu's items.
 
-Each `Menu` consists of multiple [`MenuItem`](/docs/api/menu-item)s and each `MenuItem` can have a submenu.
+Each `Menu` consists of multiple [`MenuItem`]({{site.baseurl}}/docs/api/menu-item)s and each `MenuItem` can have a submenu.
 
 ## Examples
 
-The `Menu` class is only available in the main process, but you can also use it in the render process via the [`remote`](/docs/api/remote) module.
+The `Menu` class is only available in the main process, but you can also use it in the render process via the [`remote`]({{site.baseurl}}/docs/api/remote) module.
 
 ### Main process
 
@@ -342,7 +342,7 @@ An example of creating the application menu in the main process with the simple 
 
 ### Render process
 
-Below is an example of creating a menu dynamically in a web page (render process) by using the [`remote`](/docs/api/remote) module, and showing it when the user right clicks the page:
+Below is an example of creating a menu dynamically in a web page (render process) by using the [`remote`]({{site.baseurl}}/docs/api/remote) module, and showing it when the user right clicks the page:
 
     <!-- index.html -->
     <script>

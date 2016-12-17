@@ -83,14 +83,16 @@ redirect_from:
   - /docs/vlatest/api/desktop-capturer
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/desktop-capturer.md'
 title: desktopCapturer
-excerpt: "Access information about media sources that can be used to capture audio and\n    video from the desktop using the <a href=\\\"https://developer.mozilla.org/en/docs/Web/API/Navigator/getUserMedia\\\"><code>navigator.webkitGetUserMedia</code></a> API."
+excerpt: |-
+  Access information about media sources that can be used to capture audio and
+      video from the desktop using the <a href="https://developer.mozilla.org/en/docs/Web/API/Navigator/getUserMedia"><code>navigator.webkitGetUserMedia</code></a> API.
 sort_title: desktop-capturer
 ---
 # desktopCapturer
 
 > Access information about media sources that can be used to capture audio and video from the desktop using the [`navigator.webkitGetUserMedia`](https://developer.mozilla.org/en/docs/Web/API/Navigator/getUserMedia) API.
 
-Process: [Renderer](/docs/tutorial/quick-start#renderer-process)
+Process: [Renderer]({{site.baseurl}}/docs/tutorial/quick-start#renderer-process)
 
 The following example shows how to capture video from a desktop window whose title is `Electron`:
 
@@ -142,8 +144,8 @@ The `desktopCapturer` module has the following methods:
     *   `thumbnailSize` Object (optional) - The suggested size that the media source thumbnail should be scaled to, defaults to `{width: 150, height: 150}`.
 *   `callback` Function
     *   `error` Error
-    *   `sources` [DesktopCapturerSource[]](/docs/api/structures/desktop-capturer-source)
+    *   `sources` [DesktopCapturerSource[]]({{site.baseurl}}/docs/api/structures/desktop-capturer-source)
 
 Starts gathering information about all available desktop media sources, and calls `callback(error, sources)` when finished.
 
-`sources` is an array of [`DesktopCapturerSource`](/docs/api/structures/desktop-capturer-source) objects, each `DesktopCapturerSource` represents a screen or an individual window that can be captured.
+`sources` is an array of [`DesktopCapturerSource`]({{site.baseurl}}/docs/api/structures/desktop-capturer-source) objects, each `DesktopCapturerSource` represents a screen or an individual window that can be captured.

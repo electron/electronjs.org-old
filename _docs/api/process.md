@@ -90,7 +90,7 @@ sort_title: process
 
 > Extensions to process object.
 
-Process: [Main](/docs/tutorial/quick-start#main-process), [Renderer](/docs/tutorial/quick-start#renderer-process)
+Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process), [Renderer]({{site.baseurl}}/docs/tutorial/quick-start#renderer-process)
 
 Electron's `process` object is extended from the [Node.js `process` object](https://nodejs.org/api/process.html). It adds the following events, properties, and methods:
 

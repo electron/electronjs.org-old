@@ -90,11 +90,11 @@ sort_title: synopsis
 
 > How to use Node.js and Electron APIs.
 
-All of [Node.js's built-in modules](https://nodejs.org/api/) are available in Electron and third-party node modules also fully supported as well (including the [native modules](/docs/tutorial/using-native-node-modules)).
+All of [Node.js's built-in modules](https://nodejs.org/api/) are available in Electron and third-party node modules also fully supported as well (including the [native modules]({{site.baseurl}}/docs/tutorial/using-native-node-modules)).
 
 Electron also provides some extra built-in modules for developing native desktop applications. Some modules are only available in the main process, some are only available in the renderer process (web page), and some can be used in both processes.
 
-The basic rule is: if a module is [GUI](https://en.wikipedia.org/wiki/Graphical_user_interface) or low-level system related, then it should be only available in the main process. You need to be familiar with the concept of [main process vs. renderer process](/docs/tutorial/quick-start#main-process) scripts to be able to use those modules.
+The basic rule is: if a module is [GUI](https://en.wikipedia.org/wiki/Graphical_user_interface) or low-level system related, then it should be only available in the main process. You need to be familiar with the concept of [main process vs. renderer process]({{site.baseurl}}/docs/tutorial/quick-start#main-process) scripts to be able to use those modules.
 
 The main process script is just like a normal Node.js script:
 
@@ -118,7 +118,7 @@ The renderer process is no different than a normal web page, except for the extr
     </body>
     </html>
 
-To run your app, read [Run your app](/docs/tutorial/quick-start#run-your-app).
+To run your app, read [Run your app]({{site.baseurl}}/docs/tutorial/quick-start#run-your-app).
 
 ## Destructuring assignment
 

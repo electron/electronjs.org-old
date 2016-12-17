@@ -90,11 +90,11 @@ sort_title: session
 
 > Manage browser sessions, cookies, cache, proxy settings, etc.
 
-Process: [Main](/docs/tutorial/quick-start#main-process)
+Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process)
 
 The `session` module can be used to create new `Session` objects.
 
-You can also access the `session` of existing pages by using the `session` property of [`WebContents`](/docs/api/web-contents), or from the `session` module.
+You can also access the `session` of existing pages by using the `session` property of [`WebContents`]({{site.baseurl}}/docs/api/web-contents), or from the `session` module.
 
     const {BrowserWindow} = require('electron')
 
@@ -132,7 +132,7 @@ A `Session` object, the default session object of the app.
 
 > Get and set properties of a session.
 
-Process: [Main](/docs/tutorial/quick-start#main-process)
+Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process)
 
 You can create a `Session` object in the `session` module:
 
@@ -147,8 +147,8 @@ The following events are available on instances of `Session`:
 #### Event: 'will-download'
 
 *   `event` Event
-*   `item` [DownloadItem](/docs/api/download-item)
-*   `webContents` [WebContents](/docs/api/web-contents)
+*   `item` [DownloadItem]({{site.baseurl}}/docs/api/download-item)
+*   `webContents` [WebContents]({{site.baseurl}}/docs/api/web-contents)
 
 Emitted when Electron is about to download `item` in `webContents`.
 
@@ -295,7 +295,7 @@ Disables any network emulation already active for the `session`. Resets to the o
 
 *   `proc` Function
     *   `hostname` String
-    *   `certificate` [Certificate](/docs/api/structures/certificate)
+    *   `certificate` [Certificate]({{site.baseurl}}/docs/api/structures/certificate)
     *   `callback` Function
         *   `isTrusted` Boolean - Determines if the certificate should be trusted
 
@@ -313,7 +313,7 @@ Calling `setCertificateVerifyProc(null)` will revert back to default certificate
 #### `ses.setPermissionRequestHandler(handler)`
 
 *   `handler` Function
-    *   `webContents` Object - [WebContents](/docs/api/web-contents) requesting the permission.
+    *   `webContents` Object - [WebContents]({{site.baseurl}}/docs/api/web-contents) requesting the permission.
     *   `permission` String - Enum of 'media', 'geolocation', 'notifications', 'midiSysex', 'pointerLock', 'fullscreen', 'openExternal'.
     *   `callback` Function
         *   `permissionGranted` Boolean - Allow or deny the permission
@@ -384,11 +384,11 @@ Returns `Blob` - The blob data associated with the `identifier`.
     *   `eTag` String - ETag header value.
     *   `startTime` Double (optional) - Time when download was started in number of seconds since UNIX epoch.
 
-Allows resuming `cancelled` or `interrupted` downloads from previous `Session`. The API will generate a [DownloadItem](/docs/api/download-item) that can be accessed with the [will-download](/docs/api/#event-will-download) event. The [DownloadItem](/docs/api/download-item) will not have any `WebContents` associated with it and the initial state will be `interrupted`. The download will start only when the `resume` API is called on the [DownloadItem](/docs/api/download-item).
+Allows resuming `cancelled` or `interrupted` downloads from previous `Session`. The API will generate a [DownloadItem]({{site.baseurl}}/docs/api/download-item) that can be accessed with the [will-download]({{site.baseurl}}/docs/api/#event-will-download) event. The [DownloadItem]({{site.baseurl}}/docs/api/download-item) will not have any `WebContents` associated with it and the initial state will be `interrupted`. The download will start only when the `resume` API is called on the [DownloadItem]({{site.baseurl}}/docs/api/download-item).
 
 #### `ses.clearAuthCache(options[, callback])`
 
-*   `options` ([RemovePassword](/docs/api/structures/remove-password) | [RemoveClientCertificate](/docs/api/structures/remove-client-certificate))
+*   `options` ([RemovePassword]({{site.baseurl}}/docs/api/structures/remove-password) | [RemoveClientCertificate]({{site.baseurl}}/docs/api/structures/remove-client-certificate))
 *   `callback` Function (optional) - Called when operation is done
 
 Clears the session’s HTTP authentication cache.
@@ -407,7 +407,7 @@ A WebRequest object for this session.
 
 #### `ses.protocol`
 
-A Protocol object (an instance of [protocol](/docs/api/protocol) module) for this session.
+A Protocol object (an instance of [protocol]({{site.baseurl}}/docs/api/protocol) module) for this session.
 
     const {app, session} = require('electron')
     const path = require('path')

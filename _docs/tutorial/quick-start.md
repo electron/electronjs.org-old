@@ -110,7 +110,7 @@ The main process manages all web pages and their corresponding renderer processe
 
 In web pages, calling native GUI related APIs is not allowed because managing native GUI resources in web pages is very dangerous and it is easy to leak resources. If you want to perform GUI operations in a web page, the renderer process of the web page must communicate with the main process to request that the main process perform those operations.
 
-In Electron, we have several ways to communicate between the main process and renderer processes. Like [`ipcRenderer`](/docs/api/ipc-renderer) and [`ipcMain`](/docs/api/ipc-main) modules for sending messages, and the [remote](/docs/api/remote) module for RPC style communication. There is also an FAQ entry on [how to share data between web pages](/docs/faq#how-to-share-data-between-web-pages).
+In Electron, we have several ways to communicate between the main process and renderer processes. Like [`ipcRenderer`]({{site.baseurl}}/docs/api/ipc-renderer) and [`ipcMain`]({{site.baseurl}}/docs/api/ipc-main) modules for sending messages, and the [remote]({{site.baseurl}}/docs/api/remote) module for RPC style communication. There is also an FAQ entry on [how to share data between web pages]({{site.baseurl}}/docs/faq#how-to-share-data-between-web-pages).
 
 ## Write your First Electron App
 
@@ -247,7 +247,7 @@ If you downloaded Electron manually, you can also use the included binary to exe
 
 ### Run as a distribution
 
-After you're done writing your app, you can create a distribution by following the [Application Distribution](/docs/tutorial/application-distribution) guide and then executing the packaged app.
+After you're done writing your app, you can create a distribution by following the [Application Distribution]({{site.baseurl}}/docs/tutorial/application-distribution) guide and then executing the packaged app.
 
 ### Try this Example
 

@@ -137,7 +137,7 @@ While code and user experience across operating systems are similar, there are f
 
 *   On Windows 10, notifications "just work".
 *   On Windows 8.1 and Windows 8, a shortcut to your app, with a [Application User Model ID](https://msdn.microsoft.com/en-us/library/windows/desktop/dd378459(v=vs.85).aspx), must be installed to the Start screen. Note, however, that it does not need to be pinned to the Start screen.
-*   On Windows 7, notifications are not supported. You can however send "balloon notifications" using the [Tray API](/docs/api/tray#traydisplayballoonoptions-windows).
+*   On Windows 7, notifications are not supported. You can however send "balloon notifications" using the [Tray API]({{site.baseurl}}/docs/api/tray#traydisplayballoonoptions-windows).
 
 Furthermore, the maximum length for the notification body is 250 characters, with the Windows team recommending that notifications should be kept to 200 characters.
 
@@ -163,12 +163,12 @@ Windows and macOS provide easy access to a list of recent documents opened by th
 
 <img src="https://cloud.githubusercontent.com/assets/639601/5069610/2aa80758-6e97-11e4-8cfb-c1a414a10774.png" height="353" width="428" >
 
-To add a file to recent documents, you can use the [app.addRecentDocument](/docs/api/app#appaddrecentdocumentpath-os-x-windows) API:
+To add a file to recent documents, you can use the [app.addRecentDocument]({{site.baseurl}}/docs/api/app#appaddrecentdocumentpath-os-x-windows) API:
 
     const {app} = require('electron')
     app.addRecentDocument('/Users/USERNAME/Desktop/work.type')
 
-And you can use [app.clearRecentDocuments](/docs/api/app#appclearrecentdocuments-os-x-windows) API to empty the recent documents list:
+And you can use [app.clearRecentDocuments]({{site.baseurl}}/docs/api/app#appclearrecentdocuments-os-x-windows) API to empty the recent documents list:
 
     const {app} = require('electron')
     app.clearRecentDocuments()
@@ -221,7 +221,7 @@ On Windows you can specify custom actions in the `Tasks` category of JumpList, a
 
 Unlike the dock menu in macOS which is a real menu, user tasks in Windows work like application shortcuts such that when user clicks a task, a program will be executed with specified arguments.
 
-To set user tasks for your application, you can use [app.setUserTasks](/docs/api/app#appsetusertaskstasks-windows) API:
+To set user tasks for your application, you can use [app.setUserTasks]({{site.baseurl}}/docs/api/app#appsetusertaskstasks-windows) API:
 
     const {app} = require('electron')
     app.setUserTasks([
@@ -256,7 +256,7 @@ From MSDN, it's illustrated:
 
 ![player](https://i-msdn.sec.s-msft.com/dynimg/IC420540.png)
 
-You can use [BrowserWindow.setThumbarButtons](/docs/api/browser-window#winsetthumbarbuttonsbuttons-windows-7) to set thumbnail toolbar in your application:
+You can use [BrowserWindow.setThumbarButtons]({{site.baseurl}}/docs/api/browser-window#winsetthumbarbuttonsbuttons-windows-7) to set thumbnail toolbar in your application:
 
     const {BrowserWindow} = require('electron')
     const path = require('path')
@@ -306,7 +306,7 @@ The Unity DE also has a similar feature that allows you to specify the progress 
 
 ![Taskbar Progress Bar](https://cloud.githubusercontent.com/assets/639601/5081682/16691fda-6f0e-11e4-9676-49b6418f1264.png)
 
-To set the progress bar for a Window, you can use the [BrowserWindow.setProgressBar](/docs/api/browser-window#winsetprogressbarprogress) API:
+To set the progress bar for a Window, you can use the [BrowserWindow.setProgressBar]({{site.baseurl}}/docs/api/browser-window#winsetprogressbarprogress) API:
 
     const {BrowserWindow} = require('electron')
     let win = new BrowserWindow()
@@ -322,7 +322,7 @@ On Windows a taskbar button can use a small overlay to display application statu
 
 ![Overlay on taskbar button](https://i-msdn.sec.s-msft.com/dynimg/IC420441.png)
 
-To set the overlay icon for a window, you can use the [BrowserWindow.setOverlayIcon](/docs/api/browser-window#winsetoverlayiconoverlay-description-windows-7) API:
+To set the overlay icon for a window, you can use the [BrowserWindow.setOverlayIcon]({{site.baseurl}}/docs/api/browser-window#winsetoverlayiconoverlay-description-windows-7) API:
 
     const {BrowserWindow} = require('electron')
     let win = new BrowserWindow()
@@ -334,7 +334,7 @@ On Windows you can highlight the taskbar button to get the user's attention. Thi
 
 > Typically, a window is flashed to inform the user that the window requires attention but that it does not currently have the keyboard focus.
 
-To flash the BrowserWindow taskbar button, you can use the [BrowserWindow.flashFrame](/docs/api/browser-window#winflashframeflag) API:
+To flash the BrowserWindow taskbar button, you can use the [BrowserWindow.flashFrame]({{site.baseurl}}/docs/api/browser-window#winflashframeflag) API:
 
     const {BrowserWindow} = require('electron')
     let win = new BrowserWindow()
@@ -353,7 +353,7 @@ You can also set the edited state of a window so that the file icon can indicate
 
 <img src="https://cloud.githubusercontent.com/assets/639601/5082061/670a949a-6f14-11e4-987a-9aaa04b23c1d.png" height="232" width="663" >
 
-To set the represented file of window, you can use the [BrowserWindow.setRepresentedFilename](/docs/api/browser-window#winsetrepresentedfilenamefilename-os-x) and [BrowserWindow.setDocumentEdited](/docs/api/browser-window#winsetdocumenteditededited-os-x) APIs:
+To set the represented file of window, you can use the [BrowserWindow.setRepresentedFilename]({{site.baseurl}}/docs/api/browser-window#winsetrepresentedfilenamefilename-os-x) and [BrowserWindow.setDocumentEdited]({{site.baseurl}}/docs/api/browser-window#winsetdocumenteditededited-os-x) APIs:
 
     const {BrowserWindow} = require('electron')
     let win = new BrowserWindow()

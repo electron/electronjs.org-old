@@ -171,7 +171,7 @@ Prebulit `clang` will try to link to `libtinfo.so.5`. Depending on the host arch
 
 ## Tests
 
-See [Build System Overview: Tests](/docs/development/build-system-overview#tests)
+See [Build System Overview: Tests]({{site.baseurl}}/docs/development/build-system-overview#tests)
 
 ## Advanced topics
 

@@ -90,7 +90,7 @@ sort_title: web-request
 
 > Intercept and modify the contents of a request at various stages of its lifetime.
 
-Process: [Main](/docs/tutorial/quick-start#main-process)
+Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process)
 
 Instances of the `WebRequest` class are accessed by using the `webRequest` property of a `Session`.
 
@@ -128,7 +128,7 @@ The following methods are available on instances of `WebRequest`:
         *   `method` String
         *   `resourceType` String
         *   `timestamp` Double
-        *   `uploadData` [UploadData[]](/docs/api/structures/upload-data)
+        *   `uploadData` [UploadData[]]({{site.baseurl}}/docs/api/structures/upload-data)
     *   `callback` Function
         *   `response` Object
             *   `cancel` Boolean (optional)

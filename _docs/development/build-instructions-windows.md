@@ -151,7 +151,7 @@ To clean the build files:
 
 ## Tests
 
-See [Build System Overview: Tests](/docs/development/build-system-overview#tests)
+See [Build System Overview: Tests]({{site.baseurl}}/docs/development/build-system-overview#tests)
 
 ## Troubleshooting
 

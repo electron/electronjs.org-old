@@ -94,7 +94,7 @@ The Chrome version of Electron is usually bumped within one or two weeks after a
 
 Only the stable channel of Chrome is used. If an important fix is in beta or dev channel, we will back-port it.
 
-For more information, please see the [security introduction](/docs/tutorial/security).
+For more information, please see the [security introduction]({{site.baseurl}}/docs/tutorial/security).
 
 ## When will Electron upgrade to latest Node.js?
 

@@ -90,11 +90,11 @@ sort_title: frameless-window
 
 > Open a window without toolbars, borders, or other graphical "chrome".
 
-A frameless window is a window that has no [chrome](https://developer.mozilla.org/en-US/docs/Glossary/Chrome), the parts of the window, like toolbars, that are not a part of the web page. These are options on the [`BrowserWindow`](/docs/api/browser-window) class.
+A frameless window is a window that has no [chrome](https://developer.mozilla.org/en-US/docs/Glossary/Chrome), the parts of the window, like toolbars, that are not a part of the web page. These are options on the [`BrowserWindow`]({{site.baseurl}}/docs/api/browser-window) class.
 
 ## Create a frameless window
 
-To create a frameless window, you need to set `frame` to `false` in [BrowserWindow](/docs/api/browser-window)'s `options`:
+To create a frameless window, you need to set `frame` to `false` in [BrowserWindow]({{site.baseurl}}/docs/api/browser-window)'s `options`:
 
     const {BrowserWindow} = require('electron')
     let win = new BrowserWindow({width: 800, height: 600, frame: false})
@@ -139,7 +139,7 @@ By setting the `transparent` option to `true`, you can also make the frameless w
 
 ## Click-through window
 
-To create a click-through window, i.e. making the window ignore all mouse events, you can call the [win.setIgnoreMouseEvents(ignore)](/docs/api/browser-window#winsetignoremouseeventsignore) API:
+To create a click-through window, i.e. making the window ignore all mouse events, you can call the [win.setIgnoreMouseEvents(ignore)]({{site.baseurl}}/docs/api/browser-window#winsetignoremouseeventsignore) API:
 
     const {BrowserWindow} = require('electron')
     let win = new BrowserWindow()

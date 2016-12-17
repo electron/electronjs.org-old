@@ -90,7 +90,7 @@ sort_title: dialog
 
 > Display native system dialogs for opening and saving files, alerting, etc.
 
-Process: [Main](/docs/tutorial/quick-start#main-process)
+Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process)
 
 An example of showing a dialog to select multiple files and directories:
 
@@ -113,7 +113,7 @@ The `dialog` module has the following methods:
     *   `title` String (optional)
     *   `defaultPath` String (optional)
     *   `buttonLabel` String (optional) - Custom label for the confirmation button, when left empty the default label will be used.
-    *   `filters` [FileFilter[]](/docs/api/structures/file-filter) (optional)
+    *   `filters` [FileFilter[]]({{site.baseurl}}/docs/api/structures/file-filter) (optional)
     *   `properties` String[] - (optional) - Contains which features the dialog should use, can contain `openFile`, `openDirectory`, `multiSelections`, `createDirectory` and `showHiddenFiles`.
 *   `callback` Function (optional)
     *   `filePaths` String[] - An array of file paths chosen by the user
@@ -146,7 +146,7 @@ If a `callback` is passed, the API call will be asynchronous and the result will
     *   `title` String (optional)
     *   `defaultPath` String (optional)
     *   `buttonLabel` String (optional) - Custom label for the confirmation button, when left empty the default label will be used.
-    *   `filters` [FileFilter[]](/docs/api/structrs/file-filter) (optional)
+    *   `filters` [FileFilter[]]({{site.baseurl}}/docs/api/structrs/file-filter) (optional)
 *   `callback` Function (optional)
     *   `filename` String
 
@@ -168,7 +168,7 @@ If a `callback` is passed, the API call will be asynchronous and the result will
     *   `title` String (optional) - Title of the message box, some platforms will not show it.
     *   `message` String - Content of the message box.
     *   `detail` String (optional) - Extra information of the message.
-    *   `icon` [NativeImage](/docs/api/native-image) (optional)
+    *   `icon` [NativeImage]({{site.baseurl}}/docs/api/native-image) (optional)
     *   `cancelId` Integer (optional) - The value will be returned when user cancels the dialog instead of clicking the buttons of the dialog. By default it is the index of the buttons that have "cancel" or "no" as label, or 0 if there is no such buttons. On macOS and Windows the index of the "Cancel" button will always be used as `cancelId` even if it is specified.
     *   `noLink` Boolean (optional) - On Windows Electron will try to figure out which one of the `buttons` are common buttons (like "Cancel" or "Yes"), and show the others as command links in the dialog. This can make the dialog appear in the style of modern Windows apps. If you don't like this behavior, you can set `noLink` to `true`.
 *   `callback` Function (optional)

@@ -90,7 +90,7 @@ sort_title: browser-window
 
 > Create and control browser windows.
 
-Process: [Main](/docs/tutorial/quick-start#main-process)
+Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process)
 
     // In the main process.
     const {BrowserWindow} = require('electron')
@@ -111,7 +111,7 @@ Process: [Main](/docs/tutorial/quick-start#main-process)
 
 ## Frameless window
 
-To create a window without chrome, or a transparent window in arbitrary shape, you can use the [Frameless Window](/docs/api/frameless-window) API.
+To create a window without chrome, or a transparent window in arbitrary shape, you can use the [Frameless Window]({{site.baseurl}}/docs/api/frameless-window) API.
 
 ## Showing window gracefully
 
@@ -177,7 +177,7 @@ A modal window is a child window that disables parent window, to create a modal 
 
 > Create and control browser windows.
 
-Process: [Main](/docs/tutorial/quick-start#main-process)
+Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process)
 
 `BrowserWindow` is an [EventEmitter](http://nodejs.org/api/events.html#events_class_events_eventemitter).
 
@@ -208,9 +208,9 @@ It creates a new `BrowserWindow` with native properties as set by the `options`.
     *   `skipTaskbar` Boolean (optional) - Whether to show the window in taskbar. Default is `false`.
     *   `kiosk` Boolean (optional) - The kiosk mode. Default is `false`.
     *   `title` String (optional) - Default window title. Default is `"Electron"`.
-    *   `icon` ([NativeImage](/docs/api/native-image) | String) (optional) - The window icon. On Windows it is recommended to use `ICO` icons to get best visual effects, you can also leave it undefined so the executable's icon will be used.
+    *   `icon` ([NativeImage]({{site.baseurl}}/docs/api/native-image) | String) (optional) - The window icon. On Windows it is recommended to use `ICO` icons to get best visual effects, you can also leave it undefined so the executable's icon will be used.
     *   `show` Boolean (optional) - Whether window should be shown when created. Default is `true`.
-    *   `frame` Boolean (optional) - Specify `false` to create a [Frameless Window](/docs/api/frameless-window). Default is `true`.
+    *   `frame` Boolean (optional) - Specify `false` to create a [Frameless Window]({{site.baseurl}}/docs/api/frameless-window). Default is `true`.
     *   `parent` BrowserWindow (optional) - Specify parent window. Default is `null`.
     *   `modal` Boolean (optional) - Whether this is a modal window. This only works when the window is a child window. Default is `false`.
     *   `acceptFirstMouse` Boolean (optional) - Whether the web view accepts a single mouse-down event that simultaneously activates the window. Default is `false`.
@@ -220,7 +220,7 @@ It creates a new `BrowserWindow` with native properties as set by the `options`.
     *   `backgroundColor` String (optional) - Window's background color as Hexadecimal value, like `#66CD00` or `#FFF` or `#80FFFFFF` (alpha is supported). Default is `#FFF` (white).
     *   `hasShadow` Boolean (optional) - Whether window should have a shadow. This is only implemented on macOS. Default is `true`.
     *   `darkTheme` Boolean (optional) - Forces using dark theme for the window, only works on some GTK+3 desktop environments. Default is `false`.
-    *   `transparent` Boolean (optional) - Makes the window [transparent](/docs/api/frameless-window). Default is `false`.
+    *   `transparent` Boolean (optional) - Makes the window [transparent]({{site.baseurl}}/docs/api/frameless-window). Default is `false`.
     *   `type` String (optional) - The type of window, default is normal window. See more about this below.
     *   `titleBarStyle` String (optional) - The style of window title bar. Default is `default`. Possible values are:
         *   `default` - Results in the standard gray opaque Mac title bar.
@@ -232,8 +232,8 @@ It creates a new `BrowserWindow` with native properties as set by the `options`.
     *   `webPreferences` Object (optional) - Settings of web page's features.
         *   `devTools` Boolean (optional) - Whether to enable DevTools. If it is set to `false`, can not use `BrowserWindow.webContents.openDevTools()` to open DevTools. Default is `true`.
         *   `nodeIntegration` Boolean (optional) - Whether node integration is enabled. Default is `true`.
-        *   `preload` String (optional) - Specifies a script that will be loaded before other scripts run in the page. This script will always have access to node APIs no matter whether node integration is turned on or off. The value should be the absolute file path to the script. When node integration is turned off, the preload script can reintroduce Node global symbols back to the global scope. See example [here](/docs/api/process#event-loaded).
-        *   `session` [Session](/docs/api/session#class-session) (optional) - Sets the session used by the page. Instead of passing the Session object directly, you can also choose to use the `partition` option instead, which accepts a partition string. When both `session` and `partition` are provided, `session` will be preferred. Default is the default session.
+        *   `preload` String (optional) - Specifies a script that will be loaded before other scripts run in the page. This script will always have access to node APIs no matter whether node integration is turned on or off. The value should be the absolute file path to the script. When node integration is turned off, the preload script can reintroduce Node global symbols back to the global scope. See example [here]({{site.baseurl}}/docs/api/process#event-loaded).
+        *   `session` [Session]({{site.baseurl}}/docs/api/session#class-session) (optional) - Sets the session used by the page. Instead of passing the Session object directly, you can also choose to use the `partition` option instead, which accepts a partition string. When both `session` and `partition` are provided, `session` will be preferred. Default is the default session.
         *   `partition` String (optional) - Sets the session used by the page according to the session's partition string. If `partition` starts with `persist:`, the page will use a persistent session available to all pages in the app with the same `partition`. If there is no `persist:` prefix, the page will use an in-memory session. By assigning the same `partition`, multiple pages can share the same session. Default is the default session.
         *   `zoomFactor` Number (optional) - The default zoom factor of the page, `3.0` represents `300%`. Default is `1.0`.
         *   `javascript` Boolean (optional) - Enables JavaScript support. Default is `true`.
@@ -441,7 +441,7 @@ Returns `BrowserWindow` - The window that is focused in this application, otherw
 
 #### `BrowserWindow.fromWebContents(webContents)`
 
-*   `webContents` [WebContents](/docs/api/web-contents)
+*   `webContents` [WebContents]({{site.baseurl}}/docs/api/web-contents)
 
 Returns `BrowserWindow` - The window that owns the given `webContents`.
 
@@ -497,7 +497,7 @@ Objects created with `new BrowserWindow` have the following properties:
 
 A `WebContents` object this window owns. All web page related events and operations will be done via it.
 
-See the [`webContents` documentation](/docs/api/web-contents) for its methods and events.
+See the [`webContents` documentation]({{site.baseurl}}/docs/api/web-contents) for its methods and events.
 
 #### `win.id`
 
@@ -515,7 +515,7 @@ Force closing the window, the `unload` and `beforeunload` event won't be emitted
 
 #### `win.close()`
 
-Try to close the window. This has the same effect as a user manually clicking the close button of the window. The web page may cancel the close though. See the [close event](/docs/api/#event-close).
+Try to close the window. This has the same effect as a user manually clicking the close button of the window. The web page may cancel the close though. See the [close event]({{site.baseurl}}/docs/api/#event-close).
 
 #### `win.focus()`
 
@@ -611,25 +611,25 @@ Closes the currently open [Quick Look](https://en.wikipedia.org/wiki/Quick_Look)
 
 #### `win.setBounds(bounds[, animate])`
 
-*   `bounds` [Rectangle](/docs/api/structures/rectangle)
+*   `bounds` [Rectangle]({{site.baseurl}}/docs/api/structures/rectangle)
 *   `animate` Boolean (optional) _macOS_
 
 Resizes and moves the window to the supplied bounds
 
 #### `win.getBounds()`
 
-Returns [`Rectangle`](/docs/api/structures/rectangle)
+Returns [`Rectangle`]({{site.baseurl}}/docs/api/structures/rectangle)
 
 #### `win.setContentBounds(bounds[, animate])`
 
-*   `bounds` [Rectangle](/docs/api/structures/rectangle)
+*   `bounds` [Rectangle]({{site.baseurl}}/docs/api/structures/rectangle)
 *   `animate` Boolean (optional) _macOS_
 
 Resizes and moves the window's client area (e.g. the web page) to the supplied bounds.
 
 #### `win.getContentBounds()`
 
-Returns [`Rectangle`](/docs/api/structures/rectangle)
+Returns [`Rectangle`]({{site.baseurl}}/docs/api/structures/rectangle)
 
 #### `win.setSize(width, height[, animate])`
 
@@ -874,9 +874,9 @@ Returns `Boolean` - Whether the window's document has been edited.
 
 #### `win.capturePage([rect, ]callback)`
 
-*   `rect` [Rectangle](/docs/api/structures/rectangle) (optional) - The bounds to capture
+*   `rect` [Rectangle]({{site.baseurl}}/docs/api/structures/rectangle) (optional) - The bounds to capture
 *   `callback` Function
-    *   `image` [NativeImage](/docs/api/native-image)
+    *   `image` [NativeImage]({{site.baseurl}}/docs/api/native-image)
 
 Same as `webContents.capturePage([rect, ]callback)`.
 
@@ -887,7 +887,7 @@ Same as `webContents.capturePage([rect, ]callback)`.
     *   `httpReferrer` String (optional) - A HTTP Referrer url.
     *   `userAgent` String (optional) - A user agent originating the request.
     *   `extraHeaders` String (optional) - Extra headers separated by "\n"
-    *   `postData` ([UploadRawData](/docs/api/structures/upload-raw-data) | [UploadFile](/docs/api/structures/upload-file) | [UploadFileSystem](/docs/api/structures/upload-file-system) | [UploadBlob](/docs/api/structures/upload-blob))[] - (optional)
+    *   `postData` ([UploadRawData]({{site.baseurl}}/docs/api/structures/upload-raw-data) | [UploadFile]({{site.baseurl}}/docs/api/structures/upload-file) | [UploadFileSystem]({{site.baseurl}}/docs/api/structures/upload-file-system) | [UploadBlob]({{site.baseurl}}/docs/api/structures/upload-blob))[] - (optional)
 
 Same as `webContents.loadURL(url[, options])`.
 
@@ -939,7 +939,7 @@ On Windows, a mode can be passed. Accepted values are `none`, `normal`, `indeter
 
 #### `win.setOverlayIcon(overlay, description)` _Windows_
 
-*   `overlay` [NativeImage](/docs/api/native-image) - the icon to display on the bottom right corner of the taskbar icon. If this parameter is `null`, the overlay is cleared
+*   `overlay` [NativeImage]({{site.baseurl}}/docs/api/native-image) - the icon to display on the bottom right corner of the taskbar icon. If this parameter is `null`, the overlay is cleared
 *   `description` String - a description that will be provided to Accessibility screen readers
 
 Sets a 16 x 16 pixel overlay onto the current taskbar icon, usually used to convey some sort of application status or to passively notify the user.
@@ -958,7 +958,7 @@ On Windows and Linux always returns `true`.
 
 #### `win.setThumbarButtons(buttons)` _Windows_
 
-*   `buttons` [ThumbarButton[]](/docs/api/structures/thumbar-button)
+*   `buttons` [ThumbarButton[]]({{site.baseurl}}/docs/api/structures/thumbar-button)
 
 Returns `Boolean` - Whether the buttons were added successfully
 
@@ -969,7 +969,7 @@ The number of buttons in thumbnail toolbar should be no greater than 7 due to th
 The `buttons` is an array of `Button` objects:
 
 *   `Button` Object
-    *   `icon` [NativeImage](/docs/api/native-image) - The icon showing in thumbnail toolbar.
+    *   `icon` [NativeImage]({{site.baseurl}}/docs/api/native-image) - The icon showing in thumbnail toolbar.
     *   `click` Function
     *   `tooltip` String (optional) - The text of the button's tooltip.
     *   `flags` String[] - (optional) - Control specific states and behaviors of the button. By default, it is `['enabled']`.
@@ -985,7 +985,7 @@ The `flags` is an array that can include following `String`s:
 
 #### `win.setThumbnailClip(region)` _Windows_
 
-*   `region` [Rectangle](/docs/api/structures/rectangle) - Region of the window
+*   `region` [Rectangle]({{site.baseurl}}/docs/api/structures/rectangle) - Region of the window
 
 Sets the region of the window to show as the thumbnail image displayed when hovering over the window in the taskbar. You can reset the thumbnail to be the entire window by specifying an empty region: `{x: 0, y: 0, width: 0, height: 0}`.
 
@@ -1014,7 +1014,7 @@ Same as `webContents.showDefinitionForSelection()`.
 
 #### `win.setIcon(icon)` _Windows_ _Linux_
 
-*   `icon` [NativeImage](/docs/api/native-image)
+*   `icon` [NativeImage]({{site.baseurl}}/docs/api/native-image)
 
 Changes window icon.
 

@@ -90,7 +90,7 @@ sort_title: web-frame
 
 > Customize the rendering of the current web page.
 
-Process: [Renderer](/docs/tutorial/quick-start#renderer-process)
+Process: [Renderer]({{site.baseurl}}/docs/tutorial/quick-start#renderer-process)
 
 An example of zooming current page to 200%.
 
@@ -212,11 +212,11 @@ In the browser window some HTML APIs like `requestFullScreen` can only be invoke
 
 Returns `Object`:
 
-*   `images` [MemoryUsageDetails](/docs/api/structures/memory-usage-details)
-*   `cssStyleSheets` [MemoryUsageDetails](/docs/api/structures/memory-usage-details)
-*   `xslStyleSheets` [MemoryUsageDetails](/docs/api/structures/memory-usage-details)
-*   `fonts` [MemoryUsageDetails](/docs/api/structures/memory-usage-details)
-*   `other` [MemoryUsageDetails](/docs/api/structures/memory-usage-details)
+*   `images` [MemoryUsageDetails]({{site.baseurl}}/docs/api/structures/memory-usage-details)
+*   `cssStyleSheets` [MemoryUsageDetails]({{site.baseurl}}/docs/api/structures/memory-usage-details)
+*   `xslStyleSheets` [MemoryUsageDetails]({{site.baseurl}}/docs/api/structures/memory-usage-details)
+*   `fonts` [MemoryUsageDetails]({{site.baseurl}}/docs/api/structures/memory-usage-details)
+*   `other` [MemoryUsageDetails]({{site.baseurl}}/docs/api/structures/memory-usage-details)
 
 Returns an object describing usage information of Blink's internal memory caches.
 

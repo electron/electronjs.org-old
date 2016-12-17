@@ -90,7 +90,7 @@ sort_title: system-preferences
 
 > Get system preferences.
 
-Process: [Main](/docs/tutorial/quick-start#main-process)
+Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process)
 
     const {systemPreferences} = require('electron')
     console.log(systemPreferences.isDarkMode())

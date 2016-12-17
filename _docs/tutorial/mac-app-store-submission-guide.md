@@ -106,7 +106,7 @@ Before signing your app, you need to know the Team ID of your account. To locate
 
 ### Sign Your App
 
-After finishing the preparation work, you can package your app by following [Application Distribution](/docs/tutorial/application-distribution), and then proceed to signing your app.
+After finishing the preparation work, you can package your app by following [Application Distribution]({{site.baseurl}}/docs/tutorial/application-distribution), and then proceed to signing your app.
 
 First, you have to add a `ElectronTeamID` key to your app's `Info.plist`, which has your Team ID as value:
 

@@ -89,10 +89,10 @@ sort_title: certificate
 # Certificate Object
 
 *   `data` String - PEM encoded data
-*   `issuer` [CertificatePrincipal](/docs/api/structures/structures/certificate-principal) - Issuer principal
+*   `issuer` [CertificatePrincipal]({{site.baseurl}}/docs/api/structures/structures/certificate-principal) - Issuer principal
 *   `issuerName` String - Issuer's Common Name
 *   `issuerCert` Certificate - Issuer certificate (if not self-signed)
-*   `subject` [CertificatePrincipal](/docs/api/structures/structures/certificate-principal) - Subject principal
+*   `subject` [CertificatePrincipal]({{site.baseurl}}/docs/api/structures/structures/certificate-principal) - Subject principal
 *   `subjectName` String - Subject's Common Name
 *   `serialNumber` String - Hex value represented string
 *   `validStart` Number - Start date of the certificate being valid in seconds

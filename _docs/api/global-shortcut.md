@@ -90,7 +90,7 @@ sort_title: global-shortcut
 
 > Detect keyboard events when the application does not have keyboard focus.
 
-Process: [Main](/docs/tutorial/quick-start#main-process)
+Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process)
 
 The `globalShortcut` module can register/unregister a global keyboard shortcut with the operating system so that you can customize the operations for various shortcuts.
 
@@ -126,7 +126,7 @@ The `globalShortcut` module has the following methods:
 
 ### `globalShortcut.register(accelerator, callback)`
 
-*   `accelerator` [Accelerator](/docs/api/accelerator)
+*   `accelerator` [Accelerator]({{site.baseurl}}/docs/api/accelerator)
 *   `callback` Function
 
 Registers a global shortcut of `accelerator`. The `callback` is called when the registered shortcut is pressed by the user.
@@ -135,7 +135,7 @@ When the accelerator is already taken by other applications, this call will sile
 
 ### `globalShortcut.isRegistered(accelerator)`
 
-*   `accelerator` [Accelerator](/docs/api/accelerator)
+*   `accelerator` [Accelerator]({{site.baseurl}}/docs/api/accelerator)
 
 Returns `Boolean` - Whether this application has registered `accelerator`.
 
@@ -143,7 +143,7 @@ When the accelerator is already taken by other applications, this call will stil
 
 ### `globalShortcut.unregister(accelerator)`
 
-*   `accelerator` [Accelerator](/docs/api/accelerator)
+*   `accelerator` [Accelerator]({{site.baseurl}}/docs/api/accelerator)
 
 Unregisters the global shortcut of `accelerator`.
 

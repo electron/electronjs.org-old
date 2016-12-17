@@ -218,7 +218,7 @@ If "on", the guest page will be allowed to open new windows.
 
     <webview src="https://github.com" webpreferences="allowDisplayingInsecureContent, javascript=no"></webview>
 
-A list of strings which specifies the web preferences to be set on the webview, separated by `,`. The full list of supported preference strings can be found in [BrowserWindow](/docs/api/browser-window#new-browserwindowoptions).
+A list of strings which specifies the web preferences to be set on the webview, separated by `,`. The full list of supported preference strings can be found in [BrowserWindow]({{site.baseurl}}/docs/api/browser-window#new-browserwindowoptions).
 
 The string follows the same format as the features string in `window.open`. A name by itself is given a `true` boolean value. A preference can be set to another value by including an `=`, followed by the value. Special values `yes` and `1` are interpreted as `true`, while `no` and `0` are interpreted as `false`.
 
@@ -248,7 +248,7 @@ The existing webview will see the `destroy` event and will then create a new web
 
 Prevents the webview contents from resizing when the webview element itself is resized.
 
-This can be used in combination with [`webContents.setSize`](/docs/api/web-contents#contentssetsizeoptions) to manually resize the webview contents in reaction to a window size change. This can make resizing faster compared to relying on the webview element bounds to automatically resize the contents.
+This can be used in combination with [`webContents.setSize`]({{site.baseurl}}/docs/api/web-contents#contentssetsizeoptions) to manually resize the webview contents in reaction to a window size change. This can make resizing faster compared to relying on the webview element bounds to automatically resize the contents.
 
     const {webContents} = require('electron')
 
@@ -291,7 +291,7 @@ The `webview` tag has the following methods:
     *   `httpReferrer` String (optional) - A HTTP Referrer url.
     *   `userAgent` String (optional) - A user agent originating the request.
     *   `extraHeaders` String (optional) - Extra headers separated by "\n"
-    *   `postData` ([UploadRawData](/docs/api/structures/upload-raw-data) | [UploadFile](/docs/api/structures/upload-file) | [UploadFileSystem](/docs/api/structures/upload-file-system) | [UploadBlob](/docs/api/structures/upload-blob))[] - (optional)
+    *   `postData` ([UploadRawData]({{site.baseurl}}/docs/api/structures/upload-raw-data) | [UploadFile]({{site.baseurl}}/docs/api/structures/upload-file) | [UploadFileSystem]({{site.baseurl}}/docs/api/structures/upload-file-system) | [UploadBlob]({{site.baseurl}}/docs/api/structures/upload-blob))[] - (optional)
 
 Loads the `url` in the webview, the `url` must contain the protocol prefix, e.g. the `http://` or `file://`.
 
@@ -491,11 +491,11 @@ Inserts `text` to the focused element.
     *   `wordStart` Boolean - Whether to look only at the start of words. defaults to `false`.
     *   `medialCapitalAsWordStart` Boolean - When combined with `wordStart`, accepts a match in the middle of a word if the match begins with an uppercase letter followed by a lowercase or non-letter. Accepts several other intra-word matches, defaults to `false`.
 
-Starts a request to find all matches for the `text` in the web page and returns an `Integer` representing the request id used for the request. The result of the request can be obtained by subscribing to [`found-in-page`](/docs/api/web-view-tag#event-found-in-page) event.
+Starts a request to find all matches for the `text` in the web page and returns an `Integer` representing the request id used for the request. The result of the request can be obtained by subscribing to [`found-in-page`]({{site.baseurl}}/docs/api/web-view-tag#event-found-in-page) event.
 
 ### `<webview>.stopFindInPage(action)`
 
-*   `action` String - Specifies the action to take place when ending [`<webview>.findInPage`](/docs/api/web-view-tag#webviewtagfindinpage) request.
+*   `action` String - Specifies the action to take place when ending [`<webview>.findInPage`]({{site.baseurl}}/docs/api/web-view-tag#webviewtagfindinpage) request.
     *   `clearSelection` - Clear the selection.
     *   `keepSelection` - Translate the selection into a normal selection.
     *   `activateSelection` - Focus and click the selection node.
@@ -521,7 +521,7 @@ Captures a snapshot of the `webview`'s page. Same as `webContents.capturePage([r
 
 Send an asynchronous message to renderer process via `channel`, you can also send arbitrary arguments. The renderer process can handle the message by listening to the `channel` event with the `ipcRenderer` module.
 
-See [webContents.send](/docs/api/web-contents#webcontentssendchannel-args) for examples.
+See [webContents.send]({{site.baseurl}}/docs/api/web-contents#webcontentssendchannel-args) for examples.
 
 ### `<webview>.sendInputEvent(event)`
 
@@ -529,7 +529,7 @@ See [webContents.send](/docs/api/web-contents#webcontentssendchannel-args) for e
 
 Sends an input `event` to the page.
 
-See [webContents.sendInputEvent](/docs/api/web-contents#webcontentssendinputeventevent) for detailed description of `event` object.
+See [webContents.sendInputEvent]({{site.baseurl}}/docs/api/web-contents#webcontentssendinputeventevent) for detailed description of `event` object.
 
 ### `<webview>.setZoomFactor(factor)`
 
@@ -549,7 +549,7 @@ Shows pop-up dictionary that searches the selected word on the page.
 
 ### `<webview>.getWebContents()`
 
-Returns `WebContents` - The [WebContents](/docs/api/web-contents) associated with this `webview`.
+Returns `WebContents` - The [WebContents]({{site.baseurl}}/docs/api/web-contents) associated with this `webview`.
 
 ## DOM events
 
@@ -677,7 +677,7 @@ Returns:
     *   `matches` Integer - Number of Matches.
     *   `selectionArea` Object - Coordinates of first match region.
 
-Fired when a result is available for [`webview.findInPage`](/docs/api/web-view-tag#webviewtagfindinpage) request.
+Fired when a result is available for [`webview.findInPage`]({{site.baseurl}}/docs/api/web-view-tag#webviewtagfindinpage) request.
 
     const webview = document.getElementById('foo')
     webview.addEventListener('found-in-page', (e) => {

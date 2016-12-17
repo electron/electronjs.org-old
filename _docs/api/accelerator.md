@@ -97,7 +97,7 @@ Examples:
 *   `CommandOrControl+A`
 *   `CommandOrControl+Shift+Z`
 
-Shortcuts are registered with the [`globalShortcut`](/docs/api/global-shortcut) module using the [`register`](/docs/api/global-shortcut#globalshortcutregisteraccelerator-callback) method, i.e.
+Shortcuts are registered with the [`globalShortcut`]({{site.baseurl}}/docs/api/global-shortcut) module using the [`register`]({{site.baseurl}}/docs/api/global-shortcut#globalshortcutregisteraccelerator-callback) method, i.e.
 
     const {app, globalShortcut} = require('electron')
 

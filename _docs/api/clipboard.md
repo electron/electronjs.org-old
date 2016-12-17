@@ -90,7 +90,7 @@ sort_title: clipboard
 
 > Perform copy and paste operations on the system clipboard.
 
-Process: [Main](/docs/tutorial/quick-start#main-process), [Renderer](/docs/tutorial/quick-start#renderer-process)
+Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process), [Renderer]({{site.baseurl}}/docs/tutorial/quick-start#renderer-process)
 
 The following example shows how to write a string to the clipboard:
 
@@ -139,11 +139,11 @@ Writes `markup` to the clipboard.
 
 *   `type` String (optional)
 
-Returns `NativeImage` - The content in the clipboard as a [NativeImage](/docs/api/native-image).
+Returns `NativeImage` - The content in the clipboard as a [NativeImage]({{site.baseurl}}/docs/api/native-image).
 
 ### `clipboard.writeImage(image[, type])`
 
-*   `image` [NativeImage](/docs/api/native-image)
+*   `image` [NativeImage]({{site.baseurl}}/docs/api/native-image)
 *   `type` String (optional)
 
 Writes `image` to the clipboard.
@@ -229,7 +229,7 @@ Returns `String` - Reads `data` from the clipboard.
 *   `data` Object
     *   `text` String (optional)
     *   `html` String (optional)
-    *   `image` [NativeImage](/docs/api/native-image) (optional)
+    *   `image` [NativeImage]({{site.baseurl}}/docs/api/native-image) (optional)
     *   `rtf` String (optional)
     *   `bookmark` String (optional) - The title of the url at `text`.
 *   `type` String (optional)

@@ -90,7 +90,7 @@ sort_title: browser-window-proxy
 
 > Manipulate the child browser window
 
-Process: [Renderer](/docs/tutorial/quick-start#renderer-process)
+Process: [Renderer]({{site.baseurl}}/docs/tutorial/quick-start#renderer-process)
 
 The `BrowserWindowProxy` object is returned from `window.open` and provides limited functionality with the child window.
 

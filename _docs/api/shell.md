@@ -90,7 +90,7 @@ sort_title: shell
 
 > Manage files and URLs using their default applications.
 
-Process: [Main](/docs/tutorial/quick-start#main-process), [Renderer](/docs/tutorial/quick-start#renderer-process)
+Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process), [Renderer]({{site.baseurl}}/docs/tutorial/quick-start#renderer-process)
 
 The `shell` module provides functions related to desktop integration.
 
@@ -151,7 +151,7 @@ Play the beep sound.
     *   `create` - Creates a new shortcut, overwriting if necessary.
     *   `update` - Updates specified properties only on an existing shortcut.
     *   `replace` - Overwrites an existing shortcut, fails if the shortcut doesn't exist.
-*   `options` [ShortcutDetails](/docs/api/structures/shortcut-details)
+*   `options` [ShortcutDetails]({{site.baseurl}}/docs/api/structures/shortcut-details)
 
 Returns `Boolean` - Whether the shortcut was created successfully
 
@@ -161,7 +161,7 @@ Creates or updates a shortcut link at `shortcutPath`.
 
 *   `shortcutPath` String
 
-Returns [`ShortcutDetails`](/docs/api/structures/shortcut-details)
+Returns [`ShortcutDetails`]({{site.baseurl}}/docs/api/structures/shortcut-details)
 
 Resolves the shortcut link at `shortcutPath`.
 

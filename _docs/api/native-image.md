@@ -90,7 +90,7 @@ sort_title: native-image
 
 > Create tray, dock, and application icons using PNG or JPG files.
 
-Process: [Main](/docs/tutorial/quick-start#main-process), [Renderer](/docs/tutorial/quick-start#renderer-process)
+Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process), [Renderer]({{site.baseurl}}/docs/tutorial/quick-start#renderer-process)
 
 In Electron, for the APIs that take images, you can pass either file paths or `NativeImage` instances. An empty image will be used when `null` is passed.
 
@@ -215,7 +215,7 @@ Creates a new `NativeImage` instance from `dataURL`.
 
 > Natively wrap images such as tray, dock, and application icons.
 
-Process: [Main](/docs/tutorial/quick-start#main-process), [Renderer](/docs/tutorial/quick-start#renderer-process)
+Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process), [Renderer]({{site.baseurl}}/docs/tutorial/quick-start#renderer-process)
 
 ### Instance Methods
 

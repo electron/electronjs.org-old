@@ -90,7 +90,7 @@ sort_title: chrome-command-line-switches
 
 > Command line switches supported by Electron.
 
-You can use [app.commandLine.appendSwitch](/docs/api/app#appcommandlineappendswitchswitch-value) to append them in your app's main script before the [ready](/docs/api/app#event-ready) event of the [app](/docs/api/app) module is emitted:
+You can use [app.commandLine.appendSwitch]({{site.baseurl}}/docs/api/app#appcommandlineappendswitchswitch-value) to append them in your app's main script before the [ready]({{site.baseurl}}/docs/api/app#event-ready) event of the [app]({{site.baseurl}}/docs/api/app) module is emitted:
 
     const {app} = require('electron')
     app.commandLine.appendSwitch('remote-debugging-port', '8315')
@@ -114,7 +114,7 @@ Disable HTTP/2 and SPDY/3.1 protocols.
 
 ## --debug=`port` and --debug-brk=`port`
 
-Debug-related flags, see the [Debugging the Main Process](/docs/tutorial/debugging-main-process) guide for details.
+Debug-related flags, see the [Debugging the Main Process]({{site.baseurl}}/docs/tutorial/debugging-main-process) guide for details.
 
 ## --remote-debugging-port=`port`
 

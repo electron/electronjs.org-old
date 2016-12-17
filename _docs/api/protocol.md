@@ -90,7 +90,7 @@ sort_title: protocol
 
 > Register a custom protocol and intercept existing protocol requests.
 
-Process: [Main](/docs/tutorial/quick-start#main-process)
+Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process)
 
 An example of implementing a protocol that has the same effect as the `file://` protocol:
 
@@ -151,7 +151,7 @@ By default web storage apis (localStorage, sessionStorage, webSQL, indexedDB, co
         *   `url` String
         *   `referrer` String
         *   `method` String
-        *   `uploadData` [UploadData[]](/docs/api/structures/upload-data)
+        *   `uploadData` [UploadData[]]({{site.baseurl}}/docs/api/structures/upload-data)
     *   `callback` Function
         *   `filePath` String (optional)
 *   `completion` Function (optional)
@@ -173,7 +173,7 @@ By default the `scheme` is treated like `http:`, which is parsed differently tha
         *   `url` String
         *   `referrer` String
         *   `method` String
-        *   `uploadData` [UploadData[]](/docs/api/structures/upload-data)
+        *   `uploadData` [UploadData[]]({{site.baseurl}}/docs/api/structures/upload-data)
     *   `callback` Function
         *   `buffer` Buffer (optional)
 *   `completion` Function (optional)
@@ -201,7 +201,7 @@ Example:
         *   `url` String
         *   `referrer` String
         *   `method` String
-        *   `uploadData` [UploadData[]](/docs/api/structures/upload-data)
+        *   `uploadData` [UploadData[]]({{site.baseurl}}/docs/api/structures/upload-data)
     *   `callback` Function
         *   `data` String (optional)
 *   `completion` Function (optional)
@@ -219,7 +219,7 @@ The usage is the same with `registerFileProtocol`, except that the `callback` sh
         *   `url` String
         *   `referrer` String
         *   `method` String
-        *   `uploadData` [UploadData[]](/docs/api/structures/upload-data)
+        *   `uploadData` [UploadData[]]({{site.baseurl}}/docs/api/structures/upload-data)
     *   `callback` Function
         *   `redirectRequest` Object
             *   `url` String
@@ -263,7 +263,7 @@ The `callback` will be called with a boolean that indicates whether there is alr
         *   `url` String
         *   `referrer` String
         *   `method` String
-        *   `uploadData` [UploadData[]](/docs/api/structures/upload-data)
+        *   `uploadData` [UploadData[]]({{site.baseurl}}/docs/api/structures/upload-data)
     *   `callback` Function
         *   `filePath` String
 *   `completion` Function (optional)
@@ -279,7 +279,7 @@ Intercepts `scheme` protocol and uses `handler` as the protocol's new handler wh
         *   `url` String
         *   `referrer` String
         *   `method` String
-        *   `uploadData` [UploadData[]](/docs/api/structures/upload-data)
+        *   `uploadData` [UploadData[]]({{site.baseurl}}/docs/api/structures/upload-data)
     *   `callback` Function
         *   `data` String (optional)
 *   `completion` Function (optional)
@@ -295,7 +295,7 @@ Intercepts `scheme` protocol and uses `handler` as the protocol's new handler wh
         *   `url` String
         *   `referrer` String
         *   `method` String
-        *   `uploadData` [UploadData[]](/docs/api/structures/upload-data)
+        *   `uploadData` [UploadData[]]({{site.baseurl}}/docs/api/structures/upload-data)
     *   `callback` Function
         *   `buffer` Buffer (optional)
 *   `completion` Function (optional)
@@ -311,7 +311,7 @@ Intercepts `scheme` protocol and uses `handler` as the protocol's new handler wh
         *   `url` String
         *   `referrer` String
         *   `method` String
-        *   `uploadData` [UploadData[]](/docs/api/structures/upload-data)
+        *   `uploadData` [UploadData[]]({{site.baseurl}}/docs/api/structures/upload-data)
     *   `callback` Function
         *   `redirectRequest` Object
             *   `url` String

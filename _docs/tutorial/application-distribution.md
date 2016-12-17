@@ -122,7 +122,7 @@ On Windows and Linux:
     electron/resources/
     └── app.asar
 
-More details can be found in [Application packaging](/docs/tutorial/application-packaging).
+More details can be found in [Application packaging]({{site.baseurl}}/docs/tutorial/application-packaging).
 
 ## Rebranding with Downloaded Binaries
 

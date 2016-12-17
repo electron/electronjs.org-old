@@ -90,7 +90,7 @@ sort_title: tray
 
 > Add icons and context menus to the system's notification area.
 
-Process: [Main](/docs/tutorial/quick-start#main-process)
+Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process)
 
 `Tray` is an [EventEmitter](https://nodejs.org/api/events.html#events_class_eventemitter).
 
@@ -140,7 +140,7 @@ If you want to keep exact same behaviors on all platforms, you should not rely o
 
 ### `new Tray(image)`
 
-*   `image` ([NativeImage](/docs/api/native-image) | String)
+*   `image` ([NativeImage]({{site.baseurl}}/docs/api/native-image) | String)
 
 Creates a new tray icon associated with the `image`.
 
@@ -155,7 +155,7 @@ The `Tray` module emits the following events:
     *   `shiftKey` Boolean
     *   `ctrlKey` Boolean
     *   `metaKey` Boolean
-*   `bounds` [Rectangle](/docs/api/structures/rectangle) - The bounds of tray icon
+*   `bounds` [Rectangle]({{site.baseurl}}/docs/api/structures/rectangle) - The bounds of tray icon
 
 Emitted when the tray icon is clicked.
 
@@ -166,7 +166,7 @@ Emitted when the tray icon is clicked.
     *   `shiftKey` Boolean
     *   `ctrlKey` Boolean
     *   `metaKey` Boolean
-*   `bounds` [Rectangle](/docs/api/structures/rectangle) - The bounds of tray icon
+*   `bounds` [Rectangle]({{site.baseurl}}/docs/api/structures/rectangle) - The bounds of tray icon
 
 Emitted when the tray icon is right clicked.
 
@@ -177,7 +177,7 @@ Emitted when the tray icon is right clicked.
     *   `shiftKey` Boolean
     *   `ctrlKey` Boolean
     *   `metaKey` Boolean
-*   `bounds` [Rectangle](/docs/api/structures/rectangle) - The bounds of tray icon
+*   `bounds` [Rectangle]({{site.baseurl}}/docs/api/structures/rectangle) - The bounds of tray icon
 
 Emitted when the tray icon is double clicked.
 
@@ -233,13 +233,13 @@ Destroys the tray icon immediately.
 
 #### `tray.setImage(image)`
 
-*   `image` [NativeImage](/docs/api/native-image)
+*   `image` [NativeImage]({{site.baseurl}}/docs/api/native-image)
 
 Sets the `image` associated with this tray icon.
 
 #### `tray.setPressedImage(image)` _macOS_
 
-*   `image` [NativeImage](/docs/api/native-image)
+*   `image` [NativeImage]({{site.baseurl}}/docs/api/native-image)
 
 Sets the `image` associated with this tray icon when pressed on macOS.
 
@@ -264,7 +264,7 @@ Sets the title displayed aside of the tray icon in the status bar.
 
 Sets when the tray's icon background becomes highlighted (in blue).
 
-**Note:** You can use `highlightMode` with a [`BrowserWindow`](/docs/api/browser-window) by toggling between `'never'` and `'always'` modes when the window visibility changes.
+**Note:** You can use `highlightMode` with a [`BrowserWindow`]({{site.baseurl}}/docs/api/browser-window) by toggling between `'never'` and `'always'` modes when the window visibility changes.
 
     const {BrowserWindow, Tray} = require('electron')
 
@@ -284,7 +284,7 @@ Sets when the tray's icon background becomes highlighted (in blue).
 #### `tray.displayBalloon(options)` _Windows_
 
 *   `options` Object
-    *   `icon` [NativeImage](/docs/api/native-image)
+    *   `icon` [NativeImage]({{site.baseurl}}/docs/api/native-image)
     *   `title` String
     *   `content` String
 
@@ -309,7 +309,7 @@ Sets the context menu for this icon.
 
 #### `tray.getBounds()` _macOS_ _Windows_
 
-Returns [`Rectangle`](/docs/api/structures/rectangle)
+Returns [`Rectangle`]({{site.baseurl}}/docs/api/structures/rectangle)
 
 The `bounds` of this tray icon as `Object`.
 

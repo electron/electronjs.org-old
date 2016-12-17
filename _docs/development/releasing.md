@@ -113,7 +113,7 @@ Run the `bump-version` script, passing `major`, `minor`, or `patch` as an argume
 
 This will bump the version number in several files. See [this bump commit](https://github.com/electron/electron/commit/78ec1b8f89b3886b856377a1756a51617bc33f5a) for an example.
 
-Most releases will be `patch` level. Upgrades to Chrome or other major changes should use `minor`. For more info, see [electron-versioning](/docs/tutorial/electron-versioning).
+Most releases will be `patch` level. Upgrades to Chrome or other major changes should use `minor`. For more info, see [electron-versioning]({{site.baseurl}}/docs/tutorial/electron-versioning).
 
 ## Edit the release draft
 

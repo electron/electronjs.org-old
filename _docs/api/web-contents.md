@@ -90,9 +90,9 @@ sort_title: web-contents
 
 > Render and control web pages.
 
-Process: [Main](/docs/tutorial/quick-start#main-process)
+Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process)
 
-`webContents` is an [EventEmitter](https://nodejs.org/api/events.html#events_class_eventemitter). It is responsible for rendering and controlling a web page and is a property of the [`BrowserWindow`](/docs/api/browser-window) object. An example of accessing the `webContents` object:
+`webContents` is an [EventEmitter](https://nodejs.org/api/events.html#events_class_eventemitter). It is responsible for rendering and controlling a web page and is a property of the [`BrowserWindow`]({{site.baseurl}}/docs/api/browser-window) object. An example of accessing the `webContents` object:
 
     const {BrowserWindow} = require('electron')
 
@@ -127,7 +127,7 @@ Returns `WebContents` - A WebContents instance with the given ID.
 
 > Render and control the contents of a BrowserWindow instance.
 
-Process: [Main](/docs/tutorial/quick-start#main-process)
+Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process)
 
 ### Instance Events
 
@@ -309,13 +309,13 @@ Returns:
 *   `event` Event
 *   `url` URL
 *   `error` String - The error code
-*   `certificate` [Certificate](/docs/api/structures/certificate)
+*   `certificate` [Certificate]({{site.baseurl}}/docs/api/structures/certificate)
 *   `callback` Function
     *   `isTrusted` Boolean - Indicates whether the certificate can be considered trusted
 
 Emitted when failed to verify the `certificate` for `url`.
 
-The usage is the same with [the `certificate-error` event of `app`](/docs/api/app#event-certificate-error).
+The usage is the same with [the `certificate-error` event of `app`]({{site.baseurl}}/docs/api/app#event-certificate-error).
 
 #### Event: 'select-client-certificate'
 
@@ -323,13 +323,13 @@ Returns:
 
 *   `event` Event
 *   `url` URL
-*   `certificateList` [Certificate[]](/docs/api/structures/certificate)
+*   `certificateList` [Certificate[]]({{site.baseurl}}/docs/api/structures/certificate)
 *   `callback` Function
-    *   `certificate` [Certificate](/docs/api/structures/certificate) - Must be a certificate from the given list
+    *   `certificate` [Certificate]({{site.baseurl}}/docs/api/structures/certificate) - Must be a certificate from the given list
 
 Emitted when a client certificate is requested.
 
-The usage is the same with [the `select-client-certificate` event of `app`](/docs/api/app#event-select-client-certificate).
+The usage is the same with [the `select-client-certificate` event of `app`]({{site.baseurl}}/docs/api/app#event-select-client-certificate).
 
 #### Event: 'login'
 
@@ -352,7 +352,7 @@ Returns:
 
 Emitted when `webContents` wants to do basic auth.
 
-The usage is the same with [the `login` event of `app`](/docs/api/app#event-login).
+The usage is the same with [the `login` event of `app`]({{site.baseurl}}/docs/api/app#event-login).
 
 #### Event: 'found-in-page'
 
@@ -456,7 +456,7 @@ Emitted when there is a new context menu that needs to be handled.
 Returns:
 
 *   `event` Event
-*   `devices` [BluetoothDevice[]](/docs/api/structures/bluetooth-device)
+*   `devices` [BluetoothDevice[]]({{site.baseurl}}/docs/api/structures/bluetooth-device)
 *   `callback` Function
     *   `deviceId` String
 
@@ -484,8 +484,8 @@ Emitted when bluetooth device needs to be selected on call to `navigator.bluetoo
 Returns:
 
 *   `event` Event
-*   `dirtyRect` [Rectangle](/docs/api/structures/rectangle)
-*   `image` [NativeImage](/docs/api/native-image) - The image data of the whole frame.
+*   `dirtyRect` [Rectangle]({{site.baseurl}}/docs/api/structures/rectangle)
+*   `image` [NativeImage]({{site.baseurl}}/docs/api/native-image) - The image data of the whole frame.
 
 Emitted when a new frame is generated. Only the dirty area is passed in the buffer.
 
@@ -510,7 +510,7 @@ Emitted when the devtools window instructs the webContents to reload
     *   `httpReferrer` String (optional) - A HTTP Referrer url.
     *   `userAgent` String (optional) - A user agent originating the request.
     *   `extraHeaders` String (optional) - Extra headers separated by "\n"
-    *   `postData` ([UploadRawData](/docs/api/structures/upload-raw-data) | [UploadFile](/docs/api/structures/upload-file) | [UploadFileSystem](/docs/api/structures/upload-file-system) | [UploadBlob](/docs/api/structures/upload-blob))[] - (optional)
+    *   `postData` ([UploadRawData]({{site.baseurl}}/docs/api/structures/upload-raw-data) | [UploadFile]({{site.baseurl}}/docs/api/structures/upload-file) | [UploadFileSystem]({{site.baseurl}}/docs/api/structures/upload-file-system) | [UploadBlob]({{site.baseurl}}/docs/api/structures/upload-blob))[] - (optional)
 
 Loads the `url` in the window. The `url` must contain the protocol prefix, e.g. the `http://` or `file://`. If the load should bypass http cache then use the `pragma` header to achieve it.
 
@@ -777,7 +777,7 @@ Inserts `text` to the focused element.
     *   `wordStart` Boolean - Whether to look only at the start of words. defaults to `false`.
     *   `medialCapitalAsWordStart` Boolean - When combined with `wordStart`, accepts a match in the middle of a word if the match begins with an uppercase letter followed by a lowercase or non-letter. Accepts several other intra-word matches, defaults to `false`.
 
-Starts a request to find all matches for the `text` in the web page and returns an `Integer` representing the request id used for the request. The result of the request can be obtained by subscribing to [`found-in-page`](/docs/api/web-contents#event-found-in-page) event.
+Starts a request to find all matches for the `text` in the web page and returns an `Integer` representing the request id used for the request. The result of the request can be obtained by subscribing to [`found-in-page`]({{site.baseurl}}/docs/api/web-contents#event-found-in-page) event.
 
 #### `contents.stopFindInPage(action)`
 
@@ -798,11 +798,11 @@ Stops any `findInPage` request for the `webContents` with the provided `action`.
 
 #### `contents.capturePage([rect, ]callback)`
 
-*   `rect` [Rectangle](/docs/api/structures/rectangle) (optional) - The area of the page to be captured
+*   `rect` [Rectangle]({{site.baseurl}}/docs/api/structures/rectangle) (optional) - The area of the page to be captured
 *   `callback` Function
-    *   `image` [NativeImage](/docs/api/native-image)
+    *   `image` [NativeImage]({{site.baseurl}}/docs/api/native-image)
 
-Captures a snapshot of the page within `rect`. Upon completion `callback` will be called with `callback(image)`. The `image` is an instance of [NativeImage](/docs/api/native-image) that stores data of the snapshot. Omitting `rect` will capture the whole visible page.
+Captures a snapshot of the page within `rect`. Upon completion `callback` will be called with `callback(image)`. The `image` is an instance of [NativeImage]({{site.baseurl}}/docs/api/native-image) that stores data of the snapshot. Omitting `rect` will capture the whole visible page.
 
 #### `contents.hasServiceWorker(callback)`
 
@@ -1000,7 +1000,7 @@ Sends an input `event` to the page.
 
 For keyboard events, the `event` object also have following properties:
 
-*   `keyCode` String (**required**) - The character that will be sent as the keyboard event. Should only use the valid key codes in [Accelerator](/docs/api/accelerator).
+*   `keyCode` String (**required**) - The character that will be sent as the keyboard event. Should only use the valid key codes in [Accelerator]({{site.baseurl}}/docs/api/accelerator).
 
 For mouse events, the `event` object also have following properties:
 
@@ -1029,7 +1029,7 @@ For the `mouseWheel` event, the `event` object also have following properties:
 *   `onlyDirty` Boolean (optional) - Defaults to `false`
 *   `callback` Function
     *   `frameBuffer` Buffer
-    *   `dirtyRect` [Rectangle](/docs/api/structures/rectangle)
+    *   `dirtyRect` [Rectangle]({{site.baseurl}}/docs/api/structures/rectangle)
 
 Begin subscribing for presentation events and captured frames, the `callback` will be called with `callback(frameBuffer, dirtyRect)` when there is a presentation event.
 
@@ -1045,7 +1045,7 @@ End subscribing for frame presentation events.
 
 *   `item` Object
     *   `file` String
-    *   `icon` [NativeImage](/docs/api/native-image)
+    *   `icon` [NativeImage]({{site.baseurl}}/docs/api/native-image)
 
 Sets the `item` as dragging item for current drag-drop operation, `file` is the absolute path of the file to be dragged, and `icon` is the image showing under the cursor when dragging.
 
@@ -1081,7 +1081,7 @@ Shows pop-up dictionary that searches the selected word on the page.
 Set the size of the page. This is only supported for `<webview>` guest contents.
 
 *   `options` Object
-    *   `normal` Object (optional) - Normal size of the page. This can be used in combination with the [`disableguestresize`](/docs/api/web-view-tag#disableguestresize) attribute to manually resize the webview guest contents.
+    *   `normal` Object (optional) - Normal size of the page. This can be used in combination with the [`disableguestresize`]({{site.baseurl}}/docs/api/web-view-tag#disableguestresize) attribute to manually resize the webview guest contents.
         *   `width` Integer
         *   `height` Integer
 
@@ -1123,11 +1123,11 @@ A Integer representing the unique ID of this WebContents.
 
 #### `contents.session`
 
-A Session object ([session](/docs/api/session)) used by this webContents.
+A Session object ([session]({{site.baseurl}}/docs/api/session)) used by this webContents.
 
 #### `contents.hostWebContents`
 
-A [`WebContents`](/docs/api/web-contents) instance that might own this `WebContents`.
+A [`WebContents`]({{site.baseurl}}/docs/api/web-contents) instance that might own this `WebContents`.
 
 #### `contents.devToolsWebContents`
 
@@ -1137,4 +1137,4 @@ A `WebContents` of DevTools for this `WebContents`.
 
 #### `contents.debugger`
 
-A [Debugger](/docs/api/debugger) instance for this webContents.
+A [Debugger]({{site.baseurl}}/docs/api/debugger) instance for this webContents.

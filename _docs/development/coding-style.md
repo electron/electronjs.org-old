@@ -94,7 +94,7 @@ You can run `npm run lint` to show any style issues detected by `cpplint` and `e
 
 ## C++ and Python
 
-For C++ and Python, we follow Chromium's [Coding Style](http://www.chromium.org/developers/coding-style). You can use [clang-format](/docs/development/clang-format) to format the C++ code automatically. There is also a script `script/cpplint.py` to check whether all files conform.
+For C++ and Python, we follow Chromium's [Coding Style](http://www.chromium.org/developers/coding-style). You can use [clang-format]({{site.baseurl}}/docs/development/clang-format) to format the C++ code automatically. There is also a script `script/cpplint.py` to check whether all files conform.
 
 The Python version we are using now is Python 2.7.
 

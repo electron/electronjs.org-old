@@ -90,7 +90,7 @@ sort_title: crash-reporter
 
 > Submit crash reports to a remote server.
 
-Process: [Main](/docs/tutorial/quick-start#main-process), [Renderer](/docs/tutorial/quick-start#renderer-process)
+Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process), [Renderer]({{site.baseurl}}/docs/tutorial/quick-start#renderer-process)
 
 The following is an example of automatically submitting a crash report to a remote server:
 
@@ -132,13 +132,13 @@ You are required to call this method before using any other `crashReporter` APIs
 
 ### `crashReporter.getLastCrashReport()`
 
-Returns [`CrashReport`](/docs/api/structures/crash-report):
+Returns [`CrashReport`]({{site.baseurl}}/docs/api/structures/crash-report):
 
 Returns the date and ID of the last crash report. If no crash reports have been sent or the crash reporter has not been started, `null` is returned.
 
 ### `crashReporter.getUploadedReports()`
 
-Returns [`CrashReport[]`](/docs/api/structures/crash-report):
+Returns [`CrashReport[]`]({{site.baseurl}}/docs/api/structures/crash-report):
 
 Returns all uploaded crash reports. Each report contains the date and uploaded ID.
 

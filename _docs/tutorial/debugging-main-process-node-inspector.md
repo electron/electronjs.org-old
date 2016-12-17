@@ -149,7 +149,7 @@ Open http://127.0.0.1:8080/debug?ws=127.0.0.1:8080&port=5858 in the Chrome brows
     $ node_modules/.bin/node-pre-gyp --target=1.2.5 --runtime=electron --fallback-to-build --directory node_modules/v8-debug/ --dist-url=https://atom.io/download/atom-shell reinstall
     $ node_modules/.bin/node-pre-gyp --target=1.2.5 --runtime=electron --fallback-to-build --directory node_modules/v8-profiler/ --dist-url=https://atom.io/download/atom-shell reinstall
 
-See also [How to install native modules](/docs/tutorial/using-native-node-modules#how-to-install-native-modules).
+See also [How to install native modules]({{site.baseurl}}/docs/tutorial/using-native-node-modules#how-to-install-native-modules).
 
 ### 5\. Enable debug mode for Electron
 

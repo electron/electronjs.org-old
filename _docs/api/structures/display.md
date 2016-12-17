@@ -92,11 +92,11 @@ sort_title: display
 *   `rotation` Number - Can be 0, 90, 180, 270, represents screen rotation in clock-wise degrees.
 *   `scaleFactor` Number - Output device's pixel scale factor.
 *   `touchSupport` String - Can be `available`, `unavailable`, `unknown`.
-*   `bounds` [Rectangle](/docs/api/structures/rectangle)
+*   `bounds` [Rectangle]({{site.baseurl}}/docs/api/structures/rectangle)
 *   `size` Object
     *   `height` Number
     *   `width` Number
-*   `workArea` [Rectangle](/docs/api/structures/rectangle)
+*   `workArea` [Rectangle]({{site.baseurl}}/docs/api/structures/rectangle)
 *   `workAreaSize` Object
     *   `height` Number
     *   `width` Number

@@ -90,7 +90,7 @@ sort_title: remote
 
 > Use main process modules from the renderer process.
 
-Process: [Renderer](/docs/tutorial/quick-start#renderer-process)
+Process: [Renderer]({{site.baseurl}}/docs/tutorial/quick-start#renderer-process)
 
 The `remote` module provides a simple way to do inter-process communication (IPC) between the renderer process (web page) and the main process.
 
@@ -100,7 +100,7 @@ In Electron, GUI-related modules (such as `dialog`, `menu` etc.) are only availa
     let win = new BrowserWindow({width: 800, height: 600})
     win.loadURL('https://github.com')
 
-**Note:** For the reverse (access the renderer process from the main process), you can use [webContents.executeJavascript](/docs/api/web-contents#contentsexecutejavascriptcode-usergesture-callback).
+**Note:** For the reverse (access the renderer process from the main process), you can use [webContents.executeJavascript]({{site.baseurl}}/docs/api/web-contents#contentsexecutejavascriptcode-usergesture-callback).
 
 ## Remote Objects
 
@@ -180,11 +180,11 @@ Returns `any` - The object returned by `require(module)` in the main process.
 
 ### `remote.getCurrentWindow()`
 
-Returns `BrowserWindow` - The [`BrowserWindow`](/docs/api/browser-window) object to which this web page belongs.
+Returns `BrowserWindow` - The [`BrowserWindow`]({{site.baseurl}}/docs/api/browser-window) object to which this web page belongs.
 
 ### `remote.getCurrentWebContents()`
 
-Returns `WebContents` - The [`WebContents`](/docs/api/web-contents) object of this web page.
+Returns `WebContents` - The [`WebContents`]({{site.baseurl}}/docs/api/web-contents) object of this web page.
 
 ### `remote.getGlobal(name)`
 
