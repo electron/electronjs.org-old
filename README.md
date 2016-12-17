@@ -5,7 +5,7 @@ The [website](http://electron.atom.io) for [Electron](https://github.com/electro
 - **[Add a project to electron.atom.io/apps](CONTRIBUTING.md#adding-an-app-or-project-to-the-site)**
 - **[Add a meetup to electron.atom.io/community](CONTRIBUTING.md#adding-a-meetup-to-the-site)**
 
-### Build
+### Running the Site
 
 This is a [Jekyll](https://jekyllrb.com) site hosted on [GitHub Pages](https://pages.github.com). To build a Jekyll site you'll need a few things on your system so double check the [Jekyll requirements](https://jekyllrb.com/docs/installation/#requirements).
 
@@ -18,68 +18,18 @@ npm run bootstrap
 npm start
 ```
 
-### CLI for Docs, Releases & Version Information
+### Updating Docs, Apps, Releases, etc
 
-This site contains the latest version of Electron docs, recent release change logs and the current versions of Node.js, Chromium and V8 that are used in Electron.
+This site contains data gathered from various sources, and there's a build script for each:
 
-Each of these are updated here when a new Electron is released. They're done so with the command line interface detailed below.
+- Electron docs
+- ``
 
- You'll need [Node.js](https://www.nodejs.org) installed on your system in order to use the CLI. Then you can install the dependencies:
-
-```bash
-$ cd electron.atom.io
-$ npm install
-```
-
-#### Documentation
-
-Versions of Electron documentation are fetched from the `electron/electron` repository's `docs` directory. The site contains the latest version of docs and links to older versions of the docs in the repository.
-
-To fetch documentation for a specific version:
+the latest version of Electron docs, recent release change logs and the current version numbers of Node.js, Chromium and V8 that are used in Electron.
 
 ```bash
-$ script/docs <version> [options]
-# Example:
-$ script/docs v0.26.0 --latest
-```
-Options:
-
-`--latest` Set this version as the latest version of Electron in `_config.yml` and replace the existing documentation.
-
-#### Release Notes
-
-The most recent release notes from the `electron/electron` repository are made available on the site and can be updated by running:
-
-```bash
-$ script/releases
-```
-
-#### Updating Node.js, Chromium and V8 Versions in use in Electron
-
-To update the `_config.yml` in this site with the versions of Node.js, Chromium and V8 that the latest release of Electron is using run:
-
-```bash
-$ script/versions
-```
-
-#### Update all the Things at Once
-
-The scripts above do each task separately but to run all the things at once:
-
-```bash
-$ npm run latest -- <version>
-# Example:
-$ npm run latest -- v0.36.0
-```
-
-_Note_ This assumes version is the latest and sets it as such by default.
-
-**Testing**
-
-To test the documentation script:
-
-```bash
-$ npm test
+npm run build
+npm test
 ```
 
 ### Contributing
