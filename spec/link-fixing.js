@@ -24,7 +24,7 @@ var expectedLinks = [
   '[here](https://github.com/electron/electron/releases)',
   '[tray-balloon]: http://electron.atom.io/docs/api/tray#traydisplayballoonoptions-windows',
   '[app-user-model-id]: https://msdn.microsoft.com/en-us/library/windows/desktop/dd378459(v=vs.85).aspx'
-  ]
+]
 
 test('Fetch and write documentation with latest flag', function (t) {
   t.plan(6)
@@ -62,7 +62,7 @@ test('Parse empty directory', function (t) {
   })
 })
 
-test('Fixes multiple links on one line', function(t) {
+test('Fixes multiple links on one line', function (t) {
   var content = 'Process: [Main](../tutorial/quick-start.md#main-process), [Renderer](../tutorial/quick-start.md#renderer-process)'
   var links = getLinks(content)
   t.equal(links.length, 2)

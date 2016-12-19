@@ -1,7 +1,7 @@
 var cheerio = require('cheerio')
 
 module.exports = function (grunt) {
-  grunt.loadNpmTasks('grunt-link-checker');
+  grunt.loadNpmTasks('grunt-link-checker')
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),

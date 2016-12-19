@@ -18,7 +18,7 @@ function fixSyntaxHighlighting () {
   })
 }
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   fixPlatformLabels()
   fixSyntaxHighlighting()
 })
