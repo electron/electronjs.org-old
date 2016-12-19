@@ -2,94 +2,49 @@
 version: v1.4.12
 category: Tutorial
 redirect_from:
-  - /docs/v0.37.8/tutorial/using-native-node-modules
-  - /docs/v0.37.7/tutorial/using-native-node-modules
-  - /docs/v0.37.6/tutorial/using-native-node-modules
-  - /docs/v0.37.5/tutorial/using-native-node-modules
-  - /docs/v0.37.4/tutorial/using-native-node-modules
-  - /docs/v0.37.3/tutorial/using-native-node-modules
-  - /docs/v0.36.12/tutorial/using-native-node-modules
-  - /docs/v0.37.1/tutorial/using-native-node-modules
-  - /docs/v0.37.0/tutorial/using-native-node-modules
-  - /docs/v0.36.11/tutorial/using-native-node-modules
-  - /docs/v0.36.10/tutorial/using-native-node-modules
-  - /docs/v0.36.9/tutorial/using-native-node-modules
-  - /docs/v0.36.8/tutorial/using-native-node-modules
-  - /docs/v0.36.7/tutorial/using-native-node-modules
-  - /docs/v0.36.6/tutorial/using-native-node-modules
-  - /docs/v0.36.5/tutorial/using-native-node-modules
-  - /docs/v0.36.4/tutorial/using-native-node-modules
-  - /docs/v0.36.3/tutorial/using-native-node-modules
-  - /docs/v0.35.5/tutorial/using-native-node-modules
-  - /docs/v0.36.2/tutorial/using-native-node-modules
-  - /docs/v0.36.0/tutorial/using-native-node-modules
-  - /docs/v0.35.4/tutorial/using-native-node-modules
-  - /docs/v0.35.3/tutorial/using-native-node-modules
-  - /docs/v0.35.2/tutorial/using-native-node-modules
-  - /docs/v0.34.4/tutorial/using-native-node-modules
-  - /docs/v0.35.1/tutorial/using-native-node-modules
-  - /docs/v0.34.3/tutorial/using-native-node-modules
-  - /docs/v0.34.2/tutorial/using-native-node-modules
-  - /docs/v0.34.1/tutorial/using-native-node-modules
-  - /docs/v0.34.0/tutorial/using-native-node-modules
-  - /docs/v0.33.9/tutorial/using-native-node-modules
-  - /docs/v0.33.8/tutorial/using-native-node-modules
-  - /docs/v0.33.7/tutorial/using-native-node-modules
-  - /docs/v0.33.6/tutorial/using-native-node-modules
-  - /docs/v0.33.4/tutorial/using-native-node-modules
-  - /docs/v0.33.3/tutorial/using-native-node-modules
-  - /docs/v0.33.2/tutorial/using-native-node-modules
-  - /docs/v0.33.1/tutorial/using-native-node-modules
-  - /docs/v0.33.0/tutorial/using-native-node-modules
-  - /docs/v0.32.3/tutorial/using-native-node-modules
-  - /docs/v0.32.2/tutorial/using-native-node-modules
-  - /docs/v0.31.2/tutorial/using-native-node-modules
-  - /docs/v0.31.0/tutorial/using-native-node-modules
-  - /docs/v0.30.4/tutorial/using-native-node-modules
-  - /docs/v0.29.2/tutorial/using-native-node-modules
-  - /docs/v0.29.1/tutorial/using-native-node-modules
-  - /docs/v0.28.3/tutorial/using-native-node-modules
-  - /docs/v0.28.2/tutorial/using-native-node-modules
-  - /docs/v0.28.1/tutorial/using-native-node-modules
-  - /docs/v0.28.0/tutorial/using-native-node-modules
-  - /docs/v0.27.3/tutorial/using-native-node-modules
-  - /docs/v0.27.2/tutorial/using-native-node-modules
-  - /docs/v0.27.1/tutorial/using-native-node-modules
-  - /docs/v0.27.0/tutorial/using-native-node-modules
-  - /docs/v0.26.1/tutorial/using-native-node-modules
-  - /docs/v0.26.0/tutorial/using-native-node-modules
-  - /docs/v0.25.3/tutorial/using-native-node-modules
-  - /docs/v0.25.2/tutorial/using-native-node-modules
-  - /docs/v0.25.1/tutorial/using-native-node-modules
-  - /docs/v0.25.0/tutorial/using-native-node-modules
-  - /docs/v0.24.0/tutorial/using-native-node-modules
-  - /docs/v0.23.0/tutorial/using-native-node-modules
-  - /docs/v0.22.3/tutorial/using-native-node-modules
-  - /docs/v0.22.2/tutorial/using-native-node-modules
-  - /docs/v0.22.1/tutorial/using-native-node-modules
-  - /docs/v0.21.3/tutorial/using-native-node-modules
-  - /docs/v0.21.2/tutorial/using-native-node-modules
-  - /docs/v0.21.1/tutorial/using-native-node-modules
-  - /docs/v0.21.0/tutorial/using-native-node-modules
-  - /docs/v0.20.8/tutorial/using-native-node-modules
-  - /docs/v0.20.7/tutorial/using-native-node-modules
-  - /docs/v0.20.6/tutorial/using-native-node-modules
-  - /docs/v0.20.5/tutorial/using-native-node-modules
-  - /docs/v0.20.4/tutorial/using-native-node-modules
-  - /docs/v0.20.3/tutorial/using-native-node-modules
-  - /docs/v0.20.2/tutorial/using-native-node-modules
-  - /docs/v0.20.1/tutorial/using-native-node-modules
-  - /docs/v0.20.0/tutorial/using-native-node-modules
-  - /docs/vlatest/tutorial/using-native-node-modules
-source_url: >-
-  https://github.com/electron/electron/blob/master/docs/tutorial/using-native-node-modules.md
-title: Using Native Node Modules
-excerpt: ''
-sort_title: using-native-node-modules
+    - /docs/v0.24.0/tutorial/using-native-node-modules/
+    - /docs/v0.25.0/tutorial/using-native-node-modules/
+    - /docs/v0.26.0/tutorial/using-native-node-modules/
+    - /docs/v0.27.0/tutorial/using-native-node-modules/
+    - /docs/v0.28.0/tutorial/using-native-node-modules/
+    - /docs/v0.29.0/tutorial/using-native-node-modules/
+    - /docs/v0.30.0/tutorial/using-native-node-modules/
+    - /docs/v0.31.0/tutorial/using-native-node-modules/
+    - /docs/v0.32.0/tutorial/using-native-node-modules/
+    - /docs/v0.33.0/tutorial/using-native-node-modules/
+    - /docs/v0.34.0/tutorial/using-native-node-modules/
+    - /docs/v0.35.0/tutorial/using-native-node-modules/
+    - /docs/v0.36.0/tutorial/using-native-node-modules/
+    - /docs/v0.36.3/tutorial/using-native-node-modules/
+    - /docs/v0.36.4/tutorial/using-native-node-modules/
+    - /docs/v0.36.5/tutorial/using-native-node-modules/
+    - /docs/v0.36.6/tutorial/using-native-node-modules/
+    - /docs/v0.36.7/tutorial/using-native-node-modules/
+    - /docs/v0.36.8/tutorial/using-native-node-modules/
+    - /docs/v0.36.9/tutorial/using-native-node-modules/
+    - /docs/v0.36.10/tutorial/using-native-node-modules/
+    - /docs/v0.36.11/tutorial/using-native-node-modules/
+    - /docs/v0.37.0/tutorial/using-native-node-modules/
+    - /docs/v0.37.1/tutorial/using-native-node-modules/
+    - /docs/v0.37.2/tutorial/using-native-node-modules/
+    - /docs/v0.37.3/tutorial/using-native-node-modules/
+    - /docs/v0.37.4/tutorial/using-native-node-modules/
+    - /docs/v0.37.5/tutorial/using-native-node-modules/
+    - /docs/v0.37.6/tutorial/using-native-node-modules/
+    - /docs/v0.37.7/tutorial/using-native-node-modules/
+    - /docs/v0.37.8/tutorial/using-native-node-modules/
+    - /docs/latest/tutorial/using-native-node-modules/
+source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/using-native-node-modules.md'
+title: "Using Native Node Modules"
+sort_title: "using native node modules"
 ---
+
 # Using Native Node Modules
 
-The native Node modules are supported by Electron, but since Electron is very likely to use a different V8 version from the Node binary installed in your system, you have to manually specify the location of Electron's headers when building native modules.
+The native Node modules are supported by Electron, but since Electron is very
+likely to use a different V8 version from the Node binary installed in your
+system, you have to manually specify the location of Electron's headers when
+building native modules.
 
 ## How to install native modules
 
@@ -97,7 +52,8 @@ Three ways to install native modules:
 
 ### Using `npm`
 
-By setting a few environment variables, you can use `npm` to install modules directly.
+By setting a few environment variables, you can use `npm` to install modules
+directly.
 
 An example of installing all dependencies for Electron:
 
@@ -119,7 +75,10 @@ HOME=~/.electron-gyp npm install
 
 ### Installing modules and rebuilding for Electron
 
-You can also choose to install modules like other Node projects, and then rebuild the modules for Electron with the [`electron-rebuild`](https://github.com/paulcbetts/electron-rebuild) package. This module can get the version of Electron and handle the manual steps of downloading headers and building native modules for your app.
+You can also choose to install modules like other Node projects, and then
+rebuild the modules for Electron with the [`electron-rebuild`][electron-rebuild]
+package. This module can get the version of Electron and handle the manual steps
+of downloading headers and building native modules for your app.
 
 An example of installing `electron-rebuild` and then rebuild modules with it:
 
@@ -135,27 +94,42 @@ npm install --save-dev electron-rebuild
 
 ### Manually building for Electron
 
-If you are a developer developing a native module and want to test it against Electron, you might want to rebuild the module for Electron manually. You can use `node-gyp` directly to build for Electron:
+If you are a developer developing a native module and want to test it against
+Electron, you might want to rebuild the module for Electron manually. You can
+use `node-gyp` directly to build for Electron:
 
 ```bash
 cd /path-to-module/
 HOME=~/.electron-gyp node-gyp rebuild --target=1.2.3 --arch=x64 --dist-url=https://atom.io/download/electron
 ```
 
-The `HOME=~/.electron-gyp` changes where to find development headers. The `--target=1.2.3` is version of Electron. The `--dist-url=...` specifies where to download the headers. The `--arch=x64` says the module is built for 64bit system.
+The `HOME=~/.electron-gyp` changes where to find development headers. The
+`--target=1.2.3` is version of Electron. The `--dist-url=...` specifies
+where to download the headers. The `--arch=x64` says the module is built for
+64bit system.
 
 ## Troubleshooting
 
-If you installed a native module and found it was not working, you need to check following things:
+If you installed a native module and found it was not working, you need to check
+following things:
 
-*   The architecture of module has to match Electron's architecture (ia32 or x64).
-*   After you upgraded Electron, you usually need to rebuild the modules.
-*   When in doubt, run `electron-rebuild` first.
+* The architecture of module has to match Electron's architecture (ia32 or x64).
+* After you upgraded Electron, you usually need to rebuild the modules.
+* When in doubt, run `electron-rebuild` first.
 
 ## Modules that rely on `node-pre-gyp`
 
-The [`node-pre-gyp` tool](https://github.com/mapbox/node-pre-gyp) provides a way to deploy native Node modules with prebuilt binaries, and many popular modules are using it.
+The [`node-pre-gyp` tool][node-pre-gyp] provides a way to deploy native Node
+modules with prebuilt binaries, and many popular modules are using it.
 
-Usually those modules work fine under Electron, but sometimes when Electron uses a newer version of V8 than Node, and there are ABI changes, bad things may happen. So in general it is recommended to always build native modules from source code.
+Usually those modules work fine under Electron, but sometimes when Electron uses
+a newer version of V8 than Node, and there are ABI changes, bad things may
+happen. So in general it is recommended to always build native modules from
+source code.
 
-If you are following the `npm` way of installing modules, then this is done by default, if not, you have to pass `--build-from-source` to `npm`, or set the `npm_config_build_from_source` environment variable.
+If you are following the `npm` way of installing modules, then this is done
+by default, if not, you have to pass `--build-from-source` to `npm`, or set the
+`npm_config_build_from_source` environment variable.
+
+[electron-rebuild]: https://github.com/paulcbetts/electron-rebuild
+[node-pre-gyp]: https://github.com/mapbox/node-pre-gyp

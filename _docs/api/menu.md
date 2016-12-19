@@ -2,95 +2,49 @@
 version: v1.4.12
 category: API
 redirect_from:
-  - /docs/v0.37.8/api/menu
-  - /docs/v0.37.7/api/menu
-  - /docs/v0.37.6/api/menu
-  - /docs/v0.37.5/api/menu
-  - /docs/v0.37.4/api/menu
-  - /docs/v0.37.3/api/menu
-  - /docs/v0.36.12/api/menu
-  - /docs/v0.37.1/api/menu
-  - /docs/v0.37.0/api/menu
-  - /docs/v0.36.11/api/menu
-  - /docs/v0.36.10/api/menu
-  - /docs/v0.36.9/api/menu
-  - /docs/v0.36.8/api/menu
-  - /docs/v0.36.7/api/menu
-  - /docs/v0.36.6/api/menu
-  - /docs/v0.36.5/api/menu
-  - /docs/v0.36.4/api/menu
-  - /docs/v0.36.3/api/menu
-  - /docs/v0.35.5/api/menu
-  - /docs/v0.36.2/api/menu
-  - /docs/v0.36.0/api/menu
-  - /docs/v0.35.4/api/menu
-  - /docs/v0.35.3/api/menu
-  - /docs/v0.35.2/api/menu
-  - /docs/v0.34.4/api/menu
-  - /docs/v0.35.1/api/menu
-  - /docs/v0.34.3/api/menu
-  - /docs/v0.34.2/api/menu
-  - /docs/v0.34.1/api/menu
-  - /docs/v0.34.0/api/menu
-  - /docs/v0.33.9/api/menu
-  - /docs/v0.33.8/api/menu
-  - /docs/v0.33.7/api/menu
-  - /docs/v0.33.6/api/menu
-  - /docs/v0.33.4/api/menu
-  - /docs/v0.33.3/api/menu
-  - /docs/v0.33.2/api/menu
-  - /docs/v0.33.1/api/menu
-  - /docs/v0.33.0/api/menu
-  - /docs/v0.32.3/api/menu
-  - /docs/v0.32.2/api/menu
-  - /docs/v0.31.2/api/menu
-  - /docs/v0.31.0/api/menu
-  - /docs/v0.30.4/api/menu
-  - /docs/v0.29.2/api/menu
-  - /docs/v0.29.1/api/menu
-  - /docs/v0.28.3/api/menu
-  - /docs/v0.28.2/api/menu
-  - /docs/v0.28.1/api/menu
-  - /docs/v0.28.0/api/menu
-  - /docs/v0.27.3/api/menu
-  - /docs/v0.27.2/api/menu
-  - /docs/v0.27.1/api/menu
-  - /docs/v0.27.0/api/menu
-  - /docs/v0.26.1/api/menu
-  - /docs/v0.26.0/api/menu
-  - /docs/v0.25.3/api/menu
-  - /docs/v0.25.2/api/menu
-  - /docs/v0.25.1/api/menu
-  - /docs/v0.25.0/api/menu
-  - /docs/v0.24.0/api/menu
-  - /docs/v0.23.0/api/menu
-  - /docs/v0.22.3/api/menu
-  - /docs/v0.22.2/api/menu
-  - /docs/v0.22.1/api/menu
-  - /docs/v0.21.3/api/menu
-  - /docs/v0.21.2/api/menu
-  - /docs/v0.21.1/api/menu
-  - /docs/v0.21.0/api/menu
-  - /docs/v0.20.8/api/menu
-  - /docs/v0.20.7/api/menu
-  - /docs/v0.20.6/api/menu
-  - /docs/v0.20.5/api/menu
-  - /docs/v0.20.4/api/menu
-  - /docs/v0.20.3/api/menu
-  - /docs/v0.20.2/api/menu
-  - /docs/v0.20.1/api/menu
-  - /docs/v0.20.0/api/menu
-  - /docs/vlatest/api/menu
+    - /docs/v0.24.0/api/menu/
+    - /docs/v0.25.0/api/menu/
+    - /docs/v0.26.0/api/menu/
+    - /docs/v0.27.0/api/menu/
+    - /docs/v0.28.0/api/menu/
+    - /docs/v0.29.0/api/menu/
+    - /docs/v0.30.0/api/menu/
+    - /docs/v0.31.0/api/menu/
+    - /docs/v0.32.0/api/menu/
+    - /docs/v0.33.0/api/menu/
+    - /docs/v0.34.0/api/menu/
+    - /docs/v0.35.0/api/menu/
+    - /docs/v0.36.0/api/menu/
+    - /docs/v0.36.3/api/menu/
+    - /docs/v0.36.4/api/menu/
+    - /docs/v0.36.5/api/menu/
+    - /docs/v0.36.6/api/menu/
+    - /docs/v0.36.7/api/menu/
+    - /docs/v0.36.8/api/menu/
+    - /docs/v0.36.9/api/menu/
+    - /docs/v0.36.10/api/menu/
+    - /docs/v0.36.11/api/menu/
+    - /docs/v0.37.0/api/menu/
+    - /docs/v0.37.1/api/menu/
+    - /docs/v0.37.2/api/menu/
+    - /docs/v0.37.3/api/menu/
+    - /docs/v0.37.4/api/menu/
+    - /docs/v0.37.5/api/menu/
+    - /docs/v0.37.6/api/menu/
+    - /docs/v0.37.7/api/menu/
+    - /docs/v0.37.8/api/menu/
+    - /docs/latest/api/menu/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/menu.md'
-title: Menu
-excerpt: Create native application menus and context menus.
-sort_title: menu
+excerpt: "Create native application menus and context menus."
+title: "Menu"
+sort_title: "menu"
 ---
+
 ## Class: Menu
 
 > Create native application menus and context menus.
 
-Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process)
+Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process)
 
 ### `new Menu()`
 
@@ -102,9 +56,10 @@ The `menu` class has the following static methods:
 
 #### `Menu.setApplicationMenu(menu)`
 
-*   `menu` Menu
+* `menu` Menu
 
-Sets `menu` as the application menu on macOS. On Windows and Linux, the `menu` will be set as each window's top menu.
+Sets `menu` as the application menu on macOS. On Windows and Linux, the `menu`
+will be set as each window's top menu.
 
 **Note:** This API has to be called after the `ready` event of `app` module.
 
@@ -114,21 +69,26 @@ Returns `Menu` - The application menu, if set, or `null`, if not set.
 
 #### `Menu.sendActionToFirstResponder(action)` _macOS_
 
-*   `action` String
+* `action` String
 
-Sends the `action` to the first responder of application. This is used for emulating default Cocoa menu behaviors, usually you would just use the `role` property of `MenuItem`.
+Sends the `action` to the first responder of application. This is used for
+emulating default Cocoa menu behaviors, usually you would just use the
+`role` property of `MenuItem`.
 
-See the [macOS Cocoa Event Handling Guide](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/EventOverview/EventArchitecture/EventArchitecture.html#//apple_ref/doc/uid/10000060i-CH3-SW7) for more information on macOS' native actions.
+See the [macOS Cocoa Event Handling Guide](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/EventOverview/EventArchitecture/EventArchitecture.html#//apple_ref/doc/uid/10000060i-CH3-SW7)
+for more information on macOS' native actions.
 
 #### `Menu.buildFromTemplate(template)`
 
-*   `template` MenuItemConstructorOptions[]
+* `template` MenuItemConstructorOptions[]
 
 Returns `Menu`
 
-Generally, the `template` is just an array of `options` for constructing a [MenuItem]({{site.baseurl}}/docs/api/menu-item). The usage can be referenced above.
+Generally, the `template` is just an array of `options` for constructing a
+[MenuItem](http://electron.atom.io/docs/api/menu-item). The usage can be referenced above.
 
-You can also attach other fields to the element of the `template` and they will become properties of the constructed menu items.
+You can also attach other fields to the element of the `template` and they
+will become properties of the constructed menu items.
 
 ### Instance Methods
 
@@ -136,23 +96,25 @@ The `menu` object has the following instance methods:
 
 #### `menu.popup([browserWindow, x, y, positioningItem])`
 
-*   `browserWindow` BrowserWindow (optional) - Default is `BrowserWindow.getFocusedWindow()`.
-*   `x` Number (optional) - Default is the current mouse cursor position.
-*   `y` Number (**required** if `x` is used) - Default is the current mouse cursor position.
-*   `positioningItem` Number (optional) _macOS_ - The index of the menu item to be positioned under the mouse cursor at the specified coordinates. Default is -1.
+* `browserWindow` BrowserWindow (optional) - Default is `BrowserWindow.getFocusedWindow()`.
+* `x` Number (optional) - Default is the current mouse cursor position.
+* `y` Number (**required** if `x` is used) - Default is the current mouse cursor position.
+* `positioningItem` Number (optional) _macOS_ - The index of the menu item to
+  be positioned under the mouse cursor at the specified coordinates. Default is
+  -1.
 
 Pops up this menu as a context menu in the `browserWindow`.
 
 #### `menu.append(menuItem)`
 
-*   `menuItem` MenuItem
+* `menuItem` MenuItem
 
 Appends the `menuItem` to the menu.
 
 #### `menu.insert(pos, menuItem)`
 
-*   `pos` Integer
-*   `menuItem` MenuItem
+* `pos` Integer
+* `menuItem` MenuItem
 
 Inserts the `menuItem` to the `pos` position of the menu.
 
@@ -164,15 +126,18 @@ Inserts the `menuItem` to the `pos` position of the menu.
 
 A MenuItem[] array containing the menu's items.
 
-Each `Menu` consists of multiple [`MenuItem`]({{site.baseurl}}/docs/api/menu-item)s and each `MenuItem` can have a submenu.
+Each `Menu` consists of multiple [`MenuItem`](http://electron.atom.io/docs/api/menu-item)s and each `MenuItem`
+can have a submenu.
 
 ## Examples
 
-The `Menu` class is only available in the main process, but you can also use it in the render process via the [`remote`]({{site.baseurl}}/docs/api/remote) module.
+The `Menu` class is only available in the main process, but you can also use it
+in the render process via the [`remote`](http://electron.atom.io/docs/api/remote) module.
 
 ### Main process
 
-An example of creating the application menu in the main process with the simple template API:
+An example of creating the application menu in the main process with the
+simple template API:
 
 ```javascript
 const {app, Menu} = require('electron')
@@ -344,7 +309,9 @@ Menu.setApplicationMenu(menu)
 
 ### Render process
 
-Below is an example of creating a menu dynamically in a web page (render process) by using the [`remote`]({{site.baseurl}}/docs/api/remote) module, and showing it when the user right clicks the page:
+Below is an example of creating a menu dynamically in a web page
+(render process) by using the [`remote`](http://electron.atom.io/docs/api/remote) module, and showing it when
+the user right clicks the page:
 
 ```html
 <!-- index.html -->
@@ -364,41 +331,65 @@ window.addEventListener('contextmenu', (e) => {
 </script>
 ```
 
+
 ## Notes on macOS Application Menu
 
-macOS has a completely different style of application menu from Windows and Linux. Here are some notes on making your app's menu more native-like.
+macOS has a completely different style of application menu from Windows and
+Linux. Here are some notes on making your app's menu more native-like.
 
 ### Standard Menus
 
-On macOS there are many system-defined standard menus, like the `Services` and `Windows` menus. To make your menu a standard menu, you should set your menu's `role` to one of following and Electron will recognize them and make them become standard menus:
+On macOS there are many system-defined standard menus, like the `Services` and
+`Windows` menus. To make your menu a standard menu, you should set your menu's
+`role` to one of following and Electron will recognize them and make them
+become standard menus:
 
-*   `window`
-*   `help`
-*   `services`
+* `window`
+* `help`
+* `services`
 
 ### Standard Menu Item Actions
 
-macOS has provided standard actions for some menu items, like `About xxx`, `Hide xxx`, and `Hide Others`. To set the action of a menu item to a standard action, you should set the `role` attribute of the menu item.
+macOS has provided standard actions for some menu items, like `About xxx`,
+`Hide xxx`, and `Hide Others`. To set the action of a menu item to a standard
+action, you should set the `role` attribute of the menu item.
 
 ### Main Menu's Name
 
-On macOS the label of the application menu's first item is always your app's name, no matter what label you set. To change it, modify your app bundle's `Info.plist` file. See [About Information Property List Files](https://developer.apple.com/library/ios/documentation/general/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html) for more information.
+On macOS the label of the application menu's first item is always your app's
+name, no matter what label you set. To change it, modify your app bundle's
+`Info.plist` file. See
+[About Information Property List Files][AboutInformationPropertyListFiles]
+for more information.
 
-## Setting Menu for Specific Browser Window (_Linux_ _Windows_)
+## Setting Menu for Specific Browser Window (*Linux* *Windows*)
 
-The [`setMenu` method](https://github.com/electron/electron/blob/master/docs/api/browser-window.md#winsetmenumenu-linux-windows) of browser windows can set the menu of certain browser windows.
+The [`setMenu` method][setMenu] of browser windows can set the menu of certain
+browser windows.
 
 ## Menu Item Position
 
-You can make use of `position` and `id` to control how the item will be placed when building a menu with `Menu.buildFromTemplate`.
+You can make use of `position` and `id` to control how the item will be placed
+when building a menu with `Menu.buildFromTemplate`.
 
-The `position` attribute of `MenuItem` has the form `[placement]=[id]`, where `placement` is one of `before`, `after`, or `endof` and `id` is the unique ID of an existing item in the menu:
+The `position` attribute of `MenuItem` has the form `[placement]=[id]`, where
+`placement` is one of `before`, `after`, or `endof` and `id` is the unique ID of
+an existing item in the menu:
 
-*   `before` - Inserts this item before the id referenced item. If the referenced item doesn't exist the item will be inserted at the end of the menu.
-*   `after` - Inserts this item after id referenced item. If the referenced item doesn't exist the item will be inserted at the end of the menu.
-*   `endof` - Inserts this item at the end of the logical group containing the id referenced item (groups are created by separator items). If the referenced item doesn't exist, a new separator group is created with the given id and this item is inserted after that separator.
+* `before` - Inserts this item before the id referenced item. If the
+  referenced item doesn't exist the item will be inserted at the end of
+  the menu.
+* `after` - Inserts this item after id referenced item. If the referenced
+  item doesn't exist the item will be inserted at the end of the menu.
+* `endof` - Inserts this item at the end of the logical group containing
+  the id referenced item (groups are created by separator items). If
+  the referenced item doesn't exist, a new separator group is created with
+  the given id and this item is inserted after that separator.
 
-When an item is positioned, all un-positioned items are inserted after it until a new item is positioned. So if you want to position a group of menu items in the same location you only need to specify a position for the first item.
+When an item is positioned, all un-positioned items are inserted after
+it until a new item is positioned. So if you want to position a group of
+menu items in the same location you only need to specify a position for
+the first item.
 
 ### Examples
 
@@ -422,7 +413,6 @@ Menu:
 - 3
 - 4
 - 5
-
 ```
 
 Template:
@@ -449,5 +439,7 @@ Menu:
 - 1
 - 2
 - 3
-
 ```
+
+[AboutInformationPropertyListFiles]: https://developer.apple.com/library/ios/documentation/general/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html
+[setMenu]: https://github.com/electron/electron/blob/master/docs/api/browser-window.md#winsetmenumenu-linux-windows

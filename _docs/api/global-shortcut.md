@@ -2,99 +2,57 @@
 version: v1.4.12
 category: API
 redirect_from:
-  - /docs/v0.37.8/api/global-shortcut
-  - /docs/v0.37.7/api/global-shortcut
-  - /docs/v0.37.6/api/global-shortcut
-  - /docs/v0.37.5/api/global-shortcut
-  - /docs/v0.37.4/api/global-shortcut
-  - /docs/v0.37.3/api/global-shortcut
-  - /docs/v0.36.12/api/global-shortcut
-  - /docs/v0.37.1/api/global-shortcut
-  - /docs/v0.37.0/api/global-shortcut
-  - /docs/v0.36.11/api/global-shortcut
-  - /docs/v0.36.10/api/global-shortcut
-  - /docs/v0.36.9/api/global-shortcut
-  - /docs/v0.36.8/api/global-shortcut
-  - /docs/v0.36.7/api/global-shortcut
-  - /docs/v0.36.6/api/global-shortcut
-  - /docs/v0.36.5/api/global-shortcut
-  - /docs/v0.36.4/api/global-shortcut
-  - /docs/v0.36.3/api/global-shortcut
-  - /docs/v0.35.5/api/global-shortcut
-  - /docs/v0.36.2/api/global-shortcut
-  - /docs/v0.36.0/api/global-shortcut
-  - /docs/v0.35.4/api/global-shortcut
-  - /docs/v0.35.3/api/global-shortcut
-  - /docs/v0.35.2/api/global-shortcut
-  - /docs/v0.34.4/api/global-shortcut
-  - /docs/v0.35.1/api/global-shortcut
-  - /docs/v0.34.3/api/global-shortcut
-  - /docs/v0.34.2/api/global-shortcut
-  - /docs/v0.34.1/api/global-shortcut
-  - /docs/v0.34.0/api/global-shortcut
-  - /docs/v0.33.9/api/global-shortcut
-  - /docs/v0.33.8/api/global-shortcut
-  - /docs/v0.33.7/api/global-shortcut
-  - /docs/v0.33.6/api/global-shortcut
-  - /docs/v0.33.4/api/global-shortcut
-  - /docs/v0.33.3/api/global-shortcut
-  - /docs/v0.33.2/api/global-shortcut
-  - /docs/v0.33.1/api/global-shortcut
-  - /docs/v0.33.0/api/global-shortcut
-  - /docs/v0.32.3/api/global-shortcut
-  - /docs/v0.32.2/api/global-shortcut
-  - /docs/v0.31.2/api/global-shortcut
-  - /docs/v0.31.0/api/global-shortcut
-  - /docs/v0.30.4/api/global-shortcut
-  - /docs/v0.29.2/api/global-shortcut
-  - /docs/v0.29.1/api/global-shortcut
-  - /docs/v0.28.3/api/global-shortcut
-  - /docs/v0.28.2/api/global-shortcut
-  - /docs/v0.28.1/api/global-shortcut
-  - /docs/v0.28.0/api/global-shortcut
-  - /docs/v0.27.3/api/global-shortcut
-  - /docs/v0.27.2/api/global-shortcut
-  - /docs/v0.27.1/api/global-shortcut
-  - /docs/v0.27.0/api/global-shortcut
-  - /docs/v0.26.1/api/global-shortcut
-  - /docs/v0.26.0/api/global-shortcut
-  - /docs/v0.25.3/api/global-shortcut
-  - /docs/v0.25.2/api/global-shortcut
-  - /docs/v0.25.1/api/global-shortcut
-  - /docs/v0.25.0/api/global-shortcut
-  - /docs/v0.24.0/api/global-shortcut
-  - /docs/v0.23.0/api/global-shortcut
-  - /docs/v0.22.3/api/global-shortcut
-  - /docs/v0.22.2/api/global-shortcut
-  - /docs/v0.22.1/api/global-shortcut
-  - /docs/v0.21.3/api/global-shortcut
-  - /docs/v0.21.2/api/global-shortcut
-  - /docs/v0.21.1/api/global-shortcut
-  - /docs/v0.21.0/api/global-shortcut
-  - /docs/v0.20.8/api/global-shortcut
-  - /docs/v0.20.7/api/global-shortcut
-  - /docs/v0.20.6/api/global-shortcut
-  - /docs/v0.20.5/api/global-shortcut
-  - /docs/v0.20.4/api/global-shortcut
-  - /docs/v0.20.3/api/global-shortcut
-  - /docs/v0.20.2/api/global-shortcut
-  - /docs/v0.20.1/api/global-shortcut
-  - /docs/v0.20.0/api/global-shortcut
-  - /docs/vlatest/api/global-shortcut
+    - /docs/v0.24.0/api/global-shortcut/
+    - /docs/v0.25.0/api/global-shortcut/
+    - /docs/v0.26.0/api/global-shortcut/
+    - /docs/v0.27.0/api/global-shortcut/
+    - /docs/v0.28.0/api/global-shortcut/
+    - /docs/v0.29.0/api/global-shortcut/
+    - /docs/v0.30.0/api/global-shortcut/
+    - /docs/v0.31.0/api/global-shortcut/
+    - /docs/v0.32.0/api/global-shortcut/
+    - /docs/v0.33.0/api/global-shortcut/
+    - /docs/v0.34.0/api/global-shortcut/
+    - /docs/v0.35.0/api/global-shortcut/
+    - /docs/v0.36.0/api/global-shortcut/
+    - /docs/v0.36.3/api/global-shortcut/
+    - /docs/v0.36.4/api/global-shortcut/
+    - /docs/v0.36.5/api/global-shortcut/
+    - /docs/v0.36.6/api/global-shortcut/
+    - /docs/v0.36.7/api/global-shortcut/
+    - /docs/v0.36.8/api/global-shortcut/
+    - /docs/v0.36.9/api/global-shortcut/
+    - /docs/v0.36.10/api/global-shortcut/
+    - /docs/v0.36.11/api/global-shortcut/
+    - /docs/v0.37.0/api/global-shortcut/
+    - /docs/v0.37.1/api/global-shortcut/
+    - /docs/v0.37.2/api/global-shortcut/
+    - /docs/v0.37.3/api/global-shortcut/
+    - /docs/v0.37.4/api/global-shortcut/
+    - /docs/v0.37.5/api/global-shortcut/
+    - /docs/v0.37.6/api/global-shortcut/
+    - /docs/v0.37.7/api/global-shortcut/
+    - /docs/v0.37.8/api/global-shortcut/
+    - /docs/latest/api/global-shortcut/
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/global-shortcut.md'
-title: globalShortcut
-excerpt: Detect keyboard events when the application does not have keyboard focus.
-sort_title: global-shortcut
+excerpt: "Detect keyboard events when the application does not have keyboard focus."
+title: "globalShortcut"
+sort_title: "globalshortcut"
 ---
+
 # globalShortcut
 
 > Detect keyboard events when the application does not have keyboard focus.
 
-Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process)
+Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process)
 
-The `globalShortcut` module can register/unregister a global keyboard shortcut with the operating system so that you can customize the operations for various shortcuts.
+The `globalShortcut` module can register/unregister a global keyboard shortcut
+with the operating system so that you can customize the operations for various
+shortcuts.
 
-**Note:** The shortcut is global; it will work even if the app does not have the keyboard focus. You should not use this module until the `ready` event of the app module is emitted.
+**Note:** The shortcut is global; it will work even if the app does
+not have the keyboard focus. You should not use this module until the `ready`
+event of the app module is emitted.
 
 ```javascript
 const {app, globalShortcut} = require('electron')
@@ -128,24 +86,29 @@ The `globalShortcut` module has the following methods:
 
 ### `globalShortcut.register(accelerator, callback)`
 
-*   `accelerator` [Accelerator]({{site.baseurl}}/docs/api/accelerator)
-*   `callback` Function
+* `accelerator` [Accelerator](http://electron.atom.io/docs/api/accelerator)
+* `callback` Function
 
-Registers a global shortcut of `accelerator`. The `callback` is called when the registered shortcut is pressed by the user.
+Registers a global shortcut of `accelerator`. The `callback` is called when
+the registered shortcut is pressed by the user.
 
-When the accelerator is already taken by other applications, this call will silently fail. This behavior is intended by operating systems, since they don't want applications to fight for global shortcuts.
+When the accelerator is already taken by other applications, this call will
+silently fail. This behavior is intended by operating systems, since they don't
+want applications to fight for global shortcuts.
 
 ### `globalShortcut.isRegistered(accelerator)`
 
-*   `accelerator` [Accelerator]({{site.baseurl}}/docs/api/accelerator)
+* `accelerator` [Accelerator](http://electron.atom.io/docs/api/accelerator)
 
 Returns `Boolean` - Whether this application has registered `accelerator`.
 
-When the accelerator is already taken by other applications, this call will still return `false`. This behavior is intended by operating systems, since they don't want applications to fight for global shortcuts.
+When the accelerator is already taken by other applications, this call will
+still return `false`. This behavior is intended by operating systems, since they
+don't want applications to fight for global shortcuts.
 
 ### `globalShortcut.unregister(accelerator)`
 
-*   `accelerator` [Accelerator]({{site.baseurl}}/docs/api/accelerator)
+* `accelerator` [Accelerator](http://electron.atom.io/docs/api/accelerator)
 
 Unregisters the global shortcut of `accelerator`.
 
