@@ -1,0 +1,132 @@
+/* Userland List Cards */
+
+ul.report-list {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  @include breakpoint(md) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.report-list > li {
+  display: block;
+  margin: 8px;
+  @include breakpoint(md) { flex-basis: 47%; }
+  @include breakpoint(lg) { flex-basis: 31%; }
+  @include breakpoint(xl) { flex-basis: 23%; }
+}
+
+.report-list .inner {
+  display: block;
+  height: 100%;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #f6f8f8;
+  border: 1px solid #F0F0F0;
+  border-radius: 5px;
+}
+
+.report-list .inner:hover  {
+  background-color: #fcfdfd;
+}
+
+.report-list img {
+  display: inline-block;
+  width: 120px;
+  height: 60px;
+  margin-bottom: 0.3em;
+  transition: transform .32s;
+}
+
+.report-list .inner:hover img {
+  transform: scale(1.1);
+  transition-duration: .08s;
+}
+
+.report-list .inner:active img {
+  transform: scale(.92);
+  transition-duration: 0;
+}
+
+.report-list h3 {
+  font-size: 18px;
+  color: $main-link-color;
+  margin: 0;
+}
+
+.report-list p {
+  opacity: 0.8;
+  line-height: 1.4;
+  font-size: 90%;
+  text-align: left;
+  margin-top: 10px;
+  color: $text-gray-dark;
+}
+
+/* Filterable Lists (in /userland) */
+
+.filterable-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.filterable-list > li {
+  border-bottom: 1px solid #DDD;
+  line-height: 1;
+  padding: 10px 40px 10px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+}
+
+.filterable-list > li:after {
+  content: attr(data-rank);
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  opacity: 0.5;
+}
+
+.filterable-list-input {
+  width: 100%;
+  padding: 6px 4px;
+  border: 1px solid #CCC;
+  border-radius: 2px;
+  margin: 10px 0;
+}
+
+/* Author List (for npm and GitHub users in /userland) */
+
+.author-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.author-list-item {
+  width: 156px;
+  margin: 0;
+  padding: 10px;
+  display: inline-block;
+  text-align: center;
+}
+
+.author-list-item-avatar-wrapper {
+  display: block;
+}
+
+.author-list-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.author-list-item-details {
+  line-height: 1;
+}
