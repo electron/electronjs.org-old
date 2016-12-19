@@ -94,15 +94,41 @@ describe('electron.atom.io', () => {
 
   describe('versions', () => {
     const versions = require(path.join(__dirname, '_data/versions.json'))
+    const numbers = versions.map(version => version.version)
 
-    it('is an array of release data with version numbers', () => {
+    it('is an array of release data (from S3)', () => {
       expect(versions).to.be.an('array')
       expect(versions.length).to.be.above(25)
     })
 
-    it('is sorted with highest version number first (not necessarily the latest)', () => {
-      const numbers = versions.map(version => version.version)
+    it('includes a valid semver version number in each object', () => {
       expect(numbers.every(number => !!semver.valid(number))).to.equal(true)
+    })
+
+    it('is sorted with highest version number first (not necessarily the latest)', () => {
+      expect(numbers[0]).to.equal(semver.maxSatisfying(numbers, '*'))
+      expect(numbers[numbers.length - 1]).to.equal(semver.minSatisfying(numbers, '*'))
+    })
+  })
+
+  describe('releases', () => {
+    const releases = require(path.join(__dirname, '_data/releases.json'))
+
+    it('is an array of release data from the GitHub API', () => {
+      expect(releases).to.be.an('array')
+      expect(releases.length).to.be.above(25)
+    })
+
+    it('always has a version', () => {
+      expect(releases.every(release => release.version.length > 1)).to.equal(true)
+    })
+
+    it('always has an html_url', () => {
+      expect(releases.every(release => release.html_url.length > 1)).to.equal(true)
+    })
+
+    it('always has a created_at timestamp', () => {
+      expect(releases.every(release => release.created_at.length > 1)).to.equal(true)
     })
   })
 })
