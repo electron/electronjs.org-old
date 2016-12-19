@@ -83,7 +83,7 @@ redirect_from:
   - /docs/vlatest/api/debugger
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/debugger.md'
 title: Debugger
-excerpt: 'An alternate transport for Chrome&apos;s remote debugging protocol.'
+excerpt: An alternate transport for Chrome&apos;s remote debugging protocol.
 sort_title: debugger
 ---
 ## Class: Debugger

@@ -81,7 +81,8 @@ redirect_from:
   - /docs/v0.20.1/api/structures/bluetooth-device
   - /docs/v0.20.0/api/structures/bluetooth-device
   - /docs/vlatest/api/structures/bluetooth-device
-source_url: 'https://github.com/electron/electron/blob/master/docs/api/structures/bluetooth-device.md'
+source_url: >-
+  https://github.com/electron/electron/blob/master/docs/api/structures/bluetooth-device.md
 title: BluetoothDevice Object
 excerpt: ''
 sort_title: bluetooth-device

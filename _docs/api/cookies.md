@@ -83,7 +83,7 @@ redirect_from:
   - /docs/vlatest/api/cookies
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/cookies.md'
 title: Cookies
-excerpt: 'Query and modify a session&apos;s cookies.'
+excerpt: Query and modify a session&apos;s cookies.
 sort_title: cookies
 ---
 ## Class: Cookies

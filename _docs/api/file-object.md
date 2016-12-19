@@ -83,7 +83,9 @@ redirect_from:
   - /docs/vlatest/api/file-object
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/file-object.md'
 title: File Object
-excerpt: 'Use the HTML5 <code>File</code> API to work natively with files on the filesystem.'
+excerpt: >-
+  Use the HTML5 <code>File</code> API to work natively with files on the
+  filesystem.
 sort_title: file-object
 ---
 # `File` Object

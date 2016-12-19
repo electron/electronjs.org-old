@@ -81,7 +81,8 @@ redirect_from:
   - /docs/v0.20.1/development/setting-up-symbol-server
   - /docs/v0.20.0/development/setting-up-symbol-server
   - /docs/vlatest/development/setting-up-symbol-server
-source_url: 'https://github.com/electron/electron/blob/master/docs/development/setting-up-symbol-server.md'
+source_url: >-
+  https://github.com/electron/electron/blob/master/docs/development/setting-up-symbol-server.md
 title: Setting Up Symbol Server in Debugger
 excerpt: ''
 sort_title: setting-up-symbol-server

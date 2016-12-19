@@ -81,7 +81,8 @@ redirect_from:
   - /docs/v0.20.1/api/structures/upload-data
   - /docs/v0.20.0/api/structures/upload-data
   - /docs/vlatest/api/structures/upload-data
-source_url: 'https://github.com/electron/electron/blob/master/docs/api/structures/upload-data.md'
+source_url: >-
+  https://github.com/electron/electron/blob/master/docs/api/structures/upload-data.md
 title: UploadData Object
 excerpt: ''
 sort_title: upload-data

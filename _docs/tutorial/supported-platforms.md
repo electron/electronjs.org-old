@@ -81,7 +81,8 @@ redirect_from:
   - /docs/v0.20.1/tutorial/supported-platforms
   - /docs/v0.20.0/tutorial/supported-platforms
   - /docs/vlatest/tutorial/supported-platforms
-source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/supported-platforms.md'
+source_url: >-
+  https://github.com/electron/electron/blob/master/docs/tutorial/supported-platforms.md
 title: Supported Platforms
 excerpt: ''
 sort_title: supported-platforms

@@ -83,7 +83,7 @@ redirect_from:
   - /docs/vlatest/api/app
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/app.md'
 title: app
-excerpt: 'Control your application&apos;s event lifecycle.'
+excerpt: Control your application&apos;s event lifecycle.
 sort_title: app
 ---
 # app

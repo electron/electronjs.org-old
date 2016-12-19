@@ -83,7 +83,7 @@ redirect_from:
   - /docs/vlatest/api/tray
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/tray.md'
 title: Tray
-excerpt: 'Add icons and context menus to the system&apos;s notification area.'
+excerpt: Add icons and context menus to the system&apos;s notification area.
 sort_title: tray
 ---
 ## Class: Tray

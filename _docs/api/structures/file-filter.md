@@ -81,7 +81,8 @@ redirect_from:
   - /docs/v0.20.1/api/structures/file-filter
   - /docs/v0.20.0/api/structures/file-filter
   - /docs/vlatest/api/structures/file-filter
-source_url: 'https://github.com/electron/electron/blob/master/docs/api/structures/file-filter.md'
+source_url: >-
+  https://github.com/electron/electron/blob/master/docs/api/structures/file-filter.md
 title: FileFilter Object
 excerpt: ''
 sort_title: file-filter

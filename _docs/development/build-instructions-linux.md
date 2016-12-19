@@ -81,7 +81,8 @@ redirect_from:
   - /docs/v0.20.1/development/build-instructions-linux
   - /docs/v0.20.0/development/build-instructions-linux
   - /docs/vlatest/development/build-instructions-linux
-source_url: 'https://github.com/electron/electron/blob/master/docs/development/build-instructions-linux.md'
+source_url: >-
+  https://github.com/electron/electron/blob/master/docs/development/build-instructions-linux.md
 title: Build Instructions (Linux)
 excerpt: ''
 sort_title: build-instructions-linux

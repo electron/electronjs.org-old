@@ -81,7 +81,8 @@ redirect_from:
   - /docs/v0.20.1/api/structures/certificate-principal
   - /docs/v0.20.0/api/structures/certificate-principal
   - /docs/vlatest/api/structures/certificate-principal
-source_url: 'https://github.com/electron/electron/blob/master/docs/api/structures/certificate-principal.md'
+source_url: >-
+  https://github.com/electron/electron/blob/master/docs/api/structures/certificate-principal.md
 title: CertificatePrincipal Object
 excerpt: ''
 sort_title: certificate-principal

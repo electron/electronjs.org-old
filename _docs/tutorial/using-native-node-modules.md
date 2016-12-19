@@ -81,7 +81,8 @@ redirect_from:
   - /docs/v0.20.1/tutorial/using-native-node-modules
   - /docs/v0.20.0/tutorial/using-native-node-modules
   - /docs/vlatest/tutorial/using-native-node-modules
-source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/using-native-node-modules.md'
+source_url: >-
+  https://github.com/electron/electron/blob/master/docs/tutorial/using-native-node-modules.md
 title: Using Native Node Modules
 excerpt: ''
 sort_title: using-native-node-modules

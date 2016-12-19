@@ -86,7 +86,6 @@ title: contentTracing
 excerpt: >-
   Collect tracing data from Chromium&apos;s content module for finding
   performance
-
       bottlenecks and slow operations.
 sort_title: content-tracing
 ---

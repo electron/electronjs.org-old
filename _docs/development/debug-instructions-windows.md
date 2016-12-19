@@ -81,7 +81,8 @@ redirect_from:
   - /docs/v0.20.1/development/debug-instructions-windows
   - /docs/v0.20.0/development/debug-instructions-windows
   - /docs/vlatest/development/debug-instructions-windows
-source_url: 'https://github.com/electron/electron/blob/master/docs/development/debug-instructions-windows.md'
+source_url: >-
+  https://github.com/electron/electron/blob/master/docs/development/debug-instructions-windows.md
 title: Debugging on Windows
 excerpt: ''
 sort_title: debug-instructions-windows

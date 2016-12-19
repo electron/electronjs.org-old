@@ -81,7 +81,8 @@ redirect_from:
   - /docs/v0.20.1/api/chrome-command-line-switches
   - /docs/v0.20.0/api/chrome-command-line-switches
   - /docs/vlatest/api/chrome-command-line-switches
-source_url: 'https://github.com/electron/electron/blob/master/docs/api/chrome-command-line-switches.md'
+source_url: >-
+  https://github.com/electron/electron/blob/master/docs/api/chrome-command-line-switches.md
 title: Supported Chrome Command Line Switches
 excerpt: Command line switches supported by Electron.
 sort_title: chrome-command-line-switches

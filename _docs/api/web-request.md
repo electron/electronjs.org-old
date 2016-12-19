@@ -83,7 +83,9 @@ redirect_from:
   - /docs/vlatest/api/web-request
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/web-request.md'
 title: WebRequest
-excerpt: Intercept and modify the contents of a request at various stages of its lifetime.
+excerpt: >-
+  Intercept and modify the contents of a request at various stages of its
+  lifetime.
 sort_title: web-request
 ---
 ## Class: WebRequest

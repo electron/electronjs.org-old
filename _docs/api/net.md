@@ -83,7 +83,7 @@ redirect_from:
   - /docs/vlatest/api/net
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/net.md'
 title: net
-excerpt: 'Issue HTTP/HTTPS requests using Chromium&apos;s native networking library'
+excerpt: Issue HTTP/HTTPS requests using Chromium&apos;s native networking library
 sort_title: net
 ---
 # net

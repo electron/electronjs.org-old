@@ -81,7 +81,8 @@ redirect_from:
   - /docs/v0.20.1/api/structures/crash-report
   - /docs/v0.20.0/api/structures/crash-report
   - /docs/vlatest/api/structures/crash-report
-source_url: 'https://github.com/electron/electron/blob/master/docs/api/structures/crash-report.md'
+source_url: >-
+  https://github.com/electron/electron/blob/master/docs/api/structures/crash-report.md
 title: CrashReport Object
 excerpt: ''
 sort_title: crash-report

@@ -81,7 +81,8 @@ redirect_from:
   - /docs/v0.20.1/tutorial/offscreen-rendering
   - /docs/v0.20.0/tutorial/offscreen-rendering
   - /docs/vlatest/tutorial/offscreen-rendering
-source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/offscreen-rendering.md'
+source_url: >-
+  https://github.com/electron/electron/blob/master/docs/tutorial/offscreen-rendering.md
 title: Offscreen Rendering
 excerpt: ''
 sort_title: offscreen-rendering

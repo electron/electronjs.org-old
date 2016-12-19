@@ -83,7 +83,9 @@ redirect_from:
   - /docs/vlatest/api/frameless-window
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/frameless-window.md'
 title: Frameless Window
-excerpt: 'Open a window without toolbars, borders, or other graphical &quot;chrome&quot;.'
+excerpt: >-
+  Open a window without toolbars, borders, or other graphical
+  &quot;chrome&quot;.
 sort_title: frameless-window
 ---
 # Frameless Window

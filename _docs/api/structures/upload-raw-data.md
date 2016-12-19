@@ -81,7 +81,8 @@ redirect_from:
   - /docs/v0.20.1/api/structures/upload-raw-data
   - /docs/v0.20.0/api/structures/upload-raw-data
   - /docs/vlatest/api/structures/upload-raw-data
-source_url: 'https://github.com/electron/electron/blob/master/docs/api/structures/upload-raw-data.md'
+source_url: >-
+  https://github.com/electron/electron/blob/master/docs/api/structures/upload-raw-data.md
 title: UploadRawData Object
 excerpt: ''
 sort_title: upload-raw-data

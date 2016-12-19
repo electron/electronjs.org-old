@@ -81,7 +81,8 @@ redirect_from:
   - /docs/v0.20.1/tutorial/online-offline-events
   - /docs/v0.20.0/tutorial/online-offline-events
   - /docs/vlatest/tutorial/online-offline-events
-source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/online-offline-events.md'
+source_url: >-
+  https://github.com/electron/electron/blob/master/docs/tutorial/online-offline-events.md
 title: Online/Offline Event Detection
 excerpt: ''
 sort_title: online-offline-events

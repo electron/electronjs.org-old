@@ -81,7 +81,8 @@ redirect_from:
   - /docs/v0.20.1/tutorial/devtools-extension
   - /docs/v0.20.0/tutorial/devtools-extension
   - /docs/vlatest/tutorial/devtools-extension
-source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/devtools-extension.md'
+source_url: >-
+  https://github.com/electron/electron/blob/master/docs/tutorial/devtools-extension.md
 title: DevTools Extension
 excerpt: ''
 sort_title: devtools-extension

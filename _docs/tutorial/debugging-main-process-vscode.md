@@ -81,7 +81,8 @@ redirect_from:
   - /docs/v0.20.1/tutorial/debugging-main-process-vscode
   - /docs/v0.20.0/tutorial/debugging-main-process-vscode
   - /docs/vlatest/tutorial/debugging-main-process-vscode
-source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/debugging-main-process-vscode.md'
+source_url: >-
+  https://github.com/electron/electron/blob/master/docs/tutorial/debugging-main-process-vscode.md
 title: Debugging the Main Process in VSCode
 excerpt: ''
 sort_title: debugging-main-process-vscode

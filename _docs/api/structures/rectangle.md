@@ -81,7 +81,8 @@ redirect_from:
   - /docs/v0.20.1/api/structures/rectangle
   - /docs/v0.20.0/api/structures/rectangle
   - /docs/vlatest/api/structures/rectangle
-source_url: 'https://github.com/electron/electron/blob/master/docs/api/structures/rectangle.md'
+source_url: >-
+  https://github.com/electron/electron/blob/master/docs/api/structures/rectangle.md
 title: Rectangle Object
 excerpt: ''
 sort_title: rectangle

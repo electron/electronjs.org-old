@@ -81,7 +81,8 @@ redirect_from:
   - /docs/v0.20.1/api/structures/jump-list-item
   - /docs/v0.20.0/api/structures/jump-list-item
   - /docs/vlatest/api/structures/jump-list-item
-source_url: 'https://github.com/electron/electron/blob/master/docs/api/structures/jump-list-item.md'
+source_url: >-
+  https://github.com/electron/electron/blob/master/docs/api/structures/jump-list-item.md
 title: JumpListItem Object
 excerpt: ''
 sort_title: jump-list-item

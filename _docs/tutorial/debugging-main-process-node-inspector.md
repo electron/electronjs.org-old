@@ -81,7 +81,8 @@ redirect_from:
   - /docs/v0.20.1/tutorial/debugging-main-process-node-inspector
   - /docs/v0.20.0/tutorial/debugging-main-process-node-inspector
   - /docs/vlatest/tutorial/debugging-main-process-node-inspector
-source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/debugging-main-process-node-inspector.md'
+source_url: >-
+  https://github.com/electron/electron/blob/master/docs/tutorial/debugging-main-process-node-inspector.md
 title: Debugging the Main Process in node-inspector
 excerpt: ''
 sort_title: debugging-main-process-node-inspector

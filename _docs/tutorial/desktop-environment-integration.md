@@ -81,33 +81,20 @@ redirect_from:
   - /docs/v0.20.1/tutorial/desktop-environment-integration
   - /docs/v0.20.0/tutorial/desktop-environment-integration
   - /docs/vlatest/tutorial/desktop-environment-integration
-source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/desktop-environment-integration.md'
+source_url: >-
+  https://github.com/electron/electron/blob/master/docs/tutorial/desktop-environment-integration.md
 title: Desktop Environment Integration
 excerpt: >-
   Applications define tasks based on both the program&apos;s features and the
   key
-
-      things a user is expected to do with them. Tasks should be context-free,
-  in
-
+      things a user is expected to do with them. Tasks should be context-free, in
       that the application does not need to be running for them to work. They
-
-      should also be the statistically most common actions that a normal user
-  would
-
+      should also be the statistically most common actions that a normal user would
       perform in an application, such as compose an email message or open the
-
-      calendar in a mail program, create a new document in a word processor,
-  launch
-
+      calendar in a mail program, create a new document in a word processor, launch
       an application in a certain mode, or launch one of its subcommands. An
-
-      application should not clutter the menu with advanced features that
-  standard
-
-      users won&apos;t need or one-time actions such as registration. Do not use
-  tasks
-
+      application should not clutter the menu with advanced features that standard
+      users won&apos;t need or one-time actions such as registration. Do not use tasks
       for promotional items such as upgrades or special offers.
 sort_title: desktop-environment-integration
 ---

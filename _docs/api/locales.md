@@ -83,7 +83,7 @@ redirect_from:
   - /docs/vlatest/api/locales
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/locales.md'
 title: Locales
-excerpt: 'Locale values returned by <code>app.getLocale()</code>.'
+excerpt: Locale values returned by <code>app.getLocale()</code>.
 sort_title: locales
 ---
 # Locales

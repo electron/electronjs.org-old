@@ -83,16 +83,11 @@ redirect_from:
   - /docs/vlatest/tutorial/security
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/security.md'
 title: 'Security, Native Capabilities, and Your Responsibility'
-excerpt: >-
+excerpt: |-
   :warning: Under no circumstances should you load and execute remote code with
-
-      Node integration enabled. Instead, use only local files (packaged together
-  with
-
+      Node integration enabled. Instead, use only local files (packaged together with
       your application) to execute Node code. To display remote content, use the
-
-      <code>webview</code> tag and make sure to disable the
-  <code>nodeIntegration</code>.
+      <code>webview</code> tag and make sure to disable the <code>nodeIntegration</code>.
 sort_title: security
 ---
 # Security, Native Capabilities, and Your Responsibility

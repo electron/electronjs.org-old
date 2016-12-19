@@ -81,7 +81,8 @@ redirect_from:
   - /docs/v0.20.1/development/clang-format
   - /docs/v0.20.0/development/clang-format
   - /docs/vlatest/development/clang-format
-source_url: 'https://github.com/electron/electron/blob/master/docs/development/clang-format.md'
+source_url: >-
+  https://github.com/electron/electron/blob/master/docs/development/clang-format.md
 title: Using clang-format on C++ Code
 excerpt: ''
 sort_title: clang-format
