@@ -1,4 +1,4 @@
-{ 
+{
   "name": "electron.atom.io",
   "version": "1.0.0",
   "private": true,
@@ -32,6 +32,7 @@
     "mocha": "^3.2.0",
     "npm-run-all": "^3.1.2",
     "nugget": "^2.0.1",
+    "require-dir": "^0.3.1",
     "semver": "^5.3.0",
     "standard": "^8.6.0",
     "titlecase": "^1.0.2",

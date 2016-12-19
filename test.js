@@ -1,6 +1,7 @@
 const fs = require('fs')
 const path = require('path')
 const expect = require('chai').expect
+const requireDir = require('require-dir')
 const semver = require('semver')
 const matter = require('gray-matter')
 const marky = require('marky-markdown-lite')
@@ -129,6 +130,31 @@ describe('electron.atom.io', () => {
 
     it('always has a created_at timestamp', () => {
       expect(releases.every(release => release.created_at.length > 1)).to.equal(true)
+    })
+  })
+
+  describe('userland', () => {
+    const reports = requireDir(path.join(__dirname, '_data/userland'))
+    const reportNames = Object.keys(reports)
+
+    it('defines required properties', () => {
+      reportNames.forEach(name => {
+        const report = reports[name]
+        expect(report.slug).to.be.a('string')
+        expect(report.title).to.be.a('string')
+        expect(report.description).to.be.a('string')
+        expect(report.collectionType).to.be.a('string')
+        expect(report.collection).to.be.an('array')
+      })
+    })
+
+    it('defines an template for each report', () => {
+      const templates = fs.readdirSync(path.join(__dirname, '_pages/userland'))
+        .map(filename => path.basename(filename, '.html'))
+
+      reportNames.forEach(name => {
+        expect(templates).to.include(name, `expected template _pages/userland/${name}.html to exist`)
+      })
     })
   })
 })
