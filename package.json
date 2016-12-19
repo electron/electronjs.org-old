@@ -10,7 +10,7 @@
   "scripts": {
     "start": "script/server",
     "bootstrap": "script/bootstrap",
-    "test": "tape spec/*.js | tap-spec",
+    "test": "mocha && standard",
     "build": "npm-run-all build-*",
     "build-releases": "script/releases",
     "build-versions": "script/versions",
@@ -37,7 +37,7 @@
     "yamljs": "^0.2.3"
   },
   "devDependencies": {
-    "dedent": "^0.6.0",
+    "chai": "^3.5.0",
     "electron-apps": "github:electron/electron-apps",
     "electron-userland-reports": "1.6.0",
     "electron-docs": "^3.0.0",
@@ -47,11 +47,21 @@
     "grunt-link-checker": "^0.1.0",
     "href-type": "^1.0.0",
     "marky-markdown-lite": "^1.2.0",
+    "mocha": "^3.2.0",
     "npm-run-all": "^3.1.2",
     "semver": "^5.3.0",
+    "standard": "^8.6.0",
     "tap-spec": "^4.1.1",
     "tape": "^4.0.0",
     "tmp": "0.0.28",
-    "to-markdown": "^3.0.3"
+    "to-markdown": "github:zeke/to-markdown#support-markdown-it-gfm"
+  },
+  "standard": {
+    "env": {
+      "mocha": true
+    },
+    "ignore": [
+      "/js/vendor"
+    ]
   }
 }

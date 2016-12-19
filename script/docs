@@ -3,19 +3,14 @@
 const fs = require('fs')
 const tmp = require('tmp')
 const path = require('path')
-const electronDocs = require('electron-docs')
+const fetchDocs = require('electron-docs')
 const Doc = require('../lib/doc')
 const versions = require(path.join(__dirname, '../_data/versions.json')).map(v => v.version)
 
-electronDocs(versions[0])
-  .then(cleanDocs)
+fetchDocs(versions[0])
+  .then(docs => {
+    docs.map(doc => new Doc(doc))
+  })
   .catch(error => {
     throw error
   })
-
-function cleanDocs (docs) {
-  docs
-    .map(doc => new Doc(doc))
-    .filter(doc => doc.shouldBeOnWebsite)
-    .map(doc => doc.save())
-}
