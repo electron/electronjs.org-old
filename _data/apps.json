@@ -648,6 +648,20 @@
     "icon": "explorer-icon.png"
   },
   {
+    "slug": "fangyuanjian",
+    "name": "fangyuanjian",
+    "description": "a collaboration and messaging app for small-to-medium sized businesses.",
+    "website": "http://bzsns.cn/",
+    "keywords": [
+      "messaging",
+      "collaboration"
+    ],
+    "locales": [
+      "zh-CN"
+    ],
+    "icon": "fangyuanjian-icon.png"
+  },
+  {
     "slug": "fastlane",
     "name": "Fastlane",
     "description": "Reserve an Uber from your Mac",
