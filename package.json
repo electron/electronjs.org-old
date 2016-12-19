@@ -10,6 +10,7 @@
   "scripts": {
     "start": "script/server",
     "bootstrap": "script/bootstrap",
+    "link-checker": "grunt linkChecker",
     "test": "mocha && standard",
     "build": "npm-run-all build-*",
     "build-releases": "script/releases",

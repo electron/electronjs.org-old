@@ -31,9 +31,23 @@ This site contains data gathered from various sources, and there's a build scrip
 
 To run all of the build scripts serially:
 
-```
+```sh
 npm run build
 npm test
+```
+
+To verify all the links in the site:
+
+```sh
+cd electron.atom.io
+npm start
+```
+
+Wait for the app to start, then in another shell:
+
+```sh
+cd electron.atom.io
+npm run link-checker
 ```
 
 ### Contributing
