@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 
-const fs = require('fs')
-const tmp = require('tmp')
 const path = require('path')
 const fetchDocs = require('electron-docs')
 const Doc = require('../lib/doc')
