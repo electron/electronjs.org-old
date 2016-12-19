@@ -98,9 +98,11 @@ The current process is to maintain a local file, keeping track of notable change
 
 Create a new branch from `master` named `release`.
 
-    git checkout master
-    git pull
-    git checkout -b release
+```sh
+git checkout master
+git pull
+git checkout -b release
+```
 
 This branch is created as a precaution to prevent any merged PRs from sneaking into a release between the time the temporary release branch is created and the CI builds are complete.
 
@@ -108,8 +110,10 @@ This branch is created as a precaution to prevent any merged PRs from sneaking i
 
 Run the `bump-version` script, passing `major`, `minor`, or `patch` as an argument:
 
-    npm run bump-version -- patch
-    git push origin HEAD
+```sh
+npm run bump-version -- patch
+git push origin HEAD
+```
 
 This will bump the version number in several files. See [this bump commit](https://github.com/electron/electron/commit/78ec1b8f89b3886b856377a1756a51617bc33f5a) for an example.
 
@@ -126,22 +130,28 @@ Most releases will be `patch` level. Upgrades to Chrome or other major changes s
 
 Merge the temporary back into master, without creating a merge commit:
 
-    git merge release master --no-commit
-    git push origin master
+```sh
+git merge release master --no-commit
+git push origin master
+```
 
 If this fails, rebase with master and rebuild:
 
-    git pull
-    git checkout release
-    git rebase master
-    git push origin HEAD
+```sh
+git pull
+git checkout release
+git rebase master
+git push origin HEAD
+```
 
 ## Run local debug build
 
 Run local debug build to verify that you are actually building the version you want. Sometimes you thought you were doing a release for a new version, but you're actually not.
 
-    npm run build
-    npm start
+```sh
+npm run build
+npm start
+```
 
 Verify the window is displaying the current updated version.
 
@@ -160,12 +170,16 @@ You will only need to do this once.
 
 This script will download the binaries and generate the node headers and the .lib linker used on Windows by node-gyp to build native modules.
 
-    npm run release
+```sh
+npm run release
+```
 
 Note: Many distributions of Python still ship with old HTTPS certificates. You may see a `InsecureRequestWarning`, but it can be disregarded.
 
 ## Delete the temporary branch
 
-    git checkout master
-    git branch -D release # delete local branch
-    git push origin :release # delete remote branch
+```sh
+git checkout master
+git branch -D release # delete local branch
+git push origin :release # delete remote branch
+```

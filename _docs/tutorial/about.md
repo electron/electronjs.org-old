@@ -134,70 +134,11 @@ New features added to Electron should primarily be native APIs. If a feature can
 
 Below are milestones in Electron's history.
 
-<table>
-
-<thead>
-
-<tr>
-
-<th>:calendar:</th>
-
-<th>:tada:</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td>**April 2013**</td>
-
-<td>[Atom Shell is started](https://github.com/electron/electron/commit/6ef8875b1e93787fa9759f602e7880f28e8e6b45).</td>
-
-</tr>
-
-<tr>
-
-<td>**May 2014**</td>
-
-<td>[Atom Shell is open sourced](http://blog.atom.io/2014/05/06/atom-is-now-open-source.html).</td>
-
-</tr>
-
-<tr>
-
-<td>**April 2015**</td>
-
-<td>[Atom Shell is re-named Electron](https://github.com/electron/electron/pull/1389).</td>
-
-</tr>
-
-<tr>
-
-<td>**May 2016**</td>
-
-<td>[Electron releases `v1.0.0`](http://electron.atom.io/blog/2016/05/11/electron-1-0).</td>
-
-</tr>
-
-<tr>
-
-<td>**May 2016**</td>
-
-<td>[Electron apps compatible with Mac App Store](http://electron.atom.io/docs/tutorial/mac-app-store-submission-guide).</td>
-
-</tr>
-
-<tr>
-
-<td>**August 2016**</td>
-
-<td>[Windows Store support for Electron apps](http://electron.atom.io/docs/tutorial/windows-store-guide).</td>
-
-</tr>
-
-</tbody>
-
-</table>
+| :calendar: | :tada: |
+| --- | --- |
+| **April 2013** | [Atom Shell is started](https://github.com/electron/electron/commit/6ef8875b1e93787fa9759f602e7880f28e8e6b45). |
+| **May 2014** | [Atom Shell is open sourced](http://blog.atom.io/2014/05/06/atom-is-now-open-source.html). |
+| **April 2015** | [Atom Shell is re-named Electron](https://github.com/electron/electron/pull/1389). |
+| **May 2016** | [Electron releases `v1.0.0`](http://electron.atom.io/blog/2016/05/11/electron-1-0). |
+| **May 2016** | [Electron apps compatible with Mac App Store](http://electron.atom.io/docs/tutorial/mac-app-store-submission-guide). |
+| **August 2016** | [Windows Store support for Electron apps](http://electron.atom.io/docs/tutorial/windows-store-guide). |

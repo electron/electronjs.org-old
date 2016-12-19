@@ -92,8 +92,10 @@ sort_title: system-preferences
 
 Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process)
 
-    const {systemPreferences} = require('electron')
-    console.log(systemPreferences.isDarkMode())
+```javascript
+const {systemPreferences} = require('electron')
+console.log(systemPreferences.isDarkMode())
+```
 
 ## Events
 
@@ -219,35 +221,39 @@ This method returns `true` if [DWM composition](https://msdn.microsoft.com/en-us
 
 An example of using it to determine if you should create a transparent window or not (transparent windows won't work correctly when DWM composition is disabled):
 
-    const {BrowserWindow, systemPreferences} = require('electron')
-    let browserOptions = {width: 1000, height: 800}
+```javascript
+const {BrowserWindow, systemPreferences} = require('electron')
+let browserOptions = {width: 1000, height: 800}
 
-    // Make the window transparent only if the platform supports it.
-    if (process.platform !== 'win32' || systemPreferences.isAeroGlassEnabled()) {
-      browserOptions.transparent = true
-      browserOptions.frame = false
-    }
+// Make the window transparent only if the platform supports it.
+if (process.platform !== 'win32' || systemPreferences.isAeroGlassEnabled()) {
+  browserOptions.transparent = true
+  browserOptions.frame = false
+}
 
-    // Create the window.
-    let win = new BrowserWindow(browserOptions)
+// Create the window.
+let win = new BrowserWindow(browserOptions)
 
-    // Navigate.
-    if (browserOptions.transparent) {
-      win.loadURL(`file://${__dirname}/index.html`)
-    } else {
-      // No transparency, so we load a fallback that uses basic styles.
-      win.loadURL(`file://${__dirname}/fallback.html`)
-    }
+// Navigate.
+if (browserOptions.transparent) {
+  win.loadURL(`file://${__dirname}/index.html`)
+} else {
+  // No transparency, so we load a fallback that uses basic styles.
+  win.loadURL(`file://${__dirname}/fallback.html`)
+}
+```
 
 ### `systemPreferences.getAccentColor()` _Windows_
 
 Returns `String` - The users current system wide accent color preference in RGBA hexadecimal form.
 
-    const color = systemPreferences.getAccentColor() // `"aabbccdd"`
-    const red = color.substr(0, 2) // "aa"
-    const green = color.substr(2, 2) // "bb"
-    const blue = color.substr(4, 2) // "cc"
-    const alpha = color.substr(6, 2) // "dd"
+```js
+const color = systemPreferences.getAccentColor() // `"aabbccdd"`
+const red = color.substr(0, 2) // "aa"
+const green = color.substr(2, 2) // "bb"
+const blue = color.substr(4, 2) // "cc"
+const alpha = color.substr(6, 2) // "dd"
+```
 
 ### `systemPreferences.getColor(color)` _Windows_
 

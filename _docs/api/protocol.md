@@ -94,17 +94,19 @@ Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process)
 
 An example of implementing a protocol that has the same effect as the `file://` protocol:
 
-    const {app, protocol} = require('electron')
-    const path = require('path')
+```javascript
+const {app, protocol} = require('electron')
+const path = require('path')
 
-    app.on('ready', () => {
-      protocol.registerFileProtocol('atom', (request, callback) => {
-        const url = request.url.substr(7)
-        callback({path: path.normalize(`${__dirname}/${url}`)})
-      }, (error) => {
-        if (error) console.error('Failed to register protocol')
-      })
-    })
+app.on('ready', () => {
+  protocol.registerFileProtocol('atom', (request, callback) => {
+    const url = request.url.substr(7)
+    callback({path: path.normalize(`${__dirname}/${url}`)})
+  }, (error) => {
+    if (error) console.error('Failed to register protocol')
+  })
+})
+```
 
 **Note:** All methods unless specified can only be used after the `ready` event of the `app` module gets emitted.
 
@@ -122,20 +124,24 @@ Registering a scheme as standard, will allow relative and absolute resources to 
 
 For example when you load following page with custom protocol without registering it as standard scheme, the image will not be loaded because non-standard schemes can not recognize relative URLs:
 
-    <body>
-      <img src='test.png'>
-    </body>
+```html
+<body>
+  <img src='test.png'>
+</body>
+```
 
 Registering a scheme as standard will allow access to files through the [FileSystem API](https://developer.mozilla.org/en-US/docs/Web/API/LocalFileSystem). Otherwise the renderer will throw a security error for the scheme.
 
 By default web storage apis (localStorage, sessionStorage, webSQL, indexedDB, cookies) are disabled for non standard schemes. So in general if you want to register a custom protocol to replace the `http` protocol, you have to register it as a standard scheme:
 
-    const {app, protocol} = require('electron')
+```javascript
+const {app, protocol} = require('electron')
 
-    protocol.registerStandardSchemes(['atom'])
-    app.on('ready', () => {
-      protocol.registerHttpProtocol('atom', '...')
-    })
+protocol.registerStandardSchemes(['atom'])
+app.on('ready', () => {
+  protocol.registerHttpProtocol('atom', '...')
+})
+```
 
 **Note:** This method can only be used before the `ready` event of the `app` module gets emitted.
 
@@ -185,13 +191,15 @@ The usage is the same with `registerFileProtocol`, except that the `callback` sh
 
 Example:
 
-    const {protocol} = require('electron')
+```javascript
+const {protocol} = require('electron')
 
-    protocol.registerBufferProtocol('atom', (request, callback) => {
-      callback({mimeType: 'text/html', data: new Buffer('<h5>Response</h5>')})
-    }, (error) => {
-      if (error) console.error('Failed to register protocol')
-    })
+protocol.registerBufferProtocol('atom', (request, callback) => {
+  callback({mimeType: 'text/html', data: new Buffer('<h5>Response</h5>')})
+}, (error) => {
+  if (error) console.error('Failed to register protocol')
+})
+```
 
 ### `protocol.registerStringProtocol(scheme, handler[, completion])`
 

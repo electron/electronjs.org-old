@@ -98,25 +98,29 @@ The basic rule is: if a module is [GUI](https://en.wikipedia.org/wiki/Graphical_
 
 The main process script is just like a normal Node.js script:
 
-    const {app, BrowserWindow} = require('electron')
-    let win = null
+```javascript
+const {app, BrowserWindow} = require('electron')
+let win = null
 
-    app.on('ready', () => {
-      win = new BrowserWindow({width: 800, height: 600})
-      win.loadURL('https://github.com')
-    })
+app.on('ready', () => {
+  win = new BrowserWindow({width: 800, height: 600})
+  win.loadURL('https://github.com')
+})
+```
 
 The renderer process is no different than a normal web page, except for the extra ability to use node modules:
 
-    <!DOCTYPE html>
-    <html>
-    <body>
-    <script>
-      const {app} = require('electron').remote
-      console.log(app.getVersion())
-    </script>
-    </body>
-    </html>
+```html
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+  const {app} = require('electron').remote
+  console.log(app.getVersion())
+</script>
+</body>
+</html>
+```
 
 To run your app, read [Run your app]({{site.baseurl}}/docs/tutorial/quick-start#run-your-app).
 
@@ -124,35 +128,41 @@ To run your app, read [Run your app]({{site.baseurl}}/docs/tutorial/quick-start#
 
 As of 0.37, you can use [destructuring assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) to make it easier to use built-in modules.
 
-    const {app, BrowserWindow} = require('electron')
+```javascript
+const {app, BrowserWindow} = require('electron')
 
-    let win
+let win
 
-    app.on('ready', () => {
-      win = new BrowserWindow()
-      win.loadURL('https://github.com')
-    })
+app.on('ready', () => {
+  win = new BrowserWindow()
+  win.loadURL('https://github.com')
+})
+```
 
 If you need the entire `electron` module, you can require it and then using destructuring to access the individual modules from `electron`.
 
-    const electron = require('electron')
-    const {app, BrowserWindow} = electron
+```javascript
+const electron = require('electron')
+const {app, BrowserWindow} = electron
 
-    let win
+let win
 
-    app.on('ready', () => {
-      win = new BrowserWindow()
-      win.loadURL('https://github.com')
-    })
+app.on('ready', () => {
+  win = new BrowserWindow()
+  win.loadURL('https://github.com')
+})
+```
 
 This is equivalent to the following code:
 
-    const electron = require('electron')
-    const app = electron.app
-    const BrowserWindow = electron.BrowserWindow
-    let win
+```javascript
+const electron = require('electron')
+const app = electron.app
+const BrowserWindow = electron.BrowserWindow
+let win
 
-    app.on('ready', () => {
-      win = new BrowserWindow()
-      win.loadURL('https://github.com')
-    })
+app.on('ready', () => {
+  win = new BrowserWindow()
+  win.loadURL('https://github.com')
+})
+```

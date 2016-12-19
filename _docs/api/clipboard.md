@@ -94,14 +94,18 @@ Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process), [Rende
 
 The following example shows how to write a string to the clipboard:
 
-    const {clipboard} = require('electron')
-    clipboard.writeText('Example String')
+```javascript
+const {clipboard} = require('electron')
+clipboard.writeText('Example String')
+```
 
 On X Window systems, there is also a selection clipboard. To manipulate it you need to pass `selection` to each method:
 
-    const {clipboard} = require('electron')
-    clipboard.writeText('Example String', 'selection')
-    console.log(clipboard.readText('selection'))
+```javascript
+const {clipboard} = require('electron')
+clipboard.writeText('Example String', 'selection')
+console.log(clipboard.readText('selection'))
+```
 
 ## Methods
 
@@ -180,10 +184,12 @@ Writes the `title` and `url` into the clipboard as a bookmark.
 
 **Note:** Most apps on Windows don't support pasting bookmarks into them so you can use `clipboard.write` to write both a bookmark and fallback text to the clipboard.
 
-    clipboard.write({
-      text: 'http://electron.atom.io',
-      bookmark: 'Electron Homepage'
-    })
+```js
+clipboard.write({
+  text: 'http://electron.atom.io',
+  bookmark: 'Electron Homepage'
+})
+```
 
 ### `clipboard.readFindText()` _macOS_
 
@@ -214,8 +220,10 @@ Returns `String[]` - An array of supported formats for the clipboard `type`.
 
 Returns `Boolean` - Whether the clipboard supports the format of specified `data`.
 
-    const {clipboard} = require('electron')
-    console.log(clipboard.has('<p>selection</p>'))
+```javascript
+const {clipboard} = require('electron')
+console.log(clipboard.has('<p>selection</p>'))
+```
 
 ### `clipboard.read(data[, type])` _Experimental_
 
@@ -234,7 +242,9 @@ Returns `String` - Reads `data` from the clipboard.
     *   `bookmark` String (optional) - The title of the url at `text`.
 *   `type` String (optional)
 
-    const {clipboard} = require('electron')
-    clipboard.write({text: 'test', html: '<b>test</b>'})
+```javascript
+const {clipboard} = require('electron')
+clipboard.write({text: 'test', html: '<b>test</b>'})
+```
 
 Writes `data` to the clipboard.

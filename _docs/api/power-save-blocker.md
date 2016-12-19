@@ -94,12 +94,14 @@ Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process)
 
 For example:
 
-    const {powerSaveBlocker} = require('electron')
+```javascript
+const {powerSaveBlocker} = require('electron')
 
-    const id = powerSaveBlocker.start('prevent-display-sleep')
-    console.log(powerSaveBlocker.isStarted(id))
+const id = powerSaveBlocker.start('prevent-display-sleep')
+console.log(powerSaveBlocker.isStarted(id))
 
-    powerSaveBlocker.stop(id)
+powerSaveBlocker.stop(id)
+```
 
 ## Methods
 

@@ -96,13 +96,15 @@ The `session` module can be used to create new `Session` objects.
 
 You can also access the `session` of existing pages by using the `session` property of [`WebContents`]({{site.baseurl}}/docs/api/web-contents), or from the `session` module.
 
-    const {BrowserWindow} = require('electron')
+```javascript
+const {BrowserWindow} = require('electron')
 
-    let win = new BrowserWindow({width: 800, height: 600})
-    win.loadURL('http://github.com')
+let win = new BrowserWindow({width: 800, height: 600})
+win.loadURL('http://github.com')
 
-    const ses = win.webContents.session
-    console.log(ses.getUserAgent())
+const ses = win.webContents.session
+console.log(ses.getUserAgent())
+```
 
 ## Methods
 
@@ -136,9 +138,11 @@ Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process)
 
 You can create a `Session` object in the `session` module:
 
-    const {session} = require('electron')
-    const ses = session.fromPartition('persist:name')
-    console.log(ses.getUserAgent())
+```javascript
+const {session} = require('electron')
+const ses = session.fromPartition('persist:name')
+console.log(ses.getUserAgent())
+```
 
 ### Instance Events
 
@@ -154,13 +158,15 @@ Emitted when Electron is about to download `item` in `webContents`.
 
 Calling `event.preventDefault()` will cancel the download and `item` will not be available from next tick of the process.
 
-    const {session} = require('electron')
-    session.defaultSession.on('will-download', (event, item, webContents) => {
-      event.preventDefault()
-      require('request')(item.getURL(), (data) => {
-        require('fs').writeFileSync('/somewhere', data)
-      })
-    })
+```javascript
+const {session} = require('electron')
+session.defaultSession.on('will-download', (event, item, webContents) => {
+  event.preventDefault()
+  require('request')(item.getURL(), (data) => {
+    require('fs').writeFileSync('/somewhere', data)
+  })
+})
+```
 
 ### Instance Methods
 
@@ -207,11 +213,14 @@ When `pacScript` and `proxyRules` are provided together, the `proxyRules` option
 
 The `proxyRules` has to follow the rules below:
 
-    proxyRules = schemeProxies[";"<schemeProxies>]
-    schemeProxies = [<urlScheme>"="]<proxyURIList>
-    urlScheme = "http" | "https" | "ftp" | "socks"
-    proxyURIList = <proxyURL>[","<proxyURIList>]
-    proxyURL = [<proxyScheme>"://"]<proxyHost>[":"<proxyPort>]
+```
+proxyRules = schemeProxies[";"<schemeProxies>]
+schemeProxies = [<urlScheme>"="]<proxyURIList>
+urlScheme = "http" | "https" | "ftp" | "socks"
+proxyURIList = <proxyURL>[","<proxyURIList>]
+proxyURL = [<proxyScheme>"://"]<proxyHost>[":"<proxyPort>]
+
+```
 
 For example:
 
@@ -277,15 +286,17 @@ Sets download saving directory. By default, the download directory will be the `
 
 Emulates network with the given configuration for the `session`.
 
-    // To emulate a GPRS connection with 50kbps throughput and 500 ms latency.
-    window.webContents.session.enableNetworkEmulation({
-      latency: 500,
-      downloadThroughput: 6400,
-      uploadThroughput: 6400
-    })
+```javascript
+// To emulate a GPRS connection with 50kbps throughput and 500 ms latency.
+window.webContents.session.enableNetworkEmulation({
+  latency: 500,
+  downloadThroughput: 6400,
+  uploadThroughput: 6400
+})
 
-    // To emulate a network outage.
-    window.webContents.session.enableNetworkEmulation({offline: true})
+// To emulate a network outage.
+window.webContents.session.enableNetworkEmulation({offline: true})
+```
 
 #### `ses.disableNetworkEmulation()`
 
@@ -303,12 +314,14 @@ Sets the certificate verify proc for `session`, the `proc` will be called with `
 
 Calling `setCertificateVerifyProc(null)` will revert back to default certificate verify proc.
 
-    const {BrowserWindow} = require('electron')
-    let win = new BrowserWindow()
+```javascript
+const {BrowserWindow} = require('electron')
+let win = new BrowserWindow()
 
-    win.webContents.session.setCertificateVerifyProc((hostname, cert, callback) => {
-      callback(hostname === 'github.com')
-    })
+win.webContents.session.setCertificateVerifyProc((hostname, cert, callback) => {
+  callback(hostname === 'github.com')
+})
+```
 
 #### `ses.setPermissionRequestHandler(handler)`
 
@@ -320,14 +333,16 @@ Calling `setCertificateVerifyProc(null)` will revert back to default certificate
 
 Sets the handler which can be used to respond to permission requests for the `session`. Calling `callback(true)` will allow the permission and `callback(false)` will reject it.
 
-    const {session} = require('electron')
-    session.fromPartition('some-partition').setPermissionRequestHandler((webContents, permission, callback) => {
-      if (webContents.getURL() === 'some-host' && permission === 'notifications') {
-        return callback(false) // denied.
-      }
+```javascript
+const {session} = require('electron')
+session.fromPartition('some-partition').setPermissionRequestHandler((webContents, permission, callback) => {
+  if (webContents.getURL() === 'some-host' && permission === 'notifications') {
+    return callback(false) // denied.
+  }
 
-      callback(true)
-    })
+  callback(true)
+})
+```
 
 #### `ses.clearHostResolverCache([callback])`
 
@@ -341,13 +356,15 @@ Clears the host resolver cache.
 
 Dynamically sets whether to always send credentials for HTTP NTLM or Negotiate authentication.
 
-    const {session} = require('electron')
-    // consider any url ending with `example.com`, `foobar.com`, `baz`
-    // for integrated authentication.
-    session.defaultSession.allowNTLMCredentialsForDomains('*example.com, *foobar.com, *baz')
+```javascript
+const {session} = require('electron')
+// consider any url ending with `example.com`, `foobar.com`, `baz`
+// for integrated authentication.
+session.defaultSession.allowNTLMCredentialsForDomains('*example.com, *foobar.com, *baz')
 
-    // consider all urls for integrated authentication.
-    session.defaultSession.allowNTLMCredentialsForDomains('*')
+// consider all urls for integrated authentication.
+session.defaultSession.allowNTLMCredentialsForDomains('*')
+```
 
 #### `ses.setUserAgent(userAgent[, acceptLanguages])`
 
@@ -409,15 +426,17 @@ A WebRequest object for this session.
 
 A Protocol object (an instance of [protocol]({{site.baseurl}}/docs/api/protocol) module) for this session.
 
-    const {app, session} = require('electron')
-    const path = require('path')
+```javascript
+const {app, session} = require('electron')
+const path = require('path')
 
-    app.on('ready', function () {
-      const protocol = session.fromPartition('some-partition').protocol
-      protocol.registerFileProtocol('atom', function (request, callback) {
-        var url = request.url.substr(7)
-        callback({path: path.normalize(`${__dirname}/${url}`)})
-      }, function (error) {
-        if (error) console.error('Failed to register protocol')
-      })
-    })
+app.on('ready', function () {
+  const protocol = session.fromPartition('some-partition').protocol
+  protocol.registerFileProtocol('atom', function (request, callback) {
+    var url = request.url.substr(7)
+    callback({path: path.normalize(`${__dirname}/${url}`)})
+  }, function (error) {
+    if (error) console.error('Failed to register protocol')
+  })
+})
+```

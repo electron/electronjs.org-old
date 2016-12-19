@@ -102,17 +102,19 @@ For certain events the `listener` is passed with a `callback`, which should be c
 
 An example of adding `User-Agent` header for requests:
 
-    const {session} = require('electron')
+```javascript
+const {session} = require('electron')
 
-    // Modify the user agent for all requests to the following urls.
-    const filter = {
-      urls: ['https://*.github.com/*', '*://electron.github.io']
-    }
+// Modify the user agent for all requests to the following urls.
+const filter = {
+  urls: ['https://*.github.com/*', '*://electron.github.io']
+}
 
-    session.defaultSession.webRequest.onBeforeSendHeaders(filter, (details, callback) => {
-      details.requestHeaders['User-Agent'] = 'MyAgent'
-      callback({cancel: false, requestHeaders: details.requestHeaders})
-    })
+session.defaultSession.webRequest.onBeforeSendHeaders(filter, (details, callback) => {
+  details.requestHeaders['User-Agent'] = 'MyAgent'
+  callback({cancel: false, requestHeaders: details.requestHeaders})
+})
+```
 
 ### Instance Methods
 

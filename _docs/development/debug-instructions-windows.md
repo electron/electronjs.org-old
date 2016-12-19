@@ -102,7 +102,9 @@ If you experience crashes or issues in Electron that you believe are not caused 
 
 To start a debugging session, open up PowerShell/CMD and execute your debug build of Electron, using the application to open as a parameter.
 
-    $ ./out/D/electron.exe ~/my-electron-app/
+```powershell
+$ ./out/D/electron.exe ~/my-electron-app/
+```
 
 ### Setting Breakpoints
 

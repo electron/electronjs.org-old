@@ -102,13 +102,15 @@ Emitted when Electron has loaded its internal initialization script and is begin
 
 It can be used by the preload script to add removed Node global symbols back to the global scope when node integration is turned off:
 
-    // preload.js
-    const _setImmediate = setImmediate
-    const _clearImmediate = clearImmediate
-    process.once('loaded', () => {
-      global.setImmediate = _setImmediate
-      global.clearImmediate = _clearImmediate
-    })
+```javascript
+// preload.js
+const _setImmediate = setImmediate
+const _clearImmediate = clearImmediate
+process.once('loaded', () => {
+  global.setImmediate = _setImmediate
+  global.clearImmediate = _clearImmediate
+})
+```
 
 ## Properties
 

@@ -94,28 +94,30 @@ Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process)
 
 Chrome Developer Tools has a [special binding](https://developer.chrome.com/devtools/docs/debugger-protocol) available at JavaScript runtime that allows interacting with pages and instrumenting them.
 
-    const {BrowserWindow} = require('electron')
-    let win = new BrowserWindow()
+```javascript
+const {BrowserWindow} = require('electron')
+let win = new BrowserWindow()
 
-    try {
-      win.webContents.debugger.attach('1.1')
-    } catch (err) {
-      console.log('Debugger attach failed : ', err)
+try {
+  win.webContents.debugger.attach('1.1')
+} catch (err) {
+  console.log('Debugger attach failed : ', err)
+}
+
+win.webContents.debugger.on('detach', (event, reason) => {
+  console.log('Debugger detached due to : ', reason)
+})
+
+win.webContents.debugger.on('message', (event, method, params) => {
+  if (method === 'Network.requestWillBeSent') {
+    if (params.request.url === 'https://www.github.com') {
+      win.webContents.debugger.detach()
     }
+  }
+})
 
-    win.webContents.debugger.on('detach', (event, reason) => {
-      console.log('Debugger detached due to : ', reason)
-    })
-
-    win.webContents.debugger.on('message', (event, method, params) => {
-      if (method === 'Network.requestWillBeSent') {
-        if (params.request.url === 'https://www.github.com') {
-          win.webContents.debugger.detach()
-        }
-      }
-    })
-
-    win.webContents.debugger.sendCommand('Network.enable')
+win.webContents.debugger.sendCommand('Network.enable')
+```
 
 ### Instance Methods
 

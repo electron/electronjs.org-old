@@ -94,20 +94,24 @@ Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process)
 
 `webContents` is an [EventEmitter](https://nodejs.org/api/events.html#events_class_eventemitter). It is responsible for rendering and controlling a web page and is a property of the [`BrowserWindow`]({{site.baseurl}}/docs/api/browser-window) object. An example of accessing the `webContents` object:
 
-    const {BrowserWindow} = require('electron')
+```javascript
+const {BrowserWindow} = require('electron')
 
-    let win = new BrowserWindow({width: 800, height: 1500})
-    win.loadURL('http://github.com')
+let win = new BrowserWindow({width: 800, height: 1500})
+win.loadURL('http://github.com')
 
-    let contents = win.webContents
-    console.log(contents)
+let contents = win.webContents
+console.log(contents)
+```
 
 ## Methods
 
 These methods can be accessed from the `webContents` module:
 
-    const {webContents} = require('electron')
-    console.log(webContents)
+```javascript
+const {webContents} = require('electron')
+console.log(webContents)
+```
 
 ### `webContents.getAllWebContents()`
 
@@ -379,7 +383,9 @@ Emitted when media is paused or done playing.
 
 Emitted when a page's theme color changes. This is usually due to encountering a meta tag:
 
-    <meta name='theme-color' content='#ff0000'>
+```html
+<meta name='theme-color' content='#ff0000'>
+```
 
 #### Event: 'update-target-url'
 
@@ -462,22 +468,24 @@ Returns:
 
 Emitted when bluetooth device needs to be selected on call to `navigator.bluetooth.requestDevice`. To use `navigator.bluetooth` api `webBluetooth` should be enabled. If `event.preventDefault` is not called, first available device will be selected. `callback` should be called with `deviceId` to be selected, passing empty string to `callback` will cancel the request.
 
-    const {app, webContents} = require('electron')
-    app.commandLine.appendSwitch('enable-web-bluetooth')
+```javascript
+const {app, webContents} = require('electron')
+app.commandLine.appendSwitch('enable-web-bluetooth')
 
-    app.on('ready', () => {
-      webContents.on('select-bluetooth-device', (event, deviceList, callback) => {
-        event.preventDefault()
-        let result = deviceList.find((device) => {
-          return device.deviceName === 'test'
-        })
-        if (!result) {
-          callback('')
-        } else {
-          callback(result.deviceId)
-        }
-      })
+app.on('ready', () => {
+  webContents.on('select-bluetooth-device', (event, deviceList, callback) => {
+    event.preventDefault()
+    let result = deviceList.find((device) => {
+      return device.deviceName === 'test'
     })
+    if (!result) {
+      callback('')
+    } else {
+      callback(result.deviceId)
+    }
+  })
+})
+```
 
 #### Event: 'paint'
 
@@ -489,13 +497,15 @@ Returns:
 
 Emitted when a new frame is generated. Only the dirty area is passed in the buffer.
 
-    const {BrowserWindow} = require('electron')
+```javascript
+const {BrowserWindow} = require('electron')
 
-    let win = new BrowserWindow({webPreferences: {offscreen: true}})
-    win.webContents.on('paint', (event, dirty, image) => {
-      // updateBitmap(dirty, image.getBitmap())
-    })
-    win.loadURL('http://github.com')
+let win = new BrowserWindow({webPreferences: {offscreen: true}})
+win.webContents.on('paint', (event, dirty, image) => {
+  // updateBitmap(dirty, image.getBitmap())
+})
+win.loadURL('http://github.com')
+```
 
 #### Event: 'devtools-reload-page'
 
@@ -514,9 +524,11 @@ Emitted when the devtools window instructs the webContents to reload
 
 Loads the `url` in the window. The `url` must contain the protocol prefix, e.g. the `http://` or `file://`. If the load should bypass http cache then use the `pragma` header to achieve it.
 
-    const {webContents} = require('electron')
-    const options = {extraHeaders: 'pragma: no-cache\n'}
-    webContents.loadURL('https://github.com', options)
+```javascript
+const {webContents} = require('electron')
+const options = {extraHeaders: 'pragma: no-cache\n'}
+webContents.loadURL('https://github.com', options)
+```
 
 #### `contents.downloadURL(url)`
 
@@ -528,12 +540,14 @@ Initiates a download of the resource at `url` without navigating. The `will-down
 
 Returns `String` - The URL of the current web page.
 
-    const {BrowserWindow} = require('electron')
-    let win = new BrowserWindow({width: 800, height: 600})
-    win.loadURL('http://github.com')
+```javascript
+const {BrowserWindow} = require('electron')
+let win = new BrowserWindow({width: 800, height: 600})
+win.loadURL('http://github.com')
 
-    let currentURL = win.webContents.getURL()
-    console.log(currentURL)
+let currentURL = win.webContents.getURL()
+console.log(currentURL)
+```
 
 #### `contents.getTitle()`
 
@@ -644,10 +658,12 @@ In the browser window some HTML APIs like `requestFullScreen` can only be invoke
 
 If the result of the executed code is a promise the callback result will be the resolved value of the promise. We recommend that you use the returned Promise to handle code that results in a Promise.
 
-    contents.executeJavaScript('fetch("https://jsonplaceholder.typicode.com/users/1").then(resp => resp.json())', true)
-      .then((result) => {
-        console.log(result) // Will be the JSON object from the fetch call
-      })
+```js
+contents.executeJavaScript('fetch("https://jsonplaceholder.typicode.com/users/1").then(resp => resp.json())', true)
+  .then((result) => {
+    console.log(result) // Will be the JSON object from the fetch call
+  })
+```
 
 #### `contents.setAudioMuted(muted)`
 
@@ -788,13 +804,15 @@ Starts a request to find all matches for the `text` in the web page and returns 
 
 Stops any `findInPage` request for the `webContents` with the provided `action`.
 
-    const {webContents} = require('electron')
-    webContents.on('found-in-page', (event, result) => {
-      if (result.finalUpdate) webContents.stopFindInPage('clearSelection')
-    })
+```javascript
+const {webContents} = require('electron')
+webContents.on('found-in-page', (event, result) => {
+  if (result.finalUpdate) webContents.stopFindInPage('clearSelection')
+})
 
-    const requestId = webContents.findInPage('api')
-    console.log(requestId)
+const requestId = webContents.findInPage('api')
+console.log(requestId)
+```
 
 #### `contents.capturePage([rect, ]callback)`
 
@@ -848,33 +866,37 @@ The `callback` will be called with `callback(error, data)` on completion. The `d
 
 By default, an empty `options` will be regarded as:
 
-    {
-      marginsType: 0,
-      printBackground: false,
-      printSelectionOnly: false,
-      landscape: false
-    }
+```javascript
+{
+  marginsType: 0,
+  printBackground: false,
+  printSelectionOnly: false,
+  landscape: false
+}
+```
 
 Use `page-break-before: always;` CSS style to force to print to a new page.
 
 An example of `webContents.printToPDF`:
 
-    const {BrowserWindow} = require('electron')
-    const fs = require('fs')
+```javascript
+const {BrowserWindow} = require('electron')
+const fs = require('fs')
 
-    let win = new BrowserWindow({width: 800, height: 600})
-    win.loadURL('http://github.com')
+let win = new BrowserWindow({width: 800, height: 600})
+win.loadURL('http://github.com')
 
-    win.webContents.on('did-finish-load', () => {
-      // Use default printing options
-      win.webContents.printToPDF({}, (error, data) => {
-        if (error) throw error
-        fs.writeFile('/tmp/print.pdf', data, (error) => {
-          if (error) throw error
-          console.log('Write PDF successfully.')
-        })
-      })
+win.webContents.on('did-finish-load', () => {
+  // Use default printing options
+  win.webContents.printToPDF({}, (error, data) => {
+    if (error) throw error
+    fs.writeFile('/tmp/print.pdf', data, (error) => {
+      if (error) throw error
+      console.log('Write PDF successfully.')
     })
+  })
+})
+```
 
 #### `contents.addWorkSpace(path)`
 
@@ -882,11 +904,13 @@ An example of `webContents.printToPDF`:
 
 Adds the specified path to DevTools workspace. Must be used after DevTools creation:
 
-    const {BrowserWindow} = require('electron')
-    let win = new BrowserWindow()
-    win.webContents.on('devtools-opened', () => {
-      win.webContents.addWorkSpace(__dirname)
-    })
+```javascript
+const {BrowserWindow} = require('electron')
+let win = new BrowserWindow()
+win.webContents.on('devtools-opened', () => {
+  win.webContents.addWorkSpace(__dirname)
+})
+```
 
 #### `contents.removeWorkSpace(path)`
 
@@ -939,28 +963,32 @@ The renderer process can handle the message by listening to `channel` with the `
 
 An example of sending messages from the main process to the renderer process:
 
-    // In the main process.
-    const {app, BrowserWindow} = require('electron')
-    let win = null
+```javascript
+// In the main process.
+const {app, BrowserWindow} = require('electron')
+let win = null
 
-    app.on('ready', () => {
-      win = new BrowserWindow({width: 800, height: 600})
-      win.loadURL(`file://${__dirname}/index.html`)
-      win.webContents.on('did-finish-load', () => {
-        win.webContents.send('ping', 'whoooooooh!')
-      })
+app.on('ready', () => {
+  win = new BrowserWindow({width: 800, height: 600})
+  win.loadURL(`file://${__dirname}/index.html`)
+  win.webContents.on('did-finish-load', () => {
+    win.webContents.send('ping', 'whoooooooh!')
+  })
+})
+```
+
+```html
+<!-- index.html -->
+<html>
+<body>
+  <script>
+    require('electron').ipcRenderer.on('ping', (event, message) => {
+      console.log(message)  // Prints 'whoooooooh!'
     })
-
-    <!-- index.html -->
-    <html>
-    <body>
-      <script>
-        require('electron').ipcRenderer.on('ping', (event, message) => {
-          console.log(message)  // Prints 'whoooooooh!'
-        })
-      </script>
-    </body>
-    </html>
+  </script>
+</body>
+</html>
+```
 
 #### `contents.enableDeviceEmulation(parameters)`
 
@@ -1061,16 +1089,18 @@ Sets the `item` as dragging item for current drag-drop operation, `file` is the 
 
 Returns true if the process of saving page has been initiated successfully.
 
-    const {BrowserWindow} = require('electron')
-    let win = new BrowserWindow()
+```javascript
+const {BrowserWindow} = require('electron')
+let win = new BrowserWindow()
 
-    win.loadURL('https://github.com')
+win.loadURL('https://github.com')
 
-    win.webContents.on('did-finish-load', () => {
-      win.webContents.savePage('/tmp/test.html', 'HTMLComplete', (error) => {
-        if (!error) console.log('Save page successfully')
-      })
-    })
+win.webContents.on('did-finish-load', () => {
+  win.webContents.savePage('/tmp/test.html', 'HTMLComplete', (error) => {
+    if (!error) console.log('Save page successfully')
+  })
+})
+```
 
 #### `contents.showDefinitionForSelection()` _macOS_
 

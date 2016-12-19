@@ -99,14 +99,16 @@ Examples:
 
 Shortcuts are registered with the [`globalShortcut`]({{site.baseurl}}/docs/api/global-shortcut) module using the [`register`]({{site.baseurl}}/docs/api/global-shortcut#globalshortcutregisteraccelerator-callback) method, i.e.
 
-    const {app, globalShortcut} = require('electron')
+```javascript
+const {app, globalShortcut} = require('electron')
 
-    app.on('ready', () => {
-      // Register a 'CommandOrControl+Y' shortcut listener.
-      globalShortcut.register('CommandOrControl+Y', () => {
-        // Do stuff when Y and either Command/Control is pressed.
-      })
-    })
+app.on('ready', () => {
+  // Register a 'CommandOrControl+Y' shortcut listener.
+  globalShortcut.register('CommandOrControl+Y', () => {
+    // Do stuff when Y and either Command/Control is pressed.
+  })
+})
+```
 
 ## Platform notice
 

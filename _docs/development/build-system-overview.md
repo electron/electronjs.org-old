@@ -113,8 +113,10 @@ By default, `libchromiumcontent` is downloaded from Amazon Web Services. If the 
 
 If you only want to build Electron quickly for testing or development, you can download just the shared library versions by passing the `--dev` parameter:
 
-    $ ./script/bootstrap.py --dev
-    $ ./script/build.py -c D
+```bash
+$ ./script/bootstrap.py --dev
+$ ./script/build.py -c D
+```
 
 ## Two-Phase Project Generation
 
@@ -132,28 +134,40 @@ This only affects developers, if you are just building Electron for rebranding y
 
 Test your changes conform to the project coding style using:
 
-    $ npm run lint
+```bash
+$ npm run lint
+```
 
 Test functionality using:
 
-    $ npm test
+```bash
+$ npm test
+```
 
 Whenever you make changes to Electron source code, you'll need to re-run the build before the tests:
 
-    $ npm run build && npm test
+```bash
+$ npm run build && npm test
+```
 
 You can make the test suite run faster by isolating the specific test or block you're currently working on using Mocha's [exclusive tests](https://mochajs.org/#exclusive-tests) feature. Just append `.only` to any `describe` or `it` function call:
 
-    describe.only('some feature', function () {
-      // ... only tests in this block will be run
-    })
+```js
+describe.only('some feature', function () {
+  // ... only tests in this block will be run
+})
+```
 
 Alternatively, you can use mocha's `grep` option to only run tests matching the given regular expression pattern:
 
-    $ npm test -- --grep child_process
+```sh
+$ npm test -- --grep child_process
+```
 
 Tests that include native modules (e.g. `runas`) can't be executed with the debug build (see [#2558](https://github.com/electron/electron/issues/2558) for details), but they will work with the release build.
 
 To run the tests with the release build use:
 
-    $ npm test -- -R
+```bash
+$ npm test -- -R
+```

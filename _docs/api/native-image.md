@@ -96,18 +96,22 @@ In Electron, for the APIs that take images, you can pass either file paths or `N
 
 For example, when creating a tray or setting a window's icon, you can pass an image file path as a `String`:
 
-    const {BrowserWindow, Tray} = require('electron')
+```javascript
+const {BrowserWindow, Tray} = require('electron')
 
-    const appIcon = new Tray('/Users/somebody/images/icon.png')
-    let win = new BrowserWindow({icon: '/Users/somebody/images/window.png'})
-    console.log(appIcon, win)
+const appIcon = new Tray('/Users/somebody/images/icon.png')
+let win = new BrowserWindow({icon: '/Users/somebody/images/window.png'})
+console.log(appIcon, win)
+```
 
 Or read the image from the clipboard which returns a `NativeImage`:
 
-    const {clipboard, Tray} = require('electron')
-    const image = clipboard.readImage()
-    const appIcon = new Tray(image)
-    console.log(appIcon)
+```javascript
+const {clipboard, Tray} = require('electron')
+const image = clipboard.readImage()
+const appIcon = new Tray(image)
+console.log(appIcon)
+```
 
 ## Supported Formats
 
@@ -137,14 +141,18 @@ For example if `icon.png` is a normal image that has standard resolution, then `
 
 If you want to support displays with different DPI densities at the same time, you can put images with different sizes in the same folder and use the filename without DPI suffixes. For example:
 
-    images/
-    ├── icon.png
-    ├── icon@2x.png
-    └── icon@3x.png
+```text
+images/
+├── icon.png
+├── icon@2x.png
+└── icon@3x.png
+```
 
-    const {Tray} = require('electron')
-    let appIcon = new Tray('/Users/somebody/images/icon.png')
-    console.log(appIcon)
+```javascript
+const {Tray} = require('electron')
+let appIcon = new Tray('/Users/somebody/images/icon.png')
+console.log(appIcon)
+```
 
 Following suffixes for DPI are also supported:
 
@@ -191,10 +199,12 @@ Returns `NativeImage`
 
 Creates a new `NativeImage` instance from a file located at `path`. This method returns an empty image if the `path` does not exist, cannot be read, or is not a valid image.
 
-    const nativeImage = require('electron').nativeImage
+```javascript
+const nativeImage = require('electron').nativeImage
 
-    let image = nativeImage.createFromPath('/Users/somebody/images/icon.png')
-    console.log(image)
+let image = nativeImage.createFromPath('/Users/somebody/images/icon.png')
+console.log(image)
+```
 
 ### `nativeImage.createFromBuffer(buffer[, scaleFactor])`
 

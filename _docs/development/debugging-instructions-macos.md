@@ -100,9 +100,11 @@ If you experience crashes or issues in Electron that you believe are not caused 
 
 To start a debugging session, open up Terminal and start `lldb`, passing a debug build of Electron as a parameter.
 
-    $ lldb ./out/D/Electron.app
-    (lldb) target create "./out/D/Electron.app"
-    Current executable set to './out/D/Electron.app' (x86_64).
+```bash
+$ lldb ./out/D/Electron.app
+(lldb) target create "./out/D/Electron.app"
+Current executable set to './out/D/Electron.app' (x86_64).
+```
 
 ### Setting Breakpoints
 
@@ -112,50 +114,60 @@ Relevant code files can be found in `./atom/` as well as in Brightray, found in 
 
 Let's assume that you want to debug `app.setName()`, which is defined in `browser.cc` as `Browser::SetName()`. Set the breakpoint using the `breakpoint` command, specifying file and line to break on:
 
-    (lldb) breakpoint set --file browser.cc --line 117
-    Breakpoint 1: where = Electron Framework`atom::Browser::SetName(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&) + 20 at browser.cc:118, address = 0x000000000015fdb4
+```bash
+(lldb) breakpoint set --file browser.cc --line 117
+Breakpoint 1: where = Electron Framework`atom::Browser::SetName(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&) + 20 at browser.cc:118, address = 0x000000000015fdb4
+```
 
 Then, start Electron:
 
-    (lldb) run
+```bash
+(lldb) run
+```
 
 The app will immediately be paused, since Electron sets the app's name on launch:
 
-    (lldb) run
-    Process 25244 launched: '/Users/fr/Code/electron/out/D/Electron.app/Contents/MacOS/Electron' (x86_64)
-    Process 25244 stopped
-    * thread #1: tid = 0x839a4c, 0x0000000100162db4 Electron Framework`atom::Browser::SetName(this=0x0000000108b14f20, name="Electron") + 20 at browser.cc:118, queue = 'com.apple.main-thread', stop reason = breakpoint 1.1
-        frame #0: 0x0000000100162db4 Electron Framework`atom::Browser::SetName(this=0x0000000108b14f20, name="Electron") + 20 at browser.cc:118
-       115 	}
-       116
-       117 	void Browser::SetName(const std::string& name) {
-    -> 118 	  name_override_ = name;
-       119 	}
-       120
-       121 	int Browser::GetBadgeCount() {
-    (lldb)
+```bash
+(lldb) run
+Process 25244 launched: '/Users/fr/Code/electron/out/D/Electron.app/Contents/MacOS/Electron' (x86_64)
+Process 25244 stopped
+* thread #1: tid = 0x839a4c, 0x0000000100162db4 Electron Framework`atom::Browser::SetName(this=0x0000000108b14f20, name="Electron") + 20 at browser.cc:118, queue = 'com.apple.main-thread', stop reason = breakpoint 1.1
+    frame #0: 0x0000000100162db4 Electron Framework`atom::Browser::SetName(this=0x0000000108b14f20, name="Electron") + 20 at browser.cc:118
+   115 	}
+   116
+   117 	void Browser::SetName(const std::string& name) {
+-> 118 	  name_override_ = name;
+   119 	}
+   120
+   121 	int Browser::GetBadgeCount() {
+(lldb)
+```
 
 To show the arguments and local variables for the current frame, run `frame variable` (or `fr v`), which will show you that the app is currently setting the name to "Electron".
 
-    (lldb) frame variable
-    (atom::Browser *) this = 0x0000000108b14f20
-    (const string &) name = "Electron": {
-        [...]
-    }
+```bash
+(lldb) frame variable
+(atom::Browser *) this = 0x0000000108b14f20
+(const string &) name = "Electron": {
+    [...]
+}
+```
 
 To do a source level single step in the currently selected thread, execute `step` (or `s`). This would take you into into `name_override_.empty()`. To proceed and do a step over, run `next` (or `n`).
 
-    (lldb) step
-    Process 25244 stopped
-    * thread #1: tid = 0x839a4c, 0x0000000100162dcc Electron Framework`atom::Browser::SetName(this=0x0000000108b14f20, name="Electron") + 44 at browser.cc:119, queue = 'com.apple.main-thread', stop reason = step in
-        frame #0: 0x0000000100162dcc Electron Framework`atom::Browser::SetName(this=0x0000000108b14f20, name="Electron") + 44 at browser.cc:119
-       116
-       117 	void Browser::SetName(const std::string& name) {
-       118 	  name_override_ = name;
-    -> 119 	}
-       120
-       121 	int Browser::GetBadgeCount() {
-       122 	  return badge_count_;
+```bash
+(lldb) step
+Process 25244 stopped
+* thread #1: tid = 0x839a4c, 0x0000000100162dcc Electron Framework`atom::Browser::SetName(this=0x0000000108b14f20, name="Electron") + 44 at browser.cc:119, queue = 'com.apple.main-thread', stop reason = step in
+    frame #0: 0x0000000100162dcc Electron Framework`atom::Browser::SetName(this=0x0000000108b14f20, name="Electron") + 44 at browser.cc:119
+   116
+   117 	void Browser::SetName(const std::string& name) {
+   118 	  name_override_ = name;
+-> 119 	}
+   120
+   121 	int Browser::GetBadgeCount() {
+   122 	  return badge_count_;
+```
 
 To finish debugging at this point, run `process continue`. You can also continue until a certain line is hit in this thread (`thread until 100`). This command will run the thread in the current frame till it reaches line 100 in this frame or stops if it leaves the current frame.
 

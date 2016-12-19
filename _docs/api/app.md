@@ -94,10 +94,12 @@ Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process)
 
 The following example shows how to quit the application when the last window is closed:
 
-    const {app} = require('electron')
-    app.on('window-all-closed', () => {
-      app.quit()
-    })
+```javascript
+const {app} = require('electron')
+app.on('window-all-closed', () => {
+  app.quit()
+})
+```
 
 ## Events
 
@@ -247,17 +249,19 @@ Returns:
 
 Emitted when failed to verify the `certificate` for `url`, to trust the certificate you should prevent the default behavior with `event.preventDefault()` and call `callback(true)`.
 
-    const {app} = require('electron')
+```javascript
+const {app} = require('electron')
 
-    app.on('certificate-error', (event, webContents, url, error, certificate, callback) => {
-      if (url === 'https://github.com') {
-        // Verification logic.
-        event.preventDefault()
-        callback(true)
-      } else {
-        callback(false)
-      }
-    })
+app.on('certificate-error', (event, webContents, url, error, certificate, callback) => {
+  if (url === 'https://github.com') {
+    // Verification logic.
+    event.preventDefault()
+    callback(true)
+  } else {
+    callback(false)
+  }
+})
+```
 
 ### Event: 'select-client-certificate'
 
@@ -274,12 +278,14 @@ Emitted when a client certificate is requested.
 
 The `url` corresponds to the navigation entry requesting the client certificate and `callback` needs to be called with an entry filtered from the list. Using `event.preventDefault()` prevents the application from using the first certificate from the store.
 
-    const {app} = require('electron')
+```javascript
+const {app} = require('electron')
 
-    app.on('select-client-certificate', (event, webContents, url, list, callback) => {
-      event.preventDefault()
-      callback(list[0])
-    })
+app.on('select-client-certificate', (event, webContents, url, list, callback) => {
+  event.preventDefault()
+  callback(list[0])
+})
+```
 
 ### Event: 'login'
 
@@ -305,12 +311,14 @@ Emitted when `webContents` wants to do basic auth.
 
 The default behavior is to cancel all authentications, to override this you should prevent the default behavior with `event.preventDefault()` and call `callback(username, password)` with the credentials.
 
-    const {app} = require('electron')
+```javascript
+const {app} = require('electron')
 
-    app.on('login', (event, webContents, request, authInfo, callback) => {
-      event.preventDefault()
-      callback('username', 'secret')
-    })
+app.on('login', (event, webContents, request, authInfo, callback) => {
+  event.preventDefault()
+  callback('username', 'secret')
+})
+```
 
 ### Event: 'gpu-process-crashed'
 
@@ -366,10 +374,12 @@ When `app.relaunch` is called for multiple times, multiple instances will be sta
 
 An example of restarting current instance immediately and adding a new command line argument to the new instance:
 
-    const {app} = require('electron')
+```javascript
+const {app} = require('electron')
 
-    app.relaunch({args: process.argv.slice(1).concat(['--relaunch'])})
-    app.exit(0)
+app.relaunch({args: process.argv.slice(1).concat(['--relaunch'])})
+app.exit(0)
+```
 
 ### `app.isReady()`
 
@@ -542,61 +552,63 @@ If `categories` is `null` the previously set custom Jump List (if any) will be r
 
 Here's a very simple example of creating a custom Jump List:
 
-    const {app} = require('electron')
+```javascript
+const {app} = require('electron')
 
-    app.setJumpList([
+app.setJumpList([
+  {
+    type: 'custom',
+    name: 'Recent Projects',
+    items: [
+      { type: 'file', path: 'C:\\Projects\\project1.proj' },
+      { type: 'file', path: 'C:\\Projects\\project2.proj' }
+    ]
+  },
+  { // has a name so `type` is assumed to be "custom"
+    name: 'Tools',
+    items: [
       {
-        type: 'custom',
-        name: 'Recent Projects',
-        items: [
-          { type: 'file', path: 'C:\\Projects\\project1.proj' },
-          { type: 'file', path: 'C:\\Projects\\project2.proj' }
-        ]
+        type: 'task',
+        title: 'Tool A',
+        program: process.execPath,
+        args: '--run-tool-a',
+        icon: process.execPath,
+        iconIndex: 0,
+        description: 'Runs Tool A'
       },
-      { // has a name so `type` is assumed to be "custom"
-        name: 'Tools',
-        items: [
-          {
-            type: 'task',
-            title: 'Tool A',
-            program: process.execPath,
-            args: '--run-tool-a',
-            icon: process.execPath,
-            iconIndex: 0,
-            description: 'Runs Tool A'
-          },
-          {
-            type: 'task',
-            title: 'Tool B',
-            program: process.execPath,
-            args: '--run-tool-b',
-            icon: process.execPath,
-            iconIndex: 0,
-            description: 'Runs Tool B'
-          }
-        ]
-      },
-      { type: 'frequent' },
-      { // has no name and no type so `type` is assumed to be "tasks"
-        items: [
-          {
-            type: 'task',
-            title: 'New Project',
-            program: process.execPath,
-            args: '--new-project',
-            description: 'Create a new project.'
-          },
-          { type: 'separator' },
-          {
-            type: 'task',
-            title: 'Recover Project',
-            program: process.execPath,
-            args: '--recover-project',
-            description: 'Recover Project'
-          }
-        ]
+      {
+        type: 'task',
+        title: 'Tool B',
+        program: process.execPath,
+        args: '--run-tool-b',
+        icon: process.execPath,
+        iconIndex: 0,
+        description: 'Runs Tool B'
       }
-    ])
+    ]
+  },
+  { type: 'frequent' },
+  { // has no name and no type so `type` is assumed to be "tasks"
+    items: [
+      {
+        type: 'task',
+        title: 'New Project',
+        program: process.execPath,
+        args: '--new-project',
+        description: 'Create a new project.'
+      },
+      { type: 'separator' },
+      {
+        type: 'task',
+        title: 'Recover Project',
+        program: process.execPath,
+        args: '--recover-project',
+        description: 'Recover Project'
+      }
+    ]
+  }
+])
+```
 
 ### `app.makeSingleInstance(callback)`
 
@@ -616,24 +628,26 @@ On macOS the system enforces single instance automatically when users try to ope
 
 An example of activating the window of primary instance when a second instance starts:
 
-    const {app} = require('electron')
-    let myWindow = null
+```javascript
+const {app} = require('electron')
+let myWindow = null
 
-    const shouldQuit = app.makeSingleInstance((commandLine, workingDirectory) => {
-      // Someone tried to run a second instance, we should focus our window.
-      if (myWindow) {
-        if (myWindow.isMinimized()) myWindow.restore()
-        myWindow.focus()
-      }
-    })
+const shouldQuit = app.makeSingleInstance((commandLine, workingDirectory) => {
+  // Someone tried to run a second instance, we should focus our window.
+  if (myWindow) {
+    if (myWindow.isMinimized()) myWindow.restore()
+    myWindow.focus()
+  }
+})
 
-    if (shouldQuit) {
-      app.quit()
-    }
+if (shouldQuit) {
+  app.quit()
+}
 
-    // Create myWindow, load the rest of the app, etc...
-    app.on('ready', () => {
-    })
+// Create myWindow, load the rest of the app, etc...
+app.on('ready', () => {
+})
+```
 
 ### `app.releaseSingleInstance()`
 

@@ -94,13 +94,17 @@ Certain Electron behaviors are controlled by environment variables because they 
 
 POSIX shell example:
 
-    $ export ELECTRON_ENABLE_LOGGING=true
-    $ electron
+```bash
+$ export ELECTRON_ENABLE_LOGGING=true
+$ electron
+```
 
 Windows console example:
 
-    > set ELECTRON_ENABLE_LOGGING=true
-    > electron
+```powershell
+> set ELECTRON_ENABLE_LOGGING=true
+> electron
+```
 
 ## Production Variables
 
@@ -110,7 +114,9 @@ The following environment variables are intended primarily for use at runtime in
 
 Electron includes a hardcoded API key for making requests to Google's geocoding webservice. Because this API key is included in every version of Electron, it often exceeds its usage quota. To work around this, you can supply your own Google API key in the environment. Place the following code in your main process file, before opening any browser windows that will make geocoding requests:
 
-    process.env.GOOGLE_API_KEY = 'YOUR_KEY_HERE'
+```javascript
+process.env.GOOGLE_API_KEY = 'YOUR_KEY_HERE'
+```
 
 For instructions on how to acquire a Google API key, visit [this page](https://www.chromium.org/developers/how-tos/api-keys).
 

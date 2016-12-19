@@ -96,9 +96,11 @@ The `remote` module provides a simple way to do inter-process communication (IPC
 
 In Electron, GUI-related modules (such as `dialog`, `menu` etc.) are only available in the main process, not in the renderer process. In order to use them from the renderer process, the `ipc` module is necessary to send inter-process messages to the main process. With the `remote` module, you can invoke methods of the main process object without explicitly sending inter-process messages, similar to Java's [RMI](http://en.wikipedia.org/wiki/Java_remote_method_invocation). An example of creating a browser window from a renderer process:
 
-    const {BrowserWindow} = require('electron').remote
-    let win = new BrowserWindow({width: 800, height: 600})
-    win.loadURL('https://github.com')
+```javascript
+const {BrowserWindow} = require('electron').remote
+let win = new BrowserWindow({width: 800, height: 600})
+win.loadURL('https://github.com')
+```
 
 **Note:** For the reverse (access the renderer process from the main process), you can use [webContents.executeJavascript]({{site.baseurl}}/docs/api/web-contents#contentsexecutejavascriptcode-usergesture-callback).
 
@@ -128,22 +130,26 @@ First, in order to avoid deadlocks, the callbacks passed to the main process are
 
 For instance you can't use a function from the renderer process in an `Array.map` called in the main process:
 
-    // main process mapNumbers.js
-    exports.withRendererCallback = (mapper) => {
-      return [1, 2, 3].map(mapper)
-    }
+```javascript
+// main process mapNumbers.js
+exports.withRendererCallback = (mapper) => {
+  return [1, 2, 3].map(mapper)
+}
 
-    exports.withLocalCallback = () => {
-      return [1, 2, 3].map(x => x + 1)
-    }
+exports.withLocalCallback = () => {
+  return [1, 2, 3].map(x => x + 1)
+}
+```
 
-    // renderer process
-    const mapNumbers = require('electron').remote.require('./mapNumbers')
-    const withRendererCb = mapNumbers.withRendererCallback(x => x + 1)
-    const withLocalCb = mapNumbers.withLocalCallback()
+```javascript
+// renderer process
+const mapNumbers = require('electron').remote.require('./mapNumbers')
+const withRendererCb = mapNumbers.withRendererCallback(x => x + 1)
+const withLocalCb = mapNumbers.withLocalCallback()
 
-    console.log(withRendererCb, withLocalCb)
-    // [undefined, undefined, undefined], [2, 3, 4]
+console.log(withRendererCb, withLocalCb)
+// [undefined, undefined, undefined], [2, 3, 4]
+```
 
 As you can see, the renderer callback's synchronous return value was not as expected, and didn't match the return value of an identical callback that lives in the main process.
 
@@ -151,9 +157,11 @@ Second, the callbacks passed to the main process will persist until the main pro
 
 For example, the following code seems innocent at first glance. It installs a callback for the `close` event on a remote object:
 
-    require('electron').remote.getCurrentWindow().on('close', () => {
-      // window was closed...
-    })
+```javascript
+require('electron').remote.getCurrentWindow().on('close', () => {
+  // window was closed...
+})
+```
 
 But remember the callback is referenced by the main process until you explicitly uninstall it. If you do not, each time you reload your window the callback will be installed again, leaking one callback for each restart.
 
@@ -165,8 +173,10 @@ To avoid this problem, ensure you clean up any references to renderer callbacks 
 
 The built-in modules in the main process are added as getters in the `remote` module, so you can use them directly like the `electron` module.
 
-    const app = require('electron').remote.app
-    console.log(app)
+```javascript
+const app = require('electron').remote.app
+console.log(app)
+```
 
 ## Methods
 

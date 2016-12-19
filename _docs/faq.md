@@ -108,16 +108,22 @@ To share data between web pages (the renderer processes) the simplest way is to 
 
 Or you can use the IPC system, which is specific to Electron, to store objects in the main process as a global variable, and then to access them from the renderers through the `remote` property of `electron` module:
 
-    // In the main process.
-    global.sharedObject = {
-      someProperty: 'default value'
-    }
+```javascript
+// In the main process.
+global.sharedObject = {
+  someProperty: 'default value'
+}
+```
 
-    // In page 1.
-    require('electron').remote.getGlobal('sharedObject').someProperty = 'new value'
+```javascript
+// In page 1.
+require('electron').remote.getGlobal('sharedObject').someProperty = 'new value'
+```
 
-    // In page 2.
-    console.log(require('electron').remote.getGlobal('sharedObject').someProperty)
+```javascript
+// In page 2.
+console.log(require('electron').remote.getGlobal('sharedObject').someProperty)
+```
 
 ## My app's window/tray disappeared after a few minutes.
 
@@ -130,20 +136,24 @@ If you encounter this problem, the following articles may prove helpful:
 
 If you want a quick fix, you can make the variables global by changing your code from this:
 
-    const {app, Tray} = require('electron')
-    app.on('ready', () => {
-      const tray = new Tray('/path/to/icon.png')
-      tray.setTitle('hello world')
-    })
+```javascript
+const {app, Tray} = require('electron')
+app.on('ready', () => {
+  const tray = new Tray('/path/to/icon.png')
+  tray.setTitle('hello world')
+})
+```
 
 to this:
 
-    const {app, Tray} = require('electron')
-    let tray = null
-    app.on('ready', () => {
-      tray = new Tray('/path/to/icon.png')
-      tray.setTitle('hello world')
-    })
+```javascript
+const {app, Tray} = require('electron')
+let tray = null
+app.on('ready', () => {
+  tray = new Tray('/path/to/icon.png')
+  tray.setTitle('hello world')
+})
+```
 
 ## I can not use jQuery/RequireJS/Meteor/AngularJS in Electron.
 
@@ -151,47 +161,61 @@ Due to the Node.js integration of Electron, there are some extra symbols inserte
 
 To solve this, you can turn off node integration in Electron:
 
-    // In the main process.
-    const {BrowserWindow} = require('electron')
-    let win = new BrowserWindow({
-      webPreferences: {
-        nodeIntegration: false
-      }
-    })
-    win.show()
+```javascript
+// In the main process.
+const {BrowserWindow} = require('electron')
+let win = new BrowserWindow({
+  webPreferences: {
+    nodeIntegration: false
+  }
+})
+win.show()
+```
 
 But if you want to keep the abilities of using Node.js and Electron APIs, you have to rename the symbols in the page before including other libraries:
 
-    <head>
-    <script>
-    window.nodeRequire = require;
-    delete window.require;
-    delete window.exports;
-    delete window.module;
-    </script>
-    <script type="text/javascript" src="jquery.js"></script>
-    </head>
+```html
+<head>
+<script>
+window.nodeRequire = require;
+delete window.require;
+delete window.exports;
+delete window.module;
+</script>
+<script type="text/javascript" src="jquery.js"></script>
+</head>
+```
 
 ## `require('electron').xxx` is undefined.
 
 When using Electron's built-in module you might encounter an error like this:
 
-    > require('electron').webFrame.setZoomFactor(1.0)
-    Uncaught TypeError: Cannot read property 'setZoomLevel' of undefined
+```
+> require('electron').webFrame.setZoomFactor(1.0)
+Uncaught TypeError: Cannot read property 'setZoomLevel' of undefined
+
+```
 
 This is because you have the [npm `electron` module](https://www.npmjs.com/package/electron) installed either locally or globally, which overrides Electron's built-in module.
 
 To verify whether you are using the correct built-in module, you can print the path of the `electron` module:
 
-    console.log(require.resolve('electron'))
+```javascript
+console.log(require.resolve('electron'))
+```
 
 and then check if it is in the following form:
 
-    "/path/to/Electron.app/Contents/Resources/atom.asar/renderer/api/lib/exports/electron.js"
+```
+"/path/to/Electron.app/Contents/Resources/atom.asar/renderer/api/lib/exports/electron.js"
+
+```
 
 If it is something like `node_modules/electron/index.js`, then you have to either remove the npm `electron` module, or rename it.
 
-    npm uninstall electron
-    npm uninstall -g electron
+```bash
+npm uninstall electron
+npm uninstall -g electron
+```
 
 However if your are using the built-in module but still getting this error, it is very likely you are using the module in the wrong process. For example `electron.app` can only be used in the main process, while `electron.webFrame` is only available in renderer processes.

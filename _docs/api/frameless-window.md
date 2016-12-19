@@ -96,9 +96,11 @@ A frameless window is a window that has no [chrome](https://developer.mozilla.or
 
 To create a frameless window, you need to set `frame` to `false` in [BrowserWindow]({{site.baseurl}}/docs/api/browser-window)'s `options`:
 
-    const {BrowserWindow} = require('electron')
-    let win = new BrowserWindow({width: 800, height: 600, frame: false})
-    win.show()
+```javascript
+const {BrowserWindow} = require('electron')
+let win = new BrowserWindow({width: 800, height: 600, frame: false})
+win.show()
+```
 
 ### Alternatives on macOS
 
@@ -108,25 +110,31 @@ On macOS 10.9 Mavericks and newer, there's an alternative way to specify a chrom
 
 Results in a hidden title bar and a full size content window, yet the title bar still has the standard window controls (“traffic lights”) in the top left.
 
-    const {BrowserWindow} = require('electron')
-    let win = new BrowserWindow({titleBarStyle: 'hidden'})
-    win.show()
+```javascript
+const {BrowserWindow} = require('electron')
+let win = new BrowserWindow({titleBarStyle: 'hidden'})
+win.show()
+```
 
 #### `hidden-inset`
 
 Results in a hidden title bar with an alternative look where the traffic light buttons are slightly more inset from the window edge.
 
-    const {BrowserWindow} = require('electron')
-    let win = new BrowserWindow({titleBarStyle: 'hidden-inset'})
-    win.show()
+```javascript
+const {BrowserWindow} = require('electron')
+let win = new BrowserWindow({titleBarStyle: 'hidden-inset'})
+win.show()
+```
 
 ## Transparent window
 
 By setting the `transparent` option to `true`, you can also make the frameless window transparent:
 
-    const {BrowserWindow} = require('electron')
-    let win = new BrowserWindow({transparent: true, frame: false})
-    win.show()
+```javascript
+const {BrowserWindow} = require('electron')
+let win = new BrowserWindow({transparent: true, frame: false})
+win.show()
+```
 
 ### Limitations
 
@@ -141,9 +149,11 @@ By setting the `transparent` option to `true`, you can also make the frameless w
 
 To create a click-through window, i.e. making the window ignore all mouse events, you can call the [win.setIgnoreMouseEvents(ignore)]({{site.baseurl}}/docs/api/browser-window#winsetignoremouseeventsignore) API:
 
-    const {BrowserWindow} = require('electron')
-    let win = new BrowserWindow()
-    win.setIgnoreMouseEvents(true)
+```javascript
+const {BrowserWindow} = require('electron')
+let win = new BrowserWindow()
+win.setIgnoreMouseEvents(true)
+```
 
 ## Draggable region
 
@@ -151,14 +161,18 @@ By default, the frameless window is non-draggable. Apps need to specify `-webkit
 
 To make the whole window draggable, you can add `-webkit-app-region: drag` as `body`'s style:
 
-    <body style="-webkit-app-region: drag">
-    </body>
+```html
+<body style="-webkit-app-region: drag">
+</body>
+```
 
 And note that if you have made the whole window draggable, you must also mark buttons as non-draggable, otherwise it would be impossible for users to click on them:
 
-    button {
-      -webkit-app-region: no-drag;
-    }
+```css
+button {
+  -webkit-app-region: no-drag;
+}
+```
 
 If you're setting just a custom titlebar as draggable, you also need to make all buttons in titlebar non-draggable.
 
@@ -166,10 +180,12 @@ If you're setting just a custom titlebar as draggable, you also need to make all
 
 In a frameless window the dragging behaviour may conflict with selecting text. For example, when you drag the titlebar you may accidentally select the text on the titlebar. To prevent this, you need to disable text selection within a draggable area like this:
 
-    .titlebar {
-      -webkit-user-select: none;
-      -webkit-app-region: drag;
-    }
+```css
+.titlebar {
+  -webkit-user-select: none;
+  -webkit-app-region: drag;
+}
+```
 
 ## Context menu
 

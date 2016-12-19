@@ -111,13 +111,15 @@ Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process)
 
 For instance, we could have created the same request to 'github.com' as follows:
 
-    const request = net.request({
-      method: 'GET',
-      protocol: 'https:',
-      hostname: 'github.com',
-      port: 443,
-      path: '/'
-    })
+```JavaScript
+const request = net.request({
+  method: 'GET',
+  protocol: 'https:',
+  hostname: 'github.com',
+  port: 443,
+  path: '/'
+})
+```
 
 ### Instance Events
 
@@ -146,21 +148,25 @@ The `callback` function is expected to be called back with user credentials:
 *   `username` String
 *   `password` String
 
-    request.on('login', (authInfo, callback) => {
-      callback('username', 'password')
-    })
+```JavaScript
+request.on('login', (authInfo, callback) => {
+  callback('username', 'password')
+})
+```
 
 Providing empty credentials will cancel the request and report an authentication error on the response object:
 
-    request.on('response', (response) => {
-      console.log(`STATUS: ${response.statusCode}`);
-      response.on('error', (error) => {
-        console.log(`ERROR: ${JSON.stringify(error)}`)
-      })
-    })
-    request.on('login', (authInfo, callback) => {
-      callback()
-    })
+```JavaScript
+request.on('response', (response) => {
+  console.log(`STATUS: ${response.statusCode}`);
+  response.on('error', (error) => {
+    console.log(`ERROR: ${JSON.stringify(error)}`)
+  })
+})
+request.on('login', (authInfo, callback) => {
+  callback()
+})
+```
 
 #### Event: 'finish'
 

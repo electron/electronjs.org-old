@@ -92,13 +92,15 @@ sort_title: chrome-command-line-switches
 
 You can use [app.commandLine.appendSwitch]({{site.baseurl}}/docs/api/app#appcommandlineappendswitchswitch-value) to append them in your app's main script before the [ready]({{site.baseurl}}/docs/api/app#event-ready) event of the [app]({{site.baseurl}}/docs/api/app) module is emitted:
 
-    const {app} = require('electron')
-    app.commandLine.appendSwitch('remote-debugging-port', '8315')
-    app.commandLine.appendSwitch('host-rules', 'MAP * 127.0.0.1')
+```javascript
+const {app} = require('electron')
+app.commandLine.appendSwitch('remote-debugging-port', '8315')
+app.commandLine.appendSwitch('host-rules', 'MAP * 127.0.0.1')
 
-    app.on('ready', () => {
-      // Your code here
-    })
+app.on('ready', () => {
+  // Your code here
+})
+```
 
 ## --ignore-connections-limit=`domains`
 
@@ -124,7 +126,9 @@ Enables remote debugging over HTTP on the specified `port`.
 
 Specifies the flags passed to the Node JS engine. It has to be passed when starting Electron if you want to enable the `flags` in the main process.
 
-    $ electron --js-flags="--harmony_proxies --harmony_collections" your-app
+```bash
+$ electron --js-flags="--harmony_proxies --harmony_collections" your-app
+```
 
 See the [Node documentation](https://nodejs.org/api/cli.html) or run `node --help` in your terminal for a list of available flags. Additionally, run `node --v8-options` to see a list of flags that specifically refer to Node's V8 JavaScript engine.
 
@@ -138,8 +142,10 @@ Instructs Electron to bypass the proxy server for the given semi-colon-separated
 
 For example:
 
-    const {app} = require('electron')
-    app.commandLine.appendSwitch('proxy-bypass-list', '<local>;*.google.com;*foo.com;1.2.3.4:5678')
+```javascript
+const {app} = require('electron')
+app.commandLine.appendSwitch('proxy-bypass-list', '<local>;*.google.com;*foo.com;1.2.3.4:5678')
+```
 
 Will use the proxy server for all hosts except for local addresses (`localhost`, `127.0.0.1` etc.), `google.com` subdomains, hosts that contain the suffix `foo.com` and anything at `1.2.3.4:5678`.
 
@@ -174,7 +180,10 @@ A comma-separated list of servers for which integrated authentication is enabled
 
 For example:
 
-    --auth-server-whitelist='*example.com, *foobar.com, *baz'
+```
+--auth-server-whitelist='*example.com, *foobar.com, *baz'
+
+```
 
 then any `url` ending with `example.com`, `foobar.com`, `baz` will be considered for integrated authentication. Without `*` prefix the url has to match exactly.
 

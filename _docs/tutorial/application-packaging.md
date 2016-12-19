@@ -98,11 +98,15 @@ Steps to package your app into an `asar` archive:
 
 ### 1\. Install the asar Utility
 
-    $ npm install -g asar
+```bash
+$ npm install -g asar
+```
 
 ### 2\. Package with `asar pack`
 
-    $ asar pack your-app app.asar
+```bash
+$ asar pack your-app app.asar
+```
 
 ## Using `asar` Archives
 
@@ -114,33 +118,43 @@ With special patches in Electron, Node APIs like `fs.readFile` and `require` tre
 
 For example, suppose we have an `example.asar` archive under `/path/to`:
 
-    $ asar list /path/to/example.asar
-    /app.js
-    /file.txt
-    /dir/module.js
-    /static/index.html
-    /static/main.css
-    /static/jquery.min.js
+```bash
+$ asar list /path/to/example.asar
+/app.js
+/file.txt
+/dir/module.js
+/static/index.html
+/static/main.css
+/static/jquery.min.js
+```
 
 Read a file in the `asar` archive:
 
-    const fs = require('fs')
-    fs.readFileSync('/path/to/example.asar/file.txt')
+```javascript
+const fs = require('fs')
+fs.readFileSync('/path/to/example.asar/file.txt')
+```
 
 List all files under the root of the archive:
 
-    const fs = require('fs')
-    fs.readdirSync('/path/to/example.asar')
+```javascript
+const fs = require('fs')
+fs.readdirSync('/path/to/example.asar')
+```
 
 Use a module from the archive:
 
-    require('/path/to/example.asar/dir/module.js')
+```javascript
+require('/path/to/example.asar/dir/module.js')
+```
 
 You can also display a web page in an `asar` archive with `BrowserWindow`:
 
-    const {BrowserWindow} = require('electron')
-    let win = new BrowserWindow({width: 800, height: 600})
-    win.loadURL('file:///path/to/example.asar/static/index.html')
+```javascript
+const {BrowserWindow} = require('electron')
+let win = new BrowserWindow({width: 800, height: 600})
+win.loadURL('file:///path/to/example.asar/static/index.html')
+```
 
 ### Web API
 
@@ -148,25 +162,31 @@ In a web page, files in an archive can be requested with the `file:` protocol. L
 
 For example, to get a file with `$.get`:
 
-    <script>
-    let $ = require('./jquery.min.js')
-    $.get('file:///path/to/example.asar/file.txt', (data) => {
-      console.log(data)
-    })
-    </script>
+```html
+<script>
+let $ = require('./jquery.min.js')
+$.get('file:///path/to/example.asar/file.txt', (data) => {
+  console.log(data)
+})
+</script>
+```
 
 ### Treating an `asar` Archive as a Normal File
 
 For some cases like verifying the `asar` archive's checksum, we need to read the content of an `asar` archive as a file. For this purpose you can use the built-in `original-fs` module which provides original `fs` APIs without `asar` support:
 
-    const originalFs = require('original-fs')
-    originalFs.readFileSync('/path/to/example.asar')
+```javascript
+const originalFs = require('original-fs')
+originalFs.readFileSync('/path/to/example.asar')
+```
 
 You can also set `process.noAsar` to `true` to disable the support for `asar` in the `fs` module:
 
-    const fs = require('fs')
-    process.noAsar = true
-    fs.readFileSync('/path/to/example.asar')
+```javascript
+const fs = require('fs')
+process.noAsar = true
+fs.readFileSync('/path/to/example.asar')
+```
 
 ## Limitations of the Node API
 
@@ -208,6 +228,8 @@ As stated above, some Node APIs will unpack the file to filesystem when calling,
 
 To work around this, you can unpack some files creating archives by using the `--unpack` option, an example of excluding shared libraries of native modules is:
 
-    $ asar pack app app.asar --unpack *.node
+```bash
+$ asar pack app app.asar --unpack *.node
+```
 
 After running the command, apart from the `app.asar`, there is also an `app.asar.unpacked` folder generated which contains the unpacked files, you should copy it together with `app.asar` when shipping it to users.

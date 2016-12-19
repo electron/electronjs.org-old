@@ -100,11 +100,13 @@ These new features bring those auditing tools to your Electron app. You can choo
 
 In the testing framework Spectron, you can now audit each window and `<webview>` tag in your application. For example:
 
-    app.client.auditAccessibility().then(function (audit) {
-      if (audit.failed) {
-        console.error(audit.message)
-      }
-    })
+```javascript
+app.client.auditAccessibility().then(function (audit) {
+  if (audit.failed) {
+    console.error(audit.message)
+  }
+})
+```
 
 You can read more about this feature in [Spectron's documentation](https://github.com/electron/spectron#accessibility-testing).
 

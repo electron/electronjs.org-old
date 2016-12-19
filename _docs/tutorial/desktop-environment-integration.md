@@ -123,13 +123,15 @@ All three operating systems provide means for applications to send notifications
 
 **Note:** Since this is an HTML5 API it is only available in the renderer process.
 
-    let myNotification = new Notification('Title', {
-      body: 'Lorem Ipsum Dolor Sit Amet'
-    })
+```javascript
+let myNotification = new Notification('Title', {
+  body: 'Lorem Ipsum Dolor Sit Amet'
+})
 
-    myNotification.onclick = () => {
-      console.log('Notification clicked')
-    }
+myNotification.onclick = () => {
+  console.log('Notification clicked')
+}
+```
 
 While code and user experience across operating systems are similar, there are fine differences.
 
@@ -165,13 +167,17 @@ Windows and macOS provide easy access to a list of recent documents opened by th
 
 To add a file to recent documents, you can use the [app.addRecentDocument]({{site.baseurl}}/docs/api/app#appaddrecentdocumentpath-os-x-windows) API:
 
-    const {app} = require('electron')
-    app.addRecentDocument('/Users/USERNAME/Desktop/work.type')
+```javascript
+const {app} = require('electron')
+app.addRecentDocument('/Users/USERNAME/Desktop/work.type')
+```
 
 And you can use [app.clearRecentDocuments]({{site.baseurl}}/docs/api/app#appclearrecentdocuments-os-x-windows) API to empty the recent documents list:
 
-    const {app} = require('electron')
-    app.clearRecentDocuments()
+```javascript
+const {app} = require('electron')
+app.clearRecentDocuments()
+```
 
 ### Windows Notes
 
@@ -193,19 +199,21 @@ macOS enables developers to specify a custom menu for the dock, which usually co
 
 To set your custom dock menu, you can use the `app.dock.setMenu` API, which is only available on macOS:
 
-    const {app, Menu} = require('electron')
+```javascript
+const {app, Menu} = require('electron')
 
-    const dockMenu = Menu.buildFromTemplate([
-      {label: 'New Window', click () { console.log('New Window') }},
-      {label: 'New Window with Settings',
-        submenu: [
-          {label: 'Basic'},
-          {label: 'Pro'}
-        ]
-      },
-      {label: 'New Command...'}
-    ])
-    app.dock.setMenu(dockMenu)
+const dockMenu = Menu.buildFromTemplate([
+  {label: 'New Window', click () { console.log('New Window') }},
+  {label: 'New Window with Settings',
+    submenu: [
+      {label: 'Basic'},
+      {label: 'Pro'}
+    ]
+  },
+  {label: 'New Command...'}
+])
+app.dock.setMenu(dockMenu)
+```
 
 ## User Tasks (Windows)
 
@@ -223,22 +231,26 @@ Unlike the dock menu in macOS which is a real menu, user tasks in Windows work l
 
 To set user tasks for your application, you can use [app.setUserTasks]({{site.baseurl}}/docs/api/app#appsetusertaskstasks-windows) API:
 
-    const {app} = require('electron')
-    app.setUserTasks([
-      {
-        program: process.execPath,
-        arguments: '--new-window',
-        iconPath: process.execPath,
-        iconIndex: 0,
-        title: 'New Window',
-        description: 'Create a new window'
-      }
-    ])
+```javascript
+const {app} = require('electron')
+app.setUserTasks([
+  {
+    program: process.execPath,
+    arguments: '--new-window',
+    iconPath: process.execPath,
+    iconIndex: 0,
+    title: 'New Window',
+    description: 'Create a new window'
+  }
+])
+```
 
 To clean your tasks list, just call `app.setUserTasks` with an empty array:
 
-    const {app} = require('electron')
-    app.setUserTasks([])
+```javascript
+const {app} = require('electron')
+app.setUserTasks([])
+```
 
 The user tasks will still show even after your application closes, so the icon and program path specified for a task should exist until your application is uninstalled.
 
@@ -258,33 +270,37 @@ From MSDN, it's illustrated:
 
 You can use [BrowserWindow.setThumbarButtons]({{site.baseurl}}/docs/api/browser-window#winsetthumbarbuttonsbuttons-windows-7) to set thumbnail toolbar in your application:
 
-    const {BrowserWindow} = require('electron')
-    const path = require('path')
+```javascript
+const {BrowserWindow} = require('electron')
+const path = require('path')
 
-    let win = new BrowserWindow({
-      width: 800,
-      height: 600
-    })
+let win = new BrowserWindow({
+  width: 800,
+  height: 600
+})
 
-    win.setThumbarButtons([
-      {
-        tooltip: 'button1',
-        icon: path.join(__dirname, 'button1.png'),
-        click () { console.log('button1 clicked') }
-      },
-      {
-        tooltip: 'button2',
-        icon: path.join(__dirname, 'button2.png'),
-        flags: ['enabled', 'dismissonclick'],
-        click () { console.log('button2 clicked.') }
-      }
-    ])
+win.setThumbarButtons([
+  {
+    tooltip: 'button1',
+    icon: path.join(__dirname, 'button1.png'),
+    click () { console.log('button1 clicked') }
+  },
+  {
+    tooltip: 'button2',
+    icon: path.join(__dirname, 'button2.png'),
+    flags: ['enabled', 'dismissonclick'],
+    click () { console.log('button2 clicked.') }
+  }
+])
+```
 
 To clean thumbnail toolbar buttons, just call `BrowserWindow.setThumbarButtons` with an empty array:
 
-    const {BrowserWindow} = require('electron')
-    let win = new BrowserWindow()
-    win.setThumbarButtons([])
+```javascript
+const {BrowserWindow} = require('electron')
+let win = new BrowserWindow()
+win.setThumbarButtons([])
+```
 
 ## Unity Launcher Shortcuts (Linux)
 
@@ -308,9 +324,11 @@ The Unity DE also has a similar feature that allows you to specify the progress 
 
 To set the progress bar for a Window, you can use the [BrowserWindow.setProgressBar]({{site.baseurl}}/docs/api/browser-window#winsetprogressbarprogress) API:
 
-    const {BrowserWindow} = require('electron')
-    let win = new BrowserWindow()
-    win.setProgressBar(0.5)
+```javascript
+const {BrowserWindow} = require('electron')
+let win = new BrowserWindow()
+win.setProgressBar(0.5)
+```
 
 ## Icon Overlays in Taskbar (Windows)
 
@@ -324,9 +342,11 @@ On Windows a taskbar button can use a small overlay to display application statu
 
 To set the overlay icon for a window, you can use the [BrowserWindow.setOverlayIcon]({{site.baseurl}}/docs/api/browser-window#winsetoverlayiconoverlay-description-windows-7) API:
 
-    const {BrowserWindow} = require('electron')
-    let win = new BrowserWindow()
-    win.setOverlayIcon('path/to/overlay.png', 'Description for overlay')
+```javascript
+const {BrowserWindow} = require('electron')
+let win = new BrowserWindow()
+win.setOverlayIcon('path/to/overlay.png', 'Description for overlay')
+```
 
 ## Flash Frame (Windows)
 
@@ -336,10 +356,12 @@ On Windows you can highlight the taskbar button to get the user's attention. Thi
 
 To flash the BrowserWindow taskbar button, you can use the [BrowserWindow.flashFrame]({{site.baseurl}}/docs/api/browser-window#winflashframeflag) API:
 
-    const {BrowserWindow} = require('electron')
-    let win = new BrowserWindow()
-    win.once('focus', () => win.flashFrame(false))
-    win.flashFrame(true)
+```javascript
+const {BrowserWindow} = require('electron')
+let win = new BrowserWindow()
+win.once('focus', () => win.flashFrame(false))
+win.flashFrame(true)
+```
 
 Don't forget to call the `flashFrame` method with `false` to turn off the flash. In the above example, it is called when the window comes into focus, but you might use a timeout or some other event to disable it.
 
@@ -355,10 +377,12 @@ You can also set the edited state of a window so that the file icon can indicate
 
 To set the represented file of window, you can use the [BrowserWindow.setRepresentedFilename]({{site.baseurl}}/docs/api/browser-window#winsetrepresentedfilenamefilename-os-x) and [BrowserWindow.setDocumentEdited]({{site.baseurl}}/docs/api/browser-window#winsetdocumenteditededited-os-x) APIs:
 
-    const {BrowserWindow} = require('electron')
-    let win = new BrowserWindow()
-    win.setRepresentedFilename('/etc/passwd')
-    win.setDocumentEdited(true)
+```javascript
+const {BrowserWindow} = require('electron')
+let win = new BrowserWindow()
+win.setRepresentedFilename('/etc/passwd')
+win.setDocumentEdited(true)
+```
 
 ## Dragging files out of the window
 
@@ -366,20 +390,24 @@ For certain kinds of apps that manipulate on files, it is important to be able t
 
 In web page:
 
-    <a href="#" id="drag">item</a>
-    <script type="text/javascript" charset="utf-8">
-      document.getElementById('drag').ondragstart = (event) => {
-        event.preventDefault()
-        ipcRenderer.send('ondragstart', '/path/to/item')
-      }
-    </script>
+```html
+<a href="#" id="drag">item</a>
+<script type="text/javascript" charset="utf-8">
+  document.getElementById('drag').ondragstart = (event) => {
+    event.preventDefault()
+    ipcRenderer.send('ondragstart', '/path/to/item')
+  }
+</script>
+```
 
 In the main process:
 
-    const {ipcMain} = require('electron')
-    ipcMain.on('ondragstart', (event, filePath) => {
-      event.sender.startDrag({
-        file: filePath,
-        icon: '/path/to/icon.png'
-      })
-    })
+```javascript
+const {ipcMain} = require('electron')
+ipcMain.on('ondragstart', (event, filePath) => {
+  event.sender.startDrag({
+    file: filePath,
+    icon: '/path/to/icon.png'
+  })
+})
+```

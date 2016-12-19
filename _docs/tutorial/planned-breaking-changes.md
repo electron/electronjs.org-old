@@ -94,106 +94,126 @@ There is no timetable for when this release will occur but deprecation warnings 
 
 ## `BrowserWindow`
 
-    // Deprecated
-    let optionsA = {webPreferences: {blinkFeatures: ''}}
-    let windowA = new BrowserWindow(optionsA)
-    // Replace with
-    let optionsB = {webPreferences: {enableBlinkFeatures: ''}}
-    let windowB = new BrowserWindow(optionsB)
+```js
+// Deprecated
+let optionsA = {webPreferences: {blinkFeatures: ''}}
+let windowA = new BrowserWindow(optionsA)
+// Replace with
+let optionsB = {webPreferences: {enableBlinkFeatures: ''}}
+let windowB = new BrowserWindow(optionsB)
+```
 
 ## `clipboard`
 
-    // Deprecated
-    clipboard.readRtf()
-    // Replace with
-    clipboard.readRTF()
+```js
+// Deprecated
+clipboard.readRtf()
+// Replace with
+clipboard.readRTF()
 
-    // Deprecated
-    clipboard.writeRtf()
-    // Replace with
-    clipboard.writeRTF()
+// Deprecated
+clipboard.writeRtf()
+// Replace with
+clipboard.writeRTF()
 
-    // Deprecated
-    clipboard.readHtml()
-    // Replace with
-    clipboard.readHTML()
+// Deprecated
+clipboard.readHtml()
+// Replace with
+clipboard.readHTML()
 
-    // Deprecated
-    clipboard.writeHtml()
-    // Replace with
-    clipboard.writeHTML()
+// Deprecated
+clipboard.writeHtml()
+// Replace with
+clipboard.writeHTML()
+```
 
 ## `crashReporter`
 
-    // Deprecated
-    crashReporter.start({
-      companyName: 'Crashly',
-      submitURL: 'https://crash.server.com',
-      autoSubmit: true
-    })
-    // Replace with
-    crashReporter.start({
-      companyName: 'Crashly',
-      submitURL: 'https://crash.server.com',
-      uploadToServer: true
-    })
+```js
+// Deprecated
+crashReporter.start({
+  companyName: 'Crashly',
+  submitURL: 'https://crash.server.com',
+  autoSubmit: true
+})
+// Replace with
+crashReporter.start({
+  companyName: 'Crashly',
+  submitURL: 'https://crash.server.com',
+  uploadToServer: true
+})
+```
 
 ## `nativeImage`
 
-    // Deprecated
-    nativeImage.toPng()
-    // Replace with
-    nativeImage.toPNG()
+```js
+// Deprecated
+nativeImage.toPng()
+// Replace with
+nativeImage.toPNG()
 
-    // Deprecated
-    nativeImage.toJpeg()
-    // Replace with
-    nativeImage.toJPEG()
+// Deprecated
+nativeImage.toJpeg()
+// Replace with
+nativeImage.toJPEG()
+```
 
 ## `process`
 
-    // Deprecated
-    process.versions['atom-shell']
-    // Replace with
-    process.versions.electron
+```js
+// Deprecated
+process.versions['atom-shell']
+// Replace with
+process.versions.electron
+```
 
 ## `Tray`
 
-    // Deprecated
-    tray.setHighlightMode(true)
-    // Replace with
-    tray.setHighlightMode('on')
+```js
+// Deprecated
+tray.setHighlightMode(true)
+// Replace with
+tray.setHighlightMode('on')
 
-    // Deprecated
-    tray.setHighlightMode(false)
-    // Replace with
-    tray.setHighlightMode('off')
+// Deprecated
+tray.setHighlightMode(false)
+// Replace with
+tray.setHighlightMode('off')
+```
 
 ## `webContents`
 
-    // Deprecated
-    webContents.openDevTools({detach: true})
-    // Replace with
-    webContents.openDevTools({mode: 'detach'})
+```js
+// Deprecated
+webContents.openDevTools({detach: true})
+// Replace with
+webContents.openDevTools({mode: 'detach'})
+```
 
-    // Deprecated
-    webContents.setZoomLevelLimits(1, 2)
-    // Replace with
-    webContents.setVisualZoomLevelLimits(1, 2)
+```js
+// Deprecated
+webContents.setZoomLevelLimits(1, 2)
+// Replace with
+webContents.setVisualZoomLevelLimits(1, 2)
+```
 
 ## `webFrame`
 
-    // Deprecated
-    webFrame.setZoomLevelLimits(1, 2)
-    // Replace with
-    webFrame.setVisualZoomLevelLimits(1, 2)
+```js
+// Deprecated
+webFrame.setZoomLevelLimits(1, 2)
+// Replace with
+webFrame.setVisualZoomLevelLimits(1, 2)
+```
 
 ## `<webview>`
 
-    // Deprecated
-    webview.setZoomLevelLimits(1, 2)
-    // Replace with
-    webview.setVisualZoomLevelLimits(1, 2)
+```js
+// Deprecated
+webview.setZoomLevelLimits(1, 2)
+// Replace with
+webview.setVisualZoomLevelLimits(1, 2)
+```
 
 ## Node Headers URL
 

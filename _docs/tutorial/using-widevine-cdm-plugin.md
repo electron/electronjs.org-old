@@ -118,26 +118,28 @@ The command line switches have to be passed before the `ready` event of `app` mo
 
 Example code:
 
-    const {app, BrowserWindow} = require('electron')
+```javascript
+const {app, BrowserWindow} = require('electron')
 
-    // You have to pass the filename of `widevinecdmadapter` here, it is
-    // * `widevinecdmadapter.plugin` on macOS,
-    // * `libwidevinecdmadapter.so` on Linux,
-    // * `widevinecdmadapter.dll` on Windows.
-    app.commandLine.appendSwitch('widevine-cdm-path', '/path/to/widevinecdmadapter.plugin')
-    // The version of plugin can be got from `chrome://plugins` page in Chrome.
-    app.commandLine.appendSwitch('widevine-cdm-version', '1.4.8.866')
+// You have to pass the filename of `widevinecdmadapter` here, it is
+// * `widevinecdmadapter.plugin` on macOS,
+// * `libwidevinecdmadapter.so` on Linux,
+// * `widevinecdmadapter.dll` on Windows.
+app.commandLine.appendSwitch('widevine-cdm-path', '/path/to/widevinecdmadapter.plugin')
+// The version of plugin can be got from `chrome://plugins` page in Chrome.
+app.commandLine.appendSwitch('widevine-cdm-version', '1.4.8.866')
 
-    let win = null
-    app.on('ready', () => {
-      win = new BrowserWindow({
-        webPreferences: {
-          // The `plugins` have to be enabled.
-          plugins: true
-        }
-      })
-      win.show()
-    })
+let win = null
+app.on('ready', () => {
+  win = new BrowserWindow({
+    webPreferences: {
+      // The `plugins` have to be enabled.
+      plugins: true
+    }
+  })
+  win.show()
+})
+```
 
 ## Verifying the plugin
 

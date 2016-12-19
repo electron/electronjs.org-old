@@ -96,38 +96,40 @@ Process: [Renderer]({{site.baseurl}}/docs/tutorial/quick-start#renderer-process)
 
 The following example shows how to capture video from a desktop window whose title is `Electron`:
 
-    // In the renderer process.
-    const {desktopCapturer} = require('electron')
+```javascript
+// In the renderer process.
+const {desktopCapturer} = require('electron')
 
-    desktopCapturer.getSources({types: ['window', 'screen']}, (error, sources) => {
-      if (error) throw error
-      for (let i = 0; i < sources.length; ++i) {
-        if (sources[i].name === 'Electron') {
-          navigator.webkitGetUserMedia({
-            audio: false,
-            video: {
-              mandatory: {
-                chromeMediaSource: 'desktop',
-                chromeMediaSourceId: sources[i].id,
-                minWidth: 1280,
-                maxWidth: 1280,
-                minHeight: 720,
-                maxHeight: 720
-              }
-            }
-          }, handleStream, handleError)
-          return
+desktopCapturer.getSources({types: ['window', 'screen']}, (error, sources) => {
+  if (error) throw error
+  for (let i = 0; i < sources.length; ++i) {
+    if (sources[i].name === 'Electron') {
+      navigator.webkitGetUserMedia({
+        audio: false,
+        video: {
+          mandatory: {
+            chromeMediaSource: 'desktop',
+            chromeMediaSourceId: sources[i].id,
+            minWidth: 1280,
+            maxWidth: 1280,
+            minHeight: 720,
+            maxHeight: 720
+          }
         }
-      }
-    })
-
-    function handleStream (stream) {
-      document.querySelector('video').src = URL.createObjectURL(stream)
+      }, handleStream, handleError)
+      return
     }
+  }
+})
 
-    function handleError (e) {
-      console.log(e)
-    }
+function handleStream (stream) {
+  document.querySelector('video').src = URL.createObjectURL(stream)
+}
+
+function handleError (e) {
+  console.log(e)
+}
+```
 
 To capture video from a source provided by `desktopCapturer` the constraints passed to [`navigator.webkitGetUserMedia`](https://developer.mozilla.org/en/docs/Web/API/Navigator/getUserMedia) must include `chromeMediaSource: 'desktop'`, and `audio: false`.
 

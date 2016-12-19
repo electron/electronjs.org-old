@@ -94,9 +94,11 @@ Process: [Renderer]({{site.baseurl}}/docs/tutorial/quick-start#renderer-process)
 
 An example of zooming current page to 200%.
 
-    const {webFrame} = require('electron')
+```javascript
+const {webFrame} = require('electron')
 
-    webFrame.setZoomFactor(2)
+webFrame.setZoomFactor(2)
+```
 
 ## Methods
 
@@ -155,12 +157,14 @@ The `provider` must be an object that has a `spellCheck` method that returns whe
 
 An example of using [node-spellchecker](https://github.com/atom/node-spellchecker) as provider:
 
-    const {webFrame} = require('electron')
-    webFrame.setSpellCheckProvider('en-US', true, {
-      spellCheck (text) {
-        return !(require('spellchecker').isMisspelled(text))
-      }
-    })
+```javascript
+const {webFrame} = require('electron')
+webFrame.setSpellCheckProvider('en-US', true, {
+  spellCheck (text) {
+    return !(require('spellchecker').isMisspelled(text))
+  }
+})
+```
 
 ### `webFrame.registerURLSchemeAsSecure(scheme)`
 
@@ -190,8 +194,10 @@ Registers the `scheme` as secure, bypasses content security policy for resources
 
 Specify an option with the value of `false` to omit it from the registration. An example of registering a privileged scheme, without bypassing Content Security Policy:
 
-    const {webFrame} = require('electron')
-    webFrame.registerURLSchemeAsPrivileged('foo', { bypassCSP: false })
+```javascript
+const {webFrame} = require('electron')
+webFrame.registerURLSchemeAsPrivileged('foo', { bypassCSP: false })
+```
 
 ### `webFrame.insertText(text)`
 
@@ -220,25 +226,29 @@ Returns `Object`:
 
 Returns an object describing usage information of Blink's internal memory caches.
 
-    const {webFrame} = require('electron')
-    console.log(webFrame.getResourceUsage())
+```javascript
+const {webFrame} = require('electron')
+console.log(webFrame.getResourceUsage())
+```
 
 This will generate:
 
-    {
-      images: {
-        count: 22,
-        size: 2549,
-        liveSize: 2542,
-        decodedSize: 478,
-        purgedSize: 0,
-        purgeableSize: 0
-      },
-      cssStyleSheets: { /* same with "images" */ },
-      xslStyleSheets: { /* same with "images" */ },
-      fonts: { /* same with "images" */ },
-      other: { /* same with "images" */ }
-    }
+```javascript
+{
+  images: {
+    count: 22,
+    size: 2549,
+    liveSize: 2542,
+    decodedSize: 478,
+    purgedSize: 0,
+    purgeableSize: 0
+  },
+  cssStyleSheets: { /* same with "images" */ },
+  xslStyleSheets: { /* same with "images" */ },
+  fonts: { /* same with "images" */ },
+  other: { /* same with "images" */ }
+}
+```
 
 ### `webFrame.clearCache()`
 

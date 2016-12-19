@@ -92,22 +92,24 @@ sort_title: browser-window
 
 Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process)
 
-    // In the main process.
-    const {BrowserWindow} = require('electron')
+```javascript
+// In the main process.
+const {BrowserWindow} = require('electron')
 
-    // Or use `remote` from the renderer process.
-    // const {BrowserWindow} = require('electron').remote
+// Or use `remote` from the renderer process.
+// const {BrowserWindow} = require('electron').remote
 
-    let win = new BrowserWindow({width: 800, height: 600})
-    win.on('closed', () => {
-      win = null
-    })
+let win = new BrowserWindow({width: 800, height: 600})
+win.on('closed', () => {
+  win = null
+})
 
-    // Load a remote URL
-    win.loadURL('https://github.com')
+// Load a remote URL
+win.loadURL('https://github.com')
 
-    // Or load a local HTML file
-    win.loadURL(`file://${__dirname}/app/index.html`)
+// Or load a local HTML file
+win.loadURL(`file://${__dirname}/app/index.html`)
+```
 
 ## Frameless window
 
@@ -121,11 +123,13 @@ When loading a page in window directly, users will see the progress of loading p
 
 While loading the page, the `ready-to-show` event will be emitted when renderer process has done drawing for the first time, showing window after this event will have no visual flash:
 
-    const {BrowserWindow} = require('electron')
-    let win = new BrowserWindow({show: false})
-    win.once('ready-to-show', () => {
-      win.show()
-    })
+```javascript
+const {BrowserWindow} = require('electron')
+let win = new BrowserWindow({show: false})
+win.once('ready-to-show', () => {
+  win.show()
+})
+```
 
 This is event is usually emitted after the `did-finish-load` event, but for pages with many remote resources, it may be emitted before the `did-finish-load` event.
 
@@ -133,10 +137,12 @@ This is event is usually emitted after the `did-finish-load` event, but for page
 
 For a complex app, the `ready-to-show` event could be emitted too late, making the app feel slow. In this case, it is recommended to show the window immediately, and use a `backgroundColor` close to your app's background:
 
-    const {BrowserWindow} = require('electron')
+```javascript
+const {BrowserWindow} = require('electron')
 
-    let win = new BrowserWindow({backgroundColor: '#2e2c29'})
-    win.loadURL('https://github.com')
+let win = new BrowserWindow({backgroundColor: '#2e2c29'})
+win.loadURL('https://github.com')
+```
 
 Note that even for apps that use `ready-to-show` event, it is still recommended to set `backgroundColor` to make app feel more native.
 
@@ -144,12 +150,14 @@ Note that even for apps that use `ready-to-show` event, it is still recommended 
 
 By using `parent` option, you can create child windows:
 
-    const {BrowserWindow} = require('electron')
+```javascript
+const {BrowserWindow} = require('electron')
 
-    let top = new BrowserWindow()
-    let child = new BrowserWindow({parent: top})
-    child.show()
-    top.show()
+let top = new BrowserWindow()
+let child = new BrowserWindow({parent: top})
+child.show()
+top.show()
+```
 
 The `child` window will always show on top of the `top` window.
 
@@ -157,13 +165,15 @@ The `child` window will always show on top of the `top` window.
 
 A modal window is a child window that disables parent window, to create a modal window, you have to set both `parent` and `modal` options:
 
-    const {BrowserWindow} = require('electron')
+```javascript
+const {BrowserWindow} = require('electron')
 
-    let child = new BrowserWindow({parent: top, modal: true, show: false})
-    child.loadURL('https://github.com')
-    child.once('ready-to-show', () => {
-      child.show()
-    })
+let child = new BrowserWindow({parent: top, modal: true, show: false})
+child.loadURL('https://github.com')
+child.once('ready-to-show', () => {
+  child.show()
+})
+```
 
 ### Platform notices
 
@@ -298,15 +308,17 @@ Emitted when the window is going to be closed. It's emitted before the `beforeun
 
 Usually you would want to use the `beforeunload` handler to decide whether the window should be closed, which will also be called when the window is reloaded. In Electron, returning any value other than `undefined` would cancel the close. For example:
 
-    window.onbeforeunload = (e) => {
-      console.log('I do not want to be closed')
+```javascript
+window.onbeforeunload = (e) => {
+  console.log('I do not want to be closed')
 
-      // Unlike usual browsers that a message box will be prompted to users, returning
-      // a non-void value will silently cancel the close.
-      // It is recommended to use the dialog API to let the user confirm closing the
-      // application.
-      e.returnValue = false
-    }
+  // Unlike usual browsers that a message box will be prompted to users, returning
+  // a non-void value will silently cancel the close.
+  // It is recommended to use the dialog API to let the user confirm closing the
+  // application.
+  e.returnValue = false
+}
+```
 
 #### Event: 'closed'
 
@@ -397,14 +409,16 @@ Emitted when an [App Command](https://msdn.microsoft.com/en-us/library/windows/d
 
 Commands are lowercased, underscores are replaced with hyphens, and the `APPCOMMAND_` prefix is stripped off. e.g. `APPCOMMAND_BROWSER_BACKWARD` is emitted as `browser-backward`.
 
-    const {BrowserWindow} = require('electron')
-    let win = new BrowserWindow()
-    win.on('app-command', (e, cmd) => {
-      // Navigate the window back when the user hits their mouse back button
-      if (cmd === 'browser-backward' && win.webContents.canGoBack()) {
-        win.webContents.goBack()
-      }
-    })
+```javascript
+const {BrowserWindow} = require('electron')
+let win = new BrowserWindow()
+win.on('app-command', (e, cmd) => {
+  // Navigate the window back when the user hits their mouse back button
+  if (cmd === 'browser-backward' && win.webContents.canGoBack()) {
+    win.webContents.goBack()
+  }
+})
+```
 
 #### Event: 'scroll-touch-begin' _macOS_
 
@@ -477,10 +491,12 @@ Returns `Object` - The keys are the extension names and each value is an Object 
 
 To check if a DevTools extension is installed you can run the following:
 
-    const {BrowserWindow} = require('electron')
+```javascript
+const {BrowserWindow} = require('electron')
 
-    let installed = BrowserWindow.getDevToolsExtensions().hasOwnProperty('devtron')
-    console.log(installed)
+let installed = BrowserWindow.getDevToolsExtensions().hasOwnProperty('devtron')
+console.log(installed)
+```
 
 **Note:** This API cannot be called before the `ready` event of the `app` module is emitted.
 
@@ -488,10 +504,12 @@ To check if a DevTools extension is installed you can run the following:
 
 Objects created with `new BrowserWindow` have the following properties:
 
-    const {BrowserWindow} = require('electron')
-    // In this example `win` is our instance
-    let win = new BrowserWindow({width: 800, height: 600})
-    win.loadURL('https://github.com')
+```javascript
+const {BrowserWindow} = require('electron')
+// In this example `win` is our instance
+let win = new BrowserWindow({width: 800, height: 600})
+win.loadURL('https://github.com')
+```
 
 #### `win.webContents`
 
@@ -791,11 +809,13 @@ Returns `String` - The title of the native window.
 
 Changes the attachment point for sheets on macOS. By default, sheets are attached just below the window frame, but you may want to display them beneath a HTML-rendered toolbar. For example:
 
-    const {BrowserWindow} = require('electron')
-    let win = new BrowserWindow()
+```javascript
+const {BrowserWindow} = require('electron')
+let win = new BrowserWindow()
 
-    let toolbarRect = document.getElementById('toolbar').getBoundingClientRect()
-    win.setSheetOffset(toolbarRect.height)
+let toolbarRect = document.getElementById('toolbar').getBoundingClientRect()
+win.setSheetOffset(toolbarRect.height)
+```
 
 #### `win.flashFrame(flag)`
 
@@ -895,23 +915,27 @@ The `url` can be a remote address (e.g. `http://`) or a path to a local HTML fil
 
 To ensure that file URLs are properly formatted, it is recommended to use Node's [`url.format`](https://nodejs.org/api/url.html#url_url_format_urlobject) method:
 
-    let url = require('url').format({
-      protocol: 'file',
-      slashes: true,
-      pathname: require('path').join(__dirname, 'index.html')
-    })
+```javascript
+let url = require('url').format({
+  protocol: 'file',
+  slashes: true,
+  pathname: require('path').join(__dirname, 'index.html')
+})
 
-    win.loadURL(url)
+win.loadURL(url)
+```
 
 You can load a URL using a `POST` request with URL-encoded data by doing the following:
 
-    win.loadURL('http://localhost:8000/post', {
-      postData: [{
-        type: 'rawData',
-        bytes: Buffer.from('hello=world')
-      }],
-      extraHeaders: 'Content-Type: application/x-www-form-urlencoded'
-    })
+```javascript
+win.loadURL('http://localhost:8000/post', {
+  postData: [{
+    type: 'rawData',
+    bytes: Buffer.from('hello=world')
+  }],
+  extraHeaders: 'Content-Type: application/x-www-form-urlencoded'
+})
+```
 
 #### `win.reload()`
 

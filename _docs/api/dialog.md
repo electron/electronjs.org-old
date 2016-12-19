@@ -94,13 +94,17 @@ Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process)
 
 An example of showing a dialog to select multiple files and directories:
 
-    const {dialog} = require('electron')
-    console.log(dialog.showOpenDialog({properties: ['openFile', 'openDirectory', 'multiSelections']}))
+```javascript
+const {dialog} = require('electron')
+console.log(dialog.showOpenDialog({properties: ['openFile', 'openDirectory', 'multiSelections']}))
+```
 
 The Dialog is opened from Electron's main thread. If you want to use the dialog object from a renderer process, remember to access it using the remote:
 
-    const {dialog} = require('electron').remote
-    console.log(dialog)
+```javascript
+const {dialog} = require('electron').remote
+console.log(dialog)
+```
 
 ## Methods
 
@@ -124,14 +128,16 @@ The `browserWindow` argument allows the dialog to attach itself to a parent wind
 
 The `filters` specifies an array of file types that can be displayed or selected when you want to limit the user to a specific type. For example:
 
-    {
-      filters: [
-        {name: 'Images', extensions: ['jpg', 'png', 'gif']},
-        {name: 'Movies', extensions: ['mkv', 'avi', 'mp4']},
-        {name: 'Custom File Type', extensions: ['as']},
-        {name: 'All Files', extensions: ['*']}
-      ]
-    }
+```javascript
+{
+  filters: [
+    {name: 'Images', extensions: ['jpg', 'png', 'gif']},
+    {name: 'Movies', extensions: ['mkv', 'avi', 'mp4']},
+    {name: 'Custom File Type', extensions: ['as']},
+    {name: 'All Files', extensions: ['*']}
+  ]
+}
+```
 
 The `extensions` array should contain extensions without wildcards or dots (e.g. `'png'` is good but `'.png'` and `'*.png'` are bad). To show all files, use the `'*'` wildcard (no other wildcard is supported).
 

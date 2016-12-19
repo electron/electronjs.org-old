@@ -90,24 +90,28 @@ sort_title: debugging-main-process-vscode
 
 ### 1\. Open an Electron project in VSCode.
 
-    $ git clone git@github.com:electron/electron-quick-start.git
-    $ code electron-quick-start
+```bash
+$ git clone git@github.com:electron/electron-quick-start.git
+$ code electron-quick-start
+```
 
 ### 2\. Add a file `.vscode/launch.json` with the following configuration:
 
+```json
+{
+  "version": "0.2.0",
+  "configurations": [
     {
-      "version": "0.2.0",
-      "configurations": [
-        {
-          "name": "Debug Main Process",
-          "type": "node",
-          "request": "launch",
-          "cwd": "${workspaceRoot}",
-          "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/electron",
-          "program": "${workspaceRoot}/main.js"
-        }
-      ]
+      "name": "Debug Main Process",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceRoot}",
+      "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/electron",
+      "program": "${workspaceRoot}/main.js"
     }
+  ]
+}
+```
 
 **Note:** For Windows, use `"${workspaceRoot}/node_modules/.bin/electron.cmd"` for `runtimeExecutable`.
 

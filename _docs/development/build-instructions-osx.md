@@ -102,24 +102,32 @@ If you are using the Python downloaded by Homebrew, you also need to install the
 
 ## Getting the Code
 
-    $ git clone https://github.com/electron/electron
+```bash
+$ git clone https://github.com/electron/electron
+```
 
 ## Bootstrapping
 
 The bootstrap script will download all necessary build dependencies and create the build project files. Notice that we're using [ninja](https://ninja-build.org/) to build Electron so there is no Xcode project generated.
 
-    $ cd electron
-    $ ./script/bootstrap.py -v
+```bash
+$ cd electron
+$ ./script/bootstrap.py -v
+```
 
 ## Building
 
 Build both `Release` and `Debug` targets:
 
-    $ ./script/build.py
+```bash
+$ ./script/build.py
+```
 
 You can also only build the `Debug` target:
 
-    $ ./script/build.py -c D
+```bash
+$ ./script/build.py -c D
+```
 
 After building is done, you can find `Electron.app` under `out/D`.
 
@@ -131,7 +139,9 @@ Electron can only be built for a 64bit target on macOS and there is no plan to s
 
 To clean the build files:
 
-    $ npm run clean
+```bash
+$ npm run clean
+```
 
 ## Tests
 

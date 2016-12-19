@@ -94,23 +94,25 @@ The DOM's File interface provides abstraction around native files in order to le
 
 Example of getting a real path from a dragged-onto-the-app file:
 
-    <div id="holder">
-      Drag your file here
-    </div>
+```html
+<div id="holder">
+  Drag your file here
+</div>
 
-    <script>
-      const holder = document.getElementById('holder')
-      holder.ondragover = () => {
-        return false;
-      }
-      holder.ondragleave = holder.ondragend = () => {
-        return false;
-      }
-      holder.ondrop = (e) => {
-        e.preventDefault()
-        for (let f of e.dataTransfer.files) {
-          console.log('File(s) you dragged here: ', f.path)
-        }
-        return false;
-      }
-    </script>
+<script>
+  const holder = document.getElementById('holder')
+  holder.ondragover = () => {
+    return false;
+  }
+  holder.ondragleave = holder.ondragend = () => {
+    return false;
+  }
+  holder.ondrop = (e) => {
+    e.preventDefault()
+    for (let f of e.dataTransfer.files) {
+      console.log('File(s) you dragged here: ', f.path)
+    }
+    return false;
+  }
+</script>
+```

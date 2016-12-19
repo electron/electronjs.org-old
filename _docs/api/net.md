@@ -105,22 +105,24 @@ The `net` module API has been specifically designed to mimic, as closely as poss
 
 For instance, the following example quickly shows how the `net` API might be used:
 
-    const {app} = require('electron')
-    app.on('ready', () => {
-      const {net} = require('electron')
-      const request = net.request('https://github.com')
-      request.on('response', (response) => {
-        console.log(`STATUS: ${response.statusCode}`)
-        console.log(`HEADERS: ${JSON.stringify(response.headers)}`)
-        response.on('data', (chunk) => {
-          console.log(`BODY: ${chunk}`)
-        })
-        response.on('end', () => {
-          console.log('No more data in response.')
-        })
-      })
-      request.end()
+```javascript
+const {app} = require('electron')
+app.on('ready', () => {
+  const {net} = require('electron')
+  const request = net.request('https://github.com')
+  request.on('response', (response) => {
+    console.log(`STATUS: ${response.statusCode}`)
+    console.log(`HEADERS: ${JSON.stringify(response.headers)}`)
+    response.on('data', (chunk) => {
+      console.log(`BODY: ${chunk}`)
     })
+    response.on('end', () => {
+      console.log('No more data in response.')
+    })
+  })
+  request.end()
+})
+```
 
 By the way, it is almost identical to how you would normally use the [HTTP](https://nodejs.org/api/http.html)/[HTTPS](https://nodejs.org/api/https.html) modules of Node.js
 

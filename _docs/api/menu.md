@@ -174,191 +174,195 @@ The `Menu` class is only available in the main process, but you can also use it 
 
 An example of creating the application menu in the main process with the simple template API:
 
-    const {app, Menu} = require('electron')
+```javascript
+const {app, Menu} = require('electron')
 
-    const template = [
+const template = [
+  {
+    label: 'Edit',
+    submenu: [
       {
-        label: 'Edit',
-        submenu: [
-          {
-            role: 'undo'
-          },
-          {
-            role: 'redo'
-          },
-          {
-            type: 'separator'
-          },
-          {
-            role: 'cut'
-          },
-          {
-            role: 'copy'
-          },
-          {
-            role: 'paste'
-          },
-          {
-            role: 'pasteandmatchstyle'
-          },
-          {
-            role: 'delete'
-          },
-          {
-            role: 'selectall'
-          }
-        ]
+        role: 'undo'
       },
       {
-        label: 'View',
-        submenu: [
-          {
-            role: 'reload'
-          },
-          {
-            role: 'toggledevtools'
-          },
-          {
-            type: 'separator'
-          },
-          {
-            role: 'resetzoom'
-          },
-          {
-            role: 'zoomin'
-          },
-          {
-            role: 'zoomout'
-          },
-          {
-            type: 'separator'
-          },
-          {
-            role: 'togglefullscreen'
-          }
-        ]
+        role: 'redo'
       },
       {
-        role: 'window',
-        submenu: [
-          {
-            role: 'minimize'
-          },
-          {
-            role: 'close'
-          }
-        ]
+        type: 'separator'
       },
       {
-        role: 'help',
-        submenu: [
-          {
-            label: 'Learn More',
-            click () { require('electron').shell.openExternal('http://electron.atom.io') }
-          }
-        ]
+        role: 'cut'
+      },
+      {
+        role: 'copy'
+      },
+      {
+        role: 'paste'
+      },
+      {
+        role: 'pasteandmatchstyle'
+      },
+      {
+        role: 'delete'
+      },
+      {
+        role: 'selectall'
       }
     ]
+  },
+  {
+    label: 'View',
+    submenu: [
+      {
+        role: 'reload'
+      },
+      {
+        role: 'toggledevtools'
+      },
+      {
+        type: 'separator'
+      },
+      {
+        role: 'resetzoom'
+      },
+      {
+        role: 'zoomin'
+      },
+      {
+        role: 'zoomout'
+      },
+      {
+        type: 'separator'
+      },
+      {
+        role: 'togglefullscreen'
+      }
+    ]
+  },
+  {
+    role: 'window',
+    submenu: [
+      {
+        role: 'minimize'
+      },
+      {
+        role: 'close'
+      }
+    ]
+  },
+  {
+    role: 'help',
+    submenu: [
+      {
+        label: 'Learn More',
+        click () { require('electron').shell.openExternal('http://electron.atom.io') }
+      }
+    ]
+  }
+]
 
-    if (process.platform === 'darwin') {
-      template.unshift({
-        label: app.getName(),
-        submenu: [
-          {
-            role: 'about'
-          },
-          {
-            type: 'separator'
-          },
-          {
-            role: 'services',
-            submenu: []
-          },
-          {
-            type: 'separator'
-          },
-          {
-            role: 'hide'
-          },
-          {
-            role: 'hideothers'
-          },
-          {
-            role: 'unhide'
-          },
-          {
-            type: 'separator'
-          },
-          {
-            role: 'quit'
-          }
-        ]
-      })
-      // Edit menu.
-      template[1].submenu.push(
+if (process.platform === 'darwin') {
+  template.unshift({
+    label: app.getName(),
+    submenu: [
+      {
+        role: 'about'
+      },
+      {
+        type: 'separator'
+      },
+      {
+        role: 'services',
+        submenu: []
+      },
+      {
+        type: 'separator'
+      },
+      {
+        role: 'hide'
+      },
+      {
+        role: 'hideothers'
+      },
+      {
+        role: 'unhide'
+      },
+      {
+        type: 'separator'
+      },
+      {
+        role: 'quit'
+      }
+    ]
+  })
+  // Edit menu.
+  template[1].submenu.push(
+    {
+      type: 'separator'
+    },
+    {
+      label: 'Speech',
+      submenu: [
         {
-          type: 'separator'
+          role: 'startspeaking'
         },
         {
-          label: 'Speech',
-          submenu: [
-            {
-              role: 'startspeaking'
-            },
-            {
-              role: 'stopspeaking'
-            }
-          ]
-        }
-      )
-      // Window menu.
-      template[3].submenu = [
-        {
-          label: 'Close',
-          accelerator: 'CmdOrCtrl+W',
-          role: 'close'
-        },
-        {
-          label: 'Minimize',
-          accelerator: 'CmdOrCtrl+M',
-          role: 'minimize'
-        },
-        {
-          label: 'Zoom',
-          role: 'zoom'
-        },
-        {
-          type: 'separator'
-        },
-        {
-          label: 'Bring All to Front',
-          role: 'front'
+          role: 'stopspeaking'
         }
       ]
     }
+  )
+  // Window menu.
+  template[3].submenu = [
+    {
+      label: 'Close',
+      accelerator: 'CmdOrCtrl+W',
+      role: 'close'
+    },
+    {
+      label: 'Minimize',
+      accelerator: 'CmdOrCtrl+M',
+      role: 'minimize'
+    },
+    {
+      label: 'Zoom',
+      role: 'zoom'
+    },
+    {
+      type: 'separator'
+    },
+    {
+      label: 'Bring All to Front',
+      role: 'front'
+    }
+  ]
+}
 
-    const menu = Menu.buildFromTemplate(template)
-    Menu.setApplicationMenu(menu)
+const menu = Menu.buildFromTemplate(template)
+Menu.setApplicationMenu(menu)
+```
 
 ### Render process
 
 Below is an example of creating a menu dynamically in a web page (render process) by using the [`remote`]({{site.baseurl}}/docs/api/remote) module, and showing it when the user right clicks the page:
 
-    <!-- index.html -->
-    <script>
-    const {remote} = require('electron')
-    const {Menu, MenuItem} = remote
+```html
+<!-- index.html -->
+<script>
+const {remote} = require('electron')
+const {Menu, MenuItem} = remote
 
-    const menu = new Menu()
-    menu.append(new MenuItem({label: 'MenuItem1', click() { console.log('item 1 clicked') }}))
-    menu.append(new MenuItem({type: 'separator'}))
-    menu.append(new MenuItem({label: 'MenuItem2', type: 'checkbox', checked: true}))
+const menu = new Menu()
+menu.append(new MenuItem({label: 'MenuItem1', click() { console.log('item 1 clicked') }}))
+menu.append(new MenuItem({type: 'separator'}))
+menu.append(new MenuItem({label: 'MenuItem2', type: 'checkbox', checked: true}))
 
-    window.addEventListener('contextmenu', (e) => {
-      e.preventDefault()
-      menu.popup(remote.getCurrentWindow())
-    }, false)
-    </script>
+window.addEventListener('contextmenu', (e) => {
+  e.preventDefault()
+  menu.popup(remote.getCurrentWindow())
+}, false)
+</script>
+```
 
 ## Notes on macOS Application Menu
 
@@ -400,40 +404,50 @@ When an item is positioned, all un-positioned items are inserted after it until 
 
 Template:
 
-    [
-      {label: '4', id: '4'},
-      {label: '5', id: '5'},
-      {label: '1', id: '1', position: 'before=4'},
-      {label: '2', id: '2'},
-      {label: '3', id: '3'}
-    ]
+```javascript
+[
+  {label: '4', id: '4'},
+  {label: '5', id: '5'},
+  {label: '1', id: '1', position: 'before=4'},
+  {label: '2', id: '2'},
+  {label: '3', id: '3'}
+]
+```
 
 Menu:
 
-    - 1
-    - 2
-    - 3
-    - 4
-    - 5
+```
+- 1
+- 2
+- 3
+- 4
+- 5
+
+```
 
 Template:
 
-    [
-      {label: 'a', position: 'endof=letters'},
-      {label: '1', position: 'endof=numbers'},
-      {label: 'b', position: 'endof=letters'},
-      {label: '2', position: 'endof=numbers'},
-      {label: 'c', position: 'endof=letters'},
-      {label: '3', position: 'endof=numbers'}
-    ]
+```javascript
+[
+  {label: 'a', position: 'endof=letters'},
+  {label: '1', position: 'endof=numbers'},
+  {label: 'b', position: 'endof=letters'},
+  {label: '2', position: 'endof=numbers'},
+  {label: 'c', position: 'endof=letters'},
+  {label: '3', position: 'endof=numbers'}
+]
+```
 
 Menu:
 
-    - ---
-    - a
-    - b
-    - c
-    - ---
-    - 1
-    - 2
-    - 3
+```
+- ---
+- a
+- b
+- c
+- ---
+- 1
+- 2
+- 3
+
+```

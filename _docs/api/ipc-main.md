@@ -104,26 +104,30 @@ It is also possible to send messages from the main process to the renderer proce
 
 An example of sending and handling messages between the render and main processes:
 
-    // In main process.
-    const {ipcMain} = require('electron')
-    ipcMain.on('asynchronous-message', (event, arg) => {
-      console.log(arg)  // prints "ping"
-      event.sender.send('asynchronous-reply', 'pong')
-    })
+```javascript
+// In main process.
+const {ipcMain} = require('electron')
+ipcMain.on('asynchronous-message', (event, arg) => {
+  console.log(arg)  // prints "ping"
+  event.sender.send('asynchronous-reply', 'pong')
+})
 
-    ipcMain.on('synchronous-message', (event, arg) => {
-      console.log(arg)  // prints "ping"
-      event.returnValue = 'pong'
-    })
+ipcMain.on('synchronous-message', (event, arg) => {
+  console.log(arg)  // prints "ping"
+  event.returnValue = 'pong'
+})
+```
 
-    // In renderer process (web page).
-    const {ipcRenderer} = require('electron')
-    console.log(ipcRenderer.sendSync('synchronous-message', 'ping')) // prints "pong"
+```javascript
+// In renderer process (web page).
+const {ipcRenderer} = require('electron')
+console.log(ipcRenderer.sendSync('synchronous-message', 'ping')) // prints "pong"
 
-    ipcRenderer.on('asynchronous-reply', (event, arg) => {
-      console.log(arg) // prints "pong"
-    })
-    ipcRenderer.send('asynchronous-message', 'ping')
+ipcRenderer.on('asynchronous-reply', (event, arg) => {
+  console.log(arg) // prints "pong"
+})
+ipcRenderer.send('asynchronous-message', 'ping')
+```
 
 ## Methods
 

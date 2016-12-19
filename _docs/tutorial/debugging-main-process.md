@@ -98,7 +98,9 @@ Use one of the following command line switches to enable debugging of the main p
 
 Electron will listen for V8 debugger protocol messages on the specified `port`, an external debugger will need to connect on this port. The default `port` is `5858`.
 
-    electron --debug=5858 your/app
+```shell
+electron --debug=5858 your/app
+```
 
 ### `--debug-brk=[port]`
 

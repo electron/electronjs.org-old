@@ -100,27 +100,31 @@ For security purposes, `webview` can only be used in `BrowserWindow`s that have 
 
 To embed a web page in your app, add the `webview` tag to your app's embedder page (this is the app page that will display the guest content). In its simplest form, the `webview` tag includes the `src` of the web page and css styles that control the appearance of the `webview` container:
 
-    <webview id="foo" src="https://www.github.com/" style="display:inline-flex; width:640px; height:480px"></webview>
+```html
+<webview id="foo" src="https://www.github.com/" style="display:inline-flex; width:640px; height:480px"></webview>
+```
 
 If you want to control the guest content in any way, you can write JavaScript that listens for `webview` events and responds to those events using the `webview` methods. Here's sample code with two event listeners: one that listens for the web page to start loading, the other for the web page to stop loading, and displays a "loading..." message during the load time:
 
-    <script>
-      onload = () => {
-        const webview = document.getElementById('foo')
-        const indicator = document.querySelector('.indicator')
+```html
+<script>
+  onload = () => {
+    const webview = document.getElementById('foo')
+    const indicator = document.querySelector('.indicator')
 
-        const loadstart = () => {
-          indicator.innerText = 'loading...'
-        }
+    const loadstart = () => {
+      indicator.innerText = 'loading...'
+    }
 
-        const loadstop = () => {
-          indicator.innerText = ''
-        }
+    const loadstop = () => {
+      indicator.innerText = ''
+    }
 
-        webview.addEventListener('did-start-loading', loadstart)
-        webview.addEventListener('did-stop-loading', loadstop)
-      }
-    </script>
+    webview.addEventListener('did-start-loading', loadstart)
+    webview.addEventListener('did-stop-loading', loadstop)
+  }
+</script>
+```
 
 ## CSS Styling Notes
 
@@ -128,18 +132,20 @@ Please note that the `webview` tag's style uses `display:flex;` internally to en
 
 `webview` has issues being hidden using the `hidden` attribute or using `display: none;`. It can cause unusual rendering behaviour within its child `browserplugin` object and the web page is reloaded, when the `webview` is un-hidden, as opposed to just becoming visible again. The recommended approach is to hide the `webview` using CSS by zeroing the `width` & `height` and allowing the element to shrink to the 0px dimensions via `flex`.
 
-    <style>
-      webview {
-        display:inline-flex;
-        width:640px;
-        height:480px;
-      }
-      webview.hide {
-        flex: 0 1;
-        width: 0px;
-        height: 0px;
-      }
-    </style>
+```html
+<style>
+  webview {
+    display:inline-flex;
+    width:640px;
+    height:480px;
+  }
+  webview.hide {
+    flex: 0 1;
+    width: 0px;
+    height: 0px;
+  }
+</style>
+```
 
 ## Tag Attributes
 
@@ -147,7 +153,9 @@ The `webview` tag has the following attributes:
 
 ### `src`
 
-    <webview src="https://www.github.com/"></webview>
+```html
+<webview src="https://www.github.com/"></webview>
+```
 
 Returns the visible URL. Writing to this attribute initiates top-level navigation.
 
@@ -157,25 +165,33 @@ The `src` attribute can also accept data URLs, such as `data:text/plain,Hello, w
 
 ### `autosize`
 
-    <webview src="https://www.github.com/" autosize="on" minwidth="576" minheight="432"></webview>
+```html
+<webview src="https://www.github.com/" autosize="on" minwidth="576" minheight="432"></webview>
+```
 
 If "on", the `webview` container will automatically resize within the bounds specified by the attributes `minwidth`, `minheight`, `maxwidth`, and `maxheight`. These constraints do not impact the `webview` unless `autosize` is enabled. When `autosize` is enabled, the `webview` container size cannot be less than the minimum values or greater than the maximum.
 
 ### `nodeintegration`
 
-    <webview src="http://www.google.com/" nodeintegration></webview>
+```html
+<webview src="http://www.google.com/" nodeintegration></webview>
+```
 
 If "on", the guest page in `webview` will have node integration and can use node APIs like `require` and `process` to access low level system resources.
 
 ### `plugins`
 
-    <webview src="https://www.github.com/" plugins></webview>
+```html
+<webview src="https://www.github.com/" plugins></webview>
+```
 
 If "on", the guest page in `webview` will be able to use browser plugins.
 
 ### `preload`
 
-    <webview src="https://www.github.com/" preload="./test.js"></webview>
+```html
+<webview src="https://www.github.com/" preload="./test.js"></webview>
+```
 
 Specifies a script that will be loaded before other scripts run in the guest page. The protocol of script's URL must be either `file:` or `asar:`, because it will be loaded by `require` in guest page under the hood.
 
@@ -183,26 +199,34 @@ When the guest page doesn't have node integration this script will still have ac
 
 ### `httpreferrer`
 
-    <webview src="https://www.github.com/" httpreferrer="http://cheng.guru"></webview>
+```html
+<webview src="https://www.github.com/" httpreferrer="http://cheng.guru"></webview>
+```
 
 Sets the referrer URL for the guest page.
 
 ### `useragent`
 
-    <webview src="https://www.github.com/" useragent="Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; AS; rv:11.0) like Gecko"></webview>
+```html
+<webview src="https://www.github.com/" useragent="Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; AS; rv:11.0) like Gecko"></webview>
+```
 
 Sets the user agent for the guest page before the page is navigated to. Once the page is loaded, use the `setUserAgent` method to change the user agent.
 
 ### `disablewebsecurity`
 
-    <webview src="https://www.github.com/" disablewebsecurity></webview>
+```html
+<webview src="https://www.github.com/" disablewebsecurity></webview>
+```
 
 If "on", the guest page will have web security disabled.
 
 ### `partition`
 
-    <webview src="https://github.com" partition="persist:github"></webview>
-    <webview src="http://electron.atom.io" partition="electron"></webview>
+```html
+<webview src="https://github.com" partition="persist:github"></webview>
+<webview src="http://electron.atom.io" partition="electron"></webview>
+```
 
 Sets the session used by the page. If `partition` starts with `persist:`, the page will use a persistent session available to all pages in the app with the same `partition`. if there is no `persist:` prefix, the page will use an in-memory session. By assigning the same `partition`, multiple pages can share the same session. If the `partition` is unset then default session of the app will be used.
 
@@ -210,13 +234,17 @@ This value can only be modified before the first navigation, since the session o
 
 ### `allowpopups`
 
-    <webview src="https://www.github.com/" allowpopups></webview>
+```html
+<webview src="https://www.github.com/" allowpopups></webview>
+```
 
 If "on", the guest page will be allowed to open new windows.
 
 ### `webpreferences`
 
-    <webview src="https://github.com" webpreferences="allowDisplayingInsecureContent, javascript=no"></webview>
+```html
+<webview src="https://github.com" webpreferences="allowDisplayingInsecureContent, javascript=no"></webview>
+```
 
 A list of strings which specifies the web preferences to be set on the webview, separated by `,`. The full list of supported preference strings can be found in [BrowserWindow]({{site.baseurl}}/docs/api/browser-window#new-browserwindowoptions).
 
@@ -224,19 +252,25 @@ The string follows the same format as the features string in `window.open`. A na
 
 ### `blinkfeatures`
 
-    <webview src="https://www.github.com/" blinkfeatures="PreciseMemoryInfo, CSSVariables"></webview>
+```html
+<webview src="https://www.github.com/" blinkfeatures="PreciseMemoryInfo, CSSVariables"></webview>
+```
 
 A list of strings which specifies the blink features to be enabled separated by `,`. The full list of supported feature strings can be found in the [RuntimeEnabledFeatures.in](https://cs.chromium.org/chromium/src/third_party/WebKit/Source/platform/RuntimeEnabledFeatures.in) file.
 
 ### `disableblinkfeatures`
 
-    <webview src="https://www.github.com/" disableblinkfeatures="PreciseMemoryInfo, CSSVariables"></webview>
+```html
+<webview src="https://www.github.com/" disableblinkfeatures="PreciseMemoryInfo, CSSVariables"></webview>
+```
 
 A list of strings which specifies the blink features to be disabled separated by `,`. The full list of supported feature strings can be found in the [RuntimeEnabledFeatures.in](https://cs.chromium.org/chromium/src/third_party/WebKit/Source/platform/RuntimeEnabledFeatures.in) file.
 
 ### `guestinstance`
 
-    <webview src="https://www.github.com/" guestinstance="3"></webview>
+```html
+<webview src="https://www.github.com/" guestinstance="3"></webview>
+```
 
 A value that links the webview to a specific webContents. When a webview first loads a new webContents is created and this attribute is set to its instance identifier. Setting this attribute on a new or existing webview connects it to the existing webContents that currently renders in a different webview.
 
@@ -244,32 +278,36 @@ The existing webview will see the `destroy` event and will then create a new web
 
 ### `disableguestresize`
 
-    <webview src="https://www.github.com/" disableguestresize></webview>
+```html
+<webview src="https://www.github.com/" disableguestresize></webview>
+```
 
 Prevents the webview contents from resizing when the webview element itself is resized.
 
 This can be used in combination with [`webContents.setSize`]({{site.baseurl}}/docs/api/web-contents#contentssetsizeoptions) to manually resize the webview contents in reaction to a window size change. This can make resizing faster compared to relying on the webview element bounds to automatically resize the contents.
 
-    const {webContents} = require('electron')
+```javascript
+const {webContents} = require('electron')
 
-    // We assume that `win` points to a `BrowserWindow` instance containing a
-    // `<webview>` with `disableguestresize`.
+// We assume that `win` points to a `BrowserWindow` instance containing a
+// `<webview>` with `disableguestresize`.
 
-    win.on('resize', () => {
-      const [width, height] = win.getContentSize()
-      for (let wc of webContents.getAllWebContents()) {
-        // Check if `wc` belongs to a webview in the `win` window.
-        if (wc.hostWebContents &&
-            wc.hostWebContents.id === win.webContents.id) {
-          wc.setSize({
-            normal: {
-              width: width,
-              height: height
-            }
-          })
+win.on('resize', () => {
+  const [width, height] = win.getContentSize()
+  for (let wc of webContents.getAllWebContents()) {
+    // Check if `wc` belongs to a webview in the `win` window.
+    if (wc.hostWebContents &&
+        wc.hostWebContents.id === win.webContents.id) {
+      wc.setSize({
+        normal: {
+          width: width,
+          height: height
         }
-      }
-    })
+      })
+    }
+  }
+})
+```
 
 ## Methods
 
@@ -279,10 +317,12 @@ The `webview` tag has the following methods:
 
 **Example**
 
-    const webview = document.getElementById('foo')
-    webview.addEventListener('dom-ready', () => {
-      webview.openDevTools()
-    })
+```javascript
+const webview = document.getElementById('foo')
+webview.addEventListener('dom-ready', () => {
+  webview.openDevTools()
+})
+```
 
 ### `<webview>.loadURL(url[, options])`
 
@@ -662,10 +702,12 @@ Fired when the guest window logs a console message.
 
 The following example code forwards all log messages to the embedder's console without regard for log level or other properties.
 
-    const webview = document.getElementById('foo')
-    webview.addEventListener('console-message', (e) => {
-      console.log('Guest page logged a message:', e.message)
-    })
+```javascript
+const webview = document.getElementById('foo')
+webview.addEventListener('console-message', (e) => {
+  console.log('Guest page logged a message:', e.message)
+})
+```
 
 ### Event: 'found-in-page'
 
@@ -679,13 +721,15 @@ Returns:
 
 Fired when a result is available for [`webview.findInPage`]({{site.baseurl}}/docs/api/web-view-tag#webviewtagfindinpage) request.
 
-    const webview = document.getElementById('foo')
-    webview.addEventListener('found-in-page', (e) => {
-      webview.stopFindInPage('keepSelection')
-    })
+```javascript
+const webview = document.getElementById('foo')
+webview.addEventListener('found-in-page', (e) => {
+  webview.stopFindInPage('keepSelection')
+})
 
-    const requestId = webview.findInPage('test')
-    console.log(requestId)
+const requestId = webview.findInPage('test')
+console.log(requestId)
+```
 
 ### Event: 'new-window'
 
@@ -700,15 +744,17 @@ Fired when the guest page attempts to open a new browser window.
 
 The following example code opens the new url in system's default browser.
 
-    const {shell} = require('electron')
-    const webview = document.getElementById('foo')
+```javascript
+const {shell} = require('electron')
+const webview = document.getElementById('foo')
 
-    webview.addEventListener('new-window', (e) => {
-      const protocol = require('url').parse(e.url).protocol
-      if (protocol === 'http:' || protocol === 'https:') {
-        shell.openExternal(e.url)
-      }
-    })
+webview.addEventListener('new-window', (e) => {
+  const protocol = require('url').parse(e.url).protocol
+  if (protocol === 'http:' || protocol === 'https:') {
+    shell.openExternal(e.url)
+  }
+})
+```
 
 ### Event: 'will-navigate'
 
@@ -751,10 +797,12 @@ Fired when the guest page attempts to close itself.
 
 The following example code navigates the `webview` to `about:blank` when the guest attempts to close itself.
 
-    const webview = document.getElementById('foo')
-    webview.addEventListener('close', () => {
-      webview.src = 'about:blank'
-    })
+```javascript
+const webview = document.getElementById('foo')
+webview.addEventListener('close', () => {
+  webview.src = 'about:blank'
+})
+```
 
 ### Event: 'ipc-message'
 
@@ -767,19 +815,23 @@ Fired when the guest page has sent an asynchronous message to embedder page.
 
 With `sendToHost` method and `ipc-message` event you can easily communicate between guest page and embedder page:
 
-    // In embedder page.
-    const webview = document.getElementById('foo')
-    webview.addEventListener('ipc-message', (event) => {
-      console.log(event.channel)
-      // Prints "pong"
-    })
-    webview.send('ping')
+```javascript
+// In embedder page.
+const webview = document.getElementById('foo')
+webview.addEventListener('ipc-message', (event) => {
+  console.log(event.channel)
+  // Prints "pong"
+})
+webview.send('ping')
+```
 
-    // In guest page.
-    const {ipcRenderer} = require('electron')
-    ipcRenderer.on('ping', () => {
-      ipcRenderer.sendToHost('pong')
-    })
+```javascript
+// In guest page.
+const {ipcRenderer} = require('electron')
+ipcRenderer.on('ping', () => {
+  ipcRenderer.sendToHost('pong')
+})
+```
 
 ### Event: 'crashed'
 
@@ -818,7 +870,9 @@ Returns:
 
 Emitted when a page's theme color changes. This is usually due to encountering a meta tag:
 
-    <meta name='theme-color' content='#ff0000'>
+```html
+<meta name='theme-color' content='#ff0000'>
+```
 
 ### Event: 'update-target-url'
 

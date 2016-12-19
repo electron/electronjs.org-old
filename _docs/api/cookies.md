@@ -96,24 +96,26 @@ Instances of the `Cookies` class are accessed by using `cookies` property of a `
 
 For example:
 
-    const {session} = require('electron')
+```javascript
+const {session} = require('electron')
 
-    // Query all cookies.
-    session.defaultSession.cookies.get({}, (error, cookies) => {
-      console.log(error, cookies)
-    })
+// Query all cookies.
+session.defaultSession.cookies.get({}, (error, cookies) => {
+  console.log(error, cookies)
+})
 
-    // Query all cookies associated with a specific url.
-    session.defaultSession.cookies.get({url: 'http://www.github.com'}, (error, cookies) => {
-      console.log(error, cookies)
-    })
+// Query all cookies associated with a specific url.
+session.defaultSession.cookies.get({url: 'http://www.github.com'}, (error, cookies) => {
+  console.log(error, cookies)
+})
 
-    // Set a cookie with the given cookie data;
-    // may overwrite equivalent cookies if they exist.
-    const cookie = {url: 'http://www.github.com', name: 'dummy_name', value: 'dummy'}
-    session.defaultSession.cookies.set(cookie, (error) => {
-      if (error) console.error(error)
-    })
+// Set a cookie with the given cookie data;
+// may overwrite equivalent cookies if they exist.
+const cookie = {url: 'http://www.github.com', name: 'dummy_name', value: 'dummy'}
+session.defaultSession.cookies.set(cookie, (error) => {
+  if (error) console.error(error)
+})
+```
 
 ### Instance Events
 

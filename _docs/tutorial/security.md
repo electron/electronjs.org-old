@@ -139,10 +139,14 @@ Again, this list merely minimizes the risk, it does not remove it. If your goal 
 
 Node's [Buffer](https://nodejs.org/api/buffer.html) class is currently available as a global even when the `nodeintegration` attribute is not added. You can delete this in your app by doing the following in your `preload` script:
 
-    delete global.Buffer
+```js
+delete global.Buffer
+```
 
 Deleting it may break Node modules used in your preload script and app since many libraries expect it to be a global instead of requiring it directly via:
 
-    const {Buffer} = require('buffer')
+```js
+const {Buffer} = require('buffer')
+```
 
 The `Buffer` global may be removed in future major versions of Electron.

@@ -92,17 +92,21 @@ To distribute your app with Electron, you need to download Electron's [prebuilt 
 
 On macOS:
 
-    electron/Electron.app/Contents/Resources/app/
-    ├── package.json
-    ├── main.js
-    └── index.html
+```text
+electron/Electron.app/Contents/Resources/app/
+├── package.json
+├── main.js
+└── index.html
+```
 
 On Windows and Linux:
 
-    electron/resources/app
-    ├── package.json
-    ├── main.js
-    └── index.html
+```text
+electron/resources/app
+├── package.json
+├── main.js
+└── index.html
+```
 
 Then execute `Electron.app` (or `electron` on Linux, `electron.exe` on Windows), and Electron will start as your app. The `electron` directory will then be your distribution to deliver to final users.
 
@@ -114,13 +118,17 @@ To use an `asar` archive to replace the `app` folder, you need to rename the arc
 
 On macOS:
 
-    electron/Electron.app/Contents/Resources/
-    └── app.asar
+```text
+electron/Electron.app/Contents/Resources/
+└── app.asar
+```
 
 On Windows and Linux:
 
-    electron/resources/
-    └── app.asar
+```text
+electron/resources/
+└── app.asar
+```
 
 More details can be found in [Application packaging]({{site.baseurl}}/docs/tutorial/application-packaging).
 
@@ -143,23 +151,26 @@ You can also rename the helper app to avoid showing `Electron Helper` in the Act
 
 The structure of a renamed app would be like:
 
-    MyApp.app/Contents
-    ├── Info.plist
-    ├── MacOS/
-    │   └── MyApp
-    └── Frameworks/
-        ├── MyApp Helper EH.app
-        |   ├── Info.plist
-        |   └── MacOS/
-        |       └── MyApp Helper EH
-        ├── MyApp Helper NP.app
-        |   ├── Info.plist
-        |   └── MacOS/
-        |       └── MyApp Helper NP
-        └── MyApp Helper.app
-            ├── Info.plist
-            └── MacOS/
-                └── MyApp Helper
+```
+MyApp.app/Contents
+├── Info.plist
+├── MacOS/
+│   └── MyApp
+└── Frameworks/
+    ├── MyApp Helper EH.app
+    |   ├── Info.plist
+    |   └── MacOS/
+    |       └── MyApp Helper EH
+    ├── MyApp Helper NP.app
+    |   ├── Info.plist
+    |   └── MacOS/
+    |       └── MyApp Helper NP
+    └── MyApp Helper.app
+        ├── Info.plist
+        └── MacOS/
+            └── MyApp Helper
+
+```
 
 ### Linux
 
@@ -194,9 +205,12 @@ You need to fork Electron when you have custom C++ code that you have patched di
 
 2.  Create a new S3 bucket and create the following empty directory structure:
 
-    - atom-shell/
-      - symbols/
-      - dist/
+```
+- atom-shell/
+  - symbols/
+  - dist/
+
+```
 
 1.  Set the following Environment Variables:
 

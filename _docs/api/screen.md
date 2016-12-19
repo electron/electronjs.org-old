@@ -100,38 +100,42 @@ You cannot require or use this module until the `ready` event of the `app` modul
 
 An example of creating a window that fills the whole screen:
 
-    const electron = require('electron')
-    const {app, BrowserWindow} = electron
+```javascript
+const electron = require('electron')
+const {app, BrowserWindow} = electron
 
-    let win
+let win
 
-    app.on('ready', () => {
-      const {width, height} = electron.screen.getPrimaryDisplay().workAreaSize
-      win = new BrowserWindow({width, height})
-      win.loadURL('https://github.com')
-    })
+app.on('ready', () => {
+  const {width, height} = electron.screen.getPrimaryDisplay().workAreaSize
+  win = new BrowserWindow({width, height})
+  win.loadURL('https://github.com')
+})
+```
 
 Another example of creating a window in the external display:
 
-    const electron = require('electron')
-    const {app, BrowserWindow} = require('electron')
+```javascript
+const electron = require('electron')
+const {app, BrowserWindow} = require('electron')
 
-    let win
+let win
 
-    app.on('ready', () => {
-      let displays = electron.screen.getAllDisplays()
-      let externalDisplay = displays.find((display) => {
-        return display.bounds.x !== 0 || display.bounds.y !== 0
-      })
+app.on('ready', () => {
+  let displays = electron.screen.getAllDisplays()
+  let externalDisplay = displays.find((display) => {
+    return display.bounds.x !== 0 || display.bounds.y !== 0
+  })
 
-      if (externalDisplay) {
-        win = new BrowserWindow({
-          x: externalDisplay.bounds.x + 50,
-          y: externalDisplay.bounds.y + 50
-        })
-        win.loadURL('https://github.com')
-      }
+  if (externalDisplay) {
+    win = new BrowserWindow({
+      x: externalDisplay.bounds.x + 50,
+      y: externalDisplay.bounds.y + 50
     })
+    win.loadURL('https://github.com')
+  }
+})
+```
 
 ## Events
 
