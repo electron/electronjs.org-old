@@ -55,13 +55,13 @@ h2 {
   margin-top: 0;
 }
 
-// bolder and more top margin
+// add top margin
 // to make it easier to see headers within a long wall of text
 .strong-headers {
-  h1 {                      font-weight: 500; -webkit-font-smoothing: initial; }
-  h2 { margin-top: 2em;     font-weight: 500; -webkit-font-smoothing: initial; border-bottom: $border; }
-  h3 { margin-top: 1.75em;  font-weight: 500; -webkit-font-smoothing: initial; }
-  h4 { margin-top: 1.5em;   font-weight: 500; }
+  h1 {                      font-weight: 300; -webkit-font-smoothing: initial; }
+  h2 { margin-top: 2em;     font-weight: 300; -webkit-font-smoothing: initial; border-bottom: $border; }
+  h3 { margin-top: 1.75em;  font-weight: 300; -webkit-font-smoothing: initial; }
+  h4 { margin-top: 1.5em;   font-weight: 300; }
   h5 { margin-top: 1.25em;  }
   h6 { margin-top: 1.125em; }
 
