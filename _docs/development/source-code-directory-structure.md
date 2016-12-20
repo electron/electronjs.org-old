@@ -2,51 +2,96 @@
 version: v1.4.12
 category: Development
 redirect_from:
-    - /docs/v0.24.0/development/source-code-directory-structure/
-    - /docs/v0.25.0/development/source-code-directory-structure/
-    - /docs/v0.26.0/development/source-code-directory-structure/
-    - /docs/v0.27.0/development/source-code-directory-structure/
-    - /docs/v0.28.0/development/source-code-directory-structure/
-    - /docs/v0.29.0/development/source-code-directory-structure/
-    - /docs/v0.30.0/development/source-code-directory-structure/
-    - /docs/v0.31.0/development/source-code-directory-structure/
-    - /docs/v0.32.0/development/source-code-directory-structure/
-    - /docs/v0.33.0/development/source-code-directory-structure/
-    - /docs/v0.34.0/development/source-code-directory-structure/
-    - /docs/v0.35.0/development/source-code-directory-structure/
-    - /docs/v0.36.0/development/source-code-directory-structure/
-    - /docs/v0.36.3/development/source-code-directory-structure/
-    - /docs/v0.36.4/development/source-code-directory-structure/
-    - /docs/v0.36.5/development/source-code-directory-structure/
-    - /docs/v0.36.6/development/source-code-directory-structure/
-    - /docs/v0.36.7/development/source-code-directory-structure/
-    - /docs/v0.36.8/development/source-code-directory-structure/
-    - /docs/v0.36.9/development/source-code-directory-structure/
-    - /docs/v0.36.10/development/source-code-directory-structure/
-    - /docs/v0.36.11/development/source-code-directory-structure/
-    - /docs/v0.37.0/development/source-code-directory-structure/
-    - /docs/v0.37.1/development/source-code-directory-structure/
-    - /docs/v0.37.2/development/source-code-directory-structure/
-    - /docs/v0.37.3/development/source-code-directory-structure/
-    - /docs/v0.37.4/development/source-code-directory-structure/
-    - /docs/v0.37.5/development/source-code-directory-structure/
-    - /docs/v0.37.6/development/source-code-directory-structure/
-    - /docs/v0.37.7/development/source-code-directory-structure/
-    - /docs/v0.37.8/development/source-code-directory-structure/
-    - /docs/latest/development/source-code-directory-structure/
-source_url: 'https://github.com/electron/electron/blob/master/docs/development/source-code-directory-structure.md'
-title: "Source Code Directory Structure"
-sort_title: "source code directory structure"
+  - /docs/v0.37.8/development/source-code-directory-structure
+  - /docs/v0.37.7/development/source-code-directory-structure
+  - /docs/v0.37.6/development/source-code-directory-structure
+  - /docs/v0.37.5/development/source-code-directory-structure
+  - /docs/v0.37.4/development/source-code-directory-structure
+  - /docs/v0.37.3/development/source-code-directory-structure
+  - /docs/v0.36.12/development/source-code-directory-structure
+  - /docs/v0.37.1/development/source-code-directory-structure
+  - /docs/v0.37.0/development/source-code-directory-structure
+  - /docs/v0.36.11/development/source-code-directory-structure
+  - /docs/v0.36.10/development/source-code-directory-structure
+  - /docs/v0.36.9/development/source-code-directory-structure
+  - /docs/v0.36.8/development/source-code-directory-structure
+  - /docs/v0.36.7/development/source-code-directory-structure
+  - /docs/v0.36.6/development/source-code-directory-structure
+  - /docs/v0.36.5/development/source-code-directory-structure
+  - /docs/v0.36.4/development/source-code-directory-structure
+  - /docs/v0.36.3/development/source-code-directory-structure
+  - /docs/v0.35.5/development/source-code-directory-structure
+  - /docs/v0.36.2/development/source-code-directory-structure
+  - /docs/v0.36.0/development/source-code-directory-structure
+  - /docs/v0.35.4/development/source-code-directory-structure
+  - /docs/v0.35.3/development/source-code-directory-structure
+  - /docs/v0.35.2/development/source-code-directory-structure
+  - /docs/v0.34.4/development/source-code-directory-structure
+  - /docs/v0.35.1/development/source-code-directory-structure
+  - /docs/v0.34.3/development/source-code-directory-structure
+  - /docs/v0.34.2/development/source-code-directory-structure
+  - /docs/v0.34.1/development/source-code-directory-structure
+  - /docs/v0.34.0/development/source-code-directory-structure
+  - /docs/v0.33.9/development/source-code-directory-structure
+  - /docs/v0.33.8/development/source-code-directory-structure
+  - /docs/v0.33.7/development/source-code-directory-structure
+  - /docs/v0.33.6/development/source-code-directory-structure
+  - /docs/v0.33.4/development/source-code-directory-structure
+  - /docs/v0.33.3/development/source-code-directory-structure
+  - /docs/v0.33.2/development/source-code-directory-structure
+  - /docs/v0.33.1/development/source-code-directory-structure
+  - /docs/v0.33.0/development/source-code-directory-structure
+  - /docs/v0.32.3/development/source-code-directory-structure
+  - /docs/v0.32.2/development/source-code-directory-structure
+  - /docs/v0.31.2/development/source-code-directory-structure
+  - /docs/v0.31.0/development/source-code-directory-structure
+  - /docs/v0.30.4/development/source-code-directory-structure
+  - /docs/v0.29.2/development/source-code-directory-structure
+  - /docs/v0.29.1/development/source-code-directory-structure
+  - /docs/v0.28.3/development/source-code-directory-structure
+  - /docs/v0.28.2/development/source-code-directory-structure
+  - /docs/v0.28.1/development/source-code-directory-structure
+  - /docs/v0.28.0/development/source-code-directory-structure
+  - /docs/v0.27.3/development/source-code-directory-structure
+  - /docs/v0.27.2/development/source-code-directory-structure
+  - /docs/v0.27.1/development/source-code-directory-structure
+  - /docs/v0.27.0/development/source-code-directory-structure
+  - /docs/v0.26.1/development/source-code-directory-structure
+  - /docs/v0.26.0/development/source-code-directory-structure
+  - /docs/v0.25.3/development/source-code-directory-structure
+  - /docs/v0.25.2/development/source-code-directory-structure
+  - /docs/v0.25.1/development/source-code-directory-structure
+  - /docs/v0.25.0/development/source-code-directory-structure
+  - /docs/v0.24.0/development/source-code-directory-structure
+  - /docs/v0.23.0/development/source-code-directory-structure
+  - /docs/v0.22.3/development/source-code-directory-structure
+  - /docs/v0.22.2/development/source-code-directory-structure
+  - /docs/v0.22.1/development/source-code-directory-structure
+  - /docs/v0.21.3/development/source-code-directory-structure
+  - /docs/v0.21.2/development/source-code-directory-structure
+  - /docs/v0.21.1/development/source-code-directory-structure
+  - /docs/v0.21.0/development/source-code-directory-structure
+  - /docs/v0.20.8/development/source-code-directory-structure
+  - /docs/v0.20.7/development/source-code-directory-structure
+  - /docs/v0.20.6/development/source-code-directory-structure
+  - /docs/v0.20.5/development/source-code-directory-structure
+  - /docs/v0.20.4/development/source-code-directory-structure
+  - /docs/v0.20.3/development/source-code-directory-structure
+  - /docs/v0.20.2/development/source-code-directory-structure
+  - /docs/v0.20.1/development/source-code-directory-structure
+  - /docs/v0.20.0/development/source-code-directory-structure
+  - /docs/vlatest/development/source-code-directory-structure
+source_url: >-
+  https://github.com/electron/electron/blob/master/docs/development/source-code-directory-structure.md
+title: Source Code Directory Structure
+excerpt: ''
+sort_title: source-code-directory-structure
 ---
-
 # Source Code Directory Structure
 
-The source code of Electron is separated into a few parts, mostly
-following Chromium on the separation conventions.
+The source code of Electron is separated into a few parts, mostly following Chromium on the separation conventions.
 
-You may need to become familiar with [Chromium's multi-process
-architecture](http://dev.chromium.org/developers/design-documents/multi-process-architecture)
-to understand the source code better.
+You may need to become familiar with [Chromium's multi-process architecture](http://dev.chromium.org/developers/design-documents/multi-process-architecture) to understand the source code better.
 
 ## Structure of Source Code
 
@@ -86,29 +131,22 @@ Electron
 ├── electron.gyp - Building rules of Electron.
 └── common.gypi - Compiler specific settings and building rules for other
     components like `node` and `breakpad`.
+
 ```
 
 ## Structure of Other Directories
 
-* **script** - Scripts used for development purpose like building, packaging,
-  testing, etc.
-* **tools** - Helper scripts used by gyp files, unlike `script`, scripts put
-  here should never be invoked by users directly.
-* **vendor** - Source code of third party dependencies, we didn't use
-  `third_party` as name because it would confuse it with the same directory in
-  Chromium's source code tree.
-* **node_modules** - Third party node modules used for building.
-* **out** - Temporary output directory of `ninja`.
-* **dist** - Temporary directory created by `script/create-dist.py` script
-  when creating a distribution.
-* **external_binaries** - Downloaded binaries of third-party frameworks which
-  do not support building with `gyp`.
+*   **script** - Scripts used for development purpose like building, packaging, testing, etc.
+*   **tools** - Helper scripts used by gyp files, unlike `script`, scripts put here should never be invoked by users directly.
+*   **vendor** - Source code of third party dependencies, we didn't use `third_party` as name because it would confuse it with the same directory in Chromium's source code tree.
+*   **node_modules** - Third party node modules used for building.
+*   **out** - Temporary output directory of `ninja`.
+*   **dist** - Temporary directory created by `script/create-dist.py` script when creating a distribution.
+*   **external_binaries** - Downloaded binaries of third-party frameworks which do not support building with `gyp`.
 
 ## Keeping Git Submodules Up to Date
 
-The Electron repository has a few vendored dependencies, found in the
-[/vendor][vendor] directory. Occasionally you might see a message like this
-when running `git status`:
+The Electron repository has a few vendored dependencies, found in the [/vendor](https://github.com/electron/electron/tree/master/vendor) directory. Occasionally you might see a message like this when running `git status`:
 
 ```sh
 $ git status
@@ -123,12 +161,10 @@ To update these vendored dependencies, run the following command:
 git submodule update --init --recursive
 ```
 
-If you find yourself running this command often, you can create an alias for it
-in your `~/.gitconfig` file:
+If you find yourself running this command often, you can create an alias for it in your `~/.gitconfig` file:
 
 ```
 [alias]
 	su = submodule update --init --recursive
-```
 
-[vendor]: https://github.com/electron/electron/tree/master/vendor
+```

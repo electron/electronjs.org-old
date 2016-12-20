@@ -1,0 +1,4 @@
+#!/bin/sh
+
+cp node_modules/electron-apps/index.json _data/apps.json
+cp node_modules/electron-apps/apps/**/*.png images/apps

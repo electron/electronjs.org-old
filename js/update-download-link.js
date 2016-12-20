@@ -1,3 +1,5 @@
+/* globals uaParserJs */
+
 var updateDownloadLink = function () {
   var platform = uaParserJs().os.name
   var releaseServer = 'https://electron-api-demos.githubapp.com/updates/'

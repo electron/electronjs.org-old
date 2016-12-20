@@ -5,7 +5,7 @@ The [website](http://electron.atom.io) for [Electron](https://github.com/electro
 - **[Add a project to electron.atom.io/apps](CONTRIBUTING.md#adding-an-app-or-project-to-the-site)**
 - **[Add a meetup to electron.atom.io/community](CONTRIBUTING.md#adding-a-meetup-to-the-site)**
 
-### Build
+### Running the site
 
 This is a [Jekyll](https://jekyllrb.com) site hosted on [GitHub Pages](https://pages.github.com). To build a Jekyll site you'll need a few things on your system so double check the [Jekyll requirements](https://jekyllrb.com/docs/installation/#requirements).
 
@@ -18,68 +18,36 @@ npm run bootstrap
 npm start
 ```
 
-### CLI for Docs, Releases & Version Information
+### Updating Docs, Apps, Releases, Userland, etc
 
-This site contains the latest version of Electron docs, recent release change logs and the current versions of Node.js, Chromium and V8 that are used in Electron.
+This site contains data gathered from various sources, and there's a build script for each:
 
-Each of these are updated here when a new Electron is released. They're done so with the command line interface detailed below.
+- `npm run build-releases` fetches release data from the GitHub API
+- `npm run build-versions` fetches other release data from S3
+- `npm run build-docs` fetches docs for the highest release version number, fixes their links, and adds YML frontmatter for Jekyll to use.
+- `npm run build-awesome` copies [awesome-electron](https://github.com/sindresorhus/awesome-electron/blob/npm-module/contributing.md#building-and-publishing-the-npm-package) data into the `_data` directory
+- `npm run build-userland` copies [electron-userland-reports](https://github.com/electron/electron-userland-reports) data into the `_data` directory
+- `npm run build-apps` copies [electron-apps](https://github.com/electron/electron-apps) data into the `_data` directory
 
- You'll need [Node.js](https://www.nodejs.org) installed on your system in order to use the CLI. Then you can install the dependencies:
+To run all of the build scripts serially:
 
-```bash
-$ cd electron.atom.io
-$ npm install
+```sh
+npm run build
+npm test
 ```
 
-#### Documentation
+To verify all the links in the site:
 
-Versions of Electron documentation are fetched from the `electron/electron` repository's `docs` directory. The site contains the latest version of docs and links to older versions of the docs in the repository.
-
-To fetch documentation for a specific version:
-
-```bash
-$ script/docs <version> [options]
-# Example:
-$ script/docs v0.26.0 --latest
-```
-Options:
-
-`--latest` Set this version as the latest version of Electron in `_config.yml` and replace the existing documentation.
-
-#### Release Notes
-
-The most recent release notes from the `electron/electron` repository are made available on the site and can be updated by running:
-
-```bash
-$ script/releases
+```sh
+cd electron.atom.io
+npm start
 ```
 
-#### Updating Node.js, Chromium and V8 Versions in use in Electron
+Wait for the app to start, then in another shell:
 
-To update the `_config.yml` in this site with the versions of Node.js, Chromium and V8 that the latest release of Electron is using run:
-
-```bash
-$ script/versions
-```
-
-#### Update all the Things at Once
-
-The scripts above do each task separately but to run all the things at once:
-
-```bash
-$ npm run latest -- <version>
-# Example:
-$ npm run latest -- v0.36.0
-```
-
-_Note_ This assumes version is the latest and sets it as such by default.
-
-**Testing**
-
-To test the documentation script:
-
-```bash
-$ npm test
+```sh
+cd electron.atom.io
+npm run link-checker
 ```
 
 ### Contributing

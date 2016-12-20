@@ -520,23 +520,5 @@
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v1.2.5",
     "body": "Changelog:\r\n\r\n* `accelerator` and `label` are now optional when `role` is specified for `MenuItem`. [#6190](https://github.com/electron/electron/pull/6190)\r\n* Add `event` parameter for `click` handler of `MenuItem`. [#6170](https://github.com/electron/electron/pull/6170)\r\n* Add `session.setUserAgent(userAgent[, acceptLanguages])` API. [#6172](https://github.com/electron/electron/pull/6172)\r\n* Add `win.setContentProtection(enable)` API. [#6175](https://github.com/electron/electron/pull/6175)\r\n* Fix members of `protocol` module not being set. [#6195](https://github.com/electron/electron/pull/6195)\r\n\r\n__macOS__\r\n\r\n* Update Squirrel.Mac to 0.2.1. [#6183](https://github.com/electron/electron/pull/6183)\r\n* Fix crash when using frameless window on OS X 10.9. [#6197](https://github.com/electron/electron/pull/6197)\r\n* Fix `maximize` event being emitted before window is maximized. [#6171](https://github.com/electron/electron/pull/6171)\r\n\r\n__Linux__\r\n\r\n* Fix crash on startup. [electron/brightray#229](https://github.com/electron/brightray/pull/229)\r\n",
     "version": "1.2.5"
-  },
-  {
-    "url": "https://api.github.com/repos/electron/electron/releases/3494891",
-    "assets_url": "https://api.github.com/repos/electron/electron/releases/3494891/assets",
-    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/3494891/assets{?name,label}",
-    "html_url": "https://github.com/electron/electron/releases/tag/v1.2.4",
-    "id": 3494891,
-    "tag_name": "v1.2.4",
-    "target_commitish": "master",
-    "name": "electron v1.2.4",
-    "draft": false,
-    "prerelease": false,
-    "created_at": "2016-06-22T01:26:54Z",
-    "published_at": "2016-06-22T04:21:29Z",
-    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v1.2.4",
-    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v1.2.4",
-    "body": "Changelog:\r\n\r\n* Update to Chrome 51.0.2704.103. [#6134](https://github.com/electron/electron/pull/6134)\r\n* Add support for child windows. [#6140](https://github.com/electron/electron/pull/6140)\r\n* Add `tray.getBounds()` API. [#6159](https://github.com/electron/electron/pull/6159)\r\n* Add `quit`, `togglefullscreen` roles to `MenuItem`. [#6154](https://github.com/electron/electron/pull/6154) [#6166](https://github.com/electron/electron/pull/6166)\r\n* Fix members of `protocol` module not being set. [#6095](https://github.com/electron/electron/pull/6095)\r\n* Fix devtools extensions not showing up on first load. [#6115](https://github.com/electron/electron/pull/6095)\r\n* Fix output in renderer process not being redirected to the main process. [#6130](https://github.com/electron/electron/pull/6130)\r\n* Fix `<webview>` tag having wrong size when `transform` style is applied. [#6128](https://github.com/electron/electron/pull/6128)\r\n* Fix crash when releasing contexts in renderer process. [#6144](https://github.com/electron/electron/pull/6144)\r\n* Fix rejection of remote `Promise` being treated as unhandled rejection in the main process. [#6151](https://github.com/electron/electron/pull/6151)\r\n* Fix color of menu bar not being updated when system theme changes. [#6161](https://github.com/electron/electron/pull/6161)\r\n* Fix wrong `role` when `menu.insert(item)` is used. [#6169](https://github.com/electron/electron/pull/6169)\r\n\r\n__macOS__\r\n\r\n* Add `systemPreferences.subscribeLocalNotification(event, callback)` and\r\n`systemPreferences.unsubscribeLocalNotification(id)` APIs. [#6150](https://github.com/electron/electron/pull/6150)\r\n* Fix frameless window not showing in `Window` menu. [#6089](https://github.com/electron/electron/pull/6089), [#6097](https://github.com/electron/electron/pull/6097)\r\n* Fix crash when calling `win.setProgressBar` after `app.dock.setIcon`. [#6091](https://github.com/electron/electron/pull/6091)\r\n* Fix context menu always choosing first item by default. [#6110](https://github.com/electron/electron/pull/6110)\r\n* Fix `Delete` not working as accelerator. [#6168](https://github.com/electron/electron/pull/6168)\r\n\r\n__Linux__\r\n\r\n* Fix app indicators using random IDs. [#6145](https://github.com/electron/electron/pull/6145)\r\n* Fix message boxes and file dialogs not being modal. [#6160](https://github.com/electron/electron/pull/6160)\r\n\r\n__Windows__\r\n\r\n* Fix bounds of `Tray` not respecting scale factor.",
-    "version": "1.2.4"
   }
 ]

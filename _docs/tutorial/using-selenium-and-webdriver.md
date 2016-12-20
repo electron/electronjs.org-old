@@ -2,63 +2,105 @@
 version: v1.4.12
 category: Tutorial
 redirect_from:
-    - /docs/v0.24.0/tutorial/using-selenium-and-webdriver/
-    - /docs/v0.25.0/tutorial/using-selenium-and-webdriver/
-    - /docs/v0.26.0/tutorial/using-selenium-and-webdriver/
-    - /docs/v0.27.0/tutorial/using-selenium-and-webdriver/
-    - /docs/v0.28.0/tutorial/using-selenium-and-webdriver/
-    - /docs/v0.29.0/tutorial/using-selenium-and-webdriver/
-    - /docs/v0.30.0/tutorial/using-selenium-and-webdriver/
-    - /docs/v0.31.0/tutorial/using-selenium-and-webdriver/
-    - /docs/v0.32.0/tutorial/using-selenium-and-webdriver/
-    - /docs/v0.33.0/tutorial/using-selenium-and-webdriver/
-    - /docs/v0.34.0/tutorial/using-selenium-and-webdriver/
-    - /docs/v0.35.0/tutorial/using-selenium-and-webdriver/
-    - /docs/v0.36.0/tutorial/using-selenium-and-webdriver/
-    - /docs/v0.36.3/tutorial/using-selenium-and-webdriver/
-    - /docs/v0.36.4/tutorial/using-selenium-and-webdriver/
-    - /docs/v0.36.5/tutorial/using-selenium-and-webdriver/
-    - /docs/v0.36.6/tutorial/using-selenium-and-webdriver/
-    - /docs/v0.36.7/tutorial/using-selenium-and-webdriver/
-    - /docs/v0.36.8/tutorial/using-selenium-and-webdriver/
-    - /docs/v0.36.9/tutorial/using-selenium-and-webdriver/
-    - /docs/v0.36.10/tutorial/using-selenium-and-webdriver/
-    - /docs/v0.36.11/tutorial/using-selenium-and-webdriver/
-    - /docs/v0.37.0/tutorial/using-selenium-and-webdriver/
-    - /docs/v0.37.1/tutorial/using-selenium-and-webdriver/
-    - /docs/v0.37.2/tutorial/using-selenium-and-webdriver/
-    - /docs/v0.37.3/tutorial/using-selenium-and-webdriver/
-    - /docs/v0.37.4/tutorial/using-selenium-and-webdriver/
-    - /docs/v0.37.5/tutorial/using-selenium-and-webdriver/
-    - /docs/v0.37.6/tutorial/using-selenium-and-webdriver/
-    - /docs/v0.37.7/tutorial/using-selenium-and-webdriver/
-    - /docs/v0.37.8/tutorial/using-selenium-and-webdriver/
-    - /docs/latest/tutorial/using-selenium-and-webdriver/
-source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/using-selenium-and-webdriver.md'
-excerpt: "WebDriver is an open source tool for automated testing of web apps across many
-    browsers. It provides capabilities for navigating to web pages, user input,
-    JavaScript execution, and more. ChromeDriver is a standalone server which
-    implements WebDriver&apos;s wire protocol for Chromium. It is being developed by
-    members of the Chromium and WebDriver teams."
-title: "Using Selenium and WebDriver"
-sort_title: "using selenium and webdriver"
+  - /docs/v0.37.8/tutorial/using-selenium-and-webdriver
+  - /docs/v0.37.7/tutorial/using-selenium-and-webdriver
+  - /docs/v0.37.6/tutorial/using-selenium-and-webdriver
+  - /docs/v0.37.5/tutorial/using-selenium-and-webdriver
+  - /docs/v0.37.4/tutorial/using-selenium-and-webdriver
+  - /docs/v0.37.3/tutorial/using-selenium-and-webdriver
+  - /docs/v0.36.12/tutorial/using-selenium-and-webdriver
+  - /docs/v0.37.1/tutorial/using-selenium-and-webdriver
+  - /docs/v0.37.0/tutorial/using-selenium-and-webdriver
+  - /docs/v0.36.11/tutorial/using-selenium-and-webdriver
+  - /docs/v0.36.10/tutorial/using-selenium-and-webdriver
+  - /docs/v0.36.9/tutorial/using-selenium-and-webdriver
+  - /docs/v0.36.8/tutorial/using-selenium-and-webdriver
+  - /docs/v0.36.7/tutorial/using-selenium-and-webdriver
+  - /docs/v0.36.6/tutorial/using-selenium-and-webdriver
+  - /docs/v0.36.5/tutorial/using-selenium-and-webdriver
+  - /docs/v0.36.4/tutorial/using-selenium-and-webdriver
+  - /docs/v0.36.3/tutorial/using-selenium-and-webdriver
+  - /docs/v0.35.5/tutorial/using-selenium-and-webdriver
+  - /docs/v0.36.2/tutorial/using-selenium-and-webdriver
+  - /docs/v0.36.0/tutorial/using-selenium-and-webdriver
+  - /docs/v0.35.4/tutorial/using-selenium-and-webdriver
+  - /docs/v0.35.3/tutorial/using-selenium-and-webdriver
+  - /docs/v0.35.2/tutorial/using-selenium-and-webdriver
+  - /docs/v0.34.4/tutorial/using-selenium-and-webdriver
+  - /docs/v0.35.1/tutorial/using-selenium-and-webdriver
+  - /docs/v0.34.3/tutorial/using-selenium-and-webdriver
+  - /docs/v0.34.2/tutorial/using-selenium-and-webdriver
+  - /docs/v0.34.1/tutorial/using-selenium-and-webdriver
+  - /docs/v0.34.0/tutorial/using-selenium-and-webdriver
+  - /docs/v0.33.9/tutorial/using-selenium-and-webdriver
+  - /docs/v0.33.8/tutorial/using-selenium-and-webdriver
+  - /docs/v0.33.7/tutorial/using-selenium-and-webdriver
+  - /docs/v0.33.6/tutorial/using-selenium-and-webdriver
+  - /docs/v0.33.4/tutorial/using-selenium-and-webdriver
+  - /docs/v0.33.3/tutorial/using-selenium-and-webdriver
+  - /docs/v0.33.2/tutorial/using-selenium-and-webdriver
+  - /docs/v0.33.1/tutorial/using-selenium-and-webdriver
+  - /docs/v0.33.0/tutorial/using-selenium-and-webdriver
+  - /docs/v0.32.3/tutorial/using-selenium-and-webdriver
+  - /docs/v0.32.2/tutorial/using-selenium-and-webdriver
+  - /docs/v0.31.2/tutorial/using-selenium-and-webdriver
+  - /docs/v0.31.0/tutorial/using-selenium-and-webdriver
+  - /docs/v0.30.4/tutorial/using-selenium-and-webdriver
+  - /docs/v0.29.2/tutorial/using-selenium-and-webdriver
+  - /docs/v0.29.1/tutorial/using-selenium-and-webdriver
+  - /docs/v0.28.3/tutorial/using-selenium-and-webdriver
+  - /docs/v0.28.2/tutorial/using-selenium-and-webdriver
+  - /docs/v0.28.1/tutorial/using-selenium-and-webdriver
+  - /docs/v0.28.0/tutorial/using-selenium-and-webdriver
+  - /docs/v0.27.3/tutorial/using-selenium-and-webdriver
+  - /docs/v0.27.2/tutorial/using-selenium-and-webdriver
+  - /docs/v0.27.1/tutorial/using-selenium-and-webdriver
+  - /docs/v0.27.0/tutorial/using-selenium-and-webdriver
+  - /docs/v0.26.1/tutorial/using-selenium-and-webdriver
+  - /docs/v0.26.0/tutorial/using-selenium-and-webdriver
+  - /docs/v0.25.3/tutorial/using-selenium-and-webdriver
+  - /docs/v0.25.2/tutorial/using-selenium-and-webdriver
+  - /docs/v0.25.1/tutorial/using-selenium-and-webdriver
+  - /docs/v0.25.0/tutorial/using-selenium-and-webdriver
+  - /docs/v0.24.0/tutorial/using-selenium-and-webdriver
+  - /docs/v0.23.0/tutorial/using-selenium-and-webdriver
+  - /docs/v0.22.3/tutorial/using-selenium-and-webdriver
+  - /docs/v0.22.2/tutorial/using-selenium-and-webdriver
+  - /docs/v0.22.1/tutorial/using-selenium-and-webdriver
+  - /docs/v0.21.3/tutorial/using-selenium-and-webdriver
+  - /docs/v0.21.2/tutorial/using-selenium-and-webdriver
+  - /docs/v0.21.1/tutorial/using-selenium-and-webdriver
+  - /docs/v0.21.0/tutorial/using-selenium-and-webdriver
+  - /docs/v0.20.8/tutorial/using-selenium-and-webdriver
+  - /docs/v0.20.7/tutorial/using-selenium-and-webdriver
+  - /docs/v0.20.6/tutorial/using-selenium-and-webdriver
+  - /docs/v0.20.5/tutorial/using-selenium-and-webdriver
+  - /docs/v0.20.4/tutorial/using-selenium-and-webdriver
+  - /docs/v0.20.3/tutorial/using-selenium-and-webdriver
+  - /docs/v0.20.2/tutorial/using-selenium-and-webdriver
+  - /docs/v0.20.1/tutorial/using-selenium-and-webdriver
+  - /docs/v0.20.0/tutorial/using-selenium-and-webdriver
+  - /docs/vlatest/tutorial/using-selenium-and-webdriver
+source_url: >-
+  https://github.com/electron/electron/blob/master/docs/tutorial/using-selenium-and-webdriver.md
+title: Using Selenium and WebDriver
+excerpt: |-
+  WebDriver is an open source tool for automated testing of web apps across many
+      browsers. It provides capabilities for navigating to web pages, user input,
+      JavaScript execution, and more. ChromeDriver is a standalone server which
+      implements WebDriver&apos;s wire protocol for Chromium. It is being developed by
+      members of the Chromium and WebDriver teams.
+sort_title: using-selenium-and-webdriver
 ---
-
 # Using Selenium and WebDriver
 
-From [ChromeDriver - WebDriver for Chrome][chrome-driver]:
+From [ChromeDriver - WebDriver for Chrome](https://sites.google.com/a/chromium.org/chromedriver/):
 
-> WebDriver is an open source tool for automated testing of web apps across many
-> browsers. It provides capabilities for navigating to web pages, user input,
-> JavaScript execution, and more. ChromeDriver is a standalone server which
-> implements WebDriver's wire protocol for Chromium. It is being developed by
-> members of the Chromium and WebDriver teams.
+> WebDriver is an open source tool for automated testing of web apps across many browsers. It provides capabilities for navigating to web pages, user input, JavaScript execution, and more. ChromeDriver is a standalone server which implements WebDriver's wire protocol for Chromium. It is being developed by members of the Chromium and WebDriver teams.
 
 ## Setting up Spectron
 
-[Spectron][spectron] is the officially supported ChromeDriver testing framework
-for Electron. It is built on top of [WebdriverIO](http://webdriver.io/) and
-has helpers to access Electron APIs in your tests and bundles ChromeDriver.
+[Spectron](http://electron.atom.io/spectron) is the officially supported ChromeDriver testing framework for Electron. It is built on top of [WebdriverIO](http://webdriver.io/) and has helpers to access Electron APIs in your tests and bundles ChromeDriver.
 
 ```bash
 $ npm install --save-dev spectron
@@ -96,10 +138,9 @@ app.start().then(function () {
 
 ## Setting up with WebDriverJs
 
-[WebDriverJs](https://code.google.com/p/selenium/wiki/WebDriverJs) provides
-a Node package for testing with web driver, we will use it as an example.
+[WebDriverJs](https://code.google.com/p/selenium/wiki/WebDriverJs) provides a Node package for testing with web driver, we will use it as an example.
 
-### 1. Start ChromeDriver
+### 1\. Start ChromeDriver
 
 First you need to download the `chromedriver` binary, and run it:
 
@@ -112,17 +153,15 @@ Only local connections are allowed.
 
 Remember the port number `9515`, which will be used later
 
-### 2. Install WebDriverJS
+### 2\. Install WebDriverJS
 
 ```bash
 $ npm install selenium-webdriver
 ```
 
-### 3. Connect to ChromeDriver
+### 3\. Connect to ChromeDriver
 
-The usage of `selenium-webdriver` with Electron is basically the same with
-upstream, except that you have to manually specify how to connect chrome driver
-and where to find Electron's binary:
+The usage of `selenium-webdriver` with Electron is basically the same with upstream, except that you have to manually specify how to connect chrome driver and where to find Electron's binary:
 
 ```javascript
 const webdriver = require('selenium-webdriver')
@@ -153,10 +192,9 @@ driver.quit()
 
 ## Setting up with WebdriverIO
 
-[WebdriverIO](http://webdriver.io/) provides a Node package for testing with web
-driver.
+[WebdriverIO](http://webdriver.io/) provides a Node package for testing with web driver.
 
-### 1. Start ChromeDriver
+### 1\. Start ChromeDriver
 
 First you need to download the `chromedriver` binary, and run it:
 
@@ -169,13 +207,13 @@ Only local connections are allowed.
 
 Remember the port number `9515`, which will be used later
 
-### 2. Install WebdriverIO
+### 2\. Install WebdriverIO
 
 ```bash
 $ npm install webdriverio
 ```
 
-### 3. Connect to chrome driver
+### 3\. Connect to chrome driver
 
 ```javascript
 const webdriverio = require('webdriverio')
@@ -206,13 +244,6 @@ client
 
 ## Workflow
 
-To test your application without rebuilding Electron, simply
-[place](https://github.com/electron/electron/blob/master/docs/tutorial/application-distribution.md)
-your app source into Electron's resource directory.
+To test your application without rebuilding Electron, simply [place](https://github.com/electron/electron/blob/master/docs/tutorial/application-distribution.md) your app source into Electron's resource directory.
 
-Alternatively, pass an argument to run with your electron binary that points to
-your app's folder. This eliminates the need to copy-paste your app into
-Electron's resource directory.
-
-[chrome-driver]: https://sites.google.com/a/chromium.org/chromedriver/
-[spectron]: http://electron.atom.io/spectron
+Alternatively, pass an argument to run with your electron binary that points to your app's folder. This eliminates the need to copy-paste your app into Electron's resource directory.

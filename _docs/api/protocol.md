@@ -2,52 +2,97 @@
 version: v1.4.12
 category: API
 redirect_from:
-    - /docs/v0.24.0/api/protocol/
-    - /docs/v0.25.0/api/protocol/
-    - /docs/v0.26.0/api/protocol/
-    - /docs/v0.27.0/api/protocol/
-    - /docs/v0.28.0/api/protocol/
-    - /docs/v0.29.0/api/protocol/
-    - /docs/v0.30.0/api/protocol/
-    - /docs/v0.31.0/api/protocol/
-    - /docs/v0.32.0/api/protocol/
-    - /docs/v0.33.0/api/protocol/
-    - /docs/v0.34.0/api/protocol/
-    - /docs/v0.35.0/api/protocol/
-    - /docs/v0.36.0/api/protocol/
-    - /docs/v0.36.3/api/protocol/
-    - /docs/v0.36.4/api/protocol/
-    - /docs/v0.36.5/api/protocol/
-    - /docs/v0.36.6/api/protocol/
-    - /docs/v0.36.7/api/protocol/
-    - /docs/v0.36.8/api/protocol/
-    - /docs/v0.36.9/api/protocol/
-    - /docs/v0.36.10/api/protocol/
-    - /docs/v0.36.11/api/protocol/
-    - /docs/v0.37.0/api/protocol/
-    - /docs/v0.37.1/api/protocol/
-    - /docs/v0.37.2/api/protocol/
-    - /docs/v0.37.3/api/protocol/
-    - /docs/v0.37.4/api/protocol/
-    - /docs/v0.37.5/api/protocol/
-    - /docs/v0.37.6/api/protocol/
-    - /docs/v0.37.7/api/protocol/
-    - /docs/v0.37.8/api/protocol/
-    - /docs/latest/api/protocol/
+  - /docs/v0.37.8/api/protocol
+  - /docs/v0.37.7/api/protocol
+  - /docs/v0.37.6/api/protocol
+  - /docs/v0.37.5/api/protocol
+  - /docs/v0.37.4/api/protocol
+  - /docs/v0.37.3/api/protocol
+  - /docs/v0.36.12/api/protocol
+  - /docs/v0.37.1/api/protocol
+  - /docs/v0.37.0/api/protocol
+  - /docs/v0.36.11/api/protocol
+  - /docs/v0.36.10/api/protocol
+  - /docs/v0.36.9/api/protocol
+  - /docs/v0.36.8/api/protocol
+  - /docs/v0.36.7/api/protocol
+  - /docs/v0.36.6/api/protocol
+  - /docs/v0.36.5/api/protocol
+  - /docs/v0.36.4/api/protocol
+  - /docs/v0.36.3/api/protocol
+  - /docs/v0.35.5/api/protocol
+  - /docs/v0.36.2/api/protocol
+  - /docs/v0.36.0/api/protocol
+  - /docs/v0.35.4/api/protocol
+  - /docs/v0.35.3/api/protocol
+  - /docs/v0.35.2/api/protocol
+  - /docs/v0.34.4/api/protocol
+  - /docs/v0.35.1/api/protocol
+  - /docs/v0.34.3/api/protocol
+  - /docs/v0.34.2/api/protocol
+  - /docs/v0.34.1/api/protocol
+  - /docs/v0.34.0/api/protocol
+  - /docs/v0.33.9/api/protocol
+  - /docs/v0.33.8/api/protocol
+  - /docs/v0.33.7/api/protocol
+  - /docs/v0.33.6/api/protocol
+  - /docs/v0.33.4/api/protocol
+  - /docs/v0.33.3/api/protocol
+  - /docs/v0.33.2/api/protocol
+  - /docs/v0.33.1/api/protocol
+  - /docs/v0.33.0/api/protocol
+  - /docs/v0.32.3/api/protocol
+  - /docs/v0.32.2/api/protocol
+  - /docs/v0.31.2/api/protocol
+  - /docs/v0.31.0/api/protocol
+  - /docs/v0.30.4/api/protocol
+  - /docs/v0.29.2/api/protocol
+  - /docs/v0.29.1/api/protocol
+  - /docs/v0.28.3/api/protocol
+  - /docs/v0.28.2/api/protocol
+  - /docs/v0.28.1/api/protocol
+  - /docs/v0.28.0/api/protocol
+  - /docs/v0.27.3/api/protocol
+  - /docs/v0.27.2/api/protocol
+  - /docs/v0.27.1/api/protocol
+  - /docs/v0.27.0/api/protocol
+  - /docs/v0.26.1/api/protocol
+  - /docs/v0.26.0/api/protocol
+  - /docs/v0.25.3/api/protocol
+  - /docs/v0.25.2/api/protocol
+  - /docs/v0.25.1/api/protocol
+  - /docs/v0.25.0/api/protocol
+  - /docs/v0.24.0/api/protocol
+  - /docs/v0.23.0/api/protocol
+  - /docs/v0.22.3/api/protocol
+  - /docs/v0.22.2/api/protocol
+  - /docs/v0.22.1/api/protocol
+  - /docs/v0.21.3/api/protocol
+  - /docs/v0.21.2/api/protocol
+  - /docs/v0.21.1/api/protocol
+  - /docs/v0.21.0/api/protocol
+  - /docs/v0.20.8/api/protocol
+  - /docs/v0.20.7/api/protocol
+  - /docs/v0.20.6/api/protocol
+  - /docs/v0.20.5/api/protocol
+  - /docs/v0.20.4/api/protocol
+  - /docs/v0.20.3/api/protocol
+  - /docs/v0.20.2/api/protocol
+  - /docs/v0.20.1/api/protocol
+  - /docs/v0.20.0/api/protocol
+  - /docs/vlatest/api/protocol
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/protocol.md'
-excerpt: "Register a custom protocol and intercept existing protocol requests."
-title: "protocol"
-sort_title: "protocol"
+title: protocol
+excerpt: Register a custom protocol and intercept existing protocol requests.
+sort_title: protocol
 ---
-
 # protocol
 
 > Register a custom protocol and intercept existing protocol requests.
 
-Process: [Main](http://electron.atom.io/docs/tutorial/quick-start#main-process)
+Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process)
 
-An example of implementing a protocol that has the same effect as the
-`file://` protocol:
+An example of implementing a protocol that has the same effect as the `file://` protocol:
 
 ```javascript
 const {app, protocol} = require('electron')
@@ -63,8 +108,7 @@ app.on('ready', () => {
 })
 ```
 
-**Note:** All methods unless specified can only be used after the `ready` event
-of the `app` module gets emitted.
+**Note:** All methods unless specified can only be used after the `ready` event of the `app` module gets emitted.
 
 ## Methods
 
@@ -72,19 +116,13 @@ The `protocol` module has the following methods:
 
 ### `protocol.registerStandardSchemes(schemes)`
 
-* `schemes` String[] - Custom schemes to be registered as standard schemes.
+*   `schemes` String[] - Custom schemes to be registered as standard schemes.
 
-A standard scheme adheres to what RFC 3986 calls [generic URI
-syntax](https://tools.ietf.org/html/rfc3986#section-3). For example `http` and
-`https` are standard schemes, while `file` is not.
+A standard scheme adheres to what RFC 3986 calls [generic URI syntax](https://tools.ietf.org/html/rfc3986#section-3). For example `http` and `https` are standard schemes, while `file` is not.
 
-Registering a scheme as standard, will allow relative and absolute resources to
-be resolved correctly when served. Otherwise the scheme will behave like the
-`file` protocol, but without the ability to resolve relative URLs.
+Registering a scheme as standard, will allow relative and absolute resources to be resolved correctly when served. Otherwise the scheme will behave like the `file` protocol, but without the ability to resolve relative URLs.
 
-For example when you load following page with custom protocol without
-registering it as standard scheme, the image will not be loaded because
-non-standard schemes can not recognize relative URLs:
+For example when you load following page with custom protocol without registering it as standard scheme, the image will not be loaded because non-standard schemes can not recognize relative URLs:
 
 ```html
 <body>
@@ -92,13 +130,9 @@ non-standard schemes can not recognize relative URLs:
 </body>
 ```
 
-Registering a scheme as standard will allow access to files through the
-[FileSystem API][file-system-api]. Otherwise the renderer will throw a security
-error for the scheme.
+Registering a scheme as standard will allow access to files through the [FileSystem API](https://developer.mozilla.org/en-US/docs/Web/API/LocalFileSystem). Otherwise the renderer will throw a security error for the scheme.
 
-By default web storage apis (localStorage, sessionStorage, webSQL, indexedDB, cookies)
-are disabled for non standard schemes. So in general if you want to register a
-custom protocol to replace the `http` protocol, you have to register it as a standard scheme:
+By default web storage apis (localStorage, sessionStorage, webSQL, indexedDB, cookies) are disabled for non standard schemes. So in general if you want to register a custom protocol to replace the `http` protocol, you have to register it as a standard scheme:
 
 ```javascript
 const {app, protocol} = require('electron')
@@ -109,66 +143,51 @@ app.on('ready', () => {
 })
 ```
 
-**Note:** This method can only be used before the `ready` event of the `app`
-module gets emitted.
+**Note:** This method can only be used before the `ready` event of the `app` module gets emitted.
 
 ### `protocol.registerServiceWorkerSchemes(schemes)`
 
-* `schemes` String[] - Custom schemes to be registered to handle service workers.
+*   `schemes` String[] - Custom schemes to be registered to handle service workers.
 
 ### `protocol.registerFileProtocol(scheme, handler[, completion])`
 
-* `scheme` String
-* `handler` Function
-  * `request` Object
-    * `url` String
-    * `referrer` String
-    * `method` String
-    * `uploadData` [UploadData[]](http://electron.atom.io/docs/api/structures/upload-data)
-  * `callback` Function
-    * `filePath` String (optional)
-* `completion` Function (optional)
-  * `error` Error
+*   `scheme` String
+*   `handler` Function
+    *   `request` Object
+        *   `url` String
+        *   `referrer` String
+        *   `method` String
+        *   `uploadData` [UploadData[]]({{site.baseurl}}/docs/api/structures/upload-data)
+    *   `callback` Function
+        *   `filePath` String (optional)
+*   `completion` Function (optional)
+    *   `error` Error
 
-Registers a protocol of `scheme` that will send the file as a response. The
-`handler` will be called with `handler(request, callback)` when a `request` is
-going to be created with `scheme`. `completion` will be called with
-`completion(null)` when `scheme` is successfully registered or
-`completion(error)` when failed.
+Registers a protocol of `scheme` that will send the file as a response. The `handler` will be called with `handler(request, callback)` when a `request` is going to be created with `scheme`. `completion` will be called with `completion(null)` when `scheme` is successfully registered or `completion(error)` when failed.
 
-To handle the `request`, the `callback` should be called with either the file's
-path or an object that has a `path` property, e.g. `callback(filePath)` or
-`callback({path: filePath})`.
+To handle the `request`, the `callback` should be called with either the file's path or an object that has a `path` property, e.g. `callback(filePath)` or `callback({path: filePath})`.
 
-When `callback` is called with nothing, a number, or an object that has an
-`error` property, the `request` will fail with the `error` number you
-specified. For the available error numbers you can use, please see the
-[net error list][net-error].
+When `callback` is called with nothing, a number, or an object that has an `error` property, the `request` will fail with the `error` number you specified. For the available error numbers you can use, please see the [net error list](https://code.google.com/p/chromium/codesearch#chromium/src/net/base/net_error_list.h).
 
-By default the `scheme` is treated like `http:`, which is parsed differently
-than protocols that follow the "generic URI syntax" like `file:`, so you
-probably want to call `protocol.registerStandardSchemes` to have your scheme
-treated as a standard scheme.
+By default the `scheme` is treated like `http:`, which is parsed differently than protocols that follow the "generic URI syntax" like `file:`, so you probably want to call `protocol.registerStandardSchemes` to have your scheme treated as a standard scheme.
 
 ### `protocol.registerBufferProtocol(scheme, handler[, completion])`
 
-* `scheme` String
-* `handler` Function
-  * `request` Object
-    * `url` String
-    * `referrer` String
-    * `method` String
-    * `uploadData` [UploadData[]](http://electron.atom.io/docs/api/structures/upload-data)
-  * `callback` Function
-    * `buffer` Buffer (optional)
-* `completion` Function (optional)
-  * `error` Error
+*   `scheme` String
+*   `handler` Function
+    *   `request` Object
+        *   `url` String
+        *   `referrer` String
+        *   `method` String
+        *   `uploadData` [UploadData[]]({{site.baseurl}}/docs/api/structures/upload-data)
+    *   `callback` Function
+        *   `buffer` Buffer (optional)
+*   `completion` Function (optional)
+    *   `error` Error
 
 Registers a protocol of `scheme` that will send a `Buffer` as a response.
 
-The usage is the same with `registerFileProtocol`, except that the `callback`
-should be called with either a `Buffer` object or an object that has the `data`,
-`mimeType`, and `charset` properties.
+The usage is the same with `registerFileProtocol`, except that the `callback` should be called with either a `Buffer` object or an object that has the `data`, `mimeType`, and `charset` properties.
 
 Example:
 
@@ -184,153 +203,140 @@ protocol.registerBufferProtocol('atom', (request, callback) => {
 
 ### `protocol.registerStringProtocol(scheme, handler[, completion])`
 
-* `scheme` String
-* `handler` Function
-  * `request` Object
-    * `url` String
-    * `referrer` String
-    * `method` String
-    * `uploadData` [UploadData[]](http://electron.atom.io/docs/api/structures/upload-data)
-  * `callback` Function
-    * `data` String (optional)
-* `completion` Function (optional)
-  * `error` Error
+*   `scheme` String
+*   `handler` Function
+    *   `request` Object
+        *   `url` String
+        *   `referrer` String
+        *   `method` String
+        *   `uploadData` [UploadData[]]({{site.baseurl}}/docs/api/structures/upload-data)
+    *   `callback` Function
+        *   `data` String (optional)
+*   `completion` Function (optional)
+    *   `error` Error
 
 Registers a protocol of `scheme` that will send a `String` as a response.
 
-The usage is the same with `registerFileProtocol`, except that the `callback`
-should be called with either a `String` or an object that has the `data`,
-`mimeType`, and `charset` properties.
+The usage is the same with `registerFileProtocol`, except that the `callback` should be called with either a `String` or an object that has the `data`, `mimeType`, and `charset` properties.
 
 ### `protocol.registerHttpProtocol(scheme, handler[, completion])`
 
-* `scheme` String
-* `handler` Function
-  * `request` Object
-    * `url` String
-    * `referrer` String
-    * `method` String
-    * `uploadData` [UploadData[]](http://electron.atom.io/docs/api/structures/upload-data)
-  * `callback` Function
-    * `redirectRequest` Object
-      * `url` String
-      * `method` String
-      * `session` Object (optional)
-      * `uploadData` Object (optional)
-        * `contentType` String - MIME type of the content.
-        * `data` String - Content to be sent.
-* `completion` Function (optional)
-  * `error` Error
+*   `scheme` String
+*   `handler` Function
+    *   `request` Object
+        *   `url` String
+        *   `referrer` String
+        *   `method` String
+        *   `uploadData` [UploadData[]]({{site.baseurl}}/docs/api/structures/upload-data)
+    *   `callback` Function
+        *   `redirectRequest` Object
+            *   `url` String
+            *   `method` String
+            *   `session` Object (optional)
+            *   `uploadData` Object (optional)
+                *   `contentType` String - MIME type of the content.
+                *   `data` String - Content to be sent.
+*   `completion` Function (optional)
+    *   `error` Error
 
 Registers a protocol of `scheme` that will send an HTTP request as a response.
 
-The usage is the same with `registerFileProtocol`, except that the `callback`
-should be called with a `redirectRequest` object that has the `url`, `method`,
-`referrer`, `uploadData` and `session` properties.
+The usage is the same with `registerFileProtocol`, except that the `callback` should be called with a `redirectRequest` object that has the `url`, `method`, `referrer`, `uploadData` and `session` properties.
 
-By default the HTTP request will reuse the current session. If you want the
-request to have a different session you should set `session` to `null`.
+By default the HTTP request will reuse the current session. If you want the request to have a different session you should set `session` to `null`.
 
 For POST requests the `uploadData` object must be provided.
 
 ### `protocol.unregisterProtocol(scheme[, completion])`
 
-* `scheme` String
-* `completion` Function (optional)
-  * `error` Error
+*   `scheme` String
+*   `completion` Function (optional)
+    *   `error` Error
 
 Unregisters the custom protocol of `scheme`.
 
 ### `protocol.isProtocolHandled(scheme, callback)`
 
-* `scheme` String
-* `callback` Function
-  * `error` Error
+*   `scheme` String
+*   `callback` Function
+    *   `error` Error
 
-The `callback` will be called with a boolean that indicates whether there is
-already a handler for `scheme`.
+The `callback` will be called with a boolean that indicates whether there is already a handler for `scheme`.
 
 ### `protocol.interceptFileProtocol(scheme, handler[, completion])`
 
-* `scheme` String
-* `handler` Function
-  * `request` Object
-    * `url` String
-    * `referrer` String
-    * `method` String
-    * `uploadData` [UploadData[]](http://electron.atom.io/docs/api/structures/upload-data)
-  * `callback` Function
-    * `filePath` String
-* `completion` Function (optional)
-  * `error` Error
+*   `scheme` String
+*   `handler` Function
+    *   `request` Object
+        *   `url` String
+        *   `referrer` String
+        *   `method` String
+        *   `uploadData` [UploadData[]]({{site.baseurl}}/docs/api/structures/upload-data)
+    *   `callback` Function
+        *   `filePath` String
+*   `completion` Function (optional)
+    *   `error` Error
 
-Intercepts `scheme` protocol and uses `handler` as the protocol's new handler
-which sends a file as a response.
+Intercepts `scheme` protocol and uses `handler` as the protocol's new handler which sends a file as a response.
 
 ### `protocol.interceptStringProtocol(scheme, handler[, completion])`
 
-* `scheme` String
-* `handler` Function
-  * `request` Object
-    * `url` String
-    * `referrer` String
-    * `method` String
-    * `uploadData` [UploadData[]](http://electron.atom.io/docs/api/structures/upload-data)
-  * `callback` Function
-    * `data` String (optional)
-* `completion` Function (optional)
-  * `error` Error
+*   `scheme` String
+*   `handler` Function
+    *   `request` Object
+        *   `url` String
+        *   `referrer` String
+        *   `method` String
+        *   `uploadData` [UploadData[]]({{site.baseurl}}/docs/api/structures/upload-data)
+    *   `callback` Function
+        *   `data` String (optional)
+*   `completion` Function (optional)
+    *   `error` Error
 
-Intercepts `scheme` protocol and uses `handler` as the protocol's new handler
-which sends a `String` as a response.
+Intercepts `scheme` protocol and uses `handler` as the protocol's new handler which sends a `String` as a response.
 
 ### `protocol.interceptBufferProtocol(scheme, handler[, completion])`
 
-* `scheme` String
-* `handler` Function
-  * `request` Object
-    * `url` String
-    * `referrer` String
-    * `method` String
-    * `uploadData` [UploadData[]](http://electron.atom.io/docs/api/structures/upload-data)
-  * `callback` Function
-    * `buffer` Buffer (optional)
-* `completion` Function (optional)
-  * `error` Error
+*   `scheme` String
+*   `handler` Function
+    *   `request` Object
+        *   `url` String
+        *   `referrer` String
+        *   `method` String
+        *   `uploadData` [UploadData[]]({{site.baseurl}}/docs/api/structures/upload-data)
+    *   `callback` Function
+        *   `buffer` Buffer (optional)
+*   `completion` Function (optional)
+    *   `error` Error
 
-Intercepts `scheme` protocol and uses `handler` as the protocol's new handler
-which sends a `Buffer` as a response.
+Intercepts `scheme` protocol and uses `handler` as the protocol's new handler which sends a `Buffer` as a response.
 
 ### `protocol.interceptHttpProtocol(scheme, handler[, completion])`
 
-* `scheme` String
-* `handler` Function
-  * `request` Object
-    * `url` String
-    * `referrer` String
-    * `method` String
-    * `uploadData` [UploadData[]](http://electron.atom.io/docs/api/structures/upload-data)
-  * `callback` Function
-    * `redirectRequest` Object
-      * `url` String
-      * `method` String
-      * `session` Object (optional)
-      * `uploadData` Object (optional)
-        * `contentType` String - MIME type of the content.
-        * `data` String - Content to be sent.
-* `completion` Function (optional)
-  * `error` Error
+*   `scheme` String
+*   `handler` Function
+    *   `request` Object
+        *   `url` String
+        *   `referrer` String
+        *   `method` String
+        *   `uploadData` [UploadData[]]({{site.baseurl}}/docs/api/structures/upload-data)
+    *   `callback` Function
+        *   `redirectRequest` Object
+            *   `url` String
+            *   `method` String
+            *   `session` Object (optional)
+            *   `uploadData` Object (optional)
+                *   `contentType` String - MIME type of the content.
+                *   `data` String - Content to be sent.
+*   `completion` Function (optional)
+    *   `error` Error
 
-Intercepts `scheme` protocol and uses `handler` as the protocol's new handler
-which sends a new HTTP request as a response.
+Intercepts `scheme` protocol and uses `handler` as the protocol's new handler which sends a new HTTP request as a response.
 
 ### `protocol.uninterceptProtocol(scheme[, completion])`
 
-* `scheme` String
-* `completion` Function (optional)
-  * `error` Error
+*   `scheme` String
+*   `completion` Function (optional)
+    *   `error` Error
 
 Remove the interceptor installed for `scheme` and restore its original handler.
-
-[net-error]: https://code.google.com/p/chromium/codesearch#chromium/src/net/base/net_error_list.h
-[file-system-api]: https://developer.mozilla.org/en-US/docs/Web/API/LocalFileSystem

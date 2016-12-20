@@ -39,6 +39,12 @@ if [[ $(git status --porcelain) != "" ]]; then
   git commit -avm "update userland"
 fi
 
+npm run build-awesome
+if [[ $(git status --porcelain) != "" ]]; then
+  git add .
+  git commit -avm "update awesome"
+fi
+
 npm run build-apps
 if [[ $(git status --porcelain) != "" ]]; then
   git add .
