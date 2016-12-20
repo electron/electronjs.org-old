@@ -21,12 +21,6 @@ if [[ $(git status --porcelain) != "" ]]; then
   git commit -avm "update releases"
 fi
 
-npm run build-versions
-if [[ $(git status --porcelain) != "" ]]; then
-  git add .
-  git commit -avm "update versions"
-fi
-
 npm run build-docs
 if [[ $(git status --porcelain) != "" ]]; then
   git add .
