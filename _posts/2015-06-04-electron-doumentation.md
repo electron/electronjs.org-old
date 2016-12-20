@@ -79,7 +79,7 @@ The file `latest.md` in our site root is empty except for this front matter whic
 ```yaml
 ---
 permalink: /docs/latest/
-redirect_to: /docs/{{ site.latest_version }}
+redirect_to: /docs/{{ site.data.versions[0].version }}
 ---
 ```
 

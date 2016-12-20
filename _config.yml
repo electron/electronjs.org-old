@@ -12,7 +12,6 @@ gems:
     - jekyll-seo-tag
     - jekyll-feed
     - jemoji
-latest_version: 1.4.12
 sass:
     style: compressed
 collections:
