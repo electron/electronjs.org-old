@@ -1,5 +1,5 @@
 ---
-version: v1.4.12
+version: v1.4.13
 category: Tutorial
 redirect_from:
   - /docs/v0.37.8/tutorial/using-native-node-modules
@@ -151,6 +151,12 @@ If you installed a native module and found it was not working, you need to check
 *   The architecture of module has to match Electron's architecture (ia32 or x64).
 *   After you upgraded Electron, you usually need to rebuild the modules.
 *   When in doubt, run `electron-rebuild` first.
+
+## Modules that rely on `prebuild`
+
+[`prebuild`](https://github.com/mafintosh/prebuild) provides a way to easily publish native Node modules with prebuilt binaries for multiple versions of Node and Electron.
+
+If modules provide binaries for the usage in Electron, make sure to omit `--build-from-source` and the `npm_config_build_from_source` environment variable in order to take full advantage of the prebuilt binaries.
 
 ## Modules that rely on `node-pre-gyp`
 

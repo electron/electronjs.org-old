@@ -1,5 +1,5 @@
 ---
-version: v1.4.12
+version: v1.4.13
 category: API
 redirect_from:
   - /docs/v0.37.8/api/browser-window
@@ -117,7 +117,7 @@ To create a window without chrome, or a transparent window in arbitrary shape, y
 
 ## Showing window gracefully
 
-When loading a page in window directly, users will see the progress of loading page, which is not good experience for native app. To make the window display without visual flash, there are two solutions for different situations.
+When loading a page in the window directly, users may see the page load incrementally, which is not a good experience for a native app. To make the window display without visual flash, there are two solutions for different situations.
 
 ### Using `ready-to-show` event
 
@@ -766,7 +766,7 @@ On Linux always returns `true`.
 #### `win.setAlwaysOnTop(flag[, level])`
 
 *   `flag` Boolean
-*   `level` String (optional) _macOS_ - Values include `normal`, `floating`, `torn-off-menu`, `modal-panel`, `main-menu`, `status`, `pop-up-menu`, `screen-saver`, and `dock`. The default is `floating`. See the [macOS docs](https://developer.apple.com/reference/appkit/nswindow/1664726-window_levels) for more details.
+*   `level` String (optional) _macOS_ - Values include `normal`, `floating`, `torn-off-menu`, `modal-panel`, `main-menu`, `status`, `pop-up-menu`, `screen-saver`, and ~~`dock`~~ (Deprecated). The default is `floating`. See the [macOS docs](https://developer.apple.com/reference/appkit/nswindow/1664726-window_levels) for more details.
 
 Sets whether the window should show always on top of other windows. After setting this, the window is still a normal window, not a toolbox window which can not be focused on.
 

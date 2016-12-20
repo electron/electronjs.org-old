@@ -1,5 +1,5 @@
 ---
-version: v1.4.12
+version: v1.4.13
 category: API
 redirect_from:
   - /docs/v0.37.8/api/web-view-tag
@@ -589,7 +589,7 @@ Shows pop-up dictionary that searches the selected word on the page.
 
 ### `<webview>.getWebContents()`
 
-Returns `WebContents` - The [WebContents]({{site.baseurl}}/docs/api/web-contents) associated with this `webview`.
+Returns [`WebContents`]({{site.baseurl}}/docs/api/web-contents) - The web contents associated with this `webview`.
 
 ## DOM events
 

@@ -1,5 +1,5 @@
 ---
-version: v1.4.12
+version: v1.4.13
 category: API
 redirect_from:
   - /docs/v0.37.8/api/window-open
@@ -102,7 +102,7 @@ The newly created `BrowserWindow` will inherit the parent window's options by de
 *   `frameName` String (optional)
 *   `features` String (optional)
 
-Returns `BrowserWindowProxy` - Creates a new window and returns an instance of `BrowserWindowProxy` class.
+Returns [`BrowserWindowProxy`]({{site.baseurl}}/docs/api/browser-window-proxy) - Creates a new window and returns an instance of `BrowserWindowProxy` class.
 
 The `features` string follows the format of standard browser, but each feature has to be a field of `BrowserWindow`'s options.
 

@@ -1,5 +1,5 @@
 ---
-version: v1.4.12
+version: v1.4.13
 category: API
 redirect_from:
   - /docs/v0.37.8/api/net
@@ -136,6 +136,6 @@ The `net` module has the following methods:
 
 *   `options` (Object | String) - The `ClientRequest` constructor options.
 
-Returns `ClientRequest`
+Returns [`ClientRequest`]({{site.baseurl}}/docs/api/client-request)
 
 Creates a [`ClientRequest`]({{site.baseurl}}/docs/api/client-request) instance using the provided `options` which are directly forwarded to the `ClientRequest` constructor. The `net.request` method would be used to issue both secure and insecure HTTP requests according to the specified protocol scheme in the `options` object.

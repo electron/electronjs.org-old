@@ -1,5 +1,5 @@
 ---
-version: v1.4.12
+version: v1.4.13
 category: API
 redirect_from:
   - /docs/v0.37.8/api/web-contents
@@ -293,6 +293,22 @@ Emitted when a plugin process has crashed.
 #### Event: 'destroyed'
 
 Emitted when `webContents` is destroyed.
+
+#### Event: 'before-input-event'
+
+Returns:
+
+*   `event` Event
+*   `input` Object - Input properties
+    *   `type` String - Either `keyUp` or `keyDown`
+    *   `key` String - Equivalent to [KeyboardEvent.key]({{site.baseurl}}/docs/api/keyboardevent)
+    *   `isAutoRepeat` Boolean - Equivalent to [KeyboardEvent.repeat]({{site.baseurl}}/docs/api/keyboardevent)
+    *   `shift` Boolean - Equivalent to [KeyboardEvent.shiftKey]({{site.baseurl}}/docs/api/keyboardevent)
+    *   `control` Boolean - Equivalent to [KeyboardEvent.controlKey]({{site.baseurl}}/docs/api/keyboardevent)
+    *   `alt` Boolean - Equivalent to [KeyboardEvent.altKey]({{site.baseurl}}/docs/api/keyboardevent)
+    *   `meta` Boolean - Equivalent to [KeyboardEvent.metaKey]({{site.baseurl}}/docs/api/keyboardevent)
+
+Emitted before dispatching the `keydown` and `keyup` events in the page. Calling `event.preventDefault` will prevent the page `keydown`/`keyup` events from being dispatched.
 
 #### Event: 'devtools-opened'
 

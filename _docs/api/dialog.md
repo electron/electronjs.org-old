@@ -1,5 +1,5 @@
 ---
-version: v1.4.12
+version: v1.4.13
 category: API
 redirect_from:
   - /docs/v0.37.8/api/dialog
@@ -152,7 +152,7 @@ If a `callback` is passed, the API call will be asynchronous and the result will
     *   `title` String (optional)
     *   `defaultPath` String (optional)
     *   `buttonLabel` String (optional) - Custom label for the confirmation button, when left empty the default label will be used.
-    *   `filters` [FileFilter[]]({{site.baseurl}}/docs/api/structrs/file-filter) (optional)
+    *   `filters` [FileFilter[]]({{site.baseurl}}/docs/api/structures/file-filter) (optional)
 *   `callback` Function (optional)
     *   `filename` String
 

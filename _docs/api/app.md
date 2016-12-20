@@ -1,5 +1,5 @@
 ---
-version: v1.4.12
+version: v1.4.13
 category: API
 redirect_from:
   - /docs/v0.37.8/api/app
@@ -272,11 +272,11 @@ Returns:
 *   `url` URL
 *   `certificateList` [Certificate[]]({{site.baseurl}}/docs/api/structures/certificate)
 *   `callback` Function
-    *   `certificate` [Certificate]({{site.baseurl}}/docs/api/structures/certificate)
+    *   `certificate` [Certificate]({{site.baseurl}}/docs/api/structures/certificate) (optional)
 
 Emitted when a client certificate is requested.
 
-The `url` corresponds to the navigation entry requesting the client certificate and `callback` needs to be called with an entry filtered from the list. Using `event.preventDefault()` prevents the application from using the first certificate from the store.
+The `url` corresponds to the navigation entry requesting the client certificate and `callback` can be called with an entry filtered from the list. Using `event.preventDefault()` prevents the application from using the first certificate from the store.
 
 ```javascript
 const {app} = require('electron')

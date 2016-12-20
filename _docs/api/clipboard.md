@@ -1,5 +1,5 @@
 ---
-version: v1.4.12
+version: v1.4.13
 category: API
 redirect_from:
   - /docs/v0.37.8/api/clipboard
@@ -143,7 +143,7 @@ Writes `markup` to the clipboard.
 
 *   `type` String (optional)
 
-Returns `NativeImage` - The content in the clipboard as a [NativeImage]({{site.baseurl}}/docs/api/native-image).
+Returns [`NativeImage`]({{site.baseurl}}/docs/api/native-image) - The image content in the clipboard.
 
 ### `clipboard.writeImage(image[, type])`
 

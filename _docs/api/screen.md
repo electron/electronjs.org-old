@@ -1,5 +1,5 @@
 ---
-version: v1.4.12
+version: v1.4.13
 category: API
 redirect_from:
   - /docs/v0.37.8/api/screen
@@ -184,11 +184,11 @@ The current absolute position of the mouse pointer.
 
 ### `screen.getPrimaryDisplay()`
 
-Returns `Display` - The primary display.
+Returns [`Display`]({{site.baseurl}}/docs/api/structures/display) - The primary display.
 
 ### `screen.getAllDisplays()`
 
-Returns `Display[]` - An array of displays that are currently available.
+Returns [`Display[]`]({{site.baseurl}}/docs/api/structures/display) - An array of displays that are currently available.
 
 ### `screen.getDisplayNearestPoint(point)`
 
@@ -196,10 +196,10 @@ Returns `Display[]` - An array of displays that are currently available.
     *   `x` Integer
     *   `y` Integer
 
-Returns `Display` - The display nearest the specified point.
+Returns [`Display`]({{site.baseurl}}/docs/api/structures/display) - The display nearest the specified point.
 
 ### `screen.getDisplayMatching(rect)`
 
 *   `rect` [Rectangle]({{site.baseurl}}/docs/api/structures/rectangle)
 
-Returns `Display` - The display that most closely intersects the provided bounds.
+Returns `Display`](structures/display.md) - The display that most closely intersects the provided bounds.

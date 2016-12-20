@@ -1,5 +1,5 @@
 ---
-version: v1.4.12
+version: v1.4.13
 category: API
 redirect_from:
   - /docs/v0.37.8/api/structures/certificate
@@ -90,10 +90,10 @@ sort_title: certificate
 # Certificate Object
 
 *   `data` String - PEM encoded data
-*   `issuer` [CertificatePrincipal]({{site.baseurl}}/docs/api/structures/structures/certificate-principal) - Issuer principal
+*   `issuer` [CertificatePrincipal]({{site.baseurl}}/docs/api/structures/certificate-principal) - Issuer principal
 *   `issuerName` String - Issuer's Common Name
 *   `issuerCert` Certificate - Issuer certificate (if not self-signed)
-*   `subject` [CertificatePrincipal]({{site.baseurl}}/docs/api/structures/structures/certificate-principal) - Subject principal
+*   `subject` [CertificatePrincipal]({{site.baseurl}}/docs/api/structures/certificate-principal) - Subject principal
 *   `subjectName` String - Subject's Common Name
 *   `serialNumber` String - Hex value represented string
 *   `validStart` Number - Start date of the certificate being valid in seconds

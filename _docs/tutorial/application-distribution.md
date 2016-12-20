@@ -1,5 +1,5 @@
 ---
-version: v1.4.12
+version: v1.4.13
 category: Tutorial
 redirect_from:
   - /docs/v0.37.8/tutorial/application-distribution
@@ -206,14 +206,14 @@ You need to fork Electron when you have custom C++ code that you have patched di
 
 2.  Create a new S3 bucket and create the following empty directory structure:
 
-```
-- atom-shell/
-  - symbols/
-  - dist/
+    ```
+    - atom-shell/
+      - symbols/
+      - dist/
 
-```
+    ```
 
-1.  Set the following Environment Variables:
+3.  Set the following Environment Variables:
 
 *   `ELECTRON_GITHUB_TOKEN` - a token that can create releases on GitHub
 *   `ELECTRON_S3_ACCESS_KEY`, `ELECTRON_S3_BUCKET`, `ELECTRON_S3_SECRET_KEY` - the place where you'll upload node.js headers as well as symbols

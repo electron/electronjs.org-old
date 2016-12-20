@@ -1,5 +1,5 @@
 ---
-version: v1.4.12
+version: v1.4.13
 category: API
 redirect_from:
   - /docs/v0.37.8/api/remote
@@ -190,11 +190,11 @@ Returns `any` - The object returned by `require(module)` in the main process.
 
 ### `remote.getCurrentWindow()`
 
-Returns `BrowserWindow` - The [`BrowserWindow`]({{site.baseurl}}/docs/api/browser-window) object to which this web page belongs.
+Returns [`BrowserWindow`]({{site.baseurl}}/docs/api/browser-window) - The window to which this web page belongs.
 
 ### `remote.getCurrentWebContents()`
 
-Returns `WebContents` - The [`WebContents`]({{site.baseurl}}/docs/api/web-contents) object of this web page.
+Returns [`WebContents`]({{site.baseurl}}/docs/api/web-contents) - The web contents of this web page.
 
 ### `remote.getGlobal(name)`
 
