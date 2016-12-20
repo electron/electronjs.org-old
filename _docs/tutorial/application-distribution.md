@@ -2,51 +2,94 @@
 version: v1.4.12
 category: Tutorial
 redirect_from:
-    - /docs/v0.24.0/tutorial/application-distribution/
-    - /docs/v0.25.0/tutorial/application-distribution/
-    - /docs/v0.26.0/tutorial/application-distribution/
-    - /docs/v0.27.0/tutorial/application-distribution/
-    - /docs/v0.28.0/tutorial/application-distribution/
-    - /docs/v0.29.0/tutorial/application-distribution/
-    - /docs/v0.30.0/tutorial/application-distribution/
-    - /docs/v0.31.0/tutorial/application-distribution/
-    - /docs/v0.32.0/tutorial/application-distribution/
-    - /docs/v0.33.0/tutorial/application-distribution/
-    - /docs/v0.34.0/tutorial/application-distribution/
-    - /docs/v0.35.0/tutorial/application-distribution/
-    - /docs/v0.36.0/tutorial/application-distribution/
-    - /docs/v0.36.3/tutorial/application-distribution/
-    - /docs/v0.36.4/tutorial/application-distribution/
-    - /docs/v0.36.5/tutorial/application-distribution/
-    - /docs/v0.36.6/tutorial/application-distribution/
-    - /docs/v0.36.7/tutorial/application-distribution/
-    - /docs/v0.36.8/tutorial/application-distribution/
-    - /docs/v0.36.9/tutorial/application-distribution/
-    - /docs/v0.36.10/tutorial/application-distribution/
-    - /docs/v0.36.11/tutorial/application-distribution/
-    - /docs/v0.37.0/tutorial/application-distribution/
-    - /docs/v0.37.1/tutorial/application-distribution/
-    - /docs/v0.37.2/tutorial/application-distribution/
-    - /docs/v0.37.3/tutorial/application-distribution/
-    - /docs/v0.37.4/tutorial/application-distribution/
-    - /docs/v0.37.5/tutorial/application-distribution/
-    - /docs/v0.37.6/tutorial/application-distribution/
-    - /docs/v0.37.7/tutorial/application-distribution/
-    - /docs/v0.37.8/tutorial/application-distribution/
-    - /docs/latest/tutorial/application-distribution/
-source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/application-distribution.md'
-title: "Application Distribution"
-sort_title: "application distribution"
+  - /docs/v0.37.8/tutorial/application-distribution
+  - /docs/v0.37.7/tutorial/application-distribution
+  - /docs/v0.37.6/tutorial/application-distribution
+  - /docs/v0.37.5/tutorial/application-distribution
+  - /docs/v0.37.4/tutorial/application-distribution
+  - /docs/v0.37.3/tutorial/application-distribution
+  - /docs/v0.36.12/tutorial/application-distribution
+  - /docs/v0.37.1/tutorial/application-distribution
+  - /docs/v0.37.0/tutorial/application-distribution
+  - /docs/v0.36.11/tutorial/application-distribution
+  - /docs/v0.36.10/tutorial/application-distribution
+  - /docs/v0.36.9/tutorial/application-distribution
+  - /docs/v0.36.8/tutorial/application-distribution
+  - /docs/v0.36.7/tutorial/application-distribution
+  - /docs/v0.36.6/tutorial/application-distribution
+  - /docs/v0.36.5/tutorial/application-distribution
+  - /docs/v0.36.4/tutorial/application-distribution
+  - /docs/v0.36.3/tutorial/application-distribution
+  - /docs/v0.35.5/tutorial/application-distribution
+  - /docs/v0.36.2/tutorial/application-distribution
+  - /docs/v0.36.0/tutorial/application-distribution
+  - /docs/v0.35.4/tutorial/application-distribution
+  - /docs/v0.35.3/tutorial/application-distribution
+  - /docs/v0.35.2/tutorial/application-distribution
+  - /docs/v0.34.4/tutorial/application-distribution
+  - /docs/v0.35.1/tutorial/application-distribution
+  - /docs/v0.34.3/tutorial/application-distribution
+  - /docs/v0.34.2/tutorial/application-distribution
+  - /docs/v0.34.1/tutorial/application-distribution
+  - /docs/v0.34.0/tutorial/application-distribution
+  - /docs/v0.33.9/tutorial/application-distribution
+  - /docs/v0.33.8/tutorial/application-distribution
+  - /docs/v0.33.7/tutorial/application-distribution
+  - /docs/v0.33.6/tutorial/application-distribution
+  - /docs/v0.33.4/tutorial/application-distribution
+  - /docs/v0.33.3/tutorial/application-distribution
+  - /docs/v0.33.2/tutorial/application-distribution
+  - /docs/v0.33.1/tutorial/application-distribution
+  - /docs/v0.33.0/tutorial/application-distribution
+  - /docs/v0.32.3/tutorial/application-distribution
+  - /docs/v0.32.2/tutorial/application-distribution
+  - /docs/v0.31.2/tutorial/application-distribution
+  - /docs/v0.31.0/tutorial/application-distribution
+  - /docs/v0.30.4/tutorial/application-distribution
+  - /docs/v0.29.2/tutorial/application-distribution
+  - /docs/v0.29.1/tutorial/application-distribution
+  - /docs/v0.28.3/tutorial/application-distribution
+  - /docs/v0.28.2/tutorial/application-distribution
+  - /docs/v0.28.1/tutorial/application-distribution
+  - /docs/v0.28.0/tutorial/application-distribution
+  - /docs/v0.27.3/tutorial/application-distribution
+  - /docs/v0.27.2/tutorial/application-distribution
+  - /docs/v0.27.1/tutorial/application-distribution
+  - /docs/v0.27.0/tutorial/application-distribution
+  - /docs/v0.26.1/tutorial/application-distribution
+  - /docs/v0.26.0/tutorial/application-distribution
+  - /docs/v0.25.3/tutorial/application-distribution
+  - /docs/v0.25.2/tutorial/application-distribution
+  - /docs/v0.25.1/tutorial/application-distribution
+  - /docs/v0.25.0/tutorial/application-distribution
+  - /docs/v0.24.0/tutorial/application-distribution
+  - /docs/v0.23.0/tutorial/application-distribution
+  - /docs/v0.22.3/tutorial/application-distribution
+  - /docs/v0.22.2/tutorial/application-distribution
+  - /docs/v0.22.1/tutorial/application-distribution
+  - /docs/v0.21.3/tutorial/application-distribution
+  - /docs/v0.21.2/tutorial/application-distribution
+  - /docs/v0.21.1/tutorial/application-distribution
+  - /docs/v0.21.0/tutorial/application-distribution
+  - /docs/v0.20.8/tutorial/application-distribution
+  - /docs/v0.20.7/tutorial/application-distribution
+  - /docs/v0.20.6/tutorial/application-distribution
+  - /docs/v0.20.5/tutorial/application-distribution
+  - /docs/v0.20.4/tutorial/application-distribution
+  - /docs/v0.20.3/tutorial/application-distribution
+  - /docs/v0.20.2/tutorial/application-distribution
+  - /docs/v0.20.1/tutorial/application-distribution
+  - /docs/v0.20.0/tutorial/application-distribution
+  - /docs/vlatest/tutorial/application-distribution
+source_url: >-
+  https://github.com/electron/electron/blob/master/docs/tutorial/application-distribution.md
+title: Application Distribution
+excerpt: ''
+sort_title: application-distribution
 ---
-
 # Application Distribution
 
-To distribute your app with Electron, you need to download Electron's [prebuilt
-binaries](https://github.com/electron/electron/releases). Next, the folder
-containing your app should be named `app` and placed in Electron's resources
-directory as shown in the following examples. Note that the location of
-Electron's prebuilt binaries is indicated with `electron/` in the examples
-below.
+To distribute your app with Electron, you need to download Electron's [prebuilt binaries](https://github.com/electron/electron/releases). Next, the folder containing your app should be named `app` and placed in Electron's resources directory as shown in the following examples. Note that the location of Electron's prebuilt binaries is indicated with `electron/` in the examples below.
 
 On macOS:
 
@@ -66,19 +109,13 @@ electron/resources/app
 └── index.html
 ```
 
-Then execute `Electron.app` (or `electron` on Linux, `electron.exe` on Windows),
-and Electron will start as your app. The `electron` directory will then be
-your distribution to deliver to final users.
+Then execute `Electron.app` (or `electron` on Linux, `electron.exe` on Windows), and Electron will start as your app. The `electron` directory will then be your distribution to deliver to final users.
 
 ## Packaging Your App into a File
 
-Apart from shipping your app by copying all of its source files, you can also
-package your app into an [asar](https://github.com/electron/asar) archive to avoid
-exposing your app's source code to users.
+Apart from shipping your app by copying all of its source files, you can also package your app into an [asar](https://github.com/electron/asar) archive to avoid exposing your app's source code to users.
 
-To use an `asar` archive to replace the `app` folder, you need to rename the
-archive to `app.asar`, and put it under Electron's resources directory like
-below, and Electron will then try to read the archive and start from it.
+To use an `asar` archive to replace the `app` folder, you need to rename the archive to `app.asar`, and put it under Electron's resources directory like below, and Electron will then try to read the archive and start from it.
 
 On macOS:
 
@@ -94,30 +131,24 @@ electron/resources/
 └── app.asar
 ```
 
-More details can be found in [Application packaging](http://electron.atom.io/docs/tutorial/application-packaging).
+More details can be found in [Application packaging]({{site.baseurl}}/docs/tutorial/application-packaging).
 
 ## Rebranding with Downloaded Binaries
 
-After bundling your app into Electron, you will want to rebrand Electron
-before distributing it to users.
+After bundling your app into Electron, you will want to rebrand Electron before distributing it to users.
 
 ### Windows
 
-You can rename `electron.exe` to any name you like, and edit its icon and other
-information with tools like [rcedit](https://github.com/atom/rcedit).
+You can rename `electron.exe` to any name you like, and edit its icon and other information with tools like [rcedit](https://github.com/atom/rcedit).
 
 ### macOS
 
-You can rename `Electron.app` to any name you want, and you also have to rename
-the `CFBundleDisplayName`, `CFBundleIdentifier` and `CFBundleName` fields in the
-following files:
+You can rename `Electron.app` to any name you want, and you also have to rename the `CFBundleDisplayName`, `CFBundleIdentifier` and `CFBundleName` fields in the following files:
 
-* `Electron.app/Contents/Info.plist`
-* `Electron.app/Contents/Frameworks/Electron Helper.app/Contents/Info.plist`
+*   `Electron.app/Contents/Info.plist`
+*   `Electron.app/Contents/Frameworks/Electron Helper.app/Contents/Info.plist`
 
-You can also rename the helper app to avoid showing `Electron Helper` in the
-Activity Monitor, but make sure you have renamed the helper app's executable
-file's name.
+You can also rename the helper app to avoid showing `Electron Helper` in the Activity Monitor, but make sure you have renamed the helper app's executable file's name.
 
 The structure of a renamed app would be like:
 
@@ -139,6 +170,7 @@ MyApp.app/Contents
         ├── Info.plist
         └── MacOS/
             └── MyApp Helper
+
 ```
 
 ### Linux
@@ -147,71 +179,52 @@ You can rename the `electron` executable to any name you like.
 
 ## Packaging Tools
 
-Apart from packaging your app manually, you can also choose to use third party
-packaging tools to do the work for you:
+Apart from packaging your app manually, you can also choose to use third party packaging tools to do the work for you:
 
-* [electron-builder](https://github.com/electron-userland/electron-builder)
-* [electron-packager](https://github.com/electron-userland/electron-packager)
+*   [electron-builder](https://github.com/electron-userland/electron-builder)
+*   [electron-packager](https://github.com/electron-userland/electron-packager)
 
 ## Rebranding by Rebuilding Electron from Source
 
-It is also possible to rebrand Electron by changing the product name and
-building it from source. To do this you need to modify the `atom.gyp` file and
-have a clean rebuild.
+It is also possible to rebrand Electron by changing the product name and building it from source. To do this you need to modify the `atom.gyp` file and have a clean rebuild.
 
 ### grunt-build-atom-shell
 
-Manually checking out Electron's code and rebuilding could be complicated, so
-a Grunt task has been created that will handle this automatically:
-[grunt-build-atom-shell](https://github.com/paulcbetts/grunt-build-atom-shell).
+Manually checking out Electron's code and rebuilding could be complicated, so a Grunt task has been created that will handle this automatically: [grunt-build-atom-shell](https://github.com/paulcbetts/grunt-build-atom-shell).
 
-This task will automatically handle editing the `.gyp` file, building from
-source, then rebuilding your app's native Node modules to match the new
-executable name.
+This task will automatically handle editing the `.gyp` file, building from source, then rebuilding your app's native Node modules to match the new executable name.
 
 ### Creating a Custom Electron Fork
 
-Creating a custom fork of Electron is almost certainly not something you will
-need to do in order to build your app, even for "Production Level" applications.
-Using a tool such as `electron-packager` or `electron-builder` will allow you to
-"Rebrand" Electron without having to do these steps.
+Creating a custom fork of Electron is almost certainly not something you will need to do in order to build your app, even for "Production Level" applications. Using a tool such as `electron-packager` or `electron-builder` will allow you to "Rebrand" Electron without having to do these steps.
 
-You need to fork Electron when you have custom C++ code that you have patched
-directly into Electron, that either cannot be upstreamed, or has been rejected
-from the official version. As maintainers of Electron, we very much would like
-to make your scenario work, so please try as hard as you can to get your changes
-into the official version of Electron, it will be much much easier on you, and
-we appreciate your help.
+You need to fork Electron when you have custom C++ code that you have patched directly into Electron, that either cannot be upstreamed, or has been rejected from the official version. As maintainers of Electron, we very much would like to make your scenario work, so please try as hard as you can to get your changes into the official version of Electron, it will be much much easier on you, and we appreciate your help.
 
 #### Creating a Custom Release with surf-build
 
-1. Install [Surf](https://github.com/surf-build/surf), via npm:
-  `npm install -g surf-build@latest`
+1.  Install [Surf](https://github.com/surf-build/surf), via npm: `npm install -g surf-build@latest`
 
-2. Create a new S3 bucket and create the following empty directory structure:
+2.  Create a new S3 bucket and create the following empty directory structure:
 
 ```
 - atom-shell/
   - symbols/
   - dist/
+
 ```
 
-3. Set the following Environment Variables:
+1.  Set the following Environment Variables:
 
-  * `ELECTRON_GITHUB_TOKEN` - a token that can create releases on GitHub
-  * `ELECTRON_S3_ACCESS_KEY`, `ELECTRON_S3_BUCKET`, `ELECTRON_S3_SECRET_KEY` -
-    the place where you'll upload node.js headers as well as symbols
-  * `ELECTRON_RELEASE` - Set to `true` and the upload part will run, leave unset
-    and `surf-build` will just do CI-type checks, appropriate to run for every
-    pull request.
-  * `CI` - Set to `true` or else it will fail
-  * `GITHUB_TOKEN` - set it to the same as `ELECTRON_GITHUB_TOKEN`
-  * `SURF_TEMP` - set to `C:\Temp` on Windows to prevent path too long issues
-  * `TARGET_ARCH` - set to `ia32` or `x64`  
+*   `ELECTRON_GITHUB_TOKEN` - a token that can create releases on GitHub
+*   `ELECTRON_S3_ACCESS_KEY`, `ELECTRON_S3_BUCKET`, `ELECTRON_S3_SECRET_KEY` - the place where you'll upload node.js headers as well as symbols
+*   `ELECTRON_RELEASE` - Set to `true` and the upload part will run, leave unset and `surf-build` will just do CI-type checks, appropriate to run for every pull request.
+*   `CI` - Set to `true` or else it will fail
+*   `GITHUB_TOKEN` - set it to the same as `ELECTRON_GITHUB_TOKEN`
+*   `SURF_TEMP` - set to `C:\Temp` on Windows to prevent path too long issues
+*   `TARGET_ARCH` - set to `ia32` or `x64`
 
-4. In `script/upload.py`, you _must_ set `ELECTRON_REPO` to your fork (`MYORG/electron`),
-  especially if you are a contributor to Electron proper.
+1.  In `script/upload.py`, you _must_ set `ELECTRON_REPO` to your fork (`MYORG/electron`), especially if you are a contributor to Electron proper.
 
-5. `surf-build -r https://github.com/MYORG/electron -s YOUR_COMMIT -n 'surf-PLATFORM-ARCH'`
+2.  `surf-build -r https://github.com/MYORG/electron -s YOUR_COMMIT -n 'surf-PLATFORM-ARCH'`
 
-6. Wait a very, very long time for the build to complete.
+3.  Wait a very, very long time for the build to complete.
