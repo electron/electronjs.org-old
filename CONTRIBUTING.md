@@ -44,16 +44,6 @@ A few guidelines to keep in mind when publishing a blog post:
 
 ## How the Site is Built
 
-### Styles
-
-The styles are based on [Primer](https://github.com/primer/primer-css), the CSS toolkit that powers GitHub's front-end design.  It's purposefully limited to common components to provide our developers with the most flexibility, and to keep GitHub uniquely GitHubby. It's built with SCSS and available via NPM, so it's easy to include all or part of it within your own project.
-
-### Frontend JavaScript
-
-There's not a lot of JavaScript on the site, so we currently just use
-[vendored](js/vendor) third-party scripts in script tags, most of which are
-browserify-friendly modules downloaded from the [wzrd.in](https://wzrd.in/) web service.
-
 ### Metadata
 
 Much of the data for this website lives in the [_data](_data) directory. Jekyll loads data from YAML, JSON, and CSV files located in this directory and makes them available to all the templates.
@@ -65,6 +55,16 @@ Metadata can also be added on a per-page basis using Jekyll's [YAML Frontmatter]
 Jekyll uses the [Liquid templating language](https://wiki.github.com/shopify/liquid/liquid-for-designers).
 This allows templates to be written in HTML or Markdown, and all templates have access to a `site`
 object containing all the content from the `_data` directory.
+
+### Frontend JavaScript
+
+There's not a lot of JavaScript on the site, so we currently just use
+[vendored](js/vendor) third-party scripts in script tags, most of which are
+browserify-friendly modules downloaded from the [wzrd.in](https://wzrd.in/) web service.
+
+### Styles
+
+The styles are based on [Primer](https://github.com/primer/primer-css), the CSS toolkit that powers GitHub's front-end design.  It's purposefully limited to common components to provide our developers with the most flexibility, and to keep GitHub uniquely GitHubby. It's built with SCSS and available via NPM, so it's easy to include all or part of it within your own project.
 
 ## Developing the Site Locally
 
