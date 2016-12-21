@@ -20,7 +20,7 @@ git clone https://github.com/kevinsawicki/electron-samples
 To run any of the apps below, change into the app's directory,
 install dependencies, then start:
 
-```
+```sh
 cd activity-monitor
 npm install
 npm start
@@ -30,13 +30,13 @@ npm start
 
 Shows a doughnut chart of the CPU system, user, and idle activity time.
 
-![Screenshot](https://cloud.githubusercontent.com/assets/671378/20894933/3882a328-bacc-11e6-865b-4bc1c5ac7ec7.png)
+[![Screenshot](https://cloud.githubusercontent.com/assets/671378/20894933/3882a328-bacc-11e6-865b-4bc1c5ac7ec7.png)](https://github.com/kevinsawicki/electron-samples/tree/master/activity-monitor)
 
 ## Hash
 
 Shows the hash values of entered text using different algorithms.
 
-![screenshot](https://cloud.githubusercontent.com/assets/671378/21204178/de96fa12-c20a-11e6-8e94-f5b16e676eee.png)
+[![screenshot](https://cloud.githubusercontent.com/assets/671378/21204178/de96fa12-c20a-11e6-8e94-f5b16e676eee.png)](https://github.com/kevinsawicki/electron-samples/tree/master/hash)
 
 ## Mirror
 
@@ -47,7 +47,7 @@ Includes an optional rainbow filter effect that uses CSS animations.
 
 Shows the current price of oil, gold, and silver using the Yahoo Finance API.
 
-![screenshot](https://cloud.githubusercontent.com/assets/671378/21198004/6e7a3798-c1f2-11e6-8228-495de90b7797.png)
+[![screenshot](https://cloud.githubusercontent.com/assets/671378/21198004/6e7a3798-c1f2-11e6-8228-495de90b7797.png)](https://github.com/kevinsawicki/electron-samples/tree/master/prices)
 
 ## URL
 
