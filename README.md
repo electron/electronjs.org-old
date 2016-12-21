@@ -1,58 +1,17 @@
 # electron.atom.io
 
-The [website](http://electron.atom.io) for [Electron](https://github.com/electron/electron): [electron.atom.io](http://electron.atom.io).
+This is the source code for the [Electron website](http://electron.atom.io).
 
-- **[Add a project to electron.atom.io/apps](CONTRIBUTING.md#adding-an-app-or-project-to-the-site)**
-- **[Add a meetup to electron.atom.io/community](CONTRIBUTING.md#adding-a-meetup-to-the-site)**
+It's a static [Jekyll](https://jekyllrb.com) site hosted on [GitHub Pages](https://pages.github.com).
 
-### Running the site
+## Contributing
 
-This is a [Jekyll](https://jekyllrb.com) site hosted on [GitHub Pages](https://pages.github.com). To build a Jekyll site you'll need a few things on your system so double check the [Jekyll requirements](https://jekyllrb.com/docs/installation/#requirements).
+- [Adding your app to electron.atom.io/apps](https://github.com/electron/electron-apps#adding-your-app)
+- [Adding a meetup to electron.atom.io/community](CONTRIBUTING.md#apps)
+- [Improving the Electron documentation](CONTRIBUTING.md#documentation)
 
-Follow these steps to copy this repository to your computer and build the site:
+For more info about how this site works and how to contribute, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
-```bash
-git clone https://github.com/electron/electron.atom.io.git
-cd electron.atom.io
-npm run bootstrap
-npm start
-```
-
-### Updating Docs, Apps, Releases, Userland, etc
-
-This site contains data gathered from various sources, and there's a build script for each:
-
-- `npm run build-releases` fetches release data from the GitHub API
-- `npm run build-docs` fetches version list from S3, fetches docs for the highest release version number, fixes their links, and adds YML frontmatter for Jekyll to use.
-- `npm run build-awesome` copies [awesome-electron](https://github.com/sindresorhus/awesome-electron/blob/npm-module/contributing.md#building-and-publishing-the-npm-package) data into the `_data` directory
-- `npm run build-userland` copies [electron-userland-reports](https://github.com/electron/electron-userland-reports) data into the `_data` directory
-- `npm run build-apps` copies [electron-apps](https://github.com/electron/electron-apps) data into the `_data` directory
-
-To run all of the build scripts serially:
-
-```sh
-npm run build
-npm test
-```
-
-To verify all the links in the site:
-
-```sh
-cd electron.atom.io
-npm start
-```
-
-Wait for the app to start, then in another shell:
-
-```sh
-cd electron.atom.io
-npm run link-checker
-```
-
-### Contributing
-
-Thanks for contributing to the site! Checkout the [contributing documentation](CONTRIBUTING.md) for guidelines on pull requests.
-
-### License
+## License
 
 [MIT](LICENSE.md)
