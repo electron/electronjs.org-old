@@ -66,7 +66,7 @@ Jekyll uses the [Liquid templating language](https://wiki.github.com/shopify/liq
 This allows templates to be written in HTML or Markdown, and all templates have access to a `site`
 object containing all the content from the `_data` directory.
 
-## Running and Developing the Site Locally
+## Developing the Site Locally
 
 To build a Jekyll site you'll need a few things on your system (like Ruby) so double check the [Jekyll requirements](https://jekyllrb.com/docs/installation/#requirements).
 
