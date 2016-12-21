@@ -34,7 +34,7 @@
         <ul class="filterable-list">
           {% for repo in report.collection %}
             <li data-rank="{{forloop.index}}">
-              <a class="item-name" href="{{repo.htmlUrl}}">{{repo.fullName}}</a>
+              <a class="item-name" href="https://github.com/{{repo.fullName}}">{{repo.fullName}}</a>
               {% if repo.description %}
                 <span class="item-description">{{repo.description}}</span>
               {% endif %}
