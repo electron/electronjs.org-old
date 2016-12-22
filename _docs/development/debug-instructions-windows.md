@@ -1,5 +1,6 @@
 ---
 version: v1.4.13
+permalink: /docs/development/debug-instructions-windows
 category: Development
 redirect_from:
   - /docs/v0.37.8/development/debug-instructions-windows

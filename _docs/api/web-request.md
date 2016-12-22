@@ -1,5 +1,6 @@
 ---
 version: v1.4.13
+permalink: /docs/api/web-request
 category: API
 redirect_from:
   - /docs/v0.37.8/api/web-request

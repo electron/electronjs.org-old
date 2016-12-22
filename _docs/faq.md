@@ -1,5 +1,6 @@
 ---
 version: v1.4.13
+permalink: /docs/faq
 category: FAQ
 redirect_from:
   - /docs/v0.37.8/faq

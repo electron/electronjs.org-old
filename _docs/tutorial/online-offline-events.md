@@ -1,5 +1,6 @@
 ---
 version: v1.4.13
+permalink: /docs/tutorial/online-offline-events
 category: Tutorial
 redirect_from:
   - /docs/v0.37.8/tutorial/online-offline-events

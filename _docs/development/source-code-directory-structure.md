@@ -1,5 +1,6 @@
 ---
 version: v1.4.13
+permalink: /docs/development/source-code-directory-structure
 category: Development
 redirect_from:
   - /docs/v0.37.8/development/source-code-directory-structure

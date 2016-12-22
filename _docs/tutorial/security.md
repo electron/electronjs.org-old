@@ -1,5 +1,6 @@
 ---
 version: v1.4.13
+permalink: /docs/tutorial/security
 category: Tutorial
 redirect_from:
   - /docs/v0.37.8/tutorial/security

@@ -1,5 +1,6 @@
 ---
 version: v1.4.13
+permalink: /docs/api/frameless-window
 category: API
 redirect_from:
   - /docs/v0.37.8/api/frameless-window

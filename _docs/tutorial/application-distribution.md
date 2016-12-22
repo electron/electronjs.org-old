@@ -1,5 +1,6 @@
 ---
 version: v1.4.13
+permalink: /docs/tutorial/application-distribution
 category: Tutorial
 redirect_from:
   - /docs/v0.37.8/tutorial/application-distribution

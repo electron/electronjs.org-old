@@ -1,5 +1,6 @@
 ---
 version: v1.4.13
+permalink: /docs/tutorial/desktop-environment-integration
 category: Tutorial
 redirect_from:
   - /docs/v0.37.8/tutorial/desktop-environment-integration

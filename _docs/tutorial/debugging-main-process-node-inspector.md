@@ -1,5 +1,6 @@
 ---
 version: v1.4.13
+permalink: /docs/tutorial/debugging-main-process-node-inspector
 category: Tutorial
 redirect_from:
   - /docs/v0.37.8/tutorial/debugging-main-process-node-inspector

@@ -1,5 +1,6 @@
 ---
 version: v1.4.13
+permalink: /docs/api/crash-reporter
 category: API
 redirect_from:
   - /docs/v0.37.8/api/crash-reporter

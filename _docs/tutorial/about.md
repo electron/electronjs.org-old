@@ -1,5 +1,6 @@
 ---
 version: v1.4.13
+permalink: /docs/tutorial/about
 category: Tutorial
 redirect_from:
   - /docs/v0.37.8/tutorial/about

@@ -1,5 +1,6 @@
 ---
 version: v1.4.13
+permalink: /docs/tutorial/devtools-extension
 category: Tutorial
 redirect_from:
   - /docs/v0.37.8/tutorial/devtools-extension

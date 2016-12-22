@@ -1,5 +1,6 @@
 ---
 version: v1.4.13
+permalink: /docs/api/power-monitor
 category: API
 redirect_from:
   - /docs/v0.37.8/api/power-monitor
