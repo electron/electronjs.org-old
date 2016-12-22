@@ -65,6 +65,10 @@ describe('electron.atom.io', () => {
         expect(frontmatter.version).to.match(/^v\d\.\d\.\d/)
       })
 
+      it('has a permalink', () => {
+        expect(frontmatter.permalink).to.equal('/docs/api/app')
+      })
+
       it('has a category', () => {
         expect(frontmatter.category).to.equal('API')
       })
