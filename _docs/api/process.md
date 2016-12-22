@@ -81,7 +81,7 @@ redirect_from:
   - /docs/v0.20.2/api/process
   - /docs/v0.20.1/api/process
   - /docs/v0.20.0/api/process
-  - /docs/vlatest/api/process
+  - /docs/latest/api/process
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/process.md'
 title: process
 excerpt: Extensions to process object.

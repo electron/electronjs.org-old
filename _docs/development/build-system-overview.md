@@ -81,7 +81,7 @@ redirect_from:
   - /docs/v0.20.2/development/build-system-overview
   - /docs/v0.20.1/development/build-system-overview
   - /docs/v0.20.0/development/build-system-overview
-  - /docs/vlatest/development/build-system-overview
+  - /docs/latest/development/build-system-overview
 source_url: >-
   https://github.com/electron/electron/blob/master/docs/development/build-system-overview.md
 title: Build System Overview

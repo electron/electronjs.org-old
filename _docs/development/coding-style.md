@@ -81,7 +81,7 @@ redirect_from:
   - /docs/v0.20.2/development/coding-style
   - /docs/v0.20.1/development/coding-style
   - /docs/v0.20.0/development/coding-style
-  - /docs/vlatest/development/coding-style
+  - /docs/latest/development/coding-style
 source_url: >-
   https://github.com/electron/electron/blob/master/docs/development/coding-style.md
 title: Coding Style

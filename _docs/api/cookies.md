@@ -81,7 +81,7 @@ redirect_from:
   - /docs/v0.20.2/api/cookies
   - /docs/v0.20.1/api/cookies
   - /docs/v0.20.0/api/cookies
-  - /docs/vlatest/api/cookies
+  - /docs/latest/api/cookies
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/cookies.md'
 title: Cookies
 excerpt: Query and modify a session&apos;s cookies.

@@ -81,7 +81,7 @@ redirect_from:
   - /docs/v0.20.2/api/crash-reporter
   - /docs/v0.20.1/api/crash-reporter
   - /docs/v0.20.0/api/crash-reporter
-  - /docs/vlatest/api/crash-reporter
+  - /docs/latest/api/crash-reporter
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/crash-reporter.md'
 title: crashReporter
 excerpt: Submit crash reports to a remote server.

@@ -81,7 +81,7 @@ redirect_from:
   - /docs/v0.20.2/tutorial/planned-breaking-changes
   - /docs/v0.20.1/tutorial/planned-breaking-changes
   - /docs/v0.20.0/tutorial/planned-breaking-changes
-  - /docs/vlatest/tutorial/planned-breaking-changes
+  - /docs/latest/tutorial/planned-breaking-changes
 source_url: >-
   https://github.com/electron/electron/blob/master/docs/tutorial/planned-breaking-changes.md
 title: Planned Breaking API Changes

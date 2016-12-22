@@ -81,7 +81,7 @@ redirect_from:
   - /docs/v0.20.2/tutorial/security
   - /docs/v0.20.1/tutorial/security
   - /docs/v0.20.0/tutorial/security
-  - /docs/vlatest/tutorial/security
+  - /docs/latest/tutorial/security
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/security.md'
 title: 'Security, Native Capabilities, and Your Responsibility'
 excerpt: |-

@@ -81,7 +81,7 @@ redirect_from:
   - /docs/v0.20.2/api/structures/memory-usage-details
   - /docs/v0.20.1/api/structures/memory-usage-details
   - /docs/v0.20.0/api/structures/memory-usage-details
-  - /docs/vlatest/api/structures/memory-usage-details
+  - /docs/latest/api/structures/memory-usage-details
 source_url: >-
   https://github.com/electron/electron/blob/master/docs/api/structures/memory-usage-details.md
 title: MemoryUsageDetails Object

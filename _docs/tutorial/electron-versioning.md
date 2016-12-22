@@ -81,7 +81,7 @@ redirect_from:
   - /docs/v0.20.2/tutorial/electron-versioning
   - /docs/v0.20.1/tutorial/electron-versioning
   - /docs/v0.20.0/tutorial/electron-versioning
-  - /docs/vlatest/tutorial/electron-versioning
+  - /docs/latest/tutorial/electron-versioning
 source_url: >-
   https://github.com/electron/electron/blob/master/docs/tutorial/electron-versioning.md
 title: Electron Versioning

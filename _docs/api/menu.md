@@ -81,7 +81,7 @@ redirect_from:
   - /docs/v0.20.2/api/menu
   - /docs/v0.20.1/api/menu
   - /docs/v0.20.0/api/menu
-  - /docs/vlatest/api/menu
+  - /docs/latest/api/menu
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/menu.md'
 title: Menu
 excerpt: Create native application menus and context menus.

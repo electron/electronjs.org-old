@@ -81,7 +81,7 @@ redirect_from:
   - /docs/v0.20.2/tutorial/testing-on-headless-ci
   - /docs/v0.20.1/tutorial/testing-on-headless-ci
   - /docs/v0.20.0/tutorial/testing-on-headless-ci
-  - /docs/vlatest/tutorial/testing-on-headless-ci
+  - /docs/latest/tutorial/testing-on-headless-ci
 source_url: >-
   https://github.com/electron/electron/blob/master/docs/tutorial/testing-on-headless-ci.md
 title: 'Testing on Headless CI Systems (Travis CI, Jenkins)'

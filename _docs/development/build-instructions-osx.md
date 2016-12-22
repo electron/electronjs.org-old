@@ -81,7 +81,7 @@ redirect_from:
   - /docs/v0.20.2/development/build-instructions-osx
   - /docs/v0.20.1/development/build-instructions-osx
   - /docs/v0.20.0/development/build-instructions-osx
-  - /docs/vlatest/development/build-instructions-osx
+  - /docs/latest/development/build-instructions-osx
 source_url: >-
   https://github.com/electron/electron/blob/master/docs/development/build-instructions-osx.md
 title: Build Instructions (macOS)

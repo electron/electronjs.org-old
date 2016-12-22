@@ -81,7 +81,7 @@ redirect_from:
   - /docs/v0.20.2/api/structures/desktop-capturer-source
   - /docs/v0.20.1/api/structures/desktop-capturer-source
   - /docs/v0.20.0/api/structures/desktop-capturer-source
-  - /docs/vlatest/api/structures/desktop-capturer-source
+  - /docs/latest/api/structures/desktop-capturer-source
 source_url: >-
   https://github.com/electron/electron/blob/master/docs/api/structures/desktop-capturer-source.md
 title: DesktopCapturerSource Object

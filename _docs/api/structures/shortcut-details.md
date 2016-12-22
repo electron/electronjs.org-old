@@ -81,7 +81,7 @@ redirect_from:
   - /docs/v0.20.2/api/structures/shortcut-details
   - /docs/v0.20.1/api/structures/shortcut-details
   - /docs/v0.20.0/api/structures/shortcut-details
-  - /docs/vlatest/api/structures/shortcut-details
+  - /docs/latest/api/structures/shortcut-details
 source_url: >-
   https://github.com/electron/electron/blob/master/docs/api/structures/shortcut-details.md
 title: ShortcutDetails Object

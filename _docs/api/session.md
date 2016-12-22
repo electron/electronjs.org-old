@@ -81,7 +81,7 @@ redirect_from:
   - /docs/v0.20.2/api/session
   - /docs/v0.20.1/api/session
   - /docs/v0.20.0/api/session
-  - /docs/vlatest/api/session
+  - /docs/latest/api/session
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/session.md'
 title: session
 excerpt: 'Manage browser sessions, cookies, cache, proxy settings, etc.'

@@ -81,7 +81,7 @@ redirect_from:
   - /docs/v0.20.2/api/shell
   - /docs/v0.20.1/api/shell
   - /docs/v0.20.0/api/shell
-  - /docs/vlatest/api/shell
+  - /docs/latest/api/shell
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/shell.md'
 title: shell
 excerpt: Manage files and URLs using their default applications.

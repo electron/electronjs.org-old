@@ -81,7 +81,7 @@ redirect_from:
   - /docs/v0.20.2/api/accelerator
   - /docs/v0.20.1/api/accelerator
   - /docs/v0.20.0/api/accelerator
-  - /docs/vlatest/api/accelerator
+  - /docs/latest/api/accelerator
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/accelerator.md'
 title: Accelerator
 excerpt: Define keyboard shortcuts.

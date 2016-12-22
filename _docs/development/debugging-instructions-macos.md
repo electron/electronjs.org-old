@@ -81,7 +81,7 @@ redirect_from:
   - /docs/v0.20.2/development/debugging-instructions-macos
   - /docs/v0.20.1/development/debugging-instructions-macos
   - /docs/v0.20.0/development/debugging-instructions-macos
-  - /docs/vlatest/development/debugging-instructions-macos
+  - /docs/latest/development/debugging-instructions-macos
 source_url: >-
   https://github.com/electron/electron/blob/master/docs/development/debugging-instructions-macos.md
 title: Debugging on macOS

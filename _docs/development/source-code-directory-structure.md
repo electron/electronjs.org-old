@@ -81,7 +81,7 @@ redirect_from:
   - /docs/v0.20.2/development/source-code-directory-structure
   - /docs/v0.20.1/development/source-code-directory-structure
   - /docs/v0.20.0/development/source-code-directory-structure
-  - /docs/vlatest/development/source-code-directory-structure
+  - /docs/latest/development/source-code-directory-structure
 source_url: >-
   https://github.com/electron/electron/blob/master/docs/development/source-code-directory-structure.md
 title: Source Code Directory Structure

@@ -81,7 +81,7 @@ redirect_from:
   - /docs/v0.20.2/api/structures/certificate
   - /docs/v0.20.1/api/structures/certificate
   - /docs/v0.20.0/api/structures/certificate
-  - /docs/vlatest/api/structures/certificate
+  - /docs/latest/api/structures/certificate
 source_url: >-
   https://github.com/electron/electron/blob/master/docs/api/structures/certificate.md
 title: Certificate Object

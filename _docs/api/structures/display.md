@@ -81,7 +81,7 @@ redirect_from:
   - /docs/v0.20.2/api/structures/display
   - /docs/v0.20.1/api/structures/display
   - /docs/v0.20.0/api/structures/display
-  - /docs/vlatest/api/structures/display
+  - /docs/latest/api/structures/display
 source_url: >-
   https://github.com/electron/electron/blob/master/docs/api/structures/display.md
 title: Display Object

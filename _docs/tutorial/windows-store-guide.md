@@ -81,7 +81,7 @@ redirect_from:
   - /docs/v0.20.2/tutorial/windows-store-guide
   - /docs/v0.20.1/tutorial/windows-store-guide
   - /docs/v0.20.0/tutorial/windows-store-guide
-  - /docs/vlatest/tutorial/windows-store-guide
+  - /docs/latest/tutorial/windows-store-guide
 source_url: >-
   https://github.com/electron/electron/blob/master/docs/tutorial/windows-store-guide.md
 title: Windows Store Guide

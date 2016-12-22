@@ -81,7 +81,7 @@ redirect_from:
   - /docs/v0.20.2/api/download-item
   - /docs/v0.20.1/api/download-item
   - /docs/v0.20.0/api/download-item
-  - /docs/vlatest/api/download-item
+  - /docs/latest/api/download-item
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/download-item.md'
 title: DownloadItem
 excerpt: Control file downloads from remote sources.

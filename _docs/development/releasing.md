@@ -81,7 +81,7 @@ redirect_from:
   - /docs/v0.20.2/development/releasing
   - /docs/v0.20.1/development/releasing
   - /docs/v0.20.0/development/releasing
-  - /docs/vlatest/development/releasing
+  - /docs/latest/development/releasing
 source_url: 'https://github.com/electron/electron/blob/master/docs/development/releasing.md'
 title: Releasing
 excerpt: ''

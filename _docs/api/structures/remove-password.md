@@ -81,7 +81,7 @@ redirect_from:
   - /docs/v0.20.2/api/structures/remove-password
   - /docs/v0.20.1/api/structures/remove-password
   - /docs/v0.20.0/api/structures/remove-password
-  - /docs/vlatest/api/structures/remove-password
+  - /docs/latest/api/structures/remove-password
 source_url: >-
   https://github.com/electron/electron/blob/master/docs/api/structures/remove-password.md
 title: RemovePassword Object

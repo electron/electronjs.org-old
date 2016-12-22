@@ -81,7 +81,7 @@ redirect_from:
   - /docs/v0.20.2/api/power-monitor
   - /docs/v0.20.1/api/power-monitor
   - /docs/v0.20.0/api/power-monitor
-  - /docs/vlatest/api/power-monitor
+  - /docs/latest/api/power-monitor
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/power-monitor.md'
 title: powerMonitor
 excerpt: Monitor power state changes.

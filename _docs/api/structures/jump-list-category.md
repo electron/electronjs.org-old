@@ -81,7 +81,7 @@ redirect_from:
   - /docs/v0.20.2/api/structures/jump-list-category
   - /docs/v0.20.1/api/structures/jump-list-category
   - /docs/v0.20.0/api/structures/jump-list-category
-  - /docs/vlatest/api/structures/jump-list-category
+  - /docs/latest/api/structures/jump-list-category
 source_url: >-
   https://github.com/electron/electron/blob/master/docs/api/structures/jump-list-category.md
 title: JumpListCategory Object
