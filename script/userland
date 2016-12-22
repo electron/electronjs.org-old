@@ -1,6 +1,6 @@
 #!/bin/sh
 
-mdkdir -p _data/userland
+mkdir -p _data/userland
 rm -rf _data/userland
-mdkdir -p _data/userland
+mkdir -p _data/userland
 cp -r node_modules/electron-userland-reports/reports/* _data/userland/
