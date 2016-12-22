@@ -29,7 +29,7 @@
 
     {% if report.collectionType == 'Repository' %}
       <div id="{{report.slug}}">
-        <input class="filterable-list-input" placeholder="Filter apps name, description, keyword, author, repository URL..." autofocus="on" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+        <input class="filterable-list-input" placeholder="Filter by name, description, keyword, author, repository URL..." autofocus="on" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
 
         <ul class="filterable-list">
           {% for repo in report.collection %}
