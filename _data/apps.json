@@ -319,6 +319,19 @@
     "icon": "cloudcmd-icon.png"
   },
   {
+    "slug": "cloudtag",
+    "name": "cloudtag",
+    "description": "Share files, easier.",
+    "website": "https://cloudtag.io/",
+    "keywords": [
+      "cloudtag",
+      "share files",
+      "easy",
+      "utility"
+    ],
+    "icon": "cloudtag-icon.png"
+  },
+  {
     "slug": "cocos-creator",
     "name": "Cocos Creator",
     "description": "Game development tools",
@@ -2775,6 +2788,21 @@
       "productivity"
     ],
     "icon": "wp-express-icon.png"
+  },
+  {
+    "slug": "xcel",
+    "name": "xcel",
+    "description": "An Ultimate EXCEL Data Filter",
+    "website": "https://xcel.aotu.io/",
+    "repository": "https://github.com/o2team/xcel",
+    "keywords": [
+      "xcel",
+      "excel",
+      "data-cleaning",
+      "aotu.io"
+    ],
+    "license": "MIT",
+    "icon": "xcel-icon.png"
   },
   {
     "slug": "yeoman",
