@@ -1,5 +1,6 @@
 ---
 version: v1.4.13
+permalink: /docs/api/net
 category: API
 redirect_from:
   - /docs/v0.37.8/api/net
@@ -80,7 +81,7 @@ redirect_from:
   - /docs/v0.20.2/api/net
   - /docs/v0.20.1/api/net
   - /docs/v0.20.0/api/net
-  - /docs/vlatest/api/net
+  - /docs/latest/api/net
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/net.md'
 title: net
 excerpt: Issue HTTP/HTTPS requests using Chromium&apos;s native networking library

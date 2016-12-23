@@ -1,5 +1,6 @@
 ---
 version: v1.4.13
+permalink: /docs/api/web-frame
 category: API
 redirect_from:
   - /docs/v0.37.8/api/web-frame
@@ -80,7 +81,7 @@ redirect_from:
   - /docs/v0.20.2/api/web-frame
   - /docs/v0.20.1/api/web-frame
   - /docs/v0.20.0/api/web-frame
-  - /docs/vlatest/api/web-frame
+  - /docs/latest/api/web-frame
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/web-frame.md'
 title: webFrame
 excerpt: Customize the rendering of the current web page.

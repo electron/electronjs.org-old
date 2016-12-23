@@ -1,5 +1,6 @@
 ---
 version: v1.4.13
+permalink: /docs/api/browser-window-proxy
 category: API
 redirect_from:
   - /docs/v0.37.8/api/browser-window-proxy
@@ -80,7 +81,7 @@ redirect_from:
   - /docs/v0.20.2/api/browser-window-proxy
   - /docs/v0.20.1/api/browser-window-proxy
   - /docs/v0.20.0/api/browser-window-proxy
-  - /docs/vlatest/api/browser-window-proxy
+  - /docs/latest/api/browser-window-proxy
 source_url: >-
   https://github.com/electron/electron/blob/master/docs/api/browser-window-proxy.md
 title: BrowserWindowProxy

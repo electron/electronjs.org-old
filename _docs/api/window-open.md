@@ -1,5 +1,6 @@
 ---
 version: v1.4.13
+permalink: /docs/api/window-open
 category: API
 redirect_from:
   - /docs/v0.37.8/api/window-open
@@ -80,7 +81,7 @@ redirect_from:
   - /docs/v0.20.2/api/window-open
   - /docs/v0.20.1/api/window-open
   - /docs/v0.20.0/api/window-open
-  - /docs/vlatest/api/window-open
+  - /docs/latest/api/window-open
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/window-open.md'
 title: window.open Function
 excerpt: Open a new window and load a URL.

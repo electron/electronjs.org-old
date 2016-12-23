@@ -1,5 +1,6 @@
 ---
 version: v1.4.13
+permalink: /docs/api/ipc-main
 category: API
 redirect_from:
   - /docs/v0.37.8/api/ipc-main
@@ -80,7 +81,7 @@ redirect_from:
   - /docs/v0.20.2/api/ipc-main
   - /docs/v0.20.1/api/ipc-main
   - /docs/v0.20.0/api/ipc-main
-  - /docs/vlatest/api/ipc-main
+  - /docs/latest/api/ipc-main
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/ipc-main.md'
 title: ipcMain
 excerpt: Communicate asynchronously from the main process to renderer processes.

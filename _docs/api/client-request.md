@@ -1,5 +1,6 @@
 ---
 version: v1.4.13
+permalink: /docs/api/client-request
 category: API
 redirect_from:
   - /docs/v0.37.8/api/client-request
@@ -80,7 +81,7 @@ redirect_from:
   - /docs/v0.20.2/api/client-request
   - /docs/v0.20.1/api/client-request
   - /docs/v0.20.0/api/client-request
-  - /docs/vlatest/api/client-request
+  - /docs/latest/api/client-request
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/client-request.md'
 title: ClientRequest
 excerpt: Make HTTP/HTTPS requests.

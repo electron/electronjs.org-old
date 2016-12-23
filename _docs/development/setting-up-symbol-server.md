@@ -1,5 +1,6 @@
 ---
 version: v1.4.13
+permalink: /docs/development/setting-up-symbol-server
 category: Development
 redirect_from:
   - /docs/v0.37.8/development/setting-up-symbol-server
@@ -80,7 +81,7 @@ redirect_from:
   - /docs/v0.20.2/development/setting-up-symbol-server
   - /docs/v0.20.1/development/setting-up-symbol-server
   - /docs/v0.20.0/development/setting-up-symbol-server
-  - /docs/vlatest/development/setting-up-symbol-server
+  - /docs/latest/development/setting-up-symbol-server
 source_url: >-
   https://github.com/electron/electron/blob/master/docs/development/setting-up-symbol-server.md
 title: Setting Up Symbol Server in Debugger

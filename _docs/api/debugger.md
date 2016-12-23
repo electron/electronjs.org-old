@@ -1,5 +1,6 @@
 ---
 version: v1.4.13
+permalink: /docs/api/debugger
 category: API
 redirect_from:
   - /docs/v0.37.8/api/debugger
@@ -80,7 +81,7 @@ redirect_from:
   - /docs/v0.20.2/api/debugger
   - /docs/v0.20.1/api/debugger
   - /docs/v0.20.0/api/debugger
-  - /docs/vlatest/api/debugger
+  - /docs/latest/api/debugger
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/debugger.md'
 title: Debugger
 excerpt: An alternate transport for Chrome&apos;s remote debugging protocol.

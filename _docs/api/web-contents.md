@@ -1,5 +1,6 @@
 ---
 version: v1.4.13
+permalink: /docs/api/web-contents
 category: API
 redirect_from:
   - /docs/v0.37.8/api/web-contents
@@ -80,7 +81,7 @@ redirect_from:
   - /docs/v0.20.2/api/web-contents
   - /docs/v0.20.1/api/web-contents
   - /docs/v0.20.0/api/web-contents
-  - /docs/vlatest/api/web-contents
+  - /docs/latest/api/web-contents
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/web-contents.md'
 title: webContents
 excerpt: Render and control web pages.

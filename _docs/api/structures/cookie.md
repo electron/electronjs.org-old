@@ -1,5 +1,6 @@
 ---
 version: v1.4.13
+permalink: /docs/api/structures/cookie
 category: API
 redirect_from:
   - /docs/v0.37.8/api/structures/cookie
@@ -80,7 +81,7 @@ redirect_from:
   - /docs/v0.20.2/api/structures/cookie
   - /docs/v0.20.1/api/structures/cookie
   - /docs/v0.20.0/api/structures/cookie
-  - /docs/vlatest/api/structures/cookie
+  - /docs/latest/api/structures/cookie
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/structures/cookie.md'
 title: Cookie Object
 excerpt: ''

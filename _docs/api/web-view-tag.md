@@ -1,5 +1,6 @@
 ---
 version: v1.4.13
+permalink: /docs/api/web-view-tag
 category: API
 redirect_from:
   - /docs/v0.37.8/api/web-view-tag
@@ -80,7 +81,7 @@ redirect_from:
   - /docs/v0.20.2/api/web-view-tag
   - /docs/v0.20.1/api/web-view-tag
   - /docs/v0.20.0/api/web-view-tag
-  - /docs/vlatest/api/web-view-tag
+  - /docs/latest/api/web-view-tag
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/web-view-tag.md'
 title: '&lt;webview&gt; Tag'
 excerpt: Display external web content in an isolated frame and process.

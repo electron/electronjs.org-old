@@ -1,5 +1,6 @@
 ---
 version: v1.4.13
+permalink: /docs/api/desktop-capturer
 category: API
 redirect_from:
   - /docs/v0.37.8/api/desktop-capturer
@@ -80,7 +81,7 @@ redirect_from:
   - /docs/v0.20.2/api/desktop-capturer
   - /docs/v0.20.1/api/desktop-capturer
   - /docs/v0.20.0/api/desktop-capturer
-  - /docs/vlatest/api/desktop-capturer
+  - /docs/latest/api/desktop-capturer
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/desktop-capturer.md'
 title: desktopCapturer
 excerpt: |-

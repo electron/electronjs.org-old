@@ -1,5 +1,6 @@
 ---
 version: v1.4.13
+permalink: /docs/api/frameless-window
 category: API
 redirect_from:
   - /docs/v0.37.8/api/frameless-window
@@ -80,7 +81,7 @@ redirect_from:
   - /docs/v0.20.2/api/frameless-window
   - /docs/v0.20.1/api/frameless-window
   - /docs/v0.20.0/api/frameless-window
-  - /docs/vlatest/api/frameless-window
+  - /docs/latest/api/frameless-window
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/frameless-window.md'
 title: Frameless Window
 excerpt: >-

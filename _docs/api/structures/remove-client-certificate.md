@@ -1,5 +1,6 @@
 ---
 version: v1.4.13
+permalink: /docs/api/structures/remove-client-certificate
 category: API
 redirect_from:
   - /docs/v0.37.8/api/structures/remove-client-certificate
@@ -80,7 +81,7 @@ redirect_from:
   - /docs/v0.20.2/api/structures/remove-client-certificate
   - /docs/v0.20.1/api/structures/remove-client-certificate
   - /docs/v0.20.0/api/structures/remove-client-certificate
-  - /docs/vlatest/api/structures/remove-client-certificate
+  - /docs/latest/api/structures/remove-client-certificate
 source_url: >-
   https://github.com/electron/electron/blob/master/docs/api/structures/remove-client-certificate.md
 title: RemoveClientCertificate Object

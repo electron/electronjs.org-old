@@ -1,5 +1,6 @@
 ---
 version: v1.4.13
+permalink: /docs/api/structures/thumbar-button
 category: API
 redirect_from:
   - /docs/v0.37.8/api/structures/thumbar-button
@@ -80,7 +81,7 @@ redirect_from:
   - /docs/v0.20.2/api/structures/thumbar-button
   - /docs/v0.20.1/api/structures/thumbar-button
   - /docs/v0.20.0/api/structures/thumbar-button
-  - /docs/vlatest/api/structures/thumbar-button
+  - /docs/latest/api/structures/thumbar-button
 source_url: >-
   https://github.com/electron/electron/blob/master/docs/api/structures/thumbar-button.md
 title: ThumbarButton Object

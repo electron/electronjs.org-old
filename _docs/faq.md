@@ -1,5 +1,6 @@
 ---
 version: v1.4.13
+permalink: /docs/faq
 category: FAQ
 redirect_from:
   - /docs/v0.37.8/faq
@@ -80,7 +81,7 @@ redirect_from:
   - /docs/v0.20.2/faq
   - /docs/v0.20.1/faq
   - /docs/v0.20.0/faq
-  - /docs/vlatest/faq
+  - /docs/latest/faq
 source_url: 'https://github.com/electron/electron/blob/master/docs/faq.md'
 title: Electron FAQ
 excerpt: ''

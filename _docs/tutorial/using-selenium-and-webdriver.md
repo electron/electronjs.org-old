@@ -1,5 +1,6 @@
 ---
 version: v1.4.13
+permalink: /docs/tutorial/using-selenium-and-webdriver
 category: Tutorial
 redirect_from:
   - /docs/v0.37.8/tutorial/using-selenium-and-webdriver
@@ -80,7 +81,7 @@ redirect_from:
   - /docs/v0.20.2/tutorial/using-selenium-and-webdriver
   - /docs/v0.20.1/tutorial/using-selenium-and-webdriver
   - /docs/v0.20.0/tutorial/using-selenium-and-webdriver
-  - /docs/vlatest/tutorial/using-selenium-and-webdriver
+  - /docs/latest/tutorial/using-selenium-and-webdriver
 source_url: >-
   https://github.com/electron/electron/blob/master/docs/tutorial/using-selenium-and-webdriver.md
 title: Using Selenium and WebDriver

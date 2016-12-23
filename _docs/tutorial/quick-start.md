@@ -1,5 +1,6 @@
 ---
 version: v1.4.13
+permalink: /docs/tutorial/quick-start
 category: Tutorial
 redirect_from:
   - /docs/v0.37.8/tutorial/quick-start
@@ -80,7 +81,7 @@ redirect_from:
   - /docs/v0.20.2/tutorial/quick-start
   - /docs/v0.20.1/tutorial/quick-start
   - /docs/v0.20.0/tutorial/quick-start
-  - /docs/vlatest/tutorial/quick-start
+  - /docs/latest/tutorial/quick-start
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/quick-start.md'
 title: Quick Start
 excerpt: ''

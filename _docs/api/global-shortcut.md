@@ -1,5 +1,6 @@
 ---
 version: v1.4.13
+permalink: /docs/api/global-shortcut
 category: API
 redirect_from:
   - /docs/v0.37.8/api/global-shortcut
@@ -80,7 +81,7 @@ redirect_from:
   - /docs/v0.20.2/api/global-shortcut
   - /docs/v0.20.1/api/global-shortcut
   - /docs/v0.20.0/api/global-shortcut
-  - /docs/vlatest/api/global-shortcut
+  - /docs/latest/api/global-shortcut
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/global-shortcut.md'
 title: globalShortcut
 excerpt: Detect keyboard events when the application does not have keyboard focus.

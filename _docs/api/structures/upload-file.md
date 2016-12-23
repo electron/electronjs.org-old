@@ -1,5 +1,6 @@
 ---
 version: v1.4.13
+permalink: /docs/api/structures/upload-file
 category: API
 redirect_from:
   - /docs/v0.37.8/api/structures/upload-file
@@ -80,7 +81,7 @@ redirect_from:
   - /docs/v0.20.2/api/structures/upload-file
   - /docs/v0.20.1/api/structures/upload-file
   - /docs/v0.20.0/api/structures/upload-file
-  - /docs/vlatest/api/structures/upload-file
+  - /docs/latest/api/structures/upload-file
 source_url: >-
   https://github.com/electron/electron/blob/master/docs/api/structures/upload-file.md
 title: UploadFile Object

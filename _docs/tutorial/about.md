@@ -1,5 +1,6 @@
 ---
 version: v1.4.13
+permalink: /docs/tutorial/about
 category: Tutorial
 redirect_from:
   - /docs/v0.37.8/tutorial/about
@@ -80,7 +81,7 @@ redirect_from:
   - /docs/v0.20.2/tutorial/about
   - /docs/v0.20.1/tutorial/about
   - /docs/v0.20.0/tutorial/about
-  - /docs/vlatest/tutorial/about
+  - /docs/latest/tutorial/about
 source_url: 'https://github.com/electron/electron/blob/master/docs/tutorial/about.md'
 title: About Electron
 excerpt: ''

@@ -1,5 +1,6 @@
 ---
 version: v1.4.13
+permalink: /docs/api/file-object
 category: API
 redirect_from:
   - /docs/v0.37.8/api/file-object
@@ -80,7 +81,7 @@ redirect_from:
   - /docs/v0.20.2/api/file-object
   - /docs/v0.20.1/api/file-object
   - /docs/v0.20.0/api/file-object
-  - /docs/vlatest/api/file-object
+  - /docs/latest/api/file-object
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/file-object.md'
 title: File Object
 excerpt: >-

@@ -1,5 +1,6 @@
 ---
 version: v1.4.13
+permalink: /docs/api/ipc-renderer
 category: API
 redirect_from:
   - /docs/v0.37.8/api/ipc-renderer
@@ -80,7 +81,7 @@ redirect_from:
   - /docs/v0.20.2/api/ipc-renderer
   - /docs/v0.20.1/api/ipc-renderer
   - /docs/v0.20.0/api/ipc-renderer
-  - /docs/vlatest/api/ipc-renderer
+  - /docs/latest/api/ipc-renderer
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/ipc-renderer.md'
 title: ipcRenderer
 excerpt: Communicate asynchronously from a renderer process to the main process.

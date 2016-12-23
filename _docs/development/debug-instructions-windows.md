@@ -1,5 +1,6 @@
 ---
 version: v1.4.13
+permalink: /docs/development/debug-instructions-windows
 category: Development
 redirect_from:
   - /docs/v0.37.8/development/debug-instructions-windows
@@ -80,7 +81,7 @@ redirect_from:
   - /docs/v0.20.2/development/debug-instructions-windows
   - /docs/v0.20.1/development/debug-instructions-windows
   - /docs/v0.20.0/development/debug-instructions-windows
-  - /docs/vlatest/development/debug-instructions-windows
+  - /docs/latest/development/debug-instructions-windows
 source_url: >-
   https://github.com/electron/electron/blob/master/docs/development/debug-instructions-windows.md
 title: Debugging on Windows

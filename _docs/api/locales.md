@@ -1,5 +1,6 @@
 ---
 version: v1.4.13
+permalink: /docs/api/locales
 category: API
 redirect_from:
   - /docs/v0.37.8/api/locales
@@ -80,7 +81,7 @@ redirect_from:
   - /docs/v0.20.2/api/locales
   - /docs/v0.20.1/api/locales
   - /docs/v0.20.0/api/locales
-  - /docs/vlatest/api/locales
+  - /docs/latest/api/locales
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/locales.md'
 title: Locales
 excerpt: Locale values returned by <code>app.getLocale()</code>.

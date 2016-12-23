@@ -1,5 +1,6 @@
 ---
 version: v1.4.13
+permalink: /docs/api/structures/task
 category: API
 redirect_from:
   - /docs/v0.37.8/api/structures/task
@@ -80,7 +81,7 @@ redirect_from:
   - /docs/v0.20.2/api/structures/task
   - /docs/v0.20.1/api/structures/task
   - /docs/v0.20.0/api/structures/task
-  - /docs/vlatest/api/structures/task
+  - /docs/latest/api/structures/task
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/structures/task.md'
 title: Task Object
 excerpt: ''

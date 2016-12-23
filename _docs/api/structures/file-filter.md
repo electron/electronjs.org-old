@@ -1,5 +1,6 @@
 ---
 version: v1.4.13
+permalink: /docs/api/structures/file-filter
 category: API
 redirect_from:
   - /docs/v0.37.8/api/structures/file-filter
@@ -80,7 +81,7 @@ redirect_from:
   - /docs/v0.20.2/api/structures/file-filter
   - /docs/v0.20.1/api/structures/file-filter
   - /docs/v0.20.0/api/structures/file-filter
-  - /docs/vlatest/api/structures/file-filter
+  - /docs/latest/api/structures/file-filter
 source_url: >-
   https://github.com/electron/electron/blob/master/docs/api/structures/file-filter.md
 title: FileFilter Object

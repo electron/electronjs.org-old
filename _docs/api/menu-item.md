@@ -1,5 +1,6 @@
 ---
 version: v1.4.13
+permalink: /docs/api/menu-item
 category: API
 redirect_from:
   - /docs/v0.37.8/api/menu-item
@@ -80,7 +81,7 @@ redirect_from:
   - /docs/v0.20.2/api/menu-item
   - /docs/v0.20.1/api/menu-item
   - /docs/v0.20.0/api/menu-item
-  - /docs/vlatest/api/menu-item
+  - /docs/latest/api/menu-item
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/menu-item.md'
 title: MenuItem
 excerpt: Add items to native application menus and context menus.

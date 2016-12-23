@@ -1,5 +1,6 @@
 ---
 version: v1.4.13
+permalink: /docs/api/remote
 category: API
 redirect_from:
   - /docs/v0.37.8/api/remote
@@ -80,7 +81,7 @@ redirect_from:
   - /docs/v0.20.2/api/remote
   - /docs/v0.20.1/api/remote
   - /docs/v0.20.0/api/remote
-  - /docs/vlatest/api/remote
+  - /docs/latest/api/remote
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/remote.md'
 title: remote
 excerpt: Use main process modules from the renderer process.

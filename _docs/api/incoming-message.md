@@ -1,5 +1,6 @@
 ---
 version: v1.4.13
+permalink: /docs/api/incoming-message
 category: API
 redirect_from:
   - /docs/v0.37.8/api/incoming-message
@@ -80,7 +81,7 @@ redirect_from:
   - /docs/v0.20.2/api/incoming-message
   - /docs/v0.20.1/api/incoming-message
   - /docs/v0.20.0/api/incoming-message
-  - /docs/vlatest/api/incoming-message
+  - /docs/latest/api/incoming-message
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/incoming-message.md'
 title: IncomingMessage
 excerpt: Handle responses to HTTP/HTTPS requests.

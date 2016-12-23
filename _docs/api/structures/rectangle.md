@@ -1,5 +1,6 @@
 ---
 version: v1.4.13
+permalink: /docs/api/structures/rectangle
 category: API
 redirect_from:
   - /docs/v0.37.8/api/structures/rectangle
@@ -80,7 +81,7 @@ redirect_from:
   - /docs/v0.20.2/api/structures/rectangle
   - /docs/v0.20.1/api/structures/rectangle
   - /docs/v0.20.0/api/structures/rectangle
-  - /docs/vlatest/api/structures/rectangle
+  - /docs/latest/api/structures/rectangle
 source_url: >-
   https://github.com/electron/electron/blob/master/docs/api/structures/rectangle.md
 title: Rectangle Object
