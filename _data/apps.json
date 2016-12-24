@@ -2008,6 +2008,34 @@
     "icon": "remember-icon.png"
   },
   {
+    "slug": "riot",
+    "name": "Riot",
+    "description": "A glossy Matrix collaboration client for the web",
+    "website": "https://riot.im/",
+    "repository": "https://github.com/vector-im/riot-web",
+    "keywords": [
+      "Riot",
+      "chat",
+      "Matrix",
+      "client",
+      "encrypted",
+      "encryption",
+      "end-to-end",
+      "e2e",
+      "message",
+      "messaging",
+      "voip",
+      "video",
+      "photo",
+      "giphy",
+      "gif",
+      "share",
+      "collaborate"
+    ],
+    "license": "Apache-2.0",
+    "icon": "riot-icon.png"
+  },
+  {
     "slug": "rocket-chat",
     "name": "Rocket.Chat",
     "description": "The ultimate open source web chat platform",
