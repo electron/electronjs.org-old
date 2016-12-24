@@ -2008,6 +2008,21 @@
     "icon": "remember-icon.png"
   },
   {
+    "slug": "remind",
+    "name": "Remind",
+    "description": "Send quick, simple messages to any device—for free.",
+    "website": "https://www.remind.com/",
+    "keywords": [
+      "school",
+      "messaging",
+      "communications",
+      "teacher",
+      "parent",
+      "student"
+    ],
+    "icon": "remind-icon.png"
+  },
+  {
     "slug": "riot",
     "name": "Riot",
     "description": "A glossy Matrix collaboration client for the web",
