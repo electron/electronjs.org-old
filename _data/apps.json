@@ -1127,6 +1127,19 @@
     "icon": "hyper-icon.png"
   },
   {
+    "slug": "i5sing",
+    "name": "i5sing",
+    "description": "A simple music client for 5sing.kugou.com",
+    "website": "http://i5sing.com",
+    "repository": "https://github.com/i5sing/i5SING",
+    "keywords": [
+      "5sing",
+      "music client",
+      "kugou"
+    ],
+    "icon": "i5sing-icon.png"
+  },
+  {
     "slug": "infinity",
     "name": "Infinity",
     "description": "An easy way to make presentation.",
