@@ -524,6 +524,13 @@
     "icon": "deco-ide-icon.png"
   },
   {
+    "slug": "deepnest",
+    "name": "Deepnest",
+    "description": "Automatic vector nesting for laser cutters",
+    "website": "http://deepnest.io",
+    "icon": "deepnest-icon.png"
+  },
+  {
     "slug": "demio",
     "name": "Demio",
     "description": "A Webinar Platform Built for Inbound Marketing and Sales",
@@ -1497,6 +1504,20 @@
     ],
     "license": "Apache 2.0",
     "icon": "min-icon.png"
+  },
+  {
+    "slug": "minta",
+    "name": "Minta",
+    "description": "Generate regular expressions",
+    "website": "https://github.com/ecrmnn/minta",
+    "repository": "https://github.com/ecrmnn/minta",
+    "keywords": [
+      "regex",
+      "generator",
+      "regexgen"
+    ],
+    "license": "MIT",
+    "icon": "minta-icon.png"
   },
   {
     "slug": "mixmax",
