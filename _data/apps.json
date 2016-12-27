@@ -433,6 +433,20 @@
     "icon": "cryptocat-icon.png"
   },
   {
+    "slug": "cumulus",
+    "name": "Cumulus",
+    "description": "A SoundCloud player that lives in your menubar",
+    "website": "http://gillesdemey.github.io/Cumulus/",
+    "repository": "https://github.com/gillesdemey/Cumulus",
+    "keywords": [
+      "soundcloud",
+      "music",
+      "player"
+    ],
+    "license": "MIT",
+    "icon": "cumulus-icon.png"
+  },
+  {
     "slug": "curse",
     "name": "Curse",
     "description": "Fast and free communication for gamers",
