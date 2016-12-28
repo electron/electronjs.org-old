@@ -2428,6 +2428,20 @@
     "icon": "svgsus-icon.png"
   },
   {
+    "slug": "symbsearch",
+    "name": "SymbSearch",
+    "description": "A tool for searching symbols and special letters.",
+    "website": "http://leun4m.github.io/symbsearch",
+    "repository": "https://github.com/Leun4m/symbsearch",
+    "keywords": [
+      "unicode",
+      "letters",
+      "symbols"
+    ],
+    "license": "MIT",
+    "icon": "symbsearch-icon.png"
+  },
+  {
     "slug": "sync",
     "name": "Sync",
     "description": "A business chat tool",
