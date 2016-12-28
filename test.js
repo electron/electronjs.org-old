@@ -66,7 +66,7 @@ describe('electron.atom.io', () => {
       })
 
       it('has a permalink', () => {
-        expect(frontmatter.permalink).to.equal('/docs/api/app')
+        expect(frontmatter.permalink).to.equal('/docs/api/app/')
       })
 
       it('has a category', () => {
@@ -80,12 +80,12 @@ describe('electron.atom.io', () => {
       })
 
       it('includes a redirect for `latest`', () => {
-        expect(frontmatter.redirect_from).to.include('/docs/latest/api/app')
+        expect(frontmatter.redirect_from).to.include('/docs/latest/api/app/')
       })
 
       it('includes custom redirects', () => {
-        expect(frontmatter.redirect_from).to.include('/docs/api/old-app-url')
-        expect(frontmatter.redirect_from).to.include('/docs/api/old-app-url2')
+        expect(frontmatter.redirect_from).to.include('/docs/api/old-app-url/')
+        expect(frontmatter.redirect_from).to.include('/docs/api/old-app-url2/')
       })
 
       it('has a source_url', () => {
