@@ -107,11 +107,11 @@ See [`Menu`]({{site.baseurl}}/docs/api/menu) for examples.
     *   `label` String - (optional)
     *   `sublabel` String - (optional)
     *   `accelerator` [Accelerator]({{site.baseurl}}/docs/api/accelerator) - (optional)
-    *   `icon` ([NativeImage]({{site.baseurl}}/docs/api/native-image) | String) - (optional)
+    *   `icon` ([NativeImage]({{site.baseurl}}/docs/api/native-image) &#124; String) - (optional)
     *   `enabled` Boolean - (optional) If false, the menu item will be greyed out and unclickable.
     *   `visible` Boolean - (optional) If false, the menu item will be entirely hidden.
     *   `checked` Boolean - (optional) Should only be specified for `checkbox` or `radio` type menu items.
-    *   `submenu` (MenuItemConstructorOptions[] | Menu) - (optional) Should be specified for `submenu` type menu items. If `submenu` is specified, the `type: 'submenu'` can be omitted. If the value is not a `Menu` then it will be automatically converted to one using `Menu.buildFromTemplate`.
+    *   `submenu` (MenuItemConstructorOptions[] &#124; Menu) - (optional) Should be specified for `submenu` type menu items. If `submenu` is specified, the `type: 'submenu'` can be omitted. If the value is not a `Menu` then it will be automatically converted to one using `Menu.buildFromTemplate`.
     *   `id` String - (optional) Unique within a single menu. If defined then it can be used as a reference to this item by the position attribute.
     *   `position` String - (optional) This field allows fine-grained definition of the specific location within a given menu.
 

@@ -219,7 +219,7 @@ It creates a new `BrowserWindow` with native properties as set by the `options`.
     *   `skipTaskbar` Boolean (optional) - Whether to show the window in taskbar. Default is `false`.
     *   `kiosk` Boolean (optional) - The kiosk mode. Default is `false`.
     *   `title` String (optional) - Default window title. Default is `"Electron"`.
-    *   `icon` ([NativeImage]({{site.baseurl}}/docs/api/native-image) | String) (optional) - The window icon. On Windows it is recommended to use `ICO` icons to get best visual effects, you can also leave it undefined so the executable's icon will be used.
+    *   `icon` ([NativeImage]({{site.baseurl}}/docs/api/native-image) &#124; String) (optional) - The window icon. On Windows it is recommended to use `ICO` icons to get best visual effects, you can also leave it undefined so the executable's icon will be used.
     *   `show` Boolean (optional) - Whether window should be shown when created. Default is `true`.
     *   `frame` Boolean (optional) - Specify `false` to create a [Frameless Window]({{site.baseurl}}/docs/api/frameless-window). Default is `true`.
     *   `parent` BrowserWindow (optional) - Specify parent window. Default is `null`.
@@ -908,7 +908,7 @@ Same as `webContents.capturePage([rect, ]callback)`.
     *   `httpReferrer` String (optional) - A HTTP Referrer url.
     *   `userAgent` String (optional) - A user agent originating the request.
     *   `extraHeaders` String (optional) - Extra headers separated by "\n"
-    *   `postData` ([UploadRawData]({{site.baseurl}}/docs/api/structures/upload-raw-data) | [UploadFile]({{site.baseurl}}/docs/api/structures/upload-file) | [UploadFileSystem]({{site.baseurl}}/docs/api/structures/upload-file-system) | [UploadBlob]({{site.baseurl}}/docs/api/structures/upload-blob))[] - (optional)
+    *   `postData` ([UploadRawData]({{site.baseurl}}/docs/api/structures/upload-raw-data) &#124; [UploadFile]({{site.baseurl}}/docs/api/structures/upload-file) &#124; [UploadFileSystem]({{site.baseurl}}/docs/api/structures/upload-file-system) &#124; [UploadBlob]({{site.baseurl}}/docs/api/structures/upload-blob))[] - (optional)
 
 Same as `webContents.loadURL(url[, options])`.
 

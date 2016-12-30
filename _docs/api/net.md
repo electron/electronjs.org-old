@@ -135,7 +135,7 @@ The `net` module has the following methods:
 
 ### `net.request(options)`
 
-*   `options` (Object | String) - The `ClientRequest` constructor options.
+*   `options` (Object &#124; String) - The `ClientRequest` constructor options.
 
 Returns [`ClientRequest`]({{site.baseurl}}/docs/api/client-request)
 

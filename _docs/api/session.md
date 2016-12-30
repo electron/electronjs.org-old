@@ -406,7 +406,7 @@ Allows resuming `cancelled` or `interrupted` downloads from previous `Session`. 
 
 #### `ses.clearAuthCache(options[, callback])`
 
-*   `options` ([RemovePassword]({{site.baseurl}}/docs/api/structures/remove-password) | [RemoveClientCertificate]({{site.baseurl}}/docs/api/structures/remove-client-certificate))
+*   `options` ([RemovePassword]({{site.baseurl}}/docs/api/structures/remove-password) &#124; [RemoveClientCertificate]({{site.baseurl}}/docs/api/structures/remove-client-certificate))
 *   `callback` Function (optional) - Called when operation is done
 
 Clears the session’s HTTP authentication cache.

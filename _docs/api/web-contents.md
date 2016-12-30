@@ -537,7 +537,7 @@ Emitted when the devtools window instructs the webContents to reload
     *   `httpReferrer` String (optional) - A HTTP Referrer url.
     *   `userAgent` String (optional) - A user agent originating the request.
     *   `extraHeaders` String (optional) - Extra headers separated by "\n"
-    *   `postData` ([UploadRawData]({{site.baseurl}}/docs/api/structures/upload-raw-data) | [UploadFile]({{site.baseurl}}/docs/api/structures/upload-file) | [UploadFileSystem]({{site.baseurl}}/docs/api/structures/upload-file-system) | [UploadBlob]({{site.baseurl}}/docs/api/structures/upload-blob))[] - (optional)
+    *   `postData` ([UploadRawData]({{site.baseurl}}/docs/api/structures/upload-raw-data) &#124; [UploadFile]({{site.baseurl}}/docs/api/structures/upload-file) &#124; [UploadFileSystem]({{site.baseurl}}/docs/api/structures/upload-file-system) &#124; [UploadBlob]({{site.baseurl}}/docs/api/structures/upload-blob))[] - (optional)
 
 Loads the `url` in the window. The `url` must contain the protocol prefix, e.g. the `http://` or `file://`. If the load should bypass http cache then use the `pragma` header to achieve it.
 
