@@ -145,7 +145,7 @@ If you want to keep exact same behaviors on all platforms, you should not rely o
 
 ### `new Tray(image)`
 
-*   `image` ([NativeImage]({{site.baseurl}}/docs/api/native-image) | String)
+*   `image` ([NativeImage]({{site.baseurl}}/docs/api/native-image) &#124; String)
 
 Creates a new tray icon associated with the `image`.
 

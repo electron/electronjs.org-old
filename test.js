@@ -59,6 +59,11 @@ describe('electron.atom.io', () => {
       expect(doc).to.include('```javascript\n')
     })
 
+    it('HTML-encodes pipe characters to avoid confusing the jekyll kramdown parser', () => {
+      const doc = loadDoc('api/net.md')
+      expect(doc).to.include('(Object &#124; String)')
+    })
+
     describe('frontmatter', () => {
       const frontmatter = matter(loadDoc('api/app.md')).data
       it('has a semver version', () => {

@@ -97,7 +97,7 @@ Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process)
 
 ### `new ClientRequest(options)`
 
-*   `options` (Object | String) - If `options` is a String, it is interpreted as the request URL. If it is an object, it is expected to fully specify an HTTP request via the following properties:
+*   `options` (Object &#124; String) - If `options` is a String, it is interpreted as the request URL. If it is an object, it is expected to fully specify an HTTP request via the following properties:
     *   `method` String (optional) - The HTTP request method. Defaults to the GET method.
     *   `url` String (optional) - The request URL. Must be provided in the absolute form with the protocol scheme specified as http or https.
     *   `session` Object (optional) - The [`Session`]({{site.baseurl}}/docs/api/session) instance with which the request is associated.
@@ -220,7 +220,7 @@ Removes a previously set extra header name. This method can be called only befor
 
 #### `request.write(chunk[, encoding][, callback])`
 
-*   `chunk` (String | Buffer) - A chunk of the request body's data. If it is a string, it is converted into a Buffer using the specified encoding.
+*   `chunk` (String &#124; Buffer) - A chunk of the request body's data. If it is a string, it is converted into a Buffer using the specified encoding.
 *   `encoding` String (optional) - Used to convert string chunks into Buffer objects. Defaults to 'utf-8'.
 *   `callback` Function (optional) - Called after the write operation ends.
 
@@ -230,7 +230,7 @@ Adds a chunk of data to the request body. The first write operation may cause th
 
 #### `request.end([chunk][, encoding][, callback])`
 
-*   `chunk` (String | Buffer) (optional)
+*   `chunk` (String &#124; Buffer) (optional)
 *   `encoding` String (optional)
 *   `callback` Function (optional)
 
