@@ -1080,6 +1080,19 @@
     "icon": "harmony-icon.png"
   },
   {
+    "slug": "hawkeye",
+    "name": "Hawk Eye",
+    "description": "A useful app for GitHub Notifications",
+    "website": "https://harksys.com/labs/introducing-hawk-eye-a-useful-app-for-github-notifications/",
+    "repository": "https://github.com/harksys/HawkEye",
+    "keywords": [
+      "github",
+      "notifications",
+      "developer tools"
+    ],
+    "icon": "hawkeye-icon.png"
+  },
+  {
     "slug": "healthi",
     "name": "healthi",
     "description": "Your mac's battery doctor",
@@ -1185,6 +1198,22 @@
       "markdown"
     ],
     "icon": "inkdrop-icon.png"
+  },
+  {
+    "slug": "inpad",
+    "name": "Inpad",
+    "description": "A Polished Notes App with Github Flavored Markdown",
+    "website": "http://sarah-seo.github.io/Inpad",
+    "repository": "https://github.com/Sarah-Seo/Inpad.git",
+    "keywords": [
+      "markdown",
+      "notes",
+      "gfm",
+      "latex",
+      "memo"
+    ],
+    "license": "MIT",
+    "icon": "inpad-icon.png"
   },
   {
     "slug": "insomnia",
