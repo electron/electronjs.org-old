@@ -1117,8 +1117,8 @@
     "slug": "healthi",
     "name": "healthi",
     "description": "Your mac's battery doctor",
-    "website": "http://pablopunk.com/healthi",
-    "repository": "http://github.com/pablopunk/healthi",
+    "website": "http://pablopunk.com/healthi.app",
+    "repository": "http://github.com/pablopunk/healthi.app",
     "keywords": [
       "battery",
       "mac",
