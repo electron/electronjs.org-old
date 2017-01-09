@@ -516,6 +516,18 @@
     "icon": "dbglass-icon.png"
   },
   {
+    "slug": "deckard-ai",
+    "name": "Deckard AI",
+    "description": "Software team assistant that makes code talk",
+    "website": "https://www.deckard.ai",
+    "keywords": [
+      "productivity",
+      "collaboration",
+      "documentation"
+    ],
+    "icon": "deckard-ai-icon.png"
+  },
+  {
     "slug": "deckhub",
     "name": "DeckHub",
     "description": "TweetDeck style desktop client for GitHub",
