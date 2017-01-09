@@ -1661,6 +1661,20 @@
     "icon": "mongoclient-icon.png"
   },
   {
+    "slug": "mongodb-compass",
+    "name": "MongoDB Compass",
+    "description": "The MongoDB GUI",
+    "website": "https://mongodb.com/compass",
+    "keywords": [
+      "mongodb",
+      "database",
+      "gui",
+      "admin",
+      "management"
+    ],
+    "icon": "mongodb-compass-icon.png"
+  },
+  {
     "slug": "mongotron",
     "name": "Mongotron",
     "description": "Cross platform MongoDB management",
