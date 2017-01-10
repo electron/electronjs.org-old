@@ -2293,6 +2293,13 @@
     "icon": "shiba-icon.png"
   },
   {
+    "slug": "shift",
+    "name": "Shift",
+    "description": "Switch between multiple Gmail, Calendar and Drive accounts with ease.",
+    "website": "https://tryshift.com",
+    "icon": "shift-icon.png"
+  },
+  {
     "slug": "shortexts",
     "name": "Shortexts",
     "description": "Shortcuts for texts you copy frequently, folders and emojis",
@@ -2330,6 +2337,23 @@
     ],
     "license": "GPLv2",
     "icon": "simplenote-icon.png"
+  },
+  {
+    "slug": "skrifa",
+    "name": "Skrifa",
+    "description": "A simple word processor build with web technologies.",
+    "website": "https://skrifa.xyz",
+    "repository": "https://github.com/Skrifa/Skrifa",
+    "keywords": [
+      "editor",
+      "note",
+      "notebook",
+      "encrypted",
+      "word",
+      "office"
+    ],
+    "license": "GPLv3",
+    "icon": "skrifa-icon.png"
   },
   {
     "slug": "slack",
@@ -3012,6 +3036,31 @@
       "playlist"
     ],
     "icon": "yout-icon.png"
+  },
+  {
+    "slug": "youtube-mp3",
+    "name": "Youtube-mp3",
+    "description": "Convert a youtube video to mp3 and download it",
+    "website": "https://github.com/MedZed/Electron-Youtube-to-Mp3-Converter",
+    "icon": "youtube-mp3-icon.png"
+  },
+  {
+    "slug": "zazu-app",
+    "name": "Zazu App",
+    "description": "A fully extensible and open source launcher for hackers, creators and dabblers.",
+    "website": "http://zazuapp.org/",
+    "repository": "https://github.com/tinytacoteam/zazu",
+    "keywords": [
+      "cross platform",
+      "oss",
+      "launcher",
+      "extensible",
+      "clipboard",
+      "vpn",
+      "file-search"
+    ],
+    "license": "MIT",
+    "icon": "zazu-app-icon.png"
   },
   {
     "slug": "zeplin",
