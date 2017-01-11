@@ -149,6 +149,12 @@ describe('electron.atom.io', () => {
     it('always has a created_at timestamp', () => {
       expect(releases.every(release => release.created_at.length > 1)).to.equal(true)
     })
+
+    it('converts hashtagged issues and PR ids to hyperlinks', () => {
+      const release = releases.find(release => release.tag_name === 'v1.4.14')
+      expect(release.body).to.include('<a href="https://github.com/electron/electron/pull/8341">#8341</a>')
+      expect(release.body).to.include('<a href="https://github.com/electron/electron/pull/8371">#8371</a>')
+    })
   })
 
   describe('userland', () => {
