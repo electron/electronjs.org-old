@@ -19,9 +19,7 @@ excerpt: See some of the amazing apps built on Electron.
   <div class='container text-center' id="apps">
     <div class="mb-4">
       {% for app in site.data.apps %}
-        {% unless app.featuredOpenSource %}
-          {% include featured_app.html %}
-        {% endunless %}
+        {% include featured_app.html %}
       {% endfor %}
     </div>
     <p class="mt-6">
