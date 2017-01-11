@@ -38,13 +38,13 @@ describe('electron.atom.io', () => {
   describe('docs', () => {
     it('rewrites relative links', () => {
       const doc = loadDoc('api/browser-window.md')
-      expect(doc).to.include('[Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process)')
+      expect(doc).to.include('[Main]({{site.baseurl}}/docs/glossary#main-process)')
     })
 
     it('properly handles multiple links on a single line', () => {
       const doc = loadDoc('api/clipboard.md')
-      expect(doc).to.include('[Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process)')
-      expect(doc).to.include('[Renderer]({{site.baseurl}}/docs/tutorial/quick-start#renderer-process)')
+      expect(doc).to.include('[Main]({{site.baseurl}}/docs/glossary#main-process)')
+      expect(doc).to.include('[Renderer]({{site.baseurl}}/docs/glossary#renderer-process)')
     })
 
     it('leaves absolute links intact', () => {
