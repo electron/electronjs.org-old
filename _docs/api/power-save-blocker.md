@@ -1,5 +1,5 @@
 ---
-version: v1.4.13
+version: v1.4.14
 permalink: /docs/api/power-save-blocker/
 category: API
 redirect_from:

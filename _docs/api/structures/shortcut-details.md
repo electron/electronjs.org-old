@@ -1,5 +1,5 @@
 ---
-version: v1.4.13
+version: v1.4.14
 permalink: /docs/api/structures/shortcut-details/
 category: API
 redirect_from:

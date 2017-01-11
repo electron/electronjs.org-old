@@ -1,5 +1,5 @@
 ---
-version: v1.4.13
+version: v1.4.14
 permalink: /docs/development/coding-style/
 category: Development
 redirect_from:

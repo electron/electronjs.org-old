@@ -1,5 +1,5 @@
 ---
-version: v1.4.13
+version: v1.4.14
 permalink: /docs/development/build-instructions-windows/
 category: Development
 redirect_from:
