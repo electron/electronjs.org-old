@@ -5,6 +5,42 @@ layout: default
 excerpt: See some of the amazing apps built on Electron.
 ---
 
+<script src="{{site.baseurl}}/js/vendor/list.min.js"></script>
+<script src="{{site.baseurl}}/js/vendor/query-string.js"></script>
+<script src="{{site.baseurl}}/js/vendor/set-query-string.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', createFilterList)
+
+  function createFilterList () {
+    // look for a filterable list on this page
+    var list = document.querySelector('.filterable-list')
+    if (!list || !list.parentElement) return
+
+    // inherit initial query from `?q` in query string
+    window.filterInput = document.querySelector('.filterable-list-input')
+    filterInput.value = queryString.parse(location.search).q || ''
+
+    var opts = {
+      listClass: 'filterable-list',
+      searchClass: 'filterable-list-input',
+      valueNames: [
+        'featured-app-name',
+        'featured-app-description',
+        'featured-app-keywords'
+      ]
+    }
+    window.filterList = new List(list.parentElement, opts)
+
+    // trigger a search, in case there is an existing value in the text input
+    filterList.search(filterInput.value)
+
+    // update the query param every time a search is performed
+    filterList.on('updated', function() {
+      setQueryString({q: filterInput.value})
+    })
+  }
+</script>
+
 
 <div class='subtron'>
   <div class='container-narrow'>
@@ -17,15 +53,18 @@ excerpt: See some of the amazing apps built on Electron.
 
 <section class='page-section'>
   <div class='container text-center' id="apps">
-    <div class="mb-4">
+
+    <input class="filterable-list-input" style="width: 50%;" placeholder="Filter apps by name, description, keyword..." autofocus="on" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+
+    <div class="mb-4 filterable-list">
       {% for app in site.data.apps %}
         {% include featured_app.html %}
       {% endfor %}
     </div>
+
     <p class="mt-6">
       <a href="https://github.com/electron/electron.atom.io/blob/gh-pages/CONTRIBUTING.md#adding-an-app-or-project-to-the-site" target="_blank">Make a Pull Request</a> to add your application.
     </p>
     <hr>
   </div>
-
 </section>

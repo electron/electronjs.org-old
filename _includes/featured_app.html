@@ -4,5 +4,7 @@
     <img class='featured-app-logo' src='{{ site.baseurl }}/images/apps/{{ app.icon }}' alt='{{ app.name }}'>
   </div>
   <div class='featured-app-name'>{{ app.name }}</div>
+  <div class='featured-app-description' style='display:none;'>{{ app.description }}</div>
+  <div class='featured-app-keywords' style='display:none;'>{{ app.keywords }}</div>
 </a>
 {% endunless %}
