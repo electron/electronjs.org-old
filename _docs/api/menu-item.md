@@ -91,29 +91,29 @@ sort_title: menu-item
 
 > Add items to native application menus and context menus.
 
-Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process)
+Process: [Main]({{site.baseurl}}/docs/glossary#main-process)
 
 See [`Menu`]({{site.baseurl}}/docs/api/menu) for examples.
 
 ### `new MenuItem(options)`
 
 *   `options` Object
-    *   `click` Function - (optional) Will be called with `click(menuItem, browserWindow, event)` when the menu item is clicked.
+    *   `click` Function (optional) - Will be called with `click(menuItem, browserWindow, event)` when the menu item is clicked.
         *   `menuItem` MenuItem
         *   `browserWindow` BrowserWindow
         *   `event` Event
-    *   `role` String - (optional) Define the action of the menu item, when specified the `click` property will be ignored.
-    *   `type` String - (optional) Can be `normal`, `separator`, `submenu`, `checkbox` or `radio`.
+    *   `role` String (optional) - Define the action of the menu item, when specified the `click` property will be ignored.
+    *   `type` String (optional) - Can be `normal`, `separator`, `submenu`, `checkbox` or `radio`.
     *   `label` String - (optional)
     *   `sublabel` String - (optional)
-    *   `accelerator` [Accelerator]({{site.baseurl}}/docs/api/accelerator) - (optional)
-    *   `icon` ([NativeImage]({{site.baseurl}}/docs/api/native-image) &#124; String) - (optional)
-    *   `enabled` Boolean - (optional) If false, the menu item will be greyed out and unclickable.
-    *   `visible` Boolean - (optional) If false, the menu item will be entirely hidden.
-    *   `checked` Boolean - (optional) Should only be specified for `checkbox` or `radio` type menu items.
-    *   `submenu` (MenuItemConstructorOptions[] &#124; Menu) - (optional) Should be specified for `submenu` type menu items. If `submenu` is specified, the `type: 'submenu'` can be omitted. If the value is not a `Menu` then it will be automatically converted to one using `Menu.buildFromTemplate`.
-    *   `id` String - (optional) Unique within a single menu. If defined then it can be used as a reference to this item by the position attribute.
-    *   `position` String - (optional) This field allows fine-grained definition of the specific location within a given menu.
+    *   `accelerator` [Accelerator]({{site.baseurl}}/docs/api/accelerator) (optional)
+    *   `icon` ([NativeImage]({{site.baseurl}}/docs/api/native-image) &#124; String) (optional)
+    *   `enabled` Boolean (optional) - If false, the menu item will be greyed out and unclickable.
+    *   `visible` Boolean (optional) - If false, the menu item will be entirely hidden.
+    *   `checked` Boolean (optional) - Should only be specified for `checkbox` or `radio` type menu items.
+    *   `submenu` (MenuItemConstructorOptions[] &#124; Menu) (optional) - Should be specified for `submenu` type menu items. If `submenu` is specified, the `type: 'submenu'` can be omitted. If the value is not a `Menu` then it will be automatically converted to one using `Menu.buildFromTemplate`.
+    *   `id` String (optional) - Unique within a single menu. If defined then it can be used as a reference to this item by the position attribute.
+    *   `position` String (optional) - This field allows fine-grained definition of the specific location within a given menu.
 
 It is best to specify `role` for any menu item that matches a standard role, rather than trying to manually implement the behavior in a `click` function. The built-in `role` behavior will give the best native experience.
 
@@ -176,3 +176,11 @@ A `checkbox` menu item will toggle the `checked` property on and off when select
 A `radio` menu item will turn on its `checked` property when clicked, and will turn off that property for all adjacent items in the same menu.
 
 You can add a `click` function for additional behavior.
+
+#### `menuItem.label`
+
+A String representing the menu items visible label
+
+#### `menuItem.click`
+
+A Function that is fired when the MenuItem recieves a click event

@@ -91,7 +91,7 @@ sort_title: debugger
 
 > An alternate transport for Chrome's remote debugging protocol.
 
-Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process)
+Process: [Main]({{site.baseurl}}/docs/glossary#main-process)
 
 Chrome Developer Tools has a [special binding](https://developer.chrome.com/devtools/docs/debugger-protocol) available at JavaScript runtime that allows interacting with pages and instrumenting them.
 

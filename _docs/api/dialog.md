@@ -91,7 +91,7 @@ sort_title: dialog
 
 > Display native system dialogs for opening and saving files, alerting, etc.
 
-Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process)
+Process: [Main]({{site.baseurl}}/docs/glossary#main-process)
 
 An example of showing a dialog to select multiple files and directories:
 
@@ -119,7 +119,8 @@ The `dialog` module has the following methods:
     *   `defaultPath` String (optional)
     *   `buttonLabel` String (optional) - Custom label for the confirmation button, when left empty the default label will be used.
     *   `filters` [FileFilter[]]({{site.baseurl}}/docs/api/structures/file-filter) (optional)
-    *   `properties` String[] - (optional) - Contains which features the dialog should use, can contain `openFile`, `openDirectory`, `multiSelections`, `createDirectory` and `showHiddenFiles`.
+    *   `properties` String[] (optional) - Contains which features the dialog should use, can contain `openFile`, `openDirectory`, `multiSelections`, `createDirectory` and `showHiddenFiles`.
+    *   `normalizeAccessKeys` Boolean (optional) - Normalize the keyboard access keys across platforms. Default is `false`. Enabling this assumes `&` is used in the button labels for the placement of the keyboard shortcut access key and labels will be converted so they work correctly on each platform, `&` characters are removed on macOS, converted to `_` on Linux, and left untouched on Windows. For example, a button label of `Vie&w` will be converted to `Vie_w` on Linux and `View` on macOS and can be selected via `Alt-W` on Windows and Linux.
 *   `callback` Function (optional)
     *   `filePaths` String[] - An array of file paths chosen by the user
 
@@ -170,7 +171,7 @@ If a `callback` is passed, the API call will be asynchronous and the result will
 *   `browserWindow` BrowserWindow (optional)
 *   `options` Object
     *   `type` String (optional) - Can be `"none"`, `"info"`, `"error"`, `"question"` or `"warning"`. On Windows, "question" displays the same icon as "info", unless you set an icon using the "icon" option.
-    *   `buttons` String[] - (optional) - Array of texts for buttons. On Windows, an empty array will result in one button labeled "OK".
+    *   `buttons` String[] (optional) - Array of texts for buttons. On Windows, an empty array will result in one button labeled "OK".
     *   `defaultId` Integer (optional) - Index of the button in the buttons array which will be selected by default when the message box opens.
     *   `title` String (optional) - Title of the message box, some platforms will not show it.
     *   `message` String - Content of the message box.

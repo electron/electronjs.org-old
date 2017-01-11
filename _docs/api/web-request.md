@@ -93,7 +93,7 @@ sort_title: web-request
 
 > Intercept and modify the contents of a request at various stages of its lifetime.
 
-Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process)
+Process: [Main]({{site.baseurl}}/docs/glossary#main-process)
 
 Instances of the `WebRequest` class are accessed by using the `webRequest` property of a `Session`.
 

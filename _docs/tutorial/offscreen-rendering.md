@@ -94,6 +94,8 @@ Offscreen rendering lets you obtain the content of a browser window in a bitmap,
 
 Two modes of rendering can be used and only the dirty area is passed in the `'paint'` event to be more efficient. The rendering can be stopped, continued and the frame rate can be set. The specified frame rate is a top limit value, when there is nothing happening on a webpage, no frames are generated. The maximum frame rate is 60, because above that there is no benefit, just performance loss.
 
+**Note:** An offscreen window is always created as a [Frameless Window]({{site.baseurl}}/docs/api/frameless-window).
+
 ## Two modes of rendering
 
 ### GPU accelerated

@@ -91,7 +91,7 @@ sort_title: menu
 
 > Create native application menus and context menus.
 
-Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process)
+Process: [Main]({{site.baseurl}}/docs/glossary#main-process)
 
 ### `new Menu()`
 

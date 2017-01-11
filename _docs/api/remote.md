@@ -91,7 +91,7 @@ sort_title: remote
 
 > Use main process modules from the renderer process.
 
-Process: [Renderer]({{site.baseurl}}/docs/tutorial/quick-start#renderer-process)
+Process: [Renderer]({{site.baseurl}}/docs/glossary#renderer-process)
 
 The `remote` module provides a simple way to do inter-process communication (IPC) between the renderer process (web page) and the main process.
 

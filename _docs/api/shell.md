@@ -91,7 +91,7 @@ sort_title: shell
 
 > Manage files and URLs using their default applications.
 
-Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process), [Renderer]({{site.baseurl}}/docs/tutorial/quick-start#renderer-process)
+Process: [Main]({{site.baseurl}}/docs/glossary#main-process), [Renderer]({{site.baseurl}}/docs/glossary#renderer-process)
 
 The `shell` module provides functions related to desktop integration.
 

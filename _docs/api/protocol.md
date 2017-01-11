@@ -91,7 +91,7 @@ sort_title: protocol
 
 > Register a custom protocol and intercept existing protocol requests.
 
-Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process)
+Process: [Main]({{site.baseurl}}/docs/glossary#main-process)
 
 An example of implementing a protocol that has the same effect as the `file://` protocol:
 
@@ -115,9 +115,11 @@ app.on('ready', () => {
 
 The `protocol` module has the following methods:
 
-### `protocol.registerStandardSchemes(schemes)`
+### `protocol.registerStandardSchemes(schemes[, options])`
 
 *   `schemes` String[] - Custom schemes to be registered as standard schemes.
+*   `options` Object (optional)
+    *   `secure` Boolean (optional) - `true` to register the scheme as secure. Default `false`.
 
 A standard scheme adheres to what RFC 3986 calls [generic URI syntax](https://tools.ietf.org/html/rfc3986#section-3). For example `http` and `https` are standard schemes, while `file` is not.
 
@@ -182,7 +184,7 @@ By default the `scheme` is treated like `http:`, which is parsed differently tha
         *   `method` String
         *   `uploadData` [UploadData[]]({{site.baseurl}}/docs/api/structures/upload-data)
     *   `callback` Function
-        *   `buffer` Buffer (optional)
+        *   `buffer` (Buffer &#124; [MimeTypedBuffer]({{site.baseurl}}/docs/api/structures/mime-typed-buffer)) (optional)
 *   `completion` Function (optional)
     *   `error` Error
 

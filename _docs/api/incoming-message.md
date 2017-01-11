@@ -91,7 +91,7 @@ sort_title: incoming-message
 
 > Handle responses to HTTP/HTTPS requests.
 
-Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process)
+Process: [Main]({{site.baseurl}}/docs/glossary#main-process)
 
 `IncomingMessage` implements the [Readable Stream](https://nodejs.org/api/stream.html#stream_readable_streams) interface and is therefore an [EventEmitter](https://nodejs.org/api/events.html#events_class_eventemitter).
 
@@ -144,3 +144,11 @@ An Object representing the response HTTP headers. The `headers` object is format
 #### `response.httpVersion`
 
 A String indicating the HTTP protocol version number. Typical values are '1.0' or '1.1'. Additionally `httpVersionMajor` and `httpVersionMinor` are two Integer-valued readable properties that return respectively the HTTP major and minor version numbers.
+
+#### `response.httpVersionMajor`
+
+An Integer indicating the HTTP protocol major version number.
+
+#### `response.httpVersionMinor`
+
+An Integer indicating the HTTP protocol minor version number.

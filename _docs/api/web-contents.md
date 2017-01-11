@@ -91,7 +91,7 @@ sort_title: web-contents
 
 > Render and control web pages.
 
-Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process)
+Process: [Main]({{site.baseurl}}/docs/glossary#main-process)
 
 `webContents` is an [EventEmitter](https://nodejs.org/api/events.html#events_class_eventemitter). It is responsible for rendering and controlling a web page and is a property of the [`BrowserWindow`]({{site.baseurl}}/docs/api/browser-window) object. An example of accessing the `webContents` object:
 
@@ -132,7 +132,7 @@ Returns `WebContents` - A WebContents instance with the given ID.
 
 > Render and control the contents of a BrowserWindow instance.
 
-Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process)
+Process: [Main]({{site.baseurl}}/docs/glossary#main-process)
 
 ### Instance Events
 
@@ -328,7 +328,7 @@ Emitted when DevTools is focused / opened.
 Returns:
 
 *   `event` Event
-*   `url` URL
+*   `url` String
 *   `error` String - The error code
 *   `certificate` [Certificate]({{site.baseurl}}/docs/api/structures/certificate)
 *   `callback` Function
@@ -532,7 +532,7 @@ Emitted when the devtools window instructs the webContents to reload
 
 #### `contents.loadURL(url[, options])`
 
-*   `url` URL
+*   `url` String
 *   `options` Object (optional)
     *   `httpReferrer` String (optional) - A HTTP Referrer url.
     *   `userAgent` String (optional) - A user agent originating the request.
@@ -804,11 +804,11 @@ Inserts `text` to the focused element.
 
 *   `text` String - Content to be searched, must not be empty.
 *   `options` Object (optional)
-    *   `forward` Boolean - Whether to search forward or backward, defaults to `true`.
-    *   `findNext` Boolean - Whether the operation is first request or a follow up, defaults to `false`.
-    *   `matchCase` Boolean - Whether search should be case-sensitive, defaults to `false`.
-    *   `wordStart` Boolean - Whether to look only at the start of words. defaults to `false`.
-    *   `medialCapitalAsWordStart` Boolean - When combined with `wordStart`, accepts a match in the middle of a word if the match begins with an uppercase letter followed by a lowercase or non-letter. Accepts several other intra-word matches, defaults to `false`.
+    *   `forward` Boolean - (optional) Whether to search forward or backward, defaults to `true`.
+    *   `findNext` Boolean - (optional) Whether the operation is first request or a follow up, defaults to `false`.
+    *   `matchCase` Boolean - (optional) Whether search should be case-sensitive, defaults to `false`.
+    *   `wordStart` Boolean - (optional) Whether to look only at the start of words. defaults to `false`.
+    *   `medialCapitalAsWordStart` Boolean - (optional) When combined with `wordStart`, accepts a match in the middle of a word if the match begins with an uppercase letter followed by a lowercase or non-letter. Accepts several other intra-word matches, defaults to `false`.
 
 Starts a request to find all matches for the `text` in the web page and returns an `Integer` representing the request id used for the request. The result of the request can be obtained by subscribing to [`found-in-page`]({{site.baseurl}}/docs/api/web-contents#event-found-in-page) event.
 
@@ -868,11 +868,11 @@ Use `page-break-before: always;` CSS style to force to print to a new page.
 #### `contents.printToPDF(options, callback)`
 
 *   `options` Object
-    *   `marginsType` Integer - Specifies the type of margins to use. Uses 0 for default margin, 1 for no margin, and 2 for minimum margin.
-    *   `pageSize` String - Specify page size of the generated PDF. Can be `A3`, `A4`, `A5`, `Legal`, `Letter`, `Tabloid` or an Object containing `height` and `width` in microns.
-    *   `printBackground` Boolean - Whether to print CSS backgrounds.
-    *   `printSelectionOnly` Boolean - Whether to print selection only.
-    *   `landscape` Boolean - `true` for landscape, `false` for portrait.
+    *   `marginsType` Integer - (optional) Specifies the type of margins to use. Uses 0 for default margin, 1 for no margin, and 2 for minimum margin.
+    *   `pageSize` String - (optional) Specify page size of the generated PDF. Can be `A3`, `A4`, `A5`, `Legal`, `Letter`, `Tabloid` or an Object containing `height` and `width` in microns.
+    *   `printBackground` Boolean - (optional) Whether to print CSS backgrounds.
+    *   `printSelectionOnly` Boolean - (optional) Whether to print selection only.
+    *   `landscape` Boolean - (optional) `true` for landscape, `false` for portrait.
 *   `callback` Function
     *   `error` Error
     *   `data` Buffer

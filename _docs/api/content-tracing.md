@@ -94,7 +94,7 @@ sort_title: content-tracing
 
 > Collect tracing data from Chromium's content module for finding performance bottlenecks and slow operations.
 
-Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process)
+Process: [Main]({{site.baseurl}}/docs/glossary#main-process)
 
 This module does not include a web interface so you need to open `chrome://tracing/` in a Chrome browser and load the generated file to view the result.
 

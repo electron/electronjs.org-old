@@ -92,7 +92,7 @@ sort_title: system-preferences
 
 > Get system preferences.
 
-Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process)
+Process: [Main]({{site.baseurl}}/docs/glossary#main-process)
 
 ```javascript
 const {systemPreferences} = require('electron')
@@ -108,7 +108,7 @@ The `systemPreferences` object emits the following events:
 Returns:
 
 *   `event` Event
-*   `newColor` String - The new RGBA color the user assigned to be there system accent color.
+*   `newColor` String - The new RGBA color the user assigned to be their system accent color.
 
 ### Event: 'color-changed' _Windows_
 

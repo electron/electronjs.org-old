@@ -91,7 +91,7 @@ sort_title: browser-window
 
 > Create and control browser windows.
 
-Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process)
+Process: [Main]({{site.baseurl}}/docs/glossary#main-process)
 
 ```javascript
 // In the main process.
@@ -188,7 +188,7 @@ child.once('ready-to-show', () => {
 
 > Create and control browser windows.
 
-Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process)
+Process: [Main]({{site.baseurl}}/docs/glossary#main-process)
 
 `BrowserWindow` is an [EventEmitter](http://nodejs.org/api/events.html#events_class_events_eventemitter).
 
@@ -238,8 +238,8 @@ It creates a new `BrowserWindow` with native properties as set by the `options`.
         *   `hidden` - Results in a hidden title bar and a full size content window, yet the title bar still has the standard window controls ("traffic lights") in the top left.
         *   `hidden-inset` - Results in a hidden title bar with an alternative look where the traffic light buttons are slightly more inset from the window edge.
     *   `thickFrame` Boolean (optional) - Use `WS_THICKFRAME` style for frameless windows on Windows, which adds standard window frame. Setting it to `false` will remove window shadow and window animations. Default is `true`.
-    *   `vibrancy` String - Add a type of vibrancy effect to the window, only on macOS. Can be `appearance-based`, `light`, `dark`, `titlebar`, `selection`, `menu`, `popover`, `sidebar`, `medium-light` or `ultra-dark`.
-    *   `zoomToPageWidth` Boolean - Controls the behavior on macOS when option-clicking the green stoplight button on the toolbar or by clicking the Window > Zoom menu item. If `true`, the window will grow to the preferred width of the web page when zoomed, `false` will cause it to zoom to the width of the screen. This will also affect the behavior when calling `maximize()` directly. Default is `false`.
+    *   `vibrancy` String (optional) - Add a type of vibrancy effect to the window, only on macOS. Can be `appearance-based`, `light`, `dark`, `titlebar`, `selection`, `menu`, `popover`, `sidebar`, `medium-light` or `ultra-dark`.
+    *   `zoomToPageWidth` Boolean (optional) - Controls the behavior on macOS when option-clicking the green stoplight button on the toolbar or by clicking the Window > Zoom menu item. If `true`, the window will grow to the preferred width of the web page when zoomed, `false` will cause it to zoom to the width of the screen. This will also affect the behavior when calling `maximize()` directly. Default is `false`.
     *   `webPreferences` Object (optional) - Settings of web page's features.
         *   `devTools` Boolean (optional) - Whether to enable DevTools. If it is set to `false`, can not use `BrowserWindow.webContents.openDevTools()` to open DevTools. Default is `true`.
         *   `nodeIntegration` Boolean (optional) - Whether node integration is enabled. Default is `true`.
@@ -266,12 +266,14 @@ It creates a new `BrowserWindow` with native properties as set by the `options`.
             *   `serif` String (optional) - Defaults to `Times New Roman`.
             *   `sansSerif` String (optional) - Defaults to `Arial`.
             *   `monospace` String (optional) - Defaults to `Courier New`.
+            *   `cursive` String (optional) - Defaults to `Script`.
+            *   `fantasy` String (optional) - Defaults to `Impact`.
         *   `defaultFontSize` Integer (optional) - Defaults to `16`.
         *   `defaultMonospaceFontSize` Integer (optional) - Defaults to `13`.
         *   `minimumFontSize` Integer (optional) - Defaults to `0`.
         *   `defaultEncoding` String (optional) - Defaults to `ISO-8859-1`.
         *   `backgroundThrottling` Boolean (optional) - Whether to throttle animations and timers when the page becomes background. Defaults to `true`.
-        *   `offscreen` Boolean (optional) - Whether to enable offscreen rendering for the browser window. Defaults to `false`.
+        *   `offscreen` Boolean (optional) - Whether to enable offscreen rendering for the browser window. Defaults to `false`. See the [offscreen rendering tutorial]({{site.baseurl}}/docs/tutorial/offscreen-rendering) for more details.
         *   `sandbox` Boolean (optional) - Whether to enable Chromium OS-level sandbox.
 
 When setting minimum or maximum window size with `minWidth`/`maxWidth`/ `minHeight`/`maxHeight`, it only constrains the users. It won't prevent you from passing a size that does not follow size constraints to `setBounds`/`setSize` or to the constructor of `BrowserWindow`.
@@ -997,7 +999,7 @@ The `buttons` is an array of `Button` objects:
     *   `icon` [NativeImage]({{site.baseurl}}/docs/api/native-image) - The icon showing in thumbnail toolbar.
     *   `click` Function
     *   `tooltip` String (optional) - The text of the button's tooltip.
-    *   `flags` String[] - (optional) - Control specific states and behaviors of the button. By default, it is `['enabled']`.
+    *   `flags` String[] (optional) - Control specific states and behaviors of the button. By default, it is `['enabled']`.
 
 The `flags` is an array that can include following `String`s:
 

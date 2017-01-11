@@ -93,7 +93,7 @@ sort_title: app
 
 > Control your application's event lifecycle.
 
-Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process)
+Process: [Main]({{site.baseurl}}/docs/glossary#main-process)
 
 The following example shows how to quit the application when the last window is closed:
 
@@ -244,7 +244,7 @@ Returns:
 
 *   `event` Event
 *   `webContents` [WebContents]({{site.baseurl}}/docs/api/web-contents)
-*   `url` URL
+*   `url` String
 *   `error` String - The error code
 *   `certificate` [Certificate]({{site.baseurl}}/docs/api/structures/certificate)
 *   `callback` Function
@@ -480,7 +480,7 @@ Clears the recent documents list.
 
 *   `protocol` String - The name of your protocol, without `://`. If you want your app to handle `electron://` links, call this method with `electron` as the parameter.
 *   `path` String (optional) _Windows_ - Defaults to `process.execPath`
-*   `args` String[] - (optional) _Windows_ - Defaults to an empty array
+*   `args` String[] (optional) _Windows_ - Defaults to an empty array
 
 Returns `Boolean` - Whether the call succeeded.
 
@@ -496,7 +496,7 @@ The API uses the Windows Registry and LSSetDefaultHandlerForURLScheme internally
 
 *   `protocol` String - The name of your protocol, without `://`.
 *   `path` String (optional) _Windows_ - Defaults to `process.execPath`
-*   `args` String[] - (optional) _Windows_ - Defaults to an empty array
+*   `args` String[] (optional) _Windows_ - Defaults to an empty array
 
 Returns `Boolean` - Whether the call succeeded.
 
@@ -506,7 +506,7 @@ This method checks if the current executable as the default handler for a protoc
 
 *   `protocol` String - The name of your protocol, without `://`.
 *   `path` String (optional) _Windows_ - Defaults to `process.execPath`
-*   `args` String[] - (optional) _Windows_ - Defaults to an empty array
+*   `args` String[] (optional) _Windows_ - Defaults to an empty array
 
 Returns `Boolean`
 
@@ -772,7 +772,7 @@ When `critical` is passed, the dock icon will bounce until either the applicatio
 
 When `informational` is passed, the dock icon will bounce for one second. However, the request remains active until either the application becomes active or the request is canceled.
 
-Returns an ID representing the request.
+Returns `Integer` an ID representing the request.
 
 ### `app.dock.cancelBounce(id)` _macOS_
 
@@ -816,6 +816,6 @@ Sets the application's [dock menu](https://developer.apple.com/library/mac/docum
 
 ### `app.dock.setIcon(image)` _macOS_
 
-*   `image` [NativeImage]({{site.baseurl}}/docs/api/native-image)
+*   `image` ([NativeImage]({{site.baseurl}}/docs/api/native-image) &#124; String)
 
 Sets the `image` associated with this dock icon.

@@ -91,7 +91,7 @@ sort_title: power-monitor
 
 > Monitor power state changes.
 
-Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process)
+Process: [Main]({{site.baseurl}}/docs/glossary#main-process)
 
 You cannot require or use this module until the `ready` event of the `app` module is emitted.
 

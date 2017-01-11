@@ -91,7 +91,7 @@ sort_title: screen
 
 > Retrieve information about screen size, displays, cursor position, etc.
 
-Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process), [Renderer]({{site.baseurl}}/docs/tutorial/quick-start#renderer-process)
+Process: [Main]({{site.baseurl}}/docs/glossary#main-process), [Renderer]({{site.baseurl}}/docs/glossary#renderer-process)
 
 You cannot require or use this module until the `ready` event of the `app` module is emitted.
 
@@ -203,4 +203,4 @@ Returns [`Display`]({{site.baseurl}}/docs/api/structures/display) - The display 
 
 *   `rect` [Rectangle]({{site.baseurl}}/docs/api/structures/rectangle)
 
-Returns `Display`](structures/display.md) - The display that most closely intersects the provided bounds.
+Returns [`Display`]({{site.baseurl}}/docs/api/structures/display) - The display that most closely intersects the provided bounds.

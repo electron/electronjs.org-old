@@ -91,7 +91,7 @@ sort_title: clipboard
 
 > Perform copy and paste operations on the system clipboard.
 
-Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process), [Renderer]({{site.baseurl}}/docs/tutorial/quick-start#renderer-process)
+Process: [Main]({{site.baseurl}}/docs/glossary#main-process), [Renderer]({{site.baseurl}}/docs/glossary#renderer-process)
 
 The following example shows how to write a string to the clipboard:
 

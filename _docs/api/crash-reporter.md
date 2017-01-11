@@ -91,7 +91,7 @@ sort_title: crash-reporter
 
 > Submit crash reports to a remote server.
 
-Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process), [Renderer]({{site.baseurl}}/docs/tutorial/quick-start#renderer-process)
+Process: [Main]({{site.baseurl}}/docs/glossary#main-process), [Renderer]({{site.baseurl}}/docs/glossary#renderer-process)
 
 The following is an example of automatically submitting a crash report to a remote server:
 

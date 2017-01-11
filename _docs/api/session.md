@@ -91,7 +91,7 @@ sort_title: session
 
 > Manage browser sessions, cookies, cache, proxy settings, etc.
 
-Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process)
+Process: [Main]({{site.baseurl}}/docs/glossary#main-process)
 
 The `session` module can be used to create new `Session` objects.
 
@@ -135,7 +135,7 @@ A `Session` object, the default session object of the app.
 
 > Get and set properties of a session.
 
-Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process)
+Process: [Main]({{site.baseurl}}/docs/glossary#main-process)
 
 You can create a `Session` object in the `session` module:
 
@@ -190,7 +190,7 @@ Clears the session’s HTTP cache.
 
 *   `options` Object (optional)
     *   `origin` String - Should follow `window.location.origin`’s representation `scheme://host:port`.
-    *   `storages` String[] - The types of storages to clear, can contain: `appcache`, `cookies`, `filesystem`, `indexdb`, `local storage`, `shadercache`, `websql`, `serviceworkers`
+    *   `storages` String[] - The types of storages to clear, can contain: `appcache`, `cookies`, `filesystem`, `indexdb`, `localstorage`, `shadercache`, `websql`, `serviceworkers`
     *   `quotas` String[] - The types of quotas to clear, can contain: `temporary`, `persistent`, `syncable`.
 *   `callback` Function (optional) - Called when operation is done.
 
@@ -263,7 +263,7 @@ The `proxyBypassRules` is a comma separated list of rules described below:
 
     Match local addresses. The meaning of `<local>` is whether the host matches one of: "127.0.0.1", "::1", "localhost".
 
-### `ses.resolveProxy(url, callback)`
+#### `ses.resolveProxy(url, callback)`
 
 *   `url` URL
 *   `callback` Function

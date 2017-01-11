@@ -91,7 +91,7 @@ sort_title: tray
 
 > Add icons and context menus to the system's notification area.
 
-Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process)
+Process: [Main]({{site.baseurl}}/docs/glossary#main-process)
 
 `Tray` is an [EventEmitter](https://nodejs.org/api/events.html#events_class_eventemitter).
 
@@ -238,7 +238,7 @@ Destroys the tray icon immediately.
 
 #### `tray.setImage(image)`
 
-*   `image` [NativeImage]({{site.baseurl}}/docs/api/native-image)
+*   `image` ([NativeImage]({{site.baseurl}}/docs/api/native-image) &#124; String)
 
 Sets the `image` associated with this tray icon.
 
@@ -291,9 +291,9 @@ win.on('hide', () => {
 #### `tray.displayBalloon(options)` _Windows_
 
 *   `options` Object
-    *   `icon` [NativeImage]({{site.baseurl}}/docs/api/native-image)
-    *   `title` String
-    *   `content` String
+    *   `icon` ([NativeImage]({{site.baseurl}}/docs/api/native-image) &#124; String) - (optional)
+    *   `title` String - (optional)
+    *   `content` String - (optional)
 
 Displays a tray balloon.
 
