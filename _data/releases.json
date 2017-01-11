@@ -1,5 +1,23 @@
 [
   {
+    "url": "https://api.github.com/repos/electron/electron/releases/5120009",
+    "assets_url": "https://api.github.com/repos/electron/electron/releases/5120009/assets",
+    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/5120009/assets{?name,label}",
+    "html_url": "https://github.com/electron/electron/releases/tag/v1.4.14",
+    "id": 5120009,
+    "tag_name": "v1.4.14",
+    "target_commitish": "master",
+    "name": "electron v1.4.14",
+    "draft": false,
+    "prerelease": false,
+    "created_at": "2017-01-10T19:01:39Z",
+    "published_at": "2017-01-10T20:45:07Z",
+    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v1.4.14",
+    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v1.4.14",
+    "body": "## Bug Fixes\r\n\r\n* Fixed a crash when closing a window from within a `will-navigate` event\r\n  listener. #8254\r\n* Offscreen windows are now always created as frameless so the viewport size\r\n  is as expected. #8250\r\n* The `backgroundThrottling` option is now correctly persisted across window\r\n  reloads. #8298\r\n* The `Cookie` header is now settable on requests made using Electron's `net`\r\n  module. #8258\r\n* Fixed a stack overflow error when creating a window with cycles in the\r\n  specified options object. #8340\r\n* Fixed an issue where the `session.enableNetworkEmulation` API would lead to\r\n  high CPU usage. #8371\r\n\r\n### macOS\r\n\r\n* Fixed a crash when the OS reported no monitors were available. #8249\r\n\r\n### Linux\r\n\r\n* Fixed a crash when closing a window from within a dialog callback. #8252\r\n\r\n### Windows\r\n\r\n* Fixed an issue where the window would be incorrectly placed behind the\r\n  task bar when maximized. #7765\r\n\r\n## API Changes\r\n\r\n* The `defaultFontFamily` option in the `BrowserWindow` constructor now supports\r\n  setting the default `cursive` and `fantasy` fonts. #8295\r\n* Added a `normalizeAccessKeys` option to the `dialog.showMessageBox` API that\r\n  normalizes keyboard accelerator keys used for buttons across platforms. #8308\r\n* `window.alert` and `window.confirm` are now supported in `<iframe>` tags\r\n  and sandboxed windows. #8341\r\n",
+    "version": "1.4.14"
+  },
+  {
     "url": "https://api.github.com/repos/electron/electron/releases/4971126",
     "assets_url": "https://api.github.com/repos/electron/electron/releases/4971126/assets",
     "upload_url": "https://uploads.github.com/repos/electron/electron/releases/4971126/assets{?name,label}",
@@ -520,23 +538,5 @@
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v1.2.6",
     "body": "Changelog:\r\n\r\n* Update to Chrome 51.0.2704.106. [#6322](https://github.com/electron/electron/pull/6322)\r\n* Improve performance for looking up paths in `require`. [#6213](https://github.com/electron/electron/pull/6213)\r\n* Add `webContents.startDrag(item)` API. [#6333](https://github.com/electron/electron/pull/6333)\r\n* Add `clipboard.readBookmark()` and `clipboard.writeBookmark(title, url)` APIs. [#6233](https://github.com/electron/electron/pull/6233)\r\n* Add `onlyDirty` pararmeter to `webContents.beginFrameSubscription([onlyDirty ,]callback)` API. [#6164](https://github.com/electron/electron/pull/6164)\r\n* Add `app.setBadgeCount(count)` and `app.getBadgeCount()` APIs. [#6243](https://github.com/electron/electron/pull/6243) [#6309](https://github.com/electron/electron/pull/6309)\r\n* Fix `did-fail-load` event emitting for canceled requests. [#6201](https://github.com/electron/electron/pull/6201)\r\n* Fix passing the same callback to main process for multiple times will make the callback stop working after the remote callback gets GCed in main process. [#6218](https://github.com/electron/electron/pull/6218)\r\n* Fix `Promise` not resolved in native handlers of the main process. [#6220](https://github.com/electron/electron/pull/6220)\r\n* Fix exception when `package.json` includes BOM. [#6354](https://github.com/electron/electron/pull/6354)\r\n\r\n__Windows__\r\n\r\n* Include `PDB` files in releases. [#6225](https://github.com/electron/electron/pull/6225)\r\n* Fix crash when loading non-exist `ICO` files. [#6220](https://github.com/electron/electron/pull/6278)\r\n* Fix `tray.popUpContextMenu(menu)` not popUpping menu when `menu` is not passed. [#6280](https://github.com/electron/electron/pull/6280)\r\n\r\n__Linux__\r\n\r\n* Add `app.isUnityRunning()` API. [#6243](https://github.com/electron/electron/pull/6243)\r\n* Fix `dialog.showOpenDialog()` replacing extensions of filenames ending with `.*.gz`. [#6305](https://github.com/electron/electron/pull/6305)\r\n* Fix `icon` property of `BrowserWindow` not working. [#6323](https://github.com/electron/electron/pull/6323)\r\n",
     "version": "1.2.6"
-  },
-  {
-    "url": "https://api.github.com/repos/electron/electron/releases/3504096",
-    "assets_url": "https://api.github.com/repos/electron/electron/releases/3504096/assets",
-    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/3504096/assets{?name,label}",
-    "html_url": "https://github.com/electron/electron/releases/tag/v1.2.5",
-    "id": 3504096,
-    "tag_name": "v1.2.5",
-    "target_commitish": "master",
-    "name": "electron v1.2.5",
-    "draft": false,
-    "prerelease": false,
-    "created_at": "2016-06-23T05:37:58Z",
-    "published_at": "2016-06-23T08:03:45Z",
-    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v1.2.5",
-    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v1.2.5",
-    "body": "Changelog:\r\n\r\n* `accelerator` and `label` are now optional when `role` is specified for `MenuItem`. [#6190](https://github.com/electron/electron/pull/6190)\r\n* Add `event` parameter for `click` handler of `MenuItem`. [#6170](https://github.com/electron/electron/pull/6170)\r\n* Add `session.setUserAgent(userAgent[, acceptLanguages])` API. [#6172](https://github.com/electron/electron/pull/6172)\r\n* Add `win.setContentProtection(enable)` API. [#6175](https://github.com/electron/electron/pull/6175)\r\n* Fix members of `protocol` module not being set. [#6195](https://github.com/electron/electron/pull/6195)\r\n\r\n__macOS__\r\n\r\n* Update Squirrel.Mac to 0.2.1. [#6183](https://github.com/electron/electron/pull/6183)\r\n* Fix crash when using frameless window on OS X 10.9. [#6197](https://github.com/electron/electron/pull/6197)\r\n* Fix `maximize` event being emitted before window is maximized. [#6171](https://github.com/electron/electron/pull/6171)\r\n\r\n__Linux__\r\n\r\n* Fix crash on startup. [electron/brightray#229](https://github.com/electron/brightray/pull/229)\r\n",
-    "version": "1.2.5"
   }
 ]
