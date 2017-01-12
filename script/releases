@@ -24,6 +24,12 @@ request(options, function (error, response, body) {
       release.version = release.tag_name.substring(1)
       delete release.assets
       delete release.author
+
+      // turn PR references like #123 into hyperlinks
+      release.body = release.body.replace(
+        / #(\d+)\r\n/gm,
+        ' <a href="https://github.com/electron/electron/pull/$1">#$1</a>\r\n'
+      )
     })
     fs.writeFileSync('_data/releases.json', JSON.stringify(body, null, 2))
   }
