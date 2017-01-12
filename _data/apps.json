@@ -394,6 +394,20 @@
     "icon": "correo-icon.png"
   },
   {
+    "slug": "covepdf",
+    "name": "CovePDF",
+    "description": "Free PDF reader with password protection.",
+    "website": "http://www.covepdf.com",
+    "keywords": [
+      "electron",
+      "pdf",
+      "protect",
+      "free",
+      "pdf reader"
+    ],
+    "icon": "covepdf-icon.png"
+  },
+  {
     "slug": "cozy-desktop",
     "name": "Cozy Desktop",
     "description": "File Synchronisation for Cozy Cloud on Desktop and Laptop",
