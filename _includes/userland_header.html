@@ -52,7 +52,7 @@
         'item-repository'
       ]
     }
-    window.filterList = new List(list.parentElement.getAttribute('id'), opts)
+    window.filterList = new List(list.parentElement, opts)
 
     // trigger a search, in case there is an existing value in the text input
     filterList.search(filterInput.value)
