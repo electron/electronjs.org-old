@@ -2271,6 +2271,18 @@
     "icon": "sencha-themer-icon.png"
   },
   {
+    "slug": "shapespark",
+    "name": "Shapespark",
+    "description": "Create WebGL virtual tours from 3D models.",
+    "website": "https://www.shapespark.com",
+    "keywords": [
+      "WebGL",
+      "3D",
+      "rendering"
+    ],
+    "icon": "shapespark-icon.png"
+  },
+  {
     "slug": "sheepchat",
     "name": "sheepChat",
     "description": "Multi-chat for streamers",
