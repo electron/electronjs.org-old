@@ -4,7 +4,10 @@
     "name": "1Clipboard",
     "description": "A universal clipboard managing app that makes it easy to access your clipboard from anywhere on any device",
     "website": "http://1clipboard.io",
-    "icon": "1clipboard-icon.png"
+    "icon": "1clipboard-icon.png",
+    "icon32": "1clipboard-icon-32.png",
+    "icon64": "1clipboard-icon-64.png",
+    "icon128": "1clipboard-icon-128.png"
   },
   {
     "slug": "5eclient",
@@ -15,21 +18,30 @@
       "CSGO",
       "PUG"
     ],
-    "icon": "5eclient-icon.png"
+    "icon": "5eclient-icon.png",
+    "icon32": "5eclient-icon-32.png",
+    "icon64": "5eclient-icon-64.png",
+    "icon128": "5eclient-icon-128.png"
   },
   {
     "slug": "abricotine",
     "name": "Abricotine",
     "description": "Open-source Markdown editor built for desktop",
     "website": "http://abricotine.brrd.fr",
-    "icon": "abricotine-icon.png"
+    "icon": "abricotine-icon.png",
+    "icon32": "abricotine-icon-32.png",
+    "icon64": "abricotine-icon-64.png",
+    "icon128": "abricotine-icon-128.png"
   },
   {
     "slug": "aipo-com",
     "name": "Aipo.com",
     "description": "Communication tool to optimize the connection between people",
     "website": "http://www.aipo.com",
-    "icon": "aipo-com-icon.png"
+    "icon": "aipo-com-icon.png",
+    "icon32": "aipo-com-icon-32.png",
+    "icon64": "aipo-com-icon-64.png",
+    "icon128": "aipo-com-icon-128.png"
   },
   {
     "slug": "airtame",
@@ -44,7 +56,10 @@
       "cross-platform",
       "teamwork"
     ],
-    "icon": "airtame-icon.png"
+    "icon": "airtame-icon.png",
+    "icon32": "airtame-icon-32.png",
+    "icon64": "airtame-icon-64.png",
+    "icon128": "airtame-icon-128.png"
   },
   {
     "slug": "alduin",
@@ -60,7 +75,10 @@
       "react"
     ],
     "license": "MIT",
-    "icon": "alduin-icon.png"
+    "icon": "alduin-icon.png",
+    "icon32": "alduin-icon-32.png",
+    "icon64": "alduin-icon-64.png",
+    "icon128": "alduin-icon-128.png"
   },
   {
     "slug": "amium",
@@ -72,7 +90,10 @@
       "chat",
       "file sync"
     ],
-    "icon": "amium-icon.png"
+    "icon": "amium-icon.png",
+    "icon32": "amium-icon-32.png",
+    "icon64": "amium-icon-64.png",
+    "icon128": "amium-icon-128.png"
   },
   {
     "slug": "anatine",
@@ -86,7 +107,10 @@
       "twitter"
     ],
     "license": "MIT",
-    "icon": "anatine-icon.png"
+    "icon": "anatine-icon.png",
+    "icon32": "anatine-icon-32.png",
+    "icon64": "anatine-icon-64.png",
+    "icon128": "anatine-icon-128.png"
   },
   {
     "slug": "anote",
@@ -102,14 +126,20 @@
       "Redux",
       "Codemirror"
     ],
-    "icon": "anote-icon.png"
+    "icon": "anote-icon.png",
+    "icon32": "anote-icon-32.png",
+    "icon64": "anote-icon-64.png",
+    "icon128": "anote-icon-128.png"
   },
   {
     "slug": "argo",
     "name": "Argo",
     "description": "An open source trading platform",
     "website": "http://argo.js.org",
-    "icon": "argo-icon.png"
+    "icon": "argo-icon.png",
+    "icon32": "argo-icon-32.png",
+    "icon64": "argo-icon-64.png",
+    "icon128": "argo-icon-128.png"
   },
   {
     "slug": "atom",
@@ -126,14 +156,20 @@
       "github"
     ],
     "license": "MIT",
-    "icon": "atom-icon.png"
+    "icon": "atom-icon.png",
+    "icon32": "atom-icon-32.png",
+    "icon64": "atom-icon-64.png",
+    "icon128": "atom-icon-128.png"
   },
   {
     "slug": "avocode",
     "name": "Avocode",
     "description": "One workspace open to all designers and developers",
     "website": "http://avocode.com",
-    "icon": "avocode-icon.png"
+    "icon": "avocode-icon.png",
+    "icon32": "avocode-icon-32.png",
+    "icon64": "avocode-icon-64.png",
+    "icon128": "avocode-icon-128.png"
   },
   {
     "slug": "basecamp-3",
@@ -143,7 +179,10 @@
     "keywords": [
       "productivity"
     ],
-    "icon": "basecamp-3-icon.png"
+    "icon": "basecamp-3-icon.png",
+    "icon32": "basecamp-3-icon-32.png",
+    "icon64": "basecamp-3-icon-64.png",
+    "icon128": "basecamp-3-icon-128.png"
   },
   {
     "slug": "beaker-browser",
@@ -151,14 +190,20 @@
     "description": "An experimental P2P browser",
     "website": "https://beakerbrowser.com",
     "repository": "https://github.com/beakerbrowser/beaker",
-    "icon": "beaker-browser-icon.png"
+    "icon": "beaker-browser-icon.png",
+    "icon32": "beaker-browser-icon-32.png",
+    "icon64": "beaker-browser-icon-64.png",
+    "icon128": "beaker-browser-icon-128.png"
   },
   {
     "slug": "bearychat",
     "name": "BearyChat",
     "description": "Focused team communications",
     "website": "https://bearychat.com",
-    "icon": "bearychat-icon.png"
+    "icon": "bearychat-icon.png",
+    "icon32": "bearychat-icon-32.png",
+    "icon64": "bearychat-icon-64.png",
+    "icon128": "bearychat-icon-128.png"
   },
   {
     "slug": "bitbloq",
@@ -174,7 +219,10 @@
       "electronics",
       "children"
     ],
-    "icon": "bitbloq-icon.png"
+    "icon": "bitbloq-icon.png",
+    "icon32": "bitbloq-icon-32.png",
+    "icon64": "bitbloq-icon-64.png",
+    "icon128": "bitbloq-icon-128.png"
   },
   {
     "slug": "bitcrypt",
@@ -188,7 +236,10 @@
       "file",
       "encryption"
     ],
-    "icon": "bitcrypt-icon.png"
+    "icon": "bitcrypt-icon.png",
+    "icon32": "bitcrypt-icon-32.png",
+    "icon64": "bitcrypt-icon-64.png",
+    "icon128": "bitcrypt-icon-128.png"
   },
   {
     "slug": "blankup",
@@ -201,7 +252,10 @@
       "editor",
       "productivity"
     ],
-    "icon": "blankup-icon.png"
+    "icon": "blankup-icon.png",
+    "icon32": "blankup-icon-32.png",
+    "icon64": "blankup-icon-64.png",
+    "icon128": "blankup-icon-128.png"
   },
   {
     "slug": "booker",
@@ -215,21 +269,30 @@
       "html",
       "pdf"
     ],
-    "icon": "booker-icon.png"
+    "icon": "booker-icon.png",
+    "icon32": "booker-icon-32.png",
+    "icon64": "booker-icon-64.png",
+    "icon128": "booker-icon-128.png"
   },
   {
     "slug": "boost",
     "name": "Boost",
     "description": "Open-sourced note app for programmers",
     "website": "https://b00st.io",
-    "icon": "boost-icon.png"
+    "icon": "boost-icon.png",
+    "icon32": "boost-icon-32.png",
+    "icon64": "boost-icon-64.png",
+    "icon128": "boost-icon-128.png"
   },
   {
     "slug": "brave-browser",
     "name": "Brave Browser",
     "description": "Web browser that automatically blocks ads and trackers",
     "website": "https://brave.com/",
-    "icon": "brave-browser-icon.png"
+    "icon": "brave-browser-icon.png",
+    "icon32": "brave-browser-icon-32.png",
+    "icon64": "brave-browser-icon-64.png",
+    "icon128": "brave-browser-icon-128.png"
   },
   {
     "slug": "caprine",
@@ -244,21 +307,30 @@
       "facebook"
     ],
     "license": "MIT",
-    "icon": "caprine-icon.png"
+    "icon": "caprine-icon.png",
+    "icon32": "caprine-icon-32.png",
+    "icon64": "caprine-icon-64.png",
+    "icon128": "caprine-icon-128.png"
   },
   {
     "slug": "caret",
     "name": "Caret",
     "description": "Markdown editor for Mac / Windows / Linux",
     "website": "http://caret.io",
-    "icon": "caret-icon.png"
+    "icon": "caret-icon.png",
+    "icon32": "caret-icon-32.png",
+    "icon64": "caret-icon-64.png",
+    "icon128": "caret-icon-128.png"
   },
   {
     "slug": "catlight",
     "name": "CatLight",
     "description": "Desktop build status notifications",
     "website": "https://catlight.io",
-    "icon": "catlight-icon.png"
+    "icon": "catlight-icon.png",
+    "icon32": "catlight-icon-32.png",
+    "icon64": "catlight-icon-64.png",
+    "icon128": "catlight-icon-128.png"
   },
   {
     "slug": "chatwork",
@@ -274,14 +346,20 @@
       "messaging",
       "productivity"
     ],
-    "icon": "chatwork-icon.png"
+    "icon": "chatwork-icon.png",
+    "icon32": "chatwork-icon-32.png",
+    "icon64": "chatwork-icon-64.png",
+    "icon128": "chatwork-icon-128.png"
   },
   {
     "slug": "chronocube",
     "name": "Chronocube",
     "description": "Your rubik's cube solves",
     "website": "https://pablopunk.github.io/chronocube",
-    "icon": "chronocube-icon.png"
+    "icon": "chronocube-icon.png",
+    "icon32": "chronocube-icon-32.png",
+    "icon64": "chronocube-icon-64.png",
+    "icon128": "chronocube-icon-128.png"
   },
   {
     "slug": "cloudcmd",
@@ -316,7 +394,10 @@
       "server"
     ],
     "license": "MIT",
-    "icon": "cloudcmd-icon.png"
+    "icon": "cloudcmd-icon.png",
+    "icon32": "cloudcmd-icon-32.png",
+    "icon64": "cloudcmd-icon-64.png",
+    "icon128": "cloudcmd-icon-128.png"
   },
   {
     "slug": "cloudtag",
@@ -329,7 +410,10 @@
       "easy",
       "utility"
     ],
-    "icon": "cloudtag-icon.png"
+    "icon": "cloudtag-icon.png",
+    "icon32": "cloudtag-icon-32.png",
+    "icon64": "cloudtag-icon-64.png",
+    "icon128": "cloudtag-icon-128.png"
   },
   {
     "slug": "cocos-creator",
@@ -337,7 +421,10 @@
     "description": "Game development tools",
     "website": "http://www.cocos2d-x.org",
     "repository": "https://github.com/cocos-creator/engine",
-    "icon": "cocos-creator-icon.png"
+    "icon": "cocos-creator-icon.png",
+    "icon32": "cocos-creator-icon-32.png",
+    "icon64": "cocos-creator-icon-64.png",
+    "icon128": "cocos-creator-icon-128.png"
   },
   {
     "slug": "code-rpgify",
@@ -350,7 +437,10 @@
       "coding",
       "game"
     ],
-    "icon": "code-rpgify-icon.png"
+    "icon": "code-rpgify-icon.png",
+    "icon32": "code-rpgify-icon-32.png",
+    "icon64": "code-rpgify-icon-64.png",
+    "icon128": "code-rpgify-icon-128.png"
   },
   {
     "slug": "colibri",
@@ -360,7 +450,10 @@
     "keywords": [
       "browser"
     ],
-    "icon": "colibri-icon.png"
+    "icon": "colibri-icon.png",
+    "icon32": "colibri-icon-32.png",
+    "icon64": "colibri-icon-64.png",
+    "icon128": "colibri-icon-128.png"
   },
   {
     "slug": "collectie",
@@ -373,7 +466,10 @@
       "database",
       "design"
     ],
-    "icon": "collectie-icon.png"
+    "icon": "collectie-icon.png",
+    "icon32": "collectie-icon-32.png",
+    "icon64": "collectie-icon-64.png",
+    "icon128": "collectie-icon-128.png"
   },
   {
     "slug": "correo",
@@ -391,7 +487,10 @@
       "html",
       "desktop"
     ],
-    "icon": "correo-icon.png"
+    "icon": "correo-icon.png",
+    "icon32": "correo-icon-32.png",
+    "icon64": "correo-icon-64.png",
+    "icon128": "correo-icon-128.png"
   },
   {
     "slug": "covepdf",
@@ -405,7 +504,10 @@
       "free",
       "pdf reader"
     ],
-    "icon": "covepdf-icon.png"
+    "icon": "covepdf-icon.png",
+    "icon32": "covepdf-icon-32.png",
+    "icon64": "covepdf-icon-64.png",
+    "icon128": "covepdf-icon-128.png"
   },
   {
     "slug": "cozy-desktop",
@@ -419,7 +521,10 @@
       "files"
     ],
     "license": "AGPLv3",
-    "icon": "cozy-desktop-icon.png"
+    "icon": "cozy-desktop-icon.png",
+    "icon32": "cozy-desktop-icon-32.png",
+    "icon64": "cozy-desktop-icon-64.png",
+    "icon128": "cozy-desktop-icon-128.png"
   },
   {
     "slug": "criptio",
@@ -430,21 +535,30 @@
       "security",
       "productivity"
     ],
-    "icon": "criptio-icon.png"
+    "icon": "criptio-icon.png",
+    "icon32": "criptio-icon-32.png",
+    "icon64": "criptio-icon-64.png",
+    "icon128": "criptio-icon-128.png"
   },
   {
     "slug": "crypter",
     "name": "Crypter",
     "description": "Simple, convenient and secure encryption client",
     "website": "https://github.com/HR/Crypter",
-    "icon": "crypter-icon.png"
+    "icon": "crypter-icon.png",
+    "icon32": "crypter-icon-32.png",
+    "icon64": "crypter-icon-64.png",
+    "icon128": "crypter-icon-128.png"
   },
   {
     "slug": "cryptocat",
     "name": "Cryptocat",
     "description": "Free secure chat software",
     "website": "https://crypto.cat",
-    "icon": "cryptocat-icon.png"
+    "icon": "cryptocat-icon.png",
+    "icon32": "cryptocat-icon-32.png",
+    "icon64": "cryptocat-icon-64.png",
+    "icon128": "cryptocat-icon-128.png"
   },
   {
     "slug": "cumulus",
@@ -458,14 +572,20 @@
       "player"
     ],
     "license": "MIT",
-    "icon": "cumulus-icon.png"
+    "icon": "cumulus-icon.png",
+    "icon32": "cumulus-icon-32.png",
+    "icon64": "cumulus-icon-64.png",
+    "icon128": "cumulus-icon-128.png"
   },
   {
     "slug": "curse",
     "name": "Curse",
     "description": "Fast and free communication for gamers",
     "website": "https://www.curse.com",
-    "icon": "curse-icon.png"
+    "icon": "curse-icon.png",
+    "icon32": "curse-icon-32.png",
+    "icon64": "curse-icon-64.png",
+    "icon128": "curse-icon-128.png"
   },
   {
     "slug": "cycligent-git-tool",
@@ -477,7 +597,10 @@
       "programming",
       "productivity"
     ],
-    "icon": "cycligent-git-tool-icon.png"
+    "icon": "cycligent-git-tool-icon.png",
+    "icon32": "cycligent-git-tool-icon-32.png",
+    "icon64": "cycligent-git-tool-icon-64.png",
+    "icon128": "cycligent-git-tool-icon-128.png"
   },
   {
     "slug": "cypress",
@@ -490,7 +613,10 @@
       "developer tool",
       "web development"
     ],
-    "icon": "cypress-icon.png"
+    "icon": "cypress-icon.png",
+    "icon32": "cypress-icon-32.png",
+    "icon64": "cypress-icon-64.png",
+    "icon128": "cypress-icon-128.png"
   },
   {
     "slug": "dataproofer",
@@ -506,14 +632,20 @@
       "research",
       "spreadsheet"
     ],
-    "icon": "dataproofer-icon.png"
+    "icon": "dataproofer-icon.png",
+    "icon32": "dataproofer-icon-32.png",
+    "icon64": "dataproofer-icon-64.png",
+    "icon128": "dataproofer-icon-128.png"
   },
   {
     "slug": "datazenit",
     "name": "Datazenit",
     "description": "Modern database administration tool",
     "website": "https://datazenit.com",
-    "icon": "datazenit-icon.png"
+    "icon": "datazenit-icon.png",
+    "icon32": "datazenit-icon-32.png",
+    "icon64": "datazenit-icon-64.png",
+    "icon128": "datazenit-icon-128.png"
   },
   {
     "slug": "dbglass",
@@ -527,7 +659,10 @@
       "database"
     ],
     "license": "MIT",
-    "icon": "dbglass-icon.png"
+    "icon": "dbglass-icon.png",
+    "icon32": "dbglass-icon-32.png",
+    "icon64": "dbglass-icon-64.png",
+    "icon128": "dbglass-icon-128.png"
   },
   {
     "slug": "deckard-ai",
@@ -539,14 +674,20 @@
       "collaboration",
       "documentation"
     ],
-    "icon": "deckard-ai-icon.png"
+    "icon": "deckard-ai-icon.png",
+    "icon32": "deckard-ai-icon-32.png",
+    "icon64": "deckard-ai-icon-64.png",
+    "icon128": "deckard-ai-icon-128.png"
   },
   {
     "slug": "deckhub",
     "name": "DeckHub",
     "description": "TweetDeck style desktop client for GitHub",
     "website": "https://getdeckhub.com",
-    "icon": "deckhub-icon.png"
+    "icon": "deckhub-icon.png",
+    "icon32": "deckhub-icon-32.png",
+    "icon64": "deckhub-icon-64.png",
+    "icon128": "deckhub-icon-128.png"
   },
   {
     "slug": "deco-ide",
@@ -561,14 +702,20 @@
       "ide"
     ],
     "license": "AGPLv3",
-    "icon": "deco-ide-icon.png"
+    "icon": "deco-ide-icon.png",
+    "icon32": "deco-ide-icon-32.png",
+    "icon64": "deco-ide-icon-64.png",
+    "icon128": "deco-ide-icon-128.png"
   },
   {
     "slug": "deepnest",
     "name": "Deepnest",
     "description": "Automatic vector nesting for laser cutters",
     "website": "http://deepnest.io",
-    "icon": "deepnest-icon.png"
+    "icon": "deepnest-icon.png",
+    "icon32": "deepnest-icon-32.png",
+    "icon64": "deepnest-icon-64.png",
+    "icon128": "deepnest-icon-128.png"
   },
   {
     "slug": "demio",
@@ -581,7 +728,10 @@
       "b2b",
       "live streaming"
     ],
-    "icon": "demio-icon.png"
+    "icon": "demio-icon.png",
+    "icon32": "demio-icon-32.png",
+    "icon64": "demio-icon-64.png",
+    "icon128": "demio-icon-128.png"
   },
   {
     "slug": "destroyer",
@@ -590,7 +740,10 @@
     "website": "http://destroyer.audio",
     "repository": "https://github.com/mashaal/destroyer",
     "license": "ISC",
-    "icon": "destroyer-icon.png"
+    "icon": "destroyer-icon.png",
+    "icon32": "destroyer-icon-32.png",
+    "icon64": "destroyer-icon-64.png",
+    "icon128": "destroyer-icon-128.png"
   },
   {
     "slug": "devrant-io-unofficial",
@@ -603,7 +756,10 @@
       "Developers"
     ],
     "license": "GPLv2",
-    "icon": "devrant-io-unofficial-icon.png"
+    "icon": "devrant-io-unofficial-icon.png",
+    "icon32": "devrant-io-unofficial-icon-32.png",
+    "icon64": "devrant-io-unofficial-icon-64.png",
+    "icon128": "devrant-io-unofficial-icon-128.png"
   },
   {
     "slug": "dext",
@@ -616,14 +772,20 @@
       "search"
     ],
     "license": "MIT",
-    "icon": "dext-icon.png"
+    "icon": "dext-icon.png",
+    "icon32": "dext-icon-32.png",
+    "icon64": "dext-icon-64.png",
+    "icon128": "dext-icon-128.png"
   },
   {
     "slug": "discord",
     "name": "Discord",
     "description": "All-in-one voice and text chat for gamers",
     "website": "http://discordapp.com",
-    "icon": "discord-icon.png"
+    "icon": "discord-icon.png",
+    "icon32": "discord-icon-32.png",
+    "icon64": "discord-icon-64.png",
+    "icon128": "discord-icon-128.png"
   },
   {
     "slug": "donut",
@@ -638,14 +800,20 @@
       "tracker"
     ],
     "license": "MIT",
-    "icon": "donut-icon.png"
+    "icon": "donut-icon.png",
+    "icon32": "donut-icon-32.png",
+    "icon64": "donut-icon-64.png",
+    "icon128": "donut-icon-128.png"
   },
   {
     "slug": "egret-wing",
     "name": "Egret Wing",
     "description": "Egret Wing",
     "website": "http://www.egret.com/products-wing",
-    "icon": "egret-wing-icon.png"
+    "icon": "egret-wing-icon.png",
+    "icon32": "egret-wing-icon-32.png",
+    "icon64": "egret-wing-icon-64.png",
+    "icon128": "egret-wing-icon-128.png"
   },
   {
     "slug": "electorrent",
@@ -660,7 +828,10 @@
       "magnet"
     ],
     "license": "GPLv3",
-    "icon": "electorrent-icon.png"
+    "icon": "electorrent-icon.png",
+    "icon32": "electorrent-icon-32.png",
+    "icon64": "electorrent-icon-64.png",
+    "icon128": "electorrent-icon-128.png"
   },
   {
     "slug": "electro",
@@ -671,7 +842,10 @@
       "music",
       "DJ"
     ],
-    "icon": "electro-icon.png"
+    "icon": "electro-icon.png",
+    "icon32": "electro-icon-32.png",
+    "icon64": "electro-icon-64.png",
+    "icon128": "electro-icon-128.png"
   },
   {
     "slug": "elite-journal",
@@ -685,7 +859,10 @@
       "parser"
     ],
     "license": "MIT",
-    "icon": "elite-journal-icon.png"
+    "icon": "elite-journal-icon.png",
+    "icon32": "elite-journal-icon-32.png",
+    "icon64": "elite-journal-icon-64.png",
+    "icon128": "elite-journal-icon-128.png"
   },
   {
     "slug": "englishextra-app",
@@ -693,7 +870,10 @@
     "description": "English Grammar for Russian Speakers",
     "website": "https://englishextraapp.codeplex.com",
     "repository": "https://github.com/englishextra/englishextra-app",
-    "icon": "englishextra-app-icon.png"
+    "icon": "englishextra-app-icon.png",
+    "icon32": "englishextra-app-icon-32.png",
+    "icon64": "englishextra-app-icon-64.png",
+    "icon128": "englishextra-app-icon-128.png"
   },
   {
     "slug": "etcher",
@@ -707,14 +887,20 @@
       "IoT"
     ],
     "license": "Apache 2.0",
-    "icon": "etcher-icon.png"
+    "icon": "etcher-icon.png",
+    "icon32": "etcher-icon-32.png",
+    "icon64": "etcher-icon-64.png",
+    "icon128": "etcher-icon-128.png"
   },
   {
     "slug": "explorer",
     "name": "Explorer",
     "description": "Statistics the easy way",
     "website": "https://github.com/jfbouzereau/explorer",
-    "icon": "explorer-icon.png"
+    "icon": "explorer-icon.png",
+    "icon32": "explorer-icon-32.png",
+    "icon64": "explorer-icon-64.png",
+    "icon128": "explorer-icon-128.png"
   },
   {
     "slug": "fangyuanjian",
@@ -728,14 +914,20 @@
     "locales": [
       "zh-CN"
     ],
-    "icon": "fangyuanjian-icon.png"
+    "icon": "fangyuanjian-icon.png",
+    "icon32": "fangyuanjian-icon-32.png",
+    "icon64": "fangyuanjian-icon-64.png",
+    "icon128": "fangyuanjian-icon-128.png"
   },
   {
     "slug": "fastlane",
     "name": "Fastlane",
     "description": "Reserve an Uber from your Mac",
     "website": "https://fastlaneapp.co",
-    "icon": "fastlane-icon.png"
+    "icon": "fastlane-icon.png",
+    "icon32": "fastlane-icon-32.png",
+    "icon64": "fastlane-icon-64.png",
+    "icon128": "fastlane-icon-128.png"
   },
   {
     "slug": "ffftp",
@@ -747,7 +939,10 @@
       "ftp",
       "development"
     ],
-    "icon": "ffftp-icon.png"
+    "icon": "ffftp-icon.png",
+    "icon32": "ffftp-icon-32.png",
+    "icon64": "ffftp-icon-64.png",
+    "icon128": "ffftp-icon-128.png"
   },
   {
     "slug": "firebase-admin",
@@ -764,7 +959,10 @@
       "admin ui"
     ],
     "license": "GPLv3",
-    "icon": "firebase-admin-icon.png"
+    "icon": "firebase-admin-icon.png",
+    "icon32": "firebase-admin-icon-32.png",
+    "icon64": "firebase-admin-icon-64.png",
+    "icon128": "firebase-admin-icon-128.png"
   },
   {
     "slug": "flex-browser",
@@ -778,7 +976,10 @@
       "Internet",
       "System"
     ],
-    "icon": "flex-browser-icon.png"
+    "icon": "flex-browser-icon.png",
+    "icon32": "flex-browser-icon-32.png",
+    "icon64": "flex-browser-icon-64.png",
+    "icon128": "flex-browser-icon-128.png"
   },
   {
     "slug": "flexpaper",
@@ -793,14 +994,20 @@
       "interactive pdf publications",
       "pdf to online publication"
     ],
-    "icon": "flexpaper-icon.png"
+    "icon": "flexpaper-icon.png",
+    "icon32": "flexpaper-icon-32.png",
+    "icon64": "flexpaper-icon-64.png",
+    "icon128": "flexpaper-icon-128.png"
   },
   {
     "slug": "flow",
     "name": "Flow",
     "description": "Task Management Software That Doesn't Feel Like Work",
     "website": "https://www.getflow.com/solutions/startups",
-    "icon": "flow-icon.png"
+    "icon": "flow-icon.png",
+    "icon32": "flow-icon-32.png",
+    "icon64": "flow-icon-64.png",
+    "icon128": "flow-icon-128.png"
   },
   {
     "slug": "foco",
@@ -818,7 +1025,10 @@
       "music"
     ],
     "license": "MIT",
-    "icon": "foco-icon.png"
+    "icon": "foco-icon.png",
+    "icon32": "foco-icon-32.png",
+    "icon64": "foco-icon-64.png",
+    "icon128": "foco-icon-128.png"
   },
   {
     "slug": "forestpin-analytics",
@@ -830,7 +1040,10 @@
       "data",
       "finance"
     ],
-    "icon": "forestpin-analytics-icon.png"
+    "icon": "forestpin-analytics-icon.png",
+    "icon32": "forestpin-analytics-icon-32.png",
+    "icon64": "forestpin-analytics-icon-64.png",
+    "icon128": "forestpin-analytics-icon-128.png"
   },
   {
     "slug": "franz",
@@ -842,7 +1055,10 @@
       "chat",
       "productivity"
     ],
-    "icon": "franz-icon.png"
+    "icon": "franz-icon.png",
+    "icon32": "franz-icon-32.png",
+    "icon64": "franz-icon-64.png",
+    "icon128": "franz-icon-128.png"
   },
   {
     "slug": "freeter",
@@ -853,14 +1069,20 @@
       "productivity",
       "organizer"
     ],
-    "icon": "freeter-icon.png"
+    "icon": "freeter-icon.png",
+    "icon32": "freeter-icon-32.png",
+    "icon64": "freeter-icon-64.png",
+    "icon128": "freeter-icon-128.png"
   },
   {
     "slug": "friends",
     "name": "Friends",
     "description": "Peer to peer chat",
     "website": "http://moose-team.github.io/friends",
-    "icon": "friends-icon.png"
+    "icon": "friends-icon.png",
+    "icon32": "friends-icon-32.png",
+    "icon64": "friends-icon-64.png",
+    "icon128": "friends-icon-128.png"
   },
   {
     "slug": "fromscratch",
@@ -874,7 +1096,10 @@
       "texteditor"
     ],
     "license": "MIT",
-    "icon": "fromscratch-icon.png"
+    "icon": "fromscratch-icon.png",
+    "icon32": "fromscratch-icon-32.png",
+    "icon64": "fromscratch-icon-64.png",
+    "icon128": "fromscratch-icon-128.png"
   },
   {
     "slug": "front-end-box",
@@ -888,14 +1113,20 @@
       "Images Optimizer",
       "Developer Tool"
     ],
-    "icon": "front-end-box-icon.png"
+    "icon": "front-end-box-icon.png",
+    "icon32": "front-end-box-icon-32.png",
+    "icon64": "front-end-box-icon-64.png",
+    "icon128": "front-end-box-icon-128.png"
   },
   {
     "slug": "gala",
     "name": "Gala",
     "description": "A new and easier way of searching images",
     "website": "http://www.getgala.me",
-    "icon": "gala-icon.png"
+    "icon": "gala-icon.png",
+    "icon32": "gala-icon-32.png",
+    "icon64": "gala-icon-64.png",
+    "icon128": "gala-icon-128.png"
   },
   {
     "slug": "galeri",
@@ -906,7 +1137,10 @@
       "art",
       "painting"
     ],
-    "icon": "galeri-icon.png"
+    "icon": "galeri-icon.png",
+    "icon32": "galeri-icon-32.png",
+    "icon64": "galeri-icon-64.png",
+    "icon128": "galeri-icon-128.png"
   },
   {
     "slug": "gausssense-desktop",
@@ -925,7 +1159,10 @@
       "Unity",
       "Scratch"
     ],
-    "icon": "gausssense-desktop-icon.png"
+    "icon": "gausssense-desktop-icon.png",
+    "icon32": "gausssense-desktop-icon-32.png",
+    "icon64": "gausssense-desktop-icon-64.png",
+    "icon128": "gausssense-desktop-icon-128.png"
   },
   {
     "slug": "gf-trader",
@@ -936,21 +1173,30 @@
       "finace",
       "securities"
     ],
-    "icon": "gf-trader-icon.png"
+    "icon": "gf-trader-icon.png",
+    "icon32": "gf-trader-icon-32.png",
+    "icon64": "gf-trader-icon-64.png",
+    "icon128": "gf-trader-icon-128.png"
   },
   {
     "slug": "ghost",
     "name": "Ghost",
     "description": "A professional publishing platform",
     "website": "https://ghost.org",
-    "icon": "ghost-icon.png"
+    "icon": "ghost-icon.png",
+    "icon32": "ghost-icon-32.png",
+    "icon64": "ghost-icon-64.png",
+    "icon128": "ghost-icon-128.png"
   },
   {
     "slug": "gif-maker",
     "name": "Gif Maker",
     "description": "Animated GIF maker",
     "website": "http://gifmaker.io",
-    "icon": "gif-maker-icon.png"
+    "icon": "gif-maker-icon.png",
+    "icon32": "gif-maker-icon-32.png",
+    "icon64": "gif-maker-icon-64.png",
+    "icon128": "gif-maker-icon-128.png"
   },
   {
     "slug": "gifbar",
@@ -964,21 +1210,30 @@
       "search"
     ],
     "license": "MIT",
-    "icon": "gifbar-icon.png"
+    "icon": "gifbar-icon.png",
+    "icon32": "gifbar-icon-32.png",
+    "icon64": "gifbar-icon-64.png",
+    "icon128": "gifbar-icon-128.png"
   },
   {
     "slug": "gitbook",
     "name": "GitBook",
     "description": "Editor for a modern publishing toolchain based on Git",
     "website": "https://www.gitbook.com",
-    "icon": "gitbook-icon.png"
+    "icon": "gitbook-icon.png",
+    "icon32": "gitbook-icon-32.png",
+    "icon64": "gitbook-icon-64.png",
+    "icon128": "gitbook-icon-128.png"
   },
   {
     "slug": "gitify",
     "name": "Gitify",
     "description": "Github notifications on your menu bar",
     "website": "http://www.gitify.io",
-    "icon": "gitify-icon.png"
+    "icon": "gitify-icon.png",
+    "icon32": "gitify-icon-32.png",
+    "icon64": "gitify-icon-64.png",
+    "icon128": "gitify-icon-128.png"
   },
   {
     "slug": "gitkraken",
@@ -990,7 +1245,10 @@
       "programming",
       "productivity"
     ],
-    "icon": "gitkraken-icon.png"
+    "icon": "gitkraken-icon.png",
+    "icon32": "gitkraken-icon-32.png",
+    "icon64": "gitkraken-icon-64.png",
+    "icon128": "gitkraken-icon-128.png"
   },
   {
     "slug": "gitscout",
@@ -1003,7 +1261,10 @@
       "git",
       "developer tool"
     ],
-    "icon": "gitscout-icon.png"
+    "icon": "gitscout-icon.png",
+    "icon32": "gitscout-icon-32.png",
+    "icon64": "gitscout-icon-64.png",
+    "icon128": "gitscout-icon-128.png"
   },
   {
     "slug": "glyphr-studio",
@@ -1016,14 +1277,20 @@
       "design",
       "utility"
     ],
-    "icon": "glyphr-studio-icon.png"
+    "icon": "glyphr-studio-icon.png",
+    "icon32": "glyphr-studio-icon-32.png",
+    "icon64": "glyphr-studio-icon-64.png",
+    "icon128": "glyphr-studio-icon-128.png"
   },
   {
     "slug": "google-play-music-desktop-player",
     "name": "Google Play Music Desktop Player",
     "description": "A beautiful cross platform Desktop Player for Google Play Music",
     "website": "http://www.googleplaymusicdesktopplayer.com/",
-    "icon": "google-play-music-desktop-player-icon.png"
+    "icon": "google-play-music-desktop-player-icon.png",
+    "icon32": "google-play-music-desktop-player-icon-32.png",
+    "icon64": "google-play-music-desktop-player-icon-64.png",
+    "icon128": "google-play-music-desktop-player-icon-128.png"
   },
   {
     "slug": "gordie",
@@ -1034,7 +1301,10 @@
       "cards",
       "collections"
     ],
-    "icon": "gordie-icon.png"
+    "icon": "gordie-icon.png",
+    "icon32": "gordie-icon-32.png",
+    "icon64": "gordie-icon-64.png",
+    "icon128": "gordie-icon-128.png"
   },
   {
     "slug": "grabcad-print",
@@ -1045,7 +1315,10 @@
       "productivity",
       "3D"
     ],
-    "icon": "grabcad-print-icon.png"
+    "icon": "grabcad-print-icon.png",
+    "icon32": "grabcad-print-icon-32.png",
+    "icon64": "grabcad-print-icon-64.png",
+    "icon128": "grabcad-print-icon-128.png"
   },
   {
     "slug": "grap",
@@ -1060,7 +1333,10 @@
       "social",
       "messanger"
     ],
-    "icon": "grap-icon.png"
+    "icon": "grap-icon.png",
+    "icon32": "grap-icon-32.png",
+    "icon64": "grap-icon-64.png",
+    "icon128": "grap-icon-128.png"
   },
   {
     "slug": "groupme",
@@ -1076,14 +1352,20 @@
       "social"
     ],
     "license": "MIT",
-    "icon": "groupme-icon.png"
+    "icon": "groupme-icon.png",
+    "icon32": "groupme-icon-32.png",
+    "icon64": "groupme-icon-64.png",
+    "icon128": "groupme-icon-128.png"
   },
   {
     "slug": "hain",
     "name": "Hain",
     "description": "An 'alt+space' launcher for Windows",
     "website": "https://github.com/appetizermonster/hain",
-    "icon": "hain-icon.png"
+    "icon": "hain-icon.png",
+    "icon32": "hain-icon-32.png",
+    "icon64": "hain-icon-64.png",
+    "icon128": "hain-icon-128.png"
   },
   {
     "slug": "hardinfo",
@@ -1096,7 +1378,10 @@
       "hardinfo"
     ],
     "license": "MIT",
-    "icon": "hardinfo-icon.png"
+    "icon": "hardinfo-icon.png",
+    "icon32": "hardinfo-icon-32.png",
+    "icon64": "hardinfo-icon-64.png",
+    "icon128": "hardinfo-icon-128.png"
   },
   {
     "slug": "harmony",
@@ -1112,7 +1397,10 @@
       "Play Music",
       "mp3"
     ],
-    "icon": "harmony-icon.png"
+    "icon": "harmony-icon.png",
+    "icon32": "harmony-icon-32.png",
+    "icon64": "harmony-icon-64.png",
+    "icon128": "harmony-icon-128.png"
   },
   {
     "slug": "hawkeye",
@@ -1125,7 +1413,10 @@
       "notifications",
       "developer tools"
     ],
-    "icon": "hawkeye-icon.png"
+    "icon": "hawkeye-icon.png",
+    "icon32": "hawkeye-icon-32.png",
+    "icon64": "hawkeye-icon-64.png",
+    "icon128": "hawkeye-icon-128.png"
   },
   {
     "slug": "healthi",
@@ -1141,14 +1432,20 @@
       "util"
     ],
     "license": "MIT",
-    "icon": "healthi-icon.png"
+    "icon": "healthi-icon.png",
+    "icon32": "healthi-icon-32.png",
+    "icon64": "healthi-icon-64.png",
+    "icon128": "healthi-icon-128.png"
   },
   {
     "slug": "hive",
     "name": "Hive",
     "description": "Home for busy teams",
     "website": "https://hive.com",
-    "icon": "hive-icon.png"
+    "icon": "hive-icon.png",
+    "icon32": "hive-icon-32.png",
+    "icon64": "hive-icon-64.png",
+    "icon128": "hive-icon-128.png"
   },
   {
     "slug": "hostsdock",
@@ -1164,21 +1461,30 @@
       "hosts"
     ],
     "license": "MIT",
-    "icon": "hostsdock-icon.png"
+    "icon": "hostsdock-icon.png",
+    "icon32": "hostsdock-icon-32.png",
+    "icon64": "hostsdock-icon-64.png",
+    "icon128": "hostsdock-icon-128.png"
   },
   {
     "slug": "hozz",
     "name": "Hozz",
     "description": "A better way to manage your hosts",
     "website": "http://ppoffice.github.io/Hozz",
-    "icon": "hozz-icon.png"
+    "icon": "hozz-icon.png",
+    "icon32": "hozz-icon-32.png",
+    "icon64": "hozz-icon-64.png",
+    "icon128": "hozz-icon-128.png"
   },
   {
     "slug": "https-checker",
     "name": "HTTPS Checker",
     "description": "The Most Advanced HTTPS Mixed Content Checker Available",
     "website": "https://www.ecommerce.co.uk/httpschecker",
-    "icon": "https-checker-icon.png"
+    "icon": "https-checker-icon.png",
+    "icon32": "https-checker-icon-32.png",
+    "icon64": "https-checker-icon-64.png",
+    "icon128": "https-checker-icon-128.png"
   },
   {
     "slug": "hyper",
@@ -1193,7 +1499,10 @@
       "js"
     ],
     "license": "MIT",
-    "icon": "hyper-icon.png"
+    "icon": "hyper-icon.png",
+    "icon32": "hyper-icon-32.png",
+    "icon64": "hyper-icon-64.png",
+    "icon128": "hyper-icon-128.png"
   },
   {
     "slug": "i5sing",
@@ -1206,7 +1515,10 @@
       "music client",
       "kugou"
     ],
-    "icon": "i5sing-icon.png"
+    "icon": "i5sing-icon.png",
+    "icon32": "i5sing-icon-32.png",
+    "icon64": "i5sing-icon-64.png",
+    "icon128": "i5sing-icon-128.png"
   },
   {
     "slug": "infinity",
@@ -1218,7 +1530,10 @@
       "design",
       "react"
     ],
-    "icon": "infinity-icon.png"
+    "icon": "infinity-icon.png",
+    "icon32": "infinity-icon-32.png",
+    "icon64": "infinity-icon-64.png",
+    "icon128": "infinity-icon-128.png"
   },
   {
     "slug": "inkdrop",
@@ -1232,7 +1547,10 @@
       "extensible",
       "markdown"
     ],
-    "icon": "inkdrop-icon.png"
+    "icon": "inkdrop-icon.png",
+    "icon32": "inkdrop-icon-32.png",
+    "icon64": "inkdrop-icon-64.png",
+    "icon128": "inkdrop-icon-128.png"
   },
   {
     "slug": "inpad",
@@ -1248,7 +1566,10 @@
       "memo"
     ],
     "license": "MIT",
-    "icon": "inpad-icon.png"
+    "icon": "inpad-icon.png",
+    "icon32": "inpad-icon-32.png",
+    "icon64": "inpad-icon-64.png",
+    "icon128": "inpad-icon-128.png"
   },
   {
     "slug": "insomnia",
@@ -1261,7 +1582,10 @@
       "API",
       "Developer Tool"
     ],
-    "icon": "insomnia-icon.png"
+    "icon": "insomnia-icon.png",
+    "icon32": "insomnia-icon-32.png",
+    "icon64": "insomnia-icon-64.png",
+    "icon128": "insomnia-icon-128.png"
   },
   {
     "slug": "ionic-creator",
@@ -1276,14 +1600,20 @@
       "Prototyping"
     ],
     "license": "GNU",
-    "icon": "ionic-creator-icon.png"
+    "icon": "ionic-creator-icon.png",
+    "icon32": "ionic-creator-icon-32.png",
+    "icon64": "ionic-creator-icon-64.png",
+    "icon128": "ionic-creator-icon-128.png"
   },
   {
     "slug": "ionic-lab",
     "name": "Ionic Lab",
     "description": "Create, build, test and deploy Ionic apps",
     "website": "http://lab.ionic.io",
-    "icon": "ionic-lab-icon.png"
+    "icon": "ionic-lab-icon.png",
+    "icon32": "ionic-lab-icon-32.png",
+    "icon64": "ionic-lab-icon-64.png",
+    "icon128": "ionic-lab-icon-128.png"
   },
   {
     "slug": "ironnode",
@@ -1297,7 +1627,10 @@
       "nodejs"
     ],
     "license": "MIT",
-    "icon": "ironnode-icon.png"
+    "icon": "ironnode-icon.png",
+    "icon32": "ironnode-icon-32.png",
+    "icon64": "ironnode-icon-64.png",
+    "icon128": "ironnode-icon-128.png"
   },
   {
     "slug": "istrolid",
@@ -1308,7 +1641,10 @@
       "game",
       "strategy"
     ],
-    "icon": "istrolid-icon.png"
+    "icon": "istrolid-icon.png",
+    "icon32": "istrolid-icon-32.png",
+    "icon64": "istrolid-icon-64.png",
+    "icon128": "istrolid-icon-128.png"
   },
   {
     "slug": "itch",
@@ -1320,7 +1656,10 @@
       "games"
     ],
     "license": "MIT",
-    "icon": "itch-icon.png"
+    "icon": "itch-icon.png",
+    "icon32": "itch-icon-32.png",
+    "icon64": "itch-icon-64.png",
+    "icon128": "itch-icon-128.png"
   },
   {
     "slug": "jandi",
@@ -1331,7 +1670,10 @@
       "messanger",
       "collaboration"
     ],
-    "icon": "jandi-icon.png"
+    "icon": "jandi-icon.png",
+    "icon32": "jandi-icon-32.png",
+    "icon64": "jandi-icon-64.png",
+    "icon128": "jandi-icon-128.png"
   },
   {
     "slug": "jasper",
@@ -1345,21 +1687,30 @@
       "reader",
       "developer tool"
     ],
-    "icon": "jasper-icon.png"
+    "icon": "jasper-icon.png",
+    "icon32": "jasper-icon-32.png",
+    "icon64": "jasper-icon-64.png",
+    "icon128": "jasper-icon-128.png"
   },
   {
     "slug": "jibo",
     "name": "JIBO",
     "description": "The world's first social robot",
     "website": "https://www.jibo.com",
-    "icon": "jibo-icon.png"
+    "icon": "jibo-icon.png",
+    "icon32": "jibo-icon-32.png",
+    "icon64": "jibo-icon-64.png",
+    "icon128": "jibo-icon-128.png"
   },
   {
     "slug": "kakapo",
     "name": "Kakapo",
     "description": "Ambient sound mixer to set a nice mood",
     "website": "http://www.kakapo.co/app.html#desktop",
-    "icon": "kakapo-icon.png"
+    "icon": "kakapo-icon.png",
+    "icon32": "kakapo-icon-32.png",
+    "icon64": "kakapo-icon-64.png",
+    "icon128": "kakapo-icon-128.png"
   },
   {
     "slug": "kaku",
@@ -1372,7 +1723,10 @@
       "player"
     ],
     "license": "MIT",
-    "icon": "kaku-icon.png"
+    "icon": "kaku-icon.png",
+    "icon32": "kaku-icon-32.png",
+    "icon64": "kaku-icon-64.png",
+    "icon128": "kaku-icon-128.png"
   },
   {
     "slug": "kap",
@@ -1388,21 +1742,30 @@
       "video"
     ],
     "license": "MIT",
-    "icon": "kap-icon.png"
+    "icon": "kap-icon.png",
+    "icon32": "kap-icon-32.png",
+    "icon64": "kap-icon-64.png",
+    "icon128": "kap-icon-128.png"
   },
   {
     "slug": "keeweb",
     "name": "KeeWeb",
     "description": "Free cross-platform password manager compatible with KeePass",
     "website": "https://keeweb.info",
-    "icon": "keeweb-icon.png"
+    "icon": "keeweb-icon.png",
+    "icon32": "keeweb-icon-32.png",
+    "icon64": "keeweb-icon-64.png",
+    "icon128": "keeweb-icon-128.png"
   },
   {
     "slug": "kitematic",
     "name": "Kitematic",
     "description": "Run containers through a simple, yet powerful graphical user interface",
     "website": "https://kitematic.com",
-    "icon": "kitematic-icon.png"
+    "icon": "kitematic-icon.png",
+    "icon32": "kitematic-icon-32.png",
+    "icon64": "kitematic-icon-64.png",
+    "icon128": "kitematic-icon-128.png"
   },
   {
     "slug": "kongdash",
@@ -1417,7 +1780,10 @@
       "API"
     ],
     "license": "MIT",
-    "icon": "kongdash-icon.png"
+    "icon": "kongdash-icon.png",
+    "icon32": "kongdash-icon-32.png",
+    "icon64": "kongdash-icon-64.png",
+    "icon128": "kongdash-icon-128.png"
   },
   {
     "slug": "laverna",
@@ -1429,14 +1795,20 @@
       "markdown",
       "editor"
     ],
-    "icon": "laverna-icon.png"
+    "icon": "laverna-icon.png",
+    "icon32": "laverna-icon-32.png",
+    "icon64": "laverna-icon-64.png",
+    "icon128": "laverna-icon-128.png"
   },
   {
     "slug": "light-table",
     "name": "Light Table",
     "description": "The next generation code editor",
     "website": "http://www.lighttable.com",
-    "icon": "light-table-icon.png"
+    "icon": "light-table-icon.png",
+    "icon32": "light-table-icon-32.png",
+    "icon64": "light-table-icon-64.png",
+    "icon128": "light-table-icon-128.png"
   },
   {
     "slug": "lightgallery",
@@ -1450,7 +1822,10 @@
       "gallery"
     ],
     "license": "MIT",
-    "icon": "lightgallery-icon.png"
+    "icon": "lightgallery-icon.png",
+    "icon32": "lightgallery-icon-32.png",
+    "icon64": "lightgallery-icon-64.png",
+    "icon128": "lightgallery-icon-128.png"
   },
   {
     "slug": "ling",
@@ -1464,7 +1839,10 @@
       "Developer Tool"
     ],
     "license": "MIT",
-    "icon": "ling-icon.png"
+    "icon": "ling-icon.png",
+    "icon32": "ling-icon-32.png",
+    "icon64": "ling-icon-64.png",
+    "icon128": "ling-icon-128.png"
   },
   {
     "slug": "losslesscut",
@@ -1472,28 +1850,40 @@
     "description": "GUI tool for lossless trimming / cutting of videos using ffmpeg",
     "website": "https://github.com/mifi/lossless-cut",
     "license": "MIT",
-    "icon": "losslesscut-icon.png"
+    "icon": "losslesscut-icon.png",
+    "icon32": "losslesscut-icon-32.png",
+    "icon64": "losslesscut-icon-64.png",
+    "icon128": "losslesscut-icon-128.png"
   },
   {
     "slug": "makeappicon-desktop",
     "name": "MakeAppIcon Desktop",
     "description": "Resizer for mobile app icons",
     "website": "https://www.makeappicon.com/desktop",
-    "icon": "makeappicon-desktop-icon.png"
+    "icon": "makeappicon-desktop-icon.png",
+    "icon32": "makeappicon-desktop-icon-32.png",
+    "icon64": "makeappicon-desktop-icon-64.png",
+    "icon128": "makeappicon-desktop-icon-128.png"
   },
   {
     "slug": "manageyum",
     "name": "Manageyum",
     "description": "One desktop app to manage Trello, Slack, Whatsapp, Zendesk and more...",
     "website": "https://manageyum.com",
-    "icon": "manageyum-icon.png"
+    "icon": "manageyum-icon.png",
+    "icon32": "manageyum-icon-32.png",
+    "icon64": "manageyum-icon-64.png",
+    "icon128": "manageyum-icon-128.png"
   },
   {
     "slug": "mancy",
     "name": "Mancy",
     "description": "NodeJS REPLNodeJS REPL",
     "website": "http://www.mancy-re.pl",
-    "icon": "mancy-icon.png"
+    "icon": "mancy-icon.png",
+    "icon32": "mancy-icon-32.png",
+    "icon64": "mancy-icon-64.png",
+    "icon128": "mancy-icon-128.png"
   },
   {
     "slug": "mapbox",
@@ -1501,7 +1891,10 @@
     "description": "Design and publish beautiful maps",
     "website": "https://www.mapbox.com",
     "disabled": true,
-    "icon": "mapbox-icon.png"
+    "icon": "mapbox-icon.png",
+    "icon32": "mapbox-icon-32.png",
+    "icon64": "mapbox-icon-64.png",
+    "icon128": "mapbox-icon-128.png"
   },
   {
     "slug": "markdownify",
@@ -1520,7 +1913,10 @@
       "html",
       "desktop"
     ],
-    "icon": "markdownify-icon.png"
+    "icon": "markdownify-icon.png",
+    "icon32": "markdownify-icon-32.png",
+    "icon64": "markdownify-icon-64.png",
+    "icon128": "markdownify-icon-128.png"
   },
   {
     "slug": "marp",
@@ -1535,21 +1931,30 @@
       "PowerPoint"
     ],
     "license": "MIT",
-    "icon": "marp-icon.png"
+    "icon": "marp-icon.png",
+    "icon32": "marp-icon-32.png",
+    "icon64": "marp-icon-64.png",
+    "icon128": "marp-icon-128.png"
   },
   {
     "slug": "mattermost",
     "name": "Mattermost",
     "description": "Open source, self-hosted Slack-alternative",
     "website": "https://www.mattermost.org/",
-    "icon": "mattermost-icon.png"
+    "icon": "mattermost-icon.png",
+    "icon32": "mattermost-icon-32.png",
+    "icon64": "mattermost-icon-64.png",
+    "icon128": "mattermost-icon-128.png"
   },
   {
     "slug": "mdnote",
     "name": "MdNote",
     "description": "Markdown notebook",
     "website": "http://md-note.com",
-    "icon": "mdnote-icon.png"
+    "icon": "mdnote-icon.png",
+    "icon32": "mdnote-icon-32.png",
+    "icon64": "mdnote-icon-64.png",
+    "icon128": "mdnote-icon-128.png"
   },
   {
     "slug": "medley",
@@ -1561,14 +1966,20 @@
       "programming",
       "notes"
     ],
-    "icon": "medley-icon.png"
+    "icon": "medley-icon.png",
+    "icon32": "medley-icon-32.png",
+    "icon64": "medley-icon-64.png",
+    "icon128": "medley-icon-128.png"
   },
   {
     "slug": "microstockr",
     "name": "Microstockr",
     "description": "Microstock photography made easy",
     "website": "http://microstockr.com",
-    "icon": "microstockr-icon.png"
+    "icon": "microstockr-icon.png",
+    "icon32": "microstockr-icon-32.png",
+    "icon64": "microstockr-icon-64.png",
+    "icon128": "microstockr-icon-128.png"
   },
   {
     "slug": "min",
@@ -1581,7 +1992,10 @@
       "privacy"
     ],
     "license": "Apache 2.0",
-    "icon": "min-icon.png"
+    "icon": "min-icon.png",
+    "icon32": "min-icon-32.png",
+    "icon64": "min-icon-64.png",
+    "icon128": "min-icon-128.png"
   },
   {
     "slug": "minta",
@@ -1595,7 +2009,10 @@
       "regexgen"
     ],
     "license": "MIT",
-    "icon": "minta-icon.png"
+    "icon": "minta-icon.png",
+    "icon32": "minta-icon-32.png",
+    "icon64": "minta-icon-64.png",
+    "icon128": "minta-icon-128.png"
   },
   {
     "slug": "mixmax",
@@ -1606,7 +2023,10 @@
       "email",
       "analytics"
     ],
-    "icon": "mixmax-icon.png"
+    "icon": "mixmax-icon.png",
+    "icon32": "mixmax-icon-32.png",
+    "icon64": "mixmax-icon-64.png",
+    "icon128": "mixmax-icon-128.png"
   },
   {
     "slug": "mjml-app",
@@ -1618,14 +2038,20 @@
       "mjml",
       "email"
     ],
-    "icon": "mjml-app-icon.png"
+    "icon": "mjml-app-icon.png",
+    "icon32": "mjml-app-icon-32.png",
+    "icon64": "mjml-app-icon-64.png",
+    "icon128": "mjml-app-icon-128.png"
   },
   {
     "slug": "mockingbot",
     "name": "MockingBot",
     "description": "The Missing Wireframing Tool For Mobile",
     "website": "https://mockingbot.com",
-    "icon": "mockingbot-icon.png"
+    "icon": "mockingbot-icon.png",
+    "icon32": "mockingbot-icon-32.png",
+    "icon64": "mockingbot-icon-64.png",
+    "icon128": "mockingbot-icon-128.png"
   },
   {
     "slug": "moeditor",
@@ -1642,7 +2068,10 @@
       "math"
     ],
     "license": "GPLv3",
-    "icon": "moeditor-icon.png"
+    "icon": "moeditor-icon.png",
+    "icon32": "moeditor-icon-32.png",
+    "icon64": "moeditor-icon-64.png",
+    "icon128": "moeditor-icon-128.png"
   },
   {
     "slug": "mojibar",
@@ -1656,7 +2085,10 @@
       "open source"
     ],
     "license": "MIT",
-    "icon": "mojibar-icon.png"
+    "icon": "mojibar-icon.png",
+    "icon32": "mojibar-icon-32.png",
+    "icon64": "mojibar-icon-64.png",
+    "icon128": "mojibar-icon-128.png"
   },
   {
     "slug": "mongoclient",
@@ -1672,7 +2104,10 @@
       "mongodb tool"
     ],
     "license": "MIT",
-    "icon": "mongoclient-icon.png"
+    "icon": "mongoclient-icon.png",
+    "icon32": "mongoclient-icon-32.png",
+    "icon64": "mongoclient-icon-64.png",
+    "icon128": "mongoclient-icon-128.png"
   },
   {
     "slug": "mongodb-compass",
@@ -1686,14 +2121,20 @@
       "admin",
       "management"
     ],
-    "icon": "mongodb-compass-icon.png"
+    "icon": "mongodb-compass-icon.png",
+    "icon32": "mongodb-compass-icon-32.png",
+    "icon64": "mongodb-compass-icon-64.png",
+    "icon128": "mongodb-compass-icon-128.png"
   },
   {
     "slug": "mongotron",
     "name": "Mongotron",
     "description": "Cross platform MongoDB management",
     "website": "http://www.mongotron.io",
-    "icon": "mongotron-icon.png"
+    "icon": "mongotron-icon.png",
+    "icon32": "mongotron-icon-32.png",
+    "icon64": "mongotron-icon-64.png",
+    "icon128": "mongotron-icon-128.png"
   },
   {
     "slug": "museeks",
@@ -1708,7 +2149,10 @@
       "music player"
     ],
     "license": "MIT",
-    "icon": "museeks-icon.png"
+    "icon": "museeks-icon.png",
+    "icon32": "museeks-icon-32.png",
+    "icon64": "museeks-icon-64.png",
+    "icon128": "museeks-icon-128.png"
   },
   {
     "slug": "ndm",
@@ -1725,7 +2169,10 @@
       "tool"
     ],
     "license": "GPL-3.0",
-    "icon": "ndm-icon.png"
+    "icon": "ndm-icon.png",
+    "icon32": "ndm-icon-32.png",
+    "icon64": "ndm-icon-64.png",
+    "icon128": "ndm-icon-128.png"
   },
   {
     "slug": "negative",
@@ -1740,21 +2187,30 @@
       "developer tool"
     ],
     "license": "MIT",
-    "icon": "negative-icon.png"
+    "icon": "negative-icon.png",
+    "icon32": "negative-icon-32.png",
+    "icon64": "negative-icon-64.png",
+    "icon128": "negative-icon-128.png"
   },
   {
     "slug": "netbeast",
     "name": "Netbeast",
     "description": "An Internet of Things javascript development platform that empowers developers to easily create and deploy IoT apps",
     "website": "https://netbeast.co/developer",
-    "icon": "netbeast-icon.png"
+    "icon": "netbeast-icon.png",
+    "icon32": "netbeast-icon-32.png",
+    "icon64": "netbeast-icon-64.png",
+    "icon128": "netbeast-icon-128.png"
   },
   {
     "slug": "nimble",
     "name": "Nimble",
     "description": "A simple Wolfram|Alpha&#174; menubar client for Mac OS X",
     "website": "http://madebybright.com",
-    "icon": "nimble-icon.png"
+    "icon": "nimble-icon.png",
+    "icon32": "nimble-icon-32.png",
+    "icon64": "nimble-icon-64.png",
+    "icon128": "nimble-icon-128.png"
   },
   {
     "slug": "notr",
@@ -1765,7 +2221,10 @@
       "productivity",
       "privacy"
     ],
-    "icon": "notr-icon.png"
+    "icon": "notr-icon.png",
+    "icon32": "notr-icon-32.png",
+    "icon64": "notr-icon-64.png",
+    "icon128": "notr-icon-128.png"
   },
   {
     "slug": "now",
@@ -1781,7 +2240,10 @@
       "development"
     ],
     "license": "MIT",
-    "icon": "now-icon.png"
+    "icon": "now-icon.png",
+    "icon32": "now-icon-32.png",
+    "icon64": "now-icon-64.png",
+    "icon128": "now-icon-128.png"
   },
   {
     "slug": "nteract",
@@ -1796,28 +2258,40 @@
       "data"
     ],
     "license": "BSD-3-Clause",
-    "icon": "nteract-icon.png"
+    "icon": "nteract-icon.png",
+    "icon32": "nteract-icon-32.png",
+    "icon64": "nteract-icon-64.png",
+    "icon128": "nteract-icon-128.png"
   },
   {
     "slug": "nuclide",
     "name": "Nuclide",
     "description": "A unified developer experience for web and mobile development",
     "website": "http://nuclide.io",
-    "icon": "nuclide-icon.png"
+    "icon": "nuclide-icon.png",
+    "icon32": "nuclide-icon-32.png",
+    "icon64": "nuclide-icon-64.png",
+    "icon128": "nuclide-icon-128.png"
   },
   {
     "slug": "nylas-n1",
     "name": "Nylas N1",
     "description": "The extensible, open source mail app",
     "website": "https://www.nylas.com",
-    "icon": "nylas-n1-icon.png"
+    "icon": "nylas-n1-icon.png",
+    "icon32": "nylas-n1-icon-32.png",
+    "icon64": "nylas-n1-icon-64.png",
+    "icon128": "nylas-n1-icon-128.png"
   },
   {
     "slug": "open-stage-control",
     "name": "Open Stage Control",
     "description": "A libre desktop OSC bi-directionnal control surface application",
     "website": "https://jean-emmanuel.github.io/open-stage-control",
-    "icon": "open-stage-control-icon.png"
+    "icon": "open-stage-control-icon.png",
+    "icon32": "open-stage-control-icon-32.png",
+    "icon64": "open-stage-control-icon-64.png",
+    "icon128": "open-stage-control-icon-128.png"
   },
   {
     "slug": "openbazaar",
@@ -1829,7 +2303,10 @@
       "ecommerce",
       "bitcoin"
     ],
-    "icon": "openbazaar-icon.png"
+    "icon": "openbazaar-icon.png",
+    "icon32": "openbazaar-icon-32.png",
+    "icon64": "openbazaar-icon-64.png",
+    "icon128": "openbazaar-icon-128.png"
   },
   {
     "slug": "pamfax",
@@ -1842,14 +2319,20 @@
       "communication",
       "utility"
     ],
-    "icon": "pamfax-icon.png"
+    "icon": "pamfax-icon.png",
+    "icon32": "pamfax-icon-32.png",
+    "icon64": "pamfax-icon-64.png",
+    "icon128": "pamfax-icon-128.png"
   },
   {
     "slug": "particle-dev",
     "name": "Particle Dev",
     "description": "A professional IDE for Particle",
     "website": "https://www.particle.io/dev",
-    "icon": "particle-dev-icon.png"
+    "icon": "particle-dev-icon.png",
+    "icon32": "particle-dev-icon-32.png",
+    "icon64": "particle-dev-icon-64.png",
+    "icon128": "particle-dev-icon-128.png"
   },
   {
     "slug": "paws-for-trello",
@@ -1863,7 +2346,10 @@
       "productivity",
       "paws"
     ],
-    "icon": "paws-for-trello-icon.png"
+    "icon": "paws-for-trello-icon.png",
+    "icon32": "paws-for-trello-icon-32.png",
+    "icon64": "paws-for-trello-icon-64.png",
+    "icon128": "paws-for-trello-icon-128.png"
   },
   {
     "slug": "pencil",
@@ -1880,7 +2366,10 @@
       "sketch"
     ],
     "license": "GPL 2",
-    "icon": "pencil-icon.png"
+    "icon": "pencil-icon.png",
+    "icon32": "pencil-icon-32.png",
+    "icon64": "pencil-icon-64.png",
+    "icon128": "pencil-icon-128.png"
   },
   {
     "slug": "pexels",
@@ -1891,7 +2380,10 @@
       "photos",
       "web design"
     ],
-    "icon": "pexels-icon.png"
+    "icon": "pexels-icon.png",
+    "icon32": "pexels-icon-32.png",
+    "icon64": "pexels-icon-64.png",
+    "icon128": "pexels-icon-128.png"
   },
   {
     "slug": "phonegap",
@@ -1907,7 +2399,10 @@
       "tools"
     ],
     "license": "ALv2",
-    "icon": "phonegap-icon.png"
+    "icon": "phonegap-icon.png",
+    "icon32": "phonegap-icon-32.png",
+    "icon64": "phonegap-icon-64.png",
+    "icon128": "phonegap-icon-128.png"
   },
   {
     "slug": "phonepresenter",
@@ -1923,7 +2418,10 @@
       "presentation",
       "PowerPoint"
     ],
-    "icon": "phonepresenter-icon.png"
+    "icon": "phonepresenter-icon.png",
+    "icon32": "phonepresenter-icon-32.png",
+    "icon64": "phonepresenter-icon-64.png",
+    "icon128": "phonepresenter-icon-128.png"
   },
   {
     "slug": "photoscreensaver",
@@ -1935,7 +2433,10 @@
       "photography"
     ],
     "license": "MIT",
-    "icon": "photoscreensaver-icon.png"
+    "icon": "photoscreensaver-icon.png",
+    "icon32": "photoscreensaver-icon-32.png",
+    "icon64": "photoscreensaver-icon-64.png",
+    "icon128": "photoscreensaver-icon-128.png"
   },
   {
     "slug": "pilemd",
@@ -1949,7 +2450,10 @@
       "productivity"
     ],
     "license": "GPLv3",
-    "icon": "pilemd-icon.png"
+    "icon": "pilemd-icon.png",
+    "icon32": "pilemd-icon-32.png",
+    "icon64": "pilemd-icon-64.png",
+    "icon128": "pilemd-icon-128.png"
   },
   {
     "slug": "plain-email",
@@ -1960,7 +2464,10 @@
       "email",
       "productivity"
     ],
-    "icon": "plain-email-icon.png"
+    "icon": "plain-email-icon.png",
+    "icon32": "plain-email-icon-32.png",
+    "icon64": "plain-email-icon-64.png",
+    "icon128": "plain-email-icon-128.png"
   },
   {
     "slug": "playback",
@@ -1972,28 +2479,40 @@
       "player",
       "audio"
     ],
-    "icon": "playback-icon.png"
+    "icon": "playback-icon.png",
+    "icon32": "playback-icon-32.png",
+    "icon64": "playback-icon-64.png",
+    "icon128": "playback-icon-128.png"
   },
   {
     "slug": "popkey",
     "name": "PopKey",
     "description": "The perfect GIF right at your fingertips",
     "website": "http://popkey.co/send-gifs",
-    "icon": "popkey-icon.png"
+    "icon": "popkey-icon.png",
+    "icon32": "popkey-icon-32.png",
+    "icon64": "popkey-icon-64.png",
+    "icon128": "popkey-icon-128.png"
   },
   {
     "slug": "postman",
     "name": "Postman",
     "description": "Build, test and document your APIs",
     "website": "https://www.getpostman.com/",
-    "icon": "postman-icon.png"
+    "icon": "postman-icon.png",
+    "icon32": "postman-icon-32.png",
+    "icon64": "postman-icon-64.png",
+    "icon128": "postman-icon-128.png"
   },
   {
     "slug": "pracontrol",
     "name": "PraControl",
     "description": "Send awesome gCodes to your machine",
     "website": "http://pracontrol.pravdomil.cz",
-    "icon": "pracontrol-icon.png"
+    "icon": "pracontrol-icon.png",
+    "icon32": "pracontrol-icon-32.png",
+    "icon64": "pracontrol-icon-64.png",
+    "icon128": "pracontrol-icon-128.png"
   },
   {
     "slug": "preserver",
@@ -2006,21 +2525,30 @@
       "record",
       "data"
     ],
-    "icon": "preserver-icon.png"
+    "icon": "preserver-icon.png",
+    "icon32": "preserver-icon-32.png",
+    "icon64": "preserver-icon-64.png",
+    "icon128": "preserver-icon-128.png"
   },
   {
     "slug": "presets-io",
     "name": "Presets.io",
     "description": "Easy preset management for Adobe Lightroom",
     "website": "https://presets.io",
-    "icon": "presets-io-icon.png"
+    "icon": "presets-io-icon.png",
+    "icon32": "presets-io-icon-32.png",
+    "icon64": "presets-io-icon-64.png",
+    "icon128": "presets-io-icon-128.png"
   },
   {
     "slug": "proposales",
     "name": "Proposales",
     "description": "Create, deliver and monitor business proposals online",
     "website": "https://www.proposales.com/",
-    "icon": "proposales-icon.png"
+    "icon": "proposales-icon.png",
+    "icon32": "proposales-icon-32.png",
+    "icon64": "proposales-icon-64.png",
+    "icon128": "proposales-icon-128.png"
   },
   {
     "slug": "protopie",
@@ -2034,7 +2562,10 @@
       "Prototyping Tool",
       "Designers tool"
     ],
-    "icon": "protopie-icon.png"
+    "icon": "protopie-icon.png",
+    "icon32": "protopie-icon-32.png",
+    "icon64": "protopie-icon-64.png",
+    "icon128": "protopie-icon-128.png"
   },
   {
     "slug": "pupafm",
@@ -2051,7 +2582,10 @@
       "redux"
     ],
     "license": "MIT",
-    "icon": "pupafm-icon.png"
+    "icon": "pupafm-icon.png",
+    "icon32": "pupafm-icon-32.png",
+    "icon64": "pupafm-icon-64.png",
+    "icon128": "pupafm-icon-128.png"
   },
   {
     "slug": "qmui-web",
@@ -2068,7 +2602,10 @@
       "Developer Tool"
     ],
     "license": "MIT",
-    "icon": "qmui-web-icon.png"
+    "icon": "qmui-web-icon.png",
+    "icon32": "qmui-web-icon-32.png",
+    "icon64": "qmui-web-icon-64.png",
+    "icon128": "qmui-web-icon-128.png"
   },
   {
     "slug": "quail",
@@ -2078,7 +2615,10 @@
     "keywords": [
       "productivity"
     ],
-    "icon": "quail-icon.png"
+    "icon": "quail-icon.png",
+    "icon32": "quail-icon-32.png",
+    "icon64": "quail-icon-64.png",
+    "icon128": "quail-icon-128.png"
   },
   {
     "slug": "quickcalc",
@@ -2091,7 +2631,10 @@
       "menubar"
     ],
     "license": "MIT",
-    "icon": "quickcalc-icon.png"
+    "icon": "quickcalc-icon.png",
+    "icon32": "quickcalc-icon-32.png",
+    "icon64": "quickcalc-icon-64.png",
+    "icon128": "quickcalc-icon-128.png"
   },
   {
     "slug": "rambox",
@@ -2116,7 +2659,10 @@
       "tweetdeck"
     ],
     "license": "MIT",
-    "icon": "rambox-icon.png"
+    "icon": "rambox-icon.png",
+    "icon32": "rambox-icon-32.png",
+    "icon64": "rambox-icon-64.png",
+    "icon128": "rambox-icon-128.png"
   },
   {
     "slug": "ramme",
@@ -2131,14 +2677,20 @@
       "instagram"
     ],
     "license": "MIT",
-    "icon": "ramme-icon.png"
+    "icon": "ramme-icon.png",
+    "icon32": "ramme-icon-32.png",
+    "icon64": "ramme-icon-64.png",
+    "icon128": "ramme-icon-128.png"
   },
   {
     "slug": "remember",
     "name": "Remember",
     "description": "Business card management",
     "website": "https://rememberapp.co.kr",
-    "icon": "remember-icon.png"
+    "icon": "remember-icon.png",
+    "icon32": "remember-icon-32.png",
+    "icon64": "remember-icon-64.png",
+    "icon128": "remember-icon-128.png"
   },
   {
     "slug": "remind",
@@ -2153,7 +2705,10 @@
       "parent",
       "student"
     ],
-    "icon": "remind-icon.png"
+    "icon": "remind-icon.png",
+    "icon32": "remind-icon-32.png",
+    "icon64": "remind-icon-64.png",
+    "icon128": "remind-icon-128.png"
   },
   {
     "slug": "riot",
@@ -2181,14 +2736,20 @@
       "collaborate"
     ],
     "license": "Apache-2.0",
-    "icon": "riot-icon.png"
+    "icon": "riot-icon.png",
+    "icon32": "riot-icon-32.png",
+    "icon64": "riot-icon-64.png",
+    "icon128": "riot-icon-128.png"
   },
   {
     "slug": "rocket-chat",
     "name": "Rocket.Chat",
     "description": "The ultimate open source web chat platform",
     "website": "https://rocket.chat",
-    "icon": "rocket-chat-icon.png"
+    "icon": "rocket-chat-icon.png",
+    "icon32": "rocket-chat-icon-32.png",
+    "icon64": "rocket-chat-icon-64.png",
+    "icon128": "rocket-chat-icon-128.png"
   },
   {
     "slug": "screencat",
@@ -2200,7 +2761,10 @@
       "collaboration",
       "WebRTC"
     ],
-    "icon": "screencat-icon.png"
+    "icon": "screencat-icon.png",
+    "icon32": "screencat-icon-32.png",
+    "icon64": "screencat-icon-64.png",
+    "icon128": "screencat-icon-128.png"
   },
   {
     "slug": "sealtalk",
@@ -2215,7 +2779,10 @@
       "IM Cloud Service",
       "IM SDK"
     ],
-    "icon": "sealtalk-icon.png"
+    "icon": "sealtalk-icon.png",
+    "icon32": "sealtalk-icon-32.png",
+    "icon64": "sealtalk-icon-64.png",
+    "icon128": "sealtalk-icon-128.png"
   },
   {
     "slug": "seapig",
@@ -2230,7 +2797,10 @@
       "html"
     ],
     "license": "MIT",
-    "icon": "seapig-icon.png"
+    "icon": "seapig-icon.png",
+    "icon32": "seapig-icon-32.png",
+    "icon64": "seapig-icon-64.png",
+    "icon128": "seapig-icon-128.png"
   },
   {
     "slug": "sencha-architect",
@@ -2243,7 +2813,10 @@
       "productivity",
       "app builder"
     ],
-    "icon": "sencha-architect-icon.png"
+    "icon": "sencha-architect-icon.png",
+    "icon32": "sencha-architect-icon-32.png",
+    "icon64": "sencha-architect-icon-64.png",
+    "icon128": "sencha-architect-icon-128.png"
   },
   {
     "slug": "sencha-inspector",
@@ -2256,7 +2829,10 @@
       "productivity",
       "debugging"
     ],
-    "icon": "sencha-inspector-icon.png"
+    "icon": "sencha-inspector-icon.png",
+    "icon32": "sencha-inspector-icon-32.png",
+    "icon64": "sencha-inspector-icon-64.png",
+    "icon128": "sencha-inspector-icon-128.png"
   },
   {
     "slug": "sencha-test",
@@ -2269,7 +2845,10 @@
       "productivity",
       "editor"
     ],
-    "icon": "sencha-test-icon.png"
+    "icon": "sencha-test-icon.png",
+    "icon32": "sencha-test-icon-32.png",
+    "icon64": "sencha-test-icon-64.png",
+    "icon128": "sencha-test-icon-128.png"
   },
   {
     "slug": "sencha-themer",
@@ -2282,7 +2861,10 @@
       "productivity",
       "theming"
     ],
-    "icon": "sencha-themer-icon.png"
+    "icon": "sencha-themer-icon.png",
+    "icon32": "sencha-themer-icon-32.png",
+    "icon64": "sencha-themer-icon-64.png",
+    "icon128": "sencha-themer-icon-128.png"
   },
   {
     "slug": "shapespark",
@@ -2294,7 +2876,10 @@
       "3D",
       "rendering"
     ],
-    "icon": "shapespark-icon.png"
+    "icon": "shapespark-icon.png",
+    "icon32": "shapespark-icon-32.png",
+    "icon64": "shapespark-icon-64.png",
+    "icon128": "shapespark-icon-128.png"
   },
   {
     "slug": "sheepchat",
@@ -2302,7 +2887,10 @@
     "description": "Multi-chat for streamers",
     "website": "https://sheep.chat",
     "license": "Freeware",
-    "icon": "sheepchat-icon.png"
+    "icon": "sheepchat-icon.png",
+    "icon32": "sheepchat-icon-32.png",
+    "icon64": "sheepchat-icon-64.png",
+    "icon128": "sheepchat-icon-128.png"
   },
   {
     "slug": "shiba",
@@ -2316,14 +2904,20 @@
       "linter"
     ],
     "license": "MIT",
-    "icon": "shiba-icon.png"
+    "icon": "shiba-icon.png",
+    "icon32": "shiba-icon-32.png",
+    "icon64": "shiba-icon-64.png",
+    "icon128": "shiba-icon-128.png"
   },
   {
     "slug": "shift",
     "name": "Shift",
     "description": "Switch between multiple Gmail, Calendar and Drive accounts with ease.",
     "website": "https://tryshift.com",
-    "icon": "shift-icon.png"
+    "icon": "shift-icon.png",
+    "icon32": "shift-icon-32.png",
+    "icon64": "shift-icon-64.png",
+    "icon128": "shift-icon-128.png"
   },
   {
     "slug": "shortexts",
@@ -2335,7 +2929,10 @@
       "OSX "
     ],
     "license": "MIT",
-    "icon": "shortexts-icon.png"
+    "icon": "shortexts-icon.png",
+    "icon32": "shortexts-icon-32.png",
+    "icon64": "shortexts-icon-64.png",
+    "icon128": "shortexts-icon-128.png"
   },
   {
     "slug": "shots",
@@ -2348,7 +2945,10 @@
       "sharing",
       "productivity"
     ],
-    "icon": "shots-icon.png"
+    "icon": "shots-icon.png",
+    "icon32": "shots-icon-32.png",
+    "icon64": "shots-icon-64.png",
+    "icon128": "shots-icon-128.png"
   },
   {
     "slug": "simplenote",
@@ -2362,7 +2962,10 @@
       "sync"
     ],
     "license": "GPLv2",
-    "icon": "simplenote-icon.png"
+    "icon": "simplenote-icon.png",
+    "icon32": "simplenote-icon-32.png",
+    "icon64": "simplenote-icon-64.png",
+    "icon128": "simplenote-icon-128.png"
   },
   {
     "slug": "skrifa",
@@ -2379,21 +2982,30 @@
       "office"
     ],
     "license": "GPLv3",
-    "icon": "skrifa-icon.png"
+    "icon": "skrifa-icon.png",
+    "icon32": "skrifa-icon-32.png",
+    "icon64": "skrifa-icon-64.png",
+    "icon128": "skrifa-icon-128.png"
   },
   {
     "slug": "slack",
     "name": "Slack",
     "description": "A messaging app for teams",
     "website": "https://slack.com",
-    "icon": "slack-icon.png"
+    "icon": "slack-icon.png",
+    "icon32": "slack-icon-32.png",
+    "icon64": "slack-icon-64.png",
+    "icon128": "slack-icon-128.png"
   },
   {
     "slug": "slack-catchup",
     "name": "Slack Catchup",
     "description": "Catch up all the unread across your Slack teams in a single place",
     "website": "https://slackcatchup.com",
-    "icon": "slack-catchup-icon.png"
+    "icon": "slack-catchup-icon.png",
+    "icon32": "slack-catchup-icon-32.png",
+    "icon64": "slack-catchup-icon-64.png",
+    "icon128": "slack-catchup-icon-128.png"
   },
   {
     "slug": "socialcast",
@@ -2408,7 +3020,10 @@
       "conversation",
       "productivity"
     ],
-    "icon": "socialcast-icon.png"
+    "icon": "socialcast-icon.png",
+    "icon32": "socialcast-icon-32.png",
+    "icon64": "socialcast-icon-64.png",
+    "icon128": "socialcast-icon-128.png"
   },
   {
     "slug": "soube",
@@ -2421,7 +3036,10 @@
       "Music player"
     ],
     "license": "MIT",
-    "icon": "soube-icon.png"
+    "icon": "soube-icon.png",
+    "icon32": "soube-icon-32.png",
+    "icon64": "soube-icon-64.png",
+    "icon128": "soube-icon-128.png"
   },
   {
     "slug": "soundnode",
@@ -2435,21 +3053,30 @@
       "soundcloud"
     ],
     "license": "GNU GENERAL PUBLIC LICENSE Version 3",
-    "icon": "soundnode-icon.png"
+    "icon": "soundnode-icon.png",
+    "icon32": "soundnode-icon-32.png",
+    "icon64": "soundnode-icon-64.png",
+    "icon128": "soundnode-icon-128.png"
   },
   {
     "slug": "spectrum",
     "name": "Spectrum",
     "description": "Useful logging for developers",
     "website": "https://www.devspectrum.com",
-    "icon": "spectrum-icon.png"
+    "icon": "spectrum-icon.png",
+    "icon32": "spectrum-icon-32.png",
+    "icon64": "spectrum-icon-64.png",
+    "icon128": "spectrum-icon-128.png"
   },
   {
     "slug": "spreaker-studio",
     "name": "Spreaker Studio",
     "description": "Create and discover podcasts",
     "website": "https://www.spreaker.com/download",
-    "icon": "spreaker-studio-icon.png"
+    "icon": "spreaker-studio-icon.png",
+    "icon32": "spreaker-studio-icon-32.png",
+    "icon64": "spreaker-studio-icon-64.png",
+    "icon128": "spreaker-studio-icon-128.png"
   },
   {
     "slug": "sqlectron",
@@ -2464,7 +3091,10 @@
       "mssql"
     ],
     "license": "MIT",
-    "icon": "sqlectron-icon.png"
+    "icon": "sqlectron-icon.png",
+    "icon32": "sqlectron-icon-32.png",
+    "icon64": "sqlectron-icon-64.png",
+    "icon128": "sqlectron-icon-128.png"
   },
   {
     "slug": "stacer",
@@ -2476,7 +3106,10 @@
       "system",
       "optimizer"
     ],
-    "icon": "stacer-icon.png"
+    "icon": "stacer-icon.png",
+    "icon32": "stacer-icon-32.png",
+    "icon64": "stacer-icon-64.png",
+    "icon128": "stacer-icon-128.png"
   },
   {
     "slug": "stamp",
@@ -2489,28 +3122,40 @@
       "apple music",
       "google play music"
     ],
-    "icon": "stamp-icon.png"
+    "icon": "stamp-icon.png",
+    "icon32": "stamp-icon-32.png",
+    "icon64": "stamp-icon-64.png",
+    "icon128": "stamp-icon-128.png"
   },
   {
     "slug": "steelseries-engine-3",
     "name": "SteelSeries Engine 3",
     "description": "A unified platform that supports nearly all your SteelSeries gear",
     "website": "https://steelseries.com/engine",
-    "icon": "steelseries-engine-3-icon.png"
+    "icon": "steelseries-engine-3-icon.png",
+    "icon32": "steelseries-engine-3-icon-32.png",
+    "icon64": "steelseries-engine-3-icon-64.png",
+    "icon128": "steelseries-engine-3-icon-128.png"
   },
   {
     "slug": "stoplight",
     "name": "StopLight",
     "description": "Mock, document, and test your way to API nirvana",
     "website": "https://stoplight.io",
-    "icon": "stoplight-icon.png"
+    "icon": "stoplight-icon.png",
+    "icon32": "stoplight-icon-32.png",
+    "icon64": "stoplight-icon-64.png",
+    "icon128": "stoplight-icon-128.png"
   },
   {
     "slug": "strawberry",
     "name": "Strawberry",
     "description": "Win Diners for Life. Know and serve them better with the all-in-one restaurant software suite.",
     "website": "https://strawberrypos.com",
-    "icon": "strawberry-icon.png"
+    "icon": "strawberry-icon.png",
+    "icon32": "strawberry-icon-32.png",
+    "icon64": "strawberry-icon-64.png",
+    "icon128": "strawberry-icon-128.png"
   },
   {
     "slug": "subordination",
@@ -2523,7 +3168,10 @@
       "translation",
       "editor"
     ],
-    "icon": "subordination-icon.png"
+    "icon": "subordination-icon.png",
+    "icon32": "subordination-icon-32.png",
+    "icon64": "subordination-icon-64.png",
+    "icon128": "subordination-icon-128.png"
   },
   {
     "slug": "superpowers-html5-2d-3d-game-maker",
@@ -2533,7 +3181,10 @@
     "keywords": [
       "games"
     ],
-    "icon": "superpowers-html5-2d-3d-game-maker-icon.png"
+    "icon": "superpowers-html5-2d-3d-game-maker-icon.png",
+    "icon32": "superpowers-html5-2d-3d-game-maker-icon-32.png",
+    "icon64": "superpowers-html5-2d-3d-game-maker-icon-64.png",
+    "icon128": "superpowers-html5-2d-3d-game-maker-icon-128.png"
   },
   {
     "slug": "svgsus",
@@ -2546,7 +3197,10 @@
       "tool",
       "productivity"
     ],
-    "icon": "svgsus-icon.png"
+    "icon": "svgsus-icon.png",
+    "icon32": "svgsus-icon-32.png",
+    "icon64": "svgsus-icon-64.png",
+    "icon128": "svgsus-icon-128.png"
   },
   {
     "slug": "symbsearch",
@@ -2560,14 +3214,20 @@
       "symbols"
     ],
     "license": "MIT",
-    "icon": "symbsearch-icon.png"
+    "icon": "symbsearch-icon.png",
+    "icon32": "symbsearch-icon-32.png",
+    "icon64": "symbsearch-icon-64.png",
+    "icon128": "symbsearch-icon-128.png"
   },
   {
     "slug": "sync",
     "name": "Sync",
     "description": "A business chat tool",
     "website": "https://www.wantedly.com/sync",
-    "icon": "sync-icon.png"
+    "icon": "sync-icon.png",
+    "icon32": "sync-icon-32.png",
+    "icon64": "sync-icon-64.png",
+    "icon128": "sync-icon-128.png"
   },
   {
     "slug": "tagflow",
@@ -2581,14 +3241,20 @@
       "productivity",
       "cross-platform"
     ],
-    "icon": "tagflow-icon.png"
+    "icon": "tagflow-icon.png",
+    "icon32": "tagflow-icon-32.png",
+    "icon64": "tagflow-icon-64.png",
+    "icon128": "tagflow-icon-128.png"
   },
   {
     "slug": "tagspaces",
     "name": "TagSpaces",
     "description": "Your Hackable File Organizer",
     "website": "http://tagspaces.org/",
-    "icon": "tagspaces-icon.png"
+    "icon": "tagspaces-icon.png",
+    "icon32": "tagspaces-icon-32.png",
+    "icon64": "tagspaces-icon-64.png",
+    "icon128": "tagspaces-icon-128.png"
   },
   {
     "slug": "temps",
@@ -2605,7 +3271,10 @@
       "Forecast"
     ],
     "license": "MIT",
-    "icon": "temps-icon.png"
+    "icon": "temps-icon.png",
+    "icon32": "temps-icon-32.png",
+    "icon64": "temps-icon-64.png",
+    "icon128": "temps-icon-128.png"
   },
   {
     "slug": "the-poker-timer",
@@ -2616,7 +3285,10 @@
       "tournament",
       "timer"
     ],
-    "icon": "the-poker-timer-icon.png"
+    "icon": "the-poker-timer-icon.png",
+    "icon32": "the-poker-timer-icon-32.png",
+    "icon64": "the-poker-timer-icon-64.png",
+    "icon128": "the-poker-timer-icon-128.png"
   },
   {
     "slug": "theme-juice",
@@ -2633,7 +3305,10 @@
       "Virtual Machine",
       "Workflow"
     ],
-    "icon": "theme-juice-icon.png"
+    "icon": "theme-juice-icon.png",
+    "icon32": "theme-juice-icon-32.png",
+    "icon64": "theme-juice-icon-64.png",
+    "icon128": "theme-juice-icon-128.png"
   },
   {
     "slug": "tidal",
@@ -2645,7 +3320,10 @@
       "streaming",
       "videos"
     ],
-    "icon": "tidal-icon.png"
+    "icon": "tidal-icon.png",
+    "icon32": "tidal-icon-32.png",
+    "icon64": "tidal-icon-64.png",
+    "icon128": "tidal-icon-128.png"
   },
   {
     "slug": "tiliq",
@@ -2656,7 +3334,10 @@
       "email",
       "productivity"
     ],
-    "icon": "tiliq-icon.png"
+    "icon": "tiliq-icon.png",
+    "icon32": "tiliq-icon-32.png",
+    "icon64": "tiliq-icon-64.png",
+    "icon128": "tiliq-icon-128.png"
   },
   {
     "slug": "timestamp",
@@ -2673,7 +3354,10 @@
       "menubar"
     ],
     "license": "MIT",
-    "icon": "timestamp-icon.png"
+    "icon": "timestamp-icon.png",
+    "icon32": "timestamp-icon-32.png",
+    "icon64": "timestamp-icon-64.png",
+    "icon128": "timestamp-icon-128.png"
   },
   {
     "slug": "timetable",
@@ -2685,14 +3369,20 @@
       "Timetable",
       "menubar"
     ],
-    "icon": "timetable-icon.png"
+    "icon": "timetable-icon.png",
+    "icon32": "timetable-icon-32.png",
+    "icon64": "timetable-icon-64.png",
+    "icon128": "timetable-icon-128.png"
   },
   {
     "slug": "tofino",
     "name": "Tofino",
     "description": "Experimental web browser from Mozilla",
     "website": "https://github.com/mozilla/tofino",
-    "icon": "tofino-icon.png"
+    "icon": "tofino-icon.png",
+    "icon32": "tofino-icon-32.png",
+    "icon64": "tofino-icon-64.png",
+    "icon128": "tofino-icon-128.png"
   },
   {
     "slug": "translation-editor",
@@ -2706,7 +3396,10 @@
       "Intl"
     ],
     "license": "MIT",
-    "icon": "translation-editor-icon.png"
+    "icon": "translation-editor-icon.png",
+    "icon32": "translation-editor-icon-32.png",
+    "icon64": "translation-editor-icon-64.png",
+    "icon128": "translation-editor-icon-128.png"
   },
   {
     "slug": "treevea",
@@ -2721,7 +3414,10 @@
       "search",
       "reuse"
     ],
-    "icon": "treevea-icon.png"
+    "icon": "treevea-icon.png",
+    "icon32": "treevea-icon-32.png",
+    "icon64": "treevea-icon-64.png",
+    "icon128": "treevea-icon-128.png"
   },
   {
     "slug": "trym",
@@ -2731,21 +3427,30 @@
     "keywords": [
       "svg"
     ],
-    "icon": "trym-icon.png"
+    "icon": "trym-icon.png",
+    "icon32": "trym-icon-32.png",
+    "icon64": "trym-icon-64.png",
+    "icon128": "trym-icon-128.png"
   },
   {
     "slug": "turbo-download-manager",
     "name": "Turbo Download Manager",
     "description": "An open-source multi-threading download manager",
     "website": "http://add0n.com/turbo-download-manager.html",
-    "icon": "turbo-download-manager-icon.png"
+    "icon": "turbo-download-manager-icon.png",
+    "icon32": "turbo-download-manager-icon-32.png",
+    "icon64": "turbo-download-manager-icon-64.png",
+    "icon128": "turbo-download-manager-icon-128.png"
   },
   {
     "slug": "tweakstyle",
     "name": "TweakStyle",
     "description": "The next code editor",
     "website": "https://tweakstyle.com",
-    "icon": "tweakstyle-icon.png"
+    "icon": "tweakstyle-icon.png",
+    "icon32": "tweakstyle-icon-32.png",
+    "icon64": "tweakstyle-icon-64.png",
+    "icon128": "tweakstyle-icon-128.png"
   },
   {
     "slug": "tweeten",
@@ -2757,14 +3462,20 @@
       "tweetdeck",
       "tweetdeck for windows"
     ],
-    "icon": "tweeten-icon.png"
+    "icon": "tweeten-icon.png",
+    "icon32": "tweeten-icon-32.png",
+    "icon64": "tweeten-icon-64.png",
+    "icon128": "tweeten-icon-128.png"
   },
   {
     "slug": "tweetman",
     "name": "Tweetman",
     "description": "Powerful Twitter Client for Desktop",
     "website": "https://tweetman.kksg.net/en",
-    "icon": "tweetman-icon.png"
+    "icon": "tweetman-icon.png",
+    "icon32": "tweetman-icon-32.png",
+    "icon64": "tweetman-icon-64.png",
+    "icon128": "tweetman-icon-128.png"
   },
   {
     "slug": "typetalk",
@@ -2777,7 +3488,10 @@
       "orgainzation",
       "team"
     ],
-    "icon": "typetalk-icon.png"
+    "icon": "typetalk-icon.png",
+    "icon32": "typetalk-icon-32.png",
+    "icon64": "typetalk-icon-64.png",
+    "icon128": "typetalk-icon-128.png"
   },
   {
     "slug": "ubauth",
@@ -2793,7 +3507,10 @@
       "tools"
     ],
     "license": "MIT",
-    "icon": "ubauth-icon.png"
+    "icon": "ubauth-icon.png",
+    "icon32": "ubauth-icon-32.png",
+    "icon64": "ubauth-icon-64.png",
+    "icon128": "ubauth-icon-128.png"
   },
   {
     "slug": "un-colored",
@@ -2812,7 +3529,10 @@
       "electron"
     ],
     "license": "Apache License 2.0",
-    "icon": "un-colored-icon.png"
+    "icon": "un-colored-icon.png",
+    "icon32": "un-colored-icon-32.png",
+    "icon64": "un-colored-icon-64.png",
+    "icon128": "un-colored-icon-128.png"
   },
   {
     "slug": "uphone",
@@ -2824,7 +3544,10 @@
       "Contact Center",
       "Call Center"
     ],
-    "icon": "uphone-icon.png"
+    "icon": "uphone-icon.png",
+    "icon32": "uphone-icon-32.png",
+    "icon64": "uphone-icon-64.png",
+    "icon128": "uphone-icon-128.png"
   },
   {
     "slug": "vagrant-manager",
@@ -2837,7 +3560,10 @@
       "manager"
     ],
     "license": "MIT",
-    "icon": "vagrant-manager-icon.png"
+    "icon": "vagrant-manager-icon.png",
+    "icon32": "vagrant-manager-icon-32.png",
+    "icon64": "vagrant-manager-icon-64.png",
+    "icon128": "vagrant-manager-icon-128.png"
   },
   {
     "slug": "vectr",
@@ -2848,7 +3574,10 @@
       "design",
       "editor"
     ],
-    "icon": "vectr-icon.png"
+    "icon": "vectr-icon.png",
+    "icon32": "vectr-icon-32.png",
+    "icon64": "vectr-icon-64.png",
+    "icon128": "vectr-icon-128.png"
   },
   {
     "slug": "visual-studio-code",
@@ -2856,7 +3585,10 @@
     "description": "Open source code editor developed by Microsoft",
     "website": "https://code.visualstudio.com",
     "license": "MIT",
-    "icon": "visual-studio-code-icon.png"
+    "icon": "visual-studio-code-icon.png",
+    "icon32": "visual-studio-code-icon-32.png",
+    "icon64": "visual-studio-code-icon-64.png",
+    "icon128": "visual-studio-code-icon-128.png"
   },
   {
     "slug": "vk-messenger",
@@ -2868,7 +3600,10 @@
       "chat",
       "productivity"
     ],
-    "icon": "vk-messenger-icon.png"
+    "icon": "vk-messenger-icon.png",
+    "icon32": "vk-messenger-icon-32.png",
+    "icon64": "vk-messenger-icon-64.png",
+    "icon128": "vk-messenger-icon-128.png"
   },
   {
     "slug": "vrap",
@@ -2884,7 +3619,10 @@
       "krpano",
       "developer tool"
     ],
-    "icon": "vrap-icon.png"
+    "icon": "vrap-icon.png",
+    "icon32": "vrap-icon-32.png",
+    "icon64": "vrap-icon-64.png",
+    "icon128": "vrap-icon-128.png"
   },
   {
     "slug": "wallapatta",
@@ -2897,14 +3635,20 @@
       "markdown"
     ],
     "license": "MIT",
-    "icon": "wallapatta-icon.png"
+    "icon": "wallapatta-icon.png",
+    "icon32": "wallapatta-icon-32.png",
+    "icon64": "wallapatta-icon-64.png",
+    "icon128": "wallapatta-icon-128.png"
   },
   {
     "slug": "webtorrent",
     "name": "WebTorrent",
     "description": "The streaming torrent client",
     "website": "https://webtorrent.io/desktop",
-    "icon": "webtorrent-icon.png"
+    "icon": "webtorrent-icon.png",
+    "icon32": "webtorrent-icon-32.png",
+    "icon64": "webtorrent-icon-64.png",
+    "icon128": "webtorrent-icon-128.png"
   },
   {
     "slug": "weflow",
@@ -2920,7 +3664,10 @@
       "Developer Tool"
     ],
     "license": "MIT",
-    "icon": "weflow-icon.png"
+    "icon": "weflow-icon.png",
+    "icon32": "weflow-icon-32.png",
+    "icon64": "weflow-icon-64.png",
+    "icon128": "weflow-icon-128.png"
   },
   {
     "slug": "whale",
@@ -2930,7 +3677,10 @@
     "keywords": [
       "productivity"
     ],
-    "icon": "whale-icon.png"
+    "icon": "whale-icon.png",
+    "icon32": "whale-icon-32.png",
+    "icon64": "whale-icon-64.png",
+    "icon128": "whale-icon-128.png"
   },
   {
     "slug": "wheredat",
@@ -2941,14 +3691,20 @@
       "search",
       "enterprise"
     ],
-    "icon": "wheredat-icon.png"
+    "icon": "wheredat-icon.png",
+    "icon32": "wheredat-icon-32.png",
+    "icon64": "wheredat-icon-64.png",
+    "icon128": "wheredat-icon-128.png"
   },
   {
     "slug": "wire",
     "name": "Wire",
     "description": "Modern, private communications",
     "website": "https://wire.com",
-    "icon": "wire-icon.png"
+    "icon": "wire-icon.png",
+    "icon32": "wire-icon-32.png",
+    "icon64": "wire-icon-64.png",
+    "icon128": "wire-icon-128.png"
   },
   {
     "slug": "wonder-reader",
@@ -2963,7 +3719,10 @@
       "comic book"
     ],
     "license": "ISC",
-    "icon": "wonder-reader-icon.png"
+    "icon": "wonder-reader-icon.png",
+    "icon32": "wonder-reader-icon-32.png",
+    "icon64": "wonder-reader-icon-64.png",
+    "icon128": "wonder-reader-icon-128.png"
   },
   {
     "slug": "wordmark",
@@ -2974,21 +3733,30 @@
       "markdown",
       "editor"
     ],
-    "icon": "wordmark-icon.png"
+    "icon": "wordmark-icon.png",
+    "icon32": "wordmark-icon-32.png",
+    "icon64": "wordmark-icon-64.png",
+    "icon128": "wordmark-icon-128.png"
   },
   {
     "slug": "wordpress-com",
     "name": "WordPress.com",
     "description": "A desktop app for Wordpress",
     "website": "https://desktop.wordpress.com",
-    "icon": "wordpress-com-icon.png"
+    "icon": "wordpress-com-icon.png",
+    "icon32": "wordpress-com-icon-32.png",
+    "icon64": "wordpress-com-icon-64.png",
+    "icon128": "wordpress-com-icon-128.png"
   },
   {
     "slug": "world-history-ap",
     "name": "World History AP",
     "description": "Help students study for the rigorous AP exam",
     "website": "http://whap.tk",
-    "icon": "world-history-ap-icon.png"
+    "icon": "world-history-ap-icon.png",
+    "icon32": "world-history-ap-icon-32.png",
+    "icon64": "world-history-ap-icon-64.png",
+    "icon128": "world-history-ap-icon-128.png"
   },
   {
     "slug": "wow-stat",
@@ -3002,7 +3770,10 @@
       "game",
       "warcraft"
     ],
-    "icon": "wow-stat-icon.png"
+    "icon": "wow-stat-icon.png",
+    "icon32": "wow-stat-icon-32.png",
+    "icon64": "wow-stat-icon-64.png",
+    "icon128": "wow-stat-icon-128.png"
   },
   {
     "slug": "wp-express",
@@ -3013,7 +3784,10 @@
       "wordpress",
       "productivity"
     ],
-    "icon": "wp-express-icon.png"
+    "icon": "wp-express-icon.png",
+    "icon32": "wp-express-icon-32.png",
+    "icon64": "wp-express-icon-64.png",
+    "icon128": "wp-express-icon-128.png"
   },
   {
     "slug": "xcel",
@@ -3028,7 +3802,10 @@
       "aotu.io"
     ],
     "license": "MIT",
-    "icon": "xcel-icon.png"
+    "icon": "xcel-icon.png",
+    "icon32": "xcel-icon-32.png",
+    "icon64": "xcel-icon-64.png",
+    "icon128": "xcel-icon-128.png"
   },
   {
     "slug": "yeoman",
@@ -3040,14 +3817,20 @@
       "scaffolding",
       "productivity"
     ],
-    "icon": "yeoman-icon.png"
+    "icon": "yeoman-icon.png",
+    "icon32": "yeoman-icon-32.png",
+    "icon64": "yeoman-icon-64.png",
+    "icon128": "yeoman-icon-128.png"
   },
   {
     "slug": "yhat-rodeo",
     "name": "Yhat Rodeo",
     "description": "An IDE for data science",
     "website": "http://www.yhat.com/products/rodeo",
-    "icon": "yhat-rodeo-icon.png"
+    "icon": "yhat-rodeo-icon.png",
+    "icon32": "yhat-rodeo-icon-32.png",
+    "icon64": "yhat-rodeo-icon-64.png",
+    "icon128": "yhat-rodeo-icon-128.png"
   },
   {
     "slug": "yout",
@@ -3061,14 +3844,20 @@
       "desktop",
       "playlist"
     ],
-    "icon": "yout-icon.png"
+    "icon": "yout-icon.png",
+    "icon32": "yout-icon-32.png",
+    "icon64": "yout-icon-64.png",
+    "icon128": "yout-icon-128.png"
   },
   {
     "slug": "youtube-mp3",
     "name": "Youtube-mp3",
     "description": "Convert a youtube video to mp3 and download it",
     "website": "https://github.com/MedZed/Electron-Youtube-to-Mp3-Converter",
-    "icon": "youtube-mp3-icon.png"
+    "icon": "youtube-mp3-icon.png",
+    "icon32": "youtube-mp3-icon-32.png",
+    "icon64": "youtube-mp3-icon-64.png",
+    "icon128": "youtube-mp3-icon-128.png"
   },
   {
     "slug": "zazu-app",
@@ -3086,7 +3875,10 @@
       "file-search"
     ],
     "license": "MIT",
-    "icon": "zazu-app-icon.png"
+    "icon": "zazu-app-icon.png",
+    "icon32": "zazu-app-icon-32.png",
+    "icon64": "zazu-app-icon-64.png",
+    "icon128": "zazu-app-icon-128.png"
   },
   {
     "slug": "zeplin",
@@ -3100,13 +3892,19 @@
       "sketch",
       "photoshop"
     ],
-    "icon": "zeplin-icon.png"
+    "icon": "zeplin-icon.png",
+    "icon32": "zeplin-icon-32.png",
+    "icon64": "zeplin-icon-64.png",
+    "icon128": "zeplin-icon-128.png"
   },
   {
     "slug": "zoommy",
     "name": "Zoommy",
     "description": "Helps you find awesome free stock photos for your creative product or inspiration",
     "website": "http://zoommyapp.com",
-    "icon": "zoommy-icon.png"
+    "icon": "zoommy-icon.png",
+    "icon32": "zoommy-icon-32.png",
+    "icon64": "zoommy-icon-64.png",
+    "icon128": "zoommy-icon-128.png"
   }
 ]
