@@ -2325,6 +2325,24 @@
     "icon128": "pamfax-icon-128.png"
   },
   {
+    "slug": "papyrus",
+    "name": "Papyrus",
+    "description": "Unofficial Dropbox Paper app",
+    "website": "https://github.com/morkro/papyrus",
+    "repository": "https://github.com/morkro/papyrus",
+    "keywords": [
+      "dropbox",
+      "paper",
+      "notes",
+      "file sharing"
+    ],
+    "license": "MIT",
+    "icon": "papyrus-icon.png",
+    "icon32": "papyrus-icon-32.png",
+    "icon64": "papyrus-icon-64.png",
+    "icon128": "papyrus-icon-128.png"
+  },
+  {
     "slug": "particle-dev",
     "name": "Particle Dev",
     "description": "A professional IDE for Particle",
