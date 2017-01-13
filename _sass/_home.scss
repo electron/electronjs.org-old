@@ -101,6 +101,44 @@
   text-overflow: ellipsis;
 }
 
+/* Listed Apps with Icons */
+
+$app-list-icon-size: 48px;
+
+.app-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.listed-app {
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid $bg-blue-light;
+}
+
+.listed-app > a {
+  display: block;
+}
+
+.listed-app-logo-wrapper {
+  display: inline-block;
+  width: $app-list-icon-size;
+  height: $app-list-icon-size;
+}
+
+.listed-app-name {
+  padding: 0 10px;
+}
+
+.listed-app span {
+  line-height: $app-list-icon-size;
+  vertical-align: bottom;
+}
+
+.listed-app-description {
+  opacity: 0.7;
+}
 
 /* Featured Apps without Icons */
 
