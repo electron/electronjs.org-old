@@ -2348,7 +2348,6 @@
       "file sharing"
     ],
     "license": "MIT",
-    "disabled": true,
     "icon": "papyrus-icon.png",
     "icon32": "papyrus-icon-32.png",
     "icon64": "papyrus-icon-64.png",
