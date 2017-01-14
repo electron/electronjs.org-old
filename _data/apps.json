@@ -185,6 +185,16 @@
     "icon128": "basecamp-3-icon-128.png"
   },
   {
+    "slug": "batcave",
+    "name": "Batcave",
+    "description": "A dark-themed chat app",
+    "website": "https://github.com/hsbalar/batcave",
+    "icon": "batcave-icon.png",
+    "icon32": "batcave-icon-32.png",
+    "icon64": "batcave-icon-64.png",
+    "icon128": "batcave-icon-128.png"
+  },
+  {
     "slug": "beaker-browser",
     "name": "Beaker Browser",
     "description": "An experimental P2P browser",
