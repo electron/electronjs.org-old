@@ -307,6 +307,7 @@
       "facebook"
     ],
     "license": "MIT",
+    "disabled": true,
     "icon": "caprine-icon.png",
     "icon32": "caprine-icon-32.png",
     "icon64": "caprine-icon-64.png",
@@ -2337,6 +2338,7 @@
       "file sharing"
     ],
     "license": "MIT",
+    "disabled": true,
     "icon": "papyrus-icon.png",
     "icon32": "papyrus-icon-32.png",
     "icon64": "papyrus-icon-64.png",
@@ -2695,6 +2697,7 @@
       "instagram"
     ],
     "license": "MIT",
+    "disabled": true,
     "icon": "ramme-icon.png",
     "icon32": "ramme-icon-32.png",
     "icon64": "ramme-icon-64.png",
@@ -3020,6 +3023,7 @@
     "name": "Slack Catchup",
     "description": "Catch up all the unread across your Slack teams in a single place",
     "website": "https://slackcatchup.com",
+    "disabled": true,
     "icon": "slack-catchup-icon.png",
     "icon32": "slack-catchup-icon-32.png",
     "icon64": "slack-catchup-icon-64.png",
@@ -3872,6 +3876,7 @@
     "name": "Youtube-mp3",
     "description": "Convert a youtube video to mp3 and download it",
     "website": "https://github.com/MedZed/Electron-Youtube-to-Mp3-Converter",
+    "disabled": true,
     "icon": "youtube-mp3-icon.png",
     "icon32": "youtube-mp3-icon-32.png",
     "icon64": "youtube-mp3-icon-64.png",
