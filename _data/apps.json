@@ -1230,7 +1230,14 @@
     "slug": "gitbook",
     "name": "GitBook",
     "description": "Editor for a modern publishing toolchain based on Git",
-    "website": "https://www.gitbook.com",
+    "website": "https://www.gitbook.com/?utm_source=electron&utm_medium=logo",
+    "keywords": [
+      "writing",
+      "editor",
+      "documentation",
+      "git",
+      "gitbook"
+    ],
     "icon": "gitbook-icon.png",
     "icon32": "gitbook-icon-32.png",
     "icon64": "gitbook-icon-64.png",
