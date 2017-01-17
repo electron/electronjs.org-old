@@ -111,14 +111,23 @@ $app-list-icon-size: 48px;
   padding: 0;
 }
 
-.listed-app {
+.listed-app.listed-app {
   text-align: left;
-  padding: 10px;
-  border-bottom: 1px solid $bg-blue-light;
+  margin-bottom: 0;
+  border-bottom: none;
 }
 
 .listed-app > a {
   display: block;
+  padding: 10px;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.listed-app > a:hover {
+  text-decoration: none;
+  background-color: $main-bg-color-shade;
 }
 
 .listed-app-logo-wrapper {
