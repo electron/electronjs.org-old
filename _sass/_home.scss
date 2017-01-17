@@ -138,6 +138,7 @@ $app-list-icon-size: 48px;
 
 .listed-app-name {
   padding: 0 10px;
+  font-weight: 500;
 }
 
 .listed-app span {
@@ -145,9 +146,6 @@ $app-list-icon-size: 48px;
   vertical-align: bottom;
 }
 
-.listed-app-description {
-  opacity: 0.7;
-}
 
 /* Featured Apps without Icons */
 
