@@ -1539,6 +1539,22 @@
     "icon128": "i5sing-icon-128.png"
   },
   {
+    "slug": "illyriad",
+    "name": "Illyriad",
+    "description": "4X Grand Strategy MMO Game",
+    "website": "http://store.steampowered.com/app/559310",
+    "keywords": [
+      "game",
+      "steam",
+      "grand strategy",
+      "mmo"
+    ],
+    "icon": "illyriad-icon.png",
+    "icon32": "illyriad-icon-32.png",
+    "icon64": "illyriad-icon-64.png",
+    "icon128": "illyriad-icon-128.png"
+  },
+  {
     "slug": "infinity",
     "name": "Infinity",
     "description": "An easy way to make presentation.",
