@@ -2763,6 +2763,22 @@
     "icon128": "remind-icon-128.png"
   },
   {
+    "slug": "reqview",
+    "name": "ReqView",
+    "description": "Simple yet powerful software and system requirements management tool.",
+    "website": "https://www.reqview.com",
+    "keywords": [
+      "project management tool",
+      "office application",
+      "productivity",
+      "editor"
+    ],
+    "icon": "reqview-icon.png",
+    "icon32": "reqview-icon-32.png",
+    "icon64": "reqview-icon-64.png",
+    "icon128": "reqview-icon-128.png"
+  },
+  {
     "slug": "riot",
     "name": "Riot",
     "description": "A glossy Matrix collaboration client for the web",
