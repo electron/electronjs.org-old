@@ -122,7 +122,7 @@ $app-list-icon-size: 48px;
 }
 
 .listed-app > a {
-  display: block;
+  display: flex;
   padding: 10px;
   &:hover {
     text-decoration: none;
@@ -143,6 +143,13 @@ $app-list-icon-size: 48px;
 .listed-app-name {
   padding: 0 10px;
   font-weight: 500;
+}
+
+.listed-app-description {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .listed-app span {
