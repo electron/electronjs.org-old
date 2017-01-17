@@ -117,6 +117,7 @@ $app-list-icon-size: 48px;
 
 // Override .filterable-list
 .listed-app.listed-app {
+  padding: 0;
   margin-bottom: 0;
   border-bottom: none;
 }
