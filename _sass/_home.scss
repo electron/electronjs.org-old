@@ -111,8 +111,12 @@ $app-list-icon-size: 48px;
   padding: 0;
 }
 
-.listed-app.listed-app {
+.listed-app {
   text-align: left;
+}
+
+// Override .filterable-list
+.listed-app.listed-app {
   margin-bottom: 0;
   border-bottom: none;
 }
