@@ -1,5 +1,5 @@
 ---
-title: Electron Samples
+title: Electron Simple Samples
 author: zeke
 ---
 
@@ -14,7 +14,7 @@ and the code is heavily commented to explain how everything works.
 To get started, clone this repository:
 
 ```sh
-git clone https://github.com/kevinsawicki/electron-samples
+git clone https://github.com/electron/simple-samples
 ```
 
 To run any of the apps below, change into the app's directory,
@@ -61,3 +61,4 @@ We hope these apps help you get started using Electron. Here are a handful other
 - [Electron API Demos](https://github.com/electron/electron-api-demos): An interactive app that demonstrates the core features of the Electron API
 - [electron.atom.io/docs/all](http://electron.atom.io/docs/all/): All of the Electron documentation together on a single searchable page.
 - [hokein/electron-sample-apps](https://github.com/hokein/electron-sample-apps): Another collection of sample applications for Electron, compiled by Electron maintainer [Haojian Wu](https://github.com/hokein).
+- [awesome-electron](https://github.com/sindresorhus/awesome-electron) - A GitHub repository that collects the latest and greatest Electron-related tutorials, books, videos, etc.
