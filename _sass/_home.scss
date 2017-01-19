@@ -125,14 +125,16 @@ $app-list-icon-size: 48px;
 .listed-app > a {
   display: flex;
   padding: 10px;
-  &:hover {
-    text-decoration: none;
-  }
+  border: 1px solid transparent;
 }
 
-.listed-app > a:hover {
+.listed-app > a:hover,
+.listed-app > a:focus {
   text-decoration: none;
+  text-decoration: none;
+  border-color: $main-border-color;
   background-color: $main-bg-color-shade;
+  outline: none;
 }
 
 .listed-app-logo-wrapper {
