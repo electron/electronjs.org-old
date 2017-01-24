@@ -1,5 +1,5 @@
 ---
-version: v1.4.15
+version: v1.5.0
 permalink: /docs/tutorial/application-packaging/
 category: Tutorial
 redirect_from:

@@ -1,5 +1,5 @@
 ---
-version: v1.4.15
+version: v1.5.0
 permalink: /docs/tutorial/devtools-extension/
 category: Tutorial
 redirect_from:

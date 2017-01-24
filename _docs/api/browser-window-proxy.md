@@ -1,5 +1,5 @@
 ---
-version: v1.4.15
+version: v1.5.0
 permalink: /docs/api/browser-window-proxy/
 category: API
 redirect_from:
