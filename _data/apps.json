@@ -538,6 +538,22 @@
     "icon128": "covepdf-icon-128.png"
   },
   {
+    "slug": "coypu",
+    "name": "Coypu",
+    "description": "Text-editor-like week planner",
+    "website": "https://coypu.co",
+    "keywords": [
+      "productivity",
+      "todo",
+      "calendar",
+      "planner"
+    ],
+    "icon": "coypu-icon.png",
+    "icon32": "coypu-icon-32.png",
+    "icon64": "coypu-icon-64.png",
+    "icon128": "coypu-icon-128.png"
+  },
+  {
     "slug": "cozy-desktop",
     "name": "Cozy Desktop",
     "description": "File Synchronisation for Cozy Cloud on Desktop and Laptop",
@@ -2341,6 +2357,31 @@
     "icon128": "nylas-n1-icon-128.png"
   },
   {
+    "slug": "opale-messenger",
+    "name": "Opale Messenger",
+    "description": "Facebook Messenger wrapper with an android-like bubble",
+    "website": "https://github.com/DavidMellul/Opale-Messenger",
+    "repository": "https://github.com/DavidMellul/Opale-Messenger",
+    "keywords": [
+      "chat",
+      "message",
+      "social",
+      "facebook",
+      "bubble",
+      "wrapper",
+      "messenger",
+      "text",
+      "online",
+      "send",
+      "toggle"
+    ],
+    "license": "MIT",
+    "icon": "opale-messenger-icon.png",
+    "icon32": "opale-messenger-icon-32.png",
+    "icon64": "opale-messenger-icon-64.png",
+    "icon128": "opale-messenger-icon-128.png"
+  },
+  {
     "slug": "open-stage-control",
     "name": "Open Stage Control",
     "description": "A libre desktop OSC bi-directionnal control surface application",
@@ -3293,6 +3334,21 @@
     "icon32": "svgsus-icon-32.png",
     "icon64": "svgsus-icon-64.png",
     "icon128": "svgsus-icon-128.png"
+  },
+  {
+    "slug": "switchhosts",
+    "name": "SwitchHosts",
+    "description": "Manage and switch your hosts files.",
+    "website": "https://oldj.github.io/SwitchHosts/",
+    "repository": "https://github.com/oldj/SwitchHosts",
+    "keywords": [
+      "developer tool"
+    ],
+    "license": "MIT",
+    "icon": "switchhosts-icon.png",
+    "icon32": "switchhosts-icon-32.png",
+    "icon64": "switchhosts-icon-64.png",
+    "icon128": "switchhosts-icon-128.png"
   },
   {
     "slug": "symbsearch",
