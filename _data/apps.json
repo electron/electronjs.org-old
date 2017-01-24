@@ -344,6 +344,23 @@
     "icon128": "catlight-icon-128.png"
   },
   {
+    "slug": "cerebro",
+    "name": "Cerebro",
+    "description": "Productivity booster with a brain",
+    "website": "https://cerebroapp.com",
+    "repository": "https://github.com/KELiON/cerebro",
+    "keywords": [
+      "search",
+      "productivity",
+      "launcher"
+    ],
+    "license": "MIT",
+    "icon": "cerebro-icon.png",
+    "icon32": "cerebro-icon-32.png",
+    "icon64": "cerebro-icon-64.png",
+    "icon128": "cerebro-icon-128.png"
+  },
+  {
     "slug": "chatwork",
     "name": "ChatWork",
     "description": "Group chat for global teams",
@@ -751,6 +768,12 @@
     "website": "http://destroyer.audio",
     "repository": "https://github.com/mashaal/destroyer",
     "license": "ISC",
+    "keywords": [
+      "audio",
+      "music",
+      "lossless",
+      "audiophile"
+    ],
     "icon": "destroyer-icon.png",
     "icon32": "destroyer-icon-32.png",
     "icon64": "destroyer-icon-64.png",
@@ -2321,7 +2344,7 @@
     "slug": "open-stage-control",
     "name": "Open Stage Control",
     "description": "A libre desktop OSC bi-directionnal control surface application",
-    "website": "https://jean-emmanuel.github.io/open-stage-control",
+    "website": "http://osc.ammd.net",
     "icon": "open-stage-control-icon.png",
     "icon32": "open-stage-control-icon-32.png",
     "icon64": "open-stage-control-icon-64.png",
@@ -3949,6 +3972,21 @@
     "icon32": "zazu-app-icon-32.png",
     "icon64": "zazu-app-icon-64.png",
     "icon128": "zazu-app-icon-128.png"
+  },
+  {
+    "slug": "zector",
+    "name": "Zector",
+    "description": "Vector Graphics tools suite.",
+    "website": "http://zector.io",
+    "keywords": [
+      "Graphics",
+      "Drawing",
+      "Vector"
+    ],
+    "icon": "zector-icon.png",
+    "icon32": "zector-icon-32.png",
+    "icon64": "zector-icon-64.png",
+    "icon128": "zector-icon-128.png"
   },
   {
     "slug": "zeplin",
