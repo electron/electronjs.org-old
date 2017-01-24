@@ -100,6 +100,7 @@ You can quickly launch a multi-platform release server for distributing your app
 *   [nuts](https://github.com/GitbookIO/nuts): _A smart release server for your applications, using GitHub as a backend. Auto-updates with Squirrel (Mac & Windows)_
 *   [electron-release-server](https://github.com/ArekSredzki/electron-release-server): _A fully featured, self-hosted release server for electron applications, compatible with auto-updater_
 *   [squirrel-updates-server](https://github.com/Aluxian/squirrel-updates-server): _A simple node.js server for Squirrel.Mac and Squirrel.Windows which uses GitHub releases_
+*   [squirrel-release-server](https://github.com/Arcath/squirrel-release-server): _A simple PHP application for Squirrel.Windows which reads updates from a folder. Supports delta updates._
 
 ## Platform notices
 

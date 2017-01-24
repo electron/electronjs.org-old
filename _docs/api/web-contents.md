@@ -302,12 +302,12 @@ Returns:
 *   `event` Event
 *   `input` Object - Input properties
     *   `type` String - Either `keyUp` or `keyDown`
-    *   `key` String - Equivalent to [KeyboardEvent.key]({{site.baseurl}}/docs/api/keyboardevent)
-    *   `isAutoRepeat` Boolean - Equivalent to [KeyboardEvent.repeat]({{site.baseurl}}/docs/api/keyboardevent)
-    *   `shift` Boolean - Equivalent to [KeyboardEvent.shiftKey]({{site.baseurl}}/docs/api/keyboardevent)
-    *   `control` Boolean - Equivalent to [KeyboardEvent.controlKey]({{site.baseurl}}/docs/api/keyboardevent)
-    *   `alt` Boolean - Equivalent to [KeyboardEvent.altKey]({{site.baseurl}}/docs/api/keyboardevent)
-    *   `meta` Boolean - Equivalent to [KeyboardEvent.metaKey]({{site.baseurl}}/docs/api/keyboardevent)
+    *   `key` String - Equivalent to [KeyboardEvent.key](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent)
+    *   `isAutoRepeat` Boolean - Equivalent to [KeyboardEvent.repeat](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent)
+    *   `shift` Boolean - Equivalent to [KeyboardEvent.shiftKey](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent)
+    *   `control` Boolean - Equivalent to [KeyboardEvent.controlKey](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent)
+    *   `alt` Boolean - Equivalent to [KeyboardEvent.altKey](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent)
+    *   `meta` Boolean - Equivalent to [KeyboardEvent.metaKey](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent)
 
 Emitted before dispatching the `keydown` and `keyup` events in the page. Calling `event.preventDefault` will prevent the page `keydown`/`keyup` events from being dispatched.
 
@@ -880,6 +880,8 @@ Use `page-break-before: always;` CSS style to force to print to a new page.
 Prints window's web page as PDF with Chromium's preview printing custom settings.
 
 The `callback` will be called with `callback(error, data)` on completion. The `data` is a `Buffer` that contains the generated PDF data.
+
+The `landscape` will be ignored if `@page` CSS at-rule is used in the web page.
 
 By default, an empty `options` will be regarded as:
 
