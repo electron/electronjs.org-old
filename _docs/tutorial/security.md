@@ -117,7 +117,8 @@ This is not bulletproof, but at the least, you should attempt the following:
 
 *   Only display secure (https) content
 *   Disable the Node integration in all renderers that display remote content (setting `nodeIntegration` to `false` in `webPreferences`)
-*   Enable context isolation in all rendererers that display remote content (setting `contextIsolation` to `true` in `webPreferences`)
+*   Enable context isolation in all renderers that display remote content (setting `contextIsolation` to `true` in `webPreferences`)
+*   Use `ses.setPermissionRequestHandler()` in all sessions that load remote content
 *   Do not disable `webSecurity`. Disabling it will disable the same-origin policy.
 *   Define a [`Content-Security-Policy`](http://www.html5rocks.com/en/tutorials/security/content-security-policy/) , and use restrictive rules (i.e. `script-src 'self'`)
 *   [Override and disable `eval`](https://github.com/nylas/N1/blob/0abc5d5defcdb057120d726b271933425b75b415/static/index.js#L6-L8) , which allows strings to be executed as code.
