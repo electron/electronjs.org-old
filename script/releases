@@ -27,8 +27,8 @@ request(options, function (error, response, body) {
 
       // turn PR references like #123 into hyperlinks
       release.body = release.body.replace(
-        / #(\d+)\r\n/gm,
-        ' <a href="https://github.com/electron/electron/pull/$1">#$1</a>\r\n'
+        / #(\d+)$/gm,
+        ' <a href="https://github.com/electron/electron/pull/$1">#$1</a>'
       )
     })
     fs.writeFileSync('_data/releases.json', JSON.stringify(body, null, 2))
