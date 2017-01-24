@@ -520,23 +520,5 @@
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v1.2.8",
     "body": "Changelog:\n- Add `options` parameter for the `session.fromPartition(''[, options])` API. [#6470](https://github.com/electron/electron/pull/6470)\n- Add more attributes for `certificate` object of `certificate-error` event. [#6474](https://github.com/electron/electron/pull/6474)\n- Add `autoUpdater.getFeedURL()` API. [#6486](https://github.com/electron/electron/pull/6486)\n- Add `getAllWebContents()` and `getFocusedWebContents()` APIs to `webContents` module. [#6489](https://github.com/electron/electron/pull/6489)\n\n**macOS**\n- Add `drop-text` event to `Tray`. [#6490](https://github.com/electron/electron/pull/6490)\n- Fix exception when calling console.log after relaunch. [#6527](https://github.com/electron/electron/pull/6527)\n\n**Windows**\n- Add `win.setThumbnailClip(region)` API. [#6497](https://github.com/electron/electron/pull/6497)\n",
     "version": "1.2.8"
-  },
-  {
-    "url": "https://api.github.com/repos/electron/electron/releases/3644235",
-    "assets_url": "https://api.github.com/repos/electron/electron/releases/3644235/assets",
-    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/3644235/assets{?name,label}",
-    "html_url": "https://github.com/electron/electron/releases/tag/v1.2.7",
-    "id": 3644235,
-    "tag_name": "v1.2.7",
-    "target_commitish": "master",
-    "name": "electron v1.2.7",
-    "draft": false,
-    "prerelease": false,
-    "created_at": "2016-07-13T03:22:42Z",
-    "published_at": "2016-07-13T05:19:41Z",
-    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v1.2.7",
-    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v1.2.7",
-    "body": "Changelog:\n- Do not show default accelerators in menus other than application menu and window menu. [#6385](https://github.com/electron/electron/pull/6385)\n- Add `capturePage` method to `WebContents` class and `<webview>` tag. [#6355](https://github.com/electron/electron/pull/6355)\n- Add `showHiddenFiles` to `dialog.showOpenDialog(options)`'s `properties`. [#6431](https://github.com/electron/electron/pull/6431)\n- Add `app.getLoginItemSettings()` and `app.setLoginItemSettings(settings)` APIs. [#6375](https://github.com/electron/electron/pull/6375), [#6444](https://github.com/electron/electron/pull/6444)\n- Add `accessibility-support-changed` event and `isAccessibilitySupportEnabled()` method to `app` module. [#6446](https://github.com/electron/electron/pull/6446)\n- Fix session not saved on exit. [#6411](https://github.com/electron/electron/pull/6411)\n- Fix passing remote objects without constructor. [#6369](https://github.com/electron/electron/pull/6369)\n- Fix showing context menu and synchronous dialogs emitting `unresponsive` event. [#6432](https://github.com/electron/electron/pull/6432)\n- Fix value becoming `null` when passing the same Array for multiple times in `remote` module. [#6442](https://github.com/electron/electron/pull/6442)\n- Fix setting maximum/minimum size overriding minimum/maximum size. [#6455](https://github.com/electron/electron/pull/6455)\n- Fix edit menu in context menu of devtools not showing. [#6459](https://github.com/electron/electron/pull/6459)\n\n**macOS**\n- Fix single key accelerator not working. [#6370](https://github.com/electron/electron/pull/6370)\n- Fix `win.setBounds(bounds)` API ignore maximum/minimum sizes. [#6363](https://github.com/electron/electron/pull/6363)\n- Fix the fullscreen button showing in frameless window on OS X 10.9. [#6433](https://github.com/electron/electron/pull/6433)\n- Fix transparent window having border on OS X 10.9. [#6449](https://github.com/electron/electron/pull/6449)\n- Fix crash when destroying tray icon from its context menu. [#6448](https://github.com/electron/electron/pull/6448)\n\n**Linux**\n- Fix exception when calling `console.log` after relaunch. [#6412](https://github.com/electron/electron/pull/6412)\n- Fix menubar not hiding after entering fullscreen. [#6429](https://github.com/electron/electron/pull/6429)\n- Fix crash on startup. [#6466](https://github.com/electron/electron/pull/6466)\n\n**Windows**\n- Add `thickFrame` option for `BrowserWindow`. [#6412](https://github.com/electron/electron/pull/6412)\n- Add `toolbar` to `BrowserWindow`'s `type`. [#6428](https://github.com/electron/electron/pull/6428)\n- Fix transparent window not working when in maximized or fullscreen state. [#6417](https://github.com/electron/electron/pull/6417)\n- Fix `shell.openExternal(url)` not working with non-ASCII characters. [#6436](https://github.com/electron/electron/pull/6436)\n",
-    "version": "1.2.7"
   }
 ]
