@@ -1,5 +1,5 @@
 ---
-version: v1.4.14
+version: v1.4.15
 permalink: /docs/api/ipc-renderer/
 category: API
 redirect_from:

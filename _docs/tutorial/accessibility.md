@@ -1,5 +1,5 @@
 ---
-version: v1.4.14
+version: v1.4.15
 permalink: /docs/tutorial/accessibility/
 category: Tutorial
 redirect_from:

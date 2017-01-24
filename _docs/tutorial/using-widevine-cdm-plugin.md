@@ -1,5 +1,5 @@
 ---
-version: v1.4.14
+version: v1.4.15
 permalink: /docs/tutorial/using-widevine-cdm-plugin/
 category: Tutorial
 redirect_from:
