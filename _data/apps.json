@@ -605,6 +605,26 @@
     "icon128": "cryptocat-icon-128.png"
   },
   {
+    "slug": "cryptoseed",
+    "name": "CryptoSeed",
+    "description": "Secure your bitcoin recovery seed.",
+    "website": "https://github.com/anderson-arlen/cryptoseed",
+    "keywords": [
+      "bitcoin",
+      "cryptoseed",
+      "encryption",
+      "qr code",
+      "aes",
+      "seed",
+      "recovery"
+    ],
+    "license": "MIT",
+    "icon": "cryptoseed-icon.png",
+    "icon32": "cryptoseed-icon-32.png",
+    "icon64": "cryptoseed-icon-64.png",
+    "icon128": "cryptoseed-icon-128.png"
+  },
+  {
     "slug": "cumulus",
     "name": "Cumulus",
     "description": "A SoundCloud player that lives in your menubar",
