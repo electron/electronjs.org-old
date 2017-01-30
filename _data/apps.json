@@ -1496,6 +1496,16 @@
     "icon128": "hawkeye-icon-128.png"
   },
   {
+    "slug": "headlines",
+    "name": "Headlines",
+    "description": "View latest news headlines with categories",
+    "website": "https://github.com/MedZed/Electron-Headlines",
+    "icon": "headlines-icon.png",
+    "icon32": "headlines-icon-32.png",
+    "icon64": "headlines-icon-64.png",
+    "icon128": "headlines-icon-128.png"
+  },
+  {
     "slug": "healthi",
     "name": "healthi",
     "description": "Your mac's battery doctor",
@@ -4022,7 +4032,6 @@
     "name": "Youtube-mp3",
     "description": "Convert a youtube video to mp3 and download it",
     "website": "https://github.com/MedZed/Electron-Youtube-to-Mp3-Converter",
-    "disabled": true,
     "icon": "youtube-mp3-icon.png",
     "icon32": "youtube-mp3-icon-32.png",
     "icon64": "youtube-mp3-icon-64.png",
