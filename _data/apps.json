@@ -1806,6 +1806,25 @@
     "icon128": "jibo-icon-128.png"
   },
   {
+    "slug": "jukeboks",
+    "name": "Hirohisa",
+    "description": "Fast viewer",
+    "website": "https://github.com/hirohisa/Jukeboks",
+    "repository": "https://github.com/hirohisa/Jukeboks",
+    "keywords": [
+      "viewer",
+      "player",
+      "image",
+      "movie",
+      "video"
+    ],
+    "license": "MIT",
+    "icon": "jukeboks-icon.png",
+    "icon32": "jukeboks-icon-32.png",
+    "icon64": "jukeboks-icon-64.png",
+    "icon128": "jukeboks-icon-128.png"
+  },
+  {
     "slug": "kakapo",
     "name": "Kakapo",
     "description": "Ambient sound mixer to set a nice mood",
