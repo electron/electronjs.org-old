@@ -3417,16 +3417,6 @@
     "icon128": "symbsearch-icon-128.png"
   },
   {
-    "slug": "sync",
-    "name": "Sync",
-    "description": "A business chat tool",
-    "website": "https://www.wantedly.com/sync",
-    "icon": "sync-icon.png",
-    "icon32": "sync-icon-32.png",
-    "icon64": "sync-icon-64.png",
-    "icon128": "sync-icon-128.png"
-  },
-  {
     "slug": "tagflow",
     "name": "TagFlow",
     "description": "Cross-platform file manager with clever tags",
@@ -3836,6 +3826,21 @@
     "icon32": "wallapatta-icon-32.png",
     "icon64": "wallapatta-icon-64.png",
     "icon128": "wallapatta-icon-128.png"
+  },
+  {
+    "slug": "wantedly-chat",
+    "name": "Wantedly Chat",
+    "description": "Business chat tool that will boost productivity for your team",
+    "website": "https://www.wantedly.com/chat",
+    "keywords": [
+      "message",
+      "chat",
+      "team"
+    ],
+    "icon": "wantedly-chat-icon.png",
+    "icon32": "wantedly-chat-icon-32.png",
+    "icon64": "wantedly-chat-icon-64.png",
+    "icon128": "wantedly-chat-icon-128.png"
   },
   {
     "slug": "webtorrent",
