@@ -502,23 +502,5 @@
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v1.3.0",
     "body": "Changelog:\n- Upgrade to Chrome 52. [#6342](https://github.com/electron/electron/pull/6342)\n- Update to Node.js 6.3.0. [#6559](https://github.com/electron/electron/pull/6559)\n",
     "version": "1.3.0"
-  },
-  {
-    "url": "https://api.github.com/repos/electron/electron/releases/3706369",
-    "assets_url": "https://api.github.com/repos/electron/electron/releases/3706369/assets",
-    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/3706369/assets{?name,label}",
-    "html_url": "https://github.com/electron/electron/releases/tag/v1.2.8",
-    "id": 3706369,
-    "tag_name": "v1.2.8",
-    "target_commitish": "master",
-    "name": "electron v1.2.8",
-    "draft": false,
-    "prerelease": false,
-    "created_at": "2016-07-21T05:57:08Z",
-    "published_at": "2016-07-21T07:16:29Z",
-    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v1.2.8",
-    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v1.2.8",
-    "body": "Changelog:\n- Add `options` parameter for the `session.fromPartition(''[, options])` API. [#6470](https://github.com/electron/electron/pull/6470)\n- Add more attributes for `certificate` object of `certificate-error` event. [#6474](https://github.com/electron/electron/pull/6474)\n- Add `autoUpdater.getFeedURL()` API. [#6486](https://github.com/electron/electron/pull/6486)\n- Add `getAllWebContents()` and `getFocusedWebContents()` APIs to `webContents` module. [#6489](https://github.com/electron/electron/pull/6489)\n\n**macOS**\n- Add `drop-text` event to `Tray`. [#6490](https://github.com/electron/electron/pull/6490)\n- Fix exception when calling console.log after relaunch. [#6527](https://github.com/electron/electron/pull/6527)\n\n**Windows**\n- Add `win.setThumbnailClip(region)` API. [#6497](https://github.com/electron/electron/pull/6497)\n",
-    "version": "1.2.8"
   }
 ]
