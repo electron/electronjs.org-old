@@ -1,5 +1,28 @@
 [
   {
+    "version": "1.5.1",
+    "date": "2017-02-06",
+    "node": "7.4.0",
+    "v8": "5.4.500.43",
+    "uv": "1.10.1",
+    "zlib": "1.2.8",
+    "openssl": "1.0.2j",
+    "modules": "51",
+    "chrome": "54.0.2840.101",
+    "files": [
+      "darwin-x64",
+      "darwin-x64-symbols",
+      "linux-ia32",
+      "linux-ia32-symbols",
+      "linux-x64",
+      "linux-x64-symbols",
+      "win32-ia32",
+      "win32-ia32-symbols",
+      "win32-x64",
+      "win32-x64-symbols"
+    ]
+  },
+  {
     "version": "1.5.0",
     "date": "2017-01-24",
     "node": "7.4.0",

@@ -119,7 +119,13 @@ The `dialog` module has the following methods:
     *   `defaultPath` String (optional)
     *   `buttonLabel` String (optional) - Custom label for the confirmation button, when left empty the default label will be used.
     *   `filters` [FileFilter[]]({{site.baseurl}}/docs/api/structures/file-filter) (optional)
-    *   `properties` String[] (optional) - Contains which features the dialog should use, can contain `openFile`, `openDirectory`, `multiSelections`, `createDirectory` and `showHiddenFiles`.
+    *   `properties` String[] (optional) - Contains which features the dialog should use. The following values are supported:
+        *   `openFile` - Allow files to be selected.
+        *   `openDirectory` - Allow directories to be selected.
+        *   `multiSelections` - Allow multiple paths to be selected.
+        *   `showHiddenFiles` - Show hidden files in dialog.
+        *   `createDirectory` _macOS_ - Allow creating new directories from dialog.
+        *   `promptToCreate` _Windows_ - Prompt for creation if the file path entered in the dialog does not exist. This does not actually create the file at the path but allows non-existent paths to be returned that should be created by the application.
     *   `normalizeAccessKeys` Boolean (optional) - Normalize the keyboard access keys across platforms. Default is `false`. Enabling this assumes `&` is used in the button labels for the placement of the keyboard shortcut access key and labels will be converted so they work correctly on each platform, `&` characters are removed on macOS, converted to `_` on Linux, and left untouched on Windows. For example, a button label of `Vie&w` will be converted to `Vie_w` on Linux and `View` on macOS and can be selected via `Alt-W` on Windows and Linux.
 *   `callback` Function (optional)
     *   `filePaths` String[] - An array of file paths chosen by the user

@@ -303,6 +303,7 @@ Returns:
 *   `input` Object - Input properties
     *   `type` String - Either `keyUp` or `keyDown`
     *   `key` String - Equivalent to [KeyboardEvent.key](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent)
+    *   `code` String - Equivalent to [KeyboardEvent.code](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent)
     *   `isAutoRepeat` Boolean - Equivalent to [KeyboardEvent.repeat](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent)
     *   `shift` Boolean - Equivalent to [KeyboardEvent.shiftKey](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent)
     *   `control` Boolean - Equivalent to [KeyboardEvent.controlKey](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent)
@@ -1091,8 +1092,8 @@ End subscribing for frame presentation events.
 #### `contents.startDrag(item)`
 
 *   `item` Object
-    *   `file` String
-    *   `icon` [NativeImage]({{site.baseurl}}/docs/api/native-image)
+    *   `file` String - The path to the file being dragged.
+    *   `icon` [NativeImage]({{site.baseurl}}/docs/api/native-image) - The image must be non-empty on macOS.
 
 Sets the `item` as dragging item for current drag-drop operation, `file` is the absolute path of the file to be dragged, and `icon` is the image showing under the cursor when dragging.
 
