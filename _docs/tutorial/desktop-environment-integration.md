@@ -1,5 +1,5 @@
 ---
-version: v1.5.0
+version: v1.5.1
 permalink: /docs/tutorial/desktop-environment-integration/
 category: Tutorial
 redirect_from:

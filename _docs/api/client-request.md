@@ -1,5 +1,5 @@
 ---
-version: v1.5.0
+version: v1.5.1
 permalink: /docs/api/client-request/
 category: API
 redirect_from:

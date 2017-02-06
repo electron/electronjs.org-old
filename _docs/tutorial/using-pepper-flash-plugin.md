@@ -1,5 +1,5 @@
 ---
-version: v1.5.0
+version: v1.5.1
 permalink: /docs/tutorial/using-pepper-flash-plugin/
 category: Tutorial
 redirect_from:
