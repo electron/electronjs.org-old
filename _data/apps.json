@@ -1967,6 +1967,23 @@
     "icon128": "ling-icon-128.png"
   },
   {
+    "slug": "lionshare",
+    "name": "Lionshare",
+    "description": "Simple cryptocurrency price and portfolio monitor for macOS",
+    "website": "https://lionshare.capital/",
+    "repository": "https://github.com/lionsharecapital/lionshare-desktop",
+    "keywords": [
+      "bitcoin",
+      "ethereum",
+      "cryptocurrency"
+    ],
+    "license": "MIT",
+    "icon": "lionshare-icon.png",
+    "icon32": "lionshare-icon-32.png",
+    "icon64": "lionshare-icon-64.png",
+    "icon128": "lionshare-icon-128.png"
+  },
+  {
     "slug": "losslesscut",
     "name": "LosslessCut",
     "description": "GUI tool for lossless trimming / cutting of videos using ffmpeg",
@@ -3462,6 +3479,23 @@
     "icon32": "temps-icon-32.png",
     "icon64": "temps-icon-64.png",
     "icon128": "temps-icon-128.png"
+  },
+  {
+    "slug": "teseve",
+    "name": "Tèsèvè",
+    "description": "A simple static webserver, in an app.",
+    "website": "http://teseve.github.io",
+    "repository": "https://github.com/teseve/teseve",
+    "keywords": [
+      "static",
+      "server",
+      "testing"
+    ],
+    "license": "Public Domain",
+    "icon": "teseve-icon.png",
+    "icon32": "teseve-icon-32.png",
+    "icon64": "teseve-icon-64.png",
+    "icon128": "teseve-icon-128.png"
   },
   {
     "slug": "the-poker-timer",
