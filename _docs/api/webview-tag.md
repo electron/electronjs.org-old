@@ -245,7 +245,7 @@ When this attribute is present the guest page will be allowed to open new window
 ### `webpreferences`
 
 ```html
-<webview src="https://github.com" webpreferences="allowDisplayingInsecureContent, javascript=no"></webview>
+<webview src="https://github.com" webpreferences="allowRunningInsecureContent, javascript=no"></webview>
 ```
 
 A list of strings which specifies the web preferences to be set on the webview, separated by `,`. The full list of supported preference strings can be found in [BrowserWindow]({{site.baseurl}}/docs/api/browser-window#new-browserwindowoptions).

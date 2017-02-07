@@ -219,15 +219,3 @@ Once all child processes have acknowledged the `captureMonitoringSnapshot` reque
     *   `percentage` Number
 
 Get the maximum usage across processes of trace buffer as a percentage of the full state. When the TraceBufferUsage value is determined the `callback` is called.
-
-### `contentTracing.setWatchEvent(categoryName, eventName, callback)`
-
-*   `categoryName` String
-*   `eventName` String
-*   `callback` Function
-
-`callback` will be called every time the given event occurs on any process.
-
-### `contentTracing.cancelWatchEvent()`
-
-Cancel the watch event. This may lead to a race condition with the watch event callback if tracing is enabled.

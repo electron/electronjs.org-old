@@ -93,6 +93,3 @@ sort_title: memory-usage-details
 *   `count` Number
 *   `size` Number
 *   `liveSize` Number
-*   `decodedSize` Number
-*   `purgedSize` Number
-*   `purgeableSize` Number
