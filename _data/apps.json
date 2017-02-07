@@ -500,6 +500,16 @@
     "icon128": "collectie-icon-128.png"
   },
   {
+    "slug": "colorpicker",
+    "name": "ColorPicker",
+    "description": "Minimal color picker tool to get code hex and rgb code",
+    "website": "https://crea-th.at/p/colorpicker/",
+    "icon": "colorpicker-icon.png",
+    "icon32": "colorpicker-icon-32.png",
+    "icon64": "colorpicker-icon-64.png",
+    "icon128": "colorpicker-icon-128.png"
+  },
+  {
     "slug": "correo",
     "name": "Correo",
     "description": "A menubar/taskbar Gmail App for Windows, macOS and Linux.",
