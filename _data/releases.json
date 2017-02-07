@@ -484,23 +484,5 @@
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v1.3.1",
     "body": "Changelog:\n- Add `view-painted` event to `WebContent`. [#6524](https://github.com/electron/electron/pull/6524)\n- Add `proxyBypassRules` option to `ses.setProxy(config, callback)` API. [#6558](https://github.com/electron/electron/pull/6558)\n- Add support for passing typed arrays in `remote` module. [#6572](https://github.com/electron/electron/pull/6572), [#6590](https://github.com/electron/electron/pull/6590)\n- Add `contents.copyImageAt(x, y)` API. [#6619](https://github.com/electron/electron/pull/6619)\n- Fix file dialog not working with `<input>` tag on DevPanel. [brightray#238](https://github.com/electron/brightray/pull/238)\n- Fix `fs.access`/`accessSync` not working with asar archives. [#6598](https://github.com/electron/electron/pull/6598)\n- Fix LCD-text-antialiasing not working. [#6606](https://github.com/electron/electron/pull/6606)\n- Fix crash when adding project workspace in devtools. [#6613](https://github.com/electron/electron/pull/6613)\n\n**Windows**\n- Fix window position not restoring after restoring from minimized state. [#6596](https://github.com/electron/electron/pull/6596)\n- Fix crash when calling `crashReporter.start(options)` for multiple times. [#6618](https://github.com/electron/electron/pull/6618)\n- Fix invalid AppUserModelID when executable name contains spaces. [#6602](https://github.com/electron/electron/pull/6602)\n\n**macOS**\n- Add option to always highlight the tray icon. [#6620](https://github.com/electron/electron/pull/6620)\n",
     "version": "1.3.1"
-  },
-  {
-    "url": "https://api.github.com/repos/electron/electron/releases/3728925",
-    "assets_url": "https://api.github.com/repos/electron/electron/releases/3728925/assets",
-    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/3728925/assets{?name,label}",
-    "html_url": "https://github.com/electron/electron/releases/tag/v1.3.0",
-    "id": 3728925,
-    "tag_name": "v1.3.0",
-    "target_commitish": "master",
-    "name": "electron v1.3.0",
-    "draft": false,
-    "prerelease": false,
-    "created_at": "2016-07-25T03:57:10Z",
-    "published_at": "2016-07-25T05:08:44Z",
-    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v1.3.0",
-    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v1.3.0",
-    "body": "Changelog:\n- Upgrade to Chrome 52. [#6342](https://github.com/electron/electron/pull/6342)\n- Update to Node.js 6.3.0. [#6559](https://github.com/electron/electron/pull/6559)\n",
-    "version": "1.3.0"
   }
 ]
