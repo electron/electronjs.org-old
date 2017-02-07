@@ -1,5 +1,5 @@
 ---
-version: v1.5.1
+version: v1.6.0
 permalink: /docs/api/auto-updater/
 category: API
 redirect_from:

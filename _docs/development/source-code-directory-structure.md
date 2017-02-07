@@ -1,5 +1,5 @@
 ---
-version: v1.5.1
+version: v1.6.0
 permalink: /docs/development/source-code-directory-structure/
 category: Development
 redirect_from:
