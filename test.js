@@ -150,6 +150,20 @@ describe('electron.atom.io', () => {
       expect(releases.every(release => release.created_at.length > 1)).to.equal(true)
     })
 
+    it('does not include prerelease versions', () => {
+      expect(releases.every(release => release.prerelease === false)).to.equal(true)
+    })
+
+    it('does not include draft versions', () => {
+      expect(releases.every(release => release.draft === false)).to.equal(true)
+    })
+
+    it('is sorted with newer releases first', () => {
+      const versions = releases.map(release => release.version)
+      expect(semver.maxSatisfying(versions, '*')).to.equal(versions[0])
+      expect(semver.minSatisfying(versions, '*')).to.equal(versions[versions.length - 1])
+    })
+
     it('converts hashtagged issues and PR ids to hyperlinks', () => {
       const release = releases.find(release => release.tag_name === 'v1.4.14')
       expect(release.body).to.include('<a href="https://github.com/electron/electron/pull/8341">#8341</a>')
