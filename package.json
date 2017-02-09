@@ -13,6 +13,7 @@
     "link-checker": "grunt linkChecker",
     "test": "mocha && standard",
     "build": "npm-run-all build-*",
+    "build-versions": "script/versions",
     "build-releases": "script/releases",
     "build-docs": "script/docs",
     "build-awesome": "script/awesome",

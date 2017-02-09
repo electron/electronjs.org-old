@@ -1,5 +1,8 @@
 #!/usr/bin/env node
 
+// This script downloads the S3-based metadata file that includes
+// the V8, Node, and Chromium versions numbers for each Electron release.
+
 const fs = require('fs')
 const path = require('path')
 const fetchDocs = require('electron-docs')
@@ -15,13 +18,4 @@ got(versionsUrl, {json: true})
     const filepath = path.join(__dirname, '../_data/versions.json')
     console.log(`Saving version data to ${filepath}`)
     fs.writeFileSync(filepath, JSON.stringify(versions, null, 2))
-
-    const highestVersion = versions[0].version
-    return fetchDocs(highestVersion)
-  })
-  .then(docs => {
-    docs.map(doc => new Doc(doc))
-  })
-  .catch(error => {
-    throw error
   })
