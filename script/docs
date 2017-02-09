@@ -1,0 +1,19 @@
+#!/usr/bin/env node
+
+const fs = require('fs')
+const path = require('path')
+const fetchDocs = require('electron-docs')
+const Doc = require('../lib/doc')
+const got = require('got')
+const semver = require('semver')
+const highestVersion = require('../_data/releases.json')[0].version
+
+console.log(`Fetching docs for Electron ${highestVersion}`)
+
+fetchDocs(highestVersion)
+  .then(docs => {
+    docs.map(doc => new Doc(doc))
+  })
+  .catch(error => {
+    throw error
+  })
