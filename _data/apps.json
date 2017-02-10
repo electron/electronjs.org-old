@@ -1111,6 +1111,22 @@
     "icon128": "foco-icon-128.png"
   },
   {
+    "slug": "fog",
+    "name": "Fog",
+    "description": "Unofficial overcast.fm podcast app.",
+    "website": "https://github.com/vitorgalvao/fog",
+    "repository": "https://github.com/vitorgalvao/fog",
+    "keywords": [
+      "overcast.fm",
+      "podcasts"
+    ],
+    "license": "Unlicense",
+    "icon": "fog-icon.png",
+    "icon32": "fog-icon-32.png",
+    "icon64": "fog-icon-64.png",
+    "icon128": "fog-icon-128.png"
+  },
+  {
     "slug": "forestpin-analytics",
     "name": "Forestpin Analytics",
     "description": "Financial data analytics tool for businesses",
