@@ -132,6 +132,25 @@
     "icon128": "anote-icon-128.png"
   },
   {
+    "slug": "appear-in",
+    "name": "appear.in",
+    "description": "Unofficial appear.in app.",
+    "website": "https://github.com/vitorgalvao/appear.in",
+    "repository": "https://github.com/vitorgalvao/appear.in",
+    "keywords": [
+      "appear.in",
+      "chat",
+      "conference",
+      "video",
+      "webrtc"
+    ],
+    "license": "Unlicense",
+    "icon": "appear-in-icon.png",
+    "icon32": "appear-in-icon-32.png",
+    "icon64": "appear-in-icon-64.png",
+    "icon128": "appear-in-icon-128.png"
+  },
+  {
     "slug": "argo",
     "name": "Argo",
     "description": "An open source trading platform",
