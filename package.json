@@ -5,12 +5,13 @@
   "description": "The [website](http://electron.atom.io) for [Electron](https://github.com/electron/electron).",
   "repository": "https://github.com/electron/electron.atom.io",
   "homepage": "http://electron.atom.io",
-  "author": "GitHub",
+  "author": "Electron Bot <kevin+electronbot@github.com>",
   "license": "MIT",
   "scripts": {
     "start": "script/server",
     "bootstrap": "script/bootstrap",
     "link-checker": "grunt linkChecker",
+    "lint": "standard",
     "test": "mocha && standard",
     "build": "npm-run-all build-*",
     "build-releases": "script/releases",
@@ -18,15 +19,17 @@
     "build-awesome": "script/awesome",
     "build-userland": "script/userland",
     "build-apps": "script/apps",
-    "release": "script/release"
+    "deploy": "node script/deploy.js"
   },
   "devDependencies": {
     "awesome-electron": "^2.5.0",
     "chai": "^3.5.0",
     "cheerio": "^0.22.0",
+    "dotenv": "^4.0.0",
     "electron-apps": "github:electron/electron-apps",
     "electron-docs": "^3.0.0",
     "electron-userland-reports": "1.6.0",
+    "github-url-to-object": "^3.0.0",
     "got": "^6.6.3",
     "gray-matter": "^2.1.0",
     "grunt": "^0.4.5",
@@ -36,15 +39,19 @@
     "marky-markdown-lite": "^1.2.0",
     "mocha": "^3.2.0",
     "npm-run-all": "^3.1.2",
+    "request": "^2.79.0",
     "require-dir": "^0.3.1",
     "semver": "^5.3.0",
+    "slack-notify": "^0.1.6",
     "standard": "^8.6.0",
     "titlecase": "^1.0.2",
+    "tmp": "^0.0.31",
     "to-markdown": "github:zeke/to-markdown#support-markdown-it-gfm"
   },
   "standard": {
     "env": {
-      "mocha": true
+      "mocha": true,
+      "shelljs": true
     },
     "ignore": [
       "/js/vendor"
