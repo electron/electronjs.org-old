@@ -1826,13 +1826,16 @@
   {
     "slug": "jasper",
     "name": "Jasper",
-    "description": "The Issue Reader for GitHub",
+    "description": "A flexible and powerful issue reader for GitHub",
     "website": "https://jasperapp.io",
     "repository": "https://github.com/jasperapp/jasper",
     "keywords": [
       "github",
       "issue",
       "reader",
+      "tracker",
+      "notification",
+      "browser",
       "developer tool"
     ],
     "icon": "jasper-icon.png",
