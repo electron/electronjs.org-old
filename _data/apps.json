@@ -1826,13 +1826,16 @@
   {
     "slug": "jasper",
     "name": "Jasper",
-    "description": "The Issue Reader for GitHub",
+    "description": "A flexible and powerful issue reader for GitHub",
     "website": "https://jasperapp.io",
     "repository": "https://github.com/jasperapp/jasper",
     "keywords": [
       "github",
       "issue",
       "reader",
+      "tracker",
+      "notification",
+      "browser",
       "developer tool"
     ],
     "icon": "jasper-icon.png",
@@ -3964,6 +3967,28 @@
     "icon128": "whale-icon-128.png"
   },
   {
+    "slug": "whatever",
+    "name": "Whatever",
+    "description": "Unofficial Evernote client for Linux desktop",
+    "website": "https://github.com/CellarD0-0r/whatever",
+    "repository": "https://github.com/CellarD0-0r/whatever",
+    "keywords": [
+      "Evernote",
+      "Electron",
+      "client",
+      "note",
+      "notes",
+      "linux",
+      "ubuntu",
+      "desktop"
+    ],
+    "license": "MIT",
+    "icon": "whatever-icon.png",
+    "icon32": "whatever-icon-32.png",
+    "icon64": "whatever-icon-64.png",
+    "icon128": "whatever-icon-128.png"
+  },
+  {
     "slug": "wheredat",
     "name": "WhereDat",
     "description": "Search your business apps simultaneously",
@@ -3982,6 +4007,14 @@
     "name": "Wire",
     "description": "Modern, private communications",
     "website": "https://wire.com",
+    "repository": "https://github.com/wireapp",
+    "keywords": [
+      "communication",
+      "privacy",
+      "security",
+      "messenger",
+      "messaging"
+    ],
     "icon": "wire-icon.png",
     "icon32": "wire-icon-32.png",
     "icon64": "wire-icon-64.png",
