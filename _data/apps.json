@@ -214,6 +214,22 @@
     "icon128": "batcave-icon-128.png"
   },
   {
+    "slug": "bdash",
+    "name": "Bdash",
+    "description": "Simple business intelligence application.",
+    "website": "https://github.com/bdash-app/bdash",
+    "repository": "https://github.com/bdash-app/bdash",
+    "keywords": [
+      "SQL",
+      "visualization"
+    ],
+    "license": "MIT",
+    "icon": "bdash-icon.png",
+    "icon32": "bdash-icon-32.png",
+    "icon64": "bdash-icon-64.png",
+    "icon128": "bdash-icon-128.png"
+  },
+  {
     "slug": "beaker-browser",
     "name": "Beaker Browser",
     "description": "An experimental P2P browser",
@@ -2200,6 +2216,29 @@
     "icon32": "minta-icon-32.png",
     "icon64": "minta-icon-64.png",
     "icon128": "minta-icon-128.png"
+  },
+  {
+    "slug": "missive",
+    "name": "Missive",
+    "description": "The one app for team email and chat.",
+    "website": "https://missiveapp.com",
+    "keywords": [
+      "team",
+      "shared",
+      "emails",
+      "chat",
+      "tasks",
+      "work",
+      "assignment",
+      "management",
+      "gmail",
+      "mac",
+      "windows"
+    ],
+    "icon": "missive-icon.png",
+    "icon32": "missive-icon-32.png",
+    "icon64": "missive-icon-64.png",
+    "icon128": "missive-icon-128.png"
   },
   {
     "slug": "mixmax",
