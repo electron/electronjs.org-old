@@ -111,7 +111,7 @@ If you want to control the guest content in any way, you can write JavaScript th
 ```html
 <script>
   onload = () => {
-    const webview = document.querySelector('webview')
+    const webview = document.getElementById('foo')
     const indicator = document.querySelector('.indicator')
 
     const loadstart = () => {
@@ -168,10 +168,10 @@ The `src` attribute can also accept data URLs, such as `data:text/plain,Hello, w
 ### `autosize`
 
 ```html
-<webview src="https://www.github.com/" autosize minwidth="576" minheight="432"></webview>
+<webview src="https://www.github.com/" autosize="on" minwidth="576" minheight="432"></webview>
 ```
 
-When this attribute is present the `webview` container will automatically resize within the bounds specified by the attributes `minwidth`, `minheight`, `maxwidth`, and `maxheight`. These constraints do not impact the `webview` unless `autosize` is enabled. When `autosize` is enabled, the `webview` container size cannot be less than the minimum values or greater than the maximum.
+If "on", the `webview` container will automatically resize within the bounds specified by the attributes `minwidth`, `minheight`, `maxwidth`, and `maxheight`. These constraints do not impact the `webview` unless `autosize` is enabled. When `autosize` is enabled, the `webview` container size cannot be less than the minimum values or greater than the maximum.
 
 ### `nodeintegration`
 
@@ -179,7 +179,7 @@ When this attribute is present the `webview` container will automatically resize
 <webview src="http://www.google.com/" nodeintegration></webview>
 ```
 
-When this attribute is present the guest page in `webview` will have node integration and can use node APIs like `require` and `process` to access low level system resources. Node integration is disabled by default in the guest page.
+If "on", the guest page in `webview` will have node integration and can use node APIs like `require` and `process` to access low level system resources.
 
 ### `plugins`
 
@@ -187,7 +187,7 @@ When this attribute is present the guest page in `webview` will have node integr
 <webview src="https://www.github.com/" plugins></webview>
 ```
 
-When this attribute is present the guest page in `webview` will be able to use browser plugins. Plugins are disabled by default.
+If "on", the guest page in `webview` will be able to use browser plugins.
 
 ### `preload`
 
@@ -221,7 +221,7 @@ Sets the user agent for the guest page before the page is navigated to. Once the
 <webview src="https://www.github.com/" disablewebsecurity></webview>
 ```
 
-When this attribute is present the guest page will have web security disabled. Web security is enabled by default.
+If "on", the guest page will have web security disabled.
 
 ### `partition`
 
@@ -240,12 +240,12 @@ This value can only be modified before the first navigation, since the session o
 <webview src="https://www.github.com/" allowpopups></webview>
 ```
 
-When this attribute is present the guest page will be allowed to open new windows. Popups are disabled by default.
+If "on", the guest page will be allowed to open new windows.
 
 ### `webpreferences`
 
 ```html
-<webview src="https://github.com" webpreferences="allowRunningInsecureContent, javascript=no"></webview>
+<webview src="https://github.com" webpreferences="allowDisplayingInsecureContent, javascript=no"></webview>
 ```
 
 A list of strings which specifies the web preferences to be set on the webview, separated by `,`. The full list of supported preference strings can be found in [BrowserWindow]({{site.baseurl}}/docs/api/browser-window#new-browserwindowoptions).
@@ -284,7 +284,7 @@ The existing webview will see the `destroy` event and will then create a new web
 <webview src="https://www.github.com/" disableguestresize></webview>
 ```
 
-When this attribute is present the `webview` contents will be prevented from resizing when the `webview` element itself is resized.
+Prevents the webview contents from resizing when the webview element itself is resized.
 
 This can be used in combination with [`webContents.setSize`]({{site.baseurl}}/docs/api/web-contents#contentssetsizeoptions) to manually resize the webview contents in reaction to a window size change. This can make resizing faster compared to relying on the webview element bounds to automatically resize the contents.
 
@@ -320,7 +320,7 @@ The `webview` tag has the following methods:
 **Example**
 
 ```javascript
-const webview = document.querySelector('webview')
+const webview = document.getElementById('foo')
 webview.addEventListener('dom-ready', () => {
   webview.openDevTools()
 })
@@ -705,7 +705,7 @@ Fired when the guest window logs a console message.
 The following example code forwards all log messages to the embedder's console without regard for log level or other properties.
 
 ```javascript
-const webview = document.querySelector('webview')
+const webview = document.getElementById('foo')
 webview.addEventListener('console-message', (e) => {
   console.log('Guest page logged a message:', e.message)
 })
@@ -724,7 +724,7 @@ Returns:
 Fired when a result is available for [`webview.findInPage`]({{site.baseurl}}/docs/api/webview-tag#webviewtagfindinpage) request.
 
 ```javascript
-const webview = document.querySelector('webview')
+const webview = document.getElementById('foo')
 webview.addEventListener('found-in-page', (e) => {
   webview.stopFindInPage('keepSelection')
 })
@@ -748,7 +748,7 @@ The following example code opens the new url in system's default browser.
 
 ```javascript
 const {shell} = require('electron')
-const webview = document.querySelector('webview')
+const webview = document.getElementById('foo')
 
 webview.addEventListener('new-window', (e) => {
   const protocol = require('url').parse(e.url).protocol
@@ -800,7 +800,7 @@ Fired when the guest page attempts to close itself.
 The following example code navigates the `webview` to `about:blank` when the guest attempts to close itself.
 
 ```javascript
-const webview = document.querySelector('webview')
+const webview = document.getElementById('foo')
 webview.addEventListener('close', () => {
   webview.src = 'about:blank'
 })
@@ -819,7 +819,7 @@ With `sendToHost` method and `ipc-message` event you can easily communicate betw
 
 ```javascript
 // In embedder page.
-const webview = document.querySelector('webview')
+const webview = document.getElementById('foo')
 webview.addEventListener('ipc-message', (event) => {
   console.log(event.channel)
   // Prints "pong"

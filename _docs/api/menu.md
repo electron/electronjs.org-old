@@ -218,9 +218,6 @@ const template = [
         role: 'reload'
       },
       {
-        role: 'forcereload'
-      },
-      {
         role: 'toggledevtools'
       },
       {

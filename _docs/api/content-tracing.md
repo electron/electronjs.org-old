@@ -98,26 +98,22 @@ Process: [Main]({{site.baseurl}}/docs/glossary#main-process)
 
 This module does not include a web interface so you need to open `chrome://tracing/` in a Chrome browser and load the generated file to view the result.
 
-**Note:** You should not use this module until the `ready` event of the app module is emitted.
-
 ```javascript
-const {app, contentTracing} = require('electron')
+const {contentTracing} = require('electron')
 
-app.on('ready', () => {
-  const options = {
-    categoryFilter: '*',
-    traceOptions: 'record-until-full,enable-sampling'
-  }
+const options = {
+  categoryFilter: '*',
+  traceOptions: 'record-until-full,enable-sampling'
+}
 
-  contentTracing.startRecording(options, () => {
-    console.log('Tracing started')
+contentTracing.startRecording(options, () => {
+  console.log('Tracing started')
 
-    setTimeout(() => {
-      contentTracing.stopRecording('', (path) => {
-        console.log('Tracing data recorded to ' + path)
-      })
-    }, 5000)
-  })
+  setTimeout(() => {
+    contentTracing.stopRecording('', (path) => {
+      console.log('Tracing data recorded to ' + path)
+    })
+  }, 5000)
 })
 ```
 
@@ -161,7 +157,7 @@ Examples:
 *   `enable-sampling`
 *   `enable-systrace`
 
-The first 3 options are trace recording modes and hence mutually exclusive. If more than one trace recording modes appear in the `traceOptions` string, the last one takes precedence. If none of the trace recording modes are specified, recording mode is `record-until-full`.
+The first 3 options are trace recoding modes and hence mutually exclusive. If more than one trace recording modes appear in the `traceOptions` string, the last one takes precedence. If none of the trace recording modes are specified, recording mode is `record-until-full`.
 
 The trace option will first be reset to the default option (`record_mode` set to `record-until-full`, `enable_sampling` and `enable_systrace` set to `false`) before options parsed from `traceOptions` are applied on it.
 
@@ -219,3 +215,15 @@ Once all child processes have acknowledged the `captureMonitoringSnapshot` reque
     *   `percentage` Number
 
 Get the maximum usage across processes of trace buffer as a percentage of the full state. When the TraceBufferUsage value is determined the `callback` is called.
+
+### `contentTracing.setWatchEvent(categoryName, eventName, callback)`
+
+*   `categoryName` String
+*   `eventName` String
+*   `callback` Function
+
+`callback` will be called every time the given event occurs on any process.
+
+### `contentTracing.cancelWatchEvent()`
+
+Cancel the watch event. This may lead to a race condition with the watch event callback if tracing is enabled.
