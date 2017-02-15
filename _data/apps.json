@@ -1987,6 +1987,28 @@
     "icon128": "laverna-icon-128.png"
   },
   {
+    "slug": "lepton",
+    "name": "Lepton",
+    "description": "Open-source snippet manager powered by GitHub Gist.",
+    "website": "http://hackjutsu.com/Lepton/",
+    "repository": "https://github.com/hackjutsu/Lepton.git",
+    "keywords": [
+      "gist",
+      "snippet",
+      "github",
+      "note",
+      "markdown",
+      "productivity",
+      "code",
+      "CodeMirror"
+    ],
+    "license": "MIT",
+    "icon": "lepton-icon.png",
+    "icon32": "lepton-icon-32.png",
+    "icon64": "lepton-icon-64.png",
+    "icon128": "lepton-icon-128.png"
+  },
+  {
     "slug": "light-table",
     "name": "Light Table",
     "description": "The next generation code editor",
