@@ -5,20 +5,12 @@ const path = require('path')
 const fetchDocs = require('electron-docs')
 const Doc = require('../lib/doc')
 const got = require('got')
-const versionsUrl = 'https://atom.io/download/electron/index.json'
+const semver = require('semver')
+const highestVersion = require('../_data/releases.json')[0].version
 
-console.log(`Downloading version data from ${versionsUrl}`)
+console.log(`Fetching docs for Electron ${highestVersion}`)
 
-got(versionsUrl, {json: true})
-  .then(response => {
-    const versions = response.body
-    const filepath = path.join(__dirname, '../_data/versions.json')
-    console.log(`Saving version data to ${filepath}`)
-    fs.writeFileSync(filepath, JSON.stringify(versions, null, 2))
-
-    const highestVersion = versions[0].version
-    return fetchDocs(highestVersion)
-  })
+fetchDocs(highestVersion)
   .then(docs => {
     docs.map(doc => new Doc(doc))
   })

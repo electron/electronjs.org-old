@@ -1,0 +1,21 @@
+#!/usr/bin/env node
+
+// This script downloads the S3-based metadata file that includes
+// the V8, Node, and Chromium versions numbers for each Electron release.
+
+const fs = require('fs')
+const path = require('path')
+const fetchDocs = require('electron-docs')
+const Doc = require('../lib/doc')
+const got = require('got')
+const versionsUrl = 'https://atom.io/download/electron/index.json'
+
+console.log(`Downloading version data from ${versionsUrl}`)
+
+got(versionsUrl, {json: true})
+  .then(response => {
+    const versions = response.body
+    const filepath = path.join(__dirname, '../_data/versions.json')
+    console.log(`Saving version data to ${filepath}`)
+    fs.writeFileSync(filepath, JSON.stringify(versions, null, 2))
+  })

@@ -15,6 +15,12 @@ git config user.email "kevin+electronbot@github.com"
 git config user.name "Electron Bot"
 
 # run each build script independently and commit changes atomically
+npm run build-versions
+if [[ $(git status --porcelain) != "" ]]; then
+  git add .
+  git commit -avm "update versions"
+fi
+
 npm run build-releases
 if [[ $(git status --porcelain) != "" ]]; then
   git add .

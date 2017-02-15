@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 
-var fs = require('fs')
-var request = require('request')
-
-var token = process.env.ATOM_ACCESS_TOKEN || 'da809a6077bb1b0aa7c5623f7b2d5f1fec2faae4'
-var options = {
+const fs = require('fs')
+const request = require('request')
+const semver = require('semver')
+const token = process.env.ATOM_ACCESS_TOKEN || 'da809a6077bb1b0aa7c5623f7b2d5f1fec2faae4'
+const options = {
   url: 'https://api.github.com/repos/electron/electron/releases',
   json: true,
   headers: {
@@ -13,14 +13,13 @@ var options = {
   }
 }
 
-request(options, function (error, response, body) {
+request(options, (error, response, body) => {
   if (error) return console.log(error)
-  if (response.statusCode == 200) {
-    body = body.filter(function (release) {
-      return !release.draft && !release.prerelease
-    })
+  if (response.statusCode !== 200) return console.error(response)
 
-    body.forEach(function (release) {
+  const releases = body
+    .filter(release => !(release.draft || release.prerelease))
+    .map(release => {
       release.version = release.tag_name.substring(1)
       delete release.assets
       delete release.author
@@ -30,7 +29,9 @@ request(options, function (error, response, body) {
         / #(\d+)$/gm,
         ' <a href="https://github.com/electron/electron/pull/$1">#$1</a>'
       )
+      return release
     })
-    fs.writeFileSync('_data/releases.json', JSON.stringify(body, null, 2))
-  }
+    .sort((a, b) => semver.compare(b.version, a.version))
+
+  fs.writeFileSync('_data/releases.json', JSON.stringify(releases, null, 2))
 })
