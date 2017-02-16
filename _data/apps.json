@@ -96,23 +96,6 @@
     "icon128": "amium-icon-128.png"
   },
   {
-    "slug": "anatine",
-    "name": "Anatine",
-    "description": "Pristine Twitter app",
-    "website": "https://github.com/sindresorhus/anatine",
-    "repository": "https://github.com/sindresorhus/anatine",
-    "keywords": [
-      "social",
-      "news",
-      "twitter"
-    ],
-    "license": "MIT",
-    "icon": "anatine-icon.png",
-    "icon32": "anatine-icon-32.png",
-    "icon64": "anatine-icon-64.png",
-    "icon128": "anatine-icon-128.png"
-  },
-  {
     "slug": "anote",
     "name": "ANote",
     "description": "A Simple Friendly Markdown Note.",
