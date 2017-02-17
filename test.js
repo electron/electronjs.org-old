@@ -64,6 +64,11 @@ describe('electron.atom.io', () => {
       expect(doc).to.include('(Object &#124; String)')
     })
 
+    it('adds a warning comment so people know to edit docs on the electron/electron repo', () => {
+      const doc = loadDoc('api/browser-window.md')
+      expect(doc).to.include('This file is generated automatically')
+    })
+
     describe('frontmatter', () => {
       const frontmatter = matter(loadDoc('api/app.md')).data
       it('has a semver version', () => {
