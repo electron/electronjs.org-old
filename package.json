@@ -19,7 +19,7 @@
     "build-awesome": "script/awesome",
     "build-userland": "script/userland",
     "build-apps": "script/apps",
-    "release": "script/release |& script/notify"
+    "release": "script/release 2>&1 | script/notify"
   },
   "devDependencies": {
     "awesome-electron": "^2.5.0",
