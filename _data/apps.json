@@ -7,7 +7,15 @@
     "icon": "1clipboard-icon.png",
     "icon32": "1clipboard-icon-32.png",
     "icon64": "1clipboard-icon-64.png",
-    "icon128": "1clipboard-icon-128.png"
+    "icon128": "1clipboard-icon-128.png",
+    "date": "2016-03-31",
+    "iconColors": [
+      "#14538b",
+      "#eff0f1",
+      "#6b88a7",
+      "#849cb4",
+      "#8c9cb4"
+    ]
   },
   {
     "slug": "5eclient",
@@ -21,7 +29,15 @@
     "icon": "5eclient-icon.png",
     "icon32": "5eclient-icon-32.png",
     "icon64": "5eclient-icon-64.png",
-    "icon128": "5eclient-icon-128.png"
+    "icon128": "5eclient-icon-128.png",
+    "date": "2016-08-25",
+    "iconColors": [
+      "#c49f6f",
+      "#3a2f32",
+      "#816847",
+      "#989494",
+      "#8c8a8c"
+    ]
   },
   {
     "slug": "abricotine",
@@ -31,7 +47,15 @@
     "icon": "abricotine-icon.png",
     "icon32": "abricotine-icon-32.png",
     "icon64": "abricotine-icon-64.png",
-    "icon128": "abricotine-icon-128.png"
+    "icon128": "abricotine-icon-128.png",
+    "date": "2016-01-26",
+    "iconColors": [
+      "#fc6404",
+      "#fca404",
+      "#fc3b04",
+      "#fc8004",
+      "#fc8c04"
+    ]
   },
   {
     "slug": "aipo-com",
@@ -41,7 +65,15 @@
     "icon": "aipo-com-icon.png",
     "icon32": "aipo-com-icon-32.png",
     "icon64": "aipo-com-icon-64.png",
-    "icon128": "aipo-com-icon-128.png"
+    "icon128": "aipo-com-icon-128.png",
+    "date": "2016-05-02",
+    "iconColors": [
+      "#fc9d07",
+      "#fbfbfb",
+      "#ecca95",
+      "#c2c2c2",
+      "#cccccc"
+    ]
   },
   {
     "slug": "airtame",
@@ -59,7 +91,40 @@
     "icon": "airtame-icon.png",
     "icon32": "airtame-icon-32.png",
     "icon64": "airtame-icon-64.png",
-    "icon128": "airtame-icon-128.png"
+    "icon128": "airtame-icon-128.png",
+    "date": "2016-10-27",
+    "iconColors": [
+      "#fbfbfb",
+      "#0d94fc",
+      "#a1c9fc",
+      "#c4ddfc",
+      "#cccccc"
+    ]
+  },
+  {
+    "slug": "aiting",
+    "name": "AiTing",
+    "description": "A simple and beautiful music and book player.",
+    "website": "https://renhongl.github.io/2017/01/21/%E7%88%B1%E5%90%AC%E6%92%AD%E6%94%BE%E5%99%A8/",
+    "repository": "https://github.com/renhongl/AiTing",
+    "keywords": [
+      "player",
+      "music",
+      "book"
+    ],
+    "license": "MIT",
+    "icon": "aiting-icon.png",
+    "icon32": "aiting-icon-32.png",
+    "icon64": "aiting-icon-64.png",
+    "icon128": "aiting-icon-128.png",
+    "date": "2017-02-14",
+    "iconColors": [
+      "#c1d0ba",
+      "#242523",
+      "#5c5b53",
+      "#798076",
+      "#616464"
+    ]
   },
   {
     "slug": "alduin",
@@ -78,7 +143,15 @@
     "icon": "alduin-icon.png",
     "icon32": "alduin-icon-32.png",
     "icon64": "alduin-icon-64.png",
-    "icon128": "alduin-icon-128.png"
+    "icon128": "alduin-icon-128.png",
+    "date": "2016-11-17",
+    "iconColors": [
+      "#3d1814",
+      "#a33e21",
+      "#7d2b1d",
+      "#642c14",
+      "#5e2319"
+    ]
   },
   {
     "slug": "amium",
@@ -93,7 +166,15 @@
     "icon": "amium-icon.png",
     "icon32": "amium-icon-32.png",
     "icon64": "amium-icon-64.png",
-    "icon128": "amium-icon-128.png"
+    "icon128": "amium-icon-128.png",
+    "date": "2016-09-22",
+    "iconColors": [
+      "#fcfbfb",
+      "#fc746c",
+      "#fcbcb4",
+      "#fca9a3",
+      "#fc948c"
+    ]
   },
   {
     "slug": "anatine",
@@ -110,7 +191,15 @@
     "icon": "anatine-icon.png",
     "icon32": "anatine-icon-32.png",
     "icon64": "anatine-icon-64.png",
-    "icon128": "anatine-icon-128.png"
+    "icon128": "anatine-icon-128.png",
+    "date": "2016-06-01",
+    "iconColors": [
+      "#2ca4ec",
+      "#fbfbfb",
+      "#a1c0d3",
+      "#c4c4c4",
+      "#cccccc"
+    ]
   },
   {
     "slug": "anote",
@@ -129,7 +218,15 @@
     "icon": "anote-icon.png",
     "icon32": "anote-icon-32.png",
     "icon64": "anote-icon-64.png",
-    "icon128": "anote-icon-128.png"
+    "icon128": "anote-icon-128.png",
+    "date": "2016-09-21",
+    "iconColors": [
+      "#fbefef",
+      "#f10404",
+      "#f65e5e",
+      "#f87c7c",
+      "#f43c3c"
+    ]
   },
   {
     "slug": "appear-in",
@@ -148,7 +245,15 @@
     "icon": "appear-in-icon.png",
     "icon32": "appear-in-icon-32.png",
     "icon64": "appear-in-icon-64.png",
-    "icon128": "appear-in-icon-128.png"
+    "icon128": "appear-in-icon-128.png",
+    "date": "2017-02-10",
+    "iconColors": [
+      "#fc2c64",
+      "#fbfbfb",
+      "#44cc8c",
+      "#ff50b0",
+      "#ff50b0"
+    ]
   },
   {
     "slug": "argo",
@@ -158,12 +263,20 @@
     "icon": "argo-icon.png",
     "icon32": "argo-icon-32.png",
     "icon64": "argo-icon-64.png",
-    "icon128": "argo-icon-128.png"
+    "icon128": "argo-icon-128.png",
+    "date": "2016-02-23",
+    "iconColors": [
+      "#9fbeb7",
+      "#141717",
+      "#ee5c54",
+      "#f9645c",
+      "#eceeee"
+    ]
   },
   {
     "slug": "atom",
     "name": "Atom",
-    "description": "A hackable text editor for the 21 st Century",
+    "description": "A hackable text editor for the 21st Century",
     "website": "https://atom.io",
     "repository": "https://github.com/atom/atom",
     "keywords": [
@@ -178,7 +291,15 @@
     "icon": "atom-icon.png",
     "icon32": "atom-icon-32.png",
     "icon64": "atom-icon-64.png",
-    "icon128": "atom-icon-128.png"
+    "icon128": "atom-icon-128.png",
+    "date": "2015-04-06",
+    "iconColors": [
+      "#645c5c",
+      "#685c5c",
+      "#685c5c",
+      "#685c5c",
+      "#685c5c"
+    ]
   },
   {
     "slug": "avocode",
@@ -188,7 +309,15 @@
     "icon": "avocode-icon.png",
     "icon32": "avocode-icon-32.png",
     "icon64": "avocode-icon-64.png",
-    "icon128": "avocode-icon-128.png"
+    "icon128": "avocode-icon-128.png",
+    "date": "2015-04-08",
+    "iconColors": [
+      "#fbfbfb",
+      "#42d807",
+      "#95f60c",
+      "#a7e997",
+      "#c6f7a5"
+    ]
   },
   {
     "slug": "basecamp-3",
@@ -201,7 +330,15 @@
     "icon": "basecamp-3-icon.png",
     "icon32": "basecamp-3-icon-32.png",
     "icon64": "basecamp-3-icon-64.png",
-    "icon128": "basecamp-3-icon-128.png"
+    "icon128": "basecamp-3-icon-128.png",
+    "date": "2016-05-11",
+    "iconColors": [
+      "#73c364",
+      "#bbdcf4",
+      "#080c07",
+      "#1aac4a",
+      "#9cccbf"
+    ]
   },
   {
     "slug": "batcave",
@@ -211,7 +348,15 @@
     "icon": "batcave-icon.png",
     "icon32": "batcave-icon-32.png",
     "icon64": "batcave-icon-64.png",
-    "icon128": "batcave-icon-128.png"
+    "icon128": "batcave-icon-128.png",
+    "date": "2017-01-14",
+    "iconColors": [
+      "#1b1b1b",
+      "#a61304",
+      "#520e07",
+      "#040404",
+      "#38140f"
+    ]
   },
   {
     "slug": "bdash",
@@ -227,7 +372,15 @@
     "icon": "bdash-icon.png",
     "icon32": "bdash-icon-32.png",
     "icon64": "bdash-icon-64.png",
-    "icon128": "bdash-icon-128.png"
+    "icon128": "bdash-icon-128.png",
+    "date": "2017-02-14",
+    "iconColors": [
+      "#64b91c",
+      "#f9faf9",
+      "#95d334",
+      "#adcea5",
+      "#16a004"
+    ]
   },
   {
     "slug": "beaker-browser",
@@ -238,7 +391,15 @@
     "icon": "beaker-browser-icon.png",
     "icon32": "beaker-browser-icon-32.png",
     "icon64": "beaker-browser-icon-64.png",
-    "icon128": "beaker-browser-icon-128.png"
+    "icon128": "beaker-browser-icon-128.png",
+    "date": "2016-10-26",
+    "iconColors": [
+      "#056cdc",
+      "#f8f9fb",
+      "#5c95e5",
+      "#84acec",
+      "#7cacec"
+    ]
   },
   {
     "slug": "bearychat",
@@ -248,7 +409,15 @@
     "icon": "bearychat-icon.png",
     "icon32": "bearychat-icon-32.png",
     "icon64": "bearychat-icon-64.png",
-    "icon128": "bearychat-icon-128.png"
+    "icon128": "bearychat-icon-128.png",
+    "date": "2016-04-12",
+    "iconColors": [
+      "#2cbc64",
+      "#f8fbf9",
+      "#7ad499",
+      "#9ddfb4",
+      "#94dcb4"
+    ]
   },
   {
     "slug": "bitbloq",
@@ -267,7 +436,15 @@
     "icon": "bitbloq-icon.png",
     "icon32": "bitbloq-icon-32.png",
     "icon64": "bitbloq-icon-64.png",
-    "icon128": "bitbloq-icon-128.png"
+    "icon128": "bitbloq-icon-128.png",
+    "date": "2016-05-12",
+    "iconColors": [
+      "#94c41c",
+      "#f7f9f0",
+      "#accc4a",
+      "#c4dc7c",
+      "#a4cc3c"
+    ]
   },
   {
     "slug": "bitcrypt",
@@ -284,7 +461,15 @@
     "icon": "bitcrypt-icon.png",
     "icon32": "bitcrypt-icon-32.png",
     "icon64": "bitcrypt-icon-64.png",
-    "icon128": "bitcrypt-icon-128.png"
+    "icon128": "bitcrypt-icon-128.png",
+    "date": "2016-07-08",
+    "iconColors": [
+      "#3591db",
+      "#22273f",
+      "#3b6198",
+      "#384c80",
+      "#4864ac"
+    ]
   },
   {
     "slug": "blankup",
@@ -300,7 +485,15 @@
     "icon": "blankup-icon.png",
     "icon32": "blankup-icon-32.png",
     "icon64": "blankup-icon-64.png",
-    "icon128": "blankup-icon-128.png"
+    "icon128": "blankup-icon-128.png",
+    "date": "2016-08-04",
+    "iconColors": [
+      "#1b1464",
+      "#0474bc",
+      "#0c4c94",
+      "#100a35",
+      "#0454a4"
+    ]
   },
   {
     "slug": "booker",
@@ -317,7 +510,15 @@
     "icon": "booker-icon.png",
     "icon32": "booker-icon-32.png",
     "icon64": "booker-icon-64.png",
-    "icon128": "booker-icon-128.png"
+    "icon128": "booker-icon-128.png",
+    "date": "2016-07-08",
+    "iconColors": [
+      "#a5c149",
+      "#fafafa",
+      "#b5c38a",
+      "#7a874f",
+      "#ccda92"
+    ]
   },
   {
     "slug": "boost",
@@ -327,7 +528,15 @@
     "icon": "boost-icon.png",
     "icon32": "boost-icon-32.png",
     "icon64": "boost-icon-64.png",
-    "icon128": "boost-icon-128.png"
+    "icon128": "boost-icon-128.png",
+    "date": "2015-11-15",
+    "iconColors": [
+      "#f7f9f8",
+      "#04ad6f",
+      "#04bc83",
+      "#58a587",
+      "#7cc4ac"
+    ]
   },
   {
     "slug": "brave-browser",
@@ -337,7 +546,15 @@
     "icon": "brave-browser-icon.png",
     "icon32": "brave-browser-icon-32.png",
     "icon64": "brave-browser-icon-64.png",
-    "icon128": "brave-browser-icon-128.png"
+    "icon128": "brave-browser-icon-128.png",
+    "date": "2016-03-18",
+    "iconColors": [
+      "#fbfaf9",
+      "#f36831",
+      "#fbb534",
+      "#ec2904",
+      "#f49a83"
+    ]
   },
   {
     "slug": "caprine",
@@ -356,7 +573,15 @@
     "icon": "caprine-icon.png",
     "icon32": "caprine-icon-32.png",
     "icon64": "caprine-icon-64.png",
-    "icon128": "caprine-icon-128.png"
+    "icon128": "caprine-icon-128.png",
+    "date": "2016-04-22",
+    "iconColors": [
+      "#2ba3f2",
+      "#f9fbfc",
+      "#4cd4fc",
+      "#81c9f6",
+      "#095ab2"
+    ]
   },
   {
     "slug": "caret",
@@ -366,7 +591,15 @@
     "icon": "caret-icon.png",
     "icon32": "caret-icon-32.png",
     "icon64": "caret-icon-64.png",
-    "icon128": "caret-icon-128.png"
+    "icon128": "caret-icon-128.png",
+    "date": "2015-11-23",
+    "iconColors": [
+      "#232323",
+      "#f5f5f5",
+      "#449aec",
+      "#707070",
+      "#8c8c8c"
+    ]
   },
   {
     "slug": "catlight",
@@ -376,7 +609,15 @@
     "icon": "catlight-icon.png",
     "icon32": "catlight-icon-32.png",
     "icon64": "catlight-icon-64.png",
-    "icon128": "catlight-icon-128.png"
+    "icon128": "catlight-icon-128.png",
+    "date": "2016-03-16",
+    "iconColors": [
+      "#15263a",
+      "#f9cb24",
+      "#788084",
+      "#947c1c",
+      "#8c949c"
+    ]
   },
   {
     "slug": "cerebro",
@@ -393,7 +634,15 @@
     "icon": "cerebro-icon.png",
     "icon32": "cerebro-icon-32.png",
     "icon64": "cerebro-icon-64.png",
-    "icon128": "cerebro-icon-128.png"
+    "icon128": "cerebro-icon-128.png",
+    "date": "2017-01-24",
+    "iconColors": [
+      "#f8f7f9",
+      "#44395a",
+      "#986aeb",
+      "#747474",
+      "#7c7c7c"
+    ]
   },
   {
     "slug": "chatwork",
@@ -412,7 +661,15 @@
     "icon": "chatwork-icon.png",
     "icon32": "chatwork-icon-32.png",
     "icon64": "chatwork-icon-64.png",
-    "icon128": "chatwork-icon-128.png"
+    "icon128": "chatwork-icon-128.png",
+    "date": "2016-10-25",
+    "iconColors": [
+      "#f8f7f7",
+      "#f74435",
+      "#37372f",
+      "#8c908c",
+      "#b48c8c"
+    ]
   },
   {
     "slug": "chronocube",
@@ -422,7 +679,15 @@
     "icon": "chronocube-icon.png",
     "icon32": "chronocube-icon-32.png",
     "icon64": "chronocube-icon-64.png",
-    "icon128": "chronocube-icon-128.png"
+    "icon128": "chronocube-icon-128.png",
+    "date": "2016-03-08",
+    "iconColors": [
+      "#dadadf",
+      "#7445c0",
+      "#a75dcd",
+      "#af98cc",
+      "#c4accc"
+    ]
   },
   {
     "slug": "cloudcmd",
@@ -460,7 +725,15 @@
     "icon": "cloudcmd-icon.png",
     "icon32": "cloudcmd-icon-32.png",
     "icon64": "cloudcmd-icon-64.png",
-    "icon128": "cloudcmd-icon-128.png"
+    "icon128": "cloudcmd-icon-128.png",
+    "date": "2016-12-13",
+    "iconColors": [
+      "#2c7bfc",
+      "#f8f9fc",
+      "#77a8fc",
+      "#94bcfc",
+      "#5c9cfc"
+    ]
   },
   {
     "slug": "cloudtag",
@@ -476,7 +749,15 @@
     "icon": "cloudtag-icon.png",
     "icon32": "cloudtag-icon-32.png",
     "icon64": "cloudtag-icon-64.png",
-    "icon128": "cloudtag-icon-128.png"
+    "icon128": "cloudtag-icon-128.png",
+    "date": "2016-12-23",
+    "iconColors": [
+      "#2a76b2",
+      "#fbfbfb",
+      "#5c90b4",
+      "#a6c4dc",
+      "#91b4ce"
+    ]
   },
   {
     "slug": "cocos-creator",
@@ -487,7 +768,15 @@
     "icon": "cocos-creator-icon.png",
     "icon32": "cocos-creator-icon-32.png",
     "icon64": "cocos-creator-icon-64.png",
-    "icon128": "cocos-creator-icon-128.png"
+    "icon128": "cocos-creator-icon-128.png",
+    "date": "2016-05-12",
+    "iconColors": [
+      "#899195",
+      "#f9f9f9",
+      "#bbbcbc",
+      "#c6c6c6",
+      "#b4b4b5"
+    ]
   },
   {
     "slug": "code-rpgify",
@@ -503,7 +792,15 @@
     "icon": "code-rpgify-icon.png",
     "icon32": "code-rpgify-icon-32.png",
     "icon64": "code-rpgify-icon-64.png",
-    "icon128": "code-rpgify-icon-128.png"
+    "icon128": "code-rpgify-icon-128.png",
+    "date": "2016-08-04",
+    "iconColors": [
+      "#151d21",
+      "#f8f8f9",
+      "#f7a308",
+      "#0d94d7",
+      "#946c2c"
+    ]
   },
   {
     "slug": "colibri",
@@ -516,7 +813,15 @@
     "icon": "colibri-icon.png",
     "icon32": "colibri-icon-32.png",
     "icon64": "colibri-icon-64.png",
-    "icon128": "colibri-icon-128.png"
+    "icon128": "colibri-icon-128.png",
+    "date": "2016-11-22",
+    "iconColors": [
+      "#eff8f7",
+      "#1197d5",
+      "#27da5b",
+      "#20c188",
+      "#27d578"
+    ]
   },
   {
     "slug": "collectie",
@@ -532,7 +837,15 @@
     "icon": "collectie-icon.png",
     "icon32": "collectie-icon-32.png",
     "icon64": "collectie-icon-64.png",
-    "icon128": "collectie-icon-128.png"
+    "icon128": "collectie-icon-128.png",
+    "date": "2016-05-27",
+    "iconColors": [
+      "#4d6797",
+      "#ebeef2",
+      "#33b7d9",
+      "#31cde2",
+      "#988eb5"
+    ]
   },
   {
     "slug": "colorpicker",
@@ -542,7 +855,15 @@
     "icon": "colorpicker-icon.png",
     "icon32": "colorpicker-icon-32.png",
     "icon64": "colorpicker-icon-64.png",
-    "icon128": "colorpicker-icon-128.png"
+    "icon128": "colorpicker-icon-128.png",
+    "date": "2017-02-01",
+    "iconColors": [
+      "#fcfcfc",
+      "#51a8b3",
+      "#ec5c44",
+      "#ccffcc",
+      "#ccffcc"
+    ]
   },
   {
     "slug": "correo",
@@ -563,7 +884,15 @@
     "icon": "correo-icon.png",
     "icon32": "correo-icon-32.png",
     "icon64": "correo-icon-64.png",
-    "icon128": "correo-icon-128.png"
+    "icon128": "correo-icon-128.png",
+    "date": "2016-08-25",
+    "iconColors": [
+      "#eeeded",
+      "#ea4e48",
+      "#e49c9a",
+      "#f58180",
+      "#df7c72"
+    ]
   },
   {
     "slug": "covepdf",
@@ -580,7 +909,15 @@
     "icon": "covepdf-icon.png",
     "icon32": "covepdf-icon-32.png",
     "icon64": "covepdf-icon-64.png",
-    "icon128": "covepdf-icon-128.png"
+    "icon128": "covepdf-icon-128.png",
+    "date": "2017-01-12",
+    "iconColors": [
+      "#304b57",
+      "#57d9b5",
+      "#f6f9f9",
+      "#738a93",
+      "#8996a4"
+    ]
   },
   {
     "slug": "coypu",
@@ -596,7 +933,15 @@
     "icon": "coypu-icon.png",
     "icon32": "coypu-icon-32.png",
     "icon64": "coypu-icon-64.png",
-    "icon128": "coypu-icon-128.png"
+    "icon128": "coypu-icon-128.png",
+    "date": "2017-01-24",
+    "iconColors": [
+      "#ec7464",
+      "#fbfbfa",
+      "#f09d92",
+      "#f4bcb4",
+      "#f4b4a6"
+    ]
   },
   {
     "slug": "cozy-desktop",
@@ -613,7 +958,15 @@
     "icon": "cozy-desktop-icon.png",
     "icon32": "cozy-desktop-icon-32.png",
     "icon64": "cozy-desktop-icon-64.png",
-    "icon128": "cozy-desktop-icon-128.png"
+    "icon128": "cozy-desktop-icon-128.png",
+    "date": "2016-06-08",
+    "iconColors": [
+      "#fafafb",
+      "#2c99ec",
+      "#99c7ec",
+      "#c9dbeb",
+      "#bcbcbc"
+    ]
   },
   {
     "slug": "criptio",
@@ -627,7 +980,15 @@
     "icon": "criptio-icon.png",
     "icon32": "criptio-icon-32.png",
     "icon64": "criptio-icon-64.png",
-    "icon128": "criptio-icon-128.png"
+    "icon128": "criptio-icon-128.png",
+    "date": "2016-05-11",
+    "iconColors": [
+      "#4fb1a8",
+      "#f5f6f6",
+      "#a6d0cc",
+      "#7ebec4",
+      "#c4c4c4"
+    ]
   },
   {
     "slug": "crypter",
@@ -637,7 +998,15 @@
     "icon": "crypter-icon.png",
     "icon32": "crypter-icon-32.png",
     "icon64": "crypter-icon-64.png",
-    "icon128": "crypter-icon-128.png"
+    "icon128": "crypter-icon-128.png",
+    "date": "2016-04-20",
+    "iconColors": [
+      "#f28b47",
+      "#323334",
+      "#f06c43",
+      "#9b5d3c",
+      "#8e543c"
+    ]
   },
   {
     "slug": "cryptocat",
@@ -647,7 +1016,15 @@
     "icon": "cryptocat-icon.png",
     "icon32": "cryptocat-icon-32.png",
     "icon64": "cryptocat-icon-64.png",
-    "icon128": "cryptocat-icon-128.png"
+    "icon128": "cryptocat-icon-128.png",
+    "date": "2016-04-17",
+    "iconColors": [
+      "#f85752",
+      "#2c507c",
+      "#4dc6f5",
+      "#852c57",
+      "#469be5"
+    ]
   },
   {
     "slug": "cryptoseed",
@@ -667,7 +1044,15 @@
     "icon": "cryptoseed-icon.png",
     "icon32": "cryptoseed-icon-32.png",
     "icon64": "cryptoseed-icon-64.png",
-    "icon128": "cryptoseed-icon-128.png"
+    "icon128": "cryptoseed-icon-128.png",
+    "date": "2017-01-29",
+    "iconColors": [
+      "#0c0c0c",
+      "#f6f6f6",
+      "#747474",
+      "#848484",
+      "#7c7c7c"
+    ]
   },
   {
     "slug": "cumulus",
@@ -684,7 +1069,15 @@
     "icon": "cumulus-icon.png",
     "icon32": "cumulus-icon-32.png",
     "icon64": "cumulus-icon-64.png",
-    "icon128": "cumulus-icon-128.png"
+    "icon128": "cumulus-icon-128.png",
+    "date": "2016-12-27",
+    "iconColors": [
+      "#fa3d09",
+      "#fbfafa",
+      "#e8885f",
+      "#f5a57e",
+      "#fca48c"
+    ]
   },
   {
     "slug": "curse",
@@ -694,7 +1087,15 @@
     "icon": "curse-icon.png",
     "icon32": "curse-icon-32.png",
     "icon64": "curse-icon-64.png",
-    "icon128": "curse-icon-128.png"
+    "icon128": "curse-icon-128.png",
+    "date": "2016-04-01",
+    "iconColors": [
+      "#363636",
+      "#f48b24",
+      "#835632",
+      "#9c842c",
+      "#645c34"
+    ]
   },
   {
     "slug": "cycligent-git-tool",
@@ -709,7 +1110,15 @@
     "icon": "cycligent-git-tool-icon.png",
     "icon32": "cycligent-git-tool-icon-32.png",
     "icon64": "cycligent-git-tool-icon-64.png",
-    "icon128": "cycligent-git-tool-icon-128.png"
+    "icon128": "cycligent-git-tool-icon-128.png",
+    "date": "2016-09-15",
+    "iconColors": [
+      "#dbdbdb",
+      "#4d958c",
+      "#b4b4b4",
+      "#9eb8b4",
+      "#9c9c9c"
+    ]
   },
   {
     "slug": "cypress",
@@ -725,7 +1134,15 @@
     "icon": "cypress-icon.png",
     "icon32": "cypress-icon-32.png",
     "icon64": "cypress-icon-64.png",
-    "icon128": "cypress-icon-128.png"
+    "icon128": "cypress-icon-128.png",
+    "date": "2016-06-03",
+    "iconColors": [
+      "#3a3a3a",
+      "#f7f7f7",
+      "#9a9c9a",
+      "#a4a4a4",
+      "#949494"
+    ]
   },
   {
     "slug": "dataproofer",
@@ -744,7 +1161,15 @@
     "icon": "dataproofer-icon.png",
     "icon32": "dataproofer-icon-32.png",
     "icon64": "dataproofer-icon-64.png",
-    "icon128": "dataproofer-icon-128.png"
+    "icon128": "dataproofer-icon-128.png",
+    "date": "2016-05-20",
+    "iconColors": [
+      "#070707",
+      "#f9f9f9",
+      "#747474",
+      "#7c7c7c",
+      "#848484"
+    ]
   },
   {
     "slug": "datazenit",
@@ -754,7 +1179,15 @@
     "icon": "datazenit-icon.png",
     "icon32": "datazenit-icon-32.png",
     "icon64": "datazenit-icon-64.png",
-    "icon128": "datazenit-icon-128.png"
+    "icon128": "datazenit-icon-128.png",
+    "date": "2016-04-15",
+    "iconColors": [
+      "#cac2c2",
+      "#232323",
+      "#fb4444",
+      "#fc3b3b",
+      "#6c7474"
+    ]
   },
   {
     "slug": "dbglass",
@@ -771,7 +1204,15 @@
     "icon": "dbglass-icon.png",
     "icon32": "dbglass-icon-32.png",
     "icon64": "dbglass-icon-64.png",
-    "icon128": "dbglass-icon-128.png"
+    "icon128": "dbglass-icon-128.png",
+    "date": "2016-10-07",
+    "iconColors": [
+      "#fc5454",
+      "#242424",
+      "#141c1c",
+      "#ff383c",
+      "#5c383c"
+    ]
   },
   {
     "slug": "deckard-ai",
@@ -786,7 +1227,15 @@
     "icon": "deckard-ai-icon.png",
     "icon32": "deckard-ai-icon-32.png",
     "icon64": "deckard-ai-icon-64.png",
-    "icon128": "deckard-ai-icon-128.png"
+    "icon128": "deckard-ai-icon-128.png",
+    "date": "2017-01-09",
+    "iconColors": [
+      "#3d6796",
+      "#c1c1c1",
+      "#383a3a",
+      "#6a43c4",
+      "#98a4b0"
+    ]
   },
   {
     "slug": "deckhub",
@@ -796,7 +1245,15 @@
     "icon": "deckhub-icon.png",
     "icon32": "deckhub-icon-32.png",
     "icon64": "deckhub-icon-64.png",
-    "icon128": "deckhub-icon-128.png"
+    "icon128": "deckhub-icon-128.png",
+    "date": "2016-04-20",
+    "iconColors": [
+      "#4bd4b5",
+      "#ebfcfc",
+      "#94f0dc",
+      "#ccfcf4",
+      "#64ecd4"
+    ]
   },
   {
     "slug": "deco-ide",
@@ -814,7 +1271,15 @@
     "icon": "deco-ide-icon.png",
     "icon32": "deco-ide-icon-32.png",
     "icon64": "deco-ide-icon-64.png",
-    "icon128": "deco-ide-icon-128.png"
+    "icon128": "deco-ide-icon-128.png",
+    "date": "2016-06-03",
+    "iconColors": [
+      "#04acfc",
+      "#9cdcfc",
+      "#fcfcfc",
+      "#62cbfc",
+      "#20d8fc"
+    ]
   },
   {
     "slug": "deepnest",
@@ -824,7 +1289,15 @@
     "icon": "deepnest-icon.png",
     "icon32": "deepnest-icon-32.png",
     "icon64": "deepnest-icon-64.png",
-    "icon128": "deepnest-icon-128.png"
+    "icon128": "deepnest-icon-128.png",
+    "date": "2016-12-26",
+    "iconColors": [
+      "#2ba7dd",
+      "#fafbfb",
+      "#d3ecf4",
+      "#a6daf1",
+      "#c4e4f4"
+    ]
   },
   {
     "slug": "demio",
@@ -840,7 +1313,15 @@
     "icon": "demio-icon.png",
     "icon32": "demio-icon-32.png",
     "icon64": "demio-icon-64.png",
-    "icon128": "demio-icon-128.png"
+    "icon128": "demio-icon-128.png",
+    "date": "2016-07-27",
+    "iconColors": [
+      "#2bb38b",
+      "#f6faf9",
+      "#78cdb3",
+      "#5ac4a4",
+      "#4fbf9a"
+    ]
   },
   {
     "slug": "destroyer",
@@ -858,7 +1339,15 @@
     "icon": "destroyer-icon.png",
     "icon32": "destroyer-icon-32.png",
     "icon64": "destroyer-icon-64.png",
-    "icon128": "destroyer-icon-128.png"
+    "icon128": "destroyer-icon-128.png",
+    "date": "2017-01-06",
+    "iconColors": [
+      "#543cd4",
+      "#1b1647",
+      "#342484",
+      "#442ca4",
+      "#2830c8"
+    ]
   },
   {
     "slug": "devrant-io-unofficial",
@@ -874,7 +1363,15 @@
     "icon": "devrant-io-unofficial-icon.png",
     "icon32": "devrant-io-unofficial-icon-32.png",
     "icon64": "devrant-io-unofficial-icon-64.png",
-    "icon128": "devrant-io-unofficial-icon-128.png"
+    "icon128": "devrant-io-unofficial-icon-128.png",
+    "date": "2016-06-18",
+    "iconColors": [
+      "#fb9c64",
+      "#d45264",
+      "#e57364",
+      "#ec8664",
+      "#f48c64"
+    ]
   },
   {
     "slug": "dext",
@@ -890,7 +1387,15 @@
     "icon": "dext-icon.png",
     "icon32": "dext-icon-32.png",
     "icon64": "dext-icon-64.png",
-    "icon128": "dext-icon-128.png"
+    "icon128": "dext-icon-128.png",
+    "date": "2016-11-10",
+    "iconColors": [
+      "#1b0c3c",
+      "#06aad3",
+      "#126c82",
+      "#164c7b",
+      "#246498"
+    ]
   },
   {
     "slug": "discord",
@@ -900,7 +1405,15 @@
     "icon": "discord-icon.png",
     "icon32": "discord-icon-32.png",
     "icon64": "discord-icon-64.png",
-    "icon128": "discord-icon-128.png"
+    "icon128": "discord-icon-128.png",
+    "date": "2016-02-03",
+    "iconColors": [
+      "#748cdc",
+      "#788cdc",
+      "#788cdc",
+      "#788cdc",
+      "#788cdc"
+    ]
   },
   {
     "slug": "donut",
@@ -918,7 +1431,15 @@
     "icon": "donut-icon.png",
     "icon32": "donut-icon-32.png",
     "icon64": "donut-icon-64.png",
-    "icon128": "donut-icon-128.png"
+    "icon128": "donut-icon-128.png",
+    "date": "2016-10-14",
+    "iconColors": [
+      "#ce4987",
+      "#f3b33b",
+      "#f9ecf3",
+      "#363435",
+      "#7c6434"
+    ]
   },
   {
     "slug": "egret-wing",
@@ -928,7 +1449,15 @@
     "icon": "egret-wing-icon.png",
     "icon32": "egret-wing-icon-32.png",
     "icon64": "egret-wing-icon-64.png",
-    "icon128": "egret-wing-icon-128.png"
+    "icon128": "egret-wing-icon-128.png",
+    "date": "2016-03-14",
+    "iconColors": [
+      "#04a3f3",
+      "#041c2c",
+      "#045c8c",
+      "#044a75",
+      "#04649c"
+    ]
   },
   {
     "slug": "electorrent",
@@ -946,7 +1475,15 @@
     "icon": "electorrent-icon.png",
     "icon32": "electorrent-icon-32.png",
     "icon64": "electorrent-icon-64.png",
-    "icon128": "electorrent-icon-128.png"
+    "icon128": "electorrent-icon-128.png",
+    "date": "2016-07-27",
+    "iconColors": [
+      "#70c349",
+      "#1c5414",
+      "#42822c",
+      "#56a038",
+      "#4c9c34"
+    ]
   },
   {
     "slug": "electro",
@@ -960,7 +1497,15 @@
     "icon": "electro-icon.png",
     "icon32": "electro-icon-32.png",
     "icon64": "electro-icon-64.png",
-    "icon128": "electro-icon-128.png"
+    "icon128": "electro-icon-128.png",
+    "date": "2016-12-13",
+    "iconColors": [
+      "#3a5d68",
+      "#04a4ea",
+      "#1b7dac",
+      "#046c9d",
+      "#1c8cc4"
+    ]
   },
   {
     "slug": "elite-journal",
@@ -977,7 +1522,15 @@
     "icon": "elite-journal-icon.png",
     "icon32": "elite-journal-icon-32.png",
     "icon64": "elite-journal-icon-64.png",
-    "icon128": "elite-journal-icon-128.png"
+    "icon128": "elite-journal-icon-128.png",
+    "date": "2016-10-09",
+    "iconColors": [
+      "#f4f5f7",
+      "#483b49",
+      "#fa9c4e",
+      "#7e9acb",
+      "#99aac9"
+    ]
   },
   {
     "slug": "englishextra-app",
@@ -988,7 +1541,15 @@
     "icon": "englishextra-app-icon.png",
     "icon32": "englishextra-app-icon-32.png",
     "icon64": "englishextra-app-icon-64.png",
-    "icon128": "englishextra-app-icon-128.png"
+    "icon128": "englishextra-app-icon-128.png",
+    "date": "2016-10-27",
+    "iconColors": [
+      "#d44c4c",
+      "#fbf8f8",
+      "#e58a8a",
+      "#eca4a4",
+      "#dc7474"
+    ]
   },
   {
     "slug": "etcher",
@@ -1005,7 +1566,15 @@
     "icon": "etcher-icon.png",
     "icon32": "etcher-icon-32.png",
     "icon64": "etcher-icon-64.png",
-    "icon128": "etcher-icon-128.png"
+    "icon128": "etcher-icon-128.png",
+    "date": "2016-05-17",
+    "iconColors": [
+      "#45484c",
+      "#e1af15",
+      "#041332",
+      "#856c30",
+      "#9c8c54"
+    ]
   },
   {
     "slug": "explorer",
@@ -1015,7 +1584,15 @@
     "icon": "explorer-icon.png",
     "icon32": "explorer-icon-32.png",
     "icon64": "explorer-icon-64.png",
-    "icon128": "explorer-icon-128.png"
+    "icon128": "explorer-icon-128.png",
+    "date": "2016-04-13",
+    "iconColors": [
+      "#bb8bf3",
+      "#f9f8f9",
+      "#a391ba",
+      "#beb5cb",
+      "#dcc1fc"
+    ]
   },
   {
     "slug": "fangyuanjian",
@@ -1032,7 +1609,15 @@
     "icon": "fangyuanjian-icon.png",
     "icon32": "fangyuanjian-icon-32.png",
     "icon64": "fangyuanjian-icon-64.png",
-    "icon128": "fangyuanjian-icon-128.png"
+    "icon128": "fangyuanjian-icon-128.png",
+    "date": "2016-12-19",
+    "iconColors": [
+      "#2c3c44",
+      "#f9f9f9",
+      "#9c9ca4",
+      "#949ca4",
+      "#8c949c"
+    ]
   },
   {
     "slug": "fastlane",
@@ -1042,7 +1627,15 @@
     "icon": "fastlane-icon.png",
     "icon32": "fastlane-icon-32.png",
     "icon64": "fastlane-icon-64.png",
-    "icon128": "fastlane-icon-128.png"
+    "icon128": "fastlane-icon-128.png",
+    "date": "2016-04-13",
+    "iconColors": [
+      "#1c1515",
+      "#f9f9f9",
+      "#656363",
+      "#7c7c7c",
+      "#747474"
+    ]
   },
   {
     "slug": "ffftp",
@@ -1057,7 +1650,15 @@
     "icon": "ffftp-icon.png",
     "icon32": "ffftp-icon-32.png",
     "icon64": "ffftp-icon-64.png",
-    "icon128": "ffftp-icon-128.png"
+    "icon128": "ffftp-icon-128.png",
+    "date": "2016-12-13",
+    "iconColors": [
+      "#f8f8f8",
+      "#112140",
+      "#87949c",
+      "#848c9c",
+      "#748494"
+    ]
   },
   {
     "slug": "firebase-admin",
@@ -1077,7 +1678,15 @@
     "icon": "firebase-admin-icon.png",
     "icon32": "firebase-admin-icon-32.png",
     "icon64": "firebase-admin-icon-64.png",
-    "icon128": "firebase-admin-icon-128.png"
+    "icon128": "firebase-admin-icon-128.png",
+    "date": "2016-09-19",
+    "iconColors": [
+      "#fcc535",
+      "#fcfaf6",
+      "#f4840c",
+      "#fcdc7f",
+      "#fcd464"
+    ]
   },
   {
     "slug": "flex-browser",
@@ -1094,7 +1703,15 @@
     "icon": "flex-browser-icon.png",
     "icon32": "flex-browser-icon-32.png",
     "icon64": "flex-browser-icon-64.png",
-    "icon128": "flex-browser-icon-128.png"
+    "icon128": "flex-browser-icon-128.png",
+    "date": "2016-10-02",
+    "iconColors": [
+      "#047b93",
+      "#aa9a33",
+      "#434454",
+      "#080804",
+      "#959ca4"
+    ]
   },
   {
     "slug": "flexpaper",
@@ -1112,7 +1729,15 @@
     "icon": "flexpaper-icon.png",
     "icon32": "flexpaper-icon-32.png",
     "icon64": "flexpaper-icon-64.png",
-    "icon128": "flexpaper-icon-128.png"
+    "icon128": "flexpaper-icon-128.png",
+    "date": "2016-05-19",
+    "iconColors": [
+      "#657c97",
+      "#c2ccda",
+      "#98a9c0",
+      "#acbccc",
+      "#a6b4cc"
+    ]
   },
   {
     "slug": "flow",
@@ -1122,7 +1747,15 @@
     "icon": "flow-icon.png",
     "icon32": "flow-icon-32.png",
     "icon64": "flow-icon-64.png",
-    "icon128": "flow-icon-128.png"
+    "icon128": "flow-icon-128.png",
+    "date": "2016-11-23",
+    "iconColors": [
+      "#5dbcf4",
+      "#f6f8fb",
+      "#bbe3fc",
+      "#b4b4b8",
+      "#c4c4cc"
+    ]
   },
   {
     "slug": "foco",
@@ -1143,7 +1776,15 @@
     "icon": "foco-icon.png",
     "icon32": "foco-icon-32.png",
     "icon64": "foco-icon-64.png",
-    "icon128": "foco-icon-128.png"
+    "icon128": "foco-icon-128.png",
+    "date": "2016-09-16",
+    "iconColors": [
+      "#28aec4",
+      "#f8fafb",
+      "#4c9dcc",
+      "#79c0d9",
+      "#5cccd4"
+    ]
   },
   {
     "slug": "fog",
@@ -1159,7 +1800,15 @@
     "icon": "fog-icon.png",
     "icon32": "fog-icon-32.png",
     "icon64": "fog-icon-64.png",
-    "icon128": "fog-icon-128.png"
+    "icon128": "fog-icon-128.png",
+    "date": "2017-02-10",
+    "iconColors": [
+      "#fb9a09",
+      "#efefee",
+      "#747579",
+      "#969798",
+      "#fcd764"
+    ]
   },
   {
     "slug": "forestpin-analytics",
@@ -1174,7 +1823,15 @@
     "icon": "forestpin-analytics-icon.png",
     "icon32": "forestpin-analytics-icon-32.png",
     "icon64": "forestpin-analytics-icon-64.png",
-    "icon128": "forestpin-analytics-icon-128.png"
+    "icon128": "forestpin-analytics-icon-128.png",
+    "date": "2016-09-25",
+    "iconColors": [
+      "#c6c6c6",
+      "#049ccc",
+      "#3ca8c8",
+      "#30a4c9",
+      "#7cbccc"
+    ]
   },
   {
     "slug": "franz",
@@ -1189,7 +1846,15 @@
     "icon": "franz-icon.png",
     "icon32": "franz-icon-32.png",
     "icon64": "franz-icon-64.png",
-    "icon128": "franz-icon-128.png"
+    "icon128": "franz-icon-128.png",
+    "date": "2016-04-22",
+    "iconColors": [
+      "#5ca8e0",
+      "#fafafb",
+      "#9ccbed",
+      "#79c4f7",
+      "#2f85c6"
+    ]
   },
   {
     "slug": "freeter",
@@ -1203,7 +1868,15 @@
     "icon": "freeter-icon.png",
     "icon32": "freeter-icon-32.png",
     "icon64": "freeter-icon-64.png",
-    "icon128": "freeter-icon-128.png"
+    "icon128": "freeter-icon-128.png",
+    "date": "2016-06-13",
+    "iconColors": [
+      "#464a51",
+      "#dcdcdc",
+      "#545c64",
+      "#f3f3f4",
+      "#545464"
+    ]
   },
   {
     "slug": "friends",
@@ -1213,7 +1886,15 @@
     "icon": "friends-icon.png",
     "icon32": "friends-icon-32.png",
     "icon64": "friends-icon-64.png",
-    "icon128": "friends-icon-128.png"
+    "icon128": "friends-icon-128.png",
+    "date": "2015-04-30",
+    "iconColors": [
+      "#040404",
+      "#ececec",
+      "#595959",
+      "#747474",
+      "#7c7c7c"
+    ]
   },
   {
     "slug": "fromscratch",
@@ -1230,7 +1911,15 @@
     "icon": "fromscratch-icon.png",
     "icon32": "fromscratch-icon-32.png",
     "icon64": "fromscratch-icon-64.png",
-    "icon128": "fromscratch-icon-128.png"
+    "icon128": "fromscratch-icon-128.png",
+    "date": "2016-05-13",
+    "iconColors": [
+      "#e8ebeb",
+      "#042c34",
+      "#6e868c",
+      "#7c9494",
+      "#577275"
+    ]
   },
   {
     "slug": "front-end-box",
@@ -1247,7 +1936,15 @@
     "icon": "front-end-box-icon.png",
     "icon32": "front-end-box-icon-32.png",
     "icon64": "front-end-box-icon-64.png",
-    "icon128": "front-end-box-icon-128.png"
+    "icon128": "front-end-box-icon-128.png",
+    "date": "2016-09-29",
+    "iconColors": [
+      "#d83a34",
+      "#40566a",
+      "#e6e3d7",
+      "#a86ab2",
+      "#f8824d"
+    ]
   },
   {
     "slug": "gala",
@@ -1257,7 +1954,15 @@
     "icon": "gala-icon.png",
     "icon32": "gala-icon-32.png",
     "icon64": "gala-icon-64.png",
-    "icon128": "gala-icon-128.png"
+    "icon128": "gala-icon-128.png",
+    "date": "2016-01-08",
+    "iconColors": [
+      "#88d0d8",
+      "#292351",
+      "#ece4e3",
+      "#0fa9b5",
+      "#74a146"
+    ]
   },
   {
     "slug": "galeri",
@@ -1271,7 +1976,15 @@
     "icon": "galeri-icon.png",
     "icon32": "galeri-icon-32.png",
     "icon64": "galeri-icon-64.png",
-    "icon128": "galeri-icon-128.png"
+    "icon128": "galeri-icon-128.png",
+    "date": "2016-12-13",
+    "iconColors": [
+      "#2b3b53",
+      "#f9f9f9",
+      "#777d86",
+      "#949ca4",
+      "#90949c"
+    ]
   },
   {
     "slug": "gausssense-desktop",
@@ -1293,7 +2006,15 @@
     "icon": "gausssense-desktop-icon.png",
     "icon32": "gausssense-desktop-icon-32.png",
     "icon64": "gausssense-desktop-icon-64.png",
-    "icon128": "gausssense-desktop-icon-128.png"
+    "icon128": "gausssense-desktop-icon-128.png",
+    "date": "2016-06-15",
+    "iconColors": [
+      "#f1ccd3",
+      "#454344",
+      "#50c0e1",
+      "#04a1d3",
+      "#959394"
+    ]
   },
   {
     "slug": "gf-trader",
@@ -1307,7 +2028,15 @@
     "icon": "gf-trader-icon.png",
     "icon32": "gf-trader-icon-32.png",
     "icon64": "gf-trader-icon-64.png",
-    "icon128": "gf-trader-icon-128.png"
+    "icon128": "gf-trader-icon-128.png",
+    "date": "2016-05-13",
+    "iconColors": [
+      "#1386ba",
+      "#fafbfb",
+      "#60a5c9",
+      "#84c1dc",
+      "#94b4cc"
+    ]
   },
   {
     "slug": "ghost",
@@ -1317,7 +2046,15 @@
     "icon": "ghost-icon.png",
     "icon32": "ghost-icon-32.png",
     "icon64": "ghost-icon-64.png",
-    "icon128": "ghost-icon-128.png"
+    "icon128": "ghost-icon-128.png",
+    "date": "2016-05-02",
+    "iconColors": [
+      "#324153",
+      "#f7f8f8",
+      "#7f818a",
+      "#8e919c",
+      "#949ca4"
+    ]
   },
   {
     "slug": "gif-maker",
@@ -1327,7 +2064,15 @@
     "icon": "gif-maker-icon.png",
     "icon32": "gif-maker-icon-32.png",
     "icon64": "gif-maker-icon-64.png",
-    "icon128": "gif-maker-icon-128.png"
+    "icon128": "gif-maker-icon-128.png",
+    "date": "2016-02-16",
+    "iconColors": [
+      "#ae4544",
+      "#fbfafa",
+      "#cc8888",
+      "#d49c9c",
+      "#c46c6c"
+    ]
   },
   {
     "slug": "gifbar",
@@ -1344,7 +2089,15 @@
     "icon": "gifbar-icon.png",
     "icon32": "gifbar-icon-32.png",
     "icon64": "gifbar-icon-64.png",
-    "icon128": "gifbar-icon-128.png"
+    "icon128": "gifbar-icon-128.png",
+    "date": "2016-12-13",
+    "iconColors": [
+      "#040404",
+      "#646464",
+      "#4c4c4c",
+      "#303030",
+      "#444444"
+    ]
   },
   {
     "slug": "gitbook",
@@ -1361,7 +2114,15 @@
     "icon": "gitbook-icon.png",
     "icon32": "gitbook-icon-32.png",
     "icon64": "gitbook-icon-64.png",
-    "icon128": "gitbook-icon-128.png"
+    "icon128": "gitbook-icon-128.png",
+    "date": "2017-01-15",
+    "iconColors": [
+      "#4692fa",
+      "#eceef2",
+      "#98b5e0",
+      "#989a9e",
+      "#a6a8ac"
+    ]
   },
   {
     "slug": "gitify",
@@ -1371,7 +2132,15 @@
     "icon": "gitify-icon.png",
     "icon32": "gitify-icon-32.png",
     "icon64": "gitify-icon-64.png",
-    "icon128": "gitify-icon-128.png"
+    "icon128": "gitify-icon-128.png",
+    "date": "2015-10-17",
+    "iconColors": [
+      "#252525",
+      "#f2f2f2",
+      "#949494",
+      "#848484",
+      "#8c8c8c"
+    ]
   },
   {
     "slug": "gitkraken",
@@ -1386,7 +2155,15 @@
     "icon": "gitkraken-icon.png",
     "icon32": "gitkraken-icon-32.png",
     "icon64": "gitkraken-icon-64.png",
-    "icon128": "gitkraken-icon-128.png"
+    "icon128": "gitkraken-icon-128.png",
+    "date": "2016-05-13",
+    "iconColors": [
+      "#148f84",
+      "#141725",
+      "#bcbcbe",
+      "#5f5f64",
+      "#74747c"
+    ]
   },
   {
     "slug": "gitscout",
@@ -1402,7 +2179,15 @@
     "icon": "gitscout-icon.png",
     "icon32": "gitscout-icon-32.png",
     "icon64": "gitscout-icon-64.png",
-    "icon128": "gitscout-icon-128.png"
+    "icon128": "gitscout-icon-128.png",
+    "date": "2016-12-13",
+    "iconColors": [
+      "#f6c61e",
+      "#132a3f",
+      "#988325",
+      "#806408",
+      "#b48c04"
+    ]
   },
   {
     "slug": "glyphr-studio",
@@ -1418,7 +2203,15 @@
     "icon": "glyphr-studio-icon.png",
     "icon32": "glyphr-studio-icon-32.png",
     "icon64": "glyphr-studio-icon-64.png",
-    "icon128": "glyphr-studio-icon-128.png"
+    "icon128": "glyphr-studio-icon-128.png",
+    "date": "2016-07-14",
+    "iconColors": [
+      "#cfedfb",
+      "#04ace4",
+      "#67cdee",
+      "#8dd8f4",
+      "#32bce5"
+    ]
   },
   {
     "slug": "google-play-music-desktop-player",
@@ -1428,7 +2221,15 @@
     "icon": "google-play-music-desktop-player-icon.png",
     "icon32": "google-play-music-desktop-player-icon-32.png",
     "icon64": "google-play-music-desktop-player-icon-64.png",
-    "icon128": "google-play-music-desktop-player-icon-128.png"
+    "icon128": "google-play-music-desktop-player-icon-128.png",
+    "date": "2016-03-24",
+    "iconColors": [
+      "#f76d1a",
+      "#fbd21c",
+      "#eee7dc",
+      "#f8c018",
+      "#fab669"
+    ]
   },
   {
     "slug": "gordie",
@@ -1442,7 +2243,15 @@
     "icon": "gordie-icon.png",
     "icon32": "gordie-icon-32.png",
     "icon64": "gordie-icon-64.png",
-    "icon128": "gordie-icon-128.png"
+    "icon128": "gordie-icon-128.png",
+    "date": "2016-08-07",
+    "iconColors": [
+      "#f40454",
+      "#f80454",
+      "#f80454",
+      "#f80454",
+      "#f80454"
+    ]
   },
   {
     "slug": "grabcad-print",
@@ -1456,7 +2265,15 @@
     "icon": "grabcad-print-icon.png",
     "icon32": "grabcad-print-icon-32.png",
     "icon64": "grabcad-print-icon-64.png",
-    "icon128": "grabcad-print-icon-128.png"
+    "icon128": "grabcad-print-icon-128.png",
+    "date": "2016-11-23",
+    "iconColors": [
+      "#fbfbfc",
+      "#2cacdc",
+      "#77c8ec",
+      "#b1e0f4",
+      "#56bce4"
+    ]
   },
   {
     "slug": "grap",
@@ -1474,7 +2291,15 @@
     "icon": "grap-icon.png",
     "icon32": "grap-icon-32.png",
     "icon64": "grap-icon-64.png",
-    "icon128": "grap-icon-128.png"
+    "icon128": "grap-icon-128.png",
+    "date": "2016-06-17",
+    "iconColors": [
+      "#2484d4",
+      "#146cb4",
+      "#1494e4",
+      "#1486d2",
+      "#1474c4"
+    ]
   },
   {
     "slug": "groupme",
@@ -1493,7 +2318,15 @@
     "icon": "groupme-icon.png",
     "icon32": "groupme-icon-32.png",
     "icon64": "groupme-icon-64.png",
-    "icon128": "groupme-icon-128.png"
+    "icon128": "groupme-icon-128.png",
+    "date": "2016-08-15",
+    "iconColors": [
+      "#05abeb",
+      "#f1f8fb",
+      "#0adcfc",
+      "#04445a",
+      "#04748c"
+    ]
   },
   {
     "slug": "hain",
@@ -1503,7 +2336,15 @@
     "icon": "hain-icon.png",
     "icon32": "hain-icon-32.png",
     "icon64": "hain-icon-64.png",
-    "icon128": "hain-icon-128.png"
+    "icon128": "hain-icon-128.png",
+    "date": "2016-03-29",
+    "iconColors": [
+      "#f8fbfb",
+      "#0acde6",
+      "#18ecfc",
+      "#67e1f2",
+      "#37d2ec"
+    ]
   },
   {
     "slug": "hardinfo",
@@ -1519,7 +2360,15 @@
     "icon": "hardinfo-icon.png",
     "icon32": "hardinfo-icon-32.png",
     "icon64": "hardinfo-icon-64.png",
-    "icon128": "hardinfo-icon-128.png"
+    "icon128": "hardinfo-icon-128.png",
+    "date": "2016-12-13",
+    "iconColors": [
+      "#e7c15b",
+      "#6c4c3c",
+      "#eeedec",
+      "#7e8a8e",
+      "#c88a3f"
+    ]
   },
   {
     "slug": "harmony",
@@ -1538,7 +2387,15 @@
     "icon": "harmony-icon.png",
     "icon32": "harmony-icon-32.png",
     "icon64": "harmony-icon-64.png",
-    "icon128": "harmony-icon-128.png"
+    "icon128": "harmony-icon-128.png",
+    "date": "2016-09-05",
+    "iconColors": [
+      "#ece9e9",
+      "#d88332",
+      "#37bb9b",
+      "#a69769",
+      "#9e8cad"
+    ]
   },
   {
     "slug": "hawkeye",
@@ -1554,7 +2411,15 @@
     "icon": "hawkeye-icon.png",
     "icon32": "hawkeye-icon-32.png",
     "icon64": "hawkeye-icon-64.png",
-    "icon128": "hawkeye-icon-128.png"
+    "icon128": "hawkeye-icon-128.png",
+    "date": "2017-01-06",
+    "iconColors": [
+      "#dfdfdf",
+      "#21afaf",
+      "#7ecbc4",
+      "#868181",
+      "#9c918c"
+    ]
   },
   {
     "slug": "headlines",
@@ -1564,7 +2429,15 @@
     "icon": "headlines-icon.png",
     "icon32": "headlines-icon-32.png",
     "icon64": "headlines-icon-64.png",
-    "icon128": "headlines-icon-128.png"
+    "icon128": "headlines-icon-128.png",
+    "date": "2017-01-30",
+    "iconColors": [
+      "#213f92",
+      "#e8e9ea",
+      "#8c9cc4",
+      "#8494c4",
+      "#949cc4"
+    ]
   },
   {
     "slug": "healthi",
@@ -1583,7 +2456,15 @@
     "icon": "healthi-icon.png",
     "icon32": "healthi-icon-32.png",
     "icon64": "healthi-icon-64.png",
-    "icon128": "healthi-icon-128.png"
+    "icon128": "healthi-icon-128.png",
+    "date": "2017-01-13",
+    "iconColors": [
+      "#f5f8f9",
+      "#4cceac",
+      "#bee6dc",
+      "#a9e3d2",
+      "#d0f0e8"
+    ]
   },
   {
     "slug": "hive",
@@ -1593,7 +2474,15 @@
     "icon": "hive-icon.png",
     "icon32": "hive-icon-32.png",
     "icon64": "hive-icon-64.png",
-    "icon128": "hive-icon-128.png"
+    "icon128": "hive-icon-128.png",
+    "date": "2016-10-03",
+    "iconColors": [
+      "#f2b452",
+      "#fbfbfa",
+      "#f5d09c",
+      "#8d8d8d",
+      "#a4a4a4"
+    ]
   },
   {
     "slug": "hostsdock",
@@ -1612,7 +2501,15 @@
     "icon": "hostsdock-icon.png",
     "icon32": "hostsdock-icon-32.png",
     "icon64": "hostsdock-icon-64.png",
-    "icon128": "hostsdock-icon-128.png"
+    "icon128": "hostsdock-icon-128.png",
+    "date": "2016-06-07",
+    "iconColors": [
+      "#fbfafa",
+      "#e4242c",
+      "#f1787c",
+      "#f49494",
+      "#f48c94"
+    ]
   },
   {
     "slug": "hozz",
@@ -1622,7 +2519,15 @@
     "icon": "hozz-icon.png",
     "icon32": "hozz-icon-32.png",
     "icon64": "hozz-icon-64.png",
-    "icon128": "hozz-icon-128.png"
+    "icon128": "hozz-icon-128.png",
+    "date": "2016-01-02",
+    "iconColors": [
+      "#05d341",
+      "#fbfbfb",
+      "#9ce49c",
+      "#81e1bc",
+      "#cee4ce"
+    ]
   },
   {
     "slug": "https-checker",
@@ -1632,7 +2537,15 @@
     "icon": "https-checker-icon.png",
     "icon32": "https-checker-icon-32.png",
     "icon64": "https-checker-icon-64.png",
-    "icon128": "https-checker-icon-128.png"
+    "icon128": "https-checker-icon-128.png",
+    "date": "2016-04-07",
+    "iconColors": [
+      "#2d3fa4",
+      "#fafafb",
+      "#909cd4",
+      "#8c94cc",
+      "#5c6cbc"
+    ]
   },
   {
     "slug": "hyper",
@@ -1650,7 +2563,15 @@
     "icon": "hyper-icon.png",
     "icon32": "hyper-icon-32.png",
     "icon64": "hyper-icon-64.png",
-    "icon128": "hyper-icon-128.png"
+    "icon128": "hyper-icon-128.png",
+    "date": "2016-10-06",
+    "iconColors": [
+      "#ef7463",
+      "#040404",
+      "#471739",
+      "#6c6c6c",
+      "#7c7c7c"
+    ]
   },
   {
     "slug": "i5sing",
@@ -1666,7 +2587,15 @@
     "icon": "i5sing-icon.png",
     "icon32": "i5sing-icon-32.png",
     "icon64": "i5sing-icon-64.png",
-    "icon128": "i5sing-icon-128.png"
+    "icon128": "i5sing-icon-128.png",
+    "date": "2016-12-25",
+    "iconColors": [
+      "#49ecf4",
+      "#bdedee",
+      "#3d2f37",
+      "#8df7fa",
+      "#68989c"
+    ]
   },
   {
     "slug": "illyriad",
@@ -1682,7 +2611,15 @@
     "icon": "illyriad-icon.png",
     "icon32": "illyriad-icon-32.png",
     "icon64": "illyriad-icon-64.png",
-    "icon128": "illyriad-icon-128.png"
+    "icon128": "illyriad-icon-128.png",
+    "date": "2017-01-17",
+    "iconColors": [
+      "#353121",
+      "#d5be7c",
+      "#a6a17c",
+      "#898159",
+      "#999374"
+    ]
   },
   {
     "slug": "infinity",
@@ -1697,7 +2634,15 @@
     "icon": "infinity-icon.png",
     "icon32": "infinity-icon-32.png",
     "icon64": "infinity-icon-64.png",
-    "icon128": "infinity-icon-128.png"
+    "icon128": "infinity-icon-128.png",
+    "date": "2016-09-10",
+    "iconColors": [
+      "#4dacd4",
+      "#fbfbfc",
+      "#d1e9f4",
+      "#a6e1ec",
+      "#98cce4"
+    ]
   },
   {
     "slug": "inkdrop",
@@ -1714,7 +2659,15 @@
     "icon": "inkdrop-icon.png",
     "icon32": "inkdrop-icon-32.png",
     "icon64": "inkdrop-icon-64.png",
-    "icon128": "inkdrop-icon-128.png"
+    "icon128": "inkdrop-icon-128.png",
+    "date": "2016-10-04",
+    "iconColors": [
+      "#ea0475",
+      "#040518",
+      "#04aac6",
+      "#f8f004",
+      "#f8f8f9"
+    ]
   },
   {
     "slug": "inpad",
@@ -1733,7 +2686,15 @@
     "icon": "inpad-icon.png",
     "icon32": "inpad-icon-32.png",
     "icon64": "inpad-icon-64.png",
-    "icon128": "inpad-icon-128.png"
+    "icon128": "inpad-icon-128.png",
+    "date": "2017-01-06",
+    "iconColors": [
+      "#e6e6e6",
+      "#5cacfb",
+      "#545454",
+      "#919191",
+      "#b4b4b4"
+    ]
   },
   {
     "slug": "insomnia",
@@ -1749,7 +2710,15 @@
     "icon": "insomnia-icon.png",
     "icon32": "insomnia-icon-32.png",
     "icon64": "insomnia-icon-64.png",
-    "icon128": "insomnia-icon-128.png"
+    "icon128": "insomnia-icon-128.png",
+    "date": "2016-08-24",
+    "iconColors": [
+      "#645cc4",
+      "#fafafa",
+      "#c2bce6",
+      "#aca4dc",
+      "#acacdc"
+    ]
   },
   {
     "slug": "ionic-creator",
@@ -1767,7 +2736,15 @@
     "icon": "ionic-creator-icon.png",
     "icon32": "ionic-creator-icon-32.png",
     "icon64": "ionic-creator-icon-64.png",
-    "icon128": "ionic-creator-icon-128.png"
+    "icon128": "ionic-creator-icon-128.png",
+    "date": "2016-08-11",
+    "iconColors": [
+      "#4f9ef5",
+      "#fbfbfc",
+      "#b4d7fc",
+      "#d4e8fc",
+      "#9cc4fc"
+    ]
   },
   {
     "slug": "ionic-lab",
@@ -1777,7 +2754,15 @@
     "icon": "ionic-lab-icon.png",
     "icon32": "ionic-lab-icon-32.png",
     "icon64": "ionic-lab-icon-64.png",
-    "icon128": "ionic-lab-icon-128.png"
+    "icon128": "ionic-lab-icon-128.png",
+    "date": "2015-08-13",
+    "iconColors": [
+      "#4a8ff3",
+      "#e2ebfa",
+      "#8691f1",
+      "#0b81ed",
+      "#4cccec"
+    ]
   },
   {
     "slug": "ironnode",
@@ -1794,7 +2779,15 @@
     "icon": "ironnode-icon.png",
     "icon32": "ironnode-icon-32.png",
     "icon64": "ironnode-icon-64.png",
-    "icon128": "ironnode-icon-128.png"
+    "icon128": "ironnode-icon-128.png",
+    "date": "2016-05-12",
+    "iconColors": [
+      "#447cc4",
+      "#151616",
+      "#f3f3f3",
+      "#3b6eb0",
+      "#54b8e0"
+    ]
   },
   {
     "slug": "istrolid",
@@ -1808,7 +2801,15 @@
     "icon": "istrolid-icon.png",
     "icon32": "istrolid-icon-32.png",
     "icon64": "istrolid-icon-64.png",
-    "icon128": "istrolid-icon-128.png"
+    "icon128": "istrolid-icon-128.png",
+    "date": "2016-05-28",
+    "iconColors": [
+      "#3e5f71",
+      "#312124",
+      "#38444d",
+      "#343444",
+      "#565961"
+    ]
   },
   {
     "slug": "itch",
@@ -1823,7 +2824,15 @@
     "icon": "itch-icon.png",
     "icon32": "itch-icon-32.png",
     "icon64": "itch-icon-64.png",
-    "icon128": "itch-icon-128.png"
+    "icon128": "itch-icon-128.png",
+    "date": "2016-11-21",
+    "iconColors": [
+      "#fc5f5f",
+      "#fcfafa",
+      "#fcb4b4",
+      "#fcacac",
+      "#fc9292"
+    ]
   },
   {
     "slug": "jandi",
@@ -1837,7 +2846,15 @@
     "icon": "jandi-icon.png",
     "icon32": "jandi-icon-32.png",
     "icon64": "jandi-icon-64.png",
-    "icon128": "jandi-icon-128.png"
+    "icon128": "jandi-icon-128.png",
+    "date": "2016-05-30",
+    "iconColors": [
+      "#049be4",
+      "#fbbb04",
+      "#04baec",
+      "#c0ac80",
+      "#44acf0"
+    ]
   },
   {
     "slug": "jasper",
@@ -1857,7 +2874,15 @@
     "icon": "jasper-icon.png",
     "icon32": "jasper-icon-32.png",
     "icon64": "jasper-icon-64.png",
-    "icon128": "jasper-icon-128.png"
+    "icon128": "jasper-icon-128.png",
+    "date": "2016-06-19",
+    "iconColors": [
+      "#dedddd",
+      "#de2e6d",
+      "#c77e91",
+      "#d892a4",
+      "#c44f70"
+    ]
   },
   {
     "slug": "jibo",
@@ -1867,7 +2892,15 @@
     "icon": "jibo-icon.png",
     "icon32": "jibo-icon-32.png",
     "icon64": "jibo-icon-64.png",
-    "icon128": "jibo-icon-128.png"
+    "icon128": "jibo-icon-128.png",
+    "date": "2015-07-29",
+    "iconColors": [
+      "#04b5f4",
+      "#37bef4",
+      "#20bdf7",
+      "#09c4fc",
+      "#14bcf4"
+    ]
   },
   {
     "slug": "jukeboks",
@@ -1886,7 +2919,15 @@
     "icon": "jukeboks-icon.png",
     "icon32": "jukeboks-icon-32.png",
     "icon64": "jukeboks-icon-64.png",
-    "icon128": "jukeboks-icon-128.png"
+    "icon128": "jukeboks-icon-128.png",
+    "date": "2017-01-31",
+    "iconColors": [
+      "#d34b73",
+      "#f7eac4",
+      "#8c0c34",
+      "#e09098",
+      "#dc748c"
+    ]
   },
   {
     "slug": "kakapo",
@@ -1896,7 +2937,15 @@
     "icon": "kakapo-icon.png",
     "icon32": "kakapo-icon-32.png",
     "icon64": "kakapo-icon-64.png",
-    "icon128": "kakapo-icon-128.png"
+    "icon128": "kakapo-icon-128.png",
+    "date": "2015-10-14",
+    "iconColors": [
+      "#806c41",
+      "#e3ded0",
+      "#241d0e",
+      "#cdad67",
+      "#b7b6b4"
+    ]
   },
   {
     "slug": "kaku",
@@ -1912,7 +2961,15 @@
     "icon": "kaku-icon.png",
     "icon32": "kaku-icon-32.png",
     "icon64": "kaku-icon-64.png",
-    "icon128": "kaku-icon-128.png"
+    "icon128": "kaku-icon-128.png",
+    "date": "2016-05-11",
+    "iconColors": [
+      "#784756",
+      "#f7eef2",
+      "#bb86c4",
+      "#d4887a",
+      "#301e2a"
+    ]
   },
   {
     "slug": "kap",
@@ -1931,7 +2988,15 @@
     "icon": "kap-icon.png",
     "icon32": "kap-icon-32.png",
     "icon64": "kap-icon-64.png",
-    "icon128": "kap-icon-128.png"
+    "icon128": "kap-icon-128.png",
+    "date": "2016-10-05",
+    "iconColors": [
+      "#fbfbfb",
+      "#33abd4",
+      "#8a19f9",
+      "#9bc8e2",
+      "#ca94fc"
+    ]
   },
   {
     "slug": "keeweb",
@@ -1941,7 +3006,15 @@
     "icon": "keeweb-icon.png",
     "icon32": "keeweb-icon-32.png",
     "icon64": "keeweb-icon-64.png",
-    "icon128": "keeweb-icon-128.png"
+    "icon128": "keeweb-icon-128.png",
+    "date": "2016-02-13",
+    "iconColors": [
+      "#5f80e4",
+      "#f1f2f6",
+      "#7ca4ec",
+      "#a0b0e6",
+      "#b1c4f1"
+    ]
   },
   {
     "slug": "kitematic",
@@ -1951,7 +3024,15 @@
     "icon": "kitematic-icon.png",
     "icon32": "kitematic-icon-32.png",
     "icon64": "kitematic-icon-64.png",
-    "icon128": "kitematic-icon-128.png"
+    "icon128": "kitematic-icon-128.png",
+    "date": "2015-04-25",
+    "iconColors": [
+      "#1d89e5",
+      "#e3ebf1",
+      "#36cdfc",
+      "#79a4e1",
+      "#9ca4a4"
+    ]
   },
   {
     "slug": "kongdash",
@@ -1969,7 +3050,15 @@
     "icon": "kongdash-icon.png",
     "icon32": "kongdash-icon-32.png",
     "icon64": "kongdash-icon-64.png",
-    "icon128": "kongdash-icon-128.png"
+    "icon128": "kongdash-icon-128.png",
+    "date": "2016-08-28",
+    "iconColors": [
+      "#2e8ee0",
+      "#f7f9fb",
+      "#50a4e1",
+      "#5c5c5c",
+      "#9c9c9c"
+    ]
   },
   {
     "slug": "laverna",
@@ -1984,7 +3073,15 @@
     "icon": "laverna-icon.png",
     "icon32": "laverna-icon-32.png",
     "icon64": "laverna-icon-64.png",
-    "icon128": "laverna-icon-128.png"
+    "icon128": "laverna-icon-128.png",
+    "date": "2015-12-06",
+    "iconColors": [
+      "#04a393",
+      "#fbfbfb",
+      "#0bbca4",
+      "#5cbcac",
+      "#94bcb4"
+    ]
   },
   {
     "slug": "lepton",
@@ -2006,7 +3103,15 @@
     "icon": "lepton-icon.png",
     "icon32": "lepton-icon-32.png",
     "icon64": "lepton-icon-64.png",
-    "icon128": "lepton-icon-128.png"
+    "icon128": "lepton-icon-128.png",
+    "date": "2017-02-12",
+    "iconColors": [
+      "#cecece",
+      "#343434",
+      "#7c7c7c",
+      "#747474",
+      "#848484"
+    ]
   },
   {
     "slug": "light-table",
@@ -2016,7 +3121,15 @@
     "icon": "light-table-icon.png",
     "icon32": "light-table-icon-32.png",
     "icon64": "light-table-icon-64.png",
-    "icon128": "light-table-icon-128.png"
+    "icon128": "light-table-icon-128.png",
+    "date": "2015-10-24",
+    "iconColors": [
+      "#187cae",
+      "#f7f9fa",
+      "#043050",
+      "#70bcdc",
+      "#043464"
+    ]
   },
   {
     "slug": "lightgallery",
@@ -2033,7 +3146,15 @@
     "icon": "lightgallery-icon.png",
     "icon32": "lightgallery-icon-32.png",
     "icon64": "lightgallery-icon-64.png",
-    "icon128": "lightgallery-icon-128.png"
+    "icon128": "lightgallery-icon-128.png",
+    "date": "2016-05-26",
+    "iconColors": [
+      "#24abe3",
+      "#f8f9fa",
+      "#1c6281",
+      "#78c1e0",
+      "#567c8c"
+    ]
   },
   {
     "slug": "ling",
@@ -2050,7 +3171,15 @@
     "icon": "ling-icon.png",
     "icon32": "ling-icon-32.png",
     "icon64": "ling-icon-64.png",
-    "icon128": "ling-icon-128.png"
+    "icon128": "ling-icon-128.png",
+    "date": "2016-09-25",
+    "iconColors": [
+      "#0564ac",
+      "#fafafb",
+      "#97bcd7",
+      "#6ca2ca",
+      "#acc4dc"
+    ]
   },
   {
     "slug": "lionshare",
@@ -2067,7 +3196,15 @@
     "icon": "lionshare-icon.png",
     "icon32": "lionshare-icon-32.png",
     "icon64": "lionshare-icon-64.png",
-    "icon128": "lionshare-icon-128.png"
+    "icon128": "lionshare-icon-128.png",
+    "date": "2017-01-24",
+    "iconColors": [
+      "#040404",
+      "#fa7304",
+      "#542604",
+      "#a04804",
+      "#bc5404"
+    ]
   },
   {
     "slug": "losslesscut",
@@ -2078,7 +3215,15 @@
     "icon": "losslesscut-icon.png",
     "icon32": "losslesscut-icon-32.png",
     "icon64": "losslesscut-icon-64.png",
-    "icon128": "losslesscut-icon-128.png"
+    "icon128": "losslesscut-icon-128.png",
+    "date": "2016-11-06",
+    "iconColors": [
+      "#22a0b8",
+      "#eae0b9",
+      "#0e353b",
+      "#365561",
+      "#647782"
+    ]
   },
   {
     "slug": "makeappicon-desktop",
@@ -2088,7 +3233,15 @@
     "icon": "makeappicon-desktop-icon.png",
     "icon32": "makeappicon-desktop-icon-32.png",
     "icon64": "makeappicon-desktop-icon-64.png",
-    "icon128": "makeappicon-desktop-icon-128.png"
+    "icon128": "makeappicon-desktop-icon-128.png",
+    "date": "2016-04-05",
+    "iconColors": [
+      "#276f98",
+      "#d6dad7",
+      "#df315e",
+      "#7eafa7",
+      "#acd530"
+    ]
   },
   {
     "slug": "manageyum",
@@ -2098,7 +3251,15 @@
     "icon": "manageyum-icon.png",
     "icon32": "manageyum-icon-32.png",
     "icon64": "manageyum-icon-64.png",
-    "icon128": "manageyum-icon-128.png"
+    "icon128": "manageyum-icon-128.png",
+    "date": "2016-12-13",
+    "iconColors": [
+      "#3bcbc4",
+      "#fbfbfb",
+      "#9be4e3",
+      "#66d6d1",
+      "#c6efee"
+    ]
   },
   {
     "slug": "mancy",
@@ -2108,7 +3269,15 @@
     "icon": "mancy-icon.png",
     "icon32": "mancy-icon-32.png",
     "icon64": "mancy-icon-64.png",
-    "icon128": "mancy-icon-128.png"
+    "icon128": "mancy-icon-128.png",
+    "date": "2015-11-15",
+    "iconColors": [
+      "#d41464",
+      "#d4145c",
+      "#d81464",
+      "#d81464",
+      "#d81464"
+    ]
   },
   {
     "slug": "mapbox",
@@ -2119,7 +3288,15 @@
     "icon": "mapbox-icon.png",
     "icon32": "mapbox-icon-32.png",
     "icon64": "mapbox-icon-64.png",
-    "icon128": "mapbox-icon-128.png"
+    "icon128": "mapbox-icon-128.png",
+    "date": "2015-04-08",
+    "iconColors": [
+      "#ddca97",
+      "#256698",
+      "#80b8ca",
+      "#0a143e",
+      "#4cacd4"
+    ]
   },
   {
     "slug": "markdownify",
@@ -2141,7 +3318,15 @@
     "icon": "markdownify-icon.png",
     "icon32": "markdownify-icon-32.png",
     "icon64": "markdownify-icon-64.png",
-    "icon128": "markdownify-icon-128.png"
+    "icon128": "markdownify-icon-128.png",
+    "date": "2016-05-16",
+    "iconColors": [
+      "#fa055d",
+      "#44237b",
+      "#7f1970",
+      "#641c74",
+      "#b30d65"
+    ]
   },
   {
     "slug": "marp",
@@ -2159,7 +3344,15 @@
     "icon": "marp-icon.png",
     "icon32": "marp-icon-32.png",
     "icon64": "marp-icon-64.png",
-    "icon128": "marp-icon-128.png"
+    "icon128": "marp-icon-128.png",
+    "date": "2016-07-15",
+    "iconColors": [
+      "#0b8ccf",
+      "#f0f0f1",
+      "#60abd7",
+      "#84c4e2",
+      "#a0b4c4"
+    ]
   },
   {
     "slug": "mattermost",
@@ -2169,7 +3362,15 @@
     "icon": "mattermost-icon.png",
     "icon32": "mattermost-icon-32.png",
     "icon64": "mattermost-icon-64.png",
-    "icon128": "mattermost-icon-128.png"
+    "icon128": "mattermost-icon-128.png",
+    "date": "2016-03-31",
+    "iconColors": [
+      "#242424",
+      "#282424",
+      "#282424",
+      "#282424",
+      "#282424"
+    ]
   },
   {
     "slug": "mdnote",
@@ -2179,7 +3380,15 @@
     "icon": "mdnote-icon.png",
     "icon32": "mdnote-icon-32.png",
     "icon64": "mdnote-icon-64.png",
-    "icon128": "mdnote-icon-128.png"
+    "icon128": "mdnote-icon-128.png",
+    "date": "2015-12-10",
+    "iconColors": [
+      "#fbab04",
+      "#312a2a",
+      "#f6f6f6",
+      "#706c6c",
+      "#8e6424"
+    ]
   },
   {
     "slug": "medley",
@@ -2194,7 +3403,15 @@
     "icon": "medley-icon.png",
     "icon32": "medley-icon-32.png",
     "icon64": "medley-icon-64.png",
-    "icon128": "medley-icon-128.png"
+    "icon128": "medley-icon-128.png",
+    "date": "2016-12-13",
+    "iconColors": [
+      "#fbf9f9",
+      "#cc4c54",
+      "#e19095",
+      "#e5a4ac",
+      "#ecacac"
+    ]
   },
   {
     "slug": "microstockr",
@@ -2204,7 +3421,15 @@
     "icon": "microstockr-icon.png",
     "icon32": "microstockr-icon-32.png",
     "icon64": "microstockr-icon-64.png",
-    "icon128": "microstockr-icon-128.png"
+    "icon128": "microstockr-icon-128.png",
+    "date": "2015-09-02",
+    "iconColors": [
+      "#2f5b7e",
+      "#e7eef3",
+      "#429adc",
+      "#8dcbf3",
+      "#7e8fa1"
+    ]
   },
   {
     "slug": "min",
@@ -2220,7 +3445,15 @@
     "icon": "min-icon.png",
     "icon32": "min-icon-32.png",
     "icon64": "min-icon-64.png",
-    "icon128": "min-icon-128.png"
+    "icon128": "min-icon-128.png",
+    "date": "2016-05-26",
+    "iconColors": [
+      "#548ed4",
+      "#fbad0c",
+      "#c8a98f",
+      "#a080a4",
+      "#9aa4b8"
+    ]
   },
   {
     "slug": "minta",
@@ -2237,7 +3470,15 @@
     "icon": "minta-icon.png",
     "icon32": "minta-icon-32.png",
     "icon64": "minta-icon-64.png",
-    "icon128": "minta-icon-128.png"
+    "icon128": "minta-icon-128.png",
+    "date": "2016-12-26",
+    "iconColors": [
+      "#5c32b1",
+      "#eae9ec",
+      "#937bc9",
+      "#ac94d4",
+      "#8454c4"
+    ]
   },
   {
     "slug": "missive",
@@ -2260,7 +3501,15 @@
     "icon": "missive-icon.png",
     "icon32": "missive-icon-32.png",
     "icon64": "missive-icon-64.png",
-    "icon128": "missive-icon-128.png"
+    "icon128": "missive-icon-128.png",
+    "date": "2017-02-13",
+    "iconColors": [
+      "#2d86d2",
+      "#fafbfb",
+      "#81828a",
+      "#96c6f4",
+      "#8c949c"
+    ]
   },
   {
     "slug": "mixmax",
@@ -2274,7 +3523,15 @@
     "icon": "mixmax-icon.png",
     "icon32": "mixmax-icon-32.png",
     "icon64": "mixmax-icon-64.png",
-    "icon128": "mixmax-icon-128.png"
+    "icon128": "mixmax-icon-128.png",
+    "date": "2016-09-16",
+    "iconColors": [
+      "#f0a9fb",
+      "#2b3376",
+      "#9494ac",
+      "#696c89",
+      "#848c9c"
+    ]
   },
   {
     "slug": "mjml-app",
@@ -2289,7 +3546,15 @@
     "icon": "mjml-app-icon.png",
     "icon32": "mjml-app-icon-32.png",
     "icon64": "mjml-app-icon-64.png",
-    "icon128": "mjml-app-icon-128.png"
+    "icon128": "mjml-app-icon-128.png",
+    "date": "2016-05-16",
+    "iconColors": [
+      "#ea4e43",
+      "#fbf9f9",
+      "#f3897e",
+      "#ec7474",
+      "#f4a49c"
+    ]
   },
   {
     "slug": "mockingbot",
@@ -2299,7 +3564,15 @@
     "icon": "mockingbot-icon.png",
     "icon32": "mockingbot-icon-32.png",
     "icon64": "mockingbot-icon-64.png",
-    "icon128": "mockingbot-icon-128.png"
+    "icon128": "mockingbot-icon-128.png",
+    "date": "2016-04-14",
+    "iconColors": [
+      "#fbfaf9",
+      "#f45c54",
+      "#fb928d",
+      "#fcb1ad",
+      "#f67c74"
+    ]
   },
   {
     "slug": "moeditor",
@@ -2319,7 +3592,15 @@
     "icon": "moeditor-icon.png",
     "icon32": "moeditor-icon-32.png",
     "icon64": "moeditor-icon-64.png",
-    "icon128": "moeditor-icon-128.png"
+    "icon128": "moeditor-icon-128.png",
+    "date": "2016-08-18",
+    "iconColors": [
+      "#f3f3f3",
+      "#313131",
+      "#8c8c8c",
+      "#a9a9a9",
+      "#949494"
+    ]
   },
   {
     "slug": "mojibar",
@@ -2336,7 +3617,15 @@
     "icon": "mojibar-icon.png",
     "icon32": "mojibar-icon-32.png",
     "icon64": "mojibar-icon-64.png",
-    "icon128": "mojibar-icon-128.png"
+    "icon128": "mojibar-icon-128.png",
+    "date": "2015-07-27",
+    "iconColors": [
+      "#fbcc5b",
+      "#fcfaf7",
+      "#fcde9c",
+      "#f4cc32",
+      "#fcd57e"
+    ]
   },
   {
     "slug": "mongoclient",
@@ -2355,7 +3644,15 @@
     "icon": "mongoclient-icon.png",
     "icon32": "mongoclient-icon-32.png",
     "icon64": "mongoclient-icon-64.png",
-    "icon128": "mongoclient-icon-128.png"
+    "icon128": "mongoclient-icon-128.png",
+    "date": "2016-10-25",
+    "iconColors": [
+      "#0b0c08",
+      "#96bc19",
+      "#e597ce",
+      "#5f3b19",
+      "#b4d81c"
+    ]
   },
   {
     "slug": "mongodb-compass",
@@ -2372,7 +3669,15 @@
     "icon": "mongodb-compass-icon.png",
     "icon32": "mongodb-compass-icon-32.png",
     "icon64": "mongodb-compass-icon-64.png",
-    "icon128": "mongodb-compass-icon-128.png"
+    "icon128": "mongodb-compass-icon-128.png",
+    "date": "2017-01-09",
+    "iconColors": [
+      "#5ca251",
+      "#fbfbfb",
+      "#bccfb0",
+      "#beb99e",
+      "#9cc49c"
+    ]
   },
   {
     "slug": "mongotron",
@@ -2382,7 +3687,15 @@
     "icon": "mongotron-icon.png",
     "icon32": "mongotron-icon-32.png",
     "icon64": "mongotron-icon-64.png",
-    "icon128": "mongotron-icon-128.png"
+    "icon128": "mongotron-icon-128.png",
+    "date": "2016-01-17",
+    "iconColors": [
+      "#d2e4f2",
+      "#213250",
+      "#7fa9cc",
+      "#646c7c",
+      "#6c7484"
+    ]
   },
   {
     "slug": "museeks",
@@ -2400,7 +3713,15 @@
     "icon": "museeks-icon.png",
     "icon32": "museeks-icon-32.png",
     "icon64": "museeks-icon-64.png",
-    "icon128": "museeks-icon-128.png"
+    "icon128": "museeks-icon-128.png",
+    "date": "2016-08-12",
+    "iconColors": [
+      "#32a9e0",
+      "#eef1f2",
+      "#81b9d9",
+      "#2c80a9",
+      "#44c4eb"
+    ]
   },
   {
     "slug": "ndm",
@@ -2420,7 +3741,15 @@
     "icon": "ndm-icon.png",
     "icon32": "ndm-icon-32.png",
     "icon64": "ndm-icon-64.png",
-    "icon128": "ndm-icon-128.png"
+    "icon128": "ndm-icon-128.png",
+    "date": "2016-12-13",
+    "iconColors": [
+      "#f5f5f5",
+      "#e40d0d",
+      "#f28f8f",
+      "#ec7c7c",
+      "#d9b4b4"
+    ]
   },
   {
     "slug": "negative",
@@ -2438,7 +3767,15 @@
     "icon": "negative-icon.png",
     "icon32": "negative-icon-32.png",
     "icon64": "negative-icon-64.png",
-    "icon128": "negative-icon-128.png"
+    "icon128": "negative-icon-128.png",
+    "date": "2016-05-24",
+    "iconColors": [
+      "#068a84",
+      "#eaebeb",
+      "#72b2b4",
+      "#71c4b9",
+      "#a0a0a0"
+    ]
   },
   {
     "slug": "netbeast",
@@ -2448,7 +3785,15 @@
     "icon": "netbeast-icon.png",
     "icon32": "netbeast-icon-32.png",
     "icon64": "netbeast-icon-64.png",
-    "icon128": "netbeast-icon-128.png"
+    "icon128": "netbeast-icon-128.png",
+    "date": "2016-09-19",
+    "iconColors": [
+      "#29312d",
+      "#f2f0f0",
+      "#f62444",
+      "#07e0c6",
+      "#7c7c7c"
+    ]
   },
   {
     "slug": "nimble",
@@ -2458,7 +3803,15 @@
     "icon": "nimble-icon.png",
     "icon32": "nimble-icon-32.png",
     "icon64": "nimble-icon-64.png",
-    "icon128": "nimble-icon-128.png"
+    "icon128": "nimble-icon-128.png",
+    "date": "2016-02-16",
+    "iconColors": [
+      "#e7e7e6",
+      "#fb890d",
+      "#bc6c16",
+      "#c6996d",
+      "#fcb45c"
+    ]
   },
   {
     "slug": "notr",
@@ -2472,7 +3825,15 @@
     "icon": "notr-icon.png",
     "icon32": "notr-icon-32.png",
     "icon64": "notr-icon-64.png",
-    "icon128": "notr-icon-128.png"
+    "icon128": "notr-icon-128.png",
+    "date": "2016-12-13",
+    "iconColors": [
+      "#e7e215",
+      "#ebebeb",
+      "#5a5958",
+      "#9c847c",
+      "#a48c7c"
+    ]
   },
   {
     "slug": "now",
@@ -2491,7 +3852,15 @@
     "icon": "now-icon.png",
     "icon32": "now-icon-32.png",
     "icon64": "now-icon-64.png",
-    "icon128": "now-icon-128.png"
+    "icon128": "now-icon-128.png",
+    "date": "2016-10-04",
+    "iconColors": [
+      "#f0f0f0",
+      "#040404",
+      "#747474",
+      "#848484",
+      "#6c6c6c"
+    ]
   },
   {
     "slug": "nteract",
@@ -2509,7 +3878,15 @@
     "icon": "nteract-icon.png",
     "icon32": "nteract-icon-32.png",
     "icon64": "nteract-icon-64.png",
-    "icon128": "nteract-icon-128.png"
+    "icon128": "nteract-icon-128.png",
+    "date": "2016-10-29",
+    "iconColors": [
+      "#bdd5e6",
+      "#30455b",
+      "#5c759c",
+      "#1ecbf2",
+      "#465c78"
+    ]
   },
   {
     "slug": "nuclide",
@@ -2519,7 +3896,15 @@
     "icon": "nuclide-icon.png",
     "icon32": "nuclide-icon-32.png",
     "icon64": "nuclide-icon-64.png",
-    "icon128": "nuclide-icon-128.png"
+    "icon128": "nuclide-icon-128.png",
+    "date": "2015-04-03",
+    "iconColors": [
+      "#6c1b9c",
+      "#9d4dcd",
+      "#4b138c",
+      "#843cb4",
+      "#7c34ac"
+    ]
   },
   {
     "slug": "nylas-n1",
@@ -2529,7 +3914,15 @@
     "icon": "nylas-n1-icon.png",
     "icon32": "nylas-n1-icon-32.png",
     "icon64": "nylas-n1-icon-64.png",
-    "icon128": "nylas-n1-icon-128.png"
+    "icon128": "nylas-n1-icon-128.png",
+    "date": "2015-10-05",
+    "iconColors": [
+      "#4abb9b",
+      "#eff5f4",
+      "#91d3ae",
+      "#099f95",
+      "#7cbcbc"
+    ]
   },
   {
     "slug": "opale-messenger",
@@ -2554,7 +3947,15 @@
     "icon": "opale-messenger-icon.png",
     "icon32": "opale-messenger-icon-32.png",
     "icon64": "opale-messenger-icon-64.png",
-    "icon128": "opale-messenger-icon-128.png"
+    "icon128": "opale-messenger-icon-128.png",
+    "date": "2017-01-24",
+    "iconColors": [
+      "#0477f1",
+      "#f2f6fc",
+      "#040910",
+      "#043c7c",
+      "#7cacfc"
+    ]
   },
   {
     "slug": "open-stage-control",
@@ -2564,7 +3965,15 @@
     "icon": "open-stage-control-icon.png",
     "icon32": "open-stage-control-icon-32.png",
     "icon64": "open-stage-control-icon-64.png",
-    "icon128": "open-stage-control-icon-128.png"
+    "icon128": "open-stage-control-icon-128.png",
+    "date": "2016-12-04",
+    "iconColors": [
+      "#2e3749",
+      "#549cf0",
+      "#445d7f",
+      "#44546b",
+      "#416c9c"
+    ]
   },
   {
     "slug": "openbazaar",
@@ -2579,7 +3988,15 @@
     "icon": "openbazaar-icon.png",
     "icon32": "openbazaar-icon-32.png",
     "icon64": "openbazaar-icon-64.png",
-    "icon128": "openbazaar-icon-128.png"
+    "icon128": "openbazaar-icon-128.png",
+    "date": "2016-12-04",
+    "iconColors": [
+      "#0b65a8",
+      "#fafbfb",
+      "#1c2c3c",
+      "#2b7ce3",
+      "#7eb6dc"
+    ]
   },
   {
     "slug": "pamfax",
@@ -2595,7 +4012,15 @@
     "icon": "pamfax-icon.png",
     "icon32": "pamfax-icon-32.png",
     "icon64": "pamfax-icon-64.png",
-    "icon128": "pamfax-icon-128.png"
+    "icon128": "pamfax-icon-128.png",
+    "date": "2016-08-04",
+    "iconColors": [
+      "#fbfafb",
+      "#cc04cc",
+      "#de5cde",
+      "#eb9ceb",
+      "#d42cd4"
+    ]
   },
   {
     "slug": "papyrus",
@@ -2613,7 +4038,15 @@
     "icon": "papyrus-icon.png",
     "icon32": "papyrus-icon-32.png",
     "icon64": "papyrus-icon-64.png",
-    "icon128": "papyrus-icon-128.png"
+    "icon128": "papyrus-icon-128.png",
+    "date": "2017-01-13",
+    "iconColors": [
+      "#1385e4",
+      "#fbfbfb",
+      "#96abbe",
+      "#c4c4c4",
+      "#cccccc"
+    ]
   },
   {
     "slug": "particle-dev",
@@ -2623,7 +4056,15 @@
     "icon": "particle-dev-icon.png",
     "icon32": "particle-dev-icon-32.png",
     "icon64": "particle-dev-icon-64.png",
-    "icon128": "particle-dev-icon-128.png"
+    "icon128": "particle-dev-icon-128.png",
+    "date": "2015-05-16",
+    "iconColors": [
+      "#55b1e3",
+      "#e1e2e3",
+      "#13a3e4",
+      "#9bbcd6",
+      "#84c4ec"
+    ]
   },
   {
     "slug": "paws-for-trello",
@@ -2640,7 +4081,15 @@
     "icon": "paws-for-trello-icon.png",
     "icon32": "paws-for-trello-icon-32.png",
     "icon64": "paws-for-trello-icon-64.png",
-    "icon128": "paws-for-trello-icon-128.png"
+    "icon128": "paws-for-trello-icon-128.png",
+    "date": "2016-07-08",
+    "iconColors": [
+      "#065eb1",
+      "#f7f1f7",
+      "#928a90",
+      "#74a4d4",
+      "#8c748c"
+    ]
   },
   {
     "slug": "pencil",
@@ -2660,7 +4109,15 @@
     "icon": "pencil-icon.png",
     "icon32": "pencil-icon-32.png",
     "icon64": "pencil-icon-64.png",
-    "icon128": "pencil-icon-128.png"
+    "icon128": "pencil-icon-128.png",
+    "date": "2016-06-06",
+    "iconColors": [
+      "#fbfaf9",
+      "#f38b04",
+      "#874f07",
+      "#e8b265",
+      "#fcc479"
+    ]
   },
   {
     "slug": "pexels",
@@ -2674,7 +4131,15 @@
     "icon": "pexels-icon.png",
     "icon32": "pexels-icon-32.png",
     "icon64": "pexels-icon-64.png",
-    "icon128": "pexels-icon-128.png"
+    "icon128": "pexels-icon-128.png",
+    "date": "2016-09-01",
+    "iconColors": [
+      "#040404",
+      "#f9f9f9",
+      "#848484",
+      "#747474",
+      "#7c7c7c"
+    ]
   },
   {
     "slug": "phonegap",
@@ -2693,7 +4158,15 @@
     "icon": "phonegap-icon.png",
     "icon32": "phonegap-icon-32.png",
     "icon64": "phonegap-icon-64.png",
-    "icon128": "phonegap-icon-128.png"
+    "icon128": "phonegap-icon-128.png",
+    "date": "2016-07-27",
+    "iconColors": [
+      "#cdcdcd",
+      "#193e54",
+      "#7995a2",
+      "#6b6c6c",
+      "#646467"
+    ]
   },
   {
     "slug": "phonepresenter",
@@ -2712,7 +4185,15 @@
     "icon": "phonepresenter-icon.png",
     "icon32": "phonepresenter-icon-32.png",
     "icon64": "phonepresenter-icon-64.png",
-    "icon128": "phonepresenter-icon-128.png"
+    "icon128": "phonepresenter-icon-128.png",
+    "date": "2016-07-03",
+    "iconColors": [
+      "#2594f3",
+      "#f5f8fb",
+      "#080808",
+      "#515151",
+      "#82c4fc"
+    ]
   },
   {
     "slug": "photoscreensaver",
@@ -2727,7 +4208,15 @@
     "icon": "photoscreensaver-icon.png",
     "icon32": "photoscreensaver-icon-32.png",
     "icon64": "photoscreensaver-icon-64.png",
-    "icon128": "photoscreensaver-icon-128.png"
+    "icon128": "photoscreensaver-icon-128.png",
+    "date": "2016-05-11",
+    "iconColors": [
+      "#c5b9a4",
+      "#131313",
+      "#fba736",
+      "#dd472f",
+      "#747e98"
+    ]
   },
   {
     "slug": "pilemd",
@@ -2744,7 +4233,15 @@
     "icon": "pilemd-icon.png",
     "icon32": "pilemd-icon-32.png",
     "icon64": "pilemd-icon-64.png",
-    "icon128": "pilemd-icon-128.png"
+    "icon128": "pilemd-icon-128.png",
+    "date": "2016-05-12",
+    "iconColors": [
+      "#2cc2cf",
+      "#f9f9f9",
+      "#7fbcc2",
+      "#49969b",
+      "#41a4a4"
+    ]
   },
   {
     "slug": "plain-email",
@@ -2758,7 +4255,15 @@
     "icon": "plain-email-icon.png",
     "icon32": "plain-email-icon-32.png",
     "icon64": "plain-email-icon-64.png",
-    "icon128": "plain-email-icon-128.png"
+    "icon128": "plain-email-icon-128.png",
+    "date": "2016-05-11",
+    "iconColors": [
+      "#9eda19",
+      "#f8f9f6",
+      "#b6e077",
+      "#c4e484",
+      "#6c9e04"
+    ]
   },
   {
     "slug": "playback",
@@ -2773,7 +4278,15 @@
     "icon": "playback-icon.png",
     "icon32": "playback-icon-32.png",
     "icon64": "playback-icon-64.png",
-    "icon128": "playback-icon-128.png"
+    "icon128": "playback-icon-128.png",
+    "date": "2015-04-06",
+    "iconColors": [
+      "#313232",
+      "#388d3c",
+      "#2f5632",
+      "#2d452e",
+      "#26102c"
+    ]
   },
   {
     "slug": "popkey",
@@ -2783,7 +4296,15 @@
     "icon": "popkey-icon.png",
     "icon32": "popkey-icon-32.png",
     "icon64": "popkey-icon-64.png",
-    "icon128": "popkey-icon-128.png"
+    "icon128": "popkey-icon-128.png",
+    "date": "2015-07-27",
+    "iconColors": [
+      "#fa43b3",
+      "#fbf9fa",
+      "#101010",
+      "#da8aba",
+      "#848484"
+    ]
   },
   {
     "slug": "postman",
@@ -2793,7 +4314,15 @@
     "icon": "postman-icon.png",
     "icon32": "postman-icon-32.png",
     "icon64": "postman-icon-64.png",
-    "icon128": "postman-icon-128.png"
+    "icon128": "postman-icon-128.png",
+    "date": "2016-02-22",
+    "iconColors": [
+      "#cac6c3",
+      "#f45e24",
+      "#686868",
+      "#fcbc74",
+      "#f4926a"
+    ]
   },
   {
     "slug": "pracontrol",
@@ -2803,7 +4332,15 @@
     "icon": "pracontrol-icon.png",
     "icon32": "pracontrol-icon-32.png",
     "icon64": "pracontrol-icon-64.png",
-    "icon128": "pracontrol-icon-128.png"
+    "icon128": "pracontrol-icon-128.png",
+    "date": "2016-03-06",
+    "iconColors": [
+      "#fbfafa",
+      "#dc8c54",
+      "#ecc4ac",
+      "#ecb48d",
+      "#ecbc9c"
+    ]
   },
   {
     "slug": "preserver",
@@ -2819,7 +4356,15 @@
     "icon": "preserver-icon.png",
     "icon32": "preserver-icon-32.png",
     "icon64": "preserver-icon-64.png",
-    "icon128": "preserver-icon-128.png"
+    "icon128": "preserver-icon-128.png",
+    "date": "2016-06-08",
+    "iconColors": [
+      "#d3ac55",
+      "#f9faf9",
+      "#75c4cb",
+      "#a1b797",
+      "#a9dce4"
+    ]
   },
   {
     "slug": "presets-io",
@@ -2829,7 +4374,15 @@
     "icon": "presets-io-icon.png",
     "icon32": "presets-io-icon-32.png",
     "icon64": "presets-io-icon-64.png",
-    "icon128": "presets-io-icon-128.png"
+    "icon128": "presets-io-icon-128.png",
+    "date": "2016-02-22",
+    "iconColors": [
+      "#e44c3c",
+      "#e84c3c",
+      "#e84c3c",
+      "#e84c3c",
+      "#e84c3c"
+    ]
   },
   {
     "slug": "proposales",
@@ -2839,7 +4392,15 @@
     "icon": "proposales-icon.png",
     "icon32": "proposales-icon-32.png",
     "icon64": "proposales-icon-64.png",
-    "icon128": "proposales-icon-128.png"
+    "icon128": "proposales-icon-128.png",
+    "date": "2017-01-06",
+    "iconColors": [
+      "#242424",
+      "#f2f2f2",
+      "#8c8c8c",
+      "#848484",
+      "#68686a"
+    ]
   },
   {
     "slug": "protopie",
@@ -2856,7 +4417,15 @@
     "icon": "protopie-icon.png",
     "icon32": "protopie-icon-32.png",
     "icon64": "protopie-icon-64.png",
-    "icon128": "protopie-icon-128.png"
+    "icon128": "protopie-icon-128.png",
+    "date": "2016-06-27",
+    "iconColors": [
+      "#fc706e",
+      "#fcfbfb",
+      "#fca2a0",
+      "#fcb4b4",
+      "#fcbcbc"
+    ]
   },
   {
     "slug": "pupafm",
@@ -2876,7 +4445,15 @@
     "icon": "pupafm-icon.png",
     "icon32": "pupafm-icon-32.png",
     "icon64": "pupafm-icon-64.png",
-    "icon128": "pupafm-icon-128.png"
+    "icon128": "pupafm-icon-128.png",
+    "date": "2016-05-23",
+    "iconColors": [
+      "#fbfbfb",
+      "#4ca75c",
+      "#b4d7bc",
+      "#9ccca4",
+      "#cccccc"
+    ]
   },
   {
     "slug": "qmui-web",
@@ -2896,7 +4473,15 @@
     "icon": "qmui-web-icon.png",
     "icon32": "qmui-web-icon-32.png",
     "icon64": "qmui-web-icon-64.png",
-    "icon128": "qmui-web-icon-128.png"
+    "icon128": "qmui-web-icon-128.png",
+    "date": "2016-08-23",
+    "iconColors": [
+      "#e2eaec",
+      "#07b9e1",
+      "#8fccda",
+      "#a6aeb6",
+      "#acbcbc"
+    ]
   },
   {
     "slug": "quail",
@@ -2909,7 +4494,15 @@
     "icon": "quail-icon.png",
     "icon32": "quail-icon-32.png",
     "icon64": "quail-icon-64.png",
-    "icon128": "quail-icon-128.png"
+    "icon128": "quail-icon-128.png",
+    "date": "2016-12-13",
+    "iconColors": [
+      "#f9fafa",
+      "#1d9c94",
+      "#ba842f",
+      "#949494",
+      "#84ccc4"
+    ]
   },
   {
     "slug": "quickcalc",
@@ -2925,7 +4518,15 @@
     "icon": "quickcalc-icon.png",
     "icon32": "quickcalc-icon-32.png",
     "icon64": "quickcalc-icon-64.png",
-    "icon128": "quickcalc-icon-128.png"
+    "icon128": "quickcalc-icon-128.png",
+    "date": "2016-09-23",
+    "iconColors": [
+      "#7cd424",
+      "#fbfbfb",
+      "#bce58b",
+      "#abe271",
+      "#bcec94"
+    ]
   },
   {
     "slug": "rambox",
@@ -2953,7 +4554,15 @@
     "icon": "rambox-icon.png",
     "icon32": "rambox-icon-32.png",
     "icon64": "rambox-icon-64.png",
-    "icon128": "rambox-icon-128.png"
+    "icon128": "rambox-icon-128.png",
+    "date": "2016-08-06",
+    "iconColors": [
+      "#3294b3",
+      "#293162",
+      "#fafbfb",
+      "#9484a4",
+      "#6c5c7c"
+    ]
   },
   {
     "slug": "ramme",
@@ -2971,7 +4580,15 @@
     "icon": "ramme-icon.png",
     "icon32": "ramme-icon-32.png",
     "icon64": "ramme-icon-64.png",
-    "icon128": "ramme-icon-128.png"
+    "icon128": "ramme-icon-128.png",
+    "date": "2016-08-23",
+    "iconColors": [
+      "#fbfafa",
+      "#c84987",
+      "#e8a356",
+      "#cc8ccc",
+      "#c47ccc"
+    ]
   },
   {
     "slug": "remember",
@@ -2981,7 +4598,15 @@
     "icon": "remember-icon.png",
     "icon32": "remember-icon-32.png",
     "icon64": "remember-icon-64.png",
-    "icon128": "remember-icon-128.png"
+    "icon128": "remember-icon-128.png",
+    "date": "2016-02-17",
+    "iconColors": [
+      "#f1f2f2",
+      "#249c7c",
+      "#6fb9a7",
+      "#84c4b4",
+      "#98ccbc"
+    ]
   },
   {
     "slug": "remind",
@@ -2999,7 +4624,15 @@
     "icon": "remind-icon.png",
     "icon32": "remind-icon-32.png",
     "icon64": "remind-icon-64.png",
-    "icon128": "remind-icon-128.png"
+    "icon128": "remind-icon-128.png",
+    "date": "2016-12-24",
+    "iconColors": [
+      "#4c8cdc",
+      "#fbfbfb",
+      "#a4c4ec",
+      "#8eb4ea",
+      "#b4ccf4"
+    ]
   },
   {
     "slug": "reqview",
@@ -3015,7 +4648,15 @@
     "icon": "reqview-icon.png",
     "icon32": "reqview-icon-32.png",
     "icon64": "reqview-icon-64.png",
-    "icon128": "reqview-icon-128.png"
+    "icon128": "reqview-icon-128.png",
+    "date": "2017-01-17",
+    "iconColors": [
+      "#843404",
+      "#f55d04",
+      "#fc9c54",
+      "#c94f04",
+      "#c85430"
+    ]
   },
   {
     "slug": "riot",
@@ -3046,7 +4687,15 @@
     "icon": "riot-icon.png",
     "icon32": "riot-icon-32.png",
     "icon64": "riot-icon-64.png",
-    "icon128": "riot-icon-128.png"
+    "icon128": "riot-icon-128.png",
+    "date": "2016-12-24",
+    "iconColors": [
+      "#7ecca5",
+      "#744c84",
+      "#abdbc3",
+      "#819798",
+      "#8c849c"
+    ]
   },
   {
     "slug": "rocket-chat",
@@ -3056,7 +4705,15 @@
     "icon": "rocket-chat-icon.png",
     "icon32": "rocket-chat-icon-32.png",
     "icon64": "rocket-chat-icon-64.png",
-    "icon128": "rocket-chat-icon-128.png"
+    "icon128": "rocket-chat-icon-128.png",
+    "date": "2015-08-28",
+    "iconColors": [
+      "#c4242b",
+      "#f8f7f7",
+      "#d19a9c",
+      "#d47c7c",
+      "#cc6c74"
+    ]
   },
   {
     "slug": "screencat",
@@ -3071,7 +4728,15 @@
     "icon": "screencat-icon.png",
     "icon32": "screencat-icon-32.png",
     "icon64": "screencat-icon-64.png",
-    "icon128": "screencat-icon-128.png"
+    "icon128": "screencat-icon-128.png",
+    "date": "2015-04-06",
+    "iconColors": [
+      "#040404",
+      "#080404",
+      "#080404",
+      "#080404",
+      "#080404"
+    ]
   },
   {
     "slug": "sealtalk",
@@ -3089,7 +4754,15 @@
     "icon": "sealtalk-icon.png",
     "icon32": "sealtalk-icon-32.png",
     "icon64": "sealtalk-icon-64.png",
-    "icon128": "sealtalk-icon-128.png"
+    "icon128": "sealtalk-icon-128.png",
+    "date": "2016-09-07",
+    "iconColors": [
+      "#1ba4fb",
+      "#e0f3fc",
+      "#7acbfc",
+      "#54bcfc",
+      "#9cd4fc"
+    ]
   },
   {
     "slug": "seapig",
@@ -3107,7 +4780,15 @@
     "icon": "seapig-icon.png",
     "icon32": "seapig-icon-32.png",
     "icon64": "seapig-icon-64.png",
-    "icon128": "seapig-icon-128.png"
+    "icon128": "seapig-icon-128.png",
+    "date": "2016-08-16",
+    "iconColors": [
+      "#9aa9b8",
+      "#1d1c26",
+      "#64707c",
+      "#6c7482",
+      "#646c74"
+    ]
   },
   {
     "slug": "sencha-architect",
@@ -3123,7 +4804,15 @@
     "icon": "sencha-architect-icon.png",
     "icon32": "sencha-architect-icon-32.png",
     "icon64": "sencha-architect-icon-64.png",
-    "icon128": "sencha-architect-icon-128.png"
+    "icon128": "sencha-architect-icon-128.png",
+    "date": "2016-10-10",
+    "iconColors": [
+      "#2c7cb3",
+      "#fbfbfb",
+      "#0c446c",
+      "#7cacd4",
+      "#94bcdc"
+    ]
   },
   {
     "slug": "sencha-inspector",
@@ -3139,7 +4828,15 @@
     "icon": "sencha-inspector-icon.png",
     "icon32": "sencha-inspector-icon-32.png",
     "icon64": "sencha-inspector-icon-64.png",
-    "icon128": "sencha-inspector-icon-128.png"
+    "icon128": "sencha-inspector-icon-128.png",
+    "date": "2016-10-10",
+    "iconColors": [
+      "#04b383",
+      "#f8fafa",
+      "#047151",
+      "#56bca2",
+      "#74d4bc"
+    ]
   },
   {
     "slug": "sencha-test",
@@ -3155,7 +4852,15 @@
     "icon": "sencha-test-icon.png",
     "icon32": "sencha-test-icon-32.png",
     "icon64": "sencha-test-icon-64.png",
-    "icon128": "sencha-test-icon-128.png"
+    "icon128": "sencha-test-icon-128.png",
+    "date": "2016-05-13",
+    "iconColors": [
+      "#3393ab",
+      "#fbfbfb",
+      "#04445c",
+      "#7badbb",
+      "#8cc4d4"
+    ]
   },
   {
     "slug": "sencha-themer",
@@ -3171,7 +4876,15 @@
     "icon": "sencha-themer-icon.png",
     "icon32": "sencha-themer-icon-32.png",
     "icon64": "sencha-themer-icon-64.png",
-    "icon128": "sencha-themer-icon-128.png"
+    "icon128": "sencha-themer-icon-128.png",
+    "date": "2016-10-10",
+    "iconColors": [
+      "#045a81",
+      "#f5f6f8",
+      "#51798e",
+      "#74a4bc",
+      "#649cb4"
+    ]
   },
   {
     "slug": "shapespark",
@@ -3186,7 +4899,15 @@
     "icon": "shapespark-icon.png",
     "icon32": "shapespark-icon-32.png",
     "icon64": "shapespark-icon-64.png",
-    "icon128": "shapespark-icon-128.png"
+    "icon128": "shapespark-icon-128.png",
+    "date": "2017-01-12",
+    "iconColors": [
+      "#04b0ec",
+      "#2464d4",
+      "#138be1",
+      "#1c6cd4",
+      "#1494e4"
+    ]
   },
   {
     "slug": "sheepchat",
@@ -3197,7 +4918,15 @@
     "icon": "sheepchat-icon.png",
     "icon32": "sheepchat-icon-32.png",
     "icon64": "sheepchat-icon-64.png",
-    "icon128": "sheepchat-icon-128.png"
+    "icon128": "sheepchat-icon-128.png",
+    "date": "2016-12-08",
+    "iconColors": [
+      "#044363",
+      "#0cb4fb",
+      "#0c89bd",
+      "#0474a4",
+      "#0c9cd4"
+    ]
   },
   {
     "slug": "shiba",
@@ -3214,7 +4943,15 @@
     "icon": "shiba-icon.png",
     "icon32": "shiba-icon-32.png",
     "icon64": "shiba-icon-64.png",
-    "icon128": "shiba-icon-128.png"
+    "icon128": "shiba-icon-128.png",
+    "date": "2016-04-22",
+    "iconColors": [
+      "#e1b077",
+      "#37200a",
+      "#cb3742",
+      "#9e784e",
+      "#745424"
+    ]
   },
   {
     "slug": "shift",
@@ -3224,7 +4961,15 @@
     "icon": "shift-icon.png",
     "icon32": "shift-icon-32.png",
     "icon64": "shift-icon-64.png",
-    "icon128": "shift-icon-128.png"
+    "icon128": "shift-icon-128.png",
+    "date": "2017-01-10",
+    "iconColors": [
+      "#3c414f",
+      "#efc09d",
+      "#44b464",
+      "#3e7be1",
+      "#737484"
+    ]
   },
   {
     "slug": "shortexts",
@@ -3239,7 +4984,15 @@
     "icon": "shortexts-icon.png",
     "icon32": "shortexts-icon-32.png",
     "icon64": "shortexts-icon-64.png",
-    "icon128": "shortexts-icon-128.png"
+    "icon128": "shortexts-icon-128.png",
+    "date": "2016-09-28",
+    "iconColors": [
+      "#046cf4",
+      "#0474fc",
+      "#0474f4",
+      "#046cec",
+      "#086cf4"
+    ]
   },
   {
     "slug": "shots",
@@ -3255,7 +5008,15 @@
     "icon": "shots-icon.png",
     "icon32": "shots-icon-32.png",
     "icon64": "shots-icon-64.png",
-    "icon128": "shots-icon-128.png"
+    "icon128": "shots-icon-128.png",
+    "date": "2016-10-25",
+    "iconColors": [
+      "#34ace4",
+      "#38ace4",
+      "#38ace4",
+      "#38ace4",
+      "#38ace4"
+    ]
   },
   {
     "slug": "simplenote",
@@ -3272,7 +5033,15 @@
     "icon": "simplenote-icon.png",
     "icon32": "simplenote-icon-32.png",
     "icon64": "simplenote-icon-64.png",
-    "icon128": "simplenote-icon-128.png"
+    "icon128": "simplenote-icon-128.png",
+    "date": "2016-06-13",
+    "iconColors": [
+      "#f4f4f4",
+      "#4a93d5",
+      "#b1cde6",
+      "#8ebce4",
+      "#acbccc"
+    ]
   },
   {
     "slug": "skrifa",
@@ -3292,7 +5061,15 @@
     "icon": "skrifa-icon.png",
     "icon32": "skrifa-icon-32.png",
     "icon64": "skrifa-icon-64.png",
-    "icon128": "skrifa-icon-128.png"
+    "icon128": "skrifa-icon-128.png",
+    "date": "2017-01-10",
+    "iconColors": [
+      "#fbfbfb",
+      "#298a65",
+      "#fc3b33",
+      "#fccc07",
+      "#99aaa2"
+    ]
   },
   {
     "slug": "slack",
@@ -3302,7 +5079,15 @@
     "icon": "slack-icon.png",
     "icon32": "slack-icon-32.png",
     "icon64": "slack-icon-64.png",
-    "icon128": "slack-icon-128.png"
+    "icon128": "slack-icon-128.png",
+    "date": "2015-04-08",
+    "iconColors": [
+      "#4bb398",
+      "#f2f6f6",
+      "#db134d",
+      "#eaa923",
+      "#32133a"
+    ]
   },
   {
     "slug": "slack-catchup",
@@ -3313,7 +5098,15 @@
     "icon": "slack-catchup-icon.png",
     "icon32": "slack-catchup-icon-32.png",
     "icon64": "slack-catchup-icon-64.png",
-    "icon128": "slack-catchup-icon-128.png"
+    "icon128": "slack-catchup-icon-128.png",
+    "date": "2016-11-17",
+    "iconColors": [
+      "#443253",
+      "#ebebef",
+      "#7e7388",
+      "#90849c",
+      "#9c94a4"
+    ]
   },
   {
     "slug": "socialcast",
@@ -3331,7 +5124,43 @@
     "icon": "socialcast-icon.png",
     "icon32": "socialcast-icon-32.png",
     "icon64": "socialcast-icon-64.png",
-    "icon128": "socialcast-icon-128.png"
+    "icon128": "socialcast-icon-128.png",
+    "date": "2016-06-14",
+    "iconColors": [
+      "#64b3db",
+      "#f7f9fb",
+      "#9ecde7",
+      "#b4d4ec",
+      "#84c4e0"
+    ]
+  },
+  {
+    "slug": "socket-io-tester",
+    "name": "Socket.io tester",
+    "description": "Test your socket.io server, while developing",
+    "website": "http://appsaloon.github.io/socket.io-tester/",
+    "repository": "https://github.com/AppSaloon/socket.io-tester",
+    "keywords": [
+      "socket.io",
+      "websockets",
+      "development",
+      "developer tools",
+      "web technology",
+      "productivity"
+    ],
+    "license": "GPL-2.0",
+    "icon": "socket-io-tester-icon.png",
+    "icon32": "socket-io-tester-icon-32.png",
+    "icon64": "socket-io-tester-icon-64.png",
+    "icon128": "socket-io-tester-icon-128.png",
+    "date": "2017-02-15",
+    "iconColors": [
+      "#7d5093",
+      "#fbfbfb",
+      "#060506",
+      "#464148",
+      "#acacac"
+    ]
   },
   {
     "slug": "soube",
@@ -3347,7 +5176,15 @@
     "icon": "soube-icon.png",
     "icon32": "soube-icon-32.png",
     "icon64": "soube-icon-64.png",
-    "icon128": "soube-icon-128.png"
+    "icon128": "soube-icon-128.png",
+    "date": "2016-09-22",
+    "iconColors": [
+      "#fafafa",
+      "#363435",
+      "#d91e64",
+      "#7d7d7d",
+      "#949494"
+    ]
   },
   {
     "slug": "soundnode",
@@ -3364,7 +5201,15 @@
     "icon": "soundnode-icon.png",
     "icon32": "soundnode-icon-32.png",
     "icon64": "soundnode-icon-64.png",
-    "icon128": "soundnode-icon-128.png"
+    "icon128": "soundnode-icon-128.png",
+    "date": "2016-05-25",
+    "iconColors": [
+      "#9a3156",
+      "#f5ebec",
+      "#d53542",
+      "#ba7c95",
+      "#ba90ac"
+    ]
   },
   {
     "slug": "spectrum",
@@ -3374,7 +5219,15 @@
     "icon": "spectrum-icon.png",
     "icon32": "spectrum-icon-32.png",
     "icon64": "spectrum-icon-64.png",
-    "icon128": "spectrum-icon-128.png"
+    "icon128": "spectrum-icon-128.png",
+    "date": "2016-04-26",
+    "iconColors": [
+      "#050607",
+      "#ede864",
+      "#3ab4e6",
+      "#4669b0",
+      "#52513e"
+    ]
   },
   {
     "slug": "spreaker-studio",
@@ -3384,7 +5237,15 @@
     "icon": "spreaker-studio-icon.png",
     "icon32": "spreaker-studio-icon-32.png",
     "icon64": "spreaker-studio-icon-64.png",
-    "icon128": "spreaker-studio-icon-128.png"
+    "icon128": "spreaker-studio-icon-128.png",
+    "date": "2015-10-14",
+    "iconColors": [
+      "#f9f5f5",
+      "#c92e31",
+      "#e08284",
+      "#e4949c",
+      "#d4646c"
+    ]
   },
   {
     "slug": "sqlectron",
@@ -3402,7 +5263,15 @@
     "icon": "sqlectron-icon.png",
     "icon32": "sqlectron-icon-32.png",
     "icon64": "sqlectron-icon-64.png",
-    "icon128": "sqlectron-icon-128.png"
+    "icon128": "sqlectron-icon-128.png",
+    "date": "2016-05-11",
+    "iconColors": [
+      "#3898a7",
+      "#fafafa",
+      "#9ebfcb",
+      "#848cb5",
+      "#8c94ac"
+    ]
   },
   {
     "slug": "stacer",
@@ -3417,7 +5286,15 @@
     "icon": "stacer-icon.png",
     "icon32": "stacer-icon-32.png",
     "icon64": "stacer-icon-64.png",
-    "icon128": "stacer-icon-128.png"
+    "icon128": "stacer-icon-128.png",
+    "date": "2016-12-14",
+    "iconColors": [
+      "#f3f3f4",
+      "#305263",
+      "#59d4da",
+      "#209fb8",
+      "#7f8b98"
+    ]
   },
   {
     "slug": "stamp",
@@ -3433,7 +5310,15 @@
     "icon": "stamp-icon.png",
     "icon32": "stamp-icon-32.png",
     "icon64": "stamp-icon-64.png",
-    "icon128": "stamp-icon-128.png"
+    "icon128": "stamp-icon-128.png",
+    "date": "2016-05-18",
+    "iconColors": [
+      "#225271",
+      "#efefef",
+      "#99053f",
+      "#9bc0ca",
+      "#8a7e94"
+    ]
   },
   {
     "slug": "steelseries-engine-3",
@@ -3443,7 +5328,15 @@
     "icon": "steelseries-engine-3-icon.png",
     "icon32": "steelseries-engine-3-icon-32.png",
     "icon64": "steelseries-engine-3-icon-64.png",
-    "icon128": "steelseries-engine-3-icon-128.png"
+    "icon128": "steelseries-engine-3-icon-128.png",
+    "date": "2015-10-28",
+    "iconColors": [
+      "#e9e9e9",
+      "#454545",
+      "#747474",
+      "#929292",
+      "#7c7c7c"
+    ]
   },
   {
     "slug": "stoplight",
@@ -3453,7 +5346,15 @@
     "icon": "stoplight-icon.png",
     "icon32": "stoplight-icon-32.png",
     "icon64": "stoplight-icon-64.png",
-    "icon128": "stoplight-icon-128.png"
+    "icon128": "stoplight-icon-128.png",
+    "date": "2016-03-08",
+    "iconColors": [
+      "#fbfbfb",
+      "#3c9af8",
+      "#a8cef3",
+      "#84c4fc",
+      "#95bce0"
+    ]
   },
   {
     "slug": "strawberry",
@@ -3463,7 +5364,15 @@
     "icon": "strawberry-icon.png",
     "icon32": "strawberry-icon-32.png",
     "icon64": "strawberry-icon-64.png",
-    "icon128": "strawberry-icon-128.png"
+    "icon128": "strawberry-icon-128.png",
+    "date": "2016-09-16",
+    "iconColors": [
+      "#c41c2c",
+      "#eb244b",
+      "#8cc43c",
+      "#ec4b6b",
+      "#ed546c"
+    ]
   },
   {
     "slug": "subordination",
@@ -3479,7 +5388,15 @@
     "icon": "subordination-icon.png",
     "icon32": "subordination-icon-32.png",
     "icon64": "subordination-icon-64.png",
-    "icon128": "subordination-icon-128.png"
+    "icon128": "subordination-icon-128.png",
+    "date": "2016-06-06",
+    "iconColors": [
+      "#7c9ebc",
+      "#f1a648",
+      "#76b4a9",
+      "#b28d88",
+      "#b4c46c"
+    ]
   },
   {
     "slug": "superpowers-html5-2d-3d-game-maker",
@@ -3492,7 +5409,15 @@
     "icon": "superpowers-html5-2d-3d-game-maker-icon.png",
     "icon32": "superpowers-html5-2d-3d-game-maker-icon-32.png",
     "icon64": "superpowers-html5-2d-3d-game-maker-icon-64.png",
-    "icon128": "superpowers-html5-2d-3d-game-maker-icon-128.png"
+    "icon128": "superpowers-html5-2d-3d-game-maker-icon-128.png",
+    "date": "2016-02-29",
+    "iconColors": [
+      "#b3f43b",
+      "#0fa544",
+      "#e4fb6d",
+      "#f4fbe4",
+      "#6cd046"
+    ]
   },
   {
     "slug": "svgsus",
@@ -3508,7 +5433,15 @@
     "icon": "svgsus-icon.png",
     "icon32": "svgsus-icon-32.png",
     "icon64": "svgsus-icon-64.png",
-    "icon128": "svgsus-icon-128.png"
+    "icon128": "svgsus-icon-128.png",
+    "date": "2016-08-23",
+    "iconColors": [
+      "#f8f8f8",
+      "#22b5a9",
+      "#9acfcc",
+      "#bcbcbc",
+      "#c4c4c4"
+    ]
   },
   {
     "slug": "switchhosts",
@@ -3523,7 +5456,15 @@
     "icon": "switchhosts-icon.png",
     "icon32": "switchhosts-icon-32.png",
     "icon64": "switchhosts-icon-64.png",
-    "icon128": "switchhosts-icon-128.png"
+    "icon128": "switchhosts-icon-128.png",
+    "date": "2017-01-24",
+    "iconColors": [
+      "#d44454",
+      "#fbfbfb",
+      "#e49ca4",
+      "#e4a4a4",
+      "#e48c94"
+    ]
   },
   {
     "slug": "symbsearch",
@@ -3540,7 +5481,15 @@
     "icon": "symbsearch-icon.png",
     "icon32": "symbsearch-icon-32.png",
     "icon64": "symbsearch-icon-64.png",
-    "icon128": "symbsearch-icon-128.png"
+    "icon128": "symbsearch-icon-128.png",
+    "date": "2016-12-28",
+    "iconColors": [
+      "#0e4c6b",
+      "#f9fafa",
+      "#84a4b4",
+      "#7ca4b4",
+      "#7c9cb4"
+    ]
   },
   {
     "slug": "tagflow",
@@ -3557,7 +5506,15 @@
     "icon": "tagflow-icon.png",
     "icon32": "tagflow-icon-32.png",
     "icon64": "tagflow-icon-64.png",
-    "icon128": "tagflow-icon-128.png"
+    "icon128": "tagflow-icon-128.png",
+    "date": "2016-10-25",
+    "iconColors": [
+      "#5484b4",
+      "#fafafb",
+      "#95b2d2",
+      "#acc4dc",
+      "#a4c4dc"
+    ]
   },
   {
     "slug": "tagspaces",
@@ -3567,7 +5524,15 @@
     "icon": "tagspaces-icon.png",
     "icon32": "tagspaces-icon-32.png",
     "icon64": "tagspaces-icon-64.png",
-    "icon128": "tagspaces-icon-128.png"
+    "icon128": "tagspaces-icon-128.png",
+    "date": "2016-03-02",
+    "iconColors": [
+      "#686778",
+      "#f6f7f7",
+      "#f29829",
+      "#36b5bd",
+      "#a9acb4"
+    ]
   },
   {
     "slug": "temps",
@@ -3587,7 +5552,15 @@
     "icon": "temps-icon.png",
     "icon32": "temps-icon-32.png",
     "icon64": "temps-icon-64.png",
-    "icon128": "temps-icon-128.png"
+    "icon128": "temps-icon-128.png",
+    "date": "2016-09-21",
+    "iconColors": [
+      "#83bcb3",
+      "#93d3ca",
+      "#64948c",
+      "#74a49c",
+      "#74aca4"
+    ]
   },
   {
     "slug": "teseve",
@@ -3604,7 +5577,15 @@
     "icon": "teseve-icon.png",
     "icon32": "teseve-icon-32.png",
     "icon64": "teseve-icon-64.png",
-    "icon128": "teseve-icon-128.png"
+    "icon128": "teseve-icon-128.png",
+    "date": "2017-02-04",
+    "iconColors": [
+      "#fbfbfb",
+      "#f4a843",
+      "#f37926",
+      "#fbd45f",
+      "#f3b882"
+    ]
   },
   {
     "slug": "the-poker-timer",
@@ -3618,7 +5599,15 @@
     "icon": "the-poker-timer-icon.png",
     "icon32": "the-poker-timer-icon-32.png",
     "icon64": "the-poker-timer-icon-64.png",
-    "icon128": "the-poker-timer-icon-128.png"
+    "icon128": "the-poker-timer-icon-128.png",
+    "date": "2016-05-11",
+    "iconColors": [
+      "#f4f1f1",
+      "#cb1d09",
+      "#0e0d0d",
+      "#f75136",
+      "#da8d82"
+    ]
   },
   {
     "slug": "theme-juice",
@@ -3638,7 +5627,15 @@
     "icon": "theme-juice-icon.png",
     "icon32": "theme-juice-icon-32.png",
     "icon64": "theme-juice-icon-64.png",
-    "icon128": "theme-juice-icon-128.png"
+    "icon128": "theme-juice-icon-128.png",
+    "date": "2016-08-31",
+    "iconColors": [
+      "#f3a420",
+      "#2e4d4c",
+      "#ac641c",
+      "#a6c65d",
+      "#cf7a1c"
+    ]
   },
   {
     "slug": "tidal",
@@ -3653,7 +5650,15 @@
     "icon": "tidal-icon.png",
     "icon32": "tidal-icon-32.png",
     "icon64": "tidal-icon-64.png",
-    "icon128": "tidal-icon-128.png"
+    "icon128": "tidal-icon-128.png",
+    "date": "2016-12-13",
+    "iconColors": [
+      "#f1f1f1",
+      "#040404",
+      "#646464",
+      "#6c6c6c",
+      "#5c5c5c"
+    ]
   },
   {
     "slug": "tiliq",
@@ -3667,7 +5672,15 @@
     "icon": "tiliq-icon.png",
     "icon32": "tiliq-icon-32.png",
     "icon64": "tiliq-icon-64.png",
-    "icon128": "tiliq-icon-128.png"
+    "icon128": "tiliq-icon-128.png",
+    "date": "2016-05-11",
+    "iconColors": [
+      "#fafbfc",
+      "#2493fb",
+      "#837c75",
+      "#68aff0",
+      "#89c4fc"
+    ]
   },
   {
     "slug": "timestamp",
@@ -3687,7 +5700,15 @@
     "icon": "timestamp-icon.png",
     "icon32": "timestamp-icon-32.png",
     "icon64": "timestamp-icon-64.png",
-    "icon128": "timestamp-icon-128.png"
+    "icon128": "timestamp-icon-128.png",
+    "date": "2016-09-04",
+    "iconColors": [
+      "#1e9cf5",
+      "#33c4fc",
+      "#0763e7",
+      "#0c78ec",
+      "#1474cc"
+    ]
   },
   {
     "slug": "timetable",
@@ -3702,7 +5723,15 @@
     "icon": "timetable-icon.png",
     "icon32": "timetable-icon-32.png",
     "icon64": "timetable-icon-64.png",
-    "icon128": "timetable-icon-128.png"
+    "icon128": "timetable-icon-128.png",
+    "date": "2016-05-24",
+    "iconColors": [
+      "#bab9b9",
+      "#0c0c0c",
+      "#818180",
+      "#5c5c5c",
+      "#646464"
+    ]
   },
   {
     "slug": "tofino",
@@ -3712,7 +5741,15 @@
     "icon": "tofino-icon.png",
     "icon32": "tofino-icon-32.png",
     "icon64": "tofino-icon-64.png",
-    "icon128": "tofino-icon-128.png"
+    "icon128": "tofino-icon-128.png",
+    "date": "2016-04-19",
+    "iconColors": [
+      "#5b94d4",
+      "#f7f9fb",
+      "#9dc3e4",
+      "#3a8ccc",
+      "#7cbce4"
+    ]
   },
   {
     "slug": "translation-editor",
@@ -3729,7 +5766,15 @@
     "icon": "translation-editor-icon.png",
     "icon32": "translation-editor-icon-32.png",
     "icon64": "translation-editor-icon-64.png",
-    "icon128": "translation-editor-icon-128.png"
+    "icon128": "translation-editor-icon-128.png",
+    "date": "2016-08-29",
+    "iconColors": [
+      "#05c1d8",
+      "#e8eaea",
+      "#0f828f",
+      "#979a9e",
+      "#2c949c"
+    ]
   },
   {
     "slug": "treevea",
@@ -3747,7 +5792,15 @@
     "icon": "treevea-icon.png",
     "icon32": "treevea-icon-32.png",
     "icon64": "treevea-icon-64.png",
-    "icon128": "treevea-icon-128.png"
+    "icon128": "treevea-icon-128.png",
+    "date": "2016-11-10",
+    "iconColors": [
+      "#3bb39b",
+      "#fafbfb",
+      "#6acab4",
+      "#84d2bf",
+      "#5cc4ac"
+    ]
   },
   {
     "slug": "trym",
@@ -3760,7 +5813,15 @@
     "icon": "trym-icon.png",
     "icon32": "trym-icon-32.png",
     "icon64": "trym-icon-64.png",
-    "icon128": "trym-icon-128.png"
+    "icon128": "trym-icon-128.png",
+    "date": "2016-07-08",
+    "iconColors": [
+      "#354253",
+      "#eff6e7",
+      "#4ec7e7",
+      "#1893f9",
+      "#6f838e"
+    ]
   },
   {
     "slug": "turbo-download-manager",
@@ -3770,7 +5831,15 @@
     "icon": "turbo-download-manager-icon.png",
     "icon32": "turbo-download-manager-icon-32.png",
     "icon64": "turbo-download-manager-icon-64.png",
-    "icon128": "turbo-download-manager-icon-128.png"
+    "icon128": "turbo-download-manager-icon-128.png",
+    "date": "2016-02-07",
+    "iconColors": [
+      "#a4a4a4",
+      "#5c5c5c",
+      "#acacac",
+      "#94a880",
+      "#9480ac"
+    ]
   },
   {
     "slug": "tweakstyle",
@@ -3780,7 +5849,15 @@
     "icon": "tweakstyle-icon.png",
     "icon32": "tweakstyle-icon-32.png",
     "icon64": "tweakstyle-icon-64.png",
-    "icon128": "tweakstyle-icon-128.png"
+    "icon128": "tweakstyle-icon-128.png",
+    "date": "2016-04-06",
+    "iconColors": [
+      "#04bae5",
+      "#1a2123",
+      "#f8d59a",
+      "#07809f",
+      "#0c6278"
+    ]
   },
   {
     "slug": "tweeten",
@@ -3795,7 +5872,15 @@
     "icon": "tweeten-icon.png",
     "icon32": "tweeten-icon-32.png",
     "icon64": "tweeten-icon-64.png",
-    "icon128": "tweeten-icon-128.png"
+    "icon128": "tweeten-icon-128.png",
+    "date": "2016-05-31",
+    "iconColors": [
+      "#f4f8fc",
+      "#0494fc",
+      "#60bafc",
+      "#3cacfc",
+      "#29a0fc"
+    ]
   },
   {
     "slug": "tweetman",
@@ -3805,7 +5890,15 @@
     "icon": "tweetman-icon.png",
     "icon32": "tweetman-icon-32.png",
     "icon64": "tweetman-icon-64.png",
-    "icon128": "tweetman-icon-128.png"
+    "icon128": "tweetman-icon-128.png",
+    "date": "2015-12-07",
+    "iconColors": [
+      "#1d9ef4",
+      "#dfe0e1",
+      "#0e2854",
+      "#949498",
+      "#4c4c4c"
+    ]
   },
   {
     "slug": "typetalk",
@@ -3821,7 +5914,15 @@
     "icon": "typetalk-icon.png",
     "icon32": "typetalk-icon-32.png",
     "icon64": "typetalk-icon-64.png",
-    "icon128": "typetalk-icon-128.png"
+    "icon128": "typetalk-icon-128.png",
+    "date": "2016-06-06",
+    "iconColors": [
+      "#ec6454",
+      "#fbfbfb",
+      "#f4aca4",
+      "#f49890",
+      "#f48c7c"
+    ]
   },
   {
     "slug": "ubauth",
@@ -3840,7 +5941,15 @@
     "icon": "ubauth-icon.png",
     "icon32": "ubauth-icon-32.png",
     "icon64": "ubauth-icon-64.png",
-    "icon128": "ubauth-icon-128.png"
+    "icon128": "ubauth-icon-128.png",
+    "date": "2016-07-26",
+    "iconColors": [
+      "#2c2c2c",
+      "#f9f9f9",
+      "#949494",
+      "#9c9c9c",
+      "#8c8c8c"
+    ]
   },
   {
     "slug": "un-colored",
@@ -3862,7 +5971,15 @@
     "icon": "un-colored-icon.png",
     "icon32": "un-colored-icon-32.png",
     "icon64": "un-colored-icon-64.png",
-    "icon128": "un-colored-icon-128.png"
+    "icon128": "un-colored-icon-128.png",
+    "date": "2016-09-23",
+    "iconColors": [
+      "#fbfbfb",
+      "#282828",
+      "#9c9c9c",
+      "#949494",
+      "#b0b0b0"
+    ]
   },
   {
     "slug": "uphone",
@@ -3877,7 +5994,15 @@
     "icon": "uphone-icon.png",
     "icon32": "uphone-icon-32.png",
     "icon64": "uphone-icon-64.png",
-    "icon128": "uphone-icon-128.png"
+    "icon128": "uphone-icon-128.png",
+    "date": "2016-09-07",
+    "iconColors": [
+      "#b45659",
+      "#8c9494",
+      "#a3abab",
+      "#cccccc",
+      "#bcc4c4"
+    ]
   },
   {
     "slug": "vagrant-manager",
@@ -3893,7 +6018,15 @@
     "icon": "vagrant-manager-icon.png",
     "icon32": "vagrant-manager-icon-32.png",
     "icon64": "vagrant-manager-icon-64.png",
-    "icon128": "vagrant-manager-icon-128.png"
+    "icon128": "vagrant-manager-icon-128.png",
+    "date": "2016-10-10",
+    "iconColors": [
+      "#54fc9c",
+      "#7cfcda",
+      "#31fcd3",
+      "#6bfcc2",
+      "#58fcb0"
+    ]
   },
   {
     "slug": "vectr",
@@ -3907,7 +6040,15 @@
     "icon": "vectr-icon.png",
     "icon32": "vectr-icon-32.png",
     "icon64": "vectr-icon-64.png",
-    "icon128": "vectr-icon-128.png"
+    "icon128": "vectr-icon-128.png",
+    "date": "2016-05-30",
+    "iconColors": [
+      "#212222",
+      "#f7f7f8",
+      "#7c8c94",
+      "#839496",
+      "#717d7f"
+    ]
   },
   {
     "slug": "visual-studio-code",
@@ -3918,7 +6059,15 @@
     "icon": "visual-studio-code-icon.png",
     "icon32": "visual-studio-code-icon-32.png",
     "icon64": "visual-studio-code-icon-64.png",
-    "icon128": "visual-studio-code-icon-128.png"
+    "icon128": "visual-studio-code-icon-128.png",
+    "date": "2015-04-29",
+    "iconColors": [
+      "#edf3f9",
+      "#0492d4",
+      "#2594d4",
+      "#549fdc",
+      "#7cb4e4"
+    ]
   },
   {
     "slug": "vk-messenger",
@@ -3933,7 +6082,44 @@
     "icon": "vk-messenger-icon.png",
     "icon32": "vk-messenger-icon-32.png",
     "icon64": "vk-messenger-icon-64.png",
-    "icon128": "vk-messenger-icon-128.png"
+    "icon128": "vk-messenger-icon-128.png",
+    "date": "2016-12-13",
+    "iconColors": [
+      "#2688e5",
+      "#f9fafb",
+      "#7eb6ec",
+      "#34acf4",
+      "#8cc4f4"
+    ]
+  },
+  {
+    "slug": "voltra",
+    "name": "Voltra",
+    "description": "Digital Music Player and Store",
+    "website": "https://voltra.co",
+    "keywords": [
+      "music",
+      "audio",
+      "player",
+      "library",
+      "store",
+      "collection",
+      "songs",
+      "albums",
+      "artists"
+    ],
+    "icon": "voltra-icon.png",
+    "icon32": "voltra-icon-32.png",
+    "icon64": "voltra-icon-64.png",
+    "icon128": "voltra-icon-128.png",
+    "date": "2017-02-15",
+    "iconColors": [
+      "#fbfbfb",
+      "#252525",
+      "#ababab",
+      "#8c8c8c",
+      "#949494"
+    ]
   },
   {
     "slug": "vrap",
@@ -3952,7 +6138,15 @@
     "icon": "vrap-icon.png",
     "icon32": "vrap-icon-32.png",
     "icon64": "vrap-icon-64.png",
-    "icon128": "vrap-icon-128.png"
+    "icon128": "vrap-icon-128.png",
+    "date": "2016-06-22",
+    "iconColors": [
+      "#8e3b6b",
+      "#fbfafb",
+      "#4e1c3c",
+      "#bc94ac",
+      "#cf579f"
+    ]
   },
   {
     "slug": "wallapatta",
@@ -3968,7 +6162,15 @@
     "icon": "wallapatta-icon.png",
     "icon32": "wallapatta-icon-32.png",
     "icon64": "wallapatta-icon-64.png",
-    "icon128": "wallapatta-icon-128.png"
+    "icon128": "wallapatta-icon-128.png",
+    "date": "2016-10-03",
+    "iconColors": [
+      "#eeeeee",
+      "#4e4e4e",
+      "#848484",
+      "#979797",
+      "#7c7c7c"
+    ]
   },
   {
     "slug": "wantedly-chat",
@@ -3983,7 +6185,15 @@
     "icon": "wantedly-chat-icon.png",
     "icon32": "wantedly-chat-icon-32.png",
     "icon64": "wantedly-chat-icon-64.png",
-    "icon128": "wantedly-chat-icon-128.png"
+    "icon128": "wantedly-chat-icon-128.png",
+    "date": "2017-02-02",
+    "iconColors": [
+      "#47cbb4",
+      "#079eb2",
+      "#09929c",
+      "#3cb283",
+      "#5dd7af"
+    ]
   },
   {
     "slug": "webtorrent",
@@ -3993,7 +6203,15 @@
     "icon": "webtorrent-icon.png",
     "icon32": "webtorrent-icon-32.png",
     "icon64": "webtorrent-icon-64.png",
-    "icon128": "webtorrent-icon-128.png"
+    "icon128": "webtorrent-icon-128.png",
+    "date": "2016-04-06",
+    "iconColors": [
+      "#303840",
+      "#eb344b",
+      "#843445",
+      "#a2344b",
+      "#593c44"
+    ]
   },
   {
     "slug": "weflow",
@@ -4012,7 +6230,15 @@
     "icon": "weflow-icon.png",
     "icon32": "weflow-icon-32.png",
     "icon64": "weflow-icon-64.png",
-    "icon128": "weflow-icon-128.png"
+    "icon128": "weflow-icon-128.png",
+    "date": "2016-06-13",
+    "iconColors": [
+      "#1cd45c",
+      "#154d0e",
+      "#3fca6c",
+      "#38974c",
+      "#2c8c3c"
+    ]
   },
   {
     "slug": "whale",
@@ -4025,7 +6251,15 @@
     "icon": "whale-icon.png",
     "icon32": "whale-icon-32.png",
     "icon64": "whale-icon-64.png",
-    "icon128": "whale-icon-128.png"
+    "icon128": "whale-icon-128.png",
+    "date": "2016-12-13",
+    "iconColors": [
+      "#047bbb",
+      "#fbfbfb",
+      "#6caccc",
+      "#04456d",
+      "#94acbc"
+    ]
   },
   {
     "slug": "whatever",
@@ -4047,7 +6281,15 @@
     "icon": "whatever-icon.png",
     "icon32": "whatever-icon-32.png",
     "icon64": "whatever-icon-64.png",
-    "icon128": "whatever-icon-128.png"
+    "icon128": "whatever-icon-128.png",
+    "date": "2017-02-11",
+    "iconColors": [
+      "#26845c",
+      "#0f3827",
+      "#cae5e0",
+      "#8caeac",
+      "#7cc49c"
+    ]
   },
   {
     "slug": "wheredat",
@@ -4061,7 +6303,15 @@
     "icon": "wheredat-icon.png",
     "icon32": "wheredat-icon-32.png",
     "icon64": "wheredat-icon-64.png",
-    "icon128": "wheredat-icon-128.png"
+    "icon128": "wheredat-icon-128.png",
+    "date": "2016-12-13",
+    "iconColors": [
+      "#6fc9f0",
+      "#046fb5",
+      "#e3d0d4",
+      "#0c3f68",
+      "#446c7c"
+    ]
   },
   {
     "slug": "wire",
@@ -4079,7 +6329,15 @@
     "icon": "wire-icon.png",
     "icon32": "wire-icon-32.png",
     "icon64": "wire-icon-64.png",
-    "icon128": "wire-icon-128.png"
+    "icon128": "wire-icon-128.png",
+    "date": "2015-10-29",
+    "iconColors": [
+      "#f9f9f9",
+      "#080808",
+      "#7c7c7c",
+      "#848484",
+      "#949494"
+    ]
   },
   {
     "slug": "wonder-reader",
@@ -4097,7 +6355,15 @@
     "icon": "wonder-reader-icon.png",
     "icon32": "wonder-reader-icon-32.png",
     "icon64": "wonder-reader-icon-64.png",
-    "icon128": "wonder-reader-icon-128.png"
+    "icon128": "wonder-reader-icon-128.png",
+    "date": "2016-11-01",
+    "iconColors": [
+      "#0c3f9c",
+      "#bf231e",
+      "#d3ba5b",
+      "#6d2b14",
+      "#6484bc"
+    ]
   },
   {
     "slug": "wordmark",
@@ -4111,7 +6377,15 @@
     "icon": "wordmark-icon.png",
     "icon32": "wordmark-icon-32.png",
     "icon64": "wordmark-icon-64.png",
-    "icon128": "wordmark-icon-128.png"
+    "icon128": "wordmark-icon-128.png",
+    "date": "2016-07-25",
+    "iconColors": [
+      "#fbfbfb",
+      "#62baf2",
+      "#74ccfc",
+      "#a4bed2",
+      "#3595c9"
+    ]
   },
   {
     "slug": "wordpress-com",
@@ -4121,7 +6395,15 @@
     "icon": "wordpress-com-icon.png",
     "icon32": "wordpress-com-icon-32.png",
     "icon64": "wordpress-com-icon-64.png",
-    "icon128": "wordpress-com-icon-128.png"
+    "icon128": "wordpress-com-icon-128.png",
+    "date": "2015-12-17",
+    "iconColors": [
+      "#05a3d4",
+      "#f3f9fa",
+      "#56c1e0",
+      "#72cce4",
+      "#84cce4"
+    ]
   },
   {
     "slug": "world-history-ap",
@@ -4131,7 +6413,15 @@
     "icon": "world-history-ap-icon.png",
     "icon32": "world-history-ap-icon-32.png",
     "icon64": "world-history-ap-icon-64.png",
-    "icon128": "world-history-ap-icon-128.png"
+    "icon128": "world-history-ap-icon-128.png",
+    "date": "2016-03-28",
+    "iconColors": [
+      "#4c3919",
+      "#2ceceb",
+      "#c98485",
+      "#3a7860",
+      "#379684"
+    ]
   },
   {
     "slug": "wow-stat",
@@ -4148,7 +6438,15 @@
     "icon": "wow-stat-icon.png",
     "icon32": "wow-stat-icon-32.png",
     "icon64": "wow-stat-icon-64.png",
-    "icon128": "wow-stat-icon-128.png"
+    "icon128": "wow-stat-icon-128.png",
+    "date": "2016-12-13",
+    "iconColors": [
+      "#444444",
+      "#484444",
+      "#484444",
+      "#484444",
+      "#484444"
+    ]
   },
   {
     "slug": "wp-express",
@@ -4162,7 +6460,15 @@
     "icon": "wp-express-icon.png",
     "icon32": "wp-express-icon-32.png",
     "icon64": "wp-express-icon-64.png",
-    "icon128": "wp-express-icon-128.png"
+    "icon128": "wp-express-icon-128.png",
+    "date": "2016-05-12",
+    "iconColors": [
+      "#2da3d7",
+      "#f5f6f6",
+      "#11597a",
+      "#90acb4",
+      "#7c9cac"
+    ]
   },
   {
     "slug": "xcel",
@@ -4180,7 +6486,15 @@
     "icon": "xcel-icon.png",
     "icon32": "xcel-icon-32.png",
     "icon64": "xcel-icon-64.png",
-    "icon128": "xcel-icon-128.png"
+    "icon128": "xcel-icon-128.png",
+    "date": "2016-12-23",
+    "iconColors": [
+      "#2b3343",
+      "#90939b",
+      "#646974",
+      "#535868",
+      "#6c6c7c"
+    ]
   },
   {
     "slug": "yeoman",
@@ -4195,7 +6509,15 @@
     "icon": "yeoman-icon.png",
     "icon32": "yeoman-icon-32.png",
     "icon64": "yeoman-icon-64.png",
-    "icon128": "yeoman-icon-128.png"
+    "icon128": "yeoman-icon-128.png",
+    "date": "2015-07-27",
+    "iconColors": [
+      "#1c0e0b",
+      "#edbf79",
+      "#da1e2c",
+      "#807474",
+      "#a4845c"
+    ]
   },
   {
     "slug": "yhat-rodeo",
@@ -4205,7 +6527,15 @@
     "icon": "yhat-rodeo-icon.png",
     "icon32": "yhat-rodeo-icon-32.png",
     "icon64": "yhat-rodeo-icon-64.png",
-    "icon128": "yhat-rodeo-icon-128.png"
+    "icon128": "yhat-rodeo-icon-128.png",
+    "date": "2015-10-29",
+    "iconColors": [
+      "#ed5b24",
+      "#fc5c26",
+      "#f86434",
+      "#fc6c3c",
+      "#f4642c"
+    ]
   },
   {
     "slug": "yout",
@@ -4222,7 +6552,15 @@
     "icon": "yout-icon.png",
     "icon32": "yout-icon-32.png",
     "icon64": "yout-icon-64.png",
-    "icon128": "yout-icon-128.png"
+    "icon128": "yout-icon-128.png",
+    "date": "2016-07-01",
+    "iconColors": [
+      "#252424",
+      "#d9294c",
+      "#f4f4f4",
+      "#8c8c8c",
+      "#848484"
+    ]
   },
   {
     "slug": "youtube-mp3",
@@ -4232,7 +6570,15 @@
     "icon": "youtube-mp3-icon.png",
     "icon32": "youtube-mp3-icon-32.png",
     "icon64": "youtube-mp3-icon-64.png",
-    "icon128": "youtube-mp3-icon-128.png"
+    "icon128": "youtube-mp3-icon-128.png",
+    "date": "2017-01-10",
+    "iconColors": [
+      "#b62a2c",
+      "#eaeaeb",
+      "#77181f",
+      "#dc9c9c",
+      "#bc949c"
+    ]
   },
   {
     "slug": "zazu-app",
@@ -4253,7 +6599,15 @@
     "icon": "zazu-app-icon.png",
     "icon32": "zazu-app-icon-32.png",
     "icon64": "zazu-app-icon-64.png",
-    "icon128": "zazu-app-icon-128.png"
+    "icon128": "zazu-app-icon-128.png",
+    "date": "2017-01-10",
+    "iconColors": [
+      "#040404",
+      "#393939",
+      "#24241c",
+      "#141414",
+      "#241c1c"
+    ]
   },
   {
     "slug": "zector",
@@ -4268,7 +6622,15 @@
     "icon": "zector-icon.png",
     "icon32": "zector-icon-32.png",
     "icon64": "zector-icon-64.png",
-    "icon128": "zector-icon-128.png"
+    "icon128": "zector-icon-128.png",
+    "date": "2017-01-24",
+    "iconColors": [
+      "#fbfbfb",
+      "#141414",
+      "#848484",
+      "#8c8c8c",
+      "#7c7c7c"
+    ]
   },
   {
     "slug": "zeplin",
@@ -4285,7 +6647,15 @@
     "icon": "zeplin-icon.png",
     "icon32": "zeplin-icon-32.png",
     "icon64": "zeplin-icon-64.png",
-    "icon128": "zeplin-icon-128.png"
+    "icon128": "zeplin-icon-128.png",
+    "date": "2016-10-15",
+    "iconColors": [
+      "#fbf8f6",
+      "#f7a634",
+      "#fccc36",
+      "#ec6423",
+      "#f4a67d"
+    ]
   },
   {
     "slug": "zoommy",
@@ -4295,6 +6665,14 @@
     "icon": "zoommy-icon.png",
     "icon32": "zoommy-icon-32.png",
     "icon64": "zoommy-icon-64.png",
-    "icon128": "zoommy-icon-128.png"
+    "icon128": "zoommy-icon-128.png",
+    "date": "2015-10-15",
+    "iconColors": [
+      "#8d5cf7",
+      "#e8e7e8",
+      "#5a59dc",
+      "#78737a",
+      "#d49cfc"
+    ]
   }
 ]
