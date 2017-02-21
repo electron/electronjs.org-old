@@ -466,23 +466,5 @@
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v1.3.2",
     "body": "Changelog:\n- Upload the checksums of releases. [#6629](https://github.com/electron/electron/pull/6588)\n- Improve performance when creating native classes. [#6688](https://github.com/electron/electron/pull/6688)\n- Add `downloadItem.getSavePath()` API. [#6629](https://github.com/electron/electron/pull/6629)\n- Add `image.toBitmap()` API. [#6661](https://github.com/electron/electron/pull/6661)\n- Add `size`, `hotspot` parameters to the `cursor-changed` event of `WebContents`. [#6661](https://github.com/electron/electron/pull/6661)\n- Add `setZoomFactor`, `getZoomFactor`, `setZoomLevel`, `getZoomLevel`, `setZoomLevelLimits` methods to `WebContents`. [#6685](https://github.com/electron/electron/pull/6685)\n- Fix `LICENSES.chromium.html` being empty. [libchromiumcontent#225](https://github.com/electron/libchromiumcontent/pull/225)\n- Fix failing to register custom protocol due to `Session` being garbage collected. [#6674](https://github.com/electron/electron/pull/6674)\n- Fix unicode characters not working with `contents.sendInputEvent(event)` API. [#6661](https://github.com/electron/electron/pull/6661)\n\n**Windows**\n- Add `shell.writeShortcutLink(shortcutPath[, operation], options)` and `shell.readShortcutLink(shortcutPath)` APIs. [#6623](https://github.com/electron/electron/pull/6623)\n- Fix window size being changed after restoring from minimized state. [#6667](https://github.com/electron/electron/pull/6667)\n\n**macOS**\n- Add `app.dock.isVisible()` API. [#6683](https://github.com/electron/electron/pull/6683)\n- Fix crash with keyboard events under fullscreen. [#6637](https://github.com/electron/electron/pull/6637)\n- Fix crash when using webview. [#6644](https://github.com/electron/electron/pull/6644)\n\n**Linux**\n- Fix components not showing correctly on displays with 2.0 DPI. [#6646](https://github.com/electron/electron/pull/6646)\n",
     "version": "1.3.2"
-  },
-  {
-    "url": "https://api.github.com/repos/electron/electron/releases/3747121",
-    "assets_url": "https://api.github.com/repos/electron/electron/releases/3747121/assets",
-    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/3747121/assets{?name,label}",
-    "html_url": "https://github.com/electron/electron/releases/tag/v1.3.1",
-    "id": 3747121,
-    "tag_name": "v1.3.1",
-    "target_commitish": "master",
-    "name": "electron v1.3.1",
-    "draft": false,
-    "prerelease": false,
-    "created_at": "2016-07-27T04:21:17Z",
-    "published_at": "2016-07-27T05:47:26Z",
-    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v1.3.1",
-    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v1.3.1",
-    "body": "Changelog:\n- Add `view-painted` event to `WebContent`. [#6524](https://github.com/electron/electron/pull/6524)\n- Add `proxyBypassRules` option to `ses.setProxy(config, callback)` API. [#6558](https://github.com/electron/electron/pull/6558)\n- Add support for passing typed arrays in `remote` module. [#6572](https://github.com/electron/electron/pull/6572), [#6590](https://github.com/electron/electron/pull/6590)\n- Add `contents.copyImageAt(x, y)` API. [#6619](https://github.com/electron/electron/pull/6619)\n- Fix file dialog not working with `<input>` tag on DevPanel. [brightray#238](https://github.com/electron/brightray/pull/238)\n- Fix `fs.access`/`accessSync` not working with asar archives. [#6598](https://github.com/electron/electron/pull/6598)\n- Fix LCD-text-antialiasing not working. [#6606](https://github.com/electron/electron/pull/6606)\n- Fix crash when adding project workspace in devtools. [#6613](https://github.com/electron/electron/pull/6613)\n\n**Windows**\n- Fix window position not restoring after restoring from minimized state. [#6596](https://github.com/electron/electron/pull/6596)\n- Fix crash when calling `crashReporter.start(options)` for multiple times. [#6618](https://github.com/electron/electron/pull/6618)\n- Fix invalid AppUserModelID when executable name contains spaces. [#6602](https://github.com/electron/electron/pull/6602)\n\n**macOS**\n- Add option to always highlight the tray icon. [#6620](https://github.com/electron/electron/pull/6620)\n",
-    "version": "1.3.1"
   }
 ]
