@@ -1,5 +1,5 @@
 ---
-version: v1.6.0
+version: v1.6.1
 permalink: /docs/tutorial/debugging-main-process-vscode/
 category: Tutorial
 redirect_from:

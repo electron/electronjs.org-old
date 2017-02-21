@@ -1,5 +1,5 @@
 ---
-version: v1.6.0
+version: v1.6.1
 permalink: /docs/api/structures/remove-password/
 category: API
 redirect_from:

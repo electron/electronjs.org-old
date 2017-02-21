@@ -1,5 +1,5 @@
 ---
-version: v1.6.0
+version: v1.6.1
 permalink: /docs/api/structures/jump-list-category/
 category: API
 redirect_from:

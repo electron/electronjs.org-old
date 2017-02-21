@@ -1,5 +1,5 @@
 ---
-version: v1.6.0
+version: v1.6.1
 permalink: /docs/development/atom-shell-vs-node-webkit/
 category: Development
 redirect_from:

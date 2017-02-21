@@ -1,5 +1,5 @@
 ---
-version: v1.6.0
+version: v1.6.1
 permalink: /docs/api/content-tracing/
 category: API
 redirect_from:
