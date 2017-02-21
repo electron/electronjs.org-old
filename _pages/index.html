@@ -1,6 +1,7 @@
 ---
 permalink: /
 layout: default
+lang: en
 ---
 
   <script src="{{ site.baseurl }}/js/vendor/ua-parser-js-0.7.10.js"></script>
@@ -9,8 +10,8 @@ layout: default
   <div class="jumbotron jumbotron-home text-center">
     <div class="container">
       {% include hero.html %}
-      <p class='jumbotron-lead'>Build cross platform desktop apps
-        <span class='jumbotron-lead-muted'>with JavaScript, HTML, and CSS</span>
+      <p class='jumbotron-lead'>
+        {{ site.data.locale.tagline }}
       </p>
     </div>
   </div>
@@ -28,18 +29,13 @@ layout: default
 
   <section class="page-section page-section-spacious" id='electron'>
     <div class="container-narrow">
-      <h1 class="text-center-sm">It's easier than you think</h1>
-      <p class="lead text-center-sm">
-        If you can build a website, you can build a desktop app. Electron is a
-        framework for creating native applications with web technologies like
-        JavaScript, HTML, and CSS. It takes care of the hard parts so you can
-        focus on the core of your application.
-      </p>
+      <h1 class="text-center-sm">{{ site.data.locale.electron_is_easy.title }}</h1>
+      <p class="lead text-center-sm">{{ site.data.locale.electron_is_easy.description }}</p>
 
       <p class="text-center-sm mt-4">
         <a class="btn btn-lg btn-outline-themed" href="https://youtu.be/8YP_nOCO-4Q" target="_blank">
           <span class="octicon octicon-eye mr-1"></span>
-          <span class="label">Watch the video</span>
+          <span class="label">{{ site.data.locale.electron_is_easy.video_link }}</span>
         </a>
       </p>
 

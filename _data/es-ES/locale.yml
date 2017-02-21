@@ -1,0 +1,16 @@
+tagline: Construir aplicaciones multiplataforma de escritorio con JavaScript, HTML y CSS
+
+nav:
+  docs: Documentación
+  blog: Blog
+  community: Comunidad
+  apps: Aplicaciones
+  userland: Userland
+  releases: Lanzamientos
+  contact: Contacto
+
+electron_is_easy:
+  title: Es más fácil de lo que piensas
+  description:
+    Si puede crear un sitio web, puede crear una aplicación de escritorio. Electron es una herramienta para crear aplicaciones nativas con tecnologías web como JavaScript, HTML y CSS. Se ocupa de las partes duras para que pueda centrarse en el núcleo de su aplicación.
+  video_link: Ver el vídeo
