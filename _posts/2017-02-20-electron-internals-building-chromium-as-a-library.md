@@ -137,10 +137,10 @@ a group of object files. In `gyp`, each module was represented by either
 each module generated a static library and they were linked together in the
 final executable. By using `gn`, each module now only generates a bunch of
 object files, and the final executable just links all the object files together,
-so the immediate static library files are no longer generated.
+so the intermediate static library files are no longer generated.
 
 This improvement however made great trouble to libchromiumcontent, because
-the immediate static library files were actually needed by libchromiumcontent.
+the intermediate static library files were actually needed by libchromiumcontent.
 
 The first try to solve this was to [patch `gn` to generate static library
 files][libcc-gn-hack], which solved the problem, but was far from a decent
