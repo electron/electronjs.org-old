@@ -7,6 +7,8 @@ This week we caught up with folks at [Automattic](https://automattic.com/) to
 talk about [WordPress Desktop](https://apps.wordpress.com/desktop/), an
 open-source desktop client for managing WordPress content.
 
+---
+
 ## Everyone knows about WordPress, but what is WordPress Desktop?
 
 The [WordPress.com Desktop app](https://apps.wordpress.com/desktop/) provides a seamless cross-platform experience that allows you to focus on your content and design with no browser tabs to distract you — or to keep your sites sidelined but accessible. In combination with our browser support and mobile app you can build your site anywhere, in whatever way helps you get your work done.
