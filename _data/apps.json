@@ -177,31 +177,6 @@
     ]
   },
   {
-    "slug": "anatine",
-    "name": "Anatine",
-    "description": "Pristine Twitter app",
-    "website": "https://github.com/sindresorhus/anatine",
-    "repository": "https://github.com/sindresorhus/anatine",
-    "keywords": [
-      "social",
-      "news",
-      "twitter"
-    ],
-    "license": "MIT",
-    "icon": "anatine-icon.png",
-    "icon32": "anatine-icon-32.png",
-    "icon64": "anatine-icon-64.png",
-    "icon128": "anatine-icon-128.png",
-    "date": "2016-06-01",
-    "iconColors": [
-      "#2ca4ec",
-      "#fbfbfb",
-      "#a1c0d3",
-      "#c4c4c4",
-      "#cccccc"
-    ]
-  },
-  {
     "slug": "anote",
     "name": "ANote",
     "description": "A Simple Friendly Markdown Note.",
@@ -1347,6 +1322,29 @@
       "#342484",
       "#442ca4",
       "#2830c8"
+    ]
+  },
+  {
+    "slug": "devdocs-app",
+    "name": "devdocs-app",
+    "description": "A full-featured desktop app for DevDocs.io.",
+    "website": "https://github.com/egoist/devdocs-app",
+    "repository": "https://github.com/egoist/devdocs-app",
+    "keywords": [
+      "devdocs"
+    ],
+    "license": "MIT",
+    "icon": "devdocs-app-icon.png",
+    "icon32": "devdocs-app-icon-32.png",
+    "icon64": "devdocs-app-icon-64.png",
+    "icon128": "devdocs-app-icon-128.png",
+    "date": "2017-02-19",
+    "iconColors": [
+      "#edcb1c",
+      "#34332f",
+      "#e6dea4",
+      "#8e7d30",
+      "#766404"
     ]
   },
   {
@@ -3889,6 +3887,35 @@
     ]
   },
   {
+    "slug": "nuclear",
+    "name": "nuclear",
+    "description": "Multiplatform music player that streams from multiple sources",
+    "website": "http://nuclear.gumblert.tech",
+    "repository": "https://github.com/nukeop/nuclear",
+    "keywords": [
+      "Electron",
+      "music",
+      "player",
+      "stream",
+      "Youtube",
+      "last.fm",
+      "desktop"
+    ],
+    "license": "GPL-3.0",
+    "icon": "nuclear-icon.png",
+    "icon32": "nuclear-icon-32.png",
+    "icon64": "nuclear-icon-64.png",
+    "icon128": "nuclear-icon-128.png",
+    "date": "2017-02-27",
+    "iconColors": [
+      "#767ae3",
+      "#fbfbfb",
+      "#a352dd",
+      "#54a9f6",
+      "#bebada"
+    ]
+  },
+  {
     "slug": "nuclide",
     "name": "Nuclide",
     "description": "A unified developer experience for web and mobile development",
@@ -4188,11 +4215,11 @@
     "icon128": "phonepresenter-icon-128.png",
     "date": "2016-07-03",
     "iconColors": [
-      "#2594f3",
-      "#f5f8fb",
-      "#080808",
-      "#515151",
-      "#82c4fc"
+      "#f4f8fc",
+      "#2494f4",
+      "#6fbaf6",
+      "#54b4f4",
+      "#4caaf4"
     ]
   },
   {
@@ -5187,6 +5214,33 @@
     ]
   },
   {
+    "slug": "soundkeys",
+    "name": "Soundkeys",
+    "description": "Soundcloud wrapped in a Desktop player with user customizable keyboard shortcuts and notifications",
+    "website": "https://github.com/MSandeep96/SoundKeys",
+    "repository": "https://github.com/MSandeep96/SoundKeys",
+    "keywords": [
+      "music",
+      "soundcloud",
+      "shortcuts",
+      "keymappings",
+      "mediakeys",
+      "notifications"
+    ],
+    "icon": "soundkeys-icon.png",
+    "icon32": "soundkeys-icon-32.png",
+    "icon64": "soundkeys-icon-64.png",
+    "icon128": "soundkeys-icon-128.png",
+    "date": "2017-02-21",
+    "iconColors": [
+      "#fa7304",
+      "#080807",
+      "#f4f4f3",
+      "#979594",
+      "#747474"
+    ]
+  },
+  {
     "slug": "soundnode",
     "name": "Soundnode",
     "description": "Soundnode App is the Soundcloud for desktop.",
@@ -5464,31 +5518,6 @@
       "#e49ca4",
       "#e4a4a4",
       "#e48c94"
-    ]
-  },
-  {
-    "slug": "symbsearch",
-    "name": "SymbSearch",
-    "description": "A tool for searching symbols and special letters.",
-    "website": "http://leun4m.github.io/symbsearch",
-    "repository": "https://github.com/Leun4m/symbsearch",
-    "keywords": [
-      "unicode",
-      "letters",
-      "symbols"
-    ],
-    "license": "MIT",
-    "icon": "symbsearch-icon.png",
-    "icon32": "symbsearch-icon-32.png",
-    "icon64": "symbsearch-icon-64.png",
-    "icon128": "symbsearch-icon-128.png",
-    "date": "2016-12-28",
-    "iconColors": [
-      "#0e4c6b",
-      "#f9fafa",
-      "#84a4b4",
-      "#7ca4b4",
-      "#7c9cb4"
     ]
   },
   {
