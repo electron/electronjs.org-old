@@ -1,5 +1,5 @@
 ---
-version: v1.6.1
+version: v1.6.2
 permalink: /docs/api/app/
 category: API
 redirect_from:
@@ -429,6 +429,27 @@ You can request the following paths by the name:
 *   `videos` Directory for a user's videos.
 *   `pepperFlashSystemPlugin` Full path to the system version of the Pepper Flash plugin.
 
+### `app.getFileIcon(path[, options], callback)`
+
+*   `path` String
+*   `options` Object (optional)
+    *   `size` String
+        *   `small` - 16x16
+        *   `normal` - 32x32
+        *   `large` - 48x48 on _Linux_, 32x32 on _Windows_, unsupported on _macOS_.
+*   `callback` Function
+    *   `error` Error
+    *   `icon` [NativeImage]({{site.baseurl}}/docs/api/native-image)
+
+Fetches a path's associated icon.
+
+On _Windows_, there a 2 kinds of icons:
+
+*   Icons associated with certain file extensions, like `.mp3`, `.png`, etc.
+*   Icons inside the file itself, like `.exe`, `.dll`, `.ico`.
+
+On _Linux_ and _macOS_, icons depend on the application associated with file mime type.
+
 ### `app.setPath(name, path)`
 
 *   `name` String
@@ -700,7 +721,7 @@ Sets the counter badge for current app. Setting the count to `0` will hide the b
 
 On macOS it shows on the dock icon. On Linux it only works for Unity launcher,
 
-**Note:** Unity launcher requires the exsistence of a `.desktop` file to work, for more information please read [Desktop Environment Integration]({{site.baseurl}}/docs/tutorial/desktop-environment-integration#unity-launcher-shortcuts-linux).
+**Note:** Unity launcher requires the existence of a `.desktop` file to work, for more information please read [Desktop Environment Integration]({{site.baseurl}}/docs/tutorial/desktop-environment-integration#unity-launcher-shortcuts-linux).
 
 ### `app.getBadgeCount()` _Linux_ _macOS_
 
@@ -710,7 +731,13 @@ Returns `Integer` - The current value displayed in the counter badge.
 
 Returns `Boolean` - Whether the current desktop environment is Unity launcher.
 
-### `app.getLoginItemSettings()` _macOS_ _Windows_
+### `app.getLoginItemSettings([options])` _macOS_ _Windows_
+
+*   `options` Object (optional)
+    *   `path` String (optional) _Windows_ - The executable path to compare against. Defaults to `process.execPath`.
+    *   `args` String[] (optional) _Windows_ - The command-line arguments to compare against. Defaults to an empty array.
+
+If you provided `path` and `args` options to `app.setLoginItemSettings` then you need to pass the same arguments here for `openAtLogin` to be set correctly.
 
 Returns `Object`:
 
@@ -722,13 +749,32 @@ Returns `Object`:
 
 **Note:** This API has no effect on [MAS builds]({{site.baseurl}}/docs/tutorial/mac-app-store-submission-guide).
 
-### `app.setLoginItemSettings(settings)` _macOS_ _Windows_
+### `app.setLoginItemSettings(settings[, path, args])` _macOS_ _Windows_
 
 *   `settings` Object
     *   `openAtLogin` Boolean (optional) - `true` to open the app at login, `false` to remove the app as a login item. Defaults to `false`.
     *   `openAsHidden` Boolean (optional) - `true` to open the app as hidden. Defaults to `false`. The user can edit this setting from the System Preferences so `app.getLoginItemStatus().wasOpenedAsHidden` should be checked when the app is opened to know the current value. This setting is only supported on macOS.
+    *   `path` String (optional) _Windows_ - The executable to launch at login. Defaults to `process.execPath`.
+    *   `args` String[] (optional) _Windows_ - The command-line arguments to pass to the executable. Defaults to an empty array. Take care to wrap paths in quotes.
 
 Set the app's login item settings.
+
+To work with Electron's `autoUpdater` on Windows, which uses [Squirrel](https://github.com/Squirrel/Squirrel.Windows), you'll want to set the launch path to Update.exe, and pass arguments that specify your application name. For example:
+
+```javascript
+const appFolder = path.dirname(process.execPath)
+const updateExe = path.resolve(appFolder, '..', 'Update.exe')
+const exeName = path.basename(process.execPath)
+
+app.setLoginItemSettings({
+  openAtLogin: true,
+  path: updateExe,
+  args: [
+    '--processStart', `"${exeName}"`,
+    '--process-start-args', `"--hidden"`
+  ]
+})
+```
 
 **Note:** This API has no effect on [MAS builds]({{site.baseurl}}/docs/tutorial/mac-app-store-submission-guide).
 

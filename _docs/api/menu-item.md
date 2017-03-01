@@ -1,5 +1,5 @@
 ---
-version: v1.6.1
+version: v1.6.2
 permalink: /docs/api/menu-item/
 category: API
 redirect_from:
@@ -133,6 +133,7 @@ The `role` property can have following values:
 *   `close` - Close current window
 *   `quit`- Quit the application
 *   `reload` - Reload the current window
+*   `forcereload` - Reload the current window ignoring the cache.
 *   `toggledevtools` - Toggle developer tools in the current window
 *   `togglefullscreen`- Toggle full screen mode on the current window
 *   `resetzoom` - Reset the focused page's zoom level to the original size

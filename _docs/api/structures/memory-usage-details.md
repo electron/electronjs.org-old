@@ -1,5 +1,5 @@
 ---
-version: v1.6.1
+version: v1.6.2
 permalink: /docs/api/structures/memory-usage-details/
 category: API
 redirect_from:
@@ -93,6 +93,3 @@ sort_title: memory-usage-details
 *   `count` Number
 *   `size` Number
 *   `liveSize` Number
-*   `decodedSize` Number
-*   `purgedSize` Number
-*   `purgeableSize` Number

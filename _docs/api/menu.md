@@ -1,5 +1,5 @@
 ---
-version: v1.6.1
+version: v1.6.2
 permalink: /docs/api/menu/
 category: API
 redirect_from:
@@ -216,6 +216,9 @@ const template = [
     submenu: [
       {
         role: 'reload'
+      },
+      {
+        role: 'forcereload'
       },
       {
         role: 'toggledevtools'

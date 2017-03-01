@@ -1,5 +1,5 @@
 ---
-version: v1.6.1
+version: v1.6.2
 permalink: /docs/api/browser-window/
 category: API
 redirect_from:
@@ -132,7 +132,7 @@ win.once('ready-to-show', () => {
 })
 ```
 
-This is event is usually emitted after the `did-finish-load` event, but for pages with many remote resources, it may be emitted before the `did-finish-load` event.
+This event is usually emitted after the `did-finish-load` event, but for pages with many remote resources, it may be emitted before the `did-finish-load` event.
 
 ### Setting `backgroundColor`
 
@@ -248,8 +248,7 @@ It creates a new `BrowserWindow` with native properties as set by the `options`.
         *   `partition` String (optional) - Sets the session used by the page according to the session's partition string. If `partition` starts with `persist:`, the page will use a persistent session available to all pages in the app with the same `partition`. If there is no `persist:` prefix, the page will use an in-memory session. By assigning the same `partition`, multiple pages can share the same session. Default is the default session.
         *   `zoomFactor` Number (optional) - The default zoom factor of the page, `3.0` represents `300%`. Default is `1.0`.
         *   `javascript` Boolean (optional) - Enables JavaScript support. Default is `true`.
-        *   `webSecurity` Boolean (optional) - When `false`, it will disable the same-origin policy (usually using testing websites by people), and set `allowDisplayingInsecureContent` and `allowRunningInsecureContent` to `true` if these two options are not set by user. Default is `true`.
-        *   `allowDisplayingInsecureContent` Boolean (optional) - Allow an https page to display content like images from http URLs. Default is `false`.
+        *   `webSecurity` Boolean (optional) - When `false`, it will disable the same-origin policy (usually using testing websites by people), and set `allowRunningInsecureContent` to `true` if this options has not been set by user. Default is `true`.
         *   `allowRunningInsecureContent` Boolean (optional) - Allow an https page to run JavaScript, CSS or plugins from http URLs. Default is `false`.
         *   `images` Boolean (optional) - Enables image support. Default is `true`.
         *   `textAreasAreResizable` Boolean (optional) - Make TextArea elements resizable. Default is `true`.
@@ -767,10 +766,11 @@ Returns `Boolean` - Whether the window can be manually closed by user.
 
 On Linux always returns `true`.
 
-#### `win.setAlwaysOnTop(flag[, level])`
+#### `win.setAlwaysOnTop(flag[, level][, relativeLevel])`
 
 *   `flag` Boolean
 *   `level` String (optional) _macOS_ - Values include `normal`, `floating`, `torn-off-menu`, `modal-panel`, `main-menu`, `status`, `pop-up-menu`, `screen-saver`, and ~~`dock`~~ (Deprecated). The default is `floating`. See the [macOS docs](https://developer.apple.com/reference/appkit/nswindow/1664726-window_levels) for more details.
+*   `relativeLevel` Integer (optional) _macOS_ - The number of layers higher to set this window relative to the given `level`. The default is `0`. Note that Apple discourages setting levels higher than 1 above `screen-saver`.
 
 Sets whether the window should show always on top of other windows. After setting this, the window is still a normal window, not a toolbox window which can not be focused on.
 

@@ -1,5 +1,5 @@
 ---
-version: v1.6.1
+version: v1.6.2
 permalink: /docs/api/chrome-command-line-switches/
 category: API
 redirect_from:
@@ -208,14 +208,6 @@ Sets the `version` of the pepper flash plugin.
 ## --log-net-log=`path`
 
 Enables net log events to be saved and writes them to `path`.
-
-## --ssl-version-fallback-min=`version`
-
-Sets the minimum SSL/TLS version (`tls1`, `tls1.1` or `tls1.2`) that TLS fallback will accept.
-
-## --cipher-suite-blacklist=`cipher_suites`
-
-Specifies comma-separated list of SSL cipher suites to disable.
 
 ## --disable-renderer-backgrounding
 

@@ -1,5 +1,5 @@
 ---
-version: v1.6.1
+version: v1.6.2
 permalink: /docs/tutorial/planned-breaking-changes/
 category: Tutorial
 redirect_from:
@@ -177,6 +177,19 @@ process.versions.electron
 ```
 
 *   `process.versions.electron` and `process.version.chrome` will be made read-only properties for consistency with the other `process.versions` properties set by Node.
+
+## `session`
+
+```js
+// Deprecated
+ses.setCertificateVerifyProc(function (hostname, certificate, callback) {
+  callback(true)
+})
+// Replace with
+ses.setCertificateVerifyProc(function (request, callback) {
+  callback(0)
+})
+```
 
 ## `Tray`
 

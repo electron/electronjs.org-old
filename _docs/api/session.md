@@ -1,5 +1,5 @@
 ---
-version: v1.6.1
+version: v1.6.2
 permalink: /docs/api/session/
 category: API
 redirect_from:
@@ -117,7 +117,7 @@ The `session` module has the following methods:
 *   `options` Object
     *   `cache` Boolean - Whether to enable cache.
 
-Returns `Session` - A session instance from `partition` string. When there is an existing `Session` with the same `partition`, it will be returned; othewise a new `Session` instance will be created with `options`.
+Returns `Session` - A session instance from `partition` string. When there is an existing `Session` with the same `partition`, it will be returned; otherwise a new `Session` instance will be created with `options`.
 
 If `partition` starts with `persist:`, the page will use a persistent session available to all pages in the app with the same `partition`. if there is no `persist:` prefix, the page will use an in-memory session. If the `partition` is empty then default session of the app will be returned.
 
@@ -178,7 +178,7 @@ The following methods are available on instances of `Session`:
 *   `callback` Function
     *   `size` Integer - Cache size used in bytes.
 
-Returns the session's current cache size.
+Callback is invoked with the session's current cache size.
 
 #### `ses.clearCache(callback)`
 
@@ -306,12 +306,17 @@ Disables any network emulation already active for the `session`. Resets to the o
 #### `ses.setCertificateVerifyProc(proc)`
 
 *   `proc` Function
-    *   `hostname` String
-    *   `certificate` [Certificate]({{site.baseurl}}/docs/api/structures/certificate)
+    *   `request` Object
+        *   `hostname` String
+        *   `certificate` [Certificate]({{site.baseurl}}/docs/api/structures/certificate)
+        *   `error` String - Verification result from chromium.
     *   `callback` Function
-        *   `isTrusted` Boolean - Determines if the certificate should be trusted
+        *   `verificationResult` Integer - Value can be one of certificate error codes from [here](https://code.google.com/p/chromium/codesearch#chromium/src/net/base/net_error_list.h). Apart from the certificate error codes, the following special codes can be used.
+            *   `0` - Indicates success and disables Certificate Transperancy verification.
+            *   `-2` - Indicates failure.
+            *   `-3` - Uses the verification result from chromium.
 
-Sets the certificate verify proc for `session`, the `proc` will be called with `proc(hostname, certificate, callback)` whenever a server certificate verification is requested. Calling `callback(true)` accepts the certificate, calling `callback(false)` rejects it.
+Sets the certificate verify proc for `session`, the `proc` will be called with `proc(request, callback)` whenever a server certificate verification is requested. Calling `callback(0)` accepts the certificate, calling `callback(-2)` rejects it.
 
 Calling `setCertificateVerifyProc(null)` will revert back to default certificate verify proc.
 

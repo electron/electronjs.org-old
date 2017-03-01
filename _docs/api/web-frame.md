@@ -1,5 +1,5 @@
 ---
-version: v1.6.1
+version: v1.6.2
 permalink: /docs/api/web-frame/
 category: API
 redirect_from:
@@ -243,10 +243,7 @@ This will generate:
   images: {
     count: 22,
     size: 2549,
-    liveSize: 2542,
-    decodedSize: 478,
-    purgedSize: 0,
-    purgeableSize: 0
+    liveSize: 2542
   },
   cssStyleSheets: { /* same with "images" */ },
   xslStyleSheets: { /* same with "images" */ },
