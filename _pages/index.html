@@ -18,10 +18,18 @@ layout: default
   <div class="subtron py-4 text-center">
     <div class="container">
       <div id="electron-versions" class="electron-versions">
-        <span class="electron-versions-main">Electron: <strong>{{ site.data.versions[0].version }}</strong></span>
-        <span>Node: <strong>{{ site.data.versions[0].node }}</strong></span>
-        <span>Chromium: <strong>{{ site.data.versions[0].chrome }}</strong></span>
-        <span>V8: <strong>{{ site.data.versions[0].v8 }}</strong></span>
+
+        <!-- find current stable release version in full list of versions -->
+        {% for version in site.data.versions %}
+          {% if version.version == site.data.releases[0].version %}
+            {% assign indexOfCurrentVersion=forloop.index0 %}
+          {% endif %}
+        {% endfor %}
+
+        <span class="electron-versions-main">Electron: <strong>{{ site.data.releases[0].version }}</strong></span>
+        <span>Node: <strong>{{ site.data.versions[indexOfCurrentVersion].node }}</strong></span>
+        <span>Chromium: <strong>{{ site.data.versions[indexOfCurrentVersion].chrome }}</strong></span>
+        <span>V8: <strong>{{ site.data.versions[indexOfCurrentVersion].v8 }}</strong></span>
       </div>
     </div>
   </div>
