@@ -85,7 +85,7 @@ describe('electron.atom.io', () => {
 
       it('has a redirect_from array', () => {
         expect(frontmatter.redirect_from).to.be.an('array')
-        expect(frontmatter.redirect_from.length).to.be.above(25)
+        expect(frontmatter.redirect_from.length).to.be.above(10)
         expect(frontmatter.redirect_from[0]).to.match(/^\/docs\//)
       })
 
