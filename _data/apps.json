@@ -2164,6 +2164,31 @@
     ]
   },
   {
+    "slug": "gitmoji",
+    "name": "gitmoji",
+    "description": "An emoji guide for your commit messages",
+    "website": "https://github.com/Meadowcottage/gitmoji",
+    "keywords": [
+      "git",
+      "emoji",
+      "developer tools",
+      "mac"
+    ],
+    "license": "GPL-v3",
+    "icon": "gitmoji-icon.png",
+    "icon32": "gitmoji-icon-32.png",
+    "icon64": "gitmoji-icon-64.png",
+    "icon128": "gitmoji-icon-128.png",
+    "date": "2017-02-28",
+    "iconColors": [
+      "#fbdb64",
+      "#a85d4b",
+      "#fbfbfb",
+      "#f7e59d",
+      "#9c947c"
+    ]
+  },
+  {
     "slug": "gitscout",
     "name": "Gitscout",
     "description": "A beautiful and optimized GitHub Issues experience for macOS",
