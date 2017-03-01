@@ -78,16 +78,6 @@ describe('electron.atom.io', () => {
         expect(frontmatter.category).to.equal('API')
       })
 
-      it('has a redirect_from array', () => {
-        expect(frontmatter.redirect_from).to.be.an('array')
-        expect(frontmatter.redirect_from.length).to.be.above(25)
-        expect(frontmatter.redirect_from[0]).to.match(/^\/docs\//)
-      })
-
-      it('includes a redirect for `latest`', () => {
-        expect(frontmatter.redirect_from).to.include('/docs/latest/api/app/')
-      })
-
       it('includes custom redirects', () => {
         expect(frontmatter.redirect_from).to.include('/docs/api/old-app-url/')
         expect(frontmatter.redirect_from).to.include('/docs/api/old-app-url2/')
