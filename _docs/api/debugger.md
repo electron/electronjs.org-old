@@ -1,5 +1,5 @@
 ---
-version: v1.6.2
+version: v1.6.1
 permalink: /docs/api/debugger/
 category: API
 redirect_from:

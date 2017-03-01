@@ -1,5 +1,5 @@
 ---
-version: v1.6.2
+version: v1.6.1
 permalink: /docs/api/crash-reporter/
 category: API
 redirect_from:

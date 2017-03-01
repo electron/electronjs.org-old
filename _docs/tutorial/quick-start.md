@@ -1,5 +1,5 @@
 ---
-version: v1.6.2
+version: v1.6.1
 permalink: /docs/tutorial/quick-start/
 category: Tutorial
 redirect_from:
