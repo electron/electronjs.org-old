@@ -88,6 +88,20 @@ title: ThumbarButton Object
 excerpt: ''
 sort_title: thumbar-button
 ---
+
+
+<--
+
+Greetings, Electron hacker!
+
+This file is generated automatically, so it should not be edited.
+
+To make changes, head over to the electron/electron repository:
+
+https://github.com/electron/electron/blob/master/docs/api/structures/thumbar-button.md
+
+-->
+
 # ThumbarButton Object
 
 *   `icon` [NativeImage]({{site.baseurl}}/docs/api/native-image) - The icon showing in thumbnail toolbar.

@@ -89,6 +89,20 @@ title: app
 excerpt: Control your application&apos;s event lifecycle.
 sort_title: app
 ---
+
+
+<--
+
+Greetings, Electron hacker!
+
+This file is generated automatically, so it should not be edited.
+
+To make changes, head over to the electron/electron repository:
+
+https://github.com/electron/electron/blob/master/docs/api/app.md
+
+-->
+
 # app
 
 > Control your application's event lifecycle.

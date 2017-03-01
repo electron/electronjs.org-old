@@ -88,6 +88,20 @@ title: Online/Offline Event Detection
 excerpt: ''
 sort_title: online-offline-events
 ---
+
+
+<--
+
+Greetings, Electron hacker!
+
+This file is generated automatically, so it should not be edited.
+
+To make changes, head over to the electron/electron repository:
+
+https://github.com/electron/electron/blob/master/docs/tutorial/online-offline-events.md
+
+-->
+
 # Online/Offline Event Detection
 
 Online and offline event detection can be implemented in the renderer process using standard HTML5 APIs, as shown in the following example.

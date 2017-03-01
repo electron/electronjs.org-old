@@ -91,6 +91,20 @@ excerpt: |-
       <code>webview</code> tag and make sure to disable the <code>nodeIntegration</code>.
 sort_title: security
 ---
+
+
+<--
+
+Greetings, Electron hacker!
+
+This file is generated automatically, so it should not be edited.
+
+To make changes, head over to the electron/electron repository:
+
+https://github.com/electron/electron/blob/master/docs/tutorial/security.md
+
+-->
+
 # Security, Native Capabilities, and Your Responsibility
 
 As web developers, we usually enjoy the strong security net of the browser - the risks associated with the code we write are relatively small. Our websites are granted limited powers in a sandbox, and we trust that our users enjoy a browser built by a large team of engineers that is able to quickly respond to newly discovered security threats.

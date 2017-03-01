@@ -90,6 +90,20 @@ excerpt: >-
       bottlenecks and slow operations.
 sort_title: content-tracing
 ---
+
+
+<--
+
+Greetings, Electron hacker!
+
+This file is generated automatically, so it should not be edited.
+
+To make changes, head over to the electron/electron repository:
+
+https://github.com/electron/electron/blob/master/docs/api/content-tracing.md
+
+-->
+
 # contentTracing
 
 > Collect tracing data from Chromium's content module for finding performance bottlenecks and slow operations.

@@ -87,6 +87,20 @@ title: session
 excerpt: 'Manage browser sessions, cookies, cache, proxy settings, etc.'
 sort_title: session
 ---
+
+
+<--
+
+Greetings, Electron hacker!
+
+This file is generated automatically, so it should not be edited.
+
+To make changes, head over to the electron/electron repository:
+
+https://github.com/electron/electron/blob/master/docs/api/session.md
+
+-->
+
 # session
 
 > Manage browser sessions, cookies, cache, proxy settings, etc.

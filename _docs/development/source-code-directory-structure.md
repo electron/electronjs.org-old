@@ -88,6 +88,20 @@ title: Source Code Directory Structure
 excerpt: ''
 sort_title: source-code-directory-structure
 ---
+
+
+<--
+
+Greetings, Electron hacker!
+
+This file is generated automatically, so it should not be edited.
+
+To make changes, head over to the electron/electron repository:
+
+https://github.com/electron/electron/blob/master/docs/development/source-code-directory-structure.md
+
+-->
+
 # Source Code Directory Structure
 
 The source code of Electron is separated into a few parts, mostly following Chromium on the separation conventions.

@@ -87,6 +87,20 @@ title: Glossary
 excerpt: ''
 sort_title: glossary
 ---
+
+
+<--
+
+Greetings, Electron hacker!
+
+This file is generated automatically, so it should not be edited.
+
+To make changes, head over to the electron/electron repository:
+
+https://github.com/electron/electron/blob/master/docs/glossary.md
+
+-->
+
 # Glossary
 
 This page defines some terminology that is commonly used in Electron development.

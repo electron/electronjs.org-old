@@ -88,6 +88,20 @@ title: ShortcutDetails Object
 excerpt: ''
 sort_title: shortcut-details
 ---
+
+
+<--
+
+Greetings, Electron hacker!
+
+This file is generated automatically, so it should not be edited.
+
+To make changes, head over to the electron/electron repository:
+
+https://github.com/electron/electron/blob/master/docs/api/structures/shortcut-details.md
+
+-->
+
 # ShortcutDetails Object
 
 *   `target` String - The target to launch from this shortcut.

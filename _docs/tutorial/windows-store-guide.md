@@ -88,6 +88,20 @@ title: Windows Store Guide
 excerpt: ''
 sort_title: windows-store-guide
 ---
+
+
+<--
+
+Greetings, Electron hacker!
+
+This file is generated automatically, so it should not be edited.
+
+To make changes, head over to the electron/electron repository:
+
+https://github.com/electron/electron/blob/master/docs/tutorial/windows-store-guide.md
+
+-->
+
 # Windows Store Guide
 
 With Windows 8, the good old win32 executable got a new sibling: The Universal Windows Platform. The new `.appx` format does not only enable a number of new powerful APIs like Cortana or Push Notifications, but through the Windows Store, also simplifies installation and updating.

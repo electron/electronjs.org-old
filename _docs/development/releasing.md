@@ -87,6 +87,20 @@ title: Releasing
 excerpt: ''
 sort_title: releasing
 ---
+
+
+<--
+
+Greetings, Electron hacker!
+
+This file is generated automatically, so it should not be edited.
+
+To make changes, head over to the electron/electron repository:
+
+https://github.com/electron/electron/blob/master/docs/development/releasing.md
+
+-->
+
 # Releasing
 
 This document describes the process for releasing a new version of Electron.

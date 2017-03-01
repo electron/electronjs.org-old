@@ -87,6 +87,20 @@ title: nativeImage
 excerpt: 'Create tray, dock, and application icons using PNG or JPG files.'
 sort_title: native-image
 ---
+
+
+<--
+
+Greetings, Electron hacker!
+
+This file is generated automatically, so it should not be edited.
+
+To make changes, head over to the electron/electron repository:
+
+https://github.com/electron/electron/blob/master/docs/api/native-image.md
+
+-->
+
 # nativeImage
 
 > Create tray, dock, and application icons using PNG or JPG files.

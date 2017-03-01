@@ -93,6 +93,20 @@ excerpt: |-
       members of the Chromium and WebDriver teams.
 sort_title: using-selenium-and-webdriver
 ---
+
+
+<--
+
+Greetings, Electron hacker!
+
+This file is generated automatically, so it should not be edited.
+
+To make changes, head over to the electron/electron repository:
+
+https://github.com/electron/electron/blob/master/docs/tutorial/using-selenium-and-webdriver.md
+
+-->
+
 # Using Selenium and WebDriver
 
 From [ChromeDriver - WebDriver for Chrome](https://sites.google.com/a/chromium.org/chromedriver/):

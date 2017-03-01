@@ -88,6 +88,20 @@ title: Using clang-format on C++ Code
 excerpt: ''
 sort_title: clang-format
 ---
+
+
+<--
+
+Greetings, Electron hacker!
+
+This file is generated automatically, so it should not be edited.
+
+To make changes, head over to the electron/electron repository:
+
+https://github.com/electron/electron/blob/master/docs/development/clang-format.md
+
+-->
+
 # Using clang-format on C++ Code
 
 [`clang-format`](http://clang.llvm.org/docs/ClangFormat.html) is a tool to automatically format C/C++/Objective-C code, so that developers don't need to worry about style issues during code reviews.

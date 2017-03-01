@@ -88,6 +88,20 @@ title: powerSaveBlocker
 excerpt: Block the system from entering low-power (sleep) mode.
 sort_title: power-save-blocker
 ---
+
+
+<--
+
+Greetings, Electron hacker!
+
+This file is generated automatically, so it should not be edited.
+
+To make changes, head over to the electron/electron repository:
+
+https://github.com/electron/electron/blob/master/docs/api/power-save-blocker.md
+
+-->
+
 # powerSaveBlocker
 
 > Block the system from entering low-power (sleep) mode.

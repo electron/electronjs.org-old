@@ -87,6 +87,20 @@ title: crashReporter
 excerpt: Submit crash reports to a remote server.
 sort_title: crash-reporter
 ---
+
+
+<--
+
+Greetings, Electron hacker!
+
+This file is generated automatically, so it should not be edited.
+
+To make changes, head over to the electron/electron repository:
+
+https://github.com/electron/electron/blob/master/docs/api/crash-reporter.md
+
+-->
+
 # crashReporter
 
 > Submit crash reports to a remote server.

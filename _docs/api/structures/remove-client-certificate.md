@@ -88,6 +88,20 @@ title: RemoveClientCertificate Object
 excerpt: ''
 sort_title: remove-client-certificate
 ---
+
+
+<--
+
+Greetings, Electron hacker!
+
+This file is generated automatically, so it should not be edited.
+
+To make changes, head over to the electron/electron repository:
+
+https://github.com/electron/electron/blob/master/docs/api/structures/remove-client-certificate.md
+
+-->
+
 # RemoveClientCertificate Object
 
 *   `type` String - `clientCertificate`.

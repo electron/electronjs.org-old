@@ -88,6 +88,20 @@ title: DesktopCapturerSource Object
 excerpt: ''
 sort_title: desktop-capturer-source
 ---
+
+
+<--
+
+Greetings, Electron hacker!
+
+This file is generated automatically, so it should not be edited.
+
+To make changes, head over to the electron/electron repository:
+
+https://github.com/electron/electron/blob/master/docs/api/structures/desktop-capturer-source.md
+
+-->
+
 # DesktopCapturerSource Object
 
 *   `id` String - The identifier of a window or screen that can be used as a `chromeMediaSourceId` constraint when calling [`navigator.webkitGetUserMedia`]. The format of the identifier will be `window:XX` or `screen:XX`, where `XX` is a random generated number.

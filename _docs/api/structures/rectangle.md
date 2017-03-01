@@ -88,6 +88,20 @@ title: Rectangle Object
 excerpt: ''
 sort_title: rectangle
 ---
+
+
+<--
+
+Greetings, Electron hacker!
+
+This file is generated automatically, so it should not be edited.
+
+To make changes, head over to the electron/electron repository:
+
+https://github.com/electron/electron/blob/master/docs/api/structures/rectangle.md
+
+-->
+
 # Rectangle Object
 
 *   `x` Number - The x coordinate of the origin of the rectangle

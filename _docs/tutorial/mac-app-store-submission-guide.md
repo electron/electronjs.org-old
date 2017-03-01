@@ -88,6 +88,20 @@ title: Mac App Store Submission Guide
 excerpt: ''
 sort_title: mac-app-store-submission-guide
 ---
+
+
+<--
+
+Greetings, Electron hacker!
+
+This file is generated automatically, so it should not be edited.
+
+To make changes, head over to the electron/electron repository:
+
+https://github.com/electron/electron/blob/master/docs/tutorial/mac-app-store-submission-guide.md
+
+-->
+
 # Mac App Store Submission Guide
 
 Since v0.34.0, Electron allows submitting packaged apps to the Mac App Store (MAS). This guide provides information on: how to submit your app and the limitations of the MAS build.

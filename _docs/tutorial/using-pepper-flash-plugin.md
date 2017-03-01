@@ -88,6 +88,20 @@ title: Using Pepper Flash Plugin
 excerpt: ''
 sort_title: using-pepper-flash-plugin
 ---
+
+
+<--
+
+Greetings, Electron hacker!
+
+This file is generated automatically, so it should not be edited.
+
+To make changes, head over to the electron/electron repository:
+
+https://github.com/electron/electron/blob/master/docs/tutorial/using-pepper-flash-plugin.md
+
+-->
+
 # Using Pepper Flash Plugin
 
 Electron supports the Pepper Flash plugin. To use the Pepper Flash plugin in Electron, you should manually specify the location of the Pepper Flash plugin and then enable it in your application.

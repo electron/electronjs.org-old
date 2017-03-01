@@ -88,6 +88,20 @@ title: Coding Style
 excerpt: ''
 sort_title: coding-style
 ---
+
+
+<--
+
+Greetings, Electron hacker!
+
+This file is generated automatically, so it should not be edited.
+
+To make changes, head over to the electron/electron repository:
+
+https://github.com/electron/electron/blob/master/docs/development/coding-style.md
+
+-->
+
 # Coding Style
 
 These are the style guidelines for coding in Electron.

@@ -88,6 +88,20 @@ title: Environment Variables
 excerpt: Control application configuration and behavior without changing code.
 sort_title: environment-variables
 ---
+
+
+<--
+
+Greetings, Electron hacker!
+
+This file is generated automatically, so it should not be edited.
+
+To make changes, head over to the electron/electron repository:
+
+https://github.com/electron/electron/blob/master/docs/api/environment-variables.md
+
+-->
+
 # Environment Variables
 
 > Control application configuration and behavior without changing code.

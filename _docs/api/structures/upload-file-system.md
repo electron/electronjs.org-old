@@ -88,6 +88,20 @@ title: UploadFileSystem Object
 excerpt: ''
 sort_title: upload-file-system
 ---
+
+
+<--
+
+Greetings, Electron hacker!
+
+This file is generated automatically, so it should not be edited.
+
+To make changes, head over to the electron/electron repository:
+
+https://github.com/electron/electron/blob/master/docs/api/structures/upload-file-system.md
+
+-->
+
 # UploadFileSystem Object
 
 *   `type` String - `fileSystem`.

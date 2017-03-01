@@ -88,6 +88,20 @@ title: Build Instructions (Windows)
 excerpt: ''
 sort_title: build-instructions-windows
 ---
+
+
+<--
+
+Greetings, Electron hacker!
+
+This file is generated automatically, so it should not be edited.
+
+To make changes, head over to the electron/electron repository:
+
+https://github.com/electron/electron/blob/master/docs/development/build-instructions-windows.md
+
+-->
+
 # Build Instructions (Windows)
 
 Follow the guidelines below for building Electron on Windows.

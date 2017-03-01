@@ -88,6 +88,20 @@ title: MemoryUsageDetails Object
 excerpt: ''
 sort_title: memory-usage-details
 ---
+
+
+<--
+
+Greetings, Electron hacker!
+
+This file is generated automatically, so it should not be edited.
+
+To make changes, head over to the electron/electron repository:
+
+https://github.com/electron/electron/blob/master/docs/api/structures/memory-usage-details.md
+
+-->
+
 # MemoryUsageDetails Object
 
 *   `count` Number

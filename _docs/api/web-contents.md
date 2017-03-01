@@ -87,6 +87,20 @@ title: webContents
 excerpt: Render and control web pages.
 sort_title: web-contents
 ---
+
+
+<--
+
+Greetings, Electron hacker!
+
+This file is generated automatically, so it should not be edited.
+
+To make changes, head over to the electron/electron repository:
+
+https://github.com/electron/electron/blob/master/docs/api/web-contents.md
+
+-->
+
 # webContents
 
 > Render and control web pages.

@@ -87,6 +87,20 @@ title: Menu
 excerpt: Create native application menus and context menus.
 sort_title: menu
 ---
+
+
+<--
+
+Greetings, Electron hacker!
+
+This file is generated automatically, so it should not be edited.
+
+To make changes, head over to the electron/electron repository:
+
+https://github.com/electron/electron/blob/master/docs/api/menu.md
+
+-->
+
 ## Class: Menu
 
 > Create native application menus and context menus.

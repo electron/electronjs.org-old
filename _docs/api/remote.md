@@ -87,6 +87,20 @@ title: remote
 excerpt: Use main process modules from the renderer process.
 sort_title: remote
 ---
+
+
+<--
+
+Greetings, Electron hacker!
+
+This file is generated automatically, so it should not be edited.
+
+To make changes, head over to the electron/electron repository:
+
+https://github.com/electron/electron/blob/master/docs/api/remote.md
+
+-->
+
 # remote
 
 > Use main process modules from the renderer process.

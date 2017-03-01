@@ -88,6 +88,20 @@ title: DevTools Extension
 excerpt: ''
 sort_title: devtools-extension
 ---
+
+
+<--
+
+Greetings, Electron hacker!
+
+This file is generated automatically, so it should not be edited.
+
+To make changes, head over to the electron/electron repository:
+
+https://github.com/electron/electron/blob/master/docs/tutorial/devtools-extension.md
+
+-->
+
 # DevTools Extension
 
 Electron supports the [Chrome DevTools Extension](https://developer.chrome.com/extensions/devtools), which can be used to extend the ability of devtools for debugging popular web frameworks.

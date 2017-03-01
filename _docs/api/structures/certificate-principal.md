@@ -88,6 +88,20 @@ title: CertificatePrincipal Object
 excerpt: ''
 sort_title: certificate-principal
 ---
+
+
+<--
+
+Greetings, Electron hacker!
+
+This file is generated automatically, so it should not be edited.
+
+To make changes, head over to the electron/electron repository:
+
+https://github.com/electron/electron/blob/master/docs/api/structures/certificate-principal.md
+
+-->
+
 # CertificatePrincipal Object
 
 *   `commonName` String - Common Name

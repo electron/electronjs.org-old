@@ -87,6 +87,20 @@ title: DownloadItem
 excerpt: Control file downloads from remote sources.
 sort_title: download-item
 ---
+
+
+<--
+
+Greetings, Electron hacker!
+
+This file is generated automatically, so it should not be edited.
+
+To make changes, head over to the electron/electron repository:
+
+https://github.com/electron/electron/blob/master/docs/api/download-item.md
+
+-->
+
 ## Class: DownloadItem
 
 > Control file downloads from remote sources.

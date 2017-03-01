@@ -88,6 +88,20 @@ title: Build System Overview
 excerpt: ''
 sort_title: build-system-overview
 ---
+
+
+<--
+
+Greetings, Electron hacker!
+
+This file is generated automatically, so it should not be edited.
+
+To make changes, head over to the electron/electron repository:
+
+https://github.com/electron/electron/blob/master/docs/development/build-system-overview.md
+
+-->
+
 # Build System Overview
 
 Electron uses [gyp](https://gyp.gsrc.io/) for project generation and [ninja](https://ninja-build.org/) for building. Project configurations can be found in the `.gyp` and `.gypi` files.

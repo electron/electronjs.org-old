@@ -87,6 +87,20 @@ title: ipcMain
 excerpt: Communicate asynchronously from the main process to renderer processes.
 sort_title: ipc-main
 ---
+
+
+<--
+
+Greetings, Electron hacker!
+
+This file is generated automatically, so it should not be edited.
+
+To make changes, head over to the electron/electron repository:
+
+https://github.com/electron/electron/blob/master/docs/api/ipc-main.md
+
+-->
+
 # ipcMain
 
 > Communicate asynchronously from the main process to renderer processes.

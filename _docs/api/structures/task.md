@@ -87,6 +87,20 @@ title: Task Object
 excerpt: ''
 sort_title: task
 ---
+
+
+<--
+
+Greetings, Electron hacker!
+
+This file is generated automatically, so it should not be edited.
+
+To make changes, head over to the electron/electron repository:
+
+https://github.com/electron/electron/blob/master/docs/api/structures/task.md
+
+-->
+
 # Task Object
 
 *   `program` String - Path of the program to execute, usually you should specify `process.execPath` which opens the current program.

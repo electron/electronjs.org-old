@@ -87,6 +87,20 @@ title: window.open Function
 excerpt: Open a new window and load a URL.
 sort_title: window-open
 ---
+
+
+<--
+
+Greetings, Electron hacker!
+
+This file is generated automatically, so it should not be edited.
+
+To make changes, head over to the electron/electron repository:
+
+https://github.com/electron/electron/blob/master/docs/api/window-open.md
+
+-->
+
 # `window.open` Function
 
 > Open a new window and load a URL.

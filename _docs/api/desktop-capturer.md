@@ -89,6 +89,20 @@ excerpt: |-
       video from the desktop using the <a href="https://developer.mozilla.org/en/docs/Web/API/Navigator/getUserMedia"><code>navigator.webkitGetUserMedia</code></a> API.
 sort_title: desktop-capturer
 ---
+
+
+<--
+
+Greetings, Electron hacker!
+
+This file is generated automatically, so it should not be edited.
+
+To make changes, head over to the electron/electron repository:
+
+https://github.com/electron/electron/blob/master/docs/api/desktop-capturer.md
+
+-->
+
 # desktopCapturer
 
 > Access information about media sources that can be used to capture audio and video from the desktop using the [`navigator.webkitGetUserMedia`](https://developer.mozilla.org/en/docs/Web/API/Navigator/getUserMedia) API.

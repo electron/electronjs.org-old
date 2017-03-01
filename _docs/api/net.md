@@ -87,6 +87,20 @@ title: net
 excerpt: Issue HTTP/HTTPS requests using Chromium&apos;s native networking library
 sort_title: net
 ---
+
+
+<--
+
+Greetings, Electron hacker!
+
+This file is generated automatically, so it should not be edited.
+
+To make changes, head over to the electron/electron repository:
+
+https://github.com/electron/electron/blob/master/docs/api/net.md
+
+-->
+
 # net
 
 > Issue HTTP/HTTPS requests using Chromium's native networking library

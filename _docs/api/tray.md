@@ -87,6 +87,20 @@ title: Tray
 excerpt: Add icons and context menus to the system&apos;s notification area.
 sort_title: tray
 ---
+
+
+<--
+
+Greetings, Electron hacker!
+
+This file is generated automatically, so it should not be edited.
+
+To make changes, head over to the electron/electron repository:
+
+https://github.com/electron/electron/blob/master/docs/api/tray.md
+
+-->
+
 ## Class: Tray
 
 > Add icons and context menus to the system's notification area.

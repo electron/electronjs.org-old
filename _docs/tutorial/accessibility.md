@@ -88,6 +88,20 @@ title: Accessibility
 excerpt: ''
 sort_title: accessibility
 ---
+
+
+<--
+
+Greetings, Electron hacker!
+
+This file is generated automatically, so it should not be edited.
+
+To make changes, head over to the electron/electron repository:
+
+https://github.com/electron/electron/blob/master/docs/tutorial/accessibility.md
+
+-->
+
 # Accessibility
 
 Making accessible applications is important and we're happy to introduce new functionality to [Devtron](http://electron.atom.io/devtron) and [Spectron](http://electron.atom.io/spectron) that gives developers the opportunity to make their apps better for everyone.

@@ -88,6 +88,20 @@ title: Electron Versioning
 excerpt: ''
 sort_title: electron-versioning
 ---
+
+
+<--
+
+Greetings, Electron hacker!
+
+This file is generated automatically, so it should not be edited.
+
+To make changes, head over to the electron/electron repository:
+
+https://github.com/electron/electron/blob/master/docs/tutorial/electron-versioning.md
+
+-->
+
 # Electron Versioning
 
 If you are a seasoned Node developer, you are surely aware of `semver` - and might be used to giving your dependency management systems only rough guidelines rather than fixed version numbers. Due to the hard dependency on Node and Chromium, Electron is in a slightly more difficult position and does not follow semver. You should therefore always reference a specific version of Electron.

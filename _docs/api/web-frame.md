@@ -87,6 +87,20 @@ title: webFrame
 excerpt: Customize the rendering of the current web page.
 sort_title: web-frame
 ---
+
+
+<--
+
+Greetings, Electron hacker!
+
+This file is generated automatically, so it should not be edited.
+
+To make changes, head over to the electron/electron repository:
+
+https://github.com/electron/electron/blob/master/docs/api/web-frame.md
+
+-->
+
 # webFrame
 
 > Customize the rendering of the current web page.

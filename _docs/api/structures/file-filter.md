@@ -88,6 +88,20 @@ title: FileFilter Object
 excerpt: ''
 sort_title: file-filter
 ---
+
+
+<--
+
+Greetings, Electron hacker!
+
+This file is generated automatically, so it should not be edited.
+
+To make changes, head over to the electron/electron repository:
+
+https://github.com/electron/electron/blob/master/docs/api/structures/file-filter.md
+
+-->
+
 # FileFilter Object
 
 *   `name` String

@@ -89,6 +89,20 @@ excerpt: >-
   filesystem.
 sort_title: file-object
 ---
+
+
+<--
+
+Greetings, Electron hacker!
+
+This file is generated automatically, so it should not be edited.
+
+To make changes, head over to the electron/electron repository:
+
+https://github.com/electron/electron/blob/master/docs/api/file-object.md
+
+-->
+
 # `File` Object
 
 > Use the HTML5 `File` API to work natively with files on the filesystem.

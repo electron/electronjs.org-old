@@ -87,6 +87,20 @@ title: MenuItem
 excerpt: Add items to native application menus and context menus.
 sort_title: menu-item
 ---
+
+
+<--
+
+Greetings, Electron hacker!
+
+This file is generated automatically, so it should not be edited.
+
+To make changes, head over to the electron/electron repository:
+
+https://github.com/electron/electron/blob/master/docs/api/menu-item.md
+
+-->
+
 ## Class: MenuItem
 
 > Add items to native application menus and context menus.

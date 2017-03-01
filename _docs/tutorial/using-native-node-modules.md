@@ -88,6 +88,20 @@ title: Using Native Node Modules
 excerpt: ''
 sort_title: using-native-node-modules
 ---
+
+
+<--
+
+Greetings, Electron hacker!
+
+This file is generated automatically, so it should not be edited.
+
+To make changes, head over to the electron/electron repository:
+
+https://github.com/electron/electron/blob/master/docs/tutorial/using-native-node-modules.md
+
+-->
+
 # Using Native Node Modules
 
 The native Node modules are supported by Electron, but since Electron is very likely to use a different V8 version from the Node binary installed in your system, you have to manually specify the location of Electron's headers when building native modules.

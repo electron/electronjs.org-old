@@ -87,6 +87,20 @@ title: Debugger
 excerpt: An alternate transport for Chrome&apos;s remote debugging protocol.
 sort_title: debugger
 ---
+
+
+<--
+
+Greetings, Electron hacker!
+
+This file is generated automatically, so it should not be edited.
+
+To make changes, head over to the electron/electron repository:
+
+https://github.com/electron/electron/blob/master/docs/api/debugger.md
+
+-->
+
 ## Class: Debugger
 
 > An alternate transport for Chrome's remote debugging protocol.

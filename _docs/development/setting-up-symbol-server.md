@@ -88,6 +88,20 @@ title: Setting Up Symbol Server in Debugger
 excerpt: ''
 sort_title: setting-up-symbol-server
 ---
+
+
+<--
+
+Greetings, Electron hacker!
+
+This file is generated automatically, so it should not be edited.
+
+To make changes, head over to the electron/electron repository:
+
+https://github.com/electron/electron/blob/master/docs/development/setting-up-symbol-server.md
+
+-->
+
 # Setting Up Symbol Server in Debugger
 
 Debug symbols allow you to have better debugging sessions. They have information about the functions contained in executables and dynamic libraries and provide you with information to get clean call stacks. A Symbol Server allows the debugger to load the correct symbols, binaries and sources automatically without forcing users to download large debugging files. The server functions like [Microsoft's symbol server](http://support.microsoft.com/kb/311503) so the documentation there can be useful.

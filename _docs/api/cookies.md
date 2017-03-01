@@ -87,6 +87,20 @@ title: Cookies
 excerpt: Query and modify a session&apos;s cookies.
 sort_title: cookies
 ---
+
+
+<--
+
+Greetings, Electron hacker!
+
+This file is generated automatically, so it should not be edited.
+
+To make changes, head over to the electron/electron repository:
+
+https://github.com/electron/electron/blob/master/docs/api/cookies.md
+
+-->
+
 ## Class: Cookies
 
 > Query and modify a session's cookies.

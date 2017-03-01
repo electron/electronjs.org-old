@@ -99,6 +99,20 @@ excerpt: >-
       for promotional items such as upgrades or special offers.
 sort_title: desktop-environment-integration
 ---
+
+
+<--
+
+Greetings, Electron hacker!
+
+This file is generated automatically, so it should not be edited.
+
+To make changes, head over to the electron/electron repository:
+
+https://github.com/electron/electron/blob/master/docs/tutorial/desktop-environment-integration.md
+
+-->
+
 # Desktop Environment Integration
 
 Different operating systems provide different features for integrating desktop applications into their desktop environments. For example, on Windows, applications can put shortcuts in the JumpList of task bar, and on Mac, applications can put a custom menu in the dock menu.

@@ -87,6 +87,20 @@ title: IncomingMessage
 excerpt: Handle responses to HTTP/HTTPS requests.
 sort_title: incoming-message
 ---
+
+
+<--
+
+Greetings, Electron hacker!
+
+This file is generated automatically, so it should not be edited.
+
+To make changes, head over to the electron/electron repository:
+
+https://github.com/electron/electron/blob/master/docs/api/incoming-message.md
+
+-->
+
 ## Class: IncomingMessage
 
 > Handle responses to HTTP/HTTPS requests.

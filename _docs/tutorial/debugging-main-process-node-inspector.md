@@ -88,6 +88,20 @@ title: Debugging the Main Process in node-inspector
 excerpt: ''
 sort_title: debugging-main-process-node-inspector
 ---
+
+
+<--
+
+Greetings, Electron hacker!
+
+This file is generated automatically, so it should not be edited.
+
+To make changes, head over to the electron/electron repository:
+
+https://github.com/electron/electron/blob/master/docs/tutorial/debugging-main-process-node-inspector.md
+
+-->
+
 # Debugging the Main Process in node-inspector
 
 [`node-inspector`](https://github.com/node-inspector/node-inspector) provides a familiar DevTools GUI that can be used in Chrome to debug Electron's main process, however, because `node-inspector` relies on some native Node modules they must be rebuilt to target the version of Electron you wish to debug. You can either rebuild the `node-inspector` dependencies yourself, or let [`electron-inspector`](https://github.com/enlight/electron-inspector) do it for you, both approaches are covered in this document.

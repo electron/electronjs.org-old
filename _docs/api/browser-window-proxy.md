@@ -88,6 +88,20 @@ title: BrowserWindowProxy
 excerpt: Manipulate the child browser window
 sort_title: browser-window-proxy
 ---
+
+
+<--
+
+Greetings, Electron hacker!
+
+This file is generated automatically, so it should not be edited.
+
+To make changes, head over to the electron/electron repository:
+
+https://github.com/electron/electron/blob/master/docs/api/browser-window-proxy.md
+
+-->
+
 ## Class: BrowserWindowProxy
 
 > Manipulate the child browser window

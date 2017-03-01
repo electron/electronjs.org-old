@@ -88,6 +88,20 @@ title: Supported Platforms
 excerpt: ''
 sort_title: supported-platforms
 ---
+
+
+<--
+
+Greetings, Electron hacker!
+
+This file is generated automatically, so it should not be edited.
+
+To make changes, head over to the electron/electron repository:
+
+https://github.com/electron/electron/blob/master/docs/tutorial/supported-platforms.md
+
+-->
+
 # Supported Platforms
 
 Following platforms are supported by Electron:

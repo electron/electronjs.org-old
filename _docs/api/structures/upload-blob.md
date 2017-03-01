@@ -88,6 +88,20 @@ title: UploadBlob Object
 excerpt: ''
 sort_title: upload-blob
 ---
+
+
+<--
+
+Greetings, Electron hacker!
+
+This file is generated automatically, so it should not be edited.
+
+To make changes, head over to the electron/electron repository:
+
+https://github.com/electron/electron/blob/master/docs/api/structures/upload-blob.md
+
+-->
+
 # UploadBlob Object
 
 *   `type` String - `blob`.

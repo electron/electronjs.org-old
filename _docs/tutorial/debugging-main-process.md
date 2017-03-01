@@ -88,6 +88,20 @@ title: Debugging the Main Process
 excerpt: ''
 sort_title: debugging-main-process
 ---
+
+
+<--
+
+Greetings, Electron hacker!
+
+This file is generated automatically, so it should not be edited.
+
+To make changes, head over to the electron/electron repository:
+
+https://github.com/electron/electron/blob/master/docs/tutorial/debugging-main-process.md
+
+-->
+
 # Debugging the Main Process
 
 The DevTools in an Electron browser window can only debug JavaScript that's executed in that window (i.e. the web pages). To debug JavaScript that's executed in the main process you will need to use an external debugger and launch Electron with the `--debug` or `--debug-brk` switch.

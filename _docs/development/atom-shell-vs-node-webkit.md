@@ -88,6 +88,20 @@ title: Technical Differences Between Electron and NW.js (formerly node-webkit)
 excerpt: ''
 sort_title: atom-shell-vs-node-webkit
 ---
+
+
+<--
+
+Greetings, Electron hacker!
+
+This file is generated automatically, so it should not be edited.
+
+To make changes, head over to the electron/electron repository:
+
+https://github.com/electron/electron/blob/master/docs/development/atom-shell-vs-node-webkit.md
+
+-->
+
 # Technical Differences Between Electron and NW.js (formerly node-webkit)
 
 **Note: Electron was previously named Atom Shell.**
