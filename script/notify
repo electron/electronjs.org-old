@@ -20,7 +20,7 @@ function send () {
   const opts = {
     icon_url: 'https://avatars0.githubusercontent.com/u/18403005?v=3',
     username: 'electron.atom.io',
-    text: input
+    text: ['```', input, '```'].join('\n')
   }
 
   slack.send(opts, (err) => {
