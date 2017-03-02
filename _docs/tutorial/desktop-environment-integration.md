@@ -101,7 +101,7 @@ sort_title: desktop-environment-integration
 ---
 
 
-<--
+<!--
 
 Greetings, Electron hacker!
 
