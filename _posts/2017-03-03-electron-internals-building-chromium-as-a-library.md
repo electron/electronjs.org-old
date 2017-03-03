@@ -3,14 +3,16 @@ title: "Electron Internals: Building Chromium as a Library"
 author: zcbenz
 ---
 
-Electron is based on Google's opens-sourceChromium, a project that is not 
-necessarily designed to be used by other projects. This post introduces 
-how Chromium is built as a library for Electron's use, and how the build 
+Electron is based on Google's opens-source Chromium, a project that is not
+necessarily designed to be used by other projects. This post introduces
+how Chromium is built as a library for Electron's use, and how the build
 system has evolved over the years.
+
+---
 
 ## Using CEF
 
-The Chromium Embedded Framework (CEF) is a project that turns Chromium into 
+The Chromium Embedded Framework (CEF) is a project that turns Chromium into
 a library, and provides stable APIs based on Chromium's codebase. Very
 early versions of Atom editor and NW.js used CEF.
 
@@ -19,7 +21,7 @@ and wraps Chromium's APIs with its own interface. So when we needed to
 access underlying Chromium APIs, like integrating Node.js into web pages, the
 advantages of CEF became blockers.
 
-So in the end both Electron and NW.js switched to using Chromium's APIs 
+So in the end both Electron and NW.js switched to using Chromium's APIs
 directly.
 
 ## Building as part of Chromium
@@ -47,10 +49,10 @@ build Chromium as a shared library, and then link with it in Electron. In this
 way developers no longer need to build all off Chromium when contributing to
 Electron.
 
-The [libchromiumcontent] project was created by 
-[@aroben](https://github.com/aroben) for this purpose. It builds the Content 
-Module of Chromium as a shared library, and then provides Chromium's headers 
-and prebuilt binaries for download. The code of the initial version of 
+The [libchromiumcontent] project was created by
+[@aroben](https://github.com/aroben) for this purpose. It builds the Content
+Module of Chromium as a shared library, and then provides Chromium's headers
+and prebuilt binaries for download. The code of the initial version of
 libchromiumcontent can be found [in this link][libcc-classic].
 
 The [brightray] project was also born as part of libchromiumcontent,
@@ -70,8 +72,8 @@ On Windows there is a limitation of how many symbols one shared library can
 export. As the codebase of Chromium grew, the number of symbols exported in
 libchromiumcontent soon exceeded the limitation.
 
-The solution was to filter out unneeded symbols when generating the DLL file. 
-It worked by [providing a `.def` file to the linker][libcc-def], and then using 
+The solution was to filter out unneeded symbols when generating the DLL file.
+It worked by [providing a `.def` file to the linker][libcc-def], and then using
 a script to [judge whether symbols under a namespace should be
 exported][libcc-filter].
 
@@ -122,8 +124,8 @@ optimized binaries.
 
 ## The `gn` update
 
-Being one of the largest projects in the world, most normal systems are not 
-suitable for building Chromium, and the Chromium team develops their own build 
+Being one of the largest projects in the world, most normal systems are not
+suitable for building Chromium, and the Chromium team develops their own build
 tools.
 
 Earlier versions of Chromium were using `gyp` as a build system, but it suffers
@@ -146,11 +148,11 @@ The first try to solve this was to [patch `gn` to generate static library
 files][libcc-gn-hack], which solved the problem, but was far from a decent
 solution.
 
-The second try was made by [@alespergl](https://github.com/alespergl) to 
-[produce custom static libraries from the list of object files][libcc-gn]. 
-It used a trick to first run a dummy build to collect a list of generated 
-object files, and then actually build the static libraries by feeding 
-`gn` with the list. It only made minimal changes to Chromium's source 
+The second try was made by [@alespergl](https://github.com/alespergl) to
+[produce custom static libraries from the list of object files][libcc-gn].
+It used a trick to first run a dummy build to collect a list of generated
+object files, and then actually build the static libraries by feeding
+`gn` with the list. It only made minimal changes to Chromium's source
 code, and kept Electron's building architecture still.
 
 ## Summary
