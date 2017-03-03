@@ -1550,6 +1550,35 @@
     ]
   },
   {
+    "slug": "epictask",
+    "name": "Epictask",
+    "description": "An Open Source + Extensible Github Issue Management App",
+    "website": "http://epictask.run",
+    "repository": "https://github.com/densebrain/epictask",
+    "keywords": [
+      "issue",
+      "tracker",
+      "project",
+      "issues",
+      "github",
+      "editor",
+      "typescript"
+    ],
+    "license": "Apache 2",
+    "icon": "epictask-icon.png",
+    "icon32": "epictask-icon-32.png",
+    "icon64": "epictask-icon-64.png",
+    "icon128": "epictask-icon-128.png",
+    "date": "2017-03-01",
+    "iconColors": [
+      "#212124",
+      "#6fd661",
+      "#3d6932",
+      "#346c4c",
+      "#548c34"
+    ]
+  },
+  {
     "slug": "etcher",
     "name": "Etcher",
     "description": "Flash OS images to SD cards & USB drives, safely and easily.",
