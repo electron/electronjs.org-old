@@ -1299,8 +1299,8 @@
     ]
   },
   {
-    "slug": "designer",
-    "name": "Designer",
+    "slug": "gravit-designer",
+    "name": "Gravit Designer",
     "description": "A vector based design tool similar to sketch or figma.",
     "website": "http://designer.io/",
     "keywords": [
