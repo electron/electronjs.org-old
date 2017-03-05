@@ -57,7 +57,7 @@ excerpt: See some of the amazing apps built on Electron.
 
     <ul class="mb-4 filterable-list app-list">
       {% assign sortedApps = site.data.apps | sort:"date" %}
-      {% for app in sortedApps %}
+      {% for app in sortedApps reversed %}
         {% include listed_app.html %}
       {% endfor %}
     </ul>
