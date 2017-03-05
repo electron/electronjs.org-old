@@ -55,7 +55,8 @@ excerpt: See some of the amazing apps built on Electron.
     <input class="filterable-list-input" placeholder="Filter apps by name, description, keyword, date..." type="search" autofocus="on" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
 
     <ul class="mb-4 filterable-list app-list">
-      {% for app in (site.data.apps | sort: 'date') %}
+      {% assign site.data.apps = site.data.apps | sort:"date" %}
+      {% for app in site.data.apps %}
         {% include listed_app.html %}
       {% endfor %}
     </ul>
