@@ -155,6 +155,11 @@ $app-list-icon-size: 48px;
   text-overflow: ellipsis;
 }
 
+.listed-app-date {
+  font-size: 12px;
+  padding-left: 15px;
+}
+
 .listed-app span {
   line-height: $app-list-icon-size;
   vertical-align: bottom;
