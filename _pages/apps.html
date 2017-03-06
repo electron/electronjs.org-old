@@ -26,6 +26,7 @@ excerpt: See some of the amazing apps built on Electron.
       valueNames: [
         'listed-app-name',
         'listed-app-description',
+        'listed-app-date',
         'listed-app-keywords'
       ]
     }
@@ -54,7 +55,7 @@ excerpt: See some of the amazing apps built on Electron.
     <input class="filterable-list-input" placeholder="Filter apps by name, description, keyword..." type="search" autofocus="on" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
 
     <ul class="mb-4 filterable-list app-list">
-      {% for app in site.data.apps %}
+      {% for app in site.data.apps | sort: 'date' %}
         {% include listed_app.html %}
       {% endfor %}
     </ul>
