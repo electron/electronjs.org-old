@@ -8,8 +8,11 @@ excerpt: See some of the amazing apps built on Electron.
 <script src="{{site.baseurl}}/js/vendor/list.min.js"></script>
 <script src="{{site.baseurl}}/js/vendor/query-string.js"></script>
 <script src="{{site.baseurl}}/js/vendor/set-query-string.js"></script>
+<script src="{{site.baseurl}}/js/vendor/browser-date-formatter.js"></script>
+
 <script>
   document.addEventListener('DOMContentLoaded', createFilterList)
+  document.addEventListener('DOMContentLoaded', browserDateFormatter)
 
   function createFilterList () {
     // look for a filterable list on this page
