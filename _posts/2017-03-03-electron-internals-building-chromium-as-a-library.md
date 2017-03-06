@@ -16,7 +16,7 @@ The Chromium Embedded Framework (CEF) is a project that turns Chromium into
 a library, and provides stable APIs based on Chromium's codebase. Very
 early versions of Atom editor and NW.js used CEF.
 
-To maintain a stable API interface, CEF hides all the details of Chromium
+To maintain a stable API, CEF hides all the details of Chromium
 and wraps Chromium's APIs with its own interface. So when we needed to
 access underlying Chromium APIs, like integrating Node.js into web pages, the
 advantages of CEF became blockers.
