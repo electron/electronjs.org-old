@@ -3,7 +3,7 @@ title: "Electron Internals: Building Chromium as a Library"
 author: zcbenz
 ---
 
-Electron is based on Google's opens-source Chromium, a project that is not
+Electron is based on Google's open-source Chromium, a project that is not
 necessarily designed to be used by other projects. This post introduces
 how Chromium is built as a library for Electron's use, and how the build
 system has evolved over the years.
