@@ -27,7 +27,7 @@ directly.
 ## Building as part of Chromium
 
 Even though Chromium does not officially support outside projects, the codebase
-is modular and it is easy to build a minimal browser based Chromium. The core
+is modular and it is easy to build a minimal browser based on Chromium. The core
 module providing the browser interface is called Content Module.
 
 To develop a project with Content Module, the easiest way is to build the
