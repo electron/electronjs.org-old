@@ -532,6 +532,25 @@
     ]
   },
   {
+    "slug": "browser-dispatcher",
+    "name": "BrowserDispatcher",
+    "description": "Sends link to the right browser depending on a set of predefined rules",
+    "website": "https://github.com/andriyko/browser-dispatcher/releases",
+    "repository": "https://github.com/andriyko/browser-dispatcher",
+    "icon": "browser-dispatcher-icon.png",
+    "icon32": "browser-dispatcher-icon-32.png",
+    "icon64": "browser-dispatcher-icon-64.png",
+    "icon128": "browser-dispatcher-icon-128.png",
+    "date": "2017-03-04",
+    "iconColors": [
+      "#2689ad",
+      "#dee8eb",
+      "#192326",
+      "#334850",
+      "#8cc4d4"
+    ]
+  },
+  {
     "slug": "caprine",
     "name": "Caprine",
     "description": "Facebook Messenger app",
@@ -556,6 +575,25 @@
       "#4cd4fc",
       "#81c9f6",
       "#095ab2"
+    ]
+  },
+  {
+    "slug": "caption",
+    "name": "Caption",
+    "description": "Find the right subtitles. Easy.",
+    "website": "https://getcaption.co",
+    "repository": "https://github.com/gielcobben/Caption",
+    "icon": "caption-icon.png",
+    "icon32": "caption-icon-32.png",
+    "icon64": "caption-icon-64.png",
+    "icon128": "caption-icon-128.png",
+    "date": "2017-03-06",
+    "iconColors": [
+      "#0497fb",
+      "#f8fafb",
+      "#04b4fb",
+      "#5ebdfa",
+      "#7cccfc"
     ]
   },
   {
@@ -3048,6 +3086,31 @@
       "#8a19f9",
       "#9bc8e2",
       "#ca94fc"
+    ]
+  },
+  {
+    "slug": "katana",
+    "name": "Katana",
+    "description": "Open-source screenshot utility that lives in your menubar",
+    "website": "https://getkatana.com/",
+    "repository": "https://github.com/bluegill/katana",
+    "keywords": [
+      "screenshot",
+      "cloud",
+      "share",
+      "upload"
+    ],
+    "icon": "katana-icon.png",
+    "icon32": "katana-icon-32.png",
+    "icon64": "katana-icon-64.png",
+    "icon128": "katana-icon-128.png",
+    "date": "2017-03-02",
+    "iconColors": [
+      "#333333",
+      "#e9ca99",
+      "#867864",
+      "#a99479",
+      "#948464"
     ]
   },
   {
