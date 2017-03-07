@@ -1674,24 +1674,6 @@
     "version": "0.32.1"
   },
   {
-    "url": "https://api.github.com/repos/electron/electron/releases/1780262",
-    "assets_url": "https://api.github.com/repos/electron/electron/releases/1780262/assets",
-    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/1780262/assets{?name,label}",
-    "html_url": "https://github.com/electron/electron/releases/tag/v0.32.0",
-    "id": 1780262,
-    "tag_name": "v0.32.0",
-    "target_commitish": "master",
-    "name": "electron v0.32.0",
-    "draft": false,
-    "prerelease": false,
-    "created_at": "2015-09-08T05:40:10Z",
-    "published_at": "2015-09-09T05:06:10Z",
-    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.32.0",
-    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.32.0",
-    "body": "Changelog:\n- Upgrade to Chrome 45.\n- Upgrade to io.js 3.3.0.\n- Add `partition` attribute for `<webview>` tag.\n- Add `partition` attribute for `web-preferences` option of `BrowserWindow`.\n- The `preload`, `zoom-factor`, `node-integration` options of `BrowserWindow`\n  have been moved to `web-preferences` option.\n- Fix using `Buffer` created with external native C buffer.\n- Fix exception when accessing `process.stdout`.\n",
-    "version": "0.32.0"
-  },
-  {
     "url": "https://api.github.com/repos/electron/electron/releases/1871693",
     "assets_url": "https://api.github.com/repos/electron/electron/releases/1871693/assets",
     "upload_url": "https://uploads.github.com/repos/electron/electron/releases/1871693/assets{?name,label}",
