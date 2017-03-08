@@ -1478,6 +1478,32 @@
     ]
   },
   {
+    "slug": "eagle",
+    "name": "Eagle",
+    "description": "Organizing Ideas Has Never Been Easier",
+    "website": "http://eagle.cool",
+    "keywords": [
+      "Inspiration",
+      "Design",
+      "Sketch",
+      "Screenshot",
+      "Mac",
+      "Windows"
+    ],
+    "icon": "eagle-icon.png",
+    "icon32": "eagle-icon-32.png",
+    "icon64": "eagle-icon-64.png",
+    "icon128": "eagle-icon-128.png",
+    "date": "2017-03-06",
+    "iconColors": [
+      "#1777e5",
+      "#d8e4f1",
+      "#05d6fb",
+      "#6b9bea",
+      "#989cb8"
+    ]
+  },
+  {
     "slug": "egret-wing",
     "name": "Egret Wing",
     "description": "Egret Wing",
@@ -2389,6 +2415,35 @@
       "#1494e4",
       "#1486d2",
       "#1474c4"
+    ]
+  },
+  {
+    "slug": "gravit-designer",
+    "name": "Gravit Designer",
+    "description": "A vector based design tool similar to sketch or figma.",
+    "website": "http://designer.io",
+    "keywords": [
+      "graphics",
+      "images",
+      "editor",
+      "svg",
+      "png",
+      "design",
+      "sketch",
+      "ui",
+      "ux"
+    ],
+    "icon": "gravit-designer-icon.png",
+    "icon32": "gravit-designer-icon-32.png",
+    "icon64": "gravit-designer-icon-64.png",
+    "icon128": "gravit-designer-icon-128.png",
+    "date": "2017-03-06",
+    "iconColors": [
+      "#a34b5e",
+      "#edd954",
+      "#98924b",
+      "#aaa746",
+      "#cca755"
     ]
   },
   {
