@@ -34,7 +34,7 @@ window, handle button click events, and update the labels dynamically.
 ```js
 const {app, BrowserWindow, TouchBar} = require('electron')
 
-const {TouchBarLabel, TouchBarButton, TouchBarSpacer} = TouchBar
+const {TouchBarButton, TouchBarLabel, TouchBarSpacer} = TouchBar
 
 let spinning = false
 
