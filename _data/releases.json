@@ -1,5 +1,23 @@
 [
   {
+    "url": "https://api.github.com/repos/electron/electron/releases/5609109",
+    "assets_url": "https://api.github.com/repos/electron/electron/releases/5609109/assets",
+    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/5609109/assets{?name,label}",
+    "html_url": "https://github.com/electron/electron/releases/tag/v1.6.2",
+    "id": 5609109,
+    "tag_name": "v1.6.2",
+    "target_commitish": "master",
+    "name": "electron v1.6.2",
+    "draft": false,
+    "prerelease": false,
+    "created_at": "2017-03-01T17:11:05Z",
+    "published_at": "2017-03-01T20:06:39Z",
+    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v1.6.2",
+    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v1.6.2",
+    "body": "## Bug Fixes\r\n- Fixed an issue where the flash context menu would throw an error when\r\n  opened when fullscreen. <a href=\"https://github.com/electron/electron/pull/8739\">#8739</a>\r\n- Fixed an issue where the `Buffer` global would be unavailable in modules\r\n  required from preload scripts when node integration was disabled. <a href=\"https://github.com/electron/electron/pull/8758\">#8758</a>\r\n- Fixed a console warning message about a potential listener leak when more\r\n  than 10 `<webview>` tags were in a page. <a href=\"https://github.com/electron/electron/pull/8742\">#8742</a>\r\n- Fixed an issue where no such module errors would be incorrectly thrown in the\r\n  renderer process referencing browser process Electron modules. <a href=\"https://github.com/electron/electron/pull/8766\">#8766</a>\r\n\r\n### macOS\r\n- Fixed an issue where Quick Look would not work correctly when opened from a\r\n  file dialog. <a href=\"https://github.com/electron/electron/pull/8745\">#8745</a>\r\n\r\n## API Changes\r\n- Added a new `async` option to the `menu.popup` API that causes the method\r\n  to return immediately instead of after the menu is closed on all platforms\r\n  and also no longer blocks rendering updates on macOS. <a href=\"https://github.com/electron/electron/pull/8702\">#8702</a>\r\n\r\n### macOS\r\n- The `dialog.showMessageBox` API now supports the `cancelId` property\r\n  similar to other platforms. <a href=\"https://github.com/electron/electron/pull/8733\">#8733</a>\r\n",
+    "version": "1.6.2"
+  },
+  {
     "url": "https://api.github.com/repos/electron/electron/releases/5523854",
     "assets_url": "https://api.github.com/repos/electron/electron/releases/5523854/assets",
     "upload_url": "https://uploads.github.com/repos/electron/electron/releases/5523854/assets{?name,label}",
