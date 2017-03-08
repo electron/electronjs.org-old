@@ -1,5 +1,5 @@
 ---
-version: v1.6.1
+version: v1.6.2
 permalink: /docs/api/web-contents/
 category: API
 redirect_from:
@@ -1128,7 +1128,7 @@ End subscribing for frame presentation events.
 #### `contents.startDrag(item)`
 
 *   `item` Object
-    *   `file` String - The path to the file being dragged.
+    *   `file` String or `files` Array - The path(s) to the file(s) being dragged.
     *   `icon` [NativeImage]({{site.baseurl}}/docs/api/native-image) - The image must be non-empty on macOS.
 
 Sets the `item` as dragging item for current drag-drop operation, `file` is the absolute path of the file to be dragged, and `icon` is the image showing under the cursor when dragging.

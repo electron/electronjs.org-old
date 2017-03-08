@@ -1,5 +1,5 @@
 ---
-version: v1.6.1
+version: v1.6.2
 permalink: /docs/tutorial/planned-breaking-changes/
 category: Tutorial
 redirect_from:
@@ -158,6 +158,15 @@ crashReporter.start({
   submitURL: 'https://crash.server.com',
   uploadToServer: true
 })
+```
+
+## `menu`
+
+```js
+// Deprecated
+menu.popup(browserWindow, 100, 200, 2)
+// Replace with
+menu.popup(browserWindow, {x: 100, y: 200, positioningItem: 2})
 ```
 
 ## `nativeImage`

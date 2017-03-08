@@ -1,5 +1,5 @@
 ---
-version: v1.6.1
+version: v1.6.2
 permalink: /docs/api/structures/upload-raw-data/
 category: API
 redirect_from:

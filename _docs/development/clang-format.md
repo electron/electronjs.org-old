@@ -1,5 +1,5 @@
 ---
-version: v1.6.1
+version: v1.6.2
 permalink: /docs/development/clang-format/
 category: Development
 redirect_from:
