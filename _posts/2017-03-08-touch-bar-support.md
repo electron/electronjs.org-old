@@ -28,6 +28,8 @@ Big thanks to [@MarshallOfSound](https://github.com/MarshallOfSound) for contrib
 ![Touch Bar Gif](https://cloud.githubusercontent.com/assets/671378/23723516/5ff1774c-03fe-11e7-97b8-c693a0004dc8.gif)
 
 Below is an example of creating a simple slot machine game in the touch bar.
+It demonstrates how to create a touch bar, style the items, associate it with a
+window, handle button click events, and update the labels dynamically.
 
 ```js
 const {app, BrowserWindow, TouchBar} = require('electron')
