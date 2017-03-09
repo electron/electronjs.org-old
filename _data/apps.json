@@ -4990,6 +4990,30 @@
     ]
   },
   {
+    "slug": "sejda-pdf-desktop",
+    "name": "Sejda PDF Desktop",
+    "description": "Pleasant and productive PDF software that you'll love to use",
+    "website": "https://www.sejda.com/desktop",
+    "keywords": [
+      "PDF",
+      "document",
+      "editor",
+      "productivity"
+    ],
+    "icon": "sejda-pdf-desktop-icon.png",
+    "icon32": "sejda-pdf-desktop-icon-32.png",
+    "icon64": "sejda-pdf-desktop-icon-64.png",
+    "icon128": "sejda-pdf-desktop-icon-128.png",
+    "date": "2017-03-09",
+    "iconColors": [
+      "#fbfbfb",
+      "#249c6c",
+      "#71c0a1",
+      "#94ccb4",
+      "#8cccb4"
+    ]
+  },
+  {
     "slug": "sencha-architect",
     "name": "Sencha Architect",
     "description": "The Ext JS visual app builder for developing cross-platform HTML5 applications on desktop and mobile devices.",
