@@ -3499,6 +3499,30 @@
     ]
   },
   {
+    "slug": "marksearch",
+    "name": "MarkSearch",
+    "description": "Desktop bookmarking app.",
+    "website": "https://darkle.github.io/MarkSearch/",
+    "repository": "https://github.com/Darkle/MarkSearch",
+    "keywords": [
+      "bookmarking",
+      "bookmarks"
+    ],
+    "license": "MIT",
+    "icon": "marksearch-icon.png",
+    "icon32": "marksearch-icon-32.png",
+    "icon64": "marksearch-icon-64.png",
+    "icon128": "marksearch-icon-128.png",
+    "date": "2017-03-09",
+    "iconColors": [
+      "#349cdc",
+      "#389cdc",
+      "#389cdc",
+      "#389cdc",
+      "#389cdc"
+    ]
+  },
+  {
     "slug": "marp",
     "name": "Marp",
     "description": "Markdown Presentation Writer",
