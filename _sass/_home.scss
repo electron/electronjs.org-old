@@ -143,6 +143,11 @@ $app-list-icon-size: 48px;
   height: $app-list-icon-size;
 }
 
+.listed-app-logo {
+    max-width: 48px;
+    height: 48px;
+}
+
 .listed-app-name {
   padding: 0 10px;
   font-weight: 500;
