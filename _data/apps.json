@@ -5030,11 +5030,11 @@
     "icon128": "sejda-pdf-desktop-icon-128.png",
     "date": "2017-03-09",
     "iconColors": [
-      "#fbfbfb",
       "#249c6c",
-      "#71c0a1",
+      "#fbfbfb",
       "#94ccb4",
-      "#8cccb4"
+      "#69bd9d",
+      "#84c4ac"
     ]
   },
   {
