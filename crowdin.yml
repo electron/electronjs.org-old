@@ -1,0 +1,5 @@
+files:
+  - source: _data/en-US/locale.yml
+    translation: _data/%locale%/%original_file_name%
+  - source: _posts/*.md
+    translation: _posts/%file_name%-es.%file_extension%
