@@ -496,21 +496,22 @@
     ]
   },
   {
-    "slug": "boost",
-    "name": "Boost",
-    "description": "Open-sourced note app for programmers",
-    "website": "https://b00st.io",
-    "icon": "boost-icon.png",
-    "icon32": "boost-icon-32.png",
-    "icon64": "boost-icon-64.png",
-    "icon128": "boost-icon-128.png",
-    "date": "2015-11-15",
+    "slug": "boostnote",
+    "name": "Boostnote",
+    "description": "Simple note-taking app for programmers",
+    "website": "https://boostnote.io",
+    "repository": "https://github.com/BoostIO/Boostnote",
+    "icon": "boostnote-icon.png",
+    "icon32": "boostnote-icon-32.png",
+    "icon64": "boostnote-icon-64.png",
+    "icon128": "boostnote-icon-128.png",
+    "date": "2017-03-10",
     "iconColors": [
-      "#f7f9f8",
-      "#04ad6f",
-      "#04bc83",
-      "#58a587",
-      "#7cc4ac"
+      "#f1faf6",
+      "#04c484",
+      "#59d8ae",
+      "#94e7ce",
+      "#2fd19c"
     ]
   },
   {
@@ -3987,6 +3988,31 @@
       "#f62444",
       "#07e0c6",
       "#7c7c7c"
+    ]
+  },
+  {
+    "slug": "neutrinometrics",
+    "name": "NeutrinoMetrics",
+    "description": "Analytics for apps made with electron",
+    "website": "https://neutrinometrics.net",
+    "keywords": [
+      "analytics",
+      "data",
+      "desktop",
+      "electron"
+    ],
+    "license": "GPLv2",
+    "icon": "neutrinometrics-icon.png",
+    "icon32": "neutrinometrics-icon-32.png",
+    "icon64": "neutrinometrics-icon-64.png",
+    "icon128": "neutrinometrics-icon-128.png",
+    "date": "2017-03-10",
+    "iconColors": [
+      "#3aa199",
+      "#f6f9f9",
+      "#5fc4bb",
+      "#65ccc4",
+      "#86c9c2"
     ]
   },
   {
