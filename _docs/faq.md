@@ -9,9 +9,9 @@ redirect_from:
   - /docs/v0.37.5/faq/
   - /docs/v0.37.4/faq/
   - /docs/v0.37.3/faq/
-  - /docs/v0.36.12/faq/
   - /docs/v0.37.1/faq/
   - /docs/v0.37.0/faq/
+  - /docs/v0.36.12/faq/
   - /docs/v0.36.11/faq/
   - /docs/v0.36.10/faq/
   - /docs/v0.36.9/faq/
@@ -21,14 +21,14 @@ redirect_from:
   - /docs/v0.36.5/faq/
   - /docs/v0.36.4/faq/
   - /docs/v0.36.3/faq/
-  - /docs/v0.35.5/faq/
   - /docs/v0.36.2/faq/
   - /docs/v0.36.0/faq/
+  - /docs/v0.35.5/faq/
   - /docs/v0.35.4/faq/
   - /docs/v0.35.3/faq/
   - /docs/v0.35.2/faq/
-  - /docs/v0.34.4/faq/
   - /docs/v0.35.1/faq/
+  - /docs/v0.34.4/faq/
   - /docs/v0.34.3/faq/
   - /docs/v0.34.2/faq/
   - /docs/v0.34.1/faq/

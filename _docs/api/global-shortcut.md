@@ -9,9 +9,9 @@ redirect_from:
   - /docs/v0.37.5/api/global-shortcut/
   - /docs/v0.37.4/api/global-shortcut/
   - /docs/v0.37.3/api/global-shortcut/
-  - /docs/v0.36.12/api/global-shortcut/
   - /docs/v0.37.1/api/global-shortcut/
   - /docs/v0.37.0/api/global-shortcut/
+  - /docs/v0.36.12/api/global-shortcut/
   - /docs/v0.36.11/api/global-shortcut/
   - /docs/v0.36.10/api/global-shortcut/
   - /docs/v0.36.9/api/global-shortcut/
@@ -21,14 +21,14 @@ redirect_from:
   - /docs/v0.36.5/api/global-shortcut/
   - /docs/v0.36.4/api/global-shortcut/
   - /docs/v0.36.3/api/global-shortcut/
-  - /docs/v0.35.5/api/global-shortcut/
   - /docs/v0.36.2/api/global-shortcut/
   - /docs/v0.36.0/api/global-shortcut/
+  - /docs/v0.35.5/api/global-shortcut/
   - /docs/v0.35.4/api/global-shortcut/
   - /docs/v0.35.3/api/global-shortcut/
   - /docs/v0.35.2/api/global-shortcut/
-  - /docs/v0.34.4/api/global-shortcut/
   - /docs/v0.35.1/api/global-shortcut/
+  - /docs/v0.34.4/api/global-shortcut/
   - /docs/v0.34.3/api/global-shortcut/
   - /docs/v0.34.2/api/global-shortcut/
   - /docs/v0.34.1/api/global-shortcut/

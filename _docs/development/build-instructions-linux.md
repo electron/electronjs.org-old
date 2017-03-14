@@ -9,9 +9,9 @@ redirect_from:
   - /docs/v0.37.5/development/build-instructions-linux/
   - /docs/v0.37.4/development/build-instructions-linux/
   - /docs/v0.37.3/development/build-instructions-linux/
-  - /docs/v0.36.12/development/build-instructions-linux/
   - /docs/v0.37.1/development/build-instructions-linux/
   - /docs/v0.37.0/development/build-instructions-linux/
+  - /docs/v0.36.12/development/build-instructions-linux/
   - /docs/v0.36.11/development/build-instructions-linux/
   - /docs/v0.36.10/development/build-instructions-linux/
   - /docs/v0.36.9/development/build-instructions-linux/
@@ -21,14 +21,14 @@ redirect_from:
   - /docs/v0.36.5/development/build-instructions-linux/
   - /docs/v0.36.4/development/build-instructions-linux/
   - /docs/v0.36.3/development/build-instructions-linux/
-  - /docs/v0.35.5/development/build-instructions-linux/
   - /docs/v0.36.2/development/build-instructions-linux/
   - /docs/v0.36.0/development/build-instructions-linux/
+  - /docs/v0.35.5/development/build-instructions-linux/
   - /docs/v0.35.4/development/build-instructions-linux/
   - /docs/v0.35.3/development/build-instructions-linux/
   - /docs/v0.35.2/development/build-instructions-linux/
-  - /docs/v0.34.4/development/build-instructions-linux/
   - /docs/v0.35.1/development/build-instructions-linux/
+  - /docs/v0.34.4/development/build-instructions-linux/
   - /docs/v0.34.3/development/build-instructions-linux/
   - /docs/v0.34.2/development/build-instructions-linux/
   - /docs/v0.34.1/development/build-instructions-linux/

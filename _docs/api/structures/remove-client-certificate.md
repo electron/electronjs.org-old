@@ -9,9 +9,9 @@ redirect_from:
   - /docs/v0.37.5/api/structures/remove-client-certificate/
   - /docs/v0.37.4/api/structures/remove-client-certificate/
   - /docs/v0.37.3/api/structures/remove-client-certificate/
-  - /docs/v0.36.12/api/structures/remove-client-certificate/
   - /docs/v0.37.1/api/structures/remove-client-certificate/
   - /docs/v0.37.0/api/structures/remove-client-certificate/
+  - /docs/v0.36.12/api/structures/remove-client-certificate/
   - /docs/v0.36.11/api/structures/remove-client-certificate/
   - /docs/v0.36.10/api/structures/remove-client-certificate/
   - /docs/v0.36.9/api/structures/remove-client-certificate/
@@ -21,14 +21,14 @@ redirect_from:
   - /docs/v0.36.5/api/structures/remove-client-certificate/
   - /docs/v0.36.4/api/structures/remove-client-certificate/
   - /docs/v0.36.3/api/structures/remove-client-certificate/
-  - /docs/v0.35.5/api/structures/remove-client-certificate/
   - /docs/v0.36.2/api/structures/remove-client-certificate/
   - /docs/v0.36.0/api/structures/remove-client-certificate/
+  - /docs/v0.35.5/api/structures/remove-client-certificate/
   - /docs/v0.35.4/api/structures/remove-client-certificate/
   - /docs/v0.35.3/api/structures/remove-client-certificate/
   - /docs/v0.35.2/api/structures/remove-client-certificate/
-  - /docs/v0.34.4/api/structures/remove-client-certificate/
   - /docs/v0.35.1/api/structures/remove-client-certificate/
+  - /docs/v0.34.4/api/structures/remove-client-certificate/
   - /docs/v0.34.3/api/structures/remove-client-certificate/
   - /docs/v0.34.2/api/structures/remove-client-certificate/
   - /docs/v0.34.1/api/structures/remove-client-certificate/

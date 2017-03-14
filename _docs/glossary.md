@@ -9,9 +9,9 @@ redirect_from:
   - /docs/v0.37.5/glossary/
   - /docs/v0.37.4/glossary/
   - /docs/v0.37.3/glossary/
-  - /docs/v0.36.12/glossary/
   - /docs/v0.37.1/glossary/
   - /docs/v0.37.0/glossary/
+  - /docs/v0.36.12/glossary/
   - /docs/v0.36.11/glossary/
   - /docs/v0.36.10/glossary/
   - /docs/v0.36.9/glossary/
@@ -21,14 +21,14 @@ redirect_from:
   - /docs/v0.36.5/glossary/
   - /docs/v0.36.4/glossary/
   - /docs/v0.36.3/glossary/
-  - /docs/v0.35.5/glossary/
   - /docs/v0.36.2/glossary/
   - /docs/v0.36.0/glossary/
+  - /docs/v0.35.5/glossary/
   - /docs/v0.35.4/glossary/
   - /docs/v0.35.3/glossary/
   - /docs/v0.35.2/glossary/
-  - /docs/v0.34.4/glossary/
   - /docs/v0.35.1/glossary/
+  - /docs/v0.34.4/glossary/
   - /docs/v0.34.3/glossary/
   - /docs/v0.34.2/glossary/
   - /docs/v0.34.1/glossary/

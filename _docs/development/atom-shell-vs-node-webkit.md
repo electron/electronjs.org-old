@@ -9,9 +9,9 @@ redirect_from:
   - /docs/v0.37.5/development/atom-shell-vs-node-webkit/
   - /docs/v0.37.4/development/atom-shell-vs-node-webkit/
   - /docs/v0.37.3/development/atom-shell-vs-node-webkit/
-  - /docs/v0.36.12/development/atom-shell-vs-node-webkit/
   - /docs/v0.37.1/development/atom-shell-vs-node-webkit/
   - /docs/v0.37.0/development/atom-shell-vs-node-webkit/
+  - /docs/v0.36.12/development/atom-shell-vs-node-webkit/
   - /docs/v0.36.11/development/atom-shell-vs-node-webkit/
   - /docs/v0.36.10/development/atom-shell-vs-node-webkit/
   - /docs/v0.36.9/development/atom-shell-vs-node-webkit/
@@ -21,14 +21,14 @@ redirect_from:
   - /docs/v0.36.5/development/atom-shell-vs-node-webkit/
   - /docs/v0.36.4/development/atom-shell-vs-node-webkit/
   - /docs/v0.36.3/development/atom-shell-vs-node-webkit/
-  - /docs/v0.35.5/development/atom-shell-vs-node-webkit/
   - /docs/v0.36.2/development/atom-shell-vs-node-webkit/
   - /docs/v0.36.0/development/atom-shell-vs-node-webkit/
+  - /docs/v0.35.5/development/atom-shell-vs-node-webkit/
   - /docs/v0.35.4/development/atom-shell-vs-node-webkit/
   - /docs/v0.35.3/development/atom-shell-vs-node-webkit/
   - /docs/v0.35.2/development/atom-shell-vs-node-webkit/
-  - /docs/v0.34.4/development/atom-shell-vs-node-webkit/
   - /docs/v0.35.1/development/atom-shell-vs-node-webkit/
+  - /docs/v0.34.4/development/atom-shell-vs-node-webkit/
   - /docs/v0.34.3/development/atom-shell-vs-node-webkit/
   - /docs/v0.34.2/development/atom-shell-vs-node-webkit/
   - /docs/v0.34.1/development/atom-shell-vs-node-webkit/

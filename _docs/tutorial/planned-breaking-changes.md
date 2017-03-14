@@ -9,9 +9,9 @@ redirect_from:
   - /docs/v0.37.5/tutorial/planned-breaking-changes/
   - /docs/v0.37.4/tutorial/planned-breaking-changes/
   - /docs/v0.37.3/tutorial/planned-breaking-changes/
-  - /docs/v0.36.12/tutorial/planned-breaking-changes/
   - /docs/v0.37.1/tutorial/planned-breaking-changes/
   - /docs/v0.37.0/tutorial/planned-breaking-changes/
+  - /docs/v0.36.12/tutorial/planned-breaking-changes/
   - /docs/v0.36.11/tutorial/planned-breaking-changes/
   - /docs/v0.36.10/tutorial/planned-breaking-changes/
   - /docs/v0.36.9/tutorial/planned-breaking-changes/
@@ -21,14 +21,14 @@ redirect_from:
   - /docs/v0.36.5/tutorial/planned-breaking-changes/
   - /docs/v0.36.4/tutorial/planned-breaking-changes/
   - /docs/v0.36.3/tutorial/planned-breaking-changes/
-  - /docs/v0.35.5/tutorial/planned-breaking-changes/
   - /docs/v0.36.2/tutorial/planned-breaking-changes/
   - /docs/v0.36.0/tutorial/planned-breaking-changes/
+  - /docs/v0.35.5/tutorial/planned-breaking-changes/
   - /docs/v0.35.4/tutorial/planned-breaking-changes/
   - /docs/v0.35.3/tutorial/planned-breaking-changes/
   - /docs/v0.35.2/tutorial/planned-breaking-changes/
-  - /docs/v0.34.4/tutorial/planned-breaking-changes/
   - /docs/v0.35.1/tutorial/planned-breaking-changes/
+  - /docs/v0.34.4/tutorial/planned-breaking-changes/
   - /docs/v0.34.3/tutorial/planned-breaking-changes/
   - /docs/v0.34.2/tutorial/planned-breaking-changes/
   - /docs/v0.34.1/tutorial/planned-breaking-changes/
