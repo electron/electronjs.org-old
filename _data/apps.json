@@ -2039,6 +2039,45 @@
     ]
   },
   {
+    "slug": "fudget",
+    "name": "Fudget",
+    "description": "The budget planner you can actually use",
+    "website": "https://itunes.apple.com/gb/app/fudget-budget-planner-personal-finance-tracker/id1211707701?mt=12",
+    "keywords": [
+      "budget",
+      "planner",
+      "personal",
+      "finance",
+      "tracker",
+      "money",
+      "spending",
+      "money",
+      "pennies",
+      "monthly",
+      "budgeting",
+      "balance",
+      "bills",
+      "management",
+      "accounting",
+      "app",
+      "home",
+      "daily",
+      "manager"
+    ],
+    "icon": "fudget-icon.png",
+    "icon32": "fudget-icon-32.png",
+    "icon64": "fudget-icon-64.png",
+    "icon128": "fudget-icon-128.png",
+    "date": "2017-03-13",
+    "iconColors": [
+      "#fc791d",
+      "#fcf9f7",
+      "#fca56f",
+      "#fcc587",
+      "#fca947"
+    ]
+  },
+  {
     "slug": "gala",
     "name": "Gala",
     "description": "A new and easier way of searching images",
