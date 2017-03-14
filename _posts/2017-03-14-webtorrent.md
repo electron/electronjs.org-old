@@ -16,9 +16,7 @@ Using open web standards, WebTorrent connects website users together to form a d
 You can see a demo of WebTorrent in action here: [webtorrent.io](https://webtorrent.io/).
 
 <a href="https://webtorrent.io/">
-  <p align="center">
-    <img alt="webtorrent homepage" src="https://cloud.githubusercontent.com/assets/2289/23912149/1543d2ce-089c-11e7-8519-613740c82b47.jpg" width="700">
-  </p>
+  <img alt="webtorrent homepage" src="https://cloud.githubusercontent.com/assets/2289/23912149/1543d2ce-089c-11e7-8519-613740c82b47.jpg">
 </a>
 
 ## Why is this cool?
@@ -31,7 +29,7 @@ Browser-to-browser communication cuts out the middle-man and lets people communi
 
 About one year ago, we decided to build [WebTorrent Desktop](https://webtorrent.io/desktop/), a version of WebTorrent that runs as a desktop app.
 
-![WebTorrent Desktop player window](https://cloud.githubusercontent.com/assets/2289/23912152/154aef0a-089c-11e7-8544-869b0cd642b1.jpg)
+[![WebTorrent Desktop player window](https://cloud.githubusercontent.com/assets/2289/23912152/154aef0a-089c-11e7-8544-869b0cd642b1.jpg)](https://webtorrent.io/desktop/)
 
 We created WebTorrent Desktop for three reasons:
 
@@ -129,10 +127,10 @@ If you're interested in getting involved in the project, check out [our GitHub p
 
 [Watch here](https://www.youtube.com/watch?v=YLExGgEnbFY):
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/YLExGgEnbFY?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="360" src="https://www.youtube.com/embed/YLExGgEnbFY?rel=0" frameborder="0" allowfullscreen></iframe>
 
 [Slides here](https://speakerdeck.com/feross/real-world-electron):
 
 <script async class="speakerdeck-embed" data-id="5aae08bb7c5b4dbd89060cff11bb1300" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-[DC](https://dcpos.ch/), another contributor, wrote [a checklist of things you can do](https://blog.dcpos.ch/how-to-make-your-electron-app-sexy) to make your app feel polished and native. It comes with code examples and covers things like macOS dock integration, drag-and-drop, desktop notifications, and making sure your app loads quickly.
+[DC](https://dcpos.ch/), another WebTorrent contributor, wrote [a checklist of things you can do](https://blog.dcpos.ch/how-to-make-your-electron-app-sexy) to make your app feel polished and native. It comes with code examples and covers things like macOS dock integration, drag-and-drop, desktop notifications, and making sure your app loads quickly.
