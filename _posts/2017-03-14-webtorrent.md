@@ -1,3 +1,12 @@
+---
+title: "Project of the Week: WebTorrent"
+author: zeke
+---
+
+This week we caught up with [@feross](https://github.com/feross) and [@dcposch](https://github.com/dcposch) to talk about WebTorrent, the web-powered torrent client that connects users together to form a distributed, decentralized browser-to-browser network.
+
+---
+
 ## What is WebTorrent?
 
 [WebTorrent](https://webtorrent.io) is the first torrent client that works in the browser. It's written completely in JavaScript and it can use WebRTC for peer-to-peer transport. No browser plugin, extension, or installation is required.
