@@ -5284,6 +5284,30 @@
     ]
   },
   {
+    "slug": "shortcm",
+    "name": "Short.cm",
+    "description": "An app for making short links and screenshots on your custom domain",
+    "website": "https://short.cm/extensions",
+    "keywords": [
+      "links",
+      "linkshortener",
+      "screenshot",
+      "domain"
+    ],
+    "icon": "shortcm-icon.png",
+    "icon32": "shortcm-icon-32.png",
+    "icon64": "shortcm-icon-64.png",
+    "icon128": "shortcm-icon-128.png",
+    "date": "2017-03-14",
+    "iconColors": [
+      "#fbfbfb",
+      "#33d3a3",
+      "#2baa82",
+      "#79c4ab",
+      "#94dcc4"
+    ]
+  },
+  {
     "slug": "shortexts",
     "name": "Shortexts",
     "description": "Shortcuts for texts you copy frequently, folders and emojis",
