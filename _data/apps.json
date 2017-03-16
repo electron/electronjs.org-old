@@ -3648,6 +3648,33 @@
     ]
   },
   {
+    "slug": "meistertask",
+    "name": "MeisterTask",
+    "description": "A Kanban board based task manager for single persons and teams.",
+    "website": "https://www.meistertask.com/",
+    "keywords": [
+      "kanban",
+      "taskmanagement",
+      "premium",
+      "free",
+      "teams",
+      "projectmanagement",
+      "management"
+    ],
+    "icon": "meistertask-icon.png",
+    "icon32": "meistertask-icon-32.png",
+    "icon64": "meistertask-icon-64.png",
+    "icon128": "meistertask-icon-128.png",
+    "date": "2017-03-14",
+    "iconColors": [
+      "#fbfbfb",
+      "#0ecaf5",
+      "#a5b7ba",
+      "#bcbcbc",
+      "#c4c4c4"
+    ]
+  },
+  {
     "slug": "microstockr",
     "name": "Microstockr",
     "description": "Microstock photography made easy",
@@ -6603,7 +6630,7 @@
     "slug": "whatever",
     "name": "Whatever",
     "description": "Unofficial Evernote client for Linux desktop",
-    "website": "https://github.com/CellarD0-0r/whatever",
+    "website": "https://cellard0-0r.github.io/whatever/",
     "repository": "https://github.com/CellarD0-0r/whatever",
     "keywords": [
       "Evernote",
