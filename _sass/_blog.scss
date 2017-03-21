@@ -65,4 +65,14 @@
   a code {
     color: $main-link-color;
   }
+
+  th {
+    text-align: left;
+    font-weight: normal;
+  }
+
+  .table-full-width {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }
