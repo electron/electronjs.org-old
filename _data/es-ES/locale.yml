@@ -29,7 +29,7 @@ benefits:
   debugging_and_profiling: Debugging & profiling
   windows_installers: Windows installers
 get_started:
-  title: Get started
+  title: Comenzar
   description: To get started with Electron, check out the resources below. Learn how to wrap your web app with Electron, access all the APIs, and generate installers.
 explore:
   title: Explore the Electron APIs
