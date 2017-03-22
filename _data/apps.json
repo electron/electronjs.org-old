@@ -552,6 +552,35 @@
     ]
   },
   {
+    "slug": "buka",
+    "name": "Buka",
+    "description": "EBook Management",
+    "website": "https://github.com/oguzhaninan/Buka",
+    "repository": "https://github.com/oguzhaninan/Buka.git",
+    "keywords": [
+      "book",
+      "pdf",
+      "ebook",
+      "book library",
+      "book management",
+      "ebook reader",
+      "pdf reader"
+    ],
+    "license": "MIT",
+    "icon": "buka-icon.png",
+    "icon32": "buka-icon-32.png",
+    "icon64": "buka-icon-64.png",
+    "icon128": "buka-icon-128.png",
+    "date": "2017-03-16",
+    "iconColors": [
+      "#3a5994",
+      "#ededee",
+      "#a5b4cb",
+      "#9cacc4",
+      "#94a1c4"
+    ]
+  },
+  {
     "slug": "caprine",
     "name": "Caprine",
     "description": "Facebook Messenger app",
@@ -3201,11 +3230,45 @@
     "icon128": "katana-icon-128.png",
     "date": "2017-03-02",
     "iconColors": [
-      "#333333",
-      "#e9ca99",
-      "#867864",
-      "#a99479",
-      "#948464"
+      "#f9fbfb",
+      "#04a2f2",
+      "#044978",
+      "#3cccf8",
+      "#04749c"
+    ]
+  },
+  {
+    "slug": "keeper-password-manager-digital-vault",
+    "name": "Keeper Password Manager & Digital Vault",
+    "description": "Protect and manage your passwords, private documents and other confidential information.",
+    "website": "https://keepersecurity.com",
+    "keywords": [
+      "password",
+      "passwords",
+      "manager",
+      "login",
+      "username",
+      "keeper",
+      "vault",
+      "wallet",
+      "lock",
+      "safe",
+      "fingerprint",
+      "photo",
+      "generator",
+      "data"
+    ],
+    "icon": "keeper-password-manager-digital-vault-icon.png",
+    "icon32": "keeper-password-manager-digital-vault-icon-32.png",
+    "icon64": "keeper-password-manager-digital-vault-icon-64.png",
+    "icon128": "keeper-password-manager-digital-vault-icon-128.png",
+    "date": "2017-03-17",
+    "iconColors": [
+      "#f2bd0a",
+      "#242421",
+      "#aaa9a6",
+      "#747474",
+      "#7c6404"
     ]
   },
   {
@@ -3506,6 +3569,28 @@
       "#80b8ca",
       "#0a143e",
       "#4cacd4"
+    ]
+  },
+  {
+    "slug": "markdown-office",
+    "name": "Markdown Office",
+    "description": "Office for teams using Google Drive",
+    "website": "https://mdoffice.shwld.net",
+    "keywords": [
+      "markdown",
+      "google drive"
+    ],
+    "icon": "markdown-office-icon.png",
+    "icon32": "markdown-office-icon-32.png",
+    "icon64": "markdown-office-icon-64.png",
+    "icon128": "markdown-office-icon-128.png",
+    "date": "2017-03-16",
+    "iconColors": [
+      "#787979",
+      "#24c0c0",
+      "#e98b05",
+      "#52bccc",
+      "#b4a990"
     ]
   },
   {
@@ -4601,6 +4686,36 @@
       "#2f5632",
       "#2d452e",
       "#26102c"
+    ]
+  },
+  {
+    "slug": "pomolectron",
+    "name": "Pomolectron",
+    "description": "A Pomodoro app in your menubar/tray.",
+    "website": "https://github.com/amitmerchant1990/pomolectron",
+    "repository": "https://github.com/amitmerchant1990/pomolectron",
+    "keywords": [
+      "electron",
+      "pomodoro",
+      "productivity",
+      "node",
+      "minimal",
+      "countdown",
+      "timer",
+      "html",
+      "desktop"
+    ],
+    "icon": "pomolectron-icon.png",
+    "icon32": "pomolectron-icon-32.png",
+    "icon64": "pomolectron-icon-64.png",
+    "icon128": "pomolectron-icon-128.png",
+    "date": "2017-03-15",
+    "iconColors": [
+      "#d33b34",
+      "#8cc254",
+      "#e77260",
+      "#ac8044",
+      "#bc5c3c"
     ]
   },
   {
