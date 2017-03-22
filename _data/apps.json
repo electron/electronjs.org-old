@@ -4689,6 +4689,31 @@
     ]
   },
   {
+    "slug": "playcode",
+    "name": "PlayCode",
+    "description": "Desktop client for Playcode Online Javascript Editor",
+    "website": "http://github.com/meadowcottage/playcode-desktop",
+    "keywords": [
+      "playcode",
+      "editor",
+      "developer tools",
+      "mac"
+    ],
+    "license": "GPL-v3",
+    "icon": "playcode-icon.png",
+    "icon32": "playcode-icon-32.png",
+    "icon64": "playcode-icon-64.png",
+    "icon128": "playcode-icon-128.png",
+    "date": "2017-03-17",
+    "iconColors": [
+      "#2c2c2c",
+      "#74a146",
+      "#606058",
+      "#545954",
+      "#444444"
+    ]
+  },
+  {
     "slug": "pomolectron",
     "name": "Pomolectron",
     "description": "A Pomodoro app in your menubar/tray.",
