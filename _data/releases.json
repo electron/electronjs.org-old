@@ -1674,24 +1674,6 @@
     "version": "0.32.3"
   },
   {
-    "url": "https://api.github.com/repos/electron/electron/releases/1792623",
-    "assets_url": "https://api.github.com/repos/electron/electron/releases/1792623/assets",
-    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/1792623/assets{?name,label}",
-    "html_url": "https://github.com/electron/electron/releases/tag/v0.32.2",
-    "id": 1792623,
-    "tag_name": "v0.32.2",
-    "target_commitish": "master",
-    "name": "electron v0.32.2",
-    "draft": false,
-    "prerelease": false,
-    "created_at": "2015-09-10T08:27:15Z",
-    "published_at": "2015-09-10T13:22:18Z",
-    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.32.2",
-    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.32.2",
-    "body": "Changelog:\n- Fix a regression in v0.32.1 that made some options of `web-preferences` not working.\n- Add `validatedUrl` parameter for `did-fail-load` event of `WebContents`.\n",
-    "version": "0.32.2"
-  },
-  {
     "url": "https://api.github.com/repos/electron/electron/releases/1871693",
     "assets_url": "https://api.github.com/repos/electron/electron/releases/1871693/assets",
     "upload_url": "https://uploads.github.com/repos/electron/electron/releases/1871693/assets{?name,label}",
