@@ -1,6 +1,6 @@
 {% unless app.disabled %}
 <li class='listed-app'>
-  <a href='{{ app.website | default: app.repository }}' target='_blank' title='{{ app.name }} - {{ app.description | escape }}'>
+  <a href='{{ app.website | default: app.repository }}' target='_blank' rel='noopener noreferrer' title='{{ app.name }} - {{ app.description | escape }}'>
     <div class='listed-app-logo-wrapper'>
       <img class='listed-app-logo' src='{{ site.baseurl }}/images/apps/{{ app.icon64 }}' alt='{{ app.name }}'>
     </div>
