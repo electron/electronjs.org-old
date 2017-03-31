@@ -5950,6 +5950,32 @@
     ]
   },
   {
+    "slug": "surf",
+    "name": "Surf",
+    "description": "Organize your ideas and inspirations with ease",
+    "website": "https://surfapp.io",
+    "keywords": [
+      "link",
+      "note",
+      "organizer",
+      "productivity",
+      "ideas",
+      "todo"
+    ],
+    "icon": "surf-icon.png",
+    "icon32": "surf-icon-32.png",
+    "icon64": "surf-icon-64.png",
+    "icon128": "surf-icon-128.png",
+    "date": "2017-03-31",
+    "iconColors": [
+      "#fbfbfb",
+      "#22a3e3",
+      "#0d67a2",
+      "#98d9f3",
+      "#7c9cbc"
+    ]
+  },
+  {
     "slug": "svgsus",
     "name": "Svgsus",
     "description": "Organize, clean and transform your SVGs",
