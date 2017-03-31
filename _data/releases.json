@@ -1656,24 +1656,6 @@
     "version": "0.33.0"
   },
   {
-    "url": "https://api.github.com/repos/electron/electron/releases/1813797",
-    "assets_url": "https://api.github.com/repos/electron/electron/releases/1813797/assets",
-    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/1813797/assets{?name,label}",
-    "html_url": "https://github.com/electron/electron/releases/tag/v0.32.3",
-    "id": 1813797,
-    "tag_name": "v0.32.3",
-    "target_commitish": "master",
-    "name": "electron v0.32.3",
-    "draft": false,
-    "prerelease": false,
-    "created_at": "2015-09-15T07:30:22Z",
-    "published_at": "2015-09-15T08:27:32Z",
-    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.32.3",
-    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.32.3",
-    "body": "Changelog:\n- Add `browser-window-created` event for `app` module.\n- Add `BrowserWindow.isDevToolsFocused` API.\n- Fix `process` and `global` objects not available in `preload` script after the first tick of message loop when node integration is off.\n- Fix `devtools-opened` event emitted before `devToolsWebContents` gets created.\n- Fix `BrowserWindow.addDevToolsExtension` not working.\n- Fix memory leak when calling `node::Buffer::New`.\n\n**OS X**\n- Add `title-bar-style` option for `BrowserWindow`, which allows creating Yosemite style frameless window.\n- Add `activate` event for `app` module.\n- Fix `devtools-focused` event not working.\n",
-    "version": "0.32.3"
-  },
-  {
     "url": "https://api.github.com/repos/electron/electron/releases/1871693",
     "assets_url": "https://api.github.com/repos/electron/electron/releases/1871693/assets",
     "upload_url": "https://uploads.github.com/repos/electron/electron/releases/1871693/assets{?name,label}",
