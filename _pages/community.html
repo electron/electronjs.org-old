@@ -23,7 +23,7 @@ layout: default
         {% if item.category == 'tools' and item.subcategory == 'for_electron' %}
           <tr>
             <td>
-              <a href="{{ item.href }}" target="_blank">{{ item.name }}</a>
+              <a href="{{ item.href }}" target="_blank" rel="noopener noreferrer">{{ item.name }}</a>
             </td>
             <td>
               {{ item.description }}
@@ -39,7 +39,7 @@ layout: default
         {% if item.category == 'boilerplates' %}
           <tr>
             <td>
-              <a href="{{ item.href }}" target="_blank">{{ item.name }}</a>
+              <a href="{{ item.href }}" target="_blank" rel="noopener noreferrer">{{ item.name }}</a>
             </td>
             <td>
               {{ item.description }}
@@ -55,7 +55,7 @@ layout: default
         {% if item.category == 'components' %}
           <tr>
             <td>
-              <a href="{{ item.href }}" target="_blank">{{ item.name }}</a>
+              <a href="{{ item.href }}" target="_blank" rel="noopener noreferrer">{{ item.name }}</a>
             </td>
             <td>
               {{ item.description }}
@@ -71,7 +71,7 @@ layout: default
         {% if item.category == 'videos' %}
           <tr>
             <td>
-              <a href="{{ item.href }}" target="_blank">{{ item.name }}</a>
+              <a href="{{ item.href }}" target="_blank" rel="noopener noreferrer">{{ item.name }}</a>
             </td>
           </tr>
         {% endif %}
@@ -91,7 +91,7 @@ layout: default
       {% for item in site.data.meetups %}
           <tr>
             <td>
-              <a href="{{ item.href }}" target="_blank">{{ item.name }}</a>
+              <a href="{{ item.href }}" target="_blank" rel="noopener noreferrer">{{ item.name }}</a>
             </td>
             <td>
               {{ item.location }}, {{ item.country }}
