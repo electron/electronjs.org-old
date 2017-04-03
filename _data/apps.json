@@ -2147,6 +2147,26 @@
     ]
   },
   {
+    "slug": "gaucho",
+    "name": "Gaucho",
+    "description": "Configurable task launcher",
+    "website": "https://angrykoala.github.io/gaucho/",
+    "repository": "https://github.com/angrykoala/gaucho",
+    "license": "GPL-3.0",
+    "icon": "gaucho-icon.png",
+    "icon32": "gaucho-icon-32.png",
+    "icon64": "gaucho-icon-64.png",
+    "icon128": "gaucho-icon-128.png",
+    "date": "2017-03-30",
+    "iconColors": [
+      "#eb4f57",
+      "#fbfafa",
+      "#442c2c",
+      "#f48a8c",
+      "#f4a4a4"
+    ]
+  },
+  {
     "slug": "gausssense-desktop",
     "name": "GaussSense Desktop",
     "description": "Experience the powerful prototyping toolkit instantly.",
@@ -6868,6 +6888,25 @@
       "#7c7c7c",
       "#848484",
       "#949494"
+    ]
+  },
+  {
+    "slug": "wmail",
+    "name": "WMail",
+    "description": "The missing desktop client for Gmail & Google Inbox",
+    "website": "http://thomas101.github.io/wmail/",
+    "repository": "https://github.com/Thomas101/wmail/",
+    "icon": "wmail-icon.png",
+    "icon32": "wmail-icon-32.png",
+    "icon64": "wmail-icon-64.png",
+    "icon128": "wmail-icon-128.png",
+    "date": "2017-04-03",
+    "iconColors": [
+      "#f3f4f5",
+      "#cc2505",
+      "#dc8c7c",
+      "#e3a298",
+      "#dc8472"
     ]
   },
   {
