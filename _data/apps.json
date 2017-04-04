@@ -4860,6 +4860,34 @@
     ]
   },
   {
+    "slug": "prexview",
+    "name": "PrexView",
+    "description": "Convert data from XML or JSON to high quality documents in PDF, HTML or Image.",
+    "website": "https://prexview.com",
+    "keywords": [
+      "xml",
+      "pdf",
+      "xml-to-pdf",
+      "json",
+      "json-to-pdf",
+      "convert",
+      "xml parser",
+      "json parser"
+    ],
+    "icon": "prexview-icon.png",
+    "icon32": "prexview-icon-32.png",
+    "icon64": "prexview-icon-64.png",
+    "icon128": "prexview-icon-128.png",
+    "date": "2017-04-03",
+    "iconColors": [
+      "#76c46e",
+      "#fbfbfb",
+      "#bde3bc",
+      "#ace4ac",
+      "#d4eccc"
+    ]
+  },
+  {
     "slug": "proposales",
     "name": "Proposales",
     "description": "Create, deliver and monitor business proposals online",
