@@ -36,6 +36,24 @@
     "version": "1.6.1"
   },
   {
+    "url": "https://api.github.com/repos/electron/electron/releases/5987817",
+    "assets_url": "https://api.github.com/repos/electron/electron/releases/5987817/assets",
+    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/5987817/assets{?name,label}",
+    "html_url": "https://github.com/electron/electron/releases/tag/v1.4.16",
+    "id": 5987817,
+    "tag_name": "v1.4.16",
+    "target_commitish": "1-4-x",
+    "name": "electron v1.4.16",
+    "draft": false,
+    "prerelease": false,
+    "created_at": "2017-04-05T16:26:24Z",
+    "published_at": "2017-04-05T17:34:15Z",
+    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v1.4.16",
+    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v1.4.16",
+    "body": "## Bug Fixes\r\n\r\n### Windows\r\n\r\n* Fixed an issue where printing selected pages did not work. #9044 ",
+    "version": "1.4.16"
+  },
+  {
     "url": "https://api.github.com/repos/electron/electron/releases/5208414",
     "assets_url": "https://api.github.com/repos/electron/electron/releases/5208414/assets",
     "upload_url": "https://uploads.github.com/repos/electron/electron/releases/5208414/assets{?name,label}",
@@ -1636,24 +1654,6 @@
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.33.1",
     "body": "Changelog:\n- Add `webContents.enableDeviceEmulation` API.\n- Add `webcontents.beginFrameSubscription` and `webcontents.endFrameSubscription` APIs.\n- Add `sendInputEvent` method for `WebContents` and `<webview>` tag.\n- Add `webFrame.registerUrlSchemeAsPrivileged` API.\n- Add more information of the request in `did-get-redirect-request` event.\n- Fix exception when reading an invalid file inside `asar` archive.\n",
     "version": "0.33.1"
-  },
-  {
-    "url": "https://api.github.com/repos/electron/electron/releases/1827213",
-    "assets_url": "https://api.github.com/repos/electron/electron/releases/1827213/assets",
-    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/1827213/assets{?name,label}",
-    "html_url": "https://github.com/electron/electron/releases/tag/v0.33.0",
-    "id": 1827213,
-    "tag_name": "v0.33.0",
-    "target_commitish": "master",
-    "name": "electron v0.33.0",
-    "draft": false,
-    "prerelease": false,
-    "created_at": "2015-09-17T10:31:12Z",
-    "published_at": "2015-09-17T11:39:20Z",
-    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.33.0",
-    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.33.0",
-    "body": "Changelog:\n- Update to Node.js v4.1.0.\n- Add `app.getLocale` API.\n- Fix `activate-with-no-open-windows` emitted at wrong time.\n- Fix `mimeType` not working in `registerStringProtocol` and its families.\n- Fix crash when calling `vm.createContext`.\n- Fix occasional crash when closing devtools.\n\n**OS X**\n- Fix crash when `title-bar-style` is set on OS X <= 10.9.\n- Fix crash when opening a new window after closing a window.\n",
-    "version": "0.33.0"
   },
   {
     "url": "https://api.github.com/repos/electron/electron/releases/1871693",
