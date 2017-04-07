@@ -1638,24 +1638,6 @@
     "version": "0.33.2"
   },
   {
-    "url": "https://api.github.com/repos/electron/electron/releases/1847847",
-    "assets_url": "https://api.github.com/repos/electron/electron/releases/1847847/assets",
-    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/1847847/assets{?name,label}",
-    "html_url": "https://github.com/electron/electron/releases/tag/v0.33.1",
-    "id": 1847847,
-    "tag_name": "v0.33.1",
-    "target_commitish": "master",
-    "name": "electron v0.33.1",
-    "draft": false,
-    "prerelease": false,
-    "created_at": "2015-09-22T07:13:50Z",
-    "published_at": "2015-09-22T08:03:53Z",
-    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.33.1",
-    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.33.1",
-    "body": "Changelog:\n- Add `webContents.enableDeviceEmulation` API.\n- Add `webcontents.beginFrameSubscription` and `webcontents.endFrameSubscription` APIs.\n- Add `sendInputEvent` method for `WebContents` and `<webview>` tag.\n- Add `webFrame.registerUrlSchemeAsPrivileged` API.\n- Add more information of the request in `did-get-redirect-request` event.\n- Fix exception when reading an invalid file inside `asar` archive.\n",
-    "version": "0.33.1"
-  },
-  {
     "url": "https://api.github.com/repos/electron/electron/releases/1871693",
     "assets_url": "https://api.github.com/repos/electron/electron/releases/1871693/assets",
     "upload_url": "https://uploads.github.com/repos/electron/electron/releases/1871693/assets{?name,label}",
