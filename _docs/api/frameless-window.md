@@ -85,7 +85,7 @@ redirect_from:
 source_url: 'https://github.com/electron/electron/blob/master/docs/api/frameless-window.md'
 title: Frameless Window
 excerpt: >-
-  Open a window without toolbars, borders, or other graphical
+  Open a window without toolbars, borders, or other graphical features.
   &quot;chrome&quot;.
 sort_title: frameless-window
 ---
@@ -150,9 +150,9 @@ sort_title: frameless-window
 -->
 # Frameless Window
 
-> Open a window without toolbars, borders, or other graphical "chrome".
+> Open a window without toolbars, borders, or other graphical "chrome" features.
 
-A frameless window is a window that has no [chrome](https://developer.mozilla.org/en-US/docs/Glossary/Chrome), the parts of the window, like toolbars, that are not a part of the web page. These are options on the [`BrowserWindow`]({{site.baseurl}}/docs/api/browser-window) class.
+A frameless window is a window that has no [chrome](https://developer.mozilla.org/en-US/docs/Glossary/Chrome): the parts of the window, like toolbars, that are not a part of the web page. These are options on the [`BrowserWindow`]({{site.baseurl}}/docs/api/browser-window) class.
 
 ## Create a frameless window
 
@@ -160,8 +160,16 @@ To create a frameless window, you need to set `frame` to `false` in [BrowserWind
 
 ```javascript
 const {BrowserWindow} = require('electron')
-let win = new BrowserWindow({width: 800, height: 600, frame: false})
-win.show()
+
+// Instantiating a Browser Window with Frame set to False
+let win = new BrowserWindow({w
+  idth: 800, 
+  height: 600, 
+  frame: false
+});
+
+// Showing it
+win.show();
 ```
 
 ### Alternatives on macOS

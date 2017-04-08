@@ -153,49 +153,57 @@ sort_title: browser-window
 Process: [Main]({{site.baseurl}}/docs/glossary#main-process)
 
 ```javascript
-// In the main process.
-const {BrowserWindow} = require('electron')
+const {BrowserWindow} = require('electron');
 
-// Or use `remote` from the renderer process.
-// const {BrowserWindow} = require('electron').remote
+// Using the Constructor
+let win = new BrowserWindow({
+  height: 600,
+  width: 800
+});
 
-let win = new BrowserWindow({width: 800, height: 600})
+// Window Close Listener
 win.on('closed', () => {
-  win = null
-})
+  win = null;
+});
 
-// Load a remote URL
-win.loadURL('https://github.com')
+// Loading a Remote URL in the Browser Window
+win.loadURL('https://github.com');
 
-// Or load a local HTML file
-win.loadURL(`file://${__dirname}/app/index.html`)
+// Loading a File inside the Browser Window
+win.loadURL('file://' + __dirname + '/index.html');
 ```
 
 ## Frameless window
 
-To create a window without chrome, or a transparent window in arbitrary shape, you can use the [Frameless Window]({{site.baseurl}}/docs/api/frameless-window) API.
+To create a window without chrome, or a transparent window in an arbitrary shape, you can use the [Frameless Window]({{site.baseurl}}/docs/api/frameless-window) API.
 
 ## Showing window gracefully
 
-When loading a page in the window directly, users may see the page load incrementally, which is not a good experience for a native app. To make the window display without visual flash, there are two solutions for different situations.
+When loading a page in the window directly, users may see the page load incrementally, which is not a good experience for a native app. To make the window display without a visual flash, there are two solutions for different situations.
 
 ### Using `ready-to-show` event
 
-While loading the page, the `ready-to-show` event will be emitted when renderer process has done drawing for the first time, showing window after this event will have no visual flash:
+While loading the page, the `ready-to-show` event will be emitted when renderer process has finished drawing for the first time, showing window after this event won't flash at all:
 
 ```javascript
 const {BrowserWindow} = require('electron')
-let win = new BrowserWindow({show: false})
+
+// Hide it directly in the constructor
+let win = new BrowserWindow({
+  show: false
+});
+
+// Promise to show when paint is finished
 win.once('ready-to-show', () => {
   win.show()
-})
+});
 ```
 
 This event is usually emitted after the `did-finish-load` event, but for pages with many remote resources, it may be emitted before the `did-finish-load` event.
 
 ### Setting `backgroundColor`
 
-For a complex app, the `ready-to-show` event could be emitted too late, making the app feel slow. In this case, it is recommended to show the window immediately, and use a `backgroundColor` close to your app's background:
+For a complex app, the `ready-to-show` event could be emitted too late, making the app feel slow. In this case, it is recommended to show the window immediately, and use a `backgroundColor` close to your app's background during the instantiation of the `BrowserWindow`:
 
 ```javascript
 const {BrowserWindow} = require('electron')
@@ -204,35 +212,53 @@ let win = new BrowserWindow({backgroundColor: '#2e2c29'})
 win.loadURL('https://github.com')
 ```
 
-Note that even for apps that use `ready-to-show` event, it is still recommended to set `backgroundColor` to make app feel more native.
+Note that even for apps that use the `ready-to-show` event, it is still recommended to set `backgroundColor` to the make the user experience of your app feel more native.
 
 ## Parent and child windows
 
-By using `parent` option, you can create child windows:
+By using the `parent` option, you can create child windows:
 
 ```javascript
 const {BrowserWindow} = require('electron')
 
-let top = new BrowserWindow()
-let child = new BrowserWindow({parent: top})
+// First instantiated browser window,
+// therefore defaulted to 'top'
+let top = new BrowserWindow();
+
+// Child window instantiation defined with parent
+// value as 'top'
+let child = new BrowserWindow({
+  parent: top
+})
+
+// Show them
 child.show()
 top.show()
 ```
 
-The `child` window will always show on top of the `top` window.
+The `child` ``BrowserWindow`` isntance will always show on top of the `top` `BrowserWindow` instance.
 
 ### Modal windows
 
-A modal window is a child window that disables parent window, to create a modal window, you have to set both `parent` and `modal` options:
+A modal window is a child ``BrowserWindow``instance that disables the parent ``BrowserWindow`` instance. To create a modal window, you have to set both `parent` and `modal` options during the instantiation:
 
 ```javascript
 const {BrowserWindow} = require('electron')
 
-let child = new BrowserWindow({parent: top, modal: true, show: false})
+// Child window instantiated with a set parent,
+// a modal value, but hidden
+let child = new BrowserWindow({
+  parent: top,
+  modal: true,
+  show: false
+});
+
+// Once page is loaded, "ready-to-show" event fires,
+// and event listener catches it, showing the window
 child.loadURL('https://github.com')
 child.once('ready-to-show', () => {
   child.show()
-})
+});
 ```
 
 ### Platform notices
@@ -674,9 +700,9 @@ Returns `Boolean` - Whether the window is in fullscreen mode.
     *   `width` Integer
     *   `height` Integer
 
-This will make a window maintain an aspect ratio. The extra size allows a developer to have space, specified in pixels, not included within the aspect ratio calculations. This API already takes into account the difference between a window's size and its content size.
+This will make a window maintain an aspect ratio. The extra size allows a developer to have space, specified in pixels, but not included within the aspect ratio calculations. This API already takes into account the difference between a window's size and its content size.
 
-Consider a normal window with an HD video player and associated controls. Perhaps there are 15 pixels of controls on the left edge, 25 pixels of controls on the right edge and 50 pixels of controls below the player. In order to maintain a 16:9 aspect ratio (standard aspect ratio for HD @1920x1080) within the player itself we would call this function with arguments of 16/9 and [ 40, 50 ]. The second argument doesn't care where the extra width and height are within the content view--only that they exist. Just sum any extra width and height areas you have within the overall content view.
+Consider a normal window with a HD video player and associated controls. Perhaps there are 15 pixels of controls on the left edge, 25 pixels of controls on the right edge and 50 pixels of controls below the player. In order to maintain a 16:9 aspect ratio (standard aspect ratio for HD @1920x1080) within the player itself we would call this function with arguments of 16/9 and [ 40, 50 ]. The second argument doesn't care where the extra width and height are within the content view -- only that they exist. Just sum any extra width and height areas you have within the overall content view.
 
 #### `win.previewFile(path[, displayName])` _macOS_
 
