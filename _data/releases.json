@@ -1,5 +1,23 @@
 [
   {
+    "url": "https://api.github.com/repos/electron/electron/releases/5940641",
+    "assets_url": "https://api.github.com/repos/electron/electron/releases/5940641/assets",
+    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/5940641/assets{?name,label}",
+    "html_url": "https://github.com/electron/electron/releases/tag/v1.6.5",
+    "id": 5940641,
+    "tag_name": "v1.6.5",
+    "target_commitish": "master",
+    "name": "electron v1.6.5",
+    "draft": false,
+    "prerelease": false,
+    "created_at": "2017-03-31T19:10:09Z",
+    "published_at": "2017-03-31T20:32:07Z",
+    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v1.6.5",
+    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v1.6.5",
+    "body": "## Bug Fixes\r\n\r\n- Fixed an issue where Electron could not use the version of `ffmpeg` that\r\n  does not include proprietary codecs. <a href=\"https://github.com/electron/electron/pull/9057\">#9057</a>\r\n- Fixed an issue where drag and drop events did not work properly across\r\n  `<webview>` tags. <a href=\"https://github.com/electron/electron/pull/9037\">#9037</a>\r\n- Fixed an issue where the geolocation API could hang the UI thread and\r\n  crash the renderer process. <a href=\"https://github.com/electron/electron/pull/8923\">#8923</a>\r\n- Fixed an uncaught error when making a request via the `net` module\r\n  and the response's content encoding was not supported. <a href=\"https://github.com/electron/electron/pull/9001\">#9001</a>\r\n- Fixed a crash that would occur on certain page navigations. <a href=\"https://github.com/electron/electron/pull/9043\">#9043</a>\r\n- Fixed an issue where `net` module requests did not support non-string\r\n  header values. <a href=\"https://github.com/electron/electron/pull/9062\">#9062</a>\r\n\r\n### Windows\r\n\r\n- Fixed an issue where escaped `&` characters could not be used in top-level\r\n  menu item labels. <a href=\"https://github.com/electron/electron/pull/8984\">#8984</a>\r\n\r\n## API Changes\r\n\r\n- The `crashReporter` module is now available in sandboxed renderer processes.\r\n  <a href=\"https://github.com/electron/electron/pull/8956\">#8956</a>\r\n- Added support for controlling how redirects are handled in the `net` module.\r\n  <a href=\"https://github.com/electron/electron/pull/9007\">#9007</a>\r\n- Added `editMenu` and `windowMenu` menu item roles that include the standard\r\n  OS submenu items. <a href=\"https://github.com/electron/electron/pull/8880\">#8880</a>\r\n- Added support for a `tabbingIdentifier` option to the `BrowserWindow`\r\n  constructor that enables groupable native tabs on macOS 10.12+. <a href=\"https://github.com/electron/electron/pull/9052\">#9052</a>\r\n\r\n### Windows\r\n\r\n- The `uploadToServer` option to `crashReporter.start` is now supported. <a href=\"https://github.com/electron/electron/pull/9053\">#9053</a>\r\n",
+    "version": "1.6.5"
+  },
+  {
     "url": "https://api.github.com/repos/electron/electron/releases/5609109",
     "assets_url": "https://api.github.com/repos/electron/electron/releases/5609109/assets",
     "upload_url": "https://uploads.github.com/repos/electron/electron/releases/5609109/assets{?name,label}",
