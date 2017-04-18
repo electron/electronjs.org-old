@@ -1,5 +1,5 @@
 ---
-version: v1.6.2
+version: v1.6.5
 permalink: /docs/api/native-image/
 category: API
 redirect_from:
@@ -294,7 +294,10 @@ Process: [Main]({{site.baseurl}}/docs/glossary#main-process), [Renderer]({{site.
 
 The following methods are available on instances of the `NativeImage` class:
 
-#### `image.toPNG()`
+#### `image.toPNG([options])`
+
+*   `options` Object (optional)
+    *   `scaleFactor` Double (optional) - Defaults to 1.0.
 
 Returns `Buffer` - A [Buffer](https://nodejs.org/api/buffer.html#buffer_class_buffer) that contains the image's `PNG` encoded data.
 
@@ -304,15 +307,24 @@ Returns `Buffer` - A [Buffer](https://nodejs.org/api/buffer.html#buffer_class_bu
 
 Returns `Buffer` - A [Buffer](https://nodejs.org/api/buffer.html#buffer_class_buffer) that contains the image's `JPEG` encoded data.
 
-#### `image.toBitmap()`
+#### `image.toBitmap([options])`
+
+*   `options` Object (optional)
+    *   `scaleFactor` Double (optional) - Defaults to 1.0.
 
 Returns `Buffer` - A [Buffer](https://nodejs.org/api/buffer.html#buffer_class_buffer) that contains a copy of the image's raw bitmap pixel data.
 
-#### `image.toDataURL()`
+#### `image.toDataURL([options])`
+
+*   `options` Object (optional)
+    *   `scaleFactor` Double (optional) - Defaults to 1.0.
 
 Returns `String` - The data URL of the image.
 
-#### `image.getBitmap()`
+#### `image.getBitmap([options])`
+
+*   `options` Object (optional)
+    *   `scaleFactor` Double (optional) - Defaults to 1.0.
 
 Returns `Buffer` - A [Buffer](https://nodejs.org/api/buffer.html#buffer_class_buffer) that contains the image's raw bitmap pixel data.
 
@@ -358,8 +370,8 @@ Returns `NativeImage` - The cropped image.
 #### `image.resize(options)`
 
 *   `options` Object
-    *   `width` Integer (optional)
-    *   `height` Integer (optional)
+    *   `width` Integer (optional) - Defaults to the image's width.
+    *   `height` Integer (optional) - Defaults to the image's height
     *   `quality` String (optional) - The desired quality of the resize image. Possible values are `good`, `better` or `best`. The default is `best`. These values express a desired quality/speed tradeoff. They are translated into an algorithm-specific method that depends on the capabilities (CPU, GPU) of the underlying platform. It is possible for all three methods to be mapped to the same algorithm on a given platform.
 
 Returns `NativeImage` - The resized image.
@@ -369,3 +381,14 @@ If only the `height` or the `width` are specified then the current aspect ratio 
 #### `image.getAspectRatio()`
 
 Returns `Float` - The image's aspect ratio.
+
+#### `image.addRepresentation(options)`
+
+*   `options` Object
+    *   `scaleFactor` Double - The scale factor to add the image representation for.
+    *   `width` Integer (optional) - Defaults to 0\. Required if a bitmap buffer is specified as `buffer`.
+    *   `height` Integer (optional) - Defaults to 0\. Required if a bitmap buffer is specified as `buffer`.
+    *   `buffer` Buffer (optional) - The buffer containing the raw image data.
+    *   `dataURL` String (optional) - The data URL containing either a base 64 encoded PNG or JPEG image.
+
+Add an image representation for a specific scale factor. This can be used to explicitly add different scale factor representations to an image. This can be called on empty images.

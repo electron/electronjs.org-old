@@ -1,5 +1,5 @@
 ---
-version: v1.6.2
+version: v1.6.5
 permalink: /docs/api/structures/bluetooth-device/
 category: API
 redirect_from:

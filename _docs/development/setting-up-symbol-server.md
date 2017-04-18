@@ -1,5 +1,5 @@
 ---
-version: v1.6.2
+version: v1.6.5
 permalink: /docs/development/setting-up-symbol-server/
 category: Development
 redirect_from:
@@ -173,7 +173,7 @@ SRV*c:\code\symbols\*http://msdl.microsoft.com/download/symbols;SRV*c:\code\symb
 
 ## Using the symbol server in Visual Studio
 
-<img src='http://mdn.mozillademos.org/files/733/symbol-server-vc8express-menu.jpg'> <img src='http://mdn.mozillademos.org/files/2497/2005_options.gif'>
+<img src='https://mdn.mozillademos.org/files/733/symbol-server-vc8express-menu.jpg'> <img src='https://mdn.mozillademos.org/files/2497/2005_options.gif'>
 
 ## Troubleshooting: Symbols will not load
 

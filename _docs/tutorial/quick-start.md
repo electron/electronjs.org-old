@@ -1,5 +1,5 @@
 ---
-version: v1.6.2
+version: v1.6.5
 permalink: /docs/tutorial/quick-start/
 category: Tutorial
 redirect_from:
@@ -346,4 +346,4 @@ $ npm install
 $ npm start
 ```
 
-For more example apps, see the [list of boilerplates](http://electron.atom.io/community/#boilerplates) created by the awesome electron community.
+For more example apps, see the [list of boilerplates](https://electron.atom.io/community/#boilerplates) created by the awesome electron community.

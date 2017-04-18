@@ -1,5 +1,5 @@
 ---
-version: v1.6.2
+version: v1.6.5
 permalink: /docs/development/upgrading-chrome/
 category: Development
 redirect_from:
@@ -186,6 +186,40 @@ These are things to do in addition to updating the Electron code for any Chrome/
     *   32-bit Linux
     *   64-bit Linux
     *   ARM Linux
+
+## Verify ffmpeg Support
+
+Electron ships with a version of `ffmpeg` that includes proprietary codecs by default. A version without these codecs is built and distributed with each release as well. Each Chrome upgrade should verify that switching this version is still supported.
+
+You can verify Electron's support for multiple `ffmpeg` builds by loading the following page. It should work with the default `ffmpeg` library distributed with Electron and not work with the `ffmpeg` library built without proprietary codecs.
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Proprietary Codec Check</title>
+  </head>
+  <body>
+    <p>Checking if Electron is using proprietary codecs by loading video from http://www.quirksmode.org/html5/videos/big_buck_bunny.mp4</p>
+    <p id="outcome"></p>
+    <video style="display:none" src="http://www.quirksmode.org/html5/videos/big_buck_bunny.mp4" autoplay></video>
+    <script>
+      const video = document.querySelector('video')
+      video.addEventListener('error', ({target}) => {
+        if (target.error.code === target.error.MEDIA_ERR_SRC_NOT_SUPPORTED) {
+          document.querySelector('#outcome').textContent = 'Not using proprietary codecs, video emitted source not supported error event.'
+        } else {
+          document.querySelector('#outcome').textContent = `Unexpected error: ${target.error.code}`
+        }
+      })
+      video.addEventListener('playing', () => {
+        document.querySelector('#outcome').textContent = 'Using proprietary codecs, video started playing.'
+      })
+    </script>
+  </body>
+</html>
+```
 
 ## Links
 

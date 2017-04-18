@@ -1,5 +1,5 @@
 ---
-version: v1.6.2
+version: v1.6.5
 permalink: /docs/api/app/
 category: API
 redirect_from:
@@ -813,8 +813,8 @@ Returns `Object`:
 *   `settings` Object
     *   `openAtLogin` Boolean (optional) - `true` to open the app at login, `false` to remove the app as a login item. Defaults to `false`.
     *   `openAsHidden` Boolean (optional) - `true` to open the app as hidden. Defaults to `false`. The user can edit this setting from the System Preferences so `app.getLoginItemStatus().wasOpenedAsHidden` should be checked when the app is opened to know the current value. This setting is only supported on macOS.
-    *   `path` String (optional) _Windows_ - The executable to launch at login. Defaults to `process.execPath`.
-    *   `args` String[] (optional) _Windows_ - The command-line arguments to pass to the executable. Defaults to an empty array. Take care to wrap paths in quotes.
+*   `path` String (optional) _Windows_ - The executable to launch at login. Defaults to `process.execPath`.
+*   `args` String[] (optional) _Windows_ - The command-line arguments to pass to the executable. Defaults to an empty array. Take care to wrap paths in quotes.
 
 Set the app's login item settings.
 

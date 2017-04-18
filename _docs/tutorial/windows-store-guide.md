@@ -1,5 +1,5 @@
 ---
-version: v1.6.2
+version: v1.6.5
 permalink: /docs/tutorial/windows-store-guide/
 category: Tutorial
 redirect_from:
@@ -236,7 +236,7 @@ You can pair your Electron app up with an invisible UWP background task that get
 
 To check out how an Electron app that uses a background task to send toast notifications and live tiles, [check out the Microsoft-provided sample](https://github.com/felixrieseberg/electron-uwp-background).
 
-## Optional: Convert using Container Virtualiziation
+## Optional: Convert using Container Virtualization
 
 To generate the AppX package, the `electron-windows-store` CLI uses a template that should work for most Electron apps. However, if you are using a custom installer, or should you experience any trouble with the generated package, you can attempt to create a package using compilation with a Windows Container - in that mode, the CLI will install and run your application in blank Windows Container to determine what modifications your application is exactly doing to the operating system.
 

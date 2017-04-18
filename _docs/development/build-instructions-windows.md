@@ -1,5 +1,5 @@
 ---
-version: v1.6.2
+version: v1.6.5
 permalink: /docs/development/build-instructions-windows/
 category: Development
 redirect_from:
@@ -221,6 +221,14 @@ To clean the build files:
 ```powershell
 $ npm run clean
 ```
+
+To clean only `out` and `dist` directories:
+
+```bash
+$ npm run clean-build
+```
+
+**Note:** Both clean commands require running `bootstrap` again before building.
 
 ## Tests
 

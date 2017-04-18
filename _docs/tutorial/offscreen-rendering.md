@@ -1,5 +1,5 @@
 ---
-version: v1.6.2
+version: v1.6.5
 permalink: /docs/tutorial/offscreen-rendering/
 category: Tutorial
 redirect_from:

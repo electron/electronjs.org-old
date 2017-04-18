@@ -1,5 +1,5 @@
 ---
-version: v1.6.2
+version: v1.6.5
 permalink: /docs/api/web-frame/
 category: API
 redirect_from:
@@ -273,6 +273,8 @@ Inserts `text` to the focused element.
 *   `userGesture` Boolean (optional) - Default is `false`.
 *   `callback` Function (optional) - Called after script has been executed.
     *   `result` Any
+
+Returns `Promise` - A promise that resolves with the result of the executed code or is rejected if the result of the code is a rejected promise.
 
 Evaluates `code` in page.
 

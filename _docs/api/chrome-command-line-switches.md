@@ -1,5 +1,5 @@
 ---
-version: v1.6.2
+version: v1.6.5
 permalink: /docs/api/chrome-command-line-switches/
 category: API
 redirect_from:

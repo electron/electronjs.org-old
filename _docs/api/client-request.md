@@ -1,5 +1,5 @@
 ---
-version: v1.6.2
+version: v1.6.5
 permalink: /docs/api/client-request/
 category: API
 redirect_from:
@@ -166,6 +166,7 @@ Process: [Main]({{site.baseurl}}/docs/glossary#main-process)
     *   `hostname` String (optional) - The server host name.
     *   `port` Integer (optional) - The server's listening port number.
     *   `path` String (optional) - The path part of the request URL.
+    *   `redirect` String (optional) - The redirect mode for this request. Should be one of `follow`, `error` or `manual`. Defaults to `follow`. When mode is `error`, any redirection will be aborted. When mode is `manual` the redirection will be deferred until [`request.followRedirect`]({{site.baseurl}}/docs/api/#requestfollowRedirect) is invoked. Listen for the [`redirect`]({{site.baseurl}}/docs/api/#event-redirect) event in this mode to get more details about the redirect request.
 
 `options` properties such as `protocol`, `host`, `hostname`, `port` and `path` strictly follow the Node.js model as described in the [URL](https://nodejs.org/api/url.html) module.
 
@@ -200,6 +201,8 @@ Returns:
     *   `port` Integer
     *   `realm` String
 *   `callback` Function
+    *   `username` String
+    *   `password` String
 
 Emitted when an authenticating proxy is asking for user credentials.
 
@@ -248,6 +251,17 @@ Emitted when the `net` module fails to issue a network request. Typically when t
 
 Emitted as the last event in the HTTP request-response transaction. The `close` event indicates that no more events will be emitted on either the `request` or `response` objects.
 
+#### Event: 'redirect'
+
+Returns:
+
+*   `statusCode` Integer
+*   `method` String
+*   `redirectUrl` String
+*   `responseHeaders` Object
+
+Emitted when there is redirection and the mode is `manual`. Calling [`request.followRedirect`]({{site.baseurl}}/docs/api/#requestfollowRedirect) will continue with the redirection.
+
 ### Instance Properties
 
 #### `request.chunkedEncoding`
@@ -261,15 +275,15 @@ Using chunked encoding is strongly recommended if you need to send a large reque
 #### `request.setHeader(name, value)`
 
 *   `name` String - An extra HTTP header name.
-*   `value` String - An extra HTTP header value.
+*   `value` Object - An extra HTTP header value.
 
-Adds an extra HTTP header. The header name will issued as it is without lowercasing. It can be called only before first write. Calling this method after the first write will throw an error.
+Adds an extra HTTP header. The header name will issued as it is without lowercasing. It can be called only before first write. Calling this method after the first write will throw an error. If the passed value is not a `String`, its `toString()` method will be called to obtain the final value.
 
 #### `request.getHeader(name)`
 
 *   `name` String - Specify an extra header name.
 
-Returns String - The value of a previously set extra header name.
+Returns Object - The value of a previously set extra header name.
 
 #### `request.removeHeader(name)`
 
@@ -298,3 +312,7 @@ Sends the last chunk of the request data. Subsequent write or end operations wil
 #### `request.abort()`
 
 Cancels an ongoing HTTP transaction. If the request has already emitted the `close` event, the abort operation will have no effect. Otherwise an ongoing event will emit `abort` and `close` events. Additionally, if there is an ongoing response object,it will emit the `aborted` event.
+
+#### `request.followRedirect()`
+
+Continues any deferred redirection request when the redirection mode is `manual`.

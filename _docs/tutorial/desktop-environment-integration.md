@@ -1,5 +1,5 @@
 ---
-version: v1.6.2
+version: v1.6.5
 permalink: /docs/tutorial/desktop-environment-integration/
 category: Tutorial
 redirect_from:
@@ -206,7 +206,7 @@ Windows and macOS provide easy access to a list of recent documents opened by th
 
 **JumpList:**
 
-![JumpList Recent Files](http://i.msdn.microsoft.com/dynimg/IC420538.png)
+![JumpList Recent Files](https://cloud.githubusercontent.com/assets/2289/23446924/11a27b98-fdfc-11e6-8485-cc3b1e86b80a.png)
 
 **Application dock menu:**
 

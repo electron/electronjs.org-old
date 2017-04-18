@@ -1,5 +1,5 @@
 ---
-version: v1.6.2
+version: v1.6.5
 permalink: /docs/api/session/
 category: API
 redirect_from:
@@ -326,7 +326,7 @@ The `proxyBypassRules` is a comma separated list of rules described below:
 
 *   `url` URL
 *   `callback` Function
-    *   `proxy` Object
+    *   `proxy` String
 
 Resolves the proxy information for `url`. The `callback` will be called with `callback(proxy)` when the request is performed.
 
