@@ -1672,23 +1672,5 @@
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.30.8",
     "body": "Changelog:\n\n**OS X**\n- Fix the auto updater not cleaning old downloaded files.\n",
     "version": "0.30.8"
-  },
-  {
-    "url": "https://api.github.com/repos/electron/electron/releases/1859850",
-    "assets_url": "https://api.github.com/repos/electron/electron/releases/1859850/assets",
-    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/1859850/assets{?name,label}",
-    "html_url": "https://github.com/electron/electron/releases/tag/v0.30.7",
-    "id": 1859850,
-    "tag_name": "v0.30.7",
-    "target_commitish": "master",
-    "name": "electron v0.30.7",
-    "draft": false,
-    "prerelease": false,
-    "created_at": "2015-09-16T16:59:21Z",
-    "published_at": "2015-09-24T07:23:43Z",
-    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.30.7",
-    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.30.7",
-    "body": "- Fix exception when reading an invalid file inside asar archive.\n\n**Windows**\n- Fix leak of `fd`s when reading files in `asar` archives.\n",
-    "version": "0.30.7"
   }
 ]
