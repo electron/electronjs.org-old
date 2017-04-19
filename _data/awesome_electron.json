@@ -1093,6 +1093,12 @@
     "category": "boilerplates"
   },
   {
+    "name": "electron-typescript-quick-start",
+    "href": "https://github.com/a904guy/electron-typescript-quick-start.git",
+    "description": "Clone a repository setup for writing your electron application with Typescript already configured.",
+    "category": "boilerplates"
+  },
+  {
     "name": "bozon",
     "href": "https://github.com/railsware/bozon",
     "description": "Scaffold, run, test, and package your app.",
