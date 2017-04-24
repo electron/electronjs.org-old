@@ -1,5 +1,5 @@
 ---
-version: v1.6.5
+version: v1.6.6
 permalink: /docs/api/touch-bar/
 category: API
 redirect_from:
@@ -152,13 +152,23 @@ sort_title: touch-bar
 
 Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process)
 
-### `new TouchBar(items)` _Experimental_
+### `new TouchBar(options)` _Experimental_
 
-*   `items` ([TouchBarButton]({{site.baseurl}}/docs/api/touch-bar-button) &#124; [TouchBarColorPicker]({{site.baseurl}}/docs/api/touch-bar-color-picker) &#124; [TouchBarGroup]({{site.baseurl}}/docs/api/touch-bar-group) &#124; [TouchBarLabel]({{site.baseurl}}/docs/api/touch-bar-label) &#124; [TouchBarPopover]({{site.baseurl}}/docs/api/touch-bar-popover) &#124; [TouchBarSlider]({{site.baseurl}}/docs/api/touch-bar-slider) &#124; [TouchBarSpacer]({{site.baseurl}}/docs/api/touch-bar-spacer))[]
+*   `options` - Object
+    *   `items` ([TouchBarButton]({{site.baseurl}}/docs/api/touch-bar-button) &#124; [TouchBarColorPicker]({{site.baseurl}}/docs/api/touch-bar-color-picker) &#124; [TouchBarGroup]({{site.baseurl}}/docs/api/touch-bar-group) &#124; [TouchBarLabel]({{site.baseurl}}/docs/api/touch-bar-label) &#124; [TouchBarPopover]({{site.baseurl}}/docs/api/touch-bar-popover) &#124; [TouchBarScrubber]({{site.baseurl}}/docs/api/touch-bar-scrubber) &#124; [TouchBarSegmentedControl]({{site.baseurl}}/docs/api/touch-bar-segmented-control) &#124; [TouchBarSlider]({{site.baseurl}}/docs/api/touch-bar-slider) &#124; [TouchBarSpacer]({{site.baseurl}}/docs/api/touch-bar-spacer))[]
+    *   `escapeItem` ([TouchBarButton]({{site.baseurl}}/docs/api/touch-bar-button) &#124; [TouchBarColorPicker]({{site.baseurl}}/docs/api/touch-bar-color-picker) &#124; [TouchBarGroup]({{site.baseurl}}/docs/api/touch-bar-group) &#124; [TouchBarLabel]({{site.baseurl}}/docs/api/touch-bar-label) &#124; [TouchBarPopover]({{site.baseurl}}/docs/api/touch-bar-popover) &#124; [TouchBarScrubber]({{site.baseurl}}/docs/api/touch-bar-scrubber) &#124; [TouchBarSegmentedControl]({{site.baseurl}}/docs/api/touch-bar-segmented-control) &#124; [TouchBarSlider]({{site.baseurl}}/docs/api/touch-bar-slider) &#124; [TouchBarSpacer]({{site.baseurl}}/docs/api/touch-bar-spacer)) (optional)
 
 Creates a new touch bar with the specified items. Use `BrowserWindow.setTouchBar` to add the `TouchBar` to a window.
 
 **Note:** The TouchBar API is currently experimental and may change or be removed in future Electron releases.
+
+### Instance Properties
+
+The following properties are available on instances of `TouchBar`:
+
+#### `touchBar.escapeItem`
+
+The `TouchBarItem` that will replace the "esc" button on the touch bar when set. Setting to `null` restores the default "esc" button. Changing this value immediately updates the escape item in the touch bar.
 
 ## Examples
 

@@ -1,5 +1,5 @@
 ---
-version: v1.6.5
+version: v1.6.6
 permalink: /docs/tutorial/debugging-main-process-node-inspector/
 category: Tutorial
 redirect_from:

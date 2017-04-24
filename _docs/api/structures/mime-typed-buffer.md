@@ -1,5 +1,5 @@
 ---
-version: v1.6.5
+version: v1.6.6
 permalink: /docs/api/structures/mime-typed-buffer/
 category: API
 redirect_from:
@@ -150,4 +150,4 @@ sort_title: mime-typed-buffer
 # MimeTypedBuffer Object
 
 *   `mimeType` String - The mimeType of the Buffer that you are sending
-*   `buffer` Buffer - The actual Buffer content
+*   `data` Buffer - The actual Buffer content

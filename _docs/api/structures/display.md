@@ -1,5 +1,5 @@
 ---
-version: v1.6.5
+version: v1.6.6
 permalink: /docs/api/structures/display/
 category: API
 redirect_from:
@@ -154,12 +154,8 @@ sort_title: display
 *   `scaleFactor` Number - Output device's pixel scale factor.
 *   `touchSupport` String - Can be `available`, `unavailable`, `unknown`.
 *   `bounds` [Rectangle]({{site.baseurl}}/docs/api/structures/rectangle)
-*   `size` Object
-    *   `height` Number
-    *   `width` Number
+*   `size` [Size]({{site.baseurl}}/docs/api/structures/size)
 *   `workArea` [Rectangle]({{site.baseurl}}/docs/api/structures/rectangle)
-*   `workAreaSize` Object
-    *   `height` Number
-    *   `width` Number
+*   `workAreaSize` [Size]({{site.baseurl}}/docs/api/structures/size)
 
 The `Display` object represents a physical display connected to the system. A fake `Display` may exist on a headless system, or a `Display` may correspond to a remote, virtual display.

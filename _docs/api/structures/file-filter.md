@@ -1,5 +1,5 @@
 ---
-version: v1.6.5
+version: v1.6.6
 permalink: /docs/api/structures/file-filter/
 category: API
 redirect_from:

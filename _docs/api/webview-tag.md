@@ -1,5 +1,5 @@
 ---
-version: v1.6.5
+version: v1.6.6
 permalink: /docs/api/webview-tag/
 category: API
 redirect_from:
@@ -800,6 +800,7 @@ Returns:
     *   `activeMatchOrdinal` Integer - Position of the active match.
     *   `matches` Integer - Number of Matches.
     *   `selectionArea` Object - Coordinates of first match region.
+    *   `finalUpdate` Boolean
 
 Fired when a result is available for [`webview.findInPage`]({{site.baseurl}}/docs/api/webview-tag#webviewtagfindinpage) request.
 

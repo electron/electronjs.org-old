@@ -1,5 +1,5 @@
 ---
-version: v1.6.5
+version: v1.6.6
 permalink: /docs/api/native-image/
 category: API
 redirect_from:
@@ -342,10 +342,7 @@ Returns `Boolean` - Whether the image is empty.
 
 #### `image.getSize()`
 
-Returns `Object`:
-
-*   `width` Integer
-*   `height` Integer
+Returns [`Size`]({{site.baseurl}}/docs/api/structures/size)
 
 #### `image.setTemplateImage(option)`
 
@@ -359,11 +356,7 @@ Returns `Boolean` - Whether the image is a template image.
 
 #### `image.crop(rect)`
 
-*   `rect` Object - The area of the image to crop
-    *   `x` Integer
-    *   `y` Integer
-    *   `width` Integer
-    *   `height` Integer
+*   `rect` [Rectangle]({{site.baseurl}}/docs/api/structures/rectangle) - The area of the image to crop
 
 Returns `NativeImage` - The cropped image.
 

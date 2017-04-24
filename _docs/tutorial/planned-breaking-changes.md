@@ -1,5 +1,5 @@
 ---
-version: v1.6.5
+version: v1.6.6
 permalink: /docs/tutorial/planned-breaking-changes/
 category: Tutorial
 redirect_from:

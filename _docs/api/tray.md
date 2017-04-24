@@ -1,5 +1,5 @@
 ---
-version: v1.6.5
+version: v1.6.6
 permalink: /docs/api/tray/
 category: API
 redirect_from:
@@ -359,9 +359,7 @@ Displays a tray balloon.
 #### `tray.popUpContextMenu([menu, position])` _macOS_ _Windows_
 
 *   `menu` Menu (optional)
-*   `position` Object (optional) - The pop up position.
-    *   `x` Integer
-    *   `y` Integer
+*   `position` [Point]({{site.baseurl}}/docs/api/structures/point) (optional) - The pop up position.
 
 Pops up the context menu of the tray icon. When `menu` is passed, the `menu` will be shown instead of the tray icon's context menu.
 

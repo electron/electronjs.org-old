@@ -1,5 +1,5 @@
 ---
-version: v1.6.5
+version: v1.6.6
 permalink: /docs/api/browser-window/
 category: API
 redirect_from:
@@ -672,9 +672,7 @@ Returns `Boolean` - Whether the window is in fullscreen mode.
 #### `win.setAspectRatio(aspectRatio[, extraSize])` _macOS_
 
 *   `aspectRatio` Float - The aspect ratio to maintain for some portion of the content view.
-*   `extraSize` Object (optional) - The extra size not to be included while maintaining the aspect ratio.
-    *   `width` Integer
-    *   `height` Integer
+*   `extraSize` [Size]({{site.baseurl}}/docs/api/structures/size) - The extra size not to be included while maintaining the aspect ratio.
 
 This will make a window maintain an aspect ratio. The extra size allows a developer to have space, specified in pixels, not included within the aspect ratio calculations. This API already takes into account the difference between a window's size and its content size.
 

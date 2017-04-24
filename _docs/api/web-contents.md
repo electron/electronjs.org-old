@@ -1,5 +1,5 @@
 ---
-version: v1.6.5
+version: v1.6.6
 permalink: /docs/api/web-contents/
 category: API
 redirect_from:
@@ -455,6 +455,7 @@ Returns:
     *   `activeMatchOrdinal` Integer - Position of the active match.
     *   `matches` Integer - Number of Matches.
     *   `selectionArea` Object - Coordinates of first match region.
+    *   `finalUpdate` Boolean
 
 Emitted when a result is available for [`webContents.findInPage`] request.
 
@@ -491,12 +492,8 @@ Returns:
 *   `type` String
 *   `image` NativeImage (optional)
 *   `scale` Float (optional) - scaling factor for the custom cursor
-*   `size` Object (optional) - the size of the `image`
-    *   `width` Integer
-    *   `height` Integer
-*   `hotspot` Object (optional) - coordinates of the custom cursor's hotspot
-    *   `x` Integer - x coordinate
-    *   `y` Integer - y coordinate
+*   `size` [Size]({{site.baseurl}}/docs/api/structures/size) (optional) - the size of the `image`
+*   `hotspot` [Point]({{site.baseurl}}/docs/api/structures/point) (optional) - coordinates of the custom cursor's hotspot
 
 Emitted when the cursor's type changes. The `type` parameter can be `default`, `crosshair`, `pointer`, `text`, `wait`, `help`, `e-resize`, `n-resize`, `ne-resize`, `nw-resize`, `s-resize`, `se-resize`, `sw-resize`, `w-resize`, `ns-resize`, `ew-resize`, `nesw-resize`, `nwse-resize`, `col-resize`, `row-resize`, `m-panning`, `e-panning`, `n-panning`, `ne-panning`, `nw-panning`, `s-panning`, `se-panning`, `sw-panning`, `w-panning`, `move`, `vertical-text`, `cell`, `context-menu`, `alias`, `progress`, `nodrop`, `copy`, `none`, `not-allowed`, `zoom-in`, `zoom-out`, `grab`, `grabbing`, `custom`.
 
@@ -1098,20 +1095,12 @@ app.on('ready', () => {
     *   `screenPosition` String - Specify the screen type to emulate (default: `desktop`)
         *   `desktop` - Desktop screen type
         *   `mobile` - Mobile screen type
-    *   `screenSize` Object - Set the emulated screen size (screenPosition == mobile)
-        *   `width` Integer - Set the emulated screen width
-        *   `height` Integer - Set the emulated screen height
-    *   `viewPosition` Object - Position the view on the screen (screenPosition == mobile) (default: `{x: 0, y: 0}`)
-        *   `x` Integer - Set the x axis offset from top left corner
-        *   `y` Integer - Set the y axis offset from top left corner
+    *   `screenSize` [Size]({{site.baseurl}}/docs/api/structures/size) - Set the emulated screen size (screenPosition == mobile)
+    *   `viewPosition` [Point]({{site.baseurl}}/docs/api/structures/point) - Position the view on the screen (screenPosition == mobile) (default: `{x: 0, y: 0}`)
     *   `deviceScaleFactor` Integer - Set the device scale factor (if zero defaults to original device scale factor) (default: `0`)
-    *   `viewSize` Object - Set the emulated view size (empty means no override)
-        *   `width` Integer - Set the emulated view width
-        *   `height` Integer - Set the emulated view height
+    *   `viewSize` [Size]({{site.baseurl}}/docs/api/structures/size) - Set the emulated view size (empty means no override)
     *   `fitToView` Boolean - Whether emulated view should be scaled down if necessary to fit into available space (default: `false`)
-    *   `offset` Object - Offset of the emulated view inside available space (not in fit to view mode) (default: `{x: 0, y: 0}`)
-        *   `x` Float - Set the x axis offset from top left corner
-        *   `y` Float - Set the y axis offset from top left corner
+    *   `offset` [Point]({{site.baseurl}}/docs/api/structures/point) - Offset of the emulated view inside available space (not in fit to view mode) (default: `{x: 0, y: 0}`)
     *   `scale` Float - Scale of emulated view inside available space (not in fit to view mode) (default: `1`)
 
 Enable device emulation with the given parameters.

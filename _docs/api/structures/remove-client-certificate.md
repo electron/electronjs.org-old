@@ -1,5 +1,5 @@
 ---
-version: v1.6.5
+version: v1.6.6
 permalink: /docs/api/structures/remove-client-certificate/
 category: API
 redirect_from:

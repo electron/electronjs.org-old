@@ -1,5 +1,5 @@
 ---
-version: v1.6.5
+version: v1.6.6
 permalink: /docs/api/desktop-capturer/
 category: API
 redirect_from:
@@ -203,9 +203,7 @@ The `desktopCapturer` module has the following methods:
 
 *   `options` Object
     *   `types` String[] - An array of Strings that lists the types of desktop sources to be captured, available types are `screen` and `window`.
-    *   `thumbnailSize` Object (optional) - The size that the media source thumbnail should be scaled to.
-        *   `width` Integer - Default is `150`
-        *   `height` Integer - Default is `150`
+    *   `thumbnailSize` [Size]({{site.baseurl}}/docs/api/structures/size) (optional) - The size that the media source thumbnail should be scaled to. Default is `150` x `150`.
 *   `callback` Function
     *   `error` Error
     *   `sources` [DesktopCapturerSource[]]({{site.baseurl}}/docs/api/structures/desktop-capturer-source)

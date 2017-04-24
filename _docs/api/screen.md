@@ -1,5 +1,5 @@
 ---
-version: v1.6.5
+version: v1.6.6
 permalink: /docs/api/screen/
 category: API
 redirect_from:
@@ -235,10 +235,7 @@ The `screen` module has the following methods:
 
 ### `screen.getCursorScreenPoint()`
 
-Returns `Object`:
-
-*   `x` Integer
-*   `y` Integer
+Returns [`Point`]({{site.baseurl}}/docs/api/structures/point)
 
 The current absolute position of the mouse pointer.
 
@@ -252,9 +249,7 @@ Returns [`Display[]`]({{site.baseurl}}/docs/api/structures/display) - An array o
 
 ### `screen.getDisplayNearestPoint(point)`
 
-*   `point` Object
-    *   `x` Integer
-    *   `y` Integer
+*   `point` [Point]({{site.baseurl}}/docs/api/structures/point)
 
 Returns [`Display`]({{site.baseurl}}/docs/api/structures/display) - The display nearest the specified point.
 
