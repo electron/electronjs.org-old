@@ -1,5 +1,23 @@
 [
   {
+    "url": "https://api.github.com/repos/electron/electron/releases/6014567",
+    "assets_url": "https://api.github.com/repos/electron/electron/releases/6014567/assets",
+    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/6014567/assets{?name,label}",
+    "html_url": "https://github.com/electron/electron/releases/tag/v1.6.6",
+    "id": 6014567,
+    "tag_name": "v1.6.6",
+    "target_commitish": "master",
+    "name": "electron v1.6.6",
+    "draft": false,
+    "prerelease": false,
+    "created_at": "2017-04-07T16:01:28Z",
+    "published_at": "2017-04-07T20:04:06Z",
+    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v1.6.6",
+    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v1.6.6",
+    "body": "## Bug Fixes\r\n\r\n* Fixed a `remote` module issue where errors thrown in the main process while\r\n  setting remote properties would not be re-thrown in the renderer process.\r\n  <a href=\"https://github.com/electron/electron/pull/9097\">#9097</a>\r\n* Fixed a `remote` module issue where certain remote objects could not be set as\r\n  remote properties. <a href=\"https://github.com/electron/electron/pull/9101\">#9101</a>\r\n* Back-ported an upstream Node.js bug fix where processes forked with the\r\n  `--eval` argument would not receive messages. <a href=\"https://github.com/electron/electron/pull/9132\">#9132</a>\r\n\r\n### macOS\r\n\r\n* Fixed an issue where popover touch bar items would not update correctly. <a href=\"https://github.com/electron/electron/pull/9028\">#9028</a>\r\n\r\n### Windows\r\n\r\n* Fixed an issue where print jobs would stay in the spooling state indefinitely\r\n  and selected page ranges would not print correctly. <a href=\"https://github.com/electron/electron/pull/9111\">#9111</a>\r\n\r\n## API Changes\r\n\r\n### Linux\r\n\r\n* `kioclient` will now be used on KDE when `shell.moveItemToTrash` is called.\r\n  <a href=\"https://github.com/electron/electron/pull/8528\">#8528</a>\r\n\r\n### macOS\r\n\r\n* Added a `dialog.showCertificateTrustDialog` API that prompts the user\r\n  to accept a self-signed or untrusted certificate. <a href=\"https://github.com/electron/electron/pull/9099\">#9099</a>\r\n* Added support for replacing the `esc` button on the touch bar with a custom\r\n  item. <a href=\"https://github.com/electron/electron/pull/9023\">#9023</a>\r\n",
+    "version": "1.6.6"
+  },
+  {
     "url": "https://api.github.com/repos/electron/electron/releases/5940641",
     "assets_url": "https://api.github.com/repos/electron/electron/releases/5940641/assets",
     "upload_url": "https://uploads.github.com/repos/electron/electron/releases/5940641/assets{?name,label}",
