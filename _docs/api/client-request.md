@@ -166,7 +166,7 @@ Process: [Main]({{site.baseurl}}/docs/glossary#main-process)
     *   `hostname` String (optional) - The server host name.
     *   `port` Integer (optional) - The server's listening port number.
     *   `path` String (optional) - The path part of the request URL.
-    *   `redirect` String (optional) - The redirect mode for this request. Should be one of `follow`, `error` or `manual`. Defaults to `follow`. When mode is `error`, any redirection will be aborted. When mode is `manual` the redirection will be deferred until [`request.followRedirect`]({{site.baseurl}}/docs/api/#requestfollowRedirect) is invoked. Listen for the [`redirect`]({{site.baseurl}}/docs/api/#event-redirect) event in this mode to get more details about the redirect request.
+    *   `redirect` String (optional) - The redirect mode for this request. Should be one of `follow`, `error` or `manual`. Defaults to `follow`. When mode is `error`, any redirection will be aborted. When mode is `manual` the redirection will be deferred until [`request.followRedirect`](#requestfollowRedirect) is invoked. Listen for the [`redirect`](#event-redirect) event in this mode to get more details about the redirect request.
 
 `options` properties such as `protocol`, `host`, `hostname`, `port` and `path` strictly follow the Node.js model as described in the [URL](https://nodejs.org/api/url.html) module.
 
@@ -260,7 +260,7 @@ Returns:
 *   `redirectUrl` String
 *   `responseHeaders` Object
 
-Emitted when there is redirection and the mode is `manual`. Calling [`request.followRedirect`]({{site.baseurl}}/docs/api/#requestfollowRedirect) will continue with the redirection.
+Emitted when there is redirection and the mode is `manual`. Calling [`request.followRedirect`](#requestfollowRedirect) will continue with the redirection.
 
 ### Instance Properties
 

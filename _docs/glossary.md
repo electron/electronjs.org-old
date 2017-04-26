@@ -158,7 +158,7 @@ The ASAR format was created primarily to improve performance on Windows... TODO
 
 ### Brightray
 
-[Brightray](https://github.com/electron/brightray) is a static library that makes [libchromiumcontent]({{site.baseurl}}/docs/#libchromiumcontent) easier to use in applications. It was created specifically for Electron, but can be used to enable Chromium's renderer in native apps that are not based on Electron.
+[Brightray](https://github.com/electron/brightray) is a static library that makes [libchromiumcontent](#libchromiumcontent) easier to use in applications. It was created specifically for Electron, but can be used to enable Chromium's renderer in native apps that are not based on Electron.
 
 Brightray is a low-level dependency of Electron that does not concern the majority of Electron users.
 
@@ -168,11 +168,11 @@ An Apple Disk Image is a packaging format used by macOS. DMG files are commonly 
 
 ### IPC
 
-IPC stands for Inter-Process Communication. Electron uses IPC to send serialized JSON messages between the [main]({{site.baseurl}}/docs/#main-process) and [renderer]({{site.baseurl}}/docs/#renderer-process) processes.
+IPC stands for Inter-Process Communication. Electron uses IPC to send serialized JSON messages between the [main](#main-process) and [renderer](#renderer-process) processes.
 
 ### libchromiumcontent
 
-A single, shared library that includes the Chromium Content module and all its dependencies (e.g., Blink, [V8]({{site.baseurl}}/docs/#v8), etc.).
+A single, shared library that includes the Chromium Content module and all its dependencies (e.g., Blink, [V8](#v8), etc.).
 
 ### main process
 
@@ -180,7 +180,7 @@ The main process, commonly a file named `main.js`, is the entry point to every E
 
 Every app's main process file is specified in the `main` property in `package.json`. This is how `electron .` knows what file to execute at startup.
 
-See also: [process]({{site.baseurl}}/docs/#process), [renderer process]({{site.baseurl}}/docs/#renderer-process)
+See also: [process](#process), [renderer process](#renderer-process)
 
 ### MAS
 
@@ -200,11 +200,11 @@ Nullsoft Scriptable Install System is a script-driven Installer authoring tool f
 
 ### process
 
-A process is an instance of a computer program that is being executed. Electron apps that make use of the [main]({{site.baseurl}}/docs/#main-process) and one or many [renderer]({{site.baseurl}}/docs/#renderer-process) process are actually running several programs simultaneously.
+A process is an instance of a computer program that is being executed. Electron apps that make use of the [main](#main-process) and one or many [renderer](#renderer-process) process are actually running several programs simultaneously.
 
 In Node.js and Electron, each running process has a `process` object. This object is a global that provides information about, and control over, the current process. As a global, it is always available to applications without using require().
 
-See also: [main process]({{site.baseurl}}/docs/#main-process), [renderer process]({{site.baseurl}}/docs/#renderer-process)
+See also: [main process](#main-process), [renderer process](#renderer-process)
 
 ### renderer process
 
@@ -212,7 +212,7 @@ The renderer process is a browser window in your app. Unlike the main process, t
 
 In normal browsers, web pages usually run in a sandboxed environment and are not allowed access to native resources. Electron users, however, have the power to use Node.js APIs in web pages allowing lower level operating system interactions.
 
-See also: [process]({{site.baseurl}}/docs/#process), [main process]({{site.baseurl}}/docs/#main-process)
+See also: [process](#process), [main process](#main-process)
 
 ### Squirrel
 

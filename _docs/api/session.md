@@ -471,7 +471,7 @@ Returns `Blob` - The blob data associated with the `identifier`.
     *   `eTag` String - ETag header value.
     *   `startTime` Double (optional) - Time when download was started in number of seconds since UNIX epoch.
 
-Allows resuming `cancelled` or `interrupted` downloads from previous `Session`. The API will generate a [DownloadItem]({{site.baseurl}}/docs/api/download-item) that can be accessed with the [will-download]({{site.baseurl}}/docs/api/#event-will-download) event. The [DownloadItem]({{site.baseurl}}/docs/api/download-item) will not have any `WebContents` associated with it and the initial state will be `interrupted`. The download will start only when the `resume` API is called on the [DownloadItem]({{site.baseurl}}/docs/api/download-item).
+Allows resuming `cancelled` or `interrupted` downloads from previous `Session`. The API will generate a [DownloadItem]({{site.baseurl}}/docs/api/download-item) that can be accessed with the [will-download](#event-will-download) event. The [DownloadItem]({{site.baseurl}}/docs/api/download-item) will not have any `WebContents` associated with it and the initial state will be `interrupted`. The download will start only when the `resume` API is called on the [DownloadItem]({{site.baseurl}}/docs/api/download-item).
 
 #### `ses.clearAuthCache(options[, callback])`
 
