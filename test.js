@@ -54,6 +54,11 @@ describe('electron.atom.io', () => {
       expect(httpLinks.length).to.be.above(3)
     })
 
+    it('leaves fragment links intact', () => {
+      const doc = loadDoc('api/menu-item.md')
+      expect(doc).to.include('[roles](#roles)')
+    })
+
     it('preserves fenced js code snippets', () => {
       const doc = loadDoc('api/clipboard.md')
       expect(doc).to.include('```javascript\n')

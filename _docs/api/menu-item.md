@@ -161,7 +161,7 @@ See [`Menu`]({{site.baseurl}}/docs/api/menu) for examples.
         *   `menuItem` MenuItem
         *   `browserWindow` BrowserWindow
         *   `event` Event
-    *   `role` String (optional) - Define the action of the menu item, when specified the `click` property will be ignored. See [roles]({{site.baseurl}}/docs/api/#roles).
+    *   `role` String (optional) - Define the action of the menu item, when specified the `click` property will be ignored. See [roles](#roles).
     *   `type` String (optional) - Can be `normal`, `separator`, `submenu`, `checkbox` or `radio`.
     *   `label` String - (optional)
     *   `sublabel` String - (optional)
