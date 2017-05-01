@@ -1672,23 +1672,5 @@
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.33.3",
     "body": "Changelog:\n\n**OS X**\n- Fix the auto updater not cleaning old downloaded files.\n",
     "version": "0.33.3"
-  },
-  {
-    "url": "https://api.github.com/repos/electron/electron/releases/1871693",
-    "assets_url": "https://api.github.com/repos/electron/electron/releases/1871693/assets",
-    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/1871693/assets{?name,label}",
-    "html_url": "https://github.com/electron/electron/releases/tag/v0.30.8",
-    "id": 1871693,
-    "tag_name": "v0.30.8",
-    "target_commitish": "master",
-    "name": "electron v0.30.8",
-    "draft": false,
-    "prerelease": false,
-    "created_at": "2015-09-26T13:34:28Z",
-    "published_at": "2015-09-26T14:04:26Z",
-    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.30.8",
-    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.30.8",
-    "body": "Changelog:\n\n**OS X**\n- Fix the auto updater not cleaning old downloaded files.\n",
-    "version": "0.30.8"
   }
 ]
