@@ -204,6 +204,32 @@
     ]
   },
   {
+    "slug": "ansel",
+    "name": "Ansel",
+    "description": "Digital image organizer powered by the web",
+    "website": "https://github.com/m0g/ansel/",
+    "repository": "https://github.com/m0g/ansel/",
+    "keywords": [
+      "photography",
+      "photo",
+      "editing",
+      "photo-manager"
+    ],
+    "license": "MIT",
+    "icon": "ansel-icon.png",
+    "icon32": "ansel-icon-32.png",
+    "icon64": "ansel-icon-64.png",
+    "icon128": "ansel-icon-128.png",
+    "date": "2017-04-06",
+    "iconColors": [
+      "#e77b30",
+      "#3f96b7",
+      "#60b92b",
+      "#553a7d",
+      "#9c7459"
+    ]
+  },
+  {
     "slug": "appear-in",
     "name": "appear.in",
     "description": "Unofficial appear.in app.",
@@ -1371,7 +1397,7 @@
     "name": "Destroyer",
     "description": "Open-Source Lossless Audio Player",
     "website": "http://destroyer.audio",
-    "repository": "https://github.com/mashaal/destroyer",
+    "repository": "https://github.com/mutualrespect/destroyer",
     "license": "ISC",
     "keywords": [
       "audio",
@@ -1385,11 +1411,11 @@
     "icon128": "destroyer-icon-128.png",
     "date": "2017-01-06",
     "iconColors": [
-      "#543cd4",
-      "#1b1647",
-      "#342484",
-      "#442ca4",
-      "#2830c8"
+      "#5845c2",
+      "#141033",
+      "#352a75",
+      "#241c5c",
+      "#8979e9"
     ]
   },
   {
