@@ -3848,6 +3848,34 @@
     ]
   },
   {
+    "slug": "minetime",
+    "name": "MineTime",
+    "description": "A universal calendar app with smart scheduling and time analytics features. Organize your Google, Exchange and Outlook.com calendars in one place.",
+    "website": "https://minetime.ai",
+    "repository": "https://github.com/marcoancona/MineTime",
+    "keywords": [
+      "calendar",
+      "schedule",
+      "google",
+      "exchange",
+      "outlook",
+      "artificial",
+      "intelligence"
+    ],
+    "icon": "minetime-icon.png",
+    "icon32": "minetime-icon-32.png",
+    "icon64": "minetime-icon-64.png",
+    "icon128": "minetime-icon-128.png",
+    "date": "2017-04-12",
+    "iconColors": [
+      "#f6f6f6",
+      "#b4b4b4",
+      "#8d8d8d",
+      "#acacac",
+      "#c9c9c9"
+    ]
+  },
+  {
     "slug": "minta",
     "name": "Minta",
     "description": "Generate regular expressions",
@@ -6801,6 +6829,25 @@
     ]
   },
   {
+    "slug": "wavebox",
+    "name": "Wavebox",
+    "description": "Previously WMail. Gmail, Google Inbox, Outlook, Office 365, Slack, Trello & more",
+    "website": "https://wavebox.io",
+    "repository": "https://github.com/wavebox/waveboxapp/",
+    "icon": "wavebox-icon.png",
+    "icon32": "wavebox-icon-32.png",
+    "icon64": "wavebox-icon-64.png",
+    "icon128": "wavebox-icon-128.png",
+    "date": "2017-04-16",
+    "iconColors": [
+      "#fbfbfc",
+      "#04abeb",
+      "#5ccbf4",
+      "#9edffb",
+      "#3cc4f4"
+    ]
+  },
+  {
     "slug": "webtorrent",
     "name": "WebTorrent",
     "description": "The streaming torrent client",
@@ -6942,25 +6989,6 @@
       "#7c7c7c",
       "#848484",
       "#949494"
-    ]
-  },
-  {
-    "slug": "wmail",
-    "name": "WMail",
-    "description": "The missing desktop client for Gmail & Google Inbox",
-    "website": "http://thomas101.github.io/wmail/",
-    "repository": "https://github.com/Thomas101/wmail/",
-    "icon": "wmail-icon.png",
-    "icon32": "wmail-icon-32.png",
-    "icon64": "wmail-icon-64.png",
-    "icon128": "wmail-icon-128.png",
-    "date": "2017-04-03",
-    "iconColors": [
-      "#f3f4f5",
-      "#cc2505",
-      "#dc8c7c",
-      "#e3a298",
-      "#dc8472"
     ]
   },
   {
