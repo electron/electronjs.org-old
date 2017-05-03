@@ -38,9 +38,13 @@
   location: American Fork, UT
   country: USA
   href: https://www.meetup.com/American-Fork-Electron-Meetup/
+  
 -
   name: Montreal Electron JS Meetup
   location: Montreal, QC
   country: Canada
   href: https://www.meetup.com/mtlelectron/
-  
+-
+  name: Electron Ntamulung
+  location: Bamenda, North West, Cameroon
+  country: Cameroon
