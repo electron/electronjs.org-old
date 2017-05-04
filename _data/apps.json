@@ -3190,6 +3190,24 @@
     ]
   },
   {
+    "slug": "justmd",
+    "name": "justmd",
+    "description": "A markdown editor",
+    "website": "http://i38.me/justmd",
+    "icon": "justmd-icon.png",
+    "icon32": "justmd-icon-32.png",
+    "icon64": "justmd-icon-64.png",
+    "icon128": "justmd-icon-128.png",
+    "date": "2017-4-18",
+    "iconColors": [
+      "#806c41",
+      "#e3ded0",
+      "#241d0e",
+      "#cdad67",
+      "#b7b6b4"
+    ]
+  },  
+  {
     "slug": "kakapo",
     "name": "Kakapo",
     "description": "Ambient sound mixer to set a nice mood",
