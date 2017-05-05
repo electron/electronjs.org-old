@@ -1835,6 +1835,34 @@
     ]
   },
   {
+    "slug": "figma",
+    "name": "Figma",
+    "description": "The collaborative interface design tool.",
+    "website": "https://www.figma.com/",
+    "keywords": [
+      "graphics",
+      "images",
+      "editor",
+      "svg",
+      "sketch",
+      "vector",
+      "ui",
+      "ux"
+    ],
+    "icon": "figma-icon.png",
+    "icon32": "figma-icon-32.png",
+    "icon64": "figma-icon-64.png",
+    "icon128": "figma-icon-128.png",
+    "date": "2017-05-05",
+    "iconColors": [
+      "#db5e7d",
+      "#040404",
+      "#14c2be",
+      "#09af70",
+      "#442156"
+    ]
+  },
+  {
     "slug": "firebase-admin",
     "name": "Firebase Admin",
     "description": "A Firebase data management tool.",
