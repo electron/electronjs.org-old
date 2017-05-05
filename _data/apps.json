@@ -127,6 +127,33 @@
     ]
   },
   {
+    "slug": "alchemy",
+    "name": "Alchemy",
+    "description": "A drag-and-drop file converter for your menubar.",
+    "website": "http://dawnlabs.io/alchemy/",
+    "repository": "https://github.com/dawnlabs/alchemy.git",
+    "keywords": [
+      "convert",
+      "files",
+      "images",
+      "drag-and-drop",
+      "menubar"
+    ],
+    "license": "MIT",
+    "icon": "alchemy-icon.png",
+    "icon32": "alchemy-icon-32.png",
+    "icon64": "alchemy-icon-64.png",
+    "icon128": "alchemy-icon-128.png",
+    "date": "2017-04-03",
+    "iconColors": [
+      "#e89837",
+      "#dcf2fb",
+      "#dcb680",
+      "#e4cc5e",
+      "#ccccbc"
+    ]
+  },
+  {
     "slug": "alduin",
     "name": "Alduin",
     "description": "An RSS and Atom feed aggregator",
@@ -656,18 +683,18 @@
     "slug": "caret",
     "name": "Caret",
     "description": "Markdown editor for Mac / Windows / Linux",
-    "website": "http://caret.io",
+    "website": "https://caret.io",
     "icon": "caret-icon.png",
     "icon32": "caret-icon-32.png",
     "icon64": "caret-icon-64.png",
     "icon128": "caret-icon-128.png",
     "date": "2015-11-23",
     "iconColors": [
-      "#232323",
-      "#f5f5f5",
-      "#449aec",
-      "#707070",
-      "#8c8c8c"
+      "#f9f9f9",
+      "#242424",
+      "#7c7c7c",
+      "#747474",
+      "#676767"
     ]
   },
   {
@@ -2700,6 +2727,28 @@
     ]
   },
   {
+    "slug": "headset",
+    "name": "Headset",
+    "description": "Discover, collect and listen to music from YouTube",
+    "website": "http://headsetapp.co",
+    "keywords": [
+      "Music",
+      "YouTube"
+    ],
+    "icon": "headset-icon.png",
+    "icon32": "headset-icon-32.png",
+    "icon64": "headset-icon-64.png",
+    "icon128": "headset-icon-128.png",
+    "date": "2017-04-25",
+    "iconColors": [
+      "#f6fafb",
+      "#04b6dd",
+      "#61d0ea",
+      "#2cbfe4",
+      "#35d4e8"
+    ]
+  },
+  {
     "slug": "healthi",
     "name": "healthi",
     "description": "Your mac's battery doctor",
@@ -3187,6 +3236,24 @@
       "#8c0c34",
       "#e09098",
       "#dc748c"
+    ]
+  },
+  {
+    "slug": "justmd",
+    "name": "Justmd",
+    "description": "a markdown editor",
+    "website": "http://i38.me/justmd",
+    "icon": "justmd-icon.png",
+    "icon32": "justmd-icon-32.png",
+    "icon64": "justmd-icon-64.png",
+    "icon128": "justmd-icon-128.png",
+    "date": "2017-04-21",
+    "iconColors": [
+      "#dbc0c8",
+      "#6085df",
+      "#2f2d2f",
+      "#907c7b",
+      "#746464"
     ]
   },
   {
@@ -3717,6 +3784,32 @@
       "#60abd7",
       "#84c4e2",
       "#a0b4c4"
+    ]
+  },
+  {
+    "slug": "matrix-writer",
+    "name": "Matrix Writer",
+    "description": "Modern cross platform blog editor",
+    "website": "http://www.matrixrepublic.com/product/details/matrix-writer",
+    "keywords": [
+      "blog editor",
+      "blog",
+      "post editor",
+      "google blog",
+      "wordpress",
+      "metaweblog"
+    ],
+    "icon": "matrix-writer-icon.png",
+    "icon32": "matrix-writer-icon-32.png",
+    "icon64": "matrix-writer-icon-64.png",
+    "icon128": "matrix-writer-icon-128.png",
+    "date": "2017-04-13",
+    "iconColors": [
+      "#fbb343",
+      "#23abe3",
+      "#fcfbfa",
+      "#0c74bc",
+      "#fcd497"
     ]
   },
   {
@@ -4616,6 +4709,35 @@
     ]
   },
   {
+    "slug": "phiewer",
+    "name": "Phiewer",
+    "description": "The standard media viewer for Mac",
+    "website": "http://phiewer.com/",
+    "keywords": [
+      "Image Viewer",
+      "Video Viewer",
+      "Audio Player",
+      "Fast",
+      "Simple",
+      "Ambience",
+      "EXIF",
+      "Folder",
+      "Browse Folder"
+    ],
+    "icon": "phiewer-icon.png",
+    "icon32": "phiewer-icon-32.png",
+    "icon64": "phiewer-icon-64.png",
+    "icon128": "phiewer-icon-128.png",
+    "date": "2017-05-03",
+    "iconColors": [
+      "#d8c6f1",
+      "#3bc3fb",
+      "#de1ffb",
+      "#9f60fa",
+      "#738ef9"
+    ]
+  },
+  {
     "slug": "phonegap",
     "name": "PhoneGap",
     "description": "The open source framework that gets you building amazing mobile apps using web technology",
@@ -5145,6 +5267,34 @@
       "#e8a356",
       "#cc8ccc",
       "#c47ccc"
+    ]
+  },
+  {
+    "slug": "rebaslight",
+    "name": "Rebaslight",
+    "description": "Easy to use video special effects editor",
+    "website": "http://www.rebaslight.com/",
+    "repository": "https://github.com/rebaslight/rebaslight",
+    "keywords": [
+      "special effects",
+      "video editor",
+      "sfx",
+      "lightsaber",
+      "muzzle-flash",
+      "lightning",
+      "laser"
+    ],
+    "icon": "rebaslight-icon.png",
+    "icon32": "rebaslight-icon-32.png",
+    "icon64": "rebaslight-icon-64.png",
+    "icon128": "rebaslight-icon-128.png",
+    "date": "2017-05-05",
+    "iconColors": [
+      "#11111f",
+      "#dfdffc",
+      "#6363c4",
+      "#3d3d79",
+      "#8c8cf9"
     ]
   },
   {
@@ -6125,6 +6275,33 @@
     ]
   },
   {
+    "slug": "system-designer",
+    "name": "System Designer",
+    "description": "IDE for designing JavaScript applications driven by the model",
+    "website": "https://designfirst.io/systemdesigner/",
+    "repository": "https://github.com/design-first/system-designer",
+    "keywords": [
+      "uml",
+      "model",
+      "system",
+      "IDE",
+      "OSGI"
+    ],
+    "license": "Apache-2.0",
+    "icon": "system-designer-icon.png",
+    "icon32": "system-designer-icon-32.png",
+    "icon64": "system-designer-icon-64.png",
+    "icon128": "system-designer-icon-128.png",
+    "date": "2017-04-11",
+    "iconColors": [
+      "#7b939b",
+      "#fbfbfb",
+      "#c4ccd4",
+      "#b4bcc4",
+      "#b4c4c4"
+    ]
+  },
+  {
     "slug": "tagflow",
     "name": "TagFlow",
     "description": "Cross-platform file manager with clever tags",
@@ -6165,6 +6342,34 @@
       "#f29829",
       "#36b5bd",
       "#a9acb4"
+    ]
+  },
+  {
+    "slug": "tea-ebook",
+    "name": "TEA Ebook",
+    "description": "Application TEA Ebook pour Mac / Windows / Linux",
+    "website": "https://app.tea-ebook.com",
+    "keywords": [
+      "ebook",
+      "Reader",
+      "epub",
+      "PDF"
+    ],
+    "locales": [
+      "fr",
+      "en"
+    ],
+    "icon": "tea-ebook-icon.png",
+    "icon32": "tea-ebook-icon-32.png",
+    "icon64": "tea-ebook-icon-64.png",
+    "icon128": "tea-ebook-icon-128.png",
+    "date": "2017-04-27",
+    "iconColors": [
+      "#e9e9e7",
+      "#344b5c",
+      "#949ca4",
+      "#76828e",
+      "#848c9c"
     ]
   },
   {
@@ -6218,6 +6423,31 @@
       "#f37926",
       "#fbd45f",
       "#f3b882"
+    ]
+  },
+  {
+    "slug": "testrec",
+    "name": "Testrec",
+    "description": "Record, playback and export protractor tests in seconds",
+    "website": "https://testrec.com",
+    "keywords": [
+      "protractor",
+      "tests",
+      "tool",
+      "frontend",
+      "development"
+    ],
+    "icon": "testrec-icon.png",
+    "icon32": "testrec-icon-32.png",
+    "icon64": "testrec-icon-64.png",
+    "icon128": "testrec-icon-128.png",
+    "date": "2017-04-19",
+    "iconColors": [
+      "#1e99fa",
+      "#eef7fb",
+      "#75b8ee",
+      "#36bcfc",
+      "#8cd4fc"
     ]
   },
   {
@@ -6382,6 +6612,41 @@
       "#9dc3e4",
       "#3a8ccc",
       "#7cbce4"
+    ]
+  },
+  {
+    "slug": "tournamenter-manager",
+    "name": "Tournamenter Manager",
+    "description": "Manage your Tournament event and show Live views to public.",
+    "website": "https://github.com/ivanseidel/TournamenterApp",
+    "repository": "https://github.com/ivanseidel/TournamenterApp",
+    "keywords": [
+      "tournament",
+      "event",
+      "organization",
+      "manager",
+      "soccer",
+      "table",
+      "live view",
+      "brackets",
+      "views",
+      "live views",
+      "teams",
+      "football",
+      "server runner"
+    ],
+    "license": "MIT",
+    "icon": "tournamenter-manager-icon.png",
+    "icon32": "tournamenter-manager-icon-32.png",
+    "icon64": "tournamenter-manager-icon-64.png",
+    "icon128": "tournamenter-manager-icon-128.png",
+    "date": "2017-04-23",
+    "iconColors": [
+      "#1974d3",
+      "#fafbfc",
+      "#3bb3f3",
+      "#71c9f4",
+      "#54bcf4"
     ]
   },
   {
