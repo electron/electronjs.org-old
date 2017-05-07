@@ -6625,6 +6625,33 @@
     ]
   },
   {
+    "slug": "todometer",
+    "name": "todometer",
+    "description": "A meter-based to-do list.",
+    "website": "https://cassidoo.github.io/todometer/",
+    "repository": "https://github.com/cassidoo/todometer/",
+    "keywords": [
+      "todometer",
+      "to-do list",
+      "todo",
+      "Productivity",
+      "task",
+      "focus"
+    ],
+    "icon": "todometer-icon.png",
+    "icon32": "todometer-icon-32.png",
+    "icon64": "todometer-icon-64.png",
+    "icon128": "todometer-icon-128.png",
+    "date": "2017-05-06",
+    "iconColors": [
+      "#2c2c34",
+      "#63dba3",
+      "#555459",
+      "#646464",
+      "#64646c"
+    ]
+  },
+  {
     "slug": "tofino",
     "name": "Tofino",
     "description": "Experimental web browser from Mozilla",
