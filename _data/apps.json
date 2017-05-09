@@ -1535,6 +1535,30 @@
     ]
   },
   {
+    "slug": "dockstation",
+    "name": "DockStation",
+    "description": "Developer-centric application for manage projects based on Docker.",
+    "website": "https://dockstation.io/",
+    "keywords": [
+      "DockStation",
+      "Docker",
+      "Compose",
+      "Container"
+    ],
+    "icon": "dockstation-icon.png",
+    "icon32": "dockstation-icon-32.png",
+    "icon64": "dockstation-icon-64.png",
+    "icon128": "dockstation-icon-128.png",
+    "date": "2017-05-08",
+    "iconColors": [
+      "#c1e5f6",
+      "#29a6df",
+      "#263136",
+      "#6abbe1",
+      "#546c7c"
+    ]
+  },
+  {
     "slug": "donut",
     "name": "Donut",
     "description": "Dead-simple cross-platform cryptocurrency tracker!",
@@ -3874,6 +3898,32 @@
       "#f6f6f6",
       "#706c6c",
       "#8e6424"
+    ]
+  },
+  {
+    "slug": "media-mate",
+    "name": "Media Mate",
+    "description": "Media server/player/downloader - in one",
+    "website": "https://github.com/willyb321/media_mate",
+    "repository": "https://github.com/willyb321/media_mate",
+    "keywords": [
+      "media",
+      "server",
+      "downloader",
+      "tv"
+    ],
+    "license": "MIT",
+    "icon": "media-mate-icon.png",
+    "icon32": "media-mate-icon-32.png",
+    "icon64": "media-mate-icon-64.png",
+    "icon128": "media-mate-icon-128.png",
+    "date": "2017-05-09",
+    "iconColors": [
+      "#040404",
+      "#080404",
+      "#080404",
+      "#080404",
+      "#080404"
     ]
   },
   {
