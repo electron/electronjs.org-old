@@ -1654,23 +1654,5 @@
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.33.5",
     "body": "Changelog:\n- Disable Chromium's logging by default unless `--enable-logging` is specified.\n- Don't add paths outside the app to Node module search paths in packaged app.\n\n**Linux**\n- Fix crash when dragging items from FireFox and QT5 programs to Electron.\n- Fix crash when closing window while having keyboard focus.\n- Fix pressing `Alt` not showing auto-hide menubar.\n- Fix various problems with high-DPI displays.\n- Fix tooltips cropped by the window.\n- Quit gracefully when app is terminated with `Ctrl+C`.\n",
     "version": "0.33.5"
-  },
-  {
-    "url": "https://api.github.com/repos/electron/electron/releases/1900580",
-    "assets_url": "https://api.github.com/repos/electron/electron/releases/1900580/assets",
-    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/1900580/assets{?name,label}",
-    "html_url": "https://github.com/electron/electron/releases/tag/v0.33.4",
-    "id": 1900580,
-    "tag_name": "v0.33.4",
-    "target_commitish": "master",
-    "name": "electron v0.33.4",
-    "draft": false,
-    "prerelease": false,
-    "created_at": "2015-10-02T05:41:50Z",
-    "published_at": "2015-10-02T06:14:52Z",
-    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.33.4",
-    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.33.4",
-    "body": "Changelog:\n- Add support for preload modules (`--require`) in the default app.\n- Add `session.enableNetworkEmulation` and `session.disableNetworkEmulation` APIs.\n- Move `devtools-opened`, `devtools-closed`, `devtools-focused` events from `BrowserWindow` to `WebContents`.\n- Move `devToolsWebContents` property from `BrowserWindow` to `WebContents`.\n- A few improvements on the `sendInputEvent` API.\n- Requests with unhandled protocols like `mailto:` are now opened by system's default application.\n- Reduce memory usage when calling `<webview>`'s methods.\n- Fix network throttling in devtools not working.\n- Fix source map not loading for JavaScript in devtools.\n- Fix context menu not working for devtools opened for `<webview>`.\n- Fix the regression of `window.outerHeight` and `window.outerWidth` being set to 0 in hidden window.\n\n**Windows**\n- Fix extension not added to filename in file dialogs when custom filter is specified.\n- Fix `maximize/mnimize` events not emitted for AeroSnap.\n\n**Linux**\n- Improve how we detect whether Unity is running.\n",
-    "version": "0.33.4"
   }
 ]
