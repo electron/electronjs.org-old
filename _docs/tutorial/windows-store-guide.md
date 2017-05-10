@@ -1,5 +1,5 @@
 ---
-version: v1.6.6
+version: v1.6.7
 permalink: /docs/tutorial/windows-store-guide/
 category: Tutorial
 redirect_from:
@@ -199,8 +199,7 @@ The output should look roughly like this:
 │   └── atom.asar
 ├── snapshot_blob.bin
 ├── squirrel.exe
-├── ui_resources_200_percent.pak
-└── xinput1_3.dll
+└── ui_resources_200_percent.pak
 
 ```
 

@@ -1,5 +1,5 @@
 ---
-version: v1.6.6
+version: v1.6.7
 permalink: /docs/api/touch-bar/
 category: API
 redirect_from:
@@ -161,6 +161,8 @@ Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process)
 Creates a new touch bar with the specified items. Use `BrowserWindow.setTouchBar` to add the `TouchBar` to a window.
 
 **Note:** The TouchBar API is currently experimental and may change or be removed in future Electron releases.
+
+**Tip:** If you don't have a MacBook with Touch Bar, you can use [Touch Bar Simulator](https://github.com/sindresorhus/touch-bar-simulator) to test Touch Bar usage in your app.
 
 ### Instance Properties
 

@@ -1,5 +1,5 @@
 ---
-version: v1.6.6
+version: v1.6.7
 permalink: /docs/api/cookies/
 category: API
 redirect_from:
@@ -239,3 +239,9 @@ Sets a cookie with `details`, `callback` will be called with `callback(error)` o
 *   `callback` Function
 
 Removes the cookies matching `url` and `name`, `callback` will called with `callback()` on complete.
+
+#### `cookies.flushStore(callback)`
+
+*   `callback` Function
+
+Writes any unwritten cookies data to disk.

@@ -1,5 +1,5 @@
 ---
-version: v1.6.6
+version: v1.6.7
 permalink: /docs/api/session/
 category: API
 redirect_from:
@@ -396,7 +396,7 @@ win.webContents.session.setCertificateVerifyProc((request, callback) => {
 #### `ses.setPermissionRequestHandler(handler)`
 
 *   `handler` Function
-    *   `webContents` Object - [WebContents]({{site.baseurl}}/docs/api/web-contents) requesting the permission.
+    *   `webContents` [WebContents]({{site.baseurl}}/docs/api/web-contents) - WebContents requesting the permission.
     *   `permission` String - Enum of 'media', 'geolocation', 'notifications', 'midiSysex', 'pointerLock', 'fullscreen', 'openExternal'.
     *   `callback` Function
         *   `permissionGranted` Boolean - Allow or deny the permission
@@ -486,15 +486,15 @@ The following properties are available on instances of `Session`:
 
 #### `ses.cookies`
 
-A Cookies object for this session.
+A [Cookies]({{site.baseurl}}/docs/api/cookies) object for this session.
 
 #### `ses.webRequest`
 
-A WebRequest object for this session.
+A [WebRequest]({{site.baseurl}}/docs/api/web-request) object for this session.
 
 #### `ses.protocol`
 
-A Protocol object (an instance of [protocol]({{site.baseurl}}/docs/api/protocol) module) for this session.
+A [Protocol]({{site.baseurl}}/docs/api/protocol) object for this session.
 
 ```javascript
 const {app, session} = require('electron')

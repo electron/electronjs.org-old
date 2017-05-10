@@ -1,5 +1,5 @@
 ---
-version: v1.6.6
+version: v1.6.7
 permalink: /docs/api/browser-window/
 category: API
 redirect_from:
@@ -1197,3 +1197,9 @@ Adds a vibrancy effect to the browser window. Passing `null` or an empty string 
 Sets the touchBar layout for the current window. Specifying `null` or `undefined` clears the touch bar. This method only has an effect if the machine has a touch bar and is running on macOS 10.12.1+.
 
 **Note:** The TouchBar API is currently experimental and may change or be removed in future Electron releases.
+
+#### `win.setBrowserView(browserView)` _Experimental_
+
+*   `browserView` [BrowserView]({{site.baseurl}}/docs/api/browser-view)
+
+**Note:** The BrowserView API is currently experimental and may change or be removed in future Electron releases.

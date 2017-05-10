@@ -1,5 +1,5 @@
 ---
-version: v1.6.6
+version: v1.6.7
 permalink: /docs/tutorial/mac-app-store-submission-guide/
 category: Tutorial
 redirect_from:

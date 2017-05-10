@@ -1,5 +1,5 @@
 ---
-version: v1.6.6
+version: v1.6.7
 permalink: /docs/api/touch-bar-button/
 category: API
 redirect_from:
@@ -158,6 +158,7 @@ Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process)
     *   `label` String (optional) - Button text.
     *   `backgroundColor` String (optional) - Button background color in hex format, i.e `#ABCDEF`.
     *   `icon` [NativeImage]({{site.baseurl}}/docs/api/native-image) (optional) - Button icon.
+    *   `iconPosition` String - Can be `left`, `right` or `overlay`.
     *   `click` Function (optional) - Function to call when the button is clicked.
 
 ### Instance Properties

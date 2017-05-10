@@ -1,5 +1,5 @@
 ---
-version: v1.6.6
+version: v1.6.7
 permalink: /docs/api/dialog/
 category: API
 redirect_from:
@@ -239,7 +239,7 @@ If a `callback` is passed, the API call will be asynchronous and the result will
 
 *   `browserWindow` BrowserWindow (optional)
 *   `options` Object
-    *   `type` String (optional) - Can be `"none"`, `"info"`, `"error"`, `"question"` or `"warning"`. On Windows, "question" displays the same icon as "info", unless you set an icon using the "icon" option.
+    *   `type` String (optional) - Can be `"none"`, `"info"`, `"error"`, `"question"` or `"warning"`. On Windows, `"question"` displays the same icon as `"info"`, unless you set an icon using the `"icon"` option. On macOS, both `"warning"` and `"error"` display the same warning icon.
     *   `buttons` String[] (optional) - Array of texts for buttons. On Windows, an empty array will result in one button labeled "OK".
     *   `defaultId` Integer (optional) - Index of the button in the buttons array which will be selected by default when the message box opens.
     *   `title` String (optional) - Title of the message box, some platforms will not show it.
