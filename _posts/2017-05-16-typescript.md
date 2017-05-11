@@ -6,7 +6,7 @@ author: zeke
 The `electron` npm package now includes a
 [TypeScript definition file](http://definitelytyped.org/) that describes all of
 the [Electron API](https://electron.atom.io/docs/api/) in detail. Just
-`npm install electron` and you're done.
+`npm install electron` to get up-to-date Electron typings in your project.
 
 ---
 
@@ -48,7 +48,7 @@ there is a
 [third-party ecosystem](https://github.com/DefinitelyTyped/DefinitelyTyped)
 of community-maintained definition files.
 
-## Installing Electron's definition file
+## Installation
 
 Starting at version 1.6.10, every release of Electron includes its own
 TypeScript definition file. When you install the `electron` package from npm,
