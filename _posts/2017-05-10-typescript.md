@@ -1,15 +1,16 @@
 ---
-title: "Improved Support for TypeScript"
+title: "Announcing TypeScript support in Electron"
 author: zeke
 ---
 
 The `electron` npm package now includes a [TypeScript definition file](http://definitelytyped.org/) that
-describes all of Electron APIs.
+describes all of the [Electron API](https://electron.atom.io/docs/api/).
 
 ---
 
-TypeScript is a superset of JavaScript that extends the language by adding
-support for types. Declaring the datatypes expected by your program can have a
+TypeScript is an open-source programming language created by Microsoft. It's
+a superset of JavaScript that extends the language by adding support for
+**types**. Declaring the datatypes expected by your program can have a
 number of benefits, including
 [fewer bugs](https://slack.engineering/typescript-at-slack-a81307fa288d),
 [backwards compatibility](http://www.developerhandbook.com/typescript/typescript-beginners-guide/),
@@ -29,10 +30,9 @@ http://video.ch9.ms/ch9/4ae3/062c336d-9cf0-498f-ae9a-582b87954ae3/B881_mid.mp4
 
 ## Type Definitions
 
-
-As of today, when you `npm install electron --save-dev` (or `yarn add --dev electron`)
-you'll get Electron's new TypeScript definition file bundled with the installed
-package.
+As of Electron v1.6.9, when you `npm install electron --save-dev`
+(or `yarn add --dev electron`) you'll get Electron's new TypeScript definition
+file bundled with the installed package.
 
 If you're using Visual Studio Code, you've already got TypeScript support built in.
 There are also community-maintained plugins for
@@ -62,5 +62,9 @@ You need to install `electron-prebuilt-compile` as a dependency, and use that in
 
 http://javascriptweekly.us1.list-manage1.com/track/click?u=0618f6a79d6bb9675f313ceb2&id=f7af8280b0&e=58e1a7171d
 
+## Why Use TypeScript?
 
-https://blog.google/products/chrome/even-better-translations-chrome-one-tap/
+André Staltz argues that [all JavaScript libraries should be authored in TypeScript](https://staltz.com/all-js-libraries-should-be-authored-in-typescript.html)
+because it clarifies the constraints and preconditions of your API:
+
+> Often in JS libraries, the types are vaguely defined as an afterthought when writing docs. Each function is described as “we expect the argument to be X” but this is not always thoroughly thought, and sometimes leaves holes. Either the function can accept more types than what was documented or the function has invisible constraints that were not communicated in the docs, which leads to runtime errors.
