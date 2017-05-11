@@ -54,7 +54,7 @@ TypeScript definition file. When you install the `electron` package from npm,
 the `electron.d.ts` file is bundled automatically with the
 installed package.
 
-The [safest way]((https://electron.atom.io/docs/tutorial/electron-versioning/)) to install Electron is using an exact version number:
+The [safest way](https://electron.atom.io/docs/tutorial/electron-versioning/) to install Electron is using an exact version number:
 
 ```
 npm install electron --save-dev --save-exact
