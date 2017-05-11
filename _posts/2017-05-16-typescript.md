@@ -30,7 +30,7 @@ defined as an afterthought when writing documentation. Functions can often
 accept more types than what was documented, or a function can have invisible
 constraints that are not documented, which can lead to runtime errors.
 
-TypeScript solves this problem with definition files.
+TypeScript solves this problem with **definition files**.
 A TypeScript definition file describes all the functions of a library and its
 expected input and output types. When library authors bundle a TypeScript
 definition file with their published library, consumers of that library can
@@ -42,32 +42,20 @@ Many popular projects like
 [Angular](https://angularjs.org/),
 [Vue.js](http://vuejs.org/),
 [node-github](https://github.com/mikedeboer/node-github)
-(and now Electron) compile their own definition file and bundle it in their
+(and now Electron!) compile their own definition file and bundle it with their
 published npm package. For projects that don't bundle their own definition file,
 there is a
 [third-party ecosystem](https://github.com/DefinitelyTyped/DefinitelyTyped)
 of community-maintained definition files.
 
-## Installation
+## Installing Electron's definition file
 
-As of Electron v1.6.10, every release of Electron will include its own
+Starting at version 1.6.10, every release of Electron includes its own
 TypeScript definition file. When you install the `electron` package from npm,
-you the `electron.d.ts` definition file is bundled automatically with the
+the `electron.d.ts` file is bundled automatically with the
 installed package.
 
-This means you no longer need to use tools like `tsd` or `typings`, and there's
-no need to manually install the third-party `@types/electron`
-and `@types/node` definitions in your projects.
-
-The defintion file is derived from our
-[structured API documentation](https://electron.atom.io/blog/2016/09/27/api-docs-json-schema),
-so it will always be consistent with [Electron's API documentation](https://electron.atom.io/docs/api/).
-Just install `electron` and you'll always get TypeScript definitions that are
-up to date with the version of Electron you're using.
-
-Because Electron is
-[not semantically versioned](https://electron.atom.io/docs/tutorial/electron-versioning/),
-the safest way to install it is using an exact version number:
+The [safest way]((https://electron.atom.io/docs/tutorial/electron-versioning/)) to install Electron is using an exact version number:
 
 ```
 npm install electron --save-dev --save-exact
@@ -78,6 +66,16 @@ Or if you're using [yarn](https://yarnpkg.com/lang/en/docs/migrating-from-npm/#t
 ```
 yarn add electron --dev --exact
 ```
+
+If you were already using third-party definitions like `@types/electron`
+and `@types/node` in your projects, you should remove them to prevent
+any collisions.
+
+The definition file is derived from our
+[structured API documentation](https://electron.atom.io/blog/2016/09/27/api-docs-json-schema),
+so it will always be consistent with [Electron's API documentation](https://electron.atom.io/docs/api/).
+Just install `electron` and you'll always get TypeScript definitions that are
+up to date with the version of Electron you're using.
 
 ## Usage
 
