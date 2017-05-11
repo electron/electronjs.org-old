@@ -3,9 +3,8 @@ title: "Announcing TypeScript support in Electron"
 author: zeke
 ---
 
-The `electron` npm package now includes a
-[TypeScript definition file](http://definitelytyped.org/) that describes all of
-the [Electron API](https://electron.atom.io/docs/api/) in detail. Just
+The `electron` npm package now includes a TypeScript definition file that
+that provides detailed annotations of the entire Electron API. Just
 `npm install electron` to get up-to-date Electron typings in your project.
 
 ---
