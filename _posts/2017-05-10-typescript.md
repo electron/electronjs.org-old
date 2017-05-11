@@ -5,8 +5,8 @@ author: zeke
 
 The `electron` npm package now includes a
 [TypeScript definition file](http://definitelytyped.org/) that describes all of
-the [Electron API](https://electron.atom.io/docs/api/) in detail, including
-modules, classes, methods, arguments, return values, etc.
+the [Electron API](https://electron.atom.io/docs/api/) in detail. Just
+`npm install electron` and you're done.
 
 ---
 
