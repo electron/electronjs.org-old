@@ -5501,6 +5501,35 @@
     ]
   },
   {
+    "slug": "sandman",
+    "name": "Sandman",
+    "description": "Smart sleep notifications",
+    "website": "https://alexanderepstein.github.io/Sandman/",
+    "repository": "https://github.com/alexanderepstein/Sandman/",
+    "keywords": [
+      "Sandman",
+      "sleep",
+      "insomnia",
+      "rest",
+      "productivity",
+      "utility",
+      "notification"
+    ],
+    "license": "MIT",
+    "icon": "sandman-icon.png",
+    "icon32": "sandman-icon-32.png",
+    "icon64": "sandman-icon-64.png",
+    "icon128": "sandman-icon-128.png",
+    "date": "2017-05-09",
+    "iconColors": [
+      "#9990ab",
+      "#f4e0a9",
+      "#1275bc",
+      "#7468a7",
+      "#b4d4ec"
+    ]
+  },
+  {
     "slug": "screencat",
     "name": "ScreenCat",
     "description": "WebRTC screensharing",
