@@ -17,7 +17,7 @@ in a recent Stack Overflow developer survey.
 
 TypeScript supports many of the newer language features in JavaScript like
 classes, object destructuring, and async/await, but its real differentiating
-feature is _type annotation_.
+feature is _type annotations_.
 Declaring the input and output datatypes expected by your program can
 [reduce bugs](https://slack.engineering/typescript-at-slack-a81307fa288d) by
 helping you find errors at compile time, and the annotations can also serve
