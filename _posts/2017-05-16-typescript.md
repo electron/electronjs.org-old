@@ -125,14 +125,13 @@ JavaScript project to TypeScript, sprinkling in new language features as needed.
 ## Thanks
 
 This project would not have been possible without the help of Electron's
-community of open-source maintainers.
-
-We'd like to give a special thanks to
-[@MarshallOfSound](https://github.com/MarshallOfSound),
-[@felixrieseberg](https://github.com/felixrieseberg),
-[@miniak](https://github.com/miniak), and
-[@shiftkey](https://github.com/shiftkey)
-for their contributions.
+community of open-source maintainers. Thanks to
+[Samuel Attard](https://github.com/MarshallOfSound),
+[Felix Rieseberg](https://github.com/felixrieseberg), 
+[Birunthan Mohanathas](https://github.com/poiru), 
+[Milan Burda](https://github.com/miniak), 
+[Brendan Forster](https://github.com/shiftkey),
+and others for their contributions.
 
 ## Support
 
