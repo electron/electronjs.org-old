@@ -1,5 +1,5 @@
 ---
-version: v1.6.7
+version: v1.6.8
 permalink: /docs/api/menu/
 category: API
 redirect_from:
@@ -173,6 +173,8 @@ Passing `null` will remove the menu bar on Windows and Linux but has no effect o
 #### `Menu.getApplicationMenu()`
 
 Returns `Menu` - The application menu, if set, or `null`, if not set.
+
+**Note:** The returned `Menu` instance doesn't support dynamic addition or removal of menu items. [Instance properties](#instance-properties) can still be dynamically modified.
 
 #### `Menu.sendActionToFirstResponder(action)` _macOS_
 

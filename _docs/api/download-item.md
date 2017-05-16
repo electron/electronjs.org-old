@@ -1,5 +1,5 @@
 ---
-version: v1.6.7
+version: v1.6.8
 permalink: /docs/api/download-item/
 category: API
 redirect_from:
@@ -239,6 +239,8 @@ Returns `Boolean` - Whether the download is paused.
 #### `downloadItem.resume()`
 
 Resumes the download that has been paused.
+
+**Note:** To enable resumable downloads the server you are downloading from must support range requests and provide both `Last-Modified` and `ETag` header values. Otherwise `resume()` will dismiss previously received bytes and restart the download from the beginning.
 
 #### `downloadItem.canResume()`
 

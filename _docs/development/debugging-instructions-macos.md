@@ -1,5 +1,5 @@
 ---
-version: v1.6.7
+version: v1.6.8
 permalink: /docs/development/debugging-instructions-macos/
 category: Development
 redirect_from:

@@ -1,5 +1,5 @@
 ---
-version: v1.6.7
+version: v1.6.8
 permalink: /docs/api/browser-window/
 category: API
 redirect_from:
@@ -388,6 +388,10 @@ window.onbeforeunload = (e) => {
 
 Emitted when the window is closed. After you have received this event you should remove the reference to the window and avoid using it any more.
 
+#### Event: 'session-end' _Windows_
+
+Emitted when window session is going to end due to force shutdown or machine restart or session log off.
+
 #### Event: 'unresponsive'
 
 Emitted when the web page becomes unresponsive.
@@ -504,6 +508,14 @@ Returns:
 *   `direction` String
 
 Emitted on 3-finger swipe. Possible directions are `up`, `right`, `down`, `left`.
+
+#### Event: 'sheet-begin' _macOS_
+
+Emitted when the window opens a sheet.
+
+#### Event: 'sheet-end' _macOS_
+
+Emitted when the window has closed a sheet.
 
 ### Static Methods
 

@@ -1,5 +1,5 @@
 ---
-version: v1.6.7
+version: v1.6.8
 permalink: /docs/development/chromium-development/
 category: Development
 redirect_from:
