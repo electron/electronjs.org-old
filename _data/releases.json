@@ -1,5 +1,23 @@
 [
   {
+    "url": "https://api.github.com/repos/electron/electron/releases/6245123",
+    "assets_url": "https://api.github.com/repos/electron/electron/releases/6245123/assets",
+    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/6245123/assets{?name,label}",
+    "html_url": "https://github.com/electron/electron/releases/tag/v1.6.8",
+    "id": 6245123,
+    "tag_name": "v1.6.8",
+    "target_commitish": "master",
+    "name": "electron v1.6.8",
+    "draft": false,
+    "prerelease": false,
+    "created_at": "2017-05-01T22:09:30Z",
+    "published_at": "2017-05-01T22:56:29Z",
+    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v1.6.8",
+    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v1.6.8",
+    "body": "## Bug Fixes\r\n\r\n* Fixed an issue where the default app could render incorrectly depending\r\n  on the path Electron was installed into. <a href=\"https://github.com/electron/electron/pull/9249\">#9249</a>\r\n* Fixed an issue where certain built-in window APIs like `alert`, `confirm`,\r\n  `open`, `history.go`, and `postMessage` would throw errors in the main process\r\n  instead of the renderer processes when the arguments were invalid. <a href=\"https://github.com/electron/electron/pull/9252\">#9252</a>\r\n* Fixed an issue where `chrome-devtools:` URLs would incorrectly override certain window options. <a href=\"https://github.com/electron/electron/pull/9278\">#9278</a>\r\n* Fixed an issue where certain valid frame names passed to `window.open` would\r\n  throw errors in the main process. <a href=\"https://github.com/electron/electron/pull/9287\">#9287</a>\r\n* Fixed a memory leak in windows that have the `sandbox` option enabled. <a href=\"https://github.com/electron/electron/pull/9314\">#9314</a>\r\n* Fixed a crash when closing a window from within the callback to certain\r\n  emitted events. <a href=\"https://github.com/electron/electron/pull/9113\">#9113</a>\r\n* Fixed an issue when using `postMessage` across windows  where the\r\n  `targetOrigin` parameter was not correctly compared against the source\r\n  origin. <a href=\"https://github.com/electron/electron/pull/9301\">#9301</a>\r\n* Fixed a debugger crash that would occur parsing certain protocol messages.\r\n  <a href=\"https://github.com/electron/electron/pull/9322\">#9322</a>\r\n* Fixed an issue where specifying `webPreferences` in the `features` parameter\r\n  to `window.open` would throw an error in the main process. <a href=\"https://github.com/electron/electron/pull/9289\">#9289</a>\r\n\r\n### macOS\r\n\r\n* Fixed an issue where the `Error` emitted on `autoUpdater` `error` events\r\n  would be missing the `message` and `stack` properties when serialized to JSON\r\n  or sent over IPC. <a href=\"https://github.com/electron/electron/pull/9255\">#9255</a>\r\n\r\n## API Changes\r\n\r\n* The module search path used by `require` is now set to the application root\r\n  for non-`file:` URLs such as `about:blank`. <a href=\"https://github.com/electron/electron/pull/9095\">#9095</a>\r\n* The `javascript` option is now disabled in windows opened from a window that\r\n  already has it disabled, similar to the `nodeIntegration` option. <a href=\"https://github.com/electron/electron/pull/9250\">#9250</a>\r\n\r\n### macOS\r\n\r\n* `sheet-begin` and `sheet-end` events are now emitted by `BrowserWindow`\r\n  instances when dialog sheets are presented/dismissed. <a href=\"https://github.com/electron/electron/pull/9108\">#9108</a>\r\n\r\n### Windows\r\n\r\n* A `session-end` event is now emitted by `BrowserWindow` instances when the\r\n  OS session is ending. <a href=\"https://github.com/electron/electron/pull/9254\">#9254</a>\r\n\r\n",
+    "version": "1.6.8"
+  },
+  {
     "url": "https://api.github.com/repos/electron/electron/releases/6111666",
     "assets_url": "https://api.github.com/repos/electron/electron/releases/6111666/assets",
     "upload_url": "https://uploads.github.com/repos/electron/electron/releases/6111666/assets{?name,label}",
@@ -1636,23 +1654,5 @@
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.33.6",
     "body": "Changelog:\n\n**Windows**\n- Fix `BrowserWindow.hide` not hiding the window.\n",
     "version": "0.33.6"
-  },
-  {
-    "url": "https://api.github.com/repos/electron/electron/releases/1909587",
-    "assets_url": "https://api.github.com/repos/electron/electron/releases/1909587/assets",
-    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/1909587/assets{?name,label}",
-    "html_url": "https://github.com/electron/electron/releases/tag/v0.33.5",
-    "id": 1909587,
-    "tag_name": "v0.33.5",
-    "target_commitish": "master",
-    "name": "electron v0.33.5",
-    "draft": false,
-    "prerelease": false,
-    "created_at": "2015-10-05T03:42:43Z",
-    "published_at": "2015-10-05T04:46:52Z",
-    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.33.5",
-    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.33.5",
-    "body": "Changelog:\n- Disable Chromium's logging by default unless `--enable-logging` is specified.\n- Don't add paths outside the app to Node module search paths in packaged app.\n\n**Linux**\n- Fix crash when dragging items from FireFox and QT5 programs to Electron.\n- Fix crash when closing window while having keyboard focus.\n- Fix pressing `Alt` not showing auto-hide menubar.\n- Fix various problems with high-DPI displays.\n- Fix tooltips cropped by the window.\n- Quit gracefully when app is terminated with `Ctrl+C`.\n",
-    "version": "0.33.5"
   }
 ]
