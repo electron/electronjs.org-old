@@ -66,7 +66,7 @@ yarn add electron --dev --exact
 ```
 
 If you were already using third-party definitions like `@types/electron`
-and `@types/node` in your projects, you should remove them to prevent
+and `@types/node`, you should remove them from your project to prevent
 any collisions.
 
 The definition file is derived from our
@@ -84,7 +84,7 @@ plugins for
 [Sublime](https://github.com/Microsoft/TypeScript-Sublime-Plugin),
 [vim](https://github.com/Microsoft/TypeScript/wiki/TypeScript-Editor-Support#vim),
 and
-[others](https://www.typescriptlang.org/index.html#download-links).
+[other editors](https://www.typescriptlang.org/index.html#download-links).
 
 Once your editor is configured for TypeScript, you'll start to see more
 context-aware behavior like autocomplete suggestions for method names,
