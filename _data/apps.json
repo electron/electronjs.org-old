@@ -302,6 +302,29 @@
     ]
   },
   {
+    "slug": "astroprint",
+    "name": "AstroPrint Desktop",
+    "description": "AstroPrint Desktop software takes 3D printer management to the next level with a mix of offline and cloud-connected features",
+    "website": "https://www.astroprint.com/products/p/astroprint-desktop",
+    "keywords": [
+      "3d printing",
+      "iot",
+      "3d design"
+    ],
+    "icon": "astroprint-icon.png",
+    "icon32": "astroprint-icon-32.png",
+    "icon64": "astroprint-icon-64.png",
+    "icon128": "astroprint-icon-128.png",
+    "date": "2017-05-14",
+    "iconColors": [
+      "#fcfbfb",
+      "#f45454",
+      "#fbb7b7",
+      "#f4a4a4",
+      "#fccccc"
+    ]
+  },
+  {
     "slug": "atom",
     "name": "Atom",
     "description": "A hackable text editor for the 21st Century",
