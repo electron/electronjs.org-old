@@ -2433,6 +2433,38 @@
     ]
   },
   {
+    "slug": "github-desktop",
+    "name": "GitHub Desktop",
+    "description": "Simple collaboration from your desktop",
+    "website": "https://desktop.github.com",
+    "repository": "https://github.com/desktop/desktop",
+    "keywords": [
+      "git",
+      "github",
+      "collaboration",
+      "editor",
+      "code",
+      "commits",
+      "review",
+      "developer",
+      "tool",
+      "productivity"
+    ],
+    "license": "MIT",
+    "icon": "github-desktop-icon.png",
+    "icon32": "github-desktop-icon-32.png",
+    "icon64": "github-desktop-icon-64.png",
+    "icon128": "github-desktop-icon-128.png",
+    "date": "2017-05-16",
+    "iconColors": [
+      "#72308d",
+      "#ededed",
+      "#ac4cb4",
+      "#848484",
+      "#969696"
+    ]
+  },
+  {
     "slug": "gitify",
     "name": "Gitify",
     "description": "Github notifications on your menu bar",
