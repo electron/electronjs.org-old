@@ -90,6 +90,21 @@ Once your editor is configured for TypeScript, you'll start to see more
 context-aware behavior like autocomplete suggestions for method names,
 arguments, object properties, etc.
 
+<figure>
+  <img src="https://cloud.githubusercontent.com/assets/2289/26087045/62c452b6-39a3-11e7-88be-e102ffb1c946.png">
+  <figcaption>Argument checking</figcaption>
+</figure>
+
+<figure>
+  <img src="https://cloud.githubusercontent.com/assets/2289/26087047/62c73940-39a3-11e7-9410-15ee66550d00.png">
+  <figcaption>Method autcompletion</figcaption>
+</figure>
+
+<figure>
+  <img src="https://cloud.githubusercontent.com/assets/2289/26087046/62c5e16c-39a3-11e7-801b-dbc71f071636.png">
+  <figcaption>Method reference</figcaption>
+</figure>
+
 ## Getting started with TypeScript
 
 If you're new to TypeScript and want to learn more, this
