@@ -101,8 +101,8 @@ arguments, object properties, etc.
 </figure>
 
 <figure>
-  <img src="https://cloud.githubusercontent.com/assets/2289/26127273/9f51aafe-3a3d-11e7-889e-9519d42b3c45.png" alt="Method reference">
-  <figcaption>Method reference</figcaption>
+  <img src="https://cloud.githubusercontent.com/assets/2289/26127737/0c456104-3a3f-11e7-96ef-445ecdca9731.png" alt="Method reference">
+  <figcaption>Inline method reference</figcaption>
 </figure>
 
 ## Getting started with TypeScript
