@@ -91,17 +91,17 @@ context-aware behavior like autocomplete suggestions for method names,
 arguments, object properties, etc.
 
 <figure>
-  <img src="https://cloud.githubusercontent.com/assets/2289/26087045/62c452b6-39a3-11e7-88be-e102ffb1c946.png">
+  <img src="https://cloud.githubusercontent.com/assets/2289/26127270/9ee025be-3a3d-11e7-9363-268062b02b78.png" alt="Argument checking">
   <figcaption>Argument checking</figcaption>
 </figure>
 
 <figure>
-  <img src="https://cloud.githubusercontent.com/assets/2289/26087047/62c73940-39a3-11e7-9410-15ee66550d00.png">
+  <img src="https://cloud.githubusercontent.com/assets/2289/26127272/9efa6276-3a3d-11e7-8b7b-7bafa96cb60b.png" alt="Method autocompletion">
   <figcaption>Method autcompletion</figcaption>
 </figure>
 
 <figure>
-  <img src="https://cloud.githubusercontent.com/assets/2289/26087046/62c5e16c-39a3-11e7-801b-dbc71f071636.png">
+  <img src="https://cloud.githubusercontent.com/assets/2289/26127273/9f51aafe-3a3d-11e7-889e-9519d42b3c45.png" alt="Method reference">
   <figcaption>Method reference</figcaption>
 </figure>
 
