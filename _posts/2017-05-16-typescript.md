@@ -24,7 +24,7 @@ by millions of people.
 
 TypeScript supports many of the newer language features in JavaScript like
 classes, object destructuring, and async/await, but its real differentiating
-feature is _type annotations_.
+feature is **type annotations**.
 Declaring the input and output datatypes expected by your program can
 [reduce bugs](https://slack.engineering/typescript-at-slack-a81307fa288d) by
 helping you find errors at compile time, and the annotations can also serve
@@ -50,7 +50,7 @@ Many popular projects like
 (and now Electron!) compile their own definition file and bundle it with their
 published npm package. For projects that don't bundle their own definition file,
 there is 
-[Definitely Typed](https://github.com/DefinitelyTyped/DefinitelyTyped),
+[DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped),
 a third-party ecosystem of community-maintained definition files.
 
 ## Installation
@@ -73,7 +73,7 @@ yarn add electron --dev --exact
 ```
 
 If you were already using third-party definitions like `@types/electron`
-and `@types/node`, you should remove them from your project to prevent
+and `@types/node`, you should remove them from your Electron project to prevent
 any collisions.
 
 The definition file is derived from our
@@ -94,8 +94,8 @@ and
 [other editors](https://www.typescriptlang.org/index.html#download-links).
 
 Once your editor is configured for TypeScript, you'll start to see more
-context-aware behavior like autocomplete suggestions for method names,
-arguments, object properties, etc.
+context-aware behavior like autocomplete suggestions, inline method reference,
+argument checking, and more.
 
 <figure>
   <img src="https://cloud.githubusercontent.com/assets/2289/26128017/f6318c20-3a3f-11e7-9c2c-401a32d1f9fb.png" alt="Method autocompletion">
@@ -138,7 +138,8 @@ community of open-source maintainers. Thanks to
 [Birunthan Mohanathas](https://github.com/poiru), 
 [Milan Burda](https://github.com/miniak), 
 [Brendan Forster](https://github.com/shiftkey),
-and others for their contributions.
+and others for the pull requests, documentation improvements,
+and guidance.
 
 ## Support
 
