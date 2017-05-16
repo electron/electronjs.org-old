@@ -13,14 +13,13 @@ a superset of JavaScript that extends the language by adding support for
 static types. The TypeScript community has grown quickly in recent years,
 and TypeScript was ranked among the
 [most loved programming languages](https://stackoverflow.com/insights/survey/2017#technology-most-loved-dreaded-and-wanted-languages)
-in a recent Stack Overflow developer survey. 
-
-TypeScript is described as "JavaScript that scales". Teams at
+in a recent Stack Overflow developer survey.  TypeScript is described 
+as "JavaScript that scales", and teams at
 [GitHub](https://githubengineering.com/how-four-native-developers-wrote-an-electron-app/), 
 [Slack](https://slack.engineering/typescript-at-slack-a81307fa288d),
 and 
 [Microsoft](https://github.com/Microsoft/vscode)
-are all using TypeScript to write scalable Electron apps that are used 
+are all using it to write scalable Electron apps that are used 
 by millions of people.
 
 TypeScript supports many of the newer language features in JavaScript like
