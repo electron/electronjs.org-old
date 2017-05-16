@@ -13,7 +13,15 @@ a superset of JavaScript that extends the language by adding support for
 static types. The TypeScript community has grown quickly in recent years,
 and TypeScript was ranked among the
 [most loved programming languages](https://stackoverflow.com/insights/survey/2017#technology-most-loved-dreaded-and-wanted-languages)
-in a recent Stack Overflow developer survey.
+in a recent Stack Overflow developer survey. 
+
+TypeScript is described as "JavaScript that scales". Teams at
+[GitHub](https://githubengineering.com/how-four-native-developers-wrote-an-electron-app/), 
+[Slack](https://slack.engineering/typescript-at-slack-a81307fa288d),
+and 
+[Microsoft](https://github.com/Microsoft/vscode)
+are all using TypeScript to write scalable Electron apps that are used 
+by millions of people.
 
 TypeScript supports many of the newer language features in JavaScript like
 classes, object destructuring, and async/await, but its real differentiating
@@ -42,9 +50,9 @@ Many popular projects like
 [node-github](https://github.com/mikedeboer/node-github)
 (and now Electron!) compile their own definition file and bundle it with their
 published npm package. For projects that don't bundle their own definition file,
-there is a
-[third-party ecosystem](https://github.com/DefinitelyTyped/DefinitelyTyped)
-of community-maintained definition files.
+there is 
+[Definitely Typed](https://github.com/DefinitelyTyped/DefinitelyTyped),
+a third-party ecosystem of community-maintained definition files.
 
 ## Installation
 
@@ -109,8 +117,8 @@ arguments, object properties, etc.
 
 If you're new to TypeScript and want to learn more, this
 [introductory video from Microsoft](http://video.ch9.ms/ch9/4ae3/062c336d-9cf0-498f-ae9a-582b87954ae3/B881_mid.mp4)
-provides a thorough overview of why the language was created, how it works,
-and how to use it.
+provides a nice overview of why the language was created, how it works,
+how to use it, and where it's headed.
 
 There's also a
 [handbook](https://www.typescriptlang.org/docs/handbook/basic-types.html)
