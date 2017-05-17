@@ -304,12 +304,17 @@
   {
     "slug": "astroprint",
     "name": "AstroPrint Desktop",
-    "description": "AstroPrint Desktop software takes 3D printer management to the next level with a mix of offline and cloud-connected features",
+    "description": "Manage your 3D Printer offline and via the Cloud.",
     "website": "https://www.astroprint.com/products/p/astroprint-desktop",
     "keywords": [
       "3d printing",
       "iot",
-      "3d design"
+      "3d design",
+      "astroprint",
+      "octoprint",
+      "wireless 3d printing",
+      "cad",
+      "cad software"
     ],
     "icon": "astroprint-icon.png",
     "icon32": "astroprint-icon-32.png",
@@ -919,6 +924,28 @@
       "#f7a308",
       "#0d94d7",
       "#946c2c"
+    ]
+  },
+  {
+    "slug": "code-story",
+    "name": "Code Story",
+    "description": "Code documentation, redefined.",
+    "website": "http://codestoryapp.com",
+    "keywords": [
+      "code",
+      "documentation"
+    ],
+    "icon": "code-story-icon.png",
+    "icon32": "code-story-icon-32.png",
+    "icon64": "code-story-icon-64.png",
+    "icon128": "code-story-icon-128.png",
+    "date": "2017-05-17",
+    "iconColors": [
+      "#fbfbfb",
+      "#853631",
+      "#a89c9b",
+      "#858484",
+      "#8c8c8c"
     ]
   },
   {
