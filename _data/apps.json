@@ -862,12 +862,19 @@
   {
     "slug": "cloudtag",
     "name": "cloudtag",
-    "description": "Share files, easier.",
+    "description": "Sharing files, easier.",
     "website": "https://cloudtag.io/",
     "keywords": [
+      "cloud",
       "cloudtag",
-      "share files",
       "easy",
+      "easier",
+      "file",
+      "files",
+      "hashtag",
+      "sharing easier",
+      "sharing files",
+      "tag",
       "utility"
     ],
     "icon": "cloudtag-icon.png",
@@ -876,11 +883,11 @@
     "icon128": "cloudtag-icon-128.png",
     "date": "2016-12-23",
     "iconColors": [
-      "#2a76b2",
-      "#fbfbfb",
-      "#5c90b4",
-      "#a6c4dc",
-      "#91b4ce"
+      "#4484f4",
+      "#fbfbfc",
+      "#7facf7",
+      "#a4c4fc",
+      "#94bcfc"
     ]
   },
   {
