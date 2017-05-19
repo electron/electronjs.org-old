@@ -814,6 +814,32 @@
     ]
   },
   {
+    "slug": "circuit",
+    "name": "Circuit",
+    "description": "Make your teamwork better",
+    "website": "https://www.circuit.com/",
+    "keywords": [
+      "collaboration",
+      "chat",
+      "conference",
+      "video",
+      "screenshare",
+      "webrtc"
+    ],
+    "icon": "circuit-icon.png",
+    "icon32": "circuit-icon-32.png",
+    "icon64": "circuit-icon-64.png",
+    "icon128": "circuit-icon-128.png",
+    "date": "2017-05-19",
+    "iconColors": [
+      "#8bc442",
+      "#fbfbf9",
+      "#bcdd92",
+      "#b1d981",
+      "#a4d36b"
+    ]
+  },
+  {
     "slug": "cloudcmd",
     "name": "Cloud Commander",
     "description": "Orthodox web file manager with console and editor",
