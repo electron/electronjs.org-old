@@ -7615,6 +7615,25 @@
     ]
   },
   {
+    "slug": "wowcrypt",
+    "name": "WoWCrypt",
+    "description": "World of Warcraft Database Browser",
+    "website": "https://github.com/XeonPowder/WoWCrypt",
+    "repository": "https://github.com/XeonPowder/WoWCrypt",
+    "icon": "wowcrypt-icon.png",
+    "icon32": "wowcrypt-icon-32.png",
+    "icon64": "wowcrypt-icon-64.png",
+    "icon128": "wowcrypt-icon-128.png",
+    "date": "2017-05-19",
+    "iconColors": [
+      "#e2d4e2",
+      "#101916",
+      "#d951eb",
+      "#8a8888",
+      "#6c746c"
+    ]
+  },
+  {
     "slug": "wp-express",
     "name": "WP Express",
     "description": "Rapid WordPress installer for local development",
