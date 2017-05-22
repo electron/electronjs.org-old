@@ -1,6 +1,7 @@
 ---
 permalink: /
 layout: default
+lang: en
 ---
 
   <script src="{{ site.baseurl }}/js/vendor/ua-parser-js-0.7.10.js"></script>
@@ -9,8 +10,8 @@ layout: default
   <div class="jumbotron jumbotron-home text-center">
     <div class="container">
       {% include hero.html %}
-      <p class='jumbotron-lead'>Build cross platform desktop apps
-        <span class='jumbotron-lead-muted'>with JavaScript, HTML, and CSS</span>
+      <p class='jumbotron-lead'>
+        {{ site.data.locale.tagline }}
       </p>
     </div>
   </div>
@@ -36,18 +37,13 @@ layout: default
 
   <section class="page-section page-section-spacious" id='electron'>
     <div class="container-narrow">
-      <h1 class="text-center-sm">It's easier than you think</h1>
-      <p class="lead text-center-sm">
-        If you can build a website, you can build a desktop app. Electron is a
-        framework for creating native applications with web technologies like
-        JavaScript, HTML, and CSS. It takes care of the hard parts so you can
-        focus on the core of your application.
-      </p>
+      <h1 class="text-center-sm">{{ site.data.locale.electron_is_easy.title }}</h1>
+      <p class="lead text-center-sm">{{ site.data.locale.electron_is_easy.description }}</p>
 
       <p class="text-center-sm mt-4">
         <a class="btn btn-lg btn-outline-themed" href="https://youtu.be/8YP_nOCO-4Q">
           <span class="octicon octicon-eye mr-1"></span>
-          <span class="label">Watch the video</span>
+          <span class="label">{{ site.data.locale.electron_is_easy.video_link }}</span>
         </a>
       </p>
 
@@ -56,54 +52,54 @@ layout: default
       <div class="row text-center text-small mt-6">
         <div class="col-xs-12 col-sm-4">
           <img class="home-illu" role="presentation" src="{{ site.baseurl }}/images/web-tech.svg" aria-hidden="true">
-          <h3 class="mb-2 mt-0">Web Technologies</h3>
-          <p>Electron uses <strong>Chromium</strong> and <strong>Node.js</strong> so you can build your app with <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript.</strong></p>
+          <h3 class="mb-2 mt-0">{{ site.data.locale.web_technologies.title }}</h3>
+          <p>{{ site.data.locale.web_technologies.description }}</p>
         </div>
         <div class="col-xs-12 col-sm-4">
           <img class="home-illu" role="presentation" src="{{ site.baseurl }}/images/open-source.svg" aria-hidden="true">
-          <h3 class="mb-2 mt-0">Open Source</h3>
-          <p>Electron is an open source project maintained by <strong>GitHub</strong> and an active <strong>community</strong> of contributors.</p>
+          <h3 class="mb-2 mt-0">{{ site.data.locale.open_source.title }}</h3>
+          <p>{{ site.data.locale.open_source.description }}</p>
         </div>
         <div class="col-xs-12 col-sm-4">
           <img class="home-illu" role="presentation" src="{{ site.baseurl }}/images/cross-platform.svg" aria-hidden="true">
-          <h3 class="mb-2 mt-0">Cross Platform</h3>
-          <p>Compatible with <strong>Mac</strong>, <strong>Windows</strong>, and <strong>Linux</strong>, Electron apps build and run on three platforms.</p>
+          <h3 class="mb-2 mt-0">{{ site.data.locale.cross_platform.title }}</h3>
+          <p>{{ site.data.locale.cross_platform.description }}</p>
         </div>
       </div>
 
       <div class="row text-center mt-6 mb-4">
-        <h2>The hard parts made easy</h2>
+        <h2>{{ site.data.locale.hard_parts_made_easy }}</h2>
       </div>
 
       <div class="row text-center text-small mt-3">
         <div class='col-xs-12 col-sm-4 col-md-2 offset-md-1 mb-xs-4 mb-md-0 hero-feature'>
           <a class="hero-link" href="{{ site.baseurl }}/docs/api/auto-updater/">
             <span class="octicon hero-octicon octicon-squirrel" aria-hidden="true"></span>
-            Automatic updates
+            {{ site.data.locale.benefits.automatic_updates }}
           </a>
         </div>
         <div class='col-xs-12 col-sm-4 col-md-2 mb-xs-4 mb-md-0 hero-feature'>
           <a class="hero-link" href="{{ site.baseurl }}/docs/api/menu/">
             <span class="octicon hero-octicon octicon-device-desktop" aria-hidden="true"></span>
-            Native menus<br>&amp; notifications
+            {{ site.data.locale.benefits.native_menus_and_notifications }}
           </a>
         </div>
         <div class='col-xs-12 col-sm-4 col-md-2 mb-xs-4 mb-md-0 hero-feature'>
           <a class="hero-link" href="{{ site.baseurl }}/docs/api/crash-reporter/">
             <span class="octicon hero-octicon octicon-bug" style="padding-left:2px" aria-hidden="true"></span>
-            App crash<br>reporting
+            {{ site.data.locale.benefits.crash_reporting }}
           </a>
         </div>
         <div class='col-xs-12 col-sm-4 offset-sm-2 col-md-2 offset-md-0 mb-xs-4 mb-md-0 hero-feature'>
           <a class="hero-link" href="{{ site.baseurl }}/docs/api/content-tracing/">
             <span class="octicon hero-octicon octicon-tools" aria-hidden="true"></span>
-            Debugging<br>&amp; profiling
+            {{ site.data.locale.benefits.debugging_and_profiling }}
           </a>
         </div>
         <div class='col-xs-12 col-sm-4 col-md-2 mb-xs-4 mb-md-0 hero-feature'>
           <a class="hero-link" href="{{ site.baseurl }}/docs/api/auto-updater/#windows">
             <span class="octicon hero-octicon octicon-gift" style="padding-right:2px" aria-hidden="true"></span>
-            Windows installers
+            {{ site.data.locale.benefits.windows_installers }}
           </a>
         </div>
       </div>
@@ -114,11 +110,10 @@ layout: default
 
   <section class='page-section page-section-spacious bg-shade' id='get-started'>
     <div class='container-narrow text-center'>
-      <h1>Get started</h1>
+      <h1>{{ site.data.locale.get_started.title }}</h1>
       <p class="lead">
-        To get started with Electron, check out the resources below. Learn how to wrap your web app with Electron, access all the APIs, and generate installers.
+        {{ site.data.locale.get_started.description }}
       </p>
-
 
       <div class='row mt-8'>
         <div class='col-xs-12 col-md-5'>
@@ -129,16 +124,15 @@ layout: default
           </a>
         </div>
         <div class='col-xs-12 col-md-7 text-left'>
-          <h3 class="mt-1 mb-3">Explore the Electron APIs</h3>
-          <p>The <a href="https://github.com/electron/electron-api-demos">Electron API Demos app</a> interactively demonstrates the most important features of the Electron API. See what's possible with Electron with sample code and helpful tips for building your app.</p>
+          <h3 class="mt-1 mb-3">{{ site.data.locale.explore.title }}</h3>
+          <p>{{ site.data.locale.explore.description }}</p>
           <p>
             <a id="download-latest-release" class="btn btn-lg btn-outline-themed" href="https://github.com/electron/electron-api-demos/releases">
               <span class="octicon octicon-desktop-download mr-1"></span>
-              <span class="label">Download from GitHub</span>
+              <span class="label">{{ site.data.locale.download_from_github }}</span>
             </a>
             <p id="download-alternatives" class="text-sm" style="display:none;">
-              <a href="https://github.com/electron/electron-api-demos/releases">View all releases</a>
-              on GitHub
+              {{ site.data.locale.view_all_releases_on_github }}
            </p>
           </p>
         </div>
@@ -146,31 +140,38 @@ layout: default
 
       <hr>
 
-      <h3 class="mb-3">Spin up the <a href='https://github.com/electron/electron-quick-start'>Quick Start</a> app to see Electron in action:</h3>
-      <p>A minimal Electron app with helpful notations.</p>
-      <figure class="highlight highlight-dark text-left my-4">
-<pre><code><span class="c1"># Clone the Quick Start repository</span>
+    <h3 class="mb-3">
+      { site.data.locale.quick_start.title }}
+    </h3>
+    <p>{{ site.data.locale.quick_start.description }}</p>
+    
+    <figure class="highlight highlight-dark text-left my-4">
+<pre><code><span class="c1"># {{ site.data.locale.quick_start.clone }}</span>
 $ git clone https://github.com/electron/electron-quick-start
 
-<span class="c1"># Go into the repository</span>
+<span class="c1"># {{ site.data.locale.quick_start.go_into_repo }}</span>
 $ cd electron-quick-start
 
-<span class="c1"># Install the dependencies and run</span>
+<span class="c1"># {{ site.data.locale.quick_start.install_deps }}</span>
 $ npm install &amp;&amp; npm start</code></pre>
       </figure>
-      <h3>Or dive deeper and read the <a href='{{ site.baseurl }}/docs/'>documentation</a>.</h3>
 
-      <h3 class="pt-4">Need Help?</h3>
-      <p>Ask questions in the <a href='https://discuss.atom.io/c/electron'>Discuss</a> forum or our <a href='http://atom-slack.herokuapp.com/'>Slack</a> channel. Follow <a href="https://twitter.com/{{ site.twitter_username }}">@{{ site.twitter_username }}</a> on Twitter for important announcements. Need to privately reach out? Email <a href="mailto:electron@github.com">electron@github.com</a>.</p>
+      <h3>
+        {{ site.data.locale.quick_start.dive_deeper }}
+      </h3>
+
+
+      <h3 class="pt-4">{{ site.data.locale.need_help.title }}</h3>
+      <p>{{ site.data.locale.need_help.description }}</p>
 
     </div>
   </section>
 
   <section class='page-section page-section-spacious' id='apps'>
     <div class="container-narrow text-center">
-      <h1>Apps built on Electron</h1>
+      <h1> {{ site.data.locale.apps.title }}</h1>
       <p class="lead">
-        With Electron, creating a desktop application for your company or idea is easy. Initially developed for GitHub's <a href='https://atom.io'>Atom editor</a>, Electron has since been used to create applications by companies like Microsoft, Facebook, Slack, and Docker.
+        {{ site.data.locale.apps.description }}
       </p>
 
       <hr>
@@ -184,9 +185,9 @@ $ npm install &amp;&amp; npm start</code></pre>
           {% endfor %}
         </div>
         <p class="mt-6">
-          <a href='{{ site.baseurl }}/apps'>View more apps</a>
-            or
-           <a href="https://github.com/electron/electron.atom.io/blob/gh-pages/CONTRIBUTING.md#adding-an-app-or-project-to-the-site">submit your own</a>.
+          <a href='{{ site.baseurl }}/apps'>{{ site.data.locale.apps.view_more }}</a>
+            {{ site.data.locale.or }}
+           <a href="https://github.com/electron/electron.atom.io/blob/gh-pages/CONTRIBUTING.md#adding-an-app-or-project-to-the-site">{{ site.data.locale.apps.submit_your_own }}</a>.
         </p>
       </div>
     </div>

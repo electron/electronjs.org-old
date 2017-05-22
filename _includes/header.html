@@ -18,13 +18,13 @@
 
     <nav class="site-header-nav">
       {% capture first_segment %}{{ page.url | remove_first: "/" | split: "/" | first }}{% endcapture %}
-      <a class="site-header-nav-item {% if first_segment == 'docs' %}active{% endif %}" href="{{ site.baseurl }}/docs/">Docs</a>
-      <a class="site-header-nav-item {% if first_segment == 'blog' %}active{% endif %}" href="{{ site.baseurl }}/blog/">Blog</a>
-      <a class="site-header-nav-item {% if first_segment == 'community' %}active{% endif %}" href="{{ site.baseurl }}/community/">Community</a>
-      <a class="site-header-nav-item {% if first_segment == 'apps' %}active{% endif %}" href="{{ site.baseurl }}/apps/">Apps</a>
-      <a class="site-header-nav-item {% if first_segment == 'userland' %}active{% endif %}" href="{{ site.baseurl }}/userland/">Userland</a>
-      <a class="site-header-nav-item {% if first_segment == 'releases' %}active{% endif %}" href="{{ site.baseurl }}/releases/">Releases</a>
-      <a class="site-header-nav-item {% if first_segment == 'contact' %}active{% endif %}" href="{{ site.baseurl }}/contact/">Contact</a>
+      <a class="site-header-nav-item {% if first_segment == 'docs' %}active{% endif %}" href="{{ site.baseurl }}/docs/">{{ site.data.locale.nav.docs }}</a>
+      <a class="site-header-nav-item {% if first_segment == 'blog' %}active{% endif %}" href="{{ site.baseurl }}/blog/">{{ site.data.locale.nav.blog }}</a>
+      <a class="site-header-nav-item {% if first_segment == 'community' %}active{% endif %}" href="{{ site.baseurl }}/community/">{{ site.data.locale.nav.community }}</a>
+      <a class="site-header-nav-item {% if first_segment == 'apps' %}active{% endif %}" href="{{ site.baseurl }}/apps/">{{ site.data.locale.nav.apps }}</a>
+      <a class="site-header-nav-item {% if first_segment == 'userland' %}active{% endif %}" href="{{ site.baseurl }}/userland/">{{ site.data.locale.nav.userland }}</a>
+      <a class="site-header-nav-item {% if first_segment == 'releases' %}active{% endif %}" href="{{ site.baseurl }}/releases/">{{ site.data.locale.nav.releases }}</a>
+      <a class="site-header-nav-item {% if first_segment == 'contact' %}active{% endif %}" href="{{ site.baseurl }}/contact/">{{ site.data.locale.nav.contact }}</a>
       <a class="site-header-nav-item" href="https://github.com/electron/electron" title="Github Repository"><span class="mega-octicon octicon-mark-github vertical-middle"></span></a>
     </nav>
   </div>

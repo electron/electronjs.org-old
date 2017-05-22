@@ -37,3 +37,16 @@ google_site_verification: eOAFtDphTbbm4OPKva2d3Z0Z_2bBxWMGdkD0IRQ6VeA
 twitter:
     username: ElectronJS
 logo: /images/opengraph.png
+
+# github.com/untra/polyglot
+languages:
+  - en
+default_lang: en
+exclude_from_localization:
+  - bower_components
+  - css
+  - images
+  - js
+  - lib
+  - script
+parallel_localization: true
