@@ -38,12 +38,10 @@ twitter:
     username: ElectronJS
 logo: /images/opengraph.png
 
-
 # github.com/untra/polyglot
 languages:
-  - en-US
-  - es-ES
-default_lang: en-US
+  - en
+default_lang: en
 exclude_from_localization:
   - bower_components
   - css
