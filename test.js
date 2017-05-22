@@ -54,6 +54,11 @@ describe('electron.atom.io', () => {
       expect(httpLinks.length).to.be.above(3)
     })
 
+    it('leaves fragment links intact', () => {
+      const doc = loadDoc('api/menu-item.md')
+      expect(doc).to.include('[roles](#roles)')
+    })
+
     it('preserves fenced js code snippets', () => {
       const doc = loadDoc('api/clipboard.md')
       expect(doc).to.include('```javascript\n')
@@ -62,6 +67,11 @@ describe('electron.atom.io', () => {
     it('HTML-encodes pipe characters to avoid confusing the jekyll kramdown parser', () => {
       const doc = loadDoc('api/net.md')
       expect(doc).to.include('(Object &#124; String)')
+    })
+
+    it('adds a warning comment so people know to edit docs on the electron/electron repo', () => {
+      const doc = loadDoc('api/browser-window.md')
+      expect(doc).to.include('This file is generated automatically')
     })
 
     describe('frontmatter', () => {
@@ -80,7 +90,7 @@ describe('electron.atom.io', () => {
 
       it('has a redirect_from array', () => {
         expect(frontmatter.redirect_from).to.be.an('array')
-        expect(frontmatter.redirect_from.length).to.be.above(25)
+        expect(frontmatter.redirect_from.length).to.be.above(10)
         expect(frontmatter.redirect_from[0]).to.match(/^\/docs\//)
       })
 

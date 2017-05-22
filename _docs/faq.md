@@ -1,5 +1,5 @@
 ---
-version: v1.6.0
+version: v1.6.8
 permalink: /docs/faq/
 category: FAQ
 redirect_from:
@@ -9,9 +9,9 @@ redirect_from:
   - /docs/v0.37.5/faq/
   - /docs/v0.37.4/faq/
   - /docs/v0.37.3/faq/
-  - /docs/v0.36.12/faq/
   - /docs/v0.37.1/faq/
   - /docs/v0.37.0/faq/
+  - /docs/v0.36.12/faq/
   - /docs/v0.36.11/faq/
   - /docs/v0.36.10/faq/
   - /docs/v0.36.9/faq/
@@ -21,14 +21,14 @@ redirect_from:
   - /docs/v0.36.5/faq/
   - /docs/v0.36.4/faq/
   - /docs/v0.36.3/faq/
-  - /docs/v0.35.5/faq/
   - /docs/v0.36.2/faq/
   - /docs/v0.36.0/faq/
+  - /docs/v0.35.5/faq/
   - /docs/v0.35.4/faq/
   - /docs/v0.35.3/faq/
   - /docs/v0.35.2/faq/
-  - /docs/v0.34.4/faq/
   - /docs/v0.35.1/faq/
+  - /docs/v0.34.4/faq/
   - /docs/v0.34.3/faq/
   - /docs/v0.34.2/faq/
   - /docs/v0.34.1/faq/
@@ -87,6 +87,65 @@ title: Electron FAQ
 excerpt: ''
 sort_title: faq
 ---
+
+
+
+<!--
+
+
+                                      ::::
+                                    :o+//+o:
+                                    +o    oo-
+                                    :o+//oo/+o/
+                                      -::-   -oo:
+                                               /s/
+                      -::::::::-                :s/  :::--
+                  :+oo+////////+:        -:/+oo/ :s:-///++oo+:
+                /o+:                -/+oo+/:-     +o-      -:+o:
+               /s:              -:+o+/:           -o+         :s/
+              -s/            -/oo/:                /s-         +s-
+              -s/         -/oo/-                   -s/         /s-
+               oo       :+o/-                       oo         oo
+               -s/    :oo/                          /s-       /s-
+                :s/ :oo:              -::-          /s-      /s:
+                  -+o/               /ssss/         :s:    -+o-
+                 :o+--               /ssss/         :s:   :o+-
+                :s/  +o:              -::-          /s-   --
+               -s/    :+o/-                         /s-
+               oo       -+o+-                       oo
+              -s/         -/oo/-                   -s/
+             -+soo+:         -/oo/:                /s-      /oooo+-
+             o+   :s:           -:+o+/:-          -o+      /s:  -oo
+             oo:--/s:       ::      -:+oo+/:-     -/-      /s/--:o+
+              :+++/-        :s:          -:/+ooo++//////++oo//+o+:
+                             /s:                --::::::--
+                              /s/              /s-
+                               :oo:          :oo:
+                                 /oo/-    -/oo/
+                                   -/+oooo+/-
+
+
+
+
+
+                   _______  _______  _______  _______  __
+                  |       ||       ||       ||       ||  |
+                  |  _____||_     _||   _   ||    _  ||  |
+                  | |_____   |   |  |  | |  ||   |_| ||  |
+                  |_____  |  |   |  |  |_|  ||    ___||__|
+                   _____| |  |   |  |       ||   |     __
+                  |_______|  |___|  |_______||___|    |__|
+
+
+    This file is generated automatically, so it should not be edited.
+
+    To make changes, head over to the electron/electron repository:
+
+    https://github.com/electron/electron/blob/master/docs/faq.md
+
+    Thanks!
+
+-->
 # Electron FAQ
 
 ## When will Electron upgrade to latest Chrome?
@@ -219,4 +278,4 @@ npm uninstall electron
 npm uninstall -g electron
 ```
 
-However if your are using the built-in module but still getting this error, it is very likely you are using the module in the wrong process. For example `electron.app` can only be used in the main process, while `electron.webFrame` is only available in renderer processes.
+However if you are using the built-in module but still getting this error, it is very likely you are using the module in the wrong process. For example `electron.app` can only be used in the main process, while `electron.webFrame` is only available in renderer processes.

@@ -1,5 +1,5 @@
 ---
-version: v1.6.0
+version: v1.6.8
 permalink: /docs/tutorial/accessibility/
 category: Tutorial
 redirect_from:
@@ -9,9 +9,9 @@ redirect_from:
   - /docs/v0.37.5/tutorial/accessibility/
   - /docs/v0.37.4/tutorial/accessibility/
   - /docs/v0.37.3/tutorial/accessibility/
-  - /docs/v0.36.12/tutorial/accessibility/
   - /docs/v0.37.1/tutorial/accessibility/
   - /docs/v0.37.0/tutorial/accessibility/
+  - /docs/v0.36.12/tutorial/accessibility/
   - /docs/v0.36.11/tutorial/accessibility/
   - /docs/v0.36.10/tutorial/accessibility/
   - /docs/v0.36.9/tutorial/accessibility/
@@ -21,14 +21,14 @@ redirect_from:
   - /docs/v0.36.5/tutorial/accessibility/
   - /docs/v0.36.4/tutorial/accessibility/
   - /docs/v0.36.3/tutorial/accessibility/
-  - /docs/v0.35.5/tutorial/accessibility/
   - /docs/v0.36.2/tutorial/accessibility/
   - /docs/v0.36.0/tutorial/accessibility/
+  - /docs/v0.35.5/tutorial/accessibility/
   - /docs/v0.35.4/tutorial/accessibility/
   - /docs/v0.35.3/tutorial/accessibility/
   - /docs/v0.35.2/tutorial/accessibility/
-  - /docs/v0.34.4/tutorial/accessibility/
   - /docs/v0.35.1/tutorial/accessibility/
+  - /docs/v0.34.4/tutorial/accessibility/
   - /docs/v0.34.3/tutorial/accessibility/
   - /docs/v0.34.2/tutorial/accessibility/
   - /docs/v0.34.1/tutorial/accessibility/
@@ -88,15 +88,74 @@ title: Accessibility
 excerpt: ''
 sort_title: accessibility
 ---
+
+
+
+<!--
+
+
+                                      ::::
+                                    :o+//+o:
+                                    +o    oo-
+                                    :o+//oo/+o/
+                                      -::-   -oo:
+                                               /s/
+                      -::::::::-                :s/  :::--
+                  :+oo+////////+:        -:/+oo/ :s:-///++oo+:
+                /o+:                -/+oo+/:-     +o-      -:+o:
+               /s:              -:+o+/:           -o+         :s/
+              -s/            -/oo/:                /s-         +s-
+              -s/         -/oo/-                   -s/         /s-
+               oo       :+o/-                       oo         oo
+               -s/    :oo/                          /s-       /s-
+                :s/ :oo:              -::-          /s-      /s:
+                  -+o/               /ssss/         :s:    -+o-
+                 :o+--               /ssss/         :s:   :o+-
+                :s/  +o:              -::-          /s-   --
+               -s/    :+o/-                         /s-
+               oo       -+o+-                       oo
+              -s/         -/oo/-                   -s/
+             -+soo+:         -/oo/:                /s-      /oooo+-
+             o+   :s:           -:+o+/:-          -o+      /s:  -oo
+             oo:--/s:       ::      -:+oo+/:-     -/-      /s/--:o+
+              :+++/-        :s:          -:/+ooo++//////++oo//+o+:
+                             /s:                --::::::--
+                              /s/              /s-
+                               :oo:          :oo:
+                                 /oo/-    -/oo/
+                                   -/+oooo+/-
+
+
+
+
+
+                   _______  _______  _______  _______  __
+                  |       ||       ||       ||       ||  |
+                  |  _____||_     _||   _   ||    _  ||  |
+                  | |_____   |   |  |  | |  ||   |_| ||  |
+                  |_____  |  |   |  |  |_|  ||    ___||__|
+                   _____| |  |   |  |       ||   |     __
+                  |_______|  |___|  |_______||___|    |__|
+
+
+    This file is generated automatically, so it should not be edited.
+
+    To make changes, head over to the electron/electron repository:
+
+    https://github.com/electron/electron/blob/master/docs/tutorial/accessibility.md
+
+    Thanks!
+
+-->
 # Accessibility
 
-Making accessible applications is important and we're happy to introduce new functionality to [Devtron](http://electron.atom.io/devtron) and [Spectron](http://electron.atom.io/spectron) that gives developers the opportunity to make their apps better for everyone.
+Making accessible applications is important and we're happy to introduce new functionality to [Devtron](https://electron.atom.io/devtron) and [Spectron](https://electron.atom.io/spectron) that gives developers the opportunity to make their apps better for everyone.
 
 * * *
 
 Accessibility concerns in Electron applications are similar to those of websites because they're both ultimately HTML. With Electron apps, however, you can't use the online resources for accessibility audits because your app doesn't have a URL to point the auditor to.
 
-These new features bring those auditing tools to your Electron app. You can choose to add audits to your tests with Spectron or use them within DevTools with Devtron. Read on for a summary of the tools or checkout our [accessibility documentation](http://electron.atom.io/docs/tutorial/accessibility) for more information.
+These new features bring those auditing tools to your Electron app. You can choose to add audits to your tests with Spectron or use them within DevTools with Devtron. Read on for a summary of the tools or checkout our [accessibility documentation](https://electron.atom.io/docs/tutorial/accessibility) for more information.
 
 ### Spectron
 
@@ -120,4 +179,4 @@ In Devtron, there is a new accessibility tab which will allow you to audit a pag
 
 Both of these tools are using the [Accessibility Developer Tools](https://github.com/GoogleChrome/accessibility-developer-tools) library built by Google for Chrome. You can learn more about the accessibility audit rules this library uses on that [repository's wiki](https://github.com/GoogleChrome/accessibility-developer-tools/wiki/Audit-Rules).
 
-If you know of other great accessibility tools for Electron, add them to the [accessibility documentation](http://electron.atom.io/docs/tutorial/accessibility) with a pull request.
+If you know of other great accessibility tools for Electron, add them to the [accessibility documentation](https://electron.atom.io/docs/tutorial/accessibility) with a pull request.

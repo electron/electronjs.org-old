@@ -1,5 +1,5 @@
 ---
-version: v1.6.0
+version: v1.6.8
 permalink: /docs/api/native-image/
 category: API
 redirect_from:
@@ -9,9 +9,9 @@ redirect_from:
   - /docs/v0.37.5/api/native-image/
   - /docs/v0.37.4/api/native-image/
   - /docs/v0.37.3/api/native-image/
-  - /docs/v0.36.12/api/native-image/
   - /docs/v0.37.1/api/native-image/
   - /docs/v0.37.0/api/native-image/
+  - /docs/v0.36.12/api/native-image/
   - /docs/v0.36.11/api/native-image/
   - /docs/v0.36.10/api/native-image/
   - /docs/v0.36.9/api/native-image/
@@ -21,14 +21,14 @@ redirect_from:
   - /docs/v0.36.5/api/native-image/
   - /docs/v0.36.4/api/native-image/
   - /docs/v0.36.3/api/native-image/
-  - /docs/v0.35.5/api/native-image/
   - /docs/v0.36.2/api/native-image/
   - /docs/v0.36.0/api/native-image/
+  - /docs/v0.35.5/api/native-image/
   - /docs/v0.35.4/api/native-image/
   - /docs/v0.35.3/api/native-image/
   - /docs/v0.35.2/api/native-image/
-  - /docs/v0.34.4/api/native-image/
   - /docs/v0.35.1/api/native-image/
+  - /docs/v0.34.4/api/native-image/
   - /docs/v0.34.3/api/native-image/
   - /docs/v0.34.2/api/native-image/
   - /docs/v0.34.1/api/native-image/
@@ -87,6 +87,65 @@ title: nativeImage
 excerpt: 'Create tray, dock, and application icons using PNG or JPG files.'
 sort_title: native-image
 ---
+
+
+
+<!--
+
+
+                                      ::::
+                                    :o+//+o:
+                                    +o    oo-
+                                    :o+//oo/+o/
+                                      -::-   -oo:
+                                               /s/
+                      -::::::::-                :s/  :::--
+                  :+oo+////////+:        -:/+oo/ :s:-///++oo+:
+                /o+:                -/+oo+/:-     +o-      -:+o:
+               /s:              -:+o+/:           -o+         :s/
+              -s/            -/oo/:                /s-         +s-
+              -s/         -/oo/-                   -s/         /s-
+               oo       :+o/-                       oo         oo
+               -s/    :oo/                          /s-       /s-
+                :s/ :oo:              -::-          /s-      /s:
+                  -+o/               /ssss/         :s:    -+o-
+                 :o+--               /ssss/         :s:   :o+-
+                :s/  +o:              -::-          /s-   --
+               -s/    :+o/-                         /s-
+               oo       -+o+-                       oo
+              -s/         -/oo/-                   -s/
+             -+soo+:         -/oo/:                /s-      /oooo+-
+             o+   :s:           -:+o+/:-          -o+      /s:  -oo
+             oo:--/s:       ::      -:+oo+/:-     -/-      /s/--:o+
+              :+++/-        :s:          -:/+ooo++//////++oo//+o+:
+                             /s:                --::::::--
+                              /s/              /s-
+                               :oo:          :oo:
+                                 /oo/-    -/oo/
+                                   -/+oooo+/-
+
+
+
+
+
+                   _______  _______  _______  _______  __
+                  |       ||       ||       ||       ||  |
+                  |  _____||_     _||   _   ||    _  ||  |
+                  | |_____   |   |  |  | |  ||   |_| ||  |
+                  |_____  |  |   |  |  |_|  ||    ___||__|
+                   _____| |  |   |  |       ||   |     __
+                  |_______|  |___|  |_______||___|    |__|
+
+
+    This file is generated automatically, so it should not be edited.
+
+    To make changes, head over to the electron/electron repository:
+
+    https://github.com/electron/electron/blob/master/docs/api/native-image.md
+
+    Thanks!
+
+-->
 # nativeImage
 
 > Create tray, dock, and application icons using PNG or JPG files.
@@ -235,7 +294,10 @@ Process: [Main]({{site.baseurl}}/docs/glossary#main-process), [Renderer]({{site.
 
 The following methods are available on instances of the `NativeImage` class:
 
-#### `image.toPNG()`
+#### `image.toPNG([options])`
+
+*   `options` Object (optional)
+    *   `scaleFactor` Double (optional) - Defaults to 1.0.
 
 Returns `Buffer` - A [Buffer](https://nodejs.org/api/buffer.html#buffer_class_buffer) that contains the image's `PNG` encoded data.
 
@@ -245,15 +307,24 @@ Returns `Buffer` - A [Buffer](https://nodejs.org/api/buffer.html#buffer_class_bu
 
 Returns `Buffer` - A [Buffer](https://nodejs.org/api/buffer.html#buffer_class_buffer) that contains the image's `JPEG` encoded data.
 
-#### `image.toBitmap()`
+#### `image.toBitmap([options])`
+
+*   `options` Object (optional)
+    *   `scaleFactor` Double (optional) - Defaults to 1.0.
 
 Returns `Buffer` - A [Buffer](https://nodejs.org/api/buffer.html#buffer_class_buffer) that contains a copy of the image's raw bitmap pixel data.
 
-#### `image.toDataURL()`
+#### `image.toDataURL([options])`
+
+*   `options` Object (optional)
+    *   `scaleFactor` Double (optional) - Defaults to 1.0.
 
 Returns `String` - The data URL of the image.
 
-#### `image.getBitmap()`
+#### `image.getBitmap([options])`
+
+*   `options` Object (optional)
+    *   `scaleFactor` Double (optional) - Defaults to 1.0.
 
 Returns `Buffer` - A [Buffer](https://nodejs.org/api/buffer.html#buffer_class_buffer) that contains the image's raw bitmap pixel data.
 
@@ -271,10 +342,7 @@ Returns `Boolean` - Whether the image is empty.
 
 #### `image.getSize()`
 
-Returns `Object`:
-
-*   `width` Integer
-*   `height` Integer
+Returns [`Size`]({{site.baseurl}}/docs/api/structures/size)
 
 #### `image.setTemplateImage(option)`
 
@@ -288,19 +356,15 @@ Returns `Boolean` - Whether the image is a template image.
 
 #### `image.crop(rect)`
 
-*   `rect` Object - The area of the image to crop
-    *   `x` Integer
-    *   `y` Integer
-    *   `width` Integer
-    *   `height` Integer
+*   `rect` [Rectangle]({{site.baseurl}}/docs/api/structures/rectangle) - The area of the image to crop
 
 Returns `NativeImage` - The cropped image.
 
 #### `image.resize(options)`
 
 *   `options` Object
-    *   `width` Integer (optional)
-    *   `height` Integer (optional)
+    *   `width` Integer (optional) - Defaults to the image's width.
+    *   `height` Integer (optional) - Defaults to the image's height
     *   `quality` String (optional) - The desired quality of the resize image. Possible values are `good`, `better` or `best`. The default is `best`. These values express a desired quality/speed tradeoff. They are translated into an algorithm-specific method that depends on the capabilities (CPU, GPU) of the underlying platform. It is possible for all three methods to be mapped to the same algorithm on a given platform.
 
 Returns `NativeImage` - The resized image.
@@ -310,3 +374,14 @@ If only the `height` or the `width` are specified then the current aspect ratio 
 #### `image.getAspectRatio()`
 
 Returns `Float` - The image's aspect ratio.
+
+#### `image.addRepresentation(options)`
+
+*   `options` Object
+    *   `scaleFactor` Double - The scale factor to add the image representation for.
+    *   `width` Integer (optional) - Defaults to 0\. Required if a bitmap buffer is specified as `buffer`.
+    *   `height` Integer (optional) - Defaults to 0\. Required if a bitmap buffer is specified as `buffer`.
+    *   `buffer` Buffer (optional) - The buffer containing the raw image data.
+    *   `dataURL` String (optional) - The data URL containing either a base 64 encoded PNG or JPEG image.
+
+Add an image representation for a specific scale factor. This can be used to explicitly add different scale factor representations to an image. This can be called on empty images.

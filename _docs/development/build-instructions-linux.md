@@ -1,5 +1,5 @@
 ---
-version: v1.6.0
+version: v1.6.8
 permalink: /docs/development/build-instructions-linux/
 category: Development
 redirect_from:
@@ -9,9 +9,9 @@ redirect_from:
   - /docs/v0.37.5/development/build-instructions-linux/
   - /docs/v0.37.4/development/build-instructions-linux/
   - /docs/v0.37.3/development/build-instructions-linux/
-  - /docs/v0.36.12/development/build-instructions-linux/
   - /docs/v0.37.1/development/build-instructions-linux/
   - /docs/v0.37.0/development/build-instructions-linux/
+  - /docs/v0.36.12/development/build-instructions-linux/
   - /docs/v0.36.11/development/build-instructions-linux/
   - /docs/v0.36.10/development/build-instructions-linux/
   - /docs/v0.36.9/development/build-instructions-linux/
@@ -21,14 +21,14 @@ redirect_from:
   - /docs/v0.36.5/development/build-instructions-linux/
   - /docs/v0.36.4/development/build-instructions-linux/
   - /docs/v0.36.3/development/build-instructions-linux/
-  - /docs/v0.35.5/development/build-instructions-linux/
   - /docs/v0.36.2/development/build-instructions-linux/
   - /docs/v0.36.0/development/build-instructions-linux/
+  - /docs/v0.35.5/development/build-instructions-linux/
   - /docs/v0.35.4/development/build-instructions-linux/
   - /docs/v0.35.3/development/build-instructions-linux/
   - /docs/v0.35.2/development/build-instructions-linux/
-  - /docs/v0.34.4/development/build-instructions-linux/
   - /docs/v0.35.1/development/build-instructions-linux/
+  - /docs/v0.34.4/development/build-instructions-linux/
   - /docs/v0.34.3/development/build-instructions-linux/
   - /docs/v0.34.2/development/build-instructions-linux/
   - /docs/v0.34.1/development/build-instructions-linux/
@@ -88,6 +88,65 @@ title: Build Instructions (Linux)
 excerpt: ''
 sort_title: build-instructions-linux
 ---
+
+
+
+<!--
+
+
+                                      ::::
+                                    :o+//+o:
+                                    +o    oo-
+                                    :o+//oo/+o/
+                                      -::-   -oo:
+                                               /s/
+                      -::::::::-                :s/  :::--
+                  :+oo+////////+:        -:/+oo/ :s:-///++oo+:
+                /o+:                -/+oo+/:-     +o-      -:+o:
+               /s:              -:+o+/:           -o+         :s/
+              -s/            -/oo/:                /s-         +s-
+              -s/         -/oo/-                   -s/         /s-
+               oo       :+o/-                       oo         oo
+               -s/    :oo/                          /s-       /s-
+                :s/ :oo:              -::-          /s-      /s:
+                  -+o/               /ssss/         :s:    -+o-
+                 :o+--               /ssss/         :s:   :o+-
+                :s/  +o:              -::-          /s-   --
+               -s/    :+o/-                         /s-
+               oo       -+o+-                       oo
+              -s/         -/oo/-                   -s/
+             -+soo+:         -/oo/:                /s-      /oooo+-
+             o+   :s:           -:+o+/:-          -o+      /s:  -oo
+             oo:--/s:       ::      -:+oo+/:-     -/-      /s/--:o+
+              :+++/-        :s:          -:/+ooo++//////++oo//+o+:
+                             /s:                --::::::--
+                              /s/              /s-
+                               :oo:          :oo:
+                                 /oo/-    -/oo/
+                                   -/+oooo+/-
+
+
+
+
+
+                   _______  _______  _______  _______  __
+                  |       ||       ||       ||       ||  |
+                  |  _____||_     _||   _   ||    _  ||  |
+                  | |_____   |   |  |  | |  ||   |_| ||  |
+                  |_____  |  |   |  |  |_|  ||    ___||__|
+                   _____| |  |   |  |       ||   |     __
+                  |_______|  |___|  |_______||___|    |__|
+
+
+    This file is generated automatically, so it should not be edited.
+
+    To make changes, head over to the electron/electron repository:
+
+    https://github.com/electron/electron/blob/master/docs/development/build-instructions-linux.md
+
+    Thanks!
+
+-->
 # Build Instructions (Linux)
 
 Follow the guidelines below for building Electron on Linux.
@@ -191,6 +250,14 @@ To clean the build files:
 ```bash
 $ npm run clean
 ```
+
+To clean only `out` and `dist` directories:
+
+```bash
+$ npm run clean-build
+```
+
+**Note:** Both clean commands require running `bootstrap` again before building.
 
 ## Troubleshooting
 

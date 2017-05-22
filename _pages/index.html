@@ -19,10 +19,18 @@ lang: en
   <div class="subtron py-4 text-center">
     <div class="container">
       <div id="electron-versions" class="electron-versions">
-        <span class="electron-versions-main">Electron: <strong>{{ site.data.versions[0].version }}</strong></span>
-        <span>Node: <strong>{{ site.data.versions[0].node }}</strong></span>
-        <span>Chromium: <strong>{{ site.data.versions[0].chrome }}</strong></span>
-        <span>V8: <strong>{{ site.data.versions[0].v8 }}</strong></span>
+
+        <!-- find current stable release version in full list of versions -->
+        {% for version in site.data.versions %}
+          {% if version.version == site.data.releases[0].version %}
+            {% assign indexOfCurrentVersion=forloop.index0 %}
+          {% endif %}
+        {% endfor %}
+
+        <span class="electron-versions-main">Electron: <strong>{{ site.data.releases[0].version }}</strong></span>
+        <span>Node: <strong>{{ site.data.versions[indexOfCurrentVersion].node }}</strong></span>
+        <span>Chromium: <strong>{{ site.data.versions[indexOfCurrentVersion].chrome }}</strong></span>
+        <span>V8: <strong>{{ site.data.versions[indexOfCurrentVersion].v8 }}</strong></span>
       </div>
     </div>
   </div>
@@ -33,7 +41,7 @@ lang: en
       <p class="lead text-center-sm">{{ site.data.locale.electron_is_easy.description }}</p>
 
       <p class="text-center-sm mt-4">
-        <a class="btn btn-lg btn-outline-themed" href="https://youtu.be/8YP_nOCO-4Q" target="_blank">
+        <a class="btn btn-lg btn-outline-themed" href="https://youtu.be/8YP_nOCO-4Q">
           <span class="octicon octicon-eye mr-1"></span>
           <span class="label">{{ site.data.locale.electron_is_easy.video_link }}</span>
         </a>
@@ -132,11 +140,12 @@ lang: en
 
       <hr>
 
-      <h3 class="mb-3">
-        {{ site.data.locale.quick_start.title }}
-      </h3>
-      <p>{{ site.data.locale.quick_start.description }}</p>
-      <figure class="highlight highlight-dark text-left my-4">
+    <h3 class="mb-3">
+      { site.data.locale.quick_start.title }}
+    </h3>
+    <p>{{ site.data.locale.quick_start.description }}</p>
+    
+    <figure class="highlight highlight-dark text-left my-4">
 <pre><code><span class="c1"># {{ site.data.locale.quick_start.clone }}</span>
 $ git clone https://github.com/electron/electron-quick-start
 

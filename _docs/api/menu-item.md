@@ -1,5 +1,5 @@
 ---
-version: v1.6.0
+version: v1.6.8
 permalink: /docs/api/menu-item/
 category: API
 redirect_from:
@@ -9,9 +9,9 @@ redirect_from:
   - /docs/v0.37.5/api/menu-item/
   - /docs/v0.37.4/api/menu-item/
   - /docs/v0.37.3/api/menu-item/
-  - /docs/v0.36.12/api/menu-item/
   - /docs/v0.37.1/api/menu-item/
   - /docs/v0.37.0/api/menu-item/
+  - /docs/v0.36.12/api/menu-item/
   - /docs/v0.36.11/api/menu-item/
   - /docs/v0.36.10/api/menu-item/
   - /docs/v0.36.9/api/menu-item/
@@ -21,14 +21,14 @@ redirect_from:
   - /docs/v0.36.5/api/menu-item/
   - /docs/v0.36.4/api/menu-item/
   - /docs/v0.36.3/api/menu-item/
-  - /docs/v0.35.5/api/menu-item/
   - /docs/v0.36.2/api/menu-item/
   - /docs/v0.36.0/api/menu-item/
+  - /docs/v0.35.5/api/menu-item/
   - /docs/v0.35.4/api/menu-item/
   - /docs/v0.35.3/api/menu-item/
   - /docs/v0.35.2/api/menu-item/
-  - /docs/v0.34.4/api/menu-item/
   - /docs/v0.35.1/api/menu-item/
+  - /docs/v0.34.4/api/menu-item/
   - /docs/v0.34.3/api/menu-item/
   - /docs/v0.34.2/api/menu-item/
   - /docs/v0.34.1/api/menu-item/
@@ -87,6 +87,65 @@ title: MenuItem
 excerpt: Add items to native application menus and context menus.
 sort_title: menu-item
 ---
+
+
+
+<!--
+
+
+                                      ::::
+                                    :o+//+o:
+                                    +o    oo-
+                                    :o+//oo/+o/
+                                      -::-   -oo:
+                                               /s/
+                      -::::::::-                :s/  :::--
+                  :+oo+////////+:        -:/+oo/ :s:-///++oo+:
+                /o+:                -/+oo+/:-     +o-      -:+o:
+               /s:              -:+o+/:           -o+         :s/
+              -s/            -/oo/:                /s-         +s-
+              -s/         -/oo/-                   -s/         /s-
+               oo       :+o/-                       oo         oo
+               -s/    :oo/                          /s-       /s-
+                :s/ :oo:              -::-          /s-      /s:
+                  -+o/               /ssss/         :s:    -+o-
+                 :o+--               /ssss/         :s:   :o+-
+                :s/  +o:              -::-          /s-   --
+               -s/    :+o/-                         /s-
+               oo       -+o+-                       oo
+              -s/         -/oo/-                   -s/
+             -+soo+:         -/oo/:                /s-      /oooo+-
+             o+   :s:           -:+o+/:-          -o+      /s:  -oo
+             oo:--/s:       ::      -:+oo+/:-     -/-      /s/--:o+
+              :+++/-        :s:          -:/+ooo++//////++oo//+o+:
+                             /s:                --::::::--
+                              /s/              /s-
+                               :oo:          :oo:
+                                 /oo/-    -/oo/
+                                   -/+oooo+/-
+
+
+
+
+
+                   _______  _______  _______  _______  __
+                  |       ||       ||       ||       ||  |
+                  |  _____||_     _||   _   ||    _  ||  |
+                  | |_____   |   |  |  | |  ||   |_| ||  |
+                  |_____  |  |   |  |  |_|  ||    ___||__|
+                   _____| |  |   |  |       ||   |     __
+                  |_______|  |___|  |_______||___|    |__|
+
+
+    This file is generated automatically, so it should not be edited.
+
+    To make changes, head over to the electron/electron repository:
+
+    https://github.com/electron/electron/blob/master/docs/api/menu-item.md
+
+    Thanks!
+
+-->
 ## Class: MenuItem
 
 > Add items to native application menus and context menus.
@@ -102,7 +161,7 @@ See [`Menu`]({{site.baseurl}}/docs/api/menu) for examples.
         *   `menuItem` MenuItem
         *   `browserWindow` BrowserWindow
         *   `event` Event
-    *   `role` String (optional) - Define the action of the menu item, when specified the `click` property will be ignored.
+    *   `role` String (optional) - Define the action of the menu item, when specified the `click` property will be ignored. See [roles](#roles).
     *   `type` String (optional) - Can be `normal`, `separator`, `submenu`, `checkbox` or `radio`.
     *   `label` String - (optional)
     *   `sublabel` String - (optional)
@@ -115,9 +174,13 @@ See [`Menu`]({{site.baseurl}}/docs/api/menu) for examples.
     *   `id` String (optional) - Unique within a single menu. If defined then it can be used as a reference to this item by the position attribute.
     *   `position` String (optional) - This field allows fine-grained definition of the specific location within a given menu.
 
+### Roles
+
+Roles allow menu items to have predefined behaviors.
+
 It is best to specify `role` for any menu item that matches a standard role, rather than trying to manually implement the behavior in a `click` function. The built-in `role` behavior will give the best native experience.
 
-The `label` and `accelerator` are optional when using a `role` and will default to appropriate values for each platform.
+The `label` and `accelerator` values are optional when using a `role` and will default to appropriate values for each platform.
 
 The `role` property can have following values:
 
@@ -133,13 +196,16 @@ The `role` property can have following values:
 *   `close` - Close current window
 *   `quit`- Quit the application
 *   `reload` - Reload the current window
+*   `forcereload` - Reload the current window ignoring the cache.
 *   `toggledevtools` - Toggle developer tools in the current window
 *   `togglefullscreen`- Toggle full screen mode on the current window
 *   `resetzoom` - Reset the focused page's zoom level to the original size
 *   `zoomin` - Zoom in the focused page by 10%
 *   `zoomout` - Zoom out the focused page by 10%
+*   `editMenu` - Whole default "Edit" menu (Undo, Copy, etc.)
+*   `windowMenu` - Whole default "Window" menu (Minimize, Close, etc.)
 
-On macOS `role` can also have following additional values:
+The following additional roles are available on macOS:
 
 *   `about` - Map to the `orderFrontStandardAboutPanel` action
 *   `hide` - Map to the `hide` action
@@ -153,7 +219,7 @@ On macOS `role` can also have following additional values:
 *   `help` - The submenu is a "Help" menu
 *   `services` - The submenu is a "Services" menu
 
-When specifying `role` on macOS, `label` and `accelerator` are the only options that will affect the MenuItem. All other options will be ignored.
+When specifying a `role` on macOS, `label` and `accelerator` are the only options that will affect the menu item. All other options will be ignored.
 
 ### Instance Properties
 
@@ -183,4 +249,4 @@ A String representing the menu items visible label
 
 #### `menuItem.click`
 
-A Function that is fired when the MenuItem recieves a click event
+A Function that is fired when the MenuItem receives a click event

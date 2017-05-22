@@ -1,5 +1,5 @@
 ---
-version: v1.6.0
+version: v1.6.8
 permalink: /docs/tutorial/windows-store-guide/
 category: Tutorial
 redirect_from:
@@ -9,9 +9,9 @@ redirect_from:
   - /docs/v0.37.5/tutorial/windows-store-guide/
   - /docs/v0.37.4/tutorial/windows-store-guide/
   - /docs/v0.37.3/tutorial/windows-store-guide/
-  - /docs/v0.36.12/tutorial/windows-store-guide/
   - /docs/v0.37.1/tutorial/windows-store-guide/
   - /docs/v0.37.0/tutorial/windows-store-guide/
+  - /docs/v0.36.12/tutorial/windows-store-guide/
   - /docs/v0.36.11/tutorial/windows-store-guide/
   - /docs/v0.36.10/tutorial/windows-store-guide/
   - /docs/v0.36.9/tutorial/windows-store-guide/
@@ -21,14 +21,14 @@ redirect_from:
   - /docs/v0.36.5/tutorial/windows-store-guide/
   - /docs/v0.36.4/tutorial/windows-store-guide/
   - /docs/v0.36.3/tutorial/windows-store-guide/
-  - /docs/v0.35.5/tutorial/windows-store-guide/
   - /docs/v0.36.2/tutorial/windows-store-guide/
   - /docs/v0.36.0/tutorial/windows-store-guide/
+  - /docs/v0.35.5/tutorial/windows-store-guide/
   - /docs/v0.35.4/tutorial/windows-store-guide/
   - /docs/v0.35.3/tutorial/windows-store-guide/
   - /docs/v0.35.2/tutorial/windows-store-guide/
-  - /docs/v0.34.4/tutorial/windows-store-guide/
   - /docs/v0.35.1/tutorial/windows-store-guide/
+  - /docs/v0.34.4/tutorial/windows-store-guide/
   - /docs/v0.34.3/tutorial/windows-store-guide/
   - /docs/v0.34.2/tutorial/windows-store-guide/
   - /docs/v0.34.1/tutorial/windows-store-guide/
@@ -88,6 +88,65 @@ title: Windows Store Guide
 excerpt: ''
 sort_title: windows-store-guide
 ---
+
+
+
+<!--
+
+
+                                      ::::
+                                    :o+//+o:
+                                    +o    oo-
+                                    :o+//oo/+o/
+                                      -::-   -oo:
+                                               /s/
+                      -::::::::-                :s/  :::--
+                  :+oo+////////+:        -:/+oo/ :s:-///++oo+:
+                /o+:                -/+oo+/:-     +o-      -:+o:
+               /s:              -:+o+/:           -o+         :s/
+              -s/            -/oo/:                /s-         +s-
+              -s/         -/oo/-                   -s/         /s-
+               oo       :+o/-                       oo         oo
+               -s/    :oo/                          /s-       /s-
+                :s/ :oo:              -::-          /s-      /s:
+                  -+o/               /ssss/         :s:    -+o-
+                 :o+--               /ssss/         :s:   :o+-
+                :s/  +o:              -::-          /s-   --
+               -s/    :+o/-                         /s-
+               oo       -+o+-                       oo
+              -s/         -/oo/-                   -s/
+             -+soo+:         -/oo/:                /s-      /oooo+-
+             o+   :s:           -:+o+/:-          -o+      /s:  -oo
+             oo:--/s:       ::      -:+oo+/:-     -/-      /s/--:o+
+              :+++/-        :s:          -:/+ooo++//////++oo//+o+:
+                             /s:                --::::::--
+                              /s/              /s-
+                               :oo:          :oo:
+                                 /oo/-    -/oo/
+                                   -/+oooo+/-
+
+
+
+
+
+                   _______  _______  _______  _______  __
+                  |       ||       ||       ||       ||  |
+                  |  _____||_     _||   _   ||    _  ||  |
+                  | |_____   |   |  |  | |  ||   |_| ||  |
+                  |_____  |  |   |  |  |_|  ||    ___||__|
+                   _____| |  |   |  |       ||   |     __
+                  |_______|  |___|  |_______||___|    |__|
+
+
+    This file is generated automatically, so it should not be edited.
+
+    To make changes, head over to the electron/electron repository:
+
+    https://github.com/electron/electron/blob/master/docs/tutorial/windows-store-guide.md
+
+    Thanks!
+
+-->
 # Windows Store Guide
 
 With Windows 8, the good old win32 executable got a new sibling: The Universal Windows Platform. The new `.appx` format does not only enable a number of new powerful APIs like Cortana or Push Notifications, but through the Windows Store, also simplifies installation and updating.
@@ -140,8 +199,7 @@ The output should look roughly like this:
 │   └── atom.asar
 ├── snapshot_blob.bin
 ├── squirrel.exe
-├── ui_resources_200_percent.pak
-└── xinput1_3.dll
+└── ui_resources_200_percent.pak
 
 ```
 
@@ -177,7 +235,7 @@ You can pair your Electron app up with an invisible UWP background task that get
 
 To check out how an Electron app that uses a background task to send toast notifications and live tiles, [check out the Microsoft-provided sample](https://github.com/felixrieseberg/electron-uwp-background).
 
-## Optional: Convert using Container Virtualiziation
+## Optional: Convert using Container Virtualization
 
 To generate the AppX package, the `electron-windows-store` CLI uses a template that should work for most Electron apps. However, if you are using a custom installer, or should you experience any trouble with the generated package, you can attempt to create a package using compilation with a Windows Container - in that mode, the CLI will install and run your application in blank Windows Container to determine what modifications your application is exactly doing to the operating system.
 

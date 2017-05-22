@@ -1,5 +1,5 @@
 ---
-version: v1.6.0
+version: v1.6.8
 permalink: /docs/tutorial/desktop-environment-integration/
 category: Tutorial
 redirect_from:
@@ -9,9 +9,9 @@ redirect_from:
   - /docs/v0.37.5/tutorial/desktop-environment-integration/
   - /docs/v0.37.4/tutorial/desktop-environment-integration/
   - /docs/v0.37.3/tutorial/desktop-environment-integration/
-  - /docs/v0.36.12/tutorial/desktop-environment-integration/
   - /docs/v0.37.1/tutorial/desktop-environment-integration/
   - /docs/v0.37.0/tutorial/desktop-environment-integration/
+  - /docs/v0.36.12/tutorial/desktop-environment-integration/
   - /docs/v0.36.11/tutorial/desktop-environment-integration/
   - /docs/v0.36.10/tutorial/desktop-environment-integration/
   - /docs/v0.36.9/tutorial/desktop-environment-integration/
@@ -21,14 +21,14 @@ redirect_from:
   - /docs/v0.36.5/tutorial/desktop-environment-integration/
   - /docs/v0.36.4/tutorial/desktop-environment-integration/
   - /docs/v0.36.3/tutorial/desktop-environment-integration/
-  - /docs/v0.35.5/tutorial/desktop-environment-integration/
   - /docs/v0.36.2/tutorial/desktop-environment-integration/
   - /docs/v0.36.0/tutorial/desktop-environment-integration/
+  - /docs/v0.35.5/tutorial/desktop-environment-integration/
   - /docs/v0.35.4/tutorial/desktop-environment-integration/
   - /docs/v0.35.3/tutorial/desktop-environment-integration/
   - /docs/v0.35.2/tutorial/desktop-environment-integration/
-  - /docs/v0.34.4/tutorial/desktop-environment-integration/
   - /docs/v0.35.1/tutorial/desktop-environment-integration/
+  - /docs/v0.34.4/tutorial/desktop-environment-integration/
   - /docs/v0.34.3/tutorial/desktop-environment-integration/
   - /docs/v0.34.2/tutorial/desktop-environment-integration/
   - /docs/v0.34.1/tutorial/desktop-environment-integration/
@@ -99,6 +99,65 @@ excerpt: >-
       for promotional items such as upgrades or special offers.
 sort_title: desktop-environment-integration
 ---
+
+
+
+<!--
+
+
+                                      ::::
+                                    :o+//+o:
+                                    +o    oo-
+                                    :o+//oo/+o/
+                                      -::-   -oo:
+                                               /s/
+                      -::::::::-                :s/  :::--
+                  :+oo+////////+:        -:/+oo/ :s:-///++oo+:
+                /o+:                -/+oo+/:-     +o-      -:+o:
+               /s:              -:+o+/:           -o+         :s/
+              -s/            -/oo/:                /s-         +s-
+              -s/         -/oo/-                   -s/         /s-
+               oo       :+o/-                       oo         oo
+               -s/    :oo/                          /s-       /s-
+                :s/ :oo:              -::-          /s-      /s:
+                  -+o/               /ssss/         :s:    -+o-
+                 :o+--               /ssss/         :s:   :o+-
+                :s/  +o:              -::-          /s-   --
+               -s/    :+o/-                         /s-
+               oo       -+o+-                       oo
+              -s/         -/oo/-                   -s/
+             -+soo+:         -/oo/:                /s-      /oooo+-
+             o+   :s:           -:+o+/:-          -o+      /s:  -oo
+             oo:--/s:       ::      -:+oo+/:-     -/-      /s/--:o+
+              :+++/-        :s:          -:/+ooo++//////++oo//+o+:
+                             /s:                --::::::--
+                              /s/              /s-
+                               :oo:          :oo:
+                                 /oo/-    -/oo/
+                                   -/+oooo+/-
+
+
+
+
+
+                   _______  _______  _______  _______  __
+                  |       ||       ||       ||       ||  |
+                  |  _____||_     _||   _   ||    _  ||  |
+                  | |_____   |   |  |  | |  ||   |_| ||  |
+                  |_____  |  |   |  |  |_|  ||    ___||__|
+                   _____| |  |   |  |       ||   |     __
+                  |_______|  |___|  |_______||___|    |__|
+
+
+    This file is generated automatically, so it should not be edited.
+
+    To make changes, head over to the electron/electron repository:
+
+    https://github.com/electron/electron/blob/master/docs/tutorial/desktop-environment-integration.md
+
+    Thanks!
+
+-->
 # Desktop Environment Integration
 
 Different operating systems provide different features for integrating desktop applications into their desktop environments. For example, on Windows, applications can put shortcuts in the JumpList of task bar, and on Mac, applications can put a custom menu in the dock menu.
@@ -127,7 +186,7 @@ While code and user experience across operating systems are similar, there are f
 
 *   On Windows 10, notifications "just work".
 *   On Windows 8.1 and Windows 8, a shortcut to your app, with a [Application User Model ID](https://msdn.microsoft.com/en-us/library/windows/desktop/dd378459(v=vs.85).aspx), must be installed to the Start screen. Note, however, that it does not need to be pinned to the Start screen.
-*   On Windows 7, notifications are not supported. You can however send "balloon notifications" using the [Tray API]({{site.baseurl}}/docs/api/tray#traydisplayballoonoptions-windows).
+*   On Windows 7, notifications work via a custom implemetation which visually resembles the native one on newer systems.
 
 Furthermore, the maximum length for the notification body is 250 characters, with the Windows team recommending that notifications should be kept to 200 characters.
 
@@ -147,7 +206,7 @@ Windows and macOS provide easy access to a list of recent documents opened by th
 
 **JumpList:**
 
-![JumpList Recent Files](http://i.msdn.microsoft.com/dynimg/IC420538.png)
+![JumpList Recent Files](https://cloud.githubusercontent.com/assets/2289/23446924/11a27b98-fdfc-11e6-8485-cc3b1e86b80a.png)
 
 **Application dock menu:**
 

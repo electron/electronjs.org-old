@@ -1,26 +1,45 @@
 #!/usr/bin/env node
 
-// Load SLACK_WEBHOOK from .env (for local testing)
 require('dotenv').load()
 
+const GitHub = require('github')
+const github = new GitHub({
+  debug: true,
+  headers: {'User-Agent': 'electron.atom.io'}
+})
+github.authenticate({
+  type: 'oauth',
+  token: process.env.GITHUB_AUTH_TOKEN
+})
 const slack = require('slack-notify')(process.env.SLACK_WEBHOOK)
-var input = ''
+var stackTrace = ''
 
 // Collect STDOUT and STDERR from release script
 process.stdin
   .setEncoding('utf8')
-  .on('readable', () => { input += String(process.stdin.read() || '') })
-  .on('end', send)
+  .on('readable', () => { stackTrace += String(process.stdin.read() || '') })
+  .on('end', createGist)
 
-function send () {
-  if (!input.match('npm ERR') && !input.match('Test failed')) {
+function createGist () {
+  if (!stackTrace.match('npm ERR') && !stackTrace.match('Test failed')) {
     return process.exit()
   }
 
+  github.gists.create({
+    files: {'error': {content: stackTrace}},
+    public: false,
+    description: 'An error message from the electron.atom.io deployment process'
+  }, function (err, gist) {
+    if (err) throw err
+    postToSlack(gist.data.html_url)
+  })
+}
+
+function postToSlack (gistUrl) {
   const opts = {
     icon_url: 'https://avatars0.githubusercontent.com/u/18403005?v=3',
     username: 'electron.atom.io',
-    text: input
+    text: `There was an error deploying the website: ${gistUrl}`
   }
 
   slack.send(opts, (err) => {

@@ -1,5 +1,5 @@
 ---
-version: v1.6.0
+version: v1.6.8
 permalink: /docs/tutorial/offscreen-rendering/
 category: Tutorial
 redirect_from:
@@ -9,9 +9,9 @@ redirect_from:
   - /docs/v0.37.5/tutorial/offscreen-rendering/
   - /docs/v0.37.4/tutorial/offscreen-rendering/
   - /docs/v0.37.3/tutorial/offscreen-rendering/
-  - /docs/v0.36.12/tutorial/offscreen-rendering/
   - /docs/v0.37.1/tutorial/offscreen-rendering/
   - /docs/v0.37.0/tutorial/offscreen-rendering/
+  - /docs/v0.36.12/tutorial/offscreen-rendering/
   - /docs/v0.36.11/tutorial/offscreen-rendering/
   - /docs/v0.36.10/tutorial/offscreen-rendering/
   - /docs/v0.36.9/tutorial/offscreen-rendering/
@@ -21,14 +21,14 @@ redirect_from:
   - /docs/v0.36.5/tutorial/offscreen-rendering/
   - /docs/v0.36.4/tutorial/offscreen-rendering/
   - /docs/v0.36.3/tutorial/offscreen-rendering/
-  - /docs/v0.35.5/tutorial/offscreen-rendering/
   - /docs/v0.36.2/tutorial/offscreen-rendering/
   - /docs/v0.36.0/tutorial/offscreen-rendering/
+  - /docs/v0.35.5/tutorial/offscreen-rendering/
   - /docs/v0.35.4/tutorial/offscreen-rendering/
   - /docs/v0.35.3/tutorial/offscreen-rendering/
   - /docs/v0.35.2/tutorial/offscreen-rendering/
-  - /docs/v0.34.4/tutorial/offscreen-rendering/
   - /docs/v0.35.1/tutorial/offscreen-rendering/
+  - /docs/v0.34.4/tutorial/offscreen-rendering/
   - /docs/v0.34.3/tutorial/offscreen-rendering/
   - /docs/v0.34.2/tutorial/offscreen-rendering/
   - /docs/v0.34.1/tutorial/offscreen-rendering/
@@ -88,6 +88,65 @@ title: Offscreen Rendering
 excerpt: ''
 sort_title: offscreen-rendering
 ---
+
+
+
+<!--
+
+
+                                      ::::
+                                    :o+//+o:
+                                    +o    oo-
+                                    :o+//oo/+o/
+                                      -::-   -oo:
+                                               /s/
+                      -::::::::-                :s/  :::--
+                  :+oo+////////+:        -:/+oo/ :s:-///++oo+:
+                /o+:                -/+oo+/:-     +o-      -:+o:
+               /s:              -:+o+/:           -o+         :s/
+              -s/            -/oo/:                /s-         +s-
+              -s/         -/oo/-                   -s/         /s-
+               oo       :+o/-                       oo         oo
+               -s/    :oo/                          /s-       /s-
+                :s/ :oo:              -::-          /s-      /s:
+                  -+o/               /ssss/         :s:    -+o-
+                 :o+--               /ssss/         :s:   :o+-
+                :s/  +o:              -::-          /s-   --
+               -s/    :+o/-                         /s-
+               oo       -+o+-                       oo
+              -s/         -/oo/-                   -s/
+             -+soo+:         -/oo/:                /s-      /oooo+-
+             o+   :s:           -:+o+/:-          -o+      /s:  -oo
+             oo:--/s:       ::      -:+oo+/:-     -/-      /s/--:o+
+              :+++/-        :s:          -:/+ooo++//////++oo//+o+:
+                             /s:                --::::::--
+                              /s/              /s-
+                               :oo:          :oo:
+                                 /oo/-    -/oo/
+                                   -/+oooo+/-
+
+
+
+
+
+                   _______  _______  _______  _______  __
+                  |       ||       ||       ||       ||  |
+                  |  _____||_     _||   _   ||    _  ||  |
+                  | |_____   |   |  |  | |  ||   |_| ||  |
+                  |_____  |  |   |  |  |_|  ||    ___||__|
+                   _____| |  |   |  |       ||   |     __
+                  |_______|  |___|  |_______||___|    |__|
+
+
+    This file is generated automatically, so it should not be edited.
+
+    To make changes, head over to the electron/electron repository:
+
+    https://github.com/electron/electron/blob/master/docs/tutorial/offscreen-rendering.md
+
+    Thanks!
+
+-->
 # Offscreen Rendering
 
 Offscreen rendering lets you obtain the content of a browser window in a bitmap, so it can be rendered anywhere, for example on a texture in a 3D scene. The offscreen rendering in Electron uses a similar approach than the [Chromium Embedded Framework](https://bitbucket.org/chromiumembedded/cef) project.

@@ -1,5 +1,5 @@
 ---
-version: v1.6.0
+version: v1.6.8
 permalink: /docs/tutorial/debugging-main-process/
 category: Tutorial
 redirect_from:
@@ -9,9 +9,9 @@ redirect_from:
   - /docs/v0.37.5/tutorial/debugging-main-process/
   - /docs/v0.37.4/tutorial/debugging-main-process/
   - /docs/v0.37.3/tutorial/debugging-main-process/
-  - /docs/v0.36.12/tutorial/debugging-main-process/
   - /docs/v0.37.1/tutorial/debugging-main-process/
   - /docs/v0.37.0/tutorial/debugging-main-process/
+  - /docs/v0.36.12/tutorial/debugging-main-process/
   - /docs/v0.36.11/tutorial/debugging-main-process/
   - /docs/v0.36.10/tutorial/debugging-main-process/
   - /docs/v0.36.9/tutorial/debugging-main-process/
@@ -21,14 +21,14 @@ redirect_from:
   - /docs/v0.36.5/tutorial/debugging-main-process/
   - /docs/v0.36.4/tutorial/debugging-main-process/
   - /docs/v0.36.3/tutorial/debugging-main-process/
-  - /docs/v0.35.5/tutorial/debugging-main-process/
   - /docs/v0.36.2/tutorial/debugging-main-process/
   - /docs/v0.36.0/tutorial/debugging-main-process/
+  - /docs/v0.35.5/tutorial/debugging-main-process/
   - /docs/v0.35.4/tutorial/debugging-main-process/
   - /docs/v0.35.3/tutorial/debugging-main-process/
   - /docs/v0.35.2/tutorial/debugging-main-process/
-  - /docs/v0.34.4/tutorial/debugging-main-process/
   - /docs/v0.35.1/tutorial/debugging-main-process/
+  - /docs/v0.34.4/tutorial/debugging-main-process/
   - /docs/v0.34.3/tutorial/debugging-main-process/
   - /docs/v0.34.2/tutorial/debugging-main-process/
   - /docs/v0.34.1/tutorial/debugging-main-process/
@@ -88,6 +88,65 @@ title: Debugging the Main Process
 excerpt: ''
 sort_title: debugging-main-process
 ---
+
+
+
+<!--
+
+
+                                      ::::
+                                    :o+//+o:
+                                    +o    oo-
+                                    :o+//oo/+o/
+                                      -::-   -oo:
+                                               /s/
+                      -::::::::-                :s/  :::--
+                  :+oo+////////+:        -:/+oo/ :s:-///++oo+:
+                /o+:                -/+oo+/:-     +o-      -:+o:
+               /s:              -:+o+/:           -o+         :s/
+              -s/            -/oo/:                /s-         +s-
+              -s/         -/oo/-                   -s/         /s-
+               oo       :+o/-                       oo         oo
+               -s/    :oo/                          /s-       /s-
+                :s/ :oo:              -::-          /s-      /s:
+                  -+o/               /ssss/         :s:    -+o-
+                 :o+--               /ssss/         :s:   :o+-
+                :s/  +o:              -::-          /s-   --
+               -s/    :+o/-                         /s-
+               oo       -+o+-                       oo
+              -s/         -/oo/-                   -s/
+             -+soo+:         -/oo/:                /s-      /oooo+-
+             o+   :s:           -:+o+/:-          -o+      /s:  -oo
+             oo:--/s:       ::      -:+oo+/:-     -/-      /s/--:o+
+              :+++/-        :s:          -:/+ooo++//////++oo//+o+:
+                             /s:                --::::::--
+                              /s/              /s-
+                               :oo:          :oo:
+                                 /oo/-    -/oo/
+                                   -/+oooo+/-
+
+
+
+
+
+                   _______  _______  _______  _______  __
+                  |       ||       ||       ||       ||  |
+                  |  _____||_     _||   _   ||    _  ||  |
+                  | |_____   |   |  |  | |  ||   |_| ||  |
+                  |_____  |  |   |  |  |_|  ||    ___||__|
+                   _____| |  |   |  |       ||   |     __
+                  |_______|  |___|  |_______||___|    |__|
+
+
+    This file is generated automatically, so it should not be edited.
+
+    To make changes, head over to the electron/electron repository:
+
+    https://github.com/electron/electron/blob/master/docs/tutorial/debugging-main-process.md
+
+    Thanks!
+
+-->
 # Debugging the Main Process
 
 The DevTools in an Electron browser window can only debug JavaScript that's executed in that window (i.e. the web pages). To debug JavaScript that's executed in the main process you will need to use an external debugger and launch Electron with the `--debug` or `--debug-brk` switch.

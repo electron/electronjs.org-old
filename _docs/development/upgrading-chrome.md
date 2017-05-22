@@ -1,5 +1,5 @@
 ---
-version: v1.6.0
+version: v1.6.8
 permalink: /docs/development/upgrading-chrome/
 category: Development
 redirect_from:
@@ -9,9 +9,9 @@ redirect_from:
   - /docs/v0.37.5/development/upgrading-chrome/
   - /docs/v0.37.4/development/upgrading-chrome/
   - /docs/v0.37.3/development/upgrading-chrome/
-  - /docs/v0.36.12/development/upgrading-chrome/
   - /docs/v0.37.1/development/upgrading-chrome/
   - /docs/v0.37.0/development/upgrading-chrome/
+  - /docs/v0.36.12/development/upgrading-chrome/
   - /docs/v0.36.11/development/upgrading-chrome/
   - /docs/v0.36.10/development/upgrading-chrome/
   - /docs/v0.36.9/development/upgrading-chrome/
@@ -21,14 +21,14 @@ redirect_from:
   - /docs/v0.36.5/development/upgrading-chrome/
   - /docs/v0.36.4/development/upgrading-chrome/
   - /docs/v0.36.3/development/upgrading-chrome/
-  - /docs/v0.35.5/development/upgrading-chrome/
   - /docs/v0.36.2/development/upgrading-chrome/
   - /docs/v0.36.0/development/upgrading-chrome/
+  - /docs/v0.35.5/development/upgrading-chrome/
   - /docs/v0.35.4/development/upgrading-chrome/
   - /docs/v0.35.3/development/upgrading-chrome/
   - /docs/v0.35.2/development/upgrading-chrome/
-  - /docs/v0.34.4/development/upgrading-chrome/
   - /docs/v0.35.1/development/upgrading-chrome/
+  - /docs/v0.34.4/development/upgrading-chrome/
   - /docs/v0.34.3/development/upgrading-chrome/
   - /docs/v0.34.2/development/upgrading-chrome/
   - /docs/v0.34.1/development/upgrading-chrome/
@@ -88,6 +88,65 @@ title: Upgrading Chrome Checklist
 excerpt: ''
 sort_title: upgrading-chrome
 ---
+
+
+
+<!--
+
+
+                                      ::::
+                                    :o+//+o:
+                                    +o    oo-
+                                    :o+//oo/+o/
+                                      -::-   -oo:
+                                               /s/
+                      -::::::::-                :s/  :::--
+                  :+oo+////////+:        -:/+oo/ :s:-///++oo+:
+                /o+:                -/+oo+/:-     +o-      -:+o:
+               /s:              -:+o+/:           -o+         :s/
+              -s/            -/oo/:                /s-         +s-
+              -s/         -/oo/-                   -s/         /s-
+               oo       :+o/-                       oo         oo
+               -s/    :oo/                          /s-       /s-
+                :s/ :oo:              -::-          /s-      /s:
+                  -+o/               /ssss/         :s:    -+o-
+                 :o+--               /ssss/         :s:   :o+-
+                :s/  +o:              -::-          /s-   --
+               -s/    :+o/-                         /s-
+               oo       -+o+-                       oo
+              -s/         -/oo/-                   -s/
+             -+soo+:         -/oo/:                /s-      /oooo+-
+             o+   :s:           -:+o+/:-          -o+      /s:  -oo
+             oo:--/s:       ::      -:+oo+/:-     -/-      /s/--:o+
+              :+++/-        :s:          -:/+ooo++//////++oo//+o+:
+                             /s:                --::::::--
+                              /s/              /s-
+                               :oo:          :oo:
+                                 /oo/-    -/oo/
+                                   -/+oooo+/-
+
+
+
+
+
+                   _______  _______  _______  _______  __
+                  |       ||       ||       ||       ||  |
+                  |  _____||_     _||   _   ||    _  ||  |
+                  | |_____   |   |  |  | |  ||   |_| ||  |
+                  |_____  |  |   |  |  |_|  ||    ___||__|
+                   _____| |  |   |  |       ||   |     __
+                  |_______|  |___|  |_______||___|    |__|
+
+
+    This file is generated automatically, so it should not be edited.
+
+    To make changes, head over to the electron/electron repository:
+
+    https://github.com/electron/electron/blob/master/docs/development/upgrading-chrome.md
+
+    Thanks!
+
+-->
 # Upgrading Chrome Checklist
 
 This document is meant to serve as an overview of what steps are needed on each Chrome upgrade in Electron.
@@ -127,6 +186,40 @@ These are things to do in addition to updating the Electron code for any Chrome/
     *   32-bit Linux
     *   64-bit Linux
     *   ARM Linux
+
+## Verify ffmpeg Support
+
+Electron ships with a version of `ffmpeg` that includes proprietary codecs by default. A version without these codecs is built and distributed with each release as well. Each Chrome upgrade should verify that switching this version is still supported.
+
+You can verify Electron's support for multiple `ffmpeg` builds by loading the following page. It should work with the default `ffmpeg` library distributed with Electron and not work with the `ffmpeg` library built without proprietary codecs.
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Proprietary Codec Check</title>
+  </head>
+  <body>
+    <p>Checking if Electron is using proprietary codecs by loading video from http://www.quirksmode.org/html5/videos/big_buck_bunny.mp4</p>
+    <p id="outcome"></p>
+    <video style="display:none" src="http://www.quirksmode.org/html5/videos/big_buck_bunny.mp4" autoplay></video>
+    <script>
+      const video = document.querySelector('video')
+      video.addEventListener('error', ({target}) => {
+        if (target.error.code === target.error.MEDIA_ERR_SRC_NOT_SUPPORTED) {
+          document.querySelector('#outcome').textContent = 'Not using proprietary codecs, video emitted source not supported error event.'
+        } else {
+          document.querySelector('#outcome').textContent = `Unexpected error: ${target.error.code}`
+        }
+      })
+      video.addEventListener('playing', () => {
+        document.querySelector('#outcome').textContent = 'Using proprietary codecs, video started playing.'
+      })
+    </script>
+  </body>
+</html>
+```
 
 ## Links
 

@@ -1,5 +1,5 @@
 ---
-version: v1.6.0
+version: v1.6.8
 permalink: /docs/development/build-instructions-windows/
 category: Development
 redirect_from:
@@ -9,9 +9,9 @@ redirect_from:
   - /docs/v0.37.5/development/build-instructions-windows/
   - /docs/v0.37.4/development/build-instructions-windows/
   - /docs/v0.37.3/development/build-instructions-windows/
-  - /docs/v0.36.12/development/build-instructions-windows/
   - /docs/v0.37.1/development/build-instructions-windows/
   - /docs/v0.37.0/development/build-instructions-windows/
+  - /docs/v0.36.12/development/build-instructions-windows/
   - /docs/v0.36.11/development/build-instructions-windows/
   - /docs/v0.36.10/development/build-instructions-windows/
   - /docs/v0.36.9/development/build-instructions-windows/
@@ -21,14 +21,14 @@ redirect_from:
   - /docs/v0.36.5/development/build-instructions-windows/
   - /docs/v0.36.4/development/build-instructions-windows/
   - /docs/v0.36.3/development/build-instructions-windows/
-  - /docs/v0.35.5/development/build-instructions-windows/
   - /docs/v0.36.2/development/build-instructions-windows/
   - /docs/v0.36.0/development/build-instructions-windows/
+  - /docs/v0.35.5/development/build-instructions-windows/
   - /docs/v0.35.4/development/build-instructions-windows/
   - /docs/v0.35.3/development/build-instructions-windows/
   - /docs/v0.35.2/development/build-instructions-windows/
-  - /docs/v0.34.4/development/build-instructions-windows/
   - /docs/v0.35.1/development/build-instructions-windows/
+  - /docs/v0.34.4/development/build-instructions-windows/
   - /docs/v0.34.3/development/build-instructions-windows/
   - /docs/v0.34.2/development/build-instructions-windows/
   - /docs/v0.34.1/development/build-instructions-windows/
@@ -88,6 +88,65 @@ title: Build Instructions (Windows)
 excerpt: ''
 sort_title: build-instructions-windows
 ---
+
+
+
+<!--
+
+
+                                      ::::
+                                    :o+//+o:
+                                    +o    oo-
+                                    :o+//oo/+o/
+                                      -::-   -oo:
+                                               /s/
+                      -::::::::-                :s/  :::--
+                  :+oo+////////+:        -:/+oo/ :s:-///++oo+:
+                /o+:                -/+oo+/:-     +o-      -:+o:
+               /s:              -:+o+/:           -o+         :s/
+              -s/            -/oo/:                /s-         +s-
+              -s/         -/oo/-                   -s/         /s-
+               oo       :+o/-                       oo         oo
+               -s/    :oo/                          /s-       /s-
+                :s/ :oo:              -::-          /s-      /s:
+                  -+o/               /ssss/         :s:    -+o-
+                 :o+--               /ssss/         :s:   :o+-
+                :s/  +o:              -::-          /s-   --
+               -s/    :+o/-                         /s-
+               oo       -+o+-                       oo
+              -s/         -/oo/-                   -s/
+             -+soo+:         -/oo/:                /s-      /oooo+-
+             o+   :s:           -:+o+/:-          -o+      /s:  -oo
+             oo:--/s:       ::      -:+oo+/:-     -/-      /s/--:o+
+              :+++/-        :s:          -:/+ooo++//////++oo//+o+:
+                             /s:                --::::::--
+                              /s/              /s-
+                               :oo:          :oo:
+                                 /oo/-    -/oo/
+                                   -/+oooo+/-
+
+
+
+
+
+                   _______  _______  _______  _______  __
+                  |       ||       ||       ||       ||  |
+                  |  _____||_     _||   _   ||    _  ||  |
+                  | |_____   |   |  |  | |  ||   |_| ||  |
+                  |_____  |  |   |  |  |_|  ||    ___||__|
+                   _____| |  |   |  |       ||   |     __
+                  |_______|  |___|  |_______||___|    |__|
+
+
+    This file is generated automatically, so it should not be edited.
+
+    To make changes, head over to the electron/electron repository:
+
+    https://github.com/electron/electron/blob/master/docs/development/build-instructions-windows.md
+
+    Thanks!
+
+-->
 # Build Instructions (Windows)
 
 Follow the guidelines below for building Electron on Windows.
@@ -95,18 +154,17 @@ Follow the guidelines below for building Electron on Windows.
 ## Prerequisites
 
 *   Windows 7 / Server 2008 R2 or higher
-*   Visual Studio 2015 - [download VS 2015 Community Edition for free](https://www.visualstudio.com/en-us/products/visual-studio-community-vs.aspx)
+*   Visual Studio 2015 Update 3 - [download VS 2015 Community Edition for free](https://www.visualstudio.com/en-us/products/visual-studio-community-vs.aspx)
 *   [Python 2.7](http://www.python.org/download/releases/2.7/)
 *   [Node.js](http://nodejs.org/download/)
 *   [Git](http://git-scm.com)
+*   [Debugging Tools for Windows](https://msdn.microsoft.com/en-us/library/windows/hardware/ff551063.aspx) if you plan on creating a full distribution since `symstore.exe` is used for creating a symbol store from `.pdb` files.
 
 If you don't currently have a Windows installation, [dev.microsoftedge.com](https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/) has timebombed versions of Windows that you can use to build Electron.
 
 Building Electron is done entirely with command-line scripts and cannot be done with Visual Studio. You can develop Electron with any editor but support for building with Visual Studio will come in the future.
 
 **Note:** Even though Visual Studio is not used for building, it's still **required** because we need the build toolchains it provides.
-
-**Note:** While older versions of Electron required Visual Studio 2013, Electron 1.1 and later does require Visual Studio 2015.
 
 ## Getting the Code
 
@@ -164,6 +222,14 @@ To clean the build files:
 ```powershell
 $ npm run clean
 ```
+
+To clean only `out` and `dist` directories:
+
+```bash
+$ npm run clean-build
+```
+
+**Note:** Both clean commands require running `bootstrap` again before building.
 
 ## Tests
 

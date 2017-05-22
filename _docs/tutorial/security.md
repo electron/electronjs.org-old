@@ -1,5 +1,5 @@
 ---
-version: v1.6.0
+version: v1.6.8
 permalink: /docs/tutorial/security/
 category: Tutorial
 redirect_from:
@@ -9,9 +9,9 @@ redirect_from:
   - /docs/v0.37.5/tutorial/security/
   - /docs/v0.37.4/tutorial/security/
   - /docs/v0.37.3/tutorial/security/
-  - /docs/v0.36.12/tutorial/security/
   - /docs/v0.37.1/tutorial/security/
   - /docs/v0.37.0/tutorial/security/
+  - /docs/v0.36.12/tutorial/security/
   - /docs/v0.36.11/tutorial/security/
   - /docs/v0.36.10/tutorial/security/
   - /docs/v0.36.9/tutorial/security/
@@ -21,14 +21,14 @@ redirect_from:
   - /docs/v0.36.5/tutorial/security/
   - /docs/v0.36.4/tutorial/security/
   - /docs/v0.36.3/tutorial/security/
-  - /docs/v0.35.5/tutorial/security/
   - /docs/v0.36.2/tutorial/security/
   - /docs/v0.36.0/tutorial/security/
+  - /docs/v0.35.5/tutorial/security/
   - /docs/v0.35.4/tutorial/security/
   - /docs/v0.35.3/tutorial/security/
   - /docs/v0.35.2/tutorial/security/
-  - /docs/v0.34.4/tutorial/security/
   - /docs/v0.35.1/tutorial/security/
+  - /docs/v0.34.4/tutorial/security/
   - /docs/v0.34.3/tutorial/security/
   - /docs/v0.34.2/tutorial/security/
   - /docs/v0.34.1/tutorial/security/
@@ -91,6 +91,65 @@ excerpt: |-
       <code>webview</code> tag and make sure to disable the <code>nodeIntegration</code>.
 sort_title: security
 ---
+
+
+
+<!--
+
+
+                                      ::::
+                                    :o+//+o:
+                                    +o    oo-
+                                    :o+//oo/+o/
+                                      -::-   -oo:
+                                               /s/
+                      -::::::::-                :s/  :::--
+                  :+oo+////////+:        -:/+oo/ :s:-///++oo+:
+                /o+:                -/+oo+/:-     +o-      -:+o:
+               /s:              -:+o+/:           -o+         :s/
+              -s/            -/oo/:                /s-         +s-
+              -s/         -/oo/-                   -s/         /s-
+               oo       :+o/-                       oo         oo
+               -s/    :oo/                          /s-       /s-
+                :s/ :oo:              -::-          /s-      /s:
+                  -+o/               /ssss/         :s:    -+o-
+                 :o+--               /ssss/         :s:   :o+-
+                :s/  +o:              -::-          /s-   --
+               -s/    :+o/-                         /s-
+               oo       -+o+-                       oo
+              -s/         -/oo/-                   -s/
+             -+soo+:         -/oo/:                /s-      /oooo+-
+             o+   :s:           -:+o+/:-          -o+      /s:  -oo
+             oo:--/s:       ::      -:+oo+/:-     -/-      /s/--:o+
+              :+++/-        :s:          -:/+ooo++//////++oo//+o+:
+                             /s:                --::::::--
+                              /s/              /s-
+                               :oo:          :oo:
+                                 /oo/-    -/oo/
+                                   -/+oooo+/-
+
+
+
+
+
+                   _______  _______  _______  _______  __
+                  |       ||       ||       ||       ||  |
+                  |  _____||_     _||   _   ||    _  ||  |
+                  | |_____   |   |  |  | |  ||   |_| ||  |
+                  |_____  |  |   |  |  |_|  ||    ___||__|
+                   _____| |  |   |  |       ||   |     __
+                  |_______|  |___|  |_______||___|    |__|
+
+
+    This file is generated automatically, so it should not be edited.
+
+    To make changes, head over to the electron/electron repository:
+
+    https://github.com/electron/electron/blob/master/docs/tutorial/security.md
+
+    Thanks!
+
+-->
 # Security, Native Capabilities, and Your Responsibility
 
 As web developers, we usually enjoy the strong security net of the browser - the risks associated with the code we write are relatively small. Our websites are granted limited powers in a sandbox, and we trust that our users enjoy a browser built by a large team of engineers that is able to quickly respond to newly discovered security threats.
@@ -98,6 +157,10 @@ As web developers, we usually enjoy the strong security net of the browser - the
 When working with Electron, it is important to understand that Electron is not a web browser. It allows you to build feature-rich desktop applications with familiar web technologies, but your code wields much greater power. JavaScript can access the filesystem, user shell, and more. This allows you to build high quality native applications, but the inherent security risks scale with the additional powers granted to your code.
 
 With that in mind, be aware that displaying arbitrary content from untrusted sources poses a severe security risk that Electron is not intended to handle. In fact, the most popular Electron apps (Atom, Slack, Visual Studio Code, etc) display primarily local content (or trusted, secure remote content without Node integration) – if your application executes code from an online source, it is your responsibility to ensure that the code is not malicious.
+
+## Reporting Security Issues
+
+For information on how to properly disclose an Electron vulnerability, see [SECURITY.md](https://github.com/electron/electron/tree/master/SECURITY.md)
 
 ## Chromium Security Issues and Upgrades
 
@@ -117,11 +180,11 @@ This is not bulletproof, but at the least, you should attempt the following:
 
 *   Only display secure (https) content
 *   Disable the Node integration in all renderers that display remote content (setting `nodeIntegration` to `false` in `webPreferences`)
-*   Enable context isolation in all rendererers that display remote content (setting `contextIsolation` to `true` in `webPreferences`)
+*   Enable context isolation in all renderers that display remote content (setting `contextIsolation` to `true` in `webPreferences`)
+*   Use `ses.setPermissionRequestHandler()` in all sessions that load remote content
 *   Do not disable `webSecurity`. Disabling it will disable the same-origin policy.
 *   Define a [`Content-Security-Policy`](http://www.html5rocks.com/en/tutorials/security/content-security-policy/) , and use restrictive rules (i.e. `script-src 'self'`)
 *   [Override and disable `eval`](https://github.com/nylas/N1/blob/0abc5d5defcdb057120d726b271933425b75b415/static/index.js#L6-L8) , which allows strings to be executed as code.
-*   Do not set `allowDisplayingInsecureContent` to true.
 *   Do not set `allowRunningInsecureContent` to true.
 *   Do not enable `experimentalFeatures` or `experimentalCanvasFeatures` unless you know what you're doing.
 *   Do not use `blinkFeatures` unless you know what you're doing.
@@ -131,19 +194,3 @@ This is not bulletproof, but at the least, you should attempt the following:
 *   WebViews: Do not use `insertCSS` or `executeJavaScript` with remote CSS/JS.
 
 Again, this list merely minimizes the risk, it does not remove it. If your goal is to display a website, a browser will be a more secure option.
-
-## Buffer Global
-
-Node's [Buffer](https://nodejs.org/api/buffer.html) class is currently available as a global even when the `nodeintegration` attribute is not added. You can delete this in your app by doing the following in your `preload` script:
-
-```js
-delete global.Buffer
-```
-
-Deleting it may break Node modules used in your preload script and app since many libraries expect it to be a global instead of requiring it directly via:
-
-```js
-const {Buffer} = require('buffer')
-```
-
-The `Buffer` global may be removed in future major versions of Electron.

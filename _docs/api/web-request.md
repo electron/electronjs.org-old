@@ -1,5 +1,5 @@
 ---
-version: v1.6.0
+version: v1.6.8
 permalink: /docs/api/web-request/
 category: API
 redirect_from:
@@ -9,9 +9,9 @@ redirect_from:
   - /docs/v0.37.5/api/web-request/
   - /docs/v0.37.4/api/web-request/
   - /docs/v0.37.3/api/web-request/
-  - /docs/v0.36.12/api/web-request/
   - /docs/v0.37.1/api/web-request/
   - /docs/v0.37.0/api/web-request/
+  - /docs/v0.36.12/api/web-request/
   - /docs/v0.36.11/api/web-request/
   - /docs/v0.36.10/api/web-request/
   - /docs/v0.36.9/api/web-request/
@@ -21,14 +21,14 @@ redirect_from:
   - /docs/v0.36.5/api/web-request/
   - /docs/v0.36.4/api/web-request/
   - /docs/v0.36.3/api/web-request/
-  - /docs/v0.35.5/api/web-request/
   - /docs/v0.36.2/api/web-request/
   - /docs/v0.36.0/api/web-request/
+  - /docs/v0.35.5/api/web-request/
   - /docs/v0.35.4/api/web-request/
   - /docs/v0.35.3/api/web-request/
   - /docs/v0.35.2/api/web-request/
-  - /docs/v0.34.4/api/web-request/
   - /docs/v0.35.1/api/web-request/
+  - /docs/v0.34.4/api/web-request/
   - /docs/v0.34.3/api/web-request/
   - /docs/v0.34.2/api/web-request/
   - /docs/v0.34.1/api/web-request/
@@ -89,6 +89,65 @@ excerpt: >-
   lifetime.
 sort_title: web-request
 ---
+
+
+
+<!--
+
+
+                                      ::::
+                                    :o+//+o:
+                                    +o    oo-
+                                    :o+//oo/+o/
+                                      -::-   -oo:
+                                               /s/
+                      -::::::::-                :s/  :::--
+                  :+oo+////////+:        -:/+oo/ :s:-///++oo+:
+                /o+:                -/+oo+/:-     +o-      -:+o:
+               /s:              -:+o+/:           -o+         :s/
+              -s/            -/oo/:                /s-         +s-
+              -s/         -/oo/-                   -s/         /s-
+               oo       :+o/-                       oo         oo
+               -s/    :oo/                          /s-       /s-
+                :s/ :oo:              -::-          /s-      /s:
+                  -+o/               /ssss/         :s:    -+o-
+                 :o+--               /ssss/         :s:   :o+-
+                :s/  +o:              -::-          /s-   --
+               -s/    :+o/-                         /s-
+               oo       -+o+-                       oo
+              -s/         -/oo/-                   -s/
+             -+soo+:         -/oo/:                /s-      /oooo+-
+             o+   :s:           -:+o+/:-          -o+      /s:  -oo
+             oo:--/s:       ::      -:+oo+/:-     -/-      /s/--:o+
+              :+++/-        :s:          -:/+ooo++//////++oo//+o+:
+                             /s:                --::::::--
+                              /s/              /s-
+                               :oo:          :oo:
+                                 /oo/-    -/oo/
+                                   -/+oooo+/-
+
+
+
+
+
+                   _______  _______  _______  _______  __
+                  |       ||       ||       ||       ||  |
+                  |  _____||_     _||   _   ||    _  ||  |
+                  | |_____   |   |  |  | |  ||   |_| ||  |
+                  |_____  |  |   |  |  |_|  ||    ___||__|
+                   _____| |  |   |  |       ||   |     __
+                  |_______|  |___|  |_______||___|    |__|
+
+
+    This file is generated automatically, so it should not be edited.
+
+    To make changes, head over to the electron/electron repository:
+
+    https://github.com/electron/electron/blob/master/docs/api/web-request.md
+
+    Thanks!
+
+-->
 ## Class: WebRequest
 
 > Intercept and modify the contents of a request at various stages of its lifetime.
@@ -126,6 +185,7 @@ The following methods are available on instances of `WebRequest`:
 #### `webRequest.onBeforeRequest([filter, ]listener)`
 
 *   `filter` Object
+    *   `urls` String[] - Array of URL patterns that will be used to filter out the requests that do not match the URL patterns.
 *   `listener` Function
     *   `details` Object
         *   `id` Integer
@@ -148,6 +208,7 @@ The `callback` has to be called with an `response` object.
 #### `webRequest.onBeforeSendHeaders([filter, ]listener)`
 
 *   `filter` Object
+    *   `urls` String[] - Array of URL patterns that will be used to filter out the requests that do not match the URL patterns.
 *   `listener` Function
 
 The `listener` will be called with `listener(details, callback)` before sending an HTTP request, once the request headers are available. This may occur after a TCP connection is made to the server, but before any http data is sent.
@@ -169,6 +230,7 @@ The `callback` has to be called with an `response` object.
 #### `webRequest.onSendHeaders([filter, ]listener)`
 
 *   `filter` Object
+    *   `urls` String[] - Array of URL patterns that will be used to filter out the requests that do not match the URL patterns.
 *   `listener` Function
     *   `details` Object
         *   `id` Integer
@@ -183,6 +245,7 @@ The `listener` will be called with `listener(details)` just before a request is 
 #### `webRequest.onHeadersReceived([filter, ]listener)`
 
 *   `filter` Object
+    *   `urls` String[] - Array of URL patterns that will be used to filter out the requests that do not match the URL patterns.
 *   `listener` Function
 
 The `listener` will be called with `listener(details, callback)` when HTTP response headers of a request have been received.
@@ -207,6 +270,7 @@ The `callback` has to be called with an `response` object.
 #### `webRequest.onResponseStarted([filter, ]listener)`
 
 *   `filter` Object
+    *   `urls` String[] - Array of URL patterns that will be used to filter out the requests that do not match the URL patterns.
 *   `listener` Function
     *   `details` Object
         *   `id` Integer
@@ -224,6 +288,7 @@ The `listener` will be called with `listener(details)` when first byte of the re
 #### `webRequest.onBeforeRedirect([filter, ]listener)`
 
 *   `filter` Object
+    *   `urls` String[] - Array of URL patterns that will be used to filter out the requests that do not match the URL patterns.
 *   `listener` Function
     *   `details` Object
         *   `id` String
@@ -242,6 +307,7 @@ The `listener` will be called with `listener(details)` when a server initiated r
 #### `webRequest.onCompleted([filter, ]listener)`
 
 *   `filter` Object
+    *   `urls` String[] - Array of URL patterns that will be used to filter out the requests that do not match the URL patterns.
 *   `listener` Function
     *   `details` Object
         *   `id` Integer
@@ -259,6 +325,7 @@ The `listener` will be called with `listener(details)` when a request is complet
 #### `webRequest.onErrorOccurred([filter, ]listener)`
 
 *   `filter` Object
+    *   `urls` String[] - Array of URL patterns that will be used to filter out the requests that do not match the URL patterns.
 *   `listener` Function
     *   `details` Object
         *   `id` Integer

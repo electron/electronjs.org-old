@@ -1,5 +1,5 @@
 ---
-version: v1.6.0
+version: v1.6.8
 permalink: /docs/api/web-frame/
 category: API
 redirect_from:
@@ -9,9 +9,9 @@ redirect_from:
   - /docs/v0.37.5/api/web-frame/
   - /docs/v0.37.4/api/web-frame/
   - /docs/v0.37.3/api/web-frame/
-  - /docs/v0.36.12/api/web-frame/
   - /docs/v0.37.1/api/web-frame/
   - /docs/v0.37.0/api/web-frame/
+  - /docs/v0.36.12/api/web-frame/
   - /docs/v0.36.11/api/web-frame/
   - /docs/v0.36.10/api/web-frame/
   - /docs/v0.36.9/api/web-frame/
@@ -21,14 +21,14 @@ redirect_from:
   - /docs/v0.36.5/api/web-frame/
   - /docs/v0.36.4/api/web-frame/
   - /docs/v0.36.3/api/web-frame/
-  - /docs/v0.35.5/api/web-frame/
   - /docs/v0.36.2/api/web-frame/
   - /docs/v0.36.0/api/web-frame/
+  - /docs/v0.35.5/api/web-frame/
   - /docs/v0.35.4/api/web-frame/
   - /docs/v0.35.3/api/web-frame/
   - /docs/v0.35.2/api/web-frame/
-  - /docs/v0.34.4/api/web-frame/
   - /docs/v0.35.1/api/web-frame/
+  - /docs/v0.34.4/api/web-frame/
   - /docs/v0.34.3/api/web-frame/
   - /docs/v0.34.2/api/web-frame/
   - /docs/v0.34.1/api/web-frame/
@@ -87,6 +87,65 @@ title: webFrame
 excerpt: Customize the rendering of the current web page.
 sort_title: web-frame
 ---
+
+
+
+<!--
+
+
+                                      ::::
+                                    :o+//+o:
+                                    +o    oo-
+                                    :o+//oo/+o/
+                                      -::-   -oo:
+                                               /s/
+                      -::::::::-                :s/  :::--
+                  :+oo+////////+:        -:/+oo/ :s:-///++oo+:
+                /o+:                -/+oo+/:-     +o-      -:+o:
+               /s:              -:+o+/:           -o+         :s/
+              -s/            -/oo/:                /s-         +s-
+              -s/         -/oo/-                   -s/         /s-
+               oo       :+o/-                       oo         oo
+               -s/    :oo/                          /s-       /s-
+                :s/ :oo:              -::-          /s-      /s:
+                  -+o/               /ssss/         :s:    -+o-
+                 :o+--               /ssss/         :s:   :o+-
+                :s/  +o:              -::-          /s-   --
+               -s/    :+o/-                         /s-
+               oo       -+o+-                       oo
+              -s/         -/oo/-                   -s/
+             -+soo+:         -/oo/:                /s-      /oooo+-
+             o+   :s:           -:+o+/:-          -o+      /s:  -oo
+             oo:--/s:       ::      -:+oo+/:-     -/-      /s/--:o+
+              :+++/-        :s:          -:/+ooo++//////++oo//+o+:
+                             /s:                --::::::--
+                              /s/              /s-
+                               :oo:          :oo:
+                                 /oo/-    -/oo/
+                                   -/+oooo+/-
+
+
+
+
+
+                   _______  _______  _______  _______  __
+                  |       ||       ||       ||       ||  |
+                  |  _____||_     _||   _   ||    _  ||  |
+                  | |_____   |   |  |  | |  ||   |_| ||  |
+                  |_____  |  |   |  |  |_|  ||    ___||__|
+                   _____| |  |   |  |       ||   |     __
+                  |_______|  |___|  |_______||___|    |__|
+
+
+    This file is generated automatically, so it should not be edited.
+
+    To make changes, head over to the electron/electron repository:
+
+    https://github.com/electron/electron/blob/master/docs/api/web-frame.md
+
+    Thanks!
+
+-->
 # webFrame
 
 > Customize the rendering of the current web page.
@@ -215,6 +274,8 @@ Inserts `text` to the focused element.
 *   `callback` Function (optional) - Called after script has been executed.
     *   `result` Any
 
+Returns `Promise` - A promise that resolves with the result of the executed code or is rejected if the result of the code is a rejected promise.
+
 Evaluates `code` in page.
 
 In the browser window some HTML APIs like `requestFullScreen` can only be invoked by a gesture from the user. Setting `userGesture` to `true` will remove this limitation.
@@ -243,10 +304,7 @@ This will generate:
   images: {
     count: 22,
     size: 2549,
-    liveSize: 2542,
-    decodedSize: 478,
-    purgedSize: 0,
-    purgeableSize: 0
+    liveSize: 2542
   },
   cssStyleSheets: { /* same with "images" */ },
   xslStyleSheets: { /* same with "images" */ },

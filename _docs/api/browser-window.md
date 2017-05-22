@@ -1,5 +1,5 @@
 ---
-version: v1.6.0
+version: v1.6.8
 permalink: /docs/api/browser-window/
 category: API
 redirect_from:
@@ -9,9 +9,9 @@ redirect_from:
   - /docs/v0.37.5/api/browser-window/
   - /docs/v0.37.4/api/browser-window/
   - /docs/v0.37.3/api/browser-window/
-  - /docs/v0.36.12/api/browser-window/
   - /docs/v0.37.1/api/browser-window/
   - /docs/v0.37.0/api/browser-window/
+  - /docs/v0.36.12/api/browser-window/
   - /docs/v0.36.11/api/browser-window/
   - /docs/v0.36.10/api/browser-window/
   - /docs/v0.36.9/api/browser-window/
@@ -21,14 +21,14 @@ redirect_from:
   - /docs/v0.36.5/api/browser-window/
   - /docs/v0.36.4/api/browser-window/
   - /docs/v0.36.3/api/browser-window/
-  - /docs/v0.35.5/api/browser-window/
   - /docs/v0.36.2/api/browser-window/
   - /docs/v0.36.0/api/browser-window/
+  - /docs/v0.35.5/api/browser-window/
   - /docs/v0.35.4/api/browser-window/
   - /docs/v0.35.3/api/browser-window/
   - /docs/v0.35.2/api/browser-window/
-  - /docs/v0.34.4/api/browser-window/
   - /docs/v0.35.1/api/browser-window/
+  - /docs/v0.34.4/api/browser-window/
   - /docs/v0.34.3/api/browser-window/
   - /docs/v0.34.2/api/browser-window/
   - /docs/v0.34.1/api/browser-window/
@@ -87,6 +87,65 @@ title: BrowserWindow
 excerpt: Create and control browser windows.
 sort_title: browser-window
 ---
+
+
+
+<!--
+
+
+                                      ::::
+                                    :o+//+o:
+                                    +o    oo-
+                                    :o+//oo/+o/
+                                      -::-   -oo:
+                                               /s/
+                      -::::::::-                :s/  :::--
+                  :+oo+////////+:        -:/+oo/ :s:-///++oo+:
+                /o+:                -/+oo+/:-     +o-      -:+o:
+               /s:              -:+o+/:           -o+         :s/
+              -s/            -/oo/:                /s-         +s-
+              -s/         -/oo/-                   -s/         /s-
+               oo       :+o/-                       oo         oo
+               -s/    :oo/                          /s-       /s-
+                :s/ :oo:              -::-          /s-      /s:
+                  -+o/               /ssss/         :s:    -+o-
+                 :o+--               /ssss/         :s:   :o+-
+                :s/  +o:              -::-          /s-   --
+               -s/    :+o/-                         /s-
+               oo       -+o+-                       oo
+              -s/         -/oo/-                   -s/
+             -+soo+:         -/oo/:                /s-      /oooo+-
+             o+   :s:           -:+o+/:-          -o+      /s:  -oo
+             oo:--/s:       ::      -:+oo+/:-     -/-      /s/--:o+
+              :+++/-        :s:          -:/+ooo++//////++oo//+o+:
+                             /s:                --::::::--
+                              /s/              /s-
+                               :oo:          :oo:
+                                 /oo/-    -/oo/
+                                   -/+oooo+/-
+
+
+
+
+
+                   _______  _______  _______  _______  __
+                  |       ||       ||       ||       ||  |
+                  |  _____||_     _||   _   ||    _  ||  |
+                  | |_____   |   |  |  | |  ||   |_| ||  |
+                  |_____  |  |   |  |  |_|  ||    ___||__|
+                   _____| |  |   |  |       ||   |     __
+                  |_______|  |___|  |_______||___|    |__|
+
+
+    This file is generated automatically, so it should not be edited.
+
+    To make changes, head over to the electron/electron repository:
+
+    https://github.com/electron/electron/blob/master/docs/api/browser-window.md
+
+    Thanks!
+
+-->
 # BrowserWindow
 
 > Create and control browser windows.
@@ -122,7 +181,7 @@ When loading a page in the window directly, users may see the page load incremen
 
 ### Using `ready-to-show` event
 
-While loading the page, the `ready-to-show` event will be emitted when renderer process has done drawing for the first time, showing window after this event will have no visual flash:
+While loading the page, the `ready-to-show` event will be emitted when the renderer process has rendered the page for the first time if the window has not been shown yet. Showing the window after this event will have no visual flash:
 
 ```javascript
 const {BrowserWindow} = require('electron')
@@ -132,7 +191,7 @@ win.once('ready-to-show', () => {
 })
 ```
 
-This is event is usually emitted after the `did-finish-load` event, but for pages with many remote resources, it may be emitted before the `did-finish-load` event.
+This event is usually emitted after the `did-finish-load` event, but for pages with many remote resources, it may be emitted before the `did-finish-load` event.
 
 ### Setting `backgroundColor`
 
@@ -240,16 +299,18 @@ It creates a new `BrowserWindow` with native properties as set by the `options`.
     *   `thickFrame` Boolean (optional) - Use `WS_THICKFRAME` style for frameless windows on Windows, which adds standard window frame. Setting it to `false` will remove window shadow and window animations. Default is `true`.
     *   `vibrancy` String (optional) - Add a type of vibrancy effect to the window, only on macOS. Can be `appearance-based`, `light`, `dark`, `titlebar`, `selection`, `menu`, `popover`, `sidebar`, `medium-light` or `ultra-dark`.
     *   `zoomToPageWidth` Boolean (optional) - Controls the behavior on macOS when option-clicking the green stoplight button on the toolbar or by clicking the Window > Zoom menu item. If `true`, the window will grow to the preferred width of the web page when zoomed, `false` will cause it to zoom to the width of the screen. This will also affect the behavior when calling `maximize()` directly. Default is `false`.
+    *   `tabbingIdentifier` String (optional) - Tab group name, allows opening the window as a native tab on macOS 10.12+. Windows with the same tabbing identifier will be grouped together.
     *   `webPreferences` Object (optional) - Settings of web page's features.
         *   `devTools` Boolean (optional) - Whether to enable DevTools. If it is set to `false`, can not use `BrowserWindow.webContents.openDevTools()` to open DevTools. Default is `true`.
         *   `nodeIntegration` Boolean (optional) - Whether node integration is enabled. Default is `true`.
+        *   `nodeIntegrationInWorker` Boolean (optional) - Whether node integration is enabled in web workers. Default is `false`. More about this can be found in [Multithreading]({{site.baseurl}}/docs/tutorial/multithreading).
         *   `preload` String (optional) - Specifies a script that will be loaded before other scripts run in the page. This script will always have access to node APIs no matter whether node integration is turned on or off. The value should be the absolute file path to the script. When node integration is turned off, the preload script can reintroduce Node global symbols back to the global scope. See example [here]({{site.baseurl}}/docs/api/process#event-loaded).
+        *   `sandbox` Boolean (optional) - If set, this will sandbox the renderer associated with the window, making it compatible with the Chromium OS-level sandbox and disabling the Node.js engine. This is not the same as the `nodeIntegration` option and the APIs available to the preload script are more limited. Read more about the option [here]({{site.baseurl}}/docs/api/sandbox-option). **Note:** This option is currently experimental and may change or be removed in future Electron releases.
         *   `session` [Session]({{site.baseurl}}/docs/api/session#class-session) (optional) - Sets the session used by the page. Instead of passing the Session object directly, you can also choose to use the `partition` option instead, which accepts a partition string. When both `session` and `partition` are provided, `session` will be preferred. Default is the default session.
         *   `partition` String (optional) - Sets the session used by the page according to the session's partition string. If `partition` starts with `persist:`, the page will use a persistent session available to all pages in the app with the same `partition`. If there is no `persist:` prefix, the page will use an in-memory session. By assigning the same `partition`, multiple pages can share the same session. Default is the default session.
         *   `zoomFactor` Number (optional) - The default zoom factor of the page, `3.0` represents `300%`. Default is `1.0`.
         *   `javascript` Boolean (optional) - Enables JavaScript support. Default is `true`.
-        *   `webSecurity` Boolean (optional) - When `false`, it will disable the same-origin policy (usually using testing websites by people), and set `allowDisplayingInsecureContent` and `allowRunningInsecureContent` to `true` if these two options are not set by user. Default is `true`.
-        *   `allowDisplayingInsecureContent` Boolean (optional) - Allow an https page to display content like images from http URLs. Default is `false`.
+        *   `webSecurity` Boolean (optional) - When `false`, it will disable the same-origin policy (usually using testing websites by people), and set `allowRunningInsecureContent` to `true` if this options has not been set by user. Default is `true`.
         *   `allowRunningInsecureContent` Boolean (optional) - Allow an https page to run JavaScript, CSS or plugins from http URLs. Default is `false`.
         *   `images` Boolean (optional) - Enables image support. Default is `true`.
         *   `textAreasAreResizable` Boolean (optional) - Make TextArea elements resizable. Default is `true`.
@@ -259,8 +320,8 @@ It creates a new `BrowserWindow` with native properties as set by the `options`.
         *   `experimentalFeatures` Boolean (optional) - Enables Chromium's experimental features. Default is `false`.
         *   `experimentalCanvasFeatures` Boolean (optional) - Enables Chromium's experimental canvas features. Default is `false`.
         *   `scrollBounce` Boolean (optional) - Enables scroll bounce (rubber banding) effect on macOS. Default is `false`.
-        *   `blinkFeatures` String (optional) - A list of feature strings separated by `,`, like `CSSVariables,KeyboardEventKey` to enable. The full list of supported feature strings can be found in the [RuntimeEnabledFeatures.in](https://cs.chromium.org/chromium/src/third_party/WebKit/Source/platform/RuntimeEnabledFeatures.in) file.
-        *   `disableBlinkFeatures` String (optional) - A list of feature strings separated by `,`, like `CSSVariables,KeyboardEventKey` to disable. The full list of supported feature strings can be found in the [RuntimeEnabledFeatures.in](https://cs.chromium.org/chromium/src/third_party/WebKit/Source/platform/RuntimeEnabledFeatures.in) file.
+        *   `blinkFeatures` String (optional) - A list of feature strings separated by `,`, like `CSSVariables,KeyboardEventKey` to enable. The full list of supported feature strings can be found in the [RuntimeEnabledFeatures.json5](https://cs.chromium.org/chromium/src/third_party/WebKit/Source/platform/RuntimeEnabledFeatures.json5?l=62) file.
+        *   `disableBlinkFeatures` String (optional) - A list of feature strings separated by `,`, like `CSSVariables,KeyboardEventKey` to disable. The full list of supported feature strings can be found in the [RuntimeEnabledFeatures.json5](https://cs.chromium.org/chromium/src/third_party/WebKit/Source/platform/RuntimeEnabledFeatures.json5?l=62) file.
         *   `defaultFontFamily` Object (optional) - Sets the default font for the font-family.
             *   `standard` String (optional) - Defaults to `Times New Roman`.
             *   `serif` String (optional) - Defaults to `Times New Roman`.
@@ -274,7 +335,6 @@ It creates a new `BrowserWindow` with native properties as set by the `options`.
         *   `defaultEncoding` String (optional) - Defaults to `ISO-8859-1`.
         *   `backgroundThrottling` Boolean (optional) - Whether to throttle animations and timers when the page becomes background. Defaults to `true`.
         *   `offscreen` Boolean (optional) - Whether to enable offscreen rendering for the browser window. Defaults to `false`. See the [offscreen rendering tutorial]({{site.baseurl}}/docs/tutorial/offscreen-rendering) for more details.
-        *   `sandbox` Boolean (optional) - Whether to enable Chromium OS-level sandbox.
         *   `contextIsolation` Boolean (optional) - Whether to run Electron APIs and the specified `preload` script in a separate JavaScript context. Defaults to `false`. The context that the `preload` script runs in will still have full access to the `document` and `window` globals but it will use its own set of JavaScript builtins (`Array`, `Object`, `JSON`, etc.) and will be isolated from any changes made to the global environment by the loaded page. The Electron API will only be available in the `preload` script and not the loaded page. This option should be used when loading potentially untrusted remote content to ensure the loaded content cannot tamper with the `preload` script and any Electron APIs being used. This option uses the same technique used by [Chrome Content Scripts](https://developer.chrome.com/extensions/content_scripts#execution-environment). You can access this context in the dev tools by selecting the 'Electron Isolated Context' entry in the combo box at the top of the Console tab. **Note:** This option is currently experimental and may change or be removed in future Electron releases.
 
 When setting minimum or maximum window size with `minWidth`/`maxWidth`/ `minHeight`/`maxHeight`, it only constrains the users. It won't prevent you from passing a size that does not follow size constraints to `setBounds`/`setSize` or to the constructor of `BrowserWindow`.
@@ -328,6 +388,10 @@ window.onbeforeunload = (e) => {
 
 Emitted when the window is closed. After you have received this event you should remove the reference to the window and avoid using it any more.
 
+#### Event: 'session-end' _Windows_
+
+Emitted when window session is going to end due to force shutdown or machine restart or session log off.
+
 #### Event: 'unresponsive'
 
 Emitted when the web page becomes unresponsive.
@@ -354,7 +418,7 @@ Emitted when the window is hidden.
 
 #### Event: 'ready-to-show'
 
-Emitted when the web page has been rendered and window can be displayed without a visual flash.
+Emitted when the web page has been rendered (while not being shown) and window can be displayed without a visual flash.
 
 #### Event: 'maximize'
 
@@ -444,6 +508,14 @@ Returns:
 *   `direction` String
 
 Emitted on 3-finger swipe. Possible directions are `up`, `right`, `down`, `left`.
+
+#### Event: 'sheet-begin' _macOS_
+
+Emitted when the window opens a sheet.
+
+#### Event: 'sheet-end' _macOS_
+
+Emitted when the window has closed a sheet.
 
 ### Static Methods
 
@@ -537,7 +609,7 @@ Force closing the window, the `unload` and `beforeunload` event won't be emitted
 
 #### `win.close()`
 
-Try to close the window. This has the same effect as a user manually clicking the close button of the window. The web page may cancel the close though. See the [close event]({{site.baseurl}}/docs/api/#event-close).
+Try to close the window. This has the same effect as a user manually clicking the close button of the window. The web page may cancel the close though. See the [close event](#event-close).
 
 #### `win.focus()`
 
@@ -577,7 +649,7 @@ Returns `Boolean` - Whether current window is a modal window.
 
 #### `win.maximize()`
 
-Maximizes the window.
+Maximizes the window. This will also show (but not focus) the window if it isn't being displayed already.
 
 #### `win.unmaximize()`
 
@@ -612,9 +684,7 @@ Returns `Boolean` - Whether the window is in fullscreen mode.
 #### `win.setAspectRatio(aspectRatio[, extraSize])` _macOS_
 
 *   `aspectRatio` Float - The aspect ratio to maintain for some portion of the content view.
-*   `extraSize` Object (optional) - The extra size not to be included while maintaining the aspect ratio.
-    *   `width` Integer
-    *   `height` Integer
+*   `extraSize` [Size]({{site.baseurl}}/docs/api/structures/size) - The extra size not to be included while maintaining the aspect ratio.
 
 This will make a window maintain an aspect ratio. The extra size allows a developer to have space, specified in pixels, not included within the aspect ratio calculations. This API already takes into account the difference between a window's size and its content size.
 
@@ -767,10 +837,11 @@ Returns `Boolean` - Whether the window can be manually closed by user.
 
 On Linux always returns `true`.
 
-#### `win.setAlwaysOnTop(flag[, level])`
+#### `win.setAlwaysOnTop(flag[, level][, relativeLevel])`
 
 *   `flag` Boolean
 *   `level` String (optional) _macOS_ - Values include `normal`, `floating`, `torn-off-menu`, `modal-panel`, `main-menu`, `status`, `pop-up-menu`, `screen-saver`, and ~~`dock`~~ (Deprecated). The default is `floating`. See the [macOS docs](https://developer.apple.com/reference/appkit/nswindow/1664726-window_levels) for more details.
+*   `relativeLevel` Integer (optional) _macOS_ - The number of layers higher to set this window relative to the given `level`. The default is `0`. Note that Apple discourages setting levels higher than 1 above `screen-saver`.
 
 Sets whether the window should show always on top of other windows. After setting this, the window is still a normal window, not a toolbox window which can not be focused on.
 
@@ -912,6 +983,7 @@ Same as `webContents.capturePage([rect, ]callback)`.
     *   `userAgent` String (optional) - A user agent originating the request.
     *   `extraHeaders` String (optional) - Extra headers separated by "\n"
     *   `postData` ([UploadRawData]({{site.baseurl}}/docs/api/structures/upload-raw-data) &#124; [UploadFile]({{site.baseurl}}/docs/api/structures/upload-file) &#124; [UploadFileSystem]({{site.baseurl}}/docs/api/structures/upload-file-system) &#124; [UploadBlob]({{site.baseurl}}/docs/api/structures/upload-blob))[] - (optional)
+    *   `baseURLForDataURL` String (optional) - Base url (with trailing path separator) for files to be loaded by the data url. This is needed only if the specified `url` is a data url and needs to load other files.
 
 Same as `webContents.loadURL(url[, options])`.
 
@@ -1129,3 +1201,17 @@ Controls whether to hide cursor when typing.
 *   `type` String - Can be `appearance-based`, `light`, `dark`, `titlebar`, `selection`, `menu`, `popover`, `sidebar`, `medium-light` or `ultra-dark`. See the [macOS documentation](https://developer.apple.com/reference/appkit/nsvisualeffectview?language=objc) for more details.
 
 Adds a vibrancy effect to the browser window. Passing `null` or an empty string will remove the vibrancy effect on the window.
+
+#### `win.setTouchBar(touchBar)` _macOS_ _Experimental_
+
+*   `touchBar` TouchBar
+
+Sets the touchBar layout for the current window. Specifying `null` or `undefined` clears the touch bar. This method only has an effect if the machine has a touch bar and is running on macOS 10.12.1+.
+
+**Note:** The TouchBar API is currently experimental and may change or be removed in future Electron releases.
+
+#### `win.setBrowserView(browserView)` _Experimental_
+
+*   `browserView` [BrowserView]({{site.baseurl}}/docs/api/browser-view)
+
+**Note:** The BrowserView API is currently experimental and may change or be removed in future Electron releases.

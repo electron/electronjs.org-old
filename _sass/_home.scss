@@ -143,6 +143,11 @@ $app-list-icon-size: 48px;
   height: $app-list-icon-size;
 }
 
+.listed-app-logo {
+    max-width: 48px;
+    height: 48px;
+}
+
 .listed-app-name {
   padding: 0 10px;
   font-weight: 500;
@@ -153,6 +158,16 @@ $app-list-icon-size: 48px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.listed-app-date {
+  font-size: 12px;
+  padding-left: 15px;
+  display: none;
+}
+
+.listed-app:hover .listed-app-date {
+  display: inherit;
 }
 
 .listed-app span {

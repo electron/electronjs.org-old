@@ -1,5 +1,5 @@
 ---
-version: v1.6.0
+version: v1.6.8
 permalink: /docs/api/session/
 category: API
 redirect_from:
@@ -9,9 +9,9 @@ redirect_from:
   - /docs/v0.37.5/api/session/
   - /docs/v0.37.4/api/session/
   - /docs/v0.37.3/api/session/
-  - /docs/v0.36.12/api/session/
   - /docs/v0.37.1/api/session/
   - /docs/v0.37.0/api/session/
+  - /docs/v0.36.12/api/session/
   - /docs/v0.36.11/api/session/
   - /docs/v0.36.10/api/session/
   - /docs/v0.36.9/api/session/
@@ -21,14 +21,14 @@ redirect_from:
   - /docs/v0.36.5/api/session/
   - /docs/v0.36.4/api/session/
   - /docs/v0.36.3/api/session/
-  - /docs/v0.35.5/api/session/
   - /docs/v0.36.2/api/session/
   - /docs/v0.36.0/api/session/
+  - /docs/v0.35.5/api/session/
   - /docs/v0.35.4/api/session/
   - /docs/v0.35.3/api/session/
   - /docs/v0.35.2/api/session/
-  - /docs/v0.34.4/api/session/
   - /docs/v0.35.1/api/session/
+  - /docs/v0.34.4/api/session/
   - /docs/v0.34.3/api/session/
   - /docs/v0.34.2/api/session/
   - /docs/v0.34.1/api/session/
@@ -87,6 +87,65 @@ title: session
 excerpt: 'Manage browser sessions, cookies, cache, proxy settings, etc.'
 sort_title: session
 ---
+
+
+
+<!--
+
+
+                                      ::::
+                                    :o+//+o:
+                                    +o    oo-
+                                    :o+//oo/+o/
+                                      -::-   -oo:
+                                               /s/
+                      -::::::::-                :s/  :::--
+                  :+oo+////////+:        -:/+oo/ :s:-///++oo+:
+                /o+:                -/+oo+/:-     +o-      -:+o:
+               /s:              -:+o+/:           -o+         :s/
+              -s/            -/oo/:                /s-         +s-
+              -s/         -/oo/-                   -s/         /s-
+               oo       :+o/-                       oo         oo
+               -s/    :oo/                          /s-       /s-
+                :s/ :oo:              -::-          /s-      /s:
+                  -+o/               /ssss/         :s:    -+o-
+                 :o+--               /ssss/         :s:   :o+-
+                :s/  +o:              -::-          /s-   --
+               -s/    :+o/-                         /s-
+               oo       -+o+-                       oo
+              -s/         -/oo/-                   -s/
+             -+soo+:         -/oo/:                /s-      /oooo+-
+             o+   :s:           -:+o+/:-          -o+      /s:  -oo
+             oo:--/s:       ::      -:+oo+/:-     -/-      /s/--:o+
+              :+++/-        :s:          -:/+ooo++//////++oo//+o+:
+                             /s:                --::::::--
+                              /s/              /s-
+                               :oo:          :oo:
+                                 /oo/-    -/oo/
+                                   -/+oooo+/-
+
+
+
+
+
+                   _______  _______  _______  _______  __
+                  |       ||       ||       ||       ||  |
+                  |  _____||_     _||   _   ||    _  ||  |
+                  | |_____   |   |  |  | |  ||   |_| ||  |
+                  |_____  |  |   |  |  |_|  ||    ___||__|
+                   _____| |  |   |  |       ||   |     __
+                  |_______|  |___|  |_______||___|    |__|
+
+
+    This file is generated automatically, so it should not be edited.
+
+    To make changes, head over to the electron/electron repository:
+
+    https://github.com/electron/electron/blob/master/docs/api/session.md
+
+    Thanks!
+
+-->
 # session
 
 > Manage browser sessions, cookies, cache, proxy settings, etc.
@@ -117,7 +176,7 @@ The `session` module has the following methods:
 *   `options` Object
     *   `cache` Boolean - Whether to enable cache.
 
-Returns `Session` - A session instance from `partition` string. When there is an existing `Session` with the same `partition`, it will be returned; othewise a new `Session` instance will be created with `options`.
+Returns `Session` - A session instance from `partition` string. When there is an existing `Session` with the same `partition`, it will be returned; otherwise a new `Session` instance will be created with `options`.
 
 If `partition` starts with `persist:`, the page will use a persistent session available to all pages in the app with the same `partition`. if there is no `persist:` prefix, the page will use an in-memory session. If the `partition` is empty then default session of the app will be returned.
 
@@ -178,7 +237,7 @@ The following methods are available on instances of `Session`:
 *   `callback` Function
     *   `size` Integer - Cache size used in bytes.
 
-Returns the session's current cache size.
+Callback is invoked with the session's current cache size.
 
 #### `ses.clearCache(callback)`
 
@@ -267,7 +326,7 @@ The `proxyBypassRules` is a comma separated list of rules described below:
 
 *   `url` URL
 *   `callback` Function
-    *   `proxy` Object
+    *   `proxy` String
 
 Resolves the proxy information for `url`. The `callback` will be called with `callback(proxy)` when the request is performed.
 
@@ -306,12 +365,17 @@ Disables any network emulation already active for the `session`. Resets to the o
 #### `ses.setCertificateVerifyProc(proc)`
 
 *   `proc` Function
-    *   `hostname` String
-    *   `certificate` [Certificate]({{site.baseurl}}/docs/api/structures/certificate)
+    *   `request` Object
+        *   `hostname` String
+        *   `certificate` [Certificate]({{site.baseurl}}/docs/api/structures/certificate)
+        *   `error` String - Verification result from chromium.
     *   `callback` Function
-        *   `isTrusted` Boolean - Determines if the certificate should be trusted
+        *   `verificationResult` Integer - Value can be one of certificate error codes from [here](https://code.google.com/p/chromium/codesearch#chromium/src/net/base/net_error_list.h). Apart from the certificate error codes, the following special codes can be used.
+            *   `0` - Indicates success and disables Certificate Transperancy verification.
+            *   `-2` - Indicates failure.
+            *   `-3` - Uses the verification result from chromium.
 
-Sets the certificate verify proc for `session`, the `proc` will be called with `proc(hostname, certificate, callback)` whenever a server certificate verification is requested. Calling `callback(true)` accepts the certificate, calling `callback(false)` rejects it.
+Sets the certificate verify proc for `session`, the `proc` will be called with `proc(request, callback)` whenever a server certificate verification is requested. Calling `callback(0)` accepts the certificate, calling `callback(-2)` rejects it.
 
 Calling `setCertificateVerifyProc(null)` will revert back to default certificate verify proc.
 
@@ -319,15 +383,20 @@ Calling `setCertificateVerifyProc(null)` will revert back to default certificate
 const {BrowserWindow} = require('electron')
 let win = new BrowserWindow()
 
-win.webContents.session.setCertificateVerifyProc((hostname, cert, callback) => {
-  callback(hostname === 'github.com')
+win.webContents.session.setCertificateVerifyProc((request, callback) => {
+  const {hostname} = request
+  if (hostname === 'github.com') {
+    callback(0)
+  } else {
+    callback(-2)
+  }
 })
 ```
 
 #### `ses.setPermissionRequestHandler(handler)`
 
 *   `handler` Function
-    *   `webContents` Object - [WebContents]({{site.baseurl}}/docs/api/web-contents) requesting the permission.
+    *   `webContents` [WebContents]({{site.baseurl}}/docs/api/web-contents) - WebContents requesting the permission.
     *   `permission` String - Enum of 'media', 'geolocation', 'notifications', 'midiSysex', 'pointerLock', 'fullscreen', 'openExternal'.
     *   `callback` Function
         *   `permissionGranted` Boolean - Allow or deny the permission
@@ -402,7 +471,7 @@ Returns `Blob` - The blob data associated with the `identifier`.
     *   `eTag` String - ETag header value.
     *   `startTime` Double (optional) - Time when download was started in number of seconds since UNIX epoch.
 
-Allows resuming `cancelled` or `interrupted` downloads from previous `Session`. The API will generate a [DownloadItem]({{site.baseurl}}/docs/api/download-item) that can be accessed with the [will-download]({{site.baseurl}}/docs/api/#event-will-download) event. The [DownloadItem]({{site.baseurl}}/docs/api/download-item) will not have any `WebContents` associated with it and the initial state will be `interrupted`. The download will start only when the `resume` API is called on the [DownloadItem]({{site.baseurl}}/docs/api/download-item).
+Allows resuming `cancelled` or `interrupted` downloads from previous `Session`. The API will generate a [DownloadItem]({{site.baseurl}}/docs/api/download-item) that can be accessed with the [will-download](#event-will-download) event. The [DownloadItem]({{site.baseurl}}/docs/api/download-item) will not have any `WebContents` associated with it and the initial state will be `interrupted`. The download will start only when the `resume` API is called on the [DownloadItem]({{site.baseurl}}/docs/api/download-item).
 
 #### `ses.clearAuthCache(options[, callback])`
 
@@ -417,15 +486,15 @@ The following properties are available on instances of `Session`:
 
 #### `ses.cookies`
 
-A Cookies object for this session.
+A [Cookies]({{site.baseurl}}/docs/api/cookies) object for this session.
 
 #### `ses.webRequest`
 
-A WebRequest object for this session.
+A [WebRequest]({{site.baseurl}}/docs/api/web-request) object for this session.
 
 #### `ses.protocol`
 
-A Protocol object (an instance of [protocol]({{site.baseurl}}/docs/api/protocol) module) for this session.
+A [Protocol]({{site.baseurl}}/docs/api/protocol) object for this session.
 
 ```javascript
 const {app, session} = require('electron')

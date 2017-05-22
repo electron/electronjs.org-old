@@ -1,5 +1,5 @@
 ---
-version: v1.6.0
+version: v1.6.8
 permalink: /docs/tutorial/quick-start/
 category: Tutorial
 redirect_from:
@@ -9,9 +9,9 @@ redirect_from:
   - /docs/v0.37.5/tutorial/quick-start/
   - /docs/v0.37.4/tutorial/quick-start/
   - /docs/v0.37.3/tutorial/quick-start/
-  - /docs/v0.36.12/tutorial/quick-start/
   - /docs/v0.37.1/tutorial/quick-start/
   - /docs/v0.37.0/tutorial/quick-start/
+  - /docs/v0.36.12/tutorial/quick-start/
   - /docs/v0.36.11/tutorial/quick-start/
   - /docs/v0.36.10/tutorial/quick-start/
   - /docs/v0.36.9/tutorial/quick-start/
@@ -21,14 +21,14 @@ redirect_from:
   - /docs/v0.36.5/tutorial/quick-start/
   - /docs/v0.36.4/tutorial/quick-start/
   - /docs/v0.36.3/tutorial/quick-start/
-  - /docs/v0.35.5/tutorial/quick-start/
   - /docs/v0.36.2/tutorial/quick-start/
   - /docs/v0.36.0/tutorial/quick-start/
+  - /docs/v0.35.5/tutorial/quick-start/
   - /docs/v0.35.4/tutorial/quick-start/
   - /docs/v0.35.3/tutorial/quick-start/
   - /docs/v0.35.2/tutorial/quick-start/
-  - /docs/v0.34.4/tutorial/quick-start/
   - /docs/v0.35.1/tutorial/quick-start/
+  - /docs/v0.34.4/tutorial/quick-start/
   - /docs/v0.34.3/tutorial/quick-start/
   - /docs/v0.34.2/tutorial/quick-start/
   - /docs/v0.34.1/tutorial/quick-start/
@@ -87,6 +87,65 @@ title: Quick Start
 excerpt: ''
 sort_title: quick-start
 ---
+
+
+
+<!--
+
+
+                                      ::::
+                                    :o+//+o:
+                                    +o    oo-
+                                    :o+//oo/+o/
+                                      -::-   -oo:
+                                               /s/
+                      -::::::::-                :s/  :::--
+                  :+oo+////////+:        -:/+oo/ :s:-///++oo+:
+                /o+:                -/+oo+/:-     +o-      -:+o:
+               /s:              -:+o+/:           -o+         :s/
+              -s/            -/oo/:                /s-         +s-
+              -s/         -/oo/-                   -s/         /s-
+               oo       :+o/-                       oo         oo
+               -s/    :oo/                          /s-       /s-
+                :s/ :oo:              -::-          /s-      /s:
+                  -+o/               /ssss/         :s:    -+o-
+                 :o+--               /ssss/         :s:   :o+-
+                :s/  +o:              -::-          /s-   --
+               -s/    :+o/-                         /s-
+               oo       -+o+-                       oo
+              -s/         -/oo/-                   -s/
+             -+soo+:         -/oo/:                /s-      /oooo+-
+             o+   :s:           -:+o+/:-          -o+      /s:  -oo
+             oo:--/s:       ::      -:+oo+/:-     -/-      /s/--:o+
+              :+++/-        :s:          -:/+ooo++//////++oo//+o+:
+                             /s:                --::::::--
+                              /s/              /s-
+                               :oo:          :oo:
+                                 /oo/-    -/oo/
+                                   -/+oooo+/-
+
+
+
+
+
+                   _______  _______  _______  _______  __
+                  |       ||       ||       ||       ||  |
+                  |  _____||_     _||   _   ||    _  ||  |
+                  | |_____   |   |  |  | |  ||   |_| ||  |
+                  |_____  |  |   |  |  |_|  ||    ___||__|
+                   _____| |  |   |  |       ||   |     __
+                  |_______|  |___|  |_______||___|    |__|
+
+
+    This file is generated automatically, so it should not be edited.
+
+    To make changes, head over to the electron/electron repository:
+
+    https://github.com/electron/electron/blob/master/docs/tutorial/quick-start.md
+
+    Thanks!
+
+-->
 # Quick Start
 
 Electron enables you to create desktop applications with pure JavaScript by providing a runtime with rich native (operating system) APIs. You could see it as a variant of the Node.js runtime that is focused on desktop applications instead of web servers.
@@ -287,4 +346,4 @@ $ npm install
 $ npm start
 ```
 
-For more example apps, see the [list of boilerplates](http://electron.atom.io/community/#boilerplates) created by the awesome electron community.
+For more example apps, see the [list of boilerplates](https://electron.atom.io/community/#boilerplates) created by the awesome electron community.

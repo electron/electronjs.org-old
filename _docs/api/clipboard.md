@@ -1,5 +1,5 @@
 ---
-version: v1.6.0
+version: v1.6.8
 permalink: /docs/api/clipboard/
 category: API
 redirect_from:
@@ -9,9 +9,9 @@ redirect_from:
   - /docs/v0.37.5/api/clipboard/
   - /docs/v0.37.4/api/clipboard/
   - /docs/v0.37.3/api/clipboard/
-  - /docs/v0.36.12/api/clipboard/
   - /docs/v0.37.1/api/clipboard/
   - /docs/v0.37.0/api/clipboard/
+  - /docs/v0.36.12/api/clipboard/
   - /docs/v0.36.11/api/clipboard/
   - /docs/v0.36.10/api/clipboard/
   - /docs/v0.36.9/api/clipboard/
@@ -21,14 +21,14 @@ redirect_from:
   - /docs/v0.36.5/api/clipboard/
   - /docs/v0.36.4/api/clipboard/
   - /docs/v0.36.3/api/clipboard/
-  - /docs/v0.35.5/api/clipboard/
   - /docs/v0.36.2/api/clipboard/
   - /docs/v0.36.0/api/clipboard/
+  - /docs/v0.35.5/api/clipboard/
   - /docs/v0.35.4/api/clipboard/
   - /docs/v0.35.3/api/clipboard/
   - /docs/v0.35.2/api/clipboard/
-  - /docs/v0.34.4/api/clipboard/
   - /docs/v0.35.1/api/clipboard/
+  - /docs/v0.34.4/api/clipboard/
   - /docs/v0.34.3/api/clipboard/
   - /docs/v0.34.2/api/clipboard/
   - /docs/v0.34.1/api/clipboard/
@@ -87,6 +87,65 @@ title: clipboard
 excerpt: Perform copy and paste operations on the system clipboard.
 sort_title: clipboard
 ---
+
+
+
+<!--
+
+
+                                      ::::
+                                    :o+//+o:
+                                    +o    oo-
+                                    :o+//oo/+o/
+                                      -::-   -oo:
+                                               /s/
+                      -::::::::-                :s/  :::--
+                  :+oo+////////+:        -:/+oo/ :s:-///++oo+:
+                /o+:                -/+oo+/:-     +o-      -:+o:
+               /s:              -:+o+/:           -o+         :s/
+              -s/            -/oo/:                /s-         +s-
+              -s/         -/oo/-                   -s/         /s-
+               oo       :+o/-                       oo         oo
+               -s/    :oo/                          /s-       /s-
+                :s/ :oo:              -::-          /s-      /s:
+                  -+o/               /ssss/         :s:    -+o-
+                 :o+--               /ssss/         :s:   :o+-
+                :s/  +o:              -::-          /s-   --
+               -s/    :+o/-                         /s-
+               oo       -+o+-                       oo
+              -s/         -/oo/-                   -s/
+             -+soo+:         -/oo/:                /s-      /oooo+-
+             o+   :s:           -:+o+/:-          -o+      /s:  -oo
+             oo:--/s:       ::      -:+oo+/:-     -/-      /s/--:o+
+              :+++/-        :s:          -:/+ooo++//////++oo//+o+:
+                             /s:                --::::::--
+                              /s/              /s-
+                               :oo:          :oo:
+                                 /oo/-    -/oo/
+                                   -/+oooo+/-
+
+
+
+
+
+                   _______  _______  _______  _______  __
+                  |       ||       ||       ||       ||  |
+                  |  _____||_     _||   _   ||    _  ||  |
+                  | |_____   |   |  |  | |  ||   |_| ||  |
+                  |_____  |  |   |  |  |_|  ||    ___||__|
+                   _____| |  |   |  |       ||   |     __
+                  |_______|  |___|  |_______||___|    |__|
+
+
+    This file is generated automatically, so it should not be edited.
+
+    To make changes, head over to the electron/electron repository:
+
+    https://github.com/electron/electron/blob/master/docs/api/clipboard.md
+
+    Thanks!
+
+-->
 # clipboard
 
 > Perform copy and paste operations on the system clipboard.
@@ -187,7 +246,7 @@ Writes the `title` and `url` into the clipboard as a bookmark.
 
 ```js
 clipboard.write({
-  text: 'http://electron.atom.io',
+  text: 'https://electron.atom.io',
   bookmark: 'Electron Homepage'
 })
 ```
@@ -214,24 +273,29 @@ Clears the clipboard content.
 
 Returns `String[]` - An array of supported formats for the clipboard `type`.
 
-### `clipboard.has(data[, type])` _Experimental_
+### `clipboard.has(format[, type])` _Experimental_
 
-*   `data` String
+*   `format` String
 *   `type` String (optional)
 
-Returns `Boolean` - Whether the clipboard supports the format of specified `data`.
+Returns `Boolean` - Whether the clipboard supports the specified `format`.
 
 ```javascript
 const {clipboard} = require('electron')
 console.log(clipboard.has('<p>selection</p>'))
 ```
 
-### `clipboard.read(data[, type])` _Experimental_
+### `clipboard.read(format)` _Experimental_
 
-*   `data` String
-*   `type` String (optional)
+*   `format` String
 
-Returns `String` - Reads `data` from the clipboard.
+Returns `String` - Reads `format` type from the clipboard.
+
+### `clipboard.readBuffer(format)` _Experimental_
+
+*   `format` String
+
+Returns `Buffer` - Reads `format` type from the clipboard.
 
 ### `clipboard.write(data[, type])`
 

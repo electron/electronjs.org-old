@@ -1,5 +1,5 @@
 ---
-version: v1.6.0
+version: v1.6.8
 permalink: /docs/tutorial/planned-breaking-changes/
 category: Tutorial
 redirect_from:
@@ -9,9 +9,9 @@ redirect_from:
   - /docs/v0.37.5/tutorial/planned-breaking-changes/
   - /docs/v0.37.4/tutorial/planned-breaking-changes/
   - /docs/v0.37.3/tutorial/planned-breaking-changes/
-  - /docs/v0.36.12/tutorial/planned-breaking-changes/
   - /docs/v0.37.1/tutorial/planned-breaking-changes/
   - /docs/v0.37.0/tutorial/planned-breaking-changes/
+  - /docs/v0.36.12/tutorial/planned-breaking-changes/
   - /docs/v0.36.11/tutorial/planned-breaking-changes/
   - /docs/v0.36.10/tutorial/planned-breaking-changes/
   - /docs/v0.36.9/tutorial/planned-breaking-changes/
@@ -21,14 +21,14 @@ redirect_from:
   - /docs/v0.36.5/tutorial/planned-breaking-changes/
   - /docs/v0.36.4/tutorial/planned-breaking-changes/
   - /docs/v0.36.3/tutorial/planned-breaking-changes/
-  - /docs/v0.35.5/tutorial/planned-breaking-changes/
   - /docs/v0.36.2/tutorial/planned-breaking-changes/
   - /docs/v0.36.0/tutorial/planned-breaking-changes/
+  - /docs/v0.35.5/tutorial/planned-breaking-changes/
   - /docs/v0.35.4/tutorial/planned-breaking-changes/
   - /docs/v0.35.3/tutorial/planned-breaking-changes/
   - /docs/v0.35.2/tutorial/planned-breaking-changes/
-  - /docs/v0.34.4/tutorial/planned-breaking-changes/
   - /docs/v0.35.1/tutorial/planned-breaking-changes/
+  - /docs/v0.34.4/tutorial/planned-breaking-changes/
   - /docs/v0.34.3/tutorial/planned-breaking-changes/
   - /docs/v0.34.2/tutorial/planned-breaking-changes/
   - /docs/v0.34.1/tutorial/planned-breaking-changes/
@@ -88,6 +88,65 @@ title: Planned Breaking API Changes
 excerpt: ''
 sort_title: planned-breaking-changes
 ---
+
+
+
+<!--
+
+
+                                      ::::
+                                    :o+//+o:
+                                    +o    oo-
+                                    :o+//oo/+o/
+                                      -::-   -oo:
+                                               /s/
+                      -::::::::-                :s/  :::--
+                  :+oo+////////+:        -:/+oo/ :s:-///++oo+:
+                /o+:                -/+oo+/:-     +o-      -:+o:
+               /s:              -:+o+/:           -o+         :s/
+              -s/            -/oo/:                /s-         +s-
+              -s/         -/oo/-                   -s/         /s-
+               oo       :+o/-                       oo         oo
+               -s/    :oo/                          /s-       /s-
+                :s/ :oo:              -::-          /s-      /s:
+                  -+o/               /ssss/         :s:    -+o-
+                 :o+--               /ssss/         :s:   :o+-
+                :s/  +o:              -::-          /s-   --
+               -s/    :+o/-                         /s-
+               oo       -+o+-                       oo
+              -s/         -/oo/-                   -s/
+             -+soo+:         -/oo/:                /s-      /oooo+-
+             o+   :s:           -:+o+/:-          -o+      /s:  -oo
+             oo:--/s:       ::      -:+oo+/:-     -/-      /s/--:o+
+              :+++/-        :s:          -:/+ooo++//////++oo//+o+:
+                             /s:                --::::::--
+                              /s/              /s-
+                               :oo:          :oo:
+                                 /oo/-    -/oo/
+                                   -/+oooo+/-
+
+
+
+
+
+                   _______  _______  _______  _______  __
+                  |       ||       ||       ||       ||  |
+                  |  _____||_     _||   _   ||    _  ||  |
+                  | |_____   |   |  |  | |  ||   |_| ||  |
+                  |_____  |  |   |  |  |_|  ||    ___||__|
+                   _____| |  |   |  |       ||   |     __
+                  |_______|  |___|  |_______||___|    |__|
+
+
+    This file is generated automatically, so it should not be edited.
+
+    To make changes, head over to the electron/electron repository:
+
+    https://github.com/electron/electron/blob/master/docs/tutorial/planned-breaking-changes.md
+
+    Thanks!
+
+-->
 # Planned Breaking API Changes
 
 The following list includes the APIs that will be removed in Electron 2.0.
@@ -146,6 +205,15 @@ crashReporter.start({
 })
 ```
 
+## `menu`
+
+```js
+// Deprecated
+menu.popup(browserWindow, 100, 200, 2)
+// Replace with
+menu.popup(browserWindow, {x: 100, y: 200, positioningItem: 2})
+```
+
 ## `nativeImage`
 
 ```js
@@ -177,6 +245,19 @@ process.versions.electron
 ```
 
 *   `process.versions.electron` and `process.version.chrome` will be made read-only properties for consistency with the other `process.versions` properties set by Node.
+
+## `session`
+
+```js
+// Deprecated
+ses.setCertificateVerifyProc(function (hostname, certificate, callback) {
+  callback(true)
+})
+// Replace with
+ses.setCertificateVerifyProc(function (request, callback) {
+  callback(0)
+})
+```
 
 ## `Tray`
 

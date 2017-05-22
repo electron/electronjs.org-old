@@ -9,7 +9,7 @@ Looking for an introduction to Electron? Two new podcasts have just been release
 
 **Out now:**
 
-<a href="http://hanselminutes.com/534/creating-cross-platform-electron-apps-with-jessica-lord"><img src="http://images.hanselminutes.com/images/169.jpg" width="200"></a>
+<a href="http://hanselminutes.com/534/creating-cross-platform-electron-apps-with-jessica-lord"><img src="https://cloud.githubusercontent.com/assets/2289/23483197/d14f716e-fe86-11e6-95da-dcfe73bb86f7.jpg" width="200"></a>
 
 ### [Hanselminutes: Creating cross-platform Electron apps](http://hanselminutes.com/534/creating-cross-platform-electron-apps-with-jessica-lord)
 

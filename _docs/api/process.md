@@ -1,5 +1,5 @@
 ---
-version: v1.6.0
+version: v1.6.8
 permalink: /docs/api/process/
 category: API
 redirect_from:
@@ -9,9 +9,9 @@ redirect_from:
   - /docs/v0.37.5/api/process/
   - /docs/v0.37.4/api/process/
   - /docs/v0.37.3/api/process/
-  - /docs/v0.36.12/api/process/
   - /docs/v0.37.1/api/process/
   - /docs/v0.37.0/api/process/
+  - /docs/v0.36.12/api/process/
   - /docs/v0.36.11/api/process/
   - /docs/v0.36.10/api/process/
   - /docs/v0.36.9/api/process/
@@ -21,14 +21,14 @@ redirect_from:
   - /docs/v0.36.5/api/process/
   - /docs/v0.36.4/api/process/
   - /docs/v0.36.3/api/process/
-  - /docs/v0.35.5/api/process/
   - /docs/v0.36.2/api/process/
   - /docs/v0.36.0/api/process/
+  - /docs/v0.35.5/api/process/
   - /docs/v0.35.4/api/process/
   - /docs/v0.35.3/api/process/
   - /docs/v0.35.2/api/process/
-  - /docs/v0.34.4/api/process/
   - /docs/v0.35.1/api/process/
+  - /docs/v0.34.4/api/process/
   - /docs/v0.34.3/api/process/
   - /docs/v0.34.2/api/process/
   - /docs/v0.34.1/api/process/
@@ -87,6 +87,65 @@ title: process
 excerpt: Extensions to process object.
 sort_title: process
 ---
+
+
+
+<!--
+
+
+                                      ::::
+                                    :o+//+o:
+                                    +o    oo-
+                                    :o+//oo/+o/
+                                      -::-   -oo:
+                                               /s/
+                      -::::::::-                :s/  :::--
+                  :+oo+////////+:        -:/+oo/ :s:-///++oo+:
+                /o+:                -/+oo+/:-     +o-      -:+o:
+               /s:              -:+o+/:           -o+         :s/
+              -s/            -/oo/:                /s-         +s-
+              -s/         -/oo/-                   -s/         /s-
+               oo       :+o/-                       oo         oo
+               -s/    :oo/                          /s-       /s-
+                :s/ :oo:              -::-          /s-      /s:
+                  -+o/               /ssss/         :s:    -+o-
+                 :o+--               /ssss/         :s:   :o+-
+                :s/  +o:              -::-          /s-   --
+               -s/    :+o/-                         /s-
+               oo       -+o+-                       oo
+              -s/         -/oo/-                   -s/
+             -+soo+:         -/oo/:                /s-      /oooo+-
+             o+   :s:           -:+o+/:-          -o+      /s:  -oo
+             oo:--/s:       ::      -:+oo+/:-     -/-      /s/--:o+
+              :+++/-        :s:          -:/+ooo++//////++oo//+o+:
+                             /s:                --::::::--
+                              /s/              /s-
+                               :oo:          :oo:
+                                 /oo/-    -/oo/
+                                   -/+oooo+/-
+
+
+
+
+
+                   _______  _______  _______  _______  __
+                  |       ||       ||       ||       ||  |
+                  |  _____||_     _||   _   ||    _  ||  |
+                  | |_____   |   |  |  | |  ||   |_| ||  |
+                  |_____  |  |   |  |  |_|  ||    ___||__|
+                   _____| |  |   |  |       ||   |     __
+                  |_______|  |___|  |_______||___|    |__|
+
+
+    This file is generated automatically, so it should not be edited.
+
+    To make changes, head over to the electron/electron repository:
+
+    https://github.com/electron/electron/blob/master/docs/api/process.md
+
+    Thanks!
+
+-->
 # process
 
 > Extensions to process object.
@@ -117,35 +176,35 @@ process.once('loaded', () => {
 
 ### `process.noAsar`
 
-Setting this to `true` can disable the support for `asar` archives in Node's built-in modules.
+A `Boolean` that controls ASAR support inside your application. Setting this to `true` will disable the support for `asar` archives in Node's built-in modules.
 
 ### `process.type`
 
-Current process's type, can be `"browser"` (i.e. main process) or `"renderer"`.
+A `String` representing the current process's type, can be `"browser"` (i.e. main process) or `"renderer"`.
 
 ### `process.versions.electron`
 
-Electron's version string.
+A `String` representing Electron's version string.
 
 ### `process.versions.chrome`
 
-Chrome's version string.
+A `String` representing Chrome's version string.
 
 ### `process.resourcesPath`
 
-Path to the resources directory.
+A `String` representing the path to the resources directory.
 
 ### `process.mas`
 
-For Mac App Store build, this property is `true`, for other builds it is `undefined`.
+A `Boolean`. For Mac App Store build, this property is `true`, for other builds it is `undefined`.
 
 ### `process.windowsStore`
 
-If the app is running as a Windows Store app (appx), this property is `true`, for otherwise it is `undefined`.
+A `Boolean`. If the app is running as a Windows Store app (appx), this property is `true`, for otherwise it is `undefined`.
 
 ### `process.defaultApp`
 
-When app is started by being passed as parameter to the default app, this property is `true` in the main process, otherwise it is `undefined`.
+A `Boolean`. When app is started by being passed as parameter to the default app, this property is `true` in the main process, otherwise it is `undefined`.
 
 ## Methods
 

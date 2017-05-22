@@ -8,8 +8,11 @@ excerpt: See some of the amazing apps built on Electron.
 <script src="{{site.baseurl}}/js/vendor/list.min.js"></script>
 <script src="{{site.baseurl}}/js/vendor/query-string.js"></script>
 <script src="{{site.baseurl}}/js/vendor/set-query-string.js"></script>
+<script src="{{site.baseurl}}/js/vendor/browser-date-formatter.js"></script>
+
 <script>
   document.addEventListener('DOMContentLoaded', createFilterList)
+  document.addEventListener('DOMContentLoaded', browserDateFormatter)
 
   function createFilterList () {
     // look for a filterable list on this page
@@ -26,6 +29,7 @@ excerpt: See some of the amazing apps built on Electron.
       valueNames: [
         'listed-app-name',
         'listed-app-description',
+        'listed-app-date',
         'listed-app-keywords'
       ]
     }
@@ -45,22 +49,24 @@ excerpt: See some of the amazing apps built on Electron.
 <div class='subtron'>
   <div class='container-narrow'>
     <h1>Apps Built on Electron</h1>
+    <p>We currently have {{ site.data.apps | size }} apps in our registry.</p>
   </div>
 </div>
 
 <section class='page-section'>
   <div class='container-narrow text-center' id="apps">
 
-    <input class="filterable-list-input" placeholder="Filter apps by name, description, keyword..." type="search" autofocus="on" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+    <input class="filterable-list-input" placeholder="Filter apps by name, description, keyword, date..." type="search" autofocus="on" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
 
     <ul class="mb-4 filterable-list app-list">
-      {% for app in site.data.apps %}
+      {% assign sortedApps = site.data.apps | sort:"date" %}
+      {% for app in sortedApps reversed %}
         {% include listed_app.html %}
       {% endfor %}
     </ul>
 
     <p class="mt-6">
-      <a href="https://github.com/electron/electron.atom.io/blob/gh-pages/CONTRIBUTING.md#adding-an-app-or-project-to-the-site" target="_blank">Make a Pull Request</a> to add your application.
+      <a href="https://github.com/electron/electron.atom.io/blob/gh-pages/CONTRIBUTING.md#adding-an-app-or-project-to-the-site">Make a Pull Request</a> to add your application.
     </p>
     <hr>
   </div>

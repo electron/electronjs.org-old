@@ -127,6 +127,33 @@
     ]
   },
   {
+    "slug": "alchemy",
+    "name": "Alchemy",
+    "description": "A drag-and-drop file converter for your menubar.",
+    "website": "http://dawnlabs.io/alchemy/",
+    "repository": "https://github.com/dawnlabs/alchemy.git",
+    "keywords": [
+      "convert",
+      "files",
+      "images",
+      "drag-and-drop",
+      "menubar"
+    ],
+    "license": "MIT",
+    "icon": "alchemy-icon.png",
+    "icon32": "alchemy-icon-32.png",
+    "icon64": "alchemy-icon-64.png",
+    "icon128": "alchemy-icon-128.png",
+    "date": "2017-04-03",
+    "iconColors": [
+      "#e89837",
+      "#dcf2fb",
+      "#dcb680",
+      "#e4cc5e",
+      "#ccccbc"
+    ]
+  },
+  {
     "slug": "alduin",
     "name": "Alduin",
     "description": "An RSS and Atom feed aggregator",
@@ -177,31 +204,6 @@
     ]
   },
   {
-    "slug": "anatine",
-    "name": "Anatine",
-    "description": "Pristine Twitter app",
-    "website": "https://github.com/sindresorhus/anatine",
-    "repository": "https://github.com/sindresorhus/anatine",
-    "keywords": [
-      "social",
-      "news",
-      "twitter"
-    ],
-    "license": "MIT",
-    "icon": "anatine-icon.png",
-    "icon32": "anatine-icon-32.png",
-    "icon64": "anatine-icon-64.png",
-    "icon128": "anatine-icon-128.png",
-    "date": "2016-06-01",
-    "iconColors": [
-      "#2ca4ec",
-      "#fbfbfb",
-      "#a1c0d3",
-      "#c4c4c4",
-      "#cccccc"
-    ]
-  },
-  {
     "slug": "anote",
     "name": "ANote",
     "description": "A Simple Friendly Markdown Note.",
@@ -226,6 +228,32 @@
       "#f65e5e",
       "#f87c7c",
       "#f43c3c"
+    ]
+  },
+  {
+    "slug": "ansel",
+    "name": "Ansel",
+    "description": "Digital image organizer powered by the web",
+    "website": "https://github.com/m0g/ansel/",
+    "repository": "https://github.com/m0g/ansel/",
+    "keywords": [
+      "photography",
+      "photo",
+      "editing",
+      "photo-manager"
+    ],
+    "license": "MIT",
+    "icon": "ansel-icon.png",
+    "icon32": "ansel-icon-32.png",
+    "icon64": "ansel-icon-64.png",
+    "icon128": "ansel-icon-128.png",
+    "date": "2017-04-06",
+    "iconColors": [
+      "#e77b30",
+      "#3f96b7",
+      "#60b92b",
+      "#553a7d",
+      "#9c7459"
     ]
   },
   {
@@ -271,6 +299,34 @@
       "#ee5c54",
       "#f9645c",
       "#eceeee"
+    ]
+  },
+  {
+    "slug": "astroprint",
+    "name": "AstroPrint Desktop",
+    "description": "Manage your 3D Printer offline and via the Cloud.",
+    "website": "https://www.astroprint.com/products/p/astroprint-desktop",
+    "keywords": [
+      "3d printing",
+      "iot",
+      "3d design",
+      "astroprint",
+      "octoprint",
+      "wireless 3d printing",
+      "cad",
+      "cad software"
+    ],
+    "icon": "astroprint-icon.png",
+    "icon32": "astroprint-icon-32.png",
+    "icon64": "astroprint-icon-64.png",
+    "icon128": "astroprint-icon-128.png",
+    "date": "2017-05-14",
+    "iconColors": [
+      "#fcfbfb",
+      "#f45454",
+      "#fbb7b7",
+      "#f4a4a4",
+      "#fccccc"
     ]
   },
   {
@@ -521,21 +577,22 @@
     ]
   },
   {
-    "slug": "boost",
-    "name": "Boost",
-    "description": "Open-sourced note app for programmers",
-    "website": "https://b00st.io",
-    "icon": "boost-icon.png",
-    "icon32": "boost-icon-32.png",
-    "icon64": "boost-icon-64.png",
-    "icon128": "boost-icon-128.png",
-    "date": "2015-11-15",
+    "slug": "boostnote",
+    "name": "Boostnote",
+    "description": "Simple note-taking app for programmers",
+    "website": "https://boostnote.io",
+    "repository": "https://github.com/BoostIO/Boostnote",
+    "icon": "boostnote-icon.png",
+    "icon32": "boostnote-icon-32.png",
+    "icon64": "boostnote-icon-64.png",
+    "icon128": "boostnote-icon-128.png",
+    "date": "2017-03-10",
     "iconColors": [
-      "#f7f9f8",
-      "#04ad6f",
-      "#04bc83",
-      "#58a587",
-      "#7cc4ac"
+      "#f1faf6",
+      "#04c484",
+      "#59d8ae",
+      "#94e7ce",
+      "#2fd19c"
     ]
   },
   {
@@ -554,6 +611,54 @@
       "#fbb534",
       "#ec2904",
       "#f49a83"
+    ]
+  },
+  {
+    "slug": "browser-dispatcher",
+    "name": "BrowserDispatcher",
+    "description": "Sends link to the right browser depending on a set of predefined rules",
+    "website": "https://github.com/andriyko/browser-dispatcher/releases",
+    "repository": "https://github.com/andriyko/browser-dispatcher",
+    "icon": "browser-dispatcher-icon.png",
+    "icon32": "browser-dispatcher-icon-32.png",
+    "icon64": "browser-dispatcher-icon-64.png",
+    "icon128": "browser-dispatcher-icon-128.png",
+    "date": "2017-03-04",
+    "iconColors": [
+      "#2689ad",
+      "#dee8eb",
+      "#192326",
+      "#334850",
+      "#8cc4d4"
+    ]
+  },
+  {
+    "slug": "buka",
+    "name": "Buka",
+    "description": "EBook Management",
+    "website": "https://github.com/oguzhaninan/Buka",
+    "repository": "https://github.com/oguzhaninan/Buka.git",
+    "keywords": [
+      "book",
+      "pdf",
+      "ebook",
+      "book library",
+      "book management",
+      "ebook reader",
+      "pdf reader"
+    ],
+    "license": "MIT",
+    "icon": "buka-icon.png",
+    "icon32": "buka-icon-32.png",
+    "icon64": "buka-icon-64.png",
+    "icon128": "buka-icon-128.png",
+    "date": "2017-03-16",
+    "iconColors": [
+      "#3a5994",
+      "#ededee",
+      "#a5b4cb",
+      "#9cacc4",
+      "#94a1c4"
     ]
   },
   {
@@ -584,21 +689,40 @@
     ]
   },
   {
+    "slug": "caption",
+    "name": "Caption",
+    "description": "Find the right subtitles. Easy.",
+    "website": "https://getcaption.co",
+    "repository": "https://github.com/gielcobben/Caption",
+    "icon": "caption-icon.png",
+    "icon32": "caption-icon-32.png",
+    "icon64": "caption-icon-64.png",
+    "icon128": "caption-icon-128.png",
+    "date": "2017-03-06",
+    "iconColors": [
+      "#0497fb",
+      "#f8fafb",
+      "#04b4fb",
+      "#5ebdfa",
+      "#7cccfc"
+    ]
+  },
+  {
     "slug": "caret",
     "name": "Caret",
     "description": "Markdown editor for Mac / Windows / Linux",
-    "website": "http://caret.io",
+    "website": "https://caret.io",
     "icon": "caret-icon.png",
     "icon32": "caret-icon-32.png",
     "icon64": "caret-icon-64.png",
     "icon128": "caret-icon-128.png",
     "date": "2015-11-23",
     "iconColors": [
-      "#232323",
-      "#f5f5f5",
-      "#449aec",
-      "#707070",
-      "#8c8c8c"
+      "#f9f9f9",
+      "#242424",
+      "#7c7c7c",
+      "#747474",
+      "#676767"
     ]
   },
   {
@@ -690,6 +814,32 @@
     ]
   },
   {
+    "slug": "circuit",
+    "name": "Circuit",
+    "description": "Make your teamwork better",
+    "website": "https://www.circuit.com/",
+    "keywords": [
+      "collaboration",
+      "chat",
+      "conference",
+      "video",
+      "screenshare",
+      "webrtc"
+    ],
+    "icon": "circuit-icon.png",
+    "icon32": "circuit-icon-32.png",
+    "icon64": "circuit-icon-64.png",
+    "icon128": "circuit-icon-128.png",
+    "date": "2017-05-19",
+    "iconColors": [
+      "#8bc442",
+      "#fbfbf9",
+      "#bcdd92",
+      "#b1d981",
+      "#a4d36b"
+    ]
+  },
+  {
     "slug": "cloudcmd",
     "name": "Cloud Commander",
     "description": "Orthodox web file manager with console and editor",
@@ -738,12 +888,19 @@
   {
     "slug": "cloudtag",
     "name": "cloudtag",
-    "description": "Share files, easier.",
+    "description": "Sharing files, easier.",
     "website": "https://cloudtag.io/",
     "keywords": [
+      "cloud",
       "cloudtag",
-      "share files",
       "easy",
+      "easier",
+      "file",
+      "files",
+      "hashtag",
+      "sharing easier",
+      "sharing files",
+      "tag",
       "utility"
     ],
     "icon": "cloudtag-icon.png",
@@ -752,11 +909,11 @@
     "icon128": "cloudtag-icon-128.png",
     "date": "2016-12-23",
     "iconColors": [
-      "#2a76b2",
-      "#fbfbfb",
-      "#5c90b4",
-      "#a6c4dc",
-      "#91b4ce"
+      "#4484f4",
+      "#fbfbfc",
+      "#7facf7",
+      "#a4c4fc",
+      "#94bcfc"
     ]
   },
   {
@@ -800,6 +957,28 @@
       "#f7a308",
       "#0d94d7",
       "#946c2c"
+    ]
+  },
+  {
+    "slug": "code-story",
+    "name": "Code Story",
+    "description": "Code documentation, redefined.",
+    "website": "http://codestoryapp.com",
+    "keywords": [
+      "code",
+      "documentation"
+    ],
+    "icon": "code-story-icon.png",
+    "icon32": "code-story-icon-32.png",
+    "icon64": "code-story-icon-64.png",
+    "icon128": "code-story-icon-128.png",
+    "date": "2017-05-17",
+    "iconColors": [
+      "#fbfbfb",
+      "#853631",
+      "#a89c9b",
+      "#858484",
+      "#8c8c8c"
     ]
   },
   {
@@ -1328,7 +1507,7 @@
     "name": "Destroyer",
     "description": "Open-Source Lossless Audio Player",
     "website": "http://destroyer.audio",
-    "repository": "https://github.com/mashaal/destroyer",
+    "repository": "https://github.com/mutualrespect/destroyer",
     "license": "ISC",
     "keywords": [
       "audio",
@@ -1342,11 +1521,34 @@
     "icon128": "destroyer-icon-128.png",
     "date": "2017-01-06",
     "iconColors": [
-      "#543cd4",
-      "#1b1647",
-      "#342484",
-      "#442ca4",
-      "#2830c8"
+      "#5845c2",
+      "#141033",
+      "#352a75",
+      "#241c5c",
+      "#8979e9"
+    ]
+  },
+  {
+    "slug": "devdocs-app",
+    "name": "devdocs-app",
+    "description": "A full-featured desktop app for DevDocs.io.",
+    "website": "https://github.com/egoist/devdocs-app",
+    "repository": "https://github.com/egoist/devdocs-app",
+    "keywords": [
+      "devdocs"
+    ],
+    "license": "MIT",
+    "icon": "devdocs-app-icon.png",
+    "icon32": "devdocs-app-icon-32.png",
+    "icon64": "devdocs-app-icon-64.png",
+    "icon128": "devdocs-app-icon-128.png",
+    "date": "2017-02-19",
+    "iconColors": [
+      "#edcb1c",
+      "#34332f",
+      "#e6dea4",
+      "#8e7d30",
+      "#766404"
     ]
   },
   {
@@ -1416,6 +1618,30 @@
     ]
   },
   {
+    "slug": "dockstation",
+    "name": "DockStation",
+    "description": "Developer-centric application for manage projects based on Docker.",
+    "website": "https://dockstation.io/",
+    "keywords": [
+      "DockStation",
+      "Docker",
+      "Compose",
+      "Container"
+    ],
+    "icon": "dockstation-icon.png",
+    "icon32": "dockstation-icon-32.png",
+    "icon64": "dockstation-icon-64.png",
+    "icon128": "dockstation-icon-128.png",
+    "date": "2017-05-08",
+    "iconColors": [
+      "#c1e5f6",
+      "#29a6df",
+      "#263136",
+      "#6abbe1",
+      "#546c7c"
+    ]
+  },
+  {
     "slug": "donut",
     "name": "Donut",
     "description": "Dead-simple cross-platform cryptocurrency tracker!",
@@ -1439,6 +1665,32 @@
       "#f9ecf3",
       "#363435",
       "#7c6434"
+    ]
+  },
+  {
+    "slug": "eagle",
+    "name": "Eagle",
+    "description": "Organizing Ideas Has Never Been Easier",
+    "website": "http://eagle.cool",
+    "keywords": [
+      "Inspiration",
+      "Design",
+      "Sketch",
+      "Screenshot",
+      "Mac",
+      "Windows"
+    ],
+    "icon": "eagle-icon.png",
+    "icon32": "eagle-icon-32.png",
+    "icon64": "eagle-icon-64.png",
+    "icon128": "eagle-icon-128.png",
+    "date": "2017-03-06",
+    "iconColors": [
+      "#1777e5",
+      "#d8e4f1",
+      "#05d6fb",
+      "#6b9bea",
+      "#989cb8"
     ]
   },
   {
@@ -1552,6 +1804,35 @@
     ]
   },
   {
+    "slug": "epictask",
+    "name": "Epictask",
+    "description": "An Open Source + Extensible Github Issue Management App",
+    "website": "http://epictask.run",
+    "repository": "https://github.com/densebrain/epictask",
+    "keywords": [
+      "issue",
+      "tracker",
+      "project",
+      "issues",
+      "github",
+      "editor",
+      "typescript"
+    ],
+    "license": "Apache 2",
+    "icon": "epictask-icon.png",
+    "icon32": "epictask-icon-32.png",
+    "icon64": "epictask-icon-64.png",
+    "icon128": "epictask-icon-128.png",
+    "date": "2017-03-01",
+    "iconColors": [
+      "#212124",
+      "#6fd661",
+      "#3d6932",
+      "#346c4c",
+      "#548c34"
+    ]
+  },
+  {
     "slug": "etcher",
     "name": "Etcher",
     "description": "Flash OS images to SD cards & USB drives, safely and easily.",
@@ -1658,6 +1939,34 @@
       "#87949c",
       "#848c9c",
       "#748494"
+    ]
+  },
+  {
+    "slug": "figma",
+    "name": "Figma",
+    "description": "The collaborative interface design tool.",
+    "website": "https://www.figma.com/",
+    "keywords": [
+      "graphics",
+      "images",
+      "editor",
+      "svg",
+      "sketch",
+      "vector",
+      "ui",
+      "ux"
+    ],
+    "icon": "figma-icon.png",
+    "icon32": "figma-icon-32.png",
+    "icon64": "figma-icon-64.png",
+    "icon128": "figma-icon-128.png",
+    "date": "2017-05-05",
+    "iconColors": [
+      "#db5e7d",
+      "#040404",
+      "#14c2be",
+      "#09af70",
+      "#442156"
     ]
   },
   {
@@ -1947,6 +2256,45 @@
     ]
   },
   {
+    "slug": "fudget",
+    "name": "Fudget",
+    "description": "The budget planner you can actually use",
+    "website": "https://itunes.apple.com/gb/app/fudget-budget-planner-personal-finance-tracker/id1211707701?mt=12",
+    "keywords": [
+      "budget",
+      "planner",
+      "personal",
+      "finance",
+      "tracker",
+      "money",
+      "spending",
+      "money",
+      "pennies",
+      "monthly",
+      "budgeting",
+      "balance",
+      "bills",
+      "management",
+      "accounting",
+      "app",
+      "home",
+      "daily",
+      "manager"
+    ],
+    "icon": "fudget-icon.png",
+    "icon32": "fudget-icon-32.png",
+    "icon64": "fudget-icon-64.png",
+    "icon128": "fudget-icon-128.png",
+    "date": "2017-03-13",
+    "iconColors": [
+      "#fc791d",
+      "#fcf9f7",
+      "#fca56f",
+      "#fcc587",
+      "#fca947"
+    ]
+  },
+  {
     "slug": "gala",
     "name": "Gala",
     "description": "A new and easier way of searching images",
@@ -1984,6 +2332,26 @@
       "#777d86",
       "#949ca4",
       "#90949c"
+    ]
+  },
+  {
+    "slug": "gaucho",
+    "name": "Gaucho",
+    "description": "Configurable task launcher",
+    "website": "https://angrykoala.github.io/gaucho/",
+    "repository": "https://github.com/angrykoala/gaucho",
+    "license": "GPL-3.0",
+    "icon": "gaucho-icon.png",
+    "icon32": "gaucho-icon-32.png",
+    "icon64": "gaucho-icon-64.png",
+    "icon128": "gaucho-icon-128.png",
+    "date": "2017-03-30",
+    "iconColors": [
+      "#eb4f57",
+      "#fbfafa",
+      "#442c2c",
+      "#f48a8c",
+      "#f4a4a4"
     ]
   },
   {
@@ -2125,6 +2493,38 @@
     ]
   },
   {
+    "slug": "github-desktop",
+    "name": "GitHub Desktop",
+    "description": "Simple collaboration from your desktop",
+    "website": "https://desktop.github.com",
+    "repository": "https://github.com/desktop/desktop",
+    "keywords": [
+      "git",
+      "github",
+      "collaboration",
+      "editor",
+      "code",
+      "commits",
+      "review",
+      "developer",
+      "tool",
+      "productivity"
+    ],
+    "license": "MIT",
+    "icon": "github-desktop-icon.png",
+    "icon32": "github-desktop-icon-32.png",
+    "icon64": "github-desktop-icon-64.png",
+    "icon128": "github-desktop-icon-128.png",
+    "date": "2017-05-16",
+    "iconColors": [
+      "#72308d",
+      "#ededed",
+      "#ac4cb4",
+      "#848484",
+      "#969696"
+    ]
+  },
+  {
     "slug": "gitify",
     "name": "Gitify",
     "description": "Github notifications on your menu bar",
@@ -2163,6 +2563,31 @@
       "#bcbcbe",
       "#5f5f64",
       "#74747c"
+    ]
+  },
+  {
+    "slug": "gitmoji",
+    "name": "gitmoji",
+    "description": "An emoji guide for your commit messages",
+    "website": "https://github.com/Meadowcottage/gitmoji",
+    "keywords": [
+      "git",
+      "emoji",
+      "developer tools",
+      "mac"
+    ],
+    "license": "GPL-v3",
+    "icon": "gitmoji-icon.png",
+    "icon32": "gitmoji-icon-32.png",
+    "icon64": "gitmoji-icon-64.png",
+    "icon128": "gitmoji-icon-128.png",
+    "date": "2017-02-28",
+    "iconColors": [
+      "#fbdb64",
+      "#a85d4b",
+      "#fbfbfb",
+      "#f7e59d",
+      "#9c947c"
     ]
   },
   {
@@ -2302,6 +2727,35 @@
     ]
   },
   {
+    "slug": "gravit-designer",
+    "name": "Gravit Designer",
+    "description": "A vector based design tool similar to sketch or figma.",
+    "website": "http://designer.io",
+    "keywords": [
+      "graphics",
+      "images",
+      "editor",
+      "svg",
+      "png",
+      "design",
+      "sketch",
+      "ui",
+      "ux"
+    ],
+    "icon": "gravit-designer-icon.png",
+    "icon32": "gravit-designer-icon-32.png",
+    "icon64": "gravit-designer-icon-64.png",
+    "icon128": "gravit-designer-icon-128.png",
+    "date": "2017-03-06",
+    "iconColors": [
+      "#a34b5e",
+      "#edd954",
+      "#98924b",
+      "#aaa746",
+      "#cca755"
+    ]
+  },
+  {
     "slug": "groupme",
     "name": "GroupMe",
     "description": "Unofficial GroupMe App",
@@ -2437,6 +2891,28 @@
       "#8c9cc4",
       "#8494c4",
       "#949cc4"
+    ]
+  },
+  {
+    "slug": "headset",
+    "name": "Headset",
+    "description": "Discover, collect and listen to music from YouTube",
+    "website": "http://headsetapp.co",
+    "keywords": [
+      "Music",
+      "YouTube"
+    ],
+    "icon": "headset-icon.png",
+    "icon32": "headset-icon-32.png",
+    "icon64": "headset-icon-64.png",
+    "icon128": "headset-icon-128.png",
+    "date": "2017-04-25",
+    "iconColors": [
+      "#f6fafb",
+      "#04b6dd",
+      "#61d0ea",
+      "#2cbfe4",
+      "#35d4e8"
     ]
   },
   {
@@ -2930,6 +3406,24 @@
     ]
   },
   {
+    "slug": "justmd",
+    "name": "Justmd",
+    "description": "a markdown editor",
+    "website": "http://i38.me/justmd",
+    "icon": "justmd-icon.png",
+    "icon32": "justmd-icon-32.png",
+    "icon64": "justmd-icon-64.png",
+    "icon128": "justmd-icon-128.png",
+    "date": "2017-04-21",
+    "iconColors": [
+      "#dbc0c8",
+      "#6085df",
+      "#2f2d2f",
+      "#907c7b",
+      "#746464"
+    ]
+  },
+  {
     "slug": "kakapo",
     "name": "Kakapo",
     "description": "Ambient sound mixer to set a nice mood",
@@ -2996,6 +3490,65 @@
       "#8a19f9",
       "#9bc8e2",
       "#ca94fc"
+    ]
+  },
+  {
+    "slug": "katana",
+    "name": "Katana",
+    "description": "Open-source screenshot utility that lives in your menubar",
+    "website": "https://getkatana.com/",
+    "repository": "https://github.com/bluegill/katana",
+    "keywords": [
+      "screenshot",
+      "cloud",
+      "share",
+      "upload"
+    ],
+    "icon": "katana-icon.png",
+    "icon32": "katana-icon-32.png",
+    "icon64": "katana-icon-64.png",
+    "icon128": "katana-icon-128.png",
+    "date": "2017-03-02",
+    "iconColors": [
+      "#f9fbfb",
+      "#04a2f2",
+      "#044978",
+      "#3cccf8",
+      "#04749c"
+    ]
+  },
+  {
+    "slug": "keeper-password-manager-digital-vault",
+    "name": "Keeper Password Manager & Digital Vault",
+    "description": "Protect and manage your passwords, private documents and other confidential information.",
+    "website": "https://keepersecurity.com",
+    "keywords": [
+      "password",
+      "passwords",
+      "manager",
+      "login",
+      "username",
+      "keeper",
+      "vault",
+      "wallet",
+      "lock",
+      "safe",
+      "fingerprint",
+      "photo",
+      "generator",
+      "data"
+    ],
+    "icon": "keeper-password-manager-digital-vault-icon.png",
+    "icon32": "keeper-password-manager-digital-vault-icon-32.png",
+    "icon64": "keeper-password-manager-digital-vault-icon-64.png",
+    "icon128": "keeper-password-manager-digital-vault-icon-128.png",
+    "date": "2017-03-17",
+    "iconColors": [
+      "#f2bd0a",
+      "#242421",
+      "#aaa9a6",
+      "#747474",
+      "#7c6404"
     ]
   },
   {
@@ -3299,6 +3852,28 @@
     ]
   },
   {
+    "slug": "markdown-office",
+    "name": "Markdown Office",
+    "description": "Office for teams using Google Drive",
+    "website": "https://mdoffice.shwld.net",
+    "keywords": [
+      "markdown",
+      "google drive"
+    ],
+    "icon": "markdown-office-icon.png",
+    "icon32": "markdown-office-icon-32.png",
+    "icon64": "markdown-office-icon-64.png",
+    "icon128": "markdown-office-icon-128.png",
+    "date": "2017-03-16",
+    "iconColors": [
+      "#787979",
+      "#24c0c0",
+      "#e98b05",
+      "#52bccc",
+      "#b4a990"
+    ]
+  },
+  {
     "slug": "markdownify",
     "name": "Markdownify",
     "description": "This is a minimal Markdown Editor desktop app based on Electron.",
@@ -3329,6 +3904,30 @@
     ]
   },
   {
+    "slug": "marksearch",
+    "name": "MarkSearch",
+    "description": "Desktop bookmarking app.",
+    "website": "https://darkle.github.io/MarkSearch/",
+    "repository": "https://github.com/Darkle/MarkSearch",
+    "keywords": [
+      "bookmarking",
+      "bookmarks"
+    ],
+    "license": "MIT",
+    "icon": "marksearch-icon.png",
+    "icon32": "marksearch-icon-32.png",
+    "icon64": "marksearch-icon-64.png",
+    "icon128": "marksearch-icon-128.png",
+    "date": "2017-03-09",
+    "iconColors": [
+      "#349cdc",
+      "#389cdc",
+      "#389cdc",
+      "#389cdc",
+      "#389cdc"
+    ]
+  },
+  {
     "slug": "marp",
     "name": "Marp",
     "description": "Markdown Presentation Writer",
@@ -3352,6 +3951,32 @@
       "#60abd7",
       "#84c4e2",
       "#a0b4c4"
+    ]
+  },
+  {
+    "slug": "matrix-writer",
+    "name": "Matrix Writer",
+    "description": "Modern cross platform blog editor",
+    "website": "http://www.matrixrepublic.com/product/details/matrix-writer",
+    "keywords": [
+      "blog editor",
+      "blog",
+      "post editor",
+      "google blog",
+      "wordpress",
+      "metaweblog"
+    ],
+    "icon": "matrix-writer-icon.png",
+    "icon32": "matrix-writer-icon-32.png",
+    "icon64": "matrix-writer-icon-64.png",
+    "icon128": "matrix-writer-icon-128.png",
+    "date": "2017-04-13",
+    "iconColors": [
+      "#fbb343",
+      "#23abe3",
+      "#fcfbfa",
+      "#0c74bc",
+      "#fcd497"
     ]
   },
   {
@@ -3391,6 +4016,32 @@
     ]
   },
   {
+    "slug": "media-mate",
+    "name": "Media Mate",
+    "description": "Media server/player/downloader - in one",
+    "website": "https://github.com/willyb321/media_mate",
+    "repository": "https://github.com/willyb321/media_mate",
+    "keywords": [
+      "media",
+      "server",
+      "downloader",
+      "tv"
+    ],
+    "license": "MIT",
+    "icon": "media-mate-icon.png",
+    "icon32": "media-mate-icon-32.png",
+    "icon64": "media-mate-icon-64.png",
+    "icon128": "media-mate-icon-128.png",
+    "date": "2017-05-09",
+    "iconColors": [
+      "#040404",
+      "#080404",
+      "#080404",
+      "#080404",
+      "#080404"
+    ]
+  },
+  {
     "slug": "medley",
     "name": "Medley",
     "description": "Programming note taking redefined",
@@ -3411,6 +4062,33 @@
       "#e19095",
       "#e5a4ac",
       "#ecacac"
+    ]
+  },
+  {
+    "slug": "meistertask",
+    "name": "MeisterTask",
+    "description": "A Kanban board based task manager for single persons and teams.",
+    "website": "https://www.meistertask.com/",
+    "keywords": [
+      "kanban",
+      "taskmanagement",
+      "premium",
+      "free",
+      "teams",
+      "projectmanagement",
+      "management"
+    ],
+    "icon": "meistertask-icon.png",
+    "icon32": "meistertask-icon-32.png",
+    "icon64": "meistertask-icon-64.png",
+    "icon128": "meistertask-icon-128.png",
+    "date": "2017-03-14",
+    "iconColors": [
+      "#fbfbfb",
+      "#0ecaf5",
+      "#a5b7ba",
+      "#bcbcbc",
+      "#c4c4c4"
     ]
   },
   {
@@ -3453,6 +4131,34 @@
       "#c8a98f",
       "#a080a4",
       "#9aa4b8"
+    ]
+  },
+  {
+    "slug": "minetime",
+    "name": "MineTime",
+    "description": "A universal calendar app with smart scheduling and time analytics features. Organize your Google, Exchange and Outlook.com calendars in one place.",
+    "website": "https://minetime.ai",
+    "repository": "https://github.com/marcoancona/MineTime",
+    "keywords": [
+      "calendar",
+      "schedule",
+      "google",
+      "exchange",
+      "outlook",
+      "artificial",
+      "intelligence"
+    ],
+    "icon": "minetime-icon.png",
+    "icon32": "minetime-icon-32.png",
+    "icon64": "minetime-icon-64.png",
+    "icon128": "minetime-icon-128.png",
+    "date": "2017-04-12",
+    "iconColors": [
+      "#f6f6f6",
+      "#b4b4b4",
+      "#8d8d8d",
+      "#acacac",
+      "#c9c9c9"
     ]
   },
   {
@@ -3796,6 +4502,31 @@
     ]
   },
   {
+    "slug": "neutrinometrics",
+    "name": "NeutrinoMetrics",
+    "description": "Analytics for apps made with electron",
+    "website": "https://neutrinometrics.net",
+    "keywords": [
+      "analytics",
+      "data",
+      "desktop",
+      "electron"
+    ],
+    "license": "GPLv2",
+    "icon": "neutrinometrics-icon.png",
+    "icon32": "neutrinometrics-icon-32.png",
+    "icon64": "neutrinometrics-icon-64.png",
+    "icon128": "neutrinometrics-icon-128.png",
+    "date": "2017-03-10",
+    "iconColors": [
+      "#3aa199",
+      "#f6f9f9",
+      "#5fc4bb",
+      "#65ccc4",
+      "#86c9c2"
+    ]
+  },
+  {
     "slug": "nimble",
     "name": "Nimble",
     "description": "A simple Wolfram|Alpha&#174; menubar client for Mac OS X",
@@ -3886,6 +4617,35 @@
       "#5c759c",
       "#1ecbf2",
       "#465c78"
+    ]
+  },
+  {
+    "slug": "nuclear",
+    "name": "nuclear",
+    "description": "Multiplatform music player that streams from multiple sources",
+    "website": "http://nuclear.gumblert.tech",
+    "repository": "https://github.com/nukeop/nuclear",
+    "keywords": [
+      "Electron",
+      "music",
+      "player",
+      "stream",
+      "Youtube",
+      "last.fm",
+      "desktop"
+    ],
+    "license": "GPL-3.0",
+    "icon": "nuclear-icon.png",
+    "icon32": "nuclear-icon-32.png",
+    "icon64": "nuclear-icon-64.png",
+    "icon128": "nuclear-icon-128.png",
+    "date": "2017-02-27",
+    "iconColors": [
+      "#767ae3",
+      "#fbfbfb",
+      "#a352dd",
+      "#54a9f6",
+      "#bebada"
     ]
   },
   {
@@ -4142,6 +4902,35 @@
     ]
   },
   {
+    "slug": "phiewer",
+    "name": "Phiewer",
+    "description": "The standard media viewer for Mac",
+    "website": "http://phiewer.com/",
+    "keywords": [
+      "Image Viewer",
+      "Video Viewer",
+      "Audio Player",
+      "Fast",
+      "Simple",
+      "Ambience",
+      "EXIF",
+      "Folder",
+      "Browse Folder"
+    ],
+    "icon": "phiewer-icon.png",
+    "icon32": "phiewer-icon-32.png",
+    "icon64": "phiewer-icon-64.png",
+    "icon128": "phiewer-icon-128.png",
+    "date": "2017-05-03",
+    "iconColors": [
+      "#d8c6f1",
+      "#3bc3fb",
+      "#de1ffb",
+      "#9f60fa",
+      "#738ef9"
+    ]
+  },
+  {
     "slug": "phonegap",
     "name": "PhoneGap",
     "description": "The open source framework that gets you building amazing mobile apps using web technology",
@@ -4188,11 +4977,11 @@
     "icon128": "phonepresenter-icon-128.png",
     "date": "2016-07-03",
     "iconColors": [
-      "#2594f3",
-      "#f5f8fb",
-      "#080808",
-      "#515151",
-      "#82c4fc"
+      "#f4f8fc",
+      "#2494f4",
+      "#6fbaf6",
+      "#54b4f4",
+      "#4caaf4"
     ]
   },
   {
@@ -4289,6 +5078,61 @@
     ]
   },
   {
+    "slug": "playcode",
+    "name": "PlayCode",
+    "description": "Desktop client for Playcode Online Javascript Editor",
+    "website": "http://github.com/meadowcottage/playcode-desktop",
+    "keywords": [
+      "playcode",
+      "editor",
+      "developer tools",
+      "mac"
+    ],
+    "license": "GPL-v3",
+    "icon": "playcode-icon.png",
+    "icon32": "playcode-icon-32.png",
+    "icon64": "playcode-icon-64.png",
+    "icon128": "playcode-icon-128.png",
+    "date": "2017-03-17",
+    "iconColors": [
+      "#2c2c2c",
+      "#74a146",
+      "#606058",
+      "#545954",
+      "#444444"
+    ]
+  },
+  {
+    "slug": "pomolectron",
+    "name": "Pomolectron",
+    "description": "A Pomodoro app in your menubar/tray.",
+    "website": "https://github.com/amitmerchant1990/pomolectron",
+    "repository": "https://github.com/amitmerchant1990/pomolectron",
+    "keywords": [
+      "electron",
+      "pomodoro",
+      "productivity",
+      "node",
+      "minimal",
+      "countdown",
+      "timer",
+      "html",
+      "desktop"
+    ],
+    "icon": "pomolectron-icon.png",
+    "icon32": "pomolectron-icon-32.png",
+    "icon64": "pomolectron-icon-64.png",
+    "icon128": "pomolectron-icon-128.png",
+    "date": "2017-03-15",
+    "iconColors": [
+      "#d33b34",
+      "#8cc254",
+      "#e77260",
+      "#ac8044",
+      "#bc5c3c"
+    ]
+  },
+  {
     "slug": "popkey",
     "name": "PopKey",
     "description": "The perfect GIF right at your fingertips",
@@ -4382,6 +5226,34 @@
       "#e84c3c",
       "#e84c3c",
       "#e84c3c"
+    ]
+  },
+  {
+    "slug": "prexview",
+    "name": "PrexView",
+    "description": "Convert data from XML or JSON to high quality documents in PDF, HTML or Image.",
+    "website": "https://prexview.com",
+    "keywords": [
+      "xml",
+      "pdf",
+      "xml-to-pdf",
+      "json",
+      "json-to-pdf",
+      "convert",
+      "xml parser",
+      "json parser"
+    ],
+    "icon": "prexview-icon.png",
+    "icon32": "prexview-icon-32.png",
+    "icon64": "prexview-icon-64.png",
+    "icon128": "prexview-icon-128.png",
+    "date": "2017-04-03",
+    "iconColors": [
+      "#76c46e",
+      "#fbfbfb",
+      "#bde3bc",
+      "#ace4ac",
+      "#d4eccc"
     ]
   },
   {
@@ -4591,6 +5463,34 @@
     ]
   },
   {
+    "slug": "rebaslight",
+    "name": "Rebaslight",
+    "description": "Easy to use video special effects editor",
+    "website": "http://www.rebaslight.com/",
+    "repository": "https://github.com/rebaslight/rebaslight",
+    "keywords": [
+      "special effects",
+      "video editor",
+      "sfx",
+      "lightsaber",
+      "muzzle-flash",
+      "lightning",
+      "laser"
+    ],
+    "icon": "rebaslight-icon.png",
+    "icon32": "rebaslight-icon-32.png",
+    "icon64": "rebaslight-icon-64.png",
+    "icon128": "rebaslight-icon-128.png",
+    "date": "2017-05-05",
+    "iconColors": [
+      "#11111f",
+      "#dfdffc",
+      "#6363c4",
+      "#3d3d79",
+      "#8c8cf9"
+    ]
+  },
+  {
     "slug": "remember",
     "name": "Remember",
     "description": "Business card management",
@@ -4716,6 +5616,35 @@
     ]
   },
   {
+    "slug": "sandman",
+    "name": "Sandman",
+    "description": "Smart sleep notifications",
+    "website": "https://alexanderepstein.github.io/Sandman/",
+    "repository": "https://github.com/alexanderepstein/Sandman/",
+    "keywords": [
+      "Sandman",
+      "sleep",
+      "insomnia",
+      "rest",
+      "productivity",
+      "utility",
+      "notification"
+    ],
+    "license": "MIT",
+    "icon": "sandman-icon.png",
+    "icon32": "sandman-icon-32.png",
+    "icon64": "sandman-icon-64.png",
+    "icon128": "sandman-icon-128.png",
+    "date": "2017-05-09",
+    "iconColors": [
+      "#9990ab",
+      "#f4e0a9",
+      "#1275bc",
+      "#7468a7",
+      "#b4d4ec"
+    ]
+  },
+  {
     "slug": "screencat",
     "name": "ScreenCat",
     "description": "WebRTC screensharing",
@@ -4788,6 +5717,30 @@
       "#64707c",
       "#6c7482",
       "#646c74"
+    ]
+  },
+  {
+    "slug": "sejda-pdf-desktop",
+    "name": "Sejda PDF Desktop",
+    "description": "Pleasant and productive PDF software that you'll love to use",
+    "website": "https://www.sejda.com/desktop",
+    "keywords": [
+      "PDF",
+      "document",
+      "editor",
+      "productivity"
+    ],
+    "icon": "sejda-pdf-desktop-icon.png",
+    "icon32": "sejda-pdf-desktop-icon-32.png",
+    "icon64": "sejda-pdf-desktop-icon-64.png",
+    "icon128": "sejda-pdf-desktop-icon-128.png",
+    "date": "2017-03-09",
+    "iconColors": [
+      "#249c6c",
+      "#fbfbfb",
+      "#94ccb4",
+      "#69bd9d",
+      "#84c4ac"
     ]
   },
   {
@@ -4969,6 +5922,30 @@
       "#44b464",
       "#3e7be1",
       "#737484"
+    ]
+  },
+  {
+    "slug": "shortcm",
+    "name": "Short.cm",
+    "description": "An app for making short links and screenshots on your custom domain",
+    "website": "https://short.cm/extensions",
+    "keywords": [
+      "links",
+      "linkshortener",
+      "screenshot",
+      "domain"
+    ],
+    "icon": "shortcm-icon.png",
+    "icon32": "shortcm-icon-32.png",
+    "icon64": "shortcm-icon-64.png",
+    "icon128": "shortcm-icon-128.png",
+    "date": "2017-03-14",
+    "iconColors": [
+      "#fbfbfb",
+      "#33d3a3",
+      "#2baa82",
+      "#79c4ab",
+      "#94dcc4"
     ]
   },
   {
@@ -5184,6 +6161,33 @@
       "#d91e64",
       "#7d7d7d",
       "#949494"
+    ]
+  },
+  {
+    "slug": "soundkeys",
+    "name": "Soundkeys",
+    "description": "Soundcloud wrapped in a Desktop player with user customizable keyboard shortcuts and notifications",
+    "website": "https://github.com/MSandeep96/SoundKeys",
+    "repository": "https://github.com/MSandeep96/SoundKeys",
+    "keywords": [
+      "music",
+      "soundcloud",
+      "shortcuts",
+      "keymappings",
+      "mediakeys",
+      "notifications"
+    ],
+    "icon": "soundkeys-icon.png",
+    "icon32": "soundkeys-icon-32.png",
+    "icon64": "soundkeys-icon-64.png",
+    "icon128": "soundkeys-icon-128.png",
+    "date": "2017-02-21",
+    "iconColors": [
+      "#fa7304",
+      "#080807",
+      "#f4f4f3",
+      "#979594",
+      "#747474"
     ]
   },
   {
@@ -5420,6 +6424,32 @@
     ]
   },
   {
+    "slug": "surf",
+    "name": "Surf",
+    "description": "Organize your ideas and inspirations with ease",
+    "website": "https://surfapp.io",
+    "keywords": [
+      "link",
+      "note",
+      "organizer",
+      "productivity",
+      "ideas",
+      "todo"
+    ],
+    "icon": "surf-icon.png",
+    "icon32": "surf-icon-32.png",
+    "icon64": "surf-icon-64.png",
+    "icon128": "surf-icon-128.png",
+    "date": "2017-03-31",
+    "iconColors": [
+      "#fbfbfb",
+      "#22a3e3",
+      "#0d67a2",
+      "#98d9f3",
+      "#7c9cbc"
+    ]
+  },
+  {
     "slug": "svgsus",
     "name": "Svgsus",
     "description": "Organize, clean and transform your SVGs",
@@ -5467,28 +6497,30 @@
     ]
   },
   {
-    "slug": "symbsearch",
-    "name": "SymbSearch",
-    "description": "A tool for searching symbols and special letters.",
-    "website": "http://leun4m.github.io/symbsearch",
-    "repository": "https://github.com/Leun4m/symbsearch",
+    "slug": "system-designer",
+    "name": "System Designer",
+    "description": "IDE for designing JavaScript applications driven by the model",
+    "website": "https://designfirst.io/systemdesigner/",
+    "repository": "https://github.com/design-first/system-designer",
     "keywords": [
-      "unicode",
-      "letters",
-      "symbols"
+      "uml",
+      "model",
+      "system",
+      "IDE",
+      "OSGI"
     ],
-    "license": "MIT",
-    "icon": "symbsearch-icon.png",
-    "icon32": "symbsearch-icon-32.png",
-    "icon64": "symbsearch-icon-64.png",
-    "icon128": "symbsearch-icon-128.png",
-    "date": "2016-12-28",
+    "license": "Apache-2.0",
+    "icon": "system-designer-icon.png",
+    "icon32": "system-designer-icon-32.png",
+    "icon64": "system-designer-icon-64.png",
+    "icon128": "system-designer-icon-128.png",
+    "date": "2017-04-11",
     "iconColors": [
-      "#0e4c6b",
-      "#f9fafa",
-      "#84a4b4",
-      "#7ca4b4",
-      "#7c9cb4"
+      "#7b939b",
+      "#fbfbfb",
+      "#c4ccd4",
+      "#b4bcc4",
+      "#b4c4c4"
     ]
   },
   {
@@ -5532,6 +6564,34 @@
       "#f29829",
       "#36b5bd",
       "#a9acb4"
+    ]
+  },
+  {
+    "slug": "tea-ebook",
+    "name": "TEA Ebook",
+    "description": "Application TEA Ebook pour Mac / Windows / Linux",
+    "website": "https://app.tea-ebook.com",
+    "keywords": [
+      "ebook",
+      "Reader",
+      "epub",
+      "PDF"
+    ],
+    "locales": [
+      "fr",
+      "en"
+    ],
+    "icon": "tea-ebook-icon.png",
+    "icon32": "tea-ebook-icon-32.png",
+    "icon64": "tea-ebook-icon-64.png",
+    "icon128": "tea-ebook-icon-128.png",
+    "date": "2017-04-27",
+    "iconColors": [
+      "#e9e9e7",
+      "#344b5c",
+      "#949ca4",
+      "#76828e",
+      "#848c9c"
     ]
   },
   {
@@ -5585,6 +6645,31 @@
       "#f37926",
       "#fbd45f",
       "#f3b882"
+    ]
+  },
+  {
+    "slug": "testrec",
+    "name": "Testrec",
+    "description": "Record, playback and export protractor tests in seconds",
+    "website": "https://testrec.com",
+    "keywords": [
+      "protractor",
+      "tests",
+      "tool",
+      "frontend",
+      "development"
+    ],
+    "icon": "testrec-icon.png",
+    "icon32": "testrec-icon-32.png",
+    "icon64": "testrec-icon-64.png",
+    "icon128": "testrec-icon-128.png",
+    "date": "2017-04-19",
+    "iconColors": [
+      "#1e99fa",
+      "#eef7fb",
+      "#75b8ee",
+      "#36bcfc",
+      "#8cd4fc"
     ]
   },
   {
@@ -5734,6 +6819,33 @@
     ]
   },
   {
+    "slug": "todometer",
+    "name": "todometer",
+    "description": "A meter-based to-do list.",
+    "website": "https://cassidoo.github.io/todometer/",
+    "repository": "https://github.com/cassidoo/todometer/",
+    "keywords": [
+      "todometer",
+      "to-do list",
+      "todo",
+      "Productivity",
+      "task",
+      "focus"
+    ],
+    "icon": "todometer-icon.png",
+    "icon32": "todometer-icon-32.png",
+    "icon64": "todometer-icon-64.png",
+    "icon128": "todometer-icon-128.png",
+    "date": "2017-05-06",
+    "iconColors": [
+      "#2c2c34",
+      "#63dba3",
+      "#555459",
+      "#646464",
+      "#64646c"
+    ]
+  },
+  {
     "slug": "tofino",
     "name": "Tofino",
     "description": "Experimental web browser from Mozilla",
@@ -5749,6 +6861,41 @@
       "#9dc3e4",
       "#3a8ccc",
       "#7cbce4"
+    ]
+  },
+  {
+    "slug": "tournamenter-manager",
+    "name": "Tournamenter Manager",
+    "description": "Manage your Tournament event and show Live views to public.",
+    "website": "https://github.com/ivanseidel/TournamenterApp",
+    "repository": "https://github.com/ivanseidel/TournamenterApp",
+    "keywords": [
+      "tournament",
+      "event",
+      "organization",
+      "manager",
+      "soccer",
+      "table",
+      "live view",
+      "brackets",
+      "views",
+      "live views",
+      "teams",
+      "football",
+      "server runner"
+    ],
+    "license": "MIT",
+    "icon": "tournamenter-manager-icon.png",
+    "icon32": "tournamenter-manager-icon-32.png",
+    "icon64": "tournamenter-manager-icon-64.png",
+    "icon128": "tournamenter-manager-icon-128.png",
+    "date": "2017-04-23",
+    "iconColors": [
+      "#1974d3",
+      "#fafbfc",
+      "#3bb3f3",
+      "#71c9f4",
+      "#54bcf4"
     ]
   },
   {
@@ -6196,6 +7343,25 @@
     ]
   },
   {
+    "slug": "wavebox",
+    "name": "Wavebox",
+    "description": "Previously WMail. Gmail, Google Inbox, Outlook, Office 365, Slack, Trello & more",
+    "website": "https://wavebox.io",
+    "repository": "https://github.com/wavebox/waveboxapp/",
+    "icon": "wavebox-icon.png",
+    "icon32": "wavebox-icon-32.png",
+    "icon64": "wavebox-icon-64.png",
+    "icon128": "wavebox-icon-128.png",
+    "date": "2017-04-16",
+    "iconColors": [
+      "#fbfbfc",
+      "#04abeb",
+      "#5ccbf4",
+      "#9edffb",
+      "#3cc4f4"
+    ]
+  },
+  {
     "slug": "webtorrent",
     "name": "WebTorrent",
     "description": "The streaming torrent client",
@@ -6265,7 +7431,7 @@
     "slug": "whatever",
     "name": "Whatever",
     "description": "Unofficial Evernote client for Linux desktop",
-    "website": "https://github.com/CellarD0-0r/whatever",
+    "website": "https://cellard0-0r.github.io/whatever/",
     "repository": "https://github.com/CellarD0-0r/whatever",
     "keywords": [
       "Evernote",
@@ -6446,6 +7612,25 @@
       "#484444",
       "#484444",
       "#484444"
+    ]
+  },
+  {
+    "slug": "wowcrypt",
+    "name": "WoWCrypt",
+    "description": "World of Warcraft Database Browser",
+    "website": "https://github.com/XeonPowder/WoWCrypt",
+    "repository": "https://github.com/XeonPowder/WoWCrypt",
+    "icon": "wowcrypt-icon.png",
+    "icon32": "wowcrypt-icon-32.png",
+    "icon64": "wowcrypt-icon-64.png",
+    "icon128": "wowcrypt-icon-128.png",
+    "date": "2017-05-19",
+    "iconColors": [
+      "#e2d4e2",
+      "#101916",
+      "#d951eb",
+      "#8a8888",
+      "#6c746c"
     ]
   },
   {

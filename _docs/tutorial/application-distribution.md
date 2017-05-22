@@ -1,5 +1,5 @@
 ---
-version: v1.6.0
+version: v1.6.8
 permalink: /docs/tutorial/application-distribution/
 category: Tutorial
 redirect_from:
@@ -9,9 +9,9 @@ redirect_from:
   - /docs/v0.37.5/tutorial/application-distribution/
   - /docs/v0.37.4/tutorial/application-distribution/
   - /docs/v0.37.3/tutorial/application-distribution/
-  - /docs/v0.36.12/tutorial/application-distribution/
   - /docs/v0.37.1/tutorial/application-distribution/
   - /docs/v0.37.0/tutorial/application-distribution/
+  - /docs/v0.36.12/tutorial/application-distribution/
   - /docs/v0.36.11/tutorial/application-distribution/
   - /docs/v0.36.10/tutorial/application-distribution/
   - /docs/v0.36.9/tutorial/application-distribution/
@@ -21,14 +21,14 @@ redirect_from:
   - /docs/v0.36.5/tutorial/application-distribution/
   - /docs/v0.36.4/tutorial/application-distribution/
   - /docs/v0.36.3/tutorial/application-distribution/
-  - /docs/v0.35.5/tutorial/application-distribution/
   - /docs/v0.36.2/tutorial/application-distribution/
   - /docs/v0.36.0/tutorial/application-distribution/
+  - /docs/v0.35.5/tutorial/application-distribution/
   - /docs/v0.35.4/tutorial/application-distribution/
   - /docs/v0.35.3/tutorial/application-distribution/
   - /docs/v0.35.2/tutorial/application-distribution/
-  - /docs/v0.34.4/tutorial/application-distribution/
   - /docs/v0.35.1/tutorial/application-distribution/
+  - /docs/v0.34.4/tutorial/application-distribution/
   - /docs/v0.34.3/tutorial/application-distribution/
   - /docs/v0.34.2/tutorial/application-distribution/
   - /docs/v0.34.1/tutorial/application-distribution/
@@ -88,6 +88,65 @@ title: Application Distribution
 excerpt: ''
 sort_title: application-distribution
 ---
+
+
+
+<!--
+
+
+                                      ::::
+                                    :o+//+o:
+                                    +o    oo-
+                                    :o+//oo/+o/
+                                      -::-   -oo:
+                                               /s/
+                      -::::::::-                :s/  :::--
+                  :+oo+////////+:        -:/+oo/ :s:-///++oo+:
+                /o+:                -/+oo+/:-     +o-      -:+o:
+               /s:              -:+o+/:           -o+         :s/
+              -s/            -/oo/:                /s-         +s-
+              -s/         -/oo/-                   -s/         /s-
+               oo       :+o/-                       oo         oo
+               -s/    :oo/                          /s-       /s-
+                :s/ :oo:              -::-          /s-      /s:
+                  -+o/               /ssss/         :s:    -+o-
+                 :o+--               /ssss/         :s:   :o+-
+                :s/  +o:              -::-          /s-   --
+               -s/    :+o/-                         /s-
+               oo       -+o+-                       oo
+              -s/         -/oo/-                   -s/
+             -+soo+:         -/oo/:                /s-      /oooo+-
+             o+   :s:           -:+o+/:-          -o+      /s:  -oo
+             oo:--/s:       ::      -:+oo+/:-     -/-      /s/--:o+
+              :+++/-        :s:          -:/+ooo++//////++oo//+o+:
+                             /s:                --::::::--
+                              /s/              /s-
+                               :oo:          :oo:
+                                 /oo/-    -/oo/
+                                   -/+oooo+/-
+
+
+
+
+
+                   _______  _______  _______  _______  __
+                  |       ||       ||       ||       ||  |
+                  |  _____||_     _||   _   ||    _  ||  |
+                  | |_____   |   |  |  | |  ||   |_| ||  |
+                  |_____  |  |   |  |  |_|  ||    ___||__|
+                   _____| |  |   |  |       ||   |     __
+                  |_______|  |___|  |_______||___|    |__|
+
+
+    This file is generated automatically, so it should not be edited.
+
+    To make changes, head over to the electron/electron repository:
+
+    https://github.com/electron/electron/blob/master/docs/tutorial/application-distribution.md
+
+    Thanks!
+
+-->
 # Application Distribution
 
 To distribute your app with Electron, you need to download Electron's [prebuilt binaries](https://github.com/electron/electron/releases). Next, the folder containing your app should be named `app` and placed in Electron's resources directory as shown in the following examples. Note that the location of Electron's prebuilt binaries is indicated with `electron/` in the examples below.

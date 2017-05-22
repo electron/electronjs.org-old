@@ -1,5 +1,5 @@
 ---
-version: v1.6.0
+version: v1.6.8
 permalink: /docs/api/menu/
 category: API
 redirect_from:
@@ -9,9 +9,9 @@ redirect_from:
   - /docs/v0.37.5/api/menu/
   - /docs/v0.37.4/api/menu/
   - /docs/v0.37.3/api/menu/
-  - /docs/v0.36.12/api/menu/
   - /docs/v0.37.1/api/menu/
   - /docs/v0.37.0/api/menu/
+  - /docs/v0.36.12/api/menu/
   - /docs/v0.36.11/api/menu/
   - /docs/v0.36.10/api/menu/
   - /docs/v0.36.9/api/menu/
@@ -21,14 +21,14 @@ redirect_from:
   - /docs/v0.36.5/api/menu/
   - /docs/v0.36.4/api/menu/
   - /docs/v0.36.3/api/menu/
-  - /docs/v0.35.5/api/menu/
   - /docs/v0.36.2/api/menu/
   - /docs/v0.36.0/api/menu/
+  - /docs/v0.35.5/api/menu/
   - /docs/v0.35.4/api/menu/
   - /docs/v0.35.3/api/menu/
   - /docs/v0.35.2/api/menu/
-  - /docs/v0.34.4/api/menu/
   - /docs/v0.35.1/api/menu/
+  - /docs/v0.34.4/api/menu/
   - /docs/v0.34.3/api/menu/
   - /docs/v0.34.2/api/menu/
   - /docs/v0.34.1/api/menu/
@@ -87,6 +87,65 @@ title: Menu
 excerpt: Create native application menus and context menus.
 sort_title: menu
 ---
+
+
+
+<!--
+
+
+                                      ::::
+                                    :o+//+o:
+                                    +o    oo-
+                                    :o+//oo/+o/
+                                      -::-   -oo:
+                                               /s/
+                      -::::::::-                :s/  :::--
+                  :+oo+////////+:        -:/+oo/ :s:-///++oo+:
+                /o+:                -/+oo+/:-     +o-      -:+o:
+               /s:              -:+o+/:           -o+         :s/
+              -s/            -/oo/:                /s-         +s-
+              -s/         -/oo/-                   -s/         /s-
+               oo       :+o/-                       oo         oo
+               -s/    :oo/                          /s-       /s-
+                :s/ :oo:              -::-          /s-      /s:
+                  -+o/               /ssss/         :s:    -+o-
+                 :o+--               /ssss/         :s:   :o+-
+                :s/  +o:              -::-          /s-   --
+               -s/    :+o/-                         /s-
+               oo       -+o+-                       oo
+              -s/         -/oo/-                   -s/
+             -+soo+:         -/oo/:                /s-      /oooo+-
+             o+   :s:           -:+o+/:-          -o+      /s:  -oo
+             oo:--/s:       ::      -:+oo+/:-     -/-      /s/--:o+
+              :+++/-        :s:          -:/+ooo++//////++oo//+o+:
+                             /s:                --::::::--
+                              /s/              /s-
+                               :oo:          :oo:
+                                 /oo/-    -/oo/
+                                   -/+oooo+/-
+
+
+
+
+
+                   _______  _______  _______  _______  __
+                  |       ||       ||       ||       ||  |
+                  |  _____||_     _||   _   ||    _  ||  |
+                  | |_____   |   |  |  | |  ||   |_| ||  |
+                  |_____  |  |   |  |  |_|  ||    ___||__|
+                   _____| |  |   |  |       ||   |     __
+                  |_______|  |___|  |_______||___|    |__|
+
+
+    This file is generated automatically, so it should not be edited.
+
+    To make changes, head over to the electron/electron repository:
+
+    https://github.com/electron/electron/blob/master/docs/api/menu.md
+
+    Thanks!
+
+-->
 ## Class: Menu
 
 > Create native application menus and context menus.
@@ -107,17 +166,21 @@ The `menu` class has the following static methods:
 
 Sets `menu` as the application menu on macOS. On Windows and Linux, the `menu` will be set as each window's top menu.
 
+Passing `null` will remove the menu bar on Windows and Linux but has no effect on macOS.
+
 **Note:** This API has to be called after the `ready` event of `app` module.
 
 #### `Menu.getApplicationMenu()`
 
 Returns `Menu` - The application menu, if set, or `null`, if not set.
 
+**Note:** The returned `Menu` instance doesn't support dynamic addition or removal of menu items. [Instance properties](#instance-properties) can still be dynamically modified.
+
 #### `Menu.sendActionToFirstResponder(action)` _macOS_
 
 *   `action` String
 
-Sends the `action` to the first responder of application. This is used for emulating default Cocoa menu behaviors, usually you would just use the `role` property of `MenuItem`.
+Sends the `action` to the first responder of application. This is used for emulating default macOS menu behaviors. Usually you would just use the [`role`]({{site.baseurl}}/docs/api/menu-item#roles) property of a [`MenuItem`]({{site.baseurl}}/docs/api/menu-item).
 
 See the [macOS Cocoa Event Handling Guide](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/EventOverview/EventArchitecture/EventArchitecture.html#//apple_ref/doc/uid/10000060i-CH3-SW7) for more information on macOS' native actions.
 
@@ -135,14 +198,22 @@ You can also attach other fields to the element of the `template` and they will 
 
 The `menu` object has the following instance methods:
 
-#### `menu.popup([browserWindow, x, y, positioningItem])`
+#### `menu.popup([browserWindow, options])`
 
-*   `browserWindow` BrowserWindow (optional) - Default is `BrowserWindow.getFocusedWindow()`.
-*   `x` Number (optional) - Default is the current mouse cursor position.
-*   `y` Number (**required** if `x` is used) - Default is the current mouse cursor position.
-*   `positioningItem` Number (optional) _macOS_ - The index of the menu item to be positioned under the mouse cursor at the specified coordinates. Default is -1.
+*   `browserWindow` BrowserWindow (optional) - Default is the focused window.
+*   `options` Object (optional)
+    *   `x` Number (optional) - Default is the current mouse cursor position.
+    *   `y` Number (**required** if `x` is used) - Default is the current mouse cursor position.
+    *   `async` Boolean (optional) - Set to `true` to have this method return immediately called, `false` to return after the menu has been selected or closed. Defaults to `false`.
+    *   `positioningItem` Number (optional) _macOS_ - The index of the menu item to be positioned under the mouse cursor at the specified coordinates. Default is -1.
 
 Pops up this menu as a context menu in the `browserWindow`.
+
+#### `menu.closePopup([browserWindow])`
+
+*   `browserWindow` BrowserWindow (optional) - Default is the focused window.
+
+Closes the context menu in the `browserWindow`.
 
 #### `menu.append(menuItem)`
 
@@ -182,73 +253,36 @@ const template = [
   {
     label: 'Edit',
     submenu: [
-      {
-        role: 'undo'
-      },
-      {
-        role: 'redo'
-      },
-      {
-        type: 'separator'
-      },
-      {
-        role: 'cut'
-      },
-      {
-        role: 'copy'
-      },
-      {
-        role: 'paste'
-      },
-      {
-        role: 'pasteandmatchstyle'
-      },
-      {
-        role: 'delete'
-      },
-      {
-        role: 'selectall'
-      }
+      {role: 'undo'},
+      {role: 'redo'},
+      {type: 'separator'},
+      {role: 'cut'},
+      {role: 'copy'},
+      {role: 'paste'},
+      {role: 'pasteandmatchstyle'},
+      {role: 'delete'},
+      {role: 'selectall'}
     ]
   },
   {
     label: 'View',
     submenu: [
-      {
-        role: 'reload'
-      },
-      {
-        role: 'toggledevtools'
-      },
-      {
-        type: 'separator'
-      },
-      {
-        role: 'resetzoom'
-      },
-      {
-        role: 'zoomin'
-      },
-      {
-        role: 'zoomout'
-      },
-      {
-        type: 'separator'
-      },
-      {
-        role: 'togglefullscreen'
-      }
+      {role: 'reload'},
+      {role: 'forcereload'},
+      {role: 'toggledevtools'},
+      {type: 'separator'},
+      {role: 'resetzoom'},
+      {role: 'zoomin'},
+      {role: 'zoomout'},
+      {type: 'separator'},
+      {role: 'togglefullscreen'}
     ]
   },
   {
     role: 'window',
     submenu: [
-      {
-        role: 'minimize'
-      },
-      {
-        role: 'close'
-      }
+      {role: 'minimize'},
+      {role: 'close'}
     ]
   },
   {
@@ -256,7 +290,7 @@ const template = [
     submenu: [
       {
         label: 'Learn More',
-        click () { require('electron').shell.openExternal('http://electron.atom.io') }
+        click () { require('electron').shell.openExternal('https://electron.atom.io') }
       }
     ]
   }
@@ -266,76 +300,37 @@ if (process.platform === 'darwin') {
   template.unshift({
     label: app.getName(),
     submenu: [
-      {
-        role: 'about'
-      },
-      {
-        type: 'separator'
-      },
-      {
-        role: 'services',
-        submenu: []
-      },
-      {
-        type: 'separator'
-      },
-      {
-        role: 'hide'
-      },
-      {
-        role: 'hideothers'
-      },
-      {
-        role: 'unhide'
-      },
-      {
-        type: 'separator'
-      },
-      {
-        role: 'quit'
-      }
+      {role: 'about'},
+      {type: 'separator'},
+      {role: 'services', submenu: []},
+      {type: 'separator'},
+      {role: 'hide'},
+      {role: 'hideothers'},
+      {role: 'unhide'},
+      {type: 'separator'},
+      {role: 'quit'}
     ]
   })
-  // Edit menu.
+
+  // Edit menu
   template[1].submenu.push(
-    {
-      type: 'separator'
-    },
+    {type: 'separator'},
     {
       label: 'Speech',
       submenu: [
-        {
-          role: 'startspeaking'
-        },
-        {
-          role: 'stopspeaking'
-        }
+        {role: 'startspeaking'},
+        {role: 'stopspeaking'}
       ]
     }
   )
-  // Window menu.
+
+  // Window menu
   template[3].submenu = [
-    {
-      label: 'Close',
-      accelerator: 'CmdOrCtrl+W',
-      role: 'close'
-    },
-    {
-      label: 'Minimize',
-      accelerator: 'CmdOrCtrl+M',
-      role: 'minimize'
-    },
-    {
-      label: 'Zoom',
-      role: 'zoom'
-    },
-    {
-      type: 'separator'
-    },
-    {
-      label: 'Bring All to Front',
-      role: 'front'
-    }
+    {role: 'close'},
+    {role: 'minimize'},
+    {role: 'zoom'},
+    {type: 'separator'},
+    {role: 'front'}
   ]
 }
 

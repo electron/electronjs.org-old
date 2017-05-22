@@ -1,5 +1,5 @@
 ---
-version: v1.6.0
+version: v1.6.8
 permalink: /docs/api/client-request/
 category: API
 redirect_from:
@@ -9,9 +9,9 @@ redirect_from:
   - /docs/v0.37.5/api/client-request/
   - /docs/v0.37.4/api/client-request/
   - /docs/v0.37.3/api/client-request/
-  - /docs/v0.36.12/api/client-request/
   - /docs/v0.37.1/api/client-request/
   - /docs/v0.37.0/api/client-request/
+  - /docs/v0.36.12/api/client-request/
   - /docs/v0.36.11/api/client-request/
   - /docs/v0.36.10/api/client-request/
   - /docs/v0.36.9/api/client-request/
@@ -21,14 +21,14 @@ redirect_from:
   - /docs/v0.36.5/api/client-request/
   - /docs/v0.36.4/api/client-request/
   - /docs/v0.36.3/api/client-request/
-  - /docs/v0.35.5/api/client-request/
   - /docs/v0.36.2/api/client-request/
   - /docs/v0.36.0/api/client-request/
+  - /docs/v0.35.5/api/client-request/
   - /docs/v0.35.4/api/client-request/
   - /docs/v0.35.3/api/client-request/
   - /docs/v0.35.2/api/client-request/
-  - /docs/v0.34.4/api/client-request/
   - /docs/v0.35.1/api/client-request/
+  - /docs/v0.34.4/api/client-request/
   - /docs/v0.34.3/api/client-request/
   - /docs/v0.34.2/api/client-request/
   - /docs/v0.34.1/api/client-request/
@@ -87,6 +87,65 @@ title: ClientRequest
 excerpt: Make HTTP/HTTPS requests.
 sort_title: client-request
 ---
+
+
+
+<!--
+
+
+                                      ::::
+                                    :o+//+o:
+                                    +o    oo-
+                                    :o+//oo/+o/
+                                      -::-   -oo:
+                                               /s/
+                      -::::::::-                :s/  :::--
+                  :+oo+////////+:        -:/+oo/ :s:-///++oo+:
+                /o+:                -/+oo+/:-     +o-      -:+o:
+               /s:              -:+o+/:           -o+         :s/
+              -s/            -/oo/:                /s-         +s-
+              -s/         -/oo/-                   -s/         /s-
+               oo       :+o/-                       oo         oo
+               -s/    :oo/                          /s-       /s-
+                :s/ :oo:              -::-          /s-      /s:
+                  -+o/               /ssss/         :s:    -+o-
+                 :o+--               /ssss/         :s:   :o+-
+                :s/  +o:              -::-          /s-   --
+               -s/    :+o/-                         /s-
+               oo       -+o+-                       oo
+              -s/         -/oo/-                   -s/
+             -+soo+:         -/oo/:                /s-      /oooo+-
+             o+   :s:           -:+o+/:-          -o+      /s:  -oo
+             oo:--/s:       ::      -:+oo+/:-     -/-      /s/--:o+
+              :+++/-        :s:          -:/+ooo++//////++oo//+o+:
+                             /s:                --::::::--
+                              /s/              /s-
+                               :oo:          :oo:
+                                 /oo/-    -/oo/
+                                   -/+oooo+/-
+
+
+
+
+
+                   _______  _______  _______  _______  __
+                  |       ||       ||       ||       ||  |
+                  |  _____||_     _||   _   ||    _  ||  |
+                  | |_____   |   |  |  | |  ||   |_| ||  |
+                  |_____  |  |   |  |  |_|  ||    ___||__|
+                   _____| |  |   |  |       ||   |     __
+                  |_______|  |___|  |_______||___|    |__|
+
+
+    This file is generated automatically, so it should not be edited.
+
+    To make changes, head over to the electron/electron repository:
+
+    https://github.com/electron/electron/blob/master/docs/api/client-request.md
+
+    Thanks!
+
+-->
 ## Class: ClientRequest
 
 > Make HTTP/HTTPS requests.
@@ -107,6 +166,7 @@ Process: [Main]({{site.baseurl}}/docs/glossary#main-process)
     *   `hostname` String (optional) - The server host name.
     *   `port` Integer (optional) - The server's listening port number.
     *   `path` String (optional) - The path part of the request URL.
+    *   `redirect` String (optional) - The redirect mode for this request. Should be one of `follow`, `error` or `manual`. Defaults to `follow`. When mode is `error`, any redirection will be aborted. When mode is `manual` the redirection will be deferred until [`request.followRedirect`](#requestfollowRedirect) is invoked. Listen for the [`redirect`](#event-redirect) event in this mode to get more details about the redirect request.
 
 `options` properties such as `protocol`, `host`, `hostname`, `port` and `path` strictly follow the Node.js model as described in the [URL](https://nodejs.org/api/url.html) module.
 
@@ -141,6 +201,8 @@ Returns:
     *   `port` Integer
     *   `realm` String
 *   `callback` Function
+    *   `username` String
+    *   `password` String
 
 Emitted when an authenticating proxy is asking for user credentials.
 
@@ -189,6 +251,17 @@ Emitted when the `net` module fails to issue a network request. Typically when t
 
 Emitted as the last event in the HTTP request-response transaction. The `close` event indicates that no more events will be emitted on either the `request` or `response` objects.
 
+#### Event: 'redirect'
+
+Returns:
+
+*   `statusCode` Integer
+*   `method` String
+*   `redirectUrl` String
+*   `responseHeaders` Object
+
+Emitted when there is redirection and the mode is `manual`. Calling [`request.followRedirect`](#requestfollowRedirect) will continue with the redirection.
+
 ### Instance Properties
 
 #### `request.chunkedEncoding`
@@ -202,15 +275,15 @@ Using chunked encoding is strongly recommended if you need to send a large reque
 #### `request.setHeader(name, value)`
 
 *   `name` String - An extra HTTP header name.
-*   `value` String - An extra HTTP header value.
+*   `value` Object - An extra HTTP header value.
 
-Adds an extra HTTP header. The header name will issued as it is without lowercasing. It can be called only before first write. Calling this method after the first write will throw an error.
+Adds an extra HTTP header. The header name will issued as it is without lowercasing. It can be called only before first write. Calling this method after the first write will throw an error. If the passed value is not a `String`, its `toString()` method will be called to obtain the final value.
 
 #### `request.getHeader(name)`
 
 *   `name` String - Specify an extra header name.
 
-Returns String - The value of a previously set extra header name.
+Returns Object - The value of a previously set extra header name.
 
 #### `request.removeHeader(name)`
 
@@ -239,3 +312,7 @@ Sends the last chunk of the request data. Subsequent write or end operations wil
 #### `request.abort()`
 
 Cancels an ongoing HTTP transaction. If the request has already emitted the `close` event, the abort operation will have no effect. Otherwise an ongoing event will emit `abort` and `close` events. Additionally, if there is an ongoing response object,it will emit the `aborted` event.
+
+#### `request.followRedirect()`
+
+Continues any deferred redirection request when the redirection mode is `manual`.

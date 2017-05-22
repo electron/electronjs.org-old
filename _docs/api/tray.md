@@ -1,5 +1,5 @@
 ---
-version: v1.6.0
+version: v1.6.8
 permalink: /docs/api/tray/
 category: API
 redirect_from:
@@ -9,9 +9,9 @@ redirect_from:
   - /docs/v0.37.5/api/tray/
   - /docs/v0.37.4/api/tray/
   - /docs/v0.37.3/api/tray/
-  - /docs/v0.36.12/api/tray/
   - /docs/v0.37.1/api/tray/
   - /docs/v0.37.0/api/tray/
+  - /docs/v0.36.12/api/tray/
   - /docs/v0.36.11/api/tray/
   - /docs/v0.36.10/api/tray/
   - /docs/v0.36.9/api/tray/
@@ -21,14 +21,14 @@ redirect_from:
   - /docs/v0.36.5/api/tray/
   - /docs/v0.36.4/api/tray/
   - /docs/v0.36.3/api/tray/
-  - /docs/v0.35.5/api/tray/
   - /docs/v0.36.2/api/tray/
   - /docs/v0.36.0/api/tray/
+  - /docs/v0.35.5/api/tray/
   - /docs/v0.35.4/api/tray/
   - /docs/v0.35.3/api/tray/
   - /docs/v0.35.2/api/tray/
-  - /docs/v0.34.4/api/tray/
   - /docs/v0.35.1/api/tray/
+  - /docs/v0.34.4/api/tray/
   - /docs/v0.34.3/api/tray/
   - /docs/v0.34.2/api/tray/
   - /docs/v0.34.1/api/tray/
@@ -87,6 +87,65 @@ title: Tray
 excerpt: Add icons and context menus to the system&apos;s notification area.
 sort_title: tray
 ---
+
+
+
+<!--
+
+
+                                      ::::
+                                    :o+//+o:
+                                    +o    oo-
+                                    :o+//oo/+o/
+                                      -::-   -oo:
+                                               /s/
+                      -::::::::-                :s/  :::--
+                  :+oo+////////+:        -:/+oo/ :s:-///++oo+:
+                /o+:                -/+oo+/:-     +o-      -:+o:
+               /s:              -:+o+/:           -o+         :s/
+              -s/            -/oo/:                /s-         +s-
+              -s/         -/oo/-                   -s/         /s-
+               oo       :+o/-                       oo         oo
+               -s/    :oo/                          /s-       /s-
+                :s/ :oo:              -::-          /s-      /s:
+                  -+o/               /ssss/         :s:    -+o-
+                 :o+--               /ssss/         :s:   :o+-
+                :s/  +o:              -::-          /s-   --
+               -s/    :+o/-                         /s-
+               oo       -+o+-                       oo
+              -s/         -/oo/-                   -s/
+             -+soo+:         -/oo/:                /s-      /oooo+-
+             o+   :s:           -:+o+/:-          -o+      /s:  -oo
+             oo:--/s:       ::      -:+oo+/:-     -/-      /s/--:o+
+              :+++/-        :s:          -:/+ooo++//////++oo//+o+:
+                             /s:                --::::::--
+                              /s/              /s-
+                               :oo:          :oo:
+                                 /oo/-    -/oo/
+                                   -/+oooo+/-
+
+
+
+
+
+                   _______  _______  _______  _______  __
+                  |       ||       ||       ||       ||  |
+                  |  _____||_     _||   _   ||    _  ||  |
+                  | |_____   |   |  |  | |  ||   |_| ||  |
+                  |_____  |  |   |  |  |_|  ||    ___||__|
+                   _____| |  |   |  |       ||   |     __
+                  |_______|  |___|  |_______||___|    |__|
+
+
+    This file is generated automatically, so it should not be edited.
+
+    To make changes, head over to the electron/electron repository:
+
+    https://github.com/electron/electron/blob/master/docs/api/tray.md
+
+    Thanks!
+
+-->
 ## Class: Tray
 
 > Add icons and context menus to the system's notification area.
@@ -300,9 +359,7 @@ Displays a tray balloon.
 #### `tray.popUpContextMenu([menu, position])` _macOS_ _Windows_
 
 *   `menu` Menu (optional)
-*   `position` Object (optional) - The pop up position.
-    *   `x` Integer
-    *   `y` Integer
+*   `position` [Point]({{site.baseurl}}/docs/api/structures/point) (optional) - The pop up position.
 
 Pops up the context menu of the tray icon. When `menu` is passed, the `menu` will be shown instead of the tray icon's context menu.
 

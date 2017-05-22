@@ -1,5 +1,5 @@
 ---
-version: v1.6.0
+version: v1.6.8
 permalink: /docs/api/remote/
 category: API
 redirect_from:
@@ -9,9 +9,9 @@ redirect_from:
   - /docs/v0.37.5/api/remote/
   - /docs/v0.37.4/api/remote/
   - /docs/v0.37.3/api/remote/
-  - /docs/v0.36.12/api/remote/
   - /docs/v0.37.1/api/remote/
   - /docs/v0.37.0/api/remote/
+  - /docs/v0.36.12/api/remote/
   - /docs/v0.36.11/api/remote/
   - /docs/v0.36.10/api/remote/
   - /docs/v0.36.9/api/remote/
@@ -21,14 +21,14 @@ redirect_from:
   - /docs/v0.36.5/api/remote/
   - /docs/v0.36.4/api/remote/
   - /docs/v0.36.3/api/remote/
-  - /docs/v0.35.5/api/remote/
   - /docs/v0.36.2/api/remote/
   - /docs/v0.36.0/api/remote/
+  - /docs/v0.35.5/api/remote/
   - /docs/v0.35.4/api/remote/
   - /docs/v0.35.3/api/remote/
   - /docs/v0.35.2/api/remote/
-  - /docs/v0.34.4/api/remote/
   - /docs/v0.35.1/api/remote/
+  - /docs/v0.34.4/api/remote/
   - /docs/v0.34.3/api/remote/
   - /docs/v0.34.2/api/remote/
   - /docs/v0.34.1/api/remote/
@@ -87,6 +87,65 @@ title: remote
 excerpt: Use main process modules from the renderer process.
 sort_title: remote
 ---
+
+
+
+<!--
+
+
+                                      ::::
+                                    :o+//+o:
+                                    +o    oo-
+                                    :o+//oo/+o/
+                                      -::-   -oo:
+                                               /s/
+                      -::::::::-                :s/  :::--
+                  :+oo+////////+:        -:/+oo/ :s:-///++oo+:
+                /o+:                -/+oo+/:-     +o-      -:+o:
+               /s:              -:+o+/:           -o+         :s/
+              -s/            -/oo/:                /s-         +s-
+              -s/         -/oo/-                   -s/         /s-
+               oo       :+o/-                       oo         oo
+               -s/    :oo/                          /s-       /s-
+                :s/ :oo:              -::-          /s-      /s:
+                  -+o/               /ssss/         :s:    -+o-
+                 :o+--               /ssss/         :s:   :o+-
+                :s/  +o:              -::-          /s-   --
+               -s/    :+o/-                         /s-
+               oo       -+o+-                       oo
+              -s/         -/oo/-                   -s/
+             -+soo+:         -/oo/:                /s-      /oooo+-
+             o+   :s:           -:+o+/:-          -o+      /s:  -oo
+             oo:--/s:       ::      -:+oo+/:-     -/-      /s/--:o+
+              :+++/-        :s:          -:/+ooo++//////++oo//+o+:
+                             /s:                --::::::--
+                              /s/              /s-
+                               :oo:          :oo:
+                                 /oo/-    -/oo/
+                                   -/+oooo+/-
+
+
+
+
+
+                   _______  _______  _______  _______  __
+                  |       ||       ||       ||       ||  |
+                  |  _____||_     _||   _   ||    _  ||  |
+                  | |_____   |   |  |  | |  ||   |_| ||  |
+                  |_____  |  |   |  |  |_|  ||    ___||__|
+                   _____| |  |   |  |       ||   |     __
+                  |_______|  |___|  |_______||___|    |__|
+
+
+    This file is generated automatically, so it should not be edited.
+
+    To make changes, head over to the electron/electron repository:
+
+    https://github.com/electron/electron/blob/master/docs/api/remote.md
+
+    Thanks!
+
+-->
 # remote
 
 > Use main process modules from the renderer process.
@@ -187,7 +246,36 @@ The `remote` module has the following methods:
 
 *   `module` String
 
-Returns `any` - The object returned by `require(module)` in the main process.
+Returns `any` - The object returned by `require(module)` in the main process. Modules specified by their relative path will resolve relative to the entrypoint of the main process.
+
+e.g.
+
+```
+project/
+├── main
+│   ├── foo.js
+│   └── index.js
+├── package.json
+└── renderer
+    └── index.js
+
+```
+
+```js
+// main process: main/index.js
+const {app} = require('electron')
+app.on('ready', () => { /* ... */ })
+```
+
+```js
+// some relative module: main/foo.js
+module.exports = 'bar'
+```
+
+```js
+// renderer process: renderer/index.js
+const foo = require('electron').remote.require('./foo') // bar
+```
 
 ### `remote.getCurrentWindow()`
 

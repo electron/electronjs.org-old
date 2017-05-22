@@ -1,5 +1,5 @@
 ---
-version: v1.6.0
+version: v1.6.8
 permalink: /docs/api/window-open/
 category: API
 redirect_from:
@@ -9,9 +9,9 @@ redirect_from:
   - /docs/v0.37.5/api/window-open/
   - /docs/v0.37.4/api/window-open/
   - /docs/v0.37.3/api/window-open/
-  - /docs/v0.36.12/api/window-open/
   - /docs/v0.37.1/api/window-open/
   - /docs/v0.37.0/api/window-open/
+  - /docs/v0.36.12/api/window-open/
   - /docs/v0.36.11/api/window-open/
   - /docs/v0.36.10/api/window-open/
   - /docs/v0.36.9/api/window-open/
@@ -21,14 +21,14 @@ redirect_from:
   - /docs/v0.36.5/api/window-open/
   - /docs/v0.36.4/api/window-open/
   - /docs/v0.36.3/api/window-open/
-  - /docs/v0.35.5/api/window-open/
   - /docs/v0.36.2/api/window-open/
   - /docs/v0.36.0/api/window-open/
+  - /docs/v0.35.5/api/window-open/
   - /docs/v0.35.4/api/window-open/
   - /docs/v0.35.3/api/window-open/
   - /docs/v0.35.2/api/window-open/
-  - /docs/v0.34.4/api/window-open/
   - /docs/v0.35.1/api/window-open/
+  - /docs/v0.34.4/api/window-open/
   - /docs/v0.34.3/api/window-open/
   - /docs/v0.34.2/api/window-open/
   - /docs/v0.34.1/api/window-open/
@@ -87,6 +87,65 @@ title: window.open Function
 excerpt: Open a new window and load a URL.
 sort_title: window-open
 ---
+
+
+
+<!--
+
+
+                                      ::::
+                                    :o+//+o:
+                                    +o    oo-
+                                    :o+//oo/+o/
+                                      -::-   -oo:
+                                               /s/
+                      -::::::::-                :s/  :::--
+                  :+oo+////////+:        -:/+oo/ :s:-///++oo+:
+                /o+:                -/+oo+/:-     +o-      -:+o:
+               /s:              -:+o+/:           -o+         :s/
+              -s/            -/oo/:                /s-         +s-
+              -s/         -/oo/-                   -s/         /s-
+               oo       :+o/-                       oo         oo
+               -s/    :oo/                          /s-       /s-
+                :s/ :oo:              -::-          /s-      /s:
+                  -+o/               /ssss/         :s:    -+o-
+                 :o+--               /ssss/         :s:   :o+-
+                :s/  +o:              -::-          /s-   --
+               -s/    :+o/-                         /s-
+               oo       -+o+-                       oo
+              -s/         -/oo/-                   -s/
+             -+soo+:         -/oo/:                /s-      /oooo+-
+             o+   :s:           -:+o+/:-          -o+      /s:  -oo
+             oo:--/s:       ::      -:+oo+/:-     -/-      /s/--:o+
+              :+++/-        :s:          -:/+ooo++//////++oo//+o+:
+                             /s:                --::::::--
+                              /s/              /s-
+                               :oo:          :oo:
+                                 /oo/-    -/oo/
+                                   -/+oooo+/-
+
+
+
+
+
+                   _______  _______  _______  _______  __
+                  |       ||       ||       ||       ||  |
+                  |  _____||_     _||   _   ||    _  ||  |
+                  | |_____   |   |  |  | |  ||   |_| ||  |
+                  |_____  |  |   |  |  |_|  ||    ___||__|
+                   _____| |  |   |  |       ||   |     __
+                  |_______|  |___|  |_______||___|    |__|
+
+
+    This file is generated automatically, so it should not be edited.
+
+    To make changes, head over to the electron/electron repository:
+
+    https://github.com/electron/electron/blob/master/docs/api/window-open.md
+
+    Thanks!
+
+-->
 # `window.open` Function
 
 > Open a new window and load a URL.
@@ -110,6 +169,8 @@ The `features` string follows the format of standard browser, but each feature h
 **Notes:**
 
 *   Node integration will always be disabled in the opened `window` if it is disabled on the parent window.
+*   Context isolation will always be enabled in the opened `window` if it is enabled on the parent window.
+*   JavaScript will always be disabled in the opened `window` if it is disabled on the parent window.
 *   Non-standard features (that are not handled by Chromium or Electron) given in `features` will be passed to any registered `webContent`'s `new-window` event handler in the `additionalFeatures` argument.
 
 ### `window.opener.postMessage(message, targetOrigin)`

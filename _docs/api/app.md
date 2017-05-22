@@ -1,5 +1,5 @@
 ---
-version: v1.6.0
+version: v1.6.8
 permalink: /docs/api/app/
 category: API
 redirect_from:
@@ -9,9 +9,9 @@ redirect_from:
   - /docs/v0.37.5/api/app/
   - /docs/v0.37.4/api/app/
   - /docs/v0.37.3/api/app/
-  - /docs/v0.36.12/api/app/
   - /docs/v0.37.1/api/app/
   - /docs/v0.37.0/api/app/
+  - /docs/v0.36.12/api/app/
   - /docs/v0.36.11/api/app/
   - /docs/v0.36.10/api/app/
   - /docs/v0.36.9/api/app/
@@ -21,14 +21,14 @@ redirect_from:
   - /docs/v0.36.5/api/app/
   - /docs/v0.36.4/api/app/
   - /docs/v0.36.3/api/app/
-  - /docs/v0.35.5/api/app/
   - /docs/v0.36.2/api/app/
   - /docs/v0.36.0/api/app/
+  - /docs/v0.35.5/api/app/
   - /docs/v0.35.4/api/app/
   - /docs/v0.35.3/api/app/
   - /docs/v0.35.2/api/app/
-  - /docs/v0.34.4/api/app/
   - /docs/v0.35.1/api/app/
+  - /docs/v0.34.4/api/app/
   - /docs/v0.34.3/api/app/
   - /docs/v0.34.2/api/app/
   - /docs/v0.34.1/api/app/
@@ -89,6 +89,65 @@ title: app
 excerpt: Control your application&apos;s event lifecycle.
 sort_title: app
 ---
+
+
+
+<!--
+
+
+                                      ::::
+                                    :o+//+o:
+                                    +o    oo-
+                                    :o+//oo/+o/
+                                      -::-   -oo:
+                                               /s/
+                      -::::::::-                :s/  :::--
+                  :+oo+////////+:        -:/+oo/ :s:-///++oo+:
+                /o+:                -/+oo+/:-     +o-      -:+o:
+               /s:              -:+o+/:           -o+         :s/
+              -s/            -/oo/:                /s-         +s-
+              -s/         -/oo/-                   -s/         /s-
+               oo       :+o/-                       oo         oo
+               -s/    :oo/                          /s-       /s-
+                :s/ :oo:              -::-          /s-      /s:
+                  -+o/               /ssss/         :s:    -+o-
+                 :o+--               /ssss/         :s:   :o+-
+                :s/  +o:              -::-          /s-   --
+               -s/    :+o/-                         /s-
+               oo       -+o+-                       oo
+              -s/         -/oo/-                   -s/
+             -+soo+:         -/oo/:                /s-      /oooo+-
+             o+   :s:           -:+o+/:-          -o+      /s:  -oo
+             oo:--/s:       ::      -:+oo+/:-     -/-      /s/--:o+
+              :+++/-        :s:          -:/+ooo++//////++oo//+o+:
+                             /s:                --::::::--
+                              /s/              /s-
+                               :oo:          :oo:
+                                 /oo/-    -/oo/
+                                   -/+oooo+/-
+
+
+
+
+
+                   _______  _______  _______  _______  __
+                  |       ||       ||       ||       ||  |
+                  |  _____||_     _||   _   ||    _  ||  |
+                  | |_____   |   |  |  | |  ||   |_| ||  |
+                  |_____  |  |   |  |  |_|  ||    ___||__|
+                   _____| |  |   |  |       ||   |     __
+                  |_______|  |___|  |_______||___|    |__|
+
+
+    This file is generated automatically, so it should not be edited.
+
+    To make changes, head over to the electron/electron repository:
+
+    https://github.com/electron/electron/blob/master/docs/api/app.md
+
+    Thanks!
+
+-->
 # app
 
 > Control your application's event lifecycle.
@@ -188,7 +247,7 @@ Returns:
 *   `event` Event
 *   `hasVisibleWindows` Boolean
 
-Emitted when the application is activated, which usually happens when the user clicks on the application's dock icon.
+Emitted when the application is activated. Various actions can trigger this event, such as launching the application for the first time, attempting to re-launch the application when it's already running, or clicking on the application's dock or taskbar icon.
 
 ### Event: 'continue-activity' _macOS_
 
@@ -428,6 +487,27 @@ You can request the following paths by the name:
 *   `pictures` Directory for a user's pictures.
 *   `videos` Directory for a user's videos.
 *   `pepperFlashSystemPlugin` Full path to the system version of the Pepper Flash plugin.
+
+### `app.getFileIcon(path[, options], callback)`
+
+*   `path` String
+*   `options` Object (optional)
+    *   `size` String
+        *   `small` - 16x16
+        *   `normal` - 32x32
+        *   `large` - 48x48 on _Linux_, 32x32 on _Windows_, unsupported on _macOS_.
+*   `callback` Function
+    *   `error` Error
+    *   `icon` [NativeImage]({{site.baseurl}}/docs/api/native-image)
+
+Fetches a path's associated icon.
+
+On _Windows_, there a 2 kinds of icons:
+
+*   Icons associated with certain file extensions, like `.mp3`, `.png`, etc.
+*   Icons inside the file itself, like `.exe`, `.dll`, `.ico`.
+
+On _Linux_ and _macOS_, icons depend on the application associated with file mime type.
 
 ### `app.setPath(name, path)`
 
@@ -700,7 +780,7 @@ Sets the counter badge for current app. Setting the count to `0` will hide the b
 
 On macOS it shows on the dock icon. On Linux it only works for Unity launcher,
 
-**Note:** Unity launcher requires the exsistence of a `.desktop` file to work, for more information please read [Desktop Environment Integration]({{site.baseurl}}/docs/tutorial/desktop-environment-integration#unity-launcher-shortcuts-linux).
+**Note:** Unity launcher requires the existence of a `.desktop` file to work, for more information please read [Desktop Environment Integration]({{site.baseurl}}/docs/tutorial/desktop-environment-integration#unity-launcher-shortcuts-linux).
 
 ### `app.getBadgeCount()` _Linux_ _macOS_
 
@@ -710,7 +790,13 @@ Returns `Integer` - The current value displayed in the counter badge.
 
 Returns `Boolean` - Whether the current desktop environment is Unity launcher.
 
-### `app.getLoginItemSettings()` _macOS_ _Windows_
+### `app.getLoginItemSettings([options])` _macOS_ _Windows_
+
+*   `options` Object (optional)
+    *   `path` String (optional) _Windows_ - The executable path to compare against. Defaults to `process.execPath`.
+    *   `args` String[] (optional) _Windows_ - The command-line arguments to compare against. Defaults to an empty array.
+
+If you provided `path` and `args` options to `app.setLoginItemSettings` then you need to pass the same arguments here for `openAtLogin` to be set correctly.
 
 Returns `Object`:
 
@@ -722,13 +808,32 @@ Returns `Object`:
 
 **Note:** This API has no effect on [MAS builds]({{site.baseurl}}/docs/tutorial/mac-app-store-submission-guide).
 
-### `app.setLoginItemSettings(settings)` _macOS_ _Windows_
+### `app.setLoginItemSettings(settings[, path, args])` _macOS_ _Windows_
 
 *   `settings` Object
     *   `openAtLogin` Boolean (optional) - `true` to open the app at login, `false` to remove the app as a login item. Defaults to `false`.
     *   `openAsHidden` Boolean (optional) - `true` to open the app as hidden. Defaults to `false`. The user can edit this setting from the System Preferences so `app.getLoginItemStatus().wasOpenedAsHidden` should be checked when the app is opened to know the current value. This setting is only supported on macOS.
+*   `path` String (optional) _Windows_ - The executable to launch at login. Defaults to `process.execPath`.
+*   `args` String[] (optional) _Windows_ - The command-line arguments to pass to the executable. Defaults to an empty array. Take care to wrap paths in quotes.
 
 Set the app's login item settings.
+
+To work with Electron's `autoUpdater` on Windows, which uses [Squirrel](https://github.com/Squirrel/Squirrel.Windows), you'll want to set the launch path to Update.exe, and pass arguments that specify your application name. For example:
+
+```javascript
+const appFolder = path.dirname(process.execPath)
+const updateExe = path.resolve(appFolder, '..', 'Update.exe')
+const exeName = path.basename(process.execPath)
+
+app.setLoginItemSettings({
+  openAtLogin: true,
+  path: updateExe,
+  args: [
+    '--processStart', `"${exeName}"`,
+    '--process-start-args', `"--hidden"`
+  ]
+})
+```
 
 **Note:** This API has no effect on [MAS builds]({{site.baseurl}}/docs/tutorial/mac-app-store-submission-guide).
 

@@ -1,5 +1,5 @@
 ---
-version: v1.6.0
+version: v1.6.8
 permalink: /docs/api/content-tracing/
 category: API
 redirect_from:
@@ -9,9 +9,9 @@ redirect_from:
   - /docs/v0.37.5/api/content-tracing/
   - /docs/v0.37.4/api/content-tracing/
   - /docs/v0.37.3/api/content-tracing/
-  - /docs/v0.36.12/api/content-tracing/
   - /docs/v0.37.1/api/content-tracing/
   - /docs/v0.37.0/api/content-tracing/
+  - /docs/v0.36.12/api/content-tracing/
   - /docs/v0.36.11/api/content-tracing/
   - /docs/v0.36.10/api/content-tracing/
   - /docs/v0.36.9/api/content-tracing/
@@ -21,14 +21,14 @@ redirect_from:
   - /docs/v0.36.5/api/content-tracing/
   - /docs/v0.36.4/api/content-tracing/
   - /docs/v0.36.3/api/content-tracing/
-  - /docs/v0.35.5/api/content-tracing/
   - /docs/v0.36.2/api/content-tracing/
   - /docs/v0.36.0/api/content-tracing/
+  - /docs/v0.35.5/api/content-tracing/
   - /docs/v0.35.4/api/content-tracing/
   - /docs/v0.35.3/api/content-tracing/
   - /docs/v0.35.2/api/content-tracing/
-  - /docs/v0.34.4/api/content-tracing/
   - /docs/v0.35.1/api/content-tracing/
+  - /docs/v0.34.4/api/content-tracing/
   - /docs/v0.34.3/api/content-tracing/
   - /docs/v0.34.2/api/content-tracing/
   - /docs/v0.34.1/api/content-tracing/
@@ -90,6 +90,65 @@ excerpt: >-
       bottlenecks and slow operations.
 sort_title: content-tracing
 ---
+
+
+
+<!--
+
+
+                                      ::::
+                                    :o+//+o:
+                                    +o    oo-
+                                    :o+//oo/+o/
+                                      -::-   -oo:
+                                               /s/
+                      -::::::::-                :s/  :::--
+                  :+oo+////////+:        -:/+oo/ :s:-///++oo+:
+                /o+:                -/+oo+/:-     +o-      -:+o:
+               /s:              -:+o+/:           -o+         :s/
+              -s/            -/oo/:                /s-         +s-
+              -s/         -/oo/-                   -s/         /s-
+               oo       :+o/-                       oo         oo
+               -s/    :oo/                          /s-       /s-
+                :s/ :oo:              -::-          /s-      /s:
+                  -+o/               /ssss/         :s:    -+o-
+                 :o+--               /ssss/         :s:   :o+-
+                :s/  +o:              -::-          /s-   --
+               -s/    :+o/-                         /s-
+               oo       -+o+-                       oo
+              -s/         -/oo/-                   -s/
+             -+soo+:         -/oo/:                /s-      /oooo+-
+             o+   :s:           -:+o+/:-          -o+      /s:  -oo
+             oo:--/s:       ::      -:+oo+/:-     -/-      /s/--:o+
+              :+++/-        :s:          -:/+ooo++//////++oo//+o+:
+                             /s:                --::::::--
+                              /s/              /s-
+                               :oo:          :oo:
+                                 /oo/-    -/oo/
+                                   -/+oooo+/-
+
+
+
+
+
+                   _______  _______  _______  _______  __
+                  |       ||       ||       ||       ||  |
+                  |  _____||_     _||   _   ||    _  ||  |
+                  | |_____   |   |  |  | |  ||   |_| ||  |
+                  |_____  |  |   |  |  |_|  ||    ___||__|
+                   _____| |  |   |  |       ||   |     __
+                  |_______|  |___|  |_______||___|    |__|
+
+
+    This file is generated automatically, so it should not be edited.
+
+    To make changes, head over to the electron/electron repository:
+
+    https://github.com/electron/electron/blob/master/docs/api/content-tracing.md
+
+    Thanks!
+
+-->
 # contentTracing
 
 > Collect tracing data from Chromium's content module for finding performance bottlenecks and slow operations.
@@ -98,22 +157,26 @@ Process: [Main]({{site.baseurl}}/docs/glossary#main-process)
 
 This module does not include a web interface so you need to open `chrome://tracing/` in a Chrome browser and load the generated file to view the result.
 
+**Note:** You should not use this module until the `ready` event of the app module is emitted.
+
 ```javascript
-const {contentTracing} = require('electron')
+const {app, contentTracing} = require('electron')
 
-const options = {
-  categoryFilter: '*',
-  traceOptions: 'record-until-full,enable-sampling'
-}
+app.on('ready', () => {
+  const options = {
+    categoryFilter: '*',
+    traceOptions: 'record-until-full,enable-sampling'
+  }
 
-contentTracing.startRecording(options, () => {
-  console.log('Tracing started')
+  contentTracing.startRecording(options, () => {
+    console.log('Tracing started')
 
-  setTimeout(() => {
-    contentTracing.stopRecording('', (path) => {
-      console.log('Tracing data recorded to ' + path)
-    })
-  }, 5000)
+    setTimeout(() => {
+      contentTracing.stopRecording('', (path) => {
+        console.log('Tracing data recorded to ' + path)
+      })
+    }, 5000)
+  })
 })
 ```
 
@@ -157,7 +220,7 @@ Examples:
 *   `enable-sampling`
 *   `enable-systrace`
 
-The first 3 options are trace recoding modes and hence mutually exclusive. If more than one trace recording modes appear in the `traceOptions` string, the last one takes precedence. If none of the trace recording modes are specified, recording mode is `record-until-full`.
+The first 3 options are trace recording modes and hence mutually exclusive. If more than one trace recording modes appear in the `traceOptions` string, the last one takes precedence. If none of the trace recording modes are specified, recording mode is `record-until-full`.
 
 The trace option will first be reset to the default option (`record_mode` set to `record-until-full`, `enable_sampling` and `enable_systrace` set to `false`) before options parsed from `traceOptions` are applied on it.
 
@@ -215,15 +278,3 @@ Once all child processes have acknowledged the `captureMonitoringSnapshot` reque
     *   `percentage` Number
 
 Get the maximum usage across processes of trace buffer as a percentage of the full state. When the TraceBufferUsage value is determined the `callback` is called.
-
-### `contentTracing.setWatchEvent(categoryName, eventName, callback)`
-
-*   `categoryName` String
-*   `eventName` String
-*   `callback` Function
-
-`callback` will be called every time the given event occurs on any process.
-
-### `contentTracing.cancelWatchEvent()`
-
-Cancel the watch event. This may lead to a race condition with the watch event callback if tracing is enabled.

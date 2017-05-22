@@ -1,5 +1,5 @@
 ---
-version: v1.6.0
+version: v1.6.8
 permalink: /docs/api/web-contents/
 category: API
 redirect_from:
@@ -9,9 +9,9 @@ redirect_from:
   - /docs/v0.37.5/api/web-contents/
   - /docs/v0.37.4/api/web-contents/
   - /docs/v0.37.3/api/web-contents/
-  - /docs/v0.36.12/api/web-contents/
   - /docs/v0.37.1/api/web-contents/
   - /docs/v0.37.0/api/web-contents/
+  - /docs/v0.36.12/api/web-contents/
   - /docs/v0.36.11/api/web-contents/
   - /docs/v0.36.10/api/web-contents/
   - /docs/v0.36.9/api/web-contents/
@@ -21,14 +21,14 @@ redirect_from:
   - /docs/v0.36.5/api/web-contents/
   - /docs/v0.36.4/api/web-contents/
   - /docs/v0.36.3/api/web-contents/
-  - /docs/v0.35.5/api/web-contents/
   - /docs/v0.36.2/api/web-contents/
   - /docs/v0.36.0/api/web-contents/
+  - /docs/v0.35.5/api/web-contents/
   - /docs/v0.35.4/api/web-contents/
   - /docs/v0.35.3/api/web-contents/
   - /docs/v0.35.2/api/web-contents/
-  - /docs/v0.34.4/api/web-contents/
   - /docs/v0.35.1/api/web-contents/
+  - /docs/v0.34.4/api/web-contents/
   - /docs/v0.34.3/api/web-contents/
   - /docs/v0.34.2/api/web-contents/
   - /docs/v0.34.1/api/web-contents/
@@ -87,6 +87,65 @@ title: webContents
 excerpt: Render and control web pages.
 sort_title: web-contents
 ---
+
+
+
+<!--
+
+
+                                      ::::
+                                    :o+//+o:
+                                    +o    oo-
+                                    :o+//oo/+o/
+                                      -::-   -oo:
+                                               /s/
+                      -::::::::-                :s/  :::--
+                  :+oo+////////+:        -:/+oo/ :s:-///++oo+:
+                /o+:                -/+oo+/:-     +o-      -:+o:
+               /s:              -:+o+/:           -o+         :s/
+              -s/            -/oo/:                /s-         +s-
+              -s/         -/oo/-                   -s/         /s-
+               oo       :+o/-                       oo         oo
+               -s/    :oo/                          /s-       /s-
+                :s/ :oo:              -::-          /s-      /s:
+                  -+o/               /ssss/         :s:    -+o-
+                 :o+--               /ssss/         :s:   :o+-
+                :s/  +o:              -::-          /s-   --
+               -s/    :+o/-                         /s-
+               oo       -+o+-                       oo
+              -s/         -/oo/-                   -s/
+             -+soo+:         -/oo/:                /s-      /oooo+-
+             o+   :s:           -:+o+/:-          -o+      /s:  -oo
+             oo:--/s:       ::      -:+oo+/:-     -/-      /s/--:o+
+              :+++/-        :s:          -:/+ooo++//////++oo//+o+:
+                             /s:                --::::::--
+                              /s/              /s-
+                               :oo:          :oo:
+                                 /oo/-    -/oo/
+                                   -/+oooo+/-
+
+
+
+
+
+                   _______  _______  _______  _______  __
+                  |       ||       ||       ||       ||  |
+                  |  _____||_     _||   _   ||    _  ||  |
+                  | |_____   |   |  |  | |  ||   |_| ||  |
+                  |_____  |  |   |  |  |_|  ||    ___||__|
+                   _____| |  |   |  |       ||   |     __
+                  |_______|  |___|  |_______||___|    |__|
+
+
+    This file is generated automatically, so it should not be edited.
+
+    To make changes, head over to the electron/electron repository:
+
+    https://github.com/electron/electron/blob/master/docs/api/web-contents.md
+
+    Thanks!
+
+-->
 # webContents
 
 > Render and control web pages.
@@ -150,7 +209,7 @@ Returns:
 *   `validatedURL` String
 *   `isMainFrame` Boolean
 
-This event is like `did-finish-load` but emitted when the load failed or was cancelled, e.g. `window.stop()` is invoked. The full list of error codes and their meaning is available [here](https://code.google.com/p/chromium/codesearch#chromium/src/net/base/net_error_list.h). Note that redirect responses will emit `errorCode` -3; you may want to ignore that error explicitly.
+This event is like `did-finish-load` but emitted when the load failed or was cancelled, e.g. `window.stop()` is invoked. The full list of error codes and their meaning is available [here](https://code.google.com/p/chromium/codesearch#chromium/src/net/base/net_error_list.h).
 
 #### Event: 'did-frame-finish-load'
 
@@ -232,7 +291,17 @@ Emitted when the page requests to open a new window for a `url`. It could be req
 
 By default a new `BrowserWindow` will be created for the `url`.
 
-Calling `event.preventDefault()` will prevent creating new windows. In such case, the `event.newGuest` may be set with a reference to a `BrowserWindow` instance to make it used by the Electron's runtime.
+Calling `event.preventDefault()` will prevent Electron from automatically creating a new `BrowserWindow`. If you call `event.preventDefault()` and manually create a new `BrowserWindow` then you must set `event.newGuest` to reference the new `BrowserWindow` instance, failing to do so may result in unexpected behavior. For example:
+
+```javascript
+myBrowserWindow.webContents.on('new-window', (event, url) => {
+  event.preventDefault()
+  const win = new BrowserWindow({show: false})
+  win.once('ready-to-show', () => win.show())
+  win.loadURL(url)
+  event.newGuest = win
+})
+```
 
 #### Event: 'will-navigate'
 
@@ -303,6 +372,7 @@ Returns:
 *   `input` Object - Input properties
     *   `type` String - Either `keyUp` or `keyDown`
     *   `key` String - Equivalent to [KeyboardEvent.key](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent)
+    *   `code` String - Equivalent to [KeyboardEvent.code](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent)
     *   `isAutoRepeat` Boolean - Equivalent to [KeyboardEvent.repeat](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent)
     *   `shift` Boolean - Equivalent to [KeyboardEvent.shiftKey](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent)
     *   `control` Boolean - Equivalent to [KeyboardEvent.controlKey](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent)
@@ -385,6 +455,7 @@ Returns:
     *   `activeMatchOrdinal` Integer - Position of the active match.
     *   `matches` Integer - Number of Matches.
     *   `selectionArea` Object - Coordinates of first match region.
+    *   `finalUpdate` Boolean
 
 Emitted when a result is available for [`webContents.findInPage`] request.
 
@@ -421,12 +492,8 @@ Returns:
 *   `type` String
 *   `image` NativeImage (optional)
 *   `scale` Float (optional) - scaling factor for the custom cursor
-*   `size` Object (optional) - the size of the `image`
-    *   `width` Integer
-    *   `height` Integer
-*   `hotspot` Object (optional) - coordinates of the custom cursor's hotspot
-    *   `x` Integer - x coordinate
-    *   `y` Integer - y coordinate
+*   `size` [Size]({{site.baseurl}}/docs/api/structures/size) (optional) - the size of the `image`
+*   `hotspot` [Point]({{site.baseurl}}/docs/api/structures/point) (optional) - coordinates of the custom cursor's hotspot
 
 Emitted when the cursor's type changes. The `type` parameter can be `default`, `crosshair`, `pointer`, `text`, `wait`, `help`, `e-resize`, `n-resize`, `ne-resize`, `nw-resize`, `s-resize`, `se-resize`, `sw-resize`, `w-resize`, `ns-resize`, `ew-resize`, `nesw-resize`, `nwse-resize`, `col-resize`, `row-resize`, `m-panning`, `e-panning`, `n-panning`, `ne-panning`, `nw-panning`, `s-panning`, `se-panning`, `sw-panning`, `w-panning`, `move`, `vertical-text`, `cell`, `context-menu`, `alias`, `progress`, `nodrop`, `copy`, `none`, `not-allowed`, `zoom-in`, `zoom-out`, `grab`, `grabbing`, `custom`.
 
@@ -528,6 +595,18 @@ win.loadURL('http://github.com')
 
 Emitted when the devtools window instructs the webContents to reload
 
+#### Event: 'will-attach-webview'
+
+Returns:
+
+*   `event` Event
+*   `webPreferences` Object - The web preferences that will be used by the guest page. This object can be modified to adjust the preferences for the guest page.
+*   `params` Object - The other `<webview>` parameters such as the `src` URL. This object can be modified to adjust the parameters of the guest page.
+
+Emitted when a `<webview>`'s web contents is being attached to this web contents. Calling `event.preventDefault()` will destroy the guest page.
+
+This event can be used to configure `webPreferences` for the `webContents` of a `<webview>` before it's loaded, and provides the ability to set settings that can't be set via `<webview>` attributes.
+
 ### Instance Methods
 
 #### `contents.loadURL(url[, options])`
@@ -538,6 +617,7 @@ Emitted when the devtools window instructs the webContents to reload
     *   `userAgent` String (optional) - A user agent originating the request.
     *   `extraHeaders` String (optional) - Extra headers separated by "\n"
     *   `postData` ([UploadRawData]({{site.baseurl}}/docs/api/structures/upload-raw-data) &#124; [UploadFile]({{site.baseurl}}/docs/api/structures/upload-file) &#124; [UploadFileSystem]({{site.baseurl}}/docs/api/structures/upload-file-system) &#124; [UploadBlob]({{site.baseurl}}/docs/api/structures/upload-blob))[] - (optional)
+    *   `baseURLForDataURL` String (optional) - Base url (with trailing path separator) for files to be loaded by the data url. This is needed only if the specified `url` is a data url and needs to load other files.
 
 Loads the `url` in the window. The `url` must contain the protocol prefix, e.g. the `http://` or `file://`. If the load should bypass http cache then use the `pragma` header to achieve it.
 
@@ -663,7 +743,7 @@ Injects CSS into the current web page.
 #### `contents.executeJavaScript(code[, userGesture, callback])`
 
 *   `code` String
-*   `userGesture` Boolean (optional)
+*   `userGesture` Boolean (optional) - Default is `false`.
 *   `callback` Function (optional) - Called after script has been executed.
     *   `result` Any
 
@@ -1015,20 +1095,12 @@ app.on('ready', () => {
     *   `screenPosition` String - Specify the screen type to emulate (default: `desktop`)
         *   `desktop` - Desktop screen type
         *   `mobile` - Mobile screen type
-    *   `screenSize` Object - Set the emulated screen size (screenPosition == mobile)
-        *   `width` Integer - Set the emulated screen width
-        *   `height` Integer - Set the emulated screen height
-    *   `viewPosition` Object - Position the view on the screen (screenPosition == mobile) (default: `{x: 0, y: 0}`)
-        *   `x` Integer - Set the x axis offset from top left corner
-        *   `y` Integer - Set the y axis offset from top left corner
+    *   `screenSize` [Size]({{site.baseurl}}/docs/api/structures/size) - Set the emulated screen size (screenPosition == mobile)
+    *   `viewPosition` [Point]({{site.baseurl}}/docs/api/structures/point) - Position the view on the screen (screenPosition == mobile) (default: `{x: 0, y: 0}`)
     *   `deviceScaleFactor` Integer - Set the device scale factor (if zero defaults to original device scale factor) (default: `0`)
-    *   `viewSize` Object - Set the emulated view size (empty means no override)
-        *   `width` Integer - Set the emulated view width
-        *   `height` Integer - Set the emulated view height
+    *   `viewSize` [Size]({{site.baseurl}}/docs/api/structures/size) - Set the emulated view size (empty means no override)
     *   `fitToView` Boolean - Whether emulated view should be scaled down if necessary to fit into available space (default: `false`)
-    *   `offset` Object - Offset of the emulated view inside available space (not in fit to view mode) (default: `{x: 0, y: 0}`)
-        *   `x` Float - Set the x axis offset from top left corner
-        *   `y` Float - Set the y axis offset from top left corner
+    *   `offset` [Point]({{site.baseurl}}/docs/api/structures/point) - Offset of the emulated view inside available space (not in fit to view mode) (default: `{x: 0, y: 0}`)
     *   `scale` Float - Scale of emulated view inside available space (not in fit to view mode) (default: `1`)
 
 Enable device emulation with the given parameters.
@@ -1091,8 +1163,8 @@ End subscribing for frame presentation events.
 #### `contents.startDrag(item)`
 
 *   `item` Object
-    *   `file` String
-    *   `icon` [NativeImage]({{site.baseurl}}/docs/api/native-image)
+    *   `file` String or `files` Array - The path(s) to the file(s) being dragged.
+    *   `icon` [NativeImage]({{site.baseurl}}/docs/api/native-image) - The image must be non-empty on macOS.
 
 Sets the `item` as dragging item for current drag-drop operation, `file` is the absolute path of the file to be dragged, and `icon` is the image showing under the cursor when dragging.
 
@@ -1106,7 +1178,7 @@ Sets the `item` as dragging item for current drag-drop operation, `file` is the 
 *   `callback` Function - `(error) => {}`.
     *   `error` Error
 
-Returns true if the process of saving page has been initiated successfully.
+Returns `Boolean` - true if the process of saving page has been initiated successfully.
 
 ```javascript
 const {BrowserWindow} = require('electron')
@@ -1162,7 +1234,23 @@ Returns `Integer` - If _offscreen rendering_ is enabled returns the current fram
 
 #### `contents.invalidate()`
 
+Schedules a full repaint of the window this web contents is in.
+
 If _offscreen rendering_ is enabled invalidates the frame and generates a new one through the `'paint'` event.
+
+#### `contents.getWebRTCIPHandlingPolicy()`
+
+Returns `String` - Returns the WebRTC IP Handling Policy.
+
+#### `contents.setWebRTCIPHandlingPolicy(policy)`
+
+*   `policy` String - Specify the WebRTC IP Handling Policy.
+    *   `default` - Exposes user's public and local IPs. This is the default behavior. When this policy is used, WebRTC has the right to enumerate all interfaces and bind them to discover public interfaces.
+    *   `default_public_interface_only` - Exposes user's public IP, but does not expose user's local IP. When this policy is used, WebRTC should only use the default route used by http. This doesn't expose any local addresses.
+    *   `default_public_and_private_interfaces` - Exposes user's public and local IPs. When this policy is used, WebRTC should only use the default route used by http. This also exposes the associated default private address. Default route is the route chosen by the OS on a multi-homed endpoint.
+    *   `disable_non_proxied_udp` - Does not expose public or local IPs. When this policy is used, WebRTC should only use TCP to contact peers or servers unless the proxy server supports UDP.
+
+Setting the WebRTC IP handling policy allows you to control which IPs are exposed via WebRTC. See [BrowserLeaks](https://browserleaks.com/webrtc) for more details.
 
 ### Instance Properties
 
