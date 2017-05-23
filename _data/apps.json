@@ -4404,6 +4404,33 @@
     ]
   },
   {
+    "slug": "mstream",
+    "name": "mStream",
+    "description": "Music Streaming Server",
+    "website": "http://mstream.io",
+    "repository": "https://github.com/IrosTheBeggar/mStream",
+    "keywords": [
+      "music",
+      "streaming",
+      "server",
+      "audio",
+      "selfhosted"
+    ],
+    "license": "GPL-3.0",
+    "icon": "mstream-icon.png",
+    "icon32": "mstream-icon-32.png",
+    "icon64": "mstream-icon-64.png",
+    "icon128": "mstream-icon-128.png",
+    "date": "2017-05-22",
+    "iconColors": [
+      "#6484b4",
+      "#244c7c",
+      "#548898",
+      "#548898",
+      "#548898"
+    ]
+  },
+  {
     "slug": "museeks",
     "name": "Museeks",
     "description": "A simple, clean and cross-platform music player",
