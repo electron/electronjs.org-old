@@ -1503,6 +1503,29 @@
     ]
   },
   {
+    "slug": "gravit-designer",
+    "name": "Gravit Designer",
+    "description": "A vector based design tool similar to sketch or figma.",
+    "website": "http://designer.io/",
+    "keywords": [
+      "design",
+      "vector",
+      "graphics",
+      "ui"
+    ],
+    "icon": "designer-icon.png",
+    "icon32": "designer-icon-32.png",
+    "icon64": "designer-icon-64.png",
+    "icon128": "designer-icon-128.png",
+    "date": "2017-03-05",
+    "iconColors": [
+      "#faec07",
+      "#c7175b",
+      "#cbd760",
+      "#88a03e"
+    ]
+  },
+  {
     "slug": "destroyer",
     "name": "Destroyer",
     "description": "Open-Source Lossless Audio Player",
