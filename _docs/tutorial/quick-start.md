@@ -1,5 +1,5 @@
 ---
-version: v1.6.8
+version: v1.6.9
 permalink: /docs/tutorial/quick-start/
 category: Tutorial
 redirect_from:
@@ -305,10 +305,10 @@ $ .\node_modules\.bin\electron .
 
 If you downloaded Electron manually, you can also use the included binary to execute your app directly.
 
-#### Windows
+#### macOS
 
 ```bash
-$ .\electron\electron.exe your-app\
+$ ./Electron.app/Contents/MacOS/Electron your-app/
 ```
 
 #### Linux
@@ -317,10 +317,10 @@ $ .\electron\electron.exe your-app\
 $ ./electron/electron your-app/
 ```
 
-#### macOS
+#### Windows
 
 ```bash
-$ ./Electron.app/Contents/MacOS/Electron your-app/
+$ .\electron\electron.exe your-app\
 ```
 
 `Electron.app` here is part of the Electron's release package, you can download it from [here](https://github.com/electron/electron/releases).

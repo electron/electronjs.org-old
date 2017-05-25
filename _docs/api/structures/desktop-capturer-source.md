@@ -1,5 +1,5 @@
 ---
-version: v1.6.8
+version: v1.6.9
 permalink: /docs/api/structures/desktop-capturer-source/
 category: API
 redirect_from:

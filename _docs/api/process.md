@@ -1,5 +1,5 @@
 ---
-version: v1.6.8
+version: v1.6.9
 permalink: /docs/api/process/
 category: API
 redirect_from:
@@ -245,3 +245,15 @@ Returns `Object`:
 *   `swapFree` Integer - The free amount of swap memory in Kilobytes available to the system. _Windows_ _Linux_
 
 Returns an object giving memory usage statistics about the entire system. Note that all statistics are reported in Kilobytes.
+
+### `process.getCPUUsage()`
+
+Returns:
+
+*   `CPUUsage` [CPUUsage]({{site.baseurl}}/docs/api/structures/cpu-usage)
+
+### `process.getIOCounters()` _Windows_ _Linux_
+
+Returns:
+
+*   `IOCounters` [IOCounters]({{site.baseurl}}/docs/api/structures/io-counters)

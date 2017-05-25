@@ -1,5 +1,5 @@
 ---
-version: v1.6.8
+version: v1.6.9
 permalink: /docs/api/app/
 category: API
 redirect_from:
@@ -769,6 +769,10 @@ Imports the certificate in pkcs12 format into the platform certificate store. `c
 Disables hardware acceleration for current app.
 
 This method can only be called before app is ready.
+
+### `app.getAppMemoryInfo()`
+
+Returns [ProcessMemoryInfo[]]({{site.baseurl}}/docs/api/structures/process-memory-info): Array of `ProcessMemoryInfo` objects that correspond to memory usage statistics of all the processes associated with the app.
 
 ### `app.setBadgeCount(count)` _Linux_ _macOS_
 

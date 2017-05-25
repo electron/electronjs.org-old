@@ -1,5 +1,5 @@
 ---
-version: v1.6.8
+version: v1.6.9
 permalink: /docs/api/menu/
 category: API
 redirect_from:
@@ -366,7 +366,7 @@ macOS has a completely different style of application menu from Windows and Linu
 
 ### Standard Menus
 
-On macOS there are many system-defined standard menus, like the `Services` and `Windows` menus. To make your menu a standard menu, you should set your menu's `role` to one of following and Electron will recognize them and make them become standard menus:
+On macOS there are many system-defined standard menus, like the `Services` and `Windows` menus. To make your menu a standard menu, you should set your menu's `role` to one of the following and Electron will recognize them and make them become standard menus:
 
 *   `window`
 *   `help`
