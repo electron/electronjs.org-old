@@ -1,5 +1,5 @@
 ---
-version: v1.6.9
+version: v1.6.10
 permalink: /docs/tutorial/windows-store-guide/
 category: Tutorial
 redirect_from:

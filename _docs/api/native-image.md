@@ -1,5 +1,5 @@
 ---
-version: v1.6.9
+version: v1.6.10
 permalink: /docs/api/native-image/
 category: API
 redirect_from:
@@ -281,6 +281,8 @@ Creates a new `NativeImage` instance from `buffer`.
 ### `nativeImage.createFromDataURL(dataURL)`
 
 *   `dataURL` String
+
+Returns `NativeImage`
 
 Creates a new `NativeImage` instance from `dataURL`.
 

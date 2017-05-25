@@ -1,5 +1,5 @@
 ---
-version: v1.6.9
+version: v1.6.10
 permalink: /docs/development/debug-instructions-windows/
 category: Development
 redirect_from:

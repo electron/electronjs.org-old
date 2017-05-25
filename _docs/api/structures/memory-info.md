@@ -1,5 +1,5 @@
 ---
-version: v1.6.9
+version: v1.6.10
 permalink: /docs/api/structures/memory-info/
 category: API
 redirect_from:
@@ -149,7 +149,7 @@ sort_title: memory-info
 -->
 # MemoryInfo Object
 
-*   `workingSetSize` Integer - Process id of the process.
+*   `pid` Integer - Process id of the process.
 *   `workingSetSize` Integer - The amount of memory currently pinned to actual physical RAM.
 *   `peakWorkingSetSize` Integer - The maximum amount of memory that has ever been pinned to actual physical RAM.
 *   `privateBytes` Integer - The amount of memory not shared by other processes, such as JS heap or HTML content.

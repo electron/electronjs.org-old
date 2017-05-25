@@ -1,5 +1,5 @@
 ---
-version: v1.6.9
+version: v1.6.10
 permalink: /docs/api/browser-view/
 category: API
 redirect_from:
@@ -188,28 +188,28 @@ Objects created with `new BrowserView` have the following properties:
 
 #### `view.webContents` _Experimental_
 
-A [`webContents`]({{site.baseurl}}/docs/api/web-contents) object owned by this view.
+A [`WebContents`]({{site.baseurl}}/docs/api/web-contents) object owned by this view.
 
-#### `win.id` _Experimental_
+#### `view.id` _Experimental_
 
 A `Integer` representing the unique ID of the view.
 
 ### Instance Methods
 
-Objects created with `new BrowserWindow` have the following instance methods:
+Objects created with `new BrowserView` have the following instance methods:
 
-#### `win.setAutoResize(options)` _Experimental_
+#### `view.setAutoResize(options)` _Experimental_
 
 *   `options` Object
-    *   `width`: If `true`, the view's width will grow and shrink together with the window. `false` by default.
-    *   `height`: If `true`, the view's height will grow and shrink together with the window. `false` by default.
+    *   `width` Boolean - If `true`, the view's width will grow and shrink together with the window. `false` by default.
+    *   `height` Boolean - If `true`, the view's height will grow and shrink together with the window. `false` by default.
 
-#### `win.setBounds(bounds)` _Experimental_
+#### `view.setBounds(bounds)` _Experimental_
 
 *   `bounds` [Rectangle]({{site.baseurl}}/docs/api/structures/rectangle)
 
 Resizes and moves the view to the supplied bounds relative to the window.
 
-#### `win.setBackgroundColor(color)` _Experimental_
+#### `view.setBackgroundColor(color)` _Experimental_
 
 *   `color` String - Color in `#aarrggbb` or `#argb` form. The alpha channel is optional.

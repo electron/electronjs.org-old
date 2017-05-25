@@ -1,5 +1,5 @@
 ---
-version: v1.6.9
+version: v1.6.10
 permalink: /docs/api/browser-window/
 category: API
 redirect_from:
@@ -982,7 +982,7 @@ Same as `webContents.capturePage([rect, ]callback)`.
     *   `httpReferrer` String (optional) - A HTTP Referrer url.
     *   `userAgent` String (optional) - A user agent originating the request.
     *   `extraHeaders` String (optional) - Extra headers separated by "\n"
-    *   `postData` ([UploadRawData]({{site.baseurl}}/docs/api/structures/upload-raw-data) &#124; [UploadFile]({{site.baseurl}}/docs/api/structures/upload-file) &#124; [UploadFileSystem]({{site.baseurl}}/docs/api/structures/upload-file-system) &#124; [UploadBlob]({{site.baseurl}}/docs/api/structures/upload-blob))[] - (optional)
+    *   `postData` ([UploadRawData[]]({{site.baseurl}}/docs/api/structures/upload-raw-data) &#124; [UploadFile[]]({{site.baseurl}}/docs/api/structures/upload-file) &#124; [UploadFileSystem[]]({{site.baseurl}}/docs/api/structures/upload-file-system) &#124; [UploadBlob[]]({{site.baseurl}}/docs/api/structures/upload-blob)) - (optional)
     *   `baseURLForDataURL` String (optional) - Base url (with trailing path separator) for files to be loaded by the data url. This is needed only if the specified `url` is a data url and needs to load other files.
 
 Same as `webContents.loadURL(url[, options])`.

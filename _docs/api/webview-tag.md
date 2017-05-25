@@ -1,5 +1,5 @@
 ---
-version: v1.6.9
+version: v1.6.10
 permalink: /docs/api/webview-tag/
 category: API
 redirect_from:
@@ -394,7 +394,7 @@ webview.addEventListener('dom-ready', () => {
     *   `httpReferrer` String (optional) - A HTTP Referrer url.
     *   `userAgent` String (optional) - A user agent originating the request.
     *   `extraHeaders` String (optional) - Extra headers separated by "\n"
-    *   `postData` ([UploadRawData]({{site.baseurl}}/docs/api/structures/upload-raw-data) &#124; [UploadFile]({{site.baseurl}}/docs/api/structures/upload-file) &#124; [UploadFileSystem]({{site.baseurl}}/docs/api/structures/upload-file-system) &#124; [UploadBlob]({{site.baseurl}}/docs/api/structures/upload-blob))[] - (optional)
+    *   `postData` ([UploadRawData[]]({{site.baseurl}}/docs/api/structures/upload-raw-data) &#124; [UploadFile[]]({{site.baseurl}}/docs/api/structures/upload-file) &#124; [UploadFileSystem[]]({{site.baseurl}}/docs/api/structures/upload-file-system) &#124; [UploadBlob[]]({{site.baseurl}}/docs/api/structures/upload-blob)) - (optional)
     *   `baseURLForDataURL` String (optional) - Base url (with trailing path separator) for files to be loaded by the data url. This is needed only if the specified `url` is a data url and needs to load other files.
 
 Loads the `url` in the webview, the `url` must contain the protocol prefix, e.g. the `http://` or `file://`.
@@ -589,11 +589,11 @@ Inserts `text` to the focused element.
 
 *   `text` String - Content to be searched, must not be empty.
 *   `options` Object (optional)
-    *   `forward` Boolean - Whether to search forward or backward, defaults to `true`.
-    *   `findNext` Boolean - Whether the operation is first request or a follow up, defaults to `false`.
-    *   `matchCase` Boolean - Whether search should be case-sensitive, defaults to `false`.
-    *   `wordStart` Boolean - Whether to look only at the start of words. defaults to `false`.
-    *   `medialCapitalAsWordStart` Boolean - When combined with `wordStart`, accepts a match in the middle of a word if the match begins with an uppercase letter followed by a lowercase or non-letter. Accepts several other intra-word matches, defaults to `false`.
+    *   `forward` Boolean - (optional) Whether to search forward or backward, defaults to `true`.
+    *   `findNext` Boolean - (optional) Whether the operation is first request or a follow up, defaults to `false`.
+    *   `matchCase` Boolean - (optional) Whether search should be case-sensitive, defaults to `false`.
+    *   `wordStart` Boolean - (optional) Whether to look only at the start of words. defaults to `false`.
+    *   `medialCapitalAsWordStart` Boolean - (optional) When combined with `wordStart`, accepts a match in the middle of a word if the match begins with an uppercase letter followed by a lowercase or non-letter. Accepts several other intra-word matches, defaults to `false`.
 
 Starts a request to find all matches for the `text` in the web page and returns an `Integer` representing the request id used for the request. The result of the request can be obtained by subscribing to [`found-in-page`]({{site.baseurl}}/docs/api/webview-tag#event-found-in-page) event.
 
