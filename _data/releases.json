@@ -1,5 +1,23 @@
 [
   {
+    "url": "https://api.github.com/repos/electron/electron/releases/6395803",
+    "assets_url": "https://api.github.com/repos/electron/electron/releases/6395803/assets",
+    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/6395803/assets{?name,label}",
+    "html_url": "https://github.com/electron/electron/releases/tag/v1.6.10",
+    "id": 6395803,
+    "tag_name": "v1.6.10",
+    "target_commitish": "1-6-x",
+    "name": "electron v1.6.10",
+    "draft": false,
+    "prerelease": false,
+    "created_at": "2017-05-16T17:38:35Z",
+    "published_at": "2017-05-16T19:37:36Z",
+    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v1.6.10",
+    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v1.6.10",
+    "body": "## Bug Fixes\r\n\r\n* Fixed several issues with the `electron.d.ts` TypeScript definition file. https://github.com/electron/electron/pull/9484",
+    "version": "1.6.10"
+  },
+  {
     "url": "https://api.github.com/repos/electron/electron/releases/6341210",
     "assets_url": "https://api.github.com/repos/electron/electron/releases/6341210/assets",
     "upload_url": "https://uploads.github.com/repos/electron/electron/releases/6341210/assets{?name,label}",
