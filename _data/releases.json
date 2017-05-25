@@ -1,5 +1,23 @@
 [
   {
+    "url": "https://api.github.com/repos/electron/electron/releases/6341210",
+    "assets_url": "https://api.github.com/repos/electron/electron/releases/6341210/assets",
+    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/6341210/assets{?name,label}",
+    "html_url": "https://github.com/electron/electron/releases/tag/v1.6.9",
+    "id": 6341210,
+    "tag_name": "v1.6.9",
+    "target_commitish": "master",
+    "name": "electron v1.6.9",
+    "draft": false,
+    "prerelease": false,
+    "created_at": "2017-05-10T15:35:30Z",
+    "published_at": "2017-05-10T16:39:33Z",
+    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v1.6.9",
+    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v1.6.9",
+    "body": "## Bug Fixes\r\n\r\n* Fixed an issue where `beforeunload` would not correctly fire after\r\n  reloading. <a href=\"https://github.com/electron/electron/pull/9292\">#9292</a>\r\n\r\n## API Changes\r\n\r\n* Added a `app.getAppMemoryInfo()` API with memory details for each process\r\n  associated with the app. <a href=\"https://github.com/electron/electron/pull/9214\">#9214</a>\r\n* Added `process.getCPUUsage()` and `process.getIOCounters()` APIs. <a href=\"https://github.com/electron/electron/pull/9373\">#9373</a>\r\n* `process.getProcessMemoryInfo()` and `process.getSystemMemoryInfo()` are now\r\n  callable from sandboxed renderer processes. <a href=\"https://github.com/electron/electron/pull/9333\">#9333</a>\r\n* A Typescript definition file, `electron.d.ts`, is now provided with each\r\n  release. <a href=\"https://github.com/electron/electron/pull/7857\">#7857</a>\r\n\r\n### macOS\r\n\r\n* Added support for changing the tracking mode of `TouchBarSegmentedControl`\r\n  items via a new `mode` property. <a href=\"https://github.com/electron/electron/pull/9315\">#9315</a>\r\n\r\n### Windows\r\n\r\n* Added support for the `dialog.showCertificateTrustDialog()` API. <a href=\"https://github.com/electron/electron/pull/9242\">#9242</a>\r\n",
+    "version": "1.6.9"
+  },
+  {
     "url": "https://api.github.com/repos/electron/electron/releases/6245123",
     "assets_url": "https://api.github.com/repos/electron/electron/releases/6245123/assets",
     "upload_url": "https://uploads.github.com/repos/electron/electron/releases/6245123/assets{?name,label}",
@@ -1618,23 +1636,5 @@
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.33.8",
     "body": "Changelog:\n- Do not print `ERROR` logs from Chromium by default.\n- Remove storage limitation of WebSQL.\n",
     "version": "0.33.8"
-  },
-  {
-    "url": "https://api.github.com/repos/electron/electron/releases/1940250",
-    "assets_url": "https://api.github.com/repos/electron/electron/releases/1940250/assets",
-    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/1940250/assets{?name,label}",
-    "html_url": "https://github.com/electron/electron/releases/tag/v0.33.7",
-    "id": 1940250,
-    "tag_name": "v0.33.7",
-    "target_commitish": "master",
-    "name": "electron v0.33.7",
-    "draft": false,
-    "prerelease": false,
-    "created_at": "2015-10-10T09:43:56Z",
-    "published_at": "2015-10-10T11:15:58Z",
-    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.33.7",
-    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.33.7",
-    "body": "Changelog:\n- Calling `webFrame.setZoomLevel` nows also changes the zoom levels of `<webview>`s in the page.\n- Fix sending special keys with `webContents.sendInputEvent`.\n- Fix uncaught exception when releasing a remote object in browser process.\n- Fix various problems arounds minimum and maximum sizes of `BrowserWindow`.\n- Fix `postMessage` not working for windows opened by `window.open`.\n- Fix `--ppapi-flash-path` failed to recognize path with unicode characters.\n- Fix headers' value being converted to lower case in `did-get-response-details` event.\n- Fix HTTP requests' `Accept-Language` header not using system locale.\n\n**Windows**\n- Don't add prefix for `console.log` outputs.\n- Fix `BrowserWindow`'s size changed after restored from minimized state.\n\n**OS X**\n- Fix frameless window has wrong initial size when it is not resizable.\n- Fix text-to-speech not working on OS X 10.11.\n\n**Linux**\n- Fix calling `BrowserWindow.setResizable(true)` clears size constraints.\n",
-    "version": "0.33.7"
   }
 ]
