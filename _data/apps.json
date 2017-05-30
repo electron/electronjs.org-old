@@ -4786,6 +4786,30 @@
     ]
   },
   {
+    "slug": "p3x-onenote",
+    "name": "P3X OneNote",
+    "description": "Note-taking tool for Linux.",
+    "repository": "https://github.com/patrikx3/onenote",
+    "website": "https://pages.corifeus.tk/onenote",
+    "keywords": [
+      "onenote",
+      "linux"
+    ],
+    "license": "MIT",
+    "icon": "p3x-onenote-icon.png",
+    "icon32": "p3x-onenote-icon-32.png",
+    "icon64": "p3x-onenote-icon-64.png",
+    "icon128": "p3x-onenote-icon-128.png",
+    "date": "2017-05-25",
+    "iconColors": [
+      "#fbfbfb",
+      "#7c3474",
+      "#bc9cbc",
+      "#b48cb4",
+      "#ac84ac"
+    ]
+  },
+  {
     "slug": "pamfax",
     "name": "PamFax",
     "description": "A cross-platform app for sending and receiving faxes",
