@@ -1694,6 +1694,29 @@
     ]
   },
   {
+    "slug": "easytongue",
+    "name": "EasyTongue",
+    "description": "Simple Translation App",
+    "website": "https://github.com/FlorianFe/EasyTongue",
+    "repository": "https://github.com/FlorianFe/EasyTongue",
+    "keywords": [
+      "translation",
+      "languages"
+    ],
+    "icon": "easytongue-icon.png",
+    "icon32": "easytongue-icon-32.png",
+    "icon64": "easytongue-icon-64.png",
+    "icon128": "easytongue-icon-128.png",
+    "date": "2017-05-27",
+    "iconColors": [
+      "#fcbb46",
+      "#fcfaf5",
+      "#fc9029",
+      "#fcdc64",
+      "#fcda91"
+    ]
+  },
+  {
     "slug": "egret-wing",
     "name": "Egret Wing",
     "description": "Egret Wing",
@@ -4709,6 +4732,33 @@
       "#91d3ae",
       "#099f95",
       "#7cbcbc"
+    ]
+  },
+  {
+    "slug": "odrive",
+    "name": "ODrive",
+    "description": "Unofficial Google Drive app.",
+    "website": "https://github.com/liberodark/ODrive",
+    "repository": "https://github.com/liberodark/ODrive",
+    "keywords": [
+      "google",
+      "drive",
+      "cloud",
+      "sync",
+      "google drive"
+    ],
+    "license": "GPL v3",
+    "icon": "odrive-icon.png",
+    "icon32": "odrive-icon-32.png",
+    "icon64": "odrive-icon-64.png",
+    "icon128": "odrive-icon-128.png",
+    "date": "2017-05-27",
+    "iconColors": [
+      "#ef990d",
+      "#121212",
+      "#c75005",
+      "#eadc9c",
+      "#605c40"
     ]
   },
   {
