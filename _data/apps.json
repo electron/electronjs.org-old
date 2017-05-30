@@ -6335,6 +6335,32 @@
     ]
   },
   {
+    "slug": "spotspot",
+    "name": "SpotSpot",
+    "description": "Spotify mini-player for macOS.",
+    "website": "http://wstone.io/SpotSpot/",
+    "repository": "https://github.com/will-stone/SpotSpot",
+    "keywords": [
+      "spotify",
+      "macos",
+      "audio",
+      "music"
+    ],
+    "license": "MIT",
+    "icon": "spotspot-icon.png",
+    "icon32": "spotspot-icon-32.png",
+    "icon64": "spotspot-icon-64.png",
+    "icon128": "spotspot-icon-128.png",
+    "date": "2017-05-28",
+    "iconColors": [
+      "#1c1c14",
+      "#2cd363",
+      "#258f48",
+      "#226134",
+      "#1c442c"
+    ]
+  },
+  {
     "slug": "spreaker-studio",
     "name": "Spreaker Studio",
     "description": "Create and discover podcasts",
