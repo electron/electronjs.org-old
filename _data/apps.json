@@ -7447,6 +7447,30 @@
     ]
   },
   {
+    "slug": "wanna",
+    "name": "Wanna",
+    "description": "Implementation of a 21st century to-do list app.",
+    "website": "https://mkermani144.github.io/wanna/",
+    "repository": "https://github.com/mkermani144/wanna",
+    "keywords": [
+      "to-do list",
+      "productivity"
+    ],
+    "license": "MIT",
+    "icon": "wanna-icon.png",
+    "icon32": "wanna-icon-32.png",
+    "icon64": "wanna-icon-64.png",
+    "icon128": "wanna-icon-128.png",
+    "date": "2017-06-01",
+    "iconColors": [
+      "#2186f4",
+      "#fbebd3",
+      "#1a5fad",
+      "#759dc6",
+      "#89b4dc"
+    ]
+  },
+  {
     "slug": "wantedly-chat",
     "name": "Wantedly Chat",
     "description": "Business chat tool that will boost productivity for your team",
