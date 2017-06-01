@@ -3,7 +3,8 @@ title: "Announcing TypeScript support in Electron"
 author: zeke
 ---
 
-The `electron` npm package now includes a TypeScript definition file that provides detailed annotations of the entire Electron API. Just
+The `electron` npm package now includes a TypeScript definition file that provides detailed annotations of the entire Electron API. These annotation can improve your Electron development
+experience **even if you're writing vanilla JavaScript**. Just
 `npm install electron` to get up-to-date Electron typings in your project.
 
 ---
@@ -84,6 +85,11 @@ up to date with the version of Electron you're using.
 
 ## Usage
 
+For a summary of how to install and use Electron's new TypeScript annotations,
+watch this short demo screencast:
+
+<iframe width="100%" height="420" src="https://www.youtube.com/embed/PJRag0rYQt8" frameborder="0" allowfullscreen></iframe>
+
 If you're using [Visual Studio Code](https://code.visualstudio.com/), you've
 already got TypeScript support built in. There are also community-maintained
 plugins for
@@ -138,8 +144,8 @@ community of open-source maintainers. Thanks to
 [Birunthan Mohanathas](https://github.com/poiru), 
 [Milan Burda](https://github.com/miniak), 
 [Brendan Forster](https://github.com/shiftkey),
-and others for the pull requests, documentation improvements,
-and guidance.
+and many others for their bug fixes, documentation improvements,
+and technical guidance.
 
 ## Support
 
