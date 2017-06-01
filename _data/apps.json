@@ -6452,6 +6452,36 @@
     ]
   },
   {
+    "slug": "standard-notes",
+    "name": "Standard Notes",
+    "description": "A simple and private notes app. Encrypted, open-source, and extensible.",
+    "website": "https://standardnotes.org",
+    "repository": "https://github.com/standardnotes/desktop",
+    "keywords": [
+      "note",
+      "notes",
+      "private",
+      "encrypted",
+      "productivity",
+      "todo",
+      "task",
+      "markdown",
+      "sync"
+    ],
+    "icon": "standard-notes-icon.png",
+    "icon32": "standard-notes-icon-32.png",
+    "icon64": "standard-notes-icon-64.png",
+    "icon128": "standard-notes-icon-128.png",
+    "date": "2017-05-29",
+    "iconColors": [
+      "#0b6bd4",
+      "#f8f9fb",
+      "#7094dc",
+      "#5c8cdc",
+      "#3c7cdc"
+    ]
+  },
+  {
     "slug": "steelseries-engine-3",
     "name": "SteelSeries Engine 3",
     "description": "A unified platform that supports nearly all your SteelSeries gear",
