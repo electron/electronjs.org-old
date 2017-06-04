@@ -5,3 +5,4 @@ npm-debug.log
 .jekyll-metadata
 images/crushed
 .env
+css/**/*.css
