@@ -25,17 +25,7 @@ const middleware = function (req, res, next) {
 }
 
 app.use(middleware)
-
 app.use(express.static(__dirname))
-
-
-// app.get('/', function (req, res) {
-//   jexodus.render('/').then(output => res.send(output))
-// })
-
-// app.get('/docs', function (req, res) {
-//   jexodus.render('/docs').then(output => res.send(output))
-// })
 
 function startServer () {
   if (module.parent) return
