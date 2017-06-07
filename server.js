@@ -14,17 +14,7 @@ app.use(sass({
     prefix: '/css'
 }))
 
-const middleware = function (req, res, next) {
-  const page = jexodus.routes[req.path]
-  console.log(req.path)
-  if (page) {
-    return jexodus.render(req.path).then(output => res.send(output))
-  } else {
-    return next()
-  }
-}
-
-app.use(middleware)
+app.use(jexodus.middleware)
 app.use(express.static(__dirname))
 
 function startServer () {
