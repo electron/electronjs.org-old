@@ -1045,6 +1045,30 @@
     ]
   },
   {
+    "slug": "composercat",
+    "name": "Composercat",
+    "description": "Graphical User Interface for the Composer package manager (PHP)",
+    "website": "https://getcomposercat.com",
+    "keywords": [
+      "php",
+      "composer",
+      "programming",
+      "productivity"
+    ],
+    "icon": "composercat-icon.png",
+    "icon32": "composercat-icon-32.png",
+    "icon64": "composercat-icon-64.png",
+    "icon128": "composercat-icon-128.png",
+    "date": "2017-06-02",
+    "iconColors": [
+      "#ebebf3",
+      "#cb3404",
+      "#d4846c",
+      "#7c7c84",
+      "#989ca0"
+    ]
+  },
+  {
     "slug": "correo",
     "name": "Correo",
     "description": "A menubar/taskbar Gmail App for Windows, macOS and Linux.",
@@ -6267,7 +6291,7 @@
   {
     "slug": "soundkeys",
     "name": "Soundkeys",
-    "description": "Soundcloud wrapped in a Desktop player with user customizable keyboard shortcuts and notifications",
+    "description": "Souncloud delivered in a wrapper with a mini player",
     "website": "https://github.com/MSandeep96/SoundKeys",
     "repository": "https://github.com/MSandeep96/SoundKeys",
     "keywords": [
@@ -6286,8 +6310,8 @@
     "iconColors": [
       "#fa7304",
       "#080807",
-      "#f4f4f3",
-      "#979594",
+      "#f4f3f3",
+      "#949494",
       "#747474"
     ]
   },
