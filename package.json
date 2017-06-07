@@ -20,7 +20,7 @@
     "build-userland": "script/userland",
     "build-apps": "script/apps",
     "release": "script/release 2>&1 | script/notify",
-    "dev": "nodemon"
+    "dev": "nodemon -e js,md,html,scss"
   },
   "devDependencies": {
     "awesome-electron": "^2.5.0",
