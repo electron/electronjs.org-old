@@ -358,6 +358,35 @@
     ]
   },
   {
+    "slug": "autoedit",
+    "name": "autoEdit",
+    "description": "Fast text based video editing",
+    "website": "https://www.autoEdit.io",
+    "repository": "https://github.com/OpenNewsLabs/autoEdit_2",
+    "keywords": [
+      "video editing",
+      "story",
+      "story crafting",
+      "video editor",
+      "git",
+      "github",
+      "open source"
+    ],
+    "license": "MIT",
+    "icon": "autoedit-icon.png",
+    "icon32": "autoedit-icon-32.png",
+    "icon64": "autoedit-icon-64.png",
+    "icon128": "autoedit-icon-128.png",
+    "date": "2017-06-07",
+    "iconColors": [
+      "#c6c2c2",
+      "#c73030",
+      "#2f2121",
+      "#752828",
+      "#b89295"
+    ]
+  },
+  {
     "slug": "avocode",
     "name": "Avocode",
     "description": "One workspace open to all designers and developers",
@@ -1027,6 +1056,31 @@
     ]
   },
   {
+    "slug": "colol",
+    "name": "Colol",
+    "description": "Save colors and copy to the clipboard.",
+    "website": "http://colol.me/",
+    "keywords": [
+      "design",
+      "colors",
+      "tool",
+      "clipboard",
+      "colorpicker"
+    ],
+    "icon": "colol-icon.png",
+    "icon32": "colol-icon-32.png",
+    "icon64": "colol-icon-64.png",
+    "icon128": "colol-icon-128.png",
+    "date": "2017-06-05",
+    "iconColors": [
+      "#f835ae",
+      "#fbfbfb",
+      "#6c1454",
+      "#9d3a7d",
+      "#fc44cc"
+    ]
+  },
+  {
     "slug": "colorpicker",
     "name": "ColorPicker",
     "description": "Minimal color picker tool to get code hex and rgb code",
@@ -1345,6 +1399,33 @@
       "#9a9c9a",
       "#a4a4a4",
       "#949494"
+    ]
+  },
+  {
+    "slug": "data-pixels-playground",
+    "name": "Data Pixels Playground",
+    "description": "Create Pixel Art Programmatically",
+    "website": "https://github.com/gmattie/Data-Pixels",
+    "repository": "https://github.com/gmattie/Data-Pixels",
+    "keywords": [
+      "art",
+      "developer tool",
+      "image",
+      "pixel",
+      "programming",
+      "web development"
+    ],
+    "icon": "data-pixels-playground-icon.png",
+    "icon32": "data-pixels-playground-icon-32.png",
+    "icon64": "data-pixels-playground-icon-64.png",
+    "icon128": "data-pixels-playground-icon-128.png",
+    "date": "2017-06-04",
+    "iconColors": [
+      "#c704a0",
+      "#050405",
+      "#e5cceb",
+      "#6f0497",
+      "#56043c"
     ]
   },
   {
@@ -1733,11 +1814,11 @@
     "icon128": "easytongue-icon-128.png",
     "date": "2017-05-27",
     "iconColors": [
-      "#fcbb46",
-      "#fcfaf5",
-      "#fc9029",
+      "#fcb845",
+      "#fcfbf6",
       "#fcdc64",
-      "#fcda91"
+      "#fce2a8",
+      "#fccc8c"
     ]
   },
   {
@@ -6557,6 +6638,24 @@
       "#8cc43c",
       "#ec4b6b",
       "#ed546c"
+    ]
+  },
+  {
+    "slug": "streetviewdownload360",
+    "name": "Street View Download 360",
+    "description": "App for downloading 360° Street View images",
+    "website": "https://istreetview.com",
+    "icon": "streetviewdownload360-icon.png",
+    "icon32": "streetviewdownload360-icon-32.png",
+    "icon64": "streetviewdownload360-icon-64.png",
+    "icon128": "streetviewdownload360-icon-128.png",
+    "date": "2017-06-06",
+    "iconColors": [
+      "#0c8c4c",
+      "#0e9c5c",
+      "#f9c004",
+      "#dc6125",
+      "#e4642c"
     ]
   },
   {
