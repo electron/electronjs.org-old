@@ -1618,23 +1618,5 @@
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.34.0",
     "body": "Changelog:\n\n**OS X**\n- Add experiment build for Mac App Store, read [Mac App Store Submission Guide](https://github.com/atom/electron/blob/master/docs/tutorial/mac-app-store-submission-guide.md) for more.\n",
     "version": "0.34.0"
-  },
-  {
-    "url": "https://api.github.com/repos/electron/electron/releases/1970894",
-    "assets_url": "https://api.github.com/repos/electron/electron/releases/1970894/assets",
-    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/1970894/assets{?name,label}",
-    "html_url": "https://github.com/electron/electron/releases/tag/v0.33.9",
-    "id": 1970894,
-    "tag_name": "v0.33.9",
-    "target_commitish": "master",
-    "name": "electron v0.33.9",
-    "draft": false,
-    "prerelease": false,
-    "created_at": "2015-10-16T09:42:55Z",
-    "published_at": "2015-10-16T10:36:52Z",
-    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.33.9",
-    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.33.9",
-    "body": "Changelog:\n- Remove `subpixel-font-scaling` option of `BrowserWindow`.\n- Add `WebContents.savePage` API.\n\n**Windows**\n- Fix exception when writing to console in the main process.\n- Fix `crash-reporter` might block for a second when starting.\n- Fix `crash-reporter` not working on x64 Windows when crash came from V8.\n",
-    "version": "0.33.9"
   }
 ]
