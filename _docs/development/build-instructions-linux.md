@@ -1,5 +1,5 @@
 ---
-version: v1.6.10
+version: v1.6.11
 permalink: /docs/development/build-instructions-linux/
 category: Development
 redirect_from:
