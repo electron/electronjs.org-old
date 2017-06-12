@@ -7478,6 +7478,33 @@
     ]
   },
   {
+    "slug": "visual-comic-reader",
+    "name": "Visual Comic Reader",
+    "description": "Modern Comic Reader for all platforms",
+    "website": "https://github.com/evuz/VisualComicReader",
+    "repository": "https://github.com/evuz/VisualComicReader",
+    "keywords": [
+      "comic",
+      "react",
+      "electron",
+      "reader",
+      "cbz",
+      "cbr"
+    ],
+    "icon": "visual-comic-reader-icon.png",
+    "icon32": "visual-comic-reader-icon-32.png",
+    "icon64": "visual-comic-reader-icon-64.png",
+    "icon128": "visual-comic-reader-icon-128.png",
+    "date": "2017-06-12",
+    "iconColors": [
+      "#f4bd6e",
+      "#b3242b",
+      "#04c3eb",
+      "#080c0b",
+      "#ced0d0"
+    ]
+  },
+  {
     "slug": "visual-studio-code",
     "name": "Visual Studio Code",
     "description": "Open source code editor developed by Microsoft",
