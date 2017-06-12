@@ -1,5 +1,23 @@
 [
   {
+    "url": "https://api.github.com/repos/electron/electron/releases/6506372",
+    "assets_url": "https://api.github.com/repos/electron/electron/releases/6506372/assets",
+    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/6506372/assets{?name,label}",
+    "html_url": "https://github.com/electron/electron/releases/tag/v1.6.11",
+    "id": 6506372,
+    "tag_name": "v1.6.11",
+    "target_commitish": "1-6-x",
+    "name": "electron v1.6.11",
+    "draft": false,
+    "prerelease": false,
+    "created_at": "2017-05-25T17:56:30Z",
+    "published_at": "2017-05-25T19:52:37Z",
+    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v1.6.11",
+    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v1.6.11",
+    "body": "## Bug Fixes\r\n\r\n* Backported an upstream Node.js fix where StartCom and WoSign certificates\r\n  are now rejected when making HTTPS requests. <a href=\"https://github.com/electron/electron/pull/9499\">#9499</a>\r\n* Fixed an issue where sandboxed renderer process would throw remote errors\r\n  when reloaded. <a href=\"https://github.com/electron/electron/pull/9505\">#9505</a>\r\n* The built-in PDF viewer plugin is now disabled if the `plugins` setting\r\n  is disabled on the `BrowserWindow`. <a href=\"https://github.com/electron/electron/pull/9564\">#9564</a>\r\n* Backported an upstream Chrome fix where media requests would not be cached\r\n  properly. <a href=\"https://github.com/electron/electron/pull/9586\">#9586</a>\r\n* Backported an upstream Chrome fix where the backspace character did not\r\n  delete the last character in certain keyboard layouts. <a href=\"https://github.com/electron/electron/pull/9586\">#9586</a>\r\n",
+    "version": "1.6.11"
+  },
+  {
     "url": "https://api.github.com/repos/electron/electron/releases/6395803",
     "assets_url": "https://api.github.com/repos/electron/electron/releases/6395803/assets",
     "upload_url": "https://uploads.github.com/repos/electron/electron/releases/6395803/assets{?name,label}",
