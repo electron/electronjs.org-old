@@ -784,6 +784,32 @@
     ]
   },
   {
+    "slug": "cashnotify",
+    "name": "CashNotify",
+    "description": "Monitor your Stripe accounts from your menu bar.",
+    "website": "https://cashnotify.com",
+    "keywords": [
+      "stripe",
+      "mac",
+      "menubar",
+      "payments",
+      "alerts",
+      "notifications"
+    ],
+    "icon": "cashnotify-icon.png",
+    "icon32": "cashnotify-icon-32.png",
+    "icon64": "cashnotify-icon-64.png",
+    "icon128": "cashnotify-icon-128.png",
+    "date": "2017-06-13",
+    "iconColors": [
+      "#804ac4",
+      "#fafafb",
+      "#432657",
+      "#c4a4e4",
+      "#3c247c"
+    ]
+  },
+  {
     "slug": "catlight",
     "name": "CatLight",
     "description": "Desktop build status notifications",
