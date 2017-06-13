@@ -691,6 +691,35 @@
     ]
   },
   {
+    "slug": "cansnippet",
+    "name": "canSnippet",
+    "description": "The missing snippet management tool for macOS.",
+    "website": "https://www.cansnippet.com",
+    "keywords": [
+      "snippet",
+      "macro",
+      "code",
+      "developers",
+      "editing",
+      "text",
+      "productivity",
+      "keyboard",
+      "shortcuts"
+    ],
+    "icon": "cansnippet-icon.png",
+    "icon32": "cansnippet-icon-32.png",
+    "icon64": "cansnippet-icon-64.png",
+    "icon128": "cansnippet-icon-128.png",
+    "date": "2017-06-01",
+    "iconColors": [
+      "#047bdb",
+      "#040404",
+      "#044c88",
+      "#043c6d",
+      "#043c64"
+    ]
+  },
+  {
     "slug": "caprine",
     "name": "Caprine",
     "description": "Facebook Messenger app",
