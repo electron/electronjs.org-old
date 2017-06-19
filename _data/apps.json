@@ -1943,6 +1943,29 @@
     ]
   },
   {
+    "slug": "elements",
+    "name": "Elements",
+    "description": "Displays the periodic table",
+    "website": "https://github.com/FlorianFe/Elements",
+    "repository": "https://github.com/FlorianFe/Elements",
+    "keywords": [
+      "periodic-table",
+      "chemistry"
+    ],
+    "icon": "elements-icon.png",
+    "icon32": "elements-icon-32.png",
+    "icon64": "elements-icon-64.png",
+    "icon128": "elements-icon-128.png",
+    "date": "2017-06-19",
+    "iconColors": [
+      "#fbfbfb",
+      "#c4e4a4",
+      "#2d98f4",
+      "#c4c4c4",
+      "#b0b0b0"
+    ]
+  },
+  {
     "slug": "elite-journal",
     "name": "Elite Journal",
     "description": "Browse the Elite: Dangerous journal easily.",
