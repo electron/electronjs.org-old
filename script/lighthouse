@@ -15,6 +15,8 @@ server.on('error', (error) => {
 let serverOutput = ''
 
 server.stdout.on('data', (data) => {
+  process.stdout.write(data)
+
   serverOutput += data
 
   if (serverOutput.includes('Server running')) {
@@ -22,6 +24,13 @@ server.stdout.on('data', (data) => {
 
     const lightcrawlerPath = require.resolve('lightcrawler/cli.js')
     const lightcrawler = ChildProcess.spawn(lightcrawlerPath, ['--url', 'http://127.0.0.1:4000'], {stdio: 'inherit'})
+
+    lightcrawler.on('error', (error) => {
+      console.error('Error running lighthouse')
+      console.error(error.stack)
+      process.exit(1)
+    })
+
     lightcrawler.once('exit', (code) => {
       server.kill()
       process.exit(code)
