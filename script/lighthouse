@@ -4,7 +4,7 @@ const ChildProcess = require('child_process')
 
 console.log('Running lighthouse')
 
-const server = ChildProcess.spawn('bundle', ['exec', 'jekyll', 'serve', '--baseurl', ''])
+const server = ChildProcess.spawn('bundle', ['exec', 'jekyll', 'serve', '--baseurl', '', '--no-watch'])
 
 server.on('error', (error) => {
   console.error('Error starting server')
