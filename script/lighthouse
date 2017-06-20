@@ -1,0 +1,21 @@
+#!/usr/bin/env node
+
+const ChildProcess = require('child_process')
+
+const server = ChildProcess.spawn('bundle', ['exec', 'jekyll', 'serve', '--baseurl', ''])
+
+let serverOutput = ''
+server.stdout.on('data', (data) => {
+  serverOutput += data
+
+  if (serverOutput.includes('Server running')) {
+    console.log('Server running, starting lightcrawler')
+
+    const lightcrawlerPath = require.resolve('lightcrawler/cli.js')
+    const lightcrawler = ChildProcess.spawn(lightcrawlerPath, ['--url', 'http://127.0.0.1:4000'], {stdio: 'inherit'})
+    lightcrawler.once('exit', (code) => {
+      server.kill()
+      process.exit(code)
+    })
+  }
+})
