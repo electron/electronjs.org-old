@@ -12,6 +12,10 @@ server.on('error', (error) => {
   process.exit(1)
 })
 
+server.stderr.on('data', (data) => {
+  process.stderr.write(data)
+})
+
 let serverOutput = ''
 
 server.stdout.on('data', (data) => {
