@@ -22,12 +22,12 @@ branches:
     - gh-pages
 
 addons:
+  chrome: beta
   apt:
     sources:
     - ubuntu-toolchain-r-test
     packages:
     - g++-4.8
-    - google-chrome-unstable
 
 env:
   CXX=g++-4.8
