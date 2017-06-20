@@ -1,0 +1,34 @@
+{{!< main}}
+
+<div class='subtron text-left'>
+  <div class='container-narrow'>
+
+    <h4 class="docs-breadcrumbs">
+      <a href='/docs/'>Docs</a>
+    </h4>
+  </div>
+</div>
+
+<section class='page-section docs strong-headers'>
+  <div class='container-narrow'>
+
+    {{{body}}}
+
+    {% if page.category != 'ignore' %}
+    <hr>
+    <div class='text-center'>
+      <span class="d-inline-block text-left">
+        <span class="octicon octicon-pencil mr-2"></span>
+        See something that needs fixing? Propose a change on the <a href='{{ page.source_url }}'>source</a>.
+        <br>
+        <span class="octicon octicon-zap mr-2"></span>
+        Need a different version of the docs? See the <a href='/docs/versions/'>available versions</a> or <a href="https://github.com/electron/electron/tree/master/docs-translations">community translations</a>.
+        <br>
+        <span class="octicon octicon-book mr-2"></span>
+        Want to search all the documentation at once? See all of the <a href='/docs/all'>docs on one page</a>.
+      </span>
+    </div>
+    {% endif %}
+
+  </div>
+</section>

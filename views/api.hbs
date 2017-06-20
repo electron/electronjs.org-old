@@ -1,0 +1,17 @@
+<h1>{{api.name}}</h1>
+
+<blockquote>{{api.description}}</blockquote>
+
+{{!--<h2>Instance Methods</h2>
+
+{{#each api.instanceMethods}}
+  <h3><code>{{this.name}}</code></h3>
+  <p>{{this.description}}</p>
+{{/each}}--}}
+
+<h2>Methods</h2>
+
+{{#each api.methods}}
+  <h3><code>{{this.name}}</code></h3>
+  <p>{{this.description}}</p>
+{{/each}}

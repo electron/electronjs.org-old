@@ -58,8 +58,9 @@
     ]
   },
   "dependencies": {
-    "electron-i18n": "electron/electron-i18n",
+    "electron-i18n": "github:electron/electron-i18n",
     "express": "^4.15.3",
+    "express-hbs": "^1.0.4",
     "express-liquid": "^0.2.6",
     "flat": "^2.0.1",
     "liquid-node": "^2.6.1",
