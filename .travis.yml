@@ -11,8 +11,7 @@ notifications:
 node_js:
   - 7
 
-install:
-  - npm install
+script:
   - npm test
   - npm run lighthouse
 

@@ -4,7 +4,14 @@ const ChildProcess = require('child_process')
 
 const server = ChildProcess.spawn('bundle', ['exec', 'jekyll', 'serve', '--baseurl', ''])
 
+server.on('error', (error) => {
+  console.error('Error starting server')
+  console.error(error.stack)
+  process.exit(1)
+})
+
 let serverOutput = ''
+
 server.stdout.on('data', (data) => {
   serverOutput += data
 

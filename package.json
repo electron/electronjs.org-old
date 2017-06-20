@@ -20,7 +20,7 @@
     "build-userland": "script/userland",
     "build-apps": "script/apps",
     "release": "script/release 2>&1 | script/notify",
-    "lighthouse": "script/lighthouse"
+    "lighthouse": "script/bootstrap && script/lighthouse"
   },
   "devDependencies": {
     "awesome-electron": "^2.5.0",
