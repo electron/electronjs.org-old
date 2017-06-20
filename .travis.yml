@@ -6,7 +6,7 @@ notifications:
     on_failure: change
 
 node_js:
-  - 4
+  - 7
 
 install:
   - npm install
