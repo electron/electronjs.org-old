@@ -8,6 +8,11 @@ notifications:
 node_js:
   - 4
 
+install:
+  - npm install
+  - npm test
+  - npm run lighthouse
+
 env:
   global:
     - ATOM_ACCESS_TOKEN=da809a6077bb1b0aa7c5623f7b2d5f1fec2faae4
@@ -22,6 +27,7 @@ addons:
     - ubuntu-toolchain-r-test
     packages:
     - g++-4.8
+    - google-chrome-unstable
 
 env:
   CXX=g++-4.8
