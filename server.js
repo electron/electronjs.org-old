@@ -14,12 +14,20 @@ const app = express()
 // }))
 // app.set('view engine', '.hbs')
 
-app.engine('hbs', hbs.express4({
-  defaultLayout: path.join(__dirname, '/views/layouts/main.hbs'),
+app.engine('html', hbs.express4({
+  defaultLayout: path.join(__dirname, '/views/layouts/main.html'),
+  extname: '.html',
   layoutsDir: path.join(__dirname, '/views/layouts'),
-  partialsDir: path.join(__dirname, '/views/partials')
+  partialsDir: path.join(__dirname, '/views/partials'),
+  onCompile: function(exhbs, source, filename) {
+    var options = {}
+    console.log(typeof source)
+    console.log(filename)
+    debugger
+    return exhbs.handlebars.compile(source, options)
+  }
 }))
-app.set('view engine', 'hbs')
+app.set('view engine', 'html')
 app.set('views', path.join(__dirname, '/views'))
 
 app.use(sass({
