@@ -37,7 +37,7 @@
     "grunt-cli": "^0.1.13",
     "grunt-link-checker": "^0.1.0",
     "href-type": "^1.0.1",
-    "lightcrawler": "0.0.3",
+    "lightcrawler": "0.0.5",
     "marky-markdown-lite": "^1.2.0",
     "mocha": "^3.2.0",
     "npm-run-all": "^3.1.2",
