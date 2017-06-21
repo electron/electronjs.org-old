@@ -4,10 +4,6 @@
     "crawler": {
       "maxDepth": 2,
       "maxChromeInstances": 5
-    },
-    "onlyAudits": [
-      "external-anchors-use-rel-noopener",
-      "label"
-    ]
+    }
   }
 }
