@@ -20,7 +20,7 @@
     "build-userland": "script/userland",
     "build-apps": "script/apps",
     "release": "script/release 2>&1 | script/notify",
-    "dev": "nodemon -e js,md,html,scss server.js"
+    "dev": "nodemon -e js,scss server.js"
   },
   "devDependencies": {
     "awesome-electron": "^2.5.0",
@@ -58,6 +58,8 @@
     ]
   },
   "dependencies": {
+    "browser-sync": "^2.18.12",
+    "connect-browser-sync": "^2.1.0",
     "electron-i18n": "github:electron/electron-i18n",
     "express": "^4.15.3",
     "express-hbs": "^1.0.4",

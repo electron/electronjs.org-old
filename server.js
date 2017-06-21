@@ -7,12 +7,6 @@ const jexodus = require('./lib/jexodus')(__dirname).on('ready', startServer)
 const hbs = require('express-hbs')
 const i18n = require('electron-i18n')
 const app = express()
- 
-// app.engine('.hbs', exphbs({
-//   defaultLayout: 'main',
-//   extname: '.hbs'
-// }))
-// app.set('view engine', '.hbs')
 
 app.engine('html', hbs.express4({
   defaultLayout: path.join(__dirname, '/views/layouts/main.html'),
@@ -21,9 +15,6 @@ app.engine('html', hbs.express4({
   partialsDir: path.join(__dirname, '/views/partials'),
   onCompile: function(exhbs, source, filename) {
     var options = {}
-    console.log(typeof source)
-    console.log(filename)
-    debugger
     return exhbs.handlebars.compile(source, options)
   }
 }))
@@ -39,6 +30,13 @@ app.use(sass({
 }))
 app.use(jexodus.middleware)
 app.use(express.static(__dirname))
+
+const bs = require('browser-sync')({
+  port: 3030,
+  files: path.join(__dirname, '/**/*'),
+  logSnippet: false
+})
+app.use(require('connect-browser-sync')(bs))
 
 app.get('/docs/api/:apiName', (req, res) => {
   const locale = 'fr-FR'
