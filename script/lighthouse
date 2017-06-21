@@ -27,7 +27,7 @@ server.stdout.on('data', (data) => {
     console.log('Server running, starting lightcrawler')
 
     const lightcrawlerPath = require.resolve('lightcrawler/cli.js')
-    const lightcrawler = ChildProcess.spawn(lightcrawlerPath, ['--url', 'http://127.0.0.1:4000'], {stdio: 'inherit'})
+    const lightcrawler = ChildProcess.spawn(lightcrawlerPath, ['--url', 'http://127.0.0.1:4000', '--config', 'lighthouse.json'], {stdio: 'inherit'})
 
     lightcrawler.on('error', (error) => {
       console.error('Error running lighthouse')
