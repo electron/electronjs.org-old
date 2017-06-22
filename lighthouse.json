@@ -60,7 +60,6 @@
       "uses-passive-event-listeners",
       "load-fast-enough-for-pwa",
       "manifest-short-name-length",
-      "screenshot-thumbnails",
       "themed-omnibox",
       "time-to-firstbyte",
       "time-to-interactive",
