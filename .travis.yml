@@ -11,6 +11,9 @@ notifications:
 node_js:
   - 7
 
+before_install:
+  - rvm install 2.3.4
+
 script:
   - npm test
   - npm run lighthouse
