@@ -1,5 +1,6 @@
 {
   "short_name": "Electron",
   "name": "Electron",
-  "display": "browser"
+  "display": "browser",
+  "theme_color": "#2f3241"
 }
