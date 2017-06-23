@@ -78,6 +78,11 @@ h2 {
   h1 { @include breakpoint(lg) { font-size: $body-font-size * 2.75; } }
 }
 
+.highlight {
+  background-color: $main-bg-color-shade; // override Primer
+  border-color: $main-border-color; // override Primer
+}
+
 // Responsive video
 .video {
   position: relative;
