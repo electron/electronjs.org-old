@@ -6,7 +6,6 @@
       "maxChromeInstances": 5
     },
     "handleLater": [
-      "color-contrast",
       "content-width"
     ],
     "onlyAudits": [
@@ -21,6 +20,7 @@
       "audio-caption",
       "button-name",
       "bypass",
+      "color-contrast",
       "definition-list",
       "dlitem",
       "document-title",
