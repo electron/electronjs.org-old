@@ -1,7 +1,9 @@
 const fs = require('fs')
 const path = require('path')
 const {before, describe, it} = require('mocha')
-const {expect} = require('chai')
+const chai = require('chai')
+const expect = chai.expect
+chai.use(require('chai-cheerio'))
 
 describe('electron.atom.io', () => {
   describe('apps', () => {

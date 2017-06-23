@@ -1,4 +1,3 @@
-const fs = require('fs')
 const path = require('path')
 const express = require('express')
 const sass = require('node-sass-middleware')
@@ -13,7 +12,7 @@ app.engine('html', hbs.express4({
   extname: '.html',
   layoutsDir: path.join(__dirname, '/views/layouts'),
   partialsDir: path.join(__dirname, '/views/partials'),
-  onCompile: function(exhbs, source, filename) {
+  onCompile: function (exhbs, source, filename) {
     var options = {}
     return exhbs.handlebars.compile(source, options)
   }
@@ -22,11 +21,11 @@ app.set('view engine', 'html')
 app.set('views', path.join(__dirname, '/views'))
 
 app.use(sass({
-    src: path.join(__dirname, '_sass'),
-    dest: path.join(__dirname, 'css'),
-    debug: true,
+  src: path.join(__dirname, '_sass'),
+  dest: path.join(__dirname, 'css'),
+  debug: true,
     // outputStyle: 'compressed',
-    prefix: '/css'
+  prefix: '/css'
 }))
 app.use(jexodus.middleware)
 app.use(express.static(__dirname))
