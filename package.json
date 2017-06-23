@@ -11,7 +11,7 @@
     "start": "NODE_ENV=production node server.js",
     "bootstrap": "script/bootstrap",
     "link-checker": "grunt linkChecker",
-    "test": "mocha --reporter min && standard",
+    "test": "NODE_ENV=test mocha && standard",
     "build": "npm-run-all build-*",
     "build-versions": "script/versions",
     "build-releases": "script/releases",
@@ -21,6 +21,22 @@
     "build-apps": "script/apps",
     "release": "script/release 2>&1 | script/notify",
     "dev": "nodemon -e js,scss server.js"
+  },
+  "dependencies": {
+    "browser-sync": "^2.18.12",
+    "connect-browser-sync": "^2.1.0",
+    "electron-i18n": "github:electron/electron-i18n",
+    "express": "^4.15.3",
+    "express-hbs": "^1.0.4",
+    "express-liquid": "^0.2.6",
+    "flat": "^2.0.1",
+    "liquid-node": "^2.6.1",
+    "lodash": "^4.17.4",
+    "marky-markdown": "^11.0.0",
+    "node-sass-middleware": "^0.11.0",
+    "require-yml": "^1.3.1",
+    "tinyliquid": "^0.2.34",
+    "tree-hugger": "^1.3.0"
   },
   "devDependencies": {
     "awesome-electron": "^2.5.0",
@@ -38,6 +54,7 @@
     "grunt-cli": "^0.1.13",
     "grunt-link-checker": "^0.1.0",
     "href-type": "^1.0.1",
+    "lil-env-thing": "^1.0.0",
     "marky-markdown-lite": "^1.2.0",
     "mocha": "^3.2.0",
     "nodemon": "^1.11.0",
@@ -51,27 +68,8 @@
     "to-markdown": "github:zeke/to-markdown#support-markdown-it-gfm"
   },
   "standard": {
-    "env": {
-      "mocha": true
-    },
     "ignore": [
       "/js/vendor"
     ]
-  },
-  "dependencies": {
-    "browser-sync": "^2.18.12",
-    "connect-browser-sync": "^2.1.0",
-    "electron-i18n": "github:electron/electron-i18n",
-    "express": "^4.15.3",
-    "express-hbs": "^1.0.4",
-    "express-liquid": "^0.2.6",
-    "flat": "^2.0.1",
-    "liquid-node": "^2.6.1",
-    "lodash": "^4.17.4",
-    "marky-markdown": "^11.0.0",
-    "node-sass-middleware": "^0.11.0",
-    "require-yml": "^1.3.1",
-    "tinyliquid": "^0.2.34",
-    "tree-hugger": "^1.3.0"
   }
 }

@@ -1,11 +1,41 @@
-const fs = require('fs')
-const path = require('path')
 const {before, describe, it} = require('mocha')
+const supertest = require('supertest')
+const cheerio = require('cheerio')
 const chai = require('chai')
+chai.should()
 const expect = chai.expect
 chai.use(require('chai-cheerio'))
+const app = require('../server.js')
+
+function get (route) {
+  return supertest(app).get(route)
+    .expect(200)
+    .then(res => {
+      res.$ = cheerio.load(res.text)
+      return Promise.resolve(res)
+    })
+}
 
 describe('electron.atom.io', () => {
+  // describe('static pages', () => {
+  //   it('/ (homepage)', (done) => {
+  //     get('/').then(res => {
+  //       res.$('title').should.have.class('site-header')
+  //       res.$('header').should.have.class('site-header')
+  //       done()
+  //     })
+  //   })
+  // })
+
+  describe('dynamic routes', () => {
+    it('/docs/api/app', (done) => {
+      get('/docs/api/app').then(res => {
+        res.$('header').should.have.class('site-header')
+        done()
+      })
+    })
+  })
+
   describe('apps', () => {
     it('has a JSON file full of app metadata')
     it('has a PNG image file for every app icon')
