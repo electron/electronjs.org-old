@@ -19,7 +19,8 @@
     "build-awesome": "script/awesome",
     "build-userland": "script/userland",
     "build-apps": "script/apps",
-    "release": "script/release 2>&1 | script/notify"
+    "release": "script/release 2>&1 | script/notify",
+    "lighthouse": "npm run bootstrap && script/lighthouse"
   },
   "devDependencies": {
     "awesome-electron": "^2.5.0",
@@ -36,6 +37,7 @@
     "grunt-cli": "^0.1.13",
     "grunt-link-checker": "^0.1.0",
     "href-type": "^1.0.1",
+    "lightcrawler": "0.0.6",
     "marky-markdown-lite": "^1.2.0",
     "mocha": "^3.2.0",
     "npm-run-all": "^3.1.2",

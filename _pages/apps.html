@@ -56,7 +56,7 @@ excerpt: See some of the amazing apps built on Electron.
 <section class='page-section'>
   <div class='container-narrow text-center' id="apps">
 
-    <input class="filterable-list-input" placeholder="Filter apps by name, description, keyword, date..." type="search" autofocus="on" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+    <input class="filterable-list-input" placeholder="Filter apps by name, description, keyword, date..." aria-label="Filter apps by name, description, keyword, date" type="search" autofocus="on" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
 
     <ul class="mb-4 filterable-list app-list">
       {% assign sortedApps = site.data.apps | sort:"date" %}
