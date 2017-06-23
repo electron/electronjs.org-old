@@ -25,7 +25,8 @@
   "devDependencies": {
     "awesome-electron": "^2.5.0",
     "chai": "^3.5.0",
-    "cheerio": "^0.22.0",
+    "chai-cheerio": "^1.0.0",
+    "cheerio": "^1.0.0-rc.1",
     "dotenv": "^4.0.0",
     "electron-apps": "^1.762.0",
     "electron-docs": "^3.0.0",
