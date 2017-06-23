@@ -1,22 +1,21 @@
 
 // Colors -----------------------
-// TODO: Audit for contrast
 
 // main
 $main-bg-color:       hsl(190, 12%,100%);
 $main-bg-color-shade: hsl(190, 12%, 97%);
-$main-color-subtle:   hsl(190, 12%, 54%);
+$main-color-subtle:   hsl(190, 12%, 42%);
 $main-color:          hsl(192, 24%, 30%);
 $main-color-strong:   hsl(190, 48%, 24%);
 
 $main-border-color:   hsl(190, 12%, 84%);
-$main-link-color:     hsl(194, 64%, 44%);
+$main-link-color:     hsl(208, 96%, 40%);
 
 // Jumbo
 $jumbo-bg-color:     hsl(230, 16%, 20%);
-$jumbo-color-subtle: hsl(190, 24%, 52%);
-$jumbo-color:        hsl(190, 36%, 60%);
-$jumbo-color-strong: hsl(190, 88%, 80%);
+$jumbo-color-subtle: hsl(190, 33%, 58%);
+$jumbo-color:        hsl(190, 66%, 72%);
+$jumbo-color-strong: hsl(190, 99%, 88%);
 
 // Sub
 $sub-bg-color:     $main-bg-color-shade;
