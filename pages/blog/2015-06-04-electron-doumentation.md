@@ -1,6 +1,7 @@
 ---
 title: Electron Documentation
 author: jlord
+date: '2015-06-04'
 ---
 
 This week we've given Electron's documentation a home on [electron.atom.io](http://electron.atom.io). You can visit [/docs/latest](http://electron.atom.io/docs/latest) for the latest set of docs. We'll keep versions of older docs, too, so you're able to visit [/docs/vX.XX.X](http://electron.atom.io/docs/v0.26.0) for the docs that correlate to the version you're using.
@@ -107,3 +108,4 @@ To create a page showing the versions that are available we just loop through th
 ```
 
 Hope you enjoyed these technical bits! If you're interested in more information on using Jekyll for documentation sites, checkout how GitHub's docs team publishes [GitHub's docs on Jekyll](https://github.com/blog/1939-how-github-uses-github-to-document-github).
+

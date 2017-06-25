@@ -1,6 +1,7 @@
 ---
-title: September 2016&#58; New Apps
+title: 'September 2016&#58; New Apps'
 author: haacked
+date: '2016-10-06'
 ---
 
 Here are the new Electron apps and talks that were added to the site in September.
@@ -47,3 +48,4 @@ Also, if you happen to be in Paris on December 5, Zeke will be [giving an Electr
 | <img src='/images/apps/ling-icon.png' width='50'> | [Ling](https://github.com/talhasch/ling) | REST Client |
 | <img src='/images/apps/shortexts-icon.png' width='50'> | [Shortexts](http://shortexts.com/) | Shortcuts for texts you copy frequently, folders and emojis |
 | <img src='/images/apps/front-end-box-icon.png' width='50'> | [Front-End Box](http://frontendbox.io) | Set of front-end-code generators |
+

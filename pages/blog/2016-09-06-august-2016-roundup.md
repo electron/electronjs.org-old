@@ -1,6 +1,7 @@
 ---
-title: August 2016&#58; New Apps
+title: 'August 2016&#58; New Apps'
 author: jlord
+date: '2016-09-06'
 ---
 
 Here are the new Electron apps that were added to the site in August.
@@ -38,3 +39,4 @@ If you've made an Electron app or host a meetup, make a [pull request](https://g
 | <img src='/images/apps/react-intl-translation-editor.png' width='50'> | [Translation Editor](https://bitbucket.org/bflower/react-intl-editor/wiki/Home) | Translation files editor for INTL ICU messages (see formatjsio) |
 | <img src='/images/apps/5eplay.png' width='50'> | [5EClient](https://www.5eplay.com/) | 5EPlay CSGO Client |
 | <img src='/images/apps/theme-juice.png' width='50'> | [Theme Juice](https://www.themejuice.it) | Local WordPress development made easy |
+

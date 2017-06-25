@@ -1,6 +1,7 @@
 ---
 title: Mac App Store and Windows Auto Updater on Electron
 author: jlord
+date: '2015-11-05'
 ---
 
 Recently Electron added two exciting features: a Mac App Store compatible build and a built-in Windows auto updater.
@@ -25,3 +26,4 @@ Related Pull Requests: [electron/electron#3108](https://github.com/electron/elec
 In Electron `v0.34.1` the `auto-updater` module was improved in order to work with [`Squirrel.Windows`](https://github.com/Squirrel/Squirrel.Windows). This means that Electron ships with easy ways for auto updating your app on both OS X and Windows. You can read more on [setting up your app for auto updating on Windows](https://github.com/electron/electron/blob/master/docs/api/auto-updater.md#windows) in the documentation.
 
 Related Pull Request: [electron/electron#1984](https://github.com/electron/electron/pull/1984)
+

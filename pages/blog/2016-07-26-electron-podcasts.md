@@ -1,6 +1,7 @@
 ---
 title: Electron Podcasts
 author: jlord
+date: '2016-07-26'
 ---
 
 Looking for an introduction to Electron? Two new podcasts have just been released that give a great overview of what it is, why it was built, and how it is being used.
@@ -28,3 +29,4 @@ Looking for an introduction to Electron? Two new podcasts have just been release
 If you're looking for an introduction to Electron, give the first a listen. The second goes into more detail about building apps with great tips from Nylas's [Evan Morikawa](https://twitter.com/E0M).
 
 We are currently working on two more podcasts that should come out next month, keep an eye on the [@ElectronJS](https://twitter.com/ElectronJS) Twitter account for updates.
+

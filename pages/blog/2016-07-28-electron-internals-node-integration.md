@@ -1,6 +1,7 @@
 ---
-title: Electron Internals&#58; Message Loop Integration
+title: 'Electron Internals&#58; Message Loop Integration'
 author: zcbenz
+date: '2016-07-28'
 ---
 
 This is the first post of a series that explains the internals of Electron. This
@@ -79,3 +80,4 @@ easily reused for projects that want to integrate Node.
 [node-qt]: https://github.com/arturadib/node-qt
 [multi-process]: http://dev.chromium.org/developers/design-documents/multi-process-architecture
 [node-bindings]: https://github.com/electron/electron/tree/master/atom/common
+

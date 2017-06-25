@@ -1,6 +1,7 @@
 ---
 title: Electron's API Docs as Structured Data
 author: zeke
+date: '2016-09-27'
 ---
 
 Today we're announcing some improvements to Electron's documentation. Every new
@@ -120,3 +121,4 @@ include:
 - Improvements to [electron.atom.io/docs/](http://electron.atom.io/docs/)
 - A [TypeScript definition file](https://github.com/electron/electron-docs-linter/blob/master/README.md#typescript-definitions) for more streamlined Electron development in projects using TypeScript.
 - Searchable offline documentation for tools like [Dash.app](https://kapeli.com/dash) and [devdocs.io](http://devdocs.io/)
+

@@ -1,6 +1,7 @@
 ---
-title: "Touch Bar Support"
+title: Touch Bar Support
 author: kevinsawicki
+date: '2017-03-08'
 ---
 
 The Electron [1.6.3] beta release contains initial support for the macOS [Touch Bar].
@@ -137,3 +138,4 @@ app.once('ready', () => {
 
 [1.6.3]: https://github.com/electron/electron/releases/tag/v1.6.3
 [Touch Bar]: https://developer.apple.com/macos/touch-bar
+

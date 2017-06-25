@@ -1,6 +1,7 @@
 ---
 title: What's New in Electron
 author: jlord
+date: '2015-10-15'
 ---
 
 There have been some interesting updates and talks given on Electron recently, here's a roundup.
@@ -93,3 +94,4 @@ Atom team member [Kevin Sawicki](https://github.com/kevinsawicki) and others gav
 
 #### Making a web app feel native by Ben Gotow
 <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/JIRXVGVPzn8" frameborder="0" allowfullscreen></iframe></div>
+

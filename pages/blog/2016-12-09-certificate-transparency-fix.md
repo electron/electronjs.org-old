@@ -1,6 +1,7 @@
 ---
 title: Certificate Transparency Fix
 author: kevinsawicki
+date: '2016-12-09'
 ---
 
 Electron [1.4.12] contains an important patch that fixes an upstream Chrome
@@ -115,3 +116,4 @@ following places:
 
 [libchromiumcontent]: https://github.com/electron/libchromiumcontent
 [1.4.12]: https://github.com/electron/electron/releases/tag/v1.4.12
+

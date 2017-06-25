@@ -1,6 +1,7 @@
 ---
-title: "Electron Internals: Building Chromium as a Library"
+title: 'Electron Internals: Building Chromium as a Library'
 author: zcbenz
+date: '2017-03-03'
 ---
 
 Electron is based on Google's open-source Chromium, a project that is not
@@ -172,3 +173,4 @@ contribute to Electron. The effort is totally worth it.
 [libcc-gyp]: https://github.com/electron/libchromiumcontent/pull/98
 [libcc-gn-hack]: https://github.com/electron/libchromiumcontent/pull/239
 [libcc-gn]: https://github.com/electron/libchromiumcontent/pull/249
+

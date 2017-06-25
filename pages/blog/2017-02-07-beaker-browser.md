@@ -1,6 +1,7 @@
 ---
-title: "Project of the Week: Beaker Browser"
+title: 'Project of the Week: Beaker Browser'
 author: zeke
+date: '2017-02-07'
 ---
 
 This week we caught up with [Paul Frazee](http://pfrazee.github.io/), creator
@@ -84,3 +85,4 @@ We have lots of open issues. Don't be afraid to ping me. #beakerbrowser on freen
 2. If you need to open an issue in the Electron repo, go the extra mile to make it easy to reproduce. You'll get a response much more quickly, and the team will appreciate it. Even better, try fixing it yourself. It's actually pretty interesting to see the innards.
 3. Read through all the guides and advanced docs at least once.
 4. Don't build a browser, it's a saturated market.
+

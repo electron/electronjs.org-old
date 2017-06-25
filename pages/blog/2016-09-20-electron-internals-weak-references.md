@@ -1,6 +1,7 @@
 ---
-title: Electron Internals&#58; Weak References
+title: 'Electron Internals&#58; Weak References'
 author: zcbenz
+date: '2016-09-20'
 ---
 
 As a language with garbage collection, JavaScript frees users from managing
@@ -213,3 +214,4 @@ The `createIDWeakMap` API:
 [window-disappearing]: http://electron.atom.io/docs/faq/#my-apps-windowtray-disappeared-after-a-few-minutes
 [WeakMap]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap
 [remote-procedure-call]: https://en.wikipedia.org/wiki/Remote_procedure_call
+

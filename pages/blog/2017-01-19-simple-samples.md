@@ -1,6 +1,7 @@
 ---
 title: Electron Simple Samples
 author: zeke
+date: '2017-01-19'
 ---
 
 We recently hosted an Electron hackathon at GitHub HQ for members of [Hackbright Academy](https://hackbrightacademy.com), a coding school for women founded in San Francisco. To help attendees get a head start on their projects, our own [Kevin Sawicki](https://github.com/kevinsawicki) created a few sample Electron applications.
@@ -62,3 +63,4 @@ We hope these apps help you get started using Electron. Here are a handful other
 - [electron.atom.io/docs/all](http://electron.atom.io/docs/all/): All of the Electron documentation together on a single searchable page.
 - [hokein/electron-sample-apps](https://github.com/hokein/electron-sample-apps): Another collection of sample applications for Electron, compiled by Electron maintainer [Haojian Wu](https://github.com/hokein).
 - [awesome-electron](https://github.com/sindresorhus/awesome-electron) - A GitHub repository that collects the latest and greatest Electron-related tutorials, books, videos, etc.
+

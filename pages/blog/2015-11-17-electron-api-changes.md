@@ -1,6 +1,7 @@
 ---
 title: API Changes Coming in Electron 1.0
 author: zcbenz
+date: '2015-11-17'
 ---
 
 Since the beginning of Electron, starting way back when it used to be called Atom-Shell, we have been experimenting with providing a nice cross-platform JavaScript API for Chromium's content module and native GUI components. The APIs started very organically, and over time we have made several changes to improve the initial designs.
@@ -95,3 +96,4 @@ The style of `Tray` event names was a bit different from other modules so a rena
 * `right-clicked` is renamed to `right-click`
 
 [issue-387]: https://github.com/electron/electron/issues/387
+

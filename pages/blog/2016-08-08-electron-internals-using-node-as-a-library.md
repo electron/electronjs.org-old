@@ -1,6 +1,7 @@
 ---
-title: Electron Internals&#58; Using Node as a Library
+title: 'Electron Internals&#58; Using Node as a Library'
 author: zcbenz
+date: '2016-08-08'
 ---
 
 This is the second post in an ongoing series explaining the internals of
@@ -113,3 +114,4 @@ in a future post.
 [native-modules]: https://nodejs.org/api/addons.html
 [boringssl]: https://boringssl.googlesource.com/boringssl
 [openssl]: https://www.openssl.org
+

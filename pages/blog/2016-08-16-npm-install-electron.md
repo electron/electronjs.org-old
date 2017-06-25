@@ -1,6 +1,7 @@
 ---
 title: npm install electron
 author: zeke
+date: '2016-08-16'
 ---
 
 As of Electron version 1.3.1, you can `npm install electron --save-dev` to
@@ -75,3 +76,4 @@ repository.
 For any other issues with Electron,
 please use the [electron/electron](https://github.com/electron/electron/issues)
 repository.
+
