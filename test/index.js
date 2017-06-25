@@ -1,3 +1,4 @@
+require('make-promises-safe')
 const {before, describe, it} = require('mocha')
 const supertest = require('supertest')
 const cheerio = require('cheerio')
@@ -69,7 +70,14 @@ describe('electron.atom.io', () => {
     })
   })
 
-  it('redirects trailing slashes')
+  it('redirects trailing slashes', (done) => {
+    supertest(app).get('/apps/')
+      .expect(301)
+      .then(res => {
+        res.headers.location.should.equal('/apps')
+        done()
+      })
+  })
 
   describe('/docs/api/app (a dynamic route)', () => {
     let res, $

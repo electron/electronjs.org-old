@@ -26,6 +26,7 @@
     "awesome-electron": "^2.5.0",
     "browser-sync": "^2.18.12",
     "connect-browser-sync": "^2.1.0",
+    "connect-slashes": "^1.3.1",
     "dotenv": "^4.0.0",
     "electron-apps": "^1.762.0",
     "electron-docs": "^3.0.0",
@@ -45,6 +46,7 @@
     "lil-env-thing": "^1.0.0",
     "liquid-node": "^2.6.1",
     "lodash": "^4.17.4",
+    "make-promises-safe": "^1.1.0",
     "marky-markdown-lite": "^1.2.0",
     "minimist": "^1.2.0",
     "node-sass-middleware": "^0.11.0",
@@ -55,18 +57,17 @@
     "tinyliquid": "^0.2.34",
     "titlecase": "^1.0.2",
     "to-markdown": "github:zeke/to-markdown#support-markdown-it-gfm",
-    "trailing-slash": "^2.0.0",
     "tree-hugger": "^1.3.0"
   },
   "devDependencies": {
-    "nodemon": "^1.11.0",
-    "npm-run-all": "^3.1.2",
-    "supertest": "^3.0.0",
-    "standard": "^8.6.0",
-    "mocha": "^3.2.0",
     "chai": "^3.5.0",
     "chai-cheerio": "^1.0.0",
-    "cheerio": "^1.0.0-rc.1"
+    "cheerio": "^1.0.0-rc.1",
+    "mocha": "^3.2.0",
+    "nodemon": "^1.11.0",
+    "npm-run-all": "^3.1.2",
+    "standard": "^8.6.0",
+    "supertest": "^3.0.0"
   },
   "standard": {
     "ignore": [
