@@ -1,5 +1,6 @@
 require('make-promises-safe')
 const {before, describe, it} = require('mocha')
+const test = it
 const supertest = require('supertest')
 const cheerio = require('cheerio')
 const chai = require('chai')
@@ -10,14 +11,15 @@ const app = require('../server.js')
 function get (route) {
   return supertest(app).get(route)
     .then(res => {
-      res.$ = cheerio.load(res.text)
-      return Promise.resolve(res)
+      const $ = cheerio.load(res.text)
+      $.res = Object.assign({}, res)
+      return Promise.resolve($)
     })
 }
 
 describe('electron.atom.io', () => {
-  // wait until jexodus is done
   before(function (done) {
+    // wait until jexodus is done
     let interval
     this.timeout(10 * 1000)
     function handler () {
@@ -30,71 +32,83 @@ describe('electron.atom.io', () => {
     interval = setInterval(handler, 100)
   })
 
-  describe('/ (a static route)', () => {
-    let res, $
-
-    before(done => {
-      get('/').then(_res => {
-        res = _res
-        $ = res.$
-        done()
-      })
-    })
-
-    it('renders the header', () => {
+  test('/', (done) => {
+    get('/').then($ => {
+      // layout is working
       $('header').should.have.class('site-header')
-    })
 
-    it('renders localized content', () => {
+      // localized content
       $('p.jumbotron-lead').should.contain('Build cross platform desktop apps')
-    })
 
-    it('includes 24 featured apps', () => {
+      // 24 featured apps
       $('.featured-app').length.should.equal(24)
+
+      done()
     })
   })
 
-  describe('/apps', () => {
-    let res, $
-
-    before(done => {
-      get('/apps').then(_res => {
-        res = _res
-        $ = res.$
-        done()
-      })
-    })
-
-    it('includes lots of apps', () => {
+  test('/apps', (done) => {
+    get('/apps').then($ => {
+      // long list of apps
       $('.listed-app').length.should.be.above(300)
+
+      done()
     })
   })
 
-  it('redirects trailing slashes', (done) => {
+  test('/docs/api/app', (done) => {
+    get('/docs/api/app').then($ => {
+      // layout is working
+      $('header').should.have.class('site-header')
+
+      // localized content
+      // TODO
+
+      // page title
+      // TODO
+      done()
+    })
+  })
+
+  test('/blog', (done) => {
+    get('/blog').then($ => {
+      // layout is working
+      $('header').should.have.class('site-header')
+
+      // localized content
+      // TODO
+
+      // page title
+      // TODO
+
+      // list of posts
+
+      done()
+    })
+  })
+
+  // test('/blog/webtorrent', (done) => {
+  //   get('/blog/webtorrent').then($ => {
+  //     // layout is working
+  //     $('header').should.have.class('site-header')
+
+  //     // post title is page title
+  //     // TODO
+
+  //     // old /blog/YYYY/MM/DD format URLs')
+  //     // https://electron.atom.io/blog/2017/06/01/typescript
+
+  //     done()
+  //   })
+  // })
+
+  test('redirects trailing slashes', (done) => {
     supertest(app).get('/apps/')
       .expect(301)
       .then(res => {
         res.headers.location.should.equal('/apps')
         done()
       })
-  })
-
-  describe('/docs/api/app (a dynamic route)', () => {
-    let res, $
-
-    before(done => {
-      get('/docs/api/app').then(_res => {
-        res = _res
-        $ = res.$
-        done()
-      })
-    })
-
-    it('includes the header', () => {
-      $('header').should.have.class('site-header')
-    })
-
-    it('sets page title')
   })
 
   // describe('apps', () => {
