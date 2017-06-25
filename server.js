@@ -15,7 +15,7 @@ app.engine('html', hbs.express4({
   defaultLayout: path.join(__dirname, '/views/layouts/main.html'),
   extname: '.html',
   layoutsDir: path.join(__dirname, '/views/layouts'),
-  partialsDir: path.join(__dirname, '_includes'),
+  partialsDir: path.join(__dirname, 'partials'),
   onCompile: function (exhbs, source, filename) {
     var options = {}
     return exhbs.handlebars.compile(source, options)
