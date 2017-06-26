@@ -31,6 +31,11 @@ p:last-child {
   margin-bottom: 0;
 }
 
+blockquote,
+.blockquote {
+  color: $main-color-subtle; // override Primer
+}
+
 .lead {
   margin-bottom: 0; // override Primer
   color: $body-color; // override Primer
@@ -43,6 +48,10 @@ p:last-child {
 .text-center-sm { @include breakpoint(sm) { text-align: center !important; } }
 .text-center-md { @include breakpoint(md) { text-align: center !important; } }
 .text-center-lg { @include breakpoint(lg) { text-align: center !important; } }
+
+.text-subtle  { color: $main-color-subtle !important; }
+.text-default { color: $main-color !important; }
+.text-strong  { color: $main-color-strong !important; }
 
 h1 {                   -webkit-font-smoothing: antialiased; }
 h2 { font-weight: 300; -webkit-font-smoothing: antialiased; }
@@ -67,6 +76,11 @@ h2 {
 
   &.strong-headers hr { margin: $spacer6 0; }
   h1 { @include breakpoint(lg) { font-size: $body-font-size * 2.75; } }
+}
+
+.highlight {
+  background-color: $main-bg-color-shade; // override Primer
+  border-color: $main-border-color; // override Primer
 }
 
 // Responsive video
