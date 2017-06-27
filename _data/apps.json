@@ -127,6 +127,35 @@
     ]
   },
   {
+    "slug": "akiee",
+    "name": "Akiee",
+    "description": "A Markdown-based task manager for hackers and people who build stuff.",
+    "website": "http://rockiger.com/en/akiee/",
+    "repository": "https://github.com/rockiger/akiee",
+    "keywords": [
+      "todo",
+      "task management",
+      "kanban",
+      "personal",
+      "markdown",
+      "productivity",
+      "agile"
+    ],
+    "license": "GPL2",
+    "icon": "akiee-icon.png",
+    "icon32": "akiee-icon-32.png",
+    "icon64": "akiee-icon-64.png",
+    "icon128": "akiee-icon-128.png",
+    "date": "2017-06-27",
+    "iconColors": [
+      "#3eadec",
+      "#eceded",
+      "#80c4e9",
+      "#0c0c0c",
+      "#cccccc"
+    ]
+  },
+  {
     "slug": "alchemy",
     "name": "Alchemy",
     "description": "A drag-and-drop file converter for your menubar.",
@@ -4083,7 +4112,7 @@
     "slug": "markdownify",
     "name": "Markdownify",
     "description": "This is a minimal Markdown Editor desktop app based on Electron.",
-    "website": "http://www.amitmerchant.com/electron-markdownify",
+    "website": "https://markdownify.js.org",
     "repository": "https://github.com/amitmerchant1990/electron-markdownify",
     "keywords": [
       "electron",
@@ -5161,6 +5190,32 @@
       "#874f07",
       "#e8b265",
       "#fcc479"
+    ]
+  },
+  {
+    "slug": "perlotto",
+    "name": "perlotto",
+    "description": "Minimalistic wrapper around Google Music service",
+    "website": "https://github.com/can3p/perlotto",
+    "repository": "https://github.com/can3p/perlotto",
+    "keywords": [
+      "music",
+      "player",
+      "google music",
+      "google play"
+    ],
+    "license": "MIT",
+    "icon": "perlotto-icon.png",
+    "icon32": "perlotto-icon-32.png",
+    "icon64": "perlotto-icon-64.png",
+    "icon128": "perlotto-icon-128.png",
+    "date": "2017-06-27",
+    "iconColors": [
+      "#f7fafa",
+      "#15848c",
+      "#66ced2",
+      "#72b4bc",
+      "#92c4cc"
     ]
   },
   {
