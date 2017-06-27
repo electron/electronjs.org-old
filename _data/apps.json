@@ -5387,6 +5387,32 @@
     ]
   },
   {
+    "slug": "poi",
+    "name": "poi",
+    "description": "A browser for web-based game kantai-collection",
+    "website": "https://poi.io",
+    "repository": "https://github.com/poooi/poi",
+    "keywords": [
+      "kantai-collection",
+      "kancolle",
+      "game",
+      "electron"
+    ],
+    "license": "MIT",
+    "icon": "poi-icon.png",
+    "icon32": "poi-icon-32.png",
+    "icon64": "poi-icon-64.png",
+    "icon128": "poi-icon-128.png",
+    "date": "2017-06-27",
+    "iconColors": [
+      "#f7e8d3",
+      "#281617",
+      "#a49576",
+      "#96553d",
+      "#908894"
+    ]
+  },
+  {
     "slug": "pomolectron",
     "name": "Pomolectron",
     "description": "A Pomodoro app in your menubar/tray.",
