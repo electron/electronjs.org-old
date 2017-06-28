@@ -126,6 +126,7 @@ $app-list-icon-size: 48px;
   display: flex;
   padding: 10px;
   border: 1px solid transparent;
+  color: $main-color-subtle;
 }
 
 .listed-app > a:hover,

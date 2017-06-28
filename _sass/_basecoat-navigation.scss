@@ -16,7 +16,7 @@
 }
 
 .site-header a {
-  color: inherit;
+  color: $jumbo-color;
   &.active,
   &:hover {
     color: $jumbo-color-strong;

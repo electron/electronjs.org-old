@@ -1,3 +1,6 @@
+dist: trusty
+sudo: false
+
 language: node_js
 
 notifications:
@@ -6,7 +9,14 @@ notifications:
     on_failure: change
 
 node_js:
-  - 4
+  - 7
+
+before_install:
+  - rvm install 2.3.4
+
+script:
+  - npm test
+  - npm run lighthouse
 
 env:
   global:
@@ -17,6 +27,7 @@ branches:
     - gh-pages
 
 addons:
+  chrome: beta
   apt:
     sources:
     - ubuntu-toolchain-r-test

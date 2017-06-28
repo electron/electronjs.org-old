@@ -65,7 +65,7 @@ view_all_releases_on_github: <a href="https://github.com/electron/electron-api-d
 quick_start:
   title:
     "Spin up the
-    <a href='https://github.com/electron/electron-quick-start' target='_blank'>Quick Start</a>
+    <a href='https://github.com/electron/electron-quick-start' target='_blank' rel='noopener'>Quick Start</a>
     app to see Electron in action:"
   description: A minimal Electron app with helpful notations.
   clone: Clone the Quick Start repository
@@ -82,7 +82,7 @@ apps:
   description:
     With Electron, creating a desktop application for your company or idea is
     easy. Initially developed for GitHub's
-    <a href='https://atom.io' target='_blank'>Atom editor</a>, Electron has
+    <a href='https://atom.io' target='_blank' rel='noopener'>Atom editor</a>, Electron has
     since been used to create applications by companies like Microsoft,
     Facebook, Slack, and Docker.
   view_more: View more apps
