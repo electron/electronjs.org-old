@@ -1618,23 +1618,5 @@
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.34.1",
     "body": "Changelog:\n- Add `app.allowNTLMCredentialsForAllDomains` API.\n- Add `app.makeSingleInstance` API.\n- Add support for `--cipher-suite-blacklist` command line switch.\n- Add `ELECTRON_ENABLE_LOGGING` environment variable to enable logging.\n- Add `background-color` option for `BrowserWindow`.\n- Enable setting PAC url in `session.setProxy` API.\n- Fix the locations of external files saved by `WebContents.savePage`.\n- Fix memory corruption in child processes forked by `child_process.fork`.\n- Fix debugger stopped at wrong place in main process when `--debug-brk` is specified.\n\n**OS X**\n- Improve how draggable regions are handled.\n\n**Windows**\n- Make `auto-updater` module work together with `Squirrel.Windows`.\n",
     "version": "0.34.1"
-  },
-  {
-    "url": "https://api.github.com/repos/electron/electron/releases/1971202",
-    "assets_url": "https://api.github.com/repos/electron/electron/releases/1971202/assets",
-    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/1971202/assets{?name,label}",
-    "html_url": "https://github.com/electron/electron/releases/tag/v0.34.0",
-    "id": 1971202,
-    "tag_name": "v0.34.0",
-    "target_commitish": "master",
-    "name": "electron v0.34.0",
-    "draft": false,
-    "prerelease": false,
-    "created_at": "2015-10-16T10:53:25Z",
-    "published_at": "2015-10-16T12:16:37Z",
-    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.34.0",
-    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.34.0",
-    "body": "Changelog:\n\n**OS X**\n- Add experiment build for Mac App Store, read [Mac App Store Submission Guide](https://github.com/atom/electron/blob/master/docs/tutorial/mac-app-store-submission-guide.md) for more.\n",
-    "version": "0.34.0"
   }
 ]
