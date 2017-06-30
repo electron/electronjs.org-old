@@ -5,6 +5,7 @@ const hbs = require('express-hbs')
 const i18n = require('electron-i18n')
 const slashes = require('connect-slashes')
 const browsersync = require('./lib/browsersync')()
+const electronApps = require('electron-apps')
 const sass = require('./lib/sass')()
 const helmet = require('helmet')
 const port = Number(process.env.PORT) || argv.p || argv.port || 5000
@@ -31,14 +32,26 @@ app.use(jexodus.middleware)
 app.use(express.static(__dirname))
 app.use(browsersync)
 
-app.get('/docs/api/:apiName', (req, res) => {
+app.get('/docs/api/:slug', (req, res) => {
   const locale = 'fr-FR'
-  const api = i18n.api.get(req.params.apiName, locale)
+  const api = i18n.api.get(req.params.slug, locale)
   const context = {
     api: api,
     layout: 'docs'
   }
   res.render('api', context)
+})
+
+app.get('/app/:slug', (req, res) => {
+  res.redirect(`/apps/${req.params.slug}`)
+})
+
+app.get('/apps/:slug', (req, res) => {
+  const app = electronApps.find(app => app.slug === req.params.slug)
+  const context = {
+    app: app
+  }
+  res.render('app', context)
 })
 
 function startServer () {
