@@ -19,7 +19,7 @@
     "build-awesome": "script/awesome",
     "build-userland": "script/userland",
     "build-apps": "script/apps",
-    "release": "script/release 2>&1 | script/notify",
+    "release": "script/release",
     "lighthouse": "npm run bootstrap && script/lighthouse"
   },
   "devDependencies": {
@@ -43,7 +43,6 @@
     "npm-run-all": "^3.1.2",
     "require-dir": "^0.3.1",
     "semver": "^5.3.0",
-    "slack-notify": "^0.1.6",
     "standard": "^8.6.0",
     "titlecase": "^1.0.2",
     "to-markdown": "github:zeke/to-markdown#support-markdown-it-gfm"
