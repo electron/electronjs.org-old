@@ -36,7 +36,7 @@ $octicons-font-path: "../bower_components/octicons/octicons/";
 @import "../bower_components/primer-css/scss/buttons";
 // @import "../bower_components/primer-css/scss/menu";
 // @import "../bower_components/primer-css/scss/tabnav";
-// @import "../bower_components/primer-css/scss/filter-list";
+@import "../bower_components/primer-css/scss/filter-list";
 // @import "../bower_components/primer-css/scss/states";
 // @import "../bower_components/primer-css/scss/tooltips";
 
@@ -51,6 +51,7 @@ $octicons-font-path: "../bower_components/octicons/octicons/";
 @import "../bower_components/basecoat/scss/page-headers";
 @import "../bower_components/basecoat/scss/section";
 @import "../bower_components/basecoat/scss/tables";
+@import "../node_modules/primer-breadcrumb/lib/breadcrumb";
 
 
 // Utilities
@@ -58,7 +59,6 @@ $octicons-font-path: "../bower_components/octicons/octicons/";
 // @import "../bower_components/primer-css/scss/truncate";
 @import "../bower_components/primer-css/scss/utilities/utilities";
 @import "../bower_components/basecoat/scss/utility"; // Basecoat override
-
 
 // Electron -----------------------------------
 

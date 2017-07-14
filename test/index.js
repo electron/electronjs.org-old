@@ -51,7 +51,12 @@ describe('electron.atom.io', () => {
     get('/apps').then($ => {
       // long list of apps
       $('.listed-app').length.should.be.above(300)
-
+      $('.category-list li').length.should.be.above(15)
+    })
+    get('/apps?category=games').then($ => {
+      // apps for category
+      $('.listed-app').length.should.be.above(15)
+      $('#category-games.selected').length.should.equal(1)
       done()
     })
   })

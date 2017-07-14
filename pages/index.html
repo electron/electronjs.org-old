@@ -144,7 +144,7 @@ lang: en
       {{ site.data.locale.quick_start.title }}
     </h3>
     <p>{{ site.data.locale.quick_start.description }}</p>
-    
+
     <figure class="highlight highlight-dark text-left my-4">
 <pre><code><span class="c1"># {{ site.data.locale.quick_start.clone }}</span>
 $ git clone https://github.com/electron/electron-quick-start
@@ -178,7 +178,7 @@ $ npm install &amp;&amp; npm start</code></pre>
 
       <div>
         <div class="mb-4">
-          {% for app in site.data.apps %}
+          {% for app in site.data.apps.apps %}
             {% if site.data.featured_apps contains app.slug %}
               {% include featured_app.html %}
             {% endif %}

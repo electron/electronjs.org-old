@@ -1,9 +1,3 @@
----
-title: Apps
-permalink: /apps/
-layout: default
-excerpt: See some of the amazing apps built on Electron.
----
 
 <script src="/js/vendor/list.min.js"></script>
 <script src="/js/vendor/query-string.js"></script>
@@ -43,26 +37,60 @@ excerpt: See some of the amazing apps built on Electron.
       setQueryString({q: filterInput.value})
     })
   }
+
 </script>
 
 
 <div class='subtron'>
   <div class='container-narrow'>
     <h1>Apps Built on Electron</h1>
-    <p>We currently have {{ site.data.apps | size }} apps in our registry.</p>
+    <p>We currently have {{appLength}} apps in our registry.</p>
   </div>
 </div>
-
 <section class='page-section'>
-  <div class='container-narrow text-center' id="apps">
 
+  <div class="col-xs-3 px-4">
+    <ul class="filter-list border-bottom">
+      <li><strong>Categories</strong></li>
+    </ul>
+    <ul class="filter-list category-list">
+      {{#if currentCategory}}
+        <li>
+          <a href="/apps" class="filter-item" aria-current="page" id="category-{{this.slug}}">
+            <span class="count" title="results">{{appLength}}</span>
+            All Categories
+          </a>
+        </li>
+      {{/if}}
+      {{#each categories}}
+        <li>
+          <a href="/apps?category={{this.slug}}" class="filter-item {{className}}" aria-current="page" id="category-{{this.slug}}">
+            <span class="count" title="results">{{this.count}}</span>
+            {{this.name}}
+          </a>
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+  <div class='col-xs-9 container-narrow text-center' id="apps">
     <input class="filterable-list-input" placeholder="Filter apps by name, description, keyword, date..." type="search" autofocus="on" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
 
     <ul class="mb-4 filterable-list app-list">
-      {% assign sortedApps = site.data.apps | sort:"date" %}
-      {% for app in sortedApps reversed %}
-        {% include listed_app.html %}
-      {% endfor %}
+      {{#each apps}}
+        {{#unless this.disabled}}
+          <li class='listed-app'>
+            <a href='/apps/{{this.slug}}' title='{{this.name}} - {{app.description}}'>
+              <div class='listed-app-logo-wrapper'>
+                <img class='listed-app-logo' src='/images/apps/{{this.icon64}}' alt='{{this.name}}'>
+              </div>
+              <span class='listed-app-name text-gray-dark'>{{this.name}}</span>
+              <span class='listed-app-description text-gray-light'>{{this.description}}</span>
+              <span class='listed-app-date text-gray-light'>Added&nbsp;<span data-date='{{this.date}}'>{{this.date}}</span></span>
+              <span class='listed-app-keywords' style='display:none;'>{{this.keywords}}</span>
+            </a>
+          </li>
+        {{/unless}}
+      {{/each}}
     </ul>
 
     <p class="mt-6">
