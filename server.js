@@ -11,7 +11,7 @@ const helmet = require('helmet')
 const port = Number(process.env.PORT) || argv.p || argv.port || 5000
 const app = express()
 const jexodus = require('./lib/jexodus')(__dirname).on('ready', startServer)
-const md = require('markdown-it')()
+const host = process.env.HOST || `http://localhost:${port}`
 
 app.engine('html', hbs.express4({
   defaultLayout: path.join(__dirname, '/views/layouts/main.html'),
@@ -23,10 +23,6 @@ app.engine('html', hbs.express4({
     return exhbs.handlebars.compile(source, options)
   }
 }))
-
-hbs.registerHelper('mdtohtml', function (markdown) {
-  return md.render(markdown)
-})
 
 app.set('view engine', 'html')
 app.set('views', path.join(__dirname, '/views'))
@@ -68,6 +64,11 @@ app.get('/apps', (req, res) => {
   })
 
   appList.appLength = electronApps.apps.length
+  appList.pageDetails = {
+    title: 'Electron | Apps',
+    url: req.url,
+    description: 'Apps Built on Electron'
+  }
   res.render('apps', appList)
 })
 
@@ -78,7 +79,17 @@ app.get('/app/:slug', (req, res) => {
 app.get('/apps/:slug', (req, res) => {
   const app = electronApps.apps.find(app => app.slug === req.params.slug)
   const context = {
-    app: app
+    app: app,
+    pageDetails: {
+      title: `Electron | Apps | ${app.name}`,
+      url: req.url,
+      description: app.description
+    }
+  }
+  if (app.screenshots && app.screenshots.length > 0) {
+    context.pageDetails.image = app.screenshots[0].imageUrl
+  } else {
+    context.pageDetails.image = `${host}/images/apps/${app.icon64}`
   }
   res.render('app', context)
 })

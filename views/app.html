@@ -7,17 +7,25 @@
     </ol>
   </nav>
   <div class="container-narrow media-fluid">
-    <h1><a href="{{app.website}}">{{app.name}}</a></h1>
+    <h1>
+      <a href="{{app.website}}">
+        <div class='listed-app-logo-wrapper'>
+          <img class='listed-app-logo' src='/images/apps/{{app.icon64}}' alt='{{app.name}}'>
+        </div>
+        {{app.name}}
+      </a>
+    </h1>
+    <h3>
+      {{app.description}}
+    </h3>
 
-    <h3>{{app.description}}</h3>
+    {{#each app.screenshots}}
+      <h4 class="app-caption text-center">App Screenshot</h4>
+      <a href="{{../app.website}}">
+        <img src="{{imageUrl}}"></img>
+      </a>
 
-    {{#if app.screenshots}}
-      {{#each app.screenshots}}
-        <img src="{{this.imageUrl}}"></img>
-      {{/each}}
-    {{else}}
-      <h4>No screenshots available</h4>
-    {{/if}}
+    {{/each}}
 
     <div>
       <strong>Category</strong> <a href="/apps?category={{app.categorySlug}}">{{app.category}}</a>
@@ -39,7 +47,7 @@
       <div>
         <strong>Keywords</strong>
         {{#each app.keywords}}
-          {{this}}
+          <a href="/apps?q={{this}}">{{this}}</a>
         {{/each}}
       </div>
     {{/if}}
@@ -53,22 +61,55 @@
       </div>
     {{/if}}
     {{#if app.latestRelease}}
-      <div><strong>Latest Release</strong></div>
-      <h5 class="px-2"><a href="{{app.latestRelease.releaseUrl}}">{{app.latestRelease.releaseName}} | <span class="octicon octicon-tag mr-1"></span> {{app.latestRelease.tagName}}</a></h5>
       {{#if app.latestRelease.downloads}}
-        <h5 class="px-2">Downloads</h5>
-        <div class="row px-2">
+        <div>
+          <strong>
+            Downloads (<a href="{{app.latestRelease.releaseUrl}}">
+              {{app.latestRelease.releaseName}} | <span class="octicon octicon-tag mr-1">
+              </span> {{app.latestRelease.tagName}}</a>)
+          </strong>
           {{#each app.latestRelease.downloads}}
-            <h5 class="col-xs-3"><a href="{{this.fileUrl}}">{{this.fileName}}</a></h5>
+            <a href="{{this.fileUrl}}">{{this.fileName}}</a>
           {{/each}}
         </div>
-      {{/if}}
-      <h5 class="px-2">Notes</h5>
-      <div class="row px-2">
-        <div class="col-xs-12">
-          {{{mdtohtml app.latestRelease.releaseNotes}}}
+      {{else}}
+        <div>
+          <strong>Latest Release Notes (<a href="{{app.latestRelease.releaseUrl}}">
+            {{app.latestRelease.releaseName}} | <span class="octicon octicon-tag mr-1">
+            </span> {{app.latestRelease.tagName}}</a>)
+          </strong>
         </div>
+        <div class="row px-2">
+          <div class="col-xs-12">
+            {{{app.latestRelease.releaseNotes}}}
+          </div>
+        </div>
+      {{/if}}
+    {{/if}}
+    {{#if app.readme}}
+      <div>
+        <button class="btn btn-link" type="button" id="display-readme">
+          <strong>More Details</strong> <span id="display-readme-icon" class="octicon octicon-triangle-up"></span>
+        </button>
+      </div>
+      <div id="readme" class="app-readme d-none">
+        {{{app.readme}}}
       </div>
     {{/if}}
+
   </div>
 </section>
+
+<script>
+  document.getElementById('display-readme').addEventListener('click', function(event) {
+    var readme = document.getElementById('readme')
+    var readmeIcon = document.getElementById('display-readme-icon')
+    if (readme.className === 'app-readme d-none') {
+      readme.className = 'app-readme'
+      readmeIcon.className = 'octicon octicon-triangle-down'
+    } else {
+      readmeIcon.className = 'octicon octicon-triangle-up'
+      readme.className = 'app-readme d-none'
+    }
+  });
+</script>

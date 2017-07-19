@@ -1,15 +1,9 @@
 const electronApps = require('electron-apps')
+const cheerio = require('cheerio')
 const fs = require('fs')
 const path = require('path')
 
 const categories = []
-const downloadExtensions = [
-  '.deb',
-  '.dmg',
-  '.exe',
-  '.gz',
-  '.zip'
-]
 
 electronApps.forEach((app) => {
   let appCategory = categories.find((category) => {
@@ -26,29 +20,22 @@ electronApps.forEach((app) => {
     appCategory.count++
   }
   app.categorySlug = appCategory.slug
-  if (app.releases.length > 0) {
-    let latestRelease = app.releases.find((release) => {
-      return (!release.draft && !release.prerelease)
+  if (app.readme) {
+    let $ = cheerio.load(app.readme)
+    let updateReadme
+    $('img').each(function (i, img) {
+      let currentImg = $(img)
+      let imageSrc = currentImg.attr('src')
+      if (imageSrc && imageSrc.indexOf('http') === -1) {
+        currentImg.attr('src', `${app.repository}/raw/master/${imageSrc}`)
+        updateReadme = true
+      }
     })
-    if (latestRelease) {
-      app.latestRelease = Object.assign({
-        releaseUrl: latestRelease.html_url,
-        tagName: latestRelease.tag_name,
-        releaseName: latestRelease.name,
-        releaseNotes: latestRelease.body
-      })
-      app.latestRelease.downloads = latestRelease.assets.filter((asset) => {
-        let fileExtension = path.extname(asset.browser_download_url)
-        return (downloadExtensions.indexOf(fileExtension) !== -1)
-      }).map((asset) => {
-        return Object.assign({
-          fileName: asset.name,
-          fileUrl: asset.browser_download_url
-        })
-      })
+    if (updateReadme) {
+      console.log(`Updating readme for ${app.name}`)
+      app.readme = $('body').html()
     }
   }
-  delete app.releases
 })
 
 categories.sort((a, b) => {
