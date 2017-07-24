@@ -1883,23 +1883,38 @@
   {
     "slug": "colorpicker",
     "name": "ColorPicker",
-    "description": "Minimal color picker tool to get code hex and rgb code",
+    "description": "Colorpicker can show colors with hex/rgb code, and generate shading of your color.",
     "website": "https://crea-th.at/p/colorpicker/",
+    "repository": "https://github.com/Toinane/colorpicker",
     "keywords": [
-      "code"
+      "colors",
+      "code",
+      "shading",
+      "picker"
     ],
-    "category": "Developer Tools",
+    "license": "MIT",
+    "category": "Graphics & Design",
+    "screenshots": [
+      {
+        "imageUrl": "https://raw.githubusercontent.com/Toinane/colorpicker/master/screenshots/screen1.png",
+        "caption": "Main interface"
+      },
+      {
+        "imageUrl": "https://raw.githubusercontent.com/Toinane/colorpicker/master/screenshots/screen2.png",
+        "caption": "Shading menu"
+      }
+    ],
     "icon": "colorpicker-icon.png",
     "icon32": "colorpicker-icon-32.png",
     "icon64": "colorpicker-icon-64.png",
     "icon128": "colorpicker-icon-128.png",
     "date": "2017-02-01",
     "iconColors": [
-      "#fcfcfc",
-      "#51a8b3",
-      "#ec5c44",
-      "#ccffcc",
-      "#ccffcc"
+      "#ececec",
+      "#56a8af",
+      "#dc644c",
+      "#c4f0c4",
+      "#c4f0c4"
     ],
     "latestRelease": false
   },
