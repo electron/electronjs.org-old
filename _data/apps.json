@@ -4551,11 +4551,32 @@
     "slug": "google-play-music-desktop-player",
     "name": "Google Play Music Desktop Player",
     "description": "A beautiful cross platform Desktop Player for Google Play Music",
-    "website": "http://www.googleplaymusicdesktopplayer.com/",
+    "website": "https://www.googleplaymusicdesktopplayer.com/",
     "keywords": [
-      "Music"
+      "Music",
+      "Google Play Music",
+      "GPMDP"
     ],
     "category": "Music",
+    "license": "MIT",
+    "repository": "https://github.com/MarshallOfSound/Google-Play-Music-Desktop-Player-UNOFFICIAL-",
+    "locales": [
+      "en-US",
+      "cs",
+      "da",
+      "de",
+      "fr-FR",
+      "it",
+      "ja",
+      "nl-NL",
+      "pl-PL",
+      "pt-BR",
+      "ro",
+      "ru",
+      "sk",
+      "sv",
+      "ua"
+    ],
     "icon": "google-play-music-desktop-player-icon.png",
     "icon32": "google-play-music-desktop-player-icon-32.png",
     "icon64": "google-play-music-desktop-player-icon-64.png",
@@ -13053,8 +13074,8 @@
     "slug": "wonder-reader",
     "name": "Wonder Reader",
     "description": "A digital comic book reader",
-    "website": "http://alice-em.github.io/Wonder-Reader/",
-    "repository": "https://github.com/alice-em/Wonder-Reader",
+    "website": "http://alice-em.github.io/wonder-reader/",
+    "repository": "https://github.com/alice-em/wonder-reader",
     "keywords": [
       "comics",
       "cbr",
@@ -13069,11 +13090,11 @@
     "icon128": "wonder-reader-icon-128.png",
     "date": "2016-11-01",
     "iconColors": [
-      "#0c3f9c",
-      "#bf231e",
-      "#d3ba5b",
-      "#6d2b14",
-      "#6484bc"
+      "#741f0a",
+      "#2771ba",
+      "#fbd537",
+      "#de7d57",
+      "#2a3c54"
     ],
     "latestRelease": false,
     "readme": "<div class=\"announce instapaper_body md\" data-path=\"README.md\" id=\"readme\"><article class=\"markdown-body entry-content\" itemprop=\"text\"><h1><a id=\"user-content-wonder-reader\" class=\"anchor\" href=\"#wonder-reader\" aria-hidden=\"true\"><svg aria-hidden=\"true\" class=\"octicon octicon-link\" height=\"16\" version=\"1.1\" viewBox=\"0 0 16 16\" width=\"16\"><path fill-rule=\"evenodd\" d=\"M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\"></path></svg></a>Wonder-Reader</h1>\n<p><a href=\"https://david-dm.org/alice-em/wonder-reader\"><img src=\"https://camo.githubusercontent.com/c28a7506b8ba6af572393967dbbfa0e507781565/68747470733a2f2f64617669642d646d2e6f72672f616c6963652d656d2f776f6e6465722d7265616465722f7374617475732e706e67\" alt=\"dependencies Status\" data-canonical-src=\"https://david-dm.org/alice-em/wonder-reader/status.png\" style=\"max-width:100%;\"></a>\n<a href=\"https://badge.fury.io/gh/alice-em%2Fwonder-reader\"><img src=\"https://camo.githubusercontent.com/0f127ef62f690eb2a507fac18051ed048619bf92/68747470733a2f2f62616467652e667572792e696f2f67682f616c6963652d656d253246776f6e6465722d7265616465722e737667\" alt=\"GitHub version\" data-canonical-src=\"https://badge.fury.io/gh/alice-em%2Fwonder-reader.svg\" style=\"max-width:100%;\"></a>\n<code>0.5.0</code></p>\n<h2><a id=\"user-content-downloads\" class=\"anchor\" href=\"#downloads\" aria-hidden=\"true\"><svg aria-hidden=\"true\" class=\"octicon octicon-link\" height=\"16\" version=\"1.1\" viewBox=\"0 0 16 16\" width=\"16\"><path fill-rule=\"evenodd\" d=\"M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\"></path></svg></a>Downloads</h2>\n<p><a href=\"http://alice-em.github.io/wonder-reader/\">Downloads</a></p>\n<h2><a id=\"user-content-installation-and-starting\" class=\"anchor\" href=\"#installation-and-starting\" aria-hidden=\"true\"><svg aria-hidden=\"true\" class=\"octicon octicon-link\" height=\"16\" version=\"1.1\" viewBox=\"0 0 16 16\" width=\"16\"><path fill-rule=\"evenodd\" d=\"M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\"></path></svg></a>Installation and Starting</h2>\n<p><strong>Requirements</strong>: <code>git</code>, <code>node</code>, and <code>npm</code></p>\n<div class=\"highlight highlight-source-shell\"><pre>git clone https://github.com/alice-em/wonder-weader.git\n<span class=\"pl-c1\">cd</span> wonder-reader\nnpm install\nnpm start</pre></div>\n<h5><a id=\"user-content-compiling\" class=\"anchor\" href=\"#compiling\" aria-hidden=\"true\"><svg aria-hidden=\"true\" class=\"octicon octicon-link\" height=\"16\" version=\"1.1\" viewBox=\"0 0 16 16\" width=\"16\"><path fill-rule=\"evenodd\" d=\"M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\"></path></svg></a>Compiling</h5>\n<p><strong>Requirements</strong>: electron-packager</p>\n<h5><a id=\"user-content-terminal\" class=\"anchor\" href=\"#terminal\" aria-hidden=\"true\"><svg aria-hidden=\"true\" class=\"octicon octicon-link\" height=\"16\" version=\"1.1\" viewBox=\"0 0 16 16\" width=\"16\"><path fill-rule=\"evenodd\" d=\"M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\"></path></svg></a>Terminal</h5>\n<ul>\n<li>Go to where you cloned <strong>Wonder Reader</strong> <code>cd/to/git/wonder-reader</code></li>\n</ul>\n<pre><code>npm install\nnpm run packager\n</code></pre>\n<p><strong>Warning! :: 18 July 2017</strong> There is an issue with <code>&gt;= npm@5.3.0</code> that interferes with compiling. Please use <code>&lt;= npm@5.2.0</code> for the time being. Refer to <code>npm -v</code>, and if needed, run <code>npm i -g npm@5.2.0</code></p>\n<h2><a id=\"user-content-development\" class=\"anchor\" href=\"#development\" aria-hidden=\"true\"><svg aria-hidden=\"true\" class=\"octicon octicon-link\" height=\"16\" version=\"1.1\" viewBox=\"0 0 16 16\" width=\"16\"><path fill-rule=\"evenodd\" d=\"M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\"></path></svg></a>Development</h2>\n<p><strong>Requirements</strong>: <code>grunt-cli</code>, <code>sass</code>, and some sort of text-editor</p>\n<h5><a id=\"user-content-todo\" class=\"anchor\" href=\"#todo\" aria-hidden=\"true\"><svg aria-hidden=\"true\" class=\"octicon octicon-link\" height=\"16\" version=\"1.1\" viewBox=\"0 0 16 16\" width=\"16\"><path fill-rule=\"evenodd\" d=\"M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\"></path></svg></a>TODO:</h5>\n<ul>\n<li>Any other neat ideas that could work go here too.</li>\n<li>Double click zoom in function!</li>\n<li>Comics at either <strong>firstPage</strong> or <strong>lastPage</strong> can open up the next file in library folder.</li>\n</ul>\n<h5><a id=\"user-content-notes\" class=\"anchor\" href=\"#notes\" aria-hidden=\"true\"><svg aria-hidden=\"true\" class=\"octicon octicon-link\" height=\"16\" version=\"1.1\" viewBox=\"0 0 16 16\" width=\"16\"><path fill-rule=\"evenodd\" d=\"M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\"></path></svg></a>Notes</h5>\n<ul>\n<li>node.fs API :: <a href=\"https://nodejs.org/api/fs.html\">https://nodejs.org/api/fs.html</a></li>\n<li>electron API :: <a href=\"http://electron.atom.io/docs/\">http://electron.atom.io/docs/</a></li>\n</ul>\n<h5><a id=\"user-content-credit\" class=\"anchor\" href=\"#credit\" aria-hidden=\"true\"><svg aria-hidden=\"true\" class=\"octicon octicon-link\" height=\"16\" version=\"1.1\" viewBox=\"0 0 16 16\" width=\"16\"><path fill-rule=\"evenodd\" d=\"M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\"></path></svg></a>Credit</h5>\n<ul>\n<li>CSS Loaders :: <a href=\"https://github.com/lukehaas/css-loaders\">https://github.com/lukehaas/css-loaders</a></li>\n<li>Dragscroll.js :: <a href=\"https://github.com/asvd/dragscroll\">https://github.com/asvd/dragscroll</a></li>\n<li>Electron :: <a href=\"http://electron.atom.io\">http://electron.atom.io</a></li>\n<li>Font Awesome :: <a href=\"http://fontawesome.io/\">http://fontawesome.io/</a></li>\n<li>Node :: <a href=\"https://nodejs.org/en/\">https://nodejs.org/en/</a></li>\n<li>Node Directory Tree :: <a href=\"https://github.com/mihneadb/node-directory-tree\">https://github.com/mihneadb/node-directory-tree</a></li>\n</ul>\n</article></div>"
