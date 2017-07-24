@@ -7587,6 +7587,33 @@
     "readme": "<div class=\"announce instapaper_body md\" data-path=\"README.md\" id=\"readme\"><article class=\"markdown-body entry-content\" itemprop=\"text\"><h2><a id=\"user-content-mstream\" class=\"anchor\" href=\"#mstream\" aria-hidden=\"true\"><svg aria-hidden=\"true\" class=\"octicon octicon-link\" height=\"16\" version=\"1.1\" viewBox=\"0 0 16 16\" width=\"16\"><path fill-rule=\"evenodd\" d=\"M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\"></path></svg></a>mStream</h2>\n<p>mStream is a personal music streaming server written in NodeJS.  mStream comes with a RESTful JSON API and a built in web client to access your music on any browser.</p>\n<p><a href=\"public/img/devices.png\" target=\"_blank\"><img src=\"public/img/devices.png\" alt=\"Devices\" style=\"max-width:100%;\"></a></p>\n<h3><a id=\"user-content-main-features\" class=\"anchor\" href=\"#main-features\" aria-hidden=\"true\"><svg aria-hidden=\"true\" class=\"octicon octicon-link\" height=\"16\" version=\"1.1\" viewBox=\"0 0 16 16\" width=\"16\"><path fill-rule=\"evenodd\" d=\"M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\"></path></svg></a>Main Features</h3>\n<ul>\n<li>Works on Mac, Linux and Windows</li>\n<li>Jukebox Mode.  Control your browser with any device</li>\n<li>Secure login system</li>\n<li>Comes with SQLite built in.  No need to setup an external DB</li>\n<li>Server uses a RESTful JSON API.  <a href=\"docs/API.md\">It's documented and easy to write code against</a></li>\n</ul>\n<h3><a id=\"user-content-links\" class=\"anchor\" href=\"#links\" aria-hidden=\"true\"><svg aria-hidden=\"true\" class=\"octicon octicon-link\" height=\"16\" version=\"1.1\" viewBox=\"0 0 16 16\" width=\"16\"><path fill-rule=\"evenodd\" d=\"M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\"></path></svg></a>Links</h3>\n<ul>\n<li><a href=\"http://mstream.io/\">Check Out The Official Website</a></li>\n<li><a href=\"docs/\">Read The Docs</a></li>\n<li><a href=\"http://darncoyotes.mstream.io/\">See The Demo</a></li>\n</ul>\n<h2><a id=\"user-content-mstream-express---v04\" class=\"anchor\" href=\"#mstream-express---v04\" aria-hidden=\"true\"><svg aria-hidden=\"true\" class=\"octicon octicon-link\" height=\"16\" version=\"1.1\" viewBox=\"0 0 16 16\" width=\"16\"><path fill-rule=\"evenodd\" d=\"M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\"></path></svg></a>mStream Express - v0.4</h2>\n<h3><a id=\"user-content-for-windows--mac\" class=\"anchor\" href=\"#for-windows--mac\" aria-hidden=\"true\"><svg aria-hidden=\"true\" class=\"octicon octicon-link\" height=\"16\" version=\"1.1\" viewBox=\"0 0 16 16\" width=\"16\"><path fill-rule=\"evenodd\" d=\"M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\"></path></svg></a>For Windows &amp; Mac</h3>\n<p>mStream Express is a port of mStream Server that uses <a href=\"https://electron.atom.io/\">Electron</a>.  It packages all the dependencies for mStream in the app, so you can just download and run.  It also adds a GUI layer to make managing your server as simple as possible.</p>\n<p><a href=\"https://www.youtube.com/watch?v=IzuxYTaixpU\">mStream Express is so simple you can setup your server in under 30 seconds.  The video uses v0.1 of mStream which had a simpler interface</a></p>\n<h3><a id=\"user-content-download-it-here\" class=\"anchor\" href=\"#download-it-here\" aria-hidden=\"true\"><svg aria-hidden=\"true\" class=\"octicon octicon-link\" height=\"16\" version=\"1.1\" viewBox=\"0 0 16 16\" width=\"16\"><path fill-rule=\"evenodd\" d=\"M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\"></path></svg></a><a href=\"http://www.mstream.io/mstream-express\">Download it here</a></h3>\n<p><a href=\"http://www.mstream.io/mstream-express\"><img src=\"public/img/mstream-express.png\" alt=\"mStream Express UI\" style=\"max-width:100%;\"></a></p>\n<h2><a id=\"user-content-install-from-source\" class=\"anchor\" href=\"#install-from-source\" aria-hidden=\"true\"><svg aria-hidden=\"true\" class=\"octicon octicon-link\" height=\"16\" version=\"1.1\" viewBox=\"0 0 16 16\" width=\"16\"><path fill-rule=\"evenodd\" d=\"M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\"></path></svg></a>Install From Source</h2>\n<p><a href=\"docs/install.md\">Install instructions are in the docs</a></p>\n</article></div>"
   },
   {
+    "slug": "muno",
+    "name": "Muno",
+    "description": "Music app that combines Soundcloud & Youtube into one native Mac app",
+    "website": "http://munoapp.com",
+    "category": "Music",
+    "repository": "https://github.com/SingletonIT/MUNO-release",
+    "keywords": [
+      "Music",
+      "Player",
+      "Soundcloud",
+      "Youtube"
+    ],
+    "icon": "muno-icon.png",
+    "icon32": "muno-icon-32.png",
+    "icon64": "muno-icon-64.png",
+    "icon128": "muno-icon-128.png",
+    "date": "2017-07-24",
+    "iconColors": [
+      "#04b2e1",
+      "#13131b",
+      "#045e79",
+      "#04748c",
+      "#0c4454"
+    ],
+    "latestRelease": false
+  },
+  {
     "slug": "museeks",
     "name": "Museeks",
     "description": "A simple, clean and cross-platform music player",
@@ -9028,9 +9055,9 @@
   },
   {
     "slug": "pracontrol",
-    "name": "PraControl",
+    "name": "Pracontrol",
     "description": "Send awesome gCodes to your machine",
-    "website": "http://pracontrol.pravdomil.cz",
+    "website": "https://pracontrol.pravdomil.com",
     "keywords": [
       "utility"
     ],
