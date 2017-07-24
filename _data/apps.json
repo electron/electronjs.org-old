@@ -9133,6 +9133,33 @@
     "latestRelease": false
   },
   {
+    "slug": "primitive-nextgen",
+    "name": "primitive.nextgen",
+    "description": "Tool to redraw images using shapes (triangles, rectangles ...)",
+    "website": "https://github.com/cielito-lindo-productions/primitive.nextgen",
+    "repository": "https://github.com/cielito-lindo-productions/primitive.nextgen",
+    "keywords": [
+      "image",
+      "redraw",
+      "Tool"
+    ],
+    "license": "MIT",
+    "category": "Photo & Video",
+    "icon": "primitive-nextgen-icon.png",
+    "icon32": "primitive-nextgen-icon-32.png",
+    "icon64": "primitive-nextgen-icon-64.png",
+    "icon128": "primitive-nextgen-icon-128.png",
+    "date": "2017-07-24",
+    "iconColors": [
+      "#3074de",
+      "#b0aeab",
+      "#4f4e45",
+      "#495c7c",
+      "#8ca4bc"
+    ],
+    "latestRelease": false
+  },
+  {
     "slug": "prodoctor-medicamentos",
     "name": "ProDoctor Medicamentos",
     "description": "Look up medicines, read their information leaflets and find alternatives.",
