@@ -20,11 +20,16 @@
     </h3>
 
     {{#each app.screenshots}}
-      <h4 class="app-caption text-center">App Screenshot</h4>
+      <h4 class="app-caption text-center">
+        {{#if caption}}
+          {{caption}}
+        {{else}}
+          App Screenshot
+        {{/if}}
+      </h4>
       <a href="{{../app.website}}">
         <img src="{{imageUrl}}"></img>
       </a>
-
     {{/each}}
 
     <div>
