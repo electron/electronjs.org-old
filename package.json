@@ -20,7 +20,9 @@
     "build-userland": "script/userland",
     "build-apps": "script/apps",
     "release": "script/release 2>&1 | script/notify",
-    "dev": "nodemon -e js,scss server.js"
+    "dev": "nodemon -e js,scss server.js",
+    "prepack": "check-for-leaks",
+    "prepush": "check-for-leaks"
   },
   "dependencies": {
     "awesome-electron": "^2.5.0",
@@ -64,7 +66,9 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "chai-cheerio": "^1.0.0",
+    "check-for-leaks": "^1.0.2",
     "cheerio": "^1.0.0-rc.1",
+    "husky": "^0.14.3",
     "mocha": "^3.2.0",
     "nodemon": "^1.11.0",
     "npm-run-all": "^3.1.2",
