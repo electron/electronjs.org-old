@@ -421,13 +421,14 @@
   {
     "slug": "appear-in",
     "name": "appear.in",
-    "description": "Unofficial appear.in app.",
+    "description": "Unofficial desktop client for appear.in",
     "website": "https://github.com/vitorgalvao/appear.in",
     "repository": "https://github.com/vitorgalvao/appear.in",
     "keywords": [
       "appear.in",
       "chat",
       "conference",
+      "screensharing",
       "video",
       "webrtc"
     ],
@@ -464,6 +465,35 @@
     },
     "release_fetched_at": "2017-07-19T15:41:36.378Z",
     "readme": "<div class=\"announce instapaper_body md\" data-path=\"README.md\" id=\"readme\"><article class=\"markdown-body entry-content\" itemprop=\"text\"><p>To support my continued open-source work, pick a method:</p>\n<p><a href=\"https://www.paypal.me/vitorgalvao\"><img src=\"https://camo.githubusercontent.com/d4e6839ce37f418e401804f47c2d6c65f528de67/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f352f35332f50617950616c5f323031345f6c6f676f2e737667\" height=\"18\" alt=\"Support via Paypal\" data-canonical-src=\"https://upload.wikimedia.org/wikipedia/commons/5/53/PayPal_2014_logo.svg\" style=\"max-width:100%;\"></a>  \n<a href=\"http://vitorgalvao.com/bitcoin_tip_jar.html\"><img src=\"https://camo.githubusercontent.com/ea217691f0e36b89dd5c8331a47f84eba81c00dd/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f632f63352f426974636f696e5f6c6f676f2e737667\" height=\"15\" alt=\"Support via Bitcoin\" data-canonical-src=\"https://upload.wikimedia.org/wikipedia/commons/c/c5/Bitcoin_logo.svg\" style=\"max-width:100%;\"></a></p>\n<p>To support <a href=\"https://appear.in/\">appear.in</a>, authors of the website, see their premium offerings:</p>\n<p><a href=\"https://appear.in/information/premium/\"><img src=\"https://camo.githubusercontent.com/4607a37979db80864e357a752aa1ef005845a765/68747470733a2f2f646c2e64726f70626f7875736572636f6e74656e742e636f6d2f732f7375657a6a3131376a3063676771302f6170706561722e696e2e737667\" height=\"28\" alt=\"appear.in premium\" data-canonical-src=\"https://dl.dropboxusercontent.com/s/suezj117j0cggq0/appear.in.svg\" style=\"max-width:100%;\"></a></p>\n<h1><a id=\"user-content-appearin-unofficial\" class=\"anchor\" href=\"#appearin-unofficial\" aria-hidden=\"true\"><svg aria-hidden=\"true\" class=\"octicon octicon-link\" height=\"16\" version=\"1.1\" viewBox=\"0 0 16 16\" width=\"16\"><path fill-rule=\"evenodd\" d=\"M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\"></path></svg></a><a href=\"https://camo.githubusercontent.com/83f05098f7b8c8692cad89304725a9b103ab4049/68747470733a2f2f692e696d6775722e636f6d2f787a505a3372662e706e67\" target=\"_blank\"><img src=\"https://camo.githubusercontent.com/83f05098f7b8c8692cad89304725a9b103ab4049/68747470733a2f2f692e696d6775722e636f6d2f787a505a3372662e706e67\" width=\"45\" align=\"left\" alt=\"appear.in logo\" data-canonical-src=\"https://i.imgur.com/xzPZ3rf.png\" style=\"max-width:100%;\"></a>appear.in (unofficial)</h1>\n<p>Use <a href=\"https://appear.in/\">appear.in</a> just like you do in your browser, but as a desktop app. This app will also notify you in its icon when messages are received.</p>\n<p><a href=\"https://camo.githubusercontent.com/9c342459bfbbdf34e007cfc3d16d10dd595dc67b/68747470733a2f2f692e696d6775722e636f6d2f4f63534f6945692e6a7067\" target=\"_blank\"><img src=\"https://camo.githubusercontent.com/9c342459bfbbdf34e007cfc3d16d10dd595dc67b/68747470733a2f2f692e696d6775722e636f6d2f4f63534f6945692e6a7067\" alt=\"appear.in screenshot\" data-canonical-src=\"https://i.imgur.com/OcSOiEi.jpg\" style=\"max-width:100%;\"></a></p>\n<h2><a id=\"user-content-this-is-an-unofficial-app\" class=\"anchor\" href=\"#this-is-an-unofficial-app\" aria-hidden=\"true\"><svg aria-hidden=\"true\" class=\"octicon octicon-link\" height=\"16\" version=\"1.1\" viewBox=\"0 0 16 16\" width=\"16\"><path fill-rule=\"evenodd\" d=\"M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\"></path></svg></a>This is an unofficial app</h2>\n<p>The appear.in team has been gracious enough to <a href=\"https://github.com/vitorgalvao/appear.in/pull/1\">allow me to use their name and logo on this app</a>, but it is still unofficial. I will retire this app if an official one is ever released.</p>\n<p>If you find any issues or have suggestions/requests for the app (as opposed to appear.in’s website), please <strong>do not bother the appear.in team directly</strong> but instead <a href=\"https://github.com/vitorgalvao/appear.in/issues/new\">open an issue</a>.</p>\n<h2><a id=\"user-content-install\" class=\"anchor\" href=\"#install\" aria-hidden=\"true\"><svg aria-hidden=\"true\" class=\"octicon octicon-link\" height=\"16\" version=\"1.1\" viewBox=\"0 0 16 16\" width=\"16\"><path fill-rule=\"evenodd\" d=\"M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\"></path></svg></a>Install</h2>\n<p><a href=\"https://github.com/vitorgalvao/appear.in/releases\">Download the latest version</a>, or run <code>brew cask install appearin</code> if you use <a href=\"http://brew.sh/\">homebrew</a>.</p>\n<h2><a id=\"user-content-development\" class=\"anchor\" href=\"#development\" aria-hidden=\"true\"><svg aria-hidden=\"true\" class=\"octicon octicon-link\" height=\"16\" version=\"1.1\" viewBox=\"0 0 16 16\" width=\"16\"><path fill-rule=\"evenodd\" d=\"M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\"></path></svg></a>Development</h2>\n<p>Built with <a href=\"http://electron.atom.io\">Electron</a>.</p>\n<h5><a id=\"user-content-commands\" class=\"anchor\" href=\"#commands\" aria-hidden=\"true\"><svg aria-hidden=\"true\" class=\"octicon octicon-link\" height=\"16\" version=\"1.1\" viewBox=\"0 0 16 16\" width=\"16\"><path fill-rule=\"evenodd\" d=\"M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\"></path></svg></a>Commands</h5>\n<ul>\n<li>Install dependencies: <code>npm install</code></li>\n<li>Run: <code>npm start</code></li>\n<li>Build for macOS: <code>npm run build-macos</code></li>\n<li>Build for all platforms: <code>npm run build</code></li>\n<li>Build for macOS and package as a zip: <code>npm run package-macos</code></li>\n<li>Build for all platforms and package as a zip: <code>npm run package</code></li>\n</ul>\n<p>Currently, only macOS is supported. I do not intend to officially support other platforms in the near future since I cannot consistently and reliably test on them, but am willing to add support if someone wants to collaborate in doing the legwork.</p>\n<h4><a id=\"user-content-license\" class=\"anchor\" href=\"#license\" aria-hidden=\"true\"><svg aria-hidden=\"true\" class=\"octicon octicon-link\" height=\"16\" version=\"1.1\" viewBox=\"0 0 16 16\" width=\"16\"><path fill-rule=\"evenodd\" d=\"M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\"></path></svg></a>License</h4>\n<p>The Unlicense (Public Domain, essentially)</p>\n</article></div>"
+  },
+  {
+    "slug": "appium",
+    "name": "Appium Desktop",
+    "description": "A cross-platform app which gives you the power of the Appium automation server in a beautiful and flexible UI.",
+    "website": "http://appium.io/",
+    "repository": "https://github.com/appium/appium-desktop",
+    "keywords": [
+      "appium",
+      "automation",
+      "hybrid",
+      "webdriver",
+      "testing"
+    ],
+    "license": "Apache License 2.0",
+    "category": "Developer Tools",
+    "icon": "appium-icon.png",
+    "icon32": "appium-icon-32.png",
+    "icon64": "appium-icon-64.png",
+    "icon128": "appium-icon-128.png",
+    "date": "2017-07-31",
+    "iconColors": [
+      "#642c94",
+      "#d3c3e0",
+      "#a47cbc",
+      "#8f67af",
+      "#ac8cc4"
+    ],
+    "latestRelease": false
   },
   {
     "slug": "argo",
@@ -858,7 +888,7 @@
   {
     "slug": "bitbloq",
     "name": "Bitbloq",
-    "description": "Bitbloq is a tool to help children to learn and create programs for a microcontroller or robot, and to load them easily.",
+    "description": "Help children create programs for a microcontroller or robot",
     "website": "http://bitbloq.bq.com",
     "repository": "https://github.com/bq/bitbloq-offline",
     "keywords": [
@@ -1883,7 +1913,7 @@
   {
     "slug": "colorpicker",
     "name": "ColorPicker",
-    "description": "Colorpicker can show colors with hex/rgb code, and generate shading of your color.",
+    "description": "Show colors with hex/rgb codes and generate shades",
     "website": "https://crea-th.at/p/colorpicker/",
     "repository": "https://github.com/Toinane/colorpicker",
     "keywords": [
@@ -2090,9 +2120,10 @@
   {
     "slug": "criptio",
     "name": "Criptio",
-    "description": "Criptio is a tool for encrypt and decrypt files.",
+    "description": "Encrypt and decrypt files.",
     "website": "https://itunes.apple.com/us/app/criptio/id1102582966?mt=12",
     "keywords": [
+      "encryption",
       "security",
       "productivity"
     ],
@@ -3116,8 +3147,9 @@
   {
     "slug": "egret-wing",
     "name": "Egret Wing",
-    "description": "Egret Wing",
+    "description": "Desktop client for Egret Wing",
     "website": "http://www.egret.com/products-wing",
+    "disabled": true,
     "locales": [
       "zh_CN"
     ],
@@ -3894,7 +3926,7 @@
   {
     "slug": "franz",
     "name": "Franz",
-    "description": "Franz is a messaging app / former emperor of Austria, combining chat &amp; messaging services into one application",
+    "description": "Messaging app / former emperor of Austria, combining chat and messaging services into one application",
     "website": "http://meetfranz.com",
     "keywords": [
       "messaging",
@@ -4510,7 +4542,7 @@
   {
     "slug": "glyphr-studio",
     "name": "Glyphr Studio",
-    "description": "Glyphr Studio is a free, web based font designer, focusing on font design for hobbyists.",
+    "description": "Free font design tool for hobbyists.",
     "website": "https://github.com/glyphr-studio/Glyphr-Studio-Desktop",
     "repository": "https://github.com/glyphr-studio/Glyphr-Studio-Desktop",
     "keywords": [
@@ -4716,7 +4748,7 @@
   {
     "slug": "groupme",
     "name": "GroupMe",
-    "description": "Unofficial GroupMe App",
+    "description": "Unofficial desktop client for GroupMe",
     "website": "https://github.com/dcrousso/GroupMe#readme",
     "repository": "https://github.com/dcrousso/GroupMe",
     "keywords": [
@@ -4975,7 +5007,7 @@
   {
     "slug": "headlines",
     "name": "Headlines",
-    "description": "View latest news headlines with categories",
+    "description": "View the latest news headlines with categories",
     "website": "https://github.com/MedZed/Electron-Headlines",
     "keywords": [
       "news"
@@ -7889,7 +7921,7 @@
   {
     "slug": "now",
     "name": "Now",
-    "description": "The desktop client for ZEIT's now",
+    "description": "The desktop client for ZEIT's now.sh platform",
     "website": "https://zeit.co/app",
     "repository": "https://github.com/zeit/now-app",
     "keywords": [
@@ -8436,7 +8468,7 @@
   {
     "slug": "paws-for-trello",
     "name": "Paws for Trello",
-    "description": "Paws for Trello is a beautiful Trello client for Mac and Windows. It brings Trello to your desktop with native notifications, powerful shortcuts and more - away from the distractions of your browser.",
+    "description": "Unofficial Trello client with native notifications, shortcuts, and more.",
     "website": "http://friendlyfox.es/pawsfortrello/",
     "keywords": [
       "trello",
@@ -8463,7 +8495,7 @@
   {
     "slug": "pencil",
     "name": "Pencil",
-    "description": "The Pencil Project's unique mission is to build a free and opensource tool for making diagrams and GUI prototyping that everyone can use",
+    "description": "A free and open-source tool for making diagrams and GUI prototyping",
     "website": "http://pencil.evolus.vn",
     "repository": "https://github.com/evolus/pencil",
     "keywords": [
@@ -9079,7 +9111,7 @@
   {
     "slug": "preserver",
     "name": "Preserver",
-    "description": "Preserver is an notes organizer desktop app",
+    "description": "Notes organizer",
     "website": "https://github.com/hsbalar/Preserver",
     "keywords": [
       "notes",
@@ -9339,7 +9371,7 @@
   {
     "slug": "qmui-web",
     "name": "QMUI Web",
-    "description": "QMUI Web Desktop is an application for managing projects based on QMUI Web Framework.",
+    "description": "Manage projects based on QMUI Web Framework.",
     "website": "http://qmuiteam.com/web",
     "repository": "https://github.com/QMUI/qmui_web_desktop",
     "keywords": [
@@ -10656,7 +10688,7 @@
   {
     "slug": "socialcast",
     "name": "Socialcast",
-    "description": "Socialcast is an enterprise social network platform",
+    "description": "Enterprise social network platform.",
     "website": "http://socialcast.com/",
     "keywords": [
       "enterprise",
@@ -10859,7 +10891,7 @@
   {
     "slug": "soundnode",
     "name": "Soundnode",
-    "description": "Soundnode App is the Soundcloud for desktop.",
+    "description": "Unofficial desktop client for Soundcloud.",
     "website": "http://www.soundnodeapp.com",
     "repository": "https://github.com/Soundnode/soundnode-app",
     "keywords": [
@@ -11950,7 +11982,7 @@
   {
     "slug": "timetable",
     "name": "TimeTable",
-    "description": "TimeTable in your menubar!",
+    "description": "A time table in your menubar!",
     "website": "https://github.com/willyb321/electron-menubar-timetable",
     "repository": "https://github.com/willyb321/electron-menubar-timetable",
     "keywords": [
@@ -12499,7 +12531,7 @@
   {
     "slug": "vagrant-manager",
     "name": "Vagrant Manager",
-    "description": "Vagrant Manager is an status bar menu app that lets you manage all of your vagrant machines from one central location.",
+    "description": "Menu bar app for managing your vagrant machines.",
     "website": "https://github.com/vaibhav-sidapara/vagrant-manager",
     "repository": "https://github.com/vaibhav-sidapara/vagrant-manager",
     "keywords": [
@@ -13465,7 +13497,7 @@
   {
     "slug": "yout",
     "name": "Yout",
-    "description": "Yout Player is the new way to watch your playlists from youtube on desktop.",
+    "description": "The new way to watch your playlists from YouTube on desktop.",
     "website": "https://youtplayer.github.io/",
     "keywords": [
       "yout",
