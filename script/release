@@ -11,7 +11,7 @@ cd electron.atom.io
 npm install
 
 # configure git
-git config user.email "kevin+electronbot@github.com"
+git config user.email "electron@github.com"
 git config user.name "Electron Bot"
 
 # run each build script independently and commit changes atomically
