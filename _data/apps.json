@@ -12048,6 +12048,27 @@
     "latestRelease": false
   },
   {
+    "slug": "tidy-up",
+    "name": "Tidy-up",
+    "description": "Clean HTML/JS/CSS",
+    "website": "https://github.com/imnotliam/tidy-up",
+    "repository": "https://github.com/imnotliam/tidy-up",
+    "category": "Developer Tools",
+    "icon": "tidy-up-icon.png",
+    "icon32": "tidy-up-icon-32.png",
+    "icon64": "tidy-up-icon-64.png",
+    "icon128": "tidy-up-icon-128.png",
+    "date": "2017-08-09",
+    "iconColors": [
+      "#dbbb67",
+      "#a94d24",
+      "#fad3c1",
+      "#817f7a",
+      "#b27d1d"
+    ],
+    "latestRelease": false
+  },
+  {
     "slug": "tiliq",
     "name": "Tiliq",
     "description": "The next generation of professional business email",
