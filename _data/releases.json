@@ -1564,23 +1564,5 @@
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.34.4",
     "body": "Changelog:\n\n**Linux**\n- Fix blurry rendering on some High-DPI machines.\n",
     "version": "0.34.4"
-  },
-  {
-    "url": "https://api.github.com/repos/electron/electron/releases/2084173",
-    "assets_url": "https://api.github.com/repos/electron/electron/releases/2084173/assets",
-    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/2084173/assets{?name,label}",
-    "html_url": "https://github.com/electron/electron/releases/tag/v0.34.3",
-    "id": 2084173,
-    "tag_name": "v0.34.3",
-    "target_commitish": "master",
-    "name": "electron v0.34.3",
-    "draft": false,
-    "prerelease": false,
-    "created_at": "2015-11-06T13:37:37Z",
-    "published_at": "2015-11-06T15:56:36Z",
-    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.34.3",
-    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.34.3",
-    "body": "Changelog:\n- Quit the application gracefully when `process.exit` is called.\n- Fix showing context menu for pepper plugin.\n- Fix possible crashes when exiting.\n\n**Windows**\n- Don't set Application User Model ID by default.\n- Improve accessibility support.\n- Fix the Application User Model ID set by `app.setAppUserModelId` not being used by other APIs.\n- Fix buffer overflow when setting long tooltip for tray icon.\n- Fix `shell.moveItemToTrash()` not working for drives created with `subst`.\n- Fix crash when starting crash reporter on some machines.\n- Fix crash when calling `process.exit`.\n",
-    "version": "0.34.3"
   }
 ]
