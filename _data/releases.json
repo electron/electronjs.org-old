@@ -1,5 +1,23 @@
 [
   {
+    "url": "https://api.github.com/repos/electron/electron/releases/7069198",
+    "assets_url": "https://api.github.com/repos/electron/electron/releases/7069198/assets",
+    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/7069198/assets{?name,label}",
+    "html_url": "https://github.com/electron/electron/releases/tag/v1.7.5",
+    "id": 7069198,
+    "tag_name": "v1.7.5",
+    "target_commitish": "master",
+    "name": "electron v1.7.5",
+    "draft": false,
+    "prerelease": false,
+    "created_at": "2017-07-17T19:45:30Z",
+    "published_at": "2017-07-17T22:06:43Z",
+    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v1.7.5",
+    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v1.7.5",
+    "body": "## Bug Fixes\r\n\r\n- **[SECURITY]** Fixed an issue where windows using `nativeWindowOpen` could\r\n  lose their configured `webContents` options when navigating URLs. <a href=\"https://github.com/electron/electron/pull/9972\">#9972</a>\r\n- Fixed an issue where the dev tools did not open when using mixed sandbox\r\n  mode. <a href=\"https://github.com/electron/electron/pull/9983\">#9983</a>\r\n- Fixed an issue where the native dialogs did not allow any file to be selected\r\n  from `<input>` elements using `accept` attributes. <a href=\"https://github.com/electron/electron/pull/9745\">#9745</a>\r\n- Fixed an issue where dev tool extension content scripts were not ignoring\r\n  the fragment when matching against the page URL. <a href=\"https://github.com/electron/electron/pull/9953\">#9953</a>\r\n- Fixed an issue where calling `show()` on a modal window would cause the\r\n  parent window to not be re-enabled when the modal was closed. <a href=\"https://github.com/electron/electron/pull/9962\">#9962</a>\r\n\r\n### macOS\r\n\r\n- Fixed an issue where the IME did not properly input certain characters. <a href=\"https://github.com/electron/electron/pull/9709\">#9709</a>\r\n- Fixed an issue where `alwaysOnTop` windows would not reappear correctly\r\n  after being restored from a miniaturized position. <a href=\"https://github.com/electron/electron/pull/9695\">#9695</a>\r\n\r\n### Linux\r\n\r\n- Fixed `Tray` objects not properly dispatching a `click` event when the first\r\n  subitem was selected. <a href=\"https://github.com/electron/electron/pull/9967\">#9967</a>\r\n\r\n## API Changes\r\n\r\n- Added a `app.disableDomainBlockingFor3DAPIs()` API to disable the Chrome\r\n  behavior of disabling 3D APIs for domains where the GPU process crashes\r\n  too frequently. <a href=\"https://github.com/electron/electron/pull/10003\">#10003</a>\r\n- The `new-window` event now supports configuring the `webPreferences` of\r\n  the window being opened from a window using the `sandbox` or\r\n  `nativeWindowOpen` options. <a href=\"https://github.com/electron/electron/pull/9972\">#9972</a>\r\n\r\n### macOS\r\n\r\n- A `subtitle` option is now supported when creating notifications. <a href=\"https://github.com/electron/electron/pull/9903\">#9903</a>\r\n- Added a `fullscreenWindowTitle` option to the `BrowserWindow` constructor\r\n  to show the window title when in fullscreen for windows using a custom\r\n  `titleBarStyle`. <a href=\"https://github.com/electron/electron/pull/9788\">#9788</a>\r\n",
+    "version": "1.7.5"
+  },
+  {
     "url": "https://api.github.com/repos/electron/electron/releases/6506372",
     "assets_url": "https://api.github.com/repos/electron/electron/releases/6506372/assets",
     "upload_url": "https://uploads.github.com/repos/electron/electron/releases/6506372/assets{?name,label}",
