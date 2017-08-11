@@ -11502,6 +11502,44 @@
     "latestRelease": false
   },
   {
+    "slug": "storm",
+    "name": "Storm",
+    "description": "Synchronizes files between computers, never gets tired. Oh, and no data limits either.",
+    "website": "http://www.stormfolder.com",
+    "category": "Productivity",
+    "keywords": [
+      "file synchronization",
+      "backup",
+      "storage",
+      "shared files"
+    ],
+    "screenshots": [
+      {
+        "imageUrl": "https://user-images.githubusercontent.com/5124686/29157021-179f1278-7d62-11e7-840a-a072a7bed8c3.png",
+        "caption": "Storm login screen",
+        "imageLink": "https://app.stormfolder.com"
+      },
+      {
+        "imageUrl": "https://user-images.githubusercontent.com/5124686/29157304-886444b4-7d63-11e7-9640-9badb0450de8.png",
+        "caption": "Storm at work synchronizing files",
+        "imageLink": "http://www.stormfolder.com"
+      }
+    ],
+    "icon": "storm-icon.png",
+    "icon32": "storm-icon-32.png",
+    "icon64": "storm-icon-64.png",
+    "icon128": "storm-icon-128.png",
+    "date": "2017-08-11",
+    "iconColors": [
+      "#333434",
+      "#fb7b04",
+      "#04cbfb",
+      "#04d304",
+      "#7f4d20"
+    ],
+    "latestRelease": false
+  },
+  {
     "slug": "strawberry",
     "name": "Strawberry",
     "description": "Win Diners for Life. Know and serve them better with the all-in-one restaurant software suite.",
