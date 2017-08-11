@@ -1,5 +1,5 @@
 ---
-version: v1.6.11
+version: v1.7.5
 permalink: /docs/development/clang-format/
 category: Development
 redirect_from:
@@ -173,3 +173,4 @@ You can also integrate `clang-format` directly into your favorite editors. For f
 
 *   [Atom](https://atom.io/packages/clang-format)
 *   [Vim & Emacs](http://clang.llvm.org/docs/ClangFormat.html#vim-integration)
+*   [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=xaver.clang-format)

@@ -1,5 +1,5 @@
 ---
-version: v1.6.11
+version: v1.7.5
 permalink: /docs/development/build-instructions-linux/
 category: Development
 redirect_from:
@@ -263,7 +263,7 @@ $ npm run clean-build
 
 ### Error While Loading Shared Libraries: libtinfo.so.5
 
-Prebulit `clang` will try to link to `libtinfo.so.5`. Depending on the host architecture, symlink to appropriate `libncurses`:
+Prebuilt `clang` will try to link to `libtinfo.so.5`. Depending on the host architecture, symlink to appropriate `libncurses`:
 
 ```bash
 $ sudo ln -s /usr/lib/libncurses.so.5 /usr/lib/libtinfo.so.5

@@ -1,5 +1,5 @@
 ---
-version: v1.6.11
+version: v1.7.5
 permalink: /docs/api/webview-tag/
 category: API
 redirect_from:
@@ -155,9 +155,7 @@ Process: [Renderer]({{site.baseurl}}/docs/tutorial/quick-start#renderer-process)
 
 Use the `webview` tag to embed 'guest' content (such as web pages) in your Electron app. The guest content is contained within the `webview` container. An embedded page within your app controls how the guest content is laid out and rendered.
 
-Unlike an `iframe`, the `webview` runs in a separate process than your app. It doesn't have the same permissions as your web page and all interactions between your app and embedded content will be asynchronous. This keeps your app safe from the embedded content. **Note:** Most methods called on the webview from the host page require a syncronous call to the main process.
-
-For security purposes, `webview` can only be used in `BrowserWindow`s that have `nodeIntegration` enabled.
+Unlike an `iframe`, the `webview` runs in a separate process than your app. It doesn't have the same permissions as your web page and all interactions between your app and embedded content will be asynchronous. This keeps your app safe from the embedded content. **Note:** Most methods called on the webview from the host page require a synchronous call to the main process.
 
 ## Example
 
@@ -193,7 +191,7 @@ If you want to control the guest content in any way, you can write JavaScript th
 
 Please note that the `webview` tag's style uses `display:flex;` internally to ensure the child `object` element fills the full height and width of its `webview` container when used with traditional and flexbox layouts (since v0.36.11). Please do not overwrite the default `display:flex;` CSS property, unless specifying `display:inline-flex;` for inline layout.
 
-`webview` has issues being hidden using the `hidden` attribute or using `display: none;`. It can cause unusual rendering behaviour within its child `browserplugin` object and the web page is reloaded, when the `webview` is un-hidden, as opposed to just becoming visible again. The recommended approach is to hide the `webview` using CSS by zeroing the `width` & `height` and allowing the element to shrink to the 0px dimensions via `flex`.
+`webview` has issues being hidden using the `hidden` attribute or using `display: none;`. It can cause unusual rendering behaviour within its child `browserplugin` object and the web page is reloaded when the `webview` is un-hidden. The recommended approach is to hide the `webview` using `visibility: hidden`.
 
 ```html
 <style>
@@ -203,9 +201,7 @@ Please note that the `webview` tag's style uses `display:flex;` internally to en
     height:480px;
   }
   webview.hide {
-    flex: 0 1;
-    width: 0px;
-    height: 0px;
+    visibility: hidden;
   }
 </style>
 ```
@@ -259,6 +255,8 @@ When this attribute is present the guest page in `webview` will be able to use b
 Specifies a script that will be loaded before other scripts run in the guest page. The protocol of script's URL must be either `file:` or `asar:`, because it will be loaded by `require` in guest page under the hood.
 
 When the guest page doesn't have node integration this script will still have access to all Node APIs, but global objects injected by Node will be deleted after this script has finished executing.
+
+**Note:** This option will be appear as `preloadURL` (not `preload`) in the `webPreferences` specified to the `will-attach-webview` event.
 
 ### `httpreferrer`
 
@@ -609,8 +607,9 @@ Stops any `findInPage` request for the `webview` with the provided `action`.
 ### `<webview>.print([options])`
 
 *   `options` Object (optional)
-    *   `silent` Boolean - Don't ask user for print settings. Default is `false`.
-    *   `printBackground` Boolean - Also prints the background color and image of the web page. Default is `false`.
+    *   `silent` Boolean (optional) - Don't ask user for print settings. Default is `false`.
+    *   `printBackground` Boolean (optional) - Also prints the background color and image of the web page. Default is `false`.
+    *   `deviceName` String (optional) - Set the printer device name to use. Default is `''`.
 
 Prints `webview`'s web page. Same as `webContents.print([options])`.
 

@@ -1,5 +1,5 @@
 ---
-version: v1.6.11
+version: v1.7.5
 permalink: /docs/api/system-preferences/
 category: API
 redirect_from:
@@ -250,7 +250,7 @@ Same as `unsubscribeNotification`, but removes the subscriber from `NSNotificati
 *   `key` String
 *   `type` String - Can be `string`, `boolean`, `integer`, `float`, `double`, `url`, `array`, `dictionary`
 
-Get the value of `key` in system preferences.
+Returns `any` - The value of `key` in system preferences.
 
 This API uses `NSUserDefaults` on macOS. Some popular `key` and `type`s are:
 
@@ -278,7 +278,7 @@ This API uses `NSUserDefaults` on macOS. Some popular `key` and `type`s are:
 
 ### `systemPreferences.isAeroGlassEnabled()` _Windows_
 
-This method returns `true` if [DWM composition](https://msdn.microsoft.com/en-us/library/windows/desktop/aa969540.aspx) (Aero Glass) is enabled, and `false` otherwise.
+Returns `Boolean` - `true` if [DWM composition](https://msdn.microsoft.com/en-us/library/windows/desktop/aa969540.aspx) (Aero Glass) is enabled, and `false` otherwise.
 
 An example of using it to determine if you should create a transparent window or not (transparent windows won't work correctly when DWM composition is disabled):
 

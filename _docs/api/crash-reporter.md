@@ -1,5 +1,5 @@
 ---
-version: v1.6.11
+version: v1.7.5
 permalink: /docs/api/crash-reporter/
 category: API
 redirect_from:
@@ -184,7 +184,7 @@ The `crashReporter` module has the following methods:
     *   `productName` String (optional) - Defaults to `app.getName()`.
     *   `uploadToServer` Boolean (optional) - Whether crash reports should be sent to the server Default is `true`.
     *   `ignoreSystemCrashHandler` Boolean (optional) - Default is `false`.
-    *   `extra` Object (optional) - An object you can define that will be sent along with the report. Only string properties are sent correctly. Nested objects are not supported.
+    *   `extra` Object (optional) - An object you can define that will be sent along with the report. Only string properties are sent correctly. Nested objects are not supported and the property names and values must be less than 64 characters long.
 
 You are required to call this method before using any other `crashReporter` APIs and in each process (main/renderer) from which you want to collect crash reports. You can pass different options to `crashReporter.start` when calling from different processes.
 
@@ -239,10 +239,10 @@ This would normally be controlled by user preferences. This has no effect if cal
 
 ### `crashReporter.setExtraParameter(key, value)` _macOS_
 
-*   `key` String - Parameter key.
-*   `value` String - Parameter value. Specifying `null` or `undefined` will remove the key from the extra parameters.
+*   `key` String - Parameter key, must be less than 64 characters long.
+*   `value` String - Parameter value, must be less than 64 characters long. Specifying `null` or `undefined` will remove the key from the extra parameters.
 
-Set an extra parameter to set be sent with the crash report. The values specified here will be sent in addition to any values set via the `extra` option when `start` was called. This API is only available on macOS, if you need to add/update extra parameters on Linux and Windows after your first call to `start` you can call `start` again with the updated `extra` options.
+Set an extra parameter to be sent with the crash report. The values specified here will be sent in addition to any values set via the `extra` option when `start` was called. This API is only available on macOS, if you need to add/update extra parameters on Linux and Windows after your first call to `start` you can call `start` again with the updated `extra` options.
 
 ## Crash Report Payload
 

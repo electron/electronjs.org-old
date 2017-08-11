@@ -1,5 +1,5 @@
 ---
-version: v1.6.11
+version: v1.7.5
 permalink: /docs/api/cookies/
 category: API
 redirect_from:
@@ -210,11 +210,9 @@ The following methods are available on instances of `Cookies`:
     *   `session` Boolean (optional) - Filters out session or persistent cookies.
 *   `callback` Function
     *   `error` Error
-    *   `cookies` Cookies[]
+    *   `cookies` [Cookie[]]({{site.baseurl}}/docs/api/structures/cookie) - an array of cookie objects.
 
 Sends a request to get all cookies matching `details`, `callback` will be called with `callback(error, cookies)` on complete.
-
-`cookies` is an Array of [`cookie`]({{site.baseurl}}/docs/api/structures/cookie) objects.
 
 #### `cookies.set(details, callback)`
 

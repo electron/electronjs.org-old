@@ -1,5 +1,5 @@
 ---
-version: v1.6.11
+version: v1.7.5
 permalink: /docs/tutorial/debugging-main-process-vscode/
 category: Tutorial
 redirect_from:
@@ -168,7 +168,10 @@ $ code electron-quick-start
       "request": "launch",
       "cwd": "${workspaceRoot}",
       "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/electron",
-      "program": "${workspaceRoot}/main.js"
+      "windows": {
+        "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/electron.cmd"
+      },
+      "args" : ["."]
     }
   ]
 }

@@ -1,5 +1,5 @@
 ---
-version: v1.6.11
+version: v1.7.5
 permalink: /docs/api/dialog/
 category: API
 redirect_from:
@@ -218,7 +218,7 @@ If a `callback` is passed, the API call will be asynchronous and the result will
 *   `browserWindow` BrowserWindow (optional)
 *   `options` Object
     *   `title` String (optional)
-    *   `defaultPath` String (optional)
+    *   `defaultPath` String (optional) - Absolute directory path, absolute file path, or file name to use by default.
     *   `buttonLabel` String (optional) - Custom label for the confirmation button, when left empty the default label will be used.
     *   `filters` [FileFilter[]]({{site.baseurl}}/docs/api/structures/file-filter) (optional)
     *   `message` String (optional) _macOS_ - Message to display above text fields.
@@ -261,7 +261,7 @@ Shows a message box, it will block the process until the message box is closed. 
 
 The `browserWindow` argument allows the dialog to attach itself to a parent window, making it modal.
 
-If a `callback` is passed, the API call will be asynchronous and the result will be passed via `callback(response)`.
+If a `callback` is passed, the dialog will not block the process. The API call will be asynchronous and the result will be passed via `callback(response)`.
 
 ### `dialog.showErrorBox(title, content)`
 

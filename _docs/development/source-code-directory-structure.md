@@ -1,5 +1,5 @@
 ---
-version: v1.6.11
+version: v1.7.5
 permalink: /docs/development/source-code-directory-structure/
 category: Development
 redirect_from:
@@ -211,7 +211,7 @@ The Electron repository has a few vendored dependencies, found in the [/vendor](
 ```sh
 $ git status
 
-	modified:   vendor/brightray (new commits)
+	modified:   vendor/libchromiumcontent (new commits)
 	modified:   vendor/node (new commits)
 ```
 

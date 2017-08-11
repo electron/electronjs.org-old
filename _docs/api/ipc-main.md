@@ -1,5 +1,5 @@
 ---
-version: v1.6.11
+version: v1.7.5
 permalink: /docs/api/ipc-main/
 category: API
 redirect_from:
@@ -216,9 +216,9 @@ Removes the specified `listener` from the listener array for the specified `chan
 
 ### `ipcMain.removeAllListeners([channel])`
 
-*   `channel` String (optional)
+*   `channel` String
 
-Removes all listeners, or those of the specified `channel`.
+Removes listeners of the specified `channel`.
 
 ## Event object
 

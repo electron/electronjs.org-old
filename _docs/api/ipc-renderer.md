@@ -1,5 +1,5 @@
 ---
-version: v1.6.11
+version: v1.7.5
 permalink: /docs/api/ipc-renderer/
 category: API
 redirect_from:
@@ -200,6 +200,8 @@ The main process handles it by listening for `channel` with `ipcMain` module.
 
 *   `channel` String
 *   `...args` any[]
+
+Returns `any` - The value sent back by the [`ipcMain`]({{site.baseurl}}/docs/api/ipc-main) handler.
 
 Send a message to the main process synchronously via `channel`, you can also send arbitrary arguments. Arguments will be serialized in JSON internally and hence no functions or prototype chain will be included.
 

@@ -1,5 +1,5 @@
 ---
-version: v1.6.11
+version: v1.7.5
 permalink: /docs/api/client-request/
 category: API
 redirect_from:
@@ -283,7 +283,7 @@ Adds an extra HTTP header. The header name will issued as it is without lowercas
 
 *   `name` String - Specify an extra header name.
 
-Returns Object - The value of a previously set extra header name.
+Returns `Object` - The value of a previously set extra header name.
 
 #### `request.removeHeader(name)`
 

@@ -1,5 +1,5 @@
 ---
-version: v1.6.11
+version: v1.7.5
 permalink: /docs/tutorial/mac-app-store-submission-guide/
 category: Tutorial
 redirect_from:
@@ -328,6 +328,16 @@ See the [Enabling User-Selected File Access documentation](https://developer.app
 ```
 
 See the [Enabling User-Selected File Access documentation](https://developer.apple.com/library/mac/documentation/Miscellaneous/Reference/EntitlementKeyReference/Chapters/EnablingAppSandbox.html#//apple_ref/doc/uid/TP40011195-CH4-SW6) for more details.
+
+## Known issues
+
+### `shell.openItem(filePath)`
+
+This will fail when the app is signed for distribution in the Mac App Store. Subscribe to [#9005](https://github.com/electron/electron/issues/9005) for updates.
+
+#### Workaround
+
+`shell.openExternal('file://' + filePath)` will open the file in the default application as long as the extension is associated with an installed app.
 
 ## Cryptographic Algorithms Used by Electron
 

@@ -1,5 +1,5 @@
 ---
-version: v1.6.11
+version: v1.7.5
 permalink: /docs/api/tray/
 category: API
 redirect_from:
@@ -286,6 +286,28 @@ Emitted when a drag operation exits the tray icon.
 #### Event: 'drag-end' _macOS_
 
 Emitted when a drag operation ends on the tray or ends at another location.
+
+#### Event: 'mouse-enter' _macOS_
+
+*   `event` Event
+    *   `altKey` Boolean
+    *   `shiftKey` Boolean
+    *   `ctrlKey` Boolean
+    *   `metaKey` Boolean
+*   `position` [Point]({{site.baseurl}}/docs/api/structures/point) - The position of the event
+
+Emitted when the mouse enters the tray icon.
+
+#### Event: 'mouse-leave' _macOS_
+
+*   `event` Event
+    *   `altKey` Boolean
+    *   `shiftKey` Boolean
+    *   `ctrlKey` Boolean
+    *   `metaKey` Boolean
+*   `position` [Point]({{site.baseurl}}/docs/api/structures/point) - The position of the event
+
+Emitted when the mouse exits the tray icon.
 
 ### Instance Methods
 

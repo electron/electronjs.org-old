@@ -1,5 +1,5 @@
 ---
-version: v1.6.11
+version: v1.7.5
 permalink: /docs/api/app/
 category: API
 redirect_from:
@@ -260,6 +260,14 @@ Returns:
 Emitted during [Handoff](https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/Handoff/HandoffFundamentals/HandoffFundamentals.html) when an activity from a different device wants to be resumed. You should call `event.preventDefault()` if you want to handle this event.
 
 A user activity can be continued only in an app that has the same developer Team ID as the activity's source app and that supports the activity's type. Supported activity types are specified in the app's `Info.plist` under the `NSUserActivityTypes` key.
+
+### Event: 'new-window-for-tab' _macOS_
+
+Returns:
+
+*   `event` Event
+
+Emitted when the user clicks the native macOS new tab button. The new tab button is only visible if the current `BrowserWindow` has a `tabbingIdentifier`
 
 ### Event: 'browser-window-blur'
 
@@ -703,7 +711,7 @@ Returns `Boolean`.
 
 This method makes your application a Single Instance Application - instead of allowing multiple instances of your app to run, this will ensure that only a single instance of your app is running, and other instances signal this instance and exit.
 
-`callback` will be called with `callback(argv, workingDirectory)` when a second instance has been executed. `argv` is an Array of the second instance's command line arguments, and `workingDirectory` is its current working directory. Usually applications respond to this by making their primary window focused and non-minimized.
+`callback` will be called by the first instance with `callback(argv, workingDirectory)` when a second instance has been executed. `argv` is an Array of the second instance's command line arguments, and `workingDirectory` is its current working directory. Usually applications respond to this by making their primary window focused and non-minimized.
 
 The `callback` is guaranteed to be executed after the `ready` event of `app` gets emitted.
 
@@ -717,7 +725,7 @@ An example of activating the window of primary instance when a second instance s
 const {app} = require('electron')
 let myWindow = null
 
-const shouldQuit = app.makeSingleInstance((commandLine, workingDirectory) => {
+const isSecondInstance = app.makeSingleInstance((commandLine, workingDirectory) => {
   // Someone tried to run a second instance, we should focus our window.
   if (myWindow) {
     if (myWindow.isMinimized()) myWindow.restore()
@@ -725,7 +733,7 @@ const shouldQuit = app.makeSingleInstance((commandLine, workingDirectory) => {
   }
 })
 
-if (shouldQuit) {
+if (isSecondInstance) {
   app.quit()
 }
 
@@ -772,9 +780,23 @@ Disables hardware acceleration for current app.
 
 This method can only be called before app is ready.
 
-### `app.getAppMemoryInfo()`
+### `app.disableDomainBlockingFor3DAPIs()`
 
-Returns [ProcessMemoryInfo[]]({{site.baseurl}}/docs/api/structures/process-memory-info): Array of `ProcessMemoryInfo` objects that correspond to memory usage statistics of all the processes associated with the app.
+By default, Chromium disables 3D APIs (e.g. WebGL) until restart on a per domain basis if the GPU processes crashes too frequently. This function disables that behaviour.
+
+This method can only be called before app is ready.
+
+### `app.getAppMemoryInfo()` _Deprecated_
+
+Returns [`ProcessMetric[]`]({{site.baseurl}}/docs/api/structures/process-metric): Array of `ProcessMetric` objects that correspond to memory and cpu usage statistics of all the processes associated with the app. **Note:** This method is deprecated, use `app.getAppMetrics()` instead.
+
+### `app.getAppMetrics()`
+
+Returns [`ProcessMetric[]`]({{site.baseurl}}/docs/api/structures/process-metric): Array of `ProcessMetric` objects that correspond to memory and cpu usage statistics of all the processes associated with the app.
+
+### `app.getGpuFeatureStatus()`
+
+Returns [`GPUFeatureStatus`]({{site.baseurl}}/docs/api/structures/gpu-feature-status) - The Graphics Feature Status from `chrome://gpu/`.
 
 ### `app.setBadgeCount(count)` _Linux_ _macOS_
 
@@ -814,13 +836,13 @@ Returns `Object`:
 
 **Note:** This API has no effect on [MAS builds]({{site.baseurl}}/docs/tutorial/mac-app-store-submission-guide).
 
-### `app.setLoginItemSettings(settings[, path, args])` _macOS_ _Windows_
+### `app.setLoginItemSettings(settings)` _macOS_ _Windows_
 
 *   `settings` Object
     *   `openAtLogin` Boolean (optional) - `true` to open the app at login, `false` to remove the app as a login item. Defaults to `false`.
     *   `openAsHidden` Boolean (optional) - `true` to open the app as hidden. Defaults to `false`. The user can edit this setting from the System Preferences so `app.getLoginItemStatus().wasOpenedAsHidden` should be checked when the app is opened to know the current value. This setting is only supported on macOS.
-*   `path` String (optional) _Windows_ - The executable to launch at login. Defaults to `process.execPath`.
-*   `args` String[] (optional) _Windows_ - The command-line arguments to pass to the executable. Defaults to an empty array. Take care to wrap paths in quotes.
+    *   `path` String (optional) _Windows_ - The executable to launch at login. Defaults to `process.execPath`.
+    *   `args` String[] (optional) _Windows_ - The command-line arguments to pass to the executable. Defaults to an empty array. Take care to wrap paths in quotes.
 
 Set the app's login item settings.
 
@@ -874,6 +896,12 @@ Append a switch (with optional `value`) to Chromium's command line.
 Append an argument to Chromium's command line. The argument will be quoted correctly.
 
 **Note:** This will not affect `process.argv`.
+
+### `app.enableMixedSandbox()` _Experimental_ _macOS_ _Windows_
+
+Enables mixed sandbox mode on the app.
+
+This method can only be called before app is ready.
 
 ### `app.dock.bounce([type])` _macOS_
 

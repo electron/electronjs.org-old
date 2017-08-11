@@ -1,5 +1,5 @@
 ---
-version: v1.6.11
+version: v1.7.5
 permalink: /docs/api/touch-bar/
 category: API
 redirect_from:
@@ -270,7 +270,7 @@ let window
 app.once('ready', () => {
   window = new BrowserWindow({
     frame: false,
-    titleBarStyle: 'hidden-inset',
+    titleBarStyle: 'hiddenInset',
     width: 200,
     height: 200,
     backgroundColor: '#000'

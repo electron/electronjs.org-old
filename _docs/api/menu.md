@@ -1,5 +1,5 @@
 ---
-version: v1.6.11
+version: v1.7.5
 permalink: /docs/api/menu/
 category: API
 redirect_from:
@@ -202,8 +202,8 @@ The `menu` object has the following instance methods:
 
 *   `browserWindow` BrowserWindow (optional) - Default is the focused window.
 *   `options` Object (optional)
-    *   `x` Number (optional) - Default is the current mouse cursor position.
-    *   `y` Number (**required** if `x` is used) - Default is the current mouse cursor position.
+    *   `x` Number (optional) - Default is the current mouse cursor position. Must be declared if `y` is declared.
+    *   `y` Number (optional) - Default is the current mouse cursor position. Must be declared if `x` is declared.
     *   `async` Boolean (optional) - Set to `true` to have this method return immediately called, `false` to return after the menu has been selected or closed. Defaults to `false`.
     *   `positioningItem` Number (optional) _macOS_ - The index of the menu item to be positioned under the mouse cursor at the specified coordinates. Default is -1.
 

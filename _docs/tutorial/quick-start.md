@@ -1,5 +1,5 @@
 ---
-version: v1.6.11
+version: v1.7.5
 permalink: /docs/tutorial/quick-start/
 category: Tutorial
 redirect_from:
@@ -297,8 +297,9 @@ $ ./node_modules/.bin/electron .
 
 #### Windows
 
-```bash
+```
 $ .\node_modules\.bin\electron .
+
 ```
 
 ### Manually Downloaded Electron Binary
@@ -319,8 +320,9 @@ $ ./electron/electron your-app/
 
 #### Windows
 
-```bash
+```
 $ .\electron\electron.exe your-app\
+
 ```
 
 `Electron.app` here is part of the Electron's release package, you can download it from [here](https://github.com/electron/electron/releases).

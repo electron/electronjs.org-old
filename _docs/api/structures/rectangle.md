@@ -1,5 +1,5 @@
 ---
-version: v1.6.11
+version: v1.7.5
 permalink: /docs/api/structures/rectangle/
 category: API
 redirect_from:
@@ -149,7 +149,7 @@ sort_title: rectangle
 -->
 # Rectangle Object
 
-*   `x` Number - The x coordinate of the origin of the rectangle
-*   `y` Number - The y coordinate of the origin of the rectangle
-*   `width` Number
-*   `height` Number
+*   `x` Number - The x coordinate of the origin of the rectangle (must be an integer)
+*   `y` Number - The y coordinate of the origin of the rectangle (must be an integer)
+*   `width` Number - The width of the rectangle (must be an integer)
+*   `height` Number - The height of the rectangle (must be an integer)

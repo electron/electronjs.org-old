@@ -1,5 +1,5 @@
 ---
-version: v1.6.11
+version: v1.7.5
 permalink: /docs/api/desktop-capturer/
 category: API
 redirect_from:
@@ -86,7 +86,7 @@ source_url: 'https://github.com/electron/electron/blob/master/docs/api/desktop-c
 title: desktopCapturer
 excerpt: |-
   Access information about media sources that can be used to capture audio and
-      video from the desktop using the <a href="https://developer.mozilla.org/en/docs/Web/API/Navigator/getUserMedia"><code>navigator.webkitGetUserMedia</code></a> API.
+      video from the desktop using the <a href="https://developer.mozilla.org/en/docs/Web/API/MediaDevices/getUserMedia"><code>navigator.mediaDevices.getUserMedia</code></a> API.
 sort_title: desktop-capturer
 ---
 
@@ -150,7 +150,7 @@ sort_title: desktop-capturer
 -->
 # desktopCapturer
 
-> Access information about media sources that can be used to capture audio and video from the desktop using the [`navigator.webkitGetUserMedia`](https://developer.mozilla.org/en/docs/Web/API/Navigator/getUserMedia) API.
+> Access information about media sources that can be used to capture audio and video from the desktop using the [`navigator.mediaDevices.getUserMedia`](https://developer.mozilla.org/en/docs/Web/API/MediaDevices/getUserMedia) API.
 
 Process: [Renderer]({{site.baseurl}}/docs/glossary#renderer-process)
 
@@ -164,7 +164,7 @@ desktopCapturer.getSources({types: ['window', 'screen']}, (error, sources) => {
   if (error) throw error
   for (let i = 0; i < sources.length; ++i) {
     if (sources[i].name === 'Electron') {
-      navigator.webkitGetUserMedia({
+      navigator.mediaDevices.getUserMedia({
         audio: false,
         video: {
           mandatory: {
@@ -191,9 +191,24 @@ function handleError (e) {
 }
 ```
 
-To capture video from a source provided by `desktopCapturer` the constraints passed to [`navigator.webkitGetUserMedia`](https://developer.mozilla.org/en/docs/Web/API/Navigator/getUserMedia) must include `chromeMediaSource: 'desktop'`, and `audio: false`.
+To capture video from a source provided by `desktopCapturer` the constraints passed to [`navigator.mediaDevices.getUserMedia`](https://developer.mozilla.org/en/docs/Web/API/MediaDevices/getUserMedia) must include `chromeMediaSource: 'desktop'`, and `audio: false`.
 
-To capture both audio and video from the entire desktop the constraints passed to [`navigator.webkitGetUserMedia`](https://developer.mozilla.org/en/docs/Web/API/Navigator/getUserMedia) must include `chromeMediaSource: 'screen'`, and `audio: true`, but should not include a `chromeMediaSourceId` constraint.
+To capture both audio and video from the entire desktop the constraints passed to [`navigator.mediaDevices.getUserMedia`](https://developer.mozilla.org/en/docs/Web/API/MediaDevices/getUserMedia) must include `chromeMediaSource: 'desktop'`, for both `audio` and `video`, but should not include a `chromeMediaSourceId` constraint.
+
+```javascript
+const constraints = {
+  audio: {
+    mandatory: {
+      chromeMediaSource: 'desktop'
+    }
+  },
+  video: {
+    mandatory: {
+      chromeMediaSource: 'desktop'
+    }
+  }
+}
+```
 
 ## Methods
 

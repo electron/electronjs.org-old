@@ -1,5 +1,5 @@
 ---
-version: v1.6.11
+version: v1.7.5
 permalink: /docs/development/debugging-instructions-macos/
 category: Development
 redirect_from:
@@ -171,7 +171,7 @@ Current executable set to './out/D/Electron.app' (x86_64).
 
 LLDB is a powerful tool and supports multiple strategies for code inspection. For this basic introduction, let's assume that you're calling a command from JavaScript that isn't behaving correctly - so you'd like to break on that command's C++ counterpart inside the Electron source.
 
-Relevant code files can be found in `./atom/` as well as in Brightray, found in `./vendor/brightray/browser` and `./vendor/brightray/common`. If you're hardcore, you can also debug Chromium directly, which is obviously found in `chromium_src`.
+Relevant code files can be found in `./atom/` as well as in Brightray, found in `./brightray/browser` and `./brightray/common`. If you're hardcore, you can also debug Chromium directly, which is obviously found in `chromium_src`.
 
 Let's assume that you want to debug `app.setName()`, which is defined in `browser.cc` as `Browser::SetName()`. Set the breakpoint using the `breakpoint` command, specifying file and line to break on:
 
@@ -214,7 +214,7 @@ To show the arguments and local variables for the current frame, run `frame vari
 }
 ```
 
-To do a source level single step in the currently selected thread, execute `step` (or `s`). This would take you into into `name_override_.empty()`. To proceed and do a step over, run `next` (or `n`).
+To do a source level single step in the currently selected thread, execute `step` (or `s`). This would take you into `name_override_.empty()`. To proceed and do a step over, run `next` (or `n`).
 
 ```bash
 (lldb) step

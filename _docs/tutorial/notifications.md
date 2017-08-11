@@ -1,5 +1,5 @@
 ---
-version: v1.6.11
+version: v1.7.5
 permalink: /docs/tutorial/notifications/
 category: Tutorial
 redirect_from:
@@ -151,7 +151,7 @@ sort_title: notifications
 
 All three operating systems provide means for applications to send notifications to the user. Electron conveniently allows developers to send notifications with the [HTML5 Notification API](https://notifications.spec.whatwg.org/), using the currently running operating system's native notification APIs to display it.
 
-**Note:** Since this is an HTML5 API it is only available in the renderer process.
+**Note:** Since this is an HTML5 API it is only available in the renderer process. If you want to show Notifications in the main process please check out the [Notification]({{site.baseurl}}/docs/api/notification) module.
 
 ```javascript
 let myNotification = new Notification('Title', {

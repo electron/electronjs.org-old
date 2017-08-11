@@ -1,5 +1,5 @@
 ---
-version: v1.6.11
+version: v1.7.5
 permalink: /docs/api/screen/
 category: API
 redirect_from:
@@ -238,6 +238,10 @@ The `screen` module has the following methods:
 Returns [`Point`]({{site.baseurl}}/docs/api/structures/point)
 
 The current absolute position of the mouse pointer.
+
+### `screen.getMenuBarHeight()` _macOS_
+
+Returns `Integer` - The height of the menu bar in pixels.
 
 ### `screen.getPrimaryDisplay()`
 

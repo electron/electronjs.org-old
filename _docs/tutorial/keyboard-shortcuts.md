@@ -1,5 +1,5 @@
 ---
-version: v1.6.11
+version: v1.7.5
 permalink: /docs/tutorial/keyboard-shortcuts/
 category: Tutorial
 redirect_from:
@@ -197,6 +197,8 @@ window.addEventListener('keyup', doSomething, true)
 ```
 
 Note the third parameter `true` which means the listener will always receive key presses before other listeners so they can't have `stopPropagation()` called on them.
+
+The [`before-input-event`]({{site.baseurl}}/docs/tutorial/web-contents#event-before-input-event) event is emitted before dispatching `keydown` and `keyup` events in the page. It can be used to catch and handle custom shortcuts that are not visible in the menu.
 
 If you don't want to do manual shortcut parsing there are libraries that do advanced key detection such as [mousetrap](https://github.com/ccampbell/mousetrap).
 

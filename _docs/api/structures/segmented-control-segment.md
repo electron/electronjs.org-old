@@ -1,5 +1,5 @@
 ---
-version: v1.6.11
+version: v1.7.5
 permalink: /docs/api/structures/segmented-control-segment/
 category: API
 redirect_from:
@@ -149,6 +149,6 @@ sort_title: segmented-control-segment
 -->
 # SegmentedControlSegment Object
 
-*   `label` String - (Optional) The text to appear in this segment
-*   `icon` NativeImage - (Optional) The image to appear in this segment
-*   `enabled` Boolean - (Optional) Whether this segment is selectable. Default: true
+*   `label` String - (optional) The text to appear in this segment
+*   `icon` NativeImage - (optional) The image to appear in this segment
+*   `enabled` Boolean - (optional) Whether this segment is selectable. Default: true

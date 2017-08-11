@@ -1,5 +1,5 @@
 ---
-version: v1.6.11
+version: v1.7.5
 permalink: /docs/api/browser-window/
 category: API
 redirect_from:
@@ -235,6 +235,17 @@ child.once('ready-to-show', () => {
 })
 ```
 
+### Page visibility
+
+The [Page Visibility API](https://developer.mozilla.org/en-US/docs/Web/API/Page_Visibility_API) works as follows:
+
+*   On all platforms, the visibility state tracks whether the window is hidden/minimized or not.
+*   Additionally, on macOS, the visibility state also tracks the window occlusion state. If the window is occluded (i.e. fully covered) by another window, the visibility state will be `hidden`. On other platforms, the visibility state will be `hidden` only when the window is minimized or explicitly hidden with `win.hide()`.
+*   If a `BrowserWindow` is created with `show: false`, the initial visibility state will be `visible` despite the window actually being hidden.
+*   If `backgroundThrottling` is disabled, the visibility state will remain `visible` even if the window is minimized, occluded, or hidden.
+
+It is recommended that you pause expensive operations when the visibility state is `hidden` in order to minimize power consumption.
+
 ### Platform notices
 
 *   On macOS modal windows will be displayed as sheets attached to the parent window.
@@ -295,11 +306,14 @@ It creates a new `BrowserWindow` with native properties as set by the `options`.
     *   `titleBarStyle` String (optional) - The style of window title bar. Default is `default`. Possible values are:
         *   `default` - Results in the standard gray opaque Mac title bar.
         *   `hidden` - Results in a hidden title bar and a full size content window, yet the title bar still has the standard window controls ("traffic lights") in the top left.
-        *   `hidden-inset` - Results in a hidden title bar with an alternative look where the traffic light buttons are slightly more inset from the window edge.
+        *   `hidden-inset` - Deprecated, use `hiddenInset` instead.
+        *   `hiddenInset` - Results in a hidden title bar with an alternative look where the traffic light buttons are slightly more inset from the window edge.
+        *   `customButtonsOnHover` Boolean (optional) - Draw custom close, minimize, and full screen buttons on macOS frameless windows. These buttons will not display unless hovered over in the top left of the window. These custom buttons prevent issues with mouse events that occur with the standard window toolbar buttons. **Note:** This option is currently experimental.
+    *   `fullscreenWindowTitle` Boolean (optional) - Shows the title in the tile bar in full screen mode on macOS for all `titleBarStyle` options. Default is `false`.
     *   `thickFrame` Boolean (optional) - Use `WS_THICKFRAME` style for frameless windows on Windows, which adds standard window frame. Setting it to `false` will remove window shadow and window animations. Default is `true`.
     *   `vibrancy` String (optional) - Add a type of vibrancy effect to the window, only on macOS. Can be `appearance-based`, `light`, `dark`, `titlebar`, `selection`, `menu`, `popover`, `sidebar`, `medium-light` or `ultra-dark`.
     *   `zoomToPageWidth` Boolean (optional) - Controls the behavior on macOS when option-clicking the green stoplight button on the toolbar or by clicking the Window > Zoom menu item. If `true`, the window will grow to the preferred width of the web page when zoomed, `false` will cause it to zoom to the width of the screen. This will also affect the behavior when calling `maximize()` directly. Default is `false`.
-    *   `tabbingIdentifier` String (optional) - Tab group name, allows opening the window as a native tab on macOS 10.12+. Windows with the same tabbing identifier will be grouped together.
+    *   `tabbingIdentifier` String (optional) - Tab group name, allows opening the window as a native tab on macOS 10.12+. Windows with the same tabbing identifier will be grouped together. This also adds a native new tab button to your window's tab bar and allows your `app` and window to receive the `new-window-for-tab` event.
     *   `webPreferences` Object (optional) - Settings of web page's features.
         *   `devTools` Boolean (optional) - Whether to enable DevTools. If it is set to `false`, can not use `BrowserWindow.webContents.openDevTools()` to open DevTools. Default is `true`.
         *   `nodeIntegration` Boolean (optional) - Whether node integration is enabled. Default is `true`.
@@ -333,9 +347,11 @@ It creates a new `BrowserWindow` with native properties as set by the `options`.
         *   `defaultMonospaceFontSize` Integer (optional) - Defaults to `13`.
         *   `minimumFontSize` Integer (optional) - Defaults to `0`.
         *   `defaultEncoding` String (optional) - Defaults to `ISO-8859-1`.
-        *   `backgroundThrottling` Boolean (optional) - Whether to throttle animations and timers when the page becomes background. Defaults to `true`.
+        *   `backgroundThrottling` Boolean (optional) - Whether to throttle animations and timers when the page becomes background. This also affects the [Page Visibility API][#page-visibility]. Defaults to `true`.
         *   `offscreen` Boolean (optional) - Whether to enable offscreen rendering for the browser window. Defaults to `false`. See the [offscreen rendering tutorial]({{site.baseurl}}/docs/tutorial/offscreen-rendering) for more details.
         *   `contextIsolation` Boolean (optional) - Whether to run Electron APIs and the specified `preload` script in a separate JavaScript context. Defaults to `false`. The context that the `preload` script runs in will still have full access to the `document` and `window` globals but it will use its own set of JavaScript builtins (`Array`, `Object`, `JSON`, etc.) and will be isolated from any changes made to the global environment by the loaded page. The Electron API will only be available in the `preload` script and not the loaded page. This option should be used when loading potentially untrusted remote content to ensure the loaded content cannot tamper with the `preload` script and any Electron APIs being used. This option uses the same technique used by [Chrome Content Scripts](https://developer.chrome.com/extensions/content_scripts#execution-environment). You can access this context in the dev tools by selecting the 'Electron Isolated Context' entry in the combo box at the top of the Console tab. **Note:** This option is currently experimental and may change or be removed in future Electron releases.
+        *   `nativeWindowOpen` Boolean (optional) - Whether to use native `window.open()`. Defaults to `false`. **Note:** This option is currently experimental.
+        *   `webviewTag` Boolean (optional) - Whether to enable the [`<webview>` tag]({{site.baseurl}}/docs/api/webview-tag). Defaults to the value of the `nodeIntegration` option. **Note:** The `preload` script configured for the `<webview>` will have node integration enabled when it is executed so you should ensure remote/untrusted content is not able to create a `<webview>` tag with a possibly malicious `preload` script. You can use the `will-attach-webview` event on [webContents]({{site.baseurl}}/docs/api/web-contents) to strip away the `preload` script and to validate or alter the `<webview>`'s initial settings.
 
 When setting minimum or maximum window size with `minWidth`/`maxWidth`/ `minHeight`/`maxHeight`, it only constrains the users. It won't prevent you from passing a size that does not follow size constraints to `setBounds`/`setSize` or to the constructor of `BrowserWindow`.
 
@@ -517,6 +533,10 @@ Emitted when the window opens a sheet.
 
 Emitted when the window has closed a sheet.
 
+#### Event: 'new-window-for-tab' _macOS_
+
+Emitted when the native new tab button is clicked.
+
 ### Static Methods
 
 The `BrowserWindow` class has the following static methods:
@@ -693,7 +713,7 @@ Consider a normal window with an HD video player and associated controls. Perhap
 #### `win.previewFile(path[, displayName])` _macOS_
 
 *   `path` String - The absolute path to the file to preview with QuickLook. This is important as Quick Look uses the file name and file extension on the path to determine the content type of the file to open.
-*   `displayName` String (Optional) - The name of the file to display on the Quick Look modal view. This is purely visual and does not affect the content type of the file. Defaults to `path`.
+*   `displayName` String (optional) - The name of the file to display on the Quick Look modal view. This is purely visual and does not affect the content type of the file. Defaults to `path`.
 
 Uses [Quick Look](https://en.wikipedia.org/wiki/Quick_Look) to preview a file at a given path.
 

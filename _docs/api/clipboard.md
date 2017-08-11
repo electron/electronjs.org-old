@@ -1,5 +1,5 @@
 ---
-version: v1.6.11
+version: v1.7.5
 permalink: /docs/api/clipboard/
 category: API
 redirect_from:
@@ -296,6 +296,14 @@ Returns `String` - Reads `format` type from the clipboard.
 *   `format` String
 
 Returns `Buffer` - Reads `format` type from the clipboard.
+
+### `clipboard.writeBuffer(format, buffer[, type])` _Experimental_
+
+*   `format` String
+*   `buffer` Buffer
+*   `type` String (optional)
+
+Writes the `buffer` into the clipboard as `format`.
 
 ### `clipboard.write(data[, type])`
 

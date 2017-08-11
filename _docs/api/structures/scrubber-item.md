@@ -1,5 +1,5 @@
 ---
-version: v1.6.11
+version: v1.7.5
 permalink: /docs/api/structures/scrubber-item/
 category: API
 redirect_from:
@@ -149,5 +149,5 @@ sort_title: scrubber-item
 -->
 # ScrubberItem Object
 
-*   `label` String - (Optional) The text to appear in this item
-*   `icon` NativeImage - (Optional) The image to appear in this item
+*   `label` String - (optional) The text to appear in this item
+*   `icon` NativeImage - (optional) The image to appear in this item

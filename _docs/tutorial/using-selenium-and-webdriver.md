@@ -1,5 +1,5 @@
 ---
-version: v1.6.11
+version: v1.7.5
 permalink: /docs/tutorial/using-selenium-and-webdriver/
 category: Tutorial
 redirect_from:
