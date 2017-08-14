@@ -10590,6 +10590,31 @@
     "latestRelease": false
   },
   {
+    "slug": "shopify",
+    "name": "Shopify",
+    "description": "Desktop App for Shopify ecommerce platform",
+    "website": "https://itunes.apple.com/ca/app/shopify-sell-online-commerce-and-build-a-store/id1208212036?mt=12",
+    "category": "Business",
+    "keywords": [
+      "ecommerce",
+      "entrepreneur",
+      "sell"
+    ],
+    "icon": "shopify-icon.png",
+    "icon32": "shopify-icon-32.png",
+    "icon64": "shopify-icon-64.png",
+    "icon128": "shopify-icon-128.png",
+    "date": "2017-08-14",
+    "iconColors": [
+      "#80ab41",
+      "#fbfbfb",
+      "#c4dc99",
+      "#b6d180",
+      "#bcdc94"
+    ],
+    "latestRelease": false
+  },
+  {
     "slug": "shortcm",
     "name": "Short.cm",
     "description": "An app for making short links and screenshots on your custom domain",
