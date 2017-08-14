@@ -12573,6 +12573,31 @@
     "latestRelease": false
   },
   {
+    "slug": "tunlookup",
+    "name": "Tunlookup",
+    "description": "Translate selected text with a keystroke",
+    "website": "https://tun-application.github.io/",
+    "keywords": [
+      "Translator",
+      "Vocabulary",
+      "Dictionary"
+    ],
+    "category": "Utilities",
+    "icon": "tunlookup-icon.png",
+    "icon32": "tunlookup-icon-32.png",
+    "icon64": "tunlookup-icon-64.png",
+    "icon128": "tunlookup-icon-128.png",
+    "date": "2017-08-14",
+    "iconColors": [
+      "#4b82e9",
+      "#fbd33b",
+      "#e3e5e5",
+      "#a6a98e",
+      "#999491"
+    ],
+    "latestRelease": false
+  },
+  {
     "slug": "turbo-download-manager",
     "name": "Turbo Download Manager",
     "description": "An open-source multi-threading download manager",
