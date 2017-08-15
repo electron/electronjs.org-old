@@ -7,15 +7,15 @@
     </ol>
   </nav>
   <div class="container-narrow media-fluid">
-    <header>
-      <a href="{{app.website}}">
-        <img class='app-logo' src='/images/apps/{{app.icon128}}' alt='{{app.name}}'>
+    <header class="app-header">
+      <img class='app-logo' src='/images/apps/{{app.icon128}}' alt='{{app.name}}'>
+      <a class="app-link" href="{{app.website}}">
         <h1 class='app-name'>{{app.name}}</h1>
       </a>
+      <p class="app-description">
+        {{app.description}}
+      </p>
     </header>
-    <h3>
-      {{app.description}}
-    </h3>
 
     {{#each app.screenshots}}
       <figure class="mx-0">

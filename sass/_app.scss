@@ -5,15 +5,35 @@
   }
 }
 
+.app-header {
+  position: relative;
+  padding-left: 80px; // Leave some space for the logo
+}
+
+.app-link {
+  &:hover {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
 .app-logo {
-  display: inline-block;
+  position: absolute;
+  left: 0;
   max-width: 64px;
   height: 64px;
-  vertical-align: middle;
 }
 
 .app-name {
-  display: inline-block;
-  margin: 0 0 0 .25em;
-  vertical-align: middle;
+  margin: 0;
+  color: inherit;
+  font-size: 2em;
+  line-height: 1.1;
+}
+
+.app-description {
+  margin: .3em 0 0 0;
+  font-size: 1.2em;
+  font-weight: 300;
+  line-height: 1.4;
 }
