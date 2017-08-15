@@ -30,67 +30,88 @@
       </figure>
     {{/each}}
 
-    <div>
-      <strong>Category</strong> <a href="/apps?category={{app.categorySlug}}">{{app.category}}</a>
-    </div>
 
-    {{#if app.repository}}
-      <div>
-        <strong>Source Code</strong> <a href="{{app.repository}}">{{app.repository}}</a>
-      <div>
-    {{/if}}
+    <table class="app-details">
+      <tr>
+        <td>Category</td>
+        <td><a href="/apps?category={{app.categorySlug}}">{{app.category}}</a></td>
+      </tr>
 
-    {{#if app.license}}
-      <div>
-        <strong>License</strong> {{app.license}}
-      </div>
-    {{/if}}
-
-    {{#if app.keywords}}
-      <div>
-        <strong>Keywords</strong>
-        {{#each app.keywords}}
-          <a href="/apps?q={{this}}">{{this}}</a>
-        {{/each}}
-      </div>
-    {{/if}}
-
-    {{#if app.locales}}
-      <div>
-        <strong>Languages</strong>
-        {{#each app.locales}}
-          {{this}}
-        {{/each}}
-      </div>
-    {{/if}}
-    {{#if app.latestRelease}}
-      {{#if app.latestRelease.downloads}}
-        <div>
-          <strong>
-            Downloads (<a href="{{app.latestRelease.releaseUrl}}">
-              {{app.latestRelease.releaseName}} | <span class="octicon octicon-tag mr-1">
-              </span> {{app.latestRelease.tagName}}</a>)
-          </strong>
-          {{#each app.latestRelease.downloads}}
-            <a href="{{this.fileUrl}}">{{this.fileName}}</a>
-          {{/each}}
-        </div>
-      {{else}}
-        <div>
-          <strong>Latest Release Notes (<a href="{{app.latestRelease.releaseUrl}}">
-            {{app.latestRelease.releaseName}} | <span class="octicon octicon-tag mr-1">
-            </span> {{app.latestRelease.tagName}}</a>)
-          </strong>
-        </div>
-        <div class="row px-2">
-          <div class="col-xs-12">
-            {{{app.latestRelease.releaseNotes}}}
-          </div>
-        </div>
+      {{#if app.repository}}
+        <tr>
+          <td>Source Code</td>
+          <td><a href="{{app.repository}}">{{app.repository}}</a></td>
+        </tr>
       {{/if}}
-    {{/if}}
+
+      {{#if app.license}}
+        <tr>
+          <td>License</td>
+          <td>{{app.license}}</td>
+        </>
+      {{/if}}
+
+      {{#if app.keywords}}
+        <tr>
+          <td>Keywords</td>
+          <td>
+            {{#each app.keywords}}
+              <a class="app-keyword" href="/apps?q={{this}}">{{this}}</a>
+            {{/each}}
+          </td>
+        </tr>
+      {{/if}}
+
+      {{#if app.locales}}
+        <tr>
+          <td>Languages</td>
+          <td>
+            {{#each app.locales}}
+              {{this}}
+            {{/each}}
+          </td>
+        </tr>
+      {{/if}}
+
+      {{#if app.latestRelease}}
+        <tr>
+          <td>
+            Latest release
+          </td>
+          <td>
+            <a href="{{app.latestRelease.releaseUrl}}">
+              {{app.latestRelease.releaseName}}
+            </a>
+            <span class="app-tagname">({{app.latestRelease.tagName}})</span>
+          </td>
+        </tr>
+
+        {{#if app.latestRelease.downloads}}
+          <tr>
+            <td>
+              Downloads
+            </td>
+            <td>
+              {{#each app.latestRelease.downloads}}
+                <a class="app-download" href="{{this.fileUrl}}">{{this.fileName}}</a>
+              {{/each}}
+            </td>
+          </tr>
+        {{else}}
+          <tr>
+            <td>Latest Release Notes
+            </td>
+            <td>
+              {{{app.latestRelease.releaseNotes}}}
+            </td>
+          </tr>
+        {{/if}}
+
+      {{/if}}
+    </table>
+
     {{#if app.readme}}
-      <div>
+      <div class="app-details-more">
         <button class="btn btn-link" type="button" id="display-readme">
           <strong>More Details</strong> <span id="display-readme-icon" class="octicon octicon-triangle-up"></span>
         </button>
