@@ -1,9 +1,4 @@
 // App page ------------------------------
-.app-readme {
-  .octicon-link {
-    display: none;
-  }
-}
 
 .app-header {
   position: relative;
@@ -94,8 +89,21 @@
   }
 }
 
-
-.app-details-more {
-  margin-top: 2rem;
+.app-readme-header {
+  margin: 3rem 0;
   text-align: center;
+}
+
+.app-readme-button {
+  border-color: $main-border-color;
+}
+
+.app-readme {
+  padding: 3rem;
+  border: 1px solid $main-border-color;
+  border-radius: 5px;
+
+  .octicon-link {
+    display: none;
+  }
 }

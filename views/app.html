@@ -111,13 +111,15 @@
     </table>
 
     {{#if app.readme}}
-      <div class="app-details-more">
-        <button class="btn btn-link" type="button" id="display-readme">
-          <strong>More Details</strong> <span id="display-readme-icon" class="octicon octicon-triangle-up"></span>
-        </button>
-      </div>
-      <div id="readme" class="app-readme d-none">
-        {{{app.readme}}}
+      <div class="app-readme-wrapper">
+        <header class="app-readme-header">
+          <button class="app-readme-button btn btn-lg btn-outline-themed" type="button" id="display-readme">
+            More Details <span id="display-readme-icon" class="octicon octicon-chevron-down ml-2"></span>
+          </button>
+        </header>
+        <main id="readme" class="app-readme d-none">
+          {{{app.readme}}}
+        </main>
       </div>
     {{/if}}
 
@@ -126,14 +128,7 @@
 
 <script>
   document.getElementById('display-readme').addEventListener('click', function(event) {
-    var readme = document.getElementById('readme')
-    var readmeIcon = document.getElementById('display-readme-icon')
-    if (readme.className === 'app-readme d-none') {
-      readme.className = 'app-readme'
-      readmeIcon.className = 'octicon octicon-triangle-down'
-    } else {
-      readmeIcon.className = 'octicon octicon-triangle-up'
-      readme.className = 'app-readme d-none'
-    }
+    this.classList.add('d-none');
+    document.getElementById('readme').classList.remove('d-none');
   });
 </script>
