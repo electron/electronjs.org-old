@@ -4,3 +4,16 @@
     display: none;
   }
 }
+
+.app-logo {
+  display: inline-block;
+  max-width: 64px;
+  height: 64px;
+  vertical-align: middle;
+}
+
+.app-name {
+  display: inline-block;
+  margin: 0 0 0 .25em;
+  vertical-align: middle;
+}
