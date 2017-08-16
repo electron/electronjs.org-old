@@ -53,7 +53,7 @@
     "marky-markdown-lite": "^1.2.0",
     "minimist": "^1.2.0",
     "node-sass-middleware": "^0.11.0",
-    "primer-breadcrumb": "^1.0.2",
+    "primer-breadcrumb": "1.0.2",
     "require-dir": "^0.3.1",
     "require-yml": "^1.3.1",
     "semver": "^5.3.0",
