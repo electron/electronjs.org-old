@@ -12262,6 +12262,44 @@
     "latestRelease": false
   },
   {
+    "slug": "tim",
+    "name": "tim",
+    "description": "manage issues with order",
+    "website": "https://github.com/tborychowski/tim/",
+    "category": "Developer Tools",
+    "repository": "https://github.com/tborychowski/tim/",
+    "keywords": [
+      "browser",
+      "electron-app",
+      "productivity-booster",
+      "manager",
+      "github",
+      "notifications",
+      "bookmarks"
+    ],
+    "screenshots": [
+      {
+        "imageUrl": "https://raw.githubusercontent.com/tborychowski/tim/master/screens/0-screenshot.png",
+        "caption": "TIM screenshot",
+        "imageLink": "https://github.com/tborychowski/tim"
+      }
+    ],
+    "license": "MIT",
+    "icon": "tim-icon.png",
+    "icon32": "tim-icon-32.png",
+    "icon64": "tim-icon-64.png",
+    "icon128": "tim-icon-128.png",
+    "date": "2017-08-17",
+    "iconColors": [
+      "#dedede",
+      "#904d7f",
+      "#959152",
+      "#68a0b8",
+      "#9e8e9a"
+    ],
+    "latestRelease": false
+  },
+  {
     "slug": "timestamp",
     "name": "Timestamp",
     "description": "A better macOS menu bar clock with a customizable date/time display and a calendar.",
