@@ -8508,6 +8508,38 @@
     "readme": "<div class=\"announce instapaper_body md\" data-path=\"README.md\" id=\"readme\"><article class=\"markdown-body entry-content\" itemprop=\"text\"><p><a href=\"https://travis-ci.org/patrikx3/onenote\"><img src=\"https://camo.githubusercontent.com/a9c00611a9897c3aa122769917b9639241ce3ab5/68747470733a2f2f7472617669732d63692e6f72672f70617472696b78332f6f6e656e6f74652e7376673f6272616e63683d6d6173746572\" alt=\"Build Status\" data-canonical-src=\"https://travis-ci.org/patrikx3/onenote.svg?branch=master\" style=\"max-width:100%;\"></a>  <a href=\"https://scrutinizer-ci.com/g/patrikx3/onenote/?branch=master\"><img src=\"https://camo.githubusercontent.com/bf7232216a9f159c7dff72e97678a3792af6edaf/68747470733a2f2f7363727574696e697a65722d63692e636f6d2f672f70617472696b78332f6f6e656e6f74652f6261646765732f7175616c6974792d73636f72652e706e673f623d6d6173746572\" alt=\"Scrutinizer Code Quality\" data-canonical-src=\"https://scrutinizer-ci.com/g/patrikx3/onenote/badges/quality-score.png?b=master\" style=\"max-width:100%;\"></a>  <a href=\"https://scrutinizer-ci.com/g/patrikx3/onenote/?branch=master\"><img src=\"https://camo.githubusercontent.com/6a10f20e3013f752e27c0ed8a1b3572475aad225/68747470733a2f2f7363727574696e697a65722d63692e636f6d2f672f70617472696b78332f6f6e656e6f74652f6261646765732f636f7665726167652e706e673f623d6d6173746572\" alt=\"Code Coverage\" data-canonical-src=\"https://scrutinizer-ci.com/g/patrikx3/onenote/badges/coverage.png?b=master\" style=\"max-width:100%;\"></a></p>\n<h2><a id=\"\" class=\"anchor\" href=\"#\" aria-hidden=\"true\"><svg aria-hidden=\"true\" class=\"octicon octicon-link\" height=\"16\" version=\"1.1\" viewBox=\"0 0 16 16\" width=\"16\"><path fill-rule=\"evenodd\" d=\"M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\"></path></svg></a><a href=\"https://www.npmjs.com/package/p3x-onenote/\"><img src=\"https://camo.githubusercontent.com/b68853a7557d69260078d02ca00e8b8e87bffac5/68747470733a2f2f6e6f6465692e636f2f6e706d2f7033782d6f6e656e6f74652e706e673f646f776e6c6f6164733d7472756526646f776e6c6f616452616e6b3d747275652673746172733d74727565\" alt=\"NPM\" data-canonical-src=\"https://nodei.co/npm/p3x-onenote.png?downloads=true&amp;downloadRank=true&amp;stars=true\" style=\"max-width:100%;\"></a></h2>\n<h1><a id=\"user-content-p3x-onenote-linux\" class=\"anchor\" href=\"#p3x-onenote-linux\" aria-hidden=\"true\"><svg aria-hidden=\"true\" class=\"octicon octicon-link\" height=\"16\" version=\"1.1\" viewBox=\"0 0 16 16\" width=\"16\"><path fill-rule=\"evenodd\" d=\"M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\"></path></svg></a>P3X Onenote Linux</h1>\n<p>This is an open source project. Just code.</p>\n<h3><a id=\"user-content-node-version-requirement\" class=\"anchor\" href=\"#node-version-requirement\" aria-hidden=\"true\"><svg aria-hidden=\"true\" class=\"octicon octicon-link\" height=\"16\" version=\"1.1\" viewBox=\"0 0 16 16\" width=\"16\"><path fill-rule=\"evenodd\" d=\"M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\"></path></svg></a>Node Version Requirement</h3>\n<pre><code>&gt;=7.8.0 \n</code></pre>\n<h3><a id=\"user-content-built-on-node\" class=\"anchor\" href=\"#built-on-node\" aria-hidden=\"true\"><svg aria-hidden=\"true\" class=\"octicon octicon-link\" height=\"16\" version=\"1.1\" viewBox=\"0 0 16 16\" width=\"16\"><path fill-rule=\"evenodd\" d=\"M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\"></path></svg></a>Built on Node</h3>\n<pre><code>v8.1.4\n</code></pre>\n<p>The <code>async</code> and <code>await</code> keywords are required.</p>\n<p>Install NodeJs:<br>\n<a href=\"https://nodejs.org/en/download/package-manager/\">https://nodejs.org/en/download/package-manager/</a></p>\n<h1><a id=\"user-content-description\" class=\"anchor\" href=\"#description\" aria-hidden=\"true\"><svg aria-hidden=\"true\" class=\"octicon octicon-link\" height=\"16\" version=\"1.1\" viewBox=\"0 0 16 16\" width=\"16\"><path fill-rule=\"evenodd\" d=\"M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\"></path></svg></a>Description</h1>\n<p>This is a Linux Onenote.</p>\n<h2><a id=\"user-content-downloadable-installer\" class=\"anchor\" href=\"#downloadable-installer\" aria-hidden=\"true\"><svg aria-hidden=\"true\" class=\"octicon octicon-link\" height=\"16\" version=\"1.1\" viewBox=\"0 0 16 16\" width=\"16\"><path fill-rule=\"evenodd\" d=\"M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\"></path></svg></a>Downloadable installer</h2>\n<p><a href=\"https://github.com/patrikx3/onenote/releases\">https://github.com/patrikx3/onenote/releases</a></p>\n<h2><a id=\"user-content-cli-install\" class=\"anchor\" href=\"#cli-install\" aria-hidden=\"true\"><svg aria-hidden=\"true\" class=\"octicon octicon-link\" height=\"16\" version=\"1.1\" viewBox=\"0 0 16 16\" width=\"16\"><path fill-rule=\"evenodd\" d=\"M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\"></path></svg></a>CLI Install</h2>\n<div class=\"highlight highlight-source-shell\"><pre><span class=\"pl-c\"><span class=\"pl-c\">#</span> this is some weird NPM error, you need like this:</span>\nsudo npm install -g p3x-onenote --unsafe-perm=true --allow-root\np3x-onenote</pre></div>\n<p>After last startup and you logout and login again, you will have a menu.</p>\n<p>Fedora: <a href=\"https://github.com/patrikx3/onenote/issues/3#issuecomment-312711801\">https://github.com/patrikx3/onenote/issues/3#issuecomment-312711801</a></p>\n<h1><a id=\"user-content-featrues\" class=\"anchor\" href=\"#featrues\" aria-hidden=\"true\"><svg aria-hidden=\"true\" class=\"octicon octicon-link\" height=\"16\" version=\"1.1\" viewBox=\"0 0 16 16\" width=\"16\"><path fill-rule=\"evenodd\" d=\"M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\"></path></svg></a>Featrues</h1>\n<ul>\n<li>GNOME menu (<code>~/.local/share/applications/p3x-onenote.desktop</code>)</li>\n<li>Icon</li>\n<li>Tray</li>\n<li>Restart button (empty your cache, you can login again if there is an error)</li>\n<li>Remember last notebook</li>\n<li>Show / hide</li>\n<li>Quit</li>\n<li>Loads last visibility state</li>\n</ul>\n<h2><a id=\"user-content-screenshot\" class=\"anchor\" href=\"#screenshot\" aria-hidden=\"true\"><svg aria-hidden=\"true\" class=\"octicon octicon-link\" height=\"16\" version=\"1.1\" viewBox=\"0 0 16 16\" width=\"16\"><path fill-rule=\"evenodd\" d=\"M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\"></path></svg></a>Screenshot</h2>\n<p><a href=\"https://camo.githubusercontent.com/f471c913a6d2c45abb6fb507839d9e5694aa8d87/68747470733a2f2f63646e2e636f7269666575732e636f6d2f6769742f6f6e656e6f74652f6172746966616374732f73637265656e73686f742f312e706e67\" target=\"_blank\"><img src=\"https://camo.githubusercontent.com/f471c913a6d2c45abb6fb507839d9e5694aa8d87/68747470733a2f2f63646e2e636f7269666575732e636f6d2f6769742f6f6e656e6f74652f6172746966616374732f73637265656e73686f742f312e706e67\" alt=\"Screenshot 1\" data-canonical-src=\"https://cdn.corifeus.com/git/onenote/artifacts/screenshot/1.png\" style=\"max-width:100%;\"></a></p>\n<hr>\n<p><a href=\"https://pages.corifeus.com/onenote\"><strong>P3X-ONENOTE</strong></a> Build v1.0.159-61</p>\n<p><a href=\"http://www.corifeus.com\">Corifeus</a> by <a href=\"http://patrikx3.com\">Patrik Laszlo</a></p>\n</article></div>"
   },
   {
+    "slug": "paintsupreme3d",
+    "name": "PaintSupreme3D",
+    "description": "Digital Painting. Editing. Animation. In 3D.",
+    "website": "http://www.paintsupreme3d.com",
+    "screenshots": [
+      {
+        "imageUrl": "https://s3-us-west-2.amazonaws.com/braindistrict/StoneGiant_NativeMac.jpg"
+      }
+    ],
+    "keywords": [
+      "painting",
+      "image editing",
+      "digital painting",
+      "multimedia"
+    ],
+    "license": "Commercial",
+    "category": "Graphics & Design",
+    "icon": "paintsupreme3d-icon.png",
+    "icon32": "paintsupreme3d-icon-32.png",
+    "icon64": "paintsupreme3d-icon-64.png",
+    "icon128": "paintsupreme3d-icon-128.png",
+    "date": "2017-08-29",
+    "iconColors": [
+      "#7e6e6f",
+      "#273037",
+      "#f89b08",
+      "#f5e696",
+      "#a9a8aa"
+    ],
+    "latestRelease": false
+  },
+  {
     "slug": "pamfax",
     "name": "PamFax",
     "description": "A cross-platform app for sending and receiving faxes",
@@ -12711,6 +12743,39 @@
     "latestRelease": false
   },
   {
+    "slug": "tusk",
+    "name": "Tusk",
+    "description": "Refined Evernote desktop app",
+    "website": "https://champloohq.github.io/tusk/",
+    "repository": "https://github.com/champloohq/tusk",
+    "keywords": [
+      "note",
+      "productivity",
+      "note-taking",
+      "evernote"
+    ],
+    "license": "MIT",
+    "category": "Productivity",
+    "screenshots": [
+      {
+        "imageUrl": "https://cdn.rawgit.com/champloohq/tusk/c0475c42/media/black-theme.png"
+      }
+    ],
+    "icon": "tusk-icon.png",
+    "icon32": "tusk-icon-32.png",
+    "icon64": "tusk-icon-64.png",
+    "icon128": "tusk-icon-128.png",
+    "date": "2017-08-29",
+    "iconColors": [
+      "#5aeac3",
+      "#fbfcfc",
+      "#89fba3",
+      "#a7facc",
+      "#8cecdc"
+    ],
+    "latestRelease": false
+  },
+  {
     "slug": "tweakstyle",
     "name": "TweakStyle",
     "description": "The next code editor",
@@ -13180,6 +13245,43 @@
       "#4e1c3c",
       "#bc94ac",
       "#cf579f"
+    ],
+    "latestRelease": false
+  },
+  {
+    "slug": "wail",
+    "name": "WAIL",
+    "description": "Collection Based Personal Web Archiving",
+    "website": "https://github.com/N0taN3rd/wail",
+    "category": "Utilities",
+    "repository": "https://github.com/N0taN3rd/wail",
+    "keywords": [
+      "web archiving",
+      "WARC",
+      "browser based presrevation",
+      "web archive collections",
+      "personal web archiving",
+      "high fidelity preservation"
+    ],
+    "screenshots": [
+      {
+        "imageUrl": "https://raw.githubusercontent.com/N0taN3rd/wail/wail-electron/images/wailHome.png",
+        "caption": "Web Archive Collections Screen",
+        "imageLink": "https://github.com/N0taN3rd/wail"
+      }
+    ],
+    "license": "GPL-3.0",
+    "icon": "wail-icon.png",
+    "icon32": "wail-icon-32.png",
+    "icon64": "wail-icon-64.png",
+    "icon128": "wail-icon-128.png",
+    "date": "2017-08-29",
+    "iconColors": [
+      "#040404",
+      "#555555",
+      "#3c3c3c",
+      "#343434",
+      "#292929"
     ],
     "latestRelease": false
   },
