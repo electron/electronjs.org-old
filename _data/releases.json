@@ -1530,24 +1530,6 @@
     "version": "0.35.1"
   },
   {
-    "url": "https://api.github.com/repos/electron/electron/releases/2130775",
-    "assets_url": "https://api.github.com/repos/electron/electron/releases/2130775/assets",
-    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/2130775/assets{?name,label}",
-    "html_url": "https://github.com/electron/electron/releases/tag/v0.35.0",
-    "id": 2130775,
-    "tag_name": "v0.35.0",
-    "target_commitish": "master",
-    "name": "electron v0.35.0",
-    "draft": false,
-    "prerelease": false,
-    "created_at": "2015-11-16T08:48:51Z",
-    "published_at": "2015-11-16T11:08:22Z",
-    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.35.0",
-    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.35.0",
-    "body": "Changelog:\n- Show warnings for deprecated APIs, can be turned off with `process.noDeprecation`.\n- Add `electron` module which includes all public APIs.\n- The `ipc` module is deprecated, should use `ipcRenderer` in renderer process, and `ipcMain` in main process.\n- The `ipcRenderer` module adds an `event` object when emitting events, to match the style of `ipcMain` module.\n- Remove the `-` in `BrowserWindow`'s option names.\n- `clicked` events in `Tray` are renamed to `click`.\n- The `Url` in API names is replaced with `URL`.\n- Add `documents`, `downloads`, `music`, `pictures`, `videos` keys to `app.getPath`.\n- Fix memory leak of `webContents.beginFrameSubscription`.\n\n**Windows**\n- Add support for toast notifications on Windows >= 8.\n\n**OS X**\n- Add `drag-enter`, `drag-leave`, `drag-end` and `drop` events to `Tray` module.\n- Fix images not showing in notifications on OS X 10.9.\n",
-    "version": "0.35.0"
-  },
-  {
     "url": "https://api.github.com/repos/electron/electron/releases/2188774",
     "assets_url": "https://api.github.com/repos/electron/electron/releases/2188774/assets",
     "upload_url": "https://uploads.github.com/repos/electron/electron/releases/2188774/assets{?name,label}",
