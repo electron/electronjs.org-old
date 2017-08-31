@@ -1512,24 +1512,6 @@
     "version": "0.35.2"
   },
   {
-    "url": "https://api.github.com/repos/electron/electron/releases/2158031",
-    "assets_url": "https://api.github.com/repos/electron/electron/releases/2158031/assets",
-    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/2158031/assets{?name,label}",
-    "html_url": "https://github.com/electron/electron/releases/tag/v0.35.1",
-    "id": 2158031,
-    "tag_name": "v0.35.1",
-    "target_commitish": "master",
-    "name": "electron v0.35.1",
-    "draft": false,
-    "prerelease": false,
-    "created_at": "2015-11-20T05:36:59Z",
-    "published_at": "2015-11-20T07:01:41Z",
-    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.35.1",
-    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.35.1",
-    "body": "Changelog:\n- Add `session` module for full multi-session support.\n- Add support for some special keys in `webContents.sendInputEvent`.\n- Add `certificate-error` event to `webContents` and `app`.\n- Add `session.setCertificateVerifyProc` API.\n- Fix `webContents.reloadIgnoringCache` not working.\n\n**Windows**\n- Fix crash when sending notifications with images.\n- Fix showing notifications on Windows 8 when app name is not the same with app user model ID.\n\n**OS X**\n- Add downloads for dSYM symbols.\n- Support showing the window as desktop.\n- Fix the size of `Tray` icon not updated when the image is changed.\n\n**Linux**\n- Fix blurry rendering on some High-DPI machines.\n",
-    "version": "0.35.1"
-  },
-  {
     "url": "https://api.github.com/repos/electron/electron/releases/2188774",
     "assets_url": "https://api.github.com/repos/electron/electron/releases/2188774/assets",
     "upload_url": "https://uploads.github.com/repos/electron/electron/releases/2188774/assets{?name,label}",
