@@ -1,5 +1,5 @@
 ---
-version: v1.7.5
+version: v1.7.6
 permalink: /docs/api/notification/
 category: API
 redirect_from:
@@ -178,13 +178,13 @@ Returns `Boolean` - Whether or not desktop notifications are supported on the cu
 
 *   `options` Object
     *   `title` String - A title for the notification, which will be shown at the top of the notification window when it is shown
-    *   `subtitle` String - A subtitle for the notification, which will be displayed below the title. _macOS_
+    *   `subtitle` String - (optional) A subtitle for the notification, which will be displayed below the title. _macOS_
     *   `body` String - The body text of the notification, which will be displayed below the title or subtitle
     *   `silent` Boolean - (optional) Whether or not to emit an OS notification noise when showing the notification
     *   `icon` [NativeImage]({{site.baseurl}}/docs/api/native-image) - (optional) An icon to use in the notification
     *   `hasReply` Boolean - (optional) Whether or not to add an inline reply option to the notification. _macOS_
     *   `replyPlaceholder` String - (optional) The placeholder to write in the inline reply input field. _macOS_
-    *   `actions` [NotificationAction[]]({{site.baseurl}}/docs/api/structures/notification-action) - Actions to add to the notification. Please read the available actions and limitations in the `NotificationAction` documentation _macOS_
+    *   `actions` [NotificationAction[]]({{site.baseurl}}/docs/api/structures/notification-action) - (optional) Actions to add to the notification. Please read the available actions and limitations in the `NotificationAction` documentation _macOS_
 
 ### Instance Events
 

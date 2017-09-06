@@ -1,5 +1,5 @@
 ---
-version: v1.7.5
+version: v1.7.6
 permalink: /docs/api/web-contents/
 category: API
 redirect_from:
@@ -1322,11 +1322,11 @@ Returns `Integer` - The `pid` of the associated renderer process.
 
 #### `contents.id`
 
-A Integer representing the unique ID of this WebContents.
+A `Integer` representing the unique ID of this WebContents.
 
 #### `contents.session`
 
-A Session object ([session]({{site.baseurl}}/docs/api/session)) used by this webContents.
+A [`Session`]({{site.baseurl}}/docs/api/session) used by this webContents.
 
 #### `contents.hostWebContents`
 

@@ -1,5 +1,5 @@
 ---
-version: v1.7.5
+version: v1.7.6
 permalink: /docs/api/client-request/
 category: API
 redirect_from:
@@ -266,7 +266,7 @@ Emitted when there is redirection and the mode is `manual`. Calling [`request.fo
 
 #### `request.chunkedEncoding`
 
-A Boolean specifying whether the request will use HTTP chunked transfer encoding or not. Defaults to false. The property is readable and writable, however it can be set only before the first write operation as the HTTP headers are not yet put on the wire. Trying to set the `chunkedEncoding` property after the first write will throw an error.
+A `Boolean` specifying whether the request will use HTTP chunked transfer encoding or not. Defaults to false. The property is readable and writable, however it can be set only before the first write operation as the HTTP headers are not yet put on the wire. Trying to set the `chunkedEncoding` property after the first write will throw an error.
 
 Using chunked encoding is strongly recommended if you need to send a large request body as data will be streamed in small chunks instead of being internally buffered inside Electron process memory.
 

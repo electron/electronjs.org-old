@@ -1,5 +1,5 @@
 ---
-version: v1.7.5
+version: v1.7.6
 permalink: /docs/glossary/
 category: .
 redirect_from:
@@ -158,9 +158,7 @@ The ASAR format was created primarily to improve performance on Windows... TODO
 
 ### Brightray
 
-Brightray is a static library that makes [libchromiumcontent](#libchromiumcontent) easier to use in applications.
-
-Brightray is a low-level dependency of Electron that does not concern the majority of Electron users.
+Brightray [was](https://github.com/electron-archive/brightray) a static library that made [libchromiumcontent](#libchromiumcontent) easier to use in applications. It is now deprecated and has been merged into Electron's codebase.
 
 ### CRT
 
@@ -180,7 +178,9 @@ IPC stands for Inter-Process Communication. Electron uses IPC to send serialized
 
 ### libchromiumcontent
 
-A single, shared library that includes the Chromium Content module and all its dependencies (e.g., Blink, [V8](#v8), etc.).
+A shared library that includes the [Chromium Content module](https://www.chromium.org/developers/content-module) and all its dependencies (e.g., Blink, [V8](#v8), etc.). Also referred to as "libcc".
+
+*   [github.com/electron/libchromiumcontent](https://github.com/electron/libchromiumcontent)
 
 ### main process
 
@@ -239,6 +239,14 @@ Like Node, Electron is focused on having a small set of APIs that provide all th
 ### V8
 
 V8 is Google's open source JavaScript engine. It is written in C++ and is used in Google Chrome. V8 can run standalone, or can be embedded into any C++ application.
+
+Electron builds V8 as part of Chromium and then points Node to that V8 when building it.
+
+V8's version numbers always correspond to those of Google Chrome. Chrome 59 includes V8 5.9, Chrome 58 includes V8 5.8, etc.
+
+*   [developers.google.com/v8](https://developers.google.com/v8)
+*   [nodejs.org/api/v8.html](https://nodejs.org/api/v8.html)
+*   [docs/development/v8-development.md]({{site.baseurl}}/docs/development/v8-development)
 
 ### webview
 

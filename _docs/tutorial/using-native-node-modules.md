@@ -1,5 +1,5 @@
 ---
-version: v1.7.5
+version: v1.7.6
 permalink: /docs/tutorial/using-native-node-modules/
 category: Tutorial
 redirect_from:

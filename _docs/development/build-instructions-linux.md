@@ -1,5 +1,5 @@
 ---
-version: v1.7.5
+version: v1.7.6
 permalink: /docs/development/build-instructions-linux/
 category: Development
 redirect_from:
@@ -155,8 +155,8 @@ Follow the guidelines below for building Electron on Linux.
 
 *   At least 25GB disk space and 8GB RAM.
 *   Python 2.7.x. Some distributions like CentOS 6.x still use Python 2.6.x so you may need to check your Python version with `python -V`.
-*   Node.js. There are various ways to install Node. You can download source code from [Node.js](http://nodejs.org) and compile from source. Doing so permits installing Node on your own home directory as a standard user. Or try repositories such as [NodeSource](https://nodesource.com/blog/nodejs-v012-iojs-and-the-nodesource-linux-repositories).
-*   Clang 3.4 or later.
+*   Node.js. There are various ways to install Node. You can download source code from [nodejs.org](http://nodejs.org) and compile it. Doing so permits installing Node on your own home directory as a standard user. Or try repositories such as [NodeSource](https://nodesource.com/blog/nodejs-v012-iojs-and-the-nodesource-linux-repositories).
+*   [clang](https://clang.llvm.org/get_started.html) 3.4 or later.
 *   Development headers of GTK+ and libnotify.
 
 On Ubuntu, install the following libraries:
@@ -192,7 +192,7 @@ Other distributions may offer similar packages for installation via package mana
 ## Getting the Code
 
 ```bash
-$ git clone https://github.com/electron/electron.git
+$ git clone https://github.com/electron/electron
 ```
 
 ## Bootstrapping
@@ -201,7 +201,7 @@ The bootstrap script will download all necessary build dependencies and create t
 
 ```bash
 $ cd electron
-$ ./script/bootstrap.py -v
+$ ./script/bootstrap.py --verbose
 ```
 
 ### Cross compilation
@@ -213,7 +213,7 @@ $ sudo apt-get install libc6-dev-armhf-cross linux-libc-dev-armhf-cross \
                        g++-arm-linux-gnueabihf
 ```
 
-And to cross compile for `arm` or `ia32` targets, you should pass the `--target_arch` parameter to the `bootstrap.py` script:
+And to cross-compile for `arm` or `ia32` targets, you should pass the `--target_arch` parameter to the `bootstrap.py` script:
 
 ```bash
 $ ./script/bootstrap.py -v --target_arch=arm
@@ -233,7 +233,7 @@ This script will cause a very large Electron executable to be placed in the dire
 $ ./script/create-dist.py
 ```
 
-This will put a working distribution with much smaller file sizes in the `dist` directory. After running the create-dist.py script, you may want to remove the 1.3+ gigabyte binary which is still in `out/R`.
+This will put a working distribution with much smaller file sizes in the `dist` directory. After running the `create-dist.py` script, you may want to remove the 1.3+ gigabyte binary which is still in `out/R`.
 
 You can also build the `Debug` target only:
 
@@ -275,11 +275,27 @@ See [Build System Overview: Tests]({{site.baseurl}}/docs/development/build-syste
 
 ## Advanced topics
 
-The default building configuration is targeted for major desktop Linux distributions, to build for a specific distribution or device, following information may help you.
+The default building configuration is targeted for major desktop Linux distributions. To build for a specific distribution or device, the following information may help you.
 
 ### Building `libchromiumcontent` locally
 
-To avoid using the prebuilt binaries of `libchromiumcontent`, you can pass the `--build_libchromiumcontent` switch to `bootstrap.py` script:
+To avoid using the prebuilt binaries of `libchromiumcontent`, you can build `libchromiumcontent` locally. To do so, follow these steps:
+
+1.  Install [depot_tools](https://chromium.googlesource.com/chromium/src/+/master/docs/linux_build_instructions.md#Install)
+2.  Install [additional build dependencies](https://chromium.googlesource.com/chromium/src/+/master/docs/linux_build_instructions.md#Install-additional-build-dependencies)
+3.  Fetch the git submodules:
+
+```bash
+$ git submodule update --init --recursive
+```
+
+1.  Copy the .gclient config file
+
+```bash
+$ cp vendor/libchromiumcontent/.gclient .
+```
+
+1.  Pass the `--build_libchromiumcontent` switch to `bootstrap.py` script:
 
 ```bash
 $ ./script/bootstrap.py -v --build_libchromiumcontent
@@ -293,7 +309,7 @@ $ ./script/build.py -c R
 
 ### Using system `clang` instead of downloaded `clang` binaries
 
-By default Electron is built with prebuilt `clang` binaries provided by Chromium project. If for some reason you want to build with the `clang` installed in your system, you can call `bootstrap.py` with `--clang_dir=<path>` switch. By passing it the build script will assume the `clang` binaries reside in `<path>/bin/`.
+By default Electron is built with prebuilt [`clang`](https://clang.llvm.org/get_started.html) binaries provided by the Chromium project. If for some reason you want to build with the `clang` installed in your system, you can call `bootstrap.py` with `--clang_dir=<path>` switch. By passing it the build script will assume the `clang` binaries reside in `<path>/bin/`.
 
 For example if you installed `clang` under `/user/local/bin/clang`:
 
@@ -302,7 +318,7 @@ $ ./script/bootstrap.py -v --build_libchromiumcontent --clang_dir /usr/local
 $ ./script/build.py -c R
 ```
 
-### Using other compilers other than `clang`
+### Using compilers other than `clang`
 
 To build Electron with compilers like `g++`, you first need to disable `clang` with `--disable_clang` switch first, and then set `CC` and `CXX` environment variables to the ones you want.
 

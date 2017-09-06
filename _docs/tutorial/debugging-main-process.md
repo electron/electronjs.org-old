@@ -1,5 +1,5 @@
 ---
-version: v1.7.5
+version: v1.7.6
 permalink: /docs/tutorial/debugging-main-process/
 category: Tutorial
 redirect_from:

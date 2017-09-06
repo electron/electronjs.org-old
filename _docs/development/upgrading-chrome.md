@@ -1,5 +1,5 @@
 ---
-version: v1.7.5
+version: v1.7.6
 permalink: /docs/development/upgrading-chrome/
 category: Development
 redirect_from:

@@ -1,5 +1,5 @@
 ---
-version: v1.7.5
+version: v1.7.6
 permalink: /docs/api/touch-bar/
 category: API
 redirect_from:
@@ -154,7 +154,7 @@ Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process)
 
 ### `new TouchBar(options)` _Experimental_
 
-*   `options` - Object
+*   `options` Object
     *   `items` ([TouchBarButton]({{site.baseurl}}/docs/api/touch-bar-button) &#124; [TouchBarColorPicker]({{site.baseurl}}/docs/api/touch-bar-color-picker) &#124; [TouchBarGroup]({{site.baseurl}}/docs/api/touch-bar-group) &#124; [TouchBarLabel]({{site.baseurl}}/docs/api/touch-bar-label) &#124; [TouchBarPopover]({{site.baseurl}}/docs/api/touch-bar-popover) &#124; [TouchBarScrubber]({{site.baseurl}}/docs/api/touch-bar-scrubber) &#124; [TouchBarSegmentedControl]({{site.baseurl}}/docs/api/touch-bar-segmented-control) &#124; [TouchBarSlider]({{site.baseurl}}/docs/api/touch-bar-slider) &#124; [TouchBarSpacer]({{site.baseurl}}/docs/api/touch-bar-spacer))[]
     *   `escapeItem` ([TouchBarButton]({{site.baseurl}}/docs/api/touch-bar-button) &#124; [TouchBarColorPicker]({{site.baseurl}}/docs/api/touch-bar-color-picker) &#124; [TouchBarGroup]({{site.baseurl}}/docs/api/touch-bar-group) &#124; [TouchBarLabel]({{site.baseurl}}/docs/api/touch-bar-label) &#124; [TouchBarPopover]({{site.baseurl}}/docs/api/touch-bar-popover) &#124; [TouchBarScrubber]({{site.baseurl}}/docs/api/touch-bar-scrubber) &#124; [TouchBarSegmentedControl]({{site.baseurl}}/docs/api/touch-bar-segmented-control) &#124; [TouchBarSlider]({{site.baseurl}}/docs/api/touch-bar-slider) &#124; [TouchBarSpacer]({{site.baseurl}}/docs/api/touch-bar-spacer)) (optional)
 
@@ -170,7 +170,7 @@ The following properties are available on instances of `TouchBar`:
 
 #### `touchBar.escapeItem`
 
-The `TouchBarItem` that will replace the "esc" button on the touch bar when set. Setting to `null` restores the default "esc" button. Changing this value immediately updates the escape item in the touch bar.
+The `TouchBarButton` that will replace the "esc" button on the touch bar when set. Setting to `null` restores the default "esc" button. Changing this value immediately updates the escape item in the touch bar.
 
 ## Examples
 

@@ -1,5 +1,5 @@
 ---
-version: v1.7.5
+version: v1.7.6
 permalink: /docs/api/touch-bar-scrubber/
 category: API
 redirect_from:
@@ -171,11 +171,11 @@ Process: [Main]({{site.baseurl}}/docs/tutorial/quick-start#main-process)
 
 The following properties are available on instances of `TouchBarScrubber`:
 
-#### `touchBarSegmentedControl.items`
+#### `touchBarScrubber.items`
 
 A `ScrubberItem[]` array representing the items in this scrubber. Updating this value immediately updates the control in the touch bar. Updating deep properties inside this array **does not update the touch bar**.
 
-#### `touchBarSegmentedControl.selectedStyle`
+#### `touchBarScrubber.selectedStyle`
 
 A `String` representing the style that selected items in the scrubber should have. Updating this value immediately updates the control in the touch bar. Possible values:
 
@@ -183,7 +183,7 @@ A `String` representing the style that selected items in the scrubber should hav
 *   `outline` - Maps to `[NSScrubberSelectionStyle outlineOverlayStyle]`
 *   `null` - Actually null, not a string, removes all styles
 
-#### `touchBarSegmentedControl.overlayStyle`
+#### `touchBarScrubber.overlayStyle`
 
 A `String` representing the style that selected items in the scrubber should have. This style is overlayed on top of the scrubber item instead of being placed behind it. Updating this value immediately updates the control in the touch bar. Possible values:
 
@@ -191,17 +191,17 @@ A `String` representing the style that selected items in the scrubber should hav
 *   `outline` - Maps to `[NSScrubberSelectionStyle outlineOverlayStyle]`
 *   `null` - Actually null, not a string, removes all styles
 
-#### `touchBarSegmentedControl.showArrowButtons`
+#### `touchBarScrubber.showArrowButtons`
 
 A `Boolean` representing whether to show the left / right selection arrows in this scrubber. Updating this value immediately updates the control in the touch bar.
 
-#### `touchBarSegmentedControl.mode`
+#### `touchBarScrubber.mode`
 
 A `String` representing the mode of this scrubber. Updating this value immediately updates the control in the touch bar. Possible values:
 
 *   `fixed` - Maps to `NSScrubberModeFixed`
 *   `free` - Maps to `NSScrubberModeFree`
 
-#### `touchBarSegmentedControl.continuous`
+#### `touchBarScrubber.continuous`
 
 A `Boolean` representing whether this scrubber is continuous or not. Updating this value immediately updates the control in the touch bar.

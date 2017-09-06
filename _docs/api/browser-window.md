@@ -1,5 +1,5 @@
 ---
-version: v1.7.5
+version: v1.7.6
 permalink: /docs/api/browser-window/
 category: API
 redirect_from:
@@ -561,6 +561,30 @@ Returns `BrowserWindow` - The window that owns the given `webContents`.
 
 Returns `BrowserWindow` - The window with the given `id`.
 
+#### `BrowserWindow.addExtension(path)`
+
+*   `path` String
+
+Adds Chrome extension located at `path`, and returns extension's name.
+
+The method will also not return if the extension's manifest is missing or incomplete.
+
+**Note:** This API cannot be called before the `ready` event of the `app` module is emitted.
+
+#### `BrowserWindow.removeExtension(name)`
+
+*   `name` String
+
+Remove a Chrome extension by name.
+
+**Note:** This API cannot be called before the `ready` event of the `app` module is emitted.
+
+#### `BrowserWindow.getExtensions()`
+
+Returns `Object` - The keys are the extension names and each value is an Object containing `name` and `version` properties.
+
+**Note:** This API cannot be called before the `ready` event of the `app` module is emitted.
+
 #### `BrowserWindow.addDevToolsExtension(path)`
 
 *   `path` String
@@ -1039,7 +1063,7 @@ Same as `webContents.reload`.
 
 #### `win.setMenu(menu)` _Linux_ _Windows_
 
-*   `menu` Menu
+*   `menu` Menu &#124; null
 
 Sets the `menu` as the window's menu bar, setting it to `null` will remove the menu bar.
 

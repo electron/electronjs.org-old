@@ -1,5 +1,5 @@
 ---
-version: v1.7.5
+version: v1.7.6
 permalink: /docs/api/menu/
 category: API
 redirect_from:
@@ -234,7 +234,7 @@ Inserts the `menuItem` to the `pos` position of the menu.
 
 #### `menu.items`
 
-A MenuItem[] array containing the menu's items.
+A `MenuItem[]` array containing the menu's items.
 
 Each `Menu` consists of multiple [`MenuItem`]({{site.baseurl}}/docs/api/menu-item)s and each `MenuItem` can have a submenu.
 

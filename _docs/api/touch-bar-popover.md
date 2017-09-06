@@ -1,5 +1,5 @@
 ---
-version: v1.7.5
+version: v1.7.6
 permalink: /docs/api/touch-bar-popover/
 category: API
 redirect_from:

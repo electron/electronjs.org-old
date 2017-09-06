@@ -1,5 +1,5 @@
 ---
-version: v1.7.5
+version: v1.7.6
 permalink: /docs/api/browser-view/
 category: API
 redirect_from:
@@ -181,6 +181,14 @@ view.webContents.loadURL('https://electron.atom.io')
 
 *   `options` Object (optional)
     *   `webPreferences` Object (optional) - See [BrowserWindow]({{site.baseurl}}/docs/api/browser-window).
+
+### Static Methods
+
+#### `BrowserView.fromId(id)`
+
+*   `id` Integer
+
+Returns `BrowserView` - The view with the given `id`.
 
 ### Instance Properties
 

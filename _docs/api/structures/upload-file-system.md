@@ -1,5 +1,5 @@
 ---
-version: v1.7.5
+version: v1.7.6
 permalink: /docs/api/structures/upload-file-system/
 category: API
 redirect_from:
