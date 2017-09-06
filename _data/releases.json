@@ -1528,23 +1528,5 @@
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.34.5",
     "body": "Changelog:\n\n**OS X**\n- Fix crash when closing a window in fullscreen state.\n",
     "version": "0.34.5"
-  },
-  {
-    "url": "https://api.github.com/repos/electron/electron/releases/2176433",
-    "assets_url": "https://api.github.com/repos/electron/electron/releases/2176433/assets",
-    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/2176433/assets{?name,label}",
-    "html_url": "https://github.com/electron/electron/releases/tag/v0.34.4",
-    "id": 2176433,
-    "tag_name": "v0.34.4",
-    "target_commitish": "master",
-    "name": "electron v0.34.4",
-    "draft": false,
-    "prerelease": false,
-    "created_at": "2015-11-20T02:00:00Z",
-    "published_at": "2015-11-24T14:24:13Z",
-    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.34.4",
-    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.34.4",
-    "body": "Changelog:\n\n**Linux**\n- Fix blurry rendering on some High-DPI machines.\n",
-    "version": "0.34.4"
   }
 ]
