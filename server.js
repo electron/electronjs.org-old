@@ -3,6 +3,10 @@ const path = require('path')
 const express = require('express')
 const hbs = require('express-hbs')
 const i18n = require('electron-i18n')
+
+// TODO(zeke): Get locale from `i18n` instead
+const localized = require('require-yml')('./data/locale.yml')
+
 const slashes = require('connect-slashes')
 const browsersync = require('./lib/browsersync')()
 const electronApps = require('./data/apps.json')
@@ -92,6 +96,13 @@ app.get('/apps/:slug', (req, res) => {
     context.pageDetails.image = `${host}/images/apps/${app.icon64}`
   }
   res.render('app', context)
+})
+
+app.get('/contact', (req, res) => {
+  const context = {
+    pageDetails: Object.assign({}, localized.pages[req.path])
+  }
+  res.render('contact', context)
 })
 
 function startServer () {
