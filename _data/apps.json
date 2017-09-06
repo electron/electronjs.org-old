@@ -5417,10 +5417,17 @@
   {
     "slug": "https-checker",
     "name": "HTTPS Checker",
-    "description": "The Most Advanced HTTPS Mixed Content Checker Available",
-    "website": "https://www.ecommerce.co.uk/httpschecker",
-    "disabled": true,
-    "category": "Utilities",
+    "description": "Scan a website for HTTPS mixed content issues",
+    "website": "https://httpschecker.net/guides/https-checker",
+    "keywords": [
+      "https",
+      "ssl",
+      "tls",
+      "migration",
+      "checker",
+      "mixed-content"
+    ],
+    "category": "Developer Tools",
     "icon": "https-checker-icon.png",
     "icon32": "https-checker-icon-32.png",
     "icon64": "https-checker-icon-64.png",
@@ -6151,6 +6158,39 @@
     },
     "release_fetched_at": "2017-07-19T15:41:50.425Z",
     "readme": "<div class=\"announce instapaper_body md\" data-path=\"README.md\" id=\"readme\"><article class=\"markdown-body entry-content\" itemprop=\"text\"><p><a href=\"https://cloud.githubusercontent.com/assets/1519837/22404160/c89e41a6-e66e-11e6-87e4-1b78e201bce3.png\" target=\"_blank\"><img src=\"https://cloud.githubusercontent.com/assets/1519837/22404160/c89e41a6-e66e-11e6-87e4-1b78e201bce3.png\" alt=\"Jukeboks\" style=\"max-width:100%;\"></a></p>\n<p>Jukeboks is a fast viewer / player app, built on Electron.\nIn Jukeboks, you can preview images and movies while selecting files.</p>\n<h2><a id=\"user-content-features\" class=\"anchor\" href=\"#features\" aria-hidden=\"true\"><svg aria-hidden=\"true\" class=\"octicon octicon-link\" height=\"16\" version=\"1.1\" viewBox=\"0 0 16 16\" width=\"16\"><path fill-rule=\"evenodd\" d=\"M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\"></path></svg></a>Features</h2>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" class=\"task-list-item-checkbox\" checked=\"\" disabled=\"\"> Preview contents</li>\n<li>images</li>\n<li>movies</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" class=\"task-list-item-checkbox\" checked=\"\" disabled=\"\"> Enable to control with the keyboard</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" class=\"task-list-item-checkbox\" checked=\"\" disabled=\"\"> Automatically play movies with siblings</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" class=\"task-list-item-checkbox\" checked=\"\" disabled=\"\"> Support Multiple buffering</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" class=\"task-list-item-checkbox\" disabled=\"\"> Enable to create shortcuts</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" class=\"task-list-item-checkbox\" checked=\"\" disabled=\"\"> Filename Sorting Rules like macOS</li>\n</ul>\n<h2><a id=\"user-content-applications-screen\" class=\"anchor\" href=\"#applications-screen\" aria-hidden=\"true\"><svg aria-hidden=\"true\" class=\"octicon octicon-link\" height=\"16\" version=\"1.1\" viewBox=\"0 0 16 16\" width=\"16\"><path fill-rule=\"evenodd\" d=\"M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\"></path></svg></a>Application's screen</h2>\n<p><a href=\"https://cloud.githubusercontent.com/assets/1519837/22404096/2456b34a-e66d-11e6-81e0-02ad54954e26.png\" target=\"_blank\"><img src=\"https://cloud.githubusercontent.com/assets/1519837/22404096/2456b34a-e66d-11e6-81e0-02ad54954e26.png\" alt=\"screen\" style=\"max-width:100%;\"></a></p>\n<h2><a id=\"user-content-license\" class=\"anchor\" href=\"#license\" aria-hidden=\"true\"><svg aria-hidden=\"true\" class=\"octicon octicon-link\" height=\"16\" version=\"1.1\" viewBox=\"0 0 16 16\" width=\"16\"><path fill-rule=\"evenodd\" d=\"M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\"></path></svg></a>License</h2>\n<p>Jukeboks is available under the ISC license.</p>\n</article></div>"
+  },
+  {
+    "slug": "jumpfm",
+    "name": "JumpFm",
+    "description": "A file manager with Superpowers ",
+    "website": "http://jumpfm.org",
+    "category": "Developer Tools",
+    "repository": "https://github.com/Gilad-Kutiel-App/jumpfm",
+    "keywords": [
+      "file manager",
+      "developers",
+      "git"
+    ],
+    "screenshots": [
+      {
+        "imageUrl": "https://jumpfm.org/jumpfm.png",
+        "caption": "JumpFm Screenshot",
+        "imageLink": "https://jumpfm.org/"
+      }
+    ],
+    "icon": "jumpfm-icon.png",
+    "icon32": "jumpfm-icon-32.png",
+    "icon64": "jumpfm-icon-64.png",
+    "icon128": "jumpfm-icon-128.png",
+    "date": "2017-09-06",
+    "iconColors": [
+      "#c7e6fc",
+      "#1c98f4",
+      "#a4d4f4",
+      "#a4dcfc",
+      "#84ccfc"
+    ],
+    "latestRelease": false
   },
   {
     "slug": "justmd",
