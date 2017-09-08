@@ -4,7 +4,8 @@
   <div class='container-narrow'>
 
     <h4 class="docs-breadcrumbs">
-      <a href='/docs/'>Docs</a>
+      <a href='/docs/'>Docs</a> / 
+      <a href="/docs/{{doc.category}}">{{doc.categoryFancy}}</a> / {{doc.title}}
     </h4>
   </div>
 </div>
@@ -14,7 +15,6 @@
 
     {{{body}}}
 
-    {% if page.category != 'ignore' %}
     <hr>
     <div class='text-center'>
       <span class="d-inline-block text-left">
@@ -28,7 +28,6 @@
         Want to search all the documentation at once? See all of the <a href='/docs/all'>docs on one page</a>.
       </span>
     </div>
-    {% endif %}
 
   </div>
 </section>

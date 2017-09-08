@@ -1,0 +1,57 @@
+<div class='subtron'>
+  <div class='container-narrow'>
+    <h1><span class="mr-3 mr-lg-4">Electron Documentation</span><span class="docs-version">PUT STABLE VERSION HERE</span></h1>
+    <p class="lead mb-3">
+      See all of the <a href="/docs/all/">docs on one page</a> or check out the <a href="/docs/faq/">FAQ</a>.
+    </p>
+  </div>
+</div>
+
+<section class='page-section'>
+  <div class='container'>
+    <div class="grid">
+      <div class="row">
+
+        <div class="col-ms-12 col-lg-4">
+          <h2 class="docs-heading pb-3 mb-3"><a class="docs-title" href="/docs/docs/"><span class="mega-octicon octicon-book pr-3"></span>Guides</a></h2>
+          <ul class="docs-list">
+            {{#each docs}}
+              {{#if this.isTutorial}}
+                <li>
+                  <a href="{{this.href}}">{{this.title}}</a>
+                </li>
+              {{/if}}
+            {{/each}}
+          </ul>
+        </div>
+
+        <div class="col-ms-12 col-lg-4">
+          <h2 class="docs-heading pb-3 mb-3"><a class="docs-title" href="/docs/api/"><span class="mega-octicon octicon-gear pr-3"></span>API Reference</a></h2>
+            <ul class="docs-list">
+              {{#each docs}}
+                {{#if this.isApiDoc}}
+                  <li>
+                    <a href="{{this.href}}">{{this.title}}</a>
+                  </li>
+                {{/if}}
+              {{/each}}
+            </ul>
+        </div>
+
+        <div class="col-ms-12 col-lg-4">
+          <h2 class="docs-heading pb-3 mb-3"><a class="docs-title" href="/docs/development/"><span class="mega-octicon octicon-tools pr-3"></span>Advanced</a></h2>
+          <ul class="docs-list">
+            {{#each docs}}
+              {{#if this.isDevTutorial}}
+                <li>
+                  <a href="{{this.href}}">{{this.title}}</a>
+                </li>
+              {{/if}}
+            {{/each}}
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
