@@ -61,16 +61,19 @@ describe('electron.atom.io', () => {
     })
   })
 
-  test('/docs/api/app', (done) => {
-    get('/docs/api/app').then($ => {
-      // layout is working
+  test('/docs', (done) => {
+    get('/docs').then($ => {
       $('header').should.have.class('site-header')
+      $('a[href="/docs/tutorial/about"]').should.have.text('About Electron')
+      $('a[href="/docs/api/auto-updater"]').should.have.text('autoUpdater')
+      done()
+    })
+  })
 
-      // localized content
-      // TODO
-
-      // page title
-      // TODO
+  test('Docs Pages', (done) => {
+    get('/docs/api/browser-window').then($ => {
+      $('.docs-breadcrumbs a').should.have.length(2)
+      $('.docs-breadcrumbs a[href="/docs/api"]').should.have.text('API')
       done()
     })
   })

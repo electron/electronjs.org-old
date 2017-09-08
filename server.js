@@ -37,16 +37,6 @@ app.use(jexodus.middleware)
 app.use(express.static(__dirname))
 app.use(browsersync)
 
-app.get('/docs/api/:slug', (req, res) => {
-  const locale = 'fr-FR'
-  const api = i18n.api.get(req.params.slug, locale)
-  const context = {
-    api: api,
-    layout: 'docs'
-  }
-  res.render('api', context)
-})
-
 app.get('/apps', (req, res) => {
   let appList = electronApps
   if (req.query.category) {
@@ -103,6 +93,51 @@ app.get('/contact', (req, res) => {
     pageDetails: Object.assign({}, localized.pages[req.path])
   }
   res.render('contact', context)
+})
+
+app.get('/docs', (req, res) => {
+  const locale = 'en'
+
+  if (!i18n[locale]) {
+    return res.status(404).render('404', {message: `Invalid locale: ${locale}`})
+  }
+
+  const docs = Object.keys(i18n[locale])
+    .map(href => i18n[locale][href])
+    .sort((a, b) => (a.slug).localeCompare((b.slug)))
+
+  const context = {
+    pageDetails: Object.assign({}, localized.pages[req.path]),
+    docs: docs
+  }
+  res.render('docs/index', context)
+})
+
+app.get('/docs/*', (req, res) => {
+  const locale = 'en'
+  const href = req.path
+
+  if (!i18n[locale]) {
+    return res.status(404).render('404', {message: `Invalid locale: ${locale}`})
+  }
+
+  const doc = i18n[locale][href]
+
+  if (!doc) {
+    return res.status(404).render('404', {message: `Document not found`})
+  }
+
+  const context = {
+    pageDetails: Object.assign({}, localized.pages[req.path]),
+    doc: doc,
+    title: doc.title,
+    layout: 'docs'
+  }
+  res.render('docs/show', context)
+})
+
+app.use(function (req, res, next) {
+  res.status(404).render('404')
 })
 
 function startServer () {
