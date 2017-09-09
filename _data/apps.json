@@ -12279,6 +12279,45 @@
     "latestRelease": false
   },
   {
+    "slug": "the-free-chess-club",
+    "name": "The Free Chess Club",
+    "description": "Play Online Chess on the Free Internet Chess Server!",
+    "website": "https://www.freechess.club",
+    "category": "Games",
+    "repository": "https://github.com/freechessclub",
+    "keywords": [
+      "games",
+      "chess",
+      "fics",
+      "ics"
+    ],
+    "screenshots": [
+      {
+        "imageUrl": "https://www.freechess.club/assets/img/screenshot1.png",
+        "caption": "Game Play",
+        "imageLink": "https://www.freechess.club/play"
+      },
+      {
+        "imageUrl": "https://www.freechess.club/assets/img/screenshot2.png",
+        "caption": "The Free Chess Club",
+        "imageLink": "https://www.freechess.club"
+      }
+    ],
+    "icon": "the-free-chess-club-icon.png",
+    "icon32": "the-free-chess-club-icon-32.png",
+    "icon64": "the-free-chess-club-icon-64.png",
+    "icon128": "the-free-chess-club-icon-128.png",
+    "date": "2017-09-09",
+    "iconColors": [
+      "#316084",
+      "#b7d6d6",
+      "#8da4a7",
+      "#041a41",
+      "#7dacc4"
+    ],
+    "latestRelease": false
+  },
+  {
     "slug": "the-poker-timer",
     "name": "The Poker Timer",
     "description": "Best tournament clock",
