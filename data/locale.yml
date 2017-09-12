@@ -71,7 +71,7 @@ quick_start:
   clone: Clone the Quick Start repository
   go_into_repo: Go into the repository
   install_deps: Install the dependencies and run
-  dive_deeper: Or dive deeper and read the <a href='{{ site.baseurl }}/docs/'>documentation</a>.
+  dive_deeper: Or dive deeper and read the <a href='/docs'>documentation</a>.
 
 need_help:
   title: Need Help?

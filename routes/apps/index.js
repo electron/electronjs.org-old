@@ -1,4 +1,4 @@
-const electronApps = require('../data/apps.json')
+const electronApps = require('../../data/apps.json')
 
 module.exports = (req, res) => {
   let appList = electronApps
