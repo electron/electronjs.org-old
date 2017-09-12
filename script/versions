@@ -5,8 +5,6 @@
 
 const fs = require('fs')
 const path = require('path')
-const fetchDocs = require('electron-docs')
-const Doc = require('../lib/doc')
 const got = require('got')
 const semver = require('semver')
 const versionsUrl = 'https://atom.io/download/electron/index.json'
@@ -17,7 +15,7 @@ got(versionsUrl, {json: true})
   .then(response => {
     const versions = response.body
       .sort((a, b) => semver.compare(b.version, a.version))
-    const filepath = path.join(__dirname, '../_data/versions.json')
+    const filepath = path.join(__dirname, '../data/versions.json')
     console.log(`Saving version data to ${filepath}`)
     fs.writeFileSync(filepath, JSON.stringify(versions, null, 2))
   })
