@@ -5,11 +5,11 @@ module.exports = (req, res) => {
   const locale = 'en'
   const href = req.path
 
-  if (!i18n[locale]) {
+  if (!i18n.docs[locale]) {
     return res.status(404).render('404', {message: `Invalid locale: ${locale}`})
   }
 
-  const doc = i18n[locale][href]
+  const doc = i18n.docs[locale][href]
 
   if (!doc) {
     return res.status(404).render('404', {message: `Document not found`})

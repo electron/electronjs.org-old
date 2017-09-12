@@ -1,4 +1,4 @@
-const electronApps = require('../data/apps.json')
+const electronApps = require('../../data/apps.json')
 
 module.exports = (req, res) => {
   const app = electronApps.apps.find(app => app.slug === req.params.slug)
