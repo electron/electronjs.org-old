@@ -20,7 +20,7 @@
     "build-userland": "script/userland",
     "build-apps": "script/apps",
     "release": "script/release 2>&1 | script/notify",
-    "dev": "nodemon -e js,scss server.js",
+    "dev": "nodemon -e js,scss,yml server.js",
     "prepack": "check-for-leaks",
     "prepush": "check-for-leaks"
   },
