@@ -1,19 +1,9 @@
-// const localized = require('require-yml')('../data/locale.yml')
 const i18n = require('electron-i18n')
 
 module.exports = (req, res) => {
-  const locale = 'en'
-  const href = req.path
+  const doc = i18n.docs[req.language][req.path]
 
-  if (!i18n.docs[locale]) {
-    return res.status(404).render('404', {message: `Invalid locale: ${locale}`})
-  }
-
-  const doc = i18n.docs[locale][href]
-
-  if (!doc) {
-    return res.status(404).render('404', {message: `Document not found`})
-  }
+  if (!doc) return res.status(404).render('404')
 
   const context = {
     // pageDetails: Object.assign({}, localized.pages[req.path]),

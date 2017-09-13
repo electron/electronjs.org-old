@@ -5,7 +5,7 @@
   <div class="container">
     {{> hero}}
     <p class='jumbotron-lead'>
-      {{{locale.tagline}}}
+      {{{localized.tagline}}}
     </p>
   </div>
 </div>
@@ -23,13 +23,13 @@
 
 <section class="page-section page-section-spacious" id='electron'>
   <div class="container-narrow">
-    <h1 class="text-center-sm">{{{locale.electron_is_easy.title}}}</h1>
-    <p class="lead text-center-sm">{{{locale.electron_is_easy.description}}}</p>
+    <h1 class="text-center-sm">{{{localized.electron_is_easy.title}}}</h1>
+    <p class="lead text-center-sm">{{{localized.electron_is_easy.description}}}</p>
 
     <p class="text-center-sm mt-4">
       <a class="btn btn-lg btn-outline-themed" href="https://youtu.be/8YP_nOCO-4Q">
         <span class="octicon octicon-eye mr-1"></span>
-        <span class="label">{{{locale.electron_is_easy.video_link}}}</span>
+        <span class="label">{{{localized.electron_is_easy.video_link}}}</span>
       </a>
     </p>
 
@@ -38,54 +38,54 @@
     <div class="row text-center text-small mt-6">
       <div class="col-xs-12 col-sm-4">
         <img class="home-illu" role="presentation" src="/images/web-tech.svg" aria-hidden="true">
-        <h3 class="mb-2 mt-0">{{{locale.web_technologies.title}}}</h3>
-        <p>{{{locale.web_technologies.description}}}</p>
+        <h3 class="mb-2 mt-0">{{{localized.web_technologies.title}}}</h3>
+        <p>{{{localized.web_technologies.description}}}</p>
       </div>
       <div class="col-xs-12 col-sm-4">
         <img class="home-illu" role="presentation" src="/images/open-source.svg" aria-hidden="true">
-        <h3 class="mb-2 mt-0">{{{locale.open_source.title}}}</h3>
-        <p>{{{locale.open_source.description}}}</p>
+        <h3 class="mb-2 mt-0">{{{localized.open_source.title}}}</h3>
+        <p>{{{localized.open_source.description}}}</p>
       </div>
       <div class="col-xs-12 col-sm-4">
         <img class="home-illu" role="presentation" src="/images/cross-platform.svg" aria-hidden="true">
-        <h3 class="mb-2 mt-0">{{{locale.cross_platform.title}}}</h3>
-        <p>{{{locale.cross_platform.description}}}</p>
+        <h3 class="mb-2 mt-0">{{{localized.cross_platform.title}}}</h3>
+        <p>{{{localized.cross_platform.description}}}</p>
       </div>
     </div>
 
     <div class="row text-center mt-6 mb-4">
-      <h2>{{{locale.hard_parts_made_easy}}}</h2>
+      <h2>{{{localized.hard_parts_made_easy}}}</h2>
     </div>
 
     <div class="row text-center text-small mt-3">
       <div class='col-xs-12 col-sm-4 col-md-2 offset-md-1 mb-xs-4 mb-md-0 hero-feature'>
         <a class="hero-link" href="/docs/api/auto-updater/">
           <span class="octicon hero-octicon octicon-squirrel" aria-hidden="true"></span>
-          {{{locale.benefits.automatic_updates}}}
+          {{{localized.benefits.automatic_updates}}}
         </a>
       </div>
       <div class='col-xs-12 col-sm-4 col-md-2 mb-xs-4 mb-md-0 hero-feature'>
         <a class="hero-link" href="/docs/api/menu/">
           <span class="octicon hero-octicon octicon-device-desktop" aria-hidden="true"></span>
-          {{{locale.benefits.native_menus_and_notifications}}}
+          {{{localized.benefits.native_menus_and_notifications}}}
         </a>
       </div>
       <div class='col-xs-12 col-sm-4 col-md-2 mb-xs-4 mb-md-0 hero-feature'>
         <a class="hero-link" href="/docs/api/crash-reporter/">
           <span class="octicon hero-octicon octicon-bug" style="padding-left:2px" aria-hidden="true"></span>
-          {{{locale.benefits.crash_reporting}}}
+          {{{localized.benefits.crash_reporting}}}
         </a>
       </div>
       <div class='col-xs-12 col-sm-4 offset-sm-2 col-md-2 offset-md-0 mb-xs-4 mb-md-0 hero-feature'>
         <a class="hero-link" href="/docs/api/content-tracing/">
           <span class="octicon hero-octicon octicon-tools" aria-hidden="true"></span>
-          {{{locale.benefits.debugging_and_profiling}}}
+          {{{localized.benefits.debugging_and_profiling}}}
         </a>
       </div>
       <div class='col-xs-12 col-sm-4 col-md-2 mb-xs-4 mb-md-0 hero-feature'>
         <a class="hero-link" href="/docs/api/auto-updater/#windows">
           <span class="octicon hero-octicon octicon-gift" style="padding-right:2px" aria-hidden="true"></span>
-          {{{locale.benefits.windows_installers}}}
+          {{{localized.benefits.windows_installers}}}
         </a>
       </div>
     </div>
@@ -96,9 +96,9 @@
 
 <section class='page-section page-section-spacious bg-shade' id='get-started'>
   <div class='container-narrow text-center'>
-    <h1>{{{locale.get_started.title}}}</h1>
+    <h1>{{{localized.get_started.title}}}</h1>
     <p class="lead">
-      {{{locale.get_started.description}}}
+      {{{localized.get_started.description}}}
     </p>
 
     <div class='row mt-8'>
@@ -110,15 +110,15 @@
         </a>
       </div>
       <div class='col-xs-12 col-md-7 text-left'>
-        <h3 class="mt-1 mb-3">{{{locale.explore.title}}}</h3>
-        <p>{{{locale.explore.description}}}</p>
+        <h3 class="mt-1 mb-3">{{{localized.explore.title}}}</h3>
+        <p>{{{localized.explore.description}}}</p>
         <p>
           <a id="download-latest-release" class="btn btn-lg btn-outline-themed" href="https://github.com/electron/electron-api-demos/releases">
             <span class="octicon octicon-desktop-download mr-1"></span>
-            <span class="label">{{{locale.download_from_github}}}</span>
+            <span class="label">{{{localized.download_from_github}}}</span>
           </a>
           <p id="download-alternatives" class="text-sm" style="display:none;">
-            {{{locale.view_all_releases_on_github}}}
+            {{{localized.view_all_releases_on_github}}}
           </p>
         </p>
       </div>
@@ -127,37 +127,37 @@
     <hr>
 
   <h3 class="mb-3">
-    {{{locale.quick_start.title}}}
+    {{{localized.quick_start.title}}}
   </h3>
-  <p>{{{locale.quick_start.description}}}</p>
+  <p>{{{localized.quick_start.description}}}</p>
 
   <figure class="highlight highlight-dark text-left my-4">
-<pre><code><span class="c1"># {{{locale.quick_start.clone}}}</span>
+<pre><code><span class="c1"># {{{localized.quick_start.clone}}}</span>
 $ git clone https://github.com/electron/electron-quick-start
 
-<span class="c1"># {{{locale.quick_start.go_into_repo}}}</span>
+<span class="c1"># {{{localized.quick_start.go_into_repo}}}</span>
 $ cd electron-quick-start
 
-<span class="c1"># {{{locale.quick_start.install_deps}}}</span>
+<span class="c1"># {{{localized.quick_start.install_deps}}}</span>
 $ npm install &amp;&amp; npm start</code></pre>
     </figure>
 
     <h3>
-      {{{locale.quick_start.dive_deeper}}}
+      {{{localized.quick_start.dive_deeper}}}
     </h3>
 
 
-    <h3 class="pt-4">{{{locale.need_help.title}}}</h3>
-    <p>{{{locale.need_help.description}}}</p>
+    <h3 class="pt-4">{{{localized.need_help.title}}}</h3>
+    <p>{{{localized.need_help.description}}}</p>
 
   </div>
 </section>
 
 <section class='page-section page-section-spacious' id='apps'>
   <div class="container-narrow text-center">
-    <h1> {{{locale.apps.title}}}</h1>
+    <h1> {{{localized.apps.title}}}</h1>
     <p class="lead">
-      {{{locale.apps.description}}}
+      {{{localized.apps.description}}}
     </p>
 
     <hr>
@@ -171,9 +171,9 @@ $ npm install &amp;&amp; npm start</code></pre>
         {% endfor %}
       </div>
       <p class="mt-6">
-        <a href='/apps'>{{{locale.apps.view_more}}}</a>
-          {{{locale.or}}}
-          <a href="https://github.com/electron/electron.atom.io/blob/gh-pages/CONTRIBUTING.md#adding-an-app-or-project-to-the-site">{{{locale.apps.submit_your_own}}}</a>.
+        <a href='/apps'>{{{localized.apps.view_more}}}</a>
+          {{{localized.or}}}
+          <a href="https://github.com/electron/electron.atom.io/blob/gh-pages/CONTRIBUTING.md#adding-an-app-or-project-to-the-site">{{{localized.apps.submit_your_own}}}</a>.
       </p>
     </div>
   </div>

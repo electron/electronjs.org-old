@@ -9,6 +9,10 @@
       <a class="footer-nav-item" href="/releases/">Releases</a>
       <a class="footer-nav-item" href="https://discuss.atom.io/c/electron">Discuss</a>
       <a class="footer-nav-item" href="https://github.com/electron/electron">Repository</a>
+
+      {{#each locales}}
+        <a class="footer-nav-item" href="/languages/{{this}}">{{this}}</a>
+      {{/each}}
     </nav>
     <span class="footer-love">
       <a href='https://github.com' class="no-underline"><span class='octicon octicon-code'></span> with <span class='octicon octicon-heart'></span> by <span class='octicon octicon-logo-github'></span></a>

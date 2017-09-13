@@ -1,30 +1,19 @@
 const electronApps = require('../../data/apps.json')
 
 module.exports = (req, res) => {
-  let appList = electronApps
+  let context = Object.assign(req.context, electronApps)
+
   if (req.query.category) {
-    let filteredApps = electronApps.apps.filter((app) => {
-      return (app.categorySlug === req.query.category)
-    })
-    appList = {
-      apps: filteredApps,
-      categories: electronApps.categories,
-      currentCategory: req.query.category
-    }
+    context.apps = electronApps.apps.filter((app) => app.categorySlug === req.query.category)
+    context.categories = electronApps.categories
+    context.currentCategory = req.query.category
   }
-  electronApps.categories.forEach((category) => {
-    if (category.slug === req.query.category) {
-      category.className = 'selected'
-    } else {
-      category.className = ''
-    }
+
+  context.categories.forEach((category) => {
+    category.className = (category.slug === req.query.category) ? 'selected' : ''
   })
 
-  appList.appLength = electronApps.apps.length
-  appList.pageDetails = {
-    title: 'Electron | Apps',
-    url: req.url,
-    description: 'Apps Built on Electron'
-  }
-  res.render('apps', appList)
+  context.appCount = context.apps.length
+
+  res.render('apps', context)
 }
