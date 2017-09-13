@@ -1,14 +1,15 @@
-// const i18n = require('electron-i18n')
-const requireYml = require('require-yml')
-const path = require('path')
-const locale = requireYml(path.join(__dirname, '../data/locale.yml'))
-// TODO use an alternative to require-yml that behave like require (process.cwd vs __dirname)
+const i18n = require('electron-i18n')
+// const pickLanguage = require('accept-language-parser').pick
 
 module.exports = (req, res) => {
   const context = {
     vendoredVersions: require('../lib/vendored-versions'),
-    locale: locale
+    locales: i18n.locales,
+    currentLocale: req.language,
+    localized: i18n.website[req.language]
   }
+
+  console.log(req.foo)
 
   res.render('home', context)
 }

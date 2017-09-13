@@ -91,8 +91,9 @@ apps:
 or: or
 
 pages:
+  '/apps':
+    title: Electron Apps
+    description: Apps Built on Electron
   '/contact':
     title: Contact
-    permalink: /contact/
-    layout: default
     description: Get in touch with the Electron team on Twitter, Slack, GitHub, or via email.

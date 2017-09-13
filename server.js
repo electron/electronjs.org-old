@@ -4,9 +4,12 @@ const express = require('express')
 const hbs = require('express-hbs')
 const slashes = require('connect-slashes')
 const browsersync = require('./lib/browsersync')()
+const requestLanguage = require('express-request-language')
+const cookieParser = require('cookie-parser')
 const routes = require('./routes')
 const sass = require('./lib/sass')()
 const helmet = require('helmet')
+const contextBuilder = require('./lib/context-builder')
 const port = Number(process.env.PORT) || argv.p || argv.port || 5000
 const app = express()
 const jexodus = require('./lib/jexodus')(__dirname).on('ready', startServer)
@@ -22,13 +25,22 @@ app.engine('html', hbs.express4({
     return exhbs.handlebars.compile(source, options)
   }
 }))
-
 // Middleware
 app.set('view engine', 'html')
 app.set('views', path.join(__dirname, '/views'))
 app.use(helmet())
 app.use(sass)
 app.use(slashes(false))
+app.use(cookieParser())
+app.use(requestLanguage({
+  languages: Object.keys(i18n.locales),
+  cookie: {
+    name: 'language',
+    options: { maxAge: 24*60*60*1000 },
+    url: '/languages/{language}'
+  },
+}))
+app.use(contextBuilder)
 app.use(jexodus.middleware)
 app.use(express.static(__dirname))
 app.use(browsersync)
