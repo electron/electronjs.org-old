@@ -2489,29 +2489,6 @@
     "readme": "<div class=\"announce instapaper_body md\" data-path=\"README.md\" id=\"readme\"><article class=\"markdown-body entry-content\" itemprop=\"text\"><h1><a id=\"user-content-cumulus\" class=\"anchor\" href=\"#cumulus\" aria-hidden=\"true\"><svg aria-hidden=\"true\" class=\"octicon octicon-link\" height=\"16\" version=\"1.1\" viewBox=\"0 0 16 16\" width=\"16\"><path fill-rule=\"evenodd\" d=\"M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\"></path></svg></a>Cumulus</h1>\n<p>A SoundCloud player that lives in your menubar.</p>\n<p><a href=\"https://github.com/gillesdemey/Cumulus/releases/latest\"><img src=\"https://camo.githubusercontent.com/299fd6651a7d4fa851c29763d8124744f65fe81d/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f646f776e6c6f61642d6c61746573742d626c75652e737667\" alt=\"GitHub release\" data-canonical-src=\"https://img.shields.io/badge/download-latest-blue.svg\" style=\"max-width:100%;\"></a></p>\n<p><a href=\"assets/cumulus_app.png\" target=\"_blank\"><img height=\"600\" width=\"auto\" src=\"assets/cumulus_app.png\" style=\"max-width:100%;\"></a></p>\n<h1><a id=\"user-content-installing\" class=\"anchor\" href=\"#installing\" aria-hidden=\"true\"><svg aria-hidden=\"true\" class=\"octicon octicon-link\" height=\"16\" version=\"1.1\" viewBox=\"0 0 16 16\" width=\"16\"><path fill-rule=\"evenodd\" d=\"M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\"></path></svg></a>Installing</h1>\n<p>Download the <a href=\"https://github.com/gillesdemey/Cumulus/releases/latest\">latest release for OSX</a>.</p>\n<p><em>IntelliJ users be warned: This app hijacks the ⌘+Alt+L shortcurt used by IntelliJ to reformat code. See <a href=\"https://github.com/gillesdemey/Cumulus/issues/40#issuecomment-261022368\">#40</a> and <a href=\"https://github.com/gillesdemey/Cumulus/issues/77\">#77</a>.</em></p>\n<h1><a id=\"user-content-developing\" class=\"anchor\" href=\"#developing\" aria-hidden=\"true\"><svg aria-hidden=\"true\" class=\"octicon octicon-link\" height=\"16\" version=\"1.1\" viewBox=\"0 0 16 16\" width=\"16\"><path fill-rule=\"evenodd\" d=\"M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\"></path></svg></a>Developing</h1>\n<h2><a id=\"user-content-install-dependencies\" class=\"anchor\" href=\"#install-dependencies\" aria-hidden=\"true\"><svg aria-hidden=\"true\" class=\"octicon octicon-link\" height=\"16\" version=\"1.1\" viewBox=\"0 0 16 16\" width=\"16\"><path fill-rule=\"evenodd\" d=\"M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\"></path></svg></a>Install dependencies</h2>\n<p><code>npm install</code></p>\n<p><code>npm install -g electron</code></p>\n<h2><a id=\"user-content-compile-the-application\" class=\"anchor\" href=\"#compile-the-application\" aria-hidden=\"true\"><svg aria-hidden=\"true\" class=\"octicon octicon-link\" height=\"16\" version=\"1.1\" viewBox=\"0 0 16 16\" width=\"16\"><path fill-rule=\"evenodd\" d=\"M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\"></path></svg></a>Compile the application</h2>\n<p><code>grunt</code> or <code>grunt build</code></p>\n<h2><a id=\"user-content-run-the-application-with-the-chrome-devtools\" class=\"anchor\" href=\"#run-the-application-with-the-chrome-devtools\" aria-hidden=\"true\"><svg aria-hidden=\"true\" class=\"octicon octicon-link\" height=\"16\" version=\"1.1\" viewBox=\"0 0 16 16\" width=\"16\"><path fill-rule=\"evenodd\" d=\"M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\"></path></svg></a>Run the application with the <a href=\"https://developer.chrome.com/devtools\">Chrome DevTools</a></h2>\n<p><code>NODE_ENV=development electron .</code></p>\n<h3><a id=\"user-content-or-in-windows\" class=\"anchor\" href=\"#or-in-windows\" aria-hidden=\"true\"><svg aria-hidden=\"true\" class=\"octicon octicon-link\" height=\"16\" version=\"1.1\" viewBox=\"0 0 16 16\" width=\"16\"><path fill-rule=\"evenodd\" d=\"M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\"></path></svg></a>Or in Windows:</h3>\n<ul>\n<li>PowerShell: <code>$env:NODE_ENV=\"development\"; electron .</code></li>\n<li>CMD: <code>set \"NODE_ENV=development\" &amp; electron .</code></li>\n</ul>\n</article></div>"
   },
   {
-    "slug": "curse",
-    "name": "Curse",
-    "description": "Fast and free communication for gamers",
-    "website": "https://www.curse.com",
-    "keywords": [
-      "games"
-    ],
-    "category": "Games",
-    "icon": "curse-icon.png",
-    "icon32": "curse-icon-32.png",
-    "icon64": "curse-icon-64.png",
-    "icon128": "curse-icon-128.png",
-    "date": "2016-04-01",
-    "iconColors": [
-      "#363636",
-      "#f48b24",
-      "#835632",
-      "#9c842c",
-      "#645c34"
-    ],
-    "latestRelease": false
-  },
-  {
     "slug": "cycligent-git-tool",
     "name": "Cycligent Git Tool",
     "description": "Straightforward, graphic GUI for your Git projects.",
@@ -13119,6 +13096,29 @@
       "#0e2854",
       "#949498",
       "#4c4c4c"
+    ],
+    "latestRelease": false
+  },
+  {
+    "slug": "twitch",
+    "name": "Twitch",
+    "description": "Fast and free communication for gamers",
+    "website": "https://app.twitch.tv",
+    "keywords": [
+      "games"
+    ],
+    "category": "Games",
+    "icon": "twitch-icon.png",
+    "icon32": "twitch-icon-32.png",
+    "icon64": "twitch-icon-64.png",
+    "icon128": "twitch-icon-128.png",
+    "date": "2017-09-13",
+    "iconColors": [
+      "#6444a3",
+      "#f7f6f8",
+      "#9c8bc4",
+      "#ac9cc6",
+      "#39255a"
     ],
     "latestRelease": false
   },
