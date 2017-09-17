@@ -48,6 +48,7 @@
     "href-type": "^1.0.1",
     "lil-env-thing": "^1.0.0",
     "liquid-node": "^2.6.1",
+    "lobars": "^1.2.0",
     "lodash": "^4.17.4",
     "make-promises-safe": "^1.1.0",
     "markdown-it": "^6.0.1",

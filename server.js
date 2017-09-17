@@ -2,6 +2,7 @@ const argv = require('minimist')(process.argv.slice(2))
 const path = require('path')
 const i18n = require('./lib/i18n')
 const express = require('express')
+const lobars = require('lobars')
 
 // Middleware
 const hbs = require('express-hbs')
@@ -19,6 +20,7 @@ const app = express()
 const jexodus = require('./lib/jexodus')(__dirname).on('ready', startServer)
 process.env.HOST = process.env.HOST || `http://localhost:${port}`
 
+hbs.registerHelper(lobars)
 app.engine('html', hbs.express4({
   defaultLayout: path.join(__dirname, '/views/layouts/main.html'),
   extname: '.html',

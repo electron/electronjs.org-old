@@ -44,7 +44,13 @@
 <div class='subtron'>
   <div class='container-narrow'>
     <h1>Apps Built on Electron</h1>
-    <p>We currently have {{appLength}} apps in our registry.</p>
+    <p>There are {{appCount}} apps       
+      {{#if currentCategory}}
+        in {{currentCategory}}.
+      {{else}}
+        in total.
+      {{/if}}
+    </p>
   </div>
 </div>
 <section class='page-section'>
@@ -57,7 +63,7 @@
       {{#if currentCategory}}
         <li>
           <a href="/apps" class="filter-item" aria-current="page" id="category-{{this.slug}}">
-            <span class="count" title="results">{{appLength}}</span>
+            <span class="count" title="results">{{appCount}}</span>
             All Categories
           </a>
         </li>

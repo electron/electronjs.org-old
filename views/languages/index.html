@@ -1,7 +1,17 @@
 {{#each locales}}
   <a href="/languages/{{this.locale}}" id="{{this.locale}}">
     <h2>
+      {{#eq this.languageName this.languageNativeName}}
         {{this.languageNativeName}}
+      {{else}}
+        {{this.languageNativeName}} ({{this.languageName}})
+      {{/eq}}
     </h2>
   </a>
+
+  {{#eq this.locale 'en-US'}}
+  {{else}}
+    <p>{{this.stats.translated_progress}}% Translated</p>
+  {{/eq}}
+
 {{/each}}
