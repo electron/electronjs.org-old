@@ -18,5 +18,5 @@ module.exports = (req, res) => {
     ? app.screenshots[0].imageUrl
     : `${process.env.HOST}/images/apps/${app.icon64}`
 
-  res.render('app', context)
+  res.render('apps/show', context)
 }

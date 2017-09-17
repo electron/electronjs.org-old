@@ -2,17 +2,12 @@
   <div class="container">
     <nav class="footer-nav">
       <a class="footer-nav-item" href="/">Electron</a>
-      <a class="footer-nav-item" href="/docs/">Docs</a>
-      <a class="footer-nav-item" href="/blog/">Blog</a>
-      <a class="footer-nav-item" href="/community/">Community</a>
-      <a class="footer-nav-item" href="/apps/">Apps</a>
-      <a class="footer-nav-item" href="/releases/">Releases</a>
-      <a class="footer-nav-item" href="https://discuss.atom.io/c/electron">Discuss</a>
-      <a class="footer-nav-item" href="https://github.com/electron/electron">Repository</a>
-
-      {{#each locales}}
-        <a class="footer-nav-item" href="/languages/{{this}}">{{this}}</a>
-      {{/each}}
+      <a class="footer-nav-item" href="/docs">{{ localized.nav.docs }}</a>
+      <a class="footer-nav-item" href="/blog">{{ localized.nav.blog }}</a>
+      <a class="footer-nav-item" href="/community">{{ localized.nav.community }}</a>
+      <a class="footer-nav-item" href="/apps">{{ localized.nav.apps }}</a>
+      <a class="footer-nav-item" href="/releases">{{ localized.nav.releases }}</a>
+      <a class="footer-nav-item" href="/contact">{{ localized.nav.contact }}</a>
     </nav>
     <span class="footer-love">
       <a href='https://github.com' class="no-underline"><span class='octicon octicon-code'></span> with <span class='octicon octicon-heart'></span> by <span class='octicon octicon-logo-github'></span></a>

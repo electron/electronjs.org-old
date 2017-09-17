@@ -164,11 +164,11 @@ $ npm install &amp;&amp; npm start</code></pre>
 
     <div>
       <div class="mb-4">
-        {% for app in site.data.apps.apps %}
-          {% if site.data.featured_apps contains app.slug %}
-            {% include featured_app.html %}
-          {% endif %}
-        {% endfor %}
+        {{#each apps}}
+          {{#if this.featured}}
+            {{> featured_app}}
+          {{/if}}
+        {{/each}}
       </div>
       <p class="mt-6">
         <a href='/apps'>{{{localized.apps.view_more}}}</a>

@@ -1,9 +1,6 @@
-const apps = require('../lib/apps')
-
 module.exports = (req, res) => {
   const context = Object.assign(req.context, {
-    apps: apps
+    layout: 'docs'
   })
-
-  res.render('home', context)
+  res.render('languages/index', req.context)
 }
