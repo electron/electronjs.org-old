@@ -1,11 +1,11 @@
-const electronApps = require('../../data/apps.json')
+const {apps, categories} = require('../../data/apps.json')
 
 module.exports = (req, res) => {
-  let context = Object.assign(req.context, electronApps)
+  let context = Object.assign(req.context, apps)
 
   if (req.query.category) {
-    context.apps = electronApps.apps.filter((app) => app.categorySlug === req.query.category)
-    context.categories = electronApps.categories
+    context.apps = apps.apps.filter((app) => app.categorySlug === req.query.category)
+    context.categories = apps.categories
     context.currentCategory = req.query.category
   }
 
