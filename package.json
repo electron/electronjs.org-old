@@ -18,7 +18,6 @@
     "build-docs": "script/docs",
     "build-awesome": "script/awesome",
     "build-userland": "script/userland",
-    "build-apps": "script/apps",
     "release": "script/release 2>&1 | script/notify",
     "dev": "nodemon -e js,scss,yml server.js",
     "prepack": "check-for-leaks",

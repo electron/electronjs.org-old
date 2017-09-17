@@ -1,4 +1,0 @@
-#!/bin/sh
-
-node script/apps.js
-cp node_modules/electron-apps/apps/**/*.png images/apps
