@@ -87,7 +87,6 @@ This site contains data gathered from various sources, and there's a build scrip
 - `npm run build-docs` fetches version list from S3, fetches docs for the highest release version number, fixes their links, and adds YML frontmatter for Jekyll to use.
 - `npm run build-awesome` copies [awesome-electron](https://github.com/sindresorhus/awesome-electron/blob/npm-module/contributing.md#building-and-publishing-the-npm-package) data into the `_data` directory
 - `npm run build-userland` copies [electron-userland-reports](https://github.com/electron/electron-userland-reports) data into the `_data` directory
-- `npm run build-apps` copies [electron-apps](https://github.com/electron/electron-apps) data into the `_data` directory
 
 To run all of the build scripts serially:
 

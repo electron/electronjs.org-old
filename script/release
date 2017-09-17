@@ -45,12 +45,6 @@ if [[ $(git status --porcelain) != "" ]]; then
   git commit -avm "update awesome"
 fi
 
-npm run build-apps
-if [[ $(git status --porcelain) != "" ]]; then
-  git add .
-  git commit -avm "update apps"
-fi
-
 # test it all before pushing
 npm test
 git push origin gh-pages
