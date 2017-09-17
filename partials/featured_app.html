@@ -1,10 +1,8 @@
-{% unless app.disabled %}
-<a href='{{ app.website | default: app.repository }}' title='{{ app.name }} - {{ app.description | escape }}' class='featured-app'>
+<a href='/apps/{{this.slug}}' title='{{this.name}}' class='featured-app'>
   <div class='featured-app-logo-wrapper'>
-    <img class='featured-app-logo' src='{{ site.baseurl }}/images/apps/{{ app.icon }}' alt='{{ app.name }}'>
+    <img class='featured-app-logo' src='/node_modules/electron-apps/apps/{{this.slug}}/{{this.icon}}' alt='{{this.name}}'>
   </div>
-  <div class='featured-app-name'>{{ app.name }}</div>
-  <div class='featured-app-description' style='display:none;'>{{ app.description }}</div>
-  <div class='featured-app-keywords' style='display:none;'>{{ app.keywords }}</div>
+  <div class='featured-app-name'>{{this.name}}</div>
+  <div class='featured-app-description' style='display:none;'>{{this.description}}</div>
+  <div class='featured-app-keywords' style='display:none;'>{{this.keywords}}</div>
 </a>
-{% endunless %}
