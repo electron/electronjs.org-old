@@ -1,19 +1,22 @@
-const electronApps = require('../../data/apps.json')
+const apps = require('electron-apps')
 
 module.exports = (req, res) => {
-  const app = electronApps.apps.find(app => app.slug === req.params.slug)
-  const context = {
+  const app = apps.find(app => app.slug === req.params.slug)
+
+  if (!app) return res.status(404).render('404')
+
+  const context = Object.assign(req.context, {
     app: app,
     pageDetails: {
-      title: `Electron | Apps | ${app.name}`,
+      title: `${app.name} | Apps | Electron`,
       url: req.url,
       description: app.description
     }
-  }
-  if (app.screenshots && app.screenshots.length > 0) {
-    context.pageDetails.image = app.screenshots[0].imageUrl
-  } else {
-    context.pageDetails.image = `${process.env.HOST}/images/apps/${app.icon64}`
-  }
+  })
+
+  context.pageDetails.image = (app.screenshots && app.screenshots.length)
+    ? app.screenshots[0].imageUrl
+    : `${process.env.HOST}/images/apps/${app.icon64}`
+
   res.render('app', context)
 }
