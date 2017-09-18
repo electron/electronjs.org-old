@@ -1,7 +1,0 @@
-#!/usr/bin/env node
-
-const fs = require('fs')
-const path = require('path')
-const awesomeData = JSON.stringify(require('awesome-electron'), null, 2)
-const awesomeFile = path.join(process.cwd(), '_data', 'awesome_electron.json')
-fs.writeFileSync(awesomeFile, awesomeData)

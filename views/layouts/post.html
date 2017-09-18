@@ -1,0 +1,21 @@
+<section class='page-section blog-post strong-headers'>
+  <div class='container-narrow'>
+    <h1>{{pageDetails.title}}</h1>
+
+    <div class="who-when mt-1 mb-4">
+      <span class="octicon octicon-calendar pr-2"></span><time>{{pageDetails.date}}</time>
+      <a href="https://github.com/{{page.author}}" class="author-link ml-3"><img src="https://github.com/{{page.author}}.png?size=36" alt="{{page.author}}" class="avatar mr-2">{{page.author}}</a>
+      <a href="{{site.baseurl}}/feed.xml" class="author-link ml-3">
+        <span class="octicon octicon-rss mr-1"></span>
+        <span class="label">RSS Feed</span>
+      </a>
+    </div>
+
+    {{content}}
+
+    <div class="bg-shade p-4 rounded-1 mt-6 mt-lg-8">
+      <p>Have feedback on this post? Let <a href="https://twitter.com/electronjs">@electronjs</a> know on Twitter.</p>
+      <p>Need help or found a bug? <a href="/contact">Contact us</a>.</p>
+    </div>
+  </div>
+</section>

@@ -47,7 +47,6 @@ app.use(requestLanguage({
   },
 }))
 app.use(contextBuilder)
-app.use(jexodus.middleware)
 app.use(express.static(__dirname))
 app.use(browsersync)
 
