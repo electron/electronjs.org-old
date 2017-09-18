@@ -33,5 +33,5 @@ request(options, (error, response, body) => {
     })
     .sort((a, b) => semver.compare(b.version, a.version))
 
-  fs.writeFileSync('_data/releases.json', JSON.stringify(releases, null, 2))
+  fs.writeFileSync('data/releases.json', JSON.stringify(releases, null, 2))
 })

@@ -44,67 +44,33 @@ A few guidelines to keep in mind when publishing a blog post:
 
 ## How the Site is Built
 
-### Metadata
+## The Server
 
-Much of the data for this website lives in the [_data](_data) directory. Jekyll loads data from YAML, JSON, and CSV files located in this directory and makes them available to all the templates.
+TODO
 
-Metadata can also be added on a per-page basis using Jekyll's [YAML Frontmatter](https://jekyllrb.com/docs/frontmatter/) feature.
+## Express/Connect Middleware
 
-### Templates
+TODO
 
-Jekyll uses the [Liquid templating language](https://wiki.github.com/shopify/liquid/liquid-for-designers).
-This allows templates to be written in HTML or Markdown, and all templates have access to a `site`
-object containing all the content from the `_data` directory.
+## Templates
 
-### Frontend JavaScript
-
-There's not a lot of JavaScript on the site, so we currently just use
-[vendored](js/vendor) third-party scripts in script tags, most of which are
-browserify-friendly modules downloaded from the [wzrd.in](https://wzrd.in/) web service.
+TODO
 
 ### Styles
 
 The styles are based on [Primer](https://github.com/primer/primer-css), the CSS toolkit that powers GitHub's front-end design.  It's purposefully limited to common components to provide our developers with the most flexibility, and to keep GitHub uniquely GitHubby. It's built with SCSS and available via NPM, so it's easy to include all or part of it within your own project.
 
-## Developing the Site Locally
+## Frontend JavaScript
 
-To build a Jekyll site you'll need a few things on your system (like Ruby) so double check the [Jekyll requirements](https://jekyllrb.com/docs/installation/#requirements).
+TODO
+
+## Developing the Site Locally
 
 Follow these steps to copy this repository to your computer and build the site:
 
 ```bash
-git clone https://github.com/electron/electron.atom.io.git
+git clone https://github.com/electron/electron.atom.io
 cd electron.atom.io
-npm run bootstrap
-npm start
-```
-
-## Updating Docs, Apps, Releases, Userland, etc
-
-This site contains data gathered from various sources, and there's a build script for each:
-
-- `npm run build-releases` fetches release data from the GitHub API
-- `npm run build-docs` fetches version list from S3, fetches docs for the highest release version number, fixes their links, and adds YML frontmatter for Jekyll to use.
-- `npm run build-awesome` copies [awesome-electron](https://github.com/sindresorhus/awesome-electron/blob/npm-module/contributing.md#building-and-publishing-the-npm-package) data into the `_data` directory
-- `npm run build-userland` copies [electron-userland-reports](https://github.com/electron/electron-userland-reports) data into the `_data` directory
-
-To run all of the build scripts serially:
-
-```sh
-npm run build
-npm test
-```
-
-To verify all the links in the site:
-
-```sh
-cd electron.atom.io
-npm start
-```
-
-Wait for the app to start, then in another shell:
-
-```sh
-cd electron.atom.io
-npm run link-checker
+npm install
+npm run dev
 ```
