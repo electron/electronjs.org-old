@@ -1,5 +1,23 @@
 [
   {
+    "url": "https://api.github.com/repos/electron/electron/releases/7866851",
+    "assets_url": "https://api.github.com/repos/electron/electron/releases/7866851/assets",
+    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/7866851/assets{?name,label}",
+    "html_url": "https://github.com/electron/electron/releases/tag/v1.7.8",
+    "id": 7866851,
+    "tag_name": "v1.7.8",
+    "target_commitish": "1-7-x",
+    "name": "electron v1.7.8",
+    "draft": false,
+    "prerelease": false,
+    "created_at": "2017-09-24T01:34:18Z",
+    "published_at": "2017-09-24T03:01:30Z",
+    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v1.7.8",
+    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v1.7.8",
+    "body": "## Bug Fixes\r\n\r\n* **[SECURITY]** Fixed Chromium RCE vulnerability\r\n\r\n### Linux\r\n\r\n* Fixed `app.makeSingleInstance` hanging. <a href=\"https://github.com/electron/electron/pull/10586\">#10586</a>\r\n\r\n### macOS\r\n\r\n* Fixed missing extension when saving a file without filters <a href=\"https://github.com/electron/electron/pull/10586\">#10586</a>",
+    "version": "1.7.8"
+  },
+  {
     "url": "https://api.github.com/repos/electron/electron/releases/7322821",
     "assets_url": "https://api.github.com/repos/electron/electron/releases/7322821/assets",
     "upload_url": "https://uploads.github.com/repos/electron/electron/releases/7322821/assets{?name,label}",
@@ -1546,23 +1564,5 @@
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.34.5",
     "body": "Changelog:\n\n**OS X**\n- Fix crash when closing a window in fullscreen state.\n",
     "version": "0.34.5"
-  },
-  {
-    "url": "https://api.github.com/repos/electron/electron/releases/2176433",
-    "assets_url": "https://api.github.com/repos/electron/electron/releases/2176433/assets",
-    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/2176433/assets{?name,label}",
-    "html_url": "https://github.com/electron/electron/releases/tag/v0.34.4",
-    "id": 2176433,
-    "tag_name": "v0.34.4",
-    "target_commitish": "master",
-    "name": "electron v0.34.4",
-    "draft": false,
-    "prerelease": false,
-    "created_at": "2015-11-20T02:00:00Z",
-    "published_at": "2015-11-24T14:24:13Z",
-    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.34.4",
-    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.34.4",
-    "body": "Changelog:\n\n**Linux**\n- Fix blurry rendering on some High-DPI machines.\n",
-    "version": "0.34.4"
   }
 ]
