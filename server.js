@@ -13,11 +13,13 @@ const cookieParser = require('cookie-parser')
 const sass = require('./lib/sass')()
 const helmet = require('helmet')
 const contextBuilder = require('./lib/context-builder')
+const blogHandler = require('./lib/blog')
 
 const port = Number(process.env.PORT) || argv.p || argv.port || 5000
 const app = express()
 process.env.HOST = process.env.HOST || `http://localhost:${port}`
 
+// Handlebars Templates
 hbs.registerHelper(lobars)
 app.engine('html', hbs.express4({
   defaultLayout: path.join(__dirname, '/views/layouts/main.html'),
@@ -29,6 +31,7 @@ app.engine('html', hbs.express4({
     return exhbs.handlebars.compile(source, options)
   }
 }))
+
 // Middleware
 app.set('view engine', 'html')
 app.set('views', path.join(__dirname, '/views'))
@@ -45,6 +48,7 @@ app.use(requestLanguage({
   }
 }))
 app.use(contextBuilder)
+app.use(blogHandler)
 app.use(express.static(__dirname))
 app.use(browsersync)
 

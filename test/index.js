@@ -51,25 +51,22 @@ describe('electron.atom.io', () => {
   test('/blog', async () => {
     const $ = await get('/blog')
     $('header').should.have.class('site-header')
+    $('.posts-list li').length.should.be.above(10)
     // TODO: localized content
     // TODO: page title
-    // TODO: list of posts
   })
 
-  // test('/blog/webtorrent', async () => {
-  //   get('/blog/webtorrent').then($ => {
-  //     // layout is working
-  //     $('header').should.have.class('site-header')
+  test('/blog/webtorrent', async () => {
+    const $ = await get('/blog/webtorrent')
+    $('header').should.have.class('site-header')
+    // TODO: post title is page title
+  })
 
-  //     // post title is page title
-  //     // TODO
-
-  //     // old /blog/YYYY/MM/DD format URLs')
-  //     // https://electron.atom.io/blog/2017/06/01/typescript
-
-  //     done()
-  //   })
-  // })
+  test('redirects for date-style blog URLs', async () => {
+    const res = await supertest(app).get('/blog/2017/06/01/typescript')
+    res.statusCode.should.be.above(300).and.below(303)
+    res.headers.location.should.equal('/blog/typescript')
+  })
 
   test('redirects trailing slashes', async () => {
     const res = await supertest(app).get('/apps/')
