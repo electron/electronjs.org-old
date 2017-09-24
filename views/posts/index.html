@@ -1,0 +1,17 @@
+<div class='subtron'>
+  <div class='container-narrow'>
+    <h1><span class="mr-3 mr-lg-4">Blog</span></h1>
+  </div>
+</div>
+
+<section class='page-section'>
+  <div class='container'>
+    <ul class="posts-list">
+      {{#each posts}}
+          <li>
+            <a href="{{this.href}}">{{this.date}} - {{this.title}}</a>
+          </li>
+      {{/each}}
+    </ul>
+  </div>
+</section>
