@@ -1,5 +1,5 @@
 ---
-version: v1.7.6
+version: v1.7.8
 permalink: /docs/development/v8-development/
 category: Development
 redirect_from:

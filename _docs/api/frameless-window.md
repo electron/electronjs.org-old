@@ -1,5 +1,5 @@
 ---
-version: v1.7.6
+version: v1.7.8
 permalink: /docs/api/frameless-window/
 category: API
 redirect_from:
