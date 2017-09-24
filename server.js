@@ -14,10 +14,8 @@ const sass = require('./lib/sass')()
 const helmet = require('helmet')
 const contextBuilder = require('./lib/context-builder')
 
-
 const port = Number(process.env.PORT) || argv.p || argv.port || 5000
 const app = express()
-const jexodus = require('./lib/jexodus')(__dirname).on('ready', startServer)
 process.env.HOST = process.env.HOST || `http://localhost:${port}`
 
 hbs.registerHelper(lobars)
@@ -42,9 +40,9 @@ app.use(requestLanguage({
   languages: Object.keys(i18n.locales),
   cookie: {
     name: 'language',
-    options: { maxAge: 24*60*60*1000 },
+    options: {maxAge: 24 * 60 * 60 * 1000},
     url: '/languages/{language}'
-  },
+  }
 }))
 app.use(contextBuilder)
 app.use(express.static(__dirname))
@@ -64,9 +62,7 @@ app.get('/languages', routes.languages.index)
 // Generic 404 handler
 app.use((req, res, next) => res.status(404).render('404'))
 
-function startServer () {
-  app.bootstrapped = true
-  if (module.parent) return
+if (!module.parent) {
   app.listen(port, () => {
     console.log(`app running on ${port}`)
   })
