@@ -8,9 +8,16 @@ module.exports = (req, res) => {
   })
 
   if (req.query.category) {
-    context.apps = apps.filter((app) => app.categorySlug === req.query.category)
+    const category = categories.find(category => category.slug === req.query.category)
+
+    if (!category) {
+      return res.status(404).render('404', {message: 'Category not found'})
+    }
+
+    context.apps = apps.filter((app) => app.category === category.name)
     context.categories = categories.map(category => {
       category.className = (category.slug === req.query.category) ? 'selected' : ''
+      return category
     })
     context.currentCategory = req.query.category
   }
