@@ -54,24 +54,6 @@
     "version": "1.7.5"
   },
   {
-    "url": "https://api.github.com/repos/electron/electron/releases/7867285",
-    "assets_url": "https://api.github.com/repos/electron/electron/releases/7867285/assets",
-    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/7867285/assets{?name,label}",
-    "html_url": "https://github.com/electron/electron/releases/tag/v1.6.14",
-    "id": 7867285,
-    "tag_name": "v1.6.14",
-    "target_commitish": "1-6-x",
-    "name": "electron v1.6.14",
-    "draft": false,
-    "prerelease": false,
-    "created_at": "2017-09-24T01:09:46Z",
-    "published_at": "2017-09-25T02:12:27Z",
-    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v1.6.14",
-    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v1.6.14",
-    "body": "(placeholder)",
-    "version": "1.6.14"
-  },
-  {
     "url": "https://api.github.com/repos/electron/electron/releases/6506372",
     "assets_url": "https://api.github.com/repos/electron/electron/releases/6506372/assets",
     "upload_url": "https://uploads.github.com/repos/electron/electron/releases/6506372/assets{?name,label}",
@@ -1564,5 +1546,23 @@
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.35.2",
     "body": "Changelog:\n- Add `--proxy-bypass-list` command line switch.\n- Add `ELECTRON_RUN_AS_NODE` environment variable.\n- Don't block renderer process when calling asynchronous methods of `<webview>`.\n- Fix `child_process.execFile` unable to execute files in `asar` archive.\n- Fix crash when handling HTTP responses without content in `protocol` module.\n- Fix a few places using deprecated API inside Electron.\n- Fix callbacks passed to `dialog` module with `remote` module not working.\n- Fix wrong deprecation wrappers of `BrowserWindow`.\n\n**Windows**\n- Fix crash when Notification is used while there is no Application User Model ID.\n\n**OS X**\n- Fix crash when closing a window in fullscreen state.\n- Fix crash when `LSUIElement` is added to main bundle's `Info.plist`.\n",
     "version": "0.35.2"
+  },
+  {
+    "url": "https://api.github.com/repos/electron/electron/releases/2188774",
+    "assets_url": "https://api.github.com/repos/electron/electron/releases/2188774/assets",
+    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/2188774/assets{?name,label}",
+    "html_url": "https://github.com/electron/electron/releases/tag/v0.34.5",
+    "id": 2188774,
+    "tag_name": "v0.34.5",
+    "target_commitish": "master",
+    "name": "electron v0.34.5",
+    "draft": false,
+    "prerelease": false,
+    "created_at": "2015-11-20T02:01:00Z",
+    "published_at": "2015-11-26T08:07:39Z",
+    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.34.5",
+    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.34.5",
+    "body": "Changelog:\n\n**OS X**\n- Fix crash when closing a window in fullscreen state.\n",
+    "version": "0.34.5"
   }
 ]
