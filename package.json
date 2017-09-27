@@ -41,6 +41,7 @@
     "got": "^6.6.3",
     "helmet": "^3.6.1",
     "href-type": "^1.0.1",
+    "hubdown": "^1.0.0",
     "lil-env-thing": "^1.0.0",
     "lobars": "^1.2.0",
     "lodash": "^4.17.4",
