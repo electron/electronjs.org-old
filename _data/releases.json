@@ -1546,23 +1546,5 @@
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.35.3",
     "body": "Changelog:\n- Add `menu` parameter for `Tray.popUpContextMenu` API.\n- Add `downloadURL` method for `WebContents` and `<webview>`.\n- Allow toggling `asar` support in Node's built-in modules with `process.noAsar`.\n- Disable CORS for custom protocols.\n- Fix crash when calling `loadURL` in the `did-fail-load` event.\n- Fix crash when closing window in the `page-title-updated` event.\n- Fix recursive call when using `downloadItem.hasUserGesture`.\n- Fix crash caused by race condition on exit when using `protocol` module.\n- Fix `window.open` not respecting the features string.\n\n**Windows**\n- Fix crash on exit when there are heavy Node tasks.\n- Fix `child_process.execFile` not working for files in `asar` archive.\n\n**OS X**\n- Build with OS X 10.10 SDK.\n",
     "version": "0.35.3"
-  },
-  {
-    "url": "https://api.github.com/repos/electron/electron/releases/2197135",
-    "assets_url": "https://api.github.com/repos/electron/electron/releases/2197135/assets",
-    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/2197135/assets{?name,label}",
-    "html_url": "https://github.com/electron/electron/releases/tag/v0.35.2",
-    "id": 2197135,
-    "tag_name": "v0.35.2",
-    "target_commitish": "master",
-    "name": "electron v0.35.2",
-    "draft": false,
-    "prerelease": false,
-    "created_at": "2015-11-27T14:23:19Z",
-    "published_at": "2015-11-27T15:02:58Z",
-    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.35.2",
-    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.35.2",
-    "body": "Changelog:\n- Add `--proxy-bypass-list` command line switch.\n- Add `ELECTRON_RUN_AS_NODE` environment variable.\n- Don't block renderer process when calling asynchronous methods of `<webview>`.\n- Fix `child_process.execFile` unable to execute files in `asar` archive.\n- Fix crash when handling HTTP responses without content in `protocol` module.\n- Fix a few places using deprecated API inside Electron.\n- Fix callbacks passed to `dialog` module with `remote` module not working.\n- Fix wrong deprecation wrappers of `BrowserWindow`.\n\n**Windows**\n- Fix crash when Notification is used while there is no Application User Model ID.\n\n**OS X**\n- Fix crash when closing a window in fullscreen state.\n- Fix crash when `LSUIElement` is added to main bundle's `Info.plist`.\n",
-    "version": "0.35.2"
   }
 ]
