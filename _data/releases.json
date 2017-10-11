@@ -83,7 +83,7 @@
     "draft": false,
     "prerelease": false,
     "created_at": "2017-10-11T16:27:12Z",
-    "published_at": "2017-10-11T17:56:56Z",
+    "published_at": "2017-10-11T20:50:21Z",
     "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v1.6.15",
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v1.6.15",
     "body": "## Bug Fixes\r\n\r\n* **[SECURITY]** Update to Chromium RCE vulnerability fix for older versions of Chromium.",
