@@ -1,5 +1,5 @@
 ---
-version: v1.7.8
+version: v1.7.9
 permalink: /docs/api/structures/memory-usage-details/
 category: API
 redirect_from:
