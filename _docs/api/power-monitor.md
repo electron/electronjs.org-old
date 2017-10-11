@@ -1,5 +1,5 @@
 ---
-version: v1.7.9
+version: v1.7.8
 permalink: /docs/api/power-monitor/
 category: API
 redirect_from:

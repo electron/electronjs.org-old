@@ -1,5 +1,5 @@
 ---
-version: v1.7.9
+version: v1.7.8
 permalink: /docs/development/setting-up-symbol-server/
 category: Development
 redirect_from:
