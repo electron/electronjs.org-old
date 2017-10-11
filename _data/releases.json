@@ -1,23 +1,5 @@
 [
   {
-    "url": "https://api.github.com/repos/electron/electron/releases/8068306",
-    "assets_url": "https://api.github.com/repos/electron/electron/releases/8068306/assets",
-    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/8068306/assets{?name,label}",
-    "html_url": "https://github.com/electron/electron/releases/tag/v1.7.9",
-    "id": 8068306,
-    "tag_name": "v1.7.9",
-    "target_commitish": "1-7-x",
-    "name": "electron v1.7.9",
-    "draft": false,
-    "prerelease": false,
-    "created_at": "2017-10-10T19:33:41Z",
-    "published_at": "2017-10-11T22:43:48Z",
-    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v1.7.9",
-    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v1.7.9",
-    "body": "## Bug Fixes\r\n\r\n* **[SECURITY]** Update to Chromium RCE vulnerability fix for older versions of Chromium.\r\n\r\n### macOS\r\nFixed issues around update permissions and non-admin users. #10071 <a href=\"https://github.com/electron/electron/pull/10298\">#10298</a>\r\n\r\n### Windows\r\n\r\n* Fixed downloading updates twice <a href=\"https://github.com/electron/electron/pull/5057\">#5057</a>\r\n\r\n",
-    "version": "1.7.9"
-  },
-  {
     "url": "https://api.github.com/repos/electron/electron/releases/7866851",
     "assets_url": "https://api.github.com/repos/electron/electron/releases/7866851/assets",
     "upload_url": "https://uploads.github.com/repos/electron/electron/releases/7866851/assets{?name,label}",
@@ -1546,5 +1528,23 @@
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.35.5",
     "body": "Changelog:\n\n**Windows**\n- Fix `shell.moveItemToTrash` not working on Windows 7.\n",
     "version": "0.35.5"
+  },
+  {
+    "url": "https://api.github.com/repos/electron/electron/releases/2233191",
+    "assets_url": "https://api.github.com/repos/electron/electron/releases/2233191/assets",
+    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/2233191/assets{?name,label}",
+    "html_url": "https://github.com/electron/electron/releases/tag/v0.35.4",
+    "id": 2233191,
+    "tag_name": "v0.35.4",
+    "target_commitish": "master",
+    "name": "electron v0.35.4",
+    "draft": false,
+    "prerelease": false,
+    "created_at": "2015-12-04T11:23:48Z",
+    "published_at": "2015-12-04T12:39:09Z",
+    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.35.4",
+    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.35.4",
+    "body": "Changelog:\n- Fix typo: `isDestroy` => `isDestroyed`.\n",
+    "version": "0.35.4"
   }
 ]
