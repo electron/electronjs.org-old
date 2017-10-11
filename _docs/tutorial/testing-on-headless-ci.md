@@ -1,5 +1,5 @@
 ---
-version: v1.7.9
+version: v1.7.8
 permalink: /docs/tutorial/testing-on-headless-ci/
 category: Tutorial
 redirect_from:

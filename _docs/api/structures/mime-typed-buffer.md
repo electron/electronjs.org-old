@@ -1,5 +1,5 @@
 ---
-version: v1.7.9
+version: v1.7.8
 permalink: /docs/api/structures/mime-typed-buffer/
 category: API
 redirect_from:

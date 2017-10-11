@@ -1,5 +1,5 @@
 ---
-version: v1.7.9
+version: v1.7.8
 permalink: /docs/tutorial/about/
 category: Tutorial
 redirect_from:
