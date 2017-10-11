@@ -14,7 +14,7 @@
     "published_at": "2017-10-10T21:01:53Z",
     "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v1.7.9",
     "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v1.7.9",
-    "body": "## Bug Fixes\r\n\r\n* **[SECURITY]** Update to Chromium RCE vulnerability fix for older versions of Chromium.\r\n\r\n### macOS\r\nFixed issues around update permissions and non-admin users. #10071 <a href=\"https://github.com/electron/electron/pull/10298\">#10298</a>\r\n\r\n### Windows\r\n\r\n* Fixed downloading updates twice <a href=\"https://github.com/electron/electron/pull/5057\">#5057</a>\r\n",
+    "body": "## Bug Fixes\r\n\r\n* **[SECURITY]** Update to Chromium RCE vulnerability fix for older versions of Chromium.\r\n\r\n### macOS\r\nFixed issues around update permissions and non-admin users. #10071 <a href=\"https://github.com/electron/electron/pull/10298\">#10298</a>\r\n\r\n### Windows\r\n\r\n* Fixed downloading updates twice <a href=\"https://github.com/electron/electron/pull/5057\">#5057</a>\r\n\r\n",
     "version": "1.7.9"
   },
   {
