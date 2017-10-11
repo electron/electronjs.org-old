@@ -1,5 +1,5 @@
 ---
-version: v1.7.8
+version: v1.7.9
 permalink: /docs/api/session/
 category: API
 redirect_from:
