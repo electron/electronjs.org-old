@@ -1,0 +1,102 @@
+<div class='subtron'>
+  <div class='container-narrow'>
+    <h1>Electron Community</h1>
+    <p class="lead mb-3">
+      Tools, boilerplates, videos, and more from Electron's <a href="https://github.com/sindresorhus/awesome-electron">awesome</a> open-source contributors. Find or add <a href="#meetups">meetups</a> near you.
+    </p>
+  </div>
+</div>
+
+<section class='page-section'>
+
+  <div class="container-narrow text-center">
+
+    <h2 id="tools">Tools</h2>
+    <table class="table table-ruled table-full-width table-with-spacious-first-column mb-7">
+      {{#each items}}
+        {{#if this.isTool}}
+          {{#if this.isForElectron}}
+            <tr>
+              <td>
+                <a href="{{ this.href }}">{{ this.name }}</a>
+              </td>
+              <td>
+                {{ this.description }}
+              </td>
+            </tr>
+          {{/if}}
+        {{/if}}
+      {{/each}}
+    </table>
+
+    <h2 id="boilerplates">Boilerplates</h2>
+    <table class="table table-ruled table-full-width table-with-spacious-first-column mb-7">
+      {{#each items}}
+        {{#if this.isBoilerplate}}
+          <tr>
+            <td>
+              <a href="{{ this.href }}">{{ this.name }}</a>
+            </td>
+            <td>
+              {{ this.description }}
+            </td>
+          </tr>
+        {{/if}}
+      {{/each}}
+    </table>
+
+    <h2 id="components">Components</h2>
+    <table class="table table-ruled table-full-width table-with-spacious-first-column mb-7">
+      {{#each items}}
+        {{#if this.isComponent}}
+          <tr>
+            <td>
+              <a href="{{ this.href }}">{{ this.name }}</a>
+            </td>
+            <td>
+              {{ this.description }}
+            </td>
+          </tr>
+        {{/if}}
+      {{/each}}
+    </table>
+
+    <h2 id="videos">Videos</h2>
+    <table class="table table-ruled table-full-width table-with-spacious-first-column mb-7">
+      {{#each items}}
+        {{#if this.isVideo}}
+          <tr>
+            <td>
+              <a href="{{ this.href }}">{{ this.name }}</a>
+            </td>
+          </tr>
+        {{/if}}
+      {{/each}}
+    </table>
+
+    <p class="mt-3 mt-md-6">
+      This list is generated from
+      <a href="https://github.com/sindresorhus/awesome-electron">@sindresorhus's Awesome Electron</a> repository.
+      <br> Something missing?
+      <a href="https://github.com/sindresorhus/awesome-electron/blob/master/contributing.md">Make a pull request</a>.
+    </p>
+
+    <h2 id="meetups" class="mt-7">Meetups</h2>
+    <table class="table table-ruled table-full-width table-with-spacious-first-column mb-7">
+      {{#each meetups}}
+      <tr>
+        <td>
+          <a href="{{ meetup.href }}">{{ this.name }}</a>
+        </td>
+        <td>
+          {{ this.location }}, {{ this.country }}
+        </td>
+      </tr>
+      {{/each}}
+    </table>
+
+    <p class="mt-3 mt-md-6">
+      To add a meetup, edit <code>data/meetups.json</code> and <a href="https://github.com/electron/electron.atom.io/edit/gh-pages/_data/meetups.yml">make a pull request</a>.
+    </p>
+  </div>
+</section>
