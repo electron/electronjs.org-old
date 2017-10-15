@@ -55,14 +55,20 @@ app.use(browsersync)
 // Routes
 const routes = require('./routes')
 app.get('/', routes.home)
+
 app.get('/apps', routes.apps.index)
 app.get('/app/:slug', (req, res) => res.redirect(`/apps/${req.params.slug}`))
 app.get('/apps/:slug', routes.apps.show)
-app.get('/contact', routes.contact)
-app.get('/community', routes.community)
+
 app.get('/docs', routes.docs.index)
 app.get('/docs/*', routes.docs.show)
+
+app.get('/userland', routes.userland.index)
+app.get('/userland/*', routes.userland.show)
+
+app.get('/community', routes.community)
 app.get('/languages', routes.languages.index)
+app.get('/contact', routes.contact)
 
 // Generic 404 handler
 app.use((req, res, next) => res.status(404).render('404'))
