@@ -1,12 +1,20 @@
 <div class='subtron text-left'>
   <div class='container'>
-    <a href="{{site.baseurl}}/userland">
-      <h1>Electron Userland</h1>
-    </a>
-
-    <p class="lead mb-3">
-      The people, apps, and packages of Electron's open-source ecosystem.
-    </p>
+    {{#if report}}
+      <a href="{{site.baseurl}}/userland/{{report.slug}}">
+        <h1>{{report.title}}</h1>
+      </a>
+      <h4 class="docs-breadcrumbs">
+        <a href="{{site.baseurl}}/userland/{{report.slug}}">{{report.description}}</a>
+      </h4>
+    {{else}}
+     <a href="{{site.baseurl}}/userland">
+       <h1>Electron Userland</h1>
+     </a>
+     <p class="lead mb-3">
+       The people, apps, and packages of Electron's open-source ecosystem.
+     </p>
+    {{/if}}
   </div>
 </div>
 
