@@ -1,0 +1,118 @@
+{{> userland_header}}
+
+<section class='page-section'>
+  <div class='container'>
+
+    {{#if report.isPackage}}
+      <div id="{{report.slug}}">
+
+        <input class="filterable-list-input" placeholder="Filter packages by name, description, keyword, author, repository URL..." autofocus="on" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+
+        <ul class="filterable-list">
+          {{#each items}}
+            <li data-rank="{{forloop.index}}">
+              <a class="item-name" href="http://npm.im/{{this.name}}">{{this.name}}</a>
+              {{#if this.description}}
+                <span class="item-description">{{this.description}}</span>
+              {{/if}}
+              <span class="item-keywords" style="display:none">
+                {{#each this.keywords}}
+                  {{this.keyword}}&nbsp;
+                {{/each}}
+              </span>
+              <span class="item-repository" style="display:none">
+                {{this.repository}}
+              </span>
+            </li>
+          {{/each}}
+        </ul>
+      </div>
+    {{/if}}
+
+    {{#if report.isRepository}}
+      <div id="{{report.slug}}">
+        <input class="filterable-list-input" placeholder="Filter by name, description, keyword, author, repository URL..." autofocus="on" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+
+        <ul class="filterable-list">
+          {{#each items}}
+            <li data-rank="{{forloop.index}}">
+              <a class="item-name" href="https://github.com/{{this.fullName}}">{{this.fullName}}</a>
+              {{#if this.description}}
+                <span class="item-description">{{this.description}}</span>
+              {{/if}}
+
+              {{#if this.packageJSON}}
+                {{#if this.packageJSON.keywords}}
+                  <span class="item-keywords" style="display:none">
+                    {{#each repo.packageJSON.keywords}}
+                      {{this.keyword}}&nbsp;
+                    {{/each}}
+                  </span>
+                {{/if}}
+              {{/if}}
+            </li>
+          {{/each}}
+        </ul>
+      </div>
+    {{/if}}
+
+    {{#if report.isGitHubUser}}
+      {{#each items}}
+        {{#includes blacklist this.user}}
+          <!-- Do Nothing -->
+          includes blacklist this.user
+        {{else}}
+          {{#includes blacklist this.handle}}
+            <!-- Do Nothing -->
+            includes blacklist this.handle
+          {{else}}
+            <li class="author-list-item">
+              <a class="author-list-item-avatar-wrapper" href="http://github.com/{{this.user}}">
+                <img src="https://github.com/{{this.user}}.png">
+              </a>
+              <div class="author-list-item-details">
+                <a href="http://github.com./{{this.user}}" class="truncate">{{this.user}}</a><br>
+                <span class="small">{{this.repos}} repos</span>
+              </div>
+            </li>
+          {{/includes}}
+        {{/includes}}
+      {{/each}}
+    {{/if}}
+
+    {{#if report.isnpmUser}}
+      <ul class="list author-list">
+        {{#each items}}
+          {{#includes blacklist this.handle}}
+            <!-- Do Nothing -->
+          {{else}}
+            <li class="author-list-item">
+              <a class="author-list-item-avatar-wrapper" href="http://npm.im/~{{this.handle}}">
+                <img src="{{this.gravatar}}">
+              </a>
+              <div class="author-list-item-details">
+                <a href="http://npm.im/~{{this.handle}}">{{this.handle}}</a><br>
+                <span class="small">{{this.packages}} packages</span>
+              </div>
+            </li>
+          {{/includes}}
+        {{/each}}
+      </ul>
+    {{/if}}
+
+    <p class="text-center text-muted mt-6">
+      This report was last updated <span data-date="{{report.createdAt}}">{{report.createdAt}}</span>
+    </p>
+
+  </div>
+</section>
+
+<!-- I THINK WE SHOULD REMOVE THIS
+<section class="page-section page-section-spacious bg-shade">
+  <div class='container-narrow text-center'>
+    <h2>Other reports from Electron Userland</h2>
+  </div>
+  {% include userland_report_cards.html %}
+</section> -->
+
+{{> userland_footer}}
