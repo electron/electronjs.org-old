@@ -1,5 +1,23 @@
 <title>Electron Userland</title>
 
 {{> userland_header}}
-{{> userland_report_cards}}
+
+<section class='page-section'>
+  <div class='container'>
+    <ul class="report-list">
+    {{#each categories}}
+      {{#if this.title}}
+        <li>
+          <a href="{{site.baseurl}}/userland/{{this.slug}}" class="inner">
+            <img src="{{site.baseurl}}/images/userland/{{this.slug}}.svg" alt="{{this.title}} icon">
+            <h3>{{this.title}}</h3>
+            <p>{{this.description}}</p>
+          </a>
+        </li>
+      {{/if}}
+    {{/each}}
+    </ul>
+  </div>
+</section>
+
 {{> userland_footer}}

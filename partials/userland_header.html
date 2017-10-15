@@ -1,27 +1,12 @@
 <div class='subtron text-left'>
   <div class='container'>
+    <a href="{{site.baseurl}}/userland">
+      <h1>Electron Userland</h1>
+    </a>
 
-    {% if page.title == 'Electron Userland' %}
-
-      <a href="{{site.baseurl}}/userland">
-        <h1>Electron Userland</h1>
-      </a>
-
-      <p class="lead mb-3">
-        The people, apps, and packages of Electron's open-source ecosystem.
-      </p>
-    {% elsif report %}
-
-      <a href="{{site.baseurl}}/userland/{{report.slug}}">
-        <h1>{{report.title}}</h1>
-      </a>
-
-
-      <h4 class="docs-breadcrumbs">
-        <a href="{{site.baseurl}}/userland/{{report.slug}}">{{report.description}}</a>
-      </h4>
-    {% endif %}
-
+    <p class="lead mb-3">
+      The people, apps, and packages of Electron's open-source ecosystem.
+    </p>
   </div>
 </div>
 
@@ -33,7 +18,7 @@
   document.addEventListener('DOMContentLoaded', browserDateFormatter)
   document.addEventListener('DOMContentLoaded', createFilterList)
 
-  function createFilterList () {
+  function createFilterList() {
     // look for a filterable list on this page
     var list = document.querySelector('.filterable-list')
     if (!list || !list.parentElement) return
@@ -59,7 +44,9 @@
 
     // update the query param every time a search is performed
     filterList.on('updated', function() {
-      setQueryString({q: filterInput.value})
+      setQueryString({
+        q: filterInput.value
+      })
     })
   }
 </script>
