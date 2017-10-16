@@ -1,0 +1,23 @@
+<h2 class="docs-heading pb-3 mb-3"><span class="mega-octicon octicon-gear pr-3"></span>API Reference</h2>
+
+<table class="table table-ruled table-full-width table-with-spacious-second-column">
+<tr>
+  <th>API</th><th>Processes</th><th>Description</th>
+</tr>
+
+{{#each docs}}
+  {{#if this.isApiDoc}}
+    {{#includes this.source_url '/structures/'}}
+      <!-- DO NOTHING -->
+    {{else}}
+      <tr>
+        <td><a href="{{ site.baseurl }}{{ this.url }}">{{ this.title }}</a></td>
+        <td>{{ this.excerpt }}</td>
+      </tr>
+    {{/includes}}
+  {{else}}
+    <!-- DO NOTHING -->
+  {{/if}}
+{{/each}}
+
+</table>

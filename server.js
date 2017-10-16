@@ -61,7 +61,8 @@ app.get('/app/:slug', (req, res) => res.redirect(`/apps/${req.params.slug}`))
 app.get('/apps/:slug', routes.apps.show)
 
 app.get('/docs', routes.docs.index)
-app.get('/docs/*', routes.docs.show)
+app.get('/docs/:category', routes.docs.category)
+app.get('/docs/:category/*', routes.docs.show)
 
 app.get('/userland', routes.userland.index)
 app.get('/userland/*', routes.userland.show)
