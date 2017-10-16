@@ -1,0 +1,11 @@
+<h2 class="docs-heading pb-3 mb-3"><span class="mega-octicon octicon-tools pr-3"></span>Developing Electron</h2>
+
+<ul class="docs-list">
+{{#each docs}}
+  {{#if this.isDevTutorial}}
+    <li>
+      <a href="{{ site.baseurl }}{{ this.href }}">{{ this.title }}</a>
+    </li>
+  {{/if}}
+{{/each}}
+</ul>
