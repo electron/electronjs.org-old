@@ -1,3 +1,5 @@
+const processes = require('../../data/processes.json')
+
 module.exports = (req, res) => {
   const category = req.params.category
   if (['tutorial', 'api', 'development'].includes(category)) {
@@ -7,9 +9,9 @@ module.exports = (req, res) => {
       'development': 'Development',
     }
 
-    const capitalize = str => str.charAt(0).toUpperCase() + str.substring(1);
     const context = Object.assign(req.context, {
       layout: 'docs',
+      processes: processes,
       category: categories[category]
     })
 

@@ -4,19 +4,14 @@
 <tr>
   <th>API</th><th>Processes</th><th>Description</th>
 </tr>
-
+{{lookup processes 'app'}}
 {{#each docs}}
   {{#if this.isApiDoc}}
-    {{#includes this.source_url '/structures/'}}
-      <!-- DO NOTHING -->
-    {{else}}
-      <tr>
-        <td><a href="{{ site.baseurl }}{{ this.href }}">{{ this.title }}</a></td>
-        <td>{{ this.excerpt }}</td>
-      </tr>
-    {{/includes}}
-  {{else}}
-    <!-- DO NOTHING -->
+    <tr>
+      <td><a href="{{ site.baseurl }}{{ this.href }}">{{ this.title }}</a></td>
+      <td>{{lookup ../processes this.title}} </td>
+      <td>{{ this.description }}</td>
+    </tr>
   {{/if}}
 {{/each}}
 
