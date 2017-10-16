@@ -1,11 +1,17 @@
 {{!< main}}
 
 <div class='subtron text-left'>
+  <h1><span class="mr-3 mr-lg-4">Electron Documentation</span><span class="docs-version">{{electronLatestStableVersion}}</span></h1>
+
   <div class='container-narrow'>
 
     <h4 class="docs-breadcrumbs">
-      <a href='/docs/'>Docs</a> / 
-      <a href="/docs/{{doc.category}}">{{doc.categoryFancy}}</a> / {{doc.title}}
+      <a href='/docs/'>Docs</a> /
+      {{#if category}}
+        {{category}}
+      {{else}}
+        <a href="/docs/{{doc.category}}">{{doc.categoryFancy}}</a> / {{doc.title}}
+      {{/if}}
     </h4>
   </div>
 </div>

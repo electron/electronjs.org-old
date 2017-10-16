@@ -1,0 +1,17 @@
+<h2 class="docs-heading pb-3 mb-3"><span class="mega-octicon octicon-gear pr-3"></span>API Reference</h2>
+
+<table class="table table-ruled table-full-width table-with-spacious-second-column">
+<tr>
+  <th>API</th><th>Processes</th><th>Description</th>
+</tr>
+{{#each docs}}
+  {{#if this.isApiDoc}}
+    <tr>
+      <td><a href="{{ site.baseurl }}{{ this.href }}">{{ this.title }}</a></td>
+      <td>{{lookup ../processes this.title}} </td>
+      <td>{{ this.description }}</td>
+    </tr>
+  {{/if}}
+{{/each}}
+
+</table>
