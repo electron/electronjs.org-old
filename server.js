@@ -69,6 +69,7 @@ app.get('/userland/*', routes.userland.show)
 app.get('/community', routes.community)
 app.get('/languages', routes.languages.index)
 app.get('/contact', routes.contact)
+app.get('/releases', routes.releases)
 
 // Generic 404 handler
 app.use((req, res, next) => res.status(404).render('404'))
