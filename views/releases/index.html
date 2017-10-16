@@ -1,14 +1,10 @@
----
-layout: default
----
-
 <div class='subtron'>
   <div class='container-narrow'>
     <h1>Electron Releases</h1>
     <p>
-      {% for release in site.data.releases %}
-      <a class='releases-tag' href='{{ release.html_url }}'>{{ release.version }}</a>
-      {% endfor releases %}
+      {{#each releases}}
+        <a class='releases-tag' href='{{ this.html_url }}'>{{ this.version }}</a>
+      {{/each}}
     </p>
     <p>
       <a href="https://github.com/electron/electron/releases"><span class="octicon octicon-tag mr-1"></span>All Releases</a>
