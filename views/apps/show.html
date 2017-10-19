@@ -103,7 +103,7 @@
             </td>
             <td>
               {{#each app.latestRelease.assets}}
-                <a class="app-download" href="{{this.browser_download_url}}">{{this.name}}</a>
+                <a class="app-download {{this.platform}}" href="{{this.browser_download_url}}">{{this.name}}</a>
               {{/each}}
             </td>
           </tr>
