@@ -1,6 +1,6 @@
 module.exports = (req, res) => {
-  const current_report = req.params[0]
-  const report = require(`../../data/userland/${current_report}`)
+  const currentReport = req.params[0]
+  const report = require(`../../data/userland/${currentReport}`)
   let blacklist
 
   report.isPackage = report.collectionType === 'Package'
