@@ -1494,24 +1494,6 @@
     "version": "0.36.1"
   },
   {
-    "url": "https://api.github.com/repos/electron/electron/releases/2249099",
-    "assets_url": "https://api.github.com/repos/electron/electron/releases/2249099/assets",
-    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/2249099/assets{?name,label}",
-    "html_url": "https://github.com/electron/electron/releases/tag/v0.36.0",
-    "id": 2249099,
-    "tag_name": "v0.36.0",
-    "target_commitish": "master",
-    "name": "electron v0.36.0",
-    "draft": false,
-    "prerelease": false,
-    "created_at": "2015-12-11T03:49:01Z",
-    "published_at": "2015-12-11T07:49:48Z",
-    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.36.0",
-    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.36.0",
-    "body": "Changelog:\n- Upgrade to Chrome 47.\n- Upgrade to Node 5.1.1.\n- Add `desktopCapturer` module.\n- Add `protocol.registerServiceWorkerSchemes` API.\n- Add `uploadDate` property for `request` object in `protocol` module.\n- Don't touch the argument when calling `Menu.buildFromTemplate`.\n- Don't emit `will-quit` event when calling `process.exit` or `app.exit`.\n- Fix wrong `appData` and `userData` dir values.\n- Fix HTTP/2 not working.\n- Fix the `exit` event of `process` object not including exit code.\n- Fix `event.source` not matching the object returned by `window.open` in `message` event handler.\n- Fix wrong `origin` string in `window.postMessage`.\n\n**OS X**\n- Add `BrowserWindow.setIgnoreMouseEvents` API.\n- Remove the automatically appended `Enter Full Screen` menu item.\n",
-    "version": "0.36.0"
-  },
-  {
     "url": "https://api.github.com/repos/electron/electron/releases/2402717",
     "assets_url": "https://api.github.com/repos/electron/electron/releases/2402717/assets",
     "upload_url": "https://uploads.github.com/repos/electron/electron/releases/2402717/assets{?name,label}",
