@@ -1,13 +1,13 @@
-const items = require("../data/awesome_electron.json")
-const meetups = require("../data/meetups.json")
+const items = require('../data/awesome_electron.json')
+const meetups = require('../data/meetups.json')
 
-async function parseItem(item) {
+async function parseItem (item) {
   // categories
   item.isTool = item.category === 'tools'
   item.isBoilerplate = item.category === 'boilerplates'
   item.isVideo = item.category === 'videos'
   item.isPodcast = item.category === 'podcasts'
-  item.isComponent= item.category === 'components'
+  item.isComponent = item.category === 'components'
   item.isBook = item.category === 'books'
 
   // subcategories
@@ -17,7 +17,7 @@ async function parseItem(item) {
   return item
 }
 
-async function parseData(items) {
+async function parseData (items) {
   return await Promise.all(items.map(parseItem))
 }
 
@@ -25,7 +25,7 @@ module.exports = (req, res) => {
   parseData(items).then((communityData) => {
     const context = Object.assign(req.context, {
       items: communityData,
-      meetups: meetups,
+      meetups: meetups
     })
 
     res.render('community', context)
