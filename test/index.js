@@ -44,17 +44,25 @@ describe('electron.atom.io', () => {
     })
   })
 
-  test('/docs', async () => {
-    const $ = await get('/docs')
-    $('header').should.have.class('site-header')
-    $('a[href="/docs/tutorial/about"]').should.have.text('About Electron')
-    $('a[href="/docs/api/auto-updater"]').should.have.text('autoUpdater')
-  })
+  describe('docs', () => {
+    test('index', async () => {
+      const $ = await get('/docs')
+      $('header').should.have.class('site-header')
+      $('a[href="/docs/tutorial/about"]').should.have.text('About Electron')
+      $('a[href="/docs/api/auto-updater"]').should.have.text('autoUpdater')
+    })
 
-  test('/docs/api/browser-window', async () => {
-    const $ = await get('/docs/api/browser-window')
-    $('.docs-breadcrumbs a').should.have.length(2)
-    $('.docs-breadcrumbs a[href="/docs/api"]').should.have.text('API')
+    test('API doc', async () => {
+      const $ = await get('/docs/api/browser-window')
+      $('.docs-breadcrumbs a').should.have.length(2)
+      $('.docs-breadcrumbs a[href="/docs/api"]').should.have.text('API')
+    })
+
+    test('redirects pre-1.0 docs URLs', async () => {
+      const res = await supertest(app).get(`/docs/v0.20.0/api/app`)
+      res.statusCode.should.equal(302)
+      res.headers.location.should.equal('/docs/api/app')
+    })
   })
 
   test('/blog', async () => {
