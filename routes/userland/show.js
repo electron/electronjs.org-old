@@ -1,7 +1,7 @@
 module.exports = (req, res) => {
   const current_report = req.params[0]
   const report = require(`../../data/userland/${current_report}`)
-  let blacklist;
+  let blacklist
 
   report.isPackage = report.collectionType === 'Package'
   report.isRepository = report.collectionType === 'Repository'
@@ -14,12 +14,12 @@ module.exports = (req, res) => {
       'ember-tomster',
       'gitter-badger',
       'invalid-email-address',
-      'waffle-iron',
+      'waffle-iron'
     ]
   } else if (report.isnpmUser) {
     blacklist = [
       'uupaa',
-      'etc-etc-etc',
+      'etc-etc-etc'
     ]
   }
 
