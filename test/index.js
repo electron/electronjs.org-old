@@ -23,16 +23,25 @@ describe('electron.atom.io', () => {
     $('.featured-app').length.should.equal(24)
   })
 
-  test('/apps', async () => {
-    const $ = await get('/apps')
-    $('.listed-app').length.should.be.above(300)
-    $('.category-list li').length.should.be.above(15)
-  })
+  describe('apps', () => {
+    test('index', async () => {
+      const $ = await get('/apps')
+      $('.listed-app').length.should.be.above(300)
+      $('.category-list li').length.should.be.above(15)
+    })
 
-  test('/apps?category=games', async () => {
-    const $ = await get('/apps?category=games')
-    $('.listed-app').length.should.be.above(15)
-    $('#category-games.selected').length.should.equal(1)
+    test('index filtered by category', async () => {
+      const $ = await get('/apps?category=games')
+      $('.listed-app').length.should.be.above(15)
+      $('#category-games.selected').length.should.equal(1)
+    })
+
+    test('app pages apply platform labels to download links', async () => {
+      const $ = await get('/apps/hyper')
+      $('a.app-download.darwin').length.should.be.above(0)
+      $('a.app-download.linux').length.should.be.above(0)
+      $('a.app-download.win32').length.should.be.above(0)
+    })
   })
 
   test('/docs', async () => {
