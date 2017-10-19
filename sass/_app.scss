@@ -42,7 +42,7 @@
   margin: 2rem;
 
   td {
-    padding: 1.5rem 0;
+    padding: 1rem 0;
   }
 
   td:first-child {
@@ -82,7 +82,7 @@
   font-size: 0.85em;
   border-radius: 3px;
   margin: 0 .5em .5em 0;
-  border: 1px solid lighten($main-link-color, 40%);
+  border: none;
   &:hover {
     text-decoration: none;
     border-color: lighten($main-link-color, 20%);

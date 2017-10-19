@@ -49,7 +49,7 @@
 
       {{#if app.repository}}
         <tr>
-          <td>Source Code</td>
+          <td>Repository</td>
           <td><a href="{{app.repository}}">{{app.repository}}</a></td>
         </tr>
       {{/if}}
@@ -84,18 +84,6 @@
       {{/if}}
 
       {{#if app.latestRelease}}
-        <tr>
-          <td>
-            Latest Release
-          </td>
-          <td>
-            <a href="{{app.latestRelease.url}}">
-              {{app.latestRelease.name}}
-            </a>
-            <span class="app-tagname">({{app.latestRelease.tag_name}})</span>
-          </td>
-        </tr>
-
         {{#if app.latestRelease.assets}}
           <tr>
             <td>
@@ -108,6 +96,18 @@
             </td>
           </tr>
         {{/if}}
+        
+        <tr>
+          <td>
+            <a href="{{app.latestRelease.url}}">Latest Release</a>
+          </td>
+          <td>
+            <a href="{{app.latestRelease.url}}">
+              {{app.latestRelease.name}}
+              <span class="app-tagname">({{app.latestRelease.tag_name}})</span>
+            </a>
+          </td>
+        </tr>
 
         <tr>
           <td>Release Notes
