@@ -1,7 +1,9 @@
-const fixPlatformLabels = require('./fix-platform-labels')
-const updateDownloadLink = require('./update-download-link')
-
 document.addEventListener('DOMContentLoaded', () => {
-  fixPlatformLabels()
-  updateDownloadLink()
+  require('./create-filter-list')()
+  require('./fix-platform-labels')()
+  require('./update-demo-app-download-link')()
+  require('./update-app-download-links')()
+  require('./apply-active-class-to-active-links')()
+  require('./remove-scheme-from-link-text')()
+  require('browser-date-formatter')()
 })
