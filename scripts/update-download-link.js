@@ -1,8 +1,8 @@
-/* globals uaParserJs */
+const {os} = require('ua-parser-js')()
 
-var updateDownloadLink = function () {
-  var platform = uaParserJs().os.name
-  var releaseServer = 'https://electron-api-demos.githubapp.com/updates/'
+module.exports = function updateDownloadLink () {
+  const platform = os.name
+  const releaseServer = 'https://electron-api-demos.githubapp.com/updates/'
   var assetName
   var osLabel
 
@@ -28,5 +28,3 @@ var updateDownloadLink = function () {
   document.querySelector('#download-alternatives')
     .style.display = 'inline-block'
 }
-
-document.addEventListener('DOMContentLoaded', updateDownloadLink)
