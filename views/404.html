@@ -2,9 +2,11 @@
   <div class='container-narrow text-center py-md-8'>
     <h1>404</h1>
     <p class="lead">
-      This page could not be found.
-
-      {{message}}
+      {{#if message}}
+        {{message}}
+      {{else}}
+        This page could not be found.
+      {{/if}}
     </p>
   </div>
 </section>

@@ -1,5 +1,5 @@
 const apps = require('electron-apps')
-const detectAssetPlatform = require('../../lib/detect-asset-platform')
+const {getPlatformFromFilename} = require('platform-utils')
 
 module.exports = (req, res) => {
   const app = apps.find(app => app.slug === req.params.slug)
@@ -18,7 +18,7 @@ module.exports = (req, res) => {
   // attach platform labels like `darwin`, `win32`, and `linux`
   if (app.latestRelease && app.latestRelease.assets) {
     app.latestRelease.assets.forEach(asset => {
-      asset.platform = detectAssetPlatform(asset.name)
+      asset.platform = getPlatformFromFilename(asset.name)
     })
   }
 

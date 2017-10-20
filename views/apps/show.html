@@ -11,15 +11,15 @@
 
 <section class="page-section">
 
-  <nav aria-label="Breadcrumb">
+  <!-- <nav aria-label="Breadcrumb">
     <ol>
       <li class="breadcrumb-item text-small"><a href="/apps">Apps</a></li>
       <li class="breadcrumb-item breadcrumb-item-selected text-small text-gray" aria-current="page">{{app.name}}</li>
     </ol>
-  </nav>
+  </nav> -->
   <div class="container-narrow media-fluid">
     <header class="app-header">
-      <img class='app-logo' src='/images/apps/{{app.icon128}}' alt='{{app.name}}'>
+      <img class='app-logo' src='/node_modules/electron-apps/apps/{{app.slug}}/{{app.icon128}}' alt='{{app.name}}'>
       <a class="app-link" href="{{app.website}}">
         <h1 class='app-name'>{{app.name}}</h1>
       </a>
@@ -72,7 +72,7 @@
         </tr>
       {{/if}}
 
-      {{#if app.locales}}
+      <!-- {{#if app.locales}}
         <tr>
           <td>Languages</td>
           <td>
@@ -81,7 +81,7 @@
             {{/each}}
           </td>
         </tr>
-      {{/if}}
+      {{/if}} -->
 
       {{#if app.latestRelease}}
         {{#if app.latestRelease.assets}}
@@ -93,13 +93,15 @@
               {{#each app.latestRelease.assets}}
                 <a class="app-download {{this.platform}}" href="{{this.browser_download_url}}">{{this.name}}</a>
               {{/each}}
+
+              <a href="{{app.latestRelease.url}}" id="view-all-downloads" style="opacity:0.7;font-size:80%;display:none;">View all</a>
             </td>
           </tr>
         {{/if}}
         
         <tr>
           <td>
-            <a href="{{app.latestRelease.url}}">Latest Release</a>
+            Latest Release
           </td>
           <td>
             <a href="{{app.latestRelease.url}}">
