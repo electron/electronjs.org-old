@@ -81,6 +81,9 @@ app.use((req, res, next) => res.status(404).render('404'))
 if (!module.parent) {
   app.listen(port, () => {
     console.log(`app running on ${port}`)
+    if (process.env.NODE_ENV === 'production') {
+      console.log(`If you're developing, you probably want \`npm run dev\`\n\n`)
+    }
   })
 }
 
