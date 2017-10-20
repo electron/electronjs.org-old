@@ -22,7 +22,7 @@ module.exports = (req, res) => {
     context.currentCategory = req.query.category
   }
 
-  context.appCount = context.apps.length
+  context.totalAppCount = apps.length
 
   res.render('apps', context)
 }

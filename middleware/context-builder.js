@@ -1,4 +1,4 @@
-const i18n = require('./i18n')
+const i18n = require('../lib/i18n')
 const vendoredVersions = require('../data/versions.json')
   .find(version => version.version === i18n.electronLatestStableVersion)
 

@@ -9,8 +9,8 @@ module.exports = function browsersync () {
     files: [
       path.join(__dirname, '../**/*.md'),
       path.join(__dirname, '../**/*.html'),
-      path.join(__dirname, '../**/*.css'),
-      path.join(__dirname, '../**/*.scss'),
+      // path.join(__dirname, '../**/*.css'),
+      // path.join(__dirname, '../**/*.scss'),
       path.join(__dirname, '../data/**/*'),
       path.join(__dirname, '../js/**/*')
     ],

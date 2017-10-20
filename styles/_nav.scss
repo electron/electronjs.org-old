@@ -1,0 +1,6 @@
+.site-header a {
+  line-height: 2.3;
+  &.active, &:active, &:hover {
+    border-bottom: 2px solid $jumbo-color-strong;
+  }
+}

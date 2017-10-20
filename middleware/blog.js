@@ -1,3 +1,6 @@
+// At startup, this module converts all the blog posts from markdown to HTML.
+// At runtime, it's a middleware that serves up blog routes.
+
 const hubdown = require('hubdown')
 const path = require('path')
 const fs = require('fs')

@@ -3,10 +3,10 @@ const sass = require('node-sass-middleware')
 
 module.exports = function () {
   return sass({
-    src: path.join(__dirname, '../sass'),
-    dest: path.join(__dirname, '../css'),
-    debug: false,
+    src: path.join(__dirname, '../styles'),
+    response: true,
+    debug: true,
     // outputStyle: 'compressed',
-    prefix: '/css'
+    prefix: '/styles'
   })
 }

@@ -2,7 +2,7 @@
 
 .app-header {
   position: relative;
-  padding-left: 80px; // Leave some space for the logo
+  text-align: center;
 }
 
 .app-link {
@@ -13,10 +13,9 @@
 }
 
 .app-logo {
-  position: absolute;
-  left: 0;
-  max-width: 64px;
-  height: 64px;
+  display: inline-block;
+  max-width: 128px;
+  height: 128px;
 }
 
 .app-name {
@@ -106,4 +105,15 @@
   .octicon-link {
     display: none;
   }
+}
+
+// basecoat filter-list overrides
+
+.filter-list {
+  padding: 0;
+  margin: 0;
+}
+
+.filter-item {
+  padding: 4px 8px;
 }

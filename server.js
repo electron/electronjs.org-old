@@ -7,14 +7,14 @@ const lobars = require('lobars')
 // Middleware
 const hbs = require('express-hbs')
 const slashes = require('connect-slashes')
-const browsersync = require('./lib/browsersync')()
-const browserify = require('./lib/browserify')
+const browsersync = require('./middleware/browsersync')()
+const browserify = require('./middleware/browserify')
 const requestLanguage = require('express-request-language')
 const cookieParser = require('cookie-parser')
-const sass = require('./lib/sass')()
+const sass = require('./middleware/sass')()
 const helmet = require('helmet')
-const contextBuilder = require('./lib/context-builder')
-const blogHandler = require('./lib/blog')
+const contextBuilder = require('./middleware/context-builder')
+const blog = require('./middleware/blog')
 
 const port = Number(process.env.PORT) || argv.p || argv.port || 5000
 const app = express()
@@ -50,7 +50,7 @@ app.use(requestLanguage({
   }
 }))
 app.use(contextBuilder)
-app.use(blogHandler)
+app.use(blog)
 app.use(express.static(__dirname))
 app.use(browsersync)
 
