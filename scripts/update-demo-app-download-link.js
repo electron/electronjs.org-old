@@ -5,7 +5,7 @@ module.exports = function updateDemoAppDownloadLink () {
 
   const platform = getPlatformFromUserAgent()
   const releaseServer = 'https://electron-api-demos.githubapp.com/updates/'
-  var assetName
+  let assetName
 
   if (platform === 'darwin') assetName = 'electron-api-demos-mac.zip'
   if (platform === 'win32') assetName = 'ElectronAPIDemosSetup.exe'
