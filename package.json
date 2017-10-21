@@ -83,6 +83,9 @@
   "standard": {
     "ignore": [
       "/js/vendor"
-    ]
+    ],
+    "env": {
+      "browser": true
+    }
   }
 }
