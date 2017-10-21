@@ -8,7 +8,7 @@ module.exports = function createFilterList () {
   if (!list || !list.parentElement) return
 
   // inherit initial query from `q` query param
-  window.filterInput = document.querySelector('.filterable-list-input')
+  const filterInput = document.querySelector('.filterable-list-input')
   filterInput.value = queryString.parse(location.search).q || ''
 
   var opts = {
@@ -21,7 +21,7 @@ module.exports = function createFilterList () {
       'listed-app-keywords'
     ]
   }
-  window.filterList = new List(list.parentElement.parentElement, opts)
+  const filterList = new List(list.parentElement.parentElement, opts)
 
   // trigger a search, in case there is an existing value in the text input
   filterList.search(filterInput.value)
