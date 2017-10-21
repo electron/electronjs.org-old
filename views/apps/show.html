@@ -42,10 +42,13 @@
     {{/each}}
 
     <table class="app-details">
-      <tr>
-        <td>Category</td>
-        <td><a href="/apps?category={{app.categorySlug}}">{{app.category}}</a></td>
-      </tr>
+
+      {{#if app.website}}
+        <tr>
+          <td>Website</td>
+          <td><a href="{{app.website}}">{{app.website}}</a></td>
+        </tr>
+      {{/if}}
 
       {{#if app.repository}}
         <tr>
@@ -54,12 +57,10 @@
         </tr>
       {{/if}}
 
-      {{#if app.license}}
-        <tr>
-          <td>License</td>
-          <td>{{app.license}}</td>
-        </>
-      {{/if}}
+      <tr>
+          <td>Category</td>
+          <td><a href="/apps?category={{app.categorySlug}}">{{app.category}}</a></td>
+        </tr>
 
       {{#if app.keywords}}
         <tr>
@@ -70,6 +71,14 @@
             {{/each}}
           </td>
         </tr>
+      {{/if}}
+
+
+      {{#if app.license}}
+        <tr>
+          <td>License</td>
+          <td>{{app.license}}</td>
+        </>
       {{/if}}
 
       <!-- {{#if app.locales}}
@@ -94,7 +103,7 @@
                 <a class="app-download {{this.platform}}" href="{{this.browser_download_url}}">{{this.name}}</a>
               {{/each}}
 
-              <a href="{{app.latestRelease.url}}" id="view-all-downloads" style="opacity:0.7;font-size:80%;display:none;">View all</a>
+              <a href="{{app.latestRelease.html_url}}" id="view-all-downloads" style="opacity:0.7;font-size:80%;display:none;">View all {{app.latestRelease.assets.length}} files</a>
             </td>
           </tr>
         {{/if}}
@@ -104,7 +113,7 @@
             Latest Release
           </td>
           <td>
-            <a href="{{app.latestRelease.url}}">
+            <a href="{{app.latestRelease.html_url}}">
               {{app.latestRelease.name}}
               <span class="app-tagname">({{app.latestRelease.tag_name}})</span>
             </a>
