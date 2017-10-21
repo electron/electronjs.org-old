@@ -4,14 +4,14 @@ const setQueryString = require('set-query-string')
 
 module.exports = function createFilterList () {
   // look for a filterable list on this page
-  var list = document.querySelector('.filterable-list')
+  const list = document.querySelector('.filterable-list')
   if (!list || !list.parentElement) return
 
   // inherit initial query from `q` query param
   const filterInput = document.querySelector('.filterable-list-input')
   filterInput.value = queryString.parse(location.search).q || ''
 
-  var opts = {
+  const opts = {
     listClass: 'filterable-list',
     searchClass: 'filterable-list-input',
     valueNames: [
