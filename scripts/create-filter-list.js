@@ -27,7 +27,7 @@ module.exports = function createFilterList () {
   filterList.search(filterInput.value)
 
   // update the query param every time a search is performed
-  filterList.on('updated', function() {
+  filterList.on('updated', function () {
     setQueryString({q: filterInput.value})
   })
 }
