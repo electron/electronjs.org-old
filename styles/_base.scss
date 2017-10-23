@@ -13,6 +13,12 @@ a {
   color: $main-link-color;  // override Primer
 }
 
+h1,h2,h3,h4,h5,h6 {
+  a {
+    color: $main-color;  // override Primer
+  }
+}
+
 hr {
   border-color: $border-color; // override Primer
   margin-left: $spacer6 !important;
