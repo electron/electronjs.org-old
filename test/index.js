@@ -30,6 +30,17 @@ describe('electron.atom.io', () => {
       $('.category-list li').length.should.be.above(15)
     })
 
+    test('apps are sorted by date, descending', async () => {
+      const $ = await get('/apps')
+      const dates = $('.listed-app [data-date]')
+        .map((i, el) => new Date($(el).text()))
+        .get()
+
+      const clone = dates.slice(0)
+      dates.length.should.be.above(10)
+      clone.sort((a, b) => new Date(b) - new Date(a)).should.deep.equal(dates)
+    })
+
     test('index filtered by category', async () => {
       const $ = await get('/apps?category=games')
       $('.listed-app').length.should.be.above(15)

@@ -1,4 +1,4 @@
-const apps = require('electron-apps')
+const apps = require('../../lib/apps')
 const categories = require('electron-apps/categories')
 
 module.exports = (req, res) => {
