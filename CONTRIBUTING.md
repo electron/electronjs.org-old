@@ -12,6 +12,17 @@ feel free to propose changes to this document in a pull request.
 * Feel free to open a Pull Request early so that a discussion can be had as changes are developed.
 * Include screenshots and animated gifs of your changes whenever possible.
 
+## Review Apps
+
+[Heroku Review Apps](https://devcenter.heroku.com/articles/github-integration-review-apps)
+make it easier for reviewers to see the effects of a proposed change. Whenever 
+a pull request is opened on the website repo, the branch is autodeployed 
+to Heroku with a unique URL like `electron-website-pr-787.herokuapp.com`. 
+You'll see a notification on GitHub after the branch has been deployed.
+When pull request is closed or merged, the ephemeral app is destroyed.
+
+![review app notification](https://user-images.githubusercontent.com/2289/31911130-8a0f91da-b7f4-11e7-9784-9ad609321c18.png)
+
 ## Development
 
 Follow these steps to copy this repository to your computer and build the site:
