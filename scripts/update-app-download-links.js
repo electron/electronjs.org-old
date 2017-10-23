@@ -28,5 +28,4 @@ module.exports = function updateAppDownloadLinks () {
   if (links.length > 1) {
     document.querySelector('#view-all-downloads').style.display = 'inline-block'
   }
-  
 }
