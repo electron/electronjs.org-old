@@ -6,13 +6,32 @@ The following is a set of guidelines for contributing to the Electron website
 on GitHub. These are just guidelines, not rules, so use your best judgment and 
 feel free to propose changes to this document in a pull request.
 
-## Issues & Pull Requests
+## Table of Contents
+
+- [Issues and Pull Requests](#issues-and-pull-requests)
+- [Heroku Review Apps](#heroku-review-apps)
+- [Running the Site](#running-the-site)
+- [Editing Content](#content)
+  - [Documentation](#documentation)
+  - [Apps](#apps)
+  - [Blog](#blog)
+  - [Translations](#translations)
+- [Routes](#routes)
+- [Middlware](#middleware)
+- [Views](#views)
+- [Context](#context)
+- [Styles](#styles)
+- [Fontend JavaScript](#frontend-javascript)
+- [Scripts](#scripts)
+- [Environment Variables](#environment-variables)
+
+## Issues and Pull Requests
 
 * If you're not sure about adding something, [open an issue](https://github.com/electron/electron.atom.io/issues/new) to discuss it.
 * Feel free to open a Pull Request early so that a discussion can be had as changes are developed.
 * Include screenshots and animated gifs of your changes whenever possible.
 
-## Review Apps
+## Heroku Review Apps
 
 [Heroku Review Apps](https://devcenter.heroku.com/articles/github-integration-review-apps)
 make it easier for reviewers to see the effects of a proposed change. Whenever 
@@ -23,7 +42,7 @@ When pull request is closed or merged, the ephemeral app is destroyed.
 
 ![review app notification](https://user-images.githubusercontent.com/2289/31911130-8a0f91da-b7f4-11e7-9784-9ad609321c18.png)
 
-## Development
+## Running the Site
 
 Follow these steps to copy this repository to your computer and build the site:
 
@@ -39,21 +58,7 @@ You should now have an Express server running at
 
 Read on for more info about the structure of the site.
 
-- [Content](#content)
-  - [Documentation](#documentation)
-  - [Apps](#apps)
-  - [Blog](#blog)
-  - [Translations](#translations)
-- [Routes](#routes)
-- [Middlware](#middleware)
-- [Views](#views)
-- [Context](#context)
-- [Styles](#styles)
-- [Fontend JavaScript](#frontend-javascript)
-- [Scripts](#scripts)
-- [Environment Variables](#environment-variables)
-
-## Content
+## Editing Content
 
 The content on [electronjs.org] comes from a number of sources.
 
@@ -70,12 +75,12 @@ documentation data's structure.
 
 ### Apps
 
-The website has a page at [electronjs.org/apps](https://electronjs.org/apps that features applications built on Electron. If you want to add an app to the site, see 
-[electron/electron-apps](https://github.com/electron/electron-apps#adding-your-app).
+The website has a page at [electronjs.org/apps](https://electronjs.org/apps) that features applications built on Electron. If you want to add an app to the site, see the
+[electron-apps](https://github.com/electron/electron-apps#adding-your-app) repo.
 
 ### Blog
 
-Blog posts live in this repo, in `/data/blog`.
+Blog posts live in this repo, in [/data/blog](/data/blog).
 
 Blogs are written in "Jekyll style", with YML frontmatter at the top for
 metadata. The `title`, `author`, and `date` properties should be set
