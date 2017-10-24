@@ -64,14 +64,14 @@ in the `docs` directory. Contributions to the documentation should be made there
 
 After being [translated](#translations) on Crowdin, all the docs are automatically
 updated on the [electron/electron-i18n] repo and auto-published to npm as the
-`electron-i18n` package. That package is in turne used by this website repo
+`electron-i18n` package. That package is in turn used by this website repo
 as the source of all documentation. See [electron/electron-i18n#usage](https://github.com/electron/electron-i18n#usage) for an explanation of the
 documentation data's structure.
 
 ### Apps
 
-Want to add your app to the site? There's a repo for that. 
-See [electron/electron-apps](https://github.com/electron/electron-apps#adding-your-app).
+The website has a page at [electronjs.org/apps](https://electronjs.org/apps that features applications built on Electron. If you want to add an app to the site, see 
+[electron/electron-apps](https://github.com/electron/electron-apps#adding-your-app).
 
 ### Blog
 
@@ -98,7 +98,7 @@ A few guidelines to keep in mind when publishing a blog post:
 ### Translations
 
 Electron's API documentation, tutorials, and website content are translated
-into other Languages on a third-party site called Crowdin. Crowdin is a 
+into other languages on a third-party site called Crowdin. Crowdin is a 
 free and open tool, and  anyone is welcome to join in the translation process. 
 You can create an account easily and quickly by logging in with your GitHub 
 account.
@@ -110,10 +110,18 @@ on how to get started, or jump right into translating at
 
 ## Routes
 
-Routes are defined in [server.js](server.js).
+Website routes are defined in [server.js](server.js).
 
-Route handlers live in [/routes](/routes) and follow a Ruby-on-Rails-inspired
-naming convention:
+Here's an example of a basic route:
+
+```js
+app.get('/docs', routes.docs.index)
+```
+
+In the snippet above, `GET` requests to the `/docs` path on the site will be sent to the `routes.docs.index` function (called a _route
+handler_) that accepts the incoming request and renders the docs index page.
+
+Route handlers live in [/routes](/routes) and follow a Ruby-on-Rails-inspired naming convention:
 
 ```
 routes
