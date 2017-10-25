@@ -2,39 +2,34 @@
   <meta charset='utf-8'>
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
-
   <meta content='#2f3241' name='theme-color' />
-  {{#if pageDetails}}
-    <meta property="og:type" content="website" />
-    {{#if pageDetails.url}}
-      <meta property="og:url" content="{{pageDetails.url}}" />
-    {{/if}}
-    {{#if pageDetails.title}}
-      <title>{{pageDetails.title}}</title>
-      <meta property="og:title" content="{{pageDetails.title}}" />
-    {{/if}}
-    {{#if pageDetails.description}}
-      <meta property="og:description" content="{{pageDetails.description}}" />
-    {{/if}}
-    {{#if pageDetails.image}}
-      <meta property="og:image" content="{{pageDetails.image}}" />
-      <meta name="twitter:card" content="summary_large_image">
-    {{else}}
-      <meta name="twitter:card" content="summary">
-    {{/if}}
-    {{#if pageDetails.title}}
-      <meta name="twitter:title" value="{{pageDetails.title}}" />
-    {{/if}}
-    {{#if pageDetails.description}}
-      <meta name="twitter:description" value="{{pageDetails.description}}" />
-    {{/if}}
-    {{#if pageDetails.image}}
-      <meta property="twitter:image" content="{{pageDetails.image}}" />
-    {{/if}}
-    {{#if pageDetails.url}}
-      <meta name="twitter:url" value="{{pageDetails.url}}" />
-    {{/if}}
+  
+  <meta property="og:type" content="website" />
+
+  {{#if page.title}}
+    <title>{{page.title}}</title>
+    <meta property="og:title" content="{{page.title}}" />
+    <meta name="twitter:title" value="{{page.title}}" />
   {{/if}}
+  
+  {{#if page.url}}
+    <meta property="og:url" content="{{page.url}}" />
+    <meta name="twitter:url" value="{{page.url}}" />
+  {{/if}}
+
+  {{#if page.description}}
+    <meta property="og:description" content="{{page.description}}" />
+    <meta name="twitter:description" value="{{page.description}}" />
+  {{/if}}
+
+  {{#if page.image}}
+    <meta property="og:image" content="{{page.image}}" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:image" content="{{page.image}}" />
+  {{else}}
+    <meta name="twitter:card" content="summary">
+  {{/if}}
+
   <meta name="twitter:site" content="@ElectronJS" />
   <link rel='shortcut icon' href='/images/favicon.ico'/>
   <link rel='stylesheet' href='/styles/index.css'>

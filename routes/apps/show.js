@@ -8,7 +8,7 @@ module.exports = (req, res) => {
 
   const context = Object.assign(req.context, {
     app: app,
-    pageDetails: {
+    page: {
       title: `${app.name} | Apps | Electron`,
       url: req.url,
       description: app.description
@@ -22,7 +22,7 @@ module.exports = (req, res) => {
     })
   }
 
-  context.pageDetails.image = (app.screenshots && app.screenshots.length)
+  context.page.image = (app.screenshots && app.screenshots.length)
     ? app.screenshots[0].imageUrl
     : `${process.env.HOST}/images/apps/${app.icon64}`
 
