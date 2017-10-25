@@ -30,6 +30,12 @@ describe('electron.atom.io', () => {
       $('.category-list li').length.should.be.above(15)
     })
 
+    test('index has custom title and description meta tags', async () => {
+      const $ = await get('/apps')
+      $('head > title').text().should.eq('Electron Apps')
+      $('meta[property="og:description"]').attr('content').should.eq('Apps Built on Electron')
+    })
+
     test('apps are sorted by date, descending', async () => {
       const $ = await get('/apps')
       const dates = $('.listed-app [data-date]')
@@ -65,7 +71,7 @@ describe('electron.atom.io', () => {
 
     test('API doc', async () => {
       const $ = await get('/docs/api/browser-window')
-      $('.docs-breadcrumbs a').should.have.length(2)
+      $('.docs-breadcrumbs a').should.have.length(3)
       $('.docs-breadcrumbs a[href="/docs/api"]').should.have.text('API')
     })
 
