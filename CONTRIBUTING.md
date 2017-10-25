@@ -15,6 +15,7 @@ feel free to propose changes to this document in a pull request.
   - [Documentation](#documentation)
   - [Apps](#apps)
   - [Blog](#blog)
+  - [Localized Strings](#localized-strings)
   - [Translations](#translations)
 - [Routes](#routes)
 - [Middlware](#middleware)
@@ -99,6 +100,18 @@ A few guidelines to keep in mind when publishing a blog post:
 * Posts should normally be published on Tuesday mornings (Pacific time) for maximum social reach.
 * Make sure the date in the filename is today's date
 * Tweet about it once the post is live!
+
+### Localized Strings
+
+The [/data/locale.yml](/data/locale.yml) file contains English strings that 
+are used throughout the website. This file is synced with Crowdin as part of 
+the [translation](#translations) pipeline. These strings are displayed on the 
+site in the visitor's target language if available, with a fallback to the 
+English value if no translation exists yet.
+
+Content for page titles and other metadata like Facebook OpenGraph and Twitter 
+Cards meta tags is defined in this file, 'e.g. `pages['/apps'].title` and
+`pages['/apps'].description`.
 
 ### Translations
 
