@@ -10,8 +10,10 @@
       <a href='/docs/'>Docs</a> /
       {{#if category}}
         {{category}}
-      {{else}}
+      {{else if doc}}
         <a href="/docs/{{doc.category}}">{{doc.categoryFancy}}</a> / {{doc.title}}
+      {{else if viewingAllDocs}}
+        All
       {{/if}}
     </h4>
   </div>

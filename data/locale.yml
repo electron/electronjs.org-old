@@ -94,6 +94,9 @@ pages:
   '/apps':
     title: Electron Apps
     description: Apps Built on Electron
+  '/docs/all':
+    title: All the Electron Docs!
+    description: All of Electron's guides and API documentation on a single, searchable page.
   '/contact':
     title: Contact
     description: Get in touch with the Electron team on Twitter, Slack, GitHub, or via email.
