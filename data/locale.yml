@@ -90,6 +90,9 @@ apps:
 
 or: or
 
+view_all_docs: View all the docs on one page
+see_the_faq: See the frequently asked questions
+
 pages:
   '/apps':
     title: Electron Apps
