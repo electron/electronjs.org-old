@@ -11,7 +11,7 @@ module.exports = function contextBuilder (req, res, next) {
     vendoredVersions: vendoredVersions,
     currentLocale: req.language,
     locales: i18n.locales,
-    pageDetails: i18n.website[req.language].pages[req.path],
+    page: i18n.website[req.language].pages[req.path],
     localized: i18n.website[req.language]
   }
 
