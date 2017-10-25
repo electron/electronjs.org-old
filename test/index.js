@@ -86,6 +86,17 @@ describe('electron.atom.io', () => {
       $('head > title').text().should.eq('BrowserWindow | Electron')
       $('meta[property="og:description"]').attr('content').should.eq('Create and control browser windows.')
     })
+
+    test('docs/all', async () => {
+      const $ = await get('/docs/all')
+      $('head > title').text().should.eq('All the Electron Docs!')
+      const titles = $('h1')
+        .map((i, el) => $(el).text())
+        .get()
+      titles.should.include('BluetoothDevice Object') // API Structures
+      titles.should.include('BrowserWindow') // API Docs
+      titles.should.include('Application Distribution') // Tutorials
+    })
   })
 
   test('/blog', async () => {

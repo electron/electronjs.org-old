@@ -64,7 +64,8 @@ app.get('/apps/:slug', routes.apps.show)
 
 app.get('/docs/v0*', (req, res) => res.redirect(req.path.replace(/v0\.\d+\.\d+\//, '')))
 app.get('/docs', routes.docs.index)
-app.get('/docs/:category', routes.docs.category)
+app.get('/docs/all', routes.docs.all)
+app.get('/docs/:category', (req, res) => res.redirect('/docs'))
 app.get('/docs/:category/*', routes.docs.show)
 
 app.get('/userland', routes.userland.index)
