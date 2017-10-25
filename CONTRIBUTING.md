@@ -104,14 +104,24 @@ A few guidelines to keep in mind when publishing a blog post:
 ### Localized Strings
 
 The [/data/locale.yml](/data/locale.yml) file contains English strings that 
-are used throughout the website. This file is synced with Crowdin as part of 
+are used throughout the site. This file is synced with Crowdin as part of 
 the [translation](#translations) pipeline. These strings are displayed on the 
-site in the visitor's target language if available, with a fallback to the 
-English value if no translation exists yet.
+site in the visitor's target language if available, with a 
+[fallback to the English value](https://github.com/electron/electron.atom.io/blob/ec9d8a55420d33a7a4145ae9c7b08da559de839d/lib/i18n.js#L10-L19) 
+if no translation exists yet.
+
+To use localized strings in views, use the `localized` object, which is generated
+automatically by the [context middleware](#context):
+
+```html
+<p>{{{localized.web_technologies.description}}}</p>
+```
 
 Content for page titles and other metadata like Facebook OpenGraph and Twitter 
-Cards meta tags is defined in this file, 'e.g. `pages['/apps'].title` and
-`pages['/apps'].description`.
+Cards meta tags is also defined in the [/data/locale.yml](/data/locale.yml) 
+file, e.g. `pages['/apps'].title` and `pages['/apps'].description`. 
+If a localized title and/or desription are present for a given route, they 
+will be added to the `<head>` of the rendered page automatically.
 
 ### Translations
 
