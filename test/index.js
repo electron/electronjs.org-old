@@ -80,6 +80,12 @@ describe('electron.atom.io', () => {
       res.statusCode.should.equal(302)
       res.headers.location.should.equal('/docs/api/app')
     })
+
+    test('uses page title and description', async () => {
+      const $ = await get('/docs/api/browser-window')
+      $('head > title').text().should.eq('BrowserWindow | Electron')
+      $('meta[property="og:description"]').attr('content').should.eq('Create and control browser windows.')
+    })
   })
 
   test('/blog', async () => {
