@@ -16,10 +16,6 @@ module.exports = (req, res) => {
       processes: processes,
       category: categories[category]
     })
-  } else if (category === 'all') {
-    context = Object.assign(req.context, {
-      layout: 'docs'
-    })
   } else if (category === 'versions') {
     context = Object.assign(req.context, {
       layout: 'docs',
