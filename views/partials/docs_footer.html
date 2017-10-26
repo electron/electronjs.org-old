@@ -1,12 +1,19 @@
 <div class='text-center'>
   <span class="d-inline-block text-left">
+    
     <span class="octicon octicon-pencil mr-2"></span>
-    See something that needs fixing? Propose a change on the <a href='{{ page.source_url }}'>source</a>.
+    {{localized.footer.see_something}}
+    <a href='{{page.source_url}}'>{{localized.footer.propose_change}}</a>
     <br>
+
     <span class="octicon octicon-zap mr-2"></span>
-    Need a different version of the docs? See the <a href='/docs/versions/'>available versions</a> or <a href="https://github.com/electron/electron/tree/master/docs-translations">community translations</a>.
+    {{localized.footer.need_different_version}}
+    <a href='/docs/versions/'>{{localized.footer.see_available_versions}}</a>
     <br>
+
     <span class="octicon octicon-book mr-2"></span>
-    Want to search all the documentation at once? See all of the <a href='/docs/all'>docs on one page</a>.
+    {{localized.footer.want_something_searchable}}
+    <a href='/docs/all'>{{localized.footer.view_all_docs}}</a>  
+
   </span>
 </div>
