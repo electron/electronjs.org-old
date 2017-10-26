@@ -97,6 +97,11 @@ describe('electron.atom.io', () => {
       titles.should.include('BrowserWindow') // API Docs
       titles.should.include('Application Distribution') // Tutorials
     })
+
+    test('docs/api', async () => {
+      const $ = await get('/docs/api')
+      $('tr').length.should.be.above(10)
+    })
   })
 
   test('/blog', async () => {
