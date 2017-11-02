@@ -1,23 +1,23 @@
 <style>
   .app-download {
-    background: {{app.goodColorOnWhite}}; 
+    background: {{app.goodColorOnWhite}};
     color: white !important;
   }
 
   .page-section a {
-    color: {{app.goodColorOnWhite}}; 
+    color: {{app.goodColorOnWhite}};
   }
 </style>
 
 <section class="page-section">
-
-  <!-- <nav aria-label="Breadcrumb">
-    <ol>
-      <li class="breadcrumb-item text-small"><a href="/apps">Apps</a></li>
-      <li class="breadcrumb-item breadcrumb-item-selected text-small text-gray" aria-current="page">{{app.name}}</li>
-    </ol>
-  </nav> -->
   <div class="container-narrow media-fluid">
+    <nav aria-label="Breadcrumb">
+      <ol>
+        <li class="breadcrumb-item text-small"><a href="/apps">Apps</a></li>
+        <li class="breadcrumb-item breadcrumb-item-selected text-small text-gray" aria-current="page">{{app.name}}</li>
+      </ol>
+    </nav>
+
     <header class="app-header">
       <img class='app-logo' src='/node_modules/electron-apps/apps/{{app.slug}}/{{app.icon128}}' alt='{{app.name}}'>
       <a class="app-link" href="{{app.website}}">
@@ -107,7 +107,7 @@
             </td>
           </tr>
         {{/if}}
-        
+
         <tr>
           <td>
             Latest Release
