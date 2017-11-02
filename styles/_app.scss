@@ -11,6 +11,20 @@
   }
 }
 
+.app-details-container {
+  float: left;
+  width: 30%;
+}
+
+.app-description-container {
+  float: left;
+  width: 70%;
+}
+
+.app-logo-container {
+  text-align: center;
+}
+
 .app-logo {
   display: inline-block;
   max-width: 128px;

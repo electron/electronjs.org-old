@@ -18,9 +18,11 @@
       </ol>
     </nav>
 
-    <section style="float: left; width: 30%;">
+    <section class="app-details-container">
       <!-- icon, categories -->
-      <img class='app-logo' src='/node_modules/electron-apps/apps/{{app.slug}}/{{app.icon128}}' alt='{{app.name}}'>
+      <div class="app-logo-container">
+        <img class='app-logo' src='/node_modules/electron-apps/apps/{{app.slug}}/{{app.icon128}}' alt='{{app.name}}'>
+      </div>
 
       <table class="app-details">
         {{#if app.website}}
@@ -111,7 +113,7 @@
       </table>
     </section>
 
-    <section style="float: left; width: 70%;">
+    <section class="app-description-container">
       <!-- title, action buttons, description, screenshots -->
 
       <header class="app-header">
