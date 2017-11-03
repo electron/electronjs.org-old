@@ -29,92 +29,80 @@
     </div>
   </header>
 
-  <table class="app-details left">
+  <dl>
     {{#if app.website}}
-      <tr>
-        <td>Website</td>
-        <td><a href="{{app.website}}">{{app.website}}</a></td>
-      </tr>
+      <dt>Website</dt>
+      <dd>
+        <a href="{{app.website}}">{{app.website}}</a>
+      </dd>
     {{/if}}
 
     {{#if app.repository}}
-      <tr>
-        <td>Repository</td>
-        <td><a href="{{app.repository}}">{{app.repository}}</a></td>
-      </tr>
+      <dt>Repository</dt>
+      <dd>
+        <a href="{{app.repository}}">{{app.repository}}</a>
+      </dd>
     {{/if}}
 
-    <tr>
-        <td>Category</td>
-        <td><a href="/apps?category={{app.categorySlug}}">{{app.category}}</a></td>
-      </tr>
+    <dt>Category</dt>
+    <dt><a href="/apps?category={{app.categorySlug}}">{{app.category}}</a></dt>
 
     {{#if app.keywords}}
-      <tr>
-        <td>Keywords</td>
-        <td>
-          {{#each app.keywords}}
-            <a class="app-keyword" href="/apps?q={{this}}">{{this}}</a>
-          {{/each}}
-        </td>
-      </tr>
+      <dt>Keywords</dt>
+      <dd>
+        {{#each app.keywords}}
+          <a class="app-keyword" href="/apps?q={{this}}">{{this}}</a>
+        {{/each}}
+      </dd>
     {{/if}}
 
-
     {{#if app.license}}
-      <tr>
-        <td>License</td>
-        <td>{{app.license}}</td>
-      </>
+      <dt>License</dt>
+      <dt>{{app.license}}</dd>
     {{/if}}
 
     <!-- {{#if app.locales}}
-      <tr>
-        <td>Languages</td>
-        <td>
-          {{#each app.locales}}
-            {{this}}
-          {{/each}}
-        </td>
-      </tr>
+      <dt>Languages</dt>
+      <dt>
+        {{#each app.locales}}
+          {{this}}
+        {{/each}}
+      </dt>
     {{/if}} -->
 
     {{#if app.latestRelease}}
       {{#if app.latestRelease.assets}}
-        <tr>
-          <td>
-            Downloads
-          </td>
-          <td>
-            {{#each app.latestRelease.assets}}
-              <a class="app-download {{this.platform}}" href="{{this.browser_download_url}}">{{this.name}}</a>
-            {{/each}}
+        <dt>
+          Downloads
+        </dt>
+        <dd>
+          {{#each app.latestRelease.assets}}
+            <a class="app-download {{this.platform}}" href="{{this.browser_download_url}}">{{this.name}}</a>
+          {{/each}}
 
-            <a href="{{app.latestRelease.html_url}}" id="view-all-downloads" style="opacity:0.7;font-size:80%;display:none;">View all {{app.latestRelease.assets.length}} files</a>
-          </td>
-        </tr>
+          <a href="{{app.latestRelease.html_url}}" id="view-all-downloads" style="opacity:0.7;font-size:80%;display:none;">View all {{app.latestRelease.assets.length}} files</a>
+        </dd>
       {{/if}}
 
-      <tr>
-        <td>
-          Latest Release
-        </td>
-        <td>
-          <a href="{{app.latestRelease.html_url}}">
-            {{app.latestRelease.name}}
-            <span class="app-tagname">({{app.latestRelease.tag_name}})</span>
-          </a>
-        </td>
-      </tr>
+      <dt>
+        Latest Release
+      </dt>
+      <dd>
+        <a href="{{app.latestRelease.html_url}}">
+          {{app.latestRelease.name}}
+          <span class="app-tagname">({{app.latestRelease.tag_name}})</span>
+        </a>
+      </dd>
 
-      <tr>
-        <td>Release Notes
-        </td>
-        <td>
-          {{{app.latestRelease.body_html}}}
-        </td>
-      </tr>
+      <dt>Release Notes</dt>
+      <dd>
+        {{{app.latestRelease.body_html}}}
+      </dd>
     {{/if}}
+  </dl>
+
+  <table class="app-details left-column">
+
   </table>
 
   <div class="left">
