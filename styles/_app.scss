@@ -1,6 +1,7 @@
 // App page ------------------------------
 
 .app-header {
+  overflow: hidden;
   position: relative;
 }
 
@@ -9,16 +10,6 @@
     color: inherit;
     text-decoration: none;
   }
-}
-
-.app-details-container {
-  float: left;
-  width: 30%;
-}
-
-.app-description-container {
-  float: left;
-  width: 70%;
 }
 
 .app-logo-container {
@@ -129,4 +120,14 @@
 
 .filter-item {
   padding: 4px 8px;
+}
+
+.left-column {
+  float: left;
+  width: 30%;
+}
+
+.right-column {
+  float: left;
+  width: 70%;
 }
