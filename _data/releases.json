@@ -1476,24 +1476,6 @@
     "version": "0.36.2"
   },
   {
-    "url": "https://api.github.com/repos/electron/electron/releases/2309473",
-    "assets_url": "https://api.github.com/repos/electron/electron/releases/2309473/assets",
-    "upload_url": "https://uploads.github.com/repos/electron/electron/releases/2309473/assets{?name,label}",
-    "html_url": "https://github.com/electron/electron/releases/tag/v0.36.1",
-    "id": 2309473,
-    "tag_name": "v0.36.1",
-    "target_commitish": "master",
-    "name": "electron v0.36.1",
-    "draft": false,
-    "prerelease": false,
-    "created_at": "2015-12-18T05:16:30Z",
-    "published_at": "2015-12-18T07:17:31Z",
-    "tarball_url": "https://api.github.com/repos/electron/electron/tarball/v0.36.1",
-    "zipball_url": "https://api.github.com/repos/electron/electron/zipball/v0.36.1",
-    "body": "Changelog:\n- Add `session.webRequest` API.\n- Add `A5` to `webContents.printToPDF`'s `pageSize`.\n- `crashReporter.start` now requires passing `submitURL` and `companyName`.\n- Make `window.opener` a `BrowserWindowProxy`.\n- Don't pump message loop when sending synchronous message in renderer process.\n- Fix crash in V8 when doing garbage collection.\n- Fix crash when garbage collecting `Buffer`s.\n- Fix crash when passing empty path to `app.addRecentDocument`.\n- Fix crash when changing page's location while using service worker.\n- Fix `x` and `y` options not working in `BrowserWindow.capturePage`.\n\n**OS X**\n- Remove usages of private `xpc_` APIs in MAS build.\n- Fix `shell.openExternal` not able to open URLs with unescaped characters.\n",
-    "version": "0.36.1"
-  },
-  {
     "url": "https://api.github.com/repos/electron/electron/releases/2402717",
     "assets_url": "https://api.github.com/repos/electron/electron/releases/2402717/assets",
     "upload_url": "https://uploads.github.com/repos/electron/electron/releases/2402717/assets{?name,label}",
