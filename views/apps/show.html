@@ -29,113 +29,133 @@
     </div>
   </header>
 
-  <dl>
-    {{#if app.website}}
-      <dt>Website</dt>
-      <dd>
-        <a href="{{app.website}}">{{app.website}}</a>
-      </dd>
-    {{/if}}
+  <section class="app-details">
+    <div class="left-column">
+      <dl class="border-bottom pb-3 lh-condensed">
+        {{#if app.website}}
+          <dt>Website</dt>
+          <dd>
+            <a href="{{app.website}}">{{app.website}}</a>
+          </dd>
+        {{/if}}
+      </dl>
 
-    {{#if app.repository}}
-      <dt>Repository</dt>
-      <dd>
-        <a href="{{app.repository}}">{{app.repository}}</a>
-      </dd>
-    {{/if}}
-
-    <dt>Category</dt>
-    <dt><a href="/apps?category={{app.categorySlug}}">{{app.category}}</a></dt>
-
-    {{#if app.keywords}}
-      <dt>Keywords</dt>
-      <dd>
-        {{#each app.keywords}}
-          <a class="app-keyword" href="/apps?q={{this}}">{{this}}</a>
-        {{/each}}
-      </dd>
-    {{/if}}
-
-    {{#if app.license}}
-      <dt>License</dt>
-      <dt>{{app.license}}</dd>
-    {{/if}}
-
-    <!-- {{#if app.locales}}
-      <dt>Languages</dt>
-      <dt>
-        {{#each app.locales}}
-          {{this}}
-        {{/each}}
-      </dt>
-    {{/if}} -->
-
-    {{#if app.latestRelease}}
-      {{#if app.latestRelease.assets}}
-        <dt>
-          Downloads
-        </dt>
-        <dd>
-          {{#each app.latestRelease.assets}}
-            <a class="app-download {{this.platform}}" href="{{this.browser_download_url}}">{{this.name}}</a>
-          {{/each}}
-
-          <a href="{{app.latestRelease.html_url}}" id="view-all-downloads" style="opacity:0.7;font-size:80%;display:none;">View all {{app.latestRelease.assets.length}} files</a>
-        </dd>
+      {{#if app.repository}}
+        <dl class="border-bottom py-3 lh-condensed">
+          <dt>Repository</dt>
+          <dd>
+            <a href="{{app.repository}}">{{app.repository}}</a>
+          </dd>
+        </dl>
       {{/if}}
 
-      <dt>
-        Latest Release
-      </dt>
-      <dd>
-        <a href="{{app.latestRelease.html_url}}">
-          {{app.latestRelease.name}}
-          <span class="app-tagname">({{app.latestRelease.tag_name}})</span>
-        </a>
-      </dd>
+      <dl class="border-bottom py-3 lh-condensed">
+        <dt>Category</dt>
+        <dd>
+          <a href="/apps?category={{app.categorySlug}}">{{app.category}}</a>
+        </dt>
+      </dl>
 
-      <dt>Release Notes</dt>
-      <dd>
-        {{{app.latestRelease.body_html}}}
-      </dd>
-    {{/if}}
-  </dl>
+      {{#if app.keywords}}
+        <dl class="border-bottom pb-3 lh-condensed">
+          <dt>Keywords</dt>
+          <dd>
+            {{#each app.keywords}}
+              <a class="app-keyword" href="/apps?q={{this}}">{{this}}</a>
+            {{/each}}
+          </dd>
+        </dl>
+      {{/if}}
 
-  <table class="app-details left-column">
+      {{#if app.license}}
+        <dl class="border-bottom pb-3 lh-condensed">
+          <dt>License</dt>
+          <dt>{{app.license}}</dd>
+        </dl>
+      {{/if}}
 
-  </table>
+      <!-- {{#if app.locales}}
+        <dl>
+          <dt>Languages</dt>
+          <dt class="border-bottom pb-3 lh-condensed">
+            {{#each app.locales}}
+              {{this}}
+            {{/each}}
+          </dt>
+        </dl>
+      {{/if}} -->
 
-  <div class="left">
-    <p class="app-description">
-      {{app.description}}
-    </p>
+        {{#if app.latestRelease}}
+          {{#if app.latestRelease.assets}}
+            <dl class="border-bottom pb-3 lh-condensed">
+              <dt>
+                Downloads
+              </dt>
 
-    {{#each app.screenshots}}
-      <figure class="app-sreenshot">
-        <a href="{{../app.website}}">
-          <img src="{{imageUrl}}"></img>
-        </a>
-        {{#if caption}}
-          <figcaption class="text-center">
-            {{caption}}
-          </figcaption>
+              <dd>
+                {{#each app.latestRelease.assets}}
+                  <a class="app-download {{this.platform}}" href="{{this.browser_download_url}}">{{this.name}}</a>
+                {{/each}}
+
+                <a href="{{app.latestRelease.html_url}}" id="view-all-downloads" style="opacity:0.7;font-size:80%;display:none;">View all {{app.latestRelease.assets.length}} files</a>
+              </dd>
+            </dl>
+          {{/if}}
+
+          <dl class="border-bottom pb-3 lh-condensed">
+            <dt>
+              Latest Release
+            </dt>
+            <dd>
+              <a href="{{app.latestRelease.html_url}}">
+                {{app.latestRelease.name}}
+                <span class="app-tagname">({{app.latestRelease.tag_name}})</span>
+              </a>
+            </dd>
+          </dl>
+
+          <dl>
+            <dt>Release Notes</dt>
+            <dd class="border-bottom pb-3 lh-condensed">
+              {{{app.latestRelease.body_html}}}
+            </dd>
+          </dl>
         {{/if}}
-      </figure>
-    {{/each}}
+      </dl>
+    </div>
 
-    {{#if app.readmeCleaned}}
-      <div class="app-readme-wrapper">
-        <header class="app-readme-header">
-          <button class="app-readme-button btn btn-lg btn-outline-themed" type="button" id="display-readme">
-            View the {{app.name}} README <span id="display-readme-icon" class="octicon octicon-chevron-down ml-2"></span>
-          </button>
-        </header>
-        <main id="readme" class="app-readme d-none">
-          {{{app.readmeCleaned}}}
-        </main>
-      </div>
-    {{/if}}
-  </div>
+    <div class="right-column">
+      <p class="app-description">
+        {{app.description}}
+      </p>
+
+      {{#each app.screenshots}}
+        <figure class="app-sreenshot">
+          <a href="{{../app.website}}">
+            <img src="{{imageUrl}}"></img>
+          </a>
+          {{#if caption}}
+            <figcaption class="text-center">
+              {{caption}}
+            </figcaption>
+          {{/if}}
+        </figure>
+      {{/each}}
+
+      {{#if app.readmeCleaned}}
+        <div class="app-readme-wrapper">
+          <header class="app-readme-header">
+            <button class="app-readme-button btn btn-lg btn-outline-themed" type="button" id="display-readme">
+              View the {{app.name}} README <span id="display-readme-icon" class="octicon octicon-chevron-down ml-2"></span>
+            </button>
+          </header>
+          <main id="readme" class="app-readme d-none">
+            {{{app.readmeCleaned}}}
+          </main>
+        </div>
+      {{/if}}
+    </div>
+  </section>
 </section>
 
 <script>
