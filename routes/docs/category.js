@@ -1,7 +1,7 @@
 const processes = require('../../data/processes.json')
 const versions = require('../../data/versions.json')
 
-module.exports = (req, res) => {
+module.exports = (req, res, next) => {
   const categoryList = [
     { path: 'all', name: 'All the Electron Docs!' },
     { path: 'tutorial', name: 'Guides' },
@@ -43,6 +43,6 @@ module.exports = (req, res) => {
     }
     res.render(`docs/${category}`, context)
   }  else {
-    res.status(404).render('404')
+    next()
   }
 }
