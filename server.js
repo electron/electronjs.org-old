@@ -7,11 +7,11 @@ const lobars = require('lobars')
 // Middleware
 const hbs = require('express-hbs')
 const slashes = require('connect-slashes')
-const browsersync = require('./middleware/browsersync')()
+const browsersync = require('./middleware/browsersync')
 const browserify = require('./middleware/browserify')
 const requestLanguage = require('express-request-language')
 const cookieParser = require('cookie-parser')
-const sass = require('./middleware/sass')()
+const sass = require('./middleware/sass')
 const helmet = require('helmet')
 const contextBuilder = require('./middleware/context-builder')
 const blog = require('./middleware/blog')
@@ -37,7 +37,7 @@ app.engine('html', hbs.express4({
 app.set('view engine', 'html')
 app.set('views', path.join(__dirname, '/views'))
 app.use(helmet())
-app.use(sass)
+app.use(sass())
 app.use('/scripts/index.js', browserify('scripts/index.js'))
 app.use(slashes(false))
 app.use(cookieParser())
@@ -51,7 +51,7 @@ app.use(requestLanguage({
 app.use(contextBuilder)
 app.use(blog)
 app.use(express.static(__dirname))
-app.use(browsersync)
+app.use(browsersync())
 
 // Routes
 const routes = require('./routes')
@@ -77,7 +77,13 @@ app.get('/contact', routes.contact)
 app.get('/releases', routes.releases)
 
 // Generic 404 handler
-app.use((req, res, next) => res.status(404).render('404'))
+app.use((req, res, next) => {
+  res.status(404).render('404', {
+    page: {
+      title: '404 Not Found | Electron'
+    }
+  })
+})
 
 if (!module.parent) {
   app.listen(port, () => {
