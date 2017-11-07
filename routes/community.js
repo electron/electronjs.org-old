@@ -25,7 +25,10 @@ module.exports = (req, res) => {
   parseData(items).then((communityData) => {
     const context = Object.assign(req.context, {
       items: communityData,
-      meetups: meetups
+      meetups: meetups,
+      page: {
+        title: 'Communiy | Electron'
+      }
     })
 
     res.render('community', context)

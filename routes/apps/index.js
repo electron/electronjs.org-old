@@ -4,7 +4,10 @@ const categories = require('electron-apps/categories')
 module.exports = (req, res) => {
   const context = Object.assign(req.context, {
     apps: apps,
-    categories: categories
+    categories: categories,
+    page: {
+      title: 'Apps | Electron'
+    }
   })
 
   if (req.query.category) {

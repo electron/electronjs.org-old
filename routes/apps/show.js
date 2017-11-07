@@ -1,10 +1,10 @@
 const apps = require('electron-apps')
 const {getPlatformFromFilename} = require('platform-utils')
 
-module.exports = (req, res) => {
+module.exports = (req, res, next) => {
   const app = apps.find(app => app.slug === req.params.slug)
 
-  if (!app) return res.status(404).render('404')
+  if (!app) return next()
 
   const context = Object.assign(req.context, {
     app: app,
