@@ -129,19 +129,6 @@
     </div>
 
     <div class="col-md-9">
-      {{#each app.screenshots}}
-        <figure class="app-sreenshot">
-          <a href="{{../app.website}}">
-            <img src="{{imageUrl}}"></img>
-          </a>
-          {{#if caption}}
-            <figcaption class="text-center">
-              {{caption}}
-            </figcaption>
-          {{/if}}
-        </figure>
-      {{/each}}
-
       {{#if app.readmeCleaned}}
         <div class="app-readme-wrapper">
           <header>
@@ -154,6 +141,19 @@
           </main>
         </div>
       {{/if}}
+
+      {{#each app.screenshots}}
+        <figure class="app-sreenshot">
+          <a href="{{../app.website}}">
+            <img src="{{imageUrl}}"></img>
+          </a>
+          {{#if caption}}
+            <figcaption class="text-center">
+              {{caption}}
+            </figcaption>
+          {{/if}}
+        </figure>
+      {{/each}}
     </div>
   </section>
 </section>
