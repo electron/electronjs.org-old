@@ -9,9 +9,9 @@
   width: 100%;
 }
 
-.table-ruled td {
+.table-ruled td, .table-ruled th {
   padding: $spacer2;
-  line-height: 1.4;
+  line-height: 2;
   text-align: left;
   font-size: 14px;
 }
