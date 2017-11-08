@@ -18,19 +18,23 @@
   </nav>
 
   <header class="app-header">
-    <div class="left-column app-logo-container">
+    <div class="left-column app-logo-container mr-3">
       <img class='app-logo' src='/node_modules/electron-apps/apps/{{app.slug}}/{{app.icon128}}' alt='{{app.name}}'>
     </div>
 
     <div class="right-column">
-      <a class="app-link" href="{{app.website}}">
-        <h1 class='app-name'>{{app.name}}</h1>
-      </a>
+      <h1 class='app-name'>
+        <a class="app-link" href="{{app.website}}">{{app.name}}</a>
+      </h1>
+
+      <p class="app-description">
+        {{app.description}}
+      </p>
     </div>
   </header>
 
-  <section class="app-details">
-    <div class="left-column">
+  <section>
+    <div class="left-column mr-3">
       <dl class="border-bottom pb-3 lh-condensed">
         {{#if app.website}}
           <dt>Website</dt>
@@ -125,10 +129,6 @@
     </div>
 
     <div class="right-column">
-      <p class="app-description">
-        {{app.description}}
-      </p>
-
       {{#each app.screenshots}}
         <figure class="app-sreenshot">
           <a href="{{../app.website}}">
@@ -144,7 +144,7 @@
 
       {{#if app.readmeCleaned}}
         <div class="app-readme-wrapper">
-          <header class="app-readme-header">
+          <header>
             <button class="app-readme-button btn btn-lg btn-outline-themed" type="button" id="display-readme">
               View the {{app.name}} README <span id="display-readme-icon" class="octicon octicon-chevron-down ml-2"></span>
             </button>

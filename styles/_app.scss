@@ -18,8 +18,6 @@
 
 .app-logo {
   display: inline-block;
-  max-width: 128px;
-  height: 128px;
 }
 
 .app-name {
@@ -42,8 +40,6 @@
 
 
 .app-details {
-  margin: 2rem;
-
   td {
     padding: 1rem 0;
   }
@@ -92,11 +88,6 @@
   }
 }
 
-.app-readme-header {
-  margin: 3rem 0;
-  text-align: center;
-}
-
 .app-readme-button {
   border-color: $main-border-color;
 }
@@ -129,5 +120,4 @@
 
 .right-column {
   float: left;
-  width: 70%;
 }
