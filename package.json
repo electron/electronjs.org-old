@@ -35,7 +35,7 @@
     "cookie-parser": "^1.4.3",
     "dotenv": "^4.0.0",
     "electron-apps": "^1.1729.0",
-    "electron-i18n": "^0.7.3",
+    "electron-i18n": "^0.9.1",
     "electron-userland-reports": "1.6.0",
     "express": "^4.15.3",
     "express-hbs": "^1.0.4",

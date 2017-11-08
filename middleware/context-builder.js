@@ -12,7 +12,8 @@ module.exports = function contextBuilder (req, res, next) {
     currentLocale: req.language,
     locales: i18n.locales,
     page: i18n.website[req.language].pages[req.path],
-    localized: i18n.website[req.language]
+    localized: i18n.website[req.language],
+    cookies: req.cookies
   }
 
   if (req.path.startsWith('/docs')) {

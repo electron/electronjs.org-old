@@ -108,14 +108,18 @@ describe('electron.atom.io', () => {
     const $ = await get('/blog')
     $('header').should.have.class('site-header')
     $('.posts-list li').length.should.be.above(10)
-    // TODO: localized content
-    // TODO: page title
   })
 
   test('/blog/webtorrent', async () => {
     const $ = await get('/blog/webtorrent')
     $('header').should.have.class('site-header')
     // TODO: post title is page title
+  })
+
+  test('/languages', async () => {
+    const $ = await get('/languages')
+    $('h1').text().should.eq('Languages')
+    $('body').text().should.include('global developer community')
   })
 
   test('redirects for date-style blog URLs', async () => {
