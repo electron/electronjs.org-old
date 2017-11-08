@@ -1,6 +1,20 @@
 .site-header a {
+  transition: all 0.3s;
+}
+
+.site-header nav a {
   line-height: 2.3;
+  border-bottom: 2px solid transparent;
   &.active, &:active, &:hover {
-    border-bottom: 2px solid $jumbo-color-strong;
+    border-bottom-color: $jumbo-color-strong;
+  }
+
+  &.bordered {
+    border: 1px solid $jumbo-color-strong;
+    border-radius: 3px;
+    padding: 0 7px;
+    opacity: 0.7;
+    font-size: 12px;
+    line-height: 2;
   }
 }
