@@ -35,17 +35,17 @@
           </td>
       
           <td>
-            <a href="https://crowdin.com/project/electron/{{this.languageCode}}" id="{{this.locale}}">
-              {{#eq this.locale 'en-US'}}
-                <span style="opacity:0.4">
-                    <progress value="{{this.stats.translated_progress}}" max="100">{{this.stats.translated_progress}}%</progress>
-                    N/A
-                </span>
-              {{else}}
+            {{#eq this.locale 'en-US'}}
+              <span style="opacity:0.4">
+                  <progress value="{{this.stats.translated_progress}}" max="100">{{this.stats.translated_progress}}%</progress>
+                  N/A
+              </span>
+            {{else}}
+              <a href="https://crowdin.com/project/electron/{{this.languageCode}}" id="{{this.locale}}">
                 <progress value="{{this.stats.translated_progress}}" max="100">{{this.stats.translated_progress}}%</progress>
                 {{this.stats.translated_progress}}%
-              {{/eq}}
-            </a>
+              </a>
+            {{/eq}}
           </td>
       
           <td class="visible-on-hover">
