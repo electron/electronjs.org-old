@@ -18,6 +18,7 @@ async function parsePost (filename) {
   post.href = `/blog/${post.slug}`
   post.href2 = null
   Object.assign(post, await hubdown(markdown, {frontmatter: true}))
+  Object.assign(post, { excerpt: post.content.split('<hr>')[0] })
   if (!post.date) throw new Error(`${filename} is missing a date attribute`)
   let [year, month, day] = post.date.split('-')
   post.href2 = `/blog/${year}/${month}/${day}/${post.slug}`
@@ -28,8 +29,7 @@ module.exports = function blogHandler (req, res, next) {
   if (!req.path.startsWith('/blog')) return next()
 
   const context = Object.assign(req.context, {
-    posts: posts,
-    layout: 'page'
+    posts: posts
   })
 
   if (req.path === '/blog') {
