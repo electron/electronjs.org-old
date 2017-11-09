@@ -102,6 +102,16 @@ describe('electron.atom.io', () => {
       const $ = await get('/docs/api')
       $('tr').length.should.be.above(10)
     })
+
+    test('docs/404', async () => {
+      const $ = await get('/docs/404')
+      $('.page-section.error-page').length.should.eq(1)
+    })
+
+    test('docs/api/404', async () => {
+      const $ = await get('/docs/api/404')
+      $('.page-section.error-page').length.should.eq(1)
+    })
   })
 
   test('/blog', async () => {
