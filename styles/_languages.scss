@@ -1,9 +1,7 @@
 progress {
   -webkit-appearance: none;
-  appearance: none;
 
   height: 10px;
-  background: white;
 }
 
 progress[value]::-webkit-progress-bar {
