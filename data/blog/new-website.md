@@ -53,11 +53,19 @@ always fresh from the master branch.
 
 now categorized and each app has its own URL.
 
+https://electronjs.org/apps?q=graphql
+
+
+
+
+
 ## 🔧 Consistent Tooling
 
 
 jekyll is approachable... but.
 goodbye ruby; node is everywhere.
+
+Every PR has an ephemeral app!
 
 ```sh
 git clone https://github.com/electron/electronjs.org
