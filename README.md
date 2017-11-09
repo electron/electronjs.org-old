@@ -1,5 +1,7 @@
 # electron.atom.io
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/electron/electron.atom.io.svg)](https://greenkeeper.io/)
+
 This is the source code for the [Electron website](http://electron.atom.io). It's a static [Jekyll](https://jekyllrb.com) site hosted on [GitHub Pages](https://pages.github.com).
 
 ## Contributing
