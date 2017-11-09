@@ -18,7 +18,7 @@ async function parseItem (item) {
 }
 
 async function parseData (items) {
-  return await Promise.all(items.map(parseItem))
+  return Promise.all(items.map(parseItem))
 }
 
 module.exports = (req, res) => {
