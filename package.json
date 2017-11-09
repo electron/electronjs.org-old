@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "awesome-electron": "^2.5.0",
+    "babel-core": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babelify": "^8.0.0",
     "browser-date-formatter": "^2.1.1",
