@@ -28,9 +28,7 @@ async function parsePost (filename) {
 module.exports = function blogHandler (req, res, next) {
   if (!req.path.startsWith('/blog')) return next()
 
-  const context = Object.assign(req.context, {
-    posts: posts
-  })
+  const context = Object.assign({}, req.context, {posts: posts})
 
   if (req.path === '/blog') {
     return res.render('posts/index', context)
@@ -47,5 +45,5 @@ module.exports = function blogHandler (req, res, next) {
 
   if (!context.post) return res.status(404).render('404')
 
-  res.render('posts/show', context)
+  res.render('posts/show', Object.assign(context, {layout: 'page'}))
 }
