@@ -65,7 +65,6 @@ I will introduce what kind of conditions can be used for stream.
 
 ### Users and Teams
 
-{: .table .table-ruled .table-full-width}
 | Stream | Issues |
 | ---- | --- |
 | `mentions:cat mentions:dog` | Issues that mention user `cat` or `dog`|
@@ -79,7 +78,6 @@ I will introduce what kind of conditions can be used for stream.
 
 ### Repositories and Organizations
 
-{: .table .table-ruled .table-full-width}
 | Stream | Issues |
 | --- | --- |
 | `repo:cat/jump repo:dog/run` | Issues in `cat/jump` or `dog/run` |
@@ -89,7 +87,6 @@ I will introduce what kind of conditions can be used for stream.
 
 ### Attributes
 
-{: .table .table-ruled .table-full-width}
 | Stream | Issues |
 | --- | --- |
 | `repo:cat/jump milestone:v1.0.0 milestone:v1.0.1` | Issues that are attached to `v1.0.0` or `v1.0.1` in `cat/jump` |
@@ -98,7 +95,6 @@ I will introduce what kind of conditions can be used for stream.
 
 ### Review Status
 
-{: .table .table-ruled .table-full-width}
 | Stream | Issues |
 | --- | --- |
 | `is:pr review:required` | Issues that are required review in `cat/jump` |
