@@ -64,13 +64,13 @@ installed package.
 
 The [safest way](https://electron.atom.io/docs/tutorial/electron-versioning/) to install Electron is using an exact version number:
 
-```
+```sh
 npm install electron --save-dev --save-exact
 ```
 
 Or if you're using [yarn](https://yarnpkg.com/lang/en/docs/migrating-from-npm/#toc-cli-commands-comparison):
 
-```
+```sh
 yarn add electron --dev --exact
 ```
 
