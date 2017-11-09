@@ -129,7 +129,20 @@
     </div>
 
     <div class="col-md-9 my-3">
-      <table>
+      {{#if app.readmeCleaned}}
+        <div class="app-readme-wrapper">
+          <header>
+            <button class="app-readme-button btn btn-lg btn-outline-themed" type="button" id="display-readme">
+              View the {{app.name}} README <span id="display-readme-icon" class="octicon octicon-chevron-down ml-2"></span>
+            </button>
+          </header>
+          <main id="readme" class="app-readme box-shadow-medium d-none">
+            {{{app.readmeCleaned}}}
+          </main>
+        </div>
+      {{/if}}
+
+      <table class="app-screenshots my-3 box-shadow-medium">
         <tr>
           {{#each app.screenshots}}
             <td>
@@ -147,19 +160,6 @@
           {{/each}}
         </tr>
       </table>
-
-      {{#if app.readmeCleaned}}
-        <div class="app-readme-wrapper">
-          <header>
-            <button class="app-readme-button btn btn-lg btn-outline-themed" type="button" id="display-readme">
-              View the {{app.name}} README <span id="display-readme-icon" class="octicon octicon-chevron-down ml-2"></span>
-            </button>
-          </header>
-          <main id="readme" class="app-readme box-shadow-medium d-none">
-            {{{app.readmeCleaned}}}
-          </main>
-        </div>
-      {{/if}}
     </div>
   </section>
 </section>
