@@ -45,5 +45,8 @@ module.exports = function blogHandler (req, res, next) {
 
   if (!context.post) return res.status(404).render('404')
 
-  res.render('posts/show', Object.assign(context, {layout: 'page'}))
+  res.render('posts/show', Object.assign(context, {
+    layout: 'page',
+    page: {title: `${context.post.title} | Electron Blog`}
+  }))
 }
