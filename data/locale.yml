@@ -118,3 +118,6 @@ pages:
   '/contact':
     title: Contact
     description: Get in touch with the Electron team on Twitter, Slack, GitHub, or via email.
+  '/blog':
+    title: Electron Blog
+    description: All the latest news from the Electron team and community.
