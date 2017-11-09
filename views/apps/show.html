@@ -129,18 +129,24 @@
     </div>
 
     <div class="col-md-9 my-3">
-      {{#each app.screenshots}}
-        <figure class="app-sreenshot">
-          <a href="{{../app.website}}">
-            <img src="{{imageUrl}}"></img>
-          </a>
-          {{#if caption}}
-            <figcaption class="text-center">
-              {{caption}}
-            </figcaption>
-          {{/if}}
-        </figure>
-      {{/each}}
+      <table>
+        <tr>
+          {{#each app.screenshots}}
+            <td>
+              <figure>
+                <a href="{{../app.website}}">
+                  <img src="{{imageUrl}}" />
+                </a>
+                {{#if caption}}
+                  <figcaption class="f6 text-center">
+                    {{caption}}
+                  </figcaption>
+                {{/if}}
+              </figure>
+            </td>
+          {{/each}}
+        </tr>
+      </table>
 
       {{#if app.readmeCleaned}}
         <div class="app-readme-wrapper">
