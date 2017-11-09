@@ -1,3 +1,7 @@
+pre {
+  margin-bottom: 10px;
+}
+
 code {
   color: darken(saturate($main-color, 50%), 10%);
   background-color: darken($main-bg-color, 5%);
