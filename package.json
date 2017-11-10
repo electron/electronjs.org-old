@@ -10,7 +10,6 @@
   "scripts": {
     "start": "NODE_ENV=production node server.js",
     "bootstrap": "script/bootstrap",
-    "link-checker": "grunt linkChecker",
     "test": "NODE_ENV=test mocha && standard --fix",
     "build": "npm-run-all build-*",
     "build-versions": "script/versions",
