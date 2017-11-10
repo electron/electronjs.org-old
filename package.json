@@ -15,7 +15,7 @@
     "build": "npm-run-all build-*",
     "build-versions": "script/versions",
     "build-releases": "script/releases",
-    "release": "script/release 2>&1 | script/notify",
+    "release": "script/release",
     "dev": "nodemon -e js,scss,yml server.js",
     "prepack": "check-for-leaks",
     "prepush": "check-for-leaks"
