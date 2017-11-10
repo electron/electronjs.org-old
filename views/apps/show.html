@@ -129,6 +129,23 @@
     </div>
 
     <div class="col-md-9 my-3">
+      {{#if app.screenshots}}
+        <div class="app-screenshots my-3 box-shadow-medium">
+          {{#each app.screenshots}}
+            <figure class="app-screenshot p-3">
+              <a href="{{imageUrl}}">
+                <img src="{{imageUrl}}" />
+              </a>
+              {{#if caption}}
+                <figcaption class="screenshot-caption text-center">
+                  {{caption}}
+                </figcaption>
+              {{/if}}
+            </figure>
+          {{/each}}
+        </div>
+      {{/if}}
+
       {{#if app.readmeCleaned}}
         <div class="app-readme-wrapper">
           <header>
@@ -142,20 +159,6 @@
         </div>
       {{/if}}
 
-      <div class="app-screenshots my-3 box-shadow-medium">
-        {{#each app.screenshots}}
-          <figure class="app-screenshot p-3">
-            <a href="{{imageUrl}}">
-              <img src="{{imageUrl}}" />
-            </a>
-            {{#if caption}}
-              <figcaption class="screenshot-caption text-center">
-                {{caption}}
-              </figcaption>
-            {{/if}}
-          </figure>
-        {{/each}}
-      </div>
     </div>
   </section>
 </section>

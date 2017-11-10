@@ -89,6 +89,7 @@
   border: 1px solid $main-border-color;
   border-radius: 3px;
   overflow: hidden;
+  display: flex;
 }
 
 .app-screenshot {
@@ -109,7 +110,7 @@
 .app-readme {
   padding: 3rem;
   border: 1px solid $main-border-color;
-  border-radius: 5px;
+  border-radius: 3px;
 
   .octicon-link {
     display: none;
