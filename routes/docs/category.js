@@ -1,12 +1,19 @@
 const processes = require('../../data/processes.json')
 const versions = require('../../data/versions.json')
+const i18n = require('../../lib/i18n')
+const singlePage = require('./show')
 
 module.exports = (req, res, next) => {
+  const doc = i18n.docs[req.language][req.path]
+  if (doc) {
+    return singlePage(req, res, next)
+  }
+
   const categoryList = [
     { path: 'all', name: 'All the Electron Docs!' },
-    { path: 'tutorial', name: 'Guides' },
     { path: 'api', name: 'API' },
     { path: 'development', name: 'Development' },
+    { path: 'tutorial', name: 'Guides' },
     { path: 'versions', name: 'Versions' }
   ]
   const category = req.params.category
