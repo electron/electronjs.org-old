@@ -10,6 +10,13 @@ nav:
   contact: Contact
   languages: Languages
 
+docs:
+  title: Electron Documentation
+  description: See all of the <a href="/docs/all/">docs on one page</a> or check out the <a href="/docs/faq/">FAQ</a>.
+  guides: Guides
+  api_reference: API Reference
+  advanced: Advanced
+
 electron_is_easy:
   title: It's easier than you think
   description:
