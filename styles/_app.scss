@@ -88,6 +88,18 @@
 .app-screenshots {
   border: 1px solid $main-border-color;
   border-radius: 3px;
+  overflow: hidden;
+}
+
+.app-screenshot {
+  border-right: 1px solid $main-border-color;
+  float: left;
+  margin: 0;
+  width: 20%;
+}
+
+.screenshot-caption {
+  font-size: 12px;
 }
 
 .app-readme-button {

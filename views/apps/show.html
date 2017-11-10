@@ -142,24 +142,20 @@
         </div>
       {{/if}}
 
-      <table class="app-screenshots my-3 box-shadow-medium">
-        <tr>
-          {{#each app.screenshots}}
-            <td>
-              <figure>
-                <a href="{{../app.website}}">
-                  <img src="{{imageUrl}}" />
-                </a>
-                {{#if caption}}
-                  <figcaption class="f6 text-center">
-                    {{caption}}
-                  </figcaption>
-                {{/if}}
-              </figure>
-            </td>
-          {{/each}}
-        </tr>
-      </table>
+      <div class="app-screenshots my-3 box-shadow-medium">
+        {{#each app.screenshots}}
+          <figure class="app-screenshot p-3">
+            <a href="{{../app.website}}">
+              <img src="{{imageUrl}}" />
+            </a>
+            {{#if caption}}
+              <figcaption class="screenshot-caption text-center">
+                {{caption}}
+              </figcaption>
+            {{/if}}
+          </figure>
+        {{/each}}
+      </div>
     </div>
   </section>
 </section>
