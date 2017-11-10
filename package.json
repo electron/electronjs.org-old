@@ -15,7 +15,7 @@
     "build-versions": "script/versions",
     "build-releases": "script/releases",
     "release": "script/release",
-    "dev": "nodemon -e js,scss,yml server.js",
+    "dev": "NODE_PATH=. nodemon -e js,scss,yml server.js",
     "prepack": "check-for-leaks",
     "prepush": "check-for-leaks"
   },
