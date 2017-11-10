@@ -1,20 +1,12 @@
 <div class='subtron'>
   <div class='container-narrow'>
     <h1>Electron Releases</h1>
-    <p>
-      {{#each releases}}
-        <a class='releases-tag' href='{{ this.html_url }}'>{{ this.version }}</a>
-      {{/each}}
-    </p>
-    <p>
-      <a href="https://github.com/electron/electron/releases"><span class="octicon octicon-tag mr-1"></span>All Releases</a>
-    </p>
   </div>
 </div>
 
 <section class='page-section'>
   <div class='container-narrow'>
-    <h3>Tip: Use Electron from the command line</h3>
+    <!-- <h3>Tip: Use Electron from the command line</h3>
     <p>Installing the <code>electron</code> module as a development dependency in your project will let you use Electron from the command line at specific versions. More information on the <a href="https://github.com/electron-userland/electron-prebuilt">module's repository</a>.</p>
 
     <figure class="highlight highlight-dark text-left my-4">
@@ -23,10 +15,21 @@
 $ ./node_modules/.bin/electron .</code></pre>
     </figure>
 
-    <hr>
+    <hr> -->
 
     <div class="releases">
-      {{ content }}
+      {{#each releases}}
+        <h2 id="{{this.version}}">
+          <a href="#{{this.version}}">Electron {{this.version}}</a>
+          <em data-date="{{this.created_at}}" data-format="%B %d, %Y">{{this.created_at}}</em><em>(<span data-date="{{this.created_at}}"></span>)</em>
+          <a href="{{this.html_url}}" class="octicon-wrapper"><span class="octicon octicon-mark-github vertical-middle"></span></a>
+        </h2>
+        
+        {{{this.body_html}}}
+        
+        
+        <hr>
+      {{/each}}
     </div>
 
     <div class="text-center">

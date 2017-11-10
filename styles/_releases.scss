@@ -21,14 +21,14 @@
 
   // TODO: Use classes instead of styling elements
 
-  h3 {
+  h2 {
     margin-bottom: $spacer3;
   }
 
   // Tag
-  h3 a {
+  h2 a {
     display: inline-block;
-    padding: .1em .4em;
+    padding: .1em .3em;
     color: $main-color;
     border: 1px solid $border-color;
     border-radius: $border-radius;
@@ -36,6 +36,9 @@
       text-decoration: none;
       color: $main-color-strong;
       background-color: $main-bg-color-shade;
+    }
+    &.octicon-wrapper {
+      border: none;
     }
   }
 
