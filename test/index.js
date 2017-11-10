@@ -21,6 +21,12 @@ describe('electron.atom.io', () => {
     $('header').should.have.class('site-header')
     $('p.jumbotron-lead').should.contain('Build cross platform desktop apps')
     $('.featured-app').length.should.equal(24)
+
+    // versions
+    $('#electron-versions').text().should.match(/Electron: \d+\.\d+\.\d+/)
+    $('#electron-versions').text().should.match(/Node: \d+\.\d+\.\d+/)
+    $('#electron-versions').text().should.match(/Chromium: \d+\.\d+\.\d+\.\d+/)
+    $('#electron-versions').text().should.match(/V8: \d+\.\d+\.\d+\.\d+/)
   })
 
   describe('apps', () => {
