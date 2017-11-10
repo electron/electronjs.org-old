@@ -120,6 +120,19 @@ describe('electron.atom.io', () => {
     })
   })
 
+  describe('releases', () => {
+    test('/releases', async () => {
+      const $ = await get('/releases')
+      $('h1').text().should.include('Releases')
+      $('h2').length.should.be.above(35)
+
+      const titles = $('h2 a').map((i, el) => $(el).text().trim()).get()
+      titles.should.include('Electron 1.7.9')
+      titles.should.include('Electron 1.6.7')
+      titles.should.include('Electron 0.37.8')
+    })
+  })
+
   test('/blog', async () => {
     const $ = await get('/blog')
     $('header').should.have.class('site-header')
