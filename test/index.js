@@ -138,6 +138,13 @@ describe('electron.atom.io', () => {
     })
   })
 
+  describe('userland', () => {
+     test('userland/404', async () => {
+      const $ = await get('/userland/404')
+      $('.page-section.error-page').length.should.eq(1)
+    })
+  })
+
   test('/blog', async () => {
     const $ = await get('/blog')
     $('header').should.have.class('site-header')
