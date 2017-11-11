@@ -105,21 +105,20 @@
         </dl>
       {{/if}} -->
 
-        {{#if app.latestRelease}}
-          <dl class="text-small border-bottom my-3 pb-3 lh-condensed">
-            <dt class="text-bold">
-              Latest Release
-            </dt>
+      {{#if app.latestRelease}}
+        <dl class="text-small border-bottom my-3 pb-3 lh-condensed">
+          <dt class="text-bold">
+            Latest Release
+          </dt>
 
-            <dd>
-              <a href="{{app.latestRelease.html_url}}">
-                {{app.latestRelease.name}}
-                <span class="app-tagname">({{app.latestRelease.tag_name}})</span>
-              </a>
-            </dd>
-          </dl>
-        {{/if}}
-      </dl>
+          <dd>
+            <a href="{{app.latestRelease.html_url}}">
+              {{app.latestRelease.name}}
+              <span class="app-tagname">({{app.latestRelease.tag_name}})</span>
+            </a>
+          </dd>
+        </dl>
+      {{/if}}
     </div>
 
     <div class="col-md-9 my-3">
