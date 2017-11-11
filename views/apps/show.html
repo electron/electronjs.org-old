@@ -35,7 +35,7 @@
 
   <section>
     <div class="col-md-3 my-3">
-      <dl class="border-bottom pb-3 lh-condensed">
+      <dl class="text-small border-bottom pb-3 my-3 lh-condensed">
         {{#if app.website}}
           <dt>Website</dt>
           <dd>
@@ -45,7 +45,7 @@
       </dl>
 
       {{#if app.repository}}
-        <dl class="border-bottom py-3 lh-condensed">
+        <dl class="text-small border-bottom py-3 my-3 lh-condensed">
           <dt>Repository</dt>
           <dd>
             <a href="{{app.repository}}">{{app.repository}}</a>
@@ -53,7 +53,7 @@
         </dl>
       {{/if}}
 
-      <dl class="border-bottom py-3 lh-condensed">
+      <dl class="text-small border-bottom py-3 my-3 lh-condensed">
         <dt>Category</dt>
         <dd>
           <a href="/apps?category={{app.categorySlug}}">{{app.category}}</a>
@@ -61,7 +61,7 @@
       </dl>
 
       {{#if app.keywords}}
-        <dl class="border-bottom pb-3 lh-condensed">
+        <dl class="text-small border-bottom pb-3 my-3 lh-condensed">
           <dt>Keywords</dt>
           <dd>
             {{#each app.keywords}}
@@ -72,7 +72,7 @@
       {{/if}}
 
       {{#if app.license}}
-        <dl class="border-bottom pb-3 lh-condensed">
+        <dl class="text-small border-bottom pb-3 my-3 lh-condensed">
           <dt>License</dt>
           <dt>{{app.license}}</dd>
         </dl>
@@ -90,8 +90,21 @@
       {{/if}} -->
 
         {{#if app.latestRelease}}
+          <dl class="text-small border-bottom my-3 pb-3 lh-condensed">
+            <dt>
+              Latest Release
+            </dt>
+
+            <dd>
+              <a href="{{app.latestRelease.html_url}}">
+                {{app.latestRelease.name}}
+                <span class="app-tagname">({{app.latestRelease.tag_name}})</span>
+              </a>
+            </dd>
+          </dl>
+
           {{#if app.latestRelease.assets}}
-            <dl class="border-bottom pb-3 lh-condensed">
+            <dl class="text-small border-bottom pb-3 my-3 lh-condensed">
               <dt>
                 Downloads
               </dt>
@@ -105,30 +118,24 @@
               </dd>
             </dl>
           {{/if}}
-
-          <dl class="border-bottom pb-3 lh-condensed">
-            <dt>
-              Latest Release
-            </dt>
-            <dd>
-              <a href="{{app.latestRelease.html_url}}">
-                {{app.latestRelease.name}}
-                <span class="app-tagname">({{app.latestRelease.tag_name}})</span>
-              </a>
-            </dd>
-          </dl>
-
-          <dl>
-            <dt>Release Notes</dt>
-            <dd class="border-bottom pb-3 lh-condensed">
-              {{{app.latestRelease.body_html}}}
-            </dd>
-          </dl>
         {{/if}}
       </dl>
     </div>
 
     <div class="col-md-9 my-3">
+      {{#if app.readmeCleaned}}
+        <div class="app-readme-wrapper">
+          <header>
+            <button class="app-readme-button btn btn-lg btn-outline-themed" type="button" id="display-readme">
+              View the {{app.name}} README <span id="display-readme-icon" class="octicon octicon-chevron-down ml-2"></span>
+            </button>
+          </header>
+          <main id="readme" class="app-readme box-shadow-medium d-none">
+            {{{app.readmeCleaned}}}
+          </main>
+        </div>
+      {{/if}}
+
       {{#if app.screenshots}}
         <div class="app-screenshots my-3 box-shadow-medium">
           {{#each app.screenshots}}
@@ -145,20 +152,6 @@
           {{/each}}
         </div>
       {{/if}}
-
-      {{#if app.readmeCleaned}}
-        <div class="app-readme-wrapper">
-          <header>
-            <button class="app-readme-button btn btn-lg btn-outline-themed" type="button" id="display-readme">
-              View the {{app.name}} README <span id="display-readme-icon" class="octicon octicon-chevron-down ml-2"></span>
-            </button>
-          </header>
-          <main id="readme" class="app-readme box-shadow-medium d-none">
-            {{{app.readmeCleaned}}}
-          </main>
-        </div>
-      {{/if}}
-
     </div>
   </section>
 </section>
