@@ -89,10 +89,17 @@
   border: 1px solid $main-border-color;
   border-radius: 3px;
   overflow: hidden;
-  display: flex;
 }
 
 .app-screenshot {
+  border-bottom: 1px solid $main-border-color;
+}
+
+.app-screenshot-thumbnail-container {
+  display: flex;
+}
+
+.app-screenshot-thumbnail {
   border-right: 1px solid $main-border-color;
   float: left;
   margin: 0;

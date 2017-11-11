@@ -136,18 +136,24 @@
 
       {{#if app.screenshots}}
         <div class="app-screenshots my-3 box-shadow-medium">
-          {{#each app.screenshots}}
-            <figure class="app-screenshot p-3">
-              <a href="{{imageUrl}}">
-                <img src="{{imageUrl}}" />
-              </a>
-              {{#if caption}}
-                <figcaption class="screenshot-caption text-center">
-                  {{caption}}
-                </figcaption>
-              {{/if}}
-            </figure>
-          {{/each}}
+          <div class="app-screenshot p-3" id="app-screenshot-container">
+            <img src="{{app.screenshots.0.imageUrl}}" />
+          </div>
+
+          <div class="app-screenshot-thumbnail-container">
+            {{#each app.screenshots}}
+              <figure class="app-screenshot-thumbnail p-3">
+                <a href="{{imageUrl}}">
+                  <img src="{{imageUrl}}" />
+                </a>
+                {{#if caption}}
+                  <figcaption class="screenshot-caption text-center">
+                    {{caption}}
+                  </figcaption>
+                {{/if}}
+              </figure>
+            {{/each}}
+          </div>
         </div>
       {{/if}}
     </div>
