@@ -60,6 +60,22 @@
         </dt>
       </dl>
 
+      {{#if app.latestRelease.assets}}
+        <dl class="text-small border-bottom pb-3 my-3 lh-condensed">
+          <dt>
+            Downloads
+          </dt>
+
+          <dd>
+            {{#each app.latestRelease.assets}}
+              <a class="app-download {{this.platform}}" href="{{this.browser_download_url}}">{{this.name}}</a>
+            {{/each}}
+
+            <a href="{{app.latestRelease.html_url}}" id="view-all-downloads" style="opacity:0.7;font-size:80%;display:none;">View all {{app.latestRelease.assets.length}} files</a>
+          </dd>
+        </dl>
+      {{/if}}
+
       {{#if app.keywords}}
         <dl class="text-small border-bottom pb-3 my-3 lh-condensed">
           <dt>Keywords</dt>
@@ -102,22 +118,6 @@
               </a>
             </dd>
           </dl>
-
-          {{#if app.latestRelease.assets}}
-            <dl class="text-small border-bottom pb-3 my-3 lh-condensed">
-              <dt>
-                Downloads
-              </dt>
-
-              <dd>
-                {{#each app.latestRelease.assets}}
-                  <a class="app-download {{this.platform}}" href="{{this.browser_download_url}}">{{this.name}}</a>
-                {{/each}}
-
-                <a href="{{app.latestRelease.html_url}}" id="view-all-downloads" style="opacity:0.7;font-size:80%;display:none;">View all {{app.latestRelease.assets.length}} files</a>
-              </dd>
-            </dl>
-          {{/if}}
         {{/if}}
       </dl>
     </div>
