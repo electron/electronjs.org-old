@@ -125,11 +125,10 @@
     <div class="col-md-9 my-3">
       {{#if app.readmeCleaned}}
         <div class="app-readme-wrapper">
-          <header>
-            <button class="app-readme-button btn btn-lg btn-outline-themed" type="button" id="display-readme">
-              View the {{app.name}} README <span id="display-readme-icon" class="octicon octicon-chevron-down ml-2"></span>
-            </button>
-          </header>
+          <a class="text-small readme-link" id="display-readme">
+            View the {{app.name}} README...
+          </a>
+
           <main id="readme" class="app-readme box-shadow-medium d-none text-small">
             {{{app.readmeCleaned}}}
           </main>
