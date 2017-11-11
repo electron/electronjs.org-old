@@ -37,7 +37,7 @@
     <div class="col-md-3 my-3">
       <dl class="text-small border-bottom pb-3 my-3 lh-condensed">
         {{#if app.website}}
-          <dt>Website</dt>
+          <dt class="text-bold">Website</dt>
           <dd>
             <a href="{{app.website}}">{{app.website}}</a>
           </dd>
@@ -46,7 +46,7 @@
 
       {{#if app.repository}}
         <dl class="text-small border-bottom py-3 my-3 lh-condensed">
-          <dt>Repository</dt>
+          <dt class="text-bold">Repository</dt>
           <dd>
             <a href="{{app.repository}}">{{app.repository}}</a>
           </dd>
@@ -54,7 +54,7 @@
       {{/if}}
 
       <dl class="text-small border-bottom py-3 my-3 lh-condensed">
-        <dt>Category</dt>
+        <dt class="text-bold">Category</dt>
         <dd>
           <a href="/apps?category={{app.categorySlug}}">{{app.category}}</a>
         </dt>
@@ -62,7 +62,7 @@
 
       {{#if app.latestRelease.assets}}
         <dl class="text-small border-bottom pb-3 my-3 lh-condensed">
-          <dt>
+          <dt class="text-bold">
             Downloads
           </dt>
 
@@ -78,7 +78,7 @@
 
       {{#if app.keywords}}
         <dl class="text-small border-bottom pb-3 my-3 lh-condensed">
-          <dt>Keywords</dt>
+          <dt class="text-bold">Keywords</dt>
           <dd>
             {{#each app.keywords}}
               <a class="app-keyword" href="/apps?q={{this}}">{{this}}</a>
@@ -89,25 +89,25 @@
 
       {{#if app.license}}
         <dl class="text-small border-bottom pb-3 my-3 lh-condensed">
-          <dt>License</dt>
+          <dt class="text-bold">License</dt>
           <dt>{{app.license}}</dd>
         </dl>
       {{/if}}
 
       <!-- {{#if app.locales}}
         <dl class="text-small border-bottom my-3 pb-3 lh-condensed">
-          <dt>Languages</dt>
-          <dt class="border-bottom pb-3 lh-condensed">
+          <dt class="text-bold">Languages</dt>
+          <dd class="border-bottom pb-3 lh-condensed">
             {{#each app.locales}}
               {{this}}
             {{/each}}
-          </dt>
+          </dd>
         </dl>
       {{/if}} -->
 
         {{#if app.latestRelease}}
           <dl class="text-small border-bottom my-3 pb-3 lh-condensed">
-            <dt>
+            <dt class="text-bold">
               Latest Release
             </dt>
 
