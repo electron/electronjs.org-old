@@ -109,6 +109,11 @@ describe('electron.atom.io', () => {
       $('tr').length.should.be.above(10)
     })
 
+    test('docs/glossary', async () => {
+      const $ = await get('/docs/glossary')
+      $('.page-section.error-page').length.should.eq(0)
+    })
+
     test('docs/404', async () => {
       const $ = await get('/docs/404')
       $('.page-section.error-page').length.should.eq(1)
