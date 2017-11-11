@@ -126,6 +126,12 @@ describe('electron.atom.io', () => {
     })
   })
 
+  test('/community', async() => {
+    await get('/languages/vi-VN')
+    const $ = await get('/community')
+    $('.subtron .container-narrow h1').text().should.eq(i18n.website['vi-VN'].community.title)
+  })
+
   describe('releases', () => {
     test('/releases', async () => {
       const $ = await get('/releases')
