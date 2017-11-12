@@ -17,6 +17,11 @@ docs:
   api_reference: API Reference
   advanced: Advanced
 
+languages:
+  choose_language: Choose Your Site Language
+  translation_progress: Translation Progress
+  current: current selection
+
 electron_is_easy:
   title: It's easier than you think
   description:
