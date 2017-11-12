@@ -113,6 +113,10 @@ apps:
   view_more: View more apps
   submit_your_own: submit your own
 
+community:
+  meetups: Meetups
+  add_a_meetup: Add a meetup
+
 or: or
 
 pages:
