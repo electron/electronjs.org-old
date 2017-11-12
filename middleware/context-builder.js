@@ -18,6 +18,11 @@ module.exports = function contextBuilder (req, res, next) {
     cookies: req.cookies
   }
 
+  if (req.path !== '/' && req.context.page && !req.context.page.titled) {
+    req.context.page.titled = true;
+    req.context.page.title = `${req.context.page.title} | Electron`
+  }
+  
   if (req.path.startsWith('/docs')) {
     req.context.docs = i18n.docs[req.language]
   }
