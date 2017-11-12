@@ -1714,12 +1714,12 @@
   },
   {
     "name": "Quick Start",
-    "href": "http://electron.atom.io/docs/tutorial/quick-start/",
+    "href": "http://electronjs.org/docs/tutorial/quick-start/",
     "category": "documentation"
   },
   {
     "name": "Official docs",
-    "href": "http://electron.atom.io/docs/",
+    "href": "http://electronjs.org/docs/",
     "category": "documentation"
   },
   {
