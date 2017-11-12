@@ -14,8 +14,8 @@
   <div class='container-narrow'>
     <table class="table table-ruled table-full-width table-with-spacious-first-column mb-7">
         <tr>
-          <th>Choose Your Site Language</th>
-          <th>Translation Progress</th>
+          <th>{{localized.languages.choose_language}}</th>
+          <th>{{localized.languages.translation_progress}}</th>
           <th>&nbsp;</th>
         </tr>
         {{#each locales}}
@@ -31,7 +31,7 @@
               {{/eq}}
             </a>
 
-            {{#eq ../currentLocale this.locale}}</b> <span class="faint">(current selection)</span>{{/eq}}
+            {{#eq ../currentLocale this.locale}}</b> <span class="faint">({{../localized.languages.current}})</span>{{/eq}}
           </td>
       
           <td>
