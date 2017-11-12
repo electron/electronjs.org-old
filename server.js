@@ -70,6 +70,7 @@ app.get('/userland', routes.userland.index)
 app.get('/userland/*', routes.userland.show)
 
 app.get('/maintainers/join', (req, res) => res.redirect('https://goo.gl/FJmZZm'))
+app.get('/awesome', (req, res) => res.redirect('/community'))
 app.get('/community', routes.community)
 app.get('/languages', routes.languages.index)
 app.get('/contact', routes.contact)

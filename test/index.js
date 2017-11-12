@@ -150,6 +150,12 @@ describe('electron.atom.io', () => {
     // TODO: post title is page title
   })
 
+  test('/awesome', async () => {
+    const res = await supertest(app).get('/awesome')
+    res.statusCode.should.be.above(300).and.below(303)
+    res.headers.location.should.equal('/community')
+  })
+
   test('/community', async () => {
     const $ = await get('/community')
     $('h1').text().should.eq('Electron Community')
