@@ -141,7 +141,7 @@ pages:
     title: Electron Blog
     description: All the latest news from the Electron team and community.
   '/community':
-    title: community
+    title: Community
   '/releases':
     title: Releases
   '/contact':
