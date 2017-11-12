@@ -1,4 +1,4 @@
-const items = require('../data/awesome_electron.json')
+const items = require('awesome-electron')
 const meetups = require('../data/meetups.json')
 
 async function parseItem (item) {
