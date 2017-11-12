@@ -150,6 +150,16 @@ describe('electron.atom.io', () => {
     // TODO: post title is page title
   })
 
+  test('/community', async () => {
+    const $ = await get('/community')
+    $('h1').text().should.eq('Electron Community')
+
+    const titles = $('h2').map((i, el) => $(el).text()).get()
+    titles.should.include('Tools')
+    titles.should.include('Components')
+    titles.should.include('Meetups')
+  })
+
   test('/languages', async () => {
     const $ = await get('/languages')
     $('h1').text().should.eq('Languages')
