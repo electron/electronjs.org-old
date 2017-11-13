@@ -6,12 +6,12 @@ set -o pipefail   # honor exit codes when piping
 set -o nounset    # fail on unset variables
 
 # clone the repo
-git clone https://github.com/electron/electron.atom.io
-cd electron.atom.io
+git clone https://github.com/electron/electron.atom.io site
+cd site
 npm install
 
 # configure git
-git config user.email "kevin+electronbot@github.com"
+git config user.email "electron@github.com"
 git config user.name "Electron Bot"
 
 # run each build script independently and commit changes atomically
@@ -27,24 +27,6 @@ if [[ $(git status --porcelain) != "" ]]; then
   git commit -avm "update releases"
 fi
 
-npm run build-docs
-if [[ $(git status --porcelain) != "" ]]; then
-  git add .
-  git commit -avm "update docs"
-fi
-
-npm run build-userland
-if [[ $(git status --porcelain) != "" ]]; then
-  git add .
-  git commit -avm "update userland"
-fi
-
-npm run build-awesome
-if [[ $(git status --porcelain) != "" ]]; then
-  git add .
-  git commit -avm "update awesome"
-fi
-
 # test it all before pushing
 npm test
-git push origin gh-pages
+git push origin HEAD

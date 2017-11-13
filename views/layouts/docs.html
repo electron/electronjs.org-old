@@ -1,8 +1,10 @@
 {{!< main}}
 
 <div class='subtron text-left'>
-  <!-- <h1><span class="mr-3 mr-lg-4">Electron Documentation</span><span class="docs-version">{{electronLatestStableVersion}}</span></h1> -->
-
+  <div class='container-narrow'>
+      <h1><span class="mr-3 mr-lg-4">{{localized.docs.title}}</span><span class="docs-version">{{electronLatestStableVersion}}</span></h1>      
+  </div>
+  
   <div class='container-narrow'>
 
     <h4 class="docs-breadcrumbs">
@@ -11,7 +13,7 @@
       {{#if category}}
         {{category}}
       {{else if doc}}
-        <a href="/docs/{{doc.category}}">{{doc.categoryFancy}}</a> / {{doc.title}}
+        {{#if doc.category}}<a href="/docs/{{doc.category}}">{{doc.categoryFancy}}</a> / {{/if}} {{doc.title}}
       {{else if viewingAllDocs}}
         All
       {{/if}}

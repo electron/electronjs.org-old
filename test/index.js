@@ -21,6 +21,12 @@ describe('electron.atom.io', () => {
     $('header').should.have.class('site-header')
     $('p.jumbotron-lead').should.contain('Build cross platform desktop apps')
     $('.featured-app').length.should.equal(24)
+
+    // versions
+    $('#electron-versions').text().should.match(/Electron: \d+\.\d+\.\d+/)
+    $('#electron-versions').text().should.match(/Node: \d+\.\d+\.\d+/)
+    $('#electron-versions').text().should.match(/Chromium: \d+\.\d+\.\d+\.\d+/)
+    $('#electron-versions').text().should.match(/V8: \d+\.\d+\.\d+\.\d+/)
   })
 
   describe('apps', () => {
@@ -102,20 +108,68 @@ describe('electron.atom.io', () => {
       const $ = await get('/docs/api')
       $('tr').length.should.be.above(10)
     })
+
+    test('docs/glossary', async () => {
+      const $ = await get('/docs/glossary')
+      $('.page-section.error-page').length.should.eq(0)
+    })
+
+    test('docs/404', async () => {
+      const $ = await get('/docs/404')
+      $('.page-section.error-page').length.should.eq(1)
+    })
+
+    test('docs/api/404', async () => {
+      const $ = await get('/docs/api/404')
+      $('.page-section.error-page').length.should.eq(1)
+    })
+  })
+
+  describe('releases', () => {
+    test('/releases', async () => {
+      const $ = await get('/releases')
+      $('h1').text().should.include('Releases')
+      $('h2').length.should.be.above(35)
+
+      const titles = $('h2 a').map((i, el) => $(el).text().trim()).get()
+      titles.should.include('Electron 1.7.9')
+      titles.should.include('Electron 1.6.7')
+      titles.should.include('Electron 0.37.8')
+    })
   })
 
   test('/blog', async () => {
     const $ = await get('/blog')
     $('header').should.have.class('site-header')
     $('.posts-list li').length.should.be.above(10)
-    // TODO: localized content
-    // TODO: page title
   })
 
   test('/blog/webtorrent', async () => {
     const $ = await get('/blog/webtorrent')
     $('header').should.have.class('site-header')
     // TODO: post title is page title
+  })
+
+  test('/awesome', async () => {
+    const res = await supertest(app).get('/awesome')
+    res.statusCode.should.be.above(300).and.below(303)
+    res.headers.location.should.equal('/community')
+  })
+
+  test('/community', async () => {
+    const $ = await get('/community')
+    $('h1').text().should.eq('Electron Community')
+
+    const titles = $('h2').map((i, el) => $(el).text()).get()
+    titles.should.include('Tools')
+    titles.should.include('Components')
+    titles.should.include('Meetups')
+  })
+
+  test('/languages', async () => {
+    const $ = await get('/languages')
+    $('h1').text().should.eq('Languages')
+    $('body').text().should.include('global developer community')
   })
 
   test('redirects for date-style blog URLs', async () => {

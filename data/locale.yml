@@ -8,6 +8,14 @@ nav:
   userland: Userland
   releases: Releases
   contact: Contact
+  languages: Languages
+
+docs:
+  title: Electron Documentation
+  description: See all of the <a href="/docs/all/">docs on one page</a> or check out the <a href="/docs/faq/">FAQ</a>.
+  guides: Guides
+  api_reference: API Reference
+  advanced: Advanced
 
 electron_is_easy:
   title: It's easier than you think
@@ -77,6 +85,23 @@ need_help:
   title: Need Help?
   description: Ask questions in the <a href='https://discuss.atom.io/c/electron'>Discuss</a> forum or our <a href='http://atom-slack.herokuapp.com/'>Slack</a> channel. Follow <a href="https://twitter.com/{{ site.twitter_username }}">@{{ site.twitter_username }}</a> on Twitter for important announcements. Need to privately reach out? Email <a href="mailto:electron@github.com">electron@github.com</a>.
 
+headings:
+  languages: Languages
+
+taglines:
+  languages: Localized content from our awesome global developer community.
+
+help_translate: "Help translate"
+
+footer:
+  see_something: See something that needs fixing?
+  propose_change: Propose a change to the source file.
+  need_different_version: Need a different version of the docs?
+  see_available_versions: See available versions.
+  want_something_searchable: Want something searchable?
+  view_all_docs: View all docs on one page
+  see_the_faq: See the frequently asked questions
+
 apps:
   title: Apps built on Electron
   description:
@@ -88,10 +113,11 @@ apps:
   view_more: View more apps
   submit_your_own: submit your own
 
-or: or
+community:
+  meetups: Meetups
+  add_a_meetup: Add a meetup
 
-view_all_docs: View all the docs on one page
-see_the_faq: See the frequently asked questions
+or: or
 
 pages:
   '/apps':
@@ -103,3 +129,6 @@ pages:
   '/contact':
     title: Contact
     description: Get in touch with the Electron team on Twitter, Slack, GitHub, or via email.
+  '/blog':
+    title: Electron Blog
+    description: All the latest news from the Electron team and community.

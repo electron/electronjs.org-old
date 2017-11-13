@@ -1,15 +1,31 @@
 <div class='subtron'>
   <div class='container-narrow'>
-    <h1><span class="mr-3 mr-lg-4">Blog</span></h1>
+    <h1>Electron Blog</h1>
+    <p class="lead mb-3">
+       All the latest news from the Electron team and community.
+    </p>
   </div>
 </div>
 
 <section class='page-section'>
-  <div class='container'>
-    <ul class="posts-list">
+  <div class='container-narrow'>
+    <ul class="posts-list blog-index">
       {{#each posts}}
-          <li>
-            <a href="{{this.href}}">{{this.date}} - {{this.title}}</a>
+          <li class="mb-3 mb-md-4 mb-lg-6">
+            <h2>
+              <a href="{{this.href}}" class="blog-index-link mr-2">
+                {{{this.title}}}
+              </a>
+              <div class="who-when mt-1 mb-4">
+                <span class="octicon octicon-calendar pr-2"></span>
+                <span data-date="{{this.date}}" data-format="%B %d, %Y" class="blog-index-time"></span>
+                <a href="https://github.com/{{this.author}}" class="author-link ml-3">
+                  <img src="https://github.com/{{this.author}}.png?size=36" alt="{{this.author}}" class="avatar mr-2">{{this.author}}
+                </a>
+              </div>
+            </h2>
+            {{{this.excerpt}}}
+            <p><a href="{{this.href}}">Read More&nbsp;<span class="octicon octicon-arrow-small-right"></span></a></p>
           </li>
       {{/each}}
     </ul>

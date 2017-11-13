@@ -18,6 +18,7 @@ async function parsePost (filename) {
   post.href = `/blog/${post.slug}`
   post.href2 = null
   Object.assign(post, await hubdown(markdown, {frontmatter: true}))
+  Object.assign(post, { excerpt: post.content.split('<hr>')[0] })
   if (!post.date) throw new Error(`${filename} is missing a date attribute`)
   let [year, month, day] = post.date.split('-')
   post.href2 = `/blog/${year}/${month}/${day}/${post.slug}`
@@ -27,10 +28,7 @@ async function parsePost (filename) {
 module.exports = function blogHandler (req, res, next) {
   if (!req.path.startsWith('/blog')) return next()
 
-  const context = Object.assign(req.context, {
-    posts: posts,
-    layout: 'page'
-  })
+  const context = Object.assign({}, req.context, {posts: posts})
 
   if (req.path === '/blog') {
     return res.render('posts/index', context)
@@ -47,5 +45,8 @@ module.exports = function blogHandler (req, res, next) {
 
   if (!context.post) return res.status(404).render('404')
 
-  res.render('posts/show', context)
+  res.render('posts/show', Object.assign(context, {
+    layout: 'page',
+    page: {title: `${context.post.title} | Electron Blog`}
+  }))
 }

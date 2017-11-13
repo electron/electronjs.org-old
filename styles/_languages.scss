@@ -1,0 +1,16 @@
+progress {
+  -webkit-appearance: none;
+
+  height: 10px;
+}
+
+progress[value]::-webkit-progress-bar {
+  border: 0.5px solid darken($sub-bg-color, 6%);
+  border-radius: 5px;
+  overflow: hidden;
+  background: darken($sub-bg-color, 5%);
+}
+
+progress[value]::-webkit-progress-value {
+  background-color: $jumbo-color;
+}

@@ -1,4 +1,4 @@
-const items = require('../data/awesome_electron.json')
+const items = require('awesome-electron')
 const meetups = require('../data/meetups.json')
 
 async function parseItem (item) {
@@ -18,7 +18,7 @@ async function parseItem (item) {
 }
 
 async function parseData (items) {
-  return await Promise.all(items.map(parseItem))
+  return Promise.all(items.map(parseItem))
 }
 
 module.exports = (req, res) => {

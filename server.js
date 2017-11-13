@@ -45,7 +45,6 @@ app.use(requestLanguage({
   languages: Object.keys(i18n.locales),
   cookie: {
     name: 'language',
-    options: {maxAge: 24 * 60 * 60 * 1000},
     url: '/languages/{language}'
   }
 }))
@@ -64,7 +63,6 @@ app.get('/apps/:slug', routes.apps.show)
 
 app.get('/docs/v0*', (req, res) => res.redirect(req.path.replace(/v0\.\d+\.\d+\//, '')))
 app.get('/docs', routes.docs.index)
-app.get('/docs/all', routes.docs.all)
 app.get('/docs/:category', routes.docs.category)
 app.get('/docs/:category/*', routes.docs.show)
 
@@ -72,6 +70,7 @@ app.get('/userland', routes.userland.index)
 app.get('/userland/*', routes.userland.show)
 
 app.get('/maintainers/join', (req, res) => res.redirect('https://goo.gl/FJmZZm'))
+app.get('/awesome', (req, res) => res.redirect('/community'))
 app.get('/community', routes.community)
 app.get('/languages', routes.languages.index)
 app.get('/contact', routes.contact)
