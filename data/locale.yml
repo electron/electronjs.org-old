@@ -21,7 +21,7 @@ languages:
   choose_language: Choose Your Site Language
   translation_progress: Translation Progress
   current: current selection
-  
+
 community:
   title: Electron Community
   description:
@@ -138,10 +138,6 @@ apps:
     Facebook, Slack, and Docker.
   view_more: View more apps
   submit_your_own: submit your own
-
-community:
-  meetups: Meetups
-  add_a_meetup: Add a meetup
 
 or: or
 
