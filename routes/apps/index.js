@@ -1,7 +1,7 @@
 const apps = require('../../lib/apps')
 const categories = require('electron-apps/categories')
 
-module.exports = (req, res) => {
+module.exports = (req, res, next) => {
   const context = Object.assign(req.context, {
     apps: apps,
     categories: categories
@@ -10,10 +10,8 @@ module.exports = (req, res) => {
   if (req.query.category) {
     const category = categories.find(category => category.slug === req.query.category)
 
-    if (!category) {
-      return res.status(404).render('404', {message: 'Category not found'})
-    }
-
+    if (!category) return next()
+    
     context.apps = apps.filter((app) => app.category === category.name)
     context.categories = categories.map(category => {
       category.className = (category.slug === req.query.category) ? 'selected' : ''
