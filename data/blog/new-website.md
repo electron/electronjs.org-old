@@ -33,7 +33,17 @@ Electron.
 
 ## 🌍 Translations
 
-Traduções! 翻译!  Bản dịch!  Übersetzungen!
+Traduções! 翻译! Bản dịch! 翻訳! Übersetzungen!
+
+<figure>
+  <img src="" alt="">
+  <figcaption></figcaption>
+</figure>
+
+<figure>
+  <img src="" alt="">
+  <figcaption></figcaption>
+</figure>
 
 The 
 automated flow in and out of Crowdin means docs in any language!
