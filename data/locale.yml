@@ -22,6 +22,27 @@ languages:
   translation_progress: Translation Progress
   current: current selection
 
+community:
+  title: Electron Community
+  description:
+    Tools, boilerplates, videos, and more from Electron's 
+    <a href="https://github.com/sindresorhus/awesome-electron">awesome</a> 
+    open-source contributors. Find or add 
+    <a href="/community#meetups">meetups</a> near you.
+  tools: Tools
+  boilerplates: Boilerplates
+  components: Components
+  videos: Videos
+  meetups: Meetups
+  awesome_notice:
+    This list is generated from
+    <a href="https://github.com/sindresorhus/awesome-electron">@sindresorhus's Awesome Electron</a> repository.
+    <br> Something missing?
+    <a href="https://github.com/sindresorhus/awesome-electron/blob/master/contributing.md">Make a pull request</a>.
+  meetup_notice:
+    To add a meetup, edit <code>data/meetups.json</code> and 
+    <a href="https://github.com/electron/electron.atom.io/tree/master/data/meetups.yml">make a pull request</a>.
+
 electron_is_easy:
   title: It's easier than you think
   description:
@@ -117,10 +138,6 @@ apps:
     Facebook, Slack, and Docker.
   view_more: View more apps
   submit_your_own: submit your own
-
-community:
-  meetups: Meetups
-  add_a_meetup: Add a meetup
 
 or: or
 

@@ -1,9 +1,7 @@
 <div class='subtron'>
   <div class='container-narrow'>
-    <h1>Electron Community</h1>
-    <p class="lead mb-3">
-      Tools, boilerplates, videos, and more from Electron's <a href="https://github.com/sindresorhus/awesome-electron">awesome</a> open-source contributors. Find or add <a href="#meetups">meetups</a> near you.
-    </p>
+    <h1>{{localized.community.title}}</h1>
+    <p class="lead mb-3">{{{localized.community.description}}}</p>
   </div>
 </div>
 
@@ -11,7 +9,7 @@
 
   <div class="container-narrow text-center">
 
-    <h2 id="tools">Tools</h2>
+    <h2 id="tools">{{localized.community.tools}}</h2>
     <table class="table table-ruled table-full-width table-with-spacious-first-column mb-7">
       {{#each items}}
         {{#if this.isTool}}
@@ -29,7 +27,7 @@
       {{/each}}
     </table>
 
-    <h2 id="boilerplates">Boilerplates</h2>
+    <h2 id="boilerplates">{{localized.community.boilerplates}}</h2>
     <table class="table table-ruled table-full-width table-with-spacious-first-column mb-7">
       {{#each items}}
         {{#if this.isBoilerplate}}
@@ -45,7 +43,7 @@
       {{/each}}
     </table>
 
-    <h2 id="components">Components</h2>
+    <h2 id="components">{{localized.community.components}}</h2>
     <table class="table table-ruled table-full-width table-with-spacious-first-column mb-7">
       {{#each items}}
         {{#if this.isComponent}}
@@ -61,7 +59,7 @@
       {{/each}}
     </table>
 
-    <h2 id="videos">Videos</h2>
+    <h2 id="videos">{{localized.community.videos}}</h2>
     <table class="table table-ruled table-full-width table-with-spacious-first-column mb-7">
       {{#each items}}
         {{#if this.isVideo}}
@@ -75,10 +73,7 @@
     </table>
 
     <p class="mt-3 mt-md-6">
-      This list is generated from
-      <a href="https://github.com/sindresorhus/awesome-electron">@sindresorhus's Awesome Electron</a> repository.
-      <br> Something missing?
-      <a href="https://github.com/sindresorhus/awesome-electron/blob/master/contributing.md">Make a pull request</a>.
+        {{{localized.community.awesome_notice}}}
     </p>
 
     <h2 id="meetups" class="mt-7">{{localized.community.meetups}}</h2>
@@ -96,7 +91,8 @@
     </table>
 
     <p class="mt-3 mt-md-6">
-      <a href="https://github.com/electron/electron.atom.io/edit/master/data/meetups.json">{{localized.community.add_a_meetup}}</a>.
+      <!-- TODO: enable when neo branch becomes master -->
+      <!-- {{{localized.community.meetup_notice}}} -->
     </p>
   </div>
 </section>

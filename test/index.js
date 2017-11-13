@@ -4,6 +4,7 @@ const test = it
 const supertest = require('supertest')
 const cheerio = require('cheerio')
 const chai = require('chai')
+const i18n = require('../lib/i18n')
 chai.should()
 chai.use(require('chai-cheerio'))
 const app = require('../server.js')
@@ -125,6 +126,12 @@ describe('electron.atom.io', () => {
     })
   })
 
+  test('/community', async() => {
+    await get('/languages/vi-VN')
+    const $ = await get('/community')
+    $('.subtron .container-narrow h1').text().should.eq(i18n.website['vi-VN'].community.title)
+  })
+
   describe('releases', () => {
     test('/releases', async () => {
       const $ = await get('/releases')
@@ -138,6 +145,12 @@ describe('electron.atom.io', () => {
     })
   })
 
+  test('/community', async() => {
+    await get('/languages/vi-VN')
+    const $ = await get('/community')
+    $('.subtron .container-narrow h1').text().should.eq(i18n.website['vi-VN'].community.title)
+  })
+  
   describe('userland', () => {
      test('userland/404', async () => {
       const $ = await get('/userland/404')
