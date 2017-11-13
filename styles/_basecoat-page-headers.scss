@@ -19,7 +19,7 @@
 
   @include breakpoint(md) { font-size: 1.8rem; }
   @include breakpoint(lg) { font-size: 2.4rem; }
-  @include breakpoint(xl) { font-size: 3rem; }
+  @include breakpoint(xl) { font-size: 2.4rem; }
 }
 
 .jumbotron-lead-muted {
