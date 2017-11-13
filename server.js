@@ -77,13 +77,7 @@ app.get('/contact', routes.contact)
 app.get('/releases', routes.releases)
 
 // Generic 404 handler
-app.use((req, res, next) => {
-  res.status(404).render('404', {
-    page: {
-      title: '404 Not Found | Electron'
-    }
-  })
-})
+app.use(routes._404)
 
 if (!module.parent) {
   app.listen(port, () => {

@@ -150,9 +150,9 @@ describe('electron.atom.io', () => {
     const $ = await get('/community')
     $('.subtron .container-narrow h1').text().should.eq(i18n.website['vi-VN'].community.title)
   })
-  
+
   describe('userland', () => {
-     test('userland/404', async () => {
+    test('userland/404', async () => {
       const $ = await get('/userland/404')
       $('.page-section.error-page').length.should.eq(1)
     })

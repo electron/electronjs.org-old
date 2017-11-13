@@ -5,8 +5,11 @@
       {{#if message}}
         {{message}}
       {{else}}
-        This page could not be found.
+        {{localized._404.page_not_found}}
       {{/if}}
+
+      {{localized._404.if_this_is_an_error}}
+      <a href="https://github.com/electron/electron.atom.io/issues/new?title=404%20for%20{{page.path}}&body=The%20following%20route%20is%20returning%20a%20404%20HTTP%20status%20code%3A%20{{page.path}}">{{localized._404.please_file_an_issue}}</a>.
     </p>
   </div>
 </section>
