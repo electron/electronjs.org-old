@@ -5,7 +5,6 @@ const {getLanguageNativeName} = require('locale-code')
 
 // Supply all route handlers with a baseline `req.context` object
 module.exports = function contextBuilder (req, res, next) {
-  
   // Attach i18n object to request so any route handler can use it if needed
   req.i18n = i18n
 
@@ -26,10 +25,10 @@ module.exports = function contextBuilder (req, res, next) {
   }
 
   if (req.path !== '/' && req.context.page && !req.context.page.titled) {
-    req.context.page.titled = true;
+    req.context.page.titled = true
     req.context.page.title = `${req.context.page.title} | Electron`
   }
-  
+
   if (req.path.startsWith('/docs')) {
     req.context.docs = i18n.docs[req.language]
   }

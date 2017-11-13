@@ -11,7 +11,7 @@ module.exports = (req, res, next) => {
     const category = categories.find(category => category.slug === req.query.category)
 
     if (!category) return next()
-    
+
     context.apps = apps.filter((app) => app.category === category.name)
     context.categories = categories.map(category => {
       category.className = (category.slug === req.query.category) ? 'selected' : ''

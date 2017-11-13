@@ -1,3 +1,9 @@
 module.exports = (req, res) => {
-  res.render('404', req.context)
+  const context = Object.assign(req.context, {
+    page: {
+      title: '404 Not Found | Electron'
+    }
+  })
+
+  res.render('404', context)
 }
