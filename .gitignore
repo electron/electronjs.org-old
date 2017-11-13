@@ -6,3 +6,4 @@ npm-debug.log
 images/crushed
 .env
 css/**/*.css
+yarn.lock
