@@ -166,3 +166,8 @@ pages:
     description: Get in touch with the Electron team on Twitter, Slack, GitHub, or via email.
   '/languages':
     title: Languages
+
+_404:
+  page_not_found: Page not found.
+  if_this_is_an_error: If this is an error
+  please_file_an_issue: please file an issue.
