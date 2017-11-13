@@ -1,6 +1,11 @@
-module.exports = (req, res) => {
+const fs = require('fs')
+const path = require('path')
+
+module.exports = (req, res, next) => {
   const currentReport = req.params[0]
-  const report = require(`../../data/userland/${currentReport}`)
+  const reportPath = path.resolve(`data/userland/${currentReport}.json`)
+  if (!fs.existsSync(reportPath)) return next()
+  const report = require(reportPath)
   let blacklist
 
   report.isPackage = report.collectionType === 'Package'
@@ -26,7 +31,10 @@ module.exports = (req, res) => {
   const context = Object.assign(req.context, {
     report: report,
     items: report.collection,
-    blacklist: blacklist
+    blacklist: blacklist,
+    page: {
+      title: `${report.title} | Electron`
+    }
   })
 
   res.render('userland/show', context)

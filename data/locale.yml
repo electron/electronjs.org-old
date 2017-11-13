@@ -142,15 +142,27 @@ apps:
 or: or
 
 pages:
+  '/':
+    title: Electron | Build cross platform desktop apps with JavaScript, HTML, and CSS.
+    description: 'Build cross platform desktop apps with JavaScript, HTML, and CSS.'
   '/apps':
     title: Electron Apps
     description: Apps Built on Electron
+  '/docs':
+    title: Documentation
+    description: Guides and API reference documentation for the latest Electron release
   '/docs/all':
     title: All the Electron Docs!
     description: All of Electron's guides and API documentation on a single, searchable page.
-  '/contact':
-    title: Contact
-    description: Get in touch with the Electron team on Twitter, Slack, GitHub, or via email.
   '/blog':
     title: Electron Blog
     description: All the latest news from the Electron team and community.
+  '/community':
+    title: Community
+  '/releases':
+    title: Releases
+  '/contact':
+    title: Contact
+    description: Get in touch with the Electron team on Twitter, Slack, GitHub, or via email.
+  '/languages':
+    title: Languages

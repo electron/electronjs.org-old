@@ -39,7 +39,7 @@ describe('electron.atom.io', () => {
 
     test('index has custom title and description meta tags', async () => {
       const $ = await get('/apps')
-      $('head > title').text().should.eq('Electron Apps')
+      $('head > title').text().should.eq('Electron Apps | Electron')
       $('meta[property="og:description"]').attr('content').should.eq('Apps Built on Electron')
     })
 
@@ -96,7 +96,7 @@ describe('electron.atom.io', () => {
 
     test('docs/all', async () => {
       const $ = await get('/docs/all')
-      $('head > title').text().should.eq('All the Electron Docs!')
+      $('head > title').text().should.eq('All the Electron Docs! | Electron')
       const titles = $('h1')
         .map((i, el) => $(el).text())
         .get()
@@ -149,6 +149,13 @@ describe('electron.atom.io', () => {
     await get('/languages/vi-VN')
     const $ = await get('/community')
     $('.subtron .container-narrow h1').text().should.eq(i18n.website['vi-VN'].community.title)
+  })
+  
+  describe('userland', () => {
+     test('userland/404', async () => {
+      const $ = await get('/userland/404')
+      $('.page-section.error-page').length.should.eq(1)
+    })
   })
 
   test('/blog', async () => {
