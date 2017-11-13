@@ -1,8 +1,8 @@
 // App page ------------------------------
 
 .app-header {
+  overflow: hidden;
   position: relative;
-  text-align: center;
 }
 
 .app-link {
@@ -12,10 +12,14 @@
   }
 }
 
+.app-logo-container {
+  text-align: center;
+}
+
 .app-logo {
   display: inline-block;
-  max-width: 128px;
-  height: 128px;
+  max-height: 64px;
+  width: 64px;
 }
 
 .app-name {
@@ -32,14 +36,7 @@
   line-height: 1.4;
 }
 
-.app-sreenshot {
-  margin: 3rem 0 0 0;
-}
-
-
 .app-details {
-  margin: 2rem;
-
   td {
     padding: 1rem 0;
   }
@@ -88,9 +85,29 @@
   }
 }
 
-.app-readme-header {
-  margin: 3rem 0;
-  text-align: center;
+.app-screenshots {
+  border: 1px solid $main-border-color;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.app-screenshot {
+  border-bottom: 1px solid $main-border-color;
+}
+
+.app-screenshot-thumbnail-container {
+  display: flex;
+}
+
+.app-screenshot-thumbnail {
+  border-right: 1px solid $main-border-color;
+  float: left;
+  margin: 0;
+  width: 20%;
+}
+
+.screenshot-caption {
+  font-size: 12px;
 }
 
 .app-readme-button {
@@ -100,11 +117,15 @@
 .app-readme {
   padding: 3rem;
   border: 1px solid $main-border-color;
-  border-radius: 5px;
+  border-radius: 3px;
 
   .octicon-link {
     display: none;
   }
+}
+
+.entry-content h1:first-of-type {
+  margin-top: 0;
 }
 
 // basecoat filter-list overrides
@@ -116,4 +137,21 @@
 
 .filter-item {
   padding: 4px 8px;
+}
+
+.left-column {
+  float: left;
+  width: 30%;
+}
+
+.right-column {
+  float: left;
+}
+
+.box-shadow-medium {
+  box-shadow: 0 1px 5px rgba(27,31,35,0.15);
+}
+
+.readme-link {
+  cursor: pointer;
 }

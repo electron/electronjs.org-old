@@ -1,149 +1,163 @@
 <style>
   .app-download {
-    background: {{app.goodColorOnWhite}}; 
+    background: {{app.goodColorOnWhite}};
     color: white !important;
   }
 
   .page-section a {
-    color: {{app.goodColorOnWhite}}; 
+    color: {{app.goodColorOnWhite}};
   }
 </style>
 
 <section class="page-section">
-
-  <!-- <nav aria-label="Breadcrumb">
+  <nav class="row" aria-label="Breadcrumb">
     <ol>
       <li class="breadcrumb-item text-small"><a href="/apps">Apps</a></li>
       <li class="breadcrumb-item breadcrumb-item-selected text-small text-gray" aria-current="page">{{app.name}}</li>
     </ol>
-  </nav> -->
-  <div class="container-narrow media-fluid">
-    <header class="app-header">
+  </nav>
+
+  <header class="app-header">
+    <div class="col-md-3 app-logo-container">
       <img class='app-logo' src='/node_modules/electron-apps/apps/{{app.slug}}/{{app.icon128}}' alt='{{app.name}}'>
-      <a class="app-link" href="{{app.website}}">
-        <h1 class='app-name'>{{app.name}}</h1>
-      </a>
+    </div>
+
+    <div class="col-md-9">
+      <h1 class='app-name'>
+        <a class="app-link" href="{{app.website}}">{{app.name}}</a>
+      </h1>
+
       <p class="app-description">
         {{app.description}}
       </p>
-    </header>
+    </div>
+  </header>
 
-    {{#each app.screenshots}}
-      <figure class="app-sreenshot">
-        <a href="{{../app.website}}">
-          <img src="{{imageUrl}}"></img>
-        </a>
-        {{#if caption}}
-          <figcaption class="text-center">
-            {{caption}}
-          </figcaption>
+  <section>
+    <div class="col-md-3 my-3">
+      <dl class="text-small border-bottom pb-3 my-3 lh-condensed">
+        {{#if app.website}}
+          <dt class="text-bold">Website</dt>
+          <dd>
+            <a href="{{app.website}}">{{app.website}}</a>
+          </dd>
         {{/if}}
-      </figure>
-    {{/each}}
-
-    <table class="app-details">
-
-      {{#if app.website}}
-        <tr>
-          <td>Website</td>
-          <td><a href="{{app.website}}">{{app.website}}</a></td>
-        </tr>
-      {{/if}}
+      </dl>
 
       {{#if app.repository}}
-        <tr>
-          <td>Repository</td>
-          <td><a href="{{app.repository}}">{{app.repository}}</a></td>
-        </tr>
+        <dl class="text-small border-bottom py-3 my-3 lh-condensed">
+          <dt class="text-bold">Repository</dt>
+          <dd>
+            <a href="{{app.repository}}">{{app.repository}}</a>
+          </dd>
+        </dl>
       {{/if}}
 
-      <tr>
-          <td>Category</td>
-          <td><a href="/apps?category={{app.categorySlug}}">{{app.category}}</a></td>
-        </tr>
+      <dl class="text-small border-bottom py-3 my-3 lh-condensed">
+        <dt class="text-bold">Category</dt>
+        <dd>
+          <a href="/apps?category={{app.categorySlug}}">{{app.category}}</a>
+        </dt>
+      </dl>
+
+      {{#if app.latestRelease.assets}}
+        <dl class="text-small border-bottom pb-3 my-3 lh-condensed">
+          <dt class="text-bold">
+            Downloads
+          </dt>
+
+          <dd>
+            {{#each app.latestRelease.assets}}
+              <a class="app-download {{this.platform}}" href="{{this.browser_download_url}}">{{this.name}}</a>
+            {{/each}}
+
+            <a href="{{app.latestRelease.html_url}}" id="view-all-downloads" style="opacity:0.7;font-size:80%;display:none;">View all {{app.latestRelease.assets.length}} files</a>
+          </dd>
+        </dl>
+      {{/if}}
 
       {{#if app.keywords}}
-        <tr>
-          <td>Keywords</td>
-          <td>
+        <dl class="text-small border-bottom pb-3 my-3 lh-condensed">
+          <dt class="text-bold">Keywords</dt>
+          <dd>
             {{#each app.keywords}}
               <a class="app-keyword" href="/apps?q={{this}}">{{this}}</a>
             {{/each}}
-          </td>
-        </tr>
+          </dd>
+        </dl>
       {{/if}}
 
-
       {{#if app.license}}
-        <tr>
-          <td>License</td>
-          <td>{{app.license}}</td>
-        </>
+        <dl class="text-small border-bottom pb-3 my-3 lh-condensed">
+          <dt class="text-bold">License</dt>
+          <dt>{{app.license}}</dd>
+        </dl>
       {{/if}}
 
       <!-- {{#if app.locales}}
-        <tr>
-          <td>Languages</td>
-          <td>
+        <dl class="text-small border-bottom my-3 pb-3 lh-condensed">
+          <dt class="text-bold">Languages</dt>
+          <dd class="border-bottom pb-3 lh-condensed">
             {{#each app.locales}}
               {{this}}
             {{/each}}
-          </td>
-        </tr>
+          </dd>
+        </dl>
       {{/if}} -->
 
       {{#if app.latestRelease}}
-        {{#if app.latestRelease.assets}}
-          <tr>
-            <td>
-              Downloads
-            </td>
-            <td>
-              {{#each app.latestRelease.assets}}
-                <a class="app-download {{this.platform}}" href="{{this.browser_download_url}}">{{this.name}}</a>
-              {{/each}}
-
-              <a href="{{app.latestRelease.html_url}}" id="view-all-downloads" style="opacity:0.7;font-size:80%;display:none;">View all {{app.latestRelease.assets.length}} files</a>
-            </td>
-          </tr>
-        {{/if}}
-        
-        <tr>
-          <td>
+        <dl class="text-small border-bottom my-3 pb-3 lh-condensed">
+          <dt class="text-bold">
             Latest Release
-          </td>
-          <td>
+          </dt>
+
+          <dd>
             <a href="{{app.latestRelease.html_url}}">
               {{app.latestRelease.name}}
               <span class="app-tagname">({{app.latestRelease.tag_name}})</span>
             </a>
-          </td>
-        </tr>
-
-        <tr>
-          <td>Release Notes
-          </td>
-          <td>
-            {{{app.latestRelease.body_html}}}
-          </td>
-        </tr>
+          </dd>
+        </dl>
       {{/if}}
-    </table>
+    </div>
 
-    {{#if app.readmeCleaned}}
-      <div class="app-readme-wrapper">
-        <header class="app-readme-header">
-          <button class="app-readme-button btn btn-lg btn-outline-themed" type="button" id="display-readme">
-            View the {{app.name}} README <span id="display-readme-icon" class="octicon octicon-chevron-down ml-2"></span>
-          </button>
-        </header>
-        <main id="readme" class="app-readme d-none">
-          {{{app.readmeCleaned}}}
-        </main>
-      </div>
-    {{/if}}
+    <div class="col-md-9 my-3">
+      {{#if app.readmeCleaned}}
+        <div class="app-readme-wrapper">
+          <a class="text-small readme-link" id="display-readme">
+            View the {{app.name}} README...
+          </a>
 
-  </div>
+          <main id="readme" class="app-readme box-shadow-medium d-none text-small">
+            {{{app.readmeCleaned}}}
+          </main>
+        </div>
+      {{/if}}
+
+      {{#if app.screenshots}}
+        <div class="app-screenshots my-3">
+          <div class="app-screenshot p-3" id="app-screenshot-container">
+            <img src="{{app.screenshots.0.imageUrl}}" />
+          </div>
+
+          <div class="app-screenshot-thumbnail-container">
+            {{#each app.screenshots}}
+              <figure class="app-screenshot-thumbnail p-3">
+                <a href="{{imageUrl}}">
+                  <img src="{{imageUrl}}" />
+                </a>
+                {{#if caption}}
+                  <figcaption class="screenshot-caption text-center">
+                    {{caption}}
+                  </figcaption>
+                {{/if}}
+              </figure>
+            {{/each}}
+          </div>
+        </div>
+      {{/if}}
+    </div>
+  </section>
 </section>
 
 <script>
