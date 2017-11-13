@@ -1,7 +1,26 @@
 <style>
-  .app-download {
+  .site-header, .app-download {
     background: {{app.goodColorOnWhite}}; 
     color: white !important;
+  }
+
+  .site-header-nav-item {
+    opacity: 0.7;
+  }
+
+  .site-header-nav-item:hover {
+    color: white !important;
+    border-bottom-color: white !important;
+  }
+
+  .site-header-nav-item.bordered {
+    border: 1px solid rgba(255, 255, 255, 0.6) !important;
+  }
+
+  .site-header-nav-item.active {
+    opacity: 1;
+    color: white !important;
+    border-bottom-color: white !important;
   }
 
   .page-section a {
@@ -29,7 +48,7 @@
     </header>
 
     {{#each app.screenshots}}
-      <figure class="app-sreenshot">
+      <figure class="app-screenshot">
         <a href="{{../app.website}}">
           <img src="{{imageUrl}}"></img>
         </a>
@@ -144,6 +163,12 @@
     {{/if}}
 
   </div>
+
+  <p class="text-center">
+    {{localized.apps.something_missing}}
+    <a href="https://github.com/electron/electron-apps/tree/master/apps/{{app.slug}}/{{app.slug}}.yml">{{localized.apps.edit_this_app}}</a>
+  </p>
+
 </section>
 
 <script>

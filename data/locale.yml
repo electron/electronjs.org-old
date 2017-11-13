@@ -138,6 +138,8 @@ apps:
     Facebook, Slack, and Docker.
   view_more: View more apps
   submit_your_own: submit your own
+  something_missing: Something missing?
+  edit_this_app: Edit this app.
 
 or: or
 
