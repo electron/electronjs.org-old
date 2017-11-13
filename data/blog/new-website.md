@@ -1,20 +1,20 @@
 ---
-title: 'A New Website'
+title: 'Electron's New Website'
 author: zeke
 date: '2017-11-13'
 ---
 
-Electron has a new website and a new domain: [electronjs.org]. If you're a 
-regular visitor to the site, you may not notice many differences, but under
-the surface we've made some big changes: The static Jekyll site has been 
-replaced with a Node.js server; The site is now internationalized and we've 
-built a pipeline to enable crowdsourced translation of the Electron 
-documentation into any language; We've also made a few cosmetic improvements 
-too, like categories and standalone pages for the Electron apps in our registry.
+Electron has a new website and a new domain: [electronjs.org]. Many of the 
+changes are subtle on the surface, but we've made some big changes to the 
+underlying project: The static Jekyll site has been replaced with a Node.js 
+server; The site is now internationalized and we've built a pipeline to 
+enable crowdsourced translation of the docs into any language; We've also 
+made a few cosmetic improvements too, like categories and colorful standalone 
+pages for Electron apps.
 
 ## The New Domain
 
-We've moved from [electron.atom.io] to [electronjs.org].
+We've moved the site from electron.atom.io to a new domain: [electronjs.org].
 
 The Electron project was born inside [Atom], GitHub's open-source text editor 
 built on web technologies. Electron was originally called `atom-shell` and Atom 
@@ -36,8 +36,10 @@ Electron.
 Traduções! 翻译! Bản dịch! 翻訳! Übersetzungen!
 
 <figure>
-  <img src="" alt="">
-  <figcaption></figcaption>
+  <a href="https://crowdin.com/project/electron">
+    <img src="https://user-images.githubusercontent.com/2289/32754734-e8e43c04-c886-11e7-9f34-f2da2bb4357b.png" alt="Overview of translation progress on Crowdin">
+    <figcaption>Overview of translation progress on Crowdin</figcaption>
+  </a>
 </figure>
 
 <figure>
@@ -60,6 +62,13 @@ Though we've hardly mentioned our work in progress to the public, nearly 50 open
 always fresh from the master branch.
 
 ## 💻 Apps
+
+
+The apps listing has gotten a few updates that should make it a bit easier to
+find interesting apps like [GraphQL GUIs](https://electronjs.org/apps?q=graphql)
+or [p2p apps](https://electronjs.org/apps?q=graphql).
+
+
 
 now categorized and each app has its own URL.
 
