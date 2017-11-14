@@ -42,6 +42,13 @@ Crowdin has some impressive capabilities like machine translation using Google,
 Microsoft, or Yandex. Translation Memories, voting, etc.
 
 <figure>
+  <a href="/languages">
+    <img src="https://user-images.githubusercontent.com/2289/32803530-a35ff774-c938-11e7-9b98-5c0cfb679d84.png" alt="Electron Nav in Simplified Chinese">
+    <figcaption>Electron Nav in Simplified Chinese</figcaption>
+  </a>
+</figure>
+
+<figure>
   <a href="https://crowdin.com/project/electron">
     <img src="https://user-images.githubusercontent.com/2289/32754734-e8e43c04-c886-11e7-9f34-f2da2bb4357b.png" alt="Current target languages on Crowdin">
     <figcaption>Current target languages on Crowdin</figcaption>
