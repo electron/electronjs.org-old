@@ -16,3 +16,15 @@ h4 {
     background-color: darken($main-bg-color, 5%);
   }
 }
+
+span.shell-one-liner {
+  font-family: $code-font-family;
+  padding: 10px;
+  border-radius: 2px;
+  line-height: 2;
+
+  &:before {
+    content: "$ ";
+    opacity: 0.5;
+  }
+}

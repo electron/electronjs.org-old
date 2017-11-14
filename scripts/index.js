@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   require('./fix-platform-labels')()
   require('./update-demo-app-download-link')()
   require('./update-app-download-links')()
+  require('./platform-specific-content')()
   require('./apply-active-class-to-active-links')()
   require('./remove-scheme-from-link-text')()
   require('browser-date-formatter')()

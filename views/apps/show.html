@@ -26,6 +26,12 @@
   .page-section a {
     color: {{app.goodColorOnWhite}}; 
   }
+
+  .shell-one-liner {
+    background: {{app.goodColorOnWhiteFaint}}; 
+    color: {{app.goodColorOnWhite}};
+  }
+
 </style>
 
 <section class="page-section">
@@ -111,6 +117,17 @@
         </tr>
       {{/if}} -->
 
+      {{#if app.homebrewCaskName}}
+        <tr class="darwin-only display-table-row">
+          <td>
+            <a href="https://caskroom.github.io/">Homebrew</a>
+          </td>
+          <td>
+            <span class="shell-one-liner">brew cask install {{app.homebrewCaskName}}</span>
+          </td>
+        </tr>
+      {{/if}}
+
       {{#if app.latestRelease}}
         {{#if app.latestRelease.assets}}
           <tr>
@@ -172,8 +189,8 @@
 </section>
 
 <script>
-  document.getElementById('display-readme').addEventListener('click', function(event) {
-    this.classList.add('d-none');
-    document.getElementById('readme').classList.remove('d-none');
-  });
+  // document.getElementById('display-readme').addEventListener('click', function(event) {
+  //   this.classList.add('d-none');
+  //   document.getElementById('readme').classList.remove('d-none');
+  // });
 </script>
