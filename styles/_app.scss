@@ -125,7 +125,7 @@
   display: none;
 }
 
-// hide filter categories on
+// hide filter categories on mobile
 @media only screen and (max-width: 750px) {
   .categories-filter {
     display: none;
@@ -138,6 +138,7 @@
   }
 }
 
+// only show inline filter on mobile
 @media only screen and (min-width: 750px) {
   .inline-filter {
     display: none;
