@@ -92,9 +92,9 @@ displaying the installation command (for macOS visitors) on every app page
 that has a cask:
 
 <figure>
-  <a href="https://electronjs.org/apps/dat">
+  <a class="screenshot" href="https://electronjs.org/apps/dat">
    <img src="https://user-images.githubusercontent.com/2289/32817881-100e9f74-c975-11e7-805b-2548ba686940.png">
-   <figcaption>OS-specific installation options</figcaption>
+   <figcaption>Installation options tailored for your OS</figcaption>
   </a>
 </figure>
 
