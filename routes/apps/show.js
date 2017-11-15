@@ -1,6 +1,5 @@
 const apps = require('electron-apps')
 const {getPlatformFromFilename} = require('platform-utils')
-const colorConvert = require('color-convert')
 
 module.exports = (req, res, next) => {
   const app = apps.find(app => app.slug === req.params.slug)
