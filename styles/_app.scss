@@ -124,3 +124,22 @@
 .linux-only {
   display: none;
 }
+
+// hide filter categories on
+@media only screen and (max-width: 750px) {
+  .categories-filter {
+    display: none;
+  }
+  .inline-filter {
+    display: block;
+  }
+  .container-narrow {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .inline-filter {
+    display: none;
+  }
+}
