@@ -4,30 +4,22 @@ author: zeke
 date: '2017-11-13'
 ---
 
-Electron has a new website and a new domain: [electronjs.org]. The static 
+Electron has a new website and a new domain: [electronjs.org].  We've replaced 
+the static Jekyll website with a new Node.js server. The new site is 
+internationalized, allowing for the docs to be translated into multiple languages
+and paving the way for a global audience of developers to start learning 
+Electron and developing new apps. 
+
+With this change we've also rolled out some improvements to the apps pages.
+
+The new site also features some improvements
+to the app gallery.
+
+The static 
 Jekyll site has been replaced with a Node.js server; The site is now 
 internationalized and we've built a pipeline to enable crowdsourced translation 
 of the docs into any language; We've also made a few cosmetic improvements 
 too, like categories and colorful standalone pages for Electron apps.
-
-## A New Domain
-
-We've moved the site from electron.atom.io to a new domain: [electronjs.org].
-
-The Electron project was born inside [Atom], GitHub's open-source text editor 
-built on web technologies. Electron was originally called `atom-shell` and Atom 
-was the first app to use it, but it didn't take long for folks to realize that 
-this magical Chromium + Node runtime could be used for all kinds of different 
-applications. When companies like Microsoft and Slack started to make use of
-`atom-shell`, it became clear that the project needed a new name.
-
-And so "Electron" was born. In early 2016, GitHub assembled a new team to focus
-specifically on Electron development and maintenance, apart from Atom. In the 
-time since, Electron has been adopted by thousands of app developers, and is now
-depenended on by many large companies. Supporting GitHub's Electron projects 
-like Atom and [Desktop] is still a priority for our team, but by moving to a new
-domain we hope to help clarify the technical distinction between Atom and 
-Electron.
 
 ## 🌍 Translations
 
@@ -81,7 +73,33 @@ If you're multilingual and interested in helping translate Electron's docs
 and website, visit the [electron/electron-i18n] repo, or jump right into 
 translating at.
 
-## 💻 Apps
+## App Pages
+
+For Electron apps that have public GitHub repositories, we've begun collecting
+metadata like releases and readmes.
+
+The [Homebrew] package manager for macOS has a subcommand called [cask]
+that makes it easy to install desktop apps using a single command in your
+terminal, like `brew cask install atom`.
+
+We've begun collecting Homebrew cask names for popular Electron apps and are now
+displaying the installation command (for macOS visitors) on every app page 
+that has a cask:
+
+<figure>
+  <a href="https://electronjs.org/apps/dat">
+   <img src="https://user-images.githubusercontent.com/2289/32817881-100e9f74-c975-11e7-805b-2548ba686940.png">
+   <figcaption>OS-specific installation options</figcaption>
+  </a>
+</figure>
+
+To view all the apps that have cask names, visit 
+[electronjs.org/apps?q=homebrew](https://electronjs.org/apps?q=homebrew)
+
+If you've got an Electron app that you'd like featured on the site, open a 
+pull request on the [electron/electron-apps] repository.
+
+## 💻 Apps Directory
 
 The apps listing has gotten a few updates that should make it a bit easier to
 find interesting apps like [GraphQL GUIs](https://electronjs.org/apps?q=graphql)
@@ -92,9 +110,26 @@ or [p2p apps](https://electronjs.org/apps?q=graphql).
   <figcaption>Every app has its own URL</figcaption>
 </figure>
 
-homebrew
+## 🌐 A New Domain
 
-## 🐢 Node.js Everywhere
+We've moved the site from electron.atom.io to a new domain: [electronjs.org].
+
+The Electron project was born inside [Atom], GitHub's open-source text editor 
+built on web technologies. Electron was originally called `atom-shell` and Atom 
+was the first app to use it, but it didn't take long for folks to realize that 
+this magical Chromium + Node runtime could be used for all kinds of different 
+applications. When companies like Microsoft and Slack started to make use of
+`atom-shell`, it became clear that the project needed a new name.
+
+And so "Electron" was born. In early 2016, GitHub assembled a new team to focus
+specifically on Electron development and maintenance, apart from Atom. In the 
+time since, Electron has been adopted by thousands of app developers, and is now
+depenended on by many large companies. Supporting GitHub's Electron projects 
+like Atom and [Desktop] is still a priority for our team, but by moving to a new
+domain we hope to help clarify the technical distinction between Atom and 
+Electron.
+
+## 🐢🚀 Node.js Everywhere
 
 The previous Electron website was built with Jekyll, the popular Ruby-based 
 static site generator. Jekyll is a great tool for building static websites, but 
@@ -128,18 +163,16 @@ feature, which automatically creates a running copy of the app for every pull
 request. This makes it easy for reviewers to view the actual effects of a 
 change on a live version of the site.
 
-
-## 🛰 Node is Everywhere
-
-Running a webserver gives us dynamic routes, forms that users can fill out, etc.
-
 ## 🤖 Automated Deployment
 
 greenkeeper and semantic-release ftw
 
 [Crowdin]: https://crowdin.com/project/electron
 [crowdin.com/project/electron]: https://crowdin.com/project/electron
+[electron/electron-apps]: https://github.com/electron/electron-apps
 [electron/electron-i18n]: https://github.com/electron/electron-i18n#readme
 [electronjs.org]: https://electronjs.org
 [Atom]: https://atom.io
 [Destop]: https://desktop.github.com
+[Homebrew]: https://brew.sh
+[cask]: https://caskroom.github.io
