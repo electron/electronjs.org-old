@@ -7,10 +7,6 @@ module.exports = (req, res, next) => {
 
   if (!app) return next()
 
-  // TODO move this into electron-apps
-  const rgb = colorConvert.hex.rgb(app.goodColorOnWhite)
-  app.goodColorOnWhiteFaint = `rgba(${rgb.join(', ')}, 0.1)`
-
   const context = Object.assign(req.context, {
     app: app,
     page: {
