@@ -4,68 +4,49 @@ author: zeke
 date: '2017-11-13'
 ---
 
-Electron has a new website and a new domain: [electronjs.org].  We've replaced 
-the static Jekyll website with a new Node.js server. The new site is 
-internationalized, allowing for the docs to be translated into multiple languages
-and paving the way for a global audience of developers to start learning 
-Electron and developing new apps. 
-
-With this change we've also rolled out some improvements to the apps pages.
-
-The new site also features some improvements
-to the app gallery.
-
-The static 
-Jekyll site has been replaced with a Node.js server; The site is now 
-internationalized and we've built a pipeline to enable crowdsourced translation 
-of the docs into any language; We've also made a few cosmetic improvements 
-too, like categories and colorful standalone pages for Electron apps.
+Electron has a new website at [electronjs.org]!  We've replaced 
+our static Jekyll site with a Node.js webserver, giving us more flexibility to
+internationalize the site and paving the way for us to build more exciting 
+new features.
 
 ## 🌍 Translations
 
-Traduções! 翻译! Bản dịch! 翻訳! Übersetzungen!
+We've begun the process of internationalizing the Electron website, with the 
+goal of making Electron app development accessible to a global audience of 
+developers. We're using a localization platform called [Crowdin] that integrates 
+with  GitHub, opening pull requests automatically as content is translated into 
+different languages.
 
-The new website is internationalized, making Electron app development accessible 
-to a global audience of developers. We're using a platform called [Crowdin] 
-that integrates with GitHub, opening pull requests automatically as content
-is translated into various languages.
-
-Crowdin has some impressive capabilities like machine translation using Google, 
-Microsoft, or Yandex. Translation Memories, voting, etc.
+Though we've been working quietly on this effort so far, 
+over 75 Electron community members have already discovered the project 
+organically and joined in the effort to internationalize the website and 
+translate Electron's docs into over 20 languages. We are seeing [daily 
+contributions](https://github.com/electron/electron-i18n/pulls?utf8=%E2%9C%93&q=is%3Apr%20author%3Aglotbot%20) from people all over the world, with translations for 
+languages like French, Vietnamese, Indonesian, and Chinese leading the way.
 
 <figure>
-  <a href="/languages">
+  <a href="https://electronjs.org/languages">
     <img src="https://user-images.githubusercontent.com/2289/32803530-a35ff774-c938-11e7-9b98-5c0cfb679d84.png" alt="Electron Nav in Simplified Chinese">
-    <figcaption>Electron Nav in Simplified Chinese</figcaption>
+    <figcaption>Electron's Nav in Simplified Chinese</figcaption>
   </a>
 </figure>
 
 <figure>
   <a href="https://crowdin.com/project/electron">
-    <img src="https://user-images.githubusercontent.com/2289/32754734-e8e43c04-c886-11e7-9f34-f2da2bb4357b.png" alt="Current target languages on Crowdin">
-    <figcaption>Current target languages on Crowdin</figcaption>
+    <img class="screenshot"  src="https://user-images.githubusercontent.com/2289/32754734-e8e43c04-c886-11e7-9f34-f2da2bb4357b.png" alt="Current target languages on Crowdin">
+    <figcaption>Translation in progress on Crowdin</figcaption>
   </a>
 </figure>
 
-There are currently 21 languages enabled for the Electron project on Crowdin, 
-and adding support for more languages is trivial. If you are interested in 
-helping translate but you don't see your language on the list, 
-[let us know](https://github.com/electron/electron.atom.io/issues/new) and
-we'll enable it.
-
 <figure>
-  <img src="https://user-images.githubusercontent.com/2289/32755713-7040641c-c88b-11e7-88e0-c99360a2f166.png" alt="Crowdin's Translation UI">
-  <figcaption>Crowdin's Translation UI</figcaption>
+  <a href="https://crowdin.com/project/electron">
+    <img class="screenshot" src="https://user-images.githubusercontent.com/2289/32755713-7040641c-c88b-11e7-88e0-c99360a2f166.png" alt="Crowdin's Translation UI">
+    <figcaption>Crowdin's Translation UI</figcaption>
+  </a>
 </figure>
 
-Though we've hardly mentioned this new localized setup to the public, 
-nearly 50 open-source community members have already discovered the project 
-organically and joined in the translation effort. We are seeing daily 
-contributions from people all over the world, with translations from 
-languages like French, Vietnamese, Indonesian, and Chinese leading the way.
-
 <figure>
-  <img src="https://user-images.githubusercontent.com/2289/32755352-b0a35372-c889-11e7-9b24-ad31a2492ff3.png" alt="Tracking Translation Progress">
+  <img class="screenshot"  src="https://user-images.githubusercontent.com/2289/32755352-b0a35372-c889-11e7-9b24-ad31a2492ff3.png" alt="Tracking Translation Progress">
   <figcaption>Tracking Translation Progress</figcaption>
 </figure>
 
@@ -73,10 +54,34 @@ If you're multilingual and interested in helping translate Electron's docs
 and website, visit the [electron/electron-i18n] repo, or jump right into 
 translating at.
 
+There are currently 21 languages enabled for the Electron project on Crowdin, 
+and adding support for more languages is easy. If you're interested in 
+helping translate but you don't see your language on the list, 
+[let us know](https://github.com/electron/electron.atom.io/issues/new) and
+we'll enable it.
+
 ## App Pages
 
-For Electron apps that have public GitHub repositories, we've begun collecting
-metadata like releases and readmes.
+We've begun collecting metadata like Releases and READMEs for apps in our 
+registry that have public GitHub repositories. Having this data means we're 
+able to display things like download links, release notes, and more right on
+the site.
+
+Every Electron app in our registry now has a unique URL:
+
+<figure>
+  <a href="https://electronjs.org/apps/github-desktop">
+    <img src="https://user-images.githubusercontent.com/2289/32755954-8e908df6-c88c-11e7-9327-9504b8527ae0.png" alt="Every app has its own URL">
+    <figcaption>A page for every Electron app</figcaption>
+  </a>
+</figure>
+
+The [apps index](https://electronjs.org/apps) has also gotten a few updates 
+such as categories that make it a bit easier to find interesting apps 
+like [GraphQL GUIs](https://electronjs.org/apps?q=graphql)
+or [p2p tools](https://electronjs.org/apps?q=graphql).
+
+## Quick App Installs with Homebrew
 
 The [Homebrew] package manager for macOS has a subcommand called [cask]
 that makes it easy to install desktop apps using a single command in your
@@ -98,17 +103,6 @@ To view all the apps that have cask names, visit
 
 If you've got an Electron app that you'd like featured on the site, open a 
 pull request on the [electron/electron-apps] repository.
-
-## 💻 Apps Directory
-
-The apps listing has gotten a few updates that should make it a bit easier to
-find interesting apps like [GraphQL GUIs](https://electronjs.org/apps?q=graphql)
-or [p2p apps](https://electronjs.org/apps?q=graphql).
-
-<figure>
-  <img src="https://user-images.githubusercontent.com/2289/32755954-8e908df6-c88c-11e7-9327-9504b8527ae0.png" alt="Every app has its own URL">
-  <figcaption>Every app has its own URL</figcaption>
-</figure>
 
 ## 🌐 A New Domain
 
