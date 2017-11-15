@@ -39,7 +39,13 @@
               <span class='listed-app-name text-gray-dark'>{{this.name}}</span>
               <span class='listed-app-description text-gray-light'>{{this.description}}</span>
               <span class='listed-app-date text-gray-light'>Added&nbsp;<span data-date='{{this.date}}'>{{this.date}}</span></span>
-              <span class='listed-app-keywords' style='display:none;'>{{this.keywords}}</span>
+              <span class='listed-app-keywords' style='display:none;'>
+                {{this.keywords}}
+                
+                {{#if this.homebrewCaskName}}
+                  homebrew cask
+                {{/if}}
+              </span>
             </a>
           </li>
         {{/unless}}

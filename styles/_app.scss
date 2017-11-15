@@ -118,3 +118,9 @@
 .filter-item {
   padding: 4px 8px;
 }
+
+.darwin-only,
+.win32-only,
+.linux-only {
+  display: none;
+}
