@@ -4,13 +4,13 @@ author: zeke
 date: '2016-12-20'
 ---
 
-We've added a new [userland](http://electron.atom.io/userland) section to
+We've added a new [userland](https://electronjs.org/userland) section to
 the Electron website to help users discover the people, packages, and apps that make
 up our flourishing open-source ecosystem.
 
 ---
 
-[![github-contributors](https://cloud.githubusercontent.com/assets/2289/21205352/a873f86c-c210-11e6-9a92-1ef37dfc986b.png)](http://electron.atom.io/userland)
+[![github-contributors](https://cloud.githubusercontent.com/assets/2289/21205352/a873f86c-c210-11e6-9a92-1ef37dfc986b.png)](https://electronjs.org/userland)
 
 ## Origins of Userland
 
@@ -49,19 +49,19 @@ counts, etc.
 
 We then used this data to generate the following reports:
 
-- [App Development Dependencies](http://electron.atom.io/userland/dev_dependencies): Packages most often listed as `devDependencies` in Electron apps.
-- [GitHub Contributors](http://electron.atom.io/userland/github_contributors): GitHub users who have contributed to numerous Electron-related GitHub repositories.
-- [Package Dependencies](http://electron.atom.io/userland/package_dependencies): Electron-related npm packages that are frequently depended on by other npm packages.
-- [Starred Apps](http://electron.atom.io/userland/starred_apps): Electron apps (that are not npm packages) with numerous stargazers.
-- [Most Downloaded Packages](http://electron.atom.io/userland/most_downloaded_packages): Electron-related npm packages that are downloaded a lot.
-- [App Dependencies](http://electron.atom.io/userland/dependencies): Packages most often listed as `dependencies` in Electron apps.
-- [Package Authors](http://electron.atom.io/userland/package_authors): The most prolific authors of Electron-related npm packages.
+- [App Development Dependencies](https://electronjs.org/userland/dev_dependencies): Packages most often listed as `devDependencies` in Electron apps.
+- [GitHub Contributors](https://electronjs.org/userland/github_contributors): GitHub users who have contributed to numerous Electron-related GitHub repositories.
+- [Package Dependencies](https://electronjs.org/userland/package_dependencies): Electron-related npm packages that are frequently depended on by other npm packages.
+- [Starred Apps](https://electronjs.org/userland/starred_apps): Electron apps (that are not npm packages) with numerous stargazers.
+- [Most Downloaded Packages](https://electronjs.org/userland/most_downloaded_packages): Electron-related npm packages that are downloaded a lot.
+- [App Dependencies](https://electronjs.org/userland/dependencies): Packages most often listed as `dependencies` in Electron apps.
+- [Package Authors](https://electronjs.org/userland/package_authors): The most prolific authors of Electron-related npm packages.
 
 ## Filtering Results
 
 Reports like
-[app dependencies](http://electron.atom.io/userland/dependencies) and
-[starred apps](http://electron.atom.io/userland/starred_apps)
+[app dependencies](https://electronjs.org/userland/dependencies) and
+[starred apps](https://electronjs.org/userland/starred_apps)
 which list packages, apps, and repos have a text input that can be used to
 filter the results.
 
@@ -70,7 +70,7 @@ allows you to copy a URL representing a particular slice of userland data,
 then share it with others.
 
 [![babel](https://cloud.githubusercontent.com/assets/2289/21328807/7bfa75e4-c5ea-11e6-8212-0e7988b367fd.png)
-](http://electron.atom.io/userland/dev_dependencies?q=babel%20preset)
+](https://electronjs.org/userland/dev_dependencies?q=babel%20preset)
 
 ## More to come
 
@@ -80,13 +80,13 @@ new reports to the website.
 
 All of the tools used to collect and display this data are open-source:
 
-- [electron/electron.atom.io](https://github.com/electron/electron.atom): The Electron website.
+- [electron/electronjs.org](https://github.com/electron/electron.atom): The Electron website.
 - [electron/electron-userland-reports](https://github.com/electron/electron-userland-reports): Slices of data about packages, repos, and users in Electron userland.
 - [electron/repos-using-electron](https://github.com/electron/repos-using-electron): All public repositories on GitHub that depend on `electron` or `electron-prebuilt`
 - [electron/electron-npm-packages](https://github.com/zeke/electron-npm-packages): All npm packages that mention `electron` in their `package.json` file.
 
 If you have ideas about how to improve these reports, please let us know
-[opening an issue on the website repository](https://github.com/electron/electron.atom.io/issues/new)
+[opening an issue on the website repository](https://github.com/electron/electronjs.org/issues/new)
 or any of the above-mentioned repos.
 
 Thanks to you, the Electron community, for making userland what it is today!

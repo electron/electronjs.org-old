@@ -62,7 +62,7 @@ TypeScript definition file. When you install the `electron` package from npm,
 the `electron.d.ts` file is bundled automatically with the
 installed package.
 
-The [safest way](https://electron.atom.io/docs/tutorial/electron-versioning/) to install Electron is using an exact version number:
+The [safest way](https://electronjs.org/docs/tutorial/electron-versioning/) to install Electron is using an exact version number:
 
 ```sh
 npm install electron --save-dev --save-exact
@@ -79,8 +79,8 @@ and `@types/node`, you should remove them from your Electron project to prevent
 any collisions.
 
 The definition file is derived from our
-[structured API documentation](https://electron.atom.io/blog/2016/09/27/api-docs-json-schema),
-so it will always be consistent with [Electron's API documentation](https://electron.atom.io/docs/api/).
+[structured API documentation](https://electronjs.org/blog/2016/09/27/api-docs-json-schema),
+so it will always be consistent with [Electron's API documentation](https://electronjs.org/docs/api/).
 Just install `electron` and you'll always get TypeScript definitions that are
 up to date with the version of Electron you're using.
 

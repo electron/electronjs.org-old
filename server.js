@@ -66,8 +66,8 @@ app.get('/docs', routes.docs.index)
 app.get('/docs/:category', routes.docs.category)
 app.get('/docs/:category/*', routes.docs.show)
 
-app.get('/issues', (req, res) => res.redirect(301, 'https://github.com/electron/electron.atom.io/issues'))
-app.get('/issues/new', (req, res) => res.redirect(301, 'https://github.com/electron/electron.atom.io/issues/new'))
+app.get('/issues', (req, res) => res.redirect(301, 'https://github.com/electron/electronjs.org/issues'))
+app.get('/issues/new', (req, res) => res.redirect(301, 'https://github.com/electron/electronjs.org/issues/new'))
 
 app.get('/userland', routes.userland.index)
 app.get('/userland/*', routes.userland.show)

@@ -16,7 +16,7 @@ async function get (route) {
   return $
 }
 
-describe('electron.atom.io', () => {
+describe('electronjs.org', () => {
   describe('homepage', () => {
     test('displays featured apps, version numbers, and CoC link', async () => {
       const $ = await get('/')
@@ -210,13 +210,13 @@ describe('electron.atom.io', () => {
     test('redirects /issues to the website repo, for convenience', async () => {
       const res = await supertest(app).get('/issues')
       res.statusCode.should.equal(301)
-      res.headers.location.should.equal('https://github.com/electron/electron.atom.io/issues')
+      res.headers.location.should.equal('https://github.com/electron/electronjs.org/issues')
     })
 
     test('redirects /issues/new to the website repo, for convenience', async () => {
       const res = await supertest(app).get('/issues')
       res.statusCode.should.equal(301)
-      res.headers.location.should.equal('https://github.com/electron/electron.atom.io/issues')
+      res.headers.location.should.equal('https://github.com/electron/electronjs.org/issues')
     })
   })
 })

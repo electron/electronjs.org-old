@@ -211,7 +211,7 @@ The `createIDWeakMap` API:
 * [`key_weak_map.h`](https://github.com/electron/electron/blob/v1.3.4/atom/common/key_weak_map.h)
 * [`atom_api_key_weak_map.h`](https://github.com/electron/electron/blob/v1.3.4/atom/common/api/atom_api_key_weak_map.h)
 
-[window-disappearing]: http://electron.atom.io/docs/faq/#my-apps-windowtray-disappeared-after-a-few-minutes
+[window-disappearing]: https://electronjs.org/docs/faq/#my-apps-windowtray-disappeared-after-a-few-minutes
 [WeakMap]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap
 [remote-procedure-call]: https://en.wikipedia.org/wiki/Remote_procedure_call
 

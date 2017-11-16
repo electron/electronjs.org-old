@@ -45,7 +45,7 @@ translating on [Crowdin], where you can sign in using your GitHub account.
 There are currently 21 languages enabled for the Electron project on Crowdin. 
 Adding support for more languages is easy, so if you're interested in 
 helping translate but you don't see your language listed, 
-[let us know](https://github.com/electron/electron.atom.io/issues/new) and
+[let us know](https://github.com/electron/electronjs.org/issues/new) and
 we'll enable it.
 
 ## Raw Translated Docs

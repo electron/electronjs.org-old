@@ -109,7 +109,7 @@ in a future post.
 [v8-expose]: https://github.com/electron/libchromiumcontent/blob/v51.0.2704.61/chromiumcontent/chromiumcontent.gypi#L104-L122
 [libuv-expose]: https://github.com/electron/electron/blob/v1.3.2/common.gypi#L219-L228
 [node-start]: https://github.com/nodejs/node/blob/v6.3.1/src/node.h#L187-L191
-[event-loop]: http://electron.atom.io/blog/2016/07/28/electron-internals-node-integration
+[event-loop]: https://electronjs.org/blog/2016/07/28/electron-internals-node-integration
 [gyp-docs]: https://gyp.gsrc.io/docs/UserDocumentation.md
 [native-modules]: https://nodejs.org/api/addons.html
 [boringssl]: https://boringssl.googlesource.com/boringssl
