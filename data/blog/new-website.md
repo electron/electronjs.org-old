@@ -188,5 +188,5 @@ Thank you!
 [electronjs.org]: https://electronjs.org
 [GitHub Desktop]: https://desktop.github.com
 [Homebrew]: https://brew.sh
-[Jeykll]: https://jekyllrb.com
+[Jekyll]: https://jekyllrb.com
 [Node.js]: https://nodejs.org
