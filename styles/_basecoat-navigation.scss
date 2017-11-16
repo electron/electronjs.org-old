@@ -90,6 +90,10 @@
   .site-header-nav {
     float: none;
   }
+
+  .site-header-nav {
+    margin-top: 25px;
+  }
 }
 .site-header-logo { @include breakpoint(lg) { float: left; } }
 .site-header-nav  { @include breakpoint(lg) { float: right; } }

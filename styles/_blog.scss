@@ -42,6 +42,10 @@
 
 .blog-post {
 
+  h2 {
+    margin-top: 2em;
+  }
+
   time {
     display: inline;
     margin-bottom: $spacer4;
@@ -62,6 +66,13 @@
     display: none;
   }
 
+  p {
+    line-height: 1.7;
+    a {
+      text-decoration: underline;
+    }
+  }
+
   a code {
     color: $main-link-color;
   }
@@ -75,5 +86,19 @@
   .table-full-width {
     margin-top: 20px;
     margin-bottom: 20px;
+  }
+}
+
+figure {
+  margin: 2em 0;
+}
+
+figcaption {
+  text-align: center;
+  padding: 10px;
+  font-size: 1em;
+  color: $main-color;
+  a {
+    color: $main-color;
   }
 }
