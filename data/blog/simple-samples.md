@@ -60,7 +60,6 @@ We hope these apps help you get started using Electron. Here are a handful other
 
 - [electron-quick-start](https://github.com/electron/electron-quick-start): A minimal Electron application boilerplate.
 - [Electron API Demos](https://github.com/electron/electron-api-demos): An interactive app that demonstrates the core features of the Electron API
-- [electron.atom.io/docs/all](https://electronjs.org/docs/all/): All of the Electron documentation together on a single searchable page.
+- [electronjs.org/docs/all](https://electronjs.org/docs/all/): All of the Electron documentation together on a single searchable page.
 - [hokein/electron-sample-apps](https://github.com/hokein/electron-sample-apps): Another collection of sample applications for Electron, compiled by Electron maintainer [Haojian Wu](https://github.com/hokein).
 - [awesome-electron](https://github.com/sindresorhus/awesome-electron) - A GitHub repository that collects the latest and greatest Electron-related tutorials, books, videos, etc.
-

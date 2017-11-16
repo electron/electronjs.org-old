@@ -16,7 +16,7 @@ async function get (route) {
   return $
 }
 
-describe('electron.atom.io', () => {
+describe('electronjs.org', () => {
   describe('homepage', () => {
     test('displays featured apps, version numbers, and CoC link', async () => {
       const $ = await get('/')

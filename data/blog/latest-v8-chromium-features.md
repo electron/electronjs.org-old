@@ -8,7 +8,7 @@ Building an Electron application means you only need to create one codebase and 
 
 ---
 
-There are many features and we'll cover some here as examples, but if you're interested in learning about all features you can keep an eye on the [Google Chromium blog](http://blog.chromium.org) and [Node.js changelogs](https://nodejs.org/en/download/releases). You can see what versions of Node.js, Chromium and V8 Electron is using at [electron.atom.io/#electron-versions](https://electronjs.org/#electron-versions).
+There are many features and we'll cover some here as examples, but if you're interested in learning about all features you can keep an eye on the [Google Chromium blog](http://blog.chromium.org) and [Node.js changelogs](https://nodejs.org/en/download/releases). You can see what versions of Node.js, Chromium and V8 Electron is using at [electronjs.org/#electron-versions](https://electronjs.org/#electron-versions).
 
 ## ES6 Support through V8
 
