@@ -73,7 +73,8 @@
     "nodemon": "^1.11.0",
     "npm-run-all": "^4.1.2",
     "standard": "^10.0.3",
-    "supertest": "^3.0.0"
+    "supertest": "^3.0.0",
+    "walk-sync": "^0.3.2"
   },
   "engines": {
     "node": "8"
