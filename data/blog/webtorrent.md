@@ -88,7 +88,7 @@ There is a meme that Electron apps are "bloated" because they include the entire
 
 However, in the case of WebTorrent Desktop, we use nearly every Electron feature, and many dozens of Chrome features in the course of normal operation. If we wanted to implement these features from scratch for each platform, it would have taken months or years longer to build our app, or we would have only been able to release for a single platform.
 
-Just to get an idea, we use Electron's [dock integration](https://electron.atom.io/docs/api/app/#appdockbouncetype-macos) (to show download progress), [menu bar integration](https://electron.atom.io/docs/api/menu/) (to run in the background), [protocol handler registration](https://electron.atom.io/docs/api/app/#appsetasdefaultprotocolclientprotocol-path-args-macos-windows) (to open magnet links), [power save blocker](https://electron.atom.io/docs/api/power-save-blocker/) (to prevent sleep during video playback), and [automatic updater](https://electron.atom.io/docs/api/auto-updater/). As for Chrome features, we use plenty: the `<video>` tag (to play many different video formats), the `<track>` tag (for closed captions support), drag-and-drop support, and WebRTC (which is non-trivial to use in a native app).
+Just to get an idea, we use Electron's [dock integration](https://electronjs.org/docs/api/app/#appdockbouncetype-macos) (to show download progress), [menu bar integration](https://electronjs.org/docs/api/menu/) (to run in the background), [protocol handler registration](https://electronjs.org/docs/api/app/#appsetasdefaultprotocolclientprotocol-path-args-macos-windows) (to open magnet links), [power save blocker](https://electronjs.org/docs/api/power-save-blocker/) (to prevent sleep during video playback), and [automatic updater](https://electronjs.org/docs/api/auto-updater/). As for Chrome features, we use plenty: the `<video>` tag (to play many different video formats), the `<track>` tag (for closed captions support), drag-and-drop support, and WebRTC (which is non-trivial to use in a native app).
 
 Not to mention: our torrent engine is written in JavaScript and assumes the existence of lots of Node APIs, but especially `require('net')` and `require('dgram')` for TCP and UDP socket support.
 
@@ -108,7 +108,7 @@ Yes, the [`webtorrent` npm package](https://npmjs.com/package/webtorrent) works 
 
 In early versions of the app, we struggled to make the UI performant. We put the torrent engine in the same renderer process that draws the main app window which, predictably, led to slowness anytime there was intense CPU activity from the torrent engine (like verifying the torrent pieces received from peers).
 
-We fixed this by moving the torrent engine to a second, invisible renderer process that we communicate with over [IPC](https://electron.atom.io/docs/api/ipc-main/). This way, if that process briefly uses a lot of CPU, the UI thread will be unaffected. Buttery-smooth scrolling and animations are so satisfying.
+We fixed this by moving the torrent engine to a second, invisible renderer process that we communicate with over [IPC](https://electronjs.org/docs/api/ipc-main/). This way, if that process briefly uses a lot of CPU, the UI thread will be unaffected. Buttery-smooth scrolling and animations are so satisfying.
 
 Note: we had to put the torrent engine in a renderer process, instead of a "main" process, because we need access to WebRTC (which is only available in the renderer.)
 

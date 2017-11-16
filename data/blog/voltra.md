@@ -90,5 +90,5 @@ We‘re currently developing a mobile app, and working with artists and labels t
 
 [setImmediate]: https://developer.mozilla.org/en-US/docs/Web/API/Window/setImmediate
 [requestIdleCallback]: https://developer.mozilla.org/en-US/docs/Web/API/Window/requestIdleCallback
-[IPC]: https://electron.atom.io/docs/glossary/#ipc
+[IPC]: https://electronjs.org/docs/glossary/#ipc
 
