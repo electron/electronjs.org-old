@@ -7,7 +7,7 @@ date: '2016-05-11'
 For the last two years, Electron has helped developers build cross platform
 desktop apps using HTML, CSS, and JavaScript. Now we're excited to share a major
 milestone for our framework and for the community that created it. The release
-of Electron 1.0 is now available from [electron.atom.io][electron.atom.io].
+of Electron 1.0 is now available from [electronjs.org][electronjs.org].
 
 ---
 
@@ -103,7 +103,7 @@ New to Electron? Watch the Electron 1.0 intro video:
 [community]: https://electronjs.org/community
 [devtools]: https://developer.chrome.com/devtools
 [devtron]: https://electronjs.org/devtron
-[electron.atom.io]: https://electronjs.org
+[electronjs.org]: https://electronjs.org
 [electron-api-demos]: https://github.com/electron/electron-api-demos
 [electron-org]: https://github.com/electron
 [electron-userland]: https://github.com/electron-userland

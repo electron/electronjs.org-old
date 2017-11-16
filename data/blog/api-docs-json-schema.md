@@ -118,7 +118,7 @@ have contributed to the docs.
 We're excited to see what people do with this new structured data. Possible uses
 include:
 
-- Improvements to [electron.atom.io/docs/](https://electronjs.org/docs/)
+- Improvements to [https://electronjs.org/docs/](https://electronjs.org/docs/)
 - A [TypeScript definition file](https://github.com/electron/electron-docs-linter/blob/master/README.md#typescript-definitions) for more streamlined Electron development in projects using TypeScript.
 - Searchable offline documentation for tools like [Dash.app](https://kapeli.com/dash) and [devdocs.io](http://devdocs.io/)
 

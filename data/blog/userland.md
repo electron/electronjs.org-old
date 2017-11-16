@@ -80,13 +80,13 @@ new reports to the website.
 
 All of the tools used to collect and display this data are open-source:
 
-- [electron/electron.atom.io](https://github.com/electron/electron.atom): The Electron website.
+- [electron/electronjs.org](https://github.com/electron/electron.atom): The Electron website.
 - [electron/electron-userland-reports](https://github.com/electron/electron-userland-reports): Slices of data about packages, repos, and users in Electron userland.
 - [electron/repos-using-electron](https://github.com/electron/repos-using-electron): All public repositories on GitHub that depend on `electron` or `electron-prebuilt`
 - [electron/electron-npm-packages](https://github.com/zeke/electron-npm-packages): All npm packages that mention `electron` in their `package.json` file.
 
 If you have ideas about how to improve these reports, please let us know
-[opening an issue on the website repository](https://github.com/electron/electron.atom.io/issues/new)
+[opening an issue on the website repository](https://github.com/electron/electronjs.org/issues/new)
 or any of the above-mentioned repos.
 
 Thanks to you, the Electron community, for making userland what it is today!

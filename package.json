@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "description": "The [website](https://electronjs.org) for [Electron](https://github.com/electron/electron).",
-  "repository": "https://github.com/electron/electron.atom.io",
+  "repository": "https://github.com/electron/electronjs.org",
   "homepage": "https://electronjs.org",
   "author": "GitHub",
   "license": "MIT",
