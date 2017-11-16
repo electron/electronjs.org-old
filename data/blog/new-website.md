@@ -132,7 +132,7 @@ time since, Electron has been adopted by thousands of app developers, and is now
 depenended on by many large companies, many of which have Electron teams of 
 their own.
 
-Supporting GitHub's Electron projects like Atom and [Desktop] is still a 
+Supporting GitHub's Electron projects like Atom and [GitHub Desktop] is still a 
 priority for our team, but by moving to a new domain we hope to help clarify 
 the technical distinction between Atom and Electron.
 
@@ -185,7 +185,7 @@ Thank you!
 [electron/electron-i18n]: https://github.com/electron/electron-i18n#readme
 [electronjs.org]: https://electronjs.org
 [Atom]: https://atom.io
-[Destop]: https://desktop.github.com
+[GitHub Desktop]: https://desktop.github.com
 [Homebrew]: https://brew.sh
 [cask]: https://caskroom.github.io
 [Jeykll]: https://jekyllrb.com
