@@ -203,4 +203,18 @@ describe('electron.atom.io', () => {
     res.statusCode.should.equal(301)
     res.headers.location.should.equal('/apps')
   })
+
+  describe('issues', () => {
+    test('redirects /issues to the website repo, for convenience', async () => {
+      const res = await supertest(app).get('/issues')
+      res.statusCode.should.equal(301)
+      res.headers.location.should.equal('https://github.com/electron/electron.atom.io/issues')
+    })
+
+    test('redirects /issues/new to the website repo, for convenience', async () => {
+      const res = await supertest(app).get('/issues')
+      res.statusCode.should.equal(301)
+      res.headers.location.should.equal('https://github.com/electron/electron.atom.io/issues')
+    })
+  })
 })
