@@ -9,6 +9,7 @@ nav:
   releases: Releases
   contact: Contact
   languages: Languages
+  code_of_conduct: Code of Conduct
 
 docs:
   title: Electron Documentation

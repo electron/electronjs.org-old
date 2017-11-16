@@ -17,17 +17,23 @@ async function get (route) {
 }
 
 describe('electron.atom.io', () => {
-  test('/', async () => {
-    const $ = await get('/')
-    $('header').should.have.class('site-header')
-    $('p.jumbotron-lead').should.contain('Build cross platform desktop apps')
-    $('.featured-app').length.should.equal(24)
+  describe('homepage', () => {
+    test('displays featured apps, version numbers, and CoC link', async () => {
+      const $ = await get('/')
+      $('header').should.have.class('site-header')
+      $('p.jumbotron-lead').should.contain('Build cross platform desktop apps')
+      $('.featured-app').length.should.equal(24)
 
-    // versions
-    $('#electron-versions').text().should.match(/Electron: \d+\.\d+\.\d+/)
-    $('#electron-versions').text().should.match(/Node: \d+\.\d+\.\d+/)
-    $('#electron-versions').text().should.match(/Chromium: \d+\.\d+\.\d+\.\d+/)
-    $('#electron-versions').text().should.match(/V8: \d+\.\d+\.\d+\.\d+/)
+      // versions
+      $('#electron-versions').text().should.match(/Electron: \d+\.\d+\.\d+/)
+      $('#electron-versions').text().should.match(/Node: \d+\.\d+\.\d+/)
+      $('#electron-versions').text().should.match(/Chromium: \d+\.\d+\.\d+\.\d+/)
+      $('#electron-versions').text().should.match(/V8: \d+\.\d+\.\d+\.\d+/)
+
+      // Footer
+      $('a.footer-nav-item[href="https://github.com/electron/electron/tree/master/CODE_OF_CONDUCT.md"]')
+        .text().should.eq('Code of Conduct')
+    })
   })
 
   describe('apps', () => {
@@ -168,13 +174,13 @@ describe('electron.atom.io', () => {
     test('display lists of content from awesome-electron', async () => {
       const $ = await get('/community')
       $('h1').text().should.eq('Electron Community')
-  
+
       const titles = $('h2').map((i, el) => $(el).text()).get()
       titles.should.include('Tools')
       titles.should.include('Components')
       titles.should.include('Meetups')
     })
-  
+
     test('includes localized content', async() => {
       await get('/languages/vi-VN')
       const $ = await get('/community')
