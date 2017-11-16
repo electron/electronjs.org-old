@@ -4,7 +4,7 @@ author: zeke
 date: '2017-11-13'
 ---
 
-Electron has a new website at [electronjs.org]!  We've replaced 
+Electron has a new website at [electronjs.org]! We've replaced 
 our static Jekyll site with a Node.js webserver, giving us flexibility to
 internationalize the site and paving the way for more exciting new features.
 
@@ -13,7 +13,7 @@ internationalize the site and paving the way for more exciting new features.
 We've begun the process of internationalizing the website with the 
 goal of making Electron app development accessible to a global audience of 
 developers. We're using a localization platform called [Crowdin] that integrates 
-with  GitHub, opening and updating pull requests automatically as content is translated into different languages.
+with GitHub, opening and updating pull requests automatically as content is translated into different languages.
 
 <figure>
   <a href="https://electronjs.org/languages">
@@ -33,7 +33,7 @@ To choose your language and view translation progress, visit [electronjs.org/lan
 
 <figure>
   <a href="https://electronjs.org/languages">
-    <img class="screenshot"  src="https://user-images.githubusercontent.com/2289/32754734-e8e43c04-c886-11e7-9f34-f2da2bb4357b.png" alt="Current target languages on Crowdin">
+    <img class="screenshot" src="https://user-images.githubusercontent.com/2289/32754734-e8e43c04-c886-11e7-9f34-f2da2bb4357b.png" alt="Current target languages on Crowdin">
     <figcaption>Translations in progress on Crowdin</figcaption>
   </a>
 </figure>
@@ -69,7 +69,7 @@ here on the Japanese version of the site:
 
 <figure>
   <a href="https://electronjs.org/apps/graphql-playground">
-    <img class="screenshot"  src="https://user-images.githubusercontent.com/2289/32871096-f5043292-ca33-11e7-8d03-a6a157aa183d.png" alt="GraphQL Playground">
+    <img class="screenshot" src="https://user-images.githubusercontent.com/2289/32871096-f5043292-ca33-11e7-8d03-a6a157aa183d.png" alt="GraphQL Playground">
   </a>
 </figure>
 
@@ -105,7 +105,7 @@ that has a cask:
 
 <figure>
   <a href="https://electronjs.org/apps/dat">
-   <img  class="screenshot" src="https://user-images.githubusercontent.com/2289/32871246-c5ef6f2a-ca34-11e7-8eb4-3a5b93b91007.png">
+   <img class="screenshot" src="https://user-images.githubusercontent.com/2289/32871246-c5ef6f2a-ca34-11e7-8eb4-3a5b93b91007.png">
    <figcaption>Installation options tailored for your platform: macOS, Windows, Linux</figcaption>
   </a>
 </figure>
@@ -175,7 +175,7 @@ the open-source community has helped immeasurably in making Electron a success.
 Thank you!
 
 <figure>
-   <img src="https://user-images.githubusercontent.com/2289/32871386-92eaa4ea-ca35-11e7-9511-a746c7fbf2c4.png">
+  <img src="https://user-images.githubusercontent.com/2289/32871386-92eaa4ea-ca35-11e7-9511-a746c7fbf2c4.png">
 </figure>
 
 
