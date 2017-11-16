@@ -31,7 +31,7 @@ Here's an excerpt from the schema that describes the `BrowserWindow` class:
   type: 'Class',
   instanceName: 'win',
   slug: 'browser-window',
-  websiteUrl: 'http://electron.atom.io/docs/api/browser-window',
+  websiteUrl: 'https://electronjs.org/docs/api/browser-window',
   repoUrl: 'https://github.com/electron/electron/blob/v1.4.0/docs/api/browser-window.md',
   staticMethods: [...],
   instanceMethods: [...],
@@ -118,7 +118,7 @@ have contributed to the docs.
 We're excited to see what people do with this new structured data. Possible uses
 include:
 
-- Improvements to [electron.atom.io/docs/](http://electron.atom.io/docs/)
+- Improvements to [electron.atom.io/docs/](https://electronjs.org/docs/)
 - A [TypeScript definition file](https://github.com/electron/electron-docs-linter/blob/master/README.md#typescript-definitions) for more streamlined Electron development in projects using TypeScript.
 - Searchable offline documentation for tools like [Dash.app](https://kapeli.com/dash) and [devdocs.io](http://devdocs.io/)
 

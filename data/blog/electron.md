@@ -26,5 +26,5 @@ If you've already gotten started, we'd love to chat with you about the apps you'
 
 [atom]: https://atom.io
 [docs]: https://github.com/electron/electron/tree/master/docs#readme
-[electron]: http://electron.atom.io
+[electron]: https://electronjs.org
 

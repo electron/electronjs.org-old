@@ -4,15 +4,15 @@ author: jlord
 date: '2015-06-04'
 ---
 
-This week we've given Electron's documentation a home on [electron.atom.io](http://electron.atom.io). You can visit [/docs/latest](http://electron.atom.io/docs/latest) for the latest set of docs. We'll keep versions of older docs, too, so you're able to visit [/docs/vX.XX.X](http://electron.atom.io/docs/v0.26.0) for the docs that correlate to the version you're using.
+This week we've given Electron's documentation a home on [electron.atom.io](https://electronjs.org). You can visit [/docs/latest](https://electronjs.org/docs/latest) for the latest set of docs. We'll keep versions of older docs, too, so you're able to visit [/docs/vX.XX.X](https://electronjs.org/docs/v0.26.0) for the docs that correlate to the version you're using.
 
 ---
 
-You can visit [/docs](http://electron.atom.io/docs) to see what versions are available or [/docs/all](http://electron.atom.io/docs/all) to see the latest version of docs all on one page (nice for `cmd` + `f` searches).
+You can visit [/docs](https://electronjs.org/docs) to see what versions are available or [/docs/all](https://electronjs.org/docs/all) to see the latest version of docs all on one page (nice for `cmd` + `f` searches).
 
 If you'd like to contribute to the docs content, you can do so in the [Electron repository](https://github.com/electron/electron/tree/master/docs), where the docs are fetched from. We fetch them for each minor release and add them to the [Electron site repository](http://github.com/electron/electron.atom.io), which is made with [Jekyll](http://jekyllrb.com).
 
-If you're interested in learning more about how we pull the docs from one repository to another continue reading below. Otherwise, enjoy the [docs](http://electron.atom.io/latest)!
+If you're interested in learning more about how we pull the docs from one repository to another continue reading below. Otherwise, enjoy the [docs](https://electronjs.org/latest)!
 
 ## The Technical Bits
 
@@ -75,7 +75,7 @@ collections:
     docs: {output: true, permalink: '/docs/:path/'}
 ```
 
-The file `latest.md` in our site root is empty except for this front matter which allows users to see the index (aka `README`) of the latest version of docs by visiting this URL, [electron.atom.io/docs/latest](http://electron.atom.io/docs/latest), rather than using the latest version number specifically (though you can do that, too).
+The file `latest.md` in our site root is empty except for this front matter which allows users to see the index (aka `README`) of the latest version of docs by visiting this URL, [electron.atom.io/docs/latest](https://electronjs.org/docs/latest), rather than using the latest version number specifically (though you can do that, too).
 
 ```yaml
 ---

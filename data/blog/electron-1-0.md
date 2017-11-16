@@ -97,22 +97,22 @@ New to Electron? Watch the Electron 1.0 intro video:
 
 <div class="video"><iframe src="https://www.youtube.com/embed/8YP_nOCO-4Q?rel=0" frameborder="0" allowfullscreen></iframe></div>
 
-[apps]: http://electron.atom.io/apps
+[apps]: https://electronjs.org/apps
 [atom]: https://atom.io
 [chromedriver]: https://sites.google.com/a/chromium.org/chromedriver
-[community]: http://electron.atom.io/community
+[community]: https://electronjs.org/community
 [devtools]: https://developer.chrome.com/devtools
-[devtron]: http://electron.atom.io/devtron
-[electron.atom.io]: http://electron.atom.io
+[devtron]: https://electronjs.org/devtron
+[electron.atom.io]: https://electronjs.org
 [electron-api-demos]: https://github.com/electron/electron-api-demos
 [electron-org]: https://github.com/electron
 [electron-userland]: https://github.com/electron-userland
 [gitkraken]: https://www.gitkraken.com
 [jibo]: https://www.jibo.com
 [nylas]: https://nylas.com
-[quick-start]: http://electron.atom.io/docs/tutorial/quick-start
+[quick-start]: https://electronjs.org/docs/tutorial/quick-start
 [slack]: https://slack.com
-[spectron]: http://electron.atom.io/spectron
+[spectron]: https://electronjs.org/spectron
 [wagon]: https://www.wagonhq.com
 [webtorrent]: https://webtorrent.io/desktop
 [webdriver]: http://webdriver.io

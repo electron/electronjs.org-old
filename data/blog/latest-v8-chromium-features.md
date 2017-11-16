@@ -8,7 +8,7 @@ Building an Electron application means you only need to create one codebase and 
 
 ---
 
-There are many features and we'll cover some here as examples, but if you're interested in learning about all features you can keep an eye on the [Google Chromium blog](http://blog.chromium.org) and [Node.js changelogs](https://nodejs.org/en/download/releases). You can see what versions of Node.js, Chromium and V8 Electron is using at [electron.atom.io/#electron-versions](http://electron.atom.io/#electron-versions).
+There are many features and we'll cover some here as examples, but if you're interested in learning about all features you can keep an eye on the [Google Chromium blog](http://blog.chromium.org) and [Node.js changelogs](https://nodejs.org/en/download/releases). You can see what versions of Node.js, Chromium and V8 Electron is using at [electron.atom.io/#electron-versions](https://electronjs.org/#electron-versions).
 
 ## ES6 Support through V8
 
@@ -68,7 +68,7 @@ Thanks to all the hard work Google and contributors put into Chromium, when you 
 - [CSS.escape()](https://googlechrome.github.io/samples/css-escape/index.html)
 - [Fetch API Streaming](https://googlechrome.github.io/samples/fetch-api/fetch-response-stream.html)
 
-Follow along with the [Google Chromium blog](http://blog.chromium.org) to learn about features as new versions ship and again, you can check the version of Chromium that Electron uses [here](http://electron.atom.io/#electron-versions).
+Follow along with the [Google Chromium blog](http://blog.chromium.org) to learn about features as new versions ship and again, you can check the version of Chromium that Electron uses [here](https://electronjs.org/#electron-versions).
 
 ## What are you excited about?
 
