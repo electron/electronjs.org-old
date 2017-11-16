@@ -83,10 +83,10 @@ we're able to collect a lot of information about a given app.
 Using data collected from GitHub, app pages can now display screenshots, 
 download links, versions, release notes, and READMEs for every app that 
 has a public repository. Using a color palette extracted from each app's icon,
- we're able to produce [bold and accessible colors](https://github.com/zeke/pick-a-good-color)
-to give each app page some visual distinction.
+we can produce [bold and accessible colors](https://github.com/zeke/pick-a-good-color)
+to give each app page some visual distinction.  
 
-The [apps index page](https://electronjs.org/apps) now also has categories,
+The [apps index page](https://electronjs.org/apps) now also has categories 
 and a keyword filter to find interesting apps like [GraphQL GUIs](https://electronjs.org/apps?q=graphql)
 and [p2p tools](https://electronjs.org/apps?q=graphql).
 
@@ -129,7 +129,7 @@ applications. When companies like Microsoft and Slack started to make use of
 And so "Electron" was born. In early 2016, GitHub assembled a new team to focus
 specifically on Electron development and maintenance, apart from Atom. In the 
 time since, Electron has been adopted by thousands of app developers, and is now
-depenended on by many large companies, many of which have Electron teams of 
+depended on by many large companies, many of which have Electron teams of 
 their own.
 
 Supporting GitHub's Electron projects like Atom and [GitHub Desktop] is still a 
@@ -140,7 +140,7 @@ the technical distinction between Atom and Electron.
 
 The previous Electron website was built with [Jekyll], the popular Ruby-based 
 static site generator. Jekyll is a great tool for building static websites, but 
-the website had started to outgrow it. We wanted more dynamic capabilities like proper redirects and dynamic content rendering, so a Node.js server was the obvious choice.
+the website had started to outgrow it. We wanted more dynamic capabilities like proper redirects and dynamic content rendering, so a [Node.js] server was the obvious choice.
 
 The Electron ecosystem includes projects with components written in many 
 different programming languages, from Python to C++ to Bash. But JavaScript is foundational to Electron, and it's the language used most in our community.
@@ -150,7 +150,7 @@ entry for people wishing to contribute to the website.
 
 ## ⚡️ Easier Open-Source Participation
 
-If you've got [Node.js](https://nodejs.org) (8 or higher) and 
+If you've got [Node.js] (8 or higher) and 
 [git](https://git-scm.org) installed on your system, you can easily get the 
 site running locally:
 
@@ -189,3 +189,4 @@ Thank you!
 [Homebrew]: https://brew.sh
 [cask]: https://caskroom.github.io
 [Jeykll]: https://jekyllrb.com
+[Node.js]: https://nodejs.org
