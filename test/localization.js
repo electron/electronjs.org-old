@@ -17,8 +17,8 @@ const views = walk.entries(path.join(__dirname, '../views'))
     const fullPath = path.join(entry.basePath, entry.relativePath)
     const view = {
       relativePath: entry.relativePath,
-      localizedKeys: (fs.readFileSync(fullPath, 'utf8').match(/{{[\./]*localized\.[a-z_\.]*}}/g) || [])
-        .map(ref => ref.replace(/\.\.\//g, '').replace('{{localized.', '').replace('}}', ''))  
+      localizedKeys: (fs.readFileSync(fullPath, 'utf8').match(/{{[./]*localized\.[a-z_.]*}}/g) || [])
+        .map(ref => ref.replace(/\.\.\//g, '').replace('{{localized.', '').replace('}}', ''))
     }
     return view
   })
@@ -46,12 +46,12 @@ describe('localized views', () => {
       .filter(key => !key.startsWith('_404.'))
     keys.should.be.an('array')
     keys.length.should.be.above(50)
-    
+
     const usedKeys = views.reduce((acc, view) => {
       acc = acc.concat(view.localizedKeys)
       return acc
     }, [])
-    
+
     keys.forEach(key => expect(usedKeys).to.include(key))
   })
 })
