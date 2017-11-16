@@ -2,8 +2,10 @@ const {getPlatformFromUserAgent, getPlatformLabel} = require('platform-utils')
 
 module.exports = function updateDemoAppDownloadLink () {
   if (!document.querySelector('#download-latest-release')) return
-
   const platform = getPlatformFromUserAgent()
+
+  if (!platform) return
+
   const releaseServer = 'https://electron-api-demos.githubapp.com/updates/'
   let assetName
 
