@@ -66,6 +66,13 @@
     display: none;
   }
 
+  p {
+    line-height: 1.7;
+    a {
+      text-decoration: underline;
+    }
+  }
+
   a code {
     color: $main-link-color;
   }
