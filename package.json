@@ -1,6 +1,6 @@
 {
-  "name": "electron.atom.io",
-  "version": "1.0.0",
+  "name": "electronjs.org",
+  "version": "2.0.0",
   "private": true,
   "description": "The [website](https://electronjs.org) for [Electron](https://github.com/electron/electron).",
   "repository": "https://github.com/electron/electronjs.org",
