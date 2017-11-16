@@ -126,12 +126,6 @@ describe('electron.atom.io', () => {
     })
   })
 
-  test('/community', async() => {
-    await get('/languages/vi-VN')
-    const $ = await get('/community')
-    $('.subtron .container-narrow h1').text().should.eq(i18n.website['vi-VN'].community.title)
-  })
-
   describe('releases', () => {
     test('/releases', async () => {
       const $ = await get('/releases')
@@ -143,12 +137,6 @@ describe('electron.atom.io', () => {
       titles.should.include('Electron 1.6.7')
       titles.should.include('Electron 0.37.8')
     })
-  })
-
-  test('/community', async() => {
-    await get('/languages/vi-VN')
-    const $ = await get('/community')
-    $('.subtron .container-narrow h1').text().should.eq(i18n.website['vi-VN'].community.title)
   })
 
   describe('userland', () => {
@@ -176,14 +164,22 @@ describe('electron.atom.io', () => {
     res.headers.location.should.equal('/community')
   })
 
-  test('/community', async () => {
-    const $ = await get('/community')
-    $('h1').text().should.eq('Electron Community')
-
-    const titles = $('h2').map((i, el) => $(el).text()).get()
-    titles.should.include('Tools')
-    titles.should.include('Components')
-    titles.should.include('Meetups')
+  describe('/community', () => {
+    test('display lists of content from awesome-electron', async () => {
+      const $ = await get('/community')
+      $('h1').text().should.eq('Electron Community')
+  
+      const titles = $('h2').map((i, el) => $(el).text()).get()
+      titles.should.include('Tools')
+      titles.should.include('Components')
+      titles.should.include('Meetups')
+    })
+  
+    test('includes localized content', async() => {
+      await get('/languages/vi-VN')
+      const $ = await get('/community')
+      $('.subtron .container-narrow h1').text().should.eq(i18n.website['vi-VN'].community.title)
+    })
   })
 
   test('/languages', async () => {
