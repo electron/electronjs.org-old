@@ -2,9 +2,9 @@
   "name": "electron.atom.io",
   "version": "1.0.0",
   "private": true,
-  "description": "The [website](http://electron.atom.io) for [Electron](https://github.com/electron/electron).",
+  "description": "The [website](https://electronjs.org) for [Electron](https://github.com/electron/electron).",
   "repository": "https://github.com/electron/electron.atom.io",
-  "homepage": "http://electron.atom.io",
+  "homepage": "https://electronjs.org",
   "author": "GitHub",
   "license": "MIT",
   "scripts": {
