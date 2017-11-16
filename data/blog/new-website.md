@@ -179,14 +179,14 @@ Thank you!
 </figure>
 
 
-[Crowdin]: https://crowdin.com/project/electron
+[Atom]: https://atom.io
+[cask]: https://caskroom.github.io
 [crowdin.com/project/electron]: https://crowdin.com/project/electron
+[Crowdin]: https://crowdin.com/project/electron
 [electron/electron-apps]: https://github.com/electron/electron-apps
 [electron/electron-i18n]: https://github.com/electron/electron-i18n#readme
 [electronjs.org]: https://electronjs.org
-[Atom]: https://atom.io
 [GitHub Desktop]: https://desktop.github.com
 [Homebrew]: https://brew.sh
-[cask]: https://caskroom.github.io
 [Jeykll]: https://jekyllrb.com
 [Node.js]: https://nodejs.org
