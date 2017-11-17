@@ -68,6 +68,7 @@ app.get('/docs/:category/*', routes.docs.show)
 
 app.get('/issues', (req, res) => res.redirect(301, 'https://github.com/electron/electronjs.org/issues'))
 app.get('/issues/new', (req, res) => res.redirect(301, 'https://github.com/electron/electronjs.org/issues/new'))
+app.get('/pulls', (req, res) => res.redirect(301, 'https://github.com/electron/electronjs.org/pulls'))
 
 app.get('/userland', routes.userland.index)
 app.get('/userland/*', routes.userland.show)

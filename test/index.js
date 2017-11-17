@@ -208,7 +208,7 @@ describe('electronjs.org', () => {
     res.headers.location.should.equal('/apps')
   })
 
-  describe('issues', () => {
+  describe('issues and pull request URLs', () => {
     test('redirects /issues to the website repo, for convenience', async () => {
       const res = await supertest(app).get('/issues')
       res.statusCode.should.equal(301)
@@ -219,6 +219,12 @@ describe('electronjs.org', () => {
       const res = await supertest(app).get('/issues')
       res.statusCode.should.equal(301)
       res.headers.location.should.equal('https://github.com/electron/electronjs.org/issues')
+    })
+
+    test('redirects /pulls to the website repo, for convenience', async () => {
+      const res = await supertest(app).get('/pulls')
+      res.statusCode.should.equal(301)
+      res.headers.location.should.equal('https://github.com/electron/electronjs.org/pulls')
     })
   })
 })
