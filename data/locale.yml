@@ -157,6 +157,15 @@ pages:
   '/docs/all':
     title: All the Electron Docs!
     description: All of Electron's guides and API documentation on a single, searchable page.
+  '/docs/api':
+    title: API
+    description: API reference documentation for the latest Electron release
+  '/docs/development':
+    title: Development
+    description: Developing with Electron
+  '/docs/tutorial':
+    title: Tutorial
+    description: Guides and tutorials for the latest Electron release
   '/blog':
     title: Electron Blog
     description: All the latest news from the Electron team and community.
