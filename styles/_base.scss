@@ -61,6 +61,22 @@ h2 {
   margin-top: 0;
 }
 
+// Fade in lazily loaded images; see /scripts/lazy-load-images.js
+img {
+	opacity: 1;
+	transition: opacity 0.3s;
+}
+
+img[data-src] {
+	opacity: 0;
+}
+
+.faded-out {
+  transition: opacity 0.3s;
+  opacity: 0;
+}
+
+
 // add top margin
 // to make it easier to see headers within a long wall of text
 .strong-headers {
