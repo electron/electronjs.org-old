@@ -1,5 +1,7 @@
 # electronjs.org
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/electron/electronjs.org.svg)](https://greenkeeper.io/)
+
 This is the source code for the Electron website at 
 [electronjs.org](https://electronjs.org).
 
