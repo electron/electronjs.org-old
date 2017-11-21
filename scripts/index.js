@@ -6,5 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
   require('./platform-specific-content')()
   require('./apply-active-class-to-active-links')()
   require('./remove-scheme-from-link-text')()
+  require('./lazy-load-images')()
   require('browser-date-formatter')()
 })
