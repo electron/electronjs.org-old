@@ -6,6 +6,7 @@ const lobars = require('lobars')
 
 // Middleware
 const hbs = require('express-hbs')
+const compression = require('compression')
 const slashes = require('connect-slashes')
 const browsersync = require('./middleware/browsersync')
 const browserify = require('./middleware/browserify')
@@ -36,6 +37,7 @@ app.engine('html', hbs.express4({
 // Middleware
 app.set('view engine', 'html')
 app.set('views', path.join(__dirname, '/views'))
+app.use(compression())
 app.use(helmet())
 app.use(sass())
 app.use('/scripts/index.js', browserify('scripts/index.js'))
