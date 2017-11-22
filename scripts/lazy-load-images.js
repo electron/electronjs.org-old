@@ -20,7 +20,7 @@ module.exports = function () {
 
 let images = []
 
-let addImage = module.exports.addImage = function (image) {
+const addImage = module.exports.addImage = function (image) {
   // abort if this element has previously entered the viewport
   if (!image.dataset.src) return
 
@@ -28,7 +28,7 @@ let addImage = module.exports.addImage = function (image) {
   updateImages()
 }
 
-function handle (image) {
+function loadImage (image) {
   // abort if this element has entered the viewport after added to the list
   if (!image.dataset.src) return
 
@@ -45,10 +45,10 @@ function handle (image) {
 }
 
 // TODO: Read/write lock on |images|?
-let updateImages = module.exports.updateImages = throttle(() => {
+const updateImages = module.exports.updateImages = throttle(() => {
   images = images.filter(image => {
     if (inViewport(image)) {
-      handle(image)
+      loadImage(image)
       return false // remove from unseen photos
     }
     return true // keep in unseen photos
