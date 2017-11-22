@@ -10,19 +10,19 @@ function inViewport (element) {
 
 module.exports = function () {
   ['scroll', 'resize', 'load'].forEach(event =>
-    window.addEventListener(event, module.exports.checkInViewport)
+    window.addEventListener(event, updateImages)
   )
 
   // add all images that are part of the DOM tree
   // NB: |display: none| elements need manual adding
-  document.querySelectorAll('img[data-src]').forEach(module.exports.addImage)
+  document.querySelectorAll('img[data-src]').forEach(addImage)
 }
 
 let images = []
 
-module.exports.addImage = function (image) {
+let addImage = module.exports.addImage = function (image) {
   images.push(image)
-  module.exports.checkInViewport();
+  updateImages();
 }
 
 function handle (image) {
@@ -42,7 +42,7 @@ function handle (image) {
 }
 
 // TODO: Read/write lock on |images|?
-module.exports.checkInViewport = throttle(() => {
+let updateImages = module.exports.updateImages = throttle(() => {
   images = images.filter(image => {
     if (inViewport(image)) {
       handle(image)
