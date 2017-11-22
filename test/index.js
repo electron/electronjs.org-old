@@ -17,6 +17,11 @@ async function get (route) {
 }
 
 describe('electronjs.org', () => {
+  test('gzip enabled', async () => {
+    const res = await supertest(app).get(`/`)
+    res.headers['content-encoding'].should.equal('gzip')
+  })
+
   describe('homepage', () => {
     test('displays featured apps, version numbers, and CoC link', async () => {
       const $ = await get('/')
