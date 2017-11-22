@@ -44,7 +44,6 @@ function loadImage (image) {
   }
 }
 
-// TODO: Read/write lock on |images|?
 const updateImages = module.exports.updateImages = throttle(() => {
   images = images.filter(image => {
     if (inViewport(image)) {
