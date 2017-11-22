@@ -1,6 +1,7 @@
 const List = require('list.js')
 const queryString = require('query-string')
 const setQueryString = require('set-query-string')
+const lazyLoadImages = require('./lazy-load-images')
 
 module.exports = function createFilterList () {
   // look for a filterable list on this page
@@ -29,5 +30,6 @@ module.exports = function createFilterList () {
   // update the query param every time a search is performed
   filterList.on('updated', function () {
     setQueryString({q: filterInput.value})
+    list.querySelectorAll('img[data-src]').forEach(lazyLoadImages.addImage)
   })
 }
