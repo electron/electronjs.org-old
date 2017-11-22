@@ -21,12 +21,15 @@ module.exports = function () {
 let images = []
 
 let addImage = module.exports.addImage = function (image) {
+  // abort if this element has previously entered the viewport
+  if (!image.dataset.src) return
+
   images.push(image)
-  updateImages();
+  updateImages()
 }
 
 function handle (image) {
-  // abort if this element has previously entered the viewport
+  // abort if this element has entered the viewport after added to the list
   if (!image.dataset.src) return
 
   image.setAttribute('src', image.dataset.src)
