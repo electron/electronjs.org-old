@@ -204,6 +204,15 @@ describe('electronjs.org', () => {
     })
   })
 
+  describe('devtron and spectron', async () => {
+    test('Test existed landing pages', async () => {
+      let $ = await get('/devtron')
+      $('.jumbotron-lead .jumbotron-lead-muted').text().should.eq('An Electron DevTools Extension')
+      $ = await get('/spectron')
+      $('.jumbotron-lead .jumbotron-lead-muted').text().should.eq('An Electron Testing Framework')
+    })
+  })
+
   test('/languages', async () => {
     const $ = await get('/languages')
     $('h1').text().should.eq('Languages')

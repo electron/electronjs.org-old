@@ -2,10 +2,10 @@ import { throttle } from 'lodash'
 
 function inViewport (element) {
   const { top, right, bottom, left } = element.getBoundingClientRect()
-  return bottom > 0
-      && window.innerWidth - left > 0
-      && window.innerHeight - top > 0
-      && right > 0
+  return bottom > 0 &&
+      window.innerWidth - left > 0 &&
+      window.innerHeight - top > 0 &&
+      right > 0
 }
 
 module.exports = function () {

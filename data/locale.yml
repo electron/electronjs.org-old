@@ -180,6 +180,12 @@ pages:
     title: Languages
   '/userland':
     title: Userland
+  '/devtron':
+    title: Devtron
+    description: Devtron is an open source tool to help you inspect, monitor, and debug your Electron app. Built on top of the amazing Chrome Developer Tools.
+  '/spectron':
+    title: Spectron
+    description: Spectron is an open source framework for easily writing integrations tests for your Electron app. Built on top of ChromeDriver and WebDriverIO.
 
 _404:
   page_not_found: Page not found.
