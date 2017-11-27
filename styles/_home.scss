@@ -141,11 +141,28 @@ $app-list-icon-size: 48px;
   display: inline-block;
   width: $app-list-icon-size;
   height: $app-list-icon-size;
+  position: relative;
+}
+
+.listed-app-logo-placeholder {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  border-radius: 50%;
+  margin: 0;
+  padding: 0;
+  z-index: 100;
 }
 
 .listed-app-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
     max-width: 48px;
     height: 48px;
+    z-index: 101;
 }
 
 .listed-app-name {
