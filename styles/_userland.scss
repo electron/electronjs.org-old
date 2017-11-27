@@ -13,14 +13,15 @@ ul.report-list {
 
 .report-list > li {
   display: block;
-  margin: 8px;
-  @include breakpoint(md) { flex-basis: 47%; }
-  @include breakpoint(lg) { flex-basis: 31%; }
-  @include breakpoint(xl) { flex-basis: 23%; }
+  float: left;
+  @include breakpoint(md) { width: 47%; }
+  @include breakpoint(lg) { width: 31%; }
+  @include breakpoint(xl) { width: 23%; }
 }
 
 .report-list .inner {
   display: block;
+  margin: 8px;
   height: 100%;
   padding: 20px;
   text-align: center;
