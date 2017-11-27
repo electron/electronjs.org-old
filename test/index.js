@@ -1,5 +1,5 @@
 require('make-promises-safe')
-const {describe, it} = require('mocha')
+const { describe, it } = require('mocha')
 const test = it
 const supertest = require('supertest')
 const cheerio = require('cheerio')
@@ -20,6 +20,15 @@ describe('electronjs.org', () => {
   test('gzip enabled', async () => {
     const res = await supertest(app).get(`/`)
     res.headers['content-encoding'].should.equal('gzip')
+  })
+
+  describe('404 pages', () => {
+    test('404 path on page, detect a 404 path of page to create a issue', async () => {
+      const $ = await get('/404-page-asdfgh')
+      const path = '/404-page-asdfgh'
+      $('.error-page .lead a').attr('href').should
+        .eq(`https://github.com/electron/electronjs.org/issues/new?title=404%20for%20${path}&body=The%20following%20route%20is%20returning%20a%20404%20HTTP%20status%20code%3A%20${path}`)
+    })
   })
 
   describe('homepage', () => {
