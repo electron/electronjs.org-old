@@ -2,9 +2,8 @@
   line-height: 1.6;
   font-size: 1.2em; 
   padding: 10px;
-}
-
-code:before {
-  letter-spacing: inherit;
-  content: '';
+  &::before {
+    letter-spacing: inherit;
+    content: '';
+  }
 }
