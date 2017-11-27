@@ -82,6 +82,9 @@ app.get('/languages', routes.languages.index)
 app.get('/contact', routes.contact)
 app.get('/releases', routes.releases)
 
+app.get('/devtron', routes.devtron)
+app.get('/spectron', routes.spectron)
+
 // Generic 404 handler
 app.use(routes._404)
 
