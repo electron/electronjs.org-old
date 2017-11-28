@@ -13,12 +13,13 @@ module.exports = (req, res, next) => {
     if (!category) return next()
 
     context.apps = apps.filter((app) => app.category === category.name)
-    context.categories = categories.map(category => {
-      category.className = (category.slug === req.query.category) ? 'selected' : ''
-      return category
-    })
     context.currentCategory = req.query.category
   }
+
+  context.categories = categories.map(category => {
+    category.className = (category.slug === req.query.category) ? 'selected' : ''
+    return category
+  })
 
   context.totalAppCount = apps.length
 
