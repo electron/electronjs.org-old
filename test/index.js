@@ -37,6 +37,7 @@ describe('electronjs.org', () => {
       $('header').should.have.class('site-header')
       $('p.jumbotron-lead').should.contain('Build cross platform desktop apps')
       $('.featured-app').length.should.equal(24)
+      $('head > title').text().should.match(/^Electron/)
 
       // versions
       $('#electron-versions').text().should.match(/Electron: \d+\.\d+\.\d+/)
