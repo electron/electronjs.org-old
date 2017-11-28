@@ -2,6 +2,7 @@ require('make-promises-safe')
 const { describe, it } = require('mocha')
 const test = it
 const supertest = require('supertest')
+const nock = require('nock')
 const cheerio = require('cheerio')
 const chai = require('chai')
 const i18n = require('../lib/i18n')
@@ -248,6 +249,32 @@ describe('electronjs.org', () => {
       const res = await supertest(app).get('/pulls')
       res.statusCode.should.equal(301)
       res.headers.location.should.equal('https://github.com/electron/electronjs.org/pulls')
+    })
+  })
+
+  describe('/language-stats.json', () => {
+    test('hits the CROWDIN API', async () => {
+      process.env.CROWDIN_KEY = '123'
+      const mock = nock('https://api.crowdin.com')
+        .get('/api/project/electron/status?key=123&json=true')
+        .once()
+        .reply(200, {stats: 'mocked'})
+
+      const res = await supertest(app).get('/language-stats.json')
+
+      res.statusCode.should.equal(200)
+      res.type.should.equal('application/json')
+      res.text.should.eq('{"stats":"mocked"}')
+
+      mock.done()
+      delete process.env.CROWDIN_KEY
+    })
+
+    test('returns a warning when CROWDIN_KEY is not set', async () => {
+      const res = await supertest(app).get('/language-stats.json')
+      res.statusCode.should.equal(401)
+      res.type.should.equal('application/json')
+      res.text.should.eq('"process.env.CROWDIN_KEY is not set"')
     })
   })
 })

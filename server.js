@@ -79,7 +79,7 @@ app.get('/maintainers/join', (req, res) => res.redirect('https://goo.gl/FJmZZm')
 app.get('/awesome', (req, res) => res.redirect('/community'))
 app.get('/community', routes.community)
 app.get('/languages', routes.languages.index)
-app.get('/language-stats.json', routes.languages.status)
+app.get('/language-stats.json', routes.languages.stats)
 app.get('/contact', routes.contact)
 app.get('/releases', routes.releases)
 
