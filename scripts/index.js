@@ -8,4 +8,5 @@ document.addEventListener('DOMContentLoaded', () => {
   require('./remove-scheme-from-link-text')()
   require('./lazy-load-images')()
   require('browser-date-formatter')()
+  require('./copy-code-to-clipboard')()
 })
