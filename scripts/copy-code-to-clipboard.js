@@ -1,6 +1,6 @@
 const Clipboard = require('clipboard')
 
-new Clipboard('.btn-clipboard')
+new Clipboard('.btn-clipboard') // eslint-disable-line
 
 module.exports = function copyCodeToClipBoard () {
   document.querySelectorAll(`code.hljs`).forEach(code => {
