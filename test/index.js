@@ -146,6 +146,11 @@ describe('electronjs.org', () => {
       const $ = await get('/docs/api/404')
       $('.page-section.error-page').length.should.eq(1)
     })
+
+    test('doc change proposal', async () => {
+      const $ = await get('/docs/api/accelerator')
+      $('.propose-change').attr('href').should.eq('https://github.com/electron/electron/tree/master/docs/api/accelerator.md')
+    })
   })
 
   describe('releases', () => {
