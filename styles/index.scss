@@ -16,7 +16,6 @@ $octicons-font-path: "../bower_components/octicons/octicons/";
 @import "../bower_components/basecoat/scss/mixins/clearfix";
 @import "../bower_components/basecoat/scss/mixins/grid-framework";
 
-
 // Basecoat
 @import "../bower_components/primer-css/scss/normalize";
 @import "../bower_components/primer-css/scss/base";
@@ -26,7 +25,6 @@ $octicons-font-path: "../bower_components/octicons/octicons/";
 
 @import "../bower_components/basecoat/scss/layout"; // Basecoat override
 @import "../bower_components/basecoat/scss/type"; // Basecoat override
-
 
 // Components
 // @import "../bower_components/primer-css/scss/alerts";
@@ -59,6 +57,9 @@ $octicons-font-path: "../bower_components/octicons/octicons/";
 // @import "../bower_components/primer-css/scss/truncate";
 @import "../bower_components/primer-css/scss/utilities/utilities";
 @import "../bower_components/basecoat/scss/utility"; // Basecoat override
+
+// Tooltip
+@import "../bower_components/simptip.min.css";
 
 // Electron -----------------------------------
 
