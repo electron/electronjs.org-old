@@ -1,7 +1,7 @@
 const Clipboard = require('clipboard')
 const clipboard = new Clipboard('.btn-clipboard')
 
-clipboard.on('success', (e) => { 
+clipboard.on('success', (e) => {
   e.clearSelection()
 })
 

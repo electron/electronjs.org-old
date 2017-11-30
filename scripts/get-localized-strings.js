@@ -1,7 +1,7 @@
 // Consume localized strings from meta tags like this one:
-// 
+//
 // <meta name="localized.clipboard.copy" content="{{localized.clipboard.copy}}" />
-// 
+//
 // Then assembled a deeply-keyed global object called `window.localized`
 
 const setProp = require('lodash/set')
