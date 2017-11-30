@@ -12,8 +12,8 @@ module.exports = function contextBuilder (req, res, next) {
 
   // Page titles, descriptions, etc
   let page = Object.assign({
-  	title: `${localized._404.page_not_found} | Electron`,
-  	path: req.path
+    title: `${localized._404.page_not_found} | Electron`,
+    path: req.path
   }, i18n.website[req.language].pages[req.path])
 
   if (req.path !== '/') {
