@@ -4,7 +4,7 @@ const {getPlatformFromFilename} = require('platform-utils')
 
 module.exports = (req, res, next) => {
   const app = apps.find(app => app.slug === req.params.slug)
-  
+
   if (app.category) {
     app.categorySlug = categories.filter(category => category.name === app.category)[0].slug
   }

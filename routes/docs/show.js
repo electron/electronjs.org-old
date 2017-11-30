@@ -8,7 +8,8 @@ module.exports = (req, res, next) => {
     doc: doc,
     page: {
       title: `${doc.title} | Electron`,
-      description: doc.description
+      description: doc.description,
+      url: req.url
     },
     layout: 'docs'
   })
