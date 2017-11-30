@@ -4,7 +4,7 @@ const vendoredVersions = require('../data/versions.json')
 const {getLanguageNativeName} = require('locale-code')
 
 // Supply all route handlers with a baseline `req.context` object
-module.exports = function contextBuilder (req, res, next) {  
+module.exports = function contextBuilder (req, res, next) {
   // Attach i18n object to request so any route handler can use it if needed
   req.i18n = i18n
 
