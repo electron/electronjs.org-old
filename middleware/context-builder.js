@@ -1,5 +1,5 @@
-const i18n = require('../lib/i18n')
-const vendoredVersions = require('../data/versions.json')
+const i18n = require('lib/i18n')
+const vendoredVersions = require('data/versions.json')
   .find(version => version.version === i18n.electronLatestStableVersion)
 const {getLanguageNativeName} = require('locale-code')
 
@@ -12,7 +12,7 @@ module.exports = function contextBuilder (req, res, next) {
 
   // Page titles, descriptions, etc
   let page = Object.assign({
-    title: `${localized._404.page_not_found} | Electron`,
+    title: 'Electron',
     path: req.path
   }, i18n.website[req.language].pages[req.path])
 
