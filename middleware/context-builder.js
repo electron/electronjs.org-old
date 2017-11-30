@@ -9,8 +9,17 @@ module.exports = function contextBuilder (req, res, next) {
   // Attach i18n object to request so any route handler can use it if needed
   req.i18n = i18n
 
+  const localized = i18n.website[req.language]
+
   // Page titles, descriptions, etc
-  const page = Object.assign({}, i18n.website[req.language].pages[req.path], { path: req.path })
+  let page = Object.assign({
+  	title: `${localized._404.page_not_found} | Electron`,
+  	path: req.path
+  }, i18n.website[req.language].pages[req.path])
+
+  if (req.path !== '/') {
+    page.title = `${page.title} | Electron`
+  }
 
   req.context = {
     electronLatestStableVersion: i18n.electronLatestStableVersion,
@@ -20,16 +29,8 @@ module.exports = function contextBuilder (req, res, next) {
     currentLocaleNativeName: getLanguageNativeName(req.language),
     locales: i18n.locales,
     page: page,
-    localized: i18n.website[req.language],
+    localized: localized,
     cookies: req.cookies
-  }
-  
-  if (req.path !== '/') {
-    if (!_.isEmpty(req.context.page)) {
-      req.context.page.title = `${req.context.page.title} | Electron`
-    } else {
-      req.context.page.title = `${req.context.localized._404.page_not_found} | Electron`
-    }
   }
 
   if (req.path.startsWith('/docs')) {
