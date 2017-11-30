@@ -10,7 +10,7 @@
   "scripts": {
     "start": "cross-env NODE_PATH=. NODE_ENV=production node server.js",
     "bootstrap": "node script/bootstrap",
-    "test": "cross-env NODE_ENV=test mocha && standard --fix",
+    "test": "cross-env NODE_PATH=. NODE_ENV=test mocha && standard --fix",
     "build": "npm-run-all build-*",
     "build-versions": "node script/versions",
     "build-releases": "node script/releases",
