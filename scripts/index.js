@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+  require('./get-localized-strings')()
   require('./create-filter-list')()
   require('./fix-platform-labels')()
   require('./update-demo-app-download-link')()
