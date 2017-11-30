@@ -206,6 +206,14 @@ describe('electronjs.org', () => {
     })
   })
 
+  describe('localized strings for client-side code', () => {
+    it('sets meta tags for clipboard labels', async () => {
+      const $ = await get('/')
+      $('meta[name="localized.clipboard.copy"]').attr('content').should.eq('Copy')
+      $('meta[name="localized.clipboard.copy_to_clipboard"]').attr('content').should.eq('Copy to Clipboard')
+    })
+  })
+
   describe('devtron and spectron', async () => {
     test('Test existed landing pages', async () => {
       let $ = await get('/devtron')
