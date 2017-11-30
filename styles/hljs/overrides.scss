@@ -9,13 +9,13 @@ pre {
     padding: .25rem .5rem;
     font-size: 1.2em;
     border: 1px #e5e5e5 solid;
-    background-color: transparent;
+    background-color: #f8f8f8;
     border-radius: .25rem;
     &:hover {
-      background-color: rgba(0, 0, 0, 0.04);
+      background-color: #eee;
     }
     &:active {
-      background-color: rgba(0, 0, 0, 0.1);
+      background-color: #dfdfdf;
     }
   }
 }

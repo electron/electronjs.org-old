@@ -1,6 +1,8 @@
 const Clipboard = require('clipboard')
 
-new Clipboard('.btn-clipboard') // eslint-disable-line
+let clipboard = new Clipboard('.btn-clipboard') // eslint-disable-line
+
+clipboard.on('success', function(e) { e.clearSelection() })
 
 module.exports = function copyCodeToClipBoard () {
   document.querySelectorAll(`code.hljs`).forEach(code => {
@@ -21,6 +23,7 @@ module.exports = function copyCodeToClipBoard () {
   document.querySelectorAll('.btn-clipboard').forEach(button => {
     button.addEventListener('mouseout', function (e) {
       e.target.setAttribute('data-tooltip', 'Copy to clipboard')
+      e.target.blur()
     })
   })
 }
