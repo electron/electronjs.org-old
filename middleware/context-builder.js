@@ -10,7 +10,7 @@ module.exports = function contextBuilder (req, res, next) {
   req.i18n = i18n
 
   // Page titles, descriptions, etc
-  const page = i18n.website[req.language].pages[req.path] || {}
+  const page = Object.assign({}, i18n.website[req.language].pages[req.path], { path: req.path })
 
   req.context = {
     electronLatestStableVersion: i18n.electronLatestStableVersion,
@@ -24,16 +24,13 @@ module.exports = function contextBuilder (req, res, next) {
     cookies: req.cookies
   }
   
-  if (req.path === '/') {}
-  else if (!req.context.page.titled) {
+  if (req.path !== '/') {
     if (!_.isEmpty(req.context.page)) {
       req.context.page.title = `${req.context.page.title} | Electron`
     } else {
       req.context.page.title = `${req.context.localized._404.page_not_found} | Electron`
     }
   }
-  req.context.page.titled = true
-  req.context.page.path = req.path
 
   if (req.path.startsWith('/docs')) {
     req.context.docs = i18n.docs[req.language]
