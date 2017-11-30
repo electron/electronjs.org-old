@@ -2,18 +2,9 @@ const i18n = require('../lib/i18n')
 const vendoredVersions = require('../data/versions.json')
   .find(version => version.version === i18n.electronLatestStableVersion)
 const {getLanguageNativeName} = require('locale-code')
-const ignoredPrefixes = [
-  '/node_modules',
-  '/bower_components',
-  '/images',
-  '/scripts',
-  '/styles'
-]
 
 // Supply all route handlers with a baseline `req.context` object
 module.exports = function contextBuilder (req, res, next) {  
-  if (ignoredPrefixes.some(prefix => req.path.startsWith(prefix))) return next()
-
   // Attach i18n object to request so any route handler can use it if needed
   req.i18n = i18n
 
