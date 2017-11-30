@@ -13,8 +13,21 @@
 }
 
 .footer-nav {
+  
   @include breakpoint(md) {
     float: left;
+  }
+}
+
+.footer-nav-item {
+  &.icon {
+    text-decoration: none !important;
+    border: none !important;
+    font-size: 130%;
+  }
+
+  .devicon-github-plain {
+    font-size: 150%;
   }
 }
 
