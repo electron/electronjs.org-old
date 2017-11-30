@@ -29,7 +29,7 @@ module.exports = function contextBuilder (req, res, next) {
     if (!_.isEmpty(req.context.page)) {
       req.context.page.title = `${req.context.page.title} | Electron`
     } else {
-      req.context.page.title = '404 Not Found | Electron'
+      req.context.page.title = `${req.context.localized._404.page_not_found} | Electron`
     }
   }
   req.context.page.titled = true
