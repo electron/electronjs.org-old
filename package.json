@@ -40,6 +40,7 @@
     "express": "^4.16.2",
     "express-hbs": "^1.0.4",
     "express-request-language": "^1.1.15",
+    "feed": "^1.1.1",
     "flat": "^4.0.0",
     "github": "^12.1.0",
     "got": "^8.0.0",
@@ -64,6 +65,7 @@
     "schemeless": "^1.2.0",
     "semver": "^5.3.0",
     "set-query-string": "^2.2.0",
+    "striptags": "^3.1.0",
     "ua-parser-js": "^0.7.17"
   },
   "devDependencies": {

@@ -22,17 +22,24 @@ async function parsePost (filename) {
   if (!post.date) throw new Error(`${filename} is missing a date attribute`)
   let [year, month, day] = post.date.split('-')
   post.href2 = `/blog/${year}/${month}/${day}/${post.slug}`
+  if (!Array.isArray(post.author)) { post.author = [post.author] }
+  post.author = post.author.map(a => { return { name: a } })
+  const imageRegex = /<img[^>]+src="?([^"\s]+)"?[^>]*>/g
+  let imageCatch = imageRegex.exec(post.content)
+  if(imageCatch) post.image = imageCatch[1];
   return post
 }
 
 module.exports = function blogHandler (req, res, next) {
-  if (!req.path.startsWith('/blog')) return next()
+  const isFeed = ['/feed.xml', '/feed.json'].indexOf(req.path) > -1
+  if (!(req.path.startsWith('/blog') || isFeed)) return next()
 
   const context = Object.assign(req.context, {posts: posts})
 
   if (req.path === '/blog') {
     return res.render('posts/index', context)
   }
+  if (isFeed) return next()
 
   // redirect /blog/2016/09/27/foo to /blog/foo
   const parts = req.path.split('/')
