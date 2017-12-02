@@ -88,6 +88,12 @@ describe('electronjs.org', () => {
       $('a.app-download.linux').length.should.be.above(0)
       $('a.app-download.win32').length.should.be.above(0)
     })
+
+    test('renders 404 for nonexistent apps', async () => {
+      const $ = await get('/apps/nonexistent-app')
+      $.res.status.should.eq(404)
+      $('.error-page').text().should.include('Page not found')
+    })
   })
 
   describe('docs', () => {
@@ -134,17 +140,17 @@ describe('electronjs.org', () => {
 
     test('docs/glossary', async () => {
       const $ = await get('/docs/glossary')
-      $('.page-section.error-page').length.should.eq(0)
+      $('.error-page').length.should.eq(0)
     })
 
     test('docs/404', async () => {
       const $ = await get('/docs/404')
-      $('.page-section.error-page').length.should.eq(1)
+      $('.error-page').text().should.include('Page not found')
     })
 
     test('docs/api/404', async () => {
       const $ = await get('/docs/api/404')
-      $('.page-section.error-page').length.should.eq(1)
+      $('.error-page').text().should.include('Page not found')
     })
 
     test('doc change proposal', async () => {
@@ -169,7 +175,7 @@ describe('electronjs.org', () => {
   describe('userland', () => {
     test('userland/404', async () => {
       const $ = await get('/userland/404')
-      $('.page-section.error-page').length.should.eq(1)
+      $('.error-page').text().should.include('Page not found')
     })
   })
 
@@ -208,6 +214,14 @@ describe('electronjs.org', () => {
         .set('Cookie', ['language=vi-VN'])
       const $ = cheerio.load(res.text)
       $('.subtron .container-narrow h1').text().should.eq(i18n.website['vi-VN'].community.title)
+    })
+  })
+
+  describe('localized strings for client-side code', () => {
+    it('sets meta tags for clipboard labels', async () => {
+      const $ = await get('/')
+      $('meta[name="localized.clipboard.copy"]').attr('content').should.eq('Copy')
+      $('meta[name="localized.clipboard.copy_to_clipboard"]').attr('content').should.eq('Copy to Clipboard')
     })
   })
 

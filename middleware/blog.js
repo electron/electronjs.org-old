@@ -43,7 +43,7 @@ module.exports = function blogHandler (req, res, next) {
 
   context.post = posts.find(post => post.href === req.path)
 
-  if (!context.post) return res.status(404).render('404')
+  if (!context.post) return next()
 
   res.render('posts/show', Object.assign(context, {
     layout: 'post',

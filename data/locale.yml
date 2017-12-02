@@ -142,6 +142,11 @@ apps:
   something_missing: Something missing?
   edit_this_app: Edit this app.
 
+clipboard:
+  copy: Copy
+  copy_to_clipboard: Copy to Clipboard
+  copied: Copied
+
 or: or
 
 pages:
