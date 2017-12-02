@@ -1,5 +1,5 @@
-const i18n = require('../lib/i18n')
-const vendoredVersions = require('../data/versions.json')
+const i18n = require('lib/i18n')
+const vendoredVersions = require('data/versions.json')
   .find(version => version.version === i18n.electronLatestStableVersion)
 const {getLanguageNativeName} = require('locale-code')
 
@@ -8,9 +8,17 @@ module.exports = function contextBuilder (req, res, next) {
   // Attach i18n object to request so any route handler can use it if needed
   req.i18n = i18n
 
+  const localized = i18n.website[req.language]
+
   // Page titles, descriptions, etc
-  const page = i18n.website[req.language].pages[req.path] || {}
-  page.path = req.path
+  let page = Object.assign({
+    title: 'Electron',
+    path: req.path
+  }, i18n.website[req.language].pages[req.path])
+
+  if (req.path !== '/') {
+    page.title = `${page.title} | Electron`
+  }
 
   req.context = {
     electronLatestStableVersion: i18n.electronLatestStableVersion,
@@ -20,13 +28,8 @@ module.exports = function contextBuilder (req, res, next) {
     currentLocaleNativeName: getLanguageNativeName(req.language),
     locales: i18n.locales,
     page: page,
-    localized: i18n.website[req.language],
+    localized: localized,
     cookies: req.cookies
-  }
-
-  if (req.path !== '/' && req.context.page && !req.context.page.titled) {
-    req.context.page.titled = true
-    req.context.page.title = `${req.context.page.title} | Electron`
   }
 
   if (req.path.startsWith('/docs')) {
