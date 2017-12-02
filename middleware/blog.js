@@ -26,12 +26,12 @@ async function parsePost (filename) {
   post.author = post.author.map(a => { return { name: a } })
   const imageRegex = /<img[^>]+src="?([^"\s]+)"?[^>]*>/g
   let imageCatch = imageRegex.exec(post.content)
-  if(imageCatch) post.image = imageCatch[1];
+  if (imageCatch) post.image = imageCatch[1]
   return post
 }
 
 module.exports = function blogHandler (req, res, next) {
-  const isFeed = ['/feed.xml', '/feed.json'].indexOf(req.path) > -1
+  const isFeed = ['/blog.xml', '/blog.json'].indexOf(req.path) > -1
   if (!(req.path.startsWith('/blog') || isFeed)) return next()
 
   const context = Object.assign(req.context, {posts: posts})

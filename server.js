@@ -59,8 +59,8 @@ app.use(browsersync())
 const routes = require('./routes')
 app.get('/', routes.home)
 
-app.get('/feed.xml', routes.feed)
-app.get('/feed.json', routes.feed)
+app.get('/blog.xml', routes.feed.blog)
+app.get('/blog.json', routes.feed.blog)
 
 app.get('/apps', routes.apps.index)
 app.get('/app/:slug', (req, res) => res.redirect(`/apps/${req.params.slug}`))
