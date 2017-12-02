@@ -42,7 +42,7 @@ community:
     <a href="https://github.com/sindresorhus/awesome-electron/blob/master/contributing.md">Make a pull request</a>.
   meetup_notice:
     To add a meetup, edit <code>data/meetups.json</code> and 
-    <a href="https://github.com/electron/electronjs.org/tree/master/data/meetups.yml">make a pull request</a>.
+    <a href="https://github.com/electron/electronjs.org/tree/master/data/meetups.json">make a pull request</a>.
 
 electron_is_easy:
   title: It's easier than you think
