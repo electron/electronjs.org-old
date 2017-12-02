@@ -50,9 +50,9 @@ app.use(requestLanguage({
     url: '/languages/{language}'
   }
 }))
+app.use(express.static(__dirname))
 app.use(contextBuilder)
 app.use(blog)
-app.use(express.static(__dirname))
 app.use(browsersync())
 
 // Routes
