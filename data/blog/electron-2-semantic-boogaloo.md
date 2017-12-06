@@ -18,4 +18,4 @@ As of version 2.0.0, Electron will strictly adhere to Semantic Versioning. This 
 - In addition, one of our most requested features has been more stability in our patch releases.
   Patch releases will now only contain bug fixes with no new features.
 
-For more details, see [electronjs.org/docs/tutorial/versioning](https://electronjs.org/docs/tutorial/versioning).
+For more details, see [electronjs.org/docs/tutorial/electron-versioning](https://electronjs.org/docs/tutorial/electron-versioning).
