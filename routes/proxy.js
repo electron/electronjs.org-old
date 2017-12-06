@@ -6,7 +6,7 @@ const apiWhitelist = [
   '/language-status',
   '/info',
   '/download-glossary',
-  '/export-file',
+  '/export-file'
 ]
 
 module.exports = (req, res, next) => {
