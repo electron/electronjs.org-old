@@ -35,7 +35,7 @@
     "cross-env": "^5.1.1",
     "dotenv": "^4.0.0",
     "electron-apps": "1.1985.0",
-    "electron-i18n": "^0.23.0",
+    "electron-i18n": "0.25.0",
     "electron-userland-reports": "1.6.0",
     "express": "^4.16.2",
     "express-hbs": "^1.0.4",
