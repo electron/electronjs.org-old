@@ -7,7 +7,7 @@ date: '2017-12-06'
 **tl;dr**
 
 ```sh
-$ npm install --save-dev electron
+npm install --save-dev electron
 ```
 
 A new major version of Electron is in the works, and with it some changes to our versioning strategy. 
