@@ -87,6 +87,9 @@ app.get('/releases', routes.releases)
 app.get('/devtron', routes.devtron)
 app.get('/spectron', routes.spectron)
 
+// proxy for crowdin API endpoints
+app.use('/crowdin', routes.proxy)
+
 // Generic 404 handler
 app.use(routes._404)
 
