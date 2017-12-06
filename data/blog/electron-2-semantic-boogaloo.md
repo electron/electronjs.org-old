@@ -6,7 +6,7 @@ date: '2017-12-06'
 
 **tl;dr**
 
-```
+```sh
 $ npm install --save-dev electron
 ```
 
