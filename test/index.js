@@ -1,5 +1,5 @@
 require('make-promises-safe')
-const { describe, it } = require('mocha')
+const { describe, it, beforeEach, afterEach } = require('mocha')
 const test = it
 const supertest = require('supertest')
 const nock = require('nock')
@@ -295,6 +295,51 @@ describe('electronjs.org', () => {
       res.statusCode.should.equal(401)
       res.type.should.equal('application/json')
       res.text.should.eq('"process.env.CROWDIN_KEY is not set"')
+    })
+  })
+
+  describe('proxy to crowdin API', () => {
+    beforeEach(() => {
+      process.env.CROWDIN_KEY = '123'
+    })
+
+    afterEach(() => {
+      delete process.env.CROWDIN_KEY
+    })
+
+    test('hits crowdin API', async() => {
+      const mock = nock('https://api.crowdin.com')
+        .get('/api/project/electron/info')
+        .once()
+        .reply(200, { stats: 'mocked' })
+
+      const res = await supertest(app).get('/crowdin/info')
+
+      res.statusCode.should.equal(200)
+      res.type.should.equal('application/json')
+      res.text.should.eq('{"stats":"mocked"}')
+
+      mock.done()
+    })
+
+    test('returns 404 when trying to access API endpoints that are not whitelisted', async() => {
+      const res = await supertest(app).get('/crowdin/export')
+      res.statusCode.should.equal(404)
+    })
+
+    test('returns 401 when CROWDIN_KEY is not set', async() => {
+      delete process.env.CROWDIN_KEY
+      const res = await supertest(app).get('/crowdin/status')
+      res.statusCode.should.equal(401)
+      res.type.should.equal('application/json')
+      res.text.should.eq('"process.env.CROWDIN_KEY is not set"')
+    })
+
+    test('returns 405 on request with method other than GET', async() => {
+      const res = await supertest(app).post('/crowdin/add-file')
+      res.statusCode.should.equal(405)
+      res.type.should.equal('application/json')
+      res.text.should.eq('"POST not allowed"')
     })
   })
 })
