@@ -41,7 +41,7 @@
     "express-hbs": "^1.0.4",
     "express-request-language": "^1.1.15",
     "flat": "^4.0.0",
-    "github": "^12.1.0",
+    "github": "^13.0.1",
     "got": "^8.0.0",
     "helmet": "^3.9.0",
     "href-type": "^1.0.1",
