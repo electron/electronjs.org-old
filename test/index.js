@@ -286,7 +286,8 @@ describe('electronjs.org', () => {
 
     test('hits crowdin API', async() => {
       const mock = nock('https://api.crowdin.com')
-        .get('/api/project/electron/info?&key=123&json=true')
+        .get('/api/project/electron/info')
+        .query({ key: process.env.CROWDIN_KEY, json: true })
         .once()
         .reply(200, { stats: 'mocked' })
 

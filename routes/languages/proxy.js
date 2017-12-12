@@ -24,9 +24,12 @@ module.exports = (req, res, next) => {
     changeOrigin: true,
     logLevel: 'warn',
     pathRewrite: (path, req) => {
-      const newPath = url.parse(path)
+      const newPath = url.parse(path, true)
       newPath.pathname = newPath.pathname.replace('/crowdin', '')
-      newPath.search = `${newPath.search || ''}&key=${process.env.CROWDIN_KEY}&json=true`
+      Object.assign(newPath.query, {
+        key: process.env.CROWDIN_KEY,
+        json: true
+      })
       return url.format(newPath)
     }
   })(req, res, next)
