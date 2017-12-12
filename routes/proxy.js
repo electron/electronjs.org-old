@@ -22,6 +22,7 @@ module.exports = (req, res, next) => {
   return proxy({
     target: 'https://api.crowdin.com/api/project/electron',
     changeOrigin: true,
+    logLevel: 'warn',
     pathRewrite: (path, req) => {
       const newPath = url.parse(path)
       newPath.pathname = newPath.pathname.replace('/crowdin', '')

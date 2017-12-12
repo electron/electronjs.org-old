@@ -283,12 +283,11 @@ describe('electronjs.org', () => {
 
     test('hits crowdin API', async() => {
       const mock = nock('https://api.crowdin.com')
-        .get('/api/project/electron/info')
+        .get('/api/project/electron/info?&key=123&json=true')
         .once()
         .reply(200, { stats: 'mocked' })
 
       const res = await supertest(app).get('/crowdin/info')
-
       res.statusCode.should.equal(200)
       res.type.should.equal('application/json')
       res.text.should.eq('{"stats":"mocked"}')
