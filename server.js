@@ -80,13 +80,12 @@ app.get('/maintainers/join', (req, res) => res.redirect('https://goo.gl/FJmZZm')
 app.get('/awesome', (req, res) => res.redirect('/community'))
 app.get('/community', routes.community)
 app.get('/languages', routes.languages.index)
-app.get('/language-stats.json', routes.languages.stats)
 app.get('/contact', routes.contact)
 app.get('/releases', routes.releases)
 
 app.get('/devtron', routes.devtron)
 app.get('/spectron', routes.spectron)
-app.use('/crowdin', routes.proxy)
+app.use('/crowdin', routes.languages.proxy)
 
 // Generic 404 handler
 app.use(routes._404)
