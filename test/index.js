@@ -272,32 +272,6 @@ describe('electronjs.org', () => {
     })
   })
 
-  describe('/language-stats.json', () => {
-    test('hits the CROWDIN API', async () => {
-      process.env.CROWDIN_KEY = '123'
-      const mock = nock('https://api.crowdin.com')
-        .get('/api/project/electron/status?key=123&json=true')
-        .once()
-        .reply(200, {stats: 'mocked'})
-
-      const res = await supertest(app).get('/language-stats.json')
-
-      res.statusCode.should.equal(200)
-      res.type.should.equal('application/json')
-      res.text.should.eq('{"stats":"mocked"}')
-
-      mock.done()
-      delete process.env.CROWDIN_KEY
-    })
-
-    test('returns a warning when CROWDIN_KEY is not set', async () => {
-      const res = await supertest(app).get('/language-stats.json')
-      res.statusCode.should.equal(401)
-      res.type.should.equal('application/json')
-      res.text.should.eq('"process.env.CROWDIN_KEY is not set"')
-    })
-  })
-
   describe('proxy to crowdin API', () => {
     beforeEach(() => {
       process.env.CROWDIN_KEY = '123'
