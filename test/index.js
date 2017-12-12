@@ -111,9 +111,12 @@ describe('electronjs.org', () => {
     })
 
     test('redirects pre-1.0 docs URLs', async () => {
-      const res = await supertest(app).get(`/docs/v0.20.0/api/app`)
+      let res = await supertest(app).get(`/docs/v0.20.0/api/app`)
       res.statusCode.should.equal(302)
       res.headers.location.should.equal('/docs/api/app')
+      res = await supertest(app).get(`/docs/v0.20.0`)
+      res.statusCode.should.equal(302)
+      res.headers.location.should.equal('/docs')
     })
 
     test('uses page title and description', async () => {
