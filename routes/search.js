@@ -1,4 +1,4 @@
-const { GraphQLSchema, buildSchema } = require('graphql')
+const { graphql, GraphQLSchema, buildSchema } = require('graphql')
 const graphqlHTTP = require('express-graphql')
 const docsEn = require('../lib/i18n').docs['en-US']
 const npmPkgs = require('electron-npm-packages')
@@ -81,7 +81,6 @@ const schema = buildSchema(`
     name: String!
     version: String!
     description: String
-    author: String
     keywords: [String!]
     stars: Int
     downloadsInLastMonth: Int
@@ -94,13 +93,21 @@ const schema = buildSchema(`
   }
 `);
 
-module.exports = (req, res, next) => {
-  // let results = {search: 'result'}
-  // res.json(results)
+module.exports = async (req, res, next) => {
+  const query = `query {
+    allNpmPackages(filter: "${req.query.q}") {
+      description
+      stars
+      downloadsInLastMonth
+    }
+  }`
 
-  return graphqlHTTP({
-    schema: schema,
-    rootValue: root,
-    graphiql: false
-  })(req, res, next)
+  const result = await graphql(schema, query, root)
+  res.json(result)
+
+  // return graphqlHTTP({
+  //   schema: schema,
+  //   rootValue: root,
+  //   graphiql: false
+  // })(req, res, next)
 }
