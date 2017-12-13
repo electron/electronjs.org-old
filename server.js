@@ -87,6 +87,8 @@ app.get('/devtron', routes.devtron)
 app.get('/spectron', routes.spectron)
 app.use('/crowdin', routes.languages.proxy)
 
+app.get('/search', routes.search)
+
 // Generic 404 handler
 app.use(routes._404)
 
