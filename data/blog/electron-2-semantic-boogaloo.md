@@ -6,6 +6,8 @@ date: '2017-12-06'
 
 A new major version of Electron is in the works, and with it some changes to our versioning strategy. As of version 2.0.0, Electron will strictly adhere to Semantic Versioning.
 
+---
+
 This change means you'll see the major version bump more often, and it will usually be a major update to Chromium. Patch releases will also be more stable, as they will now only contain bug fixes with no new features.
 
 **Major Version Increments**

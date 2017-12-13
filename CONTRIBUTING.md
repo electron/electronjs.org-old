@@ -89,10 +89,18 @@ on all posts:
 
 ```
 ---
-title: 'Project of the Week: WebTorrent'
+title: 'I am a blog post'
 author: zeke
 date: '2017-03-14'
 ---
+
+A thing happened, and this is some intro content about it.
+
+---
+
+I am the rest of the post. Those three dashes above me designate
+the cutoff point for the post summary that's displayed on the
+/blog index page
 ```
 
 A few guidelines to keep in mind when publishing a blog post:
