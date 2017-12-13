@@ -141,6 +141,8 @@ apps:
   submit_your_own: submit your own
   something_missing: Something missing?
   edit_this_app: Edit this app.
+  search:
+    no_results: "Sorry, no apps found that matched your query: "
 
 clipboard:
   copy: Copy

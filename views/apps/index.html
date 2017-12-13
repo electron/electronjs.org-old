@@ -29,6 +29,8 @@
   <div class='col-xs-9 container-narrow text-center' id="apps">
     <input class="inline-filter filterable-list-input" placeholder="Filter apps by name, description, etc..." type="search" autofocus="on" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
 
+    <p class="no-results" style="display:none">{{localized.apps.search.no_results}}</p>
+
     <ul class="mb-4 filterable-list app-list">
       {{#each apps}}
         {{#unless this.disabled}}

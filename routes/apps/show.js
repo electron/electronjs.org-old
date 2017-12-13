@@ -5,7 +5,9 @@ const {getPlatformFromFilename} = require('platform-utils')
 module.exports = (req, res, next) => {
   const app = apps.find(app => app.slug === req.params.slug)
 
-  if (!app) return next()
+  if (!app) {
+    return res.redirect(`/apps?q=${req.params.slug}`)
+  }
 
   if (app.category) {
     app.categorySlug = categories.find(category => category.name === app.category).slug

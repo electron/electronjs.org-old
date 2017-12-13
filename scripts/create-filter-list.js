@@ -6,6 +6,7 @@ const lazyLoadImages = require('./lazy-load-images')
 module.exports = function createFilterList () {
   // look for a filterable list on this page
   const list = document.querySelector('.filterable-list')
+  const noResultsElement = document.querySelector('.no-results')
   if (!list || !list.parentElement) return
 
   // inherit initial query from `q` query param
@@ -28,7 +29,13 @@ module.exports = function createFilterList () {
   filterList.search(filterInput.value)
 
   // update the query param every time a search is performed
-  filterList.on('updated', function () {
+  filterList.on('updated', function (result) {
+    if (result && result.visibleItems && !result.visibleItems.length) {
+      noResultsElement.style.display = 'block'
+    } else {
+      noResultsElement.style.display = 'none'
+    }
+
     setQueryString({q: filterInput.value})
     list.querySelectorAll('img[data-src]').forEach(lazyLoadImages.addImage)
   })
