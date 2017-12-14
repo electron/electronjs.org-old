@@ -1,11 +1,5 @@
 <h1>{{{post.title}}}</h1>
 
-<div class="who-when mt-1 mb-4">
-  <span class="octicon octicon-calendar pr-2"></span>
-  <span data-date="{{post.date}}" data-format="%B %d, %Y" class="blog-index-time"></span>
-  <a href="https://github.com/{{post.author}}" class="author-link ml-3">
-    <img src="https://github.com/{{post.author}}.png?size=36" alt="{{post.author}}" class="avatar mr-2">{{post.author}}
-  </a>
-</div>
+{{> blog_byline}}
 
 {{{post.content}}}

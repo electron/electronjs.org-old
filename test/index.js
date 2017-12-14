@@ -23,6 +23,14 @@ describe('electronjs.org', () => {
     res.headers['content-encoding'].should.equal('gzip')
   })
 
+  test('blog feeds', async () => {
+    let res = await supertest(app).get(`/blog.json`)
+    res.headers['content-type'].should.equal('application/json; charset=utf-8')
+    res.body.title.should.equal('Electron')
+    res = await supertest(app).get(`/blog.xml`)
+    res.headers['content-type'].should.equal('text/xml; charset=utf-8')
+  })
+
   describe('404 pages', () => {
     test('404 path on page, detect a 404 path of page to create a issue', async () => {
       const $ = await get('/404-page-asdfgh')

@@ -1,6 +1,9 @@
 ---
 title: 'Project of the Week: WordPress Desktop'
-author: zeke
+author: 
+  - mkaz
+  - johngodley
+  - zeke
 date: '2017-02-28'
 ---
 
