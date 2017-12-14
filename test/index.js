@@ -1,5 +1,5 @@
 require('make-promises-safe')
-const { describe, it } = require('mocha')
+const { describe, it, beforeEach, afterEach } = require('mocha')
 const test = it
 const supertest = require('supertest')
 const nock = require('nock')
@@ -21,6 +21,14 @@ describe('electronjs.org', () => {
   test('gzip enabled', async () => {
     const res = await supertest(app).get(`/`)
     res.headers['content-encoding'].should.equal('gzip')
+  })
+
+  test('blog feeds', async () => {
+    let res = await supertest(app).get(`/blog.json`)
+    res.headers['content-type'].should.equal('application/json; charset=utf-8')
+    res.body.title.should.equal('Electron')
+    res = await supertest(app).get(`/blog.xml`)
+    res.headers['content-type'].should.equal('text/xml; charset=utf-8')
   })
 
   describe('404 pages', () => {
@@ -111,9 +119,12 @@ describe('electronjs.org', () => {
     })
 
     test('redirects pre-1.0 docs URLs', async () => {
-      const res = await supertest(app).get(`/docs/v0.20.0/api/app`)
+      let res = await supertest(app).get(`/docs/v0.20.0/api/app`)
       res.statusCode.should.equal(302)
       res.headers.location.should.equal('/docs/api/app')
+      res = await supertest(app).get(`/docs/v0.20.0`)
+      res.statusCode.should.equal(302)
+      res.headers.location.should.equal('/docs')
     })
 
     test('uses page title and description', async () => {
@@ -272,29 +283,48 @@ describe('electronjs.org', () => {
     })
   })
 
-  describe('/language-stats.json', () => {
-    test('hits the CROWDIN API', async () => {
+  describe('proxy to crowdin API', () => {
+    beforeEach(() => {
       process.env.CROWDIN_KEY = '123'
+    })
+
+    afterEach(() => {
+      delete process.env.CROWDIN_KEY
+    })
+
+    test('hits crowdin API', async() => {
       const mock = nock('https://api.crowdin.com')
-        .get('/api/project/electron/status?key=123&json=true')
+        .get('/api/project/electron/info')
+        .query({ key: process.env.CROWDIN_KEY, json: true })
         .once()
-        .reply(200, {stats: 'mocked'})
+        .reply(200, { stats: 'mocked' })
 
-      const res = await supertest(app).get('/language-stats.json')
-
+      const res = await supertest(app).get('/crowdin/info')
       res.statusCode.should.equal(200)
       res.type.should.equal('application/json')
       res.text.should.eq('{"stats":"mocked"}')
 
       mock.done()
-      delete process.env.CROWDIN_KEY
     })
 
-    test('returns a warning when CROWDIN_KEY is not set', async () => {
-      const res = await supertest(app).get('/language-stats.json')
+    test('returns 404 when trying to access API endpoints that are not whitelisted', async() => {
+      const res = await supertest(app).get('/crowdin/export')
+      res.statusCode.should.equal(404)
+    })
+
+    test('returns 401 when CROWDIN_KEY is not set', async() => {
+      delete process.env.CROWDIN_KEY
+      const res = await supertest(app).get('/crowdin/status')
       res.statusCode.should.equal(401)
       res.type.should.equal('application/json')
       res.text.should.eq('"process.env.CROWDIN_KEY is not set"')
+    })
+
+    test('returns 405 on request with method other than GET', async() => {
+      const res = await supertest(app).post('/crowdin/add-file')
+      res.statusCode.should.equal(405)
+      res.type.should.equal('application/json')
+      res.text.should.eq('"POST not allowed"')
     })
   })
 })

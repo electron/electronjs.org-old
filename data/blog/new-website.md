@@ -8,6 +8,8 @@ Electron has a new website at [electronjs.org]! We've replaced
 our static Jekyll site with a Node.js webserver, giving us flexibility to
 internationalize the site and paving the way for more exciting new features.
 
+---
+
 ## 🌍 Translations
 
 We've begun the process of internationalizing the website with the 

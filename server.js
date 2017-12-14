@@ -59,12 +59,15 @@ app.use(browsersync())
 const routes = require('./routes')
 app.get('/', routes.home)
 
+app.get('/blog.xml', routes.feed.blog)
+app.get('/blog.json', routes.feed.blog)
+
 app.get('/apps', routes.apps.index)
 app.get('/app/:slug', (req, res) => res.redirect(`/apps/${req.params.slug}`))
 app.get('/apps/:slug', routes.apps.show)
 
-app.get('/docs/latest*', (req, res) => { res.redirect(req.path.replace(/^\/docs\/latest/ig, '/docs')) })
-app.get('/docs/v0*', (req, res) => res.redirect(req.path.replace(/v0\.\d+\.\d+\//, '')))
+app.get('/docs/latest*', (req, res) => res.redirect(req.path.replace(/^\/docs\/latest/ig, '/docs')))
+app.get('/docs/v0*', (req, res) => res.redirect(req.path.replace(/^\/docs\/v0\.\d+\.\d+/ig, '/docs')))
 app.get('/docs', routes.docs.index)
 app.get('/docs/:category', routes.docs.category)
 app.get('/docs/:category/*', routes.docs.show)
@@ -80,12 +83,12 @@ app.get('/maintainers/join', (req, res) => res.redirect('https://goo.gl/FJmZZm')
 app.get('/awesome', (req, res) => res.redirect('/community'))
 app.get('/community', routes.community)
 app.get('/languages', routes.languages.index)
-app.get('/language-stats.json', routes.languages.stats)
 app.get('/contact', routes.contact)
 app.get('/releases', routes.releases)
 
 app.get('/devtron', routes.devtron)
 app.get('/spectron', routes.spectron)
+app.use('/crowdin', routes.languages.proxy)
 
 // Generic 404 handler
 app.use(routes._404)
