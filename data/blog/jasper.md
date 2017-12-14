@@ -1,6 +1,9 @@
 ---
 title: 'Project of the Week: Jasper'
-author: zeke
+author: 
+  - h13i32maru
+  - watilde
+  - zeke
 date: '2017-03-21'
 ---
 

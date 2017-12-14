@@ -1,6 +1,9 @@
 ---
 title: 'Project of the Week: Kap'
-author: zeke
+author: 
+  - skllcrn
+  - sindresorhus
+  - zeke
 date: '2017-01-31'
 ---
 
