@@ -1,6 +1,9 @@
 ---
 title: 'Project of the Week: Voltra'
-author: zeke
+author: 
+  - zeke
+  - '0x00A'
+  - aprileelcich
 date: '2017-03-07'
 ---
 
