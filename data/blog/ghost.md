@@ -1,6 +1,8 @@
 ---
 title: 'Project of the Week: Ghost'
-author: zeke
+author: 
+  - felixrieseberg
+  - zeke
 date: '2017-02-14'
 ---
 

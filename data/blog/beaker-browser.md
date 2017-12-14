@@ -1,6 +1,8 @@
 ---
 title: 'Project of the Week: Beaker Browser'
-author: zeke
+author: 
+  - pfrazee
+  - zeke
 date: '2017-02-07'
 ---
 
