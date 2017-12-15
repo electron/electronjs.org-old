@@ -1,0 +1,24 @@
+<p>
+  {{#if doc.isApiDoc}}
+    The <code>{{doc.title}}</code> API 
+  {{else}}
+  The <code>{{doc.title}}</code> document
+  {{/if}}
+  was first introduced in Electron {{doc.birthTag}}
+</p>
+
+<table class="table table-ruled table-full-width mb-7">
+  {{#each releasesIncludingCurrentDoc}}
+    <tr>
+      <td>
+          <a href="https://github.com/electron/electron/blob/{{this.tag_name}}{{../doc.href}}.md">{{../doc.href}}.md @ {{this.version}}</a>
+      </td>
+      <td>
+          <time data-date="{{this.created_at}}" data-format="%B %d, %Y">{{this.created_at}}</time>
+      </td>
+      <td>
+          <time data-date="{{this.created_at}}"></time>
+      </td>
+    </tr>
+  {{/each}}
+</table>
