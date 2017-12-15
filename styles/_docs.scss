@@ -3,12 +3,14 @@
 
 .docs-version {
   display: inline-block;
-  padding: .1em .4em;
+  padding: 0 .4em;
+  margin-left: 10px;
   vertical-align: middle;
-  font-size: $body-font-size * 1.25;
+  font-size: $body-font-size * 0.95;
+  line-height: 1.8;
   font-weight: 200;
   -webkit-font-smoothing: initial;
-  color: $main-color-subtle;
+  background-color: $main-bg-color;
   border: 1px solid $border-color;
   border-radius: $border-radius;
 }
@@ -114,18 +116,6 @@
     text-align: left;
     padding: $spacer2;
   }
-
-  tr {
-    border-bottom: 1px solid $border-color;
-    text-align: left;
-
-    td {
-      padding: $spacer2;
-      line-height: 1.4;
-      font-size: 14px;
-    }
-  }
-
   width: 100%;
 }
 
