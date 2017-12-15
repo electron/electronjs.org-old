@@ -194,8 +194,9 @@ describe('electronjs.org', () => {
       res.headers.location.should.equal('/releases')
     })
 
-    test('releases data', () => {
-      const releases = require('../data/releases.json')
+    test('/releases.json', async () => {
+      const res = await supertest(app).get('/releases.json')
+      const releases = res.body
       releases.should.be.an('array')
       releases.length.should.be.above(270)
       releases.every(release => release.version && release.version.length).should.eq(true)
