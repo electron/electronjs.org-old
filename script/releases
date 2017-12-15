@@ -37,7 +37,7 @@ async function getReleases () {
   // paginate
   let releases = []
   for (let i = 1; i <= pagesToFetch; i++) {
-    const batch = await await github.repos.getReleases(ghOpts({page: i}))
+    const batch = await github.repos.getReleases(ghOpts({page: i}))
     releases = releases.concat(batch.data)
   }
 
