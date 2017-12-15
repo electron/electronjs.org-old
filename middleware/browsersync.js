@@ -13,8 +13,7 @@ module.exports = function browsersync () {
       path.join(__dirname, '../data/**/*'),
       path.join(__dirname, '../js/**/*')
     ],
-    logSnippet: false,
-    logLevel: 'silent'
+    logSnippet: false
   })
   return require('connect-browser-sync')(bs)
 }
