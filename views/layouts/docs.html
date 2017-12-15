@@ -2,18 +2,35 @@
 
 <div class='subtron text-left'>
   <div class='container-narrow'>
-      <h1><span class="mr-3 mr-lg-4">{{localized.docs.title}}</span><span class="docs-version">{{electronLatestStableVersion}}</span></h1>      
+    <h1>
+      <span class="mr-3 mr-lg-4">{{localized.docs.title}}</span>
+      <!-- <span class="docs-version">{{electronLatestStableVersion}}</span> -->
+    </h1>      
   </div>
   
-  <div class='container-narrow'>
+  <div class='container-narrow mt-2'>
 
     <h4 class="docs-breadcrumbs">
-      <a href='/'>Electron {{electronLatestStableVersion}}</a> /
       <a href='/docs'>Docs</a> /
       {{#if category}}
         {{category}}
       {{else if doc}}
-        {{#if doc.category}}<a href="/docs/{{doc.category}}">{{doc.categoryFancy}}</a> / {{/if}} {{doc.title}}
+        {{#if doc.category}}
+          <a href="/docs/{{doc.category}}">{{doc.categoryFancy}}</a>
+          / 
+        {{/if}}
+        <a href="{{doc.href}}">{{doc.title}}</a>
+
+        {{#if viewingDocHistory}}
+          / Version History
+        {{else}}
+          <a href="{{doc.href}}?history">
+            <span class="docs-version">{{electronLatestStableTag}}</span>
+          </a>
+        {{/if}}
+
+        
+
       {{else if viewingAllDocs}}
         All
       {{/if}}
@@ -29,19 +46,22 @@
     <div class='text-center'>
       <span class="d-inline-block text-left">
     
-        <span class="octicon octicon-pencil mr-2"></span>
-        {{localized.footer.see_something}}
-        <a class="propose-change" href='https://github.com/electron/electron/tree/master{{page.url}}.md'>{{localized.footer.propose_change}}</a>
+        <span class="octicon octicon-mark-github mr-2"></span>
+        <a class="propose-change" href='https://github.com/electron/electron/tree/master{{page.url}}.md'>
+          {{localized.docs.footer.propose_change}}
+        </a>
+        <br>
+
+        <span class="octicon octicon-globe mr-2"></span>
+        <a href='/docs/versions'>{{localized.docs.footer.translate}}</a>
         <br>
     
-        <span class="octicon octicon-zap mr-2"></span>
-        {{localized.footer.need_different_version}}
-        <a href='/docs/versions'>{{localized.footer.see_available_versions}}</a>
+        <span class="octicon octicon-history mr-2"></span>
+        <a href='/docs/versions'>{{localized.docs.footer.version_history}}</a>
         <br>
-    
-        <span class="octicon octicon-book mr-2"></span>
-        {{localized.footer.want_something_searchable}}
-        <a href='/docs/all'>{{localized.footer.view_all_docs}}</a>
+
+        <!-- <span class="octicon octicon-search mr-2"></span>
+        <a href='/docs/all'>{{localized.docs.footer.view_all_docs}}</a> -->
     
       </span>
     </div>
