@@ -27,7 +27,6 @@ module.exports = (req, res, next) => {
     })
     context.viewingDocHistory = true
     context.page.title = `${doc.title} Version History | Electron`
-    console.log(context.doc)
     return res.render('docs/history', context)
   }
 
