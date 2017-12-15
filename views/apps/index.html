@@ -1,63 +1,69 @@
-<section class='page-section'>
+<section class="page-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-3 categories-filter">
 
-  <div class="col-xs-3 px-4 categories-filter">
+        <input class="filterable-list-input" placeholder="Filter apps by name, description, etc..." type="search" autofocus="on" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
 
-    <input class="filterable-list-input" placeholder="Filter apps by name, description, etc..." type="search" autofocus="on" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+        <div class="mobile-hidden">
+          <h3>Categories</h3>
 
-    <div class="mobile-hidden">
-      <h3>Categories</h3>
+          <ul class="filter-list category-list">
+            {{#if currentCategory}}
+              <li>
+                <a href="/apps" class="filter-item" aria-current="page" id="category-{{this.slug}}">
+                  <span class="count" title="results">{{totalAppCount}}</span>
+                  View All
+                </a>
+              </li>
+            {{/if}}
+            {{#each categories}}
+              <li>
+                <a href="/apps?category={{this.slug}}" class="filter-item {{className}}" aria-current="page" id="category-{{this.slug}}">
+                  <span class="count" title="results">{{this.count}}</span>
+                  {{this.name}}
+                </a>
+              </li>
+            {{/each}}
+          </ul>
+        </div>
 
-      <ul class="filter-list category-list">
-        {{#if currentCategory}}
-          <li>
-            <a href="/apps" class="filter-item" aria-current="page" id="category-{{this.slug}}">
-              <span class="count" title="results">{{totalAppCount}}</span>
-              View All
-            </a>
-          </li>
-        {{/if}}
-        {{#each categories}}
-          <li>
-            <a href="/apps?category={{this.slug}}" class="filter-item {{className}}" aria-current="page" id="category-{{this.slug}}">
-              <span class="count" title="results">{{this.count}}</span>
-              {{this.name}}
-            </a>
-          </li>
-        {{/each}}
-      </ul>
+      </div>
+      <!-- ./categories-filter -->
+
+      <div class="col-xs-12 col-md-9 container-narrow" id="apps">
+
+        <ul class="mb-4 filterable-list app-list">
+          {{#each apps}}
+            {{#unless this.disabled}}
+              <li class='listed-app'>
+                <a href='/apps/{{this.slug}}' title='{{this.name}} - {{app.description}}'>
+                  <div class='listed-app-logo-wrapper'>
+                    <div class="listed-app-logo-placeholder placeholder" style="background: {{this.goodColorOnWhite}}"></div>
+                    <img class='listed-app-logo' data-src='/node_modules/electron-apps/apps/{{this.slug}}/{{this.icon64}}' alt='{{app.name}}'>
+                  </div>
+                  <span class='listed-app-name text-gray-dark'>{{this.name}}</span>
+                  <span class='listed-app-description text-gray-light'>{{this.description}}</span>
+                  <span class='listed-app-date text-gray-light'>Added&nbsp;<span data-date='{{this.date}}'>{{this.date}}</span></span>
+                  <span class='listed-app-keywords' style='display:none;'>
+                    {{this.keywords}}
+
+                    {{#if this.homebrewCaskName}}
+                      homebrew cask
+                    {{/if}}
+                  </span>
+                </a>
+              </li>
+            {{/unless}}
+          {{/each}}
+        </ul>
+
+        <p class="mt-6 text-center">
+          <a href="https://github.com/electron/electron-apps#readme">Make a Pull Request</a> to add your application.
+        </p>
+        <hr>
+      </div>
+
     </div>
-  </div>
-
-  <div class='col-xs-9 container-narrow text-center' id="apps">
-
-    <ul class="mb-4 filterable-list app-list">
-      {{#each apps}}
-        {{#unless this.disabled}}
-          <li class='listed-app'>
-            <a href='/apps/{{this.slug}}' title='{{this.name}} - {{app.description}}'>
-              <div class='listed-app-logo-wrapper'>
-                <div class="listed-app-logo-placeholder placeholder" style="background: {{this.goodColorOnWhite}}"></div>
-                <img class='listed-app-logo' data-src='/node_modules/electron-apps/apps/{{this.slug}}/{{this.icon64}}' alt='{{app.name}}'>
-              </div>
-              <span class='listed-app-name text-gray-dark'>{{this.name}}</span>
-              <span class='listed-app-description text-gray-light'>{{this.description}}</span>
-              <span class='listed-app-date text-gray-light'>Added&nbsp;<span data-date='{{this.date}}'>{{this.date}}</span></span>
-              <span class='listed-app-keywords' style='display:none;'>
-                {{this.keywords}}
-
-                {{#if this.homebrewCaskName}}
-                  homebrew cask
-                {{/if}}
-              </span>
-            </a>
-          </li>
-        {{/unless}}
-      {{/each}}
-    </ul>
-
-    <p class="mt-6">
-      <a href="https://github.com/electron/electron-apps#readme">Make a Pull Request</a> to add your application.
-    </p>
-    <hr>
   </div>
 </section>

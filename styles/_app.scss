@@ -125,29 +125,18 @@
   display: none;
 }
 
-// hide filter categories on mobile
-@media only screen and (max-width: 750px) {
-  .categories-filter {
-    width: 100%;
-    padding: 0 !important;
-    .filterable-list-input {
-      margin: 0 0 10px;
-    }
-  }
-  .mobile-hidden {
-    display: none;
-  }
-  .inline-filter {
-    display: block;
-  }
-  .container-narrow {
-    width: 100%;
+// mobile handle, use breakpoint from /bower_components/basecoat/scss/mixins/_breakpoints.scss
+.container-narrow {
+  padding-right: 15px;
+  padding-left: 15px;
+  @include breakpoint(md) { // return normal value
+    padding-right: 0;
+    padding-left: 0;
   }
 }
-
-// only show inline filter on mobile
-@media only screen and (min-width: 750px) {
-  .inline-filter {
-    display: none;
+.mobile-hidden {
+  display: none;
+  @include breakpoint(md) {
+    display: block;
   }
 }
