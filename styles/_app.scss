@@ -134,6 +134,10 @@
     padding-left: 0;
   }
 }
+.row { // default is -15px
+  margin-right: -12px; // work with .page-section { padding: 12px }
+  margin-left: -12px;
+}
 .mobile-hidden {
   display: none;
   @include breakpoint(md) {
