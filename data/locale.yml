@@ -89,10 +89,10 @@ get_started:
 explore:
   title: Explore the Electron APIs
   description:
-    The <a href="https://github.com/electron/electron-api-demos">Electron API Demos app</a>
+    "The <a href='https://github.com/electron/electron-api-demos'>Electron API Demos app</a>
     interactively demonstrates the most important features of the Electron API.
     See what's possible with Electron with sample code and helpful tips for
-    building your app.
+    building your app."
 
 download_from_github: Download from GitHub
 view_all_releases_on_github: <a href="https://github.com/electron/electron-api-demos/releases">View all releases</a> on GitHub
