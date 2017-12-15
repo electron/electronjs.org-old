@@ -114,8 +114,14 @@ describe('electronjs.org', () => {
 
     test('API doc', async () => {
       const $ = await get('/docs/api/browser-window')
-      $('.docs-breadcrumbs a').should.have.length(3)
+      $('.docs-breadcrumbs a').should.have.length(4)
       $('.docs-breadcrumbs a[href="/docs/api"]').should.have.text('API')
+      $('.docs-breadcrumbs')
+        .text()
+        .trim()
+        .replace(/\n/g, '')
+        .replace(/\s+/g, ' ')
+        .should.equal('Docs / API / BrowserWindow v1.7.9')
     })
 
     test('redirects pre-1.0 docs URLs', async () => {
