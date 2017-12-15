@@ -1,6 +1,8 @@
 const i18n = require('lib/i18n')
-const vendoredVersions = require('data/versions.json')
+const versions = require('../data/versions.json')
+const vendoredVersions = versions
   .find(version => version.version === i18n.electronLatestStableVersion)
+const releases = require('../data/releases.json')
 const {getLanguageNativeName} = require('locale-code')
 
 // Supply all route handlers with a baseline `req.context` object
@@ -23,6 +25,7 @@ module.exports = function contextBuilder (req, res, next) {
   req.context = {
     electronLatestStableVersion: i18n.electronLatestStableVersion,
     electronLatestStableTag: i18n.electronLatestStableTag,
+    releases: releases,
     vendoredVersions: vendoredVersions,
     currentLocale: req.language,
     currentLocaleNativeName: getLanguageNativeName(req.language),
