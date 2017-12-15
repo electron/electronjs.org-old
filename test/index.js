@@ -181,6 +181,12 @@ describe('electronjs.org', () => {
       titles.should.include('Electron 1.6.7')
       titles.should.include('Electron 0.37.8')
     })
+
+    test('/docs/versions redirects to /releases', async () => {
+      const res = await supertest(app).get('/docs/versions')
+      res.statusCode.should.be.equal(301)
+      res.headers.location.should.equal('/releases')
+    })
   })
 
   describe('userland', () => {
