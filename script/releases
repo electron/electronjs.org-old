@@ -31,9 +31,15 @@ async function getReleases () {
   const countRes = await github.repos.getReleases(
     Object.assign(ghOpts({per_page: 1}))
   )
-  const count = Number(parseLinkHeader(countRes.meta.link).last.page)
-  const pagesToFetch = Math.ceil(count / 100)
-  
+  try {
+    const count = Number(parseLinkHeader(countRes.meta.link).last.page)
+    const pagesToFetch = Math.ceil(count / 100)
+  } catch(err) {
+    console.error('problem fetching number of releases')
+    console.error(err)
+    process.exit(1)
+  }
+
   // paginate
   let releases = []
   for (let i = 1; i <= pagesToFetch; i++) {
