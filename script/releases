@@ -5,6 +5,7 @@ const path = require('path')
 const semver = require('semver')
 const hubdown = require('hubdown')
 const GitHub = require('github')
+const parseLinkHeader = require('parse-link-header')
 const github = new GitHub()
 
 github.authenticate({
@@ -14,14 +15,32 @@ github.authenticate({
 
 console.log('Fetching electron/electron releases from the GitHub API')
 
-async function getReleases () {
-  const res = await github.repos.getReleases({
+function ghOpts(opts) {
+  const defaults = {
     owner: 'electron',
     repo: 'electron',
     per_page: 100
-  })
+  }
+  return Object.assign({}, defaults, opts)
+}
 
-  return Promise.all(res.data
+async function getReleases () {
+
+  // determine number of pages
+  const countRes = await github.repos.getReleases(
+    Object.assign(ghOpts({per_page: 1}))
+  )
+  const count = Number(parseLinkHeader(countRes.meta.link).last.page)
+  const pagesToFetch = Math.ceil(count / 100)
+  
+  // paginate
+  let releases = []
+  for (let i = 1; i <= pagesToFetch; i++) {
+    const batch = await await github.repos.getReleases(ghOpts({page: i}))
+    releases = releases.concat(batch.data)
+  }
+
+  return Promise.all(releases
     .filter(release => !(release.draft || release.prerelease))
     .filter(release => semver.valid(release.tag_name.substring(1)))
     .map(processRelease)
@@ -29,9 +48,7 @@ async function getReleases () {
 }
 
 async function processRelease(release) {
-  release.version = release.tag_name.substring(1)
-
-  
+  release.version = release.tag_name.substring(1)  
   release.body = release.body
   
   // turn PR references like #123 into hyperlinks

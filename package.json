@@ -58,6 +58,7 @@
     "minimist": "^1.2.0",
     "mkdirp": "^0.5.1",
     "node-sass-middleware": "^0.11.0",
+    "parse-link-header": "^1.0.1",
     "platform-utils": "^1.0.0",
     "primer-breadcrumb": "1.0.2",
     "query-string": "^5.0.0",
