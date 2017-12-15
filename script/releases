@@ -6,6 +6,7 @@ const semver = require('semver')
 const hubdown = require('hubdown')
 const GitHub = require('github')
 const parseLinkHeader = require('parse-link-header')
+const versions = require('../data/versions.json')
 const github = new GitHub()
 
 github.authenticate({
@@ -72,6 +73,15 @@ getReleases().then(releases => {
 
   releases = releases
     .sort((a, b) => semver.compare(b.version, a.version))
+    
+    // inject version data for v8, node, chromium, etc
+    .map(release => {
+      const deps = versions.find(version => version.version === release.version)
+
+      if (deps) release.dependencyVersions = deps
+
+      return release
+    })
 
   console.log(releases.map(release => release.version).join('\n'))
 

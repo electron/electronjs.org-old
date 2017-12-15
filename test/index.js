@@ -193,6 +193,16 @@ describe('electronjs.org', () => {
       res.statusCode.should.be.equal(301)
       res.headers.location.should.equal('/releases')
     })
+
+    test('releases data', () => {
+      const releases = require('../data/releases.json')
+      releases.should.be.an('array')
+      releases.length.should.be.above(270)
+      releases.every(release => release.version && release.version.length).should.eq(true)
+
+      // includes version data for v8, node, chromium, etc
+      releases.filter(release => release.dependencyVersions).length.should.be.above(135)
+    })
   })
 
   describe('userland', () => {
