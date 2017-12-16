@@ -4,14 +4,27 @@
   {{else}}
   The <code>{{doc.title}}</code> document
   {{/if}}
-  was first introduced in Electron {{doc.birthTag}}
+  was introduced 
+  {{#each doc.releases}}
+    {{#if @last}}
+      <time data-date="{{this.created_at}}"></time>
+    {{/if}}
+  {{/each}}
+  in 
+  <a href="https://github.com/electron/electron/releases/tag/{{doc.birthTag}}">
+    Electron {{doc.birthTag}}
+  </a>
+  
 </p>
 
 <table class="table table-ruled table-full-width mb-7">
-  {{#each releasesIncludingCurrentDoc}}
+  {{#each doc.releases}}
     <tr>
       <td>
-          <a href="https://github.com/electron/electron/blob/{{this.tag_name}}{{../doc.href}}.md">{{../doc.href}}.md @ {{this.version}}</a>
+          <a href="https://github.com/electron/electron/blob/{{this.tag_name}}{{../doc.href}}.md">
+            <span class="octicon octicon-mark-github mr-1"></span>
+            {{../doc.slug}}.md @ {{this.version}}
+          </a>
       </td>
       <td>
           <time data-date="{{this.created_at}}" data-format="%B %d, %Y">{{this.created_at}}</time>
