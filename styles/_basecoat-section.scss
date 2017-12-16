@@ -4,7 +4,7 @@
   @include breakpoint(sm) { padding: $spacer4; }
   @include breakpoint(md) { padding: $spacer5; }
   @include breakpoint(lg) { padding: $spacer6; }
-  @include breakpoint(xl) { padding: $spacer8; }
+  @include breakpoint(xl) { padding: $spacer6; }
 
   .container,
   .container-narrow {

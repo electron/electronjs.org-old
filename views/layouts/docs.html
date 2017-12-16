@@ -24,7 +24,7 @@
         {{#if viewingDocHistory}}
           / Version History
         {{else}}
-          <a href="{{doc.href}}?history">
+          <a href="{{doc.href}}/history">
             <span class="docs-version">{{electronLatestStableTag}}</span>
           </a>
         {{/if}}
@@ -44,7 +44,7 @@
     <hr>
 
     <div class="doc-actions text-center">
-      <a class="mr-4 propose-change" href='https://github.com/electron/electron/tree/master{{page.url}}.md'>
+      <a class="mr-4 propose-change" href='{{doc.githubUrl}}'>
         <span class="octicon octicon-mark-github"></span>
         {{localized.docs.footer.propose_change}}
       </a>
@@ -54,7 +54,7 @@
         {{localized.docs.footer.translate}}
       </a>
       
-      <a class="mr-4" href='{{doc.href}}?history'>
+      <a class="mr-4" href='{{doc.href}}/history'>
         <span class="octicon octicon-history"></span>
         {{localized.docs.footer.version_history}}
       </a>
