@@ -1,8 +1,5 @@
-const { graphql, GraphQLSchema, buildSchema } = require('graphql')
-const graphqlHTTP = require('express-graphql')
-const docsEn = require('../lib/i18n').docs['en-US']
+const docsEn = require('../../lib/i18n').docs['en-US']
 const npmPkgs = require('electron-npm-packages')
-const electronRepos = require('repos-using-electron')
 const { isArray } = require('util')
 
 const searchScores = {
@@ -41,7 +38,7 @@ const filterByKeyword = (type, input, keyword) => {
     .sort((a, b) => b.score - a.score)
 }
 
-const root = {
+const resolvers = {
   docById: ({ id }) => docsEn[id],
   allDocs: ({ filter }) => {
     const docs = Object.keys(docsEn).map((key) => docsEn[key])
@@ -59,55 +56,4 @@ const root = {
   }
 }
 
-const schema = buildSchema(`
-  type Doc {
-    locale: String
-    slug: String
-    description: String
-    category: String
-    categoryFancy: String
-    href: String
-    githubUrl: String
-    isTutorial: Boolean!
-    isApiDoc: Boolean!
-    isDevTutorial: Boolean!
-    isApiStructureDoc: Boolean!
-    markdown: String!
-    title: String!
-    html: String!
-  }
-
-  type NpmPackages {
-    name: String!
-    version: String!
-    description: String
-    keywords: [String!]
-    stars: Int
-    downloadsInLastMonth: Int
-  }
-
-  type Query {
-    docById(id: String): Doc
-    allDocs(filter: String): [Doc!]
-    allNpmPackages(filter: String): [NpmPackages!]
-  }
-`);
-
-module.exports = async (req, res, next) => {
-  const query = `query {
-    allNpmPackages(filter: "${req.query.q}") {
-      description
-      stars
-      downloadsInLastMonth
-    }
-  }`
-
-  const result = await graphql(schema, query, root)
-  res.json(result)
-
-  // return graphqlHTTP({
-  //   schema: schema,
-  //   rootValue: root,
-  //   graphiql: false
-  // })(req, res, next)
-}
+module.exports = resolvers
