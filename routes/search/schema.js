@@ -22,10 +22,26 @@ module.exports = buildSchema(`
     name: String!
     version: String!
     description: String
+    author: User
+    license: String
     keywords: [String!]
+    homepage: String
     stars: Int
+    created: String!
+    modified: String!
+    lastPublisher: User
+    owners: [User]
     downloadsInLastMonth: Int
+    dependents: [String]
+    devDependents: [String]
+    totalDeps: Int
   }
+
+  type User {
+    name: String
+    email: String
+  }
+
 
   type Query {
     docs(filter: String, id: String): [Doc!]
