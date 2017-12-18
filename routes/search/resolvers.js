@@ -39,15 +39,17 @@ const filterByKeyword = (type, input, keyword) => {
 }
 
 const resolvers = {
-  docById: ({ id }) => docsEn[id],
-  allDocs: ({ filter }) => {
+  docs: ({ id, filter }) => {
+    if (id) {
+      return docsEn[id]
+    }
     const docs = Object.keys(docsEn).map((key) => docsEn[key])
     if (!filter) {
       return docs
     }
     return filterByKeyword('docs', docs, filter)
   },
-  allNpmPackages: ({ filter }) => {
+  npmPackages: ({ filter }) => {
     if (!filter) {
       return npmPkgs
     } else {

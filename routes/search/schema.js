@@ -18,7 +18,7 @@ module.exports = buildSchema(`
     html: String!
   }
 
-  type NpmPackages {
+  type NpmPackage {
     name: String!
     version: String!
     description: String
@@ -28,7 +28,7 @@ module.exports = buildSchema(`
   }
 
   type Query {
-    allDocs(filter: String, id: String): [Doc!]
-    allNpmPackages(filter: String): [NpmPackages!]
+    docs(filter: String, id: String): [Doc!]
+    npmPackages(filter: String): [NpmPackage!]
   }
 `)
