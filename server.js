@@ -3,7 +3,6 @@ const path = require('path')
 const i18n = require('./lib/i18n')
 const express = require('express')
 const lobars = require('lobars')
-const releases = require('./data/releases.json')
 
 // Middleware
 const hbs = require('express-hbs')
@@ -80,8 +79,8 @@ app.get('/issues/new', (req, res) => res.redirect(301, 'https://github.com/elect
 app.get('/languages', routes.languages.index)
 app.get('/maintainers/join', (req, res) => res.redirect('https://goo.gl/FJmZZm'))
 app.get('/pulls', (req, res) => res.redirect(301, 'https://github.com/electron/electronjs.org/pulls'))
-app.get('/releases', routes.releases)
-app.get('/releases.json', (req, res) => { res.json(releases) })
+app.get('/releases', routes.releases.index)
+app.get('/releases.json', routes.releases.feed)
 app.get('/spectron', routes.spectron)
 app.get('/userland', routes.userland.index)
 app.get('/userland/*', routes.userland.show)
