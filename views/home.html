@@ -10,10 +10,10 @@
 <div class="subtron py-4 text-center">
   <div class="container">
     <div id="electron-versions" class="electron-versions">
-      <span class="electron-versions-main">Electron: <strong>{{{vendoredVersions.version}}}</strong></span>
-      <span>Node: <strong>{{{vendoredVersions.node}}}</strong></span>
-      <span>Chromium: <strong>{{{vendoredVersions.chrome}}}</strong></span>
-      <span>V8: <strong>{{{vendoredVersions.v8}}}</strong></span>
+      <span class="electron-versions-main">Electron: <strong>{{{deps.version}}}</strong></span>
+      <span>Node: <strong>{{{deps.node}}}</strong></span>
+      <span>Chromium: <strong>{{{deps.chrome}}}</strong></span>
+      <span>V8: <strong>{{{deps.v8}}}</strong></span>
     </div>
   </div>
 </div>
@@ -114,9 +114,9 @@
             <span class="octicon octicon-desktop-download mr-1"></span>
             <span class="label">{{{localized.download_from_github}}}</span>
           </a>
-          <p id="download-alternatives" class="text-sm" style="display:none;">
+        </p>
+        <p id="download-alternatives" class="text-sm" style="display:none;">
             {{{localized.view_all_releases_on_github}}}
-          </p>
         </p>
       </div>
     </div>

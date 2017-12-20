@@ -17,6 +17,11 @@ docs:
   guides: Guides
   api_reference: API Reference
   advanced: Advanced
+  footer:
+    propose_change: Improve this doc
+    version_history: Version history
+    translate: Translate this doc
+    view_all_docs: All Docs on One Page
 
 languages:
   choose_language: Choose Your Site Language
@@ -121,12 +126,6 @@ taglines:
 help_translate: "Help translate"
 
 footer:
-  see_something: See something that needs fixing?
-  propose_change: Propose a change to the source file.
-  need_different_version: Need a different version of the docs?
-  see_available_versions: See available versions.
-  want_something_searchable: Want something searchable?
-  view_all_docs: View all docs on one page
   see_the_faq: See the frequently asked questions
 
 apps:
