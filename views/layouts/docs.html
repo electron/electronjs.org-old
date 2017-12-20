@@ -2,18 +2,35 @@
 
 <div class='subtron text-left'>
   <div class='container-narrow'>
-      <h1><span class="mr-3 mr-lg-4">{{localized.docs.title}}</span><span class="docs-version">{{electronLatestStableVersion}}</span></h1>      
+    <h1>
+      <span class="mr-3 mr-lg-4">{{localized.docs.title}}</span>
+      <!-- <span class="docs-version">{{electronLatestStableVersion}}</span> -->
+    </h1>      
   </div>
   
-  <div class='container-narrow'>
+  <div class='container-narrow mt-2'>
 
     <h4 class="docs-breadcrumbs">
-      <a href='/'>Electron {{electronLatestStableVersion}}</a> /
       <a href='/docs'>Docs</a> /
       {{#if category}}
         {{category}}
       {{else if doc}}
-        {{#if doc.category}}<a href="/docs/{{doc.category}}">{{doc.categoryFancy}}</a> / {{/if}} {{doc.title}}
+        {{#if doc.category}}
+          <a href="/docs/{{doc.category}}">{{doc.categoryFancy}}</a>
+          / 
+        {{/if}}
+        <a href="{{doc.href}}">{{doc.title}}</a>
+
+        {{#if viewingDocHistory}}
+          / Version History
+        {{else}}
+          <a href="{{doc.href}}/history">
+            <span class="docs-version">{{electronLatestStableTag}}</span>
+          </a>
+        {{/if}}
+
+        
+
       {{else if viewingAllDocs}}
         All
       {{/if}}
@@ -25,6 +42,23 @@
   <div class='container-narrow'>
     {{{body}}}
     <hr>
-    {{> docs_footer}}
+
+    <div class="doc-actions text-center">
+      <a class="mr-4 propose-change" href='{{doc.githubUrl}}'>
+        <span class="octicon octicon-mark-github"></span>
+        {{localized.docs.footer.propose_change}}
+      </a>
+      
+      <a class="mr-4" href='https://crowdin.com/project/electron'>
+        <span class="octicon octicon-globe"></span>
+        {{localized.docs.footer.translate}}
+      </a>
+      
+      <a class="mr-4" href='{{doc.href}}/history'>
+        <span class="octicon octicon-history"></span>
+        {{localized.docs.footer.version_history}}
+      </a>
+    </div>
+
   </div>
 </section>
