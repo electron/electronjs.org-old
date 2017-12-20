@@ -62,7 +62,7 @@
     "node-sass-middleware": "^0.11.0",
     "parse-link-header": "^1.0.1",
     "platform-utils": "^1.0.0",
-    "primer-breadcrumb": "1.0.2",
+    "primer-breadcrumb": "1.5.0",
     "query-string": "^5.0.0",
     "require-dir": "^0.3.2",
     "require-directory": "^2.1.1",
