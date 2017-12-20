@@ -212,11 +212,11 @@ describe('electronjs.org', () => {
       releases.every(release => release.version && release.version.length).should.eq(true)
 
       // includes version data for v8, node, chromium, etc
-      releases.filter(release => release.dependencyVersions).length.should.be.above(135)
+      releases.filter(release => release.deps).length.should.be.above(135)
     })
 
     test('/releases.json (lite version)', async () => {
-      const res = await supertest(app).get('/releases.json?pick=tag_name,published_at, dependencyVersions.node')
+      const res = await supertest(app).get('/releases.json?pick=tag_name,published_at, deps.node')
       const releases = res.body
       releases.should.be.an('array')
       releases.length.should.be.above(270)
@@ -226,7 +226,7 @@ describe('electronjs.org', () => {
       release.should.deep.equal({
         tag_name: 'v1.8.1',
         published_at: '2017-09-29T00:24:31Z',
-        dependencyVersions: {node: '8.2.1'}
+        deps: {node: '8.2.1'}
       })
     })
   })
