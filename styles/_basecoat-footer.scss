@@ -18,20 +18,24 @@
   }
 }
 
-.footer-nav-item {
-  &.icon {
-    text-decoration: none !important;
-    border: none !important;
-    font-size: 130%;
-  }
-
-  .devicon-github-plain {
-    font-size: 150%;
-  }
-}
-
 .footer-social {
   @include breakpoint(md) {
     float: right;
   }
+}
+
+.footer-social-icon {
+  font-size: 130%;
+  fill: currentColor;
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+}
+
+.icon-twitter {
+  width: 1.23046875em;
+}
+
+.icon-github {
+  font-size: 195%;
 }
