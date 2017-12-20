@@ -203,32 +203,6 @@ describe('electronjs.org', () => {
       res.statusCode.should.be.equal(301)
       res.headers.location.should.equal('/releases')
     })
-
-    test('/releases.json', async () => {
-      const res = await supertest(app).get('/releases.json')
-      const releases = res.body
-      releases.should.be.an('array')
-      releases.length.should.be.above(270)
-      releases.every(release => release.version && release.version.length).should.eq(true)
-
-      // includes version data for v8, node, chromium, etc
-      releases.filter(release => release.deps).length.should.be.above(135)
-    })
-
-    test('/releases.json (lite version)', async () => {
-      const res = await supertest(app).get('/releases.json?pick=tag_name,published_at, deps.node')
-      const releases = res.body
-      releases.should.be.an('array')
-      releases.length.should.be.above(270)
-      releases.some(release => Object.keys(release).length === 3).should.eq(true)
-
-      const release = releases.find(release => release.tag_name === 'v1.8.1')
-      release.should.deep.equal({
-        tag_name: 'v1.8.1',
-        published_at: '2017-09-29T00:24:31Z',
-        deps: {node: '8.2.1'}
-      })
-    })
   })
 
   describe('userland', () => {
