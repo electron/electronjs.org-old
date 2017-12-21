@@ -9,9 +9,15 @@ module.exports = (req, res, next) => {
   // find releases that include the current doc
   const filenameKey = doc.href.replace(/^\//, '') + '.md'
   doc.birthTag = historian[filenameKey]
-  doc.releases = req.context.releases.filter(release => {
-    return semver.gte(release.version, doc.birthTag.replace('v', ''))
-  })
+
+  if (doc.birthTag) {
+    doc.releases = req.context.releases.filter(release => {
+      return semver.gte(release.version, doc.birthTag.replace('v', ''))
+    })
+  } else {
+    doc.releases = []
+    doc.noPriorReleases = true
+  }
 
   const context = Object.assign(req.context, {
     page: {

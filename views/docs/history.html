@@ -4,17 +4,23 @@
   {{else}}
   The <code>{{doc.title}}</code> document
   {{/if}}
-  was introduced 
-  {{#each doc.releases}}
-    {{#if @last}}
-      <time data-date="{{this.created_at}}"></time>
-    {{/if}}
-  {{/each}}
-  in 
-  <a href="https://github.com/electron/electron/releases/tag/{{doc.birthTag}}">
-    Electron {{doc.birthTag}}
-  </a>
-  
+
+  {{#if doc.noPriorReleases}}
+    has been published to Electron's master branch,
+    but has not yet been included in an Electron release.
+  {{else}}
+    was introduced 
+    {{#each doc.releases}}
+      {{#if @last}}
+        <time data-date="{{this.created_at}}"></time>
+      {{/if}}
+    {{/each}}
+    in 
+    <a href="https://github.com/electron/electron/releases/tag/{{doc.birthTag}}">
+      Electron {{doc.birthTag}}
+    </a>
+  {{/if}}
+
 </p>
 
 <table class="table table-ruled table-full-width mb-7">
