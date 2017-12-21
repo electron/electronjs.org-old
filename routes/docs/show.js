@@ -14,5 +14,9 @@ module.exports = (req, res, next) => {
     layout: 'docs'
   })
 
+  if (!doc.translateUrl) {
+    doc.translateUrl = 'https://crowdin.com/project/electron'    
+  }
+  
   res.render('docs/show', context)
 }
