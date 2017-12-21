@@ -42,7 +42,6 @@ module.exports = buildSchema(`
     email: String
   }
 
-
   type Query {
     docs(filter: String, id: String): [Doc!]
     npmPackages(filter: String): [NpmPackage!]

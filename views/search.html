@@ -1,4 +1,9 @@
-search result . com
-
-{{searchIn}}
-{{query}}
+<section class='page-section'>
+  <div class='container-narrow'>
+    <H1>Search Results in {{searchOpDone.displayName}} for <i>"{{query.query}}"</i></H1>
+    {{#each searchResults}}
+      <p>{{this.title}}</p>
+      <p>{{this.description}}</p>
+    {{/each}}
+  </div>
+</section>
