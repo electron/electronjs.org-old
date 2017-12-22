@@ -1,0 +1,13 @@
+<div class="mt-3">
+  <h2>{{searchOpDone.displayName}} ({{searchResults.length}})</h2>
+
+  <ul class="search-results mx-0">
+    {{#each searchResults}}
+      <li class="my-3">
+        <a class="text-bold" href="{{this.href}}">{{this.title}}</a>
+        <p class="description">{{this.description}}</p>
+      </li>
+    {{/each}}
+  </ul>
+</div>
+<hr></hr>

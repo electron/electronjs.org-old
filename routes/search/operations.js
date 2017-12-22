@@ -6,6 +6,11 @@ module.exports = [
       docs(filter: $filter){
         title
         description
+        href
+        isTutorial
+        isApiDoc
+        isDevTutorial
+        isApiStructureDoc
       }
     }`
   }, {

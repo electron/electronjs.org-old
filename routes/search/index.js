@@ -1,11 +1,9 @@
-// const search = require('./graphql')
 const { graphql } = require('graphql')
 const schema = require('./schema')
 const resolvers = require('./resolvers')
 const operations = require('./operations')
 
-module.exports = (req, res) => {
-  console.log(req.query, req.params.searchIn)
+module.exports = async (req, res) => {
   if (!req.params.searchIn) {
     // if not specified, return only docs search results from server
     // then (TODO) have client side query the rest
@@ -21,12 +19,16 @@ module.exports = (req, res) => {
     searchOpsToDo: null // TODO: have client side query the rest
   })
   // TODO: pagination/set limit
-  graphql(schema, searchOp.query, resolvers, {filter: req.query.query})
-  .then((result) => {
-    if (req.query.json !== undefined) {
-      return res.json(result.data)
-    }
-    context.searchResults = result.data[searchOp.name]
-    res.render('search', context)
-  })
+  const result = await graphql(
+    schema,
+    searchOp.query,
+    resolvers,
+    null,
+    { filter: req.query.query }
+  )
+  if (req.query.json !== undefined) {
+    return res.json(result.data)
+  }
+  context.searchResults = result.data[searchOp.name]
+  res.render('search', context)
 }

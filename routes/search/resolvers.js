@@ -40,6 +40,7 @@ const filterByKeyword = (type, input, keyword) => {
 
 const resolvers = {
   docs: ({ id, filter }) => {
+    console.log('filter by', filter)
     if (id) {
       return docsEn[id]
     }
