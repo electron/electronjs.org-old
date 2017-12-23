@@ -121,7 +121,7 @@ describe('electronjs.org', () => {
         .trim()
         .replace(/\n/g, '')
         .replace(/\s+/g, ' ')
-        .should.equal('Docs / API / BrowserWindow v1.7.9')
+        .should.match('Docs / API / BrowserWindow v')
     })
 
     test('redirects pre-1.0 docs URLs', async () => {
