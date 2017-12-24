@@ -1,6 +1,12 @@
 <section class='page-section'>
   <div class='container-narrow'>
-    <h4>Search Results for <i>"{{query.query}}"</i></h4>
-    {{> search/docs}}
+    <h4 class="mb-4">Search Results for <i>"{{query.query}}"</i></h4>
+    {{#each searchResults}}
+    <div>
+      <h2>{{searchOp.displayName}} ({{results.length}})</h2>
+        {{> (lookup searchOp 'partial')}}
+    </div>
+    <hr></hr>
+    {{/each}}
   </div>
 </section>

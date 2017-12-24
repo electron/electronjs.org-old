@@ -12,7 +12,8 @@ module.exports = [
         isDevTutorial
         isApiStructureDoc
       }
-    }`
+    }`,
+    partial: 'search/docs'
   }, {
     name: 'npmPackages',
     displayName: 'NPM Packages',
@@ -21,6 +22,7 @@ module.exports = [
         name
         description
       }
-    }`
+    }`,
+    partial: 'search/npmPackages'
   }
 ]
