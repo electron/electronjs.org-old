@@ -22,12 +22,18 @@ module.exports = (req, res) => {
       null,
       { filter: req.query.query }
     )
-    return { searchOp, results: results.data[searchOp.name] }
+    return {
+      searchOp,
+      // FIXME: use real pagination
+      resultsNum: results.data[searchOp.name].length,
+      results: req.params.searchIn ? results.data[searchOp.name] : results.data[searchOp.name].slice(0, 5)
+    }
   })).then((searchResults) => {
     if (req.query.json !== undefined) {
       return res.json(searchResults)
     }
     const context = Object.assign({}, req.context, {
+      searchIn: req.params.searchIn,
       query: req.query,
       searchResults: searchResults
     })

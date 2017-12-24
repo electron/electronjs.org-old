@@ -1,7 +1,7 @@
 module.exports = [
   {
     name: 'docs',
-    displayName: 'Documentation',
+    displayName: 'Documentations',
     query: `query FilterDocs($filter: String) {
       docs(filter: $filter){
         title
