@@ -48,7 +48,7 @@ For more info about how this site works and how to contribute, see
 - [Views](CONTRIBUTING.md#views)
 - [Context](CONTRIBUTING.md#context)
 - [Styles](CONTRIBUTING.md#styles)
-- [Fontend JavaScript](CONTRIBUTING.md#frontend-javascript)
+- [Frontend JavaScript](CONTRIBUTING.md#frontend-javascript)
 - [Scripts](CONTRIBUTING.md#scripts)
 - [Environment Variables](CONTRIBUTING.md#environment-variables)
 
