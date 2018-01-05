@@ -1,6 +1,10 @@
 ---
 title: 'Project of the Week: Dat'
-author: zeke
+author: 
+  - karissa
+  - yoshuawuyts
+  - maxogden
+  - zeke
 date: '2017-02-21'
 ---
 

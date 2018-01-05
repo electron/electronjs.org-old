@@ -23,6 +23,14 @@ describe('electronjs.org', () => {
     res.headers['content-encoding'].should.equal('gzip')
   })
 
+  test('blog feeds', async () => {
+    let res = await supertest(app).get(`/blog.json`)
+    res.headers['content-type'].should.equal('application/json; charset=utf-8')
+    res.body.title.should.equal('Electron')
+    res = await supertest(app).get(`/blog.xml`)
+    res.headers['content-type'].should.equal('text/xml; charset=utf-8')
+  })
+
   describe('404 pages', () => {
     test('404 path on page, detect a 404 path of page to create a issue', async () => {
       const $ = await get('/404-page-asdfgh')
@@ -106,8 +114,14 @@ describe('electronjs.org', () => {
 
     test('API doc', async () => {
       const $ = await get('/docs/api/browser-window')
-      $('.docs-breadcrumbs a').should.have.length(3)
+      $('.docs-breadcrumbs a').should.have.length(4)
       $('.docs-breadcrumbs a[href="/docs/api"]').should.have.text('API')
+      $('.docs-breadcrumbs')
+        .text()
+        .trim()
+        .replace(/\n/g, '')
+        .replace(/\s+/g, ' ')
+        .should.include('Docs / API / BrowserWindow v')
     })
 
     test('redirects pre-1.0 docs URLs', async () => {
@@ -156,9 +170,19 @@ describe('electronjs.org', () => {
       $('.error-page').text().should.include('Page not found')
     })
 
-    test('doc change proposal', async () => {
+    test('docs footer', async () => {
+      // includes a link to edit the doc
       const $ = await get('/docs/api/accelerator')
       $('.propose-change').attr('href').should.eq('https://github.com/electron/electron/tree/master/docs/api/accelerator.md')
+
+      // TODO: test other docs footer links
+    })
+
+    test('doc history', async () => {
+      const $ = await get('/docs/api/accelerator/history')
+      // $('body').text().should.include('The Accelerator API was introduced in Electron v0.15.3')
+      // $('head > title').text().should.eq('accelerator Version History | Electron')
+      $('tr').length.should.be.above(10)
     })
   })
 
@@ -172,6 +196,12 @@ describe('electronjs.org', () => {
       titles.should.include('Electron 1.7.9')
       titles.should.include('Electron 1.6.7')
       titles.should.include('Electron 0.37.8')
+    })
+
+    test('/docs/versions redirects to /releases', async () => {
+      const res = await supertest(app).get('/docs/versions')
+      res.statusCode.should.be.equal(301)
+      res.headers.location.should.equal('/releases')
     })
   })
 

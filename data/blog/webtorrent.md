@@ -1,6 +1,8 @@
 ---
 title: 'Project of the Week: WebTorrent'
-author: zeke
+author: 
+  - feross
+  - zeke
 date: '2017-03-14'
 ---
 
