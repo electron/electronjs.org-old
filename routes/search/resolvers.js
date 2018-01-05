@@ -7,16 +7,16 @@ const searchScores = {
   docs: [
     { field: 'title', weight: 10 },
     { field: 'description', weight: 3 },
-    { field: 'markdown', weight: 1 },
+    { field: 'markdown', weight: 1 }
   ],
   npm: [
     { field: 'name', weight: 10 },
     { field: 'keywords', weight: 2 },
-    { field: 'description', weight: 5 },
+    { field: 'description', weight: 5 }
   ],
   repos: [
     { field: 'fullName', weight: 10 },
-    { field: 'description', weight: 5 },
+    { field: 'description', weight: 5 }
   ]
 }
 

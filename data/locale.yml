@@ -10,7 +10,6 @@ nav:
   contact: Contact
   languages: Languages
   code_of_conduct: Code of Conduct
-  search: Search
 
 docs:
   title: Electron Documentation
@@ -198,5 +197,4 @@ _404:
   please_file_an_issue: please file an issue.
 
 search:
-  title: Search
   description: Search within Electron documentations and community.
