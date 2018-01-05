@@ -1,7 +1,6 @@
 const docsEn = require('../../lib/i18n').docs['en-US']
 const npmPkgs = require('electron-npm-packages')
 const repos = require('repos-using-electron/lite')
-const { isArray } = require('util')
 
 const searchScores = {
   docs: [
@@ -28,7 +27,7 @@ const assignSearchScores = (type, input, keyword) => {
     let score = 0
     const re = new RegExp(keyword, 'gi')
     searchScores[type].forEach(rule => {
-      const src = isArray(entry[rule.field]) ? entry[rule.field].join(' ')
+      const src = Array.isArray(entry[rule.field]) ? entry[rule.field].join(' ')
         : entry[rule.field]
       score += src ? (src.match(re) || []).length * rule.weight : 0
     })
