@@ -19,6 +19,16 @@ const searchScores = {
   ]
 }
 
+const trim = (arr) => {
+  // TODO: use real pagination to eliminate use of an entirely arbituary
+  // limit that's totally not the answer to life, the universe and everything
+  const limit = 42
+  if (arr.length < limit) {
+    return arr
+  }
+  return arr.splice(arr.length - limit, arr.length - limit)
+}
+
 const assignSearchScores = (type, input, keyword) => {
   if (!searchScores[type]) {
     return input
@@ -51,20 +61,20 @@ const resolvers = {
     if (!filter) {
       return docs
     }
-    return filterByKeyword('docs', docs, filter)
+    return trim(filterByKeyword('docs', docs, filter))
   },
   npmPackages: ({ filter }) => {
     if (!filter) {
       return npmPkgs
     } else {
-      return filterByKeyword('npm', npmPkgs, filter)
+      return trim(filterByKeyword('npm', npmPkgs, filter))
     }
   },
   repos: ({ filter }) => {
     if (!filter) {
       return repos
     } else {
-      return filterByKeyword('repos', repos, filter)
+      return trim(filterByKeyword('repos', repos, filter))
     }
   }
 }
