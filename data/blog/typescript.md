@@ -4,7 +4,7 @@ author: zeke
 date: '2017-06-01'
 ---
 
-The `electron` npm package now includes a TypeScript definition file that provides detailed annotations of the entire Electron API. These annotation can improve your Electron development
+The `electron` npm package now includes a TypeScript definition file that provides detailed annotations of the entire Electron API. These annotations can improve your Electron development
 experience **even if you're writing vanilla JavaScript**. Just
 `npm install electron` to get up-to-date Electron typings in your project.
 
