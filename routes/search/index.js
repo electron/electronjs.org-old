@@ -4,6 +4,11 @@ const resolvers = require('./resolvers')
 const operations = require('./operations')
 
 module.exports = (req, res) => {
+
+  if (!req.query.query) {
+    return res.render('search', Object.assign({}, req.context, { query: null }))
+  }
+
   let searchOps = []
   if (!req.params.searchIn) {
     searchOps = operations
