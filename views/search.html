@@ -11,8 +11,8 @@
     name="query"
     value="{{query.query}}"
   >
-  <button class="btn-link my-2 ml-4">
-    <span class="octicon octicon-arrow-right" type="submit"></span>
+  <button class="btn-link my-2 ml-4" type="submit">
+    <span class="octicon octicon-search"></span>
   </button>
 </form>
 {{/inline}}
@@ -37,14 +37,10 @@
     </div>
   </section>
 {{else}}
-  <div class="subtron">
-    <div class="container-narrow">
-      <h1>Search</h1>
-      <p class="lead mb-3">Look for Electron related content.</p>
-    </div>
-  </div>
+
   <section class="page-section">
     <div class="container-narrow">
+      <p class="lead m-3 text-center">{{localized.search.description}}</p>
       {{> searchForm}}
     </div>
   </section>
