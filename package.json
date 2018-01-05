@@ -62,7 +62,7 @@
     "platform-utils": "^1.0.0",
     "primer-breadcrumb": "1.0.2",
     "query-string": "^5.0.0",
-    "repos-using-electron": "^1.11.0",
+    "repos-using-electron": "github:electron/repos-using-electron",
     "require-dir": "^0.3.2",
     "require-directory": "^2.1.1",
     "require-yaml": "0.0.1",

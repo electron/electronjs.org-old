@@ -26,7 +26,8 @@ module.exports = (req, res) => {
       searchOp,
       // FIXME: use real pagination
       resultsNum: results.data[searchOp.name].length,
-      results: req.params.searchIn ? results.data[searchOp.name] : results.data[searchOp.name].slice(0, 5)
+      results: (req.params.searchIn || req.query.json !== undefined) ?
+                results.data[searchOp.name] : results.data[searchOp.name].slice(0, 5)
     }
   })).then((searchResults) => {
     if (req.query.json !== undefined) {

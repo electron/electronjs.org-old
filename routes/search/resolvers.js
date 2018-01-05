@@ -1,5 +1,6 @@
 const docsEn = require('../../lib/i18n').docs['en-US']
 const npmPkgs = require('electron-npm-packages')
+const repos = require('repos-using-electron/lite')
 const { isArray } = require('util')
 
 const searchScores = {
@@ -11,6 +12,10 @@ const searchScores = {
   npm: [
     { field: 'name', weight: 10 },
     { field: 'keywords', weight: 2 },
+    { field: 'description', weight: 5 },
+  ],
+  repos: [
+    { field: 'fullName', weight: 10 },
     { field: 'description', weight: 5 },
   ]
 }
@@ -54,6 +59,13 @@ const resolvers = {
       return npmPkgs
     } else {
       return filterByKeyword('npm', npmPkgs, filter)
+    }
+  },
+  repos: ({ filter }) => {
+    if (!filter) {
+      return repos
+    } else {
+      return filterByKeyword('repos', repos, filter)
     }
   }
 }

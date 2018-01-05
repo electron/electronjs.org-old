@@ -37,6 +37,14 @@ module.exports = buildSchema(`
     totalDeps: Int
   }
 
+  type Repo {
+    fullName: String!
+    description: String
+    forksCount: Int!
+    stargazersCount: Int!
+    subscribersCount: Int!
+  }
+
   type User {
     name: String
     email: String
@@ -45,5 +53,6 @@ module.exports = buildSchema(`
   type Query {
     docs(filter: String, id: String): [Doc!]
     npmPackages(filter: String): [NpmPackage!]
+    repos(filter: String): [Repo!]
   }
 `)

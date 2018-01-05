@@ -24,5 +24,15 @@ module.exports = [
       }
     }`,
     partial: 'search/npmPackages'
+  }, {
+    name: 'repos',
+    displayName: 'Github Repos',
+    query: `query FilterRepos($filter: String) {
+      repos(filter: $filter){
+        fullName
+        description
+      }
+    }`,
+    partial: 'search/npmPackages'
   }
 ]
