@@ -33,6 +33,6 @@ module.exports = [
         description
       }
     }`,
-    partial: 'search/npmPackages'
+    partial: 'search/repos'
   }
 ]
