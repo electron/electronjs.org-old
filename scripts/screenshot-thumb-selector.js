@@ -8,16 +8,17 @@ module.exports = function () {
     return
   }
 
-  function chooseThumb(thumbSrc) {
+  function chooseThumb(thumbImg) {
     return function () {
-      activeScreenshot.src = thumbSrc
+      activeScreenshot.src = thumbImg.src
+      activeScreenshot.alt = thumbImg.alt
     }
   }
 
   for (let i = 0; i < thumbs.length; i++) {
     const thumbImg = thumbs[i].querySelector('img')
-    thumbs[i].addEventListener('click', chooseThumb(thumbImg.src))
+    thumbs[i].addEventListener('click', chooseThumb(thumbImg))
   }
 
-  chooseThumb(thumbs[0].querySelector('img').src)()
+  chooseThumb(thumbs[0].querySelector('img'))()
 }

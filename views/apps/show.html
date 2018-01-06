@@ -147,12 +147,12 @@
         {{/if}}
         <div class="app-box app-screenshots">
           <div class="active-screenshot">
-            <img />
+            <img alt="not_used" />
           </div>
           <div class="all-screenshots">
             {{#each app.screenshots}}
               <div class="app-screenshot-thumb">
-                <img src="{{imageUrl}}" class="{{#if caption}}caption{{/if}}"></img>
+                <img alt="{{#if caption}}{{caption}}{{else}}Screenshot{{/if}}" src="{{imageUrl}}" class="{{#if caption}}caption{{/if}}"></img>
                 {{#if caption}}
                   <span class="app-screenshot-caption">
                     {{caption}}
