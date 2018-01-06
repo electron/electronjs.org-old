@@ -52,155 +52,123 @@
       <li class="breadcrumb-item breadcrumb-item-selected text-small text-gray" aria-current="page">{{app.name}}</li>
     </ol>
   </nav> -->
-  <div class="container-narrow media-fluid">
+  <div class="container media-fluid">
     <header class="app-header">
-      <img class='app-logo' src='/node_modules/electron-apps/apps/{{app.slug}}/{{app.icon128}}' alt='{{app.name}}'>
-      <a class="app-link" href="{{app.website}}">
-        <h1 class='app-name'>{{app.name}}</h1>
-      </a>
-      <p class="app-description">
-        {{app.description}}
-      </p>
-    </header>
-
-    {{#each app.screenshots}}
-      <figure class="app-screenshot">
-        <a href="{{../app.website}}">
-          <img src="{{imageUrl}}"></img>
-        </a>
-        {{#if caption}}
-          <figcaption class="text-center">
-            {{caption}}
-          </figcaption>
-        {{/if}}
-      </figure>
-    {{/each}}
-
-    <table class="app-details">
-
-      {{#if app.website}}
-        <tr>
-          <td>Website</td>
-          <td><a href="{{app.website}}">{{app.website}}</a></td>
-        </tr>
-      {{/if}}
-
-      {{#if app.repository}}
-        <tr>
-          <td>Repository</td>
-          <td><a href="{{app.repository}}">{{app.repository}}</a></td>
-        </tr>
-      {{/if}}
-
-      <tr>
-          <td>Category</td>
-          <td><a href="/apps?category={{app.categorySlug}}">{{app.category}}</a></td>
-        </tr>
-
-      {{#if app.keywords}}
-        <tr>
-          <td>Keywords</td>
-          <td>
-            {{#each app.keywords}}
-              <a class="app-keyword" href="/apps?q={{this}}">{{this}}</a>
-            {{/each}}
-          </td>
-        </tr>
-      {{/if}}
-
-
-      {{#if app.license}}
-        <tr>
-          <td>License</td>
-          <td>{{app.license}}</td>
-        </>
-      {{/if}}
-
-      <!-- {{#if app.locales}}
-        <tr>
-          <td>Languages</td>
-          <td>
-            {{#each app.locales}}
-              {{this}}
-            {{/each}}
-          </td>
-        </tr>
-      {{/if}} -->
-
-      {{#if app.homebrewCaskName}}
-        <tr class="darwin-only display-table-row">
-          <td>
-            <a href="https://caskroom.github.io/">Homebrew</a>
-          </td>
-          <td>
-            <span class="shell-one-liner">brew cask install {{app.homebrewCaskName}}</span>
-          </td>
-        </tr>
-      {{/if}}
-
-      {{#if app.latestRelease}}
-        {{#if app.latestRelease.assets}}
-          <tr>
-            <td>
-              Downloads
-            </td>
-            <td>
-              {{#each app.latestRelease.assets}}
-                <a class="app-download {{this.platform}}" href="{{this.browser_download_url}}">{{this.name}}</a>
-              {{/each}}
-
-              <a href="{{app.latestRelease.html_url}}" id="view-all-downloads" style="opacity:0.7;font-size:80%;display:none;">View all {{app.latestRelease.assets.length}} files</a>
-            </td>
-          </tr>
-        {{/if}}
-        
-        <tr>
-          <td>
-            Latest Release
-          </td>
-          <td>
-            <a href="{{app.latestRelease.html_url}}">
-              {{app.latestRelease.name}}
-              <span class="app-tagname">({{app.latestRelease.tag_name}})</span>
-            </a>
-          </td>
-        </tr>
-
-        <tr>
-          <td>Release Notes
-          </td>
-          <td>
-            {{{app.latestRelease.body_html}}}
-          </td>
-        </tr>
-      {{/if}}
-    </table>
-
-    {{#if app.readmeCleaned}}
-      <div class="app-readme-wrapper">
-        <header class="app-readme-header">
-          <button class="app-readme-button btn btn-lg btn-outline-themed" type="button" id="display-readme">
-            View the {{app.name}} README <span id="display-readme-icon" class="octicon octicon-chevron-down ml-2"></span>
-          </button>
-        </header>
-        <main id="readme" class="app-readme d-none">
-          {{{app.readmeCleaned}}}
-        </main>
+      <div class="left-bar">
+        <img class='app-logo' src='/node_modules/electron-apps/apps/{{app.slug}}/{{app.icon128}}' alt='{{app.name}}'>
       </div>
-    {{/if}}
+      <div class="app-title">
+        <a class="app-link" href="{{app.website}}">
+          <h1 class='app-name'>{{app.name}}</h1>
+        </a>
+        <p class="app-description">
+          {{app.description}}
+        </p>
+      </div>
+    </header>
+    <div class="app-container">
+      <main class="left-bar">
+        <div class="app-meta">
 
+          {{#if app.website}}
+            <div class="app-meta-entry">
+              <h5>Website</h5>
+              <a href="{{app.website}}">{{app.website}}</a>
+            </div>
+          {{/if}}
+
+          {{#if app.repository}}
+            <div class="app-meta-entry">
+              <h5>Repository</h5>
+              <a href="{{app.repository}}">{{app.repository}}</a>
+            </div>
+          {{/if}}
+
+          <div class="app-meta-entry">
+            <h5>Category</h5>
+            <a href="/apps?category={{app.categorySlug}}">{{app.category}}</a>
+          </div>
+
+          {{#if app.latestRelease}}
+            {{#if app.latestRelease.assets}}
+              <div class="app-meta-entry">
+                <h5>Downloads ({{app.latestRelease.tag_name}})</h5>
+
+                {{#each app.latestRelease.assets}}
+                  <a class="app-download {{this.platform}}" href="{{this.browser_download_url}}">{{this.name}}</a>
+                {{/each}}
+
+                <a href="{{app.latestRelease.html_url}}" id="view-all-downloads" style="opacity:0.7;font-size:80%;display:none;">View all {{app.latestRelease.assets.length}} files</a>
+              </div>
+            {{/if}}
+          {{/if}}
+
+          {{#if app.homebrewCaskName}}
+            <div class="darwin-only app-meta-entry">
+              <h5>Homebrew</h5>
+              <span class="shell-one-liner" style="margin-top: 4px;display: block;">brew cask install {{app.homebrewCaskName}}</span>
+            </tr>
+          {{/if}}
+
+          {{#if app.keywords}}
+            <div class="app-meta-entry">
+              <h5>Keywords</h5>
+              {{#each app.keywords}}
+                <a class="app-keyword" href="/apps?q={{this}}">{{this}}</a>
+              {{/each}}
+            </div>
+          {{/if}}
+
+
+          {{#if app.license}}
+            <div class="app-meta-entry">
+              <h5>License</h5>
+              <span>{{app.license}}</span>
+            </div>
+          {{/if}}
+
+          {{#if app.latestRelease}}
+            <div class="app-meta-entry">
+              <h5>Latest Release</h5>
+              <a href="{{app.latestRelease.html_url}}">
+                {{app.latestRelease.name}}
+                <span class="app-tagname">({{app.latestRelease.tag_name}})</span>
+              </a>
+            </div>
+          {{/if}}
+
+        </div>
+      </main>
+      <div class="app-boxes">
+        {{#if app.readmeCleaned}}
+          <main id="readme" class="app-box app-readme">
+            {{{app.readmeCleaned}}}
+          </main>
+        {{/if}}
+        <div class="app-box app-screenshots">
+          <div class="active-screenshot">
+            <img />
+          </div>
+          <div class="all-screenshots">
+            {{#each app.screenshots}}
+              <div class="app-screenshot-thumb">
+                <img src="{{imageUrl}}" class="{{#if caption}}caption{{/if}}"></img>
+                {{#if caption}}
+                  <span class="app-screenshot-caption">
+                    {{caption}}
+                  </span>
+                {{/if}}
+              </div>
+            {{/each}}
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <p class="text-center">
+  <p class="text-center something-missing">
     {{localized.apps.something_missing}}
     <a href="https://github.com/electron/electron-apps/tree/master/apps/{{app.slug}}/{{app.slug}}.yml">{{localized.apps.edit_this_app}}</a>
   </p>
 
 </section>
-
-<script>
-  document.getElementById('display-readme').addEventListener('click', function(event) {
-    this.classList.add('d-none');
-    document.getElementById('readme').classList.remove('d-none');
-  });
-</script>

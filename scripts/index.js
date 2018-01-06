@@ -10,4 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
   require('./lazy-load-images')()
   require('browser-date-formatter')()
   require('./copy-code-to-clipboard')()
+  require('./sticky-app-meta')()
+  require('./screenshot-thumb-selector')()
 })
