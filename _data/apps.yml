@@ -1227,7 +1227,7 @@
 -
   name: "HostsDock"
   description: "Store, manage and switch your hosts easily"
-  website: "https://github.com/eshengsky/HostsDock"
+  website: "https://eshengsky.github.io/HostsDock/"
   repository: "https://github.com/eshengsky/HostsDock"
   keywords:
     - "HostsDock"
@@ -1237,3 +1237,16 @@
     - "hosts"
   license: "MIT"
   icon: "hostsdock.png"
+  -
+  name: "Mocker"
+  description: "HTTP/HTTPS mock tool, support for Browser and local server"
+  website: "https://github.com/eshengsky/Mocker"
+  repository: "https://github.com/eshengsky/Mocker"
+  keywords:
+    - "mock"
+    - "mock-server"
+    - "mock-data"
+    - "electron"
+    - "electron-app"
+  license: "MIT"
+  icon: "mocker.png"
