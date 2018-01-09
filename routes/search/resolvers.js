@@ -19,15 +19,9 @@ const searchScores = {
   ]
 }
 
-const trim = (arr) => {
-  // TODO: use real pagination to eliminate use of an entirely arbituary
-  // limit that's totally not the answer to life, the universe and everything
-  const limit = 42
-  if (arr.length < limit) {
-    return arr
-  }
-  return arr.splice(arr.length - limit, arr.length - limit)
-}
+// TODO: use real pagination to eliminate use of an entirely arbituary
+// limit that's totally not the answer to life, the universe and everything
+const trim = (arr) => arr.splice(0, 42)
 
 const assignSearchScores = (type, input, keyword) => {
   if (!searchScores[type]) {
@@ -59,20 +53,20 @@ const resolvers = {
     }
     const docs = Object.keys(docsEn).map((key) => docsEn[key])
     if (!filter) {
-      return docs
+      return trim(docs)
     }
     return trim(filterByKeyword('docs', docs, filter))
   },
   npmPackages: ({ filter }) => {
     if (!filter) {
-      return npmPkgs
+      return trim(npmPkgs)
     } else {
       return trim(filterByKeyword('npm', npmPkgs, filter))
     }
   },
   repos: ({ filter }) => {
     if (!filter) {
-      return repos
+      return trim(repos)
     } else {
       return trim(filterByKeyword('repos', repos, filter))
     }
