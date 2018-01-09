@@ -4,49 +4,44 @@ const chai = require('chai')
 chai.should()
 const proxyquire = require('proxyquire').noCallThru()
 
-const npmStub = new Array(50).fill({
-  name: 'package name',
-  keywords: 'keywords',
-  description: 'description'
-}).concat([{
-  name: 'Babel Fish',
-  keywords: 'babel fish',
-  description: 'The Babel fish is small, yellow, leech-like, and probably the oddest thing in the Universe.'
-}, {
-  name: 'Babel Fish',
-  keywords: 'babel fish',
-  description: ''
-}])
-
-const repoStub = new Array(50).fill({
-  fullName: 'repo name',
-  description: 'description'
-}).concat([{
-  fullName: 'Hitchhikers/Babel-Fish',
-  description: 'The Babel fish is small, yellow, leech-like, and probably the oddest thing in the Universe.'
-}])
-
-const docStub = {
-  docs: {
-    'en-US': {
-      1: {
-        title: 'title',
-        description: 'description',
-        markdown: 'markdown'
-      },
-      2: {
-        title: 'Babel Fish',
-        description: 'The Babel fish is small, yellow, leech-like, and probably the oddest thing in the Universe.',
-        markdown: 'markdown'
+describe('resolvers for search functionality', () => {
+  let resolvers
+  before(() => {
+    const npmStub = new Array(50).fill({
+      name: 'package name',
+      keywords: 'keywords',
+      description: 'description'
+    }).concat([{
+      name: 'Babel Fish',
+      keywords: 'babel fish',
+      description: 'The Babel fish is small, yellow, leech-like, and probably the oddest thing in the Universe.'
+    }, {
+      name: 'Babel Fish',
+      keywords: 'babel fish'
+    }])
+    const repoStub = new Array(50).fill({
+      fullName: 'repo name',
+      description: 'description'
+    }).concat([{
+      fullName: 'Hitchhikers/Babel-Fish',
+      description: 'The Babel fish is small, yellow, leech-like, and probably the oddest thing in the Universe.'
+    }])
+    const docStub = {
+      docs: {
+        'en-US': {
+          1: {
+            title: 'title',
+            description: 'description',
+            markdown: 'markdown'
+          },
+          2: {
+            title: 'Babel Fish',
+            description: 'The Babel fish is small, yellow, leech-like, and probably the oddest thing in the Universe.',
+            markdown: 'markdown'
+          }
+        }
       }
     }
-  }
-}
-
-describe.only('resolvers for search functionality', () => {
-  let resolvers
-
-  before(() => {
     resolvers = proxyquire('../routes/search/resolvers', {
       '../../lib/i18n': docStub,
       'electron-npm-packages': npmStub,
