@@ -1,7 +1,7 @@
 module.exports = [
   {
     name: 'docs',
-    displayName: 'Documentations',
+    displayName: 'Documentation',
     query: `query FilterDocs($filter: String) {
       docs(filter: $filter){
         title
@@ -16,14 +16,14 @@ module.exports = [
     partial: 'search/docs'
   }, {
     name: 'npmPackages',
-    displayName: 'NPM Packages',
+    displayName: 'npm Packages',
     query: `query FilterNpmPackages($filter: String) {
       npmPackages(filter: $filter){
         name
         description
       }
     }`,
-    partial: 'search/npmPackages'
+    partial: 'search/npm-packages'
   }, {
     name: 'repos',
     displayName: 'Github Repos',

@@ -30,9 +30,10 @@ const assignSearchScores = (type, input, keyword) => {
   return input.map((entry) => {
     let score = 0
     const re = new RegExp(keyword, 'gi')
-    searchScores[type].forEach(rule => {
-      const src = Array.isArray(entry[rule.field]) ? entry[rule.field].join(' ')
-        : entry[rule.field]
+    searchScores[type].forEach((rule) => {
+      // turn fields that are arrays (e.g. keywords) into regex-able strings
+      const src = Array.isArray(entry[rule.field]) ?
+        entry[rule.field].join(' ') : entry[rule.field]
       score += src ? (src.match(re) || []).length * rule.weight : 0
     })
     entry.score = score
