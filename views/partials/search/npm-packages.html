@@ -1,0 +1,8 @@
+<ul class="search-results mx-0">
+  {{#each results}}
+    <li class="my-3">
+      <a class="text-bold" href="https://www.npmjs.com/package/{{this.name}}" target="_blank">{{this.name}}</a>
+      <p class="description">{{this.description}}</p>
+    </li>
+  {{/each}}
+</ul>

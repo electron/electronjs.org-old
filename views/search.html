@@ -1,0 +1,46 @@
+{{#*inline "searchForm"}}
+<form class="search-form">
+  <input
+    class="col-sm-8 col-xs-12 px-4 py-3 my-2"
+    placeholder="> search_term"
+    type="search"
+    autofocus="on"
+    autocorrect="off"
+    method="get"
+    name="q"
+    value="{{query.q}}"
+  >
+  <button class="btn-link my-2 ml-4" type="submit">
+    <span class="octicon octicon-search"></span>
+  </button>
+</form>
+{{/inline}}
+
+{{#if query.q}}
+  <section class="page-section">
+    <div class="container-narrow search-results">
+      {{> searchForm}}
+      <h4 class="mb-4">Search Results for <i>"{{query.q}}"</i></h4>
+      {{#each searchResults}}
+      <div>
+        <h2>{{searchOp.displayName}} ({{resultsNum}})</h2>
+
+        {{> (lookup searchOp 'partial')}}
+
+        {{#unless ../searchIn}}
+          <div class="mt-3"><a href="search/{{searchOp.name}}?q={{../query.q}}">View all results from {{searchOp.displayName}}&nbsp<span class="octicon octicon-arrow-small-right"></span></a></div>
+        {{/unless}}
+      </div>
+      <hr></hr>
+      {{/each}}
+    </div>
+  </section>
+{{else}}
+
+  <section class="page-section">
+    <div class="container-narrow">
+      <p class="lead m-3 text-center">{{localized.search.description}}</p>
+      {{> searchForm}}
+    </div>
+  </section>
+{{/if}}

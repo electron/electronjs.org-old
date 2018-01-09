@@ -1,0 +1,28 @@
+ul.search-results {
+  list-style: none
+}
+
+p.description {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+span.label {
+  font-size: 0.8em;
+  display: inline-block;
+  color: $main-color-subtle;
+  border: 1px solid $main-border-color;
+  border-radius: 3px;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+}
+
+.search-results {
+  .search-form {
+    justify-content: left
+  }
+}

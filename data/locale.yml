@@ -31,9 +31,9 @@ languages:
 community:
   title: Electron Community
   description:
-    Tools, boilerplates, videos, and more from Electron's 
-    <a href="https://github.com/sindresorhus/awesome-electron">awesome</a> 
-    open-source contributors. Find or add 
+    Tools, boilerplates, videos, and more from Electron's
+    <a href="https://github.com/sindresorhus/awesome-electron">awesome</a>
+    open-source contributors. Find or add
     <a href="/community#meetups">meetups</a> near you.
   tools: Tools
   boilerplates: Boilerplates
@@ -46,7 +46,7 @@ community:
     <br> Something missing?
     <a href="https://github.com/sindresorhus/awesome-electron/blob/master/contributing.md">Make a pull request</a>.
   meetup_notice:
-    To add a meetup, edit <code>data/meetups.json</code> and 
+    To add a meetup, edit <code>data/meetups.json</code> and
     <a href="https://github.com/electron/electronjs.org/tree/master/data/meetups.json">make a pull request</a>.
 
 electron_is_easy:
@@ -195,3 +195,6 @@ _404:
   page_not_found: Page not found.
   if_this_is_an_error: If this is an error
   please_file_an_issue: please file an issue.
+
+search:
+  description: Search within Electron documentations and community.
