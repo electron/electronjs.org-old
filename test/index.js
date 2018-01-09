@@ -356,14 +356,14 @@ describe('electronjs.org', () => {
       $('search-results').length.should.equal(0)
     })
     test('shows no more than 5 results from each of the 3 sources when there is query', async() => {
-      const $ = await get('/search?query=ipc')
+      const $ = await get('/search?q=ipc')
       $('ul.search-results').length.should.equal(3)
       $('ul.search-results').each((i, elem) => {
         $(elem).children('li').length.should.be.at.most(5)
       })
     })
     test('shows results from one source if specified', async () => {
-      const $ = await get('/search/docs?query=ipc')
+      const $ = await get('/search/docs?q=ipc')
       $('ul.search-results').length.should.equal(1)
     })
   })

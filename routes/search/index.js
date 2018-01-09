@@ -4,7 +4,7 @@ const resolvers = require('./resolvers')
 const operations = require('./operations')
 
 module.exports = (req, res) => {
-  if (!req.query.query) {
+  if (!req.query.q) {
     return res.render('search', Object.assign({}, req.context, { query: null }))
   }
 
@@ -24,7 +24,7 @@ module.exports = (req, res) => {
       searchOp.query,
       resolvers,
       null,
-      { filter: req.query.query }
+      { filter: req.query.q }
     )
     return {
       searchOp,
