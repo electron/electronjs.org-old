@@ -21,7 +21,7 @@ crawler.on('fetch404', (queueItem, response) => {
   console.warn(`ERROR(404) fetching ${queueItem.path} (referrer: ${queueItem.referrer.replace(host, '')})`)
 })
 
-crawler.on('complete', (error, url) => {
+crawler.on('complete', () => {
   console.log('fin')
   server.close()
 })
