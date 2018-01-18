@@ -35,6 +35,7 @@ module.exports = buildSchema(`
     dependents: [String]
     devDependents: [String]
     totalDeps: Int
+    sourcerank: Int
   }
 
   type Repo {
