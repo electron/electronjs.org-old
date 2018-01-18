@@ -62,7 +62,8 @@ const resolvers = {
     if (!filter) {
       return trim(npmPkgs)
     } else {
-      return trim(filterByKeyword('npm', npmPkgs, filter))
+      return trim(filterByKeyword('npm', npmPkgs, filter)
+                 .sort((a,b) => (b.sourcerank || 0) - (a.sourcerank || 0)))
     }
   },
   repos: ({ filter }) => {
