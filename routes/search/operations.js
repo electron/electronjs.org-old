@@ -21,6 +21,7 @@ module.exports = [
       npmPackages(filter: $filter){
         name
         description
+        sourcerank
       }
     }`,
     partial: 'search/npm-packages'

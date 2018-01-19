@@ -32,8 +32,8 @@ const assignSearchScores = (type, input, keyword) => {
     const re = new RegExp(keyword, 'gi')
     searchScores[type].forEach((rule) => {
       // turn fields that are arrays (e.g. keywords) into regex-able strings
-      const src = Array.isArray(entry[rule.field]) ?
-        entry[rule.field].join(' ') : entry[rule.field]
+      const src = Array.isArray(entry[rule.field])
+        ? entry[rule.field].join(' ') : entry[rule.field]
       score += src ? (src.match(re) || []).length * rule.weight : 0
     })
     entry.score = score
@@ -62,7 +62,8 @@ const resolvers = {
     if (!filter) {
       return trim(npmPkgs)
     } else {
-      return trim(filterByKeyword('npm', npmPkgs, filter))
+      return trim(filterByKeyword('npm', npmPkgs, filter)
+                 .sort((a, b) => (b.sourcerank || 0) - (a.sourcerank || 0)))
     }
   },
   repos: ({ filter }) => {
