@@ -9,7 +9,6 @@ crawler.parseScriptTags = false
 
 crawler.addFetchCondition((queueItem, referrerQueueItem, cb) => {
   cb(null, !queueItem.path.match(/\/images|styles\//gi))
-  // cb(null, queueItem.path.match(/\/docs\//gi))
 })
 
 crawler.discoverResources = (buffer, queueItem) => {
