@@ -267,10 +267,12 @@ describe('electronjs.org', () => {
     })
   })
 
-  test('/languages', async () => {
-    const $ = await get('/languages')
-    $('h1').text().should.eq('Languages')
-    $('body').text().should.include('global developer community')
+  describe('languages', () => {
+    test('/languages', async () => {
+      const $ = await get('/languages')
+      $('h1').text().should.eq('Languages')
+      $('body').text().should.include('global developer community')
+    })
   })
 
   test('redirects for date-style blog URLs', async () => {
