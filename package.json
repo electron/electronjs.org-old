@@ -14,7 +14,8 @@
     "release": "node script/release",
     "dev": "cross-env NODE_PATH=. nodemon -e js,scss,yml,md server.js",
     "prepack": "check-for-leaks",
-    "prepush": "check-for-leaks"
+    "prepush": "check-for-leaks",
+    "linkschecker": "NODE_PATH=. NODE_ENV=test node scripts/links-checker.js"
   },
   "dependencies": {
     "awesome-electron": "2.6.0",
@@ -84,6 +85,7 @@
     "mocha": "^5.0.0",
     "nock": "^9.1.3",
     "nodemon": "^1.12.1",
+    "simplecrawler": "^1.1.6",
     "standard": "^10.0.3",
     "supertest": "^3.0.0",
     "walk-sync": "^0.3.2"
