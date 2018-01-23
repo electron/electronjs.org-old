@@ -36,10 +36,25 @@
     </div>
   </section>
 {{else}}
-
   <section class="page-section">
     <div class="container-narrow">
-      <p class="lead m-3 text-center">{{localized.search.description}}</p>
+      <p class="lead m-4 text-center">
+        {{localized.search.description.start}}
+        {{#if searchIn}}
+          {{#eq searchIn 'docs'}}
+            {{{localized.search.description.docs}}}
+          {{/eq}}
+          {{#eq searchIn 'npmPackages'}}
+            {{{localized.search.description.npm}}}
+          {{/eq}}
+          {{#eq searchIn 'repos'}}
+            {{{localized.search.description.repos}}}
+          {{/eq}}.
+        {{else}}
+          {{{localized.search.description.docs}}},
+          {{{localized.search.description.npm}}}, {{localized.search.description.and}} {{{localized.search.description.repos}}}.
+        {{/if}}
+      </p>
       {{> searchForm}}
     </div>
   </section>
