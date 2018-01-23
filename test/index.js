@@ -2,12 +2,14 @@ require('make-promises-safe')
 const { describe, it, beforeEach, afterEach } = require('mocha')
 const test = it
 const supertest = require('supertest')
+const session = require('supertest-session')
 const nock = require('nock')
 const cheerio = require('cheerio')
 const chai = require('chai')
 const i18n = require('../lib/i18n')
 chai.should()
 chai.use(require('chai-cheerio'))
+const {expect} = chai
 const app = require('../server.js')
 
 async function get (route) {
@@ -275,11 +277,17 @@ describe('electronjs.org', () => {
     })
 
     test('language query param for one-off viewing in other languages', async () => {
-      let $ = await get('/docs/api/browser-window?language=fr-FR')
-      $('body').text().should.include('fenêtres')
+      const frenchContent = 'fenêtres'
+      const sesh = session(app)
 
-      $ = await get('/docs/api/browser-window')
-      $('body').text().should.not.include('fenêtres')
+      let res = await sesh.get('/docs/api/browser-window?lang=fr-FR')
+      let $ = cheerio.load(res.text)
+      $('blockquote').text().should.include(frenchContent)
+
+      // verify that the query param does not persist as a cookie
+      res = await sesh.get('/docs/api/browser-window')
+      $ = cheerio.load(res.text)
+      $('blockquote').text().should.not.include(frenchContent)
     })
   })
 
