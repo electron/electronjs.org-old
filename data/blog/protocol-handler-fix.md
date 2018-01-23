@@ -30,7 +30,7 @@ We urge all Electron developers to update their apps to the latest stable
 version immediately.
 
 If for some reason you are unable to upgrade your Electron version,
-you can append `--` as the last argument when calling `app.setAsDefaultProtocolClient`,
+you can append `--` as the last argument when calling [`app.setAsDefaultProtocolClient`],
 which prevents Chromium from parsing further options.
 The double dash `--` signifies the end of command options,
 after which only positional parameters are accepted.
