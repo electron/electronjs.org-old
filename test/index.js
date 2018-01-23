@@ -267,10 +267,20 @@ describe('electronjs.org', () => {
     })
   })
 
-  test('/languages', async () => {
-    const $ = await get('/languages')
-    $('h1').text().should.eq('Languages')
-    $('body').text().should.include('global developer community')
+  describe('languages', () => {
+    test('/languages', async () => {
+      const $ = await get('/languages')
+      $('h1').text().should.eq('Languages')
+      $('body').text().should.include('global developer community')
+    })
+
+    test('language query param for one-off viewing in other languages', async () => {
+      let $ = await get('/docs/api/browser-window?language=fr-FR')
+      $('body').text().should.include('fenêtres')
+
+      $ = await get('/docs/api/browser-window')
+      $('body').text().should.not.include('fenêtres')
+    })
   })
 
   test('redirects for date-style blog URLs', async () => {
