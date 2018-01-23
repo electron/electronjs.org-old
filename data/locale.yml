@@ -10,6 +10,7 @@ nav:
   contact: Contact
   languages: Languages
   code_of_conduct: Code of Conduct
+  search: Search
 
 docs:
   title: Electron Documentation
