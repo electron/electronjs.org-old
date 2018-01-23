@@ -9,7 +9,6 @@ const chai = require('chai')
 const i18n = require('../lib/i18n')
 chai.should()
 chai.use(require('chai-cheerio'))
-const {expect} = chai
 const app = require('../server.js')
 
 async function get (route) {
