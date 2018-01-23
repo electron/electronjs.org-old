@@ -22,7 +22,10 @@ macOS and Linux are **not vulnerable** to this issue.
 ## Mitigation
 
 We've published new versions of Electron which include fixes for 
-this vulnerability: `1.8.2-beta.4`, `1.7.11`, and `1.6.16`.
+this vulnerability: 
+[`1.8.2-beta.4`](https://github.com/electron/electron/releases/tag/v1.8.2-beta.4), 
+[`1.7.11`](https://github.com/electron/electron/releases/tag/v1.7.11), 
+and [`1.6.16`](https://github.com/electron/electron/releases/tag/v1.6.16).
 We urge all Electron developers to update their apps to the latest stable 
 version immediately:
 
