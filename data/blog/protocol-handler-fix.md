@@ -27,11 +27,7 @@ this vulnerability:
 [`1.7.11`](https://github.com/electron/electron/releases/tag/v1.7.11), 
 and [`1.6.16`](https://github.com/electron/electron/releases/tag/v1.6.16).
 We urge all Electron developers to update their apps to the latest stable 
-version immediately:
-
-```sh
-npm i electron@latest --save-dev
-```
+version immediately.
 
 If for some reason you are unable to upgrade your Electron version,
 you can append `--` as the last argument when calling `app.setAsDefaultProtocolClient`,
