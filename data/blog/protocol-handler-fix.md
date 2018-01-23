@@ -8,6 +8,8 @@ A remote code execution vulnerability has been discovered affecting
 Electron apps that use custom protocol handlers. This vulnerability has been 
 assigned the CVE identifier [CVE-2018-1000006].
 
+---
+
 ## Affected Platforms
 
 Electron apps designed to run on Windows that register themselves as the default 
