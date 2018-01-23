@@ -11,7 +11,7 @@ module.exports = function contextBuilder (req, res, next) {
   // This allows the language to be set per-request using a query param, so
   // folks can share a link like /docs/api/app?language=fr-FR and know that
   // the recipient will see the doc in that language, regardless of their
-  // language settings. If no query param is set, fall back to the default 
+  // language settings. If no query param is set, fall back to the default
   // language (or the one set in the cookie)
   const targetLanguage = req.query.language || req.language
 
