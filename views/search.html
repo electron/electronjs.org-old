@@ -24,9 +24,12 @@
 
       {{#each searchResults}}
         <div class="my-8">
-          <a href="search/{{searchOp.name}}?q={{../query.q}}">
-            <h2><span class="mega-octicon octicon-{{searchOp.octicon}} pr-3"></span>{{searchOp.displayName}} ({{resultsNum}})</h2>
-          </a>
+          
+          <h2>
+            <a href="search/{{searchOp.name}}?q={{../query.q}}"><span class="mega-octicon octicon-{{searchOp.octicon}} mr-1"></span></a>
+            <a href="search/{{searchOp.name}}?q={{../query.q}}">{{searchOp.displayName}}</a>
+            <span class="faint">({{resultsNum}})</span>
+          </h2>
           
           {{> (lookup searchOp 'partial')}}
 
