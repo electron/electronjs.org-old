@@ -1,11 +1,18 @@
 ul.search-results {
-  list-style: none
+  list-style: none;
+
+  li {
+    border-top: 1px solid $border-color;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1;
+  }
 }
 
-p.description {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
+span.description {
+  opacity: 0.7;
 }
 
 span.label {
@@ -14,6 +21,8 @@ span.label {
   color: $main-color-subtle;
   border: 1px solid $main-border-color;
   border-radius: 3px;
+  line-height: 1.8;
+  vertical-align: inherit;
 }
 
 .search-form {
