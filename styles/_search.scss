@@ -25,6 +25,14 @@ span.label {
   vertical-align: inherit;
 }
 
+.faint {
+  opacity: 0.6;
+}
+
+h2 .faint {
+  opacity: 0.4;
+}
+
 .search-form {
   display: flex;
   justify-content: center;
