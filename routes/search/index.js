@@ -5,7 +5,10 @@ const operations = require('./operations')
 
 module.exports = (req, res) => {
   if (!req.query.q) {
-    return res.render('search', Object.assign({}, req.context, { query: null }))
+    return res.render('search', Object.assign({}, req.context, {
+      searchIn: req.params.searchIn,
+      query: null
+    }))
   }
 
   let searchOps = []

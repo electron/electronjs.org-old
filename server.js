@@ -1,3 +1,5 @@
+require('make-promises-safe')
+
 const argv = require('minimist')(process.argv.slice(2))
 const path = require('path')
 const i18n = require('./lib/i18n')
