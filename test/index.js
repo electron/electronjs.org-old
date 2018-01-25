@@ -42,6 +42,13 @@ describe('electronjs.org', () => {
     })
   })
 
+  describe('stylesheets', () => {
+    test('main stylesheet compiles', async () => {
+      const res = await supertest(app).get('/styles/index.css')
+      res.statusCode.should.eq(200)
+    })
+  })
+
   describe('homepage', () => {
     test('displays featured apps, version numbers, and CoC link', async () => {
       const $ = await get('/')
