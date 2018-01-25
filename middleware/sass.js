@@ -6,6 +6,7 @@ module.exports = function () {
     src: path.join(__dirname, '../styles'),
     response: true,
     debug: true,
+    includePaths: path.join(__dirname, '../node_modules'),
     // outputStyle: 'compressed',
     prefix: '/styles'
   })
