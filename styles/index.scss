@@ -49,7 +49,7 @@ $octicons-font-path: "../bower_components/octicons/octicons/";
 @import "../bower_components/basecoat/scss/page-headers";
 @import "../bower_components/basecoat/scss/section";
 @import "../bower_components/basecoat/scss/tables";
-@import "../node_modules/primer-breadcrumb/lib/breadcrumb";
+@import "primer-breadcrumb/index.scss";
 
 // Devicon
 @import "vendor/devicon/devicon.css";
