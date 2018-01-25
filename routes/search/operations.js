@@ -1,7 +1,8 @@
 module.exports = [
   {
     name: 'docs',
-    displayName: 'Documentation',
+    displayName: 'Docs',
+    octicon: 'file-text',
     query: `query FilterDocs($filter: String) {
       docs(filter: $filter){
         title
@@ -17,6 +18,7 @@ module.exports = [
   }, {
     name: 'npmPackages',
     displayName: 'npm Packages',
+    octicon: 'package',
     query: `query FilterNpmPackages($filter: String) {
       npmPackages(filter: $filter){
         name
@@ -28,6 +30,7 @@ module.exports = [
   }, {
     name: 'repos',
     displayName: 'Github Repos',
+    octicon: 'mark-github',
     query: `query FilterRepos($filter: String) {
       repos(filter: $filter){
         fullName

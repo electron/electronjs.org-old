@@ -1,6 +1,6 @@
 <ul class="search-results mx-0">
   {{#each results}}
-    <li class="my-3">
+    <li class="py-3">
       <a class="text-bold" href="{{this.href}}">{{this.title}}</a>
       <span class="label px-2 mx-2">
         {{#if isApiDoc}}API{{/if}}
@@ -8,7 +8,7 @@
         {{#if isDevTutorial}}Development{{/if}}
         {{#if isTutorial}}Tutorial{{/if}}
       </span>
-      <p class="description">{{description}}</p>
+      <span class="description">{{description}}</span>
     </li>
   {{/each}}
 </ul>

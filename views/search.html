@@ -1,12 +1,12 @@
 {{#*inline "searchForm"}}
-<form class="search-form">
+<form action="/search" method="get" class="search-form">
   <input
-    class="col-sm-8 col-xs-12 px-4 py-3 my-2"
+    class="col-sm-8 col-xs-12 px-3 py-3 my-2"
     placeholder="> search_term"
     type="search"
     autofocus="on"
+    autocapitalize="off"
     autocorrect="off"
-    method="get"
     name="q"
     value="{{query.q}}"
   >
@@ -20,26 +20,46 @@
   <section class="page-section">
     <div class="container-narrow search-results">
       {{> searchForm}}
-      <h4 class="mb-4">Search Results for <i>"{{query.q}}"</i></h4>
+      <h4 class="mb-4">Search Results for <i>&ldquo;{{query.q}}&rdquo;</i></h4>
+
       {{#each searchResults}}
-      <div>
-        <h2>{{searchOp.displayName}} ({{resultsNum}})</h2>
+        <div class="my-8">
+          
+          <h2>
+            <a href="search/{{searchOp.name}}?q={{../query.q}}"><span class="mega-octicon octicon-{{searchOp.octicon}} mr-1"></span></a>
+            <a href="search/{{searchOp.name}}?q={{../query.q}}">{{searchOp.displayName}}</a>
+            <span class="faint">({{resultsNum}})</span>
+          </h2>
+          
+          {{> (lookup searchOp 'partial')}}
 
-        {{> (lookup searchOp 'partial')}}
-
-        {{#unless ../searchIn}}
-          <div class="mt-3"><a href="search/{{searchOp.name}}?q={{../query.q}}">View all results from {{searchOp.displayName}}&nbsp<span class="octicon octicon-arrow-small-right"></span></a></div>
-        {{/unless}}
-      </div>
-      <hr></hr>
+          {{#unless ../searchIn}}
+            <div class="mt-3"><a href="search/{{searchOp.name}}?q={{../query.q}}">View more results &nbsp;<span class="octicon octicon-arrow-small-right"></span></a></div>
+          {{/unless}}
+        </div>
       {{/each}}
     </div>
   </section>
 {{else}}
-
   <section class="page-section">
     <div class="container-narrow">
-      <p class="lead m-3 text-center">{{localized.search.description}}</p>
+      <p class="lead m-4 text-center">
+        {{localized.search.description.start}}
+        {{#if searchIn}}
+          {{#eq searchIn 'docs'}}
+            {{{localized.search.description.docs}}}.
+          {{/eq}}
+          {{#eq searchIn 'npmPackages'}}
+            {{{localized.search.description.npm}}}.
+          {{/eq}}
+          {{#eq searchIn 'repos'}}
+            {{{localized.search.description.repos}}}.
+          {{/eq}}
+        {{else}}
+          {{{localized.search.description.docs}}},
+          {{{localized.search.description.npm}}}, {{localized.search.description.and}} {{{localized.search.description.repos}}}.
+        {{/if}}
+      </p>
       {{> searchForm}}
     </div>
   </section>
