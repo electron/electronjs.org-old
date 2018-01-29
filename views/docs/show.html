@@ -1,1 +1,41 @@
-{{{doc.html}}}
+{{#each doc.html}}
+  {{#with (lookup ../docEn.html @index)}}
+
+    {{#if ../../currentLocale}}
+      <div class="sub-section" data-name="{{name}}" data-lang="{{../../currentLocale}}">
+        {{{../html}}}
+      </div>
+
+      <div class="sub-section hidden" data-name="{{name}}" data-lang="en-US">
+        {{{html}}}
+      </div>
+    {{else}}
+      <div class="sub-section" data-name="{{name}}" data-lang="en-US">
+        {{{html}}}
+      </div>
+    {{/if}}
+
+  {{/with}}
+{{/each}}
+
+
+<script>
+  var secs = Array.from(document.getElementsByClassName('sub-section'))
+  secs.forEach(sec => {
+    sec.addEventListener('click', (e) => {
+      var el = e.target
+      var selector = 'div.sub-section'
+      while (el) {
+        if (el.matches(selector)) {
+          break
+        }
+        el = el.parentElement;
+      }
+      var otherEl = document.querySelector(`[data-name=${el.dataset.name}].hidden`)
+      if (otherEl) {
+        otherEl.classList.remove("hidden")
+        el.classList.add('hidden')
+      }
+    }, false);
+  })
+</script>

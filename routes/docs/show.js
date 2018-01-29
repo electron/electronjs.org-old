@@ -6,6 +6,7 @@ module.exports = (req, res, next) => {
 
   const context = Object.assign(req.context, {
     doc: doc,
+    docEn: i18n.docs['en-US'][req.path],
     page: {
       title: `${doc.title} | Electron`,
       description: doc.description,
