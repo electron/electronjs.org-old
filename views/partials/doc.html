@@ -1,0 +1,9 @@
+<div class="sub-section" data-name="{{name}}" data-lang="{{currentLocale}}">
+  {{{html}}}
+</div>
+
+{{#unless viewingAllDocs}}
+  <div class="sub-section hidden" data-name="{{name}}" data-lang="en-US">
+    {{{docEn.html}}}
+  </div>
+{{/unless}}

@@ -1,21 +1,9 @@
 {{#each doc.html}}
-  {{#with (lookup ../docEn.html @index)}}
-
-    {{#if ../../currentLocale}}
-      <div class="sub-section" data-name="{{name}}" data-lang="{{../../currentLocale}}">
-        {{{../html}}}
-      </div>
-
-      <div class="sub-section hidden" data-name="{{name}}" data-lang="en-US">
-        {{{html}}}
-      </div>
-    {{else}}
-      <div class="sub-section" data-name="{{name}}" data-lang="en-US">
-        {{{html}}}
-      </div>
-    {{/if}}
-
-  {{/with}}
+  {{> doc
+    doc=this
+    docEn=(lookup ../docEn.html @index)
+    currentLocale=../currentLocale
+  }}
 {{/each}}
 
 
@@ -36,6 +24,6 @@
         otherEl.classList.remove("hidden")
         el.classList.add('hidden')
       }
-    }, false);
+    }, false)
   })
 </script>
