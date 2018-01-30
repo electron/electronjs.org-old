@@ -1,8 +1,9 @@
 module.exports = function() {
+  // don't add any listener if there isn't at least 1 non-english section
   if (document.querySelectorAll('.docs div.sub-section:not([data-lang="en-US"])').length > 0) {
-    const sections = Array.from(document.querySelectorAll('.docs div.sub-section'))
-    sections.forEach(sec => {
-      sec.addEventListener('click', (e) => {
+    const toggles = Array.from(document.querySelectorAll('.docs .en-toggle'))
+    toggles.forEach(toggle => {
+      toggle.onclick = (e) => {
         const selector = 'div.sub-section'
         let el = e.target
         while (el) {
@@ -14,7 +15,7 @@ module.exports = function() {
           otherEl.classList.remove("hidden")
           el.classList.add('hidden')
         }
-      }, false)
+      }
     })
   }
 }

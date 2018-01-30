@@ -131,17 +131,14 @@
 }
 
 .docs {
-  .en-toggle {
-    cursor: pointer;
-  }
-  .sub-section[data-lang='en-US'] .en-toggle {
+  .sub-section[data-lang='en-US'] .en-toggle h5 {
     color: $main-link-color;
   }
   .sub-section:not([data-lang='en-US']) {
-    .en-toggle {
+    .en-toggle h5 {
       color: $main-bg-color;
     }
-    &:hover .en-toggle {
+    &:hover .en-toggle h5 {
       color: $main-border-color;
     }
   }
