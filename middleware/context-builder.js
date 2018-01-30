@@ -44,7 +44,6 @@ module.exports = function contextBuilder (req, res, next) {
 
   if (req.path.startsWith('/docs')) {
     req.context.docs = i18n.docs[req.language]
-    req.context.docsEn = i18n.docs['en-US']
   }
 
   return next()
