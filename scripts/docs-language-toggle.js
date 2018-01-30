@@ -4,10 +4,9 @@ module.exports = function() {
     const toggles = Array.from(document.querySelectorAll('.docs .en-toggle'))
     toggles.forEach(toggle => {
       toggle.onclick = (e) => {
-        const selector = 'div.sub-section'
         let el = e.target
-        while (el) {
-          if (el.matches(selector)) break
+        while (el) {    // find parent div
+          if (el.matches('div.sub-section')) break
           el = el.parentElement;
         }
         const otherEl = document.querySelector(`[data-name=${el.dataset.name}].hidden`)
