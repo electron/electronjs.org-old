@@ -128,5 +128,21 @@
   a {
     text-decoration: none;
   }
+}
 
+.docs {
+  .en-toggle {
+    cursor: pointer;
+  }
+  .sub-section[data-lang='en-US'] .en-toggle {
+    color: $main-link-color;
+  }
+  .sub-section:not([data-lang='en-US']) {
+    .en-toggle {
+      color: $main-bg-color;
+    }
+    &:hover .en-toggle {
+      color: $main-border-color;
+    }
+  }
 }
