@@ -144,6 +144,15 @@ See
 on how to get started, or jump right into translating at 
 [crowdin.com/project/electron](https://crowdin.com/project/electron).
 
+#### Sharing Localized URLs
+
+If you wish to share a URL linking to a translated page of the Electron website,
+add a `lang` param to the URL. This will override the visitor's existing 
+language preferences and display the given page in the specified language:
+
+Example: 
+[/docs/api/browser-window?lang=fr-FR](https://electronjs.org/docs/api/browser-window?lang=fr-FR)
+
 ## Routes
 
 Website routes are defined in [server.js](server.js).

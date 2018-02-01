@@ -3,6 +3,7 @@ require('make-promises-safe')
 const { describe, it, beforeEach, afterEach } = require('mocha')
 const test = it
 const supertest = require('supertest')
+const session = require('supertest-session')
 const nock = require('nock')
 const cheerio = require('cheerio')
 const chai = require('chai')
@@ -38,6 +39,13 @@ describe('electronjs.org', () => {
       const path = '/404-page-asdfgh'
       $('.error-page .lead a').attr('href').should
         .eq(`https://github.com/electron/electronjs.org/issues/new?title=404%20for%20${path}&body=The%20following%20route%20is%20returning%20a%20404%20HTTP%20status%20code%3A%20${path}`)
+    })
+  })
+
+  describe('stylesheets', () => {
+    test('main stylesheet compiles', async () => {
+      const res = await supertest(app).get('/styles/index.css')
+      res.statusCode.should.eq(200)
     })
   })
 
@@ -276,11 +284,17 @@ describe('electronjs.org', () => {
     })
 
     test('language query param for one-off viewing in other languages', async () => {
-      let $ = await get('/docs/api/browser-window?language=fr-FR')
-      $('body').text().should.include('fenêtres')
+      const frenchContent = 'fenêtres'
+      const sesh = session(app)
 
-      $ = await get('/docs/api/browser-window')
-      $('body').text().should.not.include('fenêtres')
+      let res = await sesh.get('/docs/api/browser-window?lang=fr-FR')
+      let $ = cheerio.load(res.text)
+      $('blockquote').text().should.include(frenchContent)
+
+      // verify that the query param does not persist as a cookie
+      res = await sesh.get('/docs/api/browser-window')
+      $ = cheerio.load(res.text)
+      $('blockquote').text().should.not.include(frenchContent)
     })
   })
 
