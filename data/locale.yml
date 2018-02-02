@@ -199,8 +199,7 @@ _404:
 
 search:
   description:
-    start: Find Electron resources from
-    docs: <a href="/search/docs">documentation</a>
-    npm: <a href="/search/npmPackages">npm packages</a>
-    and: and
-    repos: <a href="/search/repos">GitHub repos</a>
+    all: Find Electron resources from <a href="/search/docs">documentation</a>, <a href="/search/npmPackages">npm packages</a>, and <a href="/search/repos">GitHub repos</a>.
+    docs: Find Electron resources from documentation.
+    npm: Find Electron resources from npm packages.
+    repos: Find Electron resources from GitHub repos.
