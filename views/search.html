@@ -46,16 +46,16 @@
       <p class="lead m-4 text-center">
         {{#if searchIn}}
           {{#eq searchIn 'docs'}}
-            {{localized.search.description.docs}}
+            {{localized.search.description_docs}}
           {{/eq}}
           {{#eq searchIn 'npmPackages'}}
-            {{localized.search.description.npm}}
+            {{localized.search.description_npm}}
           {{/eq}}
           {{#eq searchIn 'repos'}}
-            {{localized.search.description.repos}}
+            {{localized.search.description_repos}}
           {{/eq}}
         {{else}}
-          {{{localized.search.description.all}}}
+          {{{localized.search.description_all}}}
         {{/if}}
       </p>
       {{> searchForm}}
