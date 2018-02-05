@@ -195,7 +195,7 @@ describe('electronjs.org', () => {
     })
   })
 
-  describe.only('language toggle on docs', () => {
+  describe('language toggle on docs', () => {
     test('each localized documentation section should have an corresponding english section', async () => {
       const res = await supertest(app)
                 .get('/docs/tutorial/desktop-environment-integration')
@@ -215,7 +215,7 @@ describe('electronjs.org', () => {
         .set('Cookie', ['language=zh-CN'])
       const $ = cheerio.load(res.text)
       $('.docs .sub-section[data-lang="en-US"]').each((i, elem) => {
-        $(elem).hasClass('hidden').should.be.true
+        $(elem).should.have.class('hidden')
       })
     })
 
