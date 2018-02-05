@@ -195,6 +195,41 @@ describe('electronjs.org', () => {
     })
   })
 
+  describe.only('language toggle on docs', () => {
+    test('each localized documentation section should have an corresponding english section', async () => {
+      const res = await supertest(app)
+                .get('/docs/tutorial/desktop-environment-integration')
+                .set('Cookie', ['language=zh-CN'])
+      const $ = cheerio.load(res.text)
+      $('.docs .sub-section[data-lang="zh-CN"]').length.should.be.above(0)
+      $('.docs .sub-section[data-lang="en-US"]').length.should.equal($('.docs .sub-section[data-lang="zh-CN"]').length)
+      $('.docs .sub-section[data-lang="zh-CN"]').each((i, elem) => {
+        const name = $(elem).data('name')
+        $(`.docs .sub-section[data-lang="en-US"][data-name="${name}"]`).length.should.be.above(0)
+      })
+    })
+
+    test('english sections should be hidden at load', async () => {
+      const res = await supertest(app)
+        .get('/docs/tutorial/desktop-environment-integration')
+        .set('Cookie', ['language=zh-CN'])
+      const $ = cheerio.load(res.text)
+      $('.docs .sub-section[data-lang="en-US"]').each((i, elem) => {
+        $(elem).hasClass('hidden').should.be.true
+      })
+    })
+
+    test('docs/all should not load any english section', async () => {
+      const res = await supertest(app)
+        .get('/docs/all')
+        .set('Cookie', ['language=zh-CN'])
+      const $ = cheerio.load(res.text)
+      $('.docs .sub-section[data-lang="zh-CN"]').length.should.be.above(0)
+      $('.docs .sub-section[data-lang="en-US"]').length.should.equal(0)
+      $('.docs button.en-toggle').length.should.equal(0)
+    })
+  })
+
   describe('releases', () => {
     test('/releases', async () => {
       const $ = await get('/releases')

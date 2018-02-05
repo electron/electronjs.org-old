@@ -7,11 +7,11 @@ module.exports = () => {
         let el = e.target
         while (el) {    // find parent div
           if (el.matches('div.sub-section')) break
-          el = el.parentElement;
+          el = el.parentElement
         }
         const otherEl = document.querySelector(`[data-name="${el.dataset.name}"].hidden`)
         if (otherEl) {
-          otherEl.classList.remove("hidden")
+          otherEl.classList.remove('hidden')
           el.classList.add('hidden')
         }
       }
