@@ -1,10 +1,10 @@
 
 {{#each docs as |doc key|}}
   {{#with (lookup ../docsEn @key) as |docEn|}}
-    {{#each doc.html}}
+    {{#each doc.sections}}
       {{> doc
         doc=this
-        docEn=(lookup docEn.html @index)
+        docEn=(lookup docEn.sections @index)
         currentLocale=../../../currentLocale
         viewingAllDocs=../../../viewingAllDocs
       }}
