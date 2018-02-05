@@ -1,14 +1,11 @@
 
 {{#each docs as |doc key|}}
-  {{#with (lookup ../docsEn @key) as |docEn|}}
-    {{#each doc.sections}}
-      {{> doc
-        doc=this
-        docEn=(lookup docEn.sections @index)
-        currentLocale=../../../currentLocale
-        viewingAllDocs=../../../viewingAllDocs
-      }}
-    {{/each}}
-  {{/with}}
+  {{#each doc.sections}}
+    {{> doc
+      doc=this
+      currentLocale=../../currentLocale
+      viewingAllDocs=../../viewingAllDocs
+    }}
+  {{/each}}
   <hr />
 {{/each}}
