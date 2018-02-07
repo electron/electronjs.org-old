@@ -24,13 +24,13 @@
 
       {{#each searchResults}}
         <div class="my-8">
-          
+
           <h2>
             <a href="search/{{searchOp.name}}?q={{../query.q}}"><span class="mega-octicon octicon-{{searchOp.octicon}} mr-1"></span></a>
             <a href="search/{{searchOp.name}}?q={{../query.q}}">{{searchOp.displayName}}</a>
             <span class="faint">({{resultsNum}})</span>
           </h2>
-          
+
           {{> (lookup searchOp 'partial')}}
 
           {{#unless ../searchIn}}
@@ -44,20 +44,18 @@
   <section class="page-section">
     <div class="container-narrow">
       <p class="lead m-4 text-center">
-        {{localized.search.description.start}}
         {{#if searchIn}}
           {{#eq searchIn 'docs'}}
-            {{{localized.search.description.docs}}}.
+            {{localized.search.description_docs}}
           {{/eq}}
           {{#eq searchIn 'npmPackages'}}
-            {{{localized.search.description.npm}}}.
+            {{localized.search.description_npm}}
           {{/eq}}
           {{#eq searchIn 'repos'}}
-            {{{localized.search.description.repos}}}.
+            {{localized.search.description_repos}}
           {{/eq}}
         {{else}}
-          {{{localized.search.description.docs}}},
-          {{{localized.search.description.npm}}}, {{localized.search.description.and}} {{{localized.search.description.repos}}}.
+          {{{localized.search.description_all}}}
         {{/if}}
       </p>
       {{> searchForm}}
