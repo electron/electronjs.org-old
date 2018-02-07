@@ -68,7 +68,7 @@
     "proxyquire": "^1.8.0",
     "query-string": "^5.0.0",
     "repos-using-electron": "github:electron/repos-using-electron",
-    "require-dir": "^0.3.2",
+    "require-dir": "^1.0.0",
     "require-directory": "^2.1.1",
     "require-yaml": "0.0.1",
     "schemeless": "^1.2.0",
