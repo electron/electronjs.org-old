@@ -354,6 +354,26 @@ describe('electronjs.org', () => {
       mock.done()
     })
 
+    test('parses url query properly through proxy', async () => {
+      const mock = nock('https://api.crowdin.com')
+        .get('/api/project/electron/export-file')
+        .query({
+          key: process.env.CROWDIN_KEY,
+          json: true,
+          language: 'zh-CN',
+          file: 'master/content/en-US/docs/api/browser-window.md'
+        })
+        .once()
+        .reply(200, { result: 'mocked' })
+
+      const res = await supertest(app).get('/crowdin/export-file?language=zh-CN&file=master/content/en-US/docs/api/browser-window.md')
+      res.statusCode.should.equal(200)
+      res.type.should.equal('application/json')
+      res.text.should.eq('{"result":"mocked"}')
+
+      mock.done()
+    })
+
     test('returns 404 when trying to access API endpoints that are not whitelisted', async() => {
       const res = await supertest(app).get('/crowdin/export')
       res.statusCode.should.equal(404)
