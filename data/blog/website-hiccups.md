@@ -31,9 +31,11 @@ ls electron-i18n/content
 ## Offline Docs with a GUI
 
 [devdocs.io/electron](https://devdocs.io/electron/) is a handy website that
-stores docs for offline use, not just for Electron but many other projects like . And of course there's an Electron app for that,
-too. Check out [devdocs-app](https://electronjs.org/apps/devdocs-app) on the
-Electron site.
+stores docs for offline use, not just for Electron but many other projects like
+JavaScript, TypeScript, Node.js, React, Angular, and many others. And of course 
+there's an Electron app for that, too. 
+Check out [devdocs-app](https://electronjs.org/apps/devdocs-app) 
+on the Electron site.
 
 [![](https://user-images.githubusercontent.com/8784712/27121730-11676ba8-511b-11e7-8c01-00444ee8501a.png)](https://electronjs.org/apps/devdocs-app)
 
