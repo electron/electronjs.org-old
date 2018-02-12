@@ -9,6 +9,8 @@ of downtime. If you were affected by these brief outages, we're sorry
 for the inconvenience. After a bit of investigation today, we've diagnosed
 the root cause and have deployed a [fix](https://github.com/electron/electronjs.org/pull/1076).
 
+---
+
 To prevent this kind of downtime in the future, we've enabled 
 [Heroku threshold alerts](https://devcenter.heroku.com/articles/metrics#threshold-alerting)
 on our app. Any time our web server accumulates failed requests or slow responses beyond a certain threshold, our team will be notified so we can 
