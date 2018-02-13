@@ -411,9 +411,10 @@ describe('electronjs.org', () => {
       const $ = await get('/search/docs?q=ipc')
       $('ul.search-results').length.should.equal(1)
     })
-
     test('does not crash on unusual queries', async () => {
-      const res = await supertest(app).get('/search/docs?q=*')
+      let res = await supertest(app).get('/search/docs?q=*')
+      res.statusCode.should.equal(200)
+      res = await supertest(app).get('/search?q=*')
       res.statusCode.should.equal(200)
     })
   })
