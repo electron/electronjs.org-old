@@ -144,6 +144,21 @@ See
 on how to get started, or jump right into translating at 
 [crowdin.com/project/electron](https://crowdin.com/project/electron).
 
+#### Crowdin Proxy
+
+To allow open source community members to develop electronjs.org and 
+electron-i18n, we've added a feature to the Electron website that allows 
+Crowdin API requests to be made without an API key. The following routes are 
+supported:
+
+Electron URL | Crowdin Docs
+--- | ----
+[GET /crowdin/status](https://electronjs.org/crowdin/status) | [status](https://support.crowdin.com/api/status)
+[GET /crowdin/language-status](https://electronjs.org/crowdin/language-status) | [language-status](https://support.crowdin.com/api/language-status)
+[GET /crowdin/info](https://electronjs.org/crowdin/info) | [info](https://support.crowdin.com/api/info)
+[GET /crowdin/download-glossary](https://electronjs.org/crowdin/download-glossary) | [download-glossary](https://support.crowdin.com/api/download-glossary)
+[GET /crowdin/export-file](https://electronjs.org/crowdin/export-file) | [export-file](https://support.crowdin.com/api/export-file)
+
 #### Sharing Localized URLs
 
 If you wish to share a URL linking to a translated page of the Electron website,
