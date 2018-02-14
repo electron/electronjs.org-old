@@ -1,0 +1,16 @@
+<div class="sub-section position-relative" data-name="{{name}}" data-lang="{{currentLocale}}">
+  {{#unless viewingAllDocs}}
+    {{#if docEn}}
+      <button class="btn-link position-absolute right-0 mr-2 mt-2 no-underline en-toggle" alt="toggle section language"><h5 class="m-0">EN</h5></button>
+    {{/if}}
+  {{/unless}}
+  {{{html}}}
+</div>
+{{#if docEn}}
+  {{#unless viewingAllDocs}}
+    <div class="sub-section position-relative hidden" data-name="{{name}}" data-lang="en-US">
+      <button class="btn-link position-absolute right-0 mr-2 mt-2 no-underline en-toggle" alt="toggle section language"><h5 class="m-0">EN</h5></button>
+      {{{docEn.html}}}
+    </div>
+  {{/unless}}
+{{/if}}
