@@ -201,9 +201,11 @@ describe('electronjs.org', () => {
                 .get('/docs/tutorial/desktop-environment-integration')
                 .set('Cookie', ['language=zh-CN'])
       const $ = cheerio.load(res.text)
-      $('.docs .sub-section[data-lang="zh-CN"]').length.should.be.above(0)
-      $('.docs .sub-section[data-lang="en-US"]').length.should.equal($('.docs .sub-section[data-lang="zh-CN"]').length)
-      $('.docs .sub-section[data-lang="zh-CN"]').each((i, elem) => {
+      const $chineseSections = $('.docs .sub-section[data-lang="zh-CN"]')
+      const $englishSections = $('.docs .sub-section[data-lang="en-US"]')
+      $chineseSections.length.should.be.above(0)
+      $englishSections.length.should.equal($chineseSections.length)
+      $chineseSections.each((i, elem) => {
         const name = $(elem).data('name')
         $(`.docs .sub-section[data-lang="en-US"][data-name="${name}"]`).length.should.be.above(0)
       })
