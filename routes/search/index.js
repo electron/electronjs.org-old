@@ -29,10 +29,13 @@ module.exports = (req, res) => {
       null,
       { filter: req.query.q }
     )
+    if (results.errors || !results.data[searchOp.name]) {
+      return { searchOp, resultsNum: 0, results: null }
+    }
     return {
       searchOp,
       // FIXME: use real pagination
-      resultsNum: results.data[searchOp.name] ? results.data[searchOp.name].length : 0,
+      resultsNum: results.data[searchOp.name].length,
       results: (req.params.searchIn || req.query.json !== undefined)
                 ? results.data[searchOp.name] : results.data[searchOp.name].slice(0, 5)
     }
@@ -46,5 +49,7 @@ module.exports = (req, res) => {
       searchResults: searchResults
     })
     res.render('search', context)
+  }).catch((reasons) => {
+    console.error(reasons)
   })
 }
