@@ -30,6 +30,7 @@ module.exports = (req, res, next) => {
         key: process.env.CROWDIN_KEY,
         json: true
       })
+      newPath.search = null
       return url.format(newPath)
     }
   })(req, res, next)

@@ -1,7 +1,9 @@
 require('make-promises-safe')
+
 const { describe, it, beforeEach, afterEach } = require('mocha')
 const test = it
 const supertest = require('supertest')
+const session = require('supertest-session')
 const nock = require('nock')
 const cheerio = require('cheerio')
 const chai = require('chai')
@@ -37,6 +39,13 @@ describe('electronjs.org', () => {
       const path = '/404-page-asdfgh'
       $('.error-page .lead a').attr('href').should
         .eq(`https://github.com/electron/electronjs.org/issues/new?title=404%20for%20${path}&body=The%20following%20route%20is%20returning%20a%20404%20HTTP%20status%20code%3A%20${path}`)
+    })
+  })
+
+  describe('stylesheets', () => {
+    test('main stylesheet compiles', async () => {
+      const res = await supertest(app).get('/styles/index.css')
+      res.statusCode.should.eq(200)
     })
   })
 
@@ -267,10 +276,26 @@ describe('electronjs.org', () => {
     })
   })
 
-  test('/languages', async () => {
-    const $ = await get('/languages')
-    $('h1').text().should.eq('Languages')
-    $('body').text().should.include('global developer community')
+  describe('languages', () => {
+    test('/languages', async () => {
+      const $ = await get('/languages')
+      $('h1').text().should.eq('Languages')
+      $('body').text().should.include('global developer community')
+    })
+
+    test('language query param for one-off viewing in other languages', async () => {
+      const frenchContent = 'fenêtres'
+      const sesh = session(app)
+
+      let res = await sesh.get('/docs/api/browser-window?lang=fr-FR')
+      let $ = cheerio.load(res.text)
+      $('blockquote').text().should.include(frenchContent)
+
+      // verify that the query param does not persist as a cookie
+      res = await sesh.get('/docs/api/browser-window')
+      $ = cheerio.load(res.text)
+      $('blockquote').text().should.not.include(frenchContent)
+    })
   })
 
   test('redirects for date-style blog URLs', async () => {
@@ -329,6 +354,26 @@ describe('electronjs.org', () => {
       mock.done()
     })
 
+    test('parses url query properly through proxy', async () => {
+      const mock = nock('https://api.crowdin.com')
+        .get('/api/project/electron/export-file')
+        .query({
+          key: process.env.CROWDIN_KEY,
+          json: true,
+          language: 'zh-CN',
+          file: 'master/content/en-US/docs/api/browser-window.md'
+        })
+        .once()
+        .reply(200, { result: 'mocked' })
+
+      const res = await supertest(app).get('/crowdin/export-file?language=zh-CN&file=master/content/en-US/docs/api/browser-window.md')
+      res.statusCode.should.equal(200)
+      res.type.should.equal('application/json')
+      res.text.should.eq('{"result":"mocked"}')
+
+      mock.done()
+    })
+
     test('returns 404 when trying to access API endpoints that are not whitelisted', async() => {
       const res = await supertest(app).get('/crowdin/export')
       res.statusCode.should.equal(404)
@@ -365,6 +410,12 @@ describe('electronjs.org', () => {
     test('shows results from one source if specified', async () => {
       const $ = await get('/search/docs?q=ipc')
       $('ul.search-results').length.should.equal(1)
+    })
+    test('does not crash on unusual queries', async () => {
+      let res = await supertest(app).get('/search/docs?q=*')
+      res.statusCode.should.equal(200)
+      res = await supertest(app).get('/search?q=*')
+      res.statusCode.should.equal(200)
     })
   })
 })

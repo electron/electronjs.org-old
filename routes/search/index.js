@@ -5,7 +5,10 @@ const operations = require('./operations')
 
 module.exports = (req, res) => {
   if (!req.query.q) {
-    return res.render('search', Object.assign({}, req.context, { query: null }))
+    return res.render('search', Object.assign({}, req.context, {
+      searchIn: req.params.searchIn,
+      query: null
+    }))
   }
 
   let searchOps = []
@@ -26,6 +29,9 @@ module.exports = (req, res) => {
       null,
       { filter: req.query.q }
     )
+    if (results.errors || !results.data[searchOp.name]) {
+      return { searchOp, resultsNum: 0, results: null }
+    }
     return {
       searchOp,
       // FIXME: use real pagination
@@ -43,5 +49,7 @@ module.exports = (req, res) => {
       searchResults: searchResults
     })
     res.render('search', context)
+  }).catch((reasons) => {
+    console.error(reasons)
   })
 }
