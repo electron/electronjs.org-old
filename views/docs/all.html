@@ -1,4 +1,11 @@
-{{#each docs}}
-  {{{this.html}}}
-  <hr>
+
+{{#each docs as |doc key|}}
+  {{#each doc.sections}}
+    {{> doc
+      doc=this
+      currentLocale=../../currentLocale
+      viewingAllDocs=../../viewingAllDocs
+    }}
+  {{/each}}
+  <hr />
 {{/each}}

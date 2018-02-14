@@ -12,4 +12,5 @@ document.addEventListener('DOMContentLoaded', () => {
   require('./remove-scheme-from-link-text')()
   require('browser-date-formatter')()
   require('./copy-code-to-clipboard')()
+  require('./docs-language-toggle')()
 })
