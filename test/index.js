@@ -229,8 +229,8 @@ describe('electronjs.org', () => {
       $('.docs .sub-section[data-lang="zh-CN"]').length.should.be.above(0)
       $('.docs .sub-section[data-lang="en-US"]').length.should.equal(0)
       $('.docs button.en-toggle').length.should.equal(0)
-    })
-  }).timeout(5000)
+    }).timeout(5000)
+  })
 
   describe('releases', () => {
     test('/releases', async () => {
