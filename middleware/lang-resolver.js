@@ -22,7 +22,7 @@ locales.forEach(locale => {
   }
 })
 
-function resolve(lang) {
+function resolve (lang) {
   var lower = lang.toLowerCase()
   if (lowerLangRegion.hasOwnProperty(lower)) {
     return lowerLangRegion[lower]
@@ -36,7 +36,7 @@ function resolve(lang) {
   return lang
 }
 
-module.exports = function langResolver(req, res, next) {
+module.exports = function langResolver (req, res, next) {
   if (req.query.lang) {
     // resolving lang to lang-REGION when
     //    - cases does not match
