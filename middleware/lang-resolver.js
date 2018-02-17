@@ -1,6 +1,5 @@
 const i18n = require('electron-i18n')
 const url = require('url')
-var parseUrl = require('parseurl')
 
 const locales = Object.keys(i18n.locales)
 
@@ -36,6 +35,10 @@ function resolve (lang) {
   return lang
 }
 
+function parseurl (req) {
+  return url.parse(req.url)
+}
+
 module.exports = function langResolver (req, res, next) {
   if (req.query.lang) {
     // resolving lang to lang-REGION when
@@ -45,7 +48,7 @@ module.exports = function langResolver (req, res, next) {
 
     // redirect only when the resolved lang exists and it is different
     if (rlang && rlang !== req.query.lang) {
-      const parsedUrl = parseUrl(req)
+      const parsedUrl = parseurl(req)
       req.query.lang = rlang
       return res.redirect(
           url.format({pathname: parsedUrl.pathname, query: req.query}))
