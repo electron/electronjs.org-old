@@ -333,6 +333,35 @@ describe('electronjs.org', () => {
       $ = cheerio.load(res.text)
       $('blockquote').text().should.not.include(frenchContent)
     })
+
+    test('incompleted language query param redirects with the correct language', async () => {
+      // Missing region
+      let res = await supertest(app).get('/docs/api/browser-window?lang=fr')
+      res.statusCode.should.be.equal(302)
+      res.headers.location.should.equal('/docs/api/browser-window?lang=fr-FR')
+
+      // wrong cases
+      res = await supertest(app).get('/docs/api/browser-window?lang=ES')
+      res.statusCode.should.be.equal(302)
+      res.headers.location.should.equal('/docs/api/browser-window?lang=es-ES')
+
+      res = await supertest(app).get('/docs/api/browser-window?lang=ES-es')
+      res.statusCode.should.be.equal(302)
+      res.headers.location.should.equal('/docs/api/browser-window?lang=es-ES')
+
+      // missing Argentina region
+      res = await supertest(app).get('/docs/api/browser-window?lang=es-AR')
+      res.statusCode.should.be.equal(302)
+      res.headers.location.should.equal('/docs/api/browser-window?lang=es-ES')
+
+      // valid language query is not redirected (200)
+      res = await supertest(app).get('/docs/api/browser-window?lang=en-US')
+      res.statusCode.should.be.equal(200)
+
+      // without language query is not redirected (200)
+      res = await supertest(app).get('/docs/api/browser-window')
+      res.statusCode.should.be.equal(200)
+    })
   })
 
   test('redirects for date-style blog URLs', async () => {

@@ -16,6 +16,7 @@ const requestLanguage = require('express-request-language')
 const cookieParser = require('cookie-parser')
 const sass = require('./middleware/sass')
 const helmet = require('helmet')
+const langResolver = require('./middleware/lang-resolver')
 const contextBuilder = require('./middleware/context-builder')
 const blog = require('./middleware/blog')
 
@@ -53,6 +54,7 @@ app.use(requestLanguage({
   }
 }))
 app.use(express.static(__dirname))
+app.use(langResolver)
 app.use(contextBuilder)
 app.use(blog)
 app.use(browsersync())
