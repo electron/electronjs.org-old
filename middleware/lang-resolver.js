@@ -8,12 +8,10 @@ var lowerLang = {}
 // Keep all the language/region and language in a object
 // with property names in lowercases to resolve the lang code
 locales.forEach(locale => {
-  const s = locale.split('-')
-  const lang = s.shift().toLowerCase()
-  const region = s.join(' ').toUpperCase()
+  // map locale in lowercase
+  lowerLangRegion[locale.toLowerCase()] = locale
 
-  lowerLangRegion[`${lang}-${region}`] = locale
-
+  const lang = locale.split('-').shift().toLowerCase()
   // The first lang for each locale is the default one
   // to resolve when the region is missing
   if (!lowerLang.hasOwnProperty(lang)) {

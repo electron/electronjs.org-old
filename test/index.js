@@ -353,27 +353,37 @@ describe('electronjs.org', () => {
       res = await supertest(app).get('/docs/api/browser-window?lang=es-AR')
       res.statusCode.should.be.equal(302)
       res.headers.location.should.equal('/docs/api/browser-window?lang=es-ES')
+    })
+
+    test('language query param wont redirects with the correct language', async () => {
+      // without language query is not redirected (200)
+      let res = await supertest(app).get('/docs/api/browser-window')
+      res.statusCode.should.be.equal(200)
 
       // valid language query is not redirected (200)
-      res = await supertest(app).get('/docs/api/browser-window?lang=en-US')
-      res.statusCode.should.be.equal(200)
-
-      // without language query is not redirected (200)
-      res = await supertest(app).get('/docs/api/browser-window')
-      res.statusCode.should.be.equal(200)
+      const langs = [
+        'ar-SA', 'bg-BG', 'cs-CZ', 'de-DE', 'en-US', 'es-ES',
+        'fa-IR', 'fil-PH', 'fr-FR', 'hi-IN', 'id-ID', 'it-IT',
+        'ja-JP', 'ko-KR', 'nl-NL', 'pl-PL', 'pt-BR', 'ru-RU',
+        'th-TH', 'tr-TR', 'uk-UA', 'vi-VN', 'zh-CN', 'zh-TW'
+      ]
+      for (let lang of langs) {
+        res = await supertest(app).get(`/docs/api/browser-window?lang=${lang}`)
+        res.statusCode.should.be.equal(200)
+      }
     })
-  })
 
-  test('redirects for date-style blog URLs', async () => {
-    const res = await supertest(app).get('/blog/2017/06/01/typescript')
-    res.statusCode.should.be.above(300).and.below(303)
-    res.headers.location.should.equal('/blog/typescript')
-  })
+    test('redirects for date-style blog URLs', async () => {
+      const res = await supertest(app).get('/blog/2017/06/01/typescript')
+      res.statusCode.should.be.above(300).and.below(303)
+      res.headers.location.should.equal('/blog/typescript')
+    })
 
-  test('redirects trailing slashes', async () => {
-    const res = await supertest(app).get('/apps/')
-    res.statusCode.should.equal(301)
-    res.headers.location.should.equal('/apps')
+    test('redirects trailing slashes', async () => {
+      const res = await supertest(app).get('/apps/')
+      res.statusCode.should.equal(301)
+      res.headers.location.should.equal('/apps')
+    })
   })
 
   describe('issues and pull request URLs', () => {
