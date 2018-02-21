@@ -35,14 +35,14 @@ Ever since we have publicized the Electron documentation i18n effort, we have se
 
 <figure>
   <a href="https://crowdin.com/project/electron/">
-    <img src="https://user-images.githubusercontent.com/6842965/36511457-fad77bb8-1766-11e8-88ab-1c68fe3cbdee.png" alt="Translation Forecast provided by Crowdin">
+    <img class="screenshot" src="https://user-images.githubusercontent.com/6842965/36511457-fad77bb8-1766-11e8-88ab-1c68fe3cbdee.png" alt="Translation Forecast provided by Crowdin">
     <figcaption>Translation Forecast provided by Crowdin</figcaption>
   </a>
 </figure>
 
 Here is a fun graph showing the approximate amount of time needed to translate the project into each language if the existing tempo (based on the project activity during the last 14 days at the time of writing) is preserved.
 
-## Translator Survey
+## 📃 Translator Survey
 
 We would like to give a huge ❤️ thank you ❤️ to everyone who has contributed their time to help improving Electron! In order to properly acknowledge the hard work of our translator community, we have created a survey to collect some information (namely the mapping between their Crowdin and Github usernames) about our translators.
 
