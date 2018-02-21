@@ -19,6 +19,9 @@ module.exports = function contextBuilder (req, res, next) {
 
   const localized = i18n.website[req.language]
 
+  const stableRelease = releases.find(release => release.npm_dist_tag === 'latest')
+  const betaRelease = releases.find(release => release.npm_dist_tag === 'beta')
+
   // Page titles, descriptions, etc
   let page = Object.assign({
     title: 'Electron',
@@ -39,7 +42,9 @@ module.exports = function contextBuilder (req, res, next) {
     locales: i18n.locales,
     page: page,
     localized: localized,
-    cookies: req.cookies
+    cookies: req.cookies,
+    stableRelease,
+    betaRelease
   }
 
   if (req.path.startsWith('/docs')) {
