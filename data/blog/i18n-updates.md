@@ -1,8 +1,14 @@
-# Electron Internationalization Updates
+---
+title: "Internationalization Updates"
+author: vanessayuenn
+date: '2018-02-22'
+---
 
 Ever since the [launch](https://electronjs.org/blog/new-website) of the new internationalized Electron website, we have been working hard to make the Electron development experience even more accessible to developers outside of the English speaking world.
 
 So here we are with some exciting i18n updates!
+
+---
 
 ## 🌐 Language Toggle
 
@@ -36,7 +42,7 @@ Ever since we have publicized the Electron documentation i18n effort, we have se
 
 Here is a fun graph showing the approximate amount of time needed to translate the project into each language if the existing tempo (based on the project activity during the last 14 days at the time of writing) is preserved.
 
-## Translator survey
+## Translator Survey
 
 We would like to give a huge ❤️ thank you ❤️ to everyone who has contributed their time to help improving Electron! In order to properly acknowledge the hard work of our translator community, we have created a survey to collect some information (namely the mapping between their Crowdin and Github usernames) about our translators.
 
