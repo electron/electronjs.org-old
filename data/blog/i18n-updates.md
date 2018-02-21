@@ -12,13 +12,13 @@ So here we are with some exciting i18n updates!
 
 ## 🌐 Language Toggle
 
-Did you know that many people who read translated documentation often cross referece that with the original English documentation? They do this to familiarize themselves with English docs, and to avoid outdated or inaccurate translations, which is one caveat of internationalized documentations.
+Did you know that many people who read translated documentation often cross reference that with the original English documentation? They do this to familiarize themselves with English docs, and to avoid outdated or inaccurate translations, which is one caveat of internationalized documentations.
 
 <figure>
   <img class="screenshot" src="https://user-images.githubusercontent.com/6842965/35578586-cae629e2-05e4-11e8-9431-0278f8c2b39f.gif" alt="Language toggle on Electron documentation">
 </figure>
 
-To make cross referencing to English docs easier, we recently shipped a feature that allows you to seamlessly toggle a section of the Electron documentation between English and whatever language you're viewing the website in. The language toggle will show up as long as you have a non-English locale selected on the website.
+To make cross-referencing to English docs easier, we recently shipped a feature that allows you to seamlessly toggle a section of the Electron documentation between English and whatever language you're viewing the website in. The language toggle will show up as long as you have a non-English locale selected on the website.
 
 ## ⚡️ Quick Access to Translation Page
 
@@ -27,7 +27,7 @@ To make cross referencing to English docs easier, we recently shipped a feature 
   <figcaption>Electron documentation footer in Japanese</figcaption>
 </figure>
 
-Notice a typo or an incorrect translation while you're reading the documentation? You no longer have to log in to Crowdin, pick your locale, find the file you'd like the fix, etc etc. Instead, you can just scroll down to the bottom of said doc, and click "Translate this doc" (or the equivalent in your language). Voila! You are brought straight to the Crowdin translation page. Now apply your translation magic!
+Notice a typo or an incorrect translation while you're reading the documentation? You no longer have to log in to Crowdin, pick your locale, find the file you'd like the fix, etc etc. Instead, you can just scroll down to the bottom of the said doc, and click "Translate this doc" (or the equivalent in your language). Voila! You are brought straight to the Crowdin translation page. Now apply your translation magic!
 
 ## 📈 Some Statistics
 
@@ -54,4 +54,4 @@ If you are one of our incredible translators, please take a few minutes to fill 
 
 ## Contributing Guide
 - **WIP**
-- link to translation constributing doc on repo that zeke is writing
+- link to translation contributing doc on repo that zeke is writing
