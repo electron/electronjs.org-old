@@ -7,15 +7,23 @@
   </div>
 </div>
 
-<div class="subtron py-4 text-center">
-  <div class="container">
-    <div id="electron-versions" class="electron-versions">
-      <span class="electron-versions-main">Electron: <strong>{{{deps.version}}}</strong></span>
-      <span>Node: <strong>{{{deps.node}}}</strong></span>
-      <span>Chromium: <strong>{{{deps.chrome}}}</strong></span>
-      <span>V8: <strong>{{{deps.v8}}}</strong></span>
-    </div>
-  </div>
+<div class="container">
+    <h1 class="text-center"><a href="/releases">{{localized.releases}}</a></h1>
+      <div class="col-xs-12 col-md-6">
+        <figure id="electron-version-latest" class="highlight highlight-dark text-left my-3 px-2">
+            <pre><code>$ npm i -D electron@latest
+<span class="c1"># Electron   {{{stableRelease.version}}}
+# Node       {{stableRelease.deps.node}}
+# Chromium   {{stableRelease.deps.chrome}}</span></code></pre></figure>
+      </div>
+      <div class="col-xs-12 col-md-6">
+
+          <figure id="electron-version-beta" class="highlight highlight-dark text-left my-3 px-3">
+              <pre><code>$ npm i -D electron@beta
+<span class="c1"># Electron   {{{betaRelease.version}}}
+# Node       {{betaRelease.deps.node}}
+# Chromium   {{betaRelease.deps.chrome}}</span></code></pre></figure>
+      </div>
 </div>
 
 <section class="page-section page-section-spacious" id='electron'>
