@@ -215,12 +215,20 @@ describe('electronjs.org', () => {
       $('.error-page').text().should.include('Page not found')
     })
 
-    test('docs footer', async () => {
-      // includes a link to edit the doc
-      const $ = await get('/docs/api/accelerator')
-      $('.propose-change').attr('href').should.eq('https://github.com/electron/electron/tree/master/docs/api/accelerator.md')
+    describe('docs footer', () => {
+      test('includes a link to edit the doc on GitHub', async () => {
+        const $ = await get('/docs/api/accelerator')
+        $('.propose-change').attr('href').should.eq('https://github.com/electron/electron/tree/master/docs/api/accelerator.md')
+      })
 
-      // TODO: test other docs footer links
+      test('includes a link to translate the doc on Crowdin', async () => {
+        const res = await supertest(app)
+          .get('/docs/api/accelerator')
+          .set('Cookie', ['language=zh-CN'])
+        const $ = cheerio.load(res.text)
+
+        $('.translate-on-crowdin').attr('href').should.eq('https://crowdin.com/translate/electron/63/en-zhcn')
+      })
     })
 
     test('doc history', async () => {
