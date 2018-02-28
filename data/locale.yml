@@ -50,6 +50,8 @@ community:
     To add a meetup, edit <code>data/meetups.json</code> and
     <a href="https://github.com/electron/electronjs.org/tree/master/data/meetups.json">make a pull request</a>.
 
+releases: Releases
+
 electron_is_easy:
   title: It's easier than you think
   description:

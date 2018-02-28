@@ -50,20 +50,29 @@ describe('electronjs.org', () => {
   })
 
   describe('homepage', () => {
-    test('displays featured apps, version numbers, and CoC link', async () => {
+    test('displays electron version data for latest and beta', async () => {
+      const $ = await get('/')
+      $('#electron-version-latest').text().should.match(/npm i -D electron@latest/)
+      $('#electron-version-latest').text().should.match(/Electron\s+\d+\.\d+\.\d+/)
+      $('#electron-version-latest').text().should.match(/Node\s+\d+\.\d+\.\d+/)
+      $('#electron-version-latest').text().should.match(/Chromium\s+\d+\.\d+\.\d+\.\d+/)
+
+      $('#electron-version-beta').text().should.match(/npm i -D electron@beta/)
+      $('#electron-version-beta').text().should.match(/Electron\s+\d+\.\d+\.\d+/)
+      $('#electron-version-beta').text().should.match(/Node\s+\d+\.\d+\.\d+/)
+      $('#electron-version-beta').text().should.match(/Chromium\s+\d+\.\d+\.\d+\.\d+/)
+    })
+
+    test('displays featured apps', async () => {
       const $ = await get('/')
       $('header').should.have.class('site-header')
       $('p.jumbotron-lead').should.contain('Build cross platform desktop apps')
       $('.featured-app').length.should.equal(24)
       $('head > title').text().should.match(/^Electron/)
+    })
 
-      // versions
-      $('#electron-versions').text().should.match(/Electron: \d+\.\d+\.\d+/)
-      $('#electron-versions').text().should.match(/Node: \d+\.\d+\.\d+/)
-      $('#electron-versions').text().should.match(/Chromium: \d+\.\d+\.\d+\.\d+/)
-      $('#electron-versions').text().should.match(/V8: \d+\.\d+\.\d+\.\d+/)
-
-      // Footer
+    test('displays Code of Conduct link in the footer', async () => {
+      const $ = await get('/')
       $('a.footer-nav-item[href="https://github.com/electron/electron/tree/master/CODE_OF_CONDUCT.md"]')
         .text().should.eq('Code of Conduct')
     })
