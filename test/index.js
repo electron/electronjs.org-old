@@ -33,15 +33,6 @@ describe('electronjs.org', () => {
     res.headers['content-type'].should.equal('text/xml; charset=utf-8')
   })
 
-  describe('404 pages', () => {
-    test('404 path on page, detect a 404 path of page to create a issue', async () => {
-      const $ = await get('/404-page-asdfgh')
-      const path = '/404-page-asdfgh'
-      $('.error-page .lead a').attr('href').should
-        .eq(`https://github.com/electron/electronjs.org/issues/new?title=404%20for%20${path}&body=The%20following%20route%20is%20returning%20a%20404%20HTTP%20status%20code%3A%20${path}`)
-    })
-  })
-
   describe('stylesheets', () => {
     test('main stylesheet compiles', async () => {
       const res = await supertest(app).get('/styles/index.css')
