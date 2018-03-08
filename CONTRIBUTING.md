@@ -11,18 +11,18 @@ feel free to propose changes to this document in a pull request.
 - [Issues and Pull Requests](#issues-and-pull-requests)
 - [Heroku Review Apps](#heroku-review-apps)
 - [Running the Site](#running-the-site)
-- [Editing Content](#content)
+- [Editing Content](#editing-content)
   - [Documentation](#documentation)
   - [Apps](#apps)
   - [Blog](#blog)
   - [Localized Strings](#localized-strings)
   - [Translations](#translations)
 - [Routes](#routes)
-- [Middlware](#middleware)
+- [Middleware](#middleware)
 - [Views](#views)
 - [Context](#context)
 - [Styles](#styles)
-- [Fontend JavaScript](#frontend-javascript)
+- [Frontend JavaScript](#frontend-javascript)
 - [Scripts](#scripts)
 - [Environment Variables](#environment-variables)
 
@@ -222,7 +222,7 @@ for the rest.
 ## Views
 
 Views live in the [/views](/views) directory, and are written 
-in [Handlebars](handlebarsjs.com).
+in [Handlebars](https://handlebarsjs.com).
 
 Handlebars provides a very small set of 
 [built-in helpers](http://handlebarsjs.com/builtin_helpers.html) like 
@@ -243,7 +243,7 @@ like nested layouts and partials.
 Every [view](#views) can be passed a `context`, an object prepared by the 
 server that contains data to be used in the Handlebars templates. We use a 
 custom middleware to assemble a default context object with data that is 
-common to every view. See [lib/context-builder.js](lib/context-builder.js).
+common to every view. See [middleware/context-builder.js](middleware/context-builder.js).
 
 The context builder middleware is executed before the views, so every route
 handler has a `req.context` object that can be modified if needed. 

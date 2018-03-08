@@ -8,7 +8,7 @@ const crawler = require('simplecrawler')(host)
 crawler.parseScriptTags = false
 
 crawler.addFetchCondition((queueItem, referrerQueueItem, cb) => {
-  cb(null, !queueItem.path.match(/\/images|styles\//gi))
+  cb(null, !queueItem.path.match(/\/images|styles\/|docs\/all/gi))
 })
 
 crawler.discoverResources = (buffer, queueItem) => {
