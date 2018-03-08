@@ -157,7 +157,7 @@ describe('electronjs.org', () => {
       titles.should.include('BluetoothDevice Object') // API Structures
       titles.should.include('BrowserWindow') // API Docs
       titles.should.include('Application Distribution') // Tutorials
-    }).timeout(5000)
+    })
 
     test('docs/api', async () => {
       const $ = await get('/docs/api')
@@ -229,7 +229,7 @@ describe('electronjs.org', () => {
       $('.docs .sub-section[data-lang="zh-CN"]').length.should.be.above(0)
       $('.docs .sub-section[data-lang="en-US"]').length.should.equal(0)
       $('.docs button.en-toggle').length.should.equal(0)
-    }).timeout(5000)
+    })
   })
 
   describe('releases', () => {
