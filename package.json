@@ -15,7 +15,8 @@
     "dev": "cross-env NODE_PATH=. nodemon -e js,scss,yml,md server.js",
     "prepack": "check-for-leaks",
     "prepush": "check-for-leaks",
-    "linkschecker": "NODE_PATH=. NODE_ENV=test node scripts/links-checker.js"
+    "linkschecker": "NODE_PATH=. NODE_ENV=test node scripts/links-checker.js",
+    "update-electron-dependencies": "./script/update-deps.sh"
   },
   "dependencies": {
     "awesome-electron": "2.6.0",
@@ -34,11 +35,11 @@
     "cross-env": "^5.1.1",
     "description": "0.0.4",
     "dotenv": "^5.0.0",
-    "electron-api-historian": "1.1.1",
-    "electron-apps": "1.2497.0",
-    "electron-i18n": "1.1.0",
+    "electron-api-historian": "^1.1.1",
+    "electron-apps": "^1.2497.0",
+    "electron-i18n": "^1.1.0",
     "electron-npm-packages": "3.0.0",
-    "electron-releases": "2.19.0",
+    "electron-releases": "^2.19.0",
     "electron-userland-reports": "1.6.0",
     "express": "^4.16.2",
     "express-graphql": "^0.6.11",
