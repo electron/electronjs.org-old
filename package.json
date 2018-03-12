@@ -15,7 +15,8 @@
     "dev": "cross-env NODE_PATH=. nodemon -e js,scss,yml,md server.js",
     "prepack": "check-for-leaks",
     "prepush": "check-for-leaks",
-    "linkschecker": "NODE_PATH=. NODE_ENV=test node scripts/links-checker.js"
+    "linkschecker": "NODE_PATH=. NODE_ENV=test node scripts/links-checker.js",
+    "update-electron-dependencies": "./script/update-deps.sh"
   },
   "dependencies": {
     "awesome-electron": "2.6.0",
