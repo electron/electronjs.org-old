@@ -66,7 +66,7 @@
     "platform-utils": "^1.0.0",
     "primer-breadcrumb": "1.5.1",
     "proxyquire": "^2.0.0",
-    "query-string": "^5.0.0",
+    "query-string": "^6.0.0",
     "repos-using-electron": "github:electron/repos-using-electron",
     "require-dir": "^1.0.0",
     "require-directory": "^2.1.1",
