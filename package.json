@@ -86,7 +86,7 @@
     "nock": "^9.1.3",
     "nodemon": "^1.12.1",
     "simplecrawler": "^1.1.6",
-    "standard": "^10.0.3",
+    "standard": "^11.0.0",
     "supertest": "^3.0.0",
     "supertest-session": "^3.1.1",
     "walk-sync": "^0.3.2"
