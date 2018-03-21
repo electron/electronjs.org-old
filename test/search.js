@@ -45,7 +45,7 @@ describe('resolvers for search functionality', () => {
     resolvers = proxyquire('../routes/search/resolvers', {
       '../../lib/i18n': docStub,
       'electron-npm-packages': npmStub,
-      'repos-using-electron/lite': repoStub
+      '../../data/repos-using-electron.json': repoStub
     })
   })
 
