@@ -23,7 +23,7 @@ Although this appears to be a minority of Electron applicatons, we encourage all
 
 ## Mitigation
 
-This vulnerability is fixed in today's [1.7.13](https://github.com/electron/electron/releases/tag/v1.7.13), [1.8.4](https://github.com/electron/electron/releases/tag/v1.8.4), and [2.0.0-beta.4](https://github.com/electron/electron/releases/tag/v2.0.0-beta.4) releases.
+This vulnerability is fixed in today's [1.7.13](https://github.com/electron/electron/releases/tag/v1.7.13), [1.8.4](https://github.com/electron/electron/releases/tag/v1.8.4), and [2.0.0-beta.5](https://github.com/electron/electron/releases/tag/v2.0.0-beta.5) releases.
 
 Developers who are unable to upgrade their application's Electron version can mitigate the vulnerability with the following code:
 
