@@ -1,6 +1,6 @@
 const docsEn = require('../../lib/i18n').docs['en-US']
 const npmPkgs = require('electron-npm-packages')
-const repos = require('repos-using-electron/lite')
+const repos = require('../../data/repos-using-electron.json')
 
 const searchScores = {
   docs: [
