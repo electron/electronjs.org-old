@@ -179,6 +179,11 @@ describe('electronjs.org', () => {
       $('.error-page').text().should.include('Page not found')
     })
 
+    test('//index.php?lang=Cn&index=0000', async () => {
+      const res = await supertest(app).get('//index.php?lang=Cn&index=0000')
+      res.statusCode.should.equal(404)
+    })
+
     test('docs footer', async () => {
       // includes a link to edit the doc
       const $ = await get('/docs/api/accelerator')
