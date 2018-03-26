@@ -17,6 +17,10 @@ module.exports = function contextBuilder (req, res, next) {
     req.language = req.query.lang
   }
 
+  // If request language does not exist, fall back to English
+  // e.g. /?lang=Foo
+  if (!i18n.website[req.language]) req.language = 'en-US'
+
   const localized = i18n.website[req.language]
 
   const stableRelease = releases.find(release => release.npm_dist_tag === 'latest')
