@@ -88,6 +88,7 @@ app.get('/spectron', routes.spectron)
 app.get('/userland', routes.userland.index)
 app.get('/userland/*', routes.userland.show)
 app.use('/crowdin', routes.languages.proxy)
+app.use('/donors', routes.donors)
 app.get('/search/:searchIn*?', routes.search.index)
 
 // Generic 404 handler

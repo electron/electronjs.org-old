@@ -5,7 +5,7 @@ module.exports = () => {
     toggles.forEach(toggle => {
       toggle.onclick = (e) => {
         let el = e.target
-        while (el) {    // find parent div
+        while (el) { // find parent div
           if (el.matches('div.sub-section')) break
           el = el.parentElement
         }
