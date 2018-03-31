@@ -33,15 +33,6 @@ describe('electronjs.org', () => {
     })
   })
 
-  describe('404 pages', () => {
-    test('404 path on page, detect a 404 path of page to create a issue', async () => {
-      const $ = await get('/404-page-asdfgh')
-      const path = '/404-page-asdfgh'
-      $('.error-page .lead a').attr('href').should
-        .eq(`https://github.com/electron/electronjs.org/issues/new?title=404%20for%20${path}&body=The%20following%20route%20is%20returning%20a%20404%20HTTP%20status%20code%3A%20${path}`)
-    })
-  })
-
   describe('stylesheets', () => {
     test('main stylesheet compiles', async () => {
       const res = await supertest(app).get('/styles/index.css')
@@ -193,7 +184,7 @@ describe('electronjs.org', () => {
       titles.should.include('BluetoothDevice Object') // API Structures
       titles.should.include('BrowserWindow') // API Docs
       titles.should.include('Application Distribution') // Tutorials
-    }).timeout(5000)
+    })
 
     test('docs/api', async () => {
       const $ = await get('/docs/api')
@@ -221,12 +212,16 @@ describe('electronjs.org', () => {
         $('.propose-change').attr('href').should.eq('https://github.com/electron/electron/tree/master/docs/api/accelerator.md')
       })
 
+      test('//index.php?lang=Cn&index=0000', async () => {
+        const res = await supertest(app).get('//index.php?lang=Cn&index=0000')
+        res.statusCode.should.equal(404)
+      })
+
       test('includes a link to translate the doc on Crowdin', async () => {
         const res = await supertest(app)
           .get('/docs/api/accelerator')
           .set('Cookie', ['language=zh-CN'])
         const $ = cheerio.load(res.text)
-
         $('.translate-on-crowdin').attr('href').should.eq('https://crowdin.com/translate/electron/63/en-zhcn')
       })
     })
@@ -242,8 +237,8 @@ describe('electronjs.org', () => {
   describe('language toggle on docs', () => {
     test('each localized documentation section should have an corresponding english section', async () => {
       const res = await supertest(app)
-                .get('/docs/tutorial/desktop-environment-integration')
-                .set('Cookie', ['language=zh-CN'])
+        .get('/docs/tutorial/desktop-environment-integration')
+        .set('Cookie', ['language=zh-CN'])
       const $ = cheerio.load(res.text)
       const $chineseSections = $('.docs .sub-section[data-lang="zh-CN"]')
       const $englishSections = $('.docs .sub-section[data-lang="en-US"]')
@@ -273,7 +268,7 @@ describe('electronjs.org', () => {
       $('.docs .sub-section[data-lang="zh-CN"]').length.should.be.above(0)
       $('.docs .sub-section[data-lang="en-US"]').length.should.equal(0)
       $('.docs button.en-toggle').length.should.equal(0)
-    }).timeout(5000)
+    })
   })
 
   describe('releases', () => {
@@ -319,7 +314,7 @@ describe('electronjs.org', () => {
       titles.should.include('Meetups')
     })
 
-    test('includes localized content', async() => {
+    test('includes localized content', async () => {
       const res = await supertest(app)
         .get('/community')
         .set('Cookie', ['language=vi-VN'])
@@ -435,7 +430,7 @@ describe('electronjs.org', () => {
       delete process.env.CROWDIN_KEY
     })
 
-    test('hits crowdin API', async() => {
+    test('hits crowdin API', async () => {
       const mock = nock('https://api.crowdin.com')
         .get('/api/project/electron/info')
         .query({ key: process.env.CROWDIN_KEY, json: true })
@@ -470,12 +465,12 @@ describe('electronjs.org', () => {
       mock.done()
     })
 
-    test('returns 404 when trying to access API endpoints that are not whitelisted', async() => {
+    test('returns 404 when trying to access API endpoints that are not whitelisted', async () => {
       const res = await supertest(app).get('/crowdin/export')
       res.statusCode.should.equal(404)
     })
 
-    test('returns 401 when CROWDIN_KEY is not set', async() => {
+    test('returns 401 when CROWDIN_KEY is not set', async () => {
       delete process.env.CROWDIN_KEY
       const res = await supertest(app).get('/crowdin/status')
       res.statusCode.should.equal(401)
@@ -483,7 +478,7 @@ describe('electronjs.org', () => {
       res.text.should.eq('"process.env.CROWDIN_KEY is not set"')
     })
 
-    test('returns 405 on request with method other than GET', async() => {
+    test('returns 405 on request with method other than GET', async () => {
       const res = await supertest(app).post('/crowdin/add-file')
       res.statusCode.should.equal(405)
       res.type.should.equal('application/json')
@@ -492,11 +487,11 @@ describe('electronjs.org', () => {
   })
 
   describe('search', () => {
-    test('only shows search bar when there is no query', async() => {
+    test('only shows search bar when there is no query', async () => {
       const $ = await get('/search')
       $('search-results').length.should.equal(0)
     })
-    test('shows no more than 5 results from each of the 3 sources when there is query', async() => {
+    test('shows no more than 5 results from each of the 3 sources when there is query', async () => {
       const $ = await get('/search?q=ipc')
       $('ul.search-results').length.should.equal(3)
       $('ul.search-results').each((i, elem) => {
