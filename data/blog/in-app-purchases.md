@@ -5,12 +5,12 @@ date: '2018-04-04'
 ---
   
 The new Electron 2.0 release line is [packed](https://github.com/electron/electron/releases/tag/v2.0.0-beta.1) with new features and fixes. One of the highlights from this new major version is a new
-[in-app purchases API](https://github.com/electron/electron/blob/master/docs/api/in-app-purchase.md)
+[`inAppPurchase` API](https://github.com/electron/electron/blob/master/docs/api/in-app-purchase.md)
 for Apple's [Mac App Store](https://support.apple.com/en-us/HT202023).
 
 ---
 
-In-app purchases enable extra content or subscriptions to be purchased directly 
+In-app purchases enable content or subscriptions to be purchased directly 
 from within apps. This gives developers an easy way to embrace the
 [freemium business model](https://developer.apple.com/app-store/freemium-business-model/), 
 wherein users pay nothing to download an app and are offered optional 
@@ -18,10 +18,10 @@ in-app purchases for premium features, additional content, or subscriptions.
   
 The new API was added to Electron by community contributor
 [Adrien Fery](https://github.com/AdrienFery) to enable in-app purchases in 
-[Amanote](https://amanote.com/), a note-taking 
-Electron app built for students. Amanote is free to download, and includes 
-features like mathematical formulae, LaTeX, synchronizing audio to slides, and
-more.
+[Amanote](https://amanote.com/), a note-taking Electron app for lectures and 
+conferences. Amanote is free to download and allows clear and structured notes 
+to be added to PDFs, with features like mathematical formulae, drawings, audio 
+recording, and more.
 
 Since adding in-app purchase support to the Mac version of Amanote, Adrien 
 has noted a **40% increase in sales**!
