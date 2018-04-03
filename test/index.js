@@ -25,12 +25,12 @@ describe('electronjs.org', () => {
     res.headers['content-encoding'].should.equal('gzip')
   })
 
-  test('blog feeds', async () => {
-    let res = await supertest(app).get(`/blog.json`)
-    res.headers['content-type'].should.equal('application/json; charset=utf-8')
-    res.body.title.should.equal('Electron')
-    res = await supertest(app).get(`/blog.xml`)
-    res.headers['content-type'].should.equal('text/xml; charset=utf-8')
+  describe('redirects', () => {
+    test('redirects trailing slashes', async () => {
+      const res = await supertest(app).get('/apps/')
+      res.statusCode.should.equal(301)
+      res.headers.location.should.equal('/apps')
+    })
   })
 
   describe('stylesheets', () => {
@@ -113,6 +113,33 @@ describe('electronjs.org', () => {
     })
   })
 
+  describe('blog', () => {
+    test('blog feeds', async () => {
+      let res = await supertest(app).get(`/blog.json`)
+      res.headers['content-type'].should.equal('application/json; charset=utf-8')
+      res.body.title.should.equal('Electron')
+      res = await supertest(app).get(`/blog.xml`)
+      res.headers['content-type'].should.equal('text/xml; charset=utf-8')
+    })
+
+    test('/blog', async () => {
+      const $ = await get('/blog')
+      $('header').should.have.class('site-header')
+      $('.posts-list li').length.should.be.above(10)
+    })
+
+    test('/blog/webtorrent', async () => {
+      const $ = await get('/blog/webtorrent')
+      $('header').should.have.class('site-header')
+    })
+
+    test('redirects for date-style blog URLs', async () => {
+      const res = await supertest(app).get('/blog/2017/06/01/typescript')
+      res.statusCode.should.be.above(300).and.below(303)
+      res.headers.location.should.equal('/blog/typescript')
+    })
+  })
+
   describe('docs', () => {
     test('index', async () => {
       const $ = await get('/docs')
@@ -179,17 +206,24 @@ describe('electronjs.org', () => {
       $('.error-page').text().should.include('Page not found')
     })
 
-    test('//index.php?lang=Cn&index=0000', async () => {
-      const res = await supertest(app).get('//index.php?lang=Cn&index=0000')
-      res.statusCode.should.equal(404)
-    })
+    describe('docs footer', () => {
+      test('includes a link to edit the doc on GitHub', async () => {
+        const $ = await get('/docs/api/accelerator')
+        $('.propose-change').attr('href').should.eq('https://github.com/electron/electron/tree/master/docs/api/accelerator.md')
+      })
 
-    test('docs footer', async () => {
-      // includes a link to edit the doc
-      const $ = await get('/docs/api/accelerator')
-      $('.propose-change').attr('href').should.eq('https://github.com/electron/electron/tree/master/docs/api/accelerator.md')
+      test('//index.php?lang=Cn&index=0000', async () => {
+        const res = await supertest(app).get('//index.php?lang=Cn&index=0000')
+        res.statusCode.should.equal(404)
+      })
 
-      // TODO: test other docs footer links
+      test('includes a link to translate the doc on Crowdin', async () => {
+        const res = await supertest(app)
+          .get('/docs/api/accelerator')
+          .set('Cookie', ['language=zh-CN'])
+        const $ = cheerio.load(res.text)
+        $('.translate-on-crowdin').attr('href').should.eq('https://crowdin.com/translate/electron/63/en-zhcn')
+      })
     })
 
     test('doc history', async () => {
@@ -261,18 +295,6 @@ describe('electronjs.org', () => {
       const $ = await get('/userland/404')
       $('.error-page').text().should.include('Page not found')
     })
-  })
-
-  test('/blog', async () => {
-    const $ = await get('/blog')
-    $('header').should.have.class('site-header')
-    $('.posts-list li').length.should.be.above(10)
-  })
-
-  test('/blog/webtorrent', async () => {
-    const $ = await get('/blog/webtorrent')
-    $('header').should.have.class('site-header')
-    // TODO: post title is page title
   })
 
   test('/awesome', async () => {
@@ -376,18 +398,6 @@ describe('electronjs.org', () => {
         res = await supertest(app).get(`/docs/api/browser-window?lang=${lang}`)
         res.statusCode.should.be.equal(200)
       }
-    })
-
-    test('redirects for date-style blog URLs', async () => {
-      const res = await supertest(app).get('/blog/2017/06/01/typescript')
-      res.statusCode.should.be.above(300).and.below(303)
-      res.headers.location.should.equal('/blog/typescript')
-    })
-
-    test('redirects trailing slashes', async () => {
-      const res = await supertest(app).get('/apps/')
-      res.statusCode.should.equal(301)
-      res.headers.location.should.equal('/apps')
     })
   })
 
