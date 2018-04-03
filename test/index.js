@@ -184,19 +184,18 @@ describe('electronjs.org', () => {
       res.statusCode.should.equal(404)
     })
 
-    test('docs footer', async () => {
-      // includes a link to edit the doc
-      const $ = await get('/docs/api/accelerator')
-      $('.propose-change').attr('href').should.eq('https://github.com/electron/electron/tree/master/docs/api/accelerator.md')
+    describe('docs footer', () => {
+      test('includes a link to edit the doc on GitHub', async () => {
+        const $ = await get('/docs/api/accelerator')
+        $('.propose-change').attr('href').should.eq('https://github.com/electron/electron/tree/master/docs/api/accelerator.md')
+      })
 
-      // TODO: test other docs footer links
-    })
-
-    test('doc history', async () => {
-      const $ = await get('/docs/api/accelerator/history')
-      // $('body').text().should.include('The Accelerator API was introduced in Electron v0.15.3')
-      // $('head > title').text().should.eq('accelerator Version History | Electron')
-      $('tr').length.should.be.above(10)
+      test('includes a link to view doc history', async () => {
+        const $ = await get('/docs/api/accelerator/history')
+        // $('body').text().should.include('The Accelerator API was introduced in Electron v0.15.3')
+        // $('head > title').text().should.eq('accelerator Version History | Electron')
+        $('tr').length.should.be.above(10)
+      })
     })
   })
 
