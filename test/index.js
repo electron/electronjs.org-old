@@ -382,6 +382,7 @@ describe('electronjs.org', () => {
       for (let lang of langs) {
         res = await supertest(app).get(`/docs/api/browser-window?lang=${lang}`)
         res.statusCode.should.be.equal(200)
+        res.statusCode.should.equal(200)
       }
     })
 
