@@ -190,6 +190,14 @@ describe('electronjs.org', () => {
         $('.propose-change').attr('href').should.eq('https://github.com/electron/electron/tree/master/docs/api/accelerator.md')
       })
 
+      test('includes a link to translate the doc on Crowdin', async () => {
+        const res = await supertest(app)
+          .get('/docs/api/accelerator')
+          .set('Cookie', ['language=zh-CN'])
+        const $ = cheerio.load(res.text)
+        $('.translate-on-crowdin').attr('href').should.eq('https://crowdin.com/translate/electron/63/en-zhcn')
+      })
+
       test('includes a link to view doc history', async () => {
         const $ = await get('/docs/api/accelerator/history')
         // $('body').text().should.include('The Accelerator API was introduced in Electron v0.15.3')
