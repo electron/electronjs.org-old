@@ -1,96 +1,43 @@
 ---
 title: "New in Electron 2: In-App Purchases"
 author: zeke
-date: '2018-02-27'
+date: '2018-04-04'
 ---
   
-Last week we published Electron 2.0.0-beta.1, a beta release packed with new
+The new Electron 2.0 release line is [packed](https://github.com/electron/electron/releases/tag/v2.0.0-beta.1) with new features and fixes. One of the highlights from this new major version is a new
+[in-app purchases API](https://github.com/electron/electron/blob/master/docs/api/in-app-purchase.md)
+for Apple's [Mac App Store](https://support.apple.com/en-us/HT202023).
 
-features and fixes. One of the highlights is
-
-[a new API](https://github.com/electron/electron/blob/master/docs/api/in-app-purchase.md)
-
-for making in-app purchases through Mac App Store.
-
-  
 ---
+
+In-app purchases enable extra content or subscriptions to be purchased directly 
+from within apps. This gives developers an easy way to embrace the
+[freemium business model](https://developer.apple.com/app-store/freemium-business-model/), 
+wherein users pay nothing to download an app and are offered optional 
+in-app purchases for premium features, additional content, or subscriptions.
   
+The new API was added to Electron by community contributor
+[Adrien Fery](https://github.com/AdrienFery) to enable in-app purchases in 
+[Amanote](https://amanote.com/), a note-taking 
+Electron app built for students. Amanote is free to download, and includes 
+features like mathematical formulae, LaTeX, synchronizing audio to slides, and
+more.
 
-This new API was added by community contributor
+Since adding in-app purchase support to the Mac version of Amanote, Adrien 
+has noted a **40% increase in sales**!
 
-[Adrien Fery](https://github.com/AdrienFery) of
+## Considerations
 
-[Amaplex Software](http://www.amaplex.com/). We chatted with
+If you're developing an Electron app and considering distributing it in app 
+stores, here are a few points to keep in mind:
 
-Adrien to learn more about how his motivations for adding this new API,
-
-how he implemented it, and what his company is using
-
-it for.
-
+- Some Mac users only download from the Mac App Store, because they don't trust third-party applications.
+- Apple doesn't allow the use of external checkout systems.
+- Apple takes a [30% cut](https://developer.apple.com/in-app-purchase/) of your sales
+- The Microsoft Store also takes a [30% cut](https://docs.microsoft.com/en-us/windows/uwp/publish/getting-paid-apps)
   
-  
+## Windows Could Be Next
 
-The rest
-
-  
-
-https://github.com/electron/electron/pull/11292
-
-  
-
-https://github.com/electron/electron/blob/master/docs/api/in-app-purchase.md
-
-  
-
-https://amanote.com/
-
-  
-
-> Many iPhone, iPad, iPod touch, and Mac apps allow you to make in-app purchases, such as recurring subscriptions, in-game currency, or full game or app unlocks.
-
-  
-
-> In-app purchases are extra content or subscriptions that you can buy in apps on your iOS device or computer.
-
-  
-https://support.apple.com/en-us/HT202023
-  
-
-+// Copyright (c) 2017 Amaplex Software, Inc.
-
-Amanote was created because there was no note-taking software for students. Add notes to slides, mathematical formula, Latex. Developed to help students take notes.
-
-40,000 users. in four months
-
-published on the mac app store.
-first in Belgium and Italy in Education category
-Apple doesn't allow the use of external checkout systems.
-
-App is free to download. In the application, user can purchase a subscription to get new features.
-
-Windows app too, but not in the store. They take 30% too.
-
-Published to MAS because we can reach more users by organic search. Trying to get feature by Apple.
-
-Some mac users only download from the app store, because they don't trust third-party applications.
-
-Windows vs Mac: 50/50.
-
-How do they find the Windows application? Website
-
-Partnered with universites, asking to send an email about Amanote in exchange for a free account.
-
-2 big universities, 4 small. 25,000 students.
-
-Facebook ads.
-
-Next step is to get feature or use search ads in app store.
-
-First PR to electron. No problem.
-
-Started in 2015. Got funding. Hiring developers.
-
-40% increase in sales.
-
-Plan to make Amanote compatible with iPad and Android. Going to try Cordova/PhoneGap.
+Up next, Adrien is hoping to open a new revenue channel for Amanote by adding 
+support for Microsoft Store in-app purchases in Electron. Stay tuned for 
+developments on that!
