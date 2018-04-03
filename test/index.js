@@ -198,14 +198,22 @@ describe('electronjs.org', () => {
         $('.translate-on-crowdin').attr('href').should.eq('https://crowdin.com/translate/electron/63/en-zhcn')
       })
 
-      test('includes a link to translate en-US on Crowdin, even though it is not a target language', async () => {
+      test('includes a link to translate the doc on Crowdin for Indonesian', async () => {
+        const res = await supertest(app)
+          .get('/docs/api/crash-reporter')
+          .set('Cookie', ['language=id-ID'])
+        const $ = cheerio.load(res.text)
+        $('.translate-on-crowdin').attr('href').should.eq('https://crowdin.com/translate/electron/74/en-id')
+      })
+
+      test('includes a link to Crowdin language picker when language is English', async () => {
         // Crowdin displays a nice language picker when target language does not exist
         // See https://git.io/vx1TI
         const res = await supertest(app)
           .get('/docs/api/browser-view')
           .set('Cookie', ['language=en-US'])
         const $ = cheerio.load(res.text)
-        $('.translate-on-crowdin').attr('href').should.eq('https://crowdin.com/translate/electron/66/en-enus')
+        $('.translate-on-crowdin').attr('href').should.eq('https://crowdin.com/translate/electron/66/en-en')
       })
 
       test('includes a link to view doc history', async () => {
