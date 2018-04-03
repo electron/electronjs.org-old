@@ -26,16 +26,21 @@ recording, and more.
 Since adding in-app purchase support to the Mac version of Amanote, Adrien 
 has noted a **40% increase in sales**!
 
-## Considerations
+## Getting Started
 
-If you're developing an Electron app and considering distributing it in app 
-stores, here are a few points to keep in mind:
+The new [`inAppPurchase`](https://github.com/electron/electron/blob/master/docs/api/in-app-purchase.md) API has already landed in the latest Electron beta:
 
-- Some Mac users only download from the Mac App Store, because they don't trust third-party applications.
-- Apple doesn't allow the use of external checkout systems.
-- Apple takes a [30% cut](https://developer.apple.com/in-app-purchase/) of your sales
-- The Microsoft Store also takes a [30% cut](https://docs.microsoft.com/en-us/windows/uwp/publish/getting-paid-apps)
-  
+```sh
+npm i -D electron@beta
+```
+
+The docs for the API can be [found on GitHub](https://github.com/electron/electron/blob/master/docs/api/in-app-purchase.md),
+and Adrien has been kind enough to write a tutorial on how to use the API. To
+get started adding in-app purchases to your app, [see the tutorial](https://github.com/AdrienFery/electron/blob/a69bbe882aed1a5aee2b7910afe09900275b2bf6/docs/tutorial/in-app-purchases.md).
+
+More [improvements to the API](https://github.com/electron/electron/pull/12464)
+are in the works, and will soon be landing in an upcoming Electron beta release.
+
 ## Windows Could Be Next
 
 Up next, Adrien is hoping to open a new revenue channel for Amanote by adding 
