@@ -198,6 +198,16 @@ describe('electronjs.org', () => {
         $('.translate-on-crowdin').attr('href').should.eq('https://crowdin.com/translate/electron/63/en-zhcn')
       })
 
+      test('includes a link to translate en-US on Crowdin, even though it is not a target language', async () => {
+        // Crowdin displays a nice language picker when target language does not exist
+        // See https://git.io/vx1TI
+        const res = await supertest(app)
+          .get('/docs/api/browser-view')
+          .set('Cookie', ['language=en-US'])
+        const $ = cheerio.load(res.text)
+        $('.translate-on-crowdin').attr('href').should.eq('https://crowdin.com/translate/electron/66/en-enus')
+      })
+
       test('includes a link to view doc history', async () => {
         const $ = await get('/docs/api/accelerator/history')
         // $('body').text().should.include('The Accelerator API was introduced in Electron v0.15.3')
