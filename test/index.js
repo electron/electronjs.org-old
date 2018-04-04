@@ -184,19 +184,44 @@ describe('electronjs.org', () => {
       res.statusCode.should.equal(404)
     })
 
-    test('docs footer', async () => {
-      // includes a link to edit the doc
-      const $ = await get('/docs/api/accelerator')
-      $('.propose-change').attr('href').should.eq('https://github.com/electron/electron/tree/master/docs/api/accelerator.md')
+    describe('docs footer', () => {
+      test('includes a link to edit the doc on GitHub', async () => {
+        const $ = await get('/docs/api/accelerator')
+        $('.propose-change').attr('href').should.eq('https://github.com/electron/electron/tree/master/docs/api/accelerator.md')
+      })
 
-      // TODO: test other docs footer links
-    })
+      test('includes a link to translate the doc on Crowdin', async () => {
+        const res = await supertest(app)
+          .get('/docs/api/accelerator')
+          .set('Cookie', ['language=zh-CN'])
+        const $ = cheerio.load(res.text)
+        $('.translate-on-crowdin').attr('href').should.eq('https://crowdin.com/translate/electron/63/en-zhcn')
+      })
 
-    test('doc history', async () => {
-      const $ = await get('/docs/api/accelerator/history')
-      // $('body').text().should.include('The Accelerator API was introduced in Electron v0.15.3')
-      // $('head > title').text().should.eq('accelerator Version History | Electron')
-      $('tr').length.should.be.above(10)
+      test('includes a link to translate the doc on Crowdin for Indonesian', async () => {
+        const res = await supertest(app)
+          .get('/docs/api/crash-reporter')
+          .set('Cookie', ['language=id-ID'])
+        const $ = cheerio.load(res.text)
+        $('.translate-on-crowdin').attr('href').should.eq('https://crowdin.com/translate/electron/74/en-id')
+      })
+
+      test('includes a link to Crowdin language picker when language is English', async () => {
+        // Crowdin displays a nice language picker when target language does not exist
+        // See https://git.io/vx1TI
+        const res = await supertest(app)
+          .get('/docs/api/browser-view')
+          .set('Cookie', ['language=en-US'])
+        const $ = cheerio.load(res.text)
+        $('.translate-on-crowdin').attr('href').should.eq('https://crowdin.com/translate/electron/66/en-en')
+      })
+
+      test('includes a link to view doc history', async () => {
+        const $ = await get('/docs/api/accelerator/history')
+        // $('body').text().should.include('The Accelerator API was introduced in Electron v0.15.3')
+        // $('head > title').text().should.eq('accelerator Version History | Electron')
+        $('tr').length.should.be.above(10)
+      })
     })
   })
 
@@ -375,6 +400,7 @@ describe('electronjs.org', () => {
       for (let lang of langs) {
         res = await supertest(app).get(`/docs/api/browser-window?lang=${lang}`)
         res.statusCode.should.be.equal(200)
+        res.statusCode.should.equal(200)
       }
     })
 
