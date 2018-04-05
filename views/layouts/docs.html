@@ -46,26 +46,44 @@
 
 <div class='py-6 py-md-7 py-lg-8'>
   <div class='container-lg p-responsive docs strong-headers'>
-    <div class="markdown-body">{{{body}}}</div>
-    <hr>
+    <div class="row">
+      <div class="col-xs-12 col-md-3">
+        {{#if doc.isTutorial}}
+          {{{nav}}}
+        {{/if}}
+        {{#if doc.isApiDoc}}
+          <ul>
+            {{#each docs}}
+              {{#if this.isApiDoc}}
+                <li>
+                  <a href="{{this.href}}">{{this.title}}</a>
+                </li>
+              {{/if}}
+            {{/each}}
+          </ul>
+        {{/if}}
+      </div>
+      <div class="col-xs-12 col-md-9 container-narrow">
+        <div class="markdown-body">{{{body}}}</div>
+        <hr>
+        <div class="doc-actions text-center">
+          <a class="mr-4 propose-change" href='{{doc.githubUrl}}'>
+            <span class="octicon octicon-mark-github"></span>
+            {{localized.docs.footer.propose_change}}
+          </a>
 
-    <div class="doc-actions text-center">
-      <a class="mr-4 propose-change" href='{{doc.githubUrl}}'>
-        <span class="octicon octicon-mark-github"></span>
-        {{localized.docs.footer.propose_change}}
-      </a>
+          <a class="mr-4 translate-on-crowdin" href='{{doc.crowdinUrl}}'>
+            <span class="octicon octicon-globe"></span>
+            {{localized.docs.footer.translate}}
+          </a>
 
-      <a class="mr-4 translate-on-crowdin" href='{{doc.crowdinUrl}}'>
-        <span class="octicon octicon-globe"></span>
-        {{localized.docs.footer.translate}}
-      </a>
-
-      <a class="mr-4" href='{{doc.href}}/history'>
-        <span class="octicon octicon-history"></span>
-        {{localized.docs.footer.version_history}}
-      </a>
+          <a class="mr-4" href='{{doc.href}}/history'>
+            <span class="octicon octicon-history"></span>
+            {{localized.docs.footer.version_history}}
+          </a>
+        </div>
+      </div>
     </div>
-
   </div>
 </div>
 </main>
