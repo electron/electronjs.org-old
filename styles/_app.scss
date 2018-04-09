@@ -1,111 +1,229 @@
 // App page ------------------------------
 
+.left-bar {
+  flex: 0;
+
+  @include breakpoint(md) {
+    min-width: 300px;
+    flex: 0.4;
+    max-width: 400px;
+    padding-right: 32px;
+  }
+}
+
 .app-header {
-  position: relative;
-  text-align: center;
-}
+  display: flex;
+  flex-direction: row;
 
-.app-link {
-  &:hover {
-    color: inherit;
-    text-decoration: none;
+  .app-logo {
+    display: block;
+    max-width: 96px;
+    height: 96px;
+    margin-right: 32px;
+
+    @include breakpoint(md) {
+      margin: 0 auto;
+    }
+  }
+
+  .app-link {
+    &:hover {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+
+  .app-title {
+    position: relative;
+    flex: 1;
+
+    .app-name {
+      margin: 0;
+      color: inherit;
+      font-size: 2em;
+      line-height: 1.1;
+    }
+    
+    .app-description {
+      margin: .3em 0 0 0;
+      font-size: 1.2em;
+      font-weight: 300;
+      line-height: 1.4;
+    }
   }
 }
 
-.app-logo {
-  display: inline-block;
-  max-width: 128px;
-  height: 128px;
-}
+.app-container {
+  margin-top: 32px;
 
-.app-name {
-  margin: 0;
-  color: inherit;
-  font-size: 2em;
-  line-height: 1.1;
-}
-
-.app-description {
-  margin: .3em 0 0 0;
-  font-size: 1.2em;
-  font-weight: 300;
-  line-height: 1.4;
-}
-
-.app-screenshot {
-  margin: 3rem 0 0 0;
-  text-align: center;
-}
-
-
-.app-details {
-  margin: 2rem;
-
-  td {
-    padding: 1rem 0;
+  @include breakpoint(md) {
+    display: flex;
   }
 
-  td:first-child {
-    padding-right: 3rem;
-    white-space: nowrap;
-    vertical-align: top;
+  .app-meta {
+    display: flex;
+    flex-wrap: wrap;
+
+    &.sticky {
+      @include breakpoint(md) {
+        position: sticky;
+        top: 20px;
+      }
+    }
+
+    @include breakpoint(md) {
+      flex-direction: column;
+      flex-wrap: nowrap;
+    }
+
+    .app-meta-entry {
+      font-size: 14px;
+      padding: 16px 0;
+      border-top: 1px darken($main-bg-color-shade, 8%) solid;
+      width: 100%;
+
+      @include breakpoint(sm) {
+        width: 50%;
+      }
+
+      @include breakpoint(md) {
+        width: 100%;
+      }
+
+      &:nth-child(1) {
+        border-top: none;
+      }
+      &:nth-child(2) {
+        border-top: 1px darken($main-bg-color-shade, 8%) solid;
+
+        @include breakpoint(sm) {
+          border-top: none;
+        }
+
+        @include breakpoint(md) {
+          border-top: 1px darken($main-bg-color-shade, 8%) solid;
+        }
+      }
+
+      h5 {
+        font-size: 14px;
+        -webkit-font-smoothing: antialiased;
+      }
+    }
+  }
+
+  .app-boxes {
+    flex: 1;
+    @include breakpoint(md) {
+      max-width: calc(100% - 300px);
+    }
+
+    .app-box {
+      border: 1px solid $main-border-color;
+      border-radius: 5px;
+      box-shadow: 0 0 16px -4px rgba(0, 0, 0, 0.28);
+      margin-bottom: 32px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .app-keyword {
+    padding: 0.2em 0.4em;
+    font-size: 0.85em;
+    border-radius: 3px;
+    background-color: $main-bg-color-shade;
+    &:hover {
+      text-decoration: none;
+      background-color: darken($main-bg-color-shade, 4%);
+    }
+  }
+  
+  .app-tagname {
+    margin-left: .5em;
     color: $main-color-subtle;
   }
-  td:last-child {
-    word-break: break-word;
-    border-bottom: 1px solid mix($main-border-color, $main-bg-color);
+  
+  .app-download {
+    display: block;
+    padding: 0.4em .8em;
+    border-radius: 3px;
+    margin: 0 .5em .5em 0;
+    line-height: 1.7;
+    border: none;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    direction: rtl;
+    text-align: left;
+    
+    @include breakpoint(md) {
+      display: inline-block;
+    }
+
+    &:hover {
+      text-decoration: none;
+      border-color: lighten($main-link-color, 20%);
+    }
   }
-  tr:last-child td:last-child {
-    border-bottom: none;
+
+  .app-readme {
+    padding: 3rem;
+
+    > div > article > *:first-child {
+      margin-top: 0 !important;
+    }
+  
+    .octicon-link {
+      display: none;
+    }
+  }
+
+  .app-screenshots {
+    .active-screenshot {
+      padding: 16px;
+    }
+
+    .all-screenshots {
+      height: 128px;
+      border-top: 1px solid $main-border-color;
+      white-space: nowrap;
+      overflow-y: auto;
+
+      .app-screenshot-thumb {
+        border-right: 1px solid $main-border-color;
+        display: inline-flex;
+        flex-direction: column;
+        width: 196px;
+        cursor: pointer;
+        overflow: hidden;
+        /* Scroll bug in Chrome */
+        height: 126px;
+
+        img {
+          height: 110px;
+          margin: 8px;
+
+          &.caption {
+            height: 84px;
+          }
+        }
+
+        .app-screenshot-caption {
+          text-align: center;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          padding: 0 8px;
+        }
+      }
+    }
   }
 }
 
-.app-keyword {
-  padding: 0.2em 0.4em;
-  font-size: 0.85em;
-  border-radius: 3px;
-  background-color: $main-bg-color-shade;
-  &:hover {
-    text-decoration: none;
-    background-color: darken($main-bg-color-shade, 4%);
-  }
-}
-
-.app-tagname {
-  margin-left: .5em;
-  color: $main-color-subtle;
-}
-
-.app-download {
-  display: inline-block;
-  padding: 0.4em .8em;
-  border-radius: 3px;
-  margin: 0 .5em .5em 0;
-  line-height: 1.7;
-  border: none;
-  &:hover {
-    text-decoration: none;
-    border-color: lighten($main-link-color, 20%);
-  }
-}
-
-.app-readme-header {
-  margin: 3rem 0;
-  text-align: center;
-}
-
-.app-readme-button {
-  border-color: $main-border-color;
-}
-
-.app-readme {
-  padding: 3rem;
-  border: 1px solid $main-border-color;
-  border-radius: 5px;
-
-  .octicon-link {
-    display: none;
-  }
+.something-missing {
+  margin-top: 32px;
 }
 
 // basecoat filter-list overrides

@@ -12,5 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
   require('./remove-scheme-from-link-text')()
   require('browser-date-formatter')()
   require('./copy-code-to-clipboard')()
+  require('./sticky-app-meta')()
+  require('./screenshot-thumb-selector')()
   require('./docs-language-toggle')()
 })

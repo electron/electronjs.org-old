@@ -12,8 +12,10 @@ module.exports = function updateAppDownloadLinks () {
   const platform = getPlatformFromUserAgent()
   const matches = links.filter(link => link.classList.contains(platform))
 
-  // No downloads found for the detected OS. Leave links untouched.
-  if (!matches.length) return
+  if (!matches.length) {
+    // No downloads found for the detected OS, probably android/ios
+    // Hide all links and let them click view all files if wanted
+  }
 
   links.forEach(link => {
     link.style.display = link.classList.contains(platform)
@@ -26,6 +28,6 @@ module.exports = function updateAppDownloadLinks () {
   }
 
   if (links.length > 1) {
-    document.querySelector('#view-all-downloads').style.display = 'inline-block'
+    document.querySelector('#view-all-downloads').style.display = 'block'
   }
 }
