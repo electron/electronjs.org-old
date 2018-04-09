@@ -8,7 +8,23 @@ module.exports = function contextBuilder (req, res, next) {
   // Attach i18n object to request so any route handler can use it if needed
   req.i18n = i18n
 
+  // This allows the language to be set per-request using a query param, so
+  // folks can share a link like /docs/api/app?lang=fr-FR and know that
+  // the recipient will see the doc in that language, regardless of their
+  // language settings. If no query param is set, fall back to the default
+  // language (or the one set in the cookie)
+  if (req.query.lang) {
+    req.language = req.query.lang
+  }
+
+  // If request language does not exist, fall back to English
+  // e.g. /?lang=Foo
+  if (!i18n.website[req.language]) req.language = 'en-US'
+
   const localized = i18n.website[req.language]
+
+  const stableRelease = releases.find(release => release.npm_dist_tag === 'latest')
+  const betaRelease = releases.find(release => release.npm_dist_tag === 'beta')
 
   // Page titles, descriptions, etc
   let page = Object.assign({
@@ -30,7 +46,9 @@ module.exports = function contextBuilder (req, res, next) {
     locales: i18n.locales,
     page: page,
     localized: localized,
-    cookies: req.cookies
+    cookies: req.cookies,
+    stableRelease,
+    betaRelease
   }
 
   if (req.path.startsWith('/docs')) {

@@ -128,5 +128,18 @@
   a {
     text-decoration: none;
   }
+}
 
+.docs {
+  .sub-section[data-lang='en-US'] .en-toggle h5 {
+    color: $main-link-color;
+  }
+  .sub-section:not([data-lang='en-US']) {
+    .en-toggle h5 {
+      color: $main-bg-color;
+    }
+    &:hover .en-toggle h5 {
+      color: $main-border-color;
+    }
+  }
 }

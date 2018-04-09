@@ -1,0 +1,64 @@
+{{#*inline "searchForm"}}
+<form action="/search" method="get" class="search-form">
+  <input
+    class="col-sm-8 col-xs-12 px-3 py-3 my-2"
+    placeholder="> search_term"
+    type="search"
+    autofocus="on"
+    autocapitalize="off"
+    autocorrect="off"
+    name="q"
+    value="{{query.q}}"
+  >
+  <button class="btn-link my-2 ml-4" type="submit">
+    <span class="octicon octicon-search"></span>
+  </button>
+</form>
+{{/inline}}
+
+{{#if query.q}}
+  <section class="page-section">
+    <div class="container-narrow search-results">
+      {{> searchForm}}
+      <h4 class="mb-4">Search Results for <i>&ldquo;{{query.q}}&rdquo;</i></h4>
+
+      {{#each searchResults}}
+        <div class="my-8">
+
+          <h2>
+            <a href="search/{{searchOp.name}}?q={{../query.q}}"><span class="mega-octicon octicon-{{searchOp.octicon}} mr-1"></span></a>
+            <a href="search/{{searchOp.name}}?q={{../query.q}}">{{searchOp.displayName}}</a>
+            <span class="faint">({{resultsNum}})</span>
+          </h2>
+
+          {{> (lookup searchOp 'partial')}}
+
+          {{#unless ../searchIn}}
+            <div class="mt-3"><a href="search/{{searchOp.name}}?q={{../query.q}}">View more results &nbsp;<span class="octicon octicon-arrow-small-right"></span></a></div>
+          {{/unless}}
+        </div>
+      {{/each}}
+    </div>
+  </section>
+{{else}}
+  <section class="page-section">
+    <div class="container-narrow">
+      <p class="lead m-4 text-center">
+        {{#if searchIn}}
+          {{#eq searchIn 'docs'}}
+            {{localized.search.description_docs}}
+          {{/eq}}
+          {{#eq searchIn 'npmPackages'}}
+            {{localized.search.description_npm}}
+          {{/eq}}
+          {{#eq searchIn 'repos'}}
+            {{localized.search.description_repos}}
+          {{/eq}}
+        {{else}}
+          {{{localized.search.description_all}}}
+        {{/if}}
+      </p>
+      {{> searchForm}}
+    </div>
+  </section>
+{{/if}}

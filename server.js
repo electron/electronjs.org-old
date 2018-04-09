@@ -1,3 +1,5 @@
+require('make-promises-safe')
+
 const argv = require('minimist')(process.argv.slice(2))
 const path = require('path')
 const i18n = require('./lib/i18n')
@@ -14,6 +16,7 @@ const requestLanguage = require('express-request-language')
 const cookieParser = require('cookie-parser')
 const sass = require('./middleware/sass')
 const helmet = require('helmet')
+const langResolver = require('./middleware/lang-resolver')
 const contextBuilder = require('./middleware/context-builder')
 const blog = require('./middleware/blog')
 
@@ -51,6 +54,7 @@ app.use(requestLanguage({
   }
 }))
 app.use(express.static(__dirname))
+app.use(langResolver)
 app.use(contextBuilder)
 app.use(blog)
 app.use(browsersync())
@@ -70,7 +74,7 @@ app.get('/devtron', routes.devtron)
 app.get('/docs', routes.docs.index)
 app.get('/docs/versions', (req, res) => res.redirect(301, '/releases'))
 app.get('/docs/:category', routes.docs.category)
-app.get('/docs/:category/:slug/history', routes.docs.history)
+app.get('/docs/*/history', routes.docs.history)
 app.get('/docs/:category/*', routes.docs.show)
 app.get('/docs/latest*', (req, res) => res.redirect(req.path.replace(/^\/docs\/latest/ig, '/docs')))
 app.get('/docs/v0*', (req, res) => res.redirect(req.path.replace(/^\/docs\/v0\.\d+\.\d+/ig, '/docs')))
@@ -83,8 +87,11 @@ app.get('/releases', routes.releases.index)
 app.get('/spectron', routes.spectron)
 app.get('/userland', routes.userland.index)
 app.get('/userland/*', routes.userland.show)
-
 app.use('/crowdin', routes.languages.proxy)
+app.use('/donors', routes.donors)
+app.get('/search/:searchIn*?', routes.search.index)
+
+// Generic 404 handler
 app.use(routes._404)
 
 if (!module.parent) {

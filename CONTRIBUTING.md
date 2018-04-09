@@ -11,18 +11,18 @@ feel free to propose changes to this document in a pull request.
 - [Issues and Pull Requests](#issues-and-pull-requests)
 - [Heroku Review Apps](#heroku-review-apps)
 - [Running the Site](#running-the-site)
-- [Editing Content](#content)
+- [Editing Content](#editing-content)
   - [Documentation](#documentation)
   - [Apps](#apps)
   - [Blog](#blog)
   - [Localized Strings](#localized-strings)
   - [Translations](#translations)
 - [Routes](#routes)
-- [Middlware](#middleware)
+- [Middleware](#middleware)
 - [Views](#views)
 - [Context](#context)
 - [Styles](#styles)
-- [Fontend JavaScript](#frontend-javascript)
+- [Frontend JavaScript](#frontend-javascript)
 - [Scripts](#scripts)
 - [Environment Variables](#environment-variables)
 
@@ -144,6 +144,30 @@ See
 on how to get started, or jump right into translating at 
 [crowdin.com/project/electron](https://crowdin.com/project/electron).
 
+#### Crowdin Proxy
+
+To allow open source community members to develop electronjs.org and 
+electron-i18n, we've added a feature to the Electron website that allows 
+Crowdin API requests to be made without an API key. The following routes are 
+supported:
+
+Electron URL | Crowdin Docs
+--- | ----
+[GET /crowdin/status](https://electronjs.org/crowdin/status) | [status](https://support.crowdin.com/api/status)
+[GET /crowdin/language-status](https://electronjs.org/crowdin/language-status) | [language-status](https://support.crowdin.com/api/language-status)
+[GET /crowdin/info](https://electronjs.org/crowdin/info) | [info](https://support.crowdin.com/api/info)
+[GET /crowdin/download-glossary](https://electronjs.org/crowdin/download-glossary) | [download-glossary](https://support.crowdin.com/api/download-glossary)
+[GET /crowdin/export-file](https://electronjs.org/crowdin/export-file) | [export-file](https://support.crowdin.com/api/export-file)
+
+#### Sharing Localized URLs
+
+If you wish to share a URL linking to a translated page of the Electron website,
+add a `lang` param to the URL. This will override the visitor's existing 
+language preferences and display the given page in the specified language:
+
+Example: 
+[/docs/api/browser-window?lang=fr-FR](https://electronjs.org/docs/api/browser-window?lang=fr-FR)
+
 ## Routes
 
 Website routes are defined in [server.js](server.js).
@@ -198,7 +222,7 @@ for the rest.
 ## Views
 
 Views live in the [/views](/views) directory, and are written 
-in [Handlebars](handlebarsjs.com).
+in [Handlebars](https://handlebarsjs.com).
 
 Handlebars provides a very small set of 
 [built-in helpers](http://handlebarsjs.com/builtin_helpers.html) like 
@@ -219,7 +243,7 @@ like nested layouts and partials.
 Every [view](#views) can be passed a `context`, an object prepared by the 
 server that contains data to be used in the Handlebars templates. We use a 
 custom middleware to assemble a default context object with data that is 
-common to every view. See [lib/context-builder.js](lib/context-builder.js).
+common to every view. See [middleware/context-builder.js](middleware/context-builder.js).
 
 The context builder middleware is executed before the views, so every route
 handler has a `req.context` object that can be modified if needed. 

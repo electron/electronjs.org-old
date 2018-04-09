@@ -7,15 +7,23 @@
   </div>
 </div>
 
-<div class="subtron py-4 text-center">
-  <div class="container">
-    <div id="electron-versions" class="electron-versions">
-      <span class="electron-versions-main">Electron: <strong>{{{deps.version}}}</strong></span>
-      <span>Node: <strong>{{{deps.node}}}</strong></span>
-      <span>Chromium: <strong>{{{deps.chrome}}}</strong></span>
-      <span>V8: <strong>{{{deps.v8}}}</strong></span>
-    </div>
-  </div>
+<div class="container">
+    <h1 class="text-center"><a href="/releases">{{localized.releases}}</a></h1>
+      <div class="col-xs-12 col-md-6">
+        <figure id="electron-version-latest" class="highlight highlight-dark text-left my-3 px-2">
+            <pre class="overflow-hidden"><code>$ npm i -D electron@latest
+<span class="c1"># Electron   {{{stableRelease.version}}}
+# Node       {{stableRelease.deps.node}}
+# Chromium   {{stableRelease.deps.chrome}}</span></code></pre></figure>
+      </div>
+      <div class="col-xs-12 col-md-6">
+
+          <figure id="electron-version-beta" class="highlight highlight-dark text-left my-3 px-3">
+              <pre class="overflow-hidden"><code>$ npm i -D electron@beta
+<span class="c1"># Electron   {{{betaRelease.version}}}
+# Node       {{betaRelease.deps.node}}
+# Chromium   {{betaRelease.deps.chrome}}</span></code></pre></figure>
+      </div>
 </div>
 
 <section class="page-section page-section-spacious" id='electron'>
@@ -26,7 +34,7 @@
     <p class="text-center-sm mt-4">
       <a class="btn btn-lg btn-outline-themed" href="https://youtu.be/8YP_nOCO-4Q">
         <span class="octicon octicon-eye mr-1"></span>
-        <span class="label">{{{localized.electron_is_easy.video_link}}}</span>
+        <span>{{{localized.electron_is_easy.video_link}}}</span>
       </a>
     </p>
 
@@ -112,7 +120,7 @@
         <p>
           <a id="download-latest-release" class="btn btn-lg btn-outline-themed" href="https://github.com/electron/electron-api-demos/releases">
             <span class="octicon octicon-desktop-download mr-1"></span>
-            <span class="label">{{{localized.download_from_github}}}</span>
+            <span>{{{localized.download_from_github}}}</span>
           </a>
         </p>
         <p id="download-alternatives" class="text-sm" style="display:none;">
@@ -170,7 +178,7 @@ $ npm install &amp;&amp; npm start</code></pre>
       <p class="mt-6">
         <a href='/apps'>{{{localized.apps.view_more}}}</a>
           {{{localized.or}}}
-          <a href="https://github.com/electron/electronjs.org/blob/gh-pages/CONTRIBUTING.md#adding-an-app-or-project-to-the-site">{{{localized.apps.submit_your_own}}}</a>.
+          <a href="https://github.com/electron/electron-apps/blob/master/contributing.md#adding-your-app">{{{localized.apps.submit_your_own}}}</a>.
       </p>
     </div>
   </div>

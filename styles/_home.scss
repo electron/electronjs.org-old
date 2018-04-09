@@ -10,43 +10,13 @@
 
 // Headers ------------------------------
 
-// Electron version
-.electron-versions {
-  display: inline-block;
-  margin: 0 auto;
-  color: $main-color-subtle;
-  font-size: .88em;
-
-  @include breakpoint(md) {
-    display: table;
-  }
+.nodejs-color {
+  color: $nodejs-color;
 }
 
-.electron-versions span {
-  display: inline-block;
-  line-height: 1;
-  padding: 0.6em 0.8em;
-  white-space: nowrap;
-
-  @include breakpoint(md) {
-    display: table-cell;
-    & + span:not(:last-child) {
-      border-right: 1px solid $border-color;
-    }
-  }
+.chromium-color {
+  color: $chromium-color;
 }
-
-.electron-versions strong {
-  color: $main-color-strong;
-}
-
-.electron-versions-main {
-  border-radius: 3px;
-  color: $main-color;
-  border: 1px solid $border-color;
-  background-color: lighten($sub-bg-color, 6%);
-}
-
 
 // Features ------------------------------
 

@@ -76,6 +76,10 @@ img[data-src] {
   opacity: 0;
 }
 
+.overflow-hidden {
+  overflow: hidden  !important;
+}
+
 
 // add top margin
 // to make it easier to see headers within a long wall of text
