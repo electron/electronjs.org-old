@@ -175,7 +175,7 @@ quick_start:
 
 need_help:
   title: Need Help?
-  description: Ask questions in the <a href='https://discuss.atom.io/c/electron'>Discuss</a> forum or our <a href='http://atom-slack.herokuapp.com/'>Slack</a> channel. Follow <a href="https://twitter.com/electronjs">@electronjs</a> on Twitter for important announcements. Need to privately reach out? Email <a href="mailto:info@electronjs.org">info@electronjs.org</a>.
+  description: Ask questions in the <a href='https://discuss.atom.io/c/electron'>Discuss</a> forum or our <a href='http://atom-slack.herokuapp.com/'>Slack</a> channel. Follow <a href="https://twitter.com/electronjs">@electronjs</a> on Twitter for important announcements. Need to privately reach out? Email <a href="mailto:&#105;&#110;&#102;&#111;&#064;&#101;&#108;&#101;&#099;&#116;&#114;&#111;&#110;&#106;&#115;&#046;&#111;&#114;&#103;">&#105;&#110;&#102;&#111;&#064;&#101;&#108;&#101;&#099;&#116;&#114;&#111;&#110;&#106;&#115;&#046;&#111;&#114;&#103;</a>.
 
 headings:
   languages: Languages
