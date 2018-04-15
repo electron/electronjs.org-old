@@ -61,5 +61,5 @@ If any of that sounds interesting then we'd [love to hear from you](https://auto
 
 ## Any Electron tips that might be useful to other developers?
 
-The process of shipping signed desktop software is relatively new to us, especially for Windows. we wrote up an article for [Code Signing a Windows App](https://mkaz.tech/geek/code-signing-a-windows-application.html) which includes the process and a few of the hurdles we went through to do it right.
+The process of shipping signed desktop software is relatively new to us, especially for Windows. we wrote up an article for [Code Signing a Windows App](https://mkaz.blog/code/code-signing-a-windows-application/) which includes the process and a few of the hurdles we went through to do it right.
 
