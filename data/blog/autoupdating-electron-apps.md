@@ -39,12 +39,6 @@ Call it from anywhere in your app's [main process]:
 require('update-electron-app')({repo: 'your/github-repo'})
 ```
 
-Todo:
-
-- Talk about security benefits and the idea of evergreen 🌲
-- Mention that the service is open-source and can be self-hosted for private apps
-- Finish the list of gotchas.
-
 ## Gotchas
 
 A few things to keep in mind:
