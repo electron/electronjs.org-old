@@ -17,8 +17,8 @@
 
   .app-logo {
     display: block;
-    max-width: 96px;
-    height: 96px;
+    max-width: 256px;
+    height: 256px;
     margin-right: 32px;
 
     @include breakpoint(md) {
