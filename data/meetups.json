@@ -57,5 +57,11 @@
     "location": "Bamenda",
     "country": "Cameroon",
     "href": "mailto:mathalpha26@gmail.com"
+  },
+  {
+    "name": "Pittsburgh Video Game Developers: Electron Games Topic",
+    "location": "Pittsburgh, PA",
+    "country": "USA",
+    "href": "https://www.meetup.com/Pittsburgh-Game-Dev/"
   }
 ]
