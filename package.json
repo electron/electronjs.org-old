@@ -37,7 +37,7 @@
     "description": "0.0.4",
     "dotenv": "^5.0.0",
     "electron-api-historian": "^1.1.1",
-    "electron-apps": "^1.2760.0",
+    "electron-apps": "^1.2761.0",
     "electron-i18n": "^1.46.0",
     "electron-npm-packages": "3.0.0",
     "electron-releases": "^2.28.0",
