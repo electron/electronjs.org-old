@@ -324,6 +324,12 @@ describe('electronjs.org', () => {
       const $ = cheerio.load(res.text)
       $('.subtron .container-narrow h1').text().should.eq(i18n.website['vi-VN'].community.title)
     })
+
+    test('/contact redirects to /community', async () => {
+      const res = await supertest(app).get('/contact')
+      res.statusCode.should.be.equal(301)
+      res.headers.location.should.equal('/community')
+    })
   })
 
   describe('localized strings for client-side code', () => {

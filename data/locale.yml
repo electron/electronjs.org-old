@@ -33,10 +33,46 @@ languages:
 community:
   title: Electron Community
   description:
-    Tools, boilerplates, videos, and more from Electron's
-    <a href="https://github.com/sindresorhus/awesome-electron">awesome</a>
-    open-source contributors. Find or add
-    <a href="/community#meetups">meetups</a> near you.
+    Resources for connecting with people working on Electron.
+  channels:
+    help: 
+      "For help or feedback on Electron app development, join the 
+      <a href='http://atom-slack.herokuapp.com'>atomio Slack</a>,
+      post questions on
+      <a href='https://discuss.atom.io/c/electron'>Discuss</a>,
+      or see existing Electron-related questions on 
+      <a href='https://stackoverflow.com/questions/tagged/electron'>Stack Overflow</a>."
+    bugs:
+      "To report a bug in Electron, open an issue on the
+      <a href='https://github.com/electron/electron/issues'>electron/electron</a>
+      repository."
+    feature_requests:
+      "To make a feature request, open an issue on the
+      <a href='https://github.com/electron/electron/issues'>electron/electron</a>
+      repository."
+    code_of_conduct:
+      "To report violations of our 
+      <a href='https://github.com/electron/electron/blob/master/CODE_OF_CONDUCT.md'>Code of Conduct</a>, 
+      email
+      <a href='mailto:coc@electronjs.org'>coc@electronjs.org</a>."
+    security:
+      "To report a security vulnerability in Electron, email
+      <a href='mailto:security@electronjs.org'>security@electronjs.org</a>."
+    updates: 
+      "To stay up to date on Electron developments, follow
+      <a href='https://twitter.com/electronjs'>@electronjs</a> on Twitter,
+      and subscribe to the 
+      <a href='/blog'>Blog RSS feed</a>."
+    other:
+      "For all other inquiries, email <a href='mailto:info@electronjs.org'>info@electronjs.org</a>."
+  language_communities:
+    title: Language Communities
+    description:
+      "The Electron community spans the globe, and English is not everyone's first language. 
+      Find 
+      <a href='/languages'>documentation in your language</a>, 
+      or join one of the language communities below:"
+
   tools: Tools
   boilerplates: Boilerplates
   components: Components
