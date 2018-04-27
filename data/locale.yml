@@ -34,6 +34,10 @@ community:
   description:
     Resources for connecting with people working on Electron.
   channels:
+    get_started: 
+      "<a href='/docs/tutorial/first-app'><b>Get started</b></a> 
+      building an app by reading the 
+      <a href='/docs/tutorial/first-app'>quick-start guide</a>."
     updates: 
       "<a href='https://twitter.com/electronjs'><b>Stay up to date</b></a> 
       by following
@@ -74,6 +78,10 @@ community:
       "<a href='mailto:security@electronjs.org'><b>Disclose security issues</b></a> 
       by emailing
       <a href='mailto:security@electronjs.org'>security@electronjs.org</a>."
+    donations:
+      "<a href='donors'><b>Donate</b></a> 
+      on our 
+      <a href='/donors'>OpenCollective page</a>."
     other:
       "For all other inquiries, email <a href='mailto:info@electronjs.org'>info@electronjs.org</a>."
   language_communities:
