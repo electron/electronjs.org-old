@@ -1,16 +1,17 @@
 tagline: Build cross platform desktop apps with JavaScript, HTML, and CSS
 
 nav:
+  apps: Apps
+  blog: Blog
+  code_of_conduct: Code of Conduct
+  community: Community
+  contact: Contact
   docs: Docs
   donors: Donors
-  blog: Blog
-  community: Community
-  apps: Apps
-  userland: Userland
-  releases: Releases
   languages: Languages
-  code_of_conduct: Code of Conduct
+  releases: Releases
   search: Search
+  userland: Userland
 
 docs:
   title: Electron Documentation
