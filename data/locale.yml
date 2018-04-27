@@ -34,34 +34,46 @@ community:
   description:
     Resources for connecting with people working on Electron.
   channels:
+    updates: 
+      "<a href='https://twitter.com/electronjs'><b>Stay up to date</b></a> 
+      by following
+      <a href='https://twitter.com/electronjs'>@electronjs</a> on Twitter
+      and subscribing to the 
+      <a href='/blog'>blog feed</a>."
+    localized_docs: 
+      "<a href='/languages'><b>Read docs in your native language</b></a>
+      by visiting the 
+      <a href='/languages'>languages page</a>."
     help: 
-      "For help or feedback on Electron app development, join the 
+      "<a href='http://atom-slack.herokuapp.com'><b>Get help and feedback</b></a>
+      by joining the 
       <a href='http://atom-slack.herokuapp.com'>atomio Slack</a>,
-      post questions on
+      posting on
       <a href='https://discuss.atom.io/c/electron'>Discuss</a>,
-      or see existing Electron-related questions on 
+      or visiting 
       <a href='https://stackoverflow.com/questions/tagged/electron'>Stack Overflow</a>."
+    packages:
+      "<a href='/search/npmPackages'><b>Find useful npm packages</b></a>
+      on the 
+      <a href='/search/npmPackages'>package search page</a>."
     bugs:
-      "To report a bug in Electron, open an issue on the
+      "<a href='https://github.com/electron/electron/issues'><b>Report bugs</b></a>
+      by opening issues on the
       <a href='https://github.com/electron/electron/issues'>electron/electron</a>
       repository."
     feature_requests:
-      "To make a feature request, open an issue on the
+      "<a href='https://github.com/electron/electron/issues'><b>Request features</b></a>
+      by opening issues on the
       <a href='https://github.com/electron/electron/issues'>electron/electron</a>
       repository."
     code_of_conduct:
-      "To report violations of our 
-      <a href='https://github.com/electron/electron/blob/master/CODE_OF_CONDUCT.md'>Code of Conduct</a>, 
-      email
+      "<a href='mailto:coc@electronjs.org'><b>Report Code of Conduct violations</b></a>
+      by emailing
       <a href='mailto:coc@electronjs.org'>coc@electronjs.org</a>."
     security:
-      "To report a security vulnerability in Electron, email
+      "<a href='mailto:security@electronjs.org'><b>Disclose security issues</b></a> 
+      by emailing
       <a href='mailto:security@electronjs.org'>security@electronjs.org</a>."
-    updates: 
-      "To stay up to date on Electron developments, follow
-      <a href='https://twitter.com/electronjs'>@electronjs</a> on Twitter,
-      and subscribe to the 
-      <a href='/blog'>Blog RSS feed</a>."
     other:
       "For all other inquiries, email <a href='mailto:info@electronjs.org'>info@electronjs.org</a>."
   language_communities:
