@@ -21,7 +21,7 @@ Electron has an [autoUpdater] API that gives Electron apps the ability to
 check for updates, download them in the background, and install them 
 automatically.
 
-The autoUpdater works by consuming JSON from a remote endpoint. This has 
+The autoUpdater works by consuming metadata from a remote endpoint. This has 
 been a cumbersome step in the app deployment process for many developers, 
 as it requires a web server to be deployed and maintained just to serve the app
 version history metadata.
@@ -63,10 +63,21 @@ To do so, you can
 or 
 [integrate directly with update.electronjs.org][update.electronjs.org].
 
+## Alternatives
+
+If you're using [electron-builder] to package your app, you can use its 
+built-in updater. For details, see 
+[electron.build/auto-update](https://www.electron.build/auto-update).
+
+If your app is private, you may need to run your own update server. There are 
+a number of open-source tools for this, including Zeit's [Hazel] and
+Atlassian's [Nucleus]. See the [Deploying an Update Server] tutorial for more 
+info.
+
 ## Thanks
 
 Thanks to [Julian Gruber] for helping design and build this simple and scalable 
-web service. Thanks to the folks at [Zeit] for their open-source [hazel] 
+web service. Thanks to the folks at [Zeit] for their open-source [Hazel] 
 service, from which we drew design inspiration. Thanks to [Samuel Attard] for 
 the code reviews. Thanks to the Electron community for helping test this 
 service.
@@ -74,9 +85,12 @@ service.
 🌲 Here's to an evergreen future for Electron apps!
 
 [autoUpdater]: https://electronjs.org/docs/tutorial/updates
-[hazel]: https://github.com/zeit/hazel
+[electron-builder]: https://github.com/electron-userland/electron-builder
+[Hazel]: https://github.com/zeit/hazel
 [Julian Gruber]: http://juliangruber.com/
 [main process]: https://electronjs.org/docs/glossary#main-process
+[Deploying an Update Server]: https://electronjs.org/docs/tutorial/updates#deploying-an-update-server
+[Nucleus]: https://github.com/atlassian/nucleus
 [Samuel Attard]: https://www.samuelattard.com/
 [update-electron-app]: https://ghub.io/update-electron-app
 [update.electronjs.org]: https://ghub.io/update.electronjs.org
