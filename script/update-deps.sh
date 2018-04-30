@@ -14,8 +14,9 @@ git config user.email electron@github.com
 git config user.name electron-bot
 npm install
 
-# update known deps and commit individually
-for dep in {"electron-i18n", "electron-apps", "electron-api-historian", "electron-releases"}
+declare -a trusted_deps=("electron-i18n" "electron-apps" "electron-api-historian" "electron-releases")
+
+for dep in "${trusted_deps[@]}"
 do
   npm update $dep
   if [ "$(git status --porcelain)" != "" ]; then
