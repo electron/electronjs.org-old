@@ -14,27 +14,32 @@ deployment and more about developing high-quality experiences for their users.
 
 ---
 
-![screenshot](https://github.com/electron/update-electron-app/raw/master/screenshot.png)
+<figure>
+  <a href="https://github.com/electron/update-electron-app">
+    <img class="screenshot" src="https://user-images.githubusercontent.com/2289/39480716-e9990910-4d1d-11e8-8901-9549c6ff6050.png" alt="Updater Screenshot">
+    <figcaption>The new updater module in action</figcaption>
+  </a>
+</figure>
 
-Electron has an [autoUpdater] API that gives Electron apps the ability to
-check for updates, download them in the background, and install them 
-automatically.
+## Making life easier
 
-The autoUpdater works by consuming metadata from a remote endpoint. This has 
-been a cumbersome step in the app deployment process for many developers, 
-as it requires a web server to be deployed and maintained just to serve the app
-version history metadata.
+Electron has an [autoUpdater] API that gives apps the ability to
+consume metadata from a remote endpoint to check for updates, download them 
+in the background, and install them automatically.
+
+Enabling these updates has been a cumbersome step in the deployment process 
+for many Electron app developers because it requires a web server to be deployed 
+and maintained just to serve app version history metadata.
 
 Today we are announcing a new drop-in solution for automatic app updates.
-If your Electron app is in a public repository on GitHub and you're using 
-GitHub Releases to publish assets, you can use this service to deliver 
+If your Electron app is in a public GitHub repository and you're using 
+GitHub Releases to publish builds, you can use this service to deliver 
 continuous app updates to your users.
 
-## Usage
+## Using the new module
 
-To minimize the required configuration on your part, we've created 
-[update-electron-app], an npm module which integrates with the new 
-[update.electronjs.org] hosted webservice.
+To minimize configuration on your part, we've created [update-electron-app], 
+an npm module which integrates with the new [update.electronjs.org] webservice.
 
 Install the module:
 
@@ -48,10 +53,9 @@ Call it from anywhere in your app's [main process]:
 require('update-electron-app')()
 ```
 
-That's it! By default, this module will check for updates at app startup, then 
-every ten minutes. When an update is found, it will automatically be downloaded 
-in the background. When the download completes, a dialog is displayed allowing 
-the user to restart the app.
+That's it! The module will check for updates at app startup, then 
+every ten minutes. When an update is found it will download automically
+in the background, and a dialog will be displayed when the update is ready.
 
 ## Migrating existing apps
 
@@ -90,6 +94,6 @@ service.
 [Deploying an Update Server]: https://electronjs.org/docs/tutorial/updates#deploying-an-update-server
 [Nucleus]: https://github.com/atlassian/nucleus
 [Samuel Attard]: https://www.samuelattard.com/
-[update-electron-app]: https://ghub.io/update-electron-app
-[update.electronjs.org]: https://ghub.io/update.electronjs.org
+[update-electron-app]: https://github.com/electron/update-electron-app
+[update.electronjs.org]: https://github.com/electron/update.electronjs.org
 [Zeit]: https://zeit.co
