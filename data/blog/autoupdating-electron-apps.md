@@ -7,15 +7,14 @@ date: '2018-05-01'
 Today we're releasing a free, open-source, hosted 
 [updates webservice][update.electronjs.org] and companion 
 [npm package][update-electron-app]
-to enable easy automatic updates for open-source Electron apps.
-
-This is a step toward enabling Electron app developers to think less about
+to enable easy automatic updates for open-source Electron apps. This is a step 
+toward empowering Electron app developers to think less about
 deployment and more about developing high-quality experiences for their users.
 
 ---
 
 <figure>
-  <a href="https://github.com/electron/update-electron-app">
+  <a href="https://github.com/electron/update-electron-app" style="display: block;">
     <img class="screenshot" src="https://user-images.githubusercontent.com/2289/39480716-e9990910-4d1d-11e8-8901-9549c6ff6050.png" alt="Updater Screenshot">
     <figcaption>The new updater module in action</figcaption>
   </a>
