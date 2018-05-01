@@ -9,9 +9,8 @@ Today we're releasing a free, open-source, hosted
 [npm package][update-electron-app]
 to enable easy automatic updates for open-source Electron apps.
 
-This is one step on our path toward enabling app developers to spend less
-time thinking about deployment and more time focusing on developing 
-high-quality experiences for their users.
+This is a step toward enabling Electron app developers to think less about
+deployment and more about developing high-quality experiences for their users.
 
 ---
 
@@ -56,8 +55,7 @@ the user to restart the app.
 
 ## Migrating existing apps
 
-If your app already has automatic updates configured, you may still want to 
-switch over to this service so you can retire your existing updates server.
+Apps already using Electron's autoUpdater API can use this service too. 
 To do so, you can 
 [customize the `update-electron-app`][update-electron-app] module
 or 
