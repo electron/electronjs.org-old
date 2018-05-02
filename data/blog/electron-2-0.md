@@ -38,7 +38,15 @@ Electron 2.0.0 also represents an improvement to how Electron is stabilized befo
  * Add ability to set arbitrary arguments in a renderer process. [#11850](https://github.com/electron/electron/pull/11850)
  * Add accessory view for format picker. [#11873](https://github.com/electron/electron/pull/11873)
  * Fixed network delegate race condition. [#12053](https://github.com/electron/electron/pull/12053)
- * Removed [deprecated APIs](https://github.com/electron/electron/blob/v2.0.0-beta.8/docs/tutorial/planned-breaking-changes.md).
+
+## Breaking API changes
+
+ * Removed [deprecated APIs](https://github.com/electron/electron/blob/v2.0.0-beta.8/docs/tutorial/planned-breaking-changes.md), including:
+   * Changed `menu.popup` signature. [#11968](https://github.com/electron/electron/pull/11968)
+   * Removed deprecated `crashReporter.setExtraParameter` [#11972](https://github.com/electron/electron/pull/11972)
+   * Removed deprecated `webContents.setZoomLevelLimits` and `webFrame.setZoomLevelLimits`. [#11974](https://github.com/electron/electron/pull/11974)
+   * Removed deprecated `clipboard` methods. [#11973](https://github.com/electron/electron/pull/11973)
+   * Removed support for boolean parameters for `tray.setHighlightMode`. [#11981](https://github.com/electron/electron/pull/11981)
 
 ## Bug Fixes
 
