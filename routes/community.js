@@ -1,5 +1,6 @@
 const items = require('awesome-electron')
 const meetups = require('../data/meetups.json')
+const emails = require('./data/emails.js')
 
 async function parseItem (item) {
   // categories
@@ -25,7 +26,8 @@ module.exports = (req, res) => {
   parseData(items).then((communityData) => {
     const context = Object.assign(req.context, {
       items: communityData,
-      meetups: meetups
+      meetups: meetups,
+      emails: emails
     })
 
     res.render('community', context)
