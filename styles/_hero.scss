@@ -16,10 +16,10 @@
 
 // Electron Icon
 
-$hero-icon-delay: 1s;
-$hero-icon-delay-diff: .2s;
-$hero-icon-duration: 1.2s;
-$hero-icon-all-delay: 15 * $hero-icon-delay-diff + $hero-icon-delay;
+$hero-icon-delay: .6s;
+$hero-icon-delay-diff: .1s;
+$hero-icon-duration: 1s;
+$hero-icon-all-delay: 9 * $hero-icon-delay-diff + $hero-icon-delay;
 
 
 .hero-icon {
@@ -33,6 +33,26 @@ $hero-icon-all-delay: 15 * $hero-icon-delay-diff + $hero-icon-delay;
   stroke: none;
 }
 
+.hero-icon--line {
+  stroke-dasharray: 170;
+  stroke-dashoffset: 170;
+}
+.hero-icon--circle {
+  stroke-dasharray: 70;
+  stroke-dashoffset: 70;
+}
+
+@for $i from 1 through 9 {
+  .hero-icon-#{$i} {
+    $_duration: $hero-icon-duration;
+    $_delay:   $hero-icon-delay + ($hero-icon-delay-diff * $i);
+    animation: hero-icon-animation $_duration $_delay cubic-bezier(.05, .35, .20, 1) forwards;
+  }
+}
+
+@keyframes hero-icon-animation {
+  100% { stroke-dashoffset: 0; }
+}
 
 
 // Apps ----------------
@@ -49,14 +69,14 @@ $hero-app-duration: .8s;
 $hero-app-opacity: 0.1;
 
 @keyframes hero-app-animate-left {
-    0% { transform: translateX(30px) scale(1);    opacity: $hero-app-opacity; animation-timing-function: cubic-bezier(.3,.1,.9,.5);  }
-   10% { transform: translateX(20px) scale(1.5);                              animation-timing-function: cubic-bezier(.1,.4,.2,1);             }
-  100% { transform: translateX( 0px) scale(1);    opacity: 1; }
+    0% { transform: scale(1)   translateX(30px);    opacity: $hero-app-opacity; animation-timing-function: cubic-bezier(.3,.1,.9,.5);  }
+   20% { transform: scale(1.1) translateX(20px);                              animation-timing-function: cubic-bezier(.1,.4,.2,1);             }
+  100% { transform: scale(1)   translateX( 0px);    opacity: 1; }
 }
 @keyframes hero-app-animate-right {
-    0% { transform: translateX(-30px) scale(1);   opacity: $hero-app-opacity; animation-timing-function: cubic-bezier(.3,.1,.9,.5);  }
-   10% { transform: translateX(-20px) scale(1.5);                             animation-timing-function: cubic-bezier(.1,.4,.2,1);             }
-  100% { transform: translateX(  0px) scale(1);   opacity: 1; }
+    0% { transform: scale(1)   translateX(-30px);   opacity: $hero-app-opacity; animation-timing-function: cubic-bezier(.3,.1,.9,.5);  }
+   20% { transform: scale(1.1) translateX(-20px);                               animation-timing-function: cubic-bezier(.1,.4,.2,1);             }
+  100% { transform: scale(1)   translateX(  0px);   opacity: 1; }
 }
 
 // Colorize and animate
