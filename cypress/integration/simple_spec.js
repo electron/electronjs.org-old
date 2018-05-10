@@ -1,6 +1,6 @@
 describe('electronjs.org', () => {
   it('works', () => {
-    cy.visit('http://localhost:5000') 
+    cy.visit('http://localhost:5000')
     cy.title().should('include', 'Build cross platform desktop apps')
 
     // Apps page

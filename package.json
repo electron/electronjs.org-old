@@ -100,7 +100,8 @@
   },
   "standard": {
     "ignore": [
-      "/js/vendor"
+      "/js/vendor",
+      "/cypress/integration"
     ],
     "env": {
       "browser": true
