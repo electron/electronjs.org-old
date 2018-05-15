@@ -40,7 +40,7 @@
     "electron-apps": "^1.2906.0",
     "electron-i18n": "^1.98.0",
     "electron-npm-packages": "3.0.0",
-    "electron-releases": "^2.36.0",
+    "electron-releases": "^2.37.0",
     "electron-userland-reports": "1.6.0",
     "express": "^4.16.2",
     "express-graphql": "^0.6.11",
