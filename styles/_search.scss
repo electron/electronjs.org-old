@@ -38,12 +38,23 @@ h2 .faint {
   justify-content: center;
 }
 
+.search-form input{
+  border: none;
+  outline: none;
+  font-size: 72px;
+  padding-left: 0px !important
+}
+
+.search-form button{
+  display: none;
+}
+
 .nav-search-form{
   display: inline-block;
   margin-left: 20px;
   margin-bottom: -15px;
   margin-right: 20px;
-  border-bottom: 2px solid $jumbo-color-strong;
+  // border-bottom: 2px solid $jumbo-color-strong;
   font-size: 15px;
 }
 
@@ -51,11 +62,22 @@ h2 .faint {
   color: $jumbo-color;
 }
 
+::-webkit-input-placeholder:active{
+  color:white;
+}
+
 .nav-search-form input{
-  background-color: transparent;
-  color: $jumbo-color;
+  background-color: $main-color;
   width: 100%;
   border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.nav-search-form input:focus {
+  background-color: white;
+  color: $jumbo-bg-color;
 }
 
 .search-results {

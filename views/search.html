@@ -1,7 +1,7 @@
 {{#*inline "searchForm"}}
 <form action="/search" method="get" class="search-form">
   <input
-    class="col-sm-8 col-xs-12 px-3 py-3 my-2"
+    class="col-sm-8 col-xs-12 py-3 my-2"
     placeholder="> search_term"
     type="search"
     autofocus="on"
@@ -20,10 +20,8 @@
   <section class="page-section">
     <div class="container-narrow search-results">
       {{> searchForm}}
-      <h4 class="mb-4">Search Results for <i>&ldquo;{{query.q}}&rdquo;</i></h4>
-
       {{#each searchResults}}
-        <div class="my-8">
+        <div class="my-4">
 
           <h2>
             <a href="search/{{searchOp.name}}?q={{../query.q}}"><span class="mega-octicon octicon-{{searchOp.octicon}} mr-1"></span></a>
