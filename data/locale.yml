@@ -11,7 +11,6 @@ nav:
   languages: Languages
   releases: Releases
   userland: Userland
-  search: Search
 
 docs:
   title: Electron Documentation
