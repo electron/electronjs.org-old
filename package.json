@@ -54,6 +54,7 @@
     "href-type": "^1.0.1",
     "http-proxy-middleware": "^0.17.4",
     "hubdown": "^2.0.0",
+    "instantsearch.js": "^2.7.4",
     "lil-env-thing": "^1.0.0",
     "list.js": "^1.5.0",
     "lobars": "^1.2.0",
