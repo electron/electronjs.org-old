@@ -38,6 +38,8 @@ Electron 2.0.0 also represents an improvement to how Electron is stabilized befo
  * Add ability to set arbitrary arguments in a renderer process. [#11850](https://github.com/electron/electron/pull/11850)
  * Add accessory view for format picker. [#11873](https://github.com/electron/electron/pull/11873)
  * Fixed network delegate race condition. [#12053](https://github.com/electron/electron/pull/12053)
+ * Drop support for the `mips64el` arch on Linux. Electron requires the C++14 toolchain, which was
+   not available for that arch at the time of the release. We hope to re-add support in the future.
 
 ## Breaking API changes
 
