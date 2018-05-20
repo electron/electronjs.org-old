@@ -49,7 +49,12 @@ h2 .faint {
   display: none;
 }
 
-.ais-search-box--input{
+.ais-search-box{
+  display: inline-block;
+
+}
+
+#search-input{
     background-color: $main-color;
     // background-image: url("https://image.flaticon.com/icons/svg/149/149852.svg");
     // background-repeat: no-repeat;
@@ -59,19 +64,24 @@ h2 .faint {
     border: none;
     outline: none;
     border-radius: 10px;
+    font-size: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
     // padding-top: 7px;
     // padding-bottom: 5px;
     // padding-left: 25px;
     // transition: width 0.4s ease-in;
 }
 
-.ais-search-box--input:focus {
+#search-input:focus {
   background-color: white;
   color: $jumbo-bg-color;
   // width: 100%;
 }
 
-.ais-search-box--input:focus::-webkit-input-placeholder{
+#search-input:focus::-webkit-input-placeholder{
   color:white;
 }
 
@@ -96,24 +106,6 @@ h2 .faint {
 .ais-hits--item em {
   background-color: $jumbo-color;
 }
-
-
-#search-box{
-  display: inline-block;
-  // margin-bottom: -15px;
-  // margin-left: 10px;
-  // margin-right: 30px;
-  font-size: 15px;
-  transition: margin-right 0.4s ease-in;
-}
-
-#search-box input{
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-right: 20px;
-  margin-left: 20px;
-}
-
 
  .ais-hits--item {
    padding: 10px;

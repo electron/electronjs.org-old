@@ -1,5 +1,10 @@
 const instantsearch = require('instantsearch.js')
 
+// let searchInput = document.getElementById("search-input");
+// searchInput.onfocus = () => {
+
+// }
+
 const hitTemplate = `
 {{#_highlightResult.icon64}}
   <img src="https://electronjs.org/node_modules/electron-apps/apps/{{_highlightResult.slug.value}}/{{_highlightResult.icon64.value}}">
@@ -41,7 +46,7 @@ module.exports = () => {
 
   search.addWidget(
     instantsearch.widgets.searchBox({
-      container: '#search-box',
+      container: '#search-input',
       placeholder: 'Search Electron APIs'
     })
   )
