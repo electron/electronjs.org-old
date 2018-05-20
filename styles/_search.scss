@@ -55,24 +55,16 @@ h2 .faint {
 }
 
 #search-input{
-    background-color: $main-color;
-    // background-image: url("https://image.flaticon.com/icons/svg/149/149852.svg");
-    // background-repeat: no-repeat;
-    // background-size: 15px;
-    // background-position: 5px 10px;
-    // width: 30%;
-    border: none;
-    outline: none;
-    border-radius: 10px;
-    font-size: 15px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-right: 20px;
-    margin-left: 20px;
-    // padding-top: 7px;
-    // padding-bottom: 5px;
-    // padding-left: 25px;
-    // transition: width 0.4s ease-in;
+  background-color: $main-color;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size: 15px;
+  padding: 3px 10px 3px 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+  // width: 30%;
+  // transition: width 0.4s ease-in;
 }
 
 #search-input:focus {
@@ -87,52 +79,61 @@ h2 .faint {
 
 #hits{
   position: absolute;
-  display:flex;
+  display: flex;
   align-self: center;
   width: 43%;
   margin-top: 4.5%;
   margin-left: 13%;
   height: 140%;
   overflow-y: scroll;
+  border: 7px solid;
   border-radius: 10px;
-  padding: 5px;
-  background-color:white;
 }
 
 .ais-hits--item{
-  background-color: $main-color-subtle
+  background-color: white;
+  padding: 10px;
+  border-bottom: 2px solid #7e7e7e;
+  margin: 0;
+  color: #7e7e7e;
+}
+
+.app-hit-container{
+  display:flex;
+  align-items: center;
+}
+
+.app-hit-container > * {
+    margin-right: 5px;
 }
 
 .ais-hits--item em {
   background-color: $jumbo-color;
 }
 
- .ais-hits--item {
-   padding: 10px;
-   border: 1px solid rgb(61, 61, 61);
-   border-radius: 3px;
-   margin: 5px 0;
- }
+.ais-hits:first-child:last-child{
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+}
 
-  .ais-search-box--magnifier {
-    display:none
-  }
+.ais-search-box--reset {
+  width: 25px;
+  height: 25px;
+  border: none;
+  position: absolute;
+  margin-left: -3.5%;
+  padding-top: 7px;
+  opacity: 0.2;
+  background-color:transparent;
+}
 
-  .ais-search-box--reset {
-    width: 25px;
-    height: 25px;
-    border: none;
-    position: absolute;
-    margin-left: -3.5%;
-    padding-top: 5px;
-    opacity: 0.2;
-    background-color:rgba(0, 0, 0, 0)
-  }
+.ais-search-box--magnifier {
+  display: none
+}
 
-  .ais-search-box--reset-wrapper {
-    display:inline !important;
-
-  }
+.ais-search-box--reset-wrapper {
+  display:inline !important;
+}
 
 ::-webkit-input-placeholder{
   color: $jumbo-color;

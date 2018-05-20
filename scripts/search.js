@@ -7,17 +7,21 @@ const instantsearch = require('instantsearch.js')
 
 const hitTemplate = `
 {{#_highlightResult.icon64}}
-  <img src="https://electronjs.org/node_modules/electron-apps/apps/{{_highlightResult.slug.value}}/{{_highlightResult.icon64.value}}">
-  <b>{{{_highlightResult.name.value}}}</b> -
-  {{{_highlightResult.description.value}}}
+  <div class="app-hit-container">
+    <img src="https://electronjs.org/node_modules/electron-apps/apps/{{_highlightResult.slug.value}}/{{_highlightResult.icon64.value}}">
+    <b>{{{_highlightResult.name.value}}}</b> -
+    {{{_highlightResult.description.value}}}
+  </div>
 {{/_highlightResult.icon64}}
 
 {{^_highlightResult.icon64}}
-  {{{type.value}}}
-  <b>{{{_highlightResult.title.value}}}</b> -
-  {{{_highlightResult.tldr.value}}}
+  <div className="other-hit-container">
+    {{{type.value}}}
+    <b>{{{_highlightResult.title.value}}}</b> -
+    {{{_highlightResult.tldr.value}}}
+  </div>
 {{/_highlightResult.icon64}}
-`
+`;
 
 module.exports = () => {
   const search = instantsearch({
