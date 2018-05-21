@@ -11,12 +11,14 @@
     "start": "cross-env NODE_PATH=. NODE_ENV=production node server.js",
     "bootstrap": "node script/bootstrap",
     "test": "cross-env NODE_PATH=. NODE_ENV=test mocha --timeout 5000 && standard --fix",
+    "integration": "script/integration.sh",
     "release": "node script/release",
     "dev": "cross-env NODE_PATH=. nodemon -e js,scss,yml,md server.js",
     "prepack": "check-for-leaks",
     "prepush": "check-for-leaks",
     "linkschecker": "NODE_PATH=. NODE_ENV=test node scripts/links-checker.js",
-    "update-electron-dependencies": "./script/update-deps.sh"
+    "update-electron-dependencies": "./script/update-deps.sh",
+    "cypress": "cypress run"
   },
   "dependencies": {
     "awesome-electron": "2.6.0",
@@ -81,6 +83,7 @@
     "chai-cheerio": "^1.0.0",
     "check-for-leaks": "^1.2.0",
     "cheerio": "^1.0.0-rc.1",
+    "cypress": "^2.1.0",
     "husky": "^0.14.3",
     "mocha": "^5.0.0",
     "nock": "^9.1.3",
@@ -89,6 +92,7 @@
     "standard": "^11.0.1",
     "supertest": "^3.0.0",
     "supertest-session": "^3.1.1",
+    "wait-on": "^2.1.0",
     "walk-sync": "^0.3.2"
   },
   "engines": {
@@ -96,7 +100,8 @@
   },
   "standard": {
     "ignore": [
-      "/js/vendor"
+      "/js/vendor",
+      "/cypress/integration"
     ],
     "env": {
       "browser": true
