@@ -20,11 +20,17 @@
     "update-electron-dependencies": "./script/update-deps.sh",
     "cypress": "cypress run"
   },
+  "browserify": {
+    "transform": [
+      "brfs"
+    ]
+  },
   "dependencies": {
     "awesome-electron": "2.6.0",
     "babel-core": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babelify": "^8.0.0",
+    "brfs": "^1.6.1",
     "browser-date-formatter": "^2.1.1",
     "browser-sync": "^2.23.7",
     "browserify-middleware": "^8.0.0",

@@ -2,6 +2,7 @@
 
 const browserify = require('browserify-middleware')
 const babelify = require('babelify')
+const brfs = require('brfs')
 
 function babelifyMiddleware (entries, brOptions, baOptions) {
   brOptions = brOptions || {}
@@ -9,6 +10,8 @@ function babelifyMiddleware (entries, brOptions, baOptions) {
   baOptions = baOptions || {}
   baOptions.presets = baOptions.presets || ['babel-preset-env']
   brOptions.transform.unshift(babelify.configure(baOptions))
+  brOptions.transform.unshift(brfs)
+
 
   return browserify(entries, brOptions)
 }

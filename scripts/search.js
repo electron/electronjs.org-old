@@ -1,39 +1,40 @@
+const templates = require('../templates')
+console.log('these are the templates', templates)
 const instantsearch = require('instantsearch.js')
 
-let searchInput = document.getElementById("search-input");
-searchInput.onclick = () => {
-  searchInput.classList.add("active")
-}
+// let searchInput = document.getElementById("search-input");
+// searchInput.onclick = () => {
+//   searchInput.classList.add("active")
+// }
 
-searchInput.onmouseout = () =>{
-  searchInput.classList.remove("active")
-}
+// searchInput.onmouseout = () =>{
+//   searchInput.classList.remove("active")
+// }
 
-const hitTemplate = `
-{{#_highlightResult.icon64}}
-  <div class="app-hit-container">
-    <img src="https://electronjs.org/node_modules/electron-apps/apps/{{_highlightResult.slug.value}}/{{_highlightResult.icon64.value}}">
-    <div>
-      <div class="hit-type" >{{{type}}}</div>
-      <b style="font-size:14pt" >{{{_highlightResult.name.value}}}</b>
-      <div style="font-size:11pt" >{{{_highlightResult.description.value}}}</div>
-      <a href={{{website}}} ><span class="octicon octicon-link-external" /></a>
-      <a href={{{repository}}} ><span class="octicon octicon-mark-github" /></a>
-    </div>
-  </div>
-{{/_highlightResult.icon64}}
+//show and hide hits
 
-{{^_highlightResult.icon64}}
-  <div className="other-hit-container">
-    <div class="hit-type" >{{{type}}}</div>
-    <div>
-      <b><a href={{{url}}} style="text-decoration: none" >{{{_highlightResult.title.value}}}</a></b>
-      <div style="font-size: 10pt">{{{_highlightResult.tldr.value}}}</div>
-    </div>
-    <a href={{{url}}}>More <span class="octicon octicon-chevron-right" /></a>
-  </div>
-{{/_highlightResult.icon64}}
-`;
+// const hitTemplate = `
+// {{^_highlightResult.icon64}}
+//   <div className="other-hit-container">
+//     <div class="hit-type" >{{{type}}}</div>
+//     <div>
+//       <b><a href={{{url}}} style="text-decoration: none" >{{{_highlightResult.title.value}}}</a></b>
+//       <div style="font-size: 10pt">{{{_highlightResult.tldr.value}}}</div>
+//     </div>
+//     <a href={{{url}}}>More <span class="octicon octicon-chevron-right" /></a>
+//   </div>
+// {{/_highlightResult.icon64}}
+// `;
+
+
+window.addEventListener('click', (e) => {
+  if (e.target.classList.contains("ais-search-box--input") || e.target.classList.contains("ais-hits")) {
+    document.getElementById("hits").style.display = "block";
+  } else {
+    document.getElementById("hits").style.display = "none";
+  }
+})
+
 
 module.exports = () => {
   const search = instantsearch({
@@ -48,7 +49,7 @@ module.exports = () => {
       container: '#hits',
       templates: {
         empty: 'No results',
-        item: hitTemplate
+        item: templates.app
       },
       transformData: {
         item: data => {
@@ -81,6 +82,7 @@ module.exports = () => {
   search.start()
 
   search.on('render', (...args) => {
+    // document.getElementById("hits").style.display = "block"
     // console.log('algolia render', args)
   })
 
