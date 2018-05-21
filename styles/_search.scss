@@ -84,9 +84,9 @@ h2 .faint {
   width: 43%;
   margin-top: 4.5%;
   margin-left: 13%;
-  height: 140%;
-  overflow-y: scroll;
-  border: 7px solid;
+  max-height: 100%;
+  overflow-y: auto;
+  border: 3px solid;
   border-radius: 10px;
 }
 
@@ -98,13 +98,30 @@ h2 .faint {
   color: #7e7e7e;
 }
 
+.ais-hits.ais-hits__empty{
+  background-color: white;
+  padding: 10px;
+  color: #7e7e7e;
+  width:100%
+
+}
+
 .app-hit-container{
   display:flex;
   align-items: center;
 }
 
-.app-hit-container > * {
-    margin-right: 5px;
+.app-hit-container > img {
+  margin-right: 10px;
+}
+
+.app-hit-container > div > a {
+  margin-right: 5px;
+}
+
+.hit-type{
+  text-transform: uppercase;
+  font-size:10pt
 }
 
 .ais-hits--item em {
