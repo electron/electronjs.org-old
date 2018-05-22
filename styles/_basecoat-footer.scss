@@ -36,6 +36,10 @@
   }
 }
 
+html[dir="rtl"] .ltr-only {
+  display: none;
+}
+
 // swap social links and nav for right-to-left languages
 html[dir="rtl"] {
   .footer-nav {  
