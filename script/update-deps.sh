@@ -12,7 +12,8 @@ git clone "https://github.com/electron/electronjs.org" website
 cd website
 git config user.email electron@github.com
 git config user.name electron-bot
-npm install
+npm i -g npm
+npm ci
 
 declare -a trusted_deps=("electron-i18n" "electron-apps" "electron-api-historian" "electron-releases")
 

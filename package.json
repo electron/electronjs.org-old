@@ -26,7 +26,6 @@
     "babel-preset-env": "^1.7.0",
     "babelify": "^8.0.0",
     "browser-date-formatter": "^2.1.1",
-    "browser-sync": "^2.24.4",
     "browserify-middleware": "^8.0.0",
     "clean-deep": "^3.0.2",
     "clipboard": "^1.7.1",
@@ -80,6 +79,7 @@
     "ua-parser-js": "^0.7.17"
   },
   "devDependencies": {
+    "browser-sync": "^2.24.4",
     "chai": "^4.1.2",
     "chai-cheerio": "^1.0.0",
     "check-for-leaks": "^1.2.0",
@@ -88,7 +88,7 @@
     "husky": "^0.14.3",
     "mocha": "^5.0.0",
     "nock": "^9.2.6",
-    "nodemon": "^1.17.4",
+    "nodemon": "^1.17.5",
     "simplecrawler": "^1.1.6",
     "standard": "^11.0.1",
     "supertest": "^3.0.0",
