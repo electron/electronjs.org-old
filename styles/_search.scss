@@ -63,14 +63,11 @@ h2 .faint {
   padding: 3px 10px 3px 10px;
   margin-right: 20px;
   margin-left: 20px;
-  // width: 30%;
-  // transition: width 0.4s ease-in;
 }
 
 #search-input:focus {
   background-color: white;
   color: $jumbo-bg-color;
-  // width: 100%;
 }
 
 #search-input:focus::-webkit-input-placeholder{
@@ -80,56 +77,79 @@ h2 .faint {
 #hits{
   position: absolute;
   display: none;
-  width: 43%;
-  margin-top: 4.5%;
-  margin-left: 13%;
+  justify-self: center;
+  width: auto;
   max-height: 100%;
   overflow-y: auto;
   border: 3px solid;
   border-radius: 10px;
+  background-color:white;
+  margin: 4.5% 1% 0 1%
+}
+
+#api-hits,
+#tutorial-hits,
+#package-hits,
+#app-hits {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.ais-hits{
+  width: 100%;
 }
 
 .ais-hits--item{
   background-color: white;
   padding: 10px;
-  border-bottom: 2px solid #7e7e7e;
+  border-bottom: 1px solid #7e7e7e;
   margin: 0;
   color: #7e7e7e;
 }
 
 .ais-hits.ais-hits__empty{
-  background-color: white;
-  padding: 10px;
-  color: #7e7e7e;
-  width:100%
-
+  display:none;
 }
 
 .app-hit-container{
   display:flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-width: 300px;
 }
 
-.app-hit-container > img {
-  margin-right: 10px;
+.app-hit-header{
+  display:flex;
+  align-items: center
 }
 
-.app-hit-container > div > a {
-  margin-right: 5px;
+.app-hit-header > img{
+  padding-right: 7px;
 }
 
-.hit-type{
-  text-transform: uppercase;
-  font-size:10pt
+.tutorial-hit-container{
+  width: 150px;
 }
 
 .ais-hits--item em {
   background-color: $jumbo-color;
 }
 
-.ais-hits:first-child:last-child{
-    border-top-right-radius: 2px;
-    border-top-left-radius: 2px;
+.ais-hits:first-child{
+  border-top-right-radius: 2px;
+  border-top-left-radius: 2px;
+}
+
+.ais-hits:first-child > div:first-child > div:first-child > .type-title{
+  display:flex;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 15pt;
+  color: $jumbo-bg-color
+}
+
+.type-title{
+  display:none;
 }
 
 .ais-search-box--reset {
@@ -154,7 +174,6 @@ h2 .faint {
 ::-webkit-input-placeholder{
   color: $jumbo-color;
 }
-
 
 .search-results {
   .search-form {

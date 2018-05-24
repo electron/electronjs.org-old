@@ -1,14 +1,17 @@
 <div class="app-hit-container">
-  <img src="https://electronjs.org/node_modules/electron-apps/apps/{{slug}}/{{icon64}}">
-  <div>
-    <div class="hit-type">{{{type}}}</div>
-    <b style="font-size:14pt">{{{_highlightResult.name.value}}}</b>
-    <div style="font-size:11pt">{{{_highlightResult.description.value}}}</div>
-    <a href={{{website}}}>
-      <span class="octicon octicon-link-external" />
-    </a>
-    <a href={{{repository}}}>
-      <span class="octicon octicon-mark-github" />
-    </a>
-  </div>
+    <div class="type-title">Apps</div>
+
+    <div class="app-hit-header">
+      <img src="https://electronjs.org/node_modules/electron-apps/apps/{{slug}}/{{icon32}}">
+      <b style="font-size:14pt">{{{name}}}</b>
+    </div>
+    <div style="font-size:11pt">{{{description}}}</div>
+    <div id="app-hit-links">
+      <a href={{{website}}}>
+        <span class="octicon octicon-link-external" />
+      </a>
+      <a href={{{repository}}}>
+        <span class="octicon octicon-mark-github" />
+      </a>
+    </div>
 </div>

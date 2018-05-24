@@ -12,7 +12,6 @@ function babelifyMiddleware (entries, brOptions, baOptions) {
   brOptions.transform.unshift(babelify.configure(baOptions))
   brOptions.transform.unshift(brfs)
 
-
   return browserify(entries, brOptions)
 }
 
