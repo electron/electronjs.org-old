@@ -410,6 +410,26 @@ describe('electronjs.org', () => {
       }
     })
 
+    describe('<dir> HTML tag for right-to-left languages', () => {
+      test('is `ltr` by default', async () => {
+        const res = await supertest(app).get(`/`)
+        const $ = cheerio.load(res.text)
+        $('html').attr('dir').should.equal('ltr')
+      })
+
+      test('is `rtl` for Arabic', async () => {
+        const res = await supertest(app).get(`/?lang=ar-SA`)
+        const $ = cheerio.load(res.text)
+        $('html').attr('dir').should.equal('rtl')
+      })
+
+      test('is `rtl` for Hebrew', async () => {
+        const res = await supertest(app).get(`/?lang=he-IL`)
+        const $ = cheerio.load(res.text)
+        $('html').attr('dir').should.equal('rtl')
+      })
+    })
+
     test('redirects for date-style blog URLs', async () => {
       const res = await supertest(app).get('/blog/2017/06/01/typescript')
       res.statusCode.should.be.above(300).and.below(303)
