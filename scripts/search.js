@@ -1,153 +1,89 @@
 const templates = require('../templates')
 const instantsearch = require('instantsearch.js')
-
-window.addEventListener('click', (e) => {
-  if (e.target.classList.contains('ais-search-box--input') || e.target.classList.contains('ais-hits') || e.target.classList.contains('app-hit-content-container')) {
-    document.getElementById('hits').style.display = 'flex'
-  } else {
-    document.getElementById('hits').style.display = 'none'
-  }
-})
+const pluralize = require('pluralize')
+const types = ['tutorial', 'api', 'package', 'app']
+const searches = {}
 
 module.exports = () => {
-  const search = instantsearch({
-    appId: 'L9LD9GHGQJ',
-    apiKey: '24e7e99910a15eb5d9d93531e5682370',
-    indexName: 'apps',
-    routing: true,
-    searchFunction: (helper) => {
-      let query = search.helper.state.query
-      if (apis.helper) {
-        apis.helper.setQuery(query)
-        apis.helper.search()
-      }
-      if (packages.helper) {
-        packages.helper.setQuery(query)
-        packages.helper.search()
-      }
-      if (tutorials.helper) {
-        tutorials.helper.setQuery(query)
-        tutorials.helper.search()
-      }
-      helper.search()
+  types.forEach(type => {
+    const isPrimarySearch = type === types[0]
+
+    const opts = {
+      appId: 'L9LD9GHGQJ',
+      apiKey: '24e7e99910a15eb5d9d93531e5682370',
+      indexName: pluralize(type)
     }
-  })
 
-  const apis = instantsearch({
-    appId: 'L9LD9GHGQJ',
-    apiKey: '24e7e99910a15eb5d9d93531e5682370',
-    indexName: 'apis'
-  })
+    if (isPrimarySearch) {
+      opts.routing = true
+      opts.searchFunction = (helper) => {
+        const query = helper.state.query
+        types.slice(1).forEach(type => {
+          const search = searches[type]
+          if (search && search.helper) {
+            search.helper.setQuery(query)
+            search.helper.search()
+          }
+        })
+        helper.search()
+      }
+    }
 
-  const packages = instantsearch({
-    appId: 'L9LD9GHGQJ',
-    apiKey: '24e7e99910a15eb5d9d93531e5682370',
-    indexName: 'packages'
-  })
+    const search = instantsearch(opts)
 
-  const tutorials = instantsearch({
-    appId: 'L9LD9GHGQJ',
-    apiKey: '24e7e99910a15eb5d9d93531e5682370',
-    indexName: 'tutorials'
-  })
-
-  search.addWidget(
-    instantsearch.widgets.hits({
-      container: '#app-hits',
-      templates: {
-        empty: 'No results',
-        item: templates.app
-      },
-      transformData: {
-        item: data => {
-        // useful for viewing template context:
-          console.log('app data', data)
-          return data
+    search.addWidget(
+      instantsearch.widgets.hits({
+        container: `#${type}-hits`,
+        templates: {
+          empty: 'No results',
+          item: templates[type]
+        },
+        transformData: {
+          item: data => {
+          // useful for viewing template context:
+            // console.log(`${type} data`, data)
+            return data
+          }
         }
-      }
-    })
-  )
+      })
+    )
 
-  apis.addWidget(
-    instantsearch.widgets.hits({
-      container: '#api-hits',
-      templates: {
-        empty: 'No results',
-        item: templates.api
-      },
-      transformData: {
-        item: data => {
-        // useful for viewing template context:
-          console.log('api data', data)
-          return data
-        }
-      }
-    })
-  )
+    if (isPrimarySearch) {
+      search.addWidget(
+        instantsearch.widgets.searchBox({
+          container: '#search-input',
+          placeholder: 'Search Electron APIs'
+        })
+      )
+    }
 
-  tutorials.addWidget(
-    instantsearch.widgets.hits({
-      container: '#tutorial-hits',
-      templates: {
-        empty: 'No results',
-        item: templates.tutorial
-      },
-      transformData: {
-        item: data => {
-        // useful for viewing template context:
-          console.log('tutorial data', data)
-          return data
-        }
-      }
-    })
-  )
-
-  packages.addWidget(
-    instantsearch.widgets.hits({
-      container: '#package-hits',
-      templates: {
-        empty: 'No results',
-        item: templates.package
-      },
-      transformData: {
-        item: data => {
-        // useful for viewing template context:
-          console.log('packages data', data)
-          return data
-        }
-      }
-    })
-  )
-
-  search.addWidget(
-    instantsearch.widgets.searchBox({
-      container: '#search-input',
-      placeholder: 'Search Electron APIs'
-    })
-  )
-
-  search.addWidget(
-    instantsearch.widgets.refinementList({
-      container: '#refinement-list',
-      attributeName: 'type',
-      limit: 10,
-      templates: {
-        header: 'Types'
-      }
+    search.on('render', (...args) => {
+      // console.log(`algolia render (${type})`, args)
     })
 
-  )
+    search.on('error', (...args) => {
+      console.log(`algolia error (${type})`, args)
+    })
 
-  search.start()
-  apis.start()
-  tutorials.start()
-  packages.start()
+    searches[type] = search
 
-  search.on('render', (...args) => {
-    console.log('algolia render', args)
+    search.start()
   })
 
-  search.on('error', (...args) => {
-    console.log('algolia error', args)
+  window.addEventListener('click', (e) => {
+    const targetClasses = [
+      'ais-search-box--input',
+      'ais-hits',
+      'app-hit-content-container'
+    ]
+    targetClasses.some(c => e.target.classList.contains(c)) ? showHits() : hideHits()
   })
+}
+
+function showHits () {
+  document.getElementById('hits').style.display = 'flex'
+}
+
+function hideHits () {
+  document.getElementById('hits').style.display = 'none'
 }
