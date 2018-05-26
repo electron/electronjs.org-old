@@ -1,0 +1,4 @@
+{
+  "ext": "js,scss,yml,md",
+  "ignore": "scripts/*"
+}
