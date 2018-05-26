@@ -13,7 +13,7 @@
     "test": "cross-env NODE_PATH=. NODE_ENV=test mocha --timeout 5000 && standard --fix",
     "integration": "script/integration.sh",
     "release": "node script/release",
-    "dev": "cross-env NODE_PATH=. nodemon -e js,scss,yml,md server.js",
+    "dev": "cross-env NODE_PATH=. NODE_ENV=development nodemon server.js",
     "prepack": "check-for-leaks",
     "prepush": "check-for-leaks",
     "linkschecker": "NODE_PATH=. NODE_ENV=test node scripts/links-checker.js",
