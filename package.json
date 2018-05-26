@@ -20,11 +20,6 @@
     "update-electron-dependencies": "./script/update-deps.sh",
     "cypress": "cypress run"
   },
-  "browserify": {
-    "transform": [
-      "brfs"
-    ]
-  },
   "dependencies": {
     "awesome-electron": "2.6.0",
     "babel-core": "^6.26.3",
