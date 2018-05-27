@@ -54,7 +54,7 @@ h2 .faint {
 
 }
 
-#search-input{
+.nav-search{
   background-color: $main-color;
   border: none;
   outline: none;
@@ -65,16 +65,16 @@ h2 .faint {
   margin-left: 20px;
 }
 
-#search-input:focus {
+.nav-search:focus {
   background-color: white;
   color: $jumbo-bg-color;
 }
 
-#search-input:focus::-webkit-input-placeholder{
+.nav-search:focus::-webkit-input-placeholder{
   color:white;
 }
 
-#hits{
+.home-hits-container{
   position: absolute;
   display: none;
   justify-self: center;
@@ -87,10 +87,10 @@ h2 .faint {
   margin: 4.5% 1% 0 1%
 }
 
-#api-hits,
-#tutorial-hits,
-#package-hits,
-#app-hits {
+.home-app-hits,
+.home-api-hits,
+.home-package-hits,
+.home-tutorial-hits {
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -140,7 +140,7 @@ h2 .faint {
   border-top-left-radius: 2px;
 }
 
-.ais-hits:first-child > div:first-child > div:first-child > .type-title{
+#hits > * > .ais-hits:first-child > div:first-child > div:first-child > .type-title{
   display:flex;
   margin-bottom: 10px;
   margin-top: 10px;
