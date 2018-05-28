@@ -1,89 +1,153 @@
 const templates = require('../templates')
 const instantsearch = require('instantsearch.js')
 const pluralize = require('pluralize')
-const types = ['tutorial', 'api', 'package', 'app']
 const searches = {}
+const types = [{
+  name: 'tutorial',
+  path: '/docs/tutorial'
+}, {
+  name: 'api',
+  path: '/docs/api'
+}, {
+  name: 'package',
+  path: '/community'
+}, {
+  name: 'app',
+  path: '/apps'
+}]
 
 module.exports = () => {
-  types.forEach(type => {
-    const isPrimarySearch = type === types[0]
+  buildMultiSearch()
+  buildSearchUIHandlers()
+  determineOrder()
+}
 
-    const opts = {
-      appId: 'L9LD9GHGQJ',
-      apiKey: '24e7e99910a15eb5d9d93531e5682370',
-      indexName: pluralize(type)
-    }
+function buildSearch (type, isPrimarySearch = false, searches) {
+  const opts = {
+    appId: 'L9LD9GHGQJ',
+    apiKey: '24e7e99910a15eb5d9d93531e5682370',
+    indexName: pluralize(type)
+  }
 
-    if (isPrimarySearch) {
-      opts.routing = true
-      opts.searchFunction = (helper) => {
-        const query = helper.state.query
-        types.slice(1).forEach(type => {
-          const search = searches[type]
-          if (search && search.helper) {
-            search.helper.setQuery(query)
-            search.helper.search()
-          }
-        })
-        helper.search()
-      }
-    }
+  // connects search input to address bar
+  if (isPrimarySearch) opts.routing = true
 
-    const search = instantsearch(opts)
-
-    search.addWidget(
-      instantsearch.widgets.hits({
-        container: `#${type}-hits`,
-        templates: {
-          empty: 'No results',
-          item: templates[type]
-        },
-        transformData: {
-          item: data => {
-          // useful for viewing template context:
-            // console.log(`${type} data`, data)
-            return data
-          }
+  // if when called we received an obj called searches its a multi obj search
+  if (isPrimarySearch && searches) {
+    opts.searchFunction = (helper) => {
+      let query = helper.state.query
+      let typesToSearch = types.slice(1)
+      // if the query includes something like api: reduce the types to just that type name
+      // intercept the query and slice of api: before searching
+      types.forEach(type => {
+        if (query.includes(`${type.name}:`)) {
+          let filteredTypes = types.filter(ele => ele.name !== type.name)
+          console.log(filteredTypes)
+          filteredTypes.forEach(filteredType => {
+            document.getElementById(`${filteredType.name}-hits`).style.display = 'none'
+          })
+          document.getElementById(`${type.name}-hits`).style.height = 'auto'
+          document.getElementById(`${type.name}-hits`).style.overflow = 'scroll'
+          query = query.slice(query.indexOf(':'))
+          typesToSearch = [{name: `${type.name}`}]
         }
       })
-    )
 
-    if (isPrimarySearch) {
-      search.addWidget(
-        instantsearch.widgets.searchBox({
-          container: '#search-input',
-          placeholder: 'Search Electron APIs'
-        })
-      )
+      typesToSearch.forEach(type => {
+        const search = searches[type.name]
+        if (search && search.helper) {
+          search.helper.setQuery(query)
+          search.helper.search()
+        }
+      })
+
+      helper.search()
     }
+  }
 
-    search.on('render', (...args) => {
-      // console.log(`algolia render (${type})`, args)
+  const search = instantsearch(opts)
+
+  search.addWidget(
+    instantsearch.widgets.hits({
+      container: `#${type}-hits`,
+      templates: {
+        empty: 'No results',
+        item: templates[type]
+      },
+      transformData: {
+        item: data => {
+          // useful for viewing template context:
+          // console.log(`${type} data`, data)
+          return data
+        }
+      }
     })
+  )
 
-    search.on('error', (...args) => {
-      console.log(`algolia error (${type})`, args)
-    })
+  if (isPrimarySearch) {
+    search.addWidget(
+      instantsearch.widgets.searchBox({
+        container: '#search-input',
+        placeholder: `Search Electron ${pluralize(type)}`
+      })
+    )
+  }
 
-    searches[type] = search
-
-    search.start()
+  search.on('render', (...args) => {
+    // console.log(`algolia render (${type})`, args)
   })
 
-  window.addEventListener('click', (e) => {
-    const targetClasses = [
-      'ais-search-box--input',
-      'ais-hits',
-      'app-hit-content-container'
-    ]
-    targetClasses.some(c => e.target.classList.contains(c)) ? showHits() : hideHits()
+  search.on('error', (...args) => {
+    console.log(`algolia error (${type})`, args)
+  })
+
+  searches[type] = search
+
+  search.start()
+}
+
+function determineOrder () {
+  types.forEach(type => {
+    if (location.pathname === type.path) document.getElementById(`${type.name}-hits`).className = 'first'
   })
 }
 
-function showHits () {
-  document.getElementById('hits').style.display = 'flex'
+// function buildSoloSearch(){
+//   //loop over types obj in search of current pathname
+//   if(location.pathname === '/docs/api'){
+//     console.log('yay!')
+//     buildSearch('api', true, true)
+//   }
+// }
+
+function buildMultiSearch () {
+  types.forEach(type => {
+    buildSearch(type.name, type.name === types[0].name, searches)
+  })
 }
 
-function hideHits () {
-  document.getElementById('hits').style.display = 'none'
+function buildSearchUIHandlers () {
+  let navInput = document.querySelector('.nav-search')
+  let hits = document.getElementById('hits')
+  navInput.addEventListener('input', e => showHits())
+  navInput.addEventListener('focus', e => showHits())
+  window.addEventListener('click', e => {
+    e.target === navInput || checkIfChild(hits, e.target) ? showHits() : hideHits()
+  })
+
+  function showHits () {
+    document.getElementById('hits').style.display = 'flex'
+  }
+
+  function hideHits () {
+    document.getElementById('hits').style.display = 'none'
+  }
+
+  function checkIfChild (parentElement, checkElement) {
+    parentElement.childNodes.forEach(node => {
+      if (node === checkElement) return true
+      checkIfChild(node, checkElement)
+    })
+    return false
+  }
 }

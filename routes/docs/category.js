@@ -33,5 +33,6 @@ module.exports = (req, res, next) => {
       category: selectedCategory.name
     })
   }
+
   res.render(`docs/${category}`, context)
 }

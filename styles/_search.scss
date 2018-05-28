@@ -74,29 +74,51 @@ h2 .faint {
   color:white;
 }
 
-.home-hits-container{
+#hits{
   position: absolute;
   display: none;
+  flex-direction: column;
   justify-self: center;
-  width: auto;
+  width: 500px;
   max-height: 100%;
   overflow-y: auto;
   border: 3px solid;
   border-radius: 10px;
   background-color:white;
-  margin: 4.5% 1% 0 1%
+  margin-left: 49.5%;
+  margin-top: 4.5%;
 }
 
-.home-app-hits,
-.home-api-hits,
-.home-package-hits,
-.home-tutorial-hits {
-  margin-left: 20px;
-  margin-right: 20px;
+.first{
+  order: -1;
+}
+
+#app-hits,
+#api-hits,
+#tutorial-hits,
+#package-hits{
+  overflow:hidden;
+}
+
+#app-hits{
+  min-height: 440px;
+}
+
+#api-hits{
+  min-height: 390px;
+}
+
+#package-hits{
+  min-height: 330px;
+}
+
+#tutorial-hits {
+  min-height: 300px;
 }
 
 .ais-hits{
-  width: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .ais-hits--item{
@@ -115,7 +137,6 @@ h2 .faint {
   display:flex;
   flex-direction: column;
   justify-content: flex-start;
-  min-width: 300px;
 }
 
 .app-hit-header{
@@ -127,8 +148,10 @@ h2 .faint {
   padding-right: 7px;
 }
 
-.tutorial-hit-container{
-  width: 150px;
+#tutorial-hit-content{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .ais-hits--item em {
@@ -143,9 +166,12 @@ h2 .faint {
 #hits > * > .ais-hits:first-child > div:first-child > div:first-child > .type-title{
   display:flex;
   margin-bottom: 10px;
-  margin-top: 10px;
-  font-size: 15pt;
-  color: $jumbo-bg-color
+  font-size: 10pt;
+  color: $main-color-subtle;
+  background-color: #74b1be7a;
+  width: 120%;
+  margin-left: -20px;
+  padding-left: 20px;
 }
 
 .type-title{
@@ -179,4 +205,8 @@ h2 .faint {
   .search-form {
     justify-content: left
   }
+}
+
+.api-hits-solo{
+  display: flex !important;
 }
