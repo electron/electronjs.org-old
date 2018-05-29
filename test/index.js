@@ -33,15 +33,6 @@ describe('electronjs.org', () => {
     res.headers['content-type'].should.equal('text/xml; charset=utf-8')
   })
 
-  describe('404 pages', () => {
-    test('404 path on page, detect a 404 path of page to create a issue', async () => {
-      const $ = await get('/404-page-asdfgh')
-      const path = '/404-page-asdfgh'
-      $('.error-page .lead a').attr('href').should
-        .eq(`https://github.com/electron/electronjs.org/issues/new?title=404%20for%20${path}&body=The%20following%20route%20is%20returning%20a%20404%20HTTP%20status%20code%3A%20${path}`)
-    })
-  })
-
   describe('stylesheets', () => {
     test('main stylesheet compiles', async () => {
       const res = await supertest(app).get('/styles/index.css')
@@ -50,20 +41,29 @@ describe('electronjs.org', () => {
   })
 
   describe('homepage', () => {
-    test('displays featured apps, version numbers, and CoC link', async () => {
+    test('displays electron version data for latest and beta', async () => {
+      const $ = await get('/')
+      $('#electron-version-latest').text().should.match(/npm i -D electron@latest/)
+      $('#electron-version-latest').text().should.match(/Electron\s+\d+\.\d+\.\d+/)
+      $('#electron-version-latest').text().should.match(/Node\s+\d+\.\d+\.\d+/)
+      $('#electron-version-latest').text().should.match(/Chromium\s+\d+\.\d+\.\d+\.\d+/)
+
+      $('#electron-version-beta').text().should.match(/npm i -D electron@beta/)
+      $('#electron-version-beta').text().should.match(/Electron\s+\d+\.\d+\.\d+/)
+      $('#electron-version-beta').text().should.match(/Node\s+\d+\.\d+\.\d+/)
+      $('#electron-version-beta').text().should.match(/Chromium\s+\d+\.\d+\.\d+\.\d+/)
+    })
+
+    test('displays featured apps', async () => {
       const $ = await get('/')
       $('header').should.have.class('site-header')
       $('p.jumbotron-lead').should.contain('Build cross platform desktop apps')
       $('.featured-app').length.should.equal(24)
       $('head > title').text().should.match(/^Electron/)
+    })
 
-      // versions
-      $('#electron-versions').text().should.match(/Electron: \d+\.\d+\.\d+/)
-      $('#electron-versions').text().should.match(/Node: \d+\.\d+\.\d+/)
-      $('#electron-versions').text().should.match(/Chromium: \d+\.\d+\.\d+\.\d+/)
-      $('#electron-versions').text().should.match(/V8: \d+\.\d+\.\d+\.\d+/)
-
-      // Footer
+    test('displays Code of Conduct link in the footer', async () => {
+      const $ = await get('/')
       $('a.footer-nav-item[href="https://github.com/electron/electron/tree/master/CODE_OF_CONDUCT.md"]')
         .text().should.eq('Code of Conduct')
     })
@@ -157,7 +157,7 @@ describe('electronjs.org', () => {
       titles.should.include('BluetoothDevice Object') // API Structures
       titles.should.include('BrowserWindow') // API Docs
       titles.should.include('Application Distribution') // Tutorials
-    }).timeout(5000)
+    })
 
     test('docs/api', async () => {
       const $ = await get('/docs/api')
@@ -179,27 +179,57 @@ describe('electronjs.org', () => {
       $('.error-page').text().should.include('Page not found')
     })
 
-    test('docs footer', async () => {
-      // includes a link to edit the doc
-      const $ = await get('/docs/api/accelerator')
-      $('.propose-change').attr('href').should.eq('https://github.com/electron/electron/tree/master/docs/api/accelerator.md')
-
-      // TODO: test other docs footer links
+    test('//index.php?lang=Cn&index=0000', async () => {
+      const res = await supertest(app).get('//index.php?lang=Cn&index=0000')
+      res.statusCode.should.equal(404)
     })
 
-    test('doc history', async () => {
-      const $ = await get('/docs/api/accelerator/history')
-      // $('body').text().should.include('The Accelerator API was introduced in Electron v0.15.3')
-      // $('head > title').text().should.eq('accelerator Version History | Electron')
-      $('tr').length.should.be.above(10)
+    describe('docs footer', () => {
+      test('includes a link to edit the doc on GitHub', async () => {
+        const $ = await get('/docs/api/accelerator')
+        $('.propose-change').attr('href').should.eq('https://github.com/electron/electron/tree/master/docs/api/accelerator.md')
+      })
+
+      test('includes a link to translate the doc on Crowdin', async () => {
+        const res = await supertest(app)
+          .get('/docs/api/accelerator')
+          .set('Cookie', ['language=zh-CN'])
+        const $ = cheerio.load(res.text)
+        $('.translate-on-crowdin').attr('href').should.eq('https://crowdin.com/translate/electron/63/en-zhcn')
+      })
+
+      test('includes a link to translate the doc on Crowdin for Indonesian', async () => {
+        const res = await supertest(app)
+          .get('/docs/api/crash-reporter')
+          .set('Cookie', ['language=id-ID'])
+        const $ = cheerio.load(res.text)
+        $('.translate-on-crowdin').attr('href').should.eq('https://crowdin.com/translate/electron/74/en-id')
+      })
+
+      test('includes a link to Crowdin language picker when language is English', async () => {
+        // Crowdin displays a nice language picker when target language does not exist
+        // See https://git.io/vx1TI
+        const res = await supertest(app)
+          .get('/docs/api/browser-view')
+          .set('Cookie', ['language=en-US'])
+        const $ = cheerio.load(res.text)
+        $('.translate-on-crowdin').attr('href').should.eq('https://crowdin.com/translate/electron/66/en-en')
+      })
+
+      test('includes a link to view doc history', async () => {
+        const $ = await get('/docs/api/accelerator/history')
+        // $('body').text().should.include('The Accelerator API was introduced in Electron v0.15.3')
+        // $('head > title').text().should.eq('accelerator Version History | Electron')
+        $('tr').length.should.be.above(10)
+      })
     })
   })
 
   describe('language toggle on docs', () => {
     test('each localized documentation section should have an corresponding english section', async () => {
       const res = await supertest(app)
-                .get('/docs/tutorial/desktop-environment-integration')
-                .set('Cookie', ['language=zh-CN'])
+        .get('/docs/tutorial/desktop-environment-integration')
+        .set('Cookie', ['language=zh-CN'])
       const $ = cheerio.load(res.text)
       const $chineseSections = $('.docs .sub-section[data-lang="zh-CN"]')
       const $englishSections = $('.docs .sub-section[data-lang="en-US"]')
@@ -229,7 +259,7 @@ describe('electronjs.org', () => {
       $('.docs .sub-section[data-lang="zh-CN"]').length.should.be.above(0)
       $('.docs .sub-section[data-lang="en-US"]').length.should.equal(0)
       $('.docs button.en-toggle').length.should.equal(0)
-    }).timeout(5000)
+    })
   })
 
   describe('releases', () => {
@@ -287,12 +317,18 @@ describe('electronjs.org', () => {
       titles.should.include('Meetups')
     })
 
-    test('includes localized content', async() => {
+    test('includes localized content', async () => {
       const res = await supertest(app)
         .get('/community')
         .set('Cookie', ['language=vi-VN'])
       const $ = cheerio.load(res.text)
       $('.subtron .container-narrow h1').text().should.eq(i18n.website['vi-VN'].community.title)
+    })
+
+    test('/contact redirects to /community', async () => {
+      const res = await supertest(app).get('/contact')
+      res.statusCode.should.be.equal(301)
+      res.headers.location.should.equal('/community')
     })
   })
 
@@ -370,7 +406,28 @@ describe('electronjs.org', () => {
       for (let lang of langs) {
         res = await supertest(app).get(`/docs/api/browser-window?lang=${lang}`)
         res.statusCode.should.be.equal(200)
+        res.statusCode.should.equal(200)
       }
+    })
+
+    describe('<dir> HTML tag for right-to-left languages', () => {
+      test('is `ltr` by default', async () => {
+        const res = await supertest(app).get(`/`)
+        const $ = cheerio.load(res.text)
+        $('html').attr('dir').should.equal('ltr')
+      })
+
+      test('is `rtl` for Arabic', async () => {
+        const res = await supertest(app).get(`/?lang=ar-SA`)
+        const $ = cheerio.load(res.text)
+        $('html').attr('dir').should.equal('rtl')
+      })
+
+      test('is `rtl` for Hebrew', async () => {
+        const res = await supertest(app).get(`/?lang=he-IL`)
+        const $ = cheerio.load(res.text)
+        $('html').attr('dir').should.equal('rtl')
+      })
     })
 
     test('redirects for date-style blog URLs', async () => {
@@ -415,7 +472,7 @@ describe('electronjs.org', () => {
       delete process.env.CROWDIN_KEY
     })
 
-    test('hits crowdin API', async() => {
+    test('hits crowdin API', async () => {
       const mock = nock('https://api.crowdin.com')
         .get('/api/project/electron/info')
         .query({ key: process.env.CROWDIN_KEY, json: true })
@@ -450,12 +507,12 @@ describe('electronjs.org', () => {
       mock.done()
     })
 
-    test('returns 404 when trying to access API endpoints that are not whitelisted', async() => {
+    test('returns 404 when trying to access API endpoints that are not whitelisted', async () => {
       const res = await supertest(app).get('/crowdin/export')
       res.statusCode.should.equal(404)
     })
 
-    test('returns 401 when CROWDIN_KEY is not set', async() => {
+    test('returns 401 when CROWDIN_KEY is not set', async () => {
       delete process.env.CROWDIN_KEY
       const res = await supertest(app).get('/crowdin/status')
       res.statusCode.should.equal(401)
@@ -463,7 +520,7 @@ describe('electronjs.org', () => {
       res.text.should.eq('"process.env.CROWDIN_KEY is not set"')
     })
 
-    test('returns 405 on request with method other than GET', async() => {
+    test('returns 405 on request with method other than GET', async () => {
       const res = await supertest(app).post('/crowdin/add-file')
       res.statusCode.should.equal(405)
       res.type.should.equal('application/json')
@@ -472,11 +529,11 @@ describe('electronjs.org', () => {
   })
 
   describe('search', () => {
-    test('only shows search bar when there is no query', async() => {
+    test('only shows search bar when there is no query', async () => {
       const $ = await get('/search')
       $('search-results').length.should.equal(0)
     })
-    test('shows no more than 5 results from each of the 3 sources when there is query', async() => {
+    test('shows no more than 5 results from each of the 3 sources when there is query', async () => {
       const $ = await get('/search?q=ipc')
       $('ul.search-results').length.should.equal(3)
       $('ul.search-results').each((i, elem) => {

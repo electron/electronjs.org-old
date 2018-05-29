@@ -25,7 +25,13 @@
           / Version History
         {{else}}
           <a href="{{doc.href}}/history">
-            <span class="docs-version">{{electronLatestStableTag}}</span>
+            <span class="docs-version">
+              {{#if doc.isApiDoc}}
+                {{electronLatestStableTag}}
+              {{else}}
+                <span>electron@master ({{electronMasterBranchCommitShort}})</span>
+              {{/if}}
+            </span>
           </a>
         {{/if}}
 
@@ -49,7 +55,7 @@
         {{localized.docs.footer.propose_change}}
       </a>
       
-      <a class="mr-4" href='https://crowdin.com/project/electron'>
+      <a class="mr-4 translate-on-crowdin" href='{{doc.crowdinUrl}}'>
         <span class="octicon octicon-globe"></span>
         {{localized.docs.footer.translate}}
       </a>

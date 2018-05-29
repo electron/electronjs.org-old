@@ -1,16 +1,17 @@
 tagline: Build cross platform desktop apps with JavaScript, HTML, and CSS
 
 nav:
-  docs: Docs
-  blog: Blog
-  community: Community
   apps: Apps
-  userland: Userland
-  releases: Releases
-  contact: Contact
-  languages: Languages
+  blog: Blog
   code_of_conduct: Code of Conduct
+  community: Community
+  contact: Contact
+  docs: Docs
+  donors: Donors
+  languages: Languages
+  releases: Releases
   search: Search
+  userland: Userland
 
 docs:
   title: Electron Documentation
@@ -32,10 +33,66 @@ languages:
 community:
   title: Electron Community
   description:
-    Tools, boilerplates, videos, and more from Electron's
-    <a href="https://github.com/sindresorhus/awesome-electron">awesome</a>
-    open-source contributors. Find or add
-    <a href="/community#meetups">meetups</a> near you.
+    Resources for connecting with people working on Electron.
+  channels:
+    get_started: 
+      "<a href='/docs/tutorial/first-app'><b>Get started</b></a> 
+      building an app by reading the 
+      <a href='/docs/tutorial/first-app'>quick-start guide</a>."
+    updates: 
+      "<a href='https://twitter.com/electronjs'><b>Stay up to date</b></a> 
+      by following
+      <a href='https://twitter.com/electronjs'>@electronjs</a> on Twitter
+      and subscribing to the 
+      <a href='/blog'>blog feed</a>."
+    localized_docs: 
+      "<a href='/languages'><b>Read docs in your native language</b></a>
+      by visiting the 
+      <a href='/languages'>languages page</a>."
+    help: 
+      "<a href='http://atom-slack.herokuapp.com'><b>Get help and feedback</b></a>
+      by joining the 
+      <a href='http://atom-slack.herokuapp.com'>atomio Slack</a>,
+      posting on
+      <a href='https://discuss.atom.io/c/electron'>Discuss</a>,
+      or visiting 
+      <a href='https://stackoverflow.com/questions/tagged/electron'>Stack Overflow</a>."
+    packages:
+      "<a href='/search/npmPackages'><b>Find useful npm packages</b></a>
+      on the 
+      <a href='/search/npmPackages'>package search page</a>."
+    bugs:
+      "<a href='https://github.com/electron/electron/issues'><b>Report bugs</b></a>
+      by opening issues on the
+      <a href='https://github.com/electron/electron/issues'>electron/electron</a>
+      repository."
+    feature_requests:
+      "<a href='https://github.com/electron/electron/issues'><b>Request features</b></a>
+      by opening issues on the
+      <a href='https://github.com/electron/electron/issues'>electron/electron</a>
+      repository."
+    code_of_conduct:
+      "<a href='mailto:coc@electronjs.org'><b>Report Code of Conduct violations</b></a>
+      by emailing
+      <a href='mailto:coc@electronjs.org'>coc@electronjs.org</a>."
+    security:
+      "<a href='mailto:security@electronjs.org'><b>Disclose security issues</b></a> 
+      by emailing
+      <a href='mailto:security@electronjs.org'>security@electronjs.org</a>."
+    donations:
+      "<a href='donors'><b>Donate</b></a> 
+      on our 
+      <a href='/donors'>OpenCollective page</a>."
+    other:
+      "For all other inquiries, email <a href='mailto:info@electronjs.org'>info@electronjs.org</a>."
+  language_communities:
+    title: Language Communities
+    description:
+      "The Electron community spans the globe, and English is not everyone's first language. 
+      Find 
+      <a href='/languages'>documentation in your language</a>, 
+      or join one of the language communities below:"
+
   tools: Tools
   boilerplates: Boilerplates
   components: Components
@@ -49,6 +106,8 @@ community:
   meetup_notice:
     To add a meetup, edit <code>data/meetups.json</code> and
     <a href="https://github.com/electron/electronjs.org/tree/master/data/meetups.json">make a pull request</a>.
+
+releases: Releases
 
 electron_is_easy:
   title: It's easier than you think
@@ -116,7 +175,7 @@ quick_start:
 
 need_help:
   title: Need Help?
-  description: Ask questions in the <a href='https://discuss.atom.io/c/electron'>Discuss</a> forum or our <a href='http://atom-slack.herokuapp.com/'>Slack</a> channel. Follow <a href="https://twitter.com/electronjs">@electronjs</a> on Twitter for important announcements. Need to privately reach out? Email <a href="mailto:electron@github.com">electron@github.com</a>.
+  description: Ask questions in the <a href='https://discuss.atom.io/c/electron'>Discuss</a> forum or our <a href='http://atom-slack.herokuapp.com/'>Slack</a> channel. Follow <a href="https://twitter.com/electronjs">@electronjs</a> on Twitter for important announcements. Need to privately reach out? Email <a href="mailto:info@electronjs.org">info@electronjs.org</a>.
 
 headings:
   languages: Languages
@@ -191,11 +250,11 @@ pages:
   '/spectron':
     title: Spectron
     description: Spectron is an open source framework for easily writing integrations tests for your Electron app. Built on top of ChromeDriver and WebDriverIO.
+  '/donors':
+    title: Donors
 
 _404:
   page_not_found: Page not found.
-  if_this_is_an_error: If this is an error
-  please_file_an_issue: please file an issue.
 
 search:
   description_all: Find Electron resources from <a href="/search/docs">documentation</a>, <a href="/search/npmPackages">npm packages</a>, and <a href="/search/repos">GitHub repos</a>.

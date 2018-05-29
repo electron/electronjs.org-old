@@ -93,3 +93,9 @@
 }
 .site-header-logo { @include breakpoint(lg) { float: left; } }
 .site-header-nav  { @include breakpoint(lg) { float: right; } }
+
+// swap logo and nav for right-to-left languages
+html[dir="rtl"] {
+  .site-header-logo { @include breakpoint(lg) { float: right; } }
+  .site-header-nav  { @include breakpoint(lg) { float: left; } }
+}
