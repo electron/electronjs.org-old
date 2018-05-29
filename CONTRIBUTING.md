@@ -128,7 +128,7 @@ automatically by the [context middleware](#context):
 Content for page titles and other metadata like Facebook OpenGraph and Twitter 
 Cards meta tags is also defined in the [/data/locale.yml](/data/locale.yml) 
 file, e.g. `pages['/apps'].title` and `pages['/apps'].description`. 
-If a localized title and/or desription are present for a given route, they 
+If a localized title and/or description are present for a given route, they 
 will be added to the `<head>` of the rendered page automatically.
 
 ### Translations

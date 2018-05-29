@@ -8,7 +8,7 @@ This is the source code for the Electron website at
 Electron is an open source project with a global contributor community.
 We want everyone to feel safe in our community, and we welcome participation
 from people of all backgrounds, regardless of experience level, age, gender 
-indentity, race, religion, or nationality.
+identity, race, religion, or nationality.
 
 All participants are expected to uphold the [Code of Conduct](CODE_OF_CONDUCT.md).
 
@@ -44,7 +44,7 @@ For more info about how this site works and how to contribute, see
   - [Localized Strings](CONTRIBUTING.md#localized-strings)
   - [Translations](CONTRIBUTING.md#translations)
 - [Routes](CONTRIBUTING.md#routes)
-- [Middlware](CONTRIBUTING.md#middleware)
+- [Middleware](CONTRIBUTING.md#middleware)
 - [Views](CONTRIBUTING.md#views)
 - [Context](CONTRIBUTING.md#context)
 - [Styles](CONTRIBUTING.md#styles)
