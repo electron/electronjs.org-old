@@ -4,11 +4,11 @@ const pluralize = require('pluralize')
 const searchWithYourKeyboard = require('search-with-your-keyboard')
 const searches = {}
 const types = [{
-  name: 'tutorial',
-  path: '/docs/tutorial'
-}, {
   name: 'api',
   path: '/docs/api'
+}, {
+  name: 'tutorial',
+  path: '/docs/tutorial'
 }, {
   name: 'package',
   path: '/community'
