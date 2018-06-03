@@ -1,6 +1,7 @@
 const templates = require('../templates')
 const instantsearch = require('instantsearch.js')
 const pluralize = require('pluralize')
+const searchWithYourKeyboard = require('search-with-your-keyboard')
 const searches = {}
 const types = [{
   name: 'tutorial',
@@ -20,6 +21,7 @@ module.exports = () => {
   buildMultiSearch()
   buildSearchUIHandlers()
   determineOrder()
+  searchWithYourKeyboard('#search-input', '.ais-hits--item')
 }
 
 function buildSearch (type, isPrimarySearch = false, searches) {
