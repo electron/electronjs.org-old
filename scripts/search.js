@@ -129,6 +129,8 @@ function buildMultiSearch () {
 }
 
 function buildSearchUIHandlers () {
+  if (location.search.includes('query=')) showHits()
+
   let navInput = document.querySelector('.nav-search')
   let hits = document.getElementById('hits')
   navInput.addEventListener('input', e => showHits())
