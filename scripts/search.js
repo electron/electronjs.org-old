@@ -1,13 +1,14 @@
 const templates = require('../templates')
 const instantsearch = require('instantsearch.js')
 const pluralize = require('pluralize')
+const searchWithYourKeyboard = require('search-with-your-keyboard')
 const searches = {}
 const types = [{
-  name: 'tutorial',
-  path: '/docs/tutorial'
-}, {
   name: 'api',
   path: '/docs/api'
+}, {
+  name: 'tutorial',
+  path: '/docs/tutorial'
 }, {
   name: 'package',
   path: '/community'
@@ -20,6 +21,7 @@ module.exports = () => {
   buildMultiSearch()
   buildSearchUIHandlers()
   determineOrder()
+  searchWithYourKeyboard('#search-input', '.ais-hits--item')
 }
 
 function buildSearch (type, isPrimarySearch = false, searches) {
@@ -127,6 +129,8 @@ function buildMultiSearch () {
 }
 
 function buildSearchUIHandlers () {
+  if (location.search.includes('query=')) showHits()
+
   let navInput = document.querySelector('.nav-search')
   let hits = document.getElementById('hits')
   navInput.addEventListener('input', e => showHits())

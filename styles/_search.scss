@@ -65,10 +65,21 @@ h2 .faint {
   margin-left: 20px;
 }
 
+// #search-hint{
+//   position: relative;
+//   right: 7%;
+//   top: 5px;
+// }
+
+// #search-hint.active {
+//   display: none;
+// }
+
 .nav-search:focus {
   background-color: white;
   color: $jumbo-bg-color;
 }
+
 
 .nav-search:focus::-webkit-input-placeholder{
   color:white;
@@ -82,11 +93,12 @@ h2 .faint {
   width: 500px;
   max-height: 100%;
   overflow-y: auto;
-  border: 3px solid;
-  border-radius: 10px;
+  box-shadow: 0px 6px 35px 0px rgba(0,0,0,0.35);
+  border-radius: 4px;
   background-color:white;
   margin-left: 49.5%;
   margin-top: 4.5%;
+  padding-top:3px;
 }
 
 .first{
@@ -101,32 +113,31 @@ h2 .faint {
 }
 
 #app-hits{
-  min-height: 440px;
+  min-height: 429px;
 }
 
 #api-hits{
-  min-height: 390px;
+  min-height: 365px;
 }
 
 #package-hits{
-  min-height: 330px;
+  min-height: 354px;
 }
 
 #tutorial-hits {
-  min-height: 300px;
-}
-
-.ais-hits{
-  margin-left: 10px;
-  margin-right: 10px;
+  min-height: 281px;
 }
 
 .ais-hits--item{
   background-color: white;
-  padding: 10px;
-  border-bottom: 1px solid #7e7e7e;
+  padding: 10px 20px;
+  border-bottom: 1px solid #DDD;
   margin: 0;
   color: #7e7e7e;
+}
+
+.ais-hits--item:hover, .ais-hits--item.active {
+  background-color: #F0F0F0;
 }
 
 .ais-hits.ais-hits__empty{
@@ -158,21 +169,22 @@ h2 .faint {
   background-color: $jumbo-color;
 }
 
-.ais-hits:first-child{
-  border-top-right-radius: 2px;
-  border-top-left-radius: 2px;
+.ais-hits--item:first-child{
+  // border-top-right-radius: 2px;
+  // border-top-left-radius: 2px;
+  padding-top: 0px
 }
 
-#hits > * > .ais-hits:first-child > div:first-child > div:first-child > .type-title{
+.ais-hits--item:first-child > div:first-child > .type-title {
+  text-transform: uppercase;
   display:flex;
-  margin-bottom: 10px;
+  margin: 0 -20px 10px -20px;
+  padding-left: 15px;
   font-size: 10pt;
   color: $main-color-subtle;
   background-color: #74b1be7a;
-  width: 120%;
-  margin-left: -20px;
-  padding-left: 20px;
 }
+
 
 .type-title{
   display:none;
@@ -182,9 +194,9 @@ h2 .faint {
   width: 25px;
   height: 25px;
   border: none;
-  position: absolute;
-  margin-left: -3.5%;
-  padding-top: 7px;
+  position: relative;
+  right: 13%;
+  top: 6px;
   opacity: 0.2;
   background-color:transparent;
 }
@@ -193,7 +205,7 @@ h2 .faint {
   display: none
 }
 
-.ais-search-box--reset-wrapper {
+.ais-search-box--reset-wrapper{
   display:inline !important;
 }
 
