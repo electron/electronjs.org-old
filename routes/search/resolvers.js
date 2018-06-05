@@ -19,7 +19,7 @@ const searchScores = {
   ]
 }
 
-// TODO: use real pagination to eliminate use of an entirely arbituary
+// TODO: use real pagination to eliminate use of an entirely arbitrary
 // limit that's totally not the answer to life, the universe and everything
 const trim = (arr) => arr.splice(0, 42)
 
