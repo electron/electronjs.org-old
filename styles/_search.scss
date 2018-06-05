@@ -65,10 +65,21 @@ h2 .faint {
   margin-left: 20px;
 }
 
+// #search-hint{
+//   position: relative;
+//   right: 7%;
+//   top: 5px;
+// }
+
+// #search-hint.active {
+//   display: none;
+// }
+
 .nav-search:focus {
   background-color: white;
   color: $jumbo-bg-color;
 }
+
 
 .nav-search:focus::-webkit-input-placeholder{
   color:white;
@@ -87,6 +98,7 @@ h2 .faint {
   background-color:white;
   margin-left: 49.5%;
   margin-top: 4.5%;
+  padding-top:3px;
 }
 
 .first{
@@ -101,22 +113,19 @@ h2 .faint {
 }
 
 #app-hits{
-  min-height: 440px;
+  min-height: 429px;
 }
 
 #api-hits{
-  min-height: 390px;
+  min-height: 365px;
 }
 
 #package-hits{
-  min-height: 330px;
+  min-height: 354px;
 }
 
 #tutorial-hits {
-  min-height: 300px;
-}
-
-.ais-hits{
+  min-height: 281px;
 }
 
 .ais-hits--item{
@@ -157,22 +166,25 @@ h2 .faint {
 }
 
 .ais-hits--item em {
-  // background-color: $jumbo-color;
+  background-color: $jumbo-color;
 }
 
-.ais-hits:first-child{
-  border-top-right-radius: 2px;
-  border-top-left-radius: 2px;
+.ais-hits--item:first-child{
+  // border-top-right-radius: 2px;
+  // border-top-left-radius: 2px;
+  padding-top: 0px
 }
 
-#hits > * > .ais-hits:first-child > div:first-child > div:first-child > .type-title {
+.ais-hits--item:first-child > div:first-child > .type-title {
   text-transform: uppercase;
   display:flex;
   margin: 0 -20px 10px -20px;
+  padding-left: 15px;
   font-size: 10pt;
   color: $main-color-subtle;
   background-color: #74b1be7a;
 }
+
 
 .type-title{
   display:none;
@@ -182,9 +194,9 @@ h2 .faint {
   width: 25px;
   height: 25px;
   border: none;
-  position: absolute;
-  margin-left: -3.5%;
-  padding-top: 7px;
+  position: relative;
+  right: 13%;
+  top: 6px;
   opacity: 0.2;
   background-color:transparent;
 }
@@ -193,7 +205,7 @@ h2 .faint {
   display: none
 }
 
-.ais-search-box--reset-wrapper {
+.ais-search-box--reset-wrapper{
   display:inline !important;
 }
 
