@@ -140,7 +140,7 @@ function buildSearchUIHandlers () {
   })
 
   function showHits () {
-    document.getElementById('hits').style.display = 'flex'
+    document.getElementById('hits').style.display = 'block'
   }
 
   function hideHits () {
