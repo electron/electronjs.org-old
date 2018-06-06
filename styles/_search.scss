@@ -55,6 +55,7 @@ h2 .faint {
 }
 
 .nav-search{
+  transition: all 0.2s;
   background-color: $main-color;
   border: none;
   outline: none;
