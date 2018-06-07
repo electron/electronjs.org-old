@@ -74,14 +74,13 @@ h2 .faint {
   color:white;
 }
 
-// #search-hint{
-//   position: relative;
-//   right: 7%;
-//   top: 5px;
-// }
-// #search-hint.active {
-//   display: none;
-// }
+#search-hint{
+  display:inline;
+  position: relative;
+  right: 7%;
+  top: 4.76px;
+  transition: all 0.2s
+}
 
 #hits{
   position: absolute;
@@ -107,7 +106,6 @@ h2 .faint {
   @media (min-width:993px) and (max-width: 1270px){
     margin-top: 6%
   }
-
 }
 
 .first{
@@ -142,10 +140,6 @@ h2 .faint {
 
 .ais-hits--item em {
   background-color: $jumbo-color;
-}
-
-.type-title{
-  display:none;
 }
 
 .ais-search-box--reset {

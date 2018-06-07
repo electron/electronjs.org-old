@@ -133,10 +133,13 @@ function buildSearchUIHandlers () {
 
   function showHits () {
     document.getElementById('hits').style.display = 'block'
+    document.getElementById('search-hint').style.display="none"
   }
 
   function hideHits () {
     document.getElementById('hits').style.display = 'none'
+    document.getElementById('search-hint').style.display = "inline"
+
   }
 
   function checkIfChild (parentElement, checkElement) {
