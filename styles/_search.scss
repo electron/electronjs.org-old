@@ -74,15 +74,6 @@ h2 .faint {
   color:white;
 }
 
-// #search-hint{
-//   position: relative;
-//   right: 7%;
-//   top: 5px;
-// }
-// #search-hint.active {
-//   display: none;
-// }
-
 #hits{
   position: absolute;
   display: none;
@@ -141,11 +132,8 @@ h2 .faint {
 }
 
 .ais-hits--item em {
-  background-color: $jumbo-color;
-}
-
-.type-title{
-  display:none;
+  background-color: rgba(211, 211, 211, 0.459);
+  text-decoration-line: underline;
 }
 
 .ais-search-box--reset {
