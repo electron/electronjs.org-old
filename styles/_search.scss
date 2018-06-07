@@ -55,10 +55,11 @@ h2 .faint {
 }
 
 .nav-search{
+  transition: all 0.2s;
   background-color: $main-color;
   border: none;
   outline: none;
-  border-radius: 10px;
+  border-radius: 100px;
   font-size: 15px;
   padding: 3px 10px 3px 10px;
   margin-right: 20px;
@@ -105,27 +106,14 @@ h2 .faint {
   order: -1;
 }
 
-#app-hits,
-#api-hits,
-#tutorial-hits,
-#package-hits{
-  overflow:hidden;
-}
-
-#app-hits{
-  min-height: 429px;
-}
-
-#api-hits{
-  min-height: 365px;
-}
-
-#package-hits{
-  min-height: 354px;
-}
-
-#tutorial-hits {
-  min-height: 281px;
+.hits-container:before {
+  content: attr(title);
+  display: block;
+  margin: 0;
+  padding: 5px 20px;
+  font-size: 10pt;
+  color: $main-color-subtle;
+  background-color: #74b1be7a;
 }
 
 .ais-hits--item{
@@ -144,47 +132,9 @@ h2 .faint {
   display:none;
 }
 
-.app-hit-container{
-  display:flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-.app-hit-header{
-  display:flex;
-  align-items: center
-}
-
-.app-hit-header > img{
-  padding-right: 7px;
-}
-
-#tutorial-hit-content{
-  display:flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
 .ais-hits--item em {
   background-color: $jumbo-color;
 }
-
-.ais-hits--item:first-child{
-  // border-top-right-radius: 2px;
-  // border-top-left-radius: 2px;
-  padding-top: 0px
-}
-
-.ais-hits--item:first-child > div:first-child > .type-title {
-  text-transform: uppercase;
-  display:flex;
-  margin: 0 -20px 10px -20px;
-  padding-left: 15px;
-  font-size: 10pt;
-  color: $main-color-subtle;
-  background-color: #74b1be7a;
-}
-
 
 .type-title{
   display:none;
@@ -195,7 +145,7 @@ h2 .faint {
   height: 25px;
   border: none;
   position: relative;
-  right: 13%;
+  right: 50px;
   top: 6px;
   opacity: 0.2;
   background-color:transparent;
@@ -219,6 +169,6 @@ h2 .faint {
   }
 }
 
-.api-hits-solo{
-  display: flex !important;
+.search-small-text {
+  font-size: 10pt;
 }
