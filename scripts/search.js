@@ -114,14 +114,6 @@ function determineOrder () {
   })
 }
 
-// function buildSoloSearch(){
-//   //loop over types obj in search of current pathname
-//   if(location.pathname === '/docs/api'){
-//     console.log('yay!')
-//     buildSearch('api', true, true)
-//   }
-// }
-
 function buildMultiSearch () {
   types.forEach(type => {
     buildSearch(type.name, type.name === types[0].name, searches)

@@ -50,8 +50,7 @@ h2 .faint {
 }
 
 .ais-search-box{
-  display: inline-block;
-
+  display: inline;
 }
 
 .nav-search{
@@ -62,19 +61,8 @@ h2 .faint {
   border-radius: 100px;
   font-size: 15px;
   padding: 3px 10px 3px 10px;
-  margin-right: 20px;
   margin-left: 20px;
 }
-
-// #search-hint{
-//   position: relative;
-//   right: 7%;
-//   top: 5px;
-// }
-
-// #search-hint.active {
-//   display: none;
-// }
 
 .nav-search:focus {
   background-color: white;
@@ -85,6 +73,15 @@ h2 .faint {
 .nav-search:focus::-webkit-input-placeholder{
   color:white;
 }
+
+// #search-hint{
+//   position: relative;
+//   right: 7%;
+//   top: 5px;
+// }
+// #search-hint.active {
+//   display: none;
+// }
 
 #hits{
   position: absolute;
@@ -100,6 +97,17 @@ h2 .faint {
   margin-left: 49.5%;
   margin-top: 4.5%;
   padding-top:3px;
+
+  @media (max-width: 992px) {
+      width: 100%;
+      margin-left: 0;
+      margin-top: 10.5%
+  }
+
+  @media (min-width:993px) and (max-width: 1270px){
+    margin-top: 6%
+  }
+
 }
 
 .first{
@@ -144,9 +152,6 @@ h2 .faint {
   width: 25px;
   height: 25px;
   border: none;
-  position: relative;
-  right: 50px;
-  top: 6px;
   opacity: 0.2;
   background-color:transparent;
 }
@@ -157,6 +162,9 @@ h2 .faint {
 
 .ais-search-box--reset-wrapper{
   display:inline !important;
+  position: relative;
+  right: 30px;
+  top: 6px;
 }
 
 ::-webkit-input-placeholder{
@@ -172,3 +180,5 @@ h2 .faint {
 .search-small-text {
   font-size: 10pt;
 }
+
+
