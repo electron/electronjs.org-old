@@ -16,8 +16,26 @@ describe('electronjs.org', () => {
 })
 
 describe('search', () => {
-    it('filters for type when search is prepended with type:', () => {
+    before(() => {
       cy.visit('http://localhost:5000')
+    })
+
+    it('the results returned from searching match the results returned from each algolia indice', () => {
+      cy.get('.nav-search').type('window')
+      cy.wait(100)
+      let types = ['#tutorial-hits', '#api-hits', '#package-hits', '#app-hits']
+      types.forEach(type =>{
+        cy.get(type)
+          .should(typeHits => {
+            if(type.includes('tutorial')) expect(typeHits.first()).to.contain('Windows Taskbar')
+            if (type.includes('api')) expect(typeHits.first()).to.contain('window-all-closed')
+            if (type.includes('package')) expect(typeHits.first()).to.contain('electron-builder')
+            if (type.includes('app')) expect(typeHits.first()).to.contain('PhotoScreenSaver')
+          })
+      })
+    })
+
+    it('filters for type when search is prepended with type:', () => {
       cy.get('.nav-search').type('app:')
       cy.wait(100)
       cy.get('#api-hits').should('not.be.visible')
@@ -26,7 +44,6 @@ describe('search', () => {
     })
 
     it('filters for type when search is prepended with is:type', () => {
-      cy.visit('http://localhost:5000')
       cy.get('.nav-search').type('is:app')
       cy.wait(100)
       cy.get('#api-hits').should('not.be.visible')
