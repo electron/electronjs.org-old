@@ -70,7 +70,8 @@ h2 .faint {
 }
 
 
-.nav-search:focus::-webkit-input-placeholder{
+.nav-search:focus::-webkit-input-placeholder,
+.nav-search:focus::-moz-input-placeholder {
   color:white;
 }
 
@@ -155,7 +156,8 @@ h2 .faint {
   top: 6px;
 }
 
-::-webkit-input-placeholder{
+::-webkit-input-placeholder,
+::-moz-input-placeholder{
   color: $jumbo-color;
 }
 

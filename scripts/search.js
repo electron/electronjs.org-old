@@ -90,7 +90,8 @@ function buildSearch (type, isPrimarySearch = false, searches) {
     search.addWidget(
       instantsearch.widgets.searchBox({
         container: '#search-input',
-        placeholder: `Search Electron ${pluralize(type)}`
+        placeholder: `Search Electron ${pluralize(type)}`,
+        autofocus: false
       })
     )
   }
