@@ -34,25 +34,31 @@ function buildSearch (type, isPrimarySearch = false, searches) {
   // connects search input to address bar
   if (isPrimarySearch) opts.routing = true
 
-  // if when called we received an obj called searches its a multi obj search
+  // if when called we received an obj called searches, we know its a multi type search
   if (isPrimarySearch && searches) {
     opts.searchFunction = (helper) => {
       let query = helper.state.query
       let typesToSearch = types.slice(1)
+
       // if the query includes something like api: reduce the types to just that type name
-      // intercept the query and slice of api: before searching
+      // intercept the query and slice of api: or is:api before searching
       types.forEach(type => {
-        if (query.includes(`${type.name}:`)) {
+        if (query.includes(`${type.name}:`) || query.includes(`is:${type.name}`)) {
           let filteredTypes = types.filter(ele => ele.name !== type.name)
-          console.log(filteredTypes)
           filteredTypes.forEach(filteredType => {
             document.getElementById(`${filteredType.name}-hits`).style.display = 'none'
           })
           document.getElementById(`${type.name}-hits`).style.height = 'auto'
           document.getElementById(`${type.name}-hits`).style.overflow = 'scroll'
-          query = query.slice(query.indexOf(':'))
+          if (query.includes(`is:${type.name}`)) query = query.slice(query.indexOf(`${type.name}`) + `${type.name}`.length+1)
+          else query = query.slice(query.indexOf(':')+1)
           typesToSearch = [{name: `${type.name}`}]
         }
+      })
+
+      //if the types to search were filtered but are now all types, show them again
+      typesToSearch.forEach(type => {
+        document.getElementById(`${type.name}-hits`).style.display = 'block'
       })
 
       typesToSearch.forEach(type => {

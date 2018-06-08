@@ -70,10 +70,9 @@ h2 .faint {
 }
 
 
-.nav-search:focus::-webkit-input-placeholder,
-.nav-search:focus::-moz-input-placeholder {
-  color:white;
-}
+.nav-search:focus::-webkit-input-placeholder{ color:white }
+.nav-search:focus::-moz-input-placeholder { color: white }
+
 
 #hits{
   position: absolute;
@@ -156,10 +155,8 @@ h2 .faint {
   top: 6px;
 }
 
-::-webkit-input-placeholder,
-::-moz-input-placeholder{
-  color: $jumbo-color;
-}
+::-webkit-input-placeholder { color: $jumbo-color; }
+::-moz-input-placeholder{color: $jumbo-color; }
 
 .search-results {
   .search-form {
