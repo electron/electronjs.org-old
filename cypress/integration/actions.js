@@ -16,8 +16,12 @@ describe('electronjs.org', () => {
 })
 
 describe('search', () => {
-    before(() => {
+    before(() =>{
       cy.visit('http://localhost:5000')
+    })
+
+    beforeEach(() => {
+      cy.get('.nav-search').clear()
     })
 
     it('the results returned from searching match the results returned from each algolia indice', () => {
@@ -35,6 +39,14 @@ describe('search', () => {
       })
     })
 
+    it('highlights what is typed in the input', () => {
+      cy.get('.nav-search').type('window')
+      cy.wait(100)
+      cy.get('.ais-hits--item em').contains('window')
+      cy.get('.nav-search').clear().type('electron')
+      cy.get('.ais-hits--item em').contains('electron')
+    })
+
     it('filters for type when search is prepended with type:', () => {
       cy.get('.nav-search').type('app:')
       cy.wait(100)
@@ -50,6 +62,7 @@ describe('search', () => {
       cy.get('#package-hits').should('not.be.visible')
       cy.get('#tutorial-hits').should('not.be.visible')
     })
+
 
 
 })
