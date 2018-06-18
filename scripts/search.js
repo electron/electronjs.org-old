@@ -138,12 +138,20 @@ function buildSearchUIHandlers () {
     e.target === navInput || checkIfChild(hits, e.target) ? showHits() : hideHits()
   })
 
+  window.addEventListener('click', e => {
+    if(e.target === document.querySelector('.dialog-button')) document.querySelector('#search-hint-dialog').style.display="none"
+  })
+
   function showHits () {
     document.getElementById('hits').style.display = 'block'
+    document.getElementById('search-hint').style.display="none"
+    document.querySelector('#search-hint-dialog').style.display = "none"
   }
 
   function hideHits () {
     document.getElementById('hits').style.display = 'none'
+    document.getElementById('search-hint').style.display = "inline"
+
   }
 
   function checkIfChild (parentElement, checkElement) {
