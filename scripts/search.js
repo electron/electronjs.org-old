@@ -28,7 +28,8 @@ function buildSearch (type, isPrimarySearch = false, searches) {
   const opts = {
     appId: 'L9LD9GHGQJ',
     apiKey: '24e7e99910a15eb5d9d93531e5682370',
-    indexName: pluralize(type)
+    indexName: pluralize(type),
+    advancedSyntax: true
   }
 
   // connects search input to address bar
