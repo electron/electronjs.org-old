@@ -16,6 +16,7 @@ const types = [{
   name: 'app',
   path: '/apps'
 }]
+const typeNames = types.map(type => type.name)
 
 module.exports = () => {
   buildMultiSearch()
@@ -35,34 +36,25 @@ function buildSearch (type, isPrimarySearch = false, searches) {
   // connects search input to address bar
   if (isPrimarySearch) opts.routing = true
 
-  // if when called we received an obj called searches, we know its a multi type search
-  if (isPrimarySearch && searches) {
+  // the primary search delegates queries to secondary searches
+  if (isPrimarySearch) {
     opts.searchFunction = (helper) => {
       let query = helper.state.query
-      let typesToSearch = types.slice(1)
-
-      // if the query includes something like api: reduce the types to just that type name
-      // intercept the query and slice of api: or is:api before searching
-      types.forEach(type => {
-        if (query.includes(`${type.name}:`) || query.includes(`is:${type.name}`)) {
-          let filteredTypes = types.filter(ele => ele.name !== type.name)
-          filteredTypes.forEach(filteredType => {
-            document.getElementById(`${filteredType.name}-hits`).style.display = 'none'
-          })
-          document.getElementById(`${type.name}-hits`).style.height = 'auto'
-          document.getElementById(`${type.name}-hits`).style.overflow = 'scroll'
-          if (query.includes(`is:${type.name}`)) query = query.slice(query.indexOf(`${type.name}`) + `${type.name}`.length+1)
-          else query = query.slice(query.indexOf(':')+1)
-          typesToSearch = [{name: `${type.name}`}]
-        }
+      
+      // should search be isolated to a specific type?
+      // e.g. `is:app foo` or `app:foo` 
+      const isolatedType = typeNames.find(typeName => {  
+        return query.includes(`is:${typeName}`) || query.includes(`${typeName}:`)
       })
 
-      //if the types to search were filtered but are now all types, show them again
-      typesToSearch.forEach(type => {
-        document.getElementById(`${type.name}-hits`).style.display = 'block'
+      // hide hit containers if a specific type is isolated
+      typeNames.forEach(typeName => {
+        const display = (!isolatedType || (isolatedType === typeName)) ? 'block' : 'none'
+        document.getElementById(`${typeName}-hits`).style.display = display
       })
-
-      typesToSearch.forEach(type => {
+      
+      // delegate query to secondary searches
+      types.slice(1).forEach(type => {
         const search = searches[type.name]
         if (search && search.helper) {
           search.helper.setQuery(query)
@@ -70,6 +62,7 @@ function buildSearch (type, isPrimarySearch = false, searches) {
         }
       })
 
+      // trigger the primary search
       helper.search()
     }
   }
