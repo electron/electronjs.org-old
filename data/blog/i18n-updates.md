@@ -31,11 +31,11 @@ Notice a typo or an incorrect translation while you're reading the documentation
 
 ## 📈 Some Statistics
 
-Ever since we have publicized the Electron documentation i18n effort, we have seen _huge_ growth in translation contributions from Electron community members from all around the world. To date, we have **1,020,297 string translated, from 707 community translators, and in 23 languages**.
+Ever since we have publicized the Electron documentation i18n effort, we have seen _huge_ growth in translation contributions from Electron community members from all around the world. To date, we have **1,719,029 string translated, from 1,066 community translators, and in 25 languages**.
 
 <figure>
   <a href="https://crowdin.com/project/electron/">
-    <img class="screenshot" src="https://user-images.githubusercontent.com/6842965/36511457-fad77bb8-1766-11e8-88ab-1c68fe3cbdee.png" alt="Translation Forecast provided by Crowdin">
+    <img class="screenshot" src="https://user-images.githubusercontent.com/6842965/41649826-ca26037c-747c-11e8-9594-5ce12d2978e2.png" alt="Translation Forecast provided by Crowdin">
     <figcaption>Translation Forecast provided by Crowdin</figcaption>
   </a>
 </figure>
@@ -48,10 +48,10 @@ We would like to give a huge ❤️ thank you ❤️ to everyone who has contrib
 
 If you are one of our incredible translators, please take a few minutes to fill this out: https://goo.gl/forms/b46sjdcHmlpV0GKT2.
 
-## Node's Internationalization Effort
-- **WIP**
-- https://medium.com/the-node-js-collection/internationalizing-node-js-fe7761798b0a
+## 🙌 Node's Internationalization Effort
 
-## Contributing Guide
-- **WIP**
-- link to translation contributing doc on repo that zeke is writing
+Because of the sucess of Electron's i18n initiative, Node.js decided to model [their revamped i18n effort](https://github.com/nodejs/i18n) after the pattern we use as well! :tada: The [Node.js i18n initiative](https://github.com/nodejs/i18n) has now been launched and gained great momentum, but you can stil read about the early proposal and reasoning behind it [here](https://medium.com/the-node-js-collection/internationalizing-node-js-fe7761798b0a).
+
+## 🔦 Contributing Guide
+
+If you're interested in our effort to making Electron more international friendly, we have a hand-dandy [contributing guide here](https://github.com/electron/i18n/blob/master/contributing.md) to help you get started. Happy translating! :books:
