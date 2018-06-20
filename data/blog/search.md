@@ -10,7 +10,7 @@ date: '2018-06-21'
 The Electron website has a new search engine that delivers instant results for
 API docs, tutorials, Electron-related npm packages, and more.
 
-TODO: SCREENCAST GOES HERE
+![electronjs.org search](https://user-images.githubusercontent.com/2289/41683719-417ca80a-7490-11e8-9a52-fb145f4251ba.png)
 
 ---
 
