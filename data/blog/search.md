@@ -89,9 +89,22 @@ Want alternatives to Electron's built-in IPC modules? Search for [`is:package ip
 It's [easy to index data with Algolia](https://github.com/electron/algolia-indices), 
 so we added the existing apps list from [electron/apps](https://github.com/electron/apps).
 
-Try a search for [`music`].
+Try a search for [`music`] or [`homebrew`].
 
-## Search With Your Keyboard
+## Filtering Results
+
+If you've used GitHub's [code search](https://github.com/search) before,
+you're probably aware of its colon-separated key-value filters like
+`extension:js` or `user:defunkt`. We think this filtering technique is pretty
+powerful, so we've added an `is:` keyword to Electron's search that lets you
+filter results to only show a single type:
+
+- [`is:api thumbnail`]
+- [`is:tutorial security`]
+- [`is:package ipc`]
+- [`is:app graphql`]
+
+## Keyboard Navigation
 
 Developers love keyboard shortcuts! The new search can be used without taking
 your fingers off the keyboard:
@@ -106,27 +119,40 @@ We also open-sourced the [module](https://github.com/electron/search-with-your-k
 that enables this keyboard interaction. It's designed for use with Algolia InstantSearch, 
 but is generalized to enable compatibility with different search implementations.
 
-## Open Source
+## We want your feedback
 
-Like nearly everything in the Electron community, the components that make up
-our search experience are mostly open source:
+If you encounter any issues with the new search tool, we want to hear about it!
 
+Like nearly everything in the Electron community, the new search is built
+mostly on open source software. The best way to submit your feedback is by 
+filing an issue on GitHub in the appropriate repository:
+
+- [electron/electronjs.org](https://github.com/electron/electronjs.org) is Electron's website. If you don't know where to file an issue, this your best bet.
+- [electron/algolia-indices](https://github.com/electron/algolia-indices) is where all the searchable Electron data is compiled. If you find an issue with the actual data, this would be the place to report it.
+- [electron/search-with-your-keyboard](https://github.com/electron/search-with-your-keyboard) makes the search interface navigable by keyboard.
 - [algolia/instantsearch.js](https://github.com/algolia/instantsearch.js) is the browser-side client for find-as-you-type search experiences.
 - [algolia/algoliasearch-client-javascript](https://github.com/algolia/algoliasearch-client-javascript) is the Node.js client for uploading data to Algolia's servers.
-- [electron/algolia-indices](https://github.com/electron/algolia-indices) is where all the searchable Electron data is compiled.
-- [nice-registry/sourceranks](https://github.com/nice-registry/sourceranks) is a collection of rankings for every package in the npm registry.
-- [electron/electronjs.org](https://github.com/electron/electronjs.org) is Electron's Node.js-powered website.
-- [electron/search-with-your-keyboard](https://github.com/electron/search-with-your-keyboard) is a standalone tool for making search interfaces navigable by keyboard.
+
+## Thanks
+
+Special thanks to [Emily Jordan](https://github.com/echjordan)
+and [Vanessa Yuen](https://github.com/vanessayuenn) 
+for building these new search capabilities, and to the team at Algolia for 
+answering all our questions along the way. 🍹
 
 [Algolia]: https://algolia.com
 [`widnow`]: https://electron-website-pr-1248.herokuapp.com/?query=widnow
 [`resize`]: https://electron-website-pr-1248.herokuapp.com/?query=resize
 [`security`]: https://electron-website-pr-1248.herokuapp.com/?query=security
-[`music`]: https://electron-website-pr-1248.herokuapp.com/?query=debug
+[`music`]: https://electron-website-pr-1248.herokuapp.com/?query=music
+[`homebrew`]: https://electron-website-pr-1248.herokuapp.com/?query=homebrew
 [`electron-npm-packages`]: https://ghub.io/electron-npm-packages
 [SourceRank]: https://docs.libraries.io/overview.html#sourcerank
 [`sourceranks`]: https://github.com/nice-registry/sourceranks
+[`is:api thumbnail`]: https://electron-website-pr-1248.herokuapp.com/?query=is%3Aapi%20thumbnail
+[`is:tutorial security`]: https://electron-website-pr-1248.herokuapp.com/?query=is%3Atutorial%20security
 [`is:package ipc`]: https://electron-website-pr-1248.herokuapp.com/?query=is%3Apackage%20ipc
+[`is:app graphql`]: https://electron-website-pr-1248.herokuapp.com/?query=is%3Aapp%20graphql
 [quick-start]: https://github.com/electron/electron-quick-start
 
 <!-- TODO: REPLACE electron-website-pr-1248 with electronjs.org -->
