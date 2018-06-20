@@ -126,9 +126,15 @@ function buildSearchUIHandlers () {
 
   let navInput = document.querySelector('.nav-search')
   let hits = document.getElementById('hits')
-  navInput.addEventListener('input', e => showHits())
-  navInput.addEventListener('focus', e => showHits())
+  navInput.addEventListener('input', e => {
+    navInput.value ? showHits() : hideHits()
+  })
+  navInput.addEventListener('focus', e => {
+    navInput.value ? showHits() : hideHits()
+  })
   window.addEventListener('click', e => {
+    if (!navInput.value) return hideHits()
+
     e.target === navInput || checkIfChild(hits, e.target) ? showHits() : hideHits()
   })
 
