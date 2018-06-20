@@ -50,8 +50,8 @@ If you are one of our incredible translators, please take a few minutes to fill 
 
 ## 🙌 Node's Internationalization Effort
 
-Because of the sucess of Electron's i18n initiative, Node.js decided to model [their revamped i18n effort](https://github.com/nodejs/i18n) after the pattern we use as well! :tada: The [Node.js i18n initiative](https://github.com/nodejs/i18n) has now been launched and gained great momentum, but you can stil read about the early proposal and reasoning behind it [here](https://medium.com/the-node-js-collection/internationalizing-node-js-fe7761798b0a).
+Because of the sucess of Electron's i18n initiative, Node.js decided to model [their revamped i18n effort](https://github.com/nodejs/i18n) after the pattern we use as well! 🎉 The [Node.js i18n initiative](https://github.com/nodejs/i18n) has now been launched and gained great momentum, but you can stil read about the early proposal and reasoning behind it [here](https://medium.com/the-node-js-collection/internationalizing-node-js-fe7761798b0a).
 
 ## 🔦 Contributing Guide
 
-If you're interested in joining our effort to make Electron more international friendly, we have a hand-dandy [contributing guide](https://github.com/electron/i18n/blob/master/contributing.md) to help you get started. Happy translating! :books:
+If you're interested in joining our effort to make Electron more international friendly, we have a hand-dandy [contributing guide](https://github.com/electron/i18n/blob/master/contributing.md) to help you get started. Happy internationalizing! 📚
