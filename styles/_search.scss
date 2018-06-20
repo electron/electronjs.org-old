@@ -51,6 +51,7 @@ h2 .faint {
 
 .ais-search-box{
   display: inline;
+  margin-right: 10px;
 }
 
 .nav-search{
@@ -196,11 +197,12 @@ h2 .faint {
 }
 
 .ais-search-box--reset {
-  width: 25px;
-  height: 25px;
-  border: none;
-  opacity: 0.2;
-  background-color:transparent;
+  display: none;
+  // width: 25px;
+  // height: 25px;
+  // border: none;
+  // opacity: 0.2;
+  // background-color:transparent;
 }
 
 .ais-search-box--magnifier {
