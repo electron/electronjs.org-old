@@ -101,6 +101,9 @@ describe('electronjs.org', () => {
 
     test('app pages apply platform labels to download links', async () => {
       const $ = await get('/apps/hyper')
+      if ($('a.app-download.darwin').length === 0) {
+        console.log($('.app-meta').html())
+      }
       $('a.app-download.darwin').length.should.be.above(0)
       $('a.app-download.linux').length.should.be.above(0)
       $('a.app-download.win32').length.should.be.above(0)
