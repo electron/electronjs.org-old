@@ -31,7 +31,7 @@ Notice a typo or an incorrect translation while you're reading the documentation
 
 ## 📈 Some Statistics
 
-Ever since we have publicized the Electron documentation i18n effort, we have seen _huge_ growth in translation contributions from Electron community members from all around the world. To date, we have **1,719,029 string translated, from 1,066 community translators, and in 25 languages**.
+Ever since we have publicized the Electron documentation i18n effort, we have seen _huge_ growth in translation contributions from Electron community members from all around the world. To date, we have **1,719,029 strings translated, from 1,066 community translators, and in 25 languages**.
 
 <figure>
   <a href="https://crowdin.com/project/electron/">
