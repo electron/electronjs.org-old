@@ -33,11 +33,12 @@ function buildSearch (type, isPrimarySearch = false, searches) {
     advancedSyntax: true
   }
 
-  // connects search input to address bar
-  if (isPrimarySearch) opts.routing = true
-
   // the primary search delegates queries to secondary searches
   if (isPrimarySearch) {
+
+    // sync search input with query param in address bar
+    opts.routing = true
+
     opts.searchFunction = (helper) => {
       let query = helper.state.query
       
