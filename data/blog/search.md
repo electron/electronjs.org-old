@@ -10,7 +10,7 @@ date: '2018-06-21'
 The Electron website has a new search engine that delivers instant results for
 API docs, tutorials, Electron-related npm packages, and more.
 
-<!-- TODO: SCREENCAST GOES HERE -->
+TODO: SCREENCAST GOES HERE
 
 ---
 
