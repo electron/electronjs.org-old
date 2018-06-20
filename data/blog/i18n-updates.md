@@ -54,4 +54,4 @@ Because of the sucess of Electron's i18n initiative, Node.js decided to model [t
 
 ## 🔦 Contributing Guide
 
-If you're interested in joining our effort to make Electron more international friendly, we have a hand-dandy [contributing guide](https://github.com/electron/i18n/blob/master/contributing.md) to help you get started. Happy internationalizing! 📚
+If you're interested in joining our effort to make Electron more international friendly, we have a handy-dandy [contributing guide](https://github.com/electron/i18n/blob/master/contributing.md) to help you get started. Happy internationalizing! 📚
