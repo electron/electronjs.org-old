@@ -96,13 +96,11 @@ Try a search for [`music`].
 Developers love keyboard shortcuts! The new search can be used without taking
 your fingers off the keyboard:
 
-Key | Action
---- | ------
-<kbd>/</kbd> | Focus the search input
-<kbd>esc</kbd> | Focus the search input and clear it
-<kbd>down</kbd> | Move to the next result
-<kbd>up</kbd> | Move to the previous result, or the search input
-<kbd>enter</kbd> | Open a result
+- <kbd>/</kbd> focuses the search input
+- <kbd>esc</kbd> focuses the search input and clears it
+- <kbd>down</kbd> moves to the next result
+- <kbd>up</kbd> moves to the previous result, or the search input
+- <kbd>enter</kbd> opens a result
 
 We also open-sourced the [module](https://github.com/electron/search-with-your-keyboard/)
 that enables this keyboard interaction. It's designed for use with Algolia InstantSearch, 
