@@ -24,7 +24,7 @@ describe('search', () => {
       cy.get('.nav-search').clear()
     })
 
-    it('the results returned from searching match the results returned from each algolia indice', () => {
+    it('the results returned from searching match the results returned from each algolia index', () => {
       cy.get('.nav-search').type('window')
       cy.wait(100)
       let types = ['#tutorial-hits', '#api-hits', '#package-hits', '#app-hits']
@@ -62,7 +62,4 @@ describe('search', () => {
       cy.get('#package-hits').should('not.be.visible')
       cy.get('#tutorial-hits').should('not.be.visible')
     })
-
-
-
 })
