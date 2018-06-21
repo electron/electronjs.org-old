@@ -140,19 +140,17 @@ for building these new search capabilities, to [Libraries.io] for providing
 [SourceRank] scores, and to the team at Algolia for helping us get started. 🍹
 
 [`electron-npm-packages`]: https://ghub.io/electron-npm-packages
-[`homebrew`]: https://electron-website-pr-1248.herokuapp.com/?query=homebrew
-[`is:api thumbnail`]: https://electron-website-pr-1248.herokuapp.com/?query=is%3Aapi%20thumbnail
-[`is:app graphql`]: https://electron-website-pr-1248.herokuapp.com/?query=is%3Aapp%20graphql
-[`is:package ipc`]: https://electron-website-pr-1248.herokuapp.com/?query=is%3Apackage%20ipc
-[`is:tutorial security`]: https://electron-website-pr-1248.herokuapp.com/?query=is%3Atutorial%20security
-[`music`]: https://electron-website-pr-1248.herokuapp.com/?query=music
-[`resize`]: https://electron-website-pr-1248.herokuapp.com/?query=resize
-[`security`]: https://electron-website-pr-1248.herokuapp.com/?query=security
+[`homebrew`]: https://electronjs.org/?query=homebrew
+[`is:api thumbnail`]: https://electronjs.org/?query=is%3Aapi%20thumbnail
+[`is:app graphql`]: https://electronjs.org/?query=is%3Aapp%20graphql
+[`is:package ipc`]: https://electronjs.org/?query=is%3Apackage%20ipc
+[`is:tutorial security`]: https://electronjs.org/?query=is%3Atutorial%20security
+[`music`]: https://electronjs.org/?query=music
+[`resize`]: https://electronjs.org/?query=resize
+[`security`]: https://electronjs.org/?query=security
 [`sourceranks`]: https://github.com/nice-registry/sourceranks
-[`widnow`]: https://electron-website-pr-1248.herokuapp.com/?query=widnow
+[`widnow`]: https://electronjs.org/?query=widnow
 [Algolia]: https://algolia.com
 [Libraries.io]: https://libraries.io
 [quick-start]: https://github.com/electron/electron-quick-start
 [SourceRank]: https://docs.libraries.io/overview.html#sourcerank
-
-<!-- TODO: REPLACE electron-website-pr-1248 with electronjs.org -->
