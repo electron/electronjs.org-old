@@ -56,9 +56,9 @@ function buildSearch (type, isPrimarySearch = false, searches) {
       // remove `is:foo` filter from query
       // TODO: figure out a way to make this affect the search
       // without affecting the input element or the query param
-      if (isolatedType) {
-        query = query.replace(`is:${isolatedType}`, '').trim()
-      }
+      // if (isolatedType) {
+      //   query = query.replace(`is:${isolatedType}`, '').trim()
+      // }
 
       // delegate query to secondary searches
       types.slice(1).forEach(type => {
