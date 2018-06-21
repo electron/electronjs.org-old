@@ -40,7 +40,7 @@ describe('localized views', () => {
   })
 
   // Ensure every string in locale.yml is actually used somewhere
-  it('every localized string is used in a view (except for pages.* and _404.*)', () => {
+  it('every string in locale.yml is used in a view (except for pages.* and _404.*)', () => {
     const keys = Object.keys(flat(locale))
       .filter(key => !key.startsWith('pages.'))
       .filter(key => !key.startsWith('_404.'))
@@ -52,6 +52,6 @@ describe('localized views', () => {
       return acc
     }, [])
 
-    keys.forEach(key => expect(usedKeys).to.include(key))
+    keys.forEach(key => expect(usedKeys, `did not find ${key} in any handlebars template`).to.include(key))
   })
 })

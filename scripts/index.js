@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+  require('./search')()
   require('./lazy-load-images')()
   require('./get-localized-strings')()
   require('./create-filter-list')()
