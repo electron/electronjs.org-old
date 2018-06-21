@@ -530,28 +530,4 @@ describe('electronjs.org', () => {
       res.text.should.eq('"POST not allowed"')
     })
   })
-
-  describe('search', () => {
-    test('only shows search bar when there is no query', async () => {
-      const $ = await get('/search')
-      $('search-results').length.should.equal(0)
-    })
-    test('shows no more than 5 results from each of the 3 sources when there is query', async () => {
-      const $ = await get('/search?q=ipc')
-      $('ul.search-results').length.should.equal(3)
-      $('ul.search-results').each((i, elem) => {
-        $(elem).children('li').length.should.be.at.most(5)
-      })
-    })
-    test('shows results from one source if specified', async () => {
-      const $ = await get('/search/docs?q=ipc')
-      $('ul.search-results').length.should.equal(1)
-    })
-    test('does not crash on unusual queries', async () => {
-      let res = await supertest(app).get('/search/docs?q=*')
-      res.statusCode.should.equal(200)
-      res = await supertest(app).get('/search?q=*')
-      res.statusCode.should.equal(200)
-    })
-  })
 })
