@@ -7,6 +7,7 @@
   display: inline-block;
   width: 24px;
   height: 24px;
+  vertical-align: middle;
 }
 
 .ais-hits--item .app-result-icon {
@@ -125,6 +126,10 @@
   order: -1;
 }
 
+.hits-container:empty {
+  display: none;
+}
+
 .hits-container:before {
   content: attr(title);
   display: block;
@@ -152,7 +157,7 @@
 }
 
 .ais-hits--item em {
-  background-color: rgba(211, 211, 211, 0.459);
+  // background-color: rgba(211, 211, 211, 0.459);
   text-decoration-line: underline;
 }
 
@@ -179,13 +184,6 @@
 ::-webkit-input-placeholder { color: $jumbo-color; }
 ::-moz-input-placeholder{color: $jumbo-color; }
 
-.search-results {
-  .search-form {
-    justify-content: left
-  }
-}
-
 .search-small-text {
   font-size: 10pt;
 }
-
