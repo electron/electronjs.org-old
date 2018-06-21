@@ -21,16 +21,12 @@ API docs, tutorials, Electron-related npm packages, and more.
 Learning a new technology or framework like Electron can be intimidating. 
 Once you get past the [quick-start] phase, it can 
 be difficult to learn best practices, find the right APIs, or discover the tools 
-that will help you build the app of your dreams. As app developers, we often find 
-ourselves turning to sites like  Google and Stack Overflow for answers. This 
-works, but we can do better.
+that will help you build the app of your dreams. We want the Electron website to 
+be a better tool for finding the resources you need to build apps faster and 
+more easily.
 
-Today we're rolling out a new search feature on the Electron website that will
-help developers find the resources they need to build apps faster and more 
-easily.
-
-To try it out, visit any page on [electronjs.org](https://electronjs.org)
-and you'll find a search input at the top of the page.
+Visit any page on [electronjs.org](https://electronjs.org) and you'll find the 
+new search input at the top of the page.
 
 ## The Search Engine
 
@@ -68,7 +64,7 @@ Trying to resize a window? Search for [`resize`] and jump straight to the method
 ## Tutorials
 
 Electron has an ever-growing collection of tutorials to complement its API
-documentation. Now you can more easily find all tutorials on a given topic,
+documentation. Now you can more easily find tutorials on a given topic,
 right alongside related API documentation.
 
 Looking for security best practices? Search for [`security`].
@@ -80,7 +76,7 @@ always easy to find the one you need. To make it easier to discover these module
 we've created [`electron-npm-packages`], a collection of the 3400+ modules in 
 the registry that are built specifically for use with Electron.
 
-The folks at [Libraries.io](https://libraries.io/) have created [SourceRank],
+The folks at [Libraries.io] have created [SourceRank],
 a system for scoring software projects based on a combination of metrics like
 code, community, documentation, and usage. We created a [`sourceranks`]
 module that includes the score of every module in the npm registry, and we
@@ -110,7 +106,7 @@ filter results to only show a single type:
 
 ## Keyboard Navigation
 
-Developers love keyboard shortcuts! The new search can be used without taking
+People love keyboard shortcuts! The new search can be used without taking
 your fingers off the keyboard:
 
 - <kbd>/</kbd> focuses the search input
@@ -127,22 +123,21 @@ but is generalized to enable compatibility with different search implementations
 
 If you encounter any issues with the new search tool, we want to hear about it!
 
-Like nearly everything in the Electron community, the new search is built
-mostly on open source software. The best way to submit your feedback is by 
-filing an issue on GitHub in the appropriate repository:
+The best way to submit your feedback is by filing an issue on GitHub in the 
+appropriate repository:
 
-- [electron/electronjs.org](https://github.com/electron/electronjs.org) is Electron's website. If you don't know where to file an issue, this your best bet.
-- [electron/algolia-indices](https://github.com/electron/algolia-indices) is where all the searchable Electron data is compiled. If you find an issue with the actual data, this would be the place to report it.
+- [electron/electronjs.org](https://github.com/electron/electronjs.org) is the Electron website. If you don't know where to file an issue, this your best bet.
+- [electron/algolia-indices](https://github.com/electron/algolia-indices) is where all the searchable Electron data is compiled.
 - [electron/search-with-your-keyboard](https://github.com/electron/search-with-your-keyboard) makes the search interface navigable by keyboard.
-- [algolia/instantsearch.js](https://github.com/algolia/instantsearch.js) is the browser-side client for find-as-you-type search experiences.
+- [algolia/instantsearch.js](https://github.com/algolia/instantsearch.js) is the browser-side client that enables find-as-you-type search.
 - [algolia/algoliasearch-client-javascript](https://github.com/algolia/algoliasearch-client-javascript) is the Node.js client for uploading data to Algolia's servers.
 
 ## Thanks
 
 Special thanks to [Emily Jordan](https://github.com/echjordan)
 and [Vanessa Yuen](https://github.com/vanessayuenn) 
-for building these new search capabilities, and to the team at Algolia for 
-answering all our questions along the way. 🍹
+for building these new search capabilities, to [Libraries.io] for providing 
+[SourceRank] scores, and to the team at Algolia for helping us get started. 🍹
 
 [Algolia]: https://algolia.com
 [`widnow`]: https://electron-website-pr-1248.herokuapp.com/?query=widnow
@@ -152,6 +147,7 @@ answering all our questions along the way. 🍹
 [`homebrew`]: https://electron-website-pr-1248.herokuapp.com/?query=homebrew
 [`electron-npm-packages`]: https://ghub.io/electron-npm-packages
 [SourceRank]: https://docs.libraries.io/overview.html#sourcerank
+[Libraries.io]: https://libraries.io
 [`sourceranks`]: https://github.com/nice-registry/sourceranks
 [`is:api thumbnail`]: https://electron-website-pr-1248.herokuapp.com/?query=is%3Aapi%20thumbnail
 [`is:tutorial security`]: https://electron-website-pr-1248.herokuapp.com/?query=is%3Atutorial%20security
