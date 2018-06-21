@@ -2,7 +2,7 @@ const fs = require('fs')
 const path = require('path')
 
 // This module gets browserified with the `brfs` transform.
-// Since brfs evaluates source code statically, you can't use dynamic 
+// Since brfs evaluates source code statically, you can't use dynamic
 // expressions that need to be evaluated at runtime.
 // See https://github.com/browserify/brfs#gotchas
 
