@@ -139,20 +139,20 @@ and [Vanessa Yuen](https://github.com/vanessayuenn)
 for building these new search capabilities, to [Libraries.io] for providing 
 [SourceRank] scores, and to the team at Algolia for helping us get started. 🍹
 
-[Algolia]: https://algolia.com
-[`widnow`]: https://electron-website-pr-1248.herokuapp.com/?query=widnow
+[`electron-npm-packages`]: https://ghub.io/electron-npm-packages
+[`homebrew`]: https://electron-website-pr-1248.herokuapp.com/?query=homebrew
+[`is:api thumbnail`]: https://electron-website-pr-1248.herokuapp.com/?query=is%3Aapi%20thumbnail
+[`is:app graphql`]: https://electron-website-pr-1248.herokuapp.com/?query=is%3Aapp%20graphql
+[`is:package ipc`]: https://electron-website-pr-1248.herokuapp.com/?query=is%3Apackage%20ipc
+[`is:tutorial security`]: https://electron-website-pr-1248.herokuapp.com/?query=is%3Atutorial%20security
+[`music`]: https://electron-website-pr-1248.herokuapp.com/?query=music
 [`resize`]: https://electron-website-pr-1248.herokuapp.com/?query=resize
 [`security`]: https://electron-website-pr-1248.herokuapp.com/?query=security
-[`music`]: https://electron-website-pr-1248.herokuapp.com/?query=music
-[`homebrew`]: https://electron-website-pr-1248.herokuapp.com/?query=homebrew
-[`electron-npm-packages`]: https://ghub.io/electron-npm-packages
-[SourceRank]: https://docs.libraries.io/overview.html#sourcerank
-[Libraries.io]: https://libraries.io
 [`sourceranks`]: https://github.com/nice-registry/sourceranks
-[`is:api thumbnail`]: https://electron-website-pr-1248.herokuapp.com/?query=is%3Aapi%20thumbnail
-[`is:tutorial security`]: https://electron-website-pr-1248.herokuapp.com/?query=is%3Atutorial%20security
-[`is:package ipc`]: https://electron-website-pr-1248.herokuapp.com/?query=is%3Apackage%20ipc
-[`is:app graphql`]: https://electron-website-pr-1248.herokuapp.com/?query=is%3Aapp%20graphql
+[`widnow`]: https://electron-website-pr-1248.herokuapp.com/?query=widnow
+[Algolia]: https://algolia.com
+[Libraries.io]: https://libraries.io
 [quick-start]: https://github.com/electron/electron-quick-start
+[SourceRank]: https://docs.libraries.io/overview.html#sourcerank
 
 <!-- TODO: REPLACE electron-website-pr-1248 with electronjs.org -->
