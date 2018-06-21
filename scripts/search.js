@@ -35,16 +35,15 @@ function buildSearch (type, isPrimarySearch = false, searches) {
 
   // the primary search delegates queries to secondary searches
   if (isPrimarySearch) {
-
     // sync search input with query param in address bar
     opts.routing = true
 
     opts.searchFunction = (helper) => {
       let query = helper.state.query
-      
+
       // should search be isolated to a specific type?
-      // e.g. `is:app foo` or `app:foo` 
-      const isolatedType = typeNames.find(typeName => {  
+      // e.g. `is:app foo` or `app:foo`
+      const isolatedType = typeNames.find(typeName => {
         return query.includes(`is:${typeName}`) || query.includes(`${typeName}:`)
       })
 
@@ -53,19 +52,32 @@ function buildSearch (type, isPrimarySearch = false, searches) {
         const display = (!isolatedType || (isolatedType === typeName)) ? 'block' : 'none'
         document.getElementById(`${typeName}-hits`).style.display = display
       })
-      
+
+      // remove `is:foo` filter from query
+      // TODO: figure out a way to make this affect the search
+      // without affecting the input element or the query param
+      if (isolatedType) {
+        query = query.replace(`is:${isolatedType}`, '').trim()
+      }
+
       // delegate query to secondary searches
       types.slice(1).forEach(type => {
         const search = searches[type.name]
         if (search && search.helper) {
-          search.helper.setQuery(query)
-          search.helper.search()
+          search.helper.once('result', onResult)
+          search.helper.setQuery(query).search()
         }
       })
 
       // trigger the primary search
-      helper.search()
+      helper.setQuery(query).search()
     }
+  }
+
+  // https://community.algolia.com/algoliasearch-helper-js/reference.html#AlgoliaSearchHelper#event:search
+  function onResult (results, state) {
+    const id = `${state.index.replace(/s$/, '')}-hits`
+    document.getElementById(id).style.display = (results.hits.length === 0) ? 'none' : 'block'
   }
 
   const search = instantsearch(opts)
@@ -74,7 +86,7 @@ function buildSearch (type, isPrimarySearch = false, searches) {
     instantsearch.widgets.hits({
       container: `#${type}-hits`,
       templates: {
-        empty: 'No results',
+        // empty: 'No results',
         item: templates[type]
       },
       transformData: {
@@ -139,9 +151,9 @@ function buildSearchUIHandlers () {
     e.target === navInput || checkIfChild(hits, e.target) ? showHits() : hideHits()
   })
 
-  window.addEventListener('click', e => {
-    if(e.target === document.querySelector('.dialog-button')) document.querySelector('#search-hint-dialog').style.display="none"
-  })
+  // window.addEventListener('click', e => {
+  //   if (e.target === document.querySelector('.dialog-button')) document.querySelector('#search-hint-dialog').style.display = 'none'
+  // })
 
   function showHits () {
     document.getElementById('hits').style.display = 'block'
