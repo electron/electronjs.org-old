@@ -47,19 +47,19 @@ describe('search', () => {
       cy.get('.ais-hits--item em').contains('electron')
     })
 
-    it('filters for type when search is prepended with type:', () => {
-      cy.get('.nav-search').type('app:')
-      cy.wait(100)
-      cy.get('#api-hits').should('not.be.visible')
-      cy.get('#package-hits').should('not.be.visible')
-      cy.get('#tutorial-hits').should('not.be.visible')
-    })
+    // it('filters for type when search is prepended with type:', () => {
+    //   cy.get('.nav-search').type('app:')
+    //   cy.wait(100)
+    //   cy.get('#api-hits').should('not.be.visible')
+    //   cy.get('#package-hits').should('not.be.visible')
+    //   cy.get('#tutorial-hits').should('not.be.visible')
+    // })
 
-    it('filters for type when search is prepended with is:type', () => {
-      cy.get('.nav-search').type('is:app')
-      cy.wait(100)
-      cy.get('#api-hits').should('not.be.visible')
-      cy.get('#package-hits').should('not.be.visible')
-      cy.get('#tutorial-hits').should('not.be.visible')
-    })
+    // it('filters for type when search is prepended with is:type', () => {
+    //   cy.get('.nav-search').type('is:app')
+    //   cy.wait(100)
+    //   cy.get('#api-hits').should('not.be.visible')
+    //   cy.get('#package-hits').should('not.be.visible')
+    //   cy.get('#tutorial-hits').should('not.be.visible')
+    // })
 })
