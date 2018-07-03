@@ -42,7 +42,7 @@
     "electron-apps": "^1.3512.0",
     "electron-i18n": "^1.211.0",
     "electron-npm-packages": "3.0.0",
-    "electron-releases": "^2.46.0",
+    "electron-releases": "^2.47.0",
     "electron-userland-reports": "1.6.0",
     "express": "^4.16.2",
     "express-hbs": "^1.0.4",
