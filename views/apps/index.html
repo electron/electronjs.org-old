@@ -36,7 +36,7 @@
           {{#each apps}}
             {{#unless this.disabled}}
               <li class='listed-app'>
-                <a href='/apps/{{this.slug}}' title='{{this.name}} - {{app.description}}'>
+                <a href='/apps/{{this.slug}}' title='{{this.name}} - {{this.description}}'>
                   <div class='listed-app-logo-wrapper'>
                     <div class="listed-app-logo-placeholder placeholder" style="background: {{this.goodColorOnWhite}}"></div>
                     <img class='listed-app-logo' data-src='/node_modules/electron-apps/apps/{{this.slug}}/{{this.icon64}}' alt='{{app.name}}'>
