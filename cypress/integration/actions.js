@@ -15,13 +15,13 @@ describe('electronjs.org', () => {
   })
   it('shows downloads section for apps that have downloadable files', () => {
     cy.visit('http://localhost:5000/apps/dat')
-    cy.get('.app-meta-entry').should('contain', 'Downloads').should('be.visible')
+    cy.get('.app-meta').should('contain', 'Downloads').should('be.visible')
   })
 
   it('hides downloads section for apps with no downloadable files', () => {
     cy.visit('http://localhost:5000/apps/protegopdf')
     cy.wait(100)
-    cy.get('.app-meta-entry').should('contain', 'Downloads').should('not.be.visible')
+    cy.get('.app-meta').should('contain', 'Downloads').should('not.be.visible')
   })
 })
 
