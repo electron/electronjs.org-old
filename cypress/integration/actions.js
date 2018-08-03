@@ -19,7 +19,7 @@ describe('electronjs.org', () => {
   })
 
   it('hides downloads section for apps with no downloadable files', () => {
-    cy.visit('http://localhost:5000/apps/protego')
+    cy.visit('http://localhost:5000/apps/protegopdf')
     cy.get('.app-meta').should('not.contain', 'Downloads')
   })
 })
