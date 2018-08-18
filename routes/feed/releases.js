@@ -1,5 +1,4 @@
 const Feed = require('feed')
-const description = require('description')
 
 module.exports = function feedHandler (req, res, next) {
   let feed = new Feed({
