@@ -1,6 +1,6 @@
 <style>
   .site-header, .app-download {
-    background: {{app.goodColorOnWhite}}; 
+    background: {{app.goodColorOnWhite}};
     color: white !important;
   }
 
@@ -24,11 +24,11 @@
   }
 
   .page-section a {
-    color: {{app.goodColorOnWhite}}; 
+    color: {{app.goodColorOnWhite}};
   }
 
   .shell-one-liner {
-    background: {{app.faintColorOnWhite}}; 
+    background: {{app.faintColorOnWhite}};
     color: {{app.goodColorOnWhite}};
   }
 
@@ -91,7 +91,7 @@
 
           {{#if app.latestRelease}}
             {{#if app.latestRelease.assets}}
-              <div class="app-meta-entry">
+              <div class="app-meta-entry app-meta-entry-downloads">
                 <h5>Downloads ({{app.latestRelease.tag_name}})</h5>
 
                 {{#each app.latestRelease.assets}}

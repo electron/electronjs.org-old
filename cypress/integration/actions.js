@@ -13,6 +13,16 @@ describe('electronjs.org', () => {
     cy.get('.app-list').should('contain', 'GitHub Desktop')
     cy.get('.app-list').should('not.contain', 'gitmoji')
   })
+  it('shows downloads section for apps that have downloadable files', () => {
+    cy.visit('http://localhost:5000/apps/dat')
+    cy.get('.app-meta-entry-downloads').should('be.visible')
+  })
+
+  it('hides downloads section for apps with no downloadable files', () => {
+    cy.visit('http://localhost:5000/apps/protegopdf')
+    cy.wait(100)
+    cy.get('.app-meta-entry-downloads').should('not.be.visible')
+  })
 })
 
 describe('search', () => {
