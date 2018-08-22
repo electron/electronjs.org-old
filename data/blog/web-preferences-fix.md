@@ -17,9 +17,9 @@ You are impacted if:
 
 _Details_
 
-You are impacted if any user code runs inside an `iframe` / can create an `iframe`. Given the possibility of an XSS it can be assumed that most apps are vulnerable to this case.
+You are impacted if any user code runs inside an `iframe` / can create an `iframe`. Given the possibility of an XSS vulnerability it can be assumed that most apps are vulnerable to this case.
 
-You are also impacted if you open any of your windows with the `nativeWindowOpen: true` or `sandbox: true` option.  Although this vulnerability also requires an XSS to exist in your app, you should still apply one of the mitigations below if you use either of these options.
+You are also impacted if you open any of your windows with the `nativeWindowOpen: true` or `sandbox: true` option.  Although this vulnerability also requires an XSS vulnerability to exist in your app, you should still apply one of the mitigations below if you use either of these options.
 
 ## Mitigation
 
@@ -27,13 +27,13 @@ We've published new versions of Electron which include fixes for  this vulnerabi
 
 If for some reason you are unable to upgrade your Electron version, you can protect your app by blanket-calling `event.preventDefault()` on the `new-window` event for all  `webContents`'. If you don't use `window.open` or any child windows at all then this is also a valid mitigation for your app.
 
-```javascript=
+```javascript
 mainWindow.webContents.on('new-window', e => e.preventDefault())
 ```
 
 If you rely on the ability of your child windows to make grandchild windows, then a third mitigation strategy is to use the following code on your top level window:
 
-```javascript=
+```javascript
 const enforceInheritance = (topWebContents) => {
   const handle = (webContents) => {
     webContents.on('new-window', (event, url, frameName, disposition, options) => {
