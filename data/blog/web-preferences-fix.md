@@ -1,5 +1,5 @@
 ---
-title:  webPreferences Vulnerability Fix
+title:  WebPreferences Vulnerability Fix
 author: ckerr
 date: '2018-08-22'
 ---
