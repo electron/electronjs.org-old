@@ -32,7 +32,7 @@ GN is [faster](https://chromium.googlesource.com/chromium/src/tools/gn/+/4806280
 
  * It's already helped development on Electron 4.0.0 substantially because Chromium 67 removed support for MSVC and switched to building with Clang on Windows. With the GN build, we inherit all the compiler commands from Chromium directly, so we got the Clang build on Windows for free!
 
- * It's also made it easier for Electron to use [BoringSSL] in a unified build across Electron, Chromium, and Node -- something that was [problematic oefore](https://electronjs.org/blog/electron-internals-using-node-as-a-library#shared-library-or-static-library).
+ * It's also made it easier for Electron to use [BoringSSL] in a unified build across Electron, Chromium, and Node -- something that was [problematic before](https://electronjs.org/blog/electron-internals-using-node-as-a-library#shared-library-or-static-library).
 
 
 [BoringSSL]: https://boringssl.googlesource.com/boringssl/
