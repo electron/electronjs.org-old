@@ -22,7 +22,7 @@ To address this, the Electron team has been working on moving everything to GN. 
 
 # What this means for you
 
-If you're contributing to Electron itself, the process of checking out and building Electron is very different. See [GN build instructions] for details.
+If you're contributing to Electron itself, the process of checking out and building Electron is very different. See [GN build instructions](https://github.com/electron/electron/blob/master/docs/development/build-instructions-gn.md) for details.
 
 If you're developing an app with Electron, there are a few minor changes you might notice in the new Electron 4.0.0-nightly; but more than likely, Electron's change in build system will be totally transparent to you.
 
@@ -39,6 +39,5 @@ GN is [faster](https://chromium.googlesource.com/chromium/src/tools/gn/+/4806280
 [Electron code]: https://github.com/electron/electron
 [GN]: https://gn.googlesource.com/gn/
 [GYP]: https://gyp.gsrc.io/
-[GN build instructions](https://github.com/electron/electron/blob/master/docs/development/build-instructions-gn.md) for details.
 [Ninja]: https://ninja-build.org/
 [libchromiumcontent]: https://github.com/electron/libchromiumcontent
