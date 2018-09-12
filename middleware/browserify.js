@@ -5,6 +5,7 @@ const babelify = require('babelify')
 const brfs = require('brfs')
 
 function babelifyMiddleware (entries, brOptions, baOptions) {
+  console.log('entries', entries)
   brOptions = brOptions || {}
   brOptions.transform = brOptions.transform || []
   baOptions = baOptions || {}
