@@ -4,14 +4,14 @@ author: codebytere
 date: '2018-09-20'
 ---
 
-The Electron team is excited to annouce that the first stable release of Electron `v3.0.0` is now
-available from [electronjs.org](https://electronjs.org/)! It's jam-packed with upgrades, fixes, and new features, and we can't wait to see what you build with them. Below are more details about the specifics of this latest release, and we welcome your feedback as you explore.
+The Electron team is excited to annouce that the first stable release of Electron `v3.0` is now
+available from [electronjs.org](https://electronjs.org/) and via `npm install electron@latest`! It's jam-packed with upgrades, fixes, and new features, and we can't wait to see what you build with them. Below are details about this release, and we welcome your feedback as you explore.
 
 ---
 
 ## Release Process
 
-As we undertook development of `v3.0.0`, we sought to more empirically define criteria for a stable release by formalizing the feedback progress for progressive beta releases. This feedback process involved a number of our consumers in Electron's ecosystem, including but not limited to: Slack, VSCode, Atom, OpenFin, Symphony, and Oculus. We wouldn't have been able to mark this milestone without their work to let us know about the blockers and needs they faced with each successive beta as they journeyed down the road to `v3.0.0` upgrades for their apps.
+As we undertook development of `v3.0.0`, we sought to more empirically define criteria for a stable release by formalizing the feedback progress for progressive beta releases. This feedback process involved a number of our consumers in Electron's ecosystem, including but not limited to: Slack, VSCode, Atom, OpenFin, Symphony, and Oculus. `v3.0.0` would not have been possible without our [App Feedback Program](LINK-TBD) partners, who provided early testing and feedback during the beta cycle. Thanks to Atlassian, Atom, Microsoft Teams, Oculus, OpenFin, Slack, Symphony, VS Code, and other program members for their work. If you'd like to participate in future betas, please mail us at [info@electronjs.org](mailto:info@electronjs.org).
 
 ## Changes / New Features
 
@@ -34,7 +34,7 @@ Major bumps to several important parts of Electron's toolchain, including Chrome
 * [[#13050](https://github.com/electron/electron/pull/13050)] refactor: removed documented deprecated APIs
 * [[#12477](https://github.com/electron/electron/pull/12477)] refactor: removed `did-get-response-details` and `did-get-redirect-request` events
 * [[#12655](https://github.com/electron/electron/pull/12655)] feat: default to disabling navigating on drag/drop
-* [[#12993](https://github.com/electron/electron/pull/12993)] feat: Node 4.x or greater is required
+* [[#12993](https://github.com/electron/electron/pull/12993)] feat: Node `v4.x` or greater is required use the `electron` npm module
 * [[#12008](https://github.com/electron/electron/pull/12008) [#12140](https://github.com/electron/electron/pull/12140) [#12503](https://github.com/electron/electron/pull/12503) [#12514](https://github.com/electron/electron/pull/12514) [#12584](https://github.com/electron/electron/pull/12584) [#12596](https://github.com/electron/electron/pull/12596) [#12637](https://github.com/electron/electron/pull/12637) [#12660](https://github.com/electron/electron/pull/12660) [#12696](https://github.com/electron/electron/pull/12696) [#12716](https://github.com/electron/electron/pull/12716) [#12750](https://github.com/electron/electron/pull/12750) [#12787](https://github.com/electron/electron/pull/12787) [#12858](https://github.com/electron/electron/pull/12858)] refactor: `NativeWindow`
 * [[#11968](https://github.com/electron/electron/pull/11968)] refactor: `menu.popup()`
 * [[#8953](https://github.com/electron/electron/pull/8953)] feat: no longer use JSON to send the result of `ipcRenderer.sendSync`
@@ -49,12 +49,6 @@ Major bumps to several important parts of Electron's toolchain, including Chrome
 * [[#12496](https://github.com/electron/electron/pull/12496)] feat: `tray.setIgnoreDoubleClickEvents(ignore)` to ignore tray double click events. 
 * [[#12281](https://github.com/electron/electron/pull/12281)] feat: mouse forward functionality on macOS
 * [[#12714](https://github.com/electron/electron/pull/12714)] feat: screen lock / unlock events
-* [[#11959](https://github.com/electron/electron/pull/11959)] feat: show file filter name for accessory view of file dialog
-
-### Linux
-
-* [[#12080](https://github.com/electron/electron/pull/12080)] feat: support for CI testing on arm64 hardware
-* [[#12300](https://github.com/electron/electron/pull/12300)] feat: better GTK+ Menu color support
 
 ### Windows
 
@@ -94,13 +88,6 @@ Major bumps to several important parts of Electron's toolchain, including Chrome
 * [[#12507](https://github.com/electron/electron/pull/12507)] fix: `BrowserWindow.focus()` for offscreen windows
 * [[#12192](https://github.com/electron/electron/pull/12192)] fix: use application name for notifications
 * [[#12388](https://github.com/electron/electron/pull/12388)] fix: use the appname as the tray icon's default tooltip
-
-### Windows
-
-# Security-Related Updates
-
-* [SECURITY] fix: webPreferences inheritance issue. CVE-2018-15685
-* [[#14333](https://github.com/electron/electron/pull/14333)] fix: dont parse arguments after a -- in the inspector 
 
 # What's Next
 
