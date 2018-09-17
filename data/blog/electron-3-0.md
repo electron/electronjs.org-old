@@ -11,7 +11,7 @@ available from [electronjs.org](https://electronjs.org/) and via `npm install el
 
 ## Release Process
 
-As we undertook development of `v3.0.0`, we sought to more empirically define criteria for a stable release by formalizing the feedback progress for progressive beta releases. This feedback process involved a number of our consumers in Electron's ecosystem, including but not limited to: Slack, VSCode, Atom, OpenFin, Symphony, and Oculus. `v3.0.0` would not have been possible without our [App Feedback Program](LINK-TBD) partners, who provided early testing and feedback during the beta cycle. Thanks to Atlassian, Atom, Microsoft Teams, Oculus, OpenFin, Slack, Symphony, VS Code, and other program members for their work. If you'd like to participate in future betas, please mail us at [info@electronjs.org](mailto:info@electronjs.org).
+As we undertook development of `v3.0.0`, we sought to more empirically define criteria for a stable release by formalizing the feedback progress for progressive beta releases. `v3.0.0` would not have been possible without our [App Feedback Program](LINK-TBD) partners, who provided early testing and feedback during the beta cycle. Thanks to Atlassian, Atom, Microsoft Teams, Oculus, OpenFin, Slack, Symphony, VS Code, and other program members for their work. If you'd like to participate in future betas, please mail us at [info@electronjs.org](mailto:info@electronjs.org).
 
 ## Changes / New Features
 
