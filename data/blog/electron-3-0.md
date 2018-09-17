@@ -32,6 +32,7 @@ Major bumps to several important parts of Electron's toolchain, including Chrome
 * [[#12362](https://github.com/electron/electron/pull/12362)] feat: updates to menu item order control
 * [[#12991](https://github.com/electron/electron/pull/12991)] refactor: aliased arm builds are no longer published
 * [[#13050](https://github.com/electron/electron/pull/13050)] refactor: removed documented deprecated APIs
+  * See [docs](https://github.com/electron/electron/blob/master/docs/api/breaking-changes.md#breaking-api-changes-30) for more details
 * [[#12477](https://github.com/electron/electron/pull/12477)] refactor: removed `did-get-response-details` and `did-get-redirect-request` events
 * [[#12655](https://github.com/electron/electron/pull/12655)] feat: default to disabling navigating on drag/drop
 * [[#12993](https://github.com/electron/electron/pull/12993)] feat: Node `v4.x` or greater is required use the `electron` npm module
@@ -88,6 +89,12 @@ Major bumps to several important parts of Electron's toolchain, including Chrome
 * [[#12507](https://github.com/electron/electron/pull/12507)] fix: `BrowserWindow.focus()` for offscreen windows
 * [[#12192](https://github.com/electron/electron/pull/12192)] fix: use application name for notifications
 * [[#12388](https://github.com/electron/electron/pull/12388)] fix: use the appname as the tray icon's default tooltip
+
+## Other Notes
+
+* PDF Viewer is currently not working but is being worked on and will be functional once again soon
+* `TextField` and `Button` APIs are experimental and are therefore off by default
+  * They can be enabled with the `enable_view_api` build flag
 
 # What's Next
 
