@@ -1,7 +1,7 @@
 ---
 title: Electron 3.0.0
 author: codebytere
-date: '2018-09-20'
+date: '2018-09-18'
 ---
 
 The Electron team is excited to announce that the first stable release of Electron 3 is now
