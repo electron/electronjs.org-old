@@ -4,14 +4,14 @@ author: codebytere
 date: '2018-09-20'
 ---
 
-The Electron team is excited to annouce that the first stable release of Electron `v3.0` is now
+The Electron team is excited to announce that the first stable release of Electron 3 is now
 available from [electronjs.org](https://electronjs.org/) and via `npm install electron@latest`! It's jam-packed with upgrades, fixes, and new features, and we can't wait to see what you build with them. Below are details about this release, and we welcome your feedback as you explore.
 
 ---
 
 ## Release Process
 
-As we undertook development of `v3.0.0`, we sought to more empirically define criteria for a stable release by formalizing the feedback progress for progressive beta releases. `v3.0.0` would not have been possible without our [App Feedback Program](LINK-TBD) partners, who provided early testing and feedback during the beta cycle. Thanks to Atlassian, Atom, Microsoft Teams, Oculus, OpenFin, Slack, Symphony, VS Code, and other program members for their work. If you'd like to participate in future betas, please mail us at [info@electronjs.org](mailto:info@electronjs.org).
+As we undertook development of `v3.0.0`, we sought to more empirically define criteria for a stable release by formalizing the feedback progress for progressive beta releases. `v3.0.0` would not have been possible without our [App Feedback Program](https://electronjs.org/docs/tutorial/app-feedback-program) partners, who provided early testing and feedback during the beta cycle. Thanks to Atlassian, Atom, Microsoft Teams, Oculus, OpenFin, Slack, Symphony, VS Code, and other program members for their work. If you'd like to participate in future betas, please mail us at [info@electronjs.org](mailto:info@electronjs.org).
 
 ## Changes / New Features
 
@@ -30,7 +30,6 @@ Major bumps to several important parts of Electron's toolchain, including Chrome
 ## Breaking API changes
 
 * [[#12362](https://github.com/electron/electron/pull/12362)] feat: updates to menu item order control
-* [[#12991](https://github.com/electron/electron/pull/12991)] refactor: aliased arm builds are no longer published
 * [[#13050](https://github.com/electron/electron/pull/13050)] refactor: removed documented deprecated APIs
   * See [docs](https://github.com/electron/electron/blob/master/docs/api/breaking-changes.md#breaking-api-changes-30) for more details
 * [[#12477](https://github.com/electron/electron/pull/12477)] refactor: removed `did-get-response-details` and `did-get-redirect-request` events
@@ -59,17 +58,15 @@ Major bumps to several important parts of Electron's toolchain, including Chrome
 
 ## Bug Fixes
 
-* [[#13397](https://github.com/electron/electron/pull/13397)] fix: issue with fs.statSyncNoException throwing exceptions
+* [[#13397](https://github.com/electron/electron/pull/13397)] fix: issue with `fs.statSyncNoException` throwing exceptions
 * [[#13476](https://github.com/electron/electron/pull/13476), [#13452](https://github.com/electron/electron/pull/13452)] fix: crash when loading site with jquery
-* [[#14092](https://github.com/electron/electron/pull/14092)] fix: crash in net::ClientSocketHandle destructor
+* [[#14092](https://github.com/electron/electron/pull/14092)] fix: crash in `net::ClientSocketHandle` destructor
 * [[#14453](https://github.com/electron/electron/pull/14453)] fix: notify focus change right away rather not on next tick
-* [[#14205](https://github.com/electron/electron/pull/14205)] fix: pressing escape on a dialog now closes it even if defaultId is set
 
 ### MacOS
 
 * [[#13220](https://github.com/electron/electron/pull/13220)] fix: issue allowing bundles to be selected in `<input file="type">` open file dialog
 * [[#12404](https://github.com/electron/electron/pull/12404)] fix: issue blocking main process when using async dialog
-* [[#12395](https://github.com/electron/electron/pull/12395)] fix: dark mode tray highlighting bug
 * [[#12043](https://github.com/electron/electron/pull/12043)] fix: context menu click callback
 * [[#12527](https://github.com/electron/electron/pull/12527)] fix: event leak on reuse of touchbar item
 * [[#12352](https://github.com/electron/electron/pull/12352)] fix: tray title crash
@@ -81,14 +78,12 @@ Major bumps to several important parts of Electron's toolchain, including Chrome
 * [[#12157](https://github.com/electron/electron/pull/12157)] fix: additional issues on frameless windows with vibrancy
 * [[#13326](https://github.com/electron/electron/pull/13326)] fix: to set mac protocol to none after calling `app.removeAsDefaultProtocolClient`
 * [[#13530](https://github.com/electron/electron/pull/13530)] fix: incorrect usage of private APIs in MAS build
-* [[#13517](https://github.com/electron/electron/pull/13517)] fix: `tray.setContextMen`u crash 
+* [[#13517](https://github.com/electron/electron/pull/13517)] fix: `tray.setContextMenu` crash
+* [[#14205](https://github.com/electron/electron/pull/14205)] fix: pressing escape on a dialog now closes it even if `defaultId` is set
 
 ### Linux
 
-* [[#12983](https://github.com/electron/electron/pull/12983)] fix: `Menu.setApplicationMenu(null)` crash
 * [[#12507](https://github.com/electron/electron/pull/12507)] fix: `BrowserWindow.focus()` for offscreen windows
-* [[#12192](https://github.com/electron/electron/pull/12192)] fix: use application name for notifications
-* [[#12388](https://github.com/electron/electron/pull/12388)] fix: use the appname as the tray icon's default tooltip
 
 ## Other Notes
 
