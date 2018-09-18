@@ -93,4 +93,4 @@ Major bumps to several important parts of Electron's toolchain, including Chrome
 
 # What's Next
 
-The Electron team continues to work on defining our processes for more rapid and smooth upgrades as we seek to ultimately maintain parity with the latest versions of Chromium, Node, and V8.
+The Electron team continues to work on defining our processes for more rapid and smooth upgrades as we seek to ultimately maintain parity with the development cadences of Chromium, Node, and V8.
