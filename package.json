@@ -82,7 +82,7 @@
     "ua-parser-js": "^0.7.17"
   },
   "devDependencies": {
-    "browser-sync": "^2.24.4",
+    "browser-sync": "^2.24.7",
     "chai": "^4.1.2",
     "chai-cheerio": "^1.0.0",
     "check-for-leaks": "^1.2.0",
