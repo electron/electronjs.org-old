@@ -8,3 +8,4 @@ images/crushed
 css/**/*.css
 yarn.lock
 cypress/videos/*
+package-lock.json
