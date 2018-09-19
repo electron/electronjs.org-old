@@ -70,7 +70,7 @@
     "pluralize": "^7.0.0",
     "primer-breadcrumb": "1.5.5",
     "proxyquire": "^2.0.0",
-    "query-string": "^5.0.0",
+    "query-string": "^6.1.0",
     "require-dir": "^1.0.0",
     "require-directory": "^2.1.1",
     "require-yaml": "0.0.1",
