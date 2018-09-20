@@ -93,7 +93,7 @@
     "nock": "^9.2.6",
     "nodemon": "^1.18.4",
     "simplecrawler": "^1.1.6",
-    "standard": "^11.0.1",
+    "standard": "^12.0.1",
     "supertest": "^3.0.0",
     "supertest-session": "^3.3.0",
     "wait-on": "^2.1.0",
