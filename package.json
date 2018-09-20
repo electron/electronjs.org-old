@@ -76,7 +76,7 @@
     "require-yaml": "0.0.1",
     "rtl-detect": "^1.0.2",
     "schemeless": "^1.2.0",
-    "search-with-your-keyboard": "^1.0.4",
+    "search-with-your-keyboard": "^1.1.0",
     "semver": "^5.3.0",
     "set-query-string": "^2.2.0",
     "ua-parser-js": "^0.7.17"
