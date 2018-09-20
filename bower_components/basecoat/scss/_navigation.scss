@@ -69,6 +69,12 @@
   }
 }
 
+html[dir="rtl"] .site-header-nav-item {
+  + .site-header-nav-item {
+    margin-left: 0;
+    margin-right: 20px;
+  }
+}
 
 .menu {
   margin-top: $spacer5;
