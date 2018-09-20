@@ -110,6 +110,13 @@
             </tr>
           {{/if}}
 
+          {{#if app.snapcraftName}}
+            <div class="linux-only app-meta-entry">
+              <h5>Snapcraft</h5>
+              <span class="shell-one-liner" style="margin-top: 4px; display: block;">sudo snap install {{app.snapcraftName}}</span>
+            </div>
+          {{/if}}
+
           {{#if app.keywords}}
             <div class="app-meta-entry">
               <h5>Keywords</h5>
