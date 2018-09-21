@@ -21,6 +21,7 @@
     "cypress": "cypress run"
   },
   "dependencies": {
+    "@babel/core": "^7.1.0",
     "awesome-electron": "2.6.0",
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
