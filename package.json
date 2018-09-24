@@ -47,7 +47,7 @@
     "express-hbs": "^1.0.4",
     "express-request-language": "^1.1.15",
     "feed": "^1.1.1",
-    "flat": "^4.0.0",
+    "flat": "^4.1.0",
     "got": "^8.0.0",
     "helmet": "^3.13.0",
     "href-type": "^1.0.1",
