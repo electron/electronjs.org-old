@@ -52,7 +52,7 @@
     "helmet": "^3.13.0",
     "href-type": "^1.0.1",
     "http-proxy-middleware": "^0.18.0",
-    "hubdown": "^2.0.0",
+    "hubdown": "^2.1.0",
     "instantsearch.js": "^2.10.2",
     "lil-env-thing": "^1.0.0",
     "list.js": "^1.5.0",
