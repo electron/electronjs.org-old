@@ -58,7 +58,7 @@
     "list.js": "^1.5.0",
     "lobars": "^1.2.0",
     "locale-code": "^2.0.0",
-    "lodash": "^4.17.10",
+    "lodash": "^4.17.11",
     "make-promises-safe": "^1.1.0",
     "minimist": "^1.2.0",
     "mkdirp": "^0.5.1",
