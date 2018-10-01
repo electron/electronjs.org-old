@@ -70,7 +70,7 @@
     "primer-breadcrumb": "1.5.5",
     "proxyquire": "^2.1.0",
     "query-string": "^6.1.0",
-    "require-dir": "^1.0.0",
+    "require-dir": "^1.1.0",
     "require-directory": "^2.1.1",
     "require-yaml": "0.0.1",
     "rtl-detect": "^1.0.2",
