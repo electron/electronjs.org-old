@@ -1,6 +1,6 @@
 ---
 title: Electron App Feedback Program
-author: sofainguy
+author: sofianguy
 date: '2018-10-04'
 ---
 
