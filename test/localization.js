@@ -1,9 +1,9 @@
 require('require-yaml')
 
-const {describe, it} = require('mocha')
+const { describe, it } = require('mocha')
 const chai = require('chai')
 chai.should()
-const {expect} = chai
+const { expect } = chai
 const fs = require('fs')
 const path = require('path')
 const walk = require('walk-sync')
