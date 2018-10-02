@@ -1,6 +1,6 @@
 const apps = require('electron-apps')
 const categories = require('electron-apps/categories')
-const {getPlatformFromFilename} = require('platform-utils')
+const { getPlatformFromFilename } = require('platform-utils')
 
 module.exports = (req, res, next) => {
   const app = apps.find(app => app.slug === req.params.slug)
