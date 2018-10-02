@@ -1,7 +1,7 @@
 const i18n = require('lib/i18n')
 const releases = require('electron-releases')
-const {deps} = releases.find(release => release.version === i18n.electronLatestStableVersion)
-const {getLanguageNativeName} = require('locale-code')
+const { deps } = releases.find(release => release.version === i18n.electronLatestStableVersion)
+const { getLanguageNativeName } = require('locale-code')
 const rtlDetect = require('rtl-detect')
 
 // Supply all route handlers with a baseline `req.context` object

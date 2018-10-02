@@ -29,7 +29,7 @@ module.exports = function createFilterList () {
 
   // update the query param every time a search is performed
   filterList.on('updated', function () {
-    setQueryString({q: filterInput.value})
+    setQueryString({ q: filterInput.value })
     list.querySelectorAll('img[data-src]').forEach(lazyLoadImages.addImage)
   })
 }
