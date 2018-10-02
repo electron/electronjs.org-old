@@ -21,7 +21,7 @@ Our criteria and expectations for apps joining this program include the followin
 - Any bugs preventing your application from upgrading to the release line being beta tested
 
 ## User-hours
-We expect participants to test at least 10,000 user-hours as a minimum threshold for Electron to feel more comfortable releasing stable versions.
+We understand not everyone can share exact user numbers, however better data helps us decide how stable a particular release is. We ask that apps commit to testing a minimum number of user-hours, currently 10,000 across the beta cycle.
 - 10 user-hours could be 10 people testing for one hour, or one person testing for 10 hours
 - You can split the testing between beta releases, for example test for 5,000 user-hours on 3.0.0-beta.2 and then test for 5,000 user-hours on 3.0.0-beta.5. More is better, but we understand that some applications cannot test every beta release
 - CI or QA hours do not count towards the total; however, internal releases do count
