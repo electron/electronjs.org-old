@@ -20,10 +20,10 @@
     "cypress": "cypress run"
   },
   "dependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
     "awesome-electron": "2.6.0",
-    "babel-core": "^6.26.3",
-    "babel-preset-env": "^1.7.0",
-    "babelify": "^8.0.0",
+    "babelify": "^10.0.0",
     "brfs": "^2.0.1",
     "browser-date-formatter": "^2.1.1",
     "browserify-middleware": "^8.1.1",
