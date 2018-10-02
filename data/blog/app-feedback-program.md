@@ -29,10 +29,6 @@ We expect participants to test at least 10,000 user-hours as a minimum threshold
 ## Why should my Electron app join?
 Your app's bugs will be tracked and be on the core Electron team's radar. Your feedback helps the Electron team to see how the new betas are doing and what work needs to be done.
 
-## Electron prioritizing workflow
-Starting in the Electron version 4.0.x cycle, we are going to focus on helping the app that is closest to shipping to the next largest group of users.
-For example, if company X has an Electron bug blocking them from releasing to 1,000 more users and company Y has a blocker from releasing to 500 more users, we will prioritize company X first and then help company Y next.
-
 ## Will my application's info be shared publicly? Who gets to see this info?
 No, your application's information will not be shared with the general public. However, it will be viewable by all members of the `maintainers` team within the [Electron](https://github.com/electron) organization. As of September 2018, there are 203 members in this team. All members in this team have agreed to follow Electron's [Code of Conduct](https://github.com/electron/electron/blob/master/CODE_OF_CONDUCT.md).
 
