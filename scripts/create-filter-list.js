@@ -5,6 +5,10 @@ const setQueryString = require('set-query-string')
 const lazyLoadImages = require('./lazy-load-images')
 
 class FilterList {
+  static create (list, input) {
+    return new FilterList(list, input)
+  }
+
   constructor (list, input) {
     this.input = input
     this.index = this.buildIndex(list)
@@ -106,5 +110,5 @@ module.exports = function createFilterList () {
   const filterInput = document.querySelector('.filterable-list-input')
   filterInput.value = queryString.parse(location.search).q || ''
 
-  new FilterList(list, filterInput)
+  FilterList.create(list, filterInput)
 }
