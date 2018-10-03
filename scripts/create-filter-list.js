@@ -4,22 +4,65 @@ const queryString = require('query-string')
 const setQueryString = require('set-query-string')
 const lazyLoadImages = require('./lazy-load-images')
 
-module.exports = function createFilterList () {
-  // look for a filterable list on this page
-  const list = document.querySelector('.filterable-list')
-  if (!list || !list.parentElement) return
+class FilterList {
+  constructor (list, input) {
+    this.input = input
+    this.index = this.buildIndex(list)
+    this.referenceList = list.cloneNode(true)
+    this.referenceList.querySelectorAll('img[data-src]').forEach(lazyLoadImages.addImage)
+    this.totalAppCount = this.referenceList.querySelectorAll('.listed-app').length
 
-  // inherit initial query from `q` query param
-  const filterInput = document.querySelector('.filterable-list-input')
-  filterInput.value = queryString.parse(location.search).q || ''
+    this.input.addEventListener('input', debounce((evt) => this.search(evt.target.value), 250))
+    // trigger a search, in case there is an existing value in the text input
+    this.search(this.input.value)
+  }
 
-  const index = lunr(function () {
-    // We don't need stemming
-    this.pipeline.remove(lunr.stemmer)
-    this.searchPipeline.remove(lunr.stemmer)
+  search (text) {
+    try {
+      const results = this.index.search(text)
+      this.updateList(results)
+    } catch (err) {
+      if (err.name === "QueryParseError") {
+        // usually because the user is typing special symbols; safe to ignore
+      } else {
+        console.error(err)
+      }
+    }
+  }
+
+  updateList (results) {
+    const existingList = document.querySelector('.filterable-list')
+    const parent = existingList.parentElement
+    let newList
+
+    if (results.length === this.totalAppCount) {
+      // Every app matches, so just deep clone the reference list
+      newList = this.referenceList.cloneNode(true)
+    } else {
+      newList = this.referenceList.cloneNode(false)
+      results.forEach((result) => {
+        // Clone from existing list if it exists
+        let node = existingList.querySelector(`[data-search-id="${result.ref}"]`)
+        if (!node) {
+          node = this.referenceList.querySelector(`[data-search-id="${result.ref}"]`)
+        }
+        const clone = node.cloneNode(true)
+        newList.appendChild(clone)
+      })
+    }
+
+    setQueryString({ q: this.input.value })
+    parent.replaceChild(newList, existingList)
+    newList.querySelectorAll('img[data-src]').forEach(lazyLoadImages.addImage)
+  }
+
+   buildIndex (list) {
+    const builder = new lunr.Builder()
+    // Not including `lunr.stemmer` which is normally included by default
+    builder.pipeline.add(lunr.trimmer, lunr.stopWordFilter)
     // Enable wildcard searching for all tokens,
     // e.g. "mark" will match "markdown"
-    this.searchPipeline.add(function (token) {
+    builder.searchPipeline.add(function (token) {
       return token.update(function (str) {
         if (str[str.length - 1] !== "*") {
           return str + "*"
@@ -29,61 +72,39 @@ module.exports = function createFilterList () {
       })
     })
 
-    this.field('name', { boost: 5 })
-    this.field('description')
-    this.field('date')
-    this.field('keywords', {boost: 2 })
+    builder.field('name', { boost: 5 })
+    builder.field('description')
+    builder.field('date')
+    builder.field('keywords', { boost: 2 })
 
     const entries = list.querySelectorAll('.listed-app')
     entries.forEach((entry, idx) => {
-      const id = idx
-      const name = entry.querySelector('.listed-app-name').textContent
-      const description = entry.querySelector('.listed-app-description').textContent
-      const date = entry.querySelector('.listed-app-date [data-date]').getAttribute('data-date')
-      const keywords = entry.querySelector('.listed-app-keywords').textContent.split(',')
-
-      const doc = { id, name, description, date, keywords }
-      this.add(doc)
+      const doc = this.docForEntry(idx, entry)
+      builder.add(doc)
       entry.setAttribute('data-search-id', idx)
     })
-  })
 
-  const referenceList = list.cloneNode(true)
-  referenceList.querySelectorAll('img[data-src]').forEach(lazyLoadImages.addImage)
-  const totalAppCount = referenceList.querySelectorAll('.listed-app').length
-
-  function updateList(results) {
-    const existingList = document.querySelector('.filterable-list')
-    const parent = existingList.parentElement
-    let newList
-
-    if (results.length === totalAppCount) {
-      // Every app matches, so just deep clone the reference list
-      newList = referenceList.cloneNode(true)
-    } else {
-      newList = referenceList.cloneNode(false)
-      results.forEach(function (result) {
-        // Clone from existing list if it exists
-        let node = existingList.querySelector(`[data-search-id="${result.ref}"]`)
-        if (!node) {
-          node = referenceList.querySelector(`[data-search-id="${result.ref}"]`)
-        }
-        const clone = node.cloneNode(true)
-        newList.appendChild(clone)
-      })
-    }
-
-    setQueryString({ q: filterInput.value })
-    parent.replaceChild(newList, existingList)
-    newList.querySelectorAll('img[data-src]').forEach(lazyLoadImages.addImage)
+    return builder.build()
   }
 
-  function search (text) {
-    const results = index.search(text)
-    updateList(results)
-  }
+  docForEntry (id, entry) {
+    const name = entry.querySelector('.listed-app-name').textContent
+    const description = entry.querySelector('.listed-app-description').textContent
+    const date = entry.querySelector('.listed-app-date [data-date]').getAttribute('data-date')
+    const keywords = entry.querySelector('.listed-app-keywords').textContent.split(',')
 
-  filterInput.addEventListener('input', debounce((evt) => search(evt.target.value), 250))
-  // trigger a search, in case there is an existing value in the text input
-  search(filterInput.value)
+    return { id, name, description, date, keywords }
+  }
+}
+
+module.exports = function createFilterList () {
+  // look for a filterable list on this page
+  const list = document.querySelector('.filterable-list')
+  if (!list || !list.parentElement) return
+
+  // inherit initial query from `q` query param
+  const filterInput = document.querySelector('.filterable-list-input')
+  filterInput.value = queryString.parse(location.search).q || ''
+
+  new FilterList(list, filterInput)
 }
