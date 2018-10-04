@@ -2,6 +2,7 @@ const browserify = require('browserify-middleware')
 
 const nodeModulesToAvoidBabelifying = [
   'lodash',
+  'lunr',
   'prettydate'
 ]
 
