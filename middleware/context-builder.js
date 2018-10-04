@@ -26,6 +26,7 @@ module.exports = function contextBuilder (req, res, next) {
 
   const stableRelease = releases.find(release => release.npm_dist_tag === 'latest')
   const betaRelease = releases.find(release => release.npm_dist_tag === 'beta')
+  const nightlyRelease = releases.find(release => release.npm_dist_tag === 'nightly')
 
   // Page titles, descriptions, etc
   let page = Object.assign({
@@ -52,7 +53,8 @@ module.exports = function contextBuilder (req, res, next) {
     localized: localized,
     cookies: req.cookies,
     stableRelease,
-    betaRelease
+    betaRelease,
+    nightlyRelease
   }
 
   if (req.path.startsWith('/docs')) {
