@@ -9,8 +9,8 @@ module.exports = (req, res, next) => {
 
   // Crowdin's undocumented mystery locale URL format. See https://git.io/vADu0
   // e.g. `zh-CN` -> `zhcn`
-  const {languageCode} = i18n.locales[req.context.currentLocale] || {}
-  const {editorCode} = editorCodes[languageCode] || {}
+  const { languageCode } = i18n.locales[req.context.currentLocale] || {}
+  const { editorCode } = editorCodes[languageCode] || {}
 
   doc.crowdinUrl = editorCode
     ? `https://crowdin.com/translate/electron/${doc.crowdinFileId}/en-${editorCode}`

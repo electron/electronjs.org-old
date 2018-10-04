@@ -1,4 +1,4 @@
-const {getPlatformFromUserAgent, getPlatformLabel} = require('platform-utils')
+const { getPlatformFromUserAgent, getPlatformLabel } = require('platform-utils')
 
 module.exports = function updateDemoAppDownloadLink () {
   if (!document.querySelector('#download-latest-release')) return
