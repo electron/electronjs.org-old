@@ -38,10 +38,10 @@
     "description": "0.0.4",
     "dotenv": "^6.0.0",
     "electron-api-historian": "^1.1.1",
-    "electron-apps": "^1.4747.0",
+    "electron-apps": "^1.4752.0",
     "electron-i18n": "^1.572.0",
     "electron-npm-packages": "4.1.2",
-    "electron-releases": "^2.91.0",
+    "electron-releases": "^2.93.0",
     "electron-userland-reports": "1.6.0",
     "express": "^4.16.2",
     "express-hbs": "^1.0.4",
@@ -81,7 +81,7 @@
     "ua-parser-js": "^0.7.17"
   },
   "devDependencies": {
-    "browser-sync": "^2.24.7",
+    "browser-sync": "^2.26.0",
     "chai": "^4.2.0",
     "chai-cheerio": "^1.0.0",
     "check-for-leaks": "^1.2.0",
