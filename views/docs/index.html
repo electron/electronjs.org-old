@@ -5,11 +5,11 @@
   </div>
 </div>
 <section class='page-section'>
-  <div class='container'>
+  <div class='docs-container-xl'>
     <div class="grid">
       <div class="row">
 
-        <div class="col-ms-12 col-lg-4">
+        <div class="col-ms-12 col-lg-3">
           <h2 class="docs-heading pb-3 mb-3"><a class="docs-title" href="/docs/tutorial"><span class="mega-octicon octicon-book pr-3"></span>{{localized.docs.guides}}</a></h2>
           <ul class="docs-list">
             {{#each docs}}
@@ -22,7 +22,7 @@
           </ul>
         </div>
 
-        <div class="col-ms-12 col-lg-4">
+        <div class="col-ms-12 col-lg-3">
           <h2 class="docs-heading pb-3 mb-3"><a class="docs-title" href="/docs/api"><span class="mega-octicon octicon-gear pr-3"></span>{{localized.docs.api_reference}}</a></h2>
             <ul class="docs-list">
               {{#each docs}}
@@ -35,7 +35,20 @@
             </ul>
         </div>
 
-        <div class="col-ms-12 col-lg-4">
+        <div class="col-ms-12 col-lg-3">
+          <h2 class="docs-heading pb-3 mb-3"><a class="docs-title" href="/docs/structures"><span class="mega-octicon octicon-beaker pr-3"></span>API STRUCTURES <- LOCALIZE THIS STRING</a></h2>
+            <ul class="docs-list">
+              {{#each docs}}
+                {{#if this.isApiStructureDoc}}
+                  <li>
+                    <a href="{{this.href}}">{{this.title}}</a>
+                  </li>
+                {{/if}}
+              {{/each}}
+            </ul>
+        </div>
+
+        <div class="col-ms-12 col-lg-3">
           <h2 class="docs-heading pb-3 mb-3"><a class="docs-title" href="/docs/development"><span class="mega-octicon octicon-tools pr-3"></span>{{localized.docs.advanced}}</a></h2>
           <ul class="docs-list">
             {{#each docs}}

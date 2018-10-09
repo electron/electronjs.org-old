@@ -11,6 +11,7 @@ module.exports = (req, res, next) => {
   const categoryList = [
     { path: 'all', name: 'All the Electron Docs!' },
     { path: 'api', name: 'API' },
+    { path: 'api-structures', name: 'API Structures' },
     { path: 'development', name: 'Development' },
     { path: 'tutorial', name: 'Guides' }
   ]
