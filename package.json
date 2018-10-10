@@ -17,7 +17,8 @@
     "prepack": "check-for-leaks",
     "prepush": "check-for-leaks",
     "linkschecker": "NODE_PATH=. NODE_ENV=test node scripts/links-checker.js",
-    "cypress": "cypress run"
+    "cypress": "cypress run",
+    "lint": "standard --fix"
   },
   "dependencies": {
     "@babel/core": "^7.1.2",

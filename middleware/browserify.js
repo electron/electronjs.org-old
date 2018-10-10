@@ -11,14 +11,14 @@ const excludeRegex = new RegExp(`/node_modules/(${nodeModulesToAvoidBabelifying.
 function babelifyMiddleware (entry) {
   return browserify(entry, {
     transform: [
-      ["babelify", {
+      ['babelify', {
         global: true,
         exclude: excludeRegex,
         presets: [
-          ["@babel/preset-env", { targets: "> 0.25%, not dead" }]
+          ['@babel/preset-env', { targets: '> 0.25%, not dead' }]
         ]
       }],
-      "brfs"
+      'brfs'
     ]
   })
 }
