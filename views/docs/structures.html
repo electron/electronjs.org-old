@@ -1,0 +1,13 @@
+<table class="table table-ruled table-full-width">
+  <tr>
+    <th>API</th><th>Processes</th>
+  </tr>
+  {{#each docs}}
+    {{#if this.isApiStructureDoc}}
+      <tr>
+        <td><a href="{{this.href}}">{{this.title}}</a></td>
+        <td>{{lookup ../processes this.title}} </td>
+      </tr>
+    {{/if}}
+  {{/each}}
+</table>
