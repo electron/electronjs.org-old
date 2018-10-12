@@ -107,7 +107,10 @@ community:
     To add a meetup, edit <code>data/meetups.json</code> and
     <a href="https://github.com/electron/electronjs.org/tree/master/data/meetups.json">make a pull request</a>.
 
-releases: Releases
+releases:
+  title: Electron Releases
+  all_releases: All Releases
+  back_to_index: Back to index
 
 electron_is_easy:
   title: It's easier than you think
@@ -200,6 +203,24 @@ apps:
   submit_your_own: submit your own
   something_missing: Something missing?
   edit_this_app: Edit this app.
+  search_app: Filter apps by name, description, etc…
+  categories: Categories
+  add_app_link: <a href="https://github.com/electron/electron-apps#readme">Make a Pull Request</a> to add your application.
+  # App show page specific localization strings
+  website: Website
+  repository: Repository
+  category: Category
+  downloads: Downloads
+  keywords: Keywords
+  license: License
+  latest_release: Latest Release
+
+blog:
+  title: Electron Blog
+  description: All the latest news from the Electron team and community.
+  # Post show page specific localization strings
+  feedback: Have feedback on this post? Let <a href="https://twitter.com/electronjs">@electronjs</a> know on Twitter.
+  help: Need help or found a bug? <a href="/contact">Contact us
 
 clipboard:
   copy: Copy
