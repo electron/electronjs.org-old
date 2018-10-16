@@ -9,9 +9,12 @@ module.exports = (req, res, next) => {
   }
 
   let context = Object.assign(req.context, {
+    page: {
+      title: 'API Structures | Electron'
+    },
     layout: 'docs',
     processes: processes,
-    category: 'API Structures'
+    category: 'API / API Structures'
   })
 
   res.render('docs/structures', context)
