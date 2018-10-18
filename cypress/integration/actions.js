@@ -7,17 +7,16 @@ describe('electronjs.org', () => {
     cy.get('a[href="/apps"]:first').click()
     cy.get('.app-list').should('contain', 'gitmoji')
 
-    // App filtering
-    //// NOTE: Homebrew filter doesn't not have not on the Linux machines
-    // cy.get('#apps-filter').type('homebrew')
-    // cy.wait(500)
-    // cy.get('.app-list').should('contain', 'GitHub Desktop')
-
-    // Spancraft filtering
-    cy.get('#apps-filter').type('snapcraft')
+    // Search specific app
+    cy.get('#apps-filter').type('tusk')
     cy.wait(500)
     cy.get('.app-list').should('contain', 'Tusk')
     cy.get('.app-list').should('not.contain', 'gitmoji')
+
+    // Search not one specific app
+    cy.get('#apps-filter').type('desktop')
+    cy.wait(500)
+    cy.get('.app-list').should('contain', 'GitHub Desktop')
   })
 
   it('shows downloads section for apps that have downloadable files', () => {
