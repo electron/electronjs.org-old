@@ -13,6 +13,8 @@ describe('electronjs.org', () => {
     cy.get('.app-list').should('contain', 'Tusk')
     cy.get('.app-list').should('not.contain', 'gitmoji')
 
+    cy.get('#apps-filter').clear()
+
     // Search not one specific app
     cy.get('#apps-filter').type('desktop')
     cy.wait(500)
