@@ -9,7 +9,7 @@ describe('electronjs.org', () => {
 
     // App filtering
     cy.get('#apps-filter').type('homebrew')
-    cy.wait(200)
+    cy.wait(500)
     cy.get('.app-list').should('contain', 'GitHub Desktop')
     cy.get('.app-list').should('not.contain', 'gitmoji')
   })
@@ -20,7 +20,7 @@ describe('electronjs.org', () => {
 
   it('hides downloads section for apps with no downloadable files', () => {
     cy.visit('http://localhost:5000/apps/protegopdf')
-    cy.wait(200)
+    cy.wait(500)
     cy.get('.app-meta-entry-downloads').should('not.be.visible')
   })
 })
@@ -36,7 +36,7 @@ describe('search', () => {
 
     it('the results returned from searching match the results returned from each algolia index', () => {
       cy.get('.nav-search').type('window')
-      cy.wait(200)
+      cy.wait(500)
       let types = ['#tutorial-hits', '#api-hits', '#package-hits', '#app-hits']
       types.forEach(type =>{
         cy.get(type)
@@ -51,7 +51,7 @@ describe('search', () => {
 
     it('highlights what is typed in the input', () => {
       cy.get('.nav-search').type('window')
-      cy.wait(200)
+      cy.wait(500)
       cy.get('.ais-hits--item em').contains('window')
       cy.get('.nav-search').clear().type('electron')
       cy.get('.ais-hits--item em').contains('electron')
