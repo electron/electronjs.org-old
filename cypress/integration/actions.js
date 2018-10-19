@@ -62,8 +62,9 @@ describe('search', () => {
       cy.wait(500)
       cy.get('.ais-hits--item em').contains('window')
       cy.get('.nav-search').clear()
-      cy.get('.nav-search').type('open')
-      cy.get('.ais-hits--item em').contains('open')
+      cy.get('.nav-search').type('electron')
+      cy.wait(500)
+      cy.get('.ais-hits--item em').contains('electron')
     })
 
     // it('filters for type when search is prepended with type:', () => {
