@@ -16,4 +16,5 @@ document.addEventListener('DOMContentLoaded', () => {
   require('./sticky-app-meta')()
   require('./screenshot-thumb-selector')()
   require('./docs-language-toggle')()
+  require('./expanding-versions')()
 })

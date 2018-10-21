@@ -1,4 +1,4 @@
-const {getPlatformFromUserAgent, getPlatformLabel} = require('platform-utils')
+const { getPlatformFromUserAgent, getPlatformLabel } = require('platform-utils')
 
 // Emphasize app download links for the visitor's OS (darwin|linux|win32)
 // Platform is inferred from user agent
