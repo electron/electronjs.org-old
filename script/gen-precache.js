@@ -13,14 +13,14 @@ const { docs, website } = require('electron-i18n')
 for (const docPath of Object.keys(docs['en-US'])) {
   files.push({
     url: docPath,
-    revision: i18nVersion,
+    revision: i18nVersion
   })
 }
 
 for (const sitePath of Object.keys(website['en-US'].pages)) {
   files.push({
     url: sitePath,
-    revision: i18nVersion,
+    revision: i18nVersion
   })
 }
 
@@ -39,4 +39,3 @@ fs.writeFileSync(
   targetPath,
   `self.precache = ${JSON.stringify(files)}`
 )
-

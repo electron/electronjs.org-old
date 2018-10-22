@@ -1,18 +1,20 @@
-importScripts('https://storage.googleapis.com/workbox-cdn/releases/3.6.1/workbox-sw.js');
-importScripts('/scripts/precache.js');
+/* global importScripts, workbox */
+
+importScripts('https://storage.googleapis.com/workbox-cdn/releases/3.6.1/workbox-sw.js')
+importScripts('/scripts/precache.js')
 
 if (workbox) {
-  workbox.precaching.precacheAndRoute(precache);
+  workbox.precaching.precacheAndRoute(self.precache)
   // Fetch JS from network, fallback to cache
   workbox.routing.registerRoute(
-    new RegExp('.*\.js'),
+    new RegExp('.*.js'),
     workbox.strategies.networkFirst()
-  );
+  )
   // Fetch HTML from network, fallback to cache
   workbox.routing.registerRoute(
-    new RegExp('/[^\.]*'),
+    new RegExp('/[^.]*'),
     workbox.strategies.networkFirst()
-  );
+  )
   // Fetch CSS from cache, fetch from network in background
   workbox.routing.registerRoute(
     // Cache CSS files
@@ -20,9 +22,9 @@ if (workbox) {
     // Use cache but update in the background ASAP
     workbox.strategies.staleWhileRevalidate({
       // Use a custom cache name
-      cacheName: 'css-cache',
+      cacheName: 'css-cache'
     })
-  );
+  )
   // Fetch images from cache first, up to 200 images in the cache
   workbox.routing.registerRoute(
     // Cache image files
@@ -36,9 +38,9 @@ if (workbox) {
           // Cache only 200 images
           maxEntries: 200,
           // Cache for a maximum of a day
-          maxAgeSeconds: 7 * 24 * 60 * 60,
+          maxAgeSeconds: 7 * 24 * 60 * 60
         })
-      ],
+      ]
     })
-  );
+  )
 }
