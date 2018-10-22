@@ -43,7 +43,27 @@ describe('electronjs.org', () => {
     })
   })
 
-  describe('blog', () => {
+  describe('documentation page', () => {
+    it('open docs page', () => {
+      cy.visit(localhost)
+      cy.get('a[href="/docs"]:first').click()
+      cy.wait(500)
+
+      cy.get('.container-narrow')
+      .contains('Electron Documentation')
+      cy.get('.container-narrow p').contains('See all of the docs on one page or check out the FAQ.')
+    })
+
+    it('documentation page has guides, api references, and advanced sections', () => {
+      cy.visit(`${localhost}/docs`)
+      cy.wait(500)
+      cy.get('a[href="/docs/tutorial"]').contains('Guides')
+      cy.get('a[href="/docs/api"]').contains('API Reference')
+      cy.get('a[href="/docs/development"]').contains('Advanced')
+    })
+  })
+
+  xdescribe('blog', () => {
     it('open blog page', () => {
       cy.visit(localhost)
       cy.get('a[href="/blog"]:first').click()
