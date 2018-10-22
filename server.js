@@ -44,6 +44,7 @@ app.use(compression())
 app.use(helmet())
 app.use(sass())
 app.use('/scripts/index.js', browserify('scripts/index.js'))
+app.get('/sw.js', (req, res) => res.sendFile(path.resolve(__dirname, 'scripts', 'sw.js')))
 app.use(slashes(false))
 app.use(cookieParser())
 app.use(requestLanguage({

@@ -13,6 +13,11 @@
     <div id="refinement-list"></div>
     {{> footer}}
     {{> anchor_links}}
+    <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js');
+    }
+    </script>
     <script src="/scripts/index.js"></script>
   </body>
 </html>
