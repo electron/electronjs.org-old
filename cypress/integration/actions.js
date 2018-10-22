@@ -1,7 +1,14 @@
+// NOTE(HashimotoYT): TypeScript declarations support for vscode. Feel free to remove this.
+/// <reference path="../../node_modules/cypress/types/index.d.ts" />
+
 describe('electronjs.org', () => {
   it('works', () => {
     cy.visit('http://localhost:5000')
     cy.title().should('include', 'Build cross platform desktop apps')
+  })
+
+  describe('apps page', () => {
+    cy.visit('http://localhost:5000')
 
     // Apps page
     cy.get('a[href="/apps"]:first').click()
@@ -31,10 +38,15 @@ describe('electronjs.org', () => {
     cy.wait(500)
     cy.get('.app-meta-entry-downloads').should('not.be.visible')
   })
-})
 
-describe('search', () => {
-    before(() =>{
+  describe('blog', () => {
+    before(() => {
+      cy.visit('http://localhsot:5000')
+    })
+  })
+
+  describe('search', () => {
+    before(() => {
       cy.visit('http://localhost:5000')
     })
 
@@ -82,4 +94,5 @@ describe('search', () => {
     //   cy.get('#package-hits').should('not.be.visible')
     //   cy.get('#tutorial-hits').should('not.be.visible')
     // })
+  })
 })
