@@ -26,7 +26,7 @@ class FilterList {
       const results = this.index.search(text)
       this.updateList(results)
     } catch (err) {
-      if (err.name === "QueryParseError") {
+      if (err.name === 'QueryParseError') {
         // usually because the user is typing special symbols; safe to ignore
       } else {
         console.error(err)
@@ -60,7 +60,7 @@ class FilterList {
     newList.querySelectorAll('img[data-src]').forEach(lazyLoadImages.addImage)
   }
 
-   buildIndex (list) {
+  buildIndex (list) {
     const builder = new lunr.Builder()
     // Not including `lunr.stemmer` which is normally included by default
     builder.pipeline.add(lunr.trimmer, lunr.stopWordFilter)
@@ -68,8 +68,8 @@ class FilterList {
     // e.g. "mark" will match "markdown"
     builder.searchPipeline.add(function (token) {
       return token.update(function (str) {
-        if (str[str.length - 1] !== "*") {
-          return str + "*"
+        if (str[str.length - 1] !== '*') {
+          return str + '*'
         } else {
           return str
         }

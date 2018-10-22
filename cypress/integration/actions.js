@@ -9,7 +9,7 @@ describe('electronjs.org', () => {
     cy.title().should('include', 'Build cross platform desktop apps')
   })
 
-  xdescribe('apps page', () => {
+  describe('apps page', () => {
     it('search apps', () => {
       cy.visit(localhost)
 
@@ -63,7 +63,7 @@ describe('electronjs.org', () => {
     })
   })
 
-  xdescribe('blog', () => {
+  describe('blog', () => {
     it('open blog page', () => {
       cy.visit(localhost)
       cy.get('a[href="/blog"]:first').click()
@@ -81,7 +81,7 @@ describe('electronjs.org', () => {
     })
   })
 
-  xdescribe('search', () => {
+  describe('search', () => {
     before(() => {
       cy.visit(localhost)
     })
@@ -130,5 +130,15 @@ describe('electronjs.org', () => {
     //   cy.get('#package-hits').should('not.be.visible')
     //   cy.get('#tutorial-hits').should('not.be.visible')
     // })
+  })
+
+  describe('localization', () => {
+    it('change language', () => {
+      cy.visit(`${localhost}/languages`)
+      cy.get('a[href="/languages/ru-RU"]:first').click()
+      cy.visit(`${localhost}`)
+      cy.wait(500)
+      cy.get('.jumbotron-lead').contains('Создавайте кросс-платформенные приложения при помощи JavaScript, HTML и CSS')
+    })
   })
 })
