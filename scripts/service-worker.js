@@ -3,7 +3,7 @@
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/3.6.1/workbox-sw.js')
 importScripts('/scripts/precache.js')
 
-if (workbox) {
+if (typeof workbox !== 'undefined') {
   workbox.precaching.precacheAndRoute(self.precache)
   // Fetch JS from network, fallback to cache
   workbox.routing.registerRoute(
