@@ -14,7 +14,7 @@
     {{> footer}}
     {{> anchor_links}}
     <script>
-    if ('serviceWorker' in navigator) {
+    if ('serviceWorker' in navigator && !window.Cypress) {
       navigator.serviceWorker.register('/service-worker.js');
     }
     </script>
