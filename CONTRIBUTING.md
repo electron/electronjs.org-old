@@ -325,9 +325,22 @@ file. To list all available commands, type `npm run`.
   - Sass middleware serves minified CSS and caches it
   - Browserify middleware serves minified JavaScript and caches it
 
+## Service Workers
+
+This site uses [workbox] and a [service worker](/scripts/service-worker.js) to
+provide better client-side caching and make the site work offline.  We do this
+by telling workbox to cache all requests, this is safe because all content on
+electronjs.org is static.
+
+We also use a custom script [`gen-precache.js`](/script/gen-precache.js) to
+generate a list of all major pages.  We then give this list to workbox and tell
+it to precache all these pages so even if a user only visists a single page before
+going offline, the entire site will be available.
+
 [electronjs.org]: https://electronjs.org
 [electron/electron]: https://github.com/electron/electron
 [electron/electron-i18n]: https://github.com/electron/electron-i18n
+[workbox]: https://developers.google.com/web/tools/workbox
 
 ## Need Help?
 
