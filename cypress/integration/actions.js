@@ -1,41 +1,89 @@
+// NOTE(HashimotoYT): TypeScript declarations support for vscode. Feel free to remove this.
+/// <reference path="../../node_modules/cypress/types/index.d.ts" />
+
+const localhost = 'http://localhost:5000'
+
 describe('electronjs.org', () => {
   it('works', () => {
-    cy.visit('http://localhost:5000')
+    cy.visit(localhost)
     cy.title().should('include', 'Build cross platform desktop apps')
-
-    // Apps page
-    cy.get('a[href="/apps"]:first').click()
-    cy.get('.app-list').should('contain', 'gitmoji')
-
-    // Search specific app
-    cy.get('#apps-filter').type('tusk')
-    cy.wait(500)
-    cy.get('.app-list').should('contain', 'Tusk')
-    cy.get('.app-list').should('not.contain', 'gitmoji')
-
-    cy.get('#apps-filter').clear()
-
-    // Search not one specific app
-    cy.get('#apps-filter').type('desktop')
-    cy.wait(500)
-    cy.get('.app-list').should('contain', 'GitHub Desktop')
   })
 
-  it('shows downloads section for apps that have downloadable files', () => {
-    cy.visit('http://localhost:5000/apps/dat')
-    cy.get('.app-meta-entry-downloads').should('be.visible')
+  describe('apps page', () => {
+    it('search apps', () => {
+      cy.visit(localhost)
+
+      // Apps page
+      cy.get('a[href="/apps"]:first').click()
+      cy.get('.app-list').should('contain', 'gitmoji')
+
+      // Search specific app
+      cy.get('#apps-filter').type('tusk')
+      cy.wait(500)
+      cy.get('.app-list').should('contain', 'Tusk')
+      cy.get('.app-list').should('not.contain', 'gitmoji')
+
+      cy.get('#apps-filter').clear()
+
+      // Search not one specific app
+      cy.get('#apps-filter').type('desktop')
+      cy.wait(500)
+      cy.get('.app-list').should('contain', 'GitHub Desktop')
+    })
+
+    it('shows downloads section for apps that have downloadable files', () => {
+      cy.visit('http://localhost:5000/apps/dat')
+      cy.get('.app-meta-entry-downloads').should('be.visible')
+    })
+
+    it('hides downloads section for apps with no downloadable files', () => {
+      cy.visit('http://localhost:5000/apps/protegopdf')
+      cy.wait(500)
+      cy.get('.app-meta-entry-downloads').should('not.be.visible')
+    })
   })
 
-  it('hides downloads section for apps with no downloadable files', () => {
-    cy.visit('http://localhost:5000/apps/protegopdf')
-    cy.wait(500)
-    cy.get('.app-meta-entry-downloads').should('not.be.visible')
-  })
-})
+  describe('documentation page', () => {
+    it('open docs page', () => {
+      cy.visit(localhost)
+      cy.get('a[href="/docs"]:first').click()
+      cy.wait(500)
 
-describe('search', () => {
-    before(() =>{
-      cy.visit('http://localhost:5000')
+      cy.get('.container-narrow')
+      .contains('Electron Documentation')
+      cy.get('.container-narrow p').contains('See all of the docs on one page or check out the FAQ.')
+    })
+
+    it('documentation page has guides, api references, and advanced sections', () => {
+      cy.visit(`${localhost}/docs`)
+      cy.wait(500)
+      cy.get('a[href="/docs/tutorial"]').contains('Guides')
+      cy.get('a[href="/docs/api"]').contains('API Reference')
+      cy.get('a[href="/docs/development"]').contains('Advanced')
+    })
+  })
+
+  describe('blog', () => {
+    it('open blog page', () => {
+      cy.visit(localhost)
+      cy.get('a[href="/blog"]:first').click()
+      cy.wait(500)
+
+      cy.get('.container-narrow')
+        .contains('Electron Blog')
+      cy.get('.container-narrow p').contains('All the latest news from the Electron team and community.')
+    })
+
+    it('open blog post', () => {
+      cy.visit(`${localhost}/blog`)
+      cy.get('a[href="/blog/electron-3-0"]:first').click()
+      cy.get('.container-narrow').contains('Electron 3.0.0')
+    })
+  })
+
+  describe('search', () => {
+    before(() => {
+      cy.visit(localhost)
     })
 
     beforeEach(() => {
@@ -82,4 +130,15 @@ describe('search', () => {
     //   cy.get('#package-hits').should('not.be.visible')
     //   cy.get('#tutorial-hits').should('not.be.visible')
     // })
+  })
+
+  describe('localization', () => {
+    it('change language', () => {
+      cy.visit(`${localhost}/languages`)
+      cy.get('a[href="/languages/ru-RU"]:first').click()
+      cy.visit(`${localhost}`)
+      cy.wait(500)
+      cy.get('.jumbotron-lead').contains('Создавайте кросс-платформенные приложения при помощи JavaScript, HTML и CSS')
+    })
+  })
 })
