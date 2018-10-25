@@ -60,6 +60,10 @@ function buildSearch (type, isPrimarySearch = false, searches) {
       //   query = query.replace(`is:${isolatedType}`, '').trim()
       // }
 
+      // hide the primary search results' container if no results
+      const primarySearch = searches[types[0].name]
+      if (primarySearch && primarySearch.helper) primarySearch.helper.once('result', onResult)
+
       // delegate query to secondary searches
       types.slice(1).forEach(type => {
         const search = searches[type.name]
