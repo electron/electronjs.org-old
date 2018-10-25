@@ -141,4 +141,18 @@ describe('electronjs.org', () => {
       cy.get('.jumbotron-lead').contains('Создавайте кросс-платформенные приложения при помощи JavaScript, HTML и CSS')
     })
   })
+
+  describe('header', () => {
+    it('"Electron" hides on small displays (less 1300px)', () => {
+      cy.visit(localhost)
+      cy.get('.site-header-logo').not('.vertical-middle')
+    })
+
+    it('"Electron" contains on displays more 1300px', () => {
+      // Set display resolution to 1600x900
+      cy.viewport(1600, 900)
+      cy.visit(localhost)
+      cy.get('.site-header-logo').contains('Electron')
+    })
+  })
 })
