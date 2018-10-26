@@ -220,7 +220,7 @@ blog:
   description: All the latest news from the Electron team and community.
   # Post show page specific localization strings
   feedback: Have feedback on this post? Let <a href="https://twitter.com/electronjs">@electronjs</a> know on Twitter.
-  help: Need help or found a bug? <a href="/contact">Contact us
+  help: Need help or found a bug? <a href="/contact">Contact us</a>.
 
 clipboard:
   copy: Copy
