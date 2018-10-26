@@ -59,7 +59,7 @@
     "locale-code": "^2.0.0",
     "lodash": "^4.17.11",
     "lunr": "^2.3.4",
-    "make-promises-safe": "^1.1.0",
+    "make-promises-safe": "^2.0.0",
     "minimist": "^1.2.0",
     "mkdirp": "^0.5.1",
     "nanohtml": "^1.2.6",
