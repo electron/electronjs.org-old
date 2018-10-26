@@ -1,6 +1,6 @@
 <div class='subtron'>
   <div class='container-narrow'>
-    <h1>Electron Releases</h1>
+    <h1>{{localized.releases.title}}</h1>
   </div>
 </div>
 
@@ -25,17 +25,16 @@ $ ./node_modules/.bin/electron .</code></pre>
           <em class="ltr-only">(<span data-date="{{this.created_at}}"></span>)</em>
           <a href="{{this.html_url}}" class="octicon-wrapper"><span class="octicon octicon-mark-github vertical-middle"></span></a>
         </h2>
-        
+
         {{{this.body_html}}}
-        
-        
+
         <hr>
       {{/each}}
     </div>
 
     <div class="text-center">
-      <a href="https://github.com/electron/electron/releases"><span class="octicon octicon-tag mr-1"></span>All Releases</a>
-      <a class="ml-4" href="#"><span class="octicon octicon-arrow-up mr-1"></span>Back to index</a>
+      <a href="https://github.com/electron/electron/releases"><span class="octicon octicon-tag mr-1"></span>{{localized.releases.all_releases}}</a>
+      <a class="ml-4" href="#"><span class="octicon octicon-arrow-up mr-1"></span>{{localized.releases.back_to_index}}</a>
     </div>
   </div>
 </section>
