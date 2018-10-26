@@ -44,6 +44,7 @@ app.use(compression())
 app.use(helmet())
 app.use(sass())
 app.use('/scripts/index.js', browserify('scripts/index.js'))
+app.get('/service-worker.js', (req, res) => res.sendFile(path.resolve(__dirname, 'scripts', 'service-worker.js')))
 app.use(slashes(false))
 app.use(cookieParser())
 app.use(requestLanguage({
