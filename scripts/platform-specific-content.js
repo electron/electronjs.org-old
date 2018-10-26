@@ -7,7 +7,7 @@
 // value, add a class to the element like `display-inline-block` or
 // `display-table-row`
 
-const {getPlatformFromUserAgent} = require('platform-utils')
+const { getPlatformFromUserAgent } = require('platform-utils')
 
 module.exports = function platformSpecificContent () {
   const platform = getPlatformFromUserAgent()
