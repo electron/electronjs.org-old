@@ -116,6 +116,13 @@
               <span class="shell-one-liner" style="margin-top: 4px; display: block;">sudo snap install {{app.snapcraftName}}</span>
             </div>
           {{/if}}
+          
+          {{#if app.npmPackageName}}
+            <div class="npm-only app-meta-entry">
+              <h5>npm</h5>
+              <span class="shell-one-liner" style="margin-top: 4px; display: block;">npm install -g {{app.npmPackageName}}</span>
+            </div>
+          {{/if}}
 
           {{#if app.keywords}}
             <div class="app-meta-entry">
