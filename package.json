@@ -53,7 +53,7 @@
     "href-type": "^1.0.1",
     "http-proxy-middleware": "^0.19.0",
     "hubdown": "^2.1.0",
-    "instantsearch.js": "^2.10.3",
+    "instantsearch.js": "^2.10.4",
     "lil-env-thing": "^1.0.0",
     "lobars": "^1.2.0",
     "locale-code": "^2.0.0",
