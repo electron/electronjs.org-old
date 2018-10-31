@@ -17,7 +17,8 @@
     "prepack": "check-for-leaks",
     "prepush": "check-for-leaks",
     "linkschecker": "NODE_PATH=. NODE_ENV=test node scripts/links-checker.js",
-    "cypress": "cypress run"
+    "cypress": "cypress run",
+    "lint": "standard --fix"
   },
   "dependencies": {
     "@babel/core": "^7.1.2",
@@ -43,7 +44,7 @@
     "electron-npm-packages": "4.1.2",
     "electron-releases": "^2.109.0",
     "electron-userland-reports": "1.6.0",
-    "express": "^4.16.4",
+    "express": "^4.16.2",
     "express-hbs": "^1.0.4",
     "express-request-language": "^1.1.15",
     "feed": "^2.0.1",
@@ -76,7 +77,7 @@
     "rtl-detect": "^1.0.2",
     "schemeless": "^1.2.0",
     "search-with-your-keyboard": "^1.1.0",
-    "semver": "^5.6.0",
+    "semver": "^5.5.1",
     "set-query-string": "^2.2.0",
     "ua-parser-js": "^0.7.19"
   },
