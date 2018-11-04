@@ -1,12 +1,13 @@
 const Feed = require('feed').Feed
 const description = require('description')
+const memoize = require('fast-memoize')
 
 const types = {
   blog: 'blog',
   releases: 'releases'
 }
 
-module.exports.setupFeed = (type, items) => {
+module.exports.setupFeed = memoize((type, items) => {
   let feed = new Feed({
     title: 'Electron',
     description:
@@ -54,4 +55,4 @@ module.exports.setupFeed = (type, items) => {
   }
 
   return feed
-}
+})
