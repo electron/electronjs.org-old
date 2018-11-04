@@ -25,22 +25,12 @@ describe('electronjs.org', () => {
     res.headers['content-encoding'].should.equal('gzip')
   })
 
-  describe('feeds', async () => {
-    test('blog feeds', async () => {
-      let res = await supertest(app).get(`/blog.json`)
-      res.headers['content-type'].should.equal('application/json; charset=utf-8')
-      res.body.title.should.equal('Electron')
-      res = await supertest(app).get(`/blog.xml`)
-      res.headers['content-type'].should.equal('text/xml; charset=utf-8')
-    })
-
-    test('releases feeds', async () => {
-      let res = await supertest(app).get(`/releases.json`)
-      res.headers['content-type'].should.equal('application/json; charset=utf-8')
-      res.body.title.should.equal('Electron')
-      res = await supertest(app).get(`/releases.xml`)
-      res.headers['content-type'].should.equal('text/xml; charset=utf-8')
-    })
+  test('blog feeds', async () => {
+    let res = await supertest(app).get(`/blog.json`)
+    res.headers['content-type'].should.equal('application/json; charset=utf-8')
+    res.body.title.should.equal('Electron')
+    res = await supertest(app).get(`/blog.xml`)
+    res.headers['content-type'].should.equal('text/xml; charset=utf-8')
   })
 
   describe('stylesheets', () => {

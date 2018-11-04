@@ -1,8 +1,21 @@
-const feed = require('./mainFeed')
+/// <reference path="../../node_modules/feed/lib/types/index.d.ts" />
+
+const Feed = require('feed').Feed
 const description = require('description')
 
-// Feed for Blog
 module.exports = function feedHandler (req, res, next) {
+  let feed = new Feed({
+    title: 'Electron',
+    description: 'Build cross platform desktop apps with JavaScript, HTML, and CSS.',
+    id: 'http://electronjs.org/',
+    link: 'http://electronjs.org/',
+    generator: 'Electron website',
+    feedLinks: {
+      json: 'https://electronjs.org/blog.json',
+      atom: 'https://electronjs.org/blog.xml'
+    }
+  })
+
   req.context.posts.forEach(function (post) {
     feed.addItem({
       id: `https://electronjs.org${post.href}`,
