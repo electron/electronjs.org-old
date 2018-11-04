@@ -1,14 +1,7 @@
-const feed = require('./mainFeed')
+const { setupFeed } = require('./mainFeed')
 
 module.exports = function feedHandler (req, res, next) {
-  req.context.releases.forEach(function (releases) {
-    feed.addItem({
-      id: `https://electronjs.org/releases#${releases.version}`,
-      date: new Date(releases.created_at),
-      link: releases.html_url,
-      content: releases.body_html
-    })
-  })
+  const feed = setupFeed('releases', req.context.releases)
 
   if (req.path === '/releases.xml') {
     res.set('content-type', 'text/xml')
