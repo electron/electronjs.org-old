@@ -22,29 +22,35 @@ module.exports.setupFeed = (type, items) => {
     }
   })
 
-  if (type === types.releases) {
-    items.forEach(release => {
-      feed.addItem({
-        id: `https://electronjs.org/releases#${release.version}`,
-        date: new Date(release.created_at),
-        link: release.html_url,
-        content: release.body_html
+  switch (type) {
+    case types.releases:
+      items.forEach(release => {
+        feed.addItem({
+          id: `https://electronjs.org/releases#${release.version}`,
+          date: new Date(release.created_at),
+          link: release.html_url,
+          content: release.body_html
+        })
       })
-    })
-  } else if (types === types.blog) {
-    items.forEach(post => {
-      feed.addItem({
-        id: `https://electronjs.org${post.href}`,
-        title: post.title,
-        content: post.content,
-        description: description({ content: post.content, endWith: '[...]', limit: 200 }),
-        link: `https://electronjs.org${post.href}`,
-        date: new Date(post.date),
-        published: new Date(post.date),
-        author: post.author,
-        image: post.image || 'https://electronjs.org/images/opengraph.png'
+      break
+    case types.blog:
+      items.forEach(post => {
+        feed.addItem({
+          id: `https://electronjs.org${post.href}`,
+          title: post.title,
+          content: post.content,
+          description: description({ content: post.content, endWith: '[...]', limit: 200 }),
+          link: `https://electronjs.org${post.href}`,
+          date: new Date(post.date),
+          published: new Date(post.date),
+          author: post.author,
+          image: post.image || 'https://electronjs.org/images/opengraph.png'
+        })
       })
-    })
+      break
+    default:
+      console.log(type === types.releases)
+      throw new Error('Invalid rss feed type')
   }
 
   return feed

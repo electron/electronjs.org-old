@@ -1,7 +1,9 @@
 const { setupFeed } = require('./mainFeed')
+const memoize = require('fast-memoize')
 
 module.exports = function feedHandler (req, res, next) {
-  const feed = setupFeed('releases', req.context.releases)
+  const cachedSetupFeed = memoize(setupFeed)
+  const feed = cachedSetupFeed('releases', req.context.releases)
 
   if (req.path === '/releases.xml') {
     res.set('content-type', 'text/xml')
