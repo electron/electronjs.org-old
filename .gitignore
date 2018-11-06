@@ -8,4 +8,5 @@ images/crushed
 css/**/*.css
 yarn.lock
 cypress/videos/*
-scripts/precache.js
+scripts/precache.*
+scripts/service-worker.js

@@ -1,7 +1,7 @@
 /* global importScripts, workbox */
 
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/3.6.1/workbox-sw.js')
-importScripts('/scripts/precache.js')
+importScripts('/scripts/precache.{PRE_HASH}.js')
 
 if (typeof workbox !== 'undefined') {
   workbox.precaching.precacheAndRoute(self.precache)
