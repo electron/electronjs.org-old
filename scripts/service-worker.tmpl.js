@@ -3,6 +3,10 @@
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/3.6.1/workbox-sw.js')
 importScripts('/scripts/precache.{PRE_HASH}.js')
 
+self.addEventListener('install', () => {
+  self.skipWaiting();
+});
+
 if (typeof workbox !== 'undefined') {
   workbox.precaching.precacheAndRoute(self.precache)
   // Fetch JS from network, fallback to cache
