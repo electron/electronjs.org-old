@@ -4,6 +4,16 @@ const { deps } = releases.find(release => release.version === i18n.electronLates
 const { getLanguageNativeName } = require('locale-code')
 const rtlDetect = require('rtl-detect')
 
+function hasNpmDistTag (tag) {
+  return function (release) {
+    if (release.npm_dist_tags) {
+      return release.npm_dist_tags.includes(tag)
+    } else {
+      return false
+    }
+  }
+}
+
 // Supply all route handlers with a baseline `req.context` object
 module.exports = function contextBuilder (req, res, next) {
   // Attach i18n object to request so any route handler can use it if needed
@@ -24,9 +34,9 @@ module.exports = function contextBuilder (req, res, next) {
 
   const localized = i18n.website[req.language]
 
-  const stableRelease = releases.find(release => release.npm_dist_tag === 'latest')
-  const betaRelease = releases.find(release => release.npm_dist_tag === 'beta')
-  const nightlyRelease = releases.find(release => release.npm_dist_tag === 'nightly')
+  const stableRelease = releases.find(hasNpmDistTag('latest'))
+  const betaRelease = releases.find(hasNpmDistTag('beta'))
+  const nightlyRelease = releases.find(hasNpmDistTag('nightly'))
 
   // Page titles, descriptions, etc
   let page = Object.assign({
