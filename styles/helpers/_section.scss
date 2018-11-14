@@ -1,6 +1,6 @@
-
 .page-section {
   padding: $spacer3;
+
   @include breakpoint(sm) { padding: $spacer4; }
   @include breakpoint(md) { padding: $spacer5; }
   @include breakpoint(lg) { padding: $spacer6; }
@@ -46,6 +46,7 @@
   min-height: 0;
   border: 1px solid darken($main-bg-color-shade, 8%);
   background: $main-bg-color-shade;
+  background-image: linear-gradient(#f6f6f6 0, #fff 325px);
 
   hr {
     border-color: darken($main-bg-color-shade, 12%);

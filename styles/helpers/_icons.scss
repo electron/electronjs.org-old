@@ -1,0 +1,66 @@
+// Icon styles
+// --------------------------------------------------
+
+[class*="hero-octicon"] {
+  display: block;
+  width: 75px;
+  height: 75px;
+  padding-top: 16.5px;
+  margin: 0 auto $spacer3;
+  font-size: 42px;
+  color: lighten(desaturate($theme-color, 30%), 20%);
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid $gray-5;
+  border-radius: 50%;
+}
+
+[class*="inline-octicon"]  {
+  float: left;
+  width: 42px;
+  color: lighten(desaturate($theme-color, 30%), 20%);
+}
+
+.hero-octicon-white, .inline-octicon-white {
+  color: lighten(desaturate($theme-color, 50%), 50%);
+}
+
+.inline-octicon-body {
+  padding-left: 42px;
+}
+
+.hero-feature {
+  .hero-octicon {
+    transition: transform .32s;
+  }
+
+  &:hover .hero-octicon {
+    transform: scale(1.1);
+    transition-duration: .08s;
+  }
+
+  &:active .hero-octicon {
+    transform: scale(.92);
+    transition-duration: 0;
+  }
+}
+
+.hero-link {
+  color: $heading-color;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.hero-octicon {
+  color: $heading-color;
+  background-color: transparent;
+  border: 1px solid mix($heading-color, #fff, 30%);
+}
+
+.btn {
+  .octicon {
+    vertical-align: middle;
+  }
+}
