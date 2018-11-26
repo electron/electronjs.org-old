@@ -92,7 +92,7 @@
     "husky": "^1.2.0",
     "mocha": "^5.0.0",
     "nock": "^10.0.2",
-    "nodemon": "^1.18.5",
+    "nodemon": "^1.18.6",
     "simplecrawler": "^1.1.6",
     "standard": "^12.0.1",
     "supertest": "^3.3.0",
