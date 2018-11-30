@@ -101,6 +101,9 @@ describe('electronjs.org', () => {
 
     test('app pages apply platform labels to download links', async () => {
       const $ = await get('/apps/hyper')
+      if ($('a.app-download.darwin').length === 0) {
+        console.log($('.app-meta').html())
+      }
       $('a.app-download.darwin').length.should.be.above(0)
       $('a.app-download.linux').length.should.be.above(0)
       $('a.app-download.win32').length.should.be.above(0)
@@ -324,6 +327,12 @@ describe('electronjs.org', () => {
       const $ = cheerio.load(res.text)
       $('.subtron .container-narrow h1').text().should.eq(i18n.website['vi-VN'].community.title)
     })
+
+    test('/contact redirects to /community', async () => {
+      const res = await supertest(app).get('/contact')
+      res.statusCode.should.be.equal(301)
+      res.headers.location.should.equal('/community')
+    })
   })
 
   describe('localized strings for client-side code', () => {
@@ -402,6 +411,26 @@ describe('electronjs.org', () => {
         res.statusCode.should.be.equal(200)
         res.statusCode.should.equal(200)
       }
+    })
+
+    describe('<dir> HTML tag for right-to-left languages', () => {
+      test('is `ltr` by default', async () => {
+        const res = await supertest(app).get(`/`)
+        const $ = cheerio.load(res.text)
+        $('html').attr('dir').should.equal('ltr')
+      })
+
+      test('is `rtl` for Arabic', async () => {
+        const res = await supertest(app).get(`/?lang=ar-SA`)
+        const $ = cheerio.load(res.text)
+        $('html').attr('dir').should.equal('rtl')
+      })
+
+      test('is `rtl` for Hebrew', async () => {
+        const res = await supertest(app).get(`/?lang=he-IL`)
+        const $ = cheerio.load(res.text)
+        $('html').attr('dir').should.equal('rtl')
+      })
     })
 
     test('redirects for date-style blog URLs', async () => {
@@ -499,30 +528,6 @@ describe('electronjs.org', () => {
       res.statusCode.should.equal(405)
       res.type.should.equal('application/json')
       res.text.should.eq('"POST not allowed"')
-    })
-  })
-
-  describe('search', () => {
-    test('only shows search bar when there is no query', async () => {
-      const $ = await get('/search')
-      $('search-results').length.should.equal(0)
-    })
-    test('shows no more than 5 results from each of the 3 sources when there is query', async () => {
-      const $ = await get('/search?q=ipc')
-      $('ul.search-results').length.should.equal(3)
-      $('ul.search-results').each((i, elem) => {
-        $(elem).children('li').length.should.be.at.most(5)
-      })
-    })
-    test('shows results from one source if specified', async () => {
-      const $ = await get('/search/docs?q=ipc')
-      $('ul.search-results').length.should.equal(1)
-    })
-    test('does not crash on unusual queries', async () => {
-      let res = await supertest(app).get('/search/docs?q=*')
-      res.statusCode.should.equal(200)
-      res = await supertest(app).get('/search?q=*')
-      res.statusCode.should.equal(200)
     })
   })
 })

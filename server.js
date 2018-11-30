@@ -32,7 +32,7 @@ app.engine('html', hbs.express4({
   layoutsDir: path.join(__dirname, '/views/layouts'),
   partialsDir: path.join(__dirname, '/views/partials'),
   onCompile: function (exhbs, source, filename) {
-    var options = {}
+    var options = {preventIndent: true}
     return exhbs.handlebars.compile(source, options)
   }
 }))
@@ -44,6 +44,7 @@ app.use(compression())
 app.use(helmet())
 app.use(sass())
 app.use('/scripts/index.js', browserify('scripts/index.js'))
+app.get('/service-worker.js', (req, res) => res.sendFile(path.resolve(__dirname, 'scripts', 'service-worker.js')))
 app.use(slashes(false))
 app.use(cookieParser())
 app.use(requestLanguage({
@@ -69,15 +70,17 @@ app.get('/awesome', (req, res) => res.redirect('/community'))
 app.get('/blog.json', routes.feed.blog)
 app.get('/blog.xml', routes.feed.blog)
 app.get('/community', routes.community)
-app.get('/contact', routes.contact)
+app.get('/contact', (req, res) => res.redirect(301, '/community'))
 app.get('/devtron', routes.devtron)
 app.get('/docs', routes.docs.index)
 app.get('/docs/versions', (req, res) => res.redirect(301, '/releases'))
 app.get('/docs/:category', routes.docs.category)
+app.get('/docs/api/structures', routes.docs.structures)
 app.get('/docs/*/history', routes.docs.history)
 app.get('/docs/:category/*', routes.docs.show)
 app.get('/docs/latest*', (req, res) => res.redirect(req.path.replace(/^\/docs\/latest/ig, '/docs')))
 app.get('/docs/v0*', (req, res) => res.redirect(req.path.replace(/^\/docs\/v0\.\d+\.\d+/ig, '/docs')))
+app.get('/docs/tutorial/faq', (req, res) => res.redirect('/docs/faq'))
 app.get('/issues', (req, res) => res.redirect(301, 'https://github.com/electron/electronjs.org/issues'))
 app.get('/issues/new', (req, res) => res.redirect(301, 'https://github.com/electron/electronjs.org/issues/new'))
 app.get('/languages', routes.languages.index)
@@ -89,7 +92,7 @@ app.get('/userland', routes.userland.index)
 app.get('/userland/*', routes.userland.show)
 app.use('/crowdin', routes.languages.proxy)
 app.use('/donors', routes.donors)
-app.get('/search/:searchIn*?', routes.search.index)
+app.get('/search/:searchIn*?*', (req, res) => res.redirect(req.query.q ? `/?query=${req.query.q}` : `/`))
 
 // Generic 404 handler
 app.use(routes._404)

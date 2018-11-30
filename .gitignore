@@ -7,3 +7,5 @@ images/crushed
 .env
 css/**/*.css
 yarn.lock
+cypress/videos/*
+scripts/precache.js

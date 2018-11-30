@@ -1,18 +1,26 @@
-// inspiration: https://github.com/luisfarzati/express-babelify-middleware
-
 const browserify = require('browserify-middleware')
-const babelify = require('babelify')
 
-function babelifyMiddleware (entries, brOptions, baOptions) {
-  brOptions = brOptions || {}
-  brOptions.transform = brOptions.transform || []
-  baOptions = baOptions || {}
-  baOptions.presets = baOptions.presets || ['babel-preset-env']
-  brOptions.transform.unshift(babelify.configure(baOptions))
+const nodeModulesToAvoidBabelifying = [
+  'lodash',
+  'lunr',
+  'prettydate'
+]
 
-  return browserify(entries, brOptions)
+const excludeRegex = new RegExp(`/node_modules/(${nodeModulesToAvoidBabelifying.join('|')})`)
+
+function babelifyMiddleware (entry) {
+  return browserify(entry, {
+    transform: [
+      ['babelify', {
+        global: true,
+        exclude: excludeRegex,
+        presets: [
+          ['@babel/preset-env', { targets: '> 0.25%, not dead' }]
+        ]
+      }],
+      'brfs'
+    ]
+  })
 }
-
-babelifyMiddleware.browserifySettings = browserify.settings
 
 module.exports = babelifyMiddleware

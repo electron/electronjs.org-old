@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+  require('./search')()
   require('./lazy-load-images')()
   require('./get-localized-strings')()
   require('./create-filter-list')()
@@ -15,4 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
   require('./sticky-app-meta')()
   require('./screenshot-thumb-selector')()
   require('./docs-language-toggle')()
+  require('./expanding-versions')()
+  require('./reset-lang-cache')()
 })

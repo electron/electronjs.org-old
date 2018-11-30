@@ -66,7 +66,7 @@ $octicons-font-path: "../bower_components/octicons/octicons/";
 // Electron -----------------------------------
 
 @import "base";
-@import "hljs/github"; // Syntax highlighting
+@import "hljs/github.css"; // Syntax highlighting
 @import "hljs/overrides"; // customization
 
 // Basecoat overrides
@@ -91,3 +91,4 @@ $octicons-font-path: "../bower_components/octicons/octicons/";
 @import "userland";
 @import "languages";
 @import "search";
+@import "versions"

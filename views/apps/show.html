@@ -1,6 +1,6 @@
 <style>
   .site-header, .app-download {
-    background: {{app.goodColorOnWhite}}; 
+    background: {{app.goodColorOnWhite}};
     color: white !important;
   }
 
@@ -24,11 +24,11 @@
   }
 
   .page-section a {
-    color: {{app.goodColorOnWhite}}; 
+    color: {{app.goodColorOnWhite}};
   }
 
   .shell-one-liner {
-    background: {{app.faintColorOnWhite}}; 
+    background: {{app.faintColorOnWhite}};
     color: {{app.goodColorOnWhite}};
   }
 
@@ -72,27 +72,27 @@
 
           {{#if app.website}}
             <div class="app-meta-entry">
-              <h5>Website</h5>
+              <h5>{{localized.apps.website}}</h5>
               <a href="{{app.website}}">{{app.website}}</a>
             </div>
           {{/if}}
 
           {{#if app.repository}}
             <div class="app-meta-entry">
-              <h5>Repository</h5>
+              <h5>{{localized.apps.repository}}</h5>
               <a href="{{app.repository}}">{{app.repository}}</a>
             </div>
           {{/if}}
 
           <div class="app-meta-entry">
-            <h5>Category</h5>
+            <h5>{{localized.apps.category}}</h5>
             <a href="/apps?category={{app.categorySlug}}">{{app.category}}</a>
           </div>
 
           {{#if app.latestRelease}}
             {{#if app.latestRelease.assets}}
-              <div class="app-meta-entry">
-                <h5>Downloads ({{app.latestRelease.tag_name}})</h5>
+              <div class="app-meta-entry app-meta-entry-downloads">
+                <h5>{{localized.apps.downloads}} ({{app.latestRelease.tag_name}})</h5>
 
                 {{#each app.latestRelease.assets}}
                   <a class="app-download {{this.platform}}" href="{{this.browser_download_url}}">{{this.name}}</a>
@@ -110,9 +110,16 @@
             </tr>
           {{/if}}
 
+          {{#if app.snapcraftName}}
+            <div class="linux-only app-meta-entry">
+              <h5>Snapcraft</h5>
+              <span class="shell-one-liner" style="margin-top: 4px; display: block;">sudo snap install {{app.snapcraftName}}</span>
+            </div>
+          {{/if}}
+
           {{#if app.keywords}}
             <div class="app-meta-entry">
-              <h5>Keywords</h5>
+              <h5>{{localized.apps.keywords}}</h5>
               {{#each app.keywords}}
                 <a class="app-keyword" href="/apps?q={{this}}">{{this}}</a>
               {{/each}}
@@ -122,14 +129,14 @@
 
           {{#if app.license}}
             <div class="app-meta-entry">
-              <h5>License</h5>
+              <h5>{{localized.apps.license}}</h5>
               <span>{{app.license}}</span>
             </div>
           {{/if}}
 
           {{#if app.latestRelease}}
             <div class="app-meta-entry">
-              <h5>Latest Release</h5>
+              <h5>{{localized.apps.latest_release}}</h5>
               <a href="{{app.latestRelease.html_url}}">
                 {{app.latestRelease.name}}
                 <span class="app-tagname">({{app.latestRelease.tag_name}})</span>
@@ -174,9 +181,12 @@
 </section>
 
 <script>
-  window.app = true;
-  document.getElementById('display-readme').addEventListener('click', function(event) {
-    this.classList.add('d-none');
-    document.getElementById('readme').classList.remove('d-none');
-  });
+  window.app = true
+  var $readme = document.getElementById('display-readme')
+  if ($readme) {
+      $readme.addEventListener('click', function(event) {
+      this.classList.add('d-none')
+      document.getElementById('readme').classList.remove('d-none')
+    })
+  }
 </script>
