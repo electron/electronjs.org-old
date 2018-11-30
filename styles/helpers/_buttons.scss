@@ -23,7 +23,6 @@
   }
 }
 
-
 .btn-outline-purple {
   @include btn-outline-theme($purple);
 }
@@ -86,4 +85,13 @@
 .btn-lg {
   padding: 16px 30px;
   font-size: 18px;
+}
+
+.btn-outline-themed {
+  @include btn-outline-theme($theme-color);
+}
+
+.btn-outline-themed:hover,
+.btn-outline-themed:active {
+  background-image: none;
 }

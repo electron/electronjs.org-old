@@ -2,13 +2,15 @@
 // Code snippets
 //
 
-
-// Based on .markdown-body styles
-
 code,
 pre {
   font-family: Consolas,"Liberation Mono",Menlo,Courier,monospace;
   font-size: 12px;
+}
+
+code {
+  color: darken(saturate($main-color, 50%), 10%);
+  background-color: darken($main-bg-color, 5%);
 }
 
 // Inline code
@@ -76,16 +78,28 @@ code {
   }
 }
 
-.example-dark-bg {
-  background: $gray-7;
+pre {
+  margin-bottom: 10px;
 }
 
-.screenshot {
-  img {
-    display: inline-block;
-    margin: $spacer 0;
-    border: $border;
-    border-radius: $border-radius;
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+// make code in headers a bit stronger
+h1,
+h2,
+h3,
+h4 {
+  code {
+    background-color: darken($main-bg-color, 5%);
+  }
+}
+
+span.shell-one-liner {
+  font-family: $code-font-family;
+  padding: 10px;
+  border-radius: 2px;
+  line-height: 2;
+
+  &:before {
+    content: "$ ";
+    opacity: 0.5;
   }
 }

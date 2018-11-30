@@ -38,17 +38,9 @@ $octicons-font-path: "../bower_components/octicons/octicons/";
 // @import "../bower_components/primer-css/scss/states";
 // @import "../bower_components/primer-css/scss/tooltips";
 
-@import "../bower_components/basecoat/scss/buttons";
 // @import "../bower_components/basecoat/scss/animation";
 // @import "../bower_components/basecoat/scss/cards";
-@import "../bower_components/basecoat/scss/code";
-@import "../bower_components/basecoat/scss/footer";
 @import "../bower_components/basecoat/scss/grid";
-@import "../bower_components/basecoat/scss/icons";
-@import "../bower_components/basecoat/scss/navigation";
-@import "../bower_components/basecoat/scss/page-headers";
-@import "../bower_components/basecoat/scss/section";
-@import "../bower_components/basecoat/scss/tables";
 @import "primer-breadcrumb/index.scss";
 
 // Devicon
@@ -70,14 +62,14 @@ $octicons-font-path: "../bower_components/octicons/octicons/";
 @import "hljs/overrides"; // customization
 
 // Basecoat overrides
-@import "basecoat-buttons";
-@import "basecoat-code";
-@import "basecoat-footer";
-@import "basecoat-icons";
-@import "basecoat-navigation";
-@import "basecoat-page-headers";
-@import "basecoat-section";
-@import "basecoat-tables";
+@import "./helpers/buttons";
+@import "./helpers/tables";
+@import "./helpers/code";
+@import "./helpers/footer";
+@import "./helpers/icons";
+@import "./helpers/navigation";
+@import "./helpers/page-headers";
+@import "./helpers/section";
 
 // Pages
 @import "app";
