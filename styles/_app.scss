@@ -43,7 +43,7 @@
       font-size: 2em;
       line-height: 1.1;
     }
-    
+
     .app-description {
       margin: .3em 0 0 0;
       font-size: 1.2em;
@@ -140,12 +140,12 @@
       background-color: darken($main-bg-color-shade, 4%);
     }
   }
-  
+
   .app-tagname {
     margin-left: .5em;
     color: $main-color-subtle;
   }
-  
+
   .app-download {
     display: block;
     padding: 0.4em .8em;
@@ -158,7 +158,7 @@
     white-space: nowrap;
     direction: rtl;
     text-align: left;
-    
+
     @include breakpoint(md) {
       display: inline-block;
     }
@@ -175,7 +175,7 @@
     > div > article > *:first-child {
       margin-top: 0 !important;
     }
-  
+
     .octicon-link {
       display: none;
     }

@@ -1,11 +1,10 @@
-const {getPlatformFromUserAgent, getPlatformLabel} = require('platform-utils')
+const { getPlatformFromUserAgent, getPlatformLabel } = require('platform-utils')
 
 // Emphasize app download links for the visitor's OS (darwin|linux|win32)
 // Platform is inferred from user agent
 
 module.exports = function updateAppDownloadLinks () {
   const links = Array.from(document.querySelectorAll('a.app-download'))
-
   // No downloads links found on the page.
   if (!links.length) return
 
@@ -15,6 +14,7 @@ module.exports = function updateAppDownloadLinks () {
   if (!matches.length) {
     // No downloads found for the detected OS, probably android/ios
     // Hide all links and let them click view all files if wanted
+    links[0].parentNode.style.display = 'none'
   }
 
   links.forEach(link => {
