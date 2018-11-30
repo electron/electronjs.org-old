@@ -138,7 +138,7 @@ describe('electronjs.org', () => {
       cy.get('a[href="/languages/ru-RU"]:first').click()
       cy.visit(`${localhost}`)
       cy.wait(500)
-      cy.get('.jumbotron-lead').contains('Создавайте кросс-платформенные приложения при помощи JavaScript, HTML и CSS')
+      cy.get('.jumbotron-lead').contains('Создавайте кроссплатформенные приложения при помощи JavaScript, HTML и CSS')
     })
   })
 
