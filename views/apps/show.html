@@ -106,22 +106,22 @@
           {{#if app.homebrewCaskName}}
             <div class="darwin-only app-meta-entry">
               <h5>Homebrew</h5>
-              <span class="shell-one-liner" style="margin-top: 4px;display: block;">brew cask install {{app.homebrewCaskName}}</span>
-            </tr>
+              <span class="shell-one-liner app-download-input">brew cask install {{app.homebrewCaskName}}</span>
+            </div>
           {{/if}}
 
           {{#if app.snapcraftName}}
             <div class="linux-only app-meta-entry">
               <h5>Snapcraft</h5>
-              <span class="shell-one-liner" style="margin-top: 4px; display: block;">sudo snap install {{app.snapcraftName}}</span>
+              <span class="shell-one-liner app-download-input">sudo snap install {{app.snapcraftName}}</span>
             </div>
           {{/if}}
 
           {{#if app.npmPackageName}}
             <div class="app-meta-entry">
               <h5>npmjs.com</h5>
-              <span class="shell-one-liner" style="margin-top: 4px;display: block;">npm install -g {{app.npmPackageName}}</span>
-            </tr>
+              <span class="shell-one-liner app-download-input">npm install -g {{app.npmPackageName}}</span>
+            </div>
           {{/if}}
 
           {{#if app.keywords}}

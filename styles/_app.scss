@@ -243,6 +243,11 @@
   display: none;
 }
 
+.app-download-input {
+  margin-top: 4px;
+  display: block;
+}
+
 // mobile handle, use breakpoint from /bower_components/basecoat/scss/mixins/_breakpoints.scss
 .container-narrow {
   padding-right: 15px;
