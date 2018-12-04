@@ -117,6 +117,13 @@
             </div>
           {{/if}}
 
+          {{#if app.npmPackageName}}
+            <div class="app-meta-entry">
+              <h5>npmjs.com</h5>
+              <span class="shell-one-liner" style="margin-top: 4px;display: block;">npm install -g {{app.npmPackageName}}</span>
+            </tr>
+          {{/if}}
+
           {{#if app.keywords}}
             <div class="app-meta-entry">
               <h5>{{localized.apps.keywords}}</h5>
