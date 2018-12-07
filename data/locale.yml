@@ -272,8 +272,15 @@ pages:
   '/spectron':
     title: Spectron
     description: Spectron is an open source framework for easily writing integrations tests for your Electron app. Built on top of ChromeDriver and WebDriverIO.
+  '/fiddle':
+    title: Electron Fiddle
+    description: The easiest way to get started with Electron
   '/donors':
     title: Donors
+
+landing:
+  fiddle:
+    lead_desc: The easiest way to get started with Electron
 
 _404:
   page_not_found: Page not found.

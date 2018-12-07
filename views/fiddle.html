@@ -1,0 +1,130 @@
+<div class="fiddle">
+  <div class="jumbotron text-center">
+    <div class="container">
+      <img
+        class="mb-4 mb-lg-6 fiddle-icon"
+        src="{{ site.baseurl }}/images/fiddle/fiddle.png"
+        alt="Electron Fiddle Icon"
+      />
+      <p class="fiddle-strong">Electron Fiddle</p>
+      <p class="jumbotron-lead">
+        <span class="jumbotron-lead-muted">{{
+          localized.landing.fiddle.lead_desc
+        }}</span>
+      </p>
+    </div>
+  </div>
+
+  <section class="page-section page-section-spacious">
+    <div class="docs-container-xl">
+      <h1 class="text-center-sm">Create your app</h1>
+      <p class="lead text-center-sm">
+        Electron Fiddle lets you create and play with small Electron
+        experiments. It greets you with a quick-start template after opening –
+        change a few things, choose the version of Electron you want to run it
+        with, and play around. Then, save your Fiddle either as a GitHub Gist or
+        to a local folder. Once pushed to GitHub, anyone can quickly try your
+        Fiddle out by just entering it in the address bar.
+      </p>
+
+      <div class="row mt-4 mt-sm-8">
+        <div class="col-xs-12 col-md-6 text-left mb-4">
+          <h2>Explore Electron</h2>
+          <p>
+            Try Electron without installing any dependencies: Fiddle includes
+            everything you'll need to explore the platform. It also includes
+            examples for every API available in Electron, so if you want to
+            quickly see what a BrowserView is or how the desktopCapturer works,
+            Fiddle has got you covered.
+          </p>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div class="f-app-frame">
+            <img
+              alt="Screenshot of Electron Fiddle"
+              src="{{ site.baseurl }}/images/fiddle/explore-electron.png"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-8">
+        <div class="col-xs-12 col-md-6 mb-4">
+          <div class="f-app-frame">
+            <img
+              alt="Screenshot of Electron Fiddle Editor"
+              src="{{ site.baseurl }}/images/fiddle/code-with-types.png"
+            />
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-6 text-left">
+          <h2>Code with Types</h2>
+          <p>
+            Fiddle includes Microsoft's excellent Monaco Editor, the same editor
+            powering Visual Studio Code. It also installs the type definitions
+            for the currently selected version of Electron automatically,
+            ensuring that you always have all Electron APIs only a few
+            keystrokes away.
+          </p>
+        </div>
+      </div>
+
+      <div class="row mt-8">
+        <div class="col-xs-12 col-md-6 text-left mb-4">
+          <h2>Compile and Package</h2>
+          <p>
+            iddle can automatically turn your experiment into binaries you can
+            share with your friends, coworkers, or grandparents. It does so
+            thanks to <a href="https://electronforge.io/">electron-forge</a>,
+            allowing you to package your fiddle as an app for Windows, macOS, or
+            Linux.
+          </p>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div class="f-app-frame">
+            <img
+              alt="Screenshot of Electron Fiddle Compile And Package Menu"
+              src="{{ site.baseurl }}/images/fiddle/compile-and-package.png"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-8">
+        <div class="col-xs-12 col-md-6 mb-4">
+          <div class="f-app-frame">
+            <img
+              alt="Screenshot of Electron Fiddle Starting Point"
+              src="{{ site.baseurl }}/images/fiddle/easy-start.png"
+            />
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-6 text-left">
+          <h2>Start with Fiddle, Continue Wherever</h2>
+          <p>
+            Fiddle is not an IDE – it is however an excellent starting point.
+            Once your fiddle has grown up, export it as a project with or
+            without <a href="https://electronforge.io/">electron-forge</a>.
+            Then, use your favorite editor and take on the world!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section page-section-spacious bg-shade" id="get-started">
+    <div class="container text-center">
+      <h1>Get started</h1>
+      <p>
+        <a
+          id="download-latest-release"
+          class="btn btn-lg btn-outline-themed"
+          href="https://github.com/electron/fiddle/releases/latest"
+        >
+          <span class="octicon octicon-desktop-download mr-1"></span>
+          <span>{{{localized.download_from_github}}}</span>
+        </a>
+      </p>
+    </div>
+  </section>
+</div>

@@ -1,0 +1,24 @@
+.fiddle {
+  .f-app-frame {
+    img {
+      box-shadow: 0 25px 30px -18px rgba(0, 0, 0, 0.28);
+      border-radius: 2px;
+    }
+  }
+
+  .fiddle-icon {
+    width: 128px;
+    height: 128px;
+  }
+
+  .fiddle-strong {
+    font-size: 48px;
+    margin-bottom: 10px;
+    margin-top: -20px;
+    text-emphasis: strong;
+  }
+
+  .jumbotron .container {
+    background-image: none;
+  }
+}
