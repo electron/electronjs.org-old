@@ -155,4 +155,12 @@ describe('electronjs.org', () => {
       cy.get('.site-header-logo').contains('Electron')
     })
   })
+
+  describe('landing pages', () => {
+    // TODO(HashimotoYT): Add tests for Devtron and Spectron landing pages
+    it('Fiddle landing page', () => {
+      cy.visit(`${localhost}/fiddle`)
+      cy.get('.jumbotron-lead').contains('The easiest way to get started with Electron')
+    })
+  })
 })
