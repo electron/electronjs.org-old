@@ -11,7 +11,7 @@ available from [electronjs.org](https://electronjs.org/) and via `npm install el
 
 ## Release Process
 
-The [App Feedback Program](https://github.com/electron/electron/blob/3-0-x/docs/tutorial/app-feedback-program.md) we instituted during the development of Electron 3.0 was a huge success, so we continued the program for the 4.0 branch as well. We'd like to extend a massive thank you to Atlassian, Atom, Microsoft Teams, Oculus, OpenFin, Slack, Symphony, VS Code, and other program members for their involvement in this program during the 4.0 beta cycle. If you'd like to participate in future betas, please mail us at [info@electronjs.org](mailto:info@electronjs.org).
+The [App Feedback Program](https://github.com/electron/electron/blob/3-0-x/docs/tutorial/app-feedback-program.md) we instituted during the development of Electron 3.0 was successful, so we continued the program for the 4.0 branch as well. We'd like to extend a massive thank you to Atlassian, Atom, Microsoft Teams, Oculus, OpenFin, Slack, Symphony, VS Code, and other program members for their involvement in this program during the 4.0 beta cycle. If you'd like to participate in future betas, please mail us at [info@electronjs.org](mailto:info@electronjs.org).
 
 ## Deprecations
 
