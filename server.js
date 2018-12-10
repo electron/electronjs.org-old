@@ -32,7 +32,7 @@ app.engine('html', hbs.express4({
   layoutsDir: path.join(__dirname, '/views/layouts'),
   partialsDir: path.join(__dirname, '/views/partials'),
   onCompile: function (exhbs, source, filename) {
-    var options = {preventIndent: true}
+    var options = { preventIndent: true }
     return exhbs.handlebars.compile(source, options)
   }
 }))
