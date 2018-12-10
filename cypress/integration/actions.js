@@ -41,6 +41,12 @@ describe('electronjs.org', () => {
       cy.wait(500)
       cy.get('.app-meta-entry-downloads').should('not.be.visible')
     })
+
+    it('install command displayed for npmjs apps', () => {
+      cy.visit(`${localhost}/apps/timeseriesadmin`)
+      cy.wait(500)
+      cy.get('.app-meta-entry .shell-one-liner').contains('npm install -g')
+    })
   })
 
   describe('documentation page', () => {
