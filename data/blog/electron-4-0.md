@@ -4,7 +4,7 @@ author: BinaryMuse
 date: '2018-12-18'
 ---
 
-The Electron team is excited to announce that the stable release of Electron 4 is now available! Get it from [electronjs.org](https://electronjs.org/) or from npm via `npm install electron@latest`! The release is packed with upgrades, fixes, and new features, and we can't wait to see what you build with them. Read more for details about this release, and please share any feedback you have as you explore!
+The Electron team is excited to announce that the stable release of Electron 4 is now available! You can install it from [electronjs.org](https://electronjs.org/) or from npm via `npm install electron@latest`. The release is packed with upgrades, fixes, and new features, and we can't wait to see what you build with them. Read more for details about this release, and please share any feedback you have as you explore!
 
 ---
 
