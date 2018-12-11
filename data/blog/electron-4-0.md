@@ -22,6 +22,18 @@ Previously, to make your app a Single Instance Application (insuring that only o
 
 For an example of using `requestSingleInstanceLock()` and information on nuanced behavior on various platforms, [see the documentation for `app.requestSingleInstanceLock()` and related methods](https://electronjs.org/docs/api/app#apprequestsingleinstancelock) and [the `second-instance` event](https://electronjs.org/docs/api/app#event-second-instance).
 
+### `win_delay_load_hook`
+
+When building native modules for windows, the `win_delay_load_hook` variable in the module's `binding.gyp` must be true (which is the default). If this hook is not present, then the native module will fail to load on Windows, with an error message like `Cannot find module`. [See the native module guide](https://electronjs.org/docs/tutorial/using-native-node-modules#a-note-about-win_delay_load_hook) for more information.
+
+### Accessing `electron.screen` in Renderer Processes
+
+Instead of accessing the [screen module](https://electronjs.org/docs/api/screen) in a renderer process via `require('electron').screen`, you should use `require('electron').remote.screen`.
+
+### Accessing `require` in Sandboxed Renderer Processes
+
+If your renderer process is sandboxed, instead of requiring modules with `require('module')`, you should use `require('electron').remote.require('module')`.
+
 ## Deprecations
 
 The following breaking changes are planned for Electron 5.0, and thus are deprecated in Electron 4.0.
@@ -29,8 +41,6 @@ The following breaking changes are planned for Electron 5.0, and thus are deprec
 ### Node.js Integration Disabled for `nativeWindowOpen`-ed Windows
 
 Starting in Electron 5.0, child windows opened with the `nativeWindowOpen` option will always have Node.js integration disabled.
-
-TODO: what is the behavior in 4.0?
 
 ### `webPreferences` Default Values
 
