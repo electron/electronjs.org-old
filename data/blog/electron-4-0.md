@@ -42,7 +42,7 @@ When creating a new `BrowerWindow` with the `webPreferences` option set, the fol
 | `nodeIntegration` | `true` | `false` |
 | `webviewTag` | value of `nodeIntegration` if set, otherwise `true` | `false` |
 
-TODO: does Electron 4.0 still use the old default values and just warn you?
+Electron 4.0 will still use the current defaults, but if you don't pass an explicit value for them, you'll see a deprecation warning. To prepare your app for Electron 5.0, use explicit values for these options. [See the `BrowserWindow` docs](https://electronjs.org/docs/api/browser-window#new-browserwindowoptions) for details on each of these options.
 
 # App Feedback Program
 
