@@ -46,11 +46,15 @@ Starting in Electron 5.0, child windows opened with the `nativeWindowOpen` optio
 
 When creating a new `BrowerWindow` with the `webPreferences` option set, the following `webPreferences` option defaults are deprecated in favor of new defaults listed below:
 
+<div class="markdown-table-container">
+
 | Property | Deprecated Default | New Default |
 |----------|--------------------|-------------|
 | `contextIsolation` | `false` | `true` |
 | `nodeIntegration` | `true` | `false` |
 | `webviewTag` | value of `nodeIntegration` if set, otherwise `true` | `false` |
+
+</div>
 
 Electron 4.0 will still use the current defaults, but if you don't pass an explicit value for them, you'll see a deprecation warning. To prepare your app for Electron 5.0, use explicit values for these options. [See the `BrowserWindow` docs](https://electronjs.org/docs/api/browser-window#new-browserwindowoptions) for details on each of these options.
 
