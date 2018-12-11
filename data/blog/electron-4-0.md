@@ -10,9 +10,9 @@ The Electron team is excited to announce that the stable release of Electron 4 i
 
 # What's New?
 
-One area of focus for the Electron team is maintaining parity with the development cadences of Chromium, Node, and V8, which make up a large part of Electron's functionality, as much as possible. As such, Electron 4 features major version bumps to several core parts of Electron's toolchain, including Chromium `x.x.x`, Node `x.x.x`, and V8 `x.x.x`.
+A large part of Electron's functionality is provided by Chromium, Node.js, and V8, the core components that make up Electron. As such, a key goal for the Electron team is to keep up with changes to these projects as much as possible, allowing developers who build Electron apps to access new web and JavaScript features. To this end, Electron 4 features major version bumps to each of these components; Electron 4.0.0 includes Chromium `x.x.x`, Node `x.x.x`, and V8 `x.x.x`.
 
-You can find a summary of major changes in Electron 4 below; for the full list of changes, check out the [Electron v4.0.0 release notes](TODO_RELEASE_NOTES).
+In addition, Electron 4 includes changes to Electron-specific APIs. You can find a summary of the major changes in Electron 4 below; for the full list of changes, check out the [Electron v4.0.0 release notes](TODO_RELEASE_NOTES).
 
 ## Breaking Changes
 
