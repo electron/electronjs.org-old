@@ -54,6 +54,8 @@ When creating a new `BrowerWindow` with the `webPreferences` option set, the fol
 | `nodeIntegration` | `true` | `false` |
 | `webviewTag` | value of `nodeIntegration` if set, otherwise `true` | `false` |
 
+Please note: there is currently [a known bug (#9736)](https://github.com/electron/electron/issues/9736) that prevents the `webview` tag from working if `contextIsolation` is on. Keep an eye on the GitHub issue for up-to-date information!
+
 Learn more about context isolation, Node integration, and the `webview` tag in [the Electron security document](https://electronjs.org/docs/tutorial/security).
 
 </div>
