@@ -26,13 +26,37 @@ For an example of using `requestSingleInstanceLock()` and information on nuanced
 
 When building native modules for windows, the `win_delay_load_hook` variable in the module's `binding.gyp` must be true (which is the default). If this hook is not present, then the native module will fail to load on Windows, with an error message like `Cannot find module`. [See the native module guide](https://electronjs.org/docs/tutorial/using-native-node-modules#a-note-about-win_delay_load_hook) for more information.
 
-#### Accessing `electron.screen` in Renderer Processes
+#### Accessing Certain Modules from Sandboxed Renderer Processes
 
-Instead of accessing the [screen module](https://electronjs.org/docs/api/screen) in a renderer process via `require('electron').screen`, you should use `require('electron').remote.screen`.
+When using a sandboxed renderer process, the following modules are implemented using `remote.require`:
 
-#### Accessing `require` in Sandboxed Renderer Processes
+* `require('electron').screen`
+* `require('child_process')`
+* `require('fs')`
+* `require('os')`
+* `require('path')`
 
-If your renderer process is sandboxed, instead of requiring modules with `require('module')`, you should use `require('electron').remote.require('module')`.
+As a result, to use these modules in a sandboxed renderer process, you should explicitly require them via the `remote` module:
+
+```javascript
+// old
+require('electron').screen
+require('child_process')
+require('fs')
+require('os')
+require('path')
+
+// new
+require('electron').remote.screen
+require('electron').remote.require('child_process')
+require('electron').remote.require('fs')
+require('electron').remote.require('os')
+require('electron').remote.require('path')
+```
+
+Another approach is to only use them in the main process and broker all requests from the renderer process [via IPC](https://electronjs.org/docs/api/ipc-main).
+
+If you do use the `remote` approach, be sure to be aware of the performance and other implications from using the `remote` module. See [the documentation for the `remote` module](https://electronjs.org/docs/api/remote) for more information.
 
 ### Deprecations
 
