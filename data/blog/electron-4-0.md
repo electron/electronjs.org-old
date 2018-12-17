@@ -49,6 +49,10 @@ See [the `setBackgroundThrottling` documentation](TODO_URL_HERE) for more inform
 
 ### Breaking Changes
 
+#### No More macOS 10.9 Support
+
+Chromium no longer supports macOS 10.9 (OS X Mavericks), and as a result [Electron 4.0 and beyond does not support it either](https://github.com/electron/electron/pull/15357).
+
 #### Single Instance Locking
 
 Previously, to make your app a Single Instance Application (ensuring that only one instance of your app is running at any given time), you could use the `app.makeSingleInstance()` method. Starting in Electron 4.0, you must use `app.requestSingleInstanceLock()` instead. The return value of this method indicates whether or not this instance of your application successfully obtained the lock. If it failed to obtain the lock, you can assume that another instance of your application is already running with the lock and exit immediately.
