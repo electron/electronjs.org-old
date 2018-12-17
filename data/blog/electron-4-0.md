@@ -32,7 +32,7 @@ new BrowserWindow({
 
 See the [BrowserWindow](https://electronjs.org/docs/api/browser-window) and [`<webview>` Tag](https://electronjs.org/docs/api/webview-tag) documentation for more information.
 
-#### Filtering `remote.require()` / `remote.getGlobal()` requests
+### Filtering `remote.require()` / `remote.getGlobal()` requests
 
 TODO
 
@@ -51,31 +51,31 @@ win.webContents.setBackgroundThrottling(enableBackgroundThrottling)
 
 See [the `setBackgroundThrottling` documentation](TODO_URL_HERE) for more information.
 
-### Breaking Changes
+## Breaking Changes
 
-#### No More macOS 10.9 Support
+### No More macOS 10.9 Support
 
 Chromium no longer supports macOS 10.9 (OS X Mavericks), and as a result [Electron 4.0 and beyond does not support it either](https://github.com/electron/electron/pull/15357).
 
-#### Single Instance Locking
+### Single Instance Locking
 
 Previously, to make your app a Single Instance Application (ensuring that only one instance of your app is running at any given time), you could use the `app.makeSingleInstance()` method. Starting in Electron 4.0, you must use `app.requestSingleInstanceLock()` instead. The return value of this method indicates whether or not this instance of your application successfully obtained the lock. If it failed to obtain the lock, you can assume that another instance of your application is already running with the lock and exit immediately.
 
 For an example of using `requestSingleInstanceLock()` and information on nuanced behavior on various platforms, [see the documentation for `app.requestSingleInstanceLock()` and related methods](https://electronjs.org/docs/api/app#apprequestsingleinstancelock) and [the `second-instance` event](https://electronjs.org/docs/api/app#event-second-instance).
 
-#### `win_delay_load_hook`
+### `win_delay_load_hook`
 
 When building native modules for windows, the `win_delay_load_hook` variable in the module's `binding.gyp` must be true (which is the default). If this hook is not present, then the native module will fail to load on Windows, with an error message like `Cannot find module`. [See the native module guide](https://electronjs.org/docs/tutorial/using-native-node-modules#a-note-about-win_delay_load_hook) for more information.
 
-### Deprecations
+## Deprecations
 
 The following breaking changes are planned for Electron 5.0, and thus are deprecated in Electron 4.0.
 
-#### Node.js Integration Disabled for `nativeWindowOpen`-ed Windows
+### Node.js Integration Disabled for `nativeWindowOpen`-ed Windows
 
 Starting in Electron 5.0, child windows opened with the `nativeWindowOpen` option will always have Node.js integration disabled.
 
-#### `webPreferences` Default Values
+### `webPreferences` Default Values
 
 When creating a new `BrowerWindow` with the `webPreferences` option set, the following `webPreferences` option defaults are deprecated in favor of new defaults listed below:
 
