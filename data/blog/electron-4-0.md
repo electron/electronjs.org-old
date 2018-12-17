@@ -32,6 +32,10 @@ new BrowserWindow({
 
 See the [BrowserWindow](https://electronjs.org/docs/api/browser-window) and [`<webview>` Tag](https://electronjs.org/docs/api/webview-tag) documentation for more information.
 
+#### Filtering `remote.require()` / `remote.getGlobal()` requests
+
+TODO
+
 ### JavaScript Access to the About Panel
 
 On macOS, you can now call `app.showAboutPanel()` to programmatically show the About panel, just like clicking the menu item created via `{role: 'about'}`. See the [`showAboutPanel` documentation](TODO_URL_HERE) for more information
