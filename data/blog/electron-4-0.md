@@ -16,7 +16,7 @@ In addition, Electron 4 includes changes to Electron-specific APIs. You can find
 
 ### Disabling the `remote` Module
 
-You now have the ability to disable the `remote` module for security reasons. The module can be disabled for a `BrowserWindow` and for a `webview` tag:
+You now have the ability to disable the `remote` module for security reasons. The module can be disabled for `BrowserWindow`s and for `webview` tags:
 
 ```javascript
 // BrowserWindow
