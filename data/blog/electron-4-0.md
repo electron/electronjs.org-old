@@ -32,6 +32,21 @@ new BrowserWindow({
 
 See the [BrowserWindow](https://electronjs.org/docs/api/browser-window) and [`<webview>` Tag](https://electronjs.org/docs/api/webview-tag) documentation for more information.
 
+### JavaScript Access to the About Panel
+
+On macOS, you can now call `app.showAboutPanel()` to programmatically show the About panel, just like clicking the menu item created via `{role: 'about'}`. See the [`showAboutPanel` documentation](TODO_URL_HERE) for more information
+
+### Controlling `WebContents` Background Throttling
+
+`WebContents` instances now have a method `setBackgroundThrottling(allowed)` to enable or disable throttling of timers and animations when the page is backgrounded.
+
+```javascript
+let win = new BrowserWindow(...)
+win.webContents.setBackgroundThrottling(enableBackgroundThrottling)
+```
+
+See [the `setBackgroundThrottling` documentation](TODO_URL_HERE) for more information.
+
 ### Breaking Changes
 
 #### Single Instance Locking
