@@ -63,38 +63,6 @@ For an example of using `requestSingleInstanceLock()` and information on nuanced
 
 When building native modules for windows, the `win_delay_load_hook` variable in the module's `binding.gyp` must be true (which is the default). If this hook is not present, then the native module will fail to load on Windows, with an error message like `Cannot find module`. [See the native module guide](https://electronjs.org/docs/tutorial/using-native-node-modules#a-note-about-win_delay_load_hook) for more information.
 
-#### Accessing Certain Modules from Sandboxed Renderer Processes
-
-When using a sandboxed renderer process, Electron previously implemented the following modules via the `remote` module for you automatically:
-
-* `require('electron').screen`
-* `require('child_process')`
-* `require('fs')`
-* `require('os')`
-* `require('path')`
-
-Now that the `remote` module can be disabled, we no longer delegate those modules implicitly. Instead, to use these modules in a sandboxed renderer process, you should explicitly require them via the `remote` module:
-
-```javascript
-// old
-require('electron').screen
-require('child_process')
-require('fs')
-require('os')
-require('path')
-
-// new
-require('electron').remote.screen
-require('electron').remote.require('child_process')
-require('electron').remote.require('fs')
-require('electron').remote.require('os')
-require('electron').remote.require('path')
-```
-
-Another approach is to only use them in the main process and broker all requests from the renderer process yourself [via IPC](https://electronjs.org/docs/api/ipc-main).
-
-If you do use the `remote` approach, be sure to be aware of the performance and other implications from using the `remote` module. See [the documentation for the `remote` module](https://electronjs.org/docs/api/remote) for more information.
-
 ### Deprecations
 
 The following breaking changes are planned for Electron 5.0, and thus are deprecated in Electron 4.0.
