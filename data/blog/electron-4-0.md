@@ -14,6 +14,24 @@ A large part of Electron's functionality is provided by Chromium, Node.js, and V
 
 In addition, Electron 4 includes changes to Electron-specific APIs. You can find a summary of the major changes in Electron 4 below; for the full list of changes, check out the [Electron v4.0.0 release notes](TODO_RELEASE_NOTES).
 
+### Disabling the `remote` Module
+
+You now have the ability to disable the `remote` module for security reasons. The module can be disabled for a `BrowserWindow` and for a `webview` tag:
+
+```javascript
+// BrowserWindow
+new BrowserWindow({
+  webPreferences: {
+    enableRemoteModule: false
+  }
+})
+
+// webview tag
+<webview src="http://www.google.com/" enableremotemodule="false"></webview>
+```
+
+See the [BrowserWindow](https://electronjs.org/docs/api/browser-window) and [`<webview>` Tag](https://electronjs.org/docs/api/webview-tag) documentation for more information.
+
 ### Breaking Changes
 
 #### Single Instance Locking
