@@ -21,7 +21,7 @@
     "lint": "standard --fix"
   },
   "dependencies": {
-    "@babel/core": "^7.2.0",
+    "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.2.0",
     "awesome-electron": "2.6.0",
     "babelify": "^10.0.0",
