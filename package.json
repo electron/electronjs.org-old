@@ -45,7 +45,7 @@
     "electron-releases": "^3.23.0",
     "electron-userland-reports": "1.6.0",
     "express": "^4.16.2",
-    "express-hbs": "^1.0.4",
+    "express-hbs": "^2.0.0",
     "express-request-language": "^1.1.15",
     "fast-memoize": "^2.5.1",
     "feed": "^2.0.2",
