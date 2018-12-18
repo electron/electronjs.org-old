@@ -25,8 +25,6 @@ We've published new versions of Electron which include fixes for this vulnerabil
 
 There are no reports of this in the wild; however, affected applications are urged to mitigate. The SQLite vulnerability is executed in Electron's main process, not the renderer process, so Electron's sandboxing will not safeguard against Magellan.
 
-TODO: discussion of downgrading back from 2.0.16, if we decide to go with backporting all the hardening diffs rather than the single fix
-
 ## Further Information
 
 This vulnerability was discovered by the Tencent Blade team, who have published [a blog post that discusses the vulnerability](https://blade.tencent.com/magellan/index_en.html).
