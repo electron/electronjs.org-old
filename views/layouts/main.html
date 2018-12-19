@@ -13,6 +13,15 @@
     <div id="refinement-list"></div>
     {{> footer}}
     {{> anchor_links}}
+    <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then(function(registrations) {
+        for(let registration of registrations) {
+          registration.unregister()
+        }
+      })
+    }
+    </script>
     <script src="/scripts/index.js"></script>
   </body>
 </html>
