@@ -32,9 +32,44 @@ new BrowserWindow({
 
 See the [BrowserWindow](https://electronjs.org/docs/api/browser-window) and [`<webview>` Tag](https://electronjs.org/docs/api/webview-tag) documentation for more information.
 
-### Filtering `remote.require()` / `remote.getGlobal()` requests
+### Filtering `remote.require()` / `remote.getGlobal()` Requests
 
-TODO
+This feature is useful if you don't want to completely disable the `remote` module in your renderer process or `webview` but would like additional control over which modules can be required via `remote.require`.
+
+When a module is required via `remote.require` in a renderer process, a `remote-require` event is raised on the [`app` module](https://electronjs.org/docs/api/app). You can call `event.preventDefault()` on the the event argument (the first argument) to prevent the module from being loaded. The [`WebContents` instance](https://electronjs.org/docs/api/web-contents) where the require occurred is passed as the second argument, and the name of the module is passed as the third argument. The same event is also emitted on the `WebContents` instance, but in this case the only arguments are the event and the module name. In both cases, you can return a custom value by setting the value of `event.returnValue`.
+
+```javascript
+// Control `remote.require` from all WebContents:
+app.on('remote-require', function (event, webContents, requestedModuleName) {
+  // ...
+})
+
+// Control `remote.require` from a specific WebContents instance:
+myInsecureBrowserWindow.webContents.on('remote-require', function (event, requestedModuleName) {
+  // ...
+})
+```
+
+In a similar fashion, when `remote.getGlobal(name)` is called, a `remote-get-global` event is raised. This works the same way as the `remote-require` event: call `preventDefault()` to prevent the global from being returned, and set `event.returnValue` to return a custom value.
+
+```javascript
+// Control `remote.getGlobal` from all WebContents:
+app.on('remote-get-global', function (event, webContents, requrestedGlobalName) {
+  // ...
+})
+
+// Control `remote.getGlobal` from a specific WebContents instance:
+myInsecureBrowserWindow.webContents.on('remote-get-global', function (event, requestedGlobalName) {
+  // ...
+})
+```
+
+For more information, see the following documentation:
+
+* [`remote.require`](https://electronjs.org/docs/api/remote#remoterequiremodule)
+* [`remote.getGlobal`](https://electronjs.org/docs/api/remote#remotegetglobalname)
+* [`app`](https://electronjs.org/docs/api/app)
+* [`WebContents`](https://electronjs.org/docs/api/web-contents)
 
 ### JavaScript Access to the About Panel
 
