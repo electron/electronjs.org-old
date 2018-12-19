@@ -45,7 +45,7 @@ app.on('remote-require', function (event, webContents, requestedModuleName) {
 })
 
 // Control `remote.require` from a specific WebContents instance:
-myInsecureBrowserWindow.webContents.on('remote-require', function (event, requestedModuleName) {
+browserWin.webContents.on('remote-require', function (event, requestedModuleName) {
   // ...
 })
 ```
@@ -59,7 +59,7 @@ app.on('remote-get-global', function (event, webContents, requrestedGlobalName) 
 })
 
 // Control `remote.getGlobal` from a specific WebContents instance:
-myInsecureBrowserWindow.webContents.on('remote-get-global', function (event, requestedGlobalName) {
+browserWin.webContents.on('remote-get-global', function (event, requestedGlobalName) {
   // ...
 })
 ```
