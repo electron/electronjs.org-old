@@ -1,5 +1,5 @@
 ---
-title:  WebPreferences Vulnerability Fix
+title:  SQLite Vulnerability Fix
 author: ckerr
 date: '2018-12-18'
 ---
