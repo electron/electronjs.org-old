@@ -23,7 +23,7 @@ We've published new versions of Electron which include fixes for this vulnerabil
   * [3.0.13](https://github.com/electron/electron/releases/tag/v3.0.13)
   * [2.0.16](https://github.com/electron/electron/releases/tag/v2.0.16)
 
-There are no reports of this in the wild; however, affected applications are urged to mitigate. The SQLite vulnerability is executed in Electron's main process, not the renderer process, so Electron's sandboxing will not safeguard against Magellan.
+There are no reports of this in the wild; however, affected applications are urged to mitigate.
 
 ## Further Information
 
