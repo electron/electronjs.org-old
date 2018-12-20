@@ -51,7 +51,6 @@ For more info about how this site works and how to contribute, see
 - [Frontend JavaScript](CONTRIBUTING.md#frontend-javascript)
 - [Scripts](CONTRIBUTING.md#scripts)
 - [Environment Variables](CONTRIBUTING.md#environment-variables)
-- [Service Workers](CONTRIBUTING.md#service-workers)
 
 ## License
 
