@@ -73,7 +73,7 @@ For more information, see the following documentation:
 
 ### JavaScript Access to the About Panel
 
-On macOS, you can now call `app.showAboutPanel()` to programmatically show the About panel, just like clicking the menu item created via `{role: 'about'}`. See the [`showAboutPanel` documentation](TODO_URL_HERE) for more information
+On macOS, you can now call `app.showAboutPanel()` to programmatically show the About panel, just like clicking the menu item created via `{role: 'about'}`. See the [`showAboutPanel` documentation](https://electronjs.org/docs/api/app?query=show#appshowaboutpanel-macos) for more information
 
 ### Controlling `WebContents` Background Throttling
 
@@ -84,7 +84,7 @@ let win = new BrowserWindow(...)
 win.webContents.setBackgroundThrottling(enableBackgroundThrottling)
 ```
 
-See [the `setBackgroundThrottling` documentation](TODO_URL_HERE) for more information.
+See [the `setBackgroundThrottling` documentation](https://electronjs.org/docs/api/web-contents#contentssetbackgroundthrottlingallowed) for more information.
 
 ## Breaking Changes
 
