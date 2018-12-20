@@ -12,7 +12,7 @@ The Electron team is excited to announce that the stable release of Electron 4 i
 
 A large part of Electron's functionality is provided by Chromium, Node.js, and V8, the core components that make up Electron. As such, a key goal for the Electron team is to keep up with changes to these projects as much as possible, providing developers who build Electron apps access to new web and JavaScript features. To this end, Electron 4 features major version bumps to each of these components; Electron v4.0.0 includes Chromium `69.0.3497.106`, Node `10.11.0`, and V8 `6.9.427.24`.
 
-In addition, Electron 4 includes changes to Electron-specific APIs. You can find a summary of the major changes in Electron 4 below; for the full list of changes, check out the [Electron v4.0.0 release notes](TODO_RELEASE_NOTES).
+In addition, Electron 4 includes changes to Electron-specific APIs. You can find a summary of the major changes in Electron 4 below; for the full list of changes, check out the [Electron v4.0.0 release notes](https://github.com/electron/electron/releases/tag/v4.0.0).
 
 ### Disabling the `remote` Module
 
