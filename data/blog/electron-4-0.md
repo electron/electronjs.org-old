@@ -36,7 +36,7 @@ See the [BrowserWindow](https://electronjs.org/docs/api/browser-window) and [`<w
 
 This feature is useful if you don't want to completely disable the `remote` module in your renderer process or `webview` but would like additional control over which modules can be required via `remote.require`.
 
-When a module is required via `remote.require` in a renderer process, a `remote-require` event is raised on the [`app` module](https://electronjs.org/docs/api/app). You can call `event.preventDefault()` on the the event argument (the first argument) to prevent the module from being loaded. The [`WebContents` instance](https://electronjs.org/docs/api/web-contents) where the require occurred is passed as the second argument, and the name of the module is passed as the third argument. The same event is also emitted on the `WebContents` instance, but in this case the only arguments are the event and the module name. In both cases, you can return a custom value by setting the value of `event.returnValue`.
+When a module is required via `remote.require` in a renderer process, a `remote-require` event is raised on the [`app` module](https://electronjs.org/docs/api/app). You can call `event.preventDefault()` on the the event (the first argument) to prevent the module from being loaded. The [`WebContents` instance](https://electronjs.org/docs/api/web-contents) where the require occurred is passed as the second argument, and the name of the module is passed as the third argument. The same event is also emitted on the `WebContents` instance, but in this case the only arguments are the event and the module name. In both cases, you can return a custom value by setting the value of `event.returnValue`.
 
 ```javascript
 // Control `remote.require` from all WebContents:
