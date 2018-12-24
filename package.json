@@ -89,7 +89,7 @@
     "check-for-leaks": "^1.2.0",
     "cheerio": "^1.0.0-rc.1",
     "cypress": "^3.1.3",
-    "husky": "^1.2.0",
+    "husky": "^1.2.1",
     "mocha": "^5.0.0",
     "nock": "^10.0.4",
     "nodemon": "^1.18.7",
