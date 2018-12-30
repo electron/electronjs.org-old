@@ -50,7 +50,7 @@
     "fast-memoize": "^2.5.1",
     "feed": "^2.0.2",
     "flat": "^4.1.0",
-    "got": "^9.4.0",
+    "got": "^9.5.0",
     "helmet": "^3.15.0",
     "href-type": "^1.0.1",
     "http-proxy-middleware": "^0.19.1",
