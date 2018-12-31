@@ -98,7 +98,7 @@
     "supertest": "^3.3.0",
     "supertest-session": "^3.3.0",
     "wait-on": "^3.1.0",
-    "walk-sync": "^1.0.0"
+    "walk-sync": "^1.0.1"
   },
   "engines": {
     "node": "8"
