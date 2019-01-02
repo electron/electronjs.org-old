@@ -1,9 +1,15 @@
 const ClipboardJS = require('clipboard')
-const clipboard = new ClipboardJS('.btn-clipboard')
-
-clipboard.on('success', (e) => {
-  e.clearSelection()
+const clipboard = new ClipboardJS('.btn-clipboard', {
+  // strip leading console $ from copied codeblocks
+  text: trigger => {
+    const codeBlockID = trigger.getAttribute('data-clipboard-target').substr(1)
+    let codeBlock = document.getElementById(codeBlockID).textContent
+    
+    return codeBlock.replace(/^\$\W*/gm, '')
+  }
 })
+
+clipboard.on('success', e => e.clearSelection())
 
 module.exports = function copyCodeToClipBoard () {
   document.querySelectorAll(`code.hljs`).forEach(code => {
@@ -18,11 +24,11 @@ module.exports = function copyCodeToClipBoard () {
   })
 
   document.querySelectorAll('.btn-clipboard').forEach(button => {
-    button.addEventListener('mouseout', function (e) {
+    button.addEventListener('mouseout', e => {
       e.target.setAttribute('data-tooltip', window.localized.clipboard.copy_to_clipboard)
       e.target.blur()
     })
-    button.addEventListener('click', function (e) {
+    button.addEventListener('click', e => {
       e.target.setAttribute('data-tooltip', window.localized.clipboard.copied)
     })
   })
