@@ -112,7 +112,7 @@ Starting in Electron 5.0, child windows opened with the `nativeWindowOpen` optio
 
 ### `webPreferences` Default Values
 
-When creating a new `BrowerWindow` with the `webPreferences` option set, the following `webPreferences` option defaults are deprecated in favor of new defaults listed below:
+When creating a new `BrowserWindow` with the `webPreferences` option set, the following `webPreferences` option defaults are deprecated in favor of new defaults listed below:
 
 <div class="table table-ruled table-full-width">
 
