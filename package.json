@@ -68,7 +68,7 @@
     "parse-link-header": "^1.0.1",
     "platform-utils": "^1.1.0",
     "pluralize": "^7.0.0",
-    "primer-breadcrumb": "1.5.7",
+    "primer-breadcrumb": "1.5.8",
     "proxyquire": "^2.1.0",
     "query-string": "^6.2.0",
     "require-dir": "^1.1.0",
