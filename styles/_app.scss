@@ -91,6 +91,11 @@
         overflow: auto;
       }
 
+      &-downloads {
+        overflow: auto;
+        white-space: normal;
+      }
+
       @include breakpoint(sm) {
         width: 50%;
       }
