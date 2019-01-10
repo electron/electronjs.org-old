@@ -36,7 +36,7 @@ $octicons-font-path: "../bower_components/octicons/octicons/";
 // @import "../bower_components/primer-css/scss/tabnav";
 @import "../bower_components/primer-css/scss/filter-list";
 // @import "../bower_components/primer-css/scss/states";
-// @import "../bower_components/primer-css/scss/tooltips";
+@import "../bower_components/primer-css/scss/tooltips";
 
 // @import "../bower_components/basecoat/scss/animation";
 // @import "../bower_components/basecoat/scss/cards";
@@ -51,9 +51,6 @@ $octicons-font-path: "../bower_components/octicons/octicons/";
 // @import "../bower_components/primer-css/scss/truncate";
 @import "../bower_components/primer-css/scss/utilities/utilities";
 @import "../bower_components/basecoat/scss/utility"; // Basecoat override
-
-// Tooltip
-@import "../bower_components/simptip.min.css";
 
 // Electron -----------------------------------
 

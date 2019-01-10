@@ -58,10 +58,6 @@ community:
       <a href='https://discuss.atom.io/c/electron'>Discuss</a>,
       or visiting
       <a href='https://stackoverflow.com/questions/tagged/electron'>Stack Overflow</a>."
-    packages:
-      "<a href='/search/npmPackages'><b>Find useful npm packages</b></a>
-      on the
-      <a href='/search/npmPackages'>package search page</a>."
     bugs:
       "<a href='https://github.com/electron/electron/issues'><b>Report bugs</b></a>
       by opening issues on the
