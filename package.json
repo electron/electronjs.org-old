@@ -65,6 +65,7 @@
     "mkdirp": "^0.5.1",
     "nanohtml": "^1.4.0",
     "node-sass-middleware": "^0.11.0",
+    "paginate-array": "^2.1.0",
     "parse-link-header": "^1.0.1",
     "platform-utils": "^1.1.0",
     "pluralize": "^7.0.0",
@@ -79,7 +80,8 @@
     "search-with-your-keyboard": "^1.1.0",
     "semver": "^5.5.1",
     "set-query-string": "^2.2.0",
-    "ua-parser-js": "^0.7.19"
+    "ua-parser-js": "^0.7.19",
+    "ultimate-pagination": "^1.0.0"
   },
   "devDependencies": {
     "browser-sync": "^2.26.3",
