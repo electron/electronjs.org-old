@@ -21,8 +21,8 @@ $ ./node_modules/.bin/electron .</code></pre>
       {{#each releases}}
         <h2 id="{{this.version}}">
           <a href="#{{this.version}}">Electron {{this.version}}</a>
-          <em data-date="{{this.created_at}}" data-format="%B %d, %Y">{{this.created_at}}</em>
-          <em class="ltr-only">(<span data-date="{{this.created_at}}"></span>)</em>
+          <em data-date="{{this.published_at}}" data-format="%B %d, %Y">{{this.published_at}}</em>
+          <em class="ltr-only">(<span data-date="{{this.published_at}}"></span>)</em>
           <a href="{{this.html_url}}" class="octicon-wrapper"><span class="octicon octicon-mark-github vertical-middle"></span></a>
         </h2>
 
