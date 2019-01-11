@@ -17,8 +17,15 @@ $ ./node_modules/.bin/electron .</code></pre>
 
     <hr> -->
 
+    <div class="text-center release-types">
+      <a class="{{#eq releasesPage.type 'normal'}}active{{/eq}}" href="/releases?type=normal"><span class="octicon octicon-clock mr-1"></span> {{localized.releases.regular_releases}}</a>
+      <a class="ml-6 {{#eq releasesPage.type 'nightly'}}active{{/eq}}" href="/releases?type=nightly"><span class="octicon octicon-calendar mr-1"></span> {{localized.releases.nightly_releases}}</a>
+    </div>
+
+    <hr>
+
     <div class="releases">
-      {{#each releases}}
+      {{#each releasesPage.page.data}}
         <h2 id="{{this.version}}">
           <a href="#{{this.version}}">Electron {{this.version}}</a>
           <em data-date="{{this.published_at}}" data-format="%B %d, %Y">{{this.published_at}}</em>
@@ -31,6 +38,25 @@ $ ./node_modules/.bin/electron .</code></pre>
         <hr>
       {{/each}}
     </div>
+
+    <nav class="paginate-container" aria-label="Pagination">
+      <div class="pagination text-center">
+        {{#each releasesPage.pagination}}
+          {{#eq this.type "NEXT_PAGE_LINK"}}
+            <a class="next_page" rel="next" href="/releases?{{this.query}}" aria-label="Next Page">Next</a>
+          {{/eq}}
+          {{#eq this.type "PREVIOUS_PAGE_LINK"}}
+            <a class="previous_page" rel="previous" href="/releases?{{this.query}}" aria-label="Previous Page">Previous</a>
+          {{/eq}}
+          {{#eq this.type "PAGE"}}
+            <a href="/releases?{{this.query}}" aria-label="Page {{this.value}}" class="{{#if this.isActive}}current selected{{/if}}">{{this.value}}</a>
+          {{/eq}}
+          {{#eq this.type "ELLIPSIS"}}
+            <span class="gap">…</span>
+          {{/eq}}
+        {{/each}}
+      </div>
+    </nav>
 
     <div class="text-center">
       <a href="https://github.com/electron/electron/releases"><span class="octicon octicon-tag mr-1"></span>{{localized.releases.all_releases}}</a>

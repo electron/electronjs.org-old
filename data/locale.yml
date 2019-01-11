@@ -105,6 +105,8 @@ community:
     <a href="https://github.com/electron/electronjs.org/tree/master/data/meetups.json">make a pull request</a>.
 
 releases:
+  regular_releases: Regular Releases
+  nightly_releases: Nightly Releases
   title: Electron Releases
   all_releases: All Releases
   back_to_index: Back to index

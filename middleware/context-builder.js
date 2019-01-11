@@ -53,7 +53,6 @@ module.exports = function contextBuilder (req, res, next) {
     electronLatestStableTag: i18n.electronLatestStableTag,
     electronMasterBranchCommit: i18n.electronMasterBranchCommit,
     electronMasterBranchCommitShort: i18n.electronMasterBranchCommit.slice(0, 6),
-    releases: releases,
     deps: deps,
     currentLocale: req.language,
     currentLocaleNativeName: getLanguageNativeName(req.language),
