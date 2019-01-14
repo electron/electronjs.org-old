@@ -54,6 +54,7 @@ module.exports = function contextBuilder (req, res, next) {
     electronMasterBranchCommit: i18n.electronMasterBranchCommit,
     electronMasterBranchCommitShort: i18n.electronMasterBranchCommit.slice(0, 6),
     deps: deps,
+    releases: releases,
     currentLocale: req.language,
     currentLocaleNativeName: getLanguageNativeName(req.language),
     languageDirection: rtlDetect.getLangDir(req.language),
