@@ -18,8 +18,9 @@ $ ./node_modules/.bin/electron .</code></pre>
     <hr> -->
 
     <div class="text-center release-types">
-      <a class="{{#eq releasesPage.type 'normal'}}active{{/eq}}" href="/releases?type=normal"><span class="octicon octicon-clock mr-1"></span> {{localized.releases.regular_releases}}</a>
-      <a class="ml-6 {{#eq releasesPage.type 'nightly'}}active{{/eq}}" href="/releases?type=nightly"><span class="octicon octicon-calendar mr-1"></span> {{localized.releases.nightly_releases}}</a>
+      <a class="{{#eq releasesPage.type 'stable'}}active{{/eq}}" href="/releases/stable"><span class="octicon octicon-clock mr-1"></span> {{localized.releases.stable_releases}}</a>
+      <a class="ml-6 {{#eq releasesPage.type 'beta'}}active{{/eq}}" href="/releases/beta"><span class="octicon octicon-zap mr-1"></span> {{localized.releases.beta_releases}}</a>
+      <a class="ml-6 {{#eq releasesPage.type 'nightly'}}active{{/eq}}" href="/releases/nightly"><span class="octicon octicon-calendar mr-1"></span> {{localized.releases.nightly_releases}}</a>
     </div>
 
     <hr>

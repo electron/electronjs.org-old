@@ -49,18 +49,21 @@ class ReleasesPage {
   }
 }
 
-module.exports = (req, res) => {
-  let releasesType = 'stable'
-  let selectedReleases = stableReleases
-  if (req.query.type === 'nightly') {
-    releasesType = 'nightly'
-    selectedReleases = nightlyReleases
-  } else if (req.query.type === 'beta') {
-    releasesType = 'beta'
-    selectedReleases = betaReleases
-  }
+module.exports = (type) => {
+  return (req, res) => {
+    let selectedReleases = null
+    if (type === 'stable') {
+      selectedReleases = stableReleases
+    } else if (type === 'nightly') {
+      selectedReleases = nightlyReleases
+    } else if (type === 'beta') {
+      selectedReleases = betaReleases
+    } else {
+      throw new Error(`Invalid releases type ${type}`)
+    }
 
-  res.render('releases', Object.assign({}, req.context, {
-    releasesPage: new ReleasesPage(releasesType, selectedReleases, req.query)
-  }))
+    res.render('releases', Object.assign({}, req.context, {
+      releasesPage: new ReleasesPage(type, selectedReleases, req.query)
+    }))
+  }
 }
