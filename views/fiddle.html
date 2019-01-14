@@ -1,0 +1,102 @@
+<div class="fiddle">
+  <div class="jumbotron text-center">
+    <div class="container">
+      <img
+        class="mb-4 mb-lg-6 fiddle-icon"
+        src="{{ site.baseurl }}/images/fiddle/fiddle-icon.svg"
+        alt="Electron Fiddle Icon"
+      />
+      <p>
+        <img src="{{ site.baseurl }}/images/fiddle/fiddle-logo.svg" alt="Electron Fiddle">
+      </p>
+      <p class="jumbotron-lead">
+        <span class="jumbotron-lead-muted">{{localized.landing.fiddle.lead_desc}}</span>
+      </p>
+    </div>
+  </div>
+
+  <section class="page-section page-section-spacious">
+    <div class="docs-container-xl">
+      <h1 class="text-center-sm">{{localized.landing.fiddle.create_app}}</h1>
+      <p class="lead text-center-sm">
+        {{localized.landing.fiddle.description}}
+      </p>
+
+      <div class="row mt-4 mt-sm-8">
+        <div class="col-xs-12 col-md-6 text-left mb-4">
+          <h2>{{localized.landing.fiddle.explore}}</h2>
+          <p>{{localized.landing.fiddle.explore_desc}}</p>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div class="f-app-frame">
+            <img
+              alt="Screenshot of Electron Fiddle"
+              src="{{ site.baseurl }}/images/fiddle/explore-electron.png"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-8">
+        <div class="col-xs-12 col-md-6 mb-4">
+          <div class="f-app-frame">
+            <img
+              alt="Screenshot of Electron Fiddle Editor"
+              src="{{ site.baseurl }}/images/fiddle/code-with-types.png"
+            />
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-6 text-left">
+          <h2>{{localized.landing.fiddle.code_with_types}}</h2>
+          <p>{{localized.landing.fiddle.code_with_types_desc}}</p>
+        </div>
+      </div>
+
+      <div class="row mt-8">
+        <div class="col-xs-12 col-md-6 text-left mb-4">
+          <h2>{{localized.landing.fiddle.compile_and_package}}</h2>
+          <p>{{{localized.landing.fiddle.compile_and_package_desc}}}</p>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div class="f-app-frame">
+            <img
+              alt="Screenshot of Electron Fiddle Compile And Package Menu"
+              src="{{ site.baseurl }}/images/fiddle/compile-and-package.png"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-8">
+        <div class="col-xs-12 col-md-6 mb-4">
+          <div class="f-app-frame">
+            <img
+              alt="Screenshot of Electron Fiddle Starting Point"
+              src="{{ site.baseurl }}/images/fiddle/easy-start.png"
+            />
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-6 text-left">
+          <h2>{{localized.landing.fiddle.easy_start}}</h2>
+          <p>{{{localized.landing.fiddle.easy_start_desc}}}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section page-section-spacious bg-shade" id="get-started">
+    <div class="container text-center">
+      <h1>{{localized.landing.get_started}}</h1>
+      <p>
+        <a
+          id="download-latest-release"
+          class="btn btn-lg btn-outline-themed"
+          href="https://github.com/electron/fiddle/releases/latest"
+        >
+          <span class="octicon octicon-desktop-download mr-1"></span>
+          <span>{{{localized.download_from_github}}}</span>
+        </a>
+      </p>
+    </div>
+  </section>
+</div>
