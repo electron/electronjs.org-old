@@ -1,6 +1,5 @@
 const querystring = require('querystring')
 const releases = require('electron-releases')
-const { partition } = require('lodash')
 const semver = require('semver')
 const pagination = require('ultimate-pagination')
 const paginator = require('paginate-array')
