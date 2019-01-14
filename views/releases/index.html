@@ -43,13 +43,21 @@ $ ./node_modules/.bin/electron .</code></pre>
       <div class="pagination text-center">
         {{#each releasesPage.pagination}}
           {{#eq this.type "NEXT_PAGE_LINK"}}
-            <a class="next_page" rel="next" href="/releases?{{this.query}}" aria-label="{{@root/localized.releases.next_page}}">{{@root/localized.releases.next}}</a>
+            {{#if this.isActive}}
+              <span class="next_page disabled" rel="next" aria-label="{{@root/localized.releases.next_page}}">{{@root/localized.releases.next}}</span>
+            {{else}}
+              <a class="next_page" rel="next" href="?{{this.query}}" aria-label="{{@root/localized.releases.next_page}}">{{@root/localized.releases.next}}</a>
+            {{/if}}
           {{/eq}}
           {{#eq this.type "PREVIOUS_PAGE_LINK"}}
-            <a class="previous_page" rel="previous" href="/releases?{{this.query}}" aria-label="{{@root/localized.releases.previous_page}}">{{@root/localized.releases.previous}}</a>
+            {{#if this.isActive}}
+              <span class="previous_page disabled" rel="previous" aria-label="{{@root/localized.releases.previous_page}}">{{@root/localized.releases.previous}}</span>
+            {{else}}
+              <a class="previous_page" rel="previous" href="?{{this.query}}" aria-label="{{@root/localized.releases.previous_page}}">{{@root/localized.releases.previous}}</a>
+            {{/if}}
           {{/eq}}
           {{#eq this.type "PAGE"}}
-            <a href="/releases?{{this.query}}" aria-label="{{@root/localized.releases.page}} {{this.value}}" class="{{#if this.isActive}}current selected{{/if}}">{{this.value}}</a>
+            <a href="?{{this.query}}" aria-label="{{@root/localized.releases.page}} {{this.value}}" class="{{#if this.isActive}}current selected{{/if}}">{{this.value}}</a>
           {{/eq}}
           {{#eq this.type "ELLIPSIS"}}
             <span class="gap">…</span>
