@@ -362,6 +362,13 @@ describe('electronjs.org', () => {
     })
   })
 
+  describe('electron fiddle', async () => {
+    test('Fiddle landing page existed', async () => {
+      const $ = await get('/fiddle')
+      $('.jumbotron-lead .jumbotron-lead-muted').text().should.eq('The easiest way to get started with Electron')
+    })
+  })
+
   describe('languages', () => {
     test('/languages', async () => {
       const $ = await get('/languages')

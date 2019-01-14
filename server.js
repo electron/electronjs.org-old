@@ -32,7 +32,7 @@ app.engine('html', hbs.express4({
   layoutsDir: path.join(__dirname, '/views/layouts'),
   partialsDir: path.join(__dirname, '/views/partials'),
   onCompile: function (exhbs, source, filename) {
-    var options = {preventIndent: true}
+    var options = { preventIndent: true }
     return exhbs.handlebars.compile(source, options)
   }
 }))
@@ -90,6 +90,7 @@ app.get('/maintainers/join', (req, res) => res.redirect('https://goo.gl/FJmZZm')
 app.get('/pulls', (req, res) => res.redirect(301, 'https://github.com/electron/electronjs.org/pulls'))
 app.get('/releases', routes.releases.index)
 app.get('/spectron', routes.spectron)
+app.get('/fiddle', routes.fiddle)
 app.get('/userland', routes.userland.index)
 app.get('/userland/*', routes.userland.show)
 app.use('/crowdin', routes.languages.proxy)
