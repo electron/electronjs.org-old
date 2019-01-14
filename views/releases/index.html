@@ -18,16 +18,16 @@ $ ./node_modules/.bin/electron .</code></pre>
     <hr> -->
 
     <div class="text-center release-types">
-      <a class="{{#eq releasesPage.type 'stable'}}active{{/eq}}" href="/releases/stable"><span class="octicon octicon-clock mr-1"></span> {{localized.releases.stable_releases}}</a>
-      <a class="ml-6 {{#eq releasesPage.type 'beta'}}active{{/eq}}" href="/releases/beta"><span class="octicon octicon-zap mr-1"></span> {{localized.releases.beta_releases}}</a>
-      <a class="ml-6 {{#eq releasesPage.type 'nightly'}}active{{/eq}}" href="/releases/nightly"><span class="octicon octicon-calendar mr-1"></span> {{localized.releases.nightly_releases}}</a>
+      <a class="releases-link-stable {{#eq releasesPage.type 'stable'}}active{{/eq}}" href="/releases/stable"><span class="octicon octicon-clock mr-1"></span> {{localized.releases.stable_releases}}</a>
+      <a class="ml-6 releases-link-beta {{#eq releasesPage.type 'beta'}}active{{/eq}}" href="/releases/beta"><span class="octicon octicon-zap mr-1"></span> {{localized.releases.beta_releases}}</a>
+      <a class="ml-6 releases-link-nightly {{#eq releasesPage.type 'nightly'}}active{{/eq}}" href="/releases/nightly"><span class="octicon octicon-calendar mr-1"></span> {{localized.releases.nightly_releases}}</a>
     </div>
 
     <hr>
 
     <div class="releases">
       {{#each releasesPage.page.data}}
-        <h2 id="{{this.version}}">
+        <h2 class="release-entry" id="{{this.version}}">
           <a href="#{{this.version}}">Electron {{this.version}}</a>
           <em data-date="{{this.published_at}}" data-format="%B %d, %Y">{{this.published_at}}</em>
           <em class="ltr-only">(<span data-date="{{this.published_at}}"></span>)</em>
@@ -58,7 +58,7 @@ $ ./node_modules/.bin/electron .</code></pre>
             {{/if}}
           {{/eq}}
           {{#eq this.type "PAGE"}}
-            <a href="?{{this.query}}" aria-label="{{@root/localized.releases.page}} {{this.value}}" class="{{#if this.isActive}}current selected{{/if}}">{{this.value}}</a>
+            <a href="?{{this.query}}" aria-label="{{@root/localized.releases.page}} {{this.value}}" class="page-link {{#if this.isActive}}current selected{{/if}}">{{this.value}}</a>
           {{/eq}}
           {{#eq this.type "ELLIPSIS"}}
             <span class="gap">…</span>

@@ -276,21 +276,40 @@ describe('electronjs.org', () => {
   })
 
   describe('releases', () => {
-    test('/releases', async () => {
-      const $ = await get('/releases')
+    test('/releases/stable', async () => {
+      const $ = await get('/releases/stable')
       $('h1').text().should.include('Releases')
-      $('h2').length.should.be.above(35)
+      $('.release-entry').length.should.eq(5)
+      $('a.releases-link-stable').hasClass('active').should.eq(true)
+      const pages = $('.paginate-container .page-link').last()
+      const lastPage = parseInt(pages.text().trim(), 10)
+      lastPage.should.be.gt(50)
 
-      const titles = $('h2 a').map((i, el) => $(el).text().trim()).get()
-      titles.should.include('Electron 1.7.9')
-      titles.should.include('Electron 1.6.7')
-      titles.should.include('Electron 0.37.8')
+      const titles = $('.release-entry').map((i, el) => $(el).text().trim()).get()
+      titles.forEach(title => {
+        title.should.match(/Electron \d+\.\d+\.\d/)
+      })
     })
 
-    test('/docs/versions redirects to /releases', async () => {
+    test('/releases/beta', async () => {
+      const $ = await get('/releases/beta')
+      $('h1').text().should.include('Releases')
+      $('.release-entry').length.should.eq(5)
+      $('a.releases-link-beta').hasClass('active').should.eq(true)
+      const pages = $('.paginate-container .page-link').last()
+      const lastPage = parseInt(pages.text().trim(), 10)
+      lastPage.should.be.gt(5)
+
+      const titles = $('.release-entry').map((i, el) => $(el).text().trim()).get()
+      titles.forEach(title => {
+        title.should.match(/Electron \d+\.\d+\.\d+-beta\.\d+/)
+      })
+    })
+
+    test('/docs/versions redirects to /releases/stable', async () => {
       const res = await supertest(app).get('/docs/versions')
       res.statusCode.should.be.equal(301)
-      res.headers.location.should.equal('/releases')
+      res.headers.location.should.equal('/releases/stable')
     })
   })
 
