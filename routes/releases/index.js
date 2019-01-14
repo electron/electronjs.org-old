@@ -15,7 +15,20 @@ function toNumber (value, defaultValue) {
 }
 
 const isNightly = release => semver.parse(release.version).prerelease.includes('nightly')
-const [nightlyReleases, regularReleases] = partition(releases, isNightly)
+const isBeta = release => semver.parse(release.version).prerelease.includes('beta')
+const nightlyReleases = []
+const betaReleases = []
+const stableReleases = []
+
+releases.forEach(release => {
+  if (isNightly(release)) {
+    nightlyReleases.push(release)
+  } else if (isBeta(release)) {
+    betaReleases.push(release)
+  } else {
+    stableReleases.push(release)
+  }
+})
 
 class ReleasesPage {
   constructor (type, data, query) {
@@ -37,11 +50,14 @@ class ReleasesPage {
 }
 
 module.exports = (req, res) => {
-  let releasesType = 'normal'
-  let selectedReleases = regularReleases
+  let releasesType = 'stable'
+  let selectedReleases = stableReleases
   if (req.query.type === 'nightly') {
     releasesType = 'nightly'
     selectedReleases = nightlyReleases
+  } else if (req.query.type === 'beta') {
+    releasesType = 'beta'
+    selectedReleases = betaReleases
   }
 
   res.render('releases', Object.assign({}, req.context, {
