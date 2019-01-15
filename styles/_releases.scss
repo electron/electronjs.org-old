@@ -17,16 +17,25 @@
   }
 }
 
-.release-types {
-  font-size: 1.4em;
+.r-menu {
+  display: block;
+  position: absolute;
+  list-style: none;
 
-  .octicon {
-    font-size: 1.2em;
-  }
+  .menu-item {
+    font-size: 21px;
 
-  a.active {
-    text-decoration: underline;
+    p {
+      font-size: 15px;
+      // margin-left: 23px;
+    }
   }
+}
+
+.r-flex {
+  display: flex;
+  padding-right: 16px;
+  padding-left: 16px;
 }
 
 .releases {
