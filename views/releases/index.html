@@ -35,19 +35,24 @@ $ ./node_modules/.bin/electron .</code></pre>
       <div>
         <div class="r-menu">
           <h3>Sort releases</h3>
-          <div class="menu-item" style="{{#eq releasesPage.type 'stable'}}border-bottom: 1px solid #4078C0{{/eq}}">
-            <a class="releases-link-stable {{#eq releasesPage.type 'stable'}}active{{/eq}}" href="/releases/stable"><span class="octicon octicon-clock mr-1"></span> {{localized.releases.stable_releases}}</a>
-            <p>Regular releases, with second line if need</p>
-
-          </div>
-          <div class="menu-item" style="{{#eq releasesPage.type 'beta'}}border-bottom: 1px solid #4078C0{{/eq}}">
-            <a class="releases-link-beta {{#eq releasesPage.type 'beta'}}active{{/eq}}" href="/releases/beta"><span class="octicon octicon-zap mr-1"></span> {{localized.releases.beta_releases}}</a>
-            <p>Regular releases, with second line if need</p>
-          </div>
-          <div class="menu-item" style="{{#eq releasesPage.type 'nightly'}}border-bottom: 1px solid #4078C0{{/eq}}">
-            <a class="releases-link-nightly {{#eq releasesPage.type 'nightly'}}active{{/eq}}" href="/releases/nightly"><span class="octicon octicon-calendar mr-1"></span> {{localized.releases.nightly_releases}}</a>
-            <p>Regular releases, with second line if need</p>
-          </div>
+          <a class="releases-link-stable {{#eq releasesPage.type 'stable'}}active{{/eq}}" href="/releases/stable">
+            <div class="menu-item" style="{{#eq releasesPage.type 'stable'}}border-bottom: 1px solid #4078C0{{/eq}}">
+              <span class="octicon octicon-clock mr-1"></span> {{localized.releases.stable_releases}}
+              <p>Regular releases, with second line if need</p>
+            </div>
+          </a>
+          <a class="releases-link-beta {{#eq releasesPage.type 'beta'}}active{{/eq}}" href="/releases/beta">
+            <div class="menu-item" style="{{#eq releasesPage.type 'beta'}}border-bottom: 1px solid #4078C0{{/eq}}">
+              <span class="octicon octicon-zap mr-1"></span> {{localized.releases.beta_releases}}
+              <p>Regular releases, with second line if need</p>
+            </div>
+          </a>
+          <a class="releases-link-nightly {{#eq releasesPage.type 'nightly'}}active{{/eq}}" href="/releases/nightly">
+            <div class="menu-item" style="{{#eq releasesPage.type 'nightly'}}border-bottom: 1px solid #4078C0{{/eq}}">
+              <span class="octicon octicon-calendar mr-1"></span> {{localized.releases.nightly_releases}}
+              <p>Regular releases, with second line if need</p>
+            </div>
+          </a>
         </div>
       </div>
     </div>
