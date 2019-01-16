@@ -106,11 +106,11 @@ community:
 
 releases:
   stable_releases: Stable Releases
-  stable_desc: Stable Release Description
+  stable_desc: Regular, supported releases
   beta_releases: Beta Releases
-  beta_desc: Beta Releases Description
+  beta_desc: Test your app with upcoming changes
   nightly_releases: Nightly Releases
-  nightly_desc: Nightly Releases Description
+  nightly_desc: Experiment with the latest features
   next: Next
   next_page: Next Page
   previous: Previous
