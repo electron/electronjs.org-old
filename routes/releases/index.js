@@ -65,7 +65,7 @@ module.exports = (type) => {
     const localizedReleasesType = req.context.localized.releases[localizedReleasesKey]
 
     res.render('releases', Object.assign({}, req.context, {
-      page: { title: `${localizedReleasesType} | Electron Blog` },
+      page: { title: `${localizedReleasesType} | Electron` },
       releasesPage: new ReleasesPage(type, selectedReleases, req.query)
     }))
   }
