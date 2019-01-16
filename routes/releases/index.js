@@ -61,7 +61,11 @@ module.exports = (type) => {
       throw new Error(`Invalid releases type ${type}`)
     }
 
+    const localizedReleasesKey = `${type}_releases`
+    const localizedReleasesType = req.context.localized.releases[localizedReleasesKey]
+
     res.render('releases', Object.assign({}, req.context, {
+      page: { title: `${localizedReleasesType} | Electron Blog` },
       releasesPage: new ReleasesPage(type, selectedReleases, req.query)
     }))
   }
