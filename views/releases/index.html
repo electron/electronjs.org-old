@@ -17,27 +17,44 @@ $ ./node_modules/.bin/electron .</code></pre>
 
     <hr> -->
 
-    <div class="text-center release-types">
-      <a class="releases-link-stable {{#eq releasesPage.type 'stable'}}active{{/eq}}" href="/releases/stable"><span class="octicon octicon-clock mr-1"></span> {{localized.releases.stable_releases}}</a>
-      <a class="ml-6 releases-link-beta {{#eq releasesPage.type 'beta'}}active{{/eq}}" href="/releases/beta"><span class="octicon octicon-zap mr-1"></span> {{localized.releases.beta_releases}}</a>
-      <a class="ml-6 releases-link-nightly {{#eq releasesPage.type 'nightly'}}active{{/eq}}" href="/releases/nightly"><span class="octicon octicon-calendar mr-1"></span> {{localized.releases.nightly_releases}}</a>
-    </div>
+    <div class="r-flex">
+      <div class="releases">
+        {{#each releasesPage.page.data}}
+          <h2 class="release-entry" id="{{this.version}}">
+            <a href="#{{this.version}}">Electron {{this.version}}</a>
+            <em data-date="{{this.published_at}}" data-format="%B %d, %Y">{{this.published_at}}</em>
+            <em class="ltr-only">(<span data-date="{{this.published_at}}"></span>)</em>
+            <a href="{{this.html_url}}" class="octicon-wrapper"><span class="octicon octicon-mark-github vertical-middle"></span></a>
+          </h2>
 
-    <hr>
+          {{{this.body_html}}}
 
-    <div class="releases">
-      {{#each releasesPage.page.data}}
-        <h2 class="release-entry" id="{{this.version}}">
-          <a href="#{{this.version}}">Electron {{this.version}}</a>
-          <em data-date="{{this.published_at}}" data-format="%B %d, %Y">{{this.published_at}}</em>
-          <em class="ltr-only">(<span data-date="{{this.published_at}}"></span>)</em>
-          <a href="{{this.html_url}}" class="octicon-wrapper"><span class="octicon octicon-mark-github vertical-middle"></span></a>
-        </h2>
-
-        {{{this.body_html}}}
-
-        <hr>
-      {{/each}}
+          <hr>
+        {{/each}}
+      </div>
+      <div>
+        <div class="r-menu">
+          <h3>Sort releases</h3>
+          <a class="releases-link-stable {{#eq releasesPage.type 'stable'}}active{{/eq}}" href="/releases/stable">
+            <div class="menu-item" style="{{#eq releasesPage.type 'stable'}}border-bottom: 1px solid #4078C0{{/eq}}">
+              <span class="octicon octicon-clock"></span>{{localized.releases.stable_releases}}
+              <p>{{localized.releases.stable_desc}}</p>
+            </div>
+          </a>
+          <a class="releases-link-beta {{#eq releasesPage.type 'beta'}}active{{/eq}}" href="/releases/beta">
+            <div class="menu-item" style="{{#eq releasesPage.type 'beta'}}border-bottom: 1px solid #4078C0{{/eq}}">
+              <span class="octicon octicon-zap"></span>{{localized.releases.beta_releases}}
+              <p>{{localized.releases.beta_desc}}</p>
+            </div>
+          </a>
+          <a class="releases-link-nightly {{#eq releasesPage.type 'nightly'}}active{{/eq}}" href="/releases/nightly">
+            <div class="menu-item" style="{{#eq releasesPage.type 'nightly'}}border-bottom: 1px solid #4078C0{{/eq}}">
+              <span class="octicon octicon-calendar"></span>{{localized.releases.nightly_releases}}
+              <p>{{localized.releases.nightly_desc}}</p>
+            </div>
+          </a>
+        </div>
+      </div>
     </div>
 
     <nav class="paginate-container" aria-label="Pagination">

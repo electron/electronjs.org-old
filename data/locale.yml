@@ -106,8 +106,11 @@ community:
 
 releases:
   stable_releases: Stable Releases
+  stable_desc: Stable Release Description
   beta_releases: Beta Releases
+  beta_desc: Beta Releases Description
   nightly_releases: Nightly Releases
+  nightly_desc: Nightly Releases Description
   next: Next
   next_page: Next Page
   previous: Previous
