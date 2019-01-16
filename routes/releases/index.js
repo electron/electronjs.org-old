@@ -49,7 +49,8 @@ class ReleasesPage {
     this.versionFilter = versionFilter
     this.page = paginator(data, currentPage, perPage)
     if (this.page.currentPage > this.page.totalPages) {
-      this.page.currentPage = this.page.totalPages
+      currentPage = this.page.totalPages
+      this.page = paginator(data, currentPage, perPage)
     }
     this.pagination = data.length === 0 ? [] : pagination.getPaginationModel({
       currentPage: this.page.currentPage,
