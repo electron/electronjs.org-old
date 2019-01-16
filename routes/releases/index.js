@@ -30,13 +30,28 @@ releases.forEach(release => {
 })
 
 class ReleasesPage {
-  constructor (type, data, query) {
-    const currentPage = toNumber(query.page, 1)
+  constructor (type, versionFilter, data, query) {
+    let currentPage = toNumber(query.page, 1)
     const perPage = toNumber(query.per_page, 5)
 
+    const majorVersions = {}
+    data.forEach(release => {
+      const v = semver.major(release.version)
+      majorVersions[v] = true
+    })
+    this.majorVersions = Object.keys(majorVersions).map(v => parseInt(v, 10)).sort((a, b) => b - a)
+
+    if (versionFilter) {
+      data = data.filter(release => semver.major(release.version) === versionFilter)
+    }
+
     this.type = type
+    this.versionFilter = versionFilter
     this.page = paginator(data, currentPage, perPage)
-    this.pagination = pagination.getPaginationModel({
+    if (this.page.currentPage > this.page.totalPages) {
+      this.page.currentPage = this.page.totalPages
+    }
+    this.pagination = data.length === 0 ? [] : pagination.getPaginationModel({
       currentPage: this.page.currentPage,
       totalPages: this.page.totalPages
     })
@@ -61,12 +76,13 @@ module.exports = (type) => {
       throw new Error(`Invalid releases type ${type}`)
     }
 
+    const versionFilter = toNumber(req.query.version, null)
     const localizedReleasesKey = `${type}_releases`
     const localizedReleasesType = req.context.localized.releases[localizedReleasesKey]
 
     res.render('releases', Object.assign({}, req.context, {
       page: { title: `${localizedReleasesType} | Electron` },
-      releasesPage: new ReleasesPage(type, selectedReleases, req.query)
+      releasesPage: new ReleasesPage(type, versionFilter, selectedReleases, req.query)
     }))
   }
 }

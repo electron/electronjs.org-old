@@ -19,6 +19,10 @@ $ ./node_modules/.bin/electron .</code></pre>
 
     <div class="r-flex">
       <div class="releases">
+        {{#eq releasesPage.page.data.length 0}}
+          <h2>No releases matching the current filters</h2>
+        {{/eq}}
+
         {{#each releasesPage.page.data}}
           <h2 class="release-entry" id="{{this.version}}">
             <a href="#{{this.version}}">Electron {{this.version}}</a>
@@ -34,7 +38,7 @@ $ ./node_modules/.bin/electron .</code></pre>
       </div>
       <div>
         <div class="r-menu">
-          <h3>Sort releases</h3>
+          <h3>{{localized.releases.show_releases}}</h3>
           <a class="releases-link-stable {{#eq releasesPage.type 'stable'}}active{{/eq}}" href="/releases/stable">
             <div class="menu-item" style="{{#eq releasesPage.type 'stable'}}border-bottom: 1px solid #4078C0{{/eq}}">
               <span class="octicon octicon-clock"></span>{{localized.releases.stable_releases}}
@@ -53,6 +57,13 @@ $ ./node_modules/.bin/electron .</code></pre>
               <p>{{localized.releases.nightly_desc}}</p>
             </div>
           </a>
+          <h3>{{localized.releases.show_only_releases_from}}</h3>
+          <ul class="release-version-filter">
+            <li><a class="{{#eq @root/releasesPage.versionFilter null}}active{{/eq}}" href="?">{{localized.releases.all_versions}}</a></li>
+            {{#each releasesPage.majorVersions}}
+              <li><a class="{{#eq @root/releasesPage.versionFilter this}}active{{/eq}}" href="?version={{this}}">v{{this}}.x</a></li>
+            {{/each}}
+          </ul>
         </div>
       </div>
     </div>
