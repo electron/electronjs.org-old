@@ -1,6 +1,14 @@
 <div class='subtron'>
   <div class='container-narrow'>
-    <h1>{{localized.releases.title}}</h1>
+    {{#eq releasesPage.type 'stable'}}
+      <h1>{{localized.releases.stable_releases}}</h1>
+    {{/eq}}
+    {{#eq releasesPage.type 'beta'}}
+      <h1>{{localized.releases.beta_releases}}</h1>
+    {{/eq}}
+    {{#eq releasesPage.type 'nightly'}}
+      <h1>{{localized.releases.nightly_releases}}</h1>
+    {{/eq}}
   </div>
 </div>
 
