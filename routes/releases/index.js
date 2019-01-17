@@ -13,8 +13,8 @@ function toNumber (value, defaultValue) {
 
 class ReleasesPage {
   constructor (type, versionFilter, data, query) {
-    let currentPage = toNumber(query.page, 1)
-    const perPage = toNumber(query.per_page, 5)
+    let currentPage = Math.max(1, toNumber(query.page, 1))
+    const perPage = Math.max(1, toNumber(query.per_page, 5))
 
     const majorVersions = new Set()
     data.forEach(release => {
