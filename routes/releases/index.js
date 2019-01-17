@@ -1,6 +1,4 @@
 const querystring = require('querystring')
-const releases = require('electron-releases')
-const semver = require('semver')
 const pagination = require('ultimate-pagination')
 const paginator = require('paginate-array')
 
@@ -13,36 +11,19 @@ function toNumber (value, defaultValue) {
   }
 }
 
-const isNightly = release => semver.parse(release.version).prerelease.includes('nightly')
-const isBeta = release => semver.parse(release.version).prerelease.includes('beta')
-const nightlyReleases = []
-const betaReleases = []
-const stableReleases = []
-
-releases.forEach(release => {
-  if (isNightly(release)) {
-    nightlyReleases.push(release)
-  } else if (isBeta(release)) {
-    betaReleases.push(release)
-  } else {
-    stableReleases.push(release)
-  }
-})
-
 class ReleasesPage {
   constructor (type, versionFilter, data, query) {
     let currentPage = toNumber(query.page, 1)
     const perPage = toNumber(query.per_page, 5)
 
-    const majorVersions = {}
+    const majorVersions = new Set()
     data.forEach(release => {
-      const v = semver.major(release.version)
-      majorVersions[v] = true
+      majorVersions.add(release.semver.major)
     })
-    this.majorVersions = Object.keys(majorVersions).map(v => parseInt(v, 10)).sort((a, b) => b - a)
+    this.majorVersions = [...majorVersions].sort((a, b) => b - a)
 
     if (versionFilter) {
-      data = data.filter(release => semver.major(release.version) === versionFilter)
+      data = data.filter(release => release.semver.major === versionFilter)
     }
 
     this.type = type
@@ -66,16 +47,7 @@ class ReleasesPage {
 
 module.exports = (type) => {
   return (req, res) => {
-    let selectedReleases = null
-    if (type === 'stable') {
-      selectedReleases = stableReleases
-    } else if (type === 'nightly') {
-      selectedReleases = nightlyReleases
-    } else if (type === 'beta') {
-      selectedReleases = betaReleases
-    } else {
-      throw new Error(`Invalid releases type ${type}`)
-    }
+    let selectedReleases = req.context.releases.ofType(type)
 
     const versionFilter = toNumber(req.query.version, null)
     const localizedReleasesKey = `${type}_releases`

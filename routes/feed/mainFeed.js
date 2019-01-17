@@ -27,10 +27,10 @@ module.exports.setupFeed = memoize((type, items) => {
     case types.releases:
       items.forEach(release => {
         feed.addItem({
-          id: `https://electronjs.org/releases#${release.version}`,
-          date: new Date(release.created_at),
-          link: release.html_url,
-          content: release.body_html
+          id: `https://electronjs.org/releases#${release.data.version}`,
+          date: new Date(release.data.created_at),
+          link: release.data.html_url,
+          content: release.data.body_html
         })
       })
       break

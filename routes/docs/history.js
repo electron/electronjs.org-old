@@ -2,8 +2,6 @@ const i18n = require('../../lib/i18n')
 const semver = require('semver')
 const historian = require('electron-api-historian')
 
-const isNightly = version => semver.parse(version).prerelease.includes('nightly')
-
 module.exports = (req, res, next) => {
   const doc = i18n.docs[req.language][req.path.replace('/history', '')]
   if (!doc) return next()
@@ -13,8 +11,8 @@ module.exports = (req, res, next) => {
   doc.birthTag = historian[filenameKey]
 
   if (doc.birthTag) {
-    doc.releases = req.context.releases.filter(release => {
-      return semver.gte(release.version, doc.birthTag.replace('v', '')) && !isNightly(release.version)
+    doc.releases = req.context.releases.all.filter(release => {
+      return semver.gte(release.data.version, doc.birthTag.replace('v', '')) && !release.isNightly()
     })
   } else {
     doc.releases = []

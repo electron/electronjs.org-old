@@ -1,18 +1,9 @@
 const i18n = require('lib/i18n')
-const releases = require('electron-releases')
-const { deps } = releases.find(release => release.version === i18n.electronLatestStableVersion)
+const electronReleases = require('electron-releases')
+const { deps } = electronReleases.find(release => release.version === i18n.electronLatestStableVersion)
 const { getLanguageNativeName } = require('locale-code')
 const rtlDetect = require('rtl-detect')
-
-function hasNpmDistTag (tag) {
-  return function (release) {
-    if (release.npm_dist_tags) {
-      return release.npm_dist_tags.includes(tag)
-    } else {
-      return false
-    }
-  }
-}
+const Releases = require('../lib/releases')
 
 // Supply all route handlers with a baseline `req.context` object
 module.exports = function contextBuilder (req, res, next) {
@@ -34,10 +25,6 @@ module.exports = function contextBuilder (req, res, next) {
 
   const localized = i18n.website[req.language]
 
-  const stableRelease = releases.find(hasNpmDistTag('latest'))
-  const betaRelease = releases.find(hasNpmDistTag('beta'))
-  const nightlyRelease = releases.find(hasNpmDistTag('nightly'))
-
   // Page titles, descriptions, etc
   let page = Object.assign({
     title: 'Electron',
@@ -54,17 +41,14 @@ module.exports = function contextBuilder (req, res, next) {
     electronMasterBranchCommit: i18n.electronMasterBranchCommit,
     electronMasterBranchCommitShort: i18n.electronMasterBranchCommit.slice(0, 6),
     deps: deps,
-    releases: releases,
+    releases: new Releases(electronReleases),
     currentLocale: req.language,
     currentLocaleNativeName: getLanguageNativeName(req.language),
     languageDirection: rtlDetect.getLangDir(req.language),
     locales: i18n.locales,
     page: page,
     localized: localized,
-    cookies: req.cookies,
-    stableRelease,
-    betaRelease,
-    nightlyRelease
+    cookies: req.cookies
   }
 
   if (req.path.startsWith('/docs')) {
