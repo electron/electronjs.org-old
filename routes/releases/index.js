@@ -19,24 +19,30 @@ class QueryParamOutOfRangeError extends Error {
   }
 }
 
-function getNewQuery (currentQuery, newData) {
-  return Object.assign({}, currentQuery, newData)
+class RangeCheck {
+  constructor (query) {
+    this.failed = false
+    this.query = { ...query }
+  }
+
+  fail (newQueryData) {
+    this.failed = true
+    this.query = { ...this.query, ...newQueryData }
+  }
 }
 
 class ReleasesPage {
   constructor (type, versionFilter, data, query) {
-    let rangeCheckFailed = false
+    const rangeCheck = new RangeCheck(query)
 
     let currentPage = toNumber(query.page, 1)
     const perPage = toNumber(query.per_page, 5)
 
     if (currentPage < 1) {
-      rangeCheckFailed = true
-      query = getNewQuery(query, { page: 1 })
+      rangeCheck.fail({ page: 1 })
     }
     if (perPage < 1) {
-      rangeCheckFailed = true
-      query = getNewQuery(query, { per_page: undefined })
+      rangeCheck.fail({ per_page: undefined })
     }
 
     const majorVersions = new Set()
@@ -46,19 +52,22 @@ class ReleasesPage {
     this.majorVersions = [...majorVersions].sort((a, b) => b - a)
 
     if (versionFilter !== null) {
-      data = data.filter(release => release.semver.major === versionFilter)
+      if (this.majorVersions.includes(versionFilter)) {
+        data = data.filter(release => release.semver.major === versionFilter)
+      } else {
+        rangeCheck.fail({ version: undefined })
+      }
     }
 
     this.type = type
     this.versionFilter = versionFilter
     this.page = paginator(data, currentPage, perPage)
     if (this.page.currentPage > this.page.totalPages) {
-      rangeCheckFailed = true
-      query = getNewQuery(query, { page: this.page.totalPages })
+      rangeCheck.fail({ page: this.page.totalPages })
     }
 
-    if (rangeCheckFailed) {
-      throw new QueryParamOutOfRangeError('Query params out of range', query)
+    if (rangeCheck.failed) {
+      throw new QueryParamOutOfRangeError('Query params out of range', rangeCheck.query)
     }
 
     this.pagination = data.length === 0 ? [] : pagination.getPaginationModel({
@@ -67,7 +76,7 @@ class ReleasesPage {
     })
     // add a query string to each pagination model for URL generation
     this.pagination.forEach(item => {
-      const newQuery = Object.assign({}, query, { page: item.value })
+      const newQuery = { ...query, page: item.value }
       item.query = querystring.stringify(newQuery)
     })
   }
