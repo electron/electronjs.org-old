@@ -22,7 +22,7 @@ class ReleasesPage {
     })
     this.majorVersions = [...majorVersions].sort((a, b) => b - a)
 
-    if (versionFilter) {
+    if (versionFilter !== null) {
       data = data.filter(release => release.semver.major === versionFilter)
     }
 
