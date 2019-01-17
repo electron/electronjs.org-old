@@ -1,14 +1,6 @@
 <div class='subtron'>
   <div class='container-narrow'>
-    {{#eq releasesPage.type 'stable'}}
-      <h1>{{localized.releases.stable_releases}}</h1>
-    {{/eq}}
-    {{#eq releasesPage.type 'beta'}}
-      <h1>{{localized.releases.beta_releases}}</h1>
-    {{/eq}}
-    {{#eq releasesPage.type 'nightly'}}
-      <h1>{{localized.releases.nightly_releases}}</h1>
-    {{/eq}}
+    <h1>{{localizedReleasesType}}</h1>
   </div>
 </div>
 
@@ -29,6 +21,10 @@ $ ./node_modules/.bin/electron .</code></pre>
       {{#eq releasesPage.page.data.length 0}}
         <h2>No releases matching the current filters</h2>
       {{/eq}}
+
+      {{#if releasesPage.versionFilter}}
+        <p><em>Showing releases from v{{releasesPage.versionFilter}}.x. <a href="?">Show all {{lowerCase localizedReleasesType}}.</a></em></p>
+      {{/if}}
 
       {{#each releasesPage.page.data}}
         <h2 class="release-entry" id="{{this.data.version}}">

@@ -29,6 +29,16 @@ class RangeCheck {
     this.failed = true
     this.query = { ...this.query, ...newQueryData }
   }
+
+  getQuery () {
+    Object.keys(this.query).forEach(key => {
+      if (this.query[key] === undefined) {
+        delete this.query[key]
+      }
+    })
+
+    return this.query
+  }
 }
 
 class ReleasesPage {
@@ -55,7 +65,7 @@ class ReleasesPage {
       if (this.majorVersions.includes(versionFilter)) {
         data = data.filter(release => release.semver.major === versionFilter)
       } else {
-        rangeCheck.fail({ version: undefined })
+        rangeCheck.fail({ version: undefined, page: 1 })
       }
     }
 
@@ -67,7 +77,7 @@ class ReleasesPage {
     }
 
     if (rangeCheck.failed) {
-      throw new QueryParamOutOfRangeError('Query params out of range', rangeCheck.query)
+      throw new QueryParamOutOfRangeError('Query params out of range', rangeCheck.getQuery())
     }
 
     this.pagination = data.length === 0 ? [] : pagination.getPaginationModel({
@@ -93,7 +103,8 @@ module.exports = (type) => {
     try {
       res.render('releases', Object.assign({}, req.context, {
         page: { title: `${localizedReleasesType} | Electron` },
-        releasesPage: new ReleasesPage(type, versionFilter, selectedReleases, req.query)
+        releasesPage: new ReleasesPage(type, versionFilter, selectedReleases, req.query),
+        localizedReleasesType
       }))
     } catch (err) {
       if (err instanceof QueryParamOutOfRangeError) {
