@@ -25,10 +25,10 @@ $ ./node_modules/.bin/electron .</code></pre>
 
         {{#each releasesPage.page.data}}
           <h2 class="release-entry" id="{{this.version}}">
-            <a href="#{{this.version}}">Electron {{this.version}}</a>
-            <em data-date="{{this.published_at}}" data-format="%B %d, %Y">{{this.published_at}}</em>
-            <em class="ltr-only">(<span data-date="{{this.published_at}}"></span>)</em>
-            <a href="{{this.html_url}}" class="octicon-wrapper"><span class="octicon octicon-mark-github vertical-middle"></span></a>
+            <a class="tag" href="#{{this.version}}">Electron {{this.version}}</a>
+            <em class="date" data-date="{{this.published_at}}" data-format="%B %d, %Y">{{this.published_at}}</em>
+            <em class="date ltr-only">(<span data-date="{{this.published_at}}"></span>)</em>
+            <a href="{{this.html_url}}" class="tag octicon-wrapper"><span class="octicon octicon-mark-github vertical-middle"></span></a>
           </h2>
 
           {{{this.body_html}}}
