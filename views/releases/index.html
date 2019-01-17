@@ -5,7 +5,7 @@
 </div>
 
 <section class='page-section'>
-  <div class='container-narrow'>
+  <div class='docs-container-xl r-flex'>
     <!-- <h3>Tip: Use Electron from the command line</h3>
     <p>Installing the <code>electron</code> module as a development dependency in your project will let you use Electron from the command line at specific versions. More information on the <a href="https://github.com/electron-userland/electron-prebuilt">module's repository</a>.</p>
 
@@ -17,87 +17,85 @@ $ ./node_modules/.bin/electron .</code></pre>
 
     <hr> -->
 
-    <div class="r-flex">
-      <div class="releases">
-        {{#eq releasesPage.page.data.length 0}}
-          <h2>No releases matching the current filters</h2>
+    <div class="releases">
+      {{#eq releasesPage.page.data.length 0}}
+        <h2>No releases matching the current filters</h2>
+      {{/eq}}
+
+      {{#each releasesPage.page.data}}
+        <h2 class="release-entry" id="{{this.data.version}}">
+          <a class="tag" href="#{{this.data.version}}">Electron {{this.data.version}}</a>
+          <em class="date" data-date="{{this.data.published_at}}" data-format="%B %d, %Y">{{this.data.published_at}}</em>
+          <em class="date ltr-only">(<span data-date="{{this.data.published_at}}"></span>)</em>
+          <a href="{{this.data.html_url}}" class="tag octicon-wrapper"><span class="octicon octicon-mark-github vertical-middle"></span></a>
+        </h2>
+
+        {{{this.data.body_html}}}
+
+        <hr>
+      {{/each}}
+    </div>
+    <div>
+      <div class="r-menu">
+        <h3>{{localized.releases.show_releases}}</h3>
+        <a class="releases-link-stable {{#eq releasesPage.type 'stable'}}active{{/eq}}" href="/releases/stable">
+          <div class="menu-item" style="{{#eq releasesPage.type 'stable'}}border-left: 1px solid #4078C0; background: #fcfcfc{{/eq}}">
+            <span class="octicon octicon-clock"></span>{{localized.releases.stable_releases}}
+            <p>{{localized.releases.stable_desc}}</p>
+          </div>
+        </a>
+        <a class="releases-link-beta {{#eq releasesPage.type 'beta'}}active{{/eq}}" href="/releases/beta">
+          <div class="menu-item" style="{{#eq releasesPage.type 'beta'}}border-left: 1px solid #4078C0; background: #fcfcfc{{/eq}}">
+            <span class="octicon octicon-zap"></span>{{localized.releases.beta_releases}}
+            <p>{{localized.releases.beta_desc}}</p>
+          </div>
+        </a>
+        <a class="releases-link-nightly {{#eq releasesPage.type 'nightly'}}active{{/eq}}" href="/releases/nightly">
+          <div class="menu-item" style="{{#eq releasesPage.type 'nightly'}}border-left: 1px solid #4078C0; background: #fcfcfc{{/eq}}">
+            <span class="octicon octicon-calendar"></span>{{localized.releases.nightly_releases}}
+            <p>{{localized.releases.nightly_desc}}</p>
+          </div>
+        </a>
+        <h3>{{localized.releases.show_only_releases_from}}</h3>
+        <ul class="release-version-filter">
+          <li><a class="{{#eq @root/releasesPage.versionFilter null}}active{{/eq}}" href="?">{{localized.releases.all_versions}}</a></li>
+          {{#each releasesPage.majorVersions}}
+            <li><a class="{{#eq @root/releasesPage.versionFilter this}}active{{/eq}}" href="?version={{this}}">v{{this}}.x</a></li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <nav class="paginate-container" aria-label="Pagination">
+    <div class="pagination text-center">
+      {{#each releasesPage.pagination}}
+        {{#eq this.type "NEXT_PAGE_LINK"}}
+          {{#if this.isActive}}
+            <span class="next_page disabled" rel="next" aria-label="{{@root/localized.releases.next_page}}">{{@root/localized.releases.next}}</span>
+          {{else}}
+            <a class="next_page" rel="next" href="?{{this.query}}" aria-label="{{@root/localized.releases.next_page}}">{{@root/localized.releases.next}}</a>
+          {{/if}}
         {{/eq}}
-
-        {{#each releasesPage.page.data}}
-          <h2 class="release-entry" id="{{this.data.version}}">
-            <a href="#{{this.data.version}}">Electron {{this.data.version}}</a>
-            <em data-date="{{this.data.published_at}}" data-format="%B %d, %Y">{{this.data.published_at}}</em>
-            <em class="ltr-only">(<span data-date="{{this.data.published_at}}"></span>)</em>
-            <a href="{{this.data.html_url}}" class="octicon-wrapper"><span class="octicon octicon-mark-github vertical-middle"></span></a>
-          </h2>
-
-          {{{this.data.body_html}}}
-
-          <hr>
-        {{/each}}
-      </div>
-      <div>
-        <div class="r-menu">
-          <h3>{{localized.releases.show_releases}}</h3>
-          <a class="releases-link-stable {{#eq releasesPage.type 'stable'}}active{{/eq}}" href="/releases/stable">
-            <div class="menu-item" style="{{#eq releasesPage.type 'stable'}}border-left: 1px solid #4078C0; background: #fcfcfc{{/eq}}">
-              <span class="octicon octicon-clock"></span>{{localized.releases.stable_releases}}
-              <p>{{localized.releases.stable_desc}}</p>
-            </div>
-          </a>
-          <a class="releases-link-beta {{#eq releasesPage.type 'beta'}}active{{/eq}}" href="/releases/beta">
-            <div class="menu-item" style="{{#eq releasesPage.type 'beta'}}border-left: 1px solid #4078C0; background: #fcfcfc{{/eq}}">
-              <span class="octicon octicon-zap"></span>{{localized.releases.beta_releases}}
-              <p>{{localized.releases.beta_desc}}</p>
-            </div>
-          </a>
-          <a class="releases-link-nightly {{#eq releasesPage.type 'nightly'}}active{{/eq}}" href="/releases/nightly">
-            <div class="menu-item" style="{{#eq releasesPage.type 'nightly'}}border-left: 1px solid #4078C0; background: #fcfcfc{{/eq}}">
-              <span class="octicon octicon-calendar"></span>{{localized.releases.nightly_releases}}
-              <p>{{localized.releases.nightly_desc}}</p>
-            </div>
-          </a>
-          <h3>{{localized.releases.show_only_releases_from}}</h3>
-          <ul class="release-version-filter">
-            <li><a class="{{#eq @root/releasesPage.versionFilter null}}active{{/eq}}" href="?">{{localized.releases.all_versions}}</a></li>
-            {{#each releasesPage.majorVersions}}
-              <li><a class="{{#eq @root/releasesPage.versionFilter this}}active{{/eq}}" href="?version={{this}}">v{{this}}.x</a></li>
-            {{/each}}
-          </ul>
-        </div>
-      </div>
+        {{#eq this.type "PREVIOUS_PAGE_LINK"}}
+          {{#if this.isActive}}
+            <span class="previous_page disabled" rel="previous" aria-label="{{@root/localized.releases.previous_page}}">{{@root/localized.releases.previous}}</span>
+          {{else}}
+            <a class="previous_page" rel="previous" href="?{{this.query}}" aria-label="{{@root/localized.releases.previous_page}}">{{@root/localized.releases.previous}}</a>
+          {{/if}}
+        {{/eq}}
+        {{#eq this.type "PAGE"}}
+          <a href="?{{this.query}}" aria-label="{{@root/localized.releases.page}} {{this.value}}" class="page-link {{#if this.isActive}}current selected{{/if}}">{{this.value}}</a>
+        {{/eq}}
+        {{#eq this.type "ELLIPSIS"}}
+          <span class="gap">…</span>
+        {{/eq}}
+      {{/each}}
     </div>
+  </nav>
 
-    <nav class="paginate-container" aria-label="Pagination">
-      <div class="pagination text-center">
-        {{#each releasesPage.pagination}}
-          {{#eq this.type "NEXT_PAGE_LINK"}}
-            {{#if this.isActive}}
-              <span class="next_page disabled" rel="next" aria-label="{{@root/localized.releases.next_page}}">{{@root/localized.releases.next}}</span>
-            {{else}}
-              <a class="next_page" rel="next" href="?{{this.query}}" aria-label="{{@root/localized.releases.next_page}}">{{@root/localized.releases.next}}</a>
-            {{/if}}
-          {{/eq}}
-          {{#eq this.type "PREVIOUS_PAGE_LINK"}}
-            {{#if this.isActive}}
-              <span class="previous_page disabled" rel="previous" aria-label="{{@root/localized.releases.previous_page}}">{{@root/localized.releases.previous}}</span>
-            {{else}}
-              <a class="previous_page" rel="previous" href="?{{this.query}}" aria-label="{{@root/localized.releases.previous_page}}">{{@root/localized.releases.previous}}</a>
-            {{/if}}
-          {{/eq}}
-          {{#eq this.type "PAGE"}}
-            <a href="?{{this.query}}" aria-label="{{@root/localized.releases.page}} {{this.value}}" class="page-link {{#if this.isActive}}current selected{{/if}}">{{this.value}}</a>
-          {{/eq}}
-          {{#eq this.type "ELLIPSIS"}}
-            <span class="gap">…</span>
-          {{/eq}}
-        {{/each}}
-      </div>
-    </nav>
-
-    <div class="text-center">
-      <a href="https://github.com/electron/electron/releases"><span class="octicon octicon-tag mr-1"></span>{{localized.releases.all_releases}}</a>
-      <a class="ml-4" href="#"><span class="octicon octicon-arrow-up mr-1"></span>{{localized.releases.back_to_index}}</a>
-    </div>
+  <div class="text-center">
+    <a href="https://github.com/electron/electron/releases"><span class="octicon octicon-tag mr-1"></span>{{localized.releases.all_releases}}</a>
+    <a class="ml-4" href="#"><span class="octicon octicon-arrow-up mr-1"></span>{{localized.releases.back_to_index}}</a>
   </div>
 </section>

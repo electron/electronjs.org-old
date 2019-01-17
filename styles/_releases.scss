@@ -22,8 +22,9 @@
 }
 
 .r-menu {
-  display: block;
-  position: absolute;
+  display: flex;
+  flex-direction: column;
+  padding-left: 8px;
   list-style: none;
 
   .menu-item {
@@ -50,37 +51,37 @@
 }
 
 .releases {
-
-  // TODO(HashimotoYT) maybe i do it: Use classes instead of styling elements
-
+  width: 1012px;
   flex: 1;
 
-  h2 {
+  .release-entry {
     margin-bottom: $spacer3;
-  }
 
-  // Tag
-  h2 a {
-    display: inline-block;
-    padding: .1em .3em;
-    color: $main-color;
-    border: 1px solid $border-color;
-    border-radius: $border-radius;
-    &:hover {
-      text-decoration: none;
-      color: $main-color-strong;
-      background-color: $main-bg-color-shade;
-    }
-    &.octicon-wrapper {
-      border: none;
-    }
-  }
+    // Tag
+    & > .tag {
+      display: inline-block;
+      padding: .1em .3em;
+      color: $main-color;
+      border: 1px solid $border-color;
+      border-radius: $border-radius;
 
-  // Date
-  em {
-    margin-left: .5em;
-    font-size: $body-font-size;
-    color: $main-color-subtle;
-    font-style: normal;
+      &:hover {
+        text-decoration: none;
+        color: $main-color-strong;
+        background-color: $main-bg-color-shade;
+      }
+
+      &.octicon-wrapper {
+        border: none;
+      }
+    }
+
+    // Date
+    & > .date {
+      margin-left: .5em;
+      font-size: $body-font-size;
+      color: $main-color-subtle;
+      font-style: normal;
+    }
   }
 }
