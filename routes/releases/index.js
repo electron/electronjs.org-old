@@ -11,10 +11,33 @@ function toNumber (value, defaultValue) {
   }
 }
 
+class QueryParamOutOfRangeError extends Error {
+  constructor (message, newQuery) {
+    super(message)
+    this.name = 'QueryParamOutOfRangeError'
+    this.newQuery = newQuery
+  }
+}
+
+function getNewQuery (currentQuery, newData) {
+  return Object.assign({}, currentQuery, newData)
+}
+
 class ReleasesPage {
   constructor (type, versionFilter, data, query) {
-    let currentPage = Math.max(1, toNumber(query.page, 1))
-    const perPage = Math.max(1, toNumber(query.per_page, 5))
+    let rangeCheckFailed = false
+
+    let currentPage = toNumber(query.page, 1)
+    const perPage = toNumber(query.per_page, 5)
+
+    if (currentPage < 1) {
+      rangeCheckFailed = true
+      query = getNewQuery(query, { page: 1 })
+    }
+    if (perPage < 1) {
+      rangeCheckFailed = true
+      query = getNewQuery(query, { per_page: undefined })
+    }
 
     const majorVersions = new Set()
     data.forEach(release => {
@@ -30,9 +53,14 @@ class ReleasesPage {
     this.versionFilter = versionFilter
     this.page = paginator(data, currentPage, perPage)
     if (this.page.currentPage > this.page.totalPages) {
-      currentPage = this.page.totalPages
-      this.page = paginator(data, currentPage, perPage)
+      rangeCheckFailed = true
+      query = getNewQuery(query, { page: this.page.totalPages })
     }
+
+    if (rangeCheckFailed) {
+      throw new QueryParamOutOfRangeError('Query params out of range', query)
+    }
+
     this.pagination = data.length === 0 ? [] : pagination.getPaginationModel({
       currentPage: this.page.currentPage,
       totalPages: this.page.totalPages
@@ -53,9 +81,18 @@ module.exports = (type) => {
     const localizedReleasesKey = `${type}_releases`
     const localizedReleasesType = req.context.localized.releases[localizedReleasesKey]
 
-    res.render('releases', Object.assign({}, req.context, {
-      page: { title: `${localizedReleasesType} | Electron` },
-      releasesPage: new ReleasesPage(type, versionFilter, selectedReleases, req.query)
-    }))
+    try {
+      res.render('releases', Object.assign({}, req.context, {
+        page: { title: `${localizedReleasesType} | Electron` },
+        releasesPage: new ReleasesPage(type, versionFilter, selectedReleases, req.query)
+      }))
+    } catch (err) {
+      if (err instanceof QueryParamOutOfRangeError) {
+        const newQuery = querystring.stringify(err.newQuery)
+        res.redirect(`${req.path}/?${newQuery}`)
+      } else {
+        throw err
+      }
+    }
   }
 }
