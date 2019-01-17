@@ -11,8 +11,8 @@ module.exports = (req, res, next) => {
   doc.birthTag = historian[filenameKey]
 
   if (doc.birthTag) {
-    doc.releases = req.context.releases.filter(release => {
-      return semver.gte(release.version, doc.birthTag.replace('v', ''))
+    doc.releases = req.context.releases.all.filter(release => {
+      return semver.gte(release.data.version, doc.birthTag.replace('v', '')) && !release.isNightly()
     })
   } else {
     doc.releases = []
