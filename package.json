@@ -15,10 +15,14 @@
     "release": "node script/release",
     "dev": "cross-env NODE_PATH=. NODE_ENV=development nodemon server.js",
     "prepack": "check-for-leaks",
-    "prepush": "check-for-leaks",
     "linkschecker": "NODE_PATH=. NODE_ENV=test node scripts/links-checker.js",
     "cypress": "cypress run",
     "lint": "standard --fix"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "check-for-leaks"
+    }
   },
   "dependencies": {
     "@babel/core": "^7.2.2",
