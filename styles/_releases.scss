@@ -85,3 +85,54 @@
     }
   }
 }
+
+@media (min-width: 700px) {
+  .r-resp-header,
+  .r-resp-header-toggle {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .menu-item {
+    font-size: 18px;
+
+    .octicon {
+      font-size: 18px;
+      padding-right: 8px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .release-version-filter {
+    margin-left: 0;
+  }
+
+  .container-narrow {
+    .r-resp-header-narrow {
+      display: flex;
+      h1 {
+        flex: 1;
+      }
+    }
+
+    .r-resp-header-toggle {
+      font-size: 16px;
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+  }
+
+  .r-resp-header {
+    ul > li {
+      list-style: none;
+    }
+  }
+
+  .r-menu {
+    display: none;
+  }
+}
