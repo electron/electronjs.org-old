@@ -120,9 +120,11 @@
     }
 
     .r-resp-header-toggle {
-      font-size: 16px;
-      margin-top: auto;
-      margin-bottom: auto;
+      .octicon {
+        font-size: 20px;
+        margin-bottom: 4px;
+        color: #3a585f;
+      }
     }
   }
 
