@@ -12,7 +12,7 @@
     was introduced
     {{#each doc.releases}}
       {{#if @last}}
-        <time data-date="{{this.data.created_at}}"></time>
+        <time data-date="{{this.data.published_at}}"></time>
       {{/if}}
     {{/each}}
     in
@@ -33,10 +33,10 @@
           </a>
       </td>
       <td>
-          <time data-date="{{this.data.created_at}}" data-format="%B %d, %Y"></time>
+          <time data-date="{{this.data.published_at}}" data-format="%B %d, %Y"></time>
       </td>
       <td>
-          <time data-date="{{this.data.created_at}}"></time>
+          <time data-date="{{this.data.published_at}}"></time>
       </td>
     </tr>
   {{/each}}
