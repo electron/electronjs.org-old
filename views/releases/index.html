@@ -2,12 +2,12 @@
   <div class='container-narrow'>
     <div class="r-resp-header-narrow">
       <h1>{{localizedReleasesType}}</h1>
-      <button class="btn-link r-resp-header-toggle" type="button">
+      <button class="btn-link r-resp-header-toggle" data-toggle-target="#release-navbar" type="button">
         <span class="octicon octicon-list-unordered"></span>
       </button>
     </div>
 
-    <nav class="r-resp-header d-none site-header-nav">
+    <nav id="release-navbar" class="r-resp-header d-none site-header-nav">
       <h3>{{localized.releases.show_releases}}</h3>
       <a class="releases-link-stable {{#eq releasesPage.type 'stable'}}active{{/eq}}" href="/releases/stable">
         <div class="menu-item" style="{{#eq releasesPage.type 'stable'}}border-left: 1px solid #4078C0; background: #fcfcfc{{/eq}}">
