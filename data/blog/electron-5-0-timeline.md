@@ -1,0 +1,19 @@
+---
+title: Electron v5.0.0 Timeline
+author: sofianguy
+date: '2019-01-22'
+---
+For the first time ever, Electron is excited to publicize the 5.0.0 release schedule. This is our first step in having a long projected timeline.
+---
+As mentioned in our v4.0.0 stable release [blog post](https://electronjs.org/blog/electron-4-0#whats-next), we are planning to release approximately quarterly to maintain closer cadence with Chromium releases. Chromium releases a new version very quickly -- every 6 weeks.
+
+Take a look at progression in Electron versus Chromium side-by-side:
+<img src="https://i.imgur.com/pQRjlVS.png"/>
+
+In the last half of 2018, our top priority was faster releases and catch up closer to Chromium. We succeeded by sticking to a predetermined timeline. Electron released 3.0.0 and 4.0.0 in a 2-3 month timeline for each release. We are optimistic about continuing that pace in releasing 5.0.0 and beyond. With a major Electron release approximately every quarter, we're only about 2 versions behind Chromium. Getting ahead of Chromium stable release is always a goal for us and we are taking steps towards that.
+
+We would love to promise future dates like [Node.js](https://github.com/nodejs/Release) and [Chromium](https://chromiumdash.appspot.com/schedule) do, but we are not at that place _yet_. We are optimistic that we will reach a long projected timeline in the future.
+
+With that in mind, we are taking first steps by publicly posting our release schedule for v5.0.0. You can find that [here](TODO: add link to 5.0.0 Release Schedule from electron/electron/docs).
+
+To help us with testing our beta releases and stabilization, please consider joining our [App Feedback Program](https://electronjs.org/blog/app-feedback-program).
