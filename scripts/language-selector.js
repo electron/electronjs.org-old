@@ -24,8 +24,10 @@ module.exports = function languageTooltip () {
   const languageButton = document.querySelector('.site-header-nav .lang-select-button')
   if (languageButton) {
     languageButton.addEventListener('click', evt => {
-      evt.preventDefault()
-      toggleHeaderMenu()
+      if (!evt.ctrlKey && !evt.metaKey) {
+        evt.preventDefault()
+        toggleHeaderMenu()
+      }
     })
   }
 }
