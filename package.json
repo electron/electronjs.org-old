@@ -15,10 +15,14 @@
     "release": "node script/release",
     "dev": "cross-env NODE_PATH=. NODE_ENV=development nodemon server.js",
     "prepack": "check-for-leaks",
-    "prepush": "check-for-leaks",
     "linkschecker": "NODE_PATH=. NODE_ENV=test node scripts/links-checker.js",
     "cypress": "cypress run",
     "lint": "standard --fix"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "check-for-leaks"
+    }
   },
   "dependencies": {
     "@babel/core": "^7.2.2",
@@ -39,8 +43,8 @@
     "description": "0.0.4",
     "dotenv": "^6.2.0",
     "electron-api-historian": "^1.1.1",
-    "electron-apps": "^1.7323.0",
-    "electron-i18n": "^1.985.0",
+    "electron-apps": "^1.7342.0",
+    "electron-i18n": "^1.999.0",
     "electron-releases": "^3.44.0",
     "electron-userland-reports": "1.6.0",
     "express": "^4.16.2",
