@@ -17,5 +17,5 @@ document.addEventListener('DOMContentLoaded', () => {
   require('./screenshot-thumb-selector')()
   require('./docs-language-toggle')()
   require('./expanding-versions')()
-  require('./toggle-releases-menu')()
+  require('./install-toggle')()
 })
