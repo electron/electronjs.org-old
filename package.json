@@ -26,7 +26,7 @@
   },
   "dependencies": {
     "@babel/core": "^7.2.2",
-    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-env": "^7.3.0",
     "awesome-electron": "2.6.0",
     "babelify": "^10.0.0",
     "brfs": "^2.0.1",
