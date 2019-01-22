@@ -139,7 +139,17 @@ describe('electronjs.org', () => {
   })
 
   describe('localization', () => {
-    it('change language', () => {
+    it('change language via language drop-down menu', () => {
+      cy.visit(`${localhost}`)
+      cy.wait(500)
+      cy.get('.lang-select-button').click()
+      cy.wait(200)
+      cy.get('#languages-header-menu a[href="/languages/es-ES"]:first').click()
+      cy.wait(500)
+      cy.get('.jumbotron-lead').contains('Crea aplicaciones multiplataforma de escritorio con JavaScript, HTML y CSS')
+    })
+
+    it('change language via languages page', () => {
       cy.visit(`${localhost}/languages`)
       cy.get('.page-section a[href="/languages/ru-RU"]:first').click()
       cy.visit(`${localhost}`)
