@@ -46,7 +46,7 @@ class ReleasesPage {
     const rangeCheck = new RangeCheck(query)
 
     let currentPage = toNumber(query.page, 1)
-    const perPage = toNumber(query.per_page, 5)
+    const perPage = toNumber(query.per_page, 10)
 
     if (currentPage < 1) {
       rangeCheck.fail({ page: 1 })
