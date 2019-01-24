@@ -4,10 +4,13 @@
 const localhost = 'http://localhost:5000'
 
 /**
- * @param {string} nextUrl
+ * Visit the localhost page.
+ *
+ * @param {string} nextUrl url who need to visit, optional.
  */
 function visit(nextUrl) {
-  cy.visit(`${localhost}/${nextUrl}`)
+  if (nextUrl) cy.visit(`${localhost}/${nextUrl}`)
+  else cy.visit(`${localhost}`)
 }
 
 describe('electronjs.org', () => {
@@ -219,6 +222,24 @@ describe('electronjs.org', () => {
         expect(res.status).to.eq(301)
         expect(res.redirectedToUrl).to.eq(`${localhost}/releases/stable`)
       })
+    })
+  })
+
+  // This section related to bugs whos confirmed, but not play big role.
+  // For give more information it can contain reproducible steps.
+  // It should get value what we should expect for verifying fixing.
+  describe('Buggy Tests', () => {
+    it('language bar responsive bug', () => {
+      visit()
+      cy.get('.lang-select-button').click()
+      cy.get('#languages-header-menu').should('have.css', 'height', '421px')
+
+      cy.viewport('iphone-6')
+      cy.get('#languages-header-menu').should('have.css', 'height', '874px')
+
+      cy.viewport(1920, 1080)
+      // cy.get('#languages-header-menu').should('have.css', 'height', '421px') // FIXME: Uncomment when fixed.
+      cy.get('#languages-header-menu').should('have.css', 'height', '874px')
     })
   })
 })
