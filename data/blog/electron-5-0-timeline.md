@@ -14,6 +14,6 @@ In the last half of 2018, our top priority was faster releases and catch up clos
 
 We would love to promise future dates like [Node.js](https://github.com/nodejs/Release) and [Chromium](https://chromiumdash.appspot.com/schedule) do, but we are not at that place _yet_. We are optimistic that we will reach a long projected timeline in the future.
 
-With that in mind, we are taking first steps by publicly posting our release schedule for v5.0.0. You can find that [here](TODO: add link to 5.0.0 Release Schedule from electron/electron/docs).
+With that in mind, we are taking first steps by publicly posting our release schedule for v5.0.0. You can find that [here](https://electronjs.org/docs/tutorial/electron-timelines).
 
 To help us with testing our beta releases and stabilization, please consider joining our [App Feedback Program](https://electronjs.org/blog/app-feedback-program).
