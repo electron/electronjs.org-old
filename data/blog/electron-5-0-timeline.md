@@ -8,7 +8,7 @@ For the first time ever, Electron is excited to publicize the 5.0.0 release sche
 As mentioned in our v4.0.0 stable release [blog post](https://electronjs.org/blog/electron-4-0#whats-next), we are planning to release approximately quarterly to maintain closer cadence with Chromium releases. Chromium releases a new version very quickly -- every 6 weeks.
 
 Take a look at progression in Electron versus Chromium side-by-side:
-<img src="https://i.imgur.com/pQRjlVS.png"/>
+<img src="https://user-images.githubusercontent.com/2138661/51714676-db167080-1fea-11e9-8f10-fab1aa51993e.png" alt="line graph comparing Electron versus Chromium versions">
 
 In the last half of 2018, our top priority was faster releases and catch up closer to Chromium. We succeeded by sticking to a predetermined timeline. Electron released 3.0.0 and 4.0.0 in a 2-3 month timeline for each release. We are optimistic about continuing that pace in releasing 5.0.0 and beyond. With a major Electron release approximately every quarter, we're only about 2 versions behind Chromium. Getting ahead of Chromium stable release is always a goal for us and we are taking steps towards that.
 
