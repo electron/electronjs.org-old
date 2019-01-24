@@ -231,6 +231,7 @@ describe('electronjs.org', () => {
   describe('Buggy Tests', () => {
     it('language bar responsive bug', () => {
       visit()
+      cy.wait(800)
       cy.get('.lang-select-button').click()
       cy.get('#languages-header-menu').should('have.css', 'height', '421px')
 
