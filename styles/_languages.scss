@@ -14,3 +14,9 @@ progress[value]::-webkit-progress-bar {
 progress[value]::-webkit-progress-value {
   background-color: $jumbo-color;
 }
+
+#languages-header-menu {
+  height: 0;
+  transition: height 0.2s ease-out;
+  overflow: hidden;
+}
