@@ -3,6 +3,13 @@
 
 const localhost = 'http://localhost:5000'
 
+/**
+ * @param {string} nextUrl
+ */
+function visit(nextUrl) {
+  cy.visit(`${localhost}/${nextUrl}`)
+}
+
 describe('electronjs.org', () => {
   it('works', () => {
     cy.visit(localhost)
@@ -163,10 +170,19 @@ describe('electronjs.org', () => {
   })
 
   describe('landing pages', () => {
-    // TODO(HashimotoYT): Add tests for Devtron and Spectron landing pages
     it('Fiddle landing page', () => {
       cy.visit(`${localhost}/fiddle`)
       cy.get('.jumbotron-lead').contains('The easiest way to get started with Electron')
+    })
+
+    it('Devtron landing page', () => {
+      visit(`devtron`)
+      cy.get('.jumbotron-lead').contains('An Electron DevTools Extension')
+    })
+
+    it('Spectron landing page', () => {
+      visit(`spectron`)
+      cy.get('.jumbotron-lead').contains('An Electron Testing Framework')
     })
   })
 
