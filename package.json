@@ -45,7 +45,7 @@
     "electron-api-historian": "^1.1.1",
     "electron-apps": "^1.7345.0",
     "electron-i18n": "^1.1013.0",
-    "electron-releases": "^3.48.0",
+    "electron-releases": "^3.49.0",
     "electron-userland-reports": "1.6.0",
     "express": "^4.16.2",
     "express-hbs": "^2.0.0",
