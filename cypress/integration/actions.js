@@ -169,4 +169,30 @@ describe('electronjs.org', () => {
       cy.get('.jumbotron-lead').contains('The easiest way to get started with Electron')
     })
   })
+
+  describe('releases', () => {
+    it('/releases/stable', async () => {
+      cy.visit(`${localhost}/releases/stable`)
+      cy.get('.r-resp-header-narrow').contains('Stable Releases')
+      cy.get('.releases-entry').should('have.length', 5)
+      cy.get('a.releases-link-stable').should('have.class', 'active').should('eq', true)
+    })
+
+    it('responsive navbar', () => {
+      cy.viewport('iphone-6', "portrait")
+      cy.visit(`${localhost}/releases/stable`)
+      cy.get('#release-navbar').should('have.class', 'd-none')
+      cy.get('.r-resp-header-toggle').should('be.visible').click()
+
+      cy.get('#release-navbar').should('not.have.class', 'd-none')
+      cy.get('#release-navbar > h3').should('be.visible').contains('Show Releases:')
+    })
+
+    it('/docs/versions redirects to /releases/stable', async () => {
+      cy.visit(`${localhost}/docs/versions`).then((res) => {
+        expect(res.status).to.eq(301)
+        expect(res.redirectedToUrl).to.eq(`${localhost}/releases/stable`)
+      })
+    })
+  })
 })
