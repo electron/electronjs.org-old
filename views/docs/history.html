@@ -12,7 +12,7 @@
     was introduced
     {{#each doc.releases}}
       {{#if @last}}
-        <time data-date="{{this.data.created_at}}"></time>
+        <time data-date="{{this.data.published_at}}"></time>
       {{/if}}
     {{/each}}
     in
@@ -27,16 +27,16 @@
   {{#each doc.releases}}
     <tr>
       <td>
-          <a href="https://github.com/electron/electron/blob/{{this.tag_name}}{{../doc.href}}.md">
+          <a href="https://github.com/electron/electron/blob/{{this.data.tag_name}}{{../doc.href}}.md">
             <span class="octicon octicon-mark-github mr-1"></span>
             {{../doc.slug}}.md @ {{this.data.version}}
           </a>
       </td>
       <td>
-          <time data-date="{{this.data.created_at}}" data-format="%B %d, %Y">{{this.created_at}}</time>
+          <time data-date="{{this.data.published_at}}" data-format="%B %d, %Y"></time>
       </td>
       <td>
-          <time data-date="{{this.data.created_at}}"></time>
+          <time data-date="{{this.data.published_at}}"></time>
       </td>
     </tr>
   {{/each}}
