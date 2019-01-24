@@ -28,6 +28,7 @@ docs:
 
 languages:
   choose_language: Choose Your Site Language
+  view_more_details: View More Language Details
   translation_progress: Translation Progress
   current: current selection
 

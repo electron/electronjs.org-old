@@ -18,4 +18,5 @@ document.addEventListener('DOMContentLoaded', () => {
   require('./docs-language-toggle')()
   require('./expanding-versions')()
   require('./install-toggle')()
+  require('./language-selector')()
 })

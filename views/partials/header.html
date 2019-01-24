@@ -33,7 +33,33 @@
       <a class="site-header-nav-item octicon" href="https://github.com/electron" title="Github Organization">
         <span class="mega-octicon octicon-mark-github vertical-middle"></span>
       </a>
-      <a class="site-header-nav-item bordered" href="/languages">{{currentLocaleNativeName}}</a>
+      <a class="site-header-nav-item bordered lang-select-button" href="/languages">{{currentLocaleNativeName}}</a>
     </nav>
   </div>
 </header>
+
+<div id="languages-header-menu" class="container collapsed">
+  <div class="m-4">
+    <div class="text-center-sm mb-4">
+      <strong>{{localized.languages.choose_language}}</strong>
+    </div>
+    <div class="clearfix">
+      {{#each locales}}
+        <div class="text-center-sm col-6 col-md-4 mb-2">
+          <a href="/languages/{{this.locale}}">
+            {{#eq this.languageName this.languageNativeName}}
+              {{this.languageNativeName}}
+            {{else}}
+              {{this.languageNativeName}} ({{this.languageName}})
+            {{/eq}}
+          </a>
+          {{#eq ../currentLocale this.locale}}</b> <span class="faint"><span class="octicon octicon-check mr-1"></span></span>{{/eq}}
+        </div>
+      {{/each}}
+    </div>
+    <hr>
+    <div class="text-center-sm">
+      <a href="/languages">{{localized.languages.view_more_details}}</a>
+    </div>
+  </div>
+</div>
