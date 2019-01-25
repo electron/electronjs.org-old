@@ -1,7 +1,7 @@
 ---
 title: Electron v5.0.0 Timeline
 author: sofianguy
-date: '2019-01-22'
+date: '2019-01-25'
 ---
 For the first time ever, Electron is excited to publicize the 5.0.0 release schedule. This is our first step in having a long projected timeline.
 ---
