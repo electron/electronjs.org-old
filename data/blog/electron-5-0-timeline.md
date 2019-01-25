@@ -3,8 +3,11 @@ title: Electron v5.0.0 Timeline
 author: sofianguy
 date: '2019-01-25'
 ---
+
 For the first time ever, Electron is excited to publicize our release schedule starting with v5.0.0. This is our first step in having a public, long-term timeline.
+
 ---
+
 As mentioned in our v4.0.0 stable release [blog post](https://electronjs.org/blog/electron-4-0#whats-next), we are planning to release approximately quarterly to maintain closer cadence with Chromium releases. Chromium releases a new version very quickly -- every 6 weeks.
 
 Take a look at progression in Electron versus Chromium side-by-side:
