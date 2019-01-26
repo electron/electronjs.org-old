@@ -15,7 +15,6 @@ function visit(nextUrl) {
 
 describe('electronjs.org', () => {
   it('works', () => {
-    cy.visit(localhost)
     cy.title().should('include', 'Build cross platform desktop apps')
   })
 
