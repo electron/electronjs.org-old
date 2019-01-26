@@ -213,6 +213,7 @@ describe('electronjs.org', () => {
       cy.get('#release-navbar').should('have.class', 'd-none')
       cy.get('.r-resp-header-toggle').should('be.visible').click()
 
+      cy.wait(500)
       cy.get('#release-navbar').should('not.have.class', 'd-none')
       cy.get('#release-navbar > h3').should('be.visible').contains('Show Releases:')
     })
@@ -231,13 +232,14 @@ describe('electronjs.org', () => {
   describe('Buggy Tests', () => {
     it('language bar responsive bug', () => {
       visit()
-      cy.wait(800)
+      cy.wait(500)
       cy.get('.lang-select-button').click()
       cy.get('#languages-header-menu').should('have.css', 'height', '421px')
 
       cy.viewport('iphone-6')
       cy.get('#languages-header-menu').should('have.css', 'height', '874px')
 
+      cy.wait(500)
       cy.viewport(1920, 1080)
       // cy.get('#languages-header-menu').should('have.css', 'height', '421px') // FIXME: Uncomment when fixed.
       cy.get('#languages-header-menu').should('have.css', 'height', '874px')
