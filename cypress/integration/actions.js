@@ -231,17 +231,22 @@ describe('electronjs.org', () => {
   describe('Buggy Tests', () => {
     it('language bar responsive bug', () => {
       visit()
-      cy.wait(500)
       cy.get('.lang-select-button').click()
-      cy.get('#languages-header-menu').should('have.css', 'height', '421px')
+        .get('#languages-header-menu').should('have.css', 'height', '421px')
+        .viewport('iphone-6')
+        .get('#languages-header-menu').should('have.css', 'height', '874px')
+        .viewport(1920, 1080)
+        .get('#languages-header-menu').should('have.css', 'height', '874px')
 
-      cy.viewport('iphone-6')
-      cy.get('#languages-header-menu').should('have.css', 'height', '874px')
+      // cy.get('#languages-header-menu').should('have.css', 'height', '421px')
 
-      cy.wait(500)
-      cy.viewport(1920, 1080)
-      // cy.get('#languages-header-menu').should('have.css', 'height', '421px') // FIXME: Uncomment when fixed.
-      cy.get('#languages-header-menu').should('have.css', 'height', '874px')
+      // cy.viewport('iphone-6')
+      // cy.get('#languages-header-menu').should('have.css', 'height', '874px')
+
+      // cy.wait(500)
+      // cy.viewport(1920, 1080)
+      // // cy.get('#languages-header-menu').should('have.css', 'height', '421px') // FIXME: Uncomment when fixed.
+      // cy.get('#languages-header-menu').should('have.css', 'height', '874px')
     })
   })
 })
