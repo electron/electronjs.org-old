@@ -234,6 +234,7 @@ describe('electronjs.org', () => {
       cy.get('.lang-select-button').click()
         .get('#languages-header-menu').should('have.css', 'height', '421px')
         .viewport('iphone-6')
+        .wait(500)
         .get('#languages-header-menu').should('have.css', 'height', '874px')
         .viewport(1920, 1080)
         .get('#languages-header-menu').should('have.css', 'height', '874px')
