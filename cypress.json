@@ -1,6 +1,5 @@
 {
   "projectId": "4j4z3k",
-  "baseUrl": "http://localhost:5000",
   "requestTimeout": 10000,
   "defaultCommandTimeout": 10000
 }
