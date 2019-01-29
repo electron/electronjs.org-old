@@ -77,6 +77,12 @@ describe('electronjs.org', () => {
       $('a.footer-nav-item[href="https://github.com/electron/electron/tree/master/CODE_OF_CONDUCT.md"]')
         .text().should.eq('Code of Conduct')
     })
+
+    test('displays License link in the footer', async () => {
+      const $ = await get('/')
+      $('a.footer-nav-item[href="https://github.com/electron/electron/tree/master/LICENSE"]')
+        .text().should.eq('License')
+    })
   })
 
   describe('apps', () => {
