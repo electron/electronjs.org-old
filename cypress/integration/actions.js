@@ -238,17 +238,8 @@ describe('electronjs.org', () => {
         .wait(500)
         .get('#languages-header-menu').should('have.css', 'height', '874px')
         .viewport(1920, 1080)
+        // .get('#languages-header-menu').should('have.css', 'height', '421px') // FIXME: Uncomment when fixed.
         .get('#languages-header-menu').should('have.css', 'height', '874px')
-
-      // cy.get('#languages-header-menu').should('have.css', 'height', '421px')
-
-      // cy.viewport('iphone-6')
-      // cy.get('#languages-header-menu').should('have.css', 'height', '874px')
-
-      // cy.wait(500)
-      // cy.viewport(1920, 1080)
-      // // cy.get('#languages-header-menu').should('have.css', 'height', '421px') // FIXME: Uncomment when fixed.
-      // cy.get('#languages-header-menu').should('have.css', 'height', '874px')
     })
   })
 })
