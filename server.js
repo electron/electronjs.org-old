@@ -22,6 +22,7 @@ const blog = require('./middleware/blog')
 
 const port = Number(process.env.PORT) || argv.p || argv.port || 5000
 const app = express()
+const appImgDir = path.resolve(require.resolve('electron-apps'), '..', 'apps')
 process.env.HOST = process.env.HOST || `http://localhost:${port}`
 
 // Handlebars Templates
@@ -55,6 +56,7 @@ app.use(requestLanguage({
   }
 }))
 app.use(express.static(path.join(__dirname, 'public')))
+app.use('/app-img', express.static(appImgDir))
 app.use(langResolver)
 app.use(contextBuilder)
 app.use(blog)
