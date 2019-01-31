@@ -1,7 +1,7 @@
 ---
 title: Node.js Native Addons and Electron 5.0
 author: BinaryMuse
-date: 2019-01-31
+date: '2019-01-31'
 ---
 
 If you're having trouble using a native Node.js addon with Electron 5.0, there's a chance it needs to be updated to work with the most recent version of V8.
