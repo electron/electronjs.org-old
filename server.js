@@ -54,7 +54,7 @@ app.use(requestLanguage({
     url: '/languages/{language}'
   }
 }))
-app.use(express.static(__dirname))
+app.use(express.static(path.join(__dirname, 'public')))
 app.use(langResolver)
 app.use(contextBuilder)
 app.use(blog)
