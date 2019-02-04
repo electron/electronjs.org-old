@@ -13,11 +13,11 @@ Opening a BrowserView with `sandbox: true` or `nativeWindowOpen: true` and `node
 ## Mitigation
 
 We've published new versions of Electron which include fixes for  this vulnerability:
-[`2.0.FIXME`](https://github.com/electron/electron/releases/tag/v2.0.FIXME),
-[`3.0.FIXME`](https://github.com/electron/electron/releases/tag/v3.0.FIXME),
-[`3.1.FIXME`](https://github.com/electron/electron/releases/tag/v3.1.FIXME),
-[`4.0.FIXME`](https://github.com/electron/electron/releases/tag/v4.0.FIXME), and
-[`5.0.0-beta.FIXME`](https://github.com/electron/electron/releases/tag/v5.0.0-beta.FIXME).
+[`2.0.17`](https://github.com/electron/electron/releases/tag/v2.0.17),
+[`3.0.15`](https://github.com/electron/electron/releases/tag/v3.0.15),
+[`3.1.3`](https://github.com/electron/electron/releases/tag/v3.1.3),
+[`4.0.4`](https://github.com/electron/electron/releases/tag/v4.0.4), and
+[`5.0.0-beta.2`](https://github.com/electron/electron/releases/tag/v5.0.0-beta.2).
 We encourage all Electron developers to update their apps to the latest stable version immediately.
 
 If for some reason you are unable to upgrade your Electron version, you can mitigate this issue by disabling all child web contents:
