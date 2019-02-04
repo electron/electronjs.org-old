@@ -1,7 +1,7 @@
 ---
 title:  BrowserView window.open() Vulnerability Fix
 author: ckerr
-date: '2019-01-xx'
+date: '2019-02-03'
 ---
 
 A code vulnerability has been discovered that allows Node to be re-enabled in child windows.
