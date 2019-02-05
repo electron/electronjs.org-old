@@ -46,7 +46,6 @@ app.use(helmet())
 app.use(sass())
 app.use('/scripts/index.js', browserify('scripts/index.js'))
 app.get('/service-worker.js', (req, res) => res.sendFile(path.resolve(__dirname, 'scripts', 'service-worker.js')))
-app.use(slashes(false))
 app.use(cookieParser())
 app.use(requestLanguage({
   languages: Object.keys(i18n.locales),
@@ -55,8 +54,9 @@ app.use(requestLanguage({
     url: '/languages/{language}'
   }
 }))
-app.use(express.static(path.join(__dirname, 'public')))
-app.use('/app-img', express.static(appImgDir))
+app.use(express.static(path.join(__dirname, 'public'), { redirect: false }))
+app.use('/app-img', express.static(appImgDir, { redirect: false }))
+app.use(slashes(false))
 app.use(langResolver)
 app.use(contextBuilder)
 app.use(blog)
