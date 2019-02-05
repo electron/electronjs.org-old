@@ -3,6 +3,16 @@
 
 const localhost = 'http://localhost:5000'
 
+/**
+ * Visit the localhost page.
+ *
+ * @param {string} nextUrl url who need to visit, optional.
+ */
+function visit(nextUrl) {
+  if (nextUrl) cy.visit(`${localhost}/${nextUrl}`)
+  else cy.visit(`${localhost}`)
+}
+
 describe('electronjs.org', () => {
   it('works', () => {
     cy.visit(localhost)
@@ -173,10 +183,63 @@ describe('electronjs.org', () => {
   })
 
   describe('landing pages', () => {
-    // TODO(HashimotoYT): Add tests for Devtron and Spectron landing pages
     it('Fiddle landing page', () => {
       cy.visit(`${localhost}/fiddle`)
       cy.get('.jumbotron-lead').contains('The easiest way to get started with Electron')
+    })
+
+    it('Devtron landing page', () => {
+      visit(`devtron`)
+      cy.get('.jumbotron-lead').contains('An Electron DevTools Extension')
+    })
+
+    it('Spectron landing page', () => {
+      visit(`spectron`)
+      cy.get('.jumbotron-lead').contains('An Electron Testing Framework')
+    })
+  })
+
+  describe('releases', () => {
+    it('/releases/stable', () => {
+      cy.visit(`${localhost}/releases/stable`)
+      cy.get('.r-resp-header-narrow').contains('Stable Releases')
+      cy.get('.release-entry').should('have.length', 5)
+      cy.get('a.releases-link-stable').should('have.class', 'active')
+    })
+
+    it('responsive navbar', () => {
+      cy.viewport('iphone-6', "portrait")
+      cy.visit(`${localhost}/releases/stable`)
+      cy.get('#release-navbar').should('have.class', 'd-none')
+      cy.get('.r-resp-header-toggle').should('be.visible').click()
+
+      cy.get('#release-navbar').should('not.have.class', 'd-none')
+      cy.get('#release-navbar > h3').should('be.visible').contains('Show Releases:')
+    })
+
+    // FIXME: expected '' to equal 301
+    // xit('/docs/versions redirects to /releases/stable', async () => {
+    //   cy.visit(`${localhost}/docs/versions`).then((res) => {
+    //     expect(res.status).to.eq(301)
+    //     expect(res.redirectedToUrl).to.eq(`${localhost}/releases/stable`)
+    //   })
+    // })
+  })
+
+  // This section related to bugs whos confirmed, but not play big role.
+  // For give more information it can contain reproducible steps.
+  // It should get value what we should expect for verifying fixing.
+  describe('Buggy Tests', () => {
+    it('language bar responsive bug', () => {
+      visit()
+      cy.get('.lang-select-button').click()
+        .get('#languages-header-menu').should('have.css', 'height', '421px')
+        .viewport('iphone-6')
+        .wait(500)
+        .get('#languages-header-menu').should('have.css', 'height', '874px')
+        .viewport(1920, 1080)
+        // .get('#languages-header-menu').should('have.css', 'height', '421px') // FIXME: Uncomment when fixed.
+        .get('#languages-header-menu').should('have.css', 'height', '874px')
     })
   })
 })
