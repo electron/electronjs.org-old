@@ -22,6 +22,7 @@ const blog = require('./middleware/blog')
 
 const port = Number(process.env.PORT) || argv.p || argv.port || 5000
 const app = express()
+const appImgDir = path.resolve(require.resolve('electron-apps'), '..', 'apps')
 process.env.HOST = process.env.HOST || `http://localhost:${port}`
 
 // Handlebars Templates
@@ -45,7 +46,6 @@ app.use(helmet())
 app.use(sass())
 app.use('/scripts/index.js', browserify('scripts/index.js'))
 app.get('/service-worker.js', (req, res) => res.sendFile(path.resolve(__dirname, 'scripts', 'service-worker.js')))
-app.use(slashes(false))
 app.use(cookieParser())
 app.use(requestLanguage({
   languages: Object.keys(i18n.locales),
@@ -54,7 +54,9 @@ app.use(requestLanguage({
     url: '/languages/{language}'
   }
 }))
-app.use(express.static(__dirname))
+app.use(express.static(path.join(__dirname, 'public'), { redirect: false }))
+app.use('/app-img', express.static(appImgDir, { redirect: false }))
+app.use(slashes(false))
 app.use(langResolver)
 app.use(contextBuilder)
 app.use(blog)
