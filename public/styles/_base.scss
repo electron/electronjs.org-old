@@ -84,10 +84,10 @@ img[data-src] {
 // add top margin
 // to make it easier to see headers within a long wall of text
 .strong-headers {
-  h1 {                      	  font-weight: 300; -webkit-font-smoothing: initial; }
-  h2 { margin: 2em 0 1em;   	  font-weight: 300; -webkit-font-smoothing: initial; border-bottom: $border; }
-  h3 { margin: 2.25em 0 0.75em;   font-weight: 300; -webkit-font-smoothing: initial; }
-  h4 { margin-top: 1.5em;   	  font-weight: 300; }
+  h1 {                      	  		 font-weight: 300; -webkit-font-smoothing: initial; }
+  h2 { margin: 2em 0 1em;   	font-size: 32px; font-weight: 300; -webkit-font-smoothing: initial; border-bottom: $border; }
+  h3 { margin: 2.25em 0 0.75em; font-size: 26px; font-weight: 300; -webkit-font-smoothing: initial; }
+  h4 { margin-top: 1.5em;   	  		 font-weight: 300; }
   h5 { margin-top: 1.25em;  }
   h6 { margin-top: 1.125em; }
 
