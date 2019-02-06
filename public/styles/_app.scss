@@ -1,0 +1,283 @@
+// App page ------------------------------
+
+.left-bar {
+  flex: 0;
+
+  @include breakpoint(md) {
+    min-width: 300px;
+    flex: 0.4;
+    max-width: 400px;
+    padding-right: 32px;
+  }
+}
+
+.app-header {
+  display: flex;
+  flex-direction: row;
+
+  .app-logo {
+    display: block;
+    max-width: 96px;
+    height: 96px;
+    margin-right: 32px;
+
+    @include breakpoint(md) {
+      margin: 0 auto;
+    }
+  }
+
+  .app-link {
+    &:hover {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+
+  .app-title {
+    position: relative;
+    flex: 1;
+
+    .app-name {
+      margin: 0;
+      color: inherit;
+      font-size: 2em;
+      line-height: 1.1;
+    }
+
+    .app-description {
+      margin: .3em 0 0 0;
+      font-size: 1.2em;
+      font-weight: 300;
+      line-height: 1.4;
+    }
+  }
+}
+
+.app-container {
+  margin-top: 32px;
+
+  @include breakpoint(md) {
+    display: flex;
+  }
+
+  .app-meta {
+    display: flex;
+    flex-wrap: wrap;
+
+    &.sticky {
+      @include breakpoint(md) {
+        position: sticky;
+        top: 20px;
+      }
+    }
+
+    @include breakpoint(md) {
+      flex-direction: column;
+      flex-wrap: nowrap;
+    }
+
+    .app-meta-entry {
+      font-size: 14px;
+      padding: 16px 0;
+      border-top: 1px darken($main-bg-color-shade, 8%) solid;
+      width: 100%;
+
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+
+      .app-keyword {
+        white-space: normal;
+        overflow: auto;
+      }
+
+      &-downloads {
+        overflow: auto;
+        white-space: normal;
+      }
+
+      @include breakpoint(sm) {
+        width: 50%;
+      }
+
+      @include breakpoint(md) {
+        width: 100%;
+      }
+
+      &:nth-child(1) {
+        border-top: none;
+      }
+      &:nth-child(2) {
+        border-top: 1px darken($main-bg-color-shade, 8%) solid;
+
+        @include breakpoint(sm) {
+          border-top: none;
+        }
+
+        @include breakpoint(md) {
+          border-top: 1px darken($main-bg-color-shade, 8%) solid;
+        }
+      }
+
+      h5 {
+        font-size: 14px;
+        -webkit-font-smoothing: antialiased;
+      }
+    }
+  }
+
+  .app-boxes {
+    flex: 1;
+    @include breakpoint(md) {
+      max-width: calc(100% - 300px);
+    }
+
+    .app-box {
+      border: 1px solid $main-border-color;
+      border-radius: 5px;
+      box-shadow: 0 0 16px -4px rgba(0, 0, 0, 0.28);
+      margin-bottom: 32px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .app-keyword {
+    padding: 0.2em 0.4em;
+    font-size: 0.85em;
+    border-radius: 3px;
+    background-color: $main-bg-color-shade;
+    &:hover {
+      text-decoration: none;
+      background-color: darken($main-bg-color-shade, 4%);
+    }
+  }
+
+  .app-tagname {
+    margin-left: .5em;
+    color: $main-color-subtle;
+  }
+
+  .app-download {
+    display: block;
+    padding: 0.4em .8em;
+    border-radius: 3px;
+    margin: 0 .5em .5em 0;
+    line-height: 1.7;
+    border: none;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    direction: rtl;
+    text-align: left;
+
+    @include breakpoint(md) {
+      display: inline-block;
+    }
+
+    &:hover {
+      text-decoration: none;
+      border-color: lighten($main-link-color, 20%);
+    }
+  }
+
+  .app-readme {
+    padding: 3rem;
+
+    > div > article > *:first-child {
+      margin-top: 0 !important;
+    }
+
+    .octicon-link {
+      display: none;
+    }
+  }
+
+  .app-screenshots {
+    .active-screenshot {
+      padding: 16px;
+    }
+
+    .all-screenshots {
+      height: 128px;
+      border-top: 1px solid $main-border-color;
+      white-space: nowrap;
+      overflow-y: auto;
+
+      .app-screenshot-thumb {
+        border-right: 1px solid $main-border-color;
+        display: inline-flex;
+        flex-direction: column;
+        width: 196px;
+        cursor: pointer;
+        overflow: hidden;
+        /* Scroll bug in Chrome */
+        height: 126px;
+
+        img {
+          height: 110px;
+          margin: 8px;
+
+          &.caption {
+            height: 84px;
+          }
+        }
+
+        .app-screenshot-caption {
+          text-align: center;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          padding: 0 8px;
+        }
+      }
+    }
+  }
+}
+
+.something-missing {
+  margin-top: 32px;
+}
+
+// basecoat filter-list overrides
+
+.filter-list {
+  padding: 0;
+  margin: 0;
+}
+
+.filter-item {
+  padding: 4px 8px;
+}
+
+.darwin-only,
+.win32-only,
+.linux-only {
+  display: none;
+}
+
+.app-download-input {
+  margin-top: 4px;
+  display: block;
+}
+
+// mobile handle, use breakpoint from /bower_components/basecoat/scss/mixins/_breakpoints.scss
+.container-narrow {
+  padding-right: 15px;
+  padding-left: 15px;
+  @include breakpoint(md) { // return normal value
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+.row { // default is -15px
+  margin-right: -12px; // work with .page-section { padding: 12px }
+  margin-left: -12px;
+}
+.mobile-hidden {
+  display: none;
+  @include breakpoint(md) {
+    display: block;
+  }
+}

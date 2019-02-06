@@ -1,9 +1,0 @@
-
-.btn-outline-themed {
-  @include btn-outline-theme($theme-color);
-}
-
-.btn-outline-themed:hover,
-.btn-outline-themed:active {
-  background-image: none;
-}

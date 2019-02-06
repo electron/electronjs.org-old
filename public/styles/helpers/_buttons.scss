@@ -1,0 +1,97 @@
+.btn {
+  font-weight: 400; //override bold from primer
+}
+
+// Create color variations of our `.btn-outline`
+@mixin btn-outline-theme($color, $bg: $theme-color) {
+  padding: .65em 1.25em;
+  font-size: inherit;
+  color: $color;
+  background: transparent;
+  border-color: $color;
+  border-radius: .25em;
+
+  &:hover,
+  &:active {
+    @if (lightness($color) > 50) {
+      color: $theme-color;
+    } @else {
+      color: #fff;
+    }
+    background-color: $color;
+    border-color: $color;
+  }
+}
+
+.btn-outline-purple {
+  @include btn-outline-theme($purple);
+}
+
+.btn-outline-blue {
+  @include btn-outline-theme($blue);
+}
+
+.btn-outline-white {
+  @include btn-outline-theme($white);
+}
+
+// Override brand-blue on outline buttons with $theme-color
+.btn-themed {
+  color: $theme-color;
+
+  &:hover {
+    background-color: $theme-color;
+    border-color: $theme-color;
+  }
+
+  &:active {
+    background-color: darken($theme-color, 7%);
+  }
+
+  &:focus,
+  &:focus:hover {
+    border-color: $theme-color;
+    box-shadow: 0 0 5px $theme-color;
+  }
+
+}
+
+// Transparent button to be used on dark backgrounds
+.btn-transparent {
+  color: $white;
+  background: none;
+  border-color: $white;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.2);
+    border-color: $white;
+  }
+
+  &:active {
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  &:disabled,
+  &.disabled,
+  &:disabled:hover,
+  &.disabled:hover {
+    color: rgba(255, 255, 255, 0.5);
+    background: none;
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+
+}
+
+.btn-lg {
+  padding: 16px 30px;
+  font-size: 18px;
+}
+
+.btn-outline-themed {
+  @include btn-outline-theme($theme-color);
+}
+
+.btn-outline-themed:hover,
+.btn-outline-themed:active {
+  background-image: none;
+}

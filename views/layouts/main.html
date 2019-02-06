@@ -14,6 +14,15 @@
     {{> footer}}
     {{> anchor_links}}
     {{> modal}}
+    <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then(function(registrations) {
+        for(let registration of registrations) {
+          registration.unregister()
+        }
+      })
+    }
+    </script>
     <script src="/scripts/index.js"></script>
   </body>
 </html>

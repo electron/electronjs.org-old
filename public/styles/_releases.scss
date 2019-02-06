@@ -1,0 +1,142 @@
+
+// Releases ------------------------------
+
+.releases-tag {
+  display: inline-block;
+  margin: .3em .1em;
+  padding: .1em .4em;
+  font-size: .86em;
+  color: $main-color-subtle;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+
+  &:hover {
+    text-decoration: none;
+    color: $main-color-strong;
+    background-color: $main-bg-color-shade;
+  }
+}
+
+.release-version-filter .active {
+  text-decoration: underline;
+}
+
+.r-menu {
+  display: flex;
+  flex-direction: column;
+  padding-left: 8px;
+  list-style: none;
+
+  .menu-item {
+    font-size: 21px;
+    // Remove border radius for active element.
+    border-radius: 0;
+
+    .octicon {
+      font-size: 20px;
+      padding-right: 8px;
+    }
+
+    p {
+      font-size: 15px;
+      // margin-left: 23px;
+    }
+  }
+}
+
+.r-flex {
+  display: flex;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+.releases {
+  width: 1012px;
+  flex: 1;
+
+  .release-entry {
+    margin-bottom: $spacer3;
+
+    // Tag
+    & > .tag {
+      display: inline-block;
+      padding: .1em .3em;
+      color: $main-color;
+      border: 1px solid $border-color;
+      border-radius: $border-radius;
+
+      &:hover {
+        text-decoration: none;
+        color: $main-color-strong;
+        background-color: $main-bg-color-shade;
+      }
+
+      &.octicon-wrapper {
+        border: none;
+      }
+    }
+
+    // Date
+    & > .date {
+      margin-left: .5em;
+      font-size: $body-font-size;
+      color: $main-color-subtle;
+      font-style: normal;
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .r-resp-header,
+  .r-resp-header-toggle {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .menu-item {
+    font-size: 18px;
+    line-height: 1.75;
+
+    .octicon {
+      font-size: 18px;
+      padding-right: 8px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .release-version-filter {
+    margin-left: 0;
+  }
+
+  .container-narrow {
+    .r-resp-header-narrow {
+      display: flex;
+      h1 {
+        flex: 1;
+      }
+    }
+
+    .r-resp-header-toggle {
+      .octicon {
+        font-size: 20px;
+        margin-bottom: 4px;
+        color: #3a585f;
+      }
+    }
+  }
+
+  .r-resp-header {
+    ul > li {
+      list-style: none;
+      line-height: 1.25;
+    }
+  }
+
+  .r-menu {
+    display: none;
+  }
+}

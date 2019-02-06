@@ -1,0 +1,211 @@
+
+// Jumbotron ------------------------------
+
+.jumbotron.jumbotron-home {
+  // Reduce padding because the hero has some extra padding for the animation.
+  padding: $spacer2 $spacer3 $spacer6 $spacer3;
+  @include breakpoint(md) { padding: $spacer4 $spacer3 $spacer8 $spacer3; }
+  @include breakpoint(xl) { padding: $spacer6 0 $spacer6 * 2 0; }
+}
+
+// Headers ------------------------------
+
+.nodejs-color {
+  color: $nodejs-color;
+}
+
+.chromium-color {
+  color: $chromium-color;
+}
+
+// Features ------------------------------
+
+.home-illu {
+  max-height: 200px;
+}
+
+
+// Apps section ------------------------------
+
+/* Featured Apps with Icons */
+
+.featured-app {
+  display: inline-block;
+  vertical-align: top;
+  width: 140px;
+  padding: 0;
+  color: $main-color-subtle;
+  margin: 10px 20px;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.featured-app-logo-wrapper {
+  width: 120px;
+  height: 120px;
+  margin: 10px;
+  transition: transform .32s;
+}
+
+.featured-app:hover .featured-app-logo-wrapper {
+  transform: scale(1.1);
+  transition-duration: .08s;
+}
+
+.featured-app:active .featured-app-logo-wrapper {
+  transform: scale(.92);
+  transition-duration: 0;
+}
+
+.featured-app-logo {
+  width: 100%;
+}
+
+.featured-app-name {
+  text-align: center;
+  text-decoration: none;
+  line-height: 1.3;
+  font-weight: 300;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Listed Apps with Icons */
+
+$app-list-icon-size: 48px;
+
+.app-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.listed-app {
+  text-align: left;
+}
+
+// Override .filterable-list
+.listed-app.listed-app {
+  padding: 0;
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.listed-app > a {
+  display: flex;
+  padding: 10px;
+  border: 1px solid transparent;
+}
+
+.listed-app > a:hover,
+.listed-app > a:focus {
+  text-decoration: none;
+  text-decoration: none;
+  border-color: $main-border-color;
+  background-color: $main-bg-color-shade;
+  outline: none;
+}
+
+.listed-app-logo-wrapper {
+  display: inline-block;
+  width: $app-list-icon-size;
+  height: $app-list-icon-size;
+  position: relative;
+}
+
+.listed-app-logo-placeholder {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  border-radius: 50%;
+  margin: 0;
+  padding: 0;
+  z-index: 100;
+}
+
+.listed-app-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 48px;
+    height: 48px;
+    z-index: 101;
+}
+
+.listed-app-name {
+  padding: 0 10px;
+  font-weight: 500;
+}
+
+.listed-app-description {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.listed-app-date {
+  font-size: 12px;
+  padding-left: 15px;
+  display: none;
+}
+
+.listed-app:hover .listed-app-date {
+  display: inherit;
+}
+
+.listed-app span {
+  line-height: $app-list-icon-size;
+  vertical-align: bottom;
+}
+
+
+/* Featured Apps without Icons */
+
+.featured-app-textual {
+  padding: 5px 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  @include breakpoint(md) {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(50% - 20px);
+    padding: 5px 20px;
+    text-align: left;
+  }
+}
+
+
+// Getting Started section ------------------------------
+
+.highlight-dark {
+  color: $jumbo-color-strong;
+  background-color: $jumbo-bg-color;
+  border-color: darken($jumbo-bg-color, 12%);
+  code {
+    color: inherit;
+  }
+  .c1.c1 {
+    color: mix($jumbo-color-strong, $jumbo-bg-color, 60%);
+  }
+}
+
+.app-frame {
+  border: 2px solid $main-border-color;
+  border-top-width: 20px;
+  border-radius: 4px;
+  background-color: #FAFAFA;
+  box-shadow: 0 25px 30px -18px rgba(0, 0, 0, 0.28);
+}
+
+@media screen and (max-width: 1300px) {
+  svg.vertical-middle {
+    display: none;
+  }
+}

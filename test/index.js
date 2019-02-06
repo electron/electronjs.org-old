@@ -25,12 +25,22 @@ describe('electronjs.org', () => {
     res.headers['content-encoding'].should.equal('gzip')
   })
 
-  test('blog feeds', async () => {
-    let res = await supertest(app).get(`/blog.json`)
-    res.headers['content-type'].should.equal('application/json; charset=utf-8')
-    res.body.title.should.equal('Electron')
-    res = await supertest(app).get(`/blog.xml`)
-    res.headers['content-type'].should.equal('text/xml; charset=utf-8')
+  describe('feeds', async () => {
+    test('blog feeds', async () => {
+      let res = await supertest(app).get(`/blog.json`)
+      res.headers['content-type'].should.equal('application/json; charset=utf-8')
+      res.body.title.should.equal('Electron')
+      res = await supertest(app).get(`/blog.xml`)
+      res.headers['content-type'].should.equal('text/xml; charset=utf-8')
+    })
+
+    test('releases feeds', async () => {
+      let res = await supertest(app).get(`/releases.json`)
+      res.headers['content-type'].should.equal('application/json; charset=utf-8')
+      res.body.title.should.equal('Electron')
+      res = await supertest(app).get(`/releases.xml`)
+      res.headers['content-type'].should.equal('text/xml; charset=utf-8')
+    })
   })
 
   describe('stylesheets', () => {
@@ -66,6 +76,12 @@ describe('electronjs.org', () => {
       const $ = await get('/')
       $('a.footer-nav-item[href="https://github.com/electron/electron/tree/master/CODE_OF_CONDUCT.md"]')
         .text().should.eq('Code of Conduct')
+    })
+
+    test('displays License link in the footer', async () => {
+      const $ = await get('/')
+      $('a.footer-nav-item[href="https://github.com/electron/electron/tree/master/LICENSE"]')
+        .text().should.eq('License')
     })
   })
 
@@ -266,21 +282,40 @@ describe('electronjs.org', () => {
   })
 
   describe('releases', () => {
-    test('/releases', async () => {
-      const $ = await get('/releases')
+    test('/releases/stable', async () => {
+      const $ = await get('/releases/stable')
       $('h1').text().should.include('Releases')
-      $('h2').length.should.be.above(35)
+      $('.release-entry').length.should.eq(5)
+      $('a.releases-link-stable').hasClass('active').should.eq(true)
+      const pages = $('.paginate-container .page-link').last()
+      const lastPage = parseInt(pages.text().trim(), 10)
+      lastPage.should.be.gt(50)
 
-      const titles = $('h2 a').map((i, el) => $(el).text().trim()).get()
-      titles.should.include('Electron 1.7.9')
-      titles.should.include('Electron 1.6.7')
-      titles.should.include('Electron 0.37.8')
+      const titles = $('.release-entry').map((i, el) => $(el).text().trim()).get()
+      titles.forEach(title => {
+        title.should.match(/Electron \d+\.\d+\.\d/)
+      })
     })
 
-    test('/docs/versions redirects to /releases', async () => {
+    test('/releases/beta', async () => {
+      const $ = await get('/releases/beta')
+      $('h1').text().should.include('Releases')
+      $('.release-entry').length.should.eq(5)
+      $('a.releases-link-beta').hasClass('active').should.eq(true)
+      const pages = $('.paginate-container .page-link').last()
+      const lastPage = parseInt(pages.text().trim(), 10)
+      lastPage.should.be.gt(5)
+
+      const titles = $('.release-entry').map((i, el) => $(el).text().trim()).get()
+      titles.forEach(title => {
+        title.should.match(/Electron \d+\.\d+\.\d+-beta\.\d+/)
+      })
+    })
+
+    test('/docs/versions redirects to /releases/stable', async () => {
       const res = await supertest(app).get('/docs/versions')
       res.statusCode.should.be.equal(301)
-      res.headers.location.should.equal('/releases')
+      res.headers.location.should.equal('/releases/stable')
     })
   })
 
@@ -349,6 +384,13 @@ describe('electronjs.org', () => {
       $('.jumbotron-lead .jumbotron-lead-muted').text().should.eq('An Electron DevTools Extension')
       $ = await get('/spectron')
       $('.jumbotron-lead .jumbotron-lead-muted').text().should.eq('An Electron Testing Framework')
+    })
+  })
+
+  describe('electron fiddle', async () => {
+    test('Fiddle landing page existed', async () => {
+      const $ = await get('/fiddle')
+      $('.jumbotron-lead .jumbotron-lead-muted').text().should.eq('The easiest way to get started with Electron')
     })
   })
 

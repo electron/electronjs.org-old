@@ -49,7 +49,7 @@ module.exports = function langResolver (req, res, next) {
       const parsedUrl = parseurl(req)
       req.query.lang = rlang
       return res.redirect(
-        url.format({pathname: parsedUrl.pathname, query: req.query}))
+        url.format({ pathname: parsedUrl.pathname, query: req.query }))
     }
   }
 

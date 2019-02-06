@@ -1,8 +1,9 @@
 const i18n = require('lib/i18n')
-const releases = require('electron-releases')
-const {deps} = releases.find(release => release.version === i18n.electronLatestStableVersion)
-const {getLanguageNativeName} = require('locale-code')
+const electronReleases = require('electron-releases')
+const { deps } = electronReleases.find(release => release.version === i18n.electronLatestStableVersion)
+const { getLanguageNativeName } = require('locale-code')
 const rtlDetect = require('rtl-detect')
+const Releases = require('../lib/releases')
 
 // Supply all route handlers with a baseline `req.context` object
 module.exports = function contextBuilder (req, res, next) {
@@ -24,9 +25,6 @@ module.exports = function contextBuilder (req, res, next) {
 
   const localized = i18n.website[req.language]
 
-  const stableRelease = releases.find(release => release.npm_dist_tag === 'latest')
-  const betaRelease = releases.find(release => release.npm_dist_tag === 'beta')
-
   // Page titles, descriptions, etc
   let page = Object.assign({
     title: 'Electron',
@@ -42,17 +40,15 @@ module.exports = function contextBuilder (req, res, next) {
     electronLatestStableTag: i18n.electronLatestStableTag,
     electronMasterBranchCommit: i18n.electronMasterBranchCommit,
     electronMasterBranchCommitShort: i18n.electronMasterBranchCommit.slice(0, 6),
-    releases: releases,
     deps: deps,
+    releases: new Releases(electronReleases),
     currentLocale: req.language,
     currentLocaleNativeName: getLanguageNativeName(req.language),
     languageDirection: rtlDetect.getLangDir(req.language),
     locales: i18n.locales,
     page: page,
     localized: localized,
-    cookies: req.cookies,
-    stableRelease,
-    betaRelease
+    cookies: req.cookies
   }
 
   if (req.path.startsWith('/docs')) {

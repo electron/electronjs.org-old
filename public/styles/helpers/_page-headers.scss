@@ -1,0 +1,98 @@
+.jumbotron {
+  color: $jumbo-color;
+  background-color: $jumbo-bg-color;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  padding-top: $spacer5;
+  padding-bottom: $spacer5;
+
+  @include breakpoint(md) {
+    padding-top: $spacer8;
+    padding-bottom: $spacer8;
+  }
+
+  // Shadow
+  &:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    // remove shadow
+    content: none;
+  }
+
+  h1 {
+    font-size: 45px;
+    font-family: $display-font;
+    font-weight: 300;
+
+    @include breakpoint(md) {
+      font-size: 60px;
+    }
+
+    @include breakpoint(lg) {
+      font-size: 6vw;
+    }
+
+    @include breakpoint(xl) {
+      font-size: 5vw;
+    }
+  }
+
+  .hero-octicon {
+    font-size: 60px;
+    background-color: transparent;
+    border: 0;
+    display: inline-block;
+  }
+}
+
+
+// Jumbotron -----------------------------
+
+.jumbotron-lead {
+  color: $jumbo-color-strong;
+  font-size: 1.4rem;
+  font-weight: 300;
+
+  @include breakpoint(md) { font-size: 1.8rem; }
+  @include breakpoint(lg) { font-size: 2.4rem; }
+  @include breakpoint(xl) { font-size: 2.4rem; }
+}
+
+.jumbotron-lead-muted {
+  color: $jumbo-color-subtle;
+  @include breakpoint(md) {
+    display: block;
+    font-size: .8em;
+  }
+}
+
+// Subtron -----------------------------
+// Used for sub headers on most pages
+
+.subtron {
+  position: relative;
+  text-align: center;
+  border: 1px solid darken($sub-bg-color, 8%);
+  background-color: $sub-bg-color;
+
+  padding: $spacer3;
+  @include breakpoint(sm) { padding: $spacer3; }
+  @include breakpoint(md) { padding: $spacer4; }
+  @include breakpoint(lg) { padding: $spacer5; }
+  @include breakpoint(xl) { padding: $spacer6; }
+
+  h1 {
+    margin: 0 0 .3em 0;
+    font-size: $body-font-size * 1.75;
+    @include breakpoint(md) { font-size: $body-font-size * 2; }
+    @include breakpoint(lg) { font-size: $body-font-size * 2.5; }
+    @include breakpoint(xl) { font-size: $body-font-size * 3; }
+
+    &:only-child {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,151 @@
+
+// Docs ------------------------------
+
+.docs-version {
+  display: inline-block;
+  padding: 0 .4em;
+  margin-left: 10px;
+  vertical-align: middle;
+  font-size: $body-font-size * 0.95;
+  line-height: 1.8;
+  font-weight: 200;
+  -webkit-font-smoothing: initial;
+  background-color: $main-bg-color;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+}
+
+.docs-breadcrumbs {
+  margin: 0;
+  color: $main-color-subtle;
+  font-weight: 300;
+  a {
+    color: $main-color;
+  }
+}
+.docs-breadcrumbs-divider {
+  color: $main-color-subtle;
+}
+
+// Used on the docs index page
+.docs-title {
+  color: inherit;
+}
+
+.docs-heading {
+  border-bottom: 1px solid #eee;
+
+  // thin titles to match the main /docs index
+  .strong-headers & {
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+.docs-list {
+  margin-left: 0;
+  list-style-type: none;
+}
+
+.header-link .octicon {
+  color: $main-color-subtle;
+  margin-left: .5em;
+  vertical-align: middle;
+  visibility: hidden;
+  :hover > & {
+    visibility: visible;
+  }
+}
+
+.docs-tags {
+  margin: 0;
+  list-style: none;
+  position: relative;
+  text-align: center;
+  color: $main-color-strong;
+  background-color: darken($main-bg-color-shade, 8%);
+  @include breakpoint(md) {
+    position: absolute;
+    right: 0;
+    text-align: right;
+    background-color: transparent;
+  }
+}
+.docs-tag {
+  display: inline-block;
+  padding: .4em .8em;
+  margin-bottom: 0;
+  font-size: .86em;
+  font-weight: 500;
+  @include breakpoint(md) {
+    background-color: darken($main-bg-color-shade, 8%);
+  }
+}
+
+// platform label, e.g. [OS X]
+.docs h3 code > em,
+.docs h3 > em,
+.docs h4 code > em,
+.docs h4 > em,
+.docs .platform-label {
+    padding: .1em .4em;
+    vertical-align: middle;
+    font-size: .66em;
+    font-weight: 300;
+    font-style: normal;
+    color: $main-bg-color;
+    border-radius: $border-radius;
+    background-color: $main-color-subtle;
+}
+
+// process label, e.g. Main process
+.docs h1 em {
+  padding: .1em .4em;
+  vertical-align: middle;
+  font-size: .4em;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-style: normal;
+  color: $main-bg-color;
+  border-radius: $border-radius;
+  background-color: $main-color-subtle;
+}
+
+.docs table {
+  th {
+    text-align: left;
+    padding: $spacer2;
+  }
+  width: 100%;
+}
+
+.docs p a,
+.docs li a {
+  text-decoration: underline;
+}
+
+.doc-actions {
+  a {
+    text-decoration: none;
+  }
+}
+
+.docs {
+  .sub-section[data-lang='en-US'] .en-toggle h5 {
+    color: $main-link-color;
+  }
+  .sub-section:not([data-lang='en-US']) {
+    .en-toggle h5 {
+      color: $main-bg-color;
+    }
+    &:hover .en-toggle h5 {
+      color: $main-border-color;
+    }
+  }
+}
+
+.docs-container-xl {
+  max-width: 1280px;
+  margin-right: auto;
+  margin-left: auto;
+}
