@@ -22,21 +22,6 @@
   width: 450px;
 }
 
-/* modal close */
-.close {
-  // I'm not sure why margin-top,bottom: auto; doesn't work :shrug:
-  margin-top: 20px;
-  margin-bottom: 20px;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover {
-  color: $main-link-color;
-  cursor: pointer;
-}
-
 /* Modal Header */
 .modal-header {
   padding: 2px 16px;
@@ -46,6 +31,21 @@
 	// color: $jumbo-color;
   // background-color: lighten($jumbo-bg-color, 2%);
   // border-bottom-color: darken($jumbo-bg-color, 8%);
+
+  /* modal close */
+  .close {
+    // I'm not sure why margin-top,bottom: auto; doesn't work :shrug:
+    margin-top: 20px;
+    margin-bottom: 20px;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover {
+    color: $main-link-color;
+    cursor: pointer;
+  }
 
 	color: $main-color-subtle;
   background-color: #74b1be7a;
