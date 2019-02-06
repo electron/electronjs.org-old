@@ -99,7 +99,7 @@
     "husky": "^1.3.1",
     "icon-font-generator": "^2.1.10",
     "mocha": "^5.0.0",
-    "nock": "^10.0.5",
+    "nock": "^10.0.6",
     "nodemon": "^1.18.9",
     "octicons": "^8.3.0",
     "simplecrawler": "^1.1.6",
