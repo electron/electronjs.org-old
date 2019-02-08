@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+set -x            # print commands before execution
+set -o errexit    # always exit on error
+set -o pipefail   # honor exit codes when piping
+set -o nounset    # fail on unset variables
+
+rm -r precompiled || true
+mkdir -p precompiled/scripts
+mkdir -p precompiled/styles
+node ./script/precompile-js
+node ./script/precompile-sass
