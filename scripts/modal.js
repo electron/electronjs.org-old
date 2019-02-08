@@ -3,13 +3,13 @@ module.exports = function installModal() {
   const modal = document.getElementById('myModal');
 
   // Get the <span> element that closes the modal
-  const span = document.getElementsByClassName("close");
+  const span = document.getElementsByClassName("close")[0];
 
   // When the user types ?, open the modal
   window.addEventListener("keydown", event => {
     if (event.key === "?") {
       if (event.target === null || event.target.tagName !== "INPUT") {
-        modal.style.display = "flex";
+        modal.style.display = "block";
         event.stopImmediatePropagation();
         event.preventDefault();
       }
@@ -17,7 +17,6 @@ module.exports = function installModal() {
 
     if (event.keyCode === 27) {
       modal.style.display = "none";
-      event.preventDefault()
     }
   }, true);
 
