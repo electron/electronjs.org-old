@@ -9,10 +9,15 @@ module.exports = function installModal() {
   window.addEventListener("keydown", event => {
     if (event.key === "?") {
       if (event.target === null || event.target.tagName !== "INPUT") {
-        modal.style.display = "block";
+        modal.style.display = "flex";
         event.stopImmediatePropagation();
         event.preventDefault();
       }
+    }
+
+    if (event.keyCode === 27) {
+      modal.style.display = "none";
+      event.preventDefault()
     }
   }, true);
 
