@@ -19,7 +19,8 @@
     "linkschecker": "NODE_PATH=. NODE_ENV=test node scripts/links-checker.js",
     "cypress": "cypress run",
     "lint": "standard --fix",
-    "generate-octicons": "node ./script/generate-octicons.js"
+    "generate-octicons": "node ./script/generate-octicons.js",
+    "heroku-postbuild": "npm run precompile-assets"
   },
   "husky": {
     "hooks": {
