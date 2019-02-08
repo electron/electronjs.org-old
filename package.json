@@ -15,7 +15,7 @@
     "release": "node script/release",
     "dev": "cross-env NODE_PATH=. NODE_ENV=development nodemon server.js",
     "prepack": "check-for-leaks",
-    "precompile-assets": "cross-env NODE_ENV=test script/precompile-assets",
+    "precompile-assets": "cross-env NODE_ENV=production script/precompile-assets",
     "linkschecker": "NODE_PATH=. NODE_ENV=test node scripts/links-checker.js",
     "cypress": "cypress run",
     "lint": "standard --fix",
