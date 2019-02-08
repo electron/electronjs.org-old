@@ -9,4 +9,6 @@ rm -r precompiled || true
 mkdir -p precompiled/scripts
 mkdir -p precompiled/styles
 node ./script/precompile-js
+./node_modules/.bin/uglifyjs --compress --mangle -o precompiled/scripts/index.min.js -- precompiled/scripts/index.js
+mv precompiled/scripts/index.min.js precompiled/scripts/index.js
 node ./script/precompile-sass
