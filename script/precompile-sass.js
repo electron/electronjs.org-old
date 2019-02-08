@@ -2,7 +2,7 @@ const path = require('path')
 const fs = require('fs')
 const sass = require('node-sass')
 
-const source      = path.join(__dirname, '../public/styles/index.scss')
+const source = path.join(__dirname, '../public/styles/index.scss')
 const destination = path.join(__dirname, '../precompiled/styles/index.css')
 
 sass.render({
