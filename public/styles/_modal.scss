@@ -51,7 +51,11 @@
 
 /* Modal Body */
 .modal-body {
-	padding: 20px;
+  padding: 20px;
+
+  table {
+    width: 100%;
+  }
 }
 
 /* Modal Footer */

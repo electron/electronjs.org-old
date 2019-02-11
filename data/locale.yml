@@ -17,8 +17,8 @@ nav:
 keyboard_modal:
   focus_search: Focus search bar.
   focus_and_clear: Focus search bar and clearns it.
-  scroll_down: ??? - Adds an <code>active</code> class to the next (visible) hit. Only applies when the search input contains a value.
-  scroll_up: ??? - Adds an <code>active</code> class to the previous (visible) hit. If already on the first search hit, the search input is focused. Only applies when the search input contains a value.
+  scroll_down: Scroll the searched result bottom.
+  scroll_up: Scroll the searched result upper.
   open: Opens the searched result.
   open_new_tab: Opens the searched result in new tab.
 
