@@ -42,12 +42,7 @@ app.engine('html', hbs.express4({
 // Middleware
 app.set('view engine', 'html')
 app.set('views', path.join(__dirname, '/views'))
-app.use(nakedRedirect({
-  reverse: true,
-  subDomain: 'www',
-  status: 302,
-  protocol: process.env.NODE_ENV === 'production' ? 'https' : 'http'
-}))
+app.use(nakedRedirect(true, 'www', 302))
 app.use(compression())
 app.use(helmet())
 app.use(sass())
