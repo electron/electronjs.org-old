@@ -3,7 +3,7 @@ module.exports = function installKbShortcutDialog () {
   const modal = document.getElementById('kb-shortcut-dialog')
 
   // Get the <span> element that closes the modal
-  const span = document.getElementsByClassName('close')[0]
+  const span = modal.getElementsByClassName('close')[0]
 
   // When the user types ?, open the modal
   window.addEventListener('keydown', event => {
@@ -17,6 +17,9 @@ module.exports = function installKbShortcutDialog () {
 
     if (event.keyCode === 27) {
       modal.style.display = 'none'
+      event.stopImmediatePropagation()
+      event.preventDefault()
+    } else if (event.keyCode !== 27) {
       event.stopImmediatePropagation()
       event.preventDefault()
     }
