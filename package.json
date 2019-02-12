@@ -57,7 +57,7 @@
     "helmet": "^3.15.0",
     "http-proxy-middleware": "^0.19.1",
     "hubdown": "^2.1.0",
-    "instantsearch.js": "^2.10.4",
+    "instantsearch.js": "^3.1.0",
     "lil-env-thing": "^1.0.0",
     "lobars": "^1.2.0",
     "locale-code": "^2.0.0",
