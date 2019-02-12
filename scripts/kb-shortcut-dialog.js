@@ -15,10 +15,12 @@ module.exports = function installKbShortcutDialog () {
       }
     }
 
-    if (event.keyCode === 27) {
-      modal.style.display = 'none'
-      event.stopImmediatePropagation()
-      event.preventDefault()
+    if (modal.style.display === 'block') {
+      if (event.keyCode === 27) {
+        modal.style.display = 'none'
+        event.stopImmediatePropagation()
+        event.preventDefault()
+      }
     }
   }, true)
 
