@@ -19,5 +19,5 @@ document.addEventListener('DOMContentLoaded', () => {
   require('./expanding-versions')()
   require('./install-toggle')()
   require('./language-selector')()
-  require('./modal')()
+  require('./kb-shortcut-dialog')()
 })

@@ -1,6 +1,6 @@
-module.exports = function installModal () {
+module.exports = function installKbShortcutDialog () {
   // Get the modal
-  const modal = document.getElementById('myModal')
+  const modal = document.getElementById('kb-shortcut-dialog')
 
   // Get the <span> element that closes the modal
   const span = document.getElementsByClassName('close')[0]
@@ -17,6 +17,8 @@ module.exports = function installModal () {
 
     if (event.keyCode === 27) {
       modal.style.display = 'none'
+      event.stopImmediatePropagation()
+      event.preventDefault()
     }
   }, true)
 

@@ -1,5 +1,5 @@
 /* modal background */
-.modal {
+.kb-shortcut {
 	display: none; /* Hidden by default */
 	position: fixed; /* Stay in place */
   z-index: 5;
@@ -12,7 +12,7 @@
 }
 
 /* modal box */
-.modal-content {
+.kb-shortcut-content {
   background-color: #fefefe;
   margin: 150px auto; /* 15% from the top and centered */
   border: 1px solid #888;
@@ -21,7 +21,7 @@
 }
 
 /* Modal Header */
-.modal-header {
+.kb-shortcut-header {
   padding: 2px 16px;
   // background-color: #5cb85c;
   // color: white;
@@ -50,7 +50,7 @@
 }
 
 /* Modal Body */
-.modal-body {
+.kb-shortcut-body {
   padding: 20px;
 
   table {
@@ -59,17 +59,17 @@
 }
 
 /* Modal Footer */
-.modal-footer {
+.kb-shortcut-footer {
   padding: 2px 16px;
   background-color: #5cb85c;
   color: white;
 }
 
-.modal th, .modal td {
+.kb-shortcut th, .kb-shortcut td {
   padding: 5px;
   text-align: left;
 }
 
-.modal h2 {
+.kb-shortcut h2 {
 	margin: 0.5em 0;
 }
