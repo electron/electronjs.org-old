@@ -19,9 +19,6 @@ module.exports = function installKbShortcutDialog () {
       modal.style.display = 'none'
       event.stopImmediatePropagation()
       event.preventDefault()
-    } else if (event.keyCode !== 27) {
-      event.stopImmediatePropagation()
-      event.preventDefault()
     }
   }, true)
 
