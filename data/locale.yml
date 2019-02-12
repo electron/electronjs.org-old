@@ -15,12 +15,12 @@ nav:
   userland: Userland
 
 keyboard_modal:
-  focus_search: Focus search bar.
-  focus_and_clear: Focus search bar and clearns it.
-  scroll_down: Scroll the searched result bottom.
-  scroll_up: Scroll the searched result upper.
-  open: Opens the searched result.
-  open_new_tab: Opens the searched result in new tab.
+  focus_search: Focus the search bar
+  focus_and_clear: Focus the search bar and cleans it
+  scroll_down: Select the next search result
+  scroll_up: Select the previous search result
+  open: Open the selected search result
+  open_new_tab: Open the selected search result in a new tab
 
 docs:
   title: Electron Documentation
