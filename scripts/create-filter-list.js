@@ -1,4 +1,4 @@
-const { debounce } = require('lodash')
+const debounce = require('lodash/debounce')
 const lunr = require('lunr')
 const queryString = require('query-string')
 const setQueryString = require('set-query-string')

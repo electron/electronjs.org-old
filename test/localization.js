@@ -8,7 +8,7 @@ const fs = require('fs')
 const path = require('path')
 const walk = require('walk-sync')
 const flat = require('flat')
-const getProp = require('lodash').get
+const getProp = require('lodash/get')
 
 const locale = require(path.join(__dirname, '../data/locale.yml'))
 const views = walk.entries(path.join(__dirname, '../views'))
