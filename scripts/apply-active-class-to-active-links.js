@@ -1,4 +1,4 @@
-const { escapeRegExp } = require('lodash')
+const escapeRegExp = require('lodash/escapeRegExp')
 
 module.exports = function applyActiveClassToActiveLinks () {
   const topPath = `/${location.pathname.split('/')[1]}`

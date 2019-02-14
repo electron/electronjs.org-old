@@ -45,8 +45,14 @@ app.set('views', path.join(__dirname, '/views'))
 app.use(nakedRedirect(true, 'www', 302))
 app.use(compression())
 app.use(helmet())
-app.use(sass())
-app.use('/scripts/index.js', browserify('scripts/index.js'))
+if (process.env.NODE_ENV === 'production') {
+  console.log('Production app detected; serving JS and CSS from disk')
+  app.use(express.static(path.join(__dirname, 'precompiled'), { redirect: false }))
+} else {
+  console.log('Dev app detected; compiling JS and CSS in memory')
+  app.use(sass())
+  app.use('/scripts/index.js', browserify('scripts/index.js'))
+}
 app.get('/service-worker.js', (req, res) => res.sendFile(path.resolve(__dirname, 'scripts', 'service-worker.js')))
 app.use(cookieParser())
 app.use(requestLanguage({
