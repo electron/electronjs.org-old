@@ -1,7 +1,8 @@
 const { setupFeed } = require('./mainFeed')
+const blog = require('../../lib/blog')
 
-module.exports = function feedHandler (req, res, next) {
-  const feed = setupFeed('blog', req.context.posts)
+module.exports = async function feedHandler (req, res, next) {
+  const feed = setupFeed('blog', await blog.getPosts(true))
 
   if (req.path === '/blog.xml') {
     res.set('content-type', 'text/xml')
