@@ -10,6 +10,7 @@ feel free to propose changes to this document in a pull request.
 
 - [Issues and Pull Requests](#issues-and-pull-requests)
 - [Heroku Review Apps](#heroku-review-apps)
+- [Heroku Deployment](#heroku-deployment)
 - [Running the Site](#running-the-site)
 - [Editing Content](#editing-content)
   - [Documentation](#documentation)
@@ -43,6 +44,13 @@ You'll see a notification on GitHub after the branch has been deployed.
 When pull request is closed or merged, the ephemeral app is destroyed.
 
 ![review app notification](https://user-images.githubusercontent.com/2289/31911130-8a0f91da-b7f4-11e7-9784-9ad609321c18.png)
+
+## Heroku Deployment
+
+Heroku automatically deploys the `master` branch, so that branch
+should always be in a good state. [Preboot](https://devcenter.heroku.com/articles/preboot)
+is on for the site, so after a deployment there will be a period of a few
+minutes where old dynos are still serving traffic.
 
 ## Running the Site
 

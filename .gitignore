@@ -9,3 +9,4 @@ css/**/*.css
 yarn.lock
 cypress/videos/*
 /public/styles/octicons/octicons.html
+/precompiled/
