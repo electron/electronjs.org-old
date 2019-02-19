@@ -15,6 +15,9 @@ nav:
   userland: Userland
 
 keyboard_modal:
+  title: Keyboard Shortcuts
+  key: Key
+  action: Action
   focus_search: Focus the search bar
   focus_and_clear: Focus the search bar and cleans it
   scroll_down: Select the next search result
