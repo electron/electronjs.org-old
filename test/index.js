@@ -25,7 +25,7 @@ describe('electronjs.org', () => {
     res.headers['content-encoding'].should.equal('gzip')
   })
 
-  describe('feeds', async () => {
+  describe('feeds', () => {
     test('blog feeds', async () => {
       let res = await supertest(app).get(`/blog.json`)
       res.headers['content-type'].should.equal('application/json; charset=utf-8')
@@ -378,7 +378,7 @@ describe('electronjs.org', () => {
     })
   })
 
-  describe('devtron and spectron', async () => {
+  describe('devtron and spectron', () => {
     test('Test existed landing pages', async () => {
       let $ = await get('/devtron')
       $('.jumbotron-lead .jumbotron-lead-muted').text().should.eq('An Electron DevTools Extension')
@@ -387,7 +387,7 @@ describe('electronjs.org', () => {
     })
   })
 
-  describe('electron fiddle', async () => {
+  describe('electron fiddle', () => {
     test('Fiddle landing page existed', async () => {
       const $ = await get('/fiddle')
       $('.jumbotron-lead .jumbotron-lead-muted').text().should.eq('The easiest way to get started with Electron')
