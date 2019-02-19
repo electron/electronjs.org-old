@@ -1,0 +1,75 @@
+/* modal background */
+.kb-shortcut {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+  z-index: 5;
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%;
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgba(0, 0, 0, 0.4); /* Fallback color */
+}
+
+/* modal box */
+.kb-shortcut-content {
+  background-color: #fefefe;
+  margin: 150px auto; /* 15% from the top and centered */
+  border: 1px solid #888;
+  min-width: 800px;
+  width: 450px;
+}
+
+/* Modal Header */
+.kb-shortcut-header {
+  padding: 2px 16px;
+  // background-color: #5cb85c;
+  // color: white;
+
+	// color: $jumbo-color;
+  // background-color: lighten($jumbo-bg-color, 2%);
+  // border-bottom-color: darken($jumbo-bg-color, 8%);
+
+  /* modal close */
+  .close {
+    // I'm not sure why margin-top,bottom: auto; doesn't work :shrug:
+    margin-top: 20px;
+    margin-bottom: 20px;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover {
+    color: $main-link-color;
+    cursor: pointer;
+  }
+
+	color: $main-color-subtle;
+  background-color: #74b1be7a;
+}
+
+/* Modal Body */
+.kb-shortcut-body {
+  padding: 20px;
+
+  table {
+    width: 100%;
+  }
+}
+
+/* Modal Footer */
+.kb-shortcut-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.kb-shortcut th, .kb-shortcut td {
+  padding: 5px;
+  text-align: left;
+}
+
+.kb-shortcut h2 {
+	margin: 0.5em 0;
+}

@@ -1,6 +1,6 @@
 # Basecoat sites
 
-A set of SCSS partials that work with the existing [Primer](https://github.com/primer/primer) toolkit to create resuable code and design patterns for GitHub's marketing sites.
+A set of SCSS partials that work with the existing [Primer](https://github.com/primer/primer) toolkit to create reusable code and design patterns for GitHub's marketing sites.
 
 ## Getting Started
 
