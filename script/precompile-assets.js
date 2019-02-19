@@ -73,7 +73,8 @@ function precompileCss () {
       file: PATHS.cssEntry,
       includePaths: [
         PATHS.nodeModules
-      ]
+      ],
+      outputStyle: 'compressed'
     }, async function onSassCompiled (err, result) {
       if (err) {
         return reject(err)
