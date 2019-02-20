@@ -44,7 +44,7 @@ module.exports.setupFeed = memoize((type, items) => {
           link: `https://electronjs.org${post.href}`,
           date: new Date(post.date),
           published: new Date(post.date),
-          author: post.author,
+          author: post.author.map(name => ({ name }))[0],
           image: post.image || 'https://electronjs.org/images/opengraph.png'
         })
       })
