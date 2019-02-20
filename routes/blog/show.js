@@ -5,7 +5,7 @@ module.exports = async (req, res, next) => {
   try {
     post = await blog.getPost(req.params.slug)
   } catch (err) {
-    return next(err)
+    return next()
   }
 
   // redirect /blog/2016/09/27/foo to /blog/foo
