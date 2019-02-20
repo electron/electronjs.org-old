@@ -638,7 +638,7 @@ describe('electronjs.org', () => {
     })
   })
 
-  describe('Service tests', async () => {
+  describe('Service tests', () => {
     it('redirect /maintainers/join to G Forms', async () => {
       let res = await supertest(app).get(`/maintainers/join`)
       res.statusCode.should.equal(302)
@@ -647,6 +647,20 @@ describe('electronjs.org', () => {
     it('get /service-worker.js', async () => {
       let res = await supertest(app).get('/service-worker.js')
       res.headers['content-type'].should.equal('application/javascript; charset=UTF-8')
+    })
+
+    describe('search redirects', () => {
+      it('redirect /search/package to home page search', async () => {
+        const res = await supertest(app).get('/search/npmPackages?q=@siberianmh/cosmos')
+        res.statusCode.should.equal(302)
+        res.headers.location.should.equal('/?query=@siberianmh/cosmos')
+      })
+
+      it('redirect /search to home page', async () => {
+        const res = await supertest(app).get('/search')
+        res.statusCode.should.equal(302)
+        res.headers.location.should.equal('/')
+      })
     })
   })
 })
