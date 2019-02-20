@@ -1,9 +1,11 @@
 const blog = require('../../lib/blog')
 
 module.exports = async (req, res, next) => {
-  const post = await blog.getPost(req.params.slug)
-  if (!post) {
-    return next()
+  let post
+  try {
+    post = await blog.getPost(req.params.slug)
+  } catch (err) {
+    return next(err)
   }
 
   // redirect /blog/2016/09/27/foo to /blog/foo
