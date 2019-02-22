@@ -1,13 +1,14 @@
 const Feed = require('feed').Feed
 const description = require('description')
 const memoize = require('fast-memoize')
+const yubikiri = require('yubikiri')
 
 const types = {
   blog: 'blog',
   releases: 'releases'
 }
 
-module.exports.setupFeed = memoize((type, items) => {
+module.exports.setupFeed = memoize(async (type, items) => {
   let feed = new Feed({
     title: 'Electron',
     description:
@@ -34,8 +35,19 @@ module.exports.setupFeed = memoize((type, items) => {
         })
       })
       break
-    case types.blog:
-      items.forEach(post => {
+    case types.blog: {
+      const posts = await Promise.all(items.map(post => yubikiri({
+        href: post.href(),
+        title: post.title(),
+        content: post.content(),
+        date: post.date(),
+        author: async () => {
+          const authors = await post.authors()
+          return { name: authors[0] }
+        },
+        image: null // TODO
+      })))
+      posts.sort((a, b) => b.date.localeCompare(a.date)).forEach(post => {
         feed.addItem({
           id: `https://electronjs.org${post.href}`,
           title: post.title,
@@ -44,11 +56,12 @@ module.exports.setupFeed = memoize((type, items) => {
           link: `https://electronjs.org${post.href}`,
           date: new Date(post.date),
           published: new Date(post.date),
-          author: post.author.map(name => ({ name }))[0],
+          author: post.author,
           image: post.image || 'https://electronjs.org/images/opengraph.png'
         })
       })
       break
+    }
     default:
       console.log(type === types.releases)
       throw new Error('Invalid rss feed type')

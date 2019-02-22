@@ -1,7 +1,7 @@
 <div class="blog-byline mt-2 mb-4">
   <span data-date="{{post.date}}" data-format="%B %d, %Y" class="blog-index-time"></span>
 
-  {{#each post.author}}
+  {{#each post.authors}}
     <a href="https://github.com/{{this}}" class="author-link ml-3">
       <img src="https://github.com/{{this}}.png?size=36" alt="{{this}}" class="avatar mr-2">{{this}}
     </a>
