@@ -96,7 +96,7 @@
     "mocha": "^6.0.2",
     "nock": "^10.0.6",
     "nodemon": "^1.18.10",
-    "octicons": "^8.4.2",
+    "octicons": "^8.5.0",
     "simplecrawler": "^1.1.6",
     "standard": "^12.0.1",
     "supertest": "^3.4.2",
