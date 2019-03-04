@@ -24,6 +24,6 @@ Projects which ship 32-bit Linux Electron applications will need to decide how t
 
 ## What does that mean for users?
 
-If you are a Linux user and not sure whether or not you're running a 64-bit based system, you are likely runnong on a 64-bit based architecture. To make sure, you can run the `lscpu` or `uname -m` commands in your terminal. Either one will print your current architecture.
+If you are a Linux user and not sure whether or not you're running a 64-bit based system, you are likely running on a 64-bit based architecture. To make sure, you can run the `lscpu` or `uname -m` commands in your terminal. Either one will print your current architecture.
 
 If you are using Linux on a 32-bit processor, you have likely already encountered difficulties finding recently released software for your operating system. The Electron team joins other prominent members in the Linux community by recommending that you upgrade to a 64-bit based architecture.
