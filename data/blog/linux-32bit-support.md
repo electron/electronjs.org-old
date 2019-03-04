@@ -20,7 +20,7 @@ Electron has always been a vibrant open source project and we continue to suppor
 
 If you are not currently providing 32-bit distributions of your app for Linux, no action is required.
 
-If you are building a cross-platform application using Electron and are currently providing 32-bit distributions of your app for Linux, we recommend that you too drop support for 32-bit Linux installations. No changes are required to your application's code.
+Projects which ship 32-bit Linux Electron applications will need to decide how to proceed. 32-bit Linux will be supported on Electron 3 [until](https://electronjs.org/docs/tutorial/support#supported-versions) the release of Electron 6, which gives some time to make decisions and plans.
 
 ## What does that mean for users?
 
