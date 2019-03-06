@@ -1,8 +1,6 @@
-// Module Version: 1.0.6
-// Module Name: pagination
-
-// Taken from Primer:
-// https://github.com/primer/primer/blob/7eb737481000fe95e2dd93c2ddf3be0cc9334f33/modules/primer-pagination/lib/pagination.scss
+// https://github.com/primer/css/blob/v12.1.0/src/pagination/pagination.scss
+// Needs refactoring
+// stylelint-disable selector-max-type
 .pagination {
   @include clearfix;
 
