@@ -20,7 +20,7 @@
     "cypress": "cypress run",
     "lint": "standard --fix",
     "generate-octicons": "node ./script/generate-octicons.js",
-    "verify-primer": "node ./script/verify-primer.js",
+    "check-primer-version": "node ./script/check-primer-version.js",
     "heroku-postbuild": "npm run precompile-assets"
   },
   "husky": {

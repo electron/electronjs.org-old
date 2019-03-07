@@ -1,9 +1,8 @@
 const fs = require('fs')
 const fetch = require('node-fetch')
 
-verifyPrimer()
+checkPrimerVersion()
 
-// TODO: Replace by find-me-value module
 function findMeValue (text, key) {
   if (typeof text !== 'string' || typeof key !== 'string') {
     throw new TypeError('Expected a string')
@@ -18,14 +17,14 @@ function findMeValue (text, key) {
   }
 }
 
-async function verifyPrimer () {
+async function checkPrimerVersion () {
   const url = `https://cdn.jsdelivr.net/gh/primer/primer@master/package.json`
   const localVersion = fs.readFileSync('./public/styles/primer/.version', 'utf8').slice(0, 6) // ugh hacks
 
   fetch(url)
     .then(res => res.text())
     .then(body => {
-      const masterVersion = findMeValue(body, '"version":').replace(/",/, '').replace(/"/, '') // simplfiy
+      const masterVersion = findMeValue(body, '"version":').slice(1, 7)
 
       if (masterVersion !== localVersion) {
         console.log(`WARNING: Local version of Primer behind version on npm:\n - Local Version: ${localVersion}\n - Version on npm: ${masterVersion}`)
