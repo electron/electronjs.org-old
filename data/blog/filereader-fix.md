@@ -4,7 +4,7 @@ author: marshallofsound
 date: '2019-03-07'
 ---
 
-A High severity vulnerability has been discovered inside Chrome affecting all software based on Chromium, including Electron.
+A High severity vulnerability has been discovered in Chrome which affects all software based on Chromium, including Electron.
 
 This vulnerability has been assigned `CVE-2019-5786`.  You can read more about it in the [Chrome Blog Post](https://chromereleases.googleblog.com/2019/03/stable-channel-update-for-desktop.html).
 
@@ -26,7 +26,7 @@ We've published new versions of Electron which include fixes for this vulnerabil
   * [3.0.16](https://github.com/electron/electron/releases/tag/v3.0.16)
   * [2.0.18](https://github.com/electron/electron/releases/tag/v2.0.18)
 
-The latest version of Electron 5 was tracking Chromium 73 and therefore is already patched:
+The latest beta of Electron 5 was tracking Chromium 73 and therefore is already patched:
   * [5.0.0-beta.5](https://github.com/electron/electron/releases/tag/v5.0.0-beta.5)
 
 ## Further Information
