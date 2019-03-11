@@ -338,5 +338,9 @@ landing:
       without <a href="https://electronforge.io/">electron-forge</a>.
       Then, use your favorite editor and take on the world!
 
+governance:
+  title: Electron Governance
+  description: Page describes how Electron works
+
 _404:
   page_not_found: Page not found.
