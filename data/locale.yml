@@ -298,6 +298,9 @@ pages:
   '/fiddle':
     title: Electron Fiddle
     description: The easiest way to get started with Electron
+  '/governance':
+    title: Electron Governance
+    description: Page describes how Electron works
   '/donors':
     title: Donors
 

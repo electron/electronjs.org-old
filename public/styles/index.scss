@@ -59,6 +59,9 @@
 // @primer/css imports
 @import "@primer/css/marketing/index.scss";
 
+// Primer local imports
+@import "./primer/container.scss";
+
 // Basecoat overrides
 @import "./helpers/buttons";
 @import "./helpers/tables";
