@@ -56,6 +56,9 @@
 @import "hljs/github.css"; // Syntax highlighting
 @import "hljs/overrides"; // customization
 
+// Primer imports
+@import "./primer/pagination";
+
 // Basecoat overrides
 @import "./helpers/buttons";
 @import "./helpers/tables";
@@ -64,7 +67,6 @@
 @import "./helpers/icons";
 @import "./helpers/navigation";
 @import "./helpers/page-headers";
-@import "./helpers/pagination";
 @import "./helpers/section";
 
 // Pages
