@@ -345,6 +345,25 @@ landing:
 governance:
   title: Electron Governance
   description: The Electron governance system is comprised of Working Groups that oversee different aspects of the Electron ecosystem, and an Administrative working group that functions to resolve conflicts between them.
+  wgs: Working Groups
+  docstools:
+    description: Oversees externally-focused tooling (e.g. Fiddle, Forge), Electron documentation across the website and <code>electron/*</code> repositories, and the maintainer’s group outreach to 3rd party modules.
+  outreach:
+    description: Grows the Electron community
+  releases:
+    description: Oversees all release branches, and tooling to support releases.
+  upgrades:
+    description: Oversees upgrades of upstream dependencies; specifically Chromium and Node.
+  website:
+    description: Oversees the technical implementation, design, and style of the Electron website and associated tooling.
+  cmsf:
+    description: Oversees removal/bans from community.
+  global:
+    overview: Overiview
+    associated_repos: Associated Repositories
+    notes: Meeting Notes
+  code_of_conduct: The Electron organization and all repos therein adhere to the following <a href="https://github.com/electron/governance/blob/master/CODE_OF_CONDUCT.md">Code of Conduct.</a>
+  license: Electron is licensed with an <a href="https://github.com/electron/electron/blob/master/LICENSE">MIT License</a>.
 
 _404:
   page_not_found: Page not found.
