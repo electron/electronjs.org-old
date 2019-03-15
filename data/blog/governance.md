@@ -19,11 +19,11 @@ People in the Electron project coordinate in timezones around the world with vol
 Electron governance includes working groups that are responsible for different parts of the project. We're starting out with seven groups:
  * Community & Safety: Handles [Code of Conduct](https://github.com/electron/governance/blob/master/CODE_OF_CONDUCT.md) issues.
  * Docs & Tooling: Oversees externally-focused tooling (e.g. [Fiddle](https://electronjs.org/fiddle), [Forge](https://electronforge.io/)) and the Electron [documentation](https://electronjs.org/docs).
- * Outreach: Growing the Electron community.
+ * Outreach: Helps grow the Electron community.
  * Releases: Ensures releases are stable and on schedule.
  * Security: Performs security testing and responds to security issues.
  * Upgrades: Integrates upstream upgrades, such as new versions of V8, Chromium, and Node.
- * Website: [You're lookin' at it](https://electronjs.org/).
+ * Website: You're lookin' at it. https://electronjs.org/
 
 These groups will coordinate with each other, but each has their own meeting schedules and agendas to be productive on their own. More details on these groups is available [here](https://github.com/electron/governance/blob/master/README.md).
 
