@@ -366,6 +366,7 @@ governance:
     description: Oversees removal/bans from community.
   security:
     title: Security
+    description: Proactively ensures the Security of Electron as a project, responds to incoming incidents, and oversees rollout of fixes.
   admins:
     title: Admins
   global:
@@ -378,14 +379,15 @@ governance:
     second: A <i>collaborator</i> is active in the community, but not in governance.
     third: A <i>participant</i> is anyone who is a maintainer or collaborator.
     four: A <i>working group</i> is a group of maintainers that is formed to take responsibility for certain aspects of the Electron project. Normally these groups will meet regularly but in some cases will only meet as required to fulfill their responsibilities.
-    five: A <a href="CHANGEME ORIGINAL Leadership">chair</a> leads a working group.
+    five: A <a href="https://github.com/electron/governance/tree/master/charter/README.md#Leadership">chair</a> leads a working group.
   responsibilities:
     title: Responsibilities
     listdescription: "All Working Groups have these core responsibilities:"
     first: They shall decide for themselves, and publicly post, their rules, e.g. how decisions are made, when meetings are held, and who may attend.
-    second: They shall <a href="CHANGME ORIGINAL Leadership-Terms-and-Selection">select</a> a chair to <a href='CHANGEME ORIGINAL Leadership-Responsibilities'>represent</a> the group.
+    second: They shall <a href="https://github.com/electron/governance/tree/master/charter/README.md#Leadership-Terms-and-Selection">select</a> a chair to <a href='https://github.com/electron/governance/tree/master/charter/README.md#Leadership-Responsibilities'>represent</a> the group.
     third: They shall keep meeting notes, including agenda items, discussion points, and outcomes for everyone to review.
-    four: They shall be collaborative and work <a href="CHANGEME ORIGINAL Core-Values">in good faith</a> with other Working Groups.
+    four: They shall be collaborative and work <a href="https://github.com/electron/governance/tree/master/charter/README.md#Core-Values">in good faith</a> with other Working Groups.
+    see_charter: See <a href="https://github.com/electron/governance/tree/master/charter/README.md">charter</a> for more information.
   code_of_conduct: The Electron organization and all repos therein adhere to the following <a href="https://github.com/electron/governance/blob/master/CODE_OF_CONDUCT.md">Code of Conduct.</a>
   license: Electron is licensed with an <a href="https://github.com/electron/electron/blob/master/LICENSE">MIT License</a>.
 
