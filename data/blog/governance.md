@@ -25,7 +25,7 @@ Electron governance includes working groups that are responsible for different p
  * Upgrades: Integrates upstream upgrades, such as new versions of V8, Chromium, and Node.
  * Website: Maintains and improves [the Electron website](https://electronjs.org/).
 
-These groups will coordinate with each other, but each has their own meeting schedules and agendas to be productive on their own. More details on these groups is available [here](https://github.com/electron/governance/blob/master/README.md).
+These groups will coordinate with each other, but each has their own meeting schedules and agendas to be productive on their own. More details on these groups are available at the [governance repository](https://github.com/electron/governance/blob/master/README.md).
 
 ## Does this change the Electron project's direction?
 
