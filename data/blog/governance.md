@@ -12,7 +12,7 @@ As Electron grows in popularity for desktop applications, the team working on it
 
 ## Why are things changing?
 
-People in the Electron project coordinate in timezones around the world with volunteers, with fulltime maintainers, and with several companies who all rely on Electron. Until now we've been successful with informal coordination; but as the team grows, that approach doesn't scale. We also want to make it easier for new contributors to find a place to call home in the project.
+People in the Electron project coordinate in timezones around the world with volunteers, with full-time maintainers, and with several companies who all rely on Electron. Until now, we've been successful with informal coordination; but as the team has grown, we've found that the approach doesn't scale. We also want to make it easier for new contributors to find a place to call home in the project.
 
 ## Working Groups
 
