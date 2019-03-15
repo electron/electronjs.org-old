@@ -23,7 +23,7 @@ Electron governance includes working groups that are responsible for different p
  * Releases: Ensures releases are stable and on schedule.
  * Security: Performs security testing and responds to security issues.
  * Upgrades: Integrates upstream upgrades, such as new versions of V8, Chromium, and Node.
- * Website: You're lookin' at it. https://electronjs.org/
+ * Website: Maintains and improves [the Electron website](https://electronjs.org/).
 
 These groups will coordinate with each other, but each has their own meeting schedules and agendas to be productive on their own. More details on these groups is available [here](https://github.com/electron/governance/blob/master/README.md).
 
