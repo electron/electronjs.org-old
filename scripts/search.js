@@ -1,6 +1,7 @@
 const templates = require('../templates')
-const instantsearch = require('instantsearch.js')
+const instantsearch = require('instantsearch.js').default
 const pluralize = require('pluralize')
+const algoliasearch = require('algoliasearch')
 const searchWithYourKeyboard = require('search-with-your-keyboard')
 const searches = {}
 const types = [{
@@ -17,6 +18,8 @@ const types = [{
   path: '/apps'
 }]
 const typeNames = types.map(type => type.name)
+const appId = 'L9LD9GHGQJ';
+const apiKey = '24e7e99910a15eb5d9d93531e5682370';
 
 module.exports = () => {
   buildMultiSearch()
@@ -25,10 +28,23 @@ module.exports = () => {
   searchWithYourKeyboard('#search-input', '.ais-hits--item')
 }
 
+// Function to create the customSearchBox widget factory
+const searchBoxRenderer = function(renderParams, isFirstRender){
+  if(isFirstRender)
+  {
+    let input = renderParams.widgetParams.container;
+    input.addEventListener('input', (event)=>{
+        renderParams.refine(event.target.value);
+    })
+  }
+  document.querySelector('#search-input').value = renderParams.query;
+}
+
+let customSearchBox = instantsearch.connectors.connectSearchBox(searchBoxRenderer);
+
 function buildSearch (type, isPrimarySearch = false, searches) {
   const opts = {
-    appId: 'L9LD9GHGQJ',
-    apiKey: '24e7e99910a15eb5d9d93531e5682370',
+    searchClient: algoliasearch(appId, apiKey),
     indexName: pluralize(type),
     advancedSyntax: true
   }
@@ -103,24 +119,15 @@ function buildSearch (type, isPrimarySearch = false, searches) {
         // empty: 'No results',
         item: templates[type]
       },
-      transformData: {
-        item: data => {
-          // useful for viewing template context:
-          // console.log(`${type} data`, data)
-          return data
-        }
-      }
+      transformItems: items => 
+        items.map(item => item)
     })
   )
 
   if (isPrimarySearch) {
-    search.addWidget(
-      instantsearch.widgets.searchBox({
-        container: '#search-input',
-        placeholder: `Search Electron ${pluralize(type)}`,
-        autofocus: false
-      })
-    )
+    search.addWidget(customSearchBox({
+      container: document.querySelector('#search-input')
+    }));
   }
 
   search.on('render', (...args) => {
@@ -149,7 +156,7 @@ function buildMultiSearch () {
 }
 
 function buildSearchUIHandlers () {
-  if (location.search.includes('query=')) showHits()
+  if (location.search.includes('q=')) showHits()
 
   let navInput = document.querySelector('.nav-search')
   let hits = document.getElementById('hits')

@@ -30,6 +30,7 @@
   "dependencies": {
     "@babel/core": "^7.3.4",
     "@babel/preset-env": "^7.3.4",
+    "algoliasearch": "^3.32.0",
     "awesome-electron": "2.6.0",
     "babelify": "^10.0.0",
     "brfs": "^2.0.2",
@@ -59,7 +60,7 @@
     "helmet": "^3.16.0",
     "http-proxy-middleware": "^0.19.1",
     "hubdown": "^2.1.0",
-    "instantsearch.js": "^2.10.4",
+    "instantsearch.js": "^3.1.1",
     "lil-env-thing": "^1.0.0",
     "lobars": "^1.2.0",
     "locale-code": "^2.0.2",
