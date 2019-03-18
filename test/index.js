@@ -92,6 +92,12 @@ describe('electronjs.org', () => {
       $('.category-list li').length.should.be.above(15)
     })
 
+    test('redirect app/:slug to apps/:slug', async () => {
+      let res = await supertest(app).get(`/app/github-desktop`)
+      res.statusCode.should.equal(302)
+      res.headers.location.should.equal('/apps/github-desktop')
+    })
+
     test('index has custom title and description meta tags', async () => {
       const $ = await get('/apps')
       $('head > title').text().should.eq('Electron Apps | Electron')
@@ -107,6 +113,11 @@ describe('electronjs.org', () => {
       const clone = dates.slice(0)
       dates.length.should.be.above(10)
       clone.sort((a, b) => new Date(b) - new Date(a)).should.deep.equal(dates)
+    })
+
+    test('no category', async () => {
+      const $ = await get('/apps?category=some-category')
+      $('h1').text().should.eq('404')
     })
 
     test('index filtered by category', async () => {
@@ -129,6 +140,13 @@ describe('electronjs.org', () => {
       const $ = await get('/apps/nonexistent-app')
       $.res.status.should.eq(404)
       $('.error-page').text().should.include('Page not found')
+    })
+  })
+
+  describe('donors', () => {
+    test('index', async () => {
+      const $ = await get('/donors')
+      $('h1').text().should.eq('Donors')
     })
   })
 
@@ -159,6 +177,32 @@ describe('electronjs.org', () => {
       res = await supertest(app).get(`/docs/v0.20.0`)
       res.statusCode.should.equal(302)
       res.headers.location.should.equal('/docs')
+    })
+
+    test('redirect /docs/tutorial/faq to /docs/faq', async () => {
+      const res = await supertest(app).get('/docs/tutorial/faq')
+      res.statusCode.should.equal(302)
+      res.headers.location.should.equal('/docs/faq')
+    })
+
+    test('redirects latest docs URLs', async () => {
+      let res = await supertest(app).get(`/docs/latest/api/app`)
+      res.statusCode.should.equal(302)
+      res.headers.location.should.equal('/docs/api/app')
+      res = await supertest(app).get(`/docs/latest`)
+      res.statusCode.should.equal(302)
+      res.headers.location.should.equal('/docs')
+    })
+
+    test('docs/api/structures', async () => {
+      const $ = await get('/docs/api/structures')
+      $('head > title').text().should.eq('API Structures | Electron')
+      $('tr').length.should.be.above(10)
+    })
+
+    test('docs/api/structures/page', async () => {
+      const $ = await get('/docs/api/structures/bluetooth-device')
+      $('h1 > a').text().should.eq('BluetoothDevice Object')
     })
 
     test('uses page title and description', async () => {
@@ -282,6 +326,12 @@ describe('electronjs.org', () => {
   })
 
   describe('releases', () => {
+    test('redirect /releases to /releases/stable', async () => {
+      let res = await supertest(app).get(`/releases`)
+      res.statusCode.should.equal(301)
+      res.headers.location.should.equal('/releases/stable')
+    })
+
     test('/releases/stable', async () => {
       const $ = await get('/releases/stable')
       $('h1').text().should.include('Releases')
@@ -309,6 +359,21 @@ describe('electronjs.org', () => {
       const titles = $('.release-entry').map((i, el) => $(el).text().trim()).get()
       titles.forEach(title => {
         title.should.match(/Electron \d+\.\d+\.\d+-beta\.\d+/)
+      })
+    })
+
+    test('/releases/nightly', async () => {
+      const $ = await get('/releases/nightly')
+      $('h1').text().should.include('Releases')
+      $('.release-entry').length.should.eq(5)
+      $('a.releases-link-nightly').hasClass('active').should.eq(true)
+      const pages = $('.paginate-container .page-link').last()
+      const lastPage = parseInt(pages.text().trim(), 10)
+      lastPage.should.be.gt(3)
+
+      const titles = $('.release-entry').map((i, el) => $(el).text().trim()).get()
+      titles.forEach(title => {
+        title.should.match(/Electron \d+\.\d+\.\d+-nightly\.\d+/)
       })
     })
 
@@ -496,9 +561,9 @@ describe('electronjs.org', () => {
     })
 
     test('redirects /issues/new to the website repo, for convenience', async () => {
-      const res = await supertest(app).get('/issues')
+      const res = await supertest(app).get('/issues/new')
       res.statusCode.should.equal(301)
-      res.headers.location.should.equal('https://github.com/electron/electronjs.org/issues')
+      res.headers.location.should.equal('https://github.com/electron/electronjs.org/issues/new')
     })
 
     test('redirects /pulls to the website repo, for convenience', async () => {
@@ -570,6 +635,32 @@ describe('electronjs.org', () => {
       res.statusCode.should.equal(405)
       res.type.should.equal('application/json')
       res.text.should.eq('"POST not allowed"')
+    })
+  })
+
+  describe('Service tests', () => {
+    it('redirect /maintainers/join to G Forms', async () => {
+      let res = await supertest(app).get(`/maintainers/join`)
+      res.statusCode.should.equal(302)
+    })
+
+    it('get /service-worker.js', async () => {
+      let res = await supertest(app).get('/service-worker.js')
+      res.headers['content-type'].should.equal('application/javascript; charset=UTF-8')
+    })
+
+    describe('search redirects', () => {
+      it('redirect /search/package to home page search', async () => {
+        const res = await supertest(app).get('/search/npmPackages?q=@siberianmh/cosmos')
+        res.statusCode.should.equal(302)
+        res.headers.location.should.equal('/?query=@siberianmh/cosmos')
+      })
+
+      it('redirect /search to home page', async () => {
+        const res = await supertest(app).get('/search')
+        res.statusCode.should.equal(302)
+        res.headers.location.should.equal('/')
+      })
     })
   })
 })
