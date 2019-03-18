@@ -13,6 +13,7 @@ nav:
   releases: Releases
   search: Search
   userland: Userland
+  governance: Governance
 
 keyboard_modal:
   title: Keyboard Shortcuts
@@ -85,8 +86,6 @@ community:
       "<a href='mailto:coc@electronjs.org'><b>Report Code of Conduct violations</b></a>
       by emailing
       <a href='mailto:coc@electronjs.org'>coc@electronjs.org</a>."
-    governance:
-      "<a href='/governance'><b>Governance</b> CHANGEME</a>"
     security:
       "<a href='mailto:security@electronjs.org'><b>Disclose security issues</b></a>
       by emailing
@@ -301,7 +300,7 @@ pages:
     description: The easiest way to get started with Electron
   '/governance':
     title: Electron Governance
-    description: Page describes how Electron works
+    description: The Electron governance system is comprised of Working Groups that oversee different aspects of the Electron ecosystem, and an Administrative working group that functions to resolve conflicts between them.
   '/donors':
     title: Donors
 
@@ -368,9 +367,10 @@ governance:
     title: Security
     description: Proactively ensures the Security of Electron as a project, responds to incoming incidents, and oversees rollout of fixes.
   admins:
-    title: Admins
+    title: Administrative
+    description: The Administrative Working Group oversees the entire governance and project.
   global:
-    overview: Overiview
+    overview: Overview
     associated_repos: Associated Repositories
     notes: Meeting Notes
   definitions:
@@ -390,6 +390,7 @@ governance:
     see_charter: See <a href="https://github.com/electron/governance/tree/master/charter/README.md">charter</a> for more information.
   code_of_conduct: The Electron organization and all repos therein adhere to the following <a href="https://github.com/electron/governance/blob/master/CODE_OF_CONDUCT.md">Code of Conduct.</a>
   license: Electron is licensed with an <a href="https://github.com/electron/electron/blob/master/LICENSE">MIT License</a>.
+  repository: See <a href="https://github.com/electron/governance">governance repository</a> to have information about the new governance structure.
 
 _404:
   page_not_found: Page not found.

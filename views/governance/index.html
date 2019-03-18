@@ -13,9 +13,6 @@
       <h2 class="h00-mktg my-2 lh-condensed text-center">
         <p class="text-gray-dark">{{localized.governance.wgs}}</p>
       </h2>
-      <p class="lead-mktg text-normal text-center mb-4 mx-auto text-gray">
-        ??? CHANGEME
-      </p>
 
       <div class="d-md-flex">
         <div class="col-md-4 px-3">
@@ -101,8 +98,11 @@
         <div class="col-md-4 px-3">
           <h3 class="h3-mktg text-normal mb-1">{{localized.governance.admins.title}}</h3>
           <p class="mb-3 text-gray">
-            ??? CHANGEME
+            {{localized.governance.admins.description}}
           </p>
+          <ul>
+            <li><a href="https://github.com/electron/governance/blob/master/wg-administrative/README.md">{{localized.governance.global.overview}}</a></li>
+          </ul>
         </div>
       </div>
     </div>
@@ -113,9 +113,6 @@
       <h2 class="h00-mktg my-2 lh-condensed text-center">
         <p class="text-gray-dark">{{localized.governance.definitions.title}}</p>
       </h2>
-      <p class="lead-mktg text-normal text-center mb-4 mx-auto text-gray">
-        ??? CHANGEME
-      </p>
 
       <div>
         <ul>
@@ -134,9 +131,6 @@
       <h2 class="h00-mktg my-2 lh-condensed text-center">
         <p class="text-gray-dark">{{{localized.governance.responsibilities.title}}}</p>
       </h2>
-      <p class="lead-mktg text-normal text-center mb-4 mx-auto text-gray">
-        ??? CHANGEME
-      </p>
 
       <div>
         <p>{{{localized.governance.responsibilities.listdescription}}}</p>
@@ -223,6 +217,14 @@
           </h2>
           <p class="mb-3 text-gray">
             {{{localized.governance.license}}}
+          </p>
+        </div>
+        <div class="col-md-6 p-3 px-md-6">
+          <h2 class="h3-mktg text-normal mt-0 mb-1">
+            {{localized.apps.repository}}
+          </h2>
+          <p class="mb-3 text-gray">
+            {{{localized.governance.repository}}}
           </p>
         </div>
       </div>
