@@ -23,10 +23,8 @@ Also, if you happen to be in Paris on December 5, Zeke will be [giving an Electr
 
 ### New Apps
 
-{: .table .table-ruled .table-full-width .table-with-spacious-first-column .mb-7}
-
-|     |     |    
---- | --- | --
+|   |   |   |
+|---|---|---|
 | <img src='/images/apps/pexels-icon.png' width='50'> | [Pexels](https://www.pexels.com/pro/mac-and-windows-app/) | Search for completely free photos and copy them into your clipboard |
 | <img src='/images/apps/timestamp-icon.png' width='50'> | [Timestamp](https://mzdr.github.io/timestamp/) | A better macOS menu bar clock with a customizable date/time display and a calendar |
 | <img src='/images/apps/harmony-icon.png' width='50'> | [Harmony](http://getharmony.xyz/) | Music player compatible with Spotify, Soundcloud, Play Music and your local files |
