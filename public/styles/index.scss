@@ -56,6 +56,13 @@
 @import "hljs/github.css"; // Syntax highlighting
 @import "hljs/overrides"; // customization
 
+// @primer/css imports
+@import "@primer/css/marketing/index.scss";
+@import "@primer/css/utilities/padding.scss";
+
+// Primer local imports
+@import "./primer/container.scss";
+
 // Basecoat overrides
 @import "./helpers/buttons";
 @import "./helpers/tables";
@@ -81,4 +88,5 @@
 @import "search";
 @import "versions";
 @import "kb-shortcut-dialog";
+@import "ui/governance";
 @import "ui/landing/fiddle";
