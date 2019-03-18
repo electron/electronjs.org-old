@@ -29,7 +29,7 @@ These groups will coordinate with each other, but each has their own meeting sch
 
 ## Does this change the Electron project's direction?
 
-This shouldn't have any direct effect on Electron's direction. With luck, working groups may make it easier for new contributors to find topics that interest them, and make maintainers' lives simpler by moving discussion they don't care about to other groups. If that happens, it may indirectly affect things by having more unblocked people working together.
+This shouldn't have any direct effect on Electron's direction. If our strategy is successful, working groups will make it easier for new contributors to find topics that interest them, and make maintainers' lives simpler by moving discussion unrelated to their day-to-day work to other groups. If that happens, it may indirectly affect things by having more unblocked people working together.
 
 ## Where can I learn more?
 
