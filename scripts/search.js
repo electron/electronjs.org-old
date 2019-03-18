@@ -38,13 +38,13 @@ function buildSearch (type, isPrimarySearch = false, searches) {
     // sync search input with query param in address bar
     opts.routing = {
       stateMapping: {
-        stateToRoute(UIstate){
-            // Use 'q' parameter in route instead of 'query'
-           return {q: UIstate.query}
-          },
-        routeToState(routeState){
-          return {query: routeState.q}
+        stateToRoute (UIstate) {
+          // Use 'q' parameter in route instead of 'query'
+          return { q: UIstate.query }
         },
+        routeToState (routeState) {
+          return { query: routeState.q }
+        }
       }
     }
 
