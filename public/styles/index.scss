@@ -32,7 +32,7 @@
 @import "../bower_components/primer-css/scss/buttons";
 // @import "../bower_components/primer-css/scss/menu";
 // @import "../bower_components/primer-css/scss/tabnav";
-@import "../bower_components/primer-css/scss/filter-list";
+// @import "../bower_components/primer-css/scss/filter-list";
 // @import "../bower_components/primer-css/scss/states";
 @import "../bower_components/primer-css/scss/tooltips";
 
@@ -59,6 +59,8 @@
 // @primer/css imports
 @import "@primer/css/marketing/index.scss";
 @import "@primer/css/utilities/padding.scss";
+@import "@primer/css/pagination/index.scss";
+@import "@primer/css/navigation/filter-list.scss";
 
 // Primer local imports
 @import "./primer/container.scss";
@@ -71,7 +73,6 @@
 @import "./helpers/icons";
 @import "./helpers/navigation";
 @import "./helpers/page-headers";
-@import "./helpers/pagination";
 @import "./helpers/section";
 
 // Pages
