@@ -1,4 +1,6 @@
 .fiddle {
+  @import "@primer/css/index.scss";
+
   .f-app-frame {
     img {
       box-shadow: 0 25px 30px -18px rgba(0, 0, 0, 0.28);
@@ -6,7 +8,8 @@
     }
   }
 
-  .jumbotron .container {
-    background-image: none;
+  .jumbo-color {
+    color: $jumbo-color;
+    background-color: $jumbo-bg-color
   }
 }
