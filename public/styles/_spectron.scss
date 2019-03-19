@@ -1,4 +1,6 @@
 .spectron {
+  @import "@primer/css/index.scss";
+
   .app-frame {
     background-color: $main-border-color;
   }
