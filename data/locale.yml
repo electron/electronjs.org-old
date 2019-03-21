@@ -4,6 +4,7 @@ nav:
   apps: Apps
   blog: Blog
   code_of_conduct: Code of Conduct
+  security: Security
   community: Community
   contact: Contact
   docs: Docs
@@ -185,6 +186,8 @@ explore:
     interactively demonstrates the most important features of the Electron API.
     See what's possible with Electron with sample code and helpful tips for
     building your app."
+  fiddle_title: Try more powerful experiments with Electron Fiddle
+  see_more_info: See more info
 
 download_from_github: Download from GitHub
 view_all_releases_on_github: <a href="https://github.com/electron/electron-api-demos/releases">View all releases</a> on GitHub
