@@ -219,13 +219,14 @@ footer:
   see_the_faq: See the frequently asked questions
 
 apps:
-  title: Apps built on Electron
-  description:
-    With Electron, creating a desktop application for your company or idea is
-    easy. Initially developed for GitHub's
+  title: Built on Electron
+  companies_description:
+    Initially developed for GitHub's
     <a href='https://atom.io' target='_blank'>Atom editor</a>, Electron has
-    since been used to create applications by companies like Microsoft,
-    Facebook, Slack, and Docker.
+    since been adopted by companies all over the world.
+  description:
+    With Electron, creating a desktop application for your company or idea
+    is easy. Check out some of the apps created by the community.
   view_more: View more apps
   submit_your_own: submit your own
   something_missing: Something missing?
