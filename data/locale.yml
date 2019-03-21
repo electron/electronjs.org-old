@@ -73,6 +73,10 @@ community:
       <a href='https://discuss.atom.io/c/electron'>Discuss</a>,
       or visiting
       <a href='https://stackoverflow.com/questions/tagged/electron'>Stack Overflow</a>."
+    security:
+      "<a href='mailto:security@electronjs.org'><b>Report security issues</b></a>
+      by emailing
+      <a href='mailto:security@electronjs.org'>security@electronjs.org</a>."
     bugs:
       "<a href='https://github.com/electron/electron/issues'><b>Report bugs</b></a>
       by opening issues on the
@@ -87,10 +91,6 @@ community:
       "<a href='mailto:coc@electronjs.org'><b>Report Code of Conduct violations</b></a>
       by emailing
       <a href='mailto:coc@electronjs.org'>coc@electronjs.org</a>."
-    security:
-      "<a href='mailto:security@electronjs.org'><b>Disclose security issues</b></a>
-      by emailing
-      <a href='mailto:security@electronjs.org'>security@electronjs.org</a>."
     donations:
       "<a href='donors'><b>Donate</b></a>
       on our
