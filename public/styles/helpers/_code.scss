@@ -30,6 +30,13 @@ code {
   }
 }
 
+// No spacer in code blocks
+pre code {
+  &:after {
+    content: none;
+  }
+}
+
 // Code blocks
 .highlight {
   margin: 0 0 $spacer3;
