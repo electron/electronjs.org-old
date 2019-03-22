@@ -1,6 +1,6 @@
 <main class="homepage PRIMER-REMOVE-ME">
-  <div class="py-6 py-sm-8 jumbotron jumbotron-home ">
-    <div class="container-xl p-responsive position-relative text-center">
+  <div class="jumbotron jumbotron-home text-center">
+    <div class="container-xl">
       {{> hero}}
       <p class='jumbotron-lead'>
         {{{localized.tagline}}}
@@ -8,7 +8,7 @@
     </div>
   </div>
 
-<div class="py-6 py-md-7 py-lg-8">
+<div class="py-7 py-md-8 py-lg-9" id='electron'>
   <div class="container-lg p-responsive">
     <div>
       <h1 class="f0-light text-center"><a href="/releases/stable">{{localized.nav.releases}}</a></h1>
@@ -40,14 +40,12 @@
       </div>
     </div>
   </div>
-</div>
 
-<div class="py-6 py-md-7 py-lg-8" id="electron">
-  <div class="container-lg p-responsive">
+  <div class="container-lg p-responsive mt-8" id="electron">
     <h1 class="f0-light text-center-sm">{{{localized.electron_is_easy.title}}}</h1>
     <p class="lead text-center-sm">{{{localized.electron_is_easy.description}}}</p>
 
-    <p class="text-center-sm mt-4 mb-8">
+    <p class="text-center-sm mt-4">
       <a class="btn-mktg btn-outline-mktg mr-2" type="button" href="https://youtu.be/8YP_nOCO-4Q">
         <span class="octicon octicon-eye mr-1"></span>
         <span>{{{localized.electron_is_easy.video_link}}}</span>
@@ -55,9 +53,11 @@
     </p>
 
     <hr class="pt-8">
+  </div>
 
-    <div class="d-sm-flex flex-row text-center text-small mt-6">
-      <div class="col-xs-12 col-sm-4">
+  <div class="py-7 py-md-8 py-lg-9">
+    <div class="text-center text-small mt-6">
+      <div class="container-lg p-responsive">
         <img class="home-illu" role="presentation" src="/images/web-tech.svg" aria-hidden="true">
         <h3 class="f1-light mb-2 mt-0">{{{localized.web_technologies.title}}}</h3>
         <p class="f4">{{{localized.web_technologies.description}}}</p>
@@ -74,12 +74,12 @@
       </div>
     </div>
 
-    <div class="text-center mt-8 mb-4">
-      <h2 class="f0-light">{{{localized.benefits.hard_parts_made_easy}}}</h2>
+    <div class="f-0-light text-center mt-8 mb-4">
+      <h2>{{{localized.benefits.hard_parts_made_easy}}}</h2>
     </div>
 
-    <div class="d-sm-flex flex-row text-center text-small mt-3 clearfix">
-      <div class="col-xs-12 col-sm-4 col-md-2 offset-md-1 mb-xs-4 mb-md-0 hero-feature">
+    <div class="d-flex flex-row text-center text-small mt-3">
+      <div class='col-xs-12 col-sm-4 col-md-2 mb-xs-4 mb-md-0 hero-feature'>
         <a class="hero-link" href="/docs/api/auto-updater/">
           <span class="octicon hero-octicon octicon-squirrel" aria-hidden="true"></span>
           {{{localized.benefits.automatic_updates}}}
@@ -160,7 +160,7 @@
         </a>
       </div>
       <div class='col-md-6 pr-md-5'>
-        <h3 class="f2-light mt-1 mb-3">{{localized.explore.fiddle_title}}</h3>
+        <h3 class="f3-light mt-1 mb-3">{{localized.explore.fiddle_title}}</h3>
         <p>{{{localized.landing.fiddle.description}}}</p>
         <p>
           <a
@@ -185,7 +185,7 @@
 
     <hr/>
 
-  <h3 class="h2-mktg text-normal mb-3">
+  <h3 class="h2-mktg text-normal mb-3 py-7">
     {{{localized.quick_start.title}}}
   </h3>
   <p>{{{localized.quick_start.description}}}</p>
