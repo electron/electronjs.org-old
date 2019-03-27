@@ -3,59 +3,62 @@
     margin-right: 10px;
   }
 </style>
-<div class='subtron'>
-  <div class='container-narrow'>
-    <h1>{{localized.headings.languages}}</h1>
-    <p class="lead mb-3">{{localized.taglines.languages}}</p>
+
+<main class="PRIMER-REMOVE-ME">
+  <div class='subtron'>
+    <div class='container-narrow'>
+      <h1 class="f00-light">{{localized.headings.languages}}</h1>
+      <p class="lead mb-3">{{localized.taglines.languages}}</p>
+    </div>
   </div>
-</div>
 
-<section class='page-section'>
-  <div class='container-narrow'>
-    <table class="table table-ruled table-full-width table-with-spacious-first-column mb-7">
-        <tr>
-          <th>{{localized.languages.choose_language}}</th>
-          <th>{{localized.languages.translation_progress}}</th>
-          <th>&nbsp;</th>
-        </tr>
-        {{#each locales}}
-        <tr>
-          <td>
-            {{#eq ../currentLocale this.locale}}<b>{{/eq}}
+  <div class='py-7 py-md-8 py-lg-9'>
+    <div class='container-lg p-responsive'>
+      <table class="table table-ruled table-full-width table-with-spacious-first-column mb-7">
+          <tr>
+            <th>{{localized.languages.choose_language}}</th>
+            <th>{{localized.languages.translation_progress}}</th>
+            <th>&nbsp;</th>
+          </tr>
+          {{#each locales}}
+          <tr>
+            <td>
+              {{#eq ../currentLocale this.locale}}<b>{{/eq}}
 
-            <a href="/languages/{{this.locale}}" id="{{this.locale}}">
-              {{#eq this.languageName this.languageNativeName}}
-                {{this.languageNativeName}}
-              {{else}}
-                {{this.languageNativeName}} ({{this.languageName}})
-              {{/eq}}
-            </a>
-
-            {{#eq ../currentLocale this.locale}}</b> <span class="faint">({{../localized.languages.current}})</span>{{/eq}}
-          </td>
-      
-          <td>
-            {{#eq this.locale 'en-US'}}
-              <span style="opacity:0.4">
-                  <progress value="{{this.stats.translated_progress}}" max="100">{{this.stats.translated_progress}}%</progress>
-                  N/A
-              </span>
-            {{else}}
-              <a href="https://crowdin.com/project/electron/{{this.languageCode}}" id="{{this.locale}}">
-                <progress value="{{this.stats.translated_progress}}" max="100">{{this.stats.translated_progress}}%</progress>
-                {{this.stats.translated_progress}}%
+              <a href="/languages/{{this.locale}}" id="{{this.locale}}">
+                {{#eq this.languageName this.languageNativeName}}
+                  {{this.languageNativeName}}
+                {{else}}
+                  {{this.languageNativeName}} ({{this.languageName}})
+                {{/eq}}
               </a>
-            {{/eq}}
-          </td>
-      
-          <td class="visible-on-hover">
-            {{#eq this.locale 'en-US'}}
-            {{else}}
-              <a href="https://crowdin.com/project/electron/{{this.languageCode}}">{{../localized.help_translate}}...</a>
-            {{/eq}}
-          </td>
-        </tr>
-        {{/each}}
-      </table>      
+
+              {{#eq ../currentLocale this.locale}}</b> <span class="faint">({{../localized.languages.current}})</span>{{/eq}}
+            </td>
+
+            <td>
+              {{#eq this.locale 'en-US'}}
+                <span style="opacity:0.4">
+                    <progress value="{{this.stats.translated_progress}}" max="100">{{this.stats.translated_progress}}%</progress>
+                    N/A
+                </span>
+              {{else}}
+                <a href="https://crowdin.com/project/electron/{{this.languageCode}}" id="{{this.locale}}">
+                  <progress value="{{this.stats.translated_progress}}" max="100">{{this.stats.translated_progress}}%</progress>
+                  {{this.stats.translated_progress}}%
+                </a>
+              {{/eq}}
+            </td>
+
+            <td class="visible-on-hover">
+              {{#eq this.locale 'en-US'}}
+              {{else}}
+                <a href="https://crowdin.com/project/electron/{{this.languageCode}}">{{../localized.help_translate}}...</a>
+              {{/eq}}
+            </td>
+          </tr>
+          {{/each}}
+        </table>
+    </div>
   </div>
-</section>
+</main>
