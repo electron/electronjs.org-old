@@ -4,6 +4,11 @@
     color: white !important;
   }
 
+  .app-download {
+    background-color: {{app.goodColorOnWhite}} !important;
+    color: white !important;
+  }
+
   .site-header-nav-item {
     opacity: 0.7;
   }
@@ -45,7 +50,8 @@
 
 </style>
 
-<section class="page-section">
+<main class="PRIMER-REMOVE-ME">
+<div class="py-7 py-md-8 py-lg-9">
 
   <!-- <nav aria-label="Breadcrumb">
     <ol>
@@ -53,47 +59,45 @@
       <li class="breadcrumb-item breadcrumb-item-selected text-small text-gray" aria-current="page">{{app.name}}</li>
     </ol>
   </nav> -->
-  <div class="container media-fluid">
-    <header class="app-header">
-      <div class="left-bar">
-        <img class='app-logo' src='/app-img/{{app.slug}}/{{app.icon128}}' alt='{{app.name}}'>
+  <div class="container-xl media-fluid">
+    <div class="clearfix pt-md-6">
+      <div class="col-md-3 float-md-left pr-md-5 mb-3 mb-md-0">
+        <div class="CircleBadge CircleBadge--large mx-auto box-shadow-large mt-1" style="background-color: #ffffff;"><img class="CircleBadge-icon" src='/app-img/{{app.slug}}/{{app.icon128}}' alt='{{app.name}}'></div>
       </div>
-      <div class="app-title">
-        <a class="app-link" href="{{app.website}}">
-          <h1 class='app-name'>{{app.name}}</h1>
-        </a>
-        <p class="app-description">
-          {{app.description}}
-        </p>
+      <div class="col-md-9 float-md-left pl-md-5 text-center text-md-left">
+        <h1 class="f00-light lh-condensed mb-3">
+          {{app.name}}
+        </h1>
+        <h3 class="text-mono text-normal text-gray-light">{{app.description}}</h3>
       </div>
-    </header>
+    </div>
     <div class="app-container">
       <main class="left-bar">
         <div class="app-meta">
 
           {{#if app.website}}
             <div class="app-meta-entry">
-              <h5>{{localized.apps.website}}</h5>
+              <h5 class="mb-2 text-mono text-normal text-gray-light">{{localized.apps.website}}</h5>
               <a href="{{app.website}}">{{app.website}}</a>
             </div>
           {{/if}}
 
           {{#if app.repository}}
             <div class="app-meta-entry">
-              <h5>{{localized.apps.repository}}</h5>
+              <h5 class="mb-2 text-mono text-normal text-gray-light">{{localized.apps.repository}}</h5>
               <a href="{{app.repository}}">{{app.repository}}</a>
             </div>
           {{/if}}
 
           <div class="app-meta-entry">
-            <h5>{{localized.apps.category}}</h5>
-            <a href="/apps?category={{app.categorySlug}}">{{app.category}}</a>
+            <h5 class="mb-2 text-mono text-normal text-gray-light">{{localized.apps.category}}</h5>
+            <a class="topic-tag topic-tag-link topic-tag-outline f6" href="/apps?category={{app.categorySlug}}">{{app.category}}</a>
           </div>
 
           {{#if app.latestRelease}}
             {{#if app.latestRelease.assets}}
               <div class="app-meta-entry app-meta-entry-downloads">
-                <h5>{{localized.apps.downloads}} ({{app.latestRelease.tag_name}})</h5>
+                <h5 class="mb-2 text-mono text-normal text-gray-light">{{localized.apps.downloads}} ({{app.latestRelease.tag_name}})</h5>
 
                 {{#each app.latestRelease.assets}}
                   <a class="app-download {{this.platform}}" href="{{this.browser_download_url}}">{{this.name}}</a>
@@ -106,28 +110,28 @@
 
           {{#if app.homebrewCaskName}}
             <div class="darwin-only app-meta-entry">
-              <h5>Homebrew</h5>
+              <h5 class="mb-2 text-mono text-normal text-gray-light">Homebrew</h5>
               <span class="shell-one-liner app-download-input">brew cask install {{app.homebrewCaskName}}</span>
             </div>
           {{/if}}
 
           {{#if app.snapcraftName}}
             <div class="linux-only app-meta-entry">
-              <h5>Snapcraft</h5>
+              <h5 class="mb-2 text-mono text-normal text-gray-light">Snapcraft</h5>
               <span class="shell-one-liner app-download-input">sudo snap install {{app.snapcraftName}}</span>
             </div>
           {{/if}}
 
           {{#if app.npmPackageName}}
             <div class="app-meta-entry">
-              <h5>npmjs.com</h5>
+              <h5 class="mb-2 text-mono text-normal text-gray-light">npmjs.com</h5>
               <span class="shell-one-liner app-download-input">npm install -g {{app.npmPackageName}}</span>
             </div>
           {{/if}}
 
           {{#if app.keywords}}
             <div class="app-meta-entry">
-              <h5>{{localized.apps.keywords}}</h5>
+              <h5 class="mb-2 text-mono text-normal text-gray-light">{{localized.apps.keywords}}</h5>
               {{#each app.keywords}}
                 <a class="app-keyword" href="/apps?q={{this}}">{{this}}</a>
               {{/each}}
@@ -137,14 +141,14 @@
 
           {{#if app.license}}
             <div class="app-meta-entry">
-              <h5>{{localized.apps.license}}</h5>
+              <h5 class="mb-2 text-mono text-normal text-gray-light">{{localized.apps.license}}</h5>
               <span>{{app.license}}</span>
             </div>
           {{/if}}
 
           {{#if app.latestRelease}}
             <div class="app-meta-entry">
-              <h5>{{localized.apps.latest_release}}</h5>
+              <h5 class="mb-2 text-mono text-normal text-gray-light">{{localized.apps.latest_release}}</h5>
               <a href="{{app.latestRelease.html_url}}">
                 {{app.latestRelease.name}}
                 <span class="app-tagname">({{app.latestRelease.tag_name}})</span>
@@ -156,7 +160,7 @@
       </main>
       <div class="app-boxes">
         {{#if app.readmeCleaned}}
-          <main id="readme" class="app-box app-readme">
+          <main id="readme" class="app-box app-readme markdown-body">
             {{{app.readmeCleaned}}}
           </main>
         {{/if}}
@@ -186,7 +190,8 @@
     <a href="https://github.com/electron/electron-apps/tree/master/apps/{{app.slug}}/{{app.slug}}.yml">{{localized.apps.edit_this_app}}</a>
   </p>
 
-</section>
+</div>
+</main>
 
 <script>
   window.app = true
