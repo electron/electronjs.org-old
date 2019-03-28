@@ -172,6 +172,7 @@
     white-space: nowrap;
     direction: rtl;
     text-align: left;
+    color: white !important;
 
     @include breakpoint(md) {
       display: inline-block;
