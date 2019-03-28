@@ -10,7 +10,7 @@
 }
 
 .table-ruled td, .table-ruled th {
-  padding: $spacer2;
+  padding: $spacer-2;
   line-height: 2;
   text-align: left;
   font-size: 14px;
@@ -19,11 +19,11 @@
 .table-with-spacious-first-column td:first-child,
 .table-with-spacious-second-column td:nth-child(2) {
   @include breakpoint(md) {
-    padding-right: $spacer5;
+    padding-right: $spacer-5;
     white-space: nowrap;
   }
 }
 
 .table-roomy-vertical {
-  margin: $spacer2 0;
+  margin: $spacer-2 0;
 }

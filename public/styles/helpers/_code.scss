@@ -39,13 +39,13 @@ pre code {
 
 // Code blocks
 .highlight {
-  margin: 0 0 $spacer3;
+  margin: 0 0 $spacer-3;
   border-radius: 4px;
-  background-color: $gray-0;
+  background-color: $gray;
   border: $border;
 
   pre {
-    padding: $spacer3;
+    padding: $spacer-3;
     overflow: auto;
     font-size: 16px;
     line-height: 1.45;
@@ -72,13 +72,13 @@ pre code {
 // Example styles
 
 .example {
-  padding: $spacer3;
+  padding: $spacer-3;
   border: $border;
   border-top-left-radius: $border-radius;
   border-top-right-radius: $border-radius;
 
   + .highlight {
-    margin-bottom: $spacer3;
+    margin-bottom: $spacer-3;
     border-top: 0;
     border-top-left-radius: 0;
     border-top-right-radius: 0;

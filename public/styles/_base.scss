@@ -21,11 +21,11 @@ h1,h2,h3,h4,h5,h6 {
 
 hr {
   border-color: $border-color; // override Primer
-  margin-left: $spacer6 !important;
-  margin-right: $spacer6 !important;
+  margin-left: $spacer-6 !important;
+  margin-right: $spacer-6 !important;
   @include breakpoint(md) {
-    margin-left: $spacer8 !important;
-    margin-right: $spacer8 !important;
+    margin-left: $spacer-8 !important;
+    margin-right: $spacer-8 !important;
   }
 }
 
@@ -91,7 +91,7 @@ img[data-src] {
   h5 { margin-top: 1.25em !important;  }
   h6 { margin-top: 1.125em !important; }
 
-  &.strong-headers hr { margin: $spacer6 0; }
+  &.strong-headers hr { margin: $spacer-6 0; }
   h1 { @include breakpoint(lg) { font-size: $body-font-size * 2.75; } }
 }
 

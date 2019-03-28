@@ -39,12 +39,7 @@ $heading-color: $main-color-strong !default;
 
 $border-color: $main-border-color !default;
 
-// Increase xl breakpoint
-// So that containers start breaking before touching the edge
-// Default: $container-max-widths: ( xl: 1260px );
-$grid-breakpoints: map-merge($grid-breakpoints, (xl: 1300px)) !default;
-
-$code-font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace !default;
+$code-font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
 
 $nodejs-color: #65AA4C;
 $chromium-color: #5586EB

@@ -6,7 +6,7 @@
   font-size: 13px;
   line-height: 32px; // match height of .footer-mark
   text-align: center;
-  border-top: 1px solid $gray-1;
+  border-top: 1px solid $gray-100;
   margin-top: auto; // makes footer sticky (with flexbox)
   border-color: darken($main-bg-color-shade, 8%) !important;
   background: $main-bg-color-shade !important;

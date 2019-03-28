@@ -3,9 +3,9 @@
 
 .jumbotron.jumbotron-home {
   // Reduce padding because the hero has some extra padding for the animation.
-  padding: $spacer2 $spacer3 $spacer6 $spacer3;
-  @include breakpoint(md) { padding: $spacer4 $spacer3 $spacer8 $spacer3; }
-  @include breakpoint(xl) { padding: $spacer6 0 $spacer6 * 2 0; }
+  padding: $spacer-2 $spacer-3 $spacer-6 $spacer-3;
+  @include breakpoint(md) { padding: $spacer-4 $spacer-3 $spacer-8 $spacer-3; }
+  @include breakpoint(xl) { padding: $spacer-6 0 $spacer-6 * 2 0; }
 }
 
 // Headers ------------------------------

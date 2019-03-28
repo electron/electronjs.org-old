@@ -25,13 +25,13 @@
 
     path,
     ellipse {
-      fill: $gray-8;
+      fill: $gray-800;
     }
   }
 }
 
 .menu {
-  margin-top: $spacer5;
+  margin-top: $spacer-5;
   margin-bottom: 15px;
   list-style: none;
   background-color: $white !important;
@@ -60,12 +60,12 @@
 
   &:hover {
     text-decoration: none;
-    background-color: $gray-0 !important;
+    background-color: $gray !important;
   }
 
   &.selected {
     font-weight: bold;
-    color: $gray-7 !important;
+    color: $gray-700 !important;
     cursor: default;
     background-color: $white !important;
   }
@@ -76,13 +76,13 @@
 .site-header {
   color: $jumbo-color !important;
   background-color: lighten($jumbo-bg-color, 2%) !important;
-  border-bottom: 1px solid $gray-1;
+  border-bottom: 1px solid $gray-100 !important;
   border-bottom-color: darken($jumbo-bg-color, 8%) !important;
   -webkit-font-smoothing: antialiased;
   padding-top: 25px;
   padding-bottom: 25px;
-  padding-left: $spacer3;
-  padding-right: $spacer3;
+  padding-left: $spacer-3;
+  padding-right: $spacer-3;
   text-align: center;
 
   @media (min-width: 700px) {

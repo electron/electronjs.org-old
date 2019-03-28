@@ -3,12 +3,12 @@
   background-color: $jumbo-bg-color;
   -webkit-font-smoothing: antialiased;
   position: relative;
-  padding-top: $spacer5;
-  padding-bottom: $spacer5;
+  padding-top: $spacer-5;
+  padding-bottom: $spacer-5;
 
   @include breakpoint(md) {
-    padding-top: $spacer8;
-    padding-bottom: $spacer8;
+    padding-top: $spacer-8;
+    padding-bottom: $spacer-8;
   }
 
   // Shadow
@@ -24,7 +24,7 @@
 
   h1 {
     font-size: 45px;
-    font-family: $display-font;
+    // font-family: $display-font;
     font-weight: 300;
 
     @include breakpoint(md) {
@@ -78,11 +78,11 @@
   border: 1px solid darken($sub-bg-color, 8%);
   background-color: $sub-bg-color;
 
-  padding: $spacer3;
-  @include breakpoint(sm) { padding: $spacer3; }
-  @include breakpoint(md) { padding: $spacer4; }
-  @include breakpoint(lg) { padding: $spacer5; }
-  @include breakpoint(xl) { padding: $spacer6; }
+  padding: $spacer-3;
+  @include breakpoint(sm) { padding: $spacer-3; }
+  @include breakpoint(md) { padding: $spacer-4; }
+  @include breakpoint(lg) { padding: $spacer-5; }
+  @include breakpoint(xl) { padding: $spacer-6; }
 
   h1 {
     margin: 0 0 .3em 0;
