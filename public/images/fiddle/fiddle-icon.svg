@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="96px" height="96px" viewBox="0 0 96 96" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>fiddle-icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Site" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Fiddle" transform="translate(-214.000000, 0.000000)">
+            <g id="Icon" transform="translate(214.000000, 0.000000)">
+                <circle id="BG" fill="#50556E" cx="48" cy="48" r="48"></circle>
+                <g id="Glyph" transform="translate(35.500000, 29.500000)" stroke="#2B2E3B" stroke-linecap="round" stroke-linejoin="round" stroke-width="5">
+                    <path d="M6,36 L6,1.42108547e-14 L30,1.42108547e-14 M6,16.8 L18,16.8" id="F"></path>
+                    <path d="M6,42 C9.3137085,42 12,39.3137085 12,36 C12,32.6862915 9.3137085,30 6,30 C2.6862915,30 0,32.6862915 0,36 C0,39.3137085 2.6862915,42 6,42 Z" id="Electron" fill="#EB5E00"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

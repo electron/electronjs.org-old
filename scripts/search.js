@@ -36,7 +36,17 @@ function buildSearch (type, isPrimarySearch = false, searches) {
   // the primary search delegates queries to secondary searches
   if (isPrimarySearch) {
     // sync search input with query param in address bar
-    opts.routing = true
+    opts.routing = {
+      stateMapping: {
+        stateToRoute (UIstate) {
+          // Use 'q' parameter in route instead of 'query'
+          return { q: UIstate.query }
+        },
+        routeToState (routeState) {
+          return { query: routeState.q }
+        }
+      }
+    }
 
     opts.searchFunction = (helper) => {
       let query = helper.state.query

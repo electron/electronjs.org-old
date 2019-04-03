@@ -3,7 +3,7 @@ const sass = require('node-sass-middleware')
 
 module.exports = function () {
   return sass({
-    src: path.join(__dirname, '../styles'),
+    src: path.join(__dirname, '../public/styles'),
     response: true,
     debug: false,
     includePaths: path.join(__dirname, '../node_modules'),

@@ -8,3 +8,7 @@ images/crushed
 css/**/*.css
 yarn.lock
 cypress/videos/*
+/public/styles/octicons/octicons.html
+/precompiled/
+.nyc_output
+coverage

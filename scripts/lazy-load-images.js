@@ -1,4 +1,4 @@
-const { throttle } = require('lodash')
+const throttle = require('lodash/throttle')
 
 function inViewport (element) {
   const { top, right, bottom, left } = element.getBoundingClientRect()

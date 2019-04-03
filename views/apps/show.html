@@ -30,6 +30,7 @@
   .shell-one-liner {
     background: {{app.faintColorOnWhite}};
     color: {{app.goodColorOnWhite}};
+    overflow-x: scroll;
   }
 
   .shell-one-liner::after {
@@ -55,7 +56,7 @@
   <div class="container media-fluid">
     <header class="app-header">
       <div class="left-bar">
-        <img class='app-logo' src='/node_modules/electron-apps/apps/{{app.slug}}/{{app.icon128}}' alt='{{app.name}}'>
+        <img class='app-logo' src='/app-img/{{app.slug}}/{{app.icon128}}' alt='{{app.name}}'>
       </div>
       <div class="app-title">
         <a class="app-link" href="{{app.website}}">
@@ -106,14 +107,21 @@
           {{#if app.homebrewCaskName}}
             <div class="darwin-only app-meta-entry">
               <h5>Homebrew</h5>
-              <span class="shell-one-liner" style="margin-top: 4px;display: block;">brew cask install {{app.homebrewCaskName}}</span>
-            </tr>
+              <span class="shell-one-liner app-download-input">brew cask install {{app.homebrewCaskName}}</span>
+            </div>
           {{/if}}
 
           {{#if app.snapcraftName}}
             <div class="linux-only app-meta-entry">
               <h5>Snapcraft</h5>
-              <span class="shell-one-liner" style="margin-top: 4px; display: block;">sudo snap install {{app.snapcraftName}}</span>
+              <span class="shell-one-liner app-download-input">sudo snap install {{app.snapcraftName}}</span>
+            </div>
+          {{/if}}
+
+          {{#if app.npmPackageName}}
+            <div class="app-meta-entry">
+              <h5>npmjs.com</h5>
+              <span class="shell-one-liner app-download-input">npm install -g {{app.npmPackageName}}</span>
             </div>
           {{/if}}
 
