@@ -17,8 +17,8 @@ const views = walk.entries(path.join(__dirname, '../views'))
     const fullPath = path.join(entry.basePath, entry.relativePath)
     const view = {
       relativePath: entry.relativePath,
-      localizedKeys: (fs.readFileSync(fullPath, 'utf8').match(/{{(@root\/)?[./]*localized\.[a-z_.]*}}/g) || [])
-        .map(ref => ref.replace(/(\.\.|@root)\//g, '').replace('{{localized.', '').replace('}}', ''))
+      localizedKeys: (fs.readFileSync(fullPath, 'utf8').match(/{{(#each )?(@root\/)?[./]*localized\.[a-z_.]*}}/g) || [])
+        .map(ref => ref.replace(/(\.\.|@root)\//g, '').replace('#each ', '').replace('{{localized.', '').replace('}}', ''))
     }
     return view
   })
@@ -34,6 +34,9 @@ describe('localized views', () => {
     views.forEach(view => {
       view.localizedKeys.length.should.be.above(0)
       view.localizedKeys.forEach(key => {
+        // #each is OK
+        if (Array.isArray(getProp(locale, key))) return
+
         expect(getProp(locale, key), `${view.relativePath}: ${key} has no string in locale.yml`).to.be.a('string')
       })
     })
@@ -44,6 +47,14 @@ describe('localized views', () => {
     const keys = Object.keys(flat(locale))
       .filter(key => !key.startsWith('pages.'))
       .filter(key => !key.startsWith('_404.'))
+      .map(key => {
+        const split = key.split('.')
+        // If it is an array index, just check we use the array
+        if (/^[0-9]+$/.test(split[split.length - 1])) {
+          return split.slice(0, split.length - 1).join('.')
+        }
+        return key
+      })
     keys.should.be.an('array')
     keys.length.should.be.above(50)
 
