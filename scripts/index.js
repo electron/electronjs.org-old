@@ -20,4 +20,5 @@ document.addEventListener('DOMContentLoaded', () => {
   require('./install-toggle')()
   require('./language-selector')()
   require('./kb-shortcut-dialog')()
+  require('./anchor-links')()
 })
