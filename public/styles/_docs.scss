@@ -41,18 +41,34 @@
   color: inherit;
 }
 
-h1 {
-  font-size: $h0-size-mobile !important;
-  font-weight: $font-weight-light !important;
+.docs {
+  h1 {
+    font-size: $h0-size-mobile !important;
+    font-weight: $font-weight-light !important;
 
-  @include breakpoint(md) { font-size: $h0-size !important; }
-}
+    @include breakpoint(md) { font-size: $h0-size !important; }
+  }
 
-h2 {
-  font-size: $h1-size-mobile !important;
-  font-weight: $font-weight-light !important;
+  h2 {
+    font-size: $h1-size-mobile !important;
+    font-weight: $font-weight-light !important;
 
-  @include breakpoint(md) { font-size: $h1-size !important; }
+    @include breakpoint(md) { font-size: $h1-size !important; }
+  }
+
+  h3 {
+    font-size: $h2-size-mobile !important;
+    font-weight: $font-weight-light !important;
+
+    @include breakpoint(md) { font-size: $h2-size !important; }
+  }
+
+  h4 {
+    font-size: $h3-size-mobile !important;
+    font-weight: $font-weight-light !important;
+
+    @include breakpoint(md) { font-size: $h3-size !important; }
+  }
 }
 
 .docs-heading {
@@ -72,11 +88,11 @@ h2 {
 
 .header-link .octicon {
   color: $main-color-subtle !important;
-  margin-left: .5em;
-  vertical-align: middle;
-  visibility: hidden;
+  margin-left: .5em !important;
+  vertical-align: middle !important;
+  visibility: hidden !important;
   :hover > & {
-    visibility: visible;
+    visibility: visible !important;
   }
 }
 
