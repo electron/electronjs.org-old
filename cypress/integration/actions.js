@@ -161,7 +161,7 @@ describe('electronjs.org', () => {
 
     it('change language via languages page', () => {
       cy.visit(`${localhost}/languages`)
-      cy.get('.page-section a[href="/languages/ru-RU"]:first').click()
+      cy.get('.container-lg a[href="/languages/ru-RU"]:first').click()
       cy.visit(`${localhost}`)
       cy.wait(500)
       cy.get('.jumbotron-lead').contains('Создавайте кроссплатформенные приложения при помощи JavaScript, HTML и CSS')
