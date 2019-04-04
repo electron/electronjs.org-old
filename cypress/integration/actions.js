@@ -65,9 +65,9 @@ describe('electronjs.org', () => {
       cy.get('a[href="/docs"]:first').click()
       cy.wait(500)
 
-      cy.get('.container-narrow')
+      cy.get('.container-lg')
       .contains('Electron Documentation')
-      cy.get('.container-narrow p').contains('See all of the docs on one page or check out the FAQ.')
+      cy.get('.container-lg p').contains('See all of the docs on one page or check out the FAQ.')
     })
 
     it('documentation page has guides, api references, and advanced sections', () => {
