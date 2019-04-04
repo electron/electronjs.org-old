@@ -4,8 +4,6 @@
 // Variables
 @import "variables"; // Electron override
 
-@import "primer-support/index.scss";
-
 // Devicon
 @import "vendor/devicon/devicon.css";
 
@@ -15,13 +13,6 @@
 @import "hljs/github.css"; // Syntax highlighting
 @import "hljs/overrides"; // customization
 
-// @primer/css imports
-@import "@primer/css/marketing/index.scss";
-@import "@primer/css/utilities/padding.scss";
-
-// Primer local imports
-@import "./primer/container.scss";
-
 // Basecoat overrides
 @import "./helpers/buttons";
 @import "./helpers/tables";
@@ -30,8 +21,6 @@
 @import "./helpers/icons";
 @import "./helpers/navigation";
 @import "./helpers/page-headers";
-@import "./helpers/pagination";
-@import "./helpers/section";
 
 // Pages
 @import "app";
