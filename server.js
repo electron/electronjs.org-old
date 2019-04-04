@@ -58,6 +58,7 @@ app.use(requestLanguage({
   languages: Object.keys(i18n.locales),
   cookie: {
     name: 'language',
+    options: {maxAge: 24 * 60 * 60 * 1000},
     url: '/languages/{language}'
   }
 }))
