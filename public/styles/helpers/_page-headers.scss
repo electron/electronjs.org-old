@@ -24,7 +24,7 @@
 
   h1 {
     font-size: 45px;
-    // font-family: $display-font;
+    font-family: Roboto,-apple-system,BlinkMacSystemFont,"Helvetica Neue","Segoe UI","Oxygen","Ubuntu","Cantarell","Open Sans",sans-serif;
     font-weight: 300;
 
     @include breakpoint(md) {
