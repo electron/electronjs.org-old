@@ -157,12 +157,13 @@ h2 {
   .sub-section[data-lang='en-US'] .en-toggle h5 {
     color: $main-link-color !important;
   }
+
   .sub-section:not([data-lang='en-US']) {
     .en-toggle h5 {
-      color: $main-bg-color;
+      color: $main-bg-color !important;
     }
     &:hover .en-toggle h5 {
-      color: $main-border-color;
+      color: $main-border-color !important;
     }
   }
 }
