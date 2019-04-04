@@ -33,6 +33,11 @@
 
 // Used on the docs index page
 .docs-title {
+  font-size: $h1-size-mobile !important;
+  font-weight: $font-weight-light !important;
+
+  @include breakpoint(md) { font-size: $h1-size !important; }
+
   color: inherit;
 }
 

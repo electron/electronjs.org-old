@@ -1,4 +1,4 @@
-<main class="PRIMER-REMOVE-ME docs-page">
+<main class="PRIMER-REMOVE-ME">
 <div class='subtron'>
   <div class='container-narrow'>
     <h1><span class="mr-3 mr-lg-4">{{localized.docs.title}}</span><span class="docs-version">{{electronLatestStableVersion}}</span></h1>
@@ -6,57 +6,56 @@
   </div>
 </div>
 
-<div class='py-6 py-md-7 py-lg-9'>
+<div class='py-5 py-md-6 py-lg-7 docs-page'>
   <div class='container-xl p-responsive'>
-    <div class="grid">
-      <div class="row">
+      <div class="d-sm-flex d-flex-column">
 
         <div class="col-ms-12 col-lg-3">
           <h2 class="docs-heading pb-3 mb-3"><a class="docs-title" href="/docs/tutorial"><span class="mega-octicon octicon-book pr-3"></span>{{localized.docs.guides}}</a></h2>
           <ul class="docs-list">
             {{#each docs}}
               {{#if this.isTutorial}}
-                <li>
-                  <a href="{{this.href}}">{{this.title}}</a>
+                <li class="mt-1 mb-1">
+                  <a class="h4 text-normal" href="{{this.href}}">{{this.title}}</a>
                 </li>
               {{/if}}
             {{/each}}
           </ul>
         </div>
 
-        <div class="col-ms-12 col-lg-3">
+        <div class="col-ms-12 col-lg-3 mx-3">
           <h2 class="docs-heading pb-3 mb-3"><a class="docs-title" href="/docs/api"><span class="mega-octicon octicon-gear pr-3"></span>{{localized.docs.api_reference}}</a></h2>
             <ul class="docs-list">
               {{#each docs}}
                 {{#if this.isApiDoc}}
-                  <li>
-                    <a href="{{this.href}}">{{this.title}}</a>
+                  <li class="mt-1 mb-1">
+                    <a class="h4 text-normal" href="{{this.href}}">{{this.title}}</a>
                   </li>
                 {{/if}}
               {{/each}}
             </ul>
         </div>
 
-        <div class="col-ms-12 col-lg-3">
+        <div class="col-ms-12 col-lg-3 mx-3">
           <h2 class="docs-heading pb-3 mb-3"><a class="docs-title" href="/docs/api/structures"><span class="mega-octicon octicon-beaker pr-3"></span>{{localized.docs.api_structures}}</a></h2>
             <ul class="docs-list">
               {{#each docs}}
                 {{#if this.isApiStructureDoc}}
-                  <li>
-                    <a href="{{this.href}}">{{this.title}}</a>
+                  <li class="mt-1 mb-1">
+                    <a class="h4 text-normal" href="{{this.href}}">{{this.title}}</a>
                   </li>
                 {{/if}}
               {{/each}}
             </ul>
         </div>
 
-        <div class="col-ms-12 col-lg-3">
+        <div class="col-ms-12 col-lg-3 mx-3">
           <h2 class="docs-heading pb-3 mb-3"><a class="docs-title" href="/docs/development"><span class="mega-octicon octicon-tools pr-3"></span>{{localized.docs.advanced}}</a></h2>
           <ul class="docs-list">
             {{#each docs}}
               {{#if this.isDevTutorial}}
-                <li>
-                  <a href="{{this.href}}">{{this.title}}</a>
+                <li class="mt-1 mb-1">
+                  <a class="h4 text-normal" href="{{this.href}}">{{this.title}}</a>
                 </li>
               {{/if}}
             {{/each}}
@@ -64,7 +63,6 @@
         </div>
 
       </div>
-    </div>
   </div>
   </div>
 </div>
