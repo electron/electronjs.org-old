@@ -18,8 +18,9 @@
               </a>
 
               {{> blog_byline post=this}}
-              {{{this.excerpt}}}
-              <p><a href="{{this.href}}">Read More&nbsp;<span class="octicon octicon-arrow-small-right"></span></a></p>
+              <div class="markdown-body">{{{this.excerpt}}}</div>
+
+              <p class="mt-2"><a href="{{this.href}}">Read More&nbsp;<span class="octicon octicon-arrow-small-right"></span></a></p>
             </li>
         {{/each}}
       </ul>
