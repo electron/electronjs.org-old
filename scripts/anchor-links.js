@@ -28,15 +28,12 @@ module.exports = function setupAnchorLinks () {
     }
   };
 
-  document.onreadystatechange = function () {
-    if (this.readyState === 'complete') {
-      const contentBlock = document.getElementsByClassName('docs')[0]
-      if (!contentBlock) {
-        return
-      }
-      for (let level = 1; level <= 6; level++) {
-        linkifyAnchors(level, contentBlock)
-      }
-    }
+  const contentBlock = document.getElementsByClassName('docs')[0]
+  if (!contentBlock) {
+    return
+  }
+
+  for (let level = 1; level <= 6; level++) {
+    linkifyAnchors(level, contentBlock)
   }
 }
