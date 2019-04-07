@@ -17,6 +17,12 @@
   }
 }
 
+.r-class {
+  // Magic numbers.
+  margin-right: 128px;
+  margin-left: 128px;
+}
+
 .release-version-filter .active {
   text-decoration: underline;
 }
@@ -72,15 +78,37 @@
   }
 }
 
-.r-flex {
-  display: flex;
-  padding-right: 16px;
-  padding-left: 16px;
-}
-
 .releases {
-  width: 1012px;
+  width: 1280px;
   flex: 1;
+
+  h1 {
+    font-size: $h0-size-mobile !important;
+    font-weight: $font-weight-light !important;
+
+     @include breakpoint(md) { font-size: $h0-size !important; }
+  }
+
+   h2 {
+    font-size: $h1-size-mobile !important;
+    font-weight: $font-weight-light !important;
+
+     @include breakpoint(md) { font-size: $h1-size !important; }
+  }
+
+   h3 {
+    font-size: $h2-size-mobile !important;
+    font-weight: $font-weight-light !important;
+
+     @include breakpoint(md) { font-size: $h2-size !important; }
+  }
+
+   h4 {
+    font-size: $h3-size-mobile !important;
+    font-weight: $font-weight-light !important;
+
+     @include breakpoint(md) { font-size: $h3-size !important; }
+  }
 
   .release-entry {
     margin-bottom: $spacer3;
@@ -117,7 +145,7 @@
 @media (min-width: 700px) {
   .r-resp-header,
   .r-resp-header-toggle {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -140,7 +168,7 @@
     margin-left: 0;
   }
 
-  .container-narrow {
+  .container-lg {
     .r-resp-header-narrow {
       display: flex;
 
@@ -166,6 +194,6 @@
   }
 
   .r-menu {
-    display: none;
+    display: none !important;
   }
 }
