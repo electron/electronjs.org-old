@@ -1,6 +1,10 @@
 
 // Releases ------------------------------
 
+.vertical-middle {
+  vertical-align: middle !important;
+}
+
 .releases-tag {
   display: inline-block;
   margin: 0.3em 0.1em;
@@ -13,7 +17,7 @@
   &:hover {
     text-decoration: none;
     color: $main-color-strong;
-    background-color: $main-bg-color-shade;
+    background-color: $main-bg-color-shade !important;
   }
 }
 
@@ -28,53 +32,37 @@
 }
 
 .r-menu {
-  display: flex;
-  flex-direction: column;
-  padding-left: 8px;
-  list-style: none;
+  display: flex !important;
+  flex-direction: column !important;
+  padding-left: 8px !important;
+  list-style: none !important;
 
   .menu-item {
-    font-size: 21px;
+    font-size: 21px !important;
     // Remove border radius for active element.
-    border-radius: 0;
-    position: relative;
-    display: block;
-    padding: 12px 15px;
-    border-bottom: 1px solid $border-color;
+    border-radius: 0 !important;
 
-    &:first-child {
-      border-top: 0;
-      border-top-right-radius: $border-radius;
-      border-top-left-radius: $border-radius;
-    }
-
-    &:last-child {
-      border-bottom: 0;
-      border-bottom-right-radius: $border-radius;
-      border-bottom-left-radius: $border-radius;
+    .octicon {
+      font-size: 20px !important;
+      padding-right: 8px !important;
     }
 
     &:hover {
-      text-decoration: none;
-      background-color: $gray-0;
-    }
-
-    &.selected {
-      font-weight: bold;
-      color: $gray-7;
-      cursor: default;
-      background-color: $white;
-    }
-
-    .octicon {
-      font-size: 20px;
-      padding-right: 8px;
+      cursor: pointer !important;
+      background-color: #fcfcfc !important;
     }
 
     p {
-      font-size: 15px;
+      font-size: 15px !important;
       // margin-left: 23px;
     }
+  }
+
+  ul {
+    margin-bottom: 1em !important;
+    margin-left: 1.5em !important;
+    padding-left: 0;
+    padding-top: 0;
   }
 }
 
@@ -86,28 +74,28 @@
     font-size: $h0-size-mobile !important;
     font-weight: $font-weight-light !important;
 
-     @include breakpoint(md) { font-size: $h0-size !important; }
+    @include breakpoint(md) { font-size: $h0-size !important; }
   }
 
-   h2 {
+  h2 {
     font-size: $h1-size-mobile !important;
     font-weight: $font-weight-light !important;
 
-     @include breakpoint(md) { font-size: $h1-size !important; }
+    @include breakpoint(md) { font-size: $h1-size !important; }
   }
 
-   h3 {
+  h3 {
     font-size: $h2-size-mobile !important;
     font-weight: $font-weight-light !important;
 
-     @include breakpoint(md) { font-size: $h2-size !important; }
+    @include breakpoint(md) { font-size: $h2-size !important; }
   }
 
-   h4 {
+  h4 {
     font-size: $h3-size-mobile !important;
     font-weight: $font-weight-light !important;
 
-     @include breakpoint(md) { font-size: $h3-size !important; }
+    @include breakpoint(md) { font-size: $h3-size !important; }
   }
 
   .release-entry {
@@ -124,7 +112,7 @@
       &:hover {
         text-decoration: none;
         color: $main-color-strong;
-        background-color: $main-bg-color-shade;
+        background-color: $main-bg-color-shade !important;
       }
 
       &.octicon-wrapper {
@@ -181,7 +169,7 @@
       .octicon {
         font-size: 20px;
         margin-bottom: 4px;
-        color: #3a585f !important;
+        color: #3a585f;
       }
     }
   }
