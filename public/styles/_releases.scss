@@ -1,6 +1,10 @@
 
 // Releases ------------------------------
 
+.vertical-middle {
+  vertical-align: middle !important;
+}
+
 .releases-tag {
   display: inline-block;
   margin: .3em .1em;
@@ -13,7 +17,7 @@
   &:hover {
     text-decoration: none;
     color: $main-color-strong;
-    background-color: $main-bg-color-shade;
+    background-color: $main-bg-color-shade !important;
   }
 }
 
@@ -28,25 +32,37 @@
 }
 
 .r-menu {
-  display: flex;
-  flex-direction: column;
-  padding-left: 8px;
-  list-style: none;
+  display: flex !important;
+  flex-direction: column !important;
+  padding-left: 8px !important;
+  list-style: none !important;
 
   .menu-item {
-    font-size: 21px;
+    font-size: 21px !important;
     // Remove border radius for active element.
-    border-radius: 0;
+    border-radius: 0 !important;
 
     .octicon {
-      font-size: 20px;
-      padding-right: 8px;
+      font-size: 20px !important;
+      padding-right: 8px !important;
+    }
+
+    &:hover {
+      cursor: pointer !important;
+      background-color: #fcfcfc !important;
     }
 
     p {
-      font-size: 15px;
+      font-size: 15px !important;
       // margin-left: 23px;
     }
+  }
+
+  ul {
+    margin-bottom: 1em !important;
+    margin-left: 1.5em !important;
+    padding-left: 0;
+    padding-top: 0;
   }
 }
 
@@ -96,7 +112,7 @@
       &:hover {
         text-decoration: none;
         color: $main-color-strong;
-        background-color: $main-bg-color-shade;
+        background-color: $main-bg-color-shade !important;
       }
 
       &.octicon-wrapper {

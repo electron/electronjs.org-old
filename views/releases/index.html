@@ -78,28 +78,28 @@ $ ./node_modules/.bin/electron .</code></pre>
       <div class="r-menu mx-3">
         <h3>{{localized.releases.show_releases}}</h3>
         <a class="releases-link-stable {{#eq releasesPage.type 'stable'}}active{{/eq}}" href="/releases/stable">
-          <div class="menu-item" style="{{#eq releasesPage.type 'stable'}}border-left: 1px solid #4078C0; background: #fcfcfc{{/eq}}">
+          <div class="menu-item" style="{{#eq releasesPage.type 'stable'}}border-left: 1px solid #4078C0; background-color: #fcfcfc !important;{{/eq}}">
             <span class="octicon octicon-clock"></span>{{localized.releases.stable_releases}}
             <p>{{localized.releases.stable_desc}}</p>
           </div>
         </a>
         <a class="releases-link-beta {{#eq releasesPage.type 'beta'}}active{{/eq}}" href="/releases/beta">
-          <div class="menu-item" style="{{#eq releasesPage.type 'beta'}}border-left: 1px solid #4078C0; background: #fcfcfc{{/eq}}">
+          <div class="menu-item" style="{{#eq releasesPage.type 'beta'}}border-left: 1px solid #4078C0; background-color: #fcfcfc !important;{{/eq}}">
             <span class="octicon octicon-zap"></span>{{localized.releases.beta_releases}}
             <p>{{localized.releases.beta_desc}}</p>
           </div>
         </a>
         <a class="releases-link-nightly {{#eq releasesPage.type 'nightly'}}active{{/eq}}" href="/releases/nightly">
-          <div class="menu-item" style="{{#eq releasesPage.type 'nightly'}}border-left: 1px solid #4078C0; background: #fcfcfc{{/eq}}">
+          <div class="menu-item" style="{{#eq releasesPage.type 'nightly'}}border-left: 1px solid #4078C0; background-color: #fcfcfc !important;{{/eq}}">
             <span class="octicon octicon-calendar"></span>{{localized.releases.nightly_releases}}
             <p>{{localized.releases.nightly_desc}}</p>
           </div>
         </a>
         <h3>{{localized.releases.show_only_releases_from}}</h3>
         <ul class="release-version-filter">
-          <li><a class="{{#eq @root/releasesPage.versionFilter null}}active{{/eq}}" href="?">{{localized.releases.all_versions}}</a></li>
+          <li><a class="f3-light {{#eq @root/releasesPage.versionFilter null}}active{{/eq}}" href="?">{{localized.releases.all_versions}}</a></li>
           {{#each releasesPage.majorVersions}}
-            <li><a class="{{#eq @root/releasesPage.versionFilter this}}active{{/eq}}" href="?version={{this}}">v{{this}}.x</a></li>
+            <li><a class="f3-light {{#eq @root/releasesPage.versionFilter this}}active{{/eq}}" href="?version={{this}}">v{{this}}.x</a></li>
           {{/each}}
         </ul>
       </div>
