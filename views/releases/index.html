@@ -1,7 +1,8 @@
+<main class="PRIMER-REMOVE-ME">
 <div class='subtron'>
-  <div class='container-narrow'>
+  <div class='container-lg p-responsive'>
     <div class="r-resp-header-narrow">
-      <h1>{{localizedReleasesType}}</h1>
+      <h1 class="f0-light">{{localizedReleasesType}}</h1>
       <button class="btn-link r-resp-header-toggle" data-toggle-target="#release-navbar" type="button">
         <span class="octicon octicon-list-unordered"></span>
       </button>
@@ -38,8 +39,8 @@
   </div>
 </div>
 
-<section class='page-section'>
-  <div class='docs-container-xl r-flex'>
+<div class='py-7 py-md-8 py-lg-9 r-class'>
+  <div class='full-width d-flex p-responsive'>
     <!-- <h3>Tip: Use Electron from the command line</h3>
     <p>Installing the <code>electron</code> module as a development dependency in your project will let you use Electron from the command line at specific versions. More information on the <a href="https://github.com/electron-userland/electron-prebuilt">module's repository</a>.</p>
 
@@ -61,14 +62,14 @@ $ ./node_modules/.bin/electron .</code></pre>
       {{/if}}
 
       {{#each releasesPage.page.data}}
-        <h2 class="release-entry" id="{{this.data.version}}">
+        <h2 class="f2-light release-entry" id="{{this.data.version}}">
           <a class="tag" href="#{{this.data.version}}">Electron {{this.data.version}}</a>
           <em class="date" data-date="{{this.data.published_at}}" data-format="%B %d, %Y">{{this.data.published_at}}</em>
           <em class="date ltr-only">(<span data-date="{{this.data.published_at}}"></span>)</em>
           <a href="{{this.data.html_url}}" class="tag octicon-wrapper"><span class="octicon octicon-mark-github vertical-middle"></span></a>
         </h2>
 
-        {{{this.data.body_html}}}
+        <div class="markdown-body">{{{this.data.body_html}}}</div>
 
         <hr>
       {{/each}}
@@ -136,4 +137,5 @@ $ ./node_modules/.bin/electron .</code></pre>
     <a href="https://github.com/electron/electron/releases"><span class="octicon octicon-tag mr-1"></span>{{localized.releases.all_releases}}</a>
     <a class="ml-4" href="#"><span class="octicon octicon-arrow-up mr-1"></span>{{localized.releases.back_to_index}}</a>
   </div>
-</section>
+</div>
+</main>
