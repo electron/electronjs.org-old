@@ -268,6 +268,12 @@
   margin: 0;
 }
 
+@media (max-width: 700px) {
+  .categories-filter {
+    display: none !important;
+  }
+}
+
 .filter-item {
   padding: 4px 8px;
 }
@@ -297,9 +303,9 @@
   margin-left: -12px;
 }
 .mobile-hidden {
-  display: none;
+  display: none !important;
   @include breakpoint(md) {
-    display: block;
+    display: block !important;
   }
 }
 
