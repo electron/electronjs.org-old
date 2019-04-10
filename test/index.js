@@ -461,19 +461,22 @@ describe('electronjs.org', () => {
     })
   })
 
-  describe('devtron and spectron', () => {
-    test('Test existed landing pages', async () => {
+  describe('landing pages', () => {
+    test('devtron and spectron', async () => {
       let $ = await get('/devtron')
       $('.jumbotron-lead .jumbotron-lead-muted').text().should.eq('An Electron DevTools Extension')
       $ = await get('/spectron')
       $('.jumbotron-lead .jumbotron-lead-muted').text().should.eq('An Electron Testing Framework')
     })
-  })
 
-  describe('electron fiddle', () => {
-    test('Fiddle landing page existed', async () => {
+    test('electron fiddle', async () => {
       const $ = await get('/fiddle')
       $('.jumbotron-lead .jumbotron-lead-muted').text().should.eq('The easiest way to get started with Electron')
+    })
+
+    test('governance', async () => {
+      const $ = await get('/governance')
+      $('.jumbotron .lead-mktg').text().should.eq('The Electron governance system is comprised of Working Groups that oversee different aspects of the Electron ecosystem, and an Administrative working group that functions to resolve conflicts between them.')
     })
   })
 
