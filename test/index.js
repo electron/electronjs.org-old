@@ -383,6 +383,18 @@ describe('electronjs.org', () => {
       })
     })
 
+    test('/releases/stable page -1', async () => {
+      const res = await supertest(app).get('/releases/stable?page=-1')
+      res.statusCode.should.be.equal(302)
+      res.header.location.should.equal('/releases/stable/?page=1')
+    })
+
+    test('/releases/stable page infinity', async () => {
+      const res = await supertest(app).get('/releases/stable?page=99999999999999999')
+      res.statusCode.should.be.equal(302)
+      // Don't check for the page where we redirect because it's starting flaky. 😔
+    })
+
     test('/docs/versions redirects to /releases/stable', async () => {
       const res = await supertest(app).get('/docs/versions')
       res.statusCode.should.be.equal(301)
