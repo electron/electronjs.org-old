@@ -34,10 +34,10 @@ $accent-color: hsl(335, 87%, 47%);
 
 $theme-color: $main-color-strong;
 
-$body-color:    $main-color;
-$heading-color: $main-color-strong;
+$body-color:    $main-color !important;
+$heading-color: $main-color-strong !important;
 
-$border-color: $main-border-color;
+$border-color: $main-border-color !important;
 
 // Increase xl breakpoint
 // So that containers start breaking before touching the edge

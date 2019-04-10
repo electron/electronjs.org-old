@@ -34,8 +34,8 @@
   margin-top: $spacer5;
   margin-bottom: 15px;
   list-style: none;
-  background-color: $white;
-  border: 1px solid $border-color;
+  background-color: $white !important;
+  border: 1px solid $border-color !important;
   border-radius: $border-radius;
   box-shadow: 0 1px 1px rgba(0,0,0,0.1);
 }
@@ -44,7 +44,7 @@
   position: relative;
   display: block;
   padding: 12px 15px;
-  border-bottom: 1px solid $border-color;
+  border-bottom: 1px solid $border-color !important;
 
   &:first-child {
     border-top: 0;
@@ -60,24 +60,24 @@
 
   &:hover {
     text-decoration: none;
-    background-color: $gray-0;
+    background-color: $gray-0 !important;
   }
 
   &.selected {
     font-weight: bold;
-    color: $gray-7;
+    color: $gray-7 !important;
     cursor: default;
-    background-color: $white;
+    background-color: $white !important;
   }
 }
 
 // Site Header
 
 .site-header {
-  color: $jumbo-color;
-  background-color: lighten($jumbo-bg-color, 2%);
+  color: $jumbo-color !important;
+  background-color: lighten($jumbo-bg-color, 2%) !important;
   border-bottom: 1px solid $gray-1;
-  border-bottom-color: darken($jumbo-bg-color, 8%);
+  border-bottom-color: darken($jumbo-bg-color, 8%) !important;
   -webkit-font-smoothing: antialiased;
   padding-top: 25px;
   padding-bottom: 25px;
@@ -96,15 +96,15 @@
 }
 
 .site-header a {
-  color: inherit;
+  color: inherit !important;
   transition: all 0.3s;
 
   &.active,
   &:hover {
-    color: $jumbo-color-strong;
+    color: $jumbo-color-strong !important;
   }
   &:active {
-    color: $jumbo-color-subtle;
+    color: $jumbo-color-subtle !important;
   }
 }
 
@@ -138,12 +138,12 @@
   }
 
   &.active, &:active, &:hover {
-    border-bottom-color: $jumbo-color-strong;
+    border-bottom-color: $jumbo-color-strong !important;
     text-decoration: none;
   }
 
   &.bordered {
-    border: 1px solid $jumbo-color-strong;
+    border: 1px solid $jumbo-color-strong !important;
     border-radius: 3px;
     padding: 0 7px;
     opacity: 0.7;
@@ -165,10 +165,10 @@
   margin-right: 0.4em;
 
   .svg-fill {
-    fill: currentColor;
+    fill: currentColor !important;
   }
   .svg-stroke {
-    stroke: currentColor;
+    stroke: currentColor !important;
     stroke-width: 1.2;
     stroke-linecap: round;
   }
