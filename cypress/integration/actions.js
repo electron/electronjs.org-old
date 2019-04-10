@@ -197,6 +197,11 @@ describe('electronjs.org', () => {
       visit(`spectron`)
       cy.get('.jumbotron-lead').contains('An Electron Testing Framework')
     })
+
+    it('Governance landing page', () => {
+      visit(`governance`)
+      cy.get('.lead-mktg').contains('The Electron governance system is comprised of Working Groups that oversee different aspects of the Electron ecosystem')
+    })
   })
 
   describe('releases', () => {
