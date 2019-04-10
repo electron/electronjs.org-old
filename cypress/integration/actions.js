@@ -85,15 +85,15 @@ describe('electronjs.org', () => {
       cy.get('a[href="/blog"]:first').click()
       cy.wait(500)
 
-      cy.get('.container-narrow')
+      cy.get('.container-lg')
         .contains('Electron Blog')
-      cy.get('.container-narrow p').contains('All the latest news from the Electron team and community.')
+      cy.get('.container-lg p').contains('All the latest news from the Electron team and community.')
     })
 
     it('open blog post', () => {
       cy.visit(`${localhost}/blog`)
       cy.get('a[href="/blog/electron-3-0"]:first').click()
-      cy.get('.container-narrow').contains('Electron 3.0.0')
+      cy.get('.container-lg').contains('Electron 3.0.0')
     })
   })
 
@@ -161,7 +161,7 @@ describe('electronjs.org', () => {
 
     it('change language via languages page', () => {
       cy.visit(`${localhost}/languages`)
-      cy.get('.page-section a[href="/languages/ru-RU"]:first').click()
+      cy.get('.container-lg a[href="/languages/ru-RU"]:first').click()
       cy.visit(`${localhost}`)
       cy.wait(500)
       cy.get('.jumbotron-lead').contains('Создавайте кроссплатформенные приложения при помощи JavaScript, HTML и CSS')
