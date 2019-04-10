@@ -1,6 +1,10 @@
 
 // Docs ------------------------------
 
+.docs-page {
+  a { color: #3a585f !important; }
+}
+
 .docs-version {
   display: inline-block;
   padding: 0 .4em;
@@ -17,7 +21,7 @@
 
 .docs-breadcrumbs {
   margin: 0;
-  color: $main-color-subtle;
+  color: $main-color-subtle !important;
   font-weight: 300;
   a {
     color: $main-color;
@@ -29,7 +33,42 @@
 
 // Used on the docs index page
 .docs-title {
+  font-size: $h1-size-mobile !important;
+  font-weight: $font-weight-light !important;
+
+  @include breakpoint(md) { font-size: $h1-size !important; }
+
   color: inherit;
+}
+
+.docs {
+  h1 {
+    font-size: $h0-size-mobile !important;
+    font-weight: $font-weight-light !important;
+
+    @include breakpoint(md) { font-size: $h0-size !important; }
+  }
+
+  h2 {
+    font-size: $h1-size-mobile !important;
+    font-weight: $font-weight-light !important;
+
+    @include breakpoint(md) { font-size: $h1-size !important; }
+  }
+
+  h3 {
+    font-size: $h2-size-mobile !important;
+    font-weight: $font-weight-light !important;
+
+    @include breakpoint(md) { font-size: $h2-size !important; }
+  }
+
+  h4 {
+    font-size: $h3-size-mobile !important;
+    font-weight: $font-weight-light !important;
+
+    @include breakpoint(md) { font-size: $h3-size !important; }
+  }
 }
 
 .docs-heading {
@@ -48,12 +87,12 @@
 }
 
 .header-link .octicon {
-  color: $main-color-subtle;
-  margin-left: .5em;
-  vertical-align: middle;
-  visibility: hidden;
+  color: $main-color-subtle !important;
+  margin-left: .5em !important;
+  vertical-align: middle !important;
+  visibility: hidden !important;
   :hover > & {
-    visibility: visible;
+    visibility: visible !important;
   }
 }
 
@@ -88,14 +127,14 @@
 .docs h4 code > em,
 .docs h4 > em,
 .docs .platform-label {
-    padding: .1em .4em;
-    vertical-align: middle;
-    font-size: .66em;
-    font-weight: 300;
-    font-style: normal;
-    color: $main-bg-color;
-    border-radius: $border-radius;
-    background-color: $main-color-subtle;
+    padding: .1em .4em !important;
+    vertical-align: middle !important;
+    font-size: .66em !important;
+    font-weight: 300 !important;
+    font-style: normal !important;
+    color: $main-bg-color !important;
+    border-radius: $border-radius !important;
+    background-color: $main-color-subtle !important;
 }
 
 // process label, e.g. Main process
@@ -132,14 +171,15 @@
 
 .docs {
   .sub-section[data-lang='en-US'] .en-toggle h5 {
-    color: $main-link-color;
+    color: $main-link-color !important;
   }
+
   .sub-section:not([data-lang='en-US']) {
     .en-toggle h5 {
-      color: $main-bg-color;
+      color: $main-bg-color !important;
     }
     &:hover .en-toggle h5 {
-      color: $main-border-color;
+      color: $main-border-color !important;
     }
   }
 }
