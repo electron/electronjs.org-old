@@ -41,6 +41,16 @@ describe('electronjs.org', () => {
       res = await supertest(app).get(`/releases.xml`)
       res.headers['content-type'].should.equal('text/xml; charset=utf-8')
     })
+
+    test('releases next handler', async () => {
+      const $ = await get('/releases.postman')
+      $('h1').should.contain('404')
+    })
+
+    test('blog next handler', async () => {
+      const $ = await get('/blog.postman')
+      $('h1').should.contain('404')
+    })
   })
 
   describe('stylesheets', () => {
