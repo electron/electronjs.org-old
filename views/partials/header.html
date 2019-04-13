@@ -39,12 +39,12 @@
   </div>
 </header>
 
-<div id="languages-header-menu" class="container collapsed">
+<div id="languages-header-menu" class="container-xl p-responsive collapsed">
   <div class="m-4">
     <div class="text-center-sm mb-4">
       <strong>{{localized.languages.choose_language}}</strong>
     </div>
-    <div class="clearfix">
+    <div class="d-flex flex-justify-around flex-wrap my-2 my-md-3 clearfix">
       {{#each locales}}
         <div class="text-center-sm col-6 col-md-4 mb-2">
           <a href="/languages/{{this.locale}}">
