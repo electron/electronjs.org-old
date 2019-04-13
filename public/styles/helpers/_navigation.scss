@@ -5,10 +5,6 @@
     padding-right: 5px;
   }
 
-  @media (min-width: 700px) {
-    float: left;
-  }
-
   .logo {
     width: auto;
     height: 18px;
@@ -115,8 +111,7 @@
   line-height: 30px;
 
   @media (min-width: 700px) {
-    float: right;
-    margin-top: 7px;
+    margin-top: 0px;
   }
 
   @media (max-width: 699px) {
@@ -153,6 +148,8 @@
 
   &.octicon {
     border: none !important;
+    padding-bottom: 4px;
+    vertical-align: middle !important;
   }
 }
 
@@ -173,17 +170,6 @@
     stroke-linecap: round;
   }
 }
-
-// keep it centered a bit longer
-@media (min-width: 700px) {
-  .site-header { text-align: center; }
-  .site-header-logo,
-  .site-header-nav {
-    float: none;
-  }
-}
-.site-header-logo { @include breakpoint(lg) { float: left; } }
-.site-header-nav  { @include breakpoint(lg) { float: right; } }
 
 // swap logo and nav for right-to-left languages
 html[dir="rtl"] {
