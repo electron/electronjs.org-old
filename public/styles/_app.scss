@@ -289,19 +289,6 @@
   display: block;
 }
 
-// mobile handle, use breakpoint from /bower_components/basecoat/scss/mixins/_breakpoints.scss
-.container-narrow {
-  padding-right: 15px;
-  padding-left: 15px;
-  @include breakpoint(md) { // return normal value
-    padding-right: 0;
-    padding-left: 0;
-  }
-}
-.row { // default is -15px
-  margin-right: -12px; // work with .page-section { padding: 12px }
-  margin-left: -12px;
-}
 .mobile-hidden {
   display: none !important;
   @include breakpoint(md) {
