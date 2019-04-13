@@ -211,18 +211,18 @@
         border-right: 1px solid $main-border-color;
         display: inline-flex;
         flex-direction: column;
-        width: 196px;
+        width: 196px !important;
         cursor: pointer;
         overflow: hidden;
         /* Scroll bug in Chrome */
         height: 126px;
 
         img {
-          height: 110px;
-          margin: 8px;
+          height: 110px !important;
+          margin: 8px !important;
 
           &.caption {
-            height: 84px;
+            height: 84px !important;
           }
         }
 
