@@ -431,7 +431,7 @@ describe('electronjs.org', () => {
         .get('/community')
         .set('Cookie', ['language=vi-VN'])
       const $ = cheerio.load(res.text)
-      $('.subtron .container-narrow h1').text().should.eq(i18n.website['vi-VN'].community.title)
+      $('.subtron .container-lg h1').text().should.eq(i18n.website['vi-VN'].community.title)
     })
 
     test('/contact redirects to /community', async () => {
