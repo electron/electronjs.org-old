@@ -171,7 +171,7 @@ describe('electronjs.org', () => {
   describe('header', () => {
     it('"Electron" hides on small displays (less 1300px)', () => {
       cy.visit(localhost)
-      cy.get('.site-header-logo').not('.vertical-middle')
+      cy.get('.site-header-logo').not('.v-align-middle')
     })
 
     it('"Electron" contains on displays more 1300px', () => {
