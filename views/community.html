@@ -1,13 +1,14 @@
+<main>
 <div class='subtron'>
-  <div class='container-narrow'>
-    <h1>{{localized.community.title}}</h1>
+  <div class='container-lg p-responsive'>
+    <h1 class="f0-light">{{localized.community.title}}</h1>
     <p class="lead mb-3">{{{localized.community.description}}}</p>
   </div>
 </div>
 
-<section class='page-section'>
+<div class='py-7 py-md-8 py-lg-9'>
 
-  <div class="container-narrow">
+  <div class="container-lg p-responsive">
     <p class="lead mb-4">🐎 {{{localized.community.channels.get_started}}}</p>
     <p class="lead mb-4">📣 {{{localized.community.channels.updates}}}</p>
     <p class="lead mb-4">🙋 {{{localized.community.channels.help}}}</p>
@@ -20,12 +21,12 @@
     <p class="lead mb-4">❓ {{{localized.community.channels.other}}}</p>
   </div>
 
-  <div class="container-narrow my-5">
-    <h2 id="language-communities">{{localized.community.language_communities.title}}</h2>
+  <div class="container-lg p-responsive my-5">
+    <h2 id="language-communities" class="f1-light">{{localized.community.language_communities.title}}</h2>
 
     <p>{{{localized.community.language_communities.description}}}</p>
 
-    <ul>
+    <ul class="list-style-none markdown-body">
       <li><a href="https://telegram.me/electron_ru" rel="nofollow">electron-ru</a> <em>(Russian)</em></li>
       <li><a href="https://electron-br.slack.com" rel="nofollow">electron-br</a> <em>(Brazilian Portuguese)</em></li>
       <li><a href="https://electron-kr.github.io/electron-kr" rel="nofollow">electron-kr</a> <em>(Korean)</em></li>
@@ -36,8 +37,8 @@
     </ul>
   </div>
 
-  <div class="container-narrow">
-    <h2 id="tools">{{localized.community.tools}}</h2>
+  <div class="container-lg p-responsive">
+    <h2 id="tools" class="f1-light">{{localized.community.tools}}</h2>
     <table class="table table-ruled table-full-width table-with-spacious-first-column mb-7">
       {{#each items}}
         {{#if this.isTool}}
@@ -55,7 +56,7 @@
       {{/each}}
     </table>
 
-    <h2 id="boilerplates">{{localized.community.boilerplates}}</h2>
+    <h2 id="boilerplates" class="f1-light">{{localized.community.boilerplates}}</h2>
     <table class="table table-ruled table-full-width table-with-spacious-first-column mb-7">
       {{#each items}}
         {{#if this.isBoilerplate}}
@@ -71,7 +72,7 @@
       {{/each}}
     </table>
 
-    <h2 id="components">{{localized.community.components}}</h2>
+    <h2 id="components" class="f1-light">{{localized.community.components}}</h2>
     <table class="table table-ruled table-full-width table-with-spacious-first-column mb-7">
       {{#each items}}
         {{#if this.isComponent}}
@@ -87,7 +88,7 @@
       {{/each}}
     </table>
 
-    <h2 id="videos">{{localized.community.videos}}</h2>
+    <h2 id="videos" class="f1-light">{{localized.community.videos}}</h2>
     <table class="table table-ruled table-full-width table-with-spacious-first-column mb-7">
       {{#each items}}
         {{#if this.isVideo}}
@@ -104,7 +105,7 @@
         {{{localized.community.awesome_notice}}}
     </p>
 
-    <h2 id="meetups" class="mt-7">{{localized.community.meetups}}</h2>
+    <h2 id="meetups" class="mt-7 f1-light">{{localized.community.meetups}}</h2>
     <table class="table table-ruled table-full-width table-with-spacious-first-column mb-7">
       {{#each meetups}}
       <tr>
@@ -123,3 +124,4 @@
     </p>
   </div>
 </section>
+</main>
