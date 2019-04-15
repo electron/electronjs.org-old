@@ -1,0 +1,35 @@
+pre {
+  overflow: visible !important;
+  position: relative !important;
+  .btn-clipboard {
+    outline: 0 !important;
+    position: absolute !important;
+    top: 5px !important;
+    right: 5px !important;
+    padding: .25rem .5rem !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    border: 1px #e5e5e5 solid !important;
+    background-color: #f8f8f8 !important;
+    border-radius: 3px !important;
+    transition: 0.2s !important;
+
+    &:hover {
+      background-color: #eee !important;
+    }
+
+    &:active {
+      background-color: #dfdfdf !important;
+    }
+  }
+}
+.hljs {
+  position: relative;
+  line-height: 1.6;
+  font-size: 1.2em;
+  padding: 10px;
+  &::before {
+    letter-spacing: inherit;
+    content: '';
+  }
+}

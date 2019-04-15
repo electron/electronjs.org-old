@@ -1,0 +1,191 @@
+
+// Docs ------------------------------
+
+.docs-page {
+  a { color: #3a585f !important; }
+}
+
+.docs-version {
+  display: inline-block;
+  padding: 0 .4em;
+  margin-left: 10px;
+  vertical-align: middle;
+  font-size: $body-font-size * 0.95;
+  line-height: 1.8;
+  font-weight: 200;
+  -webkit-font-smoothing: initial;
+  background-color: $main-bg-color;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+}
+
+.docs-breadcrumbs {
+  margin: 0;
+  color: $main-color-subtle !important;
+  font-weight: 300;
+  a {
+    color: $main-color;
+  }
+}
+.docs-breadcrumbs-divider {
+  color: $main-color-subtle;
+}
+
+// Used on the docs index page
+.docs-title {
+  font-size: $h1-size-mobile !important;
+  font-weight: $font-weight-light !important;
+
+  @include breakpoint(md) { font-size: $h1-size !important; }
+
+  color: inherit;
+}
+
+.docs {
+  h1 {
+    font-size: $h0-size-mobile !important;
+    font-weight: $font-weight-light !important;
+
+    @include breakpoint(md) { font-size: $h0-size !important; }
+  }
+
+  h2 {
+    font-size: $h1-size-mobile !important;
+    font-weight: $font-weight-light !important;
+
+    @include breakpoint(md) { font-size: $h1-size !important; }
+  }
+
+  h3 {
+    font-size: $h2-size-mobile !important;
+    font-weight: $font-weight-light !important;
+
+    @include breakpoint(md) { font-size: $h2-size !important; }
+  }
+
+  h4 {
+    font-size: $h3-size-mobile !important;
+    font-weight: $font-weight-light !important;
+
+    @include breakpoint(md) { font-size: $h3-size !important; }
+  }
+}
+
+.docs-heading {
+  border-bottom: 1px solid #eee;
+
+  // thin titles to match the main /docs index
+  .strong-headers & {
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+.docs-list {
+  margin-left: 0;
+  list-style-type: none;
+}
+
+.header-link .octicon {
+  color: $main-color-subtle !important;
+  margin-left: .5em !important;
+  vertical-align: middle !important;
+  visibility: hidden !important;
+  :hover > & {
+    visibility: visible !important;
+  }
+}
+
+.docs-tags {
+  margin: 0;
+  list-style: none;
+  position: relative;
+  text-align: center;
+  color: $main-color-strong;
+  background-color: darken($main-bg-color-shade, 8%);
+  @include breakpoint(md) {
+    position: absolute;
+    right: 0;
+    text-align: right;
+    background-color: transparent;
+  }
+}
+.docs-tag {
+  display: inline-block;
+  padding: .4em .8em;
+  margin-bottom: 0;
+  font-size: .86em;
+  font-weight: 500;
+  @include breakpoint(md) {
+    background-color: darken($main-bg-color-shade, 8%);
+  }
+}
+
+// platform label, e.g. [OS X]
+.docs h3 code > em,
+.docs h3 > em,
+.docs h4 code > em,
+.docs h4 > em,
+.docs .platform-label {
+    padding: .1em .4em !important;
+    vertical-align: middle !important;
+    font-size: .66em !important;
+    font-weight: 300 !important;
+    font-style: normal !important;
+    color: $main-bg-color !important;
+    border-radius: $border-radius !important;
+    background-color: $main-color-subtle !important;
+}
+
+// process label, e.g. Main process
+.docs h1 em {
+  padding: .1em .4em;
+  vertical-align: middle;
+  font-size: .4em;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-style: normal;
+  color: $main-bg-color;
+  border-radius: $border-radius;
+  background-color: $main-color-subtle;
+}
+
+.docs table {
+  th {
+    text-align: left;
+    padding: $spacer2;
+  }
+  width: 100%;
+}
+
+.docs p a,
+.docs li a {
+  text-decoration: underline;
+}
+
+.doc-actions {
+  a {
+    text-decoration: none;
+  }
+}
+
+.docs {
+  .sub-section[data-lang='en-US'] .en-toggle h5 {
+    color: $main-link-color !important;
+  }
+
+  .sub-section:not([data-lang='en-US']) {
+    .en-toggle h5 {
+      color: $main-bg-color !important;
+    }
+    &:hover .en-toggle h5 {
+      color: $main-border-color !important;
+    }
+  }
+}
+
+.docs-container-xl {
+  max-width: 1280px;
+  margin-right: auto;
+  margin-left: auto;
+}

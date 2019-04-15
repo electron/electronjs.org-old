@@ -8,30 +8,30 @@
 </div>
 
 <div class="container">
-    <h1 class="text-center"><a href="/releases">{{localized.nav.releases}}</a></h1>
+    <h1 class="text-center"><a href="/releases/stable">{{localized.nav.releases}}</a></h1>
     <div class="col-md-12 electron-version-container">
       <div class="electron-version">
         <figure id="electron-version-latest" class="highlight highlight-dark text-left my-3 px-2">
             <pre class="overflow-hidden"><code><span class="no-select">$ </span>npm i -D electron@latest<span class="c1 no-select">
-# Electron   {{{stableRelease.version}}}
-# Node       {{stableRelease.deps.node}}
-# Chromium   {{stableRelease.deps.chrome}}</span></code></pre>
+# Electron   {{{releases.stableRelease.data.version}}}
+# Node       {{releases.stableRelease.data.deps.node}}
+# Chromium   {{releases.stableRelease.data.deps.chrome}}</span></code></pre>
         </figure>
       </div>
       <div class="electron-version">
         <figure id="electron-version-beta" class="highlight highlight-dark text-left my-3 px-3">
           <pre class="overflow-hidden"><code><span class="no-select">$ </span>npm i -D electron@beta<span class="c1 no-select">
-# Electron   {{{betaRelease.version}}}
-# Node       {{betaRelease.deps.node}}
-# Chromium   {{betaRelease.deps.chrome}}</span></code></pre>
+# Electron   {{{releases.betaRelease.data.version}}}
+# Node       {{releases.betaRelease.data.deps.node}}
+# Chromium   {{releases.betaRelease.data.deps.chrome}}</span></code></pre>
         </figure>
       </div>
       <div class="electron-version">
         <figure id="electron-version-nightly" class="highlight highlight-dark text-left my-3 px-3">
-          <pre class="overflow-hidden"><code><span class="no-select">$ </span>npm i -D electron@nightly<span class="c1 no-select">
-# Electron   {{{nightlyRelease.version}}}
-# Node       {{nightlyRelease.deps.node}}
-# Chromium   {{nightlyRelease.deps.chrome}}</span></code></pre>
+          <pre class="overflow-hidden"><code><span class="no-select">$ </span>npm i -D electron-nightly<span class="c1 no-select">
+# Electron   {{{releases.nightlyRelease.data.version}}}
+# Node       {{releases.nightlyRelease.data.deps.node}}
+# Chromium   {{releases.nightlyRelease.data.deps.chrome}}</span></code></pre>
         </figure>
       </div>
     </div>
@@ -141,6 +141,45 @@
     </div>
 
     <hr>
+
+    <div class='row mt-8'>
+      <div class='col-xs-12 col-md-7 text-right'>
+        <h3 class="mt-1 mb-3">{{localized.explore.fiddle_title}}</h3>
+        <p>{{{localized.landing.fiddle.description}}}</p>
+        <p>
+          <a
+            id="download-latest-release"
+            class="btn btn-lg btn-outline-themed"
+            href="https://github.com/electron/fiddle/releases/latest"
+          >
+            <span class="octicon octicon-desktop-download"></span>
+            <span>{{{localized.download_from_github}}}</span>
+          </a>
+          <a
+            id="download-latest-release"
+            class="btn btn-lg btn-outline-themed"
+            href="/fiddle"
+          >
+            <span class="octicon octicon-info"></span>
+            <span>{{{localized.explore.see_more_info}}}</span>
+          </a>
+        </p>
+      </div>
+      <div class='col-xs-12 col-md-5' style="margin-top: 30px;">
+        <a href="/fiddle">
+          <img
+            class="mb-4 mb-lg-6 fiddle-icon"
+            src="{{ site.baseurl }}/images/fiddle/fiddle-icon.svg"
+            alt="Electron Fiddle Icon"
+          />
+          <p>
+            <img src="{{ site.baseurl }}/images/fiddle/fiddle-logo.svg" alt="Electron Fiddle">
+          </p>
+        </a>
+      </div>
+    </div>
+
+    <hr/>
 
   <h3 class="mb-3">
     {{{localized.quick_start.title}}}

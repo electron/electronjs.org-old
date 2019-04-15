@@ -4,7 +4,7 @@ const clipboard = new ClipboardJS('.btn-clipboard', {
   text: trigger => {
     const codeBlockID = trigger.getAttribute('data-clipboard-target').substr(1)
     let codeBlock = document.getElementById(codeBlockID).textContent
-    
+
     return codeBlock.replace(/^\$\W*/gm, '')
   }
 })

@@ -1,11 +1,12 @@
-<section class="page-section">
-  <div class="container">
-    <div class="row">
+<main class="PRIMER-REMOVE-ME">
+<div class="py-6 py-md-7 py-lg-8">
+  <div class="container-xl p-responsive">
+    <div class="d-flex d-flex-column">
       <div class="col-xs-12 col-md-3 categories-filter">
         <input id="apps-filter" class="filterable-list-input" placeholder="{{localized.apps.search_app}}" type="search" autofocus="on" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" aria-label="keywords for search">
 
         <div class="mobile-hidden">
-          <h3>{{localized.apps.categories}}</h3>
+          <h3 class="f2-light pb-3 pt-3">{{localized.apps.categories}}</h3>
 
           <ul class="filter-list category-list">
             {{#if currentCategory}}
@@ -30,7 +31,7 @@
       </div>
       <!-- ./categories-filter -->
 
-      <div class="col-xs-12 col-md-9 container-narrow" id="apps">
+      <div class="col-xs-12 col-md-9 container-lg" id="apps">
 
         <ul class="mb-4 filterable-list app-list">
           {{#each apps}}
@@ -39,7 +40,7 @@
                 <a href='/apps/{{this.slug}}' title='{{this.name}} - {{this.description}}'>
                   <div class='listed-app-logo-wrapper'>
                     <div class="listed-app-logo-placeholder placeholder" style="background: {{this.goodColorOnWhite}}"></div>
-                    <img class='listed-app-logo' data-src='/node_modules/electron-apps/apps/{{this.slug}}/{{this.icon64}}' alt='{{app.name}}'>
+                    <img class='listed-app-logo' data-src='/app-img/{{this.slug}}/{{this.icon64}}' alt='{{app.name}}'>
                   </div>
                   <span class='listed-app-name text-gray-dark'>{{this.name}}</span>
                   <span class='listed-app-description text-gray-light'>{{this.description}}</span>
@@ -65,4 +66,5 @@
 
     </div>
   </div>
-</section>
+</div>
+</main>
