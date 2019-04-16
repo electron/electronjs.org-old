@@ -237,26 +237,6 @@
   }
 }
 
-.center {
-  text-align: center;
-}
-
-.force-150 {
-  @media (min-width: 544px) {
-    min-height: 150px;
-    max-height: 150px;
-    height: 150px;
-    overflow: scroll;
-  }
-}
-
-.invisible {
-  opacity: 0;
-  @media (max-width: 543px) {
-    display: none;
-  }
-}
-
 .something-missing {
   margin-top: 32px;
 }
