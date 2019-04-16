@@ -1,74 +1,136 @@
-<div class="spectron">
-  <div class="jumbotron text-center">
-    <div class="container">
-      <img class="mb-4 mb-lg-6" src="{{ site.baseurl }}/images/spectron-icon.svg" alt="Spectron icon">
-      <p><img src="{{ site.baseurl }}/images/spectron-logo.svg" alt="Spectron logo"></p>
-      <p class='jumbotron-lead'><span class='jumbotron-lead-muted'>An Electron Testing Framework</span></p>
+<main class="spectron">
+  <div class="py-6 py-sm-7 py-lg-8 jumbotron">
+    <div class="container-lg p-responsive position-relative text-center">
+      <img
+        class="mb-4 mb-lg-6"
+        src="{{ site.baseurl }}/images/spectron-icon.svg"
+        alt="Spectron icon"
+      />
+      <p>
+        <img
+          src="{{ site.baseurl }}/images/spectron-logo.svg"
+          alt="Spectron logo"
+        />
+      </p>
+      <div class="mx-auto mb-5">
+        <p class="jumbotron-lead">
+          <span class="jumbotron-lead-muted"
+            >An Electron Testing Framework</span
+          >
+        </p>
+      </div>
     </div>
   </div>
 
-  <section class="page-section page-section-spacious">
-    <div class="container-narrow">
-      <h1 class="text-center-sm">Test your app</h1>
-      <p class="lead text-center-sm">
-        An open source framework for easily writing integrations tests for your Electron app.
-        <a href="https://github.com/electron/spectron">Spectron</a> sets up and tears down your app and allows it to be test-driven remotely with full support for the Electron APIs.
-        Built on top of  <a href="https://sites.google.com/a/chromium.org/chromedriver">ChromeDriver</a> and <a href="http://webdriver.io">WebDriverIO</a>.
+  <div class="py-6 py-md-7 py-lg-8">
+    <div class="container-lg p-responsive">
+      <h2 class="f0-light mt-3 mb-2 lh-condensed text-center">
+        <p class="text-gray-dark">Test your app</p>
+      </h2>
+      <p class="lead-mktg text-center text-gray mb-4 mx-auto">
+        An open source framework for easily writing integrations tests for your
+        Electron app.
+        <a href="https://github.com/electron/spectron">Spectron</a> sets up and
+        tears down your app and allows it to be test-driven remotely with full
+        support for the Electron APIs. Built on top of
+        <a href="https://sites.google.com/a/chromium.org/chromedriver"
+          >ChromeDriver</a
+        >
+        and <a href="http://webdriver.io">WebDriverIO</a>.
       </p>
 
-      <div class='row mt-md-6 mt-lg-8'>
-        <div class='col-xs-12 col-md-4 text-left'>
-          <h2 class="mt-4 mb-2"><span class="mega-octicon octicon-server pr-3"></span>CI Ready</h2>
-          <p>Tests can run on continuous integration services such as
-            <a href="https://github.com/electron/spectron#on-travis-ci">Travis</a> and
-            <a href="https://github.com/electron/spectron#on-appveyor">AppVeyor</a>.
+      <div class="d-md-flex gutter-md-spacious p-md-5">
+        <div class="col-md-4">
+          <h3 class="h1-mktg text-normal mb-1">
+            <span class="mega-octicon octicon-server pr-3"></span>CI Ready
+          </h3>
+          <p class="text-gray">
+            Tests can run on continuous integration services such as
+            <a href="https://github.com/electron/spectron#on-travis-ci"
+              >Travis</a
+            >
+            and
+            <a href="https://github.com/electron/spectron#on-appveyor"
+              >AppVeyor</a
+            >.
           </p>
         </div>
-
-        <div class='col-xs-12 col-md-4 text-left'>
-          <h2 class="mt-4 mb-2"><span class="mega-octicon octicon-book pr-3"></span>Full API</h2>
-          <p>Spectron makes the entire Chromium and <a href="/docs">Electron APIs</a> available to your tests.</p>
+        <div class="col-md-4 mb-1">
+          <h3 class="h1-mktg text-normal mb-1">
+            <span class="mega-octicon octicon-book pr-3"></span>Full API
+          </h3>
+          <p class="text-gray">
+            Spectron makes the entire Chromium and
+            <a href="/docs">Electron APIs</a> available to your tests.
+          </p>
         </div>
-
-        <div class='col-xs-12 col-md-4 text-left'>
-          <h2 class="mt-4 mb-2"><span class="mega-octicon octicon-device-desktop pr-3"></span>Multi Window</h2>
-          <p>Interact with and verify the behavior of multiple windows from a single test.</p>
+        <div class="col-md-4 mb-1">
+          <h3 class="h1-mktg text-normal mb-1">
+            <span class="mega-octicon octicon-device-desktop pr-3"></span>Multi
+            Window
+          </h3>
+          <p class="text-gray">
+            Interact with and verify the behavior of multiple windows from a
+            single test.
+          </p>
         </div>
       </div>
-
-      <div class='row mt-md-6 mt-lg-8'>
-        <div class='col-xs-12 col-md-4 text-left'>
-          <h2 class="mt-4 mb-2"><span class="mega-octicon octicon-link pr-3"></span>Promises</h2>
-          <p>Easily chain together async operations and assertions using standard <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promises</a>.</p>
+      <div class="d-md-flex gutter-md-spacious p-md-5">
+        <div class="col-md-4">
+          <h3 class="h1-mktg text-normal mb-1">
+            <span class="mega-octicon octicon-link pr-3"></span>Promises
+          </h3>
+          <p class="text-gray">
+            Easily chain together async operations and assertions using standard
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise"
+              >Promises</a
+            >.
+          </p>
         </div>
-
-        <div class='col-xs-12 col-md-4 text-left'>
-          <h2 class="mt-4 mb-2"><span class="mega-octicon octicon-tools pr-3"></span>Extensible</h2>
-          <p>Add additional helpers specific to your app using the <a href="http://webdriver.io/api/utility/addCommand.html">command API</a>.</p>
+        <div class="col-md-4 mb-1">
+          <h3 class="h1-mktg text-normal mb-1">
+            <span class="mega-octicon octicon-tools pr-3"></span>Extensible
+          </h3>
+          <p class="text-gray">
+            Add additional helpers specific to your app using the
+            <a href="http://webdriver.io/api/utility/addCommand.html"
+              >command API</a
+            >.
+          </p>
         </div>
-
-        <div class='col-xs-12 col-md-4 text-left'>
-          <h2 class="mt-4 mb-2"><span class="mega-octicon octicon-code pr-3"></span>Compatible</h2>
-          <p>Can be used with any testing library like <a href="https://mochajs.org">Mocha</a>,
-            <a href="http://jasmine.github.io">Jasmine</a>, <a href="https://github.com/sindresorhus/ava">AVA</a>,
-            and <a href="http://chaijs.com">Chai</a>.</p>
+        <div class="col-md-4 mb-1">
+          <h3 class="h1-mktg text-normal mb-1">
+            <span class="mega-octicon octicon-code pr-3"></span>Compatible
+          </h3>
+          <p class="text-gray">
+            Can be used with any testing library like
+            <a href="https://mochajs.org">Mocha</a>,
+            <a href="https://jasmine.github.io">Jasmine</a>,
+            <a href="https://github.com/avajs/ava">AVA</a>,
+            <a href="https://jestjs.io">Jest</a>, and
+            <a href="https://chaijs.com">Chai</a>.
+          </p>
         </div>
       </div>
     </div>
-  </section>
+  </div>
 
-  <section class='page-section page-section-spacious bg-shade' id='get-started'>
-    <div class='container-narrow text-center'>
-      <h1>Get started</h1>
-      <figure class="highlight highlight-dark text-left my-4">
-      <pre><code><span class="c1"># Install Spectron</span>
+  <div class="py-4 py-md-5 py-lg-6 bg-gray-light">
+    <div class="container-lg p-responsive">
+      <div class="text-center">
+        <h2 class="f0-light mt-3 mb-2 lh-condensed text-center">
+          <p class="text-gray-dark">Get Started</p>
+        </h2>
+        <figure class="highlight highlight-dark text-left">
+          <pre><code><span class="c1"># Install Spectron</span>
 $ npm install --save-dev spectron
 
 <span class="c1">// A simple test to verify a visible window is opened with a title</span>
-<span class="keyword">var</span> Application = require(<span class="string">'spectron'</span>).Application
-<span class="keyword">var</span> assert = require(<span class="string">'assert'</span>)
+<span class="keyword">const</span> Application = require(<span class="string">'spectron'</span>).Application
+<span class="keyword">const</span> assert = require(<span class="string">'assert'</span>)
 
-<span class="keyword">var</span> app = <span class="keyword">new</span> Application({
+<span class="keyword">const</span> app = <span class="keyword">new</span> Application({
   path: <span class="string">'/Applications/MyApp.app/Contents/MacOS/MyApp'</span>
 })
 
@@ -91,10 +153,15 @@ app.start().then(<span class="keyword">function</span> () {
   <span class="c1">// Log any failures</span>
   console.error(<span class="string">'Test failed'</span>, error.message)
 })</code></pre>
-      </figure>
+        </figure>
 
-      <h3>Dive deeper and read the <a href='https://github.com/electron/spectron#application-api'>API docs</a>.</h3>
+        <h3 class="h3-mktg">
+          Dive deeper and read the
+          <a href="https://github.com/electron/spectron#application-api"
+            >API docs</a
+          >.
+        </h3>
+      </div>
     </div>
-  </section>
-
-</div>
+  </div>
+</main>
