@@ -1,21 +1,21 @@
 body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  background-color: $main-bg-color;
-  font-size: 14px;
+  display: flex !important;
+  flex-direction: column !important;
+  min-height: 100vh !important;
+  background-color: $main-bg-color !important;
+  font-size: 14px !important;
   @include breakpoint(sm) {
     font-size: $body-font-size;
   }
 }
 
 a {
-  color: $main-link-color;  // override Primer
+  color: $main-link-color !important;  // override Primer
 }
 
 h1,h2,h3,h4,h5,h6 {
   a {
-    color: $main-color;  // override Primer
+    color: $main-color !important;  // override Primer
   }
 }
 
