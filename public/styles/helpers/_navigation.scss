@@ -93,7 +93,6 @@
 
 .site-header a {
   color: inherit !important;
-  transition: all 0.3s !important;
 }
 
 .site-header-nav {
@@ -125,6 +124,7 @@
   }
 
   &.active, &:active, &:hover {
+    transition: all 0.3s !important;
     color: $jumbo-color-strong !important;
     border-bottom-color: $jumbo-color-strong !important;
     text-decoration: none !important;
