@@ -5,6 +5,13 @@
     padding-right: 5px;
   }
 
+  transition: all 0.3s !important;
+
+  &.active, &:active, &:hover {
+    transition: all 0.3s !important;
+    color: $jumbo-color-strong !important;
+  }
+
   .logo {
     width: auto;
     height: 18px;
@@ -13,10 +20,6 @@
     @include breakpoint(sm) {
       height: 22px;
       opacity: 0.9 !important;
-    }
-
-    &:hover {
-      opacity: 1 !important;
     }
 
     path,
@@ -164,6 +167,7 @@
   }
 }
 
+// FIXME: I'm not sure if this still work.
 // swap logo and nav for right-to-left languages
 html[dir="rtl"] {
   .site-header-logo { @include breakpoint(lg) { float: right; } }
