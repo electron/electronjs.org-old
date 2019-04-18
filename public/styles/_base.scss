@@ -19,9 +19,12 @@ h1,h2,h3,h4,h5,h6 {
   }
 }
 
-ul {
-  margin-left: 1em !important;
-  margin-left: 1.5em !important;
+// FIXME(HashimotoYT): Move me to another file.
+.governance {
+  ul {
+    margin-left: 1em !important;
+    margin-left: 1.5em !important;
+  }
 }
 
 hr {
