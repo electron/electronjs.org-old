@@ -18,6 +18,11 @@
 }
 
 .r-class {
+  @media (max-width: 700px) {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
   // Magic numbers.
   margin-right: 128px;
   margin-left: 128px;
