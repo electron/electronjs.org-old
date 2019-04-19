@@ -12,95 +12,97 @@ The Electron team is excited to announce that the stable release of Electron 5 i
 
 ## What's New?
 
-A large part of Electron's functionality is provided by Chromium, Node.js, and V8, the core components that make up Electron. As such, a key goal for the Electron team is to keep up with changes to these projects as much as possible, providing developers who build Electron apps access to new web and JavaScript features. To this end, Electron 5 features major version bumps to each of these components; Electron v5.0.0 includes Chromium `...`, Node `...`, and V8 `...`.
+A large part of Electron's functionality is provided by Chromium, Node.js, and V8, the core components that make up Electron. As such, a key goal for the Electron team is to keep up with changes to these projects as much as possible, providing developers who build Electron apps access to new web and JavaScript features. To this end, Electron 5 features major version bumps to each of these components; Electron v5.0.0 includes Chromium `'73.0.3683.117`, Node `12.0.0`, and V8 `7.3.492.27`.
 
 In addition, Electron 5 includes changes to Electron-specific APIs. You can find a summary of the major changes in Electron 5 below; for the full list of changes, check out the [Electron v5.0.0 release notes](https://github.com/electron/electron/releases/tag/v5.0.0).
 
-### Feature
+### Promisification
 
-#### Promisification
 Electron 5 contains changes as part of our [Promisification](https://github.com/electron/electron/blob/master/docs/api/modernization/promisification.md) initiative to convert callback-based functions in Electron to return Promises.  The following APIs were converted for Electron
 5:
-* app.getFileIcon
-* contentTracing.getCategories
-* contentTracing.startRecording
-* contentTracing.stopRecording
+* `app.getFileIcon`
+* `contentTracing.getCategories`
+* `contentTracing.startRecording`
+* `contentTracing.stopRecording`
+* `debugger.sendCommand`
 * Cookies API
-* shell.openExternal
-* webContents.loadFile
-* webContents.loadFile
-* webContents.loadURL
-* webContents.zoomLevel
-* webContents.zoomFactor
-* win.capturePage
+* `shell.openExternal`
+* `webContents.loadFile`
+* `webContents.loadURL`
+* `webContents.zoomLevel`
+* `webContents.zoomFactor`
+* `win.capturePage`
 
+### System colors access for macOS
 
-Description of feature
-Added activate option to webContents.openDevTools. #13852
-Added app.commandLine.hasSwitch() / app.commandLine.getSwitchValue(). #16282
-Added fileMenu / viewMenu / appMenu roles. #16328
-Added ipc-message and ipc-message-sync events to webContents. #16468
-Added preload-error event to webContents emitted when preload script fails (parse error, unhandled exception, etc.). #16411
-Added a way to query for system colors on MacOS via systemPreferences.getSystemColor(). #16248
-Added about panel customization on linux. #15658
-Added event and method to detect high contrast color schemes . #15493
-Added getMemoryFootprint API. #14847
-Added macOS support for systemPreferences.getAccentColor(). #16251
-Added macOS support to systemPreferences.getColor(). #16249
-Added methods to DownloadItem that enable customization of the save dialog options during will-download events. #15497
-Added response header support to protocol.registerFileProtocol to match protocol.registerStreamProtocol. #16098
-Added support for DesktopCapturerSource.appIcon. 1f55f16
-Added support for multiple browser views per BrowserWindow. #16148
-Added support for running preload scripts and nodeIntegration in iframes. #16425
-Allow for MacOS notifications to be immediately delivered. #16060
-Allow numpad keys to be used as accelerators. #15689
-Allow partial setting of window bounds with win.setBounds(). #15677
-Allow registering of multiple globalShortcuts. #15542
-Allowed filtering of remote.getBuiltin(), remote.getCurrentWindow(), remote.getCurrentWebContents and <webview>.getWebContents(). #16293
+Three functions were changes or added to `systemPreferences` to access macOS systems
+colors.  Those functions are:
+* `systemPreferences.getAccentColor`
+* `systemPreferences.getColor`
+* `systemPreferences.getSystemColor`
 
+### Process memory information
 
-Exposes an API to allow apps to determine their status as a trusted accessibility client. #16119
-Feat: provide user system's region with app.getLocaleCountryCode(). #15035
+The function `process.getProcessMemoryInfo` has been added to get memory usage
+statistics about the current process.
 
-Mixed-sandbox mode works on Linux. #15870
-The browser-backward and browser-forward app-command events events available in BrowserWindow now work on Linux. #15441
-Unified behavior between the default app and packaged apps (application menu / window-all-closed handling). #16310
-Updated SpellCheck API to support asynchronous results. #14032
-Upgraded to Chromium 71.0.3578.98. #15966
-Added --disable-color-correct-rendering switch. #15898
+### Additional filtering for remote APIs.
 
-Added win.removeMenu() to remove application menus instead of using win.setMenu(null). #16657
-Added caps lock and numlock as keyboard accelerator modifiers. #16725
-Converted debugger.sendCommand() to return a Promise instead of taking a callback. #16931
-Updated Menu.buildFromTemplate() to allow it to accept MenuItems in addition to plain objects. #16783
-Added webFrame.setIsolatedWorldInfo API and deprecated related APIs. #16932
+In an effort to improve security but still allow use of the remote API, there are now
+new remote events so that `remote.getBuiltin`, `remote.getCurrentWindow`, `remote.getCurrentWebContents` and `<webview>.getWebContents` can be filtered.
 
-Enabled NodeIntegrationInSubFrames option usage for webview tags. #17398
-Enabled the setuid sandbox on Linux, allowing Electron to launch sandboxed processes in environments that disable CLONE_NEWUSER for unprivileged users. #17343
+### Multiple BrowserViews on BrowserWindow
 
+BrowserWindow now supports managing multiple BrowserViews within the same BrowserWindow.
 
 ## Breaking Changes
 
-### Breaking Change
+### Defaults for packaged apps
 
-https://github.com/electron/electron/blob/master/docs/api/breaking-changes.md#planned-breaking-api-changes-50
+Packaged apps will now behave the same as the default app, which means that a default
+application menu will be created unless the app has one and the `window-all-closed`
+event will be automatically handled unless the app handles the event.
 
-Mixed-sandbox mode is now enabled by default. enableMixedSandbox and the --enable-mixed-sandbox command-line switch still exist for compatibility, but are deprecated and have no effect. #15894
-The default values of nodeIntegration and webviewTag are now false to improve security. #16235
+### Mixed sandbox
+
+Mixed sandbox mode is now enabled by default.  Renderers launched with `sandbox: true`
+will now be actually sandboxed, where previously they would only be sandboxed if mixed-sandbox mode was also enabled.
+
+### Security improvements
+The default values of `nodeIntegration` and `webviewTag` are now false to improve security.
+
+### Spellchecker now asynchronous
+
+The SpellCheck API has been changed to provide asynchronous results.
 
 ## Deprecations
 
 The following breaking changes are planned for Electron 6.0, and thus are deprecated in Electron 5.0.
 
-### Deprecation
+### Mksnapshot binaries for arm and arm64
+Native binaries of mksnapshot for arm and arm64 are deprecated and will be removed in 6.0.0.  Snapshots can be created for arm and arm64 using the x64 binaries.
 
-https://github.com/electron/electron/blob/master/docs/api/breaking-changes.md#planned-breaking-api-changes-60
-
-Native versions of mksnapshot for arm and arm64 are deprecated.
+### ServiceWorker APIs on WebContents
 Deprecated ServiceWorker APIs on WebContents in preparation for their removal. #16732
-Deprecated modules internally using remote.require in sandboxed renderer context. #15145
-Added webFrame.setIsolatedWorldInfo API and deprecated related APIs. #16932
-enableMixedSandbox and the --enable-mixed-sandbox command-line switch still exist for compatibility, but are deprecated and have no effect. #15894
+
+### Automatic modules with sandbox
+In order to improve security, the following modules are being deprecated for use directly via `require` and will instead need to be included via `remote.require`:
+* `electron.screen`
+* `child_process`
+* `fs`
+* `os`
+* `path`
+
+## webFrame Isolated World APIs
+`webFrame.setIsolatedWorldContentSecurityPolicy`,`webFrame.setIsolatedWorldHumanReadableName`, `webFrame.setIsolatedWorldSecurityOrigin` have been deprecated in favor of `webFrame.setIsolatedWorldInfo`.
+
+### Mixed sandbox
+`enableMixedSandbox` and the `--enable-mixed-sandbox` command-line switch still exist for compatibility, but are deprecated and have no effect. #15894
+
+## End of support for 2.0.x
+
+Per our [supported versions policy](https://electronjs.org/docs/tutorial/support#supported-versions), 2.0.x has reached end of life.
+
 
 ## App Feedback Program
 
@@ -108,6 +110,6 @@ The [App Feedback Program](https://electronjs.org/blog/app-feedback-program) we 
 
 ## What's Next
 
-In the short term, you can expect the team to continue to focus on keeping up with the development of the major components that make up Electron, including Chromium, Node, and V8. Although we are careful not to make promises about release dates, our plan is release new major versions of Electron with new versions of those components approximately quarterly. [See our versioning document](https://electronjs.org/docs/tutorial/electron-versioning) for more detailed information about versioning in Electron.
+In the short term, you can expect the team to continue to focus on keeping up with the development of the major components that make up Electron, including Chromium, Node, and V8. Although we are careful not to make promises about release dates, our plan is release new major versions of Electron with new versions of those components approximately quarterly.  The [tentative 6.0.0 schedule](https://github.com/electron/electron/blob/master/docs/tutorial/electron-timelines.md#600-release-schedule) maps out key dates in the Electron 6 development life cycle. Also, [see our versioning document](https://electronjs.org/docs/tutorial/electron-versioning) for more detailed information about versioning in Electron.
 
 For information on planned breaking changes in upcoming versions of Electron, [see our Planned Breaking Changes doc](https://github.com/electron/electron/blob/master/docs/api/breaking-changes.md).
