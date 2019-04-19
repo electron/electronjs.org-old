@@ -83,7 +83,7 @@ The following breaking changes are planned for Electron 6.0, and thus are deprec
 Native binaries of mksnapshot for arm and arm64 are deprecated and will be removed in 6.0.0.  Snapshots can be created for arm and arm64 using the x64 binaries.
 
 ### ServiceWorker APIs on WebContents
-Deprecated ServiceWorker APIs on WebContents in preparation for their removal. #16732
+Deprecated ServiceWorker APIs on WebContents in preparation for their removal.
 
 ### Automatic modules with sandbox
 In order to improve security, the following modules are being deprecated for use directly via `require` and will instead need to be included via `remote.require`:
@@ -97,7 +97,7 @@ In order to improve security, the following modules are being deprecated for use
 `webFrame.setIsolatedWorldContentSecurityPolicy`,`webFrame.setIsolatedWorldHumanReadableName`, `webFrame.setIsolatedWorldSecurityOrigin` have been deprecated in favor of `webFrame.setIsolatedWorldInfo`.
 
 ### Mixed sandbox
-`enableMixedSandbox` and the `--enable-mixed-sandbox` command-line switch still exist for compatibility, but are deprecated and have no effect. #15894
+`enableMixedSandbox` and the `--enable-mixed-sandbox` command-line switch still exist for compatibility, but are deprecated and have no effect.
 
 ## End of support for 2.0.x
 
