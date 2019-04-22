@@ -72,7 +72,7 @@ The default values of `nodeIntegration` and `webviewTag` are now false to improv
 
 ### Spellchecker now asynchronous
 
-The SpellCheck API has been changed to provide asynchronous results.
+The SpellCheck API has been changed to provide [asynchronous results](https://github.com/electron/electron/blob/5-0-x/docs/api/web-frame.md#webframesetspellcheckproviderlanguage-provider).
 
 ## Deprecations
 
