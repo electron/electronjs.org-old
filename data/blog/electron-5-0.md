@@ -18,8 +18,7 @@ In addition, Electron 5 includes changes to Electron-specific APIs. You can find
 
 ### Promisification
 
-Electron 5 contains changes as part of our [Promisification](https://github.com/electron/electron/blob/master/docs/api/modernization/promisification.md) initiative to convert callback-based functions in Electron to return Promises.  The following APIs were converted for Electron
-5:
+Electron 5 contains changes as part of our [Promisification](https://github.com/electron/electron/blob/master/docs/api/modernization/promisification.md) initiative to convert callback-based functions in Electron to return Promises.  The following APIs were converted for Electron 5:
 * `app.getFileIcon`
 * `contentTracing.getCategories`
 * `contentTracing.startRecording`
