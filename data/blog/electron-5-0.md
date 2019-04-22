@@ -84,7 +84,7 @@ Native binaries of mksnapshot for arm and arm64 are deprecated and will be remov
 ### ServiceWorker APIs on WebContents
 Deprecated ServiceWorker APIs on WebContents in preparation for their removal.
 
-### Automatic modules with sandbox
+### Automatic modules with sandboxed webContents
 In order to improve security, the following modules are being deprecated for use directly via `require` and will instead need to be included via `remote.require`:
 * `electron.screen`
 * `child_process`
