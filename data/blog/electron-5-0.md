@@ -7,19 +7,19 @@ author:
 date: '2018-04-23'
 ---
 
-The Electron team is excited to announce the release of Electron 5.0.0! You can install it with npm via `npm install electron@latest` or download the tarballs from [our releases page](https://github.com/electron/electron/releases/tag/v5.0.0). The release is packed with upgrades, fixes, and new features, and we can't wait to see what you build with them. Read more for details about this release, and please share any feedback you have as you explore!
+The Electron team is excited to announce the release of Electron 5.0.0! You can install it with npm via `npm install electron@latest` or download the tarballs from [our releases page](https://github.com/electron/electron/releases/tag/v5.0.0). The release is packed with upgrades, fixes, and new features. We can't wait to see what you build with them! Continue reading for details about this release, and please share any feedback you have!
 
 ---
 
 ## What's New?
 
-Much of Electron's functionality is provided by the core components of Chromium, Node.js, and V8. We keep Electron up-to-date with these projects to provide our users with new JavaScript features, performance improvements, and security fixes. Each of these packages has a major version bump in Electron 5: Chromium `73.0.3683.119`, Node.js `12.0.0`, and V8 `7.3.492.27`.
+Much of Electron's functionality is provided by the core components of Chromium, Node.js, and V8. Electron keeps up-to-date with these projects to provide our users with new JavaScript features, performance improvements, and security fixes. Each of these packages has a major version bump in Electron 5: Chromium `73.0.3683.119`, Node.js `12.0.0`, and V8 `7.3.492.27`.
 
 Electron 5 also includes improvements to Electron-specific APIs. A summary of the major changes is below; for the full list of changes, check out the [Electron v5.0.0 release notes](https://github.com/electron/electron/releases/tag/v5.0.0).
 
 ### Promisification
 
-Electron 5 continues our [Promisification](https://github.com/electron/electron/blob/5-0-x/docs/api/promisification.md) initiative to convert Electron's callback-based API to use Promises. The following APIs were converted for Electron 5:
+Electron 5 continues [Promisification initiative](https://github.com/electron/electron/blob/5-0-x/docs/api/promisification.md) initiative to convert Electron's callback-based API to use Promises. These APIs were converted for Electron 5:
 * `app.getFileIcon`
 * `contentTracing.getCategories`
 * `contentTracing.startRecording`
@@ -35,16 +35,14 @@ Electron 5 continues our [Promisification](https://github.com/electron/electron/
 
 ### System colors access for macOS
 
-Three functions were changes or added to `systemPreferences` to access macOS systems
-colors. Those functions are:
+These functions were changed or added to `systemPreferences` to access macOS systems colors:
 * `systemPreferences.getAccentColor`
 * `systemPreferences.getColor`
 * `systemPreferences.getSystemColor`
 
 ### Process memory information
 
-The function `process.getProcessMemoryInfo` has been added to get memory usage
-statistics about the current process.
+The function `process.getProcessMemoryInfo` has been added to get memory usage statistics about the current process.
 
 ### Additional filtering for remote APIs
 
