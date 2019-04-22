@@ -7,7 +7,7 @@ author:
 date: '2018-04-23'
 ---
 
-The Electron team is excited to announce the release of Electron 5.0.0! You can install it from [electronjs.org](https://electronjs.org/) or from npm via `npm install electron@latest`. The release is packed with upgrades, fixes, and new features, and we can't wait to see what you build with them. Read more for details about this release, and please share any feedback you have as you explore!
+The Electron team is excited to announce the release of Electron 5.0.0! You can install it with npm via `npm install electron@latest` or download the tarballs from [our releases page](https://github.com/electron/electron/releases/tag/v5.0.0). The release is packed with upgrades, fixes, and new features, and we can't wait to see what you build with them. Read more for details about this release, and please share any feedback you have as you explore!
 
 ---
 
@@ -46,10 +46,9 @@ colors. Those functions are:
 The function `process.getProcessMemoryInfo` has been added to get memory usage
 statistics about the current process.
 
-### Additional filtering for remote APIs.
+### Additional filtering for remote APIs
 
-In an effort to improve security but still allow use of the remote API, there are now
-new remote events so that `remote.getBuiltin`, `remote.getCurrentWindow`, `remote.getCurrentWebContents` and `<webview>.getWebContents` can be filtered.
+To improve security in the `remote` API, new remote events have been added so that `remote.getBuiltin`, `remote.getCurrentWindow`, `remote.getCurrentWebContents` and `<webview>.getWebContents` can be [filtered](https://github.com/electron/electron/blob/master/docs/tutorial/security.md#13-disable-or-limit-creation-of-new-windows).
 
 ### Multiple BrowserViews on BrowserWindow
 
@@ -59,14 +58,11 @@ BrowserWindow now supports managing multiple BrowserViews within the same Browse
 
 ### Defaults for packaged apps
 
-Packaged apps will now behave the same as the default app, which means that a default
-application menu will be created unless the app has one and the `window-all-closed`
-event will be automatically handled unless the app handles the event.
+Packaged apps will now behave the same as the default app: a default application menu will be created unless the app has one and the `window-all-closed` event will be automatically handled unless the app handles the event.
 
 ### Mixed sandbox
 
-Mixed sandbox mode is now enabled by default. Renderers launched with `sandbox: true`
-will now be actually sandboxed, where previously they would only be sandboxed if mixed-sandbox mode was also enabled.
+Mixed sandbox mode is now enabled by default. Renderers launched with `sandbox: true` will now be actually sandboxed, where previously they would only be sandboxed if mixed-sandbox mode was also enabled.
 
 ### Security improvements
 The default values of `nodeIntegration` and `webviewTag` are now false to improve security.
@@ -77,7 +73,7 @@ The SpellCheck API has been changed to provide [asynchronous results](https://gi
 
 ## Deprecations
 
-The following breaking changes are newly deprecated in Electron 5.0.0 and planned for removal in 6.0.0:
+The following APIs are newly deprecated in Electron 5.0.0 and planned for removal in 6.0.0:
 
 ### Mksnapshot binaries for arm and arm64
 Native binaries of mksnapshot for arm and arm64 are deprecated and will be removed in 6.0.0. Snapshots can be created for arm and arm64 using the x64 binaries.
