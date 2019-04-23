@@ -35,7 +35,7 @@ Electron 5 continues [Promisification initiative](https://github.com/electron/el
 
 ### System colors access for macOS
 
-These functions were changed or added to `systemPreferences` to access macOS systems colors:
+These functions were changed or added to `systemPreferences` to access macOS systems' colors:
 * `systemPreferences.getAccentColor`
 * `systemPreferences.getColor`
 * `systemPreferences.getSystemColor`
