@@ -63,7 +63,7 @@ Packaged apps will now behave the same as the default app: a default application
 Mixed sandbox mode is now enabled by default. Renderers launched with `sandbox: true` will now be actually sandboxed, where previously they would only be sandboxed if mixed-sandbox mode was also enabled.
 
 ### Security improvements
-The default values of `nodeIntegration` and `webviewTag` are now false to improve security.
+The default values of `nodeIntegration` and `webviewTag` are now `false` to improve security.
 
 ### Spellchecker now asynchronous
 
