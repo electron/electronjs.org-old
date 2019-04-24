@@ -4,7 +4,7 @@ author:
 - BinaryMuse
 - ckerr
 - jkleinsc
-date: '2018-04-23'
+date: '2019-04-23'
 ---
 
 The Electron team is excited to announce the release of Electron 5.0.0! You can install it with npm via `npm install electron@latest` or download the tarballs from [our releases page](https://github.com/electron/electron/releases/tag/v5.0.0). The release is packed with upgrades, fixes, and new features. We can't wait to see what you build with them! Continue reading for details about this release, and please share any feedback you have!
