@@ -55,10 +55,12 @@
         {{localized.docs.footer.propose_change}}
       </a>
 
+      {{#if docEn}}
       <a class="mr-4 translate-on-crowdin" href='{{doc.crowdinUrl}}'>
         <span class="octicon octicon-globe"></span>
         {{localized.docs.footer.translate}}
       </a>
+      {{/if}}
 
       <a class="mr-4" href='{{doc.href}}/history'>
         <span class="octicon octicon-history"></span>
