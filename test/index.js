@@ -316,7 +316,7 @@ describe('electronjs.org', () => {
         .set('Cookie', ['language=zh-CN'])
       const $ = cheerio.load(res.text)
       $('.docs .sub-section[data-lang="en-US"]').each((i, elem) => {
-        $(elem).should.have.class('hidden')
+        $(elem).should.have.class('d-none')
       })
     })
 
