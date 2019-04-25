@@ -202,7 +202,7 @@ describe('electronjs.org', () => {
   describe('releases', () => {
     it('/releases/stable', () => {
       cy.visit(`${localhost}/releases/stable`)
-      cy.get('.r-resp-header-narrow').contains('Stable Releases')
+      cy.get('.r-resp-header-lg').contains('Stable Releases')
       cy.get('.release-entry').should('have.length', 5)
       cy.get('a.releases-link-stable').should('have.class', 'active')
     })
