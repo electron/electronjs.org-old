@@ -157,6 +157,11 @@
     p {
       font-size: 14px;
     }
+
+    &:hover {
+      cursor: pointer !important;
+      background-color: #fcfcfc !important;
+    }
   }
 
   .release-version-filter {
