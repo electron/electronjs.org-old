@@ -1,10 +1,7 @@
-// @ts-check
-
 module.exports = () => {
   // don't add any listener if there isn't at least 1 non-english section
   if (document.querySelectorAll('.docs div.sub-section:not([data-lang="en-US"])').length > 0) {
     const toggles = Array.from(document.querySelectorAll('.docs .en-toggle'))
-    console.log(toggles)
     toggles.forEach(toggle => {
       toggle.onclick = (e) => {
         let el = e.target
