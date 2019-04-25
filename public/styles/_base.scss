@@ -58,12 +58,15 @@ p:last-child {
 .text-center-md { @include breakpoint(md) { text-align: center !important; } }
 .text-center-lg { @include breakpoint(lg) { text-align: center !important; } }
 
+// FIXME(HashimotoYT): Make something with this styles
+/*
 h1 {                   -webkit-font-smoothing: antialiased; }
 h2 { font-weight: 300; -webkit-font-smoothing: antialiased; }
 h3 { font-weight: 400; -webkit-font-smoothing: antialiased; }
 h4 { font-weight: 500; }
 h5 { font-weight: 700; }
 h6 { font-weight: 700; }
+*/
 
 h2 {
   margin-top: 0;
