@@ -33,37 +33,37 @@ code {
 // No spacer in code blocks
 pre code {
   &:after {
-    content: none;
+    content: none !important;
   }
 }
 
 // Code blocks
 .highlight {
-  margin: 0 0 $spacer-3;
-  border-radius: 4px;
+  margin: 0 0 $spacer-3 !important;
+  border-radius: 4px !important;
   background-color: $gray;
-  border: $border;
+  border: $border !important;
 
   pre {
-    padding: $spacer-3;
-    overflow: auto;
-    font-size: 16px;
-    line-height: 1.45;
+    padding: $spacer-3 !important;
+    overflow: auto !important;
+    font-size: 16px !important;
+    line-height: 1.45 !important;
 
     code {
-      display: inline;
-      max-width: initial;
-      padding: 0;
-      margin: 0;
-      overflow: initial;
-      line-height: inherit;
-      word-wrap: normal;
+      display: inline !important;
+      max-width: initial !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      overflow: initial !important;
+      line-height: inherit !important;
+      word-wrap: normal !important;
       background-color: transparent;
-      border: 0;
+      border: 0 !important;
 
       &:before,
       &:after {
-        content: none;
+        content: none !important;
       }
     }
   }
