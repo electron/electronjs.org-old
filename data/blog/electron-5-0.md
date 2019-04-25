@@ -13,7 +13,17 @@ The Electron team is excited to announce the release of Electron 5.0.0! You can 
 
 ## What's New?
 
-Much of Electron's functionality is provided by the core components of Chromium, Node.js, and V8. Electron keeps up-to-date with these projects to provide our users with new JavaScript features, performance improvements, and security fixes. Each of these packages has a major version bump in Electron 5: Chromium `73.0.3683.119`, Node.js `12.0.0`, and V8 `7.3.492.27`.
+Much of Electron's functionality is provided by the core components of Chromium, Node.js, and V8. Electron keeps up-to-date with these projects to provide our users with new JavaScript features, performance improvements, and security fixes. Each of these packages has a major version bump in Electron 5:
+
+- Chromium `73.0.3683.119`
+  - [New in 70](https://developers.google.com/web/updates/2018/10/nic70)
+  - [New in 71](https://developers.google.com/web/updates/2018/12/nic71)
+  - [New in 72](https://developers.google.com/web/updates/2019/01/nic72)
+  - [New in 73](https://developers.google.com/web/updates/2019/03/nic73)
+- Node.js `12.0.0`
+  - [Node 12 Blog Post](https://nodejs.org/en/blog/release/v12.0.0/)
+- V8 `7.3.492.27`.
+  - [New JS Features](https://twitter.com/mathias/status/1120700101637353473)
 
 Electron 5 also includes improvements to Electron-specific APIs. A summary of the major changes is below; for the full list of changes, check out the [Electron v5.0.0 release notes](https://github.com/electron/electron/releases/tag/v5.0.0).
 
