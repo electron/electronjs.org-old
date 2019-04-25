@@ -1,6 +1,12 @@
 
 // Releases ------------------------------
 
+// FIXME(HashimotoYT): This doesn't should be.
+.pagination .current,
+.pagination .current:hover {
+  color: #fff !important;
+}
+
 .releases-tag {
   display: inline-block;
   margin: .3em .1em;
