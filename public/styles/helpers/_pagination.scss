@@ -47,7 +47,7 @@
   .current,
   .current:hover {
     z-index: 3;
-    color: $text-white;
+    color: $text-white !important;
     background-color: $bg-blue;
     border-color: $border-blue;
   }
