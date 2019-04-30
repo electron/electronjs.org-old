@@ -10,12 +10,12 @@ body {
 }
 
 a {
-  color: $main-link-color !important;  // override Primer
+  color: $main-link-color;  // override Primer
 }
 
 h1,h2,h3,h4,h5,h6 {
   a {
-    color: $main-color !important;  // override Primer
+    color: $main-color;  // override Primer
   }
 }
 

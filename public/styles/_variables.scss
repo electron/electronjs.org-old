@@ -32,12 +32,12 @@ $accent-color: hsl(335, 87%, 47%);
 
 // Basecoat overrides
 
-$theme-color: $main-color-strong;
+$theme-color: $main-color-strong !default;
 
-$body-color:    $main-color !important;
-$heading-color: $main-color-strong !important;
+$body-color:    $main-color !default;
+$heading-color: $main-color-strong !default;
 
-$border-color: $main-border-color !important;
+$border-color: $main-border-color !default;
 
 // Increase xl breakpoint
 // So that containers start breaking before touching the edge
