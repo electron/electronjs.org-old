@@ -327,3 +327,65 @@
   background: #fff;
   box-shadow: inset 0 0 0 1px #c8e1ff;
 }
+
+.logo-img {
+  display: inline-block;
+  height: 25px;
+  margin: 10px;
+  position: relative;
+  vertical-align: middle;
+  width: auto;
+}
+
+@media (min-width: 768px) {
+  .logo-img {
+    height: 30px;
+    margin: 10px;
+    width: auto;
+  }
+}
+
+@media (min-width: 1012px) {
+  .logo-img {
+    height: 35px;
+    margin: 10px 20px;
+  }
+}
+
+.logo-img-sm {
+  display: inline-block;
+  height: 20px;
+  margin: 10px;
+  position: relative;
+  vertical-align: middle;
+  width: auto;
+}
+
+@media (min-width: 768px) {
+  .logo-img-sm {
+    height: 25px;
+    margin: 10px;
+    width: auto;
+  }
+}
+
+.logo-img-lg {
+  height: 35px;
+  margin: 5px 15px;
+  width: auto;
+}
+
+@media (min-width: 768px) {
+  .logo-img-lg {
+    height: 40px;
+    margin: 10px 15px;
+    width: auto;
+  }
+}
+
+@media (min-width: 1012px) {
+  .logo-img-lg {
+    height: 50px;
+    margin: 10px 25px;
+  }
+}
