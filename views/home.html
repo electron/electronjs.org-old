@@ -1,80 +1,85 @@
-<div class="jumbotron jumbotron-home text-center">
-  <div class="container">
-    {{> hero}}
-    <p class='jumbotron-lead'>
-      {{{localized.tagline}}}
-    </p>
+<main class="homepage PRIMER-REMOVE-ME">
+  <div class="py-6 py-sm-8 jumbotron jumbotron-home ">
+    <div class="container-xl p-responsive position-relative text-center">
+      {{> hero}}
+      <p class='jumbotron-lead'>
+        {{{localized.tagline}}}
+      </p>
+    </div>
   </div>
-</div>
 
-<div class="container">
-    <h1 class="text-center"><a href="/releases/stable">{{localized.nav.releases}}</a></h1>
-    <div class="col-md-12 electron-version-container">
-      <div class="electron-version">
-        <figure id="electron-version-latest" class="highlight highlight-dark text-left my-3 px-2">
-            <pre class="overflow-hidden"><code><span class="no-select">$ </span>npm i -D electron@latest<span class="c1 no-select">
+<div class="py-6 py-md-7 py-lg-8">
+  <div class="container-lg p-responsive">
+    <div>
+      <h1 class="f0-light text-center"><a href="/releases/stable">{{localized.nav.releases}}</a></h1>
+      <div class="electron-version-container">
+        <div class="electron-version">
+          <figure id="electron-version-latest" class="highlight highlight-dark text-left my-3 px-2">
+              <pre class="overflow-hidden"><code><span class="no-select">$ </span>npm i -D electron@latest<span class="c1 no-select">
 # Electron   {{{releases.stableRelease.data.version}}}
 # Node       {{releases.stableRelease.data.deps.node}}
 # Chromium   {{releases.stableRelease.data.deps.chrome}}</span></code></pre>
-        </figure>
-      </div>
-      <div class="electron-version">
-        <figure id="electron-version-beta" class="highlight highlight-dark text-left my-3 px-3">
-          <pre class="overflow-hidden"><code><span class="no-select">$ </span>npm i -D electron@beta<span class="c1 no-select">
+          </figure>
+        </div>
+        <div class="electron-version">
+          <figure id="electron-version-beta" class="highlight highlight-dark text-left my-3 px-3">
+            <pre class="overflow-hidden"><code><span class="no-select">$ </span>npm i -D electron@beta<span class="c1 no-select">
 # Electron   {{{releases.betaRelease.data.version}}}
 # Node       {{releases.betaRelease.data.deps.node}}
 # Chromium   {{releases.betaRelease.data.deps.chrome}}</span></code></pre>
-        </figure>
-      </div>
-      <div class="electron-version">
-        <figure id="electron-version-nightly" class="highlight highlight-dark text-left my-3 px-3">
-          <pre class="overflow-hidden"><code><span class="no-select">$ </span>npm i -D electron-nightly<span class="c1 no-select">
+          </figure>
+        </div>
+        <div class="electron-version">
+          <figure id="electron-version-nightly" class="highlight highlight-dark text-left my-3 px-3">
+            <pre class="overflow-hidden"><code><span class="no-select">$ </span>npm i -D electron-nightly<span class="c1 no-select">
 # Electron   {{{releases.nightlyRelease.data.version}}}
 # Node       {{releases.nightlyRelease.data.deps.node}}
 # Chromium   {{releases.nightlyRelease.data.deps.chrome}}</span></code></pre>
-        </figure>
+          </figure>
+        </div>
       </div>
     </div>
+  </div>
 </div>
 
-<section class="page-section page-section-spacious" id='electron'>
-  <div class="container-narrow">
-    <h1 class="text-center-sm">{{{localized.electron_is_easy.title}}}</h1>
+<div class="py-6 py-md-7 py-lg-8" id="electron">
+  <div class="container-lg p-responsive">
+    <h1 class="f0-light text-center-sm">{{{localized.electron_is_easy.title}}}</h1>
     <p class="lead text-center-sm">{{{localized.electron_is_easy.description}}}</p>
 
-    <p class="text-center-sm mt-4">
-      <a class="btn btn-lg btn-outline-themed" href="https://youtu.be/8YP_nOCO-4Q">
+    <p class="text-center-sm mt-4 mb-8">
+      <a class="btn-mktg btn-outline-mktg mr-2" type="button" href="https://youtu.be/8YP_nOCO-4Q">
         <span class="octicon octicon-eye mr-1"></span>
         <span>{{{localized.electron_is_easy.video_link}}}</span>
       </a>
     </p>
 
-    <hr>
+    <hr class="pt-8">
 
-    <div class="row text-center text-small mt-6">
+    <div class="d-sm-flex flex-row text-center text-small mt-6">
       <div class="col-xs-12 col-sm-4">
         <img class="home-illu" role="presentation" src="/images/web-tech.svg" aria-hidden="true">
-        <h3 class="mb-2 mt-0">{{{localized.web_technologies.title}}}</h3>
-        <p>{{{localized.web_technologies.description}}}</p>
+        <h3 class="f1-light mb-2 mt-0">{{{localized.web_technologies.title}}}</h3>
+        <p class="f4">{{{localized.web_technologies.description}}}</p>
       </div>
       <div class="col-xs-12 col-sm-4">
         <img class="home-illu" role="presentation" src="/images/open-source.svg" aria-hidden="true">
-        <h3 class="mb-2 mt-0">{{{localized.open_source.title}}}</h3>
-        <p>{{{localized.open_source.description}}}</p>
+        <h3 class="f1-light mb-2 mt-0">{{{localized.open_source.title}}}</h3>
+        <p class="f4">{{{localized.open_source.description}}}</p>
       </div>
       <div class="col-xs-12 col-sm-4">
         <img class="home-illu" role="presentation" src="/images/cross-platform.svg" aria-hidden="true">
-        <h3 class="mb-2 mt-0">{{{localized.cross_platform.title}}}</h3>
-        <p>{{{localized.cross_platform.description}}}</p>
+        <h3 class="f1-light mb-2 mt-0">{{{localized.cross_platform.title}}}</h3>
+        <p class="f4">{{{localized.cross_platform.description}}}</p>
       </div>
     </div>
 
-    <div class="row text-center mt-6 mb-4">
-      <h2>{{{localized.benefits.hard_parts_made_easy}}}</h2>
+    <div class="text-center mt-8 mb-4">
+      <h2 class="f0-light">{{{localized.benefits.hard_parts_made_easy}}}</h2>
     </div>
 
-    <div class="row text-center text-small mt-3">
-      <div class='col-xs-12 col-sm-4 col-md-2 offset-md-1 mb-xs-4 mb-md-0 hero-feature'>
+    <div class="d-sm-flex flex-row text-center text-small mt-3 clearfix">
+      <div class="col-xs-12 col-sm-4 col-md-2 offset-md-1 mb-xs-4 mb-md-0 hero-feature">
         <a class="hero-link" href="/docs/api/auto-updater/">
           <span class="octicon hero-octicon octicon-squirrel" aria-hidden="true"></span>
           {{{localized.benefits.automatic_updates}}}
@@ -92,7 +97,7 @@
           {{{localized.benefits.crash_reporting}}}
         </a>
       </div>
-      <div class='col-xs-12 col-sm-4 offset-sm-2 col-md-2 offset-md-0 mb-xs-4 mb-md-0 hero-feature'>
+      <div class="col-xs-12 col-sm-4 col-md-2 mb-xs-4 mb-md-0 hero-feature">
         <a class="hero-link" href="/docs/api/content-tracing">
           <span class="octicon hero-octicon octicon-tools" aria-hidden="true"></span>
           {{{localized.benefits.debugging_and_profiling}}}
@@ -105,66 +110,43 @@
         </a>
       </div>
     </div>
-
   </div>
-</section>
+</div>
 
 
-<section class='page-section page-section-spacious bg-shade' id='get-started'>
-  <div class='container-narrow text-center'>
-    <h1>{{{localized.get_started.title}}}</h1>
+<div class='py-7 py-md-8 py-lg-9 bg-shade' id='get-started'>
+  <div class='container-lg p-responsive text-center'>
+    <h1 class="f0-light">{{{localized.get_started.title}}}</h1>
     <p class="lead">
       {{{localized.get_started.description}}}
     </p>
 
-    <div class='row mt-8'>
-      <div class='col-xs-12 col-md-5'>
+    <div class="d-flex flex-column flex-md-row my-5 pt-6">
+      <div class='col-md-5 flex-md-self-center text-center'>
         <a href="https://github.com/electron/electron-api-demos/releases">
           <div class="app-frame py-4 px-6">
-            <img alt="Screenshot of Electron API Demos app" src='/images/electron-api-demos.png'>
+            <img alt="Screenshot of Electron API Demos app" width="249px" height="221px" src='/images/electron-api-demos.png'>
           </div>
         </a>
       </div>
-      <div class='col-xs-12 col-md-7 text-left'>
-        <h3 class="mt-1 mb-3">{{{localized.explore.title}}}</h3>
+      <div class='col-md-6 pl-md-5'>
+        <h3 class="f2-light mt-1 mb-3">{{{localized.explore.title}}}</h3>
         <p>{{{localized.explore.description}}}</p>
         <p>
-          <a id="download-latest-release" class="btn btn-lg btn-outline-themed" href="https://github.com/electron/electron-api-demos/releases">
+          <a id="download-latest-release" class="btn-mktg btn-outline-mktg mr-2" href="https://github.com/electron/electron-api-demos/releases">
             <span class="octicon octicon-desktop-download mr-1"></span>
             <span>{{{localized.download_from_github}}}</span>
           </a>
         </p>
         <p id="download-alternatives" class="text-sm" style="display:none;">
-            {{{localized.view_all_releases_on_github}}}
+          {{{localized.view_all_releases_on_github}}}
         </p>
       </div>
     </div>
 
     <hr>
 
-    <div class='row mt-8'>
-      <div class='col-xs-12 col-md-7 text-right'>
-        <h3 class="mt-1 mb-3">{{localized.explore.fiddle_title}}</h3>
-        <p>{{{localized.landing.fiddle.description}}}</p>
-        <p>
-          <a
-            id="download-latest-release"
-            class="btn btn-lg btn-outline-themed"
-            href="https://github.com/electron/fiddle/releases/latest"
-          >
-            <span class="octicon octicon-desktop-download"></span>
-            <span>{{{localized.download_from_github}}}</span>
-          </a>
-          <a
-            id="download-latest-release"
-            class="btn btn-lg btn-outline-themed"
-            href="/fiddle"
-          >
-            <span class="octicon octicon-info"></span>
-            <span>{{{localized.explore.see_more_info}}}</span>
-          </a>
-        </p>
-      </div>
+    <div class="d-flex flex-column flex-md-row-reverse my-5 pt-6">
       <div class='col-xs-12 col-md-5' style="margin-top: 30px;">
         <a href="/fiddle">
           <img
@@ -177,16 +159,38 @@
           </p>
         </a>
       </div>
+      <div class='col-md-6 pr-md-5'>
+        <h3 class="f2-light mt-1 mb-3">{{localized.explore.fiddle_title}}</h3>
+        <p>{{{localized.landing.fiddle.description}}}</p>
+        <p>
+          <a
+            id="download-latest-release"
+            class="btn-mktg btn-outline-mktg"
+            href="https://github.com/electron/fiddle/releases/latest"
+          >
+            <span class="octicon octicon-desktop-download"></span>
+            <span>{{{localized.download_from_github}}}</span>
+          </a>
+          <a
+            id="download-latest-release"
+            class="btn-mktg btn-outline-mktg"
+            href="/fiddle"
+          >
+            <span class="octicon octicon-info"></span>
+            <span>{{{localized.explore.see_more_info}}}</span>
+          </a>
+        </p>
+      </div>
     </div>
 
     <hr/>
 
-  <h3 class="mb-3">
+  <h3 class="h2-mktg text-normal mb-3">
     {{{localized.quick_start.title}}}
   </h3>
   <p>{{{localized.quick_start.description}}}</p>
 
-  <figure class="highlight highlight-dark text-left my-4">
+  <figure class="highlight highlight-dark text-left my-6">
 <pre><code><span class="c1"># {{{localized.quick_start.clone}}}</span>
 $ git clone https://github.com/electron/electron-quick-start
 
@@ -197,39 +201,40 @@ $ cd electron-quick-start
 $ npm install &amp;&amp; npm start</code></pre>
     </figure>
 
-    <h3>
+    <h3 class="h2 text-normal">
       {{{localized.quick_start.dive_deeper}}}
     </h3>
 
 
-    <h3 class="pt-4">{{{localized.need_help.title}}}</h3>
+    <h3 class="f2-light pt-4">{{{localized.need_help.title}}}</h3>
     <p>{{{localized.need_help.description}}}</p>
 
   </div>
-</section>
+</div>
 
-<section class='page-section page-section-spacious' id='apps'>
-  <div class="container-narrow text-center">
-    <h1> {{{localized.apps.title}}}</h1>
-    <p class="lead">
-      {{{localized.apps.description}}}
-    </p>
+  <div class='py-7 py-md-8 py-lg-9' id='apps'>
+    <div class="container-lg text-center">
+      <h1 class="f0-light">{{{localized.apps.title}}}</h1>
+      <p class="lead">
+        {{{localized.apps.description}}}
+      </p>
 
-    <hr>
+      <hr>
 
-    <div>
-      <div class="mb-4">
-        {{#each apps}}
-          {{#if this.featured}}
-            {{> featured_app}}
-          {{/if}}
-        {{/each}}
-      </div>
-      <p class="mt-6">
-        <a href='/apps'>{{{localized.apps.view_more}}}</a>
+      <div>
+        <div class="py-7 py-md-8 py-lg-9">
+          {{#each apps}}
+            {{#if this.featured}}
+              {{> featured_app}}
+            {{/if}}
+          {{/each}}
+        </div>
+        <p class="mt-6">
+          <a href='/apps'>{{{localized.apps.view_more}}}</a>
           {{{localized.or}}}
           <a href="https://github.com/electron/electron-apps/blob/master/contributing.md#adding-your-app">{{{localized.apps.submit_your_own}}}</a>.
-      </p>
+        </p>
+      </div>
     </div>
   </div>
-</section>
+</main>

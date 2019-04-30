@@ -46,10 +46,10 @@
 }
 
 .hero-link {
-  color: $heading-color;
+  color: $heading-color !important;
 
   &:hover {
-    text-decoration: none;
+    text-decoration: none !important;
   }
 }
 
