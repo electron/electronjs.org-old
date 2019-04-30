@@ -30,22 +30,22 @@
 /* Featured Apps with Icons */
 
 .featured-app {
-  display: inline-block;
-  vertical-align: top;
-  width: 140px;
-  padding: 0;
-  color: $main-color-subtle;
-  margin: 10px 20px;
+  display: inline-block !important;
+  vertical-align: top !important;
+  width: 140px !important;
+  padding: 0 !important;
+  color: $main-color-subtle !important;
+  margin: 10px 20px !important;
   &:hover {
-    text-decoration: none;
+    text-decoration: none !important;
   }
 }
 
 .featured-app-logo-wrapper {
-  width: 120px;
-  height: 120px;
-  margin: 10px;
-  transition: transform .32s;
+  width: 120px !important;
+  height: 120px !important;
+  margin: 10px !important;
+  transition: transform .32s !important;
 }
 
 .featured-app:hover .featured-app-logo-wrapper {
