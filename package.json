@@ -98,7 +98,7 @@
     "icon-font-generator": "^2.1.10",
     "mocha": "^6.1.4",
     "nock": "^10.0.6",
-    "nodemon": "^1.18.11",
+    "nodemon": "^1.19.0",
     "octicons": "^8.5.0",
     "simplecrawler": "^1.1.7",
     "standard": "^12.0.1",
