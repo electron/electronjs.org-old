@@ -46,17 +46,17 @@
 }
 
 .hero-link {
-  color: $heading-color;
+  color: $heading-color !important;
 
   &:hover {
-    text-decoration: none;
+    text-decoration: none !important;
   }
 }
 
 .hero-octicon {
   color: $heading-color;
   background-color: transparent;
-  border: 1px solid mix($heading-color, #fff, 30%);
+  // border: 1px solid mix($heading-color, #fff, 30%);
 }
 
 .btn {

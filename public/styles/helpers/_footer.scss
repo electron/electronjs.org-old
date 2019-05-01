@@ -8,8 +8,8 @@
   text-align: center;
   border-top: 1px solid $gray-1;
   margin-top: auto; // makes footer sticky (with flexbox)
-  border-color: darken($main-bg-color-shade, 8%);
-  background: $main-bg-color-shade;
+  border-color: darken($main-bg-color-shade, 8%) !important;
+  background: $main-bg-color-shade !important;
 }
 
 .footer-mark {
@@ -19,7 +19,7 @@
   display: none;
   margin-top: -16px;
   margin-left: -16px;
-  color: #ccc;
+  color: #ccc !important;
 
   @include breakpoint(md) {
     display: block;
@@ -41,9 +41,9 @@
 }
 
 .footer a {
-  color: $main-color-subtle;
+  color: $main-color-subtle !important;
   &:hover {
-    color: $main-color;
+    color: $main-color !important;
   }
 }
 

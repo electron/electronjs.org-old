@@ -1,4 +1,9 @@
 .electron-version-container {
+  // Override Primer
+  figure {
+    margin: 0 !important;
+  }
+
   .electron-version {
     padding: 12px;
 
