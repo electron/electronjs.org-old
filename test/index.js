@@ -81,7 +81,9 @@ describe('electronjs.org', () => {
       $('.featured-app').length.should.equal(25)
       $('head > title').text().should.match(/^Electron/)
     })
+  })
 
+  describe('footer', () => {
     test('displays Code of Conduct link in the footer', async () => {
       const $ = await get('/')
       $('a.footer-nav-item[href="https://github.com/electron/electron/tree/master/CODE_OF_CONDUCT.md"]')
