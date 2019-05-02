@@ -83,7 +83,45 @@ describe('electronjs.org', () => {
     })
   })
 
-  describe.only('footer', () => {
+  describe('header', () => {
+    test('displays Donors link in the header', async () => {
+      const $ = await get('/')
+      $('a.site-header-nav-item[href="/donors"]')
+        .text().should.eq('Donors')
+    })
+
+    test('displays Apps link in the header', async () => {
+      const $ = await get('/')
+      $('a.site-header-nav-item[href="/apps"]')
+        .text().should.eq('Apps')
+    })
+
+    test('displays Docs link in the header', async () => {
+      const $ = await get('/')
+      $('a.site-header-nav-item[href="/docs"]')
+        .text().should.eq('Docs')
+    })
+
+    test('displays Blog link in the header', async () => {
+      const $ = await get('/')
+      $('a.site-header-nav-item[href="/blog"]')
+        .text().should.eq('Blog')
+    })
+
+    test('displays Community link in the header', async () => {
+      const $ = await get('/')
+      $('a.site-header-nav-item[href="/community"]')
+        .text().should.eq('Community')
+    })
+
+    test('displays Releases link in the header', async () => {
+      const $ = await get('/')
+      $('a.site-header-nav-item[href="/releases/stable"]')
+        .text().should.eq('Releases')
+    })
+  })
+
+  describe('footer', () => {
     test('displays link to hompage in the footer', async () => {
       const $ = await get('/')
       $('a.footer-nav-item[href="/"]')
@@ -111,7 +149,7 @@ describe('electronjs.org', () => {
     test('displays Releases link in the footer', async () => {
       const $ = await get('/')
       $('a.footer-nav-item[href="/releases/stable"]')
-        .text().should.eq('releases')
+        .text().should.eq('Releases')
     })
 
     test('displays Code of Conduct link in the footer', async () => {
