@@ -83,11 +83,47 @@ describe('electronjs.org', () => {
     })
   })
 
-  describe('footer', () => {
+  describe.only('footer', () => {
+    test('displays link to hompage in the footer', async () => {
+      const $ = await get('/')
+      $('a.footer-nav-item[href="/"]')
+        .text().should.eq('Electron')
+    })
+
+    test('displays Docs link in the footer', async () => {
+      const $ = await get('/')
+      $('a.footer-nav-item[href="/docs"]')
+        .text().should.eq('Docs')
+    })
+
+    test('displays Blog link in the footer', async () => {
+      const $ = await get('/')
+      $('a.footer-nav-item[href="/blog"]')
+        .text().should.eq('Blog')
+    })
+
+    test('displays Apps link in the footer', async () => {
+      const $ = await get('/')
+      $('a.footer-nav-item[href="/apps"]')
+        .text().should.eq('Apps')
+    })
+
+    test('displays Releases link in the footer', async () => {
+      const $ = await get('/')
+      $('a.footer-nav-item[href="/releases/stable"]')
+        .text().should.eq('releases')
+    })
+
     test('displays Code of Conduct link in the footer', async () => {
       const $ = await get('/')
       $('a.footer-nav-item[href="https://github.com/electron/electron/tree/master/CODE_OF_CONDUCT.md"]')
         .text().should.eq('Code of Conduct')
+    })
+
+    test('displays License link in the footer', async () => {
+      const $ = await get('/')
+      $('a.footer-nav-item[href="https://github.com/electron/electron/tree/master/LICENSE"]')
+        .text().should.eq('License')
     })
 
     test('displays Security link in the footer', async () => {
@@ -96,10 +132,16 @@ describe('electronjs.org', () => {
         .text().should.eq('Security')
     })
 
-    test('displays License link in the footer', async () => {
+    test('displays Languages link in the footer', async () => {
       const $ = await get('/')
-      $('a.footer-nav-item[href="https://github.com/electron/electron/tree/master/LICENSE"]')
-        .text().should.eq('License')
+      $('a.footer-nav-item[href="/languages"]')
+        .text().should.eq('Languages')
+    })
+
+    test('displays Contact link in the footer', async () => {
+      const $ = await get('/')
+      $('a.footer-nav-item[href="/contact"]')
+        .text().should.eq('Contact')
     })
   })
 
