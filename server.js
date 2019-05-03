@@ -111,6 +111,7 @@ app.get('/userland', routes.userland.index)
 app.get('/userland/*', routes.userland.show)
 app.use('/crowdin', routes.languages.proxy)
 app.use('/donors', routes.donors)
+app.use('/headers/*', routes.headers)
 app.get('/search/:searchIn*?*', (req, res) => res.redirect(req.query.q ? `/?query=${req.query.q}` : `/`))
 
 // Generic 404 handler
