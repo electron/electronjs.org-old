@@ -60,7 +60,7 @@
     "flat": "^4.1.0",
     "fs-extra": "^7.0.1",
     "gray-matter": "^4.0.2",
-    "helmet": "^3.16.0",
+    "helmet": "^3.18.0",
     "http-proxy-middleware": "^0.19.1",
     "instantsearch.js": "^2.10.4",
     "lil-env-thing": "^1.0.0",
