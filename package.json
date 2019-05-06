@@ -94,7 +94,7 @@
     "check-for-leaks": "^1.2.0",
     "cheerio": "^1.0.0-rc.3",
     "cypress": "^3.2.0",
-    "husky": "^2.1.0",
+    "husky": "^2.2.0",
     "icon-font-generator": "^2.1.10",
     "mocha": "^6.1.4",
     "nock": "^10.0.6",
