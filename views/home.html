@@ -222,15 +222,13 @@ $ npm install &amp;&amp; npm start</code></pre>
       <div class="my-4">
         <div class="text-center">
           <ul class="d-flex flex-justify-around flex-wrap list-style-none my-2 my-md-3">
-            <li><img src="{{ site.baseurl }}/images/companies/discord.png" alt="Discord" class="logo-img-lg px-2 px-sm-4 px-md-5 px-lg-0"></li>
-            <li><img src="{{ site.baseurl }}/images/companies/openfin.png" alt="OpenFin" class="logo-img-lg px-2 px-sm-4 px-md-5 px-lg-0"></li>
-            <li><img src="{{ site.baseurl }}/images/companies/slack.png" alt="Slack" class="logo-img-lg px-2 px-sm-4 px-md-5 px-lg-0"></li>
-            <li><img src="{{ site.baseurl }}/images/companies/msft.png" alt="Microsoft" class="logo-img-lg px-2 px-sm-4 px-md-5 px-lg-0"></li>
-            <li><img src="{{ site.baseurl }}/images/companies/symphony.png" alt="Symphony" class="logo-img-lg px-2 px-sm-4 px-md-5 px-lg-0"></li>
-            <li><img src="{{ site.baseurl }}/images/companies/atlassian.png" alt="Atlassian" class="logo-img-sm px-2 px-sm-4 px-md-5 px-lg-0"></li>
-            <li><img src="{{ site.baseurl }}/images/companies/abstract.png" alt="Abstract" class="logo-img px-2 px-sm-4 px-md-5 px-lg-0"></li>
-            <li><img src="{{ site.baseurl }}/images/companies/ringcentral.png" alt="RingCentral" class="logo-img px-2 px-sm-4 px-md-5 px-lg-0"></li>
-            <li><img src="{{ site.baseurl }}/images/companies/aircall.svg" alt="Aircall" class="logo-img-lg px-2 px-sm-4 px-md-5 px-lg-0"></li>
+            {{#each companies}}
+              <li class="featured-company-list-item">
+                <a href="{{ this.url }}" target="_blank">
+                  <img src="{{ site.baseurl }}/images/companies/{{ img }}" alt="{{ this.name }}" class="featured-company-logo">
+                </a>
+              </li>
+            {{/each}}
           </ul>
         </div>
       </div>
