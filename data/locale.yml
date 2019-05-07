@@ -218,12 +218,13 @@ help_translate: "Help translate"
 footer:
   see_the_faq: See the frequently asked questions
 
-apps:
+companies:
   title: Built on Electron
-  companies_description:
+  description:
     Initially developed for GitHub's
     <a href='https://atom.io' target='_blank'>Atom editor</a>, Electron has
     since been adopted by companies all over the world.
+apps:
   description:
     With Electron, creating a desktop application for your company or idea
     is easy. Check out <a href='/apps'>some of the apps created by the community</a> or
