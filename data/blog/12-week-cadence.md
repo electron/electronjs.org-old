@@ -16,7 +16,7 @@ Chromium releases on a consistent 6-week schedule, and so in order to continue t
 
 ## 🚀 Why is 12 weeks the chosen cadence?
 
-Right now we are planning to upgrade every other Chromium version. Chromium ships a new stable version at a very quick pace of every 6 weeks. We have adjusted our stable release dates to match every other Chromium stable release. Up first, Electron v6.0.0 will include M76 and is scheduled for stable release on [July 30, 2019](https://electronjs.org/docs/tutorial/electron-timelines#600-release-schedule), the same release day as [Chromium M76](https://www.chromium.org/developers/calendar).
+Right now we are planning to upgrade every other Chromium version. Chromium ships a new stable version at a very quick pace of every 6 weeks. We have adjusted our stable release dates to match every other Chromium stable release. Up first, Electron v6.0.0 will include M76 and is scheduled for stable release on [July 30, 2019](https://electronjs.org/docs/tutorial/electron-timelines#600-release-schedule), the same release day as [Chromium M76](https://www.chromestatus.com/features/schedule).
 
 ## 🚧 What are the side effects of this new release cadence?
 
