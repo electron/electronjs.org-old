@@ -220,17 +220,15 @@ $ npm install &amp;&amp; npm start</code></pre>
       </p>
 
       <div class="my-4">
-        <div class="text-center">
-          <ul class="d-flex flex-justify-around flex-wrap list-style-none my-2 my-md-3">
-            {{#each companies}}
-              <li class="featured-company-list-item">
-                <a href="{{ this.url }}" target="_blank">
-                  <img src="{{ site.baseurl }}/images/companies/{{ img }}" alt="{{ this.name }}" class="featured-company-logo">
-                </a>
-              </li>
-            {{/each}}
-          </ul>
-        </div>
+        <ul class="d-flex flex-justify-around flex-wrap list-style-none my-2 my-md-3">
+          {{#each companies}}
+            <li class="featured-company-list-item">
+              <a href="{{ this.url }}" target="_blank" rel="noopener">
+                <img src="{{ site.baseurl }}/images/companies/{{ img }}" alt="{{ this.name }}" class="px-2">
+              </a>
+            </li>
+          {{/each}}
+        </ul>
       </div>
 
       <hr class="mt-4 mb-4" />
