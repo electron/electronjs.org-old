@@ -1,7 +1,7 @@
 ---
 title: New Electron Release Cadence
 author: sofianguy
-date: '2019-05-14'
+date: '2019-05-13'
 ---
 
 🎉 Electron is moving to release a new major stable version every 12 weeks! 🎉
