@@ -28,7 +28,12 @@
 
 .featured-company-list-item {
   flex-basis: 250px;
-  height: 100px;
+  height: 104px;
+
+  img {
+    width: 250px;
+    height: 104px;
+  }
 }
 
 // Apps section ------------------------------
