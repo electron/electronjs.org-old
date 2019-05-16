@@ -214,19 +214,33 @@ $ npm install &amp;&amp; npm start</code></pre>
 
   <div class='py-7 py-md-8 py-lg-9' id='apps'>
     <div class="container-lg text-center">
-      <h1 class="f0-light">{{{localized.apps.title}}}</h1>
+      <h1 class="f0-light">{{{localized.companies.title}}}</h1>
+      <p class="lead">
+        {{{localized.companies.description}}}
+      </p>
+
+      <div class="my-4">
+        <ul class="d-flex flex-justify-around flex-wrap list-style-none my-2 my-md-3">
+          {{#each companies}}
+            <li class="featured-company-list-item">
+              <a href="{{ this.url }}" target="_blank" rel="noopener">
+                <img data-src="{{ site.baseurl }}/images/companies/{{ img }}" alt="{{ this.name }}" class="px-2">
+              </a>
+            </li>
+          {{/each}}
+        </ul>
+      </div>
+
+      <hr class="mt-4 mb-4" />
+
       <p class="lead">
         {{{localized.apps.description}}}
       </p>
 
-      <hr>
-
       <div>
         <div class="py-7 py-md-8 py-lg-9">
           {{#each apps}}
-            {{#if this.featured}}
-              {{> featured_app}}
-            {{/if}}
+            {{> featured_app}}
           {{/each}}
         </div>
         <p class="mt-6">
