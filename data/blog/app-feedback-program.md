@@ -30,7 +30,7 @@ We understand not everyone can share exact user numbers, however better data hel
 Your app's bugs will be tracked and be on the core Electron team's radar. Your feedback helps the Electron team to see how the new betas are doing and what work needs to be done.
 
 ## Will my application's info be shared publicly? Who gets to see this info?
-No, your application's information will not be shared with the general public. However, it will be viewable by all members of the `maintainers` team within the [Electron](https://github.com/electron) organization. As of September 2018, there are 203 members in this team. All members in this team have agreed to follow Electron's [Code of Conduct](https://github.com/electron/electron/blob/master/CODE_OF_CONDUCT.md).
+No, your application's information will not be shared with the general public. Information is kept in a private GitHub repo that is only viewable to members of the App Feedback Program and [Electron Governance](https://github.com/electron/governance). All members have agreed to follow Electron's [Code of Conduct](https://github.com/electron/electron/blob/master/CODE_OF_CONDUCT.md).
 
 ## Sign up
 We are currently accepting a *limited number* of signups. If you are interested and are able to fulfill the above requirements, please fill out this [form](https://goo.gl/forms/OpMEKV75ScN6we7g1).
