@@ -655,6 +655,18 @@ describe('electronjs.org', () => {
       res.headers['content-type'].should.equal('application/javascript; charset=UTF-8')
     })
 
+    describe('node headers', () => {
+      it('redirects valid to S3 Bucket', async () => {
+        let res = await supertest(app).get(`/headers/v3.1.6/iojs-3.1.6.tgz.tz`)
+        res.statusCode.should.equal(302)
+      })
+
+      it('show 404 to invalid', async () => {
+        let res = await supertest(app).get(`/headers`)
+        res.statusCode.should.equal(404)
+      })
+    })
+
     describe('search redirects', () => {
       it('redirect /search/package to home page search', async () => {
         const res = await supertest(app).get('/search/npmPackages?q=@siberianmh/cosmos')
