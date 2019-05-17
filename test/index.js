@@ -8,6 +8,7 @@ const nock = require('nock')
 const cheerio = require('cheerio')
 const chai = require('chai')
 const i18n = require('../lib/i18n')
+const expect = chai.expect
 chai.should()
 chai.use(require('chai-cheerio'))
 const app = require('../server.js')
@@ -72,6 +73,14 @@ describe('electronjs.org', () => {
       $('#electron-version-beta').text().should.match(/Electron\s+\d+\.\d+\.\d+/)
       $('#electron-version-beta').text().should.match(/Node\s+\d+\.\d+\.\d+/)
       $('#electron-version-beta').text().should.match(/Chromium\s+\d+\.\d+\.\d+\.\d+/)
+    })
+
+    test('displays featured companies', async () => {
+      const $ = await get('/')
+      expect($('header')).to.have.class('site-header')
+      expect($('p.jumbotron-lead')).to.contain('Build cross platform desktop apps')
+      expect($('.featured-company-list-item').length).to.equal(9)
+      expect($('head > title').text()).to.match(/^Electron/)
     })
 
     test('displays featured apps', async () => {
