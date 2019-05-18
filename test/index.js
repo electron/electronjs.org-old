@@ -59,6 +59,23 @@ describe('electronjs.org', () => {
       const res = await supertest(app).get('/styles/index.css')
       res.statusCode.should.eq(200)
     })
+
+    test('octicon font icon', async () => {
+      const res = await supertest(app).get('/styles/octicons/octicons.css')
+      expect(res.statusCode).to.equal(200)
+    })
+
+    test('devicon font icon', async () => {
+      const res = await supertest(app).get('/styles/vendor/devicon/devicon.css')
+      expect(res.statusCode).to.equal(200)
+    })
+
+    test('github hljs :octocat:', async () => {
+      const res = await supertest(app).get('/styles/hljs/github.css')
+      expect(res.statusCode).to.equal(200)
+    })
+  })
+
   })
 
   describe('homepage', () => {
