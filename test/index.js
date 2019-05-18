@@ -76,6 +76,16 @@ describe('electronjs.org', () => {
     })
   })
 
+  describe('icon fonts', () => {
+    test('octicons.ttf', async () => {
+      const res = await supertest(app).get('/styles/octicons/octicons.ttf')
+      expect(res.statusCode).to.equal(200)
+    })
+
+    test('devicon.woff', async () => {
+      const res = await supertest(app).get('/styles/vendor/devicon/fonts/devicon.woff')
+      expect(res.statusCode).to.equal(200)
+    })
   })
 
   describe('homepage', () => {
