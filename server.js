@@ -31,11 +31,16 @@ hbs.registerHelper(lobars)
 // TODO: 📝
 hbs.registerAsyncHelper('octicon', async (data, cb) => {
   const name = data.hash.name
+  const className = data.hash.className
+  const ariaLabel = data.hash.ariaLabel
+  const width = data.hash.width
+  const height = data.hash.height
+
   if (name === undefined) {
     return
   }
 
-  const htmlSVG = await getOcticons(name)
+  const htmlSVG = await getOcticons(name, className, width, height, ariaLabel)
   return cb(new hbs.SafeString(htmlSVG))
 })
 app.engine('html', hbs.express4({
