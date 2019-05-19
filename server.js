@@ -30,11 +30,7 @@ process.env.HOST = process.env.HOST || `http://localhost:${port}`
 hbs.registerHelper(lobars)
 // TODO: 📝
 hbs.registerAsyncHelper('octicon', async (data, cb) => {
-  const name = data.hash.name
-  const className = data.hash.className
-  const ariaLabel = data.hash.ariaLabel
-  const width = data.hash.width
-  const height = data.hash.height
+  const { name, className, ariaLabel, width, height } = data.hash
 
   if (name === undefined) {
     return
