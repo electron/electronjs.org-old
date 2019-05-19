@@ -2,7 +2,17 @@
 
 const octicons = require('../patched-modules/octicons')
 
-// TODO: 📝
+/**
+ * Helper function, what accepts name, and other options and return the string
+ * of the `<svg>` tag.
+ *
+ * @param {String} name The name of octicon. See https://octicons.github.com/ for search icons.
+ * @param {String} className Add more CSS classes to the `<svg>` tag.
+ * @param {String} width Size the SVG icon larger using `height`.
+ * @param {String} height Size the SVG icon larger using `width`.
+ * @param {String} ariaLabel Add accessibility `aria-label` to the icon.
+ * @returns {Promise<any>} Returns a string of the `<svg>` tag.
+ */
 module.exports = async function getOcticons(name, className, width, height, ariaLabel) {
   // Strict Null Checking
   if (name === undefined || name === null) {

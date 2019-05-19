@@ -28,7 +28,14 @@ process.env.HOST = process.env.HOST || `http://localhost:${port}`
 
 // Handlebars Templates
 hbs.registerHelper(lobars)
-// TODO: 📝
+
+/**
+ * Handlebars helper whats accepts options from the `{{octicon}}` tag,
+ * parses with `getOcticons()` function and returns this to user.
+ *
+ * @param {string[]} data The data of hbs helper.
+ * @param {void} cb Async callback..
+ */
 hbs.registerAsyncHelper('octicon', async (data, cb) => {
   const { name, className, ariaLabel, width, height } = data.hash
 
