@@ -33,7 +33,7 @@ hbs.registerAsyncHelper('octicon', async (data, cb) => {
   const { name, className, ariaLabel, width, height } = data.hash
 
   if (name === undefined) {
-    return
+    return console.error('ERROR(Octicons Helper): Name is required field in octicon helper.')
   }
 
   const htmlSVG = await getOcticons(name, className, width, height, ariaLabel)
