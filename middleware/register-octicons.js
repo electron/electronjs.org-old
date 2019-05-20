@@ -1,6 +1,6 @@
 // @ts-check
 
-const octicons = require('../patched-modules/octicons')
+const octicons = require('octicons')
 
 /**
  * Helper function that accepts options (e.g. name) and returns a string
@@ -25,6 +25,11 @@ module.exports = async function getOcticons(name, className, width, height, aria
     height: height ? height : null,
     'aria-label': ariaLabel ? ariaLabel : null,
   }
+
+  if (opts.class === null) delete opts.class
+  if (opts.width === null) delete opts.width
+  if (opts.height === null) delete opts.height
+  if (opts["aria-label"] === null) delete opts["aria-label"]
 
   const svg = await octicons[name].toSVG(opts)
   return svg
