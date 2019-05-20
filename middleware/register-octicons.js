@@ -20,12 +20,12 @@ module.exports = async function getOcticons(name, className, width, height, aria
   }
 
   const opts = {
-    className: className ? className : null,
+    class: className ? className : null,
     width: width ? width : null,
     height: height ? height : null,
-    ariaLabel: ariaLabel ? ariaLabel : null,
+    'aria-label': ariaLabel ? ariaLabel : null,
   }
 
-  const svg = await octicons[name].toSVG({ "class": opts.className, "width": opts.width, "height": opts.height, "aria-label": opts.ariaLabel })
+  const svg = await octicons[name].toSVG(opts)
   return svg
 }
