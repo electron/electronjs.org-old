@@ -3,7 +3,7 @@
 const octicons = require('../patched-modules/octicons')
 
 /**
- * Helper function, what accepts name, and other options and return the string
+ * Helper function that accepts options (e.g. name) and returns a string
  * of the `<svg>` tag.
  *
  * @param {String} name The name of octicon. See https://octicons.github.com/ for search icons.
