@@ -68,7 +68,7 @@ describe('electronjs.org', () => {
       const $ = await get('/')
       $('header').should.have.class('site-header')
       $('p.jumbotron-lead').should.contain('Build cross platform desktop apps')
-      $('.featured-app').length.should.equal(24)
+      $('.featured-app').length.should.equal(25)
       $('head > title').text().should.match(/^Electron/)
     })
 
@@ -653,6 +653,18 @@ describe('electronjs.org', () => {
     it('get /service-worker.js', async () => {
       let res = await supertest(app).get('/service-worker.js')
       res.headers['content-type'].should.equal('application/javascript; charset=UTF-8')
+    })
+
+    describe('node headers', () => {
+      it('redirects valid to S3 Bucket', async () => {
+        let res = await supertest(app).get(`/headers/v3.1.6/iojs-3.1.6.tgz.tz`)
+        res.statusCode.should.equal(302)
+      })
+
+      it('show 404 to invalid', async () => {
+        let res = await supertest(app).get(`/headers`)
+        res.statusCode.should.equal(404)
+      })
     })
 
     describe('search redirects', () => {
