@@ -94,7 +94,7 @@
     "chai-cheerio": "^1.0.0",
     "check-for-leaks": "^1.2.0",
     "cheerio": "^1.0.0-rc.3",
-    "cypress": "^3.3.0",
+    "cypress": "^3.3.1",
     "husky": "^2.3.0",
     "icon-font-generator": "^2.1.10",
     "mocha": "^6.1.4",
