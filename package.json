@@ -105,7 +105,7 @@
     "standard": "^12.0.1",
     "supertest": "^4.0.2",
     "supertest-session": "^4.0.0",
-    "uglify-js": "^3.5.14",
+    "uglify-js": "^3.5.15",
     "wait-on": "^3.1.0",
     "walk-sync": "^1.1.3"
   },
