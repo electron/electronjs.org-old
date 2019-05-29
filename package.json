@@ -74,7 +74,7 @@
     "node-sass-middleware": "^0.11.0",
     "paginate-array": "^2.1.0",
     "platform-utils": "^1.2.0",
-    "pluralize": "^7.0.0",
+    "pluralize": "^8.0.0",
     "primer-support": "^5.0.0",
     "query-string": "^6.5.0",
     "require-dir": "^1.1.0",
