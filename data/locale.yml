@@ -34,7 +34,7 @@ docs:
   api_reference: API Reference
   api_structures: API Structures
   advanced: Advanced
-  detailed: Detail Guides
+  detailed: Detailed Guides
   custom_dom: Custom DOM Elements
   main_proc_modules: Main Process Modules
   renderer_proc_modules: Renderer Process Modules
