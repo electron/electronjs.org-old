@@ -160,7 +160,7 @@ describe('electronjs.org', () => {
     test('index', async () => {
       const $ = await get('/docs')
       $('header').should.have.class('site-header')
-      $('a[href="/docs/tutorial/about"]').should.have.text('About Electron')
+      $('a[href="/docs/tutorial/development-environment#setting-up-macos"]').should.have.text('Setting up macOS')
       $('a[href="/docs/api/auto-updater"]').should.have.text('autoUpdater')
     })
 
