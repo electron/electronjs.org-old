@@ -21,8 +21,8 @@ module.exports = (req, res) => {
     // https://github.com/electron/electron/tree/master/docs#modules-for-the-renderer-process-web-page
     rendererProcModules,
     // https://github.com/electron/electron/tree/master/docs#modules-for-both-processes
-    bothProcModules,
-  ] = docsReadme.sections;
+    bothProcModules
+  ] = docsReadme.sections
 
   const context = Object.assign(req.context, {
     guides,
