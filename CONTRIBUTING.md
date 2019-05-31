@@ -26,7 +26,6 @@ feel free to propose changes to this document in a pull request.
 - [Frontend JavaScript](#frontend-javascript)
 - [Scripts](#scripts)
 - [Environment Variables](#environment-variables)
-- [Updating Octicons](#updating-octicons)
 
 ## Issues and Pull Requests
 
@@ -333,37 +332,6 @@ file. To list all available commands, type `npm run`.
   - Express caches routes in memory
   - Sass middleware serves minified CSS and caches it
   - Browserify middleware serves minified JavaScript and caches it
-
-## Updating Octicons
-
-Unlike others dependencies who can automatically update, Octicons need manually
-update, this section describes how to do it.
-
-1. Bump Octicons version, instead of drink coffee, read the [Changelog](https://github.com/primer/octicons/blob/master/CHANGELOG.md)
-   for new icons.
-2. If it has a new icons run `node ./script/generate-octicons.js --debug` for build
-   version with preview file, he can be finded in `./public/styles/octicons/octicons.html`,
-   open it in browser.
-3. Find new icon (e.g. `request-changes` icon).
-
-    ![2019-02-06 15 22 32](https://user-images.githubusercontent.com/24681191/52344442-69471980-2a23-11e9-9815-ca520f3f97f8.png).
-4. Open `./script/generate-octicons/template/mapping.json` file, and add new icon between the icons that located. Example with `request-changes`:
-
-    ```diff
-    "report": 61837,
-    + "request-changes": 61838,
-    "rocket": 61838,
-    ```
-
-5. Increment **all** glyph numbers bottom.
-    ```diff
-    - "rocket": 61838,
-    + "rocket": 61839,
-    - "rss": 61839,
-    + "rss": 61840,
-    ```
-    Verify if all icons with updated glyph numbers not changed.
-6. Open PR 🎂 and mention `@HashimotoYT` for review.
 
 [electronjs.org]: https://electronjs.org
 [electron/electron]: https://github.com/electron/electron
