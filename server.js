@@ -19,6 +19,7 @@ const sass = require('./middleware/sass')
 const helmet = require('helmet')
 const langResolver = require('./middleware/lang-resolver')
 const contextBuilder = require('./middleware/context-builder')
+const getOcticons = require('./middleware/register-octicons')
 
 const port = Number(process.env.PORT) || argv.p || argv.port || 5000
 const app = express()
@@ -27,6 +28,24 @@ process.env.HOST = process.env.HOST || `http://localhost:${port}`
 
 // Handlebars Templates
 hbs.registerHelper(lobars)
+
+/**
+ * Handlebars helper that accepts options from the `{{octicon}}` tag,
+ * parses with `getOcticons()` function and returns this to user.
+ *
+ * @param {string[]} data The data of hbs helper.
+ * @param {void} cb Async callback.
+ */
+hbs.registerAsyncHelper('octicon', async (data, cb) => {
+  const { name, className, ariaLabel, width, height } = data.hash
+
+  if (name === undefined) {
+    return console.error('ERROR(Octicons Helper): Name is required field in octicon helper.')
+  }
+
+  const htmlSVG = await getOcticons(name, className, width, height, ariaLabel)
+  return cb(new hbs.SafeString(htmlSVG))
+})
 app.engine('html', hbs.express4({
   defaultLayout: path.join(__dirname, '/views/layouts/main.html'),
   extname: '.html',
