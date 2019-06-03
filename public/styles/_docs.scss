@@ -198,8 +198,10 @@
     padding-bottom: 12px;
   }
 
-  .docs-guides-list {
-    column-count: 3;
+  @media (min-width: 922px) {
+    .docs-guides-list {
+      column-count: 3;
+    }
   }
 }
 
