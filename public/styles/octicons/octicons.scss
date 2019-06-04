@@ -1,8 +1,10 @@
 @font-face {
   font-family: "octicons";
-  src: url("./octicons.ttf?dfe556e6e1ad2136cdea11cd7db7b84d") format("truetype"),
-url("./octicons.svg?dfe556e6e1ad2136cdea11cd7db7b84d#octicons") format("svg");
+  src: url("./octicons/octicons.ttf?dfe556e6e1ad2136cdea11cd7db7b84d") format("truetype"),
+url("./octicons/octicons.svg?dfe556e6e1ad2136cdea11cd7db7b84d#octicons") format("svg");
 }
+
+@warn "Using octicons from class name is deprecated, switch to octicons helper.";
 
 .octicon, .mega-octicon {
     font: normal normal normal 16px/1 octicons;
