@@ -60,7 +60,7 @@ pre code {
       word-wrap: normal;
       background-color: transparent;
       border: 0;
-
+      white-space: pre-line;
       &:before,
       &:after {
         content: none;
