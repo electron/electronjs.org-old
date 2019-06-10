@@ -89,7 +89,7 @@
     "yubikiri": "^2.0.0"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.5",
+    "browser-sync": "^2.26.7",
     "chai": "^4.2.0",
     "chai-cheerio": "^1.0.0",
     "check-for-leaks": "^1.2.0",
