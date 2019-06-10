@@ -1,6 +1,6 @@
 // @ts-check
 
-const octicons = require('octicons')
+const octicons = require('@primer/octicons')
 
 /**
  * Helper function that accepts options (e.g. name) and returns a string
