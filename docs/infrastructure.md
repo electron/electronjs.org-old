@@ -7,9 +7,9 @@ The Electron website displays data from several different npm packages in additi
 * [electron-apps](https://www.npmjs.com/package/electron-apps)
 * [electron-api-historian](https://www.npmjs.com/package/electron-api-historian)
 
-As new versions of website dependencies published to npm, our [Dependabot setup](https://app.dependabot.com/accounts/electron/projects/11963) automatically opens PRs to update the `package.json` and `package-lock.json` as appropriate. If the dependency is one of the four packages mentioned above, Dependabot will automatically merge (and thus deploy) the new version when the PR goes green.
+As new versions of website dependencies are published to npm, our [Dependabot setup](https://app.dependabot.com/accounts/electron/projects/11963) automatically opens PRs to update the `package.json` and `package-lock.json` as appropriate. If the dependency is one of the four packages mentioned above, Dependabot will automatically merge (and thus deploy) the new version when the PR goes green.
 
-In addition to these packages, the data from the `electron/algolia-indices` repository is published to npm as [electron-algolia-indices](https://www.npmjs.com/package/electron-algolia-indices). This package isn't used by the website; instead, it is uploaded to Algolia's hosted search service. The npm package is for use by end-users.
+In addition to these packages, the data from the `electron/algolia-indices` repository is published to npm as [electron-algolia-indices](https://www.npmjs.com/package/electron-algolia-indices). This package isn't used by the website directly; instead, the index data is uploaded to Algolia's hosted search service, which is integrated into the website via Algolia's client-side search library. The npm package is for use by end-users and to run the [search example app on Heroku](https://electron-algolia.herokuapp.com/).
 
 ## `electron-i18n`
 
@@ -18,7 +18,7 @@ The `i18n` repo contains all the data necessary to display website content and d
 1. A GitHub Action regularly runs `npm run update-source-content`. This script pulls all the current English documentation from the stable version of `electron/electron`, as well as the [`locale.yml` file from the website repository](https://github.com/electron/electronjs.org/blob/master/data/locale.yml), and commits that data to the `master` branch.
 2. The Electron [Crowdin project](https://crowdin.com/project/electron) has a GitHub integration set up via [the `glotbot` bot account](https://github.com/glotbot). Crowdin pulls the English data directly from the `electron/i18n` GitHub repository and displays it to translators to display.
 3. When new translations are saved in the Crowdin UI, Crowdin (via `glotbot`) opens a PR on the `i18n` repo to update the content in that particular language. A GitHub Action automatically merges this pull request on a regular basis.
-4. When a commit is made to the `master` branch of the `i18n` repo, a GitHub Action runs `npm run semantic-release`. `semantic-release` then inspects the commit messages to determine what the next version number should be, and publishes tags to GitHub and a new version of the package to npm.
+4. When a commit is made to the `master` branch of the `i18n` repo, a GitHub Action runs the tests (which builds the new `index.json` file via the `pretest` script, which is not checked in to Git, but is published to npm), and runs `npm run semantic-release`. `semantic-release` then inspects the commit messages to determine what the next version number should be, and publishes tags to GitHub and a new version of the package to npm.
 
 ## electron-releases
 
@@ -52,11 +52,11 @@ Search on the Electron website is managed by [Algolia](https://www.algolia.com/)
 
 A GitHub Action runs `npm run update-data-sources` on a regular basis. This script updates the `electron-apps`, `electron-i18n`, `electron-npm-packages`, and `electron-releases` npm dependencies and downloads the latest stable copy of `electron-api.json` and commits those changes to the `master` branch as `electron-bot`.
 
-Whenever a commit is made to `master`, another GitHub Action builds the indices, runs the tests, and cuts a new release of the package via `semantic-release` and uploads the new indices to Algolia if the tests succeed. Search results on the website are updated immediately (exepting any time Algolia takes for processing the new data).
+Whenever a commit is made to `master`, another GitHub Action builds the indices, runs the tests, and cuts a new release of the package via `semantic-release` and uploads the new indices to Algolia if the tests succeed. Search results on the website are updated immediately (excepting any time Algolia takes for processing the new data).
 
 # Secrets and Secret Generation
 
-Many of the GitHub Actions for the projects listed above require secrets to operate successfully. Here is a list of the secrets and how to generate them.
+Many of the GitHub Actions for the projects listed above require secrets to operate successfully. The secrets can be added to a repository by visiting `https://github.com/electron/<repo>/settings/secrets`, but they cannot be viewed after creating them. Here is a list of the secrets and how to generate them.
 
 ## `ALGOLIA_APPLICATION_ID` and `ALGOLIA_API_KEY`
 
