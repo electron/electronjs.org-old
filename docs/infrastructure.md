@@ -7,7 +7,7 @@ The Electron website displays data from several different npm packages in additi
 * [electron-apps](https://www.npmjs.com/package/electron-apps)
 * [electron-api-historian](https://www.npmjs.com/package/electron-api-historian)
 
-As new versions website dependencies published to npm, our [Dependabot setup](https://app.dependabot.com/accounts/electron/projects/11963) automatically opens PRs to update the `package.json` and `package-lock.json` as appropriate. If the dependency is one of the four packages mentioned above, Dependabot will automatically merge (and thus deploy) the new version when the PR goes green.
+As new versions of website dependencies published to npm, our [Dependabot setup](https://app.dependabot.com/accounts/electron/projects/11963) automatically opens PRs to update the `package.json` and `package-lock.json` as appropriate. If the dependency is one of the four packages mentioned above, Dependabot will automatically merge (and thus deploy) the new version when the PR goes green.
 
 In addition to these packages, the data from the `electron/algolia-indices` repository is published to npm as [electron-algolia-indices](https://www.npmjs.com/package/electron-algolia-indices). This package isn't used by the website; instead, it is uploaded to Algolia's hosted search service. The npm package is for use by end-users.
 
