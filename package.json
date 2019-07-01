@@ -44,7 +44,7 @@
     "crowdin-editor-language-codes": "^1.0.0",
     "description": "0.0.4",
     "dotenv": "^8.0.0",
-    "electron-api-historian": "^1.4.0",
+    "electron-api-historian": "^1.5.0",
     "electron-apps": "^1.7490.0",
     "electron-i18n": "^1.1482.0",
     "electron-markdown": "^0.6.0",
