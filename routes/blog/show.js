@@ -13,7 +13,12 @@ function hydrateViewModel (blogPost) {
 }
 
 module.exports = async (req, res, next) => {
-  const blogPost = BlogPost.get(req.params.slug)
+  let blogPost
+  if (req.context.currentLocale.startsWith('en')) {
+    blogPost = BlogPost.get(req.params.slug)
+  } else {
+    blogPost = BlogPost.get(req.params.slug, req.language)
+  }
   const exists = await blogPost.exists()
   if (!exists) {
     return next()
