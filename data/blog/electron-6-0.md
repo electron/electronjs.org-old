@@ -1,6 +1,7 @@
 ---
 title: Electron 6.0.0
 author: 
+- sofianguy
 date: '2019-07-30'
 ---
 
@@ -9,6 +10,20 @@ The Electron team is excited to announce the release of Electron 6.0.0! You can 
 ---
 
 ## What's New
+
+This is the first Electron stable release to ever release on the *same day* as [Chrome stable](https://www.chromestatus.com/features/schedule) 🎉
+
+Much of Electron's functionality is provided by the core components of Chromium, Node.js, and V8. Electron keeps up-to-date with these projects to provide our users with new JavaScript features, performance improvements, and security fixes. Each of these packages has a major version bump in Electron 6:
+
+- Chromium `76.0.3809.77`
+  - [New in 74](https://developers.google.com/web/updates/2019/04/nic74)
+  - [New in 75](https://developers.google.com/web/updates/2019/06/nic75)
+  - [New in 76](https://developers.google.com/web/updates/tags/chrome76)
+- Node.js `12.4.0`
+  - [Node 12.4.0 Blog Post](https://nodejs.org/en/blog/release/v12.4.0/)
+- V8 [TODO: edit]
+
+Electron 6 also includes improvements to Electron-specific APIs. A summary of the major changes is below; for the full list of changes, check out the [Electron v6.0.0 release notes](https://github.com/electron/electron/releases/tag/v6.0.0).
 
 ## Breaking Changes
 
