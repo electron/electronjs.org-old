@@ -26,6 +26,34 @@ Much of Electron's functionality is provided by the core components of Chromium,
 
 Electron 6 also includes improvements to Electron-specific APIs. A summary of the major changes is below; for the full list of changes, check out the [Electron v6.0.0 release notes](https://github.com/electron/electron/releases/tag/v6.0.0).
 
+### Promisification
+
+Electron 5 continues [Promisification initiative](https://github.com/electron/electron/blob/5-0-x/docs/api/promisification.md) initiative to convert Electron's callback-based API to use Promises. These APIs were converted for Electron 6:
+* Cookies API
+* `app.dock.show()`
+* `contentTracing.getCategories()`
+* `contentTracing.getTraceBufferUsage()`
+* `contents.executeJavaScript()`
+* `webFrame.executeJavaScript()`
+* `webFrame.executeJavaScriptInIsolatedWorld()`
+* `webviewTag.executeJavaScript()`
+* `dialog.showCertificateTrustDialog()`
+* `netLog.stopLogging()`
+* `session.clearAuthCache()`
+* `session.clearHostResolverCache()`
+* `session.clearStorageData()`
+* `session.getBlobData()`
+* `session.getCacheSize()`
+* `session.clearCache()`
+* `session.setProxy()`
+* `session.resolveProxy()`
+* `webContents.hasServiceWorker()`
+* `webContents.printToPDF()`
+* `webContents.savePage()`
+* `dialog.showMessageBox()`
+* `dialog.showOpenDialog()`
+* `dialog.showSaveDialog()`
+
 ## Breaking Changes
 
 ## Deprecations
