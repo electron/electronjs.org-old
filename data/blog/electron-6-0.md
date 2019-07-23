@@ -20,8 +20,9 @@ Much of Electron's functionality is provided by the core components of Chromium,
   - [New in 75](https://developers.google.com/web/updates/2019/06/nic75)
   - [New in 76](https://developers.google.com/web/updates/tags/chrome76)
 - Node.js `12.4.0`
-  - [Node 12.4.0 Blog Post](https://nodejs.org/en/blog/release/v12.4.0/)
-- V8 [TODO: edit]
+  - [Node 12.4.0 blog post](https://nodejs.org/en/blog/release/v12.4.0/)
+- V8 `7.6.303.22`
+    - [V8 7.6 blog post](https://v8.dev/blog/v8-release-76)
 
 Electron 6 also includes improvements to Electron-specific APIs. A summary of the major changes is below; for the full list of changes, check out the [Electron v6.0.0 release notes](https://github.com/electron/electron/releases/tag/v6.0.0).
 
