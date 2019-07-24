@@ -24,7 +24,7 @@ Much of Electron's functionality is provided by the core components of Chromium,
 - V8 `7.6.303.22`
     - [V8 7.6 blog post](https://v8.dev/blog/v8-release-76)
 
-Electron 6 also includes improvements to Electron-specific APIs. A summary of the major changes is below; for the full list of changes, check out the [Electron v6.0.0 release notes](https://github.com/electron/electron/releases/tag/v6.0.0).
+Electron 6 also includes improvements to Electron-specific APIs. Highlights of the major changes is below; for the full list of changes, check out the [Electron v6.0.0 release notes](https://github.com/electron/electron/releases/tag/v6.0.0).
 
 ### Promisification
 
@@ -54,11 +54,27 @@ Electron 6 continues [Promisification initiative](https://github.com/electron/el
 * `dialog.showOpenDialog()`
 * `dialog.showSaveDialog()`
 
-### [TODO: Mention the new helpers (Helper.app, (Renderer) and (Plugin))]
+### `Electron Helper (Render).app` and `Electron Helper (Plugin).app`
+[TODO: fill in details about new Helpers]
 
 ## Breaking Changes
 
-### [TODO: Reference upcoming major process model change to start raising awareness (note it won't impact anyone in a breaking way for a looonnnggg time)(issue: electron/electron#18397; planned deprecation schedule: electron/electron#18396)]
+### `app.allowRendererProcessReuse` option
+Groundwork for requiring any native Node modules that are loaded in the renderer process to be either NAPI or Context Aware. The main reasons for this change are for app performance, security benefits, and lessen maintenance. Read the full details in [this issue](https://github.com/electron/electron/issues/18397). This change is expected to complete in Electron v11.
+
+Outline for change:
+* Electron v6: option to disable site instance patches [#18396](https://github.com/electron/electron/pull/18396)
+* Electron v7: first deprecation warning for non-context aware native modules
+* Electron v8: deprecation warning for the default value of app.allowRendererProcessReuse to switch
+* Electron v9: switch the default value of `app.allowRendererProcessReuse`
+* Electron v10: deprecate the ability to change `app.allowRendererProcessReuse`
+* Electron v11: remove the ability to change `app.allowRendererProcessReuse`
+
+### other breaking changes
+[TODO: need to provide details for the following bullet items or omit from blog post]
+* Fixed disparity between `net` module headers and Node.js'  `http.IncomingMessage` headers. [#17517](https://github.com/electron/electron/pull/17517)
+* Made `ShowItemInFolder` asynchronous with no return value. [#17121](https://github.com/electron/electron/pull/17121)
+* Made app log directory creation opt-in with a new function `app.setAppLogsPath`. [#17841](https://github.com/electron/electron/pull/17841)
 
 ## Deprecations
 
