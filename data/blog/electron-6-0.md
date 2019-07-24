@@ -28,7 +28,7 @@ Electron 6 also includes improvements to Electron-specific APIs. A summary of th
 
 ### Promisification
 
-Electron 5 continues [Promisification initiative](https://github.com/electron/electron/blob/5-0-x/docs/api/promisification.md) initiative to convert Electron's callback-based API to use Promises. These APIs were converted for Electron 6:
+Electron 6 continues [Promisification initiative](https://github.com/electron/electron/blob/5-0-x/docs/api/promisification.md) initiative to convert Electron's callback-based API to use Promises. These APIs were converted for Electron 6:
 * Cookies API
 * `app.dock.show()`
 * `contentTracing.getCategories()`
@@ -54,7 +54,11 @@ Electron 5 continues [Promisification initiative](https://github.com/electron/el
 * `dialog.showOpenDialog()`
 * `dialog.showSaveDialog()`
 
+### [TODO: Mention the new helpers (Helper.app, (Renderer) and (Plugin))]
+
 ## Breaking Changes
+
+### [TODO: Reference upcoming major process model change to start raising awareness (note it won't impact anyone in a breaking way for a looonnnggg time)(issue: electron/electron#18397; planned deprecation schedule: electron/electron#18396)]
 
 ## Deprecations
 
