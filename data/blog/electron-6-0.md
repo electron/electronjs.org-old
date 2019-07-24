@@ -11,11 +11,11 @@ The Electron team is excited to announce the release of Electron 6.0.0! You can 
 
 ## What's New
 
-This is the first Electron stable release to ever release on the *same day* as [Chrome stable](https://www.chromestatus.com/features/schedule) 🎉
+This is the first Electron stable release to ever release on the *same day* as the corresponding [Chrome stable](https://www.chromestatus.com/features/schedule) 🎉
 
 Much of Electron's functionality is provided by the core components of Chromium, Node.js, and V8. Electron keeps up-to-date with these projects to provide our users with new JavaScript features, performance improvements, and security fixes. Each of these packages has a major version bump in Electron 6:
 
-- Chromium `76.0.3809.77`
+- Chromium `76.0.3809.80`
   - [New in 74](https://developers.google.com/web/updates/2019/04/nic74)
   - [New in 75](https://developers.google.com/web/updates/2019/06/nic75)
   - [New in 76](https://developers.google.com/web/updates/tags/chrome76)
@@ -60,7 +60,7 @@ Electron 6 continues [Promisification initiative](https://github.com/electron/el
 ## Breaking Changes
 
 ### `app.allowRendererProcessReuse` option
-Groundwork for requiring any native Node modules that are loaded in the renderer process to be either NAPI or Context Aware. The main reasons for this change are for app performance, security benefits, and lessen maintenance. Read the full details in [this issue](https://github.com/electron/electron/issues/18397). This change is expected to complete in Electron v11.
+Groundwork for requiring any native Node modules that are loaded in the renderer process to be either N-API or Context Aware. The main reasons for this change are for app performance, security benefits, and lessen maintenance. Read the full details in [this issue](https://github.com/electron/electron/issues/18397). This change is expected to complete in Electron v11.
 
 Outline for change:
 * Electron v6: option to disable site instance patches [#18396](https://github.com/electron/electron/pull/18396)
