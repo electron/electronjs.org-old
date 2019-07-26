@@ -77,12 +77,12 @@ This release starts laying the groundwork for a future requirement that native N
 
 Outline for change:
 
-  -[x] Electron v6: Add option to disable site instance patches [#18396](https://github.com/electron/electron/pull/18396)
-  -[ ] Electron v7: Show deprecation warnings for non-context aware native modules
-  -[ ] Electron v8: Show deprecation warnings for the default value of `app.allowRendererProcessReuse` to switch
-  -[ ] Electron v9: Switch the default value of `app.allowRendererProcessReuse`
-  -[ ] Electron v10: Deprecate the ability to change `app.allowRendererProcessReuse`
-  -[ ] Electron v11: Remove the ability to change `app.allowRendererProcessReuse`
+  * Electron 6: Add option to disable site instance patches [#18396](https://github.com/electron/electron/pull/18396)
+  * Electron 7: Show deprecation warnings for non-context aware native modules
+  * Electron 8: Show deprecation warnings for the default value of `app.allowRendererProcessReuse` to switch
+  * Electron 9: Switch the default value of `app.allowRendererProcessReuse`
+  * Electron 10: Deprecate the ability to change `app.allowRendererProcessReuse`
+  * Electron 11: Remove the ability to change `app.allowRendererProcessReuse`
 
 ### Other Breaking Changes
 
