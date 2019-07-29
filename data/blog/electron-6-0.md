@@ -86,7 +86,7 @@ any entitlements, although this may change in the future.
 
 ### `app.allowRendererProcessReuse` option
 
-This release starts laying the groundwork for a future requirement that native Node modules loaded in the renderer process be either N-API or Context Aware. The reasons for this change are faster performance, stronger security, and reduced maintenance workload. Read the full details in [this issue](https://github.com/electron/electron/issues/18397). This change is expected to complete in Electron v11.
+This release starts laying the groundwork for a future requirement that native Node modules loaded in the renderer process be either [N-API](https://nodejs.org/api/n-api.html) or [Context Aware](https://nodejs.org/api/addons.html#addons_context_aware_addons). The reasons for this change are faster performance, stronger security, and reduced maintenance workload. Read the full details including the proposed timeline in [this issue](https://github.com/electron/electron/issues/18397). This change is expected to be completed in Electron v11.
 
 Outline for change:
 
