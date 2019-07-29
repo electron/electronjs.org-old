@@ -70,17 +70,16 @@ These functions now return Promises:
 
 ### `Electron Helper (Render).app` and `Electron Helper (Plugin).app`
 
-There are now more Mac Helper application bundles.
-
 In order to enable the [hardened runtime](https://developer.apple.com/documentation/security/hardened_runtime_entitlements?language=objc), which restricts things like
 writable-executable memory and loading code signed by a different Team
-ID, special code signing entitlements must be granted to the Helper.
+ID, special code signing entitlements needed to be granted to the Helper.
 
-To keep the capabilities scoped to the process types that require them, Chromium [added](https://chromium-review.googlesource.com/c/chromium/src/+/1627456) 
+To keep these entitlements scoped to the process types that require them, Chromium [added](https://chromium-review.googlesource.com/c/chromium/src/+/1627456) 
 two new variants of the Helper app: one for renderers (`Electron Helper (Render).app`) and one for plugins (`Electron Helper (Plugin).app`).
 
-Currently all three Helpers (the pre-existing `Electron Helper.app` in addition to the two new ones) will be code signed in the same way without
-any entitlements, although this may change in the future.
+Folks using `electron-osx-sign` to codesign their Electron app shouldn't have to make any changes to their build logic.
+If you're codesigning your app with custom scripts, you should ensure
+that the two new Helper applications are correctly codesigned.
 
 ## Breaking Changes
 
