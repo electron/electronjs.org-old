@@ -85,17 +85,13 @@ In order to package your application correctly with these two new helpers you ne
 
 ## Breaking Changes
 
-### `app.allowRendererProcessReuse` option
+ * This release begins laying the groundwork for a future requirement that native Node modules loaded in the renderer process be either [N-API](https://nodejs.org/api/n-api.html) or [Context Aware](https://nodejs.org/api/addons.html#addons_context_aware_addons). The reasons for this change are faster performance, stronger security, and reduced maintenance workload. Read the full details including the proposed timeline in [this issue](https://github.com/electron/electron/issues/18397). This change is expected to be completed in Electron v11.
 
-This release starts laying the groundwork for a future requirement that native Node modules loaded in the renderer process be either [N-API](https://nodejs.org/api/n-api.html) or [Context Aware](https://nodejs.org/api/addons.html#addons_context_aware_addons). The reasons for this change are faster performance, stronger security, and reduced maintenance workload. Read the full details including the proposed timeline in [this issue](https://github.com/electron/electron/issues/18397). This change is expected to be completed in Electron v11.
+ * `http.IncomingMessage` headers have [changed slightly](https://github.com/electron/electron/pull/17517#issue-263752903) to more closely match [Node.js behavior](https://nodejs.org/api/http.html#http_message_headers), particularly with the value of `set-cookie` and how duplicate headers are handled. [#17517](https://github.com/electron/electron/pull/17517).
 
-### Other Breaking Changes
+ * `shell.showItemInFolder()` now returns void and is an asynchronous call. [#17121](https://github.com/electron/electron/pull/17121)
 
-[TODO: need to provide details for the following bullet items or omit from blog post]
-
-  * Fixed disparity between `net` module headers and Node.js'  `http.IncomingMessage` headers. [#17517](https://github.com/electron/electron/pull/17517)
-  * Made `ShowItemInFolder` asynchronous with no return value. [#17121](https://github.com/electron/electron/pull/17121)
-  * Made app log directory creation opt-in with a new function `app.setAppLogsPath`. [#17841](https://github.com/electron/electron/pull/17841)
+ * The default log path has changed and `app.setAppsLogPath()` has been added to let apps manually configure this path. [#17841](https://github.com/electron/electron/pull/17841)
 
 ## End of Support for 3.x.y
 
