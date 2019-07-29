@@ -61,9 +61,9 @@ These functions now return Promises and still support older callback-based invoc
  * webviewTag.executeJavaScript() [#17312](https://github.com/electron/electron/pull/17312)
 
 These functions now have two forms, synchronous and Promise-based asynchronous:
- * `dialog.showMessageBox()` [#17298](https://github.com/electron/electron/pull/17298)
- * `dialog.showOpenDialog()` [#16973](https://github.com/electron/electron/pull/16973)
- * `dialog.showSaveDialog()` [#17054](https://github.com/electron/electron/pull/17054)
+ * `dialog.showMessageBox()`/`dialog.showMessageBoxSync()` [#17298](https://github.com/electron/electron/pull/17298)
+ * `dialog.showOpenDialog()`/`dialog.showOpenDialogSync()` [#16973](https://github.com/electron/electron/pull/16973)
+ * `dialog.showSaveDialog()`/`dialog.showSaveDialogSync()` [#17054](https://github.com/electron/electron/pull/17054)
 
 These functions now return Promises:
  * `app.dock.show()` [#16904](https://github.com/electron/electron/pull/16904)
@@ -81,20 +81,13 @@ Folks using `electron-osx-sign` to codesign their Electron app shouldn't have to
 If you're codesigning your app with custom scripts, you should ensure
 that the two new Helper applications are correctly codesigned.
 
+In order to package your application correctly with these two new helpers you need to be using `electron-packager@14.0.3` or higher.  If you are using `electron-builder` you should follow [this issue](https://github.com/electron-userland/electron-builder/issues/4104) to track support for these new helpers.
+
 ## Breaking Changes
 
 ### `app.allowRendererProcessReuse` option
 
 This release starts laying the groundwork for a future requirement that native Node modules loaded in the renderer process be either [N-API](https://nodejs.org/api/n-api.html) or [Context Aware](https://nodejs.org/api/addons.html#addons_context_aware_addons). The reasons for this change are faster performance, stronger security, and reduced maintenance workload. Read the full details including the proposed timeline in [this issue](https://github.com/electron/electron/issues/18397). This change is expected to be completed in Electron v11.
-
-Outline for change:
-
-  * Electron 6: Add option to disable site instance patches [#18396](https://github.com/electron/electron/pull/18396)
-  * Electron 7: Show deprecation warnings for non-context aware native modules
-  * Electron 8: Show deprecation warnings for the default value of `app.allowRendererProcessReuse` to switch
-  * Electron 9: Switch the default value of `app.allowRendererProcessReuse`
-  * Electron 10: Deprecate the ability to change `app.allowRendererProcessReuse`
-  * Electron 11: Remove the ability to change `app.allowRendererProcessReuse`
 
 ### Other Breaking Changes
 
@@ -106,9 +99,9 @@ Outline for change:
 
 ## Deprecations
 
-## End of Support for 3.0.x
+## End of Support for 3.x.y
 
-Per our [support policy](https://electronjs.org/docs/tutorial/support#supported-versions), 3.0.x has reached end of life. Developers and applications are encouraged to upgrade to a newer version of Electron.
+Per our [support policy](https://electronjs.org/docs/tutorial/support#supported-versions), 3.x.y has reached end of life. Developers and applications are encouraged to upgrade to a newer version of Electron.
 
 ## App Feedback Program
 
