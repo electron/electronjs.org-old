@@ -57,7 +57,7 @@
     "fast-memoize": "^2.5.1",
     "feed": "^3.0.0",
     "flat": "^4.1.0",
-    "fs-extra": "^8.0.1",
+    "fs-extra": "^8.1.0",
     "gray-matter": "^4.0.2",
     "helmet": "^3.20.0",
     "http-proxy-middleware": "^0.19.1",
