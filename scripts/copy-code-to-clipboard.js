@@ -15,12 +15,36 @@ module.exports = function copyCodeToClipBoard () {
   document.querySelectorAll(`code.hljs`).forEach(code => {
     const id = `_${Math.random().toString(36).substr(5)}`
     code.id = id
-    const button = document.createElement('button')
-    button.classList.add('btn-clipboard', 'tooltipped', 'tooltipped-n', 'border', 'float-left')
-    button.setAttribute('aria-label', window.localized.clipboard.copy_to_clipboard)
-    button.setAttribute('data-clipboard-target', `#${id}`)
-    button.innerHTML = window.localized.clipboard.copy
-    code.parentElement.appendChild(button)
+
+    const buttonGroup = document.createElement('div')
+    buttonGroup.classList.add('btn-group', 'border', 'float-left')
+    code.parentElement.appendChild(buttonGroup)
+
+    // add launch button if fiddle is specified
+    if (code.dataset.fiddleUrl) {
+      const launchButton = document.createElement('button')
+      launchButton.classList.add('btn-launch', 'tooltipped', 'tooltipped-n', 'float-left')
+      launchButton.setAttribute('aria-label', 'Launch in Fiddle')
+      launchButton.setAttribute('data-fiddle-url', code.dataset.fiddleUrl)
+      launchButton.innerHTML = 'Launch'
+      buttonGroup.appendChild(launchButton)
+    }
+
+    const copyButton = document.createElement('button')
+    copyButton.classList.add('btn-clipboard', 'tooltipped', 'tooltipped-n', 'float-left')
+    copyButton.setAttribute('aria-label', window.localized.clipboard.copy_to_clipboard)
+    copyButton.setAttribute('data-clipboard-target', `#${id}`)
+    copyButton.innerHTML = window.localized.clipboard.copy
+    buttonGroup.appendChild(copyButton)
+  })
+
+  document.querySelectorAll('.btn-launch').forEach(button => {
+    button.addEventListener('mouseout', e => {
+      e.target.blur()
+    })
+    button.addEventListener('click', e => {
+      window.location.href = e.target.dataset.fiddleUrl
+    })
   })
 
   document.querySelectorAll('.btn-clipboard').forEach(button => {
