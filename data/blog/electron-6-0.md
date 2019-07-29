@@ -17,7 +17,7 @@ Today marks a first for the Electron project: this is the first time we've made 
 
 Much of Electron's functionality is provided by the core components of Chromium, Node.js, and V8. Electron keeps up-to-date with these projects to provide our users with new JavaScript features, performance improvements, and security fixes. Each of these packages has a major version bump in Electron 6:
 
-- Chromium `76.0.3809.80`
+- Chromium `76.0.3809.88`
   - [New in 74](https://developers.google.com/web/updates/2019/04/nic74)
   - [New in 75](https://developers.google.com/web/updates/2019/06/nic75)
   - [New in 76](https://developers.google.com/web/updates/tags/chrome76)
