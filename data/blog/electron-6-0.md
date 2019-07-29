@@ -2,6 +2,8 @@
 title: Electron 6.0.0
 author: 
 - sofianguy
+- ckerr
+- codebytere
 date: '2019-07-30'
 ---
 
@@ -28,7 +30,7 @@ This release also includes improvements to Electron's APIs. [The release notes](
 
 ### Promisification
 
-Electron 6.0 continues the [initiative](https://github.com/electron/electron/blob/master/docs/api/modernization/promisification.md) started in 5.0 to improve [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises) support.
+Electron 6.0 continues the modernization [initiative](https://github.com/electron/electron/blob/master/docs/api/modernization/promisification.md) started in 5.0 to improve [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises) support.
 
 These functions now return Promises and still support older callback-based invocation:
  * contentTracing.getCategories() [#16583](https://github.com/electron/electron/pull/16583)
@@ -67,7 +69,18 @@ These functions now return Promises:
  * `app.dock.show()` [#16904](https://github.com/electron/electron/pull/16904)
 
 ### `Electron Helper (Render).app` and `Electron Helper (Plugin).app`
-[TODO: fill in details about new Helpers]
+
+There are now more Mac Helper application bundles.
+
+In order to enable the [hardened runtime](https://developer.apple.com/documentation/security/hardened_runtime_entitlements?language=objc), which restricts things like
+writable-executable memory and loading code signed by a different Team
+ID, special code signing entitlements must be granted to the Helper.
+
+To keep the capabilities scoped to the process types that require them, Chromium [added](https://chromium-review.googlesource.com/c/chromium/src/+/1627456) 
+two new variants of the Helper app: one for renderers (`Electron Helper (Render).app`) and one for plugins (`Electron Helper (Plugin).app`).
+
+Currently all three Helpers (the pre-existing `Electron Helper.app` in addition to the two new ones) will be code signed in the same way without
+any entitlements, although this may change in the future.
 
 ## Breaking Changes
 
