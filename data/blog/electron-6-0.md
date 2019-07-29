@@ -97,8 +97,6 @@ This release starts laying the groundwork for a future requirement that native N
   * Made `ShowItemInFolder` asynchronous with no return value. [#17121](https://github.com/electron/electron/pull/17121)
   * Made app log directory creation opt-in with a new function `app.setAppLogsPath`. [#17841](https://github.com/electron/electron/pull/17841)
 
-## Deprecations
-
 ## End of Support for 3.x.y
 
 Per our [support policy](https://electronjs.org/docs/tutorial/support#supported-versions), 3.x.y has reached end of life. Developers and applications are encouraged to upgrade to a newer version of Electron.
