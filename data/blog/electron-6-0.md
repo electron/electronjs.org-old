@@ -75,7 +75,7 @@ writable-executable memory and loading code signed by a different Team
 ID, special code signing entitlements needed to be granted to the Helper.
 
 To keep these entitlements scoped to the process types that require them, Chromium [added](https://chromium-review.googlesource.com/c/chromium/src/+/1627456) 
-three new variants of the Helper app: one for renderers (`Electron Helper (Render).app`), one for the GPU process (`Electron Helper (GPU).app`) and one for plugins (`Electron Helper (Plugin).app`).
+three new variants of the Helper app: one for renderers (`Electron Helper (Renderer).app`), one for the GPU process (`Electron Helper (GPU).app`) and one for plugins (`Electron Helper (Plugin).app`).
 
 Folks using `electron-osx-sign` to codesign their Electron app shouldn't have to make any changes to their build logic.
 If you're codesigning your app with custom scripts, you should ensure
