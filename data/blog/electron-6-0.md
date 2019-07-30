@@ -81,7 +81,7 @@ Folks using `electron-osx-sign` to codesign their Electron app shouldn't have to
 If you're codesigning your app with custom scripts, you should ensure
 that the two new Helper applications are correctly codesigned.
 
-In order to package your application correctly with these two new helpers you need to be using `electron-packager@14.0.3` or higher.  If you are using `electron-builder` you should follow [this issue](https://github.com/electron-userland/electron-builder/issues/4104) to track support for these new helpers.
+In order to package your application correctly with these two new helpers you need to be using `electron-packager@14.0.4` or higher.  If you are using `electron-builder` you should follow [this issue](https://github.com/electron-userland/electron-builder/issues/4104) to track support for these new helpers.
 
 ## Breaking Changes
 
