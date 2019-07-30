@@ -20,7 +20,7 @@ Much of Electron's functionality is provided by the core components of Chromium,
 - Chromium `76.0.3809.88`
   - [New in 74](https://developers.google.com/web/updates/2019/04/nic74)
   - [New in 75](https://developers.google.com/web/updates/2019/06/nic75)
-  - [New in 76](https://developers.google.com/web/updates/tags/chrome76)
+  - [New in 76](https://developers.google.com/web/updates/2019/07/nic76)
 - Node.js `12.4.0`
   - [Node 12.4.0 blog post](https://nodejs.org/en/blog/release/v12.4.0/)
 - V8 `7.6.303.22`
