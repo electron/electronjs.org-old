@@ -68,7 +68,7 @@ These functions now have two forms, synchronous and Promise-based asynchronous:
 These functions now return Promises:
  * `app.dock.show()` [#16904](https://github.com/electron/electron/pull/16904)
 
-### `Electron Helper (Render).app`, `Electron Helper (GPU).app` and `Electron Helper (Plugin).app`
+### `Electron Helper (Renderer).app`, `Electron Helper (GPU).app` and `Electron Helper (Plugin).app`
 
 In order to enable the [hardened runtime](https://developer.apple.com/documentation/security/hardened_runtime_entitlements?language=objc), which restricts things like
 writable-executable memory and loading code signed by a different Team
