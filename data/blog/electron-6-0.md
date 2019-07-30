@@ -68,20 +68,20 @@ These functions now have two forms, synchronous and Promise-based asynchronous:
 These functions now return Promises:
  * `app.dock.show()` [#16904](https://github.com/electron/electron/pull/16904)
 
-### `Electron Helper (Render).app` and `Electron Helper (Plugin).app`
+### `Electron Helper (Renderer).app`, `Electron Helper (GPU).app` and `Electron Helper (Plugin).app`
 
 In order to enable the [hardened runtime](https://developer.apple.com/documentation/security/hardened_runtime_entitlements?language=objc), which restricts things like
 writable-executable memory and loading code signed by a different Team
 ID, special code signing entitlements needed to be granted to the Helper.
 
 To keep these entitlements scoped to the process types that require them, Chromium [added](https://chromium-review.googlesource.com/c/chromium/src/+/1627456) 
-two new variants of the Helper app: one for renderers (`Electron Helper (Render).app`) and one for plugins (`Electron Helper (Plugin).app`).
+three new variants of the Helper app: one for renderers (`Electron Helper (Renderer).app`), one for the GPU process (`Electron Helper (GPU).app`) and one for plugins (`Electron Helper (Plugin).app`).
 
 Folks using `electron-osx-sign` to codesign their Electron app shouldn't have to make any changes to their build logic.
 If you're codesigning your app with custom scripts, you should ensure
-that the two new Helper applications are correctly codesigned.
+that the three new Helper applications are correctly codesigned.
 
-In order to package your application correctly with these two new helpers you need to be using `electron-packager@14.0.4` or higher.  If you are using `electron-builder` you should follow [this issue](https://github.com/electron-userland/electron-builder/issues/4104) to track support for these new helpers.
+In order to package your application correctly with these new helpers you need to be using `electron-packager@14.0.4` or higher.  If you are using `electron-builder` you should follow [this issue](https://github.com/electron-userland/electron-builder/issues/4104) to track support for these new helpers.
 
 ## Breaking Changes
 
