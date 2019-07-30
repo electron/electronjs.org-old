@@ -91,7 +91,7 @@ In order to package your application correctly with these new helpers you need t
 
  * `shell.showItemInFolder()` now returns void and is an asynchronous call. [#17121](https://github.com/electron/electron/pull/17121)
 
- * Apps must now explicitly set a log path by calling the new function `app.setAppsLogPath()` before using `app.getPath('log')`. [#17841](https://github.com/electron/electron/pull/17841)
+ * Apps must now explicitly set a log path by calling the new function `app.setAppLogPath()` before using `app.getPath('log')`. [#17841](https://github.com/electron/electron/pull/17841)
 
 ## End of Support for 3.x.y
 
