@@ -25,9 +25,9 @@ module.exports = function copyCodeToClipBoard () {
     if (code.dataset.fiddleUrl) {
       const launchButton = document.createElement('button')
       launchButton.classList.add('btn-launch', 'tooltipped', 'tooltipped-n', 'float-left')
-      launchButton.setAttribute('aria-label', 'Launch in Fiddle')
+      launchButton.setAttribute('aria-label', window.localized.fiddle_launch_button.launch_in_fiddle)
       launchButton.setAttribute('data-fiddle-url', code.dataset.fiddleUrl)
-      launchButton.innerHTML = 'Launch'
+      launchButton.innerHTML = window.localized.fiddle_launch_button.launch
       buttonGroup.appendChild(launchButton)
     }
 
