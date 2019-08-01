@@ -16,6 +16,7 @@ module.exports = function copyCodeToClipBoard () {
     const id = `_${Math.random().toString(36).substr(5)}`
     code.id = id
 
+    // add button group to code block
     const buttonGroup = document.createElement('div')
     buttonGroup.classList.add('btn-group', 'border', 'float-left')
     code.parentElement.appendChild(buttonGroup)
@@ -30,6 +31,7 @@ module.exports = function copyCodeToClipBoard () {
       buttonGroup.appendChild(launchButton)
     }
 
+    // add clipboard button
     const copyButton = document.createElement('button')
     copyButton.classList.add('btn-clipboard', 'tooltipped', 'tooltipped-n', 'float-left')
     copyButton.setAttribute('aria-label', window.localized.clipboard.copy_to_clipboard)
@@ -38,6 +40,7 @@ module.exports = function copyCodeToClipBoard () {
     buttonGroup.appendChild(copyButton)
   })
 
+  // launch button listeners
   document.querySelectorAll('.btn-launch').forEach(button => {
     button.addEventListener('mouseout', e => {
       e.target.blur()
@@ -47,6 +50,7 @@ module.exports = function copyCodeToClipBoard () {
     })
   })
 
+  // clipboard button listeners
   document.querySelectorAll('.btn-clipboard').forEach(button => {
     button.addEventListener('mouseout', e => {
       e.target.setAttribute('aria-label', window.localized.clipboard.copy_to_clipboard)
