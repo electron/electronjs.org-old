@@ -46,7 +46,7 @@
     "dotenv": "^8.0.0",
     "electron-api-historian": "^1.9.0",
     "electron-apps": "^1.7559.0",
-    "electron-i18n": "^1.1590.0",
+    "electron-i18n": "^1.1591.0",
     "electron-markdown": "^0.6.0",
     "electron-releases": "^3.188.0",
     "electron-userland-reports": "1.6.0",
