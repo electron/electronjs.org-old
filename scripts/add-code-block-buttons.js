@@ -46,19 +46,7 @@ module.exports = function copyCodeToClipBoard () {
       e.target.blur()
     })
     button.addEventListener('click', e => {
-      // used to detect whether fiddle is installed
-      let windowLostFocus = false
-      const focusLostListener = () => { windowLostFocus = true }
-      window.addEventListener('blur', focusLostListener)
-
-      // try to open fiddle
-      window.location.href = e.target.dataset.fiddleUrl
-
-      // redirect to install page if nothing happened
-      setTimeout(() => {
-        window.removeEventListener('blur', focusLostListener)
-        if (!windowLostFocus) window.location.href = '/fiddle'
-      }, 500)
+      window.open(`https://fiddle.electronjs.org/launch?target=${e.target.dataset.fiddleUrl}`)
     })
   })
 
