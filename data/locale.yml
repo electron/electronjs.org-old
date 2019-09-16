@@ -1,4 +1,4 @@
-tagline: Build cross platform desktop apps with JavaScript, HTML, and CSS
+tagline: Build cross-platform desktop apps with JavaScript, HTML, and CSS
 
 nav:
   apps: Apps
@@ -266,8 +266,8 @@ or: or
 
 pages:
   '/':
-    title: Electron | Build cross platform desktop apps with JavaScript, HTML, and CSS.
-    description: 'Build cross platform desktop apps with JavaScript, HTML, and CSS.'
+    title: Electron | Build cross-platform desktop apps with JavaScript, HTML, and CSS.
+    description: 'Build cross-platform desktop apps with JavaScript, HTML, and CSS.'
   '/apps':
     title: Electron Apps
     description: Apps Built on Electron
