@@ -67,7 +67,7 @@ describe('electronjs.org', () => {
     test('displays featured apps', async () => {
       const $ = await get('/')
       $('header').should.have.class('site-header')
-      $('p.jumbotron-lead').should.contain('Build cross platform desktop apps')
+      $('p.jumbotron-lead').should.contain('Build cross-platform desktop apps')
       $('.featured-app').length.should.equal(25)
       $('head > title').text().should.match(/^Electron/)
     })
