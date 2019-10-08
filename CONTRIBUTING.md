@@ -33,6 +33,20 @@ feel free to propose changes to this document in a pull request.
 * Feel free to open a Pull Request early so that a discussion can be had as changes are developed.
 * Include screenshots and animated gifs of your changes whenever possible.
 
+## Commit and Pull Request Sematics
+
+We use [Semantic Pull Requests](https://github.com/probot/semantic-pull-requests) to standardize our history
+
+### Commit Messages
+
+Prepend the type of change being made (refactor, fix, chore, feat, etc.) 
+Example: `fix: make header bold`
+
+### Pull Request Title
+
+Same as commit messages, prepend the type of change being made (refactor, fix, chore, feat, etc.) 
+Example: `docs: add linux setup instructions`
+
 ## Heroku Review Apps
 
 [Heroku Review Apps](https://devcenter.heroku.com/articles/github-integration-review-apps)
