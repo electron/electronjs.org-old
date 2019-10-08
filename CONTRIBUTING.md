@@ -33,7 +33,7 @@ feel free to propose changes to this document in a pull request.
 * Feel free to open a Pull Request early so that a discussion can be had as changes are developed.
 * Include screenshots and animated gifs of your changes whenever possible.
 
-## Commit and Pull Request Sematics
+## Commit and Pull Request Semantics
 
 We use [Semantic Pull Requests](https://github.com/probot/semantic-pull-requests) to standardize our history
 
