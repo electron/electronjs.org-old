@@ -11,3 +11,4 @@ cypress/videos/*
 /precompiled/
 .nyc_output
 coverage
+.DS_Store
