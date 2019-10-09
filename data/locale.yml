@@ -377,6 +377,9 @@ governance:
   admins:
     title: Administrative
     description: The Administrative Working Group oversees the entire governance and project.
+  api:
+    title: API
+    description: Oversees public API design based on project principles.
   global:
     overview: Overview
     associated_repos: Associated Repositories
