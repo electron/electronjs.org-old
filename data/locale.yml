@@ -356,9 +356,9 @@ governance:
   title: Electron Governance
   description: The Electron governance system is comprised of Working Groups that oversee different aspects of the Electron ecosystem, and an Administrative working group that functions to resolve conflicts between them.
   wgs: Working Groups
-  docstools:
-    title: Docs & Tools
-    description: Oversees externally-focused tooling (e.g. Fiddle, Forge), Electron documentation across the website and <code>electron/*</code> repositories, and the maintainer’s group outreach to 3rd party modules.
+  ecosystem:
+    title: Ecosystem
+    description: Oversees the projects that make Electron app development easier.
   outreach:
     title: Outreach
     description: Grows the Electron community
@@ -368,9 +368,6 @@ governance:
   upgrades:
     title: Upgrades
     description: Oversees upgrades of upstream dependencies; specifically Chromium and Node.
-  website:
-    title: Website
-    description: Oversees the technical implementation, design, and style of the Electron website and associated tooling.
   cmsf:
     title: Community & Safety
     description: Oversees removal/bans from community.
