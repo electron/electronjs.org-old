@@ -262,6 +262,10 @@ clipboard:
   copy_to_clipboard: Copy to Clipboard
   copied: Copied
 
+fiddle_launch_button:
+  launch: Launch
+  launch_in_fiddle: Launch in Fiddle
+
 or: or
 
 pages:
