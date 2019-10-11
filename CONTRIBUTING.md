@@ -35,7 +35,7 @@ feel free to propose changes to this document in a pull request.
 
 ## Commit and Pull Request Semantics
 
-We use [Semantic Pull Requests](https://github.com/probot/semantic-pull-requests) to standardize our history
+We use the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) specification to standardize our commit history. To enforce this convention on commit messages and/or pull request titles, we use the [Semantic Pull Requests](https://github.com/probot/semantic-pull-requests) bot.
 
 ### Commit Messages
 
