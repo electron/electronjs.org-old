@@ -7,6 +7,7 @@ date: '2019-10-22'
 ---
 
 Electron 7.0.0 has been released! It includes upgrades to Chromium 78, V8 7.8, and Node.js 12.8.1. We've added a Window on Arm 64 release, faster IPC methods, a new `nativeTheme` API, and much more!
+
 ---
 
 The Electron team is excited to announce the release of Electron 7.0.0! You can install it with npm via `npm install electron@latest` or download it from our [releases website](https://electronjs.org/releases/stable). The release is packed with upgrades, fixes, and new features. We can't wait to see what you build with them! Continue reading for details about this release, and please share any feedback you have!
