@@ -2,6 +2,7 @@
 title: Electron 7.0.0
 author:
 - sofianguy
+- ckerr
 date: '2019-10-22'
 ---
 
@@ -9,46 +10,53 @@ The Electron team is excited to announce the release of Electron 7.0.0! You can 
 
 ---
 
-## What's New
+## Notable Changes
+ * Stack upgrades:
+    | Software | Electron 7 | Electron 6 | What's New |
+    |----------|-----|-----|------------|
+    |Chromium  | **78.0.3905.1** | 76.0.3809.146 | [77](https://developers.google.com/web/updates/2019/09/nic77), [78](**FIXME**)
+    |V8        | **7.8** | 7.5 | [7.6](https://v8.dev/blog/v8-release-76), [7.7](https://v8.dev/blog/v8-release-77), [7.8](https://v8.dev/blog/v8-release-78)
+    |Node.js   | **12.8.1** | 12.4.0 | [12.5](https://nodejs.org/en/blog/release/v12.5.0/), [12.6](https://nodejs.org/en/blog/release/v12.6.0/), [12.7](https://nodejs.org/en/blog/release/v12.7.0/), [12.8](https://nodejs.org/en/blog/release/v12.8.0/), [12.8.1](https://nodejs.org/en/blog/release/v12.8.1/)
+ * Added Windows on Arm (64 bit) release. [#18591](https://github.com/electron/electron/pull/18591), [#20112](https://github.com/electron/electron/pull/20112)
+ * Added `ipcRenderer.invoke()` and `ipcMain.handle()` for asynchronous request/response-style IPC. These are strongly recommended over the `remote` module. See this "[Electron’s ‘remote’ module considered harmful](https://medium.com/@nornagon/electrons-remote-module-considered-harmful-70d69500f31)" blog post for more information. [#18449](https://github.com/electron/electron/pull/18449)
+ * Added `nativeTheme` API to read and respond to changes in the OS's theme and color scheme. [#19758](https://github.com/electron/electron/pull/19758), [#20486](https://github.com/electron/electron/pull/20486)
+ * Switched to a new TypeScript Definitions generator, which generates more precise definitions. If your TypeScript build fails, this is the likely cause. [#18103](https://github.com/electron/electron/pull/18103)
 
-Much of Electron's functionality is provided by the core components of Chromium, Node.js, and V8. Electron keeps up-to-date with these projects to provide our users with new JavaScript features, performance improvements, and security fixes. Each of these packages has a major version bump in Electron 7:
-
-* Chromium `78.0.3905.1`
-    * [New in 77](https://developers.google.com/web/updates/2019/09/nic77)
-    * [New in 78](TODO when M78 releases on Oct 22)
-* Node.js `12.8.1`
-    *  [Node 12.8.1 blog post](https://nodejs.org/en/blog/release/v12.8.1/)
-* V8 `7.8`
-    * [V8 7.8 blog post](https://v8.dev/blog/v8-release-78)
-
-This release also includes improvements to Electron's APIs. [The release notes](https://github.com/electron/electron/releases/tag/v7.0.0) have a more complete list, but here are some highlights:
-
-* New `nativeTheme.themeSource` module for allowing apps to override Chromium and the OS's theme choice. See ref [#20486](https://github.com/electron/electron/pull/20486).
-* Refactor of `netLog` to directly use network service now. See ref [#18289](https://github.com/electron/electron/pull/18289). This change has the following three impacts:
-    * Fixed an issue where `netLog.startLogging()` would silently fail when called immediately during `app.on('ready')`
-    * `netLog.startLogging()` now returns a promise which resolves when the net log has started recording
-    * Deprecated `netLog.currentlyLoggingPath`
-* Removal of `electron.asar`. Impact is the `electron.asar` file no longer exists and this means you should update your packaging scripts if you depended on `electron.asar`. See ref [#18577](https://github.com/electron/electron/pull/18577).
-* Move to the new `@electron/docs-parser` module for improved markdown parsing. For full details on the migration see ref [#18103](https://github.com/electron/electron/pull/18103).
+The [7.0.0 release notes](https://github.com/electron/electron/releases/tag/v7.0.0) have a fuller list of changes.
 
 ## Breaking Changes
 
-Below is a complete list of breaking changes in Electron 7. Please visit our [Planned Breaking Changes doc](https://github.com/electron/electron/blob/master/docs/api/breaking-changes.md) for future breaking changes in coming versions of Electron.
+More information about these and future changes can be found on project's [Planned Breaking Changes](https://github.com/electron/electron/blob/master/docs/api/breaking-changes.md) page.
 
-* Continued promisification work of removing callbacks. See ref [#17907](https://github.com/electron/electron/pull/17907).
-* Removal of deprecated APIs: `powerMonitor.querySystemIdleState()`, `powerMonitor.querySystemIdleTime()`, `webFrame.setIsolatedWorldContentSecurityPolicy()`, `webFrame.setIsolatedWorldHumanReadableName()`, `webFrame.setIsolatedWorldSecurityOrigin()`, `app.getApplicationMenu()`, `app.setApplicationMenu()`, and `app.enableMixedSandbox()`. See refs [#18159](https://github.com/electron/electron/pull/18159) and [#17894](https://github.com/electron/electron/pull/17894).
-* Removal of deprecated `Tray.setHighlightMode` method for macOS and migrated Tray from native view to be compatible with Catalina (macOS). See ref [#18981](https://github.com/electron/electron/pull/18981).
-* `session.clearAuthCache` no longer allows filtering the cleared cache entries. See ref [#17970](https://github.com/electron/electron/pull/17970).
-* Default dark mode support on macOS. See ref [#19226](https://github.com/electron/electron/pull/19226).
-* Updated the `electron` module to use `@electron/get` and minimum supported Node version is now Node v8. See ref [#18413](https://github.com/electron/electron/pull/18413).
+ * Removed deprecated APIs:
+     * Callback-based versions of functions that now use Promises. [#17907](https://github.com/electron/electron/pull/17907)
+     * `Tray.setHighlightMode()` (macOS). [#18981](https://github.com/electron/electron/pull/18981)
+     * `app.enableMixedSandbox()` [#17894](https://github.com/electron/electron/pull/17894)
+     * `app.getApplicationMenu()`,
+     * `app.setApplicationMenu()`,
+     * `powerMonitor.querySystemIdleState()`,
+     * `powerMonitor.querySystemIdleTime()`,
+     * `webFrame.setIsolatedWorldContentSecurityPolicy()`,
+     * `webFrame.setIsolatedWorldHumanReadableName()`,
+     * `webFrame.setIsolatedWorldSecurityOrigin()` [#18159](https://github.com/electron/electron/pull/18159)
+ * `Session.clearAuthCache()` no longer allows filtering the cleared cache entries. [#17970](https://github.com/electron/electron/pull/17970)
+ * Native interfaces on macOS (menus, dialogs, etc.) now automatically match the dark mode setting on the user's machine. [#19226](https://github.com/electron/electron/pull/19226)
+ * Updated the `electron` module to use `@electron/get`.  The minimum supported node version is now Node 8. [#18413](https://github.com/electron/electron/pull/18413)
+ * The `electron.asar` file no longer exists. Any packaging scripts that depend on its existence should be updated. [#18577](https://github.com/electron/electron/pull/18577)
 
 ## End of Support for 4.x.y
 
-Per our [support policy](https://electronjs.org/docs/tutorial/support#supported-versions), 4.x.y has reached end of life. Developers and applications are encouraged to upgrade to a newer version of Electron.
+Electron 4.x.y has reached end-of-support as per the project's
+[support policy](https://electronjs.org/docs/tutorial/support#supported-versions).
+Developers and applications are encouraged to upgrade to a newer version of Electron.
 
 ## App Feedback Program
 
-We continue to use our [App Feedback Program](https://electronjs.org/blog/app-feedback-program) for testing. Projects who participate in this program test Electron betas on their apps; and in return, the new bugs they find are prioritized for the stable release. If you'd like to participate or learn more, [check out our blog post about the program](https://electronjs.org/blog/app-feedback-program).
+We continue to use our [App Feedback Program](https://electronjs.org/blog/app-feedback-program)
+for testing. Projects who participate in this program test Electron betas
+on their apps; and in return, the new bugs they find are prioritized for
+the stable release. If you'd like to participate or learn more,
+[check out our blog post about the program](https://electronjs.org/blog/app-feedback-program).
 
 ## What's Next
 
