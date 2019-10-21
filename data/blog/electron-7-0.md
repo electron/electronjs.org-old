@@ -11,12 +11,13 @@ The Electron team is excited to announce the release of Electron 7.0.0! You can 
 ---
 
 ## Notable Changes
- * Stack upgrades:
-    | Software | Electron 7 | Electron 6 | What's New |
-    |----------|-----|-----|------------|
-    |Chromium  | **78.0.3905.1** | 76.0.3809.146 | [77](https://developers.google.com/web/updates/2019/09/nic77), [78](https://developers.google.com/web/updates/2019/10/nic78)
-    |V8        | **7.8** | 7.5 | [7.6](https://v8.dev/blog/v8-release-76), [7.7](https://v8.dev/blog/v8-release-77), [7.8](https://v8.dev/blog/v8-release-78)
-    |Node.js   | **12.8.1** | 12.4.0 | [12.5](https://nodejs.org/en/blog/release/v12.5.0/), [12.6](https://nodejs.org/en/blog/release/v12.6.0/), [12.7](https://nodejs.org/en/blog/release/v12.7.0/), [12.8](https://nodejs.org/en/blog/release/v12.8.0/), [12.8.1](https://nodejs.org/en/blog/release/v12.8.1/)
+ * Stack Upgrades:
+
+   | Stack | Electron 7 | Electron 6 | What's New |
+   |----------|-----|-----|------------|
+   |Chromium  | **78.0.3905.1** | 76.0.3809.146 | [77](https://developers.google.com/web/updates/2019/09/nic77), [78](https://developers.google.com/web/updates/2019/10/nic78)
+   |V8        | **7.8** | 7.5 | [7.6](https://v8.dev/blog/v8-release-76), [7.7](https://v8.dev/blog/v8-release-77), [7.8](https://v8.dev/blog/v8-release-78)
+   |Node.js   | **12.8.1** | 12.4.0 | [12.5](https://nodejs.org/en/blog/release/v12.5.0/), [12.6](https://nodejs.org/en/blog/release/v12.6.0/), [12.7](https://nodejs.org/en/blog/release/v12.7.0/), [12.8](https://nodejs.org/en/blog/release/v12.8.0/), [12.8.1](https://nodejs.org/en/blog/release/v12.8.1/)
  * Added Windows on Arm (64 bit) release. [#18591](https://github.com/electron/electron/pull/18591), [#20112](https://github.com/electron/electron/pull/20112)
  * Added `ipcRenderer.invoke()` and `ipcMain.handle()` for asynchronous request/response-style IPC. These are strongly recommended over the `remote` module. See this "[Electron’s ‘remote’ module considered harmful](https://medium.com/@nornagon/electrons-remote-module-considered-harmful-70d69500f31)" blog post for more information. [#18449](https://github.com/electron/electron/pull/18449)
  * Added `nativeTheme` API to read and respond to changes in the OS's theme and color scheme. [#19758](https://github.com/electron/electron/pull/19758), [#20486](https://github.com/electron/electron/pull/20486)
