@@ -16,9 +16,9 @@ The Electron team is excited to announce the release of Electron 7.0.0! You can 
  * Stack Upgrades:
 
    | Stack | Electron 7 | What's New | Electron 6 |
-   |----------|:----|:----|:-----------|
+   |:---------|:----|:----|:-----------|
    |Chromium  | **78.0.3905.1** | [78](https://developers.google.com/web/updates/2019/10/nic78), [77](https://developers.google.com/web/updates/2019/09/nic77) | 76.0.3809.146 
-   |V8        | **7.8** | [7.8](https://v8.dev/blog/v8-release-78), [7.7](https://v8.dev/blog/v8-release-77), [7.6](https://v8.dev/blog/v8-release-76) | 7.5
+   |V8        | **7.8** | [7.8](https://v8.dev/blog/v8-release-78), [7.7](https://v8.dev/blog/v8-release-77) | 7.6
    |Node.js   | **12.8.1** | [12.8.1](https://nodejs.org/en/blog/release/v12.8.1/), [12.8](https://nodejs.org/en/blog/release/v12.8.0/), [12.7](https://nodejs.org/en/blog/release/v12.7.0/), [12.6](https://nodejs.org/en/blog/release/v12.6.0/), [12.5](https://nodejs.org/en/blog/release/v12.5.0/) | 12.4.0
  * Added Windows on Arm (64 bit) release. [#18591](https://github.com/electron/electron/pull/18591), [#20112](https://github.com/electron/electron/pull/20112)
  * Added `ipcRenderer.invoke()` and `ipcMain.handle()` for asynchronous request/response-style IPC. These are strongly recommended over the `remote` module. See this "[Electron’s ‘remote’ module considered harmful](https://medium.com/@nornagon/electrons-remote-module-considered-harmful-70d69500f31)" blog post for more information. [#18449](https://github.com/electron/electron/pull/18449)
