@@ -21,9 +21,9 @@ The Electron team is excited to announce the release of Electron 7.0.0! You can 
  * Added Windows on Arm (64 bit) release. [#18591](https://github.com/electron/electron/pull/18591), [#20112](https://github.com/electron/electron/pull/20112)
  * Added `ipcRenderer.invoke()` and `ipcMain.handle()` for asynchronous request/response-style IPC. These are strongly recommended over the `remote` module. See this "[Electron’s ‘remote’ module considered harmful](https://medium.com/@nornagon/electrons-remote-module-considered-harmful-70d69500f31)" blog post for more information. [#18449](https://github.com/electron/electron/pull/18449)
  * Added `nativeTheme` API to read and respond to changes in the OS's theme and color scheme. [#19758](https://github.com/electron/electron/pull/19758), [#20486](https://github.com/electron/electron/pull/20486)
- * Switched to a new TypeScript Definitions generator, which generates more precise definitions. If your TypeScript build fails, this is the likely cause. [#18103](https://github.com/electron/electron/pull/18103)
+ * Switched to a new TypeScript Definitions [generator](https://github.com/electron/docs-parser). The resulting definitions are more precise; so if your TypeScript build fails, this is the likely cause. [#18103](https://github.com/electron/electron/pull/18103)
 
-The [7.0.0 release notes](https://github.com/electron/electron/releases/tag/v7.0.0) have a fuller list of changes.
+See the [7.0.0 release notes](https://github.com/electron/electron/releases/tag/v7.0.0) for a longer list of changes.
 
 ## Breaking Changes
 
@@ -43,7 +43,7 @@ More information about these and future changes can be found on project's [Plann
  * `Session.clearAuthCache()` no longer allows filtering the cleared cache entries. [#17970](https://github.com/electron/electron/pull/17970)
  * Native interfaces on macOS (menus, dialogs, etc.) now automatically match the dark mode setting on the user's machine. [#19226](https://github.com/electron/electron/pull/19226)
  * Updated the `electron` module to use `@electron/get`.  The minimum supported node version is now Node 8. [#18413](https://github.com/electron/electron/pull/18413)
- * The `electron.asar` file no longer exists. Any packaging scripts that depend on its existence should be updated. [#18577](https://github.com/electron/electron/pull/18577)
+ * The file `electron.asar` no longer exists. Any packaging scripts that depend on its existence should be updated. [#18577](https://github.com/electron/electron/pull/18577)
 
 ## End of Support for 4.x.y
 
