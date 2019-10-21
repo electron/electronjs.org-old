@@ -14,7 +14,7 @@ The Electron team is excited to announce the release of Electron 7.0.0! You can 
  * Stack upgrades:
     | Software | Electron 7 | Electron 6 | What's New |
     |----------|-----|-----|------------|
-    |Chromium  | **78.0.3905.1** | 76.0.3809.146 | [77](https://developers.google.com/web/updates/2019/09/nic77), [78](**FIXME**)
+    |Chromium  | **78.0.3905.1** | 76.0.3809.146 | [77](https://developers.google.com/web/updates/2019/09/nic77), [78](https://developers.google.com/web/updates/2019/10/nic78)
     |V8        | **7.8** | 7.5 | [7.6](https://v8.dev/blog/v8-release-76), [7.7](https://v8.dev/blog/v8-release-77), [7.8](https://v8.dev/blog/v8-release-78)
     |Node.js   | **12.8.1** | 12.4.0 | [12.5](https://nodejs.org/en/blog/release/v12.5.0/), [12.6](https://nodejs.org/en/blog/release/v12.6.0/), [12.7](https://nodejs.org/en/blog/release/v12.7.0/), [12.8](https://nodejs.org/en/blog/release/v12.8.0/), [12.8.1](https://nodejs.org/en/blog/release/v12.8.1/)
  * Added Windows on Arm (64 bit) release. [#18591](https://github.com/electron/electron/pull/18591), [#20112](https://github.com/electron/electron/pull/20112)
