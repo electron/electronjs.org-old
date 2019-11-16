@@ -99,7 +99,7 @@
     "mocha": "^6.2.2",
     "nock": "^10.0.6",
     "nodemon": "^1.19.4",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.13.0",
     "simplecrawler": "^1.1.8",
     "standard": "^12.0.1",
     "supertest": "^4.0.2",
