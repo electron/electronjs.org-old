@@ -59,7 +59,7 @@
     "flat": "^4.1.0",
     "fs-extra": "^8.1.0",
     "gray-matter": "^4.0.2",
-    "helmet": "^3.21.1",
+    "helmet": "^3.21.2",
     "http-proxy-middleware": "^0.20.0",
     "instantsearch.js": "^2.10.4",
     "knuth-shuffle-seeded": "^1.0.6",
