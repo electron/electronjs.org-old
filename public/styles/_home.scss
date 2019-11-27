@@ -221,3 +221,22 @@ $app-list-icon-size: 48px;
     display: none;
   }
 }
+
+// Covalence banner
+
+img.covalence {
+  padding: 0;
+  margin: 0;
+  height: 150px;
+  border: 1px solid #74b1be;
+  border-radius: 4px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  animation: fadein 5s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; top: 0; }
+  to   { opacity: 1; top: 20px; }
+}
