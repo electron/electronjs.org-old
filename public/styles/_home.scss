@@ -240,3 +240,12 @@ img.covalence {
   from { opacity: 0; top: 0; }
   to   { opacity: 1; top: 20px; }
 }
+
+@media only screen
+and (max-device-width : 1024px) {
+  img.covalence {
+    position: relative;
+    margin-bottom: 10px;
+    left: calc(50% - 162px);
+  }
+}
