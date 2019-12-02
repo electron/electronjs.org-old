@@ -221,3 +221,25 @@ $app-list-icon-size: 48px;
     display: none;
   }
 }
+
+// Covalence banner
+
+img.covalence {
+  padding: 0;
+  margin: 0;
+  height: 150px;
+  border: 1px solid #74b1be;
+  border-radius: 4px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+@media only screen
+and (max-width : 1024px) {
+  img.covalence {
+    position: relative;
+    margin-bottom: 10px;
+    left: calc(50% - 162px);
+  }
+}
