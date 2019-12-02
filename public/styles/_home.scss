@@ -233,12 +233,6 @@ img.covalence {
   position: absolute;
   top: 20px;
   right: 20px;
-  animation: fadein 5s;
-}
-
-@keyframes fadein {
-  from { opacity: 0; top: 0; }
-  to   { opacity: 1; top: 20px; }
 }
 
 @media only screen
