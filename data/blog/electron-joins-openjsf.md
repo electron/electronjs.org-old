@@ -5,17 +5,13 @@ author:
 date: '2019-12-11'
 ---
 
-The OpenJS Foundation announced that it accepted Electron into the Foundation's incubation program. The Foundation is a neutral home for a number of open source JavaScript projects including jQuery, Node.js, and webpack. It's supported by 30 corporate and end-user members, including GoDaddy, Google, IBM, Intel, Joyent, and Microsoft.
-
-This is an exciting move for Electron, and we see it as a next step in our evolution as an open-source project.
-
----
-
 At [Node+JS Interactive](https://events19.linuxfoundation.org/events/nodejs-interactive-2019/) in Montreal, the [OpenJS Foundation](https://openjsf.org/) announced that it accepted Electron into the Foundation's incubation program. The Foundation is committed to supporting the healthy growth of the JavaScript ecosystem and web technologies by providing a neutral organization to host and sustain projects, as well as collaboratively fund activities for the benefit of the community at large.
 
 The OpenJS Foundation is host to a number of open source JavaScript projects including jQuery, Node.js, and webpack. It's supported by 30 corporate and end-user members, including GoDaddy, Google, IBM, Intel, Joyent, and Microsoft. Electron is an open–source framework for building cross-platform desktop applications with web technologies.
 
 This is an exciting move for Electron, and we see it as a next step in our evolution as an open-source project.
+
+---
 
 ## What this means for developers
 
