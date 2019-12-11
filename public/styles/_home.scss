@@ -222,7 +222,7 @@ $app-list-icon-size: 48px;
   }
 }
 
-// Covalence banner
+// Covalence banner ------------------------------
 
 img.covalence {
   padding: 0;
@@ -241,5 +241,20 @@ and (max-width : 1024px) {
     position: relative;
     margin-bottom: 10px;
     left: calc(50% - 162px);
+  }
+}
+
+// Announcement banner------------------------------
+
+.announce-banner {
+  background: #23252f;
+  border-bottom: 1px solid #191a22;
+  padding-top: 6px;
+  padding-bottom: 5px;
+  color: $jumbo-color-strong;
+  text-align: center;
+
+  a {
+    color: $jumbo-color;
   }
 }
