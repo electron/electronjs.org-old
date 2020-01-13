@@ -138,7 +138,7 @@ app.use(routes._404)
 
 if (!module.parent) {
   app.listen(port, () => {
-    console.log(`app running on ${port}`)
+    console.log(`app running on http://localhost:${port}`)
     if (process.env.NODE_ENV === 'production') {
       console.log(`If you're developing, you probably want \`npm run dev\`\n\n`)
     }
