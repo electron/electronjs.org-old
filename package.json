@@ -52,7 +52,7 @@
     "electron-userland-reports": "1.6.0",
     "express": "^4.17.1",
     "express-hbs": "^2.3.0",
-    "express-naked-redirect": "^0.1.3",
+    "express-naked-redirect": "^0.1.4",
     "express-request-language": "^1.1.15",
     "fast-memoize": "^2.5.1",
     "feed": "^4.1.0",
