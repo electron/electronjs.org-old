@@ -217,7 +217,8 @@ headings:
 
 taglines:
   languages: Localized content from our awesome global developer community.
-  openjsf: Electron just joined the OpenJS Foundation. See <a href="/blog/electron-joins-openjsf">the announcement</a> for more info!
+  # This is a string is general and can be changed at any time
+  announce: Electron just joined the OpenJS Foundation. See <a href="/blog/electron-joins-openjsf">the announcement</a> for more info!
 
 help_translate: "Help translate"
 
