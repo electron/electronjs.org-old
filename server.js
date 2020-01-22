@@ -10,7 +10,6 @@ const lobars = require('lobars')
 const hbs = require('express-hbs')
 const compression = require('compression')
 const slashes = require('connect-slashes')
-const nakedRedirect = require('express-naked-redirect')
 const browsersync = require('./middleware/browsersync')
 const browserify = require('./middleware/browserify')
 const requestLanguage = require('express-request-language')
@@ -60,7 +59,6 @@ app.engine('html', hbs.express4({
 // Middleware
 app.set('view engine', 'html')
 app.set('views', path.join(__dirname, '/views'))
-app.use(nakedRedirect(true, 'www', 302))
 app.use(compression())
 app.use(helmet())
 if (process.env.NODE_ENV === 'production') {
