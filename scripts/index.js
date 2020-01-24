@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
   require('./apply-active-class-to-active-links')()
   require('./remove-scheme-from-link-text')()
   require('browser-date-formatter')()
-  require('./copy-code-to-clipboard')()
+  require('./add-code-block-buttons')()
   require('./sticky-app-meta')()
   require('./screenshot-thumb-selector')()
   require('./docs-language-toggle')()
