@@ -83,7 +83,7 @@
     "rtl-detect": "^1.0.2",
     "schemeless": "^1.2.0",
     "search-with-your-keyboard": "^2.0.0",
-    "semver": "^6.3.0",
+    "semver": "^7.1.1",
     "set-query-string": "^2.2.0",
     "ultimate-pagination": "^1.0.0",
     "yubikiri": "^2.0.0"
