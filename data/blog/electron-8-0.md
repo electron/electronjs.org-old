@@ -26,7 +26,7 @@ The Electron team is excited to announce the release of Electron 8.0.0! You can 
 
 ### Highlight Features
 * Implemented usage of Chrome's built-in spellchecker feature. See more details in [#20692](https://github.com/electron/electron/pull/20692) and [#21266](https://github.com/electron/electron/pull/21266).
-
+* IPC communication now uses v8's Structured Clone Algorithm. This is faster, more featureful, and less surprising than the existing logic, and brings about a 2x performance boost for large buffers and complex objects. Latency for small messages is not significantly affected. See more details in [#20214](https://github.com/electron/electron/pull/20214).
 See the [8.0.0 release notes](https://github.com/electron/electron/releases/tag/v8.0.0) for a full list of new features and changes.
 
 ## Breaking Changes
