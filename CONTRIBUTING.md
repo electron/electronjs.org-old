@@ -18,6 +18,7 @@ feel free to propose changes to this document in a pull request.
   - [Blog](#blog)
   - [Localized Strings](#localized-strings)
   - [Translations](#translations)
+  - [Announcement Banner](#announcement-banner)
 - [Routes](#routes)
 - [Middleware](#middleware)
 - [Views](#views)
@@ -151,6 +152,12 @@ See
 [electron/electron-i18n](https://github.com/electron/electron-i18n) for info
 on how to get started, or jump right into translating at
 [crowdin.com/project/electron](https://crowdin.com/project/electron).
+
+### Announcement Banner
+
+The top-level banner for showing the information (for example new Electron version, important blog post).
+
+For show or update the announcement banner modify the [message](https://github.com/electron/electronjs.org/blob/master/data/locale.yml#L220) and update the show [time](https://github.com/electron/electronjs.org/blob/master/routes/home.js#L5).
 
 #### Crowdin Proxy
 
