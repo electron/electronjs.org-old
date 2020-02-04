@@ -155,9 +155,11 @@ on how to get started, or jump right into translating at
 
 ### Announcement Banner
 
-The top-level banner for showing the information (for example new Electron version, important blog post).
+The top-level banner for showing the information (for example, a new Electron version or important blog post).
 
-For show or update the announcement banner modify the [message](https://github.com/electron/electronjs.org/blob/master/data/locale.yml#L220) and update the show [time](https://github.com/electron/electronjs.org/blob/master/routes/home.js#L5).
+To show or update the announcement banner, modify the `announcement` string in
+[`data/locale.yml`](https://github.com/electron/electronjs.org/blob/efa94cdfbbf6016be7123f4d2ee6a8aa32e2476f/data/locale.yml#L220) file,
+and update the time inside the `showAnnouncementBanner` constant in [`routes/home.js`](https://github.com/electron/electronjs.org/blob/efa94cdfbbf6016be7123f4d2ee6a8aa32e2476f/routes/home.js#L5) file.
 
 #### Crowdin Proxy
 
