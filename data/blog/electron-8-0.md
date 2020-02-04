@@ -17,7 +17,7 @@ The Electron team is excited to announce the release of Electron 8.0.0! You can 
 ### Stack Changes
 * Chromium `80.0.3987.86`
     * [New in Chrome 79](https://developers.google.com/web/updates/2019/12/nic79)
-    * [New in Chrome 80](TODO)
+    * [New in Chrome 80](https://chromereleases.googleblog.com/2020/02/stable-channel-update-for-desktop.html)
 * Node.js `12.13.0`
     * [Node 12.13.0 blog post](https://nodejs.org/en/blog/release/v12.13.0/)
 * V8 `8.0`
