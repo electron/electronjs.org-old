@@ -236,10 +236,10 @@ describe('electronjs.org', () => {
         .get('#languages-header-menu').should('have.css', 'height', '415px')
         .viewport('iphone-6')
         .wait(500)
-        .get('#languages-header-menu').should('have.css', 'height', '874px')
+        .get('#languages-header-menu').should('have.css', 'height', '868px')
         .viewport(1920, 1080)
         // .get('#languages-header-menu').should('have.css', 'height', '415px') // FIXME: Uncomment when fixed.
-        .get('#languages-header-menu').should('have.css', 'height', '874px')
+        .get('#languages-header-menu').should('have.css', 'height', '868px')
     })
   })
 })
