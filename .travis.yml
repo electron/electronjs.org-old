@@ -7,4 +7,4 @@ notifications:
   email: false
 
 script:
-  - npm test # && npm run integration
+  - npm test && npm run integration
