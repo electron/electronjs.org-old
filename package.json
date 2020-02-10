@@ -97,7 +97,7 @@
     "cypress": "^3.8.3",
     "husky": "^4.2.1",
     "mocha": "^7.0.1",
-    "nock": "^11.7.2",
+    "nock": "^11.8.2",
     "nodemon": "^2.0.2",
     "node-sass": "^4.13.1",
     "simplecrawler": "^1.1.8",
