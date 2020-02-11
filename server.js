@@ -39,7 +39,7 @@ hbs.registerAsyncHelper('octicon', async (data, cb) => {
   const { name, className, ariaLabel, width, height } = data.hash
 
   if (data.hash.class) {
-    return console.log(`Octicons Helper: Use 'className' instead of 'class'.`)
+    return console.error(`ERROR(Octicons Helper): Use 'className' instead of 'class'.`)
   }
 
   if (name === undefined) {
