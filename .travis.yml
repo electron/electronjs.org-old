@@ -6,5 +6,10 @@ node_js:
 notifications:
   email: false
 
-script:
-  - npm test # && npm run integration
+jobs:
+  include:
+    - stage: "Tests"
+      name: "Unit tests"
+      script: npm test
+    - script: npm run integration
+      name: "Integration Tests"
