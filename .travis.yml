@@ -7,9 +7,9 @@ notifications:
   email: false
 
 jobs:
-  inclide:
+  include:
     - stage: "Tests"
       name: "Unit tests"
-      scirpt: npm test
+      script: npm test
     - script: npm run integration
       name: "Integration Tests"
