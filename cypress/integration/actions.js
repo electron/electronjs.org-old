@@ -115,7 +115,7 @@ describe('electronjs.org', () => {
           .should(typeHits => {
             if(type.includes('tutorial')) expect(typeHits.first()).to.contain('Windows Taskbar')
             if (type.includes('api')) expect(typeHits.first()).to.contain('window-all-closed')
-            if (type.includes('package')) expect(typeHits.first()).to.contain('electron-builder')
+            if (type.includes('package')) expect(typeHits.first()).to.contain('about-window')
             if (type.includes('app')) expect(typeHits.first()).to.contain('PhotoScreenSaver')
           })
       })
@@ -154,9 +154,9 @@ describe('electronjs.org', () => {
       cy.wait(500)
       cy.get('.lang-select-button').click()
       cy.wait(200)
-      cy.get('#languages-header-menu a[href="/languages/es-ES"]:first').click()
+      cy.get('#languages-header-menu a[href="/languages/ru-RU"]:first').click()
       cy.wait(500)
-      cy.get('.jumbotron-lead').contains('Crea aplicaciones multiplataforma de escritorio con JavaScript, HTML y CSS')
+      cy.get('.jumbotron-lead').contains('Создавайте кросс-платформенные приложения при помощи JavaScript, HTML и CSS')
     })
 
     it('change language via languages page', () => {
@@ -164,7 +164,7 @@ describe('electronjs.org', () => {
       cy.get('.container-lg a[href="/languages/ru-RU"]:first').click()
       cy.visit(`${localhost}`)
       cy.wait(500)
-      cy.get('.jumbotron-lead').contains('Создавайте кроссплатформенные приложения при помощи JavaScript, HTML и CSS')
+      cy.get('.jumbotron-lead').contains('Создавайте кросс-платформенные приложения при помощи JavaScript, HTML и CSS')
     })
   })
 
@@ -233,13 +233,13 @@ describe('electronjs.org', () => {
     it('language bar responsive bug', () => {
       visit()
       cy.get('.lang-select-button').click()
-        .get('#languages-header-menu').should('have.css', 'height', '421px')
+        .get('#languages-header-menu').should('have.css', 'height', '415px')
         .viewport('iphone-6')
         .wait(500)
-        .get('#languages-header-menu').should('have.css', 'height', '874px')
+        .get('#languages-header-menu').should('have.css', 'height', '868px')
         .viewport(1920, 1080)
-        // .get('#languages-header-menu').should('have.css', 'height', '421px') // FIXME: Uncomment when fixed.
-        .get('#languages-header-menu').should('have.css', 'height', '874px')
+        // .get('#languages-header-menu').should('have.css', 'height', '415px') // FIXME: Uncomment when fixed.
+        .get('#languages-header-menu').should('have.css', 'height', '868px')
     })
   })
 })
