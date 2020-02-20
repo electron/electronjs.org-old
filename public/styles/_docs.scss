@@ -77,7 +77,8 @@
   }
 }
 
-.docs-list {
+.docs-list,
+.docs-guides > ul {
   margin-left: 0;
   list-style-type: none;
 }
@@ -184,4 +185,51 @@
   max-width: 1280px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.docs-guides {
+  h2 {
+    // Match the default from primer
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+  }
+
+  @media (min-width: 922px) {
+    .docs-guides-list {
+      column-count: 3;
+    }
+  }
+}
+
+.docs-sub-heading {
+  border-bottom: 1px solid #eee;
+  padding-top: 12px;
+}
+
+.docs-guides-readme {
+  > ul {
+    margin-left: 0;
+
+    > li {
+      list-style-type: none;
+    }
+  }
+
+  li {
+    break-inside: avoid;
+    margin-bottom: 3px;
+
+    > p {
+      margin-bottom: 0;
+      font-weight: bold;
+    }
+  }
+
+  // Hide various elements we only need on GitHub
+  > h2,
+  > h3,
+  > p,
+  > hr {
+    display: none;
+  }
 }

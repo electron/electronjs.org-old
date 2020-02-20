@@ -28,6 +28,7 @@ module.exports.setupFeed = memoize(async (type, items) => {
     case types.releases:
       items.forEach(release => {
         feed.addItem({
+          title: `Electron v${release.data.version}`,
           id: `https://electronjs.org/releases#${release.data.version}`,
           date: new Date(release.data.created_at),
           link: release.data.html_url,
