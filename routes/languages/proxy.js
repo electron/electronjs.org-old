@@ -1,4 +1,4 @@
-const proxy = require('http-proxy-middleware')
+const { createProxyMiddleware } = require('http-proxy-middleware')
 const url = require('url')
 
 const apiWhitelist = [
@@ -19,7 +19,7 @@ module.exports = (req, res, next) => {
   if (!(apiWhitelist.find((path) => path === url.parse(req.url).pathname))) {
     return res.status(404).render('404', req.context)
   }
-  return proxy({
+  return createProxyMiddleware({
     target: 'https://api.crowdin.com/api/project/electron',
     changeOrigin: true,
     logLevel: 'warn',
