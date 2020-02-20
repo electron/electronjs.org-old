@@ -9,7 +9,7 @@ module.exports = (req, res) => {
   const context = Object.assign(req.context, {
     companies: featuredCompanies,
     apps: randomizedApps.slice(0, 25),
-    showAnnouncementBanner,
+    showAnnouncementBanner
   })
 
   res.render('home', context)
