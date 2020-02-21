@@ -20,7 +20,7 @@
     "cypress": "cypress run",
     "lint": "npm run lint:js && npm run lint:style",
     "lint:js": "eslint . --fix",
-    "lint:style": "stylelint 'public/styles/*.scss' --fix",
+    "lint:style": "stylelint \"public/styles/*.scss\" --fix",
     "heroku-postbuild": "npm run precompile-assets"
   },
   "husky": {
