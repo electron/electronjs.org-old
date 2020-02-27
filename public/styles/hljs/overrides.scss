@@ -1,17 +1,28 @@
 pre {
   overflow: visible !important;
   position: relative !important;
-  .btn-clipboard {
-    outline: 0 !important;
-    position: absolute !important;
-    top: 5px !important;
-    right: 5px !important;
-    padding: .25rem .5rem !important;
+  .btn-group {
+    border: 1px #e5e5e5 solid !important;
+    border-radius: 3px !important;
     font-size: 14px !important;
     font-weight: 500 !important;
-    border: 1px #e5e5e5 solid !important;
+    position: absolute !important;
+    right: 5px !important;
+    top: 5px !important;
+
+    button {
+      border-right: 1px #e5e5e5 solid !important;
+    }
+    button:last-child {
+      border-right: none !important;
+    }
+  }
+
+  .btn-launch, .btn-clipboard {
     background-color: #f8f8f8 !important;
-    border-radius: 3px !important;
+    border: none !important;
+    outline: 0 !important;
+    padding: .25rem .5rem !important;
     transition: 0.2s !important;
 
     &:hover {

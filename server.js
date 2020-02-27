@@ -10,7 +10,6 @@ const lobars = require('lobars')
 const hbs = require('express-hbs')
 const compression = require('compression')
 const slashes = require('connect-slashes')
-const nakedRedirect = require('express-naked-redirect')
 const browsersync = require('./middleware/browsersync')
 const browserify = require('./middleware/browserify')
 const requestLanguage = require('express-request-language')
@@ -39,6 +38,10 @@ hbs.registerHelper(lobars)
 hbs.registerAsyncHelper('octicon', async (data, cb) => {
   const { name, className, ariaLabel, width, height } = data.hash
 
+  if (data.hash.class) {
+    return console.error(`ERROR(Octicons Helper): Use 'className' instead of 'class'.`)
+  }
+
   if (name === undefined) {
     return console.error('ERROR(Octicons Helper): Name is required field in octicon helper.')
   }
@@ -60,7 +63,6 @@ app.engine('html', hbs.express4({
 // Middleware
 app.set('view engine', 'html')
 app.set('views', path.join(__dirname, '/views'))
-app.use(nakedRedirect(true, 'www', 302))
 app.use(compression())
 app.use(helmet())
 if (process.env.NODE_ENV === 'production') {
@@ -108,6 +110,7 @@ app.get('/devtron', routes.devtron)
 app.get('/docs', routes.docs.index)
 app.get('/docs/versions', (req, res) => res.redirect(301, '/releases/stable'))
 app.get('/docs/:category', routes.docs.category)
+app.get('/docs/api/breaking-changes', (req, res) => res.redirect(301, '/docs/breaking-changes'))
 app.get('/docs/api/structures', routes.docs.structures)
 app.get('/docs/*/history', routes.docs.history)
 app.get('/docs/:category/*', routes.docs.show)
@@ -118,7 +121,7 @@ app.get('/governance', routes.governance.index)
 app.get('/issues', (req, res) => res.redirect(301, 'https://github.com/electron/electronjs.org/issues'))
 app.get('/issues/new', (req, res) => res.redirect(301, 'https://github.com/electron/electronjs.org/issues/new'))
 app.get('/languages', routes.languages.index)
-app.get('/maintainers/join', (req, res) => res.redirect('https://goo.gl/FJmZZm'))
+app.get('/maintainers/join', (req, res) => res.redirect('https://airtable.com/shrNrpaXIJiRZj6bS'))
 app.get('/pulls', (req, res) => res.redirect(301, 'https://github.com/electron/electronjs.org/pulls'))
 app.get('/releases', (req, res) => res.redirect(301, '/releases/stable'))
 app.get('/releases/stable', routes.releases.index('stable'))
@@ -138,7 +141,7 @@ app.use(routes._404)
 
 if (!module.parent) {
   app.listen(port, () => {
-    console.log(`app running on ${port}`)
+    console.log(`app running on http://localhost:${port}`)
     if (process.env.NODE_ENV === 'production') {
       console.log(`If you're developing, you probably want \`npm run dev\`\n\n`)
     }
