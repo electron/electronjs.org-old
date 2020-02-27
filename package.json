@@ -8,7 +8,7 @@
   "author": "GitHub",
   "license": "MIT",
   "scripts": {
-    "start": "cross-env NODE_PATH=. NODE_ENV=production node server.js",
+    "start": "cross-env NODE_OPTIONS='--max_old_space_size=4096' NODE_PATH=. NODE_ENV=production node server.js",
     "bootstrap": "node script/bootstrap",
     "test": "cross-env NODE_PATH=. NODE_ENV=test mocha --timeout 5000 && standard --fix",
     "integration": "script/integration.sh",
