@@ -34,6 +34,18 @@ feel free to propose changes to this document in a pull request.
 * Feel free to open a Pull Request early so that a discussion can be had as changes are developed.
 * Include screenshots and animated gifs of your changes whenever possible.
 
+## Commit Messages and Pull Request Titles
+
+We use the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) specification to standardize our commit history. To enforce this convention on commit messages and/or pull request titles, we use the [Semantic Pull Requests](https://github.com/probot/semantic-pull-requests) bot.
+
+The commit message summary (or pull request title) is constructed by prepending the type of change being made (e.g., feat, fix, refactor), followed by an imperative, present tense sentence (without a period).
+Example: `fix: make header bold`
+
+### Pull Request Title
+
+Same as commit messages, prepend the type of change being made (refactor, fix, chore, feat, etc.) 
+Example: `docs: add linux setup instructions`
+
 ## Heroku Review Apps
 
 [Heroku Review Apps](https://devcenter.heroku.com/articles/github-integration-review-apps)
