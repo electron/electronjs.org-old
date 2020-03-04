@@ -1,6 +1,7 @@
 // Icon styles
 // --------------------------------------------------
 
+
 [class*="hero-octicon"] {
   display: block;
   width: 75px;
@@ -13,6 +14,10 @@
   background-color: #fff;
   border: 1px solid $gray-5;
   border-radius: 50%;
+
+  .PRIMER-REMOVE-ME & {
+    @extend [class*="hero-octicon"];
+  }
 }
 
 [class*="inline-octicon"]  {
