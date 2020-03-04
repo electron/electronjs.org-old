@@ -54,7 +54,7 @@
     "express-hbs": "^2.3.0",
     "express-naked-redirect": "^0.1.4",
     "express-request-language": "^1.1.15",
-    "fast-memoize": "^2.5.1",
+    "fast-memoize": "^2.5.2",
     "feed": "^4.1.0",
     "flat": "^5.0.0",
     "fs-extra": "^8.1.0",
