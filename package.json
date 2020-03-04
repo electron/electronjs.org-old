@@ -40,7 +40,7 @@
     "connect-browser-sync": "^2.1.0",
     "connect-slashes": "^1.4.0",
     "cookie-parser": "^1.4.4",
-    "cross-env": "^7.0.0",
+    "cross-env": "^7.0.1",
     "crowdin-editor-language-codes": "^1.0.0",
     "description": "0.0.4",
     "dotenv": "^8.2.0",
