@@ -12,7 +12,7 @@ function hydrateViewModel (blogPost) {
 }
 
 module.exports = async (req, res) => {
-  const blogPosts = await BlogPost.getAll()
+  const blogPosts = await BlogPost.getAll(req.language)
   const posts = await Promise.all(blogPosts.map(hydrateViewModel))
   const postsInOrder = posts.sort((a, b) => b.date.localeCompare(a.date))
   Object.assign(req.context, { posts: postsInOrder })
