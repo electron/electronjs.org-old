@@ -4,7 +4,6 @@ const argv = require('minimist')(process.argv.slice(2))
 const path = require('path')
 const i18n = require('./lib/i18n')
 const express = require('express')
-const lobars = require('lobars')
 
 // Middleware
 const hbs = require('express-hbs')
@@ -18,7 +17,7 @@ const sass = require('./middleware/sass')
 const helmet = require('helmet')
 const langResolver = require('./middleware/lang-resolver')
 const contextBuilder = require('./middleware/context-builder')
-const getOcticons = require('./middleware/register-octicons')
+const { registerHandlebarsTemplates } = require('./middleware/hbs-helpers')
 
 const port = Number(process.env.PORT) || argv.p || argv.port || 5000
 const app = express()
@@ -26,29 +25,8 @@ const appImgDir = path.resolve(require.resolve('electron-apps'), '..', 'apps')
 process.env.HOST = process.env.HOST || `http://localhost:${port}`
 
 // Handlebars Templates
-hbs.registerHelper(lobars)
+registerHandlebarsTemplates()
 
-/**
- * Handlebars helper that accepts options from the `{{octicon}}` tag,
- * parses with `getOcticons()` function and returns this to user.
- *
- * @param {string[]} data The data of hbs helper.
- * @param {void} cb Async callback.
- */
-hbs.registerAsyncHelper('octicon', async (data, cb) => {
-  const { name, className, ariaLabel, width, height } = data.hash
-
-  if (data.hash.class) {
-    return console.error(`ERROR(Octicons Helper): Use 'className' instead of 'class'.`)
-  }
-
-  if (name === undefined) {
-    return console.error('ERROR(Octicons Helper): Name is required field in octicon helper.')
-  }
-
-  const htmlSVG = await getOcticons(name, className, width, height, ariaLabel)
-  return cb(new hbs.SafeString(htmlSVG))
-})
 app.engine('html', hbs.express4({
   defaultLayout: path.join(__dirname, '/views/layouts/main.html'),
   extname: '.html',
