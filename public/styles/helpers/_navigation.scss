@@ -5,7 +5,7 @@
     padding-right: 5px;
   }
 
-  @media (min-width: 700px) {
+  @include breakpoint(lg) {
     float: left;
   }
 
@@ -40,44 +40,13 @@
   box-shadow: 0 1px 1px rgba(0,0,0,0.1);
 }
 
-.menu-item {
-  position: relative;
-  display: block;
-  padding: 12px 15px;
-  border-bottom: 1px solid $border-color !important;
-
-  &:first-child {
-    border-top: 0;
-    border-top-right-radius: $border-radius;
-    border-top-left-radius: $border-radius;
-  }
-
-  &:last-child {
-    border-bottom: 0;
-    border-bottom-right-radius:  $border-radius;
-    border-bottom-left-radius:  $border-radius;
-  }
-
-  &:hover {
-    text-decoration: none;
-    background-color: $gray-0 !important;
-  }
-
-  &.selected {
-    font-weight: bold;
-    color: $gray-7 !important;
-    cursor: default;
-    background-color: $white !important;
-  }
-}
-
 // Site Header
 
 .site-header {
-  color: $jumbo-color !important;
-  background-color: lighten($jumbo-bg-color, 2%) !important;
+  color: $jumbo-color;
+  background-color: lighten($jumbo-bg-color, 2%);
   border-bottom: 1px solid $gray-1;
-  border-bottom-color: darken($jumbo-bg-color, 8%) !important;
+  border-bottom-color: darken($jumbo-bg-color, 8%);
   -webkit-font-smoothing: antialiased;
   padding-top: 25px;
   padding-bottom: 25px;
@@ -85,42 +54,27 @@
   padding-right: $spacer3;
   text-align: center;
 
-  @media (min-width: 700px) {
-    text-align: left;
-  }
-
-  @include breakpoint(lg) {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-.site-header a {
-  color: inherit !important;
-  transition: all 0.3s;
-
-  &.active,
-  &:hover {
-    color: $jumbo-color-strong !important;
-  }
-  &:active {
-    color: $jumbo-color-subtle !important;
+  a {
+    color: inherit;
+    transition: all 0.3s;
+  
+    &.active,
+    &:hover {
+      color: $jumbo-color-strong;
+    }
+    &:active {
+      color: $jumbo-color-subtle;
+    }
   }
 }
 
 .site-header-nav {
-  margin-top: 0;
   margin-top: 20px;
-  min-height: 30px;
-  line-height: 30px;
+  line-height: 2;
 
-  @media (min-width: 700px) {
+  @include breakpoint(lg) {
     float: right;
-    margin-top: 7px;
-  }
-
-  @media (max-width: 699px) {
-    line-height: 2.3;
+    margin-top: 0;
   }
 
   .mega-octicon {
@@ -138,21 +92,21 @@
   }
 
   &.active, &:active, &:hover {
-    border-bottom-color: $jumbo-color-strong !important;
+    border-bottom-color: $jumbo-color-strong;
     text-decoration: none;
   }
 
+  &.octicon {
+    border: none;
+  }
+
   &.bordered {
-    border: 1px solid $jumbo-color-strong !important;
+    border: 1px solid $jumbo-color-strong;
     border-radius: 3px;
     padding: 0 7px;
     opacity: 0.7;
     font-size: 12px;
     line-height: 2;
-  }
-
-  &.octicon {
-    border: none !important;
   }
 }
 
@@ -161,22 +115,27 @@
   width: 38px;
   height: 38px;
   vertical-align: middle;
-  margin-top: -4px; // visually align
-  margin-right: 0.4em;
+
+  @include breakpoint(lg) {
+    margin-top: -4px; // visually align
+    margin-right: 0.4em;
+  }
 
   .svg-fill {
-    fill: currentColor !important;
+    fill: currentColor;
   }
   .svg-stroke {
-    stroke: currentColor !important;
+    stroke: currentColor;
     stroke-width: 1.2;
     stroke-linecap: round;
   }
 }
 
 // keep it centered a bit longer
-@media (min-width: 700px) {
-  .site-header { text-align: center; }
+@include breakpoint(md) {
+  .site-header {
+    text-align: center;
+  }
   .site-header-logo,
   .site-header-nav {
     float: none;
@@ -189,12 +148,11 @@
 html[dir="rtl"] {
   .site-header-logo { @include breakpoint(lg) { float: right; } }
   .site-header-nav  { @include breakpoint(lg) { float: left; } }
-}
 
-// RTL Code
-html[dir="rtl"] .site-header-nav-item {
-  + .site-header-nav-item {
-    margin-left: 0;
-    margin-right: 20px;
+  .site-header-nav-item {
+    + .site-header-nav-item {
+      margin-left: 0;
+      margin-right: 20px;
+    }
   }
 }
