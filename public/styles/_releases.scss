@@ -32,6 +32,35 @@
     // Remove border radius for active element.
     border-radius: 0;
 
+    position: relative;
+    display: block;
+    padding: 12px 15px;
+    border-bottom: 1px solid $border-color;
+  
+    &:first-child {
+      border-top: 0;
+      border-top-right-radius: $border-radius;
+      border-top-left-radius: $border-radius;
+    }
+  
+    &:last-child {
+      border-bottom: 0;
+      border-bottom-right-radius:  $border-radius;
+      border-bottom-left-radius:  $border-radius;
+    }
+  
+    &:hover {
+      text-decoration: none;
+      background-color: $gray-0;
+    }
+  
+    &.selected {
+      font-weight: bold;
+      color: $gray-7;
+      cursor: default;
+      background-color: $white;
+    }
+
     .octicon {
       font-size: 20px;
       padding-right: 8px;
