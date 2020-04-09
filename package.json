@@ -48,7 +48,7 @@
     "electron-apps": "^1.7976.0",
     "electron-i18n": "^1.2112.0",
     "electron-markdown": "^0.6.0",
-    "electron-releases": "^3.388.0",
+    "electron-releases": "^3.389.0",
     "electron-userland-reports": "1.6.0",
     "express": "^4.17.1",
     "express-hbs": "^2.3.3",
