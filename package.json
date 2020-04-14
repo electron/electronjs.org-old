@@ -100,7 +100,7 @@
     "nock": "^12.0.3",
     "nodemon": "^2.0.3",
     "node-sass": "^4.13.1",
-    "simplecrawler": "^1.1.8",
+    "simplecrawler": "^1.1.9",
     "standard": "^12.0.1",
     "supertest": "^4.0.2",
     "supertest-session": "^4.0.0",
