@@ -121,7 +121,7 @@ app.get('/contact', (req, res) => res.redirect(301, '/community'))
 app.get('/devtron', routes.devtron)
 app.get('/docs', routes.docs.index)
 app.get('/docs/versions', (req, res) => res.redirect(301, '/releases/stable'))
-app.get('/docs/:category', routes.docs.category)
+app.get('/docs/:category/:versionedCategory?', routes.docs.category)
 app.get('/docs/api/breaking-changes', (req, res) =>
   res.redirect(301, '/docs/breaking-changes')
 )

@@ -1,4 +1,4 @@
-const i18n = require('lib/i18n')
+const i18n = require('../lib/i18n')
 const electronReleases = require('electron-releases')
 const { deps } = electronReleases.find(
   (release) => release.version === i18n.electronLatestStableVersion
@@ -43,6 +43,7 @@ module.exports = function contextBuilder(req, res, next) {
   req.context = {
     electronLatestStableVersion: i18n.electronLatestStableVersion,
     electronLatestStableTag: i18n.electronLatestStableTag,
+    electronSupportedVersions: i18n.electronSupportedVersions,
     electronMasterBranchCommit: i18n.electronMasterBranchCommit,
     electronMasterBranchCommitShort: i18n.electronMasterBranchCommit.slice(
       0,

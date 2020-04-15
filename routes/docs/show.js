@@ -2,10 +2,21 @@ const i18n = require('../../lib/i18n')
 const editorCodes = require('crowdin-editor-language-codes')
 
 module.exports = (req, res, next) => {
-  const doc = i18n.docs[req.language][req.path]
-  const docEn = req.context.currentLocale.startsWith('en')
-    ? null
-    : i18n.docs['en-US'][req.path]
+  let doc, docEn, version
+
+  if (i18n.electronSupportedVersions.includes(req.params.category)) {
+    version = req.params.category
+
+    doc = i18n.versionedDocs[version][req.language][req.path]
+    docEn = req.context.currentLocale.startsWith('en')
+      ? null
+      : i18n.versionedDocs[version]['en-US'][req.path]
+  } else {
+    doc = i18n.docs[req.language][req.path]
+    docEn = req.context.currentLocale.startsWith('en')
+      ? null
+      : i18n.docs['en-US'][req.path]
+  }
   if (!doc) return next()
 
   // Crowdin's undocumented mystery locale URL format. See https://git.io/vADu0
@@ -20,6 +31,7 @@ module.exports = (req, res, next) => {
   const context = Object.assign(req.context, {
     doc: doc,
     docEn: docEn,
+    version: version ? version : null,
     page: {
       title: `${doc.title} | Electron`,
       description: doc.description,

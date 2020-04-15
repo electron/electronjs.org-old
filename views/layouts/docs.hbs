@@ -27,9 +27,17 @@
           <a href="{{doc.href}}/history">
             <span class="docs-version">
               {{#if doc.isApiDoc}}
-                {{electronLatestStableTag}}
+                {{#if version}}
+                  {{version}}
+                {{else}}
+                  {{electronLatestStableTag}}
+                {{/if}}
               {{else}}
-                <span>electron@master ({{electronMasterBranchCommitShort}})</span>
+                {{#if version}}
+                  <span>{{version}}</span>
+                {{else}}
+                  <span>electron@master ({{electronMasterBranchCommitShort}})</span>
+                {{/if}}
               {{/if}}
             </span>
           </a>

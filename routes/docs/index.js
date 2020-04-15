@@ -1,7 +1,10 @@
 const i18n = require('../../lib/i18n')
 
 module.exports = (req, res) => {
-  const docsReadme = i18n.docs[req.language]['/docs/README']
+  const version = req.params.category
+  const docsReadme = version
+    ? i18n.versionedDocs[version][req.language][`/docs/${version}/README`]
+    : i18n.docs[req.language]['/docs/README']
 
   const [
     ,
@@ -32,6 +35,7 @@ module.exports = (req, res) => {
     mainProcModules,
     rendererProcModules,
     bothProcModules,
+    version,
   })
 
   // Taken from https://github.com/electron/electron/tree/master/docs
