@@ -1,6 +1,6 @@
 # CI Status across Website Infrastructure
 
-That document contains the badges of CI statuses, you can see the checks for default CI builds and builds what is run by scheduled.
+This document contains status badges for all CI tasks related to [electronjs.org](https://electronjs.org). See status checks for default CI builds as well as scheduled cron jobs.
 
 ## Builds
 
