@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 994 994"
+	 style="enable-background:new 0 0 994 994;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:url(#Bubble_Solid_1_);}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+</style>
+<metadata>
+	<sfw  xmlns="&ns_sfw;">
+		<slices></slices>
+		<sliceSourceBounds  bottomLeftOrigin="true" height="994" width="994" x="15" y="18.5"></sliceSourceBounds>
+	</sfw>
+</metadata>
+<g id="Messenger_4_">
+	
+		<linearGradient id="Bubble_Solid_1_" gradientUnits="userSpaceOnUse" x1="497" y1="1003" x2="497" y2="9.0126" gradientTransform="matrix(1 0 0 -1 0 1003)">
+		<stop  offset="0" style="stop-color:#00B2FF"/>
+		<stop  offset="1" style="stop-color:#006AFF"/>
+	</linearGradient>
+	<path id="Bubble_Solid_3_" class="st0" d="M497,0C217,0,0,205.1,0,482.1C0,627,59.4,752.2,156.1,838.7c8.1,7.3,13,17.4,13.4,28.3
+		l2.7,88.4c0.9,28.2,30,46.5,55.8,35.2l98.6-43.5c8.4-3.7,17.7-4.4,26.5-2c45.3,12.5,93.6,19.1,143.9,19.1
+		c280,0,497-205.1,497-482.1S777,0,497,0z"/>
+	<path id="Bolt_4_" class="st1" d="M198.6,623.1l146-231.6c23.2-36.8,73-46,107.8-19.9l116.1,87.1c10.7,8,25.3,7.9,35.9-0.1
+		l156.8-119c20.9-15.9,48.3,9.2,34.2,31.4L649.5,602.5c-23.2,36.8-73,46-107.8,19.9l-116.1-87.1c-10.7-8-25.3-7.9-35.9,0.1
+		L232.8,654.5C211.9,670.4,184.5,645.3,198.6,623.1z"/>
+</g>
+</svg>
