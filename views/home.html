@@ -46,22 +46,23 @@
 <hr class="pt-8">
 
 <div class="py-6 py-md-7 py-lg-8">
-  <h1 class="f0-light text-center-sm">{{{localized.electron_is_good.title}}}</h1>
-  <div class="featured-apps my-2 my-md-3">
-    {{#each apps}}
-      <a class="featured-app-list-item" href="{{ this.url }}" target="_blank" rel="noopener">
-        <img data-src="{{ site.baseurl }}/images/featured_apps/{{ screenshot }}" alt="{{ this.name }}">
-        <picture>
-          <source srcset="{{ site.baseurl }}/images/featured_apps/{{ screenshot }}.webp" type="image/webp">
-          <source srcset="{{ site.baseurl }}/images/featured_apps/{{ screenshot }}.png" type="image/png">
-          <img src="{{ site.baseurl }}/images/featured_apps/{{ screenshot }}.png">
-        </picture>
-        <img class="icon" data-src="{{ site.baseurl }}/images/featured_apps/{{ icon }}" alt="{{ this.name }} icon">
-        <h4>{{this.name}}</h4>
-      </a>
-    {{/each}}
+  <div class="container-lg p-responsive">
+    <h1 class="f0-light text-center-sm">{{{localized.electron_is_good.title}}}</h1>
+    <div class="featured-apps my-2 my-md-3">
+      {{#each apps}}
+        <a class="featured-app-list-item" href="{{ this.url }}" target="_blank" rel="noopener">
+          <picture>
+            <source srcset="{{ site.baseurl }}/images/featured_apps/{{ screenshot }}.webp" type="image/webp">
+            <source srcset="{{ site.baseurl }}/images/featured_apps/{{ screenshot }}.png" type="image/png">
+            <img alt="{{ name }} screenshot" src="{{ site.baseurl }}/images/featured_apps/{{ screenshot }}.png">
+          </picture>
+          <img class="icon" data-src="{{ site.baseurl }}/images/featured_apps/{{ icon }}" alt="{{ this.name }} icon">
+          <h4>{{this.name}}</h4>
+        </a>
+      {{/each}}
+    </div>
+    <p class="lead text-center-sm">{{{localized.electron_is_good.description}}}</p>
   </div>
-  <p class="lead text-center-sm">{{{localized.electron_is_good.description}}}</p>
 </div>
 
 <hr class="pt-8">

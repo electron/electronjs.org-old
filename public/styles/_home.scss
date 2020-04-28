@@ -53,14 +53,16 @@ a.featured-app-list-item {
 
   h4 {
     margin-top: 10px;
+    max-width: 65%;
   }
 
   .icon {
     position: absolute;
-    height: 35%;
     right: 10px;
     float: left;
     bottom: 35px;
+    max-width: 35%;
+    max-height: 35%;
   }
 }
 
@@ -71,6 +73,37 @@ a.featured-app-list-item {
 
   a.featured-app-list-item {
     max-width: 200px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  a.featured-app-list-item {
+    width: 100px;
+    min-width: unset;
+    padding: 15px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    picture {
+      display: none;
+    }
+
+    h4 {
+      max-width: 100%;
+      justify-self: flex-end;
+      /* Turn it into a h5 */
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .icon {
+      max-width: 70px;
+      position: unset;
+      float: unset;
+      max-height: unset;
+    }
   }
 }
 
