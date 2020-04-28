@@ -42,6 +42,9 @@ a.featured-app-list-item {
   transition: background-color 200ms ease-in-out;
   position: relative;
   min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   &:hover {
     background-color: #f3f3f3;
@@ -82,9 +85,6 @@ a.featured-app-list-item {
     min-width: unset;
     padding: 15px;
     margin: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 
     picture {
       display: none;
