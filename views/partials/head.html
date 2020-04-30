@@ -52,5 +52,15 @@
     ga('create', 'UA-160365006-1', 'auto');
     ga('send', 'pageview');
   </script>
-  <script async src="https://w.appzi.io/bootstrap/bundle.js?token=JW19E"></script>
+  <script>
+    const html = document.getElementsByTagName('html')[0];
+    const head = document.getElementsByTagName('head')[0];
+    const appzi = document.createElement("script");
+    appzi.type = 'text/javascript';
+
+    if (html.lang.startsWith('en')) {
+      appzi.src = 'https://w.appzi.io/bootstrap/bundle.js?token=JW19E';
+      head.appendChild(appzi);
+    }
+  </script>
 </head>
