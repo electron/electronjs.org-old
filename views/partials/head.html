@@ -7,27 +7,27 @@
   <meta property="og:type" content="website" />
 
   {{#if page.title}}
-    <title>{{page.title}}</title>
-    <meta property="og:title" content="{{page.title}}" />
-    <meta name="twitter:title" value="{{page.title}}" />
+  <title>{{page.title}}</title>
+  <meta property="og:title" content="{{page.title}}" />
+  <meta name="twitter:title" value="{{page.title}}" />
   {{/if}}
 
   {{#if page.url}}
-    <meta property="og:url" content="{{page.url}}" />
-    <meta name="twitter:url" value="{{page.url}}" />
+  <meta property="og:url" content="{{page.url}}" />
+  <meta name="twitter:url" value="{{page.url}}" />
   {{/if}}
 
   {{#if page.description}}
-    <meta property="og:description" content="{{page.description}}" />
-    <meta name="twitter:description" value="{{page.description}}" />
+  <meta property="og:description" content="{{page.description}}" />
+  <meta name="twitter:description" value="{{page.description}}" />
   {{/if}}
 
   {{#if page.image}}
-    <meta property="og:image" content="{{page.image}}" />
-    <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:image" content="{{page.image}}" />
+  <meta property="og:image" content="{{page.image}}" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:image" content="{{page.image}}" />
   {{else}}
-    <meta name="twitter:card" content="summary">
+  <meta name="twitter:card" content="summary">
   {{/if}}
 
   <!-- consumed by scripts/get-localized-strings -->
@@ -35,7 +35,8 @@
   <meta name="localized.clipboard.copy_to_clipboard" content="{{localized.clipboard.copy_to_clipboard}}" />
   <meta name="localized.clipboard.copied" content="{{localized.clipboard.copied}}" />
   <meta name="localized.fiddle_launch_button.launch" content="{{localized.fiddle_launch_button.launch}}" />
-  <meta name="localized.fiddle_launch_button.launch_in_fiddle" content="{{localized.fiddle_launch_button.launch_in_fiddle}}" />
+  <meta name="localized.fiddle_launch_button.launch_in_fiddle"
+    content="{{localized.fiddle_launch_button.launch_in_fiddle}}" />
 
   <meta name="twitter:site" content="@ElectronJS" />
   <link rel='shortcut icon' href='/images/favicon.ico'/>
@@ -52,5 +53,15 @@
     ga('create', 'UA-160365006-1', 'auto');
     ga('send', 'pageview');
   </script>
-  <script async src="https://w.appzi.io/bootstrap/bundle.js?token=JW19E"></script>
+  <script>
+    const html = document.getElementsByTagName('html')[0];
+    const head = document.getElementsByTagName('head')[0];
+    const appzi = document.createElement("script");
+    appzi.type = 'text/javascript';
+
+    if (html.lang.startsWith('en')) {
+      appzi.src = 'https://w.appzi.io/bootstrap/bundle.js?token=JW19E';
+      head.appendChild(appzi);
+    }
+  </script>
 </head>
