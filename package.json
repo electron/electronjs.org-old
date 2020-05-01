@@ -109,7 +109,7 @@
     "walk-sync": "^2.1.0"
   },
   "engines": {
-    "node": ">= 12"
+    "node": ">=12 <14"
   },
   "standard": {
     "ignore": [
