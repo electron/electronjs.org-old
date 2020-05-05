@@ -13,7 +13,7 @@ module.exports = (req, res) => {
 
   const context = Object.assign(req.context, {
     companies: featuredCompanies,
-    apps
+    apps,
   })
 
   // Reset to 'home' to restore homepage

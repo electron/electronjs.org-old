@@ -1,6 +1,6 @@
 const { getPlatformFromUserAgent, getPlatformLabel } = require('platform-utils')
 
-module.exports = function updateDemoAppDownloadLink () {
+module.exports = function updateDemoAppDownloadLink() {
   if (!document.querySelector('#download-latest-release')) return
   const platform = getPlatformFromUserAgent()
 
@@ -13,12 +13,13 @@ module.exports = function updateDemoAppDownloadLink () {
   if (platform === 'win32') assetName = 'ElectronAPIDemosSetup.exe'
   if (platform === 'linux') assetName = 'electron-api-demos-linux.zip'
 
-  document.querySelector('#download-latest-release')
+  document
+    .querySelector('#download-latest-release')
     .setAttribute('href', releaseServer + assetName)
 
-  document.querySelector('#download-latest-release .label')
-    .textContent = 'Download for ' + getPlatformLabel(platform)
+  document.querySelector('#download-latest-release .label').textContent =
+    'Download for ' + getPlatformLabel(platform)
 
-  document.querySelector('#download-alternatives')
-    .style.display = 'inline-block'
+  document.querySelector('#download-alternatives').style.display =
+    'inline-block'
 }

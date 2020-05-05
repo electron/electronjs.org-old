@@ -8,7 +8,7 @@ module.exports = function () {
     return
   }
 
-  function chooseThumb (thumbImg) {
+  function chooseThumb(thumbImg) {
     return function () {
       activeScreenshot.src = thumbImg.src
       activeScreenshot.alt = thumbImg.alt

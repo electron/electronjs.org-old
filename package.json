@@ -18,7 +18,7 @@
     "precompile-assets": "cross-env NODE_ENV=production node script/precompile-assets.js",
     "linkschecker": "NODE_PATH=. NODE_ENV=test node scripts/links-checker.js",
     "cypress": "cypress run",
-    "lint": "standard --fix",
+    "lint": "eslint --ext .js .",
     "heroku-postbuild": "npm run precompile-assets"
   },
   "husky": {
@@ -99,7 +99,10 @@
     "nodemon": "^2.0.4",
     "node-sass": "^4.14.1",
     "simplecrawler": "^1.1.9",
-    "standard": "^12.0.1",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.3",
+    "prettier": "^2.0.5",
     "supertest": "^4.0.2",
     "supertest-session": "^4.0.0",
     "uglify-js": "^3.8.1",
@@ -108,14 +111,5 @@
   },
   "engines": {
     "node": ">=12 <14"
-  },
-  "standard": {
-    "ignore": [
-      "/js/vendor",
-      "/cypress/integration"
-    ],
-    "env": {
-      "browser": true
-    }
   }
 }
