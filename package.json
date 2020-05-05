@@ -10,7 +10,7 @@
   "scripts": {
     "start": "cross-env NODE_OPTIONS='--max_old_space_size=4096' NODE_PATH=. NODE_ENV=production node server.js",
     "bootstrap": "node script/bootstrap",
-    "test": "cross-env NODE_PATH=. NODE_ENV=test mocha --timeout 5000 && standard --fix",
+    "test": "cross-env NODE_PATH=. NODE_ENV=test mocha --timeout 5000 && eslint --ext .js --fix",
     "integration": "script/integration.sh",
     "release": "node script/release",
     "dev": "cross-env NODE_PATH=. NODE_ENV=development nodemon server.js",
@@ -18,7 +18,7 @@
     "precompile-assets": "cross-env NODE_ENV=production node script/precompile-assets.js",
     "linkschecker": "NODE_PATH=. NODE_ENV=test node scripts/links-checker.js",
     "cypress": "cypress run",
-    "lint": "eslint --ext .js .",
+    "lint": "eslint --ext .js . --fix",
     "heroku-postbuild": "npm run precompile-assets"
   },
   "husky": {
