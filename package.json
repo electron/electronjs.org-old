@@ -18,7 +18,7 @@
     "precompile-assets": "cross-env NODE_ENV=production node script/precompile-assets.js",
     "linkschecker": "NODE_PATH=. NODE_ENV=test node scripts/links-checker.js",
     "cypress": "cypress run",
-    "lint": "eslint --ext .js . --fix",
+    "lint": "eslint . --fix",
     "heroku-postbuild": "npm run precompile-assets"
   },
   "husky": {
