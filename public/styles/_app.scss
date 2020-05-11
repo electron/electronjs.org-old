@@ -327,3 +327,95 @@
   background: #fff;
   box-shadow: inset 0 0 0 1px #c8e1ff;
 }
+
+/* Listed Apps with Icons */
+
+$app-list-icon-size: 48px;
+
+.app-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.listed-app {
+  text-align: left;
+}
+
+// Override .filterable-list
+.listed-app.listed-app {
+  padding: 0;
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.listed-app > a {
+  display: flex;
+  padding: 10px;
+  border: 1px solid transparent;
+}
+
+.listed-app > a:hover,
+.listed-app > a:focus {
+  text-decoration: none;
+  text-decoration: none;
+  border-color: $main-border-color;
+  background-color: $main-bg-color-shade;
+  outline: none;
+}
+
+.listed-app-logo-wrapper {
+  display: inline-block;
+  width: $app-list-icon-size;
+  height: $app-list-icon-size;
+  position: relative;
+}
+
+// TODO(HashimotoYT): RFC: Design review.
+.listed-app-logo-placeholder {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  border-radius: 50%;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+.listed-app-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 48px;
+    height: 48px;
+    z-index: 2;
+}
+
+.listed-app-name {
+  padding: 0 10px;
+  font-weight: 500;
+}
+
+.listed-app-description {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.listed-app-date {
+  font-size: 12px;
+  padding-left: 15px;
+  display: none;
+}
+
+.listed-app:hover .listed-app-date {
+  display: inherit;
+}
+
+.listed-app span {
+  line-height: $app-list-icon-size;
+  vertical-align: bottom;
+}
