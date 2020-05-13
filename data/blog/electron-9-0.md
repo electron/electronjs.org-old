@@ -65,7 +65,6 @@ The following APIs are now deprecated or removed:
 * `<webview>.getWebContents`, which was deprecated in Electron 8.0, is now removed.
 * `webFrame.setLayoutZoomLevelLimits`, which was deprecated in Electron 8.0, is now removed.
 
-
 ## End of Support for 6.x.y
 
 Electron 6.x.y has reached end-of-support as per the project's
@@ -77,7 +76,6 @@ Developers and applications are encouraged to upgrade to a newer version of Elec
 In the short term, you can expect the team to continue to focus on keeping up with the development of the major components that make up Electron, including Chromium, Node, and V8. Although we are careful not to make promises about release dates, our plan is release new major versions of Electron with new versions of those components approximately quarterly. The [tentative 10.0.0 schedule](https://electronjs.org/docs/tutorial/electron-timelines) maps out key dates in the Electron 10.0 development life cycle. Also, [see our versioning document](https://electronjs.org/docs/tutorial/electron-versioning) for more detailed information about versioning in Electron.
 
 For information on planned breaking changes in upcoming versions of Electron, [see our Planned Breaking Changes doc](https://github.com/electron/electron/blob/master/docs/breaking-changes.md).
-
 
 ### Change the default of `contextIsolation` from `false` to `true` (Starting in Electron 10)
 
