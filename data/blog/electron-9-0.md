@@ -81,7 +81,7 @@ For information on planned breaking changes in upcoming versions of Electron, [s
 
 ### Change the default of `contextIsolation` from `false` to `true` (Starting in Electron 10)
 
-Without contextIsolation, any code running in a renderer process can quite easily reach into Electron internals or your preload script, and perform privileged actions that you don't want arbitrary websites to be doing.
+Without contextIsolation, any code running in a renderer process can quite easily reach into Electron internals or an app's preload script. That code can then perform privileged actions that Electron wants to keep restricted.
 
 Changing this default improves the default security of Electron apps, so that apps will need to deliberately opt in to the insecure behaviour. Electron will depreciate the current default of `contextIsolation` in Electron 10.0, and change to the new default (`true`) in Electron 12.0.
 
