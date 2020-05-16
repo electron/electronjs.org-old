@@ -78,6 +78,15 @@ npm run dev
 You should now have an Express server running at
 [localhost:5000](http://localhost:5000) :tada:
 
+NOTE: Make sure you have all dependencies/packages updated. Try installing all dependencies before you run `npm run dev` . 
+
+Use `npm update` to update all dependencies before running run `npm install`.
+
+Try to rebuild the file/directory shown in the error `npm rebuild node-sass` if error was something like this 
+`Error: ENOENT: no such file or directory, scandir 'C:\Users\home\electronjs.org\node_modules\node-sass\vendor'`
+
+NOTE: If some error is still shown after you have installed all the dependencies, delete the node modules directory in your project and run `npm install` . Feel free to ask for help .
+
 Read on for more info about the structure of the site.
 
 ## Editing Content
@@ -265,7 +274,7 @@ like nested layouts and partials.
 
 - Views live in `/views`
 - Layouts wrap views, and can be nested. They live in `/views/layouts`
-- Partials are reusable templates. They live in /views/partials`
+- Partials are reusable templates. They live in `/views/partials`
 
 ## Context
 
