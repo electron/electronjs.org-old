@@ -16,7 +16,7 @@ The Electron team is excited to announce the release of Electron 9.0.0! You can 
 
 ### Stack Changes
 
-* Chromium `80.0.3987.86`
+* Chromium `83.0.4103.64`
     * [New in Chrome 81](https://developers.google.com/web/updates/2020/04/nic81)
     * [Chrome 82 was skipped](https://chromereleases.googleblog.com/2020/03/chrome-and-chrome-os-release-updates.html)
     * [New in Chrome 83]() TODO
