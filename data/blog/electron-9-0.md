@@ -6,7 +6,7 @@ author:
 date: '2020-05-19'
 ---
 
-Electron 9.0.0 has been released! It includes upgrades to Chromium `83`, V8 `8.3`, and Node.js `12.14`. We've added several new API integrations for our spellchecker feature, and much more!
+Electron 9.0.0 has been released! It includes upgrades to Chromium `83`, V8 `8.3`, and Node.js `12.14`. We've added several new API integrations for our spellchecker feature, enabled PDF viewer, and much more!
 
 ---
 
@@ -29,7 +29,8 @@ The Electron team is excited to announce the release of Electron 9.0.0! You can 
 ### Highlight Features
 
 * Multiple improvements to the spellchecker feature. See more details in [#22128](https://github.com/electron/electron/pull/22128) and [#22368](https://github.com/electron/electron/pull/22368).
-* Improved window events handler efficiency on Linux.
+* Improved window events handler efficiency on Linux. [#23260](https://github.com/electron/electron/pull/23260).
+* Enable PDF viewer. [#22131](https://github.com/electron/electron/pull/22131).
 
 See the [9.0.0 release notes](https://github.com/electron/electron/releases/tag/v9.0.0) for a full list of new features and changes.
 
@@ -84,9 +85,3 @@ Without contextIsolation, any code running in a renderer process can quite easil
 Changing this default improves the default security of Electron apps, so that apps will need to deliberately opt in to the insecure behaviour. Electron will depreciate the current default of `contextIsolation` in Electron 10.0, and change to the new default (`true`) in Electron 12.0.
 
 For more information on `contextIsolation`, how to enable it easily and it's security benefits please see our dedicated [Context Isolation Document](https://github.com/electron/electron/blob/master/docs/tutorial/context-isolation.md).
-
-### Remove the `nodeIntegration` flag (Starting in Electron 10)
-
-Historically, Electron has recommended that apps use `nodeIntegration: false` to prevent renderers from having access to Electron internals. Over time, it has become clear that this flag actually has negligible security impact and can easily be bypassed. This was the original motivation for adding the contextIsolation flag.
-
-We are now confident enough in the `contextIsolation` feature that we intend to remove the `nodeIntegration` flag and strongly recommend usage of `contextIsolation`. This flag will be deprecated the flag in Electron 10.0, and removed entirely in Electron 12.0.
