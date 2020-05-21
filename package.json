@@ -59,7 +59,7 @@
     "fs-extra": "^9.0.0",
     "gray-matter": "^4.0.2",
     "helmet": "^3.22.0",
-    "http-proxy-middleware": "^1.0.3",
+    "http-proxy-middleware": "^1.0.4",
     "instantsearch.js": "^2.10.4",
     "lil-env-thing": "^1.0.0",
     "lobars": "^1.2.0",
