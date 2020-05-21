@@ -5,7 +5,7 @@ author:
 date: '2020-05-21'
 ---
 
-Electron is proud to be participating in the second edition Google Season of Docs initiative, which pairs mentors from open source organizations with technical writers to improve project documentation.
+Electron is proud to be participating in the second edition of Google's Season of Docs initiative, which pairs mentors from open source organizations with technical writers to improve project documentation.
 
 ---
 
@@ -34,4 +34,3 @@ If you want to discuss project proposals, shoot us an email at [season-of-docs@e
 * [Electron documentation](electronjs.org/docs)
 * [Project ideas document](https://github.com/electron/season-of-docs-2020/blob/master/project-ideas.md)
 * [Season of Docs tech writer guide](https://developers.google.com/season-of-docs/docs/tech-writer-guide)
-
