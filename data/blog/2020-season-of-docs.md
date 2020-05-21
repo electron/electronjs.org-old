@@ -11,7 +11,7 @@ Electron is proud to be participating in the second edition of Google's Season o
 
 # What is Season of Docs?
 
-![Season of Docs logo](https://developers.google.com/season-of-docs/images/logo/SeasonofDocs_Logo_SecondaryGrey_300ppi.png)
+![Season of Docs logo](https://user-images.githubusercontent.com/16010076/82606204-8c8bce80-9b6b-11ea-9847-6a4b28a0761d.png)
 
 Season of Docs is a program that fosters collaboration between technical writers and open source communities to the benefit of both parties. Open source maintainers utilize the writer's technical writing expertise to improve the structure and content of their documentation, while the technical writer is introduced to an open-source community under the guidance of its mentors. Learn more about it on the Google's [Season of Docs website](https://developers.google.com/season-of-docs).
 
