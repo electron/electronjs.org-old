@@ -92,7 +92,7 @@
     "chai-cheerio": "^1.0.0",
     "check-for-leaks": "^1.2.1",
     "cheerio": "^1.0.0-rc.3",
-    "cypress": "^4.5.0",
+    "cypress": "^4.6.0",
     "husky": "^4.2.5",
     "mocha": "^7.1.2",
     "nock": "^12.0.3",
