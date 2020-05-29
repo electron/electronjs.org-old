@@ -36,7 +36,7 @@ See the [9.0.0 release notes](https://github.com/electron/electron/releases/tag/
 
 ## Breaking Changes
 
-* Deprecation warning when using `remote` without `enableRemoteModle: true`. [#21546](https://github.com/electron/electron/pull/21546)
+* Deprecation warning when using `remote` without `enableRemoteModule: true`. [#21546](https://github.com/electron/electron/pull/21546)
     * This is the first step in our plans for deprecating the `remote` module and moving it to userland. You can read and follow [this issue](https://github.com/electron/electron/issues/21408) that details our reasons for this and includes a proposed timeline for deprecation.
 * Set `app.enableRendererProcessReuse` to true by default. [#22336](https://github.com/electron/electron/pull/22336) 
     * This is continued work for a future requirement that native Node modules loaded in the renderer process be either [N-API](https://nodejs.org/api/n-api.html) or [Context Aware](https://nodejs.org/api/addons.html#addons_context_aware_addons). Full info and proposed timeline is detailed in [this issue](https://github.com/electron/electron/issues/18397).
