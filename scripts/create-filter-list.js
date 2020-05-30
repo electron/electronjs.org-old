@@ -94,7 +94,7 @@ class FilterList {
   docForEntry (id, entry) {
     const name = entry.querySelector('.listed-app-name').textContent
     const description = entry.querySelector('.listed-app-description').textContent
-    const date = entry.querySelector('.listed-app-date [data-date]').getAttribute('data-date')
+    const date = entry.querySelector('.listed-app-add-date [data-date]').getAttribute('data-date')
     const keywords = entry.querySelector('.listed-app-keywords').textContent.split(',')
 
     return { id, name, description, date, keywords }
