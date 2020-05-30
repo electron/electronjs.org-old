@@ -45,6 +45,9 @@
                   <span class='listed-app-name text-gray-dark'>{{this.name}}</span>
                   <span class='listed-app-description text-gray-light'>{{this.description}}</span>
                   <span class='listed-app-date text-gray-light'>Added&nbsp;<span data-date='{{this.date}}'>{{this.date}}</span></span>
+                  {{#if this.latestRelease}}
+                  <span class='listed-app-date text-gray-light'>Latest Release&nbsp;<span data-date='{{this.latestRelease.published_at}}'>{{this.latestRelease.published_at}}</span></span>
+                  {{/if}}
                   <span class='listed-app-keywords' style='display:none;'>
                     {{this.keywords}}
 
