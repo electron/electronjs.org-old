@@ -6,7 +6,6 @@
   padding: $spacer2 $spacer3 $spacer6 $spacer3;
   @include breakpoint(md) { padding: $spacer4 $spacer3 $spacer8 $spacer3; }
   @include breakpoint(xl) { padding: $spacer6 0 $spacer6 * 2 0; }
-  filter: grayscale(100%);
 }
 
 // Headers ------------------------------
@@ -146,7 +145,6 @@ a.featured-app-list-item {
   padding-bottom: 20px;
   color: $jumbo-color-strong;
   text-align: center;
-  filter: grayscale(100%);
 
   a {
     color: $jumbo-color;
