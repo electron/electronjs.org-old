@@ -1,12 +1,10 @@
 const apps = require('../../lib/apps')
 const categories = require('electron-apps/categories')
-const showAnnouncementBanner = require('../../lib/showAnnouncementBanner')
 
 module.exports = (req, res, next) => {
   const context = Object.assign(req.context, {
     apps: apps,
-    categories: categories,
-    showAnnouncementBanner: showAnnouncementBanner
+    categories: categories
   })
 
   if (req.query.category) {

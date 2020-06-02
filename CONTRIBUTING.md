@@ -171,7 +171,7 @@ The top-level banner for showing the information (for example, a new Electron ve
 
 To show or update the announcement banner, modify the `announcement` string in
 [`data/locale.yml`](https://github.com/electron/electronjs.org/blob/efa94cdfbbf6016be7123f4d2ee6a8aa32e2476f/data/locale.yml#L220),
-and update the conditional inside the `showAnnouncementBanner` constant in `lib/showAnnouncementBanner.js`.
+and update the conditional inside the `showAnnouncementBanner` constant in `middleware/context-builder.js`.
 
 #### Crowdin Proxy
 

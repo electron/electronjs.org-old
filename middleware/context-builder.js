@@ -47,6 +47,7 @@ module.exports = function contextBuilder (req, res, next) {
     languageDirection: rtlDetect.getLangDir(req.language),
     locales: i18n.locales,
     page: page,
+    showAnnouncementBanner: true,
     localized: localized,
     cookies: req.cookies
   }

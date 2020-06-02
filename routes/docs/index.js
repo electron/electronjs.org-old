@@ -1,5 +1,4 @@
 const i18n = require('../../lib/i18n')
-const showAnnouncementBanner = require('../../lib/showAnnouncementBanner')
 
 module.exports = (req, res) => {
   const docsReadme = i18n.docs[req.language]['/docs/README']
@@ -32,8 +31,7 @@ module.exports = (req, res) => {
     customDomElements,
     mainProcModules,
     rendererProcModules,
-    bothProcModules,
-    showAnnouncementBanner: showAnnouncementBanner
+    bothProcModules
   })
 
   // Taken from https://github.com/electron/electron/tree/master/docs
