@@ -148,6 +148,8 @@ describe('electronjs.org', () => {
     // })
   })
 
+    // The test is intentionally disabled while the new temporary homepage
+    // is in place
   describe('localization', () => {
     it('change language via language drop-down menu', () => {
       cy.visit(`${localhost}`)
@@ -155,16 +157,18 @@ describe('electronjs.org', () => {
       cy.get('.lang-select-button').click()
       cy.wait(200)
       cy.get('#languages-header-menu a[href="/languages/ru-RU"]:first').click()
-      cy.wait(500)
-      cy.get('.jumbotron-lead').contains('Создавайте кросс-платформенные приложения при помощи JavaScript, HTML и CSS')
+      // cy.wait(500)
+      // cy.get('.jumbotron-lead').contains('Создавайте кросс-платформенные приложения при помощи JavaScript, HTML и CSS')
     })
 
+    // The test is intentionally disabled while the new temporary homepage
+    // is in place
     it('change language via languages page', () => {
       cy.visit(`${localhost}/languages`)
       cy.get('.container-lg a[href="/languages/ru-RU"]:first').click()
       cy.visit(`${localhost}`)
-      cy.wait(500)
-      cy.get('.jumbotron-lead').contains('Создавайте кросс-платформенные приложения при помощи JavaScript, HTML и CSS')
+      // cy.wait(500)
+      // cy.get('.jumbotron-lead').contains('Создавайте кросс-платформенные приложения при помощи JavaScript, HTML и CSS')
     })
   })
 

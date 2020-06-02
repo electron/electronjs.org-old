@@ -13,9 +13,9 @@ module.exports = (req, res) => {
 
   const context = Object.assign(req.context, {
     companies: featuredCompanies,
-    showAnnouncementBanner: true,
     apps
   })
 
-  res.render('home', context)
+  // Reset to 'home' to restore homepage
+  res.render('blm', context)
 }
