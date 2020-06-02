@@ -5,11 +5,11 @@ const setQueryString = require('set-query-string')
 const lazyLoadImages = require('./lazy-load-images')
 
 class FilterList {
-  static create (list, input) {
+  static create(list, input) {
     return new FilterList(list, input)
   }
 
-  constructor (list, input) {
+  constructor(list, input) {
     this.input = input
     this.index = this.buildIndex(list)
     this.referenceList = list.cloneNode(true)
@@ -21,7 +21,7 @@ class FilterList {
     this.search(this.input.value)
   }
 
-  search (text) {
+  search(text) {
     try {
       const results = this.index.search(text)
       this.updateList(results)
@@ -34,7 +34,7 @@ class FilterList {
     }
   }
 
-  updateList (results) {
+  updateList(results) {
     const existingList = document.querySelector('.filterable-list')
     const parent = existingList.parentElement
     let newList
@@ -60,7 +60,7 @@ class FilterList {
     newList.querySelectorAll('img[data-src]').forEach(lazyLoadImages.addImage)
   }
 
-  buildIndex (list) {
+  buildIndex(list) {
     const builder = new lunr.Builder()
     // Not including `lunr.stemmer` which is normally included by default
     builder.pipeline.add(lunr.trimmer, lunr.stopWordFilter)
@@ -78,7 +78,8 @@ class FilterList {
 
     builder.field('name', { boost: 5 })
     builder.field('description')
-    builder.field('date')
+    builder.field('addDate')
+    builder.field('releaseDate')
     builder.field('keywords', { boost: 2 })
 
     const entries = list.querySelectorAll('.listed-app')
@@ -91,17 +92,20 @@ class FilterList {
     return builder.build()
   }
 
-  docForEntry (id, entry) {
+  docForEntry(id, entry) {
     const name = entry.querySelector('.listed-app-name').textContent
     const description = entry.querySelector('.listed-app-description').textContent
-    const date = entry.querySelector('.listed-app-date [data-date]').getAttribute('data-date')
+    const addDateSelector = entry.querySelector('.listed-app-add-date [data-date]')
+    const addDate = addDateSelector != null ? addDateSelector.getAttribute('data-date') : undefined;
+    const releaseDateSelector = entry.querySelector('.listed-app-release-date [data-date]')
+    const releaseDate = releaseDateSelector != null ? releaseDateSelector.getAttribute('data-date') : undefined;
     const keywords = entry.querySelector('.listed-app-keywords').textContent.split(',')
 
-    return { id, name, description, date, keywords }
+    return { id, name, description, addDate, releaseDate, keywords }
   }
 }
 
-module.exports = function createFilterList () {
+module.exports = function createFilterList() {
   // look for a filterable list on this page
   const list = document.querySelector('.filterable-list')
   if (!list || !list.parentElement) return

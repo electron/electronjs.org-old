@@ -405,13 +405,15 @@ $app-list-icon-size: 48px;
   text-overflow: ellipsis;
 }
 
-.listed-app-date {
+.listed-app-add-date,
+.listed-app-release-date {
   font-size: 12px;
   padding-left: 15px;
   display: none;
 }
 
-.listed-app:hover .listed-app-date {
+.listed-app:hover .listed-app-add-date,
+.listed-app:hover .listed-app-release-date {
   display: inherit;
 }
 

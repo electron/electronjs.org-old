@@ -116,7 +116,7 @@ describe('electronjs.org', () => {
 
     test('apps are sorted by date, descending', async () => {
       const $ = await get('/apps')
-      const dates = $('.listed-app [data-date]')
+      const dates = $('.listed-app-add-date [data-date]')
         .map((i, el) => new Date($(el).text()))
         .get()
 
