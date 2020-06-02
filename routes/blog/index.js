@@ -15,6 +15,8 @@ module.exports = async (req, res) => {
   const blogPosts = await BlogPost.getAll(req.language)
   const posts = await Promise.all(blogPosts.map(hydrateViewModel))
   const postsInOrder = posts.sort((a, b) => b.date.localeCompare(a.date))
-  Object.assign(req.context, { posts: postsInOrder })
+  Object.assign(req.context, {
+    posts: postsInOrder
+  })
   res.render('blog/index', req.context)
 }

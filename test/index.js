@@ -51,7 +51,9 @@ describe('electronjs.org', () => {
   })
 
   describe('homepage', () => {
-    test('displays electron version data for latest and beta', async () => {
+    // The test is intentionally disabled while the new temporary homepage
+    // is in place
+    test.skip('displays electron version data for latest and beta', async () => {
       const $ = await get('/')
       $('#electron-version-latest').text().should.match(/npm i -D electron@latest/)
       $('#electron-version-latest').text().should.match(/Electron\s+\d+\.\d+\.\d+/)
@@ -64,7 +66,9 @@ describe('electronjs.org', () => {
       $('#electron-version-beta').text().should.match(/Chromium\s+\d+\.\d+\.\d+\.\d+/)
     })
 
-    test('displays featured apps', async () => {
+    // The test is intentionally disabled while the new temporary homepage
+    // is in place
+    test.skip('displays featured apps', async () => {
       const $ = await get('/')
       $('header').should.have.class('site-header')
       $('p.jumbotron-lead').should.contain('Build cross-platform desktop apps')
