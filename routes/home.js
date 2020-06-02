@@ -1,5 +1,6 @@
 const featuredCompanies = require('../lib/featured-companies')
 const featuredApps = require('../lib/featured-apps')
+const showAnnouncementBanner = require('../lib/showAnnouncementBanner')
 
 module.exports = (req, res) => {
   const apps = []
@@ -13,7 +14,7 @@ module.exports = (req, res) => {
 
   const context = Object.assign(req.context, {
     companies: featuredCompanies,
-    showAnnouncementBanner: true,
+    showAnnouncementBanner: showAnnouncementBanner,
     apps
   })
 

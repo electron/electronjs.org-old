@@ -1,3 +1,5 @@
+const showAnnouncementBanner = require('../../lib/showAnnouncementBanner')
+
 const querystring = require('querystring')
 const pagination = require('ultimate-pagination')
 const paginator = require('paginate-array')
@@ -104,7 +106,8 @@ module.exports = (type) => {
       res.render('releases', Object.assign({}, req.context, {
         page: { title: `${localizedReleasesType} | Electron` },
         releasesPage: new ReleasesPage(type, versionFilter, selectedReleases, req.query),
-        localizedReleasesType
+        localizedReleasesType,
+        showAnnouncementBanner: showAnnouncementBanner,
       }))
     } catch (err) {
       if (err instanceof QueryParamOutOfRangeError) {

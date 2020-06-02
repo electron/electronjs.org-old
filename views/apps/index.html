@@ -1,70 +1,71 @@
+{{> announcement_banner}}
 <main class="PRIMER-REMOVE-ME px-3 px-md-6">
-<div class="py-6 py-md-7 py-lg-8">
-  <div class="container-xl p-responsive">
-    <div class="d-flex d-flex-column">
-      <div class="col-xs-12 col-md-3 categories-filter">
-        <input id="apps-filter" class="filterable-list-input" placeholder="{{localized.apps.search_app}}" type="search" autofocus="on" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" aria-label="keywords for search">
+  <div class="py-6 py-md-7 py-lg-8">
+    <div class="container-xl p-responsive">
+      <div class="d-flex d-flex-column">
+        <div class="col-xs-12 col-md-3 categories-filter">
+          <input id="apps-filter" class="filterable-list-input" placeholder="{{localized.apps.search_app}}" type="search" autofocus="on" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" aria-label="keywords for search">
 
-        <div class="mobile-hidden">
-          <h3 class="f2-light pb-3 pt-3">{{localized.apps.categories}}</h3>
+          <div class="mobile-hidden">
+            <h3 class="f2-light pb-3 pt-3">{{localized.apps.categories}}</h3>
 
-          <ul class="filter-list category-list">
-            {{#if currentCategory}}
-              <li>
-                <a href="/apps" class="filter-item" aria-current="page" id="category-{{this.slug}}">
-                  <span class="count" title="results">{{totalAppCount}}</span>
-                  View All
-                </a>
-              </li>
-            {{/if}}
-            {{#each categories}}
-              <li>
-                <a href="/apps?category={{this.slug}}" class="filter-item {{className}}" aria-current="page" id="category-{{this.slug}}">
-                  <span class="count" title="results">{{this.count}}</span>
-                  {{this.name}}
-                </a>
-              </li>
+            <ul class="filter-list category-list">
+              {{#if currentCategory}}
+                <li>
+                  <a href="/apps" class="filter-item" aria-current="page" id="category-{{this.slug}}">
+                    <span class="count" title="results">{{totalAppCount}}</span>
+                    View All
+                  </a>
+                </li>
+              {{/if}}
+              {{#each categories}}
+                <li>
+                  <a href="/apps?category={{this.slug}}" class="filter-item {{className}}" aria-current="page" id="category-{{this.slug}}">
+                    <span class="count" title="results">{{this.count}}</span>
+                    {{this.name}}
+                  </a>
+                </li>
+              {{/each}}
+            </ul>
+          </div>
+
+        </div>
+        <!-- ./categories-filter -->
+
+        <div class="col-xs-12 col-md-9 container-lg" id="apps">
+
+          <ul class="mb-4 filterable-list app-list">
+            {{#each apps}}
+              {{#unless this.disabled}}
+                <li class='listed-app'>
+                  <a href='/apps/{{this.slug}}' title='{{this.name}} - {{this.description}}'>
+                    <div class='listed-app-logo-wrapper'>
+                      <div class="listed-app-logo-placeholder placeholder" style="background: {{this.goodColorOnWhite}}"></div>
+                      <img class='listed-app-logo' data-src='/app-img/{{this.slug}}/{{this.icon64}}' alt='{{app.name}}'>
+                    </div>
+                    <span class='listed-app-name text-gray-dark'>{{this.name}}</span>
+                    <span class='listed-app-description text-gray-light'>{{this.description}}</span>
+                    <span class='listed-app-date text-gray-light'>Added&nbsp;<span data-date='{{this.date}}'>{{this.date}}</span></span>
+                    <span class='listed-app-keywords' style='display:none;'>
+                      {{this.keywords}}
+
+                      {{#if this.homebrewCaskName}}
+                        homebrew cask
+                      {{/if}}
+                    </span>
+                  </a>
+                </li>
+              {{/unless}}
             {{/each}}
           </ul>
+
+          <p class="mt-6 text-center">
+            {{{localized.apps.add_app_link}}}
+          </p>
+          <hr>
         </div>
 
       </div>
-      <!-- ./categories-filter -->
-
-      <div class="col-xs-12 col-md-9 container-lg" id="apps">
-
-        <ul class="mb-4 filterable-list app-list">
-          {{#each apps}}
-            {{#unless this.disabled}}
-              <li class='listed-app'>
-                <a href='/apps/{{this.slug}}' title='{{this.name}} - {{this.description}}'>
-                  <div class='listed-app-logo-wrapper'>
-                    <div class="listed-app-logo-placeholder placeholder" style="background: {{this.goodColorOnWhite}}"></div>
-                    <img class='listed-app-logo' data-src='/app-img/{{this.slug}}/{{this.icon64}}' alt='{{app.name}}'>
-                  </div>
-                  <span class='listed-app-name text-gray-dark'>{{this.name}}</span>
-                  <span class='listed-app-description text-gray-light'>{{this.description}}</span>
-                  <span class='listed-app-date text-gray-light'>Added&nbsp;<span data-date='{{this.date}}'>{{this.date}}</span></span>
-                  <span class='listed-app-keywords' style='display:none;'>
-                    {{this.keywords}}
-
-                    {{#if this.homebrewCaskName}}
-                      homebrew cask
-                    {{/if}}
-                  </span>
-                </a>
-              </li>
-            {{/unless}}
-          {{/each}}
-        </ul>
-
-        <p class="mt-6 text-center">
-          {{{localized.apps.add_app_link}}}
-        </p>
-        <hr>
-      </div>
-
     </div>
   </div>
-</div>
 </main>

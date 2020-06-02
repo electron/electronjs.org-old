@@ -1,5 +1,6 @@
 const yubikiri = require('yubikiri')
 const BlogPost = require('../../lib/blog')
+const showAnnouncementBanner = require('../../lib/showAnnouncementBanner')
 
 function hydrateViewModel (blogPost) {
   return yubikiri({
@@ -15,6 +16,9 @@ module.exports = async (req, res) => {
   const blogPosts = await BlogPost.getAll(req.language)
   const posts = await Promise.all(blogPosts.map(hydrateViewModel))
   const postsInOrder = posts.sort((a, b) => b.date.localeCompare(a.date))
-  Object.assign(req.context, { posts: postsInOrder })
+  Object.assign(req.context, {
+    posts: postsInOrder,
+    showAnnouncementBanner: showAnnouncementBanner,
+  })
   res.render('blog/index', req.context)
 }

@@ -1,3 +1,9 @@
+const showAnnouncementBanner = require('../../lib/showAnnouncementBanner')
+
 module.exports = (req, res) => {
-  res.render('governance/index', req.context)
+  const context = Object.assign(req.context, {
+    showAnnouncementBanner: showAnnouncementBanner,
+  });
+
+  res.render('governance/index', context)
 }
