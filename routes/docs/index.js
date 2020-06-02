@@ -33,7 +33,7 @@ module.exports = (req, res) => {
     mainProcModules,
     rendererProcModules,
     bothProcModules,
-    showAnnouncementBanner: showAnnouncementBanner,
+    showAnnouncementBanner: showAnnouncementBanner
   })
 
   // Taken from https://github.com/electron/electron/tree/master/docs

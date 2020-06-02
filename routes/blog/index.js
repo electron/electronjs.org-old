@@ -18,7 +18,7 @@ module.exports = async (req, res) => {
   const postsInOrder = posts.sort((a, b) => b.date.localeCompare(a.date))
   Object.assign(req.context, {
     posts: postsInOrder,
-    showAnnouncementBanner: showAnnouncementBanner,
+    showAnnouncementBanner: showAnnouncementBanner
   })
   res.render('blog/index', req.context)
 }

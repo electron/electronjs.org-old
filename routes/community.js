@@ -27,7 +27,7 @@ module.exports = (req, res) => {
     const context = Object.assign(req.context, {
       items: communityData,
       meetups: meetups,
-      showAnnouncementBanner: showAnnouncementBanner,
+      showAnnouncementBanner: showAnnouncementBanner
     })
 
     res.render('community', context)

@@ -107,7 +107,7 @@ module.exports = (type) => {
         page: { title: `${localizedReleasesType} | Electron` },
         releasesPage: new ReleasesPage(type, versionFilter, selectedReleases, req.query),
         localizedReleasesType,
-        showAnnouncementBanner: showAnnouncementBanner,
+        showAnnouncementBanner: showAnnouncementBanner
       }))
     } catch (err) {
       if (err instanceof QueryParamOutOfRangeError) {

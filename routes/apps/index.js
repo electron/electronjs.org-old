@@ -6,7 +6,7 @@ module.exports = (req, res, next) => {
   const context = Object.assign(req.context, {
     apps: apps,
     categories: categories,
-    showAnnouncementBanner: showAnnouncementBanner,
+    showAnnouncementBanner: showAnnouncementBanner
   })
 
   if (req.query.category) {
