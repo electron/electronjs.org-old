@@ -19,13 +19,10 @@ module.exports = (req, res, next) => {
       'ember-tomster',
       'gitter-badger',
       'invalid-email-address',
-      'waffle-iron'
+      'waffle-iron',
     ]
   } else if (report.isnpmUser) {
-    blacklist = [
-      'uupaa',
-      'etc-etc-etc'
-    ]
+    blacklist = ['uupaa', 'etc-etc-etc']
   }
 
   const context = Object.assign(req.context, {
@@ -33,8 +30,8 @@ module.exports = (req, res, next) => {
     items: report.collection,
     blacklist: blacklist,
     page: {
-      title: `${report.title} | Electron`
-    }
+      title: `${report.title} | Electron`,
+    },
   })
 
   res.render('userland/show', context)

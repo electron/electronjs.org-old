@@ -8,6 +8,6 @@ module.exports = function () {
     debug: false,
     includePaths: path.join(__dirname, '../node_modules'),
     // outputStyle: 'compressed',
-    prefix: '/styles'
+    prefix: '/styles',
   })
 }
