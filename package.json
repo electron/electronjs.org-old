@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "@babel/core": "^7.10.1",
-    "@babel/preset-env": "^7.10.1",
+    "@babel/preset-env": "^7.10.2",
     "@primer/css": "^14.4.0",
     "awesome-electron": "2.6.0",
     "babelify": "^10.0.0",
