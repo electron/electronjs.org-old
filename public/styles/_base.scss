@@ -7,6 +7,17 @@ body {
   @include breakpoint(sm) {
     font-size: $body-font-size;
   }
+}
+
+body > header,
+body > footer,
+body > section,
+main > div:not(.docs-page) > div:not(.docs),
+.blog-post,
+#languages-header-menu,
+.announcement-banner,
+.jumbotron,
+#hits {
   filter: grayscale(100%);
 }
 
