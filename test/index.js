@@ -724,7 +724,7 @@ describe('electronjs.org', () => {
       mock.done()
     })
 
-    test('returns 404 when trying to access API endpoints that are not whitelisted', async () => {
+    test('returns 404 when trying to access API endpoints that are not allowlisted', async () => {
       const res = await supertest(app).get('/crowdin/export')
       res.statusCode.should.equal(404)
     })

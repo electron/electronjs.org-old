@@ -1,7 +1,7 @@
 const { createProxyMiddleware } = require('http-proxy-middleware')
 const url = require('url')
 
-const apiWhitelist = [
+const apiAllowlist = [
   '/status',
   '/language-status',
   '/info',
@@ -16,7 +16,7 @@ module.exports = (req, res, next) => {
   if (req.method !== 'GET') {
     return res.status(405).json(`${req.method} not allowed`)
   }
-  if (!apiWhitelist.find((path) => path === url.parse(req.url).pathname)) {
+  if (!apiAllowlist.find((path) => path === url.parse(req.url).pathname)) {
     return res.status(404).render('404', req.context)
   }
   return createProxyMiddleware({

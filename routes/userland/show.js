@@ -6,7 +6,7 @@ module.exports = (req, res, next) => {
   const reportPath = path.resolve(`data/userland/${currentReport}.json`)
   if (!fs.existsSync(reportPath)) return next()
   const report = require(reportPath)
-  let blacklist
+  let ignorelist
 
   report.isPackage = report.collectionType === 'Package'
   report.isRepository = report.collectionType === 'Repository'
@@ -14,7 +14,7 @@ module.exports = (req, res, next) => {
   report.isGitHubUser = report.collectionType === 'GithubUser'
 
   if (report.isGitHubUser) {
-    blacklist = [
+    ignorelist = [
       'greenkeeperio-bot',
       'ember-tomster',
       'gitter-badger',
@@ -22,13 +22,13 @@ module.exports = (req, res, next) => {
       'waffle-iron',
     ]
   } else if (report.isnpmUser) {
-    blacklist = ['uupaa', 'etc-etc-etc']
+    ignorelist = ['uupaa', 'etc-etc-etc']
   }
 
   const context = Object.assign(req.context, {
     report: report,
     items: report.collection,
-    blacklist: blacklist,
+    ignorelist: ignorelist,
     page: {
       title: `${report.title} | Electron`,
     },
