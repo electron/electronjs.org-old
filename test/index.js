@@ -12,7 +12,7 @@ chai.should()
 chai.use(require('chai-cheerio'))
 const app = require('../server.js')
 
-async function get (route) {
+async function get(route) {
   const res = await supertest(app).get(route)
   const $ = cheerio.load(res.text)
   $.res = Object.assign({}, res)
@@ -28,7 +28,9 @@ describe('electronjs.org', () => {
   describe('feeds', () => {
     test('blog feeds', async () => {
       let res = await supertest(app).get(`/blog.json`)
-      res.headers['content-type'].should.equal('application/json; charset=utf-8')
+      res.headers['content-type'].should.equal(
+        'application/json; charset=utf-8'
+      )
       res.body.title.should.equal('Electron')
       res = await supertest(app).get(`/blog.xml`)
       res.headers['content-type'].should.equal('text/xml; charset=utf-8')
@@ -36,7 +38,9 @@ describe('electronjs.org', () => {
 
     test('releases feeds', async () => {
       let res = await supertest(app).get(`/releases.json`)
-      res.headers['content-type'].should.equal('application/json; charset=utf-8')
+      res.headers['content-type'].should.equal(
+        'application/json; charset=utf-8'
+      )
       res.body.title.should.equal('Electron')
       res = await supertest(app).get(`/releases.xml`)
       res.headers['content-type'].should.equal('text/xml; charset=utf-8')
@@ -55,15 +59,31 @@ describe('electronjs.org', () => {
     // is in place
     test.skip('displays electron version data for latest and beta', async () => {
       const $ = await get('/')
-      $('#electron-version-latest').text().should.match(/npm i -D electron@latest/)
-      $('#electron-version-latest').text().should.match(/Electron\s+\d+\.\d+\.\d+/)
-      $('#electron-version-latest').text().should.match(/Node\s+\d+\.\d+\.\d+/)
-      $('#electron-version-latest').text().should.match(/Chromium\s+\d+\.\d+\.\d+\.\d+/)
+      $('#electron-version-latest')
+        .text()
+        .should.match(/npm i -D electron@latest/)
+      $('#electron-version-latest')
+        .text()
+        .should.match(/Electron\s+\d+\.\d+\.\d+/)
+      $('#electron-version-latest')
+        .text()
+        .should.match(/Node\s+\d+\.\d+\.\d+/)
+      $('#electron-version-latest')
+        .text()
+        .should.match(/Chromium\s+\d+\.\d+\.\d+\.\d+/)
 
-      $('#electron-version-beta').text().should.match(/npm i -D electron@beta/)
-      $('#electron-version-beta').text().should.match(/Electron\s+\d+\.\d+\.\d+/)
-      $('#electron-version-beta').text().should.match(/Node\s+\d+\.\d+\.\d+/)
-      $('#electron-version-beta').text().should.match(/Chromium\s+\d+\.\d+\.\d+\.\d+/)
+      $('#electron-version-beta')
+        .text()
+        .should.match(/npm i -D electron@beta/)
+      $('#electron-version-beta')
+        .text()
+        .should.match(/Electron\s+\d+\.\d+\.\d+/)
+      $('#electron-version-beta')
+        .text()
+        .should.match(/Node\s+\d+\.\d+\.\d+/)
+      $('#electron-version-beta')
+        .text()
+        .should.match(/Chromium\s+\d+\.\d+\.\d+\.\d+/)
     })
 
     // The test is intentionally disabled while the new temporary homepage
@@ -73,25 +93,36 @@ describe('electronjs.org', () => {
       $('header').should.have.class('site-header')
       $('p.jumbotron-lead').should.contain('Build cross-platform desktop apps')
       $('.featured-app-list-item').length.should.equal(5)
-      $('head > title').text().should.match(/^Electron/)
+      $('head > title')
+        .text()
+        .should.match(/^Electron/)
     })
 
     test('displays Code of Conduct link in the footer', async () => {
       const $ = await get('/')
-      $('a.footer-nav-item[href="https://github.com/electron/electron/tree/master/CODE_OF_CONDUCT.md"]')
-        .text().should.eq('Code of Conduct')
+      $(
+        'a.footer-nav-item[href="https://github.com/electron/electron/tree/master/CODE_OF_CONDUCT.md"]'
+      )
+        .text()
+        .should.eq('Code of Conduct')
     })
 
     test('displays Security link in the footer', async () => {
       const $ = await get('/')
-      $('a.footer-nav-item[href="https://github.com/electron/electron/tree/master/SECURITY.md"]')
-        .text().should.eq('Security')
+      $(
+        'a.footer-nav-item[href="https://github.com/electron/electron/tree/master/SECURITY.md"]'
+      )
+        .text()
+        .should.eq('Security')
     })
 
     test('displays License link in the footer', async () => {
       const $ = await get('/')
-      $('a.footer-nav-item[href="https://github.com/electron/electron/tree/master/LICENSE"]')
-        .text().should.eq('License')
+      $(
+        'a.footer-nav-item[href="https://github.com/electron/electron/tree/master/LICENSE"]'
+      )
+        .text()
+        .should.eq('License')
     })
   })
 
@@ -111,7 +142,9 @@ describe('electronjs.org', () => {
     test('index has custom title and description meta tags', async () => {
       const $ = await get('/apps')
       $('head > title').text().should.eq('Electron Apps | Electron')
-      $('meta[property="og:description"]').attr('content').should.eq('Apps Built on Electron')
+      $('meta[property="og:description"]')
+        .attr('content')
+        .should.eq('Apps Built on Electron')
     })
 
     test('apps are sorted by date, descending', async () => {
@@ -164,7 +197,9 @@ describe('electronjs.org', () => {
     test('index', async () => {
       const $ = await get('/docs')
       $('header').should.have.class('site-header')
-      $('a[href="/docs/tutorial/development-environment#setting-up-macos"]').should.have.text('Setting up macOS')
+      $(
+        'a[href="/docs/tutorial/development-environment#setting-up-macos"]'
+      ).should.have.text('Setting up macOS')
       $('a[href="/docs/api/auto-updater"]').should.have.text('autoUpdater')
     })
 
@@ -218,7 +253,9 @@ describe('electronjs.org', () => {
     test('uses page title and description', async () => {
       const $ = await get('/docs/api/browser-window')
       $('head > title').text().should.eq('BrowserWindow | Electron')
-      $('meta[property="og:description"]').attr('content').should.eq('Create and control browser windows.')
+      $('meta[property="og:description"]')
+        .attr('content')
+        .should.eq('Create and control browser windows.')
     })
 
     test('docs/all', async () => {
@@ -260,7 +297,11 @@ describe('electronjs.org', () => {
     describe('docs footer', () => {
       test('includes a link to edit the doc on GitHub', async () => {
         const $ = await get('/docs/api/accelerator')
-        $('.propose-change').attr('href').should.eq('https://github.com/electron/electron/tree/master/docs/api/accelerator.md')
+        $('.propose-change')
+          .attr('href')
+          .should.eq(
+            'https://github.com/electron/electron/tree/master/docs/api/accelerator.md'
+          )
       })
 
       test('includes a link to translate the doc on Crowdin', async () => {
@@ -268,7 +309,9 @@ describe('electronjs.org', () => {
           .get('/docs/api/accelerator')
           .set('Cookie', ['language=zh-CN'])
         const $ = cheerio.load(res.text)
-        $('.translate-on-crowdin').attr('href').should.eq('https://crowdin.com/translate/electron/63/en-zhcn')
+        $('.translate-on-crowdin')
+          .attr('href')
+          .should.eq('https://crowdin.com/translate/electron/63/en-zhcn')
       })
 
       test('includes a link to translate the doc on Crowdin for Indonesian', async () => {
@@ -276,7 +319,9 @@ describe('electronjs.org', () => {
           .get('/docs/api/crash-reporter')
           .set('Cookie', ['language=id-ID'])
         const $ = cheerio.load(res.text)
-        $('.translate-on-crowdin').attr('href').should.eq('https://crowdin.com/translate/electron/74/en-id')
+        $('.translate-on-crowdin')
+          .attr('href')
+          .should.eq('https://crowdin.com/translate/electron/74/en-id')
       })
 
       test('includes a link to Crowdin language picker when language is English', async () => {
@@ -286,7 +331,9 @@ describe('electronjs.org', () => {
           .get('/docs/api/browser-view')
           .set('Cookie', ['language=en-US'])
         const $ = cheerio.load(res.text)
-        $('.translate-on-crowdin').attr('href').should.eq('https://crowdin.com/translate/electron/66/en-en')
+        $('.translate-on-crowdin')
+          .attr('href')
+          .should.eq('https://crowdin.com/translate/electron/66/en-en')
       })
 
       test('includes a link to view doc history', async () => {
@@ -310,7 +357,9 @@ describe('electronjs.org', () => {
       $englishSections.length.should.equal($chineseSections.length)
       $chineseSections.each((i, elem) => {
         const name = $(elem).data('name')
-        $(`.docs .sub-section[data-lang="en-US"][data-name="${name}"]`).length.should.be.above(0)
+        $(
+          `.docs .sub-section[data-lang="en-US"][data-name="${name}"]`
+        ).length.should.be.above(0)
       })
     })
 
@@ -351,8 +400,10 @@ describe('electronjs.org', () => {
       const lastPage = parseInt(pages.text().trim(), 10)
       lastPage.should.be.gt(50)
 
-      const titles = $('.release-entry').map((i, el) => $(el).text().trim()).get()
-      titles.forEach(title => {
+      const titles = $('.release-entry')
+        .map((i, el) => $(el).text().trim())
+        .get()
+      titles.forEach((title) => {
         title.should.match(/Electron \d+\.\d+\.\d/)
       })
     })
@@ -366,8 +417,10 @@ describe('electronjs.org', () => {
       const lastPage = parseInt(pages.text().trim(), 10)
       lastPage.should.be.gt(5)
 
-      const titles = $('.release-entry').map((i, el) => $(el).text().trim()).get()
-      titles.forEach(title => {
+      const titles = $('.release-entry')
+        .map((i, el) => $(el).text().trim())
+        .get()
+      titles.forEach((title) => {
         title.should.match(/Electron \d+\.\d+\.\d+-beta\.\d+/)
       })
     })
@@ -381,8 +434,10 @@ describe('electronjs.org', () => {
       const lastPage = parseInt(pages.text().trim(), 10)
       lastPage.should.be.gt(3)
 
-      const titles = $('.release-entry').map((i, el) => $(el).text().trim()).get()
-      titles.forEach(title => {
+      const titles = $('.release-entry')
+        .map((i, el) => $(el).text().trim())
+        .get()
+      titles.forEach((title) => {
         title.should.match(/Electron \d+\.\d+\.\d+-nightly\.\d+/)
       })
     })
@@ -424,7 +479,9 @@ describe('electronjs.org', () => {
       const $ = await get('/community')
       $('h1').text().should.eq('Electron Community')
 
-      const titles = $('h2').map((i, el) => $(el).text()).get()
+      const titles = $('h2')
+        .map((i, el) => $(el).text())
+        .get()
       titles.should.include('Tools')
       titles.should.include('Components')
       titles.should.include('Meetups')
@@ -435,7 +492,9 @@ describe('electronjs.org', () => {
         .get('/community')
         .set('Cookie', ['language=vi-VN'])
       const $ = cheerio.load(res.text)
-      $('.subtron .container-narrow h1').text().should.eq(i18n.website['vi-VN'].community.title)
+      $('.subtron .container-narrow h1')
+        .text()
+        .should.eq(i18n.website['vi-VN'].community.title)
     })
 
     test('/contact redirects to /community', async () => {
@@ -448,24 +507,34 @@ describe('electronjs.org', () => {
   describe('localized strings for client-side code', () => {
     it('sets meta tags for clipboard labels', async () => {
       const $ = await get('/')
-      $('meta[name="localized.clipboard.copy"]').attr('content').should.eq('Copy')
-      $('meta[name="localized.clipboard.copy_to_clipboard"]').attr('content').should.eq('Copy to Clipboard')
+      $('meta[name="localized.clipboard.copy"]')
+        .attr('content')
+        .should.eq('Copy')
+      $('meta[name="localized.clipboard.copy_to_clipboard"]')
+        .attr('content')
+        .should.eq('Copy to Clipboard')
     })
   })
 
   describe('devtron and spectron', () => {
     test('Test existed landing pages', async () => {
       let $ = await get('/devtron')
-      $('.jumbotron-lead .jumbotron-lead-muted').text().should.eq('An Electron DevTools Extension')
+      $('.jumbotron-lead .jumbotron-lead-muted')
+        .text()
+        .should.eq('An Electron DevTools Extension')
       $ = await get('/spectron')
-      $('.jumbotron-lead .jumbotron-lead-muted').text().should.eq('An Electron Testing Framework')
+      $('.jumbotron-lead .jumbotron-lead-muted')
+        .text()
+        .should.eq('An Electron Testing Framework')
     })
   })
 
   describe('electron fiddle', () => {
     test('Fiddle landing page existed', async () => {
       const $ = await get('/fiddle')
-      $('.jumbotron-lead .jumbotron-lead-muted').text().should.eq('The easiest way to get started with Electron')
+      $('.jumbotron-lead .jumbotron-lead-muted')
+        .text()
+        .should.eq('The easiest way to get started with Electron')
     })
   })
 
@@ -518,10 +587,30 @@ describe('electronjs.org', () => {
 
       // valid language query is not redirected (200)
       const langs = [
-        'ar-SA', 'bg-BG', 'cs-CZ', 'de-DE', 'en-US', 'es-ES',
-        'fa-IR', 'fil-PH', 'fr-FR', 'hi-IN', 'id-ID', 'it-IT',
-        'ja-JP', 'ko-KR', 'nl-NL', 'pl-PL', 'pt-BR', 'ru-RU',
-        'th-TH', 'tr-TR', 'uk-UA', 'vi-VN', 'zh-CN', 'zh-TW'
+        'ar-SA',
+        'bg-BG',
+        'cs-CZ',
+        'de-DE',
+        'en-US',
+        'es-ES',
+        'fa-IR',
+        'fil-PH',
+        'fr-FR',
+        'hi-IN',
+        'id-ID',
+        'it-IT',
+        'ja-JP',
+        'ko-KR',
+        'nl-NL',
+        'pl-PL',
+        'pt-BR',
+        'ru-RU',
+        'th-TH',
+        'tr-TR',
+        'uk-UA',
+        'vi-VN',
+        'zh-CN',
+        'zh-TW',
       ]
       for (let lang of langs) {
         res = await supertest(app).get(`/docs/api/browser-window?lang=${lang}`)
@@ -567,19 +656,25 @@ describe('electronjs.org', () => {
     test('redirects /issues to the website repo, for convenience', async () => {
       const res = await supertest(app).get('/issues')
       res.statusCode.should.equal(301)
-      res.headers.location.should.equal('https://github.com/electron/electronjs.org/issues')
+      res.headers.location.should.equal(
+        'https://github.com/electron/electronjs.org/issues'
+      )
     })
 
     test('redirects /issues/new to the website repo, for convenience', async () => {
       const res = await supertest(app).get('/issues/new')
       res.statusCode.should.equal(301)
-      res.headers.location.should.equal('https://github.com/electron/electronjs.org/issues/new')
+      res.headers.location.should.equal(
+        'https://github.com/electron/electronjs.org/issues/new'
+      )
     })
 
     test('redirects /pulls to the website repo, for convenience', async () => {
       const res = await supertest(app).get('/pulls')
       res.statusCode.should.equal(301)
-      res.headers.location.should.equal('https://github.com/electron/electronjs.org/pulls')
+      res.headers.location.should.equal(
+        'https://github.com/electron/electronjs.org/pulls'
+      )
     })
   })
 
@@ -614,12 +709,14 @@ describe('electronjs.org', () => {
           key: process.env.CROWDIN_KEY,
           json: true,
           language: 'zh-CN',
-          file: 'master/content/en-US/docs/api/browser-window.md'
+          file: 'master/content/en-US/docs/api/browser-window.md',
         })
         .once()
         .reply(200, { result: 'mocked' })
 
-      const res = await supertest(app).get('/crowdin/export-file?language=zh-CN&file=master/content/en-US/docs/api/browser-window.md')
+      const res = await supertest(app).get(
+        '/crowdin/export-file?language=zh-CN&file=master/content/en-US/docs/api/browser-window.md'
+      )
       res.statusCode.should.equal(200)
       res.type.should.equal('application/json')
       res.text.should.eq('{"result":"mocked"}')
@@ -627,7 +724,7 @@ describe('electronjs.org', () => {
       mock.done()
     })
 
-    test('returns 404 when trying to access API endpoints that are not whitelisted', async () => {
+    test('returns 404 when trying to access API endpoints that are not allowlisted', async () => {
       const res = await supertest(app).get('/crowdin/export')
       res.statusCode.should.equal(404)
     })
@@ -656,7 +753,9 @@ describe('electronjs.org', () => {
 
     it('get /service-worker.js', async () => {
       let res = await supertest(app).get('/service-worker.js')
-      res.headers['content-type'].should.equal('application/javascript; charset=UTF-8')
+      res.headers['content-type'].should.equal(
+        'application/javascript; charset=UTF-8'
+      )
     })
 
     describe('node headers', () => {
@@ -673,7 +772,9 @@ describe('electronjs.org', () => {
 
     describe('search redirects', () => {
       it('redirect /search/package to home page search', async () => {
-        const res = await supertest(app).get('/search/npmPackages?q=@siberianmh/cosmos')
+        const res = await supertest(app).get(
+          '/search/npmPackages?q=@siberianmh/cosmos'
+        )
         res.statusCode.should.equal(302)
         res.headers.location.should.equal('/?query=@siberianmh/cosmos')
       })

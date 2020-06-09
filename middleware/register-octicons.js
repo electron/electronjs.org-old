@@ -13,7 +13,13 @@ const octicons = require('@primer/octicons')
  * @param {String} ariaLabel Add accessibility `aria-label` to the icon.
  * @returns {Promise<any>} Returns a string of the `<svg>` tag.
  */
-module.exports = async function getOcticons (name, className, width, height, ariaLabel) {
+module.exports = async function getOcticons(
+  name,
+  className,
+  width,
+  height,
+  ariaLabel
+) {
   // Strict Null Checking
   if (name === undefined || name === null) {
     return
@@ -23,7 +29,7 @@ module.exports = async function getOcticons (name, className, width, height, ari
     class: className || null,
     width: width || null,
     height: height || null,
-    'aria-label': ariaLabel || null
+    'aria-label': ariaLabel || null,
   }
 
   if (opts.class === null) delete opts.class

@@ -4,7 +4,8 @@ const editorCodes = require('crowdin-editor-language-codes')
 module.exports = (req, res, next) => {
   const doc = i18n.docs[req.language][req.path]
   const docEn = req.context.currentLocale.startsWith('en')
-    ? null : i18n.docs['en-US'][req.path]
+    ? null
+    : i18n.docs['en-US'][req.path]
   if (!doc) return next()
 
   // Crowdin's undocumented mystery locale URL format. See https://git.io/vADu0
@@ -22,9 +23,9 @@ module.exports = (req, res, next) => {
     page: {
       title: `${doc.title} | Electron`,
       description: doc.description,
-      url: req.url
+      url: req.url,
     },
-    layout: 'docs'
+    layout: 'docs',
   })
 
   res.render('docs/show', context)

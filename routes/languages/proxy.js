@@ -1,12 +1,12 @@
 const { createProxyMiddleware } = require('http-proxy-middleware')
 const url = require('url')
 
-const apiWhitelist = [
+const apiAllowlist = [
   '/status',
   '/language-status',
   '/info',
   '/download-glossary',
-  '/export-file'
+  '/export-file',
 ]
 
 module.exports = (req, res, next) => {
@@ -16,7 +16,7 @@ module.exports = (req, res, next) => {
   if (req.method !== 'GET') {
     return res.status(405).json(`${req.method} not allowed`)
   }
-  if (!(apiWhitelist.find((path) => path === url.parse(req.url).pathname))) {
+  if (!apiAllowlist.find((path) => path === url.parse(req.url).pathname)) {
     return res.status(404).render('404', req.context)
   }
   return createProxyMiddleware({
@@ -28,10 +28,10 @@ module.exports = (req, res, next) => {
       newPath.pathname = newPath.pathname.replace('/crowdin', '')
       Object.assign(newPath.query, {
         key: process.env.CROWDIN_KEY,
-        json: true
+        json: true,
       })
       newPath.search = null
       return url.format(newPath)
-    }
+    },
   })(req, res, next)
 }

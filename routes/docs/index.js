@@ -4,10 +4,10 @@ module.exports = (req, res) => {
   const docsReadme = i18n.docs[req.language]['/docs/README']
 
   const [
+    ,
+    ,
     // Not used: https://github.com/electron/electron/tree/master/docs#official-guides
-    ,
     // Not used: https://github.com/electron/electron/tree/master/docs#faq
-    ,
     // https://github.com/electron/electron/tree/master/docs#guides-and-tutorials
     guides,
     // https://github.com/electron/electron/tree/master/docs#detailed-tutorials
@@ -21,7 +21,7 @@ module.exports = (req, res) => {
     // https://github.com/electron/electron/tree/master/docs#modules-for-the-renderer-process-web-page
     rendererProcModules,
     // https://github.com/electron/electron/tree/master/docs#modules-for-both-processes
-    bothProcModules
+    bothProcModules,
   ] = docsReadme.sections
 
   const context = Object.assign(req.context, {
@@ -31,7 +31,7 @@ module.exports = (req, res) => {
     customDomElements,
     mainProcModules,
     rendererProcModules,
-    bothProcModules
+    bothProcModules,
   })
 
   // Taken from https://github.com/electron/electron/tree/master/docs

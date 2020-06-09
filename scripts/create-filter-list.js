@@ -13,10 +13,17 @@ class FilterList {
     this.input = input
     this.index = this.buildIndex(list)
     this.referenceList = list.cloneNode(true)
-    this.referenceList.querySelectorAll('img[data-src]').forEach(lazyLoadImages.addImage)
-    this.totalAppCount = this.referenceList.querySelectorAll('.listed-app').length
+    this.referenceList
+      .querySelectorAll('img[data-src]')
+      .forEach(lazyLoadImages.addImage)
+    this.totalAppCount = this.referenceList.querySelectorAll(
+      '.listed-app'
+    ).length
 
-    this.input.addEventListener('input', debounce((evt) => this.search(evt.target.value), 250))
+    this.input.addEventListener(
+      'input',
+      debounce((evt) => this.search(evt.target.value), 250)
+    )
     // trigger a search, in case there is an existing value in the text input
     this.search(this.input.value)
   }
@@ -46,9 +53,13 @@ class FilterList {
       newList = this.referenceList.cloneNode(false)
       results.forEach((result) => {
         // Clone from existing list if it exists
-        let node = existingList.querySelector(`[data-search-id="${result.ref}"]`)
+        let node = existingList.querySelector(
+          `[data-search-id="${result.ref}"]`
+        )
         if (!node) {
-          node = this.referenceList.querySelector(`[data-search-id="${result.ref}"]`)
+          node = this.referenceList.querySelector(
+            `[data-search-id="${result.ref}"]`
+          )
         }
         const clone = node.cloneNode(true)
         newList.appendChild(clone)
@@ -94,12 +105,25 @@ class FilterList {
 
   docForEntry(id, entry) {
     const name = entry.querySelector('.listed-app-name').textContent
-    const description = entry.querySelector('.listed-app-description').textContent
-    const addDateSelector = entry.querySelector('.listed-app-add-date [data-date]')
-    const addDate = addDateSelector != null ? addDateSelector.getAttribute('data-date') : undefined;
-    const releaseDateSelector = entry.querySelector('.listed-app-release-date [data-date]')
-    const releaseDate = releaseDateSelector != null ? releaseDateSelector.getAttribute('data-date') : undefined;
-    const keywords = entry.querySelector('.listed-app-keywords').textContent.split(',')
+    const description = entry.querySelector('.listed-app-description')
+      .textContent
+    const addDateSelector = entry.querySelector(
+      '.listed-app-add-date [data-date]'
+    )
+    const addDate =
+      addDateSelector != null
+        ? addDateSelector.getAttribute('data-date')
+        : undefined
+    const releaseDateSelector = entry.querySelector(
+      '.listed-app-release-date [data-date]'
+    )
+    const releaseDate =
+      releaseDateSelector != null
+        ? releaseDateSelector.getAttribute('data-date')
+        : undefined
+    const keywords = entry
+      .querySelector('.listed-app-keywords')
+      .textContent.split(',')
 
     return { id, name, description, addDate, releaseDate, keywords }
   }
