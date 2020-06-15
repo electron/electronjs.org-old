@@ -26,7 +26,7 @@ module.exports = (req, res, next) => {
       url: req.url,
     },
     layout: 'docs',
-    nav: i18n.navs[req.context.currentLocale]
+    nav: i18n.navs[req.context.currentLocale],
   })
 
   res.render('docs/show', context)
