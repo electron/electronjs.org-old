@@ -78,13 +78,11 @@ npm run dev
 You should now have an Express server running at
 [localhost:5000](http://localhost:5000) :tada:
 
-Use `npm update` to update all dependencies before running run `npm install`.
-
 ### Installation Troubleshooting
 
 If there was an error building the `node-sass` dependency, try running `npm rebuild node-sass`.
 
-**NOTE**: If errors are still shown after you have installed all the dependencies, try to delete the node modules directory in your project and run `npm install` . 
+**NOTE**: If errors are still shown after you have installed all the dependencies, try to delete the node modules directory in your project and run `npm install` again. 
 
 Read on for more info about the structure of the site.
 
