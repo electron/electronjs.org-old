@@ -78,14 +78,13 @@ npm run dev
 You should now have an Express server running at
 [localhost:5000](http://localhost:5000) :tada:
 
-NOTE: Make sure you have all dependencies/packages updated. Try installing all dependencies before you run `npm run dev` . 
-
 Use `npm update` to update all dependencies before running run `npm install`.
 
-Try to rebuild the file/directory shown in the error `npm rebuild node-sass` if error was something like this 
-`Error: ENOENT: no such file or directory, scandir 'C:\Users\home\electronjs.org\node_modules\node-sass\vendor'`
+### Installation Troubleshooting
 
-NOTE: If some error is still shown after you have installed all the dependencies, delete the node modules directory in your project and run `npm install` . Feel free to ask for help .
+If there was an error building the `node-sass` dependency, try running `npm rebuild node-sass`.
+
+**NOTE**: If errors are still shown after you have installed all the dependencies, try to delete the node modules directory in your project and run `npm install` . 
 
 Read on for more info about the structure of the site.
 
