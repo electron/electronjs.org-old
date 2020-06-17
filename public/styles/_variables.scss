@@ -3,7 +3,7 @@
 // TODO: Audit for contrast
 
 // main
-$main-bg-color:       hsl(190, 12%,100%) !default;
+$main-bg-color:       hsl(190, 12%, 100%) !default;
 $main-bg-color-shade: hsl(190, 12%, 97%) !default;
 $main-color-subtle:   hsl(190, 12%, 54%) !default;
 $main-color:          hsl(192, 24%, 30%) !default;
@@ -29,7 +29,6 @@ $mini-color-link:   hsl(230, 24%, 100%) !default;
 // Accent
 $accent-color: hsl(335, 87%, 47%) !default;
 
-
 // Basecoat overrides
 
 $theme-color: $main-color-strong !default;
@@ -44,7 +43,7 @@ $border-color: $main-border-color !default;
 // Default: $container-max-widths: ( xl: 1260px );
 $grid-breakpoints: map-merge($grid-breakpoints, (xl: 1300px)) !default;
 
-$code-font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace !default;
+$code-font-family: consolas, "Liberation Mono", menlo, courier, monospace !default;
 
-$nodejs-color: #65AA4C;
-$chromium-color: #5586EB
+$nodejs-color: #65aa4c;
+$chromium-color: #5586eb;
