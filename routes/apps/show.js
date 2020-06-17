@@ -34,5 +34,12 @@ module.exports = (req, res, next) => {
       ? app.screenshots[0].imageUrl
       : `${process.env.HOST}/images/apps/${app.icon64}`
 
+  if (app.youtube_video_url) {
+    context.app.youtube_video_url = app.youtube_video_url.replace(
+      'watch?v=',
+      'embed/'
+    )
+  }
+
   res.render('apps/show', context)
 }

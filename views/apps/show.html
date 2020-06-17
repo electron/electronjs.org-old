@@ -164,6 +164,11 @@
             {{{app.readmeCleaned}}}
           </main>
         {{/if}}
+        {{#if app.youtube_video_url}}
+          <div class="app-box app-video-link">
+            <iframe src="{{app.youtube_video_url}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        {{/if}}
         <div class="app-box app-screenshots">
           <div class="active-screenshot">
             <img alt="not_used" />
