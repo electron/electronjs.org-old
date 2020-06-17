@@ -73,15 +73,11 @@ p:last-child {
 .text-center-lg { @include breakpoint(lg) { text-align: center !important; } }
 
 h1 { -webkit-font-smoothing: antialiased; }
-h2 { font-weight: 300; -webkit-font-smoothing: antialiased; }
+h2 { font-weight: 300; -webkit-font-smoothing: antialiased; margin-top: 0; }
 h3 { font-weight: 400; -webkit-font-smoothing: antialiased; }
 h4 { font-weight: 500; }
 h5 { font-weight: 700; }
 h6 { font-weight: 700; }
-
-h2 {
-  margin-top: 0;
-}
 
 // Fade in lazily loaded images; see /scripts/lazy-load-images.js
 img {
@@ -105,15 +101,40 @@ img[data-src] {
 // add top margin
 // to make it easier to see headers within a long wall of text
 .strong-headers {
-  h1 { font-weight: 300 !important; -webkit-font-smoothing: initial !important; }
-  h2 { margin: 1.75em 0 1em !important; font-size: 32px !important; font-weight: 300 !important; -webkit-font-smoothing: initial !important; border-bottom: $border !important; }
-  h3 { margin: 2em 0 0.75em !important; font-size: 26px !important; font-weight: 300 !important; -webkit-font-smoothing: initial !important; }
-  h4 { margin-top: 1.5em !important; font-weight: 300 !important; }
-  h5 { margin-top: 1.25em !important; }
-  h6 { margin-top: 1.125em !important; }
+  h1 {
+    font-weight: 300 !important;
+    -webkit-font-smoothing: initial !important;
 
-  &.strong-headers hr { margin: $spacer6 0; }
-  h1 { @include breakpoint(lg) { font-size: $body-font-size * 2.75; } }
+    @include breakpoint(lg) { font-size: $body-font-size * 2.75; }
+  }
+
+  h2 {
+    margin: 1.75em 0 1em !important;
+    font-size: 32px !important;
+    font-weight: 300 !important;
+    -webkit-font-smoothing: initial !important;
+    border-bottom: $border !important;
+  }
+
+  h3 {
+    margin: 2em 0 0.75em !important;
+    font-size: 26px !important;
+    font-weight: 300 !important;
+    -webkit-font-smoothing: initial !important;
+  }
+
+  h4 {
+    margin-top: 1.5em !important;
+    font-weight: 300 !important;
+  }
+
+  h5 {
+    margin-top: 1.25em !important;
+  }
+
+  h6 {
+    margin-top: 1.125em !important;
+  }
 }
 
 // Responsive video
