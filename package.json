@@ -54,7 +54,7 @@
     "express-hbs": "^2.3.3",
     "express-request-language": "^1.1.15",
     "fast-memoize": "^2.5.2",
-    "feed": "^4.1.0",
+    "feed": "^4.2.0",
     "flat": "^5.0.0",
     "fs-extra": "^9.0.1",
     "gray-matter": "^4.0.2",
