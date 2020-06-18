@@ -1,22 +1,9 @@
-// @ts-check
-
 /**
  * @param {string} category
  * @param {string} action
  */
 const sendScience = (category, action) => {
-  const body = {
-    category: category,
-    action: action,
-  }
-
-  fetch('', {
-    method: 'POST',
-    headers: {
-      'Content-Type': "application/json",
-    },
-    body: JSON.stringify(body)
-  })
+  ga('send', 'event', category, action)
 }
 
 const handleScience = () => {
