@@ -18,12 +18,15 @@
     "precompile-assets": "cross-env NODE_ENV=production node script/precompile-assets.js",
     "linkschecker": "NODE_PATH=. NODE_ENV=test node scripts/links-checker.js",
     "cypress": "cypress run",
-    "lint": "eslint . --fix",
+    "lint": "npm run lint:js && npm run lint:style",
+    "lint:js": "eslint . --fix",
+    "lint:style": "stylelint 'public/styles/*.scss' --fix",
     "heroku-postbuild": "npm run precompile-assets"
   },
   "husky": {
     "hooks": {
-      "pre-push": "check-for-leaks"
+      "pre-push": "check-for-leaks",
+      "pre-commit": "lint-staged"
     }
   },
   "dependencies": {
@@ -93,16 +96,20 @@
     "check-for-leaks": "^1.2.1",
     "cheerio": "^1.0.0-rc.3",
     "cypress": "^4.8.0",
-    "husky": "^4.2.5",
-    "mocha": "^8.0.1",
-    "nock": "^12.0.3",
-    "nodemon": "^2.0.4",
-    "node-sass": "^4.14.1",
-    "simplecrawler": "^1.1.9",
     "eslint": "^7.2.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "mocha": "^8.0.1",
+    "nock": "^12.0.3",
+    "node-sass": "^4.14.1",
+    "nodemon": "^2.0.4",
     "prettier": "^2.0.5",
+    "simplecrawler": "^1.1.9",
+    "stylelint": "^13.6.1",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-scss": "^3.17.2",
     "supertest": "^4.0.2",
     "supertest-session": "^4.0.0",
     "uglify-js": "^3.8.1",
@@ -111,5 +118,9 @@
   },
   "engines": {
     "node": ">=12 <14"
+  },
+  "lint-staged": {
+    "*.js": "npm run lint:js",
+    "*.scss": "npm run lint:style"
   }
 }

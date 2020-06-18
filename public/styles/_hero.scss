@@ -5,22 +5,23 @@
   margin: 0 auto;
   backface-visibility: hidden;
   max-width: 900px;
+
   @include breakpoint(xl) { max-width: 100%; }
+
   animation: hero-animation 1s forwards;
 }
+
 @keyframes hero-animation {
-    0% { opacity: 0; transform: scale(.96); }
+  0% { opacity: 0; transform: scale(0.96); }
   100% { opacity: 1; transform: scale(1); }
 }
 
-
 // Electron Icon
 
-$hero-icon-delay: .6s;
-$hero-icon-delay-diff: .1s;
+$hero-icon-delay: 0.6s;
+$hero-icon-delay-diff: 0.1s;
 $hero-icon-duration: 1s;
 $hero-icon-all-delay: 9 * $hero-icon-delay-diff + $hero-icon-delay;
-
 
 .hero-icon {
   transform-origin: 50% 50%;
@@ -28,6 +29,7 @@ $hero-icon-all-delay: 9 * $hero-icon-delay-diff + $hero-icon-delay;
   stroke-width: 5;
   stroke-linecap: round;
 }
+
 .hero-icon.dot {
   fill: $jumbo-color-strong;
   stroke: none;
@@ -37,6 +39,7 @@ $hero-icon-all-delay: 9 * $hero-icon-delay-diff + $hero-icon-delay;
   stroke-dasharray: 170;
   stroke-dashoffset: 170;
 }
+
 .hero-icon--circle {
   stroke-dasharray: 70;
   stroke-dashoffset: 70;
@@ -46,14 +49,14 @@ $hero-icon-all-delay: 9 * $hero-icon-delay-diff + $hero-icon-delay;
   .hero-icon-#{$i} {
     $_duration: $hero-icon-duration;
     $_delay:   $hero-icon-delay + ($hero-icon-delay-diff * $i);
-    animation: hero-icon-animation $_duration $_delay cubic-bezier(.05, .35, .20, 1) forwards;
+
+    animation: hero-icon-animation $_duration $_delay cubic-bezier(0.05, 0.35, 0.2, 1) forwards;
   }
 }
 
 @keyframes hero-icon-animation {
   100% { stroke-dashoffset: 0; }
 }
-
 
 // Apps ----------------
 
@@ -65,29 +68,33 @@ $hero-icon-all-delay: 9 * $hero-icon-delay-diff + $hero-icon-delay;
 // Ripple effect
 $hero-app-delay: $hero-icon-all-delay;
 $hero-app-delay-diff: 0.04s;
-$hero-app-duration: .8s;
+$hero-app-duration: 0.8s;
 $hero-app-opacity: 0.1;
 
 @keyframes hero-app-animate-left {
-    0% { transform: scale(1)   translateX(30px);    opacity: $hero-app-opacity; animation-timing-function: cubic-bezier(.3,.1,.9,.5);  }
-   20% { transform: scale(1.1) translateX(20px);                              animation-timing-function: cubic-bezier(.1,.4,.2,1);             }
-  100% { transform: scale(1)   translateX( 0px);    opacity: 1; }
+  0% { transform: scale(1)   translateX(30px); opacity: $hero-app-opacity; animation-timing-function: cubic-bezier(0.3, 0.1, 0.9, 0.5); }
+  20% { transform: scale(1.1) translateX(20px); animation-timing-function: cubic-bezier(0.1, 0.4, 0.2, 1); }
+  100% { transform: scale(1)   translateX(0); opacity: 1; }
 }
+
 @keyframes hero-app-animate-right {
-    0% { transform: scale(1)   translateX(-30px);   opacity: $hero-app-opacity; animation-timing-function: cubic-bezier(.3,.1,.9,.5);  }
-   20% { transform: scale(1.1) translateX(-20px);                               animation-timing-function: cubic-bezier(.1,.4,.2,1);             }
-  100% { transform: scale(1)   translateX(  0px);   opacity: 1; }
+  0% { transform: scale(1)   translateX(-30px); opacity: $hero-app-opacity; animation-timing-function: cubic-bezier(0.3, 0.1, 0.9, 0.5); }
+  20% { transform: scale(1.1) translateX(-20px); animation-timing-function: cubic-bezier(0.1, 0.4, 0.2, 1); }
+  100% { transform: scale(1)   translateX(0); opacity: 1; }
 }
 
 // Colorize and animate
 @for $i from 1 through 15 {
   .hero-app-#{$i} {
-    fill: mix( $jumbo-color-subtle, $jumbo-bg-color, 80% - $i * 4% );
+    fill: mix($jumbo-color-subtle, $jumbo-bg-color, 80% - $i * 4%);
 
     $_delay: $hero-app-delay + ($hero-app-delay-diff * $i);
+
     @if $i % 2 == 0 {
       animation: hero-app-animate-left $hero-app-duration $_delay both;
-    } @else {
+    }
+
+    @else {
       animation: hero-app-animate-right $hero-app-duration $_delay both;
     }
   }
