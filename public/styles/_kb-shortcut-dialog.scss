@@ -1,14 +1,14 @@
 /* modal background */
 .kb-shortcut {
-	display: none; /* Hidden by default */
-	position: fixed; /* Stay in place */
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
   z-index: 5;
   left: 0;
   top: 0;
   width: 100%; /* Full width */
   height: 100%;
-	overflow: auto; /* Enable scroll if needed */
-	background-color: rgba(0, 0, 0, 0.4); /* Fallback color */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4); /* Fallback color */
 }
 
 /* modal box */
@@ -26,7 +26,7 @@
   // background-color: #5cb85c;
   // color: white;
 
-	// color: $jumbo-color;
+  // color: $jumbo-color;
   // background-color: lighten($jumbo-bg-color, 2%);
   // border-bottom-color: darken($jumbo-bg-color, 8%);
 
@@ -45,7 +45,7 @@
     cursor: pointer;
   }
 
-	color: $main-color-subtle;
+  color: $main-color-subtle;
   background-color: #74b1be7a;
 }
 
@@ -65,11 +65,12 @@
   color: white;
 }
 
-.kb-shortcut th, .kb-shortcut td {
+.kb-shortcut th,
+.kb-shortcut td {
   padding: 5px;
   text-align: left;
 }
 
 .kb-shortcut h2 {
-	margin: 0.5em 0;
+  margin: 0.5em 0;
 }

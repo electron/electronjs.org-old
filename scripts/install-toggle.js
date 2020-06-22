@@ -1,8 +1,8 @@
-module.exports = function installToggle () {
+module.exports = function installToggle() {
   /**
    * @param {HTMLButtonElement} el
    */
-  function initializeToggler (el) {
+  function initializeToggler(el) {
     el.addEventListener('click', () => {
       const targetAttrib = el.getAttribute('data-toggle-target')
       const targets = document.querySelectorAll(targetAttrib)

@@ -12,10 +12,10 @@ module.exports = (req, res, next) => {
     { path: 'all', name: 'All the Electron Docs!' },
     { path: 'api', name: 'API' },
     { path: 'development', name: 'Development' },
-    { path: 'tutorial', name: 'Guides' }
+    { path: 'tutorial', name: 'Guides' },
   ]
   const category = req.params.category
-  const selectedCategories = categoryList.filter(cat => cat.path === category)
+  const selectedCategories = categoryList.filter((cat) => cat.path === category)
   let context
 
   if (!selectedCategories.length) return next()
@@ -24,13 +24,13 @@ module.exports = (req, res, next) => {
   if (category === 'all') {
     context = Object.assign(req.context, {
       layout: 'docs',
-      viewingAllDocs: true
+      viewingAllDocs: true,
     })
   } else {
     context = Object.assign(req.context, {
       layout: 'docs',
       processes: processes,
-      category: selectedCategory.name
+      category: selectedCategory.name,
     })
   }
 

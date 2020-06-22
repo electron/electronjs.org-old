@@ -4,11 +4,13 @@ const categories = require('electron-apps/categories')
 module.exports = (req, res, next) => {
   const context = Object.assign(req.context, {
     apps: apps,
-    categories: categories
+    categories: categories,
   })
 
   if (req.query.category) {
-    const category = categories.find(category => category.slug === req.query.category)
+    const category = categories.find(
+      (category) => category.slug === req.query.category
+    )
 
     if (!category) return next()
 
@@ -16,8 +18,8 @@ module.exports = (req, res, next) => {
     context.currentCategory = req.query.category
   }
 
-  context.categories = categories.map(category => {
-    category.className = (category.slug === req.query.category) ? 'selected' : ''
+  context.categories = categories.map((category) => {
+    category.className = category.slug === req.query.category ? 'selected' : ''
     return category
   })
 

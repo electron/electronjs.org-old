@@ -142,6 +142,12 @@ releases:
   all_releases: All Releases
   back_to_index: Back to index
 
+electron_is_good:
+  title: Apps users love, built with Electron
+  description:
+    Thousands of organizations spanning all industries use Electron to build
+    cross-platform software.
+
 electron_is_easy:
   title: It's easier than you think
   description:
@@ -149,7 +155,6 @@ electron_is_easy:
     framework for creating native applications with web technologies like
     JavaScript, HTML, and CSS. It takes care of the hard parts so you can
     focus on the core of your application.
-  video_link: Watch the video
 
 web_technologies:
   title: Web Technologies
@@ -217,26 +222,14 @@ headings:
 
 taglines:
   languages: Localized content from our awesome global developer community.
-  announcement: Electron just joined the OpenJS Foundation. See <a href="/blog/electron-joins-openjsf">the announcement</a> for more info!
+  announcement: Black Lives Matter. Support <a href="https://support.eji.org/give/153413/#!/donation/checkout">the Equal Justice Initiative</a> and <a href="https://www.gofundme.com/f/georgefloyd">the George Floyd Memorial Fund</a>.
 
 help_translate: "Help translate"
 
 footer:
   see_the_faq: See the frequently asked questions
 
-companies:
-  title: Built on Electron
-  description:
-    Initially developed for GitHub's
-    <a href='https://atom.io' target='_blank'>Atom editor</a>, Electron has
-    since been adopted by companies all over the world.
 apps:
-  description:
-    With Electron, creating a desktop application for your company or idea
-    is easy. Check out <a href='/apps'>some of the apps created by the community</a> or
-    <a href="https://github.com/electron/electron-apps/blob/master/contributing.md#adding-your-app">add your own</a>.
-  view_more: View more apps
-  submit_your_own: submit your own
   something_missing: Something missing?
   edit_this_app: Edit this app.
   search_app: Filter apps by name, description, etc…

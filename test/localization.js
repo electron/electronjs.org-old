@@ -11,19 +11,29 @@ const flat = require('flat')
 const getProp = require('lodash/get')
 
 const locale = require(path.join(__dirname, '../data/locale.yml'))
-const views = walk.entries(path.join(__dirname, '../views'))
-  .filter(entry => path.extname(entry.relativePath) === '.html')
-  .map(entry => {
+const views = walk
+  .entries(path.join(__dirname, '../views'))
+  .filter((entry) => path.extname(entry.relativePath) === '.html')
+  .map((entry) => {
     const fullPath = path.join(entry.basePath, entry.relativePath)
     const view = {
       relativePath: entry.relativePath,
-      localizedKeys: (fs.readFileSync(fullPath, 'utf8').match(/{{(#each )?(@root\/)?[./]*localized\.[a-z_.]*}}/g) || [])
-        .map(ref => ref.replace(/(\.\.|@root)\//g, '').replace('#each ', '').replace('{{localized.', '').replace('}}', ''))
+      localizedKeys: (
+        fs
+          .readFileSync(fullPath, 'utf8')
+          .match(/{{(#each )?(@root\/)?[./]*localized\.[a-z_.]*}}/g) || []
+      ).map((ref) =>
+        ref
+          .replace(/(\.\.|@root)\//g, '')
+          .replace('#each ', '')
+          .replace('{{localized.', '')
+          .replace('}}', '')
+      ),
     }
     return view
   })
-  .filter(view => view.localizedKeys.length)
-  // console.log(views)
+  .filter((view) => view.localizedKeys.length)
+// console.log(views)
 
 describe('localized views', () => {
   // Find all instances of {{localized.something.something}} in the views
@@ -31,13 +41,16 @@ describe('localized views', () => {
   it('every reference to a localized string is defined', () => {
     views.should.be.an('array')
     views.length.should.be.above(8)
-    views.forEach(view => {
+    views.forEach((view) => {
       view.localizedKeys.length.should.be.above(0)
-      view.localizedKeys.forEach(key => {
+      view.localizedKeys.forEach((key) => {
         // #each is OK
         if (Array.isArray(getProp(locale, key))) return
 
-        expect(getProp(locale, key), `${view.relativePath}: ${key} has no string in locale.yml`).to.be.a('string')
+        expect(
+          getProp(locale, key),
+          `${view.relativePath}: ${key} has no string in locale.yml`
+        ).to.be.a('string')
       })
     })
   })
@@ -45,9 +58,9 @@ describe('localized views', () => {
   // Ensure every string in locale.yml is actually used somewhere
   it('every string in locale.yml is used in a view (except for pages.* and _404.*)', () => {
     const keys = Object.keys(flat(locale))
-      .filter(key => !key.startsWith('pages.'))
-      .filter(key => !key.startsWith('_404.'))
-      .map(key => {
+      .filter((key) => !key.startsWith('pages.'))
+      .filter((key) => !key.startsWith('_404.'))
+      .map((key) => {
         const split = key.split('.')
         // If it is an array index, just check we use the array
         if (/^[0-9]+$/.test(split[split.length - 1])) {
@@ -63,6 +76,11 @@ describe('localized views', () => {
       return acc
     }, [])
 
-    keys.forEach(key => expect(usedKeys, `did not find ${key} in any handlebars template`).to.include(key))
+    keys.forEach((key) =>
+      expect(
+        usedKeys,
+        `did not find ${key} in any handlebars template`
+      ).to.include(key)
+    )
   })
 })

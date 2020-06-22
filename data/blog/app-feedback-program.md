@@ -6,6 +6,8 @@ date: '2018-10-02'
 
 Electron is working on making its release cycles faster and more stable. To make that possible, we've started the App Feedback Program for large-scale Electron apps to test our beta releases and report app-specific issues to us. This helps us to prioritize work that will get applications upgraded to our next stable release sooner.
 
+Edit (2020-05-21): This program has been retired.
+
 ---
 
 ## Who can join?

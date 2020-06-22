@@ -9,14 +9,14 @@
 
 const { getPlatformFromUserAgent } = require('platform-utils')
 
-module.exports = function platformSpecificContent () {
+module.exports = function platformSpecificContent() {
   const platform = getPlatformFromUserAgent()
   const elements = Array.from(document.querySelectorAll(`.${platform}-only`))
 
-  elements.forEach(el => {
+  elements.forEach((el) => {
     const classes = Array.from(el.classList)
     console.log(classes)
-    let displayType = classes.find(c => c.startsWith('display-'))
+    let displayType = classes.find((c) => c.startsWith('display-'))
     displayType = displayType ? displayType.replace('display-', '') : 'block'
     el.style.display = displayType
   })
