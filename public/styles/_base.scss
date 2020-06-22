@@ -10,21 +10,6 @@ body {
   }
 }
 
-body > header,
-body > footer,
-body > section,
-main > div:not(.docs-page) > div:not(.docs),
-.blog-post,
-#languages-header-menu,
-.announcement-banner,
-.jumbotron,
-#hits,
-.fiddle,
-.spectron,
-.devtron {
-  filter: grayscale(100%);
-}
-
 a {
   color: $main-link-color;  // override Primer
 }
