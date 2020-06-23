@@ -16,6 +16,5 @@ module.exports = (req, res) => {
     apps,
   })
 
-  // Reset to 'home' to restore homepage
-  res.render('blm', context)
+  res.render('home', context)
 }
