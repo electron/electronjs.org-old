@@ -5,9 +5,9 @@ author:
 date: '2020-06-23'
 ---
 
-At [OpenJS World](https://events19.linuxfoundation.org/events/nodejs-interactive-2019/) this morning, we announced that Electron has officially graduated from the [OpenJS Foundation's](https://openjsf.org/) incubation program, and is now an OpenJS Foundation Impact Project. 
+At [OpenJS World](https://events.linuxfoundation.org/openjs-world/) this morning, we announced that Electron has officially graduated from the [OpenJS Foundation's](https://openjsf.org/) incubation program, and is now an OpenJS Foundation Impact Project. 
 
-Electron [entered incubation in December of 2019](https://openjsf.org/blog/2019/12/11/electron-joins-the-openjs-foundation/), at the last OpenJS Foundation global conference in Montreal. We're excited to take a larger role in the JavaScript community as an Impact Project, and continue our partnership with the OpenJS Foundation. This is an exciting move for Electron, and we see it as a next step in our evolution as an open-source project.
+Electron [entered incubation in December of 2019](https://openjsf.org/blog/2019/12/11/electron-joins-the-openjs-foundation/), at the last OpenJS Foundation global conference in Montreal. We're excited to take a larger role in the JavaScript community as an Impact Project, and continue our partnership with the OpenJS Foundation.
 
 ---
 
