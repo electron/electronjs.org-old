@@ -114,7 +114,7 @@
     "supertest-session": "^4.0.0",
     "uglify-js": "^3.8.1",
     "wait-on": "^5.0.1",
-    "walk-sync": "^2.1.0"
+    "walk-sync": "^2.2.0"
   },
   "engines": {
     "node": ">=12 <14"
