@@ -5,10 +5,8 @@
 @import "../bower_components/basecoat/scss/variables"; // Basecoat override
 @import "variables"; // Electron override
 
-
 // Global requirements
 @import "../bower_components/primer-css/scss/mixins";
-
 @import "../bower_components/basecoat/scss/mixins/breakpoints";
 @import "../bower_components/basecoat/scss/mixins/grid";
 @import "../bower_components/basecoat/scss/mixins/clearfix";
@@ -18,7 +16,6 @@
 @import "../bower_components/primer-css/scss/normalize";
 @import "../bower_components/primer-css/scss/base";
 @import "../bower_components/primer-css/scss/type";
-
 @import "../bower_components/basecoat/scss/layout"; // Basecoat override
 @import "../bower_components/basecoat/scss/type"; // Basecoat override
 
@@ -26,7 +23,6 @@
 @import "../bower_components/primer-css/scss/buttons";
 @import "../bower_components/primer-css/scss/filter-list";
 @import "../bower_components/primer-css/scss/tooltips";
-
 @import "../bower_components/basecoat/scss/grid";
 @import "primer-support/index.scss";
 
