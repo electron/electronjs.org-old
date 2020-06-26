@@ -15,7 +15,6 @@ module.exports = function platformSpecificContent() {
 
   elements.forEach((el) => {
     const classes = Array.from(el.classList)
-    console.log(classes)
     let displayType = classes.find((c) => c.startsWith('display-'))
     displayType = displayType ? displayType.replace('display-', '') : 'block'
     el.style.display = displayType
