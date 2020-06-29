@@ -80,9 +80,9 @@ You should now have an Express server running at
 
 ### Installation Troubleshooting
 
-If there was an error building the `node-sass` dependency, try running `npm rebuild node-sass`.
+If there is an error building the `node-sass` dependency, try running `npm rebuild node-sass`.
 
-**NOTE**: If errors are still shown after you have installed all the dependencies, try to delete the node modules directory in your project and run `npm install` again. 
+**Note**: If errors are still shown after you have installed all the dependencies, try to delete the `node_modules` directory in your project and run `npm install` again. 
 
 Read on for more info about the structure of the site.
 
