@@ -1,4 +1,4 @@
-# electronjs.org
+# electronjs.org ![Test](https://github.com/electron/electronjs.org/workflows/Test/badge.svg?branch=master)
 
 This is the source code for the Electron website at 
 [electronjs.org](https://electronjs.org).
