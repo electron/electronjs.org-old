@@ -2,7 +2,7 @@ const querystring = require('querystring')
 const pagination = require('ultimate-pagination')
 const paginator = require('paginate-array')
 
-function toNumber (value, defaultValue) {
+function toNumber(value, defaultValue) {
   const num = parseInt(value, 10)
   if (isNaN(num)) {
     return defaultValue
@@ -12,7 +12,7 @@ function toNumber (value, defaultValue) {
 }
 
 class QueryParamOutOfRangeError extends Error {
-  constructor (message, newQuery) {
+  constructor(message, newQuery) {
     super(message)
     this.name = 'QueryParamOutOfRangeError'
     this.newQuery = newQuery
@@ -20,18 +20,18 @@ class QueryParamOutOfRangeError extends Error {
 }
 
 class RangeCheck {
-  constructor (query) {
+  constructor(query) {
     this.failed = false
     this.query = { ...query }
   }
 
-  fail (newQueryData) {
+  fail(newQueryData) {
     this.failed = true
     this.query = { ...this.query, ...newQueryData }
   }
 
-  getQuery () {
-    Object.keys(this.query).forEach(key => {
+  getQuery() {
+    Object.keys(this.query).forEach((key) => {
       if (this.query[key] === undefined) {
         delete this.query[key]
       }
@@ -42,7 +42,7 @@ class RangeCheck {
 }
 
 class ReleasesPage {
-  constructor (type, versionFilter, data, query) {
+  constructor(type, versionFilter, data, query) {
     const rangeCheck = new RangeCheck(query)
 
     let currentPage = toNumber(query.page, 1)
@@ -56,14 +56,14 @@ class ReleasesPage {
     }
 
     const majorVersions = new Set()
-    data.forEach(release => {
+    data.forEach((release) => {
       majorVersions.add(release.semver.major)
     })
     this.majorVersions = [...majorVersions].sort((a, b) => b - a)
 
     if (versionFilter !== null) {
       if (this.majorVersions.includes(versionFilter)) {
-        data = data.filter(release => release.semver.major === versionFilter)
+        data = data.filter((release) => release.semver.major === versionFilter)
       } else {
         rangeCheck.fail({ version: undefined, page: 1 })
       }
@@ -77,15 +77,21 @@ class ReleasesPage {
     }
 
     if (rangeCheck.failed) {
-      throw new QueryParamOutOfRangeError('Query params out of range', rangeCheck.getQuery())
+      throw new QueryParamOutOfRangeError(
+        'Query params out of range',
+        rangeCheck.getQuery()
+      )
     }
 
-    this.pagination = data.length === 0 ? [] : pagination.getPaginationModel({
-      currentPage: this.page.currentPage,
-      totalPages: this.page.totalPages
-    })
+    this.pagination =
+      data.length === 0
+        ? []
+        : pagination.getPaginationModel({
+            currentPage: this.page.currentPage,
+            totalPages: this.page.totalPages,
+          })
     // add a query string to each pagination model for URL generation
-    this.pagination.forEach(item => {
+    this.pagination.forEach((item) => {
       const newQuery = { ...query, page: item.value }
       item.query = querystring.stringify(newQuery)
     })
@@ -98,14 +104,23 @@ module.exports = (type) => {
 
     const versionFilter = toNumber(req.query.version, null)
     const localizedReleasesKey = `${type}_releases`
-    const localizedReleasesType = req.context.localized.releases[localizedReleasesKey]
+    const localizedReleasesType =
+      req.context.localized.releases[localizedReleasesKey]
 
     try {
-      res.render('releases', Object.assign({}, req.context, {
-        page: { title: `${localizedReleasesType} | Electron` },
-        releasesPage: new ReleasesPage(type, versionFilter, selectedReleases, req.query),
-        localizedReleasesType
-      }))
+      res.render(
+        'releases',
+        Object.assign({}, req.context, {
+          page: { title: `${localizedReleasesType} | Electron` },
+          releasesPage: new ReleasesPage(
+            type,
+            versionFilter,
+            selectedReleases,
+            req.query
+          ),
+          localizedReleasesType,
+        })
+      )
     } catch (err) {
       if (err instanceof QueryParamOutOfRangeError) {
         const newQuery = querystring.stringify(err.newQuery)

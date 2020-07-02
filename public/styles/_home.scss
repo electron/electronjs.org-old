@@ -4,7 +4,9 @@
 .jumbotron.jumbotron-home {
   // Reduce padding because the hero has some extra padding for the animation.
   padding: $spacer2 $spacer3 $spacer6 $spacer3;
+
   @include breakpoint(md) { padding: $spacer4 $spacer3 $spacer8 $spacer3; }
+
   @include breakpoint(xl) { padding: $spacer6 0 $spacer6 * 2 0; }
 }
 
@@ -38,7 +40,6 @@ a.featured-app-list-item {
   background-color: #e4e4e4;
   padding: 20px;
   margin: 20px;
-  display: inline-block;
   transition: background-color 200ms ease-in-out;
   position: relative;
   min-width: 200px;
@@ -93,6 +94,7 @@ a.featured-app-list-item {
     h4 {
       max-width: 100%;
       justify-self: flex-end;
+
       /* Turn it into a h5 */
       font-size: 14px;
       font-weight: 600;
@@ -114,9 +116,11 @@ a.featured-app-list-item {
   color: $jumbo-color-strong;
   background-color: $jumbo-bg-color;
   border-color: darken($jumbo-bg-color, 12%);
+
   code {
     color: inherit;
   }
+
   .c1.c1 {
     color: mix($jumbo-color-strong, $jumbo-bg-color, 60%);
   }
@@ -126,7 +130,7 @@ a.featured-app-list-item {
   border: 2px solid $main-border-color;
   border-top-width: 20px;
   border-radius: 4px;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   box-shadow: 0 25px 30px -18px rgba(0, 0, 0, 0.28);
 }
 
@@ -141,8 +145,8 @@ a.featured-app-list-item {
 .announcement-banner {
   background: #23252f;
   border-bottom: 1px solid #191a22;
-  padding-top: 6px;
-  padding-bottom: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   color: $jumbo-color-strong;
   text-align: center;
 

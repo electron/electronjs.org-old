@@ -6,24 +6,24 @@ const browserifyOptions = require('../middleware/browserify-opts')
 const sass = require('node-sass')
 const uglify = require('uglify-js')
 
-function dir (...parts) {
+function dir(...parts) {
   return path.join(__dirname, '..', ...parts)
 }
 
-function uglifyStream () {
+function uglifyStream() {
   const buffers = []
   return new stream.Transform({
-    transform (chunk, _encoding, callback) {
+    transform(chunk, _encoding, callback) {
       buffers.push(chunk)
       callback()
     },
 
-    flush (callback) {
+    flush(callback) {
       const code = Buffer.concat(buffers).toString()
       const compiled = uglify.minify(code)
       this.push(compiled.code)
       callback()
-    }
+    },
   })
 }
 
@@ -37,10 +37,10 @@ const PATHS = {
   jsDestination: dir('precompiled', 'scripts', 'index.js'),
 
   cssEntry: dir('public', 'styles', 'index.scss'),
-  cssDestination: dir('precompiled', 'styles', 'index.css')
+  cssDestination: dir('precompiled', 'styles', 'index.css'),
 }
 
-async function precompileAssets () {
+async function precompileAssets() {
   try {
     console.log('Creating directories...')
     await fs.remove(PATHS.precompiled)
@@ -56,10 +56,11 @@ async function precompileAssets () {
   }
 }
 
-function precompileJavaScript () {
+function precompileJavaScript() {
   return new Promise((resolve, reject) => {
     const b = browserifyOptions(browserify)(PATHS.jsEntry)
-    const pipe = b.bundle()
+    const pipe = b
+      .bundle()
       .pipe(uglifyStream())
       .pipe(fs.createWriteStream(PATHS.jsDestination))
     pipe.on('error', reject)
@@ -67,22 +68,23 @@ function precompileJavaScript () {
   })
 }
 
-function precompileCss () {
+function precompileCss() {
   return new Promise((resolve, reject) => {
-    sass.render({
-      file: PATHS.cssEntry,
-      includePaths: [
-        PATHS.nodeModules
-      ],
-      outputStyle: 'compressed'
-    }, async function onSassCompiled (err, result) {
-      if (err) {
-        return reject(err)
-      }
+    sass.render(
+      {
+        file: PATHS.cssEntry,
+        includePaths: [PATHS.nodeModules],
+        outputStyle: 'compressed',
+      },
+      async function onSassCompiled(err, result) {
+        if (err) {
+          return reject(err)
+        }
 
-      await fs.writeFile(PATHS.cssDestination, result.css)
-      resolve()
-    })
+        await fs.writeFile(PATHS.cssDestination, result.css)
+        resolve()
+      }
+    )
   })
 }
 

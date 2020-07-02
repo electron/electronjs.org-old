@@ -65,9 +65,10 @@ describe('electronjs.org', () => {
       cy.get('a[href="/docs"]:first').click()
       cy.wait(500)
 
-      cy.get('.container-lg')
-      .contains('Electron Documentation')
-      cy.get('.container-lg p').contains('See all of the docs on one page or check out the FAQ.')
+      cy.get('.container-lg').contains('Electron Documentation')
+      cy.get('.container-lg p').contains(
+        'See all of the docs on one page or check out the FAQ.'
+      )
     })
 
     it('documentation page has guides, api references, and advanced sections', () => {
@@ -85,9 +86,10 @@ describe('electronjs.org', () => {
       cy.get('a[href="/blog"]:first').click()
       cy.wait(500)
 
-      cy.get('.container-lg')
-        .contains('Electron Blog')
-      cy.get('.container-lg p').contains('All the latest news from the Electron team and community.')
+      cy.get('.container-lg').contains('Electron Blog')
+      cy.get('.container-lg p').contains(
+        'All the latest news from the Electron team and community.'
+      )
     })
 
     it('open blog post', () => {
@@ -110,14 +112,17 @@ describe('electronjs.org', () => {
       cy.get('.nav-search').type('window')
       cy.wait(500)
       let types = ['#tutorial-hits', '#api-hits', '#package-hits', '#app-hits']
-      types.forEach(type =>{
-        cy.get(type)
-          .should(typeHits => {
-            if(type.includes('tutorial')) expect(typeHits.first()).to.contain('Windows Taskbar')
-            if (type.includes('api')) expect(typeHits.first()).to.contain('window-all-closed')
-            if (type.includes('package')) expect(typeHits.first()).to.contain('about-window')
-            if (type.includes('app')) expect(typeHits.first()).to.contain('PhotoScreenSaver')
-          })
+      types.forEach((type) => {
+        cy.get(type).should((typeHits) => {
+          if (type.includes('tutorial'))
+            expect(typeHits.first()).to.contain('Windows Taskbar')
+          if (type.includes('api'))
+            expect(typeHits.first()).to.contain('window-all-closed')
+          if (type.includes('package'))
+            expect(typeHits.first()).to.contain('about-window')
+          if (type.includes('app'))
+            expect(typeHits.first()).to.contain('PhotoScreenSaver')
+        })
       })
     })
 
@@ -185,7 +190,9 @@ describe('electronjs.org', () => {
   describe('landing pages', () => {
     it('Fiddle landing page', () => {
       cy.visit(`${localhost}/fiddle`)
-      cy.get('.jumbotron-lead').contains('The easiest way to get started with Electron')
+      cy.get('.jumbotron-lead').contains(
+        'The easiest way to get started with Electron'
+      )
     })
 
     it('Devtron landing page', () => {
@@ -208,13 +215,15 @@ describe('electronjs.org', () => {
     })
 
     it('responsive navbar', () => {
-      cy.viewport('iphone-6', "portrait")
+      cy.viewport('iphone-6', 'portrait')
       cy.visit(`${localhost}/releases/stable`)
       cy.get('#release-navbar').should('have.class', 'd-none')
       cy.get('.r-resp-header-toggle').should('be.visible').click()
 
       cy.get('#release-navbar').should('not.have.class', 'd-none')
-      cy.get('#release-navbar > h3').should('be.visible').contains('Show Releases:')
+      cy.get('#release-navbar > h3')
+        .should('be.visible')
+        .contains('Show Releases:')
     })
 
     // FIXME: expected '' to equal 301
@@ -232,14 +241,18 @@ describe('electronjs.org', () => {
   describe('Buggy Tests', () => {
     it('language bar responsive bug', () => {
       visit()
-      cy.get('.lang-select-button').click()
-        .get('#languages-header-menu').should('have.css', 'height', '415px')
+      cy.get('.lang-select-button')
+        .click()
+        .get('#languages-header-menu')
+        .should('have.css', 'height', '415px')
         .viewport('iphone-6')
         .wait(500)
-        .get('#languages-header-menu').should('have.css', 'height', '868px')
+        .get('#languages-header-menu')
+        .should('have.css', 'height', '868px')
         .viewport(1920, 1080)
         // .get('#languages-header-menu').should('have.css', 'height', '415px') // FIXME: Uncomment when fixed.
-        .get('#languages-header-menu').should('have.css', 'height', '868px')
+        .get('#languages-header-menu')
+        .should('have.css', 'height', '868px')
     })
   })
 })

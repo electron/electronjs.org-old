@@ -45,7 +45,7 @@
     }
 
     .app-description {
-      margin: .3em 0 0 0;
+      margin: 0.3em 0 0 0;
       font-size: 1.2em;
       font-weight: 300;
       line-height: 1.4;
@@ -81,15 +81,9 @@
       padding: 16px 0;
       border-top: 1px darken($main-bg-color-shade, 8%) solid;
       width: 100%;
-
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
-
-      .app-keyword {
-        white-space: normal;
-        overflow: auto;
-      }
 
       &-downloads {
         overflow: auto;
@@ -107,6 +101,7 @@
       &:nth-child(1) {
         border-top: none;
       }
+
       &:nth-child(2) {
         border-top: 1px darken($main-bg-color-shade, 8%) solid;
 
@@ -128,6 +123,7 @@
 
   .app-boxes {
     flex: 1;
+
     @include breakpoint(md) {
       max-width: calc(100% - 300px);
     }
@@ -149,6 +145,9 @@
     font-size: 0.85em;
     border-radius: 3px;
     background-color: $main-bg-color-shade;
+    white-space: normal;
+    overflow: auto;
+
     &:hover {
       text-decoration: none;
       background-color: darken($main-bg-color-shade, 4%);
@@ -156,15 +155,15 @@
   }
 
   .app-tagname {
-    margin-left: .5em;
+    margin-left: 0.5em;
     color: $main-color-subtle;
   }
 
   .app-download {
     display: block;
-    padding: 0.4em .8em;
+    padding: 0.4em 0.8em;
     border-radius: 3px;
-    margin: 0 .5em .5em 0;
+    margin: 0 0.5em 0.5em 0;
     line-height: 1.7;
     border: none;
     text-overflow: ellipsis;
@@ -196,6 +195,13 @@
     }
   }
 
+  .app-video-container {
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
   .app-screenshots {
     .active-screenshot {
       padding: 16px;
@@ -214,6 +220,7 @@
         width: 196px;
         cursor: pointer;
         overflow: hidden;
+
         /* Scroll bug in Chrome */
         height: 126px;
 
@@ -252,6 +259,7 @@
 
 .invisible {
   opacity: 0;
+
   @media (max-width: 543px) {
     display: none;
   }
@@ -293,17 +301,21 @@
 .container-narrow {
   padding-right: 15px;
   padding-left: 15px;
+
   @include breakpoint(md) { // return normal value
     padding-right: 0;
     padding-left: 0;
   }
 }
+
 .row { // default is -15px
   margin-right: -12px; // work with .page-section { padding: 12px }
   margin-left: -12px;
 }
+
 .mobile-hidden {
   display: none !important;
+
   @include breakpoint(md) {
     display: block !important;
   }
@@ -313,8 +325,8 @@
   background-color: #f1f8ff;
   border-radius: 3px;
   display: inline-block;
-  margin: 0 .5em .5em 0;
-  padding: .3em .9em;
+  margin: 0 0.5em 0.5em 0;
+  padding: 0.3em 0.9em;
   white-space: nowrap;
 }
 
@@ -358,7 +370,6 @@ $app-list-icon-size: 48px;
 .listed-app > a:hover,
 .listed-app > a:focus {
   text-decoration: none;
-  text-decoration: none;
   border-color: $main-border-color;
   background-color: $main-bg-color-shade;
   outline: none;
@@ -385,12 +396,12 @@ $app-list-icon-size: 48px;
 }
 
 .listed-app-logo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    max-width: 48px;
-    height: 48px;
-    z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 48px;
+  height: 48px;
+  z-index: 2;
 }
 
 .listed-app-name {
@@ -405,13 +416,15 @@ $app-list-icon-size: 48px;
   text-overflow: ellipsis;
 }
 
-.listed-app-date {
+.listed-app-add-date,
+.listed-app-release-date {
   font-size: 12px;
   padding-left: 15px;
   display: none;
 }
 
-.listed-app:hover .listed-app-date {
+.listed-app:hover .listed-app-add-date,
+.listed-app:hover .listed-app-release-date {
   display: inherit;
 }
 

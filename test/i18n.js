@@ -19,6 +19,8 @@ describe('i18n', () => {
     channels.security.should.not.include('security@electronjs.org')
     channels.code_of_conduct.should.not.include('coc@electronjs.org')
     channels.other.should.not.include('info@electronjs.org')
-    channels.security.should.include('mailto:&#115;&#101;&#99;&#117;&#114;&#105;&#116;&#121;&#64;&#101;&#108;&#101;&#99;&#116;&#114;&#111;&#110;&#106;&#115;&#46;&#111;&#114;&#103;')
+    channels.security.should.include(
+      'mailto:&#115;&#101;&#99;&#117;&#114;&#105;&#116;&#121;&#64;&#101;&#108;&#101;&#99;&#116;&#114;&#111;&#110;&#106;&#115;&#46;&#111;&#114;&#103;'
+    )
   })
 })

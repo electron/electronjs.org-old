@@ -1,4 +1,4 @@
-.ais-search-box{
+.ais-search-box {
   display: inline;
   margin-right: 10px;
 }
@@ -11,11 +11,11 @@
 }
 
 .ais-hits--item .app-result-icon {
-  max-width:100%;
-  max-height:100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
-.nav-search{
+.nav-search {
   transition: all 0.2s;
   background-color: $main-color;
   border: none;
@@ -31,46 +31,45 @@
   color: $jumbo-bg-color;
 }
 
+.nav-search:focus::-webkit-input-placeholder { color: white; }
+.nav-search:focus::-moz-input-placeholder { color: white; }
 
-.nav-search:focus::-webkit-input-placeholder{ color:white }
-.nav-search:focus::-moz-input-placeholder { color: white }
-
-#search-hint{
-  display:inline;
+#search-hint {
+  display: inline;
   position: relative;
   right: 7%;
   top: 4.76px;
   transition: all 0.2s;
 
-  @media(max-width: 691px){ right: 10% }
+  @media (max-width: 691px) { right: 10%; }
 }
 
-#search-hint-dialog{
-  display:flex;
-  flex-direction:row;
-  align-items:center;
+#search-hint-dialog {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   position: absolute;
   z-index: 1;
   width: 350px;
   top: 71px;
   right: -63%;
   border: none;
-  border-radius:10px;
-  box-shadow: #00000033 0.2em 0.2em 0.2em;
+  border-radius: 10px;
+  box-shadow: #0003 0.2em 0.2em 0.2em;
   background-color: white;
 
-  @media(min-width:693px) and (max-width: 1163px) {
+  @media (min-width: 693px) and (max-width: 1163px) {
     top: 103px;
     right: -48%;
   }
 
-  @media(max-width: 690px){
+  @media (max-width: 690px) {
     top: 148px;
     right: -1%;
   }
 }
 
-#search-hint-dialog:before {
+#search-hint-dialog::before {
   content: "";
   position: absolute;
   right: 88%;
@@ -81,23 +80,25 @@
   border-left: 17px solid transparent;
   border-bottom: 26px solid white;
 
-  @media(max-width: 1230px) { right: 76% }
-  @media(min-width:693px) and (max-width:1163px) { right: 68%; }
-  @media(max-width: 690px) { right:85%; }
+  @media (max-width: 1230px) { right: 76%; }
+
+  @media (min-width: 693px) and (max-width: 1163px) { right: 68%; }
+
+  @media (max-width: 690px) { right: 85%; }
 }
 
-.dialog-button{
+.dialog-button {
   position: relative;
-  top:30px;
-  height:30px;
-  border-radius:5px;
+  top: 30px;
+  height: 30px;
+  border-radius: 5px;
 }
 
-.dialog-text{
-  text-align: left
+.dialog-text {
+  text-align: left;
 }
 
-#hits{
+#hits {
   position: absolute;
   display: none;
   flex-direction: column;
@@ -105,24 +106,24 @@
   width: 500px;
   max-height: 100%;
   overflow-y: auto;
-  box-shadow: 0px 6px 35px 0px rgba(0,0,0,0.35);
+  box-shadow: 0 6px 35px 0 rgba(0, 0, 0, 0.35);
   border-radius: 4px;
-  background-color:white;
+  background-color: white;
   margin-left: 49.5%;
   top: 80px;
 
   @media (max-width: 992px) {
-      width: 100%;
-      margin-left: 0;
-      margin-top: 10.5%
+    width: 100%;
+    margin-left: 0;
+    margin-top: 10.5%;
   }
 
-  @media (min-width:993px) and (max-width: 1270px){
-    margin-top: 6%
+  @media (min-width: 993px) and (max-width: 1270px) {
+    margin-top: 6%;
   }
 }
 
-.first{
+.first {
   order: -1;
 }
 
@@ -130,7 +131,7 @@
   display: none;
 }
 
-.hits-container:before {
+.hits-container::before {
   content: attr(title);
   display: block;
   margin: 0;
@@ -140,20 +141,21 @@
   background-color: #74b1be7a;
 }
 
-.ais-hits--item{
+.ais-hits--item {
   background-color: white;
   padding: 10px 20px;
-  border-bottom: 1px solid #DDD;
+  border-bottom: 1px solid #ddd;
   margin: 0;
   color: #7e7e7e;
 }
 
-.ais-hits--item:hover, .ais-hits--item.active {
-  background-color: #F0F0F0;
+.ais-hits--item:hover,
+.ais-hits--item.active {
+  background-color: #f0f0f0;
 }
 
-.ais-hits.ais-hits__empty{
-  display:none;
+.ais-hits.ais-hits__empty {
+  display: none;
 }
 
 .ais-hits--item em {
@@ -171,18 +173,18 @@
 }
 
 .ais-search-box--magnifier {
-  display: none
+  display: none;
 }
 
-.ais-search-box--reset-wrapper{
-  display:inline !important;
+.ais-search-box--reset-wrapper {
+  display: inline !important;
   position: relative;
   right: 30px;
   top: 6px;
 }
 
 ::-webkit-input-placeholder { color: $jumbo-color; }
-::-moz-input-placeholder{color: $jumbo-color; }
+::-moz-input-placeholder { color: $jumbo-color; }
 
 .search-small-text {
   font-size: 10pt;

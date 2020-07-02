@@ -11,8 +11,11 @@ module.exports = (req, res, next) => {
   doc.birthTag = historian[filenameKey]
 
   if (doc.birthTag) {
-    doc.releases = req.context.releases.all.filter(release => {
-      return semver.gte(release.data.version, doc.birthTag.replace('v', '')) && !release.isNightly()
+    doc.releases = req.context.releases.all.filter((release) => {
+      return (
+        semver.gte(release.data.version, doc.birthTag.replace('v', '')) &&
+        !release.isNightly()
+      )
     })
   } else {
     doc.releases = []
@@ -23,11 +26,11 @@ module.exports = (req, res, next) => {
     page: {
       title: `${doc.title} Version History | Electron`,
       description: doc.description,
-      url: req.url
+      url: req.url,
     },
     doc: doc,
     viewingDocHistory: true,
-    layout: 'docs'
+    layout: 'docs',
   })
 
   return res.render('docs/history', context)
