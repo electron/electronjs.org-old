@@ -1,6 +1,6 @@
 const { setupFeed } = require('./mainFeed')
 
-module.exports = async function feedHandler (req, res, next) {
+module.exports = async function feedHandler(req, res, next) {
   const feed = await setupFeed('releases', req.context.releases.all)
 
   if (req.path === '/releases.xml') {

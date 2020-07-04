@@ -13,11 +13,17 @@ crawler.addFetchCondition((queueItem, referrerQueueItem, cb) => {
 
 crawler.discoverResources = (buffer, queueItem) => {
   const $ = cheerio.load(buffer.toString('utf8'))
-  return $('a[href]').get().map((elem) => $(elem).attr('href'))
+  return $('a[href]')
+    .get()
+    .map((elem) => $(elem).attr('href'))
 }
 
 crawler.on('fetch404', (queueItem, response) => {
-  console.warn(`ERROR(404) fetching ${queueItem.path} (referrer: ${queueItem.referrer.replace(host, '')})`)
+  console.warn(
+    `ERROR(404) fetching ${
+      queueItem.path
+    } (referrer: ${queueItem.referrer.replace(host, '')})`
+  )
 })
 
 crawler.on('complete', () => {

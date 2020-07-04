@@ -1,15 +1,17 @@
 const throttle = require('lodash/throttle')
 
-function inViewport (element) {
+function inViewport(element) {
   const { top, right, bottom, left } = element.getBoundingClientRect()
-  return bottom > 0 &&
-      window.innerWidth - left > 0 &&
-      window.innerHeight - top > 0 &&
-      right > 0
+  return (
+    bottom > 0 &&
+    window.innerWidth - left > 0 &&
+    window.innerHeight - top > 0 &&
+    right > 0
+  )
 }
 
 module.exports = function () {
-  ['scroll', 'resize', 'load'].forEach(event =>
+  ;['scroll', 'resize', 'load'].forEach((event) =>
     window.addEventListener(event, updateImages)
   )
 
@@ -20,15 +22,15 @@ module.exports = function () {
 
 let images = []
 
-const addImage = module.exports.addImage = function (image) {
+const addImage = (module.exports.addImage = function (image) {
   // abort if this element has previously entered the viewport
   if (!image.dataset.src) return
 
   images.push(image)
   updateImages()
-}
+})
 
-function loadImage (image) {
+function loadImage(image) {
   // abort if this element has entered the viewport after added to the list
   if (!image.dataset.src) return
 
@@ -44,12 +46,12 @@ function loadImage (image) {
   }
 }
 
-const updateImages = module.exports.updateImages = throttle(() => {
-  images = images.filter(image => {
+const updateImages = (module.exports.updateImages = throttle(() => {
+  images = images.filter((image) => {
     if (inViewport(image)) {
       loadImage(image)
       return false // remove from unseen photos
     }
     return true // keep in unseen photos
   })
-}, 100)
+}, 100))

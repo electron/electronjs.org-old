@@ -1,7 +1,7 @@
 const items = require('awesome-electron')
 const meetups = require('../data/meetups.json')
 
-async function parseItem (item) {
+async function parseItem(item) {
   // categories
   item.isTool = item.category === 'tools'
   item.isBoilerplate = item.category === 'boilerplates'
@@ -17,7 +17,7 @@ async function parseItem (item) {
   return item
 }
 
-async function parseData (items) {
+async function parseData(items) {
   return Promise.all(items.map(parseItem))
 }
 
@@ -25,7 +25,7 @@ module.exports = (req, res) => {
   parseData(items).then((communityData) => {
     const context = Object.assign(req.context, {
       items: communityData,
-      meetups: meetups
+      meetups: meetups,
     })
 
     res.render('community', context)

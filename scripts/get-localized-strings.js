@@ -6,12 +6,13 @@
 
 const setProp = require('lodash/set')
 
-module.exports = function getLocalizedString () {
-  window.localized = Array.from(document.querySelectorAll('meta[name^="localized"]'))
-    .reduce((acc, el) => {
-      const key = el.getAttribute('name').replace('localized.', '')
-      const val = el.getAttribute('content')
-      setProp(acc, key, val)
-      return acc
-    }, {})
+module.exports = function getLocalizedString() {
+  window.localized = Array.from(
+    document.querySelectorAll('meta[name^="localized"]')
+  ).reduce((acc, el) => {
+    const key = el.getAttribute('name').replace('localized.', '')
+    const val = el.getAttribute('content')
+    setProp(acc, key, val)
+    return acc
+  }, {})
 }

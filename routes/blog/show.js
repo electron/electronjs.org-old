@@ -1,19 +1,19 @@
 const yubikiri = require('yubikiri')
 const BlogPost = require('../../lib/blog')
 
-function hydrateViewModel (blogPost) {
+function hydrateViewModel(blogPost) {
   return yubikiri({
     title: blogPost.title(),
     href: blogPost.href(),
     date: blogPost.date(),
     authors: blogPost.authors(),
     excerpt: blogPost.excerpt(),
-    content: blogPost.content()
+    content: blogPost.content(),
   })
 }
 
 module.exports = async (req, res, next) => {
-  const blogPost = BlogPost.get(req.params.slug)
+  const blogPost = BlogPost.get(req.params.slug, req.language)
   const exists = await blogPost.exists()
   if (!exists) {
     return next()
@@ -29,7 +29,7 @@ module.exports = async (req, res, next) => {
   Object.assign(req.context, {
     post: post,
     layout: 'post',
-    page: { title: `${post.title} | Electron Blog` }
+    page: { title: `${post.title} | Electron Blog` },
   })
   res.render('blog/show', req.context)
 }

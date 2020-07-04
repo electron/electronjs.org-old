@@ -2,8 +2,8 @@
 
 const labels = ['macOS', 'Linux', 'Windows']
 
-module.exports = function fixPlatformLabels () {
-  document.querySelectorAll('em').forEach(em => {
+module.exports = function fixPlatformLabels() {
+  document.querySelectorAll('em').forEach((em) => {
     if (labels.includes(em.textContent)) {
       em.classList.add('platform-label')
     }

@@ -4,6 +4,7 @@ body {
   min-height: 100vh !important;
   background-color: $main-bg-color !important;
   font-size: 14px !important;
+
   @include breakpoint(sm) {
     font-size: $body-font-size;
   }
@@ -13,7 +14,12 @@ a {
   color: $main-link-color !important;  // override Primer
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   a {
     color: $main-color !important;  // override Primer
   }
@@ -31,6 +37,7 @@ hr {
   border-color: $border-color; // override Primer
   margin-left: $spacer-6 !important;
   margin-right: $spacer-6 !important;
+
   @include breakpoint(md) {
     margin-left: $spacer-8 !important;
     margin-right: $spacer-8 !important;
@@ -59,6 +66,7 @@ p:last-child {
 .text-center-lg { @include breakpoint(lg) { text-align: center !important; } }
 
 // FIXME(HashimotoYT): Make something with this styles
+
 /*
 h1 {                   -webkit-font-smoothing: antialiased; }
 h2 { font-weight: 300; -webkit-font-smoothing: antialiased; }
@@ -68,18 +76,15 @@ h5 { font-weight: 700; }
 h6 { font-weight: 700; }
 */
 
-h2 {
-  margin-top: 0;
-}
-
 // Fade in lazily loaded images; see /scripts/lazy-load-images.js
 img {
-	opacity: 1;
-	transition: opacity 0.3s;
+  opacity: 1;
+  transition: opacity 0.3s;
+  max-width: 100%;
 }
 
 img[data-src] {
-	opacity: 0;
+  opacity: 0;
 }
 
 .faded-out {
@@ -88,22 +93,20 @@ img[data-src] {
 }
 
 .overflow-hidden {
-  overflow: hidden  !important;
+  overflow: hidden !important;
 }
-
 
 // add top margin
 // to make it easier to see headers within a long wall of text
 .strong-headers {
-  h1 {                      	  		 font-weight: 300 !important; -webkit-font-smoothing: initial !important; }
-  h2 { margin: 1.75em 0 1em !important;   	font-size: 32px !important; font-weight: 300 !important; -webkit-font-smoothing: initial !important; border-bottom: $border !important; }
-  h3 { margin: 2em 0 0.75em !important; font-size: 26px !important; font-weight: 300 !important; -webkit-font-smoothing: initial !important; }
-  h4 { margin-top: 1.5em !important;   	  		 font-weight: 300 !important; }
-  h5 { margin-top: 1.25em !important;  }
-  h6 { margin-top: 1.125em !important; }
+  h1 {
+    font-weight: 300 !important;
+    -webkit-font-smoothing: initial !important;
+
+    @include breakpoint(lg) { font-size: $body-font-size * 2.75; }
+  }
 
   &.strong-headers hr { margin: $spacer-6 0; }
-  h1 { @include breakpoint(lg) { font-size: $body-font-size * 2.75; } }
 }
 
 // Responsive video
@@ -127,24 +130,20 @@ img[data-src] {
 }
 
 kbd {
-  -moz-border-radius:3px;
-  -moz-box-shadow:0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #fff inset;
-  -webkit-border-radius:3px;
-  -webkit-box-shadow:0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #fff inset;
-  background-color:#f7f7f7;
-  border:1px solid #ccc;
-  border-radius:3px;
-  box-shadow:0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #fff inset;
-  color:#333;
-  display:inline-block;
-  font-family: Arial,Helvetica,sans-serif;
-  font-size:11px;
-  line-height:1.4;
-  margin:0 .1em;
-  padding:.1em .6em;
-  text-shadow:0 1px 0 #fff;
-}
-
-img {
-  max-width: 100%;
+  -moz-border-radius: 3px;
+  -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
+  -webkit-border-radius: 3px;
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
+  color: #333;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  line-height: 1.4;
+  margin: 0 0.1em;
+  padding: 0.1em 0.6em;
+  text-shadow: 0 1px 0 #fff;
 }

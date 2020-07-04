@@ -1,15 +1,19 @@
-const shuffle = require('knuth-shuffle-seeded')
-const apps = require('../lib/apps')
 const featuredCompanies = require('../lib/featured-companies')
-
-const showAnnouncementBanner = new Date() < new Date(2020, 1, 1)
+const featuredApps = require('../lib/featured-apps')
 
 module.exports = (req, res) => {
-  const randomizedApps = shuffle(apps.slice())
+  const apps = []
+  Object.keys(featuredApps).forEach((k) => {
+    // One app out of each category
+    const category = featuredApps[k]
+    const random = Math.floor(Math.random() * category.length)
+
+    apps.push(category[random])
+  })
+
   const context = Object.assign(req.context, {
     companies: featuredCompanies,
-    apps: randomizedApps.slice(0, 25),
-    showAnnouncementBanner
+    apps,
   })
 
   res.render('home', context)

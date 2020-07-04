@@ -58,13 +58,13 @@
 
     {{#if report.isGitHubUser}}
       {{#each items}}
-        {{#includes blacklist this.user}}
+        {{#includes ignorelist this.user}}
           <!-- Do Nothing -->
-          includes blacklist this.user
+          includes ignorelist this.user
         {{else}}
-          {{#includes blacklist this.handle}}
+          {{#includes ignorelist this.handle}}
             <!-- Do Nothing -->
-            includes blacklist this.handle
+            includes ignorelist this.handle
           {{else}}
             <li class="author-list-item">
               <a class="author-list-item-avatar-wrapper" href="http://github.com/{{this.user}}">
@@ -83,7 +83,7 @@
     {{#if report.isnpmUser}}
       <ul class="list author-list">
         {{#each items}}
-          {{#includes blacklist this.handle}}
+          {{#includes ignorelist this.handle}}
             <!-- Do Nothing -->
           {{else}}
             <li class="author-list-item">

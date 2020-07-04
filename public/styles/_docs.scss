@@ -3,7 +3,7 @@
 
 .docs-version {
   display: inline-block;
-  padding: 0 .4em;
+  padding: 0 0.4em;
   margin-left: 10px;
   vertical-align: middle;
   font-size: $body-font-size * 0.95;
@@ -19,10 +19,12 @@
   margin: 0;
   color: $main-color-subtle !important;
   font-weight: 300;
+
   a {
     color: $main-color;
   }
 }
+
 .docs-breadcrumbs-divider {
   color: $main-color-subtle;
 }
@@ -65,6 +67,20 @@
 
     @include breakpoint(md) { font-size: $h3-size !important; }
   }
+
+  .sub-section[data-lang='en-US'] .en-toggle h5 {
+    color: $main-link-color !important;
+  }
+
+  .sub-section:not([data-lang='en-US']) {
+    .en-toggle h5 {
+      color: $main-bg-color !important;
+    }
+
+    &:hover .en-toggle h5 {
+      color: $main-border-color !important;
+    }
+  }
 }
 
 .docs-heading {
@@ -85,9 +101,10 @@
 
 .header-link .octicon {
   color: $main-color-subtle !important;
-  margin-left: .5em !important;
+  margin-left: 0.5em !important;
   vertical-align: middle !important;
   visibility: hidden !important;
+
   :hover > & {
     visibility: visible !important;
   }
@@ -100,6 +117,7 @@
   text-align: center;
   color: $main-color-strong;
   background-color: darken($main-bg-color-shade, 8%);
+
   @include breakpoint(md) {
     position: absolute;
     right: 0;
@@ -107,38 +125,24 @@
     background-color: transparent;
   }
 }
+
 .docs-tag {
   display: inline-block;
-  padding: .4em .8em;
+  padding: 0.4em 0.8em;
   margin-bottom: 0;
-  font-size: .86em;
+  font-size: 0.86em;
   font-weight: 500;
+
   @include breakpoint(md) {
     background-color: darken($main-bg-color-shade, 8%);
   }
 }
 
-// platform label, e.g. [OS X]
-.docs h3 code > em,
-.docs h3 > em,
-.docs h4 code > em,
-.docs h4 > em,
-.docs .platform-label {
-    padding: .1em .4em !important;
-    vertical-align: middle !important;
-    font-size: .66em !important;
-    font-weight: 300 !important;
-    font-style: normal !important;
-    color: $main-bg-color !important;
-    border-radius: $border-radius !important;
-    background-color: $main-color-subtle !important;
-}
-
 // process label, e.g. Main process
 .docs h1 em {
-  padding: .1em .4em;
+  padding: 0.1em 0.4em;
   vertical-align: middle;
-  font-size: .4em;
+  font-size: 0.4em;
   font-weight: 300;
   text-transform: uppercase;
   font-style: normal;
@@ -147,17 +151,29 @@
   background-color: $main-color-subtle;
 }
 
+// platform label, e.g. [OS X]
+.docs h3 > em,
+.docs h4 > em,
+.docs h3 code > em,
+.docs h4 code > em,
+.docs .platform-label {
+  padding: 0.1em 0.4em !important;
+  vertical-align: middle !important;
+  font-size: 0.66em !important;
+  font-weight: 300 !important;
+  font-style: normal !important;
+  color: $main-bg-color !important;
+  border-radius: $border-radius !important;
+  background-color: $main-color-subtle !important;
+}
+
 .docs table {
   th {
     text-align: left;
     padding: $spacer-2;
   }
-  width: 100%;
-}
 
-.docs p a,
-.docs li a {
-  text-decoration: underline;
+  width: 100%;
 }
 
 .doc-actions {
@@ -166,19 +182,9 @@
   }
 }
 
-.docs {
-  .sub-section[data-lang='en-US'] .en-toggle h5 {
-    color: $main-link-color !important;
-  }
-
-  .sub-section:not([data-lang='en-US']) {
-    .en-toggle h5 {
-      color: $main-bg-color !important;
-    }
-    &:hover .en-toggle h5 {
-      color: $main-border-color !important;
-    }
-  }
+.docs p a,
+.docs li a {
+  text-decoration: underline;
 }
 
 .docs-container-xl {
@@ -207,21 +213,16 @@
 }
 
 .docs-guides-readme {
+  li {
+    break-inside: avoid;
+    margin-bottom: 3px;
+  }
+
   > ul {
     margin-left: 0;
 
     > li {
       list-style-type: none;
-    }
-  }
-
-  li {
-    break-inside: avoid;
-    margin-bottom: 3px;
-
-    > p {
-      margin-bottom: 0;
-      font-weight: bold;
     }
   }
 

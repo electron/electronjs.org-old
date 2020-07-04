@@ -13,6 +13,10 @@
   background-color: #fff;
   border: 1px solid $gray-500;
   border-radius: 50%;
+
+  .PRIMER-REMOVE-ME & {
+    @extend [class*="hero-octicon"];
+  }
 }
 
 [class*="inline-octicon"]  {

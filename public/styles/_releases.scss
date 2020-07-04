@@ -9,9 +9,9 @@
 
 .releases-tag {
   display: inline-block;
-  margin: .3em .1em;
-  padding: .1em .4em;
-  font-size: .86em;
+  margin: 0.3em 0.1em;
+  padding: 0.1em 0.4em;
+  font-size: 0.86em;
   color: $main-color-subtle;
   border: 1px solid $border-color;
   border-radius: $border-radius;
@@ -25,8 +25,8 @@
 
 .r-class {
   @media (max-width: 700px) {
-    margin-right: 0px;
-    margin-left: 0px;
+    margin-right: 0;
+    margin-left: 0;
   }
 
   // Magic numbers.
@@ -81,28 +81,28 @@
     font-size: $h0-size-mobile !important;
     font-weight: $font-weight-light !important;
 
-     @include breakpoint(md) { font-size: $h0-size !important; }
+    @include breakpoint(md) { font-size: $h0-size !important; }
   }
 
-   h2 {
+  h2 {
     font-size: $h1-size-mobile !important;
     font-weight: $font-weight-light !important;
 
-     @include breakpoint(md) { font-size: $h1-size !important; }
+    @include breakpoint(md) { font-size: $h1-size !important; }
   }
 
-   h3 {
+  h3 {
     font-size: $h2-size-mobile !important;
     font-weight: $font-weight-light !important;
 
-     @include breakpoint(md) { font-size: $h2-size !important; }
+    @include breakpoint(md) { font-size: $h2-size !important; }
   }
 
-   h4 {
+  h4 {
     font-size: $h3-size-mobile !important;
     font-weight: $font-weight-light !important;
 
-     @include breakpoint(md) { font-size: $h3-size !important; }
+    @include breakpoint(md) { font-size: $h3-size !important; }
   }
 
   .release-entry {
@@ -111,7 +111,7 @@
     // Tag
     & > .tag {
       display: inline-block;
-      padding: .1em .3em;
+      padding: 0.1em 0.3em;
       color: $main-color;
       border: 1px solid $border-color;
       border-radius: $border-radius;
@@ -129,7 +129,7 @@
 
     // Date
     & > .date {
-      margin-left: .5em;
+      margin-left: 0.5em;
       font-size: $body-font-size;
       color: $main-color-subtle;
       font-style: normal;
@@ -171,6 +171,7 @@
   .container-lg {
     .r-resp-header-lg {
       display: flex;
+
       h1 {
         flex: 1;
       }

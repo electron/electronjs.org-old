@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 <main class="homepage">
   {{> announcement_banner}}
+=======
+<main class="homepage PRIMER-REMOVE-ME">
+>>>>>>> master
   <div class="py-6 py-sm-8 jumbotron jumbotron-home ">
     <div class="container-xl p-responsive position-relative text-center">
       {{> hero}}
@@ -43,17 +47,34 @@
   </div>
 </div>
 
+<hr class="pt-8">
+
+<div class="py-6 py-md-7 py-lg-8">
+  <div class="container-lg p-responsive">
+    <h1 class="f0-light text-center-sm">{{{localized.electron_is_good.title}}}</h1>
+    <div class="featured-apps my-2 my-md-3">
+      {{#each apps}}
+        <a class="featured-app-list-item" href="{{ this.url }}" target="_blank" rel="noopener">
+          <picture>
+            <source srcset="{{ site.baseurl }}/images/featured_apps/{{ screenshot }}.webp" type="image/webp">
+            <source srcset="{{ site.baseurl }}/images/featured_apps/{{ screenshot }}.png" type="image/png">
+            <img alt="{{ name }} screenshot" src="{{ site.baseurl }}/images/featured_apps/{{ screenshot }}.png">
+          </picture>
+          <img class="icon" data-src="{{ site.baseurl }}/images/featured_apps/{{ icon }}" alt="{{ this.name }} icon">
+          <h4>{{this.name}}</h4>
+        </a>
+      {{/each}}
+    </div>
+    <p class="lead text-center-sm">{{{localized.electron_is_good.description}}}</p>
+  </div>
+</div>
+
+<hr class="pt-8">
+
 <div class="py-6 py-md-7 py-lg-8" id="electron">
   <div class="container-lg p-responsive">
     <h1 class="f0-light text-center-sm">{{{localized.electron_is_easy.title}}}</h1>
     <p class="lead text-center-sm">{{{localized.electron_is_easy.description}}}</p>
-
-    <p class="text-center-sm mt-4 mb-8">
-      <a class="btn-mktg btn-outline-mktg mr-2" href="https://youtu.be/8YP_nOCO-4Q">
-        <span class="octicon octicon-eye mr-1"></span>
-        <span>{{{localized.electron_is_easy.video_link}}}</span>
-      </a>
-    </p>
 
     <hr class="pt-8">
 
@@ -212,44 +233,4 @@ $ npm install &amp;&amp; npm start</code></pre>
 
   </div>
 </div>
-
-  <div class='py-7 py-md-8 py-lg-9' id='apps'>
-    <div class="container-lg text-center">
-      <h1 class="f0-light">{{{localized.companies.title}}}</h1>
-      <p class="lead">
-        {{{localized.companies.description}}}
-      </p>
-
-      <div class="my-4">
-        <ul class="d-flex flex-justify-around flex-wrap list-style-none my-2 my-md-3">
-          {{#each companies}}
-            <li class="featured-company-list-item">
-              <a href="{{ this.url }}" target="_blank" rel="noopener">
-                <img data-src="{{ site.baseurl }}/images/companies/{{ img }}" alt="{{ this.name }}" class="px-2">
-              </a>
-            </li>
-          {{/each}}
-        </ul>
-      </div>
-
-      <hr class="mt-4 mb-4" />
-
-      <p class="lead">
-        {{{localized.apps.description}}}
-      </p>
-
-      <div>
-        <div class="py-7 py-md-8 py-lg-9">
-          {{#each apps}}
-            {{> featured_app}}
-          {{/each}}
-        </div>
-        <p class="mt-6">
-          <a href='/apps'>{{{localized.apps.view_more}}}</a>
-          {{{localized.or}}}
-          <a href="https://github.com/electron/electron-apps/blob/master/contributing.md#adding-your-app">{{{localized.apps.submit_your_own}}}</a>.
-        </p>
-      </div>
-    </div>
-  </div>
 </main>

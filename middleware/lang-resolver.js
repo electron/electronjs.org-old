@@ -7,7 +7,7 @@ var lowerLangRegion = {}
 var lowerLang = {}
 // Keep all the language/region and language in a object
 // with property names in lowercases to resolve the lang code
-locales.forEach(locale => {
+locales.forEach((locale) => {
   // map locale in lowercase
   lowerLangRegion[locale.toLowerCase()] = locale
 
@@ -19,7 +19,7 @@ locales.forEach(locale => {
   }
 })
 
-function resolve (lang) {
+function resolve(lang) {
   var lower = lang.toLowerCase()
   if (lowerLangRegion.hasOwnProperty(lower)) {
     return lowerLangRegion[lower]
@@ -33,11 +33,11 @@ function resolve (lang) {
   return lang
 }
 
-function parseurl (req) {
+function parseurl(req) {
   return url.parse(req.url)
 }
 
-module.exports = function langResolver (req, res, next) {
+module.exports = function langResolver(req, res, next) {
   if (req.query.lang) {
     // resolving lang to lang-REGION when
     //    - cases does not match
@@ -49,7 +49,8 @@ module.exports = function langResolver (req, res, next) {
       const parsedUrl = parseurl(req)
       req.query.lang = rlang
       return res.redirect(
-        url.format({ pathname: parsedUrl.pathname, query: req.query }))
+        url.format({ pathname: parsedUrl.pathname, query: req.query })
+      )
     }
   }
 

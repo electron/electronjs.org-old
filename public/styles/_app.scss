@@ -45,7 +45,7 @@
     }
 
     .app-description {
-      margin: .3em 0 0 0;
+      margin: 0.3em 0 0 0;
       font-size: 1.2em;
       font-weight: 300;
       line-height: 1.4;
@@ -81,15 +81,9 @@
       padding: 16px 0;
       border-top: 1px darken($main-bg-color-shade, 8%) solid;
       width: 100%;
-
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
-
-      .app-keyword {
-        white-space: normal;
-        overflow: auto;
-      }
 
       &-downloads {
         overflow: auto;
@@ -107,6 +101,7 @@
       &:nth-child(1) {
         border-top: none;
       }
+
       &:nth-child(2) {
         border-top: 1px darken($main-bg-color-shade, 8%) solid;
 
@@ -128,6 +123,7 @@
 
   .app-boxes {
     flex: 1;
+
     @include breakpoint(md) {
       max-width: calc(100% - 300px);
     }
@@ -149,6 +145,9 @@
     font-size: 0.85em;
     border-radius: 3px;
     background-color: $main-bg-color-shade;
+    white-space: normal;
+    overflow: auto;
+
     &:hover {
       text-decoration: none;
       background-color: darken($main-bg-color-shade, 4%);
@@ -156,15 +155,15 @@
   }
 
   .app-tagname {
-    margin-left: .5em;
+    margin-left: 0.5em;
     color: $main-color-subtle;
   }
 
   .app-download {
     display: block;
-    padding: 0.4em .8em;
+    padding: 0.4em 0.8em;
     border-radius: 3px;
-    margin: 0 .5em .5em 0;
+    margin: 0 0.5em 0.5em 0;
     line-height: 1.7;
     border: none;
     text-overflow: ellipsis;
@@ -196,6 +195,13 @@
     }
   }
 
+  .app-video-container {
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
   .app-screenshots {
     .active-screenshot {
       padding: 16px;
@@ -214,6 +220,7 @@
         width: 196px !important;
         cursor: pointer;
         overflow: hidden;
+
         /* Scroll bug in Chrome */
         height: 126px;
 
@@ -252,6 +259,7 @@
 
 .invisible {
   opacity: 0;
+
   @media (max-width: 543px) {
     display: none;
   }
@@ -291,6 +299,7 @@
 
 .mobile-hidden {
   display: none !important;
+
   @include breakpoint(md) {
     display: block !important;
   }
@@ -300,8 +309,8 @@
   background-color: #f1f8ff;
   border-radius: 3px;
   display: inline-block;
-  margin: 0 .5em .5em 0;
-  padding: .3em .9em;
+  margin: 0 0.5em 0.5em 0;
+  padding: 0.3em 0.9em;
   white-space: nowrap;
 }
 
@@ -313,4 +322,97 @@
 .topic-tag-outline {
   background: #fff;
   box-shadow: inset 0 0 0 1px #c8e1ff;
+}
+
+/* Listed Apps with Icons */
+
+$app-list-icon-size: 48px;
+
+.app-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.listed-app {
+  text-align: left;
+}
+
+// Override .filterable-list
+.listed-app.listed-app {
+  padding: 0;
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.listed-app > a {
+  display: flex;
+  padding: 10px;
+  border: 1px solid transparent;
+}
+
+.listed-app > a:hover,
+.listed-app > a:focus {
+  text-decoration: none;
+  border-color: $main-border-color;
+  background-color: $main-bg-color-shade;
+  outline: none;
+}
+
+.listed-app-logo-wrapper {
+  display: inline-block;
+  width: $app-list-icon-size;
+  height: $app-list-icon-size;
+  position: relative;
+}
+
+// TODO(HashimotoYT): RFC: Design review.
+.listed-app-logo-placeholder {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  border-radius: 50%;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+.listed-app-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 48px;
+  height: 48px;
+  z-index: 2;
+}
+
+.listed-app-name {
+  padding: 0 10px;
+  font-weight: 500;
+}
+
+.listed-app-description {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.listed-app-add-date,
+.listed-app-release-date {
+  font-size: 12px;
+  padding-left: 15px;
+  display: none;
+}
+
+.listed-app:hover .listed-app-add-date,
+.listed-app:hover .listed-app-release-date {
+  display: inherit;
+}
+
+.listed-app span {
+  line-height: $app-list-icon-size;
+  vertical-align: bottom;
 }

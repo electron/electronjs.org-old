@@ -1,12 +1,14 @@
 const i18n = require('lib/i18n')
 const electronReleases = require('electron-releases')
-const { deps } = electronReleases.find(release => release.version === i18n.electronLatestStableVersion)
+const { deps } = electronReleases.find(
+  (release) => release.version === i18n.electronLatestStableVersion
+)
 const { getLanguageNativeName } = require('locale-code')
 const rtlDetect = require('rtl-detect')
 const Releases = require('../lib/releases')
 
 // Supply all route handlers with a baseline `req.context` object
-module.exports = function contextBuilder (req, res, next) {
+module.exports = function contextBuilder(req, res, next) {
   // Attach i18n object to request so any route handler can use it if needed
   req.i18n = i18n
 
@@ -26,10 +28,13 @@ module.exports = function contextBuilder (req, res, next) {
   const localized = i18n.website[req.language]
 
   // Page titles, descriptions, etc
-  let page = Object.assign({
-    title: 'Electron',
-    path: req.path
-  }, i18n.website[req.language].pages[req.path])
+  let page = Object.assign(
+    {
+      title: 'Electron',
+      path: req.path,
+    },
+    i18n.website[req.language].pages[req.path]
+  )
 
   if (req.path !== '/') {
     page.title = `${page.title} | Electron`
@@ -39,7 +44,10 @@ module.exports = function contextBuilder (req, res, next) {
     electronLatestStableVersion: i18n.electronLatestStableVersion,
     electronLatestStableTag: i18n.electronLatestStableTag,
     electronMasterBranchCommit: i18n.electronMasterBranchCommit,
-    electronMasterBranchCommitShort: i18n.electronMasterBranchCommit.slice(0, 6),
+    electronMasterBranchCommitShort: i18n.electronMasterBranchCommit.slice(
+      0,
+      6
+    ),
     deps: deps,
     releases: new Releases(electronReleases),
     currentLocale: req.language,
@@ -47,8 +55,9 @@ module.exports = function contextBuilder (req, res, next) {
     languageDirection: rtlDetect.getLangDir(req.language),
     locales: i18n.locales,
     page: page,
+    showAnnouncementBanner: true,
     localized: localized,
-    cookies: req.cookies
+    cookies: req.cookies,
   }
 
   if (req.path.startsWith('/docs')) {
