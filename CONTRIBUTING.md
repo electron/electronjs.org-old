@@ -78,6 +78,12 @@ npm run dev
 You should now have an Express server running at
 [localhost:5000](http://localhost:5000) :tada:
 
+### Installation Troubleshooting
+
+If there is an error building the `node-sass` dependency, try running `npm rebuild node-sass`.
+
+**Note**: If errors are still shown after you have installed all the dependencies, try to delete the `node_modules` directory in your project and run `npm install` again. 
+
 Read on for more info about the structure of the site.
 
 ## Editing Content
@@ -265,7 +271,7 @@ like nested layouts and partials.
 
 - Views live in `/views`
 - Layouts wrap views, and can be nested. They live in `/views/layouts`
-- Partials are reusable templates. They live in /views/partials`
+- Partials are reusable templates. They live in `/views/partials`
 
 ## Context
 
