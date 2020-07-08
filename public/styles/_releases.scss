@@ -1,30 +1,9 @@
 
 // Releases ------------------------------
 
-.vertical-middle {
-  vertical-align: middle !important;
-}
-
-.releases-tag {
-  display: inline-block;
-  margin: 0.3em 0.1em;
-  padding: 0.1em 0.4em;
-  font-size: 0.86em;
-  color: $main-color-subtle;
-  border: 1px solid $border-color;
-  border-radius: $border-radius;
-
-  &:hover {
-    text-decoration: none;
-    color: $main-color-strong;
-    background-color: $main-bg-color-shade !important;
-  }
-}
-
-.r-class {
-  // Magic numbers.
-  margin-right: 128px;
-  margin-left: 128px;
+#releases {
+  margin-right: 7.5%;
+  margin-left: 7.5%;
 }
 
 .release-version-filter .active {
@@ -32,71 +11,64 @@
 }
 
 .r-menu {
-  display: flex !important;
-  flex-direction: column !important;
-  padding-left: 8px !important;
-  list-style: none !important;
+  display: flex;
+  flex-direction: column;
+  padding-left: 8px;
+  list-style: none;
 
   .menu-item {
-    font-size: 21px !important;
+    font-size: 21px;
     // Remove border radius for active element.
     border-radius: 0 !important;
 
     .octicon {
-      font-size: 20px !important;
-      padding-right: 8px !important;
+      font-size: 20px;
+      padding-right: 8px;
     }
 
     &:hover {
-      cursor: pointer !important;
-      background-color: #fcfcfc !important;
+      cursor: pointer;
+      background-color: #fcfcfc;
     }
 
     p {
-      font-size: 15px !important;
-      // margin-left: 23px;
+      font-size: 15px;
     }
   }
+}
 
-  ul {
-    margin-bottom: 1em !important;
-    margin-left: 1.5em !important;
-    padding-left: 0;
-    padding-top: 0;
+.PRIMER-REMOVE-ME .markdown-body {
+  h1 {
+    font-size: $h0-size-mobile;
+    font-weight: $font-weight-light;
+
+    @include breakpoint(md) { font-size: $h0-size; }
+  }
+
+  h2 {
+    font-size: $h1-size-mobile;
+    font-weight: $font-weight-light;
+
+    @include breakpoint(md) { font-size: $h1-size; }
+  }
+
+  h3 {
+    font-size: $h2-size-mobile;
+    font-weight: $font-weight-light;
+
+    @include breakpoint(md) { font-size: $h2-size; }
+  }
+
+  h4 {
+    font-size: $h3-size-mobile;
+    font-weight: $font-weight-light;
+
+    @include breakpoint(md) { font-size: $h3-size; }
   }
 }
 
 .releases {
-  width: 1280px;
   flex: 1;
-
-  h1 {
-    font-size: $h0-size-mobile !important;
-    font-weight: $font-weight-light !important;
-
-    @include breakpoint(md) { font-size: $h0-size !important; }
-  }
-
-  h2 {
-    font-size: $h1-size-mobile !important;
-    font-weight: $font-weight-light !important;
-
-    @include breakpoint(md) { font-size: $h1-size !important; }
-  }
-
-  h3 {
-    font-size: $h2-size-mobile !important;
-    font-weight: $font-weight-light !important;
-
-    @include breakpoint(md) { font-size: $h2-size !important; }
-  }
-
-  h4 {
-    font-size: $h3-size-mobile !important;
-    font-weight: $font-weight-light !important;
-
-    @include breakpoint(md) { font-size: $h3-size !important; }
-  }
 
   .release-entry {
     margin-bottom: $spacer3;
@@ -112,7 +84,7 @@
       &:hover {
         text-decoration: none;
         color: $main-color-strong;
-        background-color: $main-bg-color-shade !important;
+        background-color: $main-bg-color-shade;
       }
 
       &.octicon-wrapper {
@@ -130,14 +102,14 @@
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 768px) {
   .r-resp-header,
-  .r-resp-header-toggle {
-    display: none !important;
+  .btn-link.r-resp-header-toggle {
+    display: none;
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   .menu-item {
     font-size: 18px;
     line-height: 1.75;
@@ -182,6 +154,6 @@
   }
 
   .r-menu {
-    display: none !important;
+    display: none;
   }
 }

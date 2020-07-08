@@ -39,7 +39,7 @@
   </div>
 </div>
 
-<div class='py-7 py-md-8 py-lg-9 r-class'>
+<div id="releases" class='py-7 py-md-8 py-lg-9'>
   <div class='full-width d-flex p-responsive'>
     <!-- <h3>Tip: Use Electron from the command line</h3>
     <p>Installing the <code>electron</code> module as a development dependency in your project will let you use Electron from the command line at specific versions. More information on the <a href="https://github.com/electron-userland/electron-prebuilt">module's repository</a>.</p>
@@ -66,7 +66,7 @@ $ ./node_modules/.bin/electron .</code></pre>
           <a class="tag" href="#{{this.data.version}}">Electron {{this.data.version}}</a>
           <em class="date" data-date="{{this.data.published_at}}" data-format="%B %d, %Y">{{this.data.published_at}}</em>
           <em class="date ltr-only">(<span data-date="{{this.data.published_at}}"></span>)</em>
-          <a href="{{this.data.html_url}}" class="tag octicon-wrapper"><span class="octicon octicon-mark-github vertical-middle"></span></a>
+          <a href="{{this.data.html_url}}" class="tag octicon-wrapper"><span class="octicon octicon-mark-github v-align-middle"></span></a>
         </h2>
 
         <div class="markdown-body">{{{this.data.body_html}}}</div>
@@ -97,9 +97,9 @@ $ ./node_modules/.bin/electron .</code></pre>
         </a>
         <h3>{{localized.releases.show_only_releases_from}}</h3>
         <ul class="release-version-filter">
-          <li><a class="f3-light {{#eq @root/releasesPage.versionFilter null}}active{{/eq}}" href="?">{{localized.releases.all_versions}}</a></li>
+          <li><a class="f4-light {{#eq @root/releasesPage.versionFilter null}}active{{/eq}}" href="?">{{localized.releases.all_versions}}</a></li>
           {{#each releasesPage.majorVersions}}
-            <li><a class="f3-light {{#eq @root/releasesPage.versionFilter this}}active{{/eq}}" href="?version={{this}}">v{{this}}.x</a></li>
+            <li><a class="f4-light {{#eq @root/releasesPage.versionFilter this}}active{{/eq}}" href="?version={{this}}">v{{this}}.x</a></li>
           {{/each}}
         </ul>
       </div>
