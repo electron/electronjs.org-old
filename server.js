@@ -54,10 +54,10 @@ hbs.registerAsyncHelper('octicon', async (data, cb) => {
   return cb(new hbs.SafeString(htmlSVG))
 })
 app.engine(
-  'html',
+  'hbs',
   hbs.express4({
-    defaultLayout: path.join(__dirname, '/views/layouts/main.html'),
-    extname: '.html',
+    defaultLayout: path.join(__dirname, '/views/layouts/main.hbs'),
+    extname: '.hbs',
     layoutsDir: path.join(__dirname, '/views/layouts'),
     partialsDir: path.join(__dirname, '/views/partials'),
     onCompile: function (exhbs, source, filename) {
@@ -68,7 +68,7 @@ app.engine(
 )
 
 // Middleware
-app.set('view engine', 'html')
+app.set('view engine', 'hbs')
 app.set('views', path.join(__dirname, '/views'))
 app.use(compression())
 app.use(helmet())
