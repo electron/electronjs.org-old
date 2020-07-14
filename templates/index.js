@@ -7,8 +7,8 @@ const path = require('path')
 // See https://github.com/browserify/brfs#gotchas
 
 module.exports = {
-  app: fs.readFileSync(path.join(__dirname, 'app.html'), 'utf8'),
-  api: fs.readFileSync(path.join(__dirname, 'api.html'), 'utf8'),
-  package: fs.readFileSync(path.join(__dirname, 'package.html'), 'utf8'),
-  tutorial: fs.readFileSync(path.join(__dirname, 'tutorial.html'), 'utf8'),
+  app: fs.readFileSync(path.join(__dirname, 'app.hbs'), 'utf8'),
+  api: fs.readFileSync(path.join(__dirname, 'api.hbs'), 'utf8'),
+  package: fs.readFileSync(path.join(__dirname, 'package.hbs'), 'utf8'),
+  tutorial: fs.readFileSync(path.join(__dirname, 'tutorial.hbs'), 'utf8'),
 }
