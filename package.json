@@ -112,7 +112,7 @@
     "stylelint-scss": "^3.18.0",
     "supertest": "^4.0.2",
     "supertest-session": "^4.0.0",
-    "uglify-js": "^3.8.1",
+    "uglify-js": "^3.10.0",
     "wait-on": "^5.1.0",
     "walk-sync": "^2.2.0"
   },
