@@ -21,7 +21,7 @@
               {{/if}}
               {{#each categories}}
               <li>
-                <a href="/apps?category={{this.slug}}" class="filter-item {{className}}" aria-current="page"
+                <a href="/apps?category={{this.slug}}" class="filter-item {{className}}" aria-current="{{#if currentCategory}}page{{else}}false{{/if}}"
                   id="category-{{this.slug}}">
                   <span class="count" title="results">{{this.count}}</span>
                   {{this.name}}
