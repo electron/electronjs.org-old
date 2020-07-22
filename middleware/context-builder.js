@@ -58,6 +58,7 @@ module.exports = function contextBuilder(req, res, next) {
     showAnnouncementBanner: true,
     localized: localized,
     cookies: req.cookies,
+    hostname: `${req.protocol}://${req.get('host')}`,
   }
 
   if (req.path.startsWith('/docs')) {

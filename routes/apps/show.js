@@ -32,7 +32,7 @@ module.exports = (req, res, next) => {
   context.page.image =
     app.screenshots && app.screenshots.length
       ? app.screenshots[0].imageUrl
-      : `${process.env.HOST}/images/apps/${app.icon64}`
+      : `${req.context.hostname}/images/apps/${app.icon64}`
 
   if (app.youtube_video_url) {
     context.app.youtube_video_url = app.youtube_video_url.replace(
