@@ -23,7 +23,6 @@ const getOcticons = require('./middleware/register-octicons')
 const port = Number(process.env.PORT) || argv.p || argv.port || 5000
 const app = express()
 const appImgDir = path.resolve(require.resolve('electron-apps'), '..', 'apps')
-process.env.HOST = process.env.HOST || `http://localhost:${port}`
 
 // Handlebars Templates
 hbs.registerHelper(lobars)
