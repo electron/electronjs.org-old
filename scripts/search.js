@@ -1,5 +1,6 @@
 const templates = require('../templates')
-const instantsearch = require('instantsearch.js').default
+import instantsearch from 'instantsearch.js'
+import { searchBox, hits } from 'instantsearch.js/es/widgets'
 const pluralize = require('pluralize')
 const searchWithYourKeyboard = require('search-with-your-keyboard')
 const searches = {}
@@ -23,7 +24,7 @@ const types = [
 ]
 const typeNames = types.map((type) => type.name)
 
-module.exports = () => {
+export default () => {
   buildMultiSearch()
   buildSearchUIHandlers()
   determineOrder()
@@ -107,7 +108,7 @@ function buildSearch(type, isPrimarySearch = false, searches) {
   const search = instantsearch(opts)
 
   search.addWidget(
-    instantsearch.widgets.hits({
+    hits({
       container: `#${type}-hits`,
       templates: {
         // empty: 'No results',
@@ -125,7 +126,7 @@ function buildSearch(type, isPrimarySearch = false, searches) {
 
   if (isPrimarySearch) {
     search.addWidget(
-      instantsearch.widgets.searchBox({
+      searchBox({
         container: '#search-input',
         placeholder: `Search Electron ${pluralize(type)}`,
         autofocus: false,
