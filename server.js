@@ -5,7 +5,6 @@ const path = require('path')
 const i18n = require('./lib/i18n')
 const express = require('express')
 const lobars = require('lobars')
-const webpack = require('webpack')
 
 // Middleware
 const hbs = require('express-hbs')
@@ -19,8 +18,6 @@ const helmet = require('helmet')
 const langResolver = require('./middleware/lang-resolver')
 const contextBuilder = require('./middleware/context-builder')
 const getOcticons = require('./middleware/register-octicons')
-const config = require('./webpack.common')
-const webpackDevMiddleware = require('webpack-dev-middleware')
 
 const port = Number(process.env.PORT) || argv.p || argv.port || 5000
 const app = express()
@@ -86,11 +83,7 @@ if (process.env.NODE_ENV === 'production') {
 } else if (process.env.NODE_ENV === 'development') {
   console.log('Dev app detected; compiling JS and CSS in memory')
   app.use(sass())
-  app.use(
-    webpackDevMiddleware(webpack(config), {
-      publicPath: config.output.publicPath,
-    })
-  )
+  app.use(require('./middleware/webpack'))
 } else {
   app.use(sass())
 }
