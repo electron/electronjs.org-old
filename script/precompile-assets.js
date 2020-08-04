@@ -46,8 +46,8 @@ async function precompileAssets() {
     await fs.remove(PATHS.precompiled)
     await fs.ensureDir(PATHS.scripts)
     await fs.ensureDir(PATHS.styles)
-    console.log('Precompiling JS...')
-    await precompileJavaScript()
+    // console.log('Precompiling JS...')
+    // await precompileJavaScript()
     console.log('Precompiling CSS...')
     await precompileCss()
   } catch (err) {
