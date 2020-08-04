@@ -25,7 +25,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "check-for-leaks"
+      "pre-push": "check-for-leaks",
+      "pre-commit": "lint-staged"
     }
   },
   "dependencies": {
