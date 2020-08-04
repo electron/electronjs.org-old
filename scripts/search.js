@@ -1,5 +1,5 @@
 const templates = require('../templates')
-const instantsearch = require('instantsearch.js')
+const instantsearch = require('instantsearch.js').default
 const pluralize = require('pluralize')
 const searchWithYourKeyboard = require('search-with-your-keyboard')
 const searches = {}
