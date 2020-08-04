@@ -83,7 +83,7 @@ if (process.env.NODE_ENV === 'production') {
   app.use(
     express.static(path.join(__dirname, 'precompiled'), { redirect: false })
   )
-} else {
+} else if (process.env.NODE_ENV === 'development') {
   console.log('Dev app detected; compiling JS and CSS in memory')
   app.use(sass())
   app.use(
@@ -91,6 +91,8 @@ if (process.env.NODE_ENV === 'production') {
       publicPath: config.output.publicPath,
     })
   )
+} else {
+  app.use(sass())
 }
 app.get('/service-worker.js', (req, res) =>
   res.sendFile(path.resolve(__dirname, 'scripts', 'service-worker.js'))
