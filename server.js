@@ -83,7 +83,8 @@ if (process.env.NODE_ENV === 'production') {
 } else if (process.env.NODE_ENV === 'development') {
   console.log('Dev app detected; compiling JS and CSS in memory')
   app.use(sass())
-  app.use(require('./middleware/webpack'))
+  const webpack = require('./middleware/webpack')
+  app.use(webpack())
 } else {
   app.use(sass())
 }
