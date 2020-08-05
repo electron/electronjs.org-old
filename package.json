@@ -101,7 +101,7 @@
     "eslint-plugin-prettier": "^3.1.4",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.11",
-    "mocha": "^8.1.0",
+    "mocha": "^8.1.1",
     "nock": "^13.0.3",
     "node-sass": "^4.14.1",
     "nodemon": "^2.0.4",
