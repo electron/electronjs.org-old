@@ -50,7 +50,7 @@
     "electron-api-historian": "^1.12.0",
     "electron-apps": "1.8230.0",
     "electron-i18n": "^1.2311.0",
-    "electron-markdown": "^0.7.2",
+    "electron-markdown": "^0.8.0",
     "electron-releases": "^3.484.0",
     "electron-userland-reports": "1.6.0",
     "express": "^4.17.1",
