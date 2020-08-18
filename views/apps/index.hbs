@@ -1,8 +1,8 @@
-<main class="PRIMER-REMOVE-ME px-3 px-md-6">
-  <div class="py-6 py-md-7 py-lg-8">
+<main class="px-3 px-md-6">
+  <div class="py-3 py-md-4 py-lg-5">
     <div class="container-xl p-responsive">
       <div class="d-flex d-flex-column">
-        <div class="col-xs-12 col-md-3 categories-filter">
+        <div class="col-xs-12 col-md-3 categories-filter mr-3">
           <input id="apps-filter" class="filterable-list-input" placeholder="{{localized.apps.search_app}}"
             type="search" autofocus="on" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="off"
             spellcheck="false" aria-label="keywords for search">
@@ -21,8 +21,8 @@
               {{/if}}
               {{#each categories}}
               <li>
-                <a href="/apps?category={{this.slug}}" class="filter-item {{className}}" aria-current="{{#if currentCategory}}page{{else}}false{{/if}}"
-                  id="category-{{this.slug}}">
+                <a href="/apps?category={{this.slug}}" class="filter-item {{className}}"
+                  aria-current="{{#if currentCategory}}page{{else}}false{{/if}}" id="category-{{this.slug}}">
                   <span class="count" title="results">{{this.count}}</span>
                   {{this.name}}
                 </a>
@@ -34,7 +34,7 @@
         </div>
         <!-- ./categories-filter -->
 
-        <div class="col-xs-12 col-md-9 container-lg" id="apps">
+        <div class="col-xs-12 col-md-9" id="apps">
 
           <ul class="mb-4 filterable-list app-list">
             {{#each apps}}

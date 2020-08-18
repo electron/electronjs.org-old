@@ -68,6 +68,10 @@ a.featured-app-list-item {
     max-width: 35%;
     max-height: 35%;
   }
+
+  img {
+    max-width: 100%;
+  }
 }
 
 @media screen and (max-width: 1300px) {
