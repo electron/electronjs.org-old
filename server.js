@@ -70,7 +70,11 @@ app.engine(
 app.set('view engine', 'hbs')
 app.set('views', path.join(__dirname, '/views'))
 app.use(compression())
-app.use(helmet())
+app.use(
+  helmet({
+    contentSecurityPolicy: false,
+  })
+)
 if (process.env.NODE_ENV === 'production') {
   console.log('Production app detected; serving JS and CSS from disk')
   app.use(
