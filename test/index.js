@@ -365,7 +365,7 @@ describe('electronjs.org', () => {
         .set('Cookie', ['language=zh-CN'])
       const $ = cheerio.load(res.text)
       $('.docs .sub-section[data-lang="en-US"]').each((i, elem) => {
-        $(elem).should.have.class('hidden')
+        $(elem).should.have.class('d-none')
       })
     })
 
@@ -488,7 +488,7 @@ describe('electronjs.org', () => {
         .get('/community')
         .set('Cookie', ['language=vi-VN'])
       const $ = cheerio.load(res.text)
-      $('.subtron .container-narrow h1')
+      $('.subtron .container-lg h1')
         .text()
         .should.eq(i18n.website['vi-VN'].community.title)
     })

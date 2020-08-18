@@ -70,6 +70,10 @@ img {
   transition: opacity 0.3s;
 }
 
+img {
+  max-width: 100%;
+}
+
 img[data-src] {
   opacity: 0;
 }

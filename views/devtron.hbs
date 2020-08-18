@@ -1,97 +1,130 @@
-<div class="devtron">
-  <div class="jumbotron text-center">
-    <div class="container">
-      <img class="mb-4 mb-lg-6" src="{{ site.baseurl }}/images/devtron-icon.svg" alt="Devtron icon">
-      <p><img src="{{ site.baseurl }}/images/devtron-logo.svg" alt="Devtron logo"></p>
-      <p class='jumbotron-lead'><span class='jumbotron-lead-muted'>An Electron DevTools Extension</span></p>
+<main class="devtron">
+  <div class="py-6 py-sm-8 py-lg-10 jumbotron">
+    <div class="container-lg p-responsive position-relative text-center">
+      <img class="mb-4 mb-lg-6" src="{{ site.baseurl }}/images/devtron-icon.svg" alt="Devtron icon" />
+      <p>
+        <img src="{{ site.baseurl }}/images/devtron-logo.svg" alt="Devtron logo" />
+      </p>
+      <div class="mx-auto mb-5">
+        <p class="jumbotron-lead">
+          <span class="jumbotron-lead-muted">An Electron DevTools Extension</span>
+        </p>
+      </div>
     </div>
   </div>
 
-  <section class="page-section page-section-spacious">
-    <div class="container-narrow">
-
-      <h1 class="text-center-sm">Debug your app</h1>
-      <p class="lead text-center-sm">
-        Devtron is an <a href="https://github.com/electron/devtron">open source</a> tool to help you inspect, monitor,
-        and debug your Electron app. Built on top of the amazing <a href="https://developer.chrome.com/devtools">Chrome Developer Tools</a>.
+  <div class="py-7 py-md-8 py-lg-9">
+    <div class="container-xl p-responsive pb-6">
+      <h2 class="h00-mktg mt-3 mb-2 lh-condensed text-center">
+        <p class="text-gray-dark">Debug your app</p>
+      </h2>
+      <p class="lead-mktg text-center text-gray mb-4 mx-auto">
+        Devtron is an
+        <a href="https://github.com/electron/devtron">open source</a> tool to
+        help you inspect, monitor, and debug your Electron app. Built on top of
+        the amazing
+        <a href="https://developer.chrome.com/devtools">Chrome Developer Tools</a>.
       </p>
 
-      <div class='row mt-4 mt-sm-8'>
-        <div class='col-xs-12 col-md-6 text-left mb-4'>
-          <h2><span class="mega-octicon octicon-repo-forked pr-3"></span>Require Graph</h2>
-          <p>Visualize your app's internal and external library dependencies in both the main and renderer processes.
-            The require graph allows you to trace through the loading order and dependency graph of the JavaScript
-            files in your app.
-          </p>
-        </div>
-        <div class='col-xs-12 col-md-6'>
+      <div class="d-flex flex-column flex-md-row-reverse my-5 pt-6">
+        <div class="col-md-6 flex-md-self-center text-center">
           <div class="app-frame">
-            <img alt="Screenshot of Devtron Require Graph" src='{{ site.baseurl }}/images/devtron-require-graph.png'>
+            <img alt="Screenshot of Devtron Require Graph" src="{{ site.baseurl }}/images/devtron-require-graph.png" />
           </div>
         </div>
-      </div>
-
-      <div class='row mt-8'>
-        <div class='col-xs-12 col-md-6 mb-4'>
-          <div class="app-frame">
-            <img alt="Screenshot of Devtron Event Listeners" src='{{ site.baseurl }}/images/devtron-event-listeners.png'>
-          </div>
-        </div>
-        <div class='col-xs-12 col-md-6 text-left'>
-          <h2><span class="mega-octicon octicon-radio-tower pr-3"></span>Event Listeners</h2>
-          <p>Explore the events and listeners currently registered in your app
-            on the core Electron APIs such as the window, the app, and the
-            main and renderer processes. Search for listeners to make sure they
-            are registered correctly and active.
+        <div class="col-md-6 pr-md-5">
+          <h3 class="h1-mktg text-normal mb-1">
+            <span class="mega-octicon octicon-repo-forked pr-3"></span>Require
+            Graph
+          </h3>
+          <p class="mb-3 mr-md-3">
+            Visualize your app's internal and external library dependencies in
+            both the main and renderer processes. The require graph allows you
+            to trace through the loading order and dependency graph of the
+            JavaScript files in your app.
           </p>
         </div>
       </div>
 
-      <div class='row mt-8'>
-        <div class='col-xs-12 col-md-6 text-left mb-4'>
-          <h2><span class="mega-octicon octicon-search pr-3"></span>IPC Monitor</h2>
-          <p>Track and inspect the messages sent and received between the processes in your app.
-            The IPC monitor records and displays the message traffic between the main and renderer processes.
-          </p>
-        </div>
-        <div class='col-xs-12 col-md-6'>
+      <div class="d-flex flex-column flex-md-row my-5">
+        <div class="col-md-6 flex-md-self-center text-center">
           <div class="app-frame">
-            <img alt="Screenshot of Devtron IPC Monitor" src='{{ site.baseurl }}/images/devtron-ipc.png'>
+            <img alt="Screenshot of Devtron Event Listeners"
+              src="{{ site.baseurl }}/images/devtron-event-listeners.png" />
           </div>
         </div>
-      </div>
-
-      <div class='row mt-8'>
-        <div class='col-xs-12 col-md-6 mb-4'>
-          <div class="app-frame">
-            <img alt="Screenshot of Devtron Linter" src='{{ site.baseurl }}/images/devtron-linter.png'>
-          </div>
-        </div>
-        <div class='col-xs-12 col-md-6 text-left'>
-          <h2><span class="mega-octicon octicon-bug pr-3"></span>Linter</h2>
-          <p>Check your app for possible issues and missing functionality. The linter
-            provides guidance and code snippets for detected issues.
+        <div class="col-md-6 pl-md-5">
+          <h3 class="h1-mktg text-normal mb-1">
+            <span class="mega-octicon octicon-radio-tower pr-3"></span>Event
+            Listeners
+          </h3>
+          <p class="mb-3 mr-md-3">
+            Explore the events and listeners currently registered in your app on
+            the core Electron APIs such as the window, the app, and the main and
+            renderer processes. Search for listeners to make sure they are
+            registered correctly and active.
           </p>
         </div>
       </div>
 
+      <div class="d-flex flex-column flex-md-row-reverse my-5">
+        <div class="col-md-6 flex-md-self-center text-center">
+          <div class="app-frame">
+            <img alt="Screenshot of Devtron IPC Monitor" src="{{ site.baseurl }}/images/devtron-ipc.png" />
+          </div>
+        </div>
+        <div class="col-md-6 pr-md-5">
+          <h3 class="h1-mktg text-normal mb-1">
+            <span class="mega-octicon octicon-search pr-3"></span>IPC Monitor
+          </h3>
+          <p class="mb-3 mr-md-3">
+            Track and inspect the messages sent and received between the
+            processes in your app. The IPC monitor records and displays the
+            message traffic between the main and renderer processes.
+          </p>
+        </div>
+      </div>
+
+      <div class="d-flex flex-column flex-md-row my-5">
+        <div class="col-md-6 flex-md-self-center text-center ">
+          <div class="app-frame">
+            <img alt="Screenshot of Devtron Linter" src="{{ site.baseurl }}/images/devtron-linter.png" />
+          </div>
+        </div>
+        <div class="col-md-6 pl-md-5">
+          <h3 class="h1-mktg text-normal mb-1">
+            <span class="mega-octicon octicon-bug pr-3"></span>Linter
+          </h3>
+          <p class="mb-3 mr-md-3">
+            Check your app for possible issues and missing functionality. The
+            linter provides guidance and code snippets for detected issues.
+          </p>
+        </div>
+      </div>
     </div>
-  </section>
+  </div>
 
-  <section class='page-section page-section-spacious bg-shade' id='get-started'>
-    <div class='container-narrow text-center'>
-      <h1>Get started</h1>
-      <figure class="highlight highlight-dark text-left my-4">
-      <pre><code><span class="c1"># Install Devtron</span>
+  <div class="py-5 py-md-6 py-lg-7 bg-gray-light">
+    <div class="container-lg p-responsive">
+      <div class="text-center">
+        <h2 class="h0-mktg mt-3 mb-2 lh-condensed text-center">
+          <p class="text-gray-dark">Get Started</p>
+        </h2>
+        <figure class="highlight highlight-dark text-left my-4">
+          <pre><code><span class="c1"># Install Devtron</span>
 $ npm install --save-dev devtron
 
 <span class="c1">// Run the following from the Console tab of your app's DevTools</span>
 require(<span class="string">'devtron'</span>).install()
 <span class="c1">// You should now see a Devtron tab added to the DevTools</span>
 </code></pre>
-      </figure>
+        </figure>
 
-      <h3>Or dive deeper and read the <a href='https://github.com/electron/devtron#devtron'>documentation</a>.</h3>
+        <h3 class="h3-mktg">
+          Or dive deeper and read the
+          <a href="https://github.com/electron/devtron#devtron">documentation</a>.
+        </h3>
+      </div>
     </div>
-  </section>
-</div>
+  </div>
+</main>
