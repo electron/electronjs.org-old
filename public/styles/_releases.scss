@@ -50,12 +50,12 @@
 
     &:hover {
       text-decoration: none;
-      background-color: $gray-0;
+      background-color: $gray-000;
     }
 
     &.selected {
       font-weight: bold;
-      color: $gray-7;
+      color: $gray-700;
       cursor: default;
       background-color: $white;
     }
@@ -83,7 +83,7 @@
   flex: 1;
 
   .release-entry {
-    margin-bottom: $spacer3;
+    margin-bottom: $spacer-3;
 
     // Tag
     & > .tag {

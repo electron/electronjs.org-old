@@ -1,38 +1,11 @@
 @import "./octicons/octicons.scss";
+@import "@primer/css/index.scss";
 
 // Variables
-@import "../bower_components/primer-css/scss/variables";
-@import "../bower_components/basecoat/scss/variables"; // Basecoat override
 @import "variables"; // Electron override
-
-// Global requirements
-@import "../bower_components/primer-css/scss/mixins";
-@import "../bower_components/basecoat/scss/mixins/breakpoints";
-@import "../bower_components/basecoat/scss/mixins/grid";
-@import "../bower_components/basecoat/scss/mixins/clearfix";
-@import "../bower_components/basecoat/scss/mixins/grid-framework";
-
-// Basecoat
-@import "../bower_components/primer-css/scss/normalize";
-@import "../bower_components/primer-css/scss/base";
-@import "../bower_components/primer-css/scss/type";
-@import "../bower_components/basecoat/scss/layout"; // Basecoat override
-@import "../bower_components/basecoat/scss/type"; // Basecoat override
-
-// Components
-@import "../bower_components/primer-css/scss/buttons";
-@import "../bower_components/primer-css/scss/filter-list";
-@import "../bower_components/primer-css/scss/tooltips";
-@import "../bower_components/basecoat/scss/grid";
-@import "primer-support/index.scss";
 
 // Devicon
 @import "vendor/devicon/devicon.css";
-
-// Utilities
-@import "../bower_components/primer-css/scss/flex-table";
-@import "../bower_components/primer-css/scss/utilities/utilities";
-@import "../bower_components/basecoat/scss/utility"; // Basecoat override
 
 // Electron -----------------------------------
 
@@ -40,20 +13,13 @@
 @import "hljs/github.css"; // Syntax highlighting
 @import "hljs/overrides"; // customization
 
-// @primer/css imports
-@import "@primer/css/marketing/index.scss";
-@import "@primer/css/utilities/padding.scss";
-
 // Basecoat overrides
-@import "./helpers/buttons";
 @import "./helpers/tables";
 @import "./helpers/code";
 @import "./helpers/footer";
 @import "./helpers/icons";
 @import "./helpers/navigation";
 @import "./helpers/page-headers";
-@import "./helpers/pagination";
-@import "./helpers/section";
 
 // Pages
 @import "app";
