@@ -43,6 +43,7 @@
 @import "@primer/css/marketing/index.scss";
 @import "@primer/css/tooltips/index.scss";
 @import "@primer/css/utilities/padding.scss";
+@import "@primer/css/pagination/index.scss";
 
 // Basecoat overrides
 @import "./helpers/tables";
@@ -51,7 +52,6 @@
 @import "./helpers/icons";
 @import "./helpers/navigation";
 @import "./helpers/page-headers";
-@import "./helpers/pagination";
 @import "./helpers/section";
 
 // Pages
