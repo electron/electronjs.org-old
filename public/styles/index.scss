@@ -22,7 +22,6 @@
 // Components
 @import "../bower_components/primer-css/scss/buttons";
 @import "../bower_components/primer-css/scss/filter-list";
-@import "../bower_components/primer-css/scss/tooltips";
 @import "../bower_components/basecoat/scss/grid";
 @import "primer-support/index.scss";
 
@@ -42,6 +41,7 @@
 
 // @primer/css imports
 @import "@primer/css/marketing/index.scss";
+@import "@primer/css/tooltips/index.scss";
 @import "@primer/css/utilities/padding.scss";
 
 // Basecoat overrides
