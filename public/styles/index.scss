@@ -33,8 +33,6 @@
 
 // Electron -----------------------------------
 
-@import "base";
-
 // @primer/css imports
 @import "@primer/css/support/index.scss";
 @import "@primer/css/buttons/index.scss";
@@ -46,6 +44,7 @@
 @import "hljs/github.css"; // Syntax highlighting
 @import "hljs/overrides"; // customization
 
+@import "base";
 @import "hljs/github.css"; // Syntax highlighting
 @import "hljs/overrides"; // customization
 
