@@ -22,7 +22,6 @@
 // Components
 @import "../bower_components/primer-css/scss/filter-list";
 @import "../bower_components/basecoat/scss/grid";
-@import "primer-support/index.scss";
 
 // Devicon
 @import "vendor/devicon/devicon.css";
@@ -35,15 +34,17 @@
 // Electron -----------------------------------
 
 @import "base";
-@import "hljs/github.css"; // Syntax highlighting
-@import "hljs/overrides"; // customization
 
 // @primer/css imports
+@import "@primer/css/support/index.scss";
 @import "@primer/css/buttons/index.scss";
 @import "@primer/css/marketing/index.scss";
 @import "@primer/css/tooltips/index.scss";
 @import "@primer/css/utilities/padding.scss";
 @import "@primer/css/pagination/index.scss";
+
+@import "hljs/github.css"; // Syntax highlighting
+@import "hljs/overrides"; // customization
 
 // Basecoat overrides
 @import "./helpers/tables";
