@@ -63,7 +63,7 @@
     "gray-matter": "^4.0.2",
     "helmet": "^4.1.0",
     "http-proxy-middleware": "^1.0.5",
-    "instantsearch.js": "^2.10.4",
+    "instantsearch.js": "^4.7.1",
     "lil-env-thing": "^1.0.0",
     "lobars": "^1.2.0",
     "locale-code": "^2.0.2",
