@@ -27,19 +27,32 @@ The Electron team is excited to announce the release of Electron 10.0.0! You can
 
 ### Highlight Features
 
+* Added `contents.getBackgroundThrottling()` method and `contents.backgroundThrottling` property. [#21036]
+* Exposed the `desktopCapturer` module in the main process. [#23548](https://github.com/electron/electron/pull/23548) 
+* Can now check if a given `session` is persistent by calling the `ses.isPersistent()` API. [#22622](https://github.com/electron/electron/pull/22622) 
+* Resolve network issues that prevented RTC calls from being connected due to network IP address changes and ICE. (Chromium issue 1113227). [#24998](https://github.com/electron/electron/pull/24998)
+
 See the [10.0.0 release notes](https://github.com/electron/electron/releases/tag/v10.0.0) for a full list of new features and changes.
 
 ## Breaking Changes
+
+* Changed the default value of 'enableRemoteModule' to false. [#22091](https://github.com/electron/electron/pull/22091) 
+* Changed the default value of `app.allowRendererProcessReuse` to `true`.
+   * This will prevent loading of non-context-aware native modules in renderer processes.  See #18397 for more information on this change. [#22336](https://github.com/electron/electron/pull/22336) [#22401](Also in [9](https://github.com/electron/electron/pull/22401)
+* Fixed the positioning of window buttons on MacOS when the OS locale is set to an RTL language (like Arabic or Hebrew). Frameless window apps may have to account for this change while styling their windows. [#22016](https://github.com/electron/electron/pull/22016) 
 
 More information about these and future changes can be found on the [Planned Breaking Changes](https://github.com/electron/electron/blob/master/docs/breaking-changes.md) page.
 
 ## API Changes
 
+* Session: Can now check if a given `session` is persistent by calling the `ses.isPersistent()` API. [#22622](https://github.com/electron/electron/pull/22622) 
 
 ### Deprecated APIs
 
 The following APIs are now deprecated or removed:
 
+* Removed the deprecated `currentlyLoggingPath` property of `netLog`. Additionally, `netLog.stopLogging` no longer returns the path to the recorded log. [#22732](https://github.com/electron/electron/pull/22732)
+* Deprecated uncompressed crash uploads in `crashReporter`. [#23598](https://github.com/electron/electron/pull/23598) 
 
 ## End of Support for 7.x.y
 
