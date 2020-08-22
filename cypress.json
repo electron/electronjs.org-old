@@ -2,8 +2,5 @@
   "projectId": "4j4z3k",
   "requestTimeout": 10000,
   "record": false,
-  "defaultCommandTimeout": 10000,
-  "env": {
-    "RETRY_FAILED_TESTS": true
-  }
+  "defaultCommandTimeout": 10000
 }
