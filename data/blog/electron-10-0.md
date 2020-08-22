@@ -6,7 +6,7 @@ author:
 date: '2020-08-25'
 ---
 
-Electron 10.0.0 has been released! It includes upgrades to Chromium `85`, V8 `8.5`, and Node.js `12.16`. We've added several new API integrations for our spellchecker feature, enabled PDF viewer, and much more!
+Electron 10.0.0 has been released! It includes upgrades to Chromium `85`, V8 `8.5`, and Node.js `12.16`. We've added several new API integrations and improvements. Read below for more details!
 
 ---
 
@@ -36,29 +36,29 @@ See the [10.0.0 release notes](https://github.com/electron/electron/releases/tag
 
 ## Breaking Changes
 
-* Changed the default value of 'enableRemoteModule' to false. [#22091](https://github.com/electron/electron/pull/22091) 
-* Changed the default value of `app.allowRendererProcessReuse` to `true`.
-   * This will prevent loading of non-context-aware native modules in renderer processes.  See #18397 for more information on this change. [#22336](https://github.com/electron/electron/pull/22336) [#22401](Also in [9](https://github.com/electron/electron/pull/22401)
+* Changed the default value of 'enableRemoteModule' to false. [#22091](https://github.com/electron/electron/pull/22091)
+    * This is part of our plans for deprecating the `remote` module and moving it to userland. You can read and follow [this issue](https://github.com/electron/electron/issues/21408) that details our reasons for this and includes a proposed timeline for deprecation.
+* Changed the default value of `app.allowRendererProcessReuse` to `true`. [#22336](https://github.com/electron/electron/pull/22336) (Also in [Electron 9](https://github.com/electron/electron/pull/22401))
+   * This will prevent loading of non-context-aware native modules in renderer processes. 
+   * You can read and follow [this issue](https://github.com/electron/electron/issues/18397) that details our reasons for this and includes a proposed timeline for deprecation.
 * Fixed the positioning of window buttons on MacOS when the OS locale is set to an RTL language (like Arabic or Hebrew). Frameless window apps may have to account for this change while styling their windows. [#22016](https://github.com/electron/electron/pull/22016) 
 
 More information about these and future changes can be found on the [Planned Breaking Changes](https://github.com/electron/electron/blob/master/docs/breaking-changes.md) page.
 
 ## API Changes
 
-* Session: Can now check if a given `session` is persistent by calling the `ses.isPersistent()` API. [#22622](https://github.com/electron/electron/pull/22622) 
+* Session: Can now check if a given `session` is persistent by calling the `ses.isPersistent()` API. [#22622](https://github.com/electron/electron/pull/22622)
 
 ### Deprecated APIs
 
 The following APIs are now deprecated or removed:
 
 * Removed the deprecated `currentlyLoggingPath` property of `netLog`. Additionally, `netLog.stopLogging` no longer returns the path to the recorded log. [#22732](https://github.com/electron/electron/pull/22732)
-* Deprecated uncompressed crash uploads in `crashReporter`. [#23598](https://github.com/electron/electron/pull/23598) 
+* Deprecated uncompressed crash uploads in `crashReporter`. [#23598](https://github.com/electron/electron/pull/23598)
 
 ## End of Support for 7.x.y
 
-Electron 7.x.y has reached end-of-support as per the project's
-[support policy](https://electronjs.org/docs/tutorial/support#supported-versions).
-Developers and applications are encouraged to upgrade to a newer version of Electron.
+Electron 7.x.y has reached end-of-support as per the project's [support policy](https://electronjs.org/docs/tutorial/support#supported-versions). Developers and applications are encouraged to upgrade to a newer version of Electron.
 
 ## What's Next
 
@@ -66,10 +66,8 @@ In the short term, you can expect the team to continue to focus on keeping up wi
 
 For information on planned breaking changes in upcoming versions of Electron, [see our Planned Breaking Changes doc](https://github.com/electron/electron/blob/master/docs/breaking-changes.md).
 
-### Change the default of `contextIsolation` from `false` to `true` (Starting in Electron 10)
+### Continued Work for Deprecation of `remote` Module (in Electron 11)
+We started work to remove the remote module in [Electron 9](https://www.electronjs.org/blog/electron-9-0) and we're continuing plans to remove the `remote` module. In Electron 11, we plan to continue refactor work for implementing [WeakRef](https://v8.dev/features/weak-references) as we have done in Electron 10. Please read and follow [this issue](https://github.com/electron/electron/issues/21408) for full plans and details for deprecation.
 
-Without contextIsolation, any code running in a renderer process can quite easily reach into Electron internals or an app's preload script. That code can then perform privileged actions that Electron wants to keep restricted.
-
-Changing this default improves the default security of Electron apps, so that apps will need to deliberately opt in to the insecure behaviour. Electron will depreciate the current default of `contextIsolation` in Electron 10.0, and change to the new default (`true`) in Electron 12.0.
-
-For more information on `contextIsolation`, how to enable it easily and it's security benefits please see our dedicated [Context Isolation Document](https://github.com/electron/electron/blob/master/docs/tutorial/context-isolation.md).
+### Final Step for Requiring Native Node Modules to be Context Aware or N-API (in Electron 11)
+We started groundwork for this back in Electron 6 release for native Node modules loaded in the renderer process to be either [N-API](https://nodejs.org/api/n-api.html) or [Context Aware](https://nodejs.org/api/addons.html#addons_context_aware_addons). Reasons being stronger security, faster performance, and reduced maintenance workload. In Electron 11, the final step of this plan is to remove the ability to change `app.allowRendererProcessReuse`. Read [this issue](https://github.com/electron/electron/issues/18397) for full details including the proposed timeline.
