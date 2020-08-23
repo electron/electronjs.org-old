@@ -30,7 +30,7 @@
     }
   },
   "dependencies": {
-    "@babel/core": "^7.11.1",
+    "@babel/core": "^7.11.4",
     "@babel/preset-env": "^7.11.0",
     "@primer/css": "^15.1.0",
     "awesome-electron": "2.6.0",
