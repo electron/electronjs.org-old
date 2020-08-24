@@ -16,9 +16,9 @@ The Electron team is excited to announce the release of Electron 10.0.0! You can
 
 ### Stack Changes
 
-* Chromium `85.` [TODO: final patch number]
+* Chromium `85.0.4183.84`
     * [New in Chrome 84](https://developers.google.com/web/updates/2020/07/nic84)
-    * [New in Chrome 85](TODO)
+    * [New in Chrome 85](https://developers.google.com/web/updates/2020/07/nic84)
 * Node.js `12.16.3`
     * [Node 12.16.3 blog post](https://nodejs.org/en/blog/release/v12.16.3/)
 * V8 `8.5`
