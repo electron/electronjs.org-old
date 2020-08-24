@@ -36,12 +36,12 @@ See the [10.0.0 release notes](https://github.com/electron/electron/releases/tag
 
 ## Breaking Changes
 
-* Changed the default value of 'enableRemoteModule' to false. [#22091](https://github.com/electron/electron/pull/22091)
+* Changed the default value of `enableRemoteModule` to `false`. [#22091](https://github.com/electron/electron/pull/22091)
     * This is part of our plans for deprecating the `remote` module and moving it to userland. You can read and follow [this issue](https://github.com/electron/electron/issues/21408) that details our reasons for this and includes a proposed timeline for deprecation.
 * Changed the default value of `app.allowRendererProcessReuse` to `true`. [#22336](https://github.com/electron/electron/pull/22336) (Also in [Electron 9](https://github.com/electron/electron/pull/22401))
    * This will prevent loading of non-context-aware native modules in renderer processes. 
    * You can read and follow [this issue](https://github.com/electron/electron/issues/18397) that details our reasons for this and includes a proposed timeline for deprecation.
-* Fixed the positioning of window buttons on MacOS when the OS locale is set to an RTL language (like Arabic or Hebrew). Frameless window apps may have to account for this change while styling their windows. [#22016](https://github.com/electron/electron/pull/22016) 
+* Fixed the positioning of window buttons on macOS when the OS locale is set to an RTL language (like Arabic or Hebrew). Frameless window apps may have to account for this change while styling their windows. [#22016](https://github.com/electron/electron/pull/22016) 
 
 More information about these and future changes can be found on the [Planned Breaking Changes](https://github.com/electron/electron/blob/master/docs/breaking-changes.md) page.
 
@@ -70,4 +70,4 @@ For information on planned breaking changes in upcoming versions of Electron, [s
 We started work to remove the remote module in [Electron 9](https://www.electronjs.org/blog/electron-9-0) and we're continuing plans to remove the `remote` module. In Electron 11, we plan to continue refactor work for implementing [WeakRef](https://v8.dev/features/weak-references) as we have done in Electron 10. Please read and follow [this issue](https://github.com/electron/electron/issues/21408) for full plans and details for deprecation.
 
 ### Final Step for Requiring Native Node Modules to be Context Aware or N-API (in Electron 11)
-We started groundwork for this back in Electron 6 release for native Node modules loaded in the renderer process to be either [N-API](https://nodejs.org/api/n-api.html) or [Context Aware](https://nodejs.org/api/addons.html#addons_context_aware_addons). Reasons being stronger security, faster performance, and reduced maintenance workload. In Electron 11, the final step of this plan is to remove the ability to change `app.allowRendererProcessReuse`. Read [this issue](https://github.com/electron/electron/issues/18397) for full details including the proposed timeline.
+From Electron 6 onwards, we've been laying the groundwork to require [native Node modules](https://nodejs.org/api/addons.html) loaded in the renderer process to be either [N-API](https://nodejs.org/api/n-api.html) or [Context Aware](https://nodejs.org/api/addons.html#addons_context_aware_addons). Enforcing this change allows for stronger security, faster performance, and reduced maintenance workload. The final step of this plan is to remove the ability to disable render process reuse in Electron 11. Read [this issue](https://github.com/electron/electron/issues/18397) for full details including the proposed timeline.
