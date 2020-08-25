@@ -22,7 +22,7 @@ We can't wait to see what you build with them! Continue reading for details abou
 
 * Chromium `85.0.4183.84`
     * [New in Chrome 84](https://developers.google.com/web/updates/2020/07/nic84)
-    * [New in Chrome 85](https://developers.google.com/web/updates/2020/07/nic84)
+    * [New in Chrome 85](https://chromereleases.googleblog.com/2020/08/stable-channel-update-for-desktop_25.html)
 * Node.js `12.16.3`
     * [Node 12.16.3 blog post](https://nodejs.org/en/blog/release/v12.16.3/)
 * V8 `8.5`
