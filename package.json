@@ -68,7 +68,7 @@
     "lobars": "^1.2.0",
     "locale-code": "^2.0.2",
     "lodash": "^4.17.20",
-    "lunr": "^2.3.8",
+    "lunr": "^2.3.9",
     "make-promises-safe": "^5.0.0",
     "minimist": "^1.2.5",
     "node-sass-middleware": "^0.11.0",
