@@ -25,7 +25,7 @@ feel free to propose changes to this document in a pull request.
 - [Context](#context)
 - [Styles](#styles)
 - [Frontend JavaScript](#frontend-javascript)
-- [GA Evens](#google-analytics-events)
+- [Google Analytics Events](#google-analytics-events)
 - [Scripts](#scripts)
 - [Environment Variables](#environment-variables)
 
@@ -344,13 +344,12 @@ compiles the `scripts/index.js` file to browser-compatible ES5.
 
 ## Google Analytics Events
 
-We use the [Google Analytics Events](https://developers.google.com/analytics/devguides/collection/analyticsjs/events)
-for measure purposes of needing and usage of features what are we
-provide on the website.
+We use [Google Analytics Events](https://developers.google.com/analytics/devguides/collection/analyticsjs/events)
+to measure usage of features that we provide on the website.
 
-For usage, you need to provide the `data-sc-category` and `data-sc-name` properties
-to element. If `data-sc-category` is not provided `general` be used as a
-default category for event.
+To add an event, you need to provide `data-sc-category` and `data-sc-name`
+properties to an element in the DOM. If `data-sc-category` is not provided,
+`general` will be used as a default category for the event.
 
 ### Example
 
