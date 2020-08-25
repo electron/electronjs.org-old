@@ -10,7 +10,11 @@ Electron 10.0.0 has been released! It includes upgrades to Chromium `85`, V8 `8.
 
 ---
 
-The Electron team is excited to announce the release of Electron 10.0.0! You can install it with npm via `npm install electron@latest` or download it from our [releases website](https://electronjs.org/releases/stable). The release is packed with upgrades, fixes, and new features. We can't wait to see what you build with them! Continue reading for details about this release, and please share any feedback you have!
+The Electron team is excited to announce the release of Electron 10.0.0! You can install it with npm via `npm install electron@latest` or download it from our [releases website](https://electronjs.org/releases/stable). The release is packed with upgrades, fixes, and new features. 
+
+In the Electron 10 release, we also made a change to our release notes. To make it easier to tell what's brand new in Electron 10, and what may have changed between Electron 10 and past releases, we also included changed that were introduced to Electron 10, but backported to previous releases. We hope this makes it easier to apps to find new features and bug fixes when upgrading.
+
+We can't wait to see what you build with them! Continue reading for details about this release, and please share any feedback you have!
 
 ## Notable Changes
 
@@ -48,6 +52,7 @@ More information about these and future changes can be found on the [Planned Bre
 ## API Changes
 
 * Session: Can now check if a given `session` is persistent by calling the `ses.isPersistent()` API. [#22622](https://github.com/electron/electron/pull/22622)
+* Contents: Added `contents.getBackgroundThrottling()` method and `contents.backgroundThrottling` property. [#21036](https://github.com/electron/electron/pull/21036)
 
 ### Deprecated APIs
 
