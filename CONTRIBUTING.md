@@ -25,14 +25,15 @@ feel free to propose changes to this document in a pull request.
 - [Context](#context)
 - [Styles](#styles)
 - [Frontend JavaScript](#frontend-javascript)
+- [GA Evens](#google-analytics-events)
 - [Scripts](#scripts)
 - [Environment Variables](#environment-variables)
 
 ## Issues and Pull Requests
 
-* If you're not sure about adding something, [open an issue](https://github.com/electron/electronjs.org/issues/new) to discuss it.
-* Feel free to open a Pull Request early so that a discussion can be had as changes are developed.
-* Include screenshots and animated gifs of your changes whenever possible.
+- If you're not sure about adding something, [open an issue](https://github.com/electron/electronjs.org/issues/new) to discuss it.
+- Feel free to open a Pull Request early so that a discussion can be had as changes are developed.
+- Include screenshots and animated gifs of your changes whenever possible.
 
 ## Commit Messages and Pull Request Titles
 
@@ -43,7 +44,7 @@ Example: `fix: make header bold`
 
 ### Pull Request Title
 
-Same as commit messages, prepend the type of change being made (refactor, fix, chore, feat, etc.) 
+Same as commit messages, prepend the type of change being made (refactor, fix, chore, feat, etc.)
 Example: `docs: add linux setup instructions`
 
 ## Heroku Review Apps
@@ -82,7 +83,7 @@ You should now have an Express server running at
 
 If there is an error building the `node-sass` dependency, try running `npm rebuild node-sass`.
 
-**Note**: If errors are still shown after you have installed all the dependencies, try to delete the `node_modules` directory in your project and run `npm install` again. 
+**Note**: If errors are still shown after you have installed all the dependencies, try to delete the `node_modules` directory in your project and run `npm install` again.
 
 Read on for more info about the structure of the site.
 
@@ -114,7 +115,7 @@ Blogs are written in "Jekyll style", with YML frontmatter at the top for
 metadata. The `title`, `author`, and `date` properties should be set
 on all posts:
 
-```
+```markdown
 ---
 title: 'I am a blog post'
 author: zeke
@@ -132,9 +133,9 @@ the cutoff point for the post summary that's displayed on the
 
 A few guidelines to keep in mind when publishing a blog post:
 
-* Posts should normally be published on Tuesday mornings (Pacific time) for maximum social reach.
-* Make sure the date in the filename is today's date
-* Tweet about it once the post is live!
+- Posts should normally be published on Tuesday mornings (Pacific time) for maximum social reach.
+- Make sure the date in the filename is today's date
+- Tweet about it once the post is live!
 
 ### Localized Strings
 
@@ -148,7 +149,7 @@ if no translation exists yet.
 To use localized strings in views, use the `localized` object, which is generated
 automatically by the [context middleware](#context):
 
-```html
+```hbs
 <p>{{{localized.web_technologies.description}}}</p>
 ```
 
@@ -340,6 +341,22 @@ document.addEventListener('DOMContentLoaded', () => {
 Like the [Sass middleware](#styles), no compiled JavaScript code is written to
 disk. When a GET request is made to `/scripts/index.js`, the server dynamically
 compiles the `scripts/index.js` file to browser-compatible ES5.
+
+## Google Analytics Events
+
+We use the [Google Analytics Events](https://developers.google.com/analytics/devguides/collection/analyticsjs/events)
+for measure purposes of needing and usage of features what are we
+provide on the website.
+
+For usage, you need to provide the `data-sc-category` and `data-sc-name` properties
+to element. If `data-sc-category` is not provided `general` be used as a
+default category for event.
+
+### Example
+
+```hbs
+<button data-sc-category="docs" data-sc-name="Docs page opening">Open docs page</button>
+```
 
 ## Scripts
 
