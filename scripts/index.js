@@ -21,4 +21,5 @@ document.addEventListener('DOMContentLoaded', () => {
   require('./language-selector')()
   require('./kb-shortcut-dialog')()
   require('./anchor-links')()
+  require('./science')()
 })
