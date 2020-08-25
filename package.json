@@ -105,7 +105,7 @@
     "nock": "^13.0.4",
     "node-sass": "^4.14.1",
     "nodemon": "^2.0.4",
-    "prettier": "^2.0.5",
+    "prettier": "^2.1.0",
     "simplecrawler": "^1.1.9",
     "stylelint": "^13.6.1",
     "stylelint-config-standard": "^20.0.0",
