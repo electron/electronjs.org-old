@@ -1,30 +1,3 @@
-// These are our margin and padding utility spacers. The default step size we
-// use is 6px. This gives us a key of:
-//    0 => 0px
-//    1 => 3px
-//    2 => 6px
-//    3 => 12px
-//    4 => 24px
-//    5 => 36px
-$spacer: 6px !default;
-$spacers: (
-  0,
-  round($spacer / 2),
-  $spacer,
-  $spacer * 2,
-  $spacer * 4,
-  $spacer * 6,
-  $spacer * 8
-) !default;
-
-// Aliases for easy use
-$spacer1: nth($spacers, 2) !default; // 3px
-$spacer2: nth($spacers, 3) !default; // 6px
-$spacer3: nth($spacers, 4) !default; // 12px
-$spacer4: nth($spacers, 5) !default; // 24px
-$spacer5: nth($spacers, 6) !default; // 36px
-$spacer6: nth($spacers, 7) !default; // 48px
-
 $container-width: 980px !default;
 $grid-gutter:     10px !default;
 

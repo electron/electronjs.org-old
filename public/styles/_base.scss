@@ -27,12 +27,12 @@ h6 {
 
 hr {
   border-color: $border-color; // override Primer
-  margin-left: $spacer6 !important;
-  margin-right: $spacer6 !important;
+  margin-left: $spacer-6 !important;
+  margin-right: $spacer-6 !important;
 
   @include breakpoint(md) {
-    margin-left: $spacer8 !important;
-    margin-right: $spacer8 !important;
+    margin-left: $spacer-8 !important;
+    margin-right: $spacer-8 !important;
   }
 }
 

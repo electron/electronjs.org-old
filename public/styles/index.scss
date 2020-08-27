@@ -32,8 +32,6 @@
 
 // Electron -----------------------------------
 
-@import "base";
-
 // @primer/css imports
 @import "@primer/css/support/index.scss";
 
@@ -45,6 +43,7 @@
 @import "@primer/css/utilities/padding.scss";
 @import "@primer/css/pagination/index.scss";
 
+@import "base";
 @import "hljs/github.css"; // Syntax highlighting
 @import "hljs/overrides"; // customization
 
