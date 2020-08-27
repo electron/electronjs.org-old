@@ -13,7 +13,6 @@
 @import "../bower_components/basecoat/scss/mixins/grid-framework";
 
 // Basecoat
-@import "../bower_components/primer-css/scss/normalize";
 @import "../bower_components/primer-css/scss/base";
 @import "../bower_components/primer-css/scss/type";
 @import "../bower_components/basecoat/scss/layout"; // Basecoat override
@@ -37,6 +36,9 @@
 
 // @primer/css imports
 @import "@primer/css/support/index.scss";
+
+@import "@primer/css/base/normalize.scss";
+@import "@primer/css/base/kbd.scss";
 @import "@primer/css/buttons/index.scss";
 @import "@primer/css/marketing/index.scss";
 @import "@primer/css/tooltips/index.scss";
