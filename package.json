@@ -99,7 +99,7 @@
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.4",
     "husky": "^4.2.5",
-    "lint-staged": "^10.2.11",
+    "lint-staged": "^10.2.13",
     "mocha": "^8.1.2",
     "nock": "^13.0.4",
     "node-sass": "^4.14.1",
