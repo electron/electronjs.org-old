@@ -39,13 +39,13 @@ pre code {
 
 // Code blocks
 .highlight {
-  margin: 0 0 $spacer-3 !important;
-  border-radius: 4px !important;
-  background-color: $gray;
-  border: $border !important;
+  margin: 0 0 $spacer-3;
+  border-radius: 4px;
+  background-color: $gray-0;
+  border: $border;
 
   pre {
-    padding: $spacer-3 !important;
+    padding: $spacer-3;
     overflow: auto;
     font-size: 16px !important;
     line-height: 1.45 !important;

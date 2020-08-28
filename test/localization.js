@@ -13,7 +13,7 @@ const getProp = require('lodash/get')
 const locale = require(path.join(__dirname, '../data/locale.yml'))
 const views = walk
   .entries(path.join(__dirname, '../views'))
-  .filter((entry) => path.extname(entry.relativePath) === '.html')
+  .filter((entry) => path.extname(entry.relativePath) === '.hbs')
   .map((entry) => {
     const fullPath = path.join(entry.basePath, entry.relativePath)
     const view = {
