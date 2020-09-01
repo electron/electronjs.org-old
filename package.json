@@ -106,7 +106,7 @@
     "nodemon": "^2.0.4",
     "prettier": "^2.1.1",
     "simplecrawler": "^1.1.9",
-    "stylelint": "^13.6.1",
+    "stylelint": "^13.7.0",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-scss": "^3.18.0",
     "supertest": "^4.0.2",
