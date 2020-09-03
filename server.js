@@ -73,6 +73,7 @@ app.use(compression())
 app.use(
   helmet({
     contentSecurityPolicy: false,
+    referrerPolicy: false,
   })
 )
 if (process.env.NODE_ENV === 'production') {
