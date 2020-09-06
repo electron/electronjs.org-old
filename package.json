@@ -110,7 +110,7 @@
     "stylelint-config-standard": "^20.0.0",
     "stylelint-scss": "^3.18.0",
     "supertest": "^4.0.2",
-    "supertest-session": "^4.0.0",
+    "supertest-session": "^4.1.0",
     "uglify-js": "^3.8.1",
     "wait-on": "^5.2.0",
     "walk-sync": "^2.2.0"
