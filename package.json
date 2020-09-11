@@ -48,7 +48,7 @@
     "description": "0.0.4",
     "dotenv": "^8.2.0",
     "electron-api-historian": "^1.12.0",
-    "electron-apps": "1.8284.0",
+    "electron-apps": "1.8286.0",
     "electron-i18n": "^1.2390.0",
     "electron-markdown": "^0.8.0",
     "electron-releases": "^3.507.0",
