@@ -38,7 +38,7 @@ It then compares this data with the old data in the repository, and if the data 
 
 `electron-apps` is the data source for the [apps section](https://electronjs.org/apps) of the website (as well as the randomized list of apps [on the homepage](https://electronjs.org/#apps)).
 
-Users submit their app info via a PR to the `electron/apps` repository, and every so often, a GitHub Action runs `npm run release` which fetches the latest release info and the newest version of the readme for each app, as well as analyzing color information to ensure the app looks good on the site. All this information is packed into `index.json`, which is not checked in to the repository, but is published to npm.
+Users submit their app info via a PR to the `electron/apps` repository, and every so often, a GitHub Action runs `npm run release` which fetches the latest release info and the newest version of the readme for each app, as well as analyzing colour information to ensure the app looks good on the site. All this information is packed into `index.json`, which is not checked in to the repository, but is published to npm.
 
 ## electron-api-historian
 
