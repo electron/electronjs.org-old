@@ -48,6 +48,9 @@ Look out for issues tagged `hacktoberfest` across our various repositories, incl
 repository, the [electron/electronjs.org](https://github.com/electron/electronjs.org) website, [electron/fiddle](https://github.com/electron/fiddle),
 and [electron-userland/electron-forge](https://github.com/electron-userland/electron-forge)!
 
+P.S. If you're feeling particularly adventurous, we also have a backlog of issues marked with `help-wanted` tags if you're
+looking for more of a challenge.
+
 ## Stuck? Come chat with us!
 Moreover, it’s also no coincidence that the grand opening of our Discord server coincides with the largest celebration of
 open-source software of the year. Check out the #hacktoberfest channel to ask for help on your Hacktoberfest PR. In case
