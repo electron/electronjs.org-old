@@ -8,7 +8,7 @@ This is the source code for the Electron website at
 Electron is an open source project with a global contributor community.
 We want everyone to feel safe in our community, and we welcome participation
 from people of all backgrounds, regardless of experience level, age, gender 
-identity, race, religion, or nationality.
+identity, race, religion, or nationality please conrtibute your valuable suggestion we will be very thankful to you
 
 All participants are expected to uphold the [Code of Conduct](CODE_OF_CONDUCT.md).
 
