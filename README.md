@@ -5,7 +5,7 @@ This is the source code for the Electron website at
 
 ## Code of Conduct
 
-Electron is an open source project with a global contributor community.
+Electron is an open source project with a global contributors community.
 We want everyone to feel safe in our community, and we welcome participation
 from people of all backgrounds, regardless of experience level, age, gender 
 identity, race, religion, or nationality.
