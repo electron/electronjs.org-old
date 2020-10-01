@@ -44,12 +44,16 @@ of all skill levels into the project.
 This year, we don’t have a wider project to give you all to work on, but we’d like to focus on opportunities to contribute
 across the Electron JavaScript ecosystem.
 
-Look out for issues tagged `hacktoberfest` across our various repositories, including the main [electron/electron](https://github.com/electron/electron)
-repository, the [electron/electronjs.org](https://github.com/electron/electronjs.org) website, [electron/fiddle](https://github.com/electron/fiddle),
-and [electron-userland/electron-forge](https://github.com/electron-userland/electron-forge)!
+Look out for issues tagged [`hacktoberfest`](https://github.com/search?q=is%3Aissue+is%3Aopen+label%3Ahacktoberfest+org%3Aelectron+org%3Aelectron-userland)
+across our various repositories, including the main
+[electron/electron](https://github.com/electron/electron/issues?q=is%3Aopen+is%3Aissue+label%3A%22hacktoberfest%22+) repository,
+the [electron/electronjs.org](https://github.com/electron/electronjs.org/issues?q=is%3Aopen+is%3Aissue+label%3A%22hacktoberfest%22+) website,
+[electron/fiddle](https://github.com/electron/fiddle/issues?q=is%3Aopen+is%3Aissue+label%3A%22hacktoberfest%22+),
+and [electron-userland/electron-forge](https://github.com/electron-userland/electron-forge/issues?q=is%3Aopen+is%3Aissue+label%3A%22hacktoberfest%22+)!
 
-P.S. If you're feeling particularly adventurous, we also have a backlog of issues marked with `help-wanted` tags if you're
-looking for more of a challenge.
+P.S. If you're feeling particularly adventurous, we also have a backlog of issues marked with
+[`help wanted`](https://github.com/search?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22+org%3Aelectron+org%3Aelectron-userland)
+tags if you're looking for more of a challenge.
 
 ## Stuck? Come chat with us!
 Moreover, it’s also no coincidence that the grand opening of our Discord server coincides with the largest celebration of
