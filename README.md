@@ -12,7 +12,7 @@ identity, race, religion, or nationality.
 
 All participants are expected to uphold the [Code of Conduct](CODE_OF_CONDUCT.md).
 
-## Contributing
+## Contribute
 
 Writing code is great, but there are many other ways to make meaningful 
 contributions to the project:
