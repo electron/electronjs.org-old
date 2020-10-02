@@ -1,5 +1,9 @@
 # electronjs.org
 
+![Test](https://github.com/electron/electronjs.org/workflows/Test/badge.svg)
+![Integration Test](https://github.com/electron/electronjs.org/workflows/Integration%20Test/badge.svg)
+[![Electron Discord Invite](https://img.shields.io/discord/745037351163527189?color=%237289DA&label=chat&logo=discord&logoColor=white)](https://discord.com/invite/electron)
+
 This is the source code for the Electron website at 
 [electronjs.org](https://electronjs.org).
 
