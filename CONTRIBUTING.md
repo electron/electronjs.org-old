@@ -381,7 +381,13 @@ file. To list all available commands, type `npm run`.
 [electron/electron-i18n]: https://github.com/electron/electron-i18n
 
 ## Need Help?
-
+### [Join](https://discord.gg/H6uTh7m) The Discord Server!
+Join the Discord server to get connected to thousands of Devs creating awesome projects with Electron.js everyday!
+  - Get Help! regarding any issue you are facing.
+  - Make new friends, working in the same space!
+  - Find some amazing projects to contribute to! or Help others with their issues!
+  - Still Reading for reasons to Join? duh! Just [Join](https://discord.gg/H6uTh7m)  Already!
+  
 If any of this information confusing, incorrect, or incomplete, feel free to
 [open an issue](https://github.com/electron/electronjs.org/issues/new)
 for help.
