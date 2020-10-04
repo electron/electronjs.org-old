@@ -68,3 +68,35 @@
     vertical-align: middle;
   }
 }
+
+.header-discord {
+  circle {
+    transition: all 0.3s;
+    fill: $jumbo-color;
+  }
+
+  &.active,
+  &:hover{
+    circle {
+      fill: $jumbo-color-strong;
+    }
+  }
+
+  &:active {
+    circle {
+      fill: $jumbo-color-subtle;
+    }
+  }
+}
+
+.footer-discord{
+  circle {
+    color: $main-color-strong;
+  }
+  
+  &:hover {
+    circle {
+      fill: $main-color-subtle;
+    }
+  }
+}
