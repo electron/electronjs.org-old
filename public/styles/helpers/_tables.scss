@@ -1,5 +1,6 @@
 .table-ruled tr {
   border-bottom: 1px solid $border-color;
+
   &:last-child {
     border-bottom: none;
   }
@@ -9,7 +10,8 @@
   width: 100%;
 }
 
-.table-ruled td, .table-ruled th {
+.table-ruled td,
+.table-ruled th {
   padding: $spacer-2;
   line-height: 2;
   text-align: left;

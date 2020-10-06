@@ -19,13 +19,20 @@
   }
 }
 
-[class*="inline-octicon"]  {
+[class*="inline-octicon"] {
   float: left;
   width: 42px;
   color: lighten(desaturate($theme-color, 30%), 20%);
 }
 
-.hero-octicon-white, .inline-octicon-white {
+.hero-octicon {
+  color: $heading-color;
+  background-color: transparent;
+  // border: 1px solid mix($heading-color, #fff, 30%);
+}
+
+.hero-octicon-white,
+.inline-octicon-white {
   color: lighten(desaturate($theme-color, 50%), 50%);
 }
 
@@ -35,16 +42,16 @@
 
 .hero-feature {
   .hero-octicon {
-    transition: transform .32s;
+    transition: transform 0.32s;
   }
 
   &:hover .hero-octicon {
     transform: scale(1.1);
-    transition-duration: .08s;
+    transition-duration: 0.08s;
   }
 
   &:active .hero-octicon {
-    transform: scale(.92);
+    transform: scale(0.92);
     transition-duration: 0;
   }
 }
@@ -55,12 +62,6 @@
   &:hover {
     text-decoration: none !important;
   }
-}
-
-.hero-octicon {
-  color: $heading-color;
-  background-color: transparent;
-  // border: 1px solid mix($heading-color, #fff, 30%);
 }
 
 .btn {
