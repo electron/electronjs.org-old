@@ -70,33 +70,45 @@
 }
 
 .header-discord {
-  circle {
-    transition: all 0.3s;
-    fill: $jumbo-color;
-  }
-
-  &.active,
-  &:hover{
+  svg {
     circle {
-      fill: $jumbo-color-strong;
+      transition: all 0.3s;
+      fill: $jumbo-color;
     }
-  }
 
-  &:active {
-    circle {
-      fill: $jumbo-color-subtle;
+    path {
+      fill: #2f3241;
+    }
+  
+    &.active,
+    &:hover{
+      circle {
+        fill: $jumbo-color-strong;
+      }
+    }
+  
+    &:active {
+      circle {
+        fill: $jumbo-color-subtle;
+      }
     }
   }
 }
 
-.footer-discord{
-  circle {
-    color: $main-color-strong;
-  }
-  
-  &:hover {
+.footer-discord {
+  svg {
     circle {
-      fill: $main-color-subtle;
+      color: $main-color-strong;
+    }
+  
+    path {
+      fill: #f6f8f8;
+    }
+    
+    &:hover {
+      circle {
+        fill: $main-color-subtle;
+      }
     }
   }
 }
