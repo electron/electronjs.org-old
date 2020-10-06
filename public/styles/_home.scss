@@ -37,7 +37,7 @@
 }
 
 a.featured-app-list-item {
-  background-color: $main-bg-color;
+  background-color: $screen-shot-bg;
   padding: 20px;
   margin: 20px;
   transition: background-color 200ms ease-in-out;
@@ -131,7 +131,7 @@ a.featured-app-list-item {
   border-top-width: 20px;
   border-radius: 4px;
   background-color: $main-bg-color;
-  box-shadow: 0 25px 30px -18px rgba(0, 0, 0, 0.28);
+  box-shadow: 0 25px 30px -18px $main-drop-shadow;
 }
 
 @media screen and (max-width: 1300px) {
@@ -144,7 +144,6 @@ a.featured-app-list-item {
 
 .announcement-banner {
   background: $jumbo-bg-color;
-  border-bottom: 1px solid $jumbo-bg-border;
   padding-top: 20px;
   padding-bottom: 20px;
   color: $jumbo-color-strong;
