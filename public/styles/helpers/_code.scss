@@ -4,17 +4,12 @@
 
 code,
 pre {
-  font-family: Consolas,"Liberation Mono",Menlo,Courier,monospace;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
   font-size: 12px;
 }
 
 code {
   color: darken(saturate($main-color, 50%), 10%);
-  background-color: darken($main-bg-color, 5%);
-}
-
-// Inline code
-code {
   padding: 0;
   padding-top: 0.2em;
   padding-bottom: 0.2em;
@@ -23,17 +18,30 @@ code {
   background-color: rgba(0, 0, 0, 0.04);
   border-radius: 3px;
 
-  &:before,
-  &:after {
+  &::before,
+  &::after {
     letter-spacing: -0.2em;
     content: "\00a0";
   }
 }
 
-// No spacer in code blocks
-pre code {
-  &:after {
-    content: none;
+pre {
+  margin-bottom: 10px;
+  // No spacer in code blocks
+  code {
+    &::after {
+      content: none;
+    }
+  }
+}
+
+// make code in headers a bit stronger
+h1,
+h2,
+h3,
+h4 {
+  code {
+    background-color: darken($main-bg-color, 5%);
   }
 }
 
@@ -61,8 +69,8 @@ pre code {
       background-color: transparent;
       border: 0;
 
-      &:before,
-      &:after {
+      &::before,
+      &::after {
         content: none;
       }
     }
@@ -85,27 +93,13 @@ pre code {
   }
 }
 
-pre {
-  margin-bottom: 10px;
-}
-
-// make code in headers a bit stronger
-h1,
-h2,
-h3,
-h4 {
-  code {
-    background-color: darken($main-bg-color, 5%);
-  }
-}
-
 span.shell-one-liner {
   font-family: $code-font-family;
   padding: 10px;
   border-radius: 2px;
   line-height: 2;
 
-  &:before {
+  &::before {
     content: "$ ";
     opacity: 0.5;
   }
