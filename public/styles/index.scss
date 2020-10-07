@@ -33,7 +33,6 @@
 
 // @primer/css imports
 @import "@primer/css/support/index.scss";
-
 @import "@primer/css/base/normalize.scss";
 @import "@primer/css/base/kbd.scss";
 @import "@primer/css/buttons/index.scss";
@@ -42,6 +41,7 @@
 @import "@primer/css/utilities/padding.scss";
 @import "@primer/css/pagination/index.scss";
 
+// Local styles
 @import "base";
 @import "hljs/github.css"; // Syntax highlighting
 @import "hljs/overrides"; // customization
