@@ -70,8 +70,11 @@
   }
 }
 
-.header-discord {
+.header-icon {
   svg {
+
+    display: block;
+
     circle {
       transition: all 0.3s;
       fill: $jumbo-color;
@@ -96,10 +99,10 @@
   }
 }
 
-.footer-discord {
+.footer-icon {
   svg {
     circle {
-      color: $main-color-strong;
+      fill: $main-color-strong;
     }
   
     path {
