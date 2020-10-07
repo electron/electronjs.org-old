@@ -37,7 +37,7 @@
   background-color: $white !important;
   border: 1px solid $border-color !important;
   border-radius: $border-radius;
-  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 // Site Header
@@ -62,6 +62,7 @@
     &:hover {
       color: $jumbo-color-strong;
     }
+
     &:active {
       color: $jumbo-color-subtle;
     }
@@ -91,7 +92,9 @@
     margin-left: 20px;
   }
 
-  &.active, &:active, &:hover {
+  &.active,
+  &:active,
+  &:hover {
     border-bottom-color: $jumbo-color-strong;
     text-decoration: none;
   }
@@ -124,6 +127,7 @@
   .svg-fill {
     fill: currentColor;
   }
+
   .svg-stroke {
     stroke: currentColor;
     stroke-width: 1.2;
@@ -136,18 +140,22 @@
   .site-header {
     text-align: center;
   }
+
   .site-header-logo,
   .site-header-nav {
     float: none;
   }
 }
-.site-header-logo { @include breakpoint(lg) { float: left; } }
-.site-header-nav  { @include breakpoint(lg) { float: right; } }
+
+html[dir="ltr"] {
+  .site-header-logo { @include breakpoint(lg) { float: left; } }
+  .site-header-nav { @include breakpoint(lg) { float: right; } }
+}
 
 // swap logo and nav for right-to-left languages
 html[dir="rtl"] {
   .site-header-logo { @include breakpoint(lg) { float: right; } }
-  .site-header-nav  { @include breakpoint(lg) { float: left; } }
+  .site-header-nav { @include breakpoint(lg) { float: left; } }
 
   .site-header-nav-item {
     + .site-header-nav-item {

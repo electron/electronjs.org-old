@@ -20,7 +20,7 @@
     "cypress": "cypress run",
     "lint": "npm run lint:js && npm run lint:style",
     "lint:js": "eslint . --fix",
-    "lint:style": "stylelint 'public/styles/*.scss' --fix",
+    "lint:style": "stylelint 'public/styles/**/*.scss' --fix",
     "heroku-postbuild": "npm run precompile-assets"
   },
   "husky": {
@@ -48,10 +48,10 @@
     "description": "0.0.4",
     "dotenv": "^8.2.0",
     "electron-api-historian": "^1.12.0",
-    "electron-apps": "1.8334.0",
-    "electron-i18n": "^1.2458.0",
+    "electron-apps": "1.8335.0",
+    "electron-i18n": "^1.2464.0",
     "electron-markdown": "^0.8.1",
-    "electron-releases": "^3.515.0",
+    "electron-releases": "^3.516.0",
     "electron-userland-reports": "1.6.0",
     "express": "^4.17.1",
     "express-hbs": "^2.3.4",
@@ -111,7 +111,7 @@
     "stylelint-scss": "^3.18.0",
     "supertest": "^5.0.0",
     "supertest-session": "^4.1.0",
-    "uglify-js": "^3.11.0",
+    "uglify-js": "^3.11.1",
     "wait-on": "^5.2.0",
     "walk-sync": "^2.2.0"
   },
