@@ -12,7 +12,7 @@
   }
 
   // Shadow
-  &:after {
+  &::after {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -48,7 +48,6 @@
   }
 }
 
-
 // Jumbotron -----------------------------
 
 .jumbotron-lead {
@@ -57,15 +56,18 @@
   font-weight: 300;
 
   @include breakpoint(md) { font-size: 1.8rem; }
+
   @include breakpoint(lg) { font-size: 2.4rem; }
+
   @include breakpoint(xl) { font-size: 2.4rem; }
 }
 
 .jumbotron-lead-muted {
   color: $jumbo-color-subtle;
+
   @include breakpoint(md) {
     display: block;
-    font-size: .8em;
+    font-size: 0.8em;
   }
 }
 
@@ -77,18 +79,24 @@
   text-align: center;
   border: 1px solid darken($sub-bg-color, 8%);
   background-color: $sub-bg-color;
-
   padding: $spacer-3;
+
   @include breakpoint(sm) { padding: $spacer-3; }
+
   @include breakpoint(md) { padding: $spacer-4; }
+
   @include breakpoint(lg) { padding: $spacer-5; }
+
   @include breakpoint(xl) { padding: $spacer-6; }
 
   h1 {
-    margin: 0 0 .3em 0;
+    margin: 0 0 0.3em 0;
     font-size: $body-font-size * 1.75;
+
     @include breakpoint(md) { font-size: $body-font-size * 2; }
+
     @include breakpoint(lg) { font-size: $body-font-size * 2.5; }
+
     @include breakpoint(xl) { font-size: $body-font-size * 3; }
 
     &:only-child {
