@@ -1,4 +1,4 @@
-# electronjs.org
+# Electronjs.org
 
 ![Test](https://github.com/electron/electronjs.org/workflows/Test/badge.svg)
 ![Integration Test](https://github.com/electron/electronjs.org/workflows/Integration%20Test/badge.svg)
