@@ -8,11 +8,11 @@ With Apple Silicon hardware being released later this year, what does the path l
 
 ---
 
-With the release of Electron 11.0.0-beta.1, the Electron team is now shipping builds of Electron that run on the new Apple Silicon hardware that Apple plans on shipping later this year.  You can grab the latest beta with `npm install electron@beta` or download it directly from our [releases website](https://electronjs.org/releases/stable).
+With the release of Electron 11.0.0-beta.1, the Electron team is now shipping builds of Electron that run on the new Apple Silicon hardware that Apple plans on shipping later this year. You can grab the latest beta with `npm install electron@beta` or download it directly from our [releases website](https://electronjs.org/releases/stable).
 
 ## How does it work?
 
-As of Electron 11, we will be shipping separate versions of Electron for Intel Macs and Apple Silicon Macs. Prior to this change, we were already shipping two artifacts, `darwin-x64` and `mas-x64`, with the latter being for Mac App Store compatibility usage.  We are now shipping another two artifacts, `darwin-arm64` and `mas-arm64`, which are the Apple Silicon equivalents of the aforementioned artifacts.
+As of Electron 11, we will be shipping separate versions of Electron for Intel Macs and Apple Silicon Macs. Prior to this change, we were already shipping two artifacts, `darwin-x64` and `mas-x64`, with the latter being for Mac App Store compatibility usage. We are now shipping another two artifacts, `darwin-arm64` and `mas-arm64`, which are the Apple Silicon equivalents of the aforementioned artifacts.
 
 ## What do I need to do?
 
@@ -38,12 +38,12 @@ As a result of these dependency version requirements, you may have to fix/update
 
 ## How do I test it?
 
-Currently, Apple Silicon applications only run on Apple Silicon hardware, which isn't commercially available at the time of writing this blog post.  If you have a [Developer Transition Kit](https://developer.apple.com/programs/universal/), you can test your application on that. Otherwise, you'll have to wait for the release of production Apple Silicon hardware to test if your application works.
+Currently, Apple Silicon applications only run on Apple Silicon hardware, which isn't commercially available at the time of writing this blog post. If you have a [Developer Transition Kit](https://developer.apple.com/programs/universal/), you can test your application on that. Otherwise, you'll have to wait for the release of production Apple Silicon hardware to test if your application works.
 
 ## What about Rosetta 2?
 
 Rosetta 2 is Apple's latest iteration of their [Rosetta](https://en.wikipedia.org/wiki/Rosetta_(software)) technology, which allows you to run x64 Intel applications on their new arm64 Apple Silicon hardware.  Although we believe that x64 Electron apps will run under Rosetta 2, there are some important things to note (and reasons why you should ship a native arm64 binary).
 
-* Your app's performance will be significantly degraded. Electron / V8 uses [JIT](https://en.wikipedia.org/wiki/Just-in-time_compilation) compilation for JavaScript, and due to how Rosetta works ,you will effectively be running JIT twice (once in V8 and once in Rosetta).
+* Your app's performance will be significantly degraded. Electron / V8 uses [JIT](https://en.wikipedia.org/wiki/Just-in-time_compilation) compilation for JavaScript, and due to how Rosetta works, you will effectively be running JIT twice (once in V8 and once in Rosetta).
 * You lose the benefit of new technology in Apple Silicon, such as the increased memory page size.
 * Did we mention that the performance will be **significantly** degraded?
