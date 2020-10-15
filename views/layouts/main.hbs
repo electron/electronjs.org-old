@@ -4,6 +4,7 @@
   <body>
     {{> header}}
     {{{body}}}
+    {{> footer}}
     <div id="hits">
       <div class="hits-container" id="api-hits" title="APIs"></div>
       <div class="hits-container" id="tutorial-hits" title="Tutorials"></div>
@@ -11,7 +12,6 @@
       <div class="hits-container" id="app-hits" title="Apps"></div>
     </div>
     <div id="refinement-list"></div>
-    {{> footer}}
     {{> kb_shortcut_dialog}}
     <script>
     if ('serviceWorker' in navigator) {
