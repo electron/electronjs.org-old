@@ -33,14 +33,14 @@
       <a class="site-header-nav-item octicon" href="https://github.com/electron" title="Github Organization">
         <span class="mega-octicon octicon-mark-github vertical-middle"></span>
       </a>
-      <a class="site-header-nav-item bordered lang-select-button" href="/languages">{{currentLocaleNativeName}}</a>
+      <button class="site-header-nav-item bordered lang-select-button" aria-controls="languages-header-menu" aria-expanded="false" aria-label="{{localized.languages.choose_language}}">{{currentLocaleNativeName}}</button>
     </nav>
   </div>
 </header>
 
-<div id="languages-header-menu" class="container collapsed">
+<div id="languages-header-menu" class="container collapsed" role="region" aria-labelledby="choose-language">
   <div class="m-4">
-    <div class="text-center-sm mb-4">
+    <div id="choose-language" class="text-center-sm mb-4">
       <strong>{{localized.languages.choose_language}}</strong>
     </div>
     <div class="clearfix">
