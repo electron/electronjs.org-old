@@ -54,7 +54,8 @@
   padding-right: $spacer-3;
   text-align: center;
 
-  a {
+  a,
+  button {
     color: inherit;
     transition: all 0.3s;
 
@@ -104,12 +105,14 @@
   }
 
   &.bordered {
+    background-color: transparent;
     border: 1px solid $jumbo-color-strong;
     border-radius: 3px;
     padding: 0 7px;
     opacity: 0.7;
     font-size: 12px;
     line-height: 2;
+    cursor: pointer;
   }
 }
 
