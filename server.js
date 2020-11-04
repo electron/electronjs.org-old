@@ -113,62 +113,72 @@ app.get('/', routes.home)
 app.get('/app/:slug', (req, res) => res.redirect(`/apps/${req.params.slug}`))
 app.get('/apps', routes.apps.index)
 app.get('/apps/:slug', routes.apps.show)
-app.get('/awesome', (req, res) => res.redirect('/community'))
+app.use('/blacklivesmatter', routes.blacklivesmatter)
 app.get('/blog', routes.blog.index)
 app.get('/blog/:slug', routes.blog.show)
 app.get('/blog/:y/:m/:d/:slug', routes.blog.show)
 app.get('/blog.json', routes.feed.blog)
 app.get('/blog.xml', routes.feed.blog)
-app.get('/releases.json', routes.feed.releases)
-app.get('/releases.xml', routes.feed.releases)
 app.get('/community', routes.community)
 app.get('/contact', (req, res) => res.redirect(301, '/community'))
+app.use('/crowdin', routes.languages.proxy)
 app.get('/devtron', routes.devtron)
 app.get('/docs', routes.docs.index)
 app.get('/docs/versions', (req, res) => res.redirect(301, '/releases/stable'))
 app.get('/docs/:category', routes.docs.category)
-app.get('/docs/api/breaking-changes', (req, res) =>
-  res.redirect(301, '/docs/breaking-changes')
-)
 app.get('/docs/api/structures', routes.docs.structures)
 app.get('/docs/*/history', routes.docs.history)
 app.get('/docs/:category/*', routes.docs.show)
-app.get('/docs/latest*', (req, res) =>
-  res.redirect(req.path.replace(/^\/docs\/latest/gi, '/docs'))
-)
-app.get('/docs/v0*', (req, res) =>
-  res.redirect(req.path.replace(/^\/docs\/v0\.\d+\.\d+/gi, '/docs'))
-)
-app.get('/docs/tutorial/faq', (req, res) => res.redirect('/docs/faq'))
+app.use('/donors', routes.donors)
+app.get('/fiddle', routes.fiddle)
 app.get('/governance', routes.governance.index)
+app.use('/headers/*', routes.headers)
+app.get('/languages', routes.languages.index)
+app.get('/releases', (req, res) => res.redirect(301, '/releases/stable'))
+app.get('/releases/stable', routes.releases.index('stable'))
+app.get('/releases/beta', routes.releases.index('beta'))
+app.get('/releases/nightly', routes.releases.index('nightly'))
+app.get('/releases.json', routes.feed.releases)
+app.get('/releases.xml', routes.feed.releases)
+app.get('/search/:searchIn*?*', (req, res) =>
+  res.redirect(req.query.q ? `/?query=${req.query.q}` : `/`)
+)
+app.get('/spectron', routes.spectron)
+app.get('/userland', routes.userland.index)
+app.get('/userland/*', routes.userland.show)
+
+// External redirects
 app.get('/issues', (req, res) =>
   res.redirect(301, 'https://github.com/electron/electronjs.org/issues')
 )
 app.get('/issues/new', (req, res) =>
   res.redirect(301, 'https://github.com/electron/electronjs.org/issues/new')
 )
-app.get('/languages', routes.languages.index)
 app.get('/maintainers/join', (req, res) =>
   res.redirect('https://airtable.com/shrNrpaXIJiRZj6bS')
 )
 app.get('/pulls', (req, res) =>
   res.redirect(301, 'https://github.com/electron/electronjs.org/pulls')
 )
-app.get('/releases', (req, res) => res.redirect(301, '/releases/stable'))
-app.get('/releases/stable', routes.releases.index('stable'))
-app.get('/releases/beta', routes.releases.index('beta'))
-app.get('/releases/nightly', routes.releases.index('nightly'))
-app.get('/spectron', routes.spectron)
-app.get('/fiddle', routes.fiddle)
-app.get('/userland', routes.userland.index)
-app.get('/userland/*', routes.userland.show)
-app.use('/crowdin', routes.languages.proxy)
-app.use('/donors', routes.donors)
-app.use('/blacklivesmatter', routes.blacklivesmatter)
-app.use('/headers/*', routes.headers)
-app.get('/search/:searchIn*?*', (req, res) =>
-  res.redirect(req.query.q ? `/?query=${req.query.q}` : `/`)
+
+// Redirected old paths
+app.get('/awesome', (req, res) => res.redirect('/community'))
+app.get('/docs/latest*', (req, res) =>
+  res.redirect(req.path.replace(/^\/docs\/latest/gi, '/docs'))
 )
+app.get('/docs/v0*', (req, res) =>
+  res.redirect(req.path.replace(/^\/docs\/v0\.\d+\.\d+/gi, '/docs'))
+)
+app.get('/docs/api/breaking-changes', (req, res) =>
+  res.redirect(301, '/docs/breaking-changes')
+)
+app.get('/docs/tutorial/faq', (req, res) => res.redirect('/docs/faq'))
+app.get('/docs/tutorial/first-app', (_, res) => {
+  res.redirect(301, '/docs/tutorial/quick-start')
+})
+app.get('/docs/tutorial/application-architecture', (_, res) => {
+  res.redirect(301, '/docs/tutorial/quick-start')
+})
 
 // Generic 404 handler
 app.use(routes._404)
