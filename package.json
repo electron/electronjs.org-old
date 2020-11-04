@@ -109,7 +109,7 @@
     "stylelint": "^13.7.2",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-scss": "^3.18.0",
-    "supertest": "^5.0.0",
+    "supertest": "^6.0.0",
     "supertest-session": "^4.1.0",
     "uglify-js": "^3.11.2",
     "wait-on": "^5.2.0",
