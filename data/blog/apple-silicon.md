@@ -28,7 +28,7 @@ As you are targeting a new architecture, you'll need to update several dependenc
 
 | Dependency | Version Requirement |
 |------------|---------------------|
-| Xcode | `>=12.0.0` |
+| Xcode | `>=12.2.0` |
 | `node-gyp` | `>=7.1.0` |
 | `electron-rebuild` | `>=1.12.0` |
 | `electron-packager` | `>=15.1.0` |
