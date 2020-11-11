@@ -6,7 +6,7 @@ author:
 date: '2020-11-17'
 ---
 
-Electron 11.0.0 has been released! It includes upgrades to Chromium `xx`, V8 `xx`, and Node.js `xx`. We've added support for Apple silicon, and general improvements. Read below for more details!
+Electron 11.0.0 has been released! It includes upgrades to Chromium `87`, V8 `8.7`, and Node.js `12.18.3`. We've added support for Apple silicon, and general improvements. Read below for more details!
 
 ---
 
@@ -18,27 +18,25 @@ We can't wait to see what you build with them! Continue reading for details abou
 
 ### Stack Changes
 
-* Chromium `xx`
-    * [New in Chrome 86](https://developers.google.com/web/updates/2020/07/nic84)
-    * [New in Chrome 87](https://chromereleases.googleblog.com/2020/08/stable-channel-update-for-desktop_25.html)
-* Node.js `xx`
-    * [Node 12.16.3 blog post](https://nodejs.org/en/blog/release/v12.16.3/)
-* V8 `8.x`
-    * [V8 8.4 blog post](https://v8.dev/blog/v8-release-84)
-    * [V8 8.5 blog post](https://v8.dev/blog/v8-release-85)
+* Chromium `87.xx`
+    * [New in Chrome 86](https://developers.google.com/web/updates/2020/10/nic86)
+    * [New in Chrome 87]()
+* Node.js `12.18.3`
+    * [Node 12.18.3 blog post](https://nodejs.org/en/blog/release/v12.18.3/)
+* V8 `8.7`
+    * [V8 8.6 blog post](https://v8.dev/blog/v8-release-86)
+    * [V8 8.7 blog post](https://v8.dev/blog/v8-release-87)
 
 ### Highlight Features
 
 * Support for Apple Silicon: As of Electron 11, Electron will be shipping separate versions of Electron for Intel Macs (x64) and Apple's upcoming Silicon hardware (arm64). You can learn more about how to get your Electron app [running on Apple Silicon here.](https://www.electronjs.org/blog/apple-silicon)
-* Minimal changes to Electron APIs: To make upgrading Electron easier for app consumers, the Electron team shipped Electron 11 as a “quiet release”, with minimal changes to Electron APIs. Work for depreciating the remote module and requiring node modules to be context aware continued from previous releases (detailed below).
+* Minimal changes to Electron APIs: To make upgrading Electron easier for app consumers, the Electron team shipped Electron 11 as a “quiet release”, with no changes to Electron APIs. Work for depreciating the remote module and requiring node modules to be context aware continued from previous releases (detailed below).
 
 See the [11.0.0 release notes](https://github.com/electron/electron/releases/tag/v11.0.0) for a full list of new features and changes.
 
 ## Breaking Changes
 
-* TBD
-
-More information about these and future changes can be found on the [Planned Breaking Changes](https://github.com/electron/electron/blob/master/docs/breaking-changes.md) page.
+No breaking changes were made in Electron 11. More information about these and future changes can be found on the [Planned Breaking Changes](https://github.com/electron/electron/blob/master/docs/breaking-changes.md) page.
 
 ## API Changes
 
