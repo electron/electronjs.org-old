@@ -30,7 +30,7 @@ We can't wait to see what you build with them! Continue reading for details abou
 ### Highlight Features
 
 * Support for Apple Silicon: As of Electron 11, Electron will be shipping separate versions of Electron for Intel Macs (x64) and Apple's upcoming Silicon hardware (arm64). You can learn more about how to get your Electron app [running on Apple Silicon here.](https://www.electronjs.org/blog/apple-silicon)
-* Minimal changes to Electron APIs: To make upgrading Electron easier for app consumers, the Electron team shipped Electron 11 as a “quiet release”, with no changes to Electron APIs. Work for depreciating the remote module and requiring node modules to be context aware continued from previous releases (detailed below).
+* Minimal changes to Electron APIs: To make upgrading Electron easier for app consumers, the Electron team shipped Electron 11 as a “quiet release”, with no changes to Electron APIs. Work for deprecating the remote module and requiring node modules to be context aware continued from previous releases (detailed below).
 
 See the [11.0.0 release notes](https://github.com/electron/electron/releases/tag/v11.0.0) for a full list of new features and changes.
 
@@ -40,7 +40,7 @@ No breaking changes were made in Electron 11. More information about these and f
 
 ## API Changes
 
-To make upgrading easier for our app developers, Electron 11 was a quiet release. No Electron API changes or depreciations were made.
+To make upgrading easier for our app developers, Electron 11 was a quiet release. No Electron API changes or deprecations were made.
 
 ## End of Support for 8.x.y
 
