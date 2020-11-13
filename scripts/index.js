@@ -1,3 +1,4 @@
+import '../public/styles/index.scss'
 import search from './search'
 
 document.addEventListener('DOMContentLoaded', () => {

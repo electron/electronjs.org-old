@@ -1,4 +1,6 @@
 const path = require('path')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 const env = process.env.NODE_ENV
 
@@ -27,8 +29,57 @@ module.exports = {
         test: /\.hbs$/,
         loader: 'handlebars-loader',
       },
+      {
+        test: /\.(css|scss)$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader',
+            options: {
+              url: false,
+            },
+          },
+          {
+            loader: 'resolve-url-loader',
+          },
+          {
+            loader: 'sass-loader',
+            options: {
+              sassOptions: {
+                includePaths: ['./public/styles', './node_modules'],
+              },
+              implementation: require('sass'),
+            },
+          },
+        ],
+      },
+      {
+        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+            },
+          },
+        ],
+      },
     ],
   },
+
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: 'index.css',
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: 'node_modules/@primer/css/fonts',
+          to: 'fonts',
+        },
+      ],
+    }),
+  ],
 
   devtool: env === 'production' ? 'inline-source-map' : 'source-map',
 
