@@ -53,17 +53,6 @@ module.exports = {
           },
         ],
       },
-      {
-        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[name].[ext]',
-            },
-          },
-        ],
-      },
     ],
   },
 
@@ -75,6 +64,14 @@ module.exports = {
       patterns: [
         {
           from: 'node_modules/@primer/css/fonts',
+          to: 'fonts',
+        },
+        {
+          from: 'public/styles/octicons',
+          to: 'octicons/octicons',
+        },
+        {
+          from: 'public/styles/vendor/devicon/fonts',
           to: 'fonts',
         },
       ],
