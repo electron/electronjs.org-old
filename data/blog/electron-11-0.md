@@ -2,7 +2,6 @@
 title: Electron 11.0.0
 author:
 - VerteDinde
-- sofianguy
 date: '2020-11-17'
 ---
 
@@ -23,24 +22,35 @@ We can't wait to see what you build with them! Continue reading for details abou
     * [New in Chrome 87]()
 * Node.js `12.18.3`
     * [Node 12.18.3 blog post](https://nodejs.org/en/blog/release/v12.18.3/)
+    * [Node 12.7.0 blog post](https://nodejs.org/en/blog/release/v12.17.0/)
 * V8 `8.7`
     * [V8 8.6 blog post](https://v8.dev/blog/v8-release-86)
     * [V8 8.7 blog post](https://v8.dev/blog/v8-release-87)
 
 ### Highlight Features
 
-* Support for Apple Silicon: As of Electron 11, Electron will be shipping separate versions of Electron for Intel Macs (x64) and Apple's upcoming Silicon hardware (arm64). You can learn more about how to get your Electron app [running on Apple Silicon here.](https://www.electronjs.org/blog/apple-silicon)
-* Minimal changes to Electron APIs: To make upgrading Electron easier for app consumers, the Electron team shipped Electron 11 as a “quiet release”, with no changes to Electron APIs. Work for deprecating the remote module and requiring node modules to be context aware continued from previous releases (detailed below).
+* Support for Apple Silicon: On November 10, Apple announced their [new M1 chips, which will be included in their upcoming hardware](https://www.apple.com/newsroom/2020/11/apple-unleashes-m1/). As of Electron 11, Electron will be shipping separate versions of Electron for Intel Macs (x64) and Apple's upcoming M1 hardware (arm64). You can learn more about how to get your Electron app [running on Apple's M1 hardware here.](https://www.electronjs.org/blog/apple-silicon) [#24545](https://github.com/electron/electron/pull/24545)
+* Added V8 crash message and location information to crashReport parameters. [#24771](https://github.com/electron/electron/pull/24771)
+* Fixed memory leak on macOS when using `dialog.showMessageBox` API. [#26099](https://github.com/electron/electron/pull/26099)
+* Minimal changes to Electron APIs: To make upgrading Electron easier for app consumers, the Electron team shipped Electron 11 as a “quiet release”, with no breaking changes to Electron APIs. Work for deprecating the remote module and requiring node modules to be context aware continued from previous releases (detailed below).
 
 See the [11.0.0 release notes](https://github.com/electron/electron/releases/tag/v11.0.0) for a full list of new features and changes.
 
 ## Breaking Changes
 
-No breaking changes were made in Electron 11. More information about these and future changes can be found on the [Planned Breaking Changes](https://github.com/electron/electron/blob/master/docs/breaking-changes.md) page.
+To make upgrading easier for our app developers, no breaking changes were made in Electron 11. More information about future changes can be found on the [Planned Breaking Changes](https://github.com/electron/electron/blob/master/docs/breaking-changes.md) page.
 
 ## API Changes
 
-To make upgrading easier for our app developers, Electron 11 was a quiet release. No Electron API changes or deprecations were made.
+* Improved the performance of sending JS primitives over the context bridge. [#24531]
+* Added support for suspend and resume events to macOS and Windows. [#24254](https://github.com/electron/electron/pull/24254), [#24251](https://github.com/electron/electron/pull/24251)
+
+### Deprecated APIs
+
+The following experimental APIs are now deprecated or removed:
+
+* Removed experimental APIs: `BrowserView.{fromId, fromWebContents, getAllViews}` and the `id` property of `BrowserView`. [#23578](https://github.com/electron/electron/pull/23578) 
+* Removed the `desktopCapturer.getMediaSourceIdForWebContents()` API. [#25455](https://github.com/electron/electron/pull/25455)
 
 ## End of Support for 8.x.y
 
@@ -53,7 +63,7 @@ In the short term, you can expect the team to continue to focus on keeping up wi
 For information on planned breaking changes in upcoming versions of Electron, [see our Planned Breaking Changes doc](https://github.com/electron/electron/blob/master/docs/breaking-changes.md).
 
 ### Continued Work for Deprecation of `remote` Module (in Electron 12)
-We started work to remove the remote module in [Electron 9](https://www.electronjs.org/blog/electron-9-0) and we're continuing plans to remove the `remote` module. In Electron 12, we plan to continue refactor work for implementing [WeakRef](https://v8.dev/features/weak-references) as we have done in Electron 11. Please read and follow [this issue](https://github.com/electron/electron/issues/21408) for full plans and details for deprecation.
+We started work to remove the `remote` module in [Electron 9](https://www.electronjs.org/blog/electron-9-0) and we're continuing plans to remove the `remote` module. In Electron 12, we plan to continue refactor work for implementing [WeakRef](https://v8.dev/features/weak-references) as we have done in Electron 11. Please read and follow [this issue](https://github.com/electron/electron/issues/21408) for full plans and details for deprecation.
 
 ### Final Step for Requiring Native Node Modules to be Context Aware or N-API (in Electron 12)
 From Electron 6 onwards, we've been laying the groundwork to require [native Node modules](https://nodejs.org/api/addons.html) loaded in the renderer process to be either [N-API](https://nodejs.org/api/n-api.html) or [Context Aware](https://nodejs.org/api/addons.html#addons_context_aware_addons). Enforcing this change allows for stronger security, faster performance, and reduced maintenance workload. The final step of this plan is to remove the ability to disable render process reuse in Electron 12. Read [this issue](https://github.com/electron/electron/issues/18397) for full details including the proposed timeline.
