@@ -9,7 +9,7 @@ Electron 11.0.0 has been released! It includes upgrades to Chromium `87`, V8 `8.
 
 ---
 
-The Electron team is excited to announce the release of Electron 11.0.0! You can install it with npm via `npm install electron@latest` or download it from our [releases website](https://electronjs.org/releases/stable). The release is packed with upgrades, fixes, and new support for Apple's upcoming silicon products. 
+The Electron team is excited to announce the release of Electron 11.0.0! You can install it with npm via `npm install electron@latest` or download it from our [releases website](https://electronjs.org/releases/stable). The release is packed with upgrades, fixes, and new support for Apple's M1 hardware. 
 
 We can't wait to see what you build with them! Continue reading for details about this release, and please share any feedback you have!
 
@@ -17,7 +17,7 @@ We can't wait to see what you build with them! Continue reading for details abou
 
 ### Stack Changes
 
-* Chromium `87.xx`
+* Chromium `87.0.4280.47`
     * [New in Chrome 86](https://developers.google.com/web/updates/2020/10/nic86)
     * [New in Chrome 87]()
 * Node.js `12.18.3`
@@ -32,25 +32,28 @@ We can't wait to see what you build with them! Continue reading for details abou
 * Support for Apple Silicon: On November 10, Apple announced their [new M1 chips, which will be included in their upcoming hardware](https://www.apple.com/newsroom/2020/11/apple-unleashes-m1/). As of Electron 11, Electron will be shipping separate versions of Electron for Intel Macs (x64) and Apple's upcoming M1 hardware (arm64). You can learn more about how to get your Electron app [running on Apple's M1 hardware here.](https://www.electronjs.org/blog/apple-silicon) [#24545](https://github.com/electron/electron/pull/24545)
 * Added V8 crash message and location information to crashReport parameters. [#24771](https://github.com/electron/electron/pull/24771)
 * Fixed memory leak on macOS when using `dialog.showMessageBox` API. [#26099](https://github.com/electron/electron/pull/26099)
-* Minimal changes to Electron APIs: To make upgrading Electron easier for app consumers, the Electron team shipped Electron 11 as a “quiet release”, with no breaking changes to Electron APIs. Work for deprecating the remote module and requiring node modules to be context aware continued from previous releases (detailed below).
+* Improved the performance of sending JS primitives over the context bridge. [#24531](https://github.com/electron/electron/pull/24531)
 
 See the [11.0.0 release notes](https://github.com/electron/electron/releases/tag/v11.0.0) for a full list of new features and changes.
 
 ## Breaking Changes
 
-To make upgrading easier for our app developers, no breaking changes were made in Electron 11. More information about future changes can be found on the [Planned Breaking Changes](https://github.com/electron/electron/blob/master/docs/breaking-changes.md) page.
+* Removed experimental APIs: `BrowserView.{fromId, fromWebContents, getAllViews}` and the `id` property of `BrowserView`. [#23578](https://github.com/electron/electron/pull/23578) 
+* Removed the undocumented `desktopCapturer.getMediaSourceIdForWebContents()` API. [#25455](https://github.com/electron/electron/pull/25455)
+
+More information about future changes can be found on the [Planned Breaking Changes](https://github.com/electron/electron/blob/master/docs/breaking-changes.md) page.
 
 ## API Changes
 
-* Improved the performance of sending JS primitives over the context bridge. [#24531]
 * Added support for suspend and resume events to macOS and Windows. [#24254](https://github.com/electron/electron/pull/24254), [#24251](https://github.com/electron/electron/pull/24251)
+* Added language for removal or modification of experimental APIs. [#25222](https://github.com/electron/electron/pull/25222)
 
 ### Deprecated APIs
 
 The following experimental APIs are now deprecated or removed:
 
 * Removed experimental APIs: `BrowserView.{fromId, fromWebContents, getAllViews}` and the `id` property of `BrowserView`. [#23578](https://github.com/electron/electron/pull/23578) 
-* Removed the `desktopCapturer.getMediaSourceIdForWebContents()` API. [#25455](https://github.com/electron/electron/pull/25455)
+* Removed the undocumented `desktopCapturer.getMediaSourceIdForWebContents()` API. [#25455](https://github.com/electron/electron/pull/25455)
 
 ## End of Support for 8.x.y
 
