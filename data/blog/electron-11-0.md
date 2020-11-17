@@ -38,7 +38,6 @@ See the [11.0.0 release notes](https://github.com/electron/electron/releases/tag
 ## Breaking Changes
 
 * Removed experimental APIs: `BrowserView.{fromId, fromWebContents, getAllViews}` and the `id` property of `BrowserView`. [#23578](https://github.com/electron/electron/pull/23578) 
-* Removed the undocumented `desktopCapturer.getMediaSourceIdForWebContents()` API. [#25455](https://github.com/electron/electron/pull/25455)
 
 More information about these and future changes can be found on the [Planned Breaking Changes](https://github.com/electron/electron/blob/master/docs/breaking-changes.md) page.
 
