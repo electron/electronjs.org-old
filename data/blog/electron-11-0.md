@@ -19,7 +19,7 @@ We can't wait to see what you build with them! Continue reading for details abou
 
 * Chromium `87.0.4280.47`
     * [New in Chrome 86](https://developers.google.com/web/updates/2020/10/nic86)
-    * [New in Chrome 87]()
+    * [New in Chrome 87](https://developers.google.com/web/updates/2020/11/nic87)
 * Node.js `12.18.3`
     * [Node 12.18.3 blog post](https://nodejs.org/en/blog/release/v12.18.3/)
     * [Node 12.7.0 blog post](https://nodejs.org/en/blog/release/v12.17.0/)
