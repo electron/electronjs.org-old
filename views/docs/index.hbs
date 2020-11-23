@@ -7,8 +7,7 @@
   </div>
 
   <div class='py-5 py-md-6 py-lg-7 docs-page'>
-    <div class='container-xl p-responsive'>
-
+    <div class='container-xl p-responsive clearfix'>
       <div class="docs-guides mx-4">
         <h2 class="docs-heading">
           <a class="docs-title" href="/docs/tutorial">
@@ -16,99 +15,101 @@
           </a>
         </h2>
         <div class="docs-guides-list docs-guides-readme">
-          {{{guides.html}}}
+          <div class="container-xl clearfix">
+            <div class="col-md-6">
+              {{{guidesQuickstart.html}}}
+              {{{guidesBasic.html}}}
+            </div>
+            <div class="col-md-6">
+              {{{guidesAdvanced.html}}}
+            </div>
+          </div>
         </div>
       </div>
-
     </div>
-  </div>
+    <div class='container-xl p-responsive clearfix'>
+      <div class="d-sm-flex d-flex-column">
 
-  <div class='py-5 py-md-6 py-lg-7 docs-page'>
-    <div class='container-xl p-responsive'>
-        <div class="d-sm-flex d-flex-column">
+        <div class="col-ms-12 col-lg-3 mx-3">
+          <h2 class="docs-heading pb-3 mb-3 docs-title">
+            <span class="mega-octicon octicon-tools pr-3"></span>{{localized.docs.detailed}}
+          </h2>
+          <div class="docs-guides-readme">
+            {{{detailedTutorials.html}}}
+          </div>
+        </div>
 
-          <div class="col-ms-12 col-lg-3 mx-3">
-            <h2 class="docs-heading pb-3 mb-3 docs-title">
-              <span class="mega-octicon octicon-tools pr-3"></span>{{localized.docs.detailed}}
-            </h2>
-            <div class="docs-guides-readme">
-              {{{detailedTutorials.html}}}
-            </div>
+        <div class="col-ms-12 col-lg-3 mx-3">
+          <!-- Quick Glossary -->
+          <h2 class="docs-heading pb-3 mb-3"><a class="docs-title" href="/docs/api"><span class="mega-octicon octicon-gear pr-3"></span>{{localized.docs.api_reference}}</a></h2>
+          <div class="docs-guides-readme">
+            {{{apiReference.html}}}
           </div>
 
-          <div class="col-ms-12 col-lg-3 mx-3">
-            <!-- Quick Glossary -->
-            <h2 class="docs-heading pb-3 mb-3"><a class="docs-title" href="/docs/api"><span class="mega-octicon octicon-gear pr-3"></span>{{localized.docs.api_reference}}</a></h2>
-            <div class="docs-guides-readme">
-              {{{apiReference.html}}}
-            </div>
-
-            <!-- Custom DOM Elements -->
-            <h4 class="docs-sub-heading pb-3 mb-3">
-              {{localized.docs.custom_dom}}
-            </h4>
-            <div class="docs-guides-readme">
-              {{{customDomElements.html}}}
-            </div>
-
-            <!-- Main Process Modules -->
-            <h4 class="docs-sub-heading pb-3 mb-3">
-              {{localized.docs.main_proc_modules}}
-            </h4>
-            <div class="docs-guides-readme">
-              {{{mainProcModules.html}}}
-            </div>
-
-            <!-- Renderer Process Modules -->
-            <h4 class="docs-sub-heading pb-3 mb-3">
-              {{localized.docs.renderer_proc_modules}}
-            </h4>
-            <div class="docs-guides-readme">
-              {{{rendererProcModules.html}}}
-            </div>
-
-            <!-- Both Process Types Modules -->
-            <h4 class="docs-sub-heading pb-3 mb-3">
-              {{localized.docs.both_proc_modules}}
-            </h4>
-            <div class="docs-guides-readme">
-              {{{bothProcModules.html}}}
-            </div>
+          <!-- Custom DOM Elements -->
+          <h3 class="docs-sub-heading pb-3 mb-3">
+            {{localized.docs.custom_dom}}
+          </h3>
+          <div class="docs-guides-readme">
+            {{{customDomElements.html}}}
           </div>
 
-          <div class="col-ms-12 col-lg-3 mx-3">
-            <h2 class="docs-heading pb-3 mb-3"><a class="docs-title" href="/docs/api/structures"><span class="mega-octicon octicon-beaker pr-3"></span>{{localized.docs.api_structures}}</a></h2>
-              <ul class="docs-list">
-                {{#each docs}}
-                  {{#if this.isApiStructureDoc}}
-                    <li class="mt-1 mb-1">
-                      <a class="h4 text-normal" href="{{this.href}}">{{this.title}}</a>
-                    </li>
-                  {{/if}}
-                {{/each}}
-              </ul>
+          <!-- Main Process Modules -->
+          <h3 class="docs-sub-heading pb-3 mb-3">
+            {{localized.docs.main_proc_modules}}
+          </h3>
+          <div class="docs-guides-readme">
+            {{{mainProcModules.html}}}
           </div>
 
-          <div class="col-ms-12 col-lg-3 mx-3">
-            <h2 class="docs-heading pb-3 mb-3"><a class="docs-title" href="/docs/development"><span class="mega-octicon octicon-tools pr-3"></span>{{localized.docs.advanced}}</a></h2>
+          <!-- Renderer Process Modules -->
+          <h4 class="docs-sub-heading pb-3 mb-3">
+            {{localized.docs.renderer_proc_modules}}
+          </h4>
+          <div class="docs-guides-readme">
+            {{{rendererProcModules.html}}}
+          </div>
+
+          <!-- Both Process Types Modules -->
+          <h3 class="docs-sub-heading pb-3 mb-3">
+            {{localized.docs.both_proc_modules}}
+          </h3>
+          <div class="docs-guides-readme">
+            {{{bothProcModules.html}}}
+          </div>
+        </div>
+
+        <div class="col-ms-12 col-lg-3 mx-3">
+          <h2 class="docs-heading pb-3 mb-3"><a class="docs-title" href="/docs/api/structures"><span class="mega-octicon octicon-beaker pr-3"></span>{{localized.docs.api_structures}}</a></h2>
             <ul class="docs-list">
               {{#each docs}}
-                {{#if this.isDevTutorial}}
+                {{#if this.isApiStructureDoc}}
                   <li class="mt-1 mb-1">
                     <a class="h4 text-normal" href="{{this.href}}">{{this.title}}</a>
                   </li>
                 {{/if}}
               {{/each}}
             </ul>
-          </div>
-
         </div>
-    </div>
+
+        <div class="col-ms-12 col-lg-3 mx-3">
+          <h2 class="docs-heading pb-3 mb-3"><a class="docs-title" href="/docs/development"><span class="mega-octicon octicon-tools pr-3"></span>{{localized.docs.advanced}}</a></h2>
+          <ul class="docs-list">
+            {{#each docs}}
+              {{#if this.isDevTutorial}}
+                <li class="mt-1 mb-1">
+                  <a class="h4 text-normal" href="{{this.href}}">{{this.title}}</a>
+                </li>
+              {{/if}}
+            {{/each}}
+          </ul>
+        </div>
+
+      </div>
     </div>
   </div>
-
   <div class="py-6 py-md-7 py-lg-8">
-    <div class="container-lg p-responsive">
+    <div class="container-lg p-responsive clearfix">
       <p class="text-center">
           <a href="/docs/all">{{localized.docs.footer.view_all_docs}}</a>
           {{localized.or}}
