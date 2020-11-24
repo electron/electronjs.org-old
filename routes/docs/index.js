@@ -6,10 +6,13 @@ module.exports = (req, res) => {
   const [
     ,
     ,
+    ,
     // Not used: https://github.com/electron/electron/tree/master/docs#official-guides
     // Not used: https://github.com/electron/electron/tree/master/docs#faq
     // https://github.com/electron/electron/tree/master/docs#guides-and-tutorials
-    guides,
+    guidesQuickstart,
+    guidesBasic,
+    guidesAdvanced,
     // https://github.com/electron/electron/tree/master/docs#detailed-tutorials
     detailedTutorials,
     // https://github.com/electron/electron/tree/master/docs#api-references
@@ -25,7 +28,9 @@ module.exports = (req, res) => {
   ] = docsReadme.sections
 
   const context = Object.assign(req.context, {
-    guides,
+    guidesQuickstart,
+    guidesBasic,
+    guidesAdvanced,
     detailedTutorials,
     apiReference,
     customDomElements,
