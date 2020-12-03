@@ -14,8 +14,9 @@ function hydrateViewModel(blogPost) {
 
 module.exports = async (req, res, next) => {
   const blogPost = BlogPost.get(req.params.slug, req.language)
-  const exists = await blogPost.exists()
-  if (!exists) {
+  try {
+    await blogPost.exists()
+  } catch (e) {
     return next()
   }
 
