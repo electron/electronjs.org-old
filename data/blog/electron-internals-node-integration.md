@@ -76,8 +76,10 @@ You can find the implemention of the message loop integration in the
 `node_bindings` files under [`electron/atom/common/`][node-bindings]. It can be
 easily reused for projects that want to integrate Node.
 
+*Update: Implementation moved to [`electron/shell/common/node_bindings.cc`][node-bindings-updated].*
+
 [node-gui]: https://github.com/zcbenz/node-gui
 [node-qt]: https://github.com/arturadib/node-qt
 [multi-process]: http://dev.chromium.org/developers/design-documents/multi-process-architecture
 [node-bindings]: https://github.com/electron/electron/tree/master/atom/common
-
+[node-bindings-updated]: https://github.com/electron/electron/blob/master/shell/common/node_bindings.cc
