@@ -76,7 +76,7 @@
     "paginate-array": "^2.1.0",
     "platform-utils": "^1.2.0",
     "pluralize": "^8.0.0",
-    "query-string": "^6.13.6",
+    "query-string": "^6.13.7",
     "require-dir": "^1.1.0",
     "require-directory": "^2.1.1",
     "require-yaml": "0.0.1",
