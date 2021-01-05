@@ -49,10 +49,10 @@
     "description": "0.0.4",
     "dotenv": "^8.2.0",
     "electron-api-historian": "^1.16.0",
-    "electron-apps": "1.8507.0",
-    "electron-i18n": "1.2713.0",
+    "electron-apps": "1.8509.0",
+    "electron-i18n": "1.2718.0",
     "electron-markdown": "^0.8.1",
-    "electron-releases": "^3.578.0",
+    "electron-releases": "^3.579.0",
     "electron-userland-reports": "1.6.0",
     "express": "^4.17.1",
     "express-hbs": "^2.3.4",
@@ -112,7 +112,7 @@
     "supertest": "^5.0.0",
     "supertest-session": "^4.1.0",
     "uglify-js": "^3.12.0",
-    "wait-on": "^5.2.0",
+    "wait-on": "^5.2.1",
     "walk-sync": "^2.2.0"
   },
   "engines": {
