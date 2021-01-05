@@ -112,7 +112,7 @@
     "supertest": "^5.0.0",
     "supertest-session": "^4.1.0",
     "uglify-js": "^3.12.0",
-    "wait-on": "^5.2.0",
+    "wait-on": "^5.2.1",
     "walk-sync": "^2.2.0"
   },
   "engines": {
