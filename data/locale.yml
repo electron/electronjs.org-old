@@ -199,6 +199,7 @@ explore:
   fiddle_title: Try more powerful experiments with Electron Fiddle
   see_more_info: See more info
 
+download: Download
 download_from_github: Download from GitHub
 view_all_releases_on_github: <a href="https://github.com/electron/electron-api-demos/releases">View all releases</a> on GitHub
 
@@ -319,6 +320,7 @@ landing:
   get_started: Get started
   fiddle:
     lead_desc: The easiest way to get started with Electron
+    different_os: "Not the right operating system? See:"
     create_app: Create your app
     description:
       Electron Fiddle lets you create and play with small Electron experiments.
