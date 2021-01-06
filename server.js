@@ -8,6 +8,7 @@ const lobars = require('lobars')
 
 // Middleware
 const hbs = require('express-hbs')
+const useragent = require('express-useragent')
 const compression = require('compression')
 const slashes = require('connect-slashes')
 const browsersync = require('./middleware/browsersync')
@@ -106,6 +107,7 @@ app.use(slashes(false))
 app.use(langResolver)
 app.use(contextBuilder)
 app.use(browsersync())
+app.use(useragent.express())
 
 // Routes
 const routes = require('./routes')
