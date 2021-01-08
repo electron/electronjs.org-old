@@ -12,7 +12,6 @@ const useragent = require('express-useragent')
 const compression = require('compression')
 const slashes = require('connect-slashes')
 const browsersync = require('./middleware/browsersync')
-const browserify = require('./middleware/browserify')
 const requestLanguage = require('express-request-language')
 const cookieParser = require('cookie-parser')
 const sass = require('./middleware/sass')
@@ -82,10 +81,13 @@ if (process.env.NODE_ENV === 'production') {
   app.use(
     express.static(path.join(__dirname, 'precompiled'), { redirect: false })
   )
-} else {
+} else if (process.env.NODE_ENV === 'development') {
   console.log('Dev app detected; compiling JS and CSS in memory')
   app.use(sass())
-  app.use('/scripts/index.js', browserify('scripts/index.js'))
+  const webpack = require('./middleware/webpack')
+  app.use(webpack())
+} else {
+  app.use(sass())
 }
 app.get('/service-worker.js', (req, res) =>
   res.sendFile(path.resolve(__dirname, 'scripts', 'service-worker.js'))
