@@ -48,7 +48,7 @@ describe('electronjs.org', () => {
   })
 
   describe('stylesheets', () => {
-    test('main stylesheet compiles', async () => {
+    xtest('main stylesheet compiles', async () => {
       const res = await supertest(app).get('/styles/index.css')
       res.statusCode.should.eq(200)
     })
