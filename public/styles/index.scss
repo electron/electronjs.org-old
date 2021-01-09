@@ -1,73 +1,73 @@
-@import './octicons/octicons.scss';
+@import "./octicons/octicons.scss";
 
 // Variables
-@import '../bower_components/primer-css/scss/variables';
-@import '../bower_components/basecoat/scss/variables'; // Basecoat override
-@import 'variables'; // Electron override
+@import "../bower_components/primer-css/scss/variables";
+@import "../bower_components/basecoat/scss/variables"; // Basecoat override
+@import "variables"; // Electron override
 
 // Global requirements
-@import '../bower_components/primer-css/scss/mixins';
-@import '../bower_components/basecoat/scss/mixins/breakpoints';
-@import '../bower_components/basecoat/scss/mixins/grid';
-@import '../bower_components/basecoat/scss/mixins/clearfix';
-@import '../bower_components/basecoat/scss/mixins/grid-framework';
+@import "../bower_components/primer-css/scss/mixins";
+@import "../bower_components/basecoat/scss/mixins/breakpoints";
+@import "../bower_components/basecoat/scss/mixins/grid";
+@import "../bower_components/basecoat/scss/mixins/clearfix";
+@import "../bower_components/basecoat/scss/mixins/grid-framework";
 
 // Basecoat
-@import '../bower_components/primer-css/scss/base';
-@import '../bower_components/primer-css/scss/type';
-@import '../bower_components/basecoat/scss/layout'; // Basecoat override
-@import '../bower_components/basecoat/scss/type'; // Basecoat override
+@import "../bower_components/primer-css/scss/base";
+@import "../bower_components/primer-css/scss/type";
+@import "../bower_components/basecoat/scss/layout"; // Basecoat override
+@import "../bower_components/basecoat/scss/type"; // Basecoat override
 
 // Components
-@import '../bower_components/primer-css/scss/filter-list';
-@import '../bower_components/basecoat/scss/grid';
+@import "../bower_components/primer-css/scss/filter-list";
+@import "../bower_components/basecoat/scss/grid";
 
 // Devicon
-@import 'vendor/devicon/devicon.css';
+@import "vendor/devicon/devicon.css";
 
 // Utilities
-@import '../bower_components/primer-css/scss/utilities/utilities';
-@import '../bower_components/basecoat/scss/utility'; // Basecoat override
+@import "../bower_components/primer-css/scss/utilities/utilities";
+@import "../bower_components/basecoat/scss/utility"; // Basecoat override
 
 // Electron -----------------------------------
 
 // @primer/css imports
-@import '@primer/css/support/index.scss';
-@import '@primer/css/base/normalize.scss';
-@import '@primer/css/base/kbd.scss';
-@import '@primer/css/buttons/index.scss';
-@import '@primer/css/marketing/index.scss';
-@import '@primer/css/tooltips/index.scss';
-@import '@primer/css/utilities/padding.scss';
-@import '@primer/css/pagination/index.scss';
+@import "@primer/css/support/index.scss";
+@import "@primer/css/base/normalize.scss";
+@import "@primer/css/base/kbd.scss";
+@import "@primer/css/buttons/index.scss";
+@import "@primer/css/marketing/index.scss";
+@import "@primer/css/tooltips/index.scss";
+@import "@primer/css/utilities/padding.scss";
+@import "@primer/css/pagination/index.scss";
 
 // Local styles
-@import 'base';
-@import 'hljs/github.css'; // Syntax highlighting
-@import 'hljs/overrides'; // customization
+@import "base";
+@import "hljs/github.css"; // Syntax highlighting
+@import "hljs/overrides"; // customization
 
 // Basecoat overrides
-@import './helpers/tables';
-@import './helpers/code';
-@import './helpers/footer';
-@import './helpers/icons';
-@import './helpers/navigation';
-@import './helpers/page-headers';
-@import './helpers/section';
+@import "./helpers/tables";
+@import "./helpers/code";
+@import "./helpers/footer";
+@import "./helpers/icons";
+@import "./helpers/navigation";
+@import "./helpers/page-headers";
+@import "./helpers/section";
 
 // Pages
-@import 'app';
-@import 'home';
-@import 'hero';
-@import 'docs';
-@import 'blog';
-@import 'releases';
-@import 'devtron';
-@import 'spectron';
-@import 'userland';
-@import 'languages';
-@import 'search';
-@import 'versions';
-@import 'kb-shortcut-dialog';
-@import 'ui/governance';
-@import 'ui/landing/fiddle';
+@import "app";
+@import "home";
+@import "hero";
+@import "docs";
+@import "blog";
+@import "releases";
+@import "devtron";
+@import "spectron";
+@import "userland";
+@import "languages";
+@import "search";
+@import "versions";
+@import "kb-shortcut-dialog";
+@import "ui/governance";
+@import "ui/landing/fiddle";

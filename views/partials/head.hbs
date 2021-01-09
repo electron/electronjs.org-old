@@ -7,28 +7,28 @@
   <meta property="og:type" content="website" />
 
   {{#if page.title}}
-  <title>{{page.title}}</title>
-  <meta property="og:title" content="{{page.title}}" />
-  <meta name="twitter:title" value="{{page.title}}" />
+    <title>{{page.title}}</title>
+    <meta property="og:title" content="{{page.title}}" />
+    <meta name="twitter:title" value="{{page.title}}" />
   {{/if}}
 
   {{#if page.url}}
-  <meta property="og:url" content="{{page.url}}" />
-  <meta name="twitter:url" value="{{page.url}}" />
+    <meta property="og:url" content="{{page.url}}" />
+    <meta name="twitter:url" value="{{page.url}}" />
   {{/if}}
 
   {{#if page.description}}
-  <meta property="og:description" content="{{page.description}}" />
-  <meta name="twitter:description" value="{{page.description}}" />
+    <meta property="og:description" content="{{page.description}}" />
+    <meta name="twitter:description" value="{{page.description}}" />
   {{/if}}
 
   {{#if page.image}}
-  <meta property="og:image" content="{{page.image}}" />
-  <meta name="twitter:card" content="summary_large_image">
-  <meta property="twitter:image" content="{{page.image}}" />
+    <meta property="og:image" content="{{page.image}}" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:image" content="{{page.image}}" />
   {{else}}
-  <meta name="twitter:card" content="summary">
-  <meta property="twitter:image" content="https://www.electronjs.org/images/electron-icon.png" />
+    <meta name="twitter:card" content="summary">
+    <meta property="twitter:image" content="https://www.electronjs.org/images/electron-icon.png" />
   {{/if}}
 
   <!-- consumed by scripts/get-localized-strings -->
@@ -36,23 +36,19 @@
   <meta name="localized.clipboard.copy_to_clipboard" content="{{localized.clipboard.copy_to_clipboard}}" />
   <meta name="localized.clipboard.copied" content="{{localized.clipboard.copied}}" />
   <meta name="localized.fiddle_launch_button.launch" content="{{localized.fiddle_launch_button.launch}}" />
-  <meta name="localized.fiddle_launch_button.launch_in_fiddle"
-    content="{{localized.fiddle_launch_button.launch_in_fiddle}}" />
+  <meta name="localized.fiddle_launch_button.launch_in_fiddle" content="{{localized.fiddle_launch_button.launch_in_fiddle}}" />
 
   <meta name="twitter:site" content="@ElectronJS" />
-  <link rel='shortcut icon' href='/images/favicon.ico' />
+  <link rel='shortcut icon' href='/images/favicon.ico'/>
   <link rel="alternate" type="application/rss+xml" title="Electron Blog" href="https://electronjs.org/blog.xml" />
-  <link rel="alternate" type="application/rss+xml" title="Electron Releases"
-    href="https://electronjs.org/releases.xml" />
+  <link rel="alternate" type="application/rss+xml" title="Electron Releases" href="https://electronjs.org/releases.xml" />
   <link rel='stylesheet' href='/scripts/index.css'>
 
   <script>
-    (function (i, s, o, g, r, a, m) {
-      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-        (i[r].q = i[r].q || []).push(arguments)
-      }, i[r].l = 1 * new Date(); a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
     ga('create', 'UA-160365006-1', 'auto');
     ga('send', 'pageview');
