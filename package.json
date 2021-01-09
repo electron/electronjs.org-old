@@ -85,8 +85,8 @@
   "devDependencies": {
     "browser-sync": "^2.26.14",
     "babel-loader": "^8.2.2",
-    "@babel/core": "^7.12.3",
-    "@babel/preset-env": "^7.12.1",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
     "chai": "^4.2.0",
     "chai-cheerio": "^1.0.0",
     "check-for-leaks": "^1.2.1",
