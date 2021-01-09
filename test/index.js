@@ -1,6 +1,6 @@
 require('make-promises-safe')
 
-const { describe, it, beforeEach, afterEach } = require('mocha')
+const { describe, it, beforeEach, afterEach, xit } = require('mocha')
 const test = it
 const supertest = require('supertest')
 const session = require('supertest-session')
@@ -48,7 +48,7 @@ describe('electronjs.org', () => {
   })
 
   describe('stylesheets', () => {
-    xtest('main stylesheet compiles', async () => {
+    xit('main stylesheet compiles', async () => {
       const res = await supertest(app).get('/styles/index.css')
       res.statusCode.should.eq(200)
     })
