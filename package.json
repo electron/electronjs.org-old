@@ -113,7 +113,7 @@
     "supertest-session": "^4.1.0",
     "wait-on": "^5.2.1",
     "walk-sync": "^2.2.0",
-    "webpack": "^4.44.1",
+    "webpack": "^4.45.0",
     "webpack-cli": "^3.3.12",
     "webpack-dev-middleware": "^3.7.2"
   },
