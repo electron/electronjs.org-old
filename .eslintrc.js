@@ -4,4 +4,5 @@ module.exports = {
     sourceType: 'module',
   },
   extends: ['prettier', 'plugin:prettier/recommended'],
+  ignorePatterns: ['precompiled/**/*.js'],
 }
