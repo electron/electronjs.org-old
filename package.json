@@ -118,7 +118,7 @@
     "webpack-dev-middleware": "^3.7.2"
   },
   "engines": {
-    "node": ">=12 <14"
+    "node": ">=12 <15"
   },
   "lint-staged": {
     "*.js": "npm run lint:js",
