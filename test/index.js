@@ -596,13 +596,14 @@ describe('electronjs.org', () => {
         $('html').attr('dir').should.equal('ltr')
       })
 
-      test('is `rtl` for Arabic', async () => {
+      // note that we don't support RTL languages at the moment
+      test.skip('is `rtl` for Arabic', async () => {
         const res = await supertest(app).get(`/?lang=ar-SA`)
         const $ = cheerio.load(res.text)
         $('html').attr('dir').should.equal('rtl')
       })
 
-      test('is `rtl` for Hebrew', async () => {
+      test.skip('is `rtl` for Hebrew', async () => {
         const res = await supertest(app).get(`/?lang=he-IL`)
         const $ = cheerio.load(res.text)
         $('html').attr('dir').should.equal('rtl')
