@@ -83,8 +83,7 @@
     "search-with-your-keyboard": "^2.0.0",
     "semver": "^7.3.2",
     "set-query-string": "^2.2.0",
-    "ultimate-pagination": "^1.0.0",
-    "yubikiri": "^2.0.0"
+    "ultimate-pagination": "^1.0.0"
   },
   "devDependencies": {
     "browser-sync": "^2.26.14",
