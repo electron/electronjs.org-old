@@ -3,7 +3,7 @@ const { getPost } = require('../../lib/blog')
 module.exports = async (req, res, next) => {
   const post = await getPost(req.params.slug)
 
-  if (post === null) {
+  if (!post) {
     return next()
   }
 
