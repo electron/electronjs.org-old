@@ -46,10 +46,10 @@
     "description": "0.0.4",
     "dotenv": "^8.2.0",
     "electron-api-historian": "^1.18.0",
-    "electron-apps": "1.8531.0",
-    "electron-i18n": "1.2763.0",
+    "electron-apps": "1.8532.0",
+    "electron-i18n": "1.2771.0",
     "electron-markdown": "^0.8.1",
-    "electron-releases": "^3.590.0",
+    "electron-releases": "^3.591.0",
     "electron-userland-reports": "1.6.0",
     "express": "^4.17.1",
     "express-hbs": "^2.3.4",
@@ -83,11 +83,10 @@
     "search-with-your-keyboard": "^2.0.0",
     "semver": "^7.3.2",
     "set-query-string": "^2.2.0",
-    "ultimate-pagination": "^1.0.0",
-    "yubikiri": "^2.0.0"
+    "ultimate-pagination": "^1.0.0"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.13",
+    "browser-sync": "^2.26.14",
     "babel-loader": "^8.1.0",
     "chai": "^4.2.0",
     "chai-cheerio": "^1.0.0",

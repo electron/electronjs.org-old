@@ -1,26 +1,11 @@
-const yubikiri = require('yubikiri')
-const BlogPost = require('../../lib/blog')
-
-function hydrateViewModel(blogPost) {
-  return yubikiri({
-    title: blogPost.title(),
-    href: blogPost.href(),
-    date: blogPost.date(),
-    authors: blogPost.authors(),
-    excerpt: blogPost.excerpt(),
-    content: blogPost.content(),
-  })
-}
+const { getPost } = require('../../lib/blog')
 
 module.exports = async (req, res, next) => {
-  const blogPost = BlogPost.get(req.params.slug, req.language)
-  try {
-    await blogPost.exists()
-  } catch (e) {
+  const post = await getPost(req.params.slug)
+
+  if (!post) {
     return next()
   }
-
-  const post = await hydrateViewModel(blogPost)
 
   // redirect /blog/2016/09/27/foo to /blog/foo
   if (req.path !== post.href) {

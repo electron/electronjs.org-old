@@ -1,8 +1,12 @@
 const { setupFeed } = require('./mainFeed')
-const BlogPost = require('../../lib/blog')
+const { getAllPosts } = require('../../lib/blog')
+let feed
 
 module.exports = async function feedHandler(req, res, next) {
-  const feed = await setupFeed('blog', await BlogPost.getAll())
+  if (!feed) {
+    const posts = await getAllPosts()
+    feed = await setupFeed('blog', Array.from(posts.values()))
+  }
 
   if (req.path === '/blog.xml') {
     res.set('content-type', 'text/xml')
