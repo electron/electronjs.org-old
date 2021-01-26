@@ -1,20 +1,14 @@
-const yubikiri = require('yubikiri')
-const BlogPost = require('../../lib/blog')
+const { getAllPosts } = require('../../lib/blog')
 
-function hydrateViewModel(blogPost) {
-  return yubikiri({
-    title: blogPost.title(),
-    href: blogPost.href(),
-    date: blogPost.date(),
-    authors: blogPost.authors(),
-    excerpt: blogPost.excerpt(),
-  })
-}
+let postsInOrder = []
 
 module.exports = async (req, res) => {
-  const blogPosts = await BlogPost.getAll(req.language)
-  const posts = await Promise.all(blogPosts.map(hydrateViewModel))
-  const postsInOrder = posts.sort((a, b) => b.date.localeCompare(a.date))
+  if (postsInOrder.length === 0) {
+    const blogPosts = await getAllPosts()
+    const posts = Array.from(blogPosts.values())
+    postsInOrder = posts.sort((a, b) => b.date.localeCompare(a.date))
+  }
+
   Object.assign(req.context, {
     posts: postsInOrder,
   })

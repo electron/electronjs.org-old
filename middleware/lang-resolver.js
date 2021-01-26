@@ -1,4 +1,4 @@
-const i18n = require('electron-i18n')
+const i18n = require('../lib/i18n')
 const url = require('url')
 
 const locales = Object.keys(i18n.locales)

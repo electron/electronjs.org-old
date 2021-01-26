@@ -2,7 +2,7 @@
 // Docs ------------------------------
 
 .docs-page {
-  a { color: #3a585f !important; }
+  a { color: #3a585f; }
 }
 
 .docs-version {
@@ -202,12 +202,6 @@
     // Match the default from primer
     margin-bottom: 12px;
     padding-bottom: 12px;
-  }
-
-  @media (min-width: 922px) {
-    .docs-guides-list {
-      column-count: 3;
-    }
   }
 }
 

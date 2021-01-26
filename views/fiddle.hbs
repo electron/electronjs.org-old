@@ -15,6 +15,151 @@
     </div>
   </div>
 
+  <section class="page-section page-section-spacious bg-shade" id="download">
+    <div class="container text-center">
+      <h1>{{localized.landing.get_started}}</h1>
+      {{#if showWindowsDownload}}
+        <p>
+          <a
+            id="download-latest-release"
+            class="btn-mktg btn-outline-mktg btn-large-mktg"
+            href="https://github.com/electron/fiddle/releases/download/v{{latestFiddleVersion}}/electron-fiddle-{{latestFiddleVersion}}-win32-x64-setup.exe"
+          >
+            <span class="octicon octicon-desktop-download mr-1"></span>
+            <span>{{{localized.download}}} (Windows, x64)</span>
+          </a>
+
+          <a
+            id="download-latest-release"
+            class="btn-mktg btn-outline-mktg btn-large-mktg"
+            href="https://github.com/electron/fiddle/releases/download/v{{latestFiddleVersion}}/electron-fiddle-{{latestFiddleVersion}}-win32-ia32-setup.exe"
+          >
+            <span class="octicon octicon-desktop-download mr-1"></span>
+            <span>{{{localized.download}}} (Windows, ia32)</span>
+          </a>
+
+          <a
+            id="download-latest-release"
+            class="btn-mktg btn-outline-mktg btn-large-mktg"
+            href="https://github.com/electron/fiddle/releases/download/v{{latestFiddleVersion}}/electron-fiddle-{{latestFiddleVersion}}-win32-arm64-setup.exe"
+          >
+            <span class="octicon octicon-desktop-download mr-1"></span>
+            <span>{{{localized.download}}} (Windows, ARM)</span>
+          </a>
+        </p>
+        <small>
+          {{{localized.landing.fiddle.different_os}}} <a href="{{ site.baseurl }}/fiddle?mac=1">macOS</a>, <a href="{{ site.baseurl }}/fiddle?linux=1">Linux</a>
+        </small>
+      {{else if showMacDownload}}
+        <p>
+          <a
+            id="download-latest-release"
+            class="btn-mktg btn-outline-mktg btn-large-mktg"
+            href="https://github.com/electron/fiddle/releases/download/v{{latestFiddleVersion}}/Electron.Fiddle-darwin-x64-{{latestFiddleVersion}}.zip"
+          >
+            <span class="octicon octicon-desktop-download mr-1"></span>
+            <span>{{{localized.download}}} (macOS, Intel x64)</span>
+          </a>
+
+          <a
+            id="download-latest-release"
+            class="btn-mktg btn-outline-mktg btn-large-mktg"
+            href="https://github.com/electron/fiddle/releases/download/v{{latestFiddleVersion}}/Electron.Fiddle-darwin-arm64-{{latestFiddleVersion}}.zip"
+          >
+            <span class="octicon octicon-desktop-download mr-1"></span>
+            <span>{{{localized.download}}} (macOS, Apple Silicon)</span>
+          </a>
+        </p>
+        <small>
+          {{{localized.landing.fiddle.different_os}}} <a href="{{ site.baseurl }}/fiddle?windows=1">Windows</a>, <a href="{{ site.baseurl }}/fiddle?linux=1">Linux</a>
+        </small>
+      {{else if showLinuxDownload}}
+        <p>
+          <a
+            id="download-latest-release"
+            class="btn-mktg btn-outline-mktg btn-large-mktg"
+            href="https://github.com/electron/fiddle/releases/download/v{{latestFiddleVersion}}/electron-fiddle-{{latestFiddleVersion}}-1.x86_64.rpm"
+          >
+            <span class="octicon octicon-desktop-download mr-1"></span>
+            <span>{{{localized.download}}} (rpm x64)</span>
+          </a>
+          <a
+            id="download-latest-release"
+            class="btn-mktg btn-outline-mktg btn-large-mktg"
+            href="https://github.com/electron/fiddle/releases/download/v{{latestFiddleVersion}}/electron-fiddle-{{latestFiddleVersion}}-1.x86_64.rpm"
+          >
+            <span class="octicon octicon-desktop-download mr-1"></span>
+            <span>{{{localized.download}}} (rpm ia32)</span>
+          </a>
+          <a
+            id="download-latest-release"
+            class="btn-mktg btn-outline-mktg btn-large-mktg"
+            href="https://github.com/electron/fiddle/releases/download/v{{latestFiddleVersion}}/electron-fiddle-{{latestFiddleVersion}}-1.armv7hl.rpm"
+          >
+            <span class="octicon octicon-desktop-download mr-1"></span>
+            <span>{{{localized.download}}} (rpm ARMv7HL)</span>
+          </a>
+          <a
+            id="download-latest-release"
+            class="btn-mktg btn-outline-mktg btn-large-mktg"
+            href="https://github.com/electron/fiddle/releases/download/v{{latestFiddleVersion}}/electron-fiddle-{{latestFiddleVersion}}-1.arm64.rpm"
+          >
+            <span class="octicon octicon-desktop-download mr-1"></span>
+            <span>{{{localized.download}}} (rpm ARM64)</span>
+          </a>
+        </p>
+        <p>
+          <a
+            id="download-latest-release"
+            class="btn-mktg btn-outline-mktg btn-large-mktg"
+            href="https://github.com/electron/fiddle/releases/download/v{{latestFiddleVersion}}/electron-fiddle_{{latestFiddleVersion}}_amd64.deb"
+          >
+            <span class="octicon octicon-desktop-download mr-1"></span>
+            <span>{{{localized.download}}} (deb x64)</span>
+          </a>
+          <a
+            id="download-latest-release"
+            class="btn-mktg btn-outline-mktg btn-large-mktg"
+            href="https://github.com/electron/fiddle/releases/download/v{{latestFiddleVersion}}/electron-fiddle_{{latestFiddleVersion}}_i386.deb"
+          >
+            <span class="octicon octicon-desktop-download mr-1"></span>
+            <span>{{{localized.download}}} (deb ia32)</span>
+          </a>
+          <a
+            id="download-latest-release"
+            class="btn-mktg btn-outline-mktg btn-large-mktg"
+            href="https://github.com/electron/fiddle/releases/download/v{{latestFiddleVersion}}/electron-fiddle_{{latestFiddleVersion}}_armhf.deb"
+          >
+            <span class="octicon octicon-desktop-download mr-1"></span>
+            <span>{{{localized.download}}} (deb ARMv7HL)</span>
+          </a>
+          <a
+            id="download-latest-release"
+            class="btn-mktg btn-outline-mktg btn-large-mktg"
+            href="https://github.com/electron/fiddle/releases/download/v{{latestFiddleVersion}}/electron-fiddle_{{latestFiddleVersion}}_arm64.deb"
+          >
+            <span class="octicon octicon-desktop-download mr-1"></span>
+            <span>{{{localized.download}}} (deb ARM64)</span>
+          </a>
+        </p>
+        <small>
+          {{{localized.landing.fiddle.different_os}}} <a href="{{ site.baseurl }}/fiddle?mac=1">macOS</a>, <a href="{{ site.baseurl }}/fiddle?windows=1">Windows</a>
+        </small>
+      {{else}}
+        <p>
+          <a
+            id="download-latest-release"
+            class="btn-mktg btn-outline-mktg btn-large-mktg"
+            href="https://github.com/electron/fiddle/releases/latest"
+          >
+            <span class="octicon octicon-desktop-download mr-1"></span>
+            <span>{{{localized.download_from_github}}}</span>
+          </a>
+        </p>
+      {{/if}}
+    </div>
+  </section>
+
   <section class="page-section page-section-spacious">
     <div class="docs-container-xl">
       <h1 class="text-center-sm">{{localized.landing.fiddle.create_app}}</h1>
@@ -81,22 +226,6 @@
           <p>{{{localized.landing.fiddle.easy_start_desc}}}</p>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section class="page-section page-section-spacious bg-shade" id="get-started">
-    <div class="container text-center">
-      <h1>{{localized.landing.get_started}}</h1>
-      <p>
-        <a
-          id="download-latest-release"
-          class="btn-mktg btn-outline-mktg btn-large-mktg"
-          href="https://github.com/electron/fiddle/releases/latest"
-        >
-          <span class="octicon octicon-desktop-download mr-1"></span>
-          <span>{{{localized.download_from_github}}}</span>
-        </a>
-      </p>
     </div>
   </section>
 </div>
