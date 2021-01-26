@@ -239,24 +239,26 @@ describe('electronjs.org', () => {
     // })
   })
 
-  // This section related to bugs whos confirmed, but not play big role.
-  // For give more information it can contain reproducible steps.
-  // It should get value what we should expect for verifying fixing.
+  /**
+   * This section tests minor website bugs. Each test contains steps to reproducing
+   * the bug, and should have comments indicating what the behaviour should be when
+   * fixed.
+   */
   describe('Buggy Tests', () => {
     it('language bar responsive bug', () => {
       visit()
       cy.get('.lang-select-button')
         .click()
         .get('#languages-header-menu')
-        .should('have.css', 'height', '415px')
+        .should('have.css', 'height', '235px')
         .viewport('iphone-6')
         .wait(500)
         .get('#languages-header-menu')
-        .should('have.css', 'height', '868px')
+        .should('have.css', 'height', '355px')
         .viewport(1920, 1080)
-        // .get('#languages-header-menu').should('have.css', 'height', '415px') // FIXME: Uncomment when fixed.
+        // .get('#languages-header-menu').should('have.css', 'height', '235px') // FIXME: Uncomment when fixed.
         .get('#languages-header-menu')
-        .should('have.css', 'height', '868px')
+        .should('have.css', 'height', '355px')
     })
   })
 })
