@@ -30,7 +30,7 @@
     }
   },
   "dependencies": {
-    "@babel/core": "^7.12.8",
+    "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.7",
     "@primer/css": "^15.2.0",
     "@primer/octicons": "^11.1.0",
