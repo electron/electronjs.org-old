@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
   require('./lazy-load-images')()
   require('./get-localized-strings')()
   require('./create-filter-list')()
-  require('./fix-platform-labels')()
   if (window.app) {
     require('./update-demo-app-download-link')()
     require('./update-app-download-links')()
@@ -22,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
   require('./install-toggle')()
   require('./language-selector')()
   require('./kb-shortcut-dialog')()
+  require('./docs-api-labels')()
   require('./anchor-links')()
   require('./science')()
 })
