@@ -1,7 +1,6 @@
 const Feed = require('feed').Feed
 const description = require('description')
 const memoize = require('fast-memoize')
-const yubikiri = require('yubikiri')
 
 const types = {
   blog: 'blog',
@@ -37,21 +36,16 @@ module.exports.setupFeed = memoize(async (type, items) => {
       })
       break
     case types.blog: {
-      const posts = await Promise.all(
-        items.map((post) =>
-          yubikiri({
-            href: post.href(),
-            title: post.title(),
-            content: post.content(),
-            date: post.date(),
-            author: async () => {
-              const authors = await post.authors()
-              return { name: authors[0] }
-            },
-            image: null, // TODO
-          })
-        )
-      )
+      const posts = items.map((post) => {
+        return {
+          href: post.href,
+          title: post.title,
+          content: post.content,
+          date: post.date,
+          author: post.authors[0],
+          image: null, // TODO
+        }
+      })
       posts
         .sort((a, b) => b.date.localeCompare(a.date))
         .forEach((post) => {
