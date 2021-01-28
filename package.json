@@ -91,7 +91,7 @@
     "chai": "^4.2.0",
     "chai-cheerio": "^1.0.0",
     "check-for-leaks": "^1.2.1",
-    "cheerio": "^1.0.0-rc.3",
+    "cheerio": "^1.0.0-rc.5",
     "cypress": "^6.3.0",
     "eslint": "^7.18.0",
     "eslint-config-prettier": "^6.15.0",
