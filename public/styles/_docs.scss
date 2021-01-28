@@ -114,61 +114,36 @@
   }
 }
 
-.docs-tags {
-  margin: 0;
-  list-style: none;
-  position: relative;
-  text-align: center;
-  color: $main-color-strong;
-  background-color: darken($main-bg-color-shade, 8%);
-
-  @include breakpoint(md) {
-    position: absolute;
-    right: 0;
-    text-align: right;
-    background-color: transparent;
-  }
-}
-
-.docs-tag {
-  display: inline-block;
-  padding: 0.4em 0.8em;
-  margin-bottom: 0;
-  font-size: 0.86em;
-  font-weight: 500;
-
-  @include breakpoint(md) {
-    background-color: darken($main-bg-color-shade, 8%);
-  }
-}
-
-// process label, e.g. Main process
-.docs h1 em {
+// labels on API docs
+%doc-label {
   padding: 0.1em 0.4em;
   vertical-align: middle;
-  font-size: 0.4em;
+  font-size: 0.66em;
   font-weight: 300;
-  text-transform: uppercase;
   font-style: normal;
   color: $main-bg-color;
   border-radius: $border-radius;
-  background-color: $main-color-subtle;
+  background-color: $main-color;
+  margin: 0 0.3em;
+
+  a & {
+    &:hover {
+      filter: contrast(150%);
+      transition: all 0.2s;
+    }
+  }
 }
 
-// platform label, e.g. [OS X]
-.docs h3 > em,
-.docs h4 > em,
-.docs h3 code > em,
-.docs h4 code > em,
 .docs .platform-label {
-  padding: 0.1em 0.4em !important;
-  vertical-align: middle !important;
-  font-size: 0.66em !important;
-  font-weight: 300 !important;
-  font-style: normal !important;
-  color: $main-bg-color !important;
-  border-radius: $border-radius !important;
-  background-color: $main-color-subtle !important;
+  @extend %doc-label;
+
+  background-color: $main-color-strong;
+}
+
+.docs .flag-label {
+  @extend %doc-label;
+
+  background-color: $main-color-subtle;
 }
 
 .docs table {
