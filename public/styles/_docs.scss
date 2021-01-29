@@ -43,50 +43,6 @@
   color: inherit;
 }
 
-.docs {
-  h1 {
-    font-size: $h0-size-mobile !important;
-    font-weight: $font-weight-light !important;
-
-    @include breakpoint(md) { font-size: $h0-size !important; }
-  }
-
-  h2 {
-    font-size: $h1-size-mobile !important;
-    font-weight: $font-weight-light !important;
-
-    @include breakpoint(md) { font-size: $h1-size !important; }
-  }
-
-  h3 {
-    font-size: $h2-size-mobile !important;
-    font-weight: $font-weight-light !important;
-
-    @include breakpoint(md) { font-size: $h2-size !important; }
-  }
-
-  h4 {
-    font-size: $h3-size-mobile !important;
-    font-weight: $font-weight-light !important;
-
-    @include breakpoint(md) { font-size: $h3-size !important; }
-  }
-
-  .sub-section[data-lang='en-US'] .en-toggle h5 {
-    color: $main-link-color !important;
-  }
-
-  .sub-section:not([data-lang='en-US']) {
-    .en-toggle h5 {
-      color: $main-bg-color !important;
-    }
-
-    &:hover .en-toggle h5 {
-      color: $main-border-color !important;
-    }
-  }
-}
-
 .docs-heading {
   border-bottom: 1px solid #eee;
 
@@ -153,12 +109,6 @@
   }
 
   width: 100%;
-}
-
-.doc-actions {
-  a {
-    text-decoration: none;
-  }
 }
 
 .docs p a,

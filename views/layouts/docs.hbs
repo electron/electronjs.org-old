@@ -5,7 +5,6 @@
   <div class='container-lg'>
     <h1>
       <span class="f0-light mr-3 mr-lg-4">{{localized.docs.title}}</span>
-      <!-- <span class="docs-version">{{electronLatestStableVersion}}</span> -->
     </h1>
   </div>
 
@@ -44,61 +43,24 @@
   </div>
 </div>
 
-<div class='py-6 py-md-7 py-lg-8'>
-  <div class='full-width p-responsive docs strong-headers'>
-      <div class="col-sm-2 float-left p-4">
-      {{#if false}}
-        <span />
-      {{/if}}
-      </div>
-
-    <div class="col-md-8 float-left p-4">
-      <div class="markdown-body">{{{body}}}</div>
-      <hr>
-
-      <div class="doc-actions text-center">
-        <a class="mr-4 propose-change" href='{{doc.githubUrl}}'>
-          <span class="octicon octicon-mark-github"></span>
-          {{localized.docs.footer.propose_change}}
-        </a>
-
-        <a class="mr-4 translate-on-crowdin" href='{{doc.crowdinUrl}}'>
-          <span class="octicon octicon-globe"></span>
-          {{localized.docs.footer.translate}}
-        </a>
-
-        <a class="mr-4" href='{{doc.href}}/history'>
-          <span class="octicon octicon-history"></span>
-          {{localized.docs.footer.version_history}}
-        </a>
-      </div>
-    </div>
-
-    <div class="col-sm-2 float-left p-4">
-      {{#if false}}
-      <div>
-        <p class="h5">Did this doc help you?</p>
-        <button class="btn btn-sm">
-          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor"
-            stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-thumbs-up">
-            <path
-              d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3">
-            </path>
-          </svg>
-        </button>
-
-        <button class="btn btn-sm">
-          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor"
-            stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-thumbs-down">
-            <path
-              d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17">
-            </path>
-          </svg>
-        </button>
-      </div>
-      {{/if}}
-    </div>
-
+<div class='d-flex full-width p-responsive docs strong-headers'>
+  <div class="hide-md col-lg-2 p-4">
   </div>
+
+  <div class="col-md-12 col-lg-6 col-xl-7 p-4">
+    <div class="markdown-body">{{{body}}}</div>
+  </div>
+
+  <div class="hide-lg col-lg-4 col-xl-3 pt-4">
+    <div style="position: sticky; top: 24px;">
+      <nav class="docs-nav">
+        <h1>Table of Contents</h1>
+        <div id="docs-table-of-contents">
+
+        </div>
+      </nav>
+    </div>
+  </div>
+
 </div>
 </main>
