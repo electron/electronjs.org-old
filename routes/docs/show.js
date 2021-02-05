@@ -20,6 +20,7 @@ module.exports = (req, res, next) => {
   const context = Object.assign(req.context, {
     doc: doc,
     docEn: docEn,
+    isDocPage: true,
     page: {
       title: `${doc.title} | Electron`,
       description: doc.description,

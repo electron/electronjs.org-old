@@ -52,7 +52,18 @@
 
   <div class="hide-sm hide-md hide-lg col-lg-4 col-xl-3 pt-4">
     <!-- Right Column -->
-    {{#unless category}}
+    {{#if isDocPage}} <!-- if generated from docs/show.js -->
+    <div class="docs__actions-bar">
+      <ul>
+        <li><a href="{{doc.githubUrl}}"><span class="octicon octicon-mark-github"></span>{{localized.docs.footer.propose_change}}</a></li>
+      </ul>
+      <ul>
+        <li><a href="{{doc.crowdinUrl}}"><span class="octicon octicon-globe"></span>{{localized.docs.footer.translate}}</a></li>
+      </ul>
+      <ul>
+        <li><a href="{{doc.href}}/history"><span class="octicon octicon-history"></span>{{localized.docs.footer.version_history}}</a></li>
+      </ul>
+    </div>
     <div class="docs__nav-wrapper">
       <nav class="docs__nav">
         <h1>Table of Contents</h1>
@@ -61,7 +72,7 @@
         </div>
       </nav>
     </div>
-    {{/unless}}
+    {{/if}}
   </div>
 
 </div>

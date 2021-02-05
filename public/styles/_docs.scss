@@ -20,6 +20,10 @@
     border-radius: $border-radius;
   }
 
+  .docs__actions-bar {
+    padding-bottom: $spacer-6;
+  }
+
   .docs__nav-wrapper {
     position: -webkit-sticky; /* Safari */
     position: sticky;
