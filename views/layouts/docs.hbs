@@ -33,9 +33,6 @@
             </span>
           </a>
         {{/if}}
-
-
-
       {{else if viewingAllDocs}}
         All
       {{/if}}
@@ -55,14 +52,16 @@
 
   <div class="hide-sm hide-md hide-lg col-lg-4 col-xl-3 pt-4 pb-10">
     <!-- Right Column -->
+    {{#unless category}}
     <div class="docs__nav-wrapper">
       <nav class="docs__nav">
         <h1>Table of Contents</h1>
-        <div id="docs__table-of-contents">
+        <div class="docs__table-of-contents">
 
         </div>
       </nav>
     </div>
+    {{/unless}}
   </div>
 
 </div>

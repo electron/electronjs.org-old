@@ -1,6 +1,5 @@
 const i18n = require('../../lib/i18n')
 const editorCodes = require('crowdin-editor-language-codes')
-const fs = require('fs')
 
 module.exports = (req, res, next) => {
   const doc = i18n.docs[req.language][req.path]
