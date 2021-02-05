@@ -21,7 +21,8 @@
   }
 
   .docs__actions-bar {
-    padding-bottom: $spacer-6;
+    float: right;
+    margin-bottom: $spacer-6;
   }
 
   .docs__nav-wrapper {
@@ -46,6 +47,7 @@
 
   .table-of-contents__link {
     font-weight: 300;
+    font-size: 14px;
   }
 
   .table-of-contents__link--active {
