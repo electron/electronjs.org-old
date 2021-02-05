@@ -4,6 +4,10 @@ function generateTableOfContents() {
   if (!!document.querySelector('.docs__table-of-contents')) {
     tocbot.init({
       tocSelector: '.docs__table-of-contents',
+      linkClass: 'table-of-contents__link',
+      activeLinkClass: 'table-of-contents__link--active',
+      listClass: 'table-of-contents__list',
+      listItemClass: 'table-of-contents__list-item',
       contentSelector: '.markdown-body',
       headingSelector: 'h2, h3, h4, h5, h6', // avoid h1 because there's only one h1
       hasInnerContainers: true,
