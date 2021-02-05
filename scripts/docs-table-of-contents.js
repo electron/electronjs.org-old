@@ -2,7 +2,7 @@ const tocbot = require('tocbot')
 
 function generateTableOfContents() {
   tocbot.init({
-    tocSelector: '#docs-table-of-contents',
+    tocSelector: '#docs__table-of-contents',
     contentSelector: '.markdown-body',
     headingSelector: 'h2, h3, h4, h5, h6', // avoid h1 because there's only one h1
     hasInnerContainers: true,
@@ -20,7 +20,9 @@ function generateTableOfContents() {
       let regexMatch
       if ((regexMatch = str.match(/Event: '([a-z]*(?:-[a-z]+)*)'/))) {
         return regexMatch[1]
-      } else if ((regexMatch = str.match(/^[a-zA-Z]+\.([a-zA-Z]+)/))) {
+      } else if (
+        (regexMatch = str.match(/^[a-zA-Z]+\.((?:[a-zA-Z]+[\.]?)+)/))
+      ) {
         return regexMatch[1]
       }
       return str
