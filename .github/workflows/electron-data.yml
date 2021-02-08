@@ -32,7 +32,7 @@ jobs:
           git add package.json package-lock.json
           if test -n "$( git status -s)"; then
             git config user.name "$GITHUB_ACTOR"
-            git config user-email "electron-bot@users.noreply.github.com"
+            git config user.email "electron-bot@users.noreply.github.com"
             git diff
             git commit -m "build(deps): update electron data packages"
             git push origin
