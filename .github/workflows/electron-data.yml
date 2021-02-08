@@ -35,6 +35,7 @@ jobs:
             git diff
             git commit -m "build(deps): update electron data packages"
             git push origin
+            node --unhandled-rejections=strict .github/actions/create-pr.js
           else
             echo No update needed
           fi
