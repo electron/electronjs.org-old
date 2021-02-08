@@ -1,6 +1,6 @@
 on:
   schedule:
-    - cron: 0 */6 * * *
+    - cron: 5 * * * *
 
 name: Update source data
 
@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@master
       - uses: actions/setup-node@v1
         with:
-        node-version: '12.x'
+          node-version: '12.x'
       - run: npm ci
       - name: Switch to update branch
         run: |
