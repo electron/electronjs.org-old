@@ -88,7 +88,7 @@
   "devDependencies": {
     "browser-sync": "^2.26.14",
     "babel-loader": "^8.2.2",
-    "chai": "^4.2.0",
+    "chai": "^4.3.0",
     "chai-cheerio": "^1.0.0",
     "check-for-leaks": "^1.2.1",
     "cheerio": "^1.0.0-rc.5",
