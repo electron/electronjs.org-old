@@ -33,7 +33,7 @@
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.13",
     "@primer/css": "^15.2.0",
-    "@primer/octicons": "^11.2.0",
+    "@primer/octicons": "^12.0.0",
     "awesome-electron": "2.6.0",
     "browser-date-formatter": "^3.0.3",
     "clipboard": "^2.0.6",
