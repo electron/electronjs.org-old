@@ -21,7 +21,7 @@
     "lint": "npm run lint:js && npm run lint:style",
     "lint:js": "eslint . --fix",
     "lint:style": "stylelint 'public/styles/**/*.scss' --fix",
-    "heroku-postbuild": "npm run precompile-assets"
+    "update-data": "node script/update-data.js"
   },
   "husky": {
     "hooks": {
