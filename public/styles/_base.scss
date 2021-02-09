@@ -95,7 +95,6 @@ img[data-src] {
 
   h2 {
     margin: 1.75em 0 1em !important;
-    font-size: 32px !important;
     font-weight: 300 !important;
     -webkit-font-smoothing: initial !important;
     border-bottom: $border !important;
@@ -103,7 +102,6 @@ img[data-src] {
 
   h3 {
     margin: 2em 0 0.75em !important;
-    font-size: 26px !important;
     font-weight: 300 !important;
     -webkit-font-smoothing: initial !important;
   }
@@ -144,4 +142,5 @@ img[data-src] {
 
 .PRIMER-REMOVE-ME {
   @import "@primer/css/index.scss";
+  @import 'tocbot/src/scss/_tocbot-core.scss';
 }
