@@ -1,234 +1,203 @@
 
 // Docs ------------------------------
 
-.docs-page {
-  a { color: #3a585f; }
-}
-
-.docs-version {
-  display: inline-block;
-  padding: 0 0.4em;
-  margin-left: 10px;
-  vertical-align: middle;
-  font-size: $body-font-size * 0.95;
-  line-height: 1.8;
-  font-weight: 200;
-  -webkit-font-smoothing: initial;
-  background-color: $main-bg-color;
-  border: 1px solid $border-color;
-  border-radius: $border-radius;
-}
-
-.docs-breadcrumbs {
-  margin: 0;
-  color: $main-color-subtle !important;
-  font-weight: 300;
-
-  a {
-    color: $main-color;
-  }
-}
-
-.docs-breadcrumbs-divider {
-  color: $main-color-subtle;
-}
-
-// Used on the docs index page
-.docs-title {
-  font-size: $h1-size-mobile !important;
-  font-weight: $font-weight-light !important;
-
-  @include breakpoint(md) { font-size: $h1-size !important; }
-
-  color: inherit;
-}
-
-.docs {
-  h1 {
-    font-size: $h0-size-mobile !important;
-    font-weight: $font-weight-light !important;
-
-    @include breakpoint(md) { font-size: $h0-size !important; }
+.PRIMER-REMOVE-ME {
+  .docs-page {
+    a { color: #3a585f; }
   }
 
-  h2 {
+  .docs-version {
+    display: inline-block;
+    padding: 0 0.4em;
+    margin-left: 10px;
+    vertical-align: middle;
+    font-size: $body-font-size * 0.95;
+    line-height: 1.8;
+    font-weight: 200;
+    -webkit-font-smoothing: initial;
+    background-color: $main-bg-color;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+  }
+
+  .docs__actions-bar {
+    float: right;
+    margin-bottom: $spacer-6;
+  }
+
+  .docs__nav-wrapper {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: $spacer-4;
+  }
+
+  .docs__nav {
+    overflow-y: auto;
+    max-height: 100vh;
+
+    h1 {
+      font-size: $h3-size;
+      font-weight: bold !important;
+    }
+
+    ol {
+      list-style: none !important;
+    }
+  }
+
+  .table-of-contents__list-item {
+    margin-bottom: initial;
+  }
+
+  .table-of-contents__link {
+    font-weight: 300;
+    font-size: 14px;
+  }
+
+  .table-of-contents__link--active {
+    font-weight: bold;
+  }
+
+  .docs-breadcrumbs {
+    margin: 0;
+    color: $main-color-subtle !important;
+    font-weight: 300;
+
+    a {
+      color: $main-color;
+    }
+  }
+
+  .docs-breadcrumbs-divider {
+    color: $main-color-subtle;
+  }
+
+  // Used on the docs index page
+  .docs-title {
     font-size: $h1-size-mobile !important;
     font-weight: $font-weight-light !important;
 
     @include breakpoint(md) { font-size: $h1-size !important; }
+
+    color: inherit;
   }
 
-  h3 {
-    font-size: $h2-size-mobile !important;
-    font-weight: $font-weight-light !important;
+  .docs-heading {
+    border-bottom: 1px solid #eee;
 
-    @include breakpoint(md) { font-size: $h2-size !important; }
-  }
-
-  h4 {
-    font-size: $h3-size-mobile !important;
-    font-weight: $font-weight-light !important;
-
-    @include breakpoint(md) { font-size: $h3-size !important; }
-  }
-
-  .sub-section[data-lang='en-US'] .en-toggle h5 {
-    color: $main-link-color !important;
-  }
-
-  .sub-section:not([data-lang='en-US']) {
-    .en-toggle h5 {
-      color: $main-bg-color !important;
-    }
-
-    &:hover .en-toggle h5 {
-      color: $main-border-color !important;
+    // thin titles to match the main /docs index
+    .strong-headers & {
+      font-weight: 300;
+      -webkit-font-smoothing: antialiased;
     }
   }
-}
 
-.docs-heading {
-  border-bottom: 1px solid #eee;
-
-  // thin titles to match the main /docs index
-  .strong-headers & {
-    font-weight: 300;
-    -webkit-font-smoothing: antialiased;
-  }
-}
-
-.docs-list,
-.docs-guides > ul {
-  margin-left: 0;
-  list-style-type: none;
-}
-
-.header-link .octicon {
-  color: $main-color-subtle !important;
-  margin-left: 0.5em !important;
-  vertical-align: middle !important;
-  visibility: hidden !important;
-
-  :hover > & {
-    visibility: visible !important;
-  }
-}
-
-.docs-tags {
-  margin: 0;
-  list-style: none;
-  position: relative;
-  text-align: center;
-  color: $main-color-strong;
-  background-color: darken($main-bg-color-shade, 8%);
-
-  @include breakpoint(md) {
-    position: absolute;
-    right: 0;
-    text-align: right;
-    background-color: transparent;
-  }
-}
-
-.docs-tag {
-  display: inline-block;
-  padding: 0.4em 0.8em;
-  margin-bottom: 0;
-  font-size: 0.86em;
-  font-weight: 500;
-
-  @include breakpoint(md) {
-    background-color: darken($main-bg-color-shade, 8%);
-  }
-}
-
-// process label, e.g. Main process
-.docs h1 em {
-  padding: 0.1em 0.4em;
-  vertical-align: middle;
-  font-size: 0.4em;
-  font-weight: 300;
-  text-transform: uppercase;
-  font-style: normal;
-  color: $main-bg-color;
-  border-radius: $border-radius;
-  background-color: $main-color-subtle;
-}
-
-// platform label, e.g. [OS X]
-.docs h3 > em,
-.docs h4 > em,
-.docs h3 code > em,
-.docs h4 code > em,
-.docs .platform-label {
-  padding: 0.1em 0.4em !important;
-  vertical-align: middle !important;
-  font-size: 0.66em !important;
-  font-weight: 300 !important;
-  font-style: normal !important;
-  color: $main-bg-color !important;
-  border-radius: $border-radius !important;
-  background-color: $main-color-subtle !important;
-}
-
-.docs table {
-  th {
-    text-align: left;
-    padding: $spacer-2;
-  }
-
-  width: 100%;
-}
-
-.doc-actions {
-  a {
-    text-decoration: none;
-  }
-}
-
-.docs p a,
-.docs li a {
-  text-decoration: underline;
-}
-
-.docs-container-xl {
-  max-width: 1280px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.docs-guides {
-  h2 {
-    // Match the default from primer
-    margin-bottom: 12px;
-    padding-bottom: 12px;
-  }
-}
-
-.docs-sub-heading {
-  border-bottom: 1px solid #eee;
-  padding-top: 12px;
-}
-
-.docs-guides-readme {
-  li {
-    break-inside: avoid;
-    margin-bottom: 3px;
-  }
-
-  > ul {
+  .docs-list,
+  .docs-guides > ul {
     margin-left: 0;
+    list-style-type: none;
+  }
 
-    > li {
-      list-style-type: none;
+  .header-link .octicon {
+    color: $main-color-subtle !important;
+    margin-left: 0.5em !important;
+    vertical-align: middle !important;
+    visibility: hidden !important;
+
+    :hover > & {
+      visibility: visible !important;
     }
   }
 
-  // Hide various elements we only need on GitHub
-  > h2,
-  > h3,
-  > p,
-  > hr {
-    display: none;
+  // labels on API docs
+  %doc-label {
+    padding: 0.1em 0.4em;
+    vertical-align: middle;
+    font-size: 0.66em;
+    font-weight: 300;
+    font-style: normal;
+    color: $main-bg-color;
+    border-radius: $border-radius;
+    background-color: $main-color;
+    margin: 0 0.3em;
+
+    a & {
+      &:hover {
+        filter: contrast(150%);
+        transition: all 0.2s;
+      }
+    }
+  }
+
+  .docs .platform-label {
+    @extend %doc-label;
+
+    background-color: $main-color-strong;
+  }
+
+  .docs .flag-label {
+    @extend %doc-label;
+
+    background-color: $main-color-subtle;
+  }
+
+  .docs table {
+    th {
+      text-align: left;
+      padding: $spacer-2;
+    }
+
+    width: 100%;
+  }
+
+  .docs .markdown-body {
+    overflow: auto;
+    padding-bottom: 500px;
+
+    :not(h1, h2, h3, h4, h5, h6) > a {
+      text-decoration: underline;
+    }
+  }
+
+  .docs-container-xl {
+    max-width: 1280px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .docs-guides {
+    h2 {
+      // Match the default from primer
+      margin-bottom: 12px;
+      padding-bottom: 12px;
+    }
+  }
+
+  .docs-sub-heading {
+    border-bottom: 1px solid #eee;
+    padding-top: 12px;
+  }
+
+  .docs-guides-readme {
+    li {
+      break-inside: avoid;
+      margin-bottom: 3px;
+    }
+
+    > ul {
+      margin-left: 0;
+
+      > li {
+        list-style-type: none;
+      }
+    }
+
+    // Hide various elements we only need on GitHub
+    > h2,
+    > h3,
+    > p,
+    > hr {
+      display: none;
+    }
   }
 }
