@@ -1,9 +1,7 @@
+name: Update electron-* data packages
 on:
-  push:
-    branches:
-      - master
-
-name: Update source data
+  schedule:
+    - cron: "0 18 * * *"
 
 jobs:
   updateElectronDataPackages:
