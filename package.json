@@ -31,8 +31,8 @@
     }
   },
   "dependencies": {
-    "@babel/core": "^7.12.10",
-    "@babel/preset-env": "^7.12.13",
+    "@babel/core": "^7.12.16",
+    "@babel/preset-env": "^7.12.16",
     "@primer/css": "^15.2.0",
     "@primer/octicons": "^12.0.0",
     "awesome-electron": "2.6.0",
@@ -108,7 +108,7 @@
     "nodemon": "^2.0.7",
     "prettier": "^2.2.1",
     "simplecrawler": "^1.1.9",
-    "stylelint": "^13.9.0",
+    "stylelint": "^13.10.0",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-scss": "^3.19.0",
     "supertest": "^6.1.3",
