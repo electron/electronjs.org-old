@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
   require('./language-selector')()
   require('./kb-shortcut-dialog')()
   require('./docs-api-labels')()
+  require('./docs-table-of-contents')()
   require('./anchor-links')()
   require('./science')()
 })
