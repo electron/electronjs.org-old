@@ -1,7 +1,8 @@
 const tocbot = require('tocbot')
 
 function generateTableOfContents() {
-  if (!!document.querySelector('.docs__table-of-contents')) {
+  const tocElement = document.querySelector('.docs__table-of-contents')
+  if (!!tocElement) {
     tocbot.init({
       tocSelector: '.docs__table-of-contents',
       linkClass: 'table-of-contents__link',
@@ -40,6 +41,11 @@ function generateTableOfContents() {
         return str
       },
     })
+
+    // The ToC is empty so we remove it
+    if (!tocElement.hasChildNodes()) {
+      tocElement.closest('.docs__nav-wrapper').remove()
+    }
   }
 }
 
