@@ -88,7 +88,7 @@
     "ultimate-pagination": "^1.0.0"
   },
   "devDependencies": {
-    "@octokit/action": "^3.3.1",
+    "@octokit/action": "^3.3.2",
     "babel-loader": "^8.2.2",
     "browser-sync": "^2.26.14",
     "chai": "^4.3.0",
