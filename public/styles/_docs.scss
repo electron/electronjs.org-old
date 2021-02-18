@@ -28,11 +28,12 @@
   .docs__nav-wrapper {
     position: -webkit-sticky; /* Safari */
     position: sticky;
-    top: $spacer-4;
+    top: 0;
   }
 
   .docs__nav {
     overflow-y: auto;
+    padding-top: $spacer-6;
     max-height: 100vh;
 
     h1 {
