@@ -53,7 +53,7 @@
     ga('create', 'UA-160365006-1', 'auto');
     ga('send', 'pageview');
   </script>
-  {{!-- {{#eq currentLocale "en-US"}}
-
-  {{/eq}} --}}
+  {{#eq currentLocale "en-US"}}
+    {{> feedback }}
+  {{/eq}}
 </head>
