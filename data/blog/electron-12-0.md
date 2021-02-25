@@ -7,7 +7,7 @@ author:
 date: '2021-03-02'
 ---
 
-Electron 12.0.0 has been released! It includes upgrades to Chromium `xx`, V8 `xx`, and Node.js `xx`. We've added (features), and general improvements. Read below for more details!
+Electron 12.0.0 has been released! It includes upgrades to Chromium `89`, V8 `8.9` and Node.js `14.16`. We've added (features), and general improvements. Read below for more details!
 
 ---
 
@@ -17,32 +17,28 @@ The Electron team is excited to announce the release of Electron 12.0.0! You can
 
 ### Stack Changes
 
-* Chromium `xx`
-    * [New in Chrome 88]()
-    * [New in Chrome 89]()
-* Node.js `xx`
-    * [Node 14.15.1 blog post]()
-* V8 `8.x`
-    * [V8 8.4 blog post]()
-    * [V8 8.5 blog post]()
+* Chromium `89`
+    * [New in Chrome 88](https://developer.chrome.com/blog/new-in-chrome-88/)
+    * [New in Chrome 89](https://developer.chrome.com/blog/new-in-chrome-89/)
+* Node.js `14.16`
+    * [Node 14.16.0 blog post](https://nodejs.org/en/blog/release/v14.16.0/)
+    * [Node 14.0.0 blog post](https://nodejs.org/en/blog/release/v14.0.0/)
+* V8 `8.9`
+    * [V8 8.9 blog post](https://v8.dev/blog/v8-release-89)
 
 ### Highlight Features
 
-* One
-* Two
+* {TBD}
+* {TBD}
 
 See the [12.0.0 release notes](https://github.com/electron/electron/releases/tag/v12.0.0) for a full list of new features and changes.
 
 ## Breaking Changes
 
-* Deprecation of `remote` Module: The `remote` module is now deprecated. Please read and follow [this issue](https://github.com/electron/electron/issues/21408) for more information.
-* Requiring Native Node Modules to be Context Aware or N-API: Since Electron 6, we've been laying the groundwork to require [native Node modules](https://nodejs.org/api/addons.html) loaded in the renderer process to be either [N-API](https://nodejs.org/api/n-api.html) or [Context Aware](https://nodejs.org/api/addons.html#addons_context_aware_addons). Enforcing this change allows for stronger security, faster performance, and reduced maintenance workload. We've removed the ability to disable render process reuse in Electron 12. Read [this issue](https://github.com/electron/electron/issues/18397) for full details.
+* **Deprecation of `remote` Module:** The `remote` module is now deprecated. Please read and follow [this issue](https://github.com/electron/electron/issues/21408) for more information.
+* **Native Node Modules must be Context Aware or use N-API:** Since Electron 6, we've been laying the groundwork to require [native Node modules](https://nodejs.org/api/addons.html) loaded in the renderer process to be either [N-API](https://nodejs.org/api/n-api.html) or [Context Aware](https://nodejs.org/api/addons.html#addons_context_aware_addons). Enforcing this change allows for stronger security, faster performance, and reduced maintenance workload. We've removed the ability to disable render process reuse in Electron 12. Read [this issue](https://github.com/electron/electron/issues/18397) for full details.
 
 More information about these and future changes can be found on the [Planned Breaking Changes](https://github.com/electron/electron/blob/master/docs/breaking-changes.md) page.
-
-## API Changes
-
-To make upgrading easier for our app developers, Electron 11 was a quiet release. No Electron API changes or depreciations were made.
 
 ## End of Support for 9.x.y
 
