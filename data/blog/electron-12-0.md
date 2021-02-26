@@ -38,7 +38,7 @@ See the [12.0.0 release notes](https://github.com/electron/electron/releases/tag
 ## Breaking Changes
 
 * Deprecated the `remote` module. It is replaced by [`@electron/remote`](https://github.com/electron/remote). [#25293](https://github.com/electron/electron/pull/25293)
-* Removed the ability to disable render process reuse in Electron 12. Native Node modules](https://nodejs.org/api/addons.html) loaded in the renderer process must be either [N-API](https://nodejs.org/api/n-api.html) or [Context Aware](https://nodejs.org/api/addons.html#addons_context_aware_addons). Enforcing this change allows for stronger security, faster performance, and reduced maintenance workload. Read [this issue](https://github.com/electron/electron/issues/18397) for full details.
+* Removed the ability to disable render process reuse in Electron 12. [Native Node modules](https://nodejs.org/api/addons.html) loaded in the renderer process must be either [N-API](https://nodejs.org/api/n-api.html) or [Context Aware](https://nodejs.org/api/addons.html#addons_context_aware_addons). Enforcing this change allows for stronger security, faster performance, and reduced maintenance workload. Read [this issue](https://github.com/electron/electron/issues/18397) for full details.
 * Changed the default of `crashReporter.start({ compress })` from `false` to `true`. [#25288](https://github.com/electron/electron/pull/25288) 
 * Changed the default value of `worldSafeExecuteJavaScript` to be `true`. [#27502](https://github.com/electron/electron/pull/27502) 
 
@@ -51,12 +51,12 @@ More information about these and future changes can be found on the [Planned Bre
     * Added new `app.runningUnderRosettaTranslation` property to detect when running under rosetta on Apple silicon. [#26444](https://github.com/electron/electron/pull/26444)
     * Added `exitCode` to `render-process-gone` details (app & webContents). [#27677](https://github.com/electron/electron/pull/27677) 
 * `BrowserWindow` API changes:
-    * Added `BrowserWindow.isTabletMode` API. [#25209](https://github.com/electron/electron/pull/25209)
+    * Added `BrowserWindow.isTabletMode()` API. [#25209](https://github.com/electron/electron/pull/25209)
     * Added `resized` (Windows/macOS) and `moved` (Windows) events to `BrowserWindow`. [#26216](https://github.com/electron/electron/pull/26216)
     * Added new `system-context-menu` event to allow preventing and overriding the system context menu. [#25795](https://github.com/electron/electron/pull/25795)
     * Added `win.setTopBrowserView()` so that `BrowserView`s can be raised. [#27713](https://github.com/electron/electron/pull/27713)
     * Added `webPreferences.preferredSizeMode` to allow sizing views according to their document's minimum size. [#25874](https://github.com/electron/electron/pull/25874) 
-* `context-bridge` API changes:
+* `contextBridge` API changes:
     * Allowed ContextBridge `exposeInMainWorld` method to expose non-object APIs. [#26834](https://github.com/electron/electron/pull/26834)
 * `display` API changes:
     * Added `displayFrequency` to the `Display` object to allow getting information about the refresh rate on Windows. [#26472](https://github.com/electron/electron/pull/26472)
@@ -112,4 +112,3 @@ Electron 9.x.y has reached end-of-support as per the project's [support policy](
 In the short term, you can expect the team to continue to focus on keeping up with the development of the major components that make up Electron, including Chromium, Node, and V8. Although we are careful not to make promises about release dates, our plan is release new major versions of Electron with new versions of those components approximately quarterly. The [tentative 13.0.0 schedule](https://electronjs.org/docs/tutorial/electron-timelines) maps out key dates in the Electron 13.0 development life cycle. Also, [see our versioning document](https://electronjs.org/docs/tutorial/electron-versioning) for more detailed information about versioning in Electron.
 
 For information on planned breaking changes in upcoming versions of Electron, [see our Planned Breaking Changes doc](https://github.com/electron/electron/blob/master/docs/breaking-changes.md).
-
