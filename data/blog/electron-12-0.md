@@ -30,14 +30,15 @@ The Electron team is excited to announce the release of Electron 12.0.0! You can
 ### Highlight Features
 
 * The ContextBridge `exposeInMainWorld` method can now expose non-object APIs. [#26834](https://github.com/electron/electron/pull/26834)
+* Upgraded from Node 12 to Node 14. [#23249](https://github.com/electron/electron/pull/25249)
 * Added a new `webFrameMain` API for accessing sub-frames of a `WebContents` instance from the main process. [#25464](https://github.com/electron/electron/pull/25464)
-* Upgraded to Node 14. [#23249](https://github.com/electron/electron/pull/25249)
 
 See the [12.0.0 release notes](https://github.com/electron/electron/releases/tag/v12.0.0) for a full list of new features and changes.
 
 ## Breaking Changes
 
 * Deprecated the `remote` module. It is replaced by [`@electron/remote`](https://github.com/electron/remote). [#25293](https://github.com/electron/electron/pull/25293)
+    * If you are currently using the `remote` module, we've written [a guide to migrating to `@electron/remote` here.](https://github.com/electron/remote#migrating-from-remote)
 * Removed the ability to disable render process reuse in Electron 12. [Native Node modules](https://nodejs.org/api/addons.html) loaded in the renderer process must be either [N-API](https://nodejs.org/api/n-api.html) or [Context Aware](https://nodejs.org/api/addons.html#addons_context_aware_addons). Enforcing this change allows for stronger security, faster performance, and reduced maintenance workload. Read [this issue](https://github.com/electron/electron/issues/18397) for full details.
 * Changed the default of `crashReporter.start({ compress })` from `false` to `true`. [#25288](https://github.com/electron/electron/pull/25288) 
 * Changed the default value of `worldSafeExecuteJavaScript` to be `true`. [#27502](https://github.com/electron/electron/pull/27502) 
@@ -45,6 +46,8 @@ See the [12.0.0 release notes](https://github.com/electron/electron/releases/tag
 More information about these and future changes can be found on the [Planned Breaking Changes](https://github.com/electron/electron/blob/master/docs/breaking-changes.md) page.
 
 ## API Changes
+
+Added `webFrameMain` API: The `webFrameMain` module can be used to look up frames across existing [`WebContents`](web-contents.md) instances. Navigation events are the common use case. More information about this new API can be found [here](https://github.com/electron/), and in our documentation.
 
 * `app` API changes:
     * Added non-localized `serviceName` to `'child-process-gone'` / `app.getAppMetrics()`. [#25975](https://github.com/electron/electron/pull/25975) 
@@ -88,12 +91,6 @@ More information about these and future changes can be found on the [Planned Bre
     * Added `setWindowOpenHandler` API for renderer-created child windows, and deprecate `new-window` event. [#24517](https://github.com/electron/electron/pull/24517) 
 * `webFrame` API changes:
     * Added spellcheck API to renderer. [#25060](https://github.com/electron/electron/pull/25060) 
-* `webFrameMain` API changes:
-    * Added new `webFrameMain` API for accessing sub-frames of a `WebContents` instance from the main process. [#25464](https://github.com/electron/electron/pull/25464)
-    * Added `webFrameMain.send()` / `webFrameMain.postMessage()`. [#27366](https://github.com/electron/electron/pull/27366) 
-    * Added missing `webFrameMain.executeJavaScriptInIsolatedWorld()`. [#27195](https://github.com/electron/electron/pull/27195) 
-    * Added `event.senderFrame` property returning the originating `webFrameMain` of the IPC message. [#27047](https://github.com/electron/electron/pull/27047) 
-    * Added `osProcessId` / `name` properties to `webFrameMain`. [#26093](https://github.com/electron/electron/pull/26093) 
 
 ### Removed/Deprecated Changes
 
