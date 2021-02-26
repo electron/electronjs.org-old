@@ -59,7 +59,7 @@ More information about these and future changes can be found on the [Planned Bre
 * `contextBridge` API changes:
     * Allowed ContextBridge `exposeInMainWorld` method to expose non-object APIs. [#26834](https://github.com/electron/electron/pull/26834)
 * `display` API changes:
-    * Added `displayFrequency` to the `Display` object to allow getting information about the refresh rate on Windows. [#26472](https://github.com/electron/electron/pull/26472)
+    * Added `displayFrequency` property to the `Display` object to allow getting information about the refresh rate on Windows. [#26472](https://github.com/electron/electron/pull/26472)
 * `extensions` API changes:
     * Added support for some `chrome.management` APIs. [#25098](https://github.com/electron/electron/pull/25098)
 * `MenuItem` API changes:
@@ -67,7 +67,7 @@ More information about these and future changes can be found on the [Planned Bre
 * `net` API changes:
     * Added a new `credentials` option for `net.request()`. [#25284](https://github.com/electron/electron/pull/25284) 
     * Added `net.online` for detecting whether there is currently internet connection. [#21004](https://github.com/electron/electron/pull/21004) 
-* `power-monitor` API changes:
+* `powerMonitor` API changes:
     * Added `powerMonitor.onBatteryPower`. [#26494](https://github.com/electron/electron/pull/26494) 
     * Added fast user switching event to powerMonitor on macOS. [#25321](https://github.com/electron/electron/pull/25321)
 * `session` API changes:
@@ -77,7 +77,7 @@ More information about these and future changes can be found on the [Planned Bre
     * Added `extension-loaded`, `extension-unloaded`, and `extension-ready` events to `session`. [#25385](https://github.com/electron/electron/pull/25385) 
     * Added `session.setSSLConfig()` to allow configuring SSL. [#25461](https://github.com/electron/electron/pull/25461)
     * Added support for explicitly specifying `direct`, `auto_detect` or `system` modes in `session.setProxy()`. [#24937](https://github.com/electron/electron/pull/24937)
-    * Added Serial API support. [#25237](https://github.com/electron/electron/pull/25237) 
+    * Added [Serial API](https://web.dev/serial/) support. [#25237](https://github.com/electron/electron/pull/25237) 
     * Added APIs to enable/disable spell checker. [#26276](https://github.com/electron/electron/pull/26276) 
 * `shell` API changes:
     * Added a new asynchronous `shell.trashItem()` API, replacing the synchronous `shell.moveItemToTrash()`. [#25114](https://github.com/electron/electron/pull/25114) 
