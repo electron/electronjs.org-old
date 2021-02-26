@@ -24,8 +24,8 @@ The Electron team is excited to announce the release of Electron 12.0.0! You can
     * [Node 14.16.0 blog post](https://nodejs.org/en/blog/release/v14.16.0/)
     * [Node 14.0.0 blog post](https://nodejs.org/en/blog/release/v14.0.0/)
 * V8 `8.9`
-    * [V8 8.9 blog post](https://v8.dev/blog/v8-release-89)
     * [V8 8.8 blog post](https://v8.dev/blog/v8-release-88)
+    * [V8 8.9 blog post](https://v8.dev/blog/v8-release-89)
 
 ### Highlight Features
 
