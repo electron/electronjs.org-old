@@ -47,8 +47,7 @@ More information about these and future changes can be found on the [Planned Bre
 
 ## API Changes
 
-Added `webFrameMain` API: The `webFrameMain` module can be used to look up frames across existing [`WebContents`](web-contents.md) instances. Navigation events are the common use case. More information about this new API can be found [here](https://github.com/electron/), and in our documentation.
-
+* Added `webFrameMain` API: The `webFrameMain` module can be used to look up frames across existing [`WebContents`](web-contents.md) instances. Navigation events are the common use case. More information about this new API can be found [here](https://github.com/electron/electron/pull/25464), and in our [documentation](https://www.electronjs.org/docs/api/web-frame-main).
 * `app` API changes:
     * Added non-localized `serviceName` to `'child-process-gone'` / `app.getAppMetrics()`. [#25975](https://github.com/electron/electron/pull/25975) 
     * Added new `app.runningUnderRosettaTranslation` property to detect when running under rosetta on Apple silicon. [#26444](https://github.com/electron/electron/pull/26444)
