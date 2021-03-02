@@ -77,10 +77,6 @@ app.use(
   })
 )
 if (process.env.NODE_ENV === 'production') {
-  console.log('Production app detected; serving JS and CSS from disk')
-  app.use(
-    express.static(path.join(__dirname, 'precompiled'), { redirect: false })
-  )
   const jsManifest = require(path.join(
     __dirname,
     'precompiled',
@@ -102,11 +98,7 @@ if (process.env.NODE_ENV === 'production') {
     }
     return 'unknown.type'
   })
-} else if (process.env.NODE_ENV === 'development') {
-  console.log('Dev app detected; compiling JS and CSS in memory')
-  app.use(sass())
-  const webpack = require('./middleware/webpack')
-  app.use(webpack())
+} else {
   hbs.registerHelper('static-asset', (type, name) => {
     if (type === 'js') {
       return `/scripts/${name}`
@@ -116,6 +108,17 @@ if (process.env.NODE_ENV === 'production') {
     }
     return 'unknown.type'
   })
+}
+if (process.env.NODE_ENV === 'production') {
+  console.log('Production app detected; serving JS and CSS from disk')
+  app.use(
+    express.static(path.join(__dirname, 'precompiled'), { redirect: false })
+  )
+} else if (process.env.NODE_ENV === 'development') {
+  console.log('Dev app detected; compiling JS and CSS in memory')
+  app.use(sass())
+  const webpack = require('./middleware/webpack')
+  app.use(webpack())
 } else {
   app.use(sass())
 }
