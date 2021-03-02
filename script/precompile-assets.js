@@ -1,3 +1,4 @@
+const crypto = require('crypto')
 const path = require('path')
 const fs = require('fs-extra')
 const sass = require('node-sass')
@@ -6,13 +7,15 @@ function dir(...parts) {
   return path.join(__dirname, '..', ...parts)
 }
 
+const env = process.env.NODE_ENV
+
 const PATHS = {
   precompiled: dir('precompiled'),
   styles: dir('precompiled', 'styles'),
   nodeModules: dir('node_modules'),
 
   cssEntry: dir('public', 'styles', 'index.scss'),
-  cssDestination: dir('precompiled', 'styles', 'index.css'),
+  cssDestinationDir: dir('precompiled', 'styles'),
 }
 
 async function precompileAssets() {
@@ -40,7 +43,19 @@ function precompileCss() {
           return reject(err)
         }
 
-        await fs.writeFile(PATHS.cssDestination, result.css)
+        const cssHash = crypto
+          .createHash('md4')
+          .update(result.css)
+          .digest('hex')
+        const cssFileName =
+          env === 'production' ? `index.${cssHash}.min.css` : 'index.css'
+        const cssFile = path.resolve(PATHS.cssDestinationDir, cssFileName)
+
+        await fs.writeFile(cssFile, result.css)
+        await fs.writeFile(
+          path.resolve(PATHS.cssDestinationDir, 'manifest.json'),
+          JSON.stringify({ 'index.css': `/styles/${cssFileName}` }, null, 2)
+        )
         resolve()
       }
     )
@@ -48,5 +63,8 @@ function precompileCss() {
 }
 
 if (require.main === module) {
-  precompileAssets()
+  precompileAssets().catch((err) => {
+    console.error(err)
+    process.exit(1)
+  })
 }

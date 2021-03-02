@@ -81,11 +81,41 @@ if (process.env.NODE_ENV === 'production') {
   app.use(
     express.static(path.join(__dirname, 'precompiled'), { redirect: false })
   )
+  const jsManifest = require(path.join(
+    __dirname,
+    'precompiled',
+    'scripts',
+    'manifest.json'
+  ))
+  const cssManifest = require(path.join(
+    __dirname,
+    'precompiled',
+    'styles',
+    'manifest.json'
+  ))
+  hbs.registerHelper('static-asset', (type, name) => {
+    if (type === 'js') {
+      return jsManifest[name] || 'unknown.name'
+    }
+    if (type === 'css') {
+      return cssManifest[name] || 'unknown.name'
+    }
+    return 'unknown.type'
+  })
 } else if (process.env.NODE_ENV === 'development') {
   console.log('Dev app detected; compiling JS and CSS in memory')
   app.use(sass())
   const webpack = require('./middleware/webpack')
   app.use(webpack())
+  hbs.registerHelper('static-asset', (type, name) => {
+    if (type === 'js') {
+      return `/scripts/${name}`
+    }
+    if (type === 'css') {
+      return `/styles/${name}`
+    }
+    return 'unknown.type'
+  })
 } else {
   app.use(sass())
 }
