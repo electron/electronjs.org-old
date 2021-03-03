@@ -13,3 +13,4 @@ cypress/videos/*
 .nyc_output
 coverage
 .DS_Store
+.vscode
