@@ -31,6 +31,7 @@ const getLastSurveyInformation = async () => {
 
 /**
  * Checks if the current survey is opened
+ * @param {import('../lib/surveymonkey').Survey} survey
  * @returns {Boolean}
  */
 const isSurveyOpen = (survey) => {
