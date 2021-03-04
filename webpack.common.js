@@ -1,11 +1,12 @@
 const path = require('path')
+const { WebpackManifestPlugin } = require('webpack-manifest-plugin')
 
 const env = process.env.NODE_ENV
 
 module.exports = {
   entry: { index: './scripts/index.js' },
   output: {
-    filename: '[name].js',
+    filename: env === 'production' ? '[name].[chunkhash].min.js' : '[name].js',
     path: path.resolve(__dirname, 'precompiled', 'scripts'),
     publicPath: '/scripts/',
   },
@@ -13,6 +14,8 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx'],
   },
+
+  plugins: [new WebpackManifestPlugin()],
 
   module: {
     rules: [

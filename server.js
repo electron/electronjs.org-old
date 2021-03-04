@@ -78,6 +78,39 @@ app.use(
   })
 )
 if (process.env.NODE_ENV === 'production') {
+  const jsManifest = require(path.join(
+    __dirname,
+    'precompiled',
+    'scripts',
+    'manifest.json'
+  ))
+  const cssManifest = require(path.join(
+    __dirname,
+    'precompiled',
+    'styles',
+    'manifest.json'
+  ))
+  hbs.registerHelper('static-asset', (type, name) => {
+    if (type === 'js') {
+      return jsManifest[name] || 'unknown.name'
+    }
+    if (type === 'css') {
+      return cssManifest[name] || 'unknown.name'
+    }
+    return 'unknown.type'
+  })
+} else {
+  hbs.registerHelper('static-asset', (type, name) => {
+    if (type === 'js') {
+      return `/scripts/${name}`
+    }
+    if (type === 'css') {
+      return `/styles/${name}`
+    }
+    return 'unknown.type'
+  })
+}
+if (process.env.NODE_ENV === 'production') {
   console.log('Production app detected; serving JS and CSS from disk')
   app.use(
     express.static(path.join(__dirname, 'precompiled'), { redirect: false })

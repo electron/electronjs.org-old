@@ -15,7 +15,7 @@
     "release": "node script/release",
     "dev": "cross-env NODE_PATH=. NODE_ENV=development nodemon server.js",
     "prepack": "check-for-leaks",
-    "precompile-assets": "cross-env NODE_ENV=production webpack --config ./webpack.common.js && node script/precompile-assets.js",
+    "precompile-assets": "rimraf precompiled && cross-env NODE_ENV=production webpack --config ./webpack.common.js && node script/precompile-assets.js",
     "linkschecker": "NODE_PATH=. NODE_ENV=test node scripts/links-checker.js",
     "cypress": "cypress run",
     "lint": "npm run lint:js && npm run lint:style",
@@ -110,6 +110,7 @@
     "node-sass": "^5.0.0",
     "nodemon": "^2.0.7",
     "prettier": "^2.2.1",
+    "rimraf": "^3.0.2",
     "simplecrawler": "^1.1.9",
     "stylelint": "^13.11.0",
     "stylelint-config-standard": "^20.0.0",
@@ -120,7 +121,8 @@
     "walk-sync": "^2.2.0",
     "webpack": "^4.46.0",
     "webpack-cli": "^3.3.12",
-    "webpack-dev-middleware": "^4.1.0"
+    "webpack-dev-middleware": "^4.1.0",
+    "webpack-manifest-plugin": "^3.0.0"
   },
   "engines": {
     "node": ">=12 <14"
