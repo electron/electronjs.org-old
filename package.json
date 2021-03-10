@@ -60,7 +60,7 @@
     "feed": "^4.2.2",
     "flat": "^5.0.2",
     "fs-extra": "^9.1.0",
-    "got": "^11.8.1",
+    "got": "^11.8.2",
     "gray-matter": "^4.0.2",
     "helmet": "^4.4.1",
     "http-proxy-middleware": "^1.0.6",
