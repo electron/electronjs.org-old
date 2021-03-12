@@ -2,6 +2,7 @@ const crypto = require('crypto')
 const path = require('path')
 const fs = require('fs-extra')
 const sass = require('node-sass')
+const globby = require('globby')
 
 function dir(...parts) {
   return path.join(__dirname, '..', ...parts)
@@ -16,18 +17,33 @@ const PATHS = {
 
   cssEntry: dir('public', 'styles', 'index.scss'),
   cssDestinationDir: dir('precompiled', 'styles'),
+
+  imagesDir: dir('public', 'images'),
+  imageDestinationDir: dir('precompiled', 'images'),
+
+  appImgDir: path.resolve(require.resolve('electron-apps'), '..', 'apps'),
+  appImgDestinationDir: dir('precompiled', 'images', 'app-img'),
 }
 
 async function precompileAssets() {
   try {
     console.log('Creating directories...')
     await fs.ensureDir(PATHS.styles)
+    await fs.ensureDir(PATHS.imageDestinationDir)
     console.log('Precompiling CSS...')
     await precompileCss()
+    console.log('Hasing images...')
+    await precompileImages()
   } catch (err) {
     console.error(err)
     process.exit(1)
   }
+}
+
+function calculateHash(content) {
+  const hash = crypto.createHash('md4').update(content).digest('hex')
+
+  return hash
 }
 
 function precompileCss() {
@@ -43,10 +59,7 @@ function precompileCss() {
           return reject(err)
         }
 
-        const cssHash = crypto
-          .createHash('md4')
-          .update(result.css)
-          .digest('hex')
+        const cssHash = calculateHash(result.css)
         const cssFileName =
           env === 'production' ? `index.${cssHash}.min.css` : 'index.css'
         const cssFile = path.resolve(PATHS.cssDestinationDir, cssFileName)
@@ -60,6 +73,53 @@ function precompileCss() {
       }
     )
   })
+}
+
+async function precompileImages() {
+  const websiteImages = await globby(`${PATHS.imagesDir}/**/*`, {
+    onlyFiles: true,
+  })
+
+  const appImages = await globby(`${PATHS.appImgDir}/**/*.png`, {
+    onlyFiles: true,
+  })
+
+  const images = [...appImages, ...websiteImages]
+
+  const manifest = {}
+
+  for (const image of images) {
+    const basename = path.basename(image)
+    const extension = path.extname(image)
+    const filename = basename.replace(extension, '')
+    const content = await fs.readFile(image)
+    // We could optimize the images here and save a few bytes
+    const hash = calculateHash(content)
+    const imageDestination = image
+      .replace(PATHS.imagesDir, PATHS.imageDestinationDir)
+      .replace(PATHS.appImgDir, PATHS.appImgDestinationDir)
+      .replace(basename, `${filename}.${hash}${extension}`)
+    const finalDir = path.dirname(imageDestination)
+
+    await fs.ensureDir(finalDir)
+    await fs.copyFile(image, imageDestination)
+
+    const key = image.includes(PATHS.imagesDir)
+      ? `${image.replace(PATHS.imagesDir, '')}`
+      : `/app-img${image.replace(PATHS.appImgDir, '')}`
+
+    const value = `/images${imageDestination.replace(
+      PATHS.imageDestinationDir,
+      ''
+    )}`
+
+    manifest[key] = value
+  }
+
+  await fs.writeFile(
+    path.resolve(PATHS.imageDestinationDir, 'manifest.json'),
+    JSON.stringify(manifest, null, 2)
+  )
 }
 
 if (require.main === module) {

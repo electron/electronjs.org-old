@@ -90,22 +90,41 @@ if (process.env.NODE_ENV === 'production') {
     'styles',
     'manifest.json'
   ))
-  hbs.registerHelper('static-asset', (type, name) => {
+  const imagesManifest = require(path.join(
+    __dirname,
+    'precompiled',
+    'images',
+    'manifest.json'
+  ))
+  hbs.registerHelper('static-asset', (type, ...parts) => {
+    // `parts` should be at minimum [name, function]
+    // but it could also be [part1, part2, part3, function ]
+    // if we want to link to dynamic images
+    const name = parts.length === 2 ? parts[0] : parts.slice(0, -1).join('')
+
     if (type === 'js') {
       return jsManifest[name] || 'unknown.name'
     }
     if (type === 'css') {
       return cssManifest[name] || 'unknown.name'
     }
+    if (type === 'image') {
+      return imagesManifest[name] || 'unknown.name'
+    }
     return 'unknown.type'
   })
 } else {
-  hbs.registerHelper('static-asset', (type, name) => {
+  hbs.registerHelper('static-asset', (type, ...parts) => {
+    const name = parts.length === 2 ? parts[0] : parts.slice(0, -1).join('')
+
     if (type === 'js') {
       return `/scripts/${name}`
     }
     if (type === 'css') {
       return `/styles/${name}`
+    }
+    if (type === 'image') {
+      return `/images${name}`
     }
     return 'unknown.type'
   })
@@ -138,7 +157,7 @@ app.use(
   })
 )
 app.use(express.static(path.join(__dirname, 'public'), { redirect: false }))
-app.use('/app-img', express.static(appImgDir, { redirect: false }))
+app.use('/images/app-img', express.static(appImgDir, { redirect: false }))
 app.use(slashes(false))
 app.use(langResolver)
 app.use(contextBuilder)
