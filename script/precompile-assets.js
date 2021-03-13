@@ -32,7 +32,7 @@ async function precompileAssets() {
     await fs.ensureDir(PATHS.imageDestinationDir)
     console.log('Precompiling CSS...')
     await precompileCss()
-    console.log('Hasing images...')
+    console.log('Hashing images...')
     await precompileImages()
   } catch (err) {
     console.error(err)
@@ -76,11 +76,11 @@ function precompileCss() {
 }
 
 async function precompileImages() {
-  const websiteImages = await globby(`${PATHS.imagesDir}/**/*`, {
+  const websiteImages = await globby(path.join(PATHS.imagesDir, '**', '*'), {
     onlyFiles: true,
   })
 
-  const appImages = await globby(`${PATHS.appImgDir}/**/*.png`, {
+  const appImages = await globby(path.join(PATHS.appImgDir, '**', '*.png'), {
     onlyFiles: true,
   })
 
@@ -89,16 +89,17 @@ async function precompileImages() {
   const manifest = {}
 
   for (const image of images) {
-    const basename = path.basename(image)
-    const extension = path.extname(image)
-    const filename = basename.replace(extension, '')
+    const filename = path.basename(image, path.extname(image))
     const content = await fs.readFile(image)
     // We could optimize the images here and save a few bytes
     const hash = calculateHash(content)
-    const imageDestination = image
-      .replace(PATHS.imagesDir, PATHS.imageDestinationDir)
-      .replace(PATHS.appImgDir, PATHS.appImgDestinationDir)
-      .replace(basename, `${filename}.${hash}${extension}`)
+    const imageDestination = path.resolve(
+      path.dirname(image
+        .replace(PATHS.imagesDir, PATHS.imageDestinationDir)
+        .replace(PATHS.appImgDir, PATHS.appImgDestinationDir)
+      ),
+      `${filename}.${hash}${extension}`
+    )
     const finalDir = path.dirname(imageDestination)
 
     await fs.ensureDir(finalDir)
