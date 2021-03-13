@@ -5,7 +5,7 @@ const sass = require('node-sass')
 const globby = require('globby')
 
 function dir(...parts) {
-  return path.join(__dirname, '..', ...parts)
+  return path.posix.join(__dirname, '..', ...parts)
 }
 
 const env = process.env.NODE_ENV
@@ -21,7 +21,7 @@ const PATHS = {
   imagesDir: dir('public', 'images'),
   imageDestinationDir: dir('precompiled', 'images'),
 
-  appImgDir: path.resolve(require.resolve('electron-apps'), '..', 'apps'),
+  appImgDir: dir('node_modules', 'electron-apps', 'apps'),
   appImgDestinationDir: dir('precompiled', 'images', 'app-img'),
 }
 
@@ -76,27 +76,35 @@ function precompileCss() {
 }
 
 async function precompileImages() {
-  const websiteImages = await globby(path.join(PATHS.imagesDir, '**', '*'), {
-    onlyFiles: true,
-  })
+  const websiteImages = await globby(
+    path.posix.join(PATHS.imagesDir, '**', '*'),
+    {
+      onlyFiles: true,
+    }
+  )
 
-  const appImages = await globby(path.join(PATHS.appImgDir, '**', '*.png'), {
-    onlyFiles: true,
-  })
+  const appImages = await globby(
+    path.posix.join(PATHS.appImgDir, '**', '*.png'),
+    {
+      onlyFiles: true,
+    }
+  )
 
   const images = [...appImages, ...websiteImages]
 
   const manifest = {}
 
   for (const image of images) {
-    const filename = path.basename(image, path.extname(image))
+    const extension = path.extname(image)
+    const filename = path.basename(image, extension)
     const content = await fs.readFile(image)
     // We could optimize the images here and save a few bytes
     const hash = calculateHash(content)
     const imageDestination = path.resolve(
-      path.dirname(image
-        .replace(PATHS.imagesDir, PATHS.imageDestinationDir)
-        .replace(PATHS.appImgDir, PATHS.appImgDestinationDir)
+      path.dirname(
+        image
+          .replace(PATHS.imagesDir, PATHS.imageDestinationDir)
+          .replace(PATHS.appImgDir, PATHS.appImgDestinationDir)
       ),
       `${filename}.${hash}${extension}`
     )
