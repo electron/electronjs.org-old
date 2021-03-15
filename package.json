@@ -89,7 +89,7 @@
     "ultimate-pagination": "^1.0.0"
   },
   "devDependencies": {
-    "@octokit/action": "^3.5.0",
+    "@octokit/action": "^3.5.5",
     "@types/cookie-parser": "^1.4.2",
     "@types/express": "^4.17.11",
     "babel-loader": "^8.2.2",
