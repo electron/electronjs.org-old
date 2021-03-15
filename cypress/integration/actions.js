@@ -120,8 +120,6 @@ describe('electronjs.org', () => {
             expect(typeHits.first()).to.contain('window-all-closed')
           if (type.includes('package'))
             expect(typeHits.first()).to.contain('about-window')
-          if (type.includes('app'))
-            expect(typeHits.first()).to.contain('PhotoScreenSaver')
         })
       })
     })

@@ -44,7 +44,7 @@
                 <div class='listed-app-logo-wrapper'>
                   <div class="listed-app-logo-placeholder placeholder" style="background: {{this.goodColorOnWhite}}">
                   </div>
-                  <img class='listed-app-logo' data-src='/app-img/{{this.slug}}/{{this.icon64}}' alt='{{app.name}}'>
+                  <img class='listed-app-logo' data-src="{{ static-asset 'image' '/app-img/' this.slug '/' this.icon64 }}" alt='{{app.name}}'>
                 </div>
                 <span class='listed-app-name text-gray-dark'>{{this.name}}</span>
                 <span class='listed-app-description text-gray-light'>{{this.description}}</span>
