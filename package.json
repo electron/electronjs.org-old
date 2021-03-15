@@ -122,7 +122,7 @@
     "webpack": "^4.46.0",
     "webpack-cli": "^3.3.12",
     "webpack-dev-middleware": "^4.1.0",
-    "webpack-manifest-plugin": "^3.0.0"
+    "webpack-manifest-plugin": "^3.1.0"
   },
   "engines": {
     "node": ">=12 <14"
