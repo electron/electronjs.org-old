@@ -25,6 +25,13 @@ const port = Number(process.env.PORT) || argv.p || argv.port || 5000
 const app = express()
 const appImgDir = path.resolve(require.resolve('electron-apps'), '..', 'apps')
 
+const isProduction = process.env.NODE_ENV === 'production'
+
+const staticSettings = {
+  redirect: false,
+  maxAge: isProduction ? 31557600000 : 0,
+}
+
 // Handlebars Templates
 hbs.registerHelper(lobars)
 
@@ -77,7 +84,7 @@ app.use(
     referrerPolicy: false,
   })
 )
-if (process.env.NODE_ENV === 'production') {
+if (isProduction) {
   const jsManifest = require(path.join(
     __dirname,
     'precompiled',
@@ -129,11 +136,9 @@ if (process.env.NODE_ENV === 'production') {
     return 'unknown.type'
   })
 }
-if (process.env.NODE_ENV === 'production') {
+if (isProduction) {
   console.log('Production app detected; serving JS and CSS from disk')
-  app.use(
-    express.static(path.join(__dirname, 'precompiled'), { redirect: false })
-  )
+  app.use(express.static(path.join(__dirname, 'precompiled'), staticSettings))
 } else if (process.env.NODE_ENV === 'development') {
   console.log('Dev app detected; compiling JS and CSS in memory')
   app.use(sass())
@@ -156,8 +161,8 @@ app.use(
     },
   })
 )
-app.use(express.static(path.join(__dirname, 'public'), { redirect: false }))
-app.use('/images/app-img', express.static(appImgDir, { redirect: false }))
+app.use(express.static(path.join(__dirname, 'public'), staticSettings))
+app.use('/images/app-img', express.static(appImgDir, staticSettings))
 app.use(slashes(false))
 app.use(langResolver)
 app.use(contextBuilder)
@@ -244,7 +249,7 @@ app.use(routes._404)
 if (!module.parent) {
   app.listen(port, () => {
     console.log(`app running on http://localhost:${port}`)
-    if (process.env.NODE_ENV === 'production') {
+    if (isProduction) {
       console.log(`If you're developing, you probably want \`npm run dev\`\n\n`)
     }
   })
