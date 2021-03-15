@@ -76,38 +76,34 @@ function precompileCss() {
 }
 
 async function precompileImages() {
-  const websiteImages = await globby(
-    path.posix.join(PATHS.imagesDir, '**', '*'),
-    {
-      onlyFiles: true,
-    }
-  )
+  // globby patterns only accept `/` (https://github.com/sindresorhus/globby#api)
+  const websiteImages = await globby(`${PATHS.imagesDir}/**/*`, {
+    onlyFiles: true,
+  })
 
-  const appImages = await globby(
-    path.posix.join(PATHS.appImgDir, '**', '*.png'),
-    {
-      onlyFiles: true,
-    }
-  )
+  const appImages = await globby(`${PATHS.appImgDir}/**/*.png`, {
+    onlyFiles: true,
+  })
 
   const images = [...appImages, ...websiteImages]
 
   const manifest = {}
 
   for (const image of images) {
+    const basename = path.basename(image)
     const extension = path.extname(image)
-    const filename = path.basename(image, extension)
+    const filename = basename.replace(extension, '')
     const content = await fs.readFile(image)
     // We could optimize the images here and save a few bytes
     const hash = calculateHash(content)
-    const imageDestination = path.resolve(
-      path.dirname(
-        image
-          .replace(PATHS.imagesDir, PATHS.imageDestinationDir)
-          .replace(PATHS.appImgDir, PATHS.appImgDestinationDir)
-      ),
-      `${filename}.${hash}${extension}`
-    )
+
+    // Can't use `path.resolve` here because the resulting path on Windows
+    // will make the calculation of `value` later on even more convoluted
+    const imageDestination = image
+      .replace(PATHS.imagesDir, PATHS.imageDestinationDir)
+      .replace(PATHS.appImgDir, PATHS.appImgDestinationDir)
+      .replace(basename, `${filename}.${hash}${extension}`)
+
     const finalDir = path.dirname(imageDestination)
 
     await fs.ensureDir(finalDir)
