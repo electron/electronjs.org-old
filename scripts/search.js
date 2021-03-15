@@ -17,10 +17,6 @@ const types = [
     name: 'package',
     path: '/community',
   },
-  {
-    name: 'app',
-    path: '/apps',
-  },
 ]
 const typeNames = types.map((type) => type.name)
 

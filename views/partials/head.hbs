@@ -28,7 +28,7 @@
     <meta property="twitter:image" content="{{page.image}}" />
   {{else}}
     <meta name="twitter:card" content="summary">
-    <meta property="twitter:image" content="https://www.electronjs.org/images/electron-icon.png" />
+    <meta property="twitter:image" content="https://www.electronjs.org/{{ static-asset 'image' 'images/electron-icon.png'}}" />
   {{/if}}
 
   <!-- consumed by scripts/get-localized-strings -->
@@ -39,7 +39,7 @@
   <meta name="localized.fiddle_launch_button.launch_in_fiddle" content="{{localized.fiddle_launch_button.launch_in_fiddle}}" />
 
   <meta name="twitter:site" content="@ElectronJS" />
-  <link rel='shortcut icon' href='/images/favicon.ico'/>
+  <link rel='shortcut icon' href="{{ static-asset 'image' '/favicon.ico'}}" />
   <link rel="alternate" type="application/rss+xml" title="Electron Blog" href="https://electronjs.org/blog.xml" />
   <link rel="alternate" type="application/rss+xml" title="Electron Releases" href="https://electronjs.org/releases.xml" />
   <link rel='stylesheet' href='{{static-asset "css" "index.css"}}'>

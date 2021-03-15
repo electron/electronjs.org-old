@@ -9,7 +9,7 @@
       {{#if this.title}}
         <li>
           <a href="{{site.baseurl}}/userland/{{this.slug}}" class="inner">
-            <img src="{{site.baseurl}}/images/userland/{{this.slug}}.svg" alt="{{this.title}} icon">
+            <img src="{{ static-asset 'image' '/userland/' this.slug '.svg'}}" alt="{{this.title}} icon">
             <h3>{{this.title}}</h3>
             <p>{{this.description}}</p>
           </a>
