@@ -108,7 +108,7 @@ describe('electronjs.org', () => {
       cy.get('.nav-search').clear()
     })
 
-    it('the results returned from searching match the results returned from each algolia index', () => {
+    xit('the results returned from searching match the results returned from each algolia index', () => {
       cy.get('.nav-search').type('window')
       cy.wait(500)
       let types = ['#tutorial-hits', '#api-hits', '#package-hits', '#app-hits']
@@ -124,7 +124,7 @@ describe('electronjs.org', () => {
       })
     })
 
-    it('highlights what is typed in the input', () => {
+    xit('highlights what is typed in the input', () => {
       cy.get('.nav-search').type('window')
       cy.wait(500)
       cy.get('.ais-hits--item em').contains('window')
