@@ -31,7 +31,7 @@
     }
   },
   "dependencies": {
-    "@babel/core": "^7.13.8",
+    "@babel/core": "^7.13.10",
     "@babel/preset-env": "^7.13.10",
     "@primer/css": "^15.2.0",
     "@primer/octicons": "^12.1.0",
@@ -99,10 +99,10 @@
     "check-for-leaks": "^1.2.1",
     "cheerio": "^1.0.0-rc.5",
     "cypress": "^6.7.1",
-    "eslint": "^7.21.0",
+    "eslint": "^7.22.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-prettier": "^3.3.1",
-    "globby": "^11.0.2",
+    "globby": "^11.0.3",
     "handlebars-loader": "^1.7.1",
     "husky": "^4.3.8",
     "lint-staged": "^10.5.4",
