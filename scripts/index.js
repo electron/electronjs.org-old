@@ -1,7 +1,4 @@
-import search from './search'
-
 document.addEventListener('DOMContentLoaded', () => {
-  search()
   require('./lazy-load-images')()
   require('./get-localized-strings')()
   require('./create-filter-list')()
