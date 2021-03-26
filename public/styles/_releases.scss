@@ -53,11 +53,10 @@
       background-color: $gray-0;
     }
 
-    &.selected {
+    &.active {
       font-weight: bold;
-      color: $gray-7;
-      cursor: default;
-      background-color: $white;
+      background-color: $gray-0;
+      border-left: 2px solid $main-link-color;
     }
 
     .octicon {
@@ -111,6 +110,12 @@
       color: $main-color-subtle;
       font-style: normal;
     }
+  }
+
+  .release-notes {
+    border-bottom: 1px solid $gray-0;
+    margin-bottom: 48px;
+    padding-bottom: 48px;
   }
 }
 
