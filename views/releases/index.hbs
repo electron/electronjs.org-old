@@ -50,7 +50,7 @@
       {{/if}}
 
       {{#each releasesPage.page.data}}
-        <article>
+        <article class="release-notes">
           <h1 class="release-entry" id="{{this.data.version}}">
             <a class="tag" href="#{{this.data.version}}">Electron {{this.data.version}}</a>
             <em class="date" data-date="{{this.data.published_at}}" data-format="%B %d, %Y">{{this.data.published_at}}</em>

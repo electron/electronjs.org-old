@@ -111,6 +111,12 @@
       font-style: normal;
     }
   }
+
+  .release-notes {
+    border-bottom: 1px solid $gray-0;
+    margin-bottom: 48px;
+    padding-bottom: 48px;
+  }
 }
 
 @media (min-width: 700px) {
