@@ -8,7 +8,7 @@
     </div>
 
     <nav id="release-navbar" class="r-resp-header d-none site-header-nav">
-      <h3>{{localized.releases.show_releases}}</h3>
+      <h1>{{localized.releases.show_releases}}</h1>
       <a class="releases-link-stable {{#eq releasesPage.type 'stable'}}active{{/eq}}" href="/releases/stable">
         <div class="menu-item" style="{{#eq releasesPage.type 'stable'}}border-left: 1px solid #4078C0; background: #fcfcfc{{/eq}}">
           <span class="octicon octicon-clock"></span>{{localized.releases.stable_releases}}
@@ -38,19 +38,8 @@
   </div>
 </div>
 
-<section class='page-section'>
+<section class='page-section PRIMER-REMOVE-ME'>
   <div class='docs-container-xl r-flex'>
-    <!-- <h3>Tip: Use Electron from the command line</h3>
-    <p>Installing the <code>electron</code> module as a development dependency in your project will let you use Electron from the command line at specific versions. More information on the <a href="https://github.com/electron-userland/electron-prebuilt">module's repository</a>.</p>
-
-    <figure class="highlight highlight-dark text-left my-4">
-      <pre><code>$ npm install --save-dev electron
-<span class="c1"># Launch from inside your project's directory:</span>
-$ ./node_modules/.bin/electron .</code></pre>
-    </figure>
-
-    <hr> -->
-
     <div class="releases">
       {{#eq releasesPage.page.data.length 0}}
         <h2>No releases matching the current filters</h2>
@@ -61,47 +50,46 @@ $ ./node_modules/.bin/electron .</code></pre>
       {{/if}}
 
       {{#each releasesPage.page.data}}
-        <h2 class="release-entry" id="{{this.data.version}}">
-          <a class="tag" href="#{{this.data.version}}">Electron {{this.data.version}}</a>
-          <em class="date" data-date="{{this.data.published_at}}" data-format="%B %d, %Y">{{this.data.published_at}}</em>
-          <em class="date ltr-only">(<span data-date="{{this.data.published_at}}"></span>)</em>
-          <a href="{{this.data.html_url}}" class="tag octicon-wrapper"><span class="octicon octicon-mark-github vertical-middle"></span></a>
-        </h2>
-
-        {{{this.data.body_html}}}
-
-        <hr>
+        <article class="release-notes">
+          <h1 class="release-entry" id="{{this.data.version}}">
+            <a class="tag" href="#{{this.data.version}}">Electron {{this.data.version}}</a>
+            <em class="date" data-date="{{this.data.published_at}}" data-format="%B %d, %Y">{{this.data.published_at}}</em>
+            <em class="date ltr-only">(<span data-date="{{this.data.published_at}}"></span>)</em>
+            <a href="{{this.data.html_url}}" class="tag octicon-wrapper"><span class="octicon octicon-mark-github vertical-middle"></span></a>
+          </h1>
+          {{{this.data.body_html}}}
+        </article>
       {{/each}}
     </div>
     <div>
-      <div class="r-menu">
-        <h3>{{localized.releases.show_releases}}</h3>
-        <a class="releases-link-stable {{#eq releasesPage.type 'stable'}}active{{/eq}}" href="/releases/stable">
-          <div class="menu-item" style="{{#eq releasesPage.type 'stable'}}border-left: 1px solid #4078C0; background: #fcfcfc{{/eq}}">
+      <nav class="r-menu">
+        <strong>{{localized.releases.show_releases}}</strong>
+        <a class="releases-link-stable" href="/releases/stable">
+          <div class="menu-item {{#eq releasesPage.type 'stable'}}active{{/eq}}">
             <span class="octicon octicon-clock"></span>{{localized.releases.stable_releases}}
             <p>{{localized.releases.stable_desc}}</p>
           </div>
         </a>
-        <a class="releases-link-beta {{#eq releasesPage.type 'beta'}}active{{/eq}}" href="/releases/beta">
-          <div class="menu-item" style="{{#eq releasesPage.type 'beta'}}border-left: 1px solid #4078C0; background: #fcfcfc{{/eq}}">
+        <a class="releases-link-beta" href="/releases/beta">
+          <div class="menu-item {{#eq releasesPage.type 'beta'}}active{{/eq}}">
             <span class="octicon octicon-zap"></span>{{localized.releases.beta_releases}}
             <p>{{localized.releases.beta_desc}}</p>
           </div>
         </a>
-        <a class="releases-link-nightly {{#eq releasesPage.type 'nightly'}}active{{/eq}}" href="/releases/nightly">
-          <div class="menu-item" style="{{#eq releasesPage.type 'nightly'}}border-left: 1px solid #4078C0; background: #fcfcfc{{/eq}}">
+        <a class="releases-link-nightly" href="/releases/nightly">
+          <div class="menu-item {{#eq releasesPage.type 'nightly'}}active{{/eq}}">
             <span class="octicon octicon-calendar"></span>{{localized.releases.nightly_releases}}
             <p>{{localized.releases.nightly_desc}}</p>
           </div>
         </a>
-        <h3>{{localized.releases.show_only_releases_from}}</h3>
+        <strong>{{localized.releases.show_only_releases_from}}</strong>
         <ul class="release-version-filter">
           <li><a class="{{#eq @root/releasesPage.versionFilter null}}active{{/eq}}" href="?">{{localized.releases.all_versions}}</a></li>
           {{#each releasesPage.majorVersions}}
             <li><a class="{{#eq @root/releasesPage.versionFilter this}}active{{/eq}}" href="?version={{this}}">v{{this}}.x</a></li>
           {{/each}}
         </ul>
-      </div>
+      </nav>
     </div>
   </div>
 

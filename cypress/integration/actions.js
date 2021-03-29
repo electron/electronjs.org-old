@@ -223,18 +223,18 @@ describe('electronjs.org', () => {
       cy.get('.r-resp-header-toggle').should('be.visible').click()
 
       cy.get('#release-navbar').should('not.have.class', 'd-none')
-      cy.get('#release-navbar > h3')
+      cy.get('#release-navbar > h1')
         .should('be.visible')
         .contains('Show Releases:')
     })
 
     // FIXME: expected '' to equal 301
-    // xit('/docs/versions redirects to /releases/stable', async () => {
-    //   cy.visit(`${localhost}/docs/versions`).then((res) => {
-    //     expect(res.status).to.eq(301)
-    //     expect(res.redirectedToUrl).to.eq(`${localhost}/releases/stable`)
-    //   })
-    // })
+    it('/docs/versions redirects to /releases/stable', async () => {
+      cy.visit(`${localhost}/docs/versions`).then((res) => {
+        expect(res.status).to.eq(301)
+        expect(res.redirectedToUrl).to.eq(`${localhost}/releases/stable`)
+      })
+    })
   })
 
   /**
