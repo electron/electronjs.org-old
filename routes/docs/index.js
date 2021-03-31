@@ -1,15 +1,33 @@
 const i18n = require('../../lib/i18n')
+const cheerio = require('cheerio')
 
 module.exports = (req, res) => {
   const docsReadme = i18n.docs[req.language]['/docs/README']
 
+  // Temporary fix to collect all section HTML
+  // Replace with direct HTML when electron-i18n format changes
+  const html = docsReadme.sections.reduce(
+    (readmeHTML, { html: sectionHTML }) => {
+      return readmeHTML + sectionHTML
+    },
+    ''
+  )
+
+  const $ = cheerio.load(html)
+  const headingSelector = 'h2, h3, h4, h5, h6'
+  const sections = $(headingSelector)
+    .map((_, heading) => {
+      let content = $(heading)
+        .nextUntil(headingSelector)
+        .map((_, p) => $.html(p))
+        .get()
+        .join()
+      return { html: content }
+    })
+    .get()
+    .slice(2, -1)
+
   const [
-    ,
-    ,
-    ,
-    // Not used: https://github.com/electron/electron/tree/master/docs#official-guides
-    // Not used: https://github.com/electron/electron/tree/master/docs#faq
-    // https://github.com/electron/electron/tree/master/docs#guides-and-tutorials
     guidesQuickstart,
     guidesBasic,
     guidesAdvanced,
@@ -25,7 +43,7 @@ module.exports = (req, res) => {
     rendererProcModules,
     // https://github.com/electron/electron/tree/master/docs#modules-for-both-processes
     bothProcModules,
-  ] = docsReadme.sections
+  ] = sections
 
   const context = Object.assign(req.context, {
     guidesQuickstart,
