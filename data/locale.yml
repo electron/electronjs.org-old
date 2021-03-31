@@ -29,7 +29,6 @@ keyboard_modal:
 
 docs:
   title: Electron Documentation
-  description: See all of the <a href="/docs/all">docs on one page</a> or check out the <a href="/docs/faq">FAQ</a>.
   guides: "Guides: Getting Started with Electron"
   api_reference: API Reference
   api_structures: API Structures
@@ -42,7 +41,6 @@ docs:
   propose_change: Improve this doc
   version_history: Version history
   translate: Translate this doc
-  view_all_docs: All Docs on One Page
 
 languages:
   choose_language: Choose Your Site Language
@@ -272,9 +270,6 @@ pages:
   '/docs':
     title: Documentation
     description: Guides and API reference documentation for the latest Electron release
-  '/docs/all':
-    title: All the Electron Docs!
-    description: All of Electron's guides and API documentation on a single, searchable page.
   '/docs/api':
     title: API
     description: API reference documentation for the latest Electron release
