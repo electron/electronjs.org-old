@@ -258,8 +258,6 @@ fiddle_launch_button:
   launch: Launch
   launch_in_fiddle: Launch in Fiddle
 
-or: or
-
 pages:
   '/':
     title: Electron | Build cross-platform desktop apps with JavaScript, HTML, and CSS.
