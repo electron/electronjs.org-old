@@ -30,7 +30,7 @@ module.exports = (req, res) => {
       return { html: content }
     })
     .get()
-    .slice(2, -1) // slice out unused headings
+    .slice(2, -1) // slice out unused headings (faq, guides and tutorials, development)
 
   const [
     guidesQuickstart,
