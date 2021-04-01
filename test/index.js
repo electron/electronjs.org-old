@@ -254,17 +254,6 @@ describe('electronjs.org', () => {
         .should.eq('Create and control browser windows.')
     })
 
-    test('docs/all', async () => {
-      const $ = await get('/docs/all')
-      $('head > title').text().should.eq('All the Electron Docs! | Electron')
-      const titles = $('h1')
-        .map((i, el) => $(el).text())
-        .get()
-      titles.should.include('BluetoothDevice Object') // API Structures
-      titles.should.include('BrowserWindow') // API Docs
-      titles.should.include('Application Distribution') // Tutorials
-    })
-
     test('docs/api', async () => {
       const $ = await get('/docs/api')
       $('tr').length.should.be.above(10)
@@ -367,16 +356,6 @@ describe('electronjs.org', () => {
       $('.docs .sub-section[data-lang="en-US"]').each((i, elem) => {
         $(elem).should.have.class('hidden')
       })
-    })
-
-    test('docs/all should not load any english section', async () => {
-      const res = await supertest(app)
-        .get('/docs/all')
-        .set('Cookie', ['language=zh-CN'])
-      const $ = cheerio.load(res.text)
-      $('.docs .sub-section[data-lang="zh-CN"]').length.should.be.above(0)
-      $('.docs .sub-section[data-lang="en-US"]').length.should.equal(0)
-      $('.docs button.en-toggle').length.should.equal(0)
     })
   })
 

@@ -9,7 +9,6 @@ module.exports = (req, res, next) => {
   }
 
   const categoryList = [
-    { path: 'all', name: 'All the Electron Docs!' },
     { path: 'api', name: 'API' },
     { path: 'development', name: 'Development' },
     { path: 'tutorial', name: 'Guides' },
@@ -21,18 +20,11 @@ module.exports = (req, res, next) => {
   if (!selectedCategories.length) return next()
 
   const selectedCategory = selectedCategories[0]
-  if (category === 'all') {
-    context = Object.assign(req.context, {
-      layout: 'docs',
-      viewingAllDocs: true,
-    })
-  } else {
-    context = Object.assign(req.context, {
-      layout: 'docs',
-      processes: processes,
-      category: selectedCategory.name,
-    })
-  }
+  context = Object.assign(req.context, {
+    layout: 'docs',
+    processes: processes,
+    category: selectedCategory.name,
+  })
 
   res.render(`docs/${category}`, context)
 }
