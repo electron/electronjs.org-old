@@ -47,7 +47,7 @@
     "crowdin-editor-language-codes": "^1.0.0",
     "description": "0.0.4",
     "dotenv": "^8.2.0",
-    "electron-api-historian": "1.26.0",
+    "electron-api-historian": "1.27.0",
     "electron-apps": "1.8658.0",
     "electron-i18n": "1.2956.0",
     "electron-markdown": "^0.8.2",
@@ -123,7 +123,7 @@
     "webpack": "^4.46.0",
     "webpack-cli": "^4.6.0",
     "webpack-dev-middleware": "^4.1.0",
-    "webpack-manifest-plugin": "^3.1.0"
+    "webpack-manifest-plugin": "^3.1.1"
   },
   "engines": {
     "node": ">=12 <15"
