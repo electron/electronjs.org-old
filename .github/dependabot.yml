@@ -11,6 +11,9 @@ updates:
     versions:
     - ">= 4.a"
     - "< 5"
+  - dependency-name: "@primer/css" #TODO: remove when manually upgrading
+    versions:
+    - ">= 16"
 - package-ecosystem: github-actions
   directory: "/"
   schedule:
