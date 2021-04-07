@@ -1,7 +1,8 @@
 const i18n = require('lib/i18n')
 const electronReleases = require('electron-releases')
+const electronLatestStableVersion = i18n.electronLatestStableTag.slice(1)
 const { deps } = electronReleases.find(
-  (release) => release.version === i18n.electronLatestStableVersion
+  (release) => release.version === electronLatestStableVersion
 )
 const { getLanguageNativeName } = require('locale-code')
 const rtlDetect = require('rtl-detect')
@@ -41,13 +42,8 @@ module.exports = function contextBuilder(req, res, next) {
   }
 
   req.context = {
-    electronLatestStableVersion: i18n.electronLatestStableVersion,
+    electronLatestStableVersion,
     electronLatestStableTag: i18n.electronLatestStableTag,
-    electronMasterBranchCommit: i18n.electronMasterBranchCommit,
-    electronMasterBranchCommitShort: i18n.electronMasterBranchCommit.slice(
-      0,
-      6
-    ),
     deps: deps,
     releases: new Releases(electronReleases),
     currentLocale: req.language,
