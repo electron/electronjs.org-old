@@ -26,7 +26,7 @@ module.exports = (req, res) => {
         .nextUntil(headingSelector)
         .map((_, p) => $.html(p))
         .get()
-        .join()
+        .join('')
       return { html: content }
     })
     .get()
