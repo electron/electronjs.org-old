@@ -154,20 +154,20 @@ describe('electronjs.org', () => {
       cy.wait(500)
       cy.get('.lang-select-button').click()
       cy.wait(200)
-      cy.get('#languages-header-menu a[href="/languages/ru-RU"]:first').click()
+      cy.get('#languages-header-menu a[href="/languages/fr-FR"]:first').click()
       cy.wait(500)
       cy.get('.jumbotron-lead').contains(
-        'Создавайте кросс-платформенные приложения при помощи JavaScript, HTML и CSS'
+        'Développez des applications desktop multi-plateformes avec JavaScript, HTML et CSS'
       )
     })
 
     it('change language via languages page', () => {
       cy.visit(`${localhost}/languages`)
-      cy.get('.container-lg a[href="/languages/ru-RU"]:first').click()
+      cy.get('.container-lg a[href="/languages/fr-FR"]:first').click()
       cy.visit(`${localhost}`)
       cy.wait(500)
       cy.get('.jumbotron-lead').contains(
-        'Создавайте кросс-платформенные приложения при помощи JavaScript, HTML и CSS'
+        'Développez des applications desktop multi-plateformes avec JavaScript, HTML et CSS'
       )
     })
   })
