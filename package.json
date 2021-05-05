@@ -60,7 +60,7 @@
     "fast-memoize": "^2.5.2",
     "feed": "^4.2.2",
     "flat": "^5.0.2",
-    "fs-extra": "^9.1.0",
+    "fs-extra": "^10.0.0",
     "got": "^11.8.2",
     "gray-matter": "^4.0.2",
     "helmet": "^4.4.1",
