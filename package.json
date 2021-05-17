@@ -122,7 +122,7 @@
     "walk-sync": "^2.2.0",
     "webpack": "^4.46.0",
     "webpack-cli": "^4.6.0",
-    "webpack-dev-middleware": "^4.1.0",
+    "webpack-dev-middleware": "^4.2.0",
     "webpack-manifest-plugin": "^3.1.1"
   },
   "engines": {
