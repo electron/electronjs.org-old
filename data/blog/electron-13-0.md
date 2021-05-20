@@ -39,8 +39,6 @@ See the [13.0.0 release notes](https://github.com/electron/electron/releases/tag
 ## Breaking Changes
 
 * Changed `session.setPermissionCheckHandler(handler)` to allow for `handler`'s first parameter, `webContents` to be `null`. [#19903](https://github.com/electron/electron/pull/19903)
-* Removed deprecated `shell.moveItemToTrash()`. [#26723](https://github.com/electron/electron/pull/26723)
-More information about these and future changes can be found on the [Planned Breaking Changes](https://github.com/electron/electron/blob/master/docs/breaking-changes.md) page.
 
 More information about these and future changes can be found on the [Planned Breaking Changes](https://github.com/electron/electron/blob/master/docs/breaking-changes.md) page.
 
@@ -52,7 +50,7 @@ More information about these and future changes can be found on the [Planned Bre
 
 The following APIs have been removed or are now deprecated:
 
-* TBD
+* Removed deprecated `shell.moveItemToTrash()`. [#26723](https://github.com/electron/electron/pull/26723)
 
 ## End of Support for 10.x.y
 
