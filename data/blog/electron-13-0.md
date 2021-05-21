@@ -37,15 +37,20 @@ The Electron team is excited to announce the release of Electron 13.0.0! You can
 See the [13.0.0 release notes](https://github.com/electron/electron/releases/tag/v13.0.0) for a full list of new features and changes.
 
 ## Breaking Changes
-
+* `window.open()` parameter frameName is no longer set as window title. [#27481](https://github.com/electron/electron/pull/27481)
 * Changed `session.setPermissionCheckHandler(handler)` to allow for `handler`'s first parameter, `webContents` to be `null`. [#19903](https://github.com/electron/electron/pull/19903)
 
 More information about these and future changes can be found on the [Planned Breaking Changes](https://github.com/electron/electron/blob/master/docs/breaking-changes.md) page.
 
 ## API Changes
 
-* TBD
-
+* Added `roundedCorners` option for `BrowserWindow`. [#27572](https://github.com/electron/electron/pull/27572)
+* Added new `session.storagePath` API to get the path on disk for session-specific data.[28866](https://github.com/electron/electron/pull/28866)
+* Added support for passing DOM elements over the context bridge. [#26776](https://github.com/electron/electron/pull/26776)
+* Added `process.uptime()` to sandboxed renderers. [#26684](https://github.com/electron/electron/pull/26684)
+* Added missing fields to the parameters emitted as part of the `context-menu `event.[#26788](https://github.com/electron/electron/pull/26788)
+* Added support for registering Manifest V3 extension service workers.
+Added ‘registration-completed’ event to ServiceWorkers. [#27562](https://github.com/electron/electron/pull/27562)
 ### Removed/Deprecated Changes
 
 The following APIs have been removed or are now deprecated:
