@@ -23,7 +23,7 @@ The Electron team is excited to announce the release of Electron 13.0.0! You can
 * Node.js `14.16.0`
     * [Node 14.16.0 blog post](https://nodejs.org/en/blog/release/v14.16.0/)
     * [Node 14.0.0 blog post](https://nodejs.org/en/blog/release/v14.0.0/)
-* V8 `x.x`
+* V8 `9.1`
     * [V8 9.1 blog post](https://v8.dev/blog/v8-release-91)
     * [V8 9.0 blog post](https://v8.dev/blog/v8-release-90)
 
@@ -50,7 +50,8 @@ More information about these and future changes can be found on the [Planned Bre
 * Added `process.uptime()` to sandboxed renderers. [#26684](https://github.com/electron/electron/pull/26684)
 * Added missing fields to the parameters emitted as part of the `context-menu `event.[#26788](https://github.com/electron/electron/pull/26788)
 * Added support for registering Manifest V3 extension service workers.
-Added ‘registration-completed’ event to ServiceWorkers. [#27562](https://github.com/electron/electron/pull/27562)
+* Added ‘registration-completed’ event to ServiceWorkers. [#27562](https://github.com/electron/electron/pull/27562)
+
 ### Removed/Deprecated Changes
 
 The following APIs have been removed or are now deprecated:
