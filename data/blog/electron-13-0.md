@@ -1,13 +1,13 @@
 ---
 title: Electron 13.0.0
 author:
-- VerteDinde
-- clavin
+- sofianguy
 - georgexu99
+- VerteDinde
 date: '2021-05-25'
 ---
 
-Electron 13.0.0 has been released! It includes upgrades to Chromium `91`, V8 `9.1` and Node.js `14.16.0`. We've added {highlighted changes}, and general improvements. Read below for more details!
+Electron 13.0.0 has been released! It includes upgrades to Chromium `91`, V8 `9.1` and Node.js `14.16.0`. We've added several API updates, bug fixes, and general improvements. Read below for more details!
 
 ---
 
@@ -29,14 +29,16 @@ The Electron team is excited to announce the release of Electron 13.0.0! You can
 
 ### Highlight Features
 
-* Added `process.contextId` used by `@electron/remote`. [#28251](https://github.com/electron/electron/pull/28251) 
 * Added `process.contextIsolated` property that indicates whether the current renderer context has `contextIsolation` enabled. [#28252](https://github.com/electron/electron/pull/28252) 
 * Added new `session.storagePath` API to get the path on disk for session-specific data. [#28866](https://github.com/electron/electron/pull/28866) 
-* The `submitURL` option for `crashReporter.start` is no longer a required argument when `uploadToServer` is false. [#28283](https://github.com/electron/electron/pull/28283) 
+* Deprecated the `new-window` event of `WebContents`. It is replaced by `webContents.setWindowOpenHandler()`
+* The `submitURL` option for `crashReporter.start` is no longer a required argument when `uploadToServer` is false. [#28283](https://github.com/electron/electron/pull/28283)
+* Added `process.contextId` used by `@electron/remote`. [#28251](https://github.com/electron/electron/pull/28251) 
 
 See the [13.0.0 release notes](https://github.com/electron/electron/releases/tag/v13.0.0) for a full list of new features and changes.
 
 ## Breaking Changes
+
 * `window.open()` parameter frameName is no longer set as window title. [#27481](https://github.com/electron/electron/pull/27481)
 * Changed `session.setPermissionCheckHandler(handler)` to allow for `handler`'s first parameter, `webContents` to be `null`. [#19903](https://github.com/electron/electron/pull/19903)
 
@@ -57,9 +59,7 @@ More information about these and future changes can be found on the [Planned Bre
 The following APIs have been removed or are now deprecated:
 
 * Deprecated the `new-window` event of `WebContents`. It is replaced by `webContents.setWindowOpenHandler()`
-
 * Removed deprecated `shell.moveItemToTrash()`. [#26723](https://github.com/electron/electron/pull/26723)
-
 * Removed the following deprecated `BrowserWindow` extension APIs:
 
     * `BrowserWindow.addExtension(path)`
@@ -69,7 +69,7 @@ The following APIs have been removed or are now deprecated:
     * `BrowserWindow.getExtensions()`
     * `BrowserWindow.getDevToolsExtensions()`
 
-        Use the session APIs instead:
+    Use the session APIs instead:
 
     * `ses.loadExtension(path)`
     * `ses.removeExtension(extension_id)`
@@ -81,7 +81,7 @@ The following APIs have been removed or are now deprecated:
     * `systemPreferences.isInvertedColorScheme()`
     * `systemPreferences.isHighContrastColorScheme()`
 
-        Use the following nativeTheme properties instead:
+    Use the following nativeTheme properties instead:
 
     * `nativeTheme.shouldUseDarkColors`
     * `nativeTheme.shouldUseInvertedColorScheme`
