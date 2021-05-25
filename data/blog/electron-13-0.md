@@ -7,7 +7,7 @@ author:
 date: '2021-05-25'
 ---
 
-Electron 13.0.0 has been released! It includes upgrades to Chromium `91`, V8 `9.1` and Node.js `14.16.0`. We've added several API updates, bug fixes, and general improvements. Read below for more details!
+Electron 13.0.0 has been released! It includes upgrades to Chromium `91` and V8 `9.1`. We've added several API updates, bug fixes, and general improvements. Read below for more details!
 
 ---
 
@@ -68,19 +68,19 @@ The following APIs have been removed or are now deprecated:
     * `BrowserWindow.getExtensions()`
     * `BrowserWindow.getDevToolsExtensions()`
 
-    Use the session APIs instead:
+    Use the `session` APIs instead:
 
     * `ses.loadExtension(path)`
     * `ses.removeExtension(extension_id)`
     * `ses.getAllExtensions()`
 
-* The following systemPreferences methods have been deprecated:
+* The following `systemPreferences` methods have been deprecated:
 
     * `systemPreferences.isDarkMode()`
     * `systemPreferences.isInvertedColorScheme()`
     * `systemPreferences.isHighContrastColorScheme()`
 
-    Use the following nativeTheme properties instead:
+    Use the following `nativeTheme` properties instead:
 
     * `nativeTheme.shouldUseDarkColors`
     * `nativeTheme.shouldUseInvertedColorScheme`
