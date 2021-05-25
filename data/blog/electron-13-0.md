@@ -32,7 +32,6 @@ The Electron team is excited to announce the release of Electron 13.0.0! You can
 * Added `process.contextIsolated` property that indicates whether the current renderer context has `contextIsolation` enabled. [#28252](https://github.com/electron/electron/pull/28252) 
 * Added new `session.storagePath` API to get the path on disk for session-specific data. [#28866](https://github.com/electron/electron/pull/28866) 
 * Deprecated the `new-window` event of `WebContents`. It is replaced by `webContents.setWindowOpenHandler()`
-* The `submitURL` option for `crashReporter.start` is no longer a required argument when `uploadToServer` is false. [#28283](https://github.com/electron/electron/pull/28283)
 * Added `process.contextId` used by `@electron/remote`. [#28251](https://github.com/electron/electron/pull/28251) 
 
 See the [13.0.0 release notes](https://github.com/electron/electron/releases/tag/v13.0.0) for a full list of new features and changes.
