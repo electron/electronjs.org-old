@@ -18,7 +18,7 @@ The Electron team is excited to announce the release of Electron 13.0.0! You can
 ### Stack Changes
 
 * Chromium `91`
-    * [New in Chrome 91](https://www.youtube.com/watch?v=vy6FXa0n1r0)
+    * [New in Chrome 91](https://developer.chrome.com/blog/new-in-chrome-91/)
     * [New in Chrome 90](https://developer.chrome.com/blog/new-in-chrome-90/)
 * Node.js `14.16.0`
     * [Node 14.16.0 blog post](https://nodejs.org/en/blog/release/v14.16.0/)
