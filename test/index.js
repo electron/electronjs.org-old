@@ -97,7 +97,7 @@ describe('electronjs.org', () => {
     test('displays Code of Conduct link in the footer', async () => {
       const $ = await get('/')
       $(
-        'a.footer-nav-item[href="https://github.com/electron/electron/tree/master/CODE_OF_CONDUCT.md"]'
+        'a.footer-nav-item[href="https://github.com/electron/electron/tree/main/CODE_OF_CONDUCT.md"]'
       )
         .text()
         .should.eq('Code of Conduct')
@@ -106,7 +106,7 @@ describe('electronjs.org', () => {
     test('displays Security link in the footer', async () => {
       const $ = await get('/')
       $(
-        'a.footer-nav-item[href="https://github.com/electron/electron/tree/master/SECURITY.md"]'
+        'a.footer-nav-item[href="https://github.com/electron/electron/tree/main/SECURITY.md"]'
       )
         .text()
         .should.eq('Security')
@@ -115,7 +115,7 @@ describe('electronjs.org', () => {
     test('displays License link in the footer', async () => {
       const $ = await get('/')
       $(
-        'a.footer-nav-item[href="https://github.com/electron/electron/tree/master/LICENSE"]'
+        'a.footer-nav-item[href="https://github.com/electron/electron/tree/main/LICENSE"]'
       )
         .text()
         .should.eq('License')
@@ -282,7 +282,7 @@ describe('electronjs.org', () => {
         const $ = await get('/docs/api/accelerator')
         should.exist(
           $(
-            '[href="https://github.com/electron/electron/tree/master/docs/api/accelerator.md"]'
+            '[href="https://github.com/electron/electron/tree/main/docs/api/accelerator.md"]'
           )
         )
       })

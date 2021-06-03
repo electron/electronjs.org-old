@@ -25,6 +25,5 @@ If you've already gotten started, we'd love to chat with you about the apps you'
 :zap: :blue_heart: :electric_plug:
 
 [atom]: https://atom.io
-[docs]: https://github.com/electron/electron/tree/master/docs#readme
+[docs]: https://github.com/electron/electron/tree/main/docs#readme
 [electron]: https://electronjs.org
-

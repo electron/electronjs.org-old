@@ -22,8 +22,8 @@ Writing code is great, but there are many other ways to make meaningful
 contributions to the project:
 
 - [Translate docs and website content](https://github.com/electron/electron-i18n)
-- [Improve Electron tutorials](https://github.com/electron/electron/tree/master/docs)
-- [Improve Electron API docs](https://github.com/electron/electron/tree/master/docs/api)
+- [Improve Electron tutorials](https://github.com/electron/electron/tree/main/docs)
+- [Improve Electron API docs](https://github.com/electron/electron/tree/main/docs/api)
 - [Add Electron apps to the site](https://github.com/electron/electron-apps#adding-your-app)
 
 If you just want to get the site up and running locally, here's the TLDR:
