@@ -36,17 +36,17 @@ module.exports = (req, res) => {
     guidesQuickstart,
     guidesBasic,
     guidesAdvanced,
-    // https://github.com/electron/electron/tree/master/docs#detailed-tutorials
+    // https://github.com/electron/electron/tree/main/docs#detailed-tutorials
     detailedTutorials,
-    // https://github.com/electron/electron/tree/master/docs#api-references
+    // https://github.com/electron/electron/tree/main/docs#api-references
     apiReference,
-    // https://github.com/electron/electron/tree/master/docs#custom-dom-elements
+    // https://github.com/electron/electron/tree/main/docs#custom-dom-elements
     customDomElements,
-    // https://github.com/electron/electron/tree/master/docs#modules-for-the-main-process
+    // https://github.com/electron/electron/tree/main/docs#modules-for-the-main-process
     mainProcModules,
-    // https://github.com/electron/electron/tree/master/docs#modules-for-the-renderer-process-web-page
+    // https://github.com/electron/electron/tree/main/docs#modules-for-the-renderer-process-web-page
     rendererProcModules,
-    // https://github.com/electron/electron/tree/master/docs#modules-for-both-processes
+    // https://github.com/electron/electron/tree/main/docs#modules-for-both-processes
     bothProcModules,
   ] = sections
 
@@ -62,7 +62,7 @@ module.exports = (req, res) => {
     bothProcModules,
   })
 
-  // Taken from https://github.com/electron/electron/tree/master/docs
+  // Taken from https://github.com/electron/electron/tree/main/docs
 
   res.render('docs/index', context)
 }

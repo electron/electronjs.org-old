@@ -10,7 +10,7 @@ This week we've given Electron's documentation a home on [electronjs.org](https:
 
 You can visit [/docs](https://electronjs.org/docs) to see what versions are available or [/docs/all](https://electronjs.org/docs/all) to see the latest version of docs all on one page (nice for `cmd` + `f` searches).
 
-If you'd like to contribute to the docs content, you can do so in the [Electron repository](https://github.com/electron/electron/tree/master/docs), where the docs are fetched from. We fetch them for each minor release and add them to the [Electron site repository](http://github.com/electron/electronjs.org), which is made with [Jekyll](http://jekyllrb.com).
+If you'd like to contribute to the docs content, you can do so in the [Electron repository](https://github.com/electron/electron/tree/main/docs), where the docs are fetched from. We fetch them for each minor release and add them to the [Electron site repository](http://github.com/electron/electronjs.org), which is made with [Jekyll](http://jekyllrb.com).
 
 If you're interested in learning more about how we pull the docs from one repository to another continue reading below. Otherwise, enjoy the [docs](https://electronjs.org/latest)!
 
@@ -108,4 +108,3 @@ To create a page showing the versions that are available we just loop through th
 ```
 
 Hope you enjoyed these technical bits! If you're interested in more information on using Jekyll for documentation sites, checkout how GitHub's docs team publishes [GitHub's docs on Jekyll](https://github.com/blog/1939-how-github-uses-github-to-document-github).
-
