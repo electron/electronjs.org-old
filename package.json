@@ -81,7 +81,7 @@
     "require-dir": "^1.1.0",
     "require-directory": "^2.1.1",
     "require-yaml": "0.0.1",
-    "rtl-detect": "^1.0.2",
+    "rtl-detect": "^1.0.3",
     "schemeless": "^1.2.0",
     "search-with-your-keyboard": "^2.0.0",
     "semver": "^7.3.5",
