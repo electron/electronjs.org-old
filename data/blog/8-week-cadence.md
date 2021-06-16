@@ -42,13 +42,13 @@ Below is the planned release cycle for the next four major releases of Electron:
 
 | Electron  | Chromium   | Release     | Weeks Cycle |
 | --------- | ---------- | ----------- | ----------- |
-| E14       | M93        | 2021-08-24  | 13          |
-| E15       | M96        | 2021-11-09  | 11          |
-| E16       | M98        | 2022-01-25  | 11          |
-| E17       | M100       | 2022-03-22  | 8           |
+| E14       | M93        | 2021-08-31  | 14          |
+| E15       | M96        | 2021-11-16  | 11          |
+| E16       | M98        | 2022-02-01  | 11          |
+| E17       | M100       | 2022-03-29  | 8           |
 
 
-The Electron team will [continue to support](https://electronjs.org/docs/tutorial/support#supported-versions) the latest three major versions. For example, when [v17.0.0 goes stable on March 22, 2022](https://electronjs.org/docs/tutorial/electron-timelines#600-release-schedule), we will support v17.x, v16.x, and v15.x, while v14.x will reach End-Of-Life.
+The Electron team will [continue to support](https://electronjs.org/docs/tutorial/support#supported-versions) the latest three major versions. For example, when [v17.0.0 goes stable on March 29, 2022](https://electronjs.org/docs/tutorial/electron-timelines#600-release-schedule), we will support v17.x, v16.x, and v15.x, while v14.x will reach End-Of-Life.
 
 [is it worth re-opening the App Feedback Program?]
 
