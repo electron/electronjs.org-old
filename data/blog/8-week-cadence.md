@@ -29,6 +29,7 @@ There's a reason we're publishing this post well before the first 8 week release
 We've tried to address common concerns below:
 
 ### ❓ The existing 12 week release schedule already moves quickly. What steps are the team taking to make upgrading easier?
+
 One plus of more frequent releases is having _smaller_ releases. We understand that upgrading Electron's major versions can be difficult; we hope that, by releasing more frequently, we can introduce fewer major Chromium and Node changes, as well as fewer breaking changes, per release.
 
 ### ❓ Will Electron extend the number of supported LTS versions?
