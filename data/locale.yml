@@ -162,8 +162,8 @@ web_technologies:
 open_source:
   title: Open Source
   description:
-    Electron is an open source project maintained by GitHub and an active
-    community of contributors.
+    Electron is an open source project maintained by the OpenJS Foundation
+    and an active community of contributors.
 
 cross_platform:
   title: Cross Platform
