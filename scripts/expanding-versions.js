@@ -18,9 +18,23 @@ module.exports = () => {
     target.classList.remove(...SHRUNK_CLASS)
     target.classList.add(...EXPANDED_CLASS)
   }
+  const select = (e) => {
+    const elem = e.target;
+    if (document.selection) { // IE
+      var range = document.body.createTextRange();
+      range.moveToElementText(elem);
+      range.select();
+    } else if (window.getSelection) {
+        var range = document.createRange();
+        range.selectNode(elem);
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(range);
+    }
+  }
 
   for (const version of versions) {
     version.addEventListener('mouseover', expand.bind(null, version))
     version.addEventListener('mouseout', reset)
+    version.addEventListener('click', select);
   }
 }
