@@ -12,6 +12,12 @@ In 2019, Electron moved to a 12 week release cycle to match Chromium's 6 week re
 
 Chrome now plans to release a new milestone every 4 weeks, starting with Chrome 94 in Q3 of 2021. In turn, the Electron team is updating our major release cadence to match. Beginning in 2022, Electron will release a new major stable version every 8 weeks.
 
+## When Will This Change Happen?
+
+The first release with a 7 week cadence will be **Electron 15**. Electron 15 will go into beta on **September 1, 2021**, with a stable release of **October 19, 2021**.
+
+This release will be done slightly early, in order to match [changing security requirements for Windows store submission](https://docs.microsoft.com/en-us/windows/uwp/publish/store-policies#102-security).
+
 ## Why Change the Cadence?
 
 Why are we making this change? Simply put, Chromium doesn't stop shipping, and Electron wants to match the pace.
@@ -44,9 +50,9 @@ Below is the planned release cycle for the next four major releases of Electron:
 | Electron  | Chromium   | Release     | Weeks Cycle |
 | --------- | ---------- | ----------- | ----------- |
 | E14       | M93        | 2021-08-31  | 14          |
-| E15       | M96        | 2021-11-16  | 11          |
-| E16       | M98        | 2022-02-01  | 11          |
-| E17       | M100       | 2022-03-29  | 8           |
+| E15       | M97        | 2021-10-19  | 7           |
+| E16       | M99        | 2022-01-04  | 11          |
+| E17       | M101       | 2022-03-29  | 8           |
 
 
 The Electron team will [continue to support](https://electronjs.org/docs/tutorial/support#supported-versions) the latest three major versions. For example, when [v17.0.0 goes stable on March 29, 2022](https://electronjs.org/docs/tutorial/electron-timelines#600-release-schedule), we will support v17.x, v16.x, and v15.x, while v14.x will reach End-Of-Life.
