@@ -18,13 +18,13 @@ In 2019, Electron moved to a 12 week release cycle to match Chromium's 6 week re
 
 Our first release with Chromium Extended Stable will be **Electron 15** on **September 21st, 2021**.
 
-However, this change will also impact the remainder of our 2021 releases, and we wanted to let our developer community know as soon as possible. Read on for more details about our 2021 release schedule.
+Knowing the a release cadence change will impact other downstream applications, we wanted to let our developer community know as soon as possible. Read on for more details about our 2021 release schedule.
 
 ## Moving to Extended Stable
 
-Given that our original Electron 15 release targeted a non-Extended Stable version (Chromium's Extended Stable versions are based on their even-numbered versions), but Electron apps must use the most recent 2 major versions of Chromium in their apps, our Releases WG faced a timing dilemma. 
+Given that our original Electron 15 release targeted a non-Extended Stable version (Chromium's Extended Stable versions are based on their even-numbered versions), we needed to change our original target release date. However, an Electron app must use the most recent 2 major versions of Chromium to be accepted to the Microsoft Store. With these two requirements, our Releases WG faced a timing dilemma. 
 
-Below was the initial planned release schedule for 2021:
+Below is the planned release schedule for 2021:
 
 | Electron | Chrome | Release | Beta to Stable (Weeks) |
 | -------- | ------ | ------- | ----- |
@@ -36,11 +36,11 @@ Below was the initial planned release schedule for 2021:
 
 Moving Electron 15 to include Chromium M94 would allow app developers to get on the very first Extended Stable version of Chromium - however, it would also shorten the beta-to-stable cycle to only 3 weeks. Yikes!
 
-We've received feedback from the Electron community in the past that our release cycle was already aggressive, and we didn't want to put Electron developers in a position where they felt rushed to update your app.
+We've received feedback from the community in the past that our release cycle was already aggressive, and we didn't want to put developers in a position where they felt they weren't given enough time to update their Electron versions.
 
 ## Electron 15: Temporary Alpha
 
-To help with this switchover, Electron will offer a temporary **alpha build**, only for the Electron 15 release. This alpha build will allow developers more time to test and plan for a shortened upgrade, with a more stable build than our current nightlies.
+To help with this switchover, Electron will offer a temporary **alpha build**, only for the Electron 15 release. This alpha build will allow developers more time to test and plan for an Electron 15 release, with a more stable build than our current nightlies.
 
 The alpha channel build will ship for **Electron 15** on **July 20th, 2021**. It will transition to a beta release on **September 1st, 2021**  with a stable release target of **September 21st, 2021**. With each subsequent Electron release, alphas will be released alongside beta releases for their respective versions.
 
