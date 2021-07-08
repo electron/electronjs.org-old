@@ -64,7 +64,7 @@ The WebView2 source is not available on GitHub.
 Quick Summary:
 
 |                                           | Electron        | WebView2                     |
-| ----------------------------------------- | --------------- | ---------------------------- |
+| ----------------------------------------- | --------------: | ---------------------------: |
 | Build Dependency                          | Chromium        | Edge                         |
 | Source Available on GitHub                | Yes             | No                           |
 | Shares Edge/Chrome DLLs                   | No              | No                           |
