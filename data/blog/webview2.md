@@ -101,37 +101,38 @@ Please check the repository for updates.
     | Technology | # Processes | Total private bytes | Total working set |
     | ---        |        ---: |                ---: |              ---: |
     | Electron   |           4 |             78,940K |          226,396K |
-    | WebView2 (C++)    |           7 |             77,748K |          268,248K |
-    | WebView2 WPF (C#)    |           7 |            102,840K |          307,156K |
+    | WebView2 + NET5 + WPF (C#) |           7 |             77,748K |          268,248K |
+    | WebView2 + Win32 (C++)     |           7 |            102,840K |          307,156K |
 1. Write and Read 10,000 4k Files:
 
     |          | Write files | Read dir | Sequential Read | Concurrent Read |
     | ---------|------------:|---------:|----------------:|----------------:|
     | Electron |     6,218 ms |     21 ms |         8,751 ms |         1,059 ms |
-    | WebView2 (C#) |    10,585 ms |     82 ms |        13,470 ms |         5,936 ms |
-    | WPF w/o WebView2 (C#)     |     4,101 ms |      4 ms |         1,848 ms |           448 ms |
+    | WebView2 + NET5 + WPF (C#) |    10,585 ms |     82 ms |        13,470 ms |         5,936 ms |
+    | NET5 + WPF (C# w/o WebView2) |     4,101 ms |      4 ms |         1,848 ms |           448 ms |
 1. Write and Read 10,000 1MB Files:
 
     |          | Write files | Read dir | Sequential Read | Concurrent Read |
     | ---------|------------:|---------:|----------------:|----------------:|
     | Electron |    29,215 ms |     34 ms |        17,518 ms |         4,602 ms |
-    | WebView2 (C#) |    43,250 ms |     98 ms |        86,222 ms |        35,753 ms |
-    | WPF w/o WebView2 (C#)     |    25,729 ms |      6 ms |        29,536 ms |         3,417 ms |
+    | WebView2 + NET5 + WPF (C#) |    43,250 ms |     98 ms |        86,222 ms |        35,753 ms |
+    | NET5 + WPF (C# w/o WebView2)  |    25,729 ms |      6 ms |        29,536 ms |         3,417 ms |
 1. Sequental IPC Round Trip
 
     |                              | 1,000 / avg | 10,000 / avg |
     |------------------------------|------------:|-------------:|
     | Electron (context isolation) | 211.9 ms / 0.21 ms | 2,400 ms / 0.24 ms |
     | Electron (node integration)  | 165.8 ms / 0.16 ms | 1,316 ms / 0.13 ms |
-    | WebView2 (C#)                     | 612.6 ms / 0.61 ms | 6,075 ms / 0.61 ms |
-    | WebView2 (C++)                    | 529.0 ms / 0.53 ms | 5,141 ms / 0.51 ms |
+    | WebView2 + NET5 + WPF (C#)   | 612.6ms / 0.61ms | 6,075ms / 0.61ms |
+    | WebView2 + Win32 (C++)       |   529ms / 0.53ms | 5,141ms / 0.51ms |
 1. Parallel Burst IPC Round Trip
 
     |                              | 1,000 / avg | 10,000 / avg |
     | -----------------------------|------------:|-------------:|
     | Electron (context isolation) | 414 ms / 229.8 ms | 2,021 ms /  949.4 ms  |
     | Electron (node integration)  | 138 ms /  68.1 ms | 1,349 ms /  627.5 ms  |
-    | WebView2 (C#)                     | 604 ms / 332.5 ms | 5,408 ms / 2,713.8 ms |
+    | WebView2 + NET5 + WPF (C#)   | 604ms / 332.5ms | 5,408ms / 2,713.8ms |
+    | WebView2 + Win32 (C++)       | 497ms / 258.3ms | 3,832ms / 2,157.5ms |
     | WebView2 (C++)                    | 497 ms / 258.3 ms | 3,832 ms / 2,157.5 ms |
 
 ### A Note About IPC
