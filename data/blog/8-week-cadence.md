@@ -1,10 +1,10 @@
 ---
-title: New Electron Release Cadence and Changes to 2021 Releases
+title: New Electron Release Cadence
 author: VerteDinde
 date: '2021-07-14'
 ---
 
-Beginning in 2022, Electron will release a new major stable version every 8 weeks.
+Beginning in September 2021, Electron will release a new major stable version every 8 weeks.
 
 ---
 
@@ -14,13 +14,13 @@ In 2019, Electron moved to a 12 week release cycle to match Chromium's 6 week re
 
 2. The Microsoft Store will [require Chromium-based apps to be no older than within 2 major versions](https://docs.microsoft.com/en-us/windows/uwp/publish/store-policies#102-security) (for example, if the latest released major version of Chromium is 85, any browser based on Chromium must be on at least Chromium version 83 or higher). This rule includes Electron apps.
 
-**Beginning in 2022, Electron will release a new major stable version every 8 weeks**, to match Chromium's 8 week Extended Stable releases.
+**Beginning in September 2021, Electron will release a new major stable version every 8 weeks**, to match Chromium's 8 week Extended Stable releases.
 
 Our first release with Chromium Extended Stable will be **Electron 15** on **September 21st, 2021**.
 
 However, this change will also impact the remainder of our 2021 releases, and we wanted to let our developer community know as soon as possible. Read on for more details about our 2021 release schedule.
 
-## Initial Plan for Releases
+## Moving to Extended Stable
 
 Given that our original Electron 15 release targeted a non-Extended Stable version (Chromium's Extended Stable versions are based on their even-numbered versions), but Electron apps must use the most recent 2 major versions of Chromium in their apps, our Releases WG faced a timing dilemma. 
 
@@ -38,27 +38,27 @@ Moving Electron 15 to include Chromium M94 would allow app developers to get on 
 
 We've received feedback from the Electron community in the past that our release cycle was already aggressive, and we didn't want to put Electron developers in a position where they felt rushed to update your app.
 
-## Enter the Alpha Channel
+## Electron 15: Temporary Alpha
 
-To help with this switchover, Electron will begin offering an **alpha build**, one that will contain [the current Chromium Dev build version](https://chromiumdash.appspot.com/releases?platform=Mac). The alpha build will allow developers to test drive changes earlier, without needing to download more unstable nightlies. For the switchover to Chromium's new cadence, adding an alpha build would allow developers more time to test and plan for a shortened upgrade, with a more stable build.
+To help with this switchover, Electron will offer a temporary **alpha build**, only for the Electron 15 release. This alpha build will allow developers more time to test and plan for a shortened upgrade, with a more stable build than our current nightlies.
 
-Our first alpha channel build will ship for **Electron 15** on **July 20th, 2021**, with a stable release target of **September 21st, 2021**. With each subsequent Electron release, alphas will be released alongside beta releases for their respective versions.
+The alpha channel build will ship for **Electron 15** on **July 20th, 2021**. It will transition to a beta release on **September 1st, 2021**  with a stable release target of **September 21st, 2021**. With each subsequent Electron release, alphas will be released alongside beta releases for their respective versions.
 
 ## 2021 Plan for Releases
 
 Below is our current release schedule for 2021:
 
-| Electron | Chrome | Alpha Release | Beta Release | Stable Release | Alpha to Stable (Weeks) | Beta to Stable (Weeks) |
-| -------- | ------ | ----- | ---- | ------ | -------- | --- |
-| E13 | M91 | -          | 2021-Mar-05 | 2021-May-25 | -  | 12 |
-| E14 | M93 | -          | 2021-May-26 | 2021-Aug-31 | -  | 14 |
-| E15 | M94 | 2021-Jul-20 | 2021-Sep-01 | 2021-Sep-21 | 9  | 3 |
-| E16 | M96 | 2021-Sep-01 | 2021-Sep-22 | 2021-Nov-16 | 11  | 8 |
-| E17 | M98 | 2021-Sep-22 | 2021-Nov-17 | 2022-Feb-01 | 19  | 11 |
+| Electron | Chrome | Alpha Release | Beta Release | Stable Release | Stable Cycle (Weeks) |
+| -------- | ------ | ----- | ---- | ------ | -------- |
+| E13 | M91 | -          | 2021-Mar-05 | 2021-May-25 | 12 |
+| E14 | M93 | -          | 2021-May-26 | 2021-Aug-31 | 14 |
+| E15 | M94 | 2021-Jul-20 | 2021-Sep-01 | 2021-Sep-21 | 9 (includes alpha) |
+| E16 | M96 |  - | 2021-Sep-22 | 2021-Nov-16 | 8 |
+| E17 | M98 |  - | 2021-Nov-17 | 2022-Feb-01 | 11 |
 
-Adding the alpha channel extends the development time before Electron 15's launch from 3 weeks to 9 weeks - still shorter than our usual 12 week cycle, but much more managable, while still meeting the requirements for Windows Store submission.
+Adding the alpha channel extends the development time before Electron 15's launch from 3 weeks to 9 weeks - closer to our new 8 week cycle, while still meeting the requirements for Windows Store submission.
 
-To further help app developers, **for the remainder of 2021, we will also be extending our LTS support policy from the latest 3 versions to the latest 4 versions of Electron.** That means that even if you can't immediately alter your upgrade schedule, older versions of Electron will still receive security updates and fixes.
+To further help app developers, **for the remainder of 2021, we will also be extending our supported versions policy from the latest 3 versions to the latest 4 versions of Electron.** That means that even if you can't immediately alter your upgrade schedule, older versions of Electron will still receive security updates and fixes.
 
 ## Addressing Concerns 
 
@@ -76,9 +76,9 @@ Every new Chromium release contains new features, bug fixes / security fixes, an
 
 One plus of more frequent releases is having _smaller_ releases. We understand that upgrading Electron's major versions can be difficult; we hope that, by releasing more frequently, we can introduce fewer major Chromium and Node changes, as well as fewer breaking changes, per release.
 
-#### ❓ Will Electron extend the number of supported LTS versions?
+#### ❓ Will Electron extend the number of supported versions?
 
-For the remainder of 2021, we will also be extending our LTS support policy from the latest three versions to the latest four versions of Electron. When the 8 week cadence begins in 2022, we'll continue to [support the latest three major versions](https://www.electronjs.org/docs/tutorial/support#supported-versions), as well as the beta, alpha and nightly release.
+For the remainder of 2021, we will also be extending our supported version policy from the latest three versions to the latest four versions of Electron. When the 8 week cadence begins in 2022, we'll continue to [support the latest three major versions](https://www.electronjs.org/docs/tutorial/support#supported-versions), as well as the beta, alpha and nightly release.
 
 
 ## Questions?
