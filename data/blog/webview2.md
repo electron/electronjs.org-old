@@ -94,8 +94,8 @@ Please check the repository for updates.
     | Technology       | Time |
     | ---------------- | ---: |
     | Electron         |   ~4s|
-    | WebView2 + NET5 + WPF |   ~3s|
-    | WebView2 + Win32 (C++)|   ~2s|
+    | WebView2 + NET5 + WPF (C#) |   ~3s|
+    | WebView2 + Win32 (C++)     |   ~2s|
 1. Processes Count and Memory
 
     | Technology | # Processes | Total private bytes | Total working set |
