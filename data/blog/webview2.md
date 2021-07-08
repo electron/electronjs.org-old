@@ -30,9 +30,11 @@ Both Electron and WebView2 inherit Chromium’s multi-process architecture - nam
 These processes are entirely separate from other applications running on the system.
 Whether you run multiple Electron apps or multiple WebView2 apps, each application will contain a whole copy of the following process architectures:
 
-ElectronJS Process Model: ![ElectronJS Process Model Diagram](/images/Electron-Architecture.png)
-
-WebView2 Based Application Process Model: ![WebView2 Process Model Diagram](/images/WebView2-Architecture.png)
+* ElectronJS Process Model: 
+    
+    ![ElectronJS Process Model Diagram](/images/Electron-Architecture.png)
+* WebView2 Based Application Process Model: 
+    ![WebView2 Process Model Diagram](/images/WebView2-Architecture.png)
 
 Read more about [WebView2’s process model](https://docs.microsoft.com/en-us/microsoft-edge/webview2/concepts/process-model#:~:text=WebView2%20uses%20the%20same%20process%20model%20as%20the,other%20utility%20processes%20as%20described%20in%20that%20article.) and [Electron’s process model](https://www.electronjs.org/docs/tutorial/process-model#:~:text=Process%20Model%20Electron%20inherits%20its%20multi-process%20architecture%20from,applied%20in%20the%20minimal%20quick%20start%20app%20.) here.
 
