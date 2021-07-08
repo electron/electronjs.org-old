@@ -30,9 +30,9 @@ Both Electron and WebView2 inherit Chromium’s multi-process architecture - nam
 These processes are entirely separate from other applications running on the system.
 Whether you run multiple Electron apps or multiple WebView2 apps, each application will contain a whole copy of the following process architectures:
 
-ElectronJS Process Model: ![ElectronJS Process Model Diagram](/public/images/Electron-Architecture.png)
+ElectronJS Process Model: ![ElectronJS Process Model Diagram](/images/Electron-Architecture.png)
 
-WebView2 Based Application Process Model: ![WebView2 Process Model Diagram](/public/images/WebView2-Architecture.png)
+WebView2 Based Application Process Model: ![WebView2 Process Model Diagram](/images/WebView2-Architecture.png)
 
 Read more about [WebView2’s process model](https://docs.microsoft.com/en-us/microsoft-edge/webview2/concepts/process-model#:~:text=WebView2%20uses%20the%20same%20process%20model%20as%20the,other%20utility%20processes%20as%20described%20in%20that%20article.) and [Electron’s process model](https://www.electronjs.org/docs/tutorial/process-model#:~:text=Process%20Model%20Electron%20inherits%20its%20multi-process%20architecture%20from,applied%20in%20the%20minimal%20quick%20start%20app%20.) here.
 
@@ -54,12 +54,18 @@ WebView2 content is always sandboxed.
 Electron has [comprehensive security documentation](https://www.electronjs.org/docs/tutorial/security) on choosing your security model.
 WebView2 also has [security best practices](https://docs.microsoft.com/en-us/microsoft-edge/webview2/concepts/security).
 
+The Electron source is maintained and available on GitHub.
+Applications can modify can build their own _brands_ of Electron.
+The WebView2 source is not available on GitHub.
+
 Quick Summary:
 
 |                                           | Electron        | WebView2                     |
 | ----------------------------------------- | --------------- | ---------------------------- |
-| Embeds Chromium                           | Yes             | Yes (via Edge)               |
-| Shared Runtime                            | No              | Optional                     |
+| Build Dependency                          | Chromium        | Edge                         |
+| Source Available on GitHub                | Yes             | No                           |
+| Shares Edge/Chrome DLLs                   | No              | No                           |
+| Shared Runtime Between Applications       | No              | Optional                     |
 | Application APIs                          | Yes             | No                           |
 | Node.js                                   | Yes             | No                           |
 | Sandbox                                   | Optional        | Always                       |
@@ -92,8 +98,8 @@ Please check the repository for updates.
     | Technology | # Processes | Total private bytes | Total working set |
     | ---        |        ---: |                ---: |              ---: |
     | Electron   |           4 |             78,940K |          226,396K |
-    | WebView2 C++    |           7 |             77,748K |          268,248K |
-    | WebView2 WPF    |           7 |            102,840K |          307,156K |
+    | WebView2 (C++)    |           7 |             77,748K |          268,248K |
+    | WebView2 WPF (C#)    |           7 |            102,840K |          307,156K |
 1. Write and Read 10,000 4k Files:
 
     |          | Write files | Read dir | Sequential Read | Concurrent Read |
@@ -136,7 +142,7 @@ Communicating between JavaScript and C++ or C# requires [marshalling](https://en
 most commonly into a JSON string. This is an expensive operation and IPC bottlenecks can negatively impact performance.
 
 When sending JavaScript objects between Electron's main and renderer process,
-Chromium will use [the structured clone algorithm](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Structured_clone_algorithm) which is [significantly faster](https://github.com/crossplatform-dev/xplat-challenges/blob/main/results.md#ipc) even when using context isolation for increased security.
+Electron will use [the structured clone algorithm](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Structured_clone_algorithm) which is [significantly faster](https://github.com/crossplatform-dev/xplat-challenges/blob/main/results.md#ipc) even when using context isolation for increased security.
 Electron also supports direct IPC between any two processes via the [MessagePorts](https://www.electronjs.org/docs/latest/performance/message-ports/) API,
 which also utilizes structured clone.
 Applications which leverage this can avoid paying the JSON-serialization tax when sending objects between processes.
