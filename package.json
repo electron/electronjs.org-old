@@ -92,7 +92,7 @@
   "devDependencies": {
     "@octokit/action": "^3.10.10",
     "@types/cookie-parser": "^1.4.2",
-    "@types/express": "^4.17.12",
+    "@types/express": "^4.17.13",
     "babel-loader": "^8.2.2",
     "browser-sync": "^2.27.1",
     "chai": "^4.3.4",
