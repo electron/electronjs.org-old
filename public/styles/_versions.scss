@@ -1,3 +1,11 @@
+pre code span.no-select {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -ms-user-select: none;
+}
+
 .electron-version-container {
   // Override Primer
   figure {
@@ -6,13 +14,10 @@
 
   .electron-version {
     padding: 12px;
+    cursor: pointer;
 
     pre {
       max-width: calc(100vw - 50px);
-    }
-
-    pre code span.no-select {
-      user-select: none;
     }
   }
 
