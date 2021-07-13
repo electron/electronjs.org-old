@@ -20,25 +20,11 @@ Our first release with Chromium Extended Stable will be **Electron 15** on **Sep
 
 Knowing that a release cadence change will impact other downstream applications, we wanted to let our developer community know as soon as possible. Read on for more details about our 2021 release schedule.
 
-## Moving to Extended Stable
-
-Given that our original Electron 15 release targeted a non-Extended Stable version (Chromium's Extended Stable versions are based on their even-numbered versions), we needed to change our original target release date. However, an Electron app must use the most recent 2 major versions of Chromium to be accepted to the Microsoft Store. With these two requirements, our team faced a timing dilemma. 
-
-Below is the planned release schedule for 2021:
-
-| Electron | Chrome | Release | Beta to Stable (Weeks) |
-| -------- | ------ | ------- | ----- |
-| E13 | M91 | 2021-May-25 |  12  |
-| E14 | M93 | 2021-Aug-31 |  14  |
-| E15 | M94 | 2021-Sep-21 |  3  |
-| E16 | M96 | 2021-Nov-16 |  8  |
-| E17 | M98 | 2022-Feb-01 |  11  |
-
-Moving Electron 15 to include Chromium M94 would allow app developers to get on the very first Extended Stable version of Chromium; however, it would also shorten the beta-to-stable cycle to only 3 weeks. Yikes!
-
-We've received feedback from the community in the past that our release cycle was already aggressive, and we didn't want to put developers in a position where they felt they weren't given enough time to update their Electron versions.
-
 ## Electron 15: Temporary Alpha
+
+Given that our original Electron 15 release targeted a non-Extended Stable version (Chromium's Extended Stable versions are based on their even-numbered versions), we needed to change our original target release date. However, an Electron app must use the most recent 2 major versions of Chromium to be accepted to the Microsoft Store, which made waiting for two Chromium versions untenable.
+
+With these two requirements, our team faced a timing dilemma. Moving Electron 15 to include Chromium M94 would allow app developers to get on the very first Extended Stable version of Chromium; however, it would also shorten the beta-to-stable cycle to only 3 weeks.
 
 To help with this switchover, Electron will offer a temporary **alpha build**, only for the Electron 15 release. This alpha build will allow developers more time to test and plan for an Electron 15 release, with a more stable build than our current nightlies.
 
@@ -78,9 +64,20 @@ Every new Chromium release contains new features, bug fixes / security fixes, an
 
 One advantage of more frequent releases is having _smaller_ releases. We understand that upgrading Electron's major versions can be difficult. We hope that smaller releases will introduce fewer major Chromium and Node changes, as well as fewer breaking changes, per release.
 
+#### ❓ Will there been an alpha release available for future Electron versions?
+
+There are no plans to support a permanent alpha release at this time. This alpha is only intended for Electron 15, as a way to help developers upgrade more easily in the shortened release period.
+
 #### ❓ Will Electron extend the number of supported versions?
 
-For the remainder of 2021, we will also be extending our supported version policy from the latest three versions to the latest four versions of Electron. When the 8 week cadence begins in 2022, we'll continue to [support the latest three major versions](https://www.electronjs.org/docs/tutorial/support#supported-versions), as well as the beta, alpha and nightly release.
+Yes, we will also be extending our supported version policy from the latest three versions to the latest four versions of Electron until May 2022, with the release of Electron 19. After Electron 19 is released, we'll return to [supporting the latest three major versions](https://www.electronjs.org/docs/tutorial/support#supported-versions), as well as the beta and nightly releases.
+
+| E13 (May'21) | E14 (Aug'21) | E15 (Sep'21) | E16 (Nov'21) | E17 (Feb'22) | E18 (Mar'22) | E19 (May'22) |
+| ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ |
+| 13.x.y | 14.x.y | 15.x.y | 16.x.y | 17.x.y | 18.x.y | 19.x.y |
+| 12.x.y | 13.x.y | 14.x.y | 15.x.y | 16.x.y | 17.x.y | 18.x.y |
+| 11.x.y | 12.x.y | 13.x.y | 14.x.y | 15.x.y | 16.x.y | 17.x.y |
+| --     | --     | 12.x.y | 13.x.y | 14.x.y | 15.x.y |  -- |
 
 
 ## Questions?
