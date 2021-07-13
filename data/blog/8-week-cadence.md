@@ -8,11 +8,11 @@ Beginning in September 2021, Electron will release a new major stable version ev
 
 ---
 
-In 2019, Electron moved to a 12 week release cycle to match Chromium's 6 week release cycle. Recently, both Chrome and Microsoft announced changes that made us reconsider Electron's current release cadence:
+In 2019, Electron [moved to a 12 week release cycle](https://www.electronjs.org/blog/12-week-cadence) to match Chromium's 6 week release cycle. Recently, both Chrome and Microsoft announced changes that made us reconsider Electron's current release cadence:
 
 1. Chromium plans to [release a new milestone every **4 weeks**, starting with Chrome 94 on September 21st, 2021.](https://blog.chromium.org/2021/03/speeding-up-release-cycle.html) This release cadence also adds a new Extended Stable option every 8 weeks, which will contain all updated security fixes.
 
-2. The Microsoft Store will [require Chromium-based apps to be no older than within 2 major versions](https://docs.microsoft.com/en-us/windows/uwp/publish/store-policies#102-security) (for example, if the latest released major version of Chromium is 85, any browser based on Chromium must be on at least Chromium version 83 or higher). This rule includes Electron apps.
+2. The Microsoft Store will [require Chromium-based apps to be no older than within 2 major versions](https://docs.microsoft.com/en-us/windows/uwp/publish/store-policies#102-security). As an example, if the latest released major version of Chromium is 85, any browser based on Chromium must be on at least Chromium version 83 or higher. **This rule includes Electron apps.**
 
 **Beginning in September 2021, Electron will release a new major stable version every 8 weeks**, to match Chromium's 8 week Extended Stable releases.
 
@@ -70,7 +70,7 @@ There are no plans to support a permanent alpha release at this time. This alpha
 
 #### ❓ Will Electron extend the number of supported versions?
 
-Yes, we will also be extending our supported version policy from the latest three versions to the latest four versions of Electron until May 2022, with the release of Electron 19. After Electron 19 is released, we'll return to [supporting the latest three major versions](https://www.electronjs.org/docs/tutorial/support#supported-versions), as well as the beta and nightly releases.
+We will be extending our supported version policy from the latest three versions to the latest four versions of Electron until May 2022, with the release of Electron 19. After Electron 19 is released, we'll return to [supporting the latest three major versions](https://www.electronjs.org/docs/tutorial/support#supported-versions), as well as the beta and nightly releases.
 
 | E13 (May'21) | E14 (Aug'21) | E15 (Sep'21) | E16 (Nov'21) | E17 (Feb'22) | E18 (Mar'22) | E19 (May'22) |
 | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ |
