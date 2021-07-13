@@ -44,7 +44,7 @@ Below is our current release schedule for 2021:
 
 Adding the alpha channel extends the development time before Electron 15's launch from 3 weeks to 9 weeks - closer to our new 8 week cycle, while still meeting the requirements for Windows Store submission.
 
-To further help app developers, **for the remainder of 2021, we will also be extending our supported versions policy from the latest 3 versions to the latest 4 versions of Electron.** That means that even if you can't immediately alter your upgrade schedule, older versions of Electron will still receive security updates and fixes.
+To further help app developers, **for the remainder of 2021 until May 2022, we will also be extending our supported versions policy from the latest 3 versions to the latest 4 versions of Electron.** That means that even if you can't immediately alter your upgrade schedule, older versions of Electron will still receive security updates and fixes.
 
 ## Addressing Concerns 
 
