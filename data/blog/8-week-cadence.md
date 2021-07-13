@@ -10,7 +10,7 @@ Beginning in September 2021, Electron will release a new major stable version ev
 
 In 2019, Electron moved to a 12 week release cycle to match Chromium's 6 week release cycle. Recently, both Chrome and Microsoft announced changes that made us reconsider Electron's current release cadence:
 
-1. Chromium plans to [release a new milestone every **4 weeks**, starting with Chrome 94 on September 21st, 2021.](https://developer.chrome.com/blog/faster-release-cycle/) This release cadence also adds a new Extended Stable option every 8 weeks, which will contain all updated security fixes.
+1. Chromium plans to [release a new milestone every **4 weeks**, starting with Chrome 94 on September 21st, 2021.](https://blog.chromium.org/2021/03/speeding-up-release-cycle.html) This release cadence also adds a new Extended Stable option every 8 weeks, which will contain all updated security fixes.
 
 2. The Microsoft Store will [require Chromium-based apps to be no older than within 2 major versions](https://docs.microsoft.com/en-us/windows/uwp/publish/store-policies#102-security) (for example, if the latest released major version of Chromium is 85, any browser based on Chromium must be on at least Chromium version 83 or higher). This rule includes Electron apps.
 
@@ -70,11 +70,13 @@ We've tried to address common concerns below:
 
 To deliver the most up-to-date versions of Chromium in Electron, our schedule needs to track theirs. More information around Chromium's release cycle can be found [here](https://chromium.googlesource.com/chromium/src/+/master/docs/process/release_cycle.md).
 
+Additionally, the current 12 week release cadence would be untenable with the Microsoft Store's new submission requirements. Even apps on the latest stable version of Electron would experience a roughly two week period where their app may be rejected under the new security requirements.
+
 Every new Chromium release contains new features, bug fixes / security fixes, and V8 improvements. We want you, as app developers, to have these changes in a timely manner, so our stable release dates will continue to match every other Chromium stable release. As an app developer, you'll have access to new Chromium and V8 features and fixes sooner than before.
 
 #### ❓ The existing 12 week release schedule already moves quickly. What steps are the team taking to make upgrading easier?
 
-One advantage of more frequent releases is having _smaller_ releases. We understand that upgrading Electron's major versions can be difficult; we hope that, by releasing more frequently, we can introduce fewer major Chromium and Node changes, as well as fewer breaking changes, per release.
+One advantage of more frequent releases is having _smaller_ releases. We understand that upgrading Electron's major versions can be difficult. We hope that smaller releases will introduce fewer major Chromium and Node changes, as well as fewer breaking changes, per release.
 
 #### ❓ Will Electron extend the number of supported versions?
 
