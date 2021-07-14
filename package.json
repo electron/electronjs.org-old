@@ -86,7 +86,7 @@
     "search-with-your-keyboard": "^2.0.0",
     "semver": "^7.3.5",
     "set-query-string": "^2.2.0",
-    "tocbot": "^4.12.2",
+    "tocbot": "^4.12.3",
     "ultimate-pagination": "^1.0.0"
   },
   "devDependencies": {
@@ -102,7 +102,7 @@
     "eslint": "^7.30.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
-    "globby": "^11.0.3",
+    "globby": "^11.0.4",
     "handlebars-loader": "^1.7.1",
     "husky": "^7.0.0",
     "lint-staged": "^11.0.1",
@@ -110,7 +110,7 @@
     "nock": "^13.0.11",
     "node-sass": "^6.0.1",
     "nodemon": "^2.0.12",
-    "prettier": "^2.3.1",
+    "prettier": "^2.3.2",
     "rimraf": "^3.0.2",
     "simplecrawler": "^1.1.9",
     "stylelint": "^13.13.1",
