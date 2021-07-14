@@ -16,9 +16,8 @@ class FilterList {
     this.referenceList
       .querySelectorAll('img[data-src]')
       .forEach(lazyLoadImages.addImage)
-    this.totalAppCount = this.referenceList.querySelectorAll(
-      '.listed-app'
-    ).length
+    this.totalAppCount =
+      this.referenceList.querySelectorAll('.listed-app').length
 
     this.input.addEventListener(
       'input',
@@ -105,8 +104,9 @@ class FilterList {
 
   docForEntry(id, entry) {
     const name = entry.querySelector('.listed-app-name').textContent
-    const description = entry.querySelector('.listed-app-description')
-      .textContent
+    const description = entry.querySelector(
+      '.listed-app-description'
+    ).textContent
     const addDateSelector = entry.querySelector(
       '.listed-app-add-date [data-date]'
     )

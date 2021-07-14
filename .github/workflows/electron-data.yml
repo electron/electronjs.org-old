@@ -9,7 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-      - uses: actions/setup-node@v2.1.5
+      - name: Fetch git branches
+        run: git fetch --no-tags --prune --depth=1 origin +refs/heads/*:refs/remotes/origin/*
+      - uses: actions/setup-node@v2.2.0
         with:
           node-version: '12.x'
       - run: npm ci

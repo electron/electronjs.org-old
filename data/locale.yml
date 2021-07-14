@@ -162,8 +162,8 @@ web_technologies:
 open_source:
   title: Open Source
   description:
-    Electron is an open source project maintained by GitHub and an active
-    community of contributors.
+    Electron is an open source project maintained by the OpenJS Foundation
+    and an active community of contributors.
 
 cross_platform:
   title: Cross Platform
@@ -187,18 +187,11 @@ get_started:
     installers.
 
 explore:
-  title: Explore the Electron APIs
-  description:
-    "The <a href='https://github.com/electron/electron-api-demos'>Electron API Demos app</a>
-    interactively demonstrates the most important features of the Electron API.
-    See what's possible with Electron with sample code and helpful tips for
-    building your app."
-  fiddle_title: Try more powerful experiments with Electron Fiddle
+  fiddle_title: Try powerful experiments with Electron Fiddle
   see_more_info: See more info
 
 download: Download
 download_from_github: Download from GitHub
-view_all_releases_on_github: <a href="https://github.com/electron/electron-api-demos/releases">View all releases</a> on GitHub
 
 quick_start:
   title:
