@@ -13,8 +13,8 @@ We want to provide some early information on the similarities and differences of
 ## Architecture Overview
 
 Electron and WebView2 both build from the Chromium source for rendering web content.
-Strictly speaking WebView2 builds from the Edge source, but Edge is built using a fork of the Chromium source.
-Neither Electron nor WebView2 share any DLLs files on the system with Edge or Chrome.
+Strictly speaking, WebView2 builds from the Edge source, but Edge is built using a fork of the Chromium source.
+Neither Electron nor WebView2 share any DLL files on the system with Edge or Chrome.
 
 Electron apps always bundle and distribute the exact version of Electron with which they were developed.
 WebView2 has two options in distribution.
@@ -44,7 +44,7 @@ WebView2 is a component meant to be integrated into an application framework suc
 WebView2 does not provide operating system APIs outside the web standard via JavaScript.
 
 Node.js is integrated into Electron.
-Electron applications may use any Node.js API, module, or node-native-addon from the render and browser processes.
+Electron applications may use any Node.js API, module, or node-native-addon from the renderer and main processes.
 A WebView2 application does not assume which language or framework the rest of your application is written in.
 There are C++ and C# templates available, but in each case your JavaScript code must proxy any operating system access through the application-host process.
 
@@ -105,4 +105,4 @@ Applications which leverage this can avoid paying the JSON-serialization tax whe
 ## Summary
 
 Electron and WebView2 have a number of differences, but don't expect much difference with respect to how they perform rendering web content.
-Ultimately an app’s architecture and JavaScript libraries/frameworks have a larger impact on memory and performance than anything else because _Chromium is Chromium_ regardless of where it is running.
+Ultimately, an app’s architecture and JavaScript libraries/frameworks have a larger impact on memory and performance than anything else because _Chromium is Chromium_ regardless of where it is running.
