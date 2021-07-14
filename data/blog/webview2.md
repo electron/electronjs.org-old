@@ -21,8 +21,8 @@ WebView2 has two options in distribution.
 You can bundle the exact WebView2 library your application was developed with, or you can use a shared-runtime version that may already be present on the system.
 WebView2 provides tools for each approach, including a bootstrapping installer in case the shared runtime is missing.
 
-Applications that bundle their frameworks are responsible for updating those frameworks, including minor security releases. 
-For apps using the shared WebView2 runtime, WebView2 has its own updater, similar to Chrome or Edge, that runs independent of your application. 
+Applications that bundle their frameworks are responsible for updating those frameworks, including minor security releases.
+For apps using the shared WebView2 runtime, WebView2 has its own updater, similar to Chrome or Edge, that runs independent of your application.
 Your app will transparently inherit any updates every time it launches.
 Neither Electron nor WebView2 is managed by Windows Update.
 
@@ -30,17 +30,17 @@ Both Electron and WebView2 inherit Chromium’s multi-process architecture - nam
 These processes are entirely separate from other applications running on the system.
 Whether you run multiple Electron apps or multiple WebView2 apps, each application will contain a whole copy of the following process architectures:
 
-* ElectronJS Process Model: 
-    
+* ElectronJS Process Model:
+
     ![ElectronJS Process Model Diagram](/images/Electron-Architecture.png)
-* WebView2 Based Application Process Model: 
+* WebView2 Based Application Process Model:
 
     ![WebView2 Process Model Diagram](/images/WebView2-Architecture.png)
 
 Read more about [WebView2’s process model](https://docs.microsoft.com/en-us/microsoft-edge/webview2/concepts/process-model#:~:text=WebView2%20uses%20the%20same%20process%20model%20as%20the,other%20utility%20processes%20as%20described%20in%20that%20article.) and [Electron’s process model](https://www.electronjs.org/docs/tutorial/process-model#:~:text=Process%20Model%20Electron%20inherits%20its%20multi-process%20architecture%20from,applied%20in%20the%20minimal%20quick%20start%20app%20.) here.
 
-Electron provides APIs for common desktop application needs such as menus, file system access, notifications, and more. 
-WebView2 is a component meant to be integrated into an application framework such as WinForms, WPF, or Win32. 
+Electron provides APIs for common desktop application needs such as menus, file system access, notifications, and more.
+WebView2 is a component meant to be integrated into an application framework such as WinForms, WPF, or Win32.
 WebView2 does not provide operating system APIs outside the web standard via JavaScript.
 
 Node.js is integrated into Electron.
@@ -81,63 +81,14 @@ Now the big question:
 _Will your app use 50% less memory by switching between one embedding of Chromium and another?_
 Unfortunately not, but that would have been rad.
 
-We created the [scaffolding to compare some simple apps built using Electron, WPF+WebView2, and .NET+WebView2](https://github.com/crossplatform-dev/xplat-challenges/blob/main/results.md). 
+We created the [scaffolding to compare some simple apps built using Electron, WPF+WebView2, and .NET+WebView2](https://github.com/crossplatform-dev/xplat-challenges/blob/main/results.md).
 Our goal was to find any egregious differences, rather than deep-dive on micro-benchmarks.
-The source code, and detailed results are available in the [xplat-challenges](https://github.com/crossplatform-dev/xplat-challenges) repository, 
+The source code and detailed results are available in the [xplat-challenges](https://github.com/crossplatform-dev/xplat-challenges) repository,
 so you’re free to play around with the frameworks yourself.
 
-Here are the preliminary results.
-Please check the repository for updates.
+### A Note About Inter-Process Communication (IPC)
 
-1. Startup and memory time
-
-    | Technology       | Time |
-    | ---------------- | ---: |
-    | Electron         |   ~4s|
-    | WebView2 + NET5 + WPF (C#) |   ~3s|
-    | WebView2 + Win32 (C++)     |   ~2s|
-1. Processes Count and Memory
-
-    | Technology | # Processes | Total private bytes | Total working set |
-    | ---        |        ---: |                ---: |              ---: |
-    | Electron   |           4 |             78,940K |          226,396K |
-    | WebView2 + NET5 + WPF (C#) |           7 |             77,748K |          268,248K |
-    | WebView2 + Win32 (C++)     |           7 |            102,840K |          307,156K |
-1. Write and Read 10,000 4k Files:
-
-    |          | Write files | Read dir | Sequential Read | Concurrent Read |
-    | ---------|------------:|---------:|----------------:|----------------:|
-    | Electron |     6,218 ms |     21 ms |         8,751 ms |         1,059 ms |
-    | WebView2 + NET5 + WPF (C#) |    10,585 ms |     82 ms |        13,470 ms |         5,936 ms |
-    | NET5 + WPF (C# w/o WebView2) |     4,101 ms |      4 ms |         1,848 ms |           448 ms |
-1. Write and Read 10,000 1MB Files:
-
-    |          | Write files | Read dir | Sequential Read | Concurrent Read |
-    | ---------|------------:|---------:|----------------:|----------------:|
-    | Electron |    29,215 ms |     34 ms |        17,518 ms |         4,602 ms |
-    | WebView2 + NET5 + WPF (C#) |    43,250 ms |     98 ms |        86,222 ms |        35,753 ms |
-    | NET5 + WPF (C# w/o WebView2)  |    25,729 ms |      6 ms |        29,536 ms |         3,417 ms |
-1. Sequental IPC Round Trip
-
-    |                              | 1,000 / avg | 10,000 / avg |
-    |------------------------------|------------:|-------------:|
-    | Electron (context isolation) | 211.9 ms / 0.21 ms | 2,400 ms / 0.24 ms |
-    | Electron (node integration)  | 165.8 ms / 0.16 ms | 1,316 ms / 0.13 ms |
-    | WebView2 + NET5 + WPF (C#)   | 612.6ms / 0.61ms | 6,075ms / 0.61ms |
-    | WebView2 + Win32 (C++)       |   529ms / 0.53ms | 5,141ms / 0.51ms |
-1. Parallel Burst IPC Round Trip
-
-    |                              | 1,000 / avg | 10,000 / avg |
-    | -----------------------------|------------:|-------------:|
-    | Electron (context isolation) | 414 ms / 229.8 ms | 2,021 ms /  949.4 ms  |
-    | Electron (node integration)  | 138 ms /  68.1 ms | 1,349 ms /  627.5 ms  |
-    | WebView2 + NET5 + WPF (C#)   | 604ms / 332.5ms | 5,408ms / 2,713.8ms |
-    | WebView2 + Win32 (C++)       | 497ms / 258.3ms | 3,832ms / 2,157.5ms |
-    | WebView2 (C++)                    | 497 ms / 258.3 ms | 3,832 ms / 2,157.5 ms |
-
-### A Note About IPC
-
-In Chromium the browser process acts as an IPC broker between sandboxed renderers and the rest of the system.
+In Chromium, the browser process acts as an IPC broker between sandboxed renderers and the rest of the system.
 While Electron allows unsandboxed render processes, many apps choose to enable the sandbox for added security.
 WebView2 always has the sandbox enabled, so for most Electron and WebView2 apps IPC can heavily impact overall performance.
 
