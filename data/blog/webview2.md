@@ -26,6 +26,7 @@ Applications that bundle their frameworks are responsible for updating those fra
 For apps using the shared WebView2 runtime, WebView2 has its own updater, similar to Chrome or Edge, that runs independent of your application.
 Your app will transparently inherit any updates every time it launches.
 Neither Electron nor WebView2 is managed by Windows Update.
+WebView2 is shipped _inbox_ starting with windows 11.
 
 Both Electron and WebView2 inherit Chromium’s multi-process architecture - namely, a single main process that communicates with one-or-more renderer processes.
 These processes are entirely separate from other applications running on the system.
@@ -43,13 +44,13 @@ WebView2 apps using different data folders do not share processes.
 Read more about [WebView2’s process model](https://docs.microsoft.com/en-us/microsoft-edge/webview2/concepts/process-model#:~:text=WebView2%20uses%20the%20same%20process%20model%20as%20the,other%20utility%20processes%20as%20described%20in%20that%20article.) and [Electron’s process model](https://www.electronjs.org/docs/tutorial/process-model#:~:text=Process%20Model%20Electron%20inherits%20its%20multi-process%20architecture%20from,applied%20in%20the%20minimal%20quick%20start%20app%20.) here.
 
 Electron provides APIs for common desktop application needs such as menus, file system access, notifications, and more.
-WebView2 is a component meant to be integrated into an application framework such as WinForms, WPF, or Win32.
+WebView2 is a component meant to be integrated into an application framework such as WinForms, WPF, WinUI, or Win32.
 WebView2 does not provide operating system APIs outside the web standard via JavaScript.
 
 Node.js is integrated into Electron.
 Electron applications may use any Node.js API, module, or node-native-addon from the renderer and main processes.
 A WebView2 application does not assume which language or framework the rest of your application is written in.
-There are C++ and C# templates available, but in each case your JavaScript code must proxy any operating system access through the application-host process.
+Your JavaScript code must proxy any operating system access through the application-host process.
 
 Electron strives to maintain compatibility with the web API, including APIs developed from the [Fugu Project](https://fugu-tracker.web.app/).
 We have a [snapshot of Electron’s Fugu API compatibility](https://docs.google.com/spreadsheets/d/1APQalp8HCa-lXVOqyul369G-wjM2RcojMujgi67YaoE/edit?usp=sharing).
@@ -76,22 +77,25 @@ Quick Summary:
 | Node.js                                   | Yes             | No                           |
 | Sandbox                                   | Optional        | Always                       |
 | Requires an Application Framework         | No              | Yes                          |
-| Supported Platforms                       | Mac, Win, Linux | Win (Mac on roadmap)         |
+| Supported Platforms                       | Mac, Win, Linux | Win (Mac/Linux planned)      |
 | Process Sharing Between Apps              | Never           | Optional                     |
 | Framework Updates Managed By              | Application     | WebView2                     |
 
 ## Performance Discussion
 
-Now the big question:
-_Will your app use 50% less memory by switching between one embedding of Chromium and another?_
-Unfortunately not, but that would have been rad.
+When it comes to rendering your web content, we expect little performance difference between Electron, WebView2, and any other Chromium-based renderer.
 
-We created the [scaffolding to compare some simple apps built using Electron, WPF+WebView2, and .NET+WebView2](https://github.com/crossplatform-dev/xplat-challenges/blob/main/results.md).
+It never hurts to check, so we created the [scaffolding to compare some simple apps built using Electron, WPF+WebView2, and .NET+WebView2](https://github.com/crossplatform-dev/xplat-challenges/blob/main/results.md).
 Our goal was to find any egregious differences, rather than deep-dive on micro-benchmarks.
 The source code and detailed results are available in the [xplat-challenges](https://github.com/crossplatform-dev/xplat-challenges) repository,
 so you’re free to play around with the frameworks yourself.
 
-### A Note About Inter-Process Communication (IPC)
+There are a few differences that come into play _outside_ of rendering web content,
+but folks from Electron, WebView2, Edge, and others have expressed interest in working on a detailed comparison including PWAs and other solutions.
+
+There is one difference we wanted to highlight immediately, as it often surprises people:
+
+### Inter-Process Communication (IPC)
 
 In Chromium, the browser process acts as an IPC broker between sandboxed renderers and the rest of the system.
 While Electron allows unsandboxed render processes, many apps choose to enable the sandbox for added security.
@@ -99,7 +103,8 @@ WebView2 always has the sandbox enabled, so for most Electron and WebView2 apps 
 
 Even though Electron and WebView2 have a similar process models, their underlying IPC implementation is different.
 Communicating between JavaScript and C++ or C# requires [marshalling](https://en.wikipedia.org/wiki/Marshalling_(computer_science)),
-most commonly into a JSON string. This is an expensive operation and IPC bottlenecks can negatively impact performance.
+most commonly to a JSON string. JSON serialization/parsing is an expensive operation and IPC-bottlenecks can negatively impact performance.
+Starting with Edge 93, WV2 will use [CBOR](https://en.wikipedia.org/wiki/CBOR) for network events.
 
 When sending JavaScript objects between Electron's main and renderer process,
 Electron will use [the structured clone algorithm](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Structured_clone_algorithm) which is [significantly faster](https://github.com/crossplatform-dev/xplat-challenges/blob/main/results.md#ipc) even when using context isolation for increased security.
