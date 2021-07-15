@@ -21,12 +21,12 @@ Electron apps always bundle and distribute the exact version of Electron with wh
 WebView2 has two options in distribution.
 You can bundle the exact WebView2 library your application was developed with, or you can use a shared-runtime version that may already be present on the system.
 WebView2 provides tools for each approach, including a bootstrapping installer in case the shared runtime is missing.
+WebView2 is shipped _inbox_ starting with windows 11.
 
 Applications that bundle their frameworks are responsible for updating those frameworks, including minor security releases.
 For apps using the shared WebView2 runtime, WebView2 has its own updater, similar to Chrome or Edge, that runs independent of your application.
 Your app will transparently inherit any updates every time it launches.
 Neither Electron nor WebView2 is managed by Windows Update.
-WebView2 is shipped _inbox_ starting with windows 11.
 
 Both Electron and WebView2 inherit Chromium’s multi-process architecture - namely, a single main process that communicates with one-or-more renderer processes.
 These processes are entirely separate from other applications running on the system.
