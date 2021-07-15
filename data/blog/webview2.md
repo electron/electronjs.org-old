@@ -14,7 +14,8 @@ We want to provide some early information on the similarities and differences of
 
 Electron and WebView2 both build from the Chromium source for rendering web content.
 Strictly speaking, WebView2 builds from the Edge source, but Edge is built using a fork of the Chromium source.
-Neither Electron nor WebView2 share any DLL files on the system with Edge or Chrome.
+Electron does not share any DLLs with Chrome. 
+WebView2 binaries hard link agsinst Edge (Stable channel as of Edge 90), so they share disk and some working set.
 
 Electron apps always bundle and distribute the exact version of Electron with which they were developed.
 WebView2 has two options in distribution.
@@ -28,7 +29,9 @@ Neither Electron nor WebView2 is managed by Windows Update.
 
 Both Electron and WebView2 inherit Chromium’s multi-process architecture - namely, a single main process that communicates with one-or-more renderer processes.
 These processes are entirely separate from other applications running on the system.
-Whether you run multiple Electron apps or multiple WebView2 apps, each application will contain a whole copy of the following process architectures:
+Every Electron application is a separate process tree, containing a root browser-process, some utility processes, and zero or more render processes.
+WebView2 apps use the same user data folder (like a suite of apps would do), share non-renderer processes.
+WebView2 apps using different data folders do not share processes.
 
 * ElectronJS Process Model:
 
@@ -67,13 +70,15 @@ Quick Summary:
 | ----------------------------------------- | --------------: | ---------------------------: |
 | Build Dependency                          | Chromium        | Edge                         |
 | Source Available on GitHub                | Yes             | No                           |
-| Shares Edge/Chrome DLLs                   | No              | No                           |
+| Shares Edge/Chrome DLLs                   | No              | Yes (as of Edge 90)          |
 | Shared Runtime Between Applications       | No              | Optional                     |
 | Application APIs                          | Yes             | No                           |
 | Node.js                                   | Yes             | No                           |
 | Sandbox                                   | Optional        | Always                       |
-| Requires a Separate Application Framework | No              | Yes                          |
+| Requires an Application Framework         | No              | Yes                          |
 | Supported Platforms                       | Mac, Win, Linux | Win (Mac on roadmap)         |
+| Process Sharing Between Apps              | Never           | Optional                     |
+| Framework Updates Managed By              | Application     | WebView2                     |
 
 ## Performance Discussion
 
