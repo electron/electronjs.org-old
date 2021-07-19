@@ -81,7 +81,7 @@
     "require-dir": "^1.1.0",
     "require-directory": "^2.1.1",
     "require-yaml": "0.0.1",
-    "rtl-detect": "^1.0.3",
+    "rtl-detect": "^1.0.4",
     "schemeless": "^1.2.0",
     "search-with-your-keyboard": "^2.0.0",
     "semver": "^7.3.5",
@@ -120,7 +120,7 @@
     "supertest-session": "^4.1.0",
     "wait-on": "^6.0.0",
     "walk-sync": "^3.0.0",
-    "webpack": "^5.40.0",
+    "webpack": "^5.45.1",
     "webpack-cli": "^4.7.2",
     "webpack-dev-middleware": "^5.0.0",
     "webpack-manifest-plugin": "^3.1.1"
