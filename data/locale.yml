@@ -127,6 +127,8 @@ releases:
   stable_desc: Regular, supported releases
   beta_releases: Beta Releases
   beta_desc: Test your app with upcoming changes
+  alpha_releases: Alpha Releases
+  alpha_desc: Test your app with upcoming changes
   nightly_releases: Nightly Releases
   nightly_desc: Experiment with the latest features
   next: Next
