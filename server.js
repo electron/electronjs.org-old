@@ -84,6 +84,17 @@ app.use(
     referrerPolicy: false,
   })
 )
+
+// Helper to generate the redirects to the right document in the new docs paths
+hbs.registerHelper('new-docs', (currentPage) => {
+  // This particular page is the root for the docs in the new site
+  if (!currentPage || currentPage.endsWith('tutorial/introduction')) {
+    return '/docs/latest/'
+  } else {
+    return currentPage.replace('docs/', 'docs/latest/')
+  }
+})
+
 if (isProduction) {
   const jsManifest = require(path.join(
     __dirname,
