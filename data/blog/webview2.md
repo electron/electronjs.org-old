@@ -84,32 +84,26 @@ Quick Summary:
 ## Performance Discussion
 
 When it comes to rendering your web content, we expect little performance difference between Electron, WebView2, and any other Chromium-based renderer.
-
-It never hurts to check, so we created the [scaffolding to compare some simple apps built using Electron, WPF+WebView2, and .NET+WebView2](https://github.com/crossplatform-dev/xplat-challenges/blob/main/results.md).
-Our goal was to find any egregious differences, rather than deep-dive on micro-benchmarks.
-The source code and detailed results are available in the [xplat-challenges](https://github.com/crossplatform-dev/xplat-challenges) repository,
-so you’re free to play around with the frameworks yourself.
+We created [scaffolding for apps built using Electron, WPF+WebView2, and .NET+WebView2](https://github.com/crossplatform-dev/xplat-challenges) for those interested to investigate potential performance differences.
 
 There are a few differences that come into play _outside_ of rendering web content,
-but folks from Electron, WebView2, Edge, and others have expressed interest in working on a detailed comparison including PWAs and other solutions.
-
-There is one difference we wanted to highlight immediately, as it often surprises people:
+and folks from Electron, WebView2, Edge, and others have expressed interest in working on a detailed comparison including PWAs.
 
 ### Inter-Process Communication (IPC)
 
+_There is one difference we want to highlight immediately, as we believe it is often a performance consideration in Electron apps._
+
 In Chromium, the browser process acts as an IPC broker between sandboxed renderers and the rest of the system.
 While Electron allows unsandboxed render processes, many apps choose to enable the sandbox for added security.
-WebView2 always has the sandbox enabled, so for most Electron and WebView2 apps IPC can heavily impact overall performance.
+WebView2 always has the sandbox enabled, so for most Electron and WebView2 apps IPC can impact overall performance.
 
-Even though Electron and WebView2 have a similar process models, their underlying IPC implementation is different.
+Even though Electron and WebView2 have a similar process models, the underlying IPC differs.
 Communicating between JavaScript and C++ or C# requires [marshalling](https://en.wikipedia.org/wiki/Marshalling_(computer_science)),
-most commonly to a JSON string. JSON serialization/parsing is an expensive operation and IPC-bottlenecks can negatively impact performance.
+most commonly to a JSON string. JSON serialization/parsing is an expensive operation, and IPC-bottlenecks can negatively impact performance.
 Starting with Edge 93, WV2 will use [CBOR](https://en.wikipedia.org/wiki/CBOR) for network events.
 
-When sending JavaScript objects between Electron's main and renderer process,
-Electron will use [the structured clone algorithm](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Structured_clone_algorithm) which is [significantly faster](https://github.com/crossplatform-dev/xplat-challenges/blob/main/results.md#ipc) even when using context isolation for increased security.
-Electron also supports direct IPC between any two processes via the [MessagePorts](https://www.electronjs.org/docs/latest/performance/message-ports/) API,
-which also utilizes structured clone.
+Electron supports direct IPC between any two processes via the [MessagePorts](https://www.electronjs.org/docs/latest/performance/message-ports/) API,
+which utilize [the structured clone algorithm](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Structured_clone_algorithm).
 Applications which leverage this can avoid paying the JSON-serialization tax when sending objects between processes.
 
 ## Summary
