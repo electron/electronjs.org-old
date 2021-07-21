@@ -60,7 +60,7 @@ describe('electronjs.org', () => {
   })
 
   describe('documentation page', () => {
-    it('open docs page', () => {
+    xit('open docs page', () => {
       cy.visit(localhost)
       cy.get('a[href="/docs"]:first').click()
       cy.wait(500)
