@@ -16,6 +16,7 @@ Electron and WebView2 both build from the Chromium source for rendering web cont
 Strictly speaking, WebView2 builds from the Edge source, but Edge is built using a fork of the Chromium source.
 Electron does not share any DLLs with Chrome. 
 WebView2 binaries hard link against Edge (Stable channel as of Edge 90), so they share disk and some working set.
+See [Evergreen distribution mode](https://docs.microsoft.com/en-us/microsoft-edge/webview2/concepts/distribution#evergreen-distribution-mode) for more info.
 
 Electron apps always bundle and distribute the exact version of Electron with which they were developed.
 WebView2 has two options in distribution.
