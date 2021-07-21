@@ -5,7 +5,7 @@ author:
 date: '2021-07-08'
 ---
 
-Over the past week, we’ve received several questions about the differences between the new [WebView2](https://docs.microsoft.com/en-us/microsoft-edge/webview2/) and Electron.
+Over the past weeks, we’ve received several questions about the differences between the new [WebView2](https://docs.microsoft.com/en-us/microsoft-edge/webview2/) and Electron.
 We want to provide some early information on the similarities and differences of the two solutions.
 
 ---
@@ -21,7 +21,7 @@ Electron apps always bundle and distribute the exact version of Electron with wh
 WebView2 has two options in distribution.
 You can bundle the exact WebView2 library your application was developed with, or you can use a shared-runtime version that may already be present on the system.
 WebView2 provides tools for each approach, including a bootstrapping installer in case the shared runtime is missing.
-WebView2 is shipped _inbox_ starting with windows 11.
+WebView2 is shipped _inbox_ starting with Windows 11.
 
 Applications that bundle their frameworks are responsible for updating those frameworks, including minor security releases.
 For apps using the shared WebView2 runtime, WebView2 has its own updater, similar to Chrome or Edge, that runs independent of your application.
@@ -31,7 +31,7 @@ Neither Electron nor WebView2 is managed by Windows Update.
 Both Electron and WebView2 inherit Chromium’s multi-process architecture - namely, a single main process that communicates with one-or-more renderer processes.
 These processes are entirely separate from other applications running on the system.
 Every Electron application is a separate process tree, containing a root browser-process, some utility processes, and zero or more render processes.
-WebView2 apps use the same [user data folder](https://docs.microsoft.com/en-us/microsoft-edge/webview2/concepts/user-data-folder) (like a suite of apps would do), share non-renderer processes.
+WebView2 apps that use the same [user data folder](https://docs.microsoft.com/en-us/microsoft-edge/webview2/concepts/user-data-folder) (like a suite of apps would do), share non-renderer processes.
 WebView2 apps using different data folders do not share processes.
 
 * ElectronJS Process Model:
@@ -41,7 +41,7 @@ WebView2 apps using different data folders do not share processes.
 
     ![WebView2 Process Model Diagram](/images/WebView2-Architecture.png)
 
-Read more about [WebView2’s process model](https://docs.microsoft.com/en-us/microsoft-edge/webview2/concepts/process-model#:~:text=WebView2%20uses%20the%20same%20process%20model%20as%20the,other%20utility%20processes%20as%20described%20in%20that%20article.) and [Electron’s process model](https://www.electronjs.org/docs/tutorial/process-model#:~:text=Process%20Model%20Electron%20inherits%20its%20multi-process%20architecture%20from,applied%20in%20the%20minimal%20quick%20start%20app%20.) here.
+Read more about [WebView2’s process model](https://docs.microsoft.com/en-us/microsoft-edge/webview2/concepts/process-model) and [Electron’s process model](https://www.electronjs.org/docs/tutorial/process-model) here.
 
 Electron provides APIs for common desktop application needs such as menus, file system access, notifications, and more.
 WebView2 is a component meant to be integrated into an application framework such as WinForms, WPF, WinUI, or Win32.
@@ -84,7 +84,7 @@ Quick Summary:
 ## Performance Discussion
 
 When it comes to rendering your web content, we expect little performance difference between Electron, WebView2, and any other Chromium-based renderer.
-We created [scaffolding for apps built using Electron, WPF+WebView2, and .NET+WebView2](https://github.com/crossplatform-dev/xplat-challenges) for those interested to investigate potential performance differences.
+We created [scaffolding for apps built using Electron, C++ + WebView2, and C# + WebView2](https://github.com/crossplatform-dev/xplat-challenges) for those interested to investigate potential performance differences.
 
 There are a few differences that come into play _outside_ of rendering web content,
 and folks from Electron, WebView2, Edge, and others have expressed interest in working on a detailed comparison including PWAs.
