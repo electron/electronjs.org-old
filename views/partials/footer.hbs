@@ -12,7 +12,11 @@
       <nav class="footer-nav">
         <ul class="footer-nav-list m-0">
           <li class="footer-nav-item"><a href="/">Electron</a></li>
+          {{#eq currentLocale "en-US"}}
+          <li class="footer-nav-item"><a href="/docs/latest">{{localized.nav.docs}}</a></li>
+          {{else}}
           <li class="footer-nav-item"><a href="/docs">{{localized.nav.docs}}</a></li>
+          {{/eq}}
           <li class="footer-nav-item"><a href="/releases/stable">{{localized.nav.releases}}</a></li>
           <li class="footer-nav-item"><a href="/blog">{{localized.nav.blog}}</a></li>
           <li class="footer-nav-item"><a href="/apps">{{localized.nav.apps}}</a></li>
