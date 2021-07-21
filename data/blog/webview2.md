@@ -2,7 +2,7 @@
 title: WebView2 and Electron
 author:
 - electron
-date: '2021-07-08'
+date: '2021-07-22'
 ---
 
 Over the past weeks, we’ve received several questions about the differences between the new [WebView2](https://docs.microsoft.com/en-us/microsoft-edge/webview2/) and Electron.
