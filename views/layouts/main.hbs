@@ -25,9 +25,14 @@
     <script src="{{static-asset "js" "index.js"}}"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
     <script type="text/javascript"> docsearch({
-      apiKey: 'c9e8f898b3b32afe40f0a96637e7ea85',
-      indexName: 'electronjs',
+      apiKey: 'f9fb1d51a99fc479d5979cfa2aae48b9',
+      indexName: 'beta-electronjs',
       inputSelector: '#search-input',
+      transformData: (hits)=>{
+        for(let i = 0; i<hits.length;i++){
+          hits[i].url = hits[i].url.replace('https://beta.electronjs.org', '');
+        }
+      },
       debug: false // Set debug to true if you want to inspect the dropdown
     });
 </script>
