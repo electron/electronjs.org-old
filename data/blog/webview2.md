@@ -111,3 +111,7 @@ Applications which leverage this can avoid paying the JSON-serialization tax whe
 
 Electron and WebView2 have a number of differences, but don't expect much difference with respect to how they perform rendering web content.
 Ultimately, an app’s architecture and JavaScript libraries/frameworks have a larger impact on memory and performance than anything else because _Chromium is Chromium_ regardless of where it is running.
+
+Special thanks to the WebView2 team for reviewing this post,
+and ensuring we have an up-to-date view of the WebView2 architecture.
+They welcome any [feedback on the project](https://github.com/MicrosoftEdge/WebView2Feedback).
