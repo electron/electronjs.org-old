@@ -6,7 +6,12 @@ date: '2021-07-22'
 ---
 
 Over the past weeks, we’ve received several questions about the differences between the new [WebView2](https://docs.microsoft.com/en-us/microsoft-edge/webview2/) and Electron.
-We want to provide some early information on the similarities and differences of the two solutions.
+
+Both teams have the expressed goal of making web-tech the best it can be on the Desktop,
+and a shared comprehensive comparison is being discussed.
+
+Electron and WebView2 are fast-moving and constantly evolving projects.
+We have assembled a brief snapshot of similarities and differences between Electron and WebView2 as they exist today.
 
 ---
 
