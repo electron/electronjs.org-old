@@ -2,7 +2,7 @@ const memoize = require('fast-memoize')
 
 const { setupFeed } = require('./mainFeed')
 
-const VALID_TYPES = new Set(['stable', 'beta', 'nightly'])
+const VALID_TYPES = new Set(['stable', 'beta', 'alpha', 'nightly'])
 
 const getReleasesForTypes = memoize((all, queryTypes) => {
   const releases = []
@@ -17,6 +17,8 @@ const getReleasesForTypes = memoize((all, queryTypes) => {
             return r.isStable()
           case 'beta':
             return r.isBeta()
+          case 'alpha':
+            return r.isAlpha()
           case 'nightly':
             return r.isNightly()
         }
