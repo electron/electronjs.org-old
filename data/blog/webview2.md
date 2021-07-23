@@ -108,7 +108,7 @@ Communicating between JavaScript and C++ or C# requires [marshalling](https://en
 most commonly to a JSON string. JSON serialization/parsing is an expensive operation, and IPC-bottlenecks can negatively impact performance.
 Starting with Edge 93, WV2 will use [CBOR](https://en.wikipedia.org/wiki/CBOR) for network events.
 
-Electron supports direct IPC between any two processes via the [MessagePorts](https://www.electronjs.org/docs/tutorial/message-ports) API,
+Electron supports direct IPC between any two processes via the [MessagePorts](https://www.electronjs.org/docs/latest/tutorial/message-ports) API,
 which utilize [the structured clone algorithm](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Structured_clone_algorithm).
 Applications which leverage this can avoid paying the JSON-serialization tax when sending objects between processes.
 
