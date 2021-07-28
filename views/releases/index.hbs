@@ -21,6 +21,12 @@
           <p>{{localized.releases.beta_desc}}</p>
         </div>
       </a>
+      <a class="releases-link-alpha {{#eq releasesPage.type 'alpha'}}active{{/eq}}" href="/releases/alpha">
+        <div class="menu-item" style="{{#eq releasesPage.type 'alpha'}}border-left: 1px solid #4078C0; background: #fcfcfc{{/eq}}">
+          <span class="octicon octicon-beaker"></span>{{localized.releases.alpha_releases}}
+          <p>{{localized.releases.alpha_desc}}</p>
+        </div>
+      </a>
       <a class="releases-link-nightly {{#eq releasesPage.type 'nightly'}}active{{/eq}}" href="/releases/nightly">
         <div class="menu-item" style="{{#eq releasesPage.type 'nightly'}}border-left: 1px solid #4078C0; background: #fcfcfc{{/eq}}">
           <span class="octicon octicon-calendar"></span>{{localized.releases.nightly_releases}}
@@ -74,6 +80,12 @@
           <div class="menu-item {{#eq releasesPage.type 'beta'}}active{{/eq}}">
             <span class="octicon octicon-zap"></span>{{localized.releases.beta_releases}}
             <p>{{localized.releases.beta_desc}}</p>
+          </div>
+        </a>
+        <a class="releases-link-alpha" href="/releases/alpha">
+          <div class="menu-item {{#eq releasesPage.type 'alpha'}}active{{/eq}}">
+            <span class="octicon octicon-beaker"></span>{{localized.releases.alpha_releases}}
+            <p>{{localized.releases.alpha_desc}}</p>
           </div>
         </a>
         <a class="releases-link-nightly" href="/releases/nightly">

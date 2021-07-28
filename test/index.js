@@ -398,6 +398,23 @@ describe('electronjs.org', () => {
       })
     })
 
+    test('/releases/alpha', async () => {
+      const $ = await get('/releases/alpha')
+      $('h1').text().should.include('Releases')
+      $('.release-entry').length.should.be.at.least(2)
+      $('a.releases-link-alpha').hasClass('active').should.eq(true)
+      const pages = $('.paginate-container .page-link').last()
+      const lastPage = parseInt(pages.text().trim(), 10)
+      lastPage.should.be.at.least(1)
+
+      const titles = $('.release-entry')
+        .map((i, el) => $(el).text().trim())
+        .get()
+      titles.forEach((title) => {
+        title.should.match(/Electron \d+\.\d+\.\d+-alpha\.\d+/)
+      })
+    })
+
     test('/releases/nightly', async () => {
       const $ = await get('/releases/nightly')
       $('h1').text().should.include('Releases')
