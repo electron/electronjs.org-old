@@ -14,7 +14,7 @@ jobs:
       - uses: actions/setup-node@v2.2.0
         with:
           node-version: '12.x'
-      - run: npm ci
+      - run: yarn install --frozen-lockfile
       - name: Switch to update branch
         run: |
           if git branch --remotes | grep -q origin/update-data; then
@@ -29,7 +29,7 @@ jobs:
         run: |
           echo "machine github.com login $GITHUB_ACTOR password $GITHUB_TOKEN" > ~/.netrc
           chmod 600 ~/.netrc
-          git add package.json package-lock.json
+          git add package.json yarn.lock
           if test -n "$( git status -s)"; then
             git config user.name "$GITHUB_ACTOR"
             git config user.email "electron-bot@users.noreply.github.com"

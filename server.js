@@ -262,7 +262,7 @@ if (!module.parent) {
   app.listen(port, () => {
     console.log(`app running on http://localhost:${port}`)
     if (isProduction) {
-      console.log(`If you're developing, you probably want \`npm run dev\`\n\n`)
+      console.log(`If you're developing, you probably want \`yarn dev\`\n\n`)
     }
   })
 }

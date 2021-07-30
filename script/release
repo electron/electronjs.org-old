@@ -8,7 +8,7 @@ set -o nounset    # fail on unset variables
 # clone the repo
 git clone https://github.com/electron/electronjs.org site
 cd site
-npm install
+yarn install
 
 # configure git
 git config user.email "electron@github.com"
