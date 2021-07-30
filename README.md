@@ -31,8 +31,8 @@ If you just want to get the site up and running locally, here's the TLDR:
 ```
 git clone https://github.com/electron/electronjs.org
 cd electronjs.org
-npm install
-npm run dev
+yarn
+yarn dev
 ```
 
 For more info about how this site works and how to contribute, see 

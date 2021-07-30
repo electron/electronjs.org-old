@@ -131,5 +131,8 @@
   "lint-staged": {
     "*.js": "npm run lint:js",
     "*.scss": "npm run lint:style"
+  },
+  "resolutions": {
+    "node-sass-middleware/node-sass": "^6.0.1"
   }
 }
