@@ -73,7 +73,7 @@ Follow these steps to copy this repository to your computer and build the site:
 git clone https://github.com/electron/electronjs.org
 cd electronjs.org
 yarn install
-npm run dev
+yarn dev
 ```
 
 You should now have an Express server running at
@@ -83,7 +83,7 @@ You should now have an Express server running at
 
 If there is an error building the `node-sass` dependency, try running `npm rebuild node-sass`.
 
-**Note**: If errors are still shown after you have installed all the dependencies, try to delete the `node_modules` directory in your project and run `yarn install` again.
+**Note**: If errors are still shown after you have installed all the dependencies, try to delete the `node_modules` directory in your project and run `yarn` again.
 
 Read on for more info about the structure of the site.
 

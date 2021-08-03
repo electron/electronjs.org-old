@@ -8,7 +8,7 @@ const packages = [
 ]
 
 const packagesString = packages.map((str) => `${str}@latest`).join(' ')
-const command = `yarn install ${packagesString} --exact`
+const command = `yarn add ${packagesString} --exact`
 
 console.time(`Running ${command}`)
 child_process.execSync(command, {
