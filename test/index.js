@@ -293,7 +293,7 @@ describe('electronjs.org', () => {
           .set('Cookie', ['language=zh-CN'])
         const $ = cheerio.load(res.text)
         should.exist(
-          $('[href="https://crowdin.com/translate/electron/255648/en-zhcn"]')
+          $('[href="https://crowdin.com/translate/electron/256277/en-zhcn"]')
         )
       })
 
@@ -303,7 +303,7 @@ describe('electronjs.org', () => {
           .set('Cookie', ['language=fr-FR'])
         const $ = cheerio.load(res.text)
         should.exist(
-          $('[href="https://crowdin.com/translate/electron/255674/en-fr"]')
+          $('[href="https://crowdin.com/translate/electron/256303/en-fr"]')
         )
       })
 
@@ -315,7 +315,7 @@ describe('electronjs.org', () => {
           .set('Cookie', ['language=en-US'])
         const $ = cheerio.load(res.text)
         should.exist(
-          $('[href="https://crowdin.com/translate/electron/255654/en-en"]')
+          $('[href="https://crowdin.com/translate/electron/256283/en-en"]')
         )
       })
 
