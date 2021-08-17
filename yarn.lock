@@ -3394,10 +3394,10 @@ electron-apps@1.8899.0:
     mime-types "^2.1.30"
     rev-hash "^3.0.0"
 
-electron-i18n@1.3092.0:
-  version "1.3092.0"
-  resolved "https://registry.yarnpkg.com/electron-i18n/-/electron-i18n-1.3092.0.tgz#347128e7786b4f7dac357e262d1430e34040dfe5"
-  integrity sha512-msZB4/f3ze7MurUsskreEqpmT+qLXEaffI9zIqA9++FvaGmhNpglMGCCHHuqycTEtVY7gTOpqtN/Gcv2qpj2hg==
+electron-i18n@1.3094.0:
+  version "1.3094.0"
+  resolved "https://registry.yarnpkg.com/electron-i18n/-/electron-i18n-1.3094.0.tgz#11791903716f1443375f45cdd33a03e5db42af5a"
+  integrity sha512-SSYV9GZ+8f5/gM9EWBYviHFZenRJaZWL/T5VcMHxSpG9xLl75a11K/u41oWtLb/31hLwXuLLYY9KTsc0GUEYNw==
 
 electron-markdown@^0.8.2:
   version "0.8.2"
@@ -3412,10 +3412,10 @@ electron-markdown@^0.8.2:
     rehype-slug "^4.0.0"
     remark-gemoji-to-emoji "^1.1.0"
 
-electron-releases@3.760.0:
-  version "3.760.0"
-  resolved "https://registry.yarnpkg.com/electron-releases/-/electron-releases-3.760.0.tgz#532a7f0f477fecd99f015f138ba526cb35ef1312"
-  integrity sha512-m6jWSxidrttSb/OrHd7AqD0XCzRYMBJD2qbZ/+/yIOdSI/0whW5c1crYg5rmvJNN5eVjM6OecTHQwJtB0ZFKfQ==
+electron-releases@3.761.0:
+  version "3.761.0"
+  resolved "https://registry.yarnpkg.com/electron-releases/-/electron-releases-3.761.0.tgz#da24bce6146d09f143a6aaacb94ae0ba7deea8b2"
+  integrity sha512-yZYboBbU7f7uSFH8k5mDSHF/LKyHx+bApGwZ8DbBzZuMUH4zaAR5lbp6yZeaMf+NvRh4qZGZp2T9J2p7i5buCA==
 
 electron-to-chromium@^1.3.793:
   version "1.3.799"
