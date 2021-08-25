@@ -32,7 +32,91 @@ See the [14.0.0 release notes](https://github.com/electron/electron/releases/tag
 
 ## Breaking Changes
 
-* TODO: Add breaking changes
+### Removed: `app.allowRendererProcessReuse`
+
+The `app.allowRendererProcessReuse` property will be removed as part of our plan to
+more closely align with Chromium's process model for security, performance and maintainability.
+
+For more detailed information see [#18397](https://github.com/electron/electron/issues/18397).
+
+### Removed: Browser Window Affinity
+
+The `affinity` option when constructing a new `BrowserWindow` will be removed
+as part of our plan to more closely align with Chromium's process model for security,
+performance and maintainability.
+
+For more detailed information see [#18397](https://github.com/electron/electron/issues/18397).
+
+### API Changed: `window.open()`
+
+The optional parameter `frameName` will no longer set the title of the window. This now follows the specification described by the [native documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/open#parameters) under the corresponding parameter `windowName`.
+
+If you were using this parameter to set the title of a window, you can instead use [win.setTitle(title)](https://www.electronjs.org/docs/api/browser-window#winsettitletitle).
+
+### Removed: `worldSafeExecuteJavaScript`
+
+In Electron 14, `worldSafeExecuteJavaScript` will be removed.  There is no alternative, please
+ensure your code works with this property enabled.  It has been enabled by default since Electron
+12.
+
+You will be affected by this change if you use either `webFrame.executeJavaScript` or `webFrame.executeJavaScriptInIsolatedWorld`. You will need to ensure that values returned by either of those methods are supported by the [Context Bridge API](https://www.electronjs.org/docs/api/context-bridge.md#parameter--error--return-type-support) as these methods use the same value passing semantics.
+
+### Default Changed: `nativeWindowOpen` defaults to `true`
+
+Prior to Electron 14, `window.open` was by default shimmed to use
+`BrowserWindowProxy`. This meant that `window.open('about:blank')` did not work
+to open synchronously scriptable child windows, among other incompatibilities.
+`nativeWindowOpen` is no longer experimental, and is now the default.
+
+See the documentation for [window.open in Electron](https://www.electronjs.org/docs/api/window-open.md)
+for more details.
+
+### Removed: BrowserWindowConstructorOptions inheriting from parent windows
+
+Prior to Electron 14, windows opened with `window.open` would inherit
+BrowserWindow constructor options such as `transparent` and `resizable` from
+their parent window. Beginning with Electron 14, this behavior is removed, and
+windows will not inherit any BrowserWindow constructor options from their
+parents.
+
+Instead, explicitly set options for the new window with `setWindowOpenHandler`:
+
+```js
+webContents.setWindowOpenHandler((details) => {
+  return {
+    action: 'allow',
+    overrideBrowserWindowOptions: {
+      // ...
+    }
+  }
+})
+```
+
+### Removed: `additionalFeatures`
+
+The deprecated `additionalFeatures` property in the `new-window` and
+`did-create-window` events of WebContents has been removed. Since `new-window`
+uses positional arguments, the argument is still present, but will always be
+the empty array `[]`. (Though note, the `new-window` event itself is
+deprecated, and is replaced by `setWindowOpenHandler`.) Bare keys in window
+features will now present as keys with the value `true` in the options object.
+
+```js
+// Removed in Electron 14
+// Triggered by window.open('...', '', 'my-key')
+webContents.on('did-create-window', (window, details) => {
+  if (details.additionalFeatures.includes('my-key')) {
+    // ...
+  }
+})
+
+// Replace with
+webContents.on('did-create-window', (window, details) => {
+  if (details.options['my-key']) {
+    // ...
+  }
+})
+```
 
 More information about these and future changes can be found on the [Planned Breaking Changes](https://github.com/electron/electron/blob/master/docs/breaking-changes.md) page.
 
