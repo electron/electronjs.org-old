@@ -122,13 +122,27 @@ webContents.on('did-create-window', (window, details) => {
 
 ## API Changes
 
-* TODO: add any API changes
+* Added `BrowserWindow.isFocusable()` method to determine whether a window is focusable. [#28642](https://github.com/electron/electron/pull/28642)
+* Added `WebFrameMain.visibilityState` instance property. [#28706](https://github.com/electron/electron/pull/28706)
+* Added `disposition`, `referrer` and `postBody` to the details object passed to the window open handler registered with `setWindowOpenHandler`. [#28518](https://github.com/electron/electron/pull/28518)
+* Added `process.contextId` used by `@electron/remote`. [#28007](https://github.com/electron/electron/pull/28007)
+* Added experimental cookie encryption support behind an [Electron Fuse](https://www.electronjs.org/docs/tutorial/fuses). [#29492](https://github.com/electron/electron/pull/29492)
+* Added missing `resourceType` conversions for `webRequest` listener details: `font`, `ping`, `cspReport`, `media`, `webSocket`. [#30050](https://github.com/electron/electron/pull/30050)
+* Added new `session.storagePath` API to get the path on disk for session-specific data. [#28665](https://github.com/electron/electron/pull/28665)
+* Added support for Windows Control Overlay on macOS. [#29986](https://github.com/electron/electron/pull/29986)
+* Added support for directing Chromium logging to a file with `--log-file=.../path/to/file.log`. Also, it's now possible to enable logging from JavaScript by appending command-line switches during the first JS tick. [#29963](https://github.com/electron/electron/pull/29963)
+* Added support for the des-ede3 cipher in node crypto. [#27897](https://github.com/electron/electron/pull/27897)
+* Added a `ContextBridgeMutability` feature that allows context bridge objects to be mutated. [#27348](https://github.com/electron/electron/pull/27348)
+
 
 ### Removed/Deprecated Changes
 
 The following APIs have been removed or are now deprecated:
 
-* TODO
+* Child windows no longer inherit BrowserWindow construction options from their parents. [#28550](https://github.com/electron/electron/pull/28550)
+* Removed deprecated `additionalFeatures` property from `new-window` and `did-create-window` WebContents events. [#28548](https://github.com/electron/electron/pull/28548)
+* Removed the deprecated `app.allowRendererProcessReuse` and BrowserWindow `affinity` options. [#26874](https://github.com/electron/electron/pull/26874)
+* The `submitURL` option for `crashReporter.start` is no longer a required argument when `uploadToServer` is false. [#28105](https://github.com/electron/electron/pull/28105)
 
 ## End of Support for 11.x.y
 
