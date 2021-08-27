@@ -3380,24 +3380,24 @@ ee-first@1.1.1:
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
 
-electron-api-historian@1.53.0:
-  version "1.53.0"
-  resolved "https://registry.yarnpkg.com/electron-api-historian/-/electron-api-historian-1.53.0.tgz#51ebad14fc86ec87b0bd42ad440d2807d99dd53a"
-  integrity sha512-6SLNuoyfyDpOXoXJEi8wKF02ZNwMg5HvjDW29ehTQw00VxKTinRQUkew5vFVXwivkC4GrGwRRI2ZF589MiONew==
+electron-api-historian@1.54.0:
+  version "1.54.0"
+  resolved "https://registry.yarnpkg.com/electron-api-historian/-/electron-api-historian-1.54.0.tgz#b865a3f9d6841557b1d467420bcadb5b22d5a105"
+  integrity sha512-tDJPy74l47e9+12CQ2KLeBr7cdbStoo0Jb9QPx+hOqTF0KyIs1XIUZ2lufsq7jISSdTSOgSGKnWLapDbBENGAQ==
 
-electron-apps@1.8899.0:
-  version "1.8899.0"
-  resolved "https://registry.yarnpkg.com/electron-apps/-/electron-apps-1.8899.0.tgz#390f807c077fd86debe3ce8b73c7d4831f2127ce"
-  integrity sha512-L1hY7IRUQRd0KvcpMcZB68ry2WSTAeY00yrfgdxVEV85J5QmSYZ/VmiuzLXX2uA5P3abA/cALQ1LeT+mrSDtQw==
+electron-apps@1.8903.0:
+  version "1.8903.0"
+  resolved "https://registry.yarnpkg.com/electron-apps/-/electron-apps-1.8903.0.tgz#96c44a1a04b83dd51a0c230d70bad5ee41f14b34"
+  integrity sha512-i32Gn01ChXrgZSwRvPDjvmENgfLHr1/79rZxjjkPPsJ4iDjs/JdJUHgH+TmjLbAClmSDWHUI9xKrXCiMk/uB3w==
   dependencies:
     json-stable-stringify "^1.0.1"
     mime-types "^2.1.30"
     rev-hash "^3.0.0"
 
-electron-i18n@1.3097.0:
-  version "1.3097.0"
-  resolved "https://registry.yarnpkg.com/electron-i18n/-/electron-i18n-1.3097.0.tgz#96d7161539d6050f4eed8c09f825124755a1fcea"
-  integrity sha512-7vTgJdisWJhRIsEGciJujRTWje6zm7r8wjbCQBEpIINkAcckAIYqyhkB1zZHtnbaH7/D7fEV++kWpy0DX6VifQ==
+electron-i18n@1.3098.0:
+  version "1.3098.0"
+  resolved "https://registry.yarnpkg.com/electron-i18n/-/electron-i18n-1.3098.0.tgz#2641f849cb463e8bdb3ee4d09b7a788d2d52aef1"
+  integrity sha512-Dtuj6ZTshoBt2RyPDtuPay1Ake4UOVyHQ/fG/V/bNIL7HmG8rrPaI8WomF+xONZOOk0d79Rx6TMzrWhWdoJ3IA==
 
 electron-markdown@^0.8.2:
   version "0.8.2"
@@ -3412,10 +3412,10 @@ electron-markdown@^0.8.2:
     rehype-slug "^4.0.0"
     remark-gemoji-to-emoji "^1.1.0"
 
-electron-releases@3.768.0:
-  version "3.768.0"
-  resolved "https://registry.yarnpkg.com/electron-releases/-/electron-releases-3.768.0.tgz#016280e80afb02539be212811b03735fd1025b49"
-  integrity sha512-EwIXJDrE2vBbbp6EKgZWBfzZ9lnQ7pTqu+TxSO2kri9QZy60r30ktup+9NSiEJXyfGfg0yK5G+ndL1BuThAM/w==
+electron-releases@3.774.0:
+  version "3.774.0"
+  resolved "https://registry.yarnpkg.com/electron-releases/-/electron-releases-3.774.0.tgz#810974fa38d3f27735d128c95b0c9a7def75f9ec"
+  integrity sha512-+gZEsR1lf9cAn4OcbeLfKDDN4Jq4RhL8RaoZLP7kmNQmdQsC9XK6kJ2zUu+Ap8AGk/R3uK/EU1rUzEHyMlNxGA==
 
 electron-to-chromium@^1.3.793:
   version "1.3.799"
@@ -5989,12 +5989,24 @@ mime-db@1.48.0, "mime-db@>= 1.38.0 < 2":
   resolved "https://registry.yarnpkg.com/mime-db/-/mime-db-1.48.0.tgz#e35b31045dd7eada3aaad537ed88a33afbef2d1d"
   integrity sha512-FM3QwxV+TnZYQ2aRqhlKBMHxk10lTbMt3bBkMAp54ddrNeVSfcQYOOKuGuy3Ddrm38I04If834fOUSq1yzslJQ==
 
-mime-types@^2.1.12, mime-types@^2.1.27, mime-types@^2.1.30, mime-types@^2.1.31, mime-types@~2.1.17, mime-types@~2.1.18, mime-types@~2.1.19, mime-types@~2.1.24:
+mime-db@1.49.0:
+  version "1.49.0"
+  resolved "https://registry.yarnpkg.com/mime-db/-/mime-db-1.49.0.tgz#f3dfde60c99e9cf3bc9701d687778f537001cbed"
+  integrity sha512-CIc8j9URtOVApSFCQIF+VBkX1RwXp/oMMOrqdyXSBXq5RWNEsRfyj1kiRnQgmNXmHxPoFIxOroKA3zcU9P+nAA==
+
+mime-types@^2.1.12, mime-types@^2.1.27, mime-types@^2.1.31, mime-types@~2.1.17, mime-types@~2.1.18, mime-types@~2.1.19, mime-types@~2.1.24:
   version "2.1.31"
   resolved "https://registry.yarnpkg.com/mime-types/-/mime-types-2.1.31.tgz#a00d76b74317c61f9c2db2218b8e9f8e9c5c9e6b"
   integrity sha512-XGZnNzm3QvgKxa8dpzyhFTHmpP3l5YNusmne07VUOXxou9CqUqYa/HBy124RqtVh/O2pECas/MOcsDgpilPOPg==
   dependencies:
     mime-db "1.48.0"
+
+mime-types@^2.1.30:
+  version "2.1.32"
+  resolved "https://registry.yarnpkg.com/mime-types/-/mime-types-2.1.32.tgz#1d00e89e7de7fe02008db61001d9e02852670fd5"
+  integrity sha512-hJGaVS4G4c9TSMYh2n6SQAGrC4RnfU+daP8G7cSCmaqNjiOoUY0VHCMS42pxnQmVF1GWwFhbHWn3RIxCqTmZ9A==
+  dependencies:
+    mime-db "1.49.0"
 
 mime@1.4.1:
   version "1.4.1"
