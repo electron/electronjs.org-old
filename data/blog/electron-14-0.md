@@ -144,5 +144,6 @@ For information on planned breaking changes in upcoming versions of Electron, [s
 
 ### New Electron Cadence
 
-Beginning in September 2021 with Electron 15, Electron will release a new major stable version every 8 weeks. You can read the [full details here](https://www.electronjs.org/blog/8-week-cadence).
-Electron 15 will begin beta on September 1, 2021 and stable release will be September 21, 2021.
+Beginning in September 2021 with Electron 15, Electron will release a new major stable version every 8 weeks. You can read the [full details here](https://www.electronjs.org/blog/8-week-cadence). Electron 15 will begin beta on September 1, 2021 and stable release will be September 21, 2021. You can find [Electron's public timeline here](https://electronjs.org/docs/tutorial/electron-timelines).
+
+Additionally, Electron will be changing supported versions from latest three versions to latest four versions until May 2022. See [see our versioning document](https://electronjs.org/docs/tutorial/electron-versioning) for more detailed information about versioning in Electron.
