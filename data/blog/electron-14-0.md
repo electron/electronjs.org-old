@@ -120,7 +120,6 @@ webContents.on('did-create-window', (window, details) => {
 })
 ```
 
-More information about these and future changes can be found on the [Planned Breaking Changes](https://github.com/electron/electron/blob/master/docs/breaking-changes.md) page.
 
 ## API Changes
 
