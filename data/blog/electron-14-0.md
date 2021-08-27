@@ -32,6 +32,8 @@ See the [14.0.0 release notes](https://github.com/electron/electron/releases/tag
 
 ## Breaking Changes
 
+Below are breaking changes introduced in Electron 14. More information about these and future changes can be found on the [Planned Breaking Changes](https://github.com/electron/electron/blob/master/docs/breaking-changes.md) page.
+
 ### Removed: `app.allowRendererProcessReuse`
 
 The `app.allowRendererProcessReuse` property will be removed as part of our plan to
