@@ -41,7 +41,11 @@ for more detailed information about versioning in Electron.
 
 ### Highlight Features
 
-* TODO: Add highlight features
+* Default Changed: `nativeWindowOpen` now defaults to `true`. [(see docs)](https://www.electronjs.org/docs/api/window-open.md)
+* Child windows no longer inherit BrowserWindow construction options from their parents. [#28550](https://github.com/electron/electron/pull/28550)
+* Added new `session.storagePath` API to get the path on disk for session-specific data. [#28665](https://github.com/electron/electron/pull/28665)
+* Added `process.contextId` used by `@electron/remote`. [#28007](https://github.com/electron/electron/pull/28007)
+* Added experimental cookie encryption support behind an [Electron Fuse](https://www.electronjs.org/docs/tutorial/fuses). [#29492](https://github.com/electron/electron/pull/29492)
 
 See the [14.0.0 release notes](https://github.com/electron/electron/releases/tag/v14.0.0) for a full list of new features and changes.
 
