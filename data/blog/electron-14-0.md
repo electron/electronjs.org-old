@@ -1,7 +1,9 @@
 ---
 title: Electron 14.0.0
 author:
-- electron
+- sofianguy 
+- clavin 
+- ckerr 
 date: '2021-08-31'
 ---
 
@@ -31,7 +33,7 @@ for more detailed information about versioning in Electron.
 ### Stack Changes
 
 * Chromium `93`
-    * [New in Chrome 93]()
+    * [New in Chrome 93](https://blog.chromium.org/2021/07/chrome-93-multi-screen-window-placement.html)
     * [New in Chrome 92](https://www.chromestatus.com/features#milestone%3D92)
 * Node.js `14.17.0`
     * [Node 14.17.0 blog post](https://nodejs.org/en/blog/release/v14.17.0/)
@@ -165,6 +167,7 @@ webContents.on('did-create-window', (window, details) => {
 
 The following APIs have been removed or are now deprecated:
 
+* `remote` module has been removed. Deprecated in Electron 12. [#25734](https://github.com/electron/electron/pull/25734)
 * Child windows no longer inherit BrowserWindow construction options from their parents. [#28550](https://github.com/electron/electron/pull/28550)
 * Removed deprecated `additionalFeatures` property from `new-window` and `did-create-window` WebContents events. [#28548](https://github.com/electron/electron/pull/28548)
 * Removed the deprecated `app.allowRendererProcessReuse` and BrowserWindow `affinity` options. [#26874](https://github.com/electron/electron/pull/26874)
