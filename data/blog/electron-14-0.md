@@ -33,7 +33,7 @@ for more detailed information about versioning in Electron.
 ### Stack Changes
 
 * Chromium `93`
-    * [New in Chrome 93](https://blog.chromium.org/2021/07/chrome-93-multi-screen-window-placement.html)
+    * [New in Chrome 93](https://developer.chrome.com/blog/new-in-chrome-93/)
     * [New in Chrome 92](https://www.chromestatus.com/features#milestone%3D92)
 * Node.js `14.17.0`
     * [Node 14.17.0 blog post](https://nodejs.org/en/blog/release/v14.17.0/)
