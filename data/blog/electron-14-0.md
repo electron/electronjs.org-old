@@ -31,8 +31,8 @@ for more detailed information about versioning in Electron.
 ### Stack Changes
 
 * Chromium `93`
-    * [New in Chrome 91](https://developer.chrome.com/blog/new-in-chrome-91/)
-    * [New in Chrome 90](https://developer.chrome.com/blog/new-in-chrome-90/)
+    * [New in Chrome 93]()
+    * [New in Chrome 92](https://www.chromestatus.com/features#milestone%3D92)
 * Node.js `14.17.0`
     * [Node 14.17.0 blog post](https://nodejs.org/en/blog/release/v14.17.0/)
 * V8 `9.3`
