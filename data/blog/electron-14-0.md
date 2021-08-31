@@ -148,6 +148,17 @@ webContents.on('did-create-window', (window, details) => {
 })
 ```
 
+### Removed: `remote` module
+
+Deprecated in Electron 12, the `remote` module has now been removed from
+Electron itself and extracted into a separate package, [`@electron/remote`](https://www.npmjs.com/package/@electron/remote).
+The `@electron/remote` module bridges JavaScript objects from the main process
+to the renderer process. This lets you access main-process-only objects as if
+they were available in the renderer process. This is a direct replacement for
+the `remote` module. See the [module's readme](https://github.com/electron/remote/blob/main/README.md)
+for migration instructions and reference.
+
+
 ## API Changes
 
 * Added `BrowserWindow.isFocusable()` method to determine whether a window is focusable. [#28642](https://github.com/electron/electron/pull/28642)
@@ -167,7 +178,7 @@ webContents.on('did-create-window', (window, details) => {
 
 The following APIs have been removed or are now deprecated:
 
-* `remote` module has been removed. Deprecated in Electron 12. [#25734](https://github.com/electron/electron/pull/25734)
+* The `remote` module has been removed after being deprecated in Electron 12. [#25734](https://github.com/electron/electron/pull/25734)
 * Child windows no longer inherit BrowserWindow construction options from their parents. [#28550](https://github.com/electron/electron/pull/28550)
 * Removed deprecated `additionalFeatures` property from `new-window` and `did-create-window` WebContents events. [#28548](https://github.com/electron/electron/pull/28548)
 * Removed the deprecated `app.allowRendererProcessReuse` and BrowserWindow `affinity` options. [#26874](https://github.com/electron/electron/pull/26874)
