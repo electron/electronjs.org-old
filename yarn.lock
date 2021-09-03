@@ -3385,10 +3385,10 @@ electron-api-historian@1.56.0:
   resolved "https://registry.yarnpkg.com/electron-api-historian/-/electron-api-historian-1.56.0.tgz#d8d8a1771e4b7594ced25482d0d68ea10b5647ca"
   integrity sha512-lG3Q0/CL4ArFPJlGSi18uI75kg799zgE5aIsm67rSqJ7gLl7dkdVX8LuEWWBBbczrryRNHvCpj5rl9TyVn17Iw==
 
-electron-apps@1.8915.0:
-  version "1.8915.0"
-  resolved "https://registry.yarnpkg.com/electron-apps/-/electron-apps-1.8915.0.tgz#b7ceb79dffbf5f24219c381c17a6a4302ad22fe6"
-  integrity sha512-9ysRVL0uaRcUiyKwNrHJpk6FS5VLG+vpNaUqIlnS/zYANGbE5olZBAy9Mtuf11DmluoEDHnhQg8cuq4yzrMZ5Q==
+electron-apps@1.8917.0:
+  version "1.8917.0"
+  resolved "https://registry.yarnpkg.com/electron-apps/-/electron-apps-1.8917.0.tgz#fdb5665b2e7832ccdfc9c9a3f71600fc5e002606"
+  integrity sha512-1/i7xMEjzNEH6d02taHTOiZQSgyUNrakwRWqfsRzYd6kB9vZ2vAYnopJ8s6ZJvJhvFWcp41LwrpBv1Z1uvtbZg==
   dependencies:
     json-stable-stringify "^1.0.1"
     mime-types "^2.1.30"
@@ -3412,10 +3412,10 @@ electron-markdown@^0.8.2:
     rehype-slug "^4.0.0"
     remark-gemoji-to-emoji "^1.1.0"
 
-electron-releases@3.780.0:
-  version "3.780.0"
-  resolved "https://registry.yarnpkg.com/electron-releases/-/electron-releases-3.780.0.tgz#696b00e8074797ec79a63faed4ffc29d956f7193"
-  integrity sha512-nqFikRVwsuUR8Tuo6r8QgUw0sl6SovuxKbl0z/vQu+eRyQFdnz8B1/5yPlxfCcOYpctMW28uEbUkxd249zxizA==
+electron-releases@3.782.0:
+  version "3.782.0"
+  resolved "https://registry.yarnpkg.com/electron-releases/-/electron-releases-3.782.0.tgz#6ee24bd606812103779814a49449a3184249dc70"
+  integrity sha512-eXM2rUe3LPtnGsDVp6GMlqH7rN68C3aNZQ2WWYEeQ3RTFp+AnB+YNCfz59ml4RdSUZOdh/tgPoh2Vt3kYOejhA==
 
 electron-to-chromium@^1.3.793:
   version "1.3.799"
