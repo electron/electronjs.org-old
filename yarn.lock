@@ -3385,10 +3385,10 @@ electron-api-historian@1.55.0:
   resolved "https://registry.yarnpkg.com/electron-api-historian/-/electron-api-historian-1.55.0.tgz#160dc2ed2137241e200ef4c1c116b2d1edf3b6eb"
   integrity sha512-yuvudRFMMz5zlA0MAg0DauydMf++H6FWHKHXMVSV01xJ2UeONnhihWAejtsQmOk6HIF2HTWR031Km0Hp1u+/qg==
 
-electron-apps@1.8911.0:
-  version "1.8911.0"
-  resolved "https://registry.yarnpkg.com/electron-apps/-/electron-apps-1.8911.0.tgz#a117d9a0673d4a06c1694befd9ec827eb4f80b91"
-  integrity sha512-XgMK2bh02avny8+dpx9kO7BXfIep2v699pqyfKeRqDI0nkfm3u2pbu2WCLekvUpBeWAHd7ivWxjGtTjUnyhydw==
+electron-apps@1.8923.0:
+  version "1.8923.0"
+  resolved "https://registry.yarnpkg.com/electron-apps/-/electron-apps-1.8923.0.tgz#5215dca6939058d9d21da84b8f08c80df4fbe0a2"
+  integrity sha512-eXavio14Hi3dFMU2iHJKqMRIOBTU/VVb8zrgvLH8gIFRQdSoTy5xS/8XFmdrQ87au9IV3sVnxu9GyGmAjpeuqg==
   dependencies:
     json-stable-stringify "^1.0.1"
     mime-types "^2.1.30"
@@ -5984,24 +5984,17 @@ micromatch@^4.0.2, micromatch@^4.0.4:
     braces "^3.0.1"
     picomatch "^2.2.3"
 
-mime-db@1.48.0, "mime-db@>= 1.38.0 < 2":
-  version "1.48.0"
-  resolved "https://registry.yarnpkg.com/mime-db/-/mime-db-1.48.0.tgz#e35b31045dd7eada3aaad537ed88a33afbef2d1d"
-  integrity sha512-FM3QwxV+TnZYQ2aRqhlKBMHxk10lTbMt3bBkMAp54ddrNeVSfcQYOOKuGuy3Ddrm38I04If834fOUSq1yzslJQ==
-
 mime-db@1.49.0:
   version "1.49.0"
   resolved "https://registry.yarnpkg.com/mime-db/-/mime-db-1.49.0.tgz#f3dfde60c99e9cf3bc9701d687778f537001cbed"
   integrity sha512-CIc8j9URtOVApSFCQIF+VBkX1RwXp/oMMOrqdyXSBXq5RWNEsRfyj1kiRnQgmNXmHxPoFIxOroKA3zcU9P+nAA==
 
-mime-types@^2.1.12, mime-types@^2.1.27, mime-types@^2.1.31, mime-types@~2.1.17, mime-types@~2.1.18, mime-types@~2.1.19, mime-types@~2.1.24:
-  version "2.1.31"
-  resolved "https://registry.yarnpkg.com/mime-types/-/mime-types-2.1.31.tgz#a00d76b74317c61f9c2db2218b8e9f8e9c5c9e6b"
-  integrity sha512-XGZnNzm3QvgKxa8dpzyhFTHmpP3l5YNusmne07VUOXxou9CqUqYa/HBy124RqtVh/O2pECas/MOcsDgpilPOPg==
-  dependencies:
-    mime-db "1.48.0"
+"mime-db@>= 1.38.0 < 2":
+  version "1.48.0"
+  resolved "https://registry.yarnpkg.com/mime-db/-/mime-db-1.48.0.tgz#e35b31045dd7eada3aaad537ed88a33afbef2d1d"
+  integrity sha512-FM3QwxV+TnZYQ2aRqhlKBMHxk10lTbMt3bBkMAp54ddrNeVSfcQYOOKuGuy3Ddrm38I04If834fOUSq1yzslJQ==
 
-mime-types@^2.1.30:
+mime-types@^2.1.12, mime-types@^2.1.27, mime-types@^2.1.30, mime-types@^2.1.31, mime-types@~2.1.17, mime-types@~2.1.18, mime-types@~2.1.19, mime-types@~2.1.24:
   version "2.1.32"
   resolved "https://registry.yarnpkg.com/mime-types/-/mime-types-2.1.32.tgz#1d00e89e7de7fe02008db61001d9e02852670fd5"
   integrity sha512-hJGaVS4G4c9TSMYh2n6SQAGrC4RnfU+daP8G7cSCmaqNjiOoUY0VHCMS42pxnQmVF1GWwFhbHWn3RIxCqTmZ9A==
