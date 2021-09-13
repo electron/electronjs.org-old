@@ -3385,19 +3385,19 @@ electron-api-historian@1.58.0:
   resolved "https://registry.yarnpkg.com/electron-api-historian/-/electron-api-historian-1.58.0.tgz#63ec6dc237283ed4ba14daf62e64f82dfb852ec8"
   integrity sha512-ffSq04r2i6wdhyVM0Vb3920Emz8mz+6SYAeY+XguBTNlfIZPQ8zFCk2Buf3p9MAtrUkqt0b1+Vkys20/GiTFLA==
 
-electron-apps@1.8927.0:
-  version "1.8927.0"
-  resolved "https://registry.yarnpkg.com/electron-apps/-/electron-apps-1.8927.0.tgz#42d2918cddd3599b8793281d784117592348c3c8"
-  integrity sha512-Qq3V87noc8FW6jGfLwwei122NHjOx+y0AYC83e/H1Sbin85YyX574a3GXI/zACPHvMcUtg7xJxzV5sZqfJUBjQ==
+electron-apps@1.8937.0:
+  version "1.8937.0"
+  resolved "https://registry.yarnpkg.com/electron-apps/-/electron-apps-1.8937.0.tgz#79ae444aa5c7e96afafd070cee24da04d95308d5"
+  integrity sha512-yclsrq8346gZ9IHGXmw1JHEferBLwDVEmAV8nEew+gto3zMvKmPfh1vsKA6XTM4z6me80ghM8os0X06gXPhjww==
   dependencies:
     json-stable-stringify "^1.0.1"
     mime-types "^2.1.30"
     rev-hash "^3.0.0"
 
-electron-i18n@1.3112.0:
-  version "1.3112.0"
-  resolved "https://registry.yarnpkg.com/electron-i18n/-/electron-i18n-1.3112.0.tgz#72c51f3eb8be842040728bf161e34a73fd8fc69c"
-  integrity sha512-XYxN8mmuBL5RPwl0VKBMpaE6lfI+dgMFLueJ5mxxMIyq6+1UX7pS/iAS4ahamefHPiKDPb1D93PCznIgShTb5g==
+electron-i18n@1.3114.0:
+  version "1.3114.0"
+  resolved "https://registry.yarnpkg.com/electron-i18n/-/electron-i18n-1.3114.0.tgz#486a060563729b936658d474dd686bb875561a03"
+  integrity sha512-lf+VJekmJZa+DAfuBFfjj9cqPqCD2SQ8POW42vdzw78SazVVpPnO3rFtwL11lL0IAPwFvVt3mZG7jZW3q1cyrg==
 
 electron-markdown@^0.8.2:
   version "0.8.2"
@@ -3412,10 +3412,10 @@ electron-markdown@^0.8.2:
     rehype-slug "^4.0.0"
     remark-gemoji-to-emoji "^1.1.0"
 
-electron-releases@3.785.0:
-  version "3.785.0"
-  resolved "https://registry.yarnpkg.com/electron-releases/-/electron-releases-3.785.0.tgz#797f3010840618670f09f8cba7e4dd252ae6c02e"
-  integrity sha512-Q/7HNX8sEc1wIaH3PXzmuRhaF6GGPGJMsTdNbvDTAx7nmX+tKOxP45cjYIrov4RbuCMVFNwjX5G6IIMhyhhKvw==
+electron-releases@3.790.0:
+  version "3.790.0"
+  resolved "https://registry.yarnpkg.com/electron-releases/-/electron-releases-3.790.0.tgz#2f97451ac4d19b3ebae2a75373652d53001ad53e"
+  integrity sha512-D0Wh/n0md56epriGsTEUa7Gz1fxynhlXsGgnoFibpm+nIKOuJzoBKGkzAZc0LGF3mWVJpyPiQYp+QUlR9tbNHw==
 
 electron-to-chromium@^1.3.793:
   version "1.3.799"
