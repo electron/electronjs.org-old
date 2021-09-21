@@ -77,25 +77,6 @@ describe('electronjs.org', () => {
     })
   })
 
-  describe('blog', () => {
-    it('open blog page', () => {
-      cy.visit(localhost)
-      cy.get('a[href="/blog"]:first').click()
-      cy.wait(500)
-
-      cy.get('.container-lg').contains('Electron Blog')
-      cy.get('.container-lg p').contains(
-        'All the latest news from the Electron team and community.'
-      )
-    })
-
-    it('open blog post', () => {
-      cy.visit(`${localhost}/blog`)
-      cy.get('a[href="/blog/electron-3-0"]:first').click()
-      cy.get('.container-lg').contains('Electron 3.0.0')
-    })
-  })
-
   describe('search', () => {
     before(() => {
       cy.visit(localhost)

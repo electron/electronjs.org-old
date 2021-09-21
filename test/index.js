@@ -26,16 +26,6 @@ describe('electronjs.org', () => {
   })
 
   describe('feeds', () => {
-    test('blog feeds', async () => {
-      let res = await supertest(app).get(`/blog.json`)
-      res.headers['content-type'].should.equal(
-        'application/json; charset=utf-8'
-      )
-      res.body.title.should.equal('Electron')
-      res = await supertest(app).get(`/blog.xml`)
-      res.headers['content-type'].should.equal('text/xml; charset=utf-8')
-    })
-
     test('releases feeds', async () => {
       let res = await supertest(app).get(`/releases.json`)
       res.headers['content-type'].should.equal(
@@ -446,18 +436,6 @@ describe('electronjs.org', () => {
     })
   })
 
-  test('/blog', async () => {
-    const $ = await get('/blog')
-    $('header').should.have.class('site-header')
-    $('.posts-list li').length.should.be.above(10)
-  })
-
-  test('/blog/webtorrent', async () => {
-    const $ = await get('/blog/webtorrent')
-    $('header').should.have.class('site-header')
-    // TODO: post title is page title
-  })
-
   test('/awesome', async () => {
     const res = await supertest(app).get('/awesome')
     res.statusCode.should.be.above(300).and.below(303)
@@ -602,12 +580,6 @@ describe('electronjs.org', () => {
         const $ = cheerio.load(res.text)
         $('html').attr('dir').should.equal('rtl')
       })
-    })
-
-    test('redirects for date-style blog URLs', async () => {
-      const res = await supertest(app).get('/blog/2017/06/01/typescript')
-      res.statusCode.should.be.above(300).and.below(303)
-      res.headers.location.should.equal('/blog/typescript')
     })
 
     test('redirects trailing slashes', async () => {
