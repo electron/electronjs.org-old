@@ -121,7 +121,7 @@
     "wait-on": "^6.0.0",
     "walk-sync": "^3.0.0",
     "webpack": "^5.56.1",
-    "webpack-cli": "^4.7.2",
+    "webpack-cli": "^4.8.0",
     "webpack-dev-middleware": "^5.2.1",
     "webpack-manifest-plugin": "^4.0.2"
   },
