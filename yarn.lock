@@ -2753,10 +2753,10 @@ clone-response@^1.0.2:
   dependencies:
     mimic-response "^1.0.0"
 
-cmark-gfm@^0.8.3:
-  version "0.8.5"
-  resolved "https://registry.yarnpkg.com/cmark-gfm/-/cmark-gfm-0.8.5.tgz#4330ca39a1a70ba5ad59624fc3b2c38186d185c7"
-  integrity sha512-Ykt0MVYYUAJKH0z2MIPr9bekge+SGUPnfJe16cqiT75ypk5B2LIuOYQPquKfn/Mn5LvuH/CMrBxV1RzilPa13A==
+cmark-gfm@^0.9.0:
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/cmark-gfm/-/cmark-gfm-0.9.0.tgz#198449aaa84306c9033423cb52fc24ea42a36287"
+  integrity sha512-zt++V303Zh+kqS3PERSq1knHT21TpKjbVUF/U63QhLktEH+eeZymv+mHz+6IhcTN5Hy85LdkgdKlroa/Jc6Wvg==
   dependencies:
     bindings "^1.5.0"
     node-addon-api "^3.0.0"
@@ -3504,12 +3504,12 @@ electron-i18n@1.3131.0:
   resolved "https://registry.yarnpkg.com/electron-i18n/-/electron-i18n-1.3131.0.tgz#41b52a4e0ca72c24a67306bf2faeb274b4b3e9a4"
   integrity sha512-9a+B67Wmn9f/Qd/hAFUFWK3FMEDdfFb9zjegb6OTgaT2PGcnZfc6PG2xggW2w/DPM1Zwqfw5uHnXbtXGT/gfKw==
 
-electron-markdown@^0.8.2:
-  version "0.8.2"
-  resolved "https://registry.yarnpkg.com/electron-markdown/-/electron-markdown-0.8.2.tgz#14b76117ffa67bc8060b10db15b0a1d1877bd7bc"
-  integrity sha512-DlaKDZdRRqmkE5mVDJinISlWKh2ynL8rgSKTVuQiynovept762O5PIfwPibiERLs0ckhvE13Z3pAn2Al/fd39w==
+electron-markdown@^0.9.0:
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/electron-markdown/-/electron-markdown-0.9.0.tgz#d0236ae66c07a870aeb4864eda991f7c282ed0a8"
+  integrity sha512-KD99LDHUpgtVuQ6DRA9WViSYrUKpeUs2+7vdZSz6+QLWHsVm3lcTdQRHByH7ORelAd8FIOU4t/4bKyN3X0lffg==
   dependencies:
-    cmark-gfm "^0.8.3"
+    cmark-gfm "^0.9.0"
     mixin-deep "^2.0.1"
     rehype "^11.0.0"
     rehype-autolink-headings "^5.0.1"
