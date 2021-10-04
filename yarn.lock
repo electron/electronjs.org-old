@@ -3382,10 +3382,10 @@ electron-api-historian@1.63.0:
   resolved "https://registry.yarnpkg.com/electron-api-historian/-/electron-api-historian-1.63.0.tgz#02e0d11ab24102bd62fa4b6353cdc90fd9f76e98"
   integrity sha512-AQ2h1+EHlNGputYRQ+VZq0TXuDY5pWc2d67xBVCGs+YQ4AJgGraSDe0b6+GAkyQgEkksZPhyk9Dv7Pjv+SLs4A==
 
-electron-apps@1.8973.0:
-  version "1.8973.0"
-  resolved "https://registry.yarnpkg.com/electron-apps/-/electron-apps-1.8973.0.tgz#86eb9ece1a930d10979f4b443b93c056aef62840"
-  integrity sha512-CT7DAnRklucn9l14HDVYzQnvXVYtgp4MDIHX2W3vTqqHVk+xm0ZzyZyC78iymcUqRaUEDMs79caNHPA1glys+g==
+electron-apps@1.8979.0:
+  version "1.8979.0"
+  resolved "https://registry.yarnpkg.com/electron-apps/-/electron-apps-1.8979.0.tgz#5c6c996bc815f7b2b137f11ba0cd6f858f56d528"
+  integrity sha512-A4jF9eVozsMDi9ExMUux8TIxUpYqJ4Sfl/sU483HWXXazye2F3IkGx5/R6RnrYXEMYudgO5g7xc3VMr/iTSqlg==
   dependencies:
     json-stable-stringify "^1.0.1"
     mime-types "^2.1.30"
@@ -6377,9 +6377,9 @@ npmlog@^4.0.0, npmlog@^4.0.1, npmlog@^4.1.2:
     set-blocking "~2.0.0"
 
 nth-check@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/nth-check/-/nth-check-2.0.0.tgz#1bb4f6dac70072fc313e8c9cd1417b5074c0a125"
-  integrity sha512-i4sc/Kj8htBrAiH1viZ0TgU8Y5XqCaV/FziYK6TBczxmeKm3AEFWqqF3195yKudrarqy7Zu80Ra5dobFjn9X/Q==
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/nth-check/-/nth-check-2.0.1.tgz#2efe162f5c3da06a28959fbd3db75dbeea9f0fc2"
+  integrity sha512-it1vE95zF6dTT9lBsYbxvqh0Soy4SPowchj0UBGj/V6cTPnXXtQOPUbhZ6CmGzAD/rW22LQK6E96pcdJXk4A4w==
   dependencies:
     boolbase "^1.0.0"
 
