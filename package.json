@@ -116,7 +116,7 @@
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^22.0.0",
     "stylelint-scss": "^3.21.0",
-    "supertest": "^6.1.5",
+    "supertest": "^6.1.6",
     "supertest-session": "^4.1.0",
     "wait-on": "^6.0.0",
     "walk-sync": "^3.0.0",
