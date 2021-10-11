@@ -15,10 +15,14 @@
           {{#eq currentLocale "en-US"}}
           <li class="footer-nav-item"><a href="/docs/latest">{{localized.nav.docs}}</a></li>
           {{else}}
-          <li class="footer-nav-item"><a href="/docs">{{localized.nav.docs}}</a></li>
+          <li class="footer-nav-item"><a href="/{{ to2CharLocale currentLocale }}/docs/latest">{{localized.nav.docs}}</a></li>
           {{/eq}}
           <li class="footer-nav-item"><a href="/releases/stable">{{localized.nav.releases}}</a></li>
+          {{#eq currentLocale "en-US"}}
           <li class="footer-nav-item"><a href="/blog">{{localized.nav.blog}}</a></li>
+          {{else}}
+          <li class="footer-nav-item"><a href="/{{ to2CharLocale currentLocale }}/blog">{{localized.nav.blog}}</a></li>
+          {{/eq}}
           <li class="footer-nav-item"><a href="/apps">{{localized.nav.apps}}</a></li>
           <li class="footer-nav-item"><a href="/governance">{{localized.nav.governance}}</a></li>
           <li class="footer-nav-item"><a href="/community">{{localized.nav.community}}</a></li>

@@ -88,10 +88,26 @@ app.use(
 // Helper to generate the redirects to the right document in the new docs paths
 hbs.registerHelper('new-docs', (currentPage) => {
   // This particular page is the root for the docs in the new site
+
   if (!currentPage || currentPage.endsWith('tutorial/introduction')) {
     return '/docs/latest/'
   } else {
     return currentPage.replace('docs/', 'docs/latest/')
+  }
+})
+
+/**
+ * This helper "transforms" a locale in the form of xx-XX to the 2 char code
+ * used by Crowdin.
+ */
+hbs.registerHelper('to2CharLocale', (locale) => {
+  // Because of the current supported languages, we do not have any edge cases
+  const [language] = locale.toLowerCase().split('-')
+
+  if (locale === 'en') {
+    return ''
+  } else {
+    return language
   }
 })
 

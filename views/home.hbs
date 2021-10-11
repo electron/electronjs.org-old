@@ -108,7 +108,7 @@
         {{#eq currentLocale "en-US"}}
         <a class="hero-link" href="/docs/latest/api/auto-updater/">
         {{else}}
-        <a class="hero-link" href="/docs/api/auto-updater/">
+        <a class="hero-link" href="/{{ to2CharLocale currentLocale }}/docs/api/auto-updater/">
         {{/eq}}
           <span class="octicon hero-octicon octicon-squirrel" aria-hidden="true"></span>
           {{{localized.benefits.automatic_updates}}}
@@ -118,7 +118,7 @@
         {{#eq currentLocale "en-US"}}
         <a class="hero-link" href="/docs/latest/api/menu">
         {{else}}
-        <a class="hero-link" href="/docs/api/menu">
+        <a class="hero-link" href="/{{ to2CharLocale currentLocale }}/docs/api/menu">
         {{/eq}}
           <span class="octicon hero-octicon octicon-device-desktop" aria-hidden="true"></span>
           {{{localized.benefits.native_menus_and_notifications}}}
@@ -128,7 +128,7 @@
         {{#eq currentLocale "en-US"}}
         <a class="hero-link" href="/docs/latest/api/crash-reporter">
         {{else}}
-        <a class="hero-link" href="/docs/api/crash-reporter">
+        <a class="hero-link" href="/{{ to2CharLocale currentLocale }}/docs/api/crash-reporter">
         {{/eq}}
           <span class="octicon hero-octicon octicon-bug" style="padding-left:2px" aria-hidden="true"></span>
           {{{localized.benefits.crash_reporting}}}
@@ -138,7 +138,7 @@
         {{#eq currentLocale "en-US"}}
         <a class="hero-link" href="/docs/latest/api/content-tracing">
         {{else}}
-        <a class="hero-link" href="/docs/api/content-tracing">
+        <a class="hero-link" href="/{{ to2CharLocale currentLocale }}/docs/api/content-tracing">
         {{/eq}}
           <span class="octicon hero-octicon octicon-tools" aria-hidden="true"></span>
           {{{localized.benefits.debugging_and_profiling}}}
@@ -148,7 +148,7 @@
         {{#eq currentLocale "en-US"}}
         <a class="hero-link" href="/docs/api/auto-updater/#windows">
         {{else}}
-        <a class="hero-link" href="/docs/api/auto-updater/#windows">
+        <a class="hero-link" href="/{{ to2CharLocale currentLocale }}/docs/api/auto-updater/#windows">
         {{/eq}}
           <span class="octicon hero-octicon octicon-gift" style="padding-right:2px" aria-hidden="true"></span>
           {{{localized.benefits.windows_installers}}}
