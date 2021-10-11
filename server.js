@@ -208,7 +208,17 @@ app.get('/contact', (req, res) => res.redirect(301, '/community'))
 app.use('/crowdin', routes.languages.proxy)
 app.get('/devtron', routes.devtron)
 app.use('/docs', feedback)
-app.get('/docs', routes.docs.index)
+// The documentation is served elsewhere, see electron/electronjs.org-new
+// Moving all users landing directly in an old "docs" route to the new one
+app.get('/docs', (req, res) => res.redirect(301, '/docs/latest'))
+app.get('/docs/:path', (req, res, next) => {
+  if (req.params.path !== 'latest') {
+    res.redirect(301, `/docs/latest/${req.params.path}`)
+  } else {
+    next()
+  }
+})
+// The requests to the following docs routes should be intercepted by Fastly and never reach
 app.get('/docs/versions', (req, res) => res.redirect(301, '/releases/stable'))
 app.get('/docs/:category', routes.docs.category)
 app.get('/docs/api/structures', routes.docs.structures)
@@ -249,9 +259,6 @@ app.get('/pulls', (req, res) =>
 
 // Redirected old paths
 app.get('/awesome', (req, res) => res.redirect('/community'))
-app.get('/docs/latest*', (req, res) =>
-  res.redirect(req.path.replace(/^\/docs\/latest/gi, '/docs'))
-)
 app.get('/docs/v0*', (req, res) =>
   res.redirect(req.path.replace(/^\/docs\/v0\.\d+\.\d+/gi, '/docs'))
 )
