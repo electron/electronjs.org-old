@@ -211,9 +211,10 @@ app.use('/docs', feedback)
 // The documentation is served elsewhere, see electron/electronjs.org-new
 // Moving all users landing directly in an old "docs" route to the new one
 app.get('/docs', (req, res) => res.redirect(301, '/docs/latest'))
-app.get('/docs/:path', (req, res, next) => {
-  if (req.params.path !== 'latest') {
-    res.redirect(301, `/docs/latest/${req.params.path}`)
+app.get('/docs/*', (req, res, next) => {
+  const route = req.params[0]
+  if (!route.includes('latest')) {
+    res.redirect(301, `/docs/latest/${route}`)
   } else {
     next()
   }
