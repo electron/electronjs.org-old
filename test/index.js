@@ -179,7 +179,7 @@ describe('electronjs.org', () => {
     })
   })
 
-  describe('docs', () => {
+  describe.skip('docs', () => {
     test('index', async () => {
       const $ = await get('/docs')
       $('header').should.have.class('site-header')
@@ -422,7 +422,7 @@ describe('electronjs.org', () => {
       })
     })
 
-    test('/docs/versions redirects to /releases/stable', async () => {
+    test.skip('/docs/versions redirects to /releases/stable', async () => {
       const res = await supertest(app).get('/docs/versions')
       res.statusCode.should.be.equal(301)
       res.headers.location.should.equal('/releases/stable')
@@ -513,7 +513,7 @@ describe('electronjs.org', () => {
       $('body').text().should.include('global developer community')
     })
 
-    test('language query param for one-off viewing in other languages', async () => {
+    test.skip('language query param for one-off viewing in other languages', async () => {
       const frenchContent = 'fenêtres'
       const sesh = session(app)
 
@@ -527,7 +527,7 @@ describe('electronjs.org', () => {
       $('blockquote').text().should.not.include(frenchContent)
     })
 
-    test('incompleted language query param redirects with the correct language', async () => {
+    test.skip('incompleted language query param redirects with the correct language', async () => {
       // Missing region
       let res = await supertest(app).get('/docs/api/browser-window?lang=fr')
       res.statusCode.should.be.equal(302)
@@ -548,7 +548,7 @@ describe('electronjs.org', () => {
       res.headers.location.should.equal('/docs/api/browser-window?lang=es-ES')
     })
 
-    test('language query param wont redirects with the correct language', async () => {
+    test.skip('language query param wont redirects with the correct language', async () => {
       // without language query is not redirected (200)
       let res = await supertest(app).get('/docs/api/browser-window')
       res.statusCode.should.be.equal(200)
