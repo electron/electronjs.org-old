@@ -180,11 +180,6 @@ describe('electronjs.org', () => {
       visit(`devtron`)
       cy.get('.jumbotron-lead').contains('An Electron DevTools Extension')
     })
-
-    it('Spectron landing page', () => {
-      visit(`spectron`)
-      cy.get('.jumbotron-lead').contains('An Electron Testing Framework')
-    })
   })
 
   describe('releases', () => {
