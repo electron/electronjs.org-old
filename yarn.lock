@@ -3292,10 +3292,10 @@ electron-api-historian@1.72.0:
   resolved "https://registry.yarnpkg.com/electron-api-historian/-/electron-api-historian-1.72.0.tgz#2360dfa270d6bb394a4ef2938e81a14599b01919"
   integrity sha512-FPFQ8KDg3BG9pEHy8+mLL8DshvrA5w9MnH3dMVLYCabVBwmR+Fa+DpQ68xz/vqLTB/Cqde34gcPjixUNJGQY2Q==
 
-electron-apps@1.9038.0:
-  version "1.9038.0"
-  resolved "https://registry.yarnpkg.com/electron-apps/-/electron-apps-1.9038.0.tgz#750192d053d0bdc63d941e83097a60131cebd75e"
-  integrity sha512-/TZGMEcqOjsTZcO/zqrii4hExZ4NCn5LawHMiBjygyTmfOYkKTjhIiGsM0fcUjskEzXB8A2Y2VITdPm72LG9gQ==
+electron-apps@1.9048.0:
+  version "1.9048.0"
+  resolved "https://registry.yarnpkg.com/electron-apps/-/electron-apps-1.9048.0.tgz#9790eab65bbd9b60930816ce36e0476c708158cb"
+  integrity sha512-zfJ3MtrosIy6407d2fGPU23ZCElWvlqb30sm0wIOCv1t89dD6hazKIHBlAsCmcKyMN8hA7M/z1oqVaHVamNOcA==
   dependencies:
     json-stable-stringify "^1.0.1"
     mime-types "^2.1.30"
@@ -8234,10 +8234,10 @@ to-regex-range@^5.0.1:
   dependencies:
     is-number "^7.0.0"
 
-tocbot@^4.13.4:
-  version "4.13.4"
-  resolved "https://registry.yarnpkg.com/tocbot/-/tocbot-4.13.4.tgz#deae6f75de8c0ffdc887c4f2e3f00d52dfb81def"
-  integrity sha512-YIiqDvrDi7VUNMtDkMj1txmmGkv7fyVGOKWyp+Xd5GwFZSa3yu5QhRrwpkD4BTD6HbjKah+BvWBN+6m9160Kog==
+tocbot@^4.17.0:
+  version "4.17.0"
+  resolved "https://registry.yarnpkg.com/tocbot/-/tocbot-4.17.0.tgz#2b5f129d79c650e93f704eaa2f6892dfe3e4cca0"
+  integrity sha512-JaWPeib/qGUH+vqrEjL2AaUeitnshW/lLt0fsonMpcXcM4Jku0k3sVgMM0ZVLpbx9obcJQxRVe2Jql9dIFN1Nw==
 
 toidentifier@1.0.0:
   version "1.0.0"

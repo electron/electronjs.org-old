@@ -48,7 +48,7 @@
     "description": "0.0.4",
     "dotenv": "^10.0.0",
     "electron-api-historian": "1.72.0",
-    "electron-apps": "1.9038.0",
+    "electron-apps": "1.9048.0",
     "electron-i18n": "1.3136.0",
     "electron-markdown": "^0.9.0",
     "electron-releases": "3.850.0",
@@ -86,7 +86,7 @@
     "search-with-your-keyboard": "^2.0.0",
     "semver": "^7.3.5",
     "set-query-string": "^2.2.0",
-    "tocbot": "^4.13.4",
+    "tocbot": "^4.17.0",
     "ultimate-pagination": "^1.0.0"
   },
   "devDependencies": {
