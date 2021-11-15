@@ -484,19 +484,6 @@ describe('electronjs.org', () => {
     })
   })
 
-  describe('devtron and spectron', () => {
-    test('Test existed landing pages', async () => {
-      let $ = await get('/devtron')
-      $('.jumbotron-lead .jumbotron-lead-muted')
-        .text()
-        .should.eq('An Electron DevTools Extension')
-      $ = await get('/spectron')
-      $('.jumbotron-lead .jumbotron-lead-muted')
-        .text()
-        .should.eq('An Electron Testing Framework')
-    })
-  })
-
   describe('electron fiddle', () => {
     test('Fiddle landing page existed', async () => {
       const $ = await get('/fiddle')

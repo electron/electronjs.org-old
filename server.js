@@ -240,7 +240,6 @@ app.get('/releases.xml', routes.feed.releases)
 app.get('/search/:searchIn*?*', (req, res) =>
   res.redirect(req.query.q ? `/?query=${req.query.q}` : `/`)
 )
-app.get('/spectron', routes.spectron)
 app.get('/userland', routes.userland.index)
 app.get('/userland/*', routes.userland.show)
 
