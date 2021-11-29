@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "@babel/core": "^7.16.0",
-    "@babel/preset-env": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
     "@primer/css": "^15.2.0",
     "@primer/octicons": "^16.1.1",
     "awesome-electron": "2.6.0",
