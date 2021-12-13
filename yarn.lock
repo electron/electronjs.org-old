@@ -8192,10 +8192,10 @@ to-regex-range@^5.0.1:
   dependencies:
     is-number "^7.0.0"
 
-tocbot@^4.17.0:
-  version "4.17.0"
-  resolved "https://registry.yarnpkg.com/tocbot/-/tocbot-4.17.0.tgz#2b5f129d79c650e93f704eaa2f6892dfe3e4cca0"
-  integrity sha512-JaWPeib/qGUH+vqrEjL2AaUeitnshW/lLt0fsonMpcXcM4Jku0k3sVgMM0ZVLpbx9obcJQxRVe2Jql9dIFN1Nw==
+tocbot@^4.17.3:
+  version "4.17.3"
+  resolved "https://registry.yarnpkg.com/tocbot/-/tocbot-4.17.3.tgz#fe882cac14e8c2b95989f9ff849dcac126524ae5"
+  integrity sha512-s6jnRju4TBljMSD3j/Ipul9ZVoptXzbjnA4j8ha7yB9zlUIQiOKE8VYCXc9vf/xqDNVFVrhsVCPmdOsEjXUhMA==
 
 toidentifier@1.0.0:
   version "1.0.0"
