@@ -54,9 +54,8 @@ community:
     Resources for connecting with people working on Electron.
   channels:
     get_started:
-      "<a href='/docs/tutorial/first-app'><b>Get started</b></a>
-      building an app by reading the
-      <a href='/docs/tutorial/first-app'>quick-start guide</a>."
+      "<a href='/docs/latest/'><b>Get started</b></a>
+      building an app by reading the documentation."
     updates:
       "<a href='https://twitter.com/electronjs'><b>Stay up to date</b></a>
       by following
