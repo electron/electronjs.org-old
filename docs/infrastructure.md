@@ -1,4 +1,4 @@
-# Electron Website Insfrastructure and Automation Overview
+# Electron Website Infrastructure and Automation Overview
 
 The Electron website displays data from several different npm packages in addition to the content that lives in `electron/electronjs.org`. These packages are:
 
