@@ -205,7 +205,7 @@ quick_start:
 
 need_help:
   title: Need Help?
-  description: Ask questions in the <a href='https://discord.gg/electron'>Discord server</a>. Follow <a href="https://twitter.com/electronjs">@electronjs</a> on Twitter for important announcements. Need to privately reach out? Email <a href="mailto:info@electronjs.org">info@electronjs.org</a>.
+  description: Ask questions in the <a href='https://discord.gg/electronjs'>Discord server</a>. Follow <a href="https://twitter.com/electronjs">@electronjs</a> on Twitter for important announcements. Need to privately reach out? Email <a href="mailto:info@electronjs.org">info@electronjs.org</a>.
 
 headings:
   languages: Languages
