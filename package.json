@@ -46,7 +46,7 @@
     "cross-env": "^7.0.3",
     "crowdin-editor-language-codes": "^1.0.0",
     "description": "0.0.4",
-    "dotenv": "^10.0.0",
+    "dotenv": "^16.0.0",
     "electron-api-historian": "1.81.0",
     "electron-apps": "1.9167.0",
     "electron-i18n": "1.3136.0",
