@@ -111,6 +111,11 @@ hbs.registerHelper('to2CharLocale', (locale) => {
   }
 })
 
+hbs.registerHelper('replace', function (find, replace, options) {
+  const string = options.fn(this)
+  return string.replace(find, replace)
+})
+
 if (isProduction) {
   const jsManifest = require(path.join(
     __dirname,
