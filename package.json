@@ -110,7 +110,7 @@
     "nock": "^13.2.4",
     "node-sass": "^6.0.1",
     "nodemon": "^2.0.15",
-    "prettier": "^2.4.1",
+    "prettier": "^2.5.1",
     "rimraf": "^3.0.2",
     "simplecrawler": "^1.1.9",
     "stylelint": "^14.4.0",
