@@ -3325,10 +3325,10 @@ electron-api-historian@1.82.0:
   resolved "https://registry.yarnpkg.com/electron-api-historian/-/electron-api-historian-1.82.0.tgz#48c3587dbd727ef9e3530c058bc980ae91dfd64f"
   integrity sha512-E/mcYn6DQh/foHDYD/WHDZrVIlDRyGzhlfnzStH0Rm3a/h7ejKTvWaEMd7TsSoEUq7Z0f6rRMlesSpMi+SMZ+Q==
 
-electron-apps@1.9205.0:
-  version "1.9205.0"
-  resolved "https://registry.yarnpkg.com/electron-apps/-/electron-apps-1.9205.0.tgz#ceb04e54afab84fa92a0af6a520a0a596010abbc"
-  integrity sha512-fdzQlQ79T9mJ2YqHErY9/7htP+awPhEFKlb7GLTHdmBFohVdHoStvee/ddPDuQ5Qh3SlQduNXKLU2uusmNIaqA==
+electron-apps@1.9207.0:
+  version "1.9207.0"
+  resolved "https://registry.yarnpkg.com/electron-apps/-/electron-apps-1.9207.0.tgz#cff9e441683f675a6388553654718662ce43acc6"
+  integrity sha512-IllyYkoAbWy9/4BYk+vvoFvw90q403x0rASeDf6ZwUosM+BZsQNmN4g8Jh72irgMAZXTUafcM6iow9x2SwQFCQ==
   dependencies:
     json-stable-stringify "^1.0.1"
     mime-types "^2.1.30"
