@@ -72,7 +72,7 @@
     "lodash": "^4.17.21",
     "lunr": "^2.3.9",
     "make-promises-safe": "^5.1.0",
-    "minimist": "^1.2.5",
+    "minimist": "^1.2.6",
     "node-sass-middleware": "^0.11.0",
     "paginate-array": "^2.1.0",
     "platform-utils": "^1.2.0",
