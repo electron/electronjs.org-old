@@ -12,15 +12,13 @@ Electron is changing its primary S3 bucket, you may need to update your build sc
 
 Currently a significant amount of Electrons build artifacts are uploaded to an S3 bucket called `gh-contractor-zcbenz`, as part of ongoing infrastructure / ownership migrations that started way back in 2020 we will be changing everything that used `gh-contractor-zcbenz` from it's current home in S3 to a new storage system hosted at `https://artifacts.electronjs.org`.  The path prefix that most of our assets use is changing slightly as well.  Examples are included below:
 
-https://electronartifacts.blob.core.windows.net/headers/dist/v17.0.0/node.lib
-
-**Before:** https://gh-contractor-zcbenz.s3.amazonaws.com/atom-shell/dist/v17.0.0/node.lib
-**After:** https://artifacts.electronjs.org/headers/dist/v17.0.0/node.lib
+**Before:** https://gh-contractor-zcbenz.s3.amazonaws.com/atom-shell/dist/v17.0.0/node.lib  
+**After:** https://artifacts.electronjs.org/headers/dist/v17.0.0/node.lib  
 
 The important things here are the **Hostname** changed and the `/atom-shell` **prefix** changed.  Another example, this time for debug symbols:
 
-**Before:** https://gh-contractor-zcbenz.s3.amazonaws.com/atom-shell/symbols/path/to/symbol.pdb
-**After:** https://artifacts.electronjs.org/symbols/path/to/symbol.pdb
+**Before:** https://gh-contractor-zcbenz.s3.amazonaws.com/atom-shell/symbols/path/to/symbol.pdb  
+**After:** https://artifacts.electronjs.org/symbols/path/to/symbol.pdb  
 
 Again, the hostname changed and the `/atom-shell` prefix was changed.
 
