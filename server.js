@@ -82,6 +82,10 @@ app.use(
   helmet({
     contentSecurityPolicy: false,
     referrerPolicy: false,
+    hsts: {
+      maxAge: 63072000,
+      includeSubdomains: true,
+      preload: true
   })
 )
 
