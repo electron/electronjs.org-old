@@ -3320,15 +3320,15 @@ ee-first@1.1.1:
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
 
-electron-api-historian@1.82.0:
-  version "1.82.0"
-  resolved "https://registry.yarnpkg.com/electron-api-historian/-/electron-api-historian-1.82.0.tgz#48c3587dbd727ef9e3530c058bc980ae91dfd64f"
-  integrity sha512-E/mcYn6DQh/foHDYD/WHDZrVIlDRyGzhlfnzStH0Rm3a/h7ejKTvWaEMd7TsSoEUq7Z0f6rRMlesSpMi+SMZ+Q==
+electron-api-historian@1.83.0:
+  version "1.83.0"
+  resolved "https://registry.yarnpkg.com/electron-api-historian/-/electron-api-historian-1.83.0.tgz#e9714e18785296f16257f8c7c49404f5e5040c7e"
+  integrity sha512-TMoiUDIFu4zCWi9YEfbWqBpWkbMkSIQXt7kpPFA+Fmu3QPm20ccYKQxps8zNwehJPSmzdju9Sp+R0uIXhot1LQ==
 
-electron-apps@1.9254.0:
-  version "1.9254.0"
-  resolved "https://registry.yarnpkg.com/electron-apps/-/electron-apps-1.9254.0.tgz#19d6430db57fadf5ed563f68a313528cc6f31096"
-  integrity sha512-sgMAPN1wJNgMT2N8NRtQ5M2nT0kvB4wmQnXvXCJgCl4UdNGqSXrGWnwupUNZPbW3f99D2kWD7tsAjyWucv7UdQ==
+electron-apps@1.9255.0:
+  version "1.9255.0"
+  resolved "https://registry.yarnpkg.com/electron-apps/-/electron-apps-1.9255.0.tgz#f7f9ef4582a3e062fb3be224ee8ac3818409e2cc"
+  integrity sha512-eV8vsIsKOYRq6JyIIfKobHd1HSJZ55/X2vqytPO/QBWJV22iHMJBNiPgXb7PJdjdgLkQvTcc3J+m0VArqN6l9w==
   dependencies:
     json-stable-stringify "^1.0.1"
     mime-types "^2.1.35"
