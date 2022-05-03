@@ -8,7 +8,8 @@ module.exports = (req, res, next) => {
   //   : i18n.docs['en-US'][req.path]
   if (!doc) return next()
 
-  // Crowdin's undocumented mystery locale URL format. See https://git.io/vADu0
+  // Crowdin's undocumented mystery locale URL format.
+  // See https://github.com/electron/electronjs.org/pull/1158#issuecomment-369723600
   // e.g. `zh-CN` -> `zhcn`
   const { languageCode } = i18n.locales[req.context.currentLocale] || {}
   const { editorCode } = editorCodes[languageCode] || {}

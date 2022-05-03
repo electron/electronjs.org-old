@@ -299,7 +299,7 @@ describe('electronjs.org', () => {
 
       test('includes a link to Crowdin language picker when language is English', async () => {
         // Crowdin displays a nice language picker when target language does not exist
-        // See https://git.io/vx1TI
+        // See https://user-images.githubusercontent.com/2289/38279258-52e45e86-3754-11e8-93c4-6acb38eaa44e.png
         const res = await supertest(app)
           .get('/docs/api/browser-view')
           .set('Cookie', ['language=en-US'])
