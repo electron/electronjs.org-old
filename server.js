@@ -8,10 +8,10 @@ const lobars = require('lobars')
 
 // Middleware
 const hbs = require('express-hbs')
+const useragent = require('express-useragent')
 const compression = require('compression')
 const slashes = require('connect-slashes')
 const browsersync = require('./middleware/browsersync')
-const browserify = require('./middleware/browserify')
 const requestLanguage = require('express-request-language')
 const cookieParser = require('cookie-parser')
 const sass = require('./middleware/sass')
@@ -19,11 +19,18 @@ const helmet = require('helmet')
 const langResolver = require('./middleware/lang-resolver')
 const contextBuilder = require('./middleware/context-builder')
 const getOcticons = require('./middleware/register-octicons')
+const feedback = require('./middleware/feedback')
 
 const port = Number(process.env.PORT) || argv.p || argv.port || 5000
 const app = express()
 const appImgDir = path.resolve(require.resolve('electron-apps'), '..', 'apps')
-process.env.HOST = process.env.HOST || `http://localhost:${port}`
+
+const isProduction = process.env.NODE_ENV === 'production'
+
+const staticSettings = {
+  redirect: false,
+  maxAge: isProduction ? 31557600000 : 0,
+}
 
 // Handlebars Templates
 hbs.registerHelper(lobars)
@@ -71,16 +78,106 @@ app.engine(
 app.set('view engine', 'hbs')
 app.set('views', path.join(__dirname, '/views'))
 app.use(compression())
-app.use(helmet())
-if (process.env.NODE_ENV === 'production') {
-  console.log('Production app detected; serving JS and CSS from disk')
-  app.use(
-    express.static(path.join(__dirname, 'precompiled'), { redirect: false })
-  )
+app.use(
+  helmet({
+    contentSecurityPolicy: false,
+    referrerPolicy: false,
+  })
+)
+
+// Helper to generate the redirects to the right document in the new docs paths
+hbs.registerHelper('new-docs', (currentPage) => {
+  // This particular page is the root for the docs in the new site
+
+  if (!currentPage || currentPage.endsWith('tutorial/introduction')) {
+    return '/docs/latest/'
+  } else {
+    return currentPage.replace('docs/', 'docs/latest/')
+  }
+})
+
+/**
+ * This helper "transforms" a locale in the form of xx-XX to the 2 char code
+ * used by Crowdin.
+ */
+hbs.registerHelper('to2CharLocale', (locale) => {
+  // Because of the current supported languages, we do not have any edge cases
+  const [language] = locale.toLowerCase().split('-')
+
+  if (locale === 'en') {
+    return ''
+  } else {
+    return language
+  }
+})
+
+hbs.registerHelper('replace', function (find, replace, options) {
+  const string = options.fn(this)
+  return string.replace(find, replace)
+})
+
+if (isProduction) {
+  const jsManifest = require(path.join(
+    __dirname,
+    'precompiled',
+    'scripts',
+    'manifest.json'
+  ))
+  const cssManifest = require(path.join(
+    __dirname,
+    'precompiled',
+    'styles',
+    'manifest.json'
+  ))
+  const imagesManifest = require(path.join(
+    __dirname,
+    'precompiled',
+    'images',
+    'manifest.json'
+  ))
+  hbs.registerHelper('static-asset', (type, ...parts) => {
+    // `parts` should be at minimum [name, function]
+    // but it could also be [part1, part2, part3, function ]
+    // if we want to link to dynamic images
+    const name = parts.length === 2 ? parts[0] : parts.slice(0, -1).join('')
+
+    if (type === 'js') {
+      return jsManifest[name] || 'unknown.name'
+    }
+    if (type === 'css') {
+      return cssManifest[name] || 'unknown.name'
+    }
+    if (type === 'image') {
+      return imagesManifest[name] || 'unknown.name'
+    }
+    return 'unknown.type'
+  })
 } else {
+  hbs.registerHelper('static-asset', (type, ...parts) => {
+    const name = parts.length === 2 ? parts[0] : parts.slice(0, -1).join('')
+
+    if (type === 'js') {
+      return `/scripts/${name}`
+    }
+    if (type === 'css') {
+      return `/styles/${name}`
+    }
+    if (type === 'image') {
+      return `/images${name}`
+    }
+    return 'unknown.type'
+  })
+}
+if (isProduction) {
+  console.log('Production app detected; serving JS and CSS from disk')
+  app.use(express.static(path.join(__dirname, 'precompiled'), staticSettings))
+} else if (process.env.NODE_ENV === 'development') {
   console.log('Dev app detected; compiling JS and CSS in memory')
   app.use(sass())
-  app.use('/scripts/index.js', browserify('scripts/index.js'))
+  const webpack = require('./middleware/webpack')
+  app.use(webpack())
+} else {
+  app.use(sass())
 }
 app.get('/service-worker.js', (req, res) =>
   res.sendFile(path.resolve(__dirname, 'scripts', 'service-worker.js'))
@@ -96,12 +193,13 @@ app.use(
     },
   })
 )
-app.use(express.static(path.join(__dirname, 'public'), { redirect: false }))
-app.use('/app-img', express.static(appImgDir, { redirect: false }))
+app.use(express.static(path.join(__dirname, 'public'), staticSettings))
+app.use('/images/app-img', express.static(appImgDir, staticSettings))
 app.use(slashes(false))
 app.use(langResolver)
 app.use(contextBuilder)
 app.use(browsersync())
+app.use(useragent.express())
 
 // Routes
 const routes = require('./routes')
@@ -109,62 +207,76 @@ app.get('/', routes.home)
 app.get('/app/:slug', (req, res) => res.redirect(`/apps/${req.params.slug}`))
 app.get('/apps', routes.apps.index)
 app.get('/apps/:slug', routes.apps.show)
-app.get('/awesome', (req, res) => res.redirect('/community'))
-app.get('/blog', routes.blog.index)
-app.get('/blog/:slug', routes.blog.show)
-app.get('/blog/:y/:m/:d/:slug', routes.blog.show)
-app.get('/blog.json', routes.feed.blog)
-app.get('/blog.xml', routes.feed.blog)
-app.get('/releases.json', routes.feed.releases)
-app.get('/releases.xml', routes.feed.releases)
+app.use('/blacklivesmatter', routes.blacklivesmatter)
 app.get('/community', routes.community)
 app.get('/contact', (req, res) => res.redirect(301, '/community'))
+app.use('/crowdin', routes.languages.proxy)
 app.get('/devtron', routes.devtron)
-app.get('/docs', routes.docs.index)
+app.use('/docs', feedback)
+// The documentation is served elsewhere, see electron/electronjs.org-new
+// Moving all users landing directly in an old "docs" route to the new one
+app.get('/docs', (req, res) => res.redirect(301, '/docs/latest'))
+app.get('/docs/*', (req, res, next) => {
+  const route = req.params[0]
+  if (!route.includes('latest')) {
+    res.redirect(301, `/docs/latest/${route}`)
+  } else {
+    next()
+  }
+})
+// The requests to the following docs routes should be intercepted by Fastly and never reach
 app.get('/docs/versions', (req, res) => res.redirect(301, '/releases/stable'))
 app.get('/docs/:category', routes.docs.category)
-app.get('/docs/api/breaking-changes', (req, res) =>
-  res.redirect(301, '/docs/breaking-changes')
-)
 app.get('/docs/api/structures', routes.docs.structures)
 app.get('/docs/*/history', routes.docs.history)
 app.get('/docs/:category/*', routes.docs.show)
-app.get('/docs/latest*', (req, res) =>
-  res.redirect(req.path.replace(/^\/docs\/latest/gi, '/docs'))
-)
-app.get('/docs/v0*', (req, res) =>
-  res.redirect(req.path.replace(/^\/docs\/v0\.\d+\.\d+/gi, '/docs'))
-)
-app.get('/docs/tutorial/faq', (req, res) => res.redirect('/docs/faq'))
+app.use('/donors', routes.donors)
+app.get('/fiddle', routes.fiddle)
 app.get('/governance', routes.governance.index)
+app.use('/headers/*', routes.headers)
+app.get('/languages', routes.languages.index)
+app.get('/releases', (req, res) => res.redirect(301, '/releases/stable'))
+app.get('/releases/stable', routes.releases.index('stable'))
+app.get('/releases/beta', routes.releases.index('beta'))
+app.get('/releases/alpha', routes.releases.index('alpha'))
+app.get('/releases/nightly', routes.releases.index('nightly'))
+app.get('/releases.json', routes.feed.releases)
+app.get('/releases.xml', routes.feed.releases)
+app.get('/search/:searchIn*?*', (req, res) =>
+  res.redirect(req.query.q ? `/?query=${req.query.q}` : `/`)
+)
+app.get('/userland', routes.userland.index)
+app.get('/userland/*', routes.userland.show)
+
+// External redirects
 app.get('/issues', (req, res) =>
   res.redirect(301, 'https://github.com/electron/electronjs.org/issues')
 )
 app.get('/issues/new', (req, res) =>
   res.redirect(301, 'https://github.com/electron/electronjs.org/issues/new')
 )
-app.get('/languages', routes.languages.index)
 app.get('/maintainers/join', (req, res) =>
   res.redirect('https://airtable.com/shrNrpaXIJiRZj6bS')
 )
 app.get('/pulls', (req, res) =>
   res.redirect(301, 'https://github.com/electron/electronjs.org/pulls')
 )
-app.get('/releases', (req, res) => res.redirect(301, '/releases/stable'))
-app.get('/releases/stable', routes.releases.index('stable'))
-app.get('/releases/beta', routes.releases.index('beta'))
-app.get('/releases/nightly', routes.releases.index('nightly'))
-app.get('/spectron', routes.spectron)
-app.get('/fiddle', routes.fiddle)
-app.get('/userland', routes.userland.index)
-app.get('/userland/*', routes.userland.show)
-app.use('/crowdin', routes.languages.proxy)
-app.use('/donors', routes.donors)
-app.use('/blacklivesmatter', routes.blacklivesmatter)
-app.use('/headers/*', routes.headers)
-app.get('/search/:searchIn*?*', (req, res) =>
-  res.redirect(req.query.q ? `/?query=${req.query.q}` : `/`)
+
+// Redirected old paths
+app.get('/awesome', (req, res) => res.redirect('/community'))
+app.get('/docs/v0*', (req, res) =>
+  res.redirect(req.path.replace(/^\/docs\/v0\.\d+\.\d+/gi, '/docs'))
 )
+app.get('/docs/api/breaking-changes', (req, res) =>
+  res.redirect(301, '/docs/breaking-changes')
+)
+app.get('/docs/tutorial/faq', (req, res) => res.redirect('/docs/faq'))
+app.get('/docs/tutorial/first-app', (_, res) => {
+  res.redirect(301, '/docs/tutorial/quick-start')
+})
+app.get('/docs/tutorial/application-architecture', (_, res) => {
+  res.redirect(301, '/docs/tutorial/quick-start')
+})
 
 // Generic 404 handler
 app.use(routes._404)
@@ -172,8 +284,8 @@ app.use(routes._404)
 if (!module.parent) {
   app.listen(port, () => {
     console.log(`app running on http://localhost:${port}`)
-    if (process.env.NODE_ENV === 'production') {
-      console.log(`If you're developing, you probably want \`npm run dev\`\n\n`)
+    if (isProduction) {
+      console.log(`If you're developing, you probably want \`yarn dev\`\n\n`)
     }
   })
 }

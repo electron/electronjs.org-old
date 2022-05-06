@@ -1,31 +1,59 @@
 const i18n = require('../../lib/i18n')
+const cheerio = require('cheerio')
 
 module.exports = (req, res) => {
   const docsReadme = i18n.docs[req.language]['/docs/README']
 
+  let html
+
+  if (docsReadme.html) {
+    html = docsReadme.html
+  } else {
+    // Temporary fix to collect all section HTML
+    // can remove when docsReadme.html becomes available
+    // from electron-i18n bump.
+    html = docsReadme.sections.reduce((readmeHTML, { html: sectionHTML }) => {
+      return readmeHTML + sectionHTML
+    }, '')
+  }
+
+  const $ = cheerio.load(html)
+  const headingSelector = 'h2, h3, h4, h5, h6'
+  const sections = $(headingSelector)
+    .map((_, heading) => {
+      // grab all content between headings
+      let content = $(heading)
+        .nextUntil(headingSelector)
+        .map((_, p) => $.html(p))
+        .get()
+        .join('')
+      return { html: content }
+    })
+    .get()
+    .slice(2, -1) // slice out unused headings (faq, guides and tutorials, development)
+
   const [
-    ,
-    ,
-    // Not used: https://github.com/electron/electron/tree/master/docs#official-guides
-    // Not used: https://github.com/electron/electron/tree/master/docs#faq
-    // https://github.com/electron/electron/tree/master/docs#guides-and-tutorials
-    guides,
-    // https://github.com/electron/electron/tree/master/docs#detailed-tutorials
+    guidesQuickstart,
+    guidesBasic,
+    guidesAdvanced,
+    // https://github.com/electron/electron/tree/main/docs#detailed-tutorials
     detailedTutorials,
-    // https://github.com/electron/electron/tree/master/docs#api-references
+    // https://github.com/electron/electron/tree/main/docs#api-references
     apiReference,
-    // https://github.com/electron/electron/tree/master/docs#custom-dom-elements
+    // https://github.com/electron/electron/tree/main/docs#custom-dom-elements
     customDomElements,
-    // https://github.com/electron/electron/tree/master/docs#modules-for-the-main-process
+    // https://github.com/electron/electron/tree/main/docs#modules-for-the-main-process
     mainProcModules,
-    // https://github.com/electron/electron/tree/master/docs#modules-for-the-renderer-process-web-page
+    // https://github.com/electron/electron/tree/main/docs#modules-for-the-renderer-process-web-page
     rendererProcModules,
-    // https://github.com/electron/electron/tree/master/docs#modules-for-both-processes
+    // https://github.com/electron/electron/tree/main/docs#modules-for-both-processes
     bothProcModules,
-  ] = docsReadme.sections
+  ] = sections
 
   const context = Object.assign(req.context, {
-    guides,
+    guidesQuickstart,
+    guidesBasic,
+    guidesAdvanced,
     detailedTutorials,
     apiReference,
     customDomElements,
@@ -34,7 +62,7 @@ module.exports = (req, res) => {
     bothProcModules,
   })
 
-  // Taken from https://github.com/electron/electron/tree/master/docs
+  // Taken from https://github.com/electron/electron/tree/main/docs
 
   res.render('docs/index', context)
 }

@@ -12,19 +12,27 @@
       <nav class="footer-nav">
         <ul class="footer-nav-list m-0">
           <li class="footer-nav-item"><a href="/">Electron</a></li>
-          <li class="footer-nav-item"><a href="/docs">{{localized.nav.docs}}</a></li>
+          {{#eq currentLocale "en-US"}}
+          <li class="footer-nav-item"><a href="/docs/latest">{{localized.nav.docs}}</a></li>
+          {{else}}
+          <li class="footer-nav-item"><a href="/{{ to2CharLocale currentLocale }}/docs/latest">{{localized.nav.docs}}</a></li>
+          {{/eq}}
           <li class="footer-nav-item"><a href="/releases/stable">{{localized.nav.releases}}</a></li>
+          {{#eq currentLocale "en-US"}}
           <li class="footer-nav-item"><a href="/blog">{{localized.nav.blog}}</a></li>
+          {{else}}
+          <li class="footer-nav-item"><a href="/{{ to2CharLocale currentLocale }}/blog">{{localized.nav.blog}}</a></li>
+          {{/eq}}
           <li class="footer-nav-item"><a href="/apps">{{localized.nav.apps}}</a></li>
           <li class="footer-nav-item"><a href="/governance">{{localized.nav.governance}}</a></li>
           <li class="footer-nav-item"><a href="/community">{{localized.nav.community}}</a></li>
           <li><a class="footer-nav-item"
-              href="https://github.com/electron/electron/tree/master/CODE_OF_CONDUCT.md">{{localized.nav.code_of_conduct}}</a>
+              href="https://github.com/electron/electron/tree/main/CODE_OF_CONDUCT.md">{{localized.nav.code_of_conduct}}</a>
           </li>
           <li><a class="footer-nav-item"
-              href="https://github.com/electron/electron/tree/master/LICENSE">{{localized.nav.license}}</a></li>
+              href="https://github.com/electron/electron/tree/main/LICENSE">{{localized.nav.license}}</a></li>
           <li><a class="footer-nav-item"
-              href="https://github.com/electron/electron/tree/master/SECURITY.md">{{localized.nav.security}}</a></li>
+              href="https://github.com/electron/electron/tree/main/SECURITY.md">{{localized.nav.security}}</a></li>
           <li class="footer-nav-item"><a href="/donors">{{localized.nav.donors}}</a></li>
           <li class="footer-nav-item"><a href="/languages">{{localized.nav.languages}}</a></li>
           <li class="footer-nav-item"><a href="/contact">{{localized.nav.contact}}</a></li>
@@ -32,7 +40,7 @@
       </nav>
     </div>
     <div class="footer-openjs col-md-12 col-lg-8 float-right p-4 f6">
-      <img class="footer-openjs-logo mb-4" src="/images/openjsf.svg" alt="OpenJS Foundation" />
+      <img class="footer-openjs-logo mb-4" src="{{ static-asset 'image' '/openjsf.svg'}}" alt="OpenJS Foundation" />
       <p>Copyright <a href="https://openjsf.org">OpenJS Foundation</a> and Electron contributors. All rights
         reserved. The <a href="https://openjsf.org">OpenJS Foundation</a> has registered trademarks and uses trademarks.
         For a list of trademarks of the <a href="https://openjsf.org">OpenJS Foundation</a>, please see our <a

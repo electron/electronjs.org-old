@@ -1,4 +1,3 @@
-const featuredCompanies = require('../lib/featured-companies')
 const featuredApps = require('../lib/featured-apps')
 
 module.exports = (req, res) => {
@@ -12,7 +11,6 @@ module.exports = (req, res) => {
   })
 
   const context = Object.assign(req.context, {
-    companies: featuredCompanies,
     apps,
   })
 

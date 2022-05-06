@@ -25,14 +25,15 @@ feel free to propose changes to this document in a pull request.
 - [Context](#context)
 - [Styles](#styles)
 - [Frontend JavaScript](#frontend-javascript)
+- [Google Analytics Events](#google-analytics-events)
 - [Scripts](#scripts)
 - [Environment Variables](#environment-variables)
 
 ## Issues and Pull Requests
 
-* If you're not sure about adding something, [open an issue](https://github.com/electron/electronjs.org/issues/new) to discuss it.
-* Feel free to open a Pull Request early so that a discussion can be had as changes are developed.
-* Include screenshots and animated gifs of your changes whenever possible.
+- If you're not sure about adding something, [open an issue](https://github.com/electron/electronjs.org/issues/new) to discuss it.
+- Feel free to open a Pull Request early so that a discussion can be had as changes are developed.
+- Include screenshots and animated gifs of your changes whenever possible.
 
 ## Commit Messages and Pull Request Titles
 
@@ -43,7 +44,7 @@ Example: `fix: make header bold`
 
 ### Pull Request Title
 
-Same as commit messages, prepend the type of change being made (refactor, fix, chore, feat, etc.) 
+Same as commit messages, prepend the type of change being made (refactor, fix, chore, feat, etc.)
 Example: `docs: add linux setup instructions`
 
 ## Heroku Review Apps
@@ -71,8 +72,8 @@ Follow these steps to copy this repository to your computer and build the site:
 ```bash
 git clone https://github.com/electron/electronjs.org
 cd electronjs.org
-npm install
-npm run dev
+yarn install
+yarn dev
 ```
 
 You should now have an Express server running at
@@ -82,7 +83,7 @@ You should now have an Express server running at
 
 If there is an error building the `node-sass` dependency, try running `npm rebuild node-sass`.
 
-**Note**: If errors are still shown after you have installed all the dependencies, try to delete the `node_modules` directory in your project and run `npm install` again. 
+**Note**: If errors are still shown after you have installed all the dependencies, try to delete the `node_modules` directory in your project and run `yarn` again.
 
 Read on for more info about the structure of the site.
 
@@ -108,33 +109,7 @@ The website has a page at [electronjs.org/apps](https://electronjs.org/apps) tha
 
 ### Blog
 
-Blog posts live in this repo, in [/data/blog](/data/blog).
-
-Blogs are written in "Jekyll style", with YML frontmatter at the top for
-metadata. The `title`, `author`, and `date` properties should be set
-on all posts:
-
-```
----
-title: 'I am a blog post'
-author: zeke
-date: '2017-03-14'
----
-
-A thing happened, and this is some intro content about it.
-
----
-
-I am the rest of the post. Those three dashes above me designate
-the cutoff point for the post summary that's displayed on the
-/blog index page
-```
-
-A few guidelines to keep in mind when publishing a blog post:
-
-* Posts should normally be published on Tuesday mornings (Pacific time) for maximum social reach.
-* Make sure the date in the filename is today's date
-* Tweet about it once the post is live!
+Blog posts have been moved to https://github.com/electron/electronjs.org-new
 
 ### Localized Strings
 
@@ -148,7 +123,7 @@ if no translation exists yet.
 To use localized strings in views, use the `localized` object, which is generated
 automatically by the [context middleware](#context):
 
-```html
+```hbs
 <p>{{{localized.web_technologies.description}}}</p>
 ```
 
@@ -341,6 +316,21 @@ Like the [Sass middleware](#styles), no compiled JavaScript code is written to
 disk. When a GET request is made to `/scripts/index.js`, the server dynamically
 compiles the `scripts/index.js` file to browser-compatible ES5.
 
+## Google Analytics Events
+
+We use [Google Analytics Events](https://developers.google.com/analytics/devguides/collection/analyticsjs/events)
+to measure usage of features that we provide on the website.
+
+To add an event, you need to provide `data-sc-category` and `data-sc-name`
+properties to an element in the DOM. If `data-sc-category` is not provided,
+`general` will be used as a default category for the event.
+
+### Example
+
+```hbs
+<button data-sc-category="docs" data-sc-name="Docs page opening">Open docs page</button>
+```
+
 ## Scripts
 
 This repo follows the [Scripts to Rule Them All](https://github.com/github/scripts-to-rule-them-all)
@@ -365,6 +355,11 @@ file. To list all available commands, type `npm run`.
 [electron/electron-i18n]: https://github.com/electron/electron-i18n
 
 ## Need Help?
+### [Join](https://discord.com/invite/APGC3k5yaH) The Discord Server!
+Join the Discord server to get connected to thousands of devs creating awesome projects with Electron
+  - Get help regarding any issue you are facing.
+  - Make new friends, working in the same space
+  - Find amazing projects to contribute to, or help others with their issues
 
 If any of this information confusing, incorrect, or incomplete, feel free to
 [open an issue](https://github.com/electron/electronjs.org/issues/new)

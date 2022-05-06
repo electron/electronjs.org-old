@@ -679,13 +679,6 @@
     "subscribersCount": 26
   },
   {
-    "fullName": "electron/spectron",
-    "description": "Test Electron apps using ChromeDriver",
-    "forksCount": 61,
-    "stargazersCount": 622,
-    "subscribersCount": 33
-  },
-  {
     "fullName": "dchest/tweetnacl-js",
     "description": "Port of TweetNaCl cryptographic library to JavaScript",
     "forksCount": 60,

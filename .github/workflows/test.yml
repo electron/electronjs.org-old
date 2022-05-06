@@ -16,18 +16,18 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: Use Node.js 12
-        uses: actions/setup-node@v1
+      - name: Use Node.js 14
+        uses: actions/setup-node@v2.4.1
         with:
-          node-version: 12
-      - uses: actions/cache@v1
+          node-version: 14
+      - uses: actions/cache@v2.1.6
         with:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
-      - run: npm ci
-      - run: npm test
+      - run: yarn install --frozen-lockfile
+      - run: yarn test
         env:
           CI: true
 
@@ -38,17 +38,17 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: Use Node.js 12
-        uses: actions/setup-node@v1
+      - name: Use Node.js 14
+        uses: actions/setup-node@v2.4.1
         with:
-          node-version: 12
-      - uses: actions/cache@v1
+          node-version: 14
+      - uses: actions/cache@v2.1.6
         with:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
-      - run: npm ci
-      - run: npm run integration
+      - run: yarn install --frozen-lockfile
+      - run: yarn run integration
         env:
           CI: true

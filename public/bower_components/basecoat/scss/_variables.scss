@@ -94,16 +94,6 @@ $spacers: (
   $spacer * 12
 );
 
-// Aliases for easy use
-$spacer1: nth($spacers, 2); // 3px
-$spacer2: nth($spacers, 3); // 6px
-$spacer3: nth($spacers, 4); // 12px
-$spacer4: nth($spacers, 5); // 24px
-$spacer5: nth($spacers, 6); // 36px
-$spacer6: nth($spacers, 7); // 48px
-$spacer7: nth($spacers, 8); // 60px
-$spacer8: nth($spacers, 9); // 72px
-
 //
 // COLORS
 //

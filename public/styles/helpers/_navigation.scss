@@ -31,13 +31,13 @@
 }
 
 .menu {
-  margin-top: $spacer5;
+  margin-top: $spacer-5;
   margin-bottom: 15px;
   list-style: none;
   background-color: $white !important;
   border: 1px solid $border-color !important;
   border-radius: $border-radius;
-  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 // Site Header
@@ -50,18 +50,20 @@
   -webkit-font-smoothing: antialiased;
   padding-top: 25px;
   padding-bottom: 25px;
-  padding-left: $spacer3;
-  padding-right: $spacer3;
+  padding-left: $spacer-3;
+  padding-right: $spacer-3;
   text-align: center;
 
-  a {
+  a,
+  button {
     color: inherit;
     transition: all 0.3s;
-  
+
     &.active,
     &:hover {
       color: $jumbo-color-strong;
     }
+
     &:active {
       color: $jumbo-color-subtle;
     }
@@ -91,7 +93,9 @@
     margin-left: 20px;
   }
 
-  &.active, &:active, &:hover {
+  &.active,
+  &:active,
+  &:hover {
     border-bottom-color: $jumbo-color-strong;
     text-decoration: none;
   }
@@ -101,12 +105,14 @@
   }
 
   &.bordered {
+    background-color: transparent;
     border: 1px solid $jumbo-color-strong;
     border-radius: 3px;
     padding: 0 7px;
     opacity: 0.7;
     font-size: 12px;
     line-height: 2;
+    cursor: pointer;
   }
 }
 
@@ -124,6 +130,7 @@
   .svg-fill {
     fill: currentColor;
   }
+
   .svg-stroke {
     stroke: currentColor;
     stroke-width: 1.2;
@@ -136,18 +143,22 @@
   .site-header {
     text-align: center;
   }
+
   .site-header-logo,
   .site-header-nav {
     float: none;
   }
 }
-.site-header-logo { @include breakpoint(lg) { float: left; } }
-.site-header-nav  { @include breakpoint(lg) { float: right; } }
+
+html[dir="ltr"] {
+  .site-header-logo { @include breakpoint(lg) { float: left; } }
+  .site-header-nav { @include breakpoint(lg) { float: right; } }
+}
 
 // swap logo and nav for right-to-left languages
 html[dir="rtl"] {
   .site-header-logo { @include breakpoint(lg) { float: right; } }
-  .site-header-nav  { @include breakpoint(lg) { float: left; } }
+  .site-header-nav { @include breakpoint(lg) { float: left; } }
 
   .site-header-nav-item {
     + .site-header-nav-item {

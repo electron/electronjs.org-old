@@ -18,4 +18,5 @@ progress[value]::-webkit-progress-value {
   height: 0;
   transition: height 0.2s ease-out;
   overflow: hidden;
+  visibility: hidden;
 }

@@ -8,7 +8,7 @@ const nock = require('nock')
 const cheerio = require('cheerio')
 const chai = require('chai')
 const i18n = require('../lib/i18n')
-chai.should()
+const should = chai.should()
 chai.use(require('chai-cheerio'))
 const app = require('../server.js')
 
@@ -26,16 +26,6 @@ describe('electronjs.org', () => {
   })
 
   describe('feeds', () => {
-    test('blog feeds', async () => {
-      let res = await supertest(app).get(`/blog.json`)
-      res.headers['content-type'].should.equal(
-        'application/json; charset=utf-8'
-      )
-      res.body.title.should.equal('Electron')
-      res = await supertest(app).get(`/blog.xml`)
-      res.headers['content-type'].should.equal('text/xml; charset=utf-8')
-    })
-
     test('releases feeds', async () => {
       let res = await supertest(app).get(`/releases.json`)
       res.headers['content-type'].should.equal(
@@ -97,7 +87,7 @@ describe('electronjs.org', () => {
     test('displays Code of Conduct link in the footer', async () => {
       const $ = await get('/')
       $(
-        'a.footer-nav-item[href="https://github.com/electron/electron/tree/master/CODE_OF_CONDUCT.md"]'
+        'a.footer-nav-item[href="https://github.com/electron/electron/tree/main/CODE_OF_CONDUCT.md"]'
       )
         .text()
         .should.eq('Code of Conduct')
@@ -106,7 +96,7 @@ describe('electronjs.org', () => {
     test('displays Security link in the footer', async () => {
       const $ = await get('/')
       $(
-        'a.footer-nav-item[href="https://github.com/electron/electron/tree/master/SECURITY.md"]'
+        'a.footer-nav-item[href="https://github.com/electron/electron/tree/main/SECURITY.md"]'
       )
         .text()
         .should.eq('Security')
@@ -115,7 +105,7 @@ describe('electronjs.org', () => {
     test('displays License link in the footer', async () => {
       const $ = await get('/')
       $(
-        'a.footer-nav-item[href="https://github.com/electron/electron/tree/master/LICENSE"]'
+        'a.footer-nav-item[href="https://github.com/electron/electron/tree/main/LICENSE"]'
       )
         .text()
         .should.eq('License')
@@ -189,13 +179,11 @@ describe('electronjs.org', () => {
     })
   })
 
-  describe('docs', () => {
+  describe.skip('docs', () => {
     test('index', async () => {
       const $ = await get('/docs')
       $('header').should.have.class('site-header')
-      $(
-        'a[href="/docs/tutorial/development-environment#setting-up-macos"]'
-      ).should.have.text('Setting up macOS')
+      $('a[href="/docs/tutorial/quick-start"]').should.have.text('Quick Start')
       $('a[href="/docs/api/auto-updater"]').should.have.text('autoUpdater')
     })
 
@@ -254,17 +242,6 @@ describe('electronjs.org', () => {
         .should.eq('Create and control browser windows.')
     })
 
-    test('docs/all', async () => {
-      const $ = await get('/docs/all')
-      $('head > title').text().should.eq('All the Electron Docs! | Electron')
-      const titles = $('h1')
-        .map((i, el) => $(el).text())
-        .get()
-      titles.should.include('BluetoothDevice Object') // API Structures
-      titles.should.include('BrowserWindow') // API Docs
-      titles.should.include('Application Distribution') // Tutorials
-    })
-
     test('docs/api', async () => {
       const $ = await get('/docs/api')
       $('tr').length.should.be.above(10)
@@ -290,46 +267,46 @@ describe('electronjs.org', () => {
       res.statusCode.should.equal(404)
     })
 
-    describe('docs footer', () => {
+    describe('docs actions', () => {
       test('includes a link to edit the doc on GitHub', async () => {
         const $ = await get('/docs/api/accelerator')
-        $('.propose-change')
-          .attr('href')
-          .should.eq(
-            'https://github.com/electron/electron/tree/master/docs/api/accelerator.md'
+        should.exist(
+          $(
+            '[href="https://github.com/electron/electron/tree/main/docs/api/accelerator.md"]'
           )
+        )
       })
 
-      test('includes a link to translate the doc on Crowdin', async () => {
+      test('includes a link to translate the doc on Crowdin for Chinese Simplified', async () => {
         const res = await supertest(app)
           .get('/docs/api/accelerator')
           .set('Cookie', ['language=zh-CN'])
         const $ = cheerio.load(res.text)
-        $('.translate-on-crowdin')
-          .attr('href')
-          .should.eq('https://crowdin.com/translate/electron/63/en-zhcn')
+        should.exist(
+          $('[href="https://crowdin.com/translate/electron/256277/en-zhcn"]')
+        )
       })
 
-      test('includes a link to translate the doc on Crowdin for Indonesian', async () => {
+      test('includes a link to translate the doc on Crowdin for French', async () => {
         const res = await supertest(app)
           .get('/docs/api/crash-reporter')
-          .set('Cookie', ['language=id-ID'])
+          .set('Cookie', ['language=fr-FR'])
         const $ = cheerio.load(res.text)
-        $('.translate-on-crowdin')
-          .attr('href')
-          .should.eq('https://crowdin.com/translate/electron/74/en-id')
+        should.exist(
+          $('[href="https://crowdin.com/translate/electron/256303/en-fr"]')
+        )
       })
 
       test('includes a link to Crowdin language picker when language is English', async () => {
         // Crowdin displays a nice language picker when target language does not exist
-        // See https://git.io/vx1TI
+        // See https://user-images.githubusercontent.com/2289/38279258-52e45e86-3754-11e8-93c4-6acb38eaa44e.png
         const res = await supertest(app)
           .get('/docs/api/browser-view')
           .set('Cookie', ['language=en-US'])
         const $ = cheerio.load(res.text)
-        $('.translate-on-crowdin')
-          .attr('href')
-          .should.eq('https://crowdin.com/translate/electron/66/en-en')
+        should.exist(
+          $('[href="https://crowdin.com/translate/electron/256283/en-en"]')
+        )
       })
 
       test('includes a link to view doc history', async () => {
@@ -341,7 +318,7 @@ describe('electronjs.org', () => {
     })
   })
 
-  describe('language toggle on docs', () => {
+  describe.skip('language toggle on docs', () => {
     test('each localized documentation section should have an corresponding english section', async () => {
       const res = await supertest(app)
         .get('/docs/tutorial/desktop-environment-integration')
@@ -367,16 +344,6 @@ describe('electronjs.org', () => {
       $('.docs .sub-section[data-lang="en-US"]').each((i, elem) => {
         $(elem).should.have.class('hidden')
       })
-    })
-
-    test('docs/all should not load any english section', async () => {
-      const res = await supertest(app)
-        .get('/docs/all')
-        .set('Cookie', ['language=zh-CN'])
-      const $ = cheerio.load(res.text)
-      $('.docs .sub-section[data-lang="zh-CN"]').length.should.be.above(0)
-      $('.docs .sub-section[data-lang="en-US"]').length.should.equal(0)
-      $('.docs button.en-toggle').length.should.equal(0)
     })
   })
 
@@ -421,6 +388,23 @@ describe('electronjs.org', () => {
       })
     })
 
+    test('/releases/alpha', async () => {
+      const $ = await get('/releases/alpha')
+      $('h1').text().should.include('Releases')
+      $('.release-entry').length.should.be.at.least(2)
+      $('a.releases-link-alpha').hasClass('active').should.eq(true)
+      const pages = $('.paginate-container .page-link').last()
+      const lastPage = parseInt(pages.text().trim(), 10)
+      lastPage.should.be.at.least(1)
+
+      const titles = $('.release-entry')
+        .map((i, el) => $(el).text().trim())
+        .get()
+      titles.forEach((title) => {
+        title.should.match(/Electron \d+\.\d+\.\d+-alpha\.\d+/)
+      })
+    })
+
     test('/releases/nightly', async () => {
       const $ = await get('/releases/nightly')
       $('h1').text().should.include('Releases')
@@ -438,7 +422,7 @@ describe('electronjs.org', () => {
       })
     })
 
-    test('/docs/versions redirects to /releases/stable', async () => {
+    test.skip('/docs/versions redirects to /releases/stable', async () => {
       const res = await supertest(app).get('/docs/versions')
       res.statusCode.should.be.equal(301)
       res.headers.location.should.equal('/releases/stable')
@@ -450,18 +434,6 @@ describe('electronjs.org', () => {
       const $ = await get('/userland/404')
       $('.error-page').text().should.include('Page not found')
     })
-  })
-
-  test('/blog', async () => {
-    const $ = await get('/blog')
-    $('header').should.have.class('site-header')
-    $('.posts-list li').length.should.be.above(10)
-  })
-
-  test('/blog/webtorrent', async () => {
-    const $ = await get('/blog/webtorrent')
-    $('header').should.have.class('site-header')
-    // TODO: post title is page title
   })
 
   test('/awesome', async () => {
@@ -486,11 +458,11 @@ describe('electronjs.org', () => {
     test('includes localized content', async () => {
       const res = await supertest(app)
         .get('/community')
-        .set('Cookie', ['language=vi-VN'])
+        .set('Cookie', ['language=fr-FR'])
       const $ = cheerio.load(res.text)
-      $('.subtron .container-narrow h1')
+      $('.subtron .container-lg h1')
         .text()
-        .should.eq(i18n.website['vi-VN'].community.title)
+        .should.eq(i18n.website['fr-FR'].community.title)
     })
 
     test('/contact redirects to /community', async () => {
@@ -512,19 +484,6 @@ describe('electronjs.org', () => {
     })
   })
 
-  describe('devtron and spectron', () => {
-    test('Test existed landing pages', async () => {
-      let $ = await get('/devtron')
-      $('.jumbotron-lead .jumbotron-lead-muted')
-        .text()
-        .should.eq('An Electron DevTools Extension')
-      $ = await get('/spectron')
-      $('.jumbotron-lead .jumbotron-lead-muted')
-        .text()
-        .should.eq('An Electron Testing Framework')
-    })
-  })
-
   describe('electron fiddle', () => {
     test('Fiddle landing page existed', async () => {
       const $ = await get('/fiddle')
@@ -541,7 +500,7 @@ describe('electronjs.org', () => {
       $('body').text().should.include('global developer community')
     })
 
-    test('language query param for one-off viewing in other languages', async () => {
+    test.skip('language query param for one-off viewing in other languages', async () => {
       const frenchContent = 'fenêtres'
       const sesh = session(app)
 
@@ -555,7 +514,7 @@ describe('electronjs.org', () => {
       $('blockquote').text().should.not.include(frenchContent)
     })
 
-    test('incompleted language query param redirects with the correct language', async () => {
+    test.skip('incompleted language query param redirects with the correct language', async () => {
       // Missing region
       let res = await supertest(app).get('/docs/api/browser-window?lang=fr')
       res.statusCode.should.be.equal(302)
@@ -576,39 +535,13 @@ describe('electronjs.org', () => {
       res.headers.location.should.equal('/docs/api/browser-window?lang=es-ES')
     })
 
-    test('language query param wont redirects with the correct language', async () => {
+    test.skip('language query param wont redirects with the correct language', async () => {
       // without language query is not redirected (200)
       let res = await supertest(app).get('/docs/api/browser-window')
       res.statusCode.should.be.equal(200)
 
       // valid language query is not redirected (200)
-      const langs = [
-        'ar-SA',
-        'bg-BG',
-        'cs-CZ',
-        'de-DE',
-        'en-US',
-        'es-ES',
-        'fa-IR',
-        'fil-PH',
-        'fr-FR',
-        'hi-IN',
-        'id-ID',
-        'it-IT',
-        'ja-JP',
-        'ko-KR',
-        'nl-NL',
-        'pl-PL',
-        'pt-BR',
-        'ru-RU',
-        'th-TH',
-        'tr-TR',
-        'uk-UA',
-        'vi-VN',
-        'zh-CN',
-        'zh-TW',
-      ]
-      for (let lang of langs) {
+      for (let lang of i18n.languageAllowList) {
         res = await supertest(app).get(`/docs/api/browser-window?lang=${lang}`)
         res.statusCode.should.be.equal(200)
         res.statusCode.should.equal(200)
@@ -622,23 +555,18 @@ describe('electronjs.org', () => {
         $('html').attr('dir').should.equal('ltr')
       })
 
-      test('is `rtl` for Arabic', async () => {
+      // note that we don't support RTL languages at the moment
+      test.skip('is `rtl` for Arabic', async () => {
         const res = await supertest(app).get(`/?lang=ar-SA`)
         const $ = cheerio.load(res.text)
         $('html').attr('dir').should.equal('rtl')
       })
 
-      test('is `rtl` for Hebrew', async () => {
+      test.skip('is `rtl` for Hebrew', async () => {
         const res = await supertest(app).get(`/?lang=he-IL`)
         const $ = cheerio.load(res.text)
         $('html').attr('dir').should.equal('rtl')
       })
-    })
-
-    test('redirects for date-style blog URLs', async () => {
-      const res = await supertest(app).get('/blog/2017/06/01/typescript')
-      res.statusCode.should.be.above(300).and.below(303)
-      res.headers.location.should.equal('/blog/typescript')
     })
 
     test('redirects trailing slashes', async () => {

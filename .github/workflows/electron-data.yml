@@ -1,0 +1,42 @@
+name: Update electron-* data packages
+on:
+  schedule:
+    - cron: "0 18 * * *"
+
+jobs:
+  updateElectronDataPackages:
+    name: Auto-update Electron data
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Fetch git branches
+        run: git fetch --no-tags --prune --depth=1 origin +refs/heads/*:refs/remotes/origin/*
+      - uses: actions/setup-node@v2.4.1
+        with:
+          node-version: '12.x'
+      - run: yarn install --frozen-lockfile
+      - name: Switch to update branch
+        run: |
+          if git branch --remotes | grep -q origin/update-data; then
+            git checkout update-data
+          else
+            git checkout -b update-data
+          fi
+      - run: npm run update-data
+      - name: Commit package update changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "machine github.com login $GITHUB_ACTOR password $GITHUB_TOKEN" > ~/.netrc
+          chmod 600 ~/.netrc
+          git add package.json yarn.lock
+          if test -n "$( git status -s)"; then
+            git config user.name "$GITHUB_ACTOR"
+            git config user.email "electron-bot@users.noreply.github.com"
+            git diff
+            git commit -m "build(deps): update electron data packages"
+             git push --set-upstream origin update-data
+            node --unhandled-rejections=strict .github/actions/create-pr.js
+          else
+            echo No update needed
+          fi

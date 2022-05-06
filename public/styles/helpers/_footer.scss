@@ -5,6 +5,7 @@
 
   a {
     color: $main-color-strong;
+
     &:hover {
       color: $main-color-subtle;
     }
@@ -36,6 +37,7 @@
 
 a.footer-social-icon {
   font-size: 200%;
+
   &:hover {
     text-decoration: none;
   }

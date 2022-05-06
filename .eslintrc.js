@@ -3,5 +3,6 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module',
   },
-  extends: ['prettier', 'plugin:prettier/recommended'],
+  extends: ['plugin:prettier/recommended'],
+  ignorePatterns: ['precompiled/**/*.js'],
 }

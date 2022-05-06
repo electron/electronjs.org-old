@@ -1,6 +1,6 @@
 <div class="app-result">
   <a class="app-result-icon-link" href="/apps/{{slug}}">
-    <img class="app-result-icon" src="/app-img/{{slug}}/{{icon32}}" alt="{{slug}} icon">
+    <img class="app-result-icon" src="{{ static-asset 'image' '/app-img/' slug '/' icon32 }}" alt="{{slug}} icon">
   </a>
   <span class="search-small-text"><a href="/apps/{{slug}}">{{{name}}}</a> - {{{_highlightResult.description.value}}}</span>
 </div>

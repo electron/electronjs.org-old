@@ -1,0 +1,27 @@
+{{#if feedbackEmbedCode}}
+  {{#if debugging}}
+  <script>document.cookie = 'smcx_0_last_shown_at=;expires=Thu, 01 Jan 1970 00:00:01 GMT;';</script>
+  {{/if}}
+  <style>
+/* By default min height is 300 and position
+     in the center (and can't be tweaked).
+     Also we want only screens with enough
+     space to show the pop up.
+
+     TODO: Might be interesting to animate the
+     entrance instead of just popping up
+  */
+.smcx-widget.smcx-modal {
+  height: 220px;
+  bottom: 0;
+  right: 0;
+  top: auto;
+  left: auto;
+}
+
+body > div.smcx-widget.smcx-modal > div.smcx-modal-content {
+  height: 200px;
+}
+  </style>
+  <script>(function(t,e,s,o){var n,a,c;t.SMCX=t.SMCX||[],e.getElementById(o)||(n=e.getElementsByTagName(s),a=n[n.length-1],c=e.createElement(s),c.type="text/javascript",c.async=!0,c.id=o,c.src="https://widget.surveymonkey.com/collect/website/js/{{{feedbackEmbedCode}}}.js",a.parentNode.insertBefore(c,a))})(window,document,"script","smcx-sdk");</script>
+{{/if}}

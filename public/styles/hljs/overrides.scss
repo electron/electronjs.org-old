@@ -22,11 +22,12 @@
     }
   }
 
-  .btn-launch, .btn-clipboard {
+  .btn-launch,
+  .btn-clipboard {
     background-color: #f8f8f8;
     border: none;
     outline: 0;
-    padding: .25rem .5rem;
+    padding: 0.25rem 0.5rem;
     transition: 0.2s;
 
     &:hover {
@@ -41,6 +42,7 @@
 
 .markdown-body pre {
   @extend %markdown-pre;
+
   .PRIMER-REMOVE-ME & {
     @extend %markdown-pre;
   }
@@ -52,6 +54,7 @@
   overflow: auto;
   position: relative;
   line-height: 1.6;
+
   &::before {
     letter-spacing: inherit;
     content: '';

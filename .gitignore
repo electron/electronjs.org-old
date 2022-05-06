@@ -6,9 +6,10 @@ npm-debug.log
 images/crushed
 .env
 css/**/*.css
-yarn.lock
+cypress/screenshots/*
 cypress/videos/*
 /precompiled/
 .nyc_output
 coverage
 .DS_Store
+.vscode

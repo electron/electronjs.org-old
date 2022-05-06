@@ -29,7 +29,6 @@ keyboard_modal:
 
 docs:
   title: Electron Documentation
-  description: See all of the <a href="/docs/all">docs on one page</a> or check out the <a href="/docs/faq">FAQ</a>.
   guides: "Guides: Getting Started with Electron"
   api_reference: API Reference
   api_structures: API Structures
@@ -39,11 +38,9 @@ docs:
   main_proc_modules: Main Process Modules
   renderer_proc_modules: Renderer Process Modules
   both_proc_modules: Modules for Both Process Types
-  footer:
-    propose_change: Improve this doc
-    version_history: Version history
-    translate: Translate this doc
-    view_all_docs: All Docs on One Page
+  propose_change: Improve this doc
+  version_history: Version history
+  translate: Translate this doc
 
 languages:
   choose_language: Choose Your Site Language
@@ -57,9 +54,8 @@ community:
     Resources for connecting with people working on Electron.
   channels:
     get_started:
-      "<a href='/docs/tutorial/first-app'><b>Get started</b></a>
-      building an app by reading the
-      <a href='/docs/tutorial/first-app'>quick-start guide</a>."
+      "<a href='/docs/latest/'><b>Get started</b></a>
+      building an app by reading the documentation."
     updates:
       "<a href='https://twitter.com/electronjs'><b>Stay up to date</b></a>
       by following
@@ -71,11 +67,9 @@ community:
       by visiting the
       <a href='/languages'>languages page</a>."
     help:
-      "<a href='https://discuss.atom.io/t/join-us-on-slack/16638'><b>Get help and feedback</b></a>
+      "<b>Get help and feedback</b>
       by joining the
-      <a href='https://discuss.atom.io/t/join-us-on-slack/16638'>atomio Slack</a>,
-      posting on
-      <a href='https://discuss.atom.io/c/electron'>Discuss</a>,
+      <a href='https://discord.com/invite/APGC3k5yaH'>Discord server</a>,
       or visiting
       <a href='https://stackoverflow.com/questions/tagged/electron'>Stack Overflow</a>."
     security:
@@ -132,6 +126,8 @@ releases:
   stable_desc: Regular, supported releases
   beta_releases: Beta Releases
   beta_desc: Test your app with upcoming changes
+  alpha_releases: Alpha Releases
+  alpha_desc: Test features slightly more on the edge
   nightly_releases: Nightly Releases
   nightly_desc: Experiment with the latest features
   next: Next
@@ -165,8 +161,8 @@ web_technologies:
 open_source:
   title: Open Source
   description:
-    Electron is an open source project maintained by GitHub and an active
-    community of contributors.
+    Electron is an open source project maintained by the OpenJS Foundation
+    and an active community of contributors.
 
 cross_platform:
   title: Cross Platform
@@ -190,17 +186,11 @@ get_started:
     installers.
 
 explore:
-  title: Explore the Electron APIs
-  description:
-    "The <a href='https://github.com/electron/electron-api-demos'>Electron API Demos app</a>
-    interactively demonstrates the most important features of the Electron API.
-    See what's possible with Electron with sample code and helpful tips for
-    building your app."
-  fiddle_title: Try more powerful experiments with Electron Fiddle
+  fiddle_title: Try powerful experiments with Electron Fiddle
   see_more_info: See more info
 
+download: Download
 download_from_github: Download from GitHub
-view_all_releases_on_github: <a href="https://github.com/electron/electron-api-demos/releases">View all releases</a> on GitHub
 
 quick_start:
   title:
@@ -215,7 +205,7 @@ quick_start:
 
 need_help:
   title: Need Help?
-  description: Ask questions in the <a href='https://discuss.atom.io/c/electron'>Discuss</a> forum or our <a href='http://atom-slack.herokuapp.com/'>Slack</a> channel. Follow <a href="https://twitter.com/electronjs">@electronjs</a> on Twitter for important announcements. Need to privately reach out? Email <a href="mailto:info@electronjs.org">info@electronjs.org</a>.
+  description: Ask questions in the <a href='https://discord.gg/electronjs'>Discord server</a>. Follow <a href="https://twitter.com/electronjs">@electronjs</a> on Twitter for important announcements. Need to privately reach out? Email <a href="mailto:info@electronjs.org">info@electronjs.org</a>.
 
 headings:
   languages: Languages
@@ -260,8 +250,6 @@ fiddle_launch_button:
   launch: Launch
   launch_in_fiddle: Launch in Fiddle
 
-or: or
-
 pages:
   '/':
     title: Electron | Build cross-platform desktop apps with JavaScript, HTML, and CSS.
@@ -272,9 +260,6 @@ pages:
   '/docs':
     title: Documentation
     description: Guides and API reference documentation for the latest Electron release
-  '/docs/all':
-    title: All the Electron Docs!
-    description: All of Electron's guides and API documentation on a single, searchable page.
   '/docs/api':
     title: API
     description: API reference documentation for the latest Electron release
@@ -301,9 +286,6 @@ pages:
   '/devtron':
     title: Devtron
     description: Devtron is an open source tool to help you inspect, monitor, and debug your Electron app. Built on top of the amazing Chrome Developer Tools.
-  '/spectron':
-    title: Spectron
-    description: Spectron is an open source framework for easily writing integrations tests for your Electron app. Built on top of ChromeDriver and WebDriverIO.
   '/fiddle':
     title: Electron Fiddle
     description: The easiest way to get started with Electron
@@ -319,6 +301,7 @@ landing:
   get_started: Get started
   fiddle:
     lead_desc: The easiest way to get started with Electron
+    different_os: "Not the right operating system? See:"
     create_app: Create your app
     description:
       Electron Fiddle lets you create and play with small Electron experiments.

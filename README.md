@@ -1,5 +1,9 @@
 # electronjs.org
 
+![Test](https://github.com/electron/electronjs.org/workflows/Test/badge.svg)
+![Integration Test](https://github.com/electron/electronjs.org/workflows/Integration%20Test/badge.svg)
+[![Electron Discord Invite](https://img.shields.io/discord/745037351163527189?color=%237289DA&label=chat&logo=discord&logoColor=white)](https://discord.com/invite/APGC3k5yaH)
+
 This is the source code for the Electron website at 
 [electronjs.org](https://electronjs.org).
 
@@ -18,8 +22,8 @@ Writing code is great, but there are many other ways to make meaningful
 contributions to the project:
 
 - [Translate docs and website content](https://github.com/electron/electron-i18n)
-- [Improve Electron tutorials](https://github.com/electron/electron/tree/master/docs)
-- [Improve Electron API docs](https://github.com/electron/electron/tree/master/docs/api)
+- [Improve Electron tutorials](https://github.com/electron/electron/tree/main/docs)
+- [Improve Electron API docs](https://github.com/electron/electron/tree/main/docs/api)
 - [Add Electron apps to the site](https://github.com/electron/electron-apps#adding-your-app)
 
 If you just want to get the site up and running locally, here's the TLDR:
@@ -27,8 +31,8 @@ If you just want to get the site up and running locally, here's the TLDR:
 ```
 git clone https://github.com/electron/electronjs.org
 cd electronjs.org
-npm install
-npm run dev
+yarn
+yarn dev
 ```
 
 For more info about how this site works and how to contribute, see 

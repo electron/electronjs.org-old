@@ -62,7 +62,7 @@
   <div class="container-xl media-fluid">
     <div class="clearfix pt-md-6">
       <div class="col-md-3 float-md-left pr-md-5 mb-3 mb-md-0">
-        <div class="CircleBadge CircleBadge--large mx-auto box-shadow-large mt-1" style="background-color: #ffffff;"><img class="CircleBadge-icon" src='/app-img/{{app.slug}}/{{app.icon128}}' alt='{{app.name}}'></div>
+        <div class="CircleBadge CircleBadge--large mx-auto box-shadow-large mt-1" style="background-color: #ffffff;"><img class="CircleBadge-icon" src="{{ static-asset 'image' '/app-img/' app.slug '/' app.icon128 }}" alt='{{app.name}}'></div>
       </div>
       <div class="col-md-9 float-md-left pl-md-5 text-center text-md-left">
         <h1 class="f00-light lh-condensed mb-3">
@@ -111,7 +111,7 @@
           {{#if app.homebrewCaskName}}
             <div class="darwin-only app-meta-entry">
               <h5 class="mb-2 text-mono text-normal text-gray-light">Homebrew</h5>
-              <span class="shell-one-liner app-download-input">brew cask install {{app.homebrewCaskName}}</span>
+              <span class="shell-one-liner app-download-input">brew install --cask {{app.homebrewCaskName}}</span>
             </div>
           {{/if}}
 

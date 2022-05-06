@@ -4,6 +4,7 @@
   <body>
     {{> header}}
     {{{body}}}
+    {{> footer}}
     <div id="hits">
       <div class="hits-container" id="api-hits" title="APIs"></div>
       <div class="hits-container" id="tutorial-hits" title="Tutorials"></div>
@@ -11,7 +12,6 @@
       <div class="hits-container" id="app-hits" title="Apps"></div>
     </div>
     <div id="refinement-list"></div>
-    {{> footer}}
     {{> kb_shortcut_dialog}}
     <script>
     if ('serviceWorker' in navigator) {
@@ -22,6 +22,17 @@
       })
     }
     </script>
-    <script src="/scripts/index.js"></script>
+    <script src="{{static-asset "js" "index.js"}}"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+    <script type="text/javascript"> docsearch({
+      apiKey: 'c9e8f898b3b32afe40f0a96637e7ea85',
+      indexName: 'electronjs',
+      inputSelector: '#search-input',
+      algoliaOptions: {
+        facetFilters: ['language:{{to2CharLocale currentLocale }}']
+      },
+      debug: false // Set debug to true if you want to inspect the dropdown
+    });
+</script>
   </body>
 </html>

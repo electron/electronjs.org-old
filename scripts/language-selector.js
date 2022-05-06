@@ -5,13 +5,21 @@ module.exports = function languageTooltip() {
   }
 
   const langHeaderMenu = document.getElementById('languages-header-menu')
+  const languageButton = document.querySelector(
+    '.site-header-nav .lang-select-button'
+  )
   const toggleHeaderMenu = () => {
     langHeaderMenu.classList.toggle('collapsed')
     if (langHeaderMenu.classList.contains('collapsed')) {
       // hiding the menu
       langHeaderMenu.style.height = '0px'
+      langHeaderMenu.style.visibility = 'hidden'
+      languageButton.setAttribute('aria-expanded', false)
     } else {
+      langHeaderMenu.style.visibility = 'visible'
       measureAndSetHeight(langHeaderMenu)
+      languageButton.setAttribute('aria-expanded', true)
+      langHeaderMenu.focus()
     }
   }
 
@@ -21,9 +29,6 @@ module.exports = function languageTooltip() {
     }
   })
 
-  const languageButton = document.querySelector(
-    '.site-header-nav .lang-select-button'
-  )
   if (languageButton) {
     languageButton.addEventListener('click', (evt) => {
       if (!evt.ctrlKey && !evt.metaKey) {

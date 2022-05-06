@@ -1,7 +1,12 @@
-{{#each doc.sections}}
-  {{> doc
-    doc=this
-    docEn=(lookup ../docEn.sections @index)
-    currentLocale=../currentLocale
-  }}
-{{/each}}
+{{#if doc.html}}
+  <div class="sub-section position-relative" data-name="{{doc.name}}" data-lang="{{../currentLocale}}">
+    {{{doc.html}}}
+  </div>
+{{else}}
+  {{#each doc.sections}}
+    {{> doc
+      doc=this
+      currentLocale=../currentLocale
+    }}
+  {{/each}}
+{{/if}}
