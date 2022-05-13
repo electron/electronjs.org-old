@@ -3320,10 +3320,10 @@ ee-first@1.1.1:
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
 
-electron-api-historian@1.85.0:
-  version "1.85.0"
-  resolved "https://registry.yarnpkg.com/electron-api-historian/-/electron-api-historian-1.85.0.tgz#4d21cc15b0f950e7e3f35545f606aee92a535a5b"
-  integrity sha512-woqW2VX1cOMh76J9vQNz5YxyNangMM1mhOeC9UEcQ8Dqtf2wgL4Jhj6PIO0XDn4s1WaxCGSJ3PQUrvtlXglaLA==
+electron-api-historian@1.86.0:
+  version "1.86.0"
+  resolved "https://registry.yarnpkg.com/electron-api-historian/-/electron-api-historian-1.86.0.tgz#d89eb9a9aa79940138965251e62ff2be087ea405"
+  integrity sha512-JN2hf8gFJ/CLq0wT1mwRXpz7D5BE7SEcOkbx9AzbaMsZ80vP6bFXYqMSlcS88NakPMArI2PZ4JoEdpejAqg3NQ==
 
 electron-apps@1.9312.0:
   version "1.9312.0"
