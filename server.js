@@ -111,9 +111,12 @@ hbs.registerHelper('to2CharLocale', (locale) => {
   }
 })
 
-hbs.registerHelper('replace', function (find, replace, options) {
+hbs.registerHelper('replace', function (options) {
   const string = options.fn(this)
-  return string.replace(find, replace)
+  return string.replace(
+    new RegExp(`\\bhttps:\/\/discord\.gg/electron\\b`, 'g'),
+    'https://discord.gg/electronjs'
+  )
 })
 
 if (isProduction) {
