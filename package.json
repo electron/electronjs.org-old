@@ -126,7 +126,7 @@
     "webpack-manifest-plugin": "^4.0.2"
   },
   "engines": {
-    "node": ">=12"
+    "node": ">=12 <17"
   },
   "lint-staged": {
     "*.js": "npm run lint:js",
