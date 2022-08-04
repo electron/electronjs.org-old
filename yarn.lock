@@ -3320,10 +3320,10 @@ ee-first@1.1.1:
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
 
-electron-api-historian@1.96.0:
-  version "1.96.0"
-  resolved "https://registry.yarnpkg.com/electron-api-historian/-/electron-api-historian-1.96.0.tgz#6892cf5b0881b4a8c7f5e6b8ca465d751b1feaf9"
-  integrity sha512-/H1s7woAeTnZDffhKJZxV/MEjHVP0oA4aqjr9K1rp7vsURReGVV6EWtMbMxvK8vMms1jpFdI4V+EQZWFhd4h0A==
+electron-api-historian@1.97.0:
+  version "1.97.0"
+  resolved "https://registry.yarnpkg.com/electron-api-historian/-/electron-api-historian-1.97.0.tgz#8f5fedb1371cb3264606d8284ad965784f614e3a"
+  integrity sha512-vPbR1S4T/u7AC7R4WuBOpcaI59MX1ZhaCn2e94u+WWLCojNoo2/zH7y0tac8Kma1HTXQbHRNFkbeu8bdhHuVDQ==
 
 electron-apps@1.9312.0:
   version "1.9312.0"
@@ -3353,10 +3353,10 @@ electron-markdown@^0.9.0:
     rehype-slug "^4.0.0"
     remark-gemoji-to-emoji "^1.1.0"
 
-electron-releases@3.1091.0:
-  version "3.1091.0"
-  resolved "https://registry.yarnpkg.com/electron-releases/-/electron-releases-3.1091.0.tgz#dc14432ff8c325aed676a2fcfeb6a4be27beea13"
-  integrity sha512-J1wqS1QpZyO69hP7hIcggSNp11AuMtJPuFxSiWdTvlMYUfUn5zGKx0ARDJoUtN7yJPNosDMZOsDVPB01Op254A==
+electron-releases@3.1092.0:
+  version "3.1092.0"
+  resolved "https://registry.yarnpkg.com/electron-releases/-/electron-releases-3.1092.0.tgz#49fd3de999e57d368a2180b2ff42a3c136374dcf"
+  integrity sha512-iRZKKTK5Nl7Qr8BuBT6FCMGEv8ZBbN/TkOSLH8aHX6rdoYafm4HOJNSmIbPeOXEUSisTBqFT2N4F6StECe/bWA==
 
 electron-to-chromium@^1.3.857:
   version "1.3.864"
