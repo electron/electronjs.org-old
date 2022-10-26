@@ -3355,6 +3355,7 @@ electron-api-historian@1.109.0:
   resolved "https://registry.yarnpkg.com/electron-api-historian/-/electron-api-historian-1.109.0.tgz#e706c2623cdcb1fed91b8fcb678cf53bda93dfda"
   integrity sha512-YqS05Cjmhv3J0l5ZZK7HapugqkRFERSi+xWHUK3kEaFeuNWq6B5QrtfRzBWIw/nWRuycee66+U3uHicgIoMDVg==
 
+
 electron-apps@1.9312.0:
   version "1.9312.0"
   resolved "https://registry.yarnpkg.com/electron-apps/-/electron-apps-1.9312.0.tgz#b2d20cf4931a5c83697bbb846ba63534d97cda8b"
